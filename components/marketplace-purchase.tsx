@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useActionState } from "react";
+import { useActionState, useEffect, useState } from "react";
 import {
   buyMarketPaper,
   savePurchasedInstitution,
@@ -10,22 +10,35 @@ export function MarketplaceBuy({
   id,
   terms,
   price,
+  platformSale = false,
 }: {
+  platformSale?: boolean;
   id: string;
   terms: string;
   price: string;
 }) {
   const [state, action, pending] = useActionState(buyMarketPaper, initial);
+  const [slow, setSlow] = useState(false);
+  useEffect(() => {
+    setSlow(false);
+    if (!pending) return;
+    const timer = setTimeout(() => setSlow(true), 20000);
+    return () => clearTimeout(timer);
+  }, [pending]);
   return (
     <form action={action} className="border rounded-xl p-4 space-y-3">
       <input name="paperId" value={id} type="hidden" />
       <input name="terms" value={terms} type="hidden" />
       <p>
-        মূল্য {price}। ওয়ালেট থেকে একবার কাটা হবে। বিক্রেতা ৬০%, প্ল্যাটফর্ম ৪০% পাবে
-        (পয়সার ভগ্নাংশ প্ল্যাটফর্মে)। কেনা কপি আবার খোলা/প্রিন্টে নতুন চার্জ নেই।
+        মূল্য {price}। ওয়ালেট থেকে একবার কাটা হবে।{" "}
+        {platformSale
+          ? "ADMIN-এর এই প্রশ্নপত্রের পুরো মূল্য প্ল্যাটফর্মের আয় হবে।"
+          : "বিক্রেতা ৬০%, প্ল্যাটফর্ম ৪০% পাবে (পয়সার ভগ্নাংশ প্ল্যাটফর্মে)।"}{" "}
+        কেনা কপি আবার খোলা/প্রিন্টে নতুন চার্জ নেই।
       </p>
       <p>
-        শুধু প্রতিষ্ঠানের নাম বদলাতে পারবেন; প্রশ্ন বা অন্য সেটিংস নয়। কেনা কপি
+        কেনার পরে Setup-এ প্রশ্ন, হেডার ও layout সম্পাদনা করে Preview/Print করতে
+        পারবেন। পরিবর্তন খোলা editor-এ থাকে; বন্ধ করার আগে PDF রাখুন। কেনা কপি
         পুনর্বিক্রি করা যাবে না। সমস্যায় কেনা কপির অভিযোগ ফর্ম ব্যবহার করুন; অ্যাডমিন
         যাচাই ছাড়া রিফান্ড নয়। রিফান্ড হলে অনলাইন কপি বন্ধ হবে এবং আগের
         ডাউনলোড/প্রিন্ট ব্যবহার বা বিতরণ করা যাবে না। ডিজিটাল কপির পুনর্বিতরণ
@@ -41,10 +54,19 @@ export function MarketplaceBuy({
       >
         {pending ? "অপেক্ষা করুন…" : `${price} দিয়ে কিনুন`}
       </button>
-      <p role="status">{state.message}</p>
+      <p role="status">
+        {pending
+          ? slow
+            ? "যাচাইয়ে বেশি সময় লাগছে। নতুন করে টাকা পাঠাবেন না; লাইব্রেরি ও wallet history যাচাই করুন।"
+            : "লেনদেন যাচাই হচ্ছে। একই বোতামে আবার চাপার প্রয়োজন নেই।"
+          : state.message}
+      </p>
       {state.ok && (
-        <Link href={`/dashboard/library/${id}`} className="block underline">
-          কেনা কপি খুলুন →
+        <Link
+          href={`/dashboard/library/${id}/setup`}
+          className="block underline"
+        >
+          Edit / Setup → Preview ও Print খুলুন →
         </Link>
       )}
     </form>

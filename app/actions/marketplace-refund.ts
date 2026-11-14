@@ -152,21 +152,26 @@ export async function reviewMarketDispute(
         if (
           !receipt ||
           receipt.sellerId !== purchase.sellerId ||
-          receipt.amount !== purchase.amount
+          receipt.amount !== purchase.amount ||
+          receipt.sellerAmount !== purchase.sellerAmount ||
+          receipt.platformAmount !== purchase.platformAmount ||
+          receipt.revenueMode !== purchase.revenueMode
         )
           throw new WalletError("প্ল্যাটফর্ম রসিদ মেলেনি।");
-        const seller = await account(tx, purchase.sellerId);
-        if (seller.admin || seller.funds.earnings < purchase.sellerAmount)
-          throw new WalletError(
-            "বিক্রেতার অবশিষ্ট বিক্রির আয় যথেষ্ট নয়। অভিযোগ খোলা আছে; বাহ্যিক সমন্বয় ছাড়া রিফান্ড করা যাবে না। অন্য উৎসের টাকা কাটা হয়নি।",
-          );
-        await changeWalletFunds(tx, purchase.sellerId, {
-          operationId: `market-refund:${d.buyerId}:${d.paperId}`,
-          amount: purchase.sellerAmount,
-          direction: "DEBIT",
-          earningsOnly: true,
-          description: "মার্কেটপ্লেস রিফান্ডে বিক্রির আয় ফেরত",
-        });
+        if (purchase.revenueMode !== "PLATFORM") {
+          const seller = await account(tx, purchase.sellerId);
+          if (seller.admin || seller.funds.earnings < purchase.sellerAmount)
+            throw new WalletError(
+              "বিক্রেতার অবশিষ্ট বিক্রির আয় যথেষ্ট নয়। অভিযোগ খোলা আছে; বাহ্যিক সমন্বয় ছাড়া রিফান্ড করা যাবে না। অন্য উৎসের টাকা কাটা হয়নি।",
+            );
+          await changeWalletFunds(tx, purchase.sellerId, {
+            operationId: `market-refund:${d.buyerId}:${d.paperId}`,
+            amount: purchase.sellerAmount,
+            direction: "DEBIT",
+            earningsOnly: true,
+            description: "মার্কেটপ্লেস রিফান্ডে বিক্রির আয় ফেরত",
+          });
+        }
         for (const source of [
           "bonus",
           "recharge",
@@ -196,6 +201,9 @@ export async function reviewMarketDispute(
               paperId: d.paperId,
               sellerId: purchase.sellerId,
               amount: purchase.amount,
+              ...(purchase.revenueMode
+                ? { revenueMode: purchase.revenueMode }
+                : {}),
               sellerAmount: purchase.sellerAmount,
               platformAmount: purchase.platformAmount,
               sources,

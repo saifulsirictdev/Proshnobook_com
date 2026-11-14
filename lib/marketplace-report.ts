@@ -4,6 +4,7 @@ export type SaleReceipt = {
   sellerId: string;
   paperId: string;
   amount: number;
+  revenueMode?: "PLATFORM";
   sellerAmount: number;
   platformAmount: number;
   at: string;
@@ -25,7 +26,11 @@ export function saleReceipt(key: string, raw: string): SaleReceipt | null {
       !Number.isSafeInteger(r.amount) ||
       r.amount < 100 ||
       r.amount > 5000000 ||
-      r.sellerAmount !== Math.floor((r.amount * 60) / 100) ||
+      (r.revenueMode !== undefined && r.revenueMode !== "PLATFORM") ||
+      r.sellerAmount !==
+        (r.revenueMode === "PLATFORM"
+          ? 0
+          : Math.floor((r.amount * 60) / 100)) ||
       r.platformAmount !== r.amount - r.sellerAmount ||
       typeof r.at !== "string" ||
       !Number.isFinite(Date.parse(r.at))
@@ -36,6 +41,7 @@ export function saleReceipt(key: string, raw: string): SaleReceipt | null {
       sellerId: r.sellerId,
       paperId: r.paperId,
       amount: r.amount,
+      ...(r.revenueMode ? { revenueMode: r.revenueMode as "PLATFORM" } : {}),
       sellerAmount: r.sellerAmount,
       platformAmount: r.platformAmount,
       at: r.at,
@@ -65,6 +71,7 @@ export function matchingRefund(raw: string, sale: SaleReceipt): boolean {
       r.paperId === sale.paperId &&
       r.sellerId === sale.sellerId &&
       r.amount === sale.amount &&
+      r.revenueMode === sale.revenueMode &&
       r.sellerAmount === sale.sellerAmount &&
       r.platformAmount === sale.platformAmount &&
       typeof r.refundedAt === "string" &&
