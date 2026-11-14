@@ -86,6 +86,7 @@ export default function ReadyStudio({
   const [saveNotice, setSaveNotice] = useState("");
   const [exportingMarket, setExportingMarket] = useState(false);
   const explicitlySaved = useRef("");
+  const hydratedPurchase = useRef("");
   const [receipt, setReceipt] = useState(initialPurchase?.id ?? "");
   const [paidSelection, setPaidSelection] = useState(
     initialPurchase ? readySelectionIdentity(initialPurchase.selected) : "",
@@ -223,6 +224,11 @@ export default function ReadyStudio({
   useEffect(() => {
     if (!initialPurchase) return;
     const p = initialPurchase;
+    // Server-action revalidation can deliver a new object for the same receipt.
+    // Do not reset current edits/step after Save or during Preview preparation.
+    if (hydratedPurchase.current === p.id) return;
+    hydratedPurchase.current = p.id;
+    explicitlySaved.current = "";
     setSelected(p.selected);
     setActive(p.selected[0]);
     setEdits(p.snapshot.edits);
@@ -444,6 +450,7 @@ export default function ReadyStudio({
     if (!requireSaved()) return;
     setBusy(true);
     setMessage("Print preview প্রস্তুত হচ্ছে…");
+    setSaveNotice("Print Preview-এর পৃষ্ঠাগুলো প্রস্তুত হচ্ছে…");
     try {
       await document.fonts.ready;
       const out = [];
@@ -463,10 +470,17 @@ export default function ReadyStudio({
       setPrintPages(out);
       setStep("preview");
       setMessage("Preview দেখে print করুন।");
-    } catch {
-      setMessage(
-        "সেভ যাচাই বা Preview প্রস্তুত হয়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+      setSaveNotice(
+        "Preview প্রস্তুত। নিচে প্রিন্ট বা ‘Marketplace-এ বিক্রির কপি প্রস্তুত করুন’ বেছে নিন।",
       );
+    } catch (error) {
+      const notice =
+        "Print Preview খোলেনি: " +
+        (error instanceof Error
+          ? error.message
+          : "সংযোগ বা PDF-এর ছবি প্রস্তুত হয়নি। আবার চেষ্টা করুন।");
+      setMessage(notice);
+      setSaveNotice(notice);
     } finally {
       setBusy(false);
     }
@@ -536,11 +550,11 @@ export default function ReadyStudio({
       setExportingMarket(false);
     }
   }
-  async function save() {
-    if (busy) return;
+  async function save(): Promise<boolean> {
+    if (busy) return false;
     if (!adminPreset && !paid) {
       setCheckout(true);
-      return;
+      return false;
     }
     setSaveNotice("");
     const savingIdentity = saveIdentity();
@@ -555,13 +569,14 @@ export default function ReadyStudio({
         setMessage(notice);
         setSaveNotice(notice);
         if (r.ok) explicitlySaved.current = savingIdentity;
+        else return false;
       } else {
         if (paid) {
           const r = await saveReadyPurchase(receipt, snapshot(), selected);
           if (!r.ok) {
             setMessage(r.error);
             setSaveNotice("সেভ হয়নি: " + r.error);
-            return;
+            return false;
           }
         }
         if (paid) explicitlySaved.current = savingIdentity;
@@ -591,14 +606,21 @@ export default function ReadyStudio({
             : "এই browser-এ draft save হয়েছে। কেনার পর account-এ save হবে।",
         );
       }
+      return true;
     } catch {
       setMessage("Save হয়নি। Browser storage/সংযোগ পরীক্ষা করুন।");
       setSaveNotice(
         "সেভ সম্পন্ন হয়েছে কি না যাচাই করুন। সংরক্ষিত প্রশ্নপত্র খুলুন; না থাকলে সংযোগ ঠিক করে আবার চেষ্টা করুন।",
       );
+      return false;
     } finally {
       setBusy(false);
     }
+  }
+  async function saveAndPreview() {
+    // Use the same render's snapshot and wait for the server-confirmed save.
+    // A failed checkout/save must never proceed to Preview or export.
+    if (await save()) await preview();
   }
   async function restore() {
     try {
@@ -743,6 +765,13 @@ export default function ReadyStudio({
             <Save size={16} />
             {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
           </button>
+          <button disabled={busy || !selected.length} onClick={saveAndPreview}>
+            <Printer size={16} /> সেভ করে Print Preview খুলুন
+          </button>
+          <p className="rp-muted">
+            বিক্রি করতে চাইলে Preview খোলার পরে “Marketplace-এ বিক্রির কপি প্রস্তুত
+            করুন” চাপুন।
+          </p>
           <p role="status">
             {saveNotice ||
               "Print Preview খোলার আগে প্রশ্নপত্র সেভ করুন। পরিবর্তন করলে আবার সেভ করতে হবে।"}

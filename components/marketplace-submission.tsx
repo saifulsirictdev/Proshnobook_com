@@ -32,7 +32,9 @@ export function MarketplaceSubmission({
       <label>
         নিজের সংরক্ষিত প্রশ্নপত্র
         <select name="sourceKey" className={field} required>
-          <option value="">নির্বাচন করুন</option>
+          <option value="">
+            {papers.length ? "নির্বাচন করুন" : "এখনো বিক্রির জন্য প্রস্তুত কপি নেই"}
+          </option>
           {papers.map((p) => (
             <option key={p.key} value={p.key}>
               {p.name}
@@ -40,6 +42,24 @@ export function MarketplaceSubmission({
           ))}
         </select>
       </label>
+      {!papers.length && (
+        <p className="rounded-lg bg-indigo-50 p-3 text-sm text-indigo-900">
+          প্রশ্নপত্রের তথ্য পূরণ করতে পারবেন। জমা দিতে আগে বিক্রির কপি প্রস্তুত করতে হবে।
+          নিচের{" "}
+          <a
+            href="#sell-instructions"
+            className="font-bold underline"
+            onClick={() => {
+              const instructions = document.getElementById("sell-instructions");
+              if (instructions instanceof HTMLDetailsElement)
+                instructions.open = true;
+            }}
+          >
+            নির্দেশনা দেখুন
+          </a>
+          ।
+        </p>
+      )}
       <label>
         পরীক্ষার ধরন
         <select name="examType" className={field} required defaultValue="">
@@ -138,7 +158,7 @@ export function MarketplaceSubmission({
         অধিকার আমার আছে। অন্যের কেনা প্রশ্নপত্র পুনর্বিক্রি করছি না।
       </label>
       <button
-        disabled={pending}
+        disabled={pending || !papers.length}
         className="rounded bg-indigo-700 p-3 font-bold text-white disabled:opacity-50"
       >
         {pending
