@@ -16,7 +16,15 @@ import {
   WalletError,
 } from "@/lib/wallet";
 import { revalidatePath } from "next/cache";
-export type PurchaseState = { ok: boolean; message: string; paperId?: string };
+export type PurchaseState = {
+  ok: boolean;
+  message: string;
+  paperId?: string;
+  amount?: number;
+  chargedNow?: boolean;
+  balanceBefore?: number;
+  balanceAfter?: number;
+};
 async function actor() {
   const id = (await auth())?.user?.id;
   if (!id) throw new WalletError("আগে লগইন করুন।");
@@ -45,7 +53,7 @@ export async function buyMarketPaper(
       form.get("confirmed") !== "on"
     )
       throw new WalletError("মূল্য ও কেনার শর্ত নিশ্চিত করুন।");
-    await walletTransaction(async (tx) => {
+    const receipt = await walletTransaction(async (tx) => {
       const buyer = await account(tx, buyerId);
       if (buyer.admin)
         throw new WalletError("ADMIN নিজের জন্য এই checkout ব্যবহার করবেন না।");
@@ -57,7 +65,12 @@ export async function buyMarketPaper(
           throw new WalletError(
             "এই ক্রয় রিফান্ড হয়েছে; একই ক্রয় আবার চার্জ করা হবে না। অভিযোগের অবস্থা দেখুন।",
           );
-        return;
+        return {
+          amount: prior.amount,
+          chargedNow: false,
+          balanceBefore: buyer.balance,
+          balanceAfter: buyer.balance,
+        };
       }
       const row = await tx.setting.findUnique({
         where: { key: MARKET_PREFIX + id },
@@ -121,14 +134,22 @@ export async function buyMarketPaper(
           }),
         },
       });
+      const updatedBuyer = await account(tx, buyerId);
+      return {
+        amount,
+        chargedNow: true,
+        balanceBefore: buyer.balance,
+        balanceAfter: updatedBuyer.balance,
+      };
     });
     revalidatePath("/wallet");
     revalidatePath("/dashboard/library");
-    revalidatePath(`/marketplace/${id}`);
+
     return {
       ok: true,
       message: "কেনা কপি লাইব্রেরিতে সংরক্ষিত আছে। আবার খুললে চার্জ হবে না।",
       paperId: id,
+      ...receipt,
     };
   } catch (e) {
     return fail(e);

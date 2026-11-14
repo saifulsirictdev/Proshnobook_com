@@ -4,6 +4,7 @@ import MarketplaceFullPreview from "@/components/marketplace-full-preview";
 import { auth } from "@/auth";
 import {
   purchaseKey,
+  validatePurchase,
   purchaseTerms,
   saleRecord,
 } from "@/lib/marketplace-purchase";
@@ -31,9 +32,13 @@ export default async function MarketDetail({
   const owned = user?.id
     ? await db.setting.findUnique({
         where: { key: purchaseKey(user.id, id) },
-        select: { key: true },
       })
     : null;
+  let purchased = null;
+  try {
+    if (owned && user?.id)
+      purchased = validatePurchase(owned.value, user.id, id);
+  } catch {}
   let terms: string | null = null;
   let platformSale = false;
   try {
@@ -66,9 +71,17 @@ export default async function MarketDetail({
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
       </Link>
       <MarketplaceFullPreview model={publicFullPreview(row!.value, id)} />
-      {owned ? (
+      {purchased ? (
+        <MarketplaceBuy
+          id={id}
+          ownedAmount={purchased.amount}
+          terms={terms ?? ""}
+          price={formatMoney(purchased.amount)}
+          platformSale={platformSale}
+        />
+      ) : owned ? (
         <Link href="/dashboard/library" className="block underline">
-          কেনা কপি দেখুন (রিফান্ড হলে কপি বন্ধ) →
+          ক্রয়ের অবস্থা / রিফান্ড দেখুন →
         </Link>
       ) : !user?.id ? (
         <Link

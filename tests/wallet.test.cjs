@@ -1860,3 +1860,28 @@ test("platform-only purchase refund restores exact sources without ADMIN earning
   assert.equal(refund.platformAmount, 1001);
   assert.equal(refund.sellerAmount, 0);
 });
+
+test("purchase confirmation returns committed receipt amount and distinguishes retry from new debit", async () => {
+  const x = await marketSetup();
+  const first = await x.purchases.buyMarketPaper({}, x.f);
+  assert.equal(first.ok, true);
+  assert.equal(first.amount, 1001);
+  assert.equal(first.chargedNow, true);
+  assert.equal(first.balanceBefore, 2000);
+  assert.equal(first.balanceAfter, 999);
+  const retry = await x.purchases.buyMarketPaper({}, x.f);
+  assert.equal(retry.ok, true);
+  assert.equal(retry.amount, 1001);
+  assert.equal(retry.chargedNow, false);
+  assert.equal(retry.balanceBefore, 999);
+  assert.equal(retry.balanceAfter, 999);
+  assert.equal((await x.wallet.ensureWallet("u")).balance, 999);
+  const y = await marketSetup();
+  y.setFail("market:purchase:v1:");
+  const failed = await y.purchases.buyMarketPaper({}, y.f);
+  assert.equal(failed.ok, false);
+  assert.equal(failed.amount, undefined);
+  assert.equal(failed.chargedNow, undefined);
+  assert.equal(failed.balanceBefore, undefined);
+  assert.equal(failed.balanceAfter, undefined);
+});
