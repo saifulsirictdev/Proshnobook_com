@@ -1,6 +1,10 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { paginateContinuous, type FlowSegment } from "@/lib/continuous-paper";
+import {
+  paginateContinuous,
+  continuousColumnCount,
+  type FlowSegment,
+} from "@/lib/continuous-paper";
 import PaperAnswer from "./paper-answer";
 import HeaderPreview from "./header-preview";
 import { currentHeader } from "@/lib/paper-header";
@@ -419,8 +423,13 @@ export default function PaperPreview({
       </div>
     );
   }
-  const sectionColumns = (section: PreviewSection) =>
-    section.type === "MCQ" ? s.cfg.cols : s.cfg.cqColumns;
+  // All mixed sections use one lane width, both when measuring and rendering.
+  const sectionColumns = (_section: PreviewSection) =>
+    continuousColumnCount(
+      (sections ?? []).map((section) => section.type),
+      s.cfg.cols,
+      s.cfg.cqColumns,
+    );
   useEffect(() => {
     const root = measure.current;
     if (!root) return;
