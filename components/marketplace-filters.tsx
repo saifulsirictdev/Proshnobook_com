@@ -53,6 +53,8 @@ export default function MarketplaceFilters({
           }}
         >
           <option value="">সব শ্রেণি</option>
+          <option value="SSC">SSC (নবম–দশম)</option>
+          <option value="HSC">HSC (একাদশ–দ্বাদশ)</option>
           {MARKET_GRADES.map((n) => (
             <option key={n} value={n}>
               {MARKET_GRADE_NAMES[n]} শ্রেণি

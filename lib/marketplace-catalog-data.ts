@@ -44,9 +44,21 @@ export async function marketCatalogPage(
   for (let batch = 0; batch < 10; batch++) {
     const predicates = Object.entries(filters)
       .filter(([key, value]) => key !== "chapter" && value)
-      .map(([key, value]) => ({
-        value: { contains: `${JSON.stringify(key)}:${JSON.stringify(value)}` },
-      }));
+      .map(([key, value]) =>
+        key === "grade" && (value === "SSC" || value === "HSC")
+          ? {
+              OR: (value === "SSC" ? ["9", "10"] : ["11", "12"]).map(
+                (grade) => ({
+                  value: { contains: `"grade":${JSON.stringify(grade)}` },
+                }),
+              ),
+            }
+          : {
+              value: {
+                contains: `${JSON.stringify(key)}:${JSON.stringify(value)}`,
+              },
+            },
+      );
     const rows = await db.setting.findMany({
       where: {
         key: { startsWith: MARKET_PREFIX, ...(cursor ? { gt: cursor } : {}) },

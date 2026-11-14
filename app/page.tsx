@@ -1,14 +1,28 @@
+import {
+  GraduationCap,
+  Library,
+  School,
+  FlaskConical,
+  BookOpen,
+} from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { marketCatalogPage } from "@/lib/marketplace-catalog-data";
 import {
-  marketGrade,
+  homeGrade,
   marketSubjects,
-  MARKET_GRADES,
+  HOME_GRADES,
   MARKET_GRADE_NAMES,
 } from "@/lib/marketplace-school-catalog";
 import MarketplacePaperCards from "@/components/marketplace-paper-cards";
 import "@/components/marketplace-home.css";
+const gradeMenu = {
+  HSC: { label: "HSC / College", Icon: GraduationCap },
+  SSC: { label: "Class 9–10 (SSC)", Icon: Library },
+  "8": { label: "Class 8", Icon: BookOpen },
+  "7": { label: "Class 7", Icon: FlaskConical },
+  "6": { label: "Class 6", Icon: School },
+};
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: { absolute: "প্রশ্নবুক — শ্রেণি ও বিষয়ভিত্তিক প্রশ্নপত্র" },
@@ -20,7 +34,7 @@ export default async function Home({
 }: {
   searchParams?: Promise<{ grade?: string }>;
 }) {
-  const grade = marketGrade((await searchParams)?.grade);
+  const grade = homeGrade((await searchParams)?.grade);
   const books = marketSubjects(grade);
   const sections: {
     subject: string;
@@ -51,21 +65,31 @@ export default async function Home({
   }
   return (
     <div className="pb-home">
-      <nav className="pb-class-nav" aria-label="শ্রেণি নির্বাচন">
-        {MARKET_GRADES.map((n) => (
-          <Link
-            key={n}
-            href={`/?grade=${n}`}
-            aria-current={grade === n ? "page" : undefined}
-          >
-            {MARKET_GRADE_NAMES[n]} শ্রেণি
-          </Link>
-        ))}
+      <nav
+        className="pb-class-nav pb-home-class-menu"
+        aria-label="শ্রেণি নির্বাচন"
+      >
+        {HOME_GRADES.map((n) => {
+          const { label, Icon } = gradeMenu[n];
+          return (
+            <Link
+              key={n}
+              href={`/?grade=${n}`}
+              aria-current={grade === n ? "page" : undefined}
+            >
+              <Icon size={16} strokeWidth={2.3} aria-hidden="true" />
+              <span>{label}</span>
+            </Link>
+          );
+        })}
       </nav>
       <header className="pb-home-intro">
         <div>
           <span className="pb-eyebrow">PROSHNOBOOK.COM</span>
-          <h1>{MARKET_GRADE_NAMES[grade]} শ্রেণির প্রশ্নপত্র</h1>
+          <h1>
+            {MARKET_GRADE_NAMES[grade]}
+            {grade === "SSC" || grade === "HSC" ? "" : " শ্রেণির"} প্রশ্নপত্র
+          </h1>
           <p>
             আপনার বিষয় বেছে নিন। অর্ধ বার্ষিক, বার্ষিক ও নির্বাচনী পরীক্ষার অনুমোদিত
             প্রশ্নপত্রের পরিচিতি এক জায়গায়।

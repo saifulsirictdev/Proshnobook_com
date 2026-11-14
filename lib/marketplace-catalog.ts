@@ -45,7 +45,13 @@ export function filterMarketPapers(
 ) {
   return papers.filter(
     (p) =>
-      (!filters.grade || p.metadata.grade === filters.grade) &&
+      (!filters.grade ||
+        (filters.grade === "SSC"
+          ? ["9", "10"]
+          : filters.grade === "HSC"
+            ? ["11", "12"]
+            : [filters.grade]
+        ).includes(p.metadata.grade)) &&
       (!filters.subject || p.metadata.subject === filters.subject) &&
       (!filters.chapter || p.metadata.chapters.includes(filters.chapter)) &&
       (!filters.examType || p.metadata.examType === filters.examType) &&
