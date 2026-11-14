@@ -6,6 +6,7 @@ import {
 } from "@/lib/paper-sections";
 import RichTextField from "@/components/paper-builder/rich-text-field";
 import WalletCheckout from "@/components/wallet-checkout";
+import { checkPurchasedPaperAccess } from "@/app/actions/purchased-paper-access";
 import { checkQuestionAccess } from "@/app/actions/wallet";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
@@ -35,7 +36,9 @@ const input =
 export default function QbBuilder({
   supportHref = "/contact-us",
   tutorialHref,
+  purchased,
 }: {
+  purchased?: { id: string; items: PaperItem[]; settings: PaperSettings };
   supportHref?: string;
   tutorialHref?: string;
 }) {
@@ -71,6 +74,12 @@ export default function QbBuilder({
       update({ ...s, excludedIds: [...s.excludedIds, id] });
       return;
     }
+    if (purchased) {
+      setActionMessage(
+        "কেনা প্রশ্নপত্রে প্রশ্নের লেখা সম্পাদনা করতে পারবেন। প্রশ্নব্যাংক থেকে নতুন প্রশ্ন নিতে আলাদা নির্বাচন ও checkout প্রয়োজন।",
+      );
+      return;
+    }
     if (exchanging) return;
     setExchanging(true);
     try {
@@ -92,15 +101,21 @@ export default function QbBuilder({
       setItems(next);
       setActionMessage("একই অধ্যায় ও ধরনের বিকল্প প্রশ্ন বসানো হয়েছে।");
     } catch (e) {
-      setActionMessage(
-        e instanceof Error ? e.message : "প্রশ্ন বদলানো যায়নি।",
-      );
+      setActionMessage(e instanceof Error ? e.message : "প্রশ্ন বদলানো যায়নি।");
     } finally {
       setExchanging(false);
     }
   }
   const close = useCallback(() => setOpen(false), []);
   useEffect(() => {
+    if (purchased) {
+      setItems(purchased.items);
+      setSettings(purchased.settings);
+      setDivision(purchased.settings.cfg.divisionFilter);
+      setReady(true);
+      setLoading(false);
+      return;
+    }
     const controller = new AbortController();
     try {
       const restored = restoreSettings(
@@ -142,7 +157,7 @@ export default function QbBuilder({
     return () => controller.abort();
   }, []);
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || purchased) return;
     try {
       localStorage.setItem("qb:settings", JSON.stringify(s));
       setStorageError(false);
@@ -160,7 +175,7 @@ export default function QbBuilder({
   liveSettings.current = s;
   const [, setHistoryTick] = useState(0);
   useEffect(() => {
-    if (ready && !loading && items.length) {
+    if (!purchased && ready && !loading && items.length) {
       try {
         localStorage.setItem(
           "qb:selected",
@@ -198,7 +213,7 @@ export default function QbBuilder({
     setHistoryTick((v) => v + 1);
     setSettings(next);
     try {
-      localStorage.setItem("qb:settings", JSON.stringify(next));
+      if (!purchased) localStorage.setItem("qb:settings", JSON.stringify(next));
       setStorageError(false);
     } catch {
       setStorageError(true);
@@ -265,7 +280,9 @@ export default function QbBuilder({
   useEffect(() => () => printCleanup.current?.(), []);
   async function print(mode: "normal" | "booklet" = "normal") {
     try {
-      const access = await checkQuestionAccess(data.map((q) => q.id));
+      const access = purchased
+        ? await checkPurchasedPaperAccess(purchased.id)
+        : await checkQuestionAccess(data.map((q) => q.id));
       if (!access.ok) {
         setActionMessage(access.error);
         return;
@@ -456,8 +473,7 @@ export default function QbBuilder({
       </div>
     );
   }
-  if (loading)
-    return <p className="py-12 text-center">প্রশ্নপত্র প্রস্তুত হচ্ছে…</p>;
+  if (loading) return <p className="py-12 text-center">প্রশ্নপত্র প্রস্তুত হচ্ছে…</p>;
   if (error)
     return (
       <div role="alert" className="rounded-xl bg-red-50 p-6 text-red-800">
@@ -487,7 +503,7 @@ export default function QbBuilder({
     );
   return (
     <div className="paper-builder-root">
-      <WalletCheckout ids={data.map((q) => q.id)} />
+      {!purchased && <WalletCheckout ids={data.map((q) => q.id)} />}
       <style>{style}</style>
       {missingCount > 0 && (
         <p
@@ -495,8 +511,8 @@ export default function QbBuilder({
           data-noprint
           className="mb-3 rounded-xl bg-amber-50 p-3 text-amber-900"
         >
-          নির্বাচিত {missingCount}টি প্রশ্ন লোড হয়নি বা এখন ব্যবহারযোগ্য নয়।
-          আবার প্রশ্ন বাছাই করুন।
+          নির্বাচিত {missingCount}টি প্রশ্ন লোড হয়নি বা এখন ব্যবহারযোগ্য নয়। আবার
+          প্রশ্ন বাছাই করুন।
         </p>
       )}
       {s.show.divisions && division && divisions.includes(division) && (
@@ -505,8 +521,8 @@ export default function QbBuilder({
           role="status"
           className="mb-3 rounded-xl bg-amber-50 p-3 text-amber-900"
         >
-          CQ বিভাগ ফিল্টার সক্রিয়: {division}। সব সৃজনশীল প্রশ্ন দেখতে বিভাগ
-          থেকে “সব বিভাগ” নির্বাচন করুন।
+          CQ বিভাগ ফিল্টার সক্রিয়: {division}। সব সৃজনশীল প্রশ্ন দেখতে বিভাগ থেকে “সব
+          বিভাগ” নির্বাচন করুন।
         </p>
       )}
       <nav
@@ -583,8 +599,8 @@ export default function QbBuilder({
           role="alert"
           className="mb-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-800"
         >
-          ব্রাউজারের স্টোরেজে সেটিংস রাখা যায়নি। সেভ করার আগে স্টোরেজের
-          অনুমতি/খালি জায়গা পরীক্ষা করুন।
+          ব্রাউজারের স্টোরেজে সেটিংস রাখা যায়নি। সেভ করার আগে স্টোরেজের অনুমতি/খালি
+          জায়গা পরীক্ষা করুন।
         </p>
       )}
       <div className="grid items-start gap-6 lg:grid-cols-[310px_minmax(0,1fr)]">
@@ -697,11 +713,7 @@ export default function QbBuilder({
                 )}
                 {field("cls", "শ্রেণি", "নবম/দশম")}
                 {field("subject", "বিষয়", "গণিত")}
-                {field(
-                  "chapter",
-                  "অধ্যায় / টপিক",
-                  "অধ্যায় ১ – বাস্তব সংখ্যা",
-                )}
+                {field("chapter", "অধ্যায় / টপিক", "অধ্যায় ১ – বাস্তব সংখ্যা")}
                 {field(
                   "minutes",
                   "সময় (মিনিট বা পূর্ণ বিবরণ)",
@@ -712,8 +724,7 @@ export default function QbBuilder({
                 {field("code", "বিষয় কোড", "১০৯")}
                 {s.show.address &&
                   field("address", "প্রতিষ্ঠানের ঠিকানা", "আপনার ঠিকানা")}
-                {s.show.watermark &&
-                  field("watermark", "জলছাপের লেখা", "খসড়া")}
+                {s.show.watermark && field("watermark", "জলছাপের লেখা", "খসড়া")}
                 <label className="sm:col-span-2">
                   <span className="mb-1 block text-xs text-slate-500">
                     নির্দেশনা

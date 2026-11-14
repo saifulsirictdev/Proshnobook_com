@@ -27,17 +27,14 @@ const object = (value: unknown): Record<string, unknown> =>
     ? (value as Record<string, unknown>)
     : {};
 
-/** Derive display only from the immutable application, never a fresh bank query. */
-export function marketPreviewModel(
-  snapshot: { settings: unknown; questions: unknown[] },
-  setName?: "ক" | "খ",
-) {
+export function marketSnapshotItems(snapshot: {
+  settings: unknown;
+  questions: unknown[];
+}): PaperItem[] {
   if (!Array.isArray(snapshot.questions) || snapshot.questions.length > 300)
     throw new Error("Invalid snapshot");
   const s = restoreSettings(snapshot.settings);
-  const selectedSet = setName ?? s.setName;
-  const base = s.seed + (selectedSet === "খ" ? 7919 : 0);
-  const data: PaperItem[] = snapshot.questions
+  return snapshot.questions
     .map((raw) => {
       const r = object(raw),
         options = object(r.options);
@@ -79,7 +76,22 @@ export function marketPreviewModel(
       };
       return { ...q, ...s.edits[q.id] };
     })
-    .filter((q) => q.id && !s.excludedIds.includes(q.id));
+    .filter((q) => q.id);
+}
+
+/** Derive display only from the immutable application, never a fresh bank query. */
+export function marketPreviewModel(
+  snapshot: { settings: unknown; questions: unknown[] },
+  setName?: "ক" | "খ",
+) {
+  if (!Array.isArray(snapshot.questions) || snapshot.questions.length > 300)
+    throw new Error("Invalid snapshot");
+  const s = restoreSettings(snapshot.settings);
+  const selectedSet = setName ?? s.setName;
+  const base = s.seed + (selectedSet === "খ" ? 7919 : 0);
+  const data = marketSnapshotItems(snapshot).filter(
+    (q) => !s.excludedIds.includes(q.id),
+  );
   const divisions = [
     ...new Set(
       data

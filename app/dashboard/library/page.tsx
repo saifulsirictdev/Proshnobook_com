@@ -46,7 +46,7 @@ export default async function Library({
               ) : (
                 <Link
                   className="underline"
-                  href={`/dashboard/library/${paperId}`}
+                  href={`/dashboard/library/${paperId}/setup`}
                 >
                   {r.title} →
                 </Link>

@@ -2,7 +2,9 @@ import type { MarketSample } from "@/lib/marketplace-sample";
 import "./marketplace-sample.css";
 export default function MarketplaceSample({
   sample,
+  id,
 }: {
+  id: string;
   sample: MarketSample | null;
 }) {
   return (
@@ -16,14 +18,14 @@ export default function MarketplaceSample({
             সম্পূর্ণ প্রশ্ন নয়।
           </p>
           <div className="market-sample-sheet">
-            <div className="market-sample-watermark" aria-hidden="true">
-              প্রশ্নবুক · নমুনা
-            </div>
-            <ol>
-              {sample.excerpts.map((text, index) => (
-                <li key={index}>{text}</li>
-              ))}
-            </ol>
+            <img
+              src={`/api/marketplace/${id}/sample`}
+              alt="কেনার আগের সীমিত প্রশ্নের নমুনা—ছবির মধ্যে স্থায়ী জলছাপ যুক্ত"
+              width={880}
+              height={820}
+              loading="lazy"
+              className="market-sample-image"
+            />
             <p className="market-sample-stamp">
               শুধু কেনার আগে যাচাইয়ের নমুনা · সম্পূর্ণ কপি নয়
             </p>

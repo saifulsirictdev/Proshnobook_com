@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
 import { ArrowRight } from "lucide-react";
 import { NCTB_CLASSES, type NctbClass } from "@/lib/nctb-data";
 
@@ -51,6 +52,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const router = useRouter();
   const append = useSearchParams().get("append") === "1";
   const [category, setCategory] = useState("");
+  const [questionType, setQuestionType] = useState("ALL");
   const [subject, setSubject] = useState("");
   const [topicCategory, setTopicCategory] = useState(""); // ক্যাটাগরি/ইউনিট
   const [topic, setTopic] = useState(""); // নির্দিষ্ট টপিক
@@ -111,6 +113,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   function go() {
     const p = new URLSearchParams();
     if (append) p.set("append", "1");
+    p.set("questionType", questionType);
     if (category) p.set("category", category);
     if (subject) p.set("subject", subject);
     if (hasGroups) {
@@ -230,6 +233,22 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           </select>
         )
       )}
+
+      <label className="block text-sm font-semibold text-slate-700">
+        প্রশ্নের ধরন
+        <select
+          name="questionType"
+          className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
+          value={questionType}
+          onChange={(e) => setQuestionType(e.target.value)}
+        >
+          {QUESTION_TYPE_OPTIONS.map(({ value, label }) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <button
         type="button"

@@ -45,6 +45,8 @@ export default async function SellPage() {
     APPROVED: "অনুমোদিত — ক্যাটালগে পরিচিতি প্রকাশিত; কেনাকাটা বন্ধ",
     CHANGES: "সংশোধন প্রয়োজন",
     REJECTED: "বাতিল",
+    UNPUBLISHED: "প্রকাশ বন্ধ",
+    DELETED: "ক্যাটালগ থেকে সরানো হয়েছে",
   };
   return (
     <main className="mx-auto max-w-3xl p-5 space-y-5">

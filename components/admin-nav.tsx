@@ -44,6 +44,7 @@ const items = [
   ["Site settings", "/admin/settings", Settings],
   ["Edit / Delete", "/admin/manage", Pencil],
   ["পরিসংখ্যান / Overview", "/admin/overview", BarChart3],
+  ["হোমপেজ ক্যাটালগ নিয়ন্ত্রণ", "/admin/catalog", Library],
   ["মার্কেটপ্লেস অনুমোদন", "/admin/marketplace", Store],
   ["বিক্রির আয় উত্তোলন", "/admin/withdrawals", Banknote],
   ["মার্কেটপ্লেস আর্থিক রসিদ", "/admin/marketplace-revenue", ReceiptText],
