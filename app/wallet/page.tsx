@@ -1,3 +1,13 @@
+import WalletTransfer from "@/components/wallet-transfer";
+import { readWalletLimits } from "@/lib/wallet-limits";
+import {
+  Send,
+  ArrowUpRight,
+  Gift,
+  Wallet,
+  TrendingUp,
+  Download,
+} from "lucide-react";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 import { formatMoney, teacherTid } from "@/lib/wallet";
@@ -46,6 +56,7 @@ export default async function WalletPage() {
   ]);
   const w = data.wallet,
     balance = w ? (w.admin ? "চার্জমুক্ত" : formatMoney(w.balance)) : "লোড হয়নি";
+  const limits = w && !w.admin ? await readWalletLimits(db) : null;
   const history = (list: typeof rows) =>
     list
       ?.flatMap((row) => {
@@ -78,27 +89,95 @@ export default async function WalletPage() {
           আপনার TID: <strong>{teacherTid(s.user.id)}</strong>
         </p>
         {w && !w.admin && (
-          <section className="tw-panel">
-            <h2>টাকার উৎস অনুযায়ী হিসাব</h2>
-            <p>
-              অব্যবহৃত বোনাস: {formatMoney(w.funds.bonus)} · রিচার্জ:{" "}
-              {formatMoney(w.funds.recharge)}
+          <section className="tw-panel" aria-labelledby="wallet-sources-title">
+            <h2 id="wallet-sources-title">আমার ব্যালেন্সের হিসাব</h2>
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {[
+                {
+                  label: "অব্যবহৃত বোনাস",
+                  amount: w.funds.bonus,
+                  Icon: Gift,
+                  tone: "bg-violet-50 text-violet-800 border-violet-100",
+                  note: "তৈরি ও কেনায় ব্যবহার করুন",
+                },
+                {
+                  label: "রিচার্জ",
+                  amount: w.funds.recharge,
+                  Icon: Wallet,
+                  tone: "bg-sky-50 text-sky-900 border-sky-100",
+                  note: "ব্যবহার বা Send Money করুন",
+                },
+                {
+                  label: "নিজের বিক্রির আয়",
+                  amount: w.funds.earnings,
+                  Icon: TrendingUp,
+                  tone: "bg-emerald-50 text-emerald-900 border-emerald-100",
+                  note: "উত্তোলনযোগ্য আয়",
+                },
+                {
+                  label: "Send Money-তে পাওয়া",
+                  amount: w.funds.received,
+                  Icon: Download,
+                  tone: "bg-indigo-50 text-indigo-900 border-indigo-100",
+                  note: "উত্তোলনযোগ্য নয়",
+                },
+              ].map(({ label, amount, Icon, tone, note }) => (
+                <div
+                  key={label}
+                  className={`min-w-0 rounded-2xl border p-4 ${tone}`}
+                >
+                  <Icon size={20} aria-hidden="true" />
+                  <div className="mt-3 text-sm font-semibold">{label}</div>
+                  <div className="mt-1 break-words text-2xl font-extrabold">
+                    {formatMoney(amount)}
+                  </div>
+                  <div className="mt-2 text-xs opacity-80">{note}</div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-sm text-slate-600">
+              শুধু নিজের বিক্রির আয় উত্তোলন করা যায়। বোনাস Send Money করা যায় না।
             </p>
-            <p>
-              নিজের বিক্রির আয়: {formatMoney(w.funds.earnings)} · Send Money-তে
-              পাওয়া: {formatMoney(w.funds.received)}
-            </p>
-            <p className="tw-muted">
-              বিক্রির আয় ছাড়া অন্য টাকা উত্তোলনযোগ্য নয়। পুরোনো ব্যালেন্সে অব্যবহৃত বোনাস
-              আলাদাভাবে জানা না থাকায় সর্বোচ্চ মূল বোনাসের সমপরিমাণ সংরক্ষিত ধরে
-              হিসাব করা হয়েছে; মোট টাকা কমেনি।
-            </p>
-            <Link className="tw-link" href="/wallet/send">
-              TID দিয়ে শিক্ষককে Send Money করুন →
-            </Link>
-            <Link className="tw-link block mt-3" href="/wallet/withdraw">
-              নিজের বিক্রির আয় উত্তোলন →
-            </Link>
+            <details className="mt-3 text-sm text-slate-500">
+              <summary className="cursor-pointer">
+                পুরোনো ব্যালেন্সের হিসাব সম্পর্কে
+              </summary>
+              <p className="mt-2">
+                পুরোনো ব্যালেন্সে অব্যবহৃত বোনাস আলাদাভাবে জানা না থাকায় সর্বোচ্চ মূল
+                বোনাসের সমপরিমাণ সংরক্ষিত ধরে হিসাব করা হয়েছে; মোট টাকা কমেনি।
+              </p>
+            </details>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-start">
+              <details className="min-w-0 flex-1 rounded-2xl border border-indigo-100 bg-slate-50 open:p-3">
+                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-700 to-violet-700 px-5 py-3 font-bold text-white">
+                  <Send size={18} aria-hidden="true" />
+                  Send Money
+                </summary>
+                <div className="pt-4">
+                  <h3 className="font-bold text-slate-900">
+                    শিক্ষককে টাকা পাঠান
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-600">
+                    পাঠানোর যোগ্য:{" "}
+                    <strong>{formatMoney(w.balance - w.funds.bonus)}</strong> ·
+                    ফি ৳০। প্রাপ্ত টাকা দিয়ে তৈরি/কেনা যাবে, উত্তোলন নয়।
+                  </p>
+                  <p className="mb-4 mt-2 text-sm text-slate-600">
+                    ন্যূনতম ৳১। দৈনিক সর্বোচ্চ {formatMoney(limits!.transferDaily)}।
+                    দিনে সর্বোচ্চ {limits!.recipientLookups} বার প্রাপক যাচাই করা
+                    যাবে।
+                  </p>
+                  <WalletTransfer maximum={limits!.transferDaily} />
+                </div>
+              </details>
+              <Link
+                className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-300 px-5 py-3 font-bold text-slate-700"
+                href="/wallet/withdraw"
+              >
+                বিক্রির আয় উত্তোলন
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </Link>
+            </div>
           </section>
         )}
         <section className="tw-wallet-stats">
@@ -106,7 +185,7 @@ export default async function WalletPage() {
             <div className="tw-stat">
               <small>বর্তমান balance</small>
               <strong>{balance}</strong>
-              <span>নগদ উত্তোলনযোগ্য নয়</span>
+              <span>শুধু নিজের বিক্রির আয় উত্তোলনযোগ্য</span>
             </div>
             <div className="tw-stat">
               <small>প্রশ্নের মূল্য</small>
