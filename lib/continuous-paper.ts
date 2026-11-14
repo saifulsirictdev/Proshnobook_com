@@ -1,3 +1,12 @@
+/** Mixed question types must share lane widths to retain the reading cursor.
+ * A standalone CQ/SQ paper continues to use its own column preference. */
+export function continuousColumnCount(
+  types: string[],
+  mcq: number,
+  written: number,
+) {
+  return types.includes("MCQ") ? mcq : written;
+}
 export type FlowSection = {
   heading: number;
   heights: number[];
@@ -51,17 +60,15 @@ export function paginateContinuous(
       }
       // A width transition may have left no room in any lane.
       if (used[lane] + block > capacity && base > 0) nextPage();
-      pages
-        .at(-1)!
-        .push({
-          section: sectionIndex,
-          heading,
-          columns: [[index]],
-          lane,
-          laneCount: lanes,
-          top: used[lane],
-          height: block,
-        });
+      pages.at(-1)!.push({
+        section: sectionIndex,
+        heading,
+        columns: [[index]],
+        lane,
+        laneCount: lanes,
+        top: used[lane],
+        height: block,
+      });
       used[lane] += block;
     });
   });

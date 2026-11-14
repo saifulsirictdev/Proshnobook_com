@@ -133,3 +133,46 @@ test("print layout never re-enables nonprint toolbar", () => {
   const css = fs.readFileSync("components/paper-builder/paper.css", "utf8");
   assert.match(css, /> div:not\(\[data-noprint\]\)/);
 });
+
+test("mixed MCQ/CQ/SQ uses the same measured lane width and continues after the final MCQ", () => {
+  const { continuousColumnCount } = m.exports;
+  const columns = continuousColumnCount(["MCQ", "SHORT", "CQ"], 3, 1);
+  assert.equal(columns, 3);
+  const pages = paginateContinuous(
+    [
+      { heading: 20, heights: [180, 180, 100], columns },
+      { heading: 20, heights: [50], columns },
+      { heading: 20, heights: [40], columns },
+    ],
+    250,
+    300,
+  );
+  assert.equal(pages.length, 1);
+  assert.deepEqual(
+    pages[0].map((s) => [s.section, s.lane, s.top]),
+    [
+      [0, 0, 0],
+      [0, 1, 0],
+      [0, 2, 0],
+      [1, 2, 100],
+      [2, 2, 170],
+    ],
+  );
+  assert.equal(continuousColumnCount(["CQ", "SHORT"], 3, 1), 1);
+  assert.equal(continuousColumnCount(["CQ"], 3, 2), 2);
+});
+test("mixed flow only advances after heading and question no longer fit, retaining each question once", () => {
+  const columns = m.exports.continuousColumnCount(["MCQ", "SHORT"], 3, 1);
+  const pages = paginateContinuous(
+    [
+      { heading: 10, heights: [180, 180, 180], columns },
+      { heading: 30, heights: [60, 60], columns },
+    ],
+    250,
+    300,
+  );
+  assert.equal(pages[0].at(-1).section, 0);
+  assert.equal(pages[1][0].section, 1);
+  assert.equal(pages[1][0].heading, true);
+  assert.equal(pages.flat().filter((s) => s.section === 1).length, 2);
+});

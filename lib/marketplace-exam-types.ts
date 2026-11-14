@@ -3,6 +3,7 @@ export const MARKET_EXAM_TYPES = [
   "অর্ধ বার্ষিক পরীক্ষা",
   "বার্ষিক পরীক্ষা",
   "নির্বাচনী পরীক্ষা",
+  "অধ্যায় ভিত্তিক পরীক্ষা",
 ] as const;
 
 export function marketExamLabel(examType: unknown) {

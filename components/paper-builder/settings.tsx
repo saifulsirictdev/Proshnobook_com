@@ -576,6 +576,10 @@ export default function PaperSettingsPanel({
                 ]}
                 onChange={(v) => cfg("cqColumns", v)}
               />
+              <p className="text-xs text-slate-500">
+                MCQ-সহ মিশ্র প্রশ্নপত্রে সব অংশ MCQ-এর কলাম ধরে ধারাবাহিকভাবে বসবে।
+                CQ / SQ-এর কলাম সেটিং শুধু MCQ ছাড়া প্রশ্নপত্রে প্রযোজ্য।
+              </p>
               {toggle("divider", "কলাম ডিভাইডার")}
               <Choices
                 label="অপশন কলাম"

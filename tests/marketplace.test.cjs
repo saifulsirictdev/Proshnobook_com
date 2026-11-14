@@ -283,11 +283,12 @@ test("approved application cannot be silently replaced and no money is moved", a
   );
 });
 
-test("three shared exam types are required for new submissions, legacy labels remain honest", async () => {
+test("four shared exam types are required for new submissions, legacy labels remain honest", async () => {
   assert.deepEqual(examTypes.MARKET_EXAM_TYPES, [
     "অর্ধ বার্ষিক পরীক্ষা",
     "বার্ষিক পরীক্ষা",
     "নির্বাচনী পরীক্ষা",
+    "অধ্যায় ভিত্তিক পরীক্ষা",
   ]);
   for (const examType of examTypes.MARKET_EXAM_TYPES) {
     assert.ok(
