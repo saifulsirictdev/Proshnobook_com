@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { publicMarketSample } from "@/lib/marketplace-sample";
-import MarketplaceSample from "@/components/marketplace-sample";
+import { publicFullPreview } from "@/lib/marketplace-full-preview";
+import MarketplaceFullPreview from "@/components/marketplace-full-preview";
 import { auth } from "@/auth";
 import {
   purchaseKey,
@@ -58,7 +58,7 @@ export default async function MarketDetail({
       <Link href={`/teachers/${paper.sellerTid}`} className="block underline">
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
       </Link>
-      <MarketplaceSample id={id} sample={publicMarketSample(row!.value, id)} />
+      <MarketplaceFullPreview model={publicFullPreview(row!.value, id)} />
       {owned ? (
         <Link href="/dashboard/library" className="block underline">
           কেনা কপি দেখুন (রিফান্ড হলে কপি বন্ধ) →
