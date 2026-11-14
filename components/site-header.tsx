@@ -4,8 +4,17 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  ArrowRight, LogIn, LogOut, Menu, X, ChevronDown, 
-  Sparkles, PenTool, Package, User, LayoutDashboard
+  ArrowRight,
+  LogIn,
+  LogOut,
+  Menu,
+  X,
+  ChevronDown,
+  Sparkles,
+  PenTool,
+  Package,
+  User,
+  LayoutDashboard,
 } from "lucide-react";
 import ThemeToggle from "@/components/theme-toggle";
 
@@ -36,40 +45,76 @@ const navTree: NavItem[] = [
 function Announcement({ text }: { text: string }) {
   const key = `ann:${text}`;
   const [hidden, setHidden] = useState(false);
-  useEffect(() => { try { if (sessionStorage.getItem(key)) setHidden(true); } catch {} }, [key]);
+  useEffect(() => {
+    try {
+      if (sessionStorage.getItem(key)) setHidden(true);
+    } catch {}
+  }, [key]);
   if (hidden || !text) return null;
-  const close = () => { setHidden(true); try { sessionStorage.setItem(key, "1"); } catch {} };
+  const close = () => {
+    setHidden(true);
+    try {
+      sessionStorage.setItem(key, "1");
+    } catch {}
+  };
   return (
     <div className="qm-announcement flex items-center gap-2 bg-gradient-to-r from-violet-700 via-fuchsia-700 to-pink-600 px-3 py-2 text-sm text-white">
       <span aria-hidden="true">🔔</span>
       <p className="min-w-0 flex-1 truncate">{text}</p>
-      <Link href="/blog" className="flex shrink-0 items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-900 transition-transform hover:scale-105">
-        এখনই দেখুন<ArrowRight size={14} />
+      <Link
+        href="/blog"
+        className="flex shrink-0 items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-900 transition-transform hover:scale-105"
+      >
+        এখনই দেখুন
+        <ArrowRight size={14} />
       </Link>
-      <button onClick={close} aria-label="Close notice" className="shrink-0 rounded p-1 hover:bg-white/10"><X size={18} /></button>
+      <button
+        onClick={close}
+        aria-label="Close notice"
+        className="shrink-0 rounded p-1 hover:bg-white/10"
+      >
+        <X size={18} />
+      </button>
     </div>
   );
 }
 
-export default function SiteHeader({ user, logout, notice }: { user: U; logout: () => Promise<void>; notice: string }) {
+export default function SiteHeader({
+  user,
+  logout,
+  notice,
+}: {
+  user: U;
+  logout: () => Promise<void>;
+  notice: string;
+}) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
 
   const isAdmin = user?.role === "ADMIN";
-  const on = (h: string) => (h === "/" ? path === "/" : path === h || path.startsWith(h + "/"));
+  const on = (h: string) =>
+    h === "/" ? path === "/" : path === h || path.startsWith(h + "/");
 
-  useEffect(() => { setOpen(false); }, [path]);
+  useEffect(() => {
+    setOpen(false);
+  }, [path]);
 
   useEffect(() => {
     if (!open) return;
-    const esc = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    const esc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
     document.addEventListener("keydown", esc);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    return () => { document.removeEventListener("keydown", esc); document.body.style.overflow = prev; };
+    return () => {
+      document.removeEventListener("keydown", esc);
+      document.body.style.overflow = prev;
+    };
   }, [open]);
 
-  const btnBase = "inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2 text-sm font-bold transition-all duration-200 active:scale-95";
+  const btnBase =
+    "inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2 text-sm font-bold transition-all duration-200 active:scale-95";
   const btnOutline = `qm-header-outline ${btnBase} border border-violet-200 bg-white/50 text-[#16112e] hover:bg-violet-50 hover:border-violet-300 backdrop-blur-sm dark:bg-white/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10`;
   const btnSolid = `qm-header-primary ${btnBase} bg-gradient-to-r from-[#7c3aed] to-[#4f46e5] text-white shadow-lg shadow-violet-500/30 hover:shadow-violet-500/50`;
 
@@ -77,17 +122,27 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
     <>
       {isAdmin && (
         <Link href="/admin" className={btnOutline}>
-          <LayoutDashboard size={16} />অ্যাডমিন
+          <LayoutDashboard size={16} />
+          অ্যাডমিন
         </Link>
       )}
       {user ? (
         <form action={logout}>
-          <button className={`${btnOutline} w-full`}><LogOut size={16} />লগআউট</button>
+          <button className={`${btnOutline} w-full`}>
+            <LogOut size={16} />
+            লগআউট
+          </button>
         </form>
       ) : (
-        <Link href="/login" className={btnOutline}><LogIn size={16} />লগইন</Link>
+        <Link href="/login" className={btnOutline}>
+          <LogIn size={16} />
+          লগইন
+        </Link>
       )}
-      <Link href="/question-builder" className={btnSolid}><Sparkles size={16} />শুরু করুন</Link>
+      <Link href="/question-builder" className={btnSolid}>
+        <Sparkles size={16} />
+        শুরু করুন
+      </Link>
     </>
   );
 
@@ -97,9 +152,8 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
       {/* Glassmorphism Sticky Header */}
       <header className="qm-site-header sticky top-0 z-40 border-b border-white/20 bg-white/80 backdrop-blur-xl dark:bg-[#0d0926]/80 dark:border-white/10 shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6">
-          
           {/* Brand Logo Area */}
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex min-w-0 flex-1 items-center gap-2 xl:flex-none">
             <button
               onClick={() => setOpen(true)}
               aria-label="Open menu"
@@ -108,16 +162,26 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
               <Menu size={22} />
             </button>
 
-            <Link href="/" aria-label={`${BRAND.nameBn} হোম`} className="flex items-center gap-2.5 group shrink-0">
+            <Link
+              href="/"
+              aria-label={`${BRAND.nameBn} হোম`}
+              className="group flex min-w-0 items-center gap-2.5"
+            >
               {/* হোমপেজের মতো গ্লাসমরফিক লোগো আইকন */}
-              <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#4f46e5] shadow-md shadow-violet-500/20 group-hover:scale-105 transition-transform">
-                <img src="/questionmaker-icon.png" width={40} height={40} alt="" className="rounded-xl" />
+              <div className="flex shrink-0 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#4f46e5] shadow-md shadow-violet-500/20 group-hover:scale-105 transition-transform">
+                <img
+                  src="/questionmaker-icon.png"
+                  width={40}
+                  height={40}
+                  alt=""
+                  className="rounded-xl"
+                />
               </div>
-              <div className="flex flex-col justify-center">
-                <span className="font-extrabold text-[13px] sm:text-lg tracking-tight leading-none text-[#16112e] dark:text-white">
+              <div className="flex min-w-0 flex-col justify-center">
+                <span className="block truncate bg-gradient-to-r from-[#152b49] via-[#343375] to-[#6d28d9] bg-clip-text text-[22px] font-extrabold leading-[1.35] tracking-tight text-transparent sm:text-2xl dark:from-white dark:via-violet-100 dark:to-violet-300">
                   {BRAND.nameBn}
                 </span>
-                <span className="text-[10px] sm:text-xs font-semibold text-violet-500 dark:text-violet-300 mt-0.5">
+                <span className="mt-0.5 block truncate text-[10px] font-semibold text-violet-600 sm:text-xs dark:text-violet-300">
                   {BRAND.tagline}
                 </span>
               </div>
@@ -125,7 +189,10 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
           </div>
 
           {/* Desktop Navigation */}
-          <nav aria-label="Main" className="hidden flex-1 items-center justify-center gap-2 whitespace-nowrap xl:flex px-4">
+          <nav
+            aria-label="Main"
+            className="hidden flex-1 items-center justify-center gap-2 whitespace-nowrap xl:flex px-4"
+          >
             {navTree.map((item) => (
               <div key={item.href} className="relative group">
                 <Link
@@ -138,7 +205,12 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
                   }`}
                 >
                   {item.label}
-                  {item.children && <ChevronDown size={14} className={`transition-transform group-hover:rotate-180 ${on(item.href) ? "text-[#7c3aed]" : "text-slate-400"}`} />}
+                  {item.children && (
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform group-hover:rotate-180 ${on(item.href) ? "text-[#7c3aed]" : "text-slate-400"}`}
+                    />
+                  )}
                 </Link>
                 {item.children && (
                   <div className="absolute left-0 top-full mt-1 hidden w-56 rounded-xl border border-slate-100 bg-white/95 backdrop-blur-xl p-2 shadow-xl group-hover:block dark:bg-[#1a1247] dark:border-white/10">
@@ -187,8 +259,14 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
           }`}
         >
           <div className="flex items-center justify-between border-b border-slate-100 px-4 py-4 dark:border-white/10">
-            <span className="font-bold text-lg text-[#16112e] dark:text-white">মেনু</span>
-            <button onClick={() => setOpen(false)} aria-label="Close menu" className="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-white/10">
+            <span className="font-bold text-lg text-[#16112e] dark:text-white">
+              মেনু
+            </span>
+            <button
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+              className="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-white/10"
+            >
               <X size={20} />
             </button>
           </div>
@@ -199,19 +277,27 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
                   <User size={18} />
                 </div>
                 <div className="min-w-0">
-                  <div className="truncate text-sm font-bold text-[#16112e] dark:text-white">{user.name ?? "ব্যবহারকারী"}</div>
+                  <div className="truncate text-sm font-bold text-[#16112e] dark:text-white">
+                    {user.name ?? "ব্যবহারকারী"}
+                  </div>
                   <div className="text-xs font-medium text-[#7c3aed] dark:text-violet-300">
-                    {isAdmin ? "অ্যাডমিন" : user.role === "STUDENT" ? "শিক্ষার্থী" : "শিক্ষক"}
+                    {isAdmin
+                      ? "অ্যাডমিন"
+                      : user.role === "STUDENT"
+                        ? "শিক্ষার্থী"
+                        : "শিক্ষক"}
                   </div>
                 </div>
               </div>
             )}
-            
+
             <div className="space-y-1">
               {navTree.map((item) =>
                 item.children ? (
                   <div key={item.href} className="mt-2">
-                    <div className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{item.label}</div>
+                    <div className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                      {item.label}
+                    </div>
                     {item.children.map((sub) => (
                       <Link
                         key={sub.href}
@@ -232,7 +318,7 @@ export default function SiteHeader({ user, logout, notice }: { user: U; logout: 
                   >
                     {item.label}
                   </Link>
-                )
+                ),
               )}
             </div>
 

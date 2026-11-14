@@ -3,10 +3,16 @@
 
 import { usePathname } from "next/navigation";
 
-export default function PathGate({ children }: { children: React.ReactNode }) {
+export default function PathGate({
+  children,
+  showOnHome = false,
+}: {
+  children: React.ReactNode;
+  showOnHome?: boolean;
+}) {
   const path = usePathname() ?? "";
   const hide =
-    path === "/" ||
+    (path === "/" && !showOnHome) ||
     path === "/login" ||
     path === "/wallet" ||
     path === "/dashboard" ||

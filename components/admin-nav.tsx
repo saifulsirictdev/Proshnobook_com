@@ -18,6 +18,13 @@ import {
   Users,
   FileText,
   Library,
+  Banknote,
+  ReceiptText,
+  ShieldAlert,
+  SlidersHorizontal,
+  LifeBuoy,
+  FileLock2,
+  Store,
 } from "lucide-react";
 
 const items = [
@@ -37,6 +44,15 @@ const items = [
   ["Site settings", "/admin/settings", Settings],
   ["Edit / Delete", "/admin/manage", Pencil],
   ["পরিসংখ্যান / Overview", "/admin/overview", BarChart3],
+  ["মার্কেটপ্লেস অনুমোদন", "/admin/marketplace", Store],
+  ["বিক্রির আয় উত্তোলন", "/admin/withdrawals", Banknote],
+  ["মার্কেটপ্লেস আর্থিক রসিদ", "/admin/marketplace-revenue", ReceiptText],
+  ["মার্কেটপ্লেস অভিযোগ / রিফান্ড", "/admin/marketplace-disputes", ShieldAlert],
+  ["Send Money ও উত্তোলনের সীমা", "/admin/wallet-limits", SlidersHorizontal],
+  ["আর্থিক রিপোর্ট", "/admin/financial-report", BarChart3],
+  ["সহায়তা / গোপনীয়তা / কপিরাইট", "/admin/support", LifeBuoy],
+  ["PDF storage প্রস্তুতি ও পরীক্ষা", "/admin/pdf-storage", FileLock2],
+  ["English উদ্ধার/অনুমোদন", "/admin/english-review", ListChecks],
 ] as const;
 
 const menuGroups = [
@@ -81,7 +97,9 @@ export default function AdminNav({
 }) {
   const path = usePathname();
   const on = (h: string) =>
-    h === "/admin" || h === "/admin/blog" ? path === h : path.startsWith(h);
+    h === "/admin" || h === "/admin/blog"
+      ? path === h
+      : path === h || path.startsWith(`${h}/`);
   return (
     <aside className="shrink-0 lg:w-64">
       <div className="rounded-2xl bg-white p-3 shadow-sm lg:sticky lg:top-20">

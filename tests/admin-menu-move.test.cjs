@@ -19,11 +19,12 @@ test("marked dashboard controls and overview shortcut are removed while generato
   );
 });
 test("admin menu contains all relocated destinations at the end without dashboard cards", () => {
+  let currentPath = "/admin";
   const m = new Module("admin-menu", module);
   m.paths = module.paths;
   m.require = (n) =>
     n === "next/navigation"
-      ? { usePathname: () => "/admin" }
+      ? { usePathname: () => currentPath }
       : n === "next/link"
         ? {
             __esModule: true,
@@ -49,6 +50,15 @@ test("admin menu contains all relocated destinations at the end without dashboar
   );
   for (const route of [
     "/admin/overview",
+    "/admin/marketplace",
+    "/admin/withdrawals",
+    "/admin/marketplace-revenue",
+    "/admin/marketplace-disputes",
+    "/admin/wallet-limits",
+    "/admin/financial-report",
+    "/admin/support",
+    "/admin/pdf-storage",
+    "/admin/english-review",
     "/admin/model-test",
     "/model-test",
     "/model-test/leaderboard",
@@ -82,6 +92,22 @@ test("admin menu contains all relocated destinations at the end without dashboar
     fs.readFileSync("app/admin/layout.tsx", "utf8"),
     /href="\/admin\/promo"/,
   );
+  for (const target of [
+    "/admin/marketplace-revenue",
+    "/admin/marketplace-disputes",
+    "/admin/pdf-storage/resources",
+  ]) {
+    currentPath = target;
+    const activeHtml = renderToStaticMarkup(
+      React.createElement(m.exports.default, { name: "Admin", role: "ADMIN" }),
+    );
+    const activeRoutes = [
+      ...activeHtml.matchAll(/<a[^>]*href="([^"]+)"[^>]*aria-current="page"/g),
+    ].map((match) => match[1]);
+    assert.deepEqual(activeRoutes, [
+      target.startsWith("/admin/pdf-storage/") ? "/admin/pdf-storage" : target,
+    ]);
+  }
   assert.match(html, /aria-label="Admin"/);
   assert.match(html, /পেমেন্ট অনুরোধ/);
   assert.match(html, />3</);
