@@ -1885,3 +1885,59 @@ test("purchase confirmation returns committed receipt amount and distinguishes r
   assert.equal(failed.balanceBefore, undefined);
   assert.equal(failed.balanceAfter, undefined);
 });
+
+test("PDF raster sale preserves immutable image pages, exact split, idempotency and source-preserving refund", async () => {
+  const x = await marketSetup();
+  x.r.source = "READY_PDF";
+  x.r.sourceKey = `marketready:v1:v:${"b".repeat(64)}`;
+  x.r.snapshot = {
+    settings: x.builder.settingsSchema.parse({}),
+    questions: [],
+    raster: {
+      kind: "READY_RASTER",
+      pages: [
+        `https://test.public.blob.vercel-storage.com/market-ready/${"c".repeat(64)}.png`,
+      ],
+    },
+  };
+  x.r.snapshotHash = x.market.snapshotHash(x.r.snapshot);
+  x.store.set("market:submission:v1:" + x.id, JSON.stringify(x.r));
+  x.f.set("terms", x.commerce.purchaseTerms(x.r));
+  const result = await x.purchases.buyMarketPaper({}, x.f);
+  assert.equal(result.ok, true, result.message);
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).chargedNow, false);
+  const owned = x.commerce.validatePurchase(
+    x.store.get(x.commerce.purchaseKey("u", x.id)),
+    "u",
+    x.id,
+  );
+  assert.deepEqual(owned.snapshot.raster, x.r.snapshot.raster);
+  assert.equal(owned.sellerAmount, 600);
+  assert.equal(owned.platformAmount, 401);
+  x.store.delete("market:submission:v1:" + x.id);
+  assert.deepEqual(
+    x.commerce.validatePurchase(
+      x.store.get(x.commerce.purchaseKey("u", x.id)),
+      "u",
+      x.id,
+    ).snapshot.raster,
+    owned.snapshot.raster,
+  );
+  assert.equal(
+    (await x.disputes.reportMarketPurchase({}, complaintForm(x.id))).ok,
+    true,
+  );
+  x.setSession("b");
+  assert.equal(
+    (await x.disputes.reviewMarketDispute({}, disputeReview(x))).ok,
+    true,
+  );
+  assert.equal((await x.wallet.ensureWallet("u")).balance, 2000);
+  assert.throws(() =>
+    x.commerce.validatePurchase(
+      x.store.get(x.commerce.purchaseKey("u", x.id)),
+      "u",
+      x.id,
+    ),
+  );
+});

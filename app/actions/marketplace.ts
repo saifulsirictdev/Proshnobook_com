@@ -1,4 +1,6 @@
 "use server";
+import { marketRasterSchema } from "@/lib/marketplace-raster";
+import { defaults } from "@/lib/paper-builder";
 import { assertRenderableMarketSnapshot } from "@/lib/marketplace-preview";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
@@ -34,10 +36,14 @@ export async function submitMarketPaper(
   try {
     const user = await actor();
     const sourceKey = String(form.get("sourceKey") || "");
-    if (sourceKey.length > 200 || !sourceKey.startsWith(`qbpaper:${user.id}:`))
+    if (
+      sourceKey.length > 200 ||
+      (!sourceKey.startsWith(`qbpaper:${user.id}:`) &&
+        !sourceKey.startsWith(`marketready:v1:${user.id}:`))
+    )
       return {
         ok: false,
-        message: "নিজের সংরক্ষিত ডাটাবেজ প্রশ্নপত্র নির্বাচন করুন।",
+        message: "নিজের সংরক্ষিত ডাটাবেজ প্রশ্নপত্র বা প্রস্তুত PDF কপি নির্বাচন করুন।",
       };
     const metadata = marketMetadataSchema.safeParse({
       examType: form.get("examType"),
@@ -65,8 +71,33 @@ export async function submitMarketPaper(
       };
     const row = await db.setting.findUnique({ where: { key: sourceKey } });
     if (!row) return { ok: false, message: "সংরক্ষিত প্রশ্নপত্র পাওয়া যায়নি।" };
-    const source = databasePaperOwner(row.value, sourceKey, user.id);
-    await requirePaidQuestions(user.id, source.ids);
+    const readySource = sourceKey.startsWith(`marketready:v1:${user.id}:`);
+    let raster: import("@/lib/marketplace-raster").MarketRaster | undefined;
+    if (readySource) {
+      const draft = JSON.parse(row.value);
+      if (
+        draft.ownerId !== user.id ||
+        !/^[a-f0-9]{64}$/.test(draft.receiptId) ||
+        sourceKey !== `marketready:v1:${user.id}:${draft.receiptId}` ||
+        !Number.isInteger(draft.count) ||
+        draft.count < 1 ||
+        draft.count > 10
+      )
+        throw Error("Invalid export");
+      raster = marketRasterSchema.parse({
+        kind: "READY_RASTER",
+        pages: Array.from({ length: draft.count }, (_, i) => draft.pages[i]),
+      });
+      const receipt = await db.setting.findUnique({
+        where: { key: `readyowned:v1:${user.id}:${draft.receiptId}` },
+      });
+      if (!receipt || JSON.parse(receipt.value).ownerId !== user.id)
+        throw Error("Missing owner receipt");
+    }
+    const source = readySource
+      ? { ids: [] as string[], settings: defaults() }
+      : databasePaperOwner(row.value, sourceKey, user.id);
+    if (!readySource) await requirePaidQuestions(user.id, source.ids);
     const id = marketSubmissionId(user.id, sourceKey);
     const result = await walletTransaction(async (tx) => {
       const fresh = await tx.user.findUnique({
@@ -88,25 +119,28 @@ export async function submitMarketPaper(
         : null;
       if (prior && (prior.ownerId !== user.id || prior.status !== "CHANGES"))
         return false;
-      const questions = await tx.question.findMany({
-        where: { id: { in: source.ids }, ...visibleQuestions(user.id) },
-        select: {
-          id: true,
-          text: true,
-          options: true,
-          correct: true,
-          explanation: true,
-          category: true,
-          subject: true,
-          topic: true,
-        },
-      });
+      const questions = readySource
+        ? []
+        : await tx.question.findMany({
+            where: { id: { in: source.ids }, ...visibleQuestions(user.id) },
+            select: {
+              id: true,
+              text: true,
+              options: true,
+              correct: true,
+              explanation: true,
+              category: true,
+              subject: true,
+              topic: true,
+            },
+          });
       if (questions.length !== source.ids.length)
         throw new Error("missing question");
       const byId = new Map(questions.map((q) => [q.id, q]));
       const snapshot = {
         settings: source.settings,
         questions: source.ids.map((id) => byId.get(id)!),
+        ...(raster ? { raster } : {}),
       };
       if (Buffer.byteLength(JSON.stringify(snapshot), "utf8") > 1000000)
         throw new Error("snapshot too large");
@@ -117,7 +151,7 @@ export async function submitMarketPaper(
         id,
         ownerId: user.id,
         sourceKey,
-        source: "DATABASE",
+        source: readySource ? "READY_PDF" : "DATABASE",
         status: autoPublish ? "APPROVED" : "PENDING",
         revision: (prior?.revision ?? 0) + 1,
         metadata: metadata.data,
@@ -156,7 +190,7 @@ export async function submitMarketPaper(
         result === "PUBLISHED"
           ? "আপনার ADMIN প্রশ্নপত্র সরাসরি ক্যাটালগে প্রকাশিত হয়েছে। আলাদা অনুমোদন লাগেনি।"
           : result
-            ? "স্থির কপিসহ আবেদন জমা হয়েছে। অ্যাডমিন যাচাই করবেন। এই ধাপে বিক্রি/টাকা কাটা চালু নয়।"
+            ? "স্থির কপিসহ আবেদন জমা হয়েছে। ADMIN অনুমোদনের পরে মার্কেটপ্লেসে বিক্রি করা যাবে। আবেদন জমায় টাকা কাটেনি।"
             : "এই প্রশ্নপত্রের আবেদন আগেই জমা দেওয়া হয়েছে। সংশোধন চাওয়া হলে আবার জমা দিতে পারবেন।",
     };
   } catch {

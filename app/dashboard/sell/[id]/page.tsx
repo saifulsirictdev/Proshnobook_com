@@ -1,3 +1,4 @@
+import { assertRenderableMarketSnapshot } from "@/lib/marketplace-preview";
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { auth } from "@/auth";
@@ -8,7 +9,6 @@ import {
   type MarketSubmission,
 } from "@/lib/marketplace";
 import { marketExamLabel } from "@/lib/marketplace-exam-types";
-import { settingsSchema } from "@/lib/paper-builder";
 import MarketplacePaperPreview from "@/components/marketplace-paper-preview";
 export const dynamic = "force-dynamic";
 export const metadata = {
@@ -47,19 +47,10 @@ export default async function SubmittedPreview({
     notFound();
   let valid = false;
   try {
-    valid =
-      snapshotHash(record.snapshot) === record.snapshotHash &&
-      Array.isArray(record.snapshot.questions) &&
-      record.snapshot.questions.length > 0 &&
-      record.snapshot.questions.length <= 300 &&
-      record.snapshot.questions.every(
-        (q) =>
-          q &&
-          typeof q === "object" &&
-          typeof (q as { id?: unknown }).id === "string" &&
-          typeof (q as { text?: unknown }).text === "string",
-      ) &&
-      settingsSchema.safeParse(record.snapshot.settings).success;
+    if (snapshotHash(record.snapshot) !== record.snapshotHash)
+      throw Error("Invalid hash");
+    assertRenderableMarketSnapshot(record.snapshot);
+    valid = true;
   } catch {
     valid = false;
   }

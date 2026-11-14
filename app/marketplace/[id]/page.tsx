@@ -1,3 +1,5 @@
+import { rasterSnapshot } from "@/lib/marketplace-raster";
+import MarketplaceRasterPreview from "@/components/marketplace-raster-preview";
 import Link from "next/link";
 import { publicFullPreview } from "@/lib/marketplace-full-preview";
 import MarketplaceFullPreview from "@/components/marketplace-full-preview";
@@ -39,10 +41,12 @@ export default async function MarketDetail({
     if (owned && user?.id)
       purchased = validatePurchase(owned.value, user.id, id);
   } catch {}
+  let readyRaster = null;
   let terms: string | null = null;
   let platformSale = false;
   try {
     const record = saleRecord(row!.value, id);
+    readyRaster = rasterSnapshot(record.snapshot);
     const seller = await db.user.findUnique({
       where: { id: record.ownerId },
       select: { role: true },
@@ -61,6 +65,13 @@ export default async function MarketDetail({
         {paper.metadata.subject}
       </p>
       <p>{paper.metadata.chapters.join(" · ")}</p>
+      {readyRaster && (
+        <p className="rounded-xl bg-indigo-50 p-4 text-sm text-indigo-950">
+          PDF থেকে তৈরি স্থির ছবিভিত্তিক প্রশ্নপত্র। মূল PDF বা তার অন্য পৃষ্ঠা নয়। কেনার
+          পরে আকার ঠিক করা ও অতিরিক্ত লেখা যোগ করা যাবে; ছবির ভেতরের লেখা আলাদা
+          প্রশ্নের মতো বদলানো যায় না।
+        </p>
+      )}
       <p className="whitespace-pre-wrap break-words">
         {paper.metadata.description}
       </p>
@@ -70,7 +81,11 @@ export default async function MarketDetail({
       <Link href={`/teachers/${paper.sellerTid}`} className="block underline">
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
       </Link>
-      <MarketplaceFullPreview model={publicFullPreview(row!.value, id)} />
+      {readyRaster ? (
+        <MarketplaceRasterPreview raster={readyRaster} branded />
+      ) : (
+        <MarketplaceFullPreview model={publicFullPreview(row!.value, id)} />
+      )}
       {purchased ? (
         <MarketplaceBuy
           id={id}
@@ -78,6 +93,7 @@ export default async function MarketDetail({
           terms={terms ?? ""}
           price={formatMoney(purchased.amount)}
           platformSale={platformSale}
+          rasterSale={!!readyRaster}
         />
       ) : owned ? (
         <Link href="/dashboard/library" className="block underline">
@@ -93,6 +109,7 @@ export default async function MarketDetail({
       ) : terms ? (
         <MarketplaceBuy
           platformSale={platformSale}
+          rasterSale={!!readyRaster}
           id={id}
           terms={terms}
           price={formatMoney(paper.metadata.pricePaisa)}

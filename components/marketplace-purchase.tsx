@@ -13,10 +13,12 @@ export function MarketplaceBuy({
   terms,
   price,
   platformSale = false,
+  rasterSale = false,
   ownedAmount,
 }: {
   ownedAmount?: number;
   platformSale?: boolean;
+  rasterSale?: boolean;
   id: string;
   terms: string;
   price: string;
@@ -70,12 +72,14 @@ export function MarketplaceBuy({
           কেনা কপি আবার খোলা/প্রিন্টে নতুন চার্জ নেই।
         </p>
         <p>
-          কেনার পরে Setup-এ প্রশ্ন, হেডার ও layout সম্পাদনা করে Preview/Print করতে
-          পারবেন। পরিবর্তন খোলা editor-এ থাকে; বন্ধ করার আগে PDF রাখুন। কেনা কপি
-          পুনর্বিক্রি করা যাবে না। সমস্যায় কেনা কপির অভিযোগ ফর্ম ব্যবহার করুন; অ্যাডমিন
-          যাচাই ছাড়া রিফান্ড নয়। রিফান্ড হলে অনলাইন কপি বন্ধ হবে এবং আগের
-          ডাউনলোড/প্রিন্ট ব্যবহার বা বিতরণ করা যাবে না। ডিজিটাল কপির পুনর্বিতরণ
-          প্রযুক্তিগতভাবে পুরোপুরি ঠেকানো সম্ভব নয়।
+          {rasterSale
+            ? "এটি PDF থেকে তৈরি ছবিভিত্তিক কপি। Setup-এ আকার ঠিক ও অতিরিক্ত লেখা যোগ করে Print/PDF করতে পারবেন; ছবির ভেতরের লেখা আলাদা প্রশ্নের মতো সম্পাদনাযোগ্য নয়।"
+            : "কেনার পরে Setup-এ প্রশ্ন, হেডার ও layout সম্পাদনা করে Preview/Print করতে পারবেন।"}{" "}
+          পরিবর্তন খোলা editor-এ থাকে; বন্ধ করার আগে PDF রাখুন। কেনা কপি পুনর্বিক্রি
+          করা যাবে না। সমস্যায় কেনা কপির অভিযোগ ফর্ম ব্যবহার করুন; অ্যাডমিন যাচাই
+          ছাড়া রিফান্ড নয়। রিফান্ড হলে অনলাইন কপি বন্ধ হবে এবং আগের ডাউনলোড/প্রিন্ট
+          ব্যবহার বা বিতরণ করা যাবে না। ডিজিটাল কপির পুনর্বিতরণ প্রযুক্তিগতভাবে পুরোপুরি
+          ঠেকানো সম্ভব নয়।
         </p>
         <label className="flex gap-2">
           <input type="checkbox" name="confirmed" required />
@@ -115,6 +119,7 @@ export function MarketplaceBuy({
               id={state.paperId ?? id}
               amount={state.amount}
               chargedNow={state.chargedNow}
+              rasterSale={rasterSale}
               balanceBefore={state.balanceBefore}
               balanceAfter={state.balanceAfter}
             />

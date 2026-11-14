@@ -11,12 +11,14 @@ export default function MarketplacePurchaseSuccess({
   chargedNow = false,
   balanceBefore,
   balanceAfter,
+  rasterSale = false,
 }: {
   id: string;
   amount: number;
   chargedNow?: boolean;
   balanceBefore?: number;
   balanceAfter?: number;
+  rasterSale?: boolean;
 }) {
   const money = (n: number) => `৳${(n / 100).toFixed(2)}`;
   return (
@@ -66,7 +68,9 @@ export default function MarketplacePurchaseSuccess({
           </p>
         )}
         <p className="text-sm leading-relaxed text-slate-600">
-          প্রশ্ন, প্রতিষ্ঠানের নাম, হেডার ও পৃষ্ঠা সাজিয়ে Preview ও Print করতে পারবেন।
+          {rasterSale
+            ? "ছবিভিত্তিক কপির আকার ঠিক করে ও অতিরিক্ত লেখা যোগ করে Print/PDF করতে পারবেন। ছবির ভেতরের লেখা আলাদা করে সম্পাদনাযোগ্য নয়।"
+            : "প্রশ্ন, প্রতিষ্ঠানের নাম, হেডার ও পৃষ্ঠা সাজিয়ে Preview ও Print করতে পারবেন।"}
           সম্পাদনা শেষে পেজ বন্ধ করার আগে Print থেকে PDF রাখুন।
         </p>
         <Link
