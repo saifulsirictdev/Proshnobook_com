@@ -75,7 +75,11 @@ export default async function MarketplaceAdmin() {
           <p className="break-all text-xs">
             Snapshot SHA-256: {r.snapshotHash}
           </p>
-          <MarketplaceReview id={r.id} revision={r.revision} />
+          <MarketplaceReview
+            id={r.id}
+            revision={r.revision}
+            ownAdmin={r.ownerId === actor.id}
+          />
         </section>
       ))}
     </main>

@@ -5,7 +5,10 @@ import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { listPapers } from "@/app/actions/qb-papers";
 import { MARKET_PREFIX, type MarketSubmission } from "@/lib/marketplace";
-import { MarketplaceSubmission } from "@/components/marketplace-submission";
+import {
+  MarketplaceSubmission,
+  MarketplaceReview,
+} from "@/components/marketplace-submission";
 import { formatMoney } from "@/lib/wallet";
 export const dynamic = "force-dynamic";
 export const metadata = {
@@ -15,6 +18,11 @@ export const metadata = {
 export default async function SellPage() {
   const user = (await auth())?.user;
   if (!user?.id) redirect("/login?next=/dashboard/sell");
+  const fresh = await db.user.findUnique({
+    where: { id: user.id },
+    select: { role: true },
+  });
+  const admin = fresh?.role === "ADMIN";
   const papers = await listPapers();
   const rows = await db.setting.findMany({
     where: {
@@ -44,11 +52,13 @@ export default async function SellPage() {
       <h1 className="text-2xl font-bold">প্রশ্নপত্র বিক্রির আবেদন</h1>
       <p className="rounded bg-amber-50 p-4">
         প্রথম পর্যায়ে শুধু নিজের ডাটাবেজ থেকে তৈরি সংরক্ষিত প্রশ্নপত্রের আবেদন নেওয়া
-        হচ্ছে। অনুমোদিত হলে ক্যাটালগে পরিচিতি প্রকাশিত হবে। PDF প্রস্তুত কপি, কেনাকাটা
-        ও আয় বণ্টন এখনও চালু হয়নি। আবেদন জমায় কোনো নতুন টাকা কাটবে না।
+        হচ্ছে। ADMIN-এর নিজের প্রশ্নপত্র জমা দিলেই ক্যাটালগে প্রকাশিত হবে। শিক্ষকের
+        প্রশ্নপত্র ADMIN অনুমোদন না দেওয়া পর্যন্ত প্রকাশিত হবে না। PDF প্রস্তুত কপি,
+        কেনাকাটা ও আয় বণ্টন এখনও চালু হয়নি। আবেদন জমায় কোনো নতুন টাকা কাটবে না।
       </p>
       {papers.length ? (
         <MarketplaceSubmission
+          admin={admin}
           papers={papers.map((p) => ({ key: p.key, name: p.name }))}
         />
       ) : (
@@ -75,6 +85,9 @@ export default async function SellPage() {
           >
             জমা দেওয়া স্থির প্রশ্নপত্র দেখুন →
           </Link>
+          {admin && r.status === "PENDING" && (
+            <MarketplaceReview id={r.id} revision={r.revision} ownAdmin />
+          )}
           {r.review && <p>অ্যাডমিনের নোট: {r.review.note || "—"}</p>}
         </section>
       ))}

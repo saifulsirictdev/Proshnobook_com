@@ -69,6 +69,12 @@ export async function submitMarketPaper(
     await requirePaidQuestions(user.id, source.ids);
     const id = marketSubmissionId(user.id, sourceKey);
     const result = await walletTransaction(async (tx) => {
+      const fresh = await tx.user.findUnique({
+        where: { id: user.id },
+        select: { role: true },
+      });
+      if (!fresh) throw new Error("missing account");
+      const autoPublish = fresh.role === "ADMIN";
       const current = await tx.setting.findUnique({
         where: { key: sourceKey },
       });
@@ -104,6 +110,7 @@ export async function submitMarketPaper(
       };
       if (Buffer.byteLength(JSON.stringify(snapshot), "utf8") > 1000000)
         throw new Error("snapshot too large");
+      if (autoPublish) assertRenderableMarketSnapshot(snapshot);
       const now = new Date().toISOString();
       const record: MarketSubmission = {
         version: 1,
@@ -111,13 +118,22 @@ export async function submitMarketPaper(
         ownerId: user.id,
         sourceKey,
         source: "DATABASE",
-        status: "PENDING",
+        status: autoPublish ? "APPROVED" : "PENDING",
         revision: (prior?.revision ?? 0) + 1,
         metadata: metadata.data,
         snapshot,
         snapshotHash: snapshotHash(snapshot),
         createdAt: prior?.createdAt ?? now,
         updatedAt: now,
+        ...(autoPublish
+          ? {
+              review: {
+                reviewerId: user.id,
+                note: "ADMIN-এর নিজস্ব প্রশ্নপত্র সরাসরি প্রকাশ",
+                at: now,
+              },
+            }
+          : {}),
       };
       if (existing)
         await tx.setting.update({
@@ -128,16 +144,20 @@ export async function submitMarketPaper(
         await tx.setting.create({
           data: { key: MARKET_PREFIX + id, value: JSON.stringify(record) },
         });
-      return true;
+      return autoPublish ? "PUBLISHED" : "PENDING";
     });
     revalidatePath("/dashboard/sell");
     revalidatePath("/admin/marketplace");
     revalidatePath("/marketplace");
+    revalidatePath("/");
     return {
-      ok: result,
-      message: result
-        ? "স্থির কপিসহ আবেদন জমা হয়েছে। অ্যাডমিন যাচাই করবেন। এই ধাপে বিক্রি/টাকা কাটা চালু নয়।"
-        : "এই প্রশ্নপত্রের আবেদন আগেই জমা দেওয়া হয়েছে। সংশোধন চাওয়া হলে আবার জমা দিতে পারবেন।",
+      ok: !!result,
+      message:
+        result === "PUBLISHED"
+          ? "আপনার ADMIN প্রশ্নপত্র সরাসরি ক্যাটালগে প্রকাশিত হয়েছে। আলাদা অনুমোদন লাগেনি।"
+          : result
+            ? "স্থির কপিসহ আবেদন জমা হয়েছে। অ্যাডমিন যাচাই করবেন। এই ধাপে বিক্রি/টাকা কাটা চালু নয়।"
+            : "এই প্রশ্নপত্রের আবেদন আগেই জমা দেওয়া হয়েছে। সংশোধন চাওয়া হলে আবার জমা দিতে পারবেন।",
     };
   } catch {
     return {
@@ -181,7 +201,8 @@ export async function reviewMarketPaper(
       assertReviewable(record, revision);
       if (decision === "APPROVED")
         assertRenderableMarketSnapshot(record.snapshot);
-      if (record.ownerId === user.id) throw new Error("self review");
+      if (record.ownerId === user.id && decision !== "APPROVED")
+        throw new Error("self review");
       const now = new Date().toISOString();
       await tx.setting.update({
         where: { key: row.key },
@@ -190,7 +211,14 @@ export async function reviewMarketPaper(
             ...record,
             status: decision,
             updatedAt: now,
-            review: { reviewerId: user.id, note, at: now },
+            review: {
+              reviewerId: user.id,
+              note:
+                record.ownerId === user.id
+                  ? `ADMIN-এর নিজস্ব প্রশ্নপত্র সরাসরি প্রকাশ${note ? ": " + note : ""}`
+                  : note,
+              at: now,
+            },
           }),
         },
       });
@@ -198,6 +226,7 @@ export async function reviewMarketPaper(
     revalidatePath("/dashboard/sell");
     revalidatePath("/admin/marketplace");
     revalidatePath("/marketplace");
+    revalidatePath("/");
     return {
       ok: true,
       message:
@@ -207,7 +236,7 @@ export async function reviewMarketPaper(
     return {
       ok: false,
       message:
-        "সিদ্ধান্ত সংরক্ষণ হয়নি। অনুমতি, কারণ, যাচাইয়ের সম্মতি ও সর্বশেষ সংস্করণ পরীক্ষা করুন। নিজের আবেদন নিজে অনুমোদন করা যাবে না।",
+        "সিদ্ধান্ত সংরক্ষণ হয়নি। অনুমতি, কারণ, যাচাইয়ের সম্মতি ও সর্বশেষ সংস্করণ পরীক্ষা করুন। ADMIN শুধু নিজের অপেক্ষমাণ প্রশ্নপত্র সরাসরি প্রকাশ করতে পারেন।",
     };
   }
 }

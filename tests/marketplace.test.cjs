@@ -135,6 +135,7 @@ function setup() {
       ],
     },
   };
+  let transactionHook = () => {};
   let queue = Promise.resolve();
   const actions = load("app/actions/marketplace.ts", {
     "@/auth": { auth: async () => (session ? { user: users[session] } : null) },
@@ -149,6 +150,7 @@ function setup() {
       },
       walletTransaction: (fn) => {
         const run = queue.then(async () => {
+          transactionHook();
           const before = new Map(store);
           try {
             return await fn(tx);
@@ -185,6 +187,12 @@ function setup() {
     form,
     session: (v) => (session = v),
     paid: (v) => (paid = v),
+    role: (id, role) => {
+      users[id].role = role;
+    },
+    beforeTransaction: (hook) => {
+      transactionHook = hook;
+    },
   };
 }
 test("submission snapshots server questions, blocks duplicate, isolates from original changes", async () => {
@@ -334,4 +342,69 @@ test("admin cannot approve an empty visible paper but can request corrections", 
   f.set("decision", "CHANGES");
   f.set("note", "সব প্রশ্ন বাদ গেছে; সংশোধন করুন");
   assert.equal((await x.actions.reviewMarketPaper({}, f)).ok, true);
+});
+
+test("ADMIN submission publishes immediately with server validation and an audit; teacher remains pending", async () => {
+  for (const role of ["ADMIN", "TEACHER", "STUDENT"]) {
+    const x = setup();
+    x.role("u", role);
+    const result = await x.actions.submitMarketPaper({}, x.form());
+    assert.equal(result.ok, true);
+    const id = lib.marketSubmissionId("u", "qbpaper:u:a");
+    const r = JSON.parse(x.store.get(lib.MARKET_PREFIX + id));
+    assert.equal(r.status, role === "ADMIN" ? "APPROVED" : "PENDING");
+    if (role === "ADMIN") {
+      assert.equal(r.review.reviewerId, "u");
+      assert.match(r.review.note, /সরাসরি প্রকাশ/);
+    } else assert.equal(r.review, undefined);
+    assert.equal((await x.actions.submitMarketPaper({}, x.form())).ok, false);
+    assert.equal(
+      [...x.store.keys()].filter((k) => k.startsWith("wallet:")).length,
+      0,
+    );
+  }
+});
+test("role removed before transaction cannot auto-publish", async () => {
+  const x = setup();
+  x.role("u", "ADMIN");
+  x.beforeTransaction(() => x.role("u", "TEACHER"));
+  assert.equal((await x.actions.submitMarketPaper({}, x.form())).ok, true);
+  const id = lib.marketSubmissionId("u", "qbpaper:u:a");
+  assert.equal(
+    JSON.parse(x.store.get(lib.MARKET_PREFIX + id)).status,
+    "PENDING",
+  );
+});
+test("ADMIN can publish an existing own pending paper but teacher cannot self-approve", async () => {
+  const x = setup();
+  await x.actions.submitMarketPaper({}, x.form());
+  const id = lib.marketSubmissionId("u", "qbpaper:u:a");
+  const f = new FormData();
+  for (const [k, v] of Object.entries({
+    id,
+    revision: "1",
+    decision: "APPROVED",
+    reviewed: "on",
+  }))
+    f.set(k, v);
+  assert.equal((await x.actions.reviewMarketPaper({}, f)).ok, false);
+  x.role("u", "ADMIN");
+  assert.equal((await x.actions.reviewMarketPaper({}, f)).ok, true);
+  const r = JSON.parse(x.store.get(lib.MARKET_PREFIX + id));
+  assert.equal(r.status, "APPROVED");
+  assert.match(r.review.note, /সরাসরি প্রকাশ/);
+  assert.equal((await x.actions.reviewMarketPaper({}, f)).ok, false);
+});
+test("ADMIN auto-publish rejects an unrenderable snapshot", async () => {
+  const x = setup();
+  x.role("u", "ADMIN");
+  x.store.set(
+    "qbpaper:u:a",
+    JSON.stringify({ ownerId: "u", ids: ["q"], settings: { excludedIds: ["q"] } }),
+  );
+  assert.equal((await x.actions.submitMarketPaper({}, x.form())).ok, false);
+  assert.equal(
+    [...x.store.keys()].filter((k) => k.startsWith(lib.MARKET_PREFIX)).length,
+    0,
+  );
 });

@@ -15,7 +15,9 @@ import {
 const field = "block w-full rounded border p-2 mt-1";
 export function MarketplaceSubmission({
   papers,
+  admin = false,
 }: {
+  admin?: boolean;
   papers: { key: string; name: string }[];
 }) {
   const [grade, setGrade] = useState("6"),
@@ -139,7 +141,11 @@ export function MarketplaceSubmission({
         disabled={pending}
         className="rounded bg-indigo-700 p-3 font-bold text-white disabled:opacity-50"
       >
-        {pending ? "জমা হচ্ছে…" : "অ্যাডমিন যাচাইয়ের জন্য জমা দিন"}
+        {pending
+          ? "জমা হচ্ছে…"
+          : admin
+            ? "সরাসরি ক্যাটালগে প্রকাশ করুন"
+            : "অ্যাডমিন যাচাইয়ের জন্য জমা দিন"}
       </button>
       <p role="status" aria-live="polite">
         {state.message}
@@ -150,7 +156,9 @@ export function MarketplaceSubmission({
 export function MarketplaceReview({
   id,
   revision,
+  ownAdmin = false,
 }: {
+  ownAdmin?: boolean;
   id: string;
   revision: number;
 }) {
@@ -162,14 +170,18 @@ export function MarketplaceReview({
     <form action={action} className="grid gap-3 mt-4">
       <input type="hidden" name="id" value={id} />
       <input type="hidden" name="revision" value={revision} />
-      <label>
-        সিদ্ধান্ত
-        <select name="decision" className={field}>
-          <option value="CHANGES">সংশোধন চাই</option>
-          <option value="APPROVED">অনুমোদন</option>
-          <option value="REJECTED">বাতিল</option>
-        </select>
-      </label>
+      {ownAdmin ? (
+        <input type="hidden" name="decision" value="APPROVED" />
+      ) : (
+        <label>
+          সিদ্ধান্ত
+          <select name="decision" className={field}>
+            <option value="CHANGES">সংশোধন চাই</option>
+            <option value="APPROVED">অনুমোদন</option>
+            <option value="REJECTED">বাতিল</option>
+          </select>
+        </label>
+      )}
       <label>
         কারণ / যাচাইয়ের নোট
         <textarea name="note" maxLength={1000} className={field} />
@@ -182,7 +194,7 @@ export function MarketplaceReview({
         disabled={pending || state.ok}
         className="rounded bg-indigo-700 p-3 text-white disabled:opacity-50"
       >
-        সিদ্ধান্ত সংরক্ষণ
+        {ownAdmin ? "নিজের প্রশ্নপত্র সরাসরি প্রকাশ করুন" : "সিদ্ধান্ত সংরক্ষণ"}
       </button>
       <p role="status">{state.message}</p>
     </form>

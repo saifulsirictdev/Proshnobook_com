@@ -9,7 +9,17 @@ import TeacherOnboarding from "@/components/teacher-onboarding";
 import TeacherWorkspace, {
   WorkspaceCards,
 } from "@/components/teacher-workspace";
-import { Plus, ShoppingBag, ArrowUpRight } from "lucide-react";
+import {
+  Plus,
+  ShoppingBag,
+  ArrowUpRight,
+  Banknote,
+  Database,
+  FileText,
+  ShieldCheck,
+  Library,
+  Store,
+} from "lucide-react";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "আমার ড্যাশবোর্ড",
@@ -78,12 +88,6 @@ export default async function Dashboard({
       admin={!!w?.admin}
     >
       <main className="tw-main">
-        <Link
-          href="/ready-papers/saved"
-          className="inline-flex rounded-xl bg-indigo-700 px-4 py-3 font-bold text-white mb-4"
-        >
-          আমার Ready প্রশ্নপত্র ও উত্তরপত্র · প্যাকেজ
-        </Link>
         <section className="tw-hero">
           <span className="tw-eyebrow">আপনার প্রশ্ন তৈরির কর্মক্ষেত্র</span>
           <p>{greeting()},</p>
@@ -97,9 +101,17 @@ export default async function Dashboard({
               <Plus size={20} />
               প্রশ্ন তৈরি করুন
             </Link>
-            <Link href="/packages" className="tw-secondary">
+            <Link
+              href="/ready-papers/saved"
+              className="tw-secondary"
+              title="আমার Ready প্রশ্নপত্র ও উত্তরপত্র · প্যাকেজ"
+            >
               <ShoppingBag size={19} />
               প্যাকেজ দেখুন
+            </Link>
+            <Link href="/wallet/withdraw" className="tw-withdraw">
+              <Banknote size={19} />
+              উইথড্র
             </Link>
           </div>
           <div className="tw-stats">
@@ -146,14 +158,42 @@ export default async function Dashboard({
             হোম <ArrowUpRight size={15} style={{ display: "inline" }} />
           </Link>
         </div>
-        <section className="tw-cards" aria-label="প্রশ্নপত্র তৈরির দুটি মাধ্যম">
-          <Link className="tw-feature tw-green" href="/question-builder">
-            <h3>ডাটাবেজ থেকে প্রশ্নপত্র তৈরি করুন</h3>
-            <p>বিষয় ও অধ্যায় অনুযায়ী প্রশ্ন বেছে সাজান।</p>
+        <section
+          className="tw-creation-options"
+          aria-label="প্রশ্নপত্র তৈরির দুটি মাধ্যম"
+        >
+          <Link
+            className="tw-create-card tw-create-database"
+            href="/question-builder"
+          >
+            <span className="tw-create-top">
+              <span className="tw-create-icon">
+                <Database size={26} />
+              </span>
+              <span className="tw-create-tag">প্রশ্ন ব্যাংক</span>
+            </span>
+            <div>
+              <h3>ডাটাবেজ থেকে প্রশ্নপত্র তৈরি করুন</h3>
+              <p>বিষয় ও অধ্যায় অনুযায়ী প্রশ্ন বেছে সাজান।</p>
+            </div>
+            <span className="tw-create-cta">
+              প্রশ্ন বাছাই করুন <ArrowUpRight size={18} />
+            </span>
           </Link>
-          <Link className="tw-feature tw-purple" href="/ready-papers">
-            <h3>পিডিএফ থেকে প্রশ্নপত্র তৈরি করুন</h3>
-            <p>বোর্ড ও স্কুলের PDF থেকে প্রশ্ন বেছে সাজান।</p>
+          <Link className="tw-create-card tw-create-pdf" href="/ready-papers">
+            <span className="tw-create-top">
+              <span className="tw-create-icon">
+                <FileText size={26} />
+              </span>
+              <span className="tw-create-tag">PDF স্টুডিও</span>
+            </span>
+            <div>
+              <h3>পিডিএফ থেকে প্রশ্নপত্র তৈরি করুন</h3>
+              <p>বোর্ড ও স্কুলের PDF থেকে প্রশ্ন বেছে সাজান।</p>
+            </div>
+            <span className="tw-create-cta">
+              PDF বাছাই করুন <ArrowUpRight size={18} />
+            </span>
           </Link>
         </section>
         <Link
@@ -162,22 +202,45 @@ export default async function Dashboard({
         >
           নিজের তৈরি প্রশ্নপত্র বিক্রির জন্য জমা দিন · প্রস্তুতি পর্যায় →
         </Link>
-        {user.role === "ADMIN" && (
-          <Link href="/admin/marketplace" className="block mb-4 underline">
-            বিক্রির আবেদন যাচাই করুন →
+        <nav className="tw-market-actions" aria-label="মার্কেটপ্লেসের কাজ">
+          {user.role === "ADMIN" && (
+            <Link
+              href="/admin/marketplace"
+              className="tw-market-button tw-market-review"
+            >
+              <span className="tw-market-icon">
+                <ShieldCheck size={22} />
+              </span>
+              <span>বিক্রির আবেদন যাচাই করুন</span>
+              <ArrowUpRight size={19} className="tw-market-arrow" />
+            </Link>
+          )}
+          <Link
+            href="/marketplace"
+            className="tw-market-button tw-market-catalog"
+          >
+            <span className="tw-market-icon">
+              <Store size={22} />
+            </span>
+            <span>শিক্ষকদের প্রশ্নপত্র ক্যাটালগ দেখুন</span>
+            <ArrowUpRight size={19} className="tw-market-arrow" />
           </Link>
-        )}
-        <Link href="/marketplace" className="block mb-4 underline">
-          শিক্ষকদের প্রশ্নপত্র ক্যাটালগ দেখুন →
-        </Link>
+          <Link
+            href="/dashboard/library"
+            className="tw-market-button tw-market-library"
+          >
+            <span className="tw-market-icon">
+              <Library size={22} />
+            </span>
+            <span>মার্কেটপ্লেসে কেনা প্রশ্নপত্রের লাইব্রেরি</span>
+            <ArrowUpRight size={19} className="tw-market-arrow" />
+          </Link>
+        </nav>
         {!w?.admin && (
           <Link href="/wallet/send" className="block mb-4 underline">
             TID দিয়ে শিক্ষককে Send Money করুন →
           </Link>
         )}
-        <Link href="/dashboard/library" className="block mb-4 underline">
-          মার্কেটপ্লেসে কেনা প্রশ্নপত্রের লাইব্রেরি →
-        </Link>
         <WorkspaceCards />
         <section className="tw-panel">
           <h2>আপনার অ্যাকাউন্ট, এক নজরে</h2>
