@@ -362,3 +362,57 @@
     transition: none;
   }
 }
+
+/* Compact homepage grade pills; catalog navigation keeps its existing layout. */
+.pb-home-class-menu {
+  gap: 9px;
+  align-items: center;
+  padding: 2px 0 12px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.pb-home-class-menu::-webkit-scrollbar {
+  display: none;
+}
+.pb-home-class-menu a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 7px 15px;
+  border: 1px solid #e5e7f0;
+  border-radius: 999px;
+  background: #edeef5;
+  color: #233554;
+  font-family: var(--font-en), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.pb-home-class-menu a svg {
+  flex-shrink: 0;
+}
+.pb-home-class-menu a:hover {
+  background: #e6e1f6;
+  border-color: #c4b5ed;
+}
+.pb-home-class-menu a[aria-current="page"] {
+  background: linear-gradient(110deg, #243d67, #5935a5);
+  border-color: #3e3a82;
+  color: #fff;
+  box-shadow: 0 3px 9px #4338ca20;
+}
+.pb-home-class-menu a:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pb-home-class-menu a {
+    transition: none;
+  }
+}

@@ -55,12 +55,30 @@ test("new home renders all books, six-paper bounded queries, preserved subject l
     await Home({ searchParams: Promise.resolve({ grade: "12" }) }),
   );
   assert.equal(calls.length, school.marketSubjects("12").length);
-  assert.ok(calls.every((c) => c.limit === 6 && c.filters.grade === "12"));
+  assert.ok(calls.every((c) => c.limit === 6 && c.filters.grade === "HSC"));
   assert.equal((html.match(/class="pb-subject"/g) || []).length, calls.length);
-  assert.match(html, /দ্বাদশ শ্রেণির প্রশ্নপত্র/);
+  assert.match(html, /HSC প্রশ্নপত্র/);
   assert.match(html, /আরও প্রশ্ন দেখুন/);
+  const nav = html.slice(html.indexOf("<nav"), html.indexOf("</nav>"));
+  assert.deepEqual(
+    [...nav.matchAll(/href="\/\?grade=([^"]+)"/g)].map((m) => m[1]),
+    ["HSC", "SSC", "8", "7", "6"],
+  );
+  for (const label of [
+    "HSC / College",
+    "Class 9–10 (SSC)",
+    "Class 8",
+    "Class 7",
+    "Class 6",
+  ])
+    assert.ok(nav.includes(label));
+  assert.equal((nav.match(/<svg/g) || []).length, 5);
+  assert.ok(html.includes('href="/?grade=SSC"'));
+  assert.ok(html.includes('href="/?grade=HSC"'));
+  assert.ok(!html.includes('href="/?grade=9"'));
+  assert.ok(!html.includes('href="/?grade=12"'));
   assert.match(html, /এখনও অনুমোদিত প্রশ্নপত্র প্রকাশিত হয়নি/);
-  assert.ok(html.includes("grade=12&amp;subject="));
+  assert.ok(html.includes("grade=HSC&amp;subject="));
   assert.doesNotMatch(html, /PaperAnimation|HomeStarter|HomeStats/);
 });
 test("A4 ratio, mobile two-column cards and safe metadata-only display are explicit", () => {
@@ -76,4 +94,15 @@ test("A4 ratio, mobile two-column cards and safe metadata-only display are expli
   const filters = fs.readFileSync("components/marketplace-filters.tsx", "utf8");
   assert.match(filters, /setChapter\(""\)/);
   assert.match(filters, /marketChapters/);
+});
+
+test("homepage groups preserve legacy links and shared subjects", () => {
+  assert.deepEqual(school.HOME_GRADES, ["HSC", "SSC", "8", "7", "6"]);
+  for (const grade of ["9", "10", "SSC"])
+    assert.equal(school.homeGrade(grade), "SSC");
+  for (const grade of ["11", "12", "HSC"])
+    assert.equal(school.homeGrade(grade), "HSC");
+  assert.equal(school.homeGrade("bad"), "6");
+  assert.deepEqual(school.marketSubjects("SSC"), school.marketSubjects("9"));
+  assert.deepEqual(school.marketSubjects("HSC"), school.marketSubjects("11"));
 });

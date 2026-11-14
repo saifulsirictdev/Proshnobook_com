@@ -4,6 +4,7 @@ import { marketCatalogPage } from "@/lib/marketplace-catalog-data";
 import { MARKET_EXAM_TYPES } from "@/lib/marketplace-exam-types";
 import {
   MARKET_GRADES,
+  HOME_GRADES,
   MARKET_GRADE_NAMES,
   marketSubjects,
   marketChapters,
@@ -20,8 +21,8 @@ export default async function Marketplace({
   const raw = await searchParams;
   const text = (key: string) =>
     typeof raw[key] === "string" ? (raw[key] as string).slice(0, 200) : "";
-  const grade = MARKET_GRADES.includes(
-    text("grade") as (typeof MARKET_GRADES)[number],
+  const grade = [...MARKET_GRADES, ...HOME_GRADES].includes(
+    text("grade") as (typeof HOME_GRADES)[number],
   )
     ? text("grade")
     : "";
@@ -58,7 +59,7 @@ export default async function Marketplace({
           <h1>
             {filters.subject ||
               (grade
-                ? `${MARKET_GRADE_NAMES[grade]} শ্রেণির প্রশ্নপত্র`
+                ? `${MARKET_GRADE_NAMES[grade]}${grade === "SSC" || grade === "HSC" ? "" : " শ্রেণির"} প্রশ্নপত্র`
                 : "সকল প্রশ্নপত্র")}
           </h1>
           <p>বিষয়, অধ্যায় ও পরীক্ষার ধরন বেছে প্রশ্নপত্র খুঁজুন।</p>

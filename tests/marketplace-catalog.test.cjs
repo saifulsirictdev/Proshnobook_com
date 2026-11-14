@@ -181,3 +181,28 @@ test("catalog filters before paginating and continues across nonmatching chapter
   assert.equal(result.next, rows[107].key.slice(market.MARKET_PREFIX.length));
   assert.ok(seen[0].where.AND.some((p) => p.value.contains === '"grade":"9"'));
 });
+
+test("SSC and HSC filters include both member grades without crossing groups", () => {
+  const papers = ["8", "9", "10", "11", "12"].map((grade) => ({
+    ...lib.publicMarketPaper(JSON.stringify(record)),
+    metadata: { ...record.metadata, grade },
+  }));
+  assert.deepEqual(
+    lib
+      .filterMarketPapers(papers, { grade: "SSC" })
+      .map((p) => p.metadata.grade),
+    ["9", "10"],
+  );
+  assert.deepEqual(
+    lib
+      .filterMarketPapers(papers, { grade: "HSC" })
+      .map((p) => p.metadata.grade),
+    ["11", "12"],
+  );
+  assert.deepEqual(
+    lib
+      .filterMarketPapers(papers, { grade: "10" })
+      .map((p) => p.metadata.grade),
+    ["10"],
+  );
+});
