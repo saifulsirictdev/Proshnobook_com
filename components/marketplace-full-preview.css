@@ -1,0 +1,53 @@
+.market-full-preview {
+  margin: 24px 0;
+  color: #152b49;
+}
+.market-full-preview h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.market-full-pages {
+  display: grid;
+  gap: 24px;
+}
+.market-full-pages figure {
+  margin: 0;
+  min-width: 0;
+}
+.market-full-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #dce2ec;
+  box-shadow: 0 8px 28px #152b4910;
+}
+.market-full-pages figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #63738b;
+}
+/* Must stay measurable for the same pagination engine used by the buyer's paper. */
+.market-full-source {
+  position: fixed;
+  top: 0;
+  left: -100000px;
+  pointer-events: none;
+  z-index: -1;
+}
+.market-full-source .paper-page-viewport {
+  zoom: 1 !important;
+}
+.market-full-source .paper-watermark {
+  color: rgba(78, 49, 132, 0.12);
+}
+@media print {
+  .market-full-source {
+    display: none !important;
+  }
+  .market-full-pages figure {
+    break-after: page;
+  }
+}

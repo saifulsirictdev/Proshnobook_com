@@ -90,7 +90,7 @@ test("A4 ratio, mobile two-column cards and safe metadata-only display are expli
     "utf8",
   );
   assert.doesNotMatch(card, /snapshot|dangerouslySetInnerHTML/);
-  assert.match(card, /বিবরণে সীমিত পাঠ্য নমুনা দেখুন/);
+  assert.match(card, /জলছাপসহ সম্পূর্ণ প্রশ্নপত্র দেখুন/);
   const filters = fs.readFileSync("components/marketplace-filters.tsx", "utf8");
   assert.match(filters, /setChapter\(""\)/);
   assert.match(filters, /marketChapters/);

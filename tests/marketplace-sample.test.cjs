@@ -117,7 +117,7 @@ test("short stems, embedded resources, HTML and obvious inline solutions are not
 test("sample endpoint has no client-controlled paging, snapshot prop or HTML injection", () => {
   const page = fs.readFileSync("app/marketplace/[id]/page.tsx", "utf8"),
     component = fs.readFileSync("components/marketplace-sample.tsx", "utf8");
-  assert.match(page, /publicMarketSample\(row!\.value,\s*id\)/);
+  assert.match(page, /publicFullPreview\(row!\.value,\s*id\)/);
   assert.doesNotMatch(component, /dangerouslySetInnerHTML|snapshot|fetch\(/);
   assert.match(component, /market-sample-image/);
   assert.doesNotMatch(component, /sample.excerpts.map/);
