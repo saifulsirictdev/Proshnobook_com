@@ -9,9 +9,27 @@ import {
   BarChart3,
   LifeBuoy,
   FileLock2,
+  Settings,
+  Wallet,
+  ClipboardCheck,
 } from "lucide-react";
 
 const managementSections = [
+  {
+    href: "/admin/wallet",
+    label: "রিচার্জ যাচাই ও অনুমোদন",
+    description: "TID, জমার তথ্য ও TrxID যাচাই করে রিচার্জ অনুমোদন বা বাতিল করুন",
+    Icon: Wallet,
+    color: "text-green-600",
+  },
+  {
+    href: "/admin/marketplace",
+    label: "শিক্ষকের প্রশ্নপত্র অনুমোদন",
+    description:
+      "বিক্রির জন্য জমা দেওয়া প্রশ্নপত্রের প্রিভিউ ও তথ্য যাচাই করে সিদ্ধান্ত দিন",
+    Icon: ClipboardCheck,
+    color: "text-blue-600",
+  },
   {
     href: "/admin/withdrawals",
     label: "বিক্রির আয় উত্তোলন অনুরোধ নিষ্পত্তি",
@@ -62,6 +80,18 @@ const managementSections = [
     color: "text-violet-600",
   },
 ];
+const dashboardGroups = [
+  ...managementSections
+    .slice(0, 2)
+    .map((section) => ({ ...section, links: [section] })),
+  {
+    href: "management-tools",
+    label: "আর্থিক ব্যবস্থাপনা ও সহায়তা",
+    Icon: Settings,
+    color: "text-violet-600",
+    links: managementSections.slice(2),
+  },
+];
 export const dynamic = "force-dynamic";
 
 export default async function Admin() {
@@ -72,7 +102,7 @@ export default async function Admin() {
   return (
     <div className="grid gap-4">
       <h1 className="sr-only">অ্যাডমিন ড্যাশবোর্ড</h1>
-      {managementSections.map(({ href, label, description, Icon, color }) => (
+      {dashboardGroups.map(({ href, label, Icon, color, links }) => (
         <details
           key={href}
           className="group rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900"
@@ -93,21 +123,24 @@ export default async function Admin() {
               বন্ধ করুন ˅
             </span>
           </summary>
-          <div className="border-t border-slate-200 p-3 dark:border-slate-700">
-            <Link
-              href={href}
-              className="flex items-start gap-3 rounded-xl border border-slate-200 p-3 transition hover:border-blue-500 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 dark:border-slate-700 dark:hover:bg-slate-800"
-            >
-              <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
-                <Icon size={16} aria-hidden="true" />
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="block text-sm font-semibold">{label} →</span>
-                <span className="block text-xs text-slate-500">
-                  {description}
+          <div className="grid gap-2 border-t border-slate-200 p-3 dark:border-slate-700 sm:grid-cols-2 lg:grid-cols-3">
+            {links.map(({ href, label, description, Icon }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-start gap-3 rounded-xl border border-slate-200 p-3 transition hover:border-blue-500 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 dark:border-slate-700 dark:hover:bg-slate-800"
+              >
+                <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
+                  <Icon size={16} aria-hidden="true" />
                 </span>
-              </span>
-            </Link>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-semibold">{label} →</span>
+                  <span className="block text-xs text-slate-500">
+                    {description}
+                  </span>
+                </span>
+              </Link>
+            ))}
           </div>
         </details>
       ))}

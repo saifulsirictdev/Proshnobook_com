@@ -47,7 +47,11 @@ const bn = localFont({
 // 🎯 ২. ইংরেজি ও গণিতের ফন্টের জন্য Tinos (Times New Roman)
 const en = localFont({
   src: [
-    { path: "../public/fonts/Tinos-Regular.ttf", weight: "400", style: "normal" },
+    {
+      path: "../public/fonts/Tinos-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
     { path: "../public/fonts/Tinos-Bold.ttf", weight: "700", style: "normal" },
   ],
   variable: "--font-en",
@@ -67,16 +71,23 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const themeScript = "try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}";
+const themeScript =
+  "try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}";
 
 async function logout() {
   "use server";
   await signOut({ redirectTo: "/" });
 }
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [n, u, site] = await Promise.all([
-    db.notice.findFirst({ where: { active: true }, orderBy: { createdAt: "desc" } }).catch(() => null),
+    db.notice
+      .findFirst({ where: { active: true }, orderBy: { createdAt: "desc" } })
+      .catch(() => null),
     auth().then((s) => s?.user),
     getSite(),
   ]);
@@ -98,13 +109,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": site.siteName,
-              "url": SITE_URL,
-              "potentialAction": {
+              name: site.siteName,
+              url: SITE_URL,
+              potentialAction: {
                 "@type": "SearchAction",
-                "target": `${SITE_URL}/search?q={search_term_string}`,
-                "query-input": "required name=search_term_string"
-              }
+                target: `${SITE_URL}/search?q={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
             }),
           }}
         />
@@ -120,12 +131,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body
         className="qm-app pb-16 md:pb-0"
         style={{
-          fontFamily: 'var(--font-en), "Times New Roman", var(--font-bn), serif',
+          fontFamily:
+            'var(--font-en), "Times New Roman", var(--font-bn), serif',
         }}
       >
         <SessionProvider>
-          {/* হোমপেজ (/) ও ড্যাশবোর্ডে এই অংশ লুকায়, কারণ ওই পেজের নিজস্ব হেডার ও মেনু আছে */}
-          <PathGate>
+          {/* Homepage shares the site header; dashboard keeps its own workspace header. */}
+          <PathGate showOnHome>
             <SiteHeader
               user={u ? { name: u.name, role: u.role } : null}
               logout={logout}

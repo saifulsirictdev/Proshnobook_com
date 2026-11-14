@@ -33,12 +33,14 @@ async function render(pending) {
   );
   return renderToStaticMarkup(await m.exports.default());
 }
-test("all seven management tools use closed accessible summary cards and retain destinations", async () => {
+test("seven tools share one collapsed group while recharge and approval stay separate", async () => {
   const html = await render(0);
-  assert.equal((html.match(/<details /g) || []).length, 7);
-  assert.equal((html.match(/<summary /g) || []).length, 7);
+  assert.equal((html.match(/<details /g) || []).length, 3);
+  assert.equal((html.match(/<summary /g) || []).length, 3);
   assert.ok(!/<details[^>]*\sopen[\s=>]/.test(html));
   for (const route of [
+    "wallet",
+    "marketplace",
     "withdrawals",
     "marketplace-revenue",
     "marketplace-disputes",
@@ -48,9 +50,22 @@ test("all seven management tools use closed accessible summary cards and retain 
     "pdf-storage",
   ])
     assert.ok(html.includes(`href="/admin/${route}"`));
-  assert.equal((html.match(/খুলুন ›/g) || []).length, 7);
-  assert.equal((html.match(/বন্ধ করুন ˅/g) || []).length, 7);
+  assert.equal((html.match(/খুলুন ›/g) || []).length, 3);
+  assert.equal((html.match(/বন্ধ করুন ˅/g) || []).length, 3);
   assert.ok(html.includes("dark:bg-slate-900"));
+  const groups = [...html.matchAll(/<details[^>]*>([\s\S]*?)<\/details>/g)].map(
+    (match) => match[1],
+  );
+  assert.ok(groups[0].includes('href="/admin/wallet"'));
+  assert.ok(groups[1].includes('href="/admin/marketplace"'));
+  assert.ok(groups[2].includes("আর্থিক ব্যবস্থাপনা ও সহায়তা"));
+  assert.equal((groups[2].match(/<a /g) || []).length, 7);
+  assert.ok(!groups[2].includes('href="/admin/wallet"'));
+  assert.ok(!groups[2].includes('href="/admin/marketplace"'));
+  const routes = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(routes.slice(0, 2), ["/admin/wallet", "/admin/marketplace"]);
+  assert.ok(html.includes("রিচার্জ যাচাই ও অনুমোদন"));
+  assert.ok(html.includes("শিক্ষকের প্রশ্নপত্র অনুমোদন"));
 });
 test("pending payment alert remains visible outside collapsed cards", async () => {
   const html = await render(3);
