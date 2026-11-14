@@ -13,6 +13,7 @@ export type MarketPurchase = {
   sellerId: string;
   title: string;
   amount: number;
+  revenueMode?: "PLATFORM";
   sellerAmount: number;
   platformAmount: number;
   snapshot: MarketSubmission["snapshot"];
@@ -26,7 +27,10 @@ export function purchaseKey(buyerId: string, paperId: string) {
   return `${PURCHASE_PREFIX}${buyerId}:${paperId}`;
 }
 /** Bind confirmation to every financially relevant term and immutable content. */
-export function purchaseTerms(record: MarketSubmission) {
+export function purchaseTerms(
+  record: MarketSubmission,
+  revenueMode?: "PLATFORM",
+) {
   return createHash("sha256")
     .update(
       JSON.stringify([
@@ -36,6 +40,7 @@ export function purchaseTerms(record: MarketSubmission) {
         record.snapshotHash,
         record.metadata.pricePaisa,
         record.metadata.title,
+        ...(revenueMode ? [revenueMode] : []),
       ]),
     )
     .digest("hex");
@@ -58,10 +63,13 @@ export function saleRecord(raw: string, id: string): MarketSubmission {
   assertRenderableMarketSnapshot(r.snapshot);
   return r;
 }
-export function revenueSplit(amount: number) {
+export function revenueSplit(amount: number, revenueMode?: "PLATFORM") {
+  if (revenueMode !== undefined && revenueMode !== "PLATFORM")
+    throw Error("Invalid revenue mode");
   if (!Number.isSafeInteger(amount) || amount < 100 || amount > 5000000)
     throw Error("Invalid price");
-  const sellerAmount = Math.floor((amount * 60) / 100);
+  const sellerAmount =
+    revenueMode === "PLATFORM" ? 0 : Math.floor((amount * 60) / 100);
   return { sellerAmount, platformAmount: amount - sellerAmount };
 }
 export function validatePurchase(
@@ -85,8 +93,8 @@ export function validatePurchase(
     typeof r.institution !== "string" ||
     r.institution.length > 200 ||
     snapshotHash(r.snapshot) !== r.snapshotHash ||
-    r.sellerAmount !== revenueSplit(r.amount).sellerAmount ||
-    r.platformAmount !== revenueSplit(r.amount).platformAmount
+    r.sellerAmount !== revenueSplit(r.amount, r.revenueMode).sellerAmount ||
+    r.platformAmount !== revenueSplit(r.amount, r.revenueMode).platformAmount
   )
     throw Error("Invalid purchased copy");
   assertRenderableMarketSnapshot(r.snapshot);

@@ -66,15 +66,14 @@ export async function buyMarketPaper(
       const r = saleRecord(row.value, id);
       if (r.ownerId === buyerId)
         throw new WalletError("নিজের প্রশ্নপত্র কেনা যাবে না।");
-      if (purchaseTerms(r) !== terms)
-        throw new WalletError(
-          "মূল্য বা প্রশ্নপত্র বদলেছে। নতুন করে বিবরণ খুলে নিশ্চিত করুন।",
-        );
       const seller = await account(tx, r.ownerId);
-      if (seller.admin)
-        throw new WalletError("এই বিক্রেতার checkout এখন উপলব্ধ নয়।");
+      const revenueMode = seller.admin ? ("PLATFORM" as const) : undefined;
+      if (purchaseTerms(r, revenueMode) !== terms)
+        throw new WalletError(
+          "মূল্য, বিক্রেতার অবস্থা বা প্রশ্নপত্র বদলেছে। নতুন করে বিবরণ খুলে নিশ্চিত করুন।",
+        );
       const amount = r.metadata.pricePaisa,
-        split = revenueSplit(amount),
+        split = revenueSplit(amount, revenueMode),
         operation = `market-buy:${buyerId}:${id}`;
       await changeWalletFunds(tx, buyerId, {
         operationId: operation,
@@ -82,13 +81,14 @@ export async function buyMarketPaper(
         direction: "DEBIT",
         description: `প্রশ্নপত্র কেনা: ${r.metadata.title}`,
       });
-      await changeWalletFunds(tx, r.ownerId, {
-        operationId: operation,
-        amount: split.sellerAmount,
-        direction: "CREDIT",
-        source: "earnings",
-        description: `প্রশ্নপত্র বিক্রির ৬০% আয়: ${r.metadata.title}`,
-      });
+      if (split.sellerAmount)
+        await changeWalletFunds(tx, r.ownerId, {
+          operationId: operation,
+          amount: split.sellerAmount,
+          direction: "CREDIT",
+          source: "earnings",
+          description: `প্রশ্নপত্র বিক্রির ৬০% আয়: ${r.metadata.title}`,
+        });
       const purchase: MarketPurchase = {
         version: 1,
         buyerId,
@@ -97,6 +97,7 @@ export async function buyMarketPaper(
         title: r.metadata.title,
         amount,
         ...split,
+        ...(revenueMode ? { revenueMode } : {}),
         snapshot: r.snapshot,
         snapshotHash: r.snapshotHash,
         revision: r.revision,
@@ -114,6 +115,7 @@ export async function buyMarketPaper(
             sellerId: r.ownerId,
             paperId: id,
             ...split,
+            ...(revenueMode ? { revenueMode } : {}),
             amount,
             at: purchase.purchasedAt,
           }),

@@ -64,10 +64,20 @@ export async function inspectRefundReadiness(
           !sale ||
           sale.sellerId !== p.sellerId ||
           sale.amount !== p.amount ||
+          sale.revenueMode !== p.revenueMode ||
           sale.sellerAmount !== p.sellerAmount ||
           sale.platformAmount !== p.platformAmount
         )
           throw Error("Receipt mismatch");
+        if (p.revenueMode === "PLATFORM")
+          return {
+            ok: true,
+            available: 0,
+            required: 0,
+            shortfall: 0,
+            message:
+              "এই ক্রয়ের পুরো মূল্য প্ল্যাটফর্মে গেছে; seller earnings ফেরত নেওয়া লাগবে না। অনুমোদিত রিফান্ডে মূল wallet উৎসে টাকা ফিরবে।",
+          };
         const seller = await tx.user.findUnique({
           where: { id: p.sellerId },
           select: { role: true },

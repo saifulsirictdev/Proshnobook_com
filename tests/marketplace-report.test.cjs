@@ -81,3 +81,35 @@ test("refund adjustments require exact original sale and valid timestamp", () =>
       false,
     );
 });
+
+test("platform-only sale receipts and refunds report full platform share and reject forged modes", () => {
+  const platform = {
+    ...r,
+    revenueMode: "PLATFORM",
+    sellerAmount: 0,
+    platformAmount: r.amount,
+  };
+  assert.deepEqual(saleReceipt(key, JSON.stringify(platform)), platform);
+  const refund = {
+    version: 1,
+    ...platform,
+    refundedAt: new Date().toISOString(),
+  };
+  assert.equal(matchingRefund(JSON.stringify(refund), platform), true);
+  assert.equal(
+    matchingRefund(
+      JSON.stringify({ ...refund, revenueMode: undefined }),
+      platform,
+    ),
+    false,
+  );
+  for (const patch of [
+    { revenueMode: "FAKE" },
+    { sellerAmount: 1 },
+    { platformAmount: 0 },
+  ])
+    assert.equal(
+      saleReceipt(key, JSON.stringify({ ...platform, ...patch })),
+      null,
+    );
+});

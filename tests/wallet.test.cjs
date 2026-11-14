@@ -1770,3 +1770,93 @@ test("an earlier ready result does not bypass financial revalidation after selle
   );
   assert.deepEqual(x.store, before);
 });
+
+async function platformMarketSetup() {
+  const x = await marketSetup();
+  x.r.ownerId = "a";
+  x.r.sourceKey = "qbpaper:a:own";
+  x.store.set("market:submission:v1:" + x.id, JSON.stringify(x.r));
+  x.f.set("terms", x.commerce.purchaseTerms(x.r, "PLATFORM"));
+  return x;
+}
+test("ADMIN paper purchase credits 100 percent to platform receipt, never ADMIN wallet; retries charge once", async () => {
+  const x = await platformMarketSetup();
+  const outcomes = await Promise.all(
+    Array.from({ length: 5 }, () => x.purchases.buyMarketPaper({}, x.f)),
+  );
+  assert.ok(
+    outcomes.every((r) => r.ok),
+    JSON.stringify(outcomes),
+  );
+  assert.equal((await x.wallet.ensureWallet("u")).balance, 999);
+  const purchase = x.commerce.validatePurchase(
+    x.store.get(x.commerce.purchaseKey("u", x.id)),
+    "u",
+    x.id,
+  );
+  assert.equal(purchase.revenueMode, "PLATFORM");
+  assert.equal(purchase.sellerAmount, 0);
+  assert.equal(purchase.platformAmount, 1001);
+  const receipt = JSON.parse(x.store.get(`market:platform:v1:u:${x.id}`));
+  assert.equal(receipt.revenueMode, "PLATFORM");
+  assert.equal(receipt.sellerAmount, 0);
+  assert.equal(receipt.platformAmount, 1001);
+  assert.equal(x.store.has("wallet:account:a"), false);
+  assert.equal(
+    [...x.store.keys()].filter((k) => k.startsWith("wallet:ledger:v1:a:"))
+      .length,
+    0,
+  );
+});
+test("ADMIN paper needs correct revenue-mode terms and rolls back buyer debit on receipt failure", async () => {
+  const x = await platformMarketSetup();
+  x.f.set("terms", x.commerce.purchaseTerms(x.r));
+  let before = new Map(x.store);
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).ok, false);
+  assert.deepEqual(x.store, before);
+  x.f.set("terms", x.commerce.purchaseTerms(x.r, "PLATFORM"));
+  x.setFail("market:platform:v1:");
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).ok, false);
+  assert.deepEqual(x.store, before);
+});
+test("platform-only purchase refund restores exact sources without ADMIN earnings and remains idempotent", async () => {
+  const x = await platformMarketSetup();
+  x.store.set(
+    "wallet:account:u",
+    JSON.stringify({
+      version: 2,
+      balance: 1001,
+      bonus: 2000,
+      funds: { bonus: 200, recharge: 300, received: 400, earnings: 101 },
+    }),
+  );
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).ok, true);
+  assert.equal(
+    (await x.disputes.reportMarketPurchase({}, complaintForm(x.id))).ok,
+    true,
+  );
+  x.setSession("b");
+  assert.equal(
+    (await x.refundReadiness.inspectRefundReadiness({}, disputeReview(x))).ok,
+    true,
+  );
+  assert.equal(
+    (await x.disputes.reviewMarketDispute({}, disputeReview(x))).ok,
+    true,
+  );
+  assert.equal(
+    (await x.disputes.reviewMarketDispute({}, disputeReview(x))).ok,
+    true,
+  );
+  assert.deepEqual((await x.wallet.ensureWallet("u")).funds, {
+    bonus: 200,
+    recharge: 300,
+    received: 400,
+    earnings: 101,
+  });
+  assert.equal(x.store.has("wallet:account:a"), false);
+  const refund = JSON.parse(x.store.get(`market:refund:v1:u:${x.id}`));
+  assert.equal(refund.revenueMode, "PLATFORM");
+  assert.equal(refund.platformAmount, 1001);
+  assert.equal(refund.sellerAmount, 0);
+});

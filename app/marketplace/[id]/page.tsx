@@ -35,9 +35,16 @@ export default async function MarketDetail({
       })
     : null;
   let terms: string | null = null;
+  let platformSale = false;
   try {
     const record = saleRecord(row!.value, id);
-    if (record.ownerId !== user?.id) terms = purchaseTerms(record);
+    const seller = await db.user.findUnique({
+      where: { id: record.ownerId },
+      select: { role: true },
+    });
+    platformSale = seller?.role === "ADMIN";
+    if (seller && record.ownerId !== user?.id)
+      terms = purchaseTerms(record, platformSale ? "PLATFORM" : undefined);
   } catch {}
   return (
     <main className="mx-auto max-w-3xl p-5 space-y-4">
@@ -72,6 +79,7 @@ export default async function MarketDetail({
         </Link>
       ) : terms ? (
         <MarketplaceBuy
+          platformSale={platformSale}
           id={id}
           terms={terms}
           price={formatMoney(paper.metadata.pricePaisa)}
