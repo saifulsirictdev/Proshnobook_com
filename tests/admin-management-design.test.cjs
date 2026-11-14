@@ -35,8 +35,8 @@ async function render(pending) {
 }
 test("seven tools share one collapsed group while recharge and approval stay separate", async () => {
   const html = await render(0);
-  assert.equal((html.match(/<details /g) || []).length, 3);
-  assert.equal((html.match(/<summary /g) || []).length, 3);
+  assert.equal((html.match(/<details /g) || []).length, 4);
+  assert.equal((html.match(/<summary /g) || []).length, 4);
   assert.ok(!/<details[^>]*\sopen[\s=>]/.test(html));
   for (const route of [
     "wallet",
@@ -50,18 +50,19 @@ test("seven tools share one collapsed group while recharge and approval stay sep
     "pdf-storage",
   ])
     assert.ok(html.includes(`href="/admin/${route}"`));
-  assert.equal((html.match(/খুলুন ›/g) || []).length, 3);
-  assert.equal((html.match(/বন্ধ করুন ˅/g) || []).length, 3);
+  assert.equal((html.match(/খুলুন ›/g) || []).length, 4);
+  assert.equal((html.match(/বন্ধ করুন ˅/g) || []).length, 4);
   assert.ok(html.includes("dark:bg-slate-900"));
   const groups = [...html.matchAll(/<details[^>]*>([\s\S]*?)<\/details>/g)].map(
     (match) => match[1],
   );
   assert.ok(groups[0].includes('href="/admin/wallet"'));
   assert.ok(groups[1].includes('href="/admin/marketplace"'));
-  assert.ok(groups[2].includes("আর্থিক ব্যবস্থাপনা ও সহায়তা"));
-  assert.equal((groups[2].match(/<a /g) || []).length, 7);
-  assert.ok(!groups[2].includes('href="/admin/wallet"'));
-  assert.ok(!groups[2].includes('href="/admin/marketplace"'));
+  assert.ok(groups[2].includes('href="/admin/catalog"'));
+  assert.ok(groups[3].includes("আর্থিক ব্যবস্থাপনা ও সহায়তা"));
+  assert.equal((groups[3].match(/<a /g) || []).length, 7);
+  assert.ok(!groups[3].includes('href="/admin/wallet"'));
+  assert.ok(!groups[3].includes('href="/admin/marketplace"'));
   const routes = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
   assert.deepEqual(routes.slice(0, 2), ["/admin/wallet", "/admin/marketplace"]);
   assert.ok(html.includes("রিচার্জ যাচাই ও অনুমোদন"));

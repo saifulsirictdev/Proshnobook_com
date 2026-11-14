@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingIncludes: {
+    "/api/marketplace/*/sample": ["./public/fonts/HindSiliguri-Regular.ttf"],
+  },
   experimental: {
     serverActions: {
       bodySizeLimit: "10mb", // ৭,০০০ শব্দ ও ছবিযুক্ত বড় পোস্টের জন্য লিমিট বৃদ্ধি

@@ -20,7 +20,8 @@ export type MarketSubmission = {
   ownerId: string;
   sourceKey: string;
   source: "DATABASE";
-  status: "PENDING" | "APPROVED" | "CHANGES" | "REJECTED";
+  status:
+    "PENDING" | "APPROVED" | "CHANGES" | "REJECTED" | "UNPUBLISHED" | "DELETED";
   revision: number;
   metadata: MarketMetadata;
   snapshot: { settings: unknown; questions: unknown[] };

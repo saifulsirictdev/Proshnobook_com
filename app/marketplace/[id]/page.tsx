@@ -58,7 +58,7 @@ export default async function MarketDetail({
       <Link href={`/teachers/${paper.sellerTid}`} className="block underline">
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
       </Link>
-      <MarketplaceSample sample={publicMarketSample(row!.value, id)} />
+      <MarketplaceSample id={id} sample={publicMarketSample(row!.value, id)} />
       {owned ? (
         <Link href="/dashboard/library" className="block underline">
           কেনা কপি দেখুন (রিফান্ড হলে কপি বন্ধ) →

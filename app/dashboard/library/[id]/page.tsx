@@ -52,6 +52,13 @@ export default async function PurchasedPaper({
           বদলালেও এই কপি থাকবে।
         </p>
       </div>
+      <Link
+        data-noprint
+        href={`/dashboard/library/${id}/setup`}
+        className="inline-flex rounded-xl bg-indigo-700 px-5 py-3 font-bold text-white"
+      >
+        সম্পূর্ণ Edit / Setup → Preview ও Print
+      </Link>
       <PurchasedInstitution id={id} institution={r.institution} />
       <MarketplacePaperPreview
         snapshot={r.snapshot}

@@ -119,5 +119,6 @@ test("sample endpoint has no client-controlled paging, snapshot prop or HTML inj
     component = fs.readFileSync("components/marketplace-sample.tsx", "utf8");
   assert.match(page, /publicMarketSample\(row!\.value,\s*id\)/);
   assert.doesNotMatch(component, /dangerouslySetInnerHTML|snapshot|fetch\(/);
-  assert.match(component, /market-sample-watermark/);
+  assert.match(component, /market-sample-image/);
+  assert.doesNotMatch(component, /sample.excerpts.map/);
 });

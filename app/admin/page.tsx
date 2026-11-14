@@ -80,10 +80,18 @@ const managementSections = [
     color: "text-violet-600",
   },
 ];
+const catalogShortcut = {
+  href: "/admin/catalog",
+  label: "হোমপেজ ক্যাটালগ নিয়ন্ত্রণ",
+  description: "শ্রেণি ও বিষয় অনুযায়ী Edit, প্রকাশ বন্ধ ও ডিলিট",
+  Icon: ClipboardCheck,
+  color: "text-violet-600",
+};
 const dashboardGroups = [
   ...managementSections
     .slice(0, 2)
     .map((section) => ({ ...section, links: [section] })),
+  { ...catalogShortcut, links: [catalogShortcut] },
   {
     href: "management-tools",
     label: "আর্থিক ব্যবস্থাপনা ও সহায়তা",
