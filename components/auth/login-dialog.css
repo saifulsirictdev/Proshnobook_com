@@ -216,3 +216,104 @@
     transition: none !important;
   }
 }
+
+/* Spacious, mobile-first credential card using QuestionBook branding. */
+.qm-auth-background {
+  min-height: 80dvh;
+  background: #f3f7fa;
+}
+.qm-login-dialog {
+  max-width: 490px;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 36px #18233b16;
+}
+.qm-login-dialog::backdrop {
+  background: #f3f7faf5;
+  backdrop-filter: none;
+}
+.qm-login-brand {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #161a35;
+}
+.qm-login-brand span {
+  color: #6d3ddd;
+}
+.qm-login-dialog h1 {
+  font-size: 26px;
+  font-weight: 750;
+}
+.qm-login-google {
+  min-height: 54px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.qm-login-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  color: #697386;
+  font-size: 14px;
+}
+.qm-login-divider::before,
+.qm-login-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #e4e7ee;
+}
+.qm-login-credentials label {
+  font-weight: 650;
+  color: #20243a;
+}
+.qm-login-credentials input {
+  min-height: 50px;
+  border-radius: 9px;
+  background: #fff;
+}
+.qm-password-wrap {
+  display: block;
+  position: relative;
+}
+.qm-password-wrap input {
+  padding-right: 50px;
+  width: 100%;
+}
+.qm-password-toggle {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 0;
+  color: #7d8495;
+}
+.qm-login-primary {
+  min-height: 50px;
+  border-radius: 9px;
+  background: #191c35;
+}
+.qm-login-switch {
+  margin-top: 20px;
+  border-top: 1px solid #e4e7ee;
+  padding-top: 20px;
+}
+.qm-login-dialog input:focus-visible,
+.qm-login-dialog button:focus-visible {
+  outline: 2px solid #7850d9;
+  outline-offset: 3px;
+}
+@media (max-width: 480px) {
+  .qm-login-dialog {
+    width: calc(100% - 24px);
+    padding: 28px 20px 22px;
+    max-height: calc(100dvh - 24px);
+  }
+}

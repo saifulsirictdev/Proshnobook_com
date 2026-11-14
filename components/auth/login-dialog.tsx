@@ -2,7 +2,7 @@
 import { useActionState, useEffect, useId, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useFormStatus } from "react-dom";
-import { LockKeyhole, Gift, X } from "lucide-react";
+import { Gift, X, Eye, EyeOff } from "lucide-react";
 import { login, register, googleLogin } from "@/app/actions/auth";
 import "./login-dialog.css";
 
@@ -32,6 +32,52 @@ function GoogleButton() {
     </button>
   );
 }
+function PasswordField({
+  confirm = false,
+  mode,
+}: {
+  confirm?: boolean;
+  mode: "login" | "register";
+}) {
+  const [visible, setVisible] = useState(false);
+  return (
+    <label>
+      {confirm ? "পাসওয়ার্ড নিশ্চিত করুন" : "পাসওয়ার্ড"}
+      <span className="qm-password-wrap">
+        <input
+          name={confirm ? "confirmPassword" : "password"}
+          type={visible ? "text" : "password"}
+          autoComplete={mode === "login" ? "current-password" : "new-password"}
+          minLength={8}
+          required
+          placeholder={confirm ? "আবার পাসওয়ার্ড লিখুন" : "আপনার পাসওয়ার্ড লিখুন"}
+          onInput={(e) => e.currentTarget.setCustomValidity("")}
+          onBlur={(e) => {
+            if (confirm) {
+              const password = e.currentTarget.form?.elements.namedItem(
+                "password",
+              ) as HTMLInputElement | null;
+              e.currentTarget.setCustomValidity(
+                password?.value === e.currentTarget.value
+                  ? ""
+                  : "দুটি পাসওয়ার্ড মেলেনি।",
+              );
+            }
+          }}
+        />
+        <button
+          type="button"
+          className="qm-password-toggle"
+          onClick={() => setVisible((v) => !v)}
+          aria-label={visible ? "পাসওয়ার্ড লুকান" : "পাসওয়ার্ড দেখুন"}
+          aria-pressed={visible}
+        >
+          {visible ? <EyeOff size={20} /> : <Eye size={20} />}
+        </button>
+      </span>
+    </label>
+  );
+}
 function Credentials({
   next,
   mode,
@@ -44,28 +90,50 @@ function Credentials({
     "",
   );
   return (
-    <form action={action} className="qm-login-credentials">
+    <form
+      action={action}
+      className="qm-login-credentials"
+      onSubmit={(e) => {
+        if (mode === "register") {
+          const form = e.currentTarget;
+          const password = form.elements.namedItem(
+            "password",
+          ) as HTMLInputElement;
+          const confirm = form.elements.namedItem(
+            "confirmPassword",
+          ) as HTMLInputElement;
+          confirm.setCustomValidity(
+            password.value === confirm.value ? "" : "দুটি পাসওয়ার্ড মেলেনি।",
+          );
+          if (!form.reportValidity()) e.preventDefault();
+        }
+      }}
+    >
       <input type="hidden" name="next" value={next} />
       {mode === "register" && (
         <label>
           পূর্ণ নাম
-          <input name="name" autoComplete="name" required minLength={2} />
+          <input
+            name="name"
+            autoComplete="name"
+            placeholder="আপনার পূর্ণ নাম লিখুন"
+            required
+            minLength={2}
+          />
         </label>
       )}
       <label>
         ইমেইল
-        <input name="email" type="email" autoComplete="email" required />
-      </label>
-      <label>
-        পাসওয়ার্ড
         <input
-          name="password"
-          type="password"
-          autoComplete={mode === "login" ? "current-password" : "new-password"}
-          minLength={8}
+          name="email"
+          type="email"
+          autoComplete="email"
+          placeholder="আপনার ইমেইল লিখুন"
           required
         />
       </label>
+      <PasswordField mode={mode} />
+      {mode === "register" && <PasswordField mode={mode} confirm />}
       <small>পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে।</small>
       {error && (
         <p role="alert" className="qm-login-error">
@@ -83,14 +151,20 @@ function Credentials({
   );
 }
 /** Native modal gives background inertness/focus containment, including forms/links behind it. */
-export default function LoginDialog({ next = "/" }: { next?: string }) {
+export default function LoginDialog({
+  next = "/",
+  initialMode = "login",
+}: {
+  next?: string;
+  initialMode?: "login" | "register";
+}) {
   const router = useRouter(),
     dialog = useRef<HTMLDialogElement>(null),
     heading = useId(),
     description = useId(),
     formId = useId();
-  const [email, setEmail] = useState(false),
-    [mode, setMode] = useState<"login" | "register">("login");
+  const [email, setEmail] = useState(true),
+    [mode, setMode] = useState<"login" | "register">(initialMode);
   const close = () => router.replace("/");
   useEffect(() => {
     const el = dialog.current;
@@ -149,10 +223,12 @@ export default function LoginDialog({ next = "/" }: { next?: string }) {
       >
         <X size={20} />
       </button>
-      <span className="qm-login-lock" aria-hidden="true">
-        <LockKeyhole size={30} />
-      </span>
-      <h1 id={heading}>লগইন করুন</h1>
+      <div className="qm-login-brand">
+        প্রশ্নবুক<span>.কম</span>
+      </div>
+      <h1 id={heading}>
+        {mode === "login" ? "লগইন করুন" : "অ্যাকাউন্ট তৈরি করুন"}
+      </h1>
       <p id={description} className="qm-login-description">
         লগইন করে প্রশ্ন তৈরি শুরু করুন।
       </p>
@@ -174,6 +250,9 @@ export default function LoginDialog({ next = "/" }: { next?: string }) {
           লগইন করুন
         </button>
       )}
+      <div className="qm-login-divider">
+        <span>অথবা</span>
+      </div>
       <div id={formId}>
         {email && (
           <>

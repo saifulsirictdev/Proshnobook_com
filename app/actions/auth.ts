@@ -28,6 +28,11 @@ export async function login(_: string, fd: FormData): Promise<string> {
 }
 
 export async function register(_: string, fd: FormData): Promise<string> {
+  if (
+    fd.has("confirmPassword") &&
+    fd.get("confirmPassword") !== fd.get("password")
+  )
+    return "দুটি পাসওয়ার্ড মেলেনি। আবার লিখুন।";
   const p = Login.extend({ name: z.string().min(2) }).safeParse(
     Object.fromEntries(fd),
   );
