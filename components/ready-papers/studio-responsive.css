@@ -319,7 +319,9 @@
   }
   /* Final phone preview is paper-first; keep the answer workers mounted.
      Wider Desktop site viewports retain all metadata and answer tools. */
-  .qm-app .rp-stage-preview > :is(.rp-studio-head, .rp-hero, .rp-status, .rp-answer-tools) {
+  .qm-app
+    .rp-stage-preview
+    > :is(.rp-studio-head, .rp-hero, .rp-status, .rp-answer-tools) {
     display: none;
   }
   .qm-app .rp-stage-preview > .rp-toolbar,
@@ -338,4 +340,38 @@
     font-size: 14px;
     white-space: normal;
   }
+}
+
+/* Keep explicit account saving visible on phone final preview. */
+.rp-save-confirmation {
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #ddd6fe;
+  border-radius: 14px;
+  background: #f5f3ff;
+}
+.rp-save-confirmation button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 18px;
+  background: #4338ca;
+  color: white;
+  font-weight: 700;
+}
+.rp-save-confirmation button:disabled {
+  opacity: 0.55;
+}
+.rp-save-confirmation a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #3730a3;
+  text-decoration: underline;
+}
+.rp-save-confirmation p {
+  margin: 8px 0 0;
 }

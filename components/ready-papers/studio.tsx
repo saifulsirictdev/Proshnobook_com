@@ -78,6 +78,8 @@ export default function ReadyStudio({
 }) {
   const [aiJob, setAIJob] = useState<ReadyAIJob | null>(null);
   const [checkout, setCheckout] = useState(false);
+  const [saveNotice, setSaveNotice] = useState("");
+  const explicitlySaved = useRef("");
   const [receipt, setReceipt] = useState(initialPurchase?.id ?? "");
   const [paidSelection, setPaidSelection] = useState(
     initialPurchase ? readySelectionIdentity(initialPurchase.selected) : "",
@@ -323,7 +325,7 @@ export default function ReadyStudio({
           if (live && !r.ok) setMessage("Account auto-save হয়নি: " + r.error);
         })
         .catch(() => {
-          if (live) setMessage("Account auto-save হয়নি। Draft save চাপুন।");
+          if (live) setMessage("Account auto-save হয়নি। প্রশ্নপত্র সেভ করুন চাপুন।");
         });
     }, 1200);
     return () => {
@@ -416,12 +418,24 @@ export default function ReadyStudio({
         ],
       });
   }
+  function saveIdentity() {
+    return JSON.stringify({ receipt, selected, snapshot: snapshot() });
+  }
+  function requireSaved() {
+    if (explicitlySaved.current === saveIdentity()) return true;
+    const notice =
+      "আগে ‘প্রশ্নপত্র সেভ করুন’ চাপুন। সফলভাবে সেভ হলে Print Preview খুলতে পারবেন।";
+    setMessage(notice);
+    setSaveNotice(notice);
+    return false;
+  }
   async function preview() {
     if (busy) return;
     if (!paid) {
       setCheckout(true);
       return;
     }
+    if (!requireSaved()) return;
     setBusy(true);
     setMessage("Print preview প্রস্তুত হচ্ছে…");
     try {
@@ -444,34 +458,62 @@ export default function ReadyStudio({
       setStep("preview");
       setMessage("Preview দেখে print করুন।");
     } catch {
-      setMessage("Preview হয়নি। আবার চেষ্টা করুন।");
+      setMessage(
+        "সেভ যাচাই বা Preview প্রস্তুত হয়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+      );
     } finally {
       setBusy(false);
     }
   }
   async function save() {
+    if (busy) return;
+    if (!adminPreset && !paid) {
+      setCheckout(true);
+      return;
+    }
+    setSaveNotice("");
+    const savingIdentity = saveIdentity();
+    explicitlySaved.current = "";
     setBusy(true);
     try {
       if (adminPreset) {
         const r = await updateReadyPaper(paper.id, paper, edits);
-        setMessage(r.ok ? "Admin preset save হয়েছে। মূল PDF বদলায়নি।" : r.error);
+        const notice = r.ok
+          ? "Admin preset save হয়েছে। মূল PDF বদলায়নি।"
+          : r.error;
+        setMessage(notice);
+        setSaveNotice(notice);
+        if (r.ok) explicitlySaved.current = savingIdentity;
       } else {
         if (paid) {
           const r = await saveReadyPurchase(receipt, snapshot(), selected);
           if (!r.ok) {
             setMessage(r.error);
+            setSaveNotice("সেভ হয়নি: " + r.error);
             return;
           }
         }
-        await saveLocal(key, {
-          selected,
-          edits,
-          header,
-          headerStyle,
-          headerSettings,
-          headerLine,
-          headerGap,
-        });
+        if (paid) explicitlySaved.current = savingIdentity;
+        if (paid)
+          setSaveNotice(
+            "প্রশ্নপত্র সেভ হয়েছে। সংরক্ষিত প্রশ্নপত্র থেকে আবার খুলতে পারবেন।",
+          );
+        try {
+          await saveLocal(key, {
+            selected,
+            edits,
+            header,
+            headerStyle,
+            headerSettings,
+            headerLine,
+            headerGap,
+          });
+        } catch {
+          if (!paid) throw new Error("Local save failed");
+          setSaveNotice(
+            "অ্যাকাউন্টে প্রশ্নপত্র সেভ হয়েছে। এই browser-এ অতিরিক্ত draft রাখা যায়নি।",
+          );
+        }
         setMessage(
           paid
             ? "প্রশ্নপত্র ও উত্তরপত্র অ্যাকাউন্টে save হয়েছে।"
@@ -480,6 +522,9 @@ export default function ReadyStudio({
       }
     } catch {
       setMessage("Save হয়নি। Browser storage/সংযোগ পরীক্ষা করুন।");
+      setSaveNotice(
+        "সেভ সম্পন্ন হয়েছে কি না যাচাই করুন। সংরক্ষিত প্রশ্নপত্র খুলুন; না থাকলে সংযোগ ঠিক করে আবার চেষ্টা করুন।",
+      );
     } finally {
       setBusy(false);
     }
@@ -604,7 +649,7 @@ export default function ReadyStudio({
           <Link href="/ready-papers/saved">আমার প্রশ্নপত্র ও প্যাকেজ</Link>
           <button disabled={busy} onClick={save}>
             <Save size={16} />
-            {adminPreset ? "Admin preset save" : "Draft save"}
+            {adminPreset ? "Admin preset save" : "প্রশ্নপত্র সেভ করুন"}
           </button>
           {!adminPreset && (
             <button disabled={busy} onClick={restore}>
@@ -613,12 +658,30 @@ export default function ReadyStudio({
           )}
         </div>
       )}
+      {step === "edit" && (
+        <section
+          className="rp-save-confirmation"
+          data-noprint
+          aria-label="প্রিন্টের আগে প্রশ্নপত্র সেভ"
+        >
+          <button disabled={busy || !selected.length} onClick={save}>
+            <Save size={16} />
+            {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
+          </button>
+          <p role="status">
+            {saveNotice ||
+              "Print Preview খোলার আগে প্রশ্নপত্র সেভ করুন। পরিবর্তন করলে আবার সেভ করতে হবে।"}
+          </p>
+          <Link href="/question-builder/saved">সংরক্ষিত প্রশ্নপত্র দেখুন →</Link>
+        </section>
+      )}
       <div className="rp-answer-tools" data-noprint>
         {paid && receipt && !adminPreset && (
           <AIAnswers
             receiptId={receipt}
             onJob={setAIJob}
             onPrint={() => {
+              if (!requireSaved()) return;
               setPrintKind("ai");
               setStep("preview");
             }}
@@ -643,6 +706,7 @@ export default function ReadyStudio({
                 setCheckout(true);
                 return;
               }
+              if (!requireSaved()) return;
               setPrintKind(kind);
               setStep("preview");
             }}
@@ -654,6 +718,7 @@ export default function ReadyStudio({
           <button
             type="button"
             onClick={() => {
+              if (!requireSaved()) return;
               setPrintKind("ai");
               setStep("preview");
             }}
@@ -1318,6 +1383,17 @@ export default function ReadyStudio({
               </p>
             </section>
           )}
+          <section
+            className="rp-save-confirmation"
+            data-noprint
+            aria-label="প্রশ্নপত্র সংরক্ষণ"
+          >
+            <button disabled={busy || !selected.length} onClick={save}>
+              <Save size={16} /> {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
+            </button>
+            <p role="status">{saveNotice}</p>
+            <Link href="/question-builder/saved">সংরক্ষিত প্রশ্নপত্র দেখুন →</Link>
+          </section>
           <PrintFrame
             mobileActions={
               <>
