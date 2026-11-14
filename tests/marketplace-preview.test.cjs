@@ -6,7 +6,11 @@ const { test } = require("node:test"),
 function load(path, mocks = {}) {
   const m = new Module(path, module);
   m.paths = module.paths;
-  m.require = (n) => mocks[n] || require(n);
+  m.require = (n) =>
+    mocks[n] ||
+    (n === "@/lib/marketplace-raster"
+      ? load("lib/marketplace-raster.ts")
+      : require(n));
   m._compile(
     ts.transpileModule(fs.readFileSync(path, "utf8"), {
       compilerOptions: {
@@ -115,7 +119,7 @@ test("private preview route gates owner or fresh database admin and validates ch
   assert.match(route, /record.ownerId !== user.id && user.role !== "ADMIN"/);
   assert.match(
     route,
-    /snapshotHash\(record.snapshot\) === record.snapshotHash/,
+    /snapshotHash\(record.snapshot\) !== record.snapshotHash/,
   );
   assert.match(route, /db.user.findUnique/);
   const component = fs.readFileSync(

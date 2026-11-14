@@ -1,3 +1,4 @@
+import { rasterSnapshot } from "@/lib/marketplace-raster";
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { auth } from "@/auth";
@@ -59,7 +60,9 @@ export default async function PurchasedPaper({
       >
         সম্পূর্ণ Edit / Setup → Preview ও Print
       </Link>
-      <PurchasedInstitution id={id} institution={r.institution} />
+      {!rasterSnapshot(r.snapshot) && (
+        <PurchasedInstitution id={id} institution={r.institution} />
+      )}
       <MarketplacePaperPreview
         snapshot={r.snapshot}
         institution={r.institution}

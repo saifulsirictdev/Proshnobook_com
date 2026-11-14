@@ -1,3 +1,4 @@
+import { rasterSnapshot } from "@/lib/marketplace-raster";
 import {
   settingsSchema,
   restoreSettings,
@@ -168,6 +169,14 @@ export function assertRenderableMarketSnapshot(snapshot: {
   settings: unknown;
   questions: unknown[];
 }) {
+  if (rasterSnapshot(snapshot)) {
+    if (
+      !settingsSchema.safeParse(snapshot.settings).success ||
+      snapshot.questions.length !== 0
+    )
+      throw Error("Invalid raster snapshot");
+    return;
+  }
   if (
     !settingsSchema.safeParse(snapshot.settings).success ||
     !Array.isArray(snapshot.questions) ||

@@ -1,4 +1,9 @@
 "use client";
+import { toPng } from "html-to-image";
+import {
+  beginReadyMarketExport,
+  uploadReadyMarketPage,
+} from "@/app/actions/marketplace-ready";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import ReadyCheckout from "./checkout";
@@ -79,6 +84,7 @@ export default function ReadyStudio({
   const [aiJob, setAIJob] = useState<ReadyAIJob | null>(null);
   const [checkout, setCheckout] = useState(false);
   const [saveNotice, setSaveNotice] = useState("");
+  const [exportingMarket, setExportingMarket] = useState(false);
   const explicitlySaved = useRef("");
   const [receipt, setReceipt] = useState(initialPurchase?.id ?? "");
   const [paidSelection, setPaidSelection] = useState(
@@ -465,6 +471,71 @@ export default function ReadyStudio({
       setBusy(false);
     }
   }
+  async function prepareMarketCopy() {
+    if (
+      busy ||
+      !paid ||
+      !receipt ||
+      printKind !== "questions" ||
+      !requireSaved()
+    )
+      return;
+    if (
+      !window.confirm(
+        "এই দৃশ্যমান প্রশ্নপত্রের স্থির ছবিভিত্তিক কপি বিক্রির আবেদনের জন্য প্রস্তুত করবেন? নিজের বা যথাযথ বিক্রির অধিকার থাকা বিষয়বস্তুই জমা দিন। মূল PDF-এর অন্য পৃষ্ঠা যাবে না।",
+      )
+    )
+      return;
+    setBusy(true);
+    setExportingMarket(true);
+    try {
+      const sheets = [
+        ...document.querySelectorAll<HTMLElement>(
+          "#ready-print .rp-print-sheet",
+        ),
+      ];
+      if (sheets.length !== selected.length)
+        throw Error("আগে প্রশ্নপত্রের Print Preview প্রস্তুত করুন।");
+      // Sync the exact latest snapshot before freezing; no extra checkout or wallet debit.
+      const saved = await saveReadyPurchase(receipt, snapshot(), selected);
+      if (!saved.ok) throw Error(saved.error);
+      const batch = await beginReadyMarketExport(receipt);
+      if (!batch.ok) throw Error(batch.error);
+      if (batch.count !== sheets.length) throw Error("পৃষ্ঠা নির্বাচন বদলেছে।");
+      await document.fonts.ready;
+      for (let i = 0; i < sheets.length; i++) {
+        setSaveNotice(`বিক্রির স্থির কপি প্রস্তুত হচ্ছে: ${i + 1}/${sheets.length}`);
+        await Promise.all(
+          [...sheets[i].querySelectorAll("img")].map((img) => img.decode()),
+        );
+        const png = await toPng(sheets[i], {
+          pixelRatio: 1,
+          backgroundColor: "#ffffff",
+          filter: (node) =>
+            !(node instanceof HTMLElement && node.hasAttribute("data-noprint")),
+        });
+        const page = await (await fetch(png)).blob();
+        const form = new FormData();
+        form.set("receiptId", receipt);
+        form.set("hash", batch.hash);
+        form.set("batchId", batch.batchId);
+        form.set("index", String(i));
+        form.set("page", page, `page-${i}.png`);
+        const result = await uploadReadyMarketPage(form);
+        if (!result.ok) throw Error(result.error);
+      }
+      window.location.assign("/dashboard/sell");
+    } catch (e) {
+      setSaveNotice(
+        e instanceof Error
+          ? e.message
+          : "বিক্রির কপি প্রস্তুত হয়নি। আবার চেষ্টা করুন।",
+      );
+    } finally {
+      setBusy(false);
+      setExportingMarket(false);
+    }
+  }
   async function save() {
     if (busy) return;
     if (!adminPreset && !paid) {
@@ -595,7 +666,11 @@ export default function ReadyStudio({
     }
   }
   return (
-    <main className={`rp-root rp-studio rp-stage-${step}`}>
+    <main
+      className={`rp-root rp-studio rp-stage-${step}`}
+      inert={exportingMarket}
+      aria-busy={exportingMarket}
+    >
       <div className="rp-studio-head" data-noprint>
         <Link href={adminPreset ? "/admin/ready-papers" : "/ready-papers"}>
           <ArrowLeft size={18} />
@@ -1391,6 +1466,11 @@ export default function ReadyStudio({
             <button disabled={busy || !selected.length} onClick={save}>
               <Save size={16} /> {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
             </button>
+            {paid && receipt && printKind === "questions" && (
+              <button disabled={busy} onClick={prepareMarketCopy}>
+                Marketplace-এ বিক্রির কপি প্রস্তুত করুন
+              </button>
+            )}
             <p role="status">{saveNotice}</p>
             <Link href="/question-builder/saved">সংরক্ষিত প্রশ্নপত্র দেখুন →</Link>
           </section>

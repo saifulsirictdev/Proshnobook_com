@@ -1,3 +1,5 @@
+import { listReadyPurchases } from "@/app/actions/ready-commerce";
+import { marketRasterSchema } from "@/lib/marketplace-raster";
 import { marketExamLabel } from "@/lib/marketplace-exam-types";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -23,7 +25,39 @@ export default async function SellPage() {
     select: { role: true },
   });
   const admin = fresh?.role === "ADMIN";
-  const papers = await listPapers();
+  const [papers, readyPapers, draftRows] = await Promise.all([
+    listPapers(),
+    listReadyPurchases(),
+    db.setting.findMany({
+      where: { key: { startsWith: `marketready:v1:${user.id}:` } },
+      take: 100,
+    }),
+  ]);
+  const readyDrafts = draftRows.flatMap((row) => {
+    try {
+      const d = JSON.parse(row.value);
+      if (
+        d.ownerId !== user.id ||
+        !Number.isInteger(d.count) ||
+        d.count < 1 ||
+        d.count > 10
+      )
+        return [];
+      const check = marketRasterSchema.safeParse({
+        kind: "READY_RASTER",
+        pages: Array.from({ length: d.count }, (_, i) => d.pages[i]),
+      });
+      return check.success
+        ? [{ key: row.key, name: `PDF / রেডি: ${d.title}` }]
+        : [];
+    } catch {
+      return [];
+    }
+  });
+  const sources = [
+    ...papers.map((p) => ({ key: p.key, name: p.name })),
+    ...readyDrafts,
+  ];
   const rows = await db.setting.findMany({
     where: {
       key: { startsWith: MARKET_PREFIX },
@@ -42,7 +76,7 @@ export default async function SellPage() {
   });
   const labels = {
     PENDING: "অনুমোদনের অপেক্ষায়",
-    APPROVED: "অনুমোদিত — ক্যাটালগে পরিচিতি প্রকাশিত; কেনাকাটা বন্ধ",
+    APPROVED: "অনুমোদিত — মার্কেটপ্লেসে প্রকাশিত",
     CHANGES: "সংশোধন প্রয়োজন",
     REJECTED: "বাতিল",
     UNPUBLISHED: "প্রকাশ বন্ধ",
@@ -53,21 +87,40 @@ export default async function SellPage() {
       <Link href="/dashboard">← ড্যাশবোর্ড</Link>
       <h1 className="text-2xl font-bold">প্রশ্নপত্র বিক্রির আবেদন</h1>
       <p className="rounded bg-amber-50 p-4">
-        প্রথম পর্যায়ে শুধু নিজের ডাটাবেজ থেকে তৈরি সংরক্ষিত প্রশ্নপত্রের আবেদন নেওয়া
-        হচ্ছে। ADMIN-এর নিজের প্রশ্নপত্র জমা দিলেই ক্যাটালগে প্রকাশিত হবে। শিক্ষকের
-        প্রশ্নপত্র ADMIN অনুমোদন না দেওয়া পর্যন্ত প্রকাশিত হবে না। PDF প্রস্তুত কপি,
-        কেনাকাটা ও আয় বণ্টন এখনও চালু হয়নি। আবেদন জমায় কোনো নতুন টাকা কাটবে না।
+        নিজের সংরক্ষিত ডাটাবেজের প্রশ্নপত্র এবং নিজের আপলোড করা PDF বা Ready Library
+        থেকে সাজানো প্রশ্নপত্র বিক্রির আবেদন করতে পারবেন। PDF কপির ক্ষেত্রে আগে সেভ
+        করে Print Preview থেকে “Marketplace-এ বিক্রির কপি প্রস্তুত করুন” চাপুন। শুধু জমা
+        দেওয়া পৃষ্ঠার স্থির ছবিভিত্তিক কপি যাবে, মূল PDF নয়। বিক্রির অধিকার থাকা
+        আবশ্যক; কেনা/সম্পাদনা করলেই সেই অধিকার হয় না। ADMIN-এর নিজের কপি সরাসরি
+        প্রকাশিত হবে; শিক্ষকের কপি ADMIN অনুমোদনের পরে। আবেদন জমায় নতুন টাকা কাটবে
+        না।
       </p>
-      {papers.length ? (
-        <MarketplaceSubmission
-          admin={admin}
-          papers={papers.map((p) => ({ key: p.key, name: p.name }))}
-        />
+      <section className="rounded-xl border border-indigo-100 bg-indigo-50 p-4 space-y-3">
+        <h2 className="text-lg font-bold">PDF / Ready Library থেকে তৈরি কপি</h2>
+        <p>
+          সেভ করা কপি খুলে প্রশ্নপত্র সেভ করুন, তারপর Print Preview থেকে বিক্রির স্থির
+          কপি প্রস্তুত করুন। প্রস্তুত হলে নিচের ফর্মে নির্বাচন করতে পারবেন।
+        </p>
+        {readyPapers.slice(0, 50).map((p) => (
+          <Link
+            key={p.id}
+            className="block underline"
+            href={`/ready-papers/${p.paperId}?saved=${p.id}`}
+          >
+            {p.title} — খুলুন ও বিক্রির কপি প্রস্তুত করুন →
+          </Link>
+        ))}
+        <Link className="block underline" href="/ready-papers/saved">
+          সব সেভ করা PDF / রেডি কপি →
+        </Link>
+      </section>
+      {sources.length ? (
+        <MarketplaceSubmission admin={admin} papers={sources} />
       ) : (
         <p>
           আগে{" "}
           <Link className="underline" href="/question-builder">
-            ডাটাবেজ থেকে প্রশ্নপত্র তৈরি ও সংরক্ষণ করুন
+            প্রশ্নপত্র তৈরি ও সংরক্ষণ করুন
           </Link>
           ।
         </p>

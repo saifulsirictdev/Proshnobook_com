@@ -19,12 +19,16 @@ export type MarketSubmission = {
   id: string;
   ownerId: string;
   sourceKey: string;
-  source: "DATABASE";
+  source: "DATABASE" | "READY_PDF";
   status:
     "PENDING" | "APPROVED" | "CHANGES" | "REJECTED" | "UNPUBLISHED" | "DELETED";
   revision: number;
   metadata: MarketMetadata;
-  snapshot: { settings: unknown; questions: unknown[] };
+  snapshot: {
+    settings: unknown;
+    questions: unknown[];
+    raster?: import("./marketplace-raster").MarketRaster;
+  };
   snapshotHash: string;
   createdAt: string;
   updatedAt: string;

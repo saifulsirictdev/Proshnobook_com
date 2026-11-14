@@ -6,7 +6,11 @@ const Module = require("node:module");
 function load(path, mocks = {}) {
   const m = new Module(path, module);
   m.paths = module.paths;
-  m.require = (name) => mocks[name] || require(name);
+  m.require = (name) =>
+    mocks[name] ||
+    (name === "@/lib/marketplace-raster"
+      ? load("lib/marketplace-raster.ts")
+      : require(name));
   m._compile(
     ts.transpileModule(fs.readFileSync(path, "utf8"), {
       compilerOptions: {
@@ -142,6 +146,7 @@ function setup() {
     "@/lib/db": { db: tx },
     "@/lib/marketplace": lib,
     "@/lib/marketplace-preview": preview,
+    "@/lib/paper-builder": builder,
     "@/lib/paper-generation": { visibleQuestions: () => ({}) },
     "next/cache": { revalidatePath() {} },
     "@/lib/wallet": {
@@ -400,11 +405,87 @@ test("ADMIN auto-publish rejects an unrenderable snapshot", async () => {
   x.role("u", "ADMIN");
   x.store.set(
     "qbpaper:u:a",
-    JSON.stringify({ ownerId: "u", ids: ["q"], settings: { excludedIds: ["q"] } }),
+    JSON.stringify({
+      ownerId: "u",
+      ids: ["q"],
+      settings: { excludedIds: ["q"] },
+    }),
   );
   assert.equal((await x.actions.submitMarketPaper({}, x.form())).ok, false);
   assert.equal(
     [...x.store.keys()].filter((k) => k.startsWith(lib.MARKET_PREFIX)).length,
     0,
   );
+});
+
+const rasterUrl = `https://test.public.blob.vercel-storage.com/market-ready/${"a".repeat(64)}.png`;
+function readyDraft(x, owner = "u", count = 1) {
+  const receiptId = "b".repeat(64),
+    key = `marketready:v1:${owner}:${receiptId}`;
+  x.store.set(
+    key,
+    JSON.stringify({
+      ownerId: owner,
+      receiptId,
+      count,
+      title: "PDF paper",
+      pages: { 0: rasterUrl },
+    }),
+  );
+  x.store.set(
+    `readyowned:v1:${owner}:${receiptId}`,
+    JSON.stringify({ ownerId: owner, id: receiptId }),
+  );
+  const f = x.form();
+  f.set("sourceKey", key);
+  return { key, f };
+}
+test("both uploaded PDF and Ready Library exports use owner draft snapshots, teacher review and unchanged rights gate", async () => {
+  const x = setup();
+  const { f, key } = readyDraft(x);
+  const result = await x.actions.submitMarketPaper({}, f);
+  assert.equal(result.ok, true, result.message);
+  const id = lib.marketSubmissionId("u", key),
+    record = JSON.parse(x.store.get(lib.MARKET_PREFIX + id));
+  assert.equal(record.source, "READY_PDF");
+  assert.equal(record.status, "PENDING");
+  assert.deepEqual(record.snapshot.raster, {
+    kind: "READY_RASTER",
+    pages: [rasterUrl],
+  });
+  assert.equal(record.snapshot.questions.length, 0);
+  x.store.delete(key);
+  assert.equal(record.snapshot.raster.pages[0], rasterUrl);
+  const y = setup();
+  const draft = readyDraft(y);
+  draft.f.delete("rights");
+  assert.equal((await y.actions.submitMarketPaper({}, draft.f)).ok, false);
+});
+test("PDF submission rejects foreign, incomplete and non-application assets", async () => {
+  for (const bad of ["foreign", "incomplete", "url", "receipt"]) {
+    const x = setup();
+    const { key, f } = readyDraft(
+      x,
+      bad === "foreign" ? "v" : "u",
+      bad === "incomplete" ? 2 : 1,
+    );
+    if (bad === "url") {
+      const d = JSON.parse(x.store.get(key));
+      d.pages[0] = "https://evil.example/source.pdf";
+      x.store.set(key, JSON.stringify(d));
+    }
+    if (bad === "receipt") x.store.delete(`readyowned:v1:u:${"b".repeat(64)}`);
+    assert.equal((await x.actions.submitMarketPaper({}, f)).ok, false, bad);
+  }
+});
+test("ADMIN ready export publishes directly and cannot replace an approved snapshot", async () => {
+  const x = setup();
+  x.role("u", "ADMIN");
+  const { f, key } = readyDraft(x);
+  assert.equal((await x.actions.submitMarketPaper({}, f)).ok, true);
+  const id = lib.marketSubmissionId("u", key),
+    old = x.store.get(lib.MARKET_PREFIX + id);
+  assert.equal(JSON.parse(old).status, "APPROVED");
+  assert.equal((await x.actions.submitMarketPaper({}, f)).ok, false);
+  assert.equal(x.store.get(lib.MARKET_PREFIX + id), old);
 });

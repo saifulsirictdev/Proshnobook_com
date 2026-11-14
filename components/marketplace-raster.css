@@ -1,0 +1,99 @@
+.market-raster {
+  width: 100%;
+}
+.market-raster-sheet {
+  margin: 18px auto;
+  max-width: 794px;
+  background: white;
+  box-shadow: 0 3px 18px #13274418;
+}
+.market-raster-sheet img,
+.market-raster-sheet canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+.market-raster-sheet canvas {
+  width: 100%;
+}
+.market-raster-note {
+  padding: 12px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.market-raster-tools {
+  padding: 20px;
+  border: 1px solid #ddd6fe;
+  border-radius: 16px;
+  background: #f5f3ff;
+}
+.market-raster-tools label {
+  display: block;
+  margin: 12px 0;
+}
+.market-raster-tools input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.market-raster-tools button {
+  padding: 12px 20px;
+  background: #4338ca;
+  color: white;
+  border-radius: 10px;
+}
+@media print {
+  body:has(.market-raster) * {
+    visibility: hidden !important;
+  }
+  body:has(.market-raster) .market-raster,
+  body:has(.market-raster) .market-raster * {
+    visibility: visible !important;
+  }
+  .market-raster {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 210mm !important;
+  }
+  .market-raster [data-noprint] {
+    display: none !important;
+  }
+  .market-raster-sheet {
+    width: 210mm;
+    max-width: 100%;
+    min-height: 280mm;
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+  }
+  .market-raster-sheet:last-child {
+    break-after: auto;
+  }
+  .market-raster-sheet img {
+    max-height: 277mm;
+    object-fit: contain;
+  }
+}
+@page market-raster-page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .market-raster-sheet {
+    page: market-raster-page;
+    break-inside: avoid;
+  }
+  .market-raster-note {
+    margin: 0;
+    padding: 3mm;
+    max-height: 25mm;
+    overflow: hidden;
+  }
+  .market-raster-sheet:has(.market-raster-note) img {
+    max-height: 265mm;
+  }
+}

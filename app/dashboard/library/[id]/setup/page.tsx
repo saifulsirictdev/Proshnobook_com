@@ -1,3 +1,5 @@
+import { rasterSnapshot } from "@/lib/marketplace-raster";
+import MarketplaceRasterPreview from "@/components/marketplace-raster-preview";
 import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { auth } from "@/auth";
@@ -40,6 +42,16 @@ export default async function PurchasedPaper({
   } catch {
     notFound();
   }
+  const raster = rasterSnapshot(r.snapshot);
+  if (raster)
+    return (
+      <main className="max-w-4xl mx-auto p-4 space-y-4">
+        <Link href="/dashboard/library">← কেনা প্রশ্নপত্র</Link>
+        <h1 className="text-2xl font-bold">{r.title}</h1>
+        <Link href={`/dashboard/library/${id}/report`}>সমস্যা জানান →</Link>
+        <MarketplaceRasterPreview raster={raster} editable purchaseId={id} />
+      </main>
+    );
   const settings = marketPreviewModel(r.snapshot).settings;
   if (r.institution) {
     settings.info.inst = r.institution;

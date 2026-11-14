@@ -1,4 +1,6 @@
 "use client";
+import { rasterSnapshot } from "@/lib/marketplace-raster";
+import MarketplaceRasterPreview from "./marketplace-raster-preview";
 import { useMemo, useState, useEffect, useRef } from "react";
 import { marketPreviewModel } from "@/lib/marketplace-preview";
 import { paperDimensions } from "@/lib/paper-builder";
@@ -7,7 +9,7 @@ import "@/components/paper-builder/paper.css";
 import "katex/dist/katex.min.css";
 
 /** Private owner/admin review only. No save, question-edit or public delivery action. */
-export default function MarketplacePaperPreview({
+function DatabasePaperPreview({
   snapshot,
   institution,
 }: {
@@ -97,5 +99,17 @@ export default function MarketplacePaperPreview({
         />
       </div>
     </section>
+  );
+}
+
+export default function MarketplacePaperPreview(props: {
+  snapshot: { settings: unknown; questions: unknown[] };
+  institution?: string;
+}) {
+  const raster = rasterSnapshot(props.snapshot);
+  return raster ? (
+    <MarketplaceRasterPreview raster={raster} />
+  ) : (
+    <DatabasePaperPreview {...props} />
   );
 }
