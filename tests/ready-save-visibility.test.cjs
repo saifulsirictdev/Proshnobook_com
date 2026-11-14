@@ -45,3 +45,40 @@ test("all preview entry paths require an explicit successful save of the current
   );
   assert.match(source, /প্রিন্টের আগে প্রশ্নপত্র সেভ/);
 });
+
+test("mobile save panel offers a direct save-then-preview action, reporting errors visibly", () => {
+  const source = fs.readFileSync("components/ready-papers/studio.tsx", "utf8");
+  assert.match(source, /onClick=\{saveAndPreview\}/);
+  assert.match(source, /if \(await save\(\)\) await preview\(\);/);
+  assert.match(source, /async function save\(\): Promise<boolean>/);
+  const save = source.slice(
+    source.indexOf("async function save()"),
+    source.indexOf("async function saveAndPreview()"),
+  );
+  assert.match(save, /return false;/);
+  assert.match(save, /return true;/);
+  const preview = source.slice(
+    source.indexOf("async function preview()"),
+    source.indexOf("async function prepareMarketCopy()"),
+  );
+  assert.match(preview, /catch \(error\)/);
+  assert.match(preview, /setSaveNotice\(notice\)/);
+  assert.match(source, /সেভ করে Print Preview খুলুন/);
+});
+test("save revalidation of the same receipt cannot reset edits or switch Preview back to Edit", () => {
+  const source = fs.readFileSync("components/ready-papers/studio.tsx", "utf8");
+  const start = source.indexOf("const p = initialPurchase;");
+  const effect = source.slice(
+    start,
+    source.indexOf("}, [initialPurchase]);", start),
+  );
+  assert.match(effect, /if \(hydratedPurchase.current === p.id\) return;/);
+  assert.ok(
+    effect.indexOf("hydratedPurchase.current === p.id") <
+      effect.indexOf("setEdits("),
+  );
+  assert.ok(
+    effect.indexOf("hydratedPurchase.current === p.id") <
+      effect.indexOf('setStep("edit")'),
+  );
+});
