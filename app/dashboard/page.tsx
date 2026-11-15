@@ -90,7 +90,9 @@ export default async function Dashboard({
       admin={!!w?.admin}
     >
       <main className="tw-main">
-        <PublicPhotoEditor tid={teacherTid(user.id)} />
+        <PublicPhotoEditor
+          tid={user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}
+        />
         <Link className="tw-link" href="/dashboard/feed-saved">
           ফিডের বুকমার্ক দেখুন →
         </Link>
@@ -103,7 +105,10 @@ export default async function Dashboard({
           <span className="tw-eyebrow">আপনার প্রশ্ন তৈরির কর্মক্ষেত্র</span>
           <p>{greeting()},</p>
           <h1>{user.name || "স্বাগতম"}</h1>
-          <Link className="tw-link" href={`/teachers/${teacherTid(user.id)}`}>
+          <Link
+            className="tw-link"
+            href={`/teachers/${user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}`}
+          >
             আমার প্রকাশ্য শিক্ষক প্রোফাইল →
           </Link>
           <p className="tw-muted">

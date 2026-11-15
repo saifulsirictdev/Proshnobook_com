@@ -178,7 +178,7 @@ test("homepage preserves old subject list and adds creation shortcuts before fee
   assert.match(home, /href="\/ready-papers"/);
   assert.match(home, /sections.map/);
   const action = fs.readFileSync("app/actions/marketplace.ts", "utf8");
-  assert.match(action, /autoPublish && form.get\("official"\) === "on"/);
+  assert.match(action, /autoPublish \? \{ official: true \}/);
   const profile = fs.readFileSync("app/actions/social-profiles.ts", "utf8");
   assert.match(profile, /limitInputPixels/);
   assert.match(profile, /social:photoquota/);
@@ -208,4 +208,114 @@ test("public photo is owner-only, normalized and persists independently from fut
   x.setSession(null);
   assert.equal((await x.actions.savePublicPhoto({}, form)).ok, false);
   assert.equal(x.uploads.length, 1);
+});
+
+test("ADMIN personal identity resolves to one official profile with official branding and owner controls", async () => {
+  const x = setup();
+  x.users.u.role = "ADMIN";
+  const p = await x.profiles.publicProfile(x.tid, "u");
+  assert.equal(p.tid, "proshnobook");
+  assert.equal(p.name, "প্রশ্নবুক.কম");
+  assert.equal(p.image, "/questionmaker-icon.png");
+  assert.equal(p.isSelf, true);
+  assert.equal(p.verified, true);
+  assert.equal(
+    (await x.profiles.publicProfile("proshnobook", "v")).isSelf,
+    false,
+  );
+});
+test("public names/designations are owner scoped; ADMIN edits official identity without changing financial account", async () => {
+  const x = setup();
+  const f = new FormData();
+  f.set("name", "Edited teacher");
+  f.set("designation", "Math teacher");
+  f.set("userId", "a");
+  f.set("tid", "proshnobook");
+  x.setSession("u");
+  assert.equal((await x.actions.savePublicDetails({}, f)).ok, true);
+  const p = await x.profiles.publicProfile(x.tid);
+  assert.equal(p.name, "Edited teacher");
+  assert.equal(p.designation, "Math teacher");
+  assert.equal(x.store.has("social:profile:v1:proshnobook"), false);
+  x.setSession("a");
+  f.set("name", "Official name");
+  assert.equal((await x.actions.savePublicDetails({}, f)).ok, true);
+  assert.equal(
+    (await x.profiles.publicProfile("proshnobook")).name,
+    "Official name",
+  );
+  assert.equal(x.users.a.name, "Admin");
+  x.setSession(null);
+  assert.equal((await x.actions.savePublicDetails({}, f)).ok, false);
+  x.setSession("u");
+  f.set("name", "a");
+  assert.equal((await x.actions.savePublicDetails({}, f)).ok, false);
+});
+test("cover upload is normalized separately, cannot overwrite another identity, and official self-follow is rejected", async () => {
+  const x = setup();
+  x.setSession("u");
+  const sharp = require("sharp");
+  const image = await sharp({
+    create: { width: 100, height: 100, channels: 3, background: "red" },
+  })
+    .png()
+    .toBuffer();
+  const f = new FormData();
+  f.set("kind", "cover");
+  f.set("tid", "proshnobook");
+  f.set("photo", new File([image], "cover.png", { type: "image/png" }));
+  assert.equal((await x.actions.savePublicPhoto({}, f)).ok, true);
+  assert.ok(x.store.get("social:cover:v1:u"));
+  assert.equal(x.store.has("social:cover:v1:proshnobook"), false);
+  const meta = await sharp(x.uploads[0]).metadata();
+  assert.equal(meta.width, 1600);
+  assert.equal(meta.height, 600);
+  x.setSession("a");
+  assert.equal(
+    (await x.actions.followProfile({}, form("proshnobook"))).ok,
+    false,
+  );
+});
+
+test("official feed includes legacy ADMIN publications without changing their financial owner", async () => {
+  const id = "a".repeat(64);
+  let queried = false;
+  const record = { id, ownerId: "admin-owner", snapshot: {} };
+  const feed = load("lib/question-feed.ts", {
+    "@/lib/db": {
+      db: {
+        user: {
+          findMany: async ({ where }) => {
+            assert.equal(where.role, "ADMIN");
+            return [{ id: "admin-owner" }];
+          },
+        },
+        setting: {
+          findMany: async ({ where }) => {
+            queried = true;
+            assert.ok(JSON.stringify(where).includes("admin-owner"));
+            assert.ok(JSON.stringify(where).includes("APPROVED"));
+            return [{ key: "market:" + id, value: JSON.stringify(record) }];
+          },
+        },
+      },
+    },
+    "@/lib/marketplace": { MARKET_PREFIX: "market:" },
+    "@/lib/marketplace-catalog": {
+      publicMarketPaper: () => ({ id, sellerTid: "legacy-tid" }),
+    },
+    "@/lib/marketplace-purchase": { saleRecord: (raw) => JSON.parse(raw) },
+    "@/lib/marketplace-full-preview": { publicFullPreview: () => ({}) },
+    "@/lib/marketplace-raster": { rasterSnapshot: () => null },
+    "@/lib/paper-social": { paperSocialSummary: async () => ({}) },
+    "@/lib/social-profiles": {
+      OFFICIAL_PROFILE: "proshnobook",
+      publicProfile: async () => ({ tid: "proshnobook" }),
+    },
+  });
+  const result = await feed.questionFeed({ official: true });
+  assert.equal(queried, true);
+  assert.equal(result.posts.length, 1);
+  assert.equal(result.posts[0].profile.tid, "proshnobook");
+  assert.equal(record.ownerId, "admin-owner");
 });

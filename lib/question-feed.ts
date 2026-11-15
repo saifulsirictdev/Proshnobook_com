@@ -20,6 +20,9 @@ export async function questionFeed({
   after?: string;
   viewerId?: string;
 } = {}) {
+  const adminOwners = official
+    ? await db.user.findMany({ where: { role: "ADMIN" }, select: { id: true } })
+    : [];
   const cursor =
     after && /^[a-f0-9]{64}$/.test(after) ? MARKET_PREFIX + after : undefined;
   const rows = await db.setting.findMany({
@@ -33,7 +36,18 @@ export async function questionFeed({
         ...(ownerId
           ? [{ NOT: { value: { contains: '"official":true' } } }]
           : []),
-        ...(official ? [{ value: { contains: '"official":true' } }] : []),
+        ...(official
+          ? [
+              {
+                OR: [
+                  { value: { contains: '"official":true' } },
+                  ...adminOwners.map(({ id }) => ({
+                    value: { contains: `"ownerId":${JSON.stringify(id)}` },
+                  })),
+                ],
+              },
+            ]
+          : []),
         ...(grade
           ? [
               {
@@ -63,7 +77,9 @@ export async function questionFeed({
       if (
         !paper ||
         (ownerId && (record.ownerId !== ownerId || record.official === true)) ||
-        (official && !record.official)
+        (official &&
+          !record.official &&
+          !adminOwners.some((u) => u.id === record.ownerId))
       )
         continue;
       const tid = record.official ? OFFICIAL_PROFILE : paper.sellerTid;

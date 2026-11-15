@@ -8,7 +8,15 @@ export default function SocialProfileHeader({
 }) {
   return (
     <header className="sf-profile-header">
-      <div className="sf-profile-cover" />
+      <div className="sf-profile-cover">
+        {profile.cover && (
+          <img
+            src={profile.cover}
+            alt="প্রোফাইল কভার"
+            className="sf-cover-image"
+          />
+        )}
+      </div>
       <div className="sf-profile-content">
         <div className="sf-avatar">
           {profile.image ? (
@@ -35,6 +43,9 @@ export default function SocialProfileHeader({
               />
             )}
           </h1>
+          {profile.designation && (
+            <p className="sf-designation">{profile.designation}</p>
+          )}
           <p>
             {profile.official
               ? "প্রশ্নবুক.কম-এর অফিসিয়াল প্রশ্নপত্র ও প্রকাশনা"

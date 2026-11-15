@@ -491,7 +491,7 @@ test("ADMIN ready export publishes directly and cannot replace an approved snaps
   assert.equal(x.store.get(lib.MARKET_PREFIX + id), old);
 });
 
-test("only fresh ADMIN can explicitly publish as official; teacher requests never gain the official identity", async () => {
+test("fresh ADMIN always publishes as official; teacher requests never gain the official identity", async () => {
   const teacher = setup(),
     f = teacher.form();
   f.set("official", "on");
@@ -516,7 +516,7 @@ test("only fresh ADMIN can explicitly publish as official; teacher requests neve
     (await personal.actions.submitMarketPaper({}, personal.form())).ok,
     true,
   );
-  assert.notEqual(
+  assert.equal(
     JSON.parse(personal.store.get(lib.MARKET_PREFIX + tid)).official,
     true,
   );

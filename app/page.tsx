@@ -118,7 +118,7 @@ export default async function Home({
             পরীক্ষার অনুমোদিত প্রশ্নপত্রের পরিচিতি এক জায়গায়।
           </p>
         </div>
-        <Link href="/dashboard" className="pb-profile-link">
+        <Link href="/my-profile" className="pb-profile-link">
           আমার প্রোফাইল ↗
         </Link>
       </header>
