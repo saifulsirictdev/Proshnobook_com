@@ -1,3 +1,4 @@
+import { reserveAuthAttempt } from "@/lib/auth-attempts";
 import { ensureWallet } from "@/lib/wallet";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
@@ -13,11 +14,19 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     Google, // reads AUTH_GOOGLE_ID and AUTH_GOOGLE_SECRET
     Credentials({
       async authorize(c) {
-        const email = String(c?.email ?? "").toLowerCase().trim();
+        const email = String(c?.email ?? "")
+          .toLowerCase()
+          .trim();
+        const password = String(c?.password ?? "");
+        if (!email || email.length > 254 || !password || password.length > 1024)
+          return null;
+        if (!(await reserveAuthAttempt("credentials", email))) return null;
         const u = await db.user.findUnique({ where: { email } });
         if (!u?.passwordHash) return null;
-        const ok = await bcrypt.compare(String(c?.password ?? ""), u.passwordHash);
-        return ok ? { id: u.id, email: u.email, name: u.name, role: u.role } : null;
+        const ok = await bcrypt.compare(password, u.passwordHash);
+        return ok
+          ? { id: u.id, email: u.email, name: u.name, role: u.role }
+          : null;
       },
     }),
   ],
@@ -32,7 +41,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         const email = token.email.toLowerCase();
         const isAdmin = email === process.env.ADMIN_EMAIL?.toLowerCase();
         const googleImage =
-          typeof (profile as { picture?: string } | undefined)?.picture === "string"
+          typeof (profile as { picture?: string } | undefined)?.picture ===
+          "string"
             ? (profile as { picture?: string }).picture
             : undefined;
         // passwordHash is cleared: the email is now proven by Google, so nobody

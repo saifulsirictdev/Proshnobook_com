@@ -19,6 +19,7 @@ export async function extractCleanTwoColumnPdf(file: File): Promise<string> {
   // CMap যুক্ত করা হলো যাতে বাংলা যুক্তাক্ষর না ভাঙে
   const loadingTask = pdfjsLib.getDocument({
     data: arrayBuffer,
+    isEvalSupported: false,
     cMapUrl: "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/cmaps/",
     cMapPacked: true,
   });

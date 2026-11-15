@@ -45,18 +45,20 @@ test("server login actions honor only sanitized credential/Google return paths",
   const actionModule = new Module("auth-actions", module);
   actionModule.paths = module.paths;
   actionModule.require = (id) =>
-    id === "@/lib/login-redirect"
-      ? m.exports
-      : id === "@/auth"
-        ? {
-            signIn: async (provider, options) =>
-              calls.push({ provider, options }),
-          }
-        : id === "@/lib/db"
-          ? { db: {} }
-          : id === "next-auth"
-            ? { AuthError: class AuthError extends Error {} }
-            : require(id);
+    id === "@/lib/auth-attempts"
+      ? { reserveAuthAttempt: async () => true }
+      : id === "@/lib/login-redirect"
+        ? m.exports
+        : id === "@/auth"
+          ? {
+              signIn: async (provider, options) =>
+                calls.push({ provider, options }),
+            }
+          : id === "@/lib/db"
+            ? { db: {} }
+            : id === "next-auth"
+              ? { AuthError: class AuthError extends Error {} }
+              : require(id);
   actionModule._compile(
     ts.transpileModule(fs.readFileSync("app/actions/auth.ts", "utf8"), {
       compilerOptions: {
