@@ -22,7 +22,7 @@ This is a readiness baseline, **not enterprise certification**. Passing mocked t
 
 ## Dependency risk still open
 
-The audit was run against the npm registry with `npm audit --omit=dev`, not treated as proof every finding is exploitable. The initial baseline was 17 total (4 critical, 11 high, 1 moderate, 1 low); Phase 47 reduced it to 14. Phase 48 clean-install audit was 9 total. Phase 49 audit: **5 total (0 critical, 4 high, 0 moderate, 1 low)**. Re-run before release; registry advisories change.
+The audit was run against the npm registry with `npm audit --omit=dev`, not treated as proof every finding is exploitable. The initial baseline was 17 total (4 critical, 11 high, 1 moderate, 1 low); Phase 47 reduced it to 14. Phase 48 clean-install audit was 9 total. Phase 49 audit was 5 total. Phase 50 clean-install audit: **0 findings** with `npm audit --omit=dev`. Re-run before release; registry advisories change.
 
 Phase 48 pins Blob **2.4.0** with lockfile Undici **6.29.1**, removing the old Undici/busboy path. Blob 2.9.0 was evaluated but introduced an unnecessary OIDC/CLI-config dependency chain with additional audit findings; this app uses existing read-write/client tokens, not that feature. A pinned earlier 2.x release is deliberate, not a claim to use the latest SDK. No storage token, access policy or provider configuration changed. The SDK now requires Node >=20; local validation/CI use Node 22. Confirm the deployment runtime and perform a controlled authorized upload on staging after deploy.
 
@@ -36,7 +36,15 @@ PDF tests create real two-page A4 fixtures with embedded Hind Siliguri Bengali p
 
 A Bengali fixture retaining `বাংলা` and visible raster ink does **not** prove perfect extraction of every conjunct, legacy encoding or scanned paper. Existing OCR/encoding limitations remain; use representative authorized NCTB/board/school and long mixed MCQ/CQ/SQ fixtures in the operator smoke gate. Raster previews/prints do not establish editable structured content or DRM.
 
-Remaining audit paths are Zod 3, Prisma config → deepmerge-ts, and KaTeX (5 findings including transitive package entries, not 5 independently proven exploits). They require compatibility-reviewed validation/math/tooling updates. Do not run `npm audit fix --force` on production. Zero reported criticals is not proof that the application is vulnerability-free, nor that backup/alert/provider gates are complete.
+Phase 50 upgrades Zod to **4.6.7** and KaTeX to **0.19.1**, with a scoped `@prisma/config` → `deepmerge-ts` **8.0.0** override. Prisma remains 6.19.3: no database/client major migration and no schema changes. Zod records now explicitly declare string keys; object defaults use `.prefault({})` so nested editor/header/English layout defaults still parse rather than short-circuiting as empty objects in Zod 4. Sanitized validation-path reporting accepts only known string fields/numeric indexes, not arbitrary symbol/error input. Existing schema/finance/editor tests remain the behavior gate.
+
+Regression tests verify oversized constrained arrays reject before visiting elements, nested defaults and record validation, KaTeX fractions/untrusted links, and Prisma-tooling nested merge/prototype isolation. Prisma client generation, TypeScript and all 627 tests passed after a fresh dependency install. A high/critical production-dependency advisory gate now runs in CI. The override must be reviewed when upgrading Prisma; remove it only once the resolved dependency is patched without it. Zero registry findings is not proof that the application is vulnerability-free, nor that backup/alert/provider gates are complete. Do not run `npm audit fix --force` on production.
+
+## Connected infrastructure inspection (read-only)
+
+Vercel metadata inspection found the expected project and production domain; domain configuration reports `misconfigured:false` and no conflicts. The pre-release production deployment for Phase 48 was READY and mapped to proshnobook.com. These are control-plane observations, not successful authenticated application/provider/DB transactions. The project reports Node 26.x while CI/local use Node 22; preview deployment builds also gate this change. No runtime setting was changed.
+
+**Staging isolation blocker:** the metadata defines DATABASE_URL and Blob read-write credentials for both production and preview targets. Secret values were not decrypted, read or compared. Treat preview as potentially production-connected; do not use it for destructive restore/payment/load tests. Establish distinct database/storage/provider sandbox resources and verify target bindings before any mutating smoke tests. This is an access/resource-isolation requirement, not a missing permission from the owner. The current connector does not provision database backups/PITR/restores, configure WAF rules, or create an uptime monitor/notification recipient; those operations are not completed by granting blanket permission. No unsupported settings/IDs or invented alert destinations were used.
 
 ## Required owner/operator release gates
 

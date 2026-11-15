@@ -11,6 +11,7 @@ export const englishSelectionSchema = z
     mode: z.enum(["full", "selected", "writing"]),
     itemIds: z.array(z.string().max(80)).max(20),
     writing: z.record(
+      z.string(),
       z
         .object({
           topic: z.string().trim().min(1).max(500),
@@ -21,6 +22,7 @@ export const englishSelectionSchema = z
         .strict(),
     ),
     sources: z.record(
+      z.string(),
       z
         .object({
           text: z.string().trim().min(1).max(20000),
@@ -124,9 +126,7 @@ export function englishSubjectRoute(category: string, subject: string) {
       normalized === `${name} শ্রেণী`,
   );
   const numeric =
-    /^(?:class\s*|শ্রেণ[িী]\s*)?(\d{1,2})(?:\s*(?:শ্রেণ[িী]))?$/.exec(
-      normalized,
-    );
+    /^(?:class\s*|শ্রেণ[িী]\s*)?(\d{1,2})(?:\s*(?:শ্রেণ[িী]))?$/.exec(normalized);
   const grade = numeric
     ? Number(numeric[1])
     : named

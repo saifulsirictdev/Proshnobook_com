@@ -30,6 +30,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Production dependency advisory gate
+        run: npm audit --omit=dev --audit-level=high
       - run: npx prisma generate
       - run: npm run typecheck
       - name: Security tests (report failing TAP blocks)

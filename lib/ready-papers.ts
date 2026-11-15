@@ -103,7 +103,7 @@ export const readyRecordSchema = readyMetadataSchema.extend({
   at: z.string().datetime(),
   presets: z
     .record(z.string().regex(/^([1-9]|[1-9]\d|100)$/), pageEditSchema)
-    .default({}),
+    .prefault({}),
 });
 export type ReadyPaper = z.infer<typeof readyRecordSchema>;
 export function parseReady(value: string) {
