@@ -534,3 +534,13 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Targeted Next/Auth/Sharp security updates; remaining PDF browser readers disable eval. Dependency audit still has unresolved findings requiring compatibility-reviewed migrations; this is **not** an enterprise-complete/security-clear claim.
 - Local verification: **617/617** tests; TypeScript and production build passed. Local HTTP health/homepage 200, protected Dashboard redirects anonymous users. Sandbox Prisma engine overrides mean this does not validate production database/provider flows. Real PostgreSQL concurrency check is wired to isolated GitHub CI; it cannot run locally without a disposable database.
 - Owner gates remain: dependency remediation, real teacher/ADMIN/provider/financial pilot with permission, mobile/Print smoke tests, external alert delivery, database/vault restore rehearsal, live SEO check. No production writes, credential changes or automatic merge.
+
+## Phase 48 — staged dependency remediation: storage transport and PostCSS
+
+- Owner authorized staged work, assistant-created PR and merge after checks. Scope remains no production data/money/credential changes or large database migrations.
+- Pinned Blob 2.4.0 with patched Undici 6.29.1; removed old busboy path. Evaluated latest Blob 2.9.0 but it adds unnecessary OIDC/CLI-config audit findings, so selected the compatible token-based 2.x release. No storage secrets/provider policy changes.
+- Overrode Next's PostCSS to patched 8.5.33 within PostCSS 8; verified fresh npm ci and dependency-tree resolution, not just root package version.
+- Added actual SDK offline transport/response compatibility tests, PDF upload-token constraint tests and callback signature rejection/authenticity tests. Live provider upload remains an operator smoke gate; no actual upload/delete requests were made by tests.
+- Clean dependency audit: **14 → 9 findings**, now 1 critical / 7 high / 0 moderate / 1 low. Remaining PDF/native-tooling, Zod, Prisma config and KaTeX risks are documented in `docs/operations/PRODUCTION-READINESS.md`; not a security-clear/enterprise-complete claim.
+- Local TypeScript and **620/620** regression tests passed. Production build and remote CI/deployment checks recorded in the PR. Sandbox native Prisma restrictions still prevent claiming database-backed production readiness from local checks.
+- Next stage: isolated PDF.js/worker migration with Bengali extraction/Preview/Print fixtures, then Zod/tooling compatibility work. Real account/provider/financial smoke tests, restored-backup proof and delivered external alerts remain unverified and must use authorized staging/owner access.
