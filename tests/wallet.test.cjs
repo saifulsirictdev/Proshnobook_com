@@ -879,12 +879,12 @@ test("buyer can change institution only, not questions/price/owner; another user
 });
 test("revenue split conserves each paisa and disallows invalid prices", () => {
   const x = setup();
-  for (const amount of [100, 101, 1001, 5000000]) {
+  for (const amount of [0, 100, 101, 1001, 5000000]) {
     const s = x.commerce.revenueSplit(amount);
     assert.equal(s.sellerAmount + s.platformAmount, amount);
     assert.equal(s.sellerAmount, Math.floor(amount * 0.6));
   }
-  for (const n of [0, -1, 100.5, NaN, 5000001])
+  for (const n of [1, 99, -1, 100.5, NaN, 5000001])
     assert.throws(() => x.commerce.revenueSplit(n));
 });
 function complaintForm(id) {
@@ -1940,4 +1940,53 @@ test("PDF raster sale preserves immutable image pages, exact split, idempotency 
       x.id,
     ),
   );
+});
+
+test("free paper collection is retry safe, grants a valid copy, and never moves wallet funds or creates sale receipts", async () => {
+  for (const platform of [false, true]) {
+    const x = await (platform ? platformMarketSetup() : marketSetup());
+    x.r.metadata.pricePaisa = 0;
+    x.store.set("market:submission:v1:" + x.id, JSON.stringify(x.r));
+    x.f.set(
+      "terms",
+      x.commerce.purchaseTerms(x.r, platform ? "PLATFORM" : undefined),
+    );
+    const before = new Map(x.store);
+    const outcomes = await Promise.all(
+      Array.from({ length: 5 }, () => x.purchases.buyMarketPaper({}, x.f)),
+    );
+    assert.ok(
+      outcomes.every((r) => r.ok && r.amount === 0 && r.chargedNow === false),
+    );
+    const copy = x.commerce.validatePurchase(
+      x.store.get(x.commerce.purchaseKey("u", x.id)),
+      "u",
+      x.id,
+    );
+    assert.equal(copy.amount, 0);
+    assert.equal(copy.sellerAmount, 0);
+    assert.equal(copy.platformAmount, 0);
+    assert.deepEqual(copy.snapshot, x.r.snapshot);
+    for (const [key, value] of before)
+      if (key.startsWith("wallet:")) assert.equal(x.store.get(key), value);
+    const financial = (store) =>
+      [...store].filter(
+        ([k]) => k.startsWith("wallet:") || k.startsWith("market:platform:"),
+      );
+    assert.deepEqual(financial(x.store), financial(before));
+  }
+});
+test("stale free confirmation cannot charge a newly priced paper and failed collection rolls back", async () => {
+  const x = await marketSetup();
+  x.r.metadata.pricePaisa = 0;
+  x.f.set("terms", x.commerce.purchaseTerms(x.r));
+  // Persist the original paid listing: stale free terms must never charge.
+  const before = new Map(x.store);
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).ok, false);
+  assert.deepEqual(x.store, before);
+  x.store.set("market:submission:v1:" + x.id, JSON.stringify(x.r));
+  x.setFail("market:purchase:v1:");
+  const beforeFailure = new Map(x.store);
+  assert.equal((await x.purchases.buyMarketPaper({}, x.f)).ok, false);
+  assert.deepEqual(x.store, beforeFailure);
 });

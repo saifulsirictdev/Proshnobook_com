@@ -66,7 +66,11 @@ export function saleRecord(raw: string, id: string): MarketSubmission {
 export function revenueSplit(amount: number, revenueMode?: "PLATFORM") {
   if (revenueMode !== undefined && revenueMode !== "PLATFORM")
     throw Error("Invalid revenue mode");
-  if (!Number.isSafeInteger(amount) || amount < 100 || amount > 5000000)
+  if (
+    !Number.isSafeInteger(amount) ||
+    (amount !== 0 && amount < 100) ||
+    amount > 5000000
+  )
     throw Error("Invalid price");
   const sellerAmount =
     revenueMode === "PLATFORM" ? 0 : Math.floor((amount * 60) / 100);

@@ -88,12 +88,13 @@ export async function buyMarketPaper(
       const amount = r.metadata.pricePaisa,
         split = revenueSplit(amount, revenueMode),
         operation = `market-buy:${buyerId}:${id}`;
-      await changeWalletFunds(tx, buyerId, {
-        operationId: operation,
-        amount,
-        direction: "DEBIT",
-        description: `প্রশ্নপত্র কেনা: ${r.metadata.title}`,
-      });
+      if (amount > 0)
+        await changeWalletFunds(tx, buyerId, {
+          operationId: operation,
+          amount,
+          direction: "DEBIT",
+          description: `প্রশ্নপত্র কেনা: ${r.metadata.title}`,
+        });
       if (split.sellerAmount)
         await changeWalletFunds(tx, r.ownerId, {
           operationId: operation,
@@ -120,24 +121,25 @@ export async function buyMarketPaper(
       await tx.setting.create({
         data: { key, value: JSON.stringify(purchase) },
       });
-      await tx.setting.create({
-        data: {
-          key: `market:platform:v1:${buyerId}:${id}`,
-          value: JSON.stringify({
-            buyerId,
-            sellerId: r.ownerId,
-            paperId: id,
-            ...split,
-            ...(revenueMode ? { revenueMode } : {}),
-            amount,
-            at: purchase.purchasedAt,
-          }),
-        },
-      });
+      if (amount > 0)
+        await tx.setting.create({
+          data: {
+            key: `market:platform:v1:${buyerId}:${id}`,
+            value: JSON.stringify({
+              buyerId,
+              sellerId: r.ownerId,
+              paperId: id,
+              ...split,
+              ...(revenueMode ? { revenueMode } : {}),
+              amount,
+              at: purchase.purchasedAt,
+            }),
+          },
+        });
       const updatedBuyer = await account(tx, buyerId);
       return {
         amount,
-        chargedNow: true,
+        chargedNow: amount > 0,
         balanceBefore: buyer.balance,
         balanceAfter: updatedBuyer.balance,
       };
@@ -147,7 +149,10 @@ export async function buyMarketPaper(
 
     return {
       ok: true,
-      message: "কেনা কপি লাইব্রেরিতে সংরক্ষিত আছে। আবার খুললে চার্জ হবে না।",
+      message:
+        receipt.amount === 0
+          ? "বিনামূল্যের কপি লাইব্রেরিতে সংরক্ষিত হয়েছে। কোনো টাকা কাটা হয়নি।"
+          : "কেনা কপি লাইব্রেরিতে সংরক্ষিত আছে। আবার খুললে চার্জ হবে না।",
       paperId: id,
       ...receipt,
     };

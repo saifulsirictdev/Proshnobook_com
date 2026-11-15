@@ -6,7 +6,7 @@ import { PURCHASE_PREFIX, validatePurchase } from "@/lib/marketplace-purchase";
 import { formatMoney } from "@/lib/wallet";
 export const dynamic = "force-dynamic";
 export const metadata = {
-  title: "আমার কেনা প্রশ্নপত্র",
+  title: "আমার সংগ্রহ করা প্রশ্নপত্র",
   robots: { index: false },
 };
 export default async function Library({
@@ -33,8 +33,11 @@ export default async function Library({
   return (
     <main className="max-w-3xl mx-auto p-5 space-y-4">
       <Link href="/dashboard">← প্রোফাইল</Link>
-      <h1 className="text-2xl font-bold">আমার কেনা প্রশ্নপত্র</h1>
-      <p>এখান থেকে পুরোনো কেনা কপি খুললে বা প্রিন্ট করলে আবার চার্জ হবে না।</p>
+      <h1 className="text-2xl font-bold">আমার সংগ্রহ করা প্রশ্নপত্র</h1>
+      <p>
+        কেনা ও বিনামূল্যে সংগ্রহ করা কপি এখানে পাবেন। আবার খোলা বা প্রিন্টে নতুন চার্জ
+        নেই।
+      </p>
       {rows.slice(0, 50).map((row) => {
         const paperId = row.key.slice(prefix.length);
         try {
@@ -58,7 +61,8 @@ export default async function Library({
                 অভিযোগ / নিষ্পত্তির অবস্থা →
               </Link>
               <p>
-                {formatMoney(r.amount)} · {r.purchasedAt}
+                {r.amount === 0 ? "ফ্রি" : formatMoney(r.amount)} ·{" "}
+                {r.purchasedAt}
               </p>
             </article>
           );
