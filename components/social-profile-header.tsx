@@ -22,6 +22,10 @@ export default function SocialProfileHeader({
             {profile.name}
             {profile.verified && (
               <BadgeCheck
+                fill="currentColor"
+                stroke="white"
+                strokeWidth={2.8}
+                role="img"
                 aria-label={
                   profile.official
                     ? "প্রশ্নবুকের অফিসিয়াল প্রোফাইল"
