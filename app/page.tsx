@@ -83,7 +83,7 @@ export default async function Home({
         </Link>
       </section>
       <div className="sf-feed-heading">
-        <h2>দেশের শিক্ষকদের তৈরি প্রশ্নপত্র দেখুন</h2>
+        <h2>দেশের স্বনামধন্য শিক্ষকদের তৈরি প্রশ্নপত্র একসাথে</h2>
         <Link href="/teachers/proshnobook">
           প্রশ্নবুক.কম-এর অফিসিয়াল প্রোফাইল ↗
         </Link>
