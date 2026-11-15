@@ -84,5 +84,9 @@ test("private account areas explicitly opt out of search indexing without changi
   }
   const root = fs.readFileSync("app/layout.tsx", "utf8");
   assert.match(root, /__html: jsonLd\(/);
-  assert.match(root, /"@type": "Organization"/);
+  assert.match(root, /jsonLd\(websiteIdentity\(\)\)/);
+  const identity = load("lib/site-identity.ts", {
+    "@/lib/brand": brand,
+  }).websiteIdentity();
+  assert.equal(identity.publisher["@type"], "Organization");
 });

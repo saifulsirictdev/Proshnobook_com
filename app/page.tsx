@@ -1,3 +1,4 @@
+import { BRAND } from "@/lib/brand";
 import { landingMetadata } from "@/lib/seo";
 import { FileText, Database } from "lucide-react";
 import { auth } from "@/auth";
@@ -176,6 +177,20 @@ export default async function Home({
           </div>
         </section>
       ))}
+      <section
+        className="mx-auto my-8 max-w-4xl rounded-2xl border bg-white p-5"
+        aria-labelledby="site-identity-title"
+      >
+        <h2 id="site-identity-title" className="text-xl font-bold">
+          প্রশ্নবুক.কম কী?
+        </h2>
+        <p className="my-3">
+          {BRAND.description} এটি সাধারণ প্রশ্নোত্তর আলোচনা ফোরাম নয়।
+        </p>
+        <Link className="underline" href="/about-us">
+          বর্তমান সেবা ও আমাদের পরিচিতি →
+        </Link>
+      </section>
       <section
         className="mx-auto my-8 max-w-4xl rounded-2xl border bg-white p-5"
         aria-labelledby="paper-guide-title"
