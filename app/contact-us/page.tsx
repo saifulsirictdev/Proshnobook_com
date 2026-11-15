@@ -1,12 +1,13 @@
+import { landingMetadata } from "@/lib/seo";
 import Link from "next/link";
 import PolicyLayout, { PolicySection } from "@/components/policy-layout";
 import { getSite } from "@/lib/site";
 export const dynamic = "force-dynamic";
-export const metadata = {
-  title: "যোগাযোগ ও সহায়তা",
-  description:
-    "প্রশ্নবুকের প্রকাশিত যোগাযোগ, কেনা কপির অভিযোগ এবং আর্থিক সহায়তার নির্দেশনা।",
-};
+export const metadata = landingMetadata(
+  "প্রশ্নবুক.কম — যোগাযোগ ও সহায়তা",
+  "প্রশ্নপত্র তৈরি, প্রকাশনা ও ফ্রি/পেইড কপির সহায়তার জন্য প্রশ্নবুক.কম-এর প্রকাশিত যোগাযোগ ও অভিযোগের নির্দেশনা।",
+  "/contact-us",
+);
 export default async function Contact() {
   const site = await getSite(),
     email = site.contact.email.trim(),
@@ -15,6 +16,14 @@ export default async function Contact() {
     validPhone = /^\+?[0-9 ()-]{6,25}$/.test(phone);
   return (
     <PolicyLayout title="যোগাযোগ ও সহায়তা">
+      <p>
+        প্রশ্নবুক.কম (Proshnobook) শিক্ষকদের পরীক্ষার প্রশ্নপত্র তৈরি, প্রকাশ ও সংগ্রহের
+        প্ল্যাটফর্ম। সেবার বর্তমান পরিচয় ও সীমাবদ্ধতা জানতে{" "}
+        <Link className="underline" href="/about-us">
+          আমাদের সম্পর্কে পড়ুন
+        </Link>
+        ।
+      </p>
       <PolicySection title="প্রকাশিত যোগাযোগের মাধ্যম">
         {validEmail && (
           <p>

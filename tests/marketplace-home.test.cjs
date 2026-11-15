@@ -40,6 +40,7 @@ test("new home renders all books, six-paper bounded queries, preserved subject l
     { renderToStaticMarkup } = require("react-dom/server");
   let calls = [];
   const Home = load("app/page.tsx", {
+    "@/lib/brand": require("./helpers/brand.cjs"),
     "@/lib/seo": load("lib/seo.ts", {
       "@/lib/brand": require("./helpers/brand.cjs"),
     }),

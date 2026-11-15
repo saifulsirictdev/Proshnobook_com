@@ -10,25 +10,27 @@ function load(file, contact = { email: "", phone: "" }) {
   const m = new Module(file, module);
   m.paths = module.paths;
   m.require = (n) =>
-    n === "@/lib/brand"
-      ? brand
-      : n === "next/link"
-        ? ({ href, children, ...p }) =>
-            React.createElement("a", { href, ...p }, children)
-        : n === "next/navigation"
-          ? {
-              redirect: (url) => {
-                throw Error("redirect:" + url);
-              },
-              permanentRedirect: (url) => {
-                throw Error("permanent:" + url);
-              },
-            }
-          : n === "@/lib/site"
-            ? { getSite: async () => ({ contact }) }
-            : n.startsWith("@/components/")
-              ? load(n.replace("@/", "") + ".tsx", contact)
-              : require(n);
+    n === "@/lib/seo" || n === "@/lib/site-identity"
+      ? load(n.replace("@/", "") + ".ts", contact)
+      : n === "@/lib/brand"
+        ? brand
+        : n === "next/link"
+          ? ({ href, children, ...p }) =>
+              React.createElement("a", { href, ...p }, children)
+          : n === "next/navigation"
+            ? {
+                redirect: (url) => {
+                  throw Error("redirect:" + url);
+                },
+                permanentRedirect: (url) => {
+                  throw Error("permanent:" + url);
+                },
+              }
+            : n === "@/lib/site"
+              ? { getSite: async () => ({ contact }) }
+              : n.startsWith("@/components/")
+                ? load(n.replace("@/", "") + ".tsx", contact)
+                : require(n);
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {
