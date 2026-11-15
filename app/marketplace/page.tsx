@@ -1,3 +1,4 @@
+import { landingMetadata } from "@/lib/seo";
 import MarketplaceFilters from "@/components/marketplace-filters";
 import Link from "next/link";
 import { marketCatalogPage } from "@/lib/marketplace-catalog-data";
@@ -12,7 +13,11 @@ import {
 import MarketplacePaperCards from "@/components/marketplace-paper-cards";
 import "@/components/marketplace-home.css";
 export const dynamic = "force-dynamic";
-export const metadata = { title: "প্রশ্নবুক — আরও প্রশ্নপত্র" };
+export const metadata = landingMetadata(
+  "শিক্ষকদের ফ্রি ও পেইড প্রশ্নপত্র — ষষ্ঠ থেকে দ্বাদশ শ্রেণি",
+  "শ্রেণি ও বিষয় অনুযায়ী অনুমোদিত প্রশ্নপত্র খুঁজুন। ফ্রি পেপার সংগ্রহ করুন অথবা মূল্য ও শর্ত দেখে পেইড প্রশ্নপত্র কিনুন।",
+  "/marketplace",
+);
 export default async function Marketplace({
   searchParams,
 }: {

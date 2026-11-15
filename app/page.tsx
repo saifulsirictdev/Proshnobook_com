@@ -1,3 +1,4 @@
+import { landingMetadata } from "@/lib/seo";
 import { FileText, Database } from "lucide-react";
 import { auth } from "@/auth";
 import { questionFeed } from "@/lib/question-feed";
@@ -30,9 +31,12 @@ const gradeMenu = {
 };
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: { absolute: "প্রশ্নবুক — শ্রেণি ও বিষয়ভিত্তিক প্রশ্নপত্র" },
-  description:
-    "ষষ্ঠ থেকে দ্বাদশ শ্রেণির বিষয় ও পরীক্ষার ধরন অনুযায়ী শিক্ষকদের অনুমোদিত প্রশ্নপত্রের পরিচিতি দেখুন।",
+  ...landingMetadata(
+    "প্রশ্নপত্র তৈরি ও শিক্ষকদের প্রশ্নব্যাংক | প্রশ্নবুক.কম",
+    "ষষ্ঠ–দ্বাদশ শ্রেণির MCQ, সংক্ষিপ্ত ও সৃজনশীল প্রশ্নপত্র তৈরি করুন। শিক্ষকদের অনুমোদিত ফ্রি ও পেইড প্রশ্নপত্র, PDF ও প্রিন্টের সুবিধা এক জায়গায়।",
+    "/",
+  ),
+  title: { absolute: "প্রশ্নপত্র তৈরি ও শিক্ষকদের প্রশ্নব্যাংক | প্রশ্নবুক.কম" },
 };
 export default async function Home({
   searchParams,
@@ -172,6 +176,22 @@ export default async function Home({
           </div>
         </section>
       ))}
+      <section
+        className="mx-auto my-8 max-w-4xl rounded-2xl border bg-white p-5"
+        aria-labelledby="paper-guide-title"
+      >
+        <h2 id="paper-guide-title" className="text-xl font-bold">
+          অনলাইনে প্রশ্নপত্র তৈরি করবেন কীভাবে?
+        </h2>
+        <p className="my-3">
+          শ্রেণি ও বিষয় বেছে ডাটাবেজ থেকে MCQ, সংক্ষিপ্ত ও সৃজনশীল প্রশ্ন সাজাতে
+          পারেন। PDF লাইব্রেরি থেকেও প্রশ্ন বেছে পেপার তৈরি করা যায়। প্রকাশিত
+          প্রশ্নপত্রের মূল্য ও ব্যবহারের নিয়ম দেখে সংগ্রহ করুন।
+        </p>
+        <Link className="underline" href="/question-paper-guide">
+          প্রশ্নপত্র তৈরি, ফ্রি সংগ্রহ ও প্রিন্টের নির্দেশিকা →
+        </Link>
+      </section>
       <footer className="pb-home-footer">
         <span>
           বিষয় ও অধ্যায়ের তালিকা ওয়েবসাইটের বিদ্যমান পাঠ্যসূচি অনুযায়ী। নবম–দশম ও

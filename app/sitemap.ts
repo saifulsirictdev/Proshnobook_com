@@ -8,18 +8,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = PUBLIC_SITE_ORIGIN;
 
   const [posts, cats, pages] = await Promise.all([
-    db.post.findMany({
-      where: { published: true },
-      select: { id: true, slug: true, createdAt: true, tags: true },
-    }).catch(() => []),
+    db.post
+      .findMany({
+        where: { published: true },
+        select: { id: true, slug: true, createdAt: true, tags: true },
+      })
+      .catch(() => []),
     db.category.findMany({ select: { slug: true } }).catch(() => []),
-    db.page.findMany({ select: { slug: true, updatedAt: true } }).catch(() => []),
+    db.page
+      .findMany({ select: { slug: true, updatedAt: true } })
+      .catch(() => []),
   ]);
 
   const tags = Array.from(new Set(posts.flatMap((p) => p.tags)));
 
   const fixed = [
     "",
+    "/question-paper-guide",
+    "/question-builder",
+    "/ready-papers",
+    "/marketplace",
+    "/about-us",
+    "/contact-us",
     "/academic",
     "/admission",
     "/ntrca",

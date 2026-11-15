@@ -1,3 +1,4 @@
+import { landingMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { FilePlus2, ArrowUpRight } from "lucide-react";
 import { readyLibrary } from "@/lib/ready-paper-data";
@@ -6,7 +7,11 @@ import LibraryBrowser from "@/components/ready-papers/library-browser";
 import { libraryFilters } from "@/lib/ready-library-search";
 import { readyPaperCatalog, readyGrade } from "@/lib/ready-paper-catalog";
 export const dynamic = "force-dynamic";
-export const metadata = { title: "রেডি প্রশ্নপত্র" };
+export const metadata = landingMetadata(
+  "PDF থেকে প্রশ্নপত্র তৈরি ও রেডি প্রশ্নপত্র লাইব্রেরি",
+  "বোর্ড ও স্কুলের উপলব্ধ PDF প্রশ্নপত্র থেকে প্রশ্ন বেছে সাজান। শ্রেণি, বিষয় ও বছর অনুযায়ী খুঁজে নিজের প্রশ্নপত্র তৈরি করুন।",
+  "/ready-papers",
+);
 export default async function ReadyLibrary({
   searchParams,
 }: {
