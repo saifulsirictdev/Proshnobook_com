@@ -1,11 +1,11 @@
-import { BRAND, publicSiteOrigin } from "@/lib/brand";
+import { BRAND, PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import { db } from "@/lib/db";
 export const dynamic = "force-dynamic";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export async function GET() {
-  const base = publicSiteOrigin(process.env.SITE_URL);
+  const base = PUBLIC_SITE_ORIGIN;
   const posts = await db.post.findMany({ where: { published: true }, orderBy: { createdAt: "desc" }, take: 30 }).catch(() => []);
   const items = posts.map((p) => {
     const link = `${base}/blog/${p.slug ?? p.id}`;

@@ -1,11 +1,11 @@
-import { publicSiteOrigin } from "@/lib/brand";
+import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import type { MetadataRoute } from "next";
 import { db } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = publicSiteOrigin(process.env.SITE_URL);
+  const base = PUBLIC_SITE_ORIGIN;
 
   const [posts, cats, pages] = await Promise.all([
     db.post.findMany({

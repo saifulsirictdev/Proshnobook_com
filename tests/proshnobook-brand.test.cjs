@@ -126,7 +126,7 @@ test("shell surfaces, origin feeds and install prompt share identity without mig
     "app/robots.ts",
     "app/feed.xml/route.ts",
   ])
-    assert.match(fs.readFileSync(file, "utf8"), /publicSiteOrigin/);
+    assert.match(fs.readFileSync(file, "utf8"), /PUBLIC_SITE_ORIGIN/);
   assert.doesNotMatch(
     fs.readFileSync("lib/brand.ts", "utf8"),
     /support@proshnobook/,
