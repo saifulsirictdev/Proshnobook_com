@@ -47,9 +47,12 @@ const meta = {
 };
 test("market metadata restricts grade, price, chapters and rights", () => {
   assert.ok(lib.marketMetadataSchema.safeParse(meta).success);
+  assert.ok(
+    lib.marketMetadataSchema.safeParse({ ...meta, pricePaisa: 0 }).success,
+  );
   for (const patch of [
     { grade: "13" },
-    { pricePaisa: 0 },
+    { pricePaisa: 1 },
     { pricePaisa: 100.5 },
     { pricePaisa: 5000001 },
     { rights: false },
@@ -520,4 +523,21 @@ test("fresh ADMIN always publishes as official; teacher requests never gain the 
     JSON.parse(personal.store.get(lib.MARKET_PREFIX + tid)).official,
     true,
   );
+});
+
+test("teacher free publication remains pending and validates rights", async () => {
+  const x = setup(),
+    f = x.form();
+  f.set("publicationMode", "free");
+  f.delete("price");
+  assert.equal((await x.actions.submitMarketPaper({}, f)).ok, true);
+  const id = lib.marketSubmissionId("u", "qbpaper:u:a");
+  const r = JSON.parse(x.store.get(lib.MARKET_PREFIX + id));
+  assert.equal(r.metadata.pricePaisa, 0);
+  assert.equal(r.status, "PENDING");
+  const y = setup(),
+    denied = y.form();
+  denied.set("publicationMode", "free");
+  denied.delete("rights");
+  assert.equal((await y.actions.submitMarketPaper({}, denied)).ok, false);
 });

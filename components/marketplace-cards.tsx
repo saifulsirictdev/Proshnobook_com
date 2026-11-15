@@ -24,7 +24,11 @@ export default function MarketplaceCards({
           <p className="text-sm break-words">
             {p.metadata.chapters.join(" · ")}
           </p>
-          <p className="mt-3 font-bold">{formatMoney(p.metadata.pricePaisa)}</p>
+          <p className="mt-3 font-bold">
+            {p.metadata.pricePaisa === 0
+              ? "ফ্রি"
+              : formatMoney(p.metadata.pricePaisa)}
+          </p>
           <Link
             href={`/teachers/${p.sellerTid}`}
             className="block mt-2 text-sm underline break-all"

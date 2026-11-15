@@ -10,7 +10,12 @@ export const marketMetadataSchema = z.object({
   subject: z.string().trim().min(2).max(100),
   chapters: z.array(z.string().trim().min(1).max(150)).min(1).max(30),
   description: z.string().trim().min(10).max(2000),
-  pricePaisa: z.number().int().min(100).max(5000000),
+  pricePaisa: z
+    .number()
+    .int()
+    .min(0)
+    .max(5000000)
+    .refine((value) => value === 0 || value >= 100),
   rights: z.literal(true),
 });
 export type MarketMetadata = z.infer<typeof marketMetadataSchema>;

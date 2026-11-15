@@ -80,7 +80,9 @@ export default async function MarketDetail({
         {paper.metadata.description}
       </p>
       <p className="text-2xl font-bold">
-        {formatMoney(paper.metadata.pricePaisa)}
+        {paper.metadata.pricePaisa === 0
+          ? "ফ্রি"
+          : formatMoney(paper.metadata.pricePaisa)}
       </p>
       <Link href={`/teachers/${paper.sellerTid}`} className="block underline">
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
@@ -108,7 +110,9 @@ export default async function MarketDetail({
           className="block underline"
           href={`/login?next=/marketplace/${id}`}
         >
-          কিনতে লগইন করুন →
+          {paper.metadata.pricePaisa === 0
+            ? "বিনামূল্যে সংগ্রহ করতে লগইন করুন →"
+            : "কিনতে লগইন করুন →"}
         </Link>
       ) : terms ? (
         <MarketplaceBuy
@@ -116,7 +120,12 @@ export default async function MarketDetail({
           rasterSale={!!readyRaster}
           id={id}
           terms={terms}
-          price={formatMoney(paper.metadata.pricePaisa)}
+          free={paper.metadata.pricePaisa === 0}
+          price={
+            paper.metadata.pricePaisa === 0
+              ? "ফ্রি"
+              : formatMoney(paper.metadata.pricePaisa)
+          }
         />
       ) : (
         <p>নিজের প্রশ্নপত্র অথবা বর্তমানে checkout অনুপলব্ধ।</p>

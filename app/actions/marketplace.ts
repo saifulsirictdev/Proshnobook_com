@@ -60,14 +60,17 @@ export async function submitMarketPaper(
         ),
       ],
       description: form.get("description"),
-      pricePaisa: marketPricePaisa(form.get("price")),
+      pricePaisa:
+        form.get("publicationMode") === "free"
+          ? 0
+          : marketPricePaisa(form.get("price")),
       rights: form.get("rights") === "on",
     });
     if (!metadata.success)
       return {
         ok: false,
         message:
-          "পরীক্ষার ধরন, শিরোনাম, শ্রেণি, বিষয়, অধ্যায়, বিবরণ, ৳১–৫০,০০০ মূল্য এবং বিক্রির অধিকার নিশ্চিত করুন।",
+          "পরীক্ষার ধরন, শিরোনাম, শ্রেণি, বিষয়, অধ্যায়, বিবরণ, বিনামূল্যে অথবা ৳১–৫০,০০০ মূল্য এবং বিক্রির অধিকার নিশ্চিত করুন।",
       };
     const row = await db.setting.findUnique({ where: { key: sourceKey } });
     if (!row) return { ok: false, message: "সংরক্ষিত প্রশ্নপত্র পাওয়া যায়নি।" };

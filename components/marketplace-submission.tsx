@@ -21,7 +21,8 @@ export function MarketplaceSubmission({
   papers: { key: string; name: string }[];
 }) {
   const [grade, setGrade] = useState("6"),
-    [subject, setSubject] = useState("");
+    [subject, setSubject] = useState(""),
+    [publicationMode, setPublicationMode] = useState("paid");
   const chapters = marketChapters(grade, subject);
   const [state, action, pending] = useActionState(submitMarketPaper, {
     ok: false,
@@ -142,17 +143,36 @@ export function MarketplaceSubmission({
         />
       </label>
       <label>
-        মূল্য (টাকা)
-        <input
-          name="price"
+        প্রকাশনার ধরন
+        <select
+          name="publicationMode"
           className={field}
-          type="number"
-          min="1"
-          max="50000"
-          step="0.01"
-          required
-        />
+          value={publicationMode}
+          onChange={(e) => setPublicationMode(e.target.value)}
+        >
+          <option value="paid">মূল্য দিয়ে প্রকাশ</option>
+          <option value="free">বিনামূল্যে প্রকাশ</option>
+        </select>
       </label>
+      {publicationMode === "free" ? (
+        <p>
+          এই প্রশ্নপত্র বিনামূল্যে সংগ্রহ করা যাবে। বিক্রির আয় হবে না। প্রকাশের অনুমোদন ও
+          কনটেন্টের অধিকারের নিয়ম একই থাকবে।
+        </p>
+      ) : (
+        <label>
+          মূল্য (টাকা)
+          <input
+            name="price"
+            className={field}
+            type="number"
+            min="1"
+            max="50000"
+            step="0.01"
+            required
+          />
+        </label>
+      )}
       <label>
         <input name="rights" type="checkbox" required /> কনটেন্ট বিক্রি করার
         অধিকার আমার আছে। অন্যের কেনা প্রশ্নপত্র পুনর্বিক্রি করছি না।

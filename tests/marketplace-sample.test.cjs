@@ -92,7 +92,7 @@ test("unapproved, tampered, wrong identity or malformed snapshots fail closed", 
     (r) => (r.snapshot.questions[0].text = "tampered"),
     (r) => (r.id = "a".repeat(64)),
     (r) => (r.snapshot = null),
-    (r) => (r.metadata.pricePaisa = 0),
+    (r) => (r.metadata.pricePaisa = 1),
   ]) {
     const r = fixture();
     mutate(r);

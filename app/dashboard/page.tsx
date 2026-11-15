@@ -89,7 +89,7 @@ export default async function Dashboard({
       balance={balance}
       admin={!!w?.admin}
     >
-      <main className="tw-main">
+      <main className="tw-main tw-dashboard">
         <PublicPhotoEditor
           tid={user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}
         />

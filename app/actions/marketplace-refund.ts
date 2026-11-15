@@ -131,6 +131,10 @@ export async function reviewMarketDispute(
           copy = await tx.setting.findUnique({ where: { key: copyKey } });
         if (!copy) throw new WalletError("কেনার রসিদ পাওয়া যায়নি।");
         const purchase = validatePurchase(copy.value, d.buyerId, d.paperId);
+        if (purchase.amount === 0)
+          throw new WalletError(
+            "বিনামূল্যের কপিতে টাকা কাটা হয়নি; রিফান্ড প্রযোজ্য নয়। অভিযোগটি অন্য সিদ্ধান্তে নিষ্পত্তি করুন।",
+          );
         const ledger = await tx.setting.findUnique({
           where: { key: marketDebitKey(d.buyerId, d.paperId) },
         });

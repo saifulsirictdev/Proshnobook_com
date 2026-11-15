@@ -47,7 +47,11 @@ export default function MarketplacePaperCards({
           <div className="pb-paper-info">
             <div className="pb-paper-price">
               <span>মূল্য</span>
-              <strong>{formatMoney(p.metadata.pricePaisa)}</strong>
+              <strong>
+                {p.metadata.pricePaisa === 0
+                  ? "ফ্রি"
+                  : formatMoney(p.metadata.pricePaisa)}
+              </strong>
             </div>
             <Link href={`/marketplace/${p.id}`} className="pb-paper-view">
               প্রশ্নপত্র দেখুন <ArrowUpRight size={14} aria-hidden="true" />

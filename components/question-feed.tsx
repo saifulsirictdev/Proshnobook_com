@@ -18,7 +18,12 @@ export default function QuestionFeed({
             <Link href={`/teachers/${profile.tid}`} className="sf-author-link">
               <span className="sf-avatar">
                 {profile.image ? (
-                  <img className="sf-avatar-image" loading="lazy" src={profile.image} alt="" />
+                  <img
+                    className="sf-avatar-image"
+                    loading="lazy"
+                    src={profile.image}
+                    alt=""
+                  />
                 ) : (
                   <UserRound aria-hidden="true" />
                 )}
@@ -68,7 +73,11 @@ export default function QuestionFeed({
           <div className="sf-post-footer">
             <div>
               <small>প্রশ্নপত্রের মূল্য</small>
-              <strong>{formatMoney(paper.metadata.pricePaisa)}</strong>
+              <strong>
+                {paper.metadata.pricePaisa === 0
+                  ? "ফ্রি"
+                  : formatMoney(paper.metadata.pricePaisa)}
+              </strong>
             </div>
             <Link className="sf-primary" href={`/marketplace/${paper.id}`}>
               সম্পূর্ণ প্রশ্নপত্র দেখুন →
