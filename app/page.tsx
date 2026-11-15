@@ -1,3 +1,8 @@
+import { FileText, Database } from "lucide-react";
+import { auth } from "@/auth";
+import { questionFeed } from "@/lib/question-feed";
+import QuestionFeed from "@/components/question-feed";
+import "@/components/question-feed.css";
 import {
   GraduationCap,
   Library,
@@ -36,6 +41,8 @@ export default async function Home({
 }) {
   const grade = homeGrade((await searchParams)?.grade);
   const books = marketSubjects(grade);
+  const viewerId = (await auth())?.user?.id;
+  const feed = await questionFeed({ grade, viewerId }).catch(() => null);
   const sections: {
     subject: string;
     papers: Awaited<ReturnType<typeof marketCatalogPage>>["papers"];
@@ -65,6 +72,22 @@ export default async function Home({
   }
   return (
     <div className="pb-home">
+      <section className="sf-create" aria-label="প্রশ্নপত্র তৈরি করুন">
+        <Link href="/question-builder">
+          <Database aria-hidden="true" />
+          ডাটাবেজ থেকে প্রশ্ন তৈরি করুন
+        </Link>
+        <Link href="/ready-papers">
+          <FileText aria-hidden="true" />
+          PDF থেকে প্রশ্ন তৈরি করুন
+        </Link>
+      </section>
+      <div className="sf-feed-heading">
+        <h2>দেশের শিক্ষকদের তৈরি প্রশ্নপত্র দেখুন</h2>
+        <Link href="/teachers/proshnobook">
+          প্রশ্নবুক.কম-এর অফিসিয়াল প্রোফাইল ↗
+        </Link>
+      </div>
       <nav
         className="pb-class-nav pb-home-class-menu"
         aria-label="শ্রেণি নির্বাচন"
@@ -91,18 +114,33 @@ export default async function Home({
             {grade === "SSC" || grade === "HSC" ? "" : " শ্রেণির"} প্রশ্নপত্র
           </h1>
           <p>
-            আপনার বিষয় বেছে নিন। অর্ধ বার্ষিক, বার্ষিক ও নির্বাচনী পরীক্ষার অনুমোদিত
-            প্রশ্নপত্রের পরিচিতি এক জায়গায়।
+            আপনার বিষয় বেছে নিন। অধ্যায় ভিত্তিক, অর্ধ বার্ষিক, বার্ষিক ও নির্বাচনী
+            পরীক্ষার অনুমোদিত প্রশ্নপত্রের পরিচিতি এক জায়গায়।
           </p>
         </div>
         <Link href="/dashboard" className="pb-profile-link">
           আমার প্রোফাইল ↗
         </Link>
       </header>
-      <p className="pb-notice">
-        ক্যাটালগ প্রস্তুতি পর্যায়ে আছে। কার্ডগুলো A4-অনুপাতের পরিচিতি—মূল প্রশ্নপত্রের নমুনা
-        নয়। কেনাকাটা এখনও চালু হয়নি; কোনো টাকা কাটা হবে না।
-      </p>
+      <section aria-label="প্রশ্নপত্রের ফিড">
+        {feed ? (
+          <>
+            <QuestionFeed posts={feed.posts} />
+            {!feed.posts.length && (
+              <p className="pb-empty">এই শ্রেণিতে এখনও প্রকাশিত প্রশ্নপত্র নেই।</p>
+            )}
+            <div className="pb-more-row">
+              <Link className="pb-more" href={`/marketplace?grade=${grade}`}>
+                আরও প্রশ্নপত্র দেখুন →
+              </Link>
+            </div>
+          </>
+        ) : (
+          <p role="status">
+            প্রশ্নপত্রের ফিড লোড হয়নি। নিচের বিষয়ভিত্তিক তালিকা দেখুন।
+          </p>
+        )}
+      </section>
       {sections.map((section, index) => (
         <section
           className="pb-subject"

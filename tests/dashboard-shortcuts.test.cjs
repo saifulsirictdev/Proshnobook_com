@@ -9,6 +9,8 @@ async function render(role) {
   const m = new Module("dashboard", module);
   m.paths = module.paths;
   const mocks = {
+    "@/components/social-profile-controls": { PublicPhotoEditor: () => null },
+    "@/components/question-feed.css": {},
     "@/auth": { auth: async () => ({ user: { id: "u" } }) },
     "@/lib/db": {
       db: {

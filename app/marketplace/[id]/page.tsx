@@ -1,3 +1,6 @@
+import PaperSocialControls from "@/components/paper-social-controls";
+import { paperSocialSummary } from "@/lib/paper-social";
+import "@/components/question-feed.css";
 import { rasterSnapshot } from "@/lib/marketplace-raster";
 import MarketplaceRasterPreview from "@/components/marketplace-raster-preview";
 import Link from "next/link";
@@ -55,6 +58,7 @@ export default async function MarketDetail({
     if (seller && record.ownerId !== user?.id)
       terms = purchaseTerms(record, platformSale ? "PLATFORM" : undefined);
   } catch {}
+  const social = await paperSocialSummary(id, user?.id);
   return (
     <main className="mx-auto max-w-3xl p-5 space-y-4">
       <Link href="/marketplace">← মার্কেটপ্লেস</Link>
@@ -117,6 +121,7 @@ export default async function MarketDetail({
       ) : (
         <p>নিজের প্রশ্নপত্র অথবা বর্তমানে checkout অনুপলব্ধ।</p>
       )}
+      <PaperSocialControls paperId={id} summary={social} />
     </main>
   );
 }

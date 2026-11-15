@@ -1,3 +1,6 @@
+import { PublicPhotoEditor } from "@/components/social-profile-controls";
+import { teacherTid } from "@/lib/wallet";
+import "@/components/question-feed.css";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { auth } from "@/auth";
@@ -26,7 +29,7 @@ function getGreeting() {
       timeZone: "Asia/Dhaka",
       hour: "numeric",
       hour12: false,
-    })
+    }),
   );
   const hour = hourRaw % 24;
   if (hour >= 5 && hour < 12) return { text: "সুপ্রভাত", icon: "🌅" };
@@ -52,7 +55,10 @@ function getLevelInfo(xp: number) {
   const current = LEVELS[idx];
   const next = LEVELS[idx + 1] ?? null;
   const progress = next
-    ? Math.min(100, Math.round(((xp - current.min) / (next.min - current.min)) * 100))
+    ? Math.min(
+        100,
+        Math.round(((xp - current.min) / (next.min - current.min)) * 100),
+      )
     : 100;
   return {
     levelNo: idx + 1,
@@ -78,7 +84,9 @@ export default async function ProfilePage() {
     return (
       <Shell>
         <div className="text-5xl">🔐</div>
-        <h1 className="mt-4 text-xl font-bold text-slate-800">আপনার প্রোফাইল দেখুন</h1>
+        <h1 className="mt-4 text-xl font-bold text-slate-800">
+          আপনার প্রোফাইল দেখুন
+        </h1>
         <p className="mt-2 text-sm text-slate-500">
           প্রোফাইল দেখতে Google দিয়ে লগইন করুন।
         </p>
@@ -89,7 +97,9 @@ export default async function ProfilePage() {
     );
   }
 
-  const user = await db.user.findUnique({ where: { email: session.user.email } });
+  const user = await db.user.findUnique({
+    where: { email: session.user.email },
+  });
 
   if (!user) {
     return (
@@ -128,16 +138,18 @@ export default async function ProfilePage() {
         },
       });
       return better + 1;
-    })
+    }),
   );
 
   const examCount = attempts.length;
   const totalScore = attempts.reduce((sum, a) => sum + a.score, 0);
   const percents = attempts.map((a) =>
-    a.total > 0 ? Math.round((a.score / a.total) * 100) : 0
+    a.total > 0 ? Math.round((a.score / a.total) * 100) : 0,
   );
   const avgPercent =
-    examCount > 0 ? Math.round(percents.reduce((s, p) => s + p, 0) / examCount) : 0;
+    examCount > 0
+      ? Math.round(percents.reduce((s, p) => s + p, 0) / examCount)
+      : 0;
   const bestPercent = examCount > 0 ? Math.max(...percents) : 0;
 
   const xp = examCount * 20 + totalScore * 5;
@@ -174,6 +186,13 @@ export default async function ProfilePage() {
           </div>
         )}
         <div className="min-w-0 flex-1">
+          {user && <PublicPhotoEditor tid={teacherTid(user.id)} />}
+          <Link
+            href="/dashboard/feed-saved"
+            className="text-indigo-700 underline"
+          >
+            ফিডের বুকমার্ক →
+          </Link>
           <ProfileNameEditor
             initialName={displayName}
             greetingText={greeting.text}
@@ -214,7 +233,9 @@ export default async function ProfilePage() {
       {/* Stats + Premium */}
       <div className="mt-4 grid gap-4 sm:grid-cols-5">
         <div className="rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 p-4 text-white shadow sm:col-span-3">
-          <div className="text-xs font-semibold opacity-80">আপনার পারফরম্যান্স</div>
+          <div className="text-xs font-semibold opacity-80">
+            আপনার পারফরম্যান্স
+          </div>
           <div className="mt-3 grid grid-cols-3 gap-2 text-center">
             <div className="rounded-xl bg-white/15 p-2">
               <div className="text-2xl font-extrabold">{bn(examCount)}</div>
@@ -288,7 +309,8 @@ export default async function ProfilePage() {
                       {t?.title ?? "মুছে ফেলা টেস্ট"}
                     </div>
                     <div className="truncate text-xs text-slate-500">
-                      {t?.subject ? `${t.subject} • ` : ""}⏱ {formatDuration(a.timeSpent)}
+                      {t?.subject ? `${t.subject} • ` : ""}⏱{" "}
+                      {formatDuration(a.timeSpent)}
                     </div>
                     <Link
                       href={`/model-test/${a.testId}/leaderboard`}
@@ -300,7 +322,10 @@ export default async function ProfilePage() {
                   <div className="shrink-0 text-right">
                     <div className="text-base font-bold text-emerald-600">
                       {bn(a.score)}
-                      <span className="text-xs text-slate-400"> / {bn(a.total)}</span>
+                      <span className="text-xs text-slate-400">
+                        {" "}
+                        / {bn(a.total)}
+                      </span>
                     </div>
                     <div className="text-xs font-semibold text-slate-500">
                       {bn(percent)}%

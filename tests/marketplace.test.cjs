@@ -490,3 +490,34 @@ test("ADMIN ready export publishes directly and cannot replace an approved snaps
   assert.equal((await x.actions.submitMarketPaper({}, f)).ok, false);
   assert.equal(x.store.get(lib.MARKET_PREFIX + id), old);
 });
+
+test("only fresh ADMIN can explicitly publish as official; teacher requests never gain the official identity", async () => {
+  const teacher = setup(),
+    f = teacher.form();
+  f.set("official", "on");
+  assert.equal((await teacher.actions.submitMarketPaper({}, f)).ok, true);
+  const tid = lib.marketSubmissionId("u", "qbpaper:u:a");
+  assert.notEqual(
+    JSON.parse(teacher.store.get(lib.MARKET_PREFIX + tid)).official,
+    true,
+  );
+  const admin = setup();
+  admin.role("u", "ADMIN");
+  const af = admin.form();
+  af.set("official", "on");
+  assert.equal((await admin.actions.submitMarketPaper({}, af)).ok, true);
+  assert.equal(
+    JSON.parse(admin.store.get(lib.MARKET_PREFIX + tid)).official,
+    true,
+  );
+  const personal = setup();
+  personal.role("u", "ADMIN");
+  assert.equal(
+    (await personal.actions.submitMarketPaper({}, personal.form())).ok,
+    true,
+  );
+  assert.notEqual(
+    JSON.parse(personal.store.get(lib.MARKET_PREFIX + tid)).official,
+    true,
+  );
+});
