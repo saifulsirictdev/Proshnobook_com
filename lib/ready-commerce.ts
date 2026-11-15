@@ -21,7 +21,7 @@ export function readyUnits(pages: number) {
 export const readySnapshotSchema = z.object({
   edits: z
     .record(z.string().regex(/^([1-9]|[1-9]\d|100)$/), pageEditSchema)
-    .default({}),
+    .prefault({}),
   header: z.object({
     school: z.string().max(160),
     exam: z.string().max(160),

@@ -1,40 +1,56 @@
 import { NextResponse } from "next/server";
+import { auth } from "@/auth";
 import { parseBanglaQuestions } from "@/lib/question-parser";
-// @ts-ignore
-import pdfParse from "pdf-parse";
+import { extractPdfText } from "@/lib/pdf-mcq/extract";
 
+export const runtime = "nodejs";
 export const maxDuration = 60;
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
+  const session = await auth();
+  if (!session?.user?.id)
+    return NextResponse.json(
+      { success: false, error: "আগে লগইন করুন।" },
+      { status: 401 },
+    );
   try {
     const formData = await req.formData();
-    const file = formData.get("file") as File | null;
-    const directText = formData.get("text") as string | null;
-
+    const file = formData.get("file");
+    const directText = formData.get("text");
     let fullText = "";
-
-    // ১. যদি সরাসরি টেক্সট পেস্ট করা হয়ে থাকে
-    if (directText && directText.trim().length > 10) {
+    if (typeof directText === "string" && directText.trim().length > 10) {
+      if (directText.length > 200_000)
+        return NextResponse.json(
+          { success: false, error: "টেক্সট বেশি বড়। ভাগ করে দিন।" },
+          { status: 400 },
+        );
       fullText = directText;
-    } 
-    // ২. যদি PDF ফাইল আপলোড করা হয়ে থাকে
-    else if (file) {
-      const arrayBuffer = await file.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-      const data = await pdfParse(buffer);
-      fullText = data.text || "";
+    } else if (file instanceof File) {
+      if (file.size < 5 || file.size > 10_000_000)
+        return NextResponse.json(
+          { success: false, error: "PDF সর্বোচ্চ ১০ MB দিন।" },
+          { status: 400 },
+        );
+      const buffer = await file.arrayBuffer();
+      if (new TextDecoder().decode(new Uint8Array(buffer, 0, 5)) !== "%PDF-")
+        return NextResponse.json(
+          { success: false, error: "সঠিক PDF দিন।" },
+          { status: 400 },
+        );
+      fullText = await extractPdfText(buffer);
     } else {
-      return NextResponse.json({ success: false, error: "কোনো ফাইল বা টেক্সট পাওয়া যায়নি।" }, { status: 400 });
+      return NextResponse.json(
+        { success: false, error: "কোনো ফাইল বা টেক্সট পাওয়া যায়নি।" },
+        { status: 400 },
+      );
     }
-
-    if (!fullText.trim()) {
-      return NextResponse.json({ success: false, error: "PDF থেকে কোনো টেক্সট পড়া সম্ভব হয়নি।" }, { status: 400 });
-    }
-
-    // 🎯 AI ছাড়া পিওর কোড দিয়ে পার্স করা
+    if (!fullText.trim())
+      return NextResponse.json(
+        { success: false, error: "PDF থেকে কোনো টেক্সট পড়া সম্ভব হয়নি।" },
+        { status: 400 },
+      );
     const parsedData = parseBanglaQuestions(fullText);
-
     return NextResponse.json({
       success: true,
       rawLength: fullText.length,
@@ -42,8 +58,14 @@ export async function POST(req: Request) {
       shortQuestions: parsedData.shortQuestions,
       cqs: parsedData.cqs,
     });
-  } catch (err: any) {
-    console.error("PDF Parse API Error:", err);
-    return NextResponse.json({ success: false, error: err.message || "PDF প্রসেস করতে ত্রুটি হয়েছে।" }, { status: 500 });
+  } catch {
+    return NextResponse.json(
+      {
+        success: false,
+        error:
+          "PDF প্রসেস করা যায়নি। সর্বোচ্চ ১০০ পৃষ্ঠার সঠিক PDF বা সরাসরি টেক্সট দিন।",
+      },
+      { status: 400 },
+    );
   }
 }

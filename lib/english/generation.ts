@@ -270,7 +270,7 @@ export function englishSchemaDiagnostic(error: z.ZodError): string {
           .map((part) =>
             typeof part === "number"
               ? String(part)
-              : fields.has(part)
+              : typeof part === "string" && fields.has(part)
                 ? part
                 : "field",
           )

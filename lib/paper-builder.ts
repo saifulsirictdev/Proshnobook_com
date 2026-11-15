@@ -24,7 +24,7 @@ export const settingsSchema = z.object({
   version: z.literal(2).default(2),
   header: paperHeaderSchema
     .catch(() => paperHeaderSchema.parse({}))
-    .default({}),
+    .prefault({}),
   show: z
     .object({
       title: bool(true),
@@ -56,7 +56,7 @@ export const settingsSchema = z.object({
       watermark: bool(),
       autoSet: bool(),
     })
-    .default({}),
+    .prefault({}),
   info: z
     .object({
       logo: z.string().max(200000).catch("").default(""),
@@ -76,7 +76,7 @@ export const settingsSchema = z.object({
       instr: text("[প্রশ্নপত্রে কোনো প্রকার দাগ/চিহ্ন দেয়া যাবে না]"),
       watermark: text("খসড়া"),
     })
-    .default({}),
+    .prefault({}),
   cfg: z
     .object({
       format: z.enum(["q", "qa", "ans", "sug"]).catch("q").default("q"),
@@ -133,13 +133,14 @@ export const settingsSchema = z.object({
       shortAnswer: number(0, 0, 300),
       mcqAnswer: number(0, 0, 300),
     })
-    .default({}),
+    .prefault({}),
   excludedIds: z.array(z.string()).max(300).catch([]).default([]),
   edits: z
     .record(
+      z.string(),
       z.object({
         text: text(),
-        options: z.record(z.string()).optional(),
+        options: z.record(z.string(), z.string()).optional(),
         stimulus: z.string().optional(),
         subQuestions: z
           .object({
@@ -151,9 +152,10 @@ export const settingsSchema = z.object({
           .optional(),
       }),
     )
-    .default({}),
+    .prefault({}),
   attachments: z
     .record(
+      z.string(),
       z.object({
         image: text(),
         size: z.number().int().min(80).max(600).optional(),
@@ -161,7 +163,7 @@ export const settingsSchema = z.object({
         important: bool(),
       }),
     )
-    .default({}),
+    .prefault({}),
   seed: number(0, 0, 1000000),
   setName: z.enum(["ক", "খ"]).catch("ক").default("ক"),
 });

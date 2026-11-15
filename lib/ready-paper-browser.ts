@@ -3,23 +3,8 @@ import {
   reduceBlueWatermark,
   type PageEdit,
 } from "./ready-papers";
-let pdfLoader: Promise<any> | undefined;
-export async function loadReadyPdfEngine() {
-  if (!pdfLoader)
-    pdfLoader = new Promise((resolve, reject) => {
-      const script = document.createElement("script");
-      script.src = "/vendor/pdfjs/pdf.min.js";
-      script.onload = () => resolve((window as any).pdfjsLib);
-      script.onerror = () => {
-        pdfLoader = undefined;
-        reject(Error("PDF engine লোড হয়নি।"));
-      };
-      document.head.appendChild(script);
-    });
-  const pdfjs = await pdfLoader;
-  pdfjs.GlobalWorkerOptions.workerSrc = "/vendor/pdfjs/pdf.worker.min.js";
-  return pdfjs;
-}
+import { loadBrowserPdfEngine } from "./pdf-engine-browser";
+export const loadReadyPdfEngine = loadBrowserPdfEngine;
 export async function loadPdfImages(
   url: string,
   onProgress: (n: number, total: number) => void,
@@ -216,7 +201,7 @@ function openLocal(): Promise<IDBDatabase> {
 
 /** Text layer only; not OCR. Legacy Bengali fonts may produce unreadable text. */
 export async function readReadyPageText(url: string, page: number) {
-  const pdfjs = await pdfLoader;
+  const pdfjs = await loadReadyPdfEngine();
   if (!pdfjs) throw Error("আগে PDF খুলুন।");
   const task = pdfjs.getDocument({
     url,

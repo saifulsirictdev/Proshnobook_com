@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  serverExternalPackages: ["pdfjs-dist"],
   async headers() {
     return [
       {
@@ -17,6 +18,7 @@ const nextConfig = {
     ];
   },
   outputFileTracingIncludes: {
+    "/api/qb/extract-pdf": ["./node_modules/pdfjs-dist/legacy/build/pdf.worker.mjs"],
     "/api/marketplace/*/sample": ["./public/fonts/HindSiliguri-Regular.ttf"],
   },
   experimental: {

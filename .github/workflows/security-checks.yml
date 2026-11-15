@@ -30,6 +30,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Production dependency advisory gate
+        run: npm audit --omit=dev --audit-level=high
       - run: npx prisma generate
       - run: npm run typecheck
       - name: Security tests (report failing TAP blocks)
@@ -48,5 +50,13 @@ jobs:
         run: node scripts/auth-attempts-postgres-check.cjs
         env:
           AUTH_RATE_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+      - name: PDF browser/worker/render/print regression (local fixtures only)
+        shell: bash
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pdf-browser-tools" --ignore-scripts --no-package-lock playwright-core@1.65.1
+          export NODE_PATH="$RUNNER_TEMP/pdf-browser-tools/node_modules"
+          export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
+          test -x "$CHROMIUM_EXECUTABLE_PATH"
+          node scripts/pdf-browser-check.cjs
       - name: Production build (no production credentials)
         run: npm run build

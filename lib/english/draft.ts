@@ -27,7 +27,7 @@ export const englishDraftSchema = z
         marginLeft: z.number().min(0).max(150).default(53),
         marginRight: z.number().min(0).max(150).default(53),
       })
-      .default({}),
+      .prefault({}),
     updatedAt: z.string().datetime(),
   })
   .strict();
