@@ -53,5 +53,7 @@ export async function register(_: string, fd: FormData): Promise<string> {
 }
 
 export async function googleLogin(fd: FormData): Promise<void> {
-  await signIn("google", { redirectTo: safeLoginRedirect(fd.get("next")) });
+  await signIn("google", {
+    redirectTo: `/auth/landing?${new URLSearchParams({ next: safeLoginRedirect(fd.get("next")) })}`,
+  });
 }

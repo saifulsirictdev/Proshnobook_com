@@ -28,6 +28,10 @@ export default function QuestionFeed({
                   {profile.name}
                   {profile.verified && (
                     <BadgeCheck
+                      fill="currentColor"
+                      stroke="white"
+                      strokeWidth={2.8}
+                      role="img"
                       className="sf-verified"
                       aria-label={
                         profile.official

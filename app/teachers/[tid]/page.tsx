@@ -52,6 +52,19 @@ export default async function TeacherPage({
     <main className="mx-auto max-w-4xl p-4 space-y-5">
       <Link href="/">← প্রশ্নপত্রের ফিড</Link>
       <SocialProfileHeader profile={profile} />
+      {viewer?.role === "ADMIN" && tid === OFFICIAL_PROFILE && (
+        <nav aria-label="অ্যাডমিনের ব্যক্তিগত টুল" className="flex flex-wrap gap-3">
+          <Link className="sf-primary" href="/admin">
+            ADMIN panel →
+          </Link>
+          <Link className="sf-primary" href="/dashboard">
+            আমার Dashboard / Wallet →
+          </Link>
+          <Link className="sf-primary" href="/admin/social">
+            মন্তব্য ও রিপোর্ট যাচাই →
+          </Link>
+        </nav>
+      )}
       {profile.isSelf && (
         <>
           <Link className="sf-primary" href="/dashboard">
