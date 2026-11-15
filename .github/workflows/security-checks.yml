@@ -50,6 +50,15 @@ jobs:
         run: node scripts/auth-attempts-postgres-check.cjs
         env:
           AUTH_RATE_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+      - name: Full-schema synthetic backup/restore and vault recovery rehearsal
+        run: |
+          node scripts/disposable-restore-check.cjs > "$RUNNER_TEMP/restore-result.json"
+          cat "$RUNNER_TEMP/restore-result.json"
+          echo '### Synthetic disposable restore rehearsal (not production restore)' >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/restore-result.json" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          RESTORE_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+          RESTORE_TEST_CONTAINER: ${{ job.services['auth-rate-postgres'].id }}
       - name: PDF browser/worker/render/print regression (local fixtures only)
         shell: bash
         run: |
