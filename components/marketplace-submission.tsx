@@ -157,6 +157,12 @@ export function MarketplaceSubmission({
         <input name="rights" type="checkbox" required /> কনটেন্ট বিক্রি করার
         অধিকার আমার আছে। অন্যের কেনা প্রশ্নপত্র পুনর্বিক্রি করছি না।
       </label>
+      {admin && (
+        <label>
+          <input type="checkbox" name="official" />
+          প্রশ্নবুক.কম-এর অফিসিয়াল প্রোফাইল থেকে প্রকাশ করুন (ব্যক্তিগত প্রোফাইল নয়)
+        </label>
+      )}
       <button
         disabled={pending || !papers.length}
         className="rounded bg-indigo-700 p-3 font-bold text-white disabled:opacity-50"

@@ -1,13 +1,23 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { auth } from "@/auth";
 import { db } from "@/lib/db";
-import { marketCatalog } from "@/lib/marketplace-catalog-data";
-import { filterMarketPapers } from "@/lib/marketplace-catalog";
-import { teacherTid } from "@/lib/wallet";
-import MarketplaceCards from "@/components/marketplace-cards";
+import {
+  publicProfile,
+  profileOwner,
+  OFFICIAL_PROFILE,
+} from "@/lib/social-profiles";
+import { questionFeed } from "@/lib/question-feed";
+import QuestionFeed from "@/components/question-feed";
+import SocialProfileHeader from "@/components/social-profile-header";
+import {
+  VerificationControl,
+  PublicPhotoEditor,
+} from "@/components/social-profile-controls";
+import "@/components/question-feed.css";
 export const dynamic = "force-dynamic";
 export const metadata = {
-  title: "শিক্ষকের প্রকাশ্য প্রোফাইল",
+  title: "প্রশ্নপত্রের প্রকাশ্য প্রোফাইল",
   robots: { index: false },
 };
 export default async function TeacherPage({
@@ -17,47 +27,57 @@ export default async function TeacherPage({
   params: Promise<{ tid: string }>;
   searchParams: Promise<{ after?: string }>;
 }) {
-  const { tid } = await params;
-  if (!/^QB-[A-F0-9]{20}$/.test(tid)) notFound();
-  const identity = await db.setting.findUnique({
-    where: { key: `teacher:tid:${tid}` },
-  });
-  if (!identity || teacherTid(identity.value) !== tid) notFound();
-  const user = await db.user.findUnique({
-    where: { id: identity.value },
-    select: { name: true },
-  });
-  if (!user) notFound();
+  const { tid } = await params,
+    viewerId = (await auth())?.user?.id;
+  let profile, owner;
+  try {
+    owner = await profileOwner(tid);
+    profile = await publicProfile(tid, viewerId);
+  } catch {
+    notFound();
+  }
+  const viewer = viewerId
+    ? await db.user.findUnique({
+        where: { id: viewerId },
+        select: { role: true },
+      })
+    : null;
   const { after } = await searchParams;
-  const { papers, next } = await marketCatalog(
-    typeof after === "string" ? after : undefined,
-  );
-  const owned = filterMarketPapers(papers, { sellerTid: tid });
+  const feed = await questionFeed({
+    ...(tid === OFFICIAL_PROFILE ? { official: true } : { ownerId: owner!.id }),
+    after,
+    viewerId,
+  });
   return (
-    <main className="mx-auto max-w-5xl p-5 space-y-5">
-      <Link href="/marketplace">← মার্কেটপ্লেস</Link>
-      <header className="rounded-2xl border bg-indigo-50 p-6">
-        <h1 className="text-3xl font-bold">{user.name || "শিক্ষক"}</h1>
-        <p className="break-all mt-2">TID: {tid}</p>
-        <p>শিক্ষকের প্রকাশ্য প্রশ্নপত্র প্রোফাইল</p>
-      </header>
-      <h2 className="text-xl font-bold">অনুমোদিত প্রশ্নপত্র</h2>
-      <MarketplaceCards papers={owned} />
-      {!owned.length && (
-        <p>বর্তমান ক্যাটালগ পাতায় এই শিক্ষকের অনুমোদিত প্রশ্নপত্র নেই।</p>
+    <main className="mx-auto max-w-4xl p-4 space-y-5">
+      <Link href="/">← প্রশ্নপত্রের ফিড</Link>
+      <SocialProfileHeader profile={profile} />
+      {profile.isSelf && (
+        <>
+          <Link className="sf-primary" href="/dashboard">
+            আমার Dashboard / সংরক্ষিত কপি / Wallet →
+          </Link>
+          <PublicPhotoEditor tid={tid} />
+        </>
       )}
-      <p className="text-sm text-slate-600">
-        এই তালিকা ক্যাটালগের বর্তমান ২০০ রেকর্ডের পাতায় সীমাবদ্ধ। কেনাকাটা এখনও চালু
-        হয়নি।
-      </p>
-      {next && (
+      {viewer?.role === "ADMIN" && tid !== OFFICIAL_PROFILE && (
+        <VerificationControl tid={tid} />
+      )}
+      <h2 className="text-xl font-bold">প্রকাশিত প্রশ্নপত্র</h2>
+      <QuestionFeed posts={feed.posts} />
+      {!feed.posts.length && <p>এখনও প্রকাশিত প্রশ্নপত্র নেই।</p>}
+      {feed.next && (
         <Link
-          className="inline-block rounded border p-3"
-          href={`/teachers/${tid}?${new URLSearchParams({ after: next })}`}
+          className="sf-primary"
+          href={`/teachers/${tid}?${new URLSearchParams({ after: feed.next })}`}
         >
-          পরবর্তী ক্যাটালগ পাতা →
+          আরও প্রশ্নপত্র →
         </Link>
       )}
+      <p className="text-sm text-slate-500">
+        এটি প্রকাশ্য প্রোফাইল। ব্যক্তিগত সংরক্ষিত/কেনা কপি, যোগাযোগ ও আর্থিক তথ্য এখানে
+        দেখানো হয় না।
+      </p>
     </main>
   );
 }

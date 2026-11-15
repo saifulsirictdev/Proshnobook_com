@@ -18,6 +18,7 @@ export type MarketSubmission = {
   version: 1;
   id: string;
   ownerId: string;
+  official?: boolean;
   sourceKey: string;
   source: "DATABASE" | "READY_PDF";
   status:

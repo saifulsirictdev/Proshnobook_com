@@ -1,3 +1,5 @@
+import { PublicPhotoEditor } from "@/components/social-profile-controls";
+import "@/components/question-feed.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -88,10 +90,22 @@ export default async function Dashboard({
       admin={!!w?.admin}
     >
       <main className="tw-main">
+        <PublicPhotoEditor tid={teacherTid(user.id)} />
+        <Link className="tw-link" href="/dashboard/feed-saved">
+          ফিডের বুকমার্ক দেখুন →
+        </Link>
+        {user.role === "ADMIN" && (
+          <Link className="tw-link" href="/admin/social">
+            মন্তব্য যাচাই ও রিপোর্ট →
+          </Link>
+        )}
         <section className="tw-hero">
           <span className="tw-eyebrow">আপনার প্রশ্ন তৈরির কর্মক্ষেত্র</span>
           <p>{greeting()},</p>
           <h1>{user.name || "স্বাগতম"}</h1>
+          <Link className="tw-link" href={`/teachers/${teacherTid(user.id)}`}>
+            আমার প্রকাশ্য শিক্ষক প্রোফাইল →
+          </Link>
           <p className="tw-muted">
             আপনার TID: <strong>{teacherTid(user.id)}</strong>
           </p>

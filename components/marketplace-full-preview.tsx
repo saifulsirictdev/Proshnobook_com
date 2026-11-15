@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useId } from "react";
 import { toPng } from "html-to-image";
 import type { FullMarketPreview } from "@/lib/marketplace-full-preview";
 import PaperPreview from "@/components/paper-builder/preview";
@@ -12,10 +12,13 @@ import "./marketplace-full-preview.css";
  * Flattened branded images are a presentation/branding feature, not DRM. */
 export default function MarketplaceFullPreview({
   model,
+  firstPageOnly = false,
 }: {
   model: FullMarketPreview | null;
+  firstPageOnly?: boolean;
 }) {
   const source = useRef<HTMLDivElement>(null);
+  const headingId = useId();
   const [pages, setPages] = useState<string[]>([]),
     [error, setError] = useState(false),
     [retry, setRetry] = useState(0);
@@ -45,7 +48,7 @@ export default function MarketplaceFullPreview({
         const sheets = [...root.querySelectorAll<HTMLElement>(".paper-sheet")];
         if (!sheets.length) throw Error("No pages");
         const images: string[] = [];
-        for (const sheet of sheets) {
+        for (const sheet of firstPageOnly ? sheets.slice(0, 1) : sheets) {
           const png = await toPng(sheet, {
             pixelRatio: 1,
             backgroundColor: "#fff",
@@ -111,17 +114,16 @@ export default function MarketplaceFullPreview({
       observer.disconnect();
       if (timer) clearTimeout(timer);
     };
-  }, [model, retry]);
+  }, [model, retry, firstPageOnly]);
   if (!model?.sections.length)
     return <p role="status">এই প্রশ্নপত্রের প্রিভিউ এখন দেখানো যাচ্ছে না।</p>;
   const first = model.sections[0],
     [width] = paperDimensions(model.settings);
   return (
-    <section
-      className="market-full-preview"
-      aria-labelledby="market-full-title"
-    >
-      <h2 id="market-full-title">সম্পূর্ণ প্রশ্নপত্র</h2>
+    <section className="market-full-preview" aria-labelledby={headingId}>
+      <h2 id={headingId}>
+        {firstPageOnly ? "প্রশ্নপত্রের প্রথম পৃষ্ঠা" : "সম্পূর্ণ প্রশ্নপত্র"}
+      </h2>
       {!pages.length && !error && (
         <p role="status">প্রশ্নপত্রের পৃষ্ঠাগুলো প্রস্তুত হচ্ছে…</p>
       )}
