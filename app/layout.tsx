@@ -1,4 +1,4 @@
-import { publicSiteOrigin } from "@/lib/brand";
+import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import "./globals.css";
 import "@/components/ui-typography.css";
 import "@/components/design-system.css";
@@ -21,7 +21,7 @@ import MobileBottomNav from "@/components/MobileBottomNav";
 import InstallPrompt from "@/components/InstallPrompt";
 import { SessionProvider } from "next-auth/react";
 
-// প্রশ্নোদয়: সাইটের মূল ঠিকানা (Vercel-এ SITE_URL সেট থাকলে সেটি, না হলে এই ডিফল্ট)
+// Search metadata uses the canonical public domain, not deployment or OAuth URLs.
 // Keep native pinch zoom available; never force a desktop-width viewport.
 export const viewport: Viewport = {
   width: "device-width",
@@ -29,7 +29,7 @@ export const viewport: Viewport = {
   userScalable: true,
 };
 
-const SITE_URL = publicSiteOrigin(process.env.SITE_URL);
+const SITE_URL = PUBLIC_SITE_ORIGIN;
 
 // 🎯 ১. আদর্শলিপিতে শুধুমাত্র বাংলা ইউনিকোড রেঞ্জ (প্রশ্নপত্র ছাপার জন্য)
 const bn = localFont({

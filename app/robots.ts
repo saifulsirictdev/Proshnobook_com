@@ -1,4 +1,4 @@
-import { publicSiteOrigin } from "@/lib/brand";
+import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin/", "/api/"], // অ্যাডমিন ও এপিআই বাদে সব পেজ গুগল পড়তে পারবে
     },
-    sitemap: `${publicSiteOrigin(process.env.SITE_URL)}/sitemap.xml`,
+    sitemap: `${PUBLIC_SITE_ORIGIN}/sitemap.xml`,
   };
 }

@@ -43,3 +43,6 @@ export function publicSiteOrigin(configured?: string) {
     return "https://question-maker-com-g6ec.vercel.app";
   }
 }
+
+/** Canonical indexing origin. Deliberately independent of deployment/OAuth environment URLs. */
+export const PUBLIC_SITE_ORIGIN = `https://${BRAND.domain}`;
