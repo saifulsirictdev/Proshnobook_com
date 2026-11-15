@@ -8,6 +8,21 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      auth-rate-postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: auth_rate
+          POSTGRES_PASSWORD: disposable_ci_only
+          POSTGRES_DB: auth_rate_test
+        ports:
+          - 5439:5432
+        options: >-
+          --health-cmd "pg_isready -U auth_rate -d auth_rate_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,3 +43,10 @@ jobs:
             awk '/^not ok / { remaining=30 } remaining>0 { print "::error::" $0; remaining-- }' "$RUNNER_TEMP/security-tests.log"
           fi
           exit "$status"
+
+      - name: Real PostgreSQL auth concurrency regression (disposable only)
+        run: node scripts/auth-attempts-postgres-check.cjs
+        env:
+          AUTH_RATE_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+      - name: Production build (no production credentials)
+        run: npm run build

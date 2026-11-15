@@ -1,5 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  poweredByHeader: false,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          // Same-origin print/preview frames remain permitted; unrelated sites cannot frame account pages.
+          ...(process.env.VERCEL_ENV === "production"
+            ? [{ key: "X-Frame-Options", value: "SAMEORIGIN" }]
+            : []),
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        ],
+      },
+    ];
+  },
   outputFileTracingIncludes: {
     "/api/marketplace/*/sample": ["./public/fonts/HindSiliguri-Regular.ttf"],
   },

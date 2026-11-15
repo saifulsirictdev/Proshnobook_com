@@ -1,5 +1,5 @@
 import "server-only";
-import sharp from "sharp";
+import sharp, { type OverlayOptions } from "sharp";
 import path from "node:path";
 import type { MarketSample } from "@/lib/marketplace-sample";
 const escape = (text: string) =>
@@ -38,7 +38,7 @@ export async function marketSampleImage(sample: MarketSample) {
     })
       .png()
       .toBuffer();
-  const layers: sharp.OverlayOptions[] = [];
+  const layers: OverlayOptions[] = [];
   layers.push({
     input: await textImage("প্রশ্নবুক.কম · সীমিত নমুনা", 28, 800, "#243d67"),
     left: 40,

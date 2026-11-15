@@ -1,4 +1,5 @@
 "use server";
+import { reserveAuthAttempt } from "@/lib/auth-attempts";
 import { safeLoginRedirect } from "@/lib/login-redirect";
 import bcrypt from "bcryptjs";
 import { AuthError } from "next-auth";
@@ -7,8 +8,8 @@ import { signIn } from "@/auth";
 import { db } from "@/lib/db";
 
 const Login = z.object({
-  email: z.string().email(),
-  password: z.string().min(8),
+  email: z.string().trim().email().max(254),
+  password: z.string().min(8).max(1024),
 });
 
 export async function login(_: string, fd: FormData): Promise<string> {
@@ -33,12 +34,19 @@ export async function register(_: string, fd: FormData): Promise<string> {
     fd.get("confirmPassword") !== fd.get("password")
   )
     return "দুটি পাসওয়ার্ড মেলেনি। আবার লিখুন।";
-  const p = Login.extend({ name: z.string().min(2) }).safeParse(
-    Object.fromEntries(fd),
-  );
+  const p = Login.extend({
+    name: z.string().trim().min(2).max(100),
+    // bcrypt only uses the first 72 UTF-8 bytes; refuse ambiguous newly registered secrets.
+    password: z
+      .string()
+      .min(8)
+      .refine((value) => Buffer.byteLength(value, "utf8") <= 72),
+  }).safeParse(Object.fromEntries(fd));
   if (!p.success)
     return "Enter your name, a valid email and a password of at least 8 characters.";
   const email = p.data.email.toLowerCase();
+  if (!(await reserveAuthAttempt("registration", email)))
+    return "এখন অ্যাকাউন্ট তৈরি করা যায়নি। কিছুক্ষণ পরে চেষ্টা করুন।";
   if (await db.user.findUnique({ where: { email } }))
     return "This email already has an account. Log in instead.";
   await db.user.create({

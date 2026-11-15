@@ -66,7 +66,7 @@ async function extractCleanTwoColumnPdf(file: File): Promise<string> {
   });
 
   const arrayBuffer = await file.arrayBuffer();
-  const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+  const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer, isEvalSupported: false }).promise;
   let fullDocumentText = "";
 
   for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
