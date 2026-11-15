@@ -40,6 +40,9 @@ test("new home renders all books, six-paper bounded queries, preserved subject l
     { renderToStaticMarkup } = require("react-dom/server");
   let calls = [];
   const Home = load("app/page.tsx", {
+    "@/lib/seo": load("lib/seo.ts", {
+      "@/lib/brand": require("./helpers/brand.cjs"),
+    }),
     "@/auth": { auth: async () => null },
     "@/lib/question-feed": {
       questionFeed: async () => ({ posts: [], next: null }),

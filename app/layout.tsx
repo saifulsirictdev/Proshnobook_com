@@ -1,3 +1,4 @@
+import { jsonLd } from "@/lib/seo";
 import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import "./globals.css";
 import "@/components/ui-typography.css";
@@ -106,9 +107,20 @@ export default async function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: jsonLd({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
+              inLanguage: "bn-BD",
+              alternateName: "Proshnobook",
+              publisher: {
+                "@type": "Organization",
+                "@id": `${SITE_URL}/#organization`,
+                name: "প্রশ্নবুক.কম",
+                alternateName: "Proshnobook",
+                url: SITE_URL,
+                logo: `${SITE_URL}/questionmaker-icon-192.png`,
+              },
               name: site.siteName,
               url: SITE_URL,
               potentialAction: {
