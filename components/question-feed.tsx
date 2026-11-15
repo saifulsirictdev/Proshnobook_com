@@ -18,7 +18,7 @@ export default function QuestionFeed({
             <Link href={`/teachers/${profile.tid}`} className="sf-author-link">
               <span className="sf-avatar">
                 {profile.image ? (
-                  <img loading="lazy" src={profile.image} alt="" />
+                  <img className="sf-avatar-image" loading="lazy" src={profile.image} alt="" />
                 ) : (
                   <UserRound aria-hidden="true" />
                 )}
