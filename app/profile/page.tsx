@@ -186,7 +186,11 @@ export default async function ProfilePage() {
           </div>
         )}
         <div className="min-w-0 flex-1">
-          {user && <PublicPhotoEditor tid={teacherTid(user.id)} />}
+          {user && (
+            <PublicPhotoEditor
+              tid={user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}
+            />
+          )}
           <Link
             href="/dashboard/feed-saved"
             className="text-indigo-700 underline"

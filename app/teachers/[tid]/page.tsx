@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import {
@@ -36,6 +36,7 @@ export default async function TeacherPage({
   } catch {
     notFound();
   }
+  if (profile.tid !== tid) redirect(`/teachers/${profile.tid}`);
   const viewer = viewerId
     ? await db.user.findUnique({
         where: { id: viewerId },
@@ -70,7 +71,11 @@ export default async function TeacherPage({
           <Link className="sf-primary" href="/dashboard">
             আমার Dashboard / সংরক্ষিত কপি / Wallet →
           </Link>
-          <PublicPhotoEditor tid={tid} />
+          <PublicPhotoEditor
+            tid={tid}
+            name={profile.name}
+            designation={profile.designation}
+          />
         </>
       )}
       {viewer?.role === "ADMIN" && tid !== OFFICIAL_PROFILE && (

@@ -34,12 +34,14 @@ export default function MobileBottomNav({
     },
     {
       label: "প্রোফাইল",
-      href: "/dashboard",
+      href: "/my-profile",
       icon: UserRound,
       active:
         pathname === "/dashboard" ||
         pathname.startsWith("/dashboard/") ||
-        pathname === "/profile",
+        pathname === "/profile" ||
+        pathname === "/my-profile" ||
+        pathname.startsWith("/teachers/"),
     },
   ];
   return (

@@ -151,9 +151,7 @@ export async function submitMarketPaper(
         id,
         ownerId: user.id,
         sourceKey,
-        ...(autoPublish && form.get("official") === "on"
-          ? { official: true }
-          : {}),
+        ...(autoPublish ? { official: true } : {}),
         source: readySource ? "READY_PDF" : "DATABASE",
         status: autoPublish ? "APPROVED" : "PENDING",
         revision: (prior?.revision ?? 0) + 1,

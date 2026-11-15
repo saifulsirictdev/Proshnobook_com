@@ -25,19 +25,20 @@ export async function followProfile(
   try {
     const userId = (await auth())?.user?.id;
     if (!userId) throw Error("ফলো করতে আগে লগইন করুন।");
-    const tid = String(form.get("tid") || ""),
-      desired = form.get("follow");
+    let tid = String(form.get("tid") || "");
+    const desired = form.get("follow");
     if (desired !== "yes" && desired !== "no") throw Error("Invalid request");
     const owner = await profileOwner(tid);
     if (owner?.id === userId) throw Error("নিজেকে ফলো করা যায় না।");
+    if (owner?.role === "ADMIN") tid = OFFICIAL_PROFILE;
     const result = await walletTransaction(async (tx) => {
-      if (
-        !(await tx.user.findUnique({
-          where: { id: userId },
-          select: { id: true },
-        }))
-      )
-        throw Error("Missing account");
+      const actor = await tx.user.findUnique({
+        where: { id: userId },
+        select: { id: true, role: true },
+      });
+      if (!actor) throw Error("Missing account");
+      if (tid === OFFICIAL_PROFILE && actor.role === "ADMIN")
+        throw Error("Cannot follow own official profile");
       const key = followKey(tid, userId);
       if (desired === "yes")
         await tx.setting.upsert({
@@ -138,6 +139,12 @@ export async function savePublicPhoto(
       !(await db.user.findUnique({ where: { id }, select: { id: true } }))
     )
       throw Error();
+    const user = await db.user.findUnique({
+      where: { id },
+      select: { role: true },
+    });
+    const identity = user?.role === "ADMIN" ? OFFICIAL_PROFILE : id;
+    const kind = form.get("kind") === "cover" ? "cover" : "avatar";
     const file = form.get("photo");
     if (!(file instanceof File) || file.size < 100 || file.size > 2_000_000)
       throw Error();
@@ -157,7 +164,9 @@ export async function savePublicPhoto(
       limitInputPixels: 12_000_000,
     })
       .rotate()
-      .resize(512, 512, { fit: "cover" })
+      .resize(kind === "cover" ? 1600 : 512, kind === "cover" ? 600 : 512, {
+        fit: "cover",
+      })
       .webp({ quality: 85 })
       .toBuffer();
     const blob = await put(`profile-photos/${randomUUID()}.webp`, bytes, {
@@ -166,13 +175,23 @@ export async function savePublicPhoto(
       contentType: "image/webp",
     });
     await walletTransaction(async (tx) => {
-      const key = `social:avatar:v1:${id}`;
+      const key = `social:${kind}:v1:${identity}`;
       await tx.setting.upsert({
         where: { key },
         create: { key, value: blob.url },
         update: { value: blob.url },
       });
-      await tx.user.update({ where: { id }, data: { image: blob.url } });
+      const current = await tx.user.findUnique({
+        where: { id },
+        select: { role: true },
+      });
+      if (
+        !current ||
+        (current.role === "ADMIN" ? OFFICIAL_PROFILE : id) !== identity
+      )
+        throw Error();
+      if (kind === "avatar" && identity !== OFFICIAL_PROFILE)
+        await tx.user.update({ where: { id }, data: { image: blob.url } });
       const tid = teacherTid(id);
       await tx.setting.upsert({
         where: { key: `teacher:tid:${tid}` },
@@ -184,12 +203,65 @@ export async function savePublicPhoto(
     revalidatePath("/profile");
     revalidatePath("/");
     revalidatePath(`/teachers/${teacherTid(id)}`);
+    revalidatePath(`/teachers/${OFFICIAL_PROFILE}`);
     return { ok: true, message: "প্রোফাইলের ছবি সেভ হয়েছে।" };
   } catch {
     return {
       ok: false,
       message:
         "ছবি সেভ হয়নি। সর্বোচ্চ ২ MB ছবি দিন; সংযোগ, storage ও দৈনিক ৫ বারের সীমা যাচাই করুন।",
+    };
+  }
+}
+
+export async function savePublicDetails(
+  _: SocialState,
+  form: FormData,
+): Promise<SocialState> {
+  try {
+    const id = (await auth())?.user?.id;
+    const name = String(form.get("name") || "").trim();
+    const designation = String(form.get("designation") || "").trim();
+    if (
+      !id ||
+      name.length < 2 ||
+      name.length > 100 ||
+      designation.length > 160 ||
+      /[\u0000-\u001f\u007f]/.test(name + designation)
+    )
+      throw Error();
+    let tid = teacherTid(id);
+    await walletTransaction(async (tx) => {
+      const user = await tx.user.findUnique({
+        where: { id },
+        select: { role: true },
+      });
+      if (!user) throw Error();
+      const identity = user.role === "ADMIN" ? OFFICIAL_PROFILE : id;
+      if (user.role === "ADMIN") tid = OFFICIAL_PROFILE;
+      const key = `social:profile:v1:${identity}`;
+      const value = JSON.stringify({ name, designation });
+      await tx.setting.upsert({
+        where: { key },
+        create: { key, value },
+        update: { value },
+      });
+      const mapping = `teacher:tid:${teacherTid(id)}`;
+      await tx.setting.upsert({
+        where: { key: mapping },
+        create: { key: mapping, value: id },
+        update: {},
+      });
+    });
+    revalidatePath(`/teachers/${tid}`);
+    revalidatePath("/");
+    revalidatePath("/dashboard");
+    revalidatePath("/profile");
+    return { ok: true, message: "নাম ও পদবি সেভ হয়েছে।" };
+  } catch {
+    return {
+      ok: false,
+      message: "সেভ হয়নি। নাম ২–১০০ এবং পদবি সর্বোচ্চ ১৬০ অক্ষর দিন।",
     };
   }
 }

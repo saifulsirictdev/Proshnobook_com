@@ -4,6 +4,7 @@ import {
   followProfile,
   verifyTeacher,
   savePublicPhoto,
+  savePublicDetails,
   type SocialState,
 } from "@/app/actions/social-profiles";
 const initial: SocialState = { ok: false, message: "" };
@@ -64,12 +65,62 @@ export function VerificationControl({ tid }: { tid: string }) {
     </details>
   );
 }
-export function PublicPhotoEditor({ tid }: { tid: string }) {
+function PublicDetailsEditor({
+  name,
+  designation,
+}: {
+  name?: string;
+  designation?: string;
+}) {
+  const [state, action, pending] = useActionState(savePublicDetails, initial);
+  return (
+    <form action={action}>
+      <label>
+        প্রকাশ্য নাম
+        <input
+          name="name"
+          defaultValue={name}
+          minLength={2}
+          maxLength={100}
+          required
+        />
+      </label>
+      <label>
+        নামের নিচে পদবি
+        <input
+          name="designation"
+          defaultValue={designation}
+          maxLength={160}
+          placeholder="যেমন: সহকারী শিক্ষক, গণিত"
+        />
+      </label>
+      <button disabled={pending}>নাম ও পদবি সেভ করুন</button>
+      <p role="status">{state.message}</p>
+    </form>
+  );
+}
+export function PublicPhotoEditor({
+  tid,
+  name,
+  designation,
+}: {
+  tid: string;
+  name?: string;
+  designation?: string;
+}) {
   const [state, action, pending] = useActionState(savePublicPhoto, initial);
   return (
     <details className="sf-photo-editor">
-      <summary>প্রকাশ্য প্রোফাইলের ছবি সেট করুন</summary>
+      <summary>প্রোফাইল সম্পাদনা: নাম, পদবি ও ছবি</summary>
+      <PublicDetailsEditor name={name} designation={designation} />
       <form action={action}>
+        <label>
+          ছবির ধরন
+          <select name="kind">
+            <option value="avatar">প্রোফাইল ছবি</option>
+            <option value="cover">কভার ছবি</option>
+          </select>
+        </label>
         <p>এই ছবি সবাই দেখতে পাবেন। সর্বোচ্চ ২ MB; দিনে ৫ বার।</p>
         <input
           type="file"

@@ -36,14 +36,14 @@ function render(path) {
     React.createElement(m.exports.default, { user: null }),
   );
 }
-test("global mobile navigation has five real destinations with create center and dashboard profile", () => {
+test("global mobile navigation has five real destinations with create center and public profile", () => {
   const html = render("/");
   for (const href of [
     "/",
     "/question-builder/saved",
     "/question-builder",
     "/wallet",
-    "/dashboard",
+    "/my-profile",
   ])
     assert.ok(html.includes(`href="${href}"`));
   assert.equal((html.match(/<a /g) || []).length, 5);
@@ -58,6 +58,8 @@ test("only one active link across home, saved, English saved, builder, wallet an
     "/question-builder/create",
     "/wallet",
     "/dashboard",
+    "/my-profile",
+    "/teachers/proshnobook",
   ])
     assert.equal((render(path).match(/aria-current="page"/g) || []).length, 1);
 });

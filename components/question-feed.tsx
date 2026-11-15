@@ -42,7 +42,8 @@ export default function QuestionFeed({
                   )}
                 </strong>
                 <small>
-                  {profile.official ? "অফিসিয়াল প্রকাশনা" : "শিক্ষকের প্রশ্নপত্র"}
+                  {profile.designation ||
+                    (profile.official ? "অফিসিয়াল প্রকাশনা" : "শিক্ষকের প্রশ্নপত্র")}
                 </small>
               </span>
             </Link>
