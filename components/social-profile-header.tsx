@@ -20,7 +20,7 @@ export default function SocialProfileHeader({
       <div className="sf-profile-content">
         <div className="sf-avatar">
           {profile.image ? (
-            <img src={profile.image} alt="" />
+            <img className="sf-avatar-image" src={profile.image} alt="" />
           ) : (
             <UserRound aria-hidden="true" />
           )}
