@@ -701,3 +701,8 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Added existing-catalog class → subject → chapter selection at Admin import, ready-batch counts/limitations/receipt state, preview and explicit Pending save. Unprepared chapters are clearly labelled; no background content creation claimed.
 - Central versioned server registry currently includes Class 6 math chapter 1 only and supports future authored chapter adapters without new category creation. Server selection cannot be overridden by browser fields; Pending-only, audit, digest, normalized legacy dedup and Serializable retries retained.
 - Compatibility import forms collapsed; adjusted existing authenticated browser CI to expand them. 15 targeted tests and typecheck passed. No live DB writes.
+
+### Phase 71 follow-up — Local JSON upload by catalog path
+- Added class/subject/subgroup/chapter selectors and local JSON file loading with a downloadable mixed MCQ/SQ/CQ template.
+- Strict scope matching, server-side size/schema/answer/marks validation, preview invalidation, Admin-only Pending saves, audit, normalized dedup and retries. No arbitrary new subjects or automatic approval.
+- 13 targeted import tests and typecheck passed; production data untouched.

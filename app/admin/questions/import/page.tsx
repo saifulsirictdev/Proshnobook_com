@@ -1,5 +1,7 @@
 import Link from "next/link";
 import PreparedLibrary from "./prepared-library";
+import JsonUploadForm from "./json-upload-form";
+import { uploadCatalog } from "@/lib/question-json-import";
 import { importCatalog, preparedSummaries, getPreparedBatch } from "@/lib/prepared-question-batches";
 import { staff } from "@/lib/guard";
 import { db } from "@/lib/db";
@@ -20,6 +22,7 @@ export default async function MCQImport() {
   return <main className="mx-auto max-w-6xl space-y-6 p-6">
     <Link className="qm-action-link" href="/admin/questions">← প্রশ্ন ব্যবস্থাপনা</Link>
     <h1 className="text-3xl font-bold">শ্রেণি, বিষয় ও অধ্যায়ভিত্তিক প্রশ্ন import</h1>
+    <JsonUploadForm catalog={uploadCatalog} />
     <PreparedLibrary catalog={importCatalog} batches={summaries} savedIds={savedIds} />
     <details><summary className="cursor-pointer font-semibold">পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান</summary>
     <p>লক্ষ্য প্রতি যাচাইকৃত অধ্যায়ে ১০০টি, উৎসে যথেষ্ট স্বতন্ত্র প্রশ্ন না হলে অন্তত ৫০টি। বর্তমান selector তালিকা সরকারি সূচিপত্র হিসেবে যাচাইকৃত নয়; writing/model-test টপিক আগে যাচাই করুন। সংখ্যা মানের বিকল্প নয়।</p>
