@@ -61,3 +61,9 @@ Verification: 13 targeted import tests and typecheck passed; transaction tests u
 ## Class 6 math chapter 2 available
 
 `content/question-bank/class-6/chapter-2/questions.json` is directly compatible with the local JSON uploader: Class 6 / গণিত / ২. অনুপাত ও শতকরা (no subgroup). A mixed prepared card also contains the same 100 MCQ + 30 CQ + 30 SQ. Source review and variant limitations are retained with the batch; approval remains separate. See the chapter README and review.md. No database import was performed by authoring this batch.
+
+## Class 6 mathematics chapters 3–8 Draft batches
+
+Each chapter now has `content/question-bank/class-6/chapter-N/questions.json`, `review.md` and `validation.json`. The prepared library adds six mixed cards, and each JSON also works with class/subject/chapter file upload. Select the exact existing chapter; no new category or subject was introduced. Review the limitations before saving Pending; preparation did not import or publish anything.
+
+Bundle: `deliverables/class6-math-ch3-8/class6-math-chapters-3-8-drafts.zip`. Unzip first and upload one chapter's questions.json at a time. Do not upload ZIP or validation.json. These are numeric-family drafts, not independent teacher-approved complete coverage; geometry/chart solutions still need figure review.

@@ -1,0 +1,1632 @@
+{
+  "status": "DRAFT_SUBJECT_REVIEW_PENDING",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 30,
+    "SQ": 30
+  },
+  "chapter": 4,
+  "topic": "৪. বীজগণিতীয় রাশি",
+  "sourceSha256": "ffa30c8b815f49f3326b70ae58c5e17f11c4d8bd6d854eb84153fab8d593f23f",
+  "printedPagesVisuallyRead": [
+    76,
+    81,
+    87,
+    94
+  ],
+  "fullChapterRead": false,
+  "independentTeacherApproved": false,
+  "productionImported": 0,
+  "problemFamilies": 10,
+  "MCQ_objectiveTemplates": 20,
+  "exactDuplicateStems": 0,
+  "checks": "exact Fraction calculations, scene invariants, options distinct, counts and labels",
+  "limitations": [
+    "১০টি সমস্যা-পরিবার; প্রতি পরিবারের ২টি objective-এর ৫ variant-এ ১০০ MCQ, তিনটি করে variant-এ ৩০ CQ এবং তিনটি করে variant-এ ৩০ SQ। স্বতন্ত্র ১৬০ দক্ষতা নয়।",
+    "গণনা/গঠন পরীক্ষা হয়েছে; স্বাধীন শিক্ষক ও প্রশ্নের difficulty/মানবণ্টন অনুমোদন বাকি।",
+    "নির্বাচিত পৃষ্ঠা ধারণাসূত্র, প্রশ্ন বই থেকে হুবহু উদ্ধৃতি নয়; প্রতিটি উপবিষয়ের পূর্ণ coverage দাবি নয়।",
+    "সম্পূর্ণ অধ্যায়ের সব পৃষ্ঠা পড়া হয়নি; নির্বাচিত চারটি পৃষ্ঠা দেখা হয়েছে।"
+  ],
+  "items": [
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 1,
+      "objective": 1,
+      "expected": "8",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 1,
+      "objective": 2,
+      "expected": "14",
+      "choices": [
+        "15",
+        "14",
+        "13",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 2,
+      "objective": 1,
+      "expected": "15",
+      "choices": [
+        "16",
+        "14",
+        "15",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 2,
+      "objective": 2,
+      "expected": "27",
+      "choices": [
+        "28",
+        "26",
+        "29",
+        "27"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 3,
+      "objective": 1,
+      "expected": "24",
+      "choices": [
+        "24",
+        "25",
+        "23",
+        "26"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 3,
+      "objective": 2,
+      "expected": "44",
+      "choices": [
+        "45",
+        "44",
+        "43",
+        "46"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 4,
+      "objective": 1,
+      "expected": "35",
+      "choices": [
+        "36",
+        "34",
+        "35",
+        "37"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 4,
+      "objective": 2,
+      "expected": "47",
+      "choices": [
+        "48",
+        "46",
+        "49",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 5,
+      "objective": 1,
+      "expected": "48",
+      "choices": [
+        "48",
+        "49",
+        "47",
+        "50"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দামের রাশি",
+      "variant": 5,
+      "objective": 2,
+      "expected": "57",
+      "choices": [
+        "58",
+        "57",
+        "56",
+        "59"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "12",
+      "choices": [
+        "13",
+        "11",
+        "14",
+        "12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "7",
+      "choices": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "15",
+      "choices": [
+        "16",
+        "15",
+        "14",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "10",
+        "8",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "18",
+      "choices": [
+        "19",
+        "17",
+        "20",
+        "18"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "11",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "21",
+      "choices": [
+        "22",
+        "21",
+        "20",
+        "23"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "10",
+        "8",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ একপদ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "24",
+      "choices": [
+        "25",
+        "23",
+        "26",
+        "24"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "14",
+      "choices": [
+        "14",
+        "15",
+        "13",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "27",
+      "choices": [
+        "28",
+        "26",
+        "27",
+        "29"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "44",
+      "choices": [
+        "44",
+        "45",
+        "43",
+        "46"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "9",
+      "choices": [
+        "10",
+        "9",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "47",
+      "choices": [
+        "48",
+        "46",
+        "47",
+        "49"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "11",
+      "choices": [
+        "12",
+        "10",
+        "13",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "57",
+      "choices": [
+        "57",
+        "58",
+        "56",
+        "59"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "9",
+      "choices": [
+        "10",
+        "9",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "3",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "16",
+      "choices": [
+        "17",
+        "15",
+        "18",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "4",
+      "choices": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "26",
+      "choices": [
+        "27",
+        "26",
+        "25",
+        "28"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "38",
+      "choices": [
+        "39",
+        "37",
+        "40",
+        "38"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "6",
+      "choices": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "46",
+      "choices": [
+        "47",
+        "46",
+        "45",
+        "48"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "3",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "29",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 1,
+      "objective": 2,
+      "expected": "32",
+      "choices": [
+        "33",
+        "32",
+        "31",
+        "34"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 2,
+      "objective": 1,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 2,
+      "objective": 2,
+      "expected": "128",
+      "choices": [
+        "129",
+        "127",
+        "130",
+        "128"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 3,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 3,
+      "objective": 2,
+      "expected": "512",
+      "choices": [
+        "513",
+        "512",
+        "511",
+        "514"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 4,
+      "objective": 1,
+      "expected": "8",
+      "choices": [
+        "9",
+        "7",
+        "8",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 4,
+      "objective": 2,
+      "expected": "256",
+      "choices": [
+        "257",
+        "255",
+        "258",
+        "256"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 5,
+      "objective": 1,
+      "expected": "6",
+      "choices": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সূচক",
+      "variant": 5,
+      "objective": 2,
+      "expected": "64",
+      "choices": [
+        "65",
+        "64",
+        "63",
+        "66"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 1,
+      "objective": 2,
+      "expected": "49",
+      "choices": [
+        "50",
+        "48",
+        "51",
+        "49"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 2,
+      "objective": 1,
+      "expected": "6",
+      "choices": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 2,
+      "objective": 2,
+      "expected": "101",
+      "choices": [
+        "102",
+        "101",
+        "100",
+        "103"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 3,
+      "objective": 1,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 3,
+      "objective": 2,
+      "expected": "181",
+      "choices": [
+        "182",
+        "180",
+        "183",
+        "181"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 4,
+      "objective": 1,
+      "expected": "8",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 4,
+      "objective": 2,
+      "expected": "295",
+      "choices": [
+        "296",
+        "295",
+        "294",
+        "297"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 5,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "10",
+        "8",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 5,
+      "objective": 2,
+      "expected": "417",
+      "choices": [
+        "418",
+        "416",
+        "419",
+        "417"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 1,
+      "objective": 1,
+      "expected": "11",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 1,
+      "objective": 2,
+      "expected": "25",
+      "choices": [
+        "26",
+        "25",
+        "24",
+        "27"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 2,
+      "objective": 1,
+      "expected": "19",
+      "choices": [
+        "20",
+        "18",
+        "19",
+        "21"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 2,
+      "objective": 2,
+      "expected": "42",
+      "choices": [
+        "43",
+        "41",
+        "44",
+        "42"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 3,
+      "objective": 1,
+      "expected": "29",
+      "choices": [
+        "29",
+        "30",
+        "28",
+        "31"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 3,
+      "objective": 2,
+      "expected": "63",
+      "choices": [
+        "64",
+        "63",
+        "62",
+        "65"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 4,
+      "objective": 1,
+      "expected": "41",
+      "choices": [
+        "42",
+        "40",
+        "41",
+        "43"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 4,
+      "objective": 2,
+      "expected": "88",
+      "choices": [
+        "89",
+        "87",
+        "90",
+        "88"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 5,
+      "objective": 1,
+      "expected": "51",
+      "choices": [
+        "51",
+        "52",
+        "50",
+        "53"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 5,
+      "objective": 2,
+      "expected": "81",
+      "choices": [
+        "82",
+        "81",
+        "80",
+        "83"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 1,
+      "objective": 1,
+      "expected": "2",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 1,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 2,
+      "objective": 1,
+      "expected": "3",
+      "choices": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 2,
+      "objective": 2,
+      "expected": "17",
+      "choices": [
+        "18",
+        "17",
+        "16",
+        "19"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 3,
+      "objective": 1,
+      "expected": "4",
+      "choices": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 3,
+      "objective": 2,
+      "expected": "26",
+      "choices": [
+        "27",
+        "25",
+        "28",
+        "26"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 4,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 4,
+      "objective": 2,
+      "expected": "37",
+      "choices": [
+        "38",
+        "37",
+        "36",
+        "39"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 5,
+      "objective": 1,
+      "expected": "6",
+      "choices": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 5,
+      "objective": 2,
+      "expected": "54",
+      "choices": [
+        "55",
+        "53",
+        "56",
+        "54"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "80",
+      "choices": [
+        "81",
+        "80",
+        "79",
+        "82"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "875",
+      "choices": [
+        "876",
+        "874",
+        "877",
+        "875"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "11664",
+      "choices": [
+        "11665",
+        "11664",
+        "11663",
+        "11666"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "11",
+      "choices": [
+        "12",
+        "10",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "539",
+      "choices": [
+        "540",
+        "538",
+        "541",
+        "539"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "4608",
+      "choices": [
+        "4609",
+        "4608",
+        "4607",
+        "4610"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 1,
+      "objective": 2,
+      "expected": "13",
+      "choices": [
+        "14",
+        "12",
+        "15",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 2,
+      "objective": 1,
+      "expected": "7",
+      "choices": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 2,
+      "objective": 2,
+      "expected": "27",
+      "choices": [
+        "28",
+        "27",
+        "26",
+        "29"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 3,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "10",
+        "8",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 3,
+      "objective": 2,
+      "expected": "45",
+      "choices": [
+        "46",
+        "44",
+        "47",
+        "45"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 4,
+      "objective": 1,
+      "expected": "11",
+      "choices": [
+        "11",
+        "12",
+        "10",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 4,
+      "objective": 2,
+      "expected": "67",
+      "choices": [
+        "68",
+        "67",
+        "66",
+        "69"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 5,
+      "objective": 1,
+      "expected": "9",
+      "choices": [
+        "10",
+        "8",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 5,
+      "objective": 2,
+      "expected": "61",
+      "choices": [
+        "62",
+        "60",
+        "63",
+        "61"
+      ]
+    },
+    {
+      "type": "CQ",
+      "family": "দামের রাশি",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "দামের রাশি",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "দামের রাশি",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ একপদ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ একপদ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ একপদ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সূচক",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সূচক",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সূচক",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 8
+    },
+    {
+      "type": "SQ",
+      "family": "দামের রাশি",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "দামের রাশি",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "দামের রাশি",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ একপদ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ একপদ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ একপদ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিপদ যোগ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "রাশির বিয়োগ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সূচক",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সূচক",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সূচক",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "দ্বিঘাতের মান",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "পরিসীমার রাশি",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "কথা থেকে রাশি",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সদৃশ-বিসদৃশ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "ঋণাত্মক ধ্রুবক",
+      "variant": 11
+    }
+  ]
+}
