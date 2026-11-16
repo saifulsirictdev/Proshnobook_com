@@ -224,6 +224,7 @@ export default function LoginDialog({
         <X size={20} />
       </button>
       <div className="qm-login-brand">
+        <img src="/proshnobook-p-logo.png" width={36} height={36} alt="" className="qm-login-mark" />
         প্রশ্নবুক<span>.কম</span>
       </div>
       <h1 id={heading}>

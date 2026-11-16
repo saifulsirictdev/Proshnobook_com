@@ -317,3 +317,5 @@
     max-height: calc(100dvh - 24px);
   }
 }
+
+.qm-login-mark { display: inline-block; vertical-align: middle; margin-right: 10px; border-radius: 9px; background: white; object-fit: contain; }

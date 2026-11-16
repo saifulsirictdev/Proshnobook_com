@@ -47,6 +47,8 @@ test("header, intro, install, official fallback, metadata and manifest use owner
   for (const file of [
     "components/site-header.tsx",
     "components/Logo.tsx",
+    "components/brand-wordmark.tsx",
+    "components/auth/login-dialog.tsx",
     "components/brand-intro.tsx",
     "components/InstallPrompt.tsx",
     "lib/social-profiles.ts",

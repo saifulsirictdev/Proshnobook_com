@@ -1,7 +1,8 @@
 /* Strong static fallback; animations use only opacity/transform, never layout. */
 .qm-wordmark {
   display: inline-flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   min-width: 0;
   font-family: var(--qk-body), Kalpurush, sans-serif;
   text-align: left;
@@ -85,3 +86,7 @@ a:focus-visible .qm-wordmark-title {
     transform: none !important;
   }
 }
+
+.qm-wordmark-mark { width: 36px; height: 36px; flex-shrink: 0; border-radius: 9px; background: white; object-fit: contain; }
+.qm-wordmark-copy { display: flex; flex-direction: column; min-width: 0; }
+@media (max-width: 640px) { .qm-wordmark-mark { width: 28px; height: 28px; border-radius: 7px; } }
