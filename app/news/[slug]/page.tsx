@@ -34,7 +34,7 @@ export async function generateMetadata({
   const postUrl = `${siteUrl}/news/${post.slug || post.id}`;
 
   // ফেসবুকের জন্য শতভাগ সঠিক অ্যাবসলিউট ইমেজ লিংক
-  let imageUrl = `${siteUrl}/logo.png`;
+  let imageUrl = `${siteUrl}/proshnobook-p-logo.png`;
   if (post.coverUrl) {
     imageUrl = post.coverUrl.startsWith("http")
       ? post.coverUrl

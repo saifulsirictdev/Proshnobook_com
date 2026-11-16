@@ -16,19 +16,19 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["education"],
     icons: [
       {
-        src: "/questionmaker-icon-192.png",
+        src: "/proshnobook-p-192.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/questionmaker-icon.png",
+        src: "/proshnobook-p-logo.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/questionmaker-icon.png",
+        src: "/proshnobook-p-maskable.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",

@@ -90,7 +90,7 @@ export async function publicProfile(tid: string, viewerId?: string) {
     cover: publicAvatar(coverRow?.value),
     image:
       tid === OFFICIAL_PROFILE
-        ? publicAvatar(avatar?.value) || "/questionmaker-icon.png"
+        ? publicAvatar(avatar?.value) || "/proshnobook-p-logo.png"
         : publicAvatar(avatar?.value) || publicAvatar(user?.image),
     verified: tid === OFFICIAL_PROFILE || isVerified,
     official: tid === OFFICIAL_PROFILE,

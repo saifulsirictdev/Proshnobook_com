@@ -21,7 +21,7 @@ export function landingMetadata(
       url,
       images: [
         {
-          url: `${PUBLIC_SITE_ORIGIN}/questionmaker-icon-192.png`,
+          url: `${PUBLIC_SITE_ORIGIN}/proshnobook-p-192.png`,
           width: 192,
           height: 192,
           alt: BRAND.nameBn,
@@ -32,7 +32,7 @@ export function landingMetadata(
       card: "summary",
       title,
       description,
-      images: [`${PUBLIC_SITE_ORIGIN}/questionmaker-icon-192.png`],
+      images: [`${PUBLIC_SITE_ORIGIN}/proshnobook-p-192.png`],
     },
   };
 }

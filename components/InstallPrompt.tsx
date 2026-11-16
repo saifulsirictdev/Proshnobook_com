@@ -8,7 +8,7 @@ const STORAGE_KEY = "saifulsir_install_prompt_v1";
 const SNOOZE_DAYS = 7; // "এখন নয়" চাপলে কত দিন পর আবার আসবে (0 = আর আসবে না)
 const DELAY_MS = 2500; // পেজ খোলার কতক্ষণ পর popup আসবে
 const APP_NAME = BRAND.nameBn;
-const LOGO_SRC = "/questionmaker-icon.png"; // public/logo.png
+const LOGO_SRC = "/proshnobook-p-logo.png"; // public/logo.png
 
 type InstallEvent = Event & {
   prompt: () => Promise<void>;

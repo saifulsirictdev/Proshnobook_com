@@ -216,7 +216,7 @@ test("ADMIN personal identity resolves to one official profile with official bra
   const p = await x.profiles.publicProfile(x.tid, "u");
   assert.equal(p.tid, "proshnobook");
   assert.equal(p.name, "প্রশ্নবুক.কম");
-  assert.equal(p.image, "/questionmaker-icon.png");
+  assert.equal(p.image, "/proshnobook-p-logo.png");
   assert.equal(p.isSelf, true);
   assert.equal(p.verified, true);
   assert.equal(

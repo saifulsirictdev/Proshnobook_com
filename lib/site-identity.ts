@@ -22,7 +22,7 @@ export function websiteIdentity() {
       name: BRAND.nameBn,
       alternateName: BRAND.nameEn,
       url: PUBLIC_SITE_ORIGIN,
-      logo: `${PUBLIC_SITE_ORIGIN}/questionmaker-icon-192.png`,
+      logo: `${PUBLIC_SITE_ORIGIN}/proshnobook-p-192.png`,
       description: BRAND.description,
       disambiguatingDescription:
         "শিক্ষকদের পরীক্ষার প্রশ্নপত্র তৈরি, প্রকাশ ও সংগ্রহের প্ল্যাটফর্ম; সাধারণ প্রশ্নোত্তর আলোচনা ফোরাম নয়।",
