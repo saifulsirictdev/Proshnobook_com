@@ -123,8 +123,8 @@ export const settingsSchema = z.object({
         .default("justify"),
       font: z
         .enum(["adorsho", "hind", "anek", "serif", "kalpurush"])
-        .catch("hind")
-        .default("hind"),
+        .catch("kalpurush")
+        .default("kalpurush"),
       fontSize: number(14, 7, 28),
       imageSize: number(280, 80, 600),
       imagePosition: z.enum(["left", "center"]).catch("left").default("left"),
