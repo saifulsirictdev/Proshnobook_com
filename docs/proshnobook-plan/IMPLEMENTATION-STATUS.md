@@ -639,3 +639,8 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Owner requested Kalpurush as the default when setting up database question papers. Shared paper settings now default/fall back to the already self-hosted licensed Kalpurush family; both responsive settings selectors and Preview/Print consume this setting.
 - Explicit saved valid font choices (including Hind) remain unchanged on restore. Missing/invalid font settings use Kalpurush. No account/DB migrations, unrelated UI fonts, Ready raster papers or font licensing changes.
 - Regression tests cover new/empty settings, invalid font fallback and preservation of every valid serialized font choice. Required CI/build/browser gates still apply before merge.
+
+## Phase 62 — compact builder guidance buttons
+
+- Restyled the three getting-started helper links as compact indigo/violet/teal rounded button-style links, retaining their original labels and destinations. Wrapping layout, 44px minimum touch height and keyboard focus rings support mobile and keyboard use.
+- Added rendered regression coverage for both signed-in/anonymous views. Selection stays above guidance; no auth/payment/question flow changes.

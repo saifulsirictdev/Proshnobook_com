@@ -120,3 +120,16 @@ test("all private builder subtrees retain server authentication and noindex, inc
     assert.equal(layout.metadata.robots.follow, false);
   }
 });
+
+test("builder helper links are compact wrapping accessible button-style links with unchanged destinations", async () => {
+  for (const id of [null, "teacher"]) {
+    const { html } = await renderLanding(id);
+    assert.match(html, /<nav aria-label="প্রশ্ন তৈরির সহায়ক লিংক" class="[^"]*flex-wrap/);
+    for (const path of ["/question-paper-guide", "/ready-papers", "/marketplace"]) {
+      const link = html.match(new RegExp(`<a[^>]*href="${path}"[^>]*>`))?.[0];
+      assert.ok(link);
+      for (const token of ["min-h-11", "rounded-xl", "text-sm", "no-underline", "focus-visible:ring-2"])
+        assert.ok(link.includes(token));
+    }
+  }
+});
