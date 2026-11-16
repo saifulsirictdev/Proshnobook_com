@@ -595,3 +595,9 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Test server environment is whitelisted and uses a fresh AUTH_SECRET; external browser requests are aborted and logs show only safe phase identifiers. Existing actual wallet concurrency, database/vault restore, PDF Print and public live smoke checks remain in place.
 - Local TypeScript and **641/641** regression tests passed. Actual native DB/full-app browser execution is the required remote CI gate, not assumed from local guard tests. Scope and remaining gates are in `docs/operations/AUTHENTICATED-BROWSER-CHECKS.md`.
 - Owner authorization continues for stages 1–9, PR and merge after checks. Google OAuth/provider settlement, physical mobile/full-editor walkthrough, cloud resource isolation, true production restore/PITR, WAF/capacity/access review, recipient-confirmed alert delivery and private Search Console cannot be certified by synthetic sign-in checks.
+
+## Phase 55 — owner-supplied P brand logo
+
+- Replaced the site's old default brand mark with the supplied pink P artwork, retaining its original gradient/shape rather than generating a new logo. Original source is retained under public/brand; the Sharp preparation script reproducibly derives browser/app assets.
+- Updated header, shared Logo, homepage intro, install prompt, official profile fallback, SEO/Organization logo, blog/news fallback, PWA any/maskable icons and explicit browser/Apple icons. New URLs avoid relying on stale cached legacy images; legacy logo/icon PNG/SVG URLs also serve the new mark.
+- Dedicated maskable safe-area padding and icon dimensions tested. Teacher custom avatars, institution/question-paper logos, account data, OAuth, payment and stored keys are unchanged. Original JPG resolution limits remain; generated larger PNGs are resized derivatives, not a claim of vector artwork.

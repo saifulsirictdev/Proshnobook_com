@@ -15,7 +15,7 @@ export default function BrandIntro() {
           {/* Fixed dimensions prevent layout shift; local PNG requires no external service. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/questionmaker-icon.png"
+            src="/proshnobook-p-logo.png"
             width="112"
             height="112"
             alt=""

@@ -55,7 +55,7 @@ export default async function Post({ params }: { params: Promise<{ id: string }>
     publisher: {
       "@type": "Organization",
       name: "SaifulSir.com",
-      logo: { "@type": "ImageObject", url: `${base()}/logo.png` }
+      logo: { "@type": "ImageObject", url: `${base()}/proshnobook-p-logo.png` }
     },
     mainEntityOfPage: `${base()}${href}`, 
     keywords: [...p.keywords, ...p.tags].join(", "), 

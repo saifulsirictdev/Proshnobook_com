@@ -167,10 +167,10 @@ export default function SiteHeader({
               aria-label={`${BRAND.nameBn} হোম`}
               className="group flex min-w-0 items-center gap-2.5"
             >
-              {/* হোমপেজের মতো গ্লাসমরফিক লোগো আইকন */}
-              <div className="flex shrink-0 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#4f46e5] shadow-md shadow-violet-500/20 group-hover:scale-105 transition-transform">
+              {/* Owner-supplied P brand mark; personal/institution images remain separate. */}
+              <div className="flex shrink-0 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-white shadow-md shadow-pink-500/15 group-hover:scale-105 transition-transform">
                 <img
-                  src="/questionmaker-icon.png"
+                  src="/proshnobook-p-logo.png"
                   width={40}
                   height={40}
                   alt=""

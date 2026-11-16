@@ -5,7 +5,7 @@ export default function Logo({ className = "" }: { className?: string }) {
     <div className={`flex items-center gap-2 select-none py-1 ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/questionmaker-icon.png"
+        src="/proshnobook-p-logo.png"
         alt=""
         width={44}
         height={44}

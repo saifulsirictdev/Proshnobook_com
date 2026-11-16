@@ -34,7 +34,7 @@ test("public landing metadata uses matching canonical/share URLs and no ranking 
   assert.equal(metadata.twitter.card, "summary");
   assert.equal(
     metadata.openGraph.images[0].url,
-    "https://proshnobook.com/questionmaker-icon-192.png",
+    "https://proshnobook.com/proshnobook-p-192.png",
   );
 });
 test("JSON-LD serialization cannot close its script or inject HTML", () => {
