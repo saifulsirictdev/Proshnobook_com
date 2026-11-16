@@ -147,10 +147,6 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       const page = await context.newPage();
       page.setDefaultTimeout(20000);
       const errors = [];
-      page.on("console", (message) => {
-        const text = message.text();
-        if (/^HYDRATION_PATH_[A-Z_]+$/.test(text)) console.error(`::error::${phase}_${text}`);
-      });
       page.on("pageerror", (error) => {
         // Only allowlisted numeric React codes and our own phase labels reach CI.
         const reactCode = /Minified React error #(\d+)/.exec(error.message)?.[1];
