@@ -165,18 +165,17 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           .getByRole("alert")
           .filter({ hasText: "Email or password is wrong" })
           .waitFor();
-        assert.equal(
-          (
-            await (
-              await context.request.get(origin + "/api/auth/session")
-            ).json()
-          ).user,
-          undefined,
-        );
+        phase = "teacher_wrong_password_session";
+        const rejectedSession = await (
+          await context.request.get(origin + "/api/auth/session")
+        ).json();
+        assert.ok(!rejectedSession?.user);
       }
+      phase = `${role.toLowerCase()}_correct_credentials`;
       await page.locator('input[name="password"]').fill(password);
       await page.locator(".qm-login-primary").click();
       await page.waitForURL(origin + "/dashboard");
+      phase = `${role.toLowerCase()}_session_identity`;
       const session = await (
         await context.request.get(origin + "/api/auth/session")
       ).json();
