@@ -51,7 +51,7 @@ export default async function Videos() {
                     <button className="underline">কিনুন</button>
                   </form>
                 )}
-                <Link className="underline" href={`/api/download/${v.id}`}>
+                <Link className="qm-action-link" href={`/api/download/${v.id}`}>
                   কেনা থাকলে অনুমতি যাচাই করে খুলুন
                 </Link>
               </div>
@@ -81,7 +81,7 @@ export default async function Videos() {
                   allowFullScreen
                 />
               ) : (
-                <a className="text-royal underline" href={destination}>
+                <a className="text-royal qm-action-link" href={destination}>
                   Open video
                 </a>
               )}

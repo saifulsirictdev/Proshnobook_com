@@ -48,14 +48,14 @@ export default async function Library({
                 <p>{r.title} — রিফান্ড হয়েছে; অনলাইন কপি বন্ধ</p>
               ) : (
                 <Link
-                  className="underline"
+                  className="qm-action-link"
                   href={`/dashboard/library/${paperId}/setup`}
                 >
                   {r.title} →
                 </Link>
               )}
               <Link
-                className="block underline"
+                className="block qm-action-link"
                 href={`/dashboard/library/${paperId}/report`}
               >
                 অভিযোগ / নিষ্পত্তির অবস্থা →

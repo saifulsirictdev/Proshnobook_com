@@ -32,7 +32,7 @@ export default function QuestionPaperGuide() {
   return (
     <main className="mx-auto max-w-4xl space-y-6 px-4 py-10">
       <nav aria-label="অবস্থান">
-        <Link href="/">হোম</Link> / প্রশ্নপত্র নির্দেশিকা
+        <Link className="qm-action-link" href="/">হোম</Link> / প্রশ্নপত্র নির্দেশিকা
       </nav>
       <h1 className="text-3xl font-bold">
         প্রশ্নপত্র তৈরি, সংগ্রহ ও প্রিন্টের নির্দেশিকা
@@ -42,10 +42,10 @@ export default function QuestionPaperGuide() {
         প্ল্যাটফর্ম। উপলব্ধ শ্রেণি, বিষয় ও প্রশ্নের তালিকা সংশ্লিষ্ট পেজে দেখুন। পরীক্ষায়
         ব্যবহারের আগে বিষয়বস্তু ও সঠিকতা নিজে যাচাই করুন।
       </p>
-      <nav className="flex flex-wrap gap-4 underline" aria-label="প্রশ্নপত্রের টুল">
-        <Link href="/question-builder">ডাটাবেজ থেকে তৈরি</Link>
-        <Link href="/ready-papers">PDF লাইব্রেরি</Link>
-        <Link href="/marketplace">ফ্রি ও পেইড প্রশ্নপত্র</Link>
+      <nav className="flex flex-wrap gap-3" aria-label="প্রশ্নপত্রের টুল">
+        <Link className="qm-action-link" href="/question-builder">ডাটাবেজ থেকে তৈরি</Link>
+        <Link className="qm-action-link" href="/ready-papers">PDF লাইব্রেরি</Link>
+        <Link className="qm-action-link" href="/marketplace">ফ্রি ও পেইড প্রশ্নপত্র</Link>
       </nav>
       {questions.map(([q, a]) => (
         <section key={q} className="rounded-xl border p-5">

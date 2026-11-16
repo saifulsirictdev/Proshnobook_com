@@ -199,7 +199,7 @@ export default async function WalletPage() {
                   ? "যাচাই হয়নি"
                   : data.packagePurchase?.package.title || "সক্রিয় প্যাকেজ নেই"}
               </strong>
-              <Link className="tw-link" href="/packages">
+              <Link className="tw-link qm-action-link" href="/packages">
                 প্যাকেজ দেখুন
               </Link>
             </div>

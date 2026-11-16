@@ -33,7 +33,7 @@ export default function SourceCheckpoint({ receiptId }: { receiptId: string }) {
       </button>
       {ready && (
         <p>
-          <a className="underline" href={`/api/ready-vault/${receiptId}`}>
+          <a className="qm-action-link" href={`/api/ready-vault/${receiptId}`}>
             নির্বাচিত মূল পৃষ্ঠার কপি ডাউনলোড করুন
           </a>
         </p>
