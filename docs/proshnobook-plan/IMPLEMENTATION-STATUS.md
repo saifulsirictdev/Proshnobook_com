@@ -615,3 +615,8 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Admission profiles: university science/humanities/business, medical/dental, engineering, agriculture, architecture/fine arts, nursing/health and other. Job profiles: BCS preliminary/written, bank, primary teacher, NTRCA preliminary/subject-based, non-cadre, technical general section and other. Technical/post-specific requirements remain outside this general outline.
 - Starter now offers an optional preparation-profile selector, common subjects and optional topics. Existing DB subjects are retained; changing category/profile resets dependent selections. Academic NCTB data, auth/payment, question generation and query contracts remain unchanged. Profiles organize suggestions, NOT exact exam/year question-bank filters; this limitation is visible in the UI.
 - Required isolated built-app Credentials browser regression now exercises Admission/Job selection, topic availability, dependent resets, disclosure and 390/1280px overflow for all three roles without entering prepare or invoking paid generation. Added 3 catalog/disclosure/compatibility tests. CI results, not just local tests, gate merge.
+
+## Phase 58 — selection before instructions
+
+- Moved the signed-in question selection card above “যেভাবে শুরু করবেন” on the builder landing, in document order for both mobile and desktop. Anonymous login CTA also precedes instructions; all guidance/links remain present below.
+- Added rendered-order regression assertions for signed-in and anonymous views. No selector, authentication, generation, pricing or payment behavior changes.
