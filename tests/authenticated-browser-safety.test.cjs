@@ -46,3 +46,12 @@ test("browser uses actual password UI and isolated full app, not fake session co
       workflow.indexOf("node scripts/authenticated-browser-check.cjs"),
   );
 });
+test("document shell uses a distinct content wrapper rather than nesting route main landmarks", () => {
+  const layout = fs.readFileSync("app/layout.tsx", "utf8");
+  assert.ok(layout.includes('<div id="site-content">{children}</div>'));
+  assert.ok(!layout.includes('<main>{children}</main>'));
+  const runner = fs.readFileSync("scripts/authenticated-browser-check.cjs", "utf8");
+  assert.ok(!runner.includes('AUTH_BROWSER_DEV_DIAGNOSTICS'));
+  const workflow = fs.readFileSync(".github/workflows/security-checks.yml", "utf8");
+  assert.ok(!workflow.includes('throwOnHydrationMismatch'));
+});

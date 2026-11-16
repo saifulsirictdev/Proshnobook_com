@@ -75,22 +75,6 @@ jobs:
           export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
           test -x "$CHROMIUM_EXECUTABLE_PATH"
           node scripts/pdf-browser-check.cjs
-      - name: Temporary hydration tag instrumentation (isolated build only)
-        run: |
-          node <<'NODE'
-          const fs = require('fs');
-          for (const file of ['node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.production.js', 'node_modules/react-dom/cjs/react-dom-client.production.js']) {
-            let text = fs.readFileSync(file, 'utf8');
-            text = text.replace('function throwOnHydrationMismatch(fiber) {', `function throwOnHydrationMismatch(fiber) {
-              var allowed = ['DIV','SPAN','P','MAIN','HEADER','FOOTER','NAV','SCRIPT','LINK','FORM','INPUT','BUTTON','HTML','BODY','META','TITLE','A','SECTION','H1','H2','STYLE'];
-              var wanted = typeof fiber.type === 'string' ? fiber.type.toUpperCase() : 'COMPONENT';
-              var actual = nextHydratableInstance && nextHydratableInstance.nodeName;
-              var parent = nextHydratableInstance && nextHydratableInstance.parentNode && nextHydratableInstance.parentNode.nodeName;
-              console.error('HYDRATION_STRUCTURE_' + (allowed.includes(wanted) ? wanted : 'OTHER') + '_' + (allowed.includes(actual) ? actual : 'OTHER') + '_' + (allowed.includes(parent) ? parent : 'OTHER'));
-            `);
-            fs.writeFileSync(file, text);
-          }
-          NODE
       - name: Production build (no production credentials)
         run: npm run build
       - name: Full built app Credentials roles and mobile browser regression (isolated DB)
