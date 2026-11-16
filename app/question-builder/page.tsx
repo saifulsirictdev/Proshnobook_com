@@ -29,6 +29,18 @@ export default async function QuestionBuilderStart() {
         ষষ্ঠ থেকে দ্বাদশ শ্রেণির বিষয় ও অধ্যায় বেছে MCQ, সংক্ষিপ্ত ও সৃজনশীল প্রশ্ন
         সাজান। নিজের পরীক্ষার পেপার সংরক্ষণ করে Preview ও Print করুন।
       </p>
+      {userId ? (
+        <QbStart pairs={pairs} />
+      ) : (
+        <div className="my-6 text-center">
+          <Link
+            className="inline-flex min-h-12 items-center rounded-xl bg-indigo-700 px-6 py-3 font-bold text-white"
+            href="/login?next=%2Fquestion-builder"
+          >
+            লগইন করে প্রশ্ন তৈরি শুরু করুন →
+          </Link>
+        </div>
+      )}
       <section
         className="my-6 rounded-2xl border bg-white p-5"
         aria-labelledby="builder-steps"
@@ -55,18 +67,7 @@ export default async function QuestionBuilderStart() {
           <Link href="/marketplace">ফ্রি ও পেইড প্রশ্নপত্র</Link>
         </div>
       </section>
-      {userId ? (
-        <QbStart pairs={pairs} />
-      ) : (
-        <div className="my-6 text-center">
-          <Link
-            className="inline-flex min-h-12 items-center rounded-xl bg-indigo-700 px-6 py-3 font-bold text-white"
-            href="/login?next=%2Fquestion-builder"
-          >
-            লগইন করে প্রশ্ন তৈরি শুরু করুন →
-          </Link>
-        </div>
-      )}
+
     </main>
   );
 }

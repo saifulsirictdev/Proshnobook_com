@@ -62,6 +62,7 @@ test("anonymous builder landing is indexable with visible content and login CTA,
   assert.match(html, /লগইন করে প্রশ্ন তৈরি শুরু করুন/);
   assert.ok(html.includes('href="/login?next=%2Fquestion-builder"'));
   assert.doesNotMatch(html, /private-selector/);
+  assert.ok(html.indexOf("লগইন করে প্রশ্ন তৈরি শুরু করুন") < html.indexOf('id="builder-steps"'));
   assert.equal(
     metadata.alternates.canonical,
     "https://proshnobook.com/question-builder",
@@ -74,6 +75,7 @@ test("authenticated users retain the existing question selector and approved-onl
   const { html, calls } = await renderLanding("teacher");
   assert.equal(calls, 1);
   assert.match(html, /private-selector/);
+  assert.ok(html.indexOf("private-selector") < html.indexOf('id="builder-steps"'));
   assert.doesNotMatch(html, /লগইন করে প্রশ্ন তৈরি শুরু করুন/);
 });
 test("all private builder subtrees retain server authentication and noindex, including nested English pages", async () => {
