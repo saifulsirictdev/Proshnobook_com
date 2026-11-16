@@ -131,6 +131,7 @@ test("direct Credentials provider denies rate-limited requests before lookup/has
     lookups = 0,
     compares = 0;
   load("auth.ts", {
+    "@/lib/account-type": { ACCOUNT_TYPE_PREFIX: "account-type:v1:" },
     "@/lib/auth-attempts": {
       reserveAuthAttempt: async (kind, email) => {
         assert.equal(kind, "credentials");

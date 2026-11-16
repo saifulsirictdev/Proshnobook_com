@@ -5,7 +5,7 @@ export const UPLOAD_INDEX = "readyuploadowner:v1:";
 export const REVIEW_INDEX = "readysubmission:v1:";
 export async function readyUploadActor() {
   const s = await auth();
-  if (!s?.user?.id) throw Error("লগইন করে PDF আপলোড করুন।");
+  if (!s?.user?.id || s.user.role === "STUDENT") throw Error("লগইন করে PDF আপলোড করুন।");
   return {
     id: s.user.id,
     name: s.user.name?.slice(0, 120),

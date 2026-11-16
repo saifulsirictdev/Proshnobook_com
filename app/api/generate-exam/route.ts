@@ -19,6 +19,8 @@ export async function POST(req: Request) {
     }).safeParse(await req.json());
     if (!parsedInput.success) return NextResponse.json({ success: false, error: "Invalid exam parameters" }, { status: 400 });
     const { mode, type, questionType, className, subject, chapter, count } = parsedInput.data;
+    if (session.user.role === "STUDENT" && !["MCQ", "EXAM"].includes(questionType || type || "MCQ"))
+      return NextResponse.json({ success: false, error: "Student-এর জন্য exam ও practice MCQ ব্যবহার করুন।" }, { status: 403 });
     if (mode === "DB") {
       const rows = await db.question.findMany({
         where: { approved: true, subject, category: className, ...(chapter && chapter !== "সম্পূর্ণ বই / সিলেবাস" ? { topic: chapter } : {}) },

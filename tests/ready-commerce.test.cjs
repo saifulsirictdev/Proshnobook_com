@@ -11,8 +11,8 @@ function setup() {
     queue = Promise.resolve(),
     fail = "";
   const users = {
-    u: { id: "u", role: "STUDENT" },
-    v: { id: "v", role: "STUDENT" },
+    u: { id: "u", role: "TEACHER" },
+    v: { id: "v", role: "TEACHER" },
     a: { id: "a", role: "ADMIN" },
   };
   const tx = {

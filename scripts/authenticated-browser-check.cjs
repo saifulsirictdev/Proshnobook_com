@@ -114,6 +114,11 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         passwordHash,
       },
     });
+  for (const type of ["TEACHER", "STUDENT", "CONTRIBUTOR"]) {
+    const id = `join-${type.toLowerCase()}`;
+    await db.user.create({ data: { id, email: `${id}@example.invalid`, name: "Synthetic Join", role: "STUDENT", passwordHash } });
+    await db.setting.create({ data: { key: "account-type:v1:" + id, value: "PENDING" } });
+  }
   const port = await unusedPort(),
     origin = `http://127.0.0.1:${port}`;
   let browser, server;
@@ -188,7 +193,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         .fill(`${role.toLowerCase()}@example.invalid`);
       await page.locator('input[name="password"]').fill(password);
       await page.locator(".qm-login-primary").click();
-      await page.waitForURL(origin + "/dashboard", { waitUntil: "networkidle" });
+      await page.waitForURL(origin + (role === "STUDENT" ? "/model-test" : role === "ADMIN" ? "/teachers/proshnobook" : "/dashboard"), { waitUntil: "networkidle" });
       phase = `${role.toLowerCase()}_session_identity`;
       const session = await (
         await context.request.get(origin + "/api/auth/session")
@@ -198,11 +203,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       phase = `${role.toLowerCase()}_private_pages_and_mobile`;
       for (const width of [390, 1280, 390, 1280]) {
         await page.setViewportSize({ width, height: 844 });
-        for (const pathname of [
-          "/dashboard",
-          "/wallet",
-          "/dashboard/library",
-        ]) {
+        for (const pathname of (role === "STUDENT" ? ["/wallet", "/dashboard/library"] : ["/dashboard", "/wallet", "/dashboard/library"])) {
           phase = `${role.toLowerCase()}_${width}_${pathname.replace(/\//g, "_")}`;
           const response = await page.goto(origin + pathname, { waitUntil: "networkidle" });
           assert.equal(response.status(), 200);
@@ -231,6 +232,17 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           );
         }
       }
+      if (role === "STUDENT") {
+        phase = "student_creator_boundaries";
+        for (const path of ["/question-builder", "/question-builder/prepare", "/ready-papers/upload"]) {
+          await page.goto(origin + path, { waitUntil: "networkidle" });
+          assert.equal(new URL(page.url()).pathname, "/model-test");
+        }
+        for (const path of ["/api/qb/questions", "/api/qb/extract-pdf", "/api/ready-ai"]) {
+          const result = await context.request.post(origin + path, { data: { ids: ["not-owned"] } });
+          assert.ok([401, 403].includes(result.status()));
+        }
+      } else {
       phase = `${role.toLowerCase()}_exam_preparation_outline`;
       await page.goto(origin + "/question-builder", { waitUntil: "networkidle" });
       for (const width of [390, 1280]) {
@@ -259,6 +271,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(await page.getByLabel("বিষয়", { exact: true }).inputValue(), "");
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
         // Never enter prepare: it can invoke paid generation; UI selection only.
+      }
       }
       phase = `${role.toLowerCase()}_admin_authorization`;
       const adminPage = await page.goto(origin + "/admin/wallet", { waitUntil: "networkidle" });
@@ -290,6 +303,42 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       console.log(
         `PASS isolated ${role}: real password UI/CSRF/JWT session, private pages at 390/1280px, admin finance role boundary and one-account bonus`,
       );
+    }
+    // Exercise the real post-verification onboarding UI with synthetic pending rows.
+    // This tests application onboarding, not Google OAuth itself.
+    for (const type of ["TEACHER", "STUDENT", "CONTRIBUTOR"]) {
+      phase = `onboarding_${type.toLowerCase()}`;
+      const id = `join-${type.toLowerCase()}`;
+      const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+      await context.route("**/*", route => route.request().url().startsWith(origin + "/") ? route.continue() : route.abort());
+      const page = await context.newPage();
+      const runtimeErrors = [];
+      page.on("pageerror", () => runtimeErrors.push("runtime_error"));
+      await page.goto(origin + "/login", { waitUntil: "networkidle" });
+      await page.locator('input[name="email"]').fill(`${id}@example.invalid`);
+      await page.locator('input[name="password"]').fill(password);
+      await page.locator(".qm-login-primary").click();
+      await page.waitForURL(origin + "/auth/onboarding");
+      phase = `onboarding_${type.toLowerCase()}_cards`;
+      assert.equal(await page.locator('button[name="accountType"]').count(), 3);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
+      phase = `onboarding_${type.toLowerCase()}_submit`;
+      await page.locator(`button[value="${type}"]`).click();
+      await page.waitForURL(origin + (type === "STUDENT" ? "/model-test" : "/dashboard"), { waitUntil: "networkidle" });
+      phase = `onboarding_${type.toLowerCase()}_persistence`;
+      const current = await db.user.findUniqueOrThrow({ where: { id } });
+      assert.equal(current.role, type === "STUDENT" ? "STUDENT" : "TEACHER");
+      assert.equal((await db.setting.findUniqueOrThrow({ where: { key: "account-type:v1:" + id } })).value, type);
+      const session = await (await context.request.get(origin + "/api/auth/session")).json();
+      assert.equal(session.user.role, current.role);
+      phase = `onboarding_${type.toLowerCase()}_label`;
+      if (type === "CONTRIBUTOR") assert.ok((await page.locator("body").innerText()).toLowerCase().includes("contributor"));
+      phase = `onboarding_${type.toLowerCase()}_repeat`;
+      await page.goto(origin + "/auth/onboarding", { waitUntil: "networkidle" });
+      assert.notEqual(new URL(page.url()).pathname, "/auth/onboarding");
+      assert.deepEqual(runtimeErrors, []);
+      await context.close();
+      console.log(`PASS isolated one-time onboarding ${type}; not a Google provider verification`);
     }
   } finally {
     try {

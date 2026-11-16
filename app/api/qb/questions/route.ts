@@ -50,7 +50,7 @@ export async function POST(req: Request) {
   if (!ids.length) return NextResponse.json({ items: [] });
 
   const user = (await auth())?.user;
-  if (!user?.id)
+  if (!user?.id || user.role === "STUDENT")
     return NextResponse.json({ error: "লগইন করুন।" }, { status: 401 });
   try {
     await requirePaidQuestions(user.id, ids);

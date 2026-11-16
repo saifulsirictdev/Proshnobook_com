@@ -4,7 +4,8 @@ import { captureReadyVault } from "@/lib/ready-vault";
 import { revalidatePath } from "next/cache";
 export async function saveReadySourceCheckpoint(receiptId: string) {
   try {
-    const id = (await auth())?.user?.id;
+    const session = await auth();
+    const id = session?.user?.role === "STUDENT" ? null : session?.user?.id;
     if (!id || !/^[a-f0-9]{64}$/.test(receiptId)) throw Error("Unauthorized");
     await captureReadyVault(id, receiptId);
     revalidatePath("/ready-papers/saved");

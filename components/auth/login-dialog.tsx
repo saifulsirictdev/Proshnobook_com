@@ -248,6 +248,9 @@ export default function LoginDialog({
         <input type="hidden" name="next" value={next} />
         <GoogleButton />
       </form>
+      <p className="mt-2 text-center text-xs text-slate-600">
+        নতুন Google অ্যাকাউন্টে Teacher, Student বা Contributor পরিচয় বেছে নিন। পুরোনো অ্যাকাউন্টের পরিচয় অপরিবর্তিত থাকবে।
+      </p>
       {!email && (
         <button
           type="button"

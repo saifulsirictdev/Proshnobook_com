@@ -21,7 +21,7 @@ import { revalidatePath } from "next/cache";
 export type MarketFormState = { ok: boolean; message: string };
 async function actor() {
   const session = await auth();
-  if (!session?.user?.id) throw new Error("আগে লগইন করুন।");
+  if (!session?.user?.id || session.user.role === "STUDENT") throw new Error("আগে লগইন করুন।");
   const user = await db.user.findUnique({
     where: { id: session.user.id },
     select: { id: true, role: true },

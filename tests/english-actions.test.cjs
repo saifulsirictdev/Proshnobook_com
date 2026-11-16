@@ -127,7 +127,10 @@ test("English generation denies unauthorized users before provider or database w
   assert.equal((await h.actions.generateEnglishPaper(selection)).ok, false);
   assert.equal(h.calls, 0);
   assert.equal(h.rows.size, 0);
-  h.setUser({ id: "", role: "STUDENT" });
+  h.setUser({ id: "student", role: "STUDENT" });
+  assert.equal((await h.actions.generateEnglishPaper(selection)).ok, false);
+  assert.equal(h.calls, 0);
+  h.setUser({ id: "", role: "TEACHER" });
   assert.equal((await h.actions.generateEnglishPaper(selection)).ok, false);
   assert.equal(h.calls, 0);
   assert.equal(h.rows.size, 0);
@@ -392,12 +395,12 @@ test("partial bank hit sends only missing task to provider and combines validate
   }
 });
 
-test("signed-in STUDENT can generate, save, list and reopen only their own English drafts", async () => {
+test("signed-in TEACHER can generate, save, list and reopen only their own English drafts", async () => {
   const old = process.env.DEEPSEEK_API_KEY;
   process.env.DEEPSEEK_API_KEY = "test-only";
   try {
     const h = harness();
-    h.setUser({ id: "student:one", role: "STUDENT" });
+    h.setUser({ id: "student:one", role: "TEACHER" });
     const r = await h.actions.generateEnglishPaper(selection);
     assert.equal(r.ok, true);
     assert.equal(h.calls, 1);
@@ -418,7 +421,7 @@ test("signed-in STUDENT can generate, save, list and reopen only their own Engli
       ),
     );
     for (const u of [
-      { id: "student:two", role: "STUDENT" },
+      { id: "student:two", role: "TEACHER" },
       { id: "teacher:other", role: "TEACHER" },
       null,
     ]) {
@@ -432,12 +435,12 @@ test("signed-in STUDENT can generate, save, list and reopen only their own Engli
     else process.env.DEEPSEEK_API_KEY = old;
   }
 });
-test("STUDENT keeps one-generation lock and ten-per-day quota; never gets ADMIN bypass", async () => {
+test("TEACHER keeps one-generation lock and ten-per-day quota; never gets ADMIN bypass", async () => {
   const old = process.env.DEEPSEEK_API_KEY;
   process.env.DEEPSEEK_API_KEY = "test-only";
   try {
     const h = harness();
-    h.setUser({ id: "student:quota", role: "STUDENT" });
+    h.setUser({ id: "student:quota", role: "TEACHER" });
     const concurrent = await Promise.all([
       h.actions.generateEnglishPaper(selection),
       h.actions.generateEnglishPaper(selection),
@@ -454,12 +457,12 @@ test("STUDENT keeps one-generation lock and ten-per-day quota; never gets ADMIN 
     else process.env.DEEPSEEK_API_KEY = old;
   }
 });
-test("STUDENT interrupted generation checkpoints remain private and pending approval", async () => {
+test("TEACHER interrupted generation checkpoints remain private and pending approval", async () => {
   const old = process.env.DEEPSEEK_API_KEY;
   process.env.DEEPSEEK_API_KEY = "test-only";
   try {
     const h = harness();
-    h.setUser({ id: "student:recover", role: "STUDENT" });
+    h.setUser({ id: "student:recover", role: "TEACHER" });
     h.setProvider(async (s, options) => {
       await options.onContent(
         JSON.stringify({
@@ -484,7 +487,7 @@ test("STUDENT interrupted generation checkpoints remain private and pending appr
     const record = JSON.parse(records[0][1]);
     assert.equal(record.status, "PENDING");
     assert.ok(await h.actions.loadEnglishPaper(record.draftKey));
-    h.setUser({ id: "student:other", role: "STUDENT" });
+    h.setUser({ id: "student:other", role: "TEACHER" });
     assert.equal(await h.actions.loadEnglishPaper(record.draftKey), null);
   } finally {
     if (old === undefined) delete process.env.DEEPSEEK_API_KEY;

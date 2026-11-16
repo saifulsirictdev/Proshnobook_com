@@ -11,7 +11,7 @@ export default async function LoginPage({
   searchParams: Promise<{ next?: string }>;
 }) {
   const next = safeLoginRedirect((await searchParams).next);
-  if ((await auth())?.user?.id) redirect(next);
+  if ((await auth())?.user?.id) redirect(`/auth/landing?${new URLSearchParams({ next })}`);
   return (
     <main className="qm-auth-background">
       <LoginDialog next={next} />

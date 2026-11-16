@@ -26,7 +26,7 @@ export async function checkPaperTopics(
   raw: unknown,
 ): Promise<{ ok: true; topics: string[] } | { ok: false; error: string }> {
   const user = (await auth())?.user;
-  if (!user?.id) return { ok: false, error: "আগে লগইন করুন।" };
+  if (!user?.id || user.role === "STUDENT") return { ok: false, error: "আগে লগইন করুন।" };
   const p = selectionSchema.safeParse(raw);
   if (!p.success)
     return {
@@ -77,7 +77,7 @@ export async function preparePaperTopic(
   | { ok: false; error: string }
 > {
   const user = (await auth())?.user;
-  if (!user?.id) return { ok: false, error: "আগে লগইন করুন।" };
+  if (!user?.id || user.role === "STUDENT") return { ok: false, error: "আগে লগইন করুন।" };
   const p = selectionSchema
     .extend({ topics: selectionSchema.shape.topics.removeDefault().length(1) })
     .safeParse(raw);

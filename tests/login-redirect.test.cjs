@@ -73,7 +73,7 @@ test("server login actions honor only sanitized credential/Google return paths",
   fd.set("password", "test-password");
   fd.set("next", "/wallet");
   await actionModule.exports.login("", fd);
-  assert.equal(calls[0].options.redirectTo, "/wallet");
+  assert.equal(calls[0].options.redirectTo, "/auth/landing?next=%2Fwallet");
   await actionModule.exports.googleLogin(fd);
   assert.equal(calls[1].options.redirectTo, "/auth/landing?next=%2Fwallet");
   fd.set("next", "//evil.invalid");

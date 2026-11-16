@@ -9,7 +9,7 @@ const {
 withDisposableWalletDatabase(async (db) => {
   await db.user.createMany({
     data: [
-      { id: "u", email: "student@example.invalid", role: "STUDENT" },
+      { id: "u", email: "creator@example.invalid", role: "TEACHER" },
       { id: "a", email: "admin@example.invalid", role: "ADMIN" },
     ],
   });

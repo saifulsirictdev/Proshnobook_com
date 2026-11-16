@@ -22,6 +22,7 @@ async function render(role) {
             email: "test@example.com",
           }),
         },
+        setting: { findUnique: async () => null },
         teacherProfile: { findUnique: async () => null },
       },
     },
@@ -88,7 +89,7 @@ test("package button targets ready purchases and withdrawal follows it, without 
   assert.ok(html.includes('href="/ready-papers"'));
 });
 test("marketplace shortcuts keep admin-only review and public catalog/library destinations", async () => {
-  for (const role of ["ADMIN", "TEACHER", "STUDENT"]) {
+  for (const role of ["ADMIN", "TEACHER"]) {
     const html = await render(role);
     assert.equal(html.includes('href="/admin/marketplace"'), role === "ADMIN");
     assert.ok(html.includes('href="/marketplace" class="tw-market-button'));
