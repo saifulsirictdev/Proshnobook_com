@@ -42,3 +42,8 @@ test('starter retains database subjects and existing prepare/payment flow with r
   assert.ok(!source.includes('p.set("examId"'));
   assert.ok(source.includes('disabled={!subject}'));
 });
+test('document metadata resolves before rendering for stable browser hydration', async () => {
+  const config = (await import('../next.config.mjs')).default;
+  assert.ok(config.htmlLimitedBots.test('Mozilla/5.0 Chrome/130'));
+  assert.ok(config.htmlLimitedBots.test('Googlebot'));
+});
