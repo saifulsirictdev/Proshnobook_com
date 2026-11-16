@@ -85,7 +85,8 @@ jobs:
               var allowed = ['DIV','SPAN','P','MAIN','HEADER','FOOTER','NAV','SCRIPT','LINK','FORM','INPUT','BUTTON','HTML','BODY','META','TITLE','A','SECTION','H1','H2','STYLE'];
               var wanted = typeof fiber.type === 'string' ? fiber.type.toUpperCase() : 'COMPONENT';
               var actual = nextHydratableInstance && nextHydratableInstance.nodeName;
-              console.error('HYDRATION_STRUCTURE_' + (allowed.includes(wanted) ? wanted : 'OTHER') + '_' + (allowed.includes(actual) ? actual : 'OTHER'));
+              var parent = nextHydratableInstance && nextHydratableInstance.parentNode && nextHydratableInstance.parentNode.nodeName;
+              console.error('HYDRATION_STRUCTURE_' + (allowed.includes(wanted) ? wanted : 'OTHER') + '_' + (allowed.includes(actual) ? actual : 'OTHER') + '_' + (allowed.includes(parent) ? parent : 'OTHER'));
             `);
             fs.writeFileSync(file, text);
           }

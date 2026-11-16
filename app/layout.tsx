@@ -148,7 +148,8 @@ export default async function RootLayout({
             />
           </PathGate>
 
-          <main>{children}</main>
+          {/* Each route owns its main landmark; do not nest main elements. */}
+          <div id="site-content">{children}</div>
 
           <PathGate>
             <SiteFooter />

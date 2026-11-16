@@ -149,7 +149,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       const errors = [];
       page.on("console", (message) => {
         const text = message.text();
-        if (/^HYDRATION_STRUCTURE_[A-Z]+_[A-Z]+$/.test(text)) console.error(`::error::${phase}_${text}`);
+        if (/^HYDRATION_STRUCTURE_[A-Z]+_[A-Z]+_[A-Z]+$/.test(text)) console.error(`::error::${phase}_${text}`);
       });
       page.on("pageerror", (error) => {
         // Only allowlisted numeric React codes and our own phase labels reach CI.
