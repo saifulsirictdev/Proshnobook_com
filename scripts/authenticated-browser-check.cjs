@@ -315,6 +315,8 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         const row = await db.question.findFirstOrThrow({ where: { text: fixture.items[0].text } });
         assert.equal(row.approved, false);
         assert.equal(row.category, "Class 6");
+        phase = "admin_mcq_repeat_submit";
+        await page.getByRole("checkbox").check();
         await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
         phase = "admin_mcq_repeat_status";
         await page.getByRole("status").filter({ hasText: "0টি Pending" }).waitFor();
