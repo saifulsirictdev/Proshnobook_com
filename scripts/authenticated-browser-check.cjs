@@ -296,6 +296,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       if (role === "ADMIN") {
         phase = "admin_mcq_import_pending_and_repeat";
         await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
+        await page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true }).click();
         const fixture = {
           subject: "গণিত", topic: "১. স্বাভাবিক সংখ্যা ও ভগ্নাংশ", book: "Synthetic CI fixture, not textbook content", edition: "test",
           sourceUrl: "https://example.invalid/synthetic-only", lang: "Bangla",
@@ -325,6 +326,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 1);
         phase = "admin_prepared_batch_load_read_only";
         await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
+        await page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true }).click();
         const countBeforePrepared = await db.question.count();
         await page.getByRole("button", { name: "প্রস্তুত ১০০টি প্রশ্ন লোড করুন", exact: true }).click();
         const loaded = JSON.parse(await page.getByLabel("প্রশ্নের JSON", { exact: true }).inputValue());
