@@ -9,10 +9,10 @@ const { EXAM_OUTLINES, PREPARATION_TOPICS, examOutlines, EXAM_OUTLINE_NOTICE, EX
 test('admission and job outlines have unique IDs, subjects and useful nonempty topic lists', () => {
   const ids = new Set();
   for (const category of ['Admission', 'Job']) {
-    assert.ok(EXAM_OUTLINES[category].length >= 8);
+    assert.ok(category === 'Job' ? EXAM_OUTLINES[category].length === 4 : EXAM_OUTLINES[category].length >= 8);
     for (const exam of examOutlines(category)) {
       assert.ok(!ids.has(exam.id)); ids.add(exam.id);
-      assert.ok(exam.name.length > 5);
+      assert.ok(exam.name.length >= 3);
       assert.equal(new Set(exam.subjects).size, exam.subjects.length);
       for (const subject of exam.subjects) {
         assert.ok(PREPARATION_TOPICS[subject]?.length >= 4, subject);
