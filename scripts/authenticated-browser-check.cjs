@@ -158,6 +158,11 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       });
       assert.ok([302, 303, 307, 308].includes(unauthenticated.status()));
       await page.goto(origin + "/login?next=/dashboard");
+      await page.locator(".qm-login-mark").scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => {
+        const image = document.querySelector(".qm-login-mark");
+        return image?.complete && image.naturalWidth === 512;
+      });
       await page
         .locator('input[name="email"]')
         .fill(`${role.toLowerCase()}@example.invalid`);
@@ -202,6 +207,13 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           const response = await page.goto(origin + pathname);
           assert.equal(response.status(), 200);
           assert.equal(new URL(page.url()).pathname, pathname);
+          if (pathname === "/dashboard") {
+            await page.locator(".qm-wordmark-mark").scrollIntoViewIfNeeded();
+            await page.waitForFunction(() => {
+              const image = document.querySelector(".qm-wordmark-mark");
+              return image?.complete && image.naturalWidth === 512;
+            });
+          }
           assert.ok(await page.locator("h1").count());
           assert.ok(
             !(await page.locator("body").innerText()).includes(

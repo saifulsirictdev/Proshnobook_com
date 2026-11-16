@@ -8,6 +8,7 @@ on:
       - '.github/workflows/public-health.yml'
       - 'scripts/public-*.cjs'
       - 'tests/public-health-monitor.test.cjs'
+      - 'tests/public-brand-check.test.cjs'
 permissions:
   contents: read
 concurrency:
@@ -71,3 +72,5 @@ jobs:
         run: node scripts/public-health-check.cjs
       - name: Anonymous GET-only production release smoke
         run: node scripts/public-release-check.cjs
+      - name: Owner brand assets and install metadata (anonymous GET only)
+        run: node scripts/public-brand-check.cjs
