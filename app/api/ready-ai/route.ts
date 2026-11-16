@@ -23,7 +23,7 @@ export async function POST(request: Request) {
   )
     return Response.json({ error: "অবৈধ অনুরোধ।" }, { status: 403 });
   const session = await auth();
-  if (!session?.user?.id)
+  if (!session?.user?.id || session.user.role === "STUDENT")
     return Response.json({ error: "লগইন করুন।" }, { status: 401 });
   let input: z.infer<typeof inputSchema>;
   try {

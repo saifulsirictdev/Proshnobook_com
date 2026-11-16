@@ -14,7 +14,8 @@ const digest = (v: unknown) =>
   createHash("sha256").update(JSON.stringify(v)).digest("hex");
 async function ownedReceipt(receiptId: string) {
   if (!/^[a-f0-9]{64}$/.test(receiptId)) throw Error("Invalid receipt");
-  const ownerId = (await auth())?.user?.id;
+  const session = await auth();
+  const ownerId = session?.user?.role === "STUDENT" ? null : session?.user?.id;
   if (
     !ownerId ||
     !(await db.user.findUnique({

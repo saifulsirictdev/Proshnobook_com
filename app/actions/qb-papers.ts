@@ -10,7 +10,7 @@ const PREFIX = "qbpaper:";
 
 async function paperUser() {
   const s = await auth();
-  return s?.user?.id ? s.user : null;
+  return s?.user?.id && s.user.role !== "STUDENT" ? s.user : null;
 }
 
 const Save = z.object({

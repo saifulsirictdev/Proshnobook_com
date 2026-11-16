@@ -23,7 +23,9 @@ export default async function PurchasedPaper({
 }) {
   const { id } = await params;
   if (!/^[a-f0-9]{64}$/.test(id)) notFound();
-  const buyerId = (await auth())?.user?.id;
+  const session = await auth();
+  if (session?.user?.role === "STUDENT") redirect(`/dashboard/library/${id}`);
+  const buyerId = session?.user?.id;
   if (!buyerId) redirect(`/login?next=/dashboard/library/${id}`);
   if (
     !(await db.user.findUnique({

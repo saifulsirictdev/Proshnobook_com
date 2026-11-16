@@ -644,3 +644,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 
 - Restyled the three getting-started helper links as compact indigo/violet/teal rounded button-style links, retaining their original labels and destinations. Wrapping layout, 44px minimum touch height and keyboard focus rings support mobile and keyboard use.
 - Added rendered regression coverage for both signed-in/anonymous views. Selection stays above guidance; no auth/payment/question flow changes.
+
+## Phase 63 — Google signup identities and exam-only Students
+
+- Owner selected Contributor = Teacher features (never Admin), Student = exams/practice, replacing the prior all-role paper-creation policy.
+- Added post-Google-verification first-signup identity cards, transactional pending/one-time selection and authoritative role refresh. Existing accounts/Admin are preserved. Contributor has distinct stored identity and Dashboard label backed by existing Teacher capabilities; no enum migration or Admin self-selection.
+- Student landing/mobile nav now points to live tests/practice; creator page/action/API boundaries block Student paper editing, generation, PDF extraction/upload and publication submissions. Existing immutable purchased copies, wallet/receipts and records remain intact.
+- Tests cover choices, malicious/repeated submission, Google callback source guards, stale role refresh, creator ownership/quotas and negative Student access. Required real isolated browser flow adds synthetic pending identity choices and Student route/API boundary checks; actual Google provider remains an external acceptance check. See `docs/operations/ACCOUNT-ONBOARDING.md`.

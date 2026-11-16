@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   const session = await auth();
-  if (!session?.user?.id)
+  if (!session?.user?.id || session.user.role === "STUDENT")
     return NextResponse.json(
       { success: false, error: "আগে লগইন করুন।" },
       { status: 401 },

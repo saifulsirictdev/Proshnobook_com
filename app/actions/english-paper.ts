@@ -20,7 +20,7 @@ import {
 import { paperHeaderSchema } from "@/lib/paper-header";
 async function owner() {
   const user = (await auth())?.user;
-  return user?.id ? user : null;
+  return user?.id && user.role !== "STUDENT" ? user : null;
 }
 
 function makeDraft(

@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import Link from "next/link";
 import { auth } from "@/auth";
 import { landingMetadata } from "@/lib/seo";
@@ -12,7 +13,9 @@ export const metadata = landingMetadata(
 );
 
 export default async function QuestionBuilderStart() {
-  const userId = (await auth())?.user?.id;
+  const session = await auth();
+  if (session?.user?.role === "STUDENT") redirect("/model-test");
+  const userId = session?.user?.id;
   const rows = userId
     ? await db.question
         .groupBy({ by: ["category", "subject"], where: { approved: true } })

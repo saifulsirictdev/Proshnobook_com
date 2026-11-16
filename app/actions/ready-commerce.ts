@@ -52,7 +52,7 @@ const receiptKey = (userId: string, id: string) =>
   `readyowned:v1:${userId}:${id}`;
 async function userId() {
   const s = await auth();
-  if (!s?.user?.id) throw new WalletError("লগইন করুন।");
+  if (!s?.user?.id || s.user.role === "STUDENT") throw new WalletError("লগইন করুন।");
   return s.user.id;
 }
 function error(e: unknown) {

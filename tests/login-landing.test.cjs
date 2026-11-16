@@ -20,16 +20,18 @@ function load(file, mocks) {
 const helper = load("lib/login-redirect.ts", {});
 async function destination({
   id = "user",
-  role = "STUDENT",
+  role = "TEACHER",
   next = "/wallet",
   missing = false,
 } = {}) {
   const page = load("app/auth/landing/page.tsx", {
+    "@/lib/account-type": load("lib/account-type.ts", {}),
     "@/auth": {
       auth: async () => (id ? { user: { id, role: "ADMIN" } } : null),
     },
     "@/lib/db": {
       db: {
+        setting: { findUnique: async () => null },
         user: {
           findUnique: async ({ where }) => {
             assert.equal(where.id, id);
@@ -55,7 +57,8 @@ async function destination({
 }
 test("fresh ADMIN role lands on official profile; other roles preserve safe destinations", async () => {
   assert.equal(await destination({ role: "ADMIN" }), "/teachers/proshnobook");
-  for (const role of ["STUDENT", "TEACHER"]) {
+  assert.equal(await destination({ role: "STUDENT" }), "/model-test");
+  for (const role of ["TEACHER"]) {
     assert.equal(await destination({ role }), "/wallet");
   }
 });

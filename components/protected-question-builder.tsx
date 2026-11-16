@@ -9,5 +9,6 @@ export default async function ProtectedQuestionBuilder({
 }) {
   const session = await auth();
   if (!session?.user?.id) redirect("/login?next=%2Fquestion-builder");
+  if (session.user.role === "STUDENT") redirect("/model-test");
   return <>{children}</>;
 }

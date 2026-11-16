@@ -158,13 +158,13 @@ test("new saves include owner and scoped key; unpaid students cannot save", asyn
   );
 });
 
-test("paid student may save only an owned paper", async () => {
+test("paid student cannot create a paper under exam-only access", async () => {
   const a = api({ id: "s", role: "STUDENT" }, [], true);
   const r = await a.actions.savePaper({
     name: "Paid paper",
     ids: ["q"],
     settings: {},
   });
-  assert.equal(r.ok, true);
-  assert.match(a.created.key, /^qbpaper:s:/);
+  assert.equal(r.ok, false);
+  assert.equal(a.created, undefined);
 });

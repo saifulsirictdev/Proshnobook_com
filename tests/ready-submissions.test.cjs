@@ -17,7 +17,7 @@ const meta = {
 };
 function setup() {
   const store = new Map();
-  let session = { id: "u", role: "STUDENT" },
+  let session = { id: "u", role: "TEACHER" },
     bytes,
     queue = Promise.resolve(),
     tokenOptions;
@@ -197,11 +197,13 @@ async function ready() {
   assert.equal((await s.finalize(p)).ok, true);
   return { s, p };
 }
-test("anonymous blocked; all logged-in roles can submit but cannot self-publish or impersonate owner", async () => {
+test("anonymous blocked; creator roles can submit but cannot self-publish or impersonate owner", async () => {
   const s = setup();
   s.setSession(null);
   await assert.rejects(() => s.begin());
-  for (const role of ["STUDENT", "TEACHER", "USER"]) {
+  s.setSession({ id: "student", role: "STUDENT" });
+  await assert.rejects(() => s.begin());
+  for (const role of ["TEACHER"]) {
     s.setSession({ id: "u", role });
     const p = await s.actions.beginReadyPart({
       meta,
@@ -222,13 +224,13 @@ test("anonymous blocked; all logged-in roles can submit but cannot self-publish 
 test("owner-bound upload token/resume/finalize prevents cross-user access and replacement", async () => {
   const { s, p } = await ready();
   assert.equal((await s.token(p)).status, 400);
-  s.setSession({ id: "v", role: "STUDENT" });
+  s.setSession({ id: "v", role: "TEACHER" });
   assert.equal((await s.finalize(p)).ok, false);
   await assert.rejects(() => s.actions.resumeReadyPart(p.id));
   assert.equal((await s.token(p)).status, 400);
   const own = await s.begin();
   assert.equal((await s.token(own)).status, 200);
-  s.setSession({ id: "u", role: "STUDENT" });
+  s.setSession({ id: "u", role: "TEACHER" });
   assert.equal((await s.token(own)).status, 400);
 });
 test("finalization queues only validated PDF, persists ownership and indexes, remains idempotent", async () => {
@@ -310,9 +312,9 @@ test("reason-required rejection/changes keeps owner access; owner revises but ca
     true,
   );
   assert.equal(s.row(p.id).reviewNote, "Fix year");
-  s.setSession({ id: "v", role: "STUDENT" });
+  s.setSession({ id: "v", role: "TEACHER" });
   assert.equal((await s.review.reviseReadySubmission(p.id, meta)).ok, false);
-  s.setSession({ id: "u", role: "STUDENT" });
+  s.setSession({ id: "u", role: "TEACHER" });
   assert.equal(
     (
       await s.review.reviseReadySubmission(p.id, {
@@ -397,7 +399,7 @@ test("pending publication cannot bypass dedicated review through legacy admin me
     ).ok,
     true,
   );
-  s.setSession({ id: "u", role: "STUDENT" });
+  s.setSession({ id: "u", role: "TEACHER" });
   assert.equal((await s.review.reviseReadySubmission(p.id, meta)).ok, false);
   assert.equal(s.row(p.id).published, true);
 });

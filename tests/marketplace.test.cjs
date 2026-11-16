@@ -354,7 +354,7 @@ test("admin cannot approve an empty visible paper but can request corrections", 
 });
 
 test("ADMIN submission publishes immediately with server validation and an audit; teacher remains pending", async () => {
-  for (const role of ["ADMIN", "TEACHER", "STUDENT"]) {
+  for (const role of ["ADMIN", "TEACHER"]) {
     const x = setup();
     x.role("u", role);
     const result = await x.actions.submitMarketPaper({}, x.form());

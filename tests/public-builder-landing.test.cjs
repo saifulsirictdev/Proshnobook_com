@@ -27,6 +27,7 @@ async function renderLanding(id) {
   let calls = 0;
   const page = load("app/question-builder/page.tsx", {
     "@/lib/seo": seo,
+    "next/navigation": { redirect: (path) => { throw Error("redirect:" + path); } },
     "@/auth": { auth: async () => (id ? { user: { id } } : null) },
     "@/lib/db": {
       db: {

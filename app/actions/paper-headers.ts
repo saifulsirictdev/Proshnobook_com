@@ -5,7 +5,8 @@ import { paperHeaderSchema, type PaperHeaderConfig } from "@/lib/paper-header";
 import { randomUUID } from "crypto";
 export type SavedHeader = { id: string; header: PaperHeaderConfig };
 async function ownerPrefix() {
-  const id = (await auth())?.user?.id;
+  const session = await auth();
+  const id = session?.user?.role === "STUDENT" ? null : session?.user?.id;
   if (!id) throw new Error("হেডার সেভ করতে লগইন করুন।");
   return `qbheader:${id}:`;
 }

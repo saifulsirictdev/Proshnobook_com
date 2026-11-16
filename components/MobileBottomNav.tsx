@@ -4,22 +4,23 @@ import { usePathname } from "next/navigation";
 import { Home, FolderOpen, FilePlus2, Wallet, UserRound } from "lucide-react";
 import "./mobile-bottom-nav.css";
 export default function MobileBottomNav({
-  user: _user,
+  user,
 }: {
   user?: { name?: string | null; role?: string | null } | null;
 }) {
   const pathname = usePathname() || "/";
+  const student = user?.role === "STUDENT";
   const items = [
     { label: "হোম", href: "/", icon: Home, active: pathname === "/" },
     {
-      label: "সংরক্ষিত",
-      href: "/question-builder/saved",
+      label: student ? "প্র্যাকটিস" : "সংরক্ষিত",
+      href: student ? "/exam" : "/question-builder/saved",
       icon: FolderOpen,
       active: pathname.includes("/saved"),
     },
     {
-      label: "প্রশ্ন তৈরি",
-      href: "/question-builder",
+      label: student ? "Live Exam" : "প্রশ্ন তৈরি",
+      href: student ? "/model-test" : "/question-builder",
       icon: FilePlus2,
       featured: true,
       active:

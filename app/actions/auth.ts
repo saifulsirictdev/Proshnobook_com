@@ -19,7 +19,7 @@ export async function login(_: string, fd: FormData): Promise<string> {
   try {
     await signIn("credentials", {
       ...p.data,
-      redirectTo: safeLoginRedirect(fd.get("next")),
+      redirectTo: `/auth/landing?${new URLSearchParams({ next: safeLoginRedirect(fd.get("next")) })}`,
     });
   } catch (e) {
     if (e instanceof AuthError) return "Email or password is wrong.";

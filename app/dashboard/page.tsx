@@ -53,6 +53,8 @@ export default async function Dashboard({
   if (!s?.user?.id) redirect("/login?next=/dashboard");
   const user = await db.user.findUnique({ where: { id: s.user.id } });
   if (!user) redirect("/login?next=/dashboard");
+  if (user.role === "STUDENT") redirect("/model-test");
+  const accountIdentity = await db.setting.findUnique({ where: { key: "account-type:v1:" + user.id } });
   const sp = await searchParams;
   const profile = await db.teacherProfile
     .findUnique({ where: { userId: user.id } })
@@ -102,7 +104,7 @@ export default async function Dashboard({
           </Link>
         )}
         <section className="tw-hero">
-          <span className="tw-eyebrow">আপনার প্রশ্ন তৈরির কর্মক্ষেত্র</span>
+          <span className="tw-eyebrow">{accountIdentity?.value === "CONTRIBUTOR" ? "Contributor · আপনার প্রশ্ন তৈরির কর্মক্ষেত্র" : "আপনার প্রশ্ন তৈরির কর্মক্ষেত্র"}</span>
           <p>{greeting()},</p>
           <h1>{user.name || "স্বাগতম"}</h1>
           <Link
