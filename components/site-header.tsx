@@ -170,6 +170,8 @@ export default function SiteHeader({
               {/* Owner-supplied P brand mark; personal/institution images remain separate. */}
               <div className="flex shrink-0 h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-white shadow-md shadow-pink-500/15 group-hover:scale-105 transition-transform">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src="/proshnobook-p-logo.png"
                   width={40}
                   height={40}

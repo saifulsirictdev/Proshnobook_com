@@ -10,6 +10,8 @@ export default function BrandWordmark({
   return (
     <span className="qm-wordmark">
       <img
+        loading="lazy"
+        decoding="async"
         src="/proshnobook-p-logo.png"
         width={36}
         height={36}
