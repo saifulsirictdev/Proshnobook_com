@@ -77,3 +77,12 @@ jobs:
           node scripts/pdf-browser-check.cjs
       - name: Production build (no production credentials)
         run: npm run build
+      - name: Full built app Credentials roles and mobile browser regression (isolated DB)
+        shell: bash
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/pdf-browser-tools/node_modules"
+          export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
+          test -x "$CHROMIUM_EXECUTABLE_PATH"
+          node scripts/authenticated-browser-check.cjs
+        env:
+          WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
