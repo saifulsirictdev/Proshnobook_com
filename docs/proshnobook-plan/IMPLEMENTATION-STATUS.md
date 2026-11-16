@@ -669,3 +669,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Unified panel/table chrome for Dashboard, saved papers and Ready/PDF tools; marketplace filter panel, English setup controls, database selector sidebar/panels get matching spacing. Practice setup uses a real two-column desktop form with full-width primary action. Disabled and keyboard-focus form states retained.
 - Explicit screen-only/feature-control selectors avoid mobile, A4 paper geometry, document tables/images, exam player answers and print. No account, wallet, publication or payment behavior changed.
 - Added desktop scope regression plus isolated Teacher browser route/overflow smoke checks at 1024 and 1440, including computed two-column practice form. Existing authenticated 390/1280 and print/finance CI remain required. These checks are layout/function regressions, not a claim of manual visual acceptance of every screen.
+
+## Phase 67 — Safe Class 6 MCQ ingestion infrastructure
+
+- Owner authorized staged textbook-based MCQs: 100/chapter target, 50 fallback; CQ/short later. Added ADMIN-only JSON batch preview/save using deployed Prisma binding (no credential export/config changes). Strict 1–100 item schema, exact Class6 selector, source/page provenance, four distinct choices and valid answer key.
+- Draft-only inserts, normalized-stem legacy duplicate checks, deterministic IDs, serializable retry and transactional receipt provide safe repeatable batches. Existing question approvals stay separate; automatic structural validation is not accuracy certification.
+- New chapter counts and bounded audit receipt viewer linked from Admin questions. No production DB queries/writes yet; no verified textbook questions prepared because PDFs are not available. Current selector inventory needs official edition/contents matching. See docs/question-bank/IMPORT-OPERATIONS.md and CLASS-6-PREFLIGHT.md.
+- Typecheck and focused import tests pass locally. Required CI adds real Admin preview/import/repeat and pending/audit assertions against disposable PostgreSQL, with existing role/build/finance/print regressions.
