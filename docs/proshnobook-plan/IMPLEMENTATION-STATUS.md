@@ -683,3 +683,9 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Exact Fraction arithmetic, brute divisor/multiple/prime checks, normalized stem uniqueness, rationally distinct choices and balanced answer keys validated reproducibly. All batch records pass existing strict importer schema.
 - Source discovery used internet search chapter indices only; full official textbook pages not retrieved. No invented textbook page citations: each item explicitly states original practice/page verification outstanding. Teacher/wording/full 2026 syllabus alignment remains pending. This is NOT 100 officially sourced or live approved records.
 - No production DB queries/import/publication or automatic approval. See content/question-bank/class-6/README.md. Next stage requires source/subject review before approval, then subsequent chapters.
+
+## Phase 69 — Prepared batch accessible from Admin
+
+- Connected the 100-item original Class6 mathematics chapter1 draft to Admin's guarded import page. One button loads editable JSON; preview and explicit Pending save remain separate. Replacing existing edits requires confirmation.
+- Clearly labels outstanding official-book/page/teacher review. Adjusted Pending confirmation so it does not falsely claim unavailable textbook pages were verified. No automatic approval, credentials/config changes or live DB mutations.
+- Added actual prepared-batch load/preview/read-only/100-pending assertions to isolated Admin browser CI. Existing role, idempotency, arithmetic, finance and print tests remain required.
