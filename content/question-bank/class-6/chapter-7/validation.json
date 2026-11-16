@@ -1,0 +1,1641 @@
+{
+  "status": "DRAFT_SUBJECT_REVIEW_PENDING",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 30,
+    "SQ": 30
+  },
+  "chapter": 7,
+  "topic": "৭. ব্যবহারিক জ্যামিতি",
+  "sourceSha256": "ffa30c8b815f49f3326b70ae58c5e17f11c4d8bd6d854eb84153fab8d593f23f",
+  "printedPagesVisuallyRead": [
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136
+  ],
+  "fullChapterRead": true,
+  "independentTeacherApproved": false,
+  "productionImported": 0,
+  "problemFamilies": 10,
+  "MCQ_objectiveTemplates": 20,
+  "exactDuplicateStems": 0,
+  "checks": "exact Fraction calculations, scene invariants, options distinct, counts and labels",
+  "limitations": [
+    "১০টি সমস্যা-পরিবার; প্রতি পরিবারের ২টি objective-এর ৫ variant-এ ১০০ MCQ, তিনটি করে variant-এ ৩০ CQ এবং তিনটি করে variant-এ ৩০ SQ। স্বতন্ত্র ১৬০ দক্ষতা নয়।",
+    "গণনা/গঠন পরীক্ষা হয়েছে; স্বাধীন শিক্ষক ও প্রশ্নের difficulty/মানবণ্টন অনুমোদন বাকি।",
+    "নির্বাচিত পৃষ্ঠা ধারণাসূত্র, প্রশ্ন বই থেকে হুবহু উদ্ধৃতি নয়; প্রতিটি উপবিষয়ের পূর্ণ coverage দাবি নয়।",
+    "প্রয়োজনীয় জ্যামিতিক চিত্র/লেখচিত্র শিক্ষার্থীকে আঁকতে বলা হয়েছে; সমাধানে ধাপ দেওয়া আছে, সমাপ্ত চিত্র যুক্ত নয়। চিত্রভিত্তিক শিক্ষক যাচাই বাকি।"
+  ],
+  "items": [
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "40",
+      "choices": [
+        "40",
+        "41",
+        "39",
+        "42"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "8",
+      "choices": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "42",
+      "choices": [
+        "43",
+        "41",
+        "42",
+        "44"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "42/5",
+      "choices": [
+        "47/5",
+        "37/5",
+        "52/5",
+        "42/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "44",
+      "choices": [
+        "44",
+        "45",
+        "43",
+        "46"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "44/5",
+      "choices": [
+        "49/5",
+        "44/5",
+        "39/5",
+        "54/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "46",
+      "choices": [
+        "47",
+        "45",
+        "46",
+        "48"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "46/5",
+      "choices": [
+        "51/5",
+        "41/5",
+        "56/5",
+        "46/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "48",
+      "choices": [
+        "48",
+        "49",
+        "47",
+        "50"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান রেখাংশ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "48/5",
+      "choices": [
+        "53/5",
+        "48/5",
+        "43/5",
+        "58/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 1,
+      "objective": 1,
+      "expected": "2",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 1,
+      "objective": 2,
+      "expected": "4",
+      "choices": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 2,
+      "objective": 1,
+      "expected": "21/10",
+      "choices": [
+        "21/10",
+        "31/10",
+        "11/10",
+        "41/10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 2,
+      "objective": 2,
+      "expected": "21/5",
+      "choices": [
+        "26/5",
+        "21/5",
+        "16/5",
+        "31/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 3,
+      "objective": 1,
+      "expected": "11/5",
+      "choices": [
+        "16/5",
+        "6/5",
+        "11/5",
+        "21/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 3,
+      "objective": 2,
+      "expected": "22/5",
+      "choices": [
+        "27/5",
+        "17/5",
+        "32/5",
+        "22/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 4,
+      "objective": 1,
+      "expected": "23/10",
+      "choices": [
+        "23/10",
+        "33/10",
+        "13/10",
+        "43/10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 4,
+      "objective": 2,
+      "expected": "23/5",
+      "choices": [
+        "28/5",
+        "23/5",
+        "18/5",
+        "33/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 5,
+      "objective": 1,
+      "expected": "12/5",
+      "choices": [
+        "17/5",
+        "7/5",
+        "12/5",
+        "22/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 5,
+      "objective": 2,
+      "expected": "24/5",
+      "choices": [
+        "29/5",
+        "19/5",
+        "34/5",
+        "24/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "1",
+      "choices": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "3",
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "21/20",
+      "choices": [
+        "41/20",
+        "1/20",
+        "21/20",
+        "61/20"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "63/20",
+      "choices": [
+        "83/20",
+        "43/20",
+        "103/20",
+        "63/20"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "11/10",
+      "choices": [
+        "11/10",
+        "21/10",
+        "1/10",
+        "31/10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "33/10",
+      "choices": [
+        "43/10",
+        "33/10",
+        "23/10",
+        "53/10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "23/20",
+      "choices": [
+        "43/20",
+        "3/20",
+        "23/20",
+        "63/20"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "69/20",
+      "choices": [
+        "89/20",
+        "49/20",
+        "109/20",
+        "69/20"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "6/5",
+      "choices": [
+        "6/5",
+        "11/5",
+        "1/5",
+        "16/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চার ভাগ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "18/5",
+      "choices": [
+        "23/5",
+        "18/5",
+        "13/5",
+        "28/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 1,
+      "objective": 1,
+      "expected": "8",
+      "choices": [
+        "9",
+        "7",
+        "8",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 1,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "92",
+        "90"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 2,
+      "objective": 1,
+      "expected": "42/5",
+      "choices": [
+        "42/5",
+        "47/5",
+        "37/5",
+        "52/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 2,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "90",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 3,
+      "objective": 1,
+      "expected": "44/5",
+      "choices": [
+        "49/5",
+        "39/5",
+        "44/5",
+        "54/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 3,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "92",
+        "90"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 4,
+      "objective": 1,
+      "expected": "46/5",
+      "choices": [
+        "46/5",
+        "51/5",
+        "41/5",
+        "56/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 4,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "90",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 5,
+      "objective": 1,
+      "expected": "48/5",
+      "choices": [
+        "53/5",
+        "43/5",
+        "48/5",
+        "58/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 5,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "92",
+        "90"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 1,
+      "objective": 1,
+      "expected": "6",
+      "choices": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 1,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "90",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 2,
+      "objective": 1,
+      "expected": "31/5",
+      "choices": [
+        "36/5",
+        "26/5",
+        "31/5",
+        "41/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 2,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "92",
+        "90"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 3,
+      "objective": 1,
+      "expected": "32/5",
+      "choices": [
+        "32/5",
+        "37/5",
+        "27/5",
+        "42/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 3,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "90",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 4,
+      "objective": 1,
+      "expected": "33/5",
+      "choices": [
+        "38/5",
+        "28/5",
+        "33/5",
+        "43/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 4,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "92",
+        "90"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 5,
+      "objective": 1,
+      "expected": "34/5",
+      "choices": [
+        "34/5",
+        "39/5",
+        "29/5",
+        "44/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 5,
+      "objective": 2,
+      "expected": "90",
+      "choices": [
+        "91",
+        "90",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "30",
+      "choices": [
+        "31",
+        "29",
+        "30",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "150",
+      "choices": [
+        "151",
+        "149",
+        "152",
+        "150"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "34",
+      "choices": [
+        "34",
+        "35",
+        "33",
+        "36"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "146",
+      "choices": [
+        "147",
+        "146",
+        "145",
+        "148"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "38",
+      "choices": [
+        "39",
+        "37",
+        "38",
+        "40"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "142",
+      "choices": [
+        "143",
+        "141",
+        "144",
+        "142"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "42",
+      "choices": [
+        "42",
+        "43",
+        "41",
+        "44"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "138",
+      "choices": [
+        "139",
+        "138",
+        "137",
+        "140"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "46",
+      "choices": [
+        "47",
+        "45",
+        "46",
+        "48"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "134",
+      "choices": [
+        "135",
+        "133",
+        "136",
+        "134"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 1,
+      "objective": 1,
+      "expected": "30",
+      "choices": [
+        "30",
+        "31",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 1,
+      "objective": 2,
+      "expected": "15",
+      "choices": [
+        "16",
+        "15",
+        "14",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 2,
+      "objective": 1,
+      "expected": "34",
+      "choices": [
+        "35",
+        "33",
+        "34",
+        "36"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 2,
+      "objective": 2,
+      "expected": "17",
+      "choices": [
+        "18",
+        "16",
+        "19",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 3,
+      "objective": 1,
+      "expected": "38",
+      "choices": [
+        "38",
+        "39",
+        "37",
+        "40"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 3,
+      "objective": 2,
+      "expected": "19",
+      "choices": [
+        "20",
+        "19",
+        "18",
+        "21"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 4,
+      "objective": 1,
+      "expected": "42",
+      "choices": [
+        "43",
+        "41",
+        "42",
+        "44"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 4,
+      "objective": 2,
+      "expected": "21",
+      "choices": [
+        "22",
+        "20",
+        "23",
+        "21"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 5,
+      "objective": 1,
+      "expected": "46",
+      "choices": [
+        "46",
+        "47",
+        "45",
+        "48"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 5,
+      "objective": 2,
+      "expected": "23",
+      "choices": [
+        "24",
+        "23",
+        "22",
+        "25"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 1,
+      "objective": 1,
+      "expected": "15",
+      "choices": [
+        "16",
+        "14",
+        "15",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 1,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "29",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 2,
+      "objective": 1,
+      "expected": "17",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "19"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 2,
+      "objective": 2,
+      "expected": "34",
+      "choices": [
+        "35",
+        "34",
+        "33",
+        "36"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 3,
+      "objective": 1,
+      "expected": "19",
+      "choices": [
+        "20",
+        "18",
+        "19",
+        "21"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 3,
+      "objective": 2,
+      "expected": "38",
+      "choices": [
+        "39",
+        "37",
+        "40",
+        "38"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 4,
+      "objective": 1,
+      "expected": "21",
+      "choices": [
+        "21",
+        "22",
+        "20",
+        "23"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 4,
+      "objective": 2,
+      "expected": "42",
+      "choices": [
+        "43",
+        "42",
+        "41",
+        "44"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 5,
+      "objective": 1,
+      "expected": "23",
+      "choices": [
+        "24",
+        "22",
+        "23",
+        "25"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 5,
+      "objective": 2,
+      "expected": "46",
+      "choices": [
+        "47",
+        "45",
+        "48",
+        "46"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 1,
+      "objective": 1,
+      "expected": "12",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 1,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "30",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 2,
+      "objective": 1,
+      "expected": "63/5",
+      "choices": [
+        "68/5",
+        "58/5",
+        "63/5",
+        "73/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 2,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "29",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 3,
+      "objective": 1,
+      "expected": "66/5",
+      "choices": [
+        "66/5",
+        "71/5",
+        "61/5",
+        "76/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 3,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "30",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 4,
+      "objective": 1,
+      "expected": "69/5",
+      "choices": [
+        "74/5",
+        "64/5",
+        "69/5",
+        "79/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 4,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "29",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 5,
+      "objective": 1,
+      "expected": "72/5",
+      "choices": [
+        "72/5",
+        "77/5",
+        "67/5",
+        "82/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 5,
+      "objective": 2,
+      "expected": "30",
+      "choices": [
+        "31",
+        "30",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 1,
+      "objective": 1,
+      "expected": "45",
+      "choices": [
+        "46",
+        "44",
+        "45",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 1,
+      "objective": 2,
+      "expected": "6",
+      "choices": [
+        "7",
+        "5",
+        "8",
+        "6"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 2,
+      "objective": 1,
+      "expected": "45",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 2,
+      "objective": 2,
+      "expected": "36/5",
+      "choices": [
+        "41/5",
+        "36/5",
+        "31/5",
+        "46/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 3,
+      "objective": 1,
+      "expected": "45",
+      "choices": [
+        "46",
+        "44",
+        "45",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 3,
+      "objective": 2,
+      "expected": "42/5",
+      "choices": [
+        "47/5",
+        "37/5",
+        "52/5",
+        "42/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 4,
+      "objective": 1,
+      "expected": "45",
+      "choices": [
+        "45",
+        "46",
+        "44",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 4,
+      "objective": 2,
+      "expected": "48/5",
+      "choices": [
+        "53/5",
+        "48/5",
+        "43/5",
+        "58/5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 5,
+      "objective": 1,
+      "expected": "45",
+      "choices": [
+        "46",
+        "44",
+        "45",
+        "47"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 5,
+      "objective": 2,
+      "expected": "54/5",
+      "choices": [
+        "59/5",
+        "49/5",
+        "64/5",
+        "54/5"
+      ]
+    },
+    {
+      "type": "CQ",
+      "family": "সমান রেখাংশ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সমান রেখাংশ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সমান রেখাংশ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "চার ভাগ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "চার ভাগ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "চার ভাগ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 8
+    },
+    {
+      "type": "SQ",
+      "family": "সমান রেখাংশ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সমান রেখাংশ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সমান রেখাংশ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "মধ্যবিন্দু",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "চার ভাগ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "চার ভাগ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "চার ভাগ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "রেখার বিন্দুতে লম্ব",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "বহিঃস্থ বিন্দু থেকে লম্ব",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "চাঁদায় কোণ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সমান কোণ স্থানান্তর",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "কোণ সমদ্বিখণ্ডন",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "৬০° ও ৩০°",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "৯০° ও ৪৫°",
+      "variant": 11
+    }
+  ]
+}

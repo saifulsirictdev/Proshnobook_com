@@ -1,0 +1,1633 @@
+{
+  "status": "DRAFT_SUBJECT_REVIEW_PENDING",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 30,
+    "SQ": 30
+  },
+  "chapter": 6,
+  "topic": "৬. জ্যামিতির মৌলিক ধারণা",
+  "sourceSha256": "ffa30c8b815f49f3326b70ae58c5e17f11c4d8bd6d854eb84153fab8d593f23f",
+  "printedPagesVisuallyRead": [
+    106,
+    111,
+    117,
+    123
+  ],
+  "fullChapterRead": false,
+  "independentTeacherApproved": false,
+  "productionImported": 0,
+  "problemFamilies": 10,
+  "MCQ_objectiveTemplates": 20,
+  "exactDuplicateStems": 0,
+  "checks": "exact Fraction calculations, scene invariants, options distinct, counts and labels",
+  "limitations": [
+    "১০টি সমস্যা-পরিবার; প্রতি পরিবারের ২টি objective-এর ৫ variant-এ ১০০ MCQ, তিনটি করে variant-এ ৩০ CQ এবং তিনটি করে variant-এ ৩০ SQ। স্বতন্ত্র ১৬০ দক্ষতা নয়।",
+    "গণনা/গঠন পরীক্ষা হয়েছে; স্বাধীন শিক্ষক ও প্রশ্নের difficulty/মানবণ্টন অনুমোদন বাকি।",
+    "নির্বাচিত পৃষ্ঠা ধারণাসূত্র, প্রশ্ন বই থেকে হুবহু উদ্ধৃতি নয়; প্রতিটি উপবিষয়ের পূর্ণ coverage দাবি নয়।",
+    "সম্পূর্ণ অধ্যায়ের সব পৃষ্ঠা পড়া হয়নি; নির্বাচিত চারটি পৃষ্ঠা দেখা হয়েছে।",
+    "প্রয়োজনীয় জ্যামিতিক চিত্র/লেখচিত্র শিক্ষার্থীকে আঁকতে বলা হয়েছে; সমাধানে ধাপ দেওয়া আছে, সমাপ্ত চিত্র যুক্ত নয়। চিত্রভিত্তিক শিক্ষক যাচাই বাকি।"
+  ],
+  "items": [
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "8",
+      "choices": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "4",
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "12",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "6",
+      "choices": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "14",
+      "choices": [
+        "15",
+        "13",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "16",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "18"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "রেখাংশ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "8",
+      "choices": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 1,
+      "objective": 1,
+      "expected": "70",
+      "choices": [
+        "71",
+        "69",
+        "70",
+        "72"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 1,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 2,
+      "objective": 1,
+      "expected": "67",
+      "choices": [
+        "67",
+        "68",
+        "66",
+        "69"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 2,
+      "objective": 2,
+      "expected": "23/2",
+      "choices": [
+        "25/2",
+        "23/2",
+        "21/2",
+        "27/2"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 3,
+      "objective": 1,
+      "expected": "64",
+      "choices": [
+        "65",
+        "63",
+        "64",
+        "66"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 3,
+      "objective": 2,
+      "expected": "13",
+      "choices": [
+        "14",
+        "12",
+        "15",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 4,
+      "objective": 1,
+      "expected": "61",
+      "choices": [
+        "61",
+        "62",
+        "60",
+        "63"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 4,
+      "objective": 2,
+      "expected": "29/2",
+      "choices": [
+        "31/2",
+        "29/2",
+        "27/2",
+        "33/2"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 5,
+      "objective": 1,
+      "expected": "58",
+      "choices": [
+        "59",
+        "57",
+        "58",
+        "60"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূরক",
+      "variant": 5,
+      "objective": 2,
+      "expected": "16",
+      "choices": [
+        "17",
+        "15",
+        "18",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 1,
+      "objective": 1,
+      "expected": "150",
+      "choices": [
+        "150",
+        "151",
+        "149",
+        "152"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 1,
+      "objective": 2,
+      "expected": "75",
+      "choices": [
+        "76",
+        "75",
+        "74",
+        "77"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 2,
+      "objective": 1,
+      "expected": "148",
+      "choices": [
+        "149",
+        "147",
+        "148",
+        "150"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 2,
+      "objective": 2,
+      "expected": "74",
+      "choices": [
+        "75",
+        "73",
+        "76",
+        "74"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 3,
+      "objective": 1,
+      "expected": "146",
+      "choices": [
+        "146",
+        "147",
+        "145",
+        "148"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 3,
+      "objective": 2,
+      "expected": "73",
+      "choices": [
+        "74",
+        "73",
+        "72",
+        "75"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 4,
+      "objective": 1,
+      "expected": "144",
+      "choices": [
+        "145",
+        "143",
+        "144",
+        "146"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 4,
+      "objective": 2,
+      "expected": "72",
+      "choices": [
+        "73",
+        "71",
+        "74",
+        "72"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 5,
+      "objective": 1,
+      "expected": "142",
+      "choices": [
+        "142",
+        "143",
+        "141",
+        "144"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সম্পূরক",
+      "variant": 5,
+      "objective": 2,
+      "expected": "71",
+      "choices": [
+        "72",
+        "71",
+        "70",
+        "73"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 1,
+      "objective": 1,
+      "expected": "220",
+      "choices": [
+        "221",
+        "219",
+        "220",
+        "222"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 1,
+      "objective": 2,
+      "expected": "140",
+      "choices": [
+        "141",
+        "139",
+        "142",
+        "140"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 2,
+      "objective": 1,
+      "expected": "222",
+      "choices": [
+        "222",
+        "223",
+        "221",
+        "224"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 2,
+      "objective": 2,
+      "expected": "138",
+      "choices": [
+        "139",
+        "138",
+        "137",
+        "140"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 3,
+      "objective": 1,
+      "expected": "224",
+      "choices": [
+        "225",
+        "223",
+        "224",
+        "226"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 3,
+      "objective": 2,
+      "expected": "136",
+      "choices": [
+        "137",
+        "135",
+        "138",
+        "136"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 4,
+      "objective": 1,
+      "expected": "226",
+      "choices": [
+        "226",
+        "227",
+        "225",
+        "228"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 4,
+      "objective": 2,
+      "expected": "134",
+      "choices": [
+        "135",
+        "134",
+        "133",
+        "136"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 5,
+      "objective": 1,
+      "expected": "228",
+      "choices": [
+        "229",
+        "227",
+        "228",
+        "230"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 5,
+      "objective": 2,
+      "expected": "132",
+      "choices": [
+        "133",
+        "131",
+        "134",
+        "132"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "30",
+      "choices": [
+        "30",
+        "31",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "150",
+      "choices": [
+        "151",
+        "150",
+        "149",
+        "152"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "32",
+      "choices": [
+        "33",
+        "31",
+        "32",
+        "34"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "148",
+      "choices": [
+        "149",
+        "147",
+        "150",
+        "148"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "34",
+      "choices": [
+        "34",
+        "35",
+        "33",
+        "36"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "146",
+      "choices": [
+        "147",
+        "146",
+        "145",
+        "148"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "36",
+      "choices": [
+        "37",
+        "35",
+        "36",
+        "38"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "144",
+      "choices": [
+        "145",
+        "143",
+        "146",
+        "144"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "38",
+      "choices": [
+        "38",
+        "39",
+        "37",
+        "40"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিপ্রতীপ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "142",
+      "choices": [
+        "143",
+        "142",
+        "141",
+        "144"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "70",
+      "choices": [
+        "71",
+        "69",
+        "70",
+        "72"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "110",
+      "choices": [
+        "111",
+        "109",
+        "112",
+        "110"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "73",
+      "choices": [
+        "73",
+        "74",
+        "72",
+        "75"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "107",
+      "choices": [
+        "108",
+        "107",
+        "106",
+        "109"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "76",
+      "choices": [
+        "77",
+        "75",
+        "76",
+        "78"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "104",
+      "choices": [
+        "105",
+        "103",
+        "106",
+        "104"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "79",
+      "choices": [
+        "79",
+        "80",
+        "78",
+        "81"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "101",
+      "choices": [
+        "102",
+        "101",
+        "100",
+        "103"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "82",
+      "choices": [
+        "83",
+        "81",
+        "82",
+        "84"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ত্রিভুজ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "98",
+      "choices": [
+        "99",
+        "97",
+        "100",
+        "98"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 1,
+      "objective": 1,
+      "expected": "140",
+      "choices": [
+        "140",
+        "141",
+        "139",
+        "142"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 1,
+      "objective": 2,
+      "expected": "70",
+      "choices": [
+        "71",
+        "70",
+        "69",
+        "72"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 2,
+      "objective": 1,
+      "expected": "138",
+      "choices": [
+        "139",
+        "137",
+        "138",
+        "140"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 2,
+      "objective": 2,
+      "expected": "69",
+      "choices": [
+        "70",
+        "68",
+        "71",
+        "69"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 3,
+      "objective": 1,
+      "expected": "136",
+      "choices": [
+        "136",
+        "137",
+        "135",
+        "138"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 3,
+      "objective": 2,
+      "expected": "68",
+      "choices": [
+        "69",
+        "68",
+        "67",
+        "70"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 4,
+      "objective": 1,
+      "expected": "134",
+      "choices": [
+        "135",
+        "133",
+        "134",
+        "136"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 4,
+      "objective": 2,
+      "expected": "67",
+      "choices": [
+        "68",
+        "66",
+        "69",
+        "67"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 5,
+      "objective": 1,
+      "expected": "132",
+      "choices": [
+        "132",
+        "133",
+        "131",
+        "134"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 5,
+      "objective": 2,
+      "expected": "66",
+      "choices": [
+        "67",
+        "66",
+        "65",
+        "68"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 1,
+      "objective": 1,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "90",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 1,
+      "objective": 2,
+      "expected": "65",
+      "choices": [
+        "66",
+        "64",
+        "67",
+        "65"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 2,
+      "objective": 1,
+      "expected": "90",
+      "choices": [
+        "90",
+        "91",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 2,
+      "objective": 2,
+      "expected": "63",
+      "choices": [
+        "64",
+        "63",
+        "62",
+        "65"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 3,
+      "objective": 1,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "90",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 3,
+      "objective": 2,
+      "expected": "61",
+      "choices": [
+        "62",
+        "60",
+        "63",
+        "61"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 4,
+      "objective": 1,
+      "expected": "90",
+      "choices": [
+        "90",
+        "91",
+        "89",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 4,
+      "objective": 2,
+      "expected": "59",
+      "choices": [
+        "60",
+        "59",
+        "58",
+        "61"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 5,
+      "objective": 1,
+      "expected": "90",
+      "choices": [
+        "91",
+        "89",
+        "90",
+        "92"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমকোণী",
+      "variant": 5,
+      "objective": 2,
+      "expected": "57",
+      "choices": [
+        "58",
+        "56",
+        "59",
+        "57"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 1,
+      "objective": 1,
+      "expected": "35",
+      "choices": [
+        "35",
+        "36",
+        "34",
+        "37"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 1,
+      "objective": 2,
+      "expected": "145",
+      "choices": [
+        "146",
+        "145",
+        "144",
+        "147"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 2,
+      "objective": 1,
+      "expected": "37",
+      "choices": [
+        "38",
+        "36",
+        "37",
+        "39"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 2,
+      "objective": 2,
+      "expected": "143",
+      "choices": [
+        "144",
+        "142",
+        "145",
+        "143"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 3,
+      "objective": 1,
+      "expected": "39",
+      "choices": [
+        "39",
+        "40",
+        "38",
+        "41"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 3,
+      "objective": 2,
+      "expected": "141",
+      "choices": [
+        "142",
+        "141",
+        "140",
+        "143"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 4,
+      "objective": 1,
+      "expected": "41",
+      "choices": [
+        "42",
+        "40",
+        "41",
+        "43"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 4,
+      "objective": 2,
+      "expected": "139",
+      "choices": [
+        "140",
+        "138",
+        "141",
+        "139"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 5,
+      "objective": 1,
+      "expected": "43",
+      "choices": [
+        "43",
+        "44",
+        "42",
+        "45"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 5,
+      "objective": 2,
+      "expected": "137",
+      "choices": [
+        "138",
+        "137",
+        "136",
+        "139"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "240",
+      "choices": [
+        "241",
+        "239",
+        "240",
+        "242"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "120",
+      "choices": [
+        "121",
+        "119",
+        "122",
+        "120"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "243",
+      "choices": [
+        "243",
+        "244",
+        "242",
+        "245"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "117",
+      "choices": [
+        "118",
+        "117",
+        "116",
+        "119"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "246",
+      "choices": [
+        "247",
+        "245",
+        "246",
+        "248"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "114",
+      "choices": [
+        "115",
+        "113",
+        "116",
+        "114"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "249",
+      "choices": [
+        "249",
+        "250",
+        "248",
+        "251"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "111",
+      "choices": [
+        "112",
+        "111",
+        "110",
+        "113"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "252",
+      "choices": [
+        "253",
+        "251",
+        "252",
+        "254"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চতুর্ভুজ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "108",
+      "choices": [
+        "109",
+        "107",
+        "110",
+        "108"
+      ]
+    },
+    {
+      "type": "CQ",
+      "family": "রেখাংশ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "রেখাংশ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "রেখাংশ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "পূরক",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "পূরক",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "পূরক",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সম্পূরক",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সম্পূরক",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সম্পূরক",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "বিপ্রতীপ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "বিপ্রতীপ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "বিপ্রতীপ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "ত্রিভুজ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "ত্রিভুজ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "ত্রিভুজ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সমকোণী",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সমকোণী",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সমকোণী",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "চতুর্ভুজ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "চতুর্ভুজ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "চতুর্ভুজ",
+      "variant": 8
+    },
+    {
+      "type": "SQ",
+      "family": "রেখাংশ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "রেখাংশ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "রেখাংশ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "পূরক",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "পূরক",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "পূরক",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সম্পূরক",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সম্পূরক",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সম্পূরক",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "পূর্ণ আবর্তন",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "বিপ্রতীপ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "বিপ্রতীপ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "বিপ্রতীপ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "ত্রিভুজ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "ত্রিভুজ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "ত্রিভুজ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সমদ্বিবাহু",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সমকোণী",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সমকোণী",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সমকোণী",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সমান্তরাল ও ছেদক",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "চতুর্ভুজ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "চতুর্ভুজ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "চতুর্ভুজ",
+      "variant": 11
+    }
+  ]
+}

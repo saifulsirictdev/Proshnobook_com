@@ -1,0 +1,1632 @@
+{
+  "status": "DRAFT_SUBJECT_REVIEW_PENDING",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 30,
+    "SQ": 30
+  },
+  "chapter": 3,
+  "topic": "৩. পূর্ণসংখ্যা",
+  "sourceSha256": "ffa30c8b815f49f3326b70ae58c5e17f11c4d8bd6d854eb84153fab8d593f23f",
+  "printedPagesVisuallyRead": [
+    59,
+    63,
+    69,
+    75
+  ],
+  "fullChapterRead": false,
+  "independentTeacherApproved": false,
+  "productionImported": 0,
+  "problemFamilies": 10,
+  "MCQ_objectiveTemplates": 20,
+  "exactDuplicateStems": 0,
+  "checks": "exact Fraction calculations, scene invariants, options distinct, counts and labels",
+  "limitations": [
+    "১০টি সমস্যা-পরিবার; প্রতি পরিবারের ২টি objective-এর ৫ variant-এ ১০০ MCQ, তিনটি করে variant-এ ৩০ CQ এবং তিনটি করে variant-এ ৩০ SQ। স্বতন্ত্র ১৬০ দক্ষতা নয়।",
+    "গণনা/গঠন পরীক্ষা হয়েছে; স্বাধীন শিক্ষক ও প্রশ্নের difficulty/মানবণ্টন অনুমোদন বাকি।",
+    "নির্বাচিত পৃষ্ঠা ধারণাসূত্র, প্রশ্ন বই থেকে হুবহু উদ্ধৃতি নয়; প্রতিটি উপবিষয়ের পূর্ণ coverage দাবি নয়।",
+    "সম্পূর্ণ অধ্যায়ের সব পৃষ্ঠা পড়া হয়নি; নির্বাচিত চারটি পৃষ্ঠা দেখা হয়েছে।"
+  ],
+  "items": [
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-7",
+      "choices": [
+        "-6",
+        "-7",
+        "-8",
+        "-5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-8",
+      "choices": [
+        "-7",
+        "-9",
+        "-6",
+        "-8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-9",
+      "choices": [
+        "-8",
+        "-9",
+        "-10",
+        "-7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-10",
+      "choices": [
+        "-9",
+        "-11",
+        "-8",
+        "-10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তাপমাত্রা",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-7",
+      "choices": [
+        "-6",
+        "-7",
+        "-8",
+        "-5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 1,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 1,
+      "objective": 2,
+      "expected": "1",
+      "choices": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 2,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 2,
+      "objective": 2,
+      "expected": "0",
+      "choices": [
+        "1",
+        "0",
+        "-1",
+        "2"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 3,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 4,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-2",
+      "choices": [
+        "-1",
+        "-2",
+        "-3",
+        "0"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 5,
+      "objective": 1,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "লিফট",
+      "variant": 5,
+      "objective": 2,
+      "expected": "1",
+      "choices": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 1,
+      "objective": 1,
+      "expected": "30",
+      "choices": [
+        "30",
+        "31",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 1,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 2,
+      "objective": 1,
+      "expected": "40",
+      "choices": [
+        "41",
+        "39",
+        "40",
+        "42"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 2,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 3,
+      "objective": 1,
+      "expected": "50",
+      "choices": [
+        "50",
+        "51",
+        "49",
+        "52"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 3,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 4,
+      "objective": 1,
+      "expected": "60",
+      "choices": [
+        "61",
+        "59",
+        "60",
+        "62"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 4,
+      "objective": 2,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 5,
+      "objective": 1,
+      "expected": "70",
+      "choices": [
+        "70",
+        "71",
+        "69",
+        "72"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 5,
+      "objective": 2,
+      "expected": "50",
+      "choices": [
+        "51",
+        "50",
+        "49",
+        "52"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 1,
+      "objective": 1,
+      "expected": "11",
+      "choices": [
+        "12",
+        "10",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-10",
+      "choices": [
+        "-9",
+        "-11",
+        "-8",
+        "-10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 2,
+      "objective": 1,
+      "expected": "13",
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "15"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-12",
+      "choices": [
+        "-11",
+        "-12",
+        "-13",
+        "-10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 3,
+      "objective": 1,
+      "expected": "15",
+      "choices": [
+        "16",
+        "14",
+        "15",
+        "17"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-14",
+      "choices": [
+        "-13",
+        "-15",
+        "-12",
+        "-14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 4,
+      "objective": 1,
+      "expected": "17",
+      "choices": [
+        "17",
+        "18",
+        "16",
+        "19"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-16",
+      "choices": [
+        "-15",
+        "-16",
+        "-17",
+        "-14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 5,
+      "objective": 1,
+      "expected": "19",
+      "choices": [
+        "20",
+        "18",
+        "19",
+        "21"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "সংখ্যারেখা",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-14",
+      "choices": [
+        "-13",
+        "-15",
+        "-12",
+        "-14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-3",
+      "choices": [
+        "-3",
+        "-2",
+        "-4",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-1",
+        "-2",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-4",
+      "choices": [
+        "-3",
+        "-5",
+        "-4",
+        "-2"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-1",
+        "-2",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-6",
+      "choices": [
+        "-5",
+        "-7",
+        "-6",
+        "-4"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-7",
+      "choices": [
+        "-7",
+        "-6",
+        "-8",
+        "-5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-5",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-10",
+      "choices": [
+        "-9",
+        "-11",
+        "-10",
+        "-8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 1,
+      "objective": 2,
+      "expected": "3",
+      "choices": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-12",
+      "choices": [
+        "-12",
+        "-11",
+        "-13",
+        "-10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 2,
+      "objective": 2,
+      "expected": "3",
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-14",
+      "choices": [
+        "-13",
+        "-15",
+        "-14",
+        "-12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 3,
+      "objective": 2,
+      "expected": "3",
+      "choices": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-16",
+      "choices": [
+        "-16",
+        "-15",
+        "-17",
+        "-14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 4,
+      "objective": 2,
+      "expected": "3",
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-14",
+      "choices": [
+        "-13",
+        "-15",
+        "-14",
+        "-12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 5,
+      "objective": 2,
+      "expected": "7",
+      "choices": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-13",
+      "choices": [
+        "-12",
+        "-13",
+        "-14",
+        "-11"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-14",
+      "choices": [
+        "-13",
+        "-15",
+        "-12",
+        "-14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-15",
+      "choices": [
+        "-14",
+        "-15",
+        "-16",
+        "-13"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-16",
+      "choices": [
+        "-15",
+        "-17",
+        "-14",
+        "-16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-17",
+      "choices": [
+        "-16",
+        "-17",
+        "-18",
+        "-15"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 1,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 2,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 3,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 4,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 5,
+      "objective": 2,
+      "expected": "5",
+      "choices": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 1,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-7",
+      "choices": [
+        "-6",
+        "-7",
+        "-8",
+        "-5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 2,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-8",
+      "choices": [
+        "-7",
+        "-9",
+        "-6",
+        "-8"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 3,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-9",
+      "choices": [
+        "-8",
+        "-9",
+        "-10",
+        "-7"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 4,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-5",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-10",
+      "choices": [
+        "-9",
+        "-11",
+        "-8",
+        "-10"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 5,
+      "objective": 1,
+      "expected": "-5",
+      "choices": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-7",
+      "choices": [
+        "-6",
+        "-7",
+        "-8",
+        "-5"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 1,
+      "objective": 1,
+      "expected": "10",
+      "choices": [
+        "11",
+        "9",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 1,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 2,
+      "objective": 1,
+      "expected": "12",
+      "choices": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 2,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-1",
+        "-2",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 3,
+      "objective": 1,
+      "expected": "14",
+      "choices": [
+        "15",
+        "13",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 3,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-2",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 4,
+      "objective": 1,
+      "expected": "16",
+      "choices": [
+        "16",
+        "17",
+        "15",
+        "18"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 4,
+      "objective": 2,
+      "expected": "-1",
+      "choices": [
+        "0",
+        "-1",
+        "-2",
+        "1"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 5,
+      "objective": 1,
+      "expected": "14",
+      "choices": [
+        "15",
+        "13",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "type": "MCQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 5,
+      "objective": 2,
+      "expected": "-5",
+      "choices": [
+        "-4",
+        "-6",
+        "-3",
+        "-5"
+      ]
+    },
+    {
+      "type": "CQ",
+      "family": "তাপমাত্রা",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "তাপমাত্রা",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "তাপমাত্রা",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "লিফট",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "লিফট",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "লিফট",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "সংখ্যারেখা",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "সংখ্যারেখা",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "সংখ্যারেখা",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 8
+    },
+    {
+      "type": "CQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 6
+    },
+    {
+      "type": "CQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 7
+    },
+    {
+      "type": "CQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 8
+    },
+    {
+      "type": "SQ",
+      "family": "তাপমাত্রা",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "তাপমাত্রা",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "তাপমাত্রা",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "লিফট",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "লিফট",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "লিফট",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "হিসাবের স্থিতি",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "সংখ্যারেখা",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "সংখ্যারেখা",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "সংখ্যারেখা",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "খেলার পয়েন্ট",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "চিহ্নভিত্তিক যোগ",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "ডুবুরির অবস্থান",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "বিয়োগ ও বিপরীত",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "তিন ধাপের পরিবর্তন",
+      "variant": 11
+    },
+    {
+      "type": "SQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 9
+    },
+    {
+      "type": "SQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 10
+    },
+    {
+      "type": "SQ",
+      "family": "দূরত্ব ও স্থানান্তর",
+      "variant": 11
+    }
+  ]
+}

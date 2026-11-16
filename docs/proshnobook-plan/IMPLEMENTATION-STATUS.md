@@ -713,3 +713,11 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Added deterministic exact-Fraction generator, validation ledger, review Markdown, uploader-compatible JSON and prepared chapter card. 25 MCQ families ×4, 10 CQ families ×3, 15 SQ families ×2; not 160 independent skills or teacher-approved coverage.
 - Targeted tests 20/20 and typecheck passed; typecheck Prisma generation used local dummy engine paths only. No live DB queries/import/publication. Class 6 chapters 3 onward and other subjects/classes remain unfinished.
 - Drive JSON copy: https://drive.google.com/file/d/1ujbUadKTVFNYW0iOXzhK3nNTBIrq1Xef/view . User can later select Class 6 → গণিত → ২. অনুপাত ও শতকরা and save Pending; no user action needed to preserve files.
+
+## Phase 73 — Class 6 mathematics chapters 3–8 initial Draft packages
+
+- Added six chapter-specific uploader-compatible batches, each 100 MCQ + 30 complete CQ (ক–খ–গ, 2/4/4) + 30 SQ, with Bengali solutions, review Markdown and validation ledgers. Total new content: 600 MCQ + 180 CQ sets + 180 SQ; no chapter 1/2 regeneration or database writes.
+- Each chapter uses 10 contextual problem families, 20 objective templates ×5 numerical variants for MCQ, and 3 variants per family for CQ/SQ. Not 960 independent skills. Independent teacher, language/difficulty/rubric and diagram review remain pending.
+- Source: visually read selected pages for chapters 3/4/5/6/8 and all printed 124–136 for practical geometry. Reports list exact pages and do not falsely mark unread chapters fully read. Geometry/construction/chart solutions describe steps; finished figures are not included.
+- Registered all six in the existing prepared-batch library using real JSON-upload parsing and catalog validation. 27 targeted tests and typecheck passed. Transaction checks use mocks; no production import/publication.
+- Download package (six chapter JSONs + reviews/reports): https://drive.google.com/file/d/1dCsaCJK6REko7Estj43qnPx78KjCw9Us/view . See `deliverables/class6-math-ch3-8/README.md` for limits and import instructions.
