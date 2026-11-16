@@ -83,6 +83,8 @@ export default async function AdminQuestionsPage({
         )}
       </div>
 
+      <Link href="/admin/questions/import" className="qm-action-link mb-5">ষষ্ঠ শ্রেণি MCQ ব্যাচ import ও অধ্যায়ের অগ্রগতি →</Link>
+
       {okMsg && (
         <div className="mb-4 rounded-xl bg-emerald-50 border border-emerald-200 p-3 text-xs font-bold text-emerald-800 flex items-center gap-2">
           <CheckCircle2 size={16} /> <span>{okMsg}</span>

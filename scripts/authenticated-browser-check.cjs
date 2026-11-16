@@ -293,6 +293,39 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           }
         }
       }
+      if (role === "ADMIN") {
+        phase = "admin_mcq_import_pending_and_repeat";
+        await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
+        const fixture = {
+          subject: "গণিত", topic: "১. স্বাভাবিক সংখ্যা ও ভগ্নাংশ", book: "Synthetic CI fixture, not textbook content", edition: "test",
+          sourceUrl: "https://example.invalid/synthetic-only", lang: "Bangla",
+          items: [{ text: "Synthetic CI arithmetic: 2 + 2?", options: { A: "4", B: "3", C: "5", D: "6" }, correct: "A", explanation: "Synthetic regression fixture only", page: "1", difficulty: "EASY" }]
+        };
+        await page.getByLabel("প্রশ্নের JSON", { exact: true }).fill(JSON.stringify(fixture));
+        await page.getByRole("button", { name: "প্রিভিউ ও গঠন যাচাই", exact: true }).click();
+        phase = "admin_mcq_preview_checkbox";
+        await page.getByRole("checkbox").check();
+        phase = "admin_mcq_before_save";
+        const before = await db.question.count({ where: { text: fixture.items[0].text } });
+        assert.equal(before, 0);
+        await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
+        phase = "admin_mcq_saved_status";
+        await page.getByRole("status").filter({ hasText: "Pending প্রশ্ন সেভ হয়েছে" }).waitFor();
+        phase = "admin_mcq_saved_db";
+        const row = await db.question.findFirstOrThrow({ where: { text: fixture.items[0].text } });
+        assert.equal(row.approved, false);
+        assert.equal(row.category, "Class 6");
+        phase = "admin_mcq_repeat_submit";
+        await page.getByRole("checkbox").check();
+        await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
+        phase = "admin_mcq_repeat_status";
+        await page.getByRole("status").filter({ hasText: "0টি Pending" }).waitFor();
+        phase = "admin_mcq_repeat_db";
+        assert.equal(await db.question.count({ where: { text: fixture.items[0].text } }), 1);
+        assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 1);
+        phase = "admin_mcq_overflow";
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
+      }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
       if (errors.length) {
         phase = errors[0];
