@@ -43,6 +43,7 @@ function startServer(databaseUrl, port) {
         AUTH_GOOGLE_SECRET: "synthetic-not-a-real-google-secret",
         ADMIN_EMAIL: "admin@example.invalid",
         NEXT_TELEMETRY_DISABLED: "1",
+        NEXT_BUILD_DIR: process.env.NEXT_BUILD_DIR === "isolated-ci" ? "isolated-ci" : "",
       },
       stdio: ["ignore", "pipe", "pipe"],
     },
