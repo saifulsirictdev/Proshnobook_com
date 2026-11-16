@@ -147,7 +147,12 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       const page = await context.newPage();
       page.setDefaultTimeout(20000);
       const errors = [];
-      page.on("pageerror", () => errors.push("browser_runtime_error"));
+      page.on("pageerror", (error) => {
+        // Only allowlisted numeric React codes and our own phase labels reach CI.
+        const reactCode = /Minified React error #(\d+)/.exec(error.message)?.[1];
+        const kind = reactCode ? `react_${reactCode}` : "browser_runtime_error";
+        errors.push(`${phase}_${kind}`);
+      });
       const unauthenticated = await context.request.get(origin + "/dashboard", {
         maxRedirects: 0,
       });
@@ -221,7 +226,10 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(new URL(page.url()).pathname, "/admin/wallet");
       } else assert.notEqual(new URL(page.url()).pathname, "/admin/wallet");
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
-      assert.deepEqual(errors, []);
+      if (errors.length) {
+        phase = errors[0];
+        assert.deepEqual(errors, []);
+      }
       await context.close();
       if (role !== "ADMIN") {
         phase = `${role.toLowerCase()}_bonus_once`;
