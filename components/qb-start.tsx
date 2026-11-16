@@ -5,6 +5,8 @@ import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
 import { ArrowRight } from "lucide-react";
 import { NCTB_CLASSES, type NctbClass } from "@/lib/nctb-data";
 
+import { examOutlines, PREPARATION_TOPICS, EXAM_OUTLINE_NOTICE, EXAM_BANK_NOTICE } from "@/lib/exam-preparation";
+
 type Pair = { category: string; subject: string };
 const LOW = ["1", "2", "3", "4", "5", "6", "7", "8"];
 const CHIPS = ["SSC", "HSC", "Admission", "Job"];
@@ -52,6 +54,10 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const router = useRouter();
   const append = useSearchParams().get("append") === "1";
   const [category, setCategory] = useState("");
+  const [examId, setExamId] = useState("");
+  const outlines = examOutlines(category);
+  const selectedExam = outlines.find((exam) => exam.id === examId);
+  const examSubjects = selectedExam ? selectedExam.subjects : Array.from(new Set(outlines.flatMap((exam) => exam.subjects)));
   const [questionType, setQuestionType] = useState("ALL");
   const [subject, setSubject] = useState("");
   const [topicCategory, setTopicCategory] = useState(""); // ক্যাটাগরি/ইউনিট
@@ -77,8 +83,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   }, [pairs, category]);
 
   const subjects = useMemo(
-    () => Array.from(new Set([...curriculumSubjects, ...dbSubjects])),
-    [curriculumSubjects, dbSubjects],
+    () => Array.from(new Set([...curriculumSubjects, ...examSubjects, ...dbSubjects])),
+    [curriculumSubjects, examSubjects, dbSubjects],
   );
 
   // নির্বাচিত সাবজেক্টের ডেটা (chapters/subCategories সহ)
@@ -88,8 +94,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   );
 
   const flatTopics = useMemo(
-    () => currentSubjectData?.chapters ?? [],
-    [currentSubjectData],
+    () => currentSubjectData?.chapters ?? (outlines.length ? PREPARATION_TOPICS[subject] ?? [] : []),
+    [currentSubjectData, outlines.length, subject],
   );
   const groupedTopics = useMemo(
     () => currentSubjectData?.subCategories ?? [],
@@ -134,6 +140,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           value={LOW.includes(category) ? category : ""}
           onChange={(e) => {
             setCategory(e.target.value);
+            setExamId("");
             setSubject("");
             setTopicCategory("");
             setTopic("");
@@ -153,6 +160,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             className={chip(category === c)}
             onClick={() => {
               setCategory(category === c ? "" : c);
+              setExamId("");
               setSubject("");
               setTopicCategory("");
               setTopic("");
@@ -167,7 +175,30 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         ))}
       </div>
 
+      {outlines.length > 0 && (
+        <section aria-label="প্রস্তাবিত পরীক্ষার প্রস্তুতি" className="space-y-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-slate-800">
+          <p className="font-semibold">প্রস্তাবিত প্রস্তুতি-রূপরেখা</p>
+          <p>{EXAM_OUTLINE_NOTICE}</p>
+          <label className="block font-semibold">
+            পরীক্ষার প্রস্তুতির ধরন (ঐচ্ছিক)
+            <select
+              aria-label="পরীক্ষার প্রস্তুতির ধরন"
+              className="mt-2 w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
+              value={examId}
+              onChange={(e) => { setExamId(e.target.value); setSubject(""); setTopicCategory(""); setTopic(""); }}
+            >
+              <option value="">সব প্রস্তুতির বিষয়</option>
+              {outlines.map((exam) => <option key={exam.id} value={exam.id}>{exam.name}</option>)}
+            </select>
+          </label>
+          {selectedExam?.note && <p>{selectedExam.note}</p>}
+          <p className="text-xs">{EXAM_BANK_NOTICE}</p>
+          {dbSubjects.length > 0 && <p className="text-xs">প্রশ্নভান্ডারের অতিরিক্ত বিষয়ও তালিকায় রাখা হয়েছে।</p>}
+        </section>
+      )}
+
       <select
+        aria-label="বিষয়"
         className="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
         value={subject}
         onChange={(e) => {
@@ -220,6 +251,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
       ) : (
         flatTopics.length > 0 && (
           <select
+            aria-label="প্রস্তুতির টপিক"
             className="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
@@ -258,7 +290,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
       >
         প্রশ্ন তৈরী করুন <ArrowRight size={18} />
       </button>
-      {!pairs.length && !curriculumSubjects.length && (
+      {!pairs.length && !curriculumSubjects.length && !outlines.length && (
         <p className="text-center text-xs text-slate-500">
           এখনও কোনো প্রশ্ন নেই। আগে /admin/questions থেকে প্রশ্ন যোগ করুন।
         </p>
