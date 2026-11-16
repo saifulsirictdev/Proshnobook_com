@@ -55,7 +55,7 @@ async function withDisposableWalletDatabase(test, env = process.env) {
     if (push.error || push.status !== 0)
       throw Error("Disposable wallet schema initialization failed");
     db = new PrismaClient({ datasources: { db: { url: isolated.href } } });
-    await test(db);
+    await test(db, { databaseUrl: isolated.href });
   } finally {
     try {
       if (db) await db.$disconnect();
