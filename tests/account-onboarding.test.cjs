@@ -49,3 +49,8 @@ test('Google callback creates pending marker only for new verified non-admin acc
   assert.equal(refresh.role,current.role);
  }
 });
+test('edge admin route authorization never grants Teacher/Contributor capabilities admin access',()=>{
+ const c=load('auth.config.ts',{}).default;
+ for(const role of ['STUDENT','TEACHER','CONTRIBUTOR',undefined]) assert.equal(c.callbacks.authorized({auth:{user:{role}},request:{nextUrl:{pathname:'/admin/wallet'}}}),false);
+ assert.equal(c.callbacks.authorized({auth:{user:{role:'ADMIN'}},request:{nextUrl:{pathname:'/admin/wallet'}}}),true);
+});

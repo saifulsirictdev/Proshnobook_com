@@ -19,7 +19,7 @@ export default {
     authorized({ auth, request }) {
       if (request.nextUrl.pathname.startsWith("/admin")) {
         const r = (auth?.user as { role?: string } | undefined)?.role;
-        return r === "ADMIN" || r === "TEACHER";
+        return r === "ADMIN";
       }
       return true;
     },

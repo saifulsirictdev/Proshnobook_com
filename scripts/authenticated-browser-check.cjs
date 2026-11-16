@@ -332,7 +332,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       const session = await (await context.request.get(origin + "/api/auth/session")).json();
       assert.equal(session.user.role, current.role);
       phase = `onboarding_${type.toLowerCase()}_label`;
-      if (type === "CONTRIBUTOR") assert.ok((await page.locator("body").innerText()).includes("Contributor"));
+      if (type === "CONTRIBUTOR") assert.ok((await page.locator("body").innerText()).toLowerCase().includes("contributor"));
       phase = `onboarding_${type.toLowerCase()}_repeat`;
       await page.goto(origin + "/auth/onboarding", { waitUntil: "networkidle" });
       assert.notEqual(new URL(page.url()).pathname, "/auth/onboarding");
