@@ -676,3 +676,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Draft-only inserts, normalized-stem legacy duplicate checks, deterministic IDs, serializable retry and transactional receipt provide safe repeatable batches. Existing question approvals stay separate; automatic structural validation is not accuracy certification.
 - New chapter counts and bounded audit receipt viewer linked from Admin questions. No production DB queries/writes yet; no verified textbook questions prepared because PDFs are not available. Current selector inventory needs official edition/contents matching. See docs/question-bank/IMPORT-OPERATIONS.md and CLASS-6-PREFLIGHT.md.
 - Typecheck and focused import tests pass locally. Required CI adds real Admin preview/import/repeat and pending/audit assertions against disposable PostgreSQL, with existing role/build/finance/print regressions.
+
+## Phase 68 — Class 6 mathematics first original MCQ draft
+
+- Started Class6 mathematics chapter1 (natural numbers/fractions), 100 original draft MCQs across 25 skills with four numerical examples each, answers/options/explanations and ready-to-review Markdown plus Admin-import JSON.
+- Exact Fraction arithmetic, brute divisor/multiple/prime checks, normalized stem uniqueness, rationally distinct choices and balanced answer keys validated reproducibly. All batch records pass existing strict importer schema.
+- Source discovery used internet search chapter indices only; full official textbook pages not retrieved. No invented textbook page citations: each item explicitly states original practice/page verification outstanding. Teacher/wording/full 2026 syllabus alignment remains pending. This is NOT 100 officially sourced or live approved records.
+- No production DB queries/import/publication or automatic approval. See content/question-bank/class-6/README.md. Next stage requires source/subject review before approval, then subsequent chapters.
