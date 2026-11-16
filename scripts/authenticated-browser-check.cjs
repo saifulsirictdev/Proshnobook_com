@@ -220,9 +220,11 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(adminPage.status(), 200);
         assert.equal(new URL(page.url()).pathname, "/admin/wallet");
       } else assert.notEqual(new URL(page.url()).pathname, "/admin/wallet");
+      phase = `${role.toLowerCase()}_browser_runtime_clean`;
       assert.deepEqual(errors, []);
       await context.close();
       if (role !== "ADMIN") {
+        phase = `${role.toLowerCase()}_bonus_once`;
         const row = await db.setting.findUniqueOrThrow({
           where: { key: `wallet:account:${role.toLowerCase()}` },
         });
