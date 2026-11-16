@@ -157,7 +157,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         maxRedirects: 0,
       });
       assert.ok([302, 303, 307, 308].includes(unauthenticated.status()));
-      await page.goto(origin + "/login?next=/dashboard");
+      await page.goto(origin + "/login?next=/dashboard", { waitUntil: "networkidle" });
       await page.locator(".qm-login-mark").scrollIntoViewIfNeeded();
       await page.waitForFunction(() => {
         const image = document.querySelector(".qm-login-mark");
@@ -188,7 +188,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         .fill(`${role.toLowerCase()}@example.invalid`);
       await page.locator('input[name="password"]').fill(password);
       await page.locator(".qm-login-primary").click();
-      await page.waitForURL(origin + "/dashboard");
+      await page.waitForURL(origin + "/dashboard", { waitUntil: "networkidle" });
       phase = `${role.toLowerCase()}_session_identity`;
       const session = await (
         await context.request.get(origin + "/api/auth/session")
@@ -204,7 +204,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           "/dashboard/library",
         ]) {
           phase = `${role.toLowerCase()}_${width}_${pathname.replace(/\//g, "_")}`;
-          const response = await page.goto(origin + pathname);
+          const response = await page.goto(origin + pathname, { waitUntil: "networkidle" });
           assert.equal(response.status(), 200);
           assert.equal(new URL(page.url()).pathname, pathname);
           if (pathname === "/dashboard") {
@@ -232,7 +232,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         }
       }
       phase = `${role.toLowerCase()}_exam_preparation_outline`;
-      await page.goto(origin + "/question-builder");
+      await page.goto(origin + "/question-builder", { waitUntil: "networkidle" });
       for (const width of [390, 1280]) {
         await page.setViewportSize({ width, height: 844 });
         await page.getByRole("button", { name: "Admission", exact: true }).click();
@@ -252,7 +252,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         // Never enter prepare: it can invoke paid generation; UI selection only.
       }
       phase = `${role.toLowerCase()}_admin_authorization`;
-      const adminPage = await page.goto(origin + "/admin/wallet");
+      const adminPage = await page.goto(origin + "/admin/wallet", { waitUntil: "networkidle" });
       if (role === "ADMIN") {
         assert.equal(adminPage.status(), 200);
         assert.equal(new URL(page.url()).pathname, "/admin/wallet");
