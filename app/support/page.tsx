@@ -20,7 +20,7 @@ export default async function Support({
     (await searchParams).after,
   );
   return (
-    <main className="mx-auto max-w-3xl p-4 space-y-5">
+    <main className="qm-feature-page mx-auto max-w-3xl p-4 space-y-5">
       <Link href="/contact-us">← যোগাযোগ</Link>
       <h1 className="text-2xl font-bold">সহায়তা ও ব্যক্তিগত অনুরোধ</h1>
       <p>

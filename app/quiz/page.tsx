@@ -35,7 +35,7 @@ export default async function QuizPage({ searchParams }: { searchParams: Promise
     .slice(0, 10)
     .map((r) => ({ id: r.id, text: r.text, options: r.options as Record<string, string>, correct: r.correct, explanation: r.explanation }));
   return (
-    <main className="mx-auto grid max-w-5xl gap-10 px-4 py-10 lg:grid-cols-2">
+    <main className="qm-feature-page mx-auto grid max-w-5xl gap-10 px-4 py-10 lg:grid-cols-2">
       <div className="grid gap-4 sm:grid-cols-2 lg:col-span-2">
         <Link
           href="/question-builder"

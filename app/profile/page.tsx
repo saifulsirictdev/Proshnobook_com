@@ -169,7 +169,7 @@ export default async function ProfilePage() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-6">
+    <div className="qm-profile-page qm-feature-page mx-auto max-w-3xl px-4 py-6">
       {/* Greeting + নাম এডিট */}
       <div className="flex items-center gap-3">
         {image ? (

@@ -662,3 +662,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Desktop (1280px+) header uses a spacious two-row layout: preserved owner P logo/brand and account actions above a dedicated navigation row, avoiding crowded single-line controls. Suppressed duplicate desktop Package badge; original package navigation remains. Dropdowns now also open on keyboard focus.
 - Desktop homepage gets a consistent 1280px content width, generous spacing, balanced creation cards, class tabs and a bordered introduction panel. Original content/order, role rules, mobile shell and print/editor layouts stay unchanged. Screen-only scoped CSS includes dark-mode surfaces.
 - TypeScript validation passed; required CI includes built-app desktop/mobile browser and finance regressions.
+
+## Phase 66 — Desktop feature workspace consistency
+
+- Extended beyond the homepage/header: desktop (1024px+) shared spacing and width for Dashboard/wallet, purchase library/sell, model tests, practice setup, profile, packages, support and quiz. Financial/direct-form flows retain a narrower reading width.
+- Unified panel/table chrome for Dashboard, saved papers and Ready/PDF tools; marketplace filter panel, English setup controls, database selector sidebar/panels get matching spacing. Practice setup uses a real two-column desktop form with full-width primary action. Disabled and keyboard-focus form states retained.
+- Explicit screen-only/feature-control selectors avoid mobile, A4 paper geometry, document tables/images, exam player answers and print. No account, wallet, publication or payment behavior changed.
+- Added desktop scope regression plus isolated Teacher browser route/overflow smoke checks at 1024 and 1440, including computed two-column practice form. Existing authenticated 390/1280 and print/finance CI remain required. These checks are layout/function regressions, not a claim of manual visual acceptance of every screen.

@@ -64,7 +64,7 @@ export default async function PackagesPage({
   const hasPending = purchases.some((p) => p.status === "PENDING");
 
   return (
-    <main className="mx-auto max-w-2xl space-y-6 px-4 py-6">
+    <main className="qm-feature-page mx-auto max-w-2xl space-y-6 px-4 py-6">
       {/* হেডার */}
       <div className="rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 p-6 text-white">
         <p className="text-xs font-semibold uppercase tracking-widest text-amber-300">

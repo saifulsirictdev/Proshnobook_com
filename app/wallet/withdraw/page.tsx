@@ -27,7 +27,7 @@ export default async function WithdrawPage() {
     where: { key: `wallet:withdrawal-active:v1:${id}` },
   });
   return (
-    <main className="mx-auto max-w-2xl p-5 space-y-5">
+    <main className="qm-feature-page mx-auto max-w-2xl p-5 space-y-5">
       <Link href="/wallet">← ওয়ালেট</Link>
       <h1 className="text-2xl font-bold">বিক্রির আয় উত্তোলন</h1>
       <p>

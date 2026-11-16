@@ -31,7 +31,7 @@ export default async function Library({
     take: 51,
   });
   return (
-    <main className="max-w-3xl mx-auto p-5 space-y-4">
+    <main className="qm-feature-page max-w-3xl mx-auto p-5 space-y-4">
       <Link href="/dashboard">← প্রোফাইল</Link>
       <h1 className="text-2xl font-bold">আমার সংগ্রহ করা প্রশ্নপত্র</h1>
       <p>

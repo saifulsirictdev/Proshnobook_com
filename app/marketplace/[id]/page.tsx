@@ -60,7 +60,7 @@ export default async function MarketDetail({
   } catch {}
   const social = await paperSocialSummary(id, user?.id);
   return (
-    <main className="mx-auto max-w-3xl p-5 space-y-4">
+    <main className="qm-feature-page mx-auto max-w-3xl p-5 space-y-4">
       <Link href="/marketplace">← মার্কেটপ্লেস</Link>
       <p className="text-indigo-700">{paper.metadata.examType}</p>
       <h1 className="text-3xl font-bold">{paper.metadata.title}</h1>

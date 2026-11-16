@@ -150,7 +150,7 @@ export default async function ModelTestFeedPage({
   ];
 
   return (
-    <main className="mx-auto max-w-3xl space-y-5 pb-28">
+    <main className="qm-feature-page mx-auto max-w-3xl space-y-5 pb-28">
       {/* প্রিমিয়াম ব্যানার */}
       <section className="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 px-4 py-6 text-white sm:rounded-b-2xl">
         <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">
