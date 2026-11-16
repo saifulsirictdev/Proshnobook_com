@@ -84,7 +84,7 @@ export default async function MarketDetail({
           ? "ফ্রি"
           : formatMoney(paper.metadata.pricePaisa)}
       </p>
-      <Link href={`/teachers/${paper.sellerTid}`} className="block underline">
+      <Link href={`/teachers/${paper.sellerTid}`} className="block qm-action-link">
         বিক্রেতার প্রোফাইল · {paper.sellerTid}
       </Link>
       {readyRaster ? (
@@ -102,12 +102,12 @@ export default async function MarketDetail({
           rasterSale={!!readyRaster}
         />
       ) : owned ? (
-        <Link href="/dashboard/library" className="block underline">
+        <Link href="/dashboard/library" className="block qm-action-link">
           ক্রয়ের অবস্থা / রিফান্ড দেখুন →
         </Link>
       ) : !user?.id ? (
         <Link
-          className="block underline"
+          className="block qm-action-link"
           href={`/login?next=/marketplace/${id}`}
         >
           {paper.metadata.pricePaisa === 0

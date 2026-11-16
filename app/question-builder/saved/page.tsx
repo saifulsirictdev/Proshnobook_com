@@ -66,7 +66,7 @@ export default async function SavedPapers() {
         )}
         <Link
           href="/ready-papers/saved"
-          className="mt-4 inline-block text-sm font-semibold text-indigo-700 underline"
+          className="mt-4 inline-block text-sm font-semibold text-indigo-700 qm-action-link"
         >
           সব রেডি প্রশ্নপত্র ও উত্তরপত্র →
         </Link>

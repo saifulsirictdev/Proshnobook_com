@@ -115,13 +115,13 @@ export default async function SellPage() {
             {readyPapers.slice(0, 50).map((p) => (
               <Link
                 key={p.id}
-                className="block underline"
+                className="block qm-action-link"
                 href={`/ready-papers/${p.paperId}?saved=${p.id}`}
               >
                 {p.title} — খুলুন ও বিক্রির কপি প্রস্তুত করুন →
               </Link>
             ))}
-            <Link className="block underline" href="/ready-papers/saved">
+            <Link className="block qm-action-link" href="/ready-papers/saved">
               সব সেভ করা PDF / রেডি কপি →
             </Link>
           </section>
@@ -137,7 +137,7 @@ export default async function SellPage() {
             {r.revision}
           </p>
           <Link
-            className="block my-2 underline"
+            className="block my-2 qm-action-link"
             href={`/dashboard/sell/${r.id}`}
           >
             জমা দেওয়া স্থির প্রশ্নপত্র দেখুন →

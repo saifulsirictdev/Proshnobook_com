@@ -651,3 +651,8 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Added post-Google-verification first-signup identity cards, transactional pending/one-time selection and authoritative role refresh. Existing accounts/Admin are preserved. Contributor has distinct stored identity and Dashboard label backed by existing Teacher capabilities; no enum migration or Admin self-selection.
 - Student landing/mobile nav now points to live tests/practice; creator page/action/API boundaries block Student paper editing, generation, PDF extraction/upload and publication submissions. Existing immutable purchased copies, wallet/receipts and records remain intact.
 - Tests cover choices, malicious/repeated submission, Google callback source guards, stale role refresh, creator ownership/quotas and negative Student access. Required real isolated browser flow adds synthetic pending identity choices and Student route/API boundary checks; actual Google provider remains an external acceptance check. See `docs/operations/ACCOUNT-ONBOARDING.md`.
+
+## Phase 64 — Consistent action-link buttons
+
+- Converted plain underlined action links on the homepage, guide, Dashboard/library/sell, wallet checkout, marketplace detail, support, saved papers, videos/downloads and job circulars into explicit violet secondary buttons.
+- Scoped `qm-action-link` styling preserves native anchors/destinations/download behavior, existing primary buttons, navigation, breadcrumbs, inline article/policy links and printable question content. Touch-friendly 44px minimum, wrapping, hover, visible keyboard focus and reduced-motion support included. No auth, pricing, wallet or publication logic changes.

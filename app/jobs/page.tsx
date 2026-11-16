@@ -12,7 +12,7 @@ export default async function Jobs() {
             <p className="text-sm text-royal">{j.type}</p>
             <h2 className="font-semibold">{j.title}</h2>
             <p className="text-sm text-slate-600">{j.org}{j.deadline && ` · Deadline ${j.deadline.toLocaleDateString("en-GB")}`}</p>
-            {j.url && <a href={j.url} className="mt-2 inline-block text-sm text-royal underline" rel="noopener noreferrer" target="_blank">View circular</a>}
+            {j.url && <a href={j.url} className="mt-2 inline-block text-sm text-royal qm-action-link" rel="noopener noreferrer" target="_blank">View circular</a>}
           </li>
         ))}
       </ul>

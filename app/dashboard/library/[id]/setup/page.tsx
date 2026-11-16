@@ -64,7 +64,7 @@ export default async function PurchasedPaper({
       <div data-noprint className="space-y-3">
         <Link href="/dashboard/library">← কেনা প্রশ্নপত্র</Link>
         <Link
-          className="block underline"
+          className="block qm-action-link"
           href={`/dashboard/library/${id}/report`}
         >
           সমস্যা জানান / অভিযোগের অবস্থা →

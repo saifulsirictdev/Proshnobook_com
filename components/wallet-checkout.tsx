@@ -93,10 +93,10 @@ export default function WalletCheckout({ ids }: { ids: string[] }) {
           {quote && !quote.ok ? quote.error : "মূল্য যাচাই হচ্ছে…"}
         </p>
       )}
-      <Link href="/wallet" className="ml-3 underline">
+      <Link href="/wallet" className="ml-3 qm-action-link">
         Balance / Recharge করুন
       </Link>
-      <Link href="/packages" className="ml-3 underline">
+      <Link href="/packages" className="ml-3 qm-action-link">
         প্যাকেজ
       </Link>
       <p role="status" className="mt-2">

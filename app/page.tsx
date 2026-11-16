@@ -187,7 +187,7 @@ export default async function Home({
         <p className="my-3">
           {BRAND.description} এটি সাধারণ প্রশ্নোত্তর আলোচনা ফোরাম নয়।
         </p>
-        <Link className="underline" href="/about-us">
+        <Link className="qm-action-link" href="/about-us">
           বর্তমান সেবা ও আমাদের পরিচিতি →
         </Link>
       </section>
@@ -203,7 +203,7 @@ export default async function Home({
           পারেন। PDF লাইব্রেরি থেকেও প্রশ্ন বেছে পেপার তৈরি করা যায়। প্রকাশিত
           প্রশ্নপত্রের মূল্য ও ব্যবহারের নিয়ম দেখে সংগ্রহ করুন।
         </p>
-        <Link className="underline" href="/question-paper-guide">
+        <Link className="qm-action-link" href="/question-paper-guide">
           প্রশ্নপত্র তৈরি, ফ্রি সংগ্রহ ও প্রিন্টের নির্দেশিকা →
         </Link>
       </section>

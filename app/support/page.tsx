@@ -30,7 +30,7 @@ export default async function Support({
       </p>
       <p>
         কেনা প্রশ্নপত্রের অভিযোগ/রিফান্ডের জন্য{" "}
-        <Link className="underline" href="/dashboard/library">
+        <Link className="qm-action-link" href="/dashboard/library">
           কেনা কপির লাইব্রেরি
         </Link>{" "}
         ব্যবহার করুন। এখানে অনুরোধ দিলেই টাকা ফেরত, account deletion বা copyright
@@ -67,7 +67,7 @@ export default async function Support({
         </article>
       ))}
       {next && (
-        <Link className="underline" href={`/support?after=${next}`}>
+        <Link className="qm-action-link" href={`/support?after=${next}`}>
           আরও অনুরোধ →
         </Link>
       )}

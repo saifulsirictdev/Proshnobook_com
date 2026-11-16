@@ -95,11 +95,11 @@ export default async function Dashboard({
         <PublicPhotoEditor
           tid={user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}
         />
-        <Link className="tw-link" href="/dashboard/feed-saved">
+        <Link className="tw-link qm-action-link" href="/dashboard/feed-saved">
           ফিডের বুকমার্ক দেখুন →
         </Link>
         {user.role === "ADMIN" && (
-          <Link className="tw-link" href="/admin/social">
+          <Link className="tw-link qm-action-link" href="/admin/social">
             মন্তব্য যাচাই ও রিপোর্ট →
           </Link>
         )}
@@ -108,7 +108,7 @@ export default async function Dashboard({
           <p>{greeting()},</p>
           <h1>{user.name || "স্বাগতম"}</h1>
           <Link
-            className="tw-link"
+            className="tw-link qm-action-link"
             href={`/teachers/${user.role === "ADMIN" ? "proshnobook" : teacherTid(user.id)}`}
           >
             আমার প্রকাশ্য শিক্ষক প্রোফাইল →
@@ -258,7 +258,7 @@ export default async function Dashboard({
           </Link>
         </nav>
         {!w?.admin && (
-          <Link href="/wallet/send" className="block mb-4 underline">
+          <Link href="/wallet/send" className="block mb-4 qm-action-link">
             TID দিয়ে শিক্ষককে Send Money করুন →
           </Link>
         )}
@@ -279,14 +279,14 @@ export default async function Dashboard({
             অন্তর্ভুক্ত প্রশ্নে balance কাটে না। প্রথম লগইনের ৳২০ credit নগদ উত্তোলনযোগ্য
             নয়।
           </p>
-          <Link className="tw-link" href="/wallet">
+          <Link className="tw-link qm-action-link" href="/wallet">
             ওয়ালেট ও লেনদেন দেখুন →
           </Link>
           {(user.role === "TEACHER" || user.role === "ADMIN") && (
             <>
               {" "}
               ·{" "}
-              <Link className="tw-link" href="/dashboard?edit=1">
+              <Link className="tw-link qm-action-link" href="/dashboard?edit=1">
                 প্রতিষ্ঠানের তথ্য সম্পাদনা
               </Link>
             </>
@@ -295,7 +295,7 @@ export default async function Dashboard({
             <>
               {" "}
               ·{" "}
-              <Link className="tw-link" href="/admin">
+              <Link className="tw-link qm-action-link" href="/admin">
                 অ্যাডমিন প্যানেল
               </Link>
             </>
