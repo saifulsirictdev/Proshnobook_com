@@ -172,6 +172,10 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.ok(!rejectedSession?.user);
       }
       phase = `${role.toLowerCase()}_correct_credentials`;
+      // React 19 form actions reset uncontrolled fields even when returning an error state.
+      await page
+        .locator('input[name="email"]')
+        .fill(`${role.toLowerCase()}@example.invalid`);
       await page.locator('input[name="password"]').fill(password);
       await page.locator(".qm-login-primary").click();
       await page.waitForURL(origin + "/dashboard");
