@@ -69,10 +69,6 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${site.siteName}`,
     },
     description: site.metaDescription,
-    icons: {
-      icon: [{ url: "/proshnobook-p-favicon.png", sizes: "32x32", type: "image/png" }],
-      apple: [{ url: "/proshnobook-p-apple.png", sizes: "180x180", type: "image/png" }],
-    },
     alternates: { types: { "application/rss+xml": "/feed.xml" } },
   };
 }
@@ -106,6 +102,17 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link
+          rel="icon"
+          href="/proshnobook-p-favicon.png"
+          sizes="32x32"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/proshnobook-p-apple.png"
+          sizes="180x180"
+        />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
 
         {/* 🎯 গুগল ব্র্যান্ড স্কিমা */}
