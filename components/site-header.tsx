@@ -151,9 +151,9 @@ export default function SiteHeader({
       <Announcement text={notice} />
       {/* Glassmorphism Sticky Header */}
       <header className="qm-site-header sticky top-0 z-40 border-b border-white/20 bg-white/80 backdrop-blur-xl dark:bg-[#0d0926]/80 dark:border-white/10 shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6">
+        <div className="qm-header-inner mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6">
           {/* Brand Logo Area */}
-          <div className="flex min-w-0 flex-1 items-center gap-2 xl:flex-none">
+          <div className="qm-header-brand flex min-w-0 flex-1 items-center gap-2 xl:flex-none">
             <button
               onClick={() => setOpen(true)}
               aria-label="Open menu"
@@ -193,7 +193,7 @@ export default function SiteHeader({
           {/* Desktop Navigation */}
           <nav
             aria-label="Main"
-            className="hidden flex-1 items-center justify-center gap-2 whitespace-nowrap xl:flex px-4"
+            className="qm-header-nav hidden flex-1 items-center justify-center gap-2 whitespace-nowrap xl:flex px-4"
           >
             {navTree.map((item) => (
               <div key={item.href} className="relative group">
@@ -215,7 +215,7 @@ export default function SiteHeader({
                   )}
                 </Link>
                 {item.children && (
-                  <div className="absolute left-0 top-full mt-1 hidden w-56 rounded-xl border border-slate-100 bg-white/95 backdrop-blur-xl p-2 shadow-xl group-hover:block dark:bg-[#1a1247] dark:border-white/10">
+                  <div className="absolute left-0 top-full mt-1 hidden w-56 rounded-xl border border-slate-100 bg-white/95 backdrop-blur-xl p-2 shadow-xl group-hover:block group-focus-within:block dark:bg-[#1a1247] dark:border-white/10">
                     {item.children.map((sub) => (
                       <Link
                         key={sub.href}
@@ -232,10 +232,10 @@ export default function SiteHeader({
           </nav>
 
           {/* Right Side Actions */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="qm-header-actions flex items-center gap-2 sm:gap-3 shrink-0">
             <Link
               href="/packages"
-              className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-amber-100 text-amber-700 px-3 py-1.5 text-xs font-bold hover:bg-amber-200 transition-colors border border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700/50"
+              className="qm-header-package hidden sm:inline-flex items-center gap-1.5 rounded-full bg-amber-100 text-amber-700 px-3 py-1.5 text-xs font-bold hover:bg-amber-200 transition-colors border border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700/50"
             >
               <Package size={14} />
               <span>প্যাকেজ</span>
