@@ -33,3 +33,9 @@ Book PDFs are still needed. No real textbook questions have been generated/impor
 The Admin import page now offers “প্রস্তুত ১০০টি প্রশ্ন লোড করুন”. Loading only fills the editable JSON, does not query/write questions and does not mark textbook review complete. A replacement confirmation protects pasted edits. Preview invalidates whenever content changes. The existing explicit preview → confirmation → Pending-save path is still mandatory, and final publication remains separate.
 
 The pending-save checkbox acknowledges source metadata and outstanding review rather than falsely certifying that unavailable textbook pages have already been checked. Full official chapter alignment/subject review is still required before publishing. Isolated browser CI loads the real prepared 100-item batch, checks read-only loading/preview, saves all 100 as Pending and confirms none are approved. This is not a production import.
+
+## Prepared written-question import
+
+ADMIN can preview the prepared 30-CQ/30-SQ batch on `/admin/questions/import`, then explicitly acknowledge limitations and save Pending. This is separate from MCQ JSON upload. CQ uses three parts only (2/4/4), `options.stimulus` and `options.subQuestions.k/kh/g`; SQ uses empty options; both have empty correct keys and solutions in explanation. Audit receipts use `writtenimport:v1:<digest>` and retain the original draft provenance plus the later chapter alignment report. No automatic publication.
+
+The entire printed chapter 1–37 has now been visually reviewed for concept alignment; original draft metadata remains historical. See `deliverables/class6-math-ch1/CHAPTER-REVIEW.md`. Coverage completeness and independent teacher approval are not claimed.

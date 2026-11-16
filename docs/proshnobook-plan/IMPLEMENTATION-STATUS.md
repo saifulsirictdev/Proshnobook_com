@@ -689,3 +689,9 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Connected the 100-item original Class6 mathematics chapter1 draft to Admin's guarded import page. One button loads editable JSON; preview and explicit Pending save remain separate. Replacing existing edits requires confirmation.
 - Clearly labels outstanding official-book/page/teacher review. Adjusted Pending confirmation so it does not falsely claim unavailable textbook pages were verified. No automatic approval, credentials/config changes or live DB mutations.
 - Added actual prepared-batch load/preview/read-only/100-pending assertions to isolated Admin browser CI. Existing role, idempotency, arithmetic, finance and print tests remain required.
+
+## Phase 70 — Written-question Pending import and full-chapter concept review
+
+- Visually reviewed Class 6 math printed pages 1–37 from the owner's Drive PDF. Recorded source SHA-256 and item-level concept-page mappings for 100 MCQ/30 CQ/30 SQ in `deliverables/class6-math-ch1/chapter-alignment-review.json`; see CHAPTER-REVIEW.md for coverage gaps and review limits.
+- Added guarded prepared CQ/SQ preview and Pending-only save with 2/4/4 validation, builder-compatible options, deterministic IDs, normalized legacy dedup, Serializable retries and audit receipts. No migration, new category, production import or automatic publication.
+- Targeted tests: 12/12 passed; typecheck passed (local dummy Prisma engine generation only). New CQ/SQ database path tested with mocks, not live DB. Independent teacher approval remains outstanding.
