@@ -656,3 +656,9 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 
 - Converted plain underlined action links on the homepage, guide, Dashboard/library/sell, wallet checkout, marketplace detail, support, saved papers, videos/downloads and job circulars into explicit violet secondary buttons.
 - Scoped `qm-action-link` styling preserves native anchors/destinations/download behavior, existing primary buttons, navigation, breadcrumbs, inline article/policy links and printable question content. Touch-friendly 44px minimum, wrapping, hover, visible keyboard focus and reduced-motion support included. No auth, pricing, wallet or publication logic changes.
+
+## Phase 65 — Professional desktop header and home spacing
+
+- Desktop (1280px+) header uses a spacious two-row layout: preserved owner P logo/brand and account actions above a dedicated navigation row, avoiding crowded single-line controls. Suppressed duplicate desktop Package badge; original package navigation remains. Dropdowns now also open on keyboard focus.
+- Desktop homepage gets a consistent 1280px content width, generous spacing, balanced creation cards, class tabs and a bordered introduction panel. Original content/order, role rules, mobile shell and print/editor layouts stay unchanged. Screen-only scoped CSS includes dark-mode surfaces.
+- TypeScript validation passed; required CI includes built-app desktop/mobile browser and finance regressions.
