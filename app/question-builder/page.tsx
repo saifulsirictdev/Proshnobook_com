@@ -61,11 +61,21 @@ export default async function QuestionBuilderStart() {
           সব প্রশ্ন বা সুবিধা বিনামূল্যে নয়। প্রকাশিত ফ্রি প্রশ্নপত্র আলাদাভাবে সংগ্রহ করা
           যায়। ব্যক্তিগত প্রশ্নপত্র ও editor ব্যবহার করতে লগইন প্রয়োজন।
         </p>
-        <div className="mt-4 flex flex-wrap gap-4 underline">
-          <Link href="/question-paper-guide">বিস্তারিত নির্দেশিকা</Link>
-          <Link href="/ready-papers">PDF থেকে প্রশ্ন তৈরি</Link>
-          <Link href="/marketplace">ফ্রি ও পেইড প্রশ্নপত্র</Link>
-        </div>
+        <nav aria-label="প্রশ্ন তৈরির সহায়ক লিংক" className="mt-4 flex flex-wrap gap-2">
+          {[
+            { href: "/question-paper-guide", label: "বিস্তারিত নির্দেশিকা", color: "border-indigo-200 bg-indigo-50 text-indigo-800 hover:bg-indigo-100" },
+            { href: "/ready-papers", label: "PDF থেকে প্রশ্ন তৈরি", color: "border-violet-200 bg-violet-50 text-violet-800 hover:bg-violet-100" },
+            { href: "/marketplace", label: "ফ্রি ও পেইড প্রশ্নপত্র", color: "border-teal-200 bg-teal-50 text-teal-800 hover:bg-teal-100" },
+          ].map(({ href, label, color }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`inline-flex min-h-11 max-w-full items-center justify-center gap-1.5 rounded-xl border px-3 py-2 text-sm font-semibold no-underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2 ${color}`}
+            >
+              {label}<span aria-hidden="true">→</span>
+            </Link>
+          ))}
+        </nav>
       </section>
 
     </main>
