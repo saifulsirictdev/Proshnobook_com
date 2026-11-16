@@ -303,18 +303,25 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         };
         await page.getByLabel("প্রশ্নের JSON", { exact: true }).fill(JSON.stringify(fixture));
         await page.getByRole("button", { name: "প্রিভিউ ও গঠন যাচাই", exact: true }).click();
+        phase = "admin_mcq_preview_checkbox";
         await page.getByRole("checkbox").check();
+        phase = "admin_mcq_before_save";
         const before = await db.question.count({ where: { text: fixture.items[0].text } });
         assert.equal(before, 0);
         await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
+        phase = "admin_mcq_saved_status";
         await page.getByRole("status").filter({ hasText: "Pending প্রশ্ন সেভ হয়েছে" }).waitFor();
+        phase = "admin_mcq_saved_db";
         const row = await db.question.findFirstOrThrow({ where: { text: fixture.items[0].text } });
         assert.equal(row.approved, false);
         assert.equal(row.category, "Class 6");
         await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
+        phase = "admin_mcq_repeat_status";
         await page.getByRole("status").filter({ hasText: "0টি Pending" }).waitFor();
+        phase = "admin_mcq_repeat_db";
         assert.equal(await db.question.count({ where: { text: fixture.items[0].text } }), 1);
         assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 1);
+        phase = "admin_mcq_overflow";
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
       }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
