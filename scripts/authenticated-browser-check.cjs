@@ -22,7 +22,7 @@ function startServer(databaseUrl, port) {
     process.execPath,
     [
       require.resolve("next/dist/bin/next"),
-      "start",
+      process.env.AUTH_BROWSER_DEV_DIAGNOSTICS === "1" ? "dev" : "start",
       "--hostname",
       "127.0.0.1",
       "--port",
@@ -34,7 +34,7 @@ function startServer(databaseUrl, port) {
       env: {
         PATH: process.env.PATH,
         HOME: process.env.HOME,
-        NODE_ENV: "production",
+        NODE_ENV: process.env.AUTH_BROWSER_DEV_DIAGNOSTICS === "1" ? "development" : "production",
         DATABASE_URL: databaseUrl,
         AUTH_SECRET: randomBytes(32).toString("hex"),
         AUTH_TRUST_HOST: "true",
@@ -151,6 +151,13 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         // Only allowlisted numeric React codes and our own phase labels reach CI.
         const reactCode = /Minified React error #(\d+)/.exec(error.message)?.[1];
         const kind = reactCode ? `react_${reactCode}` : "browser_runtime_error";
+        if (process.env.AUTH_BROWSER_DEV_DIAGNOSTICS === "1") {
+          // Never print payloads/props/text: only a fixed allowlist of component/tag names.
+          const allowed = ["PathGate", "SiteHeader", "TeacherWorkspace", "MobileBottomNav", "InstallPrompt", "BrandWordmark", "SessionProvider", "form", "main", "nav", "header", "footer", "script", "link", "div", "span", "p", "button", "input"];
+          const tags = [...error.message.matchAll(/^[+\-]\s+<([A-Za-z][A-Za-z0-9]*)[ >]/gm)].map(match => match[1]).filter(tag => allowed.includes(tag));
+          const components = allowed.filter(tag => error.message.includes("<" + tag));
+          console.error(`::error::hydration_structure_${phase}_${[...new Set(tags)].join("_")}_components_${components.join("_")}`);
+        }
         errors.push(`${phase}_${kind}`);
       });
       const unauthenticated = await context.request.get(origin + "/dashboard", {
