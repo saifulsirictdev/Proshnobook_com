@@ -196,7 +196,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       assert.equal(session.user.role, role);
       assert.equal(session.user.id, role.toLowerCase());
       phase = `${role.toLowerCase()}_private_pages_and_mobile`;
-      for (const width of [390, 1280]) {
+      for (const width of [390, 1280, 390, 1280]) {
         await page.setViewportSize({ width, height: 844 });
         for (const pathname of [
           "/dashboard",
@@ -243,10 +243,19 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.ok(await page.getByRole("button", { name: "প্রশ্ন তৈরী করুন", exact: true }).isEnabled());
         await page.getByRole("button", { name: "Job", exact: true }).click();
         assert.equal(await page.getByLabel("বিষয়", { exact: true }).inputValue(), "");
-        await page.getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true }).selectOption("ntrca-preliminary");
+        await page.getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true }).selectOption("ntrca");
+        await page.getByLabel("NTRCA শাখা", { exact: true }).selectOption("school");
         await page.getByLabel("বিষয়", { exact: true }).selectOption("বাংলা");
         await page.getByLabel("প্রস্তুতির টপিক", { exact: true }).selectOption({ index: 1 });
-        await page.getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true }).selectOption("bank");
+        await page.getByLabel("NTRCA শাখা", { exact: true }).selectOption("college");
+        assert.equal(await page.getByLabel("বিষয়", { exact: true }).inputValue(), "");
+        await page.getByLabel("বিষয়", { exact: true }).selectOption("সাধারণ গণিত");
+        assert.ok((await page.getByLabel("প্রস্তুতির টপিক", { exact: true }).innerText()).includes("ত্রিকোণমিতি"));
+        assert.equal(await page.locator('select[name="questionType"]').inputValue(), "MCQ");
+        assert.ok(await page.locator('select[name="questionType"]').isDisabled());
+        const exams = await page.getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true }).locator("option").count();
+        assert.equal(exams, 5);
+        await page.getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true }).selectOption("govt-11-20");
         assert.equal(await page.getByLabel("বিষয়", { exact: true }).inputValue(), "");
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
         // Never enter prepare: it can invoke paid generation; UI selection only.

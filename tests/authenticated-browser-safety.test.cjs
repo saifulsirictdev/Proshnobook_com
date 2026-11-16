@@ -29,6 +29,7 @@ test("browser uses actual password UI and isolated full app, not fake session co
   assert.ok(code.includes("session.user.role"));
   assert.ok(code.includes('["TEACHER", "ADMIN", "STUDENT"]'));
   assert.ok(code.includes("[390, 1280]"));
+  assert.ok(code.includes("[390, 1280, 390, 1280]"));
   assert.ok(code.includes("route.abort()"));
   assert.ok(code.includes("AUTH_SECRET: randomBytes"));
   assert.ok(!code.includes("...process.env"));

@@ -620,3 +620,16 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 
 - Moved the signed-in question selection card above “যেভাবে শুরু করবেন” on the builder landing, in document order for both mobile and desktop. Anonymous login CTA also precedes instructions; all guidance/links remain present below.
 - Added rendered-order regression assertions for signed-in and anonymous views. No selector, authentication, generation, pricing or payment behavior changes.
+
+## Phase 59 — owner-sourced Job preliminary syllabuses
+
+- Replaced the nine suggested Job profiles with exactly BCS, Primary, NTRCA and grades 11–20 government jobs. NTRCA requires nested School/College selection with distinct supplied PDF sources. Removed written/bank/non-cadre/other Job roots from the selector; stored questions are not deleted.
+- Read all four supplied PDFs, normalized their font-mapped Bengali labels and grouped syllabus topics with source filename/hash/page references. BCS and Primary preparation-source status and NTRCA eighteenth exam 2023 are disclosed; grades 11–20 uses only the owner's pasted MCQ-relevant topics, not its inconsistent generic exam-pattern ranges. Admission is unchanged.
+- Job no longer merges unrelated DB subject suggestions or offers an all-exams subject union. Select exam/branch first, then source-specific subject/topics. Source-only subject marks do not set paper timing, score or negative marking. UI and preparation server force Job MCQ; auth/payment/AI contracts and institution branding unchanged.
+- Four new source/catalog/rendered-starter tests and updated existing tests/browser flow cover exact roots, distinct branches, valid page ranges, subject isolation, stale written-state rejection, MCQ query and branch reset at 390/1280px. See `docs/syllabuses/JOB-SOURCES.md` for provenance and limitations. Required CI gates merge; recurring prior wallet React 418 is not assumed resolved.
+
+## Phase 60 — complete Job release production-browser validation
+
+- Investigated production-only recurring React 418 using temporary safe tag-only diagnostics; development passed. Shell wrappers, landmark changes and build-cache isolation did not establish a reliable fix. All temporary instrumentation and exploratory shell/config changes were removed rather than shipping unproven workarounds.
+- Updated Next 15.5.29 to stable 16.4.6, within NextAuth beta32's supported majors; retained custom webpack behavior with explicit --webpack build/dev commands. Production dependency audit reports zero vulnerabilities; TypeScript passes. All required build/browser/finance/restore/PDF checks still gate release.
+- Strengthened private-route regression to repeat 390/1280px visits twice per role, keeping runtime-error assertions and all Job MCQ/School/College checks. No production user/payment/storage writes and no ignored hydration errors.

@@ -32,6 +32,7 @@ test("starter displays shared question type options and forwards the selected ty
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,
     "@/lib/exam-preparation": load("lib/exam-preparation.ts"),
+    "@/lib/job-syllabuses.json": require("../lib/job-syllabuses.json"),
   }).default;
   const html = renderToStaticMarkup(React.createElement(Start, { pairs: [] }));
   assert.match(html, /প্রশ্নের ধরন/);
@@ -40,7 +41,7 @@ test("starter displays shared question type options and forwards the selected ty
     assert.ok(html.includes(`value="${o.value}"`));
   assert.match(html, /<option value="ALL" selected="">/);
   const source = fs.readFileSync("components/qb-start.tsx", "utf8");
-  assert.match(source, /p.set\("questionType", questionType\)/);
+  assert.match(source, /p.set\("questionType", isJob \? "MCQ" : questionType\)/);
   assert.ok(
     source.indexOf('name="questionType"') <
       source.indexOf("disabled={!subject}"),

@@ -7,6 +7,11 @@ import { NCTB_CLASSES, type NctbClass } from "@/lib/nctb-data";
 
 import { examOutlines, PREPARATION_TOPICS, EXAM_OUTLINE_NOTICE, EXAM_BANK_NOTICE } from "@/lib/exam-preparation";
 
+import jobData from "@/lib/job-syllabuses.json";
+type JobSubject = { name: string; pages: number[]; topics: string[]; marks?: number };
+type JobSyllabus = { id: string; name: string; source?: string; note?: string; subjects?: JobSubject[]; branches?: JobSyllabus[] };
+const jobExams: JobSyllabus[] = jobData.exams;
+
 type Pair = { category: string; subject: string };
 const LOW = ["1", "2", "3", "4", "5", "6", "7", "8"];
 const CHIPS = ["SSC", "HSC", "Admission", "Job"];
@@ -55,11 +60,17 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const append = useSearchParams().get("append") === "1";
   const [category, setCategory] = useState("");
   const [examId, setExamId] = useState("");
+  const [branchId, setBranchId] = useState("");
+  const isJob = category === "Job";
+  const jobExam = isJob ? jobExams.find((exam) => exam.id === examId) : undefined;
+  const jobSyllabus = jobExam?.branches ? jobExam.branches.find((branch) => branch.id === branchId) : jobExam;
+  const jobSubjects = jobSyllabus?.subjects ?? [];
   const outlines = examOutlines(category);
   const selectedExam = outlines.find((exam) => exam.id === examId);
   const examSubjects = selectedExam ? selectedExam.subjects : Array.from(new Set(outlines.flatMap((exam) => exam.subjects)));
   const [questionType, setQuestionType] = useState("ALL");
   const [subject, setSubject] = useState("");
+  const jobSubject = jobSubjects.find((item) => item.name === subject);
   const [topicCategory, setTopicCategory] = useState(""); // ক্যাটাগরি/ইউনিট
   const [topic, setTopic] = useState(""); // নির্দিষ্ট টপিক
 
@@ -83,8 +94,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   }, [pairs, category]);
 
   const subjects = useMemo(
-    () => Array.from(new Set([...curriculumSubjects, ...examSubjects, ...dbSubjects])),
-    [curriculumSubjects, examSubjects, dbSubjects],
+    () => isJob ? jobSubjects.map((item) => item.name) : Array.from(new Set([...curriculumSubjects, ...examSubjects, ...dbSubjects])),
+    [isJob, jobSubjects, curriculumSubjects, examSubjects, dbSubjects],
   );
 
   // নির্বাচিত সাবজেক্টের ডেটা (chapters/subCategories সহ)
@@ -94,8 +105,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   );
 
   const flatTopics = useMemo(
-    () => currentSubjectData?.chapters ?? (outlines.length ? PREPARATION_TOPICS[subject] ?? [] : []),
-    [currentSubjectData, outlines.length, subject],
+    () => isJob ? jobSubject?.topics ?? [] : currentSubjectData?.chapters ?? (outlines.length ? PREPARATION_TOPICS[subject] ?? [] : []),
+    [isJob, jobSubject, currentSubjectData, outlines.length, subject],
   );
   const groupedTopics = useMemo(
     () => currentSubjectData?.subCategories ?? [],
@@ -119,7 +130,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   function go() {
     const p = new URLSearchParams();
     if (append) p.set("append", "1");
-    p.set("questionType", questionType);
+    if (isJob && (!jobSyllabus || !jobSubject)) return;
+    p.set("questionType", isJob ? "MCQ" : questionType);
     if (category) p.set("category", category);
     if (subject) p.set("subject", subject);
     if (hasGroups) {
@@ -141,6 +153,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           onChange={(e) => {
             setCategory(e.target.value);
             setExamId("");
+            setBranchId("");
             setSubject("");
             setTopicCategory("");
             setTopic("");
@@ -160,7 +173,9 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             className={chip(category === c)}
             onClick={() => {
               setCategory(category === c ? "" : c);
+              setQuestionType(c === "Job" ? "MCQ" : "ALL");
               setExamId("");
+            setBranchId("");
               setSubject("");
               setTopicCategory("");
               setTopic("");
@@ -177,23 +192,38 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
 
       {outlines.length > 0 && (
         <section aria-label="প্রস্তাবিত পরীক্ষার প্রস্তুতি" className="space-y-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-slate-800">
-          <p className="font-semibold">প্রস্তাবিত প্রস্তুতি-রূপরেখা</p>
-          <p>{EXAM_OUTLINE_NOTICE}</p>
+          <p className="font-semibold">{isJob ? "প্রিলিমিনারি MCQ সিলেবাস" : "প্রস্তাবিত প্রস্তুতি-রূপরেখা"}</p>
+          <p>{isJob ? "মালিকের সরবরাহকৃত PDF/লেখা থেকে সাজানো। পুরোনো সংস্করণ থাকতে পারে—সর্বশেষ বিজ্ঞপ্তি মিলিয়ে নিন। শুধু MCQ; লিখিত প্রস্তুতি নেই।" : EXAM_OUTLINE_NOTICE}</p>
           <label className="block font-semibold">
-            পরীক্ষার প্রস্তুতির ধরন (ঐচ্ছিক)
+            {isJob ? "পরীক্ষা বাছুন" : "পরীক্ষার প্রস্তুতির ধরন (ঐচ্ছিক)"}
             <select
               aria-label="পরীক্ষার প্রস্তুতির ধরন"
               className="mt-2 w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
               value={examId}
-              onChange={(e) => { setExamId(e.target.value); setSubject(""); setTopicCategory(""); setTopic(""); }}
+              onChange={(e) => { setExamId(e.target.value); setBranchId(""); setSubject(""); setTopicCategory(""); setTopic(""); }}
             >
-              <option value="">সব প্রস্তুতির বিষয়</option>
+              <option value="">{isJob ? "— পরীক্ষা নির্বাচন করুন —" : "সব প্রস্তুতির বিষয়"}</option>
               {outlines.map((exam) => <option key={exam.id} value={exam.id}>{exam.name}</option>)}
             </select>
           </label>
+          {isJob && jobExam?.branches && (
+            <label className="block font-semibold">NTRCA শাখা
+              <select aria-label="NTRCA শাখা" value={branchId} className="mt-2 w-full rounded-lg border bg-white px-3 py-3 text-sm" onChange={(e) => { setBranchId(e.target.value); setSubject(""); setTopicCategory(""); setTopic(""); }}>
+                <option value="">— School / College বাছুন —</option>
+                {jobExam.branches.map((branch) => <option key={branch.id} value={branch.id}>{branch.name}</option>)}
+              </select>
+            </label>
+          )}
+          {isJob ? <>
+            {jobSyllabus?.note && <p>{jobSyllabus.note}</p>}
+            {jobSyllabus?.source && <p className="text-xs">উৎস: {jobSyllabus.source === "owner-text" ? "মালিকের দেওয়া লেখা" : jobData.sources[jobSyllabus.source as keyof typeof jobData.sources]?.filename}</p>}
+            {jobSubject && <p className="text-xs">{jobSubject.pages.length > 0 ? `উৎসের পৃষ্ঠা: ${jobSubject.pages.join(", ")}` : "উৎস: সাধারণ প্রস্তুতির লেখা"}{jobSubject.marks ? ` · উৎসে বিষয়ের নম্বর: ${jobSubject.marks}` : ""}</p>}
+            <p className="text-xs">সিলেবাস যোগ করা মানে প্রশ্নভান্ডার পূর্ণ নয়। এটি প্রস্তুতির বিষয়–টপিক; নির্দিষ্ট পরীক্ষার আসল প্রশ্ন হিসেবে দাবি নয়।</p>
+          </> : <>
           {selectedExam?.note && <p>{selectedExam.note}</p>}
           <p className="text-xs">{EXAM_BANK_NOTICE}</p>
-          {dbSubjects.length > 0 && <p className="text-xs">প্রশ্নভান্ডারের অতিরিক্ত বিষয়ও তালিকায় রাখা হয়েছে।</p>}
+          </>}
+          {!isJob && dbSubjects.length > 0 && <p className="text-xs">প্রশ্নভান্ডারের অতিরিক্ত বিষয়ও তালিকায় রাখা হয়েছে।</p>}
         </section>
       )}
 
@@ -270,11 +300,12 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         প্রশ্নের ধরন
         <select
           name="questionType"
+          disabled={isJob}
           className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
-          value={questionType}
+          value={isJob ? "MCQ" : questionType}
           onChange={(e) => setQuestionType(e.target.value)}
         >
-          {QUESTION_TYPE_OPTIONS.map(({ value, label }) => (
+          {QUESTION_TYPE_OPTIONS.filter((option) => !isJob || option.value === "MCQ").map(({ value, label }) => (
             <option key={value} value={value}>
               {label}
             </option>
