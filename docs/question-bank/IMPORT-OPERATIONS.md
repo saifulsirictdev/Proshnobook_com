@@ -39,3 +39,21 @@ The pending-save checkbox acknowledges source metadata and outstanding review ra
 ADMIN can preview the prepared 30-CQ/30-SQ batch on `/admin/questions/import`, then explicitly acknowledge limitations and save Pending. This is separate from MCQ JSON upload. CQ uses three parts only (2/4/4), `options.stimulus` and `options.subQuestions.k/kh/g`; SQ uses empty options; both have empty correct keys and solutions in explanation. Audit receipts use `writtenimport:v1:<digest>` and retain the original draft provenance plus the later chapter alignment report. No automatic publication.
 
 The entire printed chapter 1–37 has now been visually reviewed for concept alignment; original draft metadata remains historical. See `deliverables/class6-math-ch1/CHAPTER-REVIEW.md`. Coverage completeness and independent teacher approval are not claimed.
+
+## Chapter-wise prepared library (all existing classes)
+
+At `/admin/questions/import`, select class → subject → chapter from the existing NCTB selector catalog. A ready chapter lists versioned MCQ/CQ/SQ batches and their limitations; an unprepared chapter explicitly has no batch. No category is invented. The server-side `lib/prepared-question-batches.ts` registry is the extension point for each subsequently authored chapter: add its validated adapter, provenance, language and records. Current availability is only Class 6 mathematics chapter 1 (100 MCQ + 30 CQ + 30 SQ); this feature does not generate questions in the background.
+
+Preview fetches answers only after ADMIN authorization. A batch card is remounted when selection changes, clearing previous acknowledgement/preview. Save resolves the immutable server batch id, checks its digest and consent, and always writes approved=false. Receipts use `preparedimport:v1:<digest>` and retain category, subject, topic, source/review limitations, actor and saved ids. Existing questions from legacy importers are skipped by normalized stem. Receipt status means this exact batch version has an import receipt, not that every question was independently approved. Older import forms remain under a collapsed compatibility panel.
+
+Verification: 15 targeted content/import tests passed; TypeScript typecheck passed with dummy local Prisma engine paths, not production DB access. New library transaction tests use mocks; authenticated browser CI retains the legacy real-DB path. No production import/publication performed.
+
+## Select chapter and upload a JSON file
+
+The first section of `/admin/questions/import` accepts a local `.json` file after class → subject → subgroup (where applicable) → chapter selection. Selectors use the same `NCTB_CLASSES` data as the question catalog. A selection-specific downloadable template is provided (format example only, not authored subject content).
+
+File contract: maximum 750,000 UTF-8 bytes, 1–200 items. Required batch fields: `category`, `subject`, `topic` (exact selector strings), `book`, `edition`, HTTPS `sourceUrl`, `lang` (Bangla/English), `items`. Each item requires `type` (MCQ/SQ/CQ), `text`, `explanation`, `page`, `difficulty` (EASY/MEDIUM/HARD). MCQ also has strict A/B/C/D `options` and `correct`; SQ has neither. CQ uses text as stimulus and `parts` with `label`, `question`, `solution`, `marks`: mathematics ক/খ/গ = 2/4/4; other supported CQ ক/খ/গ/ঘ = 1/2/3/4. Unknown fields (including approved) are rejected. Earlier custom draft formats must be converted to this schema or saved via their prepared-batch card.
+
+JSON scope must match the selected chapter; the server independently validates the entire catalog path, including subgroup. File/selection changes clear preview and consent. Reading a file and preview are read-only; explicit consent plus unchanged content/selection digest is required to save. Only ADMIN may preview/save, every insert has approved=false, duplicates are normalized by stem, and Serializable conflicts retry. Audit: `jsonupload:v1:<digest>` with actor, scope, source, page references and inserted ids. No publication action is added.
+
+Verification: 13 targeted import tests and typecheck passed; transaction tests use mocks. No production writes.
