@@ -75,6 +75,8 @@ jobs:
           export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
           test -x "$CHROMIUM_EXECUTABLE_PATH"
           node scripts/pdf-browser-check.cjs
+      - name: Temporary safe hydration path diagnosis
+        run: node scripts/diagnose-hydration.cjs
       - name: Production build (no production credentials)
         run: npm run build
       - name: Full built app Credentials roles and mobile browser regression (isolated DB)
