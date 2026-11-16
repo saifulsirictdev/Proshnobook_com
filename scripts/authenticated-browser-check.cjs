@@ -207,7 +207,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
       assert.equal(session.user.role, role);
       assert.equal(session.user.id, role.toLowerCase());
       phase = `${role.toLowerCase()}_private_pages_and_mobile`;
-      for (const width of [390, 1280]) {
+      for (const width of [390, 1280, 390, 1280]) {
         await page.setViewportSize({ width, height: 844 });
         for (const pathname of [
           "/dashboard",
