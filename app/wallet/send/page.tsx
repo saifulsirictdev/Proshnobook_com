@@ -17,7 +17,7 @@ export default async function SendMoney() {
   if (wallet.admin) redirect("/wallet");
   const limits = await readWalletLimits(db);
   return (
-    <main className="mx-auto max-w-2xl p-5 space-y-5">
+    <main className="qm-feature-page mx-auto max-w-2xl p-5 space-y-5">
       <Link href="/wallet">← ওয়ালেট</Link>
       <h1 className="text-2xl font-bold">শিক্ষককে Send Money</h1>
       <p className="break-all">আপনার TID: {teacherTid(user.id)}</p>

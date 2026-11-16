@@ -279,6 +279,20 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(adminPage.status(), 200);
         assert.equal(new URL(page.url()).pathname, "/admin/wallet");
       } else assert.notEqual(new URL(page.url()).pathname, "/admin/wallet");
+      if (role === "TEACHER") {
+        for (const width of [1024, 1440]) {
+          await page.setViewportSize({ width, height: 1000 });
+          for (const route of ["/exam", "/model-test", "/packages", "/profile", "/ready-papers", "/marketplace", "/dashboard/sell"]) {
+            phase = `desktop_features_${width}_${route.replace(/\//g, "_")}`;
+            const response = await page.goto(origin + route, { waitUntil: "networkidle" });
+            assert.equal(response.status(), 200);
+            assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
+            if (route === "/exam") {
+              assert.equal(await page.locator(".qm-exam-setup form").evaluate(el => getComputedStyle(el).gridTemplateColumns.split(" ").length), 2);
+            }
+          }
+        }
+      }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
       if (errors.length) {
         phase = errors[0];

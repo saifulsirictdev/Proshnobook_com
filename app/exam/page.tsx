@@ -126,7 +126,7 @@ export default function ExamPage() {
 
   return (
     <div className="min-h-screen bg-slate-50/70 py-6 px-4 sm:px-6">
-      <div className="mx-auto max-w-xl">
+      <div className="qm-exam-setup mx-auto max-w-xl">
         <div className="mb-6 flex items-center justify-between rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 p-4 text-white shadow-md">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/20 backdrop-blur-md">

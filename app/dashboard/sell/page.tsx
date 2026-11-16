@@ -83,7 +83,7 @@ export default async function SellPage() {
     DELETED: "ক্যাটালগ থেকে সরানো হয়েছে",
   };
   return (
-    <main className="mx-auto max-w-3xl p-5 space-y-5">
+    <main className="qm-feature-page mx-auto max-w-3xl p-5 space-y-5">
       <Link href="/dashboard">← ড্যাশবোর্ড</Link>
       <h1 className="text-2xl font-bold">প্রশ্নপত্র বিক্রির আবেদন</h1>
       <MarketplaceSubmission admin={admin} papers={sources} />
