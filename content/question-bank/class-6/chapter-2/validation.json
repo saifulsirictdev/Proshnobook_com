@@ -1,0 +1,1933 @@
+{
+  "sourceSha256": "ffa30c8b815f49f3326b70ae58c5e17f11c4d8bd6d854eb84153fab8d593f23f",
+  "status": "DRAFT_SUBJECT_REVIEW_PENDING",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 30,
+    "SQ": 30
+  },
+  "MCQ_skillFamilies": 25,
+  "SQ_skillFamilies": 15,
+  "CQ_skillFamilies": 10,
+  "printedPagesVisuallyRead": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "fullChapterConceptReview": true,
+  "independentTeacherApproved": false,
+  "productionImported": 0,
+  "arithmeticAssertions": "all passed",
+  "limitations": [
+    "MCQ: ২৫ দক্ষতার চারটি করে সংখ্যাভিত্তিক variant; CQ: ১০ পরিবারের তিনটি করে variant; SQ: ১৫ পরিবারের দুটি করে variant।",
+    "পূর্ণ অধ্যায় coverage বা স্বাধীন শিক্ষক অনুমোদন দাবি নয়।",
+    "নিজস্ব প্রশ্ন; উল্লেখিত পৃষ্ঠা কেবল ধারণাসূত্র, হুবহু প্রশ্নের উৎস নয়।"
+  ],
+  "items": [
+    {
+      "number": 1,
+      "type": "MCQ",
+      "skill": "অনুপাত সরলীকরণ",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "2/5",
+        "choices": "[Fraction(2, 5), Fraction(5, 2), Fraction(3, 5), Fraction(1, 3)]"
+      }
+    },
+    {
+      "number": 2,
+      "type": "MCQ",
+      "skill": "একক মিলিয়ে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "2/5",
+        "choices": "[Fraction(7, 5), Fraction(2, 5), Fraction(12, 5), Fraction(17, 5)]"
+      }
+    },
+    {
+      "number": 3,
+      "type": "MCQ",
+      "skill": "সমতুল অনুপাতের শূন্যস্থান",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "answer": "28",
+        "choices": "[Fraction(29, 1), Fraction(30, 1), Fraction(28, 1), Fraction(31, 1)]"
+      }
+    },
+    {
+      "number": 4,
+      "type": "MCQ",
+      "skill": "ব্যস্ত অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "9/4",
+        "choices": "[Fraction(13, 4), Fraction(17, 4), Fraction(21, 4), Fraction(9, 4)]"
+      }
+    },
+    {
+      "number": 5,
+      "type": "MCQ",
+      "skill": "মিশ্র অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "8/21",
+        "choices": "[Fraction(8, 21), Fraction(29, 21), Fraction(50, 21), Fraction(71, 21)]"
+      }
+    },
+    {
+      "number": 6,
+      "type": "MCQ",
+      "skill": "অনুপাতে প্রথম অংশ",
+      "conceptPages": [
+        43
+      ],
+      "checks": {
+        "answer": "80",
+        "choices": "[Fraction(81, 1), Fraction(80, 1), Fraction(82, 1), Fraction(83, 1)]"
+      }
+    },
+    {
+      "number": 7,
+      "type": "MCQ",
+      "skill": "অনুপাতে দ্বিতীয় অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "250",
+        "choices": "[Fraction(251, 1), Fraction(252, 1), Fraction(250, 1), Fraction(253, 1)]"
+      }
+    },
+    {
+      "number": 8,
+      "type": "MCQ",
+      "skill": "এক অংশ থেকে অন্য অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "60",
+        "choices": "[Fraction(61, 1), Fraction(62, 1), Fraction(63, 1), Fraction(60, 1)]"
+      }
+    },
+    {
+      "number": 9,
+      "type": "MCQ",
+      "skill": "অনুপাত থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "40",
+        "choices": "[Fraction(40, 1), Fraction(41, 1), Fraction(42, 1), Fraction(43, 1)]"
+      }
+    },
+    {
+      "number": 10,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে ভগ্নাংশ",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "3/20",
+        "choices": "[Fraction(23, 20), Fraction(3, 20), Fraction(43, 20), Fraction(63, 20)]"
+      }
+    },
+    {
+      "number": 11,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে অনুপাত",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "1/5",
+        "choices": "[Fraction(6, 5), Fraction(11, 5), Fraction(1, 5), Fraction(16, 5)]"
+      }
+    },
+    {
+      "number": 12,
+      "type": "MCQ",
+      "skill": "ভগ্নাংশ থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "25",
+        "choices": "[Fraction(26, 1), Fraction(27, 1), Fraction(28, 1), Fraction(25, 1)]"
+      }
+    },
+    {
+      "number": 13,
+      "type": "MCQ",
+      "skill": "দশমিক থেকে শতকরা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "25",
+        "choices": "[Fraction(25, 1), Fraction(26, 1), Fraction(27, 1), Fraction(28, 1)]"
+      }
+    },
+    {
+      "number": 14,
+      "type": "MCQ",
+      "skill": "শতকরা অংশের মান",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "60",
+        "choices": "[Fraction(61, 1), Fraction(60, 1), Fraction(62, 1), Fraction(63, 1)]"
+      }
+    },
+    {
+      "number": 15,
+      "type": "MCQ",
+      "skill": "এক রাশি অন্যের কত শতাংশ",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "20",
+        "choices": "[Fraction(21, 1), Fraction(22, 1), Fraction(20, 1), Fraction(23, 1)]"
+      }
+    },
+    {
+      "number": 16,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে মূল রাশি",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "600",
+        "choices": "[Fraction(601, 1), Fraction(602, 1), Fraction(603, 1), Fraction(600, 1)]"
+      }
+    },
+    {
+      "number": 17,
+      "type": "MCQ",
+      "skill": "ভালো পণ্যের শতকরা",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "answer": "96",
+        "choices": "[Fraction(96, 1), Fraction(97, 1), Fraction(98, 1), Fraction(99, 1)]"
+      }
+    },
+    {
+      "number": 18,
+      "type": "MCQ",
+      "skill": "মূল্যছাড়ে প্রদেয় টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "720",
+        "choices": "[Fraction(721, 1), Fraction(720, 1), Fraction(722, 1), Fraction(723, 1)]"
+      }
+    },
+    {
+      "number": 19,
+      "type": "MCQ",
+      "skill": "শতকরা বৃদ্ধি",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "420",
+        "choices": "[Fraction(421, 1), Fraction(422, 1), Fraction(420, 1), Fraction(423, 1)]"
+      }
+    },
+    {
+      "number": 20,
+      "type": "MCQ",
+      "skill": "দ্রব্যসংখ্যা ও দাম",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "96",
+        "choices": "[Fraction(97, 1), Fraction(98, 1), Fraction(99, 1), Fraction(96, 1)]"
+      }
+    },
+    {
+      "number": 21,
+      "type": "MCQ",
+      "skill": "লোক ও কাজের সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "10",
+        "choices": "[Fraction(10, 1), Fraction(11, 1), Fraction(12, 1), Fraction(13, 1)]"
+      }
+    },
+    {
+      "number": 22,
+      "type": "MCQ",
+      "skill": "লোকসংখ্যা ও খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "18",
+        "choices": "[Fraction(19, 1), Fraction(18, 1), Fraction(20, 1), Fraction(21, 1)]"
+      }
+    },
+    {
+      "number": 23,
+      "type": "MCQ",
+      "skill": "দূরত্ব ও সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "6",
+        "choices": "[Fraction(7, 1), Fraction(8, 1), Fraction(6, 1), Fraction(9, 1)]"
+      }
+    },
+    {
+      "number": 24,
+      "type": "MCQ",
+      "skill": "লোক কর্মঘণ্টা ও দিন",
+      "conceptPages": [
+        56
+      ],
+      "checks": {
+        "answer": "12",
+        "choices": "[Fraction(13, 1), Fraction(14, 1), Fraction(15, 1), Fraction(12, 1)]"
+      }
+    },
+    {
+      "number": 25,
+      "type": "MCQ",
+      "skill": "মজুরির অনুপাত ও কাজ",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "6/35",
+        "choices": "[Fraction(6, 35), Fraction(41, 35), Fraction(76, 35), Fraction(111, 35)]"
+      }
+    },
+    {
+      "number": 26,
+      "type": "MCQ",
+      "skill": "অনুপাত সরলীকরণ",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "1/2",
+        "choices": "[Fraction(2, 1), Fraction(1, 2), Fraction(2, 3), Fraction(3, 7)]"
+      }
+    },
+    {
+      "number": 27,
+      "type": "MCQ",
+      "skill": "একক মিলিয়ে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "3/8",
+        "choices": "[Fraction(11, 8), Fraction(19, 8), Fraction(3, 8), Fraction(27, 8)]"
+      }
+    },
+    {
+      "number": 28,
+      "type": "MCQ",
+      "skill": "সমতুল অনুপাতের শূন্যস্থান",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "answer": "40",
+        "choices": "[Fraction(41, 1), Fraction(42, 1), Fraction(43, 1), Fraction(40, 1)]"
+      }
+    },
+    {
+      "number": 29,
+      "type": "MCQ",
+      "skill": "ব্যস্ত অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "2",
+        "choices": "[Fraction(2, 1), Fraction(3, 1), Fraction(4, 1), Fraction(5, 1)]"
+      }
+    },
+    {
+      "number": 30,
+      "type": "MCQ",
+      "skill": "মিশ্র অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "15/32",
+        "choices": "[Fraction(47, 32), Fraction(15, 32), Fraction(79, 32), Fraction(111, 32)]"
+      }
+    },
+    {
+      "number": 31,
+      "type": "MCQ",
+      "skill": "অনুপাতে প্রথম অংশ",
+      "conceptPages": [
+        43
+      ],
+      "checks": {
+        "answer": "150",
+        "choices": "[Fraction(151, 1), Fraction(152, 1), Fraction(150, 1), Fraction(153, 1)]"
+      }
+    },
+    {
+      "number": 32,
+      "type": "MCQ",
+      "skill": "অনুপাতে দ্বিতীয় অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "360",
+        "choices": "[Fraction(361, 1), Fraction(362, 1), Fraction(363, 1), Fraction(360, 1)]"
+      }
+    },
+    {
+      "number": 33,
+      "type": "MCQ",
+      "skill": "এক অংশ থেকে অন্য অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "80",
+        "choices": "[Fraction(80, 1), Fraction(81, 1), Fraction(82, 1), Fraction(83, 1)]"
+      }
+    },
+    {
+      "number": 34,
+      "type": "MCQ",
+      "skill": "অনুপাত থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "50",
+        "choices": "[Fraction(51, 1), Fraction(50, 1), Fraction(52, 1), Fraction(53, 1)]"
+      }
+    },
+    {
+      "number": 35,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে ভগ্নাংশ",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "6/25",
+        "choices": "[Fraction(31, 25), Fraction(56, 25), Fraction(6, 25), Fraction(81, 25)]"
+      }
+    },
+    {
+      "number": 36,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে অনুপাত",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "3/10",
+        "choices": "[Fraction(13, 10), Fraction(23, 10), Fraction(33, 10), Fraction(3, 10)]"
+      }
+    },
+    {
+      "number": 37,
+      "type": "MCQ",
+      "skill": "ভগ্নাংশ থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "60",
+        "choices": "[Fraction(60, 1), Fraction(61, 1), Fraction(62, 1), Fraction(63, 1)]"
+      }
+    },
+    {
+      "number": 38,
+      "type": "MCQ",
+      "skill": "দশমিক থেকে শতকরা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "40",
+        "choices": "[Fraction(41, 1), Fraction(40, 1), Fraction(42, 1), Fraction(43, 1)]"
+      }
+    },
+    {
+      "number": 39,
+      "type": "MCQ",
+      "skill": "শতকরা অংশের মান",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "100",
+        "choices": "[Fraction(101, 1), Fraction(102, 1), Fraction(100, 1), Fraction(103, 1)]"
+      }
+    },
+    {
+      "number": 40,
+      "type": "MCQ",
+      "skill": "এক রাশি অন্যের কত শতাংশ",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "20",
+        "choices": "[Fraction(21, 1), Fraction(22, 1), Fraction(23, 1), Fraction(20, 1)]"
+      }
+    },
+    {
+      "number": 41,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে মূল রাশি",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "800",
+        "choices": "[Fraction(800, 1), Fraction(801, 1), Fraction(802, 1), Fraction(803, 1)]"
+      }
+    },
+    {
+      "number": 42,
+      "type": "MCQ",
+      "skill": "ভালো পণ্যের শতকরা",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "answer": "95",
+        "choices": "[Fraction(96, 1), Fraction(95, 1), Fraction(97, 1), Fraction(98, 1)]"
+      }
+    },
+    {
+      "number": 43,
+      "type": "MCQ",
+      "skill": "মূল্যছাড়ে প্রদেয় টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "850",
+        "choices": "[Fraction(851, 1), Fraction(852, 1), Fraction(850, 1), Fraction(853, 1)]"
+      }
+    },
+    {
+      "number": 44,
+      "type": "MCQ",
+      "skill": "শতকরা বৃদ্ধি",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "550",
+        "choices": "[Fraction(551, 1), Fraction(552, 1), Fraction(553, 1), Fraction(550, 1)]"
+      }
+    },
+    {
+      "number": 45,
+      "type": "MCQ",
+      "skill": "দ্রব্যসংখ্যা ও দাম",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "135",
+        "choices": "[Fraction(135, 1), Fraction(136, 1), Fraction(137, 1), Fraction(138, 1)]"
+      }
+    },
+    {
+      "number": 46,
+      "type": "MCQ",
+      "skill": "লোক ও কাজের সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "10",
+        "choices": "[Fraction(11, 1), Fraction(10, 1), Fraction(12, 1), Fraction(13, 1)]"
+      }
+    },
+    {
+      "number": 47,
+      "type": "MCQ",
+      "skill": "লোকসংখ্যা ও খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "16",
+        "choices": "[Fraction(17, 1), Fraction(18, 1), Fraction(16, 1), Fraction(19, 1)]"
+      }
+    },
+    {
+      "number": 48,
+      "type": "MCQ",
+      "skill": "দূরত্ব ও সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "8",
+        "choices": "[Fraction(9, 1), Fraction(10, 1), Fraction(11, 1), Fraction(8, 1)]"
+      }
+    },
+    {
+      "number": 49,
+      "type": "MCQ",
+      "skill": "লোক কর্মঘণ্টা ও দিন",
+      "conceptPages": [
+        56
+      ],
+      "checks": {
+        "answer": "64/5",
+        "choices": "[Fraction(64, 5), Fraction(69, 5), Fraction(74, 5), Fraction(79, 5)]"
+      }
+    },
+    {
+      "number": 50,
+      "type": "MCQ",
+      "skill": "মজুরির অনুপাত ও কাজ",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "1/4",
+        "choices": "[Fraction(5, 4), Fraction(1, 4), Fraction(9, 4), Fraction(13, 4)]"
+      }
+    },
+    {
+      "number": 51,
+      "type": "MCQ",
+      "skill": "অনুপাত সরলীকরণ",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "4/7",
+        "choices": "[Fraction(7, 4), Fraction(5, 7), Fraction(4, 7), Fraction(1, 2)]"
+      }
+    },
+    {
+      "number": 52,
+      "type": "MCQ",
+      "skill": "একক মিলিয়ে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "9/25",
+        "choices": "[Fraction(34, 25), Fraction(59, 25), Fraction(84, 25), Fraction(9, 25)]"
+      }
+    },
+    {
+      "number": 53,
+      "type": "MCQ",
+      "skill": "সমতুল অনুপাতের শূন্যস্থান",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "answer": "54",
+        "choices": "[Fraction(54, 1), Fraction(55, 1), Fraction(56, 1), Fraction(57, 1)]"
+      }
+    },
+    {
+      "number": 54,
+      "type": "MCQ",
+      "skill": "ব্যস্ত অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "11/6",
+        "choices": "[Fraction(17, 6), Fraction(11, 6), Fraction(23, 6), Fraction(29, 6)]"
+      }
+    },
+    {
+      "number": 55,
+      "type": "MCQ",
+      "skill": "মিশ্র অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "8/15",
+        "choices": "[Fraction(23, 15), Fraction(38, 15), Fraction(8, 15), Fraction(53, 15)]"
+      }
+    },
+    {
+      "number": 56,
+      "type": "MCQ",
+      "skill": "অনুপাতে প্রথম অংশ",
+      "conceptPages": [
+        43
+      ],
+      "checks": {
+        "answer": "240",
+        "choices": "[Fraction(241, 1), Fraction(242, 1), Fraction(243, 1), Fraction(240, 1)]"
+      }
+    },
+    {
+      "number": 57,
+      "type": "MCQ",
+      "skill": "অনুপাতে দ্বিতীয় অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "490",
+        "choices": "[Fraction(490, 1), Fraction(491, 1), Fraction(492, 1), Fraction(493, 1)]"
+      }
+    },
+    {
+      "number": 58,
+      "type": "MCQ",
+      "skill": "এক অংশ থেকে অন্য অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "100",
+        "choices": "[Fraction(101, 1), Fraction(100, 1), Fraction(102, 1), Fraction(103, 1)]"
+      }
+    },
+    {
+      "number": 59,
+      "type": "MCQ",
+      "skill": "অনুপাত থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "400/7",
+        "choices": "[Fraction(407, 7), Fraction(414, 7), Fraction(400, 7), Fraction(421, 7)]"
+      }
+    },
+    {
+      "number": 60,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে ভগ্নাংশ",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "7/20",
+        "choices": "[Fraction(27, 20), Fraction(47, 20), Fraction(67, 20), Fraction(7, 20)]"
+      }
+    },
+    {
+      "number": 61,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে অনুপাত",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "9/20",
+        "choices": "[Fraction(9, 20), Fraction(29, 20), Fraction(49, 20), Fraction(69, 20)]"
+      }
+    },
+    {
+      "number": 62,
+      "type": "MCQ",
+      "skill": "ভগ্নাংশ থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "35",
+        "choices": "[Fraction(36, 1), Fraction(35, 1), Fraction(37, 1), Fraction(38, 1)]"
+      }
+    },
+    {
+      "number": 63,
+      "type": "MCQ",
+      "skill": "দশমিক থেকে শতকরা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "60",
+        "choices": "[Fraction(61, 1), Fraction(62, 1), Fraction(60, 1), Fraction(63, 1)]"
+      }
+    },
+    {
+      "number": 64,
+      "type": "MCQ",
+      "skill": "শতকরা অংশের মান",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "150",
+        "choices": "[Fraction(151, 1), Fraction(152, 1), Fraction(153, 1), Fraction(150, 1)]"
+      }
+    },
+    {
+      "number": 65,
+      "type": "MCQ",
+      "skill": "এক রাশি অন্যের কত শতাংশ",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "20",
+        "choices": "[Fraction(20, 1), Fraction(21, 1), Fraction(22, 1), Fraction(23, 1)]"
+      }
+    },
+    {
+      "number": 66,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে মূল রাশি",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "1000",
+        "choices": "[Fraction(1001, 1), Fraction(1000, 1), Fraction(1002, 1), Fraction(1003, 1)]"
+      }
+    },
+    {
+      "number": 67,
+      "type": "MCQ",
+      "skill": "ভালো পণ্যের শতকরা",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "answer": "660/7",
+        "choices": "[Fraction(667, 7), Fraction(674, 7), Fraction(660, 7), Fraction(681, 7)]"
+      }
+    },
+    {
+      "number": 68,
+      "type": "MCQ",
+      "skill": "মূল্যছাড়ে প্রদেয় টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "960",
+        "choices": "[Fraction(961, 1), Fraction(962, 1), Fraction(963, 1), Fraction(960, 1)]"
+      }
+    },
+    {
+      "number": 69,
+      "type": "MCQ",
+      "skill": "শতকরা বৃদ্ধি",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "690",
+        "choices": "[Fraction(690, 1), Fraction(691, 1), Fraction(692, 1), Fraction(693, 1)]"
+      }
+    },
+    {
+      "number": 70,
+      "type": "MCQ",
+      "skill": "দ্রব্যসংখ্যা ও দাম",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "180",
+        "choices": "[Fraction(181, 1), Fraction(180, 1), Fraction(182, 1), Fraction(183, 1)]"
+      }
+    },
+    {
+      "number": 71,
+      "type": "MCQ",
+      "skill": "লোক ও কাজের সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "10",
+        "choices": "[Fraction(11, 1), Fraction(12, 1), Fraction(10, 1), Fraction(13, 1)]"
+      }
+    },
+    {
+      "number": 72,
+      "type": "MCQ",
+      "skill": "লোকসংখ্যা ও খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "15",
+        "choices": "[Fraction(16, 1), Fraction(17, 1), Fraction(18, 1), Fraction(15, 1)]"
+      }
+    },
+    {
+      "number": 73,
+      "type": "MCQ",
+      "skill": "দূরত্ব ও সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "10",
+        "choices": "[Fraction(10, 1), Fraction(11, 1), Fraction(12, 1), Fraction(13, 1)]"
+      }
+    },
+    {
+      "number": 74,
+      "type": "MCQ",
+      "skill": "লোক কর্মঘণ্টা ও দিন",
+      "conceptPages": [
+        56
+      ],
+      "checks": {
+        "answer": "336/25",
+        "choices": "[Fraction(361, 25), Fraction(336, 25), Fraction(386, 25), Fraction(411, 25)]"
+      }
+    },
+    {
+      "number": 75,
+      "type": "MCQ",
+      "skill": "মজুরির অনুপাত ও কাজ",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "20/63",
+        "choices": "[Fraction(83, 63), Fraction(146, 63), Fraction(20, 63), Fraction(209, 63)]"
+      }
+    },
+    {
+      "number": 76,
+      "type": "MCQ",
+      "skill": "অনুপাত সরলীকরণ",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "5/8",
+        "choices": "[Fraction(8, 5), Fraction(3, 4), Fraction(5, 9), Fraction(5, 8)]"
+      }
+    },
+    {
+      "number": 77,
+      "type": "MCQ",
+      "skill": "একক মিলিয়ে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "answer": "7/20",
+        "choices": "[Fraction(7, 20), Fraction(27, 20), Fraction(47, 20), Fraction(67, 20)]"
+      }
+    },
+    {
+      "number": 78,
+      "type": "MCQ",
+      "skill": "সমতুল অনুপাতের শূন্যস্থান",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "answer": "70",
+        "choices": "[Fraction(71, 1), Fraction(70, 1), Fraction(72, 1), Fraction(73, 1)]"
+      }
+    },
+    {
+      "number": 79,
+      "type": "MCQ",
+      "skill": "ব্যস্ত অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "12/7",
+        "choices": "[Fraction(19, 7), Fraction(26, 7), Fraction(12, 7), Fraction(33, 7)]"
+      }
+    },
+    {
+      "number": 80,
+      "type": "MCQ",
+      "skill": "মিশ্র অনুপাত",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "answer": "7/12",
+        "choices": "[Fraction(19, 12), Fraction(31, 12), Fraction(43, 12), Fraction(7, 12)]"
+      }
+    },
+    {
+      "number": 81,
+      "type": "MCQ",
+      "skill": "অনুপাতে প্রথম অংশ",
+      "conceptPages": [
+        43
+      ],
+      "checks": {
+        "answer": "350",
+        "choices": "[Fraction(350, 1), Fraction(351, 1), Fraction(352, 1), Fraction(353, 1)]"
+      }
+    },
+    {
+      "number": 82,
+      "type": "MCQ",
+      "skill": "অনুপাতে দ্বিতীয় অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "640",
+        "choices": "[Fraction(641, 1), Fraction(640, 1), Fraction(642, 1), Fraction(643, 1)]"
+      }
+    },
+    {
+      "number": 83,
+      "type": "MCQ",
+      "skill": "এক অংশ থেকে অন্য অংশ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "answer": "120",
+        "choices": "[Fraction(121, 1), Fraction(122, 1), Fraction(120, 1), Fraction(123, 1)]"
+      }
+    },
+    {
+      "number": 84,
+      "type": "MCQ",
+      "skill": "অনুপাত থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "125/2",
+        "choices": "[Fraction(127, 2), Fraction(129, 2), Fraction(131, 2), Fraction(125, 2)]"
+      }
+    },
+    {
+      "number": 85,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে ভগ্নাংশ",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "16/25",
+        "choices": "[Fraction(16, 25), Fraction(41, 25), Fraction(66, 25), Fraction(91, 25)]"
+      }
+    },
+    {
+      "number": 86,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে অনুপাত",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "answer": "3/4",
+        "choices": "[Fraction(7, 4), Fraction(3, 4), Fraction(11, 4), Fraction(15, 4)]"
+      }
+    },
+    {
+      "number": 87,
+      "type": "MCQ",
+      "skill": "ভগ্নাংশ থেকে শতকরা",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "answer": "36",
+        "choices": "[Fraction(37, 1), Fraction(38, 1), Fraction(36, 1), Fraction(39, 1)]"
+      }
+    },
+    {
+      "number": 88,
+      "type": "MCQ",
+      "skill": "দশমিক থেকে শতকরা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "85",
+        "choices": "[Fraction(86, 1), Fraction(87, 1), Fraction(88, 1), Fraction(85, 1)]"
+      }
+    },
+    {
+      "number": 89,
+      "type": "MCQ",
+      "skill": "শতকরা অংশের মান",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "210",
+        "choices": "[Fraction(210, 1), Fraction(211, 1), Fraction(212, 1), Fraction(213, 1)]"
+      }
+    },
+    {
+      "number": 90,
+      "type": "MCQ",
+      "skill": "এক রাশি অন্যের কত শতাংশ",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "20",
+        "choices": "[Fraction(21, 1), Fraction(20, 1), Fraction(22, 1), Fraction(23, 1)]"
+      }
+    },
+    {
+      "number": 91,
+      "type": "MCQ",
+      "skill": "শতকরা থেকে মূল রাশি",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "1200",
+        "choices": "[Fraction(1201, 1), Fraction(1202, 1), Fraction(1200, 1), Fraction(1203, 1)]"
+      }
+    },
+    {
+      "number": 92,
+      "type": "MCQ",
+      "skill": "ভালো পণ্যের শতকরা",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "answer": "375/4",
+        "choices": "[Fraction(379, 4), Fraction(383, 4), Fraction(387, 4), Fraction(375, 4)]"
+      }
+    },
+    {
+      "number": 93,
+      "type": "MCQ",
+      "skill": "মূল্যছাড়ে প্রদেয় টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "answer": "1050",
+        "choices": "[Fraction(1050, 1), Fraction(1051, 1), Fraction(1052, 1), Fraction(1053, 1)]"
+      }
+    },
+    {
+      "number": 94,
+      "type": "MCQ",
+      "skill": "শতকরা বৃদ্ধি",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "840",
+        "choices": "[Fraction(841, 1), Fraction(840, 1), Fraction(842, 1), Fraction(843, 1)]"
+      }
+    },
+    {
+      "number": 95,
+      "type": "MCQ",
+      "skill": "দ্রব্যসংখ্যা ও দাম",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "231",
+        "choices": "[Fraction(232, 1), Fraction(233, 1), Fraction(231, 1), Fraction(234, 1)]"
+      }
+    },
+    {
+      "number": 96,
+      "type": "MCQ",
+      "skill": "লোক ও কাজের সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "answer": "10",
+        "choices": "[Fraction(11, 1), Fraction(12, 1), Fraction(13, 1), Fraction(10, 1)]"
+      }
+    },
+    {
+      "number": 97,
+      "type": "MCQ",
+      "skill": "লোকসংখ্যা ও খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "72/5",
+        "choices": "[Fraction(72, 5), Fraction(77, 5), Fraction(82, 5), Fraction(87, 5)]"
+      }
+    },
+    {
+      "number": 98,
+      "type": "MCQ",
+      "skill": "দূরত্ব ও সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "answer": "12",
+        "choices": "[Fraction(13, 1), Fraction(12, 1), Fraction(14, 1), Fraction(15, 1)]"
+      }
+    },
+    {
+      "number": 99,
+      "type": "MCQ",
+      "skill": "লোক কর্মঘণ্টা ও দিন",
+      "conceptPages": [
+        56
+      ],
+      "checks": {
+        "answer": "768/55",
+        "choices": "[Fraction(823, 55), Fraction(878, 55), Fraction(768, 55), Fraction(933, 55)]"
+      }
+    },
+    {
+      "number": 100,
+      "type": "MCQ",
+      "skill": "মজুরির অনুপাত ও কাজ",
+      "conceptPages": [
+        58
+      ],
+      "checks": {
+        "answer": "3/8",
+        "choices": "[Fraction(11, 8), Fraction(19, 8), Fraction(27, 8), Fraction(3, 8)]"
+      }
+    },
+    {
+      "number": 101,
+      "type": "SQ",
+      "skill": "উদাহরণে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 102,
+      "type": "SQ",
+      "skill": "দৈর্ঘ্যের একক",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 103,
+      "type": "SQ",
+      "skill": "অনুপাতের অংশ",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 104,
+      "type": "SQ",
+      "skill": "সমতুল অনুপাত",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 105,
+      "type": "SQ",
+      "skill": "মিশ্র অনুপাত প্রয়োগ",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 106,
+      "type": "SQ",
+      "skill": "টাকা ভাগ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 107,
+      "type": "SQ",
+      "skill": "শতকরা ব্যাখ্যা",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 108,
+      "type": "SQ",
+      "skill": "ভগ্নাংশের শতাংশ",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 109,
+      "type": "SQ",
+      "skill": "অংশ হিসাব",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 110,
+      "type": "SQ",
+      "skill": "প্রাপ্ত নম্বর",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 111,
+      "type": "SQ",
+      "skill": "ছাড়ের টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 112,
+      "type": "SQ",
+      "skill": "ঐকিক সরাসরি",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 113,
+      "type": "SQ",
+      "skill": "শ্রমিক সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 114,
+      "type": "SQ",
+      "skill": "খাদ্য সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 115,
+      "type": "SQ",
+      "skill": "একত্র কাজ",
+      "conceptPages": [
+        54
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 116,
+      "type": "SQ",
+      "skill": "উদাহরণে অনুপাত",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 117,
+      "type": "SQ",
+      "skill": "দৈর্ঘ্যের একক",
+      "conceptPages": [
+        40
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 118,
+      "type": "SQ",
+      "skill": "অনুপাতের অংশ",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 119,
+      "type": "SQ",
+      "skill": "সমতুল অনুপাত",
+      "conceptPages": [
+        41
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 120,
+      "type": "SQ",
+      "skill": "মিশ্র অনুপাত প্রয়োগ",
+      "conceptPages": [
+        44
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 121,
+      "type": "SQ",
+      "skill": "টাকা ভাগ",
+      "conceptPages": [
+        45
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 122,
+      "type": "SQ",
+      "skill": "শতকরা ব্যাখ্যা",
+      "conceptPages": [
+        48
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 123,
+      "type": "SQ",
+      "skill": "ভগ্নাংশের শতাংশ",
+      "conceptPages": [
+        49
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 124,
+      "type": "SQ",
+      "skill": "অংশ হিসাব",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 125,
+      "type": "SQ",
+      "skill": "প্রাপ্ত নম্বর",
+      "conceptPages": [
+        50
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 126,
+      "type": "SQ",
+      "skill": "ছাড়ের টাকা",
+      "conceptPages": [
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 127,
+      "type": "SQ",
+      "skill": "ঐকিক সরাসরি",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 128,
+      "type": "SQ",
+      "skill": "শ্রমিক সময়",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 129,
+      "type": "SQ",
+      "skill": "খাদ্য সময়",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 130,
+      "type": "SQ",
+      "skill": "একত্র কাজ",
+      "conceptPages": [
+        54
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 131,
+      "type": "CQ",
+      "skill": "অনুপাতে বৃত্তি বণ্টন",
+      "conceptPages": [
+        43,
+        45
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 132,
+      "type": "CQ",
+      "skill": "শ্রেণির শিক্ষার্থী",
+      "conceptPages": [
+        39,
+        45,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 133,
+      "type": "CQ",
+      "skill": "দোকানের ছাড়",
+      "conceptPages": [
+        48,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 134,
+      "type": "CQ",
+      "skill": "পরীক্ষার ফল",
+      "conceptPages": [
+        49,
+        50
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 135,
+      "type": "CQ",
+      "skill": "আমের মজুত",
+      "conceptPages": [
+        50,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 136,
+      "type": "CQ",
+      "skill": "খাতা কেনা",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 137,
+      "type": "CQ",
+      "skill": "শ্রমিকের কাজ",
+      "conceptPages": [
+        52,
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 138,
+      "type": "CQ",
+      "skill": "ছাত্রাবাসের খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 139,
+      "type": "CQ",
+      "skill": "দুইজনের যৌথ কাজ",
+      "conceptPages": [
+        53,
+        54
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 140,
+      "type": "CQ",
+      "skill": "শ্রমিক ও কর্মঘণ্টা",
+      "conceptPages": [
+        56,
+        57
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 141,
+      "type": "CQ",
+      "skill": "অনুপাতে বৃত্তি বণ্টন",
+      "conceptPages": [
+        43,
+        45
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 142,
+      "type": "CQ",
+      "skill": "শ্রেণির শিক্ষার্থী",
+      "conceptPages": [
+        39,
+        45,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 143,
+      "type": "CQ",
+      "skill": "দোকানের ছাড়",
+      "conceptPages": [
+        48,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 144,
+      "type": "CQ",
+      "skill": "পরীক্ষার ফল",
+      "conceptPages": [
+        49,
+        50
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 145,
+      "type": "CQ",
+      "skill": "আমের মজুত",
+      "conceptPages": [
+        50,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 146,
+      "type": "CQ",
+      "skill": "খাতা কেনা",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 147,
+      "type": "CQ",
+      "skill": "শ্রমিকের কাজ",
+      "conceptPages": [
+        52,
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 148,
+      "type": "CQ",
+      "skill": "ছাত্রাবাসের খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 149,
+      "type": "CQ",
+      "skill": "দুইজনের যৌথ কাজ",
+      "conceptPages": [
+        53,
+        54
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 150,
+      "type": "CQ",
+      "skill": "শ্রমিক ও কর্মঘণ্টা",
+      "conceptPages": [
+        56,
+        57
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 151,
+      "type": "CQ",
+      "skill": "অনুপাতে বৃত্তি বণ্টন",
+      "conceptPages": [
+        43,
+        45
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 152,
+      "type": "CQ",
+      "skill": "শ্রেণির শিক্ষার্থী",
+      "conceptPages": [
+        39,
+        45,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 153,
+      "type": "CQ",
+      "skill": "দোকানের ছাড়",
+      "conceptPages": [
+        48,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 154,
+      "type": "CQ",
+      "skill": "পরীক্ষার ফল",
+      "conceptPages": [
+        49,
+        50
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 155,
+      "type": "CQ",
+      "skill": "আমের মজুত",
+      "conceptPages": [
+        50,
+        51
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 156,
+      "type": "CQ",
+      "skill": "খাতা কেনা",
+      "conceptPages": [
+        52
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 157,
+      "type": "CQ",
+      "skill": "শ্রমিকের কাজ",
+      "conceptPages": [
+        52,
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 158,
+      "type": "CQ",
+      "skill": "ছাত্রাবাসের খাদ্য",
+      "conceptPages": [
+        53
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 159,
+      "type": "CQ",
+      "skill": "দুইজনের যৌথ কাজ",
+      "conceptPages": [
+        53,
+        54
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    },
+    {
+      "number": 160,
+      "type": "CQ",
+      "skill": "শ্রমিক ও কর্মঘণ্টা",
+      "conceptPages": [
+        56,
+        57
+      ],
+      "checks": {
+        "arithmeticAssertion": "True"
+      }
+    }
+  ]
+}

@@ -57,3 +57,7 @@ File contract: maximum 750,000 UTF-8 bytes, 1–200 items. Required batch fields
 JSON scope must match the selected chapter; the server independently validates the entire catalog path, including subgroup. File/selection changes clear preview and consent. Reading a file and preview are read-only; explicit consent plus unchanged content/selection digest is required to save. Only ADMIN may preview/save, every insert has approved=false, duplicates are normalized by stem, and Serializable conflicts retry. Audit: `jsonupload:v1:<digest>` with actor, scope, source, page references and inserted ids. No publication action is added.
 
 Verification: 13 targeted import tests and typecheck passed; transaction tests use mocks. No production writes.
+
+## Class 6 math chapter 2 available
+
+`content/question-bank/class-6/chapter-2/questions.json` is directly compatible with the local JSON uploader: Class 6 / গণিত / ২. অনুপাত ও শতকরা (no subgroup). A mixed prepared card also contains the same 100 MCQ + 30 CQ + 30 SQ. Source review and variant limitations are retained with the batch; approval remains separate. See the chapter README and review.md. No database import was performed by authoring this batch.

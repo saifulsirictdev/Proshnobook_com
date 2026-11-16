@@ -706,3 +706,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Added class/subject/subgroup/chapter selectors and local JSON file loading with a downloadable mixed MCQ/SQ/CQ template.
 - Strict scope matching, server-side size/schema/answer/marks validation, preview invalidation, Admin-only Pending saves, audit, normalized dedup and retries. No arbitrary new subjects or automatic approval.
 - 13 targeted import tests and typecheck passed; production data untouched.
+
+## Phase 72 — Class 6 mathematics chapter 2 Draft batch
+
+- Read printed pages 38–58 of the owner's math PDF visually and prepared original ratio/percentage/unitary-method practice: 100 MCQ, 30 complete CQ sets (ক–খ–গ, 2/4/4), 30 SQ with solutions and concept-page references.
+- Added deterministic exact-Fraction generator, validation ledger, review Markdown, uploader-compatible JSON and prepared chapter card. 25 MCQ families ×4, 10 CQ families ×3, 15 SQ families ×2; not 160 independent skills or teacher-approved coverage.
+- Targeted tests 20/20 and typecheck passed; typecheck Prisma generation used local dummy engine paths only. No live DB queries/import/publication. Class 6 chapters 3 onward and other subjects/classes remain unfinished.
+- Drive JSON copy: https://drive.google.com/file/d/1ujbUadKTVFNYW0iOXzhK3nNTBIrq1Xef/view . User can later select Class 6 → গণিত → ২. অনুপাত ও শতকরা and save Pending; no user action needed to preserve files.
