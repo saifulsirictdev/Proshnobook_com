@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { websiteIdentity } from "@/lib/site-identity";
 import { jsonLd } from "@/lib/seo";
 import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
@@ -149,8 +148,7 @@ export default async function RootLayout({
             />
           </PathGate>
 
-          {/* Each route owns its main landmark; do not nest main elements. */}
-          <Suspense fallback={<div aria-busy="true" aria-label="পাতা লোড হচ্ছে" />}><div id="site-content">{children}</div></Suspense>
+          <main>{children}</main>
 
           <PathGate>
             <SiteFooter />

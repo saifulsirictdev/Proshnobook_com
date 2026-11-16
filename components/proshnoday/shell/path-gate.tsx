@@ -17,13 +17,8 @@ export default function PathGate({
     path === "/wallet" ||
     path === "/dashboard" ||
     path.startsWith("/dashboard/");
-  // Keep a host boundary even when chrome is hidden. A null client boundary
-  // before streamed route content can leave hydration at the next sibling.
-  return (
-    <div data-path-gate="" hidden={hide} style={{ display: hide ? "none" : "contents" }}>
-      {hide ? null : children}
-    </div>
-  );
+  if (hide) return null;
+  return <>{children}</>;
 }
 
 // ===== ফাইল শেষ =====

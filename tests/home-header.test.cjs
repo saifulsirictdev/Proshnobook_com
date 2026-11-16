@@ -27,11 +27,11 @@ function gate(path, showOnHome) {
   );
 }
 test("header can show on homepage without enabling footer or workspace chrome", () => {
-  assert.match(gate("/", true), /style="display:contents">shared-header<\/div>/);
-  assert.match(gate("/", false), /hidden="" style="display:none"><\/div>/);
+  assert.equal(gate("/", true), "shared-header");
+  assert.equal(gate("/", false), "");
   for (const path of ["/login", "/wallet", "/dashboard", "/dashboard/library"])
-    assert.match(gate(path, true), /hidden="" style="display:none"><\/div>/);
-  assert.match(gate("/admin", false), /style="display:contents">shared-header<\/div>/);
+    assert.equal(gate(path, true), "");
+  assert.equal(gate("/admin", false), "shared-header");
   const layout = fs.readFileSync("app/layout.tsx", "utf8");
   assert.match(layout, /<PathGate showOnHome>\s*<SiteHeader/);
   assert.match(layout, /<PathGate>\s*<SiteFooter/);

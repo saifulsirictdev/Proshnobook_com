@@ -77,8 +77,6 @@ jobs:
           node scripts/pdf-browser-check.cjs
       - name: Production build (no production credentials)
         run: npm run build
-        env:
-          NEXT_BUILD_DIR: isolated-ci
       - name: Full built app Credentials roles and mobile browser regression (isolated DB)
         shell: bash
         run: |
@@ -87,5 +85,4 @@ jobs:
           test -x "$CHROMIUM_EXECUTABLE_PATH"
           node scripts/authenticated-browser-check.cjs
         env:
-          NEXT_BUILD_DIR: isolated-ci
           WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
