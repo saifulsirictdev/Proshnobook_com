@@ -323,6 +323,24 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         phase = "admin_mcq_repeat_db";
         assert.equal(await db.question.count({ where: { text: fixture.items[0].text } }), 1);
         assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 1);
+        phase = "admin_prepared_batch_load_read_only";
+        await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
+        const countBeforePrepared = await db.question.count();
+        await page.getByRole("button", { name: "প্রস্তুত ১০০টি প্রশ্ন লোড করুন", exact: true }).click();
+        const loaded = JSON.parse(await page.getByLabel("প্রশ্নের JSON", { exact: true }).inputValue());
+        assert.equal(loaded.items.length, 100);
+        assert.equal(await db.question.count(), countBeforePrepared);
+        await page.getByRole("button", { name: "প্রিভিউ ও গঠন যাচাই", exact: true }).click();
+        await page.getByRole("checkbox").waitFor();
+        assert.equal(await page.locator("ol > li").count(), 100);
+        assert.equal(await db.question.count(), countBeforePrepared);
+        phase = "admin_prepared_batch_save_pending";
+        await page.getByRole("checkbox").check();
+        await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
+        await page.getByRole("status").filter({ hasText: "100টি Pending" }).waitFor();
+        assert.equal(await db.question.count(), countBeforePrepared + 100);
+        assert.equal(await db.question.count({ where: { category: "Class 6", approved: true } }), 0);
+        assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 2);
         phase = "admin_mcq_overflow";
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
       }

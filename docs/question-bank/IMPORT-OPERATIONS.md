@@ -27,3 +27,9 @@ The current workspace has no direct DB binding. Vercel project metadata confirme
 Unit tests: strict input, invalid scope/key/options, absent source fields, size cap, duplicate stems, unauthorized roles, read-only preview, pending-only insert, repeat receipt, legacy normalized duplicate and serializable retry. Required isolated built-app browser CI exercises real Admin preview/save/repeat against disposable PostgreSQL and checks saved drafts/audit. No production data is used by these tests.
 
 Book PDFs are still needed. No real textbook questions have been generated/imported by this work; it delivers ingestion infrastructure, not the requested 50–100 validated questions per chapter. Source: owner supplied https://nctb.gov.bd/pages/static-pages/695b987ac4774958d7b7040b (indexed as 2026 Class 6; full PDF not yet retrieved).
+
+## Prepared chapter 1 batch
+
+The Admin import page now offers “প্রস্তুত ১০০টি প্রশ্ন লোড করুন”. Loading only fills the editable JSON, does not query/write questions and does not mark textbook review complete. A replacement confirmation protects pasted edits. Preview invalidates whenever content changes. The existing explicit preview → confirmation → Pending-save path is still mandatory, and final publication remains separate.
+
+The pending-save checkbox acknowledges source metadata and outstanding review rather than falsely certifying that unavailable textbook pages have already been checked. Full official chapter alignment/subject review is still required before publishing. Isolated browser CI loads the real prepared 100-item batch, checks read-only loading/preview, saves all 100 as Pending and confirms none are approved. This is not a production import.
