@@ -601,3 +601,10 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Replaced the site's old default brand mark with the supplied pink P artwork, retaining its original gradient/shape rather than generating a new logo. Original source is retained under public/brand; the Sharp preparation script reproducibly derives browser/app assets.
 - Updated header, shared Logo, homepage intro, install prompt, official profile fallback, SEO/Organization logo, blog/news fallback, PWA any/maskable icons and explicit browser/Apple icons. New URLs avoid relying on stale cached legacy images; legacy logo/icon PNG/SVG URLs also serve the new mark.
 - Dedicated maskable safe-area padding and icon dimensions tested. Teacher custom avatars, institution/question-paper logos, account data, OAuth, payment and stored keys are unchanged. Original JPG resolution limits remain; generated larger PNGs are resized derivatives, not a claim of vector artwork.
+
+## Phase 56 — live brand verification and real-login image regression
+
+- Added anonymous fixed-origin GET-only live checks for exact owner PNG bytes, content types, legacy aliases, homepage favicon/Apple bindings and PWA any/maskable references. Bounded streams, no redirects/credentials, and redacted errors; three tests cover positive and negative cases.
+- Extended the existing isolated built-app login/role/browser check to require successful P image decoding on login and each role's Dashboard at mobile/desktop viewports, not merely expected source text.
+- Read-only production liveness/release checks dispatched. Full required CI and live asset results must pass before merge; see PR/Actions for execution evidence. No production login/payment/storage writes or settings/credential changes.
+- Google OAuth, physical-device full-editor workflow, provider settlement, separate cloud staging provisioning, actual production restore and recipient-confirmed alerts/access reviews remain unverified; these are not replaced by synthetic checks.

@@ -11,3 +11,9 @@ Checks cover anonymous Dashboard rejection, wrong-password rejection, correct Cr
 This is real application sign-in on synthetic accounts, but not real Google OAuth, registration email verification, existing production-user session compatibility, full editor/upload/approval/free-paid-copy/Print walkthrough, provider settlement, physical-device usability, accessibility audit or load benchmark. Existing PDF engine Print and wallet commerce concurrency rehearsals cover separate scopes. Actual external resources and user interaction are still required for those remaining gates.
 
 Local unit tests check target rejection and no raw secret/session/API mocks. Local sandbox lacks PostgreSQL/native engine/Chrome libraries, so a local unit pass does not mean browser execution passed. Required remote CI must pass before merge. No production auth/wallet/authorization behavior is changed by adding this check.
+
+## Owner brand follow-up
+
+The isolated real-login check also requires the actual owner P PNG to decode at its expected natural width on the login page and each role's Dashboard at 390/1280px. A path/source-string match alone cannot pass this browser assertion. This remains an emulated browser, not physical-phone acceptance.
+
+`node scripts/public-brand-check.cjs` is a separate anonymous, fixed `https://proshnobook.com` GET-only release check. It verifies homepage favicon/Apple/P bindings, manifest any/maskable bindings, PNG content types and SHA-256 equality against the repository's eight current/legacy PNG assets. Redirects, HTML fallback, stale bytes, missing bindings and oversized bodies fail with redacted results. It does not authenticate or mutate the site. It runs in release-smoke on manual dispatch/affected PRs (not the frequent liveness incident loop). A future logo release must deploy its assets before the live brand check can pass.
