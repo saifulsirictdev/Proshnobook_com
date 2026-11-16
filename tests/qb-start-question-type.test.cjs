@@ -31,6 +31,7 @@ test("starter displays shared question type options and forwards the selected ty
     },
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,
+    "@/lib/exam-preparation": load("lib/exam-preparation.ts"),
   }).default;
   const html = renderToStaticMarkup(React.createElement(Start, { pairs: [] }));
   assert.match(html, /প্রশ্নের ধরন/);

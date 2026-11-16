@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  // Resolve async metadata into the initial head for every user agent. Streaming
+  // head updates can race hydration across authenticated route/viewport checks.
+  htmlLimitedBots: /.*/,
+
   serverExternalPackages: ["pdfjs-dist"],
   async headers() {
     return [
