@@ -211,13 +211,15 @@ test("paper header renders only on first page while remaining measurable", () =>
   assert.match(source, /data-measure-header>\{header\}/);
 });
 
-test("Kalpurush selection survives settings serialization without changing legacy defaults", () => {
-  assert.equal(defaults().cfg.font, "hind");
+test("Kalpurush is the new paper default while explicit saved font choices survive serialization", () => {
+  assert.equal(defaults().cfg.font, "kalpurush");
+  assert.equal(restoreSettings({}).cfg.font, "kalpurush");
+  assert.equal(restoreSettings({ cfg: {} }).cfg.font, "kalpurush");
   for (const font of ["adorsho", "hind", "anek", "serif", "kalpurush"]) {
     const saved = JSON.parse(JSON.stringify({ ...defaults(), cfg: { ...defaults().cfg, font } }));
     assert.equal(restoreSettings(saved).cfg.font, font);
   }
-  assert.equal(restoreSettings({ cfg: { font: "nikoshban" } }).cfg.font, "hind");
+  assert.equal(restoreSettings({ cfg: { font: "nikoshban" } }).cfg.font, "kalpurush");
 });
 test("both database paper selectors expose Kalpurush and keep unlicensed NikoshBAN disabled", () => {
   const settings = fs.readFileSync("components/paper-builder/settings.tsx", "utf8");

@@ -633,3 +633,9 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Investigated production-only recurring React 418 using temporary safe tag-only diagnostics; development passed. Shell wrappers, landmark changes and build-cache isolation did not establish a reliable fix. All temporary instrumentation and exploratory shell/config changes were removed rather than shipping unproven workarounds.
 - Updated Next 15.5.29 to stable 16.4.6, within NextAuth beta32's supported majors; retained custom webpack behavior with explicit --webpack build/dev commands. Production dependency audit reports zero vulnerabilities; TypeScript passes. All required build/browser/finance/restore/PDF checks still gate release.
 - Strengthened private-route regression to repeat 390/1280px visits twice per role, keeping runtime-error assertions and all Job MCQ/School/College checks. No production user/payment/storage writes and no ignored hydration errors.
+
+## Phase 61 — default database-paper font Kalpurush
+
+- Owner requested Kalpurush as the default when setting up database question papers. Shared paper settings now default/fall back to the already self-hosted licensed Kalpurush family; both responsive settings selectors and Preview/Print consume this setting.
+- Explicit saved valid font choices (including Hind) remain unchanged on restore. Missing/invalid font settings use Kalpurush. No account/DB migrations, unrelated UI fonts, Ready raster papers or font licensing changes.
+- Regression tests cover new/empty settings, invalid font fallback and preservation of every valid serialized font choice. Required CI/build/browser gates still apply before merge.
