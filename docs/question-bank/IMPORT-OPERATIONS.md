@@ -147,3 +147,10 @@ Drive: Class 6 → বিজ্ঞান → chapter-12-পৃথিবীর �
 PreparedLibrary-তে শ্রেণি/বিষয় বেছে অধ্যায় “সব প্রস্তুত অধ্যায়” রাখলে নতুন whole-selection panel থেকে সব নির্বাচিত ব্যাচ preview করা যায়। প্রতিটি অধ্যায়ের প্রশ্ন, উত্তর ও সীমাবদ্ধতা আলাদা expandable section-এ। সব preview সফল হলে এবং পৃথক সম্মতি দিলে authenticated savePrepared action অধ্যায় ধরে চলে। প্রতিটি request-এ server-resolved batch/digest ও reviewed=yes লাগে; বিদ্যমান ADMIN auth, Serializable transaction, retry, dedup, audit receipt এবং approved=false অপরিবর্তিত। পুরো বিষয় এক atomic transaction নয়; অধ্যায়ভিত্তিক সফল/ব্যর্থ বা অনিশ্চিত ফল দেখায়। Retry শুধু সফল ফল না পাওয়া ব্যাচে; uncertain response-এ server receipt ডুপ্লিকেট ঠেকায়। নির্বাচন পাল্টালে panel state reset হয়। এক-অধ্যায়ের পুরোনো card-ও আছে।
 
 Typecheck, prepared-library 6 tests এবং full 723 automated tests পাস; নতুন UI contract test source-level, বাস্তব browser interaction/production save পরীক্ষা নয়। এই ধাপে deploy বা production DB write হয়নি। ব্যবহারকারী Pending জমার অনুমতি দিয়েছেন; বিষয়শিক্ষকের final approval নয়।
+
+## HSC ICT external Draft integration
+Six chapters are registered under existing `Class 11-12` / তথ্য ও যোগাযোগ প্রযুক্তি topics.
+1,110 original items preserved; **1,076 savable Draft items** (595 MCQ, 240 CQ, 241 SQ).
+34 quarantined with source index/reason; no invented replacements or relaxed parser.
+See `content/question-bank/class-11-12/ict/README.md` for source audit and shortfalls.
+All-chapter Preview → Pending uses existing ADMIN consent/digest/audit flow. No live import.

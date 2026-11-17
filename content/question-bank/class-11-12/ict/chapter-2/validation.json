@@ -1,0 +1,28 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_PENDING",
+  "teacherApproved": false,
+  "sourceQuestionDriveId": "1Sv-nZ6rjRjd50zkaTpKU5Orr-_Qe9GNL",
+  "sourceReviewDriveId": "1bcqRkKKBgBpmQ_rbwzQqjjUvdrzJZHW3",
+  "sourceValidationDriveId": "1JKhmkYZzyuM8Zh-7xtFdkasSq2qdGTXf",
+  "sourceMetadataRead": true,
+  "adaptations": [
+    "Existing catalog scope mapped; bn → Bangla; difficulty uppercased; quarantined source indexes omitted"
+  ],
+  "minimumCountsMet": true,
+  "sourceSha256": "cfec0170a32bff028a2b24b590795b0bd02d231d1a573f82b9f6a06fa812b4ae",
+  "sourceCount": 185,
+  "counts": {
+    "MCQ": 100,
+    "CQ": 40,
+    "SQ": 45
+  },
+  "total": 185,
+  "quarantined": [],
+  "limitations": [
+    "Bluetooth-এর পরিসর, bandwidth-এর একক এবং mesh/throughput গণনা যাচাই করুন।",
+    "অন্য AI-এর Draft; স্বাধীন শিক্ষক ও প্রশ্নভিত্তিক উৎস-যাচাই বাকি।",
+    "মূল ১৮৫টির মধ্যে 0টি পুনরাবৃত্ত/অপশন-সমস্যার কারণে আলাদা; সংখ্যাপূরণ করা হয়নি।",
+    "পুরোনো বইয়ের তথ্য, কোড/গণনা, CQ বিশ্লেষণের গভীরতা ও অনুপস্থিত চিত্র যাচাই করুন।",
+    "উৎসের পূর্ণপাঠের দাবি অন্য AI-এর; এই সংযোজনে পুনরায় পূর্ণ বই পড়া হয়নি।"
+  ]
+}

@@ -317,6 +317,16 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(row.approved, false);
         assert.equal(row.category, "Class 6");
         phase = "admin_mcq_repeat_submit";
+        // Server-action revalidation may remount the legacy details panel closed.
+        // Reopen through its visible summary before interacting; do not force-click
+        // hidden controls or weaken the repeat-save/database assertions below.
+        const legacySummary = page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true });
+        if (!(await legacySummary.evaluate(el => el.closest("details")?.open))) await legacySummary.click();
+        // Re-preview the identical payload after revalidation; client action state
+        // can be reset by the refreshed server tree. This still tests the same
+        // receipt/dedup path, not a second distinct fixture.
+        await page.getByLabel("প্রশ্নের JSON", { exact: true }).fill(JSON.stringify(fixture));
+        await page.getByRole("button", { name: "প্রিভিউ ও গঠন যাচাই", exact: true }).click();
         await page.getByRole("checkbox").check();
         await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
         phase = "admin_mcq_repeat_status";

@@ -1,0 +1,28 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_PENDING",
+  "teacherApproved": false,
+  "sourceQuestionDriveId": "1Y3lStHNXOww-qgKM1s4ja1tl7-tES9vV",
+  "sourceReviewDriveId": "1tpMm3R6l4ujdcZleiY5ZGIO5Mrtt3Id6",
+  "sourceValidationDriveId": "10-41GnaoMPcMI9KG_-clrAuhyM9X-dz4",
+  "sourceMetadataRead": true,
+  "adaptations": [
+    "Existing catalog scope mapped; bn → Bangla; difficulty uppercased; quarantined source indexes omitted"
+  ],
+  "minimumCountsMet": true,
+  "sourceSha256": "4ea6835c4dab6a49cb880f2ad9dece6cd3684cebc979d79e8bdc0a4b2015b6b6",
+  "sourceCount": 185,
+  "counts": {
+    "MCQ": 100,
+    "CQ": 40,
+    "SQ": 45
+  },
+  "total": 185,
+  "quarantined": [],
+  "limitations": [
+    "পুরোনো HTML tag/attribute বনাম HTML5 এবং অনুপস্থিত output চিত্র যাচাই করুন।",
+    "অন্য AI-এর Draft; স্বাধীন শিক্ষক ও প্রশ্নভিত্তিক উৎস-যাচাই বাকি।",
+    "মূল ১৮৫টির মধ্যে 0টি পুনরাবৃত্ত/অপশন-সমস্যার কারণে আলাদা; সংখ্যাপূরণ করা হয়নি।",
+    "পুরোনো বইয়ের তথ্য, কোড/গণনা, CQ বিশ্লেষণের গভীরতা ও অনুপস্থিত চিত্র যাচাই করুন।",
+    "উৎসের পূর্ণপাঠের দাবি অন্য AI-এর; এই সংযোজনে পুনরায় পূর্ণ বই পড়া হয়নি।"
+  ]
+}

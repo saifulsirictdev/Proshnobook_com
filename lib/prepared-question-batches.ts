@@ -1,3 +1,4 @@
+import {hscIctBatches} from "./hsc-ict-batches";
 import {scienceStarterBatches} from "./class6-science-batches";
 import {remainingMathBatches} from "./class6-remaining-batches";
 import {createHash} from "node:crypto";
@@ -23,7 +24,8 @@ export function preparedBatches():PreparedBatch[]{
   {id:"class6-math-ch1-written-v1",category:w.batch.class,subject:w.batch.subject,topic:w.batch.topic,title:"৩০ CQ + ৩০ SQ — নিজস্ব খসড়া",lang:"Bangla",limitations:"CQ: ক–খ–গ, ২–৪–৪। ছয় সমস্যা-পরিবার; স্বাধীন শিক্ষক অনুমোদন বাকি।",records:w.records.map(q=>({kind:q.kind as "CQ"|"SQ",text:q.text,options:q.options,correct:"",explanation:q.explanation,difficulty:"MEDIUM"})),provenance:{source:w.batch.source,references:w.records.map(q=>({id:q.id,page:q.referencePrintedPage})),review}},
   {id:"class6-math-ch2-mixed-v1",category:ch2.batch.category,subject:ch2.batch.subject,topic:ch2.batch.topic,title:"১০০ MCQ + ৩০ CQ + ৩০ SQ — অনুপাত ও শতকরা",lang:ch2.batch.lang,limitations:"বইয়ের ৩৮–৫৮ পৃষ্ঠা দেখে ধারণা মিলেছে; ২৫ MCQ/১০ CQ/১৫ SQ পরিবারে সংখ্যাভিত্তিক variant। স্বাধীন শিক্ষক অনুমোদন বাকি।",records:ch2.records.map((q,i)=>({kind:ch2.batch.items[i].type,text:q.text,options:q.options,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty})),provenance:{book:ch2.batch.book,edition:ch2.batch.edition,sourceUrl:ch2.batch.sourceUrl,references:ch2.batch.items.map(q=>q.page),review:chapter2Review}},
   ...remainingMathBatches(),
-  ...scienceStarterBatches()
+  ...scienceStarterBatches(),
+  ...hscIctBatches()
  ];
 }
 export function getPreparedBatch(id:string){

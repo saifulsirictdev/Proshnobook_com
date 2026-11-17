@@ -1,0 +1,3046 @@
+{
+  "category": "Class 11-12",
+  "subject": "তথ্য ও যোগাযোগ প্রযুক্তি",
+  "topic": "৬. ডেটাবেজ ম্যানেজমেন্ট সিস্টেম",
+  "book": "তথ্য ও যোগাযোগ প্রযুক্তি (একাদশ-দ্বাদশ ও আলিম শ্রেণির জন্য) + HSC_ICT_Book_By_Mahbubur_Rahman",
+  "edition": "২০২৬-২৭ পরিমার্জিত (NCTB) + ২০১৩-১৪ (Mahbubur Rahman)",
+  "sourceUrl": "https://drive.google.com/file/d/1oYmkhOFC6SzaweKEPPkFGM-XfNndfQ1F/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজে প্রতিটি রেকর্ডকে ইউনিকভাবে চিহ্নিত করে কোনটি?",
+      "options": {
+        "A": "ফরেন কী",
+        "B": "প্রাইমারি কী",
+        "C": "কম্পোজিট কী",
+        "D": "সেকেন্ডারি কী"
+      },
+      "correct": "B",
+      "explanation": "প্রাইমারি কী (Primary Key) এমন একটি কী যা দিয়ে কোনো নির্দিষ্ট এনটিটি বা রেকর্ডকে সম্পূর্ণভাবে শনাক্ত করা যায়।",
+      "page": "NCTB printed p.241 (অনুশীলনী ১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কতগুলো ফিল্ডে সমন্বিত তথ্যকে কী বলে?",
+      "options": {
+        "A": "রিপোর্ট",
+        "B": "রেকর্ড",
+        "C": "ডাটা",
+        "D": "ফাইল"
+      },
+      "correct": "B",
+      "explanation": "কতগুলো ফিল্ডের সমন্বয়ে একটি রেকর্ড গঠিত হয়।",
+      "page": "NCTB printed p.241 (অনুশীলনী ২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রাইভেট কী এনক্রিপশনে ব্যবহৃত হয়—",
+      "options": {
+        "A": "সিমেট্রিক লগারিদম",
+        "B": "অ্যাসিমেট্রিক লগারিদম",
+        "C": "সিমেট্রিক অ্যালগরিদম",
+        "D": "অ্যাসিমেট্রিক অ্যালগরিদম"
+      },
+      "correct": "D",
+      "explanation": "অ্যাসিমেট্রিক অ্যালগরিদমে পাবলিক ও প্রাইভেট কী—দুটি ভিন্ন কী ব্যবহৃত হয়।",
+      "page": "NCTB printed p.241 (অনুশীলনী ৩)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "SQL-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "Structured Query Language",
+        "B": "Simple Query Language",
+        "C": "System Query Logic",
+        "D": "Sequential Question Language"
+      },
+      "correct": "A",
+      "explanation": "SQL-এর পূর্ণরূপ হলো Structured Query Language।",
+      "page": "NCTB printed p.241 (অনুশীলনী ৪)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Primary Key-এর সাথে Foreign Key-এর রিলেশন কীরূপ?",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "C",
+      "explanation": "ফরেন কী প্রাইমারি কী-এর সাথে one-to-many ও many-to-many রিলেশনে ব্যবহৃত হয়, one-to-one নয়।",
+      "page": "NCTB printed p.242 (অনুশীলনী ৬)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ ম্যানেজমেন্ট সিস্টেম (DBMS)-এর প্রধান কাজ হচ্ছে—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "C",
+      "explanation": "ডেটাবেজ তৈরি, ডেটা এন্ট্রি ও সংরক্ষণ, রিপোর্ট তৈরি ও প্রিন্ট—তিনটিই DBMS-এর প্রধান কাজ।",
+      "page": "NCTB printed p.242 (অনুশীলনী ৭)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ ম্যানেজমেন্ট সিস্টেমে ব্যবহারকারী ও ডেটাবেজের মধ্যে সমন্বয়কারী সফটওয়্যার হিসেবে কাজ করে কোনটি?",
+      "options": {
+        "A": "DBMS",
+        "B": "অনলাইন ডেটা",
+        "C": "অ্যাপ্লিকেশন",
+        "D": "ডেটা ডিকশনারি"
+      },
+      "correct": "A",
+      "explanation": "DBMS ব্যবহারকারী ও ডেটাবেজের মধ্যে সমন্বয়কারী সফটওয়্যার হিসেবে কাজ করে।",
+      "page": "Mahbubur Rahman printed p.342",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "DBMS-এর প্রধান তিনটি কাজ কোনগুলো?",
+      "options": {
+        "A": "সর্টিং, ইনডেক্সিং ও কুয়েরি",
+        "B": "ব্যাকআপ, রিকভারি ও সিকিউরিটি",
+        "C": "ডেটাবেজ সৃজন, ডেটাবেজ ইন্টারোগেশন ও ডেটাবেজ রক্ষণাবেক্ষণ",
+        "D": "ডেটা এন্ট্রি, ডেটা ডিলিট ও ডেটা প্রিন্ট"
+      },
+      "correct": "C",
+      "explanation": "ডিবিএমএস-এর প্রধান তিনটি কাজ হলো ডেটাবেজ সৃজন, ডেটাবেজ ইন্টারোগেশন ও ডেটাবেজ রক্ষণাবেক্ষণ।",
+      "page": "Mahbubur Rahman printed p.342",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি DBMS-এর উদাহরণ?",
+      "options": {
+        "A": "MS ACCESS",
+        "B": "MS DOS",
+        "C": "MS EXCEL",
+        "D": "C++"
+      },
+      "correct": "A",
+      "explanation": "MS ACCESS একটি DBMS সফটওয়্যার।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহুল ব্যবহৃত ওরাকল (ORACLE) কী?",
+      "options": {
+        "A": "স্প্রেডশিট প্রোগ্রাম",
+        "B": "ডস অপারেটিং সিস্টেম",
+        "C": "ওয়ার্ড প্রসেসিং",
+        "D": "ডেটাবেজ ব্যবস্থাপনা সফটওয়্যার"
+      },
+      "correct": "D",
+      "explanation": "ওরাকল একটি ডেটাবেজ ব্যবস্থাপনা সফটওয়্যার।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহুল ব্যবহৃত MySQL একটি—",
+      "options": {
+        "A": "C++ প্রোগ্রাম",
+        "B": "গ্রাফিক্স প্রোগ্রাম",
+        "C": "ডেটাবেজ প্রোগ্রাম",
+        "D": "স্প্রেডশিট প্রোগ্রাম"
+      },
+      "correct": "C",
+      "explanation": "MySQL একটি ডেটাবেজ প্রোগ্রাম।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৩)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজে ডেটা এন্ট্রি করার জন্য ব্যবহৃত ইন্টারফেস বা মাধ্যমকে বলা হয়—",
+      "options": {
+        "A": "কুয়েরি",
+        "B": "প্রজেক্ট",
+        "C": "রিপোর্ট",
+        "D": "ফর্মস"
+      },
+      "correct": "A",
+      "explanation": "ডেটাবেজে ডেটা এন্ট্রি করার জন্য ব্যবহৃত ইন্টারফেস বা মাধ্যম হলো কুয়েরি।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৪)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনটি ডেটাবেজের উপাদান নয়?",
+      "options": {
+        "A": "মডিউল",
+        "B": "রেকর্ড",
+        "C": "সিনট্যাক্স",
+        "D": "ম্যাক্রো"
+      },
+      "correct": "C",
+      "explanation": "রেকর্ড, ম্যাক্রো ও মডিউল ডেটাবেজের উপাদান; সিনট্যাক্স নয়।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৫)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা (Data) শব্দটি কোন শব্দের বহুবচন?",
+      "options": {
+        "A": "Record",
+        "B": "Field",
+        "C": "Datum",
+        "D": "Database"
+      },
+      "correct": "C",
+      "explanation": "ডেটা শব্দটি Datum শব্দের বহুবচন। ডেটা হলো কাঁচা তথ্য বা উপাত্ত।",
+      "page": "Mahbubur Rahman printed p.337",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Memo ব্যবহৃত হয় কখন?",
+      "options": {
+        "A": "সংখ্যা লিখতে",
+        "B": "অক্ষর লিখতে",
+        "C": "কার্যামূলক লেখার জন্য",
+        "D": "ছবি সংযোজনে"
+      },
+      "correct": "C",
+      "explanation": "Memo ডেটা টাইপ কার্যামূলক লেখার জন্য ব্যবহৃত হয়।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৭)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রাইমারি ফিল্ডের ডেটাগুলো কেমন হওয়া অত্যাবশ্যক?",
+      "options": {
+        "A": "অটোনাম্বার",
+        "B": "ইউনিক বা স্বতন্ত্র",
+        "C": "ইউনিক না হলেও চলবে",
+        "D": "ক্রমানুসারি সাজানো"
+      },
+      "correct": "B",
+      "explanation": "প্রাইমারি ফিল্ডের ডেটাগুলো ইউনিক বা স্বতন্ত্র হতে হবে।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৮)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "রিলেশনাল ডেটা মডেলের প্রবর্তক কে?",
+      "options": {
+        "A": "E.F. Joseph",
+        "B": "E.F. Codd",
+        "C": "চার্লস ব্যাবেজ",
+        "D": "E.F. Gordon"
+      },
+      "correct": "B",
+      "explanation": "১৯৭০ সালে E.F. Codd রিলেশনাল ডেটা মডেলের প্রবর্তন করেন।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ১৯)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি শিক্ষা প্রতিষ্ঠানে ছাত্র-ছাত্রীদের ডেটাবেজে অ্যাট্রিবিউট হলো রোল, নাম, বিভাগ, ঠিকানা। এক্ষেত্রে প্রাইমারি কী কোনটি?",
+      "options": {
+        "A": "নাম",
+        "B": "বিভাগ",
+        "C": "ঠিকানা",
+        "D": "রোল"
+      },
+      "correct": "D",
+      "explanation": "রোল নম্বর প্রতিটি ছাত্রকে ইউনিকভাবে শনাক্ত করে, তাই রোল প্রাইমারি কী।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২০)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি ফরেন কী, যখন একটি টেবিলের অ্যাট্রিবিউট Roll, Academic Year এবং অপর একটি টেবিলের অ্যাট্রিবিউট Roll, Marks, Grade?",
+      "options": {
+        "A": "Grade",
+        "B": "Marks",
+        "C": "Academic Year",
+        "D": "Roll"
+      },
+      "correct": "D",
+      "explanation": "Roll উভয় টেবিলে কমন অ্যাট্রিবিউট, তাই এটি ফরেন কী।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২১)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি টেবিলে প্রাইমারি কী কয়টি থাকতে পারে?",
+      "options": {
+        "A": "পাঁচটি",
+        "B": "একটি",
+        "C": "দুটি",
+        "D": "তিনটি"
+      },
+      "correct": "B",
+      "explanation": "একটি টেবিলে একটিমাত্র প্রাইমারি কী থাকে।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ থেকে নির্দিষ্ট শর্তের ভিত্তিতে তথ্য খোঁজার জন্য কী ব্যবহার হয়?",
+      "options": {
+        "A": "ইনডেক্স",
+        "B": "কুয়েরি",
+        "C": "সর্টিং",
+        "D": "রিলেশন"
+      },
+      "correct": "B",
+      "explanation": "ডেটাবেজ থেকে নির্দিষ্ট শর্তের ভিত্তিতে তথ্য খোঁজার জন্য কুয়েরি ব্যবহার হয়।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৩)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনটি ফরেন কী-এর কাজ?",
+      "options": {
+        "A": "দুটি টেবিলের মধ্যে যোগসূত্র স্থাপন করা",
+        "B": "দুটি টেবিলকে স্বতন্ত্র করা",
+        "C": "অ্যাট্রিবিউট ও রেকর্ড শনাক্ত করা",
+        "D": "দুটি অ্যাট্রিবিউটকে আলাদাভাবে চিহ্নিত করা"
+      },
+      "correct": "A",
+      "explanation": "ফরেন কী দুটি টেবিলের মধ্যে যোগসূত্র স্থাপন করে।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৪)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নাম (Name) ফিল্ড প্রাইমারি কী নয় কেন?",
+      "options": {
+        "A": "ভিন্ন ভিন্ন ব্যক্তির নাম সবসময় ভিন্ন ভিন্ন",
+        "B": "একাধিক ব্যক্তির একই নাম হতে পারে",
+        "C": "একই ব্যক্তির নাম মাত্র একটি",
+        "D": "নাম অ্যাট্রিবিউট বহিভূর্ত"
+      },
+      "correct": "B",
+      "explanation": "একাধিক ব্যক্তির একই নাম হতে পারে, তাই নাম প্রাইমারি কী নয়।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৫)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজে কোন ধরনের প্রোগ্রাম থাকে?",
+      "options": {
+        "A": "C প্রোগ্রাম",
+        "B": "সহকারী প্রোগ্রাম",
+        "C": "সিস্টেম প্রোগ্রাম",
+        "D": "অ্যাপ্লিকেশন প্রোগ্রাম"
+      },
+      "correct": "D",
+      "explanation": "ডেটাবেজে অ্যাপ্লিকেশন প্রোগ্রাম থাকে।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৬)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "RDBMS-এর ধারণা আসে কত সালে?",
+      "options": {
+        "A": "১৯৮০",
+        "B": "১৯৯০",
+        "C": "১৯৬০",
+        "D": "১৯৭০"
+      },
+      "correct": "D",
+      "explanation": "RDBMS-এর ধারণা ১৯৭০ সালে আসে।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৭)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "RDBMS সফটওয়্যার কোনটি?",
+      "options": {
+        "A": "Power Point",
+        "B": "Oracle",
+        "C": "MS-Excel",
+        "D": "MS Word"
+      },
+      "correct": "B",
+      "explanation": "Oracle একটি RDBMS সফটওয়্যার; MS-Excel, MS Word ও Power Point নয়।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৮)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা টেবিলের মধ্যে কোনটি প্রাইমারি কী ফিল্ড?",
+      "options": {
+        "A": "গ্রুপ",
+        "B": "বয়স",
+        "C": "নাম",
+        "D": "রোল নম্বর"
+      },
+      "correct": "D",
+      "explanation": "রোল নম্বর প্রতিটি রেকর্ডকে ইউনিকভাবে শনাক্ত করে, তাই এটি প্রাইমারি কী ফিল্ড।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ২৯)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "রিলেশনাল ডেটাবেজে সর্বনিম্ন ফাইলের সংখ্যা কয়টি?",
+      "options": {
+        "A": "ছয়টি",
+        "B": "দুটি",
+        "C": "তিনটি",
+        "D": "চারটি"
+      },
+      "correct": "B",
+      "explanation": "রিলেশনাল ডেটাবেজে সর্বনিম্ন ফাইলের সংখ্যা দুটি।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ৩০)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি আরডিবিএমএস-এর কাজ নয়?",
+      "options": {
+        "A": "ডেটা সংরক্ষণ করা",
+        "B": "ডেটার নিরাপত্তা রক্ষা করা",
+        "C": "তথ্যের বিশুদ্ধতা রক্ষা করা",
+        "D": "একই সময়ে একাধিক ব্যবহারকারী প্রতিরোধ করা"
+      },
+      "correct": "D",
+      "explanation": "RDBMS একই সময়ে একাধিক ব্যবহারকারীকে ডেটা ব্যবহারের সুযোগ দেয়, প্রতিরোধ করে না।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ৩১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভিন্ন ভিন্ন ডেটা টেবিলগুলোকে একত্র করে ডেটা সঞ্চালন করার জন্য কী প্রয়োজন?",
+      "options": {
+        "A": "ভিন্ন ভিন্ন টেবিলে ডেটা এন্ট্রি করা",
+        "B": "টেবিলগুলোর মধ্যে রিলেশন তৈরি করা",
+        "C": "টেবিলের নিরাপত্তা বিধান করা",
+        "D": "টেবিলগুলোর মধ্যে কুয়েরি করা"
+      },
+      "correct": "B",
+      "explanation": "ভিন্ন ভিন্ন ডেটা টেবিলগুলোকে একত্র করে ডেটা সঞ্চালন করার জন্য টেবিলগুলোর মধ্যে রিলেশন তৈরি করা প্রয়োজন।",
+      "page": "Mahbubur Rahman printed p.363 (অনুশীলনী ৩২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনটি সর্বাধিক ব্যবহৃত অবাণিজিক RDBMS সফটওয়্যার?",
+      "options": {
+        "A": "MYSQL",
+        "B": "MS Access",
+        "C": "SQL Server",
+        "D": "DB-2"
+      },
+      "correct": "A",
+      "explanation": "MYSQL সর্বাধিক ব্যবহৃত অবাণিজিক RDBMS সফটওয়্যার।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৩)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "রিলেশনাল ডেটাবেজ ডেটাকে নিম্নলিখিত কোন উপায়ে সংরক্ষণ করা হয়?",
+      "options": {
+        "A": "FILE",
+        "B": "TABLE",
+        "C": "HTML",
+        "D": "XML"
+      },
+      "correct": "B",
+      "explanation": "রিলেশনাল ডেটাবেজ ডেটাকে TABLE উপায়ে সংরক্ষণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৪)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "পরস্পর সম্পর্কযুক্ত কয়েকটি ফাইল নিয়ে গঠিত ডেটাবেজকে বলা হয়—",
+      "options": {
+        "A": "গুচ্ছ ডেটাবেজ",
+        "B": "অনির্ধারিত ডেটাবেজ",
+        "C": "সম্পৃক্ত ডেটাবেজ",
+        "D": "নির্দিষ্ট ডেটাবেজ"
+      },
+      "correct": "C",
+      "explanation": "পরস্পর সম্পর্কযুক্ত কয়েকটি ফাইল নিয়ে গঠিত ডেটাবেজকে সম্পৃক্ত ডেটাবেজ বলা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৫)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোন কারণে সর্ট-এর তেমন ব্যবহার নেই?",
+      "options": {
+        "A": "ডেটা সর্ট করা প্রয়োজন হয় না",
+        "B": "এটি ইনডেক্সিং আউটপুটের চেয়ে কম মেমোরি দখল করে",
+        "C": "এটি ইনডেক্সিং আউটপুটের চেয়ে বেশি মেমোরি দখল করে",
+        "D": "সব ফিল্ড সর্ট করা যায় না"
+      },
+      "correct": "C",
+      "explanation": "সর্ট আউটপুট ইনডেক্সিং আউটপুটের চেয়ে বেশি মেমোরি দখল করে বলে সর্ট-এর তেমন ব্যবহার নেই।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৬)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনটি RDBMS নয়?",
+      "options": {
+        "A": "MySQL",
+        "B": "DB-2",
+        "C": "C++",
+        "D": "SQL"
+      },
+      "correct": "C",
+      "explanation": "C++ একটি প্রোগ্রামিং ভাষা, RDBMS নয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৭)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কুয়েরি হলো—",
+      "options": {
+        "A": "ডেটাবেজ ফাইল সংরক্ষণ করা",
+        "B": "ডেটাবেজ থেকে কিছু খুঁজে বের করা",
+        "C": "কোনটিই নয়",
+        "D": "ডেটাবেজ আপডেট রাখা"
+      },
+      "correct": "B",
+      "explanation": "কুয়েরি হলো ডেটাবেজ থেকে কিছু খুঁজে বের করা।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৮)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "শর্তসাপেক্ষে ডেটাবেজ থেকে কোনো ডেটা খুঁজে বের করাকে কী বলা হয়?",
+      "options": {
+        "A": "সার্চিং",
+        "B": "ইনডেক্সিং",
+        "C": "সর্টিং",
+        "D": "কুয়েরি"
+      },
+      "correct": "D",
+      "explanation": "শর্তসাপেক্ষে ডেটাবেজ থেকে কোনো ডেটা খুঁজে বের করাকে কুয়েরি বলা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৩৯)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজের রিলেশনকে কয়ভাগে ভাগ করা যায়?",
+      "options": {
+        "A": "ছয়",
+        "B": "সাত",
+        "C": "চার",
+        "D": "পাঁচ"
+      },
+      "correct": "C",
+      "explanation": "ডেটাবেজের রিলেশনকে চারভাগে ভাগ করা যায়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪০)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয় কোন রিলেশনশিপে?",
+      "options": {
+        "A": "Many-to-Many",
+        "B": "One-to-One",
+        "C": "Many-to-One",
+        "D": "One-to-Many"
+      },
+      "correct": "D",
+      "explanation": "একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয় One-to-Many রিলেশনশিপে।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ প্রোগ্রামে সর্টিং-এর মাধ্যমে কী করা হয়?",
+      "options": {
+        "A": "তথ্য বিন্যস্ত করা হয়",
+        "B": "তথ্য ইনপুট দেওয়া হয়",
+        "C": "তথ্য বাছাই করা হয়",
+        "D": "তথ্য মুছে ফেলা হয়"
+      },
+      "correct": "A",
+      "explanation": "ডেটাবেজ প্রোগ্রামে সর্টিং-এর মাধ্যমে তথ্য বিন্যস্ত করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "রিপোর্ট কী?",
+      "options": {
+        "A": "প্রিন্ট করা",
+        "B": "প্রতিবেদন আকারে উপস্থাপন",
+        "C": "অফিস ডকুমেন্ট",
+        "D": "একটি প্রোগ্রাম"
+      },
+      "correct": "B",
+      "explanation": "রিপোর্ট হলো প্রতিবেদন আকারে উপস্থাপন।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৩)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি কুয়েরির ভাষা?",
+      "options": {
+        "A": "SQL",
+        "B": "Java",
+        "C": "C++",
+        "D": "HTML"
+      },
+      "correct": "A",
+      "explanation": "SQL হলো কুয়েরির ভাষা।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৪)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি ডেটা ব্যবস্থাপনার উপায়ের নাম?",
+      "options": {
+        "A": "ডেটা শিট",
+        "B": "ডেটা মডেল",
+        "C": "ডেটা সিডিউল",
+        "D": "ডেটা এনটিটি"
+      },
+      "correct": "B",
+      "explanation": "ডেটা মডেল হলো ডেটা ব্যবস্থাপনার উপায়ের নাম।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৫)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটার গোপনীয়তা রক্ষার জন্য কী করা হয়?",
+      "options": {
+        "A": "সাইফারটেক্সট",
+        "B": "ডেটা এনক্রিপ্ট",
+        "C": "প্লেইন টেক্সট",
+        "D": "এনক্রিপশন অ্যালগরিদম"
+      },
+      "correct": "B",
+      "explanation": "ডেটার গোপনীয়তা রক্ষার জন্য ডেটা এনক্রিপ্ট করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৬)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "পাবলিক কী এনক্রিপশনে কয় প্রকারের কী ব্যবহার করা হয়?",
+      "options": {
+        "A": "দুই প্রকার",
+        "B": "তিন প্রকার",
+        "C": "চার প্রকার",
+        "D": "পাঁচ প্রকার"
+      },
+      "correct": "A",
+      "explanation": "পাবলিক কী এনক্রিপশনে দুই প্রকারের কী (পাবলিক ও প্রাইভেট) ব্যবহার করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৭)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কে Encrypted ডেটাকে Decrypt করতে পারে?",
+      "options": {
+        "A": "যে কোনো ব্যবহারকারী",
+        "B": "সকল database ব্যবহারকারী",
+        "C": "সঠিক ব্যবহারকারী",
+        "D": "সকল কম্পিউটার ব্যবহারকারী"
+      },
+      "correct": "C",
+      "explanation": "সঠিক ব্যবহারকারীই Encrypted ডেটাকে Decrypt করতে পারে।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৮)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "যদি Encrypted ডেটাকে Decrypt করার প্রয়োজন হয় তখন কী ব্যবহার করতে হবে?",
+      "options": {
+        "A": "DBMS সফটওয়্যার",
+        "B": "সার্চ কী",
+        "C": "পাসওয়ার্ড",
+        "D": "একটি রেকর্ড"
+      },
+      "correct": "C",
+      "explanation": "Encrypted ডেটাকে Decrypt করতে পাসওয়ার্ড ব্যবহার করতে হবে।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৪৯)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "এনক্রিপ্টকৃত ডেটাকে মূল অবস্থায় ফিরিয়ে আনতে কী করা হয়?",
+      "options": {
+        "A": "ডিজিটাইজিং",
+        "B": "কোডিং",
+        "C": "ডিকোডিং",
+        "D": "মাইনিং"
+      },
+      "correct": "C",
+      "explanation": "এনক্রিপ্টকৃত ডেটাকে মূল অবস্থায় ফিরিয়ে আনতে ডিকোডিং করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৫০)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্পোরেট ডেটাবেজে প্রয়োজনীয় সকল তথ্য কোথায় সংরক্ষণ করা হয়?",
+      "options": {
+        "A": "একটি সার্ভার কম্পিউটারে",
+        "B": "দুই বা ততোধিক সার্ভারে",
+        "C": "কর্পোরেট শাখা অফিসগুলোর কম্পিউটারে",
+        "D": "ব্যক্তিগত কম্পিউটারে"
+      },
+      "correct": "A",
+      "explanation": "কর্পোরেট ডেটাবেজে প্রয়োজনীয় সকল তথ্য একটি সার্ভার কম্পিউটারে সংরক্ষণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৫১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো—",
+      "options": {
+        "A": "ইনফরমেটিক্স",
+        "B": "ক্রিপ্টোগ্রাফিক",
+        "C": "কম্পিউটারিক",
+        "D": "ডিজিটাইজিং"
+      },
+      "correct": "B",
+      "explanation": "ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো ক্রিপ্টোগ্রাফিক।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৫২)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের টেবিল দুটির মধ্যে কোন ধরনের ডেটাবেজ রিলেশন রয়েছে? (টেবিল ১: রোল, নাম, ফলাফল; টেবিল ২: রোল, ঠিকানা, জন্ম তারিখ)",
+      "options": {
+        "A": "Many to One",
+        "B": "One to Many",
+        "C": "Many to Many",
+        "D": "One to One"
+      },
+      "correct": "D",
+      "explanation": "উভয় টেবিলে রোল কমন এবং প্রতিটি রোল একবার করে থাকে, তাই এটি One to One রিলেশন।",
+      "page": "Mahbubur Rahman printed p.364 (অনুশীলনী ৫৩)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের চিত্রটি কোন ধরনের রিলেশনশিপ প্রকাশ করে? (a1, a2, a3, a4 থেকে b1, b2, b3, b4-এ একাধিক তীর)",
+      "options": {
+        "A": "One to one",
+        "B": "One to many",
+        "C": "Many to one",
+        "D": "Many to many"
+      },
+      "correct": "B",
+      "explanation": "চিত্রে একটি পক্ষ থেকে একাধিক পক্ষে সংযোগ দেখানো হয়েছে, তাই এটি One to many রিলেশনশিপ।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৪)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ প্রোগ্রাম ব্যবহার করে—",
+      "options": {
+        "A": "i, ii ও iii",
+        "B": "i ও ii",
+        "C": "i ও iii",
+        "D": "ii ও iii"
+      },
+      "correct": "A",
+      "explanation": "ডেটাবেজ প্রোগ্রাম ব্যবহার করে শিল্প প্রতিষ্ঠানের বার্ষিক হিসাব ও উৎপাদনের তথ্য সংরক্ষণ, কাঙ্ক্ষিত তথ্য দ্রুত উপস্থাপন ও প্রয়োজনীয় রেকর্ডসহজে খুঁজে পাওয়া যায়।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৫)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনো ডেটাবেজের আওতায় থাকতে পারে—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "C",
+      "explanation": "ডেটাবেজের আওতায় এক বা একাধিক ডেটাটেবিল, কুয়েরি, ফর্ম, রিপোর্ট, ম্যাক্রো ও মডিউল থাকতে পারে।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৬)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজে Field Property-এর বিভিন্ন অংশ হলো—",
+      "options": {
+        "A": "i, ii ও iii",
+        "B": "i ও ii",
+        "C": "i ও iii",
+        "D": "ii ও iii"
+      },
+      "correct": "A",
+      "explanation": "Field Property-এর অংশগুলো হলো Field Size, Format ও Caption।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৭)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "Sorting হলো—",
+      "options": {
+        "A": "i, ii ও iii",
+        "B": "i ও ii",
+        "C": "ii ও iii",
+        "D": "i ও iii"
+      },
+      "correct": "B",
+      "explanation": "Sorting হলো মানের ঊর্ধ্বক্রমে ও নিম্নক্রমে সাজানো।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৮)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "আধুনিক ডেটাবেজ সফটওয়্যার বলতে সাধারণত বুঝায়—",
+      "options": {
+        "A": "ii",
+        "B": "iii",
+        "C": "i ও ii",
+        "D": "i"
+      },
+      "correct": "C",
+      "explanation": "আধুনিক ডেটাবেজ সফটওয়্যার বলতে সাধারণত রিলেশনাল ডেটাবেজ ম্যানেজমেন্ট সিস্টেমকে ও ডেটাবেজ ম্যানেজমেন্ট সিস্টেমকে বুঝায়।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৫৯)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "DBMS হলো—",
+      "options": {
+        "A": "i",
+        "B": "iii",
+        "C": "i ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "C",
+      "explanation": "DBMS হলো IBM DB-2 ও Foxpro26 (Oracle RDBMS-এর উদাহরণ)।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬০)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "যে সব ফিল্ডের উপর সর্ট অপারেশন করা যায় না—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "A",
+      "explanation": "Memo ও OLE ফিল্ডের উপর সর্ট অপারেশন করা যায় না।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬১)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ইনডেক্স করা যায়—",
+      "options": {
+        "A": "ii ও iii",
+        "B": "i ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "C",
+      "explanation": "ইনডেক্স একটি ফিল্ডের উপর, দুটি ফিল্ডের উপর ও একাধিক ফিল্ডের উপর করা যায়।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬২)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা এনক্রিপ্ট করার জন্য জানার বিষয় হলো—",
+      "options": {
+        "A": "i, ii ও iii",
+        "B": "i ও ii",
+        "C": "i ও iii",
+        "D": "ii ও iii"
+      },
+      "correct": "A",
+      "explanation": "ডেটা এনক্রিপ্ট করার জন্য প্লেইনটেক্সট, সাইফার টেক্সট ও কী জানার বিষয়।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬৩)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা এনক্রিপ্ট করার পদ্ধতি হলো—",
+      "options": {
+        "A": "i, ii ও iii",
+        "B": "i ও ii",
+        "C": "i ও iii",
+        "D": "ii ও iii"
+      },
+      "correct": "A",
+      "explanation": "ডেটা এনক্রিপ্ট করার পদ্ধতি হলো সিজার কোড, DES ও IDEA।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬৪)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "RDBMS ব্যবহৃত হয়—",
+      "options": {
+        "A": "i ও ii",
+        "B": "ii",
+        "C": "i ও iii",
+        "D": "i"
+      },
+      "correct": "A",
+      "explanation": "RDBMS ব্যবসাক্ষেত্রে ও শিক্ষাক্ষেত্রে ব্যবহৃত হয়।",
+      "page": "Mahbubur Rahman printed p.365 (অনুশীলনী ৬৫)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "রিলেশন তৈরি করা টেবিল থেকে প্রয়োজনীয় ডেটা নিয়ে তৈরি করা যায়—",
+      "options": {
+        "A": "i",
+        "B": "ii",
+        "C": "সবগুলো",
+        "D": "i ও ii"
+      },
+      "correct": "C",
+      "explanation": "রিলেশন তৈরি করা টেবিল থেকে আলাদা ডেটা টেবিল, বর্ধিত ডেটা টেবিল ও রিলেশন টেবিল তৈরি করা যায়।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৬৭)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "Auto Number টাইপের ডেটা দ্বারা—",
+      "options": {
+        "A": "i",
+        "B": "iii",
+        "C": "ii",
+        "D": "i ও iii"
+      },
+      "correct": "D",
+      "explanation": "Auto Number টাইপের ডেটা দ্বারা ডেটাবেজকে অন্যান্য প্রোগ্রামে নেওয়া যায় না এবং স্বয়ংক্রিয়ভাবে ধারাবাহিক ডেটা এন্ট্রি হয়ে যায়।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৬৮)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিলটির সাথে অপর কোনো টেবিলের সম্পর্ক করতে হলে কোন ফিল্ডটিকে ভিত্তি বিবেচনা করতে হবে? (Name, NID, Mobile, Address, Amount)",
+      "options": {
+        "A": "NID",
+        "B": "Address",
+        "C": "Amount",
+        "D": "Name"
+      },
+      "correct": "A",
+      "explanation": "NID প্রতিটি ব্যক্তিকে ইউনিকভাবে শনাক্ত করে, তাই NID ফিল্ডটিকে ভিত্তি বিবেচনা করতে হবে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৬৯)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "এখানে ইনডেক্সার টাইপ ডেটা আছে—",
+      "options": {
+        "A": "i",
+        "B": "ii",
+        "C": "i ও ii",
+        "D": "i ও iii"
+      },
+      "correct": "D",
+      "explanation": "এখানে NID ফিল্ডে ও Mobile ফিল্ডে ইনডেক্সার টাইপ ডেটা আছে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭০)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "উল্লিখিত ডেটাবেজে রেকর্ডের সংখ্যা কয়টি? (নাম, রোল নম্বর, জন্ম তারিখ ও জিপিএ সংরক্ষিত)",
+      "options": {
+        "A": "৪০০টি",
+        "B": "৪টি",
+        "C": "২৫টি",
+        "D": "২০০টি"
+      },
+      "correct": "B",
+      "explanation": "উল্লিখিত ডেটাবেজে ৪টি রেকর্ড সংরক্ষিত আছে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭১)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "রোল নম্বর ফিল্ডটি হতে পারে—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "D",
+      "explanation": "রোল নম্বর ফিল্ডটি Text type ও Numeric type হতে পারে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭২)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "উদ্দীপকের কোন ফিল্ডটি প্রাইমারি কী ফিল্ড হতে পারে—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "A",
+      "explanation": "উদ্দীপকের রোল নম্বর ও রেজিস্ট্রেশন নং প্রাইমারি কী ফিল্ড হতে পারে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭৩)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "উদ্দীপকের যে রোলগুলো জিপিএ ৫ পেয়েছে তাদের সহজে বের করার পদ্ধতি—",
+      "options": {
+        "A": "i ও iii",
+        "B": "ii ও iii",
+        "C": "i, ii ও iii",
+        "D": "i ও ii"
+      },
+      "correct": "A",
+      "explanation": "উদ্দীপকের যে রোলগুলো জিপিএ ৫ পেয়েছে তাদের সহজে বের করার পদ্ধতি হলো ইনডেক্সিং কমান্ড ও কুয়েরি কমান্ড।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭৪)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "উদ্দীপকে উল্লিখিত কাজ কম্পিউটারের মাধ্যমে স্বয়ংক্রিয়ভাবে করতে হলে জহির সাহেবকে কোন সফটওয়্যারটি ব্যবহার করতে হবে?",
+      "options": {
+        "A": "MS-Word",
+        "B": "MS-Power point",
+        "C": "MS-Excel",
+        "D": "MS-Access"
+      },
+      "correct": "D",
+      "explanation": "উদ্দীপকে উল্লিখিত কাজ কম্পিউটারের মাধ্যমে স্বয়ংক্রিয়ভাবে করতে হলে MS-Access ব্যবহার করতে হবে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭৫)",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "জহির সাহেব ডেটাবেজ সফটওয়্যারটি ব্যবহার করলে যেসব সুবিধা পাবে—",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "C",
+      "explanation": "জহির সাহেব ডেটাবেজ সফটওয়্যারটি ব্যবহার করলে রেকর্ড অনুসন্ধান ও বায়ো-ডেটা তৈরি সুবিধা পাবে।",
+      "page": "Mahbubur Rahman printed p.366 (অনুশীলনী ৭৬)",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ শব্দটি কোন দুটি শব্দের সমন্বয়ে গঠিত?",
+      "options": {
+        "A": "Datum + Base",
+        "B": "Data + Bank",
+        "C": "Digital + Base",
+        "D": "Data + Base"
+      },
+      "correct": "D",
+      "explanation": "ডেটাবেজ শব্দটি Data + Base শব্দের সমন্বয়ে গঠিত, অর্থাৎ ডেটার ভিত্তি বা ডেটার সংগ্রহ।",
+      "page": "Mahbubur Rahman printed p.337",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Entity Set কী?",
+      "options": {
+        "A": "একটি ফিল্ড",
+        "B": "একটি টেবিল",
+        "C": "একই ধরনের সকল Entity-র সমষ্টি",
+        "D": "একটি রেকর্ড"
+      },
+      "correct": "C",
+      "explanation": "একই ধরনের সকল Entity-র সমষ্টিকে Entity Set বলা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "E-R Model-এর প্রবর্তক কে এবং কত সালে?",
+      "options": {
+        "A": "Charles Babbage, ১৯৭০",
+        "B": "E.F. Codd, ১৯৮০",
+        "C": "Bill Gates, ১৯৭০",
+        "D": "E.F. Codd, ১৯৭০"
+      },
+      "correct": "D",
+      "explanation": "E-R Model-এর প্রবর্তক E.F. Codd, ১৯৭০ সালে।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "DBMS-এর ধরন কোনটি?",
+      "options": {
+        "A": "HTML",
+        "B": "Client Server",
+        "C": "MS-DOS",
+        "D": "C++"
+      },
+      "correct": "B",
+      "explanation": "DBMS-এর ধরনগুলো হলো Client Server, Distributed এবং Web enable।",
+      "page": "Mahbubur Rahman printed p.343",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "MS Access-এ ডেটাবেজ তৈরির পদ্ধতি কয়টি?",
+      "options": {
+        "A": "চারটি",
+        "B": "পাঁচটি",
+        "C": "তিনটি",
+        "D": "দুটি"
+      },
+      "correct": "C",
+      "explanation": "MS Access-এ ডেটাবেজ তৈরির পদ্ধতি তিনটি।",
+      "page": "Mahbubur Rahman printed p.344",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ উইন্ডোর কোন ট্যাবে টেবিলগুলো সংরক্ষিত থাকে?",
+      "options": {
+        "A": "Queries",
+        "B": "Forms",
+        "C": "Macro",
+        "D": "Tables"
+      },
+      "correct": "D",
+      "explanation": "Tables ট্যাবের আওতায় টেবিলগুলো সংরক্ষিত থাকে।",
+      "page": "Mahbubur Rahman printed p.344",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Field Size প্রপার্টিজ দিয়ে কী নির্ধারণ করা হয়?",
+      "options": {
+        "A": "ফিল্ডের রং",
+        "B": "ফিল্ডের নাম",
+        "C": "ফিল্ডের অবস্থান",
+        "D": "ফিল্ডে কতগুলো ক্যারেক্টার বা সংখ্যা এন্ট্রি করা যাবে"
+      },
+      "correct": "D",
+      "explanation": "Field Size প্রপার্টিজ দিয়ে ফিল্ডে কতগুলো ক্যারেক্টার বা সংখ্যা এন্ট্রি করা যাবে তা নির্ধারণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.347",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Validation Rule প্রপার্টিজের কাজ কী?",
+      "options": {
+        "A": "ডেটা সাজানো",
+        "B": "ডেটা প্রিন্ট করা",
+        "C": "ডেটা এন্ট্রি নিয়ন্ত্রণ করা",
+        "D": "ডেটা মুছে ফেলা"
+      },
+      "correct": "C",
+      "explanation": "Validation Rule প্রপার্টিজ দিয়ে ডেটা এন্ট্রি নিয়ন্ত্রণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.347",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজে ডেটা ইনসার্ট করার ধাপ কয়টি?",
+      "options": {
+        "A": "পাঁচটি",
+        "B": "চারটি",
+        "C": "দুটি",
+        "D": "তিনটি"
+      },
+      "correct": "B",
+      "explanation": "ডেটাবেজে ডেটা ইনসার্ট করার ধাপ চারটি।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "City=\"Dhaka\" — এটি কোন ধরনের উদাহরণ?",
+      "options": {
+        "A": "Macro",
+        "B": "Query",
+        "C": "Report",
+        "D": "Form"
+      },
+      "correct": "B",
+      "explanation": "City=\"Dhaka\" হলো Query-র উদাহরণ, অর্থাৎ শর্তের ভিত্তিতে ডেটা খোঁজা।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "SQL-এ ডেটা খোঁজার জন্য কোন কীওয়ার্ড ব্যবহৃত হয়?",
+      "options": {
+        "A": "INSERT, UPDATE, DELETE",
+        "B": "CREATE, DROP, ALTER",
+        "C": "ORDER, SORT, INDEX",
+        "D": "SELECT, FROM, WHERE"
+      },
+      "correct": "D",
+      "explanation": "SQL-এ SELECT, FROM, WHERE কীওয়ার্ড দিয়ে ডেটা খোঁজা হয়।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ascending সর্টিং বলতে কী বোঝায়?",
+      "options": {
+        "A": "বড় থেকে ছোট ক্রমে সাজানো",
+        "B": "বর্ণানুক্রমে সাজানো",
+        "C": "তারিখ অনুযায়ী সাজানো",
+        "D": "ছোট থেকে বড় ক্রমে সাজানো"
+      },
+      "correct": "D",
+      "explanation": "Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কোন ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না?",
+      "options": {
+        "A": "Memo, HyperLink, OLE",
+        "B": "Text, Number, Date",
+        "C": "Currency, Logical",
+        "D": "AutoNumber"
+      },
+      "correct": "A",
+      "explanation": "Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ইনডেক্সিং-এর সুবিধা কোনটি?",
+      "options": {
+        "A": "ডেটা প্রিন্ট করা যায়",
+        "B": "ডেটা এনক্রিপ্ট করা যায়",
+        "C": "দ্রুত ডেটা খোঁজা যায়",
+        "D": "ডেটা মুছে ফেলা যায়"
+      },
+      "correct": "C",
+      "explanation": "ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ইনডেক্সিং-এর অসুবিধা কোনটি?",
+      "options": {
+        "A": "ডেটা খোঁজা ধীর হয়",
+        "B": "ডেটা সাজানো যায় না",
+        "C": "ডেটা সংরক্ষণ করা যায় না",
+        "D": "অতিরিক্ত মেমোরি দখল করে"
+      },
+      "correct": "D",
+      "explanation": "ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটাবেজ রিলেশনের শর্ত কয়টি?",
+      "options": {
+        "A": "তিনটি",
+        "B": "দুটি",
+        "C": "চারটি",
+        "D": "পাঁচটি"
+      },
+      "correct": "A",
+      "explanation": "ডেটাবেজ রিলেশনের শর্ত তিনটি।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ACID-এর পূর্ণরূপ কোনটি?",
+      "options": {
+        "A": "Add, Create, Insert, Delete",
+        "B": "Array, Class, Interface, Data",
+        "C": "Atomicity, Consistency, Isolation, Durability",
+        "D": "Access, Control, Identity, Data"
+      },
+      "correct": "C",
+      "explanation": "ACID-এর পূর্ণরূপ Atomicity, Consistency, Isolation, Durability।",
+      "page": "NCTB printed p.240",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্পোরেট ডেটাবেজের ধরন কয়টি?",
+      "options": {
+        "A": "পাঁচটি",
+        "B": "নয়টি",
+        "C": "দশটি",
+        "D": "সাতটি"
+      },
+      "correct": "D",
+      "explanation": "কর্পোরেট ডেটাবেজের ধরন সাতটি।",
+      "page": "Mahbubur Rahman printed p.353",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডেটা সিকিউরিটির নিয়ন্ত্রণ কয়টি?",
+      "options": {
+        "A": "পাঁচটি",
+        "B": "তিনটি",
+        "C": "সাতটি",
+        "D": "দশটি"
+      },
+      "correct": "A",
+      "explanation": "ডেটা সিকিউরিটির নিয়ন্ত্রণ পাঁচটি: গোপনীয়তা, সততা, প্রাপ্যতা সহ।",
+      "page": "Mahbubur Rahman printed p.354",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Caesar Code-এ Plaintext \"This is a secret message\"-এর Ciphertext কোনটি?",
+      "options": {
+        "A": "wklv lv d vhfuuhw phvvdjh",
+        "B": "This is a secret message",
+        "C": "abcxyz",
+        "D": "12345"
+      },
+      "correct": "A",
+      "explanation": "Caesar Code-এ Plaintext \"This is a secret message\"-এর Ciphertext হলো \"wklv lv d vhfuuhw phvvdjh\"।",
+      "page": "Mahbubur Rahman printed p.386",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "DES-এর কী-এর দৈর্ঘ্য কত?",
+      "options": {
+        "A": "২৫৬-বিট",
+        "B": "৫৬-বিট",
+        "C": "১২৮-বিট",
+        "D": "৬৪-বিট"
+      },
+      "correct": "B",
+      "explanation": "DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট।",
+      "page": "Mahbubur Rahman printed p.386",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "AES-এর কী-এর দৈর্ঘ্য কত?",
+      "options": {
+        "A": "৩২-বিট",
+        "B": "১২৮/১৯২/২৫৬-বিট",
+        "C": "৫৬-বিট",
+        "D": "৬৪-বিট"
+      },
+      "correct": "B",
+      "explanation": "AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট এবং ব্লক সাইজ ১২৮-বিট।",
+      "page": "Mahbubur Rahman printed p.387",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Microsoft Office 2007-এ ফাইল এনক্রিপ্ট করতে কোন মেনু ব্যবহৃত হয়?",
+      "options": {
+        "A": "View → Toolbars",
+        "B": "Prepare → Encrypt Document",
+        "C": "File → Save",
+        "D": "Edit → Copy"
+      },
+      "correct": "B",
+      "explanation": "Microsoft Office 2007-এ ফাইল এনক্রিপ্ট করতে Prepare → Encrypt Document মেনু ব্যবহৃত হয়।",
+      "page": "Mahbubur Rahman printed p.389",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "RAM-এ ডেটা সংরক্ষণের সীমাবদ্ধতা কোনটি?",
+      "options": {
+        "A": "ডেটা স্থায়ীভাবে থাকে",
+        "B": "ডেটা এনক্রিপ্ট হয়",
+        "C": "ডেটা সাজানো যায়",
+        "D": "পাওয়ার বন্ধ হলে ডেটা হারিয়ে যায়"
+      },
+      "correct": "D",
+      "explanation": "RAM-এ ডেটা সংরক্ষণের সীমাবদ্ধতা হলো পাওয়ার বন্ধ হলে ডেটা হারিয়ে যায়।",
+      "page": "NCTB printed p.219",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "NoSQL ডেটাবেজের বৈশিষ্ট্য কোনটি?",
+      "options": {
+        "A": "Schemaless",
+        "B": "Relational",
+        "C": "Table-based",
+        "D": "Fixed schema"
+      },
+      "correct": "A",
+      "explanation": "NoSQL ডেটাবেজের বৈশিষ্ট্য হলো Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা যায়।",
+      "page": "NCTB printed p.221",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Null মান বলতে কী বোঝায়?",
+      "options": {
+        "A": "কোনো মান নেই",
+        "B": "শূন্য মান",
+        "C": "একক মান",
+        "D": "দ্বৈত মান"
+      },
+      "correct": "A",
+      "explanation": "Null মান বলতে কোনো মান নেই বোঝায়, অর্থাৎ ফিল্ডে কোনো ডেটা এন্ট্রি করা হয়নি।",
+      "page": "NCTB printed p.223",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Auto-increment কী?",
+      "options": {
+        "A": "স্বয়ংক্রিয়ভাবে ডেটা মুছে যাওয়া",
+        "B": "স্বয়ংক্রিয়ভাবে ডেটা সাজানো",
+        "C": "স্বয়ংক্রিয়ভাবে ডেটা প্রিন্ট হওয়া",
+        "D": "স্বয়ংক্রিয়ভাবে সংখ্যা বৃদ্ধি পাওয়া"
+      },
+      "correct": "D",
+      "explanation": "Auto-increment হলো স্বয়ংক্রিয়ভাবে সংখ্যা বৃদ্ধি পাওয়া, যেমন প্রাইমারি কী-তে।",
+      "page": "NCTB printed p.224",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্র-ছাত্রীদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। শিক্ষকরা এই ডেটাবেজ থেকে যেকোনো ছাত্রের তথ্য দ্রুত খুঁজে বের করতে চান। ডেটাবেজে তথ্য খুঁজে বের করার জন্য কুয়েরি ব্যবহার করা হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটাবেজ কী?",
+          "solution": "ডেটাবেজ হলো পরস্পর সম্পর্কযুক্ত এক বা একাধিক ডেটা টেবিল বা ফাইলের সমষ্টি, যেখানে কোনো প্রতিষ্ঠানের সমগ্র ডেটা সংরক্ষিত থাকে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটাবেজে কুয়েরি কীভাবে কাজ করে তা ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজে কুয়েরি হলো শর্তের ভিত্তিতে ডেটাবেজ থেকে নির্দিষ্ট তথ্য খুঁজে বের করার পদ্ধতি। ব্যবহারকারী শর্ত দিলে DBMS ডেটাবেজ স্ক্যান করে শুধু সেই শর্ত পূরণকারী রেকর্ডগুলো প্রদর্শন করে। যেমন City=\"Dhaka\" শর্ত দিলে শুধু ঢাকার রেকর্ডগুলো দেখাবে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে RAM-এ ডেটা সংরক্ষণ করা যাবে কি? RAM ও ফাইলের মধ্যে পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে RAM-এ ডেটা সংরক্ষণ করা যাবে না, কারণ RAM-এ পাওয়ার বন্ধ হলে ডেটা হারিয়ে যায়। RAM হলো অস্থায়ী মেমোরি, যেখানে ডেটা সাময়িকভাবে থাকে। ফাইল হলো স্থায়ী সংরক্ষণের মাধ্যম, যেখানে ডেটা পাওয়ার বন্ধ হলেও থাকে। তাই স্কুলের ছাত্রদের স্থায়ী তথ্য সংরক্ষণের জন্য ফাইল বা ডেটাবেজ ব্যবহার করতে হবে, RAM ব্যবহার করা যাবে না।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজের জন্য রিলেশনাল ডেটাবেজ উপযুক্ত হবে কি? রিলেশনাল ও NoSQL ডেটাবেজের মধ্যে পার্থক্য বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজের জন্য রিলেশনাল ডেটাবেজ উপযুক্ত হবে, কারণ ছাত্রদের তথ্য টেবিল আকারে সাজানো যায় এবং রোল নম্বর দিয়ে রিলেশন তৈরি করা যায়। রিলেশনাল ডেটাবেজে ডেটা টেবিলে সংরক্ষিত হয় এবং নির্দিষ্ট স্কিমা থাকে। NoSQL ডেটাবেজে ডেটা টেবিল ছাড়াও সংরক্ষিত হয় এবং Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা যায়। স্কুলের ছাত্রদের তথ্য নির্দিষ্ট কাঠামোতে সাজাতে হয় বলে রিলেশনাল ডেটাবেজই উপযুক্ত।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজ হলো পরস্পর সম্পর্কযুক্ত এক বা একাধিক ডেটা টেবিল বা ফাইলের সমষ্টি, যেখানে কোনো প্রতিষ্ঠানের সমগ্র ডেটা সংরক্ষিত থাকে। খ. ডেটাবেজে কুয়েরি হলো শর্তের ভিত্তিতে ডেটাবেজ থেকে নির্দিষ্ট তথ্য খুঁজে বের করার পদ্ধতি। ব্যবহারকারী শর্ত দিলে DBMS ডেটাবেজ স্ক্যান করে শুধু সেই শর্ত পূরণকারী রেকর্ডগুলো প্রদর্শন করে। যেমন City=\"Dhaka\" শর্ত দিলে শুধু ঢাকার রেকর্ডগুলো দেখাবে। গ. উদ্দীপকের স্কুলের ডেটাবেজে RAM-এ ডেটা সংরক্ষণ করা যাবে না, কারণ RAM-এ পাওয়ার বন্ধ হলে ডেটা হারিয়ে যায়। RAM হলো অস্থায়ী মেমোরি, যেখানে ডেটা সাময়িকভাবে থাকে। ফাইল হলো স্থায়ী সংরক্ষণের মাধ্যম, যেখানে ডেটা পাওয়ার বন্ধ হলেও থাকে। তাই স্কুলের ছাত্রদের স্থায়ী তথ্য সংরক্ষণের জন্য ফাইল বা ডেটাবেজ ব্যবহার করতে হবে, RAM ব্যবহার করা যাবে না। ঘ. উদ্দীপকের স্কুলের ডেটাবেজের জন্য রিলেশনাল ডেটাবেজ উপযুক্ত হবে, কারণ ছাত্রদের তথ্য টেবিল আকারে সাজানো যায় এবং রোল নম্বর দিয়ে রিলেশন তৈরি করা যায়। রিলেশনাল ডেটাবেজে ডেটা টেবিলে সংরক্ষিত হয় এবং নির্দিষ্ট স্কিমা থাকে। NoSQL ডেটাবেজে ডেটা টেবিল ছাড়াও সংরক্ষিত হয় এবং Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা যায়। স্কুলের ছাত্রদের তথ্য নির্দিষ্ট কাঠামোতে সাজাতে হয় বলে রিলেশনাল ডেটাবেজই উপযুক্ত।",
+      "page": "NCTB printed p.218-221",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি ব্যাংকে গ্রাহকদের নাম, অ্যাকাউন্ট নম্বর, ঠিকানা ও ব্যালেন্স সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ব্যাংকের কর্মকর্তারা এই ডেটাবেজ থেকে গ্রাহকের তথ্য খুঁজে বের করেন এবং লেনদেন পরিচালনা করেন। ডেটাবেজ পরিচালনার জন্য DBMS ব্যবহৃত হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "DBMS কী?",
+          "solution": "DBMS (Database Management System) হলো পরস্পর সম্পর্কযুক্ত তথ্য একসেস, সংরক্ষণ, নিয়ন্ত্রণ ও পরিচালনার জন্য প্রয়োজনীয় সফটওয়্যার। এটি ব্যবহারকারী ও ডেটাবেজের মধ্যে সমন্বয়কারী হিসেবে কাজ করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "DBMS-এর প্রধান তিনটি কাজ ব্যাখ্যা করো।",
+          "solution": "DBMS-এর প্রধান তিনটি কাজ হলো: (১) ডেটাবেজ সৃজন—ডেটাবেজ তৈরি করা; (২) ডেটাবেজ ইন্টারোগেশন—ডেটা খুঁজে বের করা ও প্রশ্ন করা; (৩) ডেটাবেজ রক্ষণাবেক্ষণ—ডেটা আপডেট, ব্যাকআপ ও নিরাপত্তা রক্ষা করা।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ব্যাংকের ডেটাবেজে গ্রাহকদের তথ্য সংরক্ষণের জন্য কোন কোন ডেটা টাইপ ব্যবহার করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ব্যাংকের ডেটাবেজে গ্রাহকদের নাম ও ঠিকানার জন্য Text/Character ডেটা টাইপ ব্যবহার করা হবে, কারণ এগুলো বর্ণসংবলিত তথ্য। অ্যাকাউন্ট নম্বরের জন্য Number/Numeric ডেটা টাইপ ব্যবহার করা হবে, কারণ অ্যাকাউন্ট নম্বর সংখ্যাভিত্তিক তথ্য। ব্যালেন্সের জন্য Currency ডেটা টাইপ ব্যবহার করা হবে, কারণ ব্যালেন্স মুদ্রা জাতীয় তথ্য। সঠিক ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রি ও বিশ্লেষণ সহজ হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের ব্যাংকের ডেটাবেজে প্রাইমারি কী হিসেবে কোন ফিল্ডটি সবচেয়ে উপযুক্ত? বিশ্লেষণপূর্বক মতামত দাও।",
+          "solution": "উদ্দীপকের ব্যাংকের ডেটাবেজে প্রাইমারি কী হিসেবে গ্রাহকদের নাম ব্যবহার করা যাবে না, কারণ একাধিক গ্রাহকের একই নাম হতে পারে। ঠিকানাও প্রাইমারি কী হতে পারে না, কারণ এটি ইউনিক নয়। অ্যাকাউন্ট নম্বর প্রতিটি গ্রাহককে ইউনিকভাবে শনাক্ত করে, তাই অ্যাকাউন্ট নম্বরকে প্রাইমারি কী হিসেবে ব্যবহার করা সবচেয়ে উপযুক্ত। এতে প্রতিটি গ্রাহকের রেকর্ড আলাদাভাবে শনাক্ত করা যাবে এবং লেনদেনের টেবিলের সাথে রিলেশন তৈরি করা সহজ হবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. DBMS (Database Management System) হলো পরস্পর সম্পর্কযুক্ত তথ্য একসেস, সংরক্ষণ, নিয়ন্ত্রণ ও পরিচালনার জন্য প্রয়োজনীয় সফটওয়্যার। এটি ব্যবহারকারী ও ডেটাবেজের মধ্যে সমন্বয়কারী হিসেবে কাজ করে। খ. DBMS-এর প্রধান তিনটি কাজ হলো: (১) ডেটাবেজ সৃজন—ডেটাবেজ তৈরি করা; (২) ডেটাবেজ ইন্টারোগেশন—ডেটা খুঁজে বের করা ও প্রশ্ন করা; (৩) ডেটাবেজ রক্ষণাবেক্ষণ—ডেটা আপডেট, ব্যাকআপ ও নিরাপত্তা রক্ষা করা। গ. উদ্দীপকের ব্যাংকের ডেটাবেজে গ্রাহকদের নাম ও ঠিকানার জন্য Text/Character ডেটা টাইপ ব্যবহার করা হবে, কারণ এগুলো বর্ণসংবলিত তথ্য। অ্যাকাউন্ট নম্বরের জন্য Number/Numeric ডেটা টাইপ ব্যবহার করা হবে, কারণ অ্যাকাউন্ট নম্বর সংখ্যাভিত্তিক তথ্য। ব্যালেন্সের জন্য Currency ডেটা টাইপ ব্যবহার করা হবে, কারণ ব্যালেন্স মুদ্রা জাতীয় তথ্য। সঠিক ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রি ও বিশ্লেষণ সহজ হয়। ঘ. উদ্দীপকের ব্যাংকের ডেটাবেজে প্রাইমারি কী হিসেবে গ্রাহকদের নাম ব্যবহার করা যাবে না, কারণ একাধিক গ্রাহকের একই নাম হতে পারে। ঠিকানাও প্রাইমারি কী হতে পারে না, কারণ এটি ইউনিক নয়। অ্যাকাউন্ট নম্বর প্রতিটি গ্রাহককে ইউনিকভাবে শনাক্ত করে, তাই অ্যাকাউন্ট নম্বরকে প্রাইমারি কী হিসেবে ব্যবহার করা সবচেয়ে উপযুক্ত। এতে প্রতিটি গ্রাহকের রেকর্ড আলাদাভাবে শনাক্ত করা যাবে এবং লেনদেনের টেবিলের সাথে রিলেশন তৈরি করা সহজ হবে।",
+      "page": "Mahbubur Rahman printed p.342-346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি হাসপাতালে রোগীদের নাম, রোগী আইডি, বয়স ও ঠিকানা সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডাক্তাররা এই ডেটাবেজ থেকে রোগীর তথ্য দেখে চিকিৎসা দেন। ডেটাবেজে প্রতিটি রোগীকে আলাদাভাবে চিহ্নিত করা হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "রেকর্ড ও ফিল্ড কী?",
+          "solution": "অনেকগুলো ফিল্ডের সমন্বয়ে গঠিত হয় একটি রেকর্ড। সাধারণত পুরো একটি রো বা সারিকেই রেকর্ড হিসেবে বিবেচনা করা হয়। রেকর্ডের ক্ষুদ্রতম অংশ হলো ফিল্ড। রেকর্ডের প্রতিটি উপাদান যেমন—নাম, ঠিকানা, টেলিফোন নম্বর ইত্যাদিকে এক একটি ফিল্ড বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Entity, Attribute ও Value-এর মধ্যে সম্পর্ক ব্যাখ্যা করো।",
+          "solution": "Entity হলো সত্তা যা দিয়ে অবজেক্টকে চিহ্নিত করা যায়। কোনো ডেটা টেবিলকে চিহ্নিত করার জন্য টেবিলের জন্য যে নাম ব্যবহার করা হয় তাকে Entity বলা হয়। একটি Entity-র বৈশিষ্ট্য প্রকাশের জন্য যে সমস্ত ফিল্ড বা আইটেম ব্যবহার করা হয় তাকে Attribute বলা হয়। প্রত্যেকটি Attribute-এর যে মান থাকে তাকে Value বলা হয়। যেমন—নাম Attribute-এর Value হচ্ছে জাফর আহমেদ।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের হাসপাতালের ডেটাবেজে E-R Model কীভাবে ব্যবহার করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের হাসপাতালের ডেটাবেজে E-R Model ব্যবহার করে রোগী, ডাক্তার ও চিকিৎসার মধ্যে সম্পর্ক প্রকাশ করা হবে। E-R Model হলো একটি Entity Set-এর বিভিন্ন Entity-গুলোর মধ্যে সম্পর্ক প্রকাশের পদ্ধতি। এখানে রোগী একটি Entity, রোগী আইডি Attribute এবং প্রতিটি রোগীর আইডি Value। ডাক্তার ও রোগীর মধ্যে চিকিৎসা সম্পর্ক E-R Model দিয়ে দেখানো যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের হাসপাতালের ডেটাবেজে কী কী কী (Key) ব্যবহার করা যেতে পারে? বিশ্লেষণপূর্বক মতামত দাও।",
+          "solution": "উদ্দীপকের হাসপাতালের ডেটাবেজে রোগী আইডিকে প্রাইমারি কী হিসেবে ব্যবহার করা যেতে পারে, কারণ এটি প্রতিটি রোগীকে ইউনিকভাবে শনাক্ত করে। রোগীর নাম, বয়স ও ঠিকানা প্রাইমারি কী হতে পারে না, কারণ এগুলো ইউনিক নয়। চিকিৎসার টেবিলে রোগী আইডিকে ফরেন কী হিসেবে ব্যবহার করে রোগীর টেবিলের সাথে রিলেশন তৈরি করা যাবে। এভাবে প্রাইমারি কী ও ফরেন কী ব্যবহার করে ডেটাবেজের রেকর্ডগুলোকে সঠিকভাবে শনাক্ত ও সম্পর্কযুক্ত করা যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. অনেকগুলো ফিল্ডের সমন্বয়ে গঠিত হয় একটি রেকর্ড। সাধারণত পুরো একটি রো বা সারিকেই রেকর্ড হিসেবে বিবেচনা করা হয়। রেকর্ডের ক্ষুদ্রতম অংশ হলো ফিল্ড। রেকর্ডের প্রতিটি উপাদান যেমন—নাম, ঠিকানা, টেলিফোন নম্বর ইত্যাদিকে এক একটি ফিল্ড বলা হয়। খ. Entity হলো সত্তা যা দিয়ে অবজেক্টকে চিহ্নিত করা যায়। কোনো ডেটা টেবিলকে চিহ্নিত করার জন্য টেবিলের জন্য যে নাম ব্যবহার করা হয় তাকে Entity বলা হয়। একটি Entity-র বৈশিষ্ট্য প্রকাশের জন্য যে সমস্ত ফিল্ড বা আইটেম ব্যবহার করা হয় তাকে Attribute বলা হয়। প্রত্যেকটি Attribute-এর যে মান থাকে তাকে Value বলা হয়। যেমন—নাম Attribute-এর Value হচ্ছে জাফর আহমেদ। গ. উদ্দীপকের হাসপাতালের ডেটাবেজে E-R Model ব্যবহার করে রোগী, ডাক্তার ও চিকিৎসার মধ্যে সম্পর্ক প্রকাশ করা হবে। E-R Model হলো একটি Entity Set-এর বিভিন্ন Entity-গুলোর মধ্যে সম্পর্ক প্রকাশের পদ্ধতি। এখানে রোগী একটি Entity, রোগী আইডি Attribute এবং প্রতিটি রোগীর আইডি Value। ডাক্তার ও রোগীর মধ্যে চিকিৎসা সম্পর্ক E-R Model দিয়ে দেখানো যাবে। ঘ. উদ্দীপকের হাসপাতালের ডেটাবেজে রোগী আইডিকে প্রাইমারি কী হিসেবে ব্যবহার করা যেতে পারে, কারণ এটি প্রতিটি রোগীকে ইউনিকভাবে শনাক্ত করে। রোগীর নাম, বয়স ও ঠিকানা প্রাইমারি কী হতে পারে না, কারণ এগুলো ইউনিক নয়। চিকিৎসার টেবিলে রোগী আইডিকে ফরেন কী হিসেবে ব্যবহার করে রোগীর টেবিলের সাথে রিলেশন তৈরি করা যাবে। এভাবে প্রাইমারি কী ও ফরেন কী ব্যবহার করে ডেটাবেজের রেকর্ডগুলোকে সঠিকভাবে শনাক্ত ও সম্পর্কযুক্ত করা যাবে।",
+      "page": "Mahbubur Rahman printed p.338-342",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি লাইব্রেরিতে বইয়ের নাম, লেখকের নাম, আইএসবিএন ও প্রকাশ সাল সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। লাইব্রেরিয়ান এই ডেটাবেজ থেকে যেকোনো বই খুঁজে বের করেন। প্রতিটি বইকে আলাদাভাবে চিহ্নিত করতে হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "প্রাইমারি কী কী?",
+          "solution": "যে ফিল্ডের উপর ভিত্তি করে ডেটাবেজের অপরাপর ফিল্ডের তথ্যাবলি শনাক্ত করা হয় তাকে কী বা কী-ফিল্ড বলা হয়। ডেটা টেবিলের যে ফিল্ডের মানসমূহ দ্বারা একটি রেকর্ডকে অন্যান্য রেকর্ড থেকে সম্পূর্ণরূপে আলাদা করা যায় সেই ফিল্ডকে প্রাইমারি কী বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "কম্পোজিট প্রাইমারি কী ব্যাখ্যা করো।",
+          "solution": "অনেক ক্ষেত্রে কোনো টেবিলে সুনির্দিষ্ট কোনো প্রাইমারি কী নাও থাকতে পারে। তখন দুই বা ততোধিক অ্যাট্রিবিউট বা কী সমষ্টি সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করতে পারে, তাদেরকে বলা হয় কম্পোজিট প্রাইমারি কী। যেমন—রোল নম্বর ও শ্রেণি মিলে কম্পোজিট প্রাইমারি কী হতে পারে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের লাইব্রেরির ডেটাবেজে ফরেন কী কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের লাইব্রেরির ডেটাবেজে আইএসবিএনকে প্রাইমারি কী হিসেবে ব্যবহার করা হবে। ঋণের টেবিলে আইএসবিএনকে ফরেন কী হিসেবে ব্যবহার করা হবে। যদি ডেটাবেজের একটি টেবিলের প্রাইমারি কী অন্য ডেটা টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়, তাহলে প্রথম ফাইলের প্রাইমারি কী-কে দ্বিতীয় ফাইলের জন্য ফরেন কী বলা হয়। এভাবে ফরেন কী দিয়ে বইয়ের টেবিল ও ঋণের টেবিলের মধ্যে রিলেশন তৈরি করা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের লাইব্রেরির ডেটাবেজে প্রাইমারি কী ও ফরেন কী-এর মধ্যে পার্থক্য বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের লাইব্রেরির ডেটাবেজে প্রাইমারি কী হলো আইএসবিএন, যা প্রতিটি বইকে ইউনিকভাবে শনাক্ত করে এবং কোনো টেবিলে একটিই থাকে। ফরেন কী হলো ঋণের টেবিলে ব্যবহৃত আইএসবিএন, যা বইয়ের টেবিলের সাথে রিলেশন তৈরি করে। প্রাইমারি কী কোনো টেবিলে ডুপ্লিকেট হয় না, কিন্তু ফরেন কী একাধিকবার আসতে পারে। প্রাইমারি কী দিয়ে রেকর্ড শনাক্ত করা হয়, ফরেন কী দিয়ে টেবিলগুলোর মধ্যে সম্পর্ক স্থাপন করা হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. যে ফিল্ডের উপর ভিত্তি করে ডেটাবেজের অপরাপর ফিল্ডের তথ্যাবলি শনাক্ত করা হয় তাকে কী বা কী-ফিল্ড বলা হয়। ডেটা টেবিলের যে ফিল্ডের মানসমূহ দ্বারা একটি রেকর্ডকে অন্যান্য রেকর্ড থেকে সম্পূর্ণরূপে আলাদা করা যায় সেই ফিল্ডকে প্রাইমারি কী বলা হয়। খ. অনেক ক্ষেত্রে কোনো টেবিলে সুনির্দিষ্ট কোনো প্রাইমারি কী নাও থাকতে পারে। তখন দুই বা ততোধিক অ্যাট্রিবিউট বা কী সমষ্টি সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করতে পারে, তাদেরকে বলা হয় কম্পোজিট প্রাইমারি কী। যেমন—রোল নম্বর ও শ্রেণি মিলে কম্পোজিট প্রাইমারি কী হতে পারে। গ. উদ্দীপকের লাইব্রেরির ডেটাবেজে আইএসবিএনকে প্রাইমারি কী হিসেবে ব্যবহার করা হবে। ঋণের টেবিলে আইএসবিএনকে ফরেন কী হিসেবে ব্যবহার করা হবে। যদি ডেটাবেজের একটি টেবিলের প্রাইমারি কী অন্য ডেটা টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়, তাহলে প্রথম ফাইলের প্রাইমারি কী-কে দ্বিতীয় ফাইলের জন্য ফরেন কী বলা হয়। এভাবে ফরেন কী দিয়ে বইয়ের টেবিল ও ঋণের টেবিলের মধ্যে রিলেশন তৈরি করা যাবে। ঘ. উদ্দীপকের লাইব্রেরির ডেটাবেজে প্রাইমারি কী হলো আইএসবিএন, যা প্রতিটি বইকে ইউনিকভাবে শনাক্ত করে এবং কোনো টেবিলে একটিই থাকে। ফরেন কী হলো ঋণের টেবিলে ব্যবহৃত আইএসবিএন, যা বইয়ের টেবিলের সাথে রিলেশন তৈরি করে। প্রাইমারি কী কোনো টেবিলে ডুপ্লিকেট হয় না, কিন্তু ফরেন কী একাধিকবার আসতে পারে। প্রাইমারি কী দিয়ে রেকর্ড শনাক্ত করা হয়, ফরেন কী দিয়ে টেবিলগুলোর মধ্যে সম্পর্ক স্থাপন করা হয়।",
+      "page": "Mahbubur Rahman printed p.341-342",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি দোকানে পণ্যের নাম, পণ্য কোড, দাম ও স্টক সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। দোকানদার এই ডেটাবেজ থেকে পণ্যের তথ্য খুঁজে বের করেন এবং বিক্রি পরিচালনা করেন। ডেটাবেজ পরিচালনার জন্য RDBMS ব্যবহৃত হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "RDBMS কী?",
+          "solution": "ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। রিলেশন করা ডেটা টেবিলের সমন্বয়ে গঠিত ডেটাবেজকে রিলেশনাল ডেটাবেজ বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "RDBMS-এর বৈশিষ্ট্যগুলো ব্যাখ্যা করো।",
+          "solution": "RDBMS-এর বৈশিষ্ট্যগুলো হলো: সহজে টেবিল তৈরি করে ডেটা এন্ট্রি করা যায়; একাধিক ডেটা টেবিলের মধ্যে রিলেশন তৈরি করা যায় এবং ডেটা আদান-প্রদান করা যায়; অসংখ্য ডেটার মধ্য থেকে প্রয়োজনীয় ডেটাকে খুঁজে বের করা যায়; ডেটা ভ্যালিডেশনের সাহায্যে ডেটা এন্ট্রি নিয়ন্ত্রণ করা যায়; সংখ্যাবাচক ডেটাসমূহে সুষম গাণিতিক কাজ করা যায়; সহজে নানা ফরম্যাটের লেবেল, রিপোর্ট তৈরি করা যায়; একই ডেটা অনেক ব্যবহারকারী একই সাথে ব্যবহার করতে পারে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের দোকানের ডেটাবেজে DBMS-এর ধরন কোনটি সবচেয়ে উপযুক্ত হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের দোকানের ডেটাবেজে Client Server DBMS সবচেয়ে উপযুক্ত হবে, কারণ দোকানে একাধিক কম্পিউটার থেকে একই ডেটাবেজ ব্যবহার করা যাবে। DBMS-এর ধরনগুলো হলো Client Server, Distributed এবং Web enable। Client Server-এ সার্ভার কম্পিউটারে ডেটাবেজ থাকে এবং ক্লায়েন্ট কম্পিউটার থেকে ডেটা ব্যবহার করা যায়। Distributed-এ ডেটাবেজ বিভিন্ন স্থানে ছড়িয়ে থাকে। Web enable-এ ইন্টারনেটের মাধ্যমে ডেটা ব্যবহার করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের দোকানের ডেটাবেজে RDBMS কীভাবে ব্যবহার করা যাবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের দোকানের ডেটাবেজে RDBMS ব্যবহার করে পণ্যের টেবিল ও বিক্রির টেবিলের মধ্যে রিলেশন তৈরি করা যাবে। পণ্য কোডকে প্রাইমারি কী এবং বিক্রির টেবিলে পণ্য কোডকে ফরেন কী হিসেবে ব্যবহার করা যাবে। RDBMS ব্যবহার করে পণ্যের স্টক, দাম ও বিক্রির হিসাব সহজে পরিচালনা করা যাবে। কুয়েরি ব্যবহার করে নির্দিষ্ট পণ্যের তথ্য খুঁজে বের করা যাবে এবং রিপোর্ট তৈরি করে বিক্রির প্রতিবেদন পাওয়া যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। রিলেশন করা ডেটা টেবিলের সমন্বয়ে গঠিত ডেটাবেজকে রিলেশনাল ডেটাবেজ বলা হয়। খ. RDBMS-এর বৈশিষ্ট্যগুলো হলো: সহজে টেবিল তৈরি করে ডেটা এন্ট্রি করা যায়; একাধিক ডেটা টেবিলের মধ্যে রিলেশন তৈরি করা যায় এবং ডেটা আদান-প্রদান করা যায়; অসংখ্য ডেটার মধ্য থেকে প্রয়োজনীয় ডেটাকে খুঁজে বের করা যায়; ডেটা ভ্যালিডেশনের সাহায্যে ডেটা এন্ট্রি নিয়ন্ত্রণ করা যায়; সংখ্যাবাচক ডেটাসমূহে সুষম গাণিতিক কাজ করা যায়; সহজে নানা ফরম্যাটের লেবেল, রিপোর্ট তৈরি করা যায়; একই ডেটা অনেক ব্যবহারকারী একই সাথে ব্যবহার করতে পারে। গ. উদ্দীপকের দোকানের ডেটাবেজে Client Server DBMS সবচেয়ে উপযুক্ত হবে, কারণ দোকানে একাধিক কম্পিউটার থেকে একই ডেটাবেজ ব্যবহার করা যাবে। DBMS-এর ধরনগুলো হলো Client Server, Distributed এবং Web enable। Client Server-এ সার্ভার কম্পিউটারে ডেটাবেজ থাকে এবং ক্লায়েন্ট কম্পিউটার থেকে ডেটা ব্যবহার করা যায়। Distributed-এ ডেটাবেজ বিভিন্ন স্থানে ছড়িয়ে থাকে। Web enable-এ ইন্টারনেটের মাধ্যমে ডেটা ব্যবহার করা যায়। ঘ. উদ্দীপকের দোকানের ডেটাবেজে RDBMS ব্যবহার করে পণ্যের টেবিল ও বিক্রির টেবিলের মধ্যে রিলেশন তৈরি করা যাবে। পণ্য কোডকে প্রাইমারি কী এবং বিক্রির টেবিলে পণ্য কোডকে ফরেন কী হিসেবে ব্যবহার করা যাবে। RDBMS ব্যবহার করে পণ্যের স্টক, দাম ও বিক্রির হিসাব সহজে পরিচালনা করা যাবে। কুয়েরি ব্যবহার করে নির্দিষ্ট পণ্যের তথ্য খুঁজে বের করা যাবে এবং রিপোর্ট তৈরি করে বিক্রির প্রতিবেদন পাওয়া যাবে।",
+      "page": "Mahbubur Rahman printed p.343-344",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি বিশ্ববিদ্যালয়ে ছাত্র-ছাত্রীদের নাম, ছাত্র আইডি, বিভাগ ও সেমিস্টার সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। প্রশাসন এই ডেটাবেজ থেকে ছাত্রদের তথ্য পরিচালনা করে। ডেটাবেজ পরিচালনার জন্য DBMS-এর ১১টি ফাংশন ব্যবহৃত হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "DBMS-এর ১১টি ফাংশন কী?",
+          "solution": "DBMS-এর ১১টি ফাংশন হলো: ডেটাবেজ তৈরি করা, ডেটা এন্ট্রি করা এবং ডেটা সংরক্ষণ করা; ডেটার ভুল অনুসন্ধান ও সংশোধন করা; অপ্রয়োজনীয় ডেটা/রেকর্ড ডিলিট করা; নির্দিষ্ট ডেটা/রেকর্ড সার্চিং বা অনুসন্ধান এবং কুয়েরি করা; রিপোর্ট তৈরি ও প্রিন্ট করা; ডেটাবেজকে কোনো ফিল্ডের ভিত্তিতে সাজানো; ডেটা ডুপ্লিকেশন কমানো; প্রয়োজনে সম্পূর্ণ ডেটাবেজ বা ডেটাবেজের অংশবিশেষ প্রিন্ট করা; ডেটাবেজ আপডেট করা; ডেটার নিরাপত্তা বিধান করা এবং ব্যবহারকারী নিয়ন্ত্রণ করা; ডেটার ব্যাকআপ ও রিকভারি করা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "RDBMS-এর ১৩টি বৈশিষ্ট্য ব্যাখ্যা করো।",
+          "solution": "RDBMS-এর ১৩টি বৈশিষ্ট্য হলো: সহজে টেবিল তৈরি করে ডেটা এন্ট্রি করা যায়; একাধিক ডেটা টেবিলের মধ্যে রিলেশন তৈরি করা যায় এবং ডেটা আদান-প্রদান করা যায়; অসংখ্য ডেটার মধ্য থেকে প্রয়োজনীয় ডেটাকে খুঁজে বের করা যায়; ডেটা ভ্যালিডেশনের সাহায্যে ডেটা এন্ট্রি নিয়ন্ত্রণ করা যায়; সংখ্যাবাচক ডেটাসমূহে সুষম গাণিতিক কাজ করা যায়; সহজে নানা ফরম্যাটের লেবেল, রিপোর্ট তৈরি করা যায়; প্রয়োজনীয় তথ্য নিয়ে লেবেল তৈরি করা যায় এবং ছাপানো যায়; এন্ট্রি ফর্ম তৈরি করা যায়; একই ডেটা অনেক ব্যবহারকারী একই সাথে ব্যবহার করতে পারে; Executable (exe) ফাইল তৈরি করা যায়; আকর্ষণীয় ডেটা এন্ট্রি ফর্ম তৈরি করা যায় এবং ডেটা ব্যবহার করে চার্ট তৈরি করা যায়; অন্যান্য প্রোগ্রাম থেকে ডেটা ব্যবহার করা যায়; এপ্লিকেশন সফটওয়্যার/প্রোগ্রাম তৈরি করা যায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজ MS Access দিয়ে তৈরি করা যাবে কি? ডেটাবেজ তৈরির পদ্ধতি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজ MS Access দিয়ে তৈরি করা যাবে। MS Access-এ ডেটাবেজ তৈরির পদ্ধতি তিনটি। ডেটাবেজ তৈরি করার পর টেবিল, কুয়েরি, ফর্ম, রিপোর্ট, ম্যাক্রো ও মডিউল তৈরি করা যায়। ডেটাবেজ উইন্ডোতে Tables, Queries, Forms, Page, Macro ও Module ট্যাব থাকে। Tables ট্যাবে টেবিলগুলো সংরক্ষিত থাকে, Queries ট্যাবে কুয়েরিগুলো থাকে, Forms ট্যাবে ফর্ম ও রিপোর্ট থাকে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজে ডেটাবেজ উইন্ডোর বিভিন্ন ট্যাব কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজে Tables ট্যাব থেকে ছাত্রদের টেবিল তৈরি ও সংশোধন করা যাবে। Queries ট্যাব থেকে ছাত্রদের তথ্য খুঁজে বের করার কুয়েরি তৈরি করা যাবে। Forms ট্যাব থেকে ছাত্রদের তথ্য এন্ট্রির ফর্ম ও রিপোর্ট তৈরি করা যাবে। Page ট্যাব থেকে ইন্টারনেটে ডেটা দেখার পেজ তৈরি করা যাবে। Macro ট্যাব থেকে ছোট প্রোগ্রাম তৈরি করা যাবে। Module ট্যাব থেকে প্রোগ্রামিং কোড লেখা যাবে। এভাবে ডেটাবেজ উইন্ডোর বিভিন্ন ট্যাব ব্যবহার করে বিশ্ববিদ্যালয়ের ডেটাবেজ পরিচালনা করা যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. DBMS-এর ১১টি ফাংশন হলো: ডেটাবেজ তৈরি করা, ডেটা এন্ট্রি করা এবং ডেটা সংরক্ষণ করা; ডেটার ভুল অনুসন্ধান ও সংশোধন করা; অপ্রয়োজনীয় ডেটা/রেকর্ড ডিলিট করা; নির্দিষ্ট ডেটা/রেকর্ড সার্চিং বা অনুসন্ধান এবং কুয়েরি করা; রিপোর্ট তৈরি ও প্রিন্ট করা; ডেটাবেজকে কোনো ফিল্ডের ভিত্তিতে সাজানো; ডেটা ডুপ্লিকেশন কমানো; প্রয়োজনে সম্পূর্ণ ডেটাবেজ বা ডেটাবেজের অংশবিশেষ প্রিন্ট করা; ডেটাবেজ আপডেট করা; ডেটার নিরাপত্তা বিধান করা এবং ব্যবহারকারী নিয়ন্ত্রণ করা; ডেটার ব্যাকআপ ও রিকভারি করা। খ. RDBMS-এর ১৩টি বৈশিষ্ট্য হলো: সহজে টেবিল তৈরি করে ডেটা এন্ট্রি করা যায়; একাধিক ডেটা টেবিলের মধ্যে রিলেশন তৈরি করা যায় এবং ডেটা আদান-প্রদান করা যায়; অসংখ্য ডেটার মধ্য থেকে প্রয়োজনীয় ডেটাকে খুঁজে বের করা যায়; ডেটা ভ্যালিডেশনের সাহায্যে ডেটা এন্ট্রি নিয়ন্ত্রণ করা যায়; সংখ্যাবাচক ডেটাসমূহে সুষম গাণিতিক কাজ করা যায়; সহজে নানা ফরম্যাটের লেবেল, রিপোর্ট তৈরি করা যায়; প্রয়োজনীয় তথ্য নিয়ে লেবেল তৈরি করা যায় এবং ছাপানো যায়; এন্ট্রি ফর্ম তৈরি করা যায়; একই ডেটা অনেক ব্যবহারকারী একই সাথে ব্যবহার করতে পারে; Executable (exe) ফাইল তৈরি করা যায়; আকর্ষণীয় ডেটা এন্ট্রি ফর্ম তৈরি করা যায় এবং ডেটা ব্যবহার করে চার্ট তৈরি করা যায়; অন্যান্য প্রোগ্রাম থেকে ডেটা ব্যবহার করা যায়; এপ্লিকেশন সফটওয়্যার/প্রোগ্রাম তৈরি করা যায়। গ. উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজ MS Access দিয়ে তৈরি করা যাবে। MS Access-এ ডেটাবেজ তৈরির পদ্ধতি তিনটি। ডেটাবেজ তৈরি করার পর টেবিল, কুয়েরি, ফর্ম, রিপোর্ট, ম্যাক্রো ও মডিউল তৈরি করা যায়। ডেটাবেজ উইন্ডোতে Tables, Queries, Forms, Page, Macro ও Module ট্যাব থাকে। Tables ট্যাবে টেবিলগুলো সংরক্ষিত থাকে, Queries ট্যাবে কুয়েরিগুলো থাকে, Forms ট্যাবে ফর্ম ও রিপোর্ট থাকে। ঘ. উদ্দীপকের বিশ্ববিদ্যালয়ের ডেটাবেজে Tables ট্যাব থেকে ছাত্রদের টেবিল তৈরি ও সংশোধন করা যাবে। Queries ট্যাব থেকে ছাত্রদের তথ্য খুঁজে বের করার কুয়েরি তৈরি করা যাবে। Forms ট্যাব থেকে ছাত্রদের তথ্য এন্ট্রির ফর্ম ও রিপোর্ট তৈরি করা যাবে। Page ট্যাব থেকে ইন্টারনেটে ডেটা দেখার পেজ তৈরি করা যাবে। Macro ট্যাব থেকে ছোট প্রোগ্রাম তৈরি করা যাবে। Module ট্যাব থেকে প্রোগ্রামিং কোড লেখা যাবে। এভাবে ডেটাবেজ উইন্ডোর বিভিন্ন ট্যাব ব্যবহার করে বিশ্ববিদ্যালয়ের ডেটাবেজ পরিচালনা করা যাবে।",
+      "page": "Mahbubur Rahman printed p.343-345",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি রেলওয়ে কোম্পানিতে যাত্রীদের টিকিটিং ও ট্রেনের সিডিউলিংয়ের জন্য ডেটাবেজ তৈরি করা হয়েছে। যাত্রীরা এই ডেটাবেজ থেকে টিকিট বুক করেন। ডেটাবেজে যাত্রীর নাম, টিকিট নম্বর, ট্রেন নম্বর ও তারিখ সংরক্ষণ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটা টেবিল কী?",
+          "solution": "টেবিল হচ্ছে ডেটাবেজের একটি মৌলিক উপাদান। ইহা রো-এবং কলামের সমন্বয়ে গঠিত হয়। টেবিলে ডেটাবেজের তথ্যসমূহ ধারণ করে। টেবিলে এক বা একাধিক কলাম থাকে। প্রত্যেক টেবিলের একটি ইউনিক নাম থাকে এবং প্রতিটি কলামেরও আলাদা-আলাদা নাম এবং ডেটা টাইপ উল্লেখ করতে হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটা টাইপ কী এবং এর প্রকারভেদ ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজ ডিজাইন/তৈরি করার সময় একটি গুরুত্বপূর্ণ বিষয় হলো ডেটাবেজের ফিল্ডের টাইপ অর্থাৎ ফিল্ডে এন্ট্রিকৃত ডেটার ধরন। ডেটার টাইপ বিভিন্ন প্রকার হতে পারে: Text/Character, Number/Numeric, AutoNumber, Currency, Date/Time, Logical (Yes/No), Memo, OLE Object, Hyperlink, Lookup Wizard।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের রেলওয়ে ডেটাবেজে ডেটা প্রপার্টিজ কীভাবে ব্যবহার করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের রেলওয়ে ডেটাবেজে Field Size প্রপার্টিজ দিয়ে যাত্রীর নামে কতগুলো ক্যারেক্টার এন্ট্রি করা যাবে তা নির্ধারণ করা হবে। Format প্রপার্টিজ দিয়ে ডেটার ফরম্যাট নির্ধারণ করা হবে। Input Mask প্রপার্টিজ দিয়ে ডেটা এন্ট্রির ফরম্যাট নিয়ন্ত্রণ করা হবে। Caption প্রপার্টিজ দিয়ে ফিল্ডের ক্যাপশন দেওয়া হবে। Default Value প্রপার্টিজ দিয়ে ডিফল্ট মান দেওয়া হবে। Validation Rule প্রপার্টিজ দিয়ে ডেটা এন্ট্রি নিয়ন্ত্রণ করা হবে। Required প্রপার্টিজ দিয়ে ফিল্ডটি বাধ্যতামূলক করা হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের রেলওয়ে ডেটাবেজে ডেটা ইনসার্ট করার ধাপগুলো বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের রেলওয়ে ডেটাবেজে ডেটা ইনসার্ট করার ধাপ চারটি। প্রথমে ডেটাবেজ খুলতে হবে। তারপর টেবিল খুলতে হবে। তারপর ফিল্ডে ডেটা এন্ট্রি করতে হবে। শেষে ডেটা সেভ করতে হবে। যাত্রীর নাম, টিকিট নম্বর, ট্রেন নম্বর ও তারিখ সঠিকভাবে এন্ট্রি করে সেভ করলে ডেটা ডেটাবেজে সংরক্ষিত হবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. টেবিল হচ্ছে ডেটাবেজের একটি মৌলিক উপাদান। ইহা রো-এবং কলামের সমন্বয়ে গঠিত হয়। টেবিলে ডেটাবেজের তথ্যসমূহ ধারণ করে। টেবিলে এক বা একাধিক কলাম থাকে। প্রত্যেক টেবিলের একটি ইউনিক নাম থাকে এবং প্রতিটি কলামেরও আলাদা-আলাদা নাম এবং ডেটা টাইপ উল্লেখ করতে হয়। খ. ডেটাবেজ ডিজাইন/তৈরি করার সময় একটি গুরুত্বপূর্ণ বিষয় হলো ডেটাবেজের ফিল্ডের টাইপ অর্থাৎ ফিল্ডে এন্ট্রিকৃত ডেটার ধরন। ডেটার টাইপ বিভিন্ন প্রকার হতে পারে: Text/Character, Number/Numeric, AutoNumber, Currency, Date/Time, Logical (Yes/No), Memo, OLE Object, Hyperlink, Lookup Wizard। গ. উদ্দীপকের রেলওয়ে ডেটাবেজে Field Size প্রপার্টিজ দিয়ে যাত্রীর নামে কতগুলো ক্যারেক্টার এন্ট্রি করা যাবে তা নির্ধারণ করা হবে। Format প্রপার্টিজ দিয়ে ডেটার ফরম্যাট নির্ধারণ করা হবে। Input Mask প্রপার্টিজ দিয়ে ডেটা এন্ট্রির ফরম্যাট নিয়ন্ত্রণ করা হবে। Caption প্রপার্টিজ দিয়ে ফিল্ডের ক্যাপশন দেওয়া হবে। Default Value প্রপার্টিজ দিয়ে ডিফল্ট মান দেওয়া হবে। Validation Rule প্রপার্টিজ দিয়ে ডেটা এন্ট্রি নিয়ন্ত্রণ করা হবে। Required প্রপার্টিজ দিয়ে ফিল্ডটি বাধ্যতামূলক করা হবে। ঘ. উদ্দীপকের রেলওয়ে ডেটাবেজে ডেটা ইনসার্ট করার ধাপ চারটি। প্রথমে ডেটাবেজ খুলতে হবে। তারপর টেবিল খুলতে হবে। তারপর ফিল্ডে ডেটা এন্ট্রি করতে হবে। শেষে ডেটা সেভ করতে হবে। যাত্রীর নাম, টিকিট নম্বর, ট্রেন নম্বর ও তারিখ সঠিকভাবে এন্ট্রি করে সেভ করলে ডেটা ডেটাবেজে সংরক্ষিত হবে।",
+      "page": "Mahbubur Rahman printed p.345-348",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি এয়ারলাইনে যাত্রীদের টিকিটিং ও ফ্লাইটের সিডিউলিংয়ের জন্য ডেটাবেজ তৈরি করা হয়েছে। যাত্রীরা এই ডেটাবেজ থেকে টিকিট বুক করেন। ডেটাবেজে যাত্রীর নাম, টিকিট নম্বর, ফ্লাইট নম্বর ও তারিখ সংরক্ষণ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "কুয়েরি কী?",
+          "solution": "শর্তসাপেক্ষে ডেটাবেজ থেকে কোনো ডেটা খুঁজে বের করাকে কুয়েরি বলা হয়। যেমন—City=\"Dhaka\" শর্ত দিলে শুধু ঢাকার রেকর্ডগুলো দেখাবে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "SQL ব্যাখ্যা করো।",
+          "solution": "SQL (Structured Query Language) হলো ডেটাবেজ থেকে ডেটা খোঁজার ভাষা। SQL-এ SELECT, FROM, WHERE কীওয়ার্ড ব্যবহার করে ডেটা খোঁজা হয়। SELECT দিয়ে কোন ফিল্ডগুলো দেখাবে তা বলা হয়, FROM দিয়ে কোন টেবিল থেকে দেখাবে তা বলা হয়, WHERE দিয়ে শর্ত দেওয়া হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের এয়ারলাইনের ডেটাবেজে সর্টিং কীভাবে ব্যবহার করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের এয়ারলাইনের ডেটাবেজে সর্টিং ব্যবহার করে যাত্রীদের তথ্য সাজানো যাবে। Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো। যেমন—বেতনের ভিত্তিতে সর্টিং করা যায়। Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের এয়ারলাইনের ডেটাবেজে ইনডেক্সিং কীভাবে ব্যবহার করা হবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের এয়ারলাইনের ডেটাবেজে ইনডেক্সিং ব্যবহার করে যাত্রীদের তথ্য দ্রুত খোঁজা যাবে। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে। সর্টিং ও ইনডেক্সিং-এর মধ্যে পার্থক্য হলো সর্টিং ডেটা সাজায়, ইনডেক্সিং ডেটা খোঁজার জন্য ইনডেক্স তৈরি করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. শর্তসাপেক্ষে ডেটাবেজ থেকে কোনো ডেটা খুঁজে বের করাকে কুয়েরি বলা হয়। যেমন—City=\"Dhaka\" শর্ত দিলে শুধু ঢাকার রেকর্ডগুলো দেখাবে। খ. SQL (Structured Query Language) হলো ডেটাবেজ থেকে ডেটা খোঁজার ভাষা। SQL-এ SELECT, FROM, WHERE কীওয়ার্ড ব্যবহার করে ডেটা খোঁজা হয়। SELECT দিয়ে কোন ফিল্ডগুলো দেখাবে তা বলা হয়, FROM দিয়ে কোন টেবিল থেকে দেখাবে তা বলা হয়, WHERE দিয়ে শর্ত দেওয়া হয়। গ. উদ্দীপকের এয়ারলাইনের ডেটাবেজে সর্টিং ব্যবহার করে যাত্রীদের তথ্য সাজানো যাবে। Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো। যেমন—বেতনের ভিত্তিতে সর্টিং করা যায়। Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না। ঘ. উদ্দীপকের এয়ারলাইনের ডেটাবেজে ইনডেক্সিং ব্যবহার করে যাত্রীদের তথ্য দ্রুত খোঁজা যাবে। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে। সর্টিং ও ইনডেক্সিং-এর মধ্যে পার্থক্য হলো সর্টিং ডেটা সাজায়, ইনডেক্সিং ডেটা খোঁজার জন্য ইনডেক্স তৈরি করে।",
+      "page": "Mahbubur Rahman printed p.348-349",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি সরকারি অফিসে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। অফিসের কর্মকর্তারা এই ডেটাবেজ থেকে কর্মচারীদের তথ্য খুঁজে বের করেন।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটাবেজ রিলেশন কী?",
+          "solution": "ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। ডেটাবেজ রিলেশনের শর্ত তিনটি।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটাবেজ রিলেশনের প্রকারভেদ ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজ রিলেশনের প্রকারভেদ চারটি: One-to-One, One-to-Many, Many-to-One, Many-to-Many। One-to-One-এ একটি উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়, যেমন Emp_ID। One-to-Many-তে একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়, যেমন Supplier/Orders। Many-to-One-এ অনেকগুলো উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়, যেমন Phone/Officer। Many-to-Many-তে অনেকগুলো উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়, যেখানে Junction টেবিল (Order/Product/Order Details) ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিলেশন তৈরি করার ধাপগুলো ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিলেশন তৈরি করার জন্য প্রথমে Show Table থেকে টেবিল যোগ করতে হবে। তারপর Employee1 ও Employee2 টেবিলের Employee Number ফিল্ডের উপর ড্র্যাগ করে রিলেশন তৈরি করতে হবে। তারপর Create বাটনে ক্লিক করে One-To-One রিলেশন তৈরি করতে হবে। শেষে সেভ করতে হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিপোর্ট কীভাবে তৈরি করা হবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিপোর্ট তৈরি করা যাবে। রিপোর্ট হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা। Formatted Report-এ ৬টি সেকশন থাকে। Auto Report তৈরির ধাপ ৭টি। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। ডেটাবেজ রিলেশনের শর্ত তিনটি। খ. ডেটাবেজ রিলেশনের প্রকারভেদ চারটি: One-to-One, One-to-Many, Many-to-One, Many-to-Many। One-to-One-এ একটি উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়, যেমন Emp_ID। One-to-Many-তে একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়, যেমন Supplier/Orders। Many-to-One-এ অনেকগুলো উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়, যেমন Phone/Officer। Many-to-Many-তে অনেকগুলো উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়, যেখানে Junction টেবিল (Order/Product/Order Details) ব্যবহার করা হয়। গ. উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিলেশন তৈরি করার জন্য প্রথমে Show Table থেকে টেবিল যোগ করতে হবে। তারপর Employee1 ও Employee2 টেবিলের Employee Number ফিল্ডের উপর ড্র্যাগ করে রিলেশন তৈরি করতে হবে। তারপর Create বাটনে ক্লিক করে One-To-One রিলেশন তৈরি করতে হবে। শেষে সেভ করতে হবে। ঘ. উদ্দীপকের সরকারি অফিসের ডেটাবেজে রিপোর্ট তৈরি করা যাবে। রিপোর্ট হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা। Formatted Report-এ ৬টি সেকশন থাকে। Auto Report তৈরির ধাপ ৭টি। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়।",
+      "page": "Mahbubur Rahman printed p.349-352",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি ই-কমার্স কোম্পানিতে গ্রাহকদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে গ্রাহকদের নাম, গ্রাহক আইডি, ঠিকানা ও অর্ডার সংরক্ষণ করা হয়েছে। কোম্পানি এই ডেটাবেজ থেকে গ্রাহকদের তথ্য পরিচালনা করে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটাবেজের প্রয়োগক্ষেত্রগুলো কী?",
+          "solution": "ডেটাবেজের প্রয়োগক্ষেত্র ৯টি: ব্যাংক ও বীমা, হাসপাতাল, রেলওয়ে, এয়ারলাইন, শিক্ষা প্রতিষ্ঠান, বৃহৎ প্রতিষ্ঠান, ই-কমার্স ও ইলেকট্রনিক পেমেন্ট সিস্টেম, জনসংখ্যা তথ্য ও ভোটার তালিকা, সরকারি সংস্থা/মন্ত্রণালয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "কর্পোরেট ডেটাবেজ ব্যাখ্যা করো।",
+          "solution": "কর্পোরেট ডেটাবেজ হলো কোনো কোম্পানির প্রয়োজনীয় সকল তথ্য একটি সার্ভার কম্পিউটারে সংরক্ষণ করা। কর্পোরেট ডেটাবেজের ধরন সাতটি। কর্পোরেট ডেটাবেজে কর্মচারীদের তথ্য, গ্রাহকদের তথ্য, পণ্যের তথ্য, বিক্রির তথ্য, হিসাবের তথ্য সংরক্ষণ করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে সরকারি ডেটাবেজের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে সরকারি ডেটাবেজের ব্যবহার হলো জনসংখ্যা তথ্য সংরক্ষণ, ভোটার তালিকা তৈরি, সরকারি গুরুত্বপূর্ণ বিভিন্ন সংস্থা/মন্ত্রণালয়ের ডেটাবেজ। সরকারি ডেটাবেজে ২২টি ব্যবহার আছে। ই-কমার্স কোম্পানি সরকারি ডেটাবেজ থেকে গ্রাহকদের তথ্য যাচাই করতে পারে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে ডেটা সিকিউরিটি কীভাবে নিশ্চিত করা হবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে ডেটা সিকিউরিটি নিশ্চিত করার জন্য ৫টি নিয়ন্ত্রণ ব্যবহার করা হবে: গোপনীয়তা, সততা, প্রাপ্যতা সহ। ডেটা এনক্রিপ্ট করা হবে, পাসওয়ার্ড ও পারমিশন দেওয়া হবে, ব্যাকআপ রাখা হবে। এভাবে ডেটার গোপনীয়তা রক্ষা করা যাবে এবং অননুমোদিত ব্যবহার প্রতিরোধ করা যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজের প্রয়োগক্ষেত্র ৯টি: ব্যাংক ও বীমা, হাসপাতাল, রেলওয়ে, এয়ারলাইন, শিক্ষা প্রতিষ্ঠান, বৃহৎ প্রতিষ্ঠান, ই-কমার্স ও ইলেকট্রনিক পেমেন্ট সিস্টেম, জনসংখ্যা তথ্য ও ভোটার তালিকা, সরকারি সংস্থা/মন্ত্রণালয়। খ. কর্পোরেট ডেটাবেজ হলো কোনো কোম্পানির প্রয়োজনীয় সকল তথ্য একটি সার্ভার কম্পিউটারে সংরক্ষণ করা। কর্পোরেট ডেটাবেজের ধরন সাতটি। কর্পোরেট ডেটাবেজে কর্মচারীদের তথ্য, গ্রাহকদের তথ্য, পণ্যের তথ্য, বিক্রির তথ্য, হিসাবের তথ্য সংরক্ষণ করা হয়। গ. উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে সরকারি ডেটাবেজের ব্যবহার হলো জনসংখ্যা তথ্য সংরক্ষণ, ভোটার তালিকা তৈরি, সরকারি গুরুত্বপূর্ণ বিভিন্ন সংস্থা/মন্ত্রণালয়ের ডেটাবেজ। সরকারি ডেটাবেজে ২২টি ব্যবহার আছে। ই-কমার্স কোম্পানি সরকারি ডেটাবেজ থেকে গ্রাহকদের তথ্য যাচাই করতে পারে। ঘ. উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে ডেটা সিকিউরিটি নিশ্চিত করার জন্য ৫টি নিয়ন্ত্রণ ব্যবহার করা হবে: গোপনীয়তা, সততা, প্রাপ্যতা সহ। ডেটা এনক্রিপ্ট করা হবে, পাসওয়ার্ড ও পারমিশন দেওয়া হবে, ব্যাকআপ রাখা হবে। এভাবে ডেটার গোপনীয়তা রক্ষা করা যাবে এবং অননুমোদিত ব্যবহার প্রতিরোধ করা যাবে।",
+      "page": "Mahbubur Rahman printed p.353-354",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে SQLite ব্যবহার করে school.db নামে ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের তথ্য সংরক্ষণের জন্য CREATE TABLE দিয়ে টেবিল তৈরি করা হয়েছে। তারপর INSERT দিয়ে ডেটা এন্ট্রি করা হয়েছে এবং SELECT দিয়ে ডেটা দেখা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "SQLite কী?",
+          "solution": "SQLite হলো একটি রিলেশনাল ডেটাবেজ ম্যানেজমেন্ট সিস্টেম, যা ছোট আকারের ডেটাবেজ তৈরির জন্য ব্যবহৃত হয়। sqlite3 কমান্ড দিয়ে SQLite ডেটাবেজ খোলা যায়, যেমন sqlite3 school.db।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "CREATE TABLE ও DROP TABLE-এর মধ্যে পার্থক্য ব্যাখ্যা করো।",
+          "solution": "CREATE TABLE দিয়ে নতুন টেবিল তৈরি করা হয়। DROP TABLE দিয়ে টেবিল মুছে ফেলা হয়। CREATE TABLE-এ টেবিলের নাম ও ফিল্ডের নাম ও ডেটা টাইপ উল্লেখ করতে হয়। DROP TABLE-এ টেবিলের নাম দিয়ে টেবিল মুছে ফেলা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের school.db ডেটাবেজে INSERT ও SELECT কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের school.db ডেটাবেজে INSERT দিয়ে নতুন ডেটা এন্ট্রি করা হয়। SELECT দিয়ে ডেটাবেজ থেকে ডেটা দেখা হয়। INSERT-এ টেবিলের নাম ও ফিল্ডের মান উল্লেখ করতে হয়। SELECT-এ কোন ফিল্ডগুলো দেখাবে তা উল্লেখ করতে হয়। যেমন—SELECT * FROM student; দিয়ে সব ফিল্ডের ডেটা দেখা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের school.db ডেটাবেজে .mode column ও .headers on কমান্ডের ভূমিকা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের school.db ডেটাবেজে .mode column কমান্ড দিয়ে ডেটা কলাম আকারে দেখানো হয়। .headers on কমান্ড দিয়ে ফিল্ডের নাম হেডার হিসেবে দেখানো হয়। এগুলো ডেটা দেখার ফরম্যাট নির্ধারণ করে। .mode column ছাড়া ডেটা লিস্ট আকারে দেখাতো। .headers on ছাড়া ফিল্ডের নাম দেখাতো না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. SQLite হলো একটি রিলেশনাল ডেটাবেজ ম্যানেজমেন্ট সিস্টেম, যা ছোট আকারের ডেটাবেজ তৈরির জন্য ব্যবহৃত হয়। sqlite3 কমান্ড দিয়ে SQLite ডেটাবেজ খোলা যায়, যেমন sqlite3 school.db। খ. CREATE TABLE দিয়ে নতুন টেবিল তৈরি করা হয়। DROP TABLE দিয়ে টেবিল মুছে ফেলা হয়। CREATE TABLE-এ টেবিলের নাম ও ফিল্ডের নাম ও ডেটা টাইপ উল্লেখ করতে হয়। DROP TABLE-এ টেবিলের নাম দিয়ে টেবিল মুছে ফেলা হয়। গ. উদ্দীপকের school.db ডেটাবেজে INSERT দিয়ে নতুন ডেটা এন্ট্রি করা হয়। SELECT দিয়ে ডেটাবেজ থেকে ডেটা দেখা হয়। INSERT-এ টেবিলের নাম ও ফিল্ডের মান উল্লেখ করতে হয়। SELECT-এ কোন ফিল্ডগুলো দেখাবে তা উল্লেখ করতে হয়। যেমন—SELECT * FROM student; দিয়ে সব ফিল্ডের ডেটা দেখা যাবে। ঘ. উদ্দীপকের school.db ডেটাবেজে .mode column কমান্ড দিয়ে ডেটা কলাম আকারে দেখানো হয়। .headers on কমান্ড দিয়ে ফিল্ডের নাম হেডার হিসেবে দেখানো হয়। এগুলো ডেটা দেখার ফরম্যাট নির্ধারণ করে। .mode column ছাড়া ডেটা লিস্ট আকারে দেখাতো। .headers on ছাড়া ফিল্ডের নাম দেখাতো না।",
+      "page": "NCTB printed p.228-230",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলের ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও জিপিএ সংরক্ষণ করা হয়েছে। শিক্ষকরা WHERE ক্লজ ব্যবহার করে নির্দিষ্ট শর্তের ডেটা খুঁজে বের করতে চান। তারা =, <>, >, >=, <, <=, BETWEEN, IN, IS NULL অপারেটর ব্যবহার করেন।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "রিলেশনাল ডেটাবেজ ও NoSQL ডেটাবেজের মধ্যে পার্থক্য কী?",
+          "solution": "রিলেশনাল ডেটাবেজে ডেটা টেবিলে সংরক্ষিত হয় এবং নির্দিষ্ট স্কিমা থাকে। NoSQL ডেটাবেজে ডেটা টেবিল ছাড়াও সংরক্ষিত হয় এবং Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "রিলেশনাল ডেটাবেজের হেডার ও বডি ব্যাখ্যা করো।",
+          "solution": "রিলেশনাল ডেটাবেজের হেডার হলো ফিল্ডের নামের সারি। বডি হলো ডেটার সারিগুলো। হেডারে ফিল্ডের নাম থাকে, বডিতে প্রতিটি রেকর্ডের ডেটা থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে =, <>, >, >=, <, <= অপারেটর কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে = অপারেটর দিয়ে সমান মান খোঁজা হয়। <> অপারেটর দিয়ে অসমান মান খোঁজা হয়। > অপারেটর দিয়ে বড় মান খোঁজা হয়। >= অপারেটর দিয়ে বড় বা সমান মান খোঁজা হয়। < অপারেটর দিয়ে ছোট মান খোঁজা হয়। <= অপারেটর দিয়ে ছোট বা সমান মান খোঁজা হয়। যেমন—WHERE GPA > 4.00 দিয়ে ৪.০০-এর বেশি জিপিএর ছাত্রদের ডেটা পাওয়া যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে BETWEEN, IN, IS NULL অপারেটর কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে BETWEEN অপারেটর দিয়ে দুটি মানের মধ্যে ডেটা খোঁজা হয়। IN অপারেটর দিয়ে একাধিক মানের মধ্যে ডেটা খোঁজা হয়। IS NULL অপারেটর দিয়ে Null মানের ডেটা খোঁজা হয়। যেমন—WHERE GPA BETWEEN 4.00 AND 5.00 দিয়ে ৪.০০ থেকে ৫.০০-এর মধ্যে জিপিএর ছাত্রদের ডেটা পাওয়া যাবে। WHERE Class IN ('9','10') দিয়ে ৯ম ও ১০ম শ্রেণির ছাত্রদের ডেটা পাওয়া যাবে। WHERE GPA IS NULL দিয়ে জিপিএ Null এমন ছাত্রদের ডেটা পাওয়া যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. রিলেশনাল ডেটাবেজে ডেটা টেবিলে সংরক্ষিত হয় এবং নির্দিষ্ট স্কিমা থাকে। NoSQL ডেটাবেজে ডেটা টেবিল ছাড়াও সংরক্ষিত হয় এবং Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা যায়। খ. রিলেশনাল ডেটাবেজের হেডার হলো ফিল্ডের নামের সারি। বডি হলো ডেটার সারিগুলো। হেডারে ফিল্ডের নাম থাকে, বডিতে প্রতিটি রেকর্ডের ডেটা থাকে। গ. উদ্দীপকের স্কুলের ডেটাবেজে = অপারেটর দিয়ে সমান মান খোঁজা হয়। <> অপারেটর দিয়ে অসমান মান খোঁজা হয়। > অপারেটর দিয়ে বড় মান খোঁজা হয়। >= অপারেটর দিয়ে বড় বা সমান মান খোঁজা হয়। < অপারেটর দিয়ে ছোট মান খোঁজা হয়। <= অপারেটর দিয়ে ছোট বা সমান মান খোঁজা হয়। যেমন—WHERE GPA > 4.00 দিয়ে ৪.০০-এর বেশি জিপিএর ছাত্রদের ডেটা পাওয়া যাবে। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে BETWEEN অপারেটর দিয়ে দুটি মানের মধ্যে ডেটা খোঁজা হয়। IN অপারেটর দিয়ে একাধিক মানের মধ্যে ডেটা খোঁজা হয়। IS NULL অপারেটর দিয়ে Null মানের ডেটা খোঁজা হয়। যেমন—WHERE GPA BETWEEN 4.00 AND 5.00 দিয়ে ৪.০০ থেকে ৫.০০-এর মধ্যে জিপিএর ছাত্রদের ডেটা পাওয়া যাবে। WHERE Class IN ('9','10') দিয়ে ৯ম ও ১০ম শ্রেণির ছাত্রদের ডেটা পাওয়া যাবে। WHERE GPA IS NULL দিয়ে জিপিএ Null এমন ছাত্রদের ডেটা পাওয়া যাবে।",
+      "page": "NCTB printed p.220-231",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলের ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও জিপিএ সংরক্ষণ করা হয়েছে। শিক্ষকরা AND, OR অপারেটর ব্যবহার করে একাধিক শর্তের ডেটা খুঁজে বের করতে চান। তারা DISTINCT ও ORDER BY ব্যবহার করে ডেটা সাজাতে চান।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Null কী?",
+          "solution": "Null মান বলতে কোনো মান নেই বোঝায়, অর্থাৎ ফিল্ডে কোনো ডেটা এন্ট্রি করা হয়নি।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "রিলেশনাল ডেটাবেজের ডেটা টাইপগুলো ব্যাখ্যা করো।",
+          "solution": "রিলেশনাল ডেটাবেজের ডেটা টাইপগুলো হলো Text, Integer, Decimal, Date। Text টাইপে বর্ণসংবলিত তথ্য সংরক্ষণ করা হয়। Integer টাইপে পূর্ণসংখ্যা সংরক্ষণ করা হয়। Decimal টাইপে দশমিকসহ সংখ্যা সংরক্ষণ করা হয়। Date টাইপে তারিখ সংরক্ষণ করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে AND ও OR অপারেটর কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে AND অপারেটর দিয়ে একাধিক শর্ত একসাথে পূরণ করতে হয়। OR অপারেটর দিয়ে একাধিক শর্তের যেকোনো একটি পূরণ করতে হয়। যেমন—WHERE Class='10' AND GPA > 4.00 দিয়ে ১০ম শ্রেণির ৪.০০-এর বেশি জিপিএর ছাত্রদের ডেটা পাওয়া যাবে। WHERE Class='9' OR Class='10' দিয়ে ৯ম বা ১০ম শ্রেণির ছাত্রদের ডেটা পাওয়া যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে DISTINCT ও ORDER BY কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে DISTINCT দিয়ে ডুপ্লিকেট ডেটা বাদ দিয়ে ইউনিক ডেটা দেখানো হয়। ORDER BY দিয়ে ডেটা সাজানো হয়। যেমন—SELECT DISTINCT Class FROM student; দিয়ে ইউনিক শ্রেণিগুলো দেখানো যাবে। SELECT * FROM student ORDER BY GPA DESC; দিয়ে জিপিএ অনুযায়ী বড় থেকে ছোট ক্রমে ডেটা সাজানো যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Null মান বলতে কোনো মান নেই বোঝায়, অর্থাৎ ফিল্ডে কোনো ডেটা এন্ট্রি করা হয়নি। খ. রিলেশনাল ডেটাবেজের ডেটা টাইপগুলো হলো Text, Integer, Decimal, Date। Text টাইপে বর্ণসংবলিত তথ্য সংরক্ষণ করা হয়। Integer টাইপে পূর্ণসংখ্যা সংরক্ষণ করা হয়। Decimal টাইপে দশমিকসহ সংখ্যা সংরক্ষণ করা হয়। Date টাইপে তারিখ সংরক্ষণ করা হয়। গ. উদ্দীপকের স্কুলের ডেটাবেজে AND অপারেটর দিয়ে একাধিক শর্ত একসাথে পূরণ করতে হয়। OR অপারেটর দিয়ে একাধিক শর্তের যেকোনো একটি পূরণ করতে হয়। যেমন—WHERE Class='10' AND GPA > 4.00 দিয়ে ১০ম শ্রেণির ৪.০০-এর বেশি জিপিএর ছাত্রদের ডেটা পাওয়া যাবে। WHERE Class='9' OR Class='10' দিয়ে ৯ম বা ১০ম শ্রেণির ছাত্রদের ডেটা পাওয়া যাবে। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে DISTINCT দিয়ে ডুপ্লিকেট ডেটা বাদ দিয়ে ইউনিক ডেটা দেখানো হয়। ORDER BY দিয়ে ডেটা সাজানো হয়। যেমন—SELECT DISTINCT Class FROM student; দিয়ে ইউনিক শ্রেণিগুলো দেখানো যাবে। SELECT * FROM student ORDER BY GPA DESC; দিয়ে জিপিএ অনুযায়ী বড় থেকে ছোট ক্রমে ডেটা সাজানো যাবে।",
+      "page": "NCTB printed p.223-232",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলের ডেটাবেজে student_info টেবিলে ছাত্রদের নাম, রোল নম্বর ও শ্রেণি সংরক্ষণ করা হয়েছে। result টেবিলে রোল নম্বর ও জিপিএ সংরক্ষণ করা হয়েছে। শিক্ষকরা DELETE ও UPDATE দিয়ে ডেটা পরিবর্তন করতে চান এবং Join দিয়ে দুটি টেবিলের ডেটা একত্র করতে চান।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "প্রাইমারি কী (Primary Key) কী?",
+          "solution": "ডেটা টেবিলের যে ফিল্ডের মানসমূহ দ্বারা একটি রেকর্ডকে অন্যান্য রেকর্ড থেকে সম্পূর্ণরূপে আলাদা করা যায় সেই ফিল্ডকে প্রাইমারি কী বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "কম্পোজিট প্রাইমারি কী ও Auto-increment ব্যাখ্যা করো।",
+          "solution": "কম্পোজিট প্রাইমারি কী হলো দুই বা ততোধিক অ্যাট্রিবিউট সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করে। Auto-increment হলো স্বয়ংক্রিয়ভাবে সংখ্যা বৃদ্ধি পাওয়া, যেমন প্রাইমারি কী-তে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে DELETE ও UPDATE কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে DELETE দিয়ে ডেটা মুছে ফেলা হয়। UPDATE দিয়ে ডেটা পরিবর্তন করা হয়। যেমন—DELETE FROM student_info WHERE Roll=101; দিয়ে ১০১ রোলের ডেটা মুছে ফেলা যাবে। UPDATE student_info SET Class='10' WHERE Roll=101; দিয়ে ১০১ রোলের শ্রেণি ১০ম-এ পরিবর্তন করা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে Join কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে Join দিয়ে student_info ও result টেবিলের ডেটা একত্র করা যাবে। Join অপারেশন দুটি টেবিলের ডেটা একত্র করে। রোল নম্বর ফিল্ডের উপর ভিত্তি করে Join করা যাবে। যেমন—SELECT student_info.Name, result.GPA FROM student_info JOIN result ON student_info.Roll=result.Roll; দিয়ে ছাত্রদের নাম ও জিপিএ একসাথে দেখা যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটা টেবিলের যে ফিল্ডের মানসমূহ দ্বারা একটি রেকর্ডকে অন্যান্য রেকর্ড থেকে সম্পূর্ণরূপে আলাদা করা যায় সেই ফিল্ডকে প্রাইমারি কী বলা হয়। খ. কম্পোজিট প্রাইমারি কী হলো দুই বা ততোধিক অ্যাট্রিবিউট সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করে। Auto-increment হলো স্বয়ংক্রিয়ভাবে সংখ্যা বৃদ্ধি পাওয়া, যেমন প্রাইমারি কী-তে। গ. উদ্দীপকের স্কুলের ডেটাবেজে DELETE দিয়ে ডেটা মুছে ফেলা হয়। UPDATE দিয়ে ডেটা পরিবর্তন করা হয়। যেমন—DELETE FROM student_info WHERE Roll=101; দিয়ে ১০১ রোলের ডেটা মুছে ফেলা যাবে। UPDATE student_info SET Class='10' WHERE Roll=101; দিয়ে ১০১ রোলের শ্রেণি ১০ম-এ পরিবর্তন করা যাবে। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে Join দিয়ে student_info ও result টেবিলের ডেটা একত্র করা যাবে। Join অপারেশন দুটি টেবিলের ডেটা একত্র করে। রোল নম্বর ফিল্ডের উপর ভিত্তি করে Join করা যাবে। যেমন—SELECT student_info.Name, result.GPA FROM student_info JOIN result ON student_info.Roll=result.Roll; দিয়ে ছাত্রদের নাম ও জিপিএ একসাথে দেখা যাবে।",
+      "page": "NCTB printed p.224-233",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলের ডেটাবেজে student_info টেবিলে ছাত্রদের তথ্য সংরক্ষণ করা হয়েছে। student_contact টেবিলে ছাত্রদের যোগাযোগের তথ্য সংরক্ষণ করা হয়েছে। result টেবিলে ফলাফলের তথ্য সংরক্ষণ করা হয়েছে। club টেবিলে ক্লাবের তথ্য সংরক্ষণ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ফরেন কী কী?",
+          "solution": "ফরেন কী হলো একটি টেবিলের প্রাইমারি কী যা অন্য টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Parent/Child টেবিল ও Integrity ব্যাখ্যা করো।",
+          "solution": "Parent টেবিল হলো যে টেবিলের প্রাইমারি কী অন্য টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। Child টেবিল হলো যে টেবিলে ফরেন কী থাকে। Integrity হলো ডেটার সঠিকতা রক্ষা করা, অর্থাৎ ফরেন কী-এর মান Parent টেবিলের প্রাইমারি কী-এর মধ্যে থাকতে হবে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে One-to-One রিলেশন কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে student_info ও student_contact টেবিলের মধ্যে One-to-One রিলেশন থাকবে। One-to-One-এ একটি ছাত্রের সাথে একটি যোগাযোগের তথ্য সম্পর্কযুক্ত হবে। রোল নম্বর ফিল্ডের উপর ভিত্তি করে One-to-One রিলেশন তৈরি করা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে One-to-Many ও Many-to-Many রিলেশন কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে student_info ও result টেবিলের মধ্যে One-to-Many রিলেশন থাকবে। One-to-Many-এ একটি ছাত্রের সাথে অনেকগুলো ফলাফলের তথ্য সম্পর্কযুক্ত হবে। student_info ও club টেবিলের মধ্যে Many-to-Many রিলেশন থাকবে। Many-to-Many-এ অনেকগুলো ছাত্র অনেকগুলো ক্লাবের সাথে সম্পর্কযুক্ত হবে। Many-to-Many রিলেশনে Junction টেবিল ব্যবহার করা হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ফরেন কী হলো একটি টেবিলের প্রাইমারি কী যা অন্য টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়। খ. Parent টেবিল হলো যে টেবিলের প্রাইমারি কী অন্য টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। Child টেবিল হলো যে টেবিলে ফরেন কী থাকে। Integrity হলো ডেটার সঠিকতা রক্ষা করা, অর্থাৎ ফরেন কী-এর মান Parent টেবিলের প্রাইমারি কী-এর মধ্যে থাকতে হবে। গ. উদ্দীপকের স্কুলের ডেটাবেজে student_info ও student_contact টেবিলের মধ্যে One-to-One রিলেশন থাকবে। One-to-One-এ একটি ছাত্রের সাথে একটি যোগাযোগের তথ্য সম্পর্কযুক্ত হবে। রোল নম্বর ফিল্ডের উপর ভিত্তি করে One-to-One রিলেশন তৈরি করা যাবে। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে student_info ও result টেবিলের মধ্যে One-to-Many রিলেশন থাকবে। One-to-Many-এ একটি ছাত্রের সাথে অনেকগুলো ফলাফলের তথ্য সম্পর্কযুক্ত হবে। student_info ও club টেবিলের মধ্যে Many-to-Many রিলেশন থাকবে। Many-to-Many-এ অনেকগুলো ছাত্র অনেকগুলো ক্লাবের সাথে সম্পর্কযুক্ত হবে। Many-to-Many রিলেশনে Junction টেবিল ব্যবহার করা হয়।",
+      "page": "NCTB printed p.225-226",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলের ডেটাবেজে ছাত্রদের তথ্য সংরক্ষণের জন্য SQL ব্যবহার করা হয়েছে। SQL হলো Declarative ভাষা। SQL-এ DDL ও DML কমান্ড ব্যবহৃত হয়। DDL দিয়ে টেবিল তৈরি ও মুছে ফেলা হয়, DML দিয়ে ডেটা এন্ট্রি, আপডেট ও ডিলিট করা হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "SQL কী?",
+          "solution": "SQL (Structured Query Language) হলো ডেটাবেজ থেকে ডেটা খোঁজার ভাষা। SQL হলো Declarative ভাষা, অর্থাৎ কী করতে হবে তা বলা হয়, কীভাবে করতে হবে তা বলা হয় না।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "DDL ও DML-এর মধ্যে পার্থক্য ব্যাখ্যা করো।",
+          "solution": "DDL (Data Definition Language) দিয়ে টেবিল তৈরি ও মুছে ফেলা হয়। DML (Data Manipulation Language) দিয়ে ডেটা এন্ট্রি, আপডেট ও ডিলিট করা হয়। DDL-এ CREATE, DROP কমান্ড ব্যবহৃত হয়। DML-এ INSERT, UPDATE, DELETE, SELECT কমান্ড ব্যবহৃত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে DDL কমান্ড কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে DDL কমান্ড দিয়ে টেবিল তৈরি ও মুছে ফেলা যাবে। CREATE TABLE দিয়ে নতুন টেবিল তৈরি করা যাবে। DROP TABLE দিয়ে টেবিল মুছে ফেলা যাবে। যেমন—CREATE TABLE student (Roll INTEGER, Name TEXT); দিয়ে student টেবিল তৈরি করা যাবে। DROP TABLE student; দিয়ে student টেবিল মুছে ফেলা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে DML কমান্ড কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে DML কমান্ড দিয়ে ডেটা এন্ট্রি, আপডেট, ডিলিট ও সিলেক্ট করা যাবে। INSERT দিয়ে ডেটা এন্ট্রি করা যাবে। UPDATE দিয়ে ডেটা পরিবর্তন করা যাবে। DELETE দিয়ে ডেটা মুছে ফেলা যাবে। SELECT দিয়ে ডেটা দেখা যাবে। যেমন—INSERT INTO student VALUES (101, 'Rahim'); দিয়ে ডেটা এন্ট্রি করা যাবে। SELECT * FROM student; দিয়ে ডেটা দেখা যাবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. SQL (Structured Query Language) হলো ডেটাবেজ থেকে ডেটা খোঁজার ভাষা। SQL হলো Declarative ভাষা, অর্থাৎ কী করতে হবে তা বলা হয়, কীভাবে করতে হবে তা বলা হয় না। খ. DDL (Data Definition Language) দিয়ে টেবিল তৈরি ও মুছে ফেলা হয়। DML (Data Manipulation Language) দিয়ে ডেটা এন্ট্রি, আপডেট ও ডিলিট করা হয়। DDL-এ CREATE, DROP কমান্ড ব্যবহৃত হয়। DML-এ INSERT, UPDATE, DELETE, SELECT কমান্ড ব্যবহৃত হয়। গ. উদ্দীপকের স্কুলের ডেটাবেজে DDL কমান্ড দিয়ে টেবিল তৈরি ও মুছে ফেলা যাবে। CREATE TABLE দিয়ে নতুন টেবিল তৈরি করা যাবে। DROP TABLE দিয়ে টেবিল মুছে ফেলা যাবে। যেমন—CREATE TABLE student (Roll INTEGER, Name TEXT); দিয়ে student টেবিল তৈরি করা যাবে। DROP TABLE student; দিয়ে student টেবিল মুছে ফেলা যাবে। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে DML কমান্ড দিয়ে ডেটা এন্ট্রি, আপডেট, ডিলিট ও সিলেক্ট করা যাবে। INSERT দিয়ে ডেটা এন্ট্রি করা যাবে। UPDATE দিয়ে ডেটা পরিবর্তন করা যাবে। DELETE দিয়ে ডেটা মুছে ফেলা যাবে। SELECT দিয়ে ডেটা দেখা যাবে। যেমন—INSERT INTO student VALUES (101, 'Rahim'); দিয়ে ডেটা এন্ট্রি করা যাবে। SELECT * FROM student; দিয়ে ডেটা দেখা যাবে।",
+      "page": "NCTB printed p.227",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি ব্যাংকে গ্রাহকদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজের ডেটা সিকিউরিটির জন্য ব্যাকআপ, পাসওয়ার্ড ও পারমিশন ব্যবহার করা হয়েছে। ডেটা এনক্রিপ্ট করে গোপনীয়তা রক্ষা করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটা সিকিউরিটি কী?",
+          "solution": "ডেটা সিকিউরিটি হলো ডেটাকে অননুমোদিত ব্যবহার থেকে রক্ষা করা। ডেটা সিকিউরিটির জন্য ব্যাকআপ, পাসওয়ার্ড ও পারমিশন ব্যবহার করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ব্যাকআপ ও পাসওয়ার্ড/পারমিশন ব্যাখ্যা করো।",
+          "solution": "ব্যাকআপ হলো ডেটার কপি সংরক্ষণ করা, যাতে ডেটা হারিয়ে গেলে ফিরিয়ে আনা যায়। পাসওয়ার্ড/পারমিশন হলো ডেটা ব্যবহারের অনুমতি নিয়ন্ত্রণ করা, যাতে শুধু সঠিক ব্যবহারকারী ডেটা ব্যবহার করতে পারে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা সিকিউরিটি কীভাবে নিশ্চিত করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা সিকিউরিটি নিশ্চিত করার জন্য ব্যাকআপ রাখা হবে, পাসওয়ার্ড ও পারমিশন দেওয়া হবে, ডেটা এনক্রিপ্ট করা হবে। ডেটা সিকিউরিটির ৫টি নিয়ন্ত্রণ হলো গোপনীয়তা, সততা, প্রাপ্যতা সহ। এভাবে ডেটার গোপনীয়তা রক্ষা করা যাবে এবং অননুমোদিত ব্যবহার প্রতিরোধ করা যাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা এনক্রিপশনের প্রয়োজনীয়তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা এনক্রিপশনের প্রয়োজনীয়তা হলো ডেটার গোপনীয়তা রক্ষা করা। ডেটা এনক্রিপ্ট করলে অননুমোদিত ব্যবহারকারী ডেটা পড়তে পারবে না। ইমেইল, সরকারি, দূতাবাসের ডেটা এনক্রিপ্ট করা হয়। ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো ক্রিপ্টোগ্রাফি।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটা সিকিউরিটি হলো ডেটাকে অননুমোদিত ব্যবহার থেকে রক্ষা করা। ডেটা সিকিউরিটির জন্য ব্যাকআপ, পাসওয়ার্ড ও পারমিশন ব্যবহার করা হয়। খ. ব্যাকআপ হলো ডেটার কপি সংরক্ষণ করা, যাতে ডেটা হারিয়ে গেলে ফিরিয়ে আনা যায়। পাসওয়ার্ড/পারমিশন হলো ডেটা ব্যবহারের অনুমতি নিয়ন্ত্রণ করা, যাতে শুধু সঠিক ব্যবহারকারী ডেটা ব্যবহার করতে পারে। গ. উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা সিকিউরিটি নিশ্চিত করার জন্য ব্যাকআপ রাখা হবে, পাসওয়ার্ড ও পারমিশন দেওয়া হবে, ডেটা এনক্রিপ্ট করা হবে। ডেটা সিকিউরিটির ৫টি নিয়ন্ত্রণ হলো গোপনীয়তা, সততা, প্রাপ্যতা সহ। এভাবে ডেটার গোপনীয়তা রক্ষা করা যাবে এবং অননুমোদিত ব্যবহার প্রতিরোধ করা যাবে। ঘ. উদ্দীপকের ব্যাংকের ডেটাবেজে ডেটা এনক্রিপশনের প্রয়োজনীয়তা হলো ডেটার গোপনীয়তা রক্ষা করা। ডেটা এনক্রিপ্ট করলে অননুমোদিত ব্যবহারকারী ডেটা পড়তে পারবে না। ইমেইল, সরকারি, দূতাবাসের ডেটা এনক্রিপ্ট করা হয়। ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো ক্রিপ্টোগ্রাফি।",
+      "page": "NCTB printed p.235-236",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ডেটা এনক্রিপশনের জন্য ক্রিপ্টোগ্রাফি ব্যবহার করা হয়েছে। Plain text কে Cipher text-এ রূপান্তর করা হয়। Symmetric ও Asymmetric এনক্রিপশন ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ক্রিপ্টোগ্রাফি কী?",
+          "solution": "ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো ক্রিপ্টোগ্রাফি।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Plain text ও Cipher text ব্যাখ্যা করো।",
+          "solution": "Plain text হলো মূল ডেটা, যা পড়া যায়। Cipher text হলো এনক্রিপ্ট করা ডেটা, যা পড়া যায় না। Plain text কে Cipher text-এ রূপান্তর করাকে এনক্রিপশন বলে। Cipher text কে Plain text-এ রূপান্তর করাকে ডিক্রিপশন বলে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric এনক্রিপশন কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric এনক্রিপশনে একই কী দিয়ে এনক্রিপ্ট ও ডিক্রিপ্ট করা হয়। Symmetric এনক্রিপশনে একটি কী থাকে। এনক্রিপশনের জন্য যে কী ব্যবহৃত হয়, ডিক্রিপশনের জন্যও একই কী ব্যবহৃত হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Asymmetric এনক্রিপশন কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Asymmetric এনক্রিপশনে দুই প্রকারের কী ব্যবহৃত হয়: Public কী ও Private কী। Public কী দিয়ে এনক্রিপ্ট করা হয়, Private কী দিয়ে ডিক্রিপ্ট করা হয়। Public কী সবার জন্য উন্মুক্ত থাকে, Private কী গোপন থাকে। এভাবে ডেটার গোপনীয়তা রক্ষা করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটা এনক্রিপ্ট ও ডিক্রিপ্ট করার বিষয় হলো ক্রিপ্টোগ্রাফি। খ. Plain text হলো মূল ডেটা, যা পড়া যায়। Cipher text হলো এনক্রিপ্ট করা ডেটা, যা পড়া যায় না। Plain text কে Cipher text-এ রূপান্তর করাকে এনক্রিপশন বলে। Cipher text কে Plain text-এ রূপান্তর করাকে ডিক্রিপশন বলে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric এনক্রিপশনে একই কী দিয়ে এনক্রিপ্ট ও ডিক্রিপ্ট করা হয়। Symmetric এনক্রিপশনে একটি কী থাকে। এনক্রিপশনের জন্য যে কী ব্যবহৃত হয়, ডিক্রিপশনের জন্যও একই কী ব্যবহৃত হয়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Asymmetric এনক্রিপশনে দুই প্রকারের কী ব্যবহৃত হয়: Public কী ও Private কী। Public কী দিয়ে এনক্রিপ্ট করা হয়, Private কী দিয়ে ডিক্রিপ্ট করা হয়। Public কী সবার জন্য উন্মুক্ত থাকে, Private কী গোপন থাকে। এভাবে ডেটার গোপনীয়তা রক্ষা করা যায়।",
+      "page": "NCTB printed p.236-237",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি ব্যাংকে গ্রাহকদের লেনদেনের জন্য Transaction ব্যবহার করা হয়েছে। Transaction-এ ACID বৈশিষ্ট্য থাকে: Atomicity, Consistency, Isolation, Durability। Transaction Log ও Locking ব্যবহার করা হয়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Transaction কী?",
+          "solution": "Transaction হলো এক বা একাধিক ডেটাবেজ অপারেশনের সমষ্টি, যা একসাথে সম্পন্ন হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Atomicity ও Consistency ব্যাখ্যা করো।",
+          "solution": "Atomicity হলো Transaction-এর সব অপারেশন একসাথে সম্পন্ন হবে, নাহলে কোনোটিই সম্পন্ন হবে না। Consistency হলো Transaction সম্পন্ন হলে ডেটাবেজ সঠিক অবস্থায় থাকবে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ব্যাংকের Transaction-এ Isolation ও Durability কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ব্যাংকের Transaction-এ Isolation হলো এক Transaction অন্য Transaction-কে প্রভাবিত করবে না। Durability হলো Transaction সম্পন্ন হলে ডেটা স্থায়ীভাবে সংরক্ষিত হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের ব্যাংকের Transaction-এ Transaction Log ও Locking-এর ভূমিকা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের ব্যাংকের Transaction-এ Transaction Log হলো Transaction-এর রেকর্ড সংরক্ষণ করা, যাতে Transaction ব্যর্থ হলে ফিরিয়ে আনা যায়। Locking হলো ডেটা লক করা, যাতে একাধিক ব্যবহারকারী একই ডেটা একই সাথে পরিবর্তন করতে না পারে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Transaction হলো এক বা একাধিক ডেটাবেজ অপারেশনের সমষ্টি, যা একসাথে সম্পন্ন হয়। খ. Atomicity হলো Transaction-এর সব অপারেশন একসাথে সম্পন্ন হবে, নাহলে কোনোটিই সম্পন্ন হবে না। Consistency হলো Transaction সম্পন্ন হলে ডেটাবেজ সঠিক অবস্থায় থাকবে। গ. উদ্দীপকের ব্যাংকের Transaction-এ Isolation হলো এক Transaction অন্য Transaction-কে প্রভাবিত করবে না। Durability হলো Transaction সম্পন্ন হলে ডেটা স্থায়ীভাবে সংরক্ষিত হবে। ঘ. উদ্দীপকের ব্যাংকের Transaction-এ Transaction Log হলো Transaction-এর রেকর্ড সংরক্ষণ করা, যাতে Transaction ব্যর্থ হলে ফিরিয়ে আনা যায়। Locking হলো ডেটা লক করা, যাতে একাধিক ব্যবহারকারী একই ডেটা একই সাথে পরিবর্তন করতে না পারে।",
+      "page": "NCTB printed p.240",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি ই-কমার্স কোম্পানিতে Big Data পরিচালনার জন্য NoSQL ডেটাবেজ ব্যবহার করা হয়েছে। Big Data-এর 5 V's হলো Volume, Velocity, Variety, Veracity, Value। Amazon Prime Day 2019-এ 45M req/sec পরিচালনা করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "NoSQL কী?",
+          "solution": "NoSQL ডেটাবেজ হলো রিলেশনাল ডেটাবেজ ছাড়া অন্য ডেটাবেজ, যা Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Big Data-এর 5 V's ব্যাখ্যা করো।",
+          "solution": "Big Data-এর 5 V's হলো Volume (পরিমাণ), Velocity (গতি), Variety (বৈচিত্র্য), Veracity (সত্যতা), Value (মূল্য)। Volume হলো ডেটার পরিমাণ। Velocity হলো ডেটা আসার গতি। Variety হলো ডেটার বৈচিত্র্য। Veracity হলো ডেটার সত্যতা। Value হলো ডেটার মূল্য।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Key-Value ও Schemaless কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Key-Value দিয়ে ডেটা সংরক্ষণ করা হয়। Key হলো শনাক্তকারী, Value হলো ডেটা। Schemaless হলো নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা। এভাবে বিভিন্ন ধরনের ডেটা সংরক্ষণ করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Amazon Prime Day 2019-এর কেস বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Amazon Prime Day 2019-এ 45M req/sec পরিচালনা করা হয়েছে। এটি Big Data-এর Velocity ও Volume-এর উদাহরণ। এত বেশি রিকোয়েস্ট পরিচালনা করার জন্য NoSQL ডেটাবেজ ব্যবহার করা হয়েছে, কারণ NoSQL বেশি স্কেলেবল।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. NoSQL ডেটাবেজ হলো রিলেশনাল ডেটাবেজ ছাড়া অন্য ডেটাবেজ, যা Schemaless, অর্থাৎ নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করে। খ. Big Data-এর 5 V's হলো Volume (পরিমাণ), Velocity (গতি), Variety (বৈচিত্র্য), Veracity (সত্যতা), Value (মূল্য)। Volume হলো ডেটার পরিমাণ। Velocity হলো ডেটা আসার গতি। Variety হলো ডেটার বৈচিত্র্য। Veracity হলো ডেটার সত্যতা। Value হলো ডেটার মূল্য। গ. উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Key-Value দিয়ে ডেটা সংরক্ষণ করা হয়। Key হলো শনাক্তকারী, Value হলো ডেটা। Schemaless হলো নির্দিষ্ট স্কিমা ছাড়াই ডেটা সংরক্ষণ করা। এভাবে বিভিন্ন ধরনের ডেটা সংরক্ষণ করা যায়। ঘ. উদ্দীপকের ই-কমার্স কোম্পানির ডেটাবেজে Amazon Prime Day 2019-এ 45M req/sec পরিচালনা করা হয়েছে। এটি Big Data-এর Velocity ও Volume-এর উদাহরণ। এত বেশি রিকোয়েস্ট পরিচালনা করার জন্য NoSQL ডেটাবেজ ব্যবহার করা হয়েছে, কারণ NoSQL বেশি স্কেলেবল।",
+      "page": "NCTB printed p.241",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ডেটা এনক্রিপশনের জন্য Caesar Code ব্যবহার করা হয়েছে। Plaintext \"This is a secret message\"-কে Ciphertext \"wklv lv d vhfuuhw phvvdjh\"-এ রূপান্তর করা হয়েছে। Caesar Code হলো Shift Cipher।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Caesar Code কী?",
+          "solution": "Caesar Code হলো Shift Cipher, যেখানে প্রতিটি বর্ণ নির্দিষ্ট সংখ্যক স্থান সরিয়ে Ciphertext তৈরি করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Caesar Code-এর উদাহরণ ব্যাখ্যা করো।",
+          "solution": "Caesar Code-এর উদাহরণ হলো Plaintext \"This is a secret message\"-এর Ciphertext \"wklv lv d vhfuuhw phvvdjh\"। Plain ABC...XYZ / Cipher XYZABC...। প্রতিটি বর্ণ ৩ স্থান সরিয়ে Ciphertext তৈরি করা হয়েছে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে DES কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে DES (Data Encryption Standard) ব্যবহার করা যাবে। DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট। DES IBM ১৯৭০ সালে তৈরি করে এবং ১৯৭৭ সালে US Dept of Defense গ্রহণ করে। ১৯৯৯ সালে DES Challenge হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES কীভাবে কাজ করবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES ব্যবহার করা যাবে। Triple DES হলো EDE (Encrypt-Decrypt-Encrypt) পদ্ধতি। K1/K2/K3 প্রতিটি ৫৬-বিট। Ciphertext=EK3(DK2(EK1(plaintext)))। Plaintext=DK1(EK2(DK3(ciphertext)))। Triple DES DES-এর চেয়ে বেশি নিরাপদ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Caesar Code হলো Shift Cipher, যেখানে প্রতিটি বর্ণ নির্দিষ্ট সংখ্যক স্থান সরিয়ে Ciphertext তৈরি করা হয়। খ. Caesar Code-এর উদাহরণ হলো Plaintext \"This is a secret message\"-এর Ciphertext \"wklv lv d vhfuuhw phvvdjh\"। Plain ABC...XYZ / Cipher XYZABC...। প্রতিটি বর্ণ ৩ স্থান সরিয়ে Ciphertext তৈরি করা হয়েছে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে DES (Data Encryption Standard) ব্যবহার করা যাবে। DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট। DES IBM ১৯৭০ সালে তৈরি করে এবং ১৯৭৭ সালে US Dept of Defense গ্রহণ করে। ১৯৯৯ সালে DES Challenge হয়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES ব্যবহার করা যাবে। Triple DES হলো EDE (Encrypt-Decrypt-Encrypt) পদ্ধতি। K1/K2/K3 প্রতিটি ৫৬-বিট। Ciphertext=EK3(DK2(EK1(plaintext)))। Plaintext=DK1(EK2(DK3(ciphertext)))। Triple DES DES-এর চেয়ে বেশি নিরাপদ।",
+      "page": "Mahbubur Rahman printed p.386",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ডেটা এনক্রিপশনের জন্য AES ও IDEA ব্যবহার করা হয়েছে। AES NIST তৈরি করেছে, Joan Daemen/Vincent Rijmen তৈরি করেছেন Rijndael। IDEA ETH Zurich তৈরি করেছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "AES কী?",
+          "solution": "AES (Advanced Encryption Standard) হলো NIST তৈরি করা এনক্রিপশন স্ট্যান্ডার্ড। Joan Daemen/Vincent Rijmen Rijndael তৈরি করেছেন।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "AES-এর স্পেসিফিকেশন ব্যাখ্যা করো।",
+          "solution": "AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট এবং ব্লক সাইজ ১২৮-বিট। AES-এ ১০/১২/১৪ রাউন্ড থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে IDEA কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে IDEA (International Data Encryption Algorithm) ব্যবহার করা যাবে। IDEA ETH Zurich তৈরি করেছে। IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট এবং ব্লক সাইজ ৬৪-বিট। IDEA পেটেন্ট করা, বাণিজ্যিক ব্যবহারে লাইসেন্স লাগে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে AES ও IDEA-এর মধ্যে পার্থক্য বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট, IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট। AES-এর ব্লক সাইজ ১২৮-বিট, IDEA-এর ব্লক সাইজ ৬৪-বিট। AES NIST তৈরি করেছে, IDEA ETH Zurich তৈরি করেছে। AES-এ ১০/১২/১৪ রাউন্ড থাকে। IDEA পেটেন্ট করা, বাণিজ্যিক ব্যবহারে লাইসেন্স লাগে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. AES (Advanced Encryption Standard) হলো NIST তৈরি করা এনক্রিপশন স্ট্যান্ডার্ড। Joan Daemen/Vincent Rijmen Rijndael তৈরি করেছেন। খ. AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট এবং ব্লক সাইজ ১২৮-বিট। AES-এ ১০/১২/১৪ রাউন্ড থাকে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে IDEA (International Data Encryption Algorithm) ব্যবহার করা যাবে। IDEA ETH Zurich তৈরি করেছে। IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট এবং ব্লক সাইজ ৬৪-বিট। IDEA পেটেন্ট করা, বাণিজ্যিক ব্যবহারে লাইসেন্স লাগে। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট, IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট। AES-এর ব্লক সাইজ ১২৮-বিট, IDEA-এর ব্লক সাইজ ৬৪-বিট। AES NIST তৈরি করেছে, IDEA ETH Zurich তৈরি করেছে। AES-এ ১০/১২/১৪ রাউন্ড থাকে। IDEA পেটেন্ট করা, বাণিজ্যিক ব্যবহারে লাইসেন্স লাগে।",
+      "page": "Mahbubur Rahman printed p.387",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি অফিসে Microsoft Office 2007 ব্যবহার করে ফাইল এনক্রিপ্ট করা হয়েছে। Prepare → Encrypt Document মেনু ব্যবহার করে পাসওয়ার্ড দেওয়া হয়েছে। Office 97-2003 vs XML ওয়ার্নিং ডায়ালগ এসেছে। Save As ডায়ালগে testfile.xml Word XML Document হিসেবে সেভ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ফাইল এনক্রিপ্ট করার প্রয়োজনীয়তা কী?",
+          "solution": "ফাইল এনক্রিপ্ট করার প্রয়োজনীয়তা হলো ডেটার গোপনীয়তা রক্ষা করা। ডেটা এনক্রিপ্ট করলে অননুমোদিত ব্যবহারকারী ডেটা পড়তে পারবে না।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Microsoft Office 2007-এ ফাইল এনক্রিপ্ট করার ধাপগুলো ব্যাখ্যা করো।",
+          "solution": "Microsoft Office 2007-এ ফাইল এনক্রিপ্ট করার ধাপগুলো হলো: Prepare → Encrypt Document-এ ক্লিক করা, Encrypt Document ডায়ালগে পাসওয়ার্ড দেওয়া, Confirm পাসওয়ার্ড দেওয়া, Save As-এ ক্লিক করা, Office 97-2003 vs XML ওয়ার্নিং ডায়ালগে OK করা, Save As ডায়ালগে testfile.xml Word XML Document হিসেবে সেভ করা।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের অফিসের ফাইল এনক্রিপশনে Office 2007 vs 2010-এর পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের অফিসের ফাইল এনক্রিপশনে Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়। Office 2007-এ ১২৮-বিট AES, ২০০৩ সালে US সরকার ব্যবহার করে। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়, যা বেশি নিরাপদ।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের অফিসের ফাইল এনক্রিপশনে ডকুমেন্টের ফরম্যাটিং ও এডিটিং প্রটেক্ট করার পদ্ধতি বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের অফিসের ফাইল এনক্রিপশনে ডকুমেন্টের ফরম্যাটিং ও এডিটিং প্রটেক্ট করার জন্য Password to modify ব্যবহার করা হয়। General Options-এ পাসওয়ার্ড দেওয়া হয়। এভাবে ডকুমেন্ট Read-only করা যায়। শুধু সঠিক পাসওয়ার্ড দিলে ডকুমেন্ট এডিট করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ফাইল এনক্রিপ্ট করার প্রয়োজনীয়তা হলো ডেটার গোপনীয়তা রক্ষা করা। ডেটা এনক্রিপ্ট করলে অননুমোদিত ব্যবহারকারী ডেটা পড়তে পারবে না। খ. Microsoft Office 2007-এ ফাইল এনক্রিপ্ট করার ধাপগুলো হলো: Prepare → Encrypt Document-এ ক্লিক করা, Encrypt Document ডায়ালগে পাসওয়ার্ড দেওয়া, Confirm পাসওয়ার্ড দেওয়া, Save As-এ ক্লিক করা, Office 97-2003 vs XML ওয়ার্নিং ডায়ালগে OK করা, Save As ডায়ালগে testfile.xml Word XML Document হিসেবে সেভ করা। গ. উদ্দীপকের অফিসের ফাইল এনক্রিপশনে Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়। Office 2007-এ ১২৮-বিট AES, ২০০৩ সালে US সরকার ব্যবহার করে। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়, যা বেশি নিরাপদ। ঘ. উদ্দীপকের অফিসের ফাইল এনক্রিপশনে ডকুমেন্টের ফরম্যাটিং ও এডিটিং প্রটেক্ট করার জন্য Password to modify ব্যবহার করা হয়। General Options-এ পাসওয়ার্ড দেওয়া হয়। এভাবে ডকুমেন্ট Read-only করা যায়। শুধু সঠিক পাসওয়ার্ড দিলে ডকুমেন্ট এডিট করা যায়।",
+      "page": "Mahbubur Rahman printed p.388-391",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে employee টেবিলে ১৬টি রেকর্ড আছে: Id, Name, Job Title, Department, Address, JoinDate, Salary। Aminul থেকে Yusuf পর্যন্ত কর্মচারীদের তথ্য আছে। Salary > 5000 শর্তে Query তৈরি করা হয়েছে, Save as Test নামে সেভ করা হয়েছে, Run করা হয়েছে, ৯টি রেকর্ড পাওয়া গেছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Delete Record কী?",
+          "solution": "Delete Record হলো টেবিল থেকে অপ্রয়োজনীয় রেকর্ড মুছে ফেলা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Change Structure (Field Size) ব্যাখ্যা করো।",
+          "solution": "Change Structure হলো টেবিলের ফিল্ডের সাইজ পরিবর্তন করা। Field Size প্রপার্টিজ দিয়ে ফিল্ডে কতগুলো ক্যারেক্টার বা সংখ্যা এন্ট্রি করা যাবে তা নির্ধারণ করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের employee টেবিলে Salary > 5000 Query কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের employee টেবিলে Salary > 5000 শর্তে Query তৈরি করা হয়েছে। Query হলো শর্তসাপেক্ষে ডেটাবেজ থেকে ডেটা খুঁজে বের করা। Salary > 5000 শর্ত দিলে ৫০০০-এর বেশি বেতনের ৯টি রেকর্ড পাওয়া গেছে। Query-কে Save as Test নামে সেভ করা হয়েছে এবং Run করা হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের employee টেবিলে Report ও Form কীভাবে তৈরি করা হবে তা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের employee টেবিলে Report তৈরি করা যাবে। Report হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়। Form তৈরি করা যাবে। Auto Form ও Form Wizard দিয়ে ফর্ম তৈরি করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Delete Record হলো টেবিল থেকে অপ্রয়োজনীয় রেকর্ড মুছে ফেলা। খ. Change Structure হলো টেবিলের ফিল্ডের সাইজ পরিবর্তন করা। Field Size প্রপার্টিজ দিয়ে ফিল্ডে কতগুলো ক্যারেক্টার বা সংখ্যা এন্ট্রি করা যাবে তা নির্ধারণ করা হয়। গ. উদ্দীপকের employee টেবিলে Salary > 5000 শর্তে Query তৈরি করা হয়েছে। Query হলো শর্তসাপেক্ষে ডেটাবেজ থেকে ডেটা খুঁজে বের করা। Salary > 5000 শর্ত দিলে ৫০০০-এর বেশি বেতনের ৯টি রেকর্ড পাওয়া গেছে। Query-কে Save as Test নামে সেভ করা হয়েছে এবং Run করা হয়েছে। ঘ. উদ্দীপকের employee টেবিলে Report তৈরি করা যাবে। Report হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়। Form তৈরি করা যাবে। Auto Form ও Form Wizard দিয়ে ফর্ম তৈরি করা যায়।",
+      "page": "Mahbubur Rahman printed p.367-381",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে Employee1 ও Employee2 টেবিলের মধ্যে রিলেশন তৈরি করা হয়েছে। Employee Number ফিল্ড কমন হিসেবে ব্যবহার করা হয়েছে। Show Table → Add → Drag → Create → One-To-One → Save ধাপ অনুসরণ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটাবেজ রিলেশনের শর্তগুলো কী?",
+          "solution": "ডেটাবেজ রিলেশনের শর্ত চারটি।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটাবেজ রিলেশনের চার প্রকার ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজ রিলেশনের প্রকারভেদ চারটি: One-to-One, One-to-Many, Many-to-One, Many-to-Many। One-to-One-এ একটি উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়। One-to-Many-তে একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়। Many-to-One-এ অনেকগুলো উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়। Many-to-Many-তে অনেকগুলো উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের Employee1/Employee2 রিলেশন তৈরির ধাপগুলো ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের Employee1/Employee2 রিলেশন তৈরির ধাপগুলো হলো: Show Table-এ ক্লিক করা, Add-এ ক্লিক করা, Employee Number ফিল্ড ড্র্যাগ করা, Create-এ ক্লিক করা, One-To-One সিলেক্ট করা, Save করা।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের Employee1/Employee2 রিলেশনে Parent/Child ধারণা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের Employee1/Employee2 রিলেশনে Employee1 হলো Parent টেবিল, Employee2 হলো Child টেবিল। Parent টেবিলের প্রাইমারি কী Child টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। Employee Number ফিল্ড কমন হিসেবে ব্যবহার করা হয়েছে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজ রিলেশনের শর্ত চারটি। খ. ডেটাবেজ রিলেশনের প্রকারভেদ চারটি: One-to-One, One-to-Many, Many-to-One, Many-to-Many। One-to-One-এ একটি উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়। One-to-Many-তে একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়। Many-to-One-এ অনেকগুলো উপাদানের সাথে একটি উপাদান সম্পর্কযুক্ত হয়। Many-to-Many-তে অনেকগুলো উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়। গ. উদ্দীপকের Employee1/Employee2 রিলেশন তৈরির ধাপগুলো হলো: Show Table-এ ক্লিক করা, Add-এ ক্লিক করা, Employee Number ফিল্ড ড্র্যাগ করা, Create-এ ক্লিক করা, One-To-One সিলেক্ট করা, Save করা। ঘ. উদ্দীপকের Employee1/Employee2 রিলেশনে Employee1 হলো Parent টেবিল, Employee2 হলো Child টেবিল। Parent টেবিলের প্রাইমারি কী Child টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। Employee Number ফিল্ড কমন হিসেবে ব্যবহার করা হয়েছে।",
+      "page": "Mahbubur Rahman printed p.382-386",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে Salary ফিল্ডের উপর ভিত্তি করে Sorting করা হয়েছে। Ascending ও Descending সর্টিং ব্যবহার করা হয়েছে। Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Sorting কী?",
+          "solution": "Sorting হলো ডেটা সাজানো। Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Indexing কী?",
+          "solution": "Indexing হলো ডেটা খোঁজার জন্য ইনডেক্স তৈরি করা। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Sorting-এর ধাপগুলো ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Sorting-এর ধাপগুলো হলো: Salary ফিল্ড সিলেক্ট করা, Ascending বা Descending সিলেক্ট করা, Sort করা। Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Indexing-এর ধাপগুলো বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Indexing-এর ধাপগুলো হলো: Salary ফিল্ড সিলেক্ট করা, Index তৈরি করা। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে। Sorting ও Indexing-এর মধ্যে পার্থক্য হলো Sorting ডেটা সাজায়, Indexing ডেটা খোঁজার জন্য ইনডেক্স তৈরি করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Sorting হলো ডেটা সাজানো। Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো। খ. Indexing হলো ডেটা খোঁজার জন্য ইনডেক্স তৈরি করা। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Sorting-এর ধাপগুলো হলো: Salary ফিল্ড সিলেক্ট করা, Ascending বা Descending সিলেক্ট করা, Sort করা। Memo, HyperLink, OLE ডেটা টাইপের উপর সর্ট অপারেশন করা যায় না। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Indexing-এর ধাপগুলো হলো: Salary ফিল্ড সিলেক্ট করা, Index তৈরি করা। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে। Sorting ও Indexing-এর মধ্যে পার্থক্য হলো Sorting ডেটা সাজায়, Indexing ডেটা খোঁজার জন্য ইনডেক্স তৈরি করে।",
+      "page": "Mahbubur Rahman printed p.348-349",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে employee টেবিলে Auto Report তৈরি করা হয়েছে। Auto Report তৈরির ধাপ ৭টি অনুসরণ করা হয়েছে। Formatted Report-এ ৬টি সেকশন থাকে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Report কী?",
+          "solution": "Report হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Auto Report তৈরির ধাপগুলো ব্যাখ্যা করো।",
+          "solution": "Auto Report তৈরির ধাপ ৭টি। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Form কীভাবে তৈরি করা হবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Form তৈরি করা যাবে। Auto Form ও Form Wizard দিয়ে ফর্ম তৈরি করা যায়। employee ফর্মে Jabbar/Peon/Dhaka/Tk2300 তথ্য এন্ট্রি করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Auto Form vs Wizard বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Auto Form হলো স্বয়ংক্রিয়ভাবে ফর্ম তৈরি করা। Form Wizard হলো ধাপে ধাপে ফর্ম তৈরি করা। Auto Form দ্রুত তৈরি হয়, Form Wizard দিয়ে ফর্ম সাজানো যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Report হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা। খ. Auto Report তৈরির ধাপ ৭টি। Auto Report, Wizard ও Custom পদ্ধতিতে রিপোর্ট তৈরি করা যায়। গ্রুপিং, সর্ট, লেআউট, ওরিয়েন্টেশন, স্টাইল ও টাইটেল দিয়ে রিপোর্ট সাজানো যায়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Form তৈরি করা যাবে। Auto Form ও Form Wizard দিয়ে ফর্ম তৈরি করা যায়। employee ফর্মে Jabbar/Peon/Dhaka/Tk2300 তথ্য এন্ট্রি করা যায়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Auto Form হলো স্বয়ংক্রিয়ভাবে ফর্ম তৈরি করা। Form Wizard হলো ধাপে ধাপে ফর্ম তৈরি করা। Auto Form দ্রুত তৈরি হয়, Form Wizard দিয়ে ফর্ম সাজানো যায়।",
+      "page": "Mahbubur Rahman printed p.352, 381",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ডেটা এনক্রিপশনের জন্য AZAD কে BABE-এ রূপান্তর করা হয়েছে। Plain text AZAD, Cipher text BABE। ডেটা এনক্রিপশনের ৬টি প্রয়োগ আছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Plain text ও Cipher text কী?",
+          "solution": "Plain text হলো মূল ডেটা, যা পড়া যায়। Cipher text হলো এনক্রিপ্ট করা ডেটা, যা পড়া যায় না।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "AZAD → BABE উদাহরণ ব্যাখ্যা করো।",
+          "solution": "AZAD → BABE উদাহরণে Plain text AZAD, Cipher text BABE। প্রতিটি বর্ণ সরিয়ে Ciphertext তৈরি করা হয়েছে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric DES vs Asymmetric RSA ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric DES-এ একই কী দিয়ে এনক্রিপ্ট ও ডিক্রিপ্ট করা হয়। Asymmetric RSA-তে দুই প্রকারের কী (Public ও Private) ব্যবহৃত হয়। DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট, RSA-এর কী-এর দৈর্ঘ্য বেশি।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা এনক্রিপশনের ৬টি প্রয়োগ বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা এনক্রিপশনের ৬টি প্রয়োগ আছে। ডেটা এনক্রিপ্ট করলে ডেটার গোপনীয়তা রক্ষা করা যায়। ইমেইল, সরকারি, দূতাবাসের ডেটা এনক্রিপ্ট করা হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Plain text হলো মূল ডেটা, যা পড়া যায়। Cipher text হলো এনক্রিপ্ট করা ডেটা, যা পড়া যায় না। খ. AZAD → BABE উদাহরণে Plain text AZAD, Cipher text BABE। প্রতিটি বর্ণ সরিয়ে Ciphertext তৈরি করা হয়েছে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Symmetric DES-এ একই কী দিয়ে এনক্রিপ্ট ও ডিক্রিপ্ট করা হয়। Asymmetric RSA-তে দুই প্রকারের কী (Public ও Private) ব্যবহৃত হয়। DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট, RSA-এর কী-এর দৈর্ঘ্য বেশি। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা এনক্রিপশনের ৬টি প্রয়োগ আছে। ডেটা এনক্রিপ্ট করলে ডেটার গোপনীয়তা রক্ষা করা যায়। ইমেইল, সরকারি, দূতাবাসের ডেটা এনক্রিপ্ট করা হয়।",
+      "page": "Mahbubur Rahman printed p.354-355",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ডেটা এনক্রিপশনের পদ্ধতিগুলো হলো Caesar Code, DES, Triple DES, AES, IDEA। প্রতিটি পদ্ধতির নিজস্ব স্পেসিফিকেশন আছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটা এনক্রিপশনের পদ্ধতিগুলো কী?",
+          "solution": "ডেটা এনক্রিপশনের পদ্ধতিগুলো হলো Caesar Code, DES, Triple DES, AES, IDEA।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "DES-এর স্পেসিফিকেশন ব্যাখ্যা করো।",
+          "solution": "DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট। DES IBM ১৯৭০ সালে তৈরি করে এবং ১৯৭৭ সালে US Dept of Defense গ্রহণ করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES-এর স্পেসিফিকেশন ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES হলো EDE পদ্ধতি। K1/K2/K3 প্রতিটি ৫৬-বিট। Ciphertext=EK3(DK2(EK1(plaintext)))। Plaintext=DK1(EK2(DK3(ciphertext)))।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে AES ও IDEA-এর স্পেসিফিকেশন বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট, ব্লক সাইজ ১২৮-বিট, ১০/১২/১৪ রাউন্ড। IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট, ব্লক সাইজ ৬৪-বিট। AES NIST তৈরি করেছে, IDEA ETH Zurich তৈরি করেছে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটা এনক্রিপশনের পদ্ধতিগুলো হলো Caesar Code, DES, Triple DES, AES, IDEA। খ. DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট। DES IBM ১৯৭০ সালে তৈরি করে এবং ১৯৭৭ সালে US Dept of Defense গ্রহণ করে। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Triple DES হলো EDE পদ্ধতি। K1/K2/K3 প্রতিটি ৫৬-বিট। Ciphertext=EK3(DK2(EK1(plaintext)))। Plaintext=DK1(EK2(DK3(ciphertext)))। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট, ব্লক সাইজ ১২৮-বিট, ১০/১২/১৪ রাউন্ড। IDEA-এর কী-এর দৈর্ঘ্য ১২৮-বিট, ব্লক সাইজ ৬৪-বিট। AES NIST তৈরি করেছে, IDEA ETH Zurich তৈরি করেছে।",
+      "page": "Mahbubur Rahman printed p.386-387",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে ফাইল এনক্রিপ্ট করার জন্য Microsoft Office 2007 ব্যবহার করা হয়েছে। ১২৮-বিট AES ব্যবহার করা হয়েছে। ২০০৩ সালে US সরকার ব্যবহার করেছে। Third-party টুলস Cryptainer/DiskCryptor/cryptoMill/CrossCrypt ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ফাইল এনক্রিপ্ট করার উদাহরণ কী?",
+          "solution": "ফাইল এনক্রিপ্ট করার উদাহরণ হলো পাসওয়ার্ড প্রটেক্ট, শেয়ার্ড/ফোল্ডার/ইমেইল/ওয়েবসাইটে ফাইল পাঠানো। Microsoft Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Microsoft Office 2007-এর প্রটেকশন ফিচারগুলো ব্যাখ্যা করো।",
+          "solution": "Microsoft Office 2007-এর প্রটেকশন ফিচারগুলো হলো Encrypt Document, Password to modify, General Options। Office 2007-এ ১২৮-বিট AES, Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Third-party টুলস কীভাবে কাজ করবে তা ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Third-party টুলস Cryptainer/DiskCryptor/cryptoMill/CrossCrypt ব্যবহার করে ফাইল এনক্রিপ্ট করা যাবে। এগুলো ফাইল এনক্রিপশনের জন্য ব্যবহৃত হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Office 2007 vs 2003 বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়। ২০০৩ সালে US সরকার ১২৮-বিট AES ব্যবহার করেছে। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ফাইল এনক্রিপ্ট করার উদাহরণ হলো পাসওয়ার্ড প্রটেক্ট, শেয়ার্ড/ফোল্ডার/ইমেইল/ওয়েবসাইটে ফাইল পাঠানো। Microsoft Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়। খ. Microsoft Office 2007-এর প্রটেকশন ফিচারগুলো হলো Encrypt Document, Password to modify, General Options। Office 2007-এ ১২৮-বিট AES, Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Third-party টুলস Cryptainer/DiskCryptor/cryptoMill/CrossCrypt ব্যবহার করে ফাইল এনক্রিপ্ট করা যাবে। এগুলো ফাইল এনক্রিপশনের জন্য ব্যবহৃত হয়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Office 2007-এ ১২৮-বিট AES ব্যবহার করা হয়। ২০০৩ সালে US সরকার ১২৮-বিট AES ব্যবহার করেছে। Office 2010-এ ২৫৬-বিট AES ব্যবহার করা হয়।",
+      "page": "Mahbubur Rahman printed p.388",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্রদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণ করা হয়েছে। ডেটাবেজে প্রাইমারি কী হিসেবে রোল নম্বর ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "কী (Key) কী?",
+          "solution": "যে ফিল্ডের উপর ভিত্তি করে ডেটাবেজের অপরাপর ফিল্ডের তথ্যাবলি শনাক্ত করা হয় তাকে কী বা কী-ফিল্ড বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটাবেজ ব্যবহারের সুবিধাগুলো ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজ ব্যবহারের সুবিধাগুলো হলো: (১) অতি দ্রুত ডেটা উপস্থাপন করা যায়; (২) অত্যন্ত দক্ষতার সাথে ডেটা পরিচালনা করা যায়; (৩) সংরক্ষিত ডেটাকে পরবর্তীতে আপডেট করা যায়; (৪) ডেটাবেজের তথ্যসমূহকে প্রয়োজনে অ্যাসেন্ডিং ও ডিসেন্ডিং অর্ডারে সাজানো যায়; (৫) অল্প সময়ে ডেটার বিশ্লেষণ ঘটানো যায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে রোল নম্বর প্রাইমারি কী হিসেবে উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে রোল নম্বর প্রাইমারি কী হিসেবে উপযুক্ত, কারণ রোল নম্বর প্রতিটি ছাত্রকে ইউনিকভাবে শনাক্ত করে। নাম, শ্রেণি ও ঠিকানা প্রাইমারি কী হতে পারে না, কারণ এগুলো ইউনিক নয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে কম্পোজিট প্রাইমারি কী ব্যবহার করা যাবে কি? বিশ্লেষণপূর্বক মতামত দাও।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে কম্পোজিট প্রাইমারি কী ব্যবহার করা যাবে। একই রোল নম্বর ভিন্ন ভিন্ন শ্রেণিতে থাকতে পারে, তাই রোল নম্বরের সাথে শ্রেণি যোগ করে কম্পোজিট প্রাইমারি কী ব্যবহার করা যেতে পারে। কম্পোজিট প্রাইমারি কী হলো দুই বা ততোধিক অ্যাট্রিবিউট সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. যে ফিল্ডের উপর ভিত্তি করে ডেটাবেজের অপরাপর ফিল্ডের তথ্যাবলি শনাক্ত করা হয় তাকে কী বা কী-ফিল্ড বলা হয়। খ. ডেটাবেজ ব্যবহারের সুবিধাগুলো হলো: (১) অতি দ্রুত ডেটা উপস্থাপন করা যায়; (২) অত্যন্ত দক্ষতার সাথে ডেটা পরিচালনা করা যায়; (৩) সংরক্ষিত ডেটাকে পরবর্তীতে আপডেট করা যায়; (৪) ডেটাবেজের তথ্যসমূহকে প্রয়োজনে অ্যাসেন্ডিং ও ডিসেন্ডিং অর্ডারে সাজানো যায়; (৫) অল্প সময়ে ডেটার বিশ্লেষণ ঘটানো যায়। গ. উদ্দীপকের স্কুলের ডেটাবেজে রোল নম্বর প্রাইমারি কী হিসেবে উপযুক্ত, কারণ রোল নম্বর প্রতিটি ছাত্রকে ইউনিকভাবে শনাক্ত করে। নাম, শ্রেণি ও ঠিকানা প্রাইমারি কী হতে পারে না, কারণ এগুলো ইউনিক নয়। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে কম্পোজিট প্রাইমারি কী ব্যবহার করা যাবে। একই রোল নম্বর ভিন্ন ভিন্ন শ্রেণিতে থাকতে পারে, তাই রোল নম্বরের সাথে শ্রেণি যোগ করে কম্পোজিট প্রাইমারি কী ব্যবহার করা যেতে পারে। কম্পোজিট প্রাইমারি কী হলো দুই বা ততোধিক অ্যাট্রিবিউট সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করে।",
+      "page": "Mahbubur Rahman printed p.341",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। ডেটাবেজে ফরেন কী হিসেবে কর্মচারী আইডি ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ফরেন কী (Foreign Key) কী?",
+          "solution": "যদি ডেটাবেজের একটি টেবিলের প্রাইমারি কী অন্য ডেটা টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়, তাহলে প্রথম ফাইলের প্রাইমারি কী-কে দ্বিতীয় ফাইলের জন্য ফরেন কী বলা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটাবেজ ব্যবহারের সুবিধা ও গুরুত্ব ব্যাখ্যা করো।",
+          "solution": "ডেটাবেজ ব্যবহারের সুবিধাগুলো হলো: (১) অতি দ্রুত ডেটা উপস্থাপন করা যায়; (২) অত্যন্ত দক্ষতার সাথে ডেটা পরিচালনা করা যায়; (৩) সংরক্ষিত ডেটাকে পরবর্তীতে আপডেট করা যায়; (৪) ডেটাবেজের তথ্যসমূহকে প্রয়োজনে অ্যাসেন্ডিং ও ডিসেন্ডিং অর্ডারে সাজানো যায়; (৫) অল্প সময়ে ডেটার বিশ্লেষণ ঘটানো যায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে কর্মচারী আইডি ফরেন কী হিসেবে উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে কর্মচারী আইডি ফরেন কী হিসেবে উপযুক্ত, কারণ কর্মচারী আইডি কর্মচারীদের টেবিলের প্রাইমারি কী এবং অন্য টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। এভাবে টেবিলগুলোর মধ্যে রিলেশন তৈরি করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে প্রাইমারি কী ও ফরেন কী-এর মধ্যে সম্পর্ক বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে প্রাইমারি কী হলো কর্মচারী আইডি, যা প্রতিটি কর্মচারীকে ইউনিকভাবে শনাক্ত করে। ফরেন কী হলো অন্য টেবিলে ব্যবহৃত কর্মচারী আইডি, যা টেবিলগুলোর মধ্যে রিলেশন তৈরি করে। প্রাইমারি কী কোনো টেবিলে ডুপ্লিকেট হয় না, ফরেন কী একাধিকবার আসতে পারে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. যদি ডেটাবেজের একটি টেবিলের প্রাইমারি কী অন্য ডেটা টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়, তাহলে প্রথম ফাইলের প্রাইমারি কী-কে দ্বিতীয় ফাইলের জন্য ফরেন কী বলা হয়। খ. ডেটাবেজ ব্যবহারের সুবিধাগুলো হলো: (১) অতি দ্রুত ডেটা উপস্থাপন করা যায়; (২) অত্যন্ত দক্ষতার সাথে ডেটা পরিচালনা করা যায়; (৩) সংরক্ষিত ডেটাকে পরবর্তীতে আপডেট করা যায়; (৪) ডেটাবেজের তথ্যসমূহকে প্রয়োজনে অ্যাসেন্ডিং ও ডিসেন্ডিং অর্ডারে সাজানো যায়; (৫) অল্প সময়ে ডেটার বিশ্লেষণ ঘটানো যায়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে কর্মচারী আইডি ফরেন কী হিসেবে উপযুক্ত, কারণ কর্মচারী আইডি কর্মচারীদের টেবিলের প্রাইমারি কী এবং অন্য টেবিলে ফরেন কী হিসেবে ব্যবহৃত হয়। এভাবে টেবিলগুলোর মধ্যে রিলেশন তৈরি করা যায়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে প্রাইমারি কী হলো কর্মচারী আইডি, যা প্রতিটি কর্মচারীকে ইউনিকভাবে শনাক্ত করে। ফরেন কী হলো অন্য টেবিলে ব্যবহৃত কর্মচারী আইডি, যা টেবিলগুলোর মধ্যে রিলেশন তৈরি করে। প্রাইমারি কী কোনো টেবিলে ডুপ্লিকেট হয় না, ফরেন কী একাধিকবার আসতে পারে।",
+      "page": "Mahbubur Rahman printed p.341",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্রদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণ করা হয়েছে। ডেটাবেজে ডেটা টাইপ হিসেবে Text, Number, Date ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ডেটা টাইপ কী?",
+          "solution": "ডেটাবেজ ডিজাইন/তৈরি করার সময় একটি গুরুত্বপূর্ণ বিষয় হলো ডেটাবেজের ফিল্ডের টাইপ অর্থাৎ ফিল্ডে এন্ট্রিকৃত ডেটার ধরন।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডেটা টাইপ সঠিকভাবে নির্ধারণের গুরুত্ব ব্যাখ্যা করো।",
+          "solution": "ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে Text, Number, Date টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে নাম ও ঠিকানার জন্য Text টাইপ উপযুক্ত, কারণ এগুলো বর্ণসংবলিত তথ্য। রোল নম্বরের জন্য Number টাইপ উপযুক্ত, কারণ রোল নম্বর সংখ্যাভিত্তিক তথ্য। জন্ম তারিখের জন্য Date টাইপ উপযুক্ত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণের গুরুত্ব বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. ডেটাবেজ ডিজাইন/তৈরি করার সময় একটি গুরুত্বপূর্ণ বিষয় হলো ডেটাবেজের ফিল্ডের টাইপ অর্থাৎ ফিল্ডে এন্ট্রিকৃত ডেটার ধরন। খ. ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না। গ. উদ্দীপকের স্কুলের ডেটাবেজে নাম ও ঠিকানার জন্য Text টাইপ উপযুক্ত, কারণ এগুলো বর্ণসংবলিত তথ্য। রোল নম্বরের জন্য Number টাইপ উপযুক্ত, কারণ রোল নম্বর সংখ্যাভিত্তিক তথ্য। জন্ম তারিখের জন্য Date টাইপ উপযুক্ত। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+      "page": "Mahbubur Rahman printed p.345-346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। ডেটাবেজে Currency ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Currency ডেটা টাইপ কী?",
+          "solution": "মুদ্রা জাতীয় ডেটা সংরক্ষণের জন্য Currency ডেটা টাইপ ব্যবহার করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Currency ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "Currency ডেটা টাইপ মুদ্রা জাতীয় ডেটা সংরক্ষণের জন্য ব্যবহার করা হয়। বেতন, দাম, ব্যালেন্স ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Currency টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে বেতনের জন্য Currency টাইপ উপযুক্ত, কারণ বেতন মুদ্রা জাতীয় তথ্য। নাম ও বিভাগের জন্য Text টাইপ উপযুক্ত। কর্মচারী আইডির জন্য Number টাইপ উপযুক্ত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণের গুরুত্ব বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. মুদ্রা জাতীয় ডেটা সংরক্ষণের জন্য Currency ডেটা টাইপ ব্যবহার করা হয়। খ. Currency ডেটা টাইপ মুদ্রা জাতীয় ডেটা সংরক্ষণের জন্য ব্যবহার করা হয়। বেতন, দাম, ব্যালেন্স ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে বেতনের জন্য Currency টাইপ উপযুক্ত, কারণ বেতন মুদ্রা জাতীয় তথ্য। নাম ও বিভাগের জন্য Text টাইপ উপযুক্ত। কর্মচারী আইডির জন্য Number টাইপ উপযুক্ত। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্রদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণ করা হয়েছে। ডেটাবেজে AutoNumber ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "AutoNumber ডেটা টাইপ কী?",
+          "solution": "AutoNumber ডেটা টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। এ টাইপে প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "AutoNumber ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "AutoNumber ডেটা টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। এ টাইপে প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে। প্রাইমারি কী হিসেবে এই টাইপ ব্যবহার করা যায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপ উপযুক্ত, কারণ প্রতিটি ছাত্রের জন্য আলাদা আলাদা নম্বর দরকার। AutoNumber টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপের সুবিধা বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপের সুবিধা হলো প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে। এভাবে প্রাইমারি কী হিসেবে AutoNumber ব্যবহার করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. AutoNumber ডেটা টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। এ টাইপে প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে। খ. AutoNumber ডেটা টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। এ টাইপে প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে। প্রাইমারি কী হিসেবে এই টাইপ ব্যবহার করা যায়। গ. উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপ উপযুক্ত, কারণ প্রতিটি ছাত্রের জন্য আলাদা আলাদা নম্বর দরকার। AutoNumber টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে AutoNumber টাইপের সুবিধা হলো প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে। এভাবে প্রাইমারি কী হিসেবে AutoNumber ব্যবহার করা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। ডেটাবেজে Date/Time ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Date/Time ডেটা টাইপ কী?",
+          "solution": "তারিখ ও সময় জাতীয় ডেটা সংরক্ষণের জন্য Date/Time ডেটা টাইপ ব্যবহার করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Date/Time ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "Date/Time ডেটা টাইপ তারিখ ও সময় জাতীয় ডেটা সংরক্ষণের জন্য ব্যবহার করা হয়। যোগদানের তারিখ, জন্ম তারিখ ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Date/Time টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে যোগদানের তারিখের জন্য Date/Time টাইপ উপযুক্ত, কারণ যোগদানের তারিখ তারিখ জাতীয় তথ্য। নাম ও বিভাগের জন্য Text টাইপ উপযুক্ত। কর্মচারী আইডির জন্য Number টাইপ উপযুক্ত। বেতনের জন্য Currency টাইপ উপযুক্ত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ নির্বাচনের গুরুত্ব বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. তারিখ ও সময় জাতীয় ডেটা সংরক্ষণের জন্য Date/Time ডেটা টাইপ ব্যবহার করা হয়। খ. Date/Time ডেটা টাইপ তারিখ ও সময় জাতীয় ডেটা সংরক্ষণের জন্য ব্যবহার করা হয়। যোগদানের তারিখ, জন্ম তারিখ ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে যোগদানের তারিখের জন্য Date/Time টাইপ উপযুক্ত, কারণ যোগদানের তারিখ তারিখ জাতীয় তথ্য। নাম ও বিভাগের জন্য Text টাইপ উপযুক্ত। কর্মচারী আইডির জন্য Number টাইপ উপযুক্ত। বেতনের জন্য Currency টাইপ উপযুক্ত। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে ডেটা টাইপ সঠিকভাবে নির্ধারণ করলে ডেটা এন্ট্রি, সংরক্ষণ ও বিশ্লেষণ সহজ হয়। ভুল ডেটা টাইপ ব্যবহার করলে ডেটা এন্ট্রিতে সমস্যা হয় এবং ডেটা বিশ্লেষণ করা যায় না।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্রদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণ করা হয়েছে। ডেটাবেজে Logical (Yes/No) ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Logical (Yes/No) ডেটা টাইপ কী?",
+          "solution": "Logical (Yes/No) ডেটা টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Logical ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "Logical ডেটা টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off। উপস্থিতি, সক্রিয়/নিষ্ক্রিয় অবস্থা ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপ উপযুক্ত, কারণ ছাত্রদের উপস্থিতি Yes/No দিয়ে সংরক্ষণ করা যায়। নাম ও ঠিকানার জন্য Text টাইপ উপযুক্ত। রোল নম্বরের জন্য Number টাইপ উপযুক্ত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপের ব্যবহার বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off। উপস্থিতি Yes/No দিয়ে সংরক্ষণ করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Logical (Yes/No) ডেটা টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off। খ. Logical ডেটা টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off। উপস্থিতি, সক্রিয়/নিষ্ক্রিয় অবস্থা ইত্যাদি সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপ উপযুক্ত, কারণ ছাত্রদের উপস্থিতি Yes/No দিয়ে সংরক্ষণ করা যায়। নাম ও ঠিকানার জন্য Text টাইপ উপযুক্ত। রোল নম্বরের জন্য Number টাইপ উপযুক্ত। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে Logical টাইপে দুটি মান থাকে: Yes/No, True/False, On/Off। উপস্থিতি Yes/No দিয়ে সংরক্ষণ করা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। ডেটাবেজে Memo ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Memo ডেটা টাইপ কী?",
+          "solution": "Memo ডেটা টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Memo ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "Memo ডেটা টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়। বিস্তারিত বর্ণনা সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপ উপযুক্ত, কারণ কর্মচারীদের বিস্তারিত তথ্য সংরক্ষণের জন্য বেশি বর্ণ দরকার। Memo টাইপে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপের ব্যবহার বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Memo ডেটা টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়। খ. Memo ডেটা টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়। বিস্তারিত বর্ণনা সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপ উপযুক্ত, কারণ কর্মচারীদের বিস্তারিত তথ্য সংরক্ষণের জন্য বেশি বর্ণ দরকার। Memo টাইপে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Memo টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি স্কুলে ছাত্রদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে ছাত্রদের নাম, রোল নম্বর, শ্রেণি ও ঠিকানা সংরক্ষণ করা হয়েছে। ডেটাবেজে OLE Object ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "OLE Object ডেটা টাইপ কী?",
+          "solution": "OLE Object ডেটা টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "OLE Object ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "OLE Object ডেটা টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়। ছাত্রদের ছবি, কর্মচারীদের ছবি সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপ উপযুক্ত, কারণ ছাত্রদের ছবি সংরক্ষণের জন্য OLE Object টাইপ ব্যবহার করা হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপের ব্যবহার বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. OLE Object ডেটা টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়। খ. OLE Object ডেটা টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়। ছাত্রদের ছবি, কর্মচারীদের ছবি সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপ উপযুক্ত, কারণ ছাত্রদের ছবি সংরক্ষণের জন্য OLE Object টাইপ ব্যবহার করা হয়। ঘ. উদ্দীপকের স্কুলের ডেটাবেজে OLE Object টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কোম্পানিতে কর্মচারীদের তথ্য সংরক্ষণের জন্য ডেটাবেজ তৈরি করা হয়েছে। ডেটাবেজে কর্মচারীদের নাম, কর্মচারী আইডি, বিভাগ ও বেতন সংরক্ষণ করা হয়েছে। ডেটাবেজে Hyperlink ডেটা টাইপ ব্যবহার করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Hyperlink ডেটা টাইপ কী?",
+          "solution": "Hyperlink ডেটা টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Hyperlink ডেটা টাইপের ব্যবহার ব্যাখ্যা করো।",
+          "solution": "Hyperlink ডেটা টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়। ওয়েবসাইটের ঠিকানা, ইমেইল ঠিকানা সংরক্ষণে এই টাইপ ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপ উপযুক্ত কি? ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপ উপযুক্ত, কারণ কর্মচারীদের ওয়েবসাইটের ঠিকানা সংরক্ষণের জন্য Hyperlink টাইপ ব্যবহার করা হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপের ব্যবহার বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ক. Hyperlink ডেটা টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়। খ. Hyperlink ডেটা টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়। ওয়েবসাইটের ঠিকানা, ইমেইল ঠিকানা সংরক্ষণে এই টাইপ ব্যবহার করা হয়। গ. উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপ উপযুক্ত, কারণ কর্মচারীদের ওয়েবসাইটের ঠিকানা সংরক্ষণের জন্য Hyperlink টাইপ ব্যবহার করা হয়। ঘ. উদ্দীপকের কোম্পানির ডেটাবেজে Hyperlink টাইপে কোনো ওয়েবসাইটের ঠিকানা সংরক্ষণ করা যায়।",
+      "page": "Mahbubur Rahman printed p.347",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটা (Data) বলতে কী বোঝায়?",
+      "explanation": "ডেটা শব্দটি Datum শব্দের বহুবচন। ডেটা হলো কাঁচা তথ্য বা উপাত্ত, যা প্রক্রিয়াকরণের মাধ্যমে তথ্যে রূপান্তরিত হয়।",
+      "page": "Mahbubur Rahman printed p.337",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটাবেজ বলতে কী বোঝায়?",
+      "explanation": "ডেটাবেজ শব্দটি Data + Base শব্দের সমন্বয়ে গঠিত, অর্থাৎ ডেটার ভিত্তি বা ডেটার সংগ্রহ। ডেটাবেজ হলো পরস্পর সম্পর্কযুক্ত এক বা একাধিক ডেটা টেবিল বা ফাইলের সমষ্টি, যেখানে কোনো প্রতিষ্ঠানের সমগ্র ডেটা সংরক্ষিত থাকে।",
+      "page": "Mahbubur Rahman printed p.337",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটাবেজ ব্যবহারের পাঁচটি সুবিধা লেখো।",
+      "explanation": "ডেটাবেজ ব্যবহারের সুবিধাগুলো হলো: (১) অতি দ্রুত ডেটা উপস্থাপন করা যায়; (২) অত্যন্ত দক্ষতার সাথে ডেটা পরিচালনা করা যায়; (৩) সংরক্ষিত ডেটাকে পরবর্তীতে আপডেট করা যায়; (৪) ডেটাবেজের তথ্যসমূহকে প্রয়োজনে অ্যাসেন্ডিং ও ডিসেন্ডিং অর্ডারে সাজানো যায়; (৫) অল্প সময়ে ডেটার বিশ্লেষণ ঘটানো যায়।",
+      "page": "Mahbubur Rahman printed p.337",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটাবেজের উপাদানগুলো কী কী?",
+      "explanation": "ডেটাবেজের উপাদানগুলো হলো Data, Record, Field, Data Table।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "রেকর্ড বলতে কী বোঝায়?",
+      "explanation": "অনেকগুলো ফিল্ডের সমন্বয়ে গঠিত হয় একটি রেকর্ড। সাধারণত পুরো একটি রো বা সারিকেই রেকর্ড হিসেবে বিবেচনা করা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ফিল্ড বলতে কী বোঝায়?",
+      "explanation": "রেকর্ডের ক্ষুদ্রতম অংশ হলো ফিল্ড। রেকর্ডের প্রতিটি উপাদান যেমন—নাম, ঠিকানা, টেলিফোন নম্বর ইত্যাদিকে এক একটি ফিল্ড বলা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটা টেবিল বলতে কী বোঝায়?",
+      "explanation": "সমজাতীয় সকল ডেটাকে এক একটি টেবিলে সংরক্ষণ করে রাখা হয়। টেবিল হচ্ছে ডেটাবেজের একটি মৌলিক উপাদান। ইহা রো-এবং কলামের সমন্বয়ে গঠিত হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Entity বলতে কী বোঝায়?",
+      "explanation": "Entity হলো সত্তা যা দিয়ে অবজেক্টকে চিহ্নিত করা যায়। কোনো ডেটা টেবিলকে চিহ্নিত করার জন্য টেবিলের জন্য যে নাম ব্যবহার করা হয় তাকে Entity বলা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Attribute বলতে কী বোঝায়?",
+      "explanation": "একটি Entity-র বৈশিষ্ট্য প্রকাশের জন্য যে সমস্ত ফিল্ড বা আইটেম বা উপাদান ব্যবহার করা হয় তাকে Attribute বলা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Value বলতে কী বোঝায়?",
+      "explanation": "প্রত্যেকটি Attribute-এর যে মান থাকে তাকে Value বলা হয়। যেমন—নাম Attribute-এর Value হচ্ছে জাফর আহমেদ।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Entity Set বলতে কী বোঝায়?",
+      "explanation": "একই ধরনের সকল Entity-র সমষ্টিকে Entity Set বলা হয়।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "E-R Model বলতে কী বোঝায়?",
+      "explanation": "E-R Model (Entity Relationship Model) হলো একটি Entity Set-এর বিভিন্ন Entity-গুলোর মধ্যে সম্পর্ক প্রকাশের পদ্ধতি। E-R Model-এর প্রবর্তক E.F. Codd, ১৯৭০ সালে।",
+      "page": "Mahbubur Rahman printed p.338",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "প্রাইমারি কী বলতে কী বোঝায়?",
+      "explanation": "ডেটা টেবিলের যে ফিল্ডের মানসমূহ দ্বারা একটি রেকর্ডকে অন্যান্য রেকর্ড থেকে সম্পূর্ণরূপে আলাদা করা যায় সেই ফিল্ডকে প্রাইমারি কী বলা হয়।",
+      "page": "Mahbubur Rahman printed p.341",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ফরেন কী বলতে কী বোঝায়?",
+      "explanation": "যদি ডেটাবেজের একটি টেবিলের প্রাইমারি কী অন্য ডেটা টেবিলে সাধারণ কী হিসেবে ব্যবহৃত হয়, তাহলে প্রথম ফাইলের প্রাইমারি কী-কে দ্বিতীয় ফাইলের জন্য ফরেন কী বলা হয়।",
+      "page": "Mahbubur Rahman printed p.341",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "কম্পোজিট প্রাইমারি কী বলতে কী বোঝায়?",
+      "explanation": "অনেক ক্ষেত্রে কোনো টেবিলে সুনির্দিষ্ট কোনো প্রাইমারি কী নাও থাকতে পারে। তখন দুই বা ততোধিক অ্যাট্রিবিউট বা কী সমষ্টি সম্মিলিতভাবে কোনো Entity Set-কে শনাক্ত করতে পারে, তাদেরকে কম্পোজিট প্রাইমারি কী বলা হয়।",
+      "page": "Mahbubur Rahman printed p.341",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DBMS বলতে কী বোঝায়?",
+      "explanation": "DBMS (Database Management System) হলো পরস্পর সম্পর্কযুক্ত তথ্য একসেস, সংরক্ষণ, নিয়ন্ত্রণ ও পরিচালনার জন্য প্রয়োজনীয় সফটওয়্যার। এটি ব্যবহারকারী ও ডেটাবেজের মধ্যে সমন্বয়কারী হিসেবে কাজ করে।",
+      "page": "Mahbubur Rahman printed p.342",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DBMS-এর প্রধান তিনটি কাজ কী কী?",
+      "explanation": "DBMS-এর প্রধান তিনটি কাজ হলো: (১) ডেটাবেজ সৃজন—ডেটাবেজ তৈরি করা; (২) ডেটাবেজ ইন্টারোগেশন—ডেটা খুঁজে বের করা ও প্রশ্ন করা; (৩) ডেটাবেজ রক্ষণাবেক্ষণ—ডেটা আপডেট, ব্যাকআপ ও নিরাপত্তা রক্ষা করা।",
+      "page": "Mahbubur Rahman printed p.342",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DBMS-এর ধরনগুলো কী কী?",
+      "explanation": "DBMS-এর ধরনগুলো হলো Client Server, Distributed এবং Web enable।",
+      "page": "Mahbubur Rahman printed p.343",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "RDBMS বলতে কী বোঝায়?",
+      "explanation": "ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। রিলেশন করা ডেটা টেবিলের সমন্বয়ে গঠিত ডেটাবেজকে রিলেশনাল ডেটাবেজ বলা হয়।",
+      "page": "Mahbubur Rahman printed p.343",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "RDBMS-এর ব্যবহারের ক্ষেত্রগুলো লেখো।",
+      "explanation": "RDBMS-এর ব্যবহারের ক্ষেত্রগুলো হলো: ব্যাংক ও বীমা, হাসপাতাল, রেলওয়ে, এয়ারলাইন, শিক্ষা প্রতিষ্ঠান, বৃহৎ প্রতিষ্ঠান, ই-কমার্স ও ইলেকট্রনিক পেমেন্ট সিস্টেম, জনসংখ্যা তথ্য ও ভোটার তালিকা, সরকারি সংস্থা/মন্ত্রণালয়।",
+      "page": "Mahbubur Rahman printed p.344",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটা টাইপ বলতে কী বোঝায়?",
+      "explanation": "ডেটাবেজ ডিজাইন/তৈরি করার সময় একটি গুরুত্বপূর্ণ বিষয় হলো ডেটাবেজের ফিল্ডের টাইপ অর্থাৎ ফিল্ডে এন্ট্রিকৃত ডেটার ধরন। ডেটার টাইপ বিভিন্ন প্রকার হতে পারে।",
+      "page": "Mahbubur Rahman printed p.345",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Text/Character ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "সাধারণত কার্যাত্মিক ডেটার ক্ষেত্রে Text/Character ডেটা টাইপ ব্যবহার করা হয়। এ ফিল্ডে বর্ণের সাথে সাথে সংখ্যাও লেখা যায়। এ ফিল্ডে সর্বোচ্চ ২৫৫টি বর্ণ লেখা যায়।",
+      "page": "Mahbubur Rahman printed p.345",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Number/Numeric ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "সংখ্যাভিত্তিক ডেটার ক্ষেত্রে Number/Numeric ডেটা টাইপ ব্যবহার করা হয়। এ ফিল্ডে কোনো বর্ণ লেখা যায় না।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "AutoNumber ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "AutoNumber ডেটা টাইপে একবার ডেটা এন্ট্রি করলে পরবর্তীতে এটি অটোমেটিক্যালি নম্বর দিয়ে যায়। এ টাইপে প্রতিটি এন্ট্রির জন্য আলাদা আলাদা নম্বর থাকে।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Currency ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "মুদ্রা জাতীয় ডেটা সংরক্ষণের জন্য Currency ডেটা টাইপ ব্যবহার করা হয়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Date/Time ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "তারিখ ও সময় জাতীয় ডেটা সংরক্ষণের জন্য Date/Time ডেটা টাইপ ব্যবহার করা হয়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Memo ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "Memo ডেটা টাইপে Text ডেটা টাইপের চেয়ে বেশি ডেটা রাখা যায়। এখানে সর্বোচ্চ ৬৫,৫৩৫টি বর্ণ লেখা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "OLE Object ডেটা টাইপের ব্যবহার লেখো।",
+      "explanation": "OLE Object ডেটা টাইপে কোনো ছবি, শব্দ, গ্রাফ ইত্যাদি সংরক্ষণ করা যায়।",
+      "page": "Mahbubur Rahman printed p.346",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Field Size প্রপার্টিজ বলতে কী বোঝায়?",
+      "explanation": "Field Size প্রপার্টিজ দিয়ে ফিল্ডে কতগুলো ক্যারেক্টার বা সংখ্যা এন্ট্রি করা যাবে তা নির্ধারণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.347",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Validation Rule প্রপার্টিজ বলতে কী বোঝায়?",
+      "explanation": "Validation Rule প্রপার্টিজ দিয়ে ডেটা এন্ট্রি নিয়ন্ত্রণ করা হয়।",
+      "page": "Mahbubur Rahman printed p.347",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "কুয়েরি বলতে কী বোঝায়?",
+      "explanation": "শর্তসাপেক্ষে ডেটাবেজ থেকে কোনো ডেটা খুঁজে বের করাকে কুয়েরি বলা হয়। যেমন—City=\"Dhaka\" শর্ত দিলে শুধু ঢাকার রেকর্ডগুলো দেখাবে।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "SQL বলতে কী বোঝায়?",
+      "explanation": "SQL (Structured Query Language) হলো ডেটাবেজ থেকে ডেটা খোঁজার ভাষা। SQL-এ SELECT, FROM, WHERE কীওয়ার্ড ব্যবহার করে ডেটা খোঁজা হয়।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Sorting বলতে কী বোঝায়?",
+      "explanation": "Sorting হলো ডেটা সাজানো। Ascending সর্টিং হলো ছোট থেকে বড় ক্রমে সাজানো, Descending হলো বড় থেকে ছোট ক্রমে সাজানো।",
+      "page": "Mahbubur Rahman printed p.348",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Indexing বলতে কী বোঝায়?",
+      "explanation": "Indexing হলো ডেটা খোঁজার জন্য ইনডেক্স তৈরি করা। ইনডেক্সিং-এর সুবিধা হলো দ্রুত ডেটা খোঁজা যায়। ইনডেক্সিং-এর অসুবিধা হলো অতিরিক্ত মেমোরি দখল করে।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটাবেজ রিলেশন বলতে কী বোঝায়?",
+      "explanation": "ডেটাবেজে একাধিক টেবিল একটি নির্দিষ্ট ফিল্ডের (প্রাইমারি কী ও ফরেন কী) উপর ভিত্তি করে সম্পর্ক স্থাপন করাই হলো রিলেশনশিপ। ডেটাবেজ রিলেশনের শর্ত তিনটি।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "One-to-Many রিলেশনের উদাহরণ দাও।",
+      "explanation": "One-to-Many রিলেশনে একটি উপাদানের সাথে অনেকগুলো উপাদান সম্পর্কযুক্ত হয়। যেমন—Supplier/Orders।",
+      "page": "Mahbubur Rahman printed p.349",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "রিপোর্ট বলতে কী বোঝায়?",
+      "explanation": "রিপোর্ট হলো ব্যবহারকারীর পছন্দ মতো ফরম্যাটে তথ্যাবলি প্রদর্শন বা মুদ্রণ করা।",
+      "page": "Mahbubur Rahman printed p.352",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ডেটা সিকিউরিটি বলতে কী বোঝায়?",
+      "explanation": "ডেটা সিকিউরিটি হলো ডেটাকে অননুমোদিত ব্যবহার থেকে রক্ষা করা। ডেটা সিকিউরিটির নিয়ন্ত্রণ পাঁচটি: গোপনীয়তা, সততা, প্রাপ্যতা সহ।",
+      "page": "Mahbubur Rahman printed p.354",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Plain text ও Cipher text-এর মধ্যে পার্থক্য লেখো।",
+      "explanation": "Plain text হলো মূল ডেটা, যা পড়া যায়। Cipher text হলো এনক্রিপ্ট করা ডেটা, যা পড়া যায় না।",
+      "page": "Mahbubur Rahman printed p.354",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Symmetric ও Asymmetric এনক্রিপশনের মধ্যে পার্থক্য লেখো।",
+      "explanation": "Symmetric এনক্রিপশনে একই কী দিয়ে এনক্রিপ্ট ও ডিক্রিপ্ট করা হয়। Asymmetric এনক্রিপশনে দুই প্রকারের কী (Public ও Private) ব্যবহৃত হয়।",
+      "page": "Mahbubur Rahman printed p.354",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Caesar Code বলতে কী বোঝায়?",
+      "explanation": "Caesar Code হলো Shift Cipher, যেখানে প্রতিটি বর্ণ নির্দিষ্ট সংখ্যক স্থান সরিয়ে Ciphertext তৈরি করা হয়। Plaintext \"This is a secret message\"-এর Ciphertext \"wklv lv d vhfuuhw phvvdjh\"।",
+      "page": "Mahbubur Rahman printed p.386",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DES-এর স্পেসিফিকেশন লেখো।",
+      "explanation": "DES-এর কী-এর দৈর্ঘ্য ৫৬-বিট এবং ব্লক সাইজ ৬৪-বিট। DES IBM ১৯৭০ সালে তৈরি করে এবং ১৯৭৭ সালে US Dept of Defense গ্রহণ করে।",
+      "page": "Mahbubur Rahman printed p.386",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "AES-এর স্পেসিফিকেশন লেখো।",
+      "explanation": "AES-এর কী-এর দৈর্ঘ্য ১২৮/১৯২/২৫৬-বিট এবং ব্লক সাইজ ১২৮-বিট। AES-এ ১০/১২/১৪ রাউন্ড থাকে। AES NIST তৈরি করেছে।",
+      "page": "Mahbubur Rahman printed p.387",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ACID বলতে কী বোঝায়?",
+      "explanation": "ACID-এর পূর্ণরূপ Atomicity, Consistency, Isolation, Durability। Atomicity হলো Transaction-এর সব অপারেশন একসাথে সম্পন্ন হবে। Consistency হলো Transaction সম্পন্ন হলে ডেটাবেজ সঠিক অবস্থায় থাকবে। Isolation হলো এক Transaction অন্য Transaction-কে প্রভাবিত করবে না। Durability হলো Transaction সম্পন্ন হলে ডেটা স্থায়ীভাবে সংরক্ষিত হবে।",
+      "page": "NCTB printed p.240",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "Big Data-এর 5 V's কোনগুলো?",
+      "explanation": "Big Data-এর 5 V's হলো Volume (পরিমাণ), Velocity (গতি), Variety (বৈচিত্র্য), Veracity (সত্যতা), Value (মূল্য)।",
+      "page": "NCTB printed p.241",
+      "difficulty": "EASY"
+    }
+  ]
+}

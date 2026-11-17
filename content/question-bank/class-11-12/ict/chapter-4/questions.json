@@ -1,0 +1,3046 @@
+{
+  "category": "Class 11-12",
+  "subject": "তথ্য ও যোগাযোগ প্রযুক্তি",
+  "topic": "৪. ওয়েব ডিজাইন পরিচিতি ও HTML",
+  "book": "তথ্য ও যোগাযোগ প্রযুক্তি (একাদশ-দ্বাদশ ও আলিম শ্রেণির জন্য) + HSC_ICT_Book_By_Mahbubur_Rahman",
+  "edition": "২০২৬-২৭ পরিমার্জিত (NCTB) + ২০১৩-১৪ (Mahbubur Rahman)",
+  "sourceUrl": "https://drive.google.com/file/d/1oYmkhOFC6SzaweKEPPkFGM-XfNndfQ1F/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ওয়েব ডিজাইন (Web Design) বলতে কী বোঝায়?",
+      "options": {
+        "A": "শুধু ওয়েবসাইটের রঙ বদলানো",
+        "B": "ওয়েবসাইটের পেজসমূহের কাঠামো, রূপ ও কার্যকারিতা পরিকল্পনা ও তৈরি করার প্রক্রিয়া",
+        "C": "কম্পিউটার হার্ডওয়্যার তৈরি করা",
+        "D": "ইন্টারনেট সংযোগ দেওয়া"
+      },
+      "correct": "B",
+      "explanation": "ওয়েব ডিজাইন হলো ওয়েবসাইটের পেজসমূহের কাঠামো, রূপ ও কার্যকারিতা পরিকল্পনা ও তৈরি করার প্রক্রিয়া।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়ার্ল্ড ওয়াইড ওয়েব (WWW) কত সালে উদ্ভাবিত হয়?",
+      "options": {
+        "A": "১৯৮০",
+        "B": "১৯৮৯",
+        "C": "১৯৯৫",
+        "D": "১৯৭৫"
+      },
+      "correct": "B",
+      "explanation": "ওয়ার্ল্ড ওয়াইড ওয়েব ১৯৮৯ সালে উদ্ভাবিত হয়।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়ার্ল্ড ওয়াইড ওয়েবের উদ্ভাবক কে?",
+      "options": {
+        "A": "মার্শাল ম্যাকলুহান",
+        "B": "মার্ক জুকারবার্গ",
+        "C": "বিল গেটস",
+        "D": "টিম বার্নার্স-লি"
+      },
+      "correct": "D",
+      "explanation": "ওয়ার্ল্ড ওয়াইড ওয়েবের উদ্ভাবক হলেন টিম বার্নার্স-লি।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "টিম বার্নার্স-লি কোন প্রতিষ্ঠানে কর্মরত অবস্থায় WWW উদ্ভাবন করেন?",
+      "options": {
+        "A": "CERN",
+        "B": "নাসা",
+        "C": "মাইক্রোসফট",
+        "D": "গুগল"
+      },
+      "correct": "A",
+      "explanation": "টিম বার্নার্স-লি CERN-এ কর্মরত অবস্থায় ওয়ার্ল্ড ওয়াইড ওয়েব উদ্ভাবন করেন।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "হাইপারটেক্সট (Hypertext) বলতে কী বোঝায়?",
+      "options": {
+        "A": "গোপন লেখা",
+        "B": "শুধু ছবি সম্বলিত লেখা",
+        "C": "অন্য পেজ বা তথ্যের সাথে সংযুক্ত লেখা, যাতে ক্লিক করে অন্য জায়গায় যাওয়া যায়",
+        "D": "বড় আকারের টেক্সট ফাইল"
+      },
+      "correct": "C",
+      "explanation": "হাইপারটেক্সট হলো অন্য পেজ বা তথ্যের সাথে সংযুক্ত লেখা, যাতে ক্লিক করে অন্য জায়গায় যাওয়া যায়।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "হাইপারলিংক (Hyperlink) কী?",
+      "options": {
+        "A": "ছবি আঁকার টুল",
+        "B": "ফাইল মুছে ফেলার নির্দেশ",
+        "C": "একটি পেজ থেকে অন্য পেজে যাওয়ার সংযোগ",
+        "D": "কম্পিউটারের তারের সংযোগ"
+      },
+      "correct": "C",
+      "explanation": "হাইপারলিংক হলো একটি পেজ থেকে অন্য পেজে যাওয়ার সংযোগ।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "হাইপারমিডিয়া (Hypermedia) বলতে কী বোঝায়?",
+      "options": {
+        "A": "হাইপারলিংকের মাধ্যমে টেক্সট, ছবি, ভিডিও ইত্যাদি মিডিয়ার সংযোগ",
+        "B": "শুধু অডিও ফাইল",
+        "C": "প্রিন্টারের সংযোগ",
+        "D": "শুধু টেক্সটের সংযোগ"
+      },
+      "correct": "A",
+      "explanation": "হাইপারমিডিয়া হলো হাইপারলিংকের মাধ্যমে টেক্সট, ছবি, ভিডিও ইত্যাদি মিডিয়ার সংযোগ।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "IP Address-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "Internet Page Address",
+        "B": "Integrated Protocol Access",
+        "C": "Internet Protocol Address",
+        "D": "Internal Program Address"
+      },
+      "correct": "C",
+      "explanation": "IP Address-এর পূর্ণরূপ হলো Internet Protocol Address।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "IP Address দিয়ে কী নির্দেশ করা হয়?",
+      "options": {
+        "A": "ইন্টারনেটে সংযুক্ত প্রতিটি ডিভাইসের অনন্য ঠিকানা",
+        "B": "ব্যবহারকারীর নাম",
+        "C": "ফাইলের সাইজ",
+        "D": "ওয়েবসাইটের রঙ"
+      },
+      "correct": "A",
+      "explanation": "IP Address হলো ইন্টারনেটে সংযুক্ত প্রতিটি ডিভাইসের অনন্য ঠিকানা।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "বইয়ে উল্লিখিত www.google.com-এর IP Address কত?",
+      "options": {
+        "A": "10.0.0.1",
+        "B": "172.16.0.1",
+        "C": "192.168.1.1",
+        "D": "142.250.190.78"
+      },
+      "correct": "D",
+      "explanation": "বইয়ে www.google.com-এর IP Address হিসেবে 142.250.190.78 উল্লেখ করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডোমেইন নামকে IP Address-এ রূপান্তর করে কোন সিস্টেম?",
+      "options": {
+        "A": "FTP",
+        "B": "SMTP",
+        "C": "DNS (Domain Name System)",
+        "D": "HTTP"
+      },
+      "correct": "C",
+      "explanation": "ডোমেইন নামকে IP Address-এ রূপান্তর করে DNS (Domain Name System)।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "IANA-এর প্রধান কাজ কী?",
+      "options": {
+        "A": "IP Address ও ডোমেইন নামের বণ্টন পরিচালনা করা",
+        "B": "ছবি আঁকা",
+        "C": "ভিডিও সম্পাদনা করা",
+        "D": "ওয়েবসাইট তৈরি করা"
+      },
+      "correct": "A",
+      "explanation": "IANA IP Address ও ডোমেইন নামের বণ্টন পরিচালনা করে।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েব ব্রাউজার কী?",
+      "options": {
+        "A": "ভাইরাস প্রতিরোধক সফটওয়্যার",
+        "B": "অপারেটিং সিস্টেম",
+        "C": "ওয়েবপেজ দেখা ও ইন্টারঅ্যাক্ট করার সফটওয়্যার",
+        "D": "ছবি সম্পাদনার সফটওয়্যার"
+      },
+      "correct": "C",
+      "explanation": "ওয়েব ব্রাউজার হলো ওয়েবপেজ দেখা ও ইন্টারঅ্যাক্ট করার সফটওয়্যার।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি একটি ওয়েব ব্রাউজার?",
+      "options": {
+        "A": "MS Word",
+        "B": "VLC Player",
+        "C": "Mozilla Firefox",
+        "D": "Adobe Photoshop"
+      },
+      "correct": "C",
+      "explanation": "Mozilla Firefox একটি ওয়েব ব্রাউজার। এছাড়া Google Chrome, Safari, Brave, Edge-ও ব্রাউজার।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "স্ট্যাটিক ওয়েবসাইট কী?",
+      "options": {
+        "A": "যা ইন্টারনেট ছাড়া চলে",
+        "B": "যার কনটেন্ট স্বয়ংক্রিয়ভাবে বদলায়",
+        "C": "যার কনটেন্ট স্থির, পরিবর্তন করতে কোড পরিবর্তন করতে হয়",
+        "D": "যা শুধু ছবি দেখায়"
+      },
+      "correct": "C",
+      "explanation": "স্ট্যাটিক ওয়েবসাইটের কনটেন্ট স্থির থাকে; পরিবর্তন করতে কোড পরিবর্তন করতে হয়।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ডাইনামিক ওয়েবসাইট কী?",
+      "options": {
+        "A": "যার কনটেন্ট কখনো বদলায় না",
+        "B": "যার কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে পরিবর্তিত হয়",
+        "C": "যা শুধু টেক্সট দেখায়",
+        "D": "যা অফলাইনে চলে"
+      },
+      "correct": "B",
+      "explanation": "ডাইনামিক ওয়েবসাইটের কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে পরিবর্তিত হয়।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "youtube.com কোন ধরনের ওয়েবসাইটের উদাহরণ?",
+      "options": {
+        "A": "স্ট্যাটিক ওয়েবসাইট",
+        "B": "ডাইনামিক ওয়েবসাইট",
+        "C": "লোকাল ওয়েবসাইট",
+        "D": "অফলাইন ওয়েবসাইট"
+      },
+      "correct": "B",
+      "explanation": "youtube.com একটি ডাইনামিক ওয়েবসাইটের উদাহরণ।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "services.nidw.gov.bd ও passport.gov.bd কোন ধরনের ওয়েবসাইটের উদাহরণ?",
+      "options": {
+        "A": "লোকাল ওয়েবসাইট",
+        "B": "প্রিন্ট ওয়েবসাইট",
+        "C": "স্ট্যাটিক ওয়েবসাইট",
+        "D": "ডাইনামিক ওয়েবসাইট"
+      },
+      "correct": "D",
+      "explanation": "services.nidw.gov.bd ও passport.gov.bd ডাইনামিক ওয়েবসাইটের উদাহরণ।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েব সার্ভার কী?",
+      "options": {
+        "A": "ছবি আঁকার যন্ত্র",
+        "B": "প্রিন্টার",
+        "C": "স্ক্যানার",
+        "D": "ওয়েবসাইটের ফাইল সংরক্ষণ করে ব্যবহারকারীর অনুরোধে পাঠায় এমন কম্পিউটার/সফটওয়্যার"
+      },
+      "correct": "D",
+      "explanation": "ওয়েব সার্ভার হলো ওয়েবসাইটের ফাইল সংরক্ষণ করে ব্যবহারকারীর অনুরোধে পাঠায় এমন কম্পিউটার/সফটওয়্যার।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTTP-এর ডিফল্ট পোর্ট নম্বর কত?",
+      "options": {
+        "A": "25",
+        "B": "80",
+        "C": "443",
+        "D": "21"
+      },
+      "correct": "B",
+      "explanation": "HTTP-এর ডিফল্ট পোর্ট নম্বর হলো 80।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTTPS-এর ডিফল্ট পোর্ট নম্বর কত?",
+      "options": {
+        "A": "80",
+        "B": "443",
+        "C": "8080",
+        "D": "21"
+      },
+      "correct": "B",
+      "explanation": "HTTPS-এর ডিফল্ট পোর্ট নম্বর হলো 443।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ক্লায়েন্ট-সার্ভার মডেলে ক্লায়েন্ট কোনটি?",
+      "options": {
+        "A": "ওয়েব ব্রাউজার",
+        "B": "ওয়েব সার্ভার",
+        "C": "ডাটাবেস সার্ভার",
+        "D": "রাউটার"
+      },
+      "correct": "A",
+      "explanation": "ক্লায়েন্ট-সার্ভার মডেলে ক্লায়েন্ট হলো ওয়েব ব্রাউজার, যা HTML/CSS/JS রেন্ডার করে।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "DNS সার্ভারের কাজ কী?",
+      "options": {
+        "A": "ভিডিও স্ট্রিম করা",
+        "B": "ডোমেইন নামকে IP Address-এ রূপান্তর করা",
+        "C": "ছবি সংরক্ষণ করা",
+        "D": "ইমেইল পাঠানো"
+      },
+      "correct": "B",
+      "explanation": "DNS সার্ভারের কাজ হলো ডোমেইন নামকে IP Address-এ রূপান্তর করা।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "সার্ভার-ক্লায়েন্ট যোগাযোগে ক্লায়েন্ট প্রথমে কী পাঠায়?",
+      "options": {
+        "A": "রেসপন্স",
+        "B": "ফাইল",
+        "C": "পাসওয়ার্ড",
+        "D": "রিকোয়েস্ট (অনুরোধ)"
+      },
+      "correct": "D",
+      "explanation": "সার্ভার-ক্লায়েন্ট যোগাযোগে ক্লায়েন্ট প্রথমে রিকোয়েস্ট (অনুরোধ) পাঠায়, সার্ভার রেসপন্স দেয়।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি সার্ভার-সাইড প্রোগ্রামিং ভাষা?",
+      "options": {
+        "A": "HTML",
+        "B": "CSS",
+        "C": "JavaScript",
+        "D": "PHP"
+      },
+      "correct": "D",
+      "explanation": "PHP একটি সার্ভার-সাইড প্রোগ্রামিং ভাষা। এছাড়া Python, Java, Ruby-ও সার্ভার-সাইড ভাষা।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "Home Tool Markup Language",
+        "B": "Hyper Text Markup Language",
+        "C": "High Text Machine Language",
+        "D": "Hyperlink Text Mode Language"
+      },
+      "correct": "B",
+      "explanation": "HTML-এর পূর্ণরূপ হলো Hyper Text Markup Language।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML কোন ধরনের ভাষা?",
+      "options": {
+        "A": "স্ক্রিপ্টিং ভাষা",
+        "B": "ডাটাবেস ভাষা",
+        "C": "প্রোগ্রামিং ভাষা",
+        "D": "মার্কআপ ভাষা"
+      },
+      "correct": "D",
+      "explanation": "HTML একটি মার্কআপ ভাষা, প্রোগ্রামিং ভাষা নয়।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML ফাইলের এক্সটেনশন কী?",
+      "options": {
+        "A": ".txt",
+        "B": ".html",
+        "C": ".exe",
+        "D": ".jpg"
+      },
+      "correct": "B",
+      "explanation": "HTML ফাইলের এক্সটেনশন হলো .html (যেমন: mypage.html)।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML কোড লেখার জন্য কোন সফটওয়্যার ব্যবহার করা যায়?",
+      "options": {
+        "A": "ছবি সম্পাদনার সফটওয়্যার",
+        "B": "ভিডিও প্লেয়ার",
+        "C": "অ্যান্টিভাইরাস",
+        "D": "টেক্সট এডিটর (যেমন Notepad)"
+      },
+      "correct": "D",
+      "explanation": "HTML কোড লেখার জন্য টেক্সট এডিটর (যেমন Notepad) ব্যবহার করা যায়।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML ফাইল ব্রাউজারে খুলে দেখার পর কোডে পরিবর্তন করলে নতুন রূপ দেখতে কী করতে হয়?",
+      "options": {
+        "A": "কম্পিউটার রিস্টার্ট",
+        "B": "রিলোড (F5 চাপা)",
+        "C": "ফাইল মুছে ফেলা",
+        "D": "প্রিন্ট করা"
+      },
+      "correct": "B",
+      "explanation": "HTML ফাইল ব্রাউজারে খুলে দেখার পর কোডে পরিবর্তন করলে রিলোড (F5) করলে নতুন রূপ দেখা যায়।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML ট্যাগ কী?",
+      "options": {
+        "A": "কোণাকৃতি বন্ধনী (< >) দিয়ে আবদ্ধ নির্দেশনা, যা ব্রাউজারকে বলে কীভাবে কনটেন্ট দেখাবে",
+        "B": "কম্পিউটারের তার",
+        "C": "ফাইলের নাম",
+        "D": "পাসওয়ার্ড"
+      },
+      "correct": "A",
+      "explanation": "HTML ট্যাগ হলো কোণাকৃতি বন্ধনী (< >) দিয়ে আবদ্ধ নির্দেশনা, যা ব্রাউজারকে বলে কীভাবে কনটেন্ট দেখাবে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ক্লোজিং ট্যাগে ওপেনিং ট্যাগের তুলনায় অতিরিক্ত কোন চিহ্ন থাকে?",
+      "options": {
+        "A": "*",
+        "B": "/",
+        "C": "#",
+        "D": "@"
+      },
+      "correct": "B",
+      "explanation": "ক্লোজিং ট্যাগে ওপেনিং ট্যাগের তুলনায় অতিরিক্ত '/' চিহ্ন থাকে (যেমন: </p>)।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি এমটি (Empty) ট্যাগ?",
+      "options": {
+        "A": "<body>",
+        "B": "<p>",
+        "C": "<br>",
+        "D": "<html>"
+      },
+      "correct": "C",
+      "explanation": "<br> একটি এমটি ট্যাগ, যার কোনো ক্লোজিং ট্যাগ বা কনটেন্ট নেই। <hr>-ও এমটি ট্যাগ।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<!DOCTYPE html> কী নির্দেশ করে?",
+      "options": {
+        "A": "ডকুমেন্টটি XHTML",
+        "B": "ডকুমেন্টটি XML",
+        "C": "ডকুমেন্টটি HTML5",
+        "D": "ডকুমেন্টটি HTML4"
+      },
+      "correct": "C",
+      "explanation": "<!DOCTYPE html> নির্দেশ করে ডকুমেন্টটি HTML5।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<html> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "ছবি যোগ করা",
+        "B": "টেবিল তৈরি করা",
+        "C": "পুরো HTML ডকুমেন্টকে আবদ্ধ করা",
+        "D": "শুধু শিরোনাম দেওয়া"
+      },
+      "correct": "C",
+      "explanation": "<html> ট্যাগ পুরো HTML ডকুমেন্টকে আবদ্ধ করে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<head> অংশে সাধারণত কী থাকে?",
+      "options": {
+        "A": "পেজের দৃশ্যমান কনটেন্ট",
+        "B": "পেজের শিরোনাম (title) ও মেটা তথ্য",
+        "C": "টেবিল",
+        "D": "ছবি"
+      },
+      "correct": "B",
+      "explanation": "<head> অংশে পেজের শিরোনাম (title) ও মেটা তথ্য থাকে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<title> ট্যাগে লেখা কোথায় দেখায়?",
+      "options": {
+        "A": "প্রিন্টারে",
+        "B": "ফাইলের নামে",
+        "C": "পেজের ভেতরে",
+        "D": "ব্রাউজার ট্যাব/টাইটেল বারে"
+      },
+      "correct": "D",
+      "explanation": "<title> ট্যাগে লেখা ব্রাউজার ট্যাব/টাইটেল বারে দেখায়।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<body> অংশে কী থাকে?",
+      "options": {
+        "A": "মেটা তথ্য",
+        "B": "কমেন্ট",
+        "C": "পেজের দৃশ্যমান কনটেন্ট",
+        "D": "শুধু শিরোনাম"
+      },
+      "correct": "C",
+      "explanation": "<body> অংশে পেজের দৃশ্যমান কনটেন্ট থাকে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML-এ সবচেয়ে বড় হেডিং কোনটি?",
+      "options": {
+        "A": "<h3>",
+        "B": "<head>",
+        "C": "<h6>",
+        "D": "<h1>"
+      },
+      "correct": "D",
+      "explanation": "HTML-এ সবচেয়ে বড় হেডিং হলো <h1>।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML-এ সবচেয়ে ছোট হেডিং কোনটি?",
+      "options": {
+        "A": "<h6>",
+        "B": "<h2>",
+        "C": "<p>",
+        "D": "<h1>"
+      },
+      "correct": "A",
+      "explanation": "HTML-এ সবচেয়ে ছোট হেডিং হলো <h6>।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<br> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "বোল্ড করা",
+        "B": "নতুন লাইন তৈরি করা (লাইন ব্রেক)",
+        "C": "প্যারাগ্রাফ তৈরি করা",
+        "D": "অনুভূমিক রেখা আঁকা"
+      },
+      "correct": "B",
+      "explanation": "<br> ট্যাগ লাইন ব্রেক তৈরি করে, অর্থাৎ নতুন লাইন শুরু করে।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<p> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "প্যারাগ্রাফ তৈরি করা, আগে-পরে ফাঁকা জায়গা থাকে",
+        "B": "লাইন ব্রেক দেওয়া",
+        "C": "ছবি যোগ করা",
+        "D": "লিংক তৈরি করা"
+      },
+      "correct": "A",
+      "explanation": "<p> ট্যাগ প্যারাগ্রাফ তৈরি করে এবং আগে-পরে ফাঁকা জায়গা থাকে।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<hr> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "লিস্ট তৈরি করা",
+        "B": "অনুভূমিক রেখা (horizontal rule) আঁকা",
+        "C": "উল্লম্ব রেখা আঁকা",
+        "D": "টেবিল তৈরি করা"
+      },
+      "correct": "B",
+      "explanation": "<hr> ট্যাগ অনুভূমিক রেখা (horizontal rule) আঁকে। এটি একটি এমটি ট্যাগ।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "বোল্ড টেক্সট তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<i>",
+        "B": "<b>",
+        "C": "<u>",
+        "D": "<s>"
+      },
+      "correct": "B",
+      "explanation": "বোল্ড টেক্সট তৈরির ট্যাগ হলো <b>।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ইটালিক টেক্সট তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<i>",
+        "B": "<em>",
+        "C": "<b>",
+        "D": "<u>"
+      },
+      "correct": "A",
+      "explanation": "ইটালিক টেক্সট তৈরির ট্যাগ হলো <i>।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "আন্ডারলাইন টেক্সট তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<i>",
+        "B": "<sub>",
+        "C": "<u>",
+        "D": "<b>"
+      },
+      "correct": "C",
+      "explanation": "আন্ডারলাইন টেক্সট তৈরির ট্যাগ হলো <u>।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "a² লেখার জন্য কোন ট্যাগ ব্যবহৃত হয়?",
+      "options": {
+        "A": "<small>",
+        "B": "<sub>",
+        "C": "<sup>",
+        "D": "<big>"
+      },
+      "correct": "C",
+      "explanation": "a² লেখার জন্য <sup> (সুপারস্ক্রিপ্ট) ট্যাগ ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "H₂O লেখার জন্য কোন ট্যাগ ব্যবহৃত হয়?",
+      "options": {
+        "A": "<i>",
+        "B": "<sup>",
+        "C": "<sub>",
+        "D": "<b>"
+      },
+      "correct": "C",
+      "explanation": "H₂O লেখার জন্য <sub> (সাবস্ক্রিপ্ট) ট্যাগ ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<em> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "টেক্সটকে এমফাসাইজ (গুরুত্ব) দেওয়া",
+        "B": "টেক্সটকে বোল্ড করা",
+        "C": "টেক্সটকে ছোট করা",
+        "D": "টেক্সটকে মুছে ফেলা"
+      },
+      "correct": "A",
+      "explanation": "<em> ট্যাগ টেক্সটকে এমফাসাইজ (গুরুত্ব) দেওয়ার জন্য ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<big> ও <small> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "টেক্সটকে সুপার ও সাবস্ক্রিপ্ট করা",
+        "B": "টেক্সটকে যথাক্রমে বড় ও ছোট করা",
+        "C": "টেক্সটকে বোল্ড ও ইটালিক করা",
+        "D": "টেক্সটকে আন্ডারলাইন ও স্ট্রাইক করা"
+      },
+      "correct": "B",
+      "explanation": "<big> ট্যাগ টেক্সটকে বড় করে এবং <small> ট্যাগ টেক্সটকে ছোট করে।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "আনঅর্ডার্ড লিস্ট তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<li>",
+        "B": "<dl>",
+        "C": "<ol>",
+        "D": "<ul>"
+      },
+      "correct": "D",
+      "explanation": "আনঅর্ডার্ড লিস্ট তৈরির ট্যাগ হলো <ul>।",
+      "page": "মুদ্রিত পৃ. ১৩৪; PDF পৃ. ১৪০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "অর্ডার্ড লিস্ট তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<ul>",
+        "B": "<ol>",
+        "C": "<li>",
+        "D": "<p>"
+      },
+      "correct": "B",
+      "explanation": "অর্ডার্ড লিস্ট তৈরির ট্যাগ হলো <ol>।",
+      "page": "মুদ্রিত পৃ. ১৩৪; PDF পৃ. ১৪০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "লিস্ট আইটেম তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<li>",
+        "B": "<tr>",
+        "C": "<ul>",
+        "D": "<ol>"
+      },
+      "correct": "A",
+      "explanation": "লিস্ট আইটেম তৈরির ট্যাগ হলো <li>।",
+      "page": "মুদ্রিত পৃ. ১৩৪; PDF পৃ. ১৪০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<ul> ট্যাগে type অ্যাট্রিবিউটের কোন মানগুলো ব্যবহার করা যায়?",
+      "options": {
+        "A": "start, end",
+        "B": "top, bottom",
+        "C": "square, circle, disc",
+        "D": "i, I, a, A, 1"
+      },
+      "correct": "C",
+      "explanation": "<ul> ট্যাগে type অ্যাট্রিবিউটের মান হিসেবে square, circle, disc ব্যবহার করা যায়।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<ol> ট্যাগে type অ্যাট্রিবিউটের কোন মানগুলো ব্যবহার করা যায়?",
+      "options": {
+        "A": "i, I, a, A, 1",
+        "B": "red, blue, green",
+        "C": "left, right, center",
+        "D": "square, circle, disc"
+      },
+      "correct": "A",
+      "explanation": "<ol> ট্যাগে type অ্যাট্রিবিউটের মান হিসেবে i, I, a, A, 1 ব্যবহার করা যায়।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "লিস্টে start অ্যাট্রিবিউট দিয়ে কী করা হয়?",
+      "options": {
+        "A": "লিস্ট মুছে ফেলা",
+        "B": "লিস্টের শুরুর নম্বর নির্ধারণ করা",
+        "C": "লিস্টের রঙ বদলানো",
+        "D": "লিস্টের ফন্ট বদলানো"
+      },
+      "correct": "B",
+      "explanation": "লিস্টে start অ্যাট্রিবিউট দিয়ে লিস্টের শুরুর নম্বর নির্ধারণ করা হয় (যেমন: ২১ থেকে ৩০ পর্যন্ত রোল নম্বর)।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML অ্যাট্রিবিউটের সাধারণ সিনট্যাক্স কোনটি?",
+      "options": {
+        "A": "<tag_name value=\"attribute_name\">",
+        "B": "<value attribute_name=\"tag_name\">",
+        "C": "<tag_name attribute_name=\"value\">",
+        "D": "<attribute_name tag_name=\"value\">"
+      },
+      "correct": "C",
+      "explanation": "HTML অ্যাট্রিবিউটের সাধারণ সিনট্যাক্স হলো <tag_name attribute_name=\"value\">।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "হাইপারলিংক তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<url>",
+        "B": "<link>",
+        "C": "<a>",
+        "D": "<href>"
+      },
+      "correct": "C",
+      "explanation": "হাইপারলিংক তৈরির ট্যাগ হলো <a>।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "href অ্যাট্রিবিউটের কাজ কী?",
+      "options": {
+        "A": "লিংকের ঠিকানা (URL) নির্দেশ করা",
+        "B": "লিংকের রঙ বদলানো",
+        "C": "লিংকের ফন্ট বদলানো",
+        "D": "লিংক মুছে ফেলা"
+      },
+      "correct": "A",
+      "explanation": "href অ্যাট্রিবিউট লিংকের ঠিকানা (URL) নির্দেশ করে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "URL-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "United Resource Locator",
+        "B": "Uniform Routing Link",
+        "C": "Uniform Resource Locator",
+        "D": "Universal Resource Link"
+      },
+      "correct": "C",
+      "explanation": "URL-এর পূর্ণরূপ হলো Uniform Resource Locator।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "target=\"_blank\" দিলে লিংক কোথায় খোলে?",
+      "options": {
+        "A": "নতুন ট্যাবে/উইন্ডোতে",
+        "B": "প্রিন্টারে",
+        "C": "ফাইলে",
+        "D": "একই ট্যাবে"
+      },
+      "correct": "A",
+      "explanation": "target=\"_blank\" দিলে লিংক নতুন ট্যাবে/উইন্ডোতে খোলে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "target=\"_self\" দিলে লিংক কোথায় খোলে?",
+      "options": {
+        "A": "একই ট্যাবে/উইন্ডোতে",
+        "B": "নতুন ব্রাউজারে",
+        "C": "ডাউনলোড ফোল্ডারে",
+        "D": "নতুন ট্যাবে"
+      },
+      "correct": "A",
+      "explanation": "target=\"_self\" দিলে লিংক একই ট্যাবে/উইন্ডোতে খোলে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েবপেজে ছবি যোগ করার ট্যাগ কোনটি?",
+      "options": {
+        "A": "<img>",
+        "B": "<image>",
+        "C": "<photo>",
+        "D": "<pic>"
+      },
+      "correct": "A",
+      "explanation": "ওয়েবপেজে ছবি যোগ করার ট্যাগ হলো <img>।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "<img> ট্যাগের src অ্যাট্রিবিউটের কাজ কী?",
+      "options": {
+        "A": "ছবির ফন্ট বদলানো",
+        "B": "ছবি মুছে ফেলা",
+        "C": "ছবির উৎস/পাথ নির্দেশ করা",
+        "D": "ছবির রঙ বদলানো"
+      },
+      "correct": "C",
+      "explanation": "<img> ট্যাগের src অ্যাট্রিবিউট ছবির উৎস/পাথ নির্দেশ করে (যেমন: image.jpg)।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ছবির প্রস্থ ও উচ্চতা নির্ধারণের অ্যাট্রিবিউট কোনগুলো?",
+      "options": {
+        "A": "length ও breadth",
+        "B": "size ও shape",
+        "C": "top ও bottom",
+        "D": "width ও height"
+      },
+      "correct": "D",
+      "explanation": "ছবির প্রস্থ ও উচ্চতা নির্ধারণের অ্যাট্রিবিউট হলো width ও height (যেমন: 300px × 200px)।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ছবিকে ক্লিকযোগ্য হাইপারলিংক করার উপায় কোনটি?",
+      "options": {
+        "A": "<a> ট্যাগের ভেতরে <img> ট্যাগ রাখা",
+        "B": "<img> ট্যাগের ভেতরে <a> ট্যাগ রাখা",
+        "C": "<p> ট্যাগের ভেতরে <img> রাখা",
+        "D": "<table> ট্যাগের ভেতরে <img> রাখা"
+      },
+      "correct": "A",
+      "explanation": "ছবিকে ক্লিকযোগ্য হাইপারলিংক করতে <a> ট্যাগের ভেতরে <img> ট্যাগ রাখতে হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিল তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<tbl>",
+        "B": "<grid>",
+        "C": "<tab>",
+        "D": "<table>"
+      },
+      "correct": "D",
+      "explanation": "টেবিল তৈরির ট্যাগ হলো <table>।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিলের রো (সারি) তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<td>",
+        "B": "<tr>",
+        "C": "<th>",
+        "D": "<row>"
+      },
+      "correct": "B",
+      "explanation": "টেবিলের রো (সারি) তৈরির ট্যাগ হলো <tr>।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিলের সাধারণ সেল তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<cell>",
+        "B": "<tr>",
+        "C": "<th>",
+        "D": "<td>"
+      },
+      "correct": "D",
+      "explanation": "টেবিলের সাধারণ সেল তৈরির ট্যাগ হলো <td>।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিলের হেডার সেল তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<th>",
+        "B": "<head>",
+        "C": "<tr>",
+        "D": "<td>"
+      },
+      "correct": "A",
+      "explanation": "টেবিলের হেডার সেল তৈরির ট্যাগ হলো <th>।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "টেবিলের বর্ডার দেখাতে কোন অ্যাট্রিবিউট ব্যবহৃত হয়?",
+      "options": {
+        "A": "border",
+        "B": "line",
+        "C": "frame",
+        "D": "edge"
+      },
+      "correct": "A",
+      "explanation": "টেবিলের বর্ডার দেখাতে border অ্যাট্রিবিউট ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "rowspan অ্যাট্রিবিউটের কাজ কী?",
+      "options": {
+        "A": "সেলকে একাধিক কলাম জুড়ে বিস্তৃত করা",
+        "B": "সেলের রঙ বদলানো",
+        "C": "সেল মুছে ফেলা",
+        "D": "সেলকে একাধিক রো জুড়ে বিস্তৃত করা"
+      },
+      "correct": "D",
+      "explanation": "rowspan অ্যাট্রিবিউট সেলকে একাধিক রো জুড়ে বিস্তৃত করে।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "colspan অ্যাট্রিবিউটের কাজ কী?",
+      "options": {
+        "A": "সেলের ফন্ট বদলানো",
+        "B": "সেল মুছে ফেলা",
+        "C": "সেলকে একাধিক কলাম জুড়ে বিস্তৃত করা",
+        "D": "সেলকে একাধিক রো জুড়ে বিস্তৃত করা"
+      },
+      "correct": "C",
+      "explanation": "colspan অ্যাট্রিবিউট সেলকে একাধিক কলাম জুড়ে বিস্তৃত করে।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML কমেন্টের সিনট্যাক্স কোনটি?",
+      "options": {
+        "A": "/* */",
+        "B": "//",
+        "C": "#",
+        "D": "<!-- -->"
+      },
+      "correct": "D",
+      "explanation": "HTML কমেন্টের সিনট্যাক্স হলো <!-- -->।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েবপেজে বাংলা লেখা সঠিকভাবে দেখানোর জন্য কোন মেটা ট্যাগ ব্যবহৃত হয়?",
+      "options": {
+        "A": "<meta type=\"bangla\">",
+        "B": "<meta font=\"bangla\">",
+        "C": "<meta charset=\"utf-8\">",
+        "D": "<meta lang=\"bn\">"
+      },
+      "correct": "C",
+      "explanation": "ওয়েবপেজে বাংলা লেখা সঠিকভাবে দেখানোর জন্য <meta charset=\"utf-8\"> মেটা ট্যাগ ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<div> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "শুধু টেক্সটকে বোল্ড করা",
+        "B": "ছবি যোগ করা",
+        "C": "লিংক তৈরি করা",
+        "D": "কনটেন্টের জন্য কন্টেইনার তৈরি করা (ব্লক-লেভেল)"
+      },
+      "correct": "D",
+      "explanation": "<div> ট্যাগ কনটেন্টের জন্য কন্টেইনার তৈরি করে (ব্লক-লেভেল)।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<span> ট্যাগের কাজ কী?",
+      "options": {
+        "A": "লিস্ট তৈরি করা",
+        "B": "ইনলাইন কনটেন্টের অংশ নির্বাচন করা",
+        "C": "পুরো পেজকে কন্টেইনার করা",
+        "D": "টেবিল তৈরি করা"
+      },
+      "correct": "B",
+      "explanation": "<span> ট্যাগ ইনলাইন কনটেন্টের অংশ নির্বাচন করার জন্য ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "CSS-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "Creative Style Software",
+        "B": "Colorful Style Sheets",
+        "C": "Cascading Style Sheets",
+        "D": "Computer Style System"
+      },
+      "correct": "C",
+      "explanation": "CSS-এর পূর্ণরূপ হলো Cascading Style Sheets।",
+      "page": "মুদ্রিত পৃ. ১৪১; PDF পৃ. ১৪৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "JavaScript কোন দিকে চলে?",
+      "options": {
+        "A": "ডাটাবেস-সাইড",
+        "B": "নেটওয়ার্ক-সাইড",
+        "C": "সার্ভার-সাইড",
+        "D": "ক্লায়েন্ট-সাইড"
+      },
+      "correct": "D",
+      "explanation": "JavaScript ক্লায়েন্ট-সাইডে চলে, অর্থাৎ ব্যবহারকারীর ব্রাউজারে চলে।",
+      "page": "মুদ্রিত পৃ. ১৪১; PDF পৃ. ১৪৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়্যারফ্রেম (Wireframe) কী?",
+      "options": {
+        "A": "ওয়েবসাইটের তারের সংযোগ",
+        "B": "সার্ভারের হার্ডওয়্যার",
+        "C": "ব্রাউজারের বাটন",
+        "D": "ওয়েবপেজের কাঠামোর খসড়া/নকশা"
+      },
+      "correct": "D",
+      "explanation": "ওয়্যারফ্রেম হলো ওয়েবপেজের কাঠামোর খসড়া/নকশা, যা ডিজাইনের আগে তৈরি করা হয়।",
+      "page": "মুদ্রিত পৃ. ১৪৩; PDF পৃ. ১৪৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েবসাইটের স্ট্রাকচারের ধরনগুলো কোনগুলো?",
+      "options": {
+        "A": "header, footer, sidebar, content",
+        "B": "text, image, audio, video",
+        "C": "hierarchical, network, linear, combination",
+        "D": "static, dynamic, local, remote"
+      },
+      "correct": "C",
+      "explanation": "ওয়েবসাইটের স্ট্রাকচারের ধরন হলো hierarchical, network, linear ও combination।",
+      "page": "ছাপা পৃ. ২১৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "Hierarchical ওয়েবসাইট স্ট্রাকচারের উদাহরণ কোনটি?",
+      "options": {
+        "A": "Header → Sidebar → Footer",
+        "B": "College → Arts/Science/Commerce",
+        "C": "Home → About → Contact",
+        "D": "Page 1 → Page 2 → Page 3"
+      },
+      "correct": "B",
+      "explanation": "Hierarchical স্ট্রাকচারে College-এর অধীনে Arts/Science/Commerce-এর মতো বিভাগ থাকে।",
+      "page": "ছাপা পৃ. ২১৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "URL-এর প্রথম অংশ (protocol) কোনটি?",
+      "options": {
+        "A": "htm",
+        "B": "http",
+        "C": "www",
+        "D": "com"
+      },
+      "correct": "B",
+      "explanation": "URL-এর প্রথম অংশ হলো protocol, যেমন http।",
+      "page": "ছাপা পৃ. ২২০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "http://www.systechdigital.com/itcom/main.htm — এই URL-এ সার্ভারের নাম কোনটি?",
+      "options": {
+        "A": "itcom",
+        "B": "main.htm",
+        "C": "http",
+        "D": "www.systechdigital.com"
+      },
+      "correct": "D",
+      "explanation": "URL-এ www.systechdigital.com হলো সার্ভারের নাম, itcom হলো ডিরেক্টরি এবং main.htm হলো ফাইল।",
+      "page": "ছাপা পৃ. ২২০",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": ".edu TLD কোন ধরনের প্রতিষ্ঠানের জন্য ব্যবহৃত হয়?",
+      "options": {
+        "A": "বাণিজ্যিক প্রতিষ্ঠান",
+        "B": "সরকারি প্রতিষ্ঠান",
+        "C": "সামরিক প্রতিষ্ঠান",
+        "D": "শিক্ষা প্রতিষ্ঠান"
+      },
+      "correct": "D",
+      "explanation": ".edu TLD শিক্ষা প্রতিষ্ঠানের জন্য ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২১৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": ".bd কোন দেশের কান্ট্রি কোড?",
+      "options": {
+        "A": "বাংলাদেশ",
+        "B": "ভারত",
+        "C": "পাকিস্তান",
+        "D": "নেপাল"
+      },
+      "correct": "A",
+      "explanation": ".bd হলো বাংলাদেশের কান্ট্রি কোড।",
+      "page": "ছাপা পৃ. ২১৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "লোকাল ওয়েবসাইট কোথায় থাকে?",
+      "options": {
+        "A": "স্যাটেলাইটে",
+        "B": "মোবাইলে",
+        "C": "নিজস্ব কম্পিউটারে",
+        "D": "ইন্টারনেটে হোস্ট করা সার্ভারে"
+      },
+      "correct": "C",
+      "explanation": "লোকাল ওয়েবসাইট নিজস্ব কম্পিউটারে থাকে, আর রিমোট ওয়েবসাইট ইন্টারনেটে হোস্ট করা থাকে।",
+      "page": "ছাপা পৃ. ২২১",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্রাউজারের কোন বাটনে আগের পেজে যাওয়া যায়?",
+      "options": {
+        "A": "Forward button",
+        "B": "Stop button",
+        "C": "Home button",
+        "D": "Back button"
+      },
+      "correct": "D",
+      "explanation": "ব্রাউজারের Back button-এ আগের পেজে যাওয়া যায়।",
+      "page": "ছাপা পৃ. ২২৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML কত সালে তৈরি হয়?",
+      "options": {
+        "A": "১৯৮০-এর দশকে",
+        "B": "১৯৬০-এর দশকে",
+        "C": "২০০০ সালে",
+        "D": "২০১০ সালে"
+      },
+      "correct": "A",
+      "explanation": "HTML ১৯৮০-এর দশকে টিম বার্নার্স-লি তৈরি করেন।",
+      "page": "ছাপা পৃ. ২২৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML-এর বর্তমান সর্বশেষ সংস্করণ কোনটি?",
+      "options": {
+        "A": "HTML3",
+        "B": "HTML4",
+        "C": "HTML5",
+        "D": "HTML2"
+      },
+      "correct": "C",
+      "explanation": "HTML-এর বর্তমান সর্বশেষ সংস্করণ হলো HTML5।",
+      "page": "ছাপা পৃ. ২২৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "HTML-এর একটি অসুবিধা কোনটি?",
+      "options": {
+        "A": "শেখা কঠিন",
+        "B": "কোনো ব্রাউজারে চলে না",
+        "C": "ছবি যোগ করা যায় না",
+        "D": "ডাইনামিক পেজ তৈরি করা যায় না"
+      },
+      "correct": "D",
+      "explanation": "HTML দিয়ে ডাইনামিক পেজ তৈরি করা যায় না — এটি HTML-এর একটি অসুবিধা।",
+      "page": "ছাপা পৃ. ২২৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ইন্টারনাল হাইপারলিংকে কোন ধরনের URL ব্যবহৃত হয়?",
+      "options": {
+        "A": "Relative URL",
+        "B": "Absolute URL",
+        "C": "Email URL",
+        "D": "FTP URL"
+      },
+      "correct": "A",
+      "explanation": "ইন্টারনাল হাইপারলিংকে Relative URL ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্সটারনাল হাইপারলিংকে কোন ধরনের URL ব্যবহৃত হয়?",
+      "options": {
+        "A": "Absolute URL",
+        "B": "Local URL",
+        "C": "Offline URL",
+        "D": "Relative URL"
+      },
+      "correct": "A",
+      "explanation": "এক্সটারনাল হাইপারলিংকে Absolute URL ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "<img> ট্যাগে src-এর পূর্ণরূপ কী?",
+      "options": {
+        "A": "Style",
+        "B": "Source",
+        "C": "Search",
+        "D": "Site"
+      },
+      "correct": "B",
+      "explanation": "<img> ট্যাগে src-এর পূর্ণরূপ হলো Source, অর্থাৎ ছবির উৎস।",
+      "page": "ছাপা পৃ. ২৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "Alt অ্যাট্রিবিউট কেন ব্যবহার হয়?",
+      "options": {
+        "A": "ছবি মুছে ফেলার জন্য",
+        "B": "ছবি লোড না হলে বিকল্প বর্ণনা দেখানোর জন্য",
+        "C": "ছবির রঙ বদলানোর জন্য",
+        "D": "ছবির সাইজ বাড়ানোর জন্য"
+      },
+      "correct": "B",
+      "explanation": "Alt অ্যাট্রিবিউট ছবি লোড না হলে বিকল্প বর্ণনা (alternative text) দেখানোর জন্য ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৩৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ফর্মে পাসওয়ার্ড ইনপুটের type কোনটি?",
+      "options": {
+        "A": "text",
+        "B": "password",
+        "C": "hidden",
+        "D": "button"
+      },
+      "correct": "B",
+      "explanation": "ফর্মে পাসওয়ার্ড ইনপুটের type হলো password, যাতে টাইপ করা অক্ষর দেখা যায় না।",
+      "page": "ছাপা পৃ. ২৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ড্রপ-ডাউন মেনু তৈরির ট্যাগ কোনটি?",
+      "options": {
+        "A": "<input>",
+        "B": "<form>",
+        "C": "<button>",
+        "D": "<select>"
+      },
+      "correct": "D",
+      "explanation": "ড্রপ-ডাউন মেনু তৈরির ট্যাগ হলো <select>।",
+      "page": "ছাপা পৃ. ২৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ওয়েবসাইট পাবলিশিংয়ের ধাপ কয়টি?",
+      "options": {
+        "A": "৪টি",
+        "B": "৫টি",
+        "C": "২টি",
+        "D": "৩টি"
+      },
+      "correct": "A",
+      "explanation": "ওয়েবসাইট পাবলিশিংয়ের ধাপ ৪টি: সাইট ডিজাইন, ডোমেইন নাম রেজিস্ট্রেশন, ওয়েব হোস্টিং ও হোস্ট সার্ভারে আপলোড।",
+      "page": "ছাপা পৃ. ২৪৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "Windows হোস্টিংয়ে কোন প্রোগ্রামিং ভাষা ব্যবহৃত হয়?",
+      "options": {
+        "A": "ASP",
+        "B": "PHP",
+        "C": "Python",
+        "D": "Ruby"
+      },
+      "correct": "A",
+      "explanation": "Windows হোস্টিংয়ে ASP (Active Server Page) প্রোগ্রামিং ভাষা ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "Linux হোস্টিংয়ে কোন প্রোগ্রামিং ভাষা ব্যবহৃত হয়?",
+      "options": {
+        "A": "VBScript",
+        "B": "JSP",
+        "C": "ASP",
+        "D": "PHP"
+      },
+      "correct": "D",
+      "explanation": "Linux হোস্টিংয়ে PHP (Hyper Text Processor) প্রোগ্রামিং ভাষা ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রফিক তার বিদ্যালয়ের জন্য একটি ওয়েবসাইট তৈরি করতে চায়। সে ইন্টারনেটে তথ্য খুঁজতে গিয়ে হাইপারটেক্সট ও হাইপারমিডিয়ার ধারণা জানল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েব ডিজাইন কী?",
+          "solution": "ওয়েব ডিজাইন হলো ওয়েবসাইটের পেজসমূহের কাঠামো, রূপ ও কার্যকারিতা পরিকল্পনা ও তৈরি করার প্রক্রিয়া।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "হাইপারটেক্সট ও হাইপারমিডিয়ার মধ্যে পার্থক্য লেখো।",
+          "solution": "হাইপারটেক্সট হলো অন্য পেজ বা তথ্যের সাথে সংযুক্ত লেখা, যাতে ক্লিক করে অন্য জায়গায় যাওয়া যায়। হাইপারমিডিয়া হলো হাইপারলিংকের মাধ্যমে টেক্সট, ছবি, ভিডিও ইত্যাদি মিডিয়ার সংযোগ। অর্থাৎ হাইপারটেক্সট শুধু লেখার সংযোগ, আর হাইপারমিডিয়ায় লেখার পাশাপাশি ছবি, ভিডিওসহ অন্যান্য মিডিয়ার সংযোগ থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "রফিকের ওয়েবসাইটের জন্য স্ট্যাটিক না ডাইনামিক — কোনটি উপযুক্ত হবে, উদ্দীপকের আলোকে বিশ্লেষণ করো।",
+          "solution": "রফিকের বিদ্যালয়ের ওয়েবসাইটে যদি তথ্য মাঝে মাঝে পরিবর্তন করতে হয়, তবে ডাইনামিক ওয়েবসাইট উপযুক্ত হবে, কারণ ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে কনটেন্ট পরিবর্তিত হয়। আর যদি তথ্য প্রায় স্থির থাকে, তবে স্ট্যাটিক ওয়েবসাইট যথেষ্ট হবে, কারণ এর কনটেন্ট স্থির থাকে। উদ্দীপকে রফিক বিদ্যালয়ের তথ্য নিয়মিত হালনাগাদ করতে চায় বলে ডাইনামিক ওয়েবসাইট তার জন্য বেশি উপযুক্ত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "রফিকের ওয়েবসাইট সফল করতে হাইপারলিংকের ভূমিকা মূল্যায়ন করো।",
+          "solution": "হাইপারলিংক ছাড়া ওয়েবসাইটের পেজসমূহ পরস্পর সংযুক্ত হয় না। রফিকের ওয়েবসাইটে হোমপেজ থেকে অন্যান্য পেজে যাওয়ার জন্য হাইপারলিংক অপরিহার্য। হাইপারলিংক ব্যবহারকারীদের সহজে তথ্য খুঁজে পেতে সাহায্য করে এবং ওয়েবসাইটের নেভিগেশন সহজ করে। তাই রফিকের ওয়েবসাইটের সাফল্যে হাইপারলিংকের ভূমিকা অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েব ডিজাইন, হাইপারটেক্সট, হাইপারমিডিয়া, স্ট্যাটিক/ডাইনামিক ওয়েবসাইট ও হাইপারলিংকের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১২৬-১২৮; PDF পৃ. ১৩২-১৩৪",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "সাকিব ব্রাউজারে www.google.com লিখে সার্চ দিল। ব্রাউজার ডোমেইন নামটিকে সংখ্যায় রূপান্তর করে গুগলের সার্ভারের সাথে সংযোগ স্থাপন করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "IP Address কী?",
+          "solution": "IP Address হলো ইন্টারনেটে সংযুক্ত প্রতিটি ডিভাইসের অনন্য ঠিকানা, যা সংখ্যা দিয়ে নির্দেশ করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "DNS-এর কাজ লেখো।",
+          "solution": "DNS (Domain Name System) ডোমেইন নামকে IP Address-এ রূপান্তর করে। ব্যবহারকারী ডোমেইন নাম লিখলে DNS সেই নামের IP Address খুঁজে বের করে সার্ভারের সাথে সংযোগ স্থাপন করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে সাকিবের ক্ষেত্রে ডোমেইন নাম থেকে IP Address-এ রূপান্তরের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "সাকিব www.google.com লিখলে ব্রাউজার প্রথমে DNS সার্ভারের কাছে এই ডোমেইন নামের IP Address জানতে চায়। DNS সার্ভার ডোমেইন নামের তালিকা থেকে 142.250.190.78 IP Addressটি খুঁজে ব্রাউজারকে দেয়। এরপর ব্রাউজার এই IP Address ব্যবহার করে গুগলের সার্ভারের সাথে সংযোগ স্থাপন করে ওয়েবপেজটি লোড করে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "IANA-এর ভূমিকা উদ্দীপকের প্রেক্ষিতে বিশ্লেষণ করো।",
+          "solution": "IANA IP Address ও ডোমেইন নামের বণ্টন পরিচালনা করে। উদ্দীপকে www.google.com ডোমেইন নামটি IANA-এর তত্ত্বাবধানে নিবন্ধিত এবং এর IP Address 142.250.190.78 IANA-এর বণ্টন ব্যবস্থার মাধ্যমেই নির্ধারিত। IANA না থাকলে ডোমেইন নাম ও IP Address-এর মধ্যে সুশৃঙ্খল সম্পর্ক থাকত না এবং সাকিবের মতো ব্যবহারকারীরা সহজে ওয়েবসাইট খুঁজে পেত না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "IP Address, DNS ও IANA-এর ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ তার ওয়েবপেজে সবচেয়ে গুরুত্বপূর্ণ শিরোনাম হিসেবে <h1> এবং সবচেয়ে কম গুরুত্বপূর্ণ শিরোনাম হিসেবে <h6> ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML হেডিং ট্যাগ কী?",
+          "solution": "HTML হেডিং ট্যাগ হলো <h1> থেকে <h6> পর্যন্ত ট্যাগ, যা পেজে বিভিন্ন আকারের শিরোনাম তৈরি করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<h1> ও <h6>-এর মধ্যে পার্থক্য লেখো।",
+          "solution": "<h1> সবচেয়ে বড় হেডিং এবং <h6> সবচেয়ে ছোট হেডিং। <h1> পেজের সবচেয়ে গুরুত্বপূর্ণ শিরোনামের জন্য এবং <h6> সবচেয়ে কম গুরুত্বপূর্ণ শিরোনামের জন্য ব্যবহৃত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের হেডিং ব্যবহারের যৌক্তিকতা বিশ্লেষণ করো।",
+          "solution": "আরিফ সবচেয়ে গুরুত্বপূর্ণ শিরোনামে <h1> এবং সবচেয়ে কম গুরুত্বপূর্ণ শিরোনামে <h6> ব্যবহার করেছে, যা হেডিং ট্যাগের সঠিক ব্যবহারের নিয়ম অনুসরণ করে। <h1> সবচেয়ে বড় ও <h6> সবচেয়ে ছোট হওয়ায় পেজের শিরোনামগুলোর গুরুত্বের ক্রম স্পষ্টভাবে বোঝা যায়। এভাবে হেডিং ব্যবহার করলে পেজের কাঠামো সহজে বোঝা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে হেডিং ট্যাগের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "হেডিং ট্যাগ ওয়েবপেজের কাঠামো ও গুরুত্বের ক্রম নির্দেশ করে। সঠিক হেডিং ব্যবহার করলে ব্যবহারকারী সহজে পেজের বিষয়বস্তু বুঝতে পারে এবং সার্চ ইঞ্জিনও পেজের বিষয়বস্তু সহজে বুঝতে পারে। আরিফের মতো সঠিকভাবে হেডিং ব্যবহার করলে ওয়েবপেজ আরও কার্যকর ও পাঠযোগ্য হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML হেডিং ট্যাগের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "নুসরাত তার ওয়েবপেজে ঢাকা, রাজশাহী, চট্টগ্রাম, খুলনা, রংপুর, বরিশাল, সিলেট ও ময়মনসিংহ বিভাগের নামের তালিকা তৈরি করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML লিস্ট কী?",
+          "solution": "HTML লিস্ট হলো <ul>, <ol> ও <li> ট্যাগ ব্যবহার করে তৈরি করা আইটেমের তালিকা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<ul> ও <ol>-এর মধ্যে পার্থক্য লেখো।",
+          "solution": "<ul> আনঅর্ডার্ড লিস্ট তৈরি করে, যেখানে আইটেমগুলো বুলেট (square/circle/disc) দিয়ে দেখায়। <ol> অর্ডার্ড লিস্ট তৈরি করে, যেখানে আইটেমগুলো নম্বর (i/I/a/A/1) দিয়ে দেখায়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "নুসরাত যদি বিভাগগুলোকে নম্বর দিয়ে সাজাতে চায়, তবে কোন ট্যাগ ও অ্যাট্রিবিউট ব্যবহার করবে — উদ্দীপকের আলোকে ব্যাখ্যা করো।",
+          "solution": "নুসরাত বিভাগগুলোকে নম্বর দিয়ে সাজাতে চাইলে <ol> ট্যাগ ব্যবহার করবে এবং প্রতিটি আইটেমের জন্য <li> ট্যাগ ব্যবহার করবে। type অ্যাট্রিবিউট দিয়ে নম্বরের ধরন (i/I/a/A/1) নির্ধারণ করা যায় এবং start অ্যাট্রিবিউট দিয়ে শুরুর নম্বর নির্ধারণ করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "নুসরাতের তালিকায় সিলেট বিভাগের অধীনে জেলাগুলো যোগ করতে চাইলে কীভাবে করবে — বিশ্লেষণ করো।",
+          "solution": "নুসরাত সিলেট বিভাগের অধীনে সুনামগঞ্জ, সিলেট, হবিগঞ্জ ও মৌলভীবাজার জেলাগুলো যোগ করতে চাইলে নেস্টেড লিস্ট ব্যবহার করবে। অর্থাৎ সিলেটের <li> ট্যাগের ভেতরে একটি <ul> বা <ol> লিস্ট তৈরি করে জেলাগুলো যোগ করবে। এভাবে মূল তালিকার ভেতরে উপ-তালিকা তৈরি করা যায়, যা নেস্টেড লিস্ট নামে পরিচিত।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML লিস্ট, ul/ol/li ট্যাগ ও নেস্টেড লিস্টের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৪-১৩৫; PDF পৃ. ১৪০-১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "তানভীর তার ওয়েবপেজে ঢাকা বিভাগের ওয়েবসাইটের (http://www.dhakadiv.gov.bd) একটি হাইপারলিংক তৈরি করল, যাতে ক্লিক করলে নতুন ট্যাবে সাইটটি খোলে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "হাইপারলিংক কী?",
+          "solution": "হাইপারলিংক হলো একটি পেজ থেকে অন্য পেজে যাওয়ার সংযোগ, যা <a> ট্যাগ দিয়ে তৈরি করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "href অ্যাট্রিবিউটের কাজ লেখো।",
+          "solution": "href অ্যাট্রিবিউট লিংকের ঠিকানা (URL) নির্দেশ করে। যেমন: <a href=\"http://www.dhakadiv.gov.bd\"> — এখানে href-এর মান হলো লিংকের ঠিকানা।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে তানভীরের লিংক নতুন ট্যাবে খোলার জন্য কোন অ্যাট্রিবিউট ব্যবহার করেছে — ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে তানভীরের লিংক নতুন ট্যাবে খোলার জন্য target=\"_blank\" অ্যাট্রিবিউট ব্যবহার করা হয়েছে। target=\"_blank\" দিলে লিংকে ক্লিক করলে নতুন ট্যাবে/উইন্ডোতে পেজটি খোলে, আর target=\"_self\" দিলে একই ট্যাবে খোলে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "তানভীরের ওয়েবপেজে হাইপারলিংকের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "হাইপারলিংক ছাড়া ওয়েবপেজগুলো পরস্পর সংযুক্ত হয় না। তানভীরের ওয়েবপেজে হাইপারলিংক ব্যবহারকারীদের ঢাকা বিভাগের ওয়েবসাইটে সহজে যেতে সাহায্য করে। হাইপারলিংক ওয়েবসাইটের নেভিগেশন সহজ করে এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করে। তাই ওয়েবপেজে হাইপারলিংকের গুরুত্ব অপরিসীম।",
+          "marks": 4
+        }
+      ],
+      "explanation": "হাইপারলিংক, href ও target অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "ফারহান তার ওয়েবপেজে image.jpg নামের একটি ছবি যোগ করল এবং ছবিটির প্রস্থ 300px ও উচ্চতা 200px নির্ধারণ করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "<img> ট্যাগ কী?",
+          "solution": "<img> ট্যাগ হলো ওয়েবপেজে ছবি যোগ করার ট্যাগ, যা একটি এমটি ট্যাগ।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "src অ্যাট্রিবিউটের কাজ লেখো।",
+          "solution": "src অ্যাট্রিবিউট ছবির উৎস/পাথ নির্দেশ করে। যেমন: <img src=\"image.jpg\"> — এখানে src-এর মান হলো ছবির ফাইলের নাম/পাথ।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে ফারহানের ছবির সাইজ নির্ধারণের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "ফারহান ছবির প্রস্থ 300px ও উচ্চতা 200px নির্ধারণ করতে width=\"300\" ও height=\"200\" অ্যাট্রিবিউট ব্যবহার করেছে। অর্থাৎ <img src=\"image.jpg\" width=\"300\" height=\"200\"> লিখলে ছবিটি 300px প্রস্থ ও 200px উচ্চতায় প্রদর্শিত হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ফারহান যদি ছবিটিকে ক্লিকযোগ্য লিংক করতে চায়, তবে কীভাবে করবে — বিশ্লেষণ করো।",
+          "solution": "ফারহান ছবিটিকে ক্লিকযোগ্য লিংক করতে চাইলে <a> ট্যাগের ভেতরে <img> ট্যাগ রাখবে। অর্থাৎ <a href=\"...\"> <img src=\"image.jpg\"> </a> — এভাবে ছবিতে ক্লিক করলে নির্দিষ্ট পেজে যাওয়া যাবে। এটি ইমেজ হাইপারলিংক নামে পরিচিত।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ছবি যোগ, src, width/height অ্যাট্রিবিউট ও ইমেজ হাইপারলিংকের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন তার ওয়েবপেজে একটি টেবিল তৈরি করল, যেখানে Serial, Subject ও GPA কলাম রয়েছে। টেবিলের বর্ডার দেখানোর জন্য border অ্যাট্রিবিউট ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML টেবিল ট্যাগ কী?",
+          "solution": "HTML টেবিল ট্যাগ হলো <table>, যা ওয়েবপেজে টেবিল তৈরি করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<tr> ও <td>-এর মধ্যে পার্থক্য লেখো।",
+          "solution": "<tr> ট্যাগ টেবিলের রো (সারি) তৈরি করে, আর <td> ট্যাগ রো-এর ভেতরে সেল (কলাম) তৈরি করে। অর্থাৎ <tr> দিয়ে সারি এবং <td> দিয়ে সেই সারির সেল নির্দেশ করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিনের টেবিলের হেডার সারি তৈরির প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "শারমিনের টেবিলের হেডার সারিতে Serial, Subject ও GPA লেখা আছে। হেডার সারি তৈরির জন্য <tr> ট্যাগের ভেতরে <th> ট্যাগ ব্যবহার করে হেডার সেল তৈরি করা হয়। <th> ট্যাগ হেডার সেল নির্দেশ করে, যা সাধারণত বোল্ড ও মাঝখানে দেখায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "শারমিন যদি একটি সেলকে দুটি কলাম জুড়ে বিস্তৃত করতে চায়, তবে কীভাবে করবে — বিশ্লেষণ করো।",
+          "solution": "শারমিন একটি সেলকে দুটি কলাম জুড়ে বিস্তৃত করতে চাইলে colspan অ্যাট্রিবিউট ব্যবহার করবে। যেমন: <td colspan=\"2\"> — এভাবে সেলটি দুটি কলাম জুড়ে বিস্তৃত হবে। একইভাবে rowspan অ্যাট্রিবিউট দিয়ে সেলকে একাধিক রো জুড়ে বিস্তৃত করা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML টেবিল, tr/td/th ট্যাগ, border ও colspan/rowspan অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৮-১৩৯; PDF পৃ. ১৪৪-১৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান তার ওয়েবপেজের টেক্সটের রঙ লাল ও ফন্টের সাইজ বড় করতে সরাসরি <p> ট্যাগে style অ্যাট্রিবিউট ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "CSS কী?",
+          "solution": "CSS হলো Cascading Style Sheets — ওয়েবপেজের টেক্সট, রঙ, ফন্ট ইত্যাদির স্টাইল নির্ধারণের ভাষা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "inline, internal ও external CSS-এর মধ্যে পার্থক্য লেখো।",
+          "solution": "inline CSS সরাসরি HTML ট্যাগের style অ্যাট্রিবিউটে লেখা হয়। internal CSS HTML ডকুমেন্টের <head> অংশে <style> ট্যাগে লেখা হয়। external CSS আলাদা .css ফাইলে লিখে HTML ফাইলের সাথে যুক্ত করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের ব্যবহৃত CSS-এর ধরনটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে হাসান সরাসরি <p> ট্যাগে style অ্যাট্রিবিউট ব্যবহার করেছে, তাই এটি inline CSS। style অ্যাট্রিবিউটে color ও font-size প্রপার্টি ব্যবহার করে টেক্সটের রঙ লাল ও ফন্টের সাইজ বড় করা হয়েছে। inline CSS শুধু নির্দিষ্ট একটি ট্যাগের জন্য প্রযোজ্য।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "হাসানের পেজে যদি একই স্টাইল অনেক ট্যাগে প্রয়োগ করতে হয়, তবে কোন ধরনের CSS বেশি কার্যকর হবে — মূল্যায়ন করো।",
+          "solution": "হাসানের পেজে যদি একই স্টাইল অনেক ট্যাগে প্রয়োগ করতে হয়, তবে external CSS বেশি কার্যকর হবে। external CSS-এ স্টাইল একবার লিখে সব পেজে প্রয়োগ করা যায় এবং পরিবর্তন করলে সব পেজে একসাথে প্রতিফলিত হয়। inline CSS প্রতিটি ট্যাগে আলাদা করে লিখতে হয় বলে অনেক ট্যাগের ক্ষেত্রে এটি কষ্টসাধ্য।",
+          "marks": 4
+        }
+      ],
+      "explanation": "CSS-এর ধারণা ও inline/internal/external CSS-এর পার্থক্য যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪১-১৪২; PDF পৃ. ১৪৭-১৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রুমা তার বিদ্যালয়ের ওয়েবসাইটটি ইন্টারনেটে প্রকাশ করতে চায়। সে ডোমেইন নাম নিবন্ধন, হোস্টিং সেবা গ্রহণ ও সার্চ ইঞ্জিনে সাইট সাবমিশনের ধাপগুলো জানল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েব হোস্টিং কী?",
+          "solution": "ওয়েব হোস্টিং হলো ওয়েবসাইটের ফাইলগুলো ইন্টারনেটে সংযুক্ত সার্ভারে সংরক্ষণ করার সেবা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডোমেইন নাম ও ওয়েব হোস্টিংয়ের মধ্যে পার্থক্য লেখো।",
+          "solution": "ডোমেইন নাম হলো ওয়েবসাইটের অনন্য নাম/ঠিকানা, যা ব্রাউজারে লিখে সাইটে যাওয়া যায়। ওয়েব হোস্টিং হলো ওয়েবসাইটের ফাইল সংরক্ষণের জায়গা (সার্ভার স্পেস)। ডোমেইন নাম ছাড়া ওয়েবসাইট খুঁজে পাওয়া যায় না এবং হোস্টিং ছাড়া ওয়েবসাইট প্রদর্শিত হয় না।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "রুমার ওয়েবসাইট পাবলিশিংয়ের ধাপসমূহ উদ্দীপকের আলোকে ব্যাখ্যা করো।",
+          "solution": "রুমার ওয়েবসাইট পাবলিশিংয়ের ধাপগুলো হলো: (১) সাইট ডিজাইন — ওয়েবসাইটের গ্রাফিক্স লেআউট ডিজাইন ও কোড তৈরি করা; (২) ডোমেইন নাম নিবন্ধন — ওয়েবসাইটের জন্য অনন্য ডোমেইন নাম নিবন্ধন করা; (৩) ওয়েব হোস্টিং — হোস্টিং কোম্পানির কাছ থেকে সার্ভার স্পেস নেওয়া; (৪) হোস্ট সার্ভারে আপলোড — ওয়েবসাইটের ফাইল হোস্ট সার্ভারে আপলোড করা।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "রুমার ওয়েবসাইটটি সার্চ ইঞ্জিনে সাবমিশনের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "রুমার ওয়েবসাইটটি সার্চ ইঞ্জিনে (যেমন Google, Yahoo, Bing) সাবমিশন করলে ব্যবহারকারীরা সহজে সাইটটি খুঁজে পাবে। সার্চ ইঞ্জিনে সাবমিশন না করলে ওয়েবসাইটটি সার্চ ফলাফলে দেখা যাবে না এবং ব্যবহারকারীরা সাইটটি সম্পর্কে জানতে পারবে না। তাই ওয়েবসাইট পাবলিশিংয়ের শেষ ধাপ হিসেবে সার্চ ইঞ্জিনে সাবমিশন অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েব হোস্টিং, ডোমেইন নাম ও পাবলিশিংয়ের ধাপসমূহ যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪৪-১৪৫; PDF পৃ. ১৫০-১৫১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ একটি ওয়েবসাইট তৈরি করে ব্রাউজারে খুলল। ব্রাউজার সার্ভারের কাছে রিকোয়েস্ট পাঠাল এবং সার্ভার HTML/CSS/JS ফাইল পাঠিয়ে রেসপন্স দিল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েব সার্ভার কী?",
+          "solution": "ওয়েব সার্ভার হলো ওয়েবসাইটের ফাইল সংরক্ষণ করে ব্যবহারকারীর অনুরোধে পাঠায় এমন কম্পিউটার/সফটওয়্যার।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ক্লায়েন্ট কী?",
+          "solution": "ক্লায়েন্ট হলো ব্যবহারকারীর কম্পিউটারে চলমান ওয়েব ব্রাউজার, যা সার্ভারের কাছে রিকোয়েস্ট পাঠায় এবং HTML/CSS/JS রেন্ডার করে পেজটি প্রদর্শন করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের ক্ষেত্রে রিকোয়েস্ট-রেসপন্স প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "আরিফ ব্রাউজারে ওয়েবসাইটের ঠিকানা লিখলে ব্রাউজার (ক্লায়েন্ট) সার্ভারের কাছে রিকোয়েস্ট পাঠায়। সার্ভার রিকোয়েস্ট পেয়ে ওয়েবসাইটের HTML/CSS/JS ফাইলগুলো ব্রাউজারের কাছে পাঠিয়ে রেসপন্স দেয়। এরপর ব্রাউজার ফাইলগুলো রেন্ডার করে পেজটি প্রদর্শন করে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "HTTP ও HTTPS-এর পোর্ট নম্বরের ভূমিকা উদ্দীপকের প্রেক্ষিতে বিশ্লেষণ করো।",
+          "solution": "HTTP-এর ডিফল্ট পোর্ট নম্বর 80 এবং HTTPS-এর ডিফল্ট পোর্ট নম্বর 443। উদ্দীপকে আরিফের ব্রাউজার সার্ভারের সাথে সংযোগ স্থাপনের সময় এই পোর্ট নম্বরগুলো ব্যবহৃত হয়। পোর্ট নম্বর সার্ভারে কোন সার্ভিসে সংযোগ হবে তা নির্দেশ করে। সঠিক পোর্ট নম্বর ছাড়া ব্রাউজার সার্ভারের সাথে সংযোগ স্থাপন করতে পারে না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "সার্ভার, ক্লায়েন্ট, রিকোয়েস্ট-রেসপন্স ও পোর্ট নম্বরের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১২৮-১২৯; PDF পৃ. ১৩৪-১৩৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন একটি বাংলা ওয়েবপেজ তৈরি করতে চায়। সে <head> অংশে <meta charset=\"utf-8\"> মেটা ট্যাগ যোগ করল এবং <html> ট্যাগে lang=\"bn\" অ্যাট্রিবিউট ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "charset কী?",
+          "solution": "charset হলো ওয়েবপেজে ব্যবহৃত অক্ষরের এনকোডিং নির্দেশের অ্যাট্রিবিউট, যা ব্রাউজারকে বলে কোন ভাষার অক্ষর কীভাবে পড়বে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "lang অ্যাট্রিবিউটের কাজ লেখো।",
+          "solution": "lang অ্যাট্রিবিউট পেজের ভাষা নির্দেশ করে। যেমন: lang=\"bn\" মানে পেজটি বাংলায় লেখা। এটি ব্রাউজার ও সার্চ ইঞ্জিনকে পেজের ভাষা বুঝতে সাহায্য করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিনের বাংলা ওয়েবপেজ সঠিকভাবে দেখানোর প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "শারমিন <head> অংশে <meta charset=\"utf-8\"> মেটা ট্যাগ যোগ করেছে, যা ব্রাউজারকে বলে পেজটি UTF-8 এনকোডিংয়ে লেখা। ফলে ব্রাউজার বাংলা অক্ষরগুলো সঠিকভাবে পড়তে পারে। এছাড়া <html> ট্যাগে lang=\"bn\" অ্যাট্রিবিউট পেজের ভাষা বাংলা হিসেবে নির্দেশ করে। এই দুটির সমন্বয়ে বাংলা ওয়েবপেজ সঠিকভাবে প্রদর্শিত হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "বাংলা ওয়েবপেজে charset মেটা ট্যাগের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "বাংলা ওয়েবপেজে charset মেটা ট্যাগ ছাড়া ব্রাউজার বাংলা অক্ষর সঠিকভাবে পড়তে পারে না এবং অক্ষরগুলো বিকৃত দেখায়। শারমিনের ক্ষেত্রে <meta charset=\"utf-8\"> ব্যবহার করায় ব্রাউজার বাংলা অক্ষর সঠিকভাবে প্রদর্শন করতে পারছে। তাই বাংলা ওয়েবপেজে charset মেটা ট্যাগ অপরিহার্য।",
+          "marks": 4
+        }
+      ],
+      "explanation": "বাংলা ওয়েবপেজে charset ও lang অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "তানভীর তার ওয়েবপেজে একটি বড় কনটেইনারের ভেতরে কিছু টেক্সট রাখল এবং টেক্সটের একটি অংশের রঙ আলাদা করতে ইনলাইন সিলেকশন ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "<div> ট্যাগ কী?",
+          "solution": "<div> ট্যাগ হলো কনটেন্টের জন্য কন্টেইনার তৈরি করার ট্যাগ (ব্লক-লেভেল)।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<span> ট্যাগ কী?",
+          "solution": "<span> ট্যাগ হলো ইনলাইন কনটেন্টের অংশ নির্বাচন করার ট্যাগ, যা লাইনের ভেতরের কোনো অংশে স্টাইল প্রয়োগ করতে ব্যবহৃত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে তানভীরের <div> ও <span> ব্যবহারের পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে তানভীর বড় কনটেইনারের জন্য <div> ব্যবহার করেছে, যা ব্লক-লেভেল কন্টেইনার তৈরি করে এবং নতুন লাইনে শুরু হয়। আর টেক্সটের একটি অংশের রঙ আলাদা করতে <span> ব্যবহার করেছে, যা ইনলাইন সিলেকশন করে এবং একই লাইনের ভেতরে থাকে। অর্থাৎ <div> পুরো ব্লককে এবং <span> লাইনের ভেতরের অংশকে নির্দেশ করে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজের লেআউট তৈরিতে <div> ট্যাগের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়েবপেজের লেআউট তৈরিতে <div> ট্যাগ অত্যন্ত গুরুত্বপূর্ণ। হেডার, সাইডবার, কনটেন্ট ও ফুটারের মতো পেজের বিভিন্ন অংশকে <div> দিয়ে কন্টেইনার করা যায় এবং CSS দিয়ে সেগুলোর অবস্থান ও স্টাইল নির্ধারণ করা যায়। তানভীরের মতো <div> ব্যবহার করলে পেজের কাঠামো সুশৃঙ্খল থাকে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "div ও span ট্যাগের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "ফারহান একটি ওয়েবপেজের ডিজাইন শুরু করার আগে কাগজে পেজের কাঠামোর খসড়া আঁকল। এরপর Figma টুল ব্যবহার করে ডিজাইন তৈরি করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়্যারফ্রেম কী?",
+          "solution": "ওয়্যারফ্রেম হলো ওয়েবপেজের কাঠামোর খসড়া/নকশা, যা ডিজাইন শুরু করার আগে তৈরি করা হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ফ্রন্ট-এন্ড ও ব্যাক-এন্ড ডেভেলপমেন্টের মধ্যে পার্থক্য লেখো।",
+          "solution": "ফ্রন্ট-এন্ড ডেভেলপমেন্ট হলো ব্যবহারকারী যে অংশ দেখে ও ইন্টারঅ্যাক্ট করে (HTML/CSS/JS) তার ডেভেলপমেন্ট। ব্যাক-এন্ড ডেভেলপমেন্ট হলো সার্ভার-সাইডের ডাটাবেস ও লজিকের ডেভেলপমেন্ট। ফুল-স্ট্যাক ডেভেলপার দুটোই করতে পারে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে ফারহানের ওয়্যারফ্রেম তৈরির যৌক্তিকতা বিশ্লেষণ করো।",
+          "solution": "ফারহান ডিজাইন শুরু করার আগে কাগজে পেজের কাঠামোর খসড়া এঁকেছে, যা ওয়্যারফ্রেম নামে পরিচিত। ওয়্যারফ্রেম থাকলে পেজের কোন অংশে কী থাকবে তা আগেই নির্ধারণ করা যায় এবং ডিজাইন প্রক্রিয়া সহজ হয়। এরপর Figma টুল দিয়ে ডিজাইন তৈরি করলে খসড়া অনুযায়ী কাজ করা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজ ডিজাইনে ওয়্যারফ্রেমের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়্যারফ্রেম ছাড়া ওয়েবপেজ ডিজাইন করলে পেজের কাঠামো বিশৃঙ্খল হতে পারে এবং বারবার পরিবর্তন করতে হয়। ফারহানের মতো ওয়্যারফ্রেম তৈরি করলে ডিজাইন প্রক্রিয়া সহজ ও সময় সাশ্রয় হয়। ওয়্যারফ্রেম ডিজাইনার, ডেভেলপার ও ক্লায়েন্টের মধ্যে যোগাযোগের মাধ্যম হিসেবেও কাজ করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়্যারফ্রেম, ফ্রন্ট-এন্ড/ব্যাক-এন্ড ডেভেলপমেন্টের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪৩; PDF পৃ. ১৪৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "নুসরাত তার ওয়েবপেজে কিছু টেক্সট বোল্ড, কিছু আন্ডারলাইন ও কিছু ইটালিক করল। এছাড়া H₂O ও a² লেখার জন্য সাবস্ক্রিপ্ট ও সুপারস্ক্রিপ্ট ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "টেক্সট ফরম্যাটিং কী?",
+          "solution": "টেক্সট ফরম্যাটিং হলো HTML ট্যাগ ব্যবহার করে টেক্সটকে বোল্ড, ইটালিক, আন্ডারলাইন ইত্যাদি রূপে সাজানো।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<b>, <i> ও <u> ট্যাগের কাজ লেখো।",
+          "solution": "<b> ট্যাগ টেক্সটকে বোল্ড করে, <i> ট্যাগ টেক্সটকে ইটালিক করে এবং <u> ট্যাগ টেক্সটকে আন্ডারলাইন করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে নুসরাতের H₂O ও a² লেখার প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "নুসরাত H₂O লেখার জন্য <sub> (সাবস্ক্রিপ্ট) ট্যাগ ব্যবহার করেছে, যা টেক্সটকে মূল লাইনের নিচে ছোট করে দেখায়। আর a² লেখার জন্য <sup> (সুপারস্ক্রিপ্ট) ট্যাগ ব্যবহার করেছে, যা টেক্সটকে মূল লাইনের উপরে ছোট করে দেখায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে টেক্সট ফরম্যাটিংয়ের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "টেক্সট ফরম্যাটিং ছাড়া ওয়েবপেজের টেক্সট একঘেয়ে ও পড়তে কষ্টকর হয়। নুসরাতের মতো বোল্ড, ইটালিক, আন্ডারলাইন ও সাব/সুপারস্ক্রিপ্ট ব্যবহার করলে পেজের গুরুত্বপূর্ণ অংশগুলো সহজে চোখে পড়ে এবং পেজটি আরও পাঠযোগ্য হয়। তাই ওয়েবপেজে টেক্সট ফরম্যাটিং অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "টেক্সট ফরম্যাটিং ট্যাগের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান তার ওয়েবপেজে সিলেট বিভাগের একটি তালিকা তৈরি করল, যার অধীনে সুনামগঞ্জ, সিলেট, হবিগঞ্জ ও মৌলভীবাজার জেলার উপ-তালিকা রয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "নেস্টেড লিস্ট কী?",
+          "solution": "নেস্টেড লিস্ট হলো একটি লিস্টের ভেতরে আরেকটি লিস্ট তৈরি করা, অর্থাৎ মূল তালিকার আইটেমের অধীনে উপ-তালিকা তৈরি করা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "নেস্টেড লিস্ট তৈরির প্রক্রিয়া লেখো।",
+          "solution": "নেস্টেড লিস্ট তৈরির জন্য মূল তালিকার <li> ট্যাগের ভেতরে আরেকটি <ul> বা <ol> লিস্ট তৈরি করে উপ-তালিকার আইটেমগুলো <li> ট্যাগে লেখা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের নেস্টেড লিস্টের কাঠামোটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে হাসান মূল তালিকায় সিলেট বিভাগের নাম লিখেছে এবং তার <li> ট্যাগের ভেতরে উপ-তালিকা তৈরি করে সুনামগঞ্জ, সিলেট, হবিগঞ্জ ও মৌলভীবাজার জেলাগুলো যোগ করেছে। এভাবে মূল তালিকার ভেতরে উপ-তালিকা তৈরি করা হয়েছে, যা নেস্টেড লিস্ট নামে পরিচিত।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে নেস্টেড লিস্টের ব্যবহারের সুবিধা মূল্যায়ন করো।",
+          "solution": "নেস্টেড লিস্ট ব্যবহার করলে জটিল তথ্য শ্রেণিবিন্যাস করে উপস্থাপন করা যায়। হাসানের মতো বিভাগের অধীনে জেলাগুলো দেখালে ব্যবহারকারী সহজে তথ্য বুঝতে পারে। নেস্টেড লিস্ট ওয়েবপেজের তথ্যকে সুশৃঙ্খল ও পাঠযোগ্য করে তোলে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "নেস্টেড লিস্টের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রুমা তার HTML কোডে কিছু অংশের ব্যাখ্যা লিখল, যাতে ব্রাউজারে পেজটি খুললে ব্যাখ্যাগুলো দেখা না যায়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML কমেন্ট কী?",
+          "solution": "HTML কমেন্ট হলো কোডের ভেতরে লেখা ব্যাখ্যা, যা ব্রাউজারে প্রদর্শিত হয় না।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "HTML কমেন্টের সিনট্যাক্স লেখো।",
+          "solution": "HTML কমেন্টের সিনট্যাক্স হলো <!-- -->। অর্থাৎ <!-- কমেন্ট --> লিখলে কমেন্টটি ব্রাউজারে দেখা যায় না।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে রুমার কমেন্ট ব্যবহারের যৌক্তিকতা বিশ্লেষণ করো।",
+          "solution": "রুমা কোডের কিছু অংশের ব্যাখ্যা লিখেছে, যাতে কোডটি পড়ার সময় বোঝা যায় কোন অংশে কী করা হয়েছে। কমেন্ট ব্রাউজারে প্রদর্শিত হয় না বলে পেজের চেহারায় কোনো প্রভাব পড়ে না। এভাবে কমেন্ট ব্যবহার করলে কোড পড়া ও রক্ষণাবেক্ষণ সহজ হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "বড় ওয়েবপ্রজেক্টে কমেন্ট ব্যবহারের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "বড় ওয়েবপ্রজেক্টে একাধিক ডেভেলপার একসাথে কাজ করে। কমেন্ট ব্যবহার করলে প্রতিটি অংশের কাজ সহজে বোঝা যায় এবং কোড রক্ষণাবেক্ষণ সহজ হয়। রুমার মতো কমেন্ট ব্যবহার করলে ভবিষ্যতে কোড পরিবর্তনের সময় ভুল কম হয়। তাই বড় প্রজেক্টে কমেন্ট ব্যবহার অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML কমেন্টের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ তার ওয়েবসাইটটি Google, Yahoo ও Bing সার্চ ইঞ্জিনে সাবমিশন করল, যাতে ব্যবহারকারীরা সার্চ করে সাইটটি খুঁজে পায়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "সার্চ ইঞ্জিন কী?",
+          "solution": "সার্চ ইঞ্জিন হলো ওয়েবসাইট খুঁজে পাওয়ার সেবা, যেমন Google, Yahoo, Bing।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডোমেইন নাম কী?",
+          "solution": "ডোমেইন নাম হলো ওয়েবসাইটের অনন্য নাম/ঠিকানা, যা ব্রাউজারে লিখে সাইটে যাওয়া যায় (যেমন: bangladesh.gov.bd, wikipedia.org)।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের সার্চ ইঞ্জিনে সাবমিশনের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "আরিফ তার ওয়েবসাইটটি Google, Yahoo ও Bing সার্চ ইঞ্জিনে সাবমিশন করেছে। সার্চ ইঞ্জিনে সাবমিশন করলে সার্চ ইঞ্জিন ওয়েবসাইটটির তথ্য সংগ্রহ করে তার ইনডেক্সে যোগ করে। এরপর ব্যবহারকারীরা সার্চ ইঞ্জিনে কীওয়ার্ড লিখে সার্চ দিলে ওয়েবসাইটটি সার্চ ফলাফলে দেখা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইট পাবলিশিংয়ে সার্চ ইঞ্জিনে সাবমিশনের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "সার্চ ইঞ্জিনে সাবমিশন ছাড়া ওয়েবসাইটটি সার্চ ফলাফলে দেখা যায় না এবং ব্যবহারকারীরা সাইটটি সম্পর্কে জানতে পারে না। আরিফের মতো সার্চ ইঞ্জিনে সাবমিশন করলে ওয়েবসাইটটি সহজে খুঁজে পাওয়া যায় এবং সাইটের ভিজিটর বাড়ে। তাই ওয়েবসাইট পাবলিশিংয়ে সার্চ ইঞ্জিনে সাবমিশন অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "সার্চ ইঞ্জিন ও ডোমেইন নামের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪৫; PDF পৃ. ১৫১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন তার ওয়েবপেজ দেখার জন্য Mozilla Firefox ব্যবহার করে, আর তার বন্ধু Google Chrome ব্যবহার করে। দুজনেই একই ওয়েবসাইট দেখতে পারে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েব ব্রাউজার কী?",
+          "solution": "ওয়েব ব্রাউজার হলো ওয়েবপেজ দেখা ও ইন্টারঅ্যাক্ট করার সফটওয়্যার।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ব্রাউজারের কাজ লেখো।",
+          "solution": "ব্রাউজার সার্ভারের কাছে রিকোয়েস্ট পাঠায়, HTML/CSS/JS ফাইল রেন্ডার করে পেজটি প্রদর্শন করে এবং হাইপারলিংকের মাধ্যমে পেজের মধ্যে নেভিগেশন করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিন ও তার বন্ধুর ব্রাউজার ব্যবহারের তুলনা করো।",
+          "solution": "শারমিন Mozilla Firefox এবং তার বন্ধু Google Chrome ব্যবহার করে, কিন্তু দুজনেই একই ওয়েবসাইট দেখতে পারে। কারণ HTML একটি স্ট্যান্ডার্ড মার্কআপ ভাষা, যা সব ব্রাউজার একইভাবে রেন্ডার করতে পারে। অর্থাৎ ওয়েবপেজ তৈরি করলে যেকোনো ব্রাউজারেই তা দেখা যায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজ তৈরিতে ব্রাউজার সামঞ্জস্যের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়েবপেজ তৈরির সময় সব ব্রাউজারে পেজটি সঠিকভাবে দেখা যায় কিনা তা পরীক্ষা করা জরুরি। কারণ ভিন্ন ভিন্ন ব্রাউজার একই HTML কোড ভিন্নভাবে রেন্ডার করতে পারে। শারমিন ও তার বন্ধুর মতো ভিন্ন ব্রাউজারে পেজটি পরীক্ষা করলে ব্রাউজার সামঞ্জস্যের সমস্যা ধরা পড়ে। তাই ওয়েবপেজ তৈরিতে ব্রাউজার সামঞ্জস্য অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েব ব্রাউজারের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "তানভীর তার ওয়েবসাইটের হোমপেজে সাইটের মূল মেনু, লোগো ও গুরুত্বপূর্ণ লিংকগুলো রাখল, যাতে ব্যবহারকারীরা সহজে সাইটের অন্যান্য পেজে যেতে পারে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "হোমপেজ কী?",
+          "solution": "হোমপেজ হলো ওয়েবসাইটের প্রধান পেজ, যা সাইটে প্রবেশের প্রথম পেজ হিসেবে কাজ করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "হোমপেজের কাজ লেখো।",
+          "solution": "হোমপেজ সাইটের পরিচয় তুলে ধরে, মূল মেনু ও গুরুত্বপূর্ণ লিংক সরবরাহ করে এবং ব্যবহারকারীদের সাইটের অন্যান্য পেজে নেভিগেট করতে সাহায্য করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে তানভীরের হোমপেজের বৈশিষ্ট্য বিশ্লেষণ করো।",
+          "solution": "উদ্দীপকে তানভীর হোমপেজে সাইটের মূল মেনু, লোগো ও গুরুত্বপূর্ণ লিংকগুলো রেখেছে। লোগো সাইটের পরিচয় দেয়, মূল মেনু ব্যবহারকারীদের অন্যান্য পেজে যেতে সাহায্য করে এবং গুরুত্বপূর্ণ লিংকগুলো প্রয়োজনীয় তথ্যে দ্রুত পৌঁছাতে সাহায্য করে। এগুলো হোমপেজের প্রধান বৈশিষ্ট্য।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইটে হোমপেজের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "হোমপেজ হলো ওয়েবসাইটের প্রবেশদ্বার। ব্যবহারকারীরা সাইটে প্রবেশ করে প্রথমে হোমপেজ দেখে এবং সেখান থেকে অন্যান্য পেজে যায়। তানভীরের মতো হোমপেজে মূল মেনু ও লিংক রাখলে ব্যবহারকারীরা সহজে সাইট নেভিগেট করতে পারে। ভালো হোমপেজ ছাড়া ওয়েবসাইট কার্যকর হয় না।",
+          "marks": 4
+        }
+      ],
+      "explanation": "হোমপেজের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান তার ওয়েবপেজে একটি বক্সের ব্যাকগ্রাউন্ড রঙ rgba(255, 0, 0, 0.5) দিয়ে নির্ধারণ করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "rgba কী?",
+          "solution": "rgba হলো CSS-এ রঙ নির্ধারণের পদ্ধতি, যেখানে লাল, সবুজ, নীল ও স্বচ্ছতা (alpha) মান দেওয়া হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "rgba-তে alpha মানের পরিসর লেখো।",
+          "solution": "rgba-তে alpha মানের পরিসর 0.0 থেকে 1.0 পর্যন্ত। 0.0 মানে সম্পূর্ণ স্বচ্ছ এবং 1.0 মানে সম্পূর্ণ অস্বচ্ছ।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের rgba রঙের মানটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে হাসান rgba(255, 0, 0, 0.5) ব্যবহার করেছে। এখানে 255, 0, 0 হলো লাল, সবুজ ও নীল রঙের মান, যা লাল রঙ নির্দেশ করে। আর 0.5 হলো alpha মান, যা রঙটিকে অর্ধস্বচ্ছ করে। অর্থাৎ বক্সের ব্যাকগ্রাউন্ড অর্ধস্বচ্ছ লাল রঙে দেখাবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে rgba রঙ ব্যবহারের সুবিধা মূল্যায়ন করো।",
+          "solution": "rgba ব্যবহার করলে রঙের স্বচ্ছতা নিয়ন্ত্রণ করা যায়, যা সাধারণ রঙের কোডে সম্ভব নয়। হাসানের মতো অর্ধস্বচ্ছ ব্যাকগ্রাউন্ড ব্যবহার করলে পেজের ডিজাইন আরও আকর্ষণীয় হয় এবং ব্যাকগ্রাউন্ডের উপর টেক্সট বা অন্যান্য উপাদান দেখা যায়। তাই ওয়েবপেজের ডিজাইনে rgba অত্যন্ত উপকারী।",
+          "marks": 4
+        }
+      ],
+      "explanation": "rgba রঙ ও alpha মানের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪২; PDF পৃ. ১৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "নুসরাত Notepad-এ HTML কোড লিখে mypage.html নামে সেভ করল। এরপর ব্রাউজারে ফাইলটি খুলে দেখল এবং কোডে পরিবর্তন করে F5 চেপে রিলোড করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": ".html ফাইল কী?",
+          "solution": ".html ফাইল হলো HTML কোড সম্বলিত ফাইল, যার এক্সটেনশন .html।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "HTML ফাইল তৈরির ধাপ লেখো।",
+          "solution": "HTML ফাইল তৈরির ধাপ: (১) টেক্সট এডিটর (Notepad) খোলা; (২) HTML কোড লেখা; (৩) File > Save As দিয়ে .html এক্সটেনশনসহ সেভ করা; (৪) ব্রাউজারে ফাইলটি খুলে দেখা।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে নুসরাতের ফাইল সেভ ও রিলোডের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "নুসরাত Notepad-এ কোড লিখে mypage.html নামে সেভ করেছে। ব্রাউজারে ফাইলটি খুললে ব্রাউজার HTML ট্যাগ পড়ে পেজটি রেন্ডার করে। কোডে পরিবর্তন করার পর F5 চেপে রিলোড করলে ব্রাউজার নতুন কোড পড়ে আপডেটেড পেজ দেখায়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "নুসরাতের কাজে ফাইলের এক্সটেনশনের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "নুসরাত ফাইলটি .html এক্সটেনশনসহ সেভ করেছে বলেই ব্রাউজার ফাইলটি HTML ফাইল হিসেবে চিনতে পেরেছে। এক্সটেনশন ছাড়া বা ভুল এক্সটেনশনসহ সেভ করলে ব্রাউজার ফাইলটি সঠিকভাবে খুলতে পারত না। তাই HTML ফাইল সেভের সময় এক্সটেনশন অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": ".html ফাইল, সেভ ও রিলোড প্রক্রিয়ার ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ তার HTML ডকুমেন্টের প্রথম লাইনে <!DOCTYPE html> লিখল, যাতে ব্রাউজার ডকুমেন্টটি HTML5 হিসেবে বুঝতে পারে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "DOCTYPE কী?",
+          "solution": "DOCTYPE হলো HTML ডকুমেন্টের ধরন নির্দেশের ঘোষণা, যা ব্রাউজারকে বলে ডকুমেন্টটি কোন HTML সংস্করণে লেখা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<!DOCTYPE html> কী নির্দেশ করে?",
+          "solution": "<!DOCTYPE html> নির্দেশ করে ডকুমেন্টটি HTML5। এটি ব্রাউজারকে HTML5 মোডে ডকুমেন্টটি রেন্ডার করতে বলে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের DOCTYPE ব্যবহারের যৌক্তিকতা বিশ্লেষণ করো।",
+          "solution": "আরিফ ডকুমেন্টের প্রথম লাইনে <!DOCTYPE html> লিখেছে, যা ব্রাউজারকে ডকুমেন্টটি HTML5 হিসেবে বুঝতে সাহায্য করে। DOCTYPE ছাড়া ব্রাউজার ডকুমেন্টটি পুরনো মোডে রেন্ডার করতে পারে, ফলে পেজের চেহারা ভিন্ন হতে পারে। তাই DOCTYPE ব্যবহার করা সঠিক ও যৌক্তিক।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "HTML ডকুমেন্টে DOCTYPE-এর গুরুত্ব মূল্যায়ন করো।",
+          "solution": "DOCTYPE ব্রাউজারকে ডকুমেন্টের সংস্করণ বুঝতে সাহায্য করে এবং সঠিক মোডে রেন্ডার করতে বলে। DOCTYPE ছাড়া ব্রাউজার অনুমান করে রেন্ডার করে, ফলে পেজের চেহারা অপ্রত্যাশিত হতে পারে। আরিফের মতো DOCTYPE ব্যবহার করলে পেজটি সব ব্রাউজারে একইভাবে দেখা যায়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "DOCTYPE ও HTML5-এর ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন তার ওয়েবপেজে একটি টেবিল তৈরি করল, যেখানে Month, Bills, Electricity, Water ও Gas কলাম রয়েছে এবং বিলের হিসাব দেখানো হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML টেবিলের কাজ লেখো।",
+          "solution": "HTML টেবিলের কাজ হলো সারি ও কলামে সাজিয়ে তথ্য উপস্থাপন করা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "টেবিলে cellspacing ও cellpadding অ্যাট্রিবিউটের কাজ লেখো।",
+          "solution": "cellspacing অ্যাট্রিবিউট সেলগুলোর মধ্যবর্তী ফাঁকা জায়গা এবং cellpadding অ্যাট্রিবিউট সেলের ভেতরের কনটেন্টের চারপাশের ফাঁকা জায়গা নির্ধারণ করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিনের বিলের টেবিলের কাঠামোটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে শারমিনের টেবিলে Month, Bills, Electricity, Water ও Gas কলাম রয়েছে। <table> ট্যাগ দিয়ে টেবিল শুরু করে, <tr> ট্যাগ দিয়ে প্রতিটি সারি এবং <td> ট্যাগ দিয়ে প্রতিটি সেল তৈরি করা হয়েছে। হেডার সারিতে <th> ট্যাগ ব্যবহার করা হয়েছে। এভাবে বিলের হিসাব সারি-কলামে সাজানো হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "বিলের হিসাব উপস্থাপনে টেবিলের সুবিধা মূল্যায়ন করো।",
+          "solution": "বিলের হিসাব টেবিলে উপস্থাপন করলে মাস অনুযায়ী Electricity, Water ও Gas বিলের তুলনা সহজে করা যায়। শারমিনের মতো টেবিল ব্যবহার করলে তথ্য সুশৃঙ্খল থাকে এবং ব্যবহারকারী সহজে প্রয়োজনীয় তথ্য খুঁজে পায়। তাই হিসাব উপস্থাপনে টেবিল অত্যন্ত কার্যকর।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML টেবিল ও cellspacing/cellpadding অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৩৮-১৩৯; PDF পৃ. ১৪৪-১৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান তার ওয়েবপেজের একটি টেক্সটের রঙ নীল ও ফন্টের আকার 20px করতে style অ্যাট্রিবিউটে color ও font-size প্রপার্টি ব্যবহার করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "style অ্যাট্রিবিউট কী?",
+          "solution": "style অ্যাট্রিবিউট হলো HTML ট্যাগে সরাসরি CSS স্টাইল প্রয়োগের অ্যাট্রিবিউট।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "CSS প্রপার্টি কী?",
+          "solution": "CSS প্রপার্টি হলো স্টাইলের বৈশিষ্ট্য, যেমন color (রঙ), font-size (ফন্টের আকার), width, height, margin, padding, border, text-align, background-color ইত্যাদি।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের style অ্যাট্রিবিউট ব্যবহারের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "হাসান HTML ট্যাগে style অ্যাট্রিবিউট ব্যবহার করে color: blue ও font-size: 20px প্রপার্টি নির্ধারণ করেছে। ফলে টেক্সটটি নীল রঙে ও 20px আকারে প্রদর্শিত হবে। এটি inline CSS-এর উদাহরণ, কারণ স্টাইল সরাসরি ট্যাগের ভেতরে লেখা হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "হাসানের পেজে style অ্যাট্রিবিউটের সীমাবদ্ধতা মূল্যায়ন করো।",
+          "solution": "style অ্যাট্রিবিউট দিয়ে সরাসরি স্টাইল প্রয়োগ করা যায়, কিন্তু একই স্টাইল অনেক ট্যাগে প্রয়োগ করতে হলে প্রতিটি ট্যাগে আলাদা করে লিখতে হয়, যা কষ্টসাধ্য। হাসানের পেজে যদি অনেক টেক্সটে একই স্টাইল দিতে হয়, তবে internal বা external CSS বেশি কার্যকর হবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "style অ্যাট্রিবিউট ও CSS প্রপার্টির ধারণা যাচাই করা হয়েছে।",
+      "page": "মুদ্রিত পৃ. ১৪১-১৪২; PDF পৃ. ১৪৭-১৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "একটি কলেজের ওয়েবসাইটে Home পেজ থেকে Arts, Science ও Commerce বিভাগের পেজে যাওয়া যায়। প্রতিটি বিভাগের পেজ থেকে আবার Home পেজে ফেরা যায়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েবসাইট স্ট্রাকচার কী?",
+          "solution": "ওয়েবসাইট স্ট্রাকচার হলো ওয়েবসাইটের পেজগুলোর সংগঠন বা কাঠামো, যা নির্দেশ করে কোন পেজ থেকে কোন পেজে যাওয়া যাবে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Hierarchical ওয়েবসাইট স্ট্রাকচার কী?",
+          "solution": "Hierarchical ওয়েবসাইট স্ট্রাকচার হলো এমন কাঠামো যেখানে একটি প্রধান পেজের অধীনে একাধিক উপ-পেজ থাকে এবং উপ-পেজগুলো আবার প্রধান পেজে ফিরে আসে। যেমন: College-এর অধীনে Arts/Science/Commerce।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের ওয়েবসাইটের স্ট্রাকচারের ধরনটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের ওয়েবসাইটে Home পেজ প্রধান পেজ হিসেবে কাজ করছে এবং এর অধীনে Arts, Science ও Commerce বিভাগের পেজ রয়েছে। প্রতিটি বিভাগের পেজ থেকে আবার Home পেজে ফেরা যায়। এটি Hierarchical ওয়েবসাইট স্ট্রাকচারের উদাহরণ।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইটে Hierarchical স্ট্রাকচারের সুবিধা মূল্যায়ন করো।",
+          "solution": "Hierarchical স্ট্রাকচারে ওয়েবসাইটের পেজগুলো সুশৃঙ্খলভাবে সাজানো থাকে এবং ব্যবহারকারীরা সহজে নেভিগেট করতে পারে। উদ্দীপকের কলেজের ওয়েবসাইটে ব্যবহারকারীরা Home পেজ থেকে যেকোনো বিভাগের পেজে যেতে পারে এবং আবার Home পেজে ফিরে আসতে পারে। এই স্ট্রাকচার ওয়েবসাইটকে ব্যবহারকারী-বান্ধব করে তোলে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েবসাইট স্ট্রাকচার ও Hierarchical স্ট্রাকচারের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২১৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রফিক http://www.systechdigital.com/itcom/main.htm — এই URL-টি ব্রাউজারে লিখে একটি ওয়েবপেজ খুলল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "URL কী?",
+          "solution": "URL (Uniform Resource Locator) হলো কোনো ওয়েবপেজকে ওয়েব ব্রাউজারে এর ঠিকানা নির্দেশ করে দেওয়ার মাধ্যম — ওয়েবসাইটের অনন্য ঠিকানা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "URL-এর protocol অংশ কী?",
+          "solution": "URL-এর protocol অংশ হলো ওয়েবসাইটে ব্যবহৃত প্রোটোকল, যেমন http। এটি নির্দেশ করে ব্রাউজার কোন প্রোটোকল ব্যবহার করে সার্ভারের সাথে সংযোগ স্থাপন করবে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের URL-এর অংশসমূহ ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের URL http://www.systechdigital.com/itcom/main.htm-এ http হলো protocol, www.systechdigital.com হলো সার্ভারের নাম, itcom হলো ডিরেক্টরি এবং main.htm হলো ফাইল। অর্থাৎ URL-এর চারটি অংশ হলো protocol, server, directory ও file।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজ খুঁজে পাওয়ার ক্ষেত্রে URL-এর ভূমিকা মূল্যায়ন করো।",
+          "solution": "URL ছাড়া ওয়েবপেজ খুঁজে পাওয়া সম্ভব নয়। রফিক URL লিখেই নির্দিষ্ট ওয়েবপেজটি খুলতে পেরেছে। URL ওয়েবপেজের অনন্য ঠিকানা নির্দেশ করে এবং ব্রাউজার এই ঠিকানা ব্যবহার করে সার্ভার থেকে পেজটি লোড করে। তাই ওয়েবপেজ খুঁজে পাওয়ার ক্ষেত্রে URL-এর ভূমিকা অপরিহার্য।",
+          "marks": 4
+        }
+      ],
+      "explanation": "URL ও এর অংশসমূহের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২০",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ একটি Input Form তৈরি করল, যেখানে First name, Last name, Username, Password, Gender, Religion, IT Experience ও Select Department ফিল্ড রয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML ফর্ম কী?",
+          "solution": "HTML ফর্ম হলো ব্যবহারকারীর কাছ থেকে ইনপুট নেওয়ার জন্য ব্যবহৃত এলাকা, যেখানে টেক্সট ফিল্ড, ড্রপ-ডাউন মেনু, রেডিও বাটন ইত্যাদি থাকে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ফর্মে পাসওয়ার্ড ইনপুটের type লেখো।",
+          "solution": "ফর্মে পাসওয়ার্ড ইনপুটের type হলো password, যাতে টাইপ করা অক্ষর দেখা যায় না।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের ফর্মের উপাদানসমূহ ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে আরিফের ফর্মে First name ও Last name-এর জন্য text ইনপুট, Username-এর জন্য text ইনপুট, Password-এর জন্য password ইনপুট, Gender-এর জন্য radio বাটন, Religion ও IT Experience-এর জন্য checkbox এবং Select Department-এর জন্য select (ড্রপ-ডাউন) রয়েছে। ফর্মটি <form> ট্যাগ দিয়ে নির্দেশ করা হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইটে ফর্মের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ফর্ম ছাড়া ওয়েবসাইটে ব্যবহারকারীর কাছ থেকে তথ্য সংগ্রহ করা যায় না। আরিফের ফর্মে ব্যবহারকারীরা নাম, ইউজারনেম, পাসওয়ার্ড, লিঙ্গ, ধর্ম, IT অভিজ্ঞতা ও বিভাগের তথ্য দিতে পারে। ফর্ম ওয়েবসাইটকে ইন্টারঅ্যাক্টিভ করে তোলে এবং ব্যবহারকারীর তথ্য সংগ্রহের মাধ্যম হিসেবে কাজ করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML ফর্ম ও ইনপুট টাইপের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৪১-২৪২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন একটি টেবিল তৈরি করল, যেখানে একটি সেল দুটি কলাম জুড়ে বিস্তৃত (Cell that spans two columns) এবং আরেকটি সেল দুটি রো জুড়ে বিস্তৃত (Cell that spans two rows)।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML টেবিল কী?",
+          "solution": "HTML টেবিল হলো <table> ট্যাগ দিয়ে তৈরি করা সারি ও কলামে সাজানো তথ্যের কাঠামো।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<th> ও <td> ট্যাগের মধ্যে পার্থক্য লেখো।",
+          "solution": "<th> ট্যাগ টেবিলের হেডার সেল নির্দেশ করে, যা সাধারণত বোল্ড ও মাঝখানে দেখায়। <td> ট্যাগ টেবিলের সাধারণ সেল নির্দেশ করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিনের colspan ও rowspan ব্যবহারের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "শারমিন একটি সেলকে দুটি কলাম জুড়ে বিস্তৃত করতে <th> ট্যাগে colspan অ্যাট্রিবিউট ব্যবহার করেছে এবং আরেকটি সেলকে দুটি রো জুড়ে বিস্তৃত করতে rowspan অ্যাট্রিবিউট ব্যবহার করেছে। ফলে টেবিলে সেলগুলো একাধিক কলাম/রো জুড়ে বিস্তৃত দেখা যাচ্ছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "টেবিলে colspan/rowspan ব্যবহারের সুবিধা মূল্যায়ন করো।",
+          "solution": "colspan/rowspan ব্যবহার করলে জটিল টেবিলের কাঠামো সহজে তৈরি করা যায়। শারমিনের মতো সেলকে একাধিক কলাম/রো জুড়ে বিস্তৃত করলে টেবিলের হেডার ও কনটেন্ট সুশৃঙ্খলভাবে সাজানো যায়। এই অ্যাট্রিবিউট ছাড়া জটিল টেবিল তৈরি করা কষ্টসাধ্য হতো।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML টেবিল ও colspan/rowspan অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "তানভীর তার ওয়েবসাইটটি ইন্টারনেটে প্রকাশ করতে চায়। সে সাইট ডিজাইন, ডোমেইন নাম রেজিস্ট্রেশন, ওয়েব হোস্টিং ও হোস্ট সার্ভারে আপলোড — এই চারটি ধাপ অনুসরণ করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েবসাইট পাবলিশিং কী?",
+          "solution": "ওয়েবসাইট পাবলিশিং হলো কোনো ওয়েবসাইটকে চূড়ান্তভাবে ইন্টারনেটে প্রকাশ করার প্রক্রিয়া।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডোমেইন নাম রেজিস্ট্রেশন কী?",
+          "solution": "ডোমেইন নাম রেজিস্ট্রেশন হলো ওয়েবসাইটের জন্য অনন্য ডোমেইন নাম নিবন্ধন করা, যার মাধ্যমে ওয়েবসাইটটি সবার কাছে পরিচিতি লাভ করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে তানভীরের পাবলিশিংয়ের ধাপসমূহ ব্যাখ্যা করো।",
+          "solution": "তানভীরের পাবলিশিংয়ের ধাপগুলো হলো: (১) সাইট ডিজাইন — ওয়েবসাইটের গ্রাফিক্স লেআউট ডিজাইন ও কোড তৈরি করা; (২) ডোমেইন নাম রেজিস্ট্রেশন — ওয়েবসাইটের জন্য অনন্য ডোমেইন নাম নিবন্ধন করা; (৩) ওয়েব হোস্টিং — হোস্টিং কোম্পানির কাছ থেকে সার্ভার স্পেস নেওয়া; (৪) হোস্ট সার্ভারে আপলোড — ওয়েবসাইটের ফাইল হোস্ট সার্ভারে আপলোড করা।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "তানভীরের ওয়েবসাইটে ওয়েব হোস্টিংয়ের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়েব হোস্টিং ছাড়া ওয়েবসাইট ইন্টারনেটে প্রকাশ করা যায় না। তানভীর হোস্টিং কোম্পানির কাছ থেকে সার্ভার স্পেস নিয়েছে বলেই তার ওয়েবসাইটের ফাইল ইন্টারনেটে সংরক্ষিত হয়েছে এবং ব্যবহারকারীরা সাইটটি দেখতে পারছে। হোস্টিং কোম্পানিগুলো সাধারণত ডোমেইন নিবন্ধন ও হোস্টিং সেবা একসাথে প্রদান করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েবসাইট পাবলিশিংয়ের ধাপসমূহ যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৪৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "নুসরাত দুটি ওয়েবসাইট তুলনা করল — একটির কনটেন্ট কখনো বদলায় না এবং কোড পরিবর্তন করলেই কনটেন্ট বদলায়, আরেকটির কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে বদলায়।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "স্ট্যাটিক ওয়েবসাইট কী?",
+          "solution": "স্ট্যাটিক ওয়েবসাইট হলো এমন ওয়েবসাইট যার কনটেন্ট স্থির থাকে এবং কনটেন্ট পরিবর্তন করতে কোড পরিবর্তন করতে হয়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ডাইনামিক ওয়েবসাইট কী?",
+          "solution": "ডাইনামিক ওয়েবসাইট হলো এমন ওয়েবসাইট যার কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে পরিবর্তিত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের দুটি ওয়েবসাইটের মধ্যে পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকের প্রথম ওয়েবসাইটটি স্ট্যাটিক ওয়েবসাইট, কারণ এর কনটেন্ট স্থির থাকে এবং কনটেন্ট পরিবর্তন করতে কোড পরিবর্তন করতে হয়। দ্বিতীয় ওয়েবসাইটটি ডাইনামিক ওয়েবসাইট, কারণ এর কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে পরিবর্তিত হয়। স্ট্যাটিক ওয়েবসাইটে সাধারণত HTML ও CSS দিয়ে তৈরি করা হয়, আর ডাইনামিক ওয়েবসাইটে PHP, ASP.NET, JSP ইত্যাদি ব্যবহার করা হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "কোন ধরনের ওয়েবসাইট কোন ক্ষেত্রে বেশি উপযুক্ত — উদ্দীপকের আলোকে মূল্যায়ন করো।",
+          "solution": "যে ওয়েবসাইটের কনটেন্ট প্রায় স্থির থাকে (যেমন: ব্যক্তিগত পোর্টফোলিও), সেখানে স্ট্যাটিক ওয়েবসাইট উপযুক্ত। আর যে ওয়েবসাইটে কনটেন্ট নিয়মিত পরিবর্তিত হয় (যেমন: অনলাইন শপ, নিউজ পোর্টাল), সেখানে ডাইনামিক ওয়েবসাইট উপযুক্ত। উদ্দীপকের দ্বিতীয় ওয়েবসাইটটি ডাইনামিক হওয়ায় তা নিয়মিত কনটেন্ট পরিবর্তনের ক্ষেত্রে বেশি উপযুক্ত।",
+          "marks": 4
+        }
+      ],
+      "explanation": "স্ট্যাটিক ও ডাইনামিক ওয়েবসাইটের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২১-২২৪",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান একটি HTML ডকুমেন্টে <p>This is my first paragraph</p> লিখল, যেখানে <p> ট্যাগ দিয়ে প্যারাগ্রাফ নির্দেশ করা হয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML এলিমেন্ট কী?",
+          "solution": "HTML এলিমেন্ট হলো HTML ডকুমেন্টের এমন অংশ যা স্টার্ট ট্যাগ ও এন্ড ট্যাগের ভেতরের কনটেন্ট নিয়ে গঠিত।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ওপেনিং ট্যাগ ও ক্লোজিং ট্যাগের মধ্যে পার্থক্য লেখো।",
+          "solution": "ওপেনিং ট্যাগ দিয়ে এলিমেন্ট শুরু হয় (যেমন: <p>) এবং ক্লোজিং ট্যাগ দিয়ে এলিমেন্ট শেষ হয় (যেমন: </p>)। ক্লোজিং ট্যাগে ওপেনিং ট্যাগের তুলনায় অতিরিক্ত '/' চিহ্ন থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের <p> এলিমেন্টের কাঠামোটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে হাসানের <p> এলিমেন্টে একটি ওপেনিং ট্যাগ <p> এবং একটি ক্লোজিং ট্যাগ </p> রয়েছে এবং এলিমেন্টের কনটেন্ট হলো This is my first paragraph। অর্থাৎ <p> এলিমেন্ট HTML ডকুমেন্টের মধ্যে একটি প্যারাগ্রাফকে নির্দেশ করে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "HTML এলিমেন্টের সিনট্যাক্সের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "HTML এলিমেন্টের সিনট্যাক্স হলো: ওপেনিং ট্যাগ দিয়ে শুরু, এন্ড ট্যাগ দিয়ে শেষ এবং মাঝখানে এলিমেন্ট কনটেন্ট থাকে। এই সিনট্যাক্স না মানলে ব্রাউজার পেজটি সঠিকভাবে রেন্ডার করতে পারে না। হাসানের মতো সঠিক সিনট্যাক্স ব্যবহার করলে পেজটি সঠিকভাবে প্রদর্শিত হয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML এলিমেন্ট ও এর সিনট্যাক্সের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২৬-২২৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রুমা তার ওয়েবপেজে একটি প্যারাগ্রাফ লাল রঙে দেখাতে <p style=\"color:red;\">This is paragraph</p> কোড লিখল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML অ্যাট্রিবিউট কী?",
+          "solution": "HTML অ্যাট্রিবিউট হলো কোনো কিছুর বৈশিষ্ট্য নির্দেশের মাধ্যম — ধরা যাক, কোনো টেক্সটে একটি শব্দ আছে, এ শব্দটি যদি বাদ রং করা হয় তাহলে এর অ্যাট্রিবিউট হবে রেড কালার।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "অ্যাট্রিবিউটের সিনট্যাক্স লেখো।",
+          "solution": "অ্যাট্রিবিউটের সিনট্যাক্স হলো: ট্যাগের নামের পর স্পেস দিয়ে অ্যাট্রিবিউট নাম, সমান চিহ্ন (=) এবং কোটেশন চিহ্নের মধ্যে অ্যাট্রিবিউট ভ্যালু। যেমন: <p style=\"color:red;\">",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে রুমার অ্যাট্রিবিউট ব্যবহারের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে রুমা <p> ট্যাগে style অ্যাট্রিবিউট ব্যবহার করেছে, যার ভ্যালু হলো color:red;। অর্থাৎ অ্যাট্রিবিউট নাম style, সমান চিহ্নের পর কোটেশনের মধ্যে ভ্যালু color:red; দেওয়া হয়েছে। ফলে প্যারাগ্রাফের টেক্সটটি লাল রঙে প্রদর্শিত হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে অ্যাট্রিবিউট ব্যবহারের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "অ্যাট্রিবিউট ছাড়া ওয়েবপেজে অনেক তথ্য যেমন ছবি, হাইপারলিংক, টেক্সটের রঙ ইত্যাদি যুক্ত করা যায় না। রুমার মতো অ্যাট্রিবিউট ব্যবহার করলে প্যারাগ্রাফের টেক্সটের রঙ নির্ধারণ করা যায়। অ্যাট্রিবিউট HTML ডকুমেন্টের জন্য অত্যন্ত প্রয়োজনীয়।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML অ্যাট্রিবিউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২৭-২২৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ তার ওয়েবপেজে দুই ধরনের হাইপারলিংক তৈরি করল — একটি একই সাইটের basic.html পেজের সাথে এবং আরেকটি অন্য সাইটের (http://www.abccompany.com/salarybasic.html) সাথে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "হাইপারলিংক কী?",
+          "solution": "হাইপারলিংক হলো বিভিন্ন ধরনের তথ্য/বিষয়ের ভেতর ডায়ালগ স্থাপন করার ব্যবস্থা — টেক্সট অথবা ইমেজকে লিংক হিসেবে নির্দেশ করা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "ইন্টারনাল হাইপারলিংক কী?",
+          "solution": "ইন্টারনাল হাইপারলিংক হলো একই সাইটে অবস্থিত একটি ওয়েবপেজের সাথে অন্য পেজের লিংক তৈরি করা। ইন্টারনাল লিংকের জন্য Relative URL ব্যবহার করা হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের দুই ধরনের হাইপারলিংকের পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে আরিফের প্রথম লিংকটি ইন্টারনাল হাইপারলিংক, কারণ এটি একই সাইটের basic.html পেজের সাথে তৈরি করা হয়েছে এবং এখানে Relative URL ব্যবহৃত হয়েছে। দ্বিতীয় লিংকটি এক্সটারনাল হাইপারলিংক, কারণ এটি অন্য সাইটের (abccompany.com) পেজের সাথে তৈরি করা হয়েছে এবং এখানে Absolute URL ব্যবহৃত হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইটে হাইপারলিংকের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "হাইপারলিংক ছাড়া ওয়েবসাইটের পেজগুলো পরস্পর সংযুক্ত হয় না। আরিফের মতো ইন্টারনাল ও এক্সটারনাল হাইপারলিংক ব্যবহার করলে ব্যবহারকারীরা একই সাইটের পেজ থেকে অন্য পেজে এবং অন্য সাইটে সহজে যেতে পারে। হাইপারলিংক ওয়েবসাইটের নেভিগেশন সহজ করে এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "হাইপারলিংক ও এর ধরনসমূহের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৩৫-২৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "ফারহান তার ওয়েবপেজে ocean.jpg নামের একটি ছবি যোগ করল, যার প্রস্থ 415 পিক্সেল ও উচ্চতা 332 পিক্সেল নির্ধারণ করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "<img> ট্যাগ কী?",
+          "solution": "<img> ট্যাগ হলো HTML পেজে ইমেজ যুক্ত করার ট্যাগ, যা একটি এমটি ট্যাগ এবং এর কোনো ক্লোজিং ট্যাগ নেই।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "src ও alt অ্যাট্রিবিউটের কাজ লেখো।",
+          "solution": "src অ্যাট্রিবিউট পেজে যে ইমেজটি প্রদর্শন করা হবে তার URL নির্দেশ করে। alt অ্যাট্রিবিউট কোনো ইমেজের জন্য একটি অল্টারনেট টেক্সট নির্দেশ করে, যা ব্রাউজার যদি কোনো কারণে ইমেজটি লোড করতে ব্যর্থ হয় তবে ইমেজের পরিবর্তে অল্টারনেট টেক্সট প্রদর্শন করে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে ফারহানের ছবির সাইজ নির্ধারণের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "ফারহান ছবির প্রস্থ 415 পিক্সেল ও উচ্চতা 332 পিক্সেল নির্ধারণ করতে width=\"415\" ও height=\"332\" অ্যাট্রিবিউট ব্যবহার করেছে। অর্থাৎ <img src=\"ocean.jpg\" width=\"415\" height=\"332\"> লিখলে ছবিটি 415 × 332 পিক্সেল আকৃতিতে প্রদর্শিত হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে ছবি যোগ করার সময় সাইজ নির্ধারণের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "পেজে ইমেজ যুক্ত করার সময় সাইজ অ্যাট্রিবিউটের সাথে ইমেজের উচ্চতা (height) ও প্রস্থ (width) কত পিক্সেল হবে তা নির্দেশ করে দেওয়া যায়। ফারহানের মতো সাইজ নির্ধারণ করলে পেজের লেআউট সুশৃঙ্খল থাকে এবং ছবি অপ্রত্যাশিতভাবে বড়/ছোট দেখায় না। তাই ছবি যোগ করার সময় সাইজ নির্ধারণ অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ইমেজ ট্যাগ, src/alt অ্যাট্রিবিউট ও সাইজ নির্ধারণের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৩৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "নুসরাত তার ওয়েবপেজে কিছু টেক্সট বোল্ড, কিছু আন্ডারলাইন, কিছু ইটালিক ও কিছু ছোট করে দেখাল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "টেক্সট ফরম্যাটিং কী?",
+          "solution": "টেক্সট ফরম্যাটিং হলো HTML ট্যাগ ব্যবহার করে টেক্সটকে বিভিন্নভাবে ফরম্যাট করা, যেমন বোল্ড, আন্ডারলাইন, ইটালিক ইত্যাদি।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<b>, <u>, <i> ও <small> ট্যাগের কাজ লেখো।",
+          "solution": "<b> ট্যাগ টেক্সটকে বোল্ড করতে, <u> ট্যাগ টেক্সটকে আন্ডারলাইন করতে, <i> ট্যাগ টেক্সটকে ইটালিক করতে এবং <small> ট্যাগ টেক্সটকে ছোট করে দেখাতে ব্যবহৃত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে নুসরাতের টেক্সট ফরম্যাটিংয়ের প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "নুসরাত <p> ট্যাগের ভেতরে <b> ও </b> ট্যাগ দিয়ে বোল্ড, <u> ও </u> ট্যাগ দিয়ে আন্ডারলাইন, <i> ও </i> ট্যাগ দিয়ে ইটালিক এবং <small> ও </small> ট্যাগ দিয়ে ছোট টেক্সট তৈরি করেছে। প্রতিটি ফরম্যাটিং ট্যাগের ওপেনিং ও ক্লোজিং ট্যাগ রয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবপেজে টেক্সট ফরম্যাটিংয়ের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "টেক্সট ফরম্যাটিং ছাড়া ওয়েবপেজের টেক্সট একঘেয়ে ও পড়তে কষ্টকর হয়। নুসরাতের মতো বোল্ড, আন্ডারলাইন, ইটালিক ও ছোট টেক্সট ব্যবহার করলে পেজের গুরুত্বপূর্ণ অংশগুলো সহজে চোখে পড়ে এবং পেজটি আরও পাঠযোগ্য হয়। তাই ওয়েবপেজে টেক্সট ফরম্যাটিং অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "টেক্সট ফরম্যাটিং ট্যাগের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৩৩-২৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "CQ",
+      "text": "হাসান একটি ওয়েবসাইট ডিজাইন করল, যেখানে গ্রাফিক্স ডিজাইন, ওয়েব টেমপ্লেট স্লাইসিং, কোডিং ও ডাটাবেস হ্যান্ডলিং, টেক্সট, ইমেজ, অ্যানিমেশন, অডিও, ভিডিও এবং টেস্টিং ও ডিবাগিং — এই উপাদানগুলো রয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েবপেজ ডিজাইন কী?",
+          "solution": "ওয়েবপেজ ডিজাইন হলো প্রয়োজনানুযায়ী সাইটকে উপযুক্ত রূপে ডিজাইন করা, যেখানে গ্রাফিক্স, টেক্সট, ইমেজ, অ্যানিমেশন, অডিও, ভিডিও ইত্যাদি উপাদান থাকে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "গ্রাফিক্স ডিজাইন কী?",
+          "solution": "গ্রাফিক্স ডিজাইন হলো ওয়েবসাইট ডিজাইনের একটি গুরুত্বপূর্ণ অংশ। একটি সাইটের লেআউট কেমন হবে তার পুরো ডিজাইনই সাধারণত গ্রাফিক্স ডিজাইনের মাধ্যমে করা হয়ে থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে হাসানের ওয়েবসাইটের উপাদানসমূহ ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে হাসানের ওয়েবসাইটে গ্রাফিক্স ডিজাইন, ওয়েব টেমপ্লেট স্লাইসিং, কোডিং ও ডাটাবেস হ্যান্ডলিং, টেক্সট, ইমেজ, অ্যানিমেশন, অডিও, ভিডিও এবং টেস্টিং ও ডিবাগিং — এই উপাদানগুলো রয়েছে। এগুলো ওয়েবসাইট ডিজাইনের প্রধান উপাদান, যার সমন্বয়ে একটি সম্পূর্ণ ওয়েবসাইট তৈরি হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইট ডিজাইনে টেস্টিং ও ডিবাগিংয়ের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "টেস্টিং ও ডিবাগিং হলো ওয়েবসাইট ডিজাইনের শেষ ধাপ। সাইট তৈরির পর বারবার টেস্ট করা প্রয়োজন। কোডে ভুল থাকলে সেগুলো ডিবাগিং বা ঠিক করতে হয়। ভিন্ন ভিন্ন অপারেটিং সিস্টেম ও ব্রাউজারে এগুলো চেক করে নেওয়া প্রয়োজন। হাসানের ওয়েবসাইটে এই ধাপটি সম্পন্ন করলে সাইটটি ত্রুটিমুক্ত হবে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "ওয়েবপেজ ডিজাইনের উপাদানসমূহ যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৪৫-২৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "রুমা দুই ধরনের হোস্টিং সেবা সম্পর্কে জানল — একটি Windows হোস্টিং (ASP ও Microsoft SQL Server) এবং আরেকটি Linux হোস্টিং (PHP ও MySQL Server)।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "ওয়েব হোস্টিং কী?",
+          "solution": "ওয়েব হোস্টিং হলো ওয়েবসাইটকে ইন্টারনেটে সংযুক্ত সার্ভারে সংরক্ষণ করার সেবা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "Windows হোস্টিং কী?",
+          "solution": "Windows হোস্টিং হলো এমন হোস্টিং যেখানে ওয়েবসাইটটি ASP (Active Server Page) প্রোগ্রামিং ভাষা ও Microsoft SQL Server ডাটাবেজ ব্যবহার করে তৈরি হয়ে থাকে।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে রুমার দুই ধরনের হোস্টিংয়ের পার্থক্য ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে প্রথম হোস্টিংটি Windows হোস্টিং, যেখানে ASP প্রোগ্রামিং ভাষা ও Microsoft SQL Server ডাটাবেজ ব্যবহৃত হয়। দ্বিতীয় হোস্টিংটি Linux হোস্টিং, যেখানে PHP প্রোগ্রামিং ভাষা ও MySQL Server ডাটাবেজ ব্যবহৃত হয়। অর্থাৎ হোস্টিংয়ের ধরন অনুযায়ী প্রোগ্রামিং ভাষা ও ডাটাবেজ ভিন্ন হয়।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইটের জন্য সঠিক হোস্টিং বাছাইয়ের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়েবসাইটটি কোন প্রোগ্রামিং ভাষা দিয়ে তৈরি তার উপর ভিত্তি করে হোস্টিং বাছাই করতে হয়। রুমার ওয়েবসাইট যদি ASP দিয়ে তৈরি হয় তবে Windows হোস্টিং এবং PHP দিয়ে তৈরি হলে Linux হোস্টিং নিতে হবে। ভুল হোস্টিং বাছাই করলে ওয়েবসাইট সঠিকভাবে কাজ করবে না। তাই সঠিক হোস্টিং বাছাই অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "হোস্টিং টেকনোলজির ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "শারমিন MS Word-এ বাংলা লেখা লিখে কপি করে Notepad-এ পেস্ট করে <font face=\"SutonnyMJ\"> ট্যাগের ভেতরে রাখল এবং HTML ফাইল হিসেবে সেভ করল।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "Unicode কী?",
+          "solution": "Unicode হলো বাংলাসহ সব ভাষার অক্ষরকে সংখ্যায় রূপান্তর করে সংরক্ষণের পদ্ধতি, যা দিয়ে বাংলা লেখা ওয়েবপেজে প্রদর্শন করা যায়।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "HTML পেজে বাংলা লেখার পদ্ধতিগুলো লেখো।",
+          "solution": "HTML পেজে বাংলা লেখার পদ্ধতি দুটি: (১) MS Word-এ টাইপ করা বাংলা লেখা ওয়েবসাইটে ব্যবহার করা; (২) ইউনিকোডে সরাসরি HTML ডকুমেন্টে টাইপ করে বাংলা লেখা।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে শারমিনের বাংলা লেখার প্রক্রিয়াটি ব্যাখ্যা করো।",
+          "solution": "শারমিন MS Word-এ বাংলা লেখা লিখে কপি করে Notepad-এ পেস্ট করেছে এবং <font face=\"SutonnyMJ\"> ট্যাগের ভেতরে লেখাটি রেখেছে। এরপর HTML ফাইল হিসেবে সেভ করেছে। ব্রাউজারে পেজটি খুললে SutonnyMJ ফন্টে বাংলা লেখাটি প্রদর্শিত হবে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "HTML পেজে বাংলা লেখার ক্ষেত্রে ইউনিকোড পদ্ধতির সুবিধা মূল্যায়ন করো।",
+          "solution": "ইউনিকোড পদ্ধতিতে সরাসরি HTML ডকুমেন্টে টাইপ করে বাংলা লেখা যায়, যার জন্য কোনো নির্দিষ্ট ফন্ট ইনস্টল করার প্রয়োজন হয় না। শারমিনের MS Word পদ্ধতিতে SutonnyMJ ফন্ট ইনস্টল করা থাকতে হয়, কিন্তু ইউনিকোড পদ্ধতিতে যেকোনো কম্পিউটারে পেজটি সঠিকভাবে দেখা যায়। তাই ইউনিকোড পদ্ধতি বেশি সুবিধাজনক।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML পেজে বাংলা লেখার পদ্ধতি যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২৩১-২৩২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "তানভীর একটি HTML পেজের লেআউট তৈরি করল, যেখানে উপরে Header, বামে Sidebar, মাঝখানে Content (Container 1 ও Container 2) এবং নিচে Footer রয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML পেজ লেআউট কী?",
+          "solution": "HTML পেজ লেআউট হলো ওয়েবসাইটে বিভিন্ন উপাদান (টাইটেল, হেডার, প্রধান কনটেন্ট, টেক্সট, ইমেজ, লিংক ইত্যাদি) কোনটি কোথায়, কীভাবে স্থাপিত হবে তার পরিকল্পনা বা ছকে লেআউট করা।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "HTML পেজ লেআউটের অংশসমূহ লেখো।",
+          "solution": "HTML পেজ লেআউটের অংশসমূহ হলো Header, Sidebar, Content (Container 1, Container 2) ও Footer।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে তানভীরের লেআউটের কাঠামোটি ব্যাখ্যা করো।",
+          "solution": "উদ্দীপকে তানভীরের লেআউটে উপরে Header, বামে Sidebar, মাঝখানে Content অংশে Container 1 ও Container 2 এবং নিচে Footer রয়েছে। অর্থাৎ পেজের প্রধান কনটেন্ট এলাকার কাঠামো বা অবকাঠামো এভাবে সাজানো হয়েছে।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "ওয়েবসাইট তৈরির আগে লেআউট তৈরির গুরুত্ব মূল্যায়ন করো।",
+          "solution": "ওয়েবসাইট তৈরি করার আগেই লেআউট তৈরি করে নিলে কাজের সুবিধা হয়। তানভীরের মতো লেআউট থাকলে ডিজাইনাররা ওয়েব ডেভেলপারদের লেআউট দেখে অনুযায়ী সাইট ডিজাইন করতে পারে। লেআউট ছাড়া ওয়েবসাইট তৈরি করা অনেক সময়সাপেক্ষ। তাই লেআউট তৈরি অত্যন্ত গুরুত্বপূর্ণ।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML পেজ লেআউটের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "CQ",
+      "text": "আরিফ একটি HTML ডকুমেন্ট তৈরি করল, যেখানে <html> ট্যাগ দিয়ে পুরো ডকুমেন্ট আবদ্ধ করা হয়েছে এবং <head> অংশে পেজের শিরোনাম রয়েছে।",
+      "parts": [
+        {
+          "label": "ক",
+          "question": "HTML ডকুমেন্ট কী?",
+          "solution": "HTML ডকুমেন্ট হলো HTML ট্যাগের সমন্বয়ে গঠিত ডকুমেন্ট, যা ওয়েবপেজে প্রদর্শনকে নির্দেশ করে।",
+          "marks": 1
+        },
+        {
+          "label": "খ",
+          "question": "<title> ট্যাগের কাজ লেখো।",
+          "solution": "<title> ট্যাগে পেজের শিরোনাম লেখা হয়, যা ব্রাউজারের উইন্ডোর উপরে টাইটেল হিসেবে প্রদর্শিত হয়।",
+          "marks": 2
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকে আরিফের HTML ডকুমেন্টের কাঠামোটি ব্যাখ্যা করো।",
+          "solution": "আরিফের HTML ডকুমেন্টে <html> ট্যাগ দিয়ে পুরো ডকুমেন্ট আবদ্ধ করা হয়েছে এবং <head> অংশে পেজের শিরোনাম (<title>) রয়েছে। অর্থাৎ ডকুমেন্টের কাঠামো হলো <html> → <head> (শিরোনাম) ও <body> (কনটেন্ট)।",
+          "marks": 3
+        },
+        {
+          "label": "ঘ",
+          "question": "HTML ডকুমেন্টে <head> অংশের গুরুত্ব মূল্যায়ন করো।",
+          "solution": "HTML ডকুমেন্টের <head> অংশে ওয়েবপেজের কীওয়ার্ড, পেজের কর্নার ও পেজ টাইটেল স্থাপন করা হয়। কোনো পেজ ব্রাউজারে প্রদর্শিত হওয়ার আগে <head> থেকে প্রয়োজনীয় অংশ পড়ে নেওয়া হয়। আরিফের ডকুমেন্টে <head> অংশে শিরোনাম থাকায় ব্রাউজার পেজটি সঠিকভাবে প্রদর্শন করতে পারছে।",
+          "marks": 4
+        }
+      ],
+      "explanation": "HTML ডকুমেন্টের কাঠামো ও head অংশের ধারণা যাচাই করা হয়েছে।",
+      "page": "ছাপা পৃ. ২২৮-২২৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েব ডিজাইন কী?",
+      "explanation": "ওয়েব ডিজাইন হলো ওয়েবসাইটের পেজসমূহের কাঠামো, রূপ ও কার্যকারিতা পরিকল্পনা ও তৈরি করার প্রক্রিয়া।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়ার্ল্ড ওয়াইড ওয়েব কত সালে ও কে উদ্ভাবন করেন?",
+      "explanation": "ওয়ার্ল্ড ওয়াইড ওয়েব ১৯৮৯ সালে টিম বার্নার্স-লি উদ্ভাবন করেন।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "হাইপারটেক্সট ও হাইপারমিডিয়ার মধ্যে পার্থক্য লেখো।",
+      "explanation": "হাইপারটেক্সট হলো অন্য পেজ বা তথ্যের সাথে সংযুক্ত লেখা। হাইপারমিডিয়া হলো হাইপারলিংকের মাধ্যমে টেক্সট, ছবি, ভিডিও ইত্যাদি মিডিয়ার সংযোগ।",
+      "page": "মুদ্রিত পৃ. ১২৬; PDF পৃ. ১৩২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "IP Address কী?",
+      "explanation": "IP Address হলো ইন্টারনেটে সংযুক্ত প্রতিটি ডিভাইসের অনন্য ঠিকানা, যা সংখ্যা দিয়ে নির্দেশ করা হয়।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DNS-এর কাজ লেখো।",
+      "explanation": "DNS (Domain Name System) ডোমেইন নামকে IP Address-এ রূপান্তর করে।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েব ব্রাউজার কী? দুটি ব্রাউজারের নাম লেখো।",
+      "explanation": "ওয়েব ব্রাউজার হলো ওয়েবপেজ দেখা ও ইন্টারঅ্যাক্ট করার সফটওয়্যার। দুটি ব্রাউজার হলো Mozilla Firefox ও Google Chrome।",
+      "page": "মুদ্রিত পৃ. ১২৭; PDF পৃ. ১৩৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "স্ট্যাটিক ও ডাইনামিক ওয়েবসাইটের মধ্যে পার্থক্য লেখো।",
+      "explanation": "স্ট্যাটিক ওয়েবসাইটের কনটেন্ট স্থির থাকে এবং পরিবর্তন করতে কোড পরিবর্তন করতে হয়। ডাইনামিক ওয়েবসাইটের কনটেন্ট ডাটাবেস থেকে স্বয়ংক্রিয়ভাবে পরিবর্তিত হয়।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সার্ভার-ক্লায়েন্ট মডেলে সার্ভারের ভূমিকা লেখো।",
+      "explanation": "সার্ভার ওয়েবসাইটের ফাইল সংরক্ষণ করে এবং ক্লায়েন্টের রিকোয়েস্ট পেলে রেসপন্স হিসেবে ফাইল পাঠায়।",
+      "page": "মুদ্রিত পৃ. ১২৮; PDF পৃ. ১৩৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "HTTP ও HTTPS-এর ডিফল্ট পোর্ট নম্বর কত?",
+      "explanation": "HTTP-এর ডিফল্ট পোর্ট নম্বর 80 এবং HTTPS-এর ডিফল্ট পোর্ট নম্বর 443।",
+      "page": "মুদ্রিত পৃ. ১২৯; PDF পৃ. ১৩৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML কী? HTML-কে প্রোগ্রামিং ভাষা বলা যায় না কেন?",
+      "explanation": "HTML হলো Hyper Text Markup Language — ওয়েবপেজ তৈরির মার্কআপ ভাষা। HTML-এ লজিক বা অ্যালগরিদম লেখা যায় না, শুধু ট্যাগ দিয়ে কনটেন্টের গঠন নির্দেশ করা হয় বলে এটি প্রোগ্রামিং ভাষা নয়।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "CSS কী?",
+      "explanation": "CSS হলো Cascading Style Sheets — ওয়েবপেজের টেক্সট, রঙ, ফন্ট ইত্যাদির স্টাইল নির্ধারণের ভাষা।",
+      "page": "মুদ্রিত পৃ. ১৪১; PDF পৃ. ১৪৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "JavaScript কী ধরনের ভাষা?",
+      "explanation": "JavaScript একটি ক্লায়েন্ট-সাইড স্ক্রিপ্টিং ভাষা, যা ব্যবহারকারীর ব্রাউজারে চলে।",
+      "page": "মুদ্রিত পৃ. ১৪১; PDF পৃ. ১৪৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "হোমপেজ কী?",
+      "explanation": "হোমপেজ হলো ওয়েবসাইটের প্রধান পেজ, যা সাইটে প্রবেশের প্রথম পেজ হিসেবে কাজ করে।",
+      "page": "মুদ্রিত পৃ. ১৩০; PDF পৃ. ১৩৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "DOCTYPE কী? HTML ডকুমেন্টে এর গুরুত্ব লেখো।",
+      "explanation": "DOCTYPE হলো HTML ডকুমেন্টের ধরন নির্দেশের ঘোষণা। এটি ব্রাউজারকে বলে ডকুমেন্টটি কোন HTML সংস্করণে লেখা, ফলে ব্রাউজার সঠিক মোডে ডকুমেন্টটি রেন্ডার করে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "<head>, <title> ও <body> ট্যাগের কাজ লেখো।",
+      "explanation": "<head> অংশে পেজের শিরোনাম ও মেটা তথ্য থাকে। <title> ট্যাগে লেখা ব্রাউজার ট্যাব/টাইটেল বারে দেখায়। <body> অংশে পেজের দৃশ্যমান কনটেন্ট থাকে।",
+      "page": "মুদ্রিত পৃ. ১৩১; PDF পৃ. ১৩৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML হেডিং ট্যাগগুলো কী কী? সবচেয়ে বড় ও ছোট হেডিং কোনটি?",
+      "explanation": "HTML হেডিং ট্যাগগুলো হলো <h1> থেকে <h6>। সবচেয়ে বড় হেডিং <h1> এবং সবচেয়ে ছোট হেডিং <h6>।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "<br>, <p> ও <hr> ট্যাগের কাজ লেখো।",
+      "explanation": "<br> ট্যাগ লাইন ব্রেক তৈরি করে। <p> ট্যাগ প্যারাগ্রাফ তৈরি করে এবং আগে-পরে ফাঁকা জায়গা থাকে। <hr> ট্যাগ অনুভূমিক রেখা আঁকে।",
+      "page": "মুদ্রিত পৃ. ১৩২; PDF পৃ. ১৩৮",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "<b>, <i> ও <u> ট্যাগের কাজ লেখো।",
+      "explanation": "<b> ট্যাগ টেক্সটকে বোল্ড করে, <i> ট্যাগ টেক্সটকে ইটালিক করে এবং <u> ট্যাগ টেক্সটকে আন্ডারলাইন করে।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "H₂O ও a² লেখার জন্য কোন ট্যাগ ব্যবহৃত হয়?",
+      "explanation": "H₂O লেখার জন্য <sub> (সাবস্ক্রিপ্ট) ট্যাগ এবং a² লেখার জন্য <sup> (সুপারস্ক্রিপ্ট) ট্যাগ ব্যবহৃত হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৩; PDF পৃ. ১৩৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "<ul>, <ol> ও <li> ট্যাগের কাজ লেখো।",
+      "explanation": "<ul> আনঅর্ডার্ড লিস্ট, <ol> অর্ডার্ড লিস্ট এবং <li> লিস্ট আইটেম তৈরি করে।",
+      "page": "মুদ্রিত পৃ. ১৩৪; PDF পৃ. ১৪০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "লিস্টে type ও start অ্যাট্রিবিউটের কাজ লেখো।",
+      "explanation": "type অ্যাট্রিবিউট দিয়ে লিস্টের নম্বর/বুলেটের ধরন (ul-এ square/circle/disc, ol-এ i/I/a/A/1) এবং start অ্যাট্রিবিউট দিয়ে লিস্টের শুরুর নম্বর নির্ধারণ করা হয়।",
+      "page": "মুদ্রিত পৃ. ১৩৫; PDF পৃ. ১৪১",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "হাইপারলিংক তৈরির ট্যাগ ও href অ্যাট্রিবিউটের কাজ লেখো।",
+      "explanation": "হাইপারলিংক তৈরির ট্যাগ হলো <a>। href অ্যাট্রিবিউট লিংকের ঠিকানা (URL) নির্দেশ করে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "target=\"_blank\" ও target=\"_self\"-এর পার্থক্য লেখো।",
+      "explanation": "target=\"_blank\" দিলে লিংক নতুন ট্যাবে/উইন্ডোতে খোলে, আর target=\"_self\" দিলে একই ট্যাবে/উইন্ডোতে খোলে।",
+      "page": "মুদ্রিত পৃ. ১৩৬; PDF পৃ. ১৪২",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "<img> ট্যাগের src, width ও height অ্যাট্রিবিউটের কাজ লেখো।",
+      "explanation": "src অ্যাট্রিবিউট ছবির উৎস/পাথ নির্দেশ করে। width ও height অ্যাট্রিবিউট ছবির প্রস্থ ও উচ্চতা নির্ধারণ করে।",
+      "page": "মুদ্রিত পৃ. ১৩৭; PDF পৃ. ১৪৩",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "<table>, <tr>, <td> ও <th> ট্যাগের কাজ লেখো।",
+      "explanation": "<table> ট্যাগ টেবিল, <tr> ট্যাগ রো, <td> ট্যাগ সাধারণ সেল এবং <th> ট্যাগ হেডার সেল তৈরি করে।",
+      "page": "মুদ্রিত পৃ. ১৩৮; PDF পৃ. ১৪৪",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "rowspan ও colspan অ্যাট্রিবিউটের কাজ লেখো।",
+      "explanation": "rowspan অ্যাট্রিবিউট সেলকে একাধিক রো জুড়ে এবং colspan অ্যাট্রিবিউট সেলকে একাধিক কলাম জুড়ে বিস্তৃত করে।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML কমেন্টের সিনট্যাক্স লেখো।",
+      "explanation": "HTML কমেন্টের সিনট্যাক্স হলো <!-- -->। কমেন্ট ব্রাউজারে প্রদর্শিত হয় না।",
+      "page": "মুদ্রিত পৃ. ১৩৯; PDF পৃ. ১৪৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "বাংলা ওয়েবপেজে <meta charset=\"utf-8\"> ও lang=\"bn\"-এর কাজ লেখো।",
+      "explanation": "<meta charset=\"utf-8\"> ব্রাউজারকে বলে পেজটি UTF-8 এনকোডিংয়ে লেখা, ফলে বাংলা অক্ষর সঠিকভাবে পড়া যায়। lang=\"bn\" পেজের ভাষা বাংলা হিসেবে নির্দেশ করে।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "<div> ও <span> ট্যাগের মধ্যে পার্থক্য লেখো।",
+      "explanation": "<div> ট্যাগ কনটেন্টের জন্য ব্লক-লেভেল কন্টেইনার তৈরি করে। <span> ট্যাগ ইনলাইন কনটেন্টের অংশ নির্বাচন করে।",
+      "page": "মুদ্রিত পৃ. ১৪০; PDF পৃ. ১৪৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়্যারফ্রেম কী? ওয়েবপেজ ডিজাইনে এর গুরুত্ব লেখো।",
+      "explanation": "ওয়্যারফ্রেম হলো ওয়েবপেজের কাঠামোর খসড়া/নকশা। ওয়্যারফ্রেম থাকলে পেজের কাঠামো আগেই নির্ধারণ করা যায় এবং ডিজাইন প্রক্রিয়া সহজ হয়।",
+      "page": "মুদ্রিত পৃ. ১৪৩; PDF পৃ. ১৪৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েবপেজ ও ওয়েবসাইটের মধ্যে পার্থক্য লেখো।",
+      "explanation": "ওয়েবপেজ হলো ওয়েবসাইটের একটি পেজ। ওয়েবসাইট হলো একই ডোমেইনের অধীনে একাধিক ওয়েবপেজের সমষ্টি।",
+      "page": "ছাপা পৃ. ২১৫",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েবসাইটের স্ট্রাকচারের ধরনগুলো কী কী?",
+      "explanation": "ওয়েবসাইটের স্ট্রাকচারের ধরন হলো hierarchical, network, linear ও combination।",
+      "page": "ছাপা পৃ. ২১৯",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "URL-এর অংশসমূহ কী কী?",
+      "explanation": "URL-এর অংশসমূহ হলো protocol, server, directory ও file।",
+      "page": "ছাপা পৃ. ২২০",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "লোকাল ও রিমোট ওয়েবসাইটের মধ্যে পার্থক্য লেখো।",
+      "explanation": "লোকাল ওয়েবসাইট নিজস্ব কম্পিউটারে থাকে। রিমোট ওয়েবসাইট ইন্টারনেটে হোস্ট করা সার্ভারে থাকে।",
+      "page": "ছাপা পৃ. ২২১",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML-এর দুটি সুবিধা ও দুটি অসুবিধা লেখো।",
+      "explanation": "সুবিধা: HTML শেখা ও ফরম্যাটিং করা সহজ এবং প্রায় সব ধরনের ব্রাউজার সমর্থন করে। অসুবিধা: ডাইনামিক পেজ তৈরি করা যায় না এবং একটি সাধারণ ওয়েবপেজ তৈরির জন্য অনেক কোড লিখতে হয়।",
+      "page": "ছাপা পৃ. ২২৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML এলিমেন্ট কী?",
+      "explanation": "HTML এলিমেন্ট হলো HTML ডকুমেন্টের এমন অংশ যা স্টার্ট ট্যাগ ও এন্ড ট্যাগের ভেতরের কনটেন্ট নিয়ে গঠিত।",
+      "page": "ছাপা পৃ. ২২৬",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "নেস্টেড HTML এলিমেন্ট কী? উদাহরণ দাও।",
+      "explanation": "নেস্টেড HTML এলিমেন্ট হলো এমন এলিমেন্ট যার ভেতরে অন্যান্য HTML এলিমেন্ট থাকে। উদাহরণ: <html><body><p>This is my first paragraph</p></body></html> — এখানে <p> এলিমেন্ট <body> এলিমেন্টের ভেতরে এবং <body> এলিমেন্ট <html> এলিমেন্টের ভেতরে রয়েছে।",
+      "page": "ছাপা পৃ. ২২৬-২২৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "এমটি HTML এলিমেন্ট কী? উদাহরণ দাও।",
+      "explanation": "এমটি HTML এলিমেন্ট হলো এমন এলিমেন্ট যার কোনো কনটেন্ট থাকে না এবং স্টার্ট ট্যাগের মধ্যেই শেষ হয়ে যায়। উদাহরণ: <br> — এটি লাইনের মাঝে ব্রেক দেওয়ার জন্য ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২২৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ইন্টারনাল ও এক্সটারনাল হাইপারলিংকের মধ্যে পার্থক্য লেখো।",
+      "explanation": "ইন্টারনাল হাইপারলিংক একই সাইটের পেজের সাথে তৈরি করা হয় এবং Relative URL ব্যবহৃত হয়। এক্সটারনাল হাইপারলিংক অন্য সাইটের পেজের সাথে তৈরি করা হয় এবং Absolute URL ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৩৬",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML ফর্ম কী? ফর্মে ব্যবহৃত দুটি ইনপুট টাইপের নাম লেখো।",
+      "explanation": "HTML ফর্ম হলো ব্যবহারকারীর কাছ থেকে ইনপুট নেওয়ার জন্য ব্যবহৃত এলাকা। ফর্মে ব্যবহৃত দুটি ইনপুট টাইপ হলো text ও password।",
+      "page": "ছাপা পৃ. ২৪১-২৪২",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েবসাইট পাবলিশিংয়ের ধাপসমূহ লেখো।",
+      "explanation": "ওয়েবসাইট পাবলিশিংয়ের ধাপ ৪টি: (১) সাইট ডিজাইন, (২) ডোমেইন নাম রেজিস্ট্রেশন, (৩) ওয়েব হোস্টিং, (৪) হোস্ট সার্ভারে আপলোড।",
+      "page": "ছাপা পৃ. ২৪৭",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Windows হোস্টিং ও Linux হোস্টিংয়ের মধ্যে পার্থক্য লেখো।",
+      "explanation": "Windows হোস্টিংয়ে ASP প্রোগ্রামিং ভাষা ও Microsoft SQL Server ব্যবহৃত হয়। Linux হোস্টিংয়ে PHP প্রোগ্রামিং ভাষা ও MySQL Server ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৪৮",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "HTML পেজ লেআউটের অংশসমূহ কী কী?",
+      "explanation": "HTML পেজ লেআউটের অংশসমূহ হলো Header, Sidebar, Content (Container 1, Container 2) ও Footer।",
+      "page": "ছাপা পৃ. ২২৯",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "SQ",
+      "text": "ওয়েবপেজ ডিজাইনের উপাদানসমূহ কী কী?",
+      "explanation": "ওয়েবপেজ ডিজাইনের উপাদানসমূহ হলো গ্রাফিক্স ডিজাইন, ওয়েব টেমপ্লেট স্লাইসিং, কোডিং ও ডাটাবেস হ্যান্ডলিং, টেক্সট, ইমেজ, অ্যানিমেশন, অডিও, ভিডিও এবং টেস্টিং ও ডিবাগিং।",
+      "page": "ছাপা পৃ. ২৪৫",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "<address> ট্যাগের কাজ লেখো।",
+      "explanation": "<address> ট্যাগ লেখকের যোগাযোগের তথ্য (ঠিকানা, ফোন, ইমেইল, ওয়েব) নির্দেশ করতে ব্যবহৃত হয়।",
+      "page": "ছাপা পৃ. ২৩৪",
+      "difficulty": "EASY"
+    }
+  ]
+}

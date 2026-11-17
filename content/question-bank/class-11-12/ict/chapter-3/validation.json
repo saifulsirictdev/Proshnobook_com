@@ -1,0 +1,189 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_PENDING",
+  "teacherApproved": false,
+  "sourceQuestionDriveId": "1G-GvxbQWmFftjqA6C--bvuA2HQ6fSzE0",
+  "sourceReviewDriveId": "1mjdmjvBQlOPmIfSerdLWKJPmuTL2iEY_",
+  "sourceValidationDriveId": "1HTjEJWQHCq13SIscQsf8aqGU3lmWkMDe",
+  "sourceMetadataRead": true,
+  "adaptations": [
+    "Existing catalog scope mapped; bn → Bangla; difficulty uppercased; quarantined source indexes omitted"
+  ],
+  "minimumCountsMet": false,
+  "sourceSha256": "2c80866ed30149f637bfaefb9985a5ea431132ba851271586a677fd7c6afa3b8",
+  "sourceCount": 185,
+  "counts": {
+    "MCQ": 97,
+    "CQ": 40,
+    "SQ": 16
+  },
+  "total": 153,
+  "quarantined": [
+    {
+      "sourceItem": 6,
+      "type": "MCQ",
+      "reason": "Options collide under website normalization; requires manual review"
+    },
+    {
+      "sourceItem": 49,
+      "type": "MCQ",
+      "reason": "Options collide under website normalization; requires manual review"
+    },
+    {
+      "sourceItem": 82,
+      "type": "MCQ",
+      "reason": "Options collide under website normalization; requires manual review"
+    },
+    {
+      "sourceItem": 148,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 149,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 150,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 151,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 152,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 153,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 154,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 155,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 156,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 157,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 158,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 159,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 160,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 161,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 162,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 163,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 164,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 167,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 168,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 169,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 170,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 173,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 177,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 180,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 181,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 182,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 183,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 184,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    },
+    {
+      "sourceItem": 185,
+      "type": "SQ",
+      "reason": "Repeated normalized stem; original retained in source file"
+    }
+  ],
+  "limitations": [
+    "মূল ফাইলের শূন্য-ডুপ্লিকেট দাবির সঙ্গে স্থানীয় ফল মেলেনি; রূপান্তর ও CQ গণনার পূর্ণ ধাপ পুনরায় যাচাই করুন।",
+    "অন্য AI-এর Draft; স্বাধীন শিক্ষক ও প্রশ্নভিত্তিক উৎস-যাচাই বাকি।",
+    "মূল ১৮৫টির মধ্যে 32টি পুনরাবৃত্ত/অপশন-সমস্যার কারণে আলাদা; সংখ্যাপূরণ করা হয়নি।",
+    "পুরোনো বইয়ের তথ্য, কোড/গণনা, CQ বিশ্লেষণের গভীরতা ও অনুপস্থিত চিত্র যাচাই করুন।",
+    "উৎসের পূর্ণপাঠের দাবি অন্য AI-এর; এই সংযোজনে পুনরায় পূর্ণ বই পড়া হয়নি।"
+  ]
+}

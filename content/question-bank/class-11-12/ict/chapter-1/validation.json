@@ -1,0 +1,34 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_PENDING",
+  "teacherApproved": false,
+  "sourceQuestionDriveId": "1IxpPTRTDVw3rLDdpdDjc2YgY6V6n2Iua",
+  "sourceReviewDriveId": "10F-Qa83EUbp2Qp7rWBysCCmxIzCbLpqf",
+  "sourceValidationDriveId": "19w2zPn8qV1wWHqyBnfVqj7q3XMAwwrQ5",
+  "sourceMetadataRead": true,
+  "adaptations": [
+    "Existing catalog scope mapped; bn → Bangla; difficulty uppercased; quarantined source indexes omitted"
+  ],
+  "minimumCountsMet": false,
+  "sourceSha256": "35fca1def29b92d602b2dfa99e853babaf5b9975460cc799699e9b1e60cfa655",
+  "sourceCount": 185,
+  "counts": {
+    "MCQ": 99,
+    "CQ": 40,
+    "SQ": 45
+  },
+  "total": 184,
+  "quarantined": [
+    {
+      "sourceItem": 1,
+      "type": "MCQ",
+      "reason": "A and C name the same person (Marshall McLuhan); ambiguous answer"
+    }
+  ],
+  "limitations": [
+    "পুরোনো marketplace উদাহরণ, মহাকাশের তারিখ এবং cryosurgery তাপমাত্রার দাবি বিশেষভাবে যাচাই করুন।",
+    "অন্য AI-এর Draft; স্বাধীন শিক্ষক ও প্রশ্নভিত্তিক উৎস-যাচাই বাকি।",
+    "মূল ১৮৫টির মধ্যে 1টি পুনরাবৃত্ত/অপশন-সমস্যার কারণে আলাদা; সংখ্যাপূরণ করা হয়নি।",
+    "পুরোনো বইয়ের তথ্য, কোড/গণনা, CQ বিশ্লেষণের গভীরতা ও অনুপস্থিত চিত্র যাচাই করুন।",
+    "উৎসের পূর্ণপাঠের দাবি অন্য AI-এর; এই সংযোজনে পুনরায় পূর্ণ বই পড়া হয়নি।"
+  ]
+}
