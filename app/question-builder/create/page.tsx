@@ -1,6 +1,7 @@
 import { questionTypeWhere } from "@/lib/question-types";
 import {
   normalizeQuestionType,
+  selectedQuestionTypes,
   QUESTION_TYPE_OPTIONS,
 } from "@/lib/question-type-options";
 import { auth } from "@/auth";
@@ -85,14 +86,25 @@ export default async function CreatePage({
     ...(q ? { text: { contains: q, mode: "insensitive" as const } } : {}),
   };
 
-  const [rows, total, topicRows] = await Promise.all([
-    db.question.findMany({
-      where,
-      orderBy: { createdAt: "desc" },
-      skip: (page - 1) * PER_PAGE,
+  // Page each requested kind independently. A global newest-50 slice can
+  // contain only written questions and hide every MCQ in mixed selections.
+  const types = selectedQuestionTypes(questionType);
+  const groupsPromise = Promise.all(types.map(async type => {
+    const typedWhere = { AND: [where, questionTypeWhere(type)] };
+    const count = await db.question.count({ where: typedWhere });
+    const typePages = Math.max(1, Math.ceil(count / PER_PAGE));
+    // Keep a shorter kind available while paging a longer kind.
+    const typePage = Math.min(page, typePages);
+    const rows = await db.question.findMany({
+      where: typedWhere,
+      orderBy: [{ createdAt: "desc" }, { id: "desc" }],
+      skip: (typePage - 1) * PER_PAGE,
       take: PER_PAGE,
-    }),
-    db.question.count({ where }),
+    });
+    return { type, count, typePage, typePages, rows };
+  }));
+  const [groups, topicRows] = await Promise.all([
+    groupsPromise,
     db.question.findMany({
       where: {
         ...visibleQuestions(user?.id),
@@ -105,7 +117,9 @@ export default async function CreatePage({
   ]);
 
   const topics = topicRows.map((t) => t.topic).filter(Boolean);
-  const pages = Math.max(1, Math.ceil(total / PER_PAGE));
+  const rows = groups.flatMap(group => group.rows);
+  const total = groups.reduce((sum, group) => sum + group.count, 0);
+  const pages = Math.max(1, ...groups.map(group => group.typePages));
 
   const href = (o: Partial<SP>) => {
     const m: SP = {
@@ -203,11 +217,16 @@ export default async function CreatePage({
       </form>
 
       <p className="mt-4 text-sm font-bold">
-        মোট {total ? (page - 1) * PER_PAGE + 1 : 0} -{" "}
-        {Math.min(page * PER_PAGE, total)} টি প্রশ্ন (মোট {total})
+        এই পাতায় {rows.length}টি প্রশ্ন · সর্বমোট {total}টি প্রশ্ন
       </p>
 
-      <QbPicker items={items} append={sp.append === "1"} />
+      <ul className="mt-2 text-sm text-slate-600">
+        {groups.map(group => <li key={group.type}>
+          {group.type === "SHORT" ? "সংক্ষিপ্ত" : group.type === "CQ" ? "সৃজনশীল" : "MCQ"}: মোট {group.count}টি · এই পাতায় {group.rows.length}টি · পাতা {group.typePage}/{group.typePages}
+          {group.count === 0 && " — নির্বাচিত শ্রেণি/বিষয়/অধ্যায়ে আপনার জন্য দৃশ্যমান প্রশ্ন নেই।"}
+        </li>)}
+      </ul>
+      <QbPicker key={JSON.stringify([category,subject,selectedTopics,questionType,q,page])} items={items} append={sp.append === "1"} />
 
       <nav
         aria-label="Pagination"
