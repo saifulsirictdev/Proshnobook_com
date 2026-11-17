@@ -67,3 +67,13 @@ Verification: 13 targeted import tests and typecheck passed; transaction tests u
 Each chapter now has `content/question-bank/class-6/chapter-N/questions.json`, `review.md` and `validation.json`. The prepared library adds six mixed cards, and each JSON also works with class/subject/chapter file upload. Select the exact existing chapter; no new category or subject was introduced. Review the limitations before saving Pending; preparation did not import or publish anything.
 
 Bundle: `deliverables/class6-math-ch3-8/class6-math-chapters-3-8-drafts.zip`. Unzip first and upload one chapter's questions.json at a time. Do not upload ZIP or validation.json. These are numeric-family drafts, not independent teacher-approved complete coverage; geometry/chart solutions still need figure review.
+
+## Class 6 science incomplete starters (not final delivery)
+
+`deliverables/class6-science-starters/README.md` describes the 14 chapter packages. Actual total is 140 MCQ / 20 CQ / 42 SQ; requested full-book counts are NOT met. Full reading and teacher review are outstanding. Each CQ uses ক/খ/গ/ঘ = 1/2/3/4. Choose Class 6 → বিজ্ঞান → the exact chapter and upload its questions.json, never the entire ZIP. Prepared cards explicitly say অসম্পূর্ণ Draft. No production import/publication has been performed; keep any later import Pending until review.
+
+### Science chapter 1 expansion
+Chapter 1 now has 100 MCQ / 30 CQ / 30 SQ. Its count-target flag is not subject-expert approval; teacherApproved and fullChapterRead remain false. Overall science totals are 230/47/69; remaining minimum is 1170/373/351. Other 13 chapters remain incomplete. Updated ZIP replaces the earlier starter ZIP at the same workspace path. Import remains an explicit Admin-only Pending operation; no production changes made here.
+
+### Selecting science for Pending approval
+Admin → questions → prepared batch import → Class 6 → বিজ্ঞান. All 14 currently available chapter cards now appear without first choosing a chapter. Optionally narrow to one chapter; preview its questions/answers, acknowledge the limitations, and choose “Pending হিসেবে সেভ করুন”. Use the subject-scoped Pending link to review saved records and make a separate approval decision. Selection alone performs no write. Counts remain 230 MCQ / 47 CQ / 69 SQ, not the complete-book target.

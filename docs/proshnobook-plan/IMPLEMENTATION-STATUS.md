@@ -721,3 +721,26 @@ Like, comment, comment moderation, saved social posts, follow notifications and 
 - Source: visually read selected pages for chapters 3/4/5/6/8 and all printed 124–136 for practical geometry. Reports list exact pages and do not falsely mark unread chapters fully read. Geometry/construction/chart solutions describe steps; finished figures are not included.
 - Registered all six in the existing prepared-batch library using real JSON-upload parsing and catalog validation. 27 targeted tests and typecheck passed. Transaction checks use mocks; no production import/publication.
 - Download package (six chapter JSONs + reviews/reports): https://drive.google.com/file/d/1dCsaCJK6REko7Estj43qnPx78KjCw9Us/view . See `deliverables/class6-math-ch3-8/README.md` for limits and import instructions.
+
+## Phase 74 — Class 6 science: incomplete starters across all 14 chapters
+
+- Requested complete-book target remains **unmet**. Authored 140 MCQ + 20 four-part CQ sets (1/2/3/4) + 42 SQ = 202 original starter records, not the requested minimum 2,240. Remaining minimum: 1,260 MCQ + 400 CQ + 378 SQ. No automatic paraphrase padding.
+- Chapter-specific JSON, review and validation files preserve exact existing science catalog topics. Reports explicitly mark targetMet/fullChapterRead/teacherApproved false. Three printed sample pages per chapter were visually consulted, not full-book reading. Chapter 14 actually ends at printed 132; the earlier 134 estimate included back matter.
+- Added 14 explicitly incomplete Draft cards to the prepared-library registry (after deployment); existing nine math batches preserved. No database calls/import/publication. Full reading, page-by-page alignment, diagrams, subject-expert/language/rubric review and target completion remain unfinished.
+- Real uploader/catalog tests, author-option mapping, reproducibility, Pending/access/dedup mock tests: 25 targeted tests passed; typecheck passed (Prisma local dummy engine path, not database queries).
+- Workspace download: `deliverables/class6-science-starters/class6-science-incomplete-starters.zip`; not uploaded to Drive or deployed in this phase.
+- Final regression run: `npm run test:security` passed all 705 tests (0 failed). These are automated code checks, not independent textbook-content approval.
+
+### Phase 74 follow-up — Science chapter 1 count target reached; whole book unfinished
+
+- Authored 90 additional MCQ + 27 complete CQ + 27 SQ for chapter 1, bringing that chapter to 100/30/30. Additions are explicit authored entries, not a numeric-variant/rephrasing loop. Shared underlying skills remain; not 160 independent skills.
+- Book totals now 230 MCQ + 47 CQ + 69 SQ = 346. Minimum remaining: 1,170 MCQ + 373 CQ + 351 SQ. Only chapter 1 meets minimum counts; the other 13 chapters do not. No full-book completion claim.
+- Count-complete cards are labelled “সংখ্যা পূর্ণ; শিক্ষক-যাচাই বাকি”; other cards retain “অসম্পূর্ণ Draft”. Chapter reports define targetMet as minimum counts only. FullChapterRead and teacherApproved remain false. Expanded content requires chapter-scope/page alignment, distractor, language and rubric review.
+- Existing nine math batches preserved. Prepared library now contains 23 batches and 1,626 records in total. No database queries/import/publication and no deployment in this turn.
+- Verification after expansion: 19 targeted science/library tests and typecheck passed; full security/regression suite passed 706/706. Prisma generation used local dummy engine paths for client types only, not database access. These tests do not approve scientific content.
+
+## Phase 75 — Subject selection → prepared science batches → Pending review
+
+- Moved prepared library above local JSON upload. Choosing Class 6 → বিজ্ঞান now immediately lists all 14 available chapter batches; optional chapter selection narrows the list. Each card identifies its chapter, actual counts and review limitations. Aggregate draft totals are explicitly not completion/approval claims.
+- Existing read-only preview and explicit acknowledgement/Pending save remain Admin-only. Added scoped Pending-review links before/after save; selected catalog category remains visible on the question-management filter. No bulk approval, automatic save or database import was performed.
+- 21 targeted science/library tests plus typecheck passed. Tests cover all-14 selection (346 science records), chapter narrowing, scoped review URL and mocked save retaining approved:false. Chapter 1 meets counts; other 13 chapters remain incomplete. No content-completion claim.

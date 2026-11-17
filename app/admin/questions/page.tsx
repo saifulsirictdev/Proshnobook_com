@@ -83,7 +83,7 @@ export default async function AdminQuestionsPage({
         )}
       </div>
 
-      <Link href="/admin/questions/import" className="qm-action-link mb-5">ষষ্ঠ শ্রেণি MCQ ব্যাচ import ও অধ্যায়ের অগ্রগতি →</Link>
+      <Link href="/admin/questions/import" className="qm-action-link mb-5">প্রস্তুত MCQ / CQ / SQ ব্যাচ Pending হিসেবে সেভ →</Link>
 
       {okMsg && (
         <div className="mb-4 rounded-xl bg-emerald-50 border border-emerald-200 p-3 text-xs font-bold text-emerald-800 flex items-center gap-2">
@@ -109,6 +109,7 @@ export default async function AdminQuestionsPage({
               className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs outline-none"
             >
               <option value="">সকল শ্রেণি</option>
+              {category && !CATEGORIES.includes(category) && <option value={category}>{category}</option>}
               {CATEGORIES.map((c) => (
                 <option key={c} value={c}>{c}</option>
               ))}
