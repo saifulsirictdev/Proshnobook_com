@@ -18,6 +18,44 @@ function BatchCard({batch,saved}:{batch:Summary;saved:boolean}){
   {result.error&&<p role="alert">{result.error}</p>}{result.message&&<div role="status"><p>{result.message}</p><Link className="qm-action-link" href={pendingReviewHref(batch.category,batch.subject)}>এই বিষয়ের Pending প্রশ্ন পর্যালোচনা ও অনুমোদন →</Link></div>}
  </article>;
 }
+function SubjectBatchPanel({batches}:{batches:Summary[]}){
+ const [previews,setPreviews]=useState<Record<string,PreparedState>>({});
+ const [results,setResults]=useState<Record<string,PreparedState>>({});
+ const [busy,setBusy]=useState(false);const [reviewed,setReviewed]=useState(false);
+ const complete=batches.length>0&&batches.every(b=>previews[b.id]?.digest&&previews[b.id]?.preview);
+ async function inspectAll(){
+  setBusy(true);setReviewed(false);setPreviews({});setResults({});
+  try{for(const b of batches){const fd=new FormData();fd.set("id",b.id);
+   let state:PreparedState;try{state=await previewPrepared({},fd);}catch{state={error:"প্রিভিউ লোড হয়নি; আবার চেষ্টা করুন।"};}
+   setPreviews(old=>({...old,[b.id]:state}));
+  }}finally{setBusy(false);}
+ }
+ async function saveAll(){
+  if(busy||!complete||!reviewed)return;
+  setBusy(true);
+  try{for(const b of batches){
+   if(results[b.id]?.message)continue;
+   const fd=new FormData();fd.set("id",b.id);fd.set("digest",previews[b.id].digest!);fd.set("reviewed","yes");
+   let state:PreparedState;try{state=await savePrepared({},fd);}catch{state={error:"ফল নিশ্চিত হয়নি। আবার চেষ্টা করলে সার্ভার ডুপ্লিকেট পরীক্ষা করবে।"};}
+   setResults(old=>({...old,[b.id]:state}));
+  }}finally{setBusy(false);}
+ }
+ return <div className="space-y-4 rounded-xl border border-indigo-200 bg-white p-4">
+  <h3 className="text-lg font-bold">নির্বাচিত সব অধ্যায় একসঙ্গে প্রিভিউ ও Pending</h3>
+  <p>{batches.length}টি অধ্যায়/ব্যাচ। প্রিভিউতে প্রশ্ন, উত্তর ও সীমাবদ্ধতা পড়ুন। সেভ অধ্যায় ধরে হবে; সম্পূর্ণ প্রক্রিয়া এক লেনদেন নয়। ব্যর্থ অধ্যায় আবার চেষ্টা করা যাবে। কোনো প্রশ্ন স্বয়ংক্রিয়ভাবে Approved বা প্রকাশিত হবে না।</p>
+  <button type="button" onClick={inspectAll} disabled={busy||!batches.length} className="rounded-lg bg-indigo-700 px-4 py-2 text-white disabled:opacity-50">সব নির্বাচিত অধ্যায়ের প্রশ্ন ও উত্তর প্রিভিউ</button>
+  {batches.map(b=>{const p=previews[b.id],r=results[b.id];return <section key={b.id} className="space-y-2 border-t pt-3">
+   <h4 className="font-bold">{b.topic} · MCQ {b.counts.MCQ} / CQ {b.counts.CQ} / SQ {b.counts.SQ}</h4>
+   <p className="text-sm text-amber-900">{b.limitations}</p>
+   {p?.error&&<p role="alert">{p.error}</p>}
+   {p?.preview&&<details><summary className="cursor-pointer font-semibold">প্রশ্ন ও উত্তর পড়ুন ({p.preview.length})</summary><ol className="max-h-[32rem] space-y-4 overflow-auto p-2">{p.preview.map((q,i)=><li key={i}><strong>{i+1}. [{q.kind}] {q.text}</strong><pre className="whitespace-pre-wrap">{JSON.stringify(q.options,null,2)}</pre><p>উত্তর: {q.correct}</p><p className="whitespace-pre-wrap">{q.explanation}</p></li>)}</ol></details>}
+   {r?.error&&<p role="alert">{r.error}</p>}{r?.message&&<p role="status">{r.message}</p>}
+  </section>;})}
+  {complete&&<><label className="flex gap-3"><input type="checkbox" checked={reviewed} disabled={busy} onChange={e=>setReviewed(e.target.checked)}/>সব নির্বাচিত ব্যাচের প্রিভিউ ও সীমাবদ্ধতা পড়েছি; শুধু Pending-এ রাখব, পরে একে একে যাচাই ও অনুমোদন করব।</label>
+  <button type="button" disabled={busy||!reviewed} onClick={saveAll} className="rounded-lg bg-emerald-800 px-4 py-2 text-white disabled:opacity-50">{busy?"কাজ চলছে…":"সব নির্বাচিত অধ্যায় Pending-এ সেভ / ব্যর্থগুলো আবার চেষ্টা"}</button></>}
+  <p role="status" aria-live="polite">{busy?"প্রক্রিয়া চলছে… ":""}প্রিভিউ: {batches.filter(b=>previews[b.id]?.preview).length}/{batches.length} · সেভের সফল ফল: {batches.filter(b=>results[b.id]?.message).length}/{batches.length} · সেভে সমস্যা/অনিশ্চিত: {batches.filter(b=>results[b.id]?.error).length}</p>
+ </div>;
+}
 export default function PreparedLibrary({catalog,batches,savedIds}:{catalog:Catalog;batches:Summary[];savedIds:string[]}){
  const [category,setCategory]=useState(catalog[0]?.category??"");const [subject,setSubject]=useState("");const [topic,setTopic]=useState("");
  const subjects=catalog.find(c=>c.category===category)?.subjects??[];
@@ -32,6 +70,7 @@ export default function PreparedLibrary({catalog,batches,savedIds}:{catalog:Cata
    <label>অধ্যায়<select disabled={!subject} className="block w-full rounded border p-2" value={topic} onChange={e=>setTopic(e.target.value)}><option value="">সব প্রস্তুত অধ্যায়</option>{chapters.map(t=><option key={t}>{t}</option>)}</select></label>
   </div>
   {subject&&<div className="rounded-lg border border-indigo-100 bg-white p-3"><p role="status">{selected.length}টি প্রস্তুত ব্যাচ · MCQ {selected.reduce((n,b)=>n+b.counts.MCQ,0)} · CQ {selected.reduce((n,b)=>n+b.counts.CQ,0)} · SQ {selected.reduce((n,b)=>n+b.counts.SQ,0)}</p><Link className="qm-action-link" href={pendingReviewHref(category,subject)}>এই বিষয়ের সংরক্ষিত Pending প্রশ্ন দেখুন →</Link><p className="text-sm text-slate-600">এখানকার সংখ্যা খসড়ার পরিমাণ; পূর্ণ বিষয়ের লক্ষ্যমাত্রা বা শিক্ষক-অনুমোদনের সনদ নয়। প্রতিটি ব্যাচের সীমাবদ্ধতা পড়ুন।</p></div>}
+  {subject&&selected.length>0&&<SubjectBatchPanel key={JSON.stringify([category,subject,topic])} batches={selected}/>}
   {subject&&(selected.length?selected.map(b=><BatchCard key={b.id} batch={b} saved={savedIds.includes(b.id)}/>):<p role="status">এই নির্বাচন অনুযায়ী কোনো প্রস্তুত ব্যাচ নেই। কোনো প্রশ্ন সেভ বা তৈরি হয়নি।</p>)}
   <details><summary className="cursor-pointer font-semibold">সব প্রস্তুত ব্যাচ ({batches.length})</summary>{batches.map(b=><button key={b.id} type="button" className="my-2 block text-left text-indigo-800 underline" onClick={()=>{setCategory(b.category);setSubject(b.subject);setTopic(b.topic);}}>{b.category} → {b.subject} → {b.topic} · {b.title}</button>)}</details>
  </section>;

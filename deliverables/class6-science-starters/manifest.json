@@ -1,10 +1,12 @@
 {
-  "status": "INCOMPLETE_DRAFT",
-  "targetMet": false,
+  "status": "COUNT_COMPLETE_DRAFT_TEACHER_REVIEW_PENDING",
+  "targetMet": true,
+  "targetDefinition": "minimum question counts only; not content approval",
+  "teacherApproved": false,
   "totals": {
-    "MCQ": 230,
-    "CQ": 47,
-    "SQ": 69
+    "MCQ": 1400,
+    "CQ": 420,
+    "SQ": 420
   },
   "chapters": [
     {
@@ -24,205 +26,205 @@
     },
     {
       "chapter": 2,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "২. জীবজগৎ",
       "counts": {
-        "MCQ": 10,
-        "CQ": 3,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 27,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 3,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৩. উদ্ভিদ ও প্রাণীর কোষীয় সংগঠন",
       "counts": {
-        "MCQ": 10,
-        "CQ": 3,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 27,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 4,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৪. উদ্ভিদের বাহ্যিক বৈশিষ্ট্য",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 5,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৫. সালোকসংশ্লেষণ",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 6,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৬. সংবেদী অঙ্গ",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 7,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৭. পদার্থের বৈশিষ্ট্য এবং বাহ্যিক প্রভাব",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 8,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৮. মিশ্রণ",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 9,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "৯. আলোর ঘটনা",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 10,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "১০. গতি",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 11,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "১১. বল এবং সরল যন্ত্র",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 12,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "১২. পৃথিবীর উৎপত্তি ও গঠন",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 13,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "১৩. খাদ্য ও পুষ্টি",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     },
     {
       "chapter": 14,
-      "countMinimumMet": false,
+      "countMinimumMet": true,
       "topic": "১৪. পরিবেশের ভারসাম্য এবং আমাদের জীবন",
       "counts": {
-        "MCQ": 10,
-        "CQ": 1,
-        "SQ": 3
+        "MCQ": 100,
+        "CQ": 30,
+        "SQ": 30
       },
       "remainingMinimum": {
-        "MCQ": 90,
-        "CQ": 29,
-        "SQ": 27
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       }
     }
   ],
   "limitations": [
-    "অসম্পূর্ণ starter: প্রতি অধ্যায়ে ১০০ MCQ, ৩০–৪০ CQ ও ৩০–৫০ SQ লক্ষ্য পূরণ হয়নি।",
-    "পূর্ণ অধ্যায় পড়া হয়নি; নির্দিষ্ট নমুনা পৃষ্ঠার সঙ্গে প্রাথমিক ধারণা মিলিয়ে নিজস্ব প্রশ্ন লেখা হয়েছে।",
-    "স্বাধীন বিষয়শিক্ষক, ভাষা ও প্রতিটি প্রশ্নের নির্দিষ্ট পৃষ্ঠা যাচাই বাকি।",
-    "চিত্রনির্ভর প্রশ্ন অন্তর্ভুক্ত নয়; পূর্ণ পাঠ্যসূচি কভারেজের দাবি নেই।",
-    "Draft / teacher-review-pending; ডেটাবেসে আমদানি বা প্রকাশ করা হয়নি।"
+    "সব অধ্যায়ের সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক অনুমোদন নয়।",
+    "অধ্যায় ১-এর পূর্ণ উৎসপাঠ বাকি; অধ্যায় ২–১৪ সম্পূর্ণ দেখা হয়েছে।",
+    "প্রশ্নভিত্তিক পৃষ্ঠা-মিল, ভাষা, অর্থগত বৈচিত্র্য, নম্বরভিত্তিক উত্তর ও বিষয়শিক্ষকের অনুমোদন বাকি।",
+    "নতুন চিত্রভিত্তিক প্রশ্ন নেই; পূর্ণ পাঠ্যসূচি কভারেজ দাবি নয়।",
+    "সব Draft; database import/Pending/approval/publication/deployment হয়নি।"
   ]
 }
