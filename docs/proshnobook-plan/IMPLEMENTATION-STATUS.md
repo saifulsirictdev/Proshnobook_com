@@ -820,3 +820,10 @@ Drive: Class 6 → বিজ্ঞান → chapter-12-পৃথিবীর �
 ১৪ অধ্যায় সব সংখ্যা-পূর্ণ: ২২৪০=১৪০০ MCQ+৪২০ CQ+৪২০ SQ; ঘাটতি শূন্য। Manifest COUNT_COMPLETE_DRAFT_TEACHER_REVIEW_PENDING, teacherApproved=false; targetMet শুধু সংখ্যার। অধ্যায় ১ এখনো পূর্ণ উৎসপাঠ নয়; অধ্যায় ২–১৪ পূর্ণ ছবিতে পড়া। স্বাধীন শিক্ষক-যাচাই, প্রশ্নভিত্তিক পৃষ্ঠা-মিল, অর্থগত বৈচিত্র্য, নম্বরোপযোগিতা/বয়সোপযোগিতা ও চিত্রভিত্তিক কভারেজ বাকি। SUBJECT-REVIEW.md-তে whole-subject checklist।
 
 ৩৫ targeted test, Typecheck, ৭২২ full automated test পাস। Generator --check, diff --check ও ZIP integrity পাস। Prepared registry স্থানীয়ভাবে ৩৫২০=১২৮০ গণিত+২২৪০ বিজ্ঞান; live DB count নয়। Drive chapter13/14-তে ছয়টি v002 ফাইলের size/MD5 মিলেছে, পুরোনো backup অক্ষত। বিষয়টি ব্যবহারকারী একসঙ্গে পর্যালোচনা করবেন এবং Pending/approval সিদ্ধান্ত দেবেন। কোনো DB import/Pending/approval/publication/deployment/commit/PR হয়নি।
+
+### HSC ICT external Draft prepared-library integration
+- Existing six HSC ICT topics mapped, source files hash-verified against external validations.
+- 1,076 savable items from 1,110 originals; 34 quarantined, minimum deficits disclosed.
+- Draft only; independent semantic/source/teacher review remains pending.
+- Existing whole-selection Preview/Pending supported, no production writes/deployment.
+- Typecheck and 724 automated tests passed (before final metadata/docs additions).
