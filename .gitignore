@@ -6,3 +6,6 @@ node_modules/
 !.env.example
 
 .cache/
+
+# Local PDF-review tooling
+.venv/
