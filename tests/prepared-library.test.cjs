@@ -31,7 +31,7 @@ test('selection is not authority; unknown batches, missing acknowledgement and n
 test('preview read-only, both batch types save Pending, retry/dedup/audit maintained',async()=>{
  const h=harness();assert.equal((await h.actions.previewPrepared({},h.form())).preview.length,100);assert.equal(h.calls(),0);
  h.retry();for(const b of lib.preparedSummaries()){const f=h.form(b.id);f.set('category','INJECTED');assert.ok((await h.actions.savePrepared({},f)).message);await h.actions.savePrepared({},f);}
- assert.equal(h.questions.length,1626);assert.equal(h.settings.size,23);
+ assert.equal(h.questions.length,3520);assert.equal(h.settings.size,23);
  for(const q of h.questions){assert.equal(q.category,'Class 6');assert.equal(q.approved,false);}
  const audit=JSON.parse([...h.settings.values()][0].value);assert.equal(audit.actorId,'owner');assert.ok(audit.provenance);assert.equal(audit.inserted,100);
  const legacy=harness();legacy.questions.push({text:lib.getPreparedBatch(lib.preparedSummaries()[0].id).batch.records[0].text});await legacy.actions.savePrepared({},legacy.form());assert.equal(legacy.questions.length,100);
@@ -41,7 +41,7 @@ test('Class 6 science selection shows all 14 chapters and chapter narrowing pres
  const batches=lib.preparedSummaries();
  const all=selection.selectPreparedBatches(batches,{category:'Class 6',subject:'বিজ্ঞান',topic:''});
  assert.equal(all.length,14);
- assert.deepEqual(all.reduce((n,b)=>({MCQ:n.MCQ+b.counts.MCQ,CQ:n.CQ+b.counts.CQ,SQ:n.SQ+b.counts.SQ}),{MCQ:0,CQ:0,SQ:0}),{MCQ:230,CQ:47,SQ:69});
+ assert.deepEqual(all.reduce((n,b)=>({MCQ:n.MCQ+b.counts.MCQ,CQ:n.CQ+b.counts.CQ,SQ:n.SQ+b.counts.SQ}),{MCQ:0,CQ:0,SQ:0}),{MCQ:1400,CQ:420,SQ:420});
  assert.ok(all.every(b=>b.subject==='বিজ্ঞান'));
  assert.equal(selection.selectPreparedBatches(batches,{category:'Class 6',subject:'বিজ্ঞান',topic:all[0].topic}).length,1);
  assert.equal(selection.selectPreparedBatches(batches,{category:'Class 7',subject:'বিজ্ঞান',topic:''}).length,0);
@@ -53,6 +53,20 @@ test('science preview is read-only and Admin saves only Pending for separate app
  const h=harness();const batches=selection.selectPreparedBatches(lib.preparedSummaries(),{category:'Class 6',subject:'বিজ্ঞান',topic:''});
  const preview=await h.actions.previewPrepared({},h.form(batches[0].id));assert.equal(preview.preview.length,160);assert.equal(h.calls(),0);
  for(const b of batches)assert.ok((await h.actions.savePrepared({},h.form(b.id))).message);
- assert.equal(h.questions.length,346);assert.equal(h.settings.size,14);
+ assert.equal(h.questions.length,2240);assert.equal(h.settings.size,14);
  assert.ok(h.questions.every(q=>q.approved===false&&q.category==='Class 6'&&q.subject==='বিজ্ঞান'));
+});
+
+test('whole-selection preview/save reuses authenticated per-batch actions with digest, consent and partial retry',()=>{
+ const ui=fs.readFileSync('app/admin/questions/import/prepared-library.tsx','utf8');
+ assert.ok(ui.includes('function SubjectBatchPanel'));
+ assert.ok(ui.includes('key={JSON.stringify([category,subject,topic])}'));
+ assert.ok(ui.includes('batches.every(b=>previews[b.id]?.digest&&previews[b.id]?.preview)'));
+ assert.ok(ui.includes('if(busy||!complete||!reviewed)return'));
+ assert.ok(ui.includes('if(results[b.id]?.message)continue'));
+ assert.ok(ui.includes('fd.set("digest",previews[b.id].digest!)'));
+ assert.ok(ui.includes('fd.set("reviewed","yes")'));
+ assert.ok(ui.includes('await previewPrepared({},fd)'));assert.ok(ui.includes('await savePrepared({},fd)'));
+ assert.ok(ui.includes('সম্পূর্ণ প্রক্রিয়া এক লেনদেন নয়'));assert.ok(ui.includes('ফল নিশ্চিত হয়নি'));
+ assert.ok(!ui.includes('approved:true'));
 });

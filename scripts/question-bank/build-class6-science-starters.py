@@ -193,10 +193,11 @@ SOURCE='https://drive.google.com/file/d/1dfhDBWqwHo0Vd6Je2j7OTczo666zBwmT/view'
 LIMITS=['অসম্পূর্ণ starter: প্রতি অধ্যায়ে ১০০ MCQ, ৩০–৪০ CQ ও ৩০–৫০ SQ লক্ষ্য পূরণ হয়নি।','পূর্ণ অধ্যায় পড়া হয়নি; নির্দিষ্ট নমুনা পৃষ্ঠার সঙ্গে প্রাথমিক ধারণা মিলিয়ে নিজস্ব প্রশ্ন লেখা হয়েছে।','স্বাধীন বিষয়শিক্ষক, ভাষা ও প্রতিটি প্রশ্নের নির্দিষ্ট পৃষ্ঠা যাচাই বাকি।','চিত্রনির্ভর প্রশ্ন অন্তর্ভুক্ত নয়; পূর্ণ পাঠ্যসূচি কভারেজের দাবি নেই।','Draft / teacher-review-pending; ডেটাবেসে আমদানি বা প্রকাশ করা হয়নি।']
 # Import via path so --check also works when invoked through runpy from tests.
 import runpy
-_additions=runpy.run_path(str(ROOT/'scripts/question-bank/class6_science_expansion.py'))
-for _ch,_rows in _additions['MCQ'].items(): FACTS[_ch]+='\n'+_rows
-for _ch,_rows in _additions['SQ'].items(): SHORT[_ch].extend(_rows)
-for _ch,_rows in _additions['CQ'].items(): CASES[_ch].extend(_rows)
+for _module in ['class6_science_expansion.py','class6_science_ch2.py','class6_science_ch3.py','class6_science_remaining_round.py','class6_science_ch4.py','class6_science_ch5.py','class6_science_ch6.py','class6_science_ch7.py','class6_science_ch8.py','class6_science_ch9.py','class6_science_ch10.py','class6_science_ch11.py','class6_science_ch12.py','class6_science_ch13.py','class6_science_ch14.py']:
+ _additions=runpy.run_path(str(ROOT/'scripts/question-bank'/_module))
+ for _ch,_rows in _additions['MCQ'].items(): FACTS[_ch]+='\n'+_rows
+ for _ch,_rows in _additions['SQ'].items(): SHORT[_ch].extend(_rows)
+ for _ch,_rows in _additions['CQ'].items(): CASES[_ch].extend(_rows)
 
 def outputs():
  import re
@@ -205,6 +206,19 @@ def outputs():
  out={};summary=[]
  for ch in range(1,15):
   ref='অধ্যায়ের ধারণাসূত্র; নমুনা মুদ্রিত পৃষ্ঠা '+', '.join(map(bn,SAMPLES[ch-1]))+'; প্রশ্নভিত্তিক পৃষ্ঠা যাচাই বাকি'
+  if ch==3: ref='ধারণাসূত্র: মুদ্রিত ২১–২৭ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==2: ref='ধারণাসূত্র: মুদ্রিত ১১–২০ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==4: ref='ধারণাসূত্র: মুদ্রিত ২৮–৩৭ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==5: ref='ধারণাসূত্র: মুদ্রিত ৩৮–৪১ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==6: ref='ধারণাসূত্র: মুদ্রিত ৪২–৪৯ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==7: ref='ধারণাসূত্র: মুদ্রিত ৫০–৫৯ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==8: ref='ধারণাসূত্র: মুদ্রিত ৬০–৭২ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==9: ref='ধারণাসূত্র: মুদ্রিত ৭৩–৮১ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==10: ref='ধারণাসূত্র: মুদ্রিত ৮২–৯২ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==11: ref='ধারণাসূত্র: মুদ্রিত ৯৩–১০২ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==12: ref='ধারণাসূত্র: মুদ্রিত ১০৩–১১২ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==13: ref='ধারণাসূত্র: মুদ্রিত ১১৩–১২৩ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
+  if ch==14: ref='ধারণাসূত্র: মুদ্রিত ১২৪–১৩২ সম্পূর্ণ অধ্যায় দেখা; প্রশ্নভিত্তিক পৃষ্ঠা ও শিক্ষক-যাচাই বাকি'
   items=[]
   for i,line in enumerate(FACTS[ch].splitlines()):
    q,a,b,c,d,e=line.split('|'); opts=[a,b,c,d]; n=i%4;opts=opts[-n:]+opts[:-n] if n else opts
@@ -217,19 +231,81 @@ def outputs():
   minimum=dict(MCQ=100,CQ=30,SQ=30)
   count_met=all(counts[k]>=v for k,v in minimum.items())
   limits=(["সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; গুণমান, পূর্ণ পাঠ ও শিক্ষক-যাচাই বাকি।"]+LIMITS[1:]) if count_met else LIMITS
+  if ch==2:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ১১–২০ পৃষ্ঠা দৃশ্যত পড়া হয়েছে; সব প্রশ্নের স্বতন্ত্র পৃষ্ঠা-মিল ও সম্পূর্ণ কভারেজ যাচাই বাকি।'
+   limits.append('উৎসে স্পাইরোগাইরার রাজ্য, নগ্নবীজীর ফুল এবং সব অমেরুদণ্ডীর চোখ/কঙ্কাল সম্পর্কে অসংগতি আছে। প্রশ্নে সেগুলো সাধারণ সত্য ধরা হয়নি; source-review.md দেখে শিক্ষককে সিদ্ধান্ত নিতে হবে।')
+  if ch==3:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ২১–২৭ পৃষ্ঠা দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক নির্দিষ্ট পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('উৎসে কোষপ্রাচীরের সঙ্গে পদার্থ চলাচলের নিয়ন্ত্রণ মেশানো হয়েছে; নির্বাচিত নিয়ন্ত্রণের প্রধান ভূমিকা কোষঝিল্লির হিসেবে লেখা হয়েছে। source-review.md দেখুন।')
+  if ch==4:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ২৮–৩৭ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+  if ch==5:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৩৮–৪১ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('অক্সিজেন দহনে সহায়ক, জ্বালানি নয়। আলোকনিরপেক্ষ পর্যায় মানে শুধু রাত নয়। বদ্ধ বেলজারের ফল আলো ও গ্যাসের সীমার ওপর নির্ভরশীল; source-review.md দেখুন।')
+  if ch==6:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৪২–৪৯ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('উৎসের জিহ্বার কঠোর স্বাদ-মানচিত্র, রাতকানার সর্বজনীন প্রতিরোধ এবং উপসর্গ থেকে নিশ্চিত রোগনির্ণয়ের সরলীকরণ উত্তর হিসেবে নেওয়া হয়নি; source-review.md দেখুন।')
+  if ch==7:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৫০–৫৯ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('মোমের প্রায় ৫৭°C সব মোমের ধ্রুবক নয়; গলনাঙ্ক/স্ফুটনাঙ্কে চাপ ও বিশুদ্ধতা প্রাসঙ্গিক। সব অধাতু অপরিবাহী নয়। শিখা, গরম কাচ ও বৈদ্যুতিক পরীক্ষায় নিরাপত্তা এবং উৎসের সাধারণীকরণের সীমা source-review.md-তে আছে।')
+  if ch==8:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৬০–৭২ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('সর্বজনীন দ্রাবক আক্ষরিকভাবে সব পদার্থ গলায় না। ঘনমাত্রা, সম্পৃক্ততা ও দ্রবীভবনের হার আলাদা; পরিস্রাবণ/পাতন সর্বক্ষেত্রে বিশুদ্ধতার নিশ্চয়তা নয়। সোডিয়াম ক্লোরাইডের শীতলীকরণ ও কলয়েডের সীমা source-review.md-তে দেখুন।')
+  if ch==9:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৭৩–৮১ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('সব আলোর উৎস সূর্য নয়; বাস্তব কালো পৃষ্ঠ সম্পূর্ণ শোষক নয়। মসৃণতা ও মোট প্রতিফলিত শক্তি এক নয়; বিক্ষিপ্ত প্রতিফলনেও স্থানীয় নিয়ম মানা হয়। পার্শ্ব পরিবর্তন, কোণের ভিত্তি ও নিরাপদ আলোকপরীক্ষার সীমা source-review.md-তে আছে।')
+  if ch==10:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৮২–৯২ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('গড় ও তাৎক্ষণিক রাশি, দ্রুতি ও দিকযুক্ত বেগ পৃথক। ত্বরণ শুধু দ্রুতি বৃদ্ধি নয়; ঋণাত্মক ত্বরণ সবসময় মন্দন নয়। বাস্তব বাউন্স নিখুঁত পর্যাবৃত্ত নাও হতে পারে। প্রসঙ্গ-কাঠামো, চলন/ঘূর্ণন ও নিরাপদ মাপের সীমা source-review.md-তে আছে।')
+  if ch==11:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ৯৩–১০২ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('সব সরল যন্ত্র কম বলের সুবিধা দেয় না বা শক্তি সৃষ্টি করে না। লিভারের বাহু ক্রিয়ারেখার লম্ব দূরত্ব; সূত্রে আদর্শ ভারসাম্য ও একক সামঞ্জস্য চাই। কপিকলের সমর্থন-রশি, চাকা–অক্ষের বিন্যাস ও মানবদেহের সীমিত মডেল source-review.md-তে আছে।')
+  if ch==12:
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]='মুদ্রিত ১০৩–১১২ সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('উৎসের মহাবিস্ফোরণের সরল বিস্ফোরণ-তুলনা, শিলামণ্ডল/ভূত্বক, আংশিক গলন ও ঘর্ষণ, খনিজ/জীবাশ্ম জ্বালানির শ্রেণি এবং মাটির সর্বজনীন চার স্তর ধরে নেওয়ার সীমা source-review.md-তে আছে। অক্সিজেনের অনুপাত ও উচ্চতায় কম চাপ আলাদা; গুরুমণ্ডল পুরো তরল নয়।')
+  if ch in (13,14):
+   limits=limits.copy()
+   limits[0]='সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক ও ভাষা/নম্বরভিত্তিক পর্যালোচনা বাকি।'
+   limits[1]=('মুদ্রিত ১১৩–১২৩' if ch==13 else 'মুদ্রিত ১২৪–১৩২')+' সম্পূর্ণ দৃশ্যত পড়া হয়েছে; প্রশ্নভিত্তিক পৃষ্ঠা-মিল ও কভারেজ যাচাই বাকি।'
+   limits.append('শ্বেতসার পরীক্ষা সব শর্করার নয়; ক্যালরি/কিলোক্যালরি পৃথক। লক্ষণ থেকে নিজে রোগনির্ণয়/সম্পূরক নয়; আঁশ, ভিটামিন ও খাদ্যনিরাপত্তার সীমা source-review.md-তে আছে।' if ch==13 else 'মৃত জৈব পদার্থ ও জীব, প্রাকৃতিক/মানবনির্মিত শ্রেণি পৃথক। উদ্ভিদও শ্বাস নেয়; শক্তি ও উপাদানচক্র অভিন্ন নয়। ডাইনোসরের বিলুপ্তির পুরোনো ব্যাখ্যার সীমা এবং নিরাপদ পর্যবেক্ষণ source-review.md-তে আছে।')
   data=dict(category='Class 6',subject='বিজ্ঞান',topic=topics[ch-1],book='নিজস্ব অনুশীলনী; ধারণাসূত্র ব্যবহারকারীর ২০২৬ বিজ্ঞান PDF',edition='সংখ্যা পূর্ণ Draft; শিক্ষক অনুমোদন বাকি' if count_met else 'অসম্পূর্ণ Draft starter; শিক্ষক অনুমোদন বাকি',sourceUrl=SOURCE,lang='Bangla',items=items)
-  report=dict(status='DRAFT_TEACHER_REVIEW_PENDING',targetMet=count_met,targetDefinition='minimum question counts only; not content approval',counts=counts,targetMinimum=dict(MCQ=100,CQ=30,SQ=30),remainingMinimum={k:v-counts[k] for k,v in dict(MCQ=100,CQ=30,SQ=30).items()},fullChapterRead=False,teacherApproved=False,sourcePrintedRange=RANGES[ch-1],sampledPrintedPages=SAMPLES[ch-1],sourceSha256='988424884a8724833a73309cb1af1767cd335711077c3724bfb72c2c9d906971',limitations=limits)
+  report=dict(status='DRAFT_TEACHER_REVIEW_PENDING',targetMet=count_met,targetDefinition='minimum question counts only; not content approval',counts=counts,targetMinimum=dict(MCQ=100,CQ=30,SQ=30),remainingMinimum={k:v-counts[k] for k,v in dict(MCQ=100,CQ=30,SQ=30).items()},fullChapterRead=ch in (2,3,4,5,6,7,8,9,10,11,12,13,14),teacherApproved=False,sourcePrintedRange=RANGES[ch-1],sampledPrintedPages=SAMPLES[ch-1],readPrintedPages=list(range(11,21)) if ch==2 else list(range(21,28)) if ch==3 else list(range(28,38)) if ch==4 else list(range(38,42)) if ch==5 else list(range(42,50)) if ch==6 else list(range(50,60)) if ch==7 else list(range(60,73)) if ch==8 else list(range(73,82)) if ch==9 else list(range(82,93)) if ch==10 else list(range(93,103)) if ch==11 else list(range(103,113)) if ch==12 else list(range(113,124)) if ch==13 else list(range(124,133)) if ch==14 else SAMPLES[ch-1],sourceSha256='988424884a8724833a73309cb1af1767cd335711077c3724bfb72c2c9d906971',limitations=limits)
   base=f'content/question-bank/class-6/science/chapter-{ch}'
   out[base+'/questions.json']=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
   out[base+'/validation.json']=json.dumps(report,ensure_ascii=False,indent=2)+'\n'
   out[base+'/review.md']=f'# {topics[ch-1]} — শিক্ষক-যাচাই বাকি Draft\n\n'+f"প্রকৃত সংখ্যা: {counts['MCQ']} MCQ / {counts['CQ']} সম্পূর্ণ CQ / {counts['SQ']} SQ।\n\n"+'\n'.join('- '+x for x in limits)+f'\n\nনমুনা দেখা মুদ্রিত পৃষ্ঠা: {SAMPLES[ch-1]}। CQ ক/খ/গ/ঘ = ১/২/৩/৪।\n\n## পরবর্তী যাচাই\n- পূর্ণ অধ্যায় পড়ে উপবিষয়ভিত্তিক coverage matrix তৈরি।\n- প্রতিটি উত্তর ও distractor বিষয়শিক্ষক দিয়ে যাচাই।\n- চিত্র/পরীক্ষণভিত্তিক নতুন প্রশ্ন যুক্ত করে লক্ষ্যমাত্রা পূরণ।\n- অনুমোদনের পর আলাদাভাবে Admin import; প্রকাশের অনুমোদন স্বতন্ত্র।\n'
+  if ch in (2,3,4,5,6,7,8,9,10,11,12,13,14): out[base+'/review.md']=out[base+'/review.md'].replace('পূর্ণ অধ্যায় পড়ে উপবিষয়ভিত্তিক coverage matrix তৈরি।','পড়া অধ্যায়ের সঙ্গে উপবিষয়ভিত্তিক coverage matrix যাচাই।')
+  if ch==2: out[base+'/review.md']+='\n## এ ধাপের উৎসপাঠ\nমুদ্রিত ১১–২০ সম্পূর্ণ পড়া হয়েছে। পরবর্তী কাজ হলো বিষয়শিক্ষক দিয়ে প্রতিটি প্রশ্নের পৃষ্ঠা-মিল, গোষ্ঠীর বৈজ্ঞানিক যথার্থতা এবং CQ উত্তর-নম্বর যাচাই। উৎসের অসংগতি আলাদা source-review.md-তে নথিবদ্ধ।\n'
+  if ch==3: out[base+'/review.md']+='\n## এ ধাপের উৎসপাঠ\nমুদ্রিত ২১–২৭ সম্পূর্ণ ছবিতে পড়া হয়েছে। কোষপ্রাচীর/কোষঝিল্লি এবং আলোক অণুবীক্ষণের সীমা নিয়ে source-review.md দেখুন। বিষয়শিক্ষক ও প্রশ্নভিত্তিক পৃষ্ঠা-মিল যাচাই বাকি।\n'
   summary.append(dict(chapter=ch,countMinimumMet=count_met,topic=topics[ch-1],counts=counts,remainingMinimum=report['remainingMinimum']))
  totals={k:sum(x['counts'][k] for x in summary) for k in ['MCQ','CQ','SQ']}
- out['deliverables/class6-science-starters/manifest.json']=json.dumps(dict(status='INCOMPLETE_DRAFT',targetMet=False,totals=totals,chapters=summary,limitations=LIMITS),ensure_ascii=False,indent=2)+'\n'
+ out['deliverables/class6-science-starters/manifest.json']=json.dumps(dict(status='COUNT_COMPLETE_DRAFT_TEACHER_REVIEW_PENDING' if all(x['countMinimumMet'] for x in summary) else 'INCOMPLETE_DRAFT',targetMet=all(x['countMinimumMet'] for x in summary),targetDefinition='minimum question counts only; not content approval',teacherApproved=False,totals=totals,chapters=summary,limitations=['সব অধ্যায়ের সংখ্যাগত ন্যূনতম লক্ষ্য পূর্ণ; শিক্ষক অনুমোদন নয়।','অধ্যায় ১-এর পূর্ণ উৎসপাঠ বাকি; অধ্যায় ২–১৪ সম্পূর্ণ দেখা হয়েছে।','প্রশ্নভিত্তিক পৃষ্ঠা-মিল, ভাষা, অর্থগত বৈচিত্র্য, নম্বরভিত্তিক উত্তর ও বিষয়শিক্ষকের অনুমোদন বাকি।','নতুন চিত্রভিত্তিক প্রশ্ন নেই; পূর্ণ পাঠ্যসূচি কভারেজ দাবি নয়।','সব Draft; database import/Pending/approval/publication/deployment হয়নি।'] if all(x['countMinimumMet'] for x in summary) else LIMITS),ensure_ascii=False,indent=2)+'\n'
  return out
 if __name__=='__main__':
  for name,content in outputs().items():
   path=ROOT/name
   if '--check' in sys.argv:assert path.read_text()==content,name
   else:path.parent.mkdir(parents=True,exist_ok=True);path.write_text(content)
- print('Science starter files reproducible' if '--check' in sys.argv else 'Science files written; whole-book target NOT met')
+ print('Science starter files reproducible' if '--check' in sys.argv else 'Science files written; see manifest for count-only target status; teacher approval pending')
