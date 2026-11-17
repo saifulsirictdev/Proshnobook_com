@@ -93,8 +93,14 @@ test("question picker applies OR chapter membership to both rows and count", asy
       page: "2",
     }),
   });
-  assert.deepEqual(calls[0].where.topic, { in: ["প্রথম", "দ্বিতীয়"] });
-  assert.deepEqual(calls[1].where.topic, { in: ["প্রথম", "দ্বিতীয়"] });
-  assert.equal(calls[0].skip, 50);
-  assert.equal(calls[2].where.subject, "ICT");
+  const typedCalls = calls.filter(call => call.where.AND?.[0]?.topic);
+  // All three selected kinds have both a count and a row query.
+  assert.equal(typedCalls.length, 6);
+  for (const call of typedCalls) {
+    assert.deepEqual(call.where.AND[0].topic, { in: ["প্রথম", "দ্বিতীয়"] });
+    assert.equal(call.where.AND[0].subject, "ICT");
+    assert.equal(call.where.AND[0].approved, true);
+    if ("skip" in call) assert.equal(call.skip, 0); // empty kind clamps to page 1
+  }
+  assert.equal(calls.find(call => call.distinct)?.where.subject, "ICT");
 });

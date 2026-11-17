@@ -828,3 +828,9 @@ Drive: Class 6 → বিজ্ঞান → chapter-12-পৃথিবীর �
 - Existing whole-selection Preview/Pending supported, no production writes/deployment.
 - Typecheck and 724 automated tests passed (before final metadata/docs additions).
 - PR CI reproduced inherited browser failure at admin_mcq_repeat_submit. Browser test now reopens the legacy details panel through its summary if server-action revalidation remounted it closed; repeat-save count/audit assertions retained. CI confirmation pending.
+
+### Mixed question picker: prevent newest-page type starvation
+- User reported MCQ+CQ+SQ returned only written questions. The picker previously sliced newest 50 across all kinds before showing type tabs.
+- Create page now counts and pages each requested kind independently (up to 50/kind), retaining approved/own-AI visibility, category/subject/chapter/search filters. Shorter kinds retain their last page while longer kinds paginate; UI discloses per-kind page/count and actual displayed total. Empty kinds explicitly reported, never filled with Pending/unauthorized questions.
+- Stable createdAt/id ordering; picker keyed to selection/page to avoid stale active-tab state after navigation.
+- Typecheck and 728 automated tests passed, including four mocked mixed/single-kind pagination regressions and updated chapter-membership checks. Real authenticated browser/production deployment not verified; no DB writes or deployment in this change.
