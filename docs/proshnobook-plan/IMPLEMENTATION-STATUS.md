@@ -827,3 +827,4 @@ Drive: Class 6 → বিজ্ঞান → chapter-12-পৃথিবীর �
 - Draft only; independent semantic/source/teacher review remains pending.
 - Existing whole-selection Preview/Pending supported, no production writes/deployment.
 - Typecheck and 724 automated tests passed (before final metadata/docs additions).
+- PR CI reproduced inherited browser failure at admin_mcq_repeat_submit. Browser test now reopens the legacy details panel through its summary if server-action revalidation remounted it closed; repeat-save count/audit assertions retained. CI confirmation pending.
