@@ -45,6 +45,12 @@ export default function LayoutControls({
     <>
       <section className="studio-section">
         <h3>Page Setup</h3>
+        <label className="my-3 block text-xs">লাইনের দূরত্ব — {s.cfg.lineHeight.toFixed(2)}
+          <input className="mt-2 w-full" aria-label="লাইনের দূরত্ব" type="range" min="1" max="2.5" step="0.05" value={s.cfg.lineHeight} onChange={e=>cfg("lineHeight",Number(e.target.value))}/>
+        </label>
+        <label className="my-3 block text-xs">English প্রশ্নের মাঝের ফাঁক — {s.cfg.questionGap}px
+          <input className="mt-2 w-full" aria-label="English প্রশ্নের মাঝের ফাঁক" type="range" min="0" max="24" step="1" value={s.cfg.questionGap} onChange={e=>cfg("questionGap",Number(e.target.value))}/>
+        </label>
         <div className="grid grid-cols-2 gap-3">
           {(
             [

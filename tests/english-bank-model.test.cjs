@@ -179,3 +179,21 @@ test('Legacy English adaptation stays server-side so node crypto cannot enter th
  const server=fs.readFileSync('app/question-builder/build/page.tsx','utf8');assert.match(server,/paper=\{englishLegacyPaper\(draft\)\}/);
  assert.ok(fs.readFileSync('components/paper-builder/preview.tsx','utf8').startsWith('"use client";'));
 });
+test('English pagination splits presentation blocks without losing passages, table rows, options, numbering or answers',()=>{
+ const {englishLegacyPaper}=require('../lib/english/legacy-builder.ts'),{englishFlowBlocks}=require('../lib/english/flow-blocks.ts');
+ const paper=englishLegacyPaper(prepared.draft);const original=JSON.stringify(paper.items);
+ for(const item of paper.items){
+  const blocks=englishFlowBlocks(item);assert.ok(blocks.length>=1);assert.equal(new Set(blocks.map(b=>b.id)).size,blocks.length);
+  for(const p of item.englishGroup.passages)assert.equal(blocks.flatMap(b=>b.englishGroup.passages).filter(x=>x.key===p.key).map(x=>x.text).join(''),p.text);
+  for(const task of item.englishGroup.tasks){
+   const fragments=blocks.flatMap(b=>b.englishGroup.tasks).filter(t=>t.id===task.id);assert.ok(fragments.length);
+   assert.deepEqual(fragments.flatMap(t=>t.subitems),task.subitems);assert.deepEqual(fragments.flatMap(t=>t.table?.rows??[]),task.table?.rows??[]);
+   assert.equal(fragments.filter(t=>t.answer).length,task.answer?1:0);assert.ok(fragments.every(t=>t.number===task.number&&t.marks===task.marks));
+   const headings=blocks.filter(b=>!b.englishGroup.continued&&b.englishGroup.tasks.some(t=>t.id===task.id));assert.equal(headings.length,1);
+  }
+  for(const b of blocks)assert.deepEqual(englishFlowBlocks(b),[b]);
+ }
+ assert.equal(JSON.stringify(paper.items),original);
+ const {restoreSettings}=require('../lib/paper-builder.ts');const old=restoreSettings({});assert.equal(old.cfg.lineHeight,1.45);const tight=restoreSettings({cfg:{lineHeight:1.05,questionGap:0}});assert.equal(tight.cfg.lineHeight,1.05);assert.equal(tight.cfg.questionGap,0);
+ const bad=restoreSettings({cfg:{lineHeight:0.2}});assert.equal(bad.cfg.lineHeight,1.45);
+});
