@@ -615,3 +615,39 @@ test("Class 8 photo contract enforces continuous narration/punctuation and table
     /word limit/,
   );
 });
+test('Passage metadata compatibility is shared by all grades, preserves text and keeps saved drafts strict',()=>{
+ const {normalizeEnglishProviderOutput:normalize}=load('generation');
+ for(let grade=6;grade<=12;grade++)for(const paper of [1,2]){
+  const item=load("blueprints").englishBlueprint(grade,paper).items.find(i=>i.section==="writing");
+  const s={...selection,grade,paper,itemIds:[item.id],writing:{[item.id]:{topic:"My school",...(item.writingChoices?{choice:item.writingChoices[0]}:{})}}};
+  const raw={passages:[{key:'unseen',text:'Exact original passage.',title:'A school visit',source:'Original',reference:null,type:'unseen'}],tasks:[]};
+  const before=JSON.stringify(raw),result=normalize(s,raw);
+  assert.deepEqual(result.passages,[{key:'unseen',text:'Exact original passage.'}]);assert.equal(JSON.stringify(raw),before);
+ }
+});
+test('Passage compatibility never discards unknown content or repairs missing/wrong passage fields',()=>{
+ const {normalizeEnglishProviderOutput:normalize,englishOutputSchema:schema}=load('generation');
+ for(const extra of [{answer:'secret'},{questions:[]},{metadata:{}},{title:{text:'nested'}},{source:55},{reference:'x'.repeat(1001)},{id:'unseen'}]){
+  const raw={passages:[{key:'unseen',text:'Unchanged',...extra}],tasks:output().tasks};assert.equal(schema.safeParse(normalize(selection,raw)).success,false);
+ }
+ for(const passage of [{title:'Heading',text:'Text'},{key:'unseen',title:'Heading'},{key:'unseen',text:null},{key:'unseen',text:{body:'Text'}}])assert.equal(schema.safeParse(normalize(selection,{passages:[passage],tasks:output().tasks})).success,false);
+ const raw={passages:[{key:'unseen',text:'Original',title:'Heading'}],tasks:[]};assert.equal(schema.safeParse(raw).success,false);
+});
+test('Provider passage prompt explicitly specifies strict key/text objects for all class and paper templates',()=>{
+ const {englishBlueprint}=load('blueprints');
+ for(let grade=6;grade<=12;grade++)for(const paper of [1,2]){
+  const item=englishBlueprint(grade,paper).items.find(i=>i.section==='writing'),s={...selection,grade,paper,itemIds:[item.id],writing:{[item.id]:{topic:'My school',...(item.writingChoices?{choice:item.writingChoices[0]}:{})}}};
+  const text=prompt(s);assert.match(text,/Each generated passage MUST be exactly/);assert.match(text,/Only key and text are allowed/);
+ }
+});
+test('Provider unseen passage with decorative metadata validates end-to-end without hiding content failures',async()=>{
+ for(let grade=6;grade<=10;grade++){
+  const s={grade,paper:1,mode:'selected',itemIds:['summary'],sources:{},writing:{},includeAnswers:true};
+  const raw={passages:[{key:'unseen',text:'Pupils planted trees at school.',title:'Tree planting',source:'Original unseen',reference:null,type:'reading'}],tasks:[{id:'summary',instruction:'Write a summary of the passage.',passageKey:'unseen',subitems:[],answer:'Pupils planted trees.'}]};
+  const fetcher=async()=>new Response(JSON.stringify({choices:[{finish_reason:'stop',message:{content:JSON.stringify(raw)}}]}));
+  const result=await requestEnglishPaper(s,{apiKey:'test-only',fetcher});assert.equal(result.output.passages[0].text,raw.passages[0].text);assert.deepEqual(Object.keys(result.output.passages[0]),['key','text']);
+  delete raw.tasks[0].answer;await assert.rejects(()=>requestEnglishPaper(s,{apiKey:'test-only',fetcher}),/INVALID_OUTPUT/);
+ }
+ const raw={passages:[{key:'seen-1',text:'Rewritten text',title:'Heading'}],tasks:[{id:'mcq',instruction:'Choose.',passageKey:'seen-1',subitems:Array.from({length:7},()=>({text:'Question?',options:['a','b','c','d']}))}]};
+ assert.throws(()=>assemble({...selection,mode:'selected',itemIds:['mcq'],writing:{},sources:{'seen-1':{text:'Exact book source',reference:'Book'}}},raw),/rewrite/);
+});
