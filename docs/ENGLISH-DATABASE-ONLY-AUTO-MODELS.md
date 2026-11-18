@@ -48,3 +48,11 @@ No authenticated production ADMIN session or database import was performed from 
 - 87 focused English, full-bank/import, source, builder, Job and exam regression tests pass.
 - Tests cover complete snapshot/mark/task validation, MCQ+short-answer and unseen linkage, missing keys/parts/source mismatch, all-grade no-stock responses, auth denial before DB read, private ownership, Pending-only import and idempotency preserving approval.
 - `git diff --check` passes. No edited-path TypeScript errors; full local tsc remains blocked by ungenerated Prisma Client.
+
+## Question Item assembly (current workflow)
+
+First-paper Full Model Test now assembles approved **Question Item groups**, rather than requiring an approved complete snapshot. `english-item:v1:<sha256>` stores independently reviewable selected-mode drafts. Seen-1 (MCQ/comprehension), Seen-2 (gap/vocabulary), Unseen (information/true-false/summary), textbook poems and standalone items remain separate. Passage-dependent tasks are indivisible so unrelated questions cannot be attached to another passage. Grade-specific blueprint order and marks are validated on the final assembled paper; seen sources are kept distinct.
+
+ADMIN imports the existing prepared Class 6 material through the new Question Item panel in `/admin/english-review`, previews each group's tasks/answers, and approves each group independently. Import is Pending-only, digest-bound and duplicate-safe; existing decisions are not reset. Legacy approved complete snapshots remain usable as item stock, but are no longer required. No pending material, bundled unapproved content, paid AI, or cross-grade fallback is used. The user's page contains no ADMIN import/approval instructions.
+
+This change supplies the assembly and review workflow, not production approval. The prepared stock is still Class 6 only; grades 7–12 require their own reviewed content. The configured practice blueprint is not a newly verified official circular. Item stock still reuses the previously documented shared seen-1/unseen/writing groups.

@@ -7,6 +7,6 @@ test('full model import provides review shortcut and matching destination withou
 test('chapter send forms have adjacent scoped review shortcuts',()=>{
  const ui=read('app/admin/questions/import/prepared-library.tsx');assert.match(ui,/Pending হিসেবে সেভ করুন"\}<\/button><Link/);assert.match(ui,/ব্যর্থগুলো আবার চেষ্টা"\}<\/button><Link/);assert.match(ui,/pendingReviewHref\(batches\[0\].category,batches\[0\].subject\)/);
 });
-test('unavailable full model screen points to correct import and review workflow',()=>{
- const ui=read('components/english-auto-model.tsx');assert.match(ui,/!busy && error && paper === 1/);assert.match(ui,/href="\/admin\/english-review"/);assert.match(ui,/সাধারণ অধ্যায়ের প্রশ্ন বা শুধু passage import/);
+test('user full model screen does not expose administrative workflow',()=>{
+ const ui=read('components/english-auto-model.tsx');assert.doesNotMatch(ui,/href="\/admin\/english-review"/);assert.doesNotMatch(ui,/ADMIN:|Pending import/);
 });
