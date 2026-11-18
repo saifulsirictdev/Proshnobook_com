@@ -110,6 +110,13 @@ export default async function RootLayout({
           sizes="32x32"
           type="image/png"
         />
+        {/* Stable, crawlable square icon for search engines and high-DPI clients. */}
+        <link
+          rel="icon"
+          href="/proshnobook-p-192.png"
+          sizes="192x192"
+          type="image/png"
+        />
         <link
           rel="apple-touch-icon"
           href="/proshnobook-p-apple.png"
