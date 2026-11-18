@@ -121,3 +121,17 @@ test('Bank selection looks ahead so a random Seen-1 choice does not hide a valid
  const conflict=structuredClone(seen1);conflict.selection.sources['seen-1']={...seen2.selection.sources['seen-2']};conflict.output.passages[0].text=seen2.selection.sources['seen-2'].text;
  const result=items.assembleEnglishItems([conflict,seen1,seen2],6,()=>0,['mcq','comprehension','gap','vocabulary']);assert.ok(result.draft);assert.deepEqual(result.missing,[]);assert.notEqual(result.draft.selection.sources['seen-1'].text,result.draft.selection.sources['seen-2'].text);
 });
+test('Common import saves exactly the server-prepared item Pending, never resets Approved and denies forged keys',async()=>{
+ const items=require('../lib/english/item-bank.ts'),key=items.englishItemGroups(prepared.draft)[0].key;const saved=new Map();let calls=0;
+ function action(role){return load('app/admin/questions/import/english-items-actions.ts',{'@/lib/guard':{staff:async()=>{if(role!=='ADMIN')throw Error('Forbidden');return{id:'a'};}},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async({data,skipDuplicates})=>{calls++;assert.equal(skipDuplicates,true);for(const r of data)if(!saved.has(r.key))saved.set(r.key,r.value);}}}}}).saveEnglishQuestionItem;}
+ const fd=new FormData();fd.set('key',key);fd.set('reviewed','yes');await assert.rejects(()=>action('TEACHER')(fd));assert.equal(calls,0);await action('ADMIN')(new FormData());assert.equal(calls,0);
+ const forged=new FormData();forged.set('reviewed','yes');forged.set('key','forged');await action('ADMIN')(forged);assert.equal(calls,0);
+ await action('ADMIN')(fd);assert.equal(saved.size,1);const entry=JSON.parse(saved.get(key));assert.equal(entry.status,'PENDING');assert.ok(entry.draft.output.passages.length);entry.status='APPROVED';saved.set(key,JSON.stringify(entry));await action('ADMIN')(fd);assert.equal(JSON.parse(saved.get(key)).status,'APPROVED');
+});
+test('Common ADMIN readiness and user preparation use the same validated stock, not status-only receipts',async()=>{
+ const {loadEnglishStock}=require('../lib/english/stock.ts');const items=require('../lib/english/item-bank.ts');
+ const groups=items.englishItemGroups(prepared.draft);const rows=groups.map(p=>({key:p.key,value:record('APPROVED',p.draft)}));
+ rows.push({key:'bad',value:JSON.stringify({status:'APPROVED',draft:{}})});
+ const stock=await loadEnglishStock(6,async prefix=>prefix==='english-item:v1:'?rows:[]);assert.equal(stock.length,groups.length);assert.ok(items.assembleEnglishItems(stock,6).draft);
+ const partial=await loadEnglishStock(6,async prefix=>prefix==='english-item:v1:'?rows.filter(r=>!JSON.parse(r.value).draft?.output?.tasks?.some(t=>t.id==='summary')):[]);assert.equal(items.assembleEnglishItems(partial,6).draft,null);
+});

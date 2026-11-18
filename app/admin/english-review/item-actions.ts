@@ -11,4 +11,6 @@ export async function importEnglishItems(form: FormData) {
   const records = new Map(preparedCompleteEnglishModels().flatMap(m => englishItemGroups(m.draft)).map(p => [p.key, p]));
   await db.setting.createMany({ data: [...records.values()].map(p => ({key:p.key,value:JSON.stringify({status:"PENDING",draft:p.draft,group:p.group,importedBy:user.id,importedAt:new Date().toISOString()})})), skipDuplicates:true });
   revalidatePath("/admin/english-review");
+  revalidatePath("/admin/questions/import");
+  revalidatePath("/admin/questions");
 }

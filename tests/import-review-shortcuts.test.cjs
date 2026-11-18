@@ -1,8 +1,11 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const read=p=>fs.readFileSync(p,'utf8');
-test('full model import provides review shortcut and matching destination without removing approval form',()=>{
- assert.match(read('app/admin/english-review/complete-model-import.tsx'),/href="#english-model-reviews"/);
- const page=read('app/admin/english-review/page.tsx');assert.match(page,/id="english-model-reviews"/);assert.match(page,/record.status === "PENDING"/);assert.match(page,/action=\{decideEnglishRecovery\}/);assert.match(page,/value="APPROVED"/);
+test('English import and review are in common question pages; old bookmark redirects',()=>{
+ const page=read('app/admin/questions/english-items.tsx');assert.match(page,/id="english-question-items"/);assert.match(page,/action=\{decideEnglishRecovery\}/);assert.match(page,/value="APPROVED"/);
+ assert.match(read('app/admin/questions/import/page.tsx'),/englishItems=\{<EnglishQuestionItems/);
+ assert.match(read('app/admin/questions/page.tsx'),/<EnglishQuestionItems review/);
+ assert.match(read('app/admin/english-review/page.tsx'),/redirect\("\/admin\/questions\?/);
+ assert.doesNotMatch(page,/href="\/admin\/english-review/);
 });
 test('chapter send forms have adjacent scoped review shortcuts',()=>{
  const ui=read('app/admin/questions/import/prepared-library.tsx');assert.match(ui,/Pending হিসেবে সেভ করুন"\}<\/button><Link/);assert.match(ui,/ব্যর্থগুলো আবার চেষ্টা"\}<\/button><Link/);assert.match(ui,/pendingReviewHref\(batches\[0\].category,batches\[0\].subject\)/);
