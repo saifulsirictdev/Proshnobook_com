@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { englishBoardFilterSchema, type EnglishBoardFilter } from "./board-source";
 import { validateEnglishDraft, type EnglishDraft } from "./draft";
 import { validateEnglishReferenceShape } from "./generation";
 import { englishBlueprint, type EnglishGrade } from "./blueprints";
@@ -30,7 +31,12 @@ export function approvedEnglishItem(value: string, grade: number) {
     return draft;
   } catch { return null; }
 }
-export function assembleEnglishItems(stock: EnglishDraft[], grade: number, random = Math.random, itemIds?: string[]) {
+export function assembleEnglishItems(stock: EnglishDraft[], grade: number, random = Math.random, itemIds?: string[], filter: EnglishBoardFilter = {}) {
+  const { examYear } = englishBoardFilterSchema.parse(filter);
+  // Filter atomic groups, not entire legacy snapshots; never leak unknown/mixed years.
+  if (examYear !== undefined) {
+    stock = stock.flatMap(d => englishItemGroups(d).map(g => g.draft)).filter(d => d.output.tasks.every(t => t.boardSource?.examYear === examYear));
+  }
   const blueprint = englishBlueprint(grade as EnglishGrade, 1);
   if (itemIds && (!itemIds.length || new Set(itemIds).size !== itemIds.length || itemIds.some(id => !blueprint.items.some(i => i.id === id)))) throw new Error("Invalid question items");
   const requested = blueprint.items.filter(i => !itemIds || itemIds.includes(i.id));

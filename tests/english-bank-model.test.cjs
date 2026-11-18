@@ -151,7 +151,7 @@ test('Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and p
 test('Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock',()=>{
  const scope=require('../lib/english/admin-scope.ts'),registry=require('../lib/english/prepared-items.ts');
  assert.deepEqual(scope.englishCategoryGrades('Class 9'),[9,10]);assert.deepEqual(scope.englishCategoryGrades('Class 11-12'),[11,12]);assert.deepEqual(scope.englishCategoryGrades('Class 7'),[7]);
- for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade!==6)assert.deepEqual(registry.preparedEnglishItems(grade),[]);}
+ for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade!==6 && grade!==10)assert.deepEqual(registry.preparedEnglishItems(grade),[]);}
  for(const raw of [5,13,'bad',''])assert.equal(scope.englishAdminGrade(raw),null);
  assert.ok(registry.preparedEnglishItems(6).length>40);assert.notEqual(registry.englishItemsDigest(7),registry.englishItemsDigest(8));
 });
@@ -196,4 +196,69 @@ test('English pagination splits presentation blocks without losing passages, tab
  assert.equal(JSON.stringify(paper.items),original);
  const {restoreSettings}=require('../lib/paper-builder.ts');const old=restoreSettings({});assert.equal(old.cfg.lineHeight,1.45);const tight=restoreSettings({cfg:{lineHeight:1.05,questionGap:0}});assert.equal(tight.cfg.lineHeight,1.05);assert.equal(tight.cfg.questionGap,0);
  const bad=restoreSettings({cfg:{lineHeight:0.2}});assert.equal(bad.cfg.lineHeight,1.45);
+});
+test('SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance',()=>{
+ const registry=require('../lib/english/prepared-items.ts'),items=registry.preparedEnglishItems(10),{validateEnglishReferenceShape}=require('../lib/english/generation.ts');
+ assert.equal(items.length,7);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
+ assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
+ assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
+ assert.equal(registry.englishItemsDigest(10),registry.englishItemsDigest(10));assert.equal(registry.preparedEnglishItems(9).length,0);
+});
+test('Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination',()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts');
+ const d=preparedEnglishItems(10)[0].draft,ids=['mcq','comprehension'];
+ const selected=assembleEnglishItems([d],10,()=>0,ids,{examYear:2024});assert.ok(selected.draft);assert.equal(selected.draft.output.tasks[0].boardSource.examYear,2024);
+ for(const year of [2023,2025])assert.equal(assembleEnglishItems([d],10,()=>0,ids,{examYear:year}).draft,null);
+ const unknown=structuredClone(d);unknown.output.tasks.forEach(t=>delete t.boardSource);
+ assert.equal(assembleEnglishItems([unknown],10,()=>0,ids,{examYear:2024}).draft,null);
+ assert.ok(assembleEnglishItems([unknown],10,()=>0,ids).draft);
+ const mixed=structuredClone(d);mixed.output.tasks[1].boardSource.examYear=2023;
+ assert.equal(assembleEnglishItems([mixed],10,()=>0,ids,{examYear:2024}).draft,null);
+ const {englishLegacyPaper}=require('../lib/english/legacy-builder.ts'),{englishFlowBlocks}=require('../lib/english/flow-blocks.ts');
+ const tasks=englishLegacyPaper(selected.draft).items.flatMap(englishFlowBlocks).flatMap(i=>i.englishGroup.tasks);assert.ok(tasks.length>2);assert.ok(tasks.every(t=>t.boardSource.examYear===2024));
+ for(const filter of [{examYear:'2024'},{examYear:2024.5},{examYear:1800},{examYear:2024,extra:true}])assert.throws(()=>assembleEnglishItems([d],10,()=>0,ids,filter));
+});
+test('Board filter is validated before reads and empty filtered stock never writes a draft',async()=>{
+ for(const [grade,filter] of [[10,{examYear:'2024'}],[10,{examYear:1800}],[6,{examYear:2024}]]){const h=harness();assert.equal((await h.run(grade,undefined,filter)).ok,false);assert.equal(h.reads(),0);assert.equal(h.writes.length,0);}
+ const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10)[0].draft;
+ const h=harness([{key:'english-item:v1:test',value:record('APPROVED',d)}]);
+ const r=await h.run(10,['mcq','comprehension'],{examYear:2023});assert.equal(r.ok,false);assert.match(r.error,/2023/);assert.equal(h.writes.length,0);
+ const ok=await h.run(10,['mcq','comprehension'],{examYear:2024});assert.equal(ok.ok,true);assert.equal(h.writes.length,1);
+});
+test('Old drafts still validate, while malformed board provenance is rejected',()=>{
+ const {validateEnglishDraft}=require('../lib/english/draft.ts');assert.ok(validateEnglishDraft(prepared.draft));
+ const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10)[0].draft;
+ for(const patch of [{examYear:2024.5},{board:'School model'},{pdfPage:0},{sourceFile:''},{questionNumber:0}]){const invalid=structuredClone(d);Object.assign(invalid.output.tasks[0].boardSource,patch);assert.throws(()=>validateEnglishDraft(invalid));}
+});
+test('SSC batch covers nine existing items in seven groups and honestly reports missing poem/story comprehension',()=>{
+ const registry=require('../lib/english/prepared-items.ts'),bank=require('../lib/english/item-bank.ts'),generation=require('../lib/english/generation.ts');
+ const items=registry.preparedEnglishItems(10),stock=items.map(i=>i.draft);
+ assert.deepEqual(new Set(items.map(i=>i.group)),new Set(['seen-1','seen-2','unseen','matching','rearranging','story','dialogue']));
+ for(const d of stock){generation.validateEnglishReferenceShape(d.selection,d.output);assert.match(d.name,/teacher review/);assert.ok(d.output.tasks.every(t=>t.boardSource.sourceFile&&t.boardSource.pdfPage>0));}
+ const full=bank.assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2024});assert.equal(full.draft,null);assert.deepEqual(full.missing,['poems','stories']);
+ const ids=require('../lib/english/blueprints.ts').englishBlueprint(10,1).items.filter(i=>!['poems','stories'].includes(i.id)).map(i=>i.id);
+ const selected=bank.assembleEnglishItems(stock,10,()=>0,ids,{examYear:2024}).draft;assert.ok(selected);assert.equal(selected.output.tasks.length,9);
+ // A composite can contain different years: selecting one atomic group must not reject unrelated years.
+ const composite=structuredClone(selected);composite.output.tasks.find(t=>t.id==='gap').boardSource.examYear=2023;
+ assert.ok(bank.assembleEnglishItems([composite],10,()=>0,['mcq','comprehension'],{examYear:2024}).draft);
+ assert.equal(bank.assembleEnglishItems([composite],10,()=>0,['gap'],{examYear:2024}).draft,null);
+ assert.ok(bank.assembleEnglishItems([composite],10,()=>0,['gap'],{examYear:2023}).draft);
+});
+test('SSC year/source and historical-mark differences render once per question across print fragments',()=>{
+ const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
+ try{
+  const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
+  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story').draft;
+  const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
+  const html=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');assert.equal((html.match(/Dhaka Board 2024/g)||[]).length,1);assert.match(html,/Q9/);assert.match(html,/মূল প্রশ্নে 10 নম্বর; practice-এ 15/);
+  const Year=require('../components/english-board-year.tsx').default;const control=render(React.createElement(Year,{value:'2024',onChange(){}}));assert.match(control,/value="2024"/);assert.match(control,/type="number"/);
+ }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
+});
+test('SSC registry imports only through explicit ADMIN consent and always creates Pending records',async()=>{
+ const registry=require('../lib/english/prepared-items.ts');let writes=[];
+ const mocks={'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async arg=>{writes.push(arg);return {count:arg.data.length};}}}}};
+ const action=load('app/admin/english-review/item-actions.ts',mocks).importEnglishItems;
+ const fd=new FormData();fd.set('grade','10');fd.set('digest',registry.englishItemsDigest(10));await action(fd);assert.equal(writes.length,0);
+ fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,7);
+ for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>t.boardSource.examYear===2024));}
 });

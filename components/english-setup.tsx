@@ -1,4 +1,5 @@
 "use client";
+import EnglishBoardYear from "./english-board-year";
 import PreparationPopup from "./preparation-popup";
 import "./english-theme.css";
 import EnglishTopicPicker from "@/components/english-topic-picker";
@@ -36,6 +37,7 @@ export default function EnglishSetup({
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
+  const [examYear, setExamYear] = useState("");
   const [grade, setGrade] = useState(initialGrade),
     [paper, setPaper] = useState<EnglishPaper>(initialPaper),
     [mode, setMode] = useState<"full" | "selected" | "writing">(initialMode),
@@ -80,6 +82,7 @@ export default function EnglishSetup({
     return () => { cancelled = true; };
   }, [grade, paper, mode]);
   function reset() {
+    setExamYear("");
     setIds([]);
     setWriting({});
     setSources({});
@@ -97,7 +100,7 @@ export default function EnglishSetup({
     setBusy(true);
     try {
       if (paper === 1) {
-        const generated = await prepareEnglishBankModel(grade, mode === "full" ? undefined : selected.map(i => i.id));
+        const generated = await prepareEnglishBankModel(grade, mode === "full" ? undefined : selected.map(i => i.id), examYear ? { examYear: Number(examYear) } : {});
         if (!generated.ok) setMessage(generated.error);
         else router.push(`/question-builder/build?englishKey=${encodeURIComponent(generated.key)}&stage=setup`);
         return;
@@ -179,6 +182,7 @@ export default function EnglishSetup({
           </select>
         </label>
       </div>
+      {paper === 1 && (grade === 9 || grade === 10) && <EnglishBoardYear value={examYear} onChange={setExamYear} disabled={busy} />}
       <aside className="english-reference rounded border bg-amber-50 p-4">
         <strong>Reference:</strong> {blueprint.reference.description}.
         User-approved practice template; not independently certified as the
