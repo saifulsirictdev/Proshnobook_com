@@ -120,10 +120,10 @@ test("purchased setup uses private receipt, skips bank checkout and does not sav
   assert.match(setup, /validatePurchase\(row.value, buyerId, id\)/);
   assert.match(setup, /<QbBuilder/);
   assert.doesNotMatch(setup, /PaidBuilderGate|QbSavePaper/);
-  assert.match(builder, /!purchased && <WalletCheckout/);
+  assert.match(builder, /!purchased && !english && <WalletCheckout/);
   assert.match(builder, /checkPurchasedPaperAccess\(purchased.id\)/);
   assert.match(
     builder,
-    /if \(!purchased\)\s*localStorage.setItem\("qb:settings"/,
+    /if \(!purchased && !english\)\s*localStorage.setItem\("qb:settings"/,
   );
 });

@@ -1,6 +1,7 @@
+import { englishLegacyPaper } from "@/lib/english/legacy-builder";
 import PaidBuilderGate from "@/components/paid-builder-gate";
 import { loadEnglishPaper } from "@/app/actions/english-paper";
-import EnglishEditor from "@/components/english-editor";
+import EnglishLegacyBuilder from "@/components/english-legacy-builder";
 import { notFound } from "next/navigation";
 import { getSite } from "@/lib/site";
 import QbBuilder from "@/components/qb-builder";
@@ -19,7 +20,7 @@ export default async function BuildPage({
     if (englishKey.length > 250) notFound();
     const draft = await loadEnglishPaper(englishKey);
     if (!draft) notFound();
-    return <EnglishEditor draftKey={englishKey} initial={draft} setupFirst={stage === "setup"} reviewFirst={stage === "review" && draft.selection.mode === "full"} />;
+    return <EnglishLegacyBuilder draftKey={englishKey} initial={draft} paper={englishLegacyPaper(draft)} />;
   }
   const site = await getSite();
   const support = site.social.find((s) => s.name === "WhatsApp")?.url;
