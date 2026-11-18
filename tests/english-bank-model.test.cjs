@@ -174,3 +174,8 @@ test('English build route uses the original builder, isolates general storage an
  const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder english=/);assert.match(wrapper,/saveEnglishPaper\(draftKey/);
  const builder=fs.readFileSync('components/qb-builder.tsx','utf8');assert.match(builder,/if \(!ready \|\| purchased \|\| english\) return/);assert.match(builder,/loadEnglishPaper\(english.key\)/);assert.match(builder,/!purchased && !english && <WalletCheckout/);
 });
+test('Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle',()=>{
+ const client=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(client,/import type \{ englishLegacyPaper \}/);assert.doesNotMatch(client,/englishLegacyPaper\(initial\)/);
+ const server=fs.readFileSync('app/question-builder/build/page.tsx','utf8');assert.match(server,/paper=\{englishLegacyPaper\(draft\)\}/);
+ assert.ok(fs.readFileSync('components/paper-builder/preview.tsx','utf8').startsWith('"use client";'));
+});

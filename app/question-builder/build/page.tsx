@@ -1,3 +1,4 @@
+import { englishLegacyPaper } from "@/lib/english/legacy-builder";
 import PaidBuilderGate from "@/components/paid-builder-gate";
 import { loadEnglishPaper } from "@/app/actions/english-paper";
 import EnglishLegacyBuilder from "@/components/english-legacy-builder";
@@ -19,7 +20,7 @@ export default async function BuildPage({
     if (englishKey.length > 250) notFound();
     const draft = await loadEnglishPaper(englishKey);
     if (!draft) notFound();
-    return <EnglishLegacyBuilder draftKey={englishKey} initial={draft} />;
+    return <EnglishLegacyBuilder draftKey={englishKey} initial={draft} paper={englishLegacyPaper(draft)} />;
   }
   const site = await getSite();
   const support = site.social.find((s) => s.name === "WhatsApp")?.url;

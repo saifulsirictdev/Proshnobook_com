@@ -1,13 +1,12 @@
 "use client";
-import {useMemo,useRef,useState} from "react";
+import {useRef,useState} from "react";
 import QbBuilder from "./qb-builder";
-import { englishLegacyPaper } from "@/lib/english/legacy-builder";
+import type { englishLegacyPaper } from "@/lib/english/legacy-builder";
 import type {EnglishDraft} from "@/lib/english/draft";
 import type {PaperSettings} from "@/lib/paper-builder";
 import {currentHeader} from "@/lib/paper-header";
 import { saveEnglishPaper } from "@/app/actions/english-paper";
-export default function EnglishLegacyBuilder({draftKey,initial}:{draftKey:string;initial:EnglishDraft}) {
-  const paper=useMemo(()=>englishLegacyPaper(initial),[initial]);
+export default function EnglishLegacyBuilder({draftKey,initial,paper}:{draftKey:string;initial:EnglishDraft;paper:ReturnType<typeof englishLegacyPaper>}) {
   const settings=useRef<PaperSettings>(paper.settings);
   const [busy,setBusy]=useState(false),[message,setMessage]=useState("");
   async function save(){
