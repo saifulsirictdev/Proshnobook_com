@@ -65,6 +65,9 @@ export default async function EnglishReview() {
         database থেকে ব্যবহার করা যাবে। Live test-এ স্বয়ংক্রিয় প্রকাশ হবে না।
         মালিকের private draft আলাদা থাকে।
       </p>
+      <h2 id="english-model-reviews" className="scroll-mt-24 text-xl font-bold">পাঠানো পূর্ণ মডেল — review ও অনুমোদন</h2>
+      <p>প্রতিটি Pending মডেলের সব প্রশ্ন ও উত্তর পড়ে তার নিচের অনুমোদন বাটন ব্যবহার করুন। Approved পূর্ণ মডেলই Auto Model Test-এ ব্যবহার হবে।</p>
+      {reviewRows.length === 0 && <p>এখনো কোনো পূর্ণ মডেল পাঠানো হয়নি। উপরের পূর্ণ প্রশ্ন–উত্তর মডেল Pending import করুন; শুধু reading source বা অধ্যায়ের প্রশ্ন import করলে এখানে পূর্ণ মডেল আসবে না।</p>}
       {reviewRows.map((row) => {
         try {
           const record = JSON.parse(row.value),
