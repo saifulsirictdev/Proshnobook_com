@@ -1,0 +1,38 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),ts=require('typescript'),Module=require('node:module'),path=require('node:path');
+function load(file,mocks={}){const m=new Module(path.resolve(file),module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);return m.exports;}
+const blueprint=load('lib/english/blueprints.ts');
+const selection=load('lib/english/selection.ts',{'./blueprints':blueprint});
+const builder=load('lib/english/builder-mode.ts',{'./blueprints':blueprint,'./selection':selection,'./topic-options':{}});
+function harness(user={id:'teacher',role:'TEACHER'},sources={}){let reads=0,requests=[];
+ const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);const r=selection.resolveEnglishSelection(raw);assert.equal(r.total,blueprint.englishBlueprint(raw.grade,1).total);return{ok:true,key:'owned-draft-key'};}}});
+ return{prepare:actions.prepareEnglishFullModel,requests,reads:()=>reads};
+}
+test('Auto-model rejects unsupported/forged inputs and unauthorised users before source/AI lookup',async()=>{
+ for(const user of [null,{id:'student',role:'STUDENT'}]){const h=harness(user);assert.equal((await h.prepare({grade:6})).ok,false);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);}
+ const h=harness();for(const raw of [{grade:5},{grade:13},{grade:6,paper:2},{grade:6,marks:1000},{grade:6,sources:{fake:{text:'Invented',reference:'Fake'}}}])assert.equal((await h.prepare(raw)).ok,false);
+ assert.equal(h.requests.length,0);assert.equal(h.reads(),0);
+});
+test('Missing exact textbook sources stop before spending generation quota, without inventing seen text',async()=>{
+ const h=harness(),r=await h.prepare({grade:6});assert.equal(r.ok,false);assert.deepEqual(r.missing,['seen-1','seen-2','textbook-poems']);assert.equal(h.requests.length,0);
+});
+test('All supported first papers auto-select full blueprint and writing then invoke existing bank-first/AI-fallback action',async()=>{
+ for(let grade=6;grade<=12;grade++){
+ const sources=Object.fromEntries(blueprint.englishBlueprint(grade,1).items.filter(i=>i.sourceGroup&&i.sourceGroup!=='unseen').map(i=>[i.sourceGroup,{text:'Approved exact fixture text, not actual textbook content.',reference:'Test fixture'}]));
+ const h=harness(undefined,sources);assert.equal((await h.prepare({grade})).ok,true);assert.equal(h.requests.length,1);
+ const r=h.requests[0];assert.equal(r.paper,1);assert.equal(r.mode,'full');assert.deepEqual(r.itemIds,[]);assert.equal(r.includeAnswers,true);assert.deepEqual(r.sources,sources);assert.deepEqual(r.writing,builder.fullModelWriting(grade,1));
+ }
+});
+test('Supplying only missing extracts resumes automatic complete-paper generation',async()=>{
+ const h=harness(undefined,{'seen-1':{text:'Approved fixture.',reference:'Unit 1'}});
+ const supplied={'seen-2':{text:'Teacher fixture.',reference:'Unit 2'},'textbook-poems':{text:'Teacher poem fixture.',reference:'Poems'}};
+ assert.equal((await h.prepare({grade:6,sources:supplied})).ok,true);assert.equal(h.requests[0].sources['seen-2'].text,'Teacher fixture.');
+});
+test('Full entry mounts auto preparation instead of task configuration, with review before layout',async()=>{
+ const Auto=()=>null,Setup=()=>null;
+ const page=load('app/question-builder/english/page.tsx',{'@/lib/english/topic-options':{englishQuestionItemGroups:()=>[]},'@/components/english-auto-model':{__esModule:true,default:Auto},'@/components/english-setup':{__esModule:true,default:Setup}}).default;
+ assert.equal((await page({searchParams:Promise.resolve({grade:'7',paper:'1',mode:'full'})})).type,Auto);
+ assert.equal((await page({searchParams:Promise.resolve({grade:'7',paper:'2',mode:'full'})})).type,Setup);
+ assert.equal((await page({searchParams:Promise.resolve({grade:'7',paper:'1',mode:'topic'})})).type,Setup);
+ const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('&stage=review'));assert.ok(ui.includes('request.current ??='));assert.ok(!ui.includes('EnglishSetup'));
+ const editor=fs.readFileSync('components/english-editor.tsx','utf8');assert.ok(editor.includes('if (await save()) { setReviewing(false); setSettingsOpen(true); }'));assert.ok(editor.includes('{!reviewing && <PaperSettingsPanel'));assert.ok(editor.includes('প্রশ্ন বদলান / সম্পাদনা করুন'));assert.ok(editor.includes('return !changed;'));
+});

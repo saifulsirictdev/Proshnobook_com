@@ -12,14 +12,14 @@ export const metadata = { title: "প্রশ্নপত্র বিল্ড
 export default async function BuildPage({
   searchParams,
 }: {
-  searchParams: Promise<{ englishKey?: string }>;
+  searchParams: Promise<{ englishKey?: string; stage?: string }>;
 }) {
-  const { englishKey } = await searchParams;
+  const { englishKey, stage } = await searchParams;
   if (englishKey) {
     if (englishKey.length > 250) notFound();
     const draft = await loadEnglishPaper(englishKey);
     if (!draft) notFound();
-    return <EnglishEditor draftKey={englishKey} initial={draft} />;
+    return <EnglishEditor draftKey={englishKey} initial={draft} reviewFirst={stage === "review" && draft.selection.paper === 1 && draft.selection.mode === "full"} />;
   }
   const site = await getSite();
   const support = site.social.find((s) => s.name === "WhatsApp")?.url;

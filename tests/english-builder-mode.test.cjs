@@ -106,7 +106,7 @@ test('English second paper is excluded from the new system and keeps the legacy 
  const html=renderStarter('6','English 2nd Paper','');assert.match(html,/name="questionType"/);assert.doesNotMatch(html,/aria-label="English প্রশ্নপত্রের ধরন"|aria-label="English topic type"/);
  const h=sourceAction({id:'teacher',role:'TEACHER'},[]);assert.ok((await h.read(6,2)).error);assert.equal(h.reads(),0);
 });
-function entryPage(){const file='app/question-builder/english/page.tsx',m=new Module(path.resolve(file),module);m.paths=module.paths;m.require=id=>id==='@/components/english-setup'?{__esModule:true,default:()=>null}:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports.default;}
+function entryPage(){const file='app/question-builder/english/page.tsx',m=new Module(path.resolve(file),module);m.paths=module.paths;m.require=id=>['@/components/english-setup','@/components/english-auto-model'].includes(id)?{__esModule:true,default:()=>null}:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports.default;}
 test('Grouped entry preselects every member; forged class/group and second-paper query cannot inject items',async()=>{
  const page=entryPage();
  for(const group of ['seen-comprehension','unseen-comprehension']){
