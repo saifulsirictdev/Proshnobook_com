@@ -1,24 +1,62 @@
-# Class 6 automatic model: bundled source coverage
+# Class 6 automatic model: thirty-source pool
 
-## Scope
-The owner asked to prepare source material so Full Model Test does not require filling the missing-source form. This change covers **Class 6 English 1st Paper only**, using existing source material rather than inventing seen prose. It does not claim exhaustive textbook coverage, five imported model papers, or current official syllabus certification.
+## Latest owner correction
+Two passages are needed **per paper**, not just two passages in storage. The owner explicitly requested at least 30 seen units from the supplied NCTB textbook and poems for variety. This extension replaces the fixed runtime pair with 30 distinct reading extracts (prose, letters, dialogues and a written recipe) plus six textbook poems. No tiny overlapping slices of one passage are counted as new units. Different textbook sections in the same lesson remain individually identifiable; runtime selection uses different lessons for its two seen blocks.
 
-- `seen-1`: Bulbul rubbish-collection passage, reused without modification from `content/question-bank/class-6/english-1st/model-01-draft.json`, Lesson 5, printed 14–15 / PDF 18,20.
-- `seen-2`: Health is Wealth excerpt, reused without modification from the same source artifact, Lesson 9, printed 30 / PDF 35. No remedy recipes/doses are added.
-- `textbook-poems`: Rossetti's public-domain *Boats Sail on the Rivers* / *The Rainbow*, ten lines, tied to existing Lesson 16 source-review metadata (printed 52 / PDF 57). The generation input explicitly restricts questions to this poem; it must not invent questions about other poems not supplied.
+## Source and review
+- Supplied Drive file: `1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J`, 2026 English for Today, Class 6, revised October 2025.
+- Downloaded this turn: 20,602,886 bytes; SHA256 `bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d`, matching prior source-read book.
+- The PDF is image-only. Local OCR was used for reading assistance, then extracts were cleaned against the extracted wording and difficult layout/poem pages were spot-checked visually. Do not call OCR perfect or claim every line received an independent teacher review. Quotes/layout/speaker labels are normalised, not AI-invented passages.
+- Each seen unit records lesson, section, explicit PDF/printed page locator, word count, content hash and eligible source groups. Selected pages follow actual headers (including reordered scan exceptions), not a universal +5 assumption.
+- Poem sources: Let's Play; Holding Hands (abridged); Boats Sail on the Rivers; The Chaos (abridged); Stop, Look, and Listen; André. The Bangladesh song is not silently counted as a seventh poem.
+- Excludes clinical remedy/dose instructions, audio-dependent blanks, unresolved Taj Mahal area/space-travel assertions and the inconsistent national-day opening. The global-citizen excerpt excludes the questionable mission label. Shopping-list/market quantities and letter-date inconsistencies are isolated and warned about, not silently combined.
+- These are private practice inputs, NOT ADMIN-approved question-bank records. Teacher review of difficulty, accuracy, accepted answers and suitability remains necessary. No current official circular certification is claimed.
 
-There are **two seen excerpts + one complete poem**, not a stock of five different models. The Class 6 story-completion task is original writing, not the SSC textbook-story source group. Original unseen reading and writing questions can be generated through the existing pipeline.
+## Selection
+`lib/english/data/class6-seen-pool.json` is used only for Class 6 English 1st Paper. There are 30 source units, not 30 complete model papers or 30 prewritten question sets. Some are authentic short dialogues; ten units below 100 words are restricted to the five-gap/vocabulary source group. The MCQ/comprehension source comes only from units of at least 100 words. Both sources have different IDs and lessons. No foreign-class fallback.
 
-The newly supplied Drive `Class-6-English-Model-Tests (1).pdf` (ID `1TA1MMzoS_gUsAqLGX42UOsLMkR4Ey3-1`) was readable and its contents page lists five papers per subject. Its first model and the previously source-read textbook use the same junior task pattern. Its commercial questions have not been silently imported or labelled approved. The original inaccessible CP(16) file was not downloaded or circumvented.
+Three distinct poems are sampled without replacement per paper to support eight offered poem questions without padding a four-line verse. The source reference restricts answers to the three supplied poems. Random selection varies new papers but is **not a persisted per-account no-repeat guarantee**; repeats across separate papers remain possible. Sources remain fixed inside a generated/saved draft.
 
-The original textbook text-extraction service returned provider_unavailable twice during this change. The prose is reused from the prior manually source-read repository artifact; this turn did not independently re-open the book scans. The poem is a public-domain literary source supported by the prior lesson review, not a claim of a fresh exact typography comparison with the PDF. Teacher semantic review of generated questions/answers remains necessary.
+Source priority: explicit teacher input > valid ADMIN-approved database snapshot > sampled bundled private-practice source. Thus a preferred approved override may replace a sampled source. Bank/AI questions must continue matching the actual selected source through existing validation.
 
-## Runtime
-`prepareEnglishFullModel` keeps existing authentication and strict input validation. Source priority: explicit teacher input > validated ADMIN-approved database source > bundled private-practice source. Bundles never enter the shared question bank and do not mutate approval status, publication, or data. Grade and paper must match exactly; no Class 6 fallback into other grades or English 2nd Paper.
+Flow remains: choose class/full model → populate sources automatically → existing approved-bank-first/AI-for-missing parts → full paper review/manual edits → confirmed save → Set-up. Existing auth/quota/locks/recovery/ownership/output validation remain unchanged. No bank import, automatic publication, role or wallet change. Other grades still report their own missing sources; their content is not invented.
 
-When Class 6 is selected, the three required source groups are now filled before the missing-source check. Existing bank-first/AI-for-missing tasks generation then runs, followed by private paper review/manual editing and confirmed save before Set-up. No browser AI key, direct provider call, quota bypass or fabricated seen source is introduced. Provider configuration/auth/quota/output validation can still block generation; absence of a source form is not a guarantee that production AI is configured.
-
-Only one default source set is bundled; this change does not promise automatic source rotation or non-repeating generated papers. Other grades still report their missing source groups rather than using foreign-grade content. Approved database snapshots remain preferred.
+The previous `class6-model-sources.json` is retained as historical provenance for the first fixed source set, not imported by the runtime selector. The supplied guide PDF informed task format, not mass import or official syllabus verification.
 
 ## Validation
-74 focused English, builder, Job and exam regression tests pass, including source completeness, 100-mark/13-task selection, approved/teacher override priority, no cross-grade/paper fallback, immutable copies and source-form avoidance at the server entry. `git diff --check` passes. No paid provider request, authenticated production generation, database import or publication was performed. Full local typecheck remains subject to the sandbox's ungenerated Prisma Client limitation.
+75 focused tests pass, including 500 deterministic sampled source selections, all 30 units reached in the second-source slot, distinct lesson/source IDs, poem variety, source hashes/page references, valid 100-mark/13-task selections, teacher/approved override priority, no source form for Class 6 and grade/paper isolation. Tests are not teacher approval. No live paid AI generation, database import or publication was performed. Full local typecheck remains blocked by the sandbox's ungenerated Prisma Client; edited selector/action paths have no reported TypeScript errors.
+
+## Inventory
+
+| ID | Lesson | Section | Printed pages | PDF pages | Words |
+| --- | --- | --- | --- | --- | --- |
+| tarun | 1 | B | 2 | 7 | 77 |
+| lily | 2 | A(i) | 4 | 9 | 85 |
+| manzoor | 2 | A(iii) | 5 | 10 | 83 |
+| railway | 3 | A | 7 | 12 | 166 |
+| book-fair | 4 | A(i) | 9 | 14 | 85 |
+| airport | 4 | A(ii) | 10 | 15 | 59 |
+| sajed | 4 | A(iii) | 10 | 15 | 86 |
+| ruma | 4 | A(iv) | 11 | 16 | 57 |
+| mary | 4 | A(v) | 11 | 16 | 78 |
+| bulbul | 5 | B | 14,15 | 18,20 | 186 |
+| mila | 6 | A | 17 | 22 | 134 |
+| grocery-list | 8 | A | 21,22 | 26,27 | 187 |
+| market | 8 | B | 23 | 28 | 184 |
+| health | 9 | E (opening excerpt) | 30 | 35 | 109 |
+| birishiri | 12 | B | 39,40 | 44,45 | 296 |
+| lion | 14 | A | 46,47 | 51,52 | 222 |
+| old-home | 15 | A | 49,50 | 54,55 | 307 |
+| suraiya-letter | 15 | B (letter body) | 51 | 56 | 128 |
+| sandwich | 18 | A (recipe) | 56 | 61 | 138 |
+| hason | 20 | B | 61,62 | 66,67 | 173 |
+| computers | 22 | A: Computers | 65 | 70 | 140 |
+| mobiles | 22 | A: Mobile phones | 66 | 71 | 92 |
+| global-citizen | 23 | B (Ashar excerpt) | 68,69 | 73,74 | 233 |
+| wage-earners | 24 | B | 71 | 76 | 143 |
+| cairo | 24 | C | 72 | 77 | 130 |
+| concert | 25 | A | 75,76 | 80,81 | 325 |
+| polo-shirt | 26 | C | 79 | 84 | 201 |
+| vacation | 30 | A | 88 | 93 | 153 |
+| invitation | 32 | A (narrative and letter) | 92 | 97 | 168 |
+| thank-you | 32 | B (letter) | 93 | 98 | 81 |
