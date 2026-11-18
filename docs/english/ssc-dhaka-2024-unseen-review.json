@@ -1,0 +1,98 @@
+{
+  "status": "DRAFT_NOT_IMPORTED",
+  "grade": 10,
+  "paper": 1,
+  "group": "unseen",
+  "source": {
+    "kind": "board",
+    "board": "Dhaka",
+    "examYear": 2024,
+    "fileId": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+    "pdfPages": [
+      1,
+      2
+    ],
+    "printedPages": [
+      15,
+      16
+    ],
+    "sourceQuestionNumbers": [
+      4,
+      5
+    ]
+  },
+  "answerStatus": "Assistant-prepared answers based on passage; not an official key; teacher review required.",
+  "reviewNotes": [
+    "PDF page-image verification of table layout remains required.",
+    "Biographical answers follow the supplied passage; historical source spellings retained."
+  ],
+  "passage": "Captain Mohiuddin Jahangir was an officer in the Army during the Liberation War of 1971. He was born on 7 March, 1949 at Rahimganj Village under Babuganj Thana in Barishal District. He completed his HSC from Barishal BM College. In 1967, he took admission in the department of Statistics in Dhaka University. On October 5, 1967 he joined the armed forces as a cadet in the Pakistan Military Academy. He was commissioned in the Engineering Corps in 1968. He was promoted to the rank of Captain on 30 August in 1970. He was an officer in Sector 7 of the Mukti Bahini. He was given the responsibility to fight at the Chapai Nawabganj border in Rajshahi. On 14 December 1971 he was killed in an attempt to break through the enemy defenses on the bank of the Mahananda River. He was buried near Sona Masjid. In recognition of his valor and sacrifice in the Liberation War, Mohiuddin Jahangir was awarded with the highest state honor of Birsrestho.",
+  "tasks": [
+    {
+      "id": "information",
+      "instruction": "Complete the table below with information from the above passage.",
+      "table": {
+        "headers": [
+          "Event/Activity",
+          "Where/place",
+          "When"
+        ],
+        "rows": [
+          [
+            "Born",
+            "Rahimganj",
+            "(i) ——"
+          ],
+          [
+            "(ii) ——",
+            "Dhaka University",
+            "1967"
+          ],
+          [
+            "Joined as a cadet",
+            "(iii) ——",
+            "1967"
+          ],
+          [
+            "(iv) ——",
+            "in the Engineering Corps",
+            "1968"
+          ],
+          [
+            "Was killed",
+            "on the bank of Mohananda",
+            "(v) ——"
+          ]
+        ]
+      },
+      "subitems": [
+        {
+          "text": "(i)",
+          "answer": "7 March 1949"
+        },
+        {
+          "text": "(ii)",
+          "answer": "Took admission in the department of Statistics"
+        },
+        {
+          "text": "(iii)",
+          "answer": "Pakistan Military Academy"
+        },
+        {
+          "text": "(iv)",
+          "answer": "Was commissioned"
+        },
+        {
+          "text": "(v)",
+          "answer": "14 December 1971"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "instruction": "Write a summary of the above passage in your own words.",
+      "subitems": [],
+      "answer": "Captain Mohiuddin Jahangir was a freedom fighter and army officer born in Barishal in 1949. After studying at Barishal BM College and entering Dhaka University, he joined the Pakistan Military Academy in 1967. He was commissioned in 1968 and became a captain in 1970. During the Liberation War he served in Sector 7 and fought at Chapai Nawabganj. He was killed on 14 December 1971 near the Mahananda River and buried near Sona Masjid. He received the Birshrestho honour for his bravery and sacrifice."
+    }
+  ]
+}
