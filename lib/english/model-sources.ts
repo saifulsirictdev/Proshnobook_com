@@ -2,6 +2,7 @@ import { validateEnglishDraft } from "./draft";
 import { englishBlueprint, type EnglishGrade, type EnglishPaper } from "./blueprints";
 /** Only validated ADMIN-approved snapshots supply shared textbook extracts. */
 export function approvedModelSources(rows: { value: string }[], grade: EnglishGrade, paper: EnglishPaper) {
+  if (paper !== 1) return {};
   const keys = new Set(englishBlueprint(grade, paper).items.map(i => i.sourceGroup).filter(k => k && k !== "unseen"));
   const sources: Record<string, { text: string; reference: string }> = {};
   for (const row of rows) {

@@ -31,6 +31,7 @@ test("starter displays shared question type options and forwards the selected ty
     },
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,
+    '@/lib/english/topic-options': { englishLessonOptions: () => ({ topics: [], groups: [], notice: '' }), englishQuestionItemGroups: () => [] },
     "@/lib/english/builder-mode": { englishBuilderContext: () => null, englishBuilderHref: () => null },
     "@/lib/exam-preparation": load("lib/exam-preparation.ts"),
     "@/lib/job-syllabuses.json": require("../lib/job-syllabuses.json"),

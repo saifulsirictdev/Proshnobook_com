@@ -25,19 +25,21 @@ export default function EnglishSetup({
   initialPaper,
   initialMode = "full",
   initialItem = "",
+  initialItems,
 }: {
   initialGrade: number;
   initialPaper: 1 | 2;
   initialMode?: "full" | "selected";
   initialItem?: string;
+  initialItems?: string[];
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [grade, setGrade] = useState(initialGrade),
     [paper, setPaper] = useState<EnglishPaper>(initialPaper),
     [mode, setMode] = useState<"full" | "selected" | "writing">(initialMode),
-    [ids, setIds] = useState<string[]>(englishBlueprint(initialGrade as EnglishGrade, initialPaper).items.some(i => i.id === initialItem) ? [initialItem] : []),
-    [writing, setWriting] = useState<Record<string, WritingRequest>>(initialMode === "full" ? fullModelWriting(initialGrade as EnglishGrade, initialPaper) : {}),
+    [ids, setIds] = useState<string[]>(englishBlueprint(initialGrade as EnglishGrade, initialPaper).items.filter(i => (initialItems ?? [initialItem]).includes(i.id)).map(i => i.id)),
+    [writing, setWriting] = useState<Record<string, WritingRequest>>(initialPaper === 1 && initialMode === "full" ? fullModelWriting(initialGrade as EnglishGrade, initialPaper) : {}),
     [sources, setSources] = useState<
       Record<string, { text: string; reference: string }>
     >({}),
@@ -59,7 +61,7 @@ export default function EnglishSetup({
   const [loadingSources, setLoadingSources] = useState(false);
   const [sourceNotice, setSourceNotice] = useState("");
   useEffect(() => {
-    if (mode !== "full") { setLoadingSources(false); setSourceNotice(""); return; }
+    if (mode !== "full" || paper !== 1) { setLoadingSources(false); setSourceNotice(""); return; }
     let cancelled = false;
     setWriting(old => ({ ...fullModelWriting(grade as EnglishGrade, paper), ...old }));
     if (!englishBlueprint(grade as EnglishGrade, paper).items.some(i => i.sourceGroup && i.sourceGroup !== "unseen")) {
@@ -186,11 +188,11 @@ export default function EnglishSetup({
           }}
         >
           <option value="full">Full Model Test (printable)</option>
-          <option value="selected">Topic-wise (Selected Parts)</option>
+          <option value="selected">{paper === 1 ? "Topic-wise (Selected Parts)" : "Selected Parts"}</option>
           <option value="writing">Writing Only</option>
         </select>
       </label>
-      {mode === "full" && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
+      {mode === "full" && paper === 1 && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
         পূর্ণ {blueprint.total} নম্বরের সব অংশ নির্বাচিত। Writing topic স্বয়ংক্রিয়ভাবে বাছাই করা হয়েছে; চাইলে বদলাতে পারবেন।
         {sourceKeys.length > 0 ? " " + sourceNotice : " এই পত্রে textbook extract প্রয়োজন নেই।"}
         প্রযোজ্য syllabus ও template মিলিয়ে নিচের বোতামে পুরো paper তৈরি করুন। নির্বাচন করলেই কোনো AI request বা খরচ হবে না।

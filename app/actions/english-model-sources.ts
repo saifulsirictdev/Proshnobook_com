@@ -5,7 +5,7 @@ import { approvedModelSources } from "@/lib/english/model-sources";
 import type { EnglishGrade, EnglishPaper } from "@/lib/english/blueprints";
 export async function loadEnglishModelSources(grade: number, paper: number) {
   const user = (await auth())?.user;
-  if (!user?.id || user.role === "STUDENT" || !Number.isInteger(grade) || grade < 6 || grade > 12 || ![1, 2].includes(paper))
+  if (!user?.id || user.role === "STUDENT" || !Number.isInteger(grade) || grade < 6 || grade > 12 || paper !== 1)
     return { sources: {}, error: "লগইন ও শ্রেণি/পত্র যাচাই করুন।" };
   try {
     // Bounded read-only lookup. No private owner drafts, no approval mutation.

@@ -41,11 +41,12 @@ test('all sourced subjects have valid pages, unique topics and source-specific c
   assert.ok(data.exams[3].subjects.every(s => !s.marks));
 });
 function starter(examId, branchId, subject, topic = '') {
-  let states = ['Job', examId, branchId, 'CQ', subject, '', '', '', topic], i = 0, pushed;
+  let states = ['Job', examId, branchId, 'CQ', subject, '', '', '', '', topic], i = 0, pushed;
   const Start = load('components/qb-start.tsx', {
     react: { ...React, useState: () => [states[i++], () => {}], useMemo: fn => fn() },
     'next/navigation': { useRouter: () => ({ push: url => pushed = url }), useSearchParams: () => new URLSearchParams('append=1') },
     '@/lib/nctb-data': { NCTB_CLASSES: [] },
+    '@/lib/english/topic-options': { englishLessonOptions: () => ({ topics: [], groups: [], notice: '' }), englishQuestionItemGroups: () => [] },
     '@/lib/english/builder-mode': { englishBuilderContext: () => null, englishBuilderHref: () => null },
     '@/lib/exam-preparation': load('lib/exam-preparation.ts'),
     '@/lib/question-type-options': load('lib/question-type-options.ts'),
