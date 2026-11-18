@@ -1,0 +1,23 @@
+"""Lesson 10 language/history pool; treatment instructions quarantined."""
+import runpy
+from pathlib import Path
+h=runpy.run_path(str(Path(__file__).with_name('build-class6-english1-lessons4-7.py')))
+pack,mcqs,sa,vocab,writing,save=[h[k] for k in ['pack','mcqs','sa','vocab','writing','save']]
+p=pack(10,'Remedies: Modern and Traditional',list(range(33,37)),[
+ mcqs([
+ ('According to the opening paragraph of Section B, what are natural cures often made from?','Herbs and plants',['Only plastic','Only metal','Only paper'],34,'This describes the source’s terminology, not proof of treatment effectiveness.'),
+ ('Does Section B present herbal remedies as entirely new inventions?','No; it describes their use in earlier ages',['Yes; all began this year','Yes; no earlier people used them','It says history does not exist'],34,'The paragraph discusses ancient civilisations and practices passed down through generations.'),
+ ('Which civilisation is named in the historical paragraph?','Ancient Egypt',['A fictional moon colony','An unnamed future city','A modern space station'],34,'Egypt is one of the examples named, alongside India, China, Greece and Rome.'),
+ ('Who is talking to Mr Arman in Section D?','A pharmacist',['A pilot','An architect','A railway guard'],35,'The dialogue labels identify the speakers.'),
+ ('What does Mr Arman decide to buy in the dialogue?','The lotion',['A notebook','A suitcase','A calculator'],35,'He chooses the lotion and asks its price. This is a reading fact, not a product recommendation.')]),
+ sa([
+ ('What does the first paragraph of Section B say about the history of herbal medicines?','It says that people used herbal medicines in earlier ages and in several ancient civilisations.',34),
+ ('Name the five places listed as examples of ancient civilisations in the paragraph.','The paragraph lists India, China, Greece, Egypt and Rome.',34),
+ ('What does it mean that practices have come down through generations?','It means that people have passed those practices from one generation to the next.',34),
+ ('Does knowing that a remedy is traditional prove that it is safe for everyone?','No. The age or natural origin of a practice alone does not establish safety or effectiveness. A qualified health professional should guide treatment decisions.',34),
+ ('What information does Mr Arman ask for after choosing the lotion?','He asks how much it costs.',35)]),
+ vocab([('attitude','meaning in the opening paragraph',['a way of thinking or feeling about something'],34),('ancient','meaning',['belonging to the distant past'],34),('generations','meaning',['successive groups of people at different periods in a family or society'],34),('prescribe','meaning as a word, not an instruction',['formally recommend or order a medicine or treatment as a qualified practitioner'],34),('pharmacist','meaning',['a qualified professional who prepares or supplies medicines and advises on their safe use'],35)]),
+ writing('dialogue','Write a conversation asking a trusted adult for help when you feel unwell. Do not prescribe medicine or a home remedy.',[dict(speaker=s,text=t) for s,t in [('Child','I do not feel well. Could you help me?'),('Adult','Of course. Tell me what you are feeling.'),('Child','I have a headache, and I feel tired.'),('Adult','Thank you for telling me. We will arrange appropriate advice and care.'),('Child','Should I take something from the medicine cupboard?'),('Adult','Do not take medicine on your own. Let us ask a qualified health professional.'),('Child','All right. I will stay with you and explain if I feel worse.'),('Adult','Yes. You do not have to manage this alone.')]],'Original safety-oriented language model, not a diagnosis or treatment plan. Serious or worsening symptoms need prompt professional assessment.')],['Full printed lesson visually read, but this pool deliberately excludes remedy recipes, doses, brand recommendations and claims of guaranteed efficacy or no side effects.','Section E and treatment-oriented tasks require qualified clinical review before any educational reuse; no home-treatment answer key is generated.','The textbook natural/chemical split is not used as a scientific classification: natural substances also contain chemicals.','Question about safety is explicitly critical reading with a safety qualification, not a claimed quote from the textbook.'])
+p['safetyReview']={'status':'TREATMENT_INSTRUCTIONS_QUARANTINED','excludedPrintedPages':[33,34,35,36],'scope':'Treatment claims/recipes/medicine recommendations only; safe historical and lexical comprehension retained.','clinicalApproval':False}
+save([p])
+print('Lesson 10: limited safe history/language pool; treatment claims quarantined pending clinical review.')

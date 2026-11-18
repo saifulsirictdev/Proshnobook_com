@@ -1,0 +1,3656 @@
+{
+  "status": "REGISTERED_FOR_ADMIN_PENDING_IMPORT_NOT_DATABASE_RECEIPT",
+  "websiteImported": false,
+  "teacherApproved": false,
+  "category": "Class 6",
+  "subject": "English 1st Paper",
+  "lessonBatches": 33,
+  "counts": {
+    "MCQ": 96,
+    "SQ": 404
+  },
+  "storagePolicy": "MCQ for options; SQ is the existing unstructured written-question storage for English answers, vocabulary and writing. Not an assertion of official short-answer marks. No CQ conversion or per-item marks invented.",
+  "limitations": [
+    "Source textbook is required for source-dependent reading/poem/picture tasks; these are not standalone seen passages.",
+    "Actual audio is not supplied and no listening assessment is asserted.",
+    "Full model and original unseen packs are excluded: Class 6 catalog has only lesson topics, not an authorised model/unseen category.",
+    "Teacher review and explicit ADMIN save remain required. Registration/deployment is not a database import or approval."
+  ],
+  "entries": [
+    {
+      "lesson": 1,
+      "file": "import/lesson-01.json",
+      "sourceFile": "lesson-01-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 20
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "gaps",
+          "kind": "seen-contextual-gap",
+          "page": "Printed 1–2 / PDF 6–7"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 1 / PDF 6"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 2 / PDF 7"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 3 / PDF 8"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 1, 2, 3"
+        }
+      ],
+      "limitations": [
+        "Teacher review pending; official circular applicability not independently confirmed.",
+        "Mixed source sections must not be presented as one passage-dependent exam block.",
+        "No invented cause for Tarun's move, school name from an unclear illustration, or geographical location is tested.",
+        "This is not 100 MCQ/30 CQ/30 SQ completion and does not enter prepared-library totals."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          1,
+          2,
+          3
+        ],
+        "pdfPages": [
+          6,
+          7,
+          8
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 2,
+      "file": "import/lesson-02.json",
+      "sourceFile": "lesson-02-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 18
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 4 / PDF 9"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 6 / PDF 11"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 5 / PDF 10"
+        },
+        {
+          "activity": "responses",
+          "kind": "functional-language",
+          "page": "Language Focus and B2, printed 5–6 / PDF 10–11"
+        },
+        {
+          "activity": "responses",
+          "kind": "functional-language",
+          "page": "Language Focus and B2, printed 5–6 / PDF 10–11"
+        },
+        {
+          "activity": "responses",
+          "kind": "functional-language",
+          "page": "Language Focus and B2, printed 5–6 / PDF 10–11"
+        },
+        {
+          "activity": "responses",
+          "kind": "functional-language",
+          "page": "Language Focus and B2, printed 5–6 / PDF 10–11"
+        },
+        {
+          "activity": "responses",
+          "kind": "functional-language",
+          "page": "Language Focus and B2, printed 5–6 / PDF 10–11"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 4, 5, 6"
+        }
+      ],
+      "limitations": [
+        "Teacher review pending; this is a lesson pool rather than a full marked model test.",
+        "No poem appears in this lesson; no poem questions are padded into this pool.",
+        "Separate dialogue contexts must remain labelled when assembling exams.",
+        "The textbook describes a usual response to bad news, not a prohibition on speaking. Suitable supportive replies are accepted.",
+        "Practice is not exhaustive chapter-quota completion or website registration."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          4,
+          5,
+          6
+        ],
+        "pdfPages": [
+          9,
+          10,
+          11
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 3,
+      "file": "import/lesson-03.json",
+      "sourceFile": "lesson-03-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 13
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 7 / PDF 12"
+        },
+        {
+          "activity": "summary",
+          "kind": "seen-summary-practice",
+          "page": "Printed 7, 8"
+        },
+        {
+          "activity": "picture",
+          "kind": "picture-description",
+          "page": "Printed 7, 8"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 7, 8"
+        }
+      ],
+      "limitations": [
+        "Draft initial pool, not exhaustive quota completion or a full model test.",
+        "Teacher review and registration pending.",
+        "No departure city, train name, timetable or narrator name is supplied in the passage; none is invented.",
+        "No poem in this lesson; no poem tasks added."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          7,
+          8
+        ],
+        "pdfPages": [
+          12,
+          13
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 4,
+      "file": "import/lesson-04.json",
+      "sourceFile": "lesson-04-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 13
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 12 / PDF 15"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 12 / PDF 15"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 9, 10, 11, 12"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Reading dialogue does not assess listening or pronunciation; those need teacher-led oral practice.",
+        "The boy’s reason for crying remains uncertain; do not convert a guess into fact."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "pdfPages": [
+          14,
+          17,
+          16,
+          15
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 5,
+      "file": "import/lesson-05.json",
+      "sourceFile": "lesson-05-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 16
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 14 / PDF 18"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 15 / PDF 20"
+        },
+        {
+          "activity": "verb-forms",
+          "kind": "language-practice",
+          "page": "Printed 16 / PDF 22"
+        },
+        {
+          "activity": "verb-forms",
+          "kind": "language-practice",
+          "page": "Printed 16 / PDF 22"
+        },
+        {
+          "activity": "verb-forms",
+          "kind": "language-practice",
+          "page": "Printed 16 / PDF 22"
+        },
+        {
+          "activity": "verb-forms",
+          "kind": "language-practice",
+          "page": "Printed 16 / PDF 22"
+        },
+        {
+          "activity": "verb-forms",
+          "kind": "language-practice",
+          "page": "Printed 16 / PDF 22"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 13, 14, 15, 16"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Respect workers’ dignity and the need for safe working conditions; do not blame illness or encourage unsafe waste handling.",
+        "The sample exam repeats the Bulbul source; these newly authored items are lesson practice, not a copied sample paper."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "pdfPages": [
+          19,
+          18,
+          20,
+          22
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 6,
+      "file": "import/lesson-06.json",
+      "sourceFile": "lesson-06-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 16
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 17 / PDF 21"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "verb-choice",
+          "kind": "language-practice",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "verb-choice",
+          "kind": "language-practice",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "verb-choice",
+          "kind": "language-practice",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "verb-choice",
+          "kind": "language-practice",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "verb-choice",
+          "kind": "language-practice",
+          "page": "Printed 18 / PDF 23"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 17, 18"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Saturday school opening and the father’s holidays are story facts, not a statement about every current school calendar.",
+        "For verb choice, refer to the current activity versus a state; do not claim every verb is always excluded from continuous forms."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          17,
+          18
+        ],
+        "pdfPages": [
+          21,
+          23
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 7,
+      "file": "import/lesson-07.json",
+      "sourceFile": "lesson-07-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 14
+      },
+      "references": [
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 19 / PDF 24"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 20 / PDF 25"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 20 / PDF 25"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 20 / PDF 25"
+        },
+        {
+          "activity": "sentences",
+          "kind": "sentences-writing",
+          "page": "Printed 19, 20"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "This lesson has poetry and wordplay, not a prose passage padded into seven MCQ.",
+        "These eight questions form a lesson pool, not eight compulsory exam responses. The textbook sample asks any five of eight offered poem questions.",
+        "Interpretations need textual support; the poem does not explicitly state a moral about human friendship or animal-training welfare.",
+        "No full poem reproduced."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          19,
+          20
+        ],
+        "pdfPages": [
+          24,
+          25
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 8,
+      "file": "import/lesson-08.json",
+      "sourceFile": "lesson-08-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 21
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 21 / PDF 26"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 21 / PDF 26"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 22 / PDF 27"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 21 and 23 / PDF 26 and 28"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 24 / PDF 30"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 21 / PDF 26"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 21 / PDF 26"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 22 / PDF 27"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 24 / PDF 30"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 25 / PDF 29"
+        },
+        {
+          "activity": "quantity-reading",
+          "kind": "source-information",
+          "page": "Printed 21 / PDF 26"
+        },
+        {
+          "activity": "quantity-reading",
+          "kind": "source-information",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "quantity-reading",
+          "kind": "source-information",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "quantity-reading",
+          "kind": "source-information",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "quantity-reading",
+          "kind": "source-information",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 27 / PDF 31"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 27 / PDF 31"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 27 / PDF 31"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 23 / PDF 28"
+        },
+        {
+          "activity": "language-use",
+          "kind": "functional-language",
+          "page": "Printed 25 / PDF 29"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 21, 22, 23, 24, 25, 26, 27"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Section A and B disagree on potato quantity and B adds salt. Do not silently merge or correct the book.",
+        "Language Focus simplifies some/any. Requests and offers can use some; do not mark all question uses of some wrong.",
+        "Illustrated classroom-market prices are sample prices, not current prices."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "pdfPages": [
+          26,
+          27,
+          28,
+          30,
+          29,
+          32,
+          31
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 9,
+      "file": "import/lesson-09.json",
+      "sourceFile": "lesson-09-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 32 / PDF 37"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 32 / PDF 37"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 32 / PDF 37"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 30 / PDF 35"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 31 / PDF 36"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 32 / PDF 37"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 28, 29, 30, 31, 32"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Medical-advice matching on printed 29–30 is excluded from the question pool pending qualified clinical review. Textbook drug/brand examples are not endorsed or repeated as treatment instructions.",
+        "Audio for Section F was not supplied; do not manufacture an exact listening answer key. F2 is complete printed reading and can be assessed.",
+        "Health language is taught respectfully; do not imply that disability, chronic illness or anxiety reflects bad character or inadequate hygiene."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "pdfPages": [
+          34,
+          33,
+          35,
+          36,
+          37
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 10,
+      "file": "import/lesson-10.json",
+      "sourceFile": "lesson-10-source-draft.json",
+      "counts": {
+        "MCQ": 5,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 35 / PDF 40"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 35 / PDF 40"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 35 / PDF 40"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 34 / PDF 39"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 35 / PDF 40"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 33, 34, 35, 36"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Full printed lesson visually read, but this pool deliberately excludes remedy recipes, doses, brand recommendations and claims of guaranteed efficacy or no side effects.",
+        "Section E and treatment-oriented tasks require qualified clinical review before any educational reuse; no home-treatment answer key is generated.",
+        "The textbook natural/chemical split is not used as a scientific classification: natural substances also contain chemicals.",
+        "Question about safety is explicitly critical reading with a safety qualification, not a claimed quote from the textbook."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          33,
+          34,
+          35,
+          36
+        ],
+        "pdfPages": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 11,
+      "file": "import/lesson-11.json",
+      "sourceFile": "lesson-11-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "word-forms",
+          "kind": "printed-language-practice",
+          "page": "Printed 38 / PDF 45"
+        },
+        {
+          "activity": "word-forms",
+          "kind": "printed-language-practice",
+          "page": "Printed 38 / PDF 45"
+        },
+        {
+          "activity": "word-forms",
+          "kind": "printed-language-practice",
+          "page": "Printed 38 / PDF 45"
+        },
+        {
+          "activity": "word-forms",
+          "kind": "printed-language-practice",
+          "page": "Printed 38 / PDF 45"
+        },
+        {
+          "activity": "word-forms",
+          "kind": "printed-language-practice",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 37 / PDF 42"
+        },
+        {
+          "activity": "sentences",
+          "kind": "sentences-writing",
+          "page": "Printed 37, 38"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Complete printed lesson read, but original audio not supplied. No exact listening key or speech-performance claim.",
+        "This is printed-language preparation, not a seen prose passage or full pronunciation assessment."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          37,
+          38
+        ],
+        "pdfPages": [
+          42,
+          45
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 12,
+      "file": "import/lesson-12.json",
+      "sourceFile": "lesson-12-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 39 / PDF 43"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 39 / PDF 43"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 39 / PDF 43"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 39 / PDF 43"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 40 / PDF 46"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 41 / PDF 44"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 41 / PDF 44"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 41 / PDF 44"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 41 / PDF 44"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 41 / PDF 44"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 39, 40, 41"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Use the passage’s spellings and named groups as reading evidence, not an independent ethnographic classification.",
+        "Travel time, routes, river names/conditions and distance are textbook statements, not current travel guarantees."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          39,
+          40,
+          41
+        ],
+        "pdfPages": [
+          43,
+          46,
+          44
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 13,
+      "file": "import/lesson-13.json",
+      "sourceFile": "lesson-13-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 42 / PDF 47"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 43 / PDF 49"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 45 / PDF 48"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 45 / PDF 48"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 42, 43, 44, 45"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Printed passage loosely calls 16 December the day independence was gained. Questions use Victory Day/victory and do not equate it with Independence Day on 26 March.",
+        "Listening blanks on printed 43–44 require an actual recording or verified teacher script; no guessed exact key is supplied.",
+        "Ceremonial arrangements are passage-specific, not guaranteed current schedules."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          42,
+          43,
+          44,
+          45
+        ],
+        "pdfPages": [
+          47,
+          49,
+          50,
+          48
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 14,
+      "file": "import/lesson-14.json",
+      "sourceFile": "lesson-14-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 46 / PDF 51"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 46 / PDF 51"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 46 / PDF 51"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 48 / PDF 53"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 47 / PDF 52"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 46, 47, 48"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Full story and exercises read. No factual MCQ asks pupils to accept talking animals as real behaviour.",
+        "Opinion responses should be assessed for reasoning and evidence, not mandatory agreement."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          46,
+          47,
+          48
+        ],
+        "pdfPages": [
+          51,
+          52,
+          53
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 15,
+      "file": "import/lesson-15.json",
+      "sourceFile": "lesson-15-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 51 / PDF 56"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 51 / PDF 56"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 50 / PDF 55"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 50 / PDF 55"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 51 / PDF 56"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 49 / PDF 54"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 50 / PDF 55"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 50 / PDF 55"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 50 / PDF 55"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 51 / PDF 56"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 49, 50, 51"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Section A places the family in Rajshahi, while the sample letter carries a Dhaka address. These are preserved as a source inconsistency; no question silently merges the locations.",
+        "Some older people need support, not all. Assess respectful wording and agency.",
+        "A planned home is not an existing institution; no operational claim is made."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          49,
+          50,
+          51
+        ],
+        "pdfPages": [
+          54,
+          55,
+          56
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 16,
+      "file": "import/lesson-16.json",
+      "sourceFile": "lesson-16-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 14
+      },
+      "references": [
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 52 / PDF 57"
+        },
+        {
+          "activity": "sentences",
+          "kind": "sentences-writing",
+          "page": "Printed 52"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "No whole poem reproduced. Eight offered practice questions are not eight compulsory answers in a model test.",
+        "The sample paper paraphrases the rainbow idea differently. These questions follow the actual poem, not an invented claim that humans try to build in heaven."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          52
+        ],
+        "pdfPages": [
+          57
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 17,
+      "file": "import/lesson-17.json",
+      "sourceFile": "lesson-17-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 14
+      },
+      "references": [
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 54 / PDF 59"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 53 / PDF 58"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 55 / PDF 60"
+        },
+        {
+          "activity": "sentences",
+          "kind": "sentences-writing",
+          "page": "Printed 53, 54, 55"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Full printed abridgement read; no full poem reproduced.",
+        "No listening audio supplied; printed word-contrast practice is not a listening test.",
+        "Some poetic rhyme claims depend on accent. Do not enforce every printed rhyme assertion as universal pronunciation."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          53,
+          54,
+          55
+        ],
+        "pdfPages": [
+          58,
+          59,
+          60
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 18,
+      "file": "import/lesson-18.json",
+      "sourceFile": "lesson-18-source-draft.json",
+      "counts": {
+        "MCQ": 7,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 57 / PDF 62"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 59 / PDF 64"
+        },
+        {
+          "activity": "mcq",
+          "kind": "seen-mcq",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 57 / PDF 62"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 59 / PDF 64"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 56 / PDF 61"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 58 / PDF 63"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 59 / PDF 64"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 56, 57, 58, 59"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Instruction comprehension is not permission for pupils to use sharp knives, a stove or hot oil unsupervised.",
+        "Do not use textbook timing or the four-egg example as a nutrition recommendation or food-safety guarantee.",
+        "No practical cooking exam is claimed."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "pdfPages": [
+          61,
+          62,
+          63,
+          64
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 19,
+      "file": "import/lesson-19.json",
+      "sourceFile": "lesson-19-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 9
+      },
+      "references": [
+        {
+          "activity": "verse-answers",
+          "kind": "textbook-verse-answers",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "verse-answers",
+          "kind": "textbook-verse-answers",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "verse-answers",
+          "kind": "textbook-verse-answers",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "verse-answers",
+          "kind": "textbook-verse-answers",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "verse-answers",
+          "kind": "textbook-verse-answers",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 60 / PDF 65"
+        },
+        {
+          "activity": "paragraph",
+          "kind": "paragraph-writing",
+          "page": "Printed 60"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Section B is a gapped listening passage with no supplied audio. Its exact missing words and narrative details are not reconstructed.",
+        "The short verse is not a complete road-crossing safety procedure. Children should use safe crossings and responsible guidance.",
+        "No author is credited on the printed page; no authorship is invented."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          60
+        ],
+        "pdfPages": [
+          65
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 20,
+      "file": "import/lesson-20.json",
+      "sourceFile": "lesson-20-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 61 / PDF 67"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 61 / PDF 67"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 61 / PDF 67"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 62 / PDF 66"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 62 / PDF 66"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 61 / PDF 67"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 61 / PDF 67"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 62 / PDF 66"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 62 / PDF 66"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 62 / PDF 66"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Biographical dates, song totals and title spellings are passage-based reading answers, not independently verified historical research.",
+        "Mystic beliefs are described respectfully as beliefs in the source, not imposed on pupils."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          61,
+          62
+        ],
+        "pdfPages": [
+          67,
+          66
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 21,
+      "file": "import/lesson-21.json",
+      "sourceFile": "lesson-21-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 64 / PDF 69"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 63 / PDF 68"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 64 / PDF 69"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Pyramid audio gap answers are not reconstructed without audio.",
+        "The stated Taj Mahal area and Eiffel Tower height/rank are questionable or time-sensitive; excluded from assessed factual questions. Remaining historical statements are attributed to the passage."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          63,
+          64
+        ],
+        "pdfPages": [
+          68,
+          69
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 22,
+      "file": "import/lesson-22.json",
+      "sourceFile": "lesson-22-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 65 / PDF 70"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 65 / PDF 70"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 65 / PDF 70"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 66 / PDF 71"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 66 / PDF 71"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 65 / PDF 70"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 65 / PDF 70"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 66 / PDF 71"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 66 / PDF 71"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 67 / PDF 72"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Do not imply humans have landed on Mars; robotic exploration and human travel are different. The passage’s space-travel claims need scientific qualification.",
+        "Technology can assist communication but does not guarantee freedom from loneliness or universal low-cost access."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          65,
+          66,
+          67
+        ],
+        "pdfPages": [
+          70,
+          71,
+          72
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 23,
+      "file": "import/lesson-23.json",
+      "sourceFile": "lesson-23-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 68 / PDF 73"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 69 / PDF 74"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 68 / PDF 73"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "The introduction says US Peacekeeping Mission while the pictures and context suggest UN; mission abbreviation is excluded from scored questions and not silently corrected.",
+        "Section C audio gaps are not reconstructed. This is a source letter, not verified current operational reporting."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          68,
+          69,
+          70
+        ],
+        "pdfPages": [
+          73,
+          74,
+          75
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 24,
+      "file": "import/lesson-24.json",
+      "sourceFile": "lesson-24-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 72 / PDF 78"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 72 / PDF 78"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 71 / PDF 76"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 73 / PDF 77"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Destination demand, wages, visa requirements and climate are not verified current guidance. No promised jobs/pay.",
+        "Language barriers are one issue discussed, not a justification for exploitation or a claim that workers are to blame for unfair treatment."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          71,
+          72,
+          73,
+          74
+        ],
+        "pdfPages": [
+          76,
+          78,
+          77,
+          79
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 25,
+      "file": "import/lesson-25.json",
+      "sourceFile": "lesson-25-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 75 / PDF 80"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 75 / PDF 80"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 76 / PDF 81"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 76 / PDF 81"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 77 / PDF 82"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 75 / PDF 80"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 76 / PDF 81"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 76 / PDF 81"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 76 / PDF 81"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 77 / PDF 82"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Questions use the source dialogue and song interpretation; no song lyrics are reproduced in the answer paper.",
+        "Attendance, fundraising totals and award history need historical checking before broader factual publication."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          75,
+          76,
+          77
+        ],
+        "pdfPages": [
+          80,
+          81,
+          82
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 26,
+      "file": "import/lesson-26.json",
+      "sourceFile": "lesson-26-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 79 / PDF 85"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 79 / PDF 85"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 79 / PDF 85"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 79 / PDF 85"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 79 / PDF 85"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 80 / PDF 86"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 81 / PDF 87"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 82 / PDF 84"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 82 / PDF 84"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 82 / PDF 84"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Story price is not current market pricing; personal size/style choices do not justify body shaming.",
+        "Section C’s polo shirt and Section D’s other clothing choices are distinct dialogue units."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          78,
+          79,
+          80,
+          81,
+          82
+        ],
+        "pdfPages": [
+          83,
+          85,
+          86,
+          87,
+          84
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 27,
+      "file": "import/lesson-27.json",
+      "sourceFile": "lesson-27-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 13
+      },
+      "references": [
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "poem",
+          "kind": "textbook-poem-answers",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 83 / PDF 88"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 83 / PDF 88"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Dream speaker is not automatically the poet’s own biography. No invented external story about André.",
+        "Theme describes this speaker’s experience; do not prescribe feelings for pupils from unsafe homes or different family arrangements."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          83
+        ],
+        "pdfPages": [
+          88
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 28,
+      "file": "import/lesson-28.json",
+      "sourceFile": "lesson-28-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 84 / PDF 92"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 84 / PDF 92"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 85 / PDF 91"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 85 / PDF 91"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 84 / PDF 92"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 85 / PDF 91"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 85 / PDF 91"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 85 / PDF 91"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 84 / PDF 92"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 84 / PDF 92"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Complete printed lesson read; no actual audio supplied and no claim of assessed oral performance.",
+        "Tea/stove references in the source are not directions for pupils to handle hot equipment unsupervised."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          84,
+          85
+        ],
+        "pdfPages": [
+          92,
+          91
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 29,
+      "file": "import/lesson-29.json",
+      "sourceFile": "lesson-29-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 87 / PDF 94"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 86 / PDF 93"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 87 / PDF 94"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 87 / PDF 94"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 87 / PDF 94"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "The story’s one-hour restriction is not a rule for all exams. Accessibility needs and real examination arrangements must be handled by responsible staff.",
+        "The textbook’s signs are read as source examples, not a full road-safety course."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          86,
+          87
+        ],
+        "pdfPages": [
+          93,
+          94
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 30,
+      "file": "import/lesson-30.json",
+      "sourceFile": "lesson-30-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 89 / PDF 89"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 88 / PDF 90"
+        },
+        {
+          "activity": "dialogue",
+          "kind": "dialogue-writing",
+          "page": "Printed 88, 89"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "No final destination is invented. Travel suggestions are story choices, not present safety or access advice."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          88,
+          89
+        ],
+        "pdfPages": [
+          90,
+          89
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 31,
+      "file": "import/lesson-31.json",
+      "sourceFile": "lesson-31-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 10
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 90 / PDF 95"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 90 / PDF 95"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 91 / PDF 97"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 91 / PDF 97"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 91 / PDF 97"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 90 / PDF 95"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 90 / PDF 95"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 90 / PDF 95"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 91 / PDF 97"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 91 / PDF 97"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Flood/drought reading is not an emergency plan. No instruction to pupils to enter floodwater or undertake rescue work.",
+        "Picture-based applications should allow different accurate descriptions without inventing exact locations."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          90,
+          91
+        ],
+        "pdfPages": [
+          95,
+          97
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 32,
+      "file": "import/lesson-32.json",
+      "sourceFile": "lesson-32-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 11
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 93 / PDF 98"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 92 / PDF 96"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 93 / PDF 98"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 93 / PDF 98"
+        },
+        {
+          "activity": "letter",
+          "kind": "letter-writing",
+          "page": "Printed 92, 93"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Source invitation is dated 10 June 2025 but the later thank-you letter 15 April 2025. Chronology is inconsistent; dates are excluded from factual sequencing tests.",
+        "Bus travel is implied by reception at the bus station, not explicitly narrated. No unsupervised child-travel advice."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          92,
+          93
+        ],
+        "pdfPages": [
+          96,
+          98
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    },
+    {
+      "lesson": 33,
+      "file": "import/lesson-33.json",
+      "sourceFile": "lesson-33-source-draft.json",
+      "counts": {
+        "MCQ": 0,
+        "SQ": 13
+      },
+      "references": [
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 94 / PDF 99"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 94 / PDF 99"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 94 / PDF 99"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 95 / PDF 100"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 96 / PDF 102"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 97 / PDF 101"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 98 / PDF 103"
+        },
+        {
+          "activity": "short-answers",
+          "kind": "seen-short-answer",
+          "page": "Printed 99 / PDF 105"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 100 / PDF 104"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 100 / PDF 104"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 100 / PDF 104"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 100 / PDF 104"
+        },
+        {
+          "activity": "vocabulary",
+          "kind": "seen-vocabulary",
+          "page": "Printed 100 / PDF 104"
+        }
+      ],
+      "limitations": [
+        "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+        "Teacher review, Drive backup and website registration are separate steps.",
+        "Story events and seeds’ imagined fear are not botanical fact. No guarantee that music or reading causes germination.",
+        "Full story and punctuation exercises visually read; no full copyrighted story reproduced."
+      ],
+      "source": {
+        "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+        "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+        "edition": "Revised for the year 2026; revised edition October 2025",
+        "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+        "printedPages": [
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "pdfPages": [
+          99,
+          100,
+          102,
+          101,
+          103,
+          105,
+          104
+        ],
+        "completeLessonVisuallyRead": true
+      }
+    }
+  ]
+}

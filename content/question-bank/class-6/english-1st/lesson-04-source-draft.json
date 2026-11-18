@@ -1,0 +1,283 @@
+{
+  "id": "class6-english1-lesson04-source-draft-v1",
+  "category": "Class 6",
+  "subject": "English 1st Paper",
+  "topic": "Lesson-04: Where Are You From?",
+  "status": "SOURCE_READ_LESSON_DRAFT_NOT_REGISTERED",
+  "teacherApproved": false,
+  "fullModelTest": false,
+  "source": {
+    "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+    "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+    "edition": "Revised for the year 2026; revised edition October 2025",
+    "sha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+    "printedPages": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "pdfPages": [
+      14,
+      17,
+      16,
+      15
+    ],
+    "completeLessonVisuallyRead": true
+  },
+  "passagePolicy": "Use the specifically cited source section in the NCTB textbook. Full textbook passages and images are not reproduced. Original writing models are not source facts.",
+  "activities": [
+    {
+      "id": "mcq",
+      "kind": "seen-mcq",
+      "marks": null,
+      "instruction": "Read the cited source section and choose the best answer. Different dialogues are separate source units.",
+      "items": [
+        {
+          "question": "Why could Akash not hear the stranger’s name?",
+          "options": {
+            "A": "There was noise around them",
+            "B": "He had left the fair",
+            "C": "The stranger refused to speak",
+            "D": "Mamun had forgotten the name"
+          },
+          "answer": "A",
+          "page": "Printed 9 / PDF 14",
+          "explanation": "The introductory situation explicitly mentions noise at the book fair."
+        },
+        {
+          "question": "Where is James Collins from?",
+          "options": {
+            "A": "Australia",
+            "B": "England",
+            "C": "Bangladesh",
+            "D": "Canada"
+          },
+          "answer": "B",
+          "page": "Printed 9 / PDF 14",
+          "explanation": "James gives England as his place of origin."
+        },
+        {
+          "question": "Where is Robert Smith coming from on his current journey?",
+          "options": {
+            "A": "Sydney",
+            "B": "Dhaka",
+            "C": "London",
+            "D": "Sylhet"
+          },
+          "answer": "C",
+          "page": "Printed 10 / PDF 17",
+          "explanation": "The officer distinguishes origin (Australia) from the place of immediate departure (London)."
+        },
+        {
+          "question": "Why is Sajed now in Khulna?",
+          "options": {
+            "A": "He went to meet James",
+            "B": "He is visiting a book fair",
+            "C": "He is designing a school",
+            "D": "His father was transferred there"
+          },
+          "answer": "D",
+          "page": "Printed 10 / PDF 17",
+          "explanation": "Sajed explains that his father’s transfer is why he is there."
+        },
+        {
+          "question": "What is Ruma’s profession?",
+          "options": {
+            "A": "An architect",
+            "B": "A librarian",
+            "C": "A doctor",
+            "D": "A pilot"
+          },
+          "answer": "A",
+          "page": "Printed 11 / PDF 16",
+          "explanation": "Mamun names her profession before describing her current project."
+        },
+        {
+          "question": "What is Ruma designing at the moment?",
+          "options": {
+            "A": "A railway station",
+            "B": "A school building",
+            "C": "A new airport",
+            "D": "A library catalogue"
+          },
+          "answer": "B",
+          "page": "Printed 11 / PDF 16",
+          "explanation": "The present project is a school on the outskirts of Dhaka."
+        },
+        {
+          "question": "What does the neighbour’s little boy’s mother do?",
+          "options": {
+            "A": "She designs airports",
+            "B": "She studies with Sajed",
+            "C": "She works part-time at the Town Hall Library",
+            "D": "She flies planes"
+          },
+          "answer": "C",
+          "page": "Printed 11 / PDF 16",
+          "explanation": "Mary identifies the mother’s work; this does not prove the reason for the crying."
+        }
+      ]
+    },
+    {
+      "id": "short-answers",
+      "kind": "seen-short-answer",
+      "marks": null,
+      "instruction": "Answer using the cited text. Equivalent accurate wording is acceptable; support interpretations with details.",
+      "items": [
+        {
+          "question": "How can Akash politely ask for a name he did not hear?",
+          "modelAnswer": "He can apologise and say, “I’m sorry, I couldn’t catch your name.”",
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "question": "Explain the difference between Robert’s answers Australia and London.",
+          "modelAnswer": "Australia identifies where he comes from; London is where he is coming from on this journey.",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "question": "How does Joy welcome Sajed?",
+          "modelAnswer": "Joy says that he is sure Sajed will like Khulna and the school, and tells him that they are already friends.",
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "question": "How is Ruma’s current work different from her usual work?",
+          "modelAnswer": "She usually designs offices and shopping complexes. At the moment she is designing a school building.",
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "question": "Is the reason for the little boy’s crying certain? Explain.",
+          "modelAnswer": "No. Rabeya suggests he may be hungry, while Mary suggests he may be crying for his mother. Both are guesses.",
+          "page": "Printed 11 / PDF 16"
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "kind": "seen-vocabulary",
+      "marks": null,
+      "instruction": "Explain the word in the cited context, or give the requested alternative meaning. Accept suitable equivalent wording.",
+      "items": [
+        {
+          "word": "catch",
+          "request": "meaning when hearing a name",
+          "acceptedAnswers": [
+            "hear and understand"
+          ],
+          "page": "Printed 9 / PDF 14"
+        },
+        {
+          "word": "transferred",
+          "request": "meaning in Sajed’s explanation",
+          "acceptedAnswers": [
+            "moved to another work location"
+          ],
+          "page": "Printed 10 / PDF 17"
+        },
+        {
+          "word": "architect",
+          "request": "meaning",
+          "acceptedAnswers": [
+            "a person who designs buildings"
+          ],
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "word": "outskirts",
+          "request": "meaning",
+          "acceptedAnswers": [
+            "outer parts of a town or city"
+          ],
+          "page": "Printed 11 / PDF 16"
+        },
+        {
+          "word": "profession",
+          "request": "meaning",
+          "acceptedAnswers": [
+            "occupation",
+            "type of work"
+          ],
+          "page": "Printed 12 / PDF 15"
+        }
+      ]
+    },
+    {
+      "id": "language-use",
+      "kind": "functional-language",
+      "marks": null,
+      "instruction": "Answer using the cited text. Equivalent accurate wording is acceptable; support interpretations with details.",
+      "items": [
+        {
+          "question": "What is the difference between asking what someone does and what someone is doing?",
+          "modelAnswer": "“What do you do?” asks about a profession or usual work in this context. “What are you doing?” asks about the activity at the moment or around that time.",
+          "page": "Printed 12 / PDF 15"
+        },
+        {
+          "question": "How could Joy ask about Sajed’s place of origin in another way?",
+          "modelAnswer": "He could ask, “Where are you from, Sajed?”",
+          "page": "Printed 10 / PDF 17"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "kind": "dialogue-writing",
+      "marks": null,
+      "instruction": "Imagine a friend introduces you to a new person at a noisy bus station. Write a short conversation, including a polite request to repeat the name.",
+      "modelAnswer": [
+        {
+          "speaker": "Rafi",
+          "text": "Mina, this is my friend Karim."
+        },
+        {
+          "speaker": "Mina",
+          "text": "Hello. I’m sorry, I couldn’t hear your name because of the noise."
+        },
+        {
+          "speaker": "Karim",
+          "text": "My name is Karim. Nice to meet you."
+        },
+        {
+          "speaker": "Mina",
+          "text": "Nice to meet you too. Where are you from?"
+        },
+        {
+          "speaker": "Karim",
+          "text": "I’m from Rajshahi. How about you?"
+        },
+        {
+          "speaker": "Mina",
+          "text": "I’m from Sylhet. Are you travelling today?"
+        },
+        {
+          "speaker": "Karim",
+          "text": "Yes, I’m waiting here with my family."
+        },
+        {
+          "speaker": "Rafi",
+          "text": "Let’s move away from the crowd so we can talk more easily."
+        }
+      ],
+      "note": "Original practice characters and travel details, not a continuation claimed from the textbook. No official turn limit is asserted.",
+      "assessment": [
+        "Addresses the task with relevant details",
+        "Uses a clear sequence and connected sentences",
+        "Uses suitable vocabulary and comprehensible grammar",
+        "Accept original accurate responses; do not require memorisation"
+      ]
+    }
+  ],
+  "limitations": [
+    "Initial Draft pool, not exhaustive chapter quotas or a complete model paper.",
+    "Teacher review, Drive backup and website registration are separate steps.",
+    "Reading dialogue does not assess listening or pronunciation; those need teacher-led oral practice.",
+    "The boy’s reason for crying remains uncertain; do not convert a guess into fact."
+  ],
+  "counts": {
+    "mcq": 7,
+    "short-answers": 5,
+    "vocabulary": 5,
+    "language-use": 2,
+    "dialogue": 1
+  }
+}
