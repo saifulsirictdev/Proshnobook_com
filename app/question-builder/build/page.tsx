@@ -19,7 +19,7 @@ export default async function BuildPage({
     if (englishKey.length > 250) notFound();
     const draft = await loadEnglishPaper(englishKey);
     if (!draft) notFound();
-    return <EnglishEditor draftKey={englishKey} initial={draft} reviewFirst={stage === "review" && draft.selection.paper === 1 && draft.selection.mode === "full"} />;
+    return <EnglishEditor draftKey={englishKey} initial={draft} reviewFirst={stage === "review" && draft.selection.mode === "full"} />;
   }
   const site = await getSite();
   const support = site.social.find((s) => s.name === "WhatsApp")?.url;

@@ -137,7 +137,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
 
   function go() {
     if (english && !append) {
-      const href = englishBuilderHref(category, subject, englishMode, englishTopic, englishTopicKind);
+      const href = englishBuilderHref(category, subject, englishMode, englishTopic, english.paper === 2 ? "item" : englishTopicKind);
       if (href) router.push(href);
       return;
     }
@@ -265,12 +265,12 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
             onChange={e => { setEnglishMode(e.target.value); setEnglishTopic(""); setEnglishTopicKind(""); }}>
             <option value="">— ধরন নির্বাচন করুন —</option>
-            <option value="topic">Topic-wise</option>
-            <option value="full">Full Model Test</option>
+            <option value="topic">{english.paper === 2 ? "Question item" : "Topic-wise"}</option>
+            <option value="full">{english.paper === 2 ? "Auto model test" : "Full Model Test"}</option>
           </select>
         </label>
         {englishMode === "topic" && <>
-          <label className="block text-sm font-semibold">Topic-এর ধরন
+          {english.paper === 1 && <label className="block text-sm font-semibold">Topic-এর ধরন
             <select aria-label="English topic type" value={englishTopicKind}
               className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
               onChange={e => { setEnglishTopicKind(e.target.value); setEnglishTopic(""); }}>
@@ -278,8 +278,8 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
               <option value="lesson">Lesson</option>
               <option value="item">Question item</option>
             </select>
-          </label>
-          {englishTopicKind === "lesson" && <>
+          </label>}
+          {english.paper === 1 && englishTopicKind === "lesson" && <>
             <label className="block text-sm font-semibold">Lesson / আগের topic
               <select aria-label="English lesson" value={englishTopic} onChange={e => setEnglishTopic(e.target.value)}
                 className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm">
@@ -292,7 +292,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             {englishLessons?.notice && <p role="status" className="rounded bg-amber-50 p-3 text-sm">{englishLessons.notice}</p>}
             <p className="text-sm text-slate-600">নির্বাচিত lesson/topic-এর উপলব্ধ প্রশ্নভান্ডার খুলবে। প্রশ্ন না থাকলে খালি দেখাবে; অনুমোদন ছাড়া Draft প্রকাশ বা বানানো seen passage যোগ হবে না।</p>
           </>}
-          {englishTopicKind === "item" && <label className="block text-sm font-semibold">Question item
+          {(english.paper === 2 || englishTopicKind === "item") && <label className="block text-sm font-semibold">Question item
             <select aria-label="English question item" value={englishTopic} onChange={e => setEnglishTopic(e.target.value)}
               className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm">
               <option value="">— Question item নির্বাচন করুন —</option>
@@ -379,7 +379,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
 
       <button
         type="button"
-        disabled={!subject || (!!english && !append && (!englishMode || (englishMode === "topic" && (!englishTopicKind || !englishTopic))))}
+        disabled={!subject || (!!english && !append && (!englishMode || (englishMode === "topic" && ((english.paper === 1 && !englishTopicKind) || !englishTopic))))}
         onClick={go}
         className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-3 font-semibold text-white disabled:opacity-50"
       >

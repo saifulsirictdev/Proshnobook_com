@@ -18,7 +18,7 @@ test('English first paper for all supported classes route to full and topic-wise
 });
 test('Aliases cover SSC/HSC/Bangla English but not Job, Admission or non-English subjects',()=>{
  assert.equal(context('SSC','English 1st Paper').grade,9);assert.equal(context('HSC','English 1st Paper').grade,11);
- assert.equal(context('Class 11-12','English For Today').paper,1);assert.equal(context('Class 9-10','ইংরেজি ২য় পত্র'),null);
+ assert.equal(context('Class 11-12','English For Today').paper,1);assert.equal(context('Class 9-10','ইংরেজি ২য় পত্র').paper,2);
  for(const category of ['Job','Admission','Class 5',''])assert.equal(context(category,'English'),null);
  assert.equal(context('Class 6','গণিত'),null);
 });
@@ -99,13 +99,21 @@ test('Rendered Topic-wise has Lesson / Question item and keeps their lists separ
  const item=renderStarter('6','English 1st Paper','topic','',false,'item');assert.match(item,/01–04: Seen Comprehension/);assert.match(item,/05–07: Unseen Comprehension/);assert.doesNotMatch(item,/Lesson-01: Going to a new school/);
  const seven=renderStarter('7','English 1st Paper','topic','',false,'lesson');assert.match(seven,/Unit-09: Climate Change/);assert.doesNotMatch(seven,/সূচি নেই/);
 });
-test('English second paper is excluded from the new system and keeps the legacy starter selection',async()=>{
+test('English second paper offers Question item and Auto model test directly without a Lesson step',async()=>{
  for(let grade=6;grade<=12;grade++){
-  assert.equal(context(`Class ${grade}`,'English 2nd Paper'),null);assert.equal(href(`Class ${grade}`,'English 2nd Paper','full',''),null);assert.deepEqual(questionGroups(grade,2),[]);assert.deepEqual(fullModelWriting(grade,2),{});
+  const c=context(`Class ${grade}`,'English 2nd Paper');assert.equal(c.paper,2);assert.equal(c.grade,grade);
+  const groups=questionGroups(grade,2);assert.deepEqual(groups.flatMap(g=>g.itemIds),c.blueprint.items.map(i=>i.id));
+  assert.equal(href(`Class ${grade}`,'English 2nd Paper','topic','fake','item'),null);
+  assert.equal(href(`Class ${grade}`,'English 2nd Paper','topic','fake','lesson'),null);
+  for(const item of c.blueprint.items){const u=new URL(href(`Class ${grade}`,'English 2nd Paper','topic',item.id,'item'),'https://proshnobook.com');assert.equal(u.searchParams.get('paper'),'2');assert.equal(u.searchParams.get('item'),item.id);}
+  const r=resolveEnglishSelection({grade,paper:2,mode:'full',itemIds:[],sources:{},writing:fullModelWriting(grade,2),includeAnswers:true});assert.equal(r.total,grade<=8?50:100);
  }
- const html=renderStarter('6','English 2nd Paper','');assert.match(html,/name="questionType"/);assert.doesNotMatch(html,/aria-label="English প্রশ্নপত্রের ধরন"|aria-label="English topic type"/);
+ const html=renderStarter('6','English 2nd Paper','topic','verbs',false,'');
+ assert.match(html,/>Question item<\/option>/);assert.match(html,/>Auto model test<\/option>/);
+ assert.match(html,/aria-label="English question item"/);assert.doesNotMatch(html,/name="questionType"|aria-label="English topic type"|aria-label="English lesson"|>Topic-wise<|>Lesson</);
  const h=sourceAction({id:'teacher',role:'TEACHER'},[]);assert.ok((await h.read(6,2)).error);assert.equal(h.reads(),0);
 });
+
 function entryPage(){const file='app/question-builder/english/page.tsx',m=new Module(path.resolve(file),module);m.paths=module.paths;m.require=id=>['@/components/english-setup','@/components/english-auto-model'].includes(id)?{__esModule:true,default:()=>null}:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports.default;}
 test('Grouped entry preselects every member; forged class/group and second-paper query cannot inject items',async()=>{
  const page=entryPage();
@@ -113,7 +121,7 @@ test('Grouped entry preselects every member; forged class/group and second-paper
   const element=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',group})});assert.equal(element.props.initialMode,'selected');assert.deepEqual(element.props.initialItems,questionGroups(6,1).find(g=>g.id===group).itemIds);
  }
  const unknown=await page({searchParams:Promise.resolve({grade:'9',paper:'1',mode:'topic',group:'seen-comprehension'})});assert.equal(unknown.props.initialItems,undefined);
- const second=await page({searchParams:Promise.resolve({grade:'6',paper:'2',mode:'topic',group:'seen-comprehension',item:'mcq'})});assert.equal(second.props.initialMode,'full');assert.equal(second.props.initialItem,'');assert.equal(second.props.initialItems,undefined);
+ const second=await page({searchParams:Promise.resolve({grade:'6',paper:'2',mode:'topic',group:'seen-comprehension',item:'mcq'})});assert.equal(second.props.initialMode,'selected');assert.equal(second.props.initialItem,'');assert.equal(second.props.initialItems,undefined);
 });
 test('Class 7 supplied screenshot provides nine units and its own eight question groups',async()=>{
  const units=['Unit-01: Attention, Please','Unit-02: My Study Guide','Unit-03: What are Friends for?','Unit-04: People Who Make a Difference','Unit-05: Great Women to Remember','Unit-06: Leisure','Unit-07: Games and Sports','Unit-08: Likes and Dislikes','Unit-09: Climate Change'];
@@ -129,5 +137,18 @@ test('Class 7 supplied screenshot provides nine units and its own eight question
  const legacy=require('../lib/nctb-data.ts').NCTB_CLASSES.find(c=>c.class==='Class 7').subjects.find(s=>s.name==='English 1st Paper').chapters;
  assert.ok(legacy.includes('Ques. No.-08: Matching'));assert.ok(legacy.includes('Model Tests: English 1st Paper'));
  const html=renderStarter('7','English 1st Paper','topic','',false,'item');assert.match(html,/01–04: Seen Comprehension/);assert.match(html,/05–07: Unseen Comprehension/);
- assert.equal(questionGroups(8,1).length,13);assert.equal(context('Class 7','English 2nd Paper'),null);
+ assert.equal(questionGroups(8,1).length,13);assert.equal(context('Class 7','English 2nd Paper').paper,2);
+});
+test('Second-paper class differences are preserved rather than copied from first-paper screenshot groups',()=>{
+ const six=questionGroups(6,2),seven=questionGroups(7,2),eight=questionGroups(8,2);
+ assert.equal(six.length,8);assert.match(six[0].title,/01: Identification of parts of speech/);assert.equal(six.some(i=>i.id==='narration'),false);
+ assert.match(seven.find(i=>i.id==='narration').title,/individual sentences/);assert.match(eight.find(i=>i.id==='narration').title,/Passage narration/);
+ assert.equal(questionGroups(9,2).length,12);assert.equal(questionGroups(11,2).length,16);
+ for(let grade=6;grade<=12;grade++){
+  const groups=questionGroups(grade,2);assert.equal(groups.some(g=>g.itemIds.length!==1),false);assert.equal(groups.some(g=>/Seen Comprehension|Unseen Comprehension/.test(g.title)),false);
+  const html=renderStarter(String(grade<=8?grade:grade<=10?'SSC':'HSC'),'English 2nd Paper','full');assert.match(html,/>Auto model test<\/option>/);assert.doesNotMatch(html,/aria-label="English topic type"|aria-label="English lesson"|aria-label="English question item"/);
+ }
+ const item=renderStarter('6','English 2nd Paper','topic','verbs',false,'');
+ const button=item.match(/<button[^>]*class="flex w-full[^>]*>/)?.[0];assert.ok(button);assert.doesNotMatch(button,/ disabled(?:=|[ >])/);
+ const root=renderStarter('6','English 2nd Paper','topic','',false,'');const disabled=root.match(/<button[^>]*class="flex w-full[^>]*>/)?.[0];assert.match(disabled,/ disabled(?:=|[ >])/);
 });

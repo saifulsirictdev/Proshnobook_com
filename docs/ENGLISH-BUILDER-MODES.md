@@ -1,7 +1,7 @@
 # English first-paper builder: Lesson / Question item / Full Model Test
 
 ## Confirmed scope
-This new system is **only for English 1st Paper**, grades 6–12, including SSC/HSC grouped class aliases and the catalog's English For Today/Bangla subject labels. English 2nd Paper keeps the original starter topics/question-type selector, original setup defaults and Selected Parts/Writing Only behaviour. No automatic writing defaults, grouped-topic entry or approved-source auto-lookup is applied to second paper.
+The Lesson / Question item subdivision remains **only for English 1st Paper**, grades 6–12, including SSC/HSC grouped class aliases and the catalog's English For Today/Bangla subject labels. Following the owner’s subsequent request, English 2nd Paper now has its own direct **Question item / Auto model test** choices, with no Lesson subdivision. See `ENGLISH-SECOND-PAPER-MODES.md`. The approved textbook-source lookup remains first-paper-only; second-paper grammar/writing auto models require no seen extracts.
 
 ## User flow
 `Class → English 1st Paper → Topic-wise / Full Model Test`
@@ -61,7 +61,7 @@ Lesson titles: (1) Attention, Please; (2) My Study Guide; (3) What are Friends f
 The Class 7 Question item list is separately defined from its own screenshot: Q1–4 Seen, Q5–7 Unseen, Q8 Matching, Q9 Re-arranging Sentences, Q10 Question Answer from Poem, Q11 Completing a Story, Q12 Writing Paragraph, Q13 Writing Dialogues. Seen and Unseen select all four/three tasks respectively. The screenshot's ninth row, Model Tests, uses the existing separate Full Model Test mode and is not treated as a ninth question item. Classes 6 and 8–12 and every second-paper list remain unchanged.
 
 ## Full-model flow correction: questions before Page Set-up
-Explicit first-paper `mode=full` entry now mounts `EnglishAutoModel`, not the task configuration screen. The class is already supplied by the starter. The server fixes full mode, first paper, every blueprint task, writing defaults and separate answers, then calls the existing authenticated `generateEnglishPaper` bank-first/AI-missing-parts pipeline. Existing quotas, generation lock, provider validation, partial recovery and private ownership remain authoritative. No new direct provider call or publication path was introduced.
+Explicit `mode=full` entry for either paper now mounts `EnglishAutoModel`, not the task configuration screen. The class and paper are already supplied by the starter. The server fixes full mode, every matching blueprint task, writing defaults and separate answers, then calls the existing authenticated `generateEnglishPaper` bank-first/AI-missing-parts pipeline. Existing quotas, generation lock, provider validation, partial recovery and private ownership remain authoritative. No new direct provider call or publication path was introduced.
 
 After successful generation, the private editor opens in **review** stage: complete questions first, an explicit question-edit control, and manual instruction/subquestion/options/answer/structured-table editing. This is editing, not a promise of one-click AI alternative-question replacement. Header/layout settings are hidden in review; desktop review uses one full-width paper column. “প্রশ্ন পছন্দ হয়েছে → Set-up” validates and saves the edited paper first; only a confirmed save without intervening edits opens Page Set-up. The print button is disabled until that step. The same in-memory draft, answers and private key are retained.
 
@@ -70,3 +70,5 @@ Only unavailable exact textbook extracts/references can interrupt automatic prep
 The auto-entry effect caches its promise across React Strict Mode effect replay, preventing duplicate concurrent requests from that replay. A full browser refresh is a new user request; users are warned to check saved/recovered drafts when a network result is uncertain. No cross-reload idempotency or arbitrary retry-free generation is claimed.
 
 Validation after this correction: 71 focused tests pass, including automatic full selection for every supported grade, second-paper and Topic-wise exclusion, missing-source/auth/input guards and review-stage entry. Full local typecheck remains blocked by the sandbox's ungenerated Prisma Client; no successful local application build or live AI/database test is claimed.
+
+Latest second-paper extension: 73 focused tests pass. Existing first-paper nested selection and Class 6/7 screenshot-specific groups are retained unchanged; see the separate second-paper mode document for scope and information gaps.
