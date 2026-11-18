@@ -96,5 +96,5 @@ test('Lesson 3 pool keeps passage, picture and original writing provenance separ
  if(task.modelAnswer){assert.ok(!qs.includes(task.modelAnswer));assert.ok(answers.includes(task.modelAnswer));assert.ok(task.assessment.length>=3);}}
  assert.ok(a.summary.instruction.includes('not the unseen Q7'));assert.ok(a.picture.note.includes('must be available'));assert.ok(a.paragraph.note.includes('Original imagined'));
  assert.equal(a.vocabulary.items.find(x=>x.word==='pick up').acceptedAnswers[0],'put down');
- const b=JSON.parse(fs.readFileSync(dir+'blueprint.json','utf8'));assert.equal(b.lessonQuestionPools.length,3);
+ const b=JSON.parse(fs.readFileSync(dir+'blueprint.json','utf8'));assert.ok(b.lessonQuestionPools.some(x=>x.lesson===3&&x.file==='lesson-03-source-draft.json'));
 });

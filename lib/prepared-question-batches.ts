@@ -1,3 +1,4 @@
+import {english1Batches} from "./class6-english1-batches";
 import {bgsBatches} from "./class6-bgs-batches";
 import {hscIctBatches} from "./hsc-ict-batches";
 import {scienceStarterBatches} from "./class6-science-batches";
@@ -27,7 +28,8 @@ export function preparedBatches():PreparedBatch[]{
   ...remainingMathBatches(),
   ...scienceStarterBatches(),
   ...hscIctBatches(),
-  ...bgsBatches()
+  ...bgsBatches(),
+  ...english1Batches()
  ];
 }
 function validatePreparedBatch(b:PreparedBatch){

@@ -1,0 +1,43 @@
+import {parseQuestionUpload} from "./question-json-import";
+import type {PreparedBatch} from "./prepared-question-batches";
+import manifest from "@/content/question-bank/class-6/english-1st/import/manifest.json";
+import lesson1 from "@/content/question-bank/class-6/english-1st/import/lesson-01.json";
+import lesson2 from "@/content/question-bank/class-6/english-1st/import/lesson-02.json";
+import lesson3 from "@/content/question-bank/class-6/english-1st/import/lesson-03.json";
+import lesson4 from "@/content/question-bank/class-6/english-1st/import/lesson-04.json";
+import lesson5 from "@/content/question-bank/class-6/english-1st/import/lesson-05.json";
+import lesson6 from "@/content/question-bank/class-6/english-1st/import/lesson-06.json";
+import lesson7 from "@/content/question-bank/class-6/english-1st/import/lesson-07.json";
+import lesson8 from "@/content/question-bank/class-6/english-1st/import/lesson-08.json";
+import lesson9 from "@/content/question-bank/class-6/english-1st/import/lesson-09.json";
+import lesson10 from "@/content/question-bank/class-6/english-1st/import/lesson-10.json";
+import lesson11 from "@/content/question-bank/class-6/english-1st/import/lesson-11.json";
+import lesson12 from "@/content/question-bank/class-6/english-1st/import/lesson-12.json";
+import lesson13 from "@/content/question-bank/class-6/english-1st/import/lesson-13.json";
+import lesson14 from "@/content/question-bank/class-6/english-1st/import/lesson-14.json";
+import lesson15 from "@/content/question-bank/class-6/english-1st/import/lesson-15.json";
+import lesson16 from "@/content/question-bank/class-6/english-1st/import/lesson-16.json";
+import lesson17 from "@/content/question-bank/class-6/english-1st/import/lesson-17.json";
+import lesson18 from "@/content/question-bank/class-6/english-1st/import/lesson-18.json";
+import lesson19 from "@/content/question-bank/class-6/english-1st/import/lesson-19.json";
+import lesson20 from "@/content/question-bank/class-6/english-1st/import/lesson-20.json";
+import lesson21 from "@/content/question-bank/class-6/english-1st/import/lesson-21.json";
+import lesson22 from "@/content/question-bank/class-6/english-1st/import/lesson-22.json";
+import lesson23 from "@/content/question-bank/class-6/english-1st/import/lesson-23.json";
+import lesson24 from "@/content/question-bank/class-6/english-1st/import/lesson-24.json";
+import lesson25 from "@/content/question-bank/class-6/english-1st/import/lesson-25.json";
+import lesson26 from "@/content/question-bank/class-6/english-1st/import/lesson-26.json";
+import lesson27 from "@/content/question-bank/class-6/english-1st/import/lesson-27.json";
+import lesson28 from "@/content/question-bank/class-6/english-1st/import/lesson-28.json";
+import lesson29 from "@/content/question-bank/class-6/english-1st/import/lesson-29.json";
+import lesson30 from "@/content/question-bank/class-6/english-1st/import/lesson-30.json";
+import lesson31 from "@/content/question-bank/class-6/english-1st/import/lesson-31.json";
+import lesson32 from "@/content/question-bank/class-6/english-1st/import/lesson-32.json";
+import lesson33 from "@/content/question-bank/class-6/english-1st/import/lesson-33.json";
+export function english1Batches():PreparedBatch[]{
+ return [lesson1,lesson2,lesson3,lesson4,lesson5,lesson6,lesson7,lesson8,lesson9,lesson10,lesson11,lesson12,lesson13,lesson14,lesson15,lesson16,lesson17,lesson18,lesson19,lesson20,lesson21,lesson22,lesson23,lesson24,lesson25,lesson26,lesson27,lesson28,lesson29,lesson30,lesson31,lesson32,lesson33].map((input,i)=>{
+  const review=manifest.entries[i];
+  const {batch,records}=parseQuestionUpload(JSON.stringify(input),{category:input.category,subject:input.subject,group:"",topic:input.topic});
+  return {id:`class6-english1-lesson${String(i+1).padStart(2,"0")}-draft-v1`,category:batch.category,subject:batch.subject,topic:batch.topic,lang:batch.lang,title:`English lesson ${i+1} — source-labelled Draft; teacher review pending`,limitations:[manifest.storagePolicy,...manifest.limitations,...review.limitations].join(" "),records:records.map((q,j)=>({kind:batch.items[j].type,text:q.text,options:q.options,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty})),provenance:{book:batch.book,edition:batch.edition,sourceUrl:batch.sourceUrl,sourceFile:review.sourceFile,source:review.source,references:review.references,teacherApproved:false}};
+ });
+}
