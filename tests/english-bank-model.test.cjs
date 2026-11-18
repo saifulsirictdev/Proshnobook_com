@@ -135,3 +135,16 @@ test('Common ADMIN readiness and user preparation use the same validated stock, 
  const stock=await loadEnglishStock(6,async prefix=>prefix==='english-item:v1:'?rows:[]);assert.equal(stock.length,groups.length);assert.ok(items.assembleEnglishItems(stock,6).draft);
  const partial=await loadEnglishStock(6,async prefix=>prefix==='english-item:v1:'?rows.filter(r=>!JSON.parse(r.value).draft?.output?.tasks?.some(t=>t.id==='summary')):[]);assert.equal(items.assembleEnglishItems(partial,6).draft,null);
 });
+test('Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and preserves concurrent decisions',async()=>{
+ const crypto=require('node:crypto'),items=require('../lib/english/item-bank.ts');const groups=items.englishItemGroups(prepared.draft);let writes=0;const saved=new Map();
+ for(const [i,g] of groups.entries())saved.set(g.key,record(i===0?'APPROVED':'PENDING',g.draft));
+ const entries=[...saved].map(([key,value])=>({key,digest:crypto.createHash('sha256').update(value).digest('hex')}));
+ const changed=groups[1].key;saved.set(changed,record('REJECTED',groups[1].draft));
+ const invalid=groups[2].key;saved.set(invalid,JSON.stringify({status:'PENDING',draft:{}}));entries[2].digest=crypto.createHash('sha256').update(saved.get(invalid)).digest('hex');
+ function action(role){return load('app/admin/english-review/actions.ts',{'@/auth':{auth:async()=>({user:{id:'owner',role}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{findUnique:async({where})=>saved.has(where.key)?{key:where.key,value:saved.get(where.key)}:null,updateMany:async({where,data})=>{writes++;if(saved.get(where.key)!==where.value)return{count:0};saved.set(where.key,data.value);return{count:1};}}}}}).approveEnglishPendingBatch;}
+ const form=new FormData();form.set('reviewed','yes');form.set('entries',JSON.stringify(entries));
+ assert.ok((await action('TEACHER')({},form)).error);assert.equal(writes,0);assert.ok((await action('ADMIN')({},new FormData())).error);
+ const result=await action('ADMIN')({},form);assert.match(result.message,new RegExp(`অনুমোদিত: ${groups.length-3}টি`));assert.match(result.message,/গঠন বা scope যাচাই হয়নি: 1টি/);assert.equal(JSON.parse(saved.get(changed)).status,'REJECTED');assert.equal(JSON.parse(saved.get(invalid)).status,'PENDING');assert.equal(JSON.parse(saved.get(groups[3].key)).reviewedBy,'owner');
+ const count=writes;await action('ADMIN')({},form);assert.equal(writes,count);
+ const forged=new FormData();forged.set('reviewed','yes');forged.set('entries',JSON.stringify([entries[0],entries[0]]));assert.ok((await action('ADMIN')({},forged)).error);
+});
