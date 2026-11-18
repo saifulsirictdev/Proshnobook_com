@@ -1,0 +1,36 @@
+{
+  "status": "COUNT_COMPLETE_DRAFT_BACKUP_VERIFIED_NOT_IMPORTED",
+  "teacherApproved": false,
+  "folderId": "1UcqlJt59DpM5zCxMh5HHFg1tHUhOuWmJ",
+  "files": [
+    {
+      "name": "questions.json",
+      "driveFileId": "1uy31edgcqNSWK26Ry5Qg1e1-xdt1gPgn",
+      "bytes": 148044,
+      "md5": "d75ae6b314ae7f5e31cf607fbcb45a86",
+      "verified": true
+    },
+    {
+      "name": "validation-and-source-review-DRAFT-v002.json",
+      "driveFileId": "1ZGAUUY17OiXBLOZLT88MhcJjA8-291hG",
+      "bytes": 4690,
+      "md5": "2211a8d69b9de3a4c7ff895ed68ecc52",
+      "verified": true,
+      "content": "validation+sourceReview"
+    }
+  ],
+  "supersededPartial": {
+    "status": "PARTIAL_BACKUP_VERIFIED_NOT_REGISTERED_NOT_IMPORTED",
+    "folderId": "1UcqlJt59DpM5zCxMh5HHFg1tHUhOuWmJ",
+    "files": [
+      {
+        "name": "ch7-review-checkpoint.json",
+        "driveFileId": "1w8Hf9agLzmrku6JgfD0RUshQ2TfYuXhr",
+        "bytes": 21497,
+        "md5": "81bc9f5975402b448eb3956f36d8955c",
+        "verified": true,
+        "content": "sourceReview+partial"
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import PreparedLibrary from "./prepared-library";
 import JsonUploadForm from "./json-upload-form";
 import { uploadCatalog } from "@/lib/question-json-import";
-import { importCatalog, preparedSummaries, getPreparedBatch } from "@/lib/prepared-question-batches";
+import { importCatalog, preparedImportIndex } from "@/lib/prepared-question-batches";
 import { staff } from "@/lib/guard";
 import { db } from "@/lib/db";
 import { class6Topics } from "@/lib/mcq-import";
@@ -13,11 +13,15 @@ export const dynamic = "force-dynamic";
 export const metadata = { title: "অধ্যায়ভিত্তিক প্রশ্নব্যাচ import", robots: { index: false, follow: false } };
 export default async function MCQImport() {
   await staff();
-  const summaries = preparedSummaries();
-  const receipts = await db.setting.findMany({ where: { key: { in: summaries.map(b => `preparedimport:v1:${getPreparedBatch(b.id).digest}`) } }, select: { key: true } });
-  const savedIds = summaries.filter(b => receipts.some(r => r.key === `preparedimport:v1:${getPreparedBatch(b.id).digest}`)).map(b => b.id);
-  const counts = await db.question.groupBy({ by: ["subject", "topic", "approved"], where: { category: "Class 6", correct: { not: "" } }, _count: { _all: true } });
-  const batches = await db.setting.findMany({ where: { key: { startsWith: "mcqimport:v1:" } }, take: 50, orderBy: { key: "asc" }, select: { key: true, value: true } });
+  const index = preparedImportIndex();
+  const summaries = index.map(({digest,...summary})=>summary);
+  const [receipts, counts, batches] = await Promise.all([
+    db.setting.findMany({ where: { key: { in: index.map(b => `preparedimport:v1:${b.digest}`) } }, select: { key: true } }),
+    db.question.groupBy({ by: ["subject", "topic", "approved"], where: { category: "Class 6", correct: { not: "" } }, _count: { _all: true } }),
+    db.setting.findMany({ where: { key: { startsWith: "mcqimport:v1:" } }, take: 50, orderBy: { key: "asc" }, select: { key: true, value: true } }),
+  ]);
+  const receiptKeys = new Set(receipts.map(r=>r.key));
+  const savedIds = index.filter(b=>receiptKeys.has(`preparedimport:v1:${b.digest}`)).map(b=>b.id);
   const recent = batches.flatMap(b => { try { const v = JSON.parse(b.value); return [{ ...v, key: b.key }]; } catch { return []; } }).sort((a,b) => String(b.createdAt).localeCompare(String(a.createdAt)));
   return <main className="mx-auto max-w-6xl space-y-6 p-6">
     <Link className="qm-action-link" href="/admin/questions">← প্রশ্ন ব্যবস্থাপনা</Link>

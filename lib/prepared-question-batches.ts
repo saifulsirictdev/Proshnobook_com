@@ -1,3 +1,4 @@
+import {bgsBatches} from "./class6-bgs-batches";
 import {hscIctBatches} from "./hsc-ict-batches";
 import {scienceStarterBatches} from "./class6-science-batches";
 import {remainingMathBatches} from "./class6-remaining-batches";
@@ -25,16 +26,29 @@ export function preparedBatches():PreparedBatch[]{
   {id:"class6-math-ch2-mixed-v1",category:ch2.batch.category,subject:ch2.batch.subject,topic:ch2.batch.topic,title:"১০০ MCQ + ৩০ CQ + ৩০ SQ — অনুপাত ও শতকরা",lang:ch2.batch.lang,limitations:"বইয়ের ৩৮–৫৮ পৃষ্ঠা দেখে ধারণা মিলেছে; ২৫ MCQ/১০ CQ/১৫ SQ পরিবারে সংখ্যাভিত্তিক variant। স্বাধীন শিক্ষক অনুমোদন বাকি।",records:ch2.records.map((q,i)=>({kind:ch2.batch.items[i].type,text:q.text,options:q.options,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty})),provenance:{book:ch2.batch.book,edition:ch2.batch.edition,sourceUrl:ch2.batch.sourceUrl,references:ch2.batch.items.map(q=>q.page),review:chapter2Review}},
   ...remainingMathBatches(),
   ...scienceStarterBatches(),
-  ...hscIctBatches()
+  ...hscIctBatches(),
+  ...bgsBatches()
  ];
 }
-export function getPreparedBatch(id:string){
- const b=preparedBatches().find(b=>b.id===id);if(!b)throw Error("Unknown batch");
+function validatePreparedBatch(b:PreparedBatch){
  if(!importCatalog.some(c=>c.category===b.category&&c.subjects.some(s=>s.name===b.subject&&s.chapters.includes(b.topic))))throw Error("Invalid catalog scope");
  const stems=new Set<string>();
  if(!b.records.length||b.records.length>200)throw Error("Invalid batch size");
  for(const q of b.records){const stem=normalizeStem(q.text);if(!stem||stems.has(stem)||!q.explanation.trim())throw Error("Invalid question");stems.add(stem);}
  return {batch:b,digest:createHash("sha256").update(JSON.stringify(b)).digest("hex")};
+}
+export function getPreparedBatch(id:string){
+ const b=preparedBatches().find(b=>b.id===id);if(!b)throw Error("Unknown batch");
+ return validatePreparedBatch(b);
+}
+// One registry construction per page load, not once per receipt lookup.
+// No shared cache of authorization, user data or database receipts.
+export function preparedImportIndex(){
+ return preparedBatches().map(b=>{
+  const {digest}=validatePreparedBatch(b);
+  const {records,provenance,...summary}=b;
+  return {...summary,digest,counts:{MCQ:records.filter(q=>q.kind==="MCQ").length,CQ:records.filter(q=>q.kind==="CQ").length,SQ:records.filter(q=>q.kind==="SQ").length}};
+ });
 }
 export const preparedQuestionId=(b:PreparedBatch,q:PreparedRecord)=>"prepared_"+createHash("sha256").update(JSON.stringify([b.category,b.subject,b.topic,q.kind,normalizeStem(q.text)])).digest("hex");
 export function preparedSummaries(){return preparedBatches().map(({records,provenance,...b})=>({...b,counts:{MCQ:records.filter(q=>q.kind==="MCQ").length,CQ:records.filter(q=>q.kind==="CQ").length,SQ:records.filter(q=>q.kind==="SQ").length}}));}

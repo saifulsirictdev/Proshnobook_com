@@ -154,3 +154,41 @@ Six chapters are registered under existing `Class 11-12` / তথ্য ও য�
 34 quarantined with source index/reason; no invented replacements or relaxed parser.
 See `content/question-bank/class-11-12/ict/README.md` for source audit and shortfalls.
 All-chapter Preview → Pending uses existing ADMIN consent/digest/audit flow. No live import.
+
+## Class 6 BGS chapter1 Draft
+Only chapter1 is prepared (160 questions); full subject remains incomplete. Prepared id
+`class6-bgs-ch1-draft-v1` uses existing Class 6 / বাংলাদেশ ও বিশ্বপরিচয় / ১. সমাজ বিবর্তনের ইতিহাস.
+Source page map and limitations live in `content/question-bank/class-6/bgs/chapter-1/source-review.md`.
+Drive backups verified in `drive-backup.json`; backup does not mean website import.
+Regenerate/check with `python3 scripts/question-bank/build-class6-bgs.py [--check]`.
+No production writes or approval. Chapters2–8 still NOT_STARTED in subject manifest.
+
+
+### BGS chapter 2–3 Draft checkpoint
+Class 6 BGS chapters 1–3 now each have 100 MCQ + 30 full CQ + 30 SQ: 480 prepared Draft records total; subject remains incomplete (chapters 4–8 not started, deficit 800). Chapters 2–3 source reviews and verified Drive backup receipts are in their chapter directories. Current manifest backup is recorded in `manifest-drive-checkpoint.json`; earlier Drive manifest uploads are historical snapshots. Registry now has 32 batches / 5076 records across subjects. No DB import, approval, publication, commit or deployment. Independent teacher review remains pending, particularly political-history provenance and conceptual overlap in the short culture chapter.
+
+
+### BGS chapter 4 Draft checkpoint
+Chapter 4 economics: printed24–33/PDF29–38 fully visually read; 100 MCQ + 30 full CQ + 30 SQ authored and registered as unapproved Draft. Chapters1–4 total640, chapters5–8 not started, deficit640. Registry33 batches/5236 prepared records. Chapter4 Drive questions, validation and source-review backups verified by bytes/MD5; current subject manifest receipt supersedes older checkpoints. Current economic statistics were not independently verified; stale textbook figures are not represented as current facts. No live DB import, approval, publication or deployment. Existing consent and Pending guards unchanged.
+
+
+### BGS chapter5 complete-count Draft; chapters6–8 partial checkpoint
+Printed34–64/PDF39–69 fully visually read. Chapter5 registered as 100MCQ+30fullCQ+30SQ Draft; chapters1–5 total800 prepared. Chapters6–8 each have30SQ authored in separate unregistered partial files, MCQ/CQ still missing. Subject NOT complete; prepared deficit480 (partial90SQ excluded from prepared actuals). Registry34 batches/5396 prepared records. Drive chapter backups and current manifest verified by size/MD5. Combined review checkpoints contain source-review plus validation (ch5) or partial content (ch6–8). Citizenship models are not current legal advice; regional membership/OAU and environmental source caveats recorded. No live DB import, approval, publication, commit or deployment.
+
+
+### BGS chapters 6–8 count-complete Draft (supersedes partial checkpoint)
+Chapters 6, 7 and 8 now each contain 100 MCQ + 30 complete CQ + 30 SQ (160 Draft each). All eight BGS chapters meet numerical minimums: 800 MCQ + 240 CQ + 240 SQ = 1280, deficit zero. All remain teacherApproved=false. Registry: 37 batches / 5876 prepared records. Partial authoring files were replaced by registered chapter questions/validation; no website DB import, Pending save, approval, publication or deployment occurred. Existing preview → explicit consent → Pending → separate approval is unchanged.
+
+Chapter source reviews retain environment-causality, child-safety/non-stigmatization and time-sensitive international-membership caveats. Chapter 8's three exact MCQ/SQ stem collisions were replaced with different SQ concepts before validation. MCQ keys are balanced 25 each; CQ has ক/খ/গ/ঘ 1/2/3/4 marks, with solutions. Independent source-page verification, distractor quality, CQ depth and conceptual-overlap review remain required; numerical completion is not teacher approval.
+
+Complete chapter questions plus validation/source-review backups were uploaded to the existing Class 6 → BGS → chapter 6/7/8 folders. Local size/MD5 match the returned Drive metadata. Earlier partial backups remain historical, explicitly superseded in chapter receipts. Current 1280-record manifest: `13neyIE1WeVkwelWghjOQBnUYmJGJxm5l`; receipt: `content/question-bank/class-6/bgs/manifest-drive-checkpoint.json`.
+
+Validation after chapters 6–8 integration: prepared-library 14/14; full security/regression suite 735/735; TypeScript typecheck, reproducible generator --check and git diff --check pass. npm reports 11 dependency advisories (1 moderate, 10 high); no forced dependency changes made.
+
+### Owner instruction: agent imports Pending; owner approves
+The owner explicitly instructed: “Tumi sob somoy import kore dibe Ami sudhu dekhe approve korbo”. For requested question-bank work, the agent should perform authorized imports as Pending and the owner retains review/approval. Do not equate this standing import authorization with teacher review, approval or publication; preserve authenticated ADMIN, preview/digest/consent, deduplication and provenance safeguards. Do not change authentication to bypass access requirements.
+
+Current BGS import request remains blocked in this workspace: no configured database environment or authenticated website ADMIN session is available. Local prepared-library registration and verified Drive backup are not a live import. Do not report the 1280 BGS records as Pending until a real authorized import succeeds and its result is verified.
+
+### Scoped machine import access implementation
+Owner requested arranging agent access without sharing a Google login. Added a disabled-by-default, bearer/hash-authenticated Pending-only API, explicit batch/digest allowlist, at-most-24-hour expiry, server-side deduplication/shared receipts and grant-identity audit. Added a secret-safe local helper with one-hour grants, preview/acknowledgement and per-batch receipts. No roles, Gmail auth, existing ADMIN guards or approval routes changed. See `PENDING-IMPORT-ACCESS.md` for setup, expiry and immutable-deployment revocation limitations. No grant remains from the local smoke test; no Vercel environment changes, deployment or live import performed. New access tests 3/3, full regression suite 738/738, typecheck and diff check pass. Activation still requires the reviewed code deployment and fresh scoped configuration; an environment without production API connectivity cannot execute the import.
