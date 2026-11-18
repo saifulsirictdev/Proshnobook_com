@@ -1,4 +1,5 @@
 "use client";
+import { loadEnglishPaper } from "@/app/actions/english-paper";
 import {
   PAPER_SECTION_ORDER,
   paperSectionTitle,
@@ -37,7 +38,9 @@ export default function QbBuilder({
   supportHref = "/contact-us",
   tutorialHref,
   purchased,
+  english,
 }: {
+  english?: {key:string;items:PaperItem[];settings:PaperSettings;onSettings:(s:PaperSettings)=>void};
   purchased?: { id: string; items: PaperItem[]; settings: PaperSettings };
   supportHref?: string;
   tutorialHref?: string;
@@ -74,9 +77,9 @@ export default function QbBuilder({
       update({ ...s, excludedIds: [...s.excludedIds, id] });
       return;
     }
-    if (purchased) {
+    if (english || purchased) {
       setActionMessage(
-        "কেনা প্রশ্নপত্রে প্রশ্নের লেখা সম্পাদনা করতে পারবেন। প্রশ্নব্যাংক থেকে নতুন প্রশ্ন নিতে আলাদা নির্বাচন ও checkout প্রয়োজন।",
+        english ? "Passage-সংযুক্ত প্রশ্নসেট সাধারণ প্রশ্নের সঙ্গে Exchange করা যাবে না। Question Item থেকে নতুন সেট বাছুন।" : "কেনা প্রশ্নপত্রে প্রশ্নের লেখা সম্পাদনা করতে পারবেন। প্রশ্নব্যাংক থেকে নতুন প্রশ্ন নিতে আলাদা নির্বাচন ও checkout প্রয়োজন।",
       );
       return;
     }
@@ -108,6 +111,9 @@ export default function QbBuilder({
   }
   const close = useCallback(() => setOpen(false), []);
   useEffect(() => {
+    if (english) {
+      setItems(english.items);setSettings(english.settings);setDivision(english.settings.cfg.divisionFilter);setOpen(true);setReady(true);setLoading(false);return;
+    }
     if (purchased) {
       setItems(purchased.items);
       setSettings(purchased.settings);
@@ -157,7 +163,7 @@ export default function QbBuilder({
     return () => controller.abort();
   }, []);
   useEffect(() => {
-    if (!ready || purchased) return;
+    if (!ready || purchased || english) return;
     try {
       localStorage.setItem("qb:settings", JSON.stringify(s));
       setStorageError(false);
@@ -165,6 +171,7 @@ export default function QbBuilder({
       setStorageError(true);
     }
   }, [s, ready]);
+  useEffect(() => {if (english && ready) english.onSettings(s);},[s,ready]);
   const history = useRef<{
     past: { settings: PaperSettings; items: PaperItem[] }[];
     future: { settings: PaperSettings; items: PaperItem[] }[];
@@ -175,7 +182,7 @@ export default function QbBuilder({
   liveSettings.current = s;
   const [, setHistoryTick] = useState(0);
   useEffect(() => {
-    if (!purchased && ready && !loading && items.length) {
+    if (!purchased && !english && ready && !loading && items.length) {
       try {
         localStorage.setItem(
           "qb:selected",
@@ -213,7 +220,7 @@ export default function QbBuilder({
     setHistoryTick((v) => v + 1);
     setSettings(next);
     try {
-      if (!purchased) localStorage.setItem("qb:settings", JSON.stringify(next));
+      if (!purchased && !english) localStorage.setItem("qb:settings", JSON.stringify(next));
       setStorageError(false);
     } catch {
       setStorageError(true);
@@ -280,7 +287,9 @@ export default function QbBuilder({
   useEffect(() => () => printCleanup.current?.(), []);
   async function print(mode: "normal" | "booklet" = "normal") {
     try {
-      const access = purchased
+      const access = english
+        ? {ok:!!(await loadEnglishPaper(english.key)),error:"এই draft-এ প্রবেশাধিকার নেই।"}
+        : purchased
         ? await checkPurchasedPaperAccess(purchased.id)
         : await checkQuestionAccess(data.map((q) => q.id));
       if (!access.ok) {
@@ -442,7 +451,7 @@ export default function QbBuilder({
           });
           return {
             type,
-            title: paperSectionTitle(type, s.info.section, group),
+            title: english ? "English Question Paper" : paperSectionTitle(type, s.info.section, group),
             questions: views,
           };
         });
@@ -503,7 +512,7 @@ export default function QbBuilder({
     );
   return (
     <div className="paper-builder-root">
-      {!purchased && <WalletCheckout ids={data.map((q) => q.id)} />}
+      {!purchased && !english && <WalletCheckout ids={data.map((q) => q.id)} />}
       <style>{style}</style>
       {missingCount > 0 && (
         <p

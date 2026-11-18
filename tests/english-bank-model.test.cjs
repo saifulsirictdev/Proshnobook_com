@@ -160,3 +160,17 @@ test('Bulk approval cannot approve another grade under the selected grade scope'
  const action=load('app/admin/english-review/actions.ts',{'@/auth':{auth:async()=>({user:{id:'a',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{findUnique:async()=>({value:pending}),updateMany:async()=>{writes++;return{count:1};}}}}}).approveEnglishPendingBatch;
  const form=new FormData();form.set('grade','7');form.set('reviewed','yes');form.set('entries',JSON.stringify([{key:prepared.key,digest:crypto.createHash('sha256').update(pending).digest('hex')}]));const result=await action({},form);assert.equal(writes,0);assert.match(result.message,/গঠন বা scope যাচাই হয়নি: 1টি/);
 });
+test('Original builder adapter preserves linked English passages, structured tables, keys, numbering and saved setup',()=>{
+ const {englishLegacyPaper}=require('../lib/english/legacy-builder.ts');const {validateEnglishDraft}=require('../lib/english/draft.ts');
+ const paper=englishLegacyPaper(prepared.draft);assert.ok(paper.items.length);const tasks=paper.items.flatMap(i=>i.englishGroup.tasks);
+ assert.deepEqual(tasks.map(t=>t.id),prepared.draft.output.tasks.map(t=>t.id));assert.equal(tasks.reduce((n,t)=>n+t.marks,0),100);
+ for(const t of prepared.draft.output.tasks){const converted=tasks.find(c=>c.id===t.id);assert.deepEqual(converted.table,t.table);assert.deepEqual(converted.subitems,t.subitems);assert.equal(converted.answer,t.answer);}
+ for(const p of prepared.draft.output.passages)assert.ok(paper.items.some(i=>i.englishGroup.passages.some(x=>x.key===p.key&&x.text===p.text)));
+ const settings=structuredClone(paper.settings);settings.cfg.orientation='landscape';settings.cfg.cols=3;settings.cfg.bold=true;settings.excludedIds=[paper.items[0].id];
+ const draft=validateEnglishDraft({...prepared.draft,builderSettings:settings});const restored=englishLegacyPaper(draft);assert.equal(restored.settings.cfg.orientation,'landscape');assert.equal(restored.settings.cfg.cols,3);assert.equal(restored.settings.cfg.bold,true);assert.deepEqual(restored.settings.excludedIds,settings.excludedIds);
+});
+test('English build route uses the original builder, isolates general storage and retains owned draft checks',()=>{
+ const page=fs.readFileSync('app/question-builder/build/page.tsx','utf8');assert.match(page,/<EnglishLegacyBuilder/);assert.doesNotMatch(page,/<EnglishEditor/);
+ const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder english=/);assert.match(wrapper,/saveEnglishPaper\(draftKey/);
+ const builder=fs.readFileSync('components/qb-builder.tsx','utf8');assert.match(builder,/if \(!ready \|\| purchased \|\| english\) return/);assert.match(builder,/loadEnglishPaper\(english.key\)/);assert.match(builder,/!purchased && !english && <WalletCheckout/);
+});

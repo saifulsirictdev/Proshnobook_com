@@ -1,3 +1,4 @@
+import EnglishGroup from "./english-group";
 "use client";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -215,6 +216,7 @@ export default function PaperPreview({
   function question(v: PreviewQuestion, index: number, typeOverride = type) {
     const type = typeOverride;
     const { q, opts, ci } = v;
+    if (q.englishGroup) return <EnglishGroup q={q} s={s} questions={mode === "questions" && s.cfg.format !== "ans"} answers={mode === "answers" || s.cfg.format === "qa" || s.cfg.format === "ans" || s.cfg.format === "sug"}/>;
     if (mode !== "questions")
       return (
         <div

@@ -1,3 +1,4 @@
+import { settingsSchema } from "../paper-builder";
 import { z } from "zod";
 import { englishSelectionSchema, resolveEnglishSelection } from "./selection";
 import { englishOutputSchema, validateEnglishOutput } from "./generation";
@@ -5,6 +6,7 @@ import { paperHeaderSchema } from "../paper-header";
 export const englishDraftSchema = z
   .object({
     version: z.literal(1),
+    builderSettings: settingsSchema.optional(),
     name: z.string().trim().min(1).max(120),
     selection: englishSelectionSchema,
     output: englishOutputSchema,

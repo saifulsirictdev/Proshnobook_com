@@ -2,6 +2,10 @@ import { formatPaperFractions } from "@/lib/paper-math";
 import { z } from "zod";
 import { paperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
+  englishGroup?: {
+    passages: {key:string;text:string}[];
+    tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {number:number;marks:number})[];
+  };
   id: string;
   text: string;
   options?: Record<string, string>;
