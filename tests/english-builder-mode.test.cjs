@@ -63,7 +63,7 @@ test('Source lookup is authenticated, bounded and read-only, with graceful failu
  const failed=sourceAction({id:'teacher',role:'TEACHER'},[],true);assert.deepEqual((await failed.read(6,1)).sources,{});
 });
 const {englishQuestionItemGroups:questionGroups,englishLessonOptions:lessonOptions}=require('../lib/english/topic-options.ts');
-test('Only Class 6 gets the eight screenshot groups, with complete Q1–4 and Q5–7 membership',()=>{
+test('Class 6 screenshot groups retain their own labels, with complete Q1–4 and Q5–7 membership',()=>{
  const groups=questionGroups(6,1);assert.equal(groups.length,8);
  assert.deepEqual(groups[0].itemIds,['mcq','comprehension','gap','vocabulary']);assert.deepEqual(groups[1].itemIds,['information','true-false','summary']);
  assert.match(groups[0].title,/01–04: Seen/);assert.match(groups[1].title,/05–07: Unseen/);
@@ -71,7 +71,7 @@ test('Only Class 6 gets the eight screenshot groups, with complete Q1–4 and Q5
  const seen=new URL(href('6','English 1st Paper','topic','seen-comprehension','item'),'https://proshnobook.com');
  assert.equal(seen.searchParams.get('group'),'seen-comprehension');assert.equal(seen.searchParams.get('item'),null);
  const unseen=new URL(href('6','English 1st Paper','topic','unseen-comprehension','item'),'https://proshnobook.com');assert.equal(unseen.searchParams.get('group'),'unseen-comprehension');
- for(let grade=7;grade<=12;grade++){
+ for(let grade=8;grade<=12;grade++){
   const b=context(`Class ${grade}`,'English 1st Paper').blueprint,g=questionGroups(grade,1);
   assert.equal(g.length,b.items.length);assert.deepEqual(g.flatMap(x=>x.itemIds),b.items.map(x=>x.id));
   g.forEach((x,i)=>{assert.ok(x.title.startsWith(`Ques. No. ${String(i+1).padStart(2,'0')}:`));assert.ok(x.title.includes(b.items[i].title));});
@@ -82,14 +82,14 @@ test('Lesson mode retains exact old catalog topics and routes only a selected va
  const classes=require('../lib/nctb-data.ts').NCTB_CLASSES;
  for(let grade=6;grade<=12;grade++){
   const options=lessonOptions(grade,1),c=classes.find(c=>c.class===options.category),subject=c.subjects.find(s=>s.name===options.subject);
-  const expected=[...new Set(subject.chapters||subject.subCategories.flatMap(g=>g.topics))];assert.deepEqual(options.topics,expected);
+  const expected=[...new Set(subject.chapters||subject.subCategories.flatMap(g=>g.topics))];assert.deepEqual(options.topics,grade===7?expected.filter(t=>/^Unit-\d{2}:/.test(t)):expected);
   assert.deepEqual(options.groups,subject.subCategories||[]);
   assert.ok(options.topics.length>0);
   const u=new URL(href(`Class ${grade}`,'English 1st Paper','topic',options.topics[0],'lesson'),'https://proshnobook.com');
   assert.equal(u.pathname,'/question-builder/create');assert.equal(u.searchParams.get('topic'),options.topics[0]);assert.equal(u.searchParams.get('subject'),options.subject);assert.equal(u.searchParams.get('category'),options.category);
   assert.equal(u.searchParams.get('questionType'),'ALL');assert.equal(href(`Class ${grade}`,'English 1st Paper','topic','invented lesson','lesson'),null);
  }
- assert.equal(lessonOptions(6,1).topics.length,33);assert.ok(lessonOptions(7,1).notice.includes('সূচি নেই'));assert.equal(lessonOptions(8,1).notice,'');
+ assert.equal(lessonOptions(6,1).topics.length,33);assert.equal(lessonOptions(7,1).notice,'');assert.equal(lessonOptions(8,1).notice,'');
  assert.equal(href('6','English 1st Paper','topic','paragraph','fake'),null);
 });
 test('Rendered Topic-wise has Lesson / Question item and keeps their lists separate',()=>{
@@ -97,7 +97,7 @@ test('Rendered Topic-wise has Lesson / Question item and keeps their lists separ
  assert.match(root,/>Lesson<\/option>/);assert.match(root,/>Question item<\/option>/);assert.doesNotMatch(root,/aria-label="English lesson"|aria-label="English question item"/);
  const lesson=renderStarter('6','English 1st Paper','topic','',false,'lesson');assert.match(lesson,/Lesson-01: Going to a new school/);assert.match(lesson,/Lesson-33: The Garden/);assert.doesNotMatch(lesson,/aria-label="English question item"/);
  const item=renderStarter('6','English 1st Paper','topic','',false,'item');assert.match(item,/01–04: Seen Comprehension/);assert.match(item,/05–07: Unseen Comprehension/);assert.doesNotMatch(item,/Lesson-01: Going to a new school/);
- const seven=renderStarter('7','English 1st Paper','topic','',false,'lesson');assert.match(seven,/সূচি নেই/);
+ const seven=renderStarter('7','English 1st Paper','topic','',false,'lesson');assert.match(seven,/Unit-09: Climate Change/);assert.doesNotMatch(seven,/সূচি নেই/);
 });
 test('English second paper is excluded from the new system and keeps the legacy starter selection',async()=>{
  for(let grade=6;grade<=12;grade++){
@@ -114,4 +114,20 @@ test('Grouped entry preselects every member; forged class/group and second-paper
  }
  const unknown=await page({searchParams:Promise.resolve({grade:'9',paper:'1',mode:'topic',group:'seen-comprehension'})});assert.equal(unknown.props.initialItems,undefined);
  const second=await page({searchParams:Promise.resolve({grade:'6',paper:'2',mode:'topic',group:'seen-comprehension',item:'mcq'})});assert.equal(second.props.initialMode,'full');assert.equal(second.props.initialItem,'');assert.equal(second.props.initialItems,undefined);
+});
+test('Class 7 supplied screenshot provides nine units and its own eight question groups',async()=>{
+ const units=['Unit-01: Attention, Please','Unit-02: My Study Guide','Unit-03: What are Friends for?','Unit-04: People Who Make a Difference','Unit-05: Great Women to Remember','Unit-06: Leisure','Unit-07: Games and Sports','Unit-08: Likes and Dislikes','Unit-09: Climate Change'];
+ assert.deepEqual(lessonOptions(7,1).topics,units);assert.equal(lessonOptions(7,1).notice,'');
+ const groups=questionGroups(7,1);assert.equal(groups.length,8);assert.deepEqual(groups.flatMap(g=>g.itemIds),context('Class 7','English 1st Paper').blueprint.items.map(i=>i.id));
+ assert.equal(groups[0].title,'Ques. No. 01–04: Seen Comprehension');assert.equal(groups[4].title,'Ques. No. 10: Question Answer from Poem');assert.equal(groups[5].title,'Ques. No. 11: Completing a Story');assert.equal(groups[7].title,'Ques. No. 13: Writing Dialogues');
+ assert.ok(!groups.some(g=>/model/i.test(g.title)));
+ for(const group of groups.slice(0,2)){
+  const url=new URL(href('7','English 1st Paper','topic',group.id,'item'),'https://proshnobook.com');
+  const page=await entryPage()({searchParams:Promise.resolve(Object.fromEntries(url.searchParams))});assert.deepEqual(page.props.initialItems,group.itemIds);
+ }
+ for(const unit of units){const url=new URL(href('7','English 1st Paper','topic',unit,'lesson'),'https://proshnobook.com');assert.equal(url.searchParams.get('topic'),unit);assert.equal(url.searchParams.get('category'),'Class 7');}
+ const legacy=require('../lib/nctb-data.ts').NCTB_CLASSES.find(c=>c.class==='Class 7').subjects.find(s=>s.name==='English 1st Paper').chapters;
+ assert.ok(legacy.includes('Ques. No.-08: Matching'));assert.ok(legacy.includes('Model Tests: English 1st Paper'));
+ const html=renderStarter('7','English 1st Paper','topic','',false,'item');assert.match(html,/01–04: Seen Comprehension/);assert.match(html,/05–07: Unseen Comprehension/);
+ assert.equal(questionGroups(8,1).length,13);assert.equal(context('Class 7','English 2nd Paper'),null);
 });
