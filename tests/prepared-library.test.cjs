@@ -12,10 +12,13 @@ const science=load('lib/class6-science-batches.ts',scienceMocks);
 const hscMocks={'./question-json-import':upload};
 for(let n=1;n<=6;n++)for(const f of ['questions','validation'])hscMocks[`@/content/question-bank/class-11-12/ict/chapter-${n}/${f}.json`]=json(`content/question-bank/class-11-12/ict/chapter-${n}/${f}.json`);
 const hsc=load('lib/hsc-ict-batches.ts',hscMocks);
-const lib=load('lib/prepared-question-batches.ts',{'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
+const bgsMocks={'./question-json-import':upload};
+for(let n=1;n<=8;n++)for(const f of ['questions','validation'])bgsMocks[`@/content/question-bank/class-6/bgs/chapter-${n}/${f}.json`]=json(`content/question-bank/class-6/bgs/chapter-${n}/${f}.json`);
+const bgs=load('lib/class6-bgs-batches.ts',bgsMocks);
+const lib=load('lib/prepared-question-batches.ts',{'./class6-bgs-batches':bgs,'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
 test('catalog reuses all existing classes and batch summaries do not expose answers',()=>{
  assert.deepEqual(lib.importCatalog.map(c=>c.category),data.NCTB_CLASSES.map(c=>c.class));
- const summaries=lib.preparedSummaries();assert.equal(summaries.length,29);
+ const summaries=lib.preparedSummaries();assert.equal(summaries.length,37);
  assert.deepEqual(summaries[0].counts,{MCQ:100,CQ:0,SQ:0});assert.deepEqual(summaries[1].counts,{MCQ:0,CQ:30,SQ:30});
  assert.equal(summaries[0].records,undefined);assert.throws(()=>lib.getPreparedBatch('unregistered'));
  for(const s of summaries){const {batch,digest}=lib.getPreparedBatch(s.id);assert.equal(digest.length,64);assert.equal(new Set(batch.records.map(q=>lib.preparedQuestionId(batch,q))).size,batch.records.length);}
@@ -34,7 +37,7 @@ test('selection is not authority; unknown batches, missing acknowledgement and n
 test('preview read-only, both batch types save Pending, retry/dedup/audit maintained',async()=>{
  const h=harness();assert.equal((await h.actions.previewPrepared({},h.form())).preview.length,100);assert.equal(h.calls(),0);
  h.retry();for(const b of lib.preparedSummaries()){const f=h.form(b.id);f.set('category','INJECTED');assert.ok((await h.actions.savePrepared({},f)).message);await h.actions.savePrepared({},f);}
- assert.equal(h.questions.length,4596);assert.equal(h.settings.size,29);
+ assert.equal(h.questions.length,5876);assert.equal(h.settings.size,37);
  for(const q of h.questions){assert.ok(['Class 6','Class 11-12'].includes(q.category));assert.equal(q.approved,false);}
  const audit=JSON.parse([...h.settings.values()][0].value);assert.equal(audit.actorId,'owner');assert.ok(audit.provenance);assert.equal(audit.inserted,100);
  const legacy=harness();legacy.questions.push({text:lib.getPreparedBatch(lib.preparedSummaries()[0].id).batch.records[0].text});await legacy.actions.savePrepared({},legacy.form());assert.equal(legacy.questions.length,100);
@@ -90,4 +93,111 @@ test('HSC ICT uses six existing topics, honest quarantine counts and preserved s
  assert.deepEqual(totals,{MCQ:595,CQ:240,SQ:241});
  const q1=json('content/question-bank/class-11-12/ict/chapter-1/source-questions.json').items[0];
  assert.ok(!all[0].records.some(q=>q.text===q1.text));
+});
+
+test('import index builds registry once and preserves every action digest without exposing answers',()=>{
+ const index=lib.preparedImportIndex();assert.equal(index.length,37);
+ for(const entry of index){
+  const {batch,digest}=lib.getPreparedBatch(entry.id);
+  assert.equal(entry.digest,digest);assert.equal(entry.records,undefined);assert.equal(entry.provenance,undefined);
+  assert.equal(Object.values(entry.counts).reduce((a,b)=>a+b,0),batch.records.length);
+ }
+ const src=fs.readFileSync('lib/prepared-question-batches.ts','utf8');
+ const fn=src.split('export function preparedImportIndex(){')[1].split('export const preparedQuestionId')[0];
+ assert.equal((fn.match(/preparedBatches\(\)/g)||[]).length,1);
+ assert.ok(!fn.includes('getPreparedBatch('));
+ const page=fs.readFileSync('app/admin/questions/import/page.tsx','utf8');
+ assert.ok(page.indexOf('await staff()')<page.indexOf('preparedImportIndex()'));
+ assert.ok(!page.includes('getPreparedBatch('));assert.ok(page.includes('await Promise.all(['));
+});
+
+test('Class 6 BGS chapter1 is source-read Draft, with full CQ and truthful whole-subject deficit',()=>{
+ const input=json('content/question-bank/class-6/bgs/chapter-1/questions.json');
+ const review=json('content/question-bank/class-6/bgs/chapter-1/validation.json');
+ const manifest=json('content/question-bank/class-6/bgs/manifest.json');
+ const {batch}=lib.getPreparedBatch('class6-bgs-ch1-draft-v1');
+ assert.equal(batch.category,'Class 6');assert.equal(batch.subject,'বাংলাদেশ ও বিশ্বপরিচয়');assert.equal(batch.records.length,160);
+ assert.deepEqual(review.counts,{MCQ:100,CQ:30,SQ:30});assert.equal(review.teacherApproved,false);assert.equal(review.sourceFullRead,true);
+ assert.equal(manifest.targetMet,true);assert.equal(manifest.deficit,0);assert.equal(manifest.chapters.filter(c=>c.status==='NOT_STARTED').length,0);
+ const keys={A:0,B:0,C:0,D:0};
+ for(const q of input.items){assert.ok(q.explanation.trim());assert.ok(q.page.includes('PDF'));
+  if(q.type==='MCQ')keys[q.correct]++;
+  if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.deepEqual(q.parts.map(p=>p.label),['ক','খ','গ','ঘ']);assert.ok(q.parts.every(p=>p.solution.trim()&&p.question.trim()));}
+ }
+ assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+ assert.ok(review.limitations.some(s=>s.includes('লিঙ্গ')));assert.ok(review.limitations.some(s=>s.includes('ওয়াট')));
+});
+test('BGS chapter2 retains source warnings, balanced keys and complete unapproved CQ',()=>{
+ const input=json('content/question-bank/class-6/bgs/chapter-2/questions.json');
+ const review=json('content/question-bank/class-6/bgs/chapter-2/validation.json');
+ const {batch}=lib.getPreparedBatch('class6-bgs-ch2-draft-v1');
+ assert.equal(batch.records.length,160);assert.equal(review.teacherApproved,false);
+ assert.match(review.limitations.join(' '),/আইনি/);
+ assert.equal(review.printedPages,'10–18');
+ const keys={A:0,B:0,C:0,D:0};const seen=new Set();
+ for(const q of input.items){assert.ok(!seen.has(q.text));seen.add(q.text);
+  if(q.type==='MCQ'){keys[q.correct]++;assert.equal(new Set(Object.values(q.options)).size,4);}
+  if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.ok(q.parts.every(p=>p.question&&p.solution));}
+ }
+ assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+});
+test('BGS chapter3 culture Draft validates CQ structure, unique stems and balanced options',()=>{
+ const input=json('content/question-bank/class-6/bgs/chapter-3/questions.json');
+ const review=json('content/question-bank/class-6/bgs/chapter-3/validation.json');
+ assert.equal(lib.getPreparedBatch('class6-bgs-ch3-draft-v1').batch.records.length,160);
+ assert.equal(review.teacherApproved,false);assert.equal(review.printedPages,'19–23');
+ const seen=new Set(),keys={A:0,B:0,C:0,D:0},counts={MCQ:0,CQ:0,SQ:0};
+ for(const q of input.items){counts[q.type]++;assert.ok(!seen.has(q.text));seen.add(q.text);
+  if(q.type==='MCQ'){keys[q.correct]++;assert.equal(new Set(Object.values(q.options)).size,4);}
+  if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.ok(q.parts.every(p=>p.question&&p.solution));}
+ }
+ assert.deepEqual(counts,{MCQ:100,CQ:30,SQ:30});assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+});
+test('BGS chapter4 economics keeps full Draft structure and time-sensitive data warnings',()=>{
+ const input=json('content/question-bank/class-6/bgs/chapter-4/questions.json');
+ const review=json('content/question-bank/class-6/bgs/chapter-4/validation.json');
+ assert.equal(lib.getPreparedBatch('class6-bgs-ch4-draft-v1').batch.records.length,160);
+ assert.equal(review.teacherApproved,false);assert.equal(review.printedPages,'24–33');
+ assert.match(review.limitations.join(' '),/বর্তমান পরিসংখ্যান স্বাধীনভাবে যাচাই করা হয়নি/);
+ const seen=new Set(),keys={A:0,B:0,C:0,D:0},counts={MCQ:0,CQ:0,SQ:0};
+ for(const q of input.items){counts[q.type]++;assert.ok(!seen.has(q.text));seen.add(q.text);
+  const printed=Number(q.page.match(/\d+/)[0]);assert.ok(printed>=24&&printed<=33);
+  if(q.type==='MCQ'){keys[q.correct]++;assert.equal(new Set(Object.values(q.options)).size,4);}
+  if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.ok(q.parts.every(p=>p.question&&p.solution));}
+ }
+ assert.deepEqual(counts,{MCQ:100,CQ:30,SQ:30});assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+});
+test('BGS chapter5 citizenship Draft has full CQ and keeps legal limitations explicit',()=>{
+ const input=json('content/question-bank/class-6/bgs/chapter-5/questions.json');
+ const review=json('content/question-bank/class-6/bgs/chapter-5/validation.json');
+ assert.equal(lib.getPreparedBatch('class6-bgs-ch5-draft-v1').batch.records.length,160);
+ assert.equal(review.teacherApproved,false);assert.equal(review.printedPages,'34–42');
+ assert.match(review.limitations.join(' '),/বর্তমান আইন/);
+ const counts={MCQ:0,CQ:0,SQ:0},keys={A:0,B:0,C:0,D:0};
+ for(const q of input.items){counts[q.type]++;if(q.type==='MCQ'){keys[q.correct]++;assert.equal(new Set(Object.values(q.options)).size,4);}if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.ok(q.parts.every(p=>p.question&&p.solution));}}
+ assert.deepEqual(counts,{MCQ:100,CQ:30,SQ:30});assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+});
+test('BGS chapters6–8 are complete unapproved Draft with provenance and balanced keys',()=>{
+ const manifest=json('content/question-bank/class-6/bgs/manifest.json');
+ for(let n=6;n<=8;n++){
+  const input=json(`content/question-bank/class-6/bgs/chapter-${n}/questions.json`);
+  const review=json(`content/question-bank/class-6/bgs/chapter-${n}/validation.json`);
+  assert.equal(review.teacherApproved,false);assert.equal(review.targetMet,true);
+  assert.equal(lib.getPreparedBatch(`class6-bgs-ch${n}-draft-v1`).batch.records.length,160);
+  const counts={MCQ:0,CQ:0,SQ:0},keys={A:0,B:0,C:0,D:0},seen=new Set();
+  const [lo,hi]=review.printedPages.split('–').map(Number);
+  for(const q of input.items){
+   counts[q.type]++;assert.ok(!seen.has(q.text),q.text);seen.add(q.text);
+   const page=Number(q.page.match(/\d+/)[0]);assert.ok(page>=lo&&page<=hi);assert.ok(q.explanation.trim());
+   if(q.type==='MCQ'){keys[q.correct]++;assert.equal(new Set(Object.values(q.options)).size,4);}
+   if(q.type==='CQ'){assert.deepEqual(q.parts.map(p=>p.marks),[1,2,3,4]);assert.deepEqual(q.parts.map(p=>p.label),['ক','খ','গ','ঘ']);assert.ok(q.parts.every(p=>p.question.trim()&&p.solution.trim()));}
+  }
+  assert.deepEqual(counts,{MCQ:100,CQ:30,SQ:30});assert.deepEqual(keys,{A:25,B:25,C:25,D:25});
+  assert.equal(manifest.chapters[n-1].sourceFullRead,true);
+  assert.ok(!fs.existsSync(`content/question-bank/class-6/bgs/chapter-${n}/authoring-partial.json`));
+ }
+ assert.deepEqual(manifest.actuals,{MCQ:800,CQ:240,SQ:240,total:1280});assert.equal(manifest.deficit,0);assert.equal(manifest.targetMet,true);assert.equal(manifest.teacherApproved,false);
+ assert.match(json('content/question-bank/class-6/bgs/chapter-6/validation.json').limitations.join(' '),/ওজোন/);
+ assert.match(json('content/question-bank/class-6/bgs/chapter-7/validation.json').limitations.join(' '),/ক্ষতিকর শ্রম/);
+ assert.match(json('content/question-bank/class-6/bgs/chapter-8/validation.json').limitations.join(' '),/সব EU সদস্য/);
 });

@@ -834,3 +834,44 @@ Drive: Class 6 → বিজ্ঞান → chapter-12-পৃথিবীর �
 - Create page now counts and pages each requested kind independently (up to 50/kind), retaining approved/own-AI visibility, category/subject/chapter/search filters. Shorter kinds retain their last page while longer kinds paginate; UI discloses per-kind page/count and actual displayed total. Empty kinds explicitly reported, never filled with Pending/unauthorized questions.
 - Stable createdAt/id ordering; picker keyed to selection/page to avoid stale active-tab state after navigation.
 - Typecheck and 728 automated tests passed, including four mocked mixed/single-kind pagination regressions and updated chapter-membership checks. Real authenticated browser/production deployment not verified; no DB writes or deployment in this change.
+
+### Prepared import page latency fix
+- Added one-pass `preparedImportIndex()` to build/validate the 29-batch registry once and compute existing SHA-256 receipt digests. Summary excludes question records/provenance; digest bytes unchanged from save actions.
+- Replaced receipt matching that rebuilt the entire registry inside nested `some` callbacks with Set lookups. Previously up to 29 + 435 full rebuilds when all receipts exist, plus summary build. Independent receipt/count/history DB reads run in parallel after ADMIN guard. No authorization or receipt caching.
+- Added route loading feedback; existing Preview/consent/Pending/approval protections unchanged.
+- Local synthetic CPU benchmark with 29 matching receipts: old summary/key/matching path 63,517 ms vs new index/Set path 175 ms, same saved count. Not a production/network latency guarantee.
+- Typecheck, 8 prepared-library tests and full 729 automated tests pass. Added digest parity, summary exclusion, single registry construction and guard-order regression. No production deployment or DB write performed.
+
+### Class 6 Bangladesh and Global Studies — start after science
+- User requested same per-chapter workflow and whole-subject completion without progress interruptions. Actual status is **INCOMPLETE**: chapter1 only has 100MCQ/30completeCQ/30SQ; chapters2–8 NOT_STARTED, minimum subject deficit1120. Do not mark the whole subject complete or imply unattended work continues.
+- Source Drive1seX9fJBd2o0IM2bghf9v7dfyW-GNeT5X, 28,184,538bytes,70PDFpages, SHA b47549bcb826db11d34176f7d47c8c6c881ef61731103648db2cf0e3b0c550a9. Scanned; TOC and printed1–9/PDF6–14 fully visually read. Existing eight chapter scopes match TOC.
+- Added own Bengali question/answer Draft, chapter page map and historical caveats, reproducible generator, subject manifest with explicit unstarted statuses. Nonmath CQ1/2/3/4; no missing-image dependence. Teacher/source/semantic review still pending.
+- Registered chapter1 in prepared Admin library, without database writes. Registry now30 batches/4756 prepared records (not live DB count). Existing import performance fix on this branch retained.
+- Drive class6→BGS→chapter01 backup: four files (question/validation/source-review/subject manifest), local byte/MD5 equality verified; receipt IDs in content/question-bank/class-6/bgs/drive-backup.json.
+- Typecheck and full730 tests passed; generator --check and diff --check passed. No import/Pending/approval/publication/deploy/commit/PR performed for BGS.
+- Next chapter2 source is printed10–18 / PDF15–23. Finish it before proceeding to chapter3; do not pad counts or label entire book reviewed.
+
+
+### BGS chapter 2–3 Draft checkpoint
+Class 6 BGS chapters 1–3 now each have 100 MCQ + 30 full CQ + 30 SQ: 480 prepared Draft records total; subject remains incomplete (chapters 4–8 not started, deficit 800). Chapters 2–3 source reviews and verified Drive backup receipts are in their chapter directories. Current manifest backup is recorded in `manifest-drive-checkpoint.json`; earlier Drive manifest uploads are historical snapshots. Registry now has 32 batches / 5076 records across subjects. No DB import, approval, publication, commit or deployment. Independent teacher review remains pending, particularly political-history provenance and conceptual overlap in the short culture chapter.
+
+
+### BGS chapter 4 Draft checkpoint
+Chapter 4 economics: printed24–33/PDF29–38 fully visually read; 100 MCQ + 30 full CQ + 30 SQ authored and registered as unapproved Draft. Chapters1–4 total640, chapters5–8 not started, deficit640. Registry33 batches/5236 prepared records. Chapter4 Drive questions, validation and source-review backups verified by bytes/MD5; current subject manifest receipt supersedes older checkpoints. Current economic statistics were not independently verified; stale textbook figures are not represented as current facts. No live DB import, approval, publication or deployment. Existing consent and Pending guards unchanged.
+
+
+### BGS chapter5 complete-count Draft; chapters6–8 partial checkpoint
+Printed34–64/PDF39–69 fully visually read. Chapter5 registered as 100MCQ+30fullCQ+30SQ Draft; chapters1–5 total800 prepared. Chapters6–8 each have30SQ authored in separate unregistered partial files, MCQ/CQ still missing. Subject NOT complete; prepared deficit480 (partial90SQ excluded from prepared actuals). Registry34 batches/5396 prepared records. Drive chapter backups and current manifest verified by size/MD5. Combined review checkpoints contain source-review plus validation (ch5) or partial content (ch6–8). Citizenship models are not current legal advice; regional membership/OAU and environmental source caveats recorded. No live DB import, approval, publication, commit or deployment.
+
+
+### BGS chapters 6–8 count-complete Draft (supersedes partial checkpoint)
+Chapters 6, 7 and 8 now each contain 100 MCQ + 30 complete CQ + 30 SQ (160 Draft each). All eight BGS chapters meet numerical minimums: 800 MCQ + 240 CQ + 240 SQ = 1280, deficit zero. All remain teacherApproved=false. Registry: 37 batches / 5876 prepared records. Partial authoring files were replaced by registered chapter questions/validation; no website DB import, Pending save, approval, publication or deployment occurred. Existing preview → explicit consent → Pending → separate approval is unchanged.
+
+Chapter source reviews retain environment-causality, child-safety/non-stigmatization and time-sensitive international-membership caveats. Chapter 8's three exact MCQ/SQ stem collisions were replaced with different SQ concepts before validation. MCQ keys are balanced 25 each; CQ has ক/খ/গ/ঘ 1/2/3/4 marks, with solutions. Independent source-page verification, distractor quality, CQ depth and conceptual-overlap review remain required; numerical completion is not teacher approval.
+
+Complete chapter questions plus validation/source-review backups were uploaded to the existing Class 6 → BGS → chapter 6/7/8 folders. Local size/MD5 match the returned Drive metadata. Earlier partial backups remain historical, explicitly superseded in chapter receipts. Current 1280-record manifest: `13neyIE1WeVkwelWghjOQBnUYmJGJxm5l`; receipt: `content/question-bank/class-6/bgs/manifest-drive-checkpoint.json`.
+
+Validation after chapters 6–8 integration: prepared-library 14/14; full security/regression suite 735/735; TypeScript typecheck, reproducible generator --check and git diff --check pass. npm reports 11 dependency advisories (1 moderate, 10 high); no forced dependency changes made.
+
+### Pending-only agent capability (local, disabled until configured)
+Implemented scoped short-lived bearer capability for registered Pending question imports, plus local preview/save helper and operational runbook `docs/question-bank/PENDING-IMPORT-ACCESS.md`. Does not log in as ADMIN or alter approval/publication. All new questions remain approved=false; audit records delegated grant identity. 738/738 regression tests and TypeScript pass. No activation, deployment or live BGS import yet; access/connection prerequisites remain explicit in runbook.
