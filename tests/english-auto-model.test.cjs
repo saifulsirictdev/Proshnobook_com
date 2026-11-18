@@ -4,7 +4,7 @@ const blueprint=load('lib/english/blueprints.ts');
 const selection=load('lib/english/selection.ts',{'./blueprints':blueprint});
 const builder=load('lib/english/builder-mode.ts',{'./blueprints':blueprint,'./selection':selection,'./topic-options':{}});
 function harness(user={id:'teacher',role:'TEACHER'},sources={}){let reads=0,requests=[];
- const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);const r=selection.resolveEnglishSelection(raw);assert.equal(r.total,blueprint.englishBlueprint(raw.grade,raw.paper).total);return{ok:true,key:'owned-draft-key'};}}});
+ const actions=load('app/actions/english-auto-model.ts',{'@/lib/english/bundled-model-sources':{bundledEnglishModelSources:()=>({})},'@/auth':{auth:async()=>({user})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);const r=selection.resolveEnglishSelection(raw);assert.equal(r.total,blueprint.englishBlueprint(raw.grade,raw.paper).total);return{ok:true,key:'owned-draft-key'};}}});
  return{prepare:actions.prepareEnglishFullModel,requests,reads:()=>reads};
 }
 test('Auto-model rejects unsupported/forged inputs and unauthorised users before source/AI lookup',async()=>{
@@ -50,4 +50,24 @@ test('Second-paper auto models select grade-specific grammar/writing, require no
  const auto=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'full'})});assert.equal(auto.type,Auto);assert.equal(auto.props.paper,2);assert.equal(auto.props.grade,8);assert.equal(auto.key,'8-2');
  const item=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'topic',item:'verbs'})});assert.equal(item.props.initialMode,'selected');assert.equal(item.props.initialItem,'verbs');assert.equal(item.props.initialPaper,2);
  const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper })'));assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources })'));
+});
+test('Bundled Class 6 sources cover all required groups without a source form, never leak to other grades/papers',async()=>{
+ const data=require('../lib/english/data/class6-model-sources.json');
+ const bundle=load('lib/english/bundled-model-sources.ts',{'./data/class6-model-sources.json':data});
+ const bundled=bundle.bundledEnglishModelSources(6,1);
+ assert.equal(data.status,'BUNDLED_PRIVATE_PRACTICE_SOURCE_NOT_BANK_APPROVAL');
+ assert.deepEqual(Object.keys(bundled),['seen-1','seen-2','textbook-poems']);
+ assert.match(bundled['seen-1'].text,/Bulbul collects rubbish/);assert.match(bundled['textbook-poems'].text,/Boats sail on the rivers/);
+ for(let grade=7;grade<=12;grade++)assert.deepEqual(bundle.bundledEnglishModelSources(grade,1),{});
+ assert.deepEqual(bundle.bundledEnglishModelSources(6,2),{});
+ bundled['seen-1'].text='mutated';assert.notEqual(bundle.bundledEnglishModelSources(6,1)['seen-1'].text,'mutated');
+ let request;
+ const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user:{id:'teacher',role:'TEACHER'}})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'@/lib/english/bundled-model-sources':bundle,'./english-model-sources':{loadEnglishModelSources:async()=>({sources:{'seen-1':{text:'Approved replacement',reference:'Approved unit'}}})},'./english-paper':{generateEnglishPaper:async raw=>{request=raw;return{ok:true,key:'private-draft'};}}});
+ assert.equal((await actions.prepareEnglishFullModel({grade:6,paper:1})).ok,true);
+ assert.equal(request.sources['seen-1'].text,'Approved replacement');
+ assert.match(request.sources['seen-2'].text,/Health is Wealth/);
+ const r=selection.resolveEnglishSelection(request);assert.equal(r.total,100);assert.equal(r.items.length,13);
+ assert.equal((await actions.prepareEnglishFullModel({grade:6,sources:{'seen-1':{text:'Teacher replacement',reference:'Teacher unit'}}})).ok,true);
+ assert.equal(request.sources['seen-1'].text,'Teacher replacement');
+ assert.equal((await actions.prepareEnglishFullModel({grade:7})).ok,false);
 });
