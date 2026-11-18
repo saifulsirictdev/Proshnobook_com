@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
+import { englishBuilderContext, englishBuilderHref } from "@/lib/english/builder-mode";
 import { ArrowRight } from "lucide-react";
 import { NCTB_CLASSES, type NctbClass } from "@/lib/nctb-data";
 
@@ -70,6 +71,9 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const examSubjects = selectedExam ? selectedExam.subjects : Array.from(new Set(outlines.flatMap((exam) => exam.subjects)));
   const [questionType, setQuestionType] = useState("ALL");
   const [subject, setSubject] = useState("");
+  const [englishMode, setEnglishMode] = useState("");
+  const [englishTopic, setEnglishTopic] = useState("");
+  const english = englishBuilderContext(category, subject);
   const jobSubject = jobSubjects.find((item) => item.name === subject);
   const [topicCategory, setTopicCategory] = useState(""); // ক্যাটাগরি/ইউনিট
   const [topic, setTopic] = useState(""); // নির্দিষ্ট টপিক
@@ -128,6 +132,11 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
     }`;
 
   function go() {
+    if (english && !append) {
+      const href = englishBuilderHref(category, subject, englishMode, englishTopic);
+      if (href) router.push(href);
+      return;
+    }
     const p = new URLSearchParams();
     if (append) p.set("append", "1");
     if (isJob && (!jobSyllabus || !jobSubject)) return;
@@ -154,7 +163,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             setCategory(e.target.value);
             setExamId("");
             setBranchId("");
-            setSubject("");
+            setSubject(""); setEnglishMode(""); setEnglishTopic("");
             setTopicCategory("");
             setTopic("");
           }}
@@ -176,7 +185,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
               setQuestionType(c === "Job" ? "MCQ" : "ALL");
               setExamId("");
             setBranchId("");
-              setSubject("");
+              setSubject(""); setEnglishMode(""); setEnglishTopic("");
               setTopicCategory("");
               setTopic("");
             }}
@@ -200,7 +209,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
               aria-label="পরীক্ষার প্রস্তুতির ধরন"
               className="mt-2 w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
               value={examId}
-              onChange={(e) => { setExamId(e.target.value); setBranchId(""); setSubject(""); setTopicCategory(""); setTopic(""); }}
+              onChange={(e) => { setExamId(e.target.value); setBranchId(""); setSubject(""); setEnglishMode(""); setEnglishTopic(""); setTopicCategory(""); setTopic(""); }}
             >
               <option value="">{isJob ? "— পরীক্ষা নির্বাচন করুন —" : "সব প্রস্তুতির বিষয়"}</option>
               {outlines.map((exam) => <option key={exam.id} value={exam.id}>{exam.name}</option>)}
@@ -208,7 +217,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           </label>
           {isJob && jobExam?.branches && (
             <label className="block font-semibold">NTRCA শাখা
-              <select aria-label="NTRCA শাখা" value={branchId} className="mt-2 w-full rounded-lg border bg-white px-3 py-3 text-sm" onChange={(e) => { setBranchId(e.target.value); setSubject(""); setTopicCategory(""); setTopic(""); }}>
+              <select aria-label="NTRCA শাখা" value={branchId} className="mt-2 w-full rounded-lg border bg-white px-3 py-3 text-sm" onChange={(e) => { setBranchId(e.target.value); setSubject(""); setEnglishMode(""); setEnglishTopic(""); setTopicCategory(""); setTopic(""); }}>
                 <option value="">— School / College বাছুন —</option>
                 {jobExam.branches.map((branch) => <option key={branch.id} value={branch.id}>{branch.name}</option>)}
               </select>
@@ -233,6 +242,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         value={subject}
         onChange={(e) => {
           setSubject(e.target.value);
+          setEnglishMode(""); setEnglishTopic("");
           setTopicCategory("");
           setTopic("");
         }}
@@ -245,6 +255,32 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         ))}
       </select>
 
+      {english && !append && <>
+        <label className="block text-sm font-semibold">English প্রশ্নপত্রের ধরন
+          <select aria-label="English প্রশ্নপত্রের ধরন" value={englishMode}
+            className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
+            onChange={e => { setEnglishMode(e.target.value); setEnglishTopic(""); }}>
+            <option value="">— ধরন নির্বাচন করুন —</option>
+            <option value="topic">Topic-wise</option>
+            <option value="full">Full Model Test</option>
+          </select>
+        </label>
+        {englishMode === "topic" && <label className="block text-sm font-semibold">English topic
+          <select aria-label="English topic" value={englishTopic} onChange={e => setEnglishTopic(e.target.value)}
+            className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm">
+            <option value="">— টপিক নির্বাচন করুন —</option>
+            {english.blueprint.sections.map(section => <optgroup key={section.id} label={section.id}>
+              {english.blueprint.items.filter(i => i.section === section.id).map(i => <option key={i.id} value={i.id}>{i.title}</option>)}
+            </optgroup>)}
+          </select>
+        </label>}
+        {englishMode === "full" && <p className="rounded-lg bg-indigo-50 p-3 text-sm">
+          Class {english.grade} · English {english.paper === 1 ? "1st" : "2nd"} Paper · {english.blueprint.total} marks।
+          সব অংশ ও writing topic স্বয়ংক্রিয়ভাবে বাছাই হবে। অনুমোদিত textbook source না থাকলে পরের ধাপে দিতে হবে।
+          এটি practice template; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন।
+        </p>}
+      </>}
+      {(!english || append) && <>
       {/* 🎯 দুই-ধাপে ক্যাটাগরি/ইউনিট → টপিক সিলেকশন (subCategories থাকলে) */}
       {hasGroups ? (
         <>
@@ -313,13 +349,15 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </select>
       </label>
 
+      </>}
+
       <button
         type="button"
-        disabled={!subject}
+        disabled={!subject || (!!english && !append && (!englishMode || (englishMode === "topic" && !englishTopic)))}
         onClick={go}
         className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-3 font-semibold text-white disabled:opacity-50"
       >
-        প্রশ্ন তৈরী করুন <ArrowRight size={18} />
+        {english && !append && englishMode === "full" ? "পূর্ণ মডেল টেস্ট তৈরি করুন" : "প্রশ্ন তৈরী করুন"} <ArrowRight size={18} />
       </button>
       {!pairs.length && !curriculumSubjects.length && !outlines.length && (
         <p className="text-center text-xs text-slate-500">

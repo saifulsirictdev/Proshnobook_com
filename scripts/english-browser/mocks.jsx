@@ -22,3 +22,6 @@ export { Link as default, generateEnglishPaper, saveEnglishPaper, useRouter };
 
 export const listPaperHeaders = async () => ({ ok: true, items: [] });
 export const savePaperHeader = async () => ({ ok: false, error: "Mock-only" });
+
+// No real textbook source is fabricated by this isolated UI fixture.
+export const loadEnglishModelSources = async () => ({ sources: {}, error: "" });

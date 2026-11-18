@@ -3,7 +3,9 @@ import PreparationPopup from "./preparation-popup";
 import "./english-theme.css";
 import EnglishTopicPicker from "@/components/english-topic-picker";
 import { writingTopicSuggestions } from "@/lib/english/writing-topics";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { fullModelWriting } from "@/lib/english/builder-mode";
+import { loadEnglishModelSources } from "@/app/actions/english-model-sources";
 import { useRouter } from "next/navigation";
 import { generateEnglishPaper } from "@/app/actions/english-paper";
 import {
@@ -21,17 +23,21 @@ type WritingRequest = {
 export default function EnglishSetup({
   initialGrade,
   initialPaper,
+  initialMode = "full",
+  initialItem = "",
 }: {
   initialGrade: number;
   initialPaper: 1 | 2;
+  initialMode?: "full" | "selected";
+  initialItem?: string;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [grade, setGrade] = useState(initialGrade),
     [paper, setPaper] = useState<EnglishPaper>(initialPaper),
-    [mode, setMode] = useState<"full" | "selected" | "writing">("full"),
-    [ids, setIds] = useState<string[]>([]),
-    [writing, setWriting] = useState<Record<string, WritingRequest>>({}),
+    [mode, setMode] = useState<"full" | "selected" | "writing">(initialMode),
+    [ids, setIds] = useState<string[]>(englishBlueprint(initialGrade as EnglishGrade, initialPaper).items.some(i => i.id === initialItem) ? [initialItem] : []),
+    [writing, setWriting] = useState<Record<string, WritingRequest>>(initialMode === "full" ? fullModelWriting(initialGrade as EnglishGrade, initialPaper) : {}),
     [sources, setSources] = useState<
       Record<string, { text: string; reference: string }>
     >({}),
@@ -50,6 +56,26 @@ export default function EnglishSetup({
         .filter((s): s is NonNullable<typeof s> => !!s && s !== "unseen"),
     ),
   ];
+  const [loadingSources, setLoadingSources] = useState(false);
+  const [sourceNotice, setSourceNotice] = useState("");
+  useEffect(() => {
+    if (mode !== "full") { setLoadingSources(false); setSourceNotice(""); return; }
+    let cancelled = false;
+    setWriting(old => ({ ...fullModelWriting(grade as EnglishGrade, paper), ...old }));
+    if (!englishBlueprint(grade as EnglishGrade, paper).items.some(i => i.sourceGroup && i.sourceGroup !== "unseen")) {
+      setLoadingSources(false); setSourceNotice(""); return;
+    }
+    setLoadingSources(true);
+    setSourceNotice("অনুমোদিত textbook source খোঁজা হচ্ছে…");
+    loadEnglishModelSources(grade, paper).then(result => {
+      if (cancelled) return;
+      setSources(old => ({ ...result.sources, ...old }));
+      setSourceNotice(result.error || "উপলব্ধ অনুমোদিত source নেওয়া হয়েছে। কোনো প্রয়োজনীয় ঘর খালি থাকলে নির্ভরযোগ্য textbook extract দিন।");
+    }).catch(() => {
+      if (!cancelled) setSourceNotice("Source আনা যায়নি; প্রয়োজনীয় textbook extract দিন।");
+    }).finally(() => { if (!cancelled) setLoadingSources(false); });
+    return () => { cancelled = true; };
+  }, [grade, paper, mode]);
   function reset() {
     setIds([]);
     setWriting({});
@@ -160,10 +186,15 @@ export default function EnglishSetup({
           }}
         >
           <option value="full">Full Model Test (printable)</option>
-          <option value="selected">Selected Parts</option>
+          <option value="selected">Topic-wise (Selected Parts)</option>
           <option value="writing">Writing Only</option>
         </select>
       </label>
+      {mode === "full" && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
+        পূর্ণ {blueprint.total} নম্বরের সব অংশ নির্বাচিত। Writing topic স্বয়ংক্রিয়ভাবে বাছাই করা হয়েছে; চাইলে বদলাতে পারবেন।
+        {sourceKeys.length > 0 ? " " + sourceNotice : " এই পত্রে textbook extract প্রয়োজন নেই।"}
+        প্রযোজ্য syllabus ও template মিলিয়ে নিচের বোতামে পুরো paper তৈরি করুন। নির্বাচন করলেই কোনো AI request বা খরচ হবে না।
+      </p>}
       <section className="english-selection space-y-3">
         <div className="english-selection-heading">
           <div>
@@ -380,7 +411,7 @@ export default function EnglishSetup({
       </p>
       <button
         className="english-generate rounded bg-emerald-600 px-5 py-3 text-white"
-        disabled={busy}
+        disabled={busy || loadingSources}
         onClick={validate}
       >
         {busy ? "তৈরি হচ্ছে…" : "প্রশ্নপত্র তৈরি করুন"}

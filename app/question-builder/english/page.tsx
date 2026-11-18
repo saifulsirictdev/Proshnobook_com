@@ -4,7 +4,7 @@ export const metadata = { title: "English printable paper — 2027 practice" };
 export default async function EnglishPage({
   searchParams,
 }: {
-  searchParams: Promise<{ grade?: string; paper?: string }>;
+  searchParams: Promise<{ grade?: string; paper?: string; mode?: string; item?: string }>;
 }) {
   const p = await searchParams;
   const grade = Number(p.grade),
@@ -15,6 +15,8 @@ export default async function EnglishPage({
         grade >= 6 && grade <= 12 && Number.isInteger(grade) ? grade : 6
       }
       initialPaper={paper === 2 ? 2 : 1}
+      initialMode={p.mode === "topic" ? "selected" : "full"}
+      initialItem={typeof p.item === "string" ? p.item : ""}
     />
   );
 }

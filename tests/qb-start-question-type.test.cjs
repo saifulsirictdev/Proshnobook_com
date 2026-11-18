@@ -31,6 +31,7 @@ test("starter displays shared question type options and forwards the selected ty
     },
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,
+    "@/lib/english/builder-mode": { englishBuilderContext: () => null, englishBuilderHref: () => null },
     "@/lib/exam-preparation": load("lib/exam-preparation.ts"),
     "@/lib/job-syllabuses.json": require("../lib/job-syllabuses.json"),
   }).default;
@@ -44,6 +45,6 @@ test("starter displays shared question type options and forwards the selected ty
   assert.match(source, /p.set\("questionType", isJob \? "MCQ" : questionType\)/);
   assert.ok(
     source.indexOf('name="questionType"') <
-      source.indexOf("disabled={!subject}"),
+      source.indexOf("disabled={!subject ||"),
   );
 });
