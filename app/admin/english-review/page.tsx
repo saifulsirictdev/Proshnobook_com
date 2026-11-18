@@ -1,5 +1,5 @@
 import CompleteModelImport from "./complete-model-import";
-import { preparedCompleteEnglishModel } from "@/lib/english/prepared-complete-model";
+import { completeEnglishLibraryDigest, preparedCompleteEnglishModels, preparedCompleteEnglishModel } from "@/lib/english/prepared-complete-model";
 import SourceImport from "./source-import";
 import { englishSourceImportDigest, preparedEnglishSources } from "@/lib/english/source-import";
 import { auth } from "@/auth";
@@ -12,7 +12,8 @@ export const dynamic = "force-dynamic";
 export default async function EnglishReview() {
   if ((await auth())?.user?.role !== "ADMIN") redirect("/login");
   const complete = preparedCompleteEnglishModel();
-  const completeRow: { key: string; value: string } | null = await db.setting.findUnique({ where: { key: complete.key } });
+  const completeModels = preparedCompleteEnglishModels();
+  const completeRows: { key: string; value: string }[] = await db.setting.findMany({ where: { key: { in: completeModels.map(m => m.key) } } });
   const sources = preparedEnglishSources();
   const imported: { key: string; value: string }[] = await db.setting.findMany({
     where: { key: { in: sources.map(s => s.key) } },
@@ -27,15 +28,21 @@ export default async function EnglishReview() {
     orderBy: { key: "desc" },
     take: 100,
   });
-  const reviewRows = completeRow ? [completeRow, ...rows.filter(r => r.key !== completeRow.key)] : rows;
+  const completeKeys = new Set(completeRows.map(r => r.key));
+  const reviewRows = [...completeRows, ...rows.filter(r => !completeKeys.has(r.key))];
   return (
     <main className="space-y-5 p-5">
       <h1 className="text-2xl font-bold">English — source import ও উদ্ধার করা অংশ</h1>
       <section className="space-y-4 rounded border p-4">
         <h2 className="text-xl font-bold">প্রস্তুত পূর্ণ প্রশ্ন–উত্তর মডেল — Class 6 English 1st Paper</h2>
-        <p>একটি পূর্ণ ১০০ নম্বরের মডেল: ১৩টি অংশ, passage-সংযুক্ত প্রশ্ন এবং আলাদা answer key। এটি ৩০টি passage-এর সব প্রশ্নসেট নয়। মানবণ্টন বইয়ের practice sample অনুযায়ী; বর্তমান circular ও শিক্ষক semantic review বাকি। Unseen আগে পড়ানো হলে পরীক্ষার্থীর জন্য বদলাতে হবে।</p>
+        <p>৩১টি পূর্ণ ১০০ নম্বরের মডেল-combination: প্রতিটিতে ১৩টি অংশ ও answer key। ৩০টি extract-এর প্রত্যেকটির জন্য পাঁচটি gap এবং পাঁচটি vocabulary প্রশ্ন–উত্তর আছে। Seen-1-এর দুইটি প্রস্তুত MCQ/লিখিত group ও তিনটি original unseen group পুনর্ব্যবহৃত—৩১টি সম্পূর্ণ নতুন প্রশ্নসেট নয়। মানবণ্টন বইয়ের practice sample অনুযায়ী; বর্তমান circular ও শিক্ষক semantic review বাকি। Unseen আগে পড়ানো হলে পরীক্ষার্থীর জন্য বদলাতে হবে।</p>
         <details><summary>সম্পূর্ণ মডেল ও উত্তর preview করুন</summary><pre className="whitespace-pre-wrap text-sm">{JSON.stringify({ selection: complete.draft.selection, output: complete.draft.output }, null, 2)}</pre></details>
         <CompleteModelImport digest={complete.digest} />
+        <details><summary>৩০টি নতুন মডেলের সম্পূর্ণ preview / coverage</summary>
+          {completeModels.slice(1).map(m => <details key={m.key} className="my-3 border p-3"><summary>{m.draft.name}</summary><pre className="whitespace-pre-wrap text-sm">{JSON.stringify({selection:m.draft.selection,output:m.draft.output,provenance:m.provenance},null,2)}</pre></details>)}
+        </details>
+        <p>এই সংস্করণের {completeRows.length}/{completeModels.length}টি পূর্ণ মডেল database-এ আছে। Import পুনরায় করলে duplicate হবে না; বিদ্যমান approval/rejection অক্ষত থাকবে।</p>
+        <CompleteModelImport digest={completeEnglishLibraryDigest()} scope="library" />
         <p>Pending import-এর পর নিচের snapshot তালিকা থেকে সম্পূর্ণ মডেল review করে অনুমোদন দিন। তারপরই database-only Auto Model Test-এ পাওয়া যাবে।</p>
       </section>
       <section className="space-y-4">
@@ -54,7 +61,7 @@ export default async function EnglishReview() {
         <SourceImport digest={englishSourceImportDigest()} />
       </section>
       <p>
-        সর্বোচ্চ ১০০টি সংরক্ষিত snapshot। অনুমোদিত অংশ অন্য English paper তৈরিতে
+        প্রস্তুত পূর্ণ মডেলগুলো এবং সর্বোচ্চ ১০০টি অন্যান্য সংরক্ষিত snapshot। অনুমোদিত অংশ অন্য English paper তৈরিতে
         database থেকে ব্যবহার করা যাবে। Live test-এ স্বয়ংক্রিয় প্রকাশ হবে না।
         মালিকের private draft আলাদা থাকে।
       </p>

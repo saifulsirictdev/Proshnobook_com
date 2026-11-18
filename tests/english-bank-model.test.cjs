@@ -35,3 +35,32 @@ test('Full model import is ADMIN-only, Pending-only and preserves existing recor
  const save=action({id:'a',role:'ADMIN'});assert.ok((await save({},new FormData())).error);assert.equal(calls,0);assert.ok((await save({},fd)).message);const r=JSON.parse(saved.get(prepared.key));assert.equal(r.status,'PENDING');assert.equal(r.provenance.teacherApproved,false);assert.deepEqual(r.draft,prepared.draft);
  const approved=record();saved.set(prepared.key,approved);await save({},fd);assert.equal(saved.size,1);assert.equal(saved.get(prepared.key),approved);
 });
+test('Complete library covers all thirty exact extracts with keys, three unseen groups and all six poems',()=>{
+ const lib=require('../lib/english/prepared-complete-model.ts'),models=lib.preparedCompleteEnglishModels(),pool=require('../lib/english/data/class6-seen-pool.json');
+ assert.equal(models.length,31);assert.equal(models[0].digest,prepared.digest);assert.equal(new Set(models.map(m=>m.key)).size,31);
+ assert.equal(new Set(models.slice(1).map(m=>m.provenance.seen2Id)).size,30);
+ assert.equal(new Set(models.slice(1).map(m=>m.provenance.unseenFile)).size,3);
+ const poemLessons=new Set(),newPrompts=new Set();
+ for(const m of models.slice(1)){
+  const p=pool.seen.find(p=>p.id===m.provenance.seen2Id),d=m.draft;
+  assert.equal(d.selection.sources['seen-2'].text,p.text);assert.equal(d.selection.sources['seen-2'].reference,p.reference);
+  assert.notEqual(d.selection.sources['seen-1'].text,d.selection.sources['seen-2'].text);
+  assert.equal(d.output.tasks.length,13);assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
+  for(const id of ['gap','vocabulary']){const t=d.output.tasks.find(t=>t.id===id);assert.equal(t.passageKey,'seen-2');assert.equal(t.subitems.length,5);for(const s of t.subitems){assert.ok(s.answer);newPrompts.add(`${p.id}:${id}:${s.text}`);}}
+  for(const lesson of m.provenance.poemLessons)poemLessons.add(lesson);
+  assert.equal(d.output.tasks[9].subitems.length,8);
+  assert.ok(bank.approvedCompleteEnglishModel(record('APPROVED',d),6,1));assert.equal(bank.approvedCompleteEnglishModel(record('PENDING',d),6,1),null);
+ }
+ assert.equal(newPrompts.size,300);assert.equal(poemLessons.size,6);
+ assert.equal(lib.completeEnglishLibraryDigest(),lib.completeEnglishLibraryDigest());
+});
+test('Batch import checks manifest, writes 31 Pending snapshots atomically and preserves decisions on retry',async()=>{
+ const lib=require('../lib/english/prepared-complete-model.ts');let saved=new Map(),calls=0;
+ const action=load('app/admin/english-review/complete-model-actions.ts',{'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async({data,skipDuplicates})=>{calls++;assert.equal(data.length,31);assert.equal(skipDuplicates,true);let count=0;for(const row of data)if(!saved.has(row.key)){saved.set(row.key,row.value);count++;}return{count};}}}}}).importCompleteEnglishModel;
+ const fd=new FormData();fd.set('scope','library');fd.set('reviewed','yes');fd.set('digest',prepared.digest);
+ assert.ok((await action({},fd)).error);assert.equal(calls,0);
+ fd.set('digest',lib.completeEnglishLibraryDigest());assert.match((await action({},fd)).message,/31টি/);assert.equal(saved.size,31);
+ for(const value of saved.values()){const r=JSON.parse(value);assert.equal(r.status,'PENDING');assert.equal(r.provenance.teacherApproved,false);assert.equal(r.draft.selection.includeAnswers,true);}
+ const first=lib.preparedCompleteEnglishModels()[1],rejected=record('REJECTED',first.draft);saved.set(first.key,rejected);assert.match((await action({},fd)).message,/0টি/);assert.equal(saved.size,31);assert.equal(saved.get(first.key),rejected);
+ fd.set('scope','forged');assert.ok((await action({},fd)).error);assert.equal(calls,2);
+});

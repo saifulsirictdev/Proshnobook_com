@@ -32,13 +32,19 @@ At `/admin/english-review`, a separate **পূর্ণ প্রশ্ন–�
 
 Import uses a deterministic 36-character snapshot ID and one atomic `createMany(skipDuplicates)`; retries cannot duplicate, reset a rejection or overwrite an approval. Provenance/import actor/time retained. Source-only 30+6 inventory remains separate; raw source import is not a question-answer model or approval. No automatic approval or database-import claim.
 
-## Explicitly unfinished scope
-**One complete model is prepared**, not 30 complete passage-linked question sets or a fully populated production bank. All 30 extracts/six poems remain available as source inventory, but most still need prewritten matching questions/keys before entering the full-model bank. Grades 7–12 have no newly prepared full sets in this change and will truthfully show stock missing unless valid approved stock already exists. Preparation/import/review for those grades is not claimed complete.
+## Expanded Class 6 stock (owner follow-up)
+The library now includes the original model plus **30 additional complete model combinations (31 total)**. Every one of the 30 seen extracts appears as the second seen source with five authored gap prompts and five vocabulary prompts, all with keys (300 source-labelled prompts). Repeated shared groups are not counted as new questions. See `ENGLISH-COMPLETE-LIBRARY-COVERAGE.md` for exact coverage and remaining limits.
+
+Shared MCQ/short-answer groups use two source-read passages (Bulbul or railway station), keeping seven MCQ and five short answers attached to exactly one source. All three existing original unseen packs have matching information/True-False/summary keys and are rotated intact. Four poems per combination supply eight offered questions; all six poem sources occur across the library. Writing models and other shared content are reused intentionally, not presented as 31 wholly independent newly authored papers.
+
+ADMIN can preview/import the full 31-model library in one atomic Pending import. Each model still requires its own review/approval. Previous single-model key/import/decisions remain compatible.
+
+Grades 7–12 have no newly prepared full sets in this Class 6 content change and will truthfully show stock missing unless valid approved stock already exists. No cross-grade duplication is used to fake completion.
 
 No authenticated production ADMIN session or database import was performed from the sandbox. Code/PR deployment does not execute import or grant teacher approval. No paid generation request was performed.
 
 ## Verification
 - `python3 scripts/question-bank/build-class6-english1-complete-bank-model.py --check`
-- 85 focused English, full-bank/import, source, builder, Job and exam regression tests pass.
+- 87 focused English, full-bank/import, source, builder, Job and exam regression tests pass.
 - Tests cover complete snapshot/mark/task validation, MCQ+short-answer and unseen linkage, missing keys/parts/source mismatch, all-grade no-stock responses, auth denial before DB read, private ownership, Pending-only import and idempotency preserving approval.
 - `git diff --check` passes. No edited-path TypeScript errors; full local tsc remains blocked by ungenerated Prisma Client.
