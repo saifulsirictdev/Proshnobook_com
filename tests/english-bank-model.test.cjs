@@ -94,3 +94,30 @@ test('Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicat
  for(const value of saved.values()){const r=JSON.parse(value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.mode,'selected');}
  const key=[...saved.keys()][0];saved.set(key,'preserved decision');await action('ADMIN')(fd);assert.equal(saved.size,count);assert.equal(saved.get(key),'preserved decision');
 });
+test('The same item stock serves seen-only, unseen-only and individual tasks without requiring other stock',async()=>{
+ const items=require('../lib/english/item-bank.ts');const stock=items.englishItemGroups(prepared.draft).map(p=>p.draft);
+ for(const ids of [['mcq'],['mcq','comprehension','gap','vocabulary'],['information','true-false','summary'],['paragraph']]){
+  const available=stock.filter(d=>d.output.tasks.some(t=>ids.includes(t.id)));
+  const {draft,missing}=items.assembleEnglishItems(available,6,()=>0,ids);
+  assert.deepEqual(missing,[]);assert.equal(draft.selection.mode,'selected');assert.deepEqual(draft.output.tasks.map(t=>t.id),ids);assert.deepEqual(draft.selection.itemIds,ids);
+  const needed=new Set(draft.output.tasks.map(t=>t.passageKey).filter(Boolean));assert.deepEqual(new Set(draft.output.passages.map(p=>p.key)),needed);
+  const {validateEnglishOutput}=require('../lib/english/generation.ts');const result=validateEnglishOutput(draft.selection,draft.output);assert.ok(result.total<100);
+ }
+ for(const ids of [[],['bad'],['mcq','mcq']])assert.throws(()=>items.assembleEnglishItems(stock,6,()=>0,ids));
+ const rows=items.englishItemGroups(prepared.draft).filter(p=>p.group==='unseen').map(p=>({key:p.key,value:record('APPROVED',p.draft)}));
+ const h=harness(rows);assert.equal((await h.run(6,['summary'])).ok,true);assert.deepEqual(JSON.parse(h.writes[0].value).output.tasks.map(t=>t.id),['summary']);
+ const full=harness(rows);assert.equal((await full.run(6)).ok,false);assert.equal(full.writes.length,0);
+});
+test('ADMIN may explicitly reopen an existing decision for reapproval without deleting content or losing old status',async()=>{
+ const value=record();let current=value,writes=0;
+ function action(role){return load('app/admin/english-review/actions.ts',{'@/auth':{auth:async()=>({user:{id:'owner',role}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{findUnique:async()=>({key:prepared.key,value:current}),updateMany:async({where,data})=>{assert.equal(where.value,current);current=data.value;writes++;}}}}}).reopenEnglishReview;}
+ const form=new FormData();form.set('key',prepared.key);form.set('confirmed','yes');await assert.rejects(()=>action('TEACHER')(form));assert.equal(writes,0);
+ await action('ADMIN')(new FormData());assert.equal(writes,0);await action('ADMIN')(form);
+ const reopened=JSON.parse(current);assert.equal(reopened.status,'PENDING');assert.equal(reopened.previousDecision.status,'APPROVED');assert.equal(reopened.reopenedBy,'owner');assert.deepEqual(reopened.draft,prepared.draft);await action('ADMIN')(form);assert.equal(writes,1);
+});
+test('Bank selection looks ahead so a random Seen-1 choice does not hide a valid distinct Seen-2',()=>{
+ const items=require('../lib/english/item-bank.ts');const groups=items.englishItemGroups(prepared.draft);
+ const seen1=groups.find(g=>g.group==='seen-1').draft,seen2=groups.find(g=>g.group==='seen-2').draft;
+ const conflict=structuredClone(seen1);conflict.selection.sources['seen-1']={...seen2.selection.sources['seen-2']};conflict.output.passages[0].text=seen2.selection.sources['seen-2'].text;
+ const result=items.assembleEnglishItems([conflict,seen1,seen2],6,()=>0,['mcq','comprehension','gap','vocabulary']);assert.ok(result.draft);assert.deepEqual(result.missing,[]);assert.notEqual(result.draft.selection.sources['seen-1'].text,result.draft.selection.sources['seen-2'].text);
+});

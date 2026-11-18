@@ -30,24 +30,31 @@ export function approvedEnglishItem(value: string, grade: number) {
     return draft;
   } catch { return null; }
 }
-export function assembleEnglishItems(stock: EnglishDraft[], grade: number, random = Math.random) {
+export function assembleEnglishItems(stock: EnglishDraft[], grade: number, random = Math.random, itemIds?: string[]) {
   const blueprint = englishBlueprint(grade as EnglishGrade, 1);
+  if (itemIds && (!itemIds.length || new Set(itemIds).size !== itemIds.length || itemIds.some(id => !blueprint.items.some(i => i.id === id)))) throw new Error("Invalid question items");
+  const requested = blueprint.items.filter(i => !itemIds || itemIds.includes(i.id));
   const groups = new Map<string, string[]>();
-  for (const item of blueprint.items) { const group = item.sourceGroup ?? item.id; groups.set(group, [...(groups.get(group) ?? []), item.id]); }
+  for (const item of requested) { const group = item.sourceGroup ?? item.id; groups.set(group, [...(groups.get(group) ?? []), item.id]); }
   const selected: EnglishDraft[] = [], missing: string[] = [];
   const seenTexts = new Set<string>();
   for (const [group, ids] of groups) {
-    const candidates = stock.filter(d => d.selection.grade === grade && d.selection.paper === 1 && ids.every(id => d.output.tasks.some(t => t.id === id)) && (!group.startsWith("seen-") || !seenTexts.has(d.selection.sources[group]?.text.trim() ?? "")));
+    let candidates = stock.filter(d => d.selection.grade === grade && d.selection.paper === 1 && ids.every(id => d.output.tasks.some(t => t.id === id)) && (!group.startsWith("seen-") || !seenTexts.has(d.selection.sources[group]?.text.trim() ?? "")));
+    if (group === "seen-1" && groups.has("seen-2")) {
+      const seen2Ids = groups.get("seen-2")!;
+      candidates = candidates.filter(d => stock.some(other => other.selection.grade === grade && other.selection.paper === 1 && seen2Ids.every(id => other.output.tasks.some(t => t.id === id)) && other.selection.sources["seen-2"]?.text.trim() !== d.selection.sources["seen-1"]?.text.trim()));
+    }
     if (!candidates.length) { missing.push(...ids); continue; }
     const chosen = candidates[Math.min(candidates.length - 1, Math.floor(random() * candidates.length))];
     // Extract only this group, even when reading an older approved complete snapshot.
-    const part = englishItemGroups(chosen).find(p => p.group === group)!.draft;
+    const whole = englishItemGroups(chosen).find(p => p.group === group)!.draft;
+    const part = validateEnglishDraft({ ...whole, selection: { ...whole.selection, itemIds: ids }, output: { ...whole.output, tasks: whole.output.tasks.filter(t => ids.includes(t.id)) } });
     selected.push(part);
     if (group.startsWith("seen-")) seenTexts.add(part.selection.sources[group].text.trim());
   }
   if (missing.length) return { missing, draft: null };
   const base = selected[0];
-  const draft = validateEnglishDraft({ ...base, name: `Class ${grade} — Full Model Test`, selection: { ...base.selection, mode: "full", itemIds: [], sources: Object.assign({}, ...selected.map(d => d.selection.sources)), writing: Object.assign({}, ...selected.map(d => d.selection.writing)) }, output: { passages: selected.flatMap(d => d.output.passages), tasks: blueprint.items.map(i => selected.flatMap(d => d.output.tasks).find(t => t.id === i.id)!) } });
+  const draft = validateEnglishDraft({ ...base, name: `Class ${grade} — Full Model Test`, selection: { ...base.selection, mode: itemIds ? "selected" : "full", itemIds: itemIds ? requested.map(i => i.id) : [], sources: Object.assign({}, ...selected.map(d => d.selection.sources)), writing: Object.assign({}, ...selected.map(d => d.selection.writing)) }, output: { passages: selected.flatMap(d => d.output.passages), tasks: requested.map(i => selected.flatMap(d => d.output.tasks).find(t => t.id === i.id)!) } });
   validateEnglishReferenceShape(draft.selection, draft.output);
   return { missing, draft };
 }

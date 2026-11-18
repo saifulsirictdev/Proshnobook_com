@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { fullModelWriting } from "@/lib/english/builder-mode";
 import { loadEnglishModelSources } from "@/app/actions/english-model-sources";
 import { useRouter } from "next/navigation";
+import { prepareEnglishBankModel } from "@/app/actions/english-bank-model";
 import { generateEnglishPaper } from "@/app/actions/english-paper";
 import {
   englishBlueprint,
@@ -61,7 +62,7 @@ export default function EnglishSetup({
   const [loadingSources, setLoadingSources] = useState(false);
   const [sourceNotice, setSourceNotice] = useState("");
   useEffect(() => {
-    if (mode !== "full" || paper !== 1) { setLoadingSources(false); setSourceNotice(""); return; }
+    if (paper === 1 || mode !== "full") { setLoadingSources(false); setSourceNotice(""); return; }
     let cancelled = false;
     setWriting(old => ({ ...fullModelWriting(grade as EnglishGrade, paper), ...old }));
     if (!englishBlueprint(grade as EnglishGrade, paper).items.some(i => i.sourceGroup && i.sourceGroup !== "unseen")) {
@@ -95,6 +96,12 @@ export default function EnglishSetup({
     if (busy) return;
     setBusy(true);
     try {
+      if (paper === 1) {
+        const generated = await prepareEnglishBankModel(grade, mode === "full" ? undefined : selected.map(i => i.id));
+        if (!generated.ok) setMessage(generated.error);
+        else router.push(`/question-builder/build?englishKey=${encodeURIComponent(generated.key)}&stage=setup`);
+        return;
+      }
       const result = resolveEnglishSelection({
         grade,
         paper,
@@ -132,7 +139,7 @@ export default function EnglishSetup({
     "w-full rounded border border-slate-300 bg-white p-2 text-slate-900";
   return (
     <main className="english-setup mx-auto max-w-4xl space-y-6 px-4 py-8">
-      {busy && <PreparationPopup subject="English" stage={1} />}
+      {busy && <PreparationPopup subject="English" stage={1} databaseOnly={paper === 1} />}
       <header className="english-setup-header">
         <a href="/question-builder/english/saved">আমার English draft</a>
         <span className="english-eyebrow">PAPER STUDIO · 2027</span>
@@ -192,7 +199,7 @@ export default function EnglishSetup({
           <option value="writing">Writing Only</option>
         </select>
       </label>
-      {mode === "full" && paper === 1 && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
+      {mode === "full" && paper === 2 && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
         পূর্ণ {blueprint.total} নম্বরের সব অংশ নির্বাচিত। Writing topic স্বয়ংক্রিয়ভাবে বাছাই করা হয়েছে; চাইলে বদলাতে পারবেন।
         {sourceKeys.length > 0 ? " " + sourceNotice : " এই পত্রে textbook extract প্রয়োজন নেই।"}
         প্রযোজ্য syllabus ও template মিলিয়ে নিচের বোতামে পুরো paper তৈরি করুন। নির্বাচন করলেই কোনো AI request বা খরচ হবে না।
@@ -273,7 +280,7 @@ export default function EnglishSetup({
                   <small>marks</small>
                 </span>
               </label>
-              {i.section === "writing" &&
+              {paper === 2 && i.section === "writing" &&
                 selected.some((s) => s.id === i.id) && (
                   <div className="english-writing-fields mt-3 space-y-2">
                     {i.writingChoices && (
@@ -355,7 +362,7 @@ export default function EnglishSetup({
             </div>
           ))}
       </section>
-      {sourceKeys.map((key) => (
+      {(paper === 1 ? [] : sourceKeys).map((key) => (
         <fieldset className="space-y-2 rounded border p-4" key={key}>
           <legend>Textbook source: {key}</legend>
           <p>
@@ -399,17 +406,16 @@ export default function EnglishSetup({
           </label>
         </fieldset>
       ))}
-      <label className="english-answer-option block">
+      {paper === 2 && <label className="english-answer-option block">
         <input
           type="checkbox"
           checked={answers}
           onChange={(e) => setAnswers(e.target.checked)}
         />{" "}
         Request separate answers / writing samples
-      </label>
+      </label>}
       <p>
-        শুধু নির্বাচিত writing task ও topic ব্যবহার হবে। আগে অনুমোদিত database থেকে
-        মিল খোঁজা হবে; না-পাওয়া অংশ তৈরি করা হবে।
+        {paper === 1 ? "নির্বাচিত item-এর প্রস্তুত প্রশ্ন–উত্তর নেওয়া হবে। Passage ও তার প্রশ্ন একসঙ্গে থাকবে; পরে সম্পাদনা করতে পারবেন।" : "শুধু নির্বাচিত writing task ও topic ব্যবহার হবে। আগে অনুমোদিত database থেকে মিল খোঁজা হবে; না-পাওয়া অংশ তৈরি করা হবে।"}
       </p>
       <button
         className="english-generate rounded bg-emerald-600 px-5 py-3 text-white"
@@ -425,9 +431,7 @@ export default function EnglishSetup({
         সংরক্ষিত / উদ্ধার করা English draft দেখুন
       </a>
       <p className="text-sm text-slate-600">
-        অ্যাডমিন ছাড়া সকল ব্যবহারকারীর জন্য প্রতিদিন সর্বোচ্চ ১০টি generation চেষ্টা;
-        অ্যাডমিনের দৈনিক সীমা নেই। প্রশ্ন ব্যক্তিগত draft হিসেবে সেভ হবে। ব্যবহারের
-        আগে প্রশ্ন ও উত্তর যাচাই করুন।
+        {paper === 1 ? "প্রস্তুত প্রশ্ন ব্যক্তিগত draft হিসেবে সেভ হবে। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।" : "অ্যাডমিন ছাড়া সকল ব্যবহারকারীর জন্য প্রতিদিন সর্বোচ্চ ১০টি generation চেষ্টা; অ্যাডমিনের দৈনিক সীমা নেই। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।"}
       </p>
     </main>
   );
