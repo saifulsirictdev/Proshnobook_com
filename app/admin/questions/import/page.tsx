@@ -1,3 +1,4 @@
+import EnglishQuestionItems from "../english-items";
 import Link from "next/link";
 import PreparedLibrary from "./prepared-library";
 import JsonUploadForm from "./json-upload-form";
@@ -11,7 +12,8 @@ import WrittenForm from "./written-form";
 import mathChapter1 from "@/content/question-bank/class-6/math-ch1-draft.json";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "অধ্যায়ভিত্তিক প্রশ্নব্যাচ import", robots: { index: false, follow: false } };
-export default async function MCQImport() {
+export default async function MCQImport({searchParams}:{searchParams:Promise<{category?:string;subject?:string}>}) {
+  const params = await searchParams;
   await staff();
   const index = preparedImportIndex();
   const summaries = index.map(({digest,...summary})=>summary);
@@ -26,7 +28,7 @@ export default async function MCQImport() {
   return <main className="mx-auto max-w-6xl space-y-6 p-6">
     <Link className="qm-action-link" href="/admin/questions">← প্রশ্ন ব্যবস্থাপনা</Link>
     <h1 className="text-3xl font-bold">শ্রেণি, বিষয় ও অধ্যায়ভিত্তিক প্রশ্ন import</h1>
-    <PreparedLibrary catalog={importCatalog} batches={summaries} savedIds={savedIds} />
+    <PreparedLibrary initialCategory={params.category} initialSubject={params.subject} englishItems={<EnglishQuestionItems />} catalog={importCatalog} batches={summaries} savedIds={savedIds} />
     <JsonUploadForm catalog={uploadCatalog} />
     <details><summary className="cursor-pointer font-semibold">পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান</summary>
     <p>লক্ষ্য প্রতি যাচাইকৃত অধ্যায়ে ১০০টি, উৎসে যথেষ্ট স্বতন্ত্র প্রশ্ন না হলে অন্তত ৫০টি। বর্তমান selector তালিকা সরকারি সূচিপত্র হিসেবে যাচাইকৃত নয়; writing/model-test টপিক আগে যাচাই করুন। সংখ্যা মানের বিকল্প নয়।</p>

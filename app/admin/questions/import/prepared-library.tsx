@@ -1,5 +1,5 @@
 "use client";
-import {useActionState,useState} from "react";
+import {useActionState,useState,type ReactNode} from "react";
 import Link from "next/link";
 import {selectPreparedBatches,pendingReviewHref} from "@/lib/prepared-batch-selection";
 import {previewPrepared,savePrepared,type PreparedState} from "./prepared-actions";
@@ -57,10 +57,11 @@ function SubjectBatchPanel({batches}:{batches:Summary[]}){
   <p role="status" aria-live="polite">{busy?"প্রক্রিয়া চলছে… ":""}প্রিভিউ: {batches.filter(b=>previews[b.id]?.preview).length}/{batches.length} · database যাচাই সম্পন্ন ব্যাচ: {batches.filter(b=>results[b.id]?.message).length}/{batches.length} · সেভে সমস্যা/অনিশ্চিত: {batches.filter(b=>results[b.id]?.error).length}</p>
  </div>;
 }
-export default function PreparedLibrary({catalog,batches,savedIds}:{catalog:Catalog;batches:Summary[];savedIds:string[]}){
- const [category,setCategory]=useState(catalog[0]?.category??"");const [subject,setSubject]=useState("");const [topic,setTopic]=useState("");
+export default function PreparedLibrary({catalog,batches,savedIds,englishItems,initialCategory,initialSubject}:{catalog:Catalog;batches:Summary[];savedIds:string[];englishItems?:ReactNode;initialCategory?:string;initialSubject?:string}){
+ const [category,setCategory]=useState(catalog.some(c=>c.category===initialCategory)?initialCategory!:catalog[0]?.category??"");const [subject,setSubject]=useState(initialSubject??"");const [topic,setTopic]=useState("");
  const subjects=catalog.find(c=>c.category===category)?.subjects??[];
  const chapters=subjects.find(s=>s.name===subject)?.chapters??[];
+ const english = category === "Class 6" && subject === "English 1st Paper";
  const selected=selectPreparedBatches(batches,{category,subject,topic});
  return <section className="space-y-4 rounded-2xl border bg-slate-50 p-5">
   <h2 className="text-2xl font-bold">অধ্যায়ভিত্তিক প্রস্তুত প্রশ্নব্যাচ</h2>
@@ -68,11 +69,12 @@ export default function PreparedLibrary({catalog,batches,savedIds}:{catalog:Cata
   <div className="grid gap-3 sm:grid-cols-3">
    <label>শ্রেণি<select className="block w-full rounded border p-2" value={category} onChange={e=>{setCategory(e.target.value);setSubject("");setTopic("");}}>{catalog.map(c=><option key={c.category}>{c.category}</option>)}</select></label>
    <label>বিষয়<select className="block w-full rounded border p-2" value={subject} onChange={e=>{setSubject(e.target.value);setTopic("");}}><option value="">বিষয় নির্বাচন করুন</option>{subjects.map(s=><option key={s.name}>{s.name}</option>)}</select></label>
-   <label>অধ্যায়<select disabled={!subject} className="block w-full rounded border p-2" value={topic} onChange={e=>setTopic(e.target.value)}><option value="">সব প্রস্তুত অধ্যায়</option>{chapters.map(t=><option key={t}>{t}</option>)}</select></label>
+   <label>{english?"Question Item":"অধ্যায়"}<select disabled={!subject||english} className="block w-full rounded border p-2" value={topic} onChange={e=>setTopic(e.target.value)}><option value="">সব প্রস্তুত অধ্যায়</option>{chapters.map(t=><option key={t}>{t}</option>)}</select></label>
   </div>
-  {subject&&<div className="rounded-lg border border-indigo-100 bg-white p-3"><p role="status">{selected.length}টি প্রস্তুত ব্যাচ · MCQ {selected.reduce((n,b)=>n+b.counts.MCQ,0)} · CQ {selected.reduce((n,b)=>n+b.counts.CQ,0)} · SQ {selected.reduce((n,b)=>n+b.counts.SQ,0)}</p><Link className="qm-action-link" href={pendingReviewHref(category,subject)}>এই বিষয়ের সংরক্ষিত Pending প্রশ্ন দেখুন →</Link><p className="text-sm text-slate-600">এখানকার সংখ্যা খসড়ার পরিমাণ; পূর্ণ বিষয়ের লক্ষ্যমাত্রা বা শিক্ষক-অনুমোদনের সনদ নয়। প্রতিটি ব্যাচের সীমাবদ্ধতা পড়ুন।</p></div>}
-  {subject&&selected.length>0&&<SubjectBatchPanel key={JSON.stringify([category,subject,topic])} batches={selected}/>}
-  {subject&&(selected.length?selected.map(b=><BatchCard key={b.id} batch={b} saved={savedIds.includes(b.id)}/>):<p role="status">এই নির্বাচন অনুযায়ী কোনো প্রস্তুত ব্যাচ নেই। কোনো প্রশ্ন সেভ বা তৈরি হয়নি।</p>)}
+  {english&&englishItems}
+  {subject&&!english&&<div className="rounded-lg border border-indigo-100 bg-white p-3"><p role="status">{selected.length}টি প্রস্তুত ব্যাচ · MCQ {selected.reduce((n,b)=>n+b.counts.MCQ,0)} · CQ {selected.reduce((n,b)=>n+b.counts.CQ,0)} · SQ {selected.reduce((n,b)=>n+b.counts.SQ,0)}</p><Link className="qm-action-link" href={pendingReviewHref(category,subject)}>এই বিষয়ের সংরক্ষিত Pending প্রশ্ন দেখুন →</Link><p className="text-sm text-slate-600">এখানকার সংখ্যা খসড়ার পরিমাণ; পূর্ণ বিষয়ের লক্ষ্যমাত্রা বা শিক্ষক-অনুমোদনের সনদ নয়। প্রতিটি ব্যাচের সীমাবদ্ধতা পড়ুন।</p></div>}
+  {subject&&!english&&selected.length>0&&<SubjectBatchPanel key={JSON.stringify([category,subject,topic])} batches={selected}/>}
+  {subject&&!english&&(selected.length?selected.map(b=><BatchCard key={b.id} batch={b} saved={savedIds.includes(b.id)}/>):<p role="status">এই নির্বাচন অনুযায়ী কোনো প্রস্তুত ব্যাচ নেই। কোনো প্রশ্ন সেভ বা তৈরি হয়নি।</p>)}
   <details><summary className="cursor-pointer font-semibold">সব প্রস্তুত ব্যাচ ({batches.length})</summary>{batches.map(b=><button key={b.id} type="button" className="my-2 block text-left text-indigo-800 underline" onClick={()=>{setCategory(b.category);setSubject(b.subject);setTopic(b.topic);}}>{b.category} → {b.subject} → {b.topic} · {b.title}</button>)}</details>
  </section>;
 }

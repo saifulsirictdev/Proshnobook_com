@@ -30,6 +30,8 @@ export async function decideEnglishRecovery(form: FormData) {
     },
   });
   revalidatePath("/admin/english-review");
+  revalidatePath("/admin/questions");
+  revalidatePath("/admin/questions/import");
 }
 
 /** Explicit re-review keeps the content and previous decision; never bulk resets on import. */
@@ -46,4 +48,6 @@ export async function reopenEnglishReview(form: FormData) {
   validateEnglishReferenceShape(draft.selection, draft.output);
   await db.setting.updateMany({where:{key,value:row.value},data:{value:JSON.stringify({...record,status:"PENDING",previousDecision:{status:record.status,reviewedAt:record.reviewedAt ?? null},reopenedBy:user.id,reopenedAt:new Date().toISOString()})}});
   revalidatePath("/admin/english-review");
+  revalidatePath("/admin/questions");
+  revalidatePath("/admin/questions/import");
 }

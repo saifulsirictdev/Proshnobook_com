@@ -64,3 +64,11 @@ First-paper Question Item links and Full Model Test now call the same approved s
 The existing `PreparationPopup` is shown while preparing; first-paper requests use its database-only branding. Success opens the existing English editor's Page Set-up panel directly (`stage=setup`), with editing still available. Second-paper auto preparation retains review-first routing. The processing popup remains visible through successful navigation instead of briefly displaying Retry.
 
 ADMIN review now displays Class 6 item coverage and supports explicit per-record re-review: a confirmed Approved/Rejected record can return to Pending with its previous status and reopening actor/time retained. Imports still do not reset decisions. Pending content is never served to users. No production data has been imported, approved or deleted by these code changes.
+
+### Common ADMIN workflow
+
+English item preview/Pending import is now inside `/admin/questions/import`, under the existing Class 6 → English 1st Paper subject selection. English set review/approval and confirmed re-review are inside `/admin/questions`, including when filtered by that class/subject/status. The old `/admin/english-review` bookmark redirects to common question management; stored records and server-side authorization are retained. Existing legacy approved snapshots are still recognized and reviewable. No destructive migration or approval reset is performed.
+
+The common panel uses passage-bound prepared sets rather than pretending ordinary chapter `Question` rows or reading-source receipts constitute a complete English item bank. General question-row totals are unchanged; the English set panel separately reports readiness. Individual and bulk imports are Pending-only and duplicate-safe. Approval invalidates both common pages.
+
+ADMIN readiness and user assembly both call `loadEnglishStock` and the same assembler. The panel lists exact missing items and malformed stored records instead of treating a status flag as usable stock. This does not prove that a particular production import or approval has occurred: no live database read, import or approval was executed during this change. Complete stock still requires every needed group, valid answer keys and distinct Seen-1/Seen-2 sources.

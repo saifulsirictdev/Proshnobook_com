@@ -1,3 +1,4 @@
+import EnglishQuestionItems from "./english-items";
 import React from "react";
 import Link from "next/link";
 import { db } from "@/lib/db";
@@ -59,6 +60,7 @@ export default async function AdminQuestionsPage({
 
   return (
     <div className="mx-auto max-w-6xl px-3 py-6 font-sans">
+      {(!category || category === "Class 6") && (!subject || /english.*1st/i.test(subject)) && <EnglishQuestionItems review status={status} />}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
         <div>
           <h1 className="text-2xl font-black text-slate-900 flex items-center gap-2">

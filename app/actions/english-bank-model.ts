@@ -2,8 +2,8 @@
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { randomUUID } from "node:crypto";
-import { approvedEnglishItem, assembleEnglishItems } from "@/lib/english/item-bank";
-import type { EnglishDraft } from "@/lib/english/draft";
+import { assembleEnglishItems } from "@/lib/english/item-bank";
+import { loadEnglishStock } from "@/lib/english/stock";
 import { englishOwnerPrefix, validateEnglishDraft } from "@/lib/english/draft";
 import { paperHeaderSchema } from "@/lib/paper-header";
 /** Database-only first-paper auto models: no provider, generation quota or source form. */
@@ -12,20 +12,9 @@ export async function prepareEnglishBankModel(grade: number, itemIds?: string[])
   if (!user?.id || user.role === "STUDENT") return { ok: false as const, error: "আগে শিক্ষক/অনুমোদিত অ্যাকাউন্টে লগইন করুন।" };
   if (!Number.isInteger(grade) || grade < 6 || grade > 12) return { ok: false as const, error: "শ্রেণি যাচাই করুন।" };
   try {
-    const stock: EnglishDraft[] = [];
-    // Independent item records are primary; legacy approved snapshots remain usable as item stock.
-    for (const prefix of ["english-item:v1:", "english-review:"]) {
-      let cursor: string | undefined;
-      while (true) {
-        const rows: { key: string; value: string }[] = await db.setting.findMany({
-          where: { key: { startsWith: prefix, ...(cursor ? { gt: cursor } : {}) } },
-          orderBy: { key: "asc" }, take: 100,
-        });
-        for (const row of rows) { const part = approvedEnglishItem(row.value, grade); if (part) stock.push(part); }
-        if (rows.length < 100 || rows.at(-1)?.key === cursor) break;
-        cursor = rows.at(-1)!.key;
-      }
-    }
+    const stock = await loadEnglishStock(grade, (prefix, cursor) => db.setting.findMany({
+      where: {key:{startsWith:prefix,...(cursor ? {gt:cursor} : {})}}, orderBy:{key:"asc"}, take:100,
+    }));
     const assembled = assembleEnglishItems(stock, grade, Math.random, itemIds);
     const chosen = assembled.draft;
     if (!chosen) return { ok: false as const, error: `এই শ্রেণির প্রশ্নভান্ডারে কিছু অংশ এখনো প্রস্তুত নেই। অনুগ্রহ করে পরে আবার চেষ্টা করুন।` };
