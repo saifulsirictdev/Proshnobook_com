@@ -25,20 +25,20 @@ For **Class 6 first paper only**, the eight groups follow the user's screenshot 
 
 Selecting Seen or Unseen selects the complete group, not just its first task. Group membership is resolved from a server-side whitelist for that grade; foreign/malformed group parameters cannot add tasks. Individual legacy item URLs remain supported for first paper.
 
-**Grades 7–12 do not copy these screenshot groups.** Their numbered Question item lists are built from their own existing `englishBlueprint(grade, 1)` tasks. Those practice templates are user-supplied references, not newly certified current official circulars. The individual numbering respects junior, SSC and HSC differences.
+**Grades 8–12 do not copy these screenshot groups.** Their numbered Question item lists are built from their own existing `englishBlueprint(grade, 1)` tasks. Those practice templates are user-supplied references, not newly certified current official circulars. The individual numbering respects junior, SSC and HSC differences.
 
 ### Full Model Test
 No lesson/question-item selection is required. The first-paper setup selects every part of the grade's template, shows its total marks and supplies editable practice writing prompts automatically. An explicit generation button avoids spending quota on a dropdown change. The existing generator still validates source sharing, counts, marks and complete output, then opens the private English editor/preview/print flow.
 
 ## Information gaps (reported, not invented)
 - **Class 6 first paper:** all 33 lesson names exist in the catalog.
-- **Class 7 first paper:** the old catalog contains question-pattern headings/model-test headings, not a textbook Lesson/Unit contents list. The old topics remain available under Lesson as requested, with a visible warning that the actual textbook contents are needed. No fabricated lesson names are supplied.
+- **Class 7 first paper:** the owner supplied the nine-unit contents and eight Question item groups in a separate screenshot. Lesson now shows only those nine Units; the old question-pattern/model headings remain in the underlying catalog for existing bank records, not mixed into Lesson. The previous missing-contents notice is removed.
 - **Class 8 first paper:** existing textbook Unit 1–11 topics and the old supplementary writing/pattern groups are retained.
 - **Classes 9–10 first paper:** existing catalog is stored under `Class 9`; its Unit 1–16 and supplementary topics are retained for both grades.
 - **Classes 11–12 first paper:** existing 12-unit HSC catalog is retained.
 - **Grades 1–5:** no English blueprint/catalog is supplied in this repository; no new syllabus or model flow is invented for them.
 
-Catalog presence is not independent verification of textbook edition, current circular applicability or adequate bank question stock. Question item information exists in the repository for every supported grade 6–12; the known missing first-paper *lesson* contents are Class 7.
+Catalog presence is not independent verification of textbook edition, current circular applicability or adequate bank question stock. Question item information exists in the repository for every supported grade 6–12; the previously missing Class 7 first-paper *lesson* contents have now been supplied by the owner.
 
 ## Full-paper source safety
 A read-only authenticated first-paper-only action searches at most 1,000 `english-review:` snapshots. Only APPROVED records passing complete draft validation, matching the exact grade/paper, may supply shared textbook extracts/references. Pending/malformed/foreign-grade snapshots and private owner drafts are excluded. Lookup does not invoke AI, create a draft, change approval or consume generation quota. Late source responses from an earlier class/mode are ignored; teacher-edited sources are not overwritten.
@@ -48,7 +48,25 @@ If the approved pool lacks a required seen passage, poem or story, the teacher m
 Other subjects, Job/Admission English and the existing append-to-paper flow remain unchanged. No database schema/category, role, wallet, publication or auth bypass was added.
 
 ## Validation
-- 65 focused tests pass: English generation/actions/blueprints, first-only scope, rendered nested selectors, all grades, screenshot group membership, exact old lesson preservation, grouped entry validation, missing Class 7 lesson notice and Job/non-English regressions.
+- 66 focused tests pass: English generation/actions/blueprints, first-only scope, rendered nested selectors, all grades, screenshot group membership, exact old lesson preservation, grouped entry validation, Class 7 nine-unit contents and grouped entry and Job/non-English regressions.
 - `git diff --check` passes.
 - The prior PR revision passed both GitHub security CI and Vercel. Updated checks must be evaluated for the new head; old green checks are not proof of the new revision.
 - Local full typecheck/security tests require Prisma Client generation, whose engine download host is blocked in this sandbox. No successful full local build/typecheck or live database/AI generation is claimed.
+
+## Class 7 owner screenshot update
+Source: `Screenshot_2026-11-18-15-33-20-89_40deb401b9ffe8e1df2f1cc5ba480b12.jpg`, supplied in this conversation. This is an owner-provided contents screenshot, not independently verified current NCTB circular or marks distribution. No marks or generated textbook passages are inferred from the image.
+
+Lesson titles: (1) Attention, Please; (2) My Study Guide; (3) What are Friends for?; (4) People Who Make a Difference; (5) Great Women to Remember; (6) Leisure; (7) Games and Sports; (8) Likes and Dislikes; (9) Climate Change. Each retains its Unit-01 through Unit-09 prefix for selection and filtering.
+
+The Class 7 Question item list is separately defined from its own screenshot: Q1–4 Seen, Q5–7 Unseen, Q8 Matching, Q9 Re-arranging Sentences, Q10 Question Answer from Poem, Q11 Completing a Story, Q12 Writing Paragraph, Q13 Writing Dialogues. Seen and Unseen select all four/three tasks respectively. The screenshot's ninth row, Model Tests, uses the existing separate Full Model Test mode and is not treated as a ninth question item. Classes 6 and 8–12 and every second-paper list remain unchanged.
+
+## Full-model flow correction: questions before Page Set-up
+Explicit first-paper `mode=full` entry now mounts `EnglishAutoModel`, not the task configuration screen. The class is already supplied by the starter. The server fixes full mode, first paper, every blueprint task, writing defaults and separate answers, then calls the existing authenticated `generateEnglishPaper` bank-first/AI-missing-parts pipeline. Existing quotas, generation lock, provider validation, partial recovery and private ownership remain authoritative. No new direct provider call or publication path was introduced.
+
+After successful generation, the private editor opens in **review** stage: complete questions first, an explicit question-edit control, and manual instruction/subquestion/options/answer/structured-table editing. This is editing, not a promise of one-click AI alternative-question replacement. Header/layout settings are hidden in review; desktop review uses one full-width paper column. “প্রশ্ন পছন্দ হয়েছে → Set-up” validates and saves the edited paper first; only a confirmed save without intervening edits opens Page Set-up. The print button is disabled until that step. The same in-memory draft, answers and private key are retained.
+
+Only unavailable exact textbook extracts/references can interrupt automatic preparation. Required seen/poem/story text is never invented by AI. Missing-source detection happens before generation quota is spent; users see only the missing extract fields, not task/marks/writing selection. Supplied sources resume the complete automatic paper flow. Original unseen passages and missing question tasks are handled by the existing AI pipeline. If provider/storage/quota fails, the error/recovered-draft path remains explicit; no incomplete model is represented as complete. An approved source lookup is not itself a question-bank match; generation still validates/reuses compatible approved complete source groups.
+
+The auto-entry effect caches its promise across React Strict Mode effect replay, preventing duplicate concurrent requests from that replay. A full browser refresh is a new user request; users are warned to check saved/recovered drafts when a network result is uncertain. No cross-reload idempotency or arbitrary retry-free generation is claimed.
+
+Validation after this correction: 71 focused tests pass, including automatic full selection for every supported grade, second-paper and Topic-wise exclusion, missing-source/auth/input guards and review-stage entry. Full local typecheck remains blocked by the sandbox's ungenerated Prisma Client; no successful local application build or live AI/database test is claimed.

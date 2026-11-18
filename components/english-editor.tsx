@@ -27,10 +27,13 @@ import { currentHeader } from "@/lib/paper-header";
 export default function EnglishEditor({
   draftKey,
   initial,
+  reviewFirst = false,
 }: {
   draftKey: string;
   initial: EnglishDraft;
+  reviewFirst?: boolean;
 }) {
+  const [reviewing, setReviewing] = useState(reviewFirst);
   const [draft, setDraft] = useState(initial),
     [busy, setBusy] = useState(false),
     [message, setMessage] = useState(""),
@@ -109,6 +112,7 @@ export default function EnglishEditor({
             ? "সেভ হয়েছে; সেভ চলার সময় করা নতুন পরিবর্তন এখনও সেভ হয়নি।"
             : "সেভ হয়েছে।",
         );
+        return !changed;
       } else setMessage(response.error || "সেভ হয়নি।");
     } catch {
       setMessage(
@@ -135,10 +139,17 @@ export default function EnglishEditor({
   return (
     <main className="english-workspace mx-auto max-w-6xl p-4">
       <div className="english-controls space-y-4">
-        <h1 className="text-2xl font-bold">প্রশ্নপত্রের Page Setup — English</h1>
-        <button onClick={() => setSettingsOpen(true)}>
+        <h1 className="text-2xl font-bold">{reviewing ? "প্রশ্ন দেখুন ও পরিবর্তন করুন — English" : "প্রশ্নপত্রের Page Setup — English"}</h1>
+        {reviewing && <div className="space-y-3 rounded border bg-indigo-50 p-4">
+          <p>সম্পূর্ণ প্রশ্নপত্র নিচে দেখুন। পছন্দ না হলে “প্রশ্ন ও উত্তর সম্পাদনা” খুলে বদলান। কাঠামো ও নম্বর ঠিক থাকলে পরের ধাপে যান।</p>
+          <button onClick={() => { setEdit(true); document.getElementById("english-question-edit")?.scrollIntoView({ behavior: "smooth" }); }}>প্রশ্ন বদলান / সম্পাদনা করুন</button>
+          <button disabled={busy || !result} onClick={async () => {
+            if (await save()) { setReviewing(false); setSettingsOpen(true); }
+          }}>প্রশ্ন পছন্দ হয়েছে → Set-up</button>
+        </div>}
+        {!reviewing && <button onClick={() => setSettingsOpen(true)}>
           ⚙ Page Setup / সেটিংস
-        </button>
+        </button>}
         <div className="flex flex-wrap gap-4">
           <button
             disabled={!past.current.length || busy}
@@ -158,7 +169,7 @@ export default function EnglishEditor({
             {busy ? "সেভ হচ্ছে…" : "সেভ করুন"}
           </button>
           <button
-            disabled={!result}
+            disabled={!result || reviewing}
             onClick={() => {
               if (dirty && !confirm("পরিবর্তন সেভ করা হয়নি। তবুও print করবেন?"))
                 return;
@@ -194,6 +205,7 @@ export default function EnglishEditor({
             পৃথক উত্তরপত্র দেখুন/print করুন
           </label>
         </div>
+        {!reviewing && <>
         <HeaderManager
           settings={applyHeader(restoreSettings({}), draft.header)}
           update={(settings) => update({ ...draft, header: settings.header })}
@@ -245,7 +257,8 @@ export default function EnglishEditor({
             </label>
           ))}
         </details>
-        <details open={edit} onToggle={(e) => setEdit(e.currentTarget.open)}>
+        </>}
+        <details id="english-question-edit" open={edit} onToggle={(e) => setEdit(e.currentTarget.open)}>
           <summary>প্রশ্ন ও উত্তর সম্পাদনা</summary>
           <p>
             Topic/word limit/source ও প্রশ্নের সংখ্যা অক্ষুণ্ণ রাখুন। Table ও subitems
@@ -334,8 +347,8 @@ export default function EnglishEditor({
           </p>
         )}
       </div>
-      <div className="english-document-grid">
-        <PaperSettingsPanel
+      <div className="english-document-grid" style={reviewing ? { gridTemplateColumns: "minmax(0, 1fr)" } : undefined}>
+        {!reviewing && <PaperSettingsPanel
           english
           settings={pageSettings}
           update={(next) =>
@@ -366,7 +379,7 @@ export default function EnglishEditor({
           onRedo={() => {}}
           canUndo={false}
           canRedo={false}
-        />
+        />}
         <style>{`@media print{@page{size:${draft.layout.paper};margin:${draft.layout.marginTop}px ${draft.layout.marginRight}px ${draft.layout.marginBottom}px ${draft.layout.marginLeft}px}}`}</style>
         <article
           id="paper"

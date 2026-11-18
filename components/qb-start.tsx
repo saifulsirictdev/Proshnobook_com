@@ -302,7 +302,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </>}
         {englishMode === "full" && <p className="rounded-lg bg-indigo-50 p-3 text-sm">
           Class {english.grade} · English {english.paper === 1 ? "1st" : "2nd"} Paper · {english.blueprint.total} marks।
-          সব অংশ ও writing topic স্বয়ংক্রিয়ভাবে বাছাই হবে। অনুমোদিত textbook source না থাকলে পরের ধাপে দিতে হবে।
+          সব অংশ স্বয়ংক্রিয়ভাবে বেছে প্রশ্নভান্ডার থেকে প্রশ্ন নেওয়া হবে; না থাকলে AI তৈরি করবে (বিদ্যমান quota প্রযোজ্য)। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up। নির্ভরযোগ্য textbook source অনুপস্থিত থাকলেই শুধু সেটি চাইবে।
           এটি practice template; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন।
         </p>}
       </>}
