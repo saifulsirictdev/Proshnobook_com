@@ -16,6 +16,7 @@ esbuild.buildSync({
     "next/link": __dirname + "/mocks.jsx",
     "next/navigation": __dirname + "/mocks.jsx",
     "@/app/actions/english-paper": __dirname + "/mocks.jsx",
+    "@/app/actions/english-model-sources": __dirname + "/mocks.jsx",
     "@/app/actions/paper-headers": __dirname + "/mocks.jsx",
   },
   nodePaths: [root + "/node_modules"],
