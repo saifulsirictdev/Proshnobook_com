@@ -1,4 +1,5 @@
 "use server";
+import { prepareEnglishBankModel } from "./english-bank-model";
 import { z } from "zod";
 import { auth } from "@/auth";
 import { englishBlueprint, type EnglishGrade } from "@/lib/english/blueprints";
@@ -11,7 +12,7 @@ const input = z.object({
   paper: z.union([z.literal(1), z.literal(2)]).default(1),
   sources: z.record(z.string(), z.object({ text: z.string().trim().min(1).max(20000), reference: z.string().trim().min(1).max(500) }).strict()).default({}),
 }).strict();
-/** Explicit full-model entry: server chooses all tasks/marks; bank first, AI for missing tasks.
+/** First-paper automatic entry is database-only; second paper retains bank/AI generation.
  * Never synthesise a seen passage or silently substitute another class's source.
  */
 export async function prepareEnglishFullModel(raw: unknown) {
@@ -21,6 +22,7 @@ export async function prepareEnglishFullModel(raw: unknown) {
   if (!parsed.success) return { ok: false as const, error: "শ্রেণি ও textbook source যাচাই করুন।" };
   const grade = parsed.data.grade as EnglishGrade;
   const paper = parsed.data.paper;
+  if (paper === 1) return prepareEnglishBankModel(grade);
   const required = [...new Set(englishBlueprint(grade, paper).items.map(i => i.sourceGroup).filter((k): k is NonNullable<typeof k> => !!k && k !== "unseen"))];
   if (Object.keys(parsed.data.sources).some(k => !required.includes(k as typeof required[number]))) return { ok: false as const, error: "অপ্রত্যাশিত textbook source।" };
   const approved = required.length ? await loadEnglishModelSources(grade, paper) : { sources: {}, error: "" };
