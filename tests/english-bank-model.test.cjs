@@ -250,7 +250,9 @@ test('SSC year/source and historical-mark differences render once per question a
   const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
   const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story').draft;
   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
+  p.settings.show.marks=true;
   const html=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');assert.equal((html.match(/Dhaka Board 2024/g)||[]).length,1);assert.match(html,/Q9/);assert.match(html,/মূল প্রশ্নে 10 নম্বর; practice-এ 15/);
+  p.settings.show.marks=false;const hidden=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');assert.doesNotMatch(hidden,/মূল প্রশ্নে/);assert.match(hidden,/Dhaka Board 2024/);
   const Year=require('../components/english-board-year.tsx').default;const control=render(React.createElement(Year,{value:'2024',onChange(){}}));assert.match(control,/value="2024"/);assert.match(control,/type="number"/);
  }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
 });
