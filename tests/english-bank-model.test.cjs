@@ -199,7 +199,7 @@ test('English pagination splits presentation blocks without losing passages, tab
 });
 test('SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance',()=>{
  const registry=require('../lib/english/prepared-items.ts'),items=registry.preparedEnglishItems(10),{validateEnglishReferenceShape}=require('../lib/english/generation.ts');
- assert.equal(items.length,7);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
+ assert.equal(items.length,9);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
  assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
  assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
  assert.equal(registry.englishItemsDigest(10),registry.englishItemsDigest(10));assert.equal(registry.preparedEnglishItems(9).length,0);
@@ -230,7 +230,7 @@ test('Old drafts still validate, while malformed board provenance is rejected',(
  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10)[0].draft;
  for(const patch of [{examYear:2024.5},{board:'School model'},{pdfPage:0},{sourceFile:''},{questionNumber:0}]){const invalid=structuredClone(d);Object.assign(invalid.output.tasks[0].boardSource,patch);assert.throws(()=>validateEnglishDraft(invalid));}
 });
-test('SSC batch covers nine existing items in seven groups and honestly reports missing poem/story comprehension',()=>{
+test('SSC registry covers nine existing item types and honestly reports missing poem/story comprehension',()=>{
  const registry=require('../lib/english/prepared-items.ts'),bank=require('../lib/english/item-bank.ts'),generation=require('../lib/english/generation.ts');
  const items=registry.preparedEnglishItems(10),stock=items.map(i=>i.draft);
  assert.deepEqual(new Set(items.map(i=>i.group)),new Set(['seen-1','seen-2','unseen','matching','rearranging','story','dialogue']));
@@ -267,6 +267,15 @@ test('SSC registry imports only through explicit ADMIN consent and always create
  const mocks={'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async arg=>{writes.push(arg);return {count:arg.data.length};}}}}};
  const action=load('app/admin/english-review/item-actions.ts',mocks).importEnglishItems;
  const fd=new FormData();fd.set('grade','10');fd.set('digest',registry.englishItemsDigest(10));await action(fd);assert.equal(writes.length,0);
- fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,7);
+ fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,9);
  for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>t.boardSource.examYear===2024));}
+});
+test('Rajshahi batch preserves distinct passages and holds ambiguous/unverified tasks out of import registry',()=>{
+ const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);
+ const raj=items.filter(i=>i.draft.output.tasks.some(t=>t.boardSource?.board==='Rajshahi'));
+ assert.equal(raj.length,2);assert.deepEqual(raj.flatMap(i=>i.draft.output.tasks.map(t=>t.id)),['comprehension','gap']);
+ for(const i of raj){assert.equal(i.draft.selection.grade,10);assert.ok(i.draft.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource.pdfPage===3));assert.ok(i.draft.output.tasks.every(t=>t.subitems.every(s=>s.answer)));}
+ const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length,new Set(texts).size);
+ const comp=raj[0].draft.output.tasks[0];assert.match(comp.subitems[3].answer,/does not describe a method/);
+ const raw=require('../lib/english/data/ssc-rajshahi-2024-items.json');assert.ok(raw.items.some(i=>i.group==='rearranging'));assert.ok(!raj.some(i=>i.group==='rearranging'));assert.match(raw.notes.join(' '),/MCQ held/);
 });
