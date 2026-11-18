@@ -2,8 +2,8 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 const read=p=>fs.readFileSync(p,'utf8');
 test('English import and review are in common question pages; old bookmark redirects',()=>{
  const page=read('app/admin/questions/english-items.tsx');assert.match(page,/id="english-question-items"/);assert.match(page,/action=\{decideEnglishRecovery\}/);assert.match(page,/value="APPROVED"/);
- assert.match(read('app/admin/questions/import/page.tsx'),/englishItems=\{<EnglishQuestionItems/);
- assert.match(read('app/admin/questions/page.tsx'),/<EnglishQuestionItems review/);
+ assert.match(read('app/admin/questions/import/page.tsx'),/englishItems=\{Object.fromEntries/);
+ assert.match(read('app/admin/questions/page.tsx'),/<EnglishQuestionItems key=\{grade\} grade=\{grade\} review/);
  assert.match(read('app/admin/english-review/page.tsx'),/redirect\("\/admin\/questions\?/);
  assert.doesNotMatch(page,/href="\/admin\/english-review/);
 });

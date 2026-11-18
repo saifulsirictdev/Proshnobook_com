@@ -148,3 +148,15 @@ test('Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and p
  const count=writes;await action('ADMIN')({},form);assert.equal(writes,count);
  const forged=new FormData();forged.set('reviewed','yes');forged.set('entries',JSON.stringify([entries[0],entries[0]]));assert.ok((await action('ADMIN')({},forged)).error);
 });
+test('Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock',()=>{
+ const scope=require('../lib/english/admin-scope.ts'),registry=require('../lib/english/prepared-items.ts');
+ assert.deepEqual(scope.englishCategoryGrades('Class 9'),[9,10]);assert.deepEqual(scope.englishCategoryGrades('Class 11-12'),[11,12]);assert.deepEqual(scope.englishCategoryGrades('Class 7'),[7]);
+ for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade!==6)assert.deepEqual(registry.preparedEnglishItems(grade),[]);}
+ for(const raw of [5,13,'bad',''])assert.equal(scope.englishAdminGrade(raw),null);
+ assert.ok(registry.preparedEnglishItems(6).length>40);assert.notEqual(registry.englishItemsDigest(7),registry.englishItemsDigest(8));
+});
+test('Bulk approval cannot approve another grade under the selected grade scope',async()=>{
+ const crypto=require('node:crypto');let writes=0;const pending=record('PENDING');
+ const action=load('app/admin/english-review/actions.ts',{'@/auth':{auth:async()=>({user:{id:'a',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{findUnique:async()=>({value:pending}),updateMany:async()=>{writes++;return{count:1};}}}}}).approveEnglishPendingBatch;
+ const form=new FormData();form.set('grade','7');form.set('reviewed','yes');form.set('entries',JSON.stringify([{key:prepared.key,digest:crypto.createHash('sha256').update(pending).digest('hex')}]));const result=await action({},form);assert.equal(writes,0);assert.match(result.message,/গঠন বা scope যাচাই হয়নি: 1টি/);
+});
