@@ -1,0 +1,481 @@
+{
+  "id": "class6-english1-original-skills-003",
+  "category": "Class 6",
+  "subject": "English 1st Paper",
+  "status": "ORIGINAL_PRACTICE_DRAFT_NOT_REGISTERED",
+  "teacherApproved": false,
+  "officialDistributionVerified": false,
+  "fullModelTest": false,
+  "totalMarks": null,
+  "durationMinutes": null,
+  "provenance": {
+    "origin": "Original educational practice authored for this repository; not extracted from the NCTB textbook or commercial guide.",
+    "textbookSeenPassage": false,
+    "sourcePage": null
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "title": "Listening to the Rain",
+      "text": "During the rainy season, the pupils of Hillview School noticed that water often collected near the main gate. Some children hurried across it, while others took a longer dry path. One morning, their teacher, Ms Das, asked the class to observe the area from a safe place inside the school grounds. She reminded them not to walk into moving water or approach an open drain.\n\nThe class began a five-day observation project. At the same time each afternoon, a group noted whether it was raining and whether water was visible near the gate. They drew a simple table instead of trying to measure the water themselves. On the third day, they saw that fallen leaves covered part of a nearby drain.\n\nThe pupils gave their notes to the headteacher. She contacted the maintenance team, who cleared the leaves using suitable equipment. The children watched from a distance; they did not handle the waste. On the last day, less water was visible after a shower. However, the teacher said that one observation did not prove that the problem was completely solved. The school would continue checking the area.\n\nThe project showed the pupils how careful records, safe behaviour and help from responsible adults could improve a shared place.",
+      "origin": "ORIGINAL_UNSEEN"
+    }
+  ],
+  "activities": [
+    {
+      "id": "reading-mcq",
+      "kind": "reading-mcq",
+      "instruction": "Read P1 and choose the best answer.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "id": "m1",
+          "question": "Where did water often collect?",
+          "options": {
+            "A": "Near the main gate",
+            "B": "Inside the library cupboard",
+            "C": "On the classroom roof only",
+            "D": "Beside the lunch table"
+          },
+          "answer": "A",
+          "explanation": "The first sentence locates the problem near the gate."
+        },
+        {
+          "id": "m2",
+          "question": "Where did Ms Das ask pupils to observe from?",
+          "options": {
+            "A": "Inside the open drain",
+            "B": "A safe place inside school grounds",
+            "C": "The middle of the road",
+            "D": "Moving water outside the gate"
+          },
+          "answer": "B",
+          "explanation": "The teacher explicitly set a safe observation location."
+        },
+        {
+          "id": "m3",
+          "question": "How long was the observation project?",
+          "options": {
+            "A": "Two weeks",
+            "B": "Three days",
+            "C": "Five days",
+            "D": "A month"
+          },
+          "answer": "C",
+          "explanation": "It was a five-day project."
+        },
+        {
+          "id": "m4",
+          "question": "What covered part of the nearby drain?",
+          "options": {
+            "A": "Loose exercise books",
+            "B": "Broken bottles",
+            "C": "Plastic chairs",
+            "D": "Fallen leaves"
+          },
+          "answer": "D",
+          "explanation": "The pupils saw leaves on the third day."
+        },
+        {
+          "id": "m5",
+          "question": "Who contacted the maintenance team?",
+          "options": {
+            "A": "The headteacher",
+            "B": "A pupil acting alone",
+            "C": "A passing driver",
+            "D": "The class monitor's cousin"
+          },
+          "answer": "A",
+          "explanation": "The notes went to the headteacher, who contacted the team."
+        },
+        {
+          "id": "m6",
+          "question": "Why did the children not clear the waste themselves?",
+          "options": {
+            "A": "They wanted to skip all work",
+            "B": "They had a safe observation role while equipped adults did the clearing",
+            "C": "They had not noticed any leaves",
+            "D": "The notebook was missing"
+          },
+          "answer": "B",
+          "explanation": "The passage contrasts pupils observing safely with the maintenance team using equipment."
+        },
+        {
+          "id": "m7",
+          "question": "What does the final observation show?",
+          "options": {
+            "A": "There will never be water again",
+            "B": "Every drain in the town is clear",
+            "C": "Less water was visible on that occasion",
+            "D": "The project proved the exact cause of every flood"
+          },
+          "answer": "C",
+          "explanation": "The teacher warns against treating a single observation as complete proof."
+        }
+      ]
+    },
+    {
+      "id": "reading-answers",
+      "kind": "reading-short-answer",
+      "instruction": "Answer from P1. Equivalent accurate wording is acceptable.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "id": "a1",
+          "question": "What two routes did children use when water collected?",
+          "modelAnswer": "Some hurried across the water; others took a longer dry path.",
+          "requiredIdeas": [
+            "water",
+            "dry path"
+          ]
+        },
+        {
+          "id": "a2",
+          "question": "What did the class record each afternoon?",
+          "modelAnswer": "They noted whether it was raining and whether water was visible near the gate.",
+          "requiredIdeas": [
+            "raining",
+            "water"
+          ]
+        },
+        {
+          "id": "a3",
+          "question": "When did the pupils notice the leaves?",
+          "modelAnswer": "They noticed them on the third day.",
+          "requiredIdeas": [
+            "third day"
+          ]
+        },
+        {
+          "id": "a4",
+          "question": "How did the pupils report their observations?",
+          "modelAnswer": "They gave their notes to the headteacher.",
+          "requiredIdeas": [
+            "notes",
+            "headteacher"
+          ]
+        },
+        {
+          "id": "a5",
+          "question": "Why would the school continue checking the area?",
+          "modelAnswer": "One observation of less water did not prove that the problem was completely solved.",
+          "requiredIdeas": [
+            "one observation",
+            "completely solved"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloze",
+      "kind": "contextual-gap",
+      "instruction": "Fill each gap using a word from the box. Use each word once.",
+      "marks": null,
+      "passageId": "P1",
+      "wordBox": [
+        "five",
+        "table",
+        "leaves",
+        "adults",
+        "checking"
+      ],
+      "text": "The pupils observed the area for (a) ____ days. They recorded information in a simple (b) ____. They noticed fallen (c) ____ near the drain. Responsible (d) ____ arranged and carried out the clearing. The school would keep (e) ____ the area.",
+      "answers": {
+        "a": "five",
+        "b": "table",
+        "c": "leaves",
+        "d": "adults",
+        "e": "checking"
+      }
+    },
+    {
+      "id": "vocabulary",
+      "kind": "vocabulary-in-context",
+      "instruction": "Give the requested meaning in the context of P1.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "word": "visible",
+          "request": "a similar meaning",
+          "acceptedAnswers": [
+            "able to be seen",
+            "in sight"
+          ]
+        },
+        {
+          "word": "safe",
+          "request": "an opposite meaning",
+          "acceptedAnswers": [
+            "unsafe",
+            "dangerous"
+          ]
+        },
+        {
+          "word": "nearby",
+          "request": "an opposite meaning",
+          "acceptedAnswers": [
+            "distant",
+            "far away"
+          ]
+        },
+        {
+          "word": "suitable",
+          "request": "a similar meaning",
+          "acceptedAnswers": [
+            "appropriate",
+            "fit for the purpose"
+          ]
+        },
+        {
+          "word": "continue",
+          "request": "an opposite meaning",
+          "acceptedAnswers": [
+            "stop",
+            "cease"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "information-transfer",
+      "kind": "information-transfer",
+      "instruction": "Complete the table using P1.",
+      "marks": null,
+      "passageId": "P1",
+      "columns": [
+        "Project detail",
+        "Information"
+      ],
+      "rows": [
+        [
+          "Problem location",
+          "(a)"
+        ],
+        [
+          "Project length",
+          "(b)"
+        ],
+        [
+          "Observation time",
+          "(c)"
+        ],
+        [
+          "Discovery on day three",
+          "(d)"
+        ],
+        [
+          "Group that cleared the leaves",
+          "(e)"
+        ]
+      ],
+      "answers": {
+        "a": "Near the main gate",
+        "b": "Five days",
+        "c": "The same time each afternoon",
+        "d": "Leaves covered part of a nearby drain",
+        "e": "The maintenance team"
+      }
+    },
+    {
+      "id": "true-false",
+      "kind": "true-false",
+      "instruction": "State true or false from P1. Correct each false statement.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "statement": "Ms Das encouraged pupils to enter moving water.",
+          "answer": false,
+          "correction": "She reminded them not to enter moving water."
+        },
+        {
+          "statement": "Pupils used a table to record their observations.",
+          "answer": true,
+          "correction": null
+        },
+        {
+          "statement": "The children handled the waste while adults watched.",
+          "answer": false,
+          "correction": "The maintenance team cleared the leaves while the children watched from a distance."
+        },
+        {
+          "statement": "Less water was visible on the last day after a shower.",
+          "answer": true,
+          "correction": null
+        },
+        {
+          "statement": "The teacher said that the problem was certainly solved for ever.",
+          "answer": false,
+          "correction": "She said one observation did not prove the problem completely solved, and checking would continue."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "kind": "summary",
+      "instruction": "Summarise the main events and lesson of P1 in your own words. No official word limit is asserted.",
+      "marks": null,
+      "passageId": "P1",
+      "modelAnswer": "A class safely observed water collecting near its school gate and kept records for five days. After noticing leaves over part of a drain, the pupils reported their notes to the headteacher. A maintenance team cleared the leaves while the children stayed away from the waste. The school continued checking because a single improvement was not enough to prove a lasting solution.",
+      "assessment": [
+        "Captures the main situation and outcome",
+        "Selects key ideas rather than minor details",
+        "Does not invent unsupported events",
+        "Uses clear connected sentences"
+      ]
+    },
+    {
+      "id": "matching",
+      "kind": "sentence-matching",
+      "instruction": "Match each beginning with one ending. Use each ending once.",
+      "marks": null,
+      "beginnings": {
+        "1": "To keep the children safe,",
+        "2": "To organise observations,",
+        "3": "After noticing the leaves,",
+        "4": "To remove the obstruction,",
+        "5": "To check whether the improvement lasted,"
+      },
+      "endings": {
+        "A": "the headteacher called a maintenance team.",
+        "B": "the school would continue observing the area.",
+        "C": "the pupils passed their notes to the headteacher.",
+        "D": "Ms Das chose a safe viewing place.",
+        "E": "the class made a simple table."
+      },
+      "answers": {
+        "1": "D",
+        "2": "E",
+        "3": "C",
+        "4": "A",
+        "5": "B"
+      }
+    },
+    {
+      "id": "rearranging",
+      "kind": "sentence-rearranging",
+      "instruction": "Put these sentences in order using the time and reference clues.",
+      "marks": null,
+      "sentences": {
+        "A": "Once she reached the office, she explained exactly where the branch lay.",
+        "B": "After hearing her report, the teacher contacted the caretaker.",
+        "C": "First, Farah noticed a fallen branch across a school path.",
+        "D": "Before anyone used it again, the caretaker checked that the path was clear.",
+        "E": "Rather than moving it herself, she went to the school office.",
+        "F": "After the safety check, pupils could use the path again.",
+        "G": "When the caretaker arrived with suitable tools, he removed the branch.",
+        "H": "Once the path reopened, Farah thanked the adults for helping."
+      },
+      "answer": [
+        "C",
+        "E",
+        "A",
+        "B",
+        "G",
+        "D",
+        "F",
+        "H"
+      ],
+      "explanation": "Notice → report → explain → contact caretaker → remove → check → reopen → thank. The connectors and references fix the sequence."
+    },
+    {
+      "id": "story",
+      "kind": "story-completion",
+      "instruction": "Complete this story: After heavy rain, Tanvir saw a younger pupil walking towards a flooded part of the school yard. He knew that he should not enter the water himself ...",
+      "marks": null,
+      "modelAnswer": "Tanvir stayed on the dry path and called to the younger pupil to stop. The child heard him and came back towards the classroom. Tanvir then told a nearby teacher about the water. The teacher guided the children to a safe route and asked another adult to keep pupils away from the flooded area. Tanvir did not try to test the depth with his foot or search for a hidden drain. Later, the school arranged for the area to be checked by the people responsible for maintenance. The younger pupil thanked Tanvir for warning him. Tanvir understood that helping someone does not always mean doing a dangerous job yourself. Sometimes the best help is a clear warning and a quick report to a responsible adult.",
+      "assessment": [
+        "Follows the supplied safety context",
+        "Presents connected events and a resolution",
+        "Uses consistent tense and references",
+        "Does not reward entering floodwater or an open drain"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    },
+    {
+      "id": "paragraph",
+      "kind": "paragraph-writing",
+      "instruction": "Write a paragraph about keeping useful observation notes for a school project.",
+      "marks": null,
+      "modelAnswer": "Useful observation notes help us remember what we actually saw. Before beginning a school project, we should decide what information we need. We can write the date, time and place at the top of a page. A table is helpful when we want to compare the same details on several days. Our words should be clear, and we should separate observations from guesses. For example, seeing yellow leaves does not tell us their exact cause. If we miss a day, it is better to mark the information as missing than to invent a result. Working in a group also requires checking that everyone understands the headings. At the end, we can use the notes to explain our findings and the questions that remain. Good records do not answer everything, but they make our thinking easier to check and discuss.",
+      "assessment": [
+        "Explains the purpose of observation notes",
+        "Gives relevant practical details",
+        "Distinguishes observation from an unsupported conclusion",
+        "Organises ideas and uses readable language"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    },
+    {
+      "id": "dialogue",
+      "kind": "dialogue-writing",
+      "instruction": "Write a dialogue between classmates about reporting an unsafe path at school.",
+      "marks": null,
+      "modelAnswer": [
+        {
+          "speaker": "Maliha",
+          "line": "There is water across the short path to the gate."
+        },
+        {
+          "speaker": "Joy",
+          "line": "Shall we walk through it quickly?"
+        },
+        {
+          "speaker": "Maliha",
+          "line": "No. We cannot see what is underneath. Let us use the dry path."
+        },
+        {
+          "speaker": "Joy",
+          "line": "Should we tell someone about it?"
+        },
+        {
+          "speaker": "Maliha",
+          "line": "Yes, we can report it to the teacher on duty."
+        },
+        {
+          "speaker": "Joy",
+          "line": "I will explain where the water is. Could you come with me?"
+        },
+        {
+          "speaker": "Maliha",
+          "line": "Certainly. We should stay on this safe route."
+        },
+        {
+          "speaker": "Joy",
+          "line": "Do we need to clear the drain ourselves?"
+        },
+        {
+          "speaker": "Maliha",
+          "line": "No. A responsible adult can arrange for trained people to check it."
+        },
+        {
+          "speaker": "Joy",
+          "line": "All right. Let us report it now."
+        }
+      ],
+      "assessment": [
+        "Uses a purposeful question-and-response exchange",
+        "Includes a safe alternative and a report to an adult",
+        "Maintains coherent speaker turns",
+        "Uses appropriate, comprehensible English"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    }
+  ],
+  "coverage": {
+    "activityGroups": 12,
+    "poemQuestions": 0,
+    "seenPassageQuestions": 0,
+    "writingTasks": 3
+  },
+  "limitations": [
+    "Teacher review of difficulty, distractors, accepted alternatives and rubrics is pending.",
+    "This is a practice skills pack, not a certified government-format examination.",
+    "No official marks/word limits or unverified textbook page references assigned.",
+    "Textbook-based seen comprehension and poetry remain blocked on actual source reading.",
+    "Matching and rearranging sets should be reviewed for uniqueness before publication."
+  ]
+}

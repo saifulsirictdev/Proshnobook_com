@@ -1,0 +1,481 @@
+{
+  "id": "class6-english1-original-skills-002",
+  "category": "Class 6",
+  "subject": "English 1st Paper",
+  "status": "ORIGINAL_PRACTICE_DRAFT_NOT_REGISTERED",
+  "teacherApproved": false,
+  "officialDistributionVerified": false,
+  "fullModelTest": false,
+  "totalMarks": null,
+  "durationMinutes": null,
+  "provenance": {
+    "origin": "Original educational practice authored for this repository; not extracted from the NCTB textbook or commercial guide.",
+    "textbookSeenPassage": false,
+    "sourcePage": null
+  },
+  "passages": [
+    {
+      "id": "P1",
+      "title": "A Visit to the Local Museum",
+      "text": "On Thursday, thirty pupils from Riverbank School visited a small local museum. Before leaving, their teacher, Mr Sen, divided them into five groups. Each group received a different question to investigate. His purpose was to help everyone look closely instead of simply copying labels.\n\nAt the entrance, a guide explained two rules: visitors must not touch the objects, and they should speak quietly. Sami was interested in an old wooden boat. He first thought it was a toy, but the label said that fishers had used it on a nearby river. The guide explained that the river had once been an important route for travel and trade.\n\nIn another room, the pupils saw a display of woven baskets. There was no date on one label. Rather than guessing, Liza wrote, \"Date not given,\" in her notebook and prepared a question for the guide. The guide promised to check the museum records; she did not provide a date immediately.\n\nBack at school, each group presented one finding and one unanswered question. The class learned that a good visitor notices details, respects shared objects and admits when information is missing.",
+      "origin": "ORIGINAL_UNSEEN"
+    }
+  ],
+  "activities": [
+    {
+      "id": "reading-mcq",
+      "kind": "reading-mcq",
+      "instruction": "Read P1 and choose the best answer.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "id": "m1",
+          "question": "When did the pupils visit the museum?",
+          "options": {
+            "A": "On Thursday",
+            "B": "On Wednesday",
+            "C": "On Friday",
+            "D": "On Sunday"
+          },
+          "answer": "A",
+          "explanation": "The opening sentence gives Thursday."
+        },
+        {
+          "id": "m2",
+          "question": "Why did Mr Sen give different questions to the groups?",
+          "options": {
+            "A": "To stop them taking notes",
+            "B": "To encourage close observation",
+            "C": "To make them copy every label",
+            "D": "To choose the quietest pupil"
+          },
+          "answer": "B",
+          "explanation": "He wanted everyone to look closely rather than simply copy labels."
+        },
+        {
+          "id": "m3",
+          "question": "What did Sami first think the boat was?",
+          "options": {
+            "A": "A basket",
+            "B": "A label",
+            "C": "A toy",
+            "D": "A modern fishing net"
+          },
+          "answer": "C",
+          "explanation": "The passage describes his initial mistaken idea."
+        },
+        {
+          "id": "m4",
+          "question": "Who had used the wooden boat?",
+          "options": {
+            "A": "The museum cleaners",
+            "B": "The visiting pupils",
+            "C": "The school cooks",
+            "D": "Fishers on a nearby river"
+          },
+          "answer": "D",
+          "explanation": "This information came from the label."
+        },
+        {
+          "id": "m5",
+          "question": "What did Liza write about the missing date?",
+          "options": {
+            "A": "Date not given",
+            "B": "Built on Thursday",
+            "C": "About a hundred years old",
+            "D": "The guide has forgotten everything"
+          },
+          "answer": "A",
+          "explanation": "She recorded the limit of the available information."
+        },
+        {
+          "id": "m6",
+          "question": "What did the guide promise to do?",
+          "options": {
+            "A": "Invent a date",
+            "B": "Check the museum records",
+            "C": "Remove the baskets",
+            "D": "Visit the school the next day"
+          },
+          "answer": "B",
+          "explanation": "She promised to consult records, not to give an immediate answer."
+        },
+        {
+          "id": "m7",
+          "question": "Which action fits the lesson of the visit?",
+          "options": {
+            "A": "Touching old objects to test them",
+            "B": "Guessing dates confidently",
+            "C": "Recording a question when evidence is missing",
+            "D": "Copying labels without thinking"
+          },
+          "answer": "C",
+          "explanation": "The final paragraph values careful observation and honest uncertainty."
+        }
+      ]
+    },
+    {
+      "id": "reading-answers",
+      "kind": "reading-short-answer",
+      "instruction": "Answer from P1. Equivalent accurate wording is acceptable.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "id": "a1",
+          "question": "How many groups were formed?",
+          "modelAnswer": "The teacher formed five groups.",
+          "requiredIdeas": [
+            "five"
+          ]
+        },
+        {
+          "id": "a2",
+          "question": "State the two rules given at the entrance.",
+          "modelAnswer": "Visitors must not touch the objects and should speak quietly.",
+          "requiredIdeas": [
+            "not touch",
+            "quietly"
+          ]
+        },
+        {
+          "id": "a3",
+          "question": "What was the river used for in the past?",
+          "modelAnswer": "It was an important route for travel and trade.",
+          "requiredIdeas": [
+            "travel",
+            "trade"
+          ]
+        },
+        {
+          "id": "a4",
+          "question": "Why did Liza not write a date for one basket?",
+          "modelAnswer": "The label did not give a date, so she did not guess.",
+          "requiredIdeas": [
+            "label",
+            "date"
+          ]
+        },
+        {
+          "id": "a5",
+          "question": "What did every group present at school?",
+          "modelAnswer": "Each presented one finding and one unanswered question.",
+          "requiredIdeas": [
+            "finding",
+            "unanswered question"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloze",
+      "kind": "contextual-gap",
+      "instruction": "Fill each gap using a word from the box. Use each word once.",
+      "marks": null,
+      "passageId": "P1",
+      "wordBox": [
+        "quietly",
+        "five",
+        "records",
+        "toy",
+        "question"
+      ],
+      "text": "The teacher formed (a) ____ groups. At the museum they had to speak (b) ____. Sami first thought the boat was a (c) ____. The guide would check the (d) ____ for a missing date. Each group later shared an unanswered (e) ____.",
+      "answers": {
+        "a": "five",
+        "b": "quietly",
+        "c": "toy",
+        "d": "records",
+        "e": "question"
+      }
+    },
+    {
+      "id": "vocabulary",
+      "kind": "vocabulary-in-context",
+      "instruction": "Give the requested meaning in the context of P1.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "word": "closely",
+          "request": "a similar meaning",
+          "acceptedAnswers": [
+            "carefully",
+            "with attention"
+          ]
+        },
+        {
+          "word": "quietly",
+          "request": "an opposite meaning",
+          "acceptedAnswers": [
+            "noisily",
+            "loudly"
+          ]
+        },
+        {
+          "word": "nearby",
+          "request": "a similar meaning",
+          "acceptedAnswers": [
+            "close by",
+            "not far away"
+          ]
+        },
+        {
+          "word": "missing",
+          "request": "a similar meaning",
+          "acceptedAnswers": [
+            "absent",
+            "not provided"
+          ]
+        },
+        {
+          "word": "important",
+          "request": "an opposite meaning",
+          "acceptedAnswers": [
+            "unimportant",
+            "insignificant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "information-transfer",
+      "kind": "information-transfer",
+      "instruction": "Complete the table using P1.",
+      "marks": null,
+      "passageId": "P1",
+      "columns": [
+        "Detail",
+        "Information"
+      ],
+      "rows": [
+        [
+          "Day of visit",
+          "(a)"
+        ],
+        [
+          "Number of pupils",
+          "(b)"
+        ],
+        [
+          "Number of groups",
+          "(c)"
+        ],
+        [
+          "Object Sami examined",
+          "(d)"
+        ],
+        [
+          "Source the guide would consult",
+          "(e)"
+        ]
+      ],
+      "answers": {
+        "a": "Thursday",
+        "b": "thirty / 30",
+        "c": "five / 5",
+        "d": "An old wooden boat",
+        "e": "The museum records"
+      }
+    },
+    {
+      "id": "true-false",
+      "kind": "true-false",
+      "instruction": "State true or false from P1. Correct each false statement.",
+      "marks": null,
+      "passageId": "P1",
+      "items": [
+        {
+          "statement": "Thirty pupils visited the museum.",
+          "answer": true,
+          "correction": null
+        },
+        {
+          "statement": "The pupils were allowed to touch the objects.",
+          "answer": false,
+          "correction": "They must not touch the objects."
+        },
+        {
+          "statement": "Sami changed his first idea after reading the label.",
+          "answer": true,
+          "correction": null
+        },
+        {
+          "statement": "The guide immediately supplied the missing date.",
+          "answer": false,
+          "correction": "She promised to check the records and did not give a date immediately."
+        },
+        {
+          "statement": "Every group presented only answers.",
+          "answer": false,
+          "correction": "Each group presented a finding and an unanswered question."
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "kind": "summary",
+      "instruction": "Summarise the main events and lesson of P1 in your own words. No official word limit is asserted.",
+      "marks": null,
+      "passageId": "P1",
+      "modelAnswer": "Pupils visited a local museum in groups to investigate different questions. They followed the museum rules and used labels and a guide to understand the objects. When information was missing, they recorded a question instead of guessing. Their reports showed the value of careful observation, respect and honest inquiry.",
+      "assessment": [
+        "Captures the main situation and outcome",
+        "Selects key ideas rather than minor details",
+        "Does not invent unsupported events",
+        "Uses clear connected sentences"
+      ]
+    },
+    {
+      "id": "matching",
+      "kind": "sentence-matching",
+      "instruction": "Match each beginning with one ending. Use each ending once.",
+      "marks": null,
+      "beginnings": {
+        "1": "Before leaving school,",
+        "2": "To protect the exhibits,",
+        "3": "After reading the boat label,",
+        "4": "When a date was absent,",
+        "5": "Back in the classroom,"
+      },
+      "endings": {
+        "A": "Liza recorded that it was not given.",
+        "B": "each group shared a finding and a question.",
+        "C": "the teacher formed five groups.",
+        "D": "Sami corrected his first idea.",
+        "E": "visitors were told not to touch them."
+      },
+      "answers": {
+        "1": "C",
+        "2": "E",
+        "3": "D",
+        "4": "A",
+        "5": "B"
+      }
+    },
+    {
+      "id": "rearranging",
+      "kind": "sentence-rearranging",
+      "instruction": "Put these sentences in order using the time and reference clues.",
+      "marks": null,
+      "sentences": {
+        "A": "With the timetable checked, she chose a suitable morning service.",
+        "B": "After choosing the service, she asked her father to book the tickets.",
+        "C": "The following morning, the family reached the station with those tickets.",
+        "D": "First, Nila checked the train timetable for her family trip.",
+        "E": "Once seated on the train, they put their bags safely beside them.",
+        "F": "When their train arrived, they boarded it and found their seats.",
+        "G": "After settling their bags, they watched the train leave the platform.",
+        "H": "Before boarding, they waited behind the marked safety line."
+      },
+      "answer": [
+        "D",
+        "A",
+        "B",
+        "C",
+        "H",
+        "F",
+        "E",
+        "G"
+      ],
+      "explanation": "The sequence follows checking, choosing, booking, reaching, waiting, boarding, storing and departing. The reference to seats before settling bags fixes the last steps."
+    },
+    {
+      "id": "story",
+      "kind": "story-completion",
+      "instruction": "Complete this story: During a school exhibition, Adil noticed that a label had fallen from a display. He was about to put it beside an object when he realised ...",
+      "marks": null,
+      "modelAnswer": "Adil realised that he did not know which object the label belonged to. Two models stood close together, and either one might have been the right choice. He left the label on a clear table and told the teacher in charge. Together, they checked the list of exhibits prepared by the pupils. The list showed that the label belonged to a small model bridge, not the house beside it. The teacher helped Adil put it back in the correct place. Later, a visitor used the label to understand how the bridge had been built. Adil was glad that he had asked instead of guessing. He learned that even a small mistake can confuse other people, and that checking information is worth the time.",
+      "assessment": [
+        "Continues the supplied opening",
+        "Shows a clear problem and a plausible resolution",
+        "Keeps events and tense consistent",
+        "Uses relevant detail without an unrelated ending"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    },
+    {
+      "id": "paragraph",
+      "kind": "paragraph-writing",
+      "instruction": "Write a paragraph on how to be a responsible visitor to a public place.",
+      "marks": null,
+      "modelAnswer": "A responsible visitor enjoys a public place without making it difficult for others to enjoy it. Before a visit, we should learn the basic rules and ask an adult if anything is unclear. In a museum, we should not touch objects unless a sign or guide allows it. Speaking quietly helps other visitors listen and think. In a park, we can use the paths, protect plants and put our rubbish in a suitable bin. If there is no bin nearby, we can keep safe rubbish in a bag until we find one. We should also respect queues and leave space for people who need it. When we have a question, asking politely is better than making a careless guess or disturbing a display. Public places belong to a wider community, so our actions should show care for both people and shared resources.",
+      "assessment": [
+        "Maintains the topic of responsible visiting",
+        "Gives practical, age-appropriate examples",
+        "Organises ideas coherently",
+        "Uses clear sentences and appropriate vocabulary"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    },
+    {
+      "id": "dialogue",
+      "kind": "dialogue-writing",
+      "instruction": "Write a dialogue between a pupil and a museum guide about an object with an incomplete label.",
+      "marks": null,
+      "modelAnswer": [
+        {
+          "speaker": "Pupil",
+          "line": "Excuse me, may I ask about this basket?"
+        },
+        {
+          "speaker": "Guide",
+          "line": "Of course. What would you like to know?"
+        },
+        {
+          "speaker": "Pupil",
+          "line": "The label describes its use, but I cannot find a date. When was it made?"
+        },
+        {
+          "speaker": "Guide",
+          "line": "I do not have a confirmed date at the moment."
+        },
+        {
+          "speaker": "Pupil",
+          "line": "Should I write an approximate year in my notebook?"
+        },
+        {
+          "speaker": "Guide",
+          "line": "Please write that the date is not given. We should not guess."
+        },
+        {
+          "speaker": "Pupil",
+          "line": "Is there another source we could check?"
+        },
+        {
+          "speaker": "Guide",
+          "line": "I can check the museum records and ask the curator."
+        },
+        {
+          "speaker": "Pupil",
+          "line": "Thank you. I will keep the question in my notes."
+        },
+        {
+          "speaker": "Guide",
+          "line": "You are welcome. Asking careful questions is part of learning."
+        }
+      ],
+      "assessment": [
+        "Has a relevant exchange of questions and responses",
+        "Includes polite language",
+        "Distinguishes known information from uncertainty",
+        "Uses readable speaker turns"
+      ],
+      "note": "Original model response. Other relevant, coherent answers are acceptable; no official marks or word limit assigned."
+    }
+  ],
+  "coverage": {
+    "activityGroups": 12,
+    "poemQuestions": 0,
+    "seenPassageQuestions": 0,
+    "writingTasks": 3
+  },
+  "limitations": [
+    "Teacher review of difficulty, distractors, accepted alternatives and rubrics is pending.",
+    "This is a practice skills pack, not a certified government-format examination.",
+    "No official marks/word limits or unverified textbook page references assigned.",
+    "Textbook-based seen comprehension and poetry remain blocked on actual source reading.",
+    "Matching and rearranging sets should be reviewed for uniqueness before publication."
+  ]
+}

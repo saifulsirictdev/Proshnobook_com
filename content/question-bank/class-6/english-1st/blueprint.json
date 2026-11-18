@@ -1,0 +1,868 @@
+{
+  "category": "Class 6",
+  "subject": "English 1st Paper",
+  "status": "TEXTBOOK_SAMPLE_VERIFIED_LESSON01_AUTHORING_STARTED",
+  "teacherApproved": false,
+  "officialDistributionVerified": false,
+  "readyForModelTestAssembly": false,
+  "totalMarks": null,
+  "durationMinutes": null,
+  "book": {
+    "driveFileId": "1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J",
+    "sourceUrl": "https://drive.google.com/file/d/1i_BLt2iONFk6w1y7mmDBDHHQDuVa5t5J/view",
+    "driveLabel": "২০২৬ — English For Today.pdf",
+    "fullRead": false,
+    "extractionStatus": "SCANNED_PDF_DOWNLOADED_AND_SELECTED_PAGES_VISUALLY_READ",
+    "editionIndependentlyVerified": true,
+    "verifiedEdition": "Revised for the year 2026; revised edition October 2025",
+    "pdfPageCount": 115,
+    "sourceBytes": 20602886,
+    "sourceMd5": "3b8641efcb620390205ee5c258eeff09",
+    "sourceSha256": "bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d",
+    "visuallyReadPdfPages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      106,
+      107,
+      108,
+      109,
+      110
+    ]
+  },
+  "officialSource": {
+    "url": "https://nctb.gov.bd/site/notices/7ded5854-8663-4704-848d-70031dfa7eec",
+    "noticeTitleLocated": true,
+    "attachmentInspected": false,
+    "applicabilityTo2026Class6Confirmed": false
+  },
+  "questionPatternCandidates": [
+    {
+      "id": "seen-mcq",
+      "label": "Seen comprehension: MCQ",
+      "sourceKind": "seen-passage-1",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 1,
+      "textbookSampleMarks": 7,
+      "textbookSamplePrintedPage": 101,
+      "textbookSamplePdfPage": 106
+    },
+    {
+      "id": "seen-answer",
+      "label": "Seen comprehension: short answers",
+      "sourceKind": "seen-passage-1",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 2,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 102,
+      "textbookSamplePdfPage": 107
+    },
+    {
+      "id": "seen-gap",
+      "label": "Contextual gap filling",
+      "sourceKind": "seen-passage-2",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 3,
+      "textbookSampleMarks": 5,
+      "textbookSamplePrintedPage": 103,
+      "textbookSamplePdfPage": 108
+    },
+    {
+      "id": "vocabulary",
+      "label": "Synonyms and antonyms in context",
+      "sourceKind": "seen-passage-2",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 4,
+      "textbookSampleMarks": 5,
+      "textbookSamplePrintedPage": 103,
+      "textbookSamplePdfPage": 108
+    },
+    {
+      "id": "information-transfer",
+      "label": "Information transfer",
+      "sourceKind": "original-unseen-passage",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 5,
+      "textbookSampleMarks": 5,
+      "textbookSamplePrintedPage": 103,
+      "textbookSamplePdfPage": 108
+    },
+    {
+      "id": "true-false",
+      "label": "True/false with correction",
+      "sourceKind": "original-unseen-passage",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 6,
+      "textbookSampleMarks": 5,
+      "textbookSamplePrintedPage": 103,
+      "textbookSamplePdfPage": 108
+    },
+    {
+      "id": "summary",
+      "label": "Summary writing",
+      "sourceKind": "original-unseen-passage",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 7,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 104,
+      "textbookSamplePdfPage": 109
+    },
+    {
+      "id": "matching",
+      "label": "Matching sentence parts",
+      "sourceKind": "original-sentence-set",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 8,
+      "textbookSampleMarks": 5,
+      "textbookSamplePrintedPage": 104,
+      "textbookSamplePdfPage": 109
+    },
+    {
+      "id": "rearranging",
+      "label": "Rearranging sentences",
+      "sourceKind": "original-sequencing-set",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 9,
+      "textbookSampleMarks": 8,
+      "textbookSamplePrintedPage": 104,
+      "textbookSamplePdfPage": 109
+    },
+    {
+      "id": "poem-answer",
+      "label": "Questions from textbook poems",
+      "sourceKind": "verified-textbook-poem",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 10,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 105,
+      "textbookSamplePdfPage": 110
+    },
+    {
+      "id": "story",
+      "label": "Completing a story",
+      "sourceKind": "original-writing-prompt",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 11,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 105,
+      "textbookSamplePdfPage": 110
+    },
+    {
+      "id": "paragraph",
+      "label": "Paragraph writing",
+      "sourceKind": "original-writing-prompt",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 12,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 105,
+      "textbookSamplePdfPage": 110
+    },
+    {
+      "id": "dialogue",
+      "label": "Dialogue writing",
+      "sourceKind": "original-writing-prompt",
+      "marks": null,
+      "status": "NCTB_TEXTBOOK_SAMPLE_CONFIRMED_CIRCULAR_PENDING",
+      "questionNumber": 13,
+      "textbookSampleMarks": 10,
+      "textbookSamplePrintedPage": 105,
+      "textbookSamplePdfPage": 110
+    }
+  ],
+  "lessonCatalog": [
+    {
+      "topic": "Lesson-01: Going to a new school",
+      "status": "SOURCE_READ_PARTIAL_QUESTION_POOL_DRAFT",
+      "pageReferences": [
+        "Printed 1 / PDF 6",
+        "Printed 2 / PDF 7",
+        "Printed 3 / PDF 8"
+      ],
+      "eligibleQuestionPatterns": [
+        "seen-mcq",
+        "seen-answer",
+        "seen-gap",
+        "vocabulary",
+        "poem-answer",
+        "paragraph"
+      ],
+      "note": "Full lesson visually read. Contains form, first-day narrative and a poem. Each question specifies its own source section; not an assembled model test.",
+      "tocVerified": true,
+      "printedPageRange": [
+        1,
+        3
+      ],
+      "pdfPageRange": [
+        6,
+        8
+      ],
+      "questionFile": "lesson-01-source-draft.json"
+    },
+    {
+      "topic": "Lesson-02: Congratulations! Well done!",
+      "status": "SOURCE_READ_PARTIAL_QUESTION_POOL_DRAFT",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Complete printed 4–6 visually read; source-read Draft pool. Separate dialogues, not a continuous exam passage.",
+      "tocVerified": true,
+      "printedPageRange": [
+        4,
+        6
+      ],
+      "pdfPageRange": [
+        9,
+        11
+      ],
+      "questionFile": "lesson-02-source-draft.json"
+    },
+    {
+      "topic": "Lesson-03: At a railway station",
+      "status": "SOURCE_READ_PARTIAL_QUESTION_POOL_DRAFT",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Full lesson printed 7–8 visually read. Initial source-labelled question pool; final review pending.",
+      "tocVerified": true,
+      "printedPageRange": [
+        7,
+        8
+      ],
+      "pdfPageRange": [
+        12,
+        13
+      ],
+      "questionFile": "lesson-03-source-draft.json"
+    },
+    {
+      "topic": "Lesson-04: Where are you from?",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        9,
+        12
+      ],
+      "pdfPageRange": [
+        14,
+        17
+      ]
+    },
+    {
+      "topic": "Lesson-05: Thanks for your work",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        13,
+        16
+      ],
+      "pdfPageRange": [
+        18,
+        21
+      ]
+    },
+    {
+      "topic": "Lesson-06: It smells good!",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        17,
+        18
+      ],
+      "pdfPageRange": [
+        22,
+        23
+      ]
+    },
+    {
+      "topic": "Lesson-07: Holding Hands",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        19,
+        20
+      ],
+      "pdfPageRange": [
+        24,
+        25
+      ]
+    },
+    {
+      "topic": "Lesson-08: Grocery shopping",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        21,
+        27
+      ],
+      "pdfPageRange": [
+        26,
+        32
+      ]
+    },
+    {
+      "topic": "Lesson-09: Health is wealth",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        28,
+        32
+      ],
+      "pdfPageRange": [
+        33,
+        37
+      ]
+    },
+    {
+      "topic": "Lesson-10: Remedies: modern and traditional",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        33,
+        36
+      ],
+      "pdfPageRange": [
+        38,
+        41
+      ]
+    },
+    {
+      "topic": "Lesson-11: Are you listening?-1",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        37,
+        38
+      ],
+      "pdfPageRange": [
+        42,
+        43
+      ]
+    },
+    {
+      "topic": "Lesson-12: An unseen beauty of Bangladesh",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        39,
+        41
+      ],
+      "pdfPageRange": [
+        44,
+        46
+      ]
+    },
+    {
+      "topic": "Lesson-13: Our pride",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        42,
+        45
+      ],
+      "pdfPageRange": [
+        47,
+        50
+      ]
+    },
+    {
+      "topic": "Lesson-14: The lion's mane",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        46,
+        48
+      ],
+      "pdfPageRange": [
+        51,
+        53
+      ]
+    },
+    {
+      "topic": "Lesson-15: An old people's home",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        49,
+        51
+      ],
+      "pdfPageRange": [
+        54,
+        56
+      ]
+    },
+    {
+      "topic": "Lesson-16: Boats sail on the rivers",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        52,
+        52
+      ],
+      "pdfPageRange": [
+        57,
+        57
+      ]
+    },
+    {
+      "topic": "Lesson-17: Are you listening?-2",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        53,
+        55
+      ],
+      "pdfPageRange": [
+        58,
+        60
+      ]
+    },
+    {
+      "topic": "Lesson-18: Make your snacks",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        56,
+        59
+      ],
+      "pdfPageRange": [
+        61,
+        64
+      ]
+    },
+    {
+      "topic": "Lesson-19: Stop, look and listen",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        60,
+        60
+      ],
+      "pdfPageRange": [
+        65,
+        65
+      ]
+    },
+    {
+      "topic": "Lesson-20: Hason Raja: The mystic bard of Bangladesh",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        61,
+        62
+      ],
+      "pdfPageRange": [
+        66,
+        67
+      ]
+    },
+    {
+      "topic": "Lesson-21: Wonders of the world-1",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        63,
+        64
+      ],
+      "pdfPageRange": [
+        68,
+        69
+      ]
+    },
+    {
+      "topic": "Lesson-22: Wonders of the world-2",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        65,
+        67
+      ],
+      "pdfPageRange": [
+        70,
+        72
+      ]
+    },
+    {
+      "topic": "Lesson-23: We live in a global village",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        68,
+        70
+      ],
+      "pdfPageRange": [
+        73,
+        75
+      ]
+    },
+    {
+      "topic": "Lesson-24: Our wage earners",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        71,
+        74
+      ],
+      "pdfPageRange": [
+        76,
+        79
+      ]
+    },
+    {
+      "topic": "Lesson-25: The concert for Bangladesh",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        75,
+        77
+      ],
+      "pdfPageRange": [
+        80,
+        82
+      ]
+    },
+    {
+      "topic": "Lesson-26: Buying clothes",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        78,
+        82
+      ],
+      "pdfPageRange": [
+        83,
+        87
+      ]
+    },
+    {
+      "topic": "Lesson-27: Andre",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        83,
+        83
+      ],
+      "pdfPageRange": [
+        88,
+        88
+      ]
+    },
+    {
+      "topic": "Lesson-28: Are you listening?-3",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        84,
+        85
+      ],
+      "pdfPageRange": [
+        89,
+        90
+      ]
+    },
+    {
+      "topic": "Lesson-29: Taking a test",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        86,
+        87
+      ],
+      "pdfPageRange": [
+        91,
+        92
+      ]
+    },
+    {
+      "topic": "Lesson-30: What should we do?",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        88,
+        89
+      ],
+      "pdfPageRange": [
+        93,
+        94
+      ]
+    },
+    {
+      "topic": "Lesson-31: Too much or too little water",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        90,
+        91
+      ],
+      "pdfPageRange": [
+        95,
+        96
+      ]
+    },
+    {
+      "topic": "Lesson-32: An invitation for Robin",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        92,
+        93
+      ],
+      "pdfPageRange": [
+        97,
+        98
+      ]
+    },
+    {
+      "topic": "Lesson-33: The Garden",
+      "status": "SOURCE_READING_PENDING",
+      "pageReferences": [],
+      "eligibleQuestionPatterns": [],
+      "note": "Determine prose/poetry/listening and passage suitability from the actual book, not title alone.",
+      "tocVerified": true,
+      "printedPageRange": [
+        94,
+        100
+      ],
+      "pdfPageRange": [
+        99,
+        105
+      ]
+    }
+  ],
+  "blockers": [
+    "Separate official circular applicability remains unverified; supplied NCTB textbook sample now provides a source-backed draft template.",
+    "Read remaining 30 lessons before tagging their seen/poetry questions.",
+    "A full model requires distinct verified source blocks, eight offered poem questions with five required, and a validated total."
+  ],
+  "workflow": [
+    "verify-official-assessment",
+    "read-book-and-map-lessons",
+    "author-topic-wise-passages-and-answer-keys",
+    "validate-question-slots-and-marks",
+    "assemble-model-tests-with-separate-solutions",
+    "backup-as-Draft",
+    "owner-controlled-Pending-review"
+  ],
+  "supplementarySources": [
+    {
+      "url": "https://www.abswer.com/class-6-english-1st-paper-guide-book/",
+      "pageLabelYear": 2027,
+      "authority": "THIRD_PARTY_GUIDE_NOT_OFFICIAL",
+      "pageRead": true,
+      "pdfsRead": false,
+      "usablePdfLinksReturned": false,
+      "lessonTitleCount": 33,
+      "conflict": "Marks table says Reading60/Writing40 and Q1–11 including informal letter, but lower practice index uses Q1–13 including poem questions and no letter.",
+      "use": "Topic-index cross-check only; no official marks or seen-passage evidence."
+    }
+  ],
+  "practicePackages": [
+    {
+      "id": "class6-english1-original-skills-001",
+      "file": "original-skills-001.json",
+      "activityGroups": 12,
+      "writingTasks": 3,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    },
+    {
+      "id": "class6-english1-original-skills-002",
+      "file": "original-skills-002.json",
+      "activityGroups": 12,
+      "writingTasks": 3,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    },
+    {
+      "id": "class6-english1-original-skills-003",
+      "file": "original-skills-003.json",
+      "activityGroups": 12,
+      "writingTasks": 3,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    }
+  ],
+  "originalPracticeTotals": {
+    "packages": 3,
+    "activityGroups": 36,
+    "unseenPassages": 3,
+    "MCQ": 21,
+    "readingShortAnswers": 15,
+    "contextualGaps": 15,
+    "vocabularyPrompts": 15,
+    "informationTransferCells": 15,
+    "trueFalseStatements": 15,
+    "summaries": 3,
+    "matchingPairs": 15,
+    "rearrangementSets": 3,
+    "writingTasks": 9,
+    "seenPassages": 0,
+    "poemQuestions": 0
+  },
+  "textbookSampleBlueprint": {
+    "status": "VISUALLY_VERIFIED_FROM_SUPPLIED_NCTB_2026_TEXTBOOK",
+    "printedPages": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "pdfPages": [
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "totalMarks": 100,
+    "readingMarks": 70,
+    "writingMarks": 30,
+    "durationMinutes": 180,
+    "poemQuestionsOffered": 8,
+    "poemQuestionsRequired": 5,
+    "poemMarksEach": 2,
+    "paragraphWords": 120,
+    "storyMinimumNewSentences": 10,
+    "storyTitleRequired": true,
+    "summaryMarks": 10,
+    "noticeApplicabilitySeparatelyConfirmed": false,
+    "readyForDraftAssembly": true,
+    "limitations": [
+      "Verified textbook sample, not a claim that a separate current government assessment circular was inspected.",
+      "Do not reproduce or automatically endorse every sample factual claim or poem interpretation; check underlying lesson text.",
+      "Existing original skill packs remain unscored practice; this does not retroactively make them complete exam papers."
+    ]
+  },
+  "lessonQuestionPools": [
+    {
+      "file": "lesson-01-source-draft.json",
+      "lesson": 1,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    },
+    {
+      "file": "lesson-02-source-draft.json",
+      "lesson": 2,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    },
+    {
+      "file": "lesson-03-source-draft.json",
+      "lesson": 3,
+      "teacherApproved": false,
+      "registered": false,
+      "fullModelTest": false
+    }
+  ]
+}
