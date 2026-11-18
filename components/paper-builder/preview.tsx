@@ -1,6 +1,7 @@
 "use client";
+import { englishFlowBlocks } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   paginateContinuous,
   continuousColumnCount,
@@ -45,7 +46,7 @@ const families = {
 };
 export default function PaperPreview({
   s,
-  questions,
+  questions: originalQuestions,
   type,
   setName,
   duplicate,
@@ -54,7 +55,7 @@ export default function PaperPreview({
   onQuestionAction,
   previewScale = 1,
   mode = "questions",
-  sections,
+  sections: originalSections,
   auxiliaryOnly = false,
   readOnly = false,
 }: {
@@ -75,6 +76,9 @@ export default function PaperPreview({
   previewScale?: number;
   mode?: "questions" | "answers" | "omr";
 }) {
+  const expand = (list:PreviewQuestion[]) => list.flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
+  const questions = useMemo(()=>expand(originalQuestions),[originalQuestions]);
+  const sections = useMemo(()=>originalSections?.map(section=>({...section,questions:expand(section.questions)})),[originalSections]);
   const [flowPages, setFlowPages] = useState<FlowSegment[][]>([]);
   const [pages, setPages] = useState<number[][][]>([]);
   const [oversized, setOversized] = useState(false);
@@ -564,7 +568,7 @@ export default function PaperPreview({
         .join(" ") || "none",
     fontFamily: families[s.cfg.font],
     fontSize: `${s.cfg.autoFit ? fittedFont : s.cfg.fontSize}pt`,
-    lineHeight: 1.45,
+    lineHeight: s.cfg.lineHeight,
     textAlign: s.cfg.align,
   } as const;
   return (

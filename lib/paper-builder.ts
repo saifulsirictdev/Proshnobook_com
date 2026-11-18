@@ -3,6 +3,10 @@ import { z } from "zod";
 import { paperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
   englishGroup?: {
+    continued?: boolean;
+    subitemOffset?: number;
+    fragment?: boolean;
+    attachmentId?: string;
     passages: {key:string;text:string}[];
     tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {number:number;marks:number})[];
   };
@@ -85,6 +89,8 @@ export const settingsSchema = z.object({
     .object({
       format: z.enum(["q", "qa", "ans", "sug"]).catch("q").default("q"),
       autoFit: bool(),
+      lineHeight: z.number().min(1).max(2.5).catch(1.45).default(1.45),
+      questionGap: number(4, 0, 24),
       booklet: bool(),
       orientation: z
         .enum(["portrait", "landscape"])
