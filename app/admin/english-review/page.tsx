@@ -1,3 +1,5 @@
+import { englishBlueprint } from "@/lib/english/blueprints";
+import { approvedEnglishItem } from "@/lib/english/item-bank";
 import { importEnglishItems } from "./item-actions";
 import CompleteModelImport from "./complete-model-import";
 import { completeEnglishLibraryDigest, preparedCompleteEnglishModels, preparedCompleteEnglishModel } from "@/lib/english/prepared-complete-model";
@@ -6,7 +8,7 @@ import { englishSourceImportDigest, preparedEnglishSources } from "@/lib/english
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
-import { decideEnglishRecovery } from "./actions";
+import { decideEnglishRecovery, reopenEnglishReview } from "./actions";
 import { validateEnglishDraft } from "@/lib/english/draft";
 
 export const dynamic = "force-dynamic";
@@ -32,12 +34,18 @@ export default async function EnglishReview() {
   const itemRows: {key:string;value:string}[] = await db.setting.findMany({where:{key:{startsWith:"english-item:v1:"}},orderBy:{key:"asc"}});
   const completeKeys = new Set(completeRows.map(r => r.key));
   const reviewRows = [...itemRows, ...completeRows, ...rows.filter(r => !completeKeys.has(r.key))];
+  const stock = reviewRows.map(row => approvedEnglishItem(row.value, 6)).filter(d => d !== null);
+  const coverage = englishBlueprint(6, 1).items.map(item => ({...item, count: stock.filter(d => d.output.tasks.some(t => t.id === item.id)).length}));
   return (
     <main className="space-y-5 p-5">
       <h1 className="text-2xl font-bold">English — Question Item ভান্ডার ও review</h1>
       <section className="space-y-3 rounded border p-4">
         <h2 className="text-xl font-bold">Question Item অনুযায়ী প্রশ্নভান্ডার</h2>
         <p>Seen-1, Seen-2, Unseen এবং অন্যান্য item আলাদা করে Pending import হবে। একই passage-এর প্রশ্নগুলো একসঙ্গে থাকবে। নিচে প্রতিটি group review করে অনুমোদন দিন। পূর্ণ model snapshot অনুমোদন বাধ্যতামূলক নয়।</p>
+        <details open className="rounded border p-3"><summary>Class 6 — অনুমোদিত প্রশ্নের item-ভিত্তিক অবস্থা</summary>
+          <ol className="list-inside list-decimal">{coverage.map(item => <li key={item.id}>{item.title} — {item.count > 0 ? `${item.count}টি অনুমোদিত প্রশ্নসেট` : "অনুমোদিত প্রশ্ন নেই — নিচে import/review করুন"}</li>)}</ol>
+          <p className="text-sm">শুধু নির্বাচিত item তৈরি করতে অন্য item দরকার নেই। Full Model Test-এর জন্য সব item এবং আলাদা Seen-1/Seen-2 passage প্রয়োজন। এই গণনায় সংরক্ষিত group/পুরোনো model উভয়ই আছে; এগুলো সব স্বতন্ত্র প্রশ্ন নয়।</p>
+        </details>
         <form action={importEnglishItems} className="space-y-3">
           <input type="hidden" name="digest" value={completeEnglishLibraryDigest()} />
           <label className="block"><input type="checkbox" name="reviewed" value="yes" required /> নিচের প্রস্তুত প্রশ্ন–উত্তরের preview ও সীমাবদ্ধতা দেখেছি।</label>
@@ -114,6 +122,11 @@ export default async function EnglishReview() {
                   </button>
                 </form>
               )}
+              {["APPROVED", "REJECTED"].includes(record.status) && <form action={reopenEnglishReview} className="space-y-2">
+                <input type="hidden" name="key" value={row.key} />
+                <label className="block"><input required type="checkbox" name="confirmed" value="yes" /> এই item আবার Pending review-তে পাঠাব; পুনরায় অনুমোদন না হওয়া পর্যন্ত এটি ব্যবহারযোগ্য থাকবে না।</label>
+                <button className="rounded border px-3 py-2">আবার review / অনুমোদনের জন্য পাঠান</button>
+              </form>}
             </article>
           );
         } catch {

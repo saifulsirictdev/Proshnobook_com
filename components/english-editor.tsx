@@ -28,10 +28,12 @@ export default function EnglishEditor({
   draftKey,
   initial,
   reviewFirst = false,
+  setupFirst = false,
 }: {
   draftKey: string;
   initial: EnglishDraft;
   reviewFirst?: boolean;
+  setupFirst?: boolean;
 }) {
   const [reviewing, setReviewing] = useState(reviewFirst);
   const [draft, setDraft] = useState(initial),
@@ -63,7 +65,7 @@ export default function EnglishEditor({
     window.addEventListener("beforeunload", warn);
     return () => window.removeEventListener("beforeunload", warn);
   }, [dirty]);
-  const [settingsOpen, setSettingsOpen] = useState(false),
+  const [settingsOpen, setSettingsOpen] = useState(setupFirst),
     [edit, setEdit] = useState(false);
   const pageSettings = applyHeader(restoreSettings({}), draft.header);
   Object.assign(pageSettings.cfg, draft.layout, {

@@ -118,7 +118,7 @@ function entryPage(){const file='app/question-builder/english/page.tsx',m=new Mo
 test('Grouped entry preselects every member; forged class/group and second-paper query cannot inject items',async()=>{
  const page=entryPage();
  for(const group of ['seen-comprehension','unseen-comprehension']){
-  const element=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',group})});assert.equal(element.props.initialMode,'selected');assert.deepEqual(element.props.initialItems,questionGroups(6,1).find(g=>g.id===group).itemIds);
+  const element=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',group})});assert.equal(element.props.paper,1);assert.deepEqual(element.props.itemIds,questionGroups(6,1).find(g=>g.id===group).itemIds);
  }
  const unknown=await page({searchParams:Promise.resolve({grade:'9',paper:'1',mode:'topic',group:'seen-comprehension'})});assert.equal(unknown.props.initialItems,undefined);
  const second=await page({searchParams:Promise.resolve({grade:'6',paper:'2',mode:'topic',group:'seen-comprehension',item:'mcq'})});assert.equal(second.props.initialMode,'selected');assert.equal(second.props.initialItem,'');assert.equal(second.props.initialItems,undefined);
@@ -131,7 +131,7 @@ test('Class 7 supplied screenshot provides nine units and its own eight question
  assert.ok(!groups.some(g=>/model/i.test(g.title)));
  for(const group of groups.slice(0,2)){
   const url=new URL(href('7','English 1st Paper','topic',group.id,'item'),'https://proshnobook.com');
-  const page=await entryPage()({searchParams:Promise.resolve(Object.fromEntries(url.searchParams))});assert.deepEqual(page.props.initialItems,group.itemIds);
+  const page=await entryPage()({searchParams:Promise.resolve(Object.fromEntries(url.searchParams))});assert.deepEqual(page.props.itemIds,group.itemIds);
  }
  for(const unit of units){const url=new URL(href('7','English 1st Paper','topic',unit,'lesson'),'https://proshnobook.com');assert.equal(url.searchParams.get('topic'),unit);assert.equal(url.searchParams.get('category'),'Class 7');}
  const legacy=require('../lib/nctb-data.ts').NCTB_CLASSES.find(c=>c.class==='Class 7').subjects.find(s=>s.name==='English 1st Paper').chapters;

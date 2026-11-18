@@ -36,7 +36,7 @@ test('Second-paper auto models select grade-specific grammar/writing, require no
  const page=load('app/question-builder/english/page.tsx',{'@/lib/english/topic-options':{englishQuestionItemGroups:()=>[{id:'verbs',itemIds:['verbs']}]},'@/components/english-auto-model':{__esModule:true,default:Auto},'@/components/english-setup':{__esModule:true,default:()=>null}}).default;
  const auto=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'full'})});assert.equal(auto.type,Auto);assert.equal(auto.props.paper,2);assert.equal(auto.props.grade,8);assert.equal(auto.key,'8-2');
  const item=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'topic',item:'verbs'})});assert.equal(item.props.initialMode,'selected');assert.equal(item.props.initialItem,'verbs');assert.equal(item.props.initialPaper,2);
- const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper })'));assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources })'));
+ const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishBankModel(grade,'));assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources })'));
 });
 test('Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback',()=>{
  const data=require('../lib/english/data/class6-seen-pool.json'),crypto=require('node:crypto');
@@ -55,4 +55,12 @@ test('Thirty distinct textbook units and six poems rotate without duplicate pass
   const r=selection.resolveEnglishSelection({grade:6,paper:1,mode:'full',itemIds:[],sources,writing:builder.fullModelWriting(6,1),includeAnswers:true});assert.equal(r.total,100);
  }
  assert.ok(firsts.size>15);assert.equal(seconds.size,30);assert.ok(poemSets.size>10);
+});
+test('First-paper Question Item routes use the same bank preparation with the chosen ids',async()=>{
+ const Auto=()=>null;
+ const page=load('app/question-builder/english/page.tsx',{'@/lib/english/topic-options':{englishQuestionItemGroups:()=>[{id:'seen',itemIds:['mcq','comprehension']},{id:'unseen',itemIds:['summary']}]},'@/components/english-auto-model':{__esModule:true,default:Auto},'@/components/english-setup':{__esModule:true,default:()=>null}}).default;
+ for(const [query,expected] of [[{group:'seen'},['mcq','comprehension']],[{item:'summary'},['summary']]]){
+  const result=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',...query})});assert.equal(result.type,Auto);assert.deepEqual(result.props.itemIds,expected);
+ }
+ const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.match(ui,/<PreparationPopup/);assert.match(ui,/databaseOnly=\{paper === 1\}/);assert.match(ui,/paper === 2 \? "&stage=review" : "&stage=setup"/);
 });

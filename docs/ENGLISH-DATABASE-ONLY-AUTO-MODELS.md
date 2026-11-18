@@ -56,3 +56,11 @@ First-paper Full Model Test now assembles approved **Question Item groups**, rat
 ADMIN imports the existing prepared Class 6 material through the new Question Item panel in `/admin/english-review`, previews each group's tasks/answers, and approves each group independently. Import is Pending-only, digest-bound and duplicate-safe; existing decisions are not reset. Legacy approved complete snapshots remain usable as item stock, but are no longer required. No pending material, bundled unapproved content, paid AI, or cross-grade fallback is used. The user's page contains no ADMIN import/approval instructions.
 
 This change supplies the assembly and review workflow, not production approval. The prepared stock is still Class 6 only; grades 7–12 require their own reviewed content. The configured practice blueprint is not a newly verified official circular. Item stock still reuses the previously documented shared seen-1/unseen/writing groups.
+
+### Shared item and full-model entry
+
+First-paper Question Item links and Full Model Test now call the same approved stock action. A selected request requires only its selected task IDs, extracts only those tasks and their passages/keys, and validates the selected marks. Seen-only and Unseen-only papers do not need unrelated writing or other source stock. The first-paper setup fallback also uses this action, without prompting for unused custom passages/writing topics or invoking AI. Second-paper generation remains unchanged.
+
+The existing `PreparationPopup` is shown while preparing; first-paper requests use its database-only branding. Success opens the existing English editor's Page Set-up panel directly (`stage=setup`), with editing still available. Second-paper auto preparation retains review-first routing. The processing popup remains visible through successful navigation instead of briefly displaying Retry.
+
+ADMIN review now displays Class 6 item coverage and supports explicit per-record re-review: a confirmed Approved/Rejected record can return to Pending with its previous status and reopening actor/time retained. Imports still do not reset decisions. Pending content is never served to users. No production data has been imported, approved or deleted by these code changes.

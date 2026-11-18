@@ -18,8 +18,10 @@ export default function PreparationPopup({
   progress,
   error,
   children,
+  databaseOnly = false,
 }: {
   subject: string;
+  databaseOnly?: boolean;
   stage?: number;
   progress?: number;
   error?: string;
@@ -52,7 +54,7 @@ export default function PreparationPopup({
     >
       <div className="prep-badge">
         <Sparkles size={19} />
-        {BRAND.nameEn} AI
+        {BRAND.nameEn}{databaseOnly ? "" : " AI"}
       </div>
       <div className="prep-art" aria-hidden="true">
         <div className="prep-ring" />
