@@ -10,7 +10,7 @@ function BatchCard({batch,saved}:{batch:Summary;saved:boolean}){
  const [result,save,saving]=useActionState(savePrepared,{} as PreparedState);
  return <article className="space-y-3 rounded-xl border bg-white p-4">
   <h3 className="font-bold">{batch.topic}</h3><p className="font-semibold">{batch.title}</p><p>MCQ {batch.counts.MCQ} · CQ {batch.counts.CQ} · SQ {batch.counts.SQ}</p>
-  <p className="text-amber-900">{batch.limitations}</p><p>{saved?"এই সংস্করণের import receipt আছে—আবার সেভ করলে ডুপ্লিকেট যোগ হবে না।":"প্রস্তুত Draft — Pending হিসেবে সেভ করা যাবে।"}</p>
+  <p className="text-amber-900">{batch.limitations}</p><p>{saved?"পুরোনো import receipt আছে—প্রশ্নের বর্তমান অবস্থা জানতে আবার যাচাই/সেভ করুন; receipt থাকা মানেই Pending থাকা নয়।":"প্রস্তুত Draft — Pending হিসেবে সেভ করা যাবে।"}</p>
   <form action={inspect}><input type="hidden" name="id" value={batch.id}/><button disabled={checking||saving} className="rounded-lg bg-indigo-700 px-4 py-2 text-white disabled:opacity-50">প্রশ্ন ও উত্তর প্রিভিউ</button></form>
   {preview.error&&<p role="alert">{preview.error}</p>}
   {preview.preview&&<><ol className="max-h-96 space-y-4 overflow-auto">{preview.preview.map((q,i)=><li key={i}><strong>{i+1}. [{q.kind}] {q.text}</strong><pre className="whitespace-pre-wrap">{JSON.stringify(q.options,null,2)}</pre><p>উত্তর: {q.correct}</p><p className="whitespace-pre-wrap">{q.explanation}</p></li>)}</ol>
@@ -53,7 +53,8 @@ function SubjectBatchPanel({batches}:{batches:Summary[]}){
   </section>;})}
   {complete&&<><label className="flex gap-3"><input type="checkbox" checked={reviewed} disabled={busy} onChange={e=>setReviewed(e.target.checked)}/>সব নির্বাচিত ব্যাচের প্রিভিউ ও সীমাবদ্ধতা পড়েছি; শুধু Pending-এ রাখব, পরে একে একে যাচাই ও অনুমোদন করব।</label>
   <button type="button" disabled={busy||!reviewed} onClick={saveAll} className="rounded-lg bg-emerald-800 px-4 py-2 text-white disabled:opacity-50">{busy?"কাজ চলছে…":"সব নির্বাচিত অধ্যায় Pending-এ সেভ / ব্যর্থগুলো আবার চেষ্টা"}</button></>}
-  <p role="status" aria-live="polite">{busy?"প্রক্রিয়া চলছে… ":""}প্রিভিউ: {batches.filter(b=>previews[b.id]?.preview).length}/{batches.length} · সেভের সফল ফল: {batches.filter(b=>results[b.id]?.message).length}/{batches.length} · সেভে সমস্যা/অনিশ্চিত: {batches.filter(b=>results[b.id]?.error).length}</p>
+  <p role="status">নতুন Pending প্রশ্ন: {batches.reduce((n,b)=>n+(results[b.id]?.counts?.inserted??0),0)} · আগে থেকেই Pending: {batches.reduce((n,b)=>n+(results[b.id]?.counts?.pending??0),0)} · আগে থেকেই Approved: {batches.reduce((n,b)=>n+(results[b.id]?.counts?.approved??0),0)}। ব্যাচের সংখ্যা আর নতুন প্রশ্নের সংখ্যা এক নয়।</p>
+  <p role="status" aria-live="polite">{busy?"প্রক্রিয়া চলছে… ":""}প্রিভিউ: {batches.filter(b=>previews[b.id]?.preview).length}/{batches.length} · database যাচাই সম্পন্ন ব্যাচ: {batches.filter(b=>results[b.id]?.message).length}/{batches.length} · সেভে সমস্যা/অনিশ্চিত: {batches.filter(b=>results[b.id]?.error).length}</p>
  </div>;
 }
 export default function PreparedLibrary({catalog,batches,savedIds}:{catalog:Catalog;batches:Summary[];savedIds:string[]}){

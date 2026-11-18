@@ -28,7 +28,7 @@ test('catalog reuses all existing classes and batch summaries do not expose answ
 });
 function harness(role='ADMIN'){
  const questions=[],settings=new Map();let calls=0,fail=false;
- const tx={question:{findMany:async()=>questions,create:async({data})=>questions.push(data)},setting:{findUnique:async({where})=>settings.get(where.key),create:async({data})=>settings.set(data.key,data)}};
+ const tx={question:{findMany:async()=>questions,create:async({data})=>questions.push(data)},setting:{findUnique:async({where})=>settings.get(where.key),create:async({data})=>settings.set(data.key,data),update:async({where,data})=>settings.set(where.key,{key:where.key,...data})}};
  const actions=load('app/admin/questions/import/prepared-actions.ts',{'@prisma/client':{},'@/lib/guard':{staff:async()=>{if(role!=='ADMIN')throw Error('denied');return{id:'owner'};}},'@/lib/db':{db:{$transaction:async(fn,opts)=>{calls++;assert.equal(opts.isolationLevel,'Serializable');if(fail){fail=false;throw Object.assign(Error(),{code:'P2034'});}return fn(tx);}}},'@/lib/mcq-import':mcq,'@/lib/prepared-question-batches':lib,'next/cache':{revalidatePath:()=>{}}});
  const form=(id=lib.preparedSummaries()[0].id)=>{const f=new FormData();f.set('id',id);f.set('digest',lib.getPreparedBatch(id).digest);f.set('reviewed','yes');return f;};
  return{actions,questions,settings,form,calls:()=>calls,retry:()=>fail=true};
@@ -203,4 +203,18 @@ test('BGS chapters6–8 are complete unapproved Draft with provenance and balanc
  assert.match(json('content/question-bank/class-6/bgs/chapter-6/validation.json').limitations.join(' '),/ওজোন/);
  assert.match(json('content/question-bank/class-6/bgs/chapter-7/validation.json').limitations.join(' '),/ক্ষতিকর শ্রম/);
  assert.match(json('content/question-bank/class-6/bgs/chapter-8/validation.json').limitations.join(' '),/সব EU সদস্য/);
+});
+
+test('receipt does not hide missing questions and counts distinguish live Pending and Approved without resetting approvals',async()=>{
+ const h=harness(),form=h.form();
+ const first=await h.actions.savePrepared({},form);assert.equal(first.counts.inserted,100);
+ h.questions[0].approved=true;h.questions[1].approved=true;
+ const again=await h.actions.savePrepared({},form);assert.deepEqual(again.counts,{inserted:0,pending:98,approved:2});
+ h.questions.splice(2,1);
+ const repaired=await h.actions.savePrepared({},form);assert.deepEqual(repaired.counts,{inserted:1,pending:97,approved:2});assert.equal(h.questions.length,100);assert.equal(h.questions.filter(q=>q.approved).length,2);
+ const audit=JSON.parse([...h.settings.values()][0].value);assert.equal(audit.inserted,100);assert.equal(audit.lastReconciliation.counts.inserted,1);
+});
+test('all previously approved questions yield zero Pending, not a misleading new-save count',async()=>{
+ const h=harness();await h.actions.savePrepared({},h.form());for(const q of h.questions)q.approved=true;
+ const result=await h.actions.savePrepared({},h.form());assert.deepEqual(result.counts,{inserted:0,pending:0,approved:100});assert.match(result.message,/আগে থেকেই Approved: 100টি/);
 });
