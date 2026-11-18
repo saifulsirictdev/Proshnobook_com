@@ -1,0 +1,194 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "board": "Dhaka",
+  "examYear": 2024,
+  "notes": [
+    "Source questions checked against PDF pages 1–2; all answer keys assistant-prepared and require teacher review.",
+    "Gap answers may admit contextually correct alternatives.",
+    "Story/dialogue retain original source prompts; practice blueprint assigns 15 marks rather than historical 10; preserve and display both.",
+    "No poems or short-story comprehension items were manufactured from this older paper."
+  ],
+  "items": [
+    {
+      "group": "seen-2",
+      "passage": "Today there are many jobs where we need English. This is because the world has become smaller. Vast distances are shortened by speedy transport. We can talk to a person thousands of kilometers away on the phone or the Internet. So we can communicate with the whole world easily. English has made this communication easier. There are many countries in the world with many languages, but to communicate with them, you cannot speak all the languages. So you need a common language that we can use with more or less all the people in the world. English is that common language. You can talk to a Chinese toy maker, a French artist, an Arab ambassador or a Korean builder in one language-English. English, for us in Bangladesh, is all the more important. As we have seen earlier, we are too many people in a small country. So if you learn English, you have the best opportunity to find a good job, both within and outside the country. And that is good news for millions of our unemployed youths.",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 1,
+          "instruction": "Read the text and fill in each gap with a suitable word based on the information of the text.\nDifferent people use different languages for making (a) . But a common language is necessary in (b)  to communicate with the people of the whole world. English has achieved the (c)  of being that language. It helps to get good jobs and have better (d) . So, we should learn Engish properly as it helps (e)  our unemployment problem.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "communication"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "order"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "status"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "opportunities"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "solve"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 2,
+          "instruction": "Match the parts of sentences given in columns ‘A’, ‘B’ and ‘C’ to write five complete sentences.",
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Punctuality is a virtue",
+                "i. person is",
+                "i. accurate in timing."
+              ],
+              [
+                "(b) It helps",
+                "ii. which can make us",
+                "ii. loved by all."
+              ],
+              [
+                "(c) A punctual",
+                "iii. punctual we shall",
+                "iii. surely succeed in life."
+              ],
+              [
+                "(d) He who",
+                "iv. is punctual never",
+                "iv. successful in future."
+              ],
+              [
+                "(e) If we become",
+                "v. us to become",
+                "v. gets late in his work."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Punctuality is a virtue which can make us successful in future."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It helps us to become accurate in timing."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "A punctual person is loved by all."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "He who is punctual never gets late in his work."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "If we become punctual we shall surely succeed in life."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 2,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "He thought him to be dead.",
+              "answer": "7"
+            },
+            {
+              "text": "The bear smelt his ears, nose and face.",
+              "answer": "6"
+            },
+            {
+              "text": "Suddenly they came across a bear.",
+              "answer": "3"
+            },
+            {
+              "text": "Once uon a time two friends were passing through a forest.",
+              "answer": "1"
+            },
+            {
+              "text": "Then the bear went away.",
+              "answer": "8"
+            },
+            {
+              "text": "Finding no other way, the later one laid down on the ground and feigned death.",
+              "answer": "5"
+            },
+            {
+              "text": "The first friend climbed up a tree but the later could not climb.",
+              "answer": "4"
+            },
+            {
+              "text": "They were talking about their love for each other.",
+              "answer": "2"
+            }
+          ],
+          "answer": "d → h → c → g → f → b → a → e"
+        }
+      ]
+    },
+    {
+      "group": "story",
+      "topic": "One day a school boy named Arif",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 2,
+          "instruction": "Read the beginning of a story below. It is not complete. Add at least ten new sentences to complete it. Give a suitable title to it:\nOne day a school boy named Arif was returning home from school. On the way to his home, he saw an old woman who was begging. Arif asked the woman why she was begging. In reply, she told him that ........",
+          "subitems": [],
+          "answer": "A Kind Act\nOne day a school boy named Arif was returning home from school. On the way to his home, he saw an old woman who was begging. Arif asked the woman why she was begging. In reply, she told him that she had nobody to support her. Arif listened carefully to her story. He wanted to help but had little money with him. He gave her the food he had saved from his lunch. Then he asked whether she had a safe place to stay. The woman replied that she had been sleeping near the market. Arif decided to seek help from a trusted adult. He went home and told his parents what had happened. His mother prepared a meal, and his father accompanied him back to the market. They spoke to the woman respectfully and asked what help she needed. With her agreement, they contacted a local organisation that supported elderly people. The organisation arranged safe shelter and regular meals for her. Arif visited her with his parents the following week. Seeing her safe and comfortable made him happy. He realised that kindness meant listening to people and finding responsible ways to help them."
+        }
+      ]
+    },
+    {
+      "group": "dialogue",
+      "topic": "benefits of physical exercise",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 12,
+          "sourceMarks": 10,
+          "pdfPage": 2,
+          "instruction": "Suppose, you are Tunan/Tanni. You have a friend named Milon/Mina. Your friend does not take physical exercise. But it is beneficial to health. Now, write a dialogue between you and your friend about the benefits of physical exercise.",
+          "subitems": [],
+          "answer": "Tunan: Hello, Milon. Would you like to join me for a walk?\nMilon: I usually avoid exercise. Is it really necessary?\nTunan: Yes. Regular physical activity helps keep our bodies fit and supports good health.\nMilon: Does it help us with our studies too?\nTunan: It can improve our mood and help us concentrate. It also gives us a healthy break from sitting.\nMilon: What kind of exercise should I start with?\nTunan: You could begin with walking and gradually add activities you enjoy, such as cycling or playing football.\nMilon: Should I exercise very hard on the first day?\nTunan: No. Start gently, increase your activity gradually and rest when you need to.\nMilon: What else should I remember?\nTunan: Drink enough water, choose a safe place and wear suitable clothes and shoes. If you have a health problem, ask a doctor for advice.\nMilon: Thank you. I will try to make exercise a regular habit.\nTunan: Great! Let us start with a short walk today."
+        }
+      ]
+    }
+  ]
+}

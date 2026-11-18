@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { englishBoardSourceSchema } from "./board-source";
 import { resolveEnglishSelection } from "./selection";
 const text = z.string().trim().min(1).max(20000);
 const table = z
@@ -10,6 +11,7 @@ const table = z
 const task = z
   .object({
     id: z.string().max(80),
+    boardSource: englishBoardSourceSchema.optional(),
     instruction: text,
     passageKey: z.string().max(80).optional(),
     clues: z.array(text).max(30).optional(),

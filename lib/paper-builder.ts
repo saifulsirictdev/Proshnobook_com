@@ -45,6 +45,7 @@ export const settingsSchema = z.object({
       examinee: bool(),
       tags: bool(),
       marks: bool(),
+      boardSource: bool(),
       omr: bool(),
       pageNumbers: bool(true),
       logo: bool(),

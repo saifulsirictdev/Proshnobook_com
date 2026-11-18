@@ -7,7 +7,7 @@
 - Existing shared user item/full-model preparation, processing popup and direct setup remain intact. No AI fallback, automatic approval or cross-grade content substitution.
 
 ## Not complete
-Prepared authored stock is still only Class 6. `preparedEnglishItems(7..12)` intentionally returns empty rather than copying Class 6. Other grades show their required item/mark coverage and missing-content state. This is infrastructure, not a claim that all grades are content-ready. No production import or approval was executed.
+Class 6 retains its existing prepared stock. Class 10 now has seven teacher-review groups from Dhaka Board 2024 (nine existing item types); Classes 7, 8, 9, 11 and 12 remain empty rather than reusing Class 6. Class 10 target quantities are NOT complete, and full assembly honestly reports missing poem/short-story comprehension. No production import or approval was executed.
 
 ## Drive source inventory checked during this phase
 Read-only Drive search returned these source files; folder ancestry identifies their grade:
@@ -55,3 +55,30 @@ Class 7 work is paused at the user's request. Continue with Class 10 English 1st
 - `ssc-dhaka-2024-unseen-review.json`: first review-only Unseen candidate with structured table, 5 answers and summary. Table image check and teacher answer review remain outstanding.
 - Candidates deliberately remain outside runtime/prepared registries: not imported, Pending, approved or live. Target gaps remain at least 49 Seen and 49 Unseen sets, before distinctness/content validation. Remaining topic targets and year-filter implementation are not complete.
 - Work is item-wise, not lesson-wise. The existing source lesson annotations are provenance only, not a lesson-based workflow.
+
+
+## SSC implementation batch 2 — board provenance, year filter and first nine item types
+- `boardSource` is optional task-level metadata with validated original board, exam year, source file, PDF page, question number and original marks. Existing drafts without it still validate. Item slicing, assembly, save and original-builder pagination retain it.
+- SSC first-paper preparation has a year input before the database request. A blank value uses all approved sources. A specified year selects matching board-tagged atomic groups only, excluding unknown years and mixed-year groups, without fallback to another year or school/model material. Invalid year/filter data is rejected before database reads. Other classes retain immediate auto preparation.
+- Print/preview shows board, year and original question number once per task. When historical marks differ from the practice blueprint (Dhaka 2024 story/dialogue: original 10 vs practice 15), both are shown; no claim of an exact historic full-paper reproduction.
+- Seven Class 10 preview groups are now registered in the existing ADMIN import page: Seen MCQ/comprehension, second Seen gap passage, Unseen information/summary, matching, rearranging, completing story and dialogue. Nine existing item types, not nine full sets of every type. Prompts/table checked against supplied PDF pages 1–2. Assistant-prepared answer keys still require teacher review; gap alternatives and creative writing answers are illustrative.
+- Source extraction's private-use blank glyphs are rendered as ordinary dashes. Source spelling is otherwise retained. Text reflow is not a new question.
+- Prepared content still requires explicit ADMIN preview/consent -> Pending -> review/approval. No import/approval was executed. Existing Class 6 identities, auth, payment and wallet behavior are unchanged. The earlier batch-1 statement that candidates were outside registries is superseded only for the page-checked candidates now registered here.
+
+### Coverage, not completion
+| Existing item | Prepared review entries | Target |
+|---|---:|---|
+| MCQ + comprehension | 1 linked Seen group | Seen target 50 distinct sets overall, counting scope still reported separately |
+| Gap | 1 separate Seen passage group | Included in Seen source coverage; not counted as another complete MCQ/comprehension set |
+| Information + summary | 1 linked Unseen group | 50 Unseen sets |
+| Matching | 1 | 40–60 |
+| Rearranging | 1 | 40–60 |
+| Poem comprehension | 0 | 40–60 |
+| Short-story comprehension | 0 | 40–60 |
+| Completing story | 1 | 40–60 |
+| Dialogue | 1 | 40–60 |
+
+Validation: 135 focused English/builder/pagination/purchased-editor/import-shortcut tests passed, including year isolation, mixed legacy snapshots, metadata validation, markup rendering, missing-stock honesty, and Pending-only consent. Webpack production compilation completed with existing Edge-runtime warnings. Full build/typecheck could not finish: Prisma client generation was blocked by network access to binaries.prisma.sh, leaving missing-client/cascading type errors; no diagnostics in changed paths. Real mobile browser and production deployment remain unverified.
+
+### User-controlled source-label visibility
+Board/year filtering is independent of paper presentation. `show.boardSource` defaults to false, including restored older settings. Page Setup provides an explicit toggle for board name, year and original question-number labels. Turning it off hides the entire provenance label (including historical-mark annotations) in the shared Preview/Print renderer without deleting metadata or changing filtering. Turning it on is saved with builder settings; historical marks still respect the separate marks visibility control. Regression coverage checks default-hidden, opt-in rendering, hide-again, settings roundtrip and filtering while hidden. All 135 focused tests pass.
