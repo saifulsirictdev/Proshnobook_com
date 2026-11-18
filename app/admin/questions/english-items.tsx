@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+import EnglishBulkApproval from "./english-bulk-approval";
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { staff } from "@/lib/guard";
@@ -34,6 +36,7 @@ export default async function EnglishQuestionItems({review = false, status = "al
       <p>{prepared.length}টি স্বতন্ত্র group; বর্তমান সংরক্ষিত item/model: {rows.length}টি। আগের approval/rejection অক্ষত থাকবে।</p>
       <Link className="qm-action-link block" href="/admin/questions?category=Class%206&subject=English%201st%20Paper&status=pending#english-question-items">পাঠানো প্রশ্ন review / অনুমোদন করুন →</Link>
     </form>}
+    {review && <EnglishBulkApproval entries={cards.flatMap(card => card?.record?.status === "PENDING" ? [{key:card.key,digest:createHash("sha256").update(stored.get(card.key)!).digest("hex")}] : [])} />}
     {!cards.length && <p>এই অবস্থায় কোনো সংরক্ষিত item নেই। Import পেজ থেকে preview করে Pending করুন।</p>}
     <p>Seen/Unseen নিজ নিজ প্রশ্ন–উত্তরসহ অক্ষত। প্রস্তুত কনটেন্ট Class 6-এর; শিক্ষকের পূর্ণ পর্যালোচনা ও বর্তমান মানবণ্টন মিলিয়ে নেওয়া প্রয়োজন।</p>
     {cards.map(card => card && <details key={card.key} className="space-y-3 rounded border p-3">
