@@ -1,3 +1,5 @@
+import SourceImport from "./source-import";
+import { englishSourceImportDigest, preparedEnglishSources } from "@/lib/english/source-import";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
@@ -7,14 +9,38 @@ import { validateEnglishDraft } from "@/lib/english/draft";
 export const dynamic = "force-dynamic";
 export default async function EnglishReview() {
   if ((await auth())?.user?.role !== "ADMIN") redirect("/login");
-  const rows = await db.setting.findMany({
+  const sources = preparedEnglishSources();
+  const imported: { key: string; value: string }[] = await db.setting.findMany({
+    where: { key: { in: sources.map(s => s.key) } },
+    select: { key: true, value: true },
+  });
+  const sourceStatuses = new Map(imported.map(row => {
+    try { return [row.key, String(JSON.parse(row.value).status)] as const; }
+    catch { return [row.key, "INVALID — manual review required"] as const; }
+  }));
+  const rows: { key: string; value: string }[] = await db.setting.findMany({
     where: { key: { startsWith: "english-review:" } },
     orderBy: { key: "desc" },
     take: 100,
   });
   return (
     <main className="space-y-5 p-5">
-      <h1 className="text-2xl font-bold">English — উদ্ধার করা অংশের অনুমোদন</h1>
+      <h1 className="text-2xl font-bold">English — source import ও উদ্ধার করা অংশ</h1>
+      <section className="space-y-4">
+        <h2 className="text-xl font-bold">Class 6 · English 1st Paper — ৩০টি seen extract + ৬টি poem</h2>
+        <p>এগুলো reading source, প্রস্তুত প্রশ্ন নয়। শুধু Pending হিসেবে database-এ সেভ হবে। Auto Model Test-এর bundled source আগের মতোই চলে; এই import কোনো source-কে স্বয়ংক্রিয় অনুমোদন বা প্রকাশ করে না।</p>
+        <p>বই: NCTB English for Today, revised 2026। OCR-সহায়তায় transcription ও spot-check হয়েছে; পূর্ণ শিক্ষক-পর্যালোচনা/বর্তমান circular verification বাকি। দশটি ছোট extract শুধু gap/vocabulary-এর উপযোগী।</p>
+        <p>এই সংস্করণের {imported.length}/{sources.length}টি source database-এ আছে। প্রতি source-এর অবস্থা নিচে দেখুন।</p>
+        <details className="rounded border p-4">
+          <summary>৩৬টি source-এর সম্পূর্ণ preview / import status</summary>
+          {sources.map(({ key, payload: p }) => <article key={key} className="my-4 space-y-2 border-t pt-3">
+            <h3 className="font-semibold">{p.kind} · {p.title} · Lesson {p.lesson} — {sourceStatuses.get(key) ?? "NOT IMPORTED"}</h3>
+            <p className="text-sm">{p.reference}</p>
+            <pre className="whitespace-pre-wrap text-sm">{p.text}</pre>
+          </article>)}
+        </details>
+        <SourceImport digest={englishSourceImportDigest()} />
+      </section>
       <p>
         সর্বোচ্চ ১০০টি সংরক্ষিত snapshot। অনুমোদিত অংশ অন্য English paper তৈরিতে
         database থেকে ব্যবহার করা যাবে। Live test-এ স্বয়ংক্রিয় প্রকাশ হবে না।
