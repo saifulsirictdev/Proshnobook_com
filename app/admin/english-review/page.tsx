@@ -1,3 +1,4 @@
+import { importEnglishItems } from "./item-actions";
 import CompleteModelImport from "./complete-model-import";
 import { completeEnglishLibraryDigest, preparedCompleteEnglishModels, preparedCompleteEnglishModel } from "@/lib/english/prepared-complete-model";
 import SourceImport from "./source-import";
@@ -28,13 +29,25 @@ export default async function EnglishReview() {
     orderBy: { key: "desc" },
     take: 100,
   });
+  const itemRows: {key:string;value:string}[] = await db.setting.findMany({where:{key:{startsWith:"english-item:v1:"}},orderBy:{key:"asc"}});
   const completeKeys = new Set(completeRows.map(r => r.key));
-  const reviewRows = [...completeRows, ...rows.filter(r => !completeKeys.has(r.key))];
+  const reviewRows = [...itemRows, ...completeRows, ...rows.filter(r => !completeKeys.has(r.key))];
   return (
     <main className="space-y-5 p-5">
-      <h1 className="text-2xl font-bold">English — source import ও উদ্ধার করা অংশ</h1>
+      <h1 className="text-2xl font-bold">English — Question Item ভান্ডার ও review</h1>
+      <section className="space-y-3 rounded border p-4">
+        <h2 className="text-xl font-bold">Question Item অনুযায়ী প্রশ্নভান্ডার</h2>
+        <p>Seen-1, Seen-2, Unseen এবং অন্যান্য item আলাদা করে Pending import হবে। একই passage-এর প্রশ্নগুলো একসঙ্গে থাকবে। নিচে প্রতিটি group review করে অনুমোদন দিন। পূর্ণ model snapshot অনুমোদন বাধ্যতামূলক নয়।</p>
+        <form action={importEnglishItems} className="space-y-3">
+          <input type="hidden" name="digest" value={completeEnglishLibraryDigest()} />
+          <label className="block"><input type="checkbox" name="reviewed" value="yes" required /> নিচের প্রস্তুত প্রশ্ন–উত্তরের preview ও সীমাবদ্ধতা দেখেছি।</label>
+          <button className="rounded bg-emerald-700 px-4 py-2 text-white">Question Item অনুযায়ী Pending import করুন</button>
+          <a className="block underline" href="#english-model-reviews">পাঠানো item review / অনুমোদন করুন ↓</a>
+        </form>
+        <p>{itemRows.length}টি স্বতন্ত্র passage/question group database-এ আছে। পুনরায় import করলে আগের সিদ্ধান্ত বদলাবে না।</p>
+      </section>
       <section className="space-y-4 rounded border p-4">
-        <h2 className="text-xl font-bold">প্রস্তুত পূর্ণ প্রশ্ন–উত্তর মডেল — Class 6 English 1st Paper</h2>
+        <h2 className="text-xl font-bold">পুরোনো পূর্ণ মডেল import — Class 6 English 1st Paper</h2>
         <p>৩১টি পূর্ণ ১০০ নম্বরের মডেল-combination: প্রতিটিতে ১৩টি অংশ ও answer key। ৩০টি extract-এর প্রত্যেকটির জন্য পাঁচটি gap এবং পাঁচটি vocabulary প্রশ্ন–উত্তর আছে। Seen-1-এর দুইটি প্রস্তুত MCQ/লিখিত group ও তিনটি original unseen group পুনর্ব্যবহৃত—৩১টি সম্পূর্ণ নতুন প্রশ্নসেট নয়। মানবণ্টন বইয়ের practice sample অনুযায়ী; বর্তমান circular ও শিক্ষক semantic review বাকি। Unseen আগে পড়ানো হলে পরীক্ষার্থীর জন্য বদলাতে হবে।</p>
         <details><summary>সম্পূর্ণ মডেল ও উত্তর preview করুন</summary><pre className="whitespace-pre-wrap text-sm">{JSON.stringify({ selection: complete.draft.selection, output: complete.draft.output }, null, 2)}</pre></details>
         <CompleteModelImport digest={complete.digest} />
@@ -65,8 +78,8 @@ export default async function EnglishReview() {
         database থেকে ব্যবহার করা যাবে। Live test-এ স্বয়ংক্রিয় প্রকাশ হবে না।
         মালিকের private draft আলাদা থাকে।
       </p>
-      <h2 id="english-model-reviews" className="scroll-mt-24 text-xl font-bold">পাঠানো পূর্ণ মডেল — review ও অনুমোদন</h2>
-      <p>প্রতিটি Pending মডেলের সব প্রশ্ন ও উত্তর পড়ে তার নিচের অনুমোদন বাটন ব্যবহার করুন। Approved পূর্ণ মডেলই Auto Model Test-এ ব্যবহার হবে।</p>
+      <h2 id="english-model-reviews" className="scroll-mt-24 text-xl font-bold">পাঠানো Question Item / মডেল — review ও অনুমোদন</h2>
+      <p>প্রতিটি Pending item/group-এর সব প্রশ্ন ও উত্তর পড়ে তার নিচের অনুমোদন বাটন ব্যবহার করুন। Approved item থেকে পূর্ণ মডেল সাজানো হবে; পুরোনো Approved মডেলের item-ও ব্যবহারযোগ্য।</p>
       {reviewRows.length === 0 && <p>এখনো কোনো পূর্ণ মডেল পাঠানো হয়নি। উপরের পূর্ণ প্রশ্ন–উত্তর মডেল Pending import করুন; শুধু reading source বা অধ্যায়ের প্রশ্ন import করলে এখানে পূর্ণ মডেল আসবে না।</p>}
       {reviewRows.map((row) => {
         try {

@@ -21,10 +21,10 @@ test('Only complete approved same-grade full models with answers are reusable',(
 });
 function harness(rows=[],user={id:'teacher',role:'TEACHER'}){let reads=0,writes=[];const a=load('app/actions/english-bank-model.ts',{'@/auth':{auth:async()=>({user})},'@/lib/db':{db:{setting:{findMany:async()=>{reads++;return rows;},create:async({data})=>{writes.push(data);}}}}});return{run:a.prepareEnglishBankModel,reads:()=>reads,writes};}
 test('Bank-only preparation saves an owned private review draft without provider or quota writes',async()=>{
- const h=harness([{key:prepared.key,value:record()}]);const r=await h.run(6);assert.equal(r.ok,true);assert.match(r.key,/^englishpaper:teacher:/);assert.equal(h.writes.length,1);assert.equal(h.writes[0].key,r.key);const draft=JSON.parse(h.writes[0].value);assert.deepEqual(draft.output,prepared.draft.output);assert.notEqual(draft,prepared.draft);
+ const h=harness([{key:prepared.key,value:record()}]);const r=await h.run(6);assert.equal(r.ok,true);assert.match(r.key,/^englishpaper:teacher:/);assert.equal(h.writes.length,1);assert.equal(h.writes[0].key,r.key);const draft=JSON.parse(h.writes[0].value);assert.deepEqual(draft.output.tasks,prepared.draft.output.tasks);assert.deepEqual(new Set(draft.output.passages.map(p=>p.key)),new Set(prepared.draft.output.passages.map(p=>p.key)));assert.notEqual(draft,prepared.draft);
 });
 test('Every supported grade reports missing full stock instead of generating; unauthorized calls read nothing',async()=>{
- for(let grade=6;grade<=12;grade++){const h=harness([{key:prepared.key,value:record('PENDING')}]);const r=await h.run(grade);assert.equal(r.ok,false);assert.match(r.error,/AI চালানো হয়নি/);assert.equal(h.writes.length,0);}
+ for(let grade=6;grade<=12;grade++){const h=harness([{key:prepared.key,value:record('PENDING')}]);const r=await h.run(grade);assert.equal(r.ok,false);assert.match(r.error,/প্রশ্নভান্ডারে/);assert.equal(h.writes.length,0);}
  for(const user of [null,{id:'s',role:'STUDENT'}]){const h=harness([],user);assert.equal((await h.run(6)).ok,false);assert.equal(h.reads(),0);}
  const h=harness();assert.equal((await h.run(5)).ok,false);assert.equal(h.reads(),0);
 });
@@ -63,4 +63,34 @@ test('Batch import checks manifest, writes 31 Pending snapshots atomically and p
  for(const value of saved.values()){const r=JSON.parse(value);assert.equal(r.status,'PENDING');assert.equal(r.provenance.teacherApproved,false);assert.equal(r.draft.selection.includeAnswers,true);}
  const first=lib.preparedCompleteEnglishModels()[1],rejected=record('REJECTED',first.draft);saved.set(first.key,rejected);assert.match((await action({},fd)).message,/0টি/);assert.equal(saved.size,31);assert.equal(saved.get(first.key),rejected);
  fd.set('scope','forged');assert.ok((await action({},fd)).error);assert.equal(calls,2);
+});
+test('Independent Question Item stock assembles in syllabus order without a complete snapshot',()=>{
+ const items=require('../lib/english/item-bank.ts');
+ const models=require('../lib/english/prepared-complete-model.ts').preparedCompleteEnglishModels();
+ const groups=models.flatMap(m=>items.englishItemGroups(m.draft));
+ const distinct=[...new Map(groups.map(g=>[g.key,g])).values()];
+ assert.ok(distinct.length>40);
+ const stock=distinct.map(g=>items.approvedEnglishItem(JSON.stringify({status:'APPROVED',draft:g.draft}),6));
+ assert.ok(stock.every(Boolean));assert.ok(stock.every(d=>d.selection.mode==='selected'));
+ for(const random of [()=>0,()=>0.5,()=>0.99]){
+  const {draft,missing}=items.assembleEnglishItems(stock,6,random);assert.deepEqual(missing,[]);assert.ok(draft);
+  assert.deepEqual(draft.output.tasks.map(t=>t.id),prepared.draft.output.tasks.map(t=>t.id));
+  assert.notEqual(draft.selection.sources['seen-1'].text,draft.selection.sources['seen-2'].text);
+  const unseen=draft.output.passages.find(p=>p.key==='unseen');assert.ok(unseen);
+  for(const id of ['information','true-false','summary'])assert.equal(draft.output.tasks.find(t=>t.id===id).passageKey,'unseen');
+  assert.ok(distinct.some(g=>g.group==='unseen'&&g.draft.output.passages[0].text===unseen.text&&JSON.stringify(g.draft.output.tasks)===JSON.stringify(draft.output.tasks.filter(t=>t.passageKey==='unseen'))));
+ }
+ const incomplete=stock.filter(d=>!d.output.tasks.some(t=>t.id==='gap'));assert.ok(items.assembleEnglishItems(incomplete,6).missing.includes('gap'));
+ for(const status of ['PENDING','REJECTED'])assert.equal(items.approvedEnglishItem(JSON.stringify({status,draft:distinct[0].draft}),6),null);
+ assert.equal(items.approvedEnglishItem(JSON.stringify({status:'APPROVED',draft:distinct[0].draft}),7),null);
+});
+test('Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicated and retry-safe',async()=>{
+ const library=require('../lib/english/prepared-complete-model.ts');const saved=new Map();let writes=0;
+ function action(role){return load('app/admin/english-review/item-actions.ts',{'@/auth':{auth:async()=>({user:{id:'a',role}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async({data,skipDuplicates})=>{writes++;assert.equal(skipDuplicates,true);for(const row of data)if(!saved.has(row.key))saved.set(row.key,row.value);}}}}}).importEnglishItems;}
+ const fd=new FormData();fd.set('digest',library.completeEnglishLibraryDigest());fd.set('reviewed','yes');
+ await assert.rejects(()=>action('TEACHER')(fd));assert.equal(writes,0);
+ await action('ADMIN')(new FormData());assert.equal(writes,0);
+ await action('ADMIN')(fd);assert.ok(saved.size>40);const count=saved.size;
+ for(const value of saved.values()){const r=JSON.parse(value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.mode,'selected');}
+ const key=[...saved.keys()][0];saved.set(key,'preserved decision');await action('ADMIN')(fd);assert.equal(saved.size,count);assert.equal(saved.get(key),'preserved decision');
 });
