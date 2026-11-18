@@ -13,7 +13,7 @@ export default async function EnglishPage({
   const grade = Number(p.grade),
     paper = Number(p.paper);
   const validGrade = (grade >= 6 && grade <= 12 && Number.isInteger(grade) ? grade : 6) as EnglishGrade;
-  if (paper !== 2 && p.mode === "full") return <EnglishAutoModel key={validGrade} grade={validGrade} />;
+  if (p.mode === "full") return <EnglishAutoModel key={`${validGrade}-${paper === 2 ? 2 : 1}`} grade={validGrade} paper={paper === 2 ? 2 : 1} />;
   const group = englishQuestionItemGroups(validGrade, paper === 2 ? 2 : 1).find(g => g.id === p.group);
   return (
     <EnglishSetup
@@ -21,9 +21,9 @@ export default async function EnglishPage({
         grade >= 6 && grade <= 12 && Number.isInteger(grade) ? grade : 6
       }
       initialPaper={paper === 2 ? 2 : 1}
-      initialMode={paper !== 2 && p.mode === "topic" ? "selected" : "full"}
-      initialItems={paper !== 2 && p.mode === "topic" ? group?.itemIds : undefined}
-      initialItem={paper !== 2 && typeof p.item === "string" ? p.item : ""}
+      initialMode={p.mode === "topic" ? "selected" : "full"}
+      initialItems={p.mode === "topic" ? group?.itemIds : undefined}
+      initialItem={typeof p.item === "string" && englishQuestionItemGroups(validGrade, paper === 2 ? 2 : 1).some(g => g.itemIds.includes(p.item!)) ? p.item : ""}
     />
   );
 }

@@ -188,7 +188,7 @@ export default function EnglishSetup({
           }}
         >
           <option value="full">Full Model Test (printable)</option>
-          <option value="selected">{paper === 1 ? "Topic-wise (Selected Parts)" : "Selected Parts"}</option>
+          <option value="selected">{paper === 1 ? "Topic-wise (Selected Parts)" : "Question item (Selected Parts)"}</option>
           <option value="writing">Writing Only</option>
         </select>
       </label>

@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { prepareEnglishFullModel } from "@/app/actions/english-auto-model";
-export default function EnglishAutoModel({ grade }: { grade: number }) {
+export default function EnglishAutoModel({ grade, paper = 1 }: { grade: number; paper?: 1 | 2 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(true), [error, setError] = useState("");
   const [missing, setMissing] = useState<string[]>([]);
@@ -16,18 +16,18 @@ export default function EnglishAutoModel({ grade }: { grade: number }) {
   }
   useEffect(() => {
     let stopped = false;
-    request.current ??= prepareEnglishFullModel({ grade });
+    request.current ??= prepareEnglishFullModel({ grade, paper });
     request.current.then(result => { if (!stopped) accept(result); }).catch(() => { if (!stopped) { setBusy(false); setError("ফল নিশ্চিত হয়নি। আবার তৈরির আগে আমার draft দেখুন; generation চলতে পারে।"); } });
     return () => { stopped = true; };
-  }, [grade]); // This entry is keyed by grade; no generation on render.
+  }, [grade, paper]); // This entry is keyed by grade and paper; no generation on render.
   async function retry() {
     if (busy) return;
     setBusy(true); setError("");
-    try { accept(await prepareEnglishFullModel({ grade, sources })); }
+    try { accept(await prepareEnglishFullModel({ grade, paper, sources })); }
     catch { setBusy(false); setError("ফল নিশ্চিত হয়নি। আমার draft দেখুন, তারপর আবার চেষ্টা করুন।"); }
   }
   return <main className="mx-auto max-w-3xl space-y-5 px-4 py-8">
-    <h1 className="text-2xl font-bold">Class {grade} — Full Model Test প্রস্তুত হচ্ছে</h1>
+    <h1 className="text-2xl font-bold">Class {grade} · English {paper === 2 ? "2nd" : "1st"} Paper — Full Model Test প্রস্তুত হচ্ছে</h1>
     <p>ধাপ ১: প্রশ্নভান্ডার থেকে নির্বাচন / না-থাকলে AI → ধাপ ২: প্রশ্ন দেখুন ও বদলান → ধাপ ৩: Page Set-up।</p>
     <p className="text-sm">বিদ্যমান class অনুযায়ী practice কাঠামো ব্যবহৃত হচ্ছে; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন। AI প্রয়োজন হলে বিদ্যমান generation quota প্রযোজ্য।</p>
     {busy && <p role="status">সব অংশ স্বয়ংক্রিয়ভাবে নির্বাচন করে সম্পূর্ণ প্রশ্নপত্র প্রস্তুত করা হচ্ছে। এই পেজ বন্ধ করবেন না…</p>}

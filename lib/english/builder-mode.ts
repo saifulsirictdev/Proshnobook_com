@@ -9,7 +9,6 @@ export function englishBuilderContext(category: string, subject: string) {
   const params = new URL(route, "https://proshnobook.com").searchParams;
   const grade = Number(params.get("grade")) as EnglishGrade;
   const paper = Number(params.get("paper")) as EnglishPaper;
-  if (paper !== 1) return null;
   return { route, grade, paper, blueprint: englishBlueprint(grade, paper) };
 }
 export function englishBuilderHref(category: string, subject: string, mode: string, topic: string, topicKind = "item") {
@@ -17,6 +16,7 @@ export function englishBuilderHref(category: string, subject: string, mode: stri
   if (!context || !["topic", "full"].includes(mode)) return null;
   if (mode === "full") return context.route + "&mode=full";
   if (topicKind === "lesson") {
+    if (context.paper === 2) return null;
     const lessons = englishLessonOptions(context.grade, context.paper);
     if (!lessons.topics.includes(topic) || !lessons.subject) return null;
     // Direct existing bank picker: do not feed English lessons into generic CQ AI preparation.
@@ -30,9 +30,8 @@ export function englishBuilderHref(category: string, subject: string, mode: stri
 }
 /** Automatic, editable practice prompts; not claimed mandatory syllabus topics. */
 export function fullModelWriting(grade: EnglishGrade, paper: EnglishPaper) {
-  if (paper !== 1) return {};
   return Object.fromEntries(englishBlueprint(grade, paper).items.filter(i => i.section === "writing").map(i => [i.id, {
-    topic: i.id === "story" ? "Honesty is the best policy" : i.id === "dialogue" ? "The importance of reading books" : i.id === "paragraph" ? "Your school library" : `School life and learning — ${i.title}`,
+    topic: i.id === "letter-email" || i.id === "formal-letter-email" ? "Write to the headteacher requesting more books for the school library" : i.id === "report" ? "A book fair held at your school" : i.id === "composition" ? "The importance of reading books" : i.id === "story" ? "Honesty is the best policy" : i.id === "dialogue" ? "The importance of reading books" : i.id === "paragraph" ? "Your school library" : `School life and learning — ${i.title}`,
     ...(i.writingChoices ? { choice: i.writingChoices[0] } : {}),
     ...(i.words ? { words: i.words } : {}),
   }]));

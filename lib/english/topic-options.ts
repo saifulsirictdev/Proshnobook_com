@@ -6,9 +6,8 @@ export type EnglishQuestionGroup = { id: string; title: string; itemIds: string[
  * Class 7 is separately transcribed; no Class 6 groups are inferred for other grades or second paper.
  */
 export function englishQuestionItemGroups(grade: EnglishGrade, paper: EnglishPaper): EnglishQuestionGroup[] {
-  if (paper !== 1) return [];
   const blueprint = englishBlueprint(grade, paper);
-  if (grade === 6) return [
+  if (grade === 6 && paper === 1) return [
     { id: "seen-comprehension", title: "Ques. No. 01–04: Seen Comprehension / Passages", itemIds: ["mcq", "comprehension", "gap", "vocabulary"] },
     { id: "unseen-comprehension", title: "Ques. No. 05–07: Unseen Comprehension / Passages", itemIds: ["information", "true-false", "summary"] },
     { id: "matching", title: "Ques. No. 08: Matching", itemIds: ["matching"] },
@@ -18,7 +17,7 @@ export function englishQuestionItemGroups(grade: EnglishGrade, paper: EnglishPap
     { id: "paragraph", title: "Ques. No. 12: Writing Paragraph", itemIds: ["paragraph"] },
     { id: "dialogue", title: "Ques. No. 13: Writing Dialogue", itemIds: ["dialogue"] },
   ];
-  if (grade === 7) return [
+  if (grade === 7 && paper === 1) return [
     { id: "seen-comprehension", title: "Ques. No. 01–04: Seen Comprehension", itemIds: ["mcq", "comprehension", "gap", "vocabulary"] },
     { id: "unseen-comprehension", title: "Ques. No. 05–07: Unseen Comprehension", itemIds: ["information", "true-false", "summary"] },
     { id: "matching", title: "Ques. No. 08: Matching", itemIds: ["matching"] },
