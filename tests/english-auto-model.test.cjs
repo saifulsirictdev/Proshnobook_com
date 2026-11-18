@@ -4,7 +4,7 @@ const blueprint=load('lib/english/blueprints.ts');
 const selection=load('lib/english/selection.ts',{'./blueprints':blueprint});
 const builder=load('lib/english/builder-mode.ts',{'./blueprints':blueprint,'./selection':selection,'./topic-options':{}});
 function harness(user={id:'teacher',role:'TEACHER'},sources={}){let reads=0,requests=[];
- const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);const r=selection.resolveEnglishSelection(raw);assert.equal(r.total,blueprint.englishBlueprint(raw.grade,raw.paper).total);return{ok:true,key:'owned-draft-key'};}}});
+ const actions=load('app/actions/english-auto-model.ts',{'@/lib/english/bundled-model-sources':{bundledEnglishModelSources:()=>({})},'@/auth':{auth:async()=>({user})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);const r=selection.resolveEnglishSelection(raw);assert.equal(r.total,blueprint.englishBlueprint(raw.grade,raw.paper).total);return{ok:true,key:'owned-draft-key'};}}});
  return{prepare:actions.prepareEnglishFullModel,requests,reads:()=>reads};
 }
 test('Auto-model rejects unsupported/forged inputs and unauthorised users before source/AI lookup',async()=>{
@@ -50,4 +50,43 @@ test('Second-paper auto models select grade-specific grammar/writing, require no
  const auto=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'full'})});assert.equal(auto.type,Auto);assert.equal(auto.props.paper,2);assert.equal(auto.props.grade,8);assert.equal(auto.key,'8-2');
  const item=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'topic',item:'verbs'})});assert.equal(item.props.initialMode,'selected');assert.equal(item.props.initialItem,'verbs');assert.equal(item.props.initialPaper,2);
  const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper })'));assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources })'));
+});
+test('Bundled Class 6 sources cover all required groups without a source form, never leak to other grades/papers',async()=>{
+ const data=require('../lib/english/data/class6-seen-pool.json');
+ const bundle=load('lib/english/bundled-model-sources.ts',{'./data/class6-seen-pool.json':data});
+ const actual=bundle.bundledEnglishModelSources; bundle.bundledEnglishModelSources=(grade,paper)=>actual(grade,paper,()=>0);
+ const bundled=bundle.bundledEnglishModelSources(6,1);
+ assert.equal(data.status,'PRIVATE_PRACTICE_SOURCE_POOL_NOT_BANK_APPROVAL');
+ assert.deepEqual(Object.keys(bundled),['seen-1','seen-2','textbook-poems']);
+ assert.ok(bundled['seen-1'].text.length>100);assert.match(bundled['textbook-poems'].text,/Boats sail on the rivers/);
+ for(let grade=7;grade<=12;grade++)assert.deepEqual(bundle.bundledEnglishModelSources(grade,1),{});
+ assert.deepEqual(bundle.bundledEnglishModelSources(6,2),{});
+ bundled['seen-1'].text='mutated';assert.notEqual(bundle.bundledEnglishModelSources(6,1)['seen-1'].text,'mutated');
+ let request;
+ const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user:{id:'teacher',role:'TEACHER'}})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'@/lib/english/bundled-model-sources':bundle,'./english-model-sources':{loadEnglishModelSources:async()=>({sources:{'seen-1':{text:'Approved replacement',reference:'Approved unit'}}})},'./english-paper':{generateEnglishPaper:async raw=>{request=raw;return{ok:true,key:'private-draft'};}}});
+ assert.equal((await actions.prepareEnglishFullModel({grade:6,paper:1})).ok,true);
+ assert.equal(request.sources['seen-1'].text,'Approved replacement');
+ assert.ok(request.sources['seen-2'].text.length>100);
+ const r=selection.resolveEnglishSelection(request);assert.equal(r.total,100);assert.equal(r.items.length,13);
+ assert.equal((await actions.prepareEnglishFullModel({grade:6,sources:{'seen-1':{text:'Teacher replacement',reference:'Teacher unit'}}})).ok,true);
+ assert.equal(request.sources['seen-1'].text,'Teacher replacement');
+ assert.equal((await actions.prepareEnglishFullModel({grade:7})).ok,false);
+});
+test('Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback',()=>{
+ const data=require('../lib/english/data/class6-seen-pool.json'),crypto=require('node:crypto');
+ const bundle=load('lib/english/bundled-model-sources.ts',{'./data/class6-seen-pool.json':data});
+ assert.equal(data.seen.length,30);assert.equal(data.poems.length,6);
+ assert.equal(data.sourceSha256,'bc5a1b181b3f60fe35594a061c875d9e5d3d3f42df16296b33b738bdb30c6e3d');
+ assert.equal(new Set(data.seen.map(p=>p.id)).size,30);assert.equal(new Set(data.seen.map(p=>p.text)).size,30);
+ for(const p of data.seen){assert.equal(p.textSha256,crypto.createHash('sha256').update(p.text).digest('hex'));assert.ok(p.wordCount>=55);assert.equal(p.wordCount,p.text.split(/\s+/).length);assert.ok(p.reference.includes('PDF'));assert.ok(p.pdfPages.length>0);assert.ok(p.printedPages.length>0);}
+ const firsts=new Set(),seconds=new Set(),poemSets=new Set();
+ for(let seed=1;seed<=500;seed++){
+  let state=seed;const random=()=>{state=(state*1664525+1013904223)>>>0;return state/4294967296;}; for(let warm=0;warm<10;warm++)random();
+  const sources=bundle.bundledEnglishModelSources(6,1,random),a=data.seen.find(p=>p.text===sources['seen-1'].text),b=data.seen.find(p=>p.text===sources['seen-2'].text);
+  assert.ok(a.eligibleGroups.includes('seen-1'));assert.ok(a.wordCount>=100);assert.notEqual(a.id,b.id);assert.notEqual(a.lesson,b.lesson);
+  firsts.add(a.id);seconds.add(b.id);poemSets.add(sources['textbook-poems'].text);
+  assert.equal(sources['textbook-poems'].text.split('\n\n---\n\n').length,3);assert.ok(sources['textbook-poems'].reference.length<=500);
+  const r=selection.resolveEnglishSelection({grade:6,paper:1,mode:'full',itemIds:[],sources,writing:builder.fullModelWriting(6,1),includeAnswers:true});assert.equal(r.total,100);
+ }
+ assert.ok(firsts.size>15);assert.equal(seconds.size,30);assert.ok(poemSets.size>10);
 });
