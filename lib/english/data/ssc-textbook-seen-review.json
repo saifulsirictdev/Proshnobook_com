@@ -1,0 +1,954 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceKind": "nctb-textbook-based-authored-practice",
+  "sourceFile": "1XLk9TBYh1R-jYrpFzjXwIv51239u4Sf4",
+  "sourceSha256": "a5628de6a7b1a2afd1caf0adfb0d49603dc0c5a8b51f031d2b8c168ed5fd78f6",
+  "title": "English for Today — Classes Nine and Ten",
+  "edition": "Revised October 2025; 2026 page imprint",
+  "notes": [
+    "All questions and suggested answers are assistant-authored practice based on visually checked supplied textbook excerpts, not verbatim NCTB exercises, official keys or historical board/school papers. Grade confirmed from textbook cover. No exam provenance assigned.",
+    "Eight atomic Seen MCQ/comprehension pairs: seven four-option questions plus five written questions on the identical linked source excerpt. Exact excerpt boundaries/printed and PDF pages recorded. Normalised line wraps, quotation glyphs and OCR artefacts against page images; original source grammar/claims retained. No invented substitute passages.",
+    "Questions use only the displayed excerpt; shorter excerpts are disclosed and do not claim to reproduce complete lessons. Jobs excerpt starts with a pronoun but Jobs is explicitly named later. All answer options are distinct and one intended key is present; subjective comprehension alternatives require teacher judgement.",
+    "Held Olympics record/retirement claims, Lake Baikal depth/hydrological statements, generalised medical yoga claims, speculative Jobs adoption causality and outdated country population/language counts. No current-fact certification. RSPB data explicitly historical, not a new Bangladesh survey."
+  ],
+  "items": [
+    {
+      "topic": "Anusha and Tiya — favourite pastimes",
+      "pdfPages": [
+        29,
+        30
+      ],
+      "printedPages": [
+        24,
+        25
+      ],
+      "excerptLocator": "Unit 3 Lesson 1 B, complete conversation; excludes yoga article",
+      "passage": "Tiya: Anusha, what's the matter? You’re wearing sports trousers, T-shirts, sports shoes and carrying a bag! Where are you coming from? And you look tired!\nAnusha: Not exactly, Tiya. I’m feeling great because I’m just coming back from the gym.\nTiya: Do you go to the gym regularly?\nAnusha: Yes, I do. I go twice a week. It’s one of my favourite pastimes.\nTiya: Really! Going to the gym is your favourite pastime! You make me laugh!\nAnusha: Why not? I like sports because I like to be fit. I’m not a lazy person like you!\nTiya: What do you do there?\nAnusha: I do yoga.\nTiya: Don’t you have any other pastimes?\nAnusha: Hmm... yes, I have. I like playing chess, painting, and reading books when I’m free. I also like photography but I’m yet to learn it. What do you do in your pastime?\nTiya: I like watching TV, listening to music, reading books and magazines, and playing games on the computer. I do like gardening. But we don’t have sufficient space. So I do pot planting. By the way, I don’t know much about yoga. Would you please tell me about it?\nAnusha: Sure! I’ll give you an article on it. It will help you know about yoga. Okay?",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Anusha’s lazy-person remark is character dialogue, not an assessment of all people who do not attend gyms. No exercise prescription is inferred.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Where has Anusha just been?",
+              "options": [
+                "At the gym",
+                "At a cinema",
+                "At a railway station",
+                "At a flower market"
+              ],
+              "answer": "At the gym"
+            },
+            {
+              "text": "How often does Anusha say she goes to the gym?",
+              "options": [
+                "Once a month",
+                "Twice a week",
+                "Every hour",
+                "Three times a day"
+              ],
+              "answer": "Twice a week"
+            },
+            {
+              "text": "Which activity does Anusha name when asked what she does at the gym?",
+              "options": [
+                "Stamp collecting",
+                "Cooking",
+                "Yoga",
+                "Fishing"
+              ],
+              "answer": "Yoga"
+            },
+            {
+              "text": "Which interest has Anusha not yet learned?",
+              "options": [
+                "Chess",
+                "Painting",
+                "Reading",
+                "Photography"
+              ],
+              "answer": "Photography"
+            },
+            {
+              "text": "Why does Tiya practise pot planting?",
+              "options": [
+                "She does not have sufficient space",
+                "She dislikes all plants",
+                "She owns a large forest",
+                "She cannot find any pots"
+              ],
+              "answer": "She does not have sufficient space"
+            },
+            {
+              "text": "How will Anusha help Tiya learn about yoga?",
+              "options": [
+                "By selling her a camera",
+                "By giving her an article",
+                "By booking a train ticket",
+                "By asking her to stop reading"
+              ],
+              "answer": "By giving her an article"
+            },
+            {
+              "text": "What does “pastime” mean in this conversation?",
+              "options": [
+                "A compulsory medical operation",
+                "A type of school uniform",
+                "An activity enjoyed in free time",
+                "A scheduled departure time"
+              ],
+              "answer": "An activity enjoyed in free time"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "What makes Tiya think Anusha has been doing something active?",
+              "answer": "She notices Anusha’s sports clothes, sports shoes and bag, and thinks she looks tired."
+            },
+            {
+              "text": "How does Anusha’s account of her mood differ from Tiya’s first impression?",
+              "answer": "Tiya thinks she looks tired, but Anusha says she feels great after returning from the gym."
+            },
+            {
+              "text": "Which shared interest can be found in both friends’ lists?",
+              "answer": "Both mention reading books. Their other interests differ, showing that a person can enjoy several kinds of pastime."
+            },
+            {
+              "text": "How does limited space affect Tiya’s gardening?",
+              "answer": "She uses pots instead of a larger garden. This lets her continue an interest within the space available."
+            },
+            {
+              "text": "What shows that Tiya is willing to learn about an unfamiliar activity?",
+              "answer": "She admits she does not know much about yoga and asks Anusha to tell her about it. Anusha offers an article in response."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Outdoor childhood experiences — RSPB survey",
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        32
+      ],
+      "excerptLocator": "Unit 3 Lesson 3 A, opening three paragraphs only",
+      "passage": "Traditional childhood pastimes of climbing trees and playing conkers are in decline, according to a survey by the RSPB (Royal Society for the Protection of Birds). It’s a charitable organisation registered in England and Wales.\nThe survey shows that people under 34 recall far fewer such childhood outdoor experiences than people over 55, according to a survey by RSPB.\nPeople were asked which of the twelve childhood outdoor experiences they could remember. The answer included making dens, daisy chains, climbing trees, playing conkers and feeding birds. Four out of five boys climbed trees and the same number of girls made daisy chains. But the survey showed the numbers declining among the newer generations.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Only opening paragraphs retained; excludes nature-deficit-disorder label and future-tense meeting report. Historical survey, not current Bangladesh statistics or a universal medical conclusion.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Which organisation conducted the survey described in the excerpt?",
+              "options": [
+                "RSPB",
+                "UNESCO",
+                "SAARC",
+                "A local bank"
+              ],
+              "answer": "RSPB"
+            },
+            {
+              "text": "How is that organisation described?",
+              "options": [
+                "A manufacturer of school uniforms",
+                "A registered charitable organisation",
+                "A private airline",
+                "A political party"
+              ],
+              "answer": "A registered charitable organisation"
+            },
+            {
+              "text": "What were respondents asked to recall?",
+              "options": [
+                "Tomorrow’s weather report",
+                "Their current bank balance",
+                "Childhood outdoor experiences",
+                "The names of all their teachers"
+              ],
+              "answer": "Childhood outdoor experiences"
+            },
+            {
+              "text": "How many types of experience were put to respondents?",
+              "options": [
+                "Two",
+                "Twenty-five",
+                "One hundred",
+                "Twelve"
+              ],
+              "answer": "Twelve"
+            },
+            {
+              "text": "Which group recalled more such experiences in the excerpt?",
+              "options": [
+                "People over 55",
+                "Only children under five",
+                "Only people aged exactly 34",
+                "People under 34"
+              ],
+              "answer": "People over 55"
+            },
+            {
+              "text": "Which activity is included in the remembered experiences?",
+              "options": [
+                "Repairing satellites",
+                "Feeding birds",
+                "Driving underground trains",
+                "Trading shares"
+              ],
+              "answer": "Feeding birds"
+            },
+            {
+              "text": "What does “in decline” mean here?",
+              "options": [
+                "Becoming compulsory",
+                "Remaining exactly unchanged",
+                "Becoming less common",
+                "Being newly invented"
+              ],
+              "answer": "Becoming less common"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "How does the survey compare younger and older respondents?",
+              "answer": "People under 34 recall fewer of the outdoor childhood experiences than people over 55. This is the comparison reported by the excerpt."
+            },
+            {
+              "text": "Name three outdoor activities mentioned in the excerpt.",
+              "answer": "Examples include making dens, climbing trees and feeding birds. Making daisy chains and playing conkers are also listed."
+            },
+            {
+              "text": "What proportion of boys is reported to have climbed trees?",
+              "answer": "The excerpt reports four out of five boys. This describes the survey’s reported experience, not a universal statistic for all boys."
+            },
+            {
+              "text": "What overall change does the survey suggest?",
+              "answer": "It suggests that these traditional outdoor experiences are less commonly remembered among newer generations than among older respondents."
+            },
+            {
+              "text": "Why should these survey findings not be presented as new statistics about Bangladesh?",
+              "answer": "The excerpt concerns an RSPB survey reported in a textbook adaptation of a 2010 BBC item. It does not supply a new Bangladesh survey."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Partha Pratim — the art of silence",
+      "pdfPages": [
+        94
+      ],
+      "printedPages": [
+        89
+      ],
+      "excerptLocator": "Unit 7 Lesson 2 B, opening three paragraphs; excludes biography/awards",
+      "passage": "Culturally rich Bangladesh is the homeland of an artist whose fame took him across the border and honoured him with different national and international awards. Have you heard about Partha Pratim Majumder? He is a maestro performer of miming art.\nIf food is the nutrition for a body, art is the nutrition of soul. To keep the souls alive and fresh different arts like music, dance, paintings have evolved during the ancient time. Humankind has tried to express himself from the very beginning of civilization. These expressions have taken the forms of art with the touch of his creativity in expressing the untold in silence. It is an art of depicting a character, mood, idea, or narration through gestures and bodily movements without any utterance. This ancient dramatic entertainment represents the primitive time when people would use signs as a medium of communication.\nIn Bangladesh, the boy named Partha Pratim Mojumder from Pabna overwhelmed people with this Art. He left people mesmerized by his graceful presentations of art of silence. It was like a new era in theatre art in Bangladesh when Partha came with effort to make people look at their everyday experience, but in a new form. He made people reveal meanings for all trivial things of life which they usually would overlook. He used to depict stories of sadness, laughter, different characters, birds, insects or even animals through his miming. Some of his topics are the portrayal of a thief stealing, one-sided love, picking up flower and hurting it, delicate changes in nature etc. His actions often led audience to their conscience on different issues. He is regarded as the pioneer of miming in Bangladesh.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Source spelling variants Majumder/Mojumder and grammar retained. Art-as-nutrition is metaphor; historical origin/pioneer claims attributed to excerpt, not independently certified.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "What performing art is central to this excerpt?",
+              "options": [
+                "Mime",
+                "Opera singing",
+                "Radio newsreading",
+                "Instrumental drumming"
+              ],
+              "answer": "Mime"
+            },
+            {
+              "text": "What means of expression does the excerpt associate with mime?",
+              "options": [
+                "Only printed footnotes",
+                "Gestures and bodily movement",
+                "Spoken narration alone",
+                "Chemical reactions"
+              ],
+              "answer": "Gestures and bodily movement"
+            },
+            {
+              "text": "Which town is associated with Partha in the excerpt?",
+              "options": [
+                "London",
+                "Rome",
+                "Pabna",
+                "Kathmandu"
+              ],
+              "answer": "Pabna"
+            },
+            {
+              "text": "What does “without any utterance” mean?",
+              "options": [
+                "Without movement",
+                "Without an audience",
+                "Without imagination",
+                "Without speaking"
+              ],
+              "answer": "Without speaking"
+            },
+            {
+              "text": "What familiar material does Partha present in a new form?",
+              "options": [
+                "Everyday experience",
+                "Only future space missions",
+                "Only legal documents",
+                "Only multiplication tables"
+              ],
+              "answer": "Everyday experience"
+            },
+            {
+              "text": "Which pair of feelings can his stories depict?",
+              "options": [
+                "Heat and voltage",
+                "Sadness and laughter",
+                "Length and weight",
+                "Speed and distance"
+              ],
+              "answer": "Sadness and laughter"
+            },
+            {
+              "text": "What does “mesmerized” suggest about the audience?",
+              "options": [
+                "They all left before the performance",
+                "They were measuring rainfall",
+                "Their attention was strongly captivated",
+                "They were speaking the dialogue for him"
+              ],
+              "answer": "Their attention was strongly captivated"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "How does the passage compare the importance of food and art?",
+              "answer": "It compares food nourishing the body with art nourishing the soul. The comparison presents art as important to emotional and imaginative life."
+            },
+            {
+              "text": "How can mime convey a story without spoken words?",
+              "answer": "It uses gestures and bodily movements to suggest characters, moods, ideas and events. The audience interprets those visible actions."
+            },
+            {
+              "text": "What kinds of living creatures appear among Partha’s subjects?",
+              "answer": "The passage mentions birds, insects and other animals, as well as human characters. His material extends beyond a single type of subject."
+            },
+            {
+              "text": "Why might portraying ordinary things encourage an audience to think?",
+              "answer": "A familiar action shown in a new form may reveal a meaning that people usually overlook. The excerpt says his actions often brought audiences to questions of conscience."
+            },
+            {
+              "text": "What role does the excerpt assign to Partha in Bangladesh’s miming tradition?",
+              "answer": "It regards him as a pioneer of miming in Bangladesh and describes his silent performances as graceful and influential. This is the textbook’s characterisation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Jobs and Imogene Hill — learning motivation",
+      "pdfPages": [
+        105
+      ],
+      "printedPages": [
+        100
+      ],
+      "excerptLocator": "Unit 7 Lesson 7 A, grade-four paragraph and following paragraph through “special”; excludes grade-skipping conclusion",
+      "passage": "A turning point came when he was in grade four. His teacher Imogene Hill watched him very closely for some time and soon found out how to handle him and get things done by him. In order to get things done she used to give him money and food. One day after school, she gave Jobs a workbook with math problems in it. She said, \"I want you to take it home and do this.\" She showed Jobs a huge lollipop and said, “When you are done with it, if you get it mostly right, I will give you this and five dollars.” Within two days, Jobs solved the math problem and returned the book to his teacher.\nThis continued for a couple of months and Jobs enjoyed learning so much that he did not need any return. Also he liked his teacher very much and wanted to please her. In Ms. Hill’s class, Jobs felt he was special.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Excerpt deliberately avoids speculative claims about adoption and control, and the grade-skipping conclusion. Historical anecdote, not a universal teaching prescription. Jobs is named in the displayed passage.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "In which grade does the excerpt place this turning point?",
+              "options": [
+                "Grade four",
+                "Grade one",
+                "Grade ten",
+                "University final year"
+              ],
+              "answer": "Grade four"
+            },
+            {
+              "text": "Who closely observed Jobs in this episode?",
+              "options": [
+                "Partha Pratim",
+                "Imogene Hill",
+                "Tiya",
+                "Rosamond"
+              ],
+              "answer": "Imogene Hill"
+            },
+            {
+              "text": "What work did the teacher give Jobs to take home?",
+              "options": [
+                "A damaged radio to sell",
+                "A book of travel tickets",
+                "A workbook of maths problems",
+                "A set of empty flowerpots"
+              ],
+              "answer": "A workbook of maths problems"
+            },
+            {
+              "text": "What money reward was offered with the lollipop?",
+              "options": [
+                "Fifty pounds",
+                "Three ducats",
+                "One hundred taka",
+                "Five dollars"
+              ],
+              "answer": "Five dollars"
+            },
+            {
+              "text": "How soon did Jobs return the completed work in this account?",
+              "options": [
+                "Within two days",
+                "After two years",
+                "Within ten minutes",
+                "After six months"
+              ],
+              "answer": "Within two days"
+            },
+            {
+              "text": "What changed after a couple of months?",
+              "options": [
+                "He forgot the teacher’s name",
+                "He enjoyed learning without needing a reward",
+                "He stopped all learning",
+                "He sold the school"
+              ],
+              "answer": "He enjoyed learning without needing a reward"
+            },
+            {
+              "text": "What does “turning point” mean in this context?",
+              "options": [
+                "A bend in a river only",
+                "A type of school desk",
+                "An event marking an important change",
+                "A fixed examination mark"
+              ],
+              "answer": "An event marking an important change"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "How did observation help Hill choose an approach?",
+              "answer": "She watched Jobs closely before working out how to engage him. The episode presents attention to an individual learner as important to the change."
+            },
+            {
+              "text": "What condition accompanied the promised reward?",
+              "answer": "He had to complete the workbook and get it mostly right. The offer connected the reward to effort and accuracy."
+            },
+            {
+              "text": "How does the episode distinguish an initial reward from later motivation?",
+              "answer": "Money and food helped engage him at first, but later he enjoyed learning and no longer needed a return. His relationship with the teacher also mattered."
+            },
+            {
+              "text": "What suggests Jobs valued his teacher’s approval?",
+              "answer": "The passage says he liked her very much and wanted to please her. Feeling special in her class was part of his improved engagement."
+            },
+            {
+              "text": "Does the excerpt prove that paying every learner is the best teaching method?",
+              "answer": "No. It describes one particular episode. General teaching recommendations would require more evidence and attention to different learners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Sayeed Kamal — nursery work",
+      "pdfPages": [
+        119
+      ],
+      "printedPages": [
+        114
+      ],
+      "excerptLocator": "Unit 9 Lesson 1 B, continuous excerpt from “I was a desk clerk” through “perhaps never will”",
+      "passage": "I was a desk clerk in an office. But believe me I never liked my job. Nothing can be more boring than being stuck in an office all day with computers and telephone. So after two years or so, I decided to leave my job though I had a good salary.\nNow I’m the owner of a nursery. Planting seeds, budding, grafting, taking care of saplings, cleaning the flower beds and spending time with trees are different parts of my full time job. I start work very early. In summer I usually leave home at 5:30 in the morning, but in winter not until about 7. I’ve a small hut in my nursery. There cannot be any more pleasure for me than when I see the moon from there or walk through the trees in the soft moonlit night. The winter is just over. So I’m cleaning up the winter flower garden. Now I’m busy producing more timber and medicinal plants which people will buy from July. Every season is so different and I love them all. When I compare my present days with the past, I simply can’t understand how I could survive in my previous job. I love nature. I just love working outside in the open air after all those months in a stuffy office. Gadgets never attract me and perhaps never will.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Personal narrative excerpt, not a promise of nursery profit or a universal judgement about occupations. Boundary excludes continuation and does not claim to reproduce the whole lesson.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "What was Kamal’s previous occupation?",
+              "options": [
+                "Desk clerk",
+                "Airline pilot",
+                "Mime artist",
+                "Court lawyer"
+              ],
+              "answer": "Desk clerk"
+            },
+            {
+              "text": "Why did he leave that job according to the excerpt?",
+              "options": [
+                "He disliked all plants",
+                "He found the office work boring",
+                "He wanted to become a swimmer",
+                "He was unable to read"
+              ],
+              "answer": "He found the office work boring"
+            },
+            {
+              "text": "What does he now own?",
+              "options": [
+                "A passenger airline",
+                "A newspaper office",
+                "A nursery",
+                "A jewellery shop"
+              ],
+              "answer": "A nursery"
+            },
+            {
+              "text": "Which task is part of his present work?",
+              "options": [
+                "Preparing court bonds",
+                "Repairing railway signals",
+                "Writing film scripts",
+                "Grafting"
+              ],
+              "answer": "Grafting"
+            },
+            {
+              "text": "When does he usually leave home in summer?",
+              "options": [
+                "At 5:30 in the morning",
+                "At noon",
+                "At 11 at night",
+                "At 7 in the evening"
+              ],
+              "answer": "At 5:30 in the morning"
+            },
+            {
+              "text": "What plants is he busy producing after winter?",
+              "options": [
+                "Only artificial roses",
+                "Timber and medicinal plants",
+                "Only seaweed",
+                "Only desert cacti"
+              ],
+              "answer": "Timber and medicinal plants"
+            },
+            {
+              "text": "What does “stuffy” suggest about the office as he experiences it?",
+              "options": [
+                "Open to the moonlit sky",
+                "Covered in living trees",
+                "Unpleasantly confined or lacking fresh air",
+                "Entirely underwater"
+              ],
+              "answer": "Unpleasantly confined or lacking fresh air"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Why does the good salary not settle Kamal’s choice of work?",
+              "answer": "He is dissatisfied with spending the day inside an office. His account values work he enjoys and contact with nature, not salary alone."
+            },
+            {
+              "text": "Name four activities involved in his nursery work.",
+              "answer": "Examples include planting seeds, budding, grafting and caring for saplings. Cleaning flower beds and spending time with trees are also mentioned."
+            },
+            {
+              "text": "How does his starting time differ between summer and winter?",
+              "answer": "He leaves home around 5:30 in the morning in summer, but not until about 7 in winter. His routine varies with the season."
+            },
+            {
+              "text": "What pleasure does the small hut make possible?",
+              "answer": "It gives him a place from which to see the moon and enjoy the nursery at night. This supports the account of his closeness to nature."
+            },
+            {
+              "text": "Should Kamal’s dislike of office work be read as a judgement about every office worker?",
+              "answer": "No. These are his personal preferences. Other people may find office work satisfying; the passage describes why this narrator prefers nursery work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Floral designers — materials and skills",
+      "pdfPages": [
+        126
+      ],
+      "printedPages": [
+        121
+      ],
+      "excerptLocator": "Unit 9 Lesson 3 C, first paragraph plus second through “courses”; omits success/earnings generalisations",
+      "passage": "Yes. Daisies, violets, tulips, marigolds, dahlias, lilies, jasmines, roses and all those things of beauty can also earn you a living if you handle them professionally. If you start such a profession you will be called a florist. A florist’s career is a good choice as an unconventional job for many around the world. Wherever you see eye-catching floral displays, you actually see the professional performance of a floral designer. Using both real and artificial flowers with other greeneries, florists prepare flower displays for a variety of events such as weddings, birthdays, anniversaries, Valentine’s day, official receptions and even funerals. Every flower comes with its distinct colour, design, value and meaning which flower designers have to know well. There are conventions and meanings associated with flowers. We know that conventionally roses are meant for romance and marriage anniversaries and (tulips for) birthdays.\nAlthough formal education or a diploma is not always essential for florists, they must have good taste, a good eye for colours, shapes and proportion. They have to have good sense for selecting flowers, ribbons and other accessories to make beautiful arrangements. Professional florists are knowledgeable about not only flowers but also designs and techniques. Most florists learn the trade mainly through apprenticeship in a flower farming job and also by attending formal floral schools and courses.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Original flower-convention examples retained as source conventions, not universal rules. Excerpt omits unsupported guarantees that passion alone creates success and that earnings are uniformly handsome.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Who is the professional discussed in the excerpt?",
+              "options": [
+                "A florist",
+                "A ship’s captain",
+                "A tax collector",
+                "A novelist"
+              ],
+              "answer": "A florist"
+            },
+            {
+              "text": "Which materials can appear together in floral displays?",
+              "options": [
+                "Only empty metal boxes",
+                "Real and artificial flowers with greenery",
+                "Only printed examination papers",
+                "Only stones without plants"
+              ],
+              "answer": "Real and artificial flowers with greenery"
+            },
+            {
+              "text": "Which event is expressly listed?",
+              "options": [
+                "A space launch only",
+                "A parliamentary election only",
+                "An official reception",
+                "A railway inspection only"
+              ],
+              "answer": "An official reception"
+            },
+            {
+              "text": "What does “eye-catching” mean here?",
+              "options": [
+                "Invisible in daylight",
+                "Difficult to carry",
+                "Made without colour",
+                "Attracting attention"
+              ],
+              "answer": "Attracting attention"
+            },
+            {
+              "text": "Which visual quality should a florist understand?",
+              "options": [
+                "Proportion",
+                "Rainfall totals",
+                "Engine pressure",
+                "Ocean depth"
+              ],
+              "answer": "Proportion"
+            },
+            {
+              "text": "What learning route does the passage mention?",
+              "options": [
+                "Only an airline licence",
+                "Apprenticeship and floral courses",
+                "Only military training",
+                "No learning of any kind"
+              ],
+              "answer": "Apprenticeship and floral courses"
+            },
+            {
+              "text": "What does the text say about a diploma?",
+              "options": [
+                "It is forbidden",
+                "It guarantees success",
+                "It is not always essential",
+                "It is the only thing a florist needs"
+              ],
+              "answer": "It is not always essential"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Why does the work require knowledge beyond flower names?",
+              "answer": "A designer must consider colours, shapes, proportion, meanings, designs and techniques. These help make an arrangement appropriate and attractive."
+            },
+            {
+              "text": "How do the occasions listed show the range of the work?",
+              "answer": "They include joyful celebrations, formal receptions and funerals. Floral design therefore serves different purposes and moods."
+            },
+            {
+              "text": "What other items may need selecting besides flowers?",
+              "answer": "The passage mentions ribbons and other accessories, as well as greenery. These contribute to the arrangement as a whole."
+            },
+            {
+              "text": "How can practical and formal learning complement each other in this account?",
+              "answer": "Apprenticeship provides workplace experience, while floral schools and courses provide organised instruction. The passage mentions both as routes into the trade."
+            },
+            {
+              "text": "Why should the rose and tulip examples not be treated as universal rules for every culture?",
+              "answer": "They are conventions described in the passage. Flower meanings can depend on cultural and personal context, so a designer should consider the actual occasion and audience."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Nepal — shared heritage and Kathmandu Valley",
+      "pdfPages": [
+        71
+      ],
+      "printedPages": [
+        66
+      ],
+      "excerptLocator": "Unit 6 Lesson 1 A, paragraphs d–e only",
+      "passage": "Nepal is the holy land of Lord Pashupatinath and Gautam Buddha where the Hindus and Buddhists have lived together in harmony for centuries. The Temple of Pashupatinath is the most sacred Hindu shrine and one of the four most important sites in the world for Shiva worshippers. Lord Buddha, the light of Asia, was born in Lumbini in Nepal’s southern plains, which makes this a sacred pilgrimage destination for the Buddhists as well. In fact, many Nepalese combine Hindu and Buddhist practices; many temples and shrines are shared between the two faiths, and some deities are worshipped by both Hindus and Buddhists.\nThe Kathmandu Valley is the richest cultural heritage centre of Nepal. The three ancient cities of the Valley - Patan, Kathmandu and Bhaktapur - represent an epitome of harmony in urban design, elegant architecture and refined culture. These cities are famous for religious monuments unequalled in the world. The seven monument zones situated within the Valley have been named as World Heritage Sites by UNESCO.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Population/caste percentages and festival-calendar claims outside d–e are not included. Religious and heritage superlatives remain attributed textbook prose, not independently certified rankings. Some content overlaps the broader Nepal lesson; this is one pair, not multiple pairs.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Which two religious traditions are discussed together?",
+              "options": [
+                "Hinduism and Buddhism",
+                "Only ancient Roman religions",
+                "Only Greek mythology",
+                "Neither religious tradition"
+              ],
+              "answer": "Hinduism and Buddhism"
+            },
+            {
+              "text": "Where does the excerpt locate Lumbini?",
+              "options": [
+                "In Eastern Siberia",
+                "In Nepal’s southern plains",
+                "In the Caribbean Sea",
+                "In northern Italy"
+              ],
+              "answer": "In Nepal’s southern plains"
+            },
+            {
+              "text": "Why is Lumbini described as a pilgrimage destination?",
+              "options": [
+                "It contains the highest waterfall",
+                "It is the world’s busiest airport",
+                "It is identified as Buddha’s birthplace",
+                "It is a modern shopping centre"
+              ],
+              "answer": "It is identified as Buddha’s birthplace"
+            },
+            {
+              "text": "Which group contains the three Valley cities named?",
+              "options": [
+                "Rome, Venice and Florence",
+                "Dhaka, Sylhet and Khulna",
+                "Paris, London and Madrid",
+                "Patan, Kathmandu and Bhaktapur"
+              ],
+              "answer": "Patan, Kathmandu and Bhaktapur"
+            },
+            {
+              "text": "What does “elegant architecture” refer to?",
+              "options": [
+                "Graceful building design",
+                "Fast river transport",
+                "Seasonal rainfall",
+                "Methods of growing rice"
+              ],
+              "answer": "Graceful building design"
+            },
+            {
+              "text": "Which organisation is associated with the monument zones?",
+              "options": [
+                "RSPB",
+                "UNESCO",
+                "A commercial airline",
+                "A local sports club"
+              ],
+              "answer": "UNESCO"
+            },
+            {
+              "text": "What is the main focus of the excerpt?",
+              "options": [
+                "A recent election result",
+                "The rules of cricket",
+                "Religious and architectural heritage",
+                "A guide to bank accounts"
+              ],
+              "answer": "Religious and architectural heritage"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "What examples does the passage give of shared religious practice?",
+              "answer": "It says that some temples and shrines are shared and that some deities are worshipped by both Hindus and Buddhists. It also describes people combining practices."
+            },
+            {
+              "text": "How are Pashupatinath and Lumbini significant in the passage?",
+              "answer": "Pashupatinath is presented as an important Hindu shrine, and Lumbini as Buddha’s birthplace and a Buddhist pilgrimage destination."
+            },
+            {
+              "text": "Name the three ancient cities of the Kathmandu Valley listed in the excerpt.",
+              "answer": "They are Patan, Kathmandu and Bhaktapur. The passage links them with urban design, architecture and culture."
+            },
+            {
+              "text": "What features make the Valley important in the textbook’s description?",
+              "answer": "It stresses cultural heritage, religious monuments, harmonious urban design and refined architecture. It also mentions UNESCO recognition of seven monument zones."
+            },
+            {
+              "text": "Should the passage’s phrase “unequalled in the world” be read as an independently measured ranking?",
+              "answer": "No. It is an evaluative phrase in the travel description. It communicates admiration rather than providing a measurable global comparison."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "India — attractions and varied landscapes",
+      "pdfPages": [
+        84
+      ],
+      "printedPages": [
+        79
+      ],
+      "excerptLocator": "Unit 6 Lesson 4 A, final paragraph beginning “India is a tourists’ delight”",
+      "passage": "India is a tourists’ delight. The Taj Mahal, Fatehpur Sikri, the Qutb Minar and the Red Fort are a few of the many wonders which attract people from all over the world. Kashmir has been described as a paradise on earth. The country of mountains, valleys, deserts, rivers and lakes offer the richness of a mini world within a single country. The Nilgiri mountains, hill stations like Ooty and Darjeeling and the temples of South India, Ajanta and Ellora caves are the places one can explore in India.",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Final paragraph only; no outdated language/population counts included. Original subject–verb grammar retained. Travel praise is attributed source language, not a political or universally factual claim.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer from the alternatives. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "Which attraction is named in the excerpt?",
+              "options": [
+                "The Qutb Minar",
+                "The Eiffel Tower",
+                "Lake Baikal",
+                "The Statue of Liberty"
+              ],
+              "answer": "The Qutb Minar"
+            },
+            {
+              "text": "Which phrase describes Kashmir in the passage?",
+              "options": [
+                "An underground railway",
+                "A paradise on earth",
+                "A floating market",
+                "A polar ice sheet"
+              ],
+              "answer": "A paradise on earth"
+            },
+            {
+              "text": "Which landscape is explicitly included?",
+              "options": [
+                "Only glaciers",
+                "Only coral atolls",
+                "Deserts",
+                "Only artificial islands"
+              ],
+              "answer": "Deserts"
+            },
+            {
+              "text": "How are Ooty and Darjeeling described?",
+              "options": [
+                "Two banks",
+                "Two ocean currents",
+                "Two deserts",
+                "Hill stations"
+              ],
+              "answer": "Hill stations"
+            },
+            {
+              "text": "What pair of caves is named?",
+              "options": [
+                "Ajanta and Ellora",
+                "Mammoth and Lascaux",
+                "Waitomo and Fingal",
+                "Altamira and Chauvet"
+              ],
+              "answer": "Ajanta and Ellora"
+            },
+            {
+              "text": "What does “explore” mean here?",
+              "options": [
+                "Destroy deliberately",
+                "Visit and discover",
+                "Refuse to see",
+                "Count without looking"
+              ],
+              "answer": "Visit and discover"
+            },
+            {
+              "text": "Why does the passage use the image of a “mini world”?",
+              "options": [
+                "To claim the country is a separate planet",
+                "To describe a classroom globe",
+                "To suggest a wide variety of landscapes within one country",
+                "To give an exact mathematical area"
+              ],
+              "answer": "To suggest a wide variety of landscapes within one country"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions in your own words. Textbook-based authored practice.",
+          "subitems": [
+            {
+              "text": "List three built attractions mentioned in the excerpt.",
+              "answer": "Examples include the Taj Mahal, Fatehpur Sikri and the Qutb Minar. The Red Fort and temples of South India are also mentioned."
+            },
+            {
+              "text": "What natural features contribute to the description of variety?",
+              "answer": "The paragraph names mountains, valleys, deserts, rivers and lakes. These different landscapes support its image of a mini world."
+            },
+            {
+              "text": "Which destinations in the passage are hill stations?",
+              "answer": "Ooty and Darjeeling are identified as hill stations. The Nilgiri mountains are also mentioned among the attractions."
+            },
+            {
+              "text": "How does the final sentence extend the list beyond monuments such as the Taj Mahal?",
+              "answer": "It adds mountains, hill stations, temples and caves. This broadens the account to different kinds of natural and cultural attraction."
+            },
+            {
+              "text": "Why is “a paradise on earth” better treated as descriptive language than a verifiable universal fact?",
+              "answer": "It expresses admiration for a place rather than an objective condition experienced by everyone. A reading answer should identify the phrase without claiming it is a measured fact."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

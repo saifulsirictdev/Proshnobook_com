@@ -243,3 +243,29 @@ Seen roles cover 24 distinct excerpts across 25 groups; the extra general-loneli
 - Whole repository suite ran: **848 passed / 13 failed, 861 total**. All 13 failures report missing `.prisma/client/default` in `chapter-filter.test.cjs`, `paper-generation.test.cjs` or `question-types.test.cjs`; the environment lacks its generated Prisma client. This is not a full-suite pass.
 - Full TypeScript check remains blocked by generated Prisma/cascading project errors. No diagnostics reference changed English loaders/data modules. Diff whitespace checks pass. No production/browser verification claimed.
 - No live import, approval, push or deployment. Preview -> explicit consent -> Pending -> ADMIN review remains mandatory. This batch is preserved on the current working branch, not silently published.
+
+## Textbook-based authored supplement (2026-11-10; review only)
+
+The source-question inventory immediately above remains **144 groups / 644 answers**. A separately labelled supplement now adds **22 groups / 208 authored answers**, making the complete preview registry **166 groups / 852 answers**. The supplement must **not** be described as 22 newly recovered board/school exercises, verbatim NCTB exercises, official answers, or approved live records. It does not resolve the deficit in *original exam* stock.
+
+Source: supplied *English for Today — Classes Nine and Ten*, revised October 2025 / 2026 imprint; Drive file `1XLk9TBYh1R-jYrpFzjXwIv51239u4Sf4`; PDF SHA256 `a5628de6a7b1a2afd1caf0adfb0d49603dc0c5a8b51f031d2b8c168ed5fd78f6`. Literary pages and selected reading excerpts were checked against page images, not OCR alone. PDF pages equal printed pages +5 for these selections. Source files retain work/author or excerpt locator, page ranges, authorship, limitations and review status; preview references retain source identity/checksum/pages. Neither loader assigns invented board/school/year provenance. Board-year filtering excludes these groups.
+
+- `ssc-textbook-literature-review.json`: **14 groups / 112 authored questions**, eight per group: seven poems and seven story/episode groups. Three Merchant of Venice episodes represent **one original play**, not three independently sourced short stories. These are passage-free, question-bank references to the actual work, not fabricated literary extracts. Interpretations are suggested, not unique official keys. Literary/source exercise collections may overlap works; do not count every group as a new distinct work.
+- `ssc-textbook-seen-review.json`: **8 linked MCQ/comprehension pairs / 96 authored answers**, seven four-option MCQs and five written questions per excerpt. Topics: Anusha/Tiya, historical outdoor-pastime survey, Partha’s mime, Jobs/Hill, nursery work, floral design, Nepal heritage, Indian attractions. Questions share the exact displayed excerpt; shorter excerpt boundaries are explicit. No duplicated alternatives or invented replacement passages. Original textbook wording/grammar retained with line-wrap and typographic/OCR normalisation.
+- Hold disclosures: no universal health prescriptions, current-population or Olympic-record certification, speculative adoption psychology, guaranteed floral earnings, religious stereotypes or hazardous rescue advice. Survey claims are historical and attributed; character opinions and travel superlatives are not universal facts.
+
+### Registry totals including authored practice (not original-exam completion)
+
+| Role | Registry total | Composition / remaining minimum |
+|---|---:|---|
+| Complete Seen pairs | 16 | 8 original-exercise + 8 authored; 34 short of 50 even if authored practice is accepted |
+| Extra Seen comprehension / gap roles | 7 / 10 | Not additional complete pairs |
+| Unseen pairs | 13 | 37 short of 50 |
+| Matching / rearranging | 19 / 27 | 21 / 13 short of 40 |
+| Poem comprehension groups | 8 | 1 original-exercise + 7 authored; 32 groups short, not a claim of 8 distinct original works |
+| Story/episode comprehension groups | 8 | 1 original-exercise + 7 authored; 32 groups short, Merchant episodes are one play |
+| Completing story / dialogue | 33 / 25 | 7 / 15 short of 40 |
+
+The registry now has 33 Seen passage roles on 32 distinct displayed excerpts; the extra general-loneliness gap role remains the single duplicate text. Distinct excerpts are not necessarily distinct underlying lessons or literary works. All requested quotas remain unfinished. Additional defensible original source exercises are still needed rather than alternate questions on the same work being presented as new original sources.
+
+Validation for this supplement: **153/153 focused tests, including 46/46 bank-model tests, pass**. Regression checks cover 22 unique prepared keys, 208 complete answers, four distinct MCQ alternatives/one key, linked shared excerpts, PDF/printed page offsets, preservation through assembly, Pending rejection and board-year exclusion. Full typecheck still fails on existing generated-Prisma/cascading project errors; no diagnostics mention the changed loaders. Previous whole-suite result (848 pass / 13 missing-Prisma failures) is historical, not a newly rerun full-suite pass. No production import, approval or deployment. Preview → explicit consent → Pending → ADMIN review remains unchanged.

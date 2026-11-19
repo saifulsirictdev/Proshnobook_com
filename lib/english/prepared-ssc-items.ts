@@ -1,3 +1,5 @@
+import { preparedSSCTextbookLiteratureItems } from "./prepared-ssc-textbook-literature";
+import { preparedSSCTextbookSeenItems } from "./prepared-ssc-textbook-seen";
 import { preparedRajshahiItems } from "./prepared-ssc-rajshahi";
 import { preparedSSCBoardBatch2 } from "./prepared-ssc-batch2";
 import { preparedSSCLiteratureItems } from "./prepared-ssc-literature";
@@ -48,6 +50,8 @@ export function preparedSSCEnglishItems() {
     ...preparedRajshahiItems(),
     ...preparedSSCBoardBatch2(),
     ...preparedSSCLiteratureItems(),
+    ...preparedSSCTextbookLiteratureItems(),
+    ...preparedSSCTextbookSeenItems(),
     ...preparedSSC2023Items(),
     ...preparedSSC2020Items(),
     ...preparedSSC2019Items(),
