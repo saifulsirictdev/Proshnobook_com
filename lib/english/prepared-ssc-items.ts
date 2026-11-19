@@ -1,7 +1,9 @@
 import { preparedRajshahiItems } from "./prepared-ssc-rajshahi";
 import { preparedSSCBoardBatch2 } from "./prepared-ssc-batch2";
 import { preparedSSCLiteratureItems } from "./prepared-ssc-literature";
+import { preparedSSCSchoolReadingItems } from "./prepared-ssc-school-reading";
 import { preparedSSCSchoolItems } from "./prepared-ssc-school";
+import { preparedSSCSchoolExerciseItems } from "./prepared-ssc-school-exercises";
 import { preparedSSCExerciseItems } from "./prepared-ssc-exercises";
 import { preparedSSCCreativeItems } from "./prepared-ssc-creative";
 import { preparedSSC2019Items } from "./prepared-ssc-2019";
@@ -52,6 +54,8 @@ export function preparedSSCEnglishItems() {
     ...preparedSSCCreativeItems(),
     ...preparedSSCExerciseItems(),
     ...preparedSSCSchoolItems(),
+    ...preparedSSCSchoolReadingItems(),
+    ...preparedSSCSchoolExerciseItems(),
     ...more.items.flatMap(entry => prepare(entry.group, entry.tasks.map(t => t.id), entry.tasks.map(task => {
       const { sourceQuestion, sourceMarks, pdfPage, ...content } = task;
       return { ...content, ...(entry.passage ? { passageKey: entry.group } : {}), boardSource: source(sourceQuestion, pdfPage, sourceMarks) };

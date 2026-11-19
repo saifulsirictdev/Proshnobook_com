@@ -199,9 +199,9 @@ test('English pagination splits presentation blocks without losing passages, tab
 });
 test('SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance',()=>{
  const registry=require('../lib/english/prepared-items.ts'),items=registry.preparedEnglishItems(10),{validateEnglishReferenceShape}=require('../lib/english/generation.ts');
- assert.equal(items.length,101);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
+ assert.equal(items.length,144);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
  assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
- assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
+ assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource?.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
  assert.equal(registry.englishItemsDigest(10),registry.englishItemsDigest(10));assert.equal(registry.preparedEnglishItems(9).length,0);
 });
 test('Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination',()=>{
@@ -248,7 +248,7 @@ test('SSC year/source and historical-mark differences render once per question a
  const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
  try{
   const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
-  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story'&&i.draft.output.tasks[0].boardSource.board==='Dhaka'&&i.draft.output.tasks[0].boardSource.examYear===2024).draft;
+  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story'&&i.draft.output.tasks[0].boardSource?.board==='Dhaka'&&i.draft.output.tasks[0].boardSource.examYear===2024).draft;
   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
   const renderFragments=()=>fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
   assert.equal(p.settings.show.boardSource,false);assert.doesNotMatch(renderFragments(),/Dhaka Board 2024|Q9|মূল প্রশ্নে/);
@@ -267,7 +267,7 @@ test('SSC registry imports only through explicit ADMIN consent and always create
  const mocks={'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async arg=>{writes.push(arg);return {count:arg.data.length};}}}}};
  const action=load('app/admin/english-review/item-actions.ts',mocks).importEnglishItems;
  const fd=new FormData();fd.set('grade','10');fd.set('digest',registry.englishItemsDigest(10));await action(fd);assert.equal(writes.length,0);
- fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,101);
+ fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,144);
  for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>!t.boardSource || [2018,2019,2020,2022,2023,2024].includes(t.boardSource.examYear)));}
 });
 test('Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry',()=>{
@@ -275,18 +275,18 @@ test('Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of
  const raj=items.filter(i=>i.draft.output.tasks.some(t=>t.boardSource?.board==='Rajshahi'&&t.boardSource.examYear===2024&&[3,4].includes(t.boardSource.pdfPage)&&!['story','dialogue'].includes(t.id)));
  assert.equal(raj.length,3);assert.deepEqual(raj.flatMap(i=>i.draft.output.tasks.map(t=>t.id)),['comprehension','gap','rearranging']);
  for(const i of raj){assert.equal(i.draft.selection.grade,10);assert.ok(i.draft.output.tasks.every(t=>t.boardSource.examYear===2024&&[3,4].includes(t.boardSource.pdfPage)));assert.ok(i.draft.output.tasks.every(t=>t.subitems.every(s=>s.answer)));}
- const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length,new Set(texts).size);
+ const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length-new Set(texts).size,1); // Same school text has separate comprehension/gap roles, not another distinct Seen text.
  const comp=raj[0].draft.output.tasks[0];assert.match(comp.subitems[3].answer,/does not describe a method/);
  const raw=require('../lib/english/data/ssc-rajshahi-2024-items.json');assert.ok(raw.items.some(i=>i.group==='rearranging'));assert.ok(raj.some(i=>i.group==='rearranging'));assert.match(raw.notes.join(' '),/MCQ held/);
 });
 test('Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage',()=>{
  const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),counts={};let answers=0;
  for(const item of items)for(const task of item.draft.output.tasks){counts[task.id]=(counts[task.id]||0)+1;answers+=task.subitems.length||1;assert.ok(task.boardSource ? task.boardSource.pdfPage>=1 : task.schoolSource ? task.schoolSource.pdfPage>=1 : ["poems","stories"].includes(task.id));}
- assert.equal(items.length,101);assert.equal(answers,466);
- assert.deepEqual(counts,{mcq:8,comprehension:12,information:12,summary:12,gap:9,rearranging:13,matching:15,poems:1,stories:1,story:23,dialogue:15});
+ assert.equal(items.length,144);assert.equal(answers,644);
+ assert.deepEqual(counts,{mcq:8,comprehension:15,information:13,summary:13,gap:10,rearranging:27,matching:19,poems:1,stories:1,story:33,dialogue:25});
  assert.equal(items.filter(i=>i.draft.output.tasks.some(t=>t.id==='mcq')&&i.draft.output.tasks.some(t=>t.id==='comprehension')).length,8);
- const seen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(seen.length,21);assert.equal(new Set(seen).size,21);
- const unseen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key==='unseen'));assert.equal(unseen.length,12);assert.equal(new Set(unseen.map(p=>p.text)).size,12);
+ const seen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(seen.length,25);assert.equal(new Set(seen).size,24);
+ const unseen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key==='unseen'));assert.equal(unseen.length,13);assert.equal(new Set(unseen.map(p=>p.text)).size,13);
 });
 test('Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail',()=>{
  const {validateEnglishDraft}=require('../lib/english/draft.ts'),{preparedEnglishItems}=require('../lib/english/prepared-items.ts');
@@ -349,7 +349,7 @@ test('2020 source-image batch retains linked Unseen tables, original blanks and 
   assert.ok(summary.answer.length>150);assert.ok(info.table.rows.some(r=>r.includes('')));
  }
  const volta=unseen.find(d=>d.output.tasks[0].boardSource.board==='Jashore');assert.match(volta.output.tasks[0].instruction,/\(i\) —— years/);assert.equal(volta.output.tasks[0].subitems[0].answer,'eight');
- const arm=unseen.find(d=>d.output.tasks[0].boardSource.board==='Dhaka');assert.match(arm.output.passages[0].text,/Armstrong first stepped/);assert.match(arm.output.passages[0].text,/August 25, 2012/);assert.doesNotMatch(arm.output.passages[0].text,/^76 /);
+ const arm=unseen.find(d=>d.output.tasks[0].boardSource?.board==='Dhaka');assert.match(arm.output.passages[0].text,/Armstrong first stepped/);assert.match(arm.output.passages[0].text,/August 25, 2012/);assert.doesNotMatch(arm.output.passages[0].text,/^76 /);
  for(const d of batch)for(const t of d.output.tasks){assert.equal(t.boardSource.examYear,2020);if(t.id==='rearranging'){assert.deepEqual(t.subitems.map(s=>Number(s.answer)).sort((a,b)=>a-b),[1,2,3,4,5,6,7,8]);}}
  const selected=assembleEnglishItems(drafts,10,()=>0,['information','summary','matching','rearranging'],{examYear:2020});assert.ok(selected.draft);assert.ok(selected.draft.output.tasks.every(t=>t.boardSource.examYear===2020));
  assert.equal(assembleEnglishItems(drafts,10,()=>0,undefined,{examYear:2020}).draft,null);
@@ -387,7 +387,7 @@ test('New exercise keys are exact source-column combinations and rearranging pos
  const mainul=seen.find(e=>e.examYear===2018);assert.equal(mainul.board,'Combined');assert.equal(mainul.tasks[0].subitems[1].answer,'lives');assert.ok(seen.filter(e=>e.examYear!==2018).every(e=>e.tasks.every(t=>t.id!=='mcq')));
 });
 test('School Unseen provenance stays separate from board years and survives assembly without automatic approval',()=>{
- const {preparedSSCSchoolItems}=require('../lib/english/prepared-ssc-school.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts'),{validateEnglishDraft}=require('../lib/english/draft.ts');const items=preparedSSCSchoolItems();assert.equal(items.length,3);
+ const {preparedSSCSchoolItems}=require('../lib/english/prepared-ssc-school.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts'),{validateEnglishDraft}=require('../lib/english/draft.ts');const items=preparedSSCSchoolItems();assert.equal(items.length,4);
  for(const item of items){const d=item.draft;assert.deepEqual(d.selection.itemIds,['information','summary']);assert.equal(d.output.tasks[0].subitems.length,5);assert.ok(d.output.tasks.every(t=>t.schoolSource&&!t.boardSource));const info=d.output.tasks[0];for(const sub of info.subitems)assert.equal(info.table.rows.flat().join('\n').split(sub.text+' ').length-1,1);
   assert.equal(assembleEnglishItems([d],10,()=>0,['information','summary'],{examYear:2024}).draft,null);assert.equal(assembleEnglishItems([d],10,()=>0,['information','summary'],{examYear:2025}).draft,null);assert.equal(assembleEnglishItems([d],10,()=>0,['information','summary'],{examYear:2026}).draft,null);
   const assembled=assembleEnglishItems([d],10,()=>0,['information','summary']).draft;assert.ok(assembled);assert.deepEqual(assembled.output.tasks[0].schoolSource,info.schoolSource);
@@ -402,4 +402,48 @@ test('School source labels follow the same default-hidden and opt-in print-fragm
   const d=require('../lib/english/prepared-ssc-school.ts').preparedSSCSchoolItems()[1].draft,p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks),html=()=>fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
   assert.equal(p.settings.show.boardSource,false);assert.doesNotMatch(html(),/Akij Collegiate|School, not board/);p.settings.show.boardSource=true;assert.equal((html().match(/Akij Collegiate School/g)||[]).length,2);assert.match(html(),/Test 2024/);assert.match(html(),/School, not board/);assert.doesNotMatch(html(),/Board 2024|2026/);p.settings.show.boardSource=false;assert.doesNotMatch(html(),/Akij Collegiate/);
  }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
+});
+
+test('Expanded school exercise registry preserves exact matching keys, permutations and preceding-paper headers',()=>{
+ const data=require('../lib/english/data/ssc-school-exercises-review.json'),{preparedSSCSchoolExerciseItems}=require('../lib/english/prepared-ssc-school-exercises.ts');
+ const items=preparedSSCSchoolExerciseItems();assert.equal(items.length,38);assert.equal(data.items.length,38);
+ for(const entry of data.items){
+  const t=entry.tasks[0];assert.ok(entry.headerPage<=t.pdfPage);assert.equal(entry.examYear,entry.school==='Akij Collegiate School, Jashore'?2024:2025);assert.ok(['Test','Annual'].includes(entry.examType));
+  if(t.id==='rearranging'){
+   assert.equal(t.sourceMarks,8);assert.equal(t.sourceQuestion,7);assert.equal(t.subitems.length,8);assert.equal(new Set(entry.order).size,8);assert.equal(t.answer,entry.order.split('').join(' → '));
+   for(let i=0;i<8;i++)assert.equal(t.subitems[i].answer,String(entry.order.indexOf(String.fromCharCode(97+i))+1));
+  }
+  if(t.id==='matching'){
+   assert.equal(t.sourceMarks,5);assert.equal(t.sourceQuestion,6);assert.equal(t.subitems.length,5);
+   assert.equal(new Set(entry.answerPairs.map(p=>p[0])).size,5);assert.equal(new Set(entry.answerPairs.map(p=>p[1])).size,5);
+   const strip=s=>s.replace(/^(?:\([a-e]\)|[ivx]+\.)\s*/, '');
+   for(let i=0;i<5;i++){const [b,c]=entry.answerPairs[i];assert.equal(t.subitems[i].answer,[strip(t.table.rows[i][0]),strip(t.table.rows[b][1]),strip(t.table.rows[c][2])].join(' '));}
+  }
+ }
+ const page38=data.items.filter(e=>e.tasks[0].pdfPage===38);assert.equal(page38.length,3);assert.ok(page38.every(e=>e.school==='Unique Progressive School, Mymensingh'&&e.headerPage===36));
+ const stress=data.items.find(e=>e.group==='dialogue'&&e.tasks[0].pdfPage===59);assert.equal(stress.tasks[0].sourceQuestion,10);assert.equal(stress.school,'Naogaon Krishnadhan Govt. High School, Naogaon');
+ for(const item of items){assert.ok(item.draft.output.tasks.every(t=>t.schoolSource&&!t.boardSource));const assemble=require('../lib/english/item-bank.ts').assembleEnglishItems;assert.equal(assemble([item.draft],10,()=>0,item.draft.selection.itemIds,{examYear:2025}).draft,null);const combined=assemble([item.draft],10,()=>0,item.draft.selection.itemIds).draft;assert.ok(combined);assert.deepEqual(combined.output.tasks[0].schoolSource,item.draft.output.tasks[0].schoolSource);if(['story','dialogue'].includes(item.group))assert.deepEqual(combined.selection.writing[item.group],item.draft.selection.writing[item.group]);}
+});
+
+test('Expanded school writing retains original openings, ten new continuation sentences and safe illustrative keys',()=>{
+ const data=require('../lib/english/data/ssc-school-exercises-review.json');const stories=data.items.filter(e=>e.group==='story'),dialogues=data.items.filter(e=>e.group==='dialogue');assert.equal(stories.length,10);assert.equal(dialogues.length,10);
+ for(const entry of [...stories,...dialogues]){const t=entry.tasks[0];assert.equal(t.sourceMarks,15);assert.ok(t.instruction.toLowerCase().includes(entry.topic.toLowerCase()));
+  if(entry.group==='story'){const [title,beginning,continuation,...extra]=t.answer.split('\n');assert.ok(title);assert.deepEqual(extra,[]);assert.ok(t.instruction.endsWith(beginning));assert.ok(beginning.startsWith(entry.topic));assert.equal(continuation.split(/(?<=[.!?])\s+/).length,10);}
+  else {assert.equal(t.answer.split('\n').length,12);assert.ok(t.answer.split('\n').every(line=>/^[^:]+: .+/.test(line)));}
+ }
+ assert.match(stories.find(e=>e.tasks[0].pdfPage===19).tasks[0].answer,/not be treated as real advice/);
+ const topics=[...stories,...dialogues].map(e=>e.topic);assert.equal(new Set(topics).size,20);
+});
+
+test('School reading roles disclose held MCQs and do not inflate complete pairs or distinct text counts',()=>{
+ const data=require('../lib/english/data/ssc-school-reading-review.json'),{preparedSSCSchoolReadingItems}=require('../lib/english/prepared-ssc-school-reading.ts');const items=preparedSSCSchoolReadingItems();assert.equal(items.length,4);
+ assert.deepEqual(items.flatMap(i=>i.draft.output.tasks.map(t=>t.id)),['comprehension','comprehension','comprehension','gap']);
+ assert.equal(new Set(items.flatMap(i=>i.draft.output.passages.map(p=>p.text))).size,3);assert.match(data.notes.join(' '),/all MCQ sets are held/);
+ for(const item of items){const d=item.draft;assert.equal(d.output.passages.length,1);assert.equal(d.output.tasks[0].subitems.length,5);assert.ok(d.output.tasks[0].schoolSource&&!d.output.tasks[0].boardSource);assert.equal(d.selection.sources[item.group].text,d.output.passages[0].text);assert.match(d.selection.sources[item.group].reference,/not a complete Seen pair/);}
+ assert.match(data.items[1].tasks[0].subitems[2].answer,/does not explain/);assert.match(data.items[2].tasks[0].subitems[3].answer,/does not prove/);
+});
+
+test('Washington school Unseen preserves cross-page source, original five table blanks and 70–90 word summary',()=>{
+ const entry=require('../lib/english/data/ssc-school-unseen-review.json').items.at(-1),items=require('../lib/english/prepared-ssc-school.ts').preparedSSCSchoolItems(),d=items.at(-1).draft;assert.equal(entry.school,'Lions School and College, Saidpur, Nilphamari');assert.equal(entry.headerPage,59);assert.match(entry.passage,/1732/);assert.match(entry.passage,/December 1799/);
+ const [info,summary]=d.output.tasks;assert.equal(info.schoolSource.pdfPage,61);assert.equal(info.table.rows.length,4);assert.equal(info.subitems[0].answer,'inherited a substantial estate');assert.equal(info.subitems[4].answer,'June 1775');const words=summary.answer.split(/\s+/).length;assert.ok(words>=70&&words<=90);
 });

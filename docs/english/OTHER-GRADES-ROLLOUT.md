@@ -208,3 +208,38 @@ Validation: 144 focused tests pass, including original header/table blanks, cros
 The quantity target remains unmet: deficits are Seen pairs 42, Unseen 38, matching 25, rearranging 27, poems 39, short-story comprehension 39, completing stories 17 and dialogues 25. The supplied compilations contain repeated, malformed and historically questionable exercises; these were not used to inflate totals. More distinct, usable source material and teacher review are required before claiming completion.
 
 Validation: **148/148 focused tests pass**, including all 41 English bank model tests. `git diff --check` passes. Full TypeScript check remains blocked by generated Prisma-client/cascading project errors; no diagnostics reference the changed English/provenance/render modules. No live import, approval, push or deployment performed. Preview -> explicit consent -> Pending -> ADMIN review is unchanged. No mobile-browser or production verification performed.
+
+## School compilation expansion — source-linked language and writing practice
+Added **43 groups / 178 answer entries** beyond the 101-group baseline:
+- 14 rearranging sets: sailor, fisherman, tax collector, Hatem Tai, fox/grapes, Ferdousi, Bayazid, donkey/statue, crow/peacock, Solomon, jackal/camel, dream, unpaid parcel and farmer/horse. Suggested narrative orders retain all eight original sentences. Variants may need teacher judgement.
+- Four matching sets: Mother Teresa, good manners, responsible Facebook use and education. Exact zero-based B/C key mappings are retained and tested against the original column fragments.
+- Ten completing-story scenarios: false alarm, friends/bear, Bayazid, Azam Shah, boatman, dog/reflection, lion/lamb, crow/fox, fox/grapes and honest woodcutter. Ten authored continuation sentences follow each original opening. Traditional accounts are not claimed as verified history or canonical endings; the bear example expressly disclaims real wildlife-safety advice. The boatman ending avoids endorsing drowning and uses a life jacket/sheltered landing.
+- Ten dialogues: deforestation, education, fictional cricket match, price increases, examination anxiety, scholarship bank account, city/village life, Facebook, adult literacy and unemployment. No invented current prices, guaranteed banking requirements or medical prescriptions. The Naogaon stress prompt is original Q10, not Q11; Akij's Facebook prompt retains Test **2024**, not 2025/2026.
+- Three comprehension-only school Seen excerpts (general loneliness, causes/demographics, coping strategies) and one separate gap role using the same general-loneliness text. Held all corresponding MCQ sets because of overlapping, unsupported or overstated alternatives. Under-supported comprehension premises are disclosed in the draft answers rather than answered with invented facts. This adds three distinct Seen excerpts, **zero complete Seen pairs**.
+- One Unseen pair: Washington, Lions School and College Test 2025, header PDF p.59, passage p.60, original five table blanks/summary p.61; authored summary has 73 whitespace-delimited words against the original 70–90 instruction.
+
+Question images were checked individually, and each exercise is linked to the school header **before its question**, including when another school starts on the same page. PDF p.38's first three exercises belong to Unique Progressive School, not the Sherpur paper starting below them. School data never acquires board provenance or becomes eligible through the board-year filter.
+
+### Current cumulative quantities
+**144 review groups / 644 answer entries**, not 644 complete papers, distinct sets or approved records.
+
+| Item / linked group | Prepared | Requested minimum | Remaining |
+|---|---:|---:|---:|
+| Complete Seen practice pairs | 8 | 50 | 42 |
+| Extra comprehension-only Seen | 7 | Not complete pairs | — |
+| Separate Seen gap roles | 10 | Not complete pairs | — |
+| Unseen information + summary pairs | 13 | 50 | 37 |
+| Matching | 19 | 40 | 21 |
+| Rearranging | 27 | 40 | 13 |
+| Poem comprehension | 1 | 40 | 39 |
+| Short-story comprehension | 1 | 40 | 39 |
+| Completing story | 33 | 40 | 7 |
+| Dialogue | 25 | 40 | 15 |
+
+Seen roles cover 24 distinct excerpts across 25 groups; the extra general-loneliness gap role is deliberately **not** a 25th unique text. Three loneliness excerpts are separate parts of one topic, not three distinct literary works. Unseen has 13 distinct retained passages. Source errors, duplicates and missing original literary works still prevent an honest claim that requested quotas are complete. Original works are needed for further trustworthy poem/story interpretations; recombinations of the same questions must not be presented as new distinct source sets.
+
+### Validation and release boundary
+- **152/152 focused tests pass**, including 45 bank-model tests. Added regression coverage for school-source header ownership, original question-number exceptions, exact matching mappings, complete eight-position permutations, ten new story sentences, twelve-line dialogues, reading-role counts, cross-page table blanks, summary length and filtered/unfiltered assembly.
+- Whole repository suite ran: **848 passed / 13 failed, 861 total**. All 13 failures report missing `.prisma/client/default` in `chapter-filter.test.cjs`, `paper-generation.test.cjs` or `question-types.test.cjs`; the environment lacks its generated Prisma client. This is not a full-suite pass.
+- Full TypeScript check remains blocked by generated Prisma/cascading project errors. No diagnostics reference changed English loaders/data modules. Diff whitespace checks pass. No production/browser verification claimed.
+- No live import, approval, push or deployment. Preview -> explicit consent -> Pending -> ADMIN review remains mandatory. This batch is preserved on the current working branch, not silently published.

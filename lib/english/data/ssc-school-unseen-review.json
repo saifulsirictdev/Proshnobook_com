@@ -7,7 +7,8 @@
     "Assistant-prepared summaries and keys require teacher verification. Source historical claims/spelling retained, not independently certified. Victoria passage says box make half crown; source wording retained rather than guessing a silent correction. Narrative describes childhood budgeting, not verified royal biography.",
     "Held Manik hospital/death chronology conflict, Nobel death-year error, Great Wall table missing ruling-group premise, Marconi transmission-place/date inconsistencies and mammals table food mismatch. Repeat biographies not recounted.",
     "Additional source: school-model compilation file 13FF5HytPlXyfpQAHfBNqTycpe5UFl8Nu, SHA256 99d0f288fb844cabc180290cd5349bc9ffea4190c798901152253ee5c78cff43. Joypurhat Girls’ Cadet College Pre-Test 2024 header/passages checked on PDF pp.11–12. First blank (i) is in When column, not Where; original empty Where cell retained.",
-    "School-model filename is not exam provenance: its opening seven pages repeat older boards. Those were not recounted. Rangpur Hawking table repeats 1988 against the narrative’s degree/appointment years, held. Pabna Babbage Royal University/1861 conflicts with other sources, held. Cumilla source ends mid-question and is not registered."
+    "School-model filename is not exam provenance: its opening seven pages repeat older boards. Those were not recounted. Rangpur Hawking table repeats 1988 against the narrative’s degree/appointment years, held. Pabna Babbage Royal University/1861 conflicts with other sources, held. Cumilla source ends mid-question and is not registered.",
+    "Lions School and College, Saidpur, Nilphamari Test 2025 Washington Unseen: header on p.59 belongs after preceding Q11, passage p.60 and table/summary p.61 visually checked. Retained 1752 implied from twenty years after 1732; summary 73 words by whitespace, within original 70–90 range. Source historical claims are not independently certified."
   ],
   "items": [
     {
@@ -286,6 +287,85 @@
           "instruction": "Write a summary of the above passage in your own words.",
           "subitems": [],
           "answer": "Mother Teresa was born as Agnes Gonxha Bojaxhiu in Skopje in 1910. As a young girl she decided to become a missionary and left home at eighteen to join the Sisters of Loreto. After training in Dublin, she went to India and took her initial vows in 1931. She taught geography and religious instruction at St. Mary’s High School in Kolkata. The poverty around her deeply affected her. In 1948 she received permission to leave the convent and work among the poorest people in Kolkata’s slums."
+        }
+      ]
+    },
+    {
+      "school": "Lions School and College, Saidpur, Nilphamari",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 59,
+      "group": "unseen",
+      "passage": "The first president of the United States of America, George Washington, was born in 1732 in Wakefield, Virginia. He was the son of a wealthy planter. He inherited a substantial estate when he was twenty years old. From 1753 to 1758, he served in the army. He took an active part in the French and Indian. War and gained vast military experience and prestige. Returning to Virginia in late 1758, he resigned his commission. In 1774, he was chosen as a delegate from Virginia to the First Continental Congress. He was one of the richest men in the colonies. Washington had not been an early advocate of independence. Nevertheless, in June 1775, the Second Continental Congress unanimously chose him to command the continental armies. This eminent figure in the establishment of the United States of America breathed his last at his house in Mount Vernon, Virginia in December 1799.",
+      "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+      "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 61,
+          "instruction": "Complete the table below with the information from the passage.",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "inherited a substantial estate"
+            },
+            {
+              "text": "(ii)",
+              "answer": "late 1758"
+            },
+            {
+              "text": "(iii)",
+              "answer": "was chosen as a delegate from Virginia to the First Continental Congress"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the Second Continental Congress"
+            },
+            {
+              "text": "(v)",
+              "answer": "June 1775"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event",
+              "When"
+            ],
+            "rows": [
+              [
+                "Washington",
+                "(i) ................",
+                "in 1752"
+              ],
+              [
+                "He",
+                "resigned his commission",
+                "(ii) ................"
+              ],
+              [
+                "He",
+                "(iii) ................",
+                "in 1774"
+              ],
+              [
+                "(iv) ................",
+                "unanimously chose him to command the continental armies",
+                "(v) ................"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 61,
+          "instruction": "Write a summary of the passage in not more than 70 to 90 words.",
+          "subitems": [],
+          "answer": "George Washington, born in Virginia in 1732, inherited an estate and gained military experience during the French and Indian War. After returning to Virginia, he resigned his commission in 1758. He later represented Virginia at the First Continental Congress in 1774. Although not initially an advocate of independence, he was unanimously chosen by the Second Continental Congress to command the continental armies in June 1775. He died at Mount Vernon in December 1799."
         }
       ]
     }
