@@ -1,0 +1,37 @@
+name: Encrypted Blob backup (manual)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: encrypted-blob-backup
+  cancel-in-progress: false
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Download, inventory, encrypt and verify public Blob store
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          BLOB_BACKUP_PASSPHRASE: ${{ secrets.BLOB_BACKUP_PASSPHRASE }}
+          BLOB_BACKUP_OUTPUT: ${{ runner.temp }}/blob-backup
+        run: node scripts/blob-backup.cjs
+      - name: Store only verified encrypted archive and report
+        uses: actions/upload-artifact@v4
+        with:
+          name: encrypted-blob-backup-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/blob-backup/*.tar.enc
+            ${{ runner.temp }}/blob-backup/*.tar.enc.json
+          if-no-files-found: error
+          retention-days: 7
+      - name: Remove temporary files
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/blob-backup"
