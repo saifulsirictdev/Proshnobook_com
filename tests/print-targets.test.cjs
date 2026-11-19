@@ -9,7 +9,7 @@ test("global paper-only print isolation does not hide booklet clones outside #pa
     /body\.booklet-print \.booklet-output,body\.booklet-print \.booklet-output \*\{visibility:visible !important\}/,
   );
 });
-test("ordinary download explicitly prints normal mode regardless of saved booklet preference", () => {
+test("portrait download stays normal while landscape automatically imposes a booklet", () => {
   const src = fs.readFileSync("components/qb-builder.tsx", "utf8");
   assert.match(
     src,
@@ -17,7 +17,7 @@ test("ordinary download explicitly prints normal mode regardless of saved bookle
   );
   assert.match(src, /onClick=\{\(\) => void print\("normal"\)\}/);
   assert.match(src, /onPrint=\{\(\) => void print\("normal"\)\}/);
-  assert.match(src, /if \(mode === "normal"\)/);
+  assert.match(src, /if \(mode === "normal" && s.cfg.orientation !== "landscape"\)/);
   assert.doesNotMatch(src, /if \(!s.cfg.booklet\)/);
   assert.match(src, /printCleanup.current\?\.\(\)/);
   assert.match(src, /window.confirm\(/);

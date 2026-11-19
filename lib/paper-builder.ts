@@ -283,6 +283,12 @@ export function paperDimensions(s: PaperSettings): [number, number] {
   const [w, h] = dimensions[s.cfg.paper];
   return s.cfg.orientation === "landscape" ? [h, w] : [w, h];
 }
+/** Landscape is a folded booklet: logical pages occupy half the physical sheet. */
+export function paperContentDimensions(s: PaperSettings): [number, number] {
+  const [w, h] = paperDimensions(s);
+  return s.cfg.orientation === "landscape" ? [w / 2, h] : [w, h];
+}
+
 export function optionLabel(
   value: string,
   style: PaperSettings["cfg"]["style"],

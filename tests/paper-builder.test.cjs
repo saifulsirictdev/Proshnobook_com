@@ -232,3 +232,21 @@ test("both database paper selectors expose Kalpurush and keep unlicensed NikoshB
   assert.ok(fs.existsSync("public/fonts/Kalpurush.woff2"));
   assert.equal(fs.existsSync("public/fonts/NikoshBAN.ttf"), false);
 });
+
+test('Landscape booklet paginates at half-sheet width and preserves portrait dimensions',()=>{
+ const {paperDimensions,paperContentDimensions,bookletOrder}=mod.exports;
+ const portrait=structuredClone(defaults());portrait.cfg.orientation='portrait';
+ assert.deepEqual(paperContentDimensions(portrait),paperDimensions(portrait));
+ const landscape=structuredClone(portrait);landscape.cfg.orientation='landscape';
+ const [w,h]=paperDimensions(landscape);assert.deepEqual(paperContentDimensions(landscape),[w/2,h]);
+ assert.deepEqual(bookletOrder(4),[[3,0],[1,2]]);
+ for(const n of [1,3,4,5,8,13]){
+  const sides=bookletOrder(n);assert.equal(sides.length%2,0);
+  assert.deepEqual(sides.flat().filter(x=>x!==null).sort((a,b)=>a-b),Array.from({length:n},(_,i)=>i));
+ }
+ const preview=fs.readFileSync('components/paper-builder/preview.tsx','utf8');
+ assert.match(preview,/paperContentDimensions\(s\)/);
+ const builder=fs.readFileSync('components/qb-builder.tsx','utf8');
+ assert.match(builder,/mode === "normal" && s.cfg.orientation !== "landscape"/);
+ assert.match(builder,/s.cfg.orientation === "landscape" \? 1 : Math.min/);
+});
