@@ -1,0 +1,37 @@
+name: Encrypted database and source backup (manual)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: encrypted-site-data-backup
+  cancel-in-progress: false
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Create read-only Neon dump and encrypted source snapshot
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BLOB_BACKUP_PASSPHRASE: ${{ secrets.BLOB_BACKUP_PASSPHRASE }}
+          SITE_BACKUP_OUTPUT: ${{ runner.temp }}/site-data-backup
+        run: node scripts/site-data-backup.cjs
+      - name: Retain verified encrypted archive only
+        uses: actions/upload-artifact@v4
+        with:
+          name: encrypted-site-data-backup-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/site-data-backup/*.tar.enc
+            ${{ runner.temp }}/site-data-backup/*.tar.enc.json
+          if-no-files-found: error
+          retention-days: 7
+      - name: Clean temporary backup files
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/site-data-backup"
