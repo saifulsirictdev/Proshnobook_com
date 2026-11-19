@@ -1,0 +1,545 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+  "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91",
+  "notes": [
+    "Seven additional original school exercises, not board papers or newly authored prompts: four matching sets and three rearranging sets. Prompt/table page images checked at PDF 35,40,45,48,75; preceding paper headers visually checked at 33,38,44,46,73. Original spelling, grammar, capitalisation and punctuation retained; line wraps normalised. Suggested answers are assistant-prepared, not official keys.",
+    "Human rights on PDF35 retained once; repeated variants on 48/70 are not additional sets. Truthfulness is distinct from existing morality/punctuality sets. Sonargaon, democracy, Internet, patriotism, email, early rising, tree plantation, road accidents and other repeated themes are not counted again.",
+    "Water table retains source The another, but then, Their, Throw and stray comma in factories , throw; keys are literal source-fragment concatenations, not silently corrected prose. Truthfulness moral absolutes are source rhetoric, not a guarantee that every lie is exposed. Human-rights violations are attributed to source statements rather than a researched global survey.",
+    "Cyber-security table retains prevent exposure. This is a simplified language exercise, not a promise of complete protection. Passwords, antivirus and safe browsing reduce risks; none guarantee immunity. Two-factor authentication adds a layer rather than making all attacks impossible.",
+    "Farmer/animals narrative retains property (apparently intended properly) and not enough grown up. It does not establish that children or any age group are incapable of care. Washington beam episode is a traditional anecdote, not independently verified history; source retains America, batter and lam. Narrative orders are possible coherent readings, not unique official solutions.",
+    "Language Movement sequence places This day directly after February 21. Recognition follows protest; interpretive legacy sentences come last. No new dates added. This is one narrative set, not eight independent items.",
+    "Held Florence Nightingale Unseen on PDF103 after visual review: illness-for-years blank does not specify an endpoint; 53 requires assuming continuation from 1857 until death in 1910. No invented endpoint or silent question repair. It therefore contributes zero complete Unseen pairs. Also held Great Wall table75 absent ruler premise, Milton40 conflicting publication years, malformed student53 matching and repeated or unsafe stereotype/medical sets. Requested quotas remain unfinished."
+  ],
+  "items": [
+    {
+      "school": "Agricultural University High School, Mymensingh",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 33,
+      "group": "matching",
+      "answerPairs": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 35,
+          "instruction": "Match the parts of sentences given in columns 'A', 'B' and 'C' to write five complete sentences.",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) We can't ensure",
+                "i. violated throughout the world",
+                "i. working for human rights"
+              ],
+              [
+                "(b) Rights should be",
+                "ii. peace and prosperity",
+                "ii. without establishing human rights"
+              ],
+              [
+                "(c) Human rights are",
+                "iii. Commission is an organization",
+                "iii. the privileged and the underprivileged classes of people"
+              ],
+              [
+                "(d) Violation of",
+                "iv. preserved for both",
+                "iv. and society should get rid of it"
+              ],
+              [
+                "(e) Human Rights",
+                "v. human rights is a crime",
+                "v. because of violence"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(a)",
+              "answer": "We can't ensure peace and prosperity without establishing human rights"
+            },
+            {
+              "text": "(b)",
+              "answer": "Rights should be preserved for both the privileged and the underprivileged classes of people"
+            },
+            {
+              "text": "(c)",
+              "answer": "Human rights are violated throughout the world because of violence"
+            },
+            {
+              "text": "(d)",
+              "answer": "Violation of human rights is a crime and society should get rid of it"
+            },
+            {
+              "text": "(e)",
+              "answer": "Human Rights Commission is an organization working for human rights"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Sherpur Govt. Victoria Academy, Sherpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 38,
+      "group": "matching",
+      "answerPairs": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 40,
+          "instruction": "Match the parts of sentences given in column A, B and C to write five complete sentence.",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) Truthfulness",
+                "i. will never win",
+                "i. the respect of others"
+              ],
+              [
+                "(b) We must cultivate",
+                "ii. it comes",
+                "ii. human virtues"
+              ],
+              [
+                "(c) Otherwise, we",
+                "iii. never lies hidden",
+                "iii. to light"
+              ],
+              [
+                "(d) A lie",
+                "iv. is the greatest of all",
+                "iv. the truth"
+              ],
+              [
+                "(e) Today or tomorrow",
+                "v. the habit of speaking",
+                "v. for long"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(a)",
+              "answer": "Truthfulness is the greatest of all human virtues"
+            },
+            {
+              "text": "(b)",
+              "answer": "We must cultivate the habit of speaking the truth"
+            },
+            {
+              "text": "(c)",
+              "answer": "Otherwise, we will never win the respect of others"
+            },
+            {
+              "text": "(d)",
+              "answer": "A lie never lies hidden for long"
+            },
+            {
+              "text": "(e)",
+              "answer": "Today or tomorrow it comes to light"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Saleha Ishaque Govt. Girl's High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 44,
+      "group": "matching",
+      "answerPairs": [
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 45,
+          "instruction": "Match the parts of sentences given in columns 'A', 'B' and 'C' to write five complete sentences.",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) The another name of water is life",
+                "i. They mix with the water of",
+                "i. and pollute water"
+              ],
+              [
+                "(b) When chemical fertilizers and insecticides are used in the fields",
+                "ii. Their waste into rivers and canals",
+                "ii. bad effects of water pollution"
+              ],
+              [
+                "(c) Besides mills and factories , throw",
+                "iii. but then water is contaminated",
+                "iii. into river water and canals"
+              ],
+              [
+                "(d) Again boats, steamers, launches",
+                "iv. make people aware of the",
+                "iv. rivers, canals, and ponds through rain water"
+              ],
+              [
+                "(e) We have to",
+                "v. Throw oil, food and human waste",
+                "v. in various ways"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(a)",
+              "answer": "The another name of water is life but then water is contaminated in various ways"
+            },
+            {
+              "text": "(b)",
+              "answer": "When chemical fertilizers and insecticides are used in the fields They mix with the water of rivers, canals, and ponds through rain water"
+            },
+            {
+              "text": "(c)",
+              "answer": "Besides mills and factories , throw Their waste into rivers and canals and pollute water"
+            },
+            {
+              "text": "(d)",
+              "answer": "Again boats, steamers, launches Throw oil, food and human waste into river water and canals"
+            },
+            {
+              "text": "(e)",
+              "answer": "We have to make people aware of the bad effects of water pollution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Dawood Public School & College, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 73,
+      "group": "matching",
+      "answerPairs": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 75,
+          "instruction": "Match the parts of sentences given in columns 'A', 'B' and 'C' to write five complete sentences.",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) Cyber security awareness",
+                "i. adds an extra layer",
+                "i. from unauthorized access and hacking attempts"
+              ],
+              [
+                "(b) Strong passwords",
+                "ii. helps individuals",
+                "ii. to phishing attacks and malicious websites"
+              ],
+              [
+                "(c) Antivirus software",
+                "iii. prevent exposure",
+                "iii. of security while logging into accounts"
+              ],
+              [
+                "(d) Two-factor authentication",
+                "iv. detects and removes",
+                "iv. malicious software from computers and devices"
+              ],
+              [
+                "(e) Safe browsing habits",
+                "v. protect accounts",
+                "v. to recognize potential online threats"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(a)",
+              "answer": "Cyber security awareness helps individuals to recognize potential online threats"
+            },
+            {
+              "text": "(b)",
+              "answer": "Strong passwords protect accounts from unauthorized access and hacking attempts"
+            },
+            {
+              "text": "(c)",
+              "answer": "Antivirus software detects and removes malicious software from computers and devices"
+            },
+            {
+              "text": "(d)",
+              "answer": "Two-factor authentication adds an extra layer of security while logging into accounts"
+            },
+            {
+              "text": "(e)",
+              "answer": "Safe browsing habits prevent exposure to phishing attacks and malicious websites"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Saleha Ishaque Govt. Girl's High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 44,
+      "group": "rearranging",
+      "order": "cafhdbge",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 45,
+          "instruction": "Put the following parts of the story in correct order to make the whole story.",
+          "subitems": [
+            {
+              "text": "He considered the animals the members of his family.",
+              "answer": "2"
+            },
+            {
+              "text": "So, he engaged a servant for the purpose.",
+              "answer": "6"
+            },
+            {
+              "text": "An old farmer had some animals.",
+              "answer": "1"
+            },
+            {
+              "text": "Once he fell sick and could not take care of his favourite animals himself.",
+              "answer": "5"
+            },
+            {
+              "text": "As a result, he could not take care of the animals property.",
+              "answer": "8"
+            },
+            {
+              "text": "He himself used to take proper care of the animals and so his animals were always strong and healthy.",
+              "answer": "3"
+            },
+            {
+              "text": "The servant was not enough grown up.",
+              "answer": "7"
+            },
+            {
+              "text": "He was really very happy with his animals.",
+              "answer": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Govt. Promothnath (P.N.) Girl's High School, Rajshahi",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 46,
+      "group": "rearranging",
+      "order": "hgacdfbe",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 48,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "But the corporal full of dignity, did nothing but stood by and shouted orders.",
+              "answer": "3"
+            },
+            {
+              "text": "\"Are you?\" said the officer.",
+              "answer": "7"
+            },
+            {
+              "text": "Presently an officer, not in uniform rode up.",
+              "answer": "4"
+            },
+            {
+              "text": "\"Hello\" he said to the corporal, \"Why don't you lend your men a hand to get the beam up?\"",
+              "answer": "5"
+            },
+            {
+              "text": "He then getting down from his horse, worked very hard to put the beam to its place and the man was not other than Washington himself.",
+              "answer": "8"
+            },
+            {
+              "text": "\"Don't you know that lam a corporal?\" was the reply.",
+              "answer": "6"
+            },
+            {
+              "text": "There were too few men for he work.",
+              "answer": "2"
+            },
+            {
+              "text": "In the America War of independence, a corporal and a party of soldiers were sent to raise a heavy beam for a batter.",
+              "answer": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "school": "Dawood Public School & College, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 73,
+      "group": "rearranging",
+      "order": "fcdbhage",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 75,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "The movement succeeded when Bengali was recognized as a state language.",
+              "answer": "6"
+            },
+            {
+              "text": "On February 21, 1952, several protestors were killed by police.",
+              "answer": "4"
+            },
+            {
+              "text": "The government tried to impose Urdu as the only state language.",
+              "answer": "2"
+            },
+            {
+              "text": "Students and common people protested for the recognition of Bengali as a state language.",
+              "answer": "3"
+            },
+            {
+              "text": "These events laid the foundation of Bangladesh's identity and national pride.",
+              "answer": "8"
+            },
+            {
+              "text": "The Language Movement of 1948–1952 was the first major struggle in East Pakistan.",
+              "answer": "1"
+            },
+            {
+              "text": "It inspired later movements for autonomy and independence.",
+              "answer": "7"
+            },
+            {
+              "text": "This day is remembered as Shaheed Dibosh.",
+              "answer": "5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

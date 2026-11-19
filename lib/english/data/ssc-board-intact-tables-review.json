@@ -1,0 +1,1160 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "notes": [
+    "Eleven original-source board groups, nine matching and two complete information/summary pairs, 60 suggested answers. Original source question wording, all matching fragments and all six information blanks retained; no invented fifth match and no silently removed sixth blank. Line wraps normalised; decorative apostrophe glyph ‖ normalised to curly apostrophe. Original source checksum reverified.",
+    "Header and question images checked: Dhaka2023 22–23; Cumilla2023 28–29; Barishal2023 36–37; Dinajpur2023 38–40; Dhaka2022 43–44; Rajshahi2022 45; Jashore2022 47–48; Chattogram2022 51–52; Dinajpur2022 57–58; Dinajpur2020 78–79. Suggested answers authored, not official board keys.",
+    "Historical table format support is intentionally narrow: SSC10 first paper, matching Q4/2022 four parts or Q4/2023 seven parts; information Q5/2023 six blanks. Complete ordered original-part metadata and an intact rectangular table required. Current practice blueprint stays five marks per matching/information task. An always-visible practice note discloses the different original counts/marks, independently of optional provenance display. No implication that this is an intact historical full paper.",
+    "The Jasimuddin table fixed heading is Jasimuddin / Speciality: Pollikobi; retained as instruction. Information blank labels use i–vi; selectedParts a–f denotes the six original positions for existing metadata compatibility, not original printed Latin letters. No table row dropped or blank prefilled.",
+    "Deduplicated 2023 Shahidullah against existing 2019 passage. Held repeated air-pollution2022 Cumilla, MayDay2022 Sylhet and English2022 Mymensingh matching rather than padding. Held 2023 Independence-Day matching with indistinguishable The day rows; malformed pollution fragments; wood/biomass end-soon prediction; defective Titanic/Lincoln/Milton/Einstein passages. Prior medical, date and missing-premise holds unchanged.",
+    "These nine complete matching groups include four- and seven-part original formats, not nine standard five-part questions. Under a strict five-part-only target, only the new Dinajpur2020 vision task qualifies; report both counts rather than claim quota completion. Source history and aspirational/superlative statements remain source wording, not independent factual guarantees. All remain teacher-review candidates. Preview, explicit consent, Pending, ADMIN review only."
+  ],
+  "items": [
+    {
+      "board": "Dhaka",
+      "examYear": 2023,
+      "headerPage": 22,
+      "group": "matching",
+      "topic": "Lipi — resisting an imposed marriage",
+      "limitations": "Source story describes coercion; not an endorsement of child marriage. Source phrase because of having firm determination retained.",
+      "answerPairs": [
+        [
+          4,
+          6
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 7,
+          "pdfPage": 23,
+          "originalSubitemCount": 7,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+          ],
+          "instruction": "Match the parts of sentences given in column ‘A’ ‘B’ and ‘C’ to write seven complete sentences.\nPractice note: all 7 original parts are retained; this practice task has 5 marks in total (the original had 7).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) Lipi’s family",
+                "i. was",
+                "i. the marriage seemed unavoidable."
+              ],
+              [
+                "(b) Though she",
+                "ii. arranged her marriage",
+                "ii. continue her education."
+              ],
+              [
+                "(c) But because of",
+                "iii. was influential in the village",
+                "iii. a high school student, her father wanted to marry her off."
+              ],
+              [
+                "(d) She had",
+                "iv. supported",
+                "iv. firm determination she was unwilling to accept her father's proposal."
+              ],
+              [
+                "(e) During that critical moment her mother",
+                "v. was the victim",
+                "v. her whole heartedly."
+              ],
+              [
+                "(f) But her father",
+                "vi. a desire to",
+                "vi. with a rich widower."
+              ],
+              [
+                "(g) As the father of that man",
+                "vii. having",
+                "vii. of extreme poverty."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Lipi’s family was the victim of extreme poverty."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "Though she was a high school student, her father wanted to marry her off."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "But because of having firm determination she was unwilling to accept her father's proposal."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "She had a desire to continue her education."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "During that critical moment her mother supported her whole heartedly."
+            },
+            {
+              "text": "Complete sentence (f).",
+              "answer": "But her father arranged her marriage with a rich widower."
+            },
+            {
+              "text": "Complete sentence (g).",
+              "answer": "As the father of that man was influential in the village the marriage seemed unavoidable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Cumilla",
+      "examYear": 2023,
+      "headerPage": 28,
+      "group": "matching",
+      "topic": "Language martyrs and multilingualism",
+      "limitations": "Commemoration description is attributed source-era text; not a requirement that all people participate in identical ways.",
+      "answerPairs": [
+        [
+          4,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 7,
+          "pdfPage": 29,
+          "originalSubitemCount": 7,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+          ],
+          "instruction": "Match the parts of sentences given in column ‘A’ ‘B’ and ‘C’ to write seven complete sentences.\nPractice note: all 7 original parts are retained; this practice task has 5 marks in total (the original had 7).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) 21 February is celebrated",
+                "i. join the mourning procession",
+                "i. in recognition of the sacrifices of the martyrs."
+              ],
+              [
+                "(b) The commemoration begins",
+                "ii. us of the supreme sacrifice made",
+                "ii. martyrdom to establish the rightful place of Bangla."
+              ],
+              [
+                "(c) People from all walks of life",
+                "iii. with mourning songs",
+                "iii. and cultural diversity and multilingualism."
+              ],
+              [
+                "(d) The UNESCO proclaimed February 21",
+                "iv. promotes the awareness of linguistic",
+                "iv. by our language martyrs."
+              ],
+              [
+                "(e) Mourning songs remind",
+                "v. throughout the country",
+                "v. in remembrance of the martyrs of the language movement."
+              ],
+              [
+                "(f) 21 February is originally connected",
+                "vi. as the International Mother Language Day",
+                "vi. wearing black badges."
+              ],
+              [
+                "(g) The worldwide observation of the day",
+                "vii. with Bengali heroes who embraced",
+                "vii. that recall the supreme sacrifice of our language martyrs."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "21 February is celebrated throughout the country in remembrance of the martyrs of the language movement."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "The commemoration begins with mourning songs that recall the supreme sacrifice of our language martyrs."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "People from all walks of life join the mourning procession wearing black badges."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "The UNESCO proclaimed February 21 as the International Mother Language Day in recognition of the sacrifices of the martyrs."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Mourning songs remind us of the supreme sacrifice made by our language martyrs."
+            },
+            {
+              "text": "Complete sentence (f).",
+              "answer": "21 February is originally connected with Bengali heroes who embraced martyrdom to establish the rightful place of Bangla."
+            },
+            {
+              "text": "Complete sentence (g).",
+              "answer": "The worldwide observation of the day promotes the awareness of linguistic and cultural diversity and multilingualism."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2023,
+      "headerPage": 36,
+      "group": "matching",
+      "topic": "Pritilata — biography matching",
+      "limitations": "Original political history language retained; no method-of-death content in the matching task.",
+      "answerPairs": [
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 7,
+          "pdfPage": 37,
+          "originalSubitemCount": 7,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+          ],
+          "instruction": "Match the parts of sentences given in column ‘A’ ‘B’ and ‘C’ to write seven complete sentences.\nPractice note: all 7 original parts are retained; this practice task has 5 marks in total (the original had 7).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) Pritilata was born",
+                "i. decision to fight against",
+                "i. in 1911."
+              ],
+              [
+                "(b) She was a very",
+                "ii. an attack on",
+                "ii. in her student life."
+              ],
+              [
+                "(c) She completed",
+                "iii. in Chattogram",
+                "iii. free from British rule."
+              ],
+              [
+                "(d) All through her life,",
+                "iv. of 10-12 men",
+                "iv. the Pahartali European Club."
+              ],
+              [
+                "(e) She took",
+                "v. bright student",
+                "v. from Bethune College."
+              ],
+              [
+                "(f) Surja Sen planned",
+                "vi. she dreamt of her motherland",
+                "vi. to attack the club."
+              ],
+              [
+                "(g) Pritilata led a team",
+                "vii. her graduation",
+                "vii. the British rule."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Pritilata was born in Chattogram in 1911."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "She was a very bright student in her student life."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "She completed her graduation from Bethune College."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "All through her life, she dreamt of her motherland free from British rule."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "She took decision to fight against the British rule."
+            },
+            {
+              "text": "Complete sentence (f).",
+              "answer": "Surja Sen planned an attack on the Pahartali European Club."
+            },
+            {
+              "text": "Complete sentence (g).",
+              "answer": "Pritilata led a team of 10-12 men to attack the club."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "examYear": 2022,
+      "headerPage": 43,
+      "group": "matching",
+      "topic": "Air pollution matching",
+      "limitations": "Source calls air pollution the most dangerous form; comparative superlative retained as exercise wording, not a scientific ranking.",
+      "answerPairs": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 4,
+          "pdfPage": 44,
+          "originalSubitemCount": 4,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "instruction": "Match the parts of sentences given in column 'A', 'B' and 'C' to write four complete sentences.\nPractice note: all 4 original parts are retained; this practice task has 5 marks in total (the original had 4).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) Air pollution",
+                "i. are",
+                "i. from the vehicles is the main cause of it."
+              ],
+              [
+                "(b) There",
+                "ii. must be taken",
+                "ii. to control this pollution."
+              ],
+              [
+                "(c) Black smoke which",
+                "iii. is",
+                "iii. a number of reasons behind this pollution."
+              ],
+              [
+                "(d) Immediate steps",
+                "iv. is emitted",
+                "iv. the most dangerous form of pollution."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Air pollution is the most dangerous form of pollution."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "There are a number of reasons behind this pollution."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "Black smoke which is emitted from the vehicles is the main cause of it."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Immediate steps must be taken to control this pollution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "examYear": 2022,
+      "headerPage": 45,
+      "group": "matching",
+      "topic": "Energy resources matching",
+      "limitations": "Unlimited wind/sunlight is a simplified renewable-resource contrast, not a claim of unlimited usable energy at each site or hour. Source grammar retained.",
+      "answerPairs": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 4,
+          "pdfPage": 45,
+          "originalSubitemCount": 4,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "instruction": "Match the parts of sentences given in column 'A', 'B' and 'C' to write four complete sentences.\nPractice note: all 4 original parts are retained; this practice task has 5 marks in total (the original had 4).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) To generate electricity people of the world",
+                "i. are",
+                "i. finished or run out."
+              ],
+              [
+                "(b) One day these resources",
+                "ii. should use",
+                "ii. a lot of oil, coal and gas everyday."
+              ],
+              [
+                "(c) But wind and sunlight",
+                "iii. will be",
+                "iii. solar energy as an alternative source."
+              ],
+              [
+                "(d) For the betterment of us, we",
+                "iv. are burning",
+                "iv. unlimited around the world."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "To generate electricity people of the world are burning a lot of oil, coal and gas everyday."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "One day these resources will be finished or run out."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "But wind and sunlight are unlimited around the world."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "For the betterment of us, we should use solar energy as an alternative source."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2022,
+      "headerPage": 47,
+      "group": "matching",
+      "topic": "May Day matching",
+      "limitations": "Source-era history language retained; no new independent certification of every historical detail.",
+      "answerPairs": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 4,
+          "pdfPage": 48,
+          "originalSubitemCount": 4,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "instruction": "Match the parts of sentences given in column ‘A’, ‘B’ and ‘C’ to write four complete sentences.\nPractice note: all 4 original parts are retained; this practice task has 5 marks in total (the original had 4).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) May Day",
+                "i. work in mills and factories",
+                "i. to commemorate the workers’ sacrifice in 1886."
+              ],
+              [
+                "(b) The day",
+                "ii. is also called",
+                "ii. struggle and sacrifice."
+              ],
+              [
+                "(c) The workers had to",
+                "iii. is observed",
+                "iii. for quite a long time."
+              ],
+              [
+                "(d) We enjoy the facilities today",
+                "iv. because of their",
+                "iv. International Workers' Day."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "May Day is also called International Workers' Day."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "The day is observed to commemorate the workers’ sacrifice in 1886."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The workers had to work in mills and factories for quite a long time."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "We enjoy the facilities today because of their struggle and sacrifice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Chattogram",
+      "examYear": 2022,
+      "headerPage": 51,
+      "group": "matching",
+      "topic": "Independence Day observances",
+      "limitations": "Original capitalisation and grammar including paradeground and Stadium retained; description is not a verified current events schedule.",
+      "answerPairs": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 4,
+          "pdfPage": 52,
+          "originalSubitemCount": 4,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "instruction": "Match the parts of sentences given in column ‘A’, ‘B’ and ‘C’ to write four complete sentences.\nPractice note: all 4 original parts are retained; this practice task has 5 marks in total (the original had 4).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) We celebrate",
+                "i. to the martyrs by",
+                "i. at the national paradeground."
+              ],
+              [
+                "(b) We pay homage",
+                "ii. our independence day",
+                "ii. various displays in Stadium."
+              ],
+              [
+                "(c) We witness",
+                "iii. are entertained with",
+                "iii. placing wreaths at national mausoleum."
+              ],
+              [
+                "(d) Spectators",
+                "iv. a smartly dressed parade",
+                "iv. with great enthusiasm and fervour."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "We celebrate our independence day with great enthusiasm and fervour."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "We pay homage to the martyrs by placing wreaths at national mausoleum."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "We witness a smartly dressed parade at the national paradeground."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Spectators are entertained with various displays in Stadium."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2022,
+      "headerPage": 57,
+      "group": "matching",
+      "topic": "English and international communication",
+      "limitations": "Source-language learning claim, not an assertion that English is inherently superior or the only valid international language.",
+      "answerPairs": [
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 4,
+          "sourceMarks": 4,
+          "pdfPage": 58,
+          "originalSubitemCount": 4,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "instruction": "Match the parts of sentences given in column 'A', 'B' and 'C' to write four complete sentences.\nPractice note: all 4 original parts are retained; this practice task has 5 marks in total (the original had 4).",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) People",
+                "i. require",
+                "i. learn and use English properly."
+              ],
+              [
+                "(b) They",
+                "ii. cannot but",
+                "ii. the purpose more effectively than other languages."
+              ],
+              [
+                "(c) English",
+                "iii. can serve",
+                "iii. a common language for the purpose."
+              ],
+              [
+                "(d) Therefore all",
+                "iv. need to",
+                "iv. communicate with others internationally."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "People need to communicate with others internationally."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "They require a common language for the purpose."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "English can serve the purpose more effectively than other languages."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Therefore all cannot but learn and use English properly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2020,
+      "headerPage": 78,
+      "group": "matching",
+      "topic": "A vision for Bangladesh",
+      "limitations": "Aspirational source-era 2041 vision, not a factual claim that poverty or corruption has ended or will certainly end. Rights phrasing retained as source wording, not legal advice.",
+      "answerPairs": [
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 79,
+          "instruction": "Match the parts of sentences given in column ‘A’ ‘B’ and ‘C’ to write five complete sentences.",
+          "table": {
+            "headers": [
+              "Column A",
+              "Column B",
+              "Column C"
+            ],
+            "rows": [
+              [
+                "(a) We want to see Bangladesh",
+                "i. their democratic rights",
+                "i. looking ahead."
+              ],
+              [
+                "(b) We have a vision",
+                "ii. will be sent",
+                "ii. as well as their constitutional rights."
+              ],
+              [
+                "(c) Education will be",
+                "iii. of seeing or imagining or",
+                "iii. to the museum."
+              ],
+              [
+                "(d) Every citizen of Bangladesh will exercise",
+                "iv. as a democratic, corruption-free and developed country",
+                "iv. as it is their fundamental right."
+              ],
+              [
+                "(e) Poverty, injustice and corruption",
+                "v. free for all",
+                "v. in the world in 2041."
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "We want to see Bangladesh as a democratic, corruption-free and developed country in the world in 2041."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "We have a vision of seeing or imagining or looking ahead."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "Education will be free for all as it is their fundamental right."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Every citizen of Bangladesh will exercise their democratic rights as well as their constitutional rights."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Poverty, injustice and corruption will be sent to the museum."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2023,
+      "headerPage": 36,
+      "passagePage": 37,
+      "group": "unseen",
+      "topic": "Jasimuddin — poet and folklore collector",
+      "limitations": "Original passage and all six blanks retained. Speciality: Pollikobi is a fixed heading above the table. The Independence Day Award dated 1978 follows his 1976 death; summary explicitly treats it as posthumous, not as an event he personally attended. Source titles/transliterations and simplified literary claims retained, not official catalogue entries.",
+      "passage": "Jasimuddin was a famous Bengali poet. He was also a song writer, prose writer, folklore collector and radio personality. He is known as Pollikobi because through his poems he depicted the Bengali rural life. He was born in the village of Tambulkhana in Faridpur District on 1 January 1903. He received his early education at Faridpur Welfare School. He obtained BA degree in Bangla from the University of Calcutta in 1929 and MA in 1931. Jasimuddin joined the University of Dhaka in 1938 as a lecturer. He left the university in 1944 and joined the Department of Information and Broadcasting. He worked there until his retirement in 1962 as Deputy Director. Jasimuddin collected more than 10,000 folk songs. He wrote many poems, dramas, novels, memoirs, music, etc. His major works are Rakhali, Nakshi Kanthar Maath, Sojan Badiyar Ghat, Bedder Meya, Madhumala. The major honours and award that he received are President Award for Pride performance, Pakistan (1958), D. Lit by Rabindra Bharati University, India (1969). Ekushy Padak (1976), Bangladesh Independence Day Award (1978). He died on 13 March 1976 and was buried near his ancestral home at Gobindapur.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 5,
+          "sourceMarks": 6,
+          "pdfPage": 37,
+          "originalSubitemCount": 6,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f"
+          ],
+          "instruction": "Jasimuddin\nSpeciality: Pollikobi\nComplete the table below with information from the passage.\nPractice note: all six original blanks are retained; this practice task has 5 marks in total (the original had 6).",
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/Activity",
+              "Year/When",
+              "Place/Where"
+            ],
+            "rows": [
+              [
+                "Jasimuddin",
+                "(i) ——",
+                "(ii) ——",
+                "in Faridpur."
+              ],
+              [
+                "He",
+                "passed BA",
+                "in 1929",
+                "(iii) ——"
+              ],
+              [
+                "He",
+                "joined",
+                "(iv) ——",
+                "at the University of Dhaka."
+              ],
+              [
+                "He",
+                "(v) ——",
+                "in 1958",
+                ""
+              ],
+              [
+                "Death",
+                "",
+                "(vi) ——",
+                ""
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "was born"
+            },
+            {
+              "text": "(ii)",
+              "answer": "1 January 1903"
+            },
+            {
+              "text": "(iii)",
+              "answer": "at the University of Calcutta"
+            },
+            {
+              "text": "(iv)",
+              "answer": "in 1938"
+            },
+            {
+              "text": "(v)",
+              "answer": "received the President Award for Pride performance, Pakistan"
+            },
+            {
+              "text": "(vi)",
+              "answer": "13 March 1976"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 6,
+          "sourceMarks": 10,
+          "pdfPage": 37,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Jasimuddin, known as Pollikobi, portrayed rural Bengali life in his writing. Born in Faridpur in 1903, he studied Bangla at the University of Calcutta and later taught at the University of Dhaka. He subsequently worked in Information and Broadcasting until retirement. His collection of folk songs and his poetry preserved aspects of rural culture. The passage lists several notable works and honours, including a posthumous Independence Day Award. He died in 1976 and was buried near his ancestral home."
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2023,
+      "headerPage": 38,
+      "passagePage": 39,
+      "group": "unseen",
+      "topic": "Hakaluki haor — ecology and livelihoods",
+      "limitations": "Passage PDF39; original six-blank table and summary PDF40. Area, population, species numbers and relative phrases now/last two decades are source-era data, not freshly surveyed current figures. Barheaded Goose spelling and subjective most interesting retained. No exact current population, universal grazing guidance or current abundance claim certified.",
+      "passage": "Bangladesh is blessed with huge inland open water resources. It has numerous rivers, canals, beels, lakes and vast areas of floodplains. Hakaluki haor is one of the major wetlands of Bangladesh. With a land area of 18,386 hectares, it supports a rich biodiversity and provides direct and indirect livelihood benefits to nearly 1,90,000 people. This haor was declared an Ecologically Critical Area in April 1999 by the government of Bangladesh. Hakaluki is a complex ecosystem, containing more than 238 interconnecting beels and jalmahals. The haor falls under two administrative districts, Maulvibazar and Sylhet. Some 1,90,000 people live in the area surrounding the haor. The haor is a very important resting place for migratory waterfowls flying in from the north. The most interesting species is the Barheaded Goose, which is now hardly seen in fresh water wetlands. Many other important species of waterfowls make the haor their temporary home. Unfortunately, illegal poaching has been a threat to the waterfowl population in this vast wetland. Hakaluki haor is known as a good grazing land in winter. People from villages around the haor and also from distant areas send their herds for grazing. During this time, herders make temporary shelters near the beels and graze their animals for a period of 4 to 5 months. The haor had very dense swamp forests in the past, but deforestation and lack of conservation practices have virtually destroyed this unique forest in the last two decades.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 5,
+          "sourceMarks": 6,
+          "pdfPage": 40,
+          "originalSubitemCount": 6,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f"
+          ],
+          "instruction": "Complete the table below with information from the passage.\nPractice note: all six original blanks are retained; this practice task has 5 marks in total (the original had 6).",
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/activity",
+              "Speciality/Area",
+              "Place/Time"
+            ],
+            "rows": [
+              [
+                "Hakaluki haor",
+                "is a major wetland",
+                "with an area of (i) ——",
+                "in Bangladesh"
+              ],
+              [
+                "The haor",
+                "was declared",
+                "Ecologically Critical Area",
+                "(ii) ——"
+              ],
+              [
+                "It",
+                "falls",
+                "under two districts",
+                "(iii) ——"
+              ],
+              [
+                "(iv) ——",
+                "is seen",
+                "which is the most interesting waterfowl",
+                "in fresh water"
+              ],
+              [
+                "The haor",
+                "(v) ——",
+                "as good grazing land",
+                "in winter"
+              ],
+              [
+                "Herders",
+                "make temporary shelters",
+                "to graze animals",
+                "for (vi) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "18,386 hectares"
+            },
+            {
+              "text": "(ii)",
+              "answer": "in April 1999"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Maulvibazar and Sylhet"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the Barheaded Goose"
+            },
+            {
+              "text": "(v)",
+              "answer": "is known"
+            },
+            {
+              "text": "(vi)",
+              "answer": "4 to 5 months"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 6,
+          "sourceMarks": 10,
+          "pdfPage": 40,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Hakaluki haor is an important Bangladeshi wetland supporting biodiversity and local livelihoods. The passage places it in Maulvibazar and Sylhet and notes its designation as an Ecologically Critical Area in 1999. Its interconnected waters provide a resting place for migratory birds, although illegal hunting threatens them. The surrounding land also supports seasonal grazing, with herders staying temporarily near the beels. The text warns that deforestation and inadequate conservation have damaged the swamp forests and threaten this valuable ecosystem."
+        }
+      ]
+    }
+  ]
+}

@@ -269,3 +269,176 @@ Source: supplied *English for Today — Classes Nine and Ten*, revised October 2
 The registry now has 33 Seen passage roles on 32 distinct displayed excerpts; the extra general-loneliness gap role remains the single duplicate text. Distinct excerpts are not necessarily distinct underlying lessons or literary works. All requested quotas remain unfinished. Additional defensible original source exercises are still needed rather than alternate questions on the same work being presented as new original sources.
 
 Validation for this supplement: **153/153 focused tests, including 46/46 bank-model tests, pass**. Regression checks cover 22 unique prepared keys, 208 complete answers, four distinct MCQ alternatives/one key, linked shared excerpts, PDF/printed page offsets, preservation through assembly, Pending rejection and board-year exclusion. Full typecheck still fails on existing generated-Prisma/cascading project errors; no diagnostics mention the changed loaders. Previous whole-suite result (848 pass / 13 missing-Prisma failures) is historical, not a newly rerun full-suite pass. No production import, approval or deployment. Preview → explicit consent → Pending → ADMIN review remains unchanged.
+
+## Further original school exercises — resumed expansion (2026-11-10)
+
+Added **7 original-source groups / 44 suggested answers** in `ssc-school-additional-review.json`, through its dedicated loader and the shared preview registry. These are recovered school exercises with authored keys, not newly authored prompts or board papers. The source SHA256 was reverified against the downloaded PDF: `b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91`.
+
+| Exercise | Prompt PDF page / question | Actual preceding school header |
+|---|---|---|
+| Human-rights matching | 35 / Q6 | Agricultural University High School, Mymensingh, p.33 |
+| Truthfulness matching | 40 / Q6 | Sherpur Govt. Victoria Academy, Sherpur, p.38 (below preceding school's writing section) |
+| Water-pollution matching | 45 / Q6 | Saleha Ishaque Govt. Girl's High School, Sirajganj, p.44 |
+| Cyber-security matching | 75 / Q6 | Dawood Public School & College, Jashore, p.73 (below preceding school's writing section) |
+| Farmer/animal-care rearranging | 45 / Q7 | Saleha Ishaque, p.44 |
+| Washington/beam anecdote rearranging | 48 / Q7 | Govt. Promothnath (P.N.) Girl's High School, Rajshahi, p.46 |
+| Language Movement rearranging | 75 / Q7 | Dawood Public School & College, p.73 |
+
+All seven are **Test 2025 school questions**, not Board 2025 questions. Both question images and the owning header images were visually checked. Matching keys concatenate exact source-column fragments, preserving source grammar/spelling rather than silently repairing it; narrative keys are possible coherent orders (`cafhdbge`, `hgacdfbe`, `fcdbhage`), not official answers. Cyber-security absolutes remain disclosed simplifications, not promises of complete protection. Washington's beam story is attributed anecdote, not historical certification. Farmer wording is not an endorsement of age-based stereotypes about caring ability.
+
+Repeated human-rights variants p.48/70, Sonargaon, democracy, patriotism, Internet, email and existing dialogue topics were not counted again. The Florence Nightingale Unseen candidate p.103 was visually reviewed and **held**: the "Suffered illness for ... years" blank provides no endpoint. Answering 53 assumes illness continued from 1857 until death in 1910; no endpoint is supplied explicitly. It adds zero Unseen pairs. Great Wall p.75 still lacks a table premise; Milton p.40 has conflicting publication years; malformed or stereotype-based matching remains held.
+
+### Latest cumulative preview quantities
+- **151 original-source review groups / 688 suggested answers**.
+- Separately labelled authored-textbook supplement unchanged: **22 groups / 208 answers**.
+- Combined registry: **173 groups / 896 answers**, all still review candidates, not approved live records.
+- Complete Seen pairs **16** (8 original-exercise + 8 authored); Unseen **13**; matching **23**; rearranging **30**; poem comprehension **8**; story/episode comprehension **8**; completing story **33**; dialogue **25**.
+- Minimum remaining, even including authored practice: Seen **34**, Unseen **37**, matching **17**, rearranging **10**, poem groups **32**, story/episode groups **32**, completing story **7**, dialogue **15**. These literature group totals are not counts of distinct original works. Original-exam deficits are not filled by authored supplements. No quota completion claimed.
+
+Validation: **154/154 focused tests pass**, including **47 bank-model tests**. Added checks for exact matching fragments/column permutations, eight-position narrative orders, owning header/page/marks, unique registry keys, source checksum, Pending rejection, assembly preservation and school exclusion from board-year filters. `git diff --check` passes. Full TypeScript check still fails on existing missing generated-Prisma/cascading errors; no diagnostics name either changed loader. No production import, approval or deploy. Preview → explicit consent → Pending → ADMIN review remains mandatory.
+
+## Reading-pair expansion — source-preserving and explicitly authored (2026-11-10)
+
+Added **10 complete Seen practice pairs / 120 suggested answers**:
+- **1 intact original school question set**: Habiganj Government High School, Test 2025, PDF112 (greenhouse). Seven original MCQs and five original comprehension questions, exact alternatives/wording, authored keys, school—not board—metadata. Source-era oil-consumption figures remain attributed; no question certifies a current statistic.
+- **9 explicitly authored pairs** using selected real reading excerpts: graffiti expression (PDF3), Zahir Raihan film/public commitment (8), Maldives geography (17), air pollution (42), Meherjan narrative (54), Pritilata education/aspirations (99), loneliness definition (28), demographic risks (33), coping/support (79). Each has seven new MCQs and five new written questions. These are **not recovered original exam questions**, official exercises or official answer keys. Their source references disclose authored status; no school/board exam provenance is fabricated. `ssc-authored-reading-review.json` records precise excerpt boundaries and limitations. Paragraphs with defective dates, unsupported questions, unnecessary death-method detail or current-statistic implications were not selected. Source wording is preserved with line-wrap normalisation.
+
+All ten source page images were visually checked. Defective original school sets are still held, not silently rewritten. The three loneliness excerpts are parts of one lesson; their prior longer comprehension-only roles remain visible. Greenhouse completes a source topic already present in partial reading stock. Excerpt count is **not** a distinct-work count. This batch does not claim 10 new distinct underlying lessons or complete the requested 50 distinct Seen target.
+
+Latest registry: **183 groups / 1,016 suggested answers** = **152 original-source groups / 700 answers** plus **31 explicitly authored groups / 316 answers**. Complete Seen pair records: **26** (9 original + 17 authored); seven comprehension-only roles remain. Seen roles: **43**, with **41 unique displayed strings** (one greenhouse full pair shares the exact excerpt with an earlier partial role; the existing loneliness gap/comprehension duplicate remains). Different excerpts or alternate questions on the same underlying work do not count as new independent works.
+
+Task totals: MCQ26, comprehension33, gap10, information13, summary13, matching23, rearranging30, poems8, stories8, completing-story33, dialogue25. Even counting all authored pairs, numeric deficits remain: Seen24, Unseen37, matching17, rearranging10, poem groups32, story/episode groups32, completing-story7, dialogue15. The stricter **distinct complete source** target still requires deduplication by underlying reading rather than simply accepting the pair-record count.
+
+Validation: **155/155 focused tests pass**, including **48 bank-model tests**. New checks cover 7+5 question structure, unique four-option MCQs with one answer, all suggested answers, original school marks/page/year, clear authored provenance, forbidden board-year eligibility, assembly preservation, exclusion of defective date/statistic paragraphs, unique registry keys and Pending rejection. Full TypeScript check still fails with existing generated-Prisma/cascading errors; no diagnostics mention the two new loaders. No production import, approval or deployment. Preview → explicit consent → Pending → ADMIN review unchanged.
+
+## Board-first batch — intact historical tables (2026-11-10)
+
+Added **11 original board-source groups / 60 suggested answers** in `ssc-board-intact-tables-review.json`; no authored substitute questions or school stock added in this batch.
+
+| Board/year | PDF header → question | Original task retained |
+|---|---|---|
+| Dhaka 2023 | 22 → 23 | Q4 Lipi matching, all 7 sentences |
+| Cumilla 2023 | 28 → 29 | Q4 language/multilingualism matching, all 7 |
+| Barishal 2023 | 36 → 37 | Q4 Pritilata matching, all 7; Q5–6 Jasimuddin information/summary, all 6 blanks |
+| Dinajpur 2023 | 38 → 39–40 | Hakaluki haor passage39, Q5–6 table/summary40, all 6 blanks |
+| Dhaka 2022 | 43 → 44 | Q4 air-pollution matching, all 4 sentences |
+| Rajshahi 2022 | 45 → 45 | Q4 energy-resource matching, all 4 |
+| Jashore 2022 | 47 → 48 | Q4 May Day matching, all 4 |
+| Chattogram 2022 | 51 → 52 | Q4 Independence Day matching, all 4 |
+| Dinajpur 2022 | 57 → 58 | Q4 English-communication matching, all 4 |
+| Dinajpur 2020 | 78 → 79 | Q6 Bangladesh vision matching, all 5 |
+
+All owning headers, question tables and both Unseen passages were visually checked. Source SHA256 reverified: `768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874`. Matching keys concatenate the exact original A/B/C fragments, with zero-based permutation mappings retained for audit. Original awkward grammar remains disclosed rather than silently repaired. Jasimuddin's fixed heading *Speciality: Pollikobi* is retained in the instruction; all original table rows and six blanks remain. Its 1978 award is described as posthumous, not personally received after death. Hakaluki area/population/species figures and relative time phrases are attributed source-era data, not fresh surveys. The 2041 Bangladesh vision is aspiration, not a guarantee or claim of achievements already realised.
+
+### Preserving historical counts without padding or silent truncation
+
+Previously the five-part practice schema blocked intact four-/seven-part matching and six-blank information tables. Added **narrow** compatibility for Class10/Paper1: Q4/2022 matching4 (original4marks), Q4/2023 matching7 (original7marks), Q5/2023 information6 (original6marks). It requires complete ordered original-part metadata, exactly the original number of subitems and an intact table; arbitrary count changes, wrong years/questions/marks, reordered/missing parts or missing rows/blanks fail validation. Ordinary generated questions and other grades keep their existing counts. This is not an approval bypass.
+
+The practice blueprint totals remain unchanged: **5 total marks** for each matching/information task. An **always-visible practice note** explains the original count/marks and five-mark adaptation, even when optional board-source labels are hidden. These tasks should be graded across all retained parts using a teacher-approved distribution, not assumed to award one mark per part. Optional provenance now describes complete sets as all original parts intact, not misleadingly as a selected subset. This batch is not an intact historical whole-paper reproduction.
+
+**Deduplication/holds:** 2023 Shahidullah repeats the already registered 2019 Unseen biography and was not added. Repeated 2022 Cumilla air-pollution, Sylhet May Day and Mymensingh English matching variants were held rather than padded into targets. 2023 matching with two indistinguishable “The day” rows, malformed pollution fragments, and the unsupported wood/biomass “will end soon” prediction remain held. Titanic/Lincoln/Milton/Einstein defective narratives and previous medical/date/missing-premise holds remain held. The 2022 information-transfer texts explicitly carrying textbook-unit labels have not been relabelled as new distinct Unseen works to inflate the Unseen target.
+
+### Current cumulative review registry
+
+- **194 groups / 1,076 suggested answers**: original-source **163 / 760**, separately labelled authored **31 / 316**.
+- Complete Seen pair records **26** (9 original + 17 authored), still not 26 distinct underlying textbook works. Seen roles43 / unique displayed strings41 unchanged.
+- Unseen information/summary pairs **15**: 13 five-blank pairs plus 2 intact six-blank pairs. All 15 displayed passages distinct; no repeated Shahidullah counted.
+- Matching **32 original exercise groups**: 24 five-part, 3 seven-part, 5 four-part. This is **not** 32 standard five-part tasks; if a strict five-part-only quota applies, qualifying count is24.
+- Rearranging30; poem groups8; story/episode groups8; completing-story33; dialogue25 unchanged.
+- Numeric minimum deficits including supported original formats: Seen24 (plus distinct-work audit), Unseen35, matching8 (or16 under five-part-only criteria), rearranging10, poem32, story/episode32, completing-story7, dialogue15. No completed quota claimed.
+
+Validation: **158/158 focused tests pass**, including **51 bank-model tests**. New regression coverage audits all 60 keys, matching permutations, all six blank labels/answers, source checksum/header/question/marks, assembly/year filtering, shared Unseen passage linkage, 70–90 word summaries, unique registry keys and Pending rejection. Negative tests reject historical-count metadata abuse and missing table content. Print/flow regression checks preserve every subitem, show adaptation notes with provenance hidden, and show original-vs-practice marks when provenance is enabled. Full TypeScript remains blocked by existing generated-Prisma/cascading errors; no diagnostics name the changed loaders, generation or board-source modules. No live import, approval, deployment or school-filter change. Preview → explicit consent → Pending → ADMIN review remains mandatory.
+
+## Large authored-practice batch — three numerical minima reached (2026-11-10)
+
+Added **38 groups / 102 suggested answers** in two explicitly labelled, source-independent supplements. These are **newly authored practice prompts**, not recovered board/school questions, official exercises, forecasts or official answer keys. No source PDF, checksum, school, board, examination year or historical marks are invented. This batch adds **zero original-exam groups** and makes no claim to finish original-exam recovery.
+
+### Writing: 7 completing stories + 15 dialogues
+
+`ssc-authored-writing-review.json` / `prepared-ssc-authored-writing.ts` adds:
+- Stories: correcting science-fair measurements; making an exhibition accessible; checking a false examination notice; reporting a broken playground tap; welcoming a new classmate; community seed-sharing records; obtaining publication permission for a photograph.
+- Dialogues: school waste separation; drinking-water concerns; verifying a viral claim; accessible events; cyclone preparedness; affordable varied diets; public-transport journey planning; evaluating school solar panels; safe support concerning imposed early marriage; comparing practical training; respectful debate; heritage visits; an inclusive science club; wetland/community conservation; non-disturbing wildlife observation.
+
+Each story supplies an original beginning, a title and **exactly ten new continuation sentences**, with the exact beginning repeated before the answer continuation. Each dialogue has **twelve alternating turns** by the two participants named in its prompt. Answers are illustrative and teacher-reviewable, not the only valid response. Child/adult responsibilities, professional assistance, privacy, disability autonomy and safety limits are explicit where relevant. No risky repairs, wildlife handling, unsupervised rescue, chemical dosage, guaranteed harvest/job/power output or personal diagnosis is prescribed.
+
+### Matching: 16 complete standard five-part tasks
+
+`ssc-authored-matching-review.json` / `prepared-ssc-authored-matching.ts` adds **80 exact-fragment suggested answers**, each using five A, five B and five C fragments exactly once. Columns B and C are independently shuffled. Auditable zero-based answer mappings are retained in the data. Scenarios cover library catalogues, investigation records, family emergency contacts, bird observation, electricity use, museum documentation, accessible meetings, moderated discussion, lunch containers, image permissions, maintenance reporting, transport journeys, garden records, announcement verification, training-provider checks and waste prevention.
+
+Different task categories deliberately share some educational themes; this does not create additional original works or examination sources. Within each category the communicative scenario/prompt is distinct. Exact-prompt uniqueness alone is not treated as proof of unique source works. Teacher review may accept other genuinely coherent matching combinations rather than treating suggested keys as official exclusive answers.
+
+### Provenance and workflow
+
+Every new task instruction **always visibly starts with “Authored practice — not a board or school examination question.”** Draft names also identify authored writing/matching. The label survives assembly and print fragmentation with optional provenance hidden. No new task carries `boardSource`, `schoolSource`, a fabricated passage or a false source reference. Board-year selection excludes all 38. The numerical practice targets below do **not** mean original-source quotas have been fulfilled. Preview → explicit consent → Pending → ADMIN review remains mandatory; no database import, approval, push or deployment performed for this batch.
+
+### Latest cumulative quantities
+
+- **232 review groups / 1,178 suggested answers**.
+- Original-source stock unchanged: **163 groups / 760 answers**. Explicitly authored stock: **69 groups / 418 answers**.
+- **Completing story: 40** = 33 original-source + 7 newly authored. Numerical minimum40 reached **including authored practice**.
+- **Dialogue: 40** = 25 original-source + 15 newly authored. Numerical minimum40 reached **including authored practice**.
+- **Matching: 48** = 32 original-source + 16 newly authored. Composition: **40 standard five-part tasks**, 3 intact seven-part and 5 intact four-part tasks. Both the 40–60 overall range and a minimum40 standard-five-part practice count are reached **including authored practice**. Only24 of those standard-five-part tasks are original-source.
+- Unchanged: complete Seen pair records26 (not26 distinct underlying works); Unseen15; rearranging30; poem comprehension8; story/episode comprehension8. Seen displayed roles43 / unique strings41 unchanged.
+- Remaining numeric minima: Seen **at least24** (distinct underlying-work requirement may need more), Unseen35, rearranging10, poem32, story/episode32: **at least133 further groups**. No overall completion claimed, no literature episode inflation, and no authored practice relabelled as recovered original stock. School-name filtering remains a separate pending feature; this batch does not fabricate school affiliations to populate it.
+
+Validation: **161/161 focused tests pass**, including **54 bank-model tests**. New coverage checks all 38 unique keys and 102 answers; exact story beginnings and ten-sentence continuations; twelve alternating named dialogue turns; all matching fragments/column permutations; source-free authored provenance; target counts including standard-five-part matching; exclusion from board-year filters; Pending rejection; assembly preservation; and always-visible disclaimers in the print/flow path. `git diff --check` passes. Full TypeScript check still exits2 on existing missing-generated-Prisma/cascading errors; no diagnostics name either new loader. This is not a claim of a passing full project typecheck or a newly rerun whole-repository suite.
+
+## Remaining-practice expansion and approved-school selector (2026-11-10)
+
+Added **45 explicitly authored groups / 290 suggested answers**:
+
+- `ssc-authored-unseen-review.json` / `prepared-ssc-authored-unseen.ts`: **35 distinct original fictional passages**, each with a complete five-blank information table and a separately paraphrased **70–90 word** summary: **210 answers**. Concrete table details are explicitly present in the linked passage. Every passage visibly identifies itself as fictional authored practice, and both task instructions retain authored disclosure. Events, names and quantities are fictional practice data, not exam stock, reported events, source-derived biographies, current statistics or proof of causation. No board/school/PDF/checksum attribution is fabricated.
+- `ssc-authored-rearranging-review.json` / `prepared-ssc-authored-rearranging.ts`: **10 original fictional eight-sentence narratives / 80 position keys**. Each retains its full coherent narrative, exact shuffled sentences, a complete eight-letter key and per-sentence positions. Referential/time dependencies support the intended order; genuinely coherent alternatives remain a teacher-review judgement. No historical or literary attribution invented.
+
+Unseen scenarios cover mobile book access; shaded-route mapping; an audio archive; reusable market baskets; shared study space; oral-history consent; reusable exhibition signs; a clouded sky-observation event; garden access; communication signals; map corrections; practical-training information; festival translation; reading formats; stream observations; repair appointments; shared courtyards; weather records; family food memories; captions; beginner chess; museum loans; temporary collection notices; clothing exchange; a local-history walk; equipment registers; an audio route guide; weather postponement; mural permission; transport signage; plant identification; magazine corrections; intergenerational games; donated computers; and opening-hour consultation. Similar educational themes can appear in other task types, but the passages are distinct cases rather than alternative question sets on one passage. This adds **zero recovered original examinations** and zero new Seen textbook works or attributed literary works.
+
+All new scenarios preserve relevant uncertainty, privacy/permission, study limitations and adult/qualified responsibility. They do not prescribe technical repairs, dangerous collection/handling, medical treatment or guaranteed social/educational outcomes. Unseen passages are deliberately compact SSC-level practice, not certified official examination length or difficulty. Keys and language level still require teacher review.
+
+### School-name filtering implemented — approved stock only
+
+Added `components/english-source-filter.tsx` to **both SSC first-paper builder entry points** (auto-model and selected/full setup):
+- Retains board-year selection and adds an **alternative school-name dropdown**. Selecting a school clears board year; entering a board year clears school. The server rejects mixed board-year/school filters instead of guessing their meaning.
+- `listEnglishBankSchools` requires an authenticated non-student user and SSC grade9/10, then reads the existing paginated **APPROVED**, answer-complete, grade-matched reusable bank. It does not expose draft/Pending review candidates as available school stock. Names are exact source metadata, not a prestige ranking or fabricated affiliation. Duplicate exact names are collapsed; uncertain spelling variants are not silently merged.
+- Only homogeneous reusable atomic groups supply options. A mixed-school Seen group cannot advertise itself as fully belonging to either school. No board-only or source-free authored practice contributes a school option.
+- Assembly applies the school filter to atomic groups, requiring **every task** in a selected group to carry that exact school name. Other schools, boards, unknown sources and authored practice cannot fill gaps. Missing requested items return an explicit school-scoped error without saving a fallback draft or calling AI.
+- Loading, authenticated/empty-stock notices, failure/retry handling, stale-response cancellation, grade changes and busy controls are covered. No approved school candidates currently available means an honest empty option list, not auto-importing or approving review records to populate it.
+
+### Latest cumulative review quantities
+
+**277 groups / 1,468 suggested answers** = **163 original-source groups / 760 answers** + **114 explicitly authored groups / 708 answers**.
+
+| Category | Current review count | Minimum target status |
+|---|---:|---|
+| Complete Seen pair records | 26 | Unfinished; at least24 more numerically, plus distinct-underlying-work audit |
+| Unseen information/summary pairs | **50** | Numeric minimum reached: 15 original-source + 35 authored fictional |
+| Matching | **48** | Numeric range reached; 40 are standard five-part tasks, including authored practice |
+| Rearranging | **40** | Numeric minimum reached: 30 original-source + 10 authored |
+| Poem comprehension groups | 8 | 32 groups short; not a claim of 8 distinct original works |
+| Story/episode comprehension groups | 8 | 32 groups short; several Merchant episodes are still one play |
+| Completing story | **40** | Numeric minimum reached including 7 authored |
+| Dialogue | **40** | Numeric minimum reached including 15 authored |
+
+Five numerical practice-category minima are now reached. **Overall task is NOT complete**: at least **88 further Seen/literature groups** numerically, potentially more to satisfy genuinely distinct complete readings/works. Original-examination quotas are not satisfied by source-independent authored supplements. To fulfil distinct-work literary targets, additional eligible works/source material are needed; recycling the same poem/play with new questions or inventing attributed passages would not satisfy that requirement. School selector implementation is complete, but approval/deployment and approved stock population are separate from implementing the filter.
+
+Validation: **167/167 focused tests pass**, including **60 bank-model tests**. Added coverage of all 35 shared Unseen passages/175 table answers/35 summaries; exact table-answer support; uniqueness; all ten narrative permutations and 80 unchanged sentences; complete minima; no fabricated provenance; source filters; Pending rejection; assembly/print preservation. School regressions test validation before database reads, authentication/grade restriction, approved-only options, de-duplication, mixed-school exclusion, no fallback/save on missing stock, preservation of true metadata, mutually exclusive UI choices, failure/retry, ignored stale responses and empty-stock messaging. Full TypeScript check still exits2 on existing generated-Prisma/cascading errors; no diagnostics name the changed school-filter/action/assembly modules or new loaders. `git diff --check` passes. No production import, automatic approval, push or deployment; preview → explicit consent → Pending → ADMIN review remains mandatory.
+
+## User-approved same-text completion — 2026-11-10
+
+Supersedes the preceding *remaining numerical groups* status, not its distinct-source limitations. The user explicitly selected **additional question sets on the existing SSC works** rather than additional source works. This revised numerical review-bank scope is complete: **365 groups / 2,268 suggested-answer occurrences**. These are not 2,268 unique or newly authored answers.
+
+| Category | Completed review stock |
+|---|---:|
+| Complete Seen pairs | 50 |
+| Unseen information/summary pairs | 50 |
+| Matching | 48 |
+| Rearranging | 40 |
+| Poem comprehension sets | 40 |
+| Story/episode comprehension sets | 40 |
+| Completing story | 40 |
+| Dialogue | 40 |
+
+The additional 88 groups comprise 24 same-text Seen pairs (288 newly worded questions/keys) and 64 same-work literary sets (256 newly worded questions/keys plus 256 explicitly reused foundation occurrences). Each literary set contains four new and four reused questions; JSON records foundation indices and counts, and displayed instructions disclose reuse. All new groups are authored practice, not recovered board/school originals, and retain existing source pages/checksum. Existing Seen passage-role coverage is 67 occurrences / 41 unique exact passage strings; same-text variants do not add distinct readings. The selected literary supplement still covers seven poems and five independent story/play works; three Merchant episodes do not become three plays. The original distinct-reading/work quotas are **not** met or claimed by this scope revision.
+
+Cumulative provenance split: 163 original-source groups / 760 answer occurrences and 202 authored groups / 1,508 answer occurrences. Authored totals include reused foundations and earlier supplements, not a uniqueness claim. All content remains teacher-review stock; no live import, approval, deployment or fabricated school attribution. Preview → explicit consent → Pending → ADMIN review is unchanged. Approved-only school/year filtering and no-fallback behavior remain intact.
+
+Validation: **169/169 focused tests pass**, including **62 bank-model tests**; the new regressions check exact same-text/source-page preservation, option uniqueness/key membership, 24/64 batch sizes and explicit 4+4 reuse. `git diff --check` passes. Full TypeScript check remains blocked by generated-Prisma/cascading errors (exit 2); no diagnostics name either new variant loader. No full-build success is claimed.

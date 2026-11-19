@@ -17,7 +17,7 @@ test('English first paper for all supported classes route to full and topic-wise
  }
 });
 test('Aliases cover SSC/HSC/Bangla English but not Job, Admission or non-English subjects',()=>{
- assert.equal(context('SSC','English 1st Paper').grade,9);assert.equal(context('HSC','English 1st Paper').grade,11);
+ assert.equal(context('SSC','English 1st Paper').grade,10);assert.equal(context('HSC','English 1st Paper').grade,11);
  assert.equal(context('Class 11-12','English For Today').paper,1);assert.equal(context('Class 9-10','ইংরেজি ২য় পত্র').paper,2);
  for(const category of ['Job','Admission','Class 5',''])assert.equal(context(category,'English'),null);
  assert.equal(context('Class 6','গণিত'),null);
@@ -152,3 +152,9 @@ test('Second-paper class differences are preserved rather than copied from first
  const button=item.match(/<button[^>]*class="flex w-full[^>]*>/)?.[0];assert.ok(button);assert.doesNotMatch(button,/ disabled(?:=|[ >])/);
  const root=renderStarter('6','English 2nd Paper','topic','',false,'');const disabled=root.match(/<button[^>]*class="flex w-full[^>]*>/)?.[0];assert.match(disabled,/ disabled(?:=|[ >])/);
 });
+
+ test('Combined SSC first-paper entry uses Class 10 stock without relabelling explicit Class 9',()=>{
+ for(const alias of ['SSC','এসএসসি','Class 9-10'])assert.equal(context(alias,'English For Today').grade,10);
+ assert.equal(context('Class 9','English 1st Paper').grade,9);
+ assert.equal(context('SSC','English Grammar and Composition').grade,9);
+ });

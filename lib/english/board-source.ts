@@ -17,11 +17,15 @@ export const englishBoardSourceSchema = z.object({
 export type EnglishBoardSource = z.infer<typeof englishBoardSourceSchema>;
 export const englishBoardFilterSchema = z.object({
   examYear: z.number().int().min(1990).max(2100).optional(),
-}).strict();
+  school: z.string().trim().min(1).max(200).optional(),
+}).strict().refine(filter => filter.examYear === undefined || filter.school === undefined,
+  "Choose either a board year or a school, not both.");
 export type EnglishBoardFilter = z.infer<typeof englishBoardFilterSchema>;
 
 export function englishBoardLabel(source: EnglishBoardSource) {
-  return `${source.board} Board ${source.examYear} · Q${source.questionNumber}${source.selectedParts ? ` · নির্বাচিত অংশ: ${source.selectedParts.join(",")} (মূল ${source.originalSubitemCount}টি থেকে)` : ""}`;
+  const parts = source.selectedParts;
+  const complete = parts && parts.length === source.originalSubitemCount;
+  return `${source.board} Board ${source.examYear} · Q${source.questionNumber}${complete ? ` · মূল ${source.originalSubitemCount}টি অংশ অক্ষুণ্ণ` : parts ? ` · নির্বাচিত অংশ: ${parts.join(",")} (মূল ${source.originalSubitemCount}টি থেকে)` : ""}`;
 }
 
 /** School examinations are not board examinations or compilation target years. */

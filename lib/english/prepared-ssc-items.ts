@@ -1,3 +1,13 @@
+import { preparedSSCLiteratureVariantItems } from "./prepared-ssc-literature-variants";
+import { preparedSSCSeenVariantItems } from "./prepared-ssc-seen-variants";
+import { preparedSSCAuthoredUnseenItems } from "./prepared-ssc-authored-unseen";
+import { preparedSSCAuthoredRearrangingItems } from "./prepared-ssc-authored-rearranging";
+import { preparedSSCAuthoredMatchingItems } from "./prepared-ssc-authored-matching";
+import { preparedSSCAuthoredWritingItems } from "./prepared-ssc-authored-writing";
+import { preparedSSCIntactTableItems } from "./prepared-ssc-intact-tables";
+import { preparedSSCAuthoredReadingItems } from "./prepared-ssc-authored-reading";
+import { preparedSSCSchoolSeenPairItems } from "./prepared-ssc-school-seen-pairs";
+import { preparedSSCSchoolAdditionalItems } from "./prepared-ssc-school-additional";
 import { preparedSSCTextbookLiteratureItems } from "./prepared-ssc-textbook-literature";
 import { preparedSSCTextbookSeenItems } from "./prepared-ssc-textbook-seen";
 import { preparedRajshahiItems } from "./prepared-ssc-rajshahi";
@@ -60,6 +70,16 @@ export function preparedSSCEnglishItems() {
     ...preparedSSCSchoolItems(),
     ...preparedSSCSchoolReadingItems(),
     ...preparedSSCSchoolExerciseItems(),
+    ...preparedSSCSchoolAdditionalItems(),
+    ...preparedSSCIntactTableItems(),
+    ...preparedSSCAuthoredWritingItems(),
+    ...preparedSSCAuthoredMatchingItems(),
+    ...preparedSSCAuthoredUnseenItems(),
+    ...preparedSSCAuthoredRearrangingItems(),
+    ...preparedSSCLiteratureVariantItems(),
+    ...preparedSSCSeenVariantItems(),
+    ...preparedSSCAuthoredReadingItems(),
+    ...preparedSSCSchoolSeenPairItems(),
     ...more.items.flatMap(entry => prepare(entry.group, entry.tasks.map(t => t.id), entry.tasks.map(task => {
       const { sourceQuestion, sourceMarks, pdfPage, ...content } = task;
       return { ...content, ...(entry.passage ? { passageKey: entry.group } : {}), boardSource: source(sourceQuestion, pdfPage, sourceMarks) };

@@ -143,5 +143,9 @@ export function englishSubjectRoute(category: string, subject: string) {
           : NaN;
   if (!Number.isInteger(grade) || grade < 6 || grade > 12) return null;
   const paper = /2|২|second|grammar|ব্যাকরণ|\bii\b/i.test(subject) ? 2 : 1;
-  return `/question-builder/english?grade=${grade}&paper=${paper}`;
+  // The combined SSC first-paper entry uses the reviewed Class 10 registry.
+  // Explicit Class 9 links remain grade-specific; never silently mix bank stock.
+  const combinedSSC = /^(?:class\s*)?9\s*-\s*10$|^ssc$|^এসএসসি$/.test(normalized);
+  const targetGrade = combinedSSC && paper === 1 ? 10 : grade;
+  return `/question-builder/english?grade=${targetGrade}&paper=${paper}`;
 }

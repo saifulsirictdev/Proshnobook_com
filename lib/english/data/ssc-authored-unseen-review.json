@@ -1,0 +1,2499 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "questionOrigin": "assistant-authored-practice",
+  "sourceKind": "original-authored-fictional-unseen-practice",
+  "notes": [
+    "Thirty-five distinct newly authored fictional reading passages with complete five-blank information tables and illustrative 70–90 word summaries, 210 suggested answers. These are NOT recovered board/school questions, official exercises, real-event reports, biographies or official answer keys. All people, organisations, events and numbers in the scenarios are invented for practice; no examination provenance, PDF or checksum fabricated.",
+    "Every table contains all five original authored blanks i–v, with labels tied to concrete details stated in its own passage. Summary and information tasks share the exact same unseen passage. The table headings describe aspects of each account rather than falsely attributing this format to a board. Summary answers paraphrase the passage and preserve its important qualifications.",
+    "Passages are distinct scenario-based practice, not variants of one text, alternative question sets on a single excerpt or additional original literary works. Some themes recur across different exercise types in the broader authored supplement. Do not count these as recovered original stock or as newly recovered Seen textbook lessons.",
+    "Health, accessibility, safety, privacy, technical maintenance, cultural interpretation and environmental statements are general reading material, not professional instructions or guaranteed outcomes. Fictional counts do not establish population statistics or causal findings. Uncertainty, permission, qualified/adult responsibility and study limitations are preserved.",
+    "Authored fictional status appears visibly in each passage and authored status in both instructions and draft name. No boardSource, schoolSource or sourceFile assigned. Board/school filters must exclude these records. All keys require teacher review. Preview -> explicit consent -> Pending -> ADMIN review only; no production import or approval."
+  ],
+  "items": [
+    {
+      "group": "unseen",
+      "topic": "The travelling book trunk",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nWhen a bridge closed for repairs, pupils in a fictional riverside neighbourhood could no longer reach their usual reading room. Volunteer Laila proposed a travelling book trunk rather than another permanent building. The first trunk contained forty books and arrived at the community courtyard every Tuesday. A shopkeeper provided a dry cupboard between visits. Borrowers received simple cards showing the return date, but their addresses were not displayed publicly. After six weeks, Laila discovered that younger readers wanted more illustrated stories. She asked them to help choose the next selection. The project did not replace the reading room; it offered a temporary way to keep books circulating while access was difficult.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Project proposer",
+                "(i) ——"
+              ],
+              [
+                "Initial number of books",
+                "(ii) ——"
+              ],
+              [
+                "Regular visiting day",
+                "(iii) ——"
+              ],
+              [
+                "Place of weekly visits",
+                "(iv) ——"
+              ],
+              [
+                "Time before the first review",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Laila"
+            },
+            {
+              "text": "(ii)",
+              "answer": "forty"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Tuesday"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the community courtyard"
+            },
+            {
+              "text": "(v)",
+              "answer": "six weeks"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A temporary book service helped children whose journey to a reading room was interrupted by bridge repairs. Laila organised a trunk of books, arranged secure storage and used borrowing cards without publicly exposing personal addresses. Regular visits maintained access, while a review revealed demand for illustrated stories. Children then helped select new material. The account shows how a small, adaptable service can respond to a specific access problem without pretending to replace a permanent library."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "Mapping shaded walking routes",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nIn a fictional town, a geography club compared two walking routes between a bus stop and a learning centre. Hasan coordinated twelve volunteers, who worked with adult supervision on Saturday morning. They recorded shade at ten agreed observation points without entering private property. The riverside route had more shade but also an uneven section that some walkers could not use easily. Instead of declaring one route best for everyone, the club prepared a map explaining both advantages and barriers. The map went on the noticeboard inside the learning centre. Before publishing an updated version, the students invited users to correct mistakes. They described their observations as a short study, not a complete accessibility assessment.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Volunteer coordinator",
+                "(i) ——"
+              ],
+              [
+                "Number of volunteers",
+                "(ii) ——"
+              ],
+              [
+                "Observation time",
+                "(iii) ——"
+              ],
+              [
+                "Number of observation points",
+                "(iv) ——"
+              ],
+              [
+                "Location of the published map",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Hasan"
+            },
+            {
+              "text": "(ii)",
+              "answer": "twelve"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Saturday morning"
+            },
+            {
+              "text": "(iv)",
+              "answer": "ten"
+            },
+            {
+              "text": "(v)",
+              "answer": "the noticeboard inside the learning centre"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A supervised geography project examined shade and practical barriers on two routes to a learning centre. Hasan’s team gathered observations, discovering that the shadier option also had an uneven section. Their map therefore described trade-offs instead of recommending one route universally. Displaying it locally allowed users to suggest corrections. The students acknowledged the limited scope of their work, showing that useful information should explain its limitations and consider different people’s needs."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "Repairing a school radio archive",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nThe fictional Hill Lane learning centre owned recordings of former pupils describing school life. Several recordings had become difficult to identify because their paper labels were missing. Coordinator Muna organised an archive session in August. Six volunteers listened to copies, not the fragile original tapes, and compared them with an old programme list. They identified eighteen speakers with reasonable confidence. For uncertain voices, the catalogue said identity unconfirmed rather than guessing a name. Before any recording was shared beyond the centre, Muna checked whether permission covered that use. A retired teacher supplied useful context but did not overrule contradictory records. The resulting catalogue made the collection easier to explore while keeping uncertainty visible.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Session coordinator",
+                "(i) ——"
+              ],
+              [
+                "Month of the session",
+                "(ii) ——"
+              ],
+              [
+                "Number of volunteers",
+                "(iii) ——"
+              ],
+              [
+                "Speakers confidently identified",
+                "(iv) ——"
+              ],
+              [
+                "Catalogue wording for uncertain voices",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Muna"
+            },
+            {
+              "text": "(ii)",
+              "answer": "August"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Six"
+            },
+            {
+              "text": "(iv)",
+              "answer": "eighteen"
+            },
+            {
+              "text": "(v)",
+              "answer": "identity unconfirmed"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "An archive project improved access to old school recordings whose labels had disappeared. Volunteers worked from copies and compared evidence to identify speakers, while uncertain identities remained explicitly unresolved. Muna also checked permission before wider sharing. A former teacher’s memories helped interpretation but were considered alongside documentary records. The project demonstrates that organising a collection involves protecting fragile material, respecting usage conditions and distinguishing reliable findings from attractive but unsupported guesses."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A market basket trial",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nAt a fictional weekend market, vendor Reza tested a basket-lending scheme to reduce disposable packaging. He began with twenty numbered baskets and asked customers to return them before the following market day. A refundable deposit helped track loans, but Reza kept the amount affordable after discussing it with regular shoppers. The trial lasted four weeks. During this period, two baskets needed repair and none was recorded as permanently missing. This result did not prove the system would work everywhere. Some customers could not carry a heavy basket, so lighter alternatives remained available. Reza recorded cleaning and repair time as well as the number of loans. His final decision considered convenience and hidden labour, not merely the attractive appearance of reusable packaging.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Vendor running the trial",
+                "(i) ——"
+              ],
+              [
+                "Initial basket stock",
+                "(ii) ——"
+              ],
+              [
+                "Basket identification method",
+                "(iii) ——"
+              ],
+              [
+                "Trial duration",
+                "(iv) ——"
+              ],
+              [
+                "Baskets needing repair",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Reza"
+            },
+            {
+              "text": "(ii)",
+              "answer": "twenty"
+            },
+            {
+              "text": "(iii)",
+              "answer": "numbered baskets"
+            },
+            {
+              "text": "(iv)",
+              "answer": "four weeks"
+            },
+            {
+              "text": "(v)",
+              "answer": "two"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "Reza tested reusable lending baskets at a local market, combining numbered stock with an affordable refundable deposit. His records included repairs and the labour needed for cleaning, not only successful loans. Lighter options remained necessary for customers who could not carry heavy baskets. Although the short trial recorded no permanent losses, it did not establish universal success. The account presents reuse as a practical service that must consider access, maintenance and convenience."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The quiet study hour",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional youth centre received complaints that its shared room was too noisy for homework. Rather than ban every activity, organiser Rumi consulted readers, musicians and parents. They agreed to reserve Wednesday from four to five for quiet study. Music practice moved to a separate room when it was available, and a printed schedule explained the arrangement. After three weeks, attendance at the quiet hour had risen from eight to fifteen. Rumi did not assume the schedule alone caused the increase; an approaching examination might also have mattered. A suggestion box allowed users who disliked public meetings to respond privately. The centre planned another review before treating the new timetable as permanent.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Organiser",
+                "(i) ——"
+              ],
+              [
+                "Day reserved for quiet study",
+                "(ii) ——"
+              ],
+              [
+                "Quiet-study time",
+                "(iii) ——"
+              ],
+              [
+                "Initial attendance",
+                "(iv) ——"
+              ],
+              [
+                "Attendance after three weeks",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Rumi"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Wednesday"
+            },
+            {
+              "text": "(iii)",
+              "answer": "four to five"
+            },
+            {
+              "text": "(iv)",
+              "answer": "eight"
+            },
+            {
+              "text": "(v)",
+              "answer": "fifteen"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A youth centre negotiated a quiet study period while preserving other uses of its shared space. Rumi consulted different users, published a timetable and offered a private way to comment. Attendance increased during the trial, but an approaching examination provided another possible explanation. A further review was therefore planned. The passage illustrates how a shared facility can balance competing needs through consultation, clear arrangements and cautious interpretation rather than assuming an immediate change proves success."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "Recording an oral-history interview",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nFor a fictional local-history project, student Nira interviewed a retired ferry worker named Karim. The meeting took place in the public reading room on 12 March. With her teacher present, Nira explained the project and asked permission before recording. Karim agreed that a short extract could be played in class but did not consent to public online publication. He described a flood from his youth, although he could not remember its exact year. Nira wrote approximate date unknown in her notes. Later, she compared the account with available newspapers rather than inventing a precise date. Karim received a copy of the selected extract and could check whether it represented his account fairly.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Student interviewer",
+                "(i) ——"
+              ],
+              [
+                "Interviewee’s former occupation",
+                "(ii) ——"
+              ],
+              [
+                "Meeting venue",
+                "(iii) ——"
+              ],
+              [
+                "Interview date",
+                "(iv) ——"
+              ],
+              [
+                "Permitted audience for the extract",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Nira"
+            },
+            {
+              "text": "(ii)",
+              "answer": "ferry worker"
+            },
+            {
+              "text": "(iii)",
+              "answer": "the public reading room"
+            },
+            {
+              "text": "(iv)",
+              "answer": "12 March"
+            },
+            {
+              "text": "(v)",
+              "answer": "in class"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "Nira’s history interview combined respectful listening with careful limits on recording and publication. Karim permitted classroom use of an extract, not unrestricted online sharing. Uncertainty about the date of his memory remained in the notes while Nira looked for independent evidence. Giving him the chosen extract also allowed a check on fair representation. The project shows that a valuable personal account can be preserved without ignoring consent or turning uncertain recollection into precise historical fact."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The returnable exhibition signs",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional art group once printed new direction signs for every exhibition. Its coordinator, Parul, proposed a reusable system for the next event in October. The group made sixteen sturdy sign holders, while removable paper inserts carried dates and room names. Visitors tested the arrows before opening day and found that two signs pointed towards a closed doorway. The team corrected the route immediately. After the exhibition, volunteers collected the holders in a labelled storage box. They recorded damage rather than claiming that reusability meant an object would last forever. For the next exhibition, most holders could be used again, but the directions still required checking because the room arrangement had changed.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Coordinator",
+                "(i) ——"
+              ],
+              [
+                "Month of the next event",
+                "(ii) ——"
+              ],
+              [
+                "Sign holders made",
+                "(iii) ——"
+              ],
+              [
+                "Signs initially pointing to a closed doorway",
+                "(iv) ——"
+              ],
+              [
+                "Storage method after the event",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Parul"
+            },
+            {
+              "text": "(ii)",
+              "answer": "October"
+            },
+            {
+              "text": "(iii)",
+              "answer": "sixteen"
+            },
+            {
+              "text": "(iv)",
+              "answer": "two"
+            },
+            {
+              "text": "(v)",
+              "answer": "a labelled storage box"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "An art group reduced repeated printing by using durable sign holders with replaceable information. Visitor testing exposed incorrect directions before the exhibition opened. Collecting and inspecting the holders afterwards supported reuse, but changed room layouts still required fresh checks. The account distinguishes reusable equipment from permanently correct information. It suggests that saving materials works best when storage, maintenance and users’ actual navigation needs are included in the plan rather than overlooked."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A shared telescope evening",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nIn a fictional village, science teacher Shafi arranged an evening of sky observation at the community field. The event began at seven on 18 January, with thirty registered visitors. A trained adult operated the telescope while others waited in a marked area. Clouds soon obscured the planned target. Instead of claiming that everyone had seen it, Shafi explained the conditions and used a printed star chart to discuss how observations are planned. The group agreed to announce another session only after checking suitable arrangements. Children remained with their accompanying adults throughout. The event was not regarded as worthless simply because the original target was hidden; participants learnt why observation records must include unsuccessful attempts and weather conditions.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Teacher arranging the event",
+                "(i) ——"
+              ],
+              [
+                "Venue",
+                "(ii) ——"
+              ],
+              [
+                "Starting time",
+                "(iii) ——"
+              ],
+              [
+                "Event date",
+                "(iv) ——"
+              ],
+              [
+                "Registered visitors",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Shafi"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the community field"
+            },
+            {
+              "text": "(iii)",
+              "answer": "seven"
+            },
+            {
+              "text": "(iv)",
+              "answer": "18 January"
+            },
+            {
+              "text": "(v)",
+              "answer": "thirty"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A supervised sky-observation event encountered clouds that hid its intended target. Shafi acknowledged the limitation instead of inventing a successful sighting. A printed chart supported discussion, and any future session would require fresh planning. Safe telescope operation and adult accompaniment remained important despite the change of activity. The account explains that learning can continue after an unsuccessful observation, particularly when organisers record conditions honestly and distinguish direct evidence from an illustration."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "An accessible garden path review",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nThe committee of a fictional community garden wanted to know whether visitors could move comfortably between its entrance and seating area. Safa coordinated a review with five users who had different access needs. They met on 9 April and examined the existing route without entering the work area. Loose gravel, a narrow turn and poor signs were recorded separately. The committee did not assume one person could speak for everybody. It asked a qualified adviser to consider changes and costs before any construction began. Safa published a plain-language list of proposed improvements in the garden office. The review established priorities, but it was not presented as proof that the entire garden was already accessible.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Review coordinator",
+                "(i) ——"
+              ],
+              [
+                "Participating users",
+                "(ii) ——"
+              ],
+              [
+                "Meeting date",
+                "(iii) ——"
+              ],
+              [
+                "Loose surface material noted",
+                "(iv) ——"
+              ],
+              [
+                "Place where proposals were displayed",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Safa"
+            },
+            {
+              "text": "(ii)",
+              "answer": "five"
+            },
+            {
+              "text": "(iii)",
+              "answer": "9 April"
+            },
+            {
+              "text": "(iv)",
+              "answer": "gravel"
+            },
+            {
+              "text": "(v)",
+              "answer": "the garden office"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A community garden consulted users with different access needs before planning changes to a route. Safa’s group recorded physical and information barriers, then referred possible improvements for qualified advice. Publishing proposals in clear language supported further discussion. The review did not claim universal representation or completed accessibility. Its value lay in identifying priorities through users’ experiences while recognising that design decisions, costs and wider access questions still required careful work."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The measured school bell",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nAt a fictional learning centre, some rooms could not hear the bell clearly while nearby rooms found it distracting. Teacher Iqbal asked students to describe their experiences before proposing changes. Four classrooms took part in an observation exercise lasting two days. Students wrote down whether they noticed the bell during ordinary lessons; they did not use the exercise to diagnose hearing conditions. The records suggested that Room Three had the greatest communication difficulty. The centre consulted an appropriate technician about a visual signal and checked the idea with users. Iqbal retained written timetable notices in the meantime. He explained that a small classroom survey could reveal a practical problem but could not establish that every learner’s needs had been met.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Teacher leading the exercise",
+                "(i) ——"
+              ],
+              [
+                "Classrooms participating",
+                "(ii) ——"
+              ],
+              [
+                "Observation duration",
+                "(iii) ——"
+              ],
+              [
+                "Room with greatest reported difficulty",
+                "(iv) ——"
+              ],
+              [
+                "Additional signal proposed",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Iqbal"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Four"
+            },
+            {
+              "text": "(iii)",
+              "answer": "two days"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Room Three"
+            },
+            {
+              "text": "(v)",
+              "answer": "a visual signal"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A learning centre investigated inconsistent access to its bell through a short classroom observation exercise. Iqbal listened to users and identified a room needing further attention, without treating the records as a medical assessment. A visual signal was considered with technical advice, while written timetables remained available. The account emphasises that noticing a communication barrier is only a starting point: a small survey cannot prove that a solution meets every person’s needs."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The community map correction",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional neighbourhood association printed a map showing useful public facilities. After publication, a resident noticed that the clinic symbol appeared on the wrong side of the canal. Editor Dipa checked the location with the clinic staff and confirmed the error. Fifty paper copies had already been distributed. The association placed a correction at the community office and contacted the groups that had received the copies. It also replaced the digital version with a clearly dated revision. Dipa kept a short change log so readers could identify which edition they held. The committee accepted responsibility rather than blaming the resident for pointing out the problem. Future maps would be checked by two people before release.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Map editor",
+                "(i) ——"
+              ],
+              [
+                "Facility shown incorrectly",
+                "(ii) ——"
+              ],
+              [
+                "Copies already distributed",
+                "(iii) ——"
+              ],
+              [
+                "Place displaying the correction",
+                "(iv) ——"
+              ],
+              [
+                "People required to check future maps",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Dipa"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the clinic"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Fifty"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the community office"
+            },
+            {
+              "text": "(v)",
+              "answer": "two"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A neighbourhood map contained an error that could mislead readers about a clinic’s location. Dipa verified the report, issued a visible correction and helped earlier recipients receive it. A dated digital revision and change log made editions easier to distinguish. The association also introduced a second check before future publication. The passage presents correction as a responsibility to users, showing that acknowledging an error openly is more useful than defending an inaccurate document."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The practical-skills open day",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional training centre invited families to an open day on 16 June. Coordinator Akash arranged three supervised demonstrations: furniture repair, textile design and basic equipment inspection. Visitors could ask about course recognition, costs and safety requirements. They were not allowed to operate unfamiliar powered tools. One advertisement had promised immediate employment after every course. During the discussion, Akash explained that completion did not guarantee a job and asked staff to remove the claim. A written fee sheet also identified costs beyond tuition. Families left with questions to compare across providers rather than pressure to enrol immediately. The event aimed to support informed choices, including the option to select a different study route.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Open-day date",
+                "(i) ——"
+              ],
+              [
+                "Coordinator",
+                "(ii) ——"
+              ],
+              [
+                "Number of demonstrations",
+                "(iii) ——"
+              ],
+              [
+                "One demonstration involving fabric",
+                "(iv) ——"
+              ],
+              [
+                "Document explaining costs",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "16 June"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Akash"
+            },
+            {
+              "text": "(iii)",
+              "answer": "three"
+            },
+            {
+              "text": "(iv)",
+              "answer": "textile design"
+            },
+            {
+              "text": "(v)",
+              "answer": "A written fee sheet"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A training-centre open day gave families a chance to compare practical courses, recognition, costs and safety arrangements. Supervised demonstrations did not authorise visitors to use unfamiliar equipment. Akash also corrected an unrealistic employment promise and clarified additional fees. The event encouraged questions rather than immediate enrolment. Its central lesson is that choosing training requires clear, verifiable information and freedom to consider alternatives, not confidence based solely on attractive advertising or demonstrations."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A festival translation desk",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nAt a fictional community arts festival, visitors sometimes misunderstood the signs for activities and facilities. Coordinator Leena organised a translation desk beside the entrance. Eight volunteers worked in pairs, checking meaning rather than translating every expression literally. The first session began on 5 September. A performer explained that one phrase had a cultural meaning absent from the draft translation. The team added a short explanation after consulting her. Important directions were checked by festival staff before display. Volunteers did not collect visitors’ identity documents to answer language questions. Leena described the desk as a modest local service, not proof that every language or access need at the festival had been covered.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Desk coordinator",
+                "(i) ——"
+              ],
+              [
+                "Desk location",
+                "(ii) ——"
+              ],
+              [
+                "Volunteer total",
+                "(iii) ——"
+              ],
+              [
+                "Working arrangement",
+                "(iv) ——"
+              ],
+              [
+                "First session date",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Leena"
+            },
+            {
+              "text": "(ii)",
+              "answer": "beside the entrance"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Eight"
+            },
+            {
+              "text": "(iv)",
+              "answer": "in pairs"
+            },
+            {
+              "text": "(v)",
+              "answer": "5 September"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A translation desk helped festival visitors understand directions and activities. Volunteers checked meaning together, consulted a performer about cultural context and obtained staff checks for important signs. They offered help without demanding unnecessary identity documents. Leena acknowledged that the small service could not cover every language or access requirement. The account highlights collaborative interpretation: useful translation sometimes needs explanation and consultation rather than a mechanical exchange of words between languages."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The library’s large-print shelf",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional reading room received requests for books with larger print. Librarian Bina first asked readers which formats they preferred instead of assuming that all reading difficulties were alike. A local grant paid for twenty-four large-print books in November. The books were placed on an easy-to-reach shelf, with catalogue records explaining the format. Some readers preferred audio material, which required a separate plan. After two months, Bina reviewed loans and invited comments from people who had not borrowed anything. Low borrowing might indicate an unsuitable selection rather than a lack of interest. The review encouraged the reading room to consider format, subject and practical access together.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Librarian",
+                "(i) ——"
+              ],
+              [
+                "Large-print books acquired",
+                "(ii) ——"
+              ],
+              [
+                "Purchase month",
+                "(iii) ——"
+              ],
+              [
+                "First review interval",
+                "(iv) ——"
+              ],
+              [
+                "Other format requested",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Bina"
+            },
+            {
+              "text": "(ii)",
+              "answer": "twenty-four"
+            },
+            {
+              "text": "(iii)",
+              "answer": "November"
+            },
+            {
+              "text": "(iv)",
+              "answer": "two months"
+            },
+            {
+              "text": "(v)",
+              "answer": "audio material"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A reading room expanded its formats after consulting readers about their needs. Bina introduced a large-print collection with accessible shelving and clear catalogue information, while recognising separate demand for audio material. The review included people who had not borrowed books, since loan numbers alone could hide an unsuitable selection. The account shows that providing access involves listening, choosing relevant material and examining practical barriers instead of treating one new shelf as a complete solution."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A supervised stream notebook",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional environment club kept a notebook about a nearby stream. Teacher Kabir chose a safe observation point on public land and accompanied ten students on three visits. The students recorded visible litter and recent rainfall without entering the water or collecting unknown substances. The second visit followed heavy rain and showed more floating debris. Kabir warned that this small record could not identify every source of pollution or establish water safety. The club sent its observations to the responsible local office and requested advice. It did not accuse a particular household without evidence. The notebook was valuable because its limits, location and observation dates were recorded alongside the findings.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Supervising teacher",
+                "(i) ——"
+              ],
+              [
+                "Students participating",
+                "(ii) ——"
+              ],
+              [
+                "Visits made",
+                "(iii) ——"
+              ],
+              [
+                "Visit following heavy rain",
+                "(iv) ——"
+              ],
+              [
+                "Where observations were sent",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Kabir"
+            },
+            {
+              "text": "(ii)",
+              "answer": "ten"
+            },
+            {
+              "text": "(iii)",
+              "answer": "three"
+            },
+            {
+              "text": "(iv)",
+              "answer": "The second visit"
+            },
+            {
+              "text": "(v)",
+              "answer": "the responsible local office"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A supervised club recorded visible conditions at a stream from a safe public location. More debris after rain prompted questions but did not justify claims about all pollution sources or water safety. Kabir stressed the study’s limitations, and the group reported observations through a responsible channel instead of accusing residents. The account presents careful environmental recording as a basis for seeking advice, with context and uncertainty preserved alongside what students actually saw."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The repair café appointment book",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional neighbourhood repair café opened once a month at a community workshop. Organiser Faria accepted appointments for simple items that trained volunteers could assess safely. In the first session, visitors brought fourteen objects, including bags, chairs and lamps. Volunteers declined three jobs because suitable expertise or equipment was unavailable. No child was asked to handle electrical components. Faria recorded whether each item was repaired, referred elsewhere or left unchanged. She also noted the owner’s agreement before any work began. The appointment book did not promise that everything could be rescued. It helped the organisers plan skills, tools and time more honestly for the next session.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Organiser",
+                "(i) ——"
+              ],
+              [
+                "Venue",
+                "(ii) ——"
+              ],
+              [
+                "Opening frequency",
+                "(iii) ——"
+              ],
+              [
+                "Objects brought to the first session",
+                "(iv) ——"
+              ],
+              [
+                "Jobs declined",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Faria"
+            },
+            {
+              "text": "(ii)",
+              "answer": "a community workshop"
+            },
+            {
+              "text": "(iii)",
+              "answer": "once a month"
+            },
+            {
+              "text": "(iv)",
+              "answer": "fourteen"
+            },
+            {
+              "text": "(v)",
+              "answer": "three"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A neighbourhood repair café used appointments to match visitors’ items with volunteers’ actual abilities. Faria recorded outcomes and obtained owners’ agreement, while unsuitable jobs were declined rather than attempted dangerously. The range of objects required different skills, and children were kept away from electrical work. The appointment book supported realistic future planning. The passage suggests that responsible repair services acknowledge their limits instead of claiming that enthusiasm alone can make every object usable again."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The shared courtyard timetable",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nTwo fictional community groups wanted the same courtyard on Friday afternoon. A children’s drama group needed rehearsal space, while older residents wanted a meeting. Mediator Salma invited both groups to explain their requirements. They agreed that the meeting would begin at two and the rehearsal at four, with time between them to rearrange chairs. The timetable was displayed beside the courtyard gate. After the first week, residents reported that moving furniture took longer than expected. Salma arranged a review instead of declaring the compromise permanent. The groups adjusted their responsibilities for setting up and clearing away. Neither group obtained everything it first requested, but both gained a clearer, more workable arrangement.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Mediator",
+                "(i) ——"
+              ],
+              [
+                "Day of the shared bookings",
+                "(ii) ——"
+              ],
+              [
+                "Meeting starting time",
+                "(iii) ——"
+              ],
+              [
+                "Rehearsal starting time",
+                "(iv) ——"
+              ],
+              [
+                "Timetable display point",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Salma"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Friday"
+            },
+            {
+              "text": "(iii)",
+              "answer": "two"
+            },
+            {
+              "text": "(iv)",
+              "answer": "four"
+            },
+            {
+              "text": "(v)",
+              "answer": "beside the courtyard gate"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A disagreement over a community courtyard was addressed by listening to both groups and negotiating separate periods of use. Salma helped publish a schedule, but experience revealed that furniture changes needed more time. A review clarified responsibilities rather than treating the first compromise as final. The account shows that shared-space agreements may require adjustment. Fairness involves workable arrangements and continued discussion, not an assumption that one group’s needs should automatically override another’s."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A weather diary without forecasts",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nIn a fictional class, teacher Noman asked pupils to keep a weather diary for ten school days. They made observations at nine each morning from a sheltered, approved location. The diary included cloud cover and whether rain was visible. It did not require pupils to go outside during dangerous weather. At the end, the class compared differences between observations rather than inventing missing entries. One pupil’s diary lacked a day because of absence, and that gap remained labelled. Noman explained that a short diary could describe the recorded period but could not establish a long-term climate trend or produce reliable warnings. Pupils learnt to separate everyday observations from broader scientific claims.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Teacher",
+                "(i) ——"
+              ],
+              [
+                "Diary duration",
+                "(ii) ——"
+              ],
+              [
+                "Daily observation time",
+                "(iii) ——"
+              ],
+              [
+                "Observation place",
+                "(iv) ——"
+              ],
+              [
+                "Reason for one missing day",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Noman"
+            },
+            {
+              "text": "(ii)",
+              "answer": "ten school days"
+            },
+            {
+              "text": "(iii)",
+              "answer": "nine each morning"
+            },
+            {
+              "text": "(iv)",
+              "answer": "a sheltered, approved location"
+            },
+            {
+              "text": "(v)",
+              "answer": "absence"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A short classroom weather diary taught pupils to record observations consistently and safely. Missing information stayed visible rather than being invented. Comparing the diaries supported discussion of what had actually been seen, but Noman explained that the exercise could not establish climate trends or reliable warnings. The passage distinguishes a limited observational record from larger scientific conclusions, showing why both the period covered and the gaps in evidence matter when interpreting information."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The bilingual recipe exhibition",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional cultural club invited families to contribute food memories for an exhibition, not to prepare food for sale. Editor Jamil collected twelve short accounts in May. Contributors chose whether their names would appear. Volunteers translated the accounts into a second language, then returned drafts to the contributors for checking. One family explained that its recipe varied between households, so the display avoided calling it the only authentic version. The exhibition opened in the community gallery with photographs used by permission. Jamil kept the original wording alongside the translation where contributors agreed. The project celebrated differences within a tradition rather than reducing everyone’s experience to one supposedly perfect account.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Editor",
+                "(i) ——"
+              ],
+              [
+                "Accounts collected",
+                "(ii) ——"
+              ],
+              [
+                "Collection month",
+                "(iii) ——"
+              ],
+              [
+                "Who checked translated drafts",
+                "(iv) ——"
+              ],
+              [
+                "Exhibition venue",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Jamil"
+            },
+            {
+              "text": "(ii)",
+              "answer": "twelve"
+            },
+            {
+              "text": "(iii)",
+              "answer": "May"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the contributors"
+            },
+            {
+              "text": "(v)",
+              "answer": "the community gallery"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A cultural exhibition presented family food memories through contributor-approved accounts and translations. Participants controlled whether their names appeared, and photographs required permission. Jamil’s team preserved variation instead of promoting one household’s recipe as uniquely authentic. Returning translated drafts helped contributors check how their experiences were represented. The project therefore treated cultural heritage as diverse and participatory, combining celebration with careful editing rather than assuming a tradition has only one voice or form."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A cinema club caption review",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional film club wanted its short student productions to be easier to follow. Adviser Roksana arranged a caption review on 22 July. Four reviewers checked a film lasting ten minutes using the script and the actual soundtrack. They found that the first captions omitted an important sound occurring outside the picture. The revised captions described that sound as well as the dialogue. Reviewers also checked timing and readability. Before sharing the film, the club confirmed permission from the people involved. Roksana explained that captions were one access feature, not proof that every viewer’s needs had been met. Comments on the revised version would guide later productions.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Club adviser",
+                "(i) ——"
+              ],
+              [
+                "Review date",
+                "(ii) ——"
+              ],
+              [
+                "Number of reviewers",
+                "(iii) ——"
+              ],
+              [
+                "Film length",
+                "(iv) ——"
+              ],
+              [
+                "Important omitted feature",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Roksana"
+            },
+            {
+              "text": "(ii)",
+              "answer": "22 July"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Four"
+            },
+            {
+              "text": "(iv)",
+              "answer": "ten minutes"
+            },
+            {
+              "text": "(v)",
+              "answer": "an important sound occurring outside the picture"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A student film club reviewed captions to improve access to a short production. Reviewers compared the script with the soundtrack and added a meaningful off-screen sound omitted from the first version. Timing, readability and permission for wider sharing also received attention. Roksana acknowledged that captions could not answer every access need. The account presents accessibility as a process of checking and improvement, informed by feedback rather than guaranteed by a single added feature."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The community chess table",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional youth organisation introduced an outdoor chess table beside its activity hall. Coordinator Babul invited beginners as well as experienced players to the first Saturday session. Eighteen people attended, and volunteers paired learners with patient partners rather than arranging a tournament immediately. When rain arrived, the group used the hall with permission. The organisation kept a sign-up sheet for planning but did not publish private contact details. After a month, beginners requested a short explanation of basic rules before each session. Babul adopted the suggestion. Success was discussed in terms of participation and enjoyment, not a claim that chess automatically improved every school subject.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Coordinator",
+                "(i) ——"
+              ],
+              [
+                "Table location",
+                "(ii) ——"
+              ],
+              [
+                "Regular session day",
+                "(iii) ——"
+              ],
+              [
+                "First-session attendance",
+                "(iv) ——"
+              ],
+              [
+                "Time before beginners requested an introduction",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Babul"
+            },
+            {
+              "text": "(ii)",
+              "answer": "beside its activity hall"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Saturday"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Eighteen"
+            },
+            {
+              "text": "(v)",
+              "answer": "a month"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A youth organisation created a chess activity that welcomed beginners instead of focusing immediately on competition. Volunteers supported learners, used an approved indoor alternative during rain and protected sign-up information. Feedback led Babul to include a short introduction to the rules. The group judged the activity through participation and enjoyment without making broad educational promises. The account shows how a familiar game can become more welcoming when organisers listen and adapt to newcomers."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The museum object loan",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional school borrowed a model boat from a community museum for a supervised exhibition. Curator Nasima prepared a written agreement naming the school as borrower. The loan lasted seven days, beginning on 3 February. Before transport, authorised staff photographed the model’s condition and packed it appropriately. Students could view it inside a protected case but could not remove it for personal photographs. At the end, museum staff compared the object with the condition record. A small mark visible on arrival was confirmed as pre-existing, not blamed on a pupil. The agreement and records helped both organisations understand responsibilities without treating trust as a substitute for documentation.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Curator",
+                "(i) ——"
+              ],
+              [
+                "Borrowed object",
+                "(ii) ——"
+              ],
+              [
+                "Loan duration",
+                "(iii) ——"
+              ],
+              [
+                "Loan starting date",
+                "(iv) ——"
+              ],
+              [
+                "How students viewed the object",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Nasima"
+            },
+            {
+              "text": "(ii)",
+              "answer": "a model boat"
+            },
+            {
+              "text": "(iii)",
+              "answer": "seven days"
+            },
+            {
+              "text": "(iv)",
+              "answer": "3 February"
+            },
+            {
+              "text": "(v)",
+              "answer": "inside a protected case"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A documented museum loan enabled students to view a model boat while protecting the object and clarifying responsibilities. Authorised staff recorded its condition before transport, and a protected case limited handling. The return check showed that an existing mark should not be attributed to the school. The passage demonstrates that written agreements and condition records support fair cooperation. They protect borrowers as well as lenders by replacing uncertain recollections with evidence available to both sides."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The community kitchen noticeboard",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional community kitchen changed its collection arrangements during a building repair. Coordinator Hena prepared a notice explaining that meals would be collected from the west entrance for two weeks. The change began on 8 August. Volunteers read the notice with several users before posting it and discovered that the small printed map was confusing. They replaced it with clearer arrows and a description. Staff also explained the change directly to regular users who might not see the board. Hena did not publish the names of people receiving assistance. When the repair ended, volunteers removed the temporary notice so an outdated instruction would not continue to mislead visitors.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Coordinator",
+                "(i) ——"
+              ],
+              [
+                "Temporary collection entrance",
+                "(ii) ——"
+              ],
+              [
+                "Duration of the arrangement",
+                "(iii) ——"
+              ],
+              [
+                "Starting date",
+                "(iv) ——"
+              ],
+              [
+                "Confusing part of the original notice",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Hena"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the west entrance"
+            },
+            {
+              "text": "(iii)",
+              "answer": "two weeks"
+            },
+            {
+              "text": "(iv)",
+              "answer": "8 August"
+            },
+            {
+              "text": "(v)",
+              "answer": "the small printed map"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A community kitchen communicated a temporary entrance change through tested notices and direct explanations. Users identified a confusing map before wider display, leading volunteers to improve the directions. Hena protected recipients’ privacy and arranged removal of the outdated notice after repairs. The account shows that clear communication involves more than producing a poster: information must reach its users, make practical sense and disappear when it no longer applies to the service."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A school uniform exchange",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional parent group organised a voluntary exchange of clean, usable school clothing. Organiser Rasheda booked the community hall for 14 October. Families could offer or request items without a public list of who needed assistance. Thirty items were available at opening, but sizes were unevenly distributed. Rasheda avoided claiming that every family could be served. Volunteers labelled sizes clearly and kept damaged garments separate for appropriate assessment. No one was required to donate before asking for an item. After the event, the group recorded shortages rather than identifying recipients. The next collection focused on those missing sizes, showing how a modest project could learn from its limitations while respecting dignity.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Organiser",
+                "(i) ——"
+              ],
+              [
+                "Venue",
+                "(ii) ——"
+              ],
+              [
+                "Event date",
+                "(iii) ——"
+              ],
+              [
+                "Items initially available",
+                "(iv) ——"
+              ],
+              [
+                "Basis used to label the clothing",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Rasheda"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the community hall"
+            },
+            {
+              "text": "(iii)",
+              "answer": "14 October"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Thirty"
+            },
+            {
+              "text": "(v)",
+              "answer": "sizes"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A voluntary clothing exchange combined reuse with privacy and dignity. Families could request items without prior donation or public identification, while volunteers checked condition and labelled sizes. Uneven stock meant the event could not serve everyone. Rasheda’s group recorded missing sizes, not recipients’ identities, to improve a later collection. The passage presents an exchange as a limited, adaptable service whose value depends on practical organisation and respectful participation rather than inflated claims of universal coverage."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "A careful history walking tour",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional history club designed a walking tour of three public sites near its learning centre. Guide Amina tested the route with six volunteers on 11 December. They found that an advertised shortcut crossed private land and removed it from the route. At one site, a popular story had no clear documentary support. Amina described it as a local tradition rather than an established fact. The revised tour included rest opportunities and information about uneven ground. Participants were told that access conditions could change. The club sought permission for group visits where necessary and did not enter unsafe buildings. Its aim was informed appreciation, not dramatic access at any cost.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Tour guide",
+                "(i) ——"
+              ],
+              [
+                "Public sites included",
+                "(ii) ——"
+              ],
+              [
+                "Route-testing volunteers",
+                "(iii) ——"
+              ],
+              [
+                "Testing date",
+                "(iv) ——"
+              ],
+              [
+                "Reason the shortcut was removed",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Amina"
+            },
+            {
+              "text": "(ii)",
+              "answer": "three"
+            },
+            {
+              "text": "(iii)",
+              "answer": "six"
+            },
+            {
+              "text": "(iv)",
+              "answer": "11 December"
+            },
+            {
+              "text": "(v)",
+              "answer": "crossed private land"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A history club tested a walking tour for practical access, permissions and reliable interpretation. An inappropriate shortcut was removed, and an unverified story was identified as tradition rather than fact. Amina also included rest opportunities and warnings about uneven surfaces without guaranteeing unchanging conditions. The account links appreciation of local history with responsible behaviour. A worthwhile tour respects property, physical safety and the difference between documentary evidence and an engaging narrative passed down locally."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The neighbourhood tool register",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional residents’ association owned equipment for supervised community activities. Keeper Emon replaced an informal borrowing system with a register in January. The register recorded the item, authorised borrower, collection date and expected return. It did not permit children to borrow hazardous tools independently. During the first month, twenty loans were recorded and three items were returned late. Emon contacted borrowers privately rather than displaying names on a public blame list. A condition check revealed a loose handle on one item, which was removed from circulation for qualified attention. The system helped the association plan availability, but it did not remove the need for safety rules or professional maintenance.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Register keeper",
+                "(i) ——"
+              ],
+              [
+                "Month the register began",
+                "(ii) ——"
+              ],
+              [
+                "Loans recorded in the first month",
+                "(iii) ——"
+              ],
+              [
+                "Late returns",
+                "(iv) ——"
+              ],
+              [
+                "Defect requiring removal from circulation",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Emon"
+            },
+            {
+              "text": "(ii)",
+              "answer": "January"
+            },
+            {
+              "text": "(iii)",
+              "answer": "twenty"
+            },
+            {
+              "text": "(iv)",
+              "answer": "three"
+            },
+            {
+              "text": "(v)",
+              "answer": "a loose handle"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A residents’ association improved equipment lending through records of authorised users, dates and returns. Emon followed up delays privately and used condition checks to identify an item needing attention. The register supported availability without replacing safety restrictions, qualified repairs or adult responsibility for hazardous tools. The passage shows that accountability need not involve public embarrassment. A practical record works best when combined with respectful communication and a clear understanding of what it cannot make safe."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The school-route audio guide",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional student council prepared an audio description of the route from the school entrance to the office. Adviser Tithi invited users with relevant experience to review it. The first recording lasted four minutes and was tested on 6 May with five volunteers. A reviewer found that the phrase turn here was unclear without a visible speaker. The team replaced it with a more precise direction linked to an agreed landmark. The recording did not replace personal assistance or other access information. Tithi also ensured that permission covered the voices included in it. After a change to the entrance arrangement, the guide was withdrawn until the route could be checked again.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Adviser",
+                "(i) ——"
+              ],
+              [
+                "Route destination",
+                "(ii) ——"
+              ],
+              [
+                "First recording length",
+                "(iii) ——"
+              ],
+              [
+                "Testing date",
+                "(iv) ——"
+              ],
+              [
+                "Testing volunteers",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Tithi"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the office"
+            },
+            {
+              "text": "(iii)",
+              "answer": "four minutes"
+            },
+            {
+              "text": "(iv)",
+              "answer": "6 May"
+            },
+            {
+              "text": "(v)",
+              "answer": "five"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A student council tested an audio route description with users instead of assuming spoken directions would be clear. Feedback exposed an ambiguous phrase, which was replaced with a precise landmark-based instruction. Permission for recorded voices and the limits of the guide also mattered. When the entrance changed, Tithi withdrew the outdated recording. The project demonstrates that access information needs user review, suitable consent and continuing maintenance rather than being considered finished after its first publication."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The rain-postponed sports afternoon",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional recreation centre planned a sports afternoon for 24 September. Organiser Mina registered twenty-eight participants and shared a contact plan with responsible adults. On the day, unsafe weather led the centre to postpone outdoor activities. Mina did not ask children to decide whether conditions were safe. Staff used the agreed contact channels and placed a clear notice at the entrance. An indoor discussion about fair play was offered only to those already present with suitable supervision. The postponed event was not described as a complete success simply because an alternative took place. Mina recorded communication difficulties and promised a new date only after facilities and supervision could be confirmed.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Organiser",
+                "(i) ——"
+              ],
+              [
+                "Planned event date",
+                "(ii) ——"
+              ],
+              [
+                "Registered participants",
+                "(iii) ——"
+              ],
+              [
+                "Reason for postponement",
+                "(iv) ——"
+              ],
+              [
+                "Indoor discussion subject",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Mina"
+            },
+            {
+              "text": "(ii)",
+              "answer": "24 September"
+            },
+            {
+              "text": "(iii)",
+              "answer": "twenty-eight"
+            },
+            {
+              "text": "(iv)",
+              "answer": "unsafe weather"
+            },
+            {
+              "text": "(v)",
+              "answer": "fair play"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "Unsafe weather required a recreation centre to postpone its outdoor programme. Mina used agreed communication channels, while staff retained responsibility for safety decisions. A supervised indoor discussion helped those already present but did not justify calling the original plan a success. Recording communication problems supported future improvement. The account stresses that responsible organising includes cancellation or postponement when necessary, honest evaluation and confirmation of practical arrangements before another event is announced to participants."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The community mural permission",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional art club wished to paint a mural on a wall near its meeting room. Coordinator Sajal first contacted the person responsible for the property instead of assuming that an unused surface was available. Written permission covered a design of local plants, but not advertisements. Eight members developed sketches and displayed them for feedback during April. A neighbour pointed out that one proposed colour combination made the lettering difficult to read. The design was revised before approved adults arranged the materials and work. Members used only the agreed area. Sajal kept the permission and final design together so future organisers could understand the limits of the agreement.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Coordinator",
+                "(i) ——"
+              ],
+              [
+                "Approved design subject",
+                "(ii) ——"
+              ],
+              [
+                "Members developing sketches",
+                "(iii) ——"
+              ],
+              [
+                "Feedback month",
+                "(iv) ——"
+              ],
+              [
+                "Content excluded by permission",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Sajal"
+            },
+            {
+              "text": "(ii)",
+              "answer": "local plants"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Eight"
+            },
+            {
+              "text": "(iv)",
+              "answer": "April"
+            },
+            {
+              "text": "(v)",
+              "answer": "advertisements"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "An art club treated a community mural as a project requiring permission, consultation and clear boundaries. Sajal obtained written approval for a plant-themed design, and public feedback improved readability before work began. The group respected the agreed location and content rather than interpreting permission as unrestricted ownership. Keeping the agreement with the final design preserved useful context. The passage shows that creative participation can be strengthened, not prevented, by attention to rights and practical access."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The bus-stop information review",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional transport users’ group noticed that the timetable at a local stop lacked an update date. Convenor Pabel asked the operator for confirmation rather than changing the sign independently. The group reviewed information at seven stops over two mornings, working from safe pedestrian areas. At two stops, route numbers differed from the operator’s current list. Volunteers documented the differences and submitted them for correction. Their report did not include passengers’ faces or personal journeys. Pabel explained that the survey covered displayed information, not the reliability of every bus. The group planned a later check to see whether the identified signs had actually been updated.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Group convenor",
+                "(i) ——"
+              ],
+              [
+                "Stops reviewed",
+                "(ii) ——"
+              ],
+              [
+                "Survey duration",
+                "(iii) ——"
+              ],
+              [
+                "Stops with differing route numbers",
+                "(iv) ——"
+              ],
+              [
+                "Organisation asked to confirm information",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Pabel"
+            },
+            {
+              "text": "(ii)",
+              "answer": "seven"
+            },
+            {
+              "text": "(iii)",
+              "answer": "two mornings"
+            },
+            {
+              "text": "(iv)",
+              "answer": "two"
+            },
+            {
+              "text": "(v)",
+              "answer": "the operator"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A transport users’ group investigated unclear timetable information without altering property or making unsupported service claims. Pabel sought the operator’s confirmation, and volunteers documented discrepancies from safe locations while protecting passengers’ privacy. A later visit would check whether corrections occurred. The account distinguishes a review of signs from an assessment of overall service reliability. It demonstrates that a useful community report should describe exactly what was checked and follow up on practical outcomes."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The seedling identification labels",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional gardening class received young plants from a local nursery for an approved school plot. Teacher Hira discovered that several containers had lost their labels. Rather than identify plants from appearance alone, she asked the nursery to check its delivery record. The class had received fifteen containers on 2 February, including three with uncertain identities. Those three stayed out of the planting activity until confirmation arrived. Pupils made weather-resistant labels for the confirmed plants and recorded their source. They did not taste leaves to test an identification. Hira used the delay to discuss why a missing name can matter and why asking an appropriate expert is more responsible than pretending certainty.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Teacher",
+                "(i) ——"
+              ],
+              [
+                "Delivery source",
+                "(ii) ——"
+              ],
+              [
+                "Containers received",
+                "(iii) ——"
+              ],
+              [
+                "Delivery date",
+                "(iv) ——"
+              ],
+              [
+                "Containers with uncertain identities",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Hira"
+            },
+            {
+              "text": "(ii)",
+              "answer": "a local nursery"
+            },
+            {
+              "text": "(iii)",
+              "answer": "fifteen"
+            },
+            {
+              "text": "(iv)",
+              "answer": "2 February"
+            },
+            {
+              "text": "(v)",
+              "answer": "three"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A gardening class paused part of its activity when plant labels were missing. Hira sought confirmation from the nursery’s records rather than relying on guesses or unsafe tasting. Confirmed plants received new labels with source information, while uncertain specimens stayed separate. The delay became an opportunity to discuss responsible identification. The passage shows that admitting uncertainty and consulting suitable expertise can protect an activity’s quality and safety better than proceeding simply to keep a schedule."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The little magazine correction page",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional student magazine printed an interview with a craft worker named Anwara. After publication, she noticed that the caption gave the wrong material for her work. Editor Jui compared the draft notes with the printed page and confirmed that the mistake had arisen during layout. The magazine had distributed sixty copies. Jui prepared a correction slip, updated the digital edition with a dated note and apologised directly. She did not quietly replace the file while pretending no error had occurred. Anwara checked the corrected wording before it was shared. For the next issue, the team added a final caption review separate from the main text proofread.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Interviewed craft worker",
+                "(i) ——"
+              ],
+              [
+                "Magazine editor",
+                "(ii) ——"
+              ],
+              [
+                "Location of the error",
+                "(iii) ——"
+              ],
+              [
+                "Copies already distributed",
+                "(iv) ——"
+              ],
+              [
+                "Stage at which the error arose",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Anwara"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Jui"
+            },
+            {
+              "text": "(iii)",
+              "answer": "the caption"
+            },
+            {
+              "text": "(iv)",
+              "answer": "sixty"
+            },
+            {
+              "text": "(v)",
+              "answer": "during layout"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A magazine corrected inaccurate information about an interviewee’s craft after checking its own records. Jui used visible corrections for both printed and digital versions, apologised and asked Anwara to review the replacement wording. The team also introduced a separate final caption check. The account presents publishing accuracy as an ongoing responsibility. Corrections should reach existing readers and acknowledge what changed rather than conceal a mistake through an unexplained file replacement after publication."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The intergenerational games session",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional community centre invited younger and older residents to share familiar indoor games. Organiser Rubel arranged the first meeting for 19 November. Twenty people attended, but some found the written rules too small to read comfortably. Volunteers prepared larger copies and explained rules aloud without assuming that every older person needed the same assistance. Participants could choose a quieter table or stop whenever they wished. Rubel recorded suggestions without ranking age groups by ability. The next session included a longer introduction for unfamiliar games. The organisers valued conversation and enjoyment, while avoiding claims that one afternoon had solved loneliness or removed all differences between generations.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Organiser",
+                "(i) ——"
+              ],
+              [
+                "First meeting date",
+                "(ii) ——"
+              ],
+              [
+                "Attendance",
+                "(iii) ——"
+              ],
+              [
+                "Problem with the first written rules",
+                "(iv) ——"
+              ],
+              [
+                "Change for unfamiliar games",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Rubel"
+            },
+            {
+              "text": "(ii)",
+              "answer": "19 November"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Twenty"
+            },
+            {
+              "text": "(iv)",
+              "answer": "too small to read comfortably"
+            },
+            {
+              "text": "(v)",
+              "answer": "a longer introduction"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "An indoor games meeting brought different generations together while allowing varied levels of support and participation. Feedback led to clearer written rules and a longer introduction, without assumptions based simply on age. Rubel’s records focused on suggestions rather than competitive comparisons between groups. The account values shared enjoyment but avoids presenting one event as a cure for loneliness. A welcoming activity depends on choice, understandable information and willingness to adjust to participants’ experiences."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The donated computer inventory",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional learning centre received six used computers from a business. Coordinator Mahin asked authorised technical staff to check the devices before learners used them. The donation arrived in June, but two machines required repairs and were not immediately available. The centre did not assume that a donated device was safe, functional or free of previous users’ information. Appropriate staff handled data clearance and installation under the centre’s rules. Mahin recorded serial references privately for maintenance rather than publishing identifying details unnecessarily. Four checked computers entered the supervised learning room first. The inventory helped explain why the number received and the number ready for use were different.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Coordinator",
+                "(i) ——"
+              ],
+              [
+                "Computers donated",
+                "(ii) ——"
+              ],
+              [
+                "Arrival month",
+                "(iii) ——"
+              ],
+              [
+                "Machines requiring repairs",
+                "(iv) ——"
+              ],
+              [
+                "Checked computers initially put into use",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Mahin"
+            },
+            {
+              "text": "(ii)",
+              "answer": "six"
+            },
+            {
+              "text": "(iii)",
+              "answer": "June"
+            },
+            {
+              "text": "(iv)",
+              "answer": "two"
+            },
+            {
+              "text": "(v)",
+              "answer": "Four"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A learning centre distinguished donated equipment from equipment ready for learners. Technical checks, appropriate data clearance and repairs preceded use, leaving some machines temporarily unavailable. Mahin’s inventory explained that difference and supported future maintenance without unnecessary public disclosure. The account shows that accepting useful material carries responsibilities beyond counting a donation. Safe preparation and reliable records matter more than immediately claiming that every received computer has increased the centre’s usable capacity."
+        }
+      ]
+    },
+    {
+      "group": "unseen",
+      "topic": "The evening reading survey",
+      "questionOrigin": "assistant-authored-practice",
+      "fictional": true,
+      "passage": "Authored fictional practice — not a board or school examination passage.\nA fictional reading room considered extending its opening hours. Librarian Shoma asked users to complete an optional survey rather than assuming that everyone wanted the same schedule. Forty-two responses arrived over two weeks. The most requested additional period was Thursday evening. However, some respondents needed better daytime access instead. Shoma also consulted staff about supervision, transport and costs before proposing a trial. No public list linked names to individual preferences. The committee agreed to test one extra evening for a month, then compare attendance and feedback. The survey informed a decision but did not represent people who had never heard about it or guarantee that the proposed hours would suit all residents.",
+      "tasks": [
+        {
+          "id": "information",
+          "instruction": "Authored practice — not an original exam question. Complete the table using only the fictional passage.",
+          "passageKey": "unseen",
+          "table": {
+            "headers": [
+              "Aspect of the account",
+              "Information"
+            ],
+            "rows": [
+              [
+                "Librarian",
+                "(i) ——"
+              ],
+              [
+                "Survey responses",
+                "(ii) ——"
+              ],
+              [
+                "Response period",
+                "(iii) ——"
+              ],
+              [
+                "Most requested additional period",
+                "(iv) ——"
+              ],
+              [
+                "Planned trial length",
+                "(v) ——"
+              ]
+            ]
+          },
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Shoma"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Forty-two"
+            },
+            {
+              "text": "(iii)",
+              "answer": "two weeks"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Thursday evening"
+            },
+            {
+              "text": "(v)",
+              "answer": "a month"
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "instruction": "Authored practice — not an original exam question. Summarise the fictional passage in your own words.",
+          "passageKey": "unseen",
+          "subitems": [],
+          "answer": "A reading room used an optional survey to explore longer opening hours without assuming a single shared preference. Shoma considered less popular needs and practical staffing issues alongside the most requested evening. A limited trial with later review was preferred to an immediate permanent change. Privacy was protected, and the survey’s incomplete reach was acknowledged. The passage shows how consultation can inform a decision while leaving room for people and concerns that a response count alone cannot capture."
+        }
+      ]
+    }
+  ]
+}
