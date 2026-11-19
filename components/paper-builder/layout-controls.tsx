@@ -92,6 +92,11 @@ export default function LayoutControls({
             </button>
           ))}
         </div>
+        {s.cfg.orientation === "landscape" && <p role="status" className="my-3 rounded border p-3 text-sm">
+          বুকলেট: প্রতি পাশে দুই অর্ধপৃষ্ঠা। চার পৃষ্ঠা হলে সামনে ৪–১, পেছনে ২–৩।
+          Download / Print-এ এই ক্রমে সাজবে; Preview-তে পড়ার ক্রম থাকবে। দুই পাশে প্রিন্টে
+          short-edge flip বাছুন। চার পৃষ্ঠার বেশি হলে অতিরিক্ত কাগজ হবে; কোনো প্রশ্ন বাদ যাবে না।
+        </p>}
         <label className="block text-xs">
           কলাম গ্যাপ — {s.cfg.columnGap}px
           <input

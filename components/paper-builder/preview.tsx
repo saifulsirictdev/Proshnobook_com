@@ -14,7 +14,7 @@ import RichPaperText from "./rich-paper-text";
 import {
   bn,
   preparePaperMath,
-  paperDimensions,
+  paperContentDimensions,
   optionLabel,
   labels,
   paginate,
@@ -85,9 +85,9 @@ export default function PaperPreview({
   const [fittedFont, setFittedFont] = useState(s.cfg.fontSize);
   useEffect(() => setFittedFont(s.cfg.fontSize), [s, questions]);
   const measure = useRef<HTMLDivElement>(null);
-  const [width, height] = paperDimensions(s);
+  const [width, height] = paperContentDimensions(s);
   const cols =
-    mode === "omr"
+    s.cfg.orientation === "landscape" ? 1 : mode === "omr"
       ? 3
       : mode === "answers" && type === "MCQ"
         ? 4
@@ -431,7 +431,7 @@ export default function PaperPreview({
   }
   // All mixed sections use one lane width, both when measuring and rendering.
   const sectionColumns = (_section: PreviewSection) =>
-    continuousColumnCount(
+    s.cfg.orientation === "landscape" ? 1 : continuousColumnCount(
       (sections ?? []).map((section) => section.type),
       s.cfg.cols,
       s.cfg.cqColumns,

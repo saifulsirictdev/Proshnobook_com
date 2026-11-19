@@ -310,7 +310,7 @@ export default function QbBuilder({
       ).map((img) => img.decode().catch(() => {})),
     );
     await new Promise((resolve) => setTimeout(resolve, 150));
-    if (mode === "normal") {
+    if (mode === "normal" && s.cfg.orientation !== "landscape") {
       window.print();
       return;
     }
@@ -323,7 +323,15 @@ export default function QbBuilder({
     const [w, h] = paperDimensions(s),
       sw = Math.max(w, h),
       sh = Math.min(w, h),
-      scale = Math.min(sw / 2 / w, sh / h);
+      scale = s.cfg.orientation === "landscape" ? 1 : Math.min(sw / 2 / w, sh / h);
+    // Do not clip an oversized image/question inside a folded half-sheet.
+    if (s.cfg.orientation === "landscape" && sheets.some(sheet =>
+      Math.max(sheet.offsetHeight, sheet.scrollHeight) > sh * 96 / 25.4 + 3 ||
+      sheet.scrollWidth > sheet.clientWidth + 3
+    )) {
+      setActionMessage("বুকলেটের অর্ধপৃষ্ঠায় কিছু লেখা/ছবি ধরছে না। ফন্ট, মার্জিন বা ছবির আকার কমিয়ে আবার চেষ্টা করুন; কোনো প্রশ্ন কেটে প্রিন্ট করা হয়নি।");
+      return;
+    }
     for (const side of bookletOrder(sheets.length)) {
       const row = document.createElement("div");
       row.className = "booklet-imposed";

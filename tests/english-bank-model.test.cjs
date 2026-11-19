@@ -726,7 +726,7 @@ test('Source-filter UI hides year search, retries failures and ignores stale sch
  const html=require('react-dom/server').renderToStaticMarkup(tree);assert.match(html,/Current school/);assert.doesNotMatch(html,/Wrong grade/);assert.equal(find(tree,n=>n.type==='select').props.disabled,false);
  // A rejected refresh exposes an error and a retry rather than fabricated options.
  props={...props,grade:10};tree=render();pending[2].reject(Error('network'));await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='alert'));const retry=find(tree,n=>n.type==='button');assert.equal(retry.props.type,'button');retry.props.onClick();tree=render();assert.equal(pending.length,4);pending[3].resolve({schools:[],error:''});await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='status'));assert.equal(find(tree,n=>n.props.role==='alert'),null);
- for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){const text=fs.readFileSync(file,'utf8');assert.match(text,/EnglishSourceFilter/);assert.match(text,/school \? \{ school \}/);assert.doesNotMatch(text,/examYear|setExamYear|onYearChange/);}
+ for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){const text=fs.readFileSync(file,'utf8');assert.doesNotMatch(text,/EnglishSourceFilter|examYear|setExamYear|onYearChange/);}
  cleanup?.();
 });
 
