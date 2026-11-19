@@ -5,7 +5,7 @@ const text = z.string().trim().min(1).max(20000);
 const table = z
   .object({
     headers: z.array(text).min(1).max(8),
-    rows: z.array(z.array(text).min(1).max(8)).min(1).max(30),
+    rows: z.array(z.array(z.string().trim().max(20000)).min(1).max(8).refine(row => row.some(cell => cell.length > 0), "Table rows cannot be entirely blank.")).min(1).max(30),
   })
   .strict();
 const task = z
@@ -57,6 +57,8 @@ export function validateEnglishOutput(
   const referenced = new Set<string>();
   for (const [index, item] of request.items.entries()) {
     const task = output.tasks[index];
+    if (task.boardSource?.selectedParts && task.boardSource.selectedParts.length !== task.subitems.length)
+      throw new EnglishOutputValidationError("Selected board parts must match the included subitems.");
     if (task.id !== item.id)
       throw new EnglishOutputValidationError(
         "Generated tasks must follow selected blueprint order.",
@@ -101,7 +103,13 @@ export function validateEnglishOutput(
       !task.clues?.length
     )
       throw new EnglishOutputValidationError("Clue task requires a clue box.");
-    if (item.sourceGroup) {
+    if (item.sourceGroup && request.selection.sources[item.sourceGroup]?.kind === "question-bank") {
+      // A verified source QUESTION excerpt is not a poem/story extract. Never print it
+      // as a fake passage or silently replace its questions with generated variants.
+      const source = request.selection.sources[item.sourceGroup];
+      if (task.passageKey || source.text !== task.subitems.map(sub => sub.text).join("\n"))
+        throw new EnglishOutputValidationError("Literature questions must match the exact source-question excerpt without a fabricated passage.");
+    } else if (item.sourceGroup) {
       if (task.passageKey !== item.sourceGroup)
         throw new EnglishOutputValidationError("Incorrect passage group.");
       const passage = output.passages.find((p) => p.key === task.passageKey);

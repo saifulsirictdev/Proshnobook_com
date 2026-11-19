@@ -46,6 +46,11 @@ export default async function EnglishQuestionItems({review = false, status = "al
     {cards.map(card => card && <details key={card.key} className="space-y-3 rounded border p-3">
       <summary className="cursor-pointer font-semibold">{card.draft.output.tasks.map(t => blueprint.items.find(i => i.id===t.id)?.title ?? t.id).join(" / ")} — {card.record?.status ?? "NOT IMPORTED"}</summary>
       {card.draft.output.passages.map(p => <div key={p.key}><h3 className="font-bold">{p.key}</h3><p className="whitespace-pre-wrap">{p.text}</p><p>{card.draft.selection.sources[p.key]?.reference}</p></div>)}
+      {Object.entries(card.draft.selection.sources).filter(([, source]) => source.kind === "question-bank").map(([key, source]) => <section key={key} className="rounded border p-3">
+        <h3 className="font-bold">উৎসের প্রশ্নের উদ্ধৃতি — মূল কবিতা/গল্পের পাঠ নয়</h3>
+        <p>{source.reference}</p><p className="whitespace-pre-wrap">{source.text}</p>
+        <p>উত্তরগুলো প্রস্তুত খসড়া; মূল সাহিত্যকর্মের সঙ্গে মিলিয়ে শিক্ষক review প্রয়োজন। এটি বোর্ড প্রশ্ন হিসেবে চিহ্নিত নয়।</p>
+      </section>)}
       {card.draft.output.tasks.map(t => <section key={t.id}><h3 className="font-bold">{blueprint.items.find(i => i.id===t.id)?.title}</h3><pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(t,null,2)}</pre></section>)}
       {!review && !prepared.length && <p role="status">এই শ্রেণির সব item-এর প্রস্তুত প্রশ্ন–উত্তর এখনও যুক্ত হয়নি। নিচের মানবণ্টন অনুযায়ী নিজস্ব বইয়ের উৎস যাচাই করে কনটেন্ট প্রস্তুত করতে হবে; অন্য শ্রেণির প্রশ্ন ব্যবহার করা হবে না।</p>}
     {!review && prepared.length>0 && <form action={saveEnglishQuestionItem} className="space-y-2"><input type="hidden" name="grade" value={grade}/><input type="hidden" name="key" value={card.key}/><label className="block"><input required type="checkbox" name="reviewed" value="yes"/> প্রশ্ন–উত্তর ও সীমাবদ্ধতা পড়েছি; শুধু Pending import করব।</label><button className="rounded bg-emerald-700 px-3 py-2 text-white">Pending হিসেবে সেভ / বর্তমান অবস্থা যাচাই</button><p>আগে সেভ থাকলে duplicate হবে না; আগের approval বদলাবে না।</p><Link className="qm-action-link block" href={englishAdminHref(grade)}>পাঠানো প্রশ্ন অনুমোদন করুন →</Link></form>}

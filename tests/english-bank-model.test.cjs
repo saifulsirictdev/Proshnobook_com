@@ -199,7 +199,7 @@ test('English pagination splits presentation blocks without losing passages, tab
 });
 test('SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance',()=>{
  const registry=require('../lib/english/prepared-items.ts'),items=registry.preparedEnglishItems(10),{validateEnglishReferenceShape}=require('../lib/english/generation.ts');
- assert.equal(items.length,7);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
+ assert.equal(items.length,59);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
  assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
  assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
  assert.equal(registry.englishItemsDigest(10),registry.englishItemsDigest(10));assert.equal(registry.preparedEnglishItems(9).length,0);
@@ -230,9 +230,9 @@ test('Old drafts still validate, while malformed board provenance is rejected',(
  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10)[0].draft;
  for(const patch of [{examYear:2024.5},{board:'School model'},{pdfPage:0},{sourceFile:''},{questionNumber:0}]){const invalid=structuredClone(d);Object.assign(invalid.output.tasks[0].boardSource,patch);assert.throws(()=>validateEnglishDraft(invalid));}
 });
-test('SSC batch covers nine existing items in seven groups and honestly reports missing poem/story comprehension',()=>{
+test('SSC registry covers nine existing item types and honestly reports missing poem/story comprehension',()=>{
  const registry=require('../lib/english/prepared-items.ts'),bank=require('../lib/english/item-bank.ts'),generation=require('../lib/english/generation.ts');
- const items=registry.preparedEnglishItems(10),stock=items.map(i=>i.draft);
+ const items=registry.preparedEnglishItems(10).filter(i=>!['textbook-poems','textbook-stories'].includes(i.group)),stock=items.map(i=>i.draft);
  assert.deepEqual(new Set(items.map(i=>i.group)),new Set(['seen-1','seen-2','unseen','matching','rearranging','story','dialogue']));
  for(const d of stock){generation.validateEnglishReferenceShape(d.selection,d.output);assert.match(d.name,/teacher review/);assert.ok(d.output.tasks.every(t=>t.boardSource.sourceFile&&t.boardSource.pdfPage>0));}
  const full=bank.assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2024});assert.equal(full.draft,null);assert.deepEqual(full.missing,['poems','stories']);
@@ -248,7 +248,7 @@ test('SSC year/source and historical-mark differences render once per question a
  const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
  try{
   const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
-  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story').draft;
+  const d=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).find(i=>i.group==='story'&&i.draft.output.tasks[0].boardSource.board==='Dhaka'&&i.draft.output.tasks[0].boardSource.examYear===2024).draft;
   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
   const renderFragments=()=>fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
   assert.equal(p.settings.show.boardSource,false);assert.doesNotMatch(renderFragments(),/Dhaka Board 2024|Q9|মূল প্রশ্নে/);
@@ -267,6 +267,102 @@ test('SSC registry imports only through explicit ADMIN consent and always create
  const mocks={'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async arg=>{writes.push(arg);return {count:arg.data.length};}}}}};
  const action=load('app/admin/english-review/item-actions.ts',mocks).importEnglishItems;
  const fd=new FormData();fd.set('grade','10');fd.set('digest',registry.englishItemsDigest(10));await action(fd);assert.equal(writes.length,0);
- fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,7);
- for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>t.boardSource.examYear===2024));}
+ fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,59);
+ for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>!t.boardSource || [2019,2020,2023,2024].includes(t.boardSource.examYear)));}
+});
+test('Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry',()=>{
+ const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);
+ const raj=items.filter(i=>i.draft.output.tasks.some(t=>t.boardSource?.board==='Rajshahi'&&t.boardSource.examYear===2024));
+ assert.equal(raj.length,3);assert.deepEqual(raj.flatMap(i=>i.draft.output.tasks.map(t=>t.id)),['comprehension','gap','rearranging']);
+ for(const i of raj){assert.equal(i.draft.selection.grade,10);assert.ok(i.draft.output.tasks.every(t=>t.boardSource.examYear===2024&&[3,4].includes(t.boardSource.pdfPage)));assert.ok(i.draft.output.tasks.every(t=>t.subitems.every(s=>s.answer)));}
+ const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length,new Set(texts).size);
+ const comp=raj[0].draft.output.tasks[0];assert.match(comp.subitems[3].answer,/does not describe a method/);
+ const raw=require('../lib/english/data/ssc-rajshahi-2024-items.json');assert.ok(raw.items.some(i=>i.group==='rearranging'));assert.ok(raj.some(i=>i.group==='rearranging'));assert.match(raw.notes.join(' '),/MCQ held/);
+});
+test('Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage',()=>{
+ const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),counts={};let answers=0;
+ for(const item of items)for(const task of item.draft.output.tasks){counts[task.id]=(counts[task.id]||0)+1;answers+=task.subitems.length||1;assert.ok(task.boardSource ? task.boardSource.pdfPage>=1 : ["poems","stories"].includes(task.id));}
+ assert.equal(items.length,59);assert.equal(answers,349);
+ assert.deepEqual(counts,{mcq:7,comprehension:9,information:9,summary:9,gap:9,rearranging:10,matching:10,poems:1,stories:1,story:6,dialogue:4});
+ assert.equal(items.filter(i=>i.draft.output.tasks.some(t=>t.id==='mcq')&&i.draft.output.tasks.some(t=>t.id==='comprehension')).length,7);
+ const seen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(seen.length,18);assert.equal(new Set(seen).size,18);
+ const unseen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key==='unseen'));assert.equal(unseen.length,9);assert.equal(new Set(unseen.map(p=>p.text)).size,9);
+});
+test('Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail',()=>{
+ const {validateEnglishDraft}=require('../lib/english/draft.ts'),{preparedEnglishItems}=require('../lib/english/prepared-items.ts');
+ const d=preparedEnglishItems(10).find(i=>i.group==='unseen'&&i.draft.output.tasks[0].boardSource.board==='Jashore').draft;
+ assert.ok(d.output.tasks[0].table.rows.some(r=>r.includes('')));assert.ok(validateEnglishDraft(d));
+ const bad=structuredClone(d);bad.output.tasks[0].table.rows[0]=Array(5).fill('');assert.throws(()=>validateEnglishDraft(bad));
+});
+test('School literature uses exact source questions, no fabricated passage or board year; full assembly remains approval-gated',()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts'),{validateEnglishDraft}=require('../lib/english/draft.ts');
+ const groups=preparedEnglishItems(10),lit=groups.filter(i=>['textbook-poems','textbook-stories'].includes(i.group));assert.equal(lit.length,2);
+ for(const item of lit){const d=item.draft,t=d.output.tasks[0],src=d.selection.sources[item.group];assert.equal(src.kind,'question-bank');assert.equal(src.text,t.subitems.map(s=>s.text).join('\n'));assert.equal(d.output.passages.length,0);assert.equal(t.subitems.length,8);assert.equal(t.boardSource,undefined);assert.match(src.reference,/Not board questions/);assert.equal(approvedEnglishItem(record('PENDING',d),10),null);
+  const changed=structuredClone(d);changed.output.tasks[0].subitems[0].text+=' changed';assert.throws(()=>validateEnglishDraft(changed));
+  const fake=structuredClone(d);fake.output.tasks[0].passageKey=item.group;fake.output.passages=[{key:item.group,text:'Invented poem extract'}];assert.throws(()=>validateEnglishDraft(fake));
+ }
+ const approved=groups.map(i=>approvedEnglishItem(record('APPROVED',i.draft),10));assert.ok(approved.every(Boolean));
+ const full=assembleEnglishItems(approved,10,()=>0);assert.ok(full.draft);assert.equal(full.draft.output.tasks.length,11);assert.equal(require('../lib/english/generation.ts').validateEnglishOutput(full.draft.selection,full.draft.output).total,100);assert.deepEqual(full.missing,[]);
+ const yearly=assembleEnglishItems(approved,10,()=>0,undefined,{examYear:2024});assert.equal(yearly.draft,null);assert.deepEqual(yearly.missing,['poems','stories']);
+ const poemOnly=assembleEnglishItems(approved,10,()=>0,['poems']).draft;assert.ok(poemOnly);assert.equal(poemOnly.output.passages.length,0);
+ const raw=structuredClone(lit[0].draft);raw.selection.grade=6;assert.throws(()=>validateEnglishDraft(raw));
+ const seen=structuredClone(groups[0].draft);seen.selection.sources['seen-1'].kind='question-bank';assert.throws(()=>validateEnglishDraft(seen));
+});
+test('New 2024 batch expands distinct Seen/Unseen stock while keeping conflicting source exercises out',()=>{
+ const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),data=require('../lib/english/data/ssc-board-2024-batch3.json');
+ const from=(board,group)=>items.filter(i=>i.group===group&&i.draft.output.tasks[0].boardSource?.board===board&&i.draft.output.tasks[0].boardSource?.examYear===2024);
+ for(const board of ['Barishal','Dinajpur']){const group=from(board,'seen-1');assert.equal(group.length,1);assert.deepEqual(group[0].draft.output.tasks.map(t=>t.id),['mcq','comprehension']);assert.equal(group[0].draft.output.tasks[0].subitems.length,7);}
+ const ch=from('Chattogram','seen-1');assert.equal(ch.length,1);assert.deepEqual(ch[0].draft.output.tasks.map(t=>t.id),['comprehension']);assert.match(ch[0].draft.output.tasks[0].subitems[3].answer,/does not establish/);
+ assert.equal(from('Chattogram','unseen').length,1);assert.equal(from('Dinajpur','unseen').length,0);assert.equal(from('Barishal','unseen').length,0);assert.equal(from('Barishal','matching').length,0);
+ assert.equal(from('Sylhet','seen-1').length,0);assert.equal(from('Dinajpur','seen-2').length,0);
+ assert.match(data.notes.join(' '),/1977/);assert.match(data.notes.join(' '),/1641/);
+ const d=from('Dinajpur','seen-1')[0].draft;assert.match(d.output.tasks[1].subitems[3].answer,/Model response/);
+ for(const entry of data.items)for(const task of entry.tasks){assert.ok(task.pdfPage>=9&&task.pdfPage<=18);if(task.id==='rearranging')assert.deepEqual(task.subitems.map(s=>Number(s.answer)).sort(),[1,2,3,4,5,6,7,8]);}
+});
+test('2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts',()=>{
+ const data=require('../lib/english/data/ssc-board-2023-review.json'),{preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts'),{validateEnglishDraft}=require('../lib/english/draft.ts');
+ const stock=preparedEnglishItems(10).map(i=>i.draft),year=stock.filter(d=>d.output.tasks[0].boardSource?.examYear===2023);assert.equal(year.length,15);
+ for(const entry of data.items)for(const task of entry.tasks){
+  if(task.selectedParts){assert.equal(task.sourceQuestions.length,task.originalSubitemCount);assert.equal(task.selectedParts.length,task.subitems.length);
+   for(let i=0;i<task.subitems.length;i++){const source=task.sourceQuestions[task.selectedParts[i].charCodeAt(0)-97];assert.equal(task.subitems[i].text,source.text);if(source.options)assert.deepEqual(task.subitems[i].options,source.options);}
+  }
+ }
+ const chosen=assembleEnglishItems(stock,10,()=>0,['mcq','comprehension'],{examYear:2023}).draft;assert.ok(chosen);assert.ok(chosen.output.tasks.every(t=>t.boardSource.examYear===2023));
+ assert.equal(chosen.output.tasks[0].subitems.length,7);assert.equal(chosen.output.tasks[0].boardSource.originalSubitemCount,10);assert.equal(chosen.output.tasks[1].boardSource.originalSubitemCount,6);
+ for(const patch of [{selectedParts:['a','a']},{selectedParts:['z']},{originalSubitemCount:1},{selectedParts:undefined}]){const bad=structuredClone(chosen);Object.assign(bad.output.tasks[0].boardSource,patch);assert.throws(()=>validateEnglishDraft(bad));}
+ const missing=assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2023});assert.equal(missing.draft,null);assert.deepEqual(missing.missing,['information','summary','matching','rearranging','poems','stories']);
+ const label=require('../lib/english/board-source.ts').englishBoardLabel(chosen.output.tasks[0].boardSource);assert.match(label,/2023/);assert.match(label,/নির্বাচিত অংশ/);
+});
+
+test('2023 creative continuations meet the ten-new-sentence prompt and do not duplicate source prompts',()=>{
+ const data=require('../lib/english/data/ssc-board-2023-review.json');
+ const stories=data.items.filter(i=>i.group==='story');assert.equal(stories.length,5);
+ for(const entry of stories){const t=entry.tasks[0],lines=t.answer.split('\n');assert.equal(lines.length,3);assert.equal(lines[1],t.instruction.split('\n')[1]);assert.equal(lines[2].split(/(?<=[.!?])\s+/).length,10);assert.equal(t.sourceMarks,12);}
+ const unique=data.items.map(i=>(i.passage||'')+'\n'+i.tasks.map(t=>t.instruction).join('\n'));assert.equal(new Set(unique).size,unique.length);
+});
+test('2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering',()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts');
+ const drafts=preparedEnglishItems(10).map(i=>i.draft),batch=drafts.filter(d=>d.output.tasks[0].boardSource?.examYear===2020);assert.equal(batch.length,11);
+ const unseen=batch.filter(d=>d.output.passages.some(p=>p.key==='unseen'));assert.equal(unseen.length,4);
+ for(const d of unseen){const [info,summary]=d.output.tasks;assert.equal(info.id,'information');assert.equal(summary.id,'summary');assert.equal(info.passageKey,summary.passageKey);assert.equal(info.subitems.length,5);assert.equal(info.table.headers.length,info.table.rows[0].length);
+  const printable=info.instruction+'\n'+info.table.rows.flat().join('\n');for(const sub of info.subitems)assert.equal(printable.split(sub.text+' ——').length-1,1);
+  assert.ok(summary.answer.length>150);assert.ok(info.table.rows.some(r=>r.includes('')));
+ }
+ const volta=unseen.find(d=>d.output.tasks[0].boardSource.board==='Jashore');assert.match(volta.output.tasks[0].instruction,/\(i\) —— years/);assert.equal(volta.output.tasks[0].subitems[0].answer,'eight');
+ const arm=unseen.find(d=>d.output.tasks[0].boardSource.board==='Dhaka');assert.match(arm.output.passages[0].text,/Armstrong first stepped/);assert.match(arm.output.passages[0].text,/August 25, 2012/);assert.doesNotMatch(arm.output.passages[0].text,/^76 /);
+ for(const d of batch)for(const t of d.output.tasks){assert.equal(t.boardSource.examYear,2020);if(t.id==='rearranging'){assert.deepEqual(t.subitems.map(s=>Number(s.answer)).sort((a,b)=>a-b),[1,2,3,4,5,6,7,8]);}}
+ const selected=assembleEnglishItems(drafts,10,()=>0,['information','summary','matching','rearranging'],{examYear:2020});assert.ok(selected.draft);assert.ok(selected.draft.output.tasks.every(t=>t.boardSource.examYear===2020));
+ assert.equal(assembleEnglishItems(drafts,10,()=>0,undefined,{examYear:2020}).draft,null);
+ const data=require('../lib/english/data/ssc-board-2020-review.json');assert.match(data.notes.join(' '),/Held Cumilla Lincoln/);assert.ok(!batch.some(d=>d.output.tasks[0].id==='information'&&['Sylhet','Dinajpur','Mymensingh','Cumilla','Rajshahi'].includes(d.output.tasks[0].boardSource.board)));
+});
+test('2019 drafts preserve header blanks and isolate source year without inflating repeated biographies',()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts');
+ const drafts=preparedEnglishItems(10).map(i=>i.draft),batch=drafts.filter(d=>d.output.tasks[0].boardSource?.examYear===2019);assert.equal(batch.length,4);
+ const unseen=batch.filter(d=>d.output.tasks[0].id==='information');assert.equal(unseen.length,2);
+ for(const d of unseen){const t=d.output.tasks[0];assert.equal(d.output.tasks[1].passageKey,t.passageKey);assert.match(t.instruction,/\(i\) ——/);const printable=t.instruction+'\n'+t.table.rows.flat().join('\n');for(const s of t.subitems)assert.equal(printable.split(s.text+' ——').length-1,1);}
+ const shah=unseen.find(d=>d.output.tasks[0].boardSource.board==='Jashore');assert.match(shah.output.passages[0].text,/obtained his B.A. degree six years later/);assert.match(shah.output.passages[0].text,/13 July 1969/);
+ const saarc=unseen.find(d=>d.output.tasks[0].boardSource.board==='Sylhet');assert.equal(saarc.output.tasks[0].subitems[0].answer,'1985');
+ const selected=assembleEnglishItems(drafts,10,()=>0,['information','summary','matching'],{examYear:2019});assert.ok(selected.draft);assert.ok(selected.draft.output.tasks.every(t=>t.boardSource.examYear===2019));
+ assert.equal(assembleEnglishItems(drafts,10,()=>0,['rearranging'],{examYear:2019}).draft,null);
+ assert.match(require('../lib/english/data/ssc-board-2019-review.json').notes.join(' '),/Repeat Babbage/);
 });

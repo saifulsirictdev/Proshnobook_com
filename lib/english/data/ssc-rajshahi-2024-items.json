@@ -1,0 +1,131 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "board": "Rajshahi",
+  "examYear": 2024,
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "notes": [
+    "Comprehension/gap checked against PDF page 3 image. Rearranging also checked against PDF page 4 image. All answers are assistant-prepared, not an official key.",
+    "MCQ held: shatter alternatives overlap; teacher resolution needed. No duplicate or altered MCQ manufactured.",
+    "Comprehension Q(d) asks about stopping erosion but passage only calls for climate adaptation; answer explicitly preserves that limitation.",
+    "Gap answers may admit other contextually valid words."
+  ],
+  "items": [
+    {
+      "group": "seen-1",
+      "passage": "Meherjan lives in a slum on the Sirajgonj Town Protection Embankment. The whispering wind from the river Jamuna makes the fire unsteady. The dancing flames remind Meherjan of the turmoil in her life. Not long ago Meherjan had everything--- a family, arable land and cattle. The erosion of the Jamuna gradually consumed all her land property. It finally claimed her only shelter during the last monsoon. It took the river only a day to devour Meher's house, trees, vegetable garden and the bamboo bush. She had a happy family once. Over the years, she lost her husband and her family to diseases that cruel hunger and poverty brought to the family. Now, she is the only one left to live on with the loss and the pain. The greedy Jamuna has shattered her dreams and happiness. There are thousand others waiting to share the same fate like Meherjan. Bangladesh is a land of rivers, some of whose banks overflow or erode during monsoon. Erosion is a harsh reality for the people living along the river banks. During each monsoon many more villages are threatened by the mighty rivers like the Jamuna, the Padma and the Meghna. It is estimated that river erosion makes at least 100,000 people homeless every year in Bangladesh. In fact, river erosion is one of the main dangers caused by climate change. If we can't take prompt actions to adapt to climate change, there will be thousands of more Meherjans in our towns and villages every year.",
+      "tasks": [
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 3,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "Why does the author call the Jamuna greedy?",
+              "answer": "The author calls the Jamuna greedy because its erosion consumed Meherjan’s land and finally destroyed her home, trees and garden, taking away almost everything she had."
+            },
+            {
+              "text": "Where does Meherjan live?",
+              "answer": "Meherjan lives in a slum on the Sirajgonj Town Protection Embankment."
+            },
+            {
+              "text": "What does ―dancing flame‖ mean?",
+              "answer": "The expression describes the unsteady movement of the fire’s flames in the wind. The flames remind Meherjan of the turmoil in her life."
+            },
+            {
+              "text": "How can we stop river erosion?",
+              "answer": "The passage calls for prompt action to adapt to climate change and reduce the danger of river erosion. It does not describe a method that can completely stop erosion."
+            },
+            {
+              "text": "When are many more villages threatened by the roaring rivers?",
+              "answer": "Many more villages are threatened during each monsoon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "seen-2",
+      "passage": "Scientists have identified Hydrogen as another form of renewable energy source. It is the most abundant element in nature. But it does not exist separately as a gas. It is always combined with other elements, such as with Oxygen to make water. Hydrogen, separated from another element, can be burned as a fuel to produce electricity.",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 3,
+          "instruction": "Read the passage and fill in each gap with a suitable word based on its information.\nScientists have (a) —— out that Hydrogen can be (b) —— as renewable energy source. The nature is (c) —— with Hydrogen (d) —— it does not exist separately as gas. Hydrogen and Oxygen (e) —— water.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "found"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "used"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "filled"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "but"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "form"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 4,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "The king followed the advice of the physician and became slim and fully cured.",
+              "answer": "8"
+            },
+            {
+              "text": "He advised the king to move a heavy club into the air till he got tired.",
+              "answer": "7"
+            },
+            {
+              "text": "He did not undergo physical labour.",
+              "answer": "2"
+            },
+            {
+              "text": "The doctor was very wise.",
+              "answer": "5"
+            },
+            {
+              "text": "He became bulky and could not move or do anything.",
+              "answer": "3"
+            },
+            {
+              "text": "Once there was a king who was very idle.",
+              "answer": "1"
+            },
+            {
+              "text": "He did not prescribe any medicine.",
+              "answer": "6"
+            },
+            {
+              "text": "He called in a doctor.",
+              "answer": "4"
+            }
+          ],
+          "answer": "f → c → e → h → d → g → b → a"
+        }
+      ]
+    }
+  ]
+}

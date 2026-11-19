@@ -27,6 +27,7 @@ export const englishSelectionSchema = z
         .object({
           text: z.string().trim().min(1).max(20000),
           reference: z.string().trim().min(1).max(500),
+          kind: z.literal("question-bank").optional(),
         })
         .strict(),
     ),
@@ -39,6 +40,10 @@ export function resolveEnglishSelection(raw: unknown) {
     selection.grade as EnglishGrade,
     selection.paper as EnglishPaper,
   );
+  for (const [key, source] of Object.entries(selection.sources)) {
+    if (source.kind === "question-bank" && (!(selection.grade === 9 || selection.grade === 10) || selection.paper !== 1 || !["textbook-poems", "textbook-stories"].includes(key)))
+      throw new Error("Question-bank references are only supported for SSC first-paper literature items.");
+  }
   const ids = selection.itemIds;
   if (
     new Set(ids).size !== ids.length ||
