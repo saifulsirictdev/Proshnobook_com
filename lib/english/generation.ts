@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { englishBoardSourceSchema } from "./board-source";
+import { englishBoardSourceSchema, englishSchoolSourceSchema } from "./board-source";
 import { resolveEnglishSelection } from "./selection";
 const text = z.string().trim().min(1).max(20000);
 const table = z
@@ -12,6 +12,7 @@ const task = z
   .object({
     id: z.string().max(80),
     boardSource: englishBoardSourceSchema.optional(),
+    schoolSource: englishSchoolSourceSchema.optional(),
     instruction: text,
     passageKey: z.string().max(80).optional(),
     clues: z.array(text).max(30).optional(),
@@ -57,6 +58,8 @@ export function validateEnglishOutput(
   const referenced = new Set<string>();
   for (const [index, item] of request.items.entries()) {
     const task = output.tasks[index];
+    if (task.boardSource && task.schoolSource)
+      throw new EnglishOutputValidationError("A task cannot claim both school and board examination provenance.");
     if (task.boardSource?.selectedParts && task.boardSource.selectedParts.length !== task.subitems.length)
       throw new EnglishOutputValidationError("Selected board parts must match the included subitems.");
     if (task.id !== item.id)

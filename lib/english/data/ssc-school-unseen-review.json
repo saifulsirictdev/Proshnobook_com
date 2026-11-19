@@ -1,0 +1,293 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+  "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91",
+  "notes": [
+    "School source, not board questions. Header and question images checked on PDF pp.25–26,76–77; Salimullah summary prompt continues on p.27. Akij school header explicitly says Test Examination 2024; Madhupur says Test Examination 2025. Neither is assigned the compilation target year 2026.",
+    "Assistant-prepared summaries and keys require teacher verification. Source historical claims/spelling retained, not independently certified. Victoria passage says box make half crown; source wording retained rather than guessing a silent correction. Narrative describes childhood budgeting, not verified royal biography.",
+    "Held Manik hospital/death chronology conflict, Nobel death-year error, Great Wall table missing ruling-group premise, Marconi transmission-place/date inconsistencies and mammals table food mismatch. Repeat biographies not recounted.",
+    "Additional source: school-model compilation file 13FF5HytPlXyfpQAHfBNqTycpe5UFl8Nu, SHA256 99d0f288fb844cabc180290cd5349bc9ffea4190c798901152253ee5c78cff43. Joypurhat Girls’ Cadet College Pre-Test 2024 header/passages checked on PDF pp.11–12. First blank (i) is in When column, not Where; original empty Where cell retained.",
+    "School-model filename is not exam provenance: its opening seven pages repeat older boards. Those were not recounted. Rangpur Hawking table repeats 1988 against the narrative’s degree/appointment years, held. Pabna Babbage Royal University/1861 conflicts with other sources, held. Cumilla source ends mid-question and is not registered."
+  ],
+  "items": [
+    {
+      "school": "Madhupur Shahid Smrity Higher Secondary School, Tangail",
+      "examType": "Test",
+      "examYear": 2025,
+      "group": "unseen",
+      "passage": "Nawab Sir Salimullah was the eldest son of the third Nawab of Dhaka, Sir Khwaja Ahsanullah and grandson of the first Nawab of Dhaka, Sir Khwaja Abdul Gani. He was born at the Ahsan Manzil Palace on 7 June 1871. He became president of the All Bengal Muslim League in 1907. In 1908, he became the secretary of the newly established East Bengal and Assam Provincial Muslim League, becoming president in 1909. In August 1911, Salimullah demanded a university in Dhaka. He was a social worker. He used to contribute generously to socio- economic development activities. He donated one lac twelve thousand rupees for the establishment of Dhaka Engineering School (Bangladesh University of Engineering and Technology). He spent money for the construction of mosques, madrasas, hospitals and student dormitories. The British government conferred on him the titles of CSI (1902), Nawab Bahadur (1903), KCSI (1909) and GCSI (1911). Personally he was honest, courageous and pious. He died on 16 January 1915 in his home at Chaurangi, Kolkata. His body was brought to Dhaka in state honour and was buried in the family graveyard at Begum Bazar.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 26,
+          "instruction": "Complete the table below with information from the passage.",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "7 June 1871"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the All Bengal Muslim League"
+            },
+            {
+              "text": "(iii)",
+              "answer": "August 1911"
+            },
+            {
+              "text": "(iv)",
+              "answer": "for the establishment of Dhaka Engineering School"
+            },
+            {
+              "text": "(v)",
+              "answer": "1902"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/Activity",
+              "Where/Place",
+              "When",
+              "Why/Reason",
+              "Role/Achievement"
+            ],
+            "rows": [
+              [
+                "Nawab Sir Salimullah",
+                "born",
+                "Ahsan Manzil palace",
+                "(i) .........",
+                "",
+                ""
+              ],
+              [
+                "He",
+                "became president",
+                "(ii) .........",
+                "in 1907",
+                "",
+                ""
+              ],
+              [
+                "He",
+                "demanded a university",
+                "in Dhaka",
+                "(iii) .........",
+                "to develop the standard of education",
+                ""
+              ],
+              [
+                "He",
+                "donated one lakh twelve thousand rupees",
+                "Dhaka",
+                "",
+                "(iv) .........",
+                "social worker"
+              ],
+              [
+                "He",
+                "got title CSI",
+                "from the British government",
+                "(v) .........",
+                "for his contribution to socio economic development",
+                "Award winner"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 27,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Nawab Sir Salimullah was born at Ahsan Manzil in 1871. He held leadership positions in Muslim political organisations and demanded a university in Dhaka in 1911. He contributed to social and educational development, donating money to Dhaka Engineering School and supporting religious institutions, hospitals and student accommodation. The passage describes several honours conferred on him by the British government. He died in Kolkata in January 1915 and was buried in the family graveyard at Begum Bazar in Dhaka."
+        }
+      ],
+      "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+      "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91"
+    },
+    {
+      "school": "Akij Collegiate School, Jashore",
+      "examType": "Test",
+      "examYear": 2024,
+      "group": "unseen",
+      "passage": "Queen Victoria, when a little girl, was taught economical habits by her governess. The princess had a fixed allowance for pocket money and she was not permitted to exceed it. Once in a bazar at Tunbridge Wells, she had exhausted all her supply of money in buying a number of presents for relatives and friends. As she was leaving, remembered another cousin for whom no present was bought. She saw a box make half crown, which she considered would be just the very thing for him. But alas! the money was all gone. The people in the shop said they would just enclose the box with the other articles but her governess said, \"No, you see, the princess has no money as so, of course, she cannot buy the box. The shop-keepers then said that they would reserve the box. And when the next due pocket money came, the princes mounted her donkey and went to the bazar for the coveted box by seven o'clock in the morning.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 77,
+          "instruction": "Complete the table below with information from the passage.",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "was taught"
+            },
+            {
+              "text": "(ii)",
+              "answer": "for relatives and friends"
+            },
+            {
+              "text": "(iii)",
+              "answer": "another cousin for whom no present was bought"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the shopkeepers"
+            },
+            {
+              "text": "(v)",
+              "answer": "by seven o’clock in the morning when her next pocket money was due"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who",
+              "Event/Activity",
+              "When/Whom",
+              "What/Where"
+            ],
+            "rows": [
+              [
+                "Queen Victoria",
+                "(i) ..............",
+                "at early age",
+                "economical habits"
+              ],
+              [
+                "She",
+                "spent all money",
+                "(ii) ..............",
+                "in the market"
+              ],
+              [
+                "She",
+                "remembered",
+                "while leaving market",
+                "(iii) .............."
+              ],
+              [
+                "(iv) ..............",
+                "wanted to give",
+                "Victoria",
+                "the box"
+              ],
+              [
+                "Victoria",
+                "went",
+                "(v) ..............",
+                "to bazar"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 78,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "As a child, Queen Victoria was taught to keep her spending within a fixed allowance. While shopping for presents at Tunbridge Wells, she used all her money before remembering another cousin. She wanted to buy a box, but her governess would not let her take it without paying. The shopkeepers reserved it for her. When her next pocket money arrived, she returned early in the morning to buy the box. The story illustrates learning patience and spending within one’s means."
+        }
+      ],
+      "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+      "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91"
+    },
+    {
+      "school": "Joypurhat Girls’ Cadet College, Joypurhat",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "sourceFile": "13FF5HytPlXyfpQAHfBNqTycpe5UFl8Nu",
+      "sourceSha256": "99d0f288fb844cabc180290cd5349bc9ffea4190c798901152253ee5c78cff43",
+      "group": "unseen",
+      "passage": "It was Autumn, August 26, 1910. A little girl was born to an Albanian descent, rich Catholic merchant's family in a small town called Skopje, Macedonia. She was the youngest of the three siblings and was named Agnes Gonxha Bojaxhiu. Who had known that this tiny, little girl would one day become the servant of humanity-- love and serve the poorest of the poor and become the mother of humanity? Yes, we are talking about none other than Mother Teresa. At the age of 12, she heard a voice from within her that urged her to spread the love of Christ. She decided that she would be a missionary. At the age of 18 she left her parental home. She then joined an Irish community of nuns called the Sisters of Loreto, which had missions in India. After a few months of training at the Institute of the Blessed Virgin Mary in Dublin, Mother Teresa came to India. On May 24, 1931, she took her initial vows as a nun. From 1931 to 1948, Mother Teresa taught geography and catechism (religious instruction) at St. Mary's High School in Kolkata (then Calcutta). However, the prevailing poverty in Kolkata had a deep impact on Mother Teresa's mind, and in 1948 she received permission from her superiors to leave the convent and devote herself to work among the poorest of the poor in the slums of Kolkata.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 12,
+          "instruction": "Read the passage and complete the following table with information from the passage.",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "26 August 1910"
+            },
+            {
+              "text": "(ii)",
+              "answer": "heard a voice"
+            },
+            {
+              "text": "(iii)",
+              "answer": "St. Mary’s High School in Kolkata"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the prevailing poverty in Kolkata"
+            },
+            {
+              "text": "(v)",
+              "answer": "in 1948"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event",
+              "Where",
+              "When"
+            ],
+            "rows": [
+              [
+                "Mother Teresa",
+                "born",
+                "",
+                "(i) ——"
+              ],
+              [
+                "She",
+                "(ii) ——",
+                "from within her",
+                "at the age of 12"
+              ],
+              [
+                "She",
+                "taught geography and catechism",
+                "(iii) ——",
+                "From 1931 to 1948"
+              ],
+              [
+                "(iv) ——",
+                "had a deep impact on Mother Teresa’s mind",
+                "",
+                ""
+              ],
+              [
+                "Mother Teresa",
+                "devoted herself to work among the poorest",
+                "in the slums of Kolkata",
+                "(v) ——"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 12,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Mother Teresa was born as Agnes Gonxha Bojaxhiu in Skopje in 1910. As a young girl she decided to become a missionary and left home at eighteen to join the Sisters of Loreto. After training in Dublin, she went to India and took her initial vows in 1931. She taught geography and religious instruction at St. Mary’s High School in Kolkata. The poverty around her deeply affected her. In 1948 she received permission to leave the convent and work among the poorest people in Kolkata’s slums."
+        }
+      ]
+    }
+  ]
+}

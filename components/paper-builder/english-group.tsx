@@ -1,5 +1,5 @@
 import { safeImage, type PaperItem, type PaperSettings } from "@/lib/paper-builder";
-import { englishBoardLabel } from "@/lib/english/board-source";
+import { englishBoardLabel, englishSchoolLabel } from "@/lib/english/board-source";
 import RichPaperText from "./rich-paper-text";
 export default function EnglishGroup({q,answers,questions=true,s}:{q:PaperItem;answers:boolean;questions?:boolean;s:PaperSettings}) {
   const group=q.englishGroup!;
@@ -11,6 +11,7 @@ export default function EnglishGroup({q,answers,questions=true,s}:{q:PaperItem;a
     {questions && q.text!==group.tasks.map(t=>t.instruction).join("\n") && <p><RichPaperText text={q.text}/></p>}
     {group.tasks.map(t=><section key={t.id} style={{margin:0}}>
       {s.show.boardSource && !group.continued && t.boardSource && <p className="text-[0.85em]">[{englishBoardLabel(t.boardSource)}{s.show.marks && t.boardSource.originalMarks !== undefined && t.boardSource.originalMarks !== t.marks ? ` · মূল প্রশ্নে ${t.boardSource.originalMarks} নম্বর; practice-এ ${t.marks}` : ""}]</p>}
+      {s.show.boardSource && !group.continued && t.schoolSource && <p className="text-[0.85em]">[{englishSchoolLabel(t.schoolSource)}{s.show.marks && t.schoolSource.originalMarks !== undefined && t.schoolSource.originalMarks !== t.marks ? ` · মূল প্রশ্নে ${t.schoolSource.originalMarks} নম্বর; practice-এ ${t.marks}` : ""}]</p>}
       <p>{!group.continued&&<><b>{t.number}. </b>{questions&&<RichPaperText text={t.instruction}/>} {s.show.marks&&<b> [{t.marks}]</b>}</>}</p>
       {questions && t.clues?.length ? <p className="border p-2">{t.clues.join(" · ")}</p>:null}
       {questions && t.table && <table className="my-2 w-full border-collapse"><thead><tr>{t.table.headers.map((h,i)=><th className="border border-black p-1" key={i}><RichPaperText text={h}/></th>)}</tr></thead><tbody>{t.table.rows.map((r,i)=><tr key={i}>{r.map((v,j)=><td className="border border-black p-1" key={j}><RichPaperText text={v}/></td>)}</tr>)}</tbody></table>}

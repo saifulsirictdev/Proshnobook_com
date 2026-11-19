@@ -1,0 +1,813 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "notes": [
+    "Question tables and sentence lists checked against PDF images pp.10,12,20,85,91,95,101. Assistant-prepared keys, not official answers; teacher review required. Line wraps and typographic apostrophes normalised.",
+    "Matching answerPairs are zero-based B/C selections for each original A row, retained for automatic exact-key audit. Original source grammar, generalisations and claims retained, not certified current facts. Natural-beauty superlative, historical Sonargaon/Parliament claims and dated internet/library assertions need teacher verification.",
+    "Held Rajshahi 2024 education matching malformed criminal/morals combination, 2019 education repeated indistinguishable A rows, 2019 blood-donation universal safety claims, 2018 acid-taste matching, and 2020 Bassanio identical He rows. No silent repairs.",
+    "2019 Shamim rearranging registered once; near-identical 2024 Mymensingh not counted again. Existing Androcles, Keats, Mandela, Napoleon, Fleming and Jibanananda exercises not duplicated. Suggested ordering is narrative coherence, not historical certification; coherent alternatives may be accepted by a teacher.",
+    "Additional Seen prompts checked against PDF images pp.65,84,103: Combined 2018 Mainul complete pair; Dhaka 2019 Maldives comprehension only; Jashore 2020 heritage/mosque comprehension only. Same linked source used for each complete pair.",
+    "Maldives MCQ idyllic synonyms overlap; Jashore mosque MCQ(a) inference and (f) alternatives are unclear, so entire MCQ exercises held rather than reworded. Zahir Raihan 2019 passage has date/ending contradictions, held. Standalone comprehension does not inflate complete-pair counts.",
+    "Maldives figures, tourism rankings and land-purchase statement are source-era claims, not current verified facts. Shat Gambuj architecture wording retained, not independently certified. Mainul MCQ(b) uses singular lives with along with, not plural live. Reflective comprehension answers are illustrative, not the only valid views."
+  ],
+  "items": [
+    {
+      "board": "Chattogram",
+      "examYear": 2024,
+      "group": "matching",
+      "answerPairs": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 10,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "The Bay of Bengal is situated to the south of Bangladesh."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "Cox’s Bazar that stretches for miles is the longest sea beach in the world."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The blue water and rising waves create a pleasant sight which cools our mind instantly."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "The Saint Martin’s Island which is located in the Bay of Bengal is a coral island."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "The natural beauty of Saint Martin’s Island is beyond description."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) The Bay of Bengal",
+                "i. and rising waves create a pleasant sight",
+                "i. is the longest sea beach in the world."
+              ],
+              [
+                "(b) Cox’s Bazar that",
+                "ii. is situated",
+                "ii. which cools our mind instantly."
+              ],
+              [
+                "(c) The blue water",
+                "iii. stretches for miles",
+                "iii. beyond description."
+              ],
+              [
+                "(d) The Saint Martin’s Island which",
+                "iv. Saint Martin’s Island is",
+                "iv. is a coral island."
+              ],
+              [
+                "(e) The natural beauty of",
+                "v. is located in the Bay of Bengal",
+                "v. to the south of Bangladesh."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2024,
+      "group": "matching",
+      "answerPairs": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 12,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "The role of woman in nation building cannot be denied any more in the situation of the world."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It is not possible for any nation to reach its goal without allowing the women folk to play their active role."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "There was a time when women were looked without any dignity and honour."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "They were the only instrument to serve the family affairs."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "But the outlook and attitude of the world towards women has changed with the progress of civilization."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) The role of woman in nation building",
+                "i. towards women has changed",
+                "i. the family affairs."
+              ],
+              [
+                "(b) It is not possible",
+                "ii. when women were looked",
+                "ii. any more in the situation of the world."
+              ],
+              [
+                "(c) There was a time",
+                "iii. cannot be denied",
+                "iii. with the progress of civilization."
+              ],
+              [
+                "(d) They were the only instrument",
+                "iv. for any nation to reach its goal",
+                "iv. without allowing the women folk to play their active role."
+              ],
+              [
+                "(e) But the outlook and attitude of the world",
+                "v. to serve",
+                "v. without any dignity and honour."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Mymensingh",
+      "examYear": 2024,
+      "group": "matching",
+      "answerPairs": [
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 20,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "The present world is becoming smaller day by day with the blessings of science."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "Now a man from one part of the world can communicate with a person of another part in a second through the Internet."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "Internet communication is the latest invention in the communication system."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "A man can make friendship with anybody in any place or even a person can choose life partner through the Internet."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "A student sitting in the reading room can use the London Library and collect various information."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) The present world is becoming",
+                "i. is the latest invention",
+                "i. and collect various information."
+              ],
+              [
+                "(b) Now a man from one part of the world",
+                "ii. with anybody in any place",
+                "ii. with the blessings of science."
+              ],
+              [
+                "(c) Internet communication",
+                "iii. can communicate with a person of another part",
+                "iii. in a second through the Internet."
+              ],
+              [
+                "(d) A man can make friendship",
+                "iv. can use the London Library",
+                "iv. in the communication system."
+              ],
+              [
+                "(e) A student sitting in the reading room",
+                "v. smaller day by day",
+                "v. or even a person can choose life partner through the Internet."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2019,
+      "group": "matching",
+      "answerPairs": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 95,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Sonargaon was the capital of Bengal during the Sultani period."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "The importance of the city declined during the next Mughal period."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The place at that time had a reputation for the manufacture of ‘Maslin Saree’."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Many businessmen selected Sonargaon as their dwelling place in the 19th century."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "They built many beautiful buildings on both sides of the road."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Sonargaon was",
+                "i. had a reputation for",
+                "i. dwelling place in the 19th century."
+              ],
+              [
+                "(b) The importance of the city",
+                "ii. many beautiful buildings on",
+                "ii. during the Sultani period."
+              ],
+              [
+                "(c) The place at that time",
+                "iii. the capital of Bengal",
+                "iii. both sides of the road."
+              ],
+              [
+                "(d) Many businessmen selected",
+                "iv. declined during",
+                "iv. the manufacture of ‘Maslin Saree’."
+              ],
+              [
+                "(e) They built",
+                "v. Sonargaon as their",
+                "v. the next Mughal period."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2019,
+      "group": "matching",
+      "answerPairs": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 101,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Our Parliament House is one of the most spectacular buildings in the world."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It has been designed by a famous American architect Louis I Kahn."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The building is surrounded by an artificial lake called Crescent Lake."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "It was inaugurated in 1982."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "The first parliamentary session was held on February in the same year."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Our Parliament House",
+                "i. by an artificial lake called",
+                "i. in 1982."
+              ],
+              [
+                "(b) It has been designed",
+                "ii. is one of the most spectacular",
+                "ii. buildings in the world."
+              ],
+              [
+                "(c) The building is surrounded",
+                "iii. was held on February in",
+                "iii. the same year."
+              ],
+              [
+                "(d) It",
+                "iv. was inaugurated",
+                "iv. Louis I Kahn."
+              ],
+              [
+                "(e) The first parliamentary session",
+                "v. by a famous American architect",
+                "v. Crescent Lake."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "examYear": 2019,
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 85,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "Shamim got a lease of land in his village.",
+              "answer": "4"
+            },
+            {
+              "text": "Shamim’s lot has changed radically.",
+              "answer": "7"
+            },
+            {
+              "text": "Poverty forced him to look for work.",
+              "answer": "2"
+            },
+            {
+              "text": "He has also been raising hybrid cows for milk as well as to produce manure.",
+              "answer": "6"
+            },
+            {
+              "text": "Shamim was an unemployed youth of an impoverished family.",
+              "answer": "1"
+            },
+            {
+              "text": "Then he joined the training programme of youth development and received training in vegetable cultivation.",
+              "answer": "3"
+            },
+            {
+              "text": "He is now very happy to be a self-sufficient man.",
+              "answer": "8"
+            },
+            {
+              "text": "He applied his new and improved knowledge for cultivating vegetables.",
+              "answer": "5"
+            }
+          ],
+          "answer": "e → c → f → a → h → d → b → g"
+        }
+      ]
+    },
+    {
+      "board": "Cumilla",
+      "examYear": 2019,
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 91,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "The old woman felt pity for him and quickly gave Taimur a full dish of food.",
+              "answer": "5"
+            },
+            {
+              "text": "Then he disguised himself as a poor traveller and supported himself by begging.",
+              "answer": "2"
+            },
+            {
+              "text": "As a result, he burnt his fingers.",
+              "answer": "8"
+            },
+            {
+              "text": "He came to a house and asked an old woman to give him something to eat.",
+              "answer": "4"
+            },
+            {
+              "text": "Once young Taimur attacked a province of a powerful prince but unfortunately his soldiers were all killed.",
+              "answer": "1"
+            },
+            {
+              "text": "The food was very hot.",
+              "answer": "6"
+            },
+            {
+              "text": "One day, he became very hungry and could not get anything to eat.",
+              "answer": "3"
+            },
+            {
+              "text": "He hurriedly dug his fingers right at the middle of the dish.",
+              "answer": "7"
+            }
+          ],
+          "answer": "e → b → g → d → a → f → h → c"
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2019,
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 101,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "The dog dropped the bone and looked at the crow.",
+              "answer": "7"
+            },
+            {
+              "text": "One of them started picking the dog’s tail.",
+              "answer": "5"
+            },
+            {
+              "text": "Both the crows went near the dog.",
+              "answer": "4"
+            },
+            {
+              "text": "Once a dog was eating a bony piece of meat under a tree.",
+              "answer": "1"
+            },
+            {
+              "text": "The dog not only felt disturbed but also became angry.",
+              "answer": "6"
+            },
+            {
+              "text": "It flew away and after some time returned with another crow.",
+              "answer": "3"
+            },
+            {
+              "text": "A crow saw him and wished to eat that.",
+              "answer": "2"
+            },
+            {
+              "text": "In the meantime the other crow flew away with the bone.",
+              "answer": "8"
+            }
+          ],
+          "answer": "d → g → f → c → b → e → a → h"
+        }
+      ]
+    },
+    {
+      "board": "Combined",
+      "examYear": 2018,
+      "group": "seen-1",
+      "passage": "Mainul Islam is a qualified farmer in Naogaon. Mr Islam was very brilliant as a student. He took his higher education from Bangladesh Agricultural University in Mymensingh. After completing his higher education, Mainul came back home and started advanced farming. He has two other brothers who are graduates in different areas. The speciality of the Islam family is that they all are living in their village and all have fame in their own fields. His younger brother, who is a Rajshahi University graduate, is a science teacher in a local school. His youngest brother is a Social Science graduate and he too would like to start a local NGO to work for this area. When asked \"What makes you decide to stay here in this village?\" Mr Islam smiled. He said, \"Look, it's true that we could leave this village for a city life. I could be an officer or my brothers could be bureaucrats. But it didn't attract us. We are sons of this soil. Yes, we have education but does education prepare a person only to be an officer? Don't we have any obligation to the soil that has made us what we are?\" He also added that every educated individual shouldn't be a job seeker. He continued that since his discipline was Agriculture, after his education he took the occupation of a farmer. In response to the question whether they have any frustration to live in a village, he confirmed that they were very pleased with their life. He said, \"I work in my own farm, stay with my family members, pass time with my old friends, and sleep at my own home. All these count a lot.\" Mr Islam is right. Many people go to cities and forget or loosen their roots knowingly or unknowingly. Mr Islam and his brothers are great - they never forgot their roots. They not only stuck to their own roots, they have been torch bearers for others to be respectful of their own roots.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 7,
+          "pdfPage": 103,
+          "instruction": "Choose the correct answer from the alternatives.",
+          "subitems": [
+            {
+              "text": "According to Mr. Islam, —— should not be the only motto of education.",
+              "options": [
+                "aquisition of knowledge",
+                "to be aware of responsibilities",
+                "job seeking",
+                "fellow feeling"
+              ],
+              "answer": "job seeking"
+            },
+            {
+              "text": "Mainul along with his brothers —— in a village.",
+              "options": [
+                "live",
+                "work",
+                "studies",
+                "lives"
+              ],
+              "answer": "lives"
+            },
+            {
+              "text": "Mainul and his brothers are —— with their present life.",
+              "options": [
+                "frustrated",
+                "dissatisfied",
+                "satisfied",
+                "annoyed"
+              ],
+              "answer": "satisfied"
+            },
+            {
+              "text": "Which quality of Mainul describes him best in the passage?",
+              "options": [
+                "He is a graduate",
+                "He is an educated farmer",
+                "He does not like conventional jobs",
+                "He shows responsibility to his root"
+              ],
+              "answer": "He shows responsibility to his root"
+            },
+            {
+              "text": "Mainul’s younger brother graduated from ——.",
+              "options": [
+                "Agricultural University",
+                "Rajshahi University",
+                "Dhaka University",
+                "Rajshahi College"
+              ],
+              "answer": "Rajshahi University"
+            },
+            {
+              "text": "“People forget their roots”—What does ‘root’ mean here?",
+              "options": [
+                "country-side",
+                "lower portions of trees",
+                "place of birth and its surroundings",
+                "world heritage"
+              ],
+              "answer": "place of birth and its surroundings"
+            },
+            {
+              "text": "Mainul started —— farming in his village.",
+              "options": [
+                "modern",
+                "traditional",
+                "out dated",
+                "conventional"
+              ],
+              "answer": "modern"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 103,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "What made Mainul Islam come back to his village?",
+              "answer": "Mainul returned because he felt an obligation to his native soil and wanted to use his agricultural education in advanced farming while living with his family and community."
+            },
+            {
+              "text": "\"Every educated individual should not be a job seeker.\"Do you agree? Why?",
+              "answer": "Yes. Education can help people create work and serve their communities as well as seek employment. Mainul used his knowledge to farm; this does not mean that choosing a job is wrong."
+            },
+            {
+              "text": "What is the speciality of Islam family?",
+              "answer": "All three brothers are graduates in different fields, live in their village and are respected for their work there."
+            },
+            {
+              "text": "Why did Mainul become a farmer?",
+              "answer": "He had studied Agriculture and chose farming as a way to apply his knowledge and fulfil his responsibility to his native area."
+            },
+            {
+              "text": "Why are the three brothers great?",
+              "answer": "They are described as great because they did not forget their roots and set an example of serving and respecting their own community."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "examYear": 2019,
+      "group": "seen-1",
+      "passage": "The Maldives is famous as a tourist destination because of its pleasant weather, heavenly beaches and lagoons, luxurious holiday resorts and the peace-loving people. The Maldives was ranked as the best country for beautiful beaches and facilities for recreation in 2008. In the same year, it was also ranked second as the best country brand for natural beauty. The Maldives is well known for being the lowest country in the world. Unfortunately, this small country with idyllic natural beauty is under threat from rising sea levels due to global warming. Most of the country is just 1.5 metres above sea level with the highest point of 2.3 metres! Many predictions have been made with respect to Maldives being swept away by the rising water level in the Indian Ocean. When the power tsunami of 2004 hit the island nation, many of the island's dry parts were flooded by water. The government of the Maldives has begun to purchase land from nearby countries for resettling its people in case the islands go under water! In order to highlight the threats of global warming to its low lying islands, the government of Maldives held a cabinet meeting underwater in 2009. That was the first ever underwater cabinet meeting in the world that took place underwater. The meeting took place about 5 meter underwater, in a blue-green lagoon on a small island. While underwater, the cabinet signed a document calling on all nations to cut their carbon emissions.",
+      "tasks": [
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 84,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "Why is the Maldives a remarkable tourist spot?",
+              "answer": "According to the passage, its pleasant weather, beaches, lagoons, luxurious resorts and peace-loving people make the Maldives an attractive tourist destination."
+            },
+            {
+              "text": "Why is 2008 a significant year for the Maldives?",
+              "answer": "The passage says that in 2008 it ranked first for beautiful beaches and recreation facilities and second as a country brand for natural beauty."
+            },
+            {
+              "text": "What may happen to the Maldives owing to global warming?",
+              "answer": "Rising sea levels caused by global warming may flood its low-lying islands and could force people to leave their homes."
+            },
+            {
+              "text": "What happened to Maldives during the tsunami of 2004?",
+              "answer": "Many dry parts of its islands were flooded when the tsunami struck in 2004."
+            },
+            {
+              "text": "Do you support the idea of having a cabinet meeting underwater? What could be the reason for holding such a strange meeting?",
+              "answer": "Yes, as an awareness-raising event it was a striking way to show the danger of rising seas. The cabinet held it to draw attention to global warming and call on nations to reduce carbon emissions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2020,
+      "group": "seen-1",
+      "passage": "'Heritage' is what we inherit from the past, live with them in the present and then pass on to our children or future generation. Our unique source of life and inspiration is our cultural and natural heritage. When we speak of 'World Heritage', it indicates places and sites that we inherited from the past and pass on to the future generation of the entire world. The 'Shat Gambuj Mosque' in Bagerhat is such a heritage. It became a UNESCO World Heritage Site in 1985. Originally, the historic Mosque City was known as 'Khalifatabad'. It is situated at the outskirts of Bagerhat town--- not very far from the dense mangrove forest of the Sundarbans. Khalifatabad was a Muslim colony. It was founded by the Turkish general, a saint warrior Ulugh Khan Jahan in the 15th century. The infrastructure of the city reveals significant technical skills in many mosques as well as early Islamic monuments. Baked bricks were used for the construction of the buildings. The planning of the city was dominated by the tradition of Islamic architecture and the decorations were a combination of Mughal and Turkish architecture. Khan Jahan built a network of roads, bridges, public buildings and reservoirs to make the city habitable. There were about 360 mosques in the city. Among them the most remarkable is the multi-domed Shat Gambuj Mosque. The mosque is unique in the sense that it has 60 pillars that support the roof, with 77 low height domes. The 4 towers at 4 corners have smaller domes at the top as well. The vast prayer hall has 11 arched doorways on the east and 7 each on the north and south for light and ventilation. It has 7 aisles running along the length of the mosque and 11 deep curves between the slender stone columns. These columns support the curving arches created by the domes. The thickness of the arches is 6 feet and have slightly narrowing hollow and round wall. The west wall in the interior has 11 'mihrabs' (niche in mosque pointing towards Makkah). These mihrabs are decorated with stonework and terracotta. The floor of the mosque is made of brick. Besides being used as a prayer hall, Khan Jahan used the mosque as his court too. Today, it is one of the greatest tourist attractions and one of the best architectural beauties of Bangladesh.",
+      "tasks": [
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 65,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "What do you understand by ―World Heritage'?",
+              "answer": "World Heritage means important cultural or natural places and sites inherited from the past and preserved for future generations of the whole world."
+            },
+            {
+              "text": "What does the infrastructure of the city reveal?",
+              "answer": "The city’s infrastructure reveals significant technical skills used in constructing mosques and early Islamic monuments."
+            },
+            {
+              "text": "Why is the Shat Gambuj Mosque one of the greatest tourist attractions?",
+              "answer": "The mosque attracts visitors because of its historic importance, distinctive multi-domed structure, decorated mihrabs and architectural beauty. It is also part of a UNESCO World Heritage Site."
+            },
+            {
+              "text": "How did Khan Jahan Ali make the city habitable?",
+              "answer": "He built a network of roads, bridges, public buildings and reservoirs to make the city suitable for people to live in."
+            },
+            {
+              "text": "“The vast prayer hall served different purpose.”—Explain it in 2/3 sentences.",
+              "answer": "The hall was used for prayer. Khan Jahan also used it as his court, so it served both religious and administrative purposes."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

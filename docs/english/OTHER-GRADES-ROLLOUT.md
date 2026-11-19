@@ -182,3 +182,29 @@ Validation: 142 focused tests pass, including exact subset-to-source mapping, re
 - Remaining minimum deficits: complete Seen 43, Unseen 41, matching 30, rearranging 30, poems 39, short-story comprehension 39, completing story 34, dialogue 36. Distinct verified sources, not alternative wordings or repeated board appearances, must fill these deficits.
 
 Validation: 144 focused tests pass, including original header/table blanks, cross-page text continuity, answer permutations, exact year isolation and missing-stock rejection. Changed modules have no typecheck diagnostics; global typecheck remains blocked by missing generated Prisma client and cascading existing diagnostics. No import, approval, deployment or mobile-browser verification performed. Consent -> Pending -> ADMIN review is unchanged.
+
+## Expanded creative, exercise and school-source review batch
+- Added 42 groups / 117 answer entries beyond the 59-group baseline: 28 creative groups, 11 exercise groups and three school Unseen pairs. Original source files/checksums, page numbers, question numbers and marks are retained in the new review JSON files. Continuations/dialogues/summaries are illustrative authored answers, not official keys.
+- Older creative headers were checked separately: five dialogue prompts are **2022**, not 2023; original Q9/five marks remain distinct from current practice marks. Eight additional 2019/2020 stories retain original beginnings and ten new continuation sentences each. Repeated themes and defective source exercises are held rather than counted again.
+- Three school sources: Madhupur Shahid Smrity Higher Secondary School Test 2025 (Salimullah), Akij Collegiate School Test 2024 (Victoria), Joypurhat Girls’ Cadet College Pre-Test 2024 (Mother Teresa). Dedicated school provenance cannot coexist with board provenance. Schools are never assigned a board or silently admitted through board-year filtering. Optional labels remain hidden by default; toggle wording now covers board/school sources.
+- Additional Seen passages include Maldives, Shat Gambuj and reviewed paired/subset material; matching and rearranging retain source combinations/permutations. Historical/scientific/source-language limitations and explicit holds are recorded alongside data, not silently corrected.
+
+### Current cumulative status (supersedes all earlier totals)
+**101 prepared teacher-review groups / 466 answer entries. Not approved live stock.**
+
+| Item / linked group | Prepared | Target minimum |
+|---|---:|---:|
+| Complete Seen practice pairs | 8 | 50 |
+| Additional comprehension-only Seen | 4 | Not complete pairs |
+| Separate Seen gap texts | 9 | Not complete pairs |
+| Unseen information + summary pairs | 12 | 50 |
+| Matching | 15 | 40 |
+| Rearranging | 13 | 40 |
+| Poem comprehension | 1 | 40 |
+| Short-story comprehension | 1 | 40 |
+| Completing story | 23 | 40 |
+| Dialogue | 15 | 40 |
+
+The quantity target remains unmet: deficits are Seen pairs 42, Unseen 38, matching 25, rearranging 27, poems 39, short-story comprehension 39, completing stories 17 and dialogues 25. The supplied compilations contain repeated, malformed and historically questionable exercises; these were not used to inflate totals. More distinct, usable source material and teacher review are required before claiming completion.
+
+Validation: **148/148 focused tests pass**, including all 41 English bank model tests. `git diff --check` passes. Full TypeScript check remains blocked by generated Prisma-client/cascading project errors; no diagnostics reference the changed English/provenance/render modules. No live import, approval, push or deployment performed. Preview -> explicit consent -> Pending -> ADMIN review is unchanged. No mobile-browser or production verification performed.
