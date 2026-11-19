@@ -1,0 +1,421 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "examYear": 2024,
+  "notes": [
+    "Question text and table layout checked against supplied PDF pages 5–8. Answers assistant-prepared, not an official key; teacher review required.",
+    "Jashore social-network passage repeats Dhaka: not counted or registered as a new Seen passage. Fish passage repeated in Jashore/Cumilla: only Cumilla gap is registered.",
+    "Jashore gap source labels final blank (t), not (e): that task is not registered.",
+    "Babbage dates/contributions and Fleming narrative follow the supplied passage; independent historical fact-check is still required before publication.",
+    "Gap answers admit valid alternatives; matching preserves source wording. No live approval."
+  ],
+  "items": [
+    {
+      "board": "Cumilla",
+      "group": "seen-1",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 7,
+          "pdfPage": 7,
+          "instruction": "Choose the correct answer from the following alternatives.",
+          "subitems": [
+            {
+              "text": "The word ‘commemorate’ used in the passage means ——.",
+              "options": [
+                "display",
+                "disguise",
+                "remember",
+                "reunion"
+              ],
+              "answer": "remember"
+            },
+            {
+              "text": "The prevailing work-hour of the workers had been very ——.",
+              "options": [
+                "tolerable",
+                "short",
+                "lengthy",
+                "expectable"
+              ],
+              "answer": "lengthy"
+            },
+            {
+              "text": "Where is May Day observed today?",
+              "options": [
+                "All over the world",
+                "In Bangladesh",
+                "In Europe",
+                "In the USA"
+              ],
+              "answer": "All over the world"
+            },
+            {
+              "text": "The policemen attacked the strikers on ——.",
+              "options": [
+                "May 1, 1886",
+                "May 2, 1886",
+                "May 3, 1886",
+                "May 4, 1886"
+              ],
+              "answer": "May 3, 1886"
+            },
+            {
+              "text": "Whom does trade union represent?",
+              "options": [
+                "Farmers",
+                "Teachers",
+                "Workers",
+                "Businessmen"
+              ],
+              "answer": "Workers"
+            },
+            {
+              "text": "In the rally, the labour leaders inspired the workers ——.",
+              "options": [
+                "to follow their bosses",
+                "to honour their bosses",
+                "not to surrender to their bosses",
+                "not to disobey their bosses"
+              ],
+              "answer": "not to surrender to their bosses"
+            },
+            {
+              "text": "Clubs and revolvers were used upon ——.",
+              "options": [
+                "trade union leaders",
+                "policemen",
+                "owner of the factory",
+                "strikers"
+              ],
+              "answer": "strikers"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 7,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "What does May Day commemorate?",
+              "answer": "May Day commemorates the historical struggle and sacrifices of working people to establish an eight-hour working day."
+            },
+            {
+              "text": "When and where did the historic events of May 1st take place?",
+              "answer": "The events took place on 1 May 1886 at the McCormick Harvesting Machine Company in Chicago, USA."
+            },
+            {
+              "text": "Which demand did the workers struggle for?",
+              "answer": "The workers demanded an eight-hour workday."
+            },
+            {
+              "text": "What happened when the policemen attacked the strikers?",
+              "answer": "The policemen attacked the strikers with clubs and revolvers. One striker was killed instantly, five or six were seriously wounded and many others were injured."
+            },
+            {
+              "text": "What inspired the workers joining the protest?",
+              "answer": "Trade unions inspired the workers to strike for an eight-hour workday. Labour leaders urged them to stand together and continue their struggle without giving in to their bosses."
+            }
+          ]
+        }
+      ],
+      "passage": "May Day or International Workers' Day is observed on May 1 all over the world today to commemorate the historical struggle and sacrifices of the working people to establish an eight-hour workday. It is a public holiday in almost all the countries of the world. Since the Industrial Revolution in the 18th and 19th centuries in Europe and the US, the workers in mills and factories had been working a long shift, fourteen or even more hours a day. On May 1st in 1886, inspired by the trade unions, half of the workers at the McCormick Harvesting Machine Company in Chicago went on strike demanding an eight-hour workday. Two days later, a workers' rally was held near the McCormick Harvester Machine Company and about 6000 workers joined it. The rally was addressed by the labour leaders. They urged the workers to stand together, to go on with their struggle and not to give in to their bosses. At one point of the rally, some strike breakers started leaving the meeting place. The strikers went down the street to bring them back. Suddenly about 200 policemen attacked them with clubs and revolvers. One striker was killed instantly, five or six others were seriously wounded and many others were injured. The events of May 1, 1886 are a reminder that workers will continue to be exploited until they stand up and speak out to gain better working conditions, better pay and better lives."
+    },
+    {
+      "board": "Cumilla",
+      "group": "seen-2",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 7,
+          "instruction": "Read the text and fill in each gap with a suitable word based on the information of the text.\nIt is (a) —— from the passage that global warming is (b) —— a great threat to fish population, (c) —— to global warming, food production and oxygen, (d) —— in water decrease. As a result, some fish may be extinct (e) ——.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "clear"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "posing"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "Due"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "levels"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "soon"
+            }
+          ]
+        }
+      ],
+      "passage": "Fish population is in serious danger from global warming. Climate change is increasing the water temperature in rivers, lakes and seas. This means there is less food and oxygen available for fish. It also means the fish may not grow fully and may have fewer fish fries. Some fishes will become extinct if temperatures rise even by one or two degrees Celsius. Climate change increases the pressure on fish population. Fishes are one of the world‖s most valuable biological assets. Forty percent of people in the world eat fish as their main source of protein. If we fail to reduce greenhouse gas emissions, we will increase the pressure on fish. As a result, people who depend on fish will suffer from hunger and poverty."
+    },
+    {
+      "board": "Cumilla",
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 8,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "The king asked him why he was making such a small boat.",
+              "answer": "7"
+            },
+            {
+              "text": "Napoleon, the king of France, was a great hero.",
+              "answer": "1"
+            },
+            {
+              "text": "One day, he was walking along the sea-shore.",
+              "answer": "3"
+            },
+            {
+              "text": "He won many battles and conquered many countries of Europe.",
+              "answer": "2"
+            },
+            {
+              "text": "The boy said, \"I shall cross the sea and go my home.\"",
+              "answer": "8"
+            },
+            {
+              "text": "Suddenly, he noticed a wonderful thing.",
+              "answer": "4"
+            },
+            {
+              "text": "The boy was brought before him.",
+              "answer": "6"
+            },
+            {
+              "text": "An English boy was making a small boat.",
+              "answer": "5"
+            }
+          ],
+          "answer": "b → d → c → f → h → g → a → e"
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 6,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "Penicillin is the life saving medicine.",
+              "answer": "1"
+            },
+            {
+              "text": "He passed his boyhood with his parents.",
+              "answer": "5"
+            },
+            {
+              "text": "It was discovered by Dr. Alexander Fleming.",
+              "answer": "2"
+            },
+            {
+              "text": "He was the seventh of the eight brothers and sisters.",
+              "answer": "4"
+            },
+            {
+              "text": "He was never absent from school up to the age of twelve.",
+              "answer": "6"
+            },
+            {
+              "text": "He was sent to London at the age of fourteen for higher study.",
+              "answer": "7"
+            },
+            {
+              "text": "He was born in a poor family in Scotland.",
+              "answer": "3"
+            },
+            {
+              "text": "Fleming was a very regular and attentive student.",
+              "answer": "8"
+            }
+          ],
+          "answer": "a → c → g → d → b → e → f → h"
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "unseen",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 6,
+          "instruction": "Complete the table below with the information from the passage.\nCharles Babbage\nSpeciality: The master brain of inventing computer\nBest known: The inventor of the first mechanical computer",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "26 December 1791"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the Royal Society"
+            },
+            {
+              "text": "(iii)",
+              "answer": "received an honours degree without examination"
+            },
+            {
+              "text": "(iv)",
+              "answer": "invented the first mechanical computer"
+            },
+            {
+              "text": "(v)",
+              "answer": "18 October 1871"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event",
+              "Place",
+              "Year/Time",
+              "Contribution"
+            ],
+            "rows": [
+              [
+                "Charles Babbage",
+                "was born",
+                "London",
+                "(i) ——",
+                ""
+              ],
+              [
+                "He",
+                "was elected a fellow",
+                "(ii) ——",
+                "in 1816",
+                ""
+              ],
+              [
+                "He",
+                "(iii) ——",
+                "",
+                "in 1814",
+                ""
+              ],
+              [
+                "His contribution",
+                "",
+                "",
+                "in 1822",
+                "(iv) ——"
+              ],
+              [
+                "Death",
+                "",
+                "",
+                "(v) ——",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 6,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Charles Babbage was an English mathematician and mechanical engineer known for originating the concept of the computer. Born in London in 1791, he studied at Trinity College and Peterhouse, Cambridge. He received an honours degree in 1814 and became a fellow of the Royal Society in 1816. The passage credits him with inventing the first mechanical computer in 1822. He was Lucasian Professor of Mathematics at Cambridge from 1828 to 1839. He died in London on 18 October 1871."
+        }
+      ],
+      "passage": "Charles Babbage was an English mathematician. He was also a mechanical engineer who is best known for originating the concept of computer. He was born on 26 December 1791 in London. He entered Trinity College in October 1810. He was transferred to Peterhouse, Cambridge. He was the top mathematician there. He received an honours degree without examination in 1814. He was elected a fellow of the Royal Society in 1816. From 1828 to 1839 Babbage was Lucasian Professor of Mathematics at Cambridge University. Babbage is famous for inventing the first mechanical computer in 1822 that eventually led to today's computer. He died at his home in London on 18 October 1871."
+    },
+    {
+      "board": "Jashore",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 6,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Price hike has added a new dimension to the problems of Bangladesh."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "Price hike is caused by short supply of commodities of daily necessities."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The vast majority are hard hit by the hike in prices and inflation."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "It is very difficult for the fixed income group of people to meet up the excessive load."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Price hike leads to widespread corruption and moral degradation."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Price hike has added",
+                "i. short supply of commodities",
+                "i. widespread corruption and moral degradation."
+              ],
+              [
+                "(b) Price hike is caused by",
+                "ii. leads to",
+                "ii. to the problems of Bangladesh."
+              ],
+              [
+                "(c) The vast majority are hard hit",
+                "iii. for the fixed income group of people",
+                "iii. of daily necessities."
+              ],
+              [
+                "(d) It is very difficult",
+                "iv. a new dimension",
+                "iv. to meet up the excessive load."
+              ],
+              [
+                "(e) Price hike",
+                "v. by the hike in prices",
+                "v. and inflation."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

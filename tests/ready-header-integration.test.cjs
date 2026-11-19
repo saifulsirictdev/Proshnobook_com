@@ -51,3 +51,16 @@ test("setup live A4 review shares print header and current edits, cancels stale 
   assert.match(s, /rp-action-setup/);
   assert.match(s, /rp-action-print/);
 });
+
+test("printed PDF setup restores simple and Smart/Dynamic document headers despite shared header hiding", () => {
+  const css = fs.readFileSync("components/ready-papers/ready.css", "utf8");
+  const builder = fs.readFileSync("components/paper-builder/paper.css", "utf8");
+  // Both styles use semantic headers and must override display, not only visibility.
+  assert.match(builder, /header,[\s\S]*?display: none !important/);
+  const rule = css.match(/#ready-print \.rp-print-header,\s*#ready-print \.rp-custom-print-header\s*\{([^}]+)\}/);
+  assert.ok(rule, "scope the fix to actual Ready Paper document headers");
+  assert.match(rule[1], /display: block !important/);
+  assert.ok(css.lastIndexOf("@media print", rule.index) >= 0);
+  assert.match(css, /#ready-print,\s*#ready-print \*\s*\{\s*visibility: visible !important/);
+  assert.match(css, /\[data-noprint\],\s*\.qm-bottom-nav\s*\{\s*display: none !important/);
+});

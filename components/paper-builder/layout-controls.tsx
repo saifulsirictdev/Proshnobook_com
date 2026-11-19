@@ -46,7 +46,7 @@ export default function LayoutControls({
       <section className="studio-section">
         <h3>Page Setup</h3>
         <Toggle
-          label="English প্রশ্নে বোর্ডের নাম, সাল ও মূল প্রশ্ন নম্বর দেখান"
+          label="English প্রশ্নে বোর্ড/স্কুলের নাম, সাল ও মূল প্রশ্ন নম্বর দেখান"
           checked={s.show.boardSource}
           onChange={(v) => update({ ...s, show: { ...s.show, boardSource: v } })}
         />

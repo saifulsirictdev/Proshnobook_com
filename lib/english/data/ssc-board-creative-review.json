@@ -1,0 +1,493 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "notes": [
+    "Prompts checked against source page images 4,6,8,10,13,16,21,32,35,37. Original examination year, question and marks retained for every item. Extracted line wraps and decorative quote glyphs normalised; source wording retained.",
+    "Answers are illustrative assistant-authored continuations/dialogues, NOT board answer keys. Teacher review required. Exactly ten continuation sentences per story, excluding original supplied beginning and title. Endings are possible continuations, not asserted canonical versions of folk tales.",
+    "Railway source says railway slipper; preserved in prompt rather than silently corrected. Continuation uses sleeper and responsible reporting, no child on track. Drowning/fire narratives use safe adult/professional assistance, not untrained rescue instructions.",
+    "Dengue dialogue is general educational content, not personalised medical advice; clinical review required before publication. No medicine dose prescribed. Smoking dialogue recommends professional support without blaming people experiencing dependence.",
+    "Held repeated exercise, mobile, dengue, computer, newspaper, games/sports themes across boards rather than padding. Rickshaw purse story overlaps existing found-money honesty theme; not registered. 2023 Sylhet lottery repeats 2024 Cumilla and is not counted again.",
+    "Further creative prompts checked against PDF images pp.46,48,52,54,60,62,67,77,83,85,89,96,102. Eight older story scenarios and five distinct 2022 dialogues registered; original 2022 dialogue question Q9 and five marks retained against current practice fifteen.",
+    "Bruce/spider, Saadi, hare/tortoise and animal tales are possible literary continuations, not certified historical accounts. Retained source openings including imperfect grammar. Ten new continuation sentences per story. Child-work response uses responsible adult support; pond argument resolves away from water.",
+    "Held repeated crow, Midas, found-money, unconscious-person and exercise/mobile/newspaper/computer prompts. No repeat Bruce entry from Chattogram 2019. Digital Bangladesh dialogue addresses the source-era topic without certifying current policy achievements."
+  ],
+  "items": [
+    {
+      "board": "Rajshahi",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Once upon a time, there was a king called Midas",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 4,
+          "instruction": "Read the beginning of a story. Now, complete it in your own language. Give a suitable title to it : Once upon a time, there was a king called Midas. He was very rich but he always longed for more riches. Moreover, he was fond of gold though he had a lot of it......",
+          "subitems": [],
+          "answer": "The Golden Touch\nOnce upon a time, there was a king called Midas. He was very rich but he always longed for more riches. Moreover, he was fond of gold though he had a lot of it......\nOne day a mysterious visitor offered to grant him a wish. Midas wished that everything he touched would turn into gold. The visitor granted his wish and warned him to think carefully about its consequences. At first Midas was delighted as flowers and furniture became golden at his touch. When he sat down to eat, however, his food and water also turned into gold. He soon understood that his treasure could not satisfy his hunger or thirst. In despair he begged the visitor to take the gift away. The visitor told him to wash in a nearby river, and the strange power disappeared. Midas returned home grateful to enjoy ordinary food and water again. He realised that contentment and the necessities of life were more valuable than endless gold."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Once there lived a King in an island",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 6,
+          "instruction": "Read the beginning of a story. Write at least ten new sentences to complete the story : Once there lived a King in an island. There were green trees everywhere in the island. The King decided to build a magnificent palace in the island. So he ordered his men to cut down all the trees. Some opposed the King's idea but he did not pay ...........",
+          "subitems": [],
+          "answer": "The King and the Trees\nOnce there lived a King in an island. There were green trees everywhere in the island. The King decided to build a magnificent palace in the island. So he ordered his men to cut down all the trees. Some opposed the King's idea but he did not pay ...........\nHe did not pay attention to their warnings, and the cutting began. Before long, many birds lost their nests and the island became hotter. When heavy rain came, water washed loose soil into the fields. The farmers went to the king and showed him the damage. An elderly gardener explained how tree roots held soil and leaves provided shade. The king regretted his decision and immediately stopped the cutting. He ordered the palace to be redesigned on land that was already clear. He also arranged a planting programme with the advice of local gardeners. The islanders protected the remaining trees and cared for the young plants. The king learned that development should not destroy the natural resources on which people depended."
+        }
+      ]
+    },
+    {
+      "board": "Cumilla",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Rahmat Mia is a poor rickshaw puller",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 8,
+          "instruction": "Read the beginning of a story. Write at least ten new sentences to complete the story : Rahmat Mia is a poor rickshaw puller in Dhaka. He pulls rickshaw in different areas of the city. One day he saw some men selling lottery tickets. He felt tempted and bought a ticket......",
+          "subitems": [],
+          "answer": "Work, Not Chance\nRahmat Mia is a poor rickshaw puller in Dhaka. He pulls rickshaw in different areas of the city. One day he saw some men selling lottery tickets. He felt tempted and bought a ticket......\nHe put the ticket in his pocket and began to imagine an easier life. For several days he waited eagerly for the result. When the winning numbers were announced, his number was not among them. He felt disappointed and thought about buying several more tickets. Then he remembered that his family needed food and his children needed school supplies. He decided not to risk more of their limited money. Instead he discussed a realistic savings plan with his wife. They began putting aside a small amount whenever their essential expenses were met. Over time they built a modest emergency fund through careful spending and steady work. Rahmat understood that uncertain luck was not a reliable plan for supporting his family."
+        }
+      ]
+    },
+    {
+      "board": "Chattogram",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Rafi is a worker of a big factory in Dhaka",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 10,
+          "instruction": "Read the beginning of a story below. Add at least ten new sentences to complete the story and. Give a suitable title to it : Rafi is a worker of a big factory in Dhaka. There are more than 500 workers in the factory. One day while he was working, a loud sound was heard. Fire! Fire! Help! Help!......",
+          "subitems": [],
+          "answer": "A Safe Escape\nRafi is a worker of a big factory in Dhaka. There are more than 500 workers in the factory. One day while he was working, a loud sound was heard. Fire! Fire! Help! Help!......\nRafi recognised the emergency and immediately raised the alarm. He followed the marked escape route instead of running towards the smoke. He urged nearby workers to leave calmly without collecting their belongings. The trained fire wardens guided everyone towards the nearest safe exit. A colleague called the fire service from outside the building. Rafi reached the assembly point and reported to the person taking the roll call. When someone mentioned a missing worker, he informed the firefighters rather than going back inside. The firefighters searched the building and brought the worker to safety. Afterwards the factory management reviewed its equipment, exits and emergency training. Rafi was relieved that following the safety procedures had helped his colleagues escape."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Tamim, a student of class ten",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 13,
+          "instruction": "Read the beginning of a story and complete it in your own way. You should give a suitable title to it : Tamim, a student of class ten, was returning from school. On the way, he saw some boys and girl bathing in the pond. Suddenly he heard a girl shouting “Help! Help! save me!” Tamim.......",
+          "subitems": [],
+          "answer": "Help Without Another Victim\nTamim, a student of class ten, was returning from school. On the way, he saw some boys and girl bathing in the pond. Suddenly he heard a girl shouting “Help! Help! save me!” Tamim.......\nTamim immediately shouted to a nearby adult for help. He stayed on the bank because he was not trained in water rescue. An adult brought a long bamboo pole while another called the emergency service. From a secure position on the bank, they extended the pole towards the girl. She caught hold of it and they carefully helped her reach the shallow edge. They brought her onto the bank without anyone jumping into deep water. The emergency team arrived and checked her breathing and condition. Her parents accompanied her for further medical assessment. The villagers later put up warnings and arranged supervised swimming lessons. Tamim learned that quick action meant finding safe help rather than putting another life in danger."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "Dilara is thirteen years old living in Swapnopur",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 16,
+          "instruction": "Read the beginning of a story below. It is not complete. Add at least ten new sentences to complete it. Give a suitable title to it : Dilara is thirteen years old living in Swapnopur. Her poor parents have two other little children. It is hard for her illiterate parents to earn enough to run the family well. Dilara hopes to bring about a change to her family by receiving higher education. So she .......",
+          "subitems": [],
+          "answer": "Dilara Keeps Learning\nDilara is thirteen years old living in Swapnopur. Her poor parents have two other little children. It is hard for her illiterate parents to earn enough to run the family well. Dilara hopes to bring about a change to her family by receiving higher education. So she .......\nShe decided to speak to her class teacher about continuing her education. The teacher listened carefully and invited her parents to a meeting. Together they discussed the support available through the school. Dilara applied for a stipend and borrowed books from the school library. Her parents agreed that she should stay in school rather than leave her studies. She made a realistic timetable that included lessons, rest and a little help at home. When she found a subject difficult, she asked her teachers for guidance. With sustained effort and support, she gradually improved her results. Years later she completed her higher education and found work that helped her family. She remained grateful to everyone who had protected her chance to learn."
+        }
+      ]
+    },
+    {
+      "board": "Mymensingh",
+      "examYear": 2024,
+      "group": "story",
+      "topic": "A long time ago, the town of Hamelin",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 21,
+          "instruction": "Read the beginning of a story below. It is not complete. Add at least ten new sentences to complete it. Give a suitable title to it : A long time ago, the town of Hamelin faced with a great problem. It became full of rats. The situation became very unbearable .....",
+          "subitems": [],
+          "answer": "The Promise of Hamelin\nA long time ago, the town of Hamelin faced with a great problem. It became full of rats. The situation became very unbearable .....\nThe mayor offered a reward to anyone who could remove the rats. A piper arrived and promised to solve the problem with his music. The mayor accepted his offer and agreed to pay the reward. As the piper played, the rats followed him out of the town. When he returned, however, the mayor tried to avoid paying him. The piper reminded the townspeople that an agreement should be honoured. A group of parents and shopkeepers urged the mayor to keep his word. Ashamed of his behaviour, the mayor paid the agreed amount and apologised. The piper accepted the apology and left the town peacefully. The people of Hamelin remembered that honesty mattered as much as escaping a difficulty."
+        }
+      ]
+    },
+    {
+      "board": "Chattogram",
+      "examYear": 2023,
+      "group": "story",
+      "topic": "One sunny morning a boy of eleven years",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 32,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it. One sunny morning a boy of eleven years was tending cattle by the side of a railway line. Suddenly he noticed that a small railway slipper was about to collapse......",
+          "subitems": [],
+          "answer": "A Timely Warning\nOne sunny morning a boy of eleven years was tending cattle by the side of a railway line. Suddenly he noticed that a small railway slipper was about to collapse......\nThe boy moved away from the track and called to an adult working nearby. He pointed out the damaged sleeper without trying to repair it himself. The adult immediately contacted the nearest railway station. The station staff alerted the railway control office and stopped trains from entering the unsafe section. The boy kept his cattle and other children away from the line. A railway team soon arrived to inspect the damage. They confirmed that the track needed repair before trains could pass safely. After completing the repair, the team checked the line and obtained clearance to reopen it. The stationmaster thanked the boy for reporting the danger promptly. The boy was happy that a quick warning to responsible adults had helped protect many travellers."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2023,
+      "group": "story",
+      "topic": "In the last summer vacation I was staying at my village home",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 37,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it. In the last summer vacation I was staying at my village home. Some of my friends proposed that we should go on a journey by boat. We fixed a date and a destination. We hired a boat.....",
+          "subitems": [],
+          "answer": "A Memorable Boat Journey\nIn the last summer vacation I was staying at my village home. Some of my friends proposed that we should go on a journey by boat. We fixed a date and a destination. We hired a boat.....\nBefore setting out, we asked our parents to arrange for a responsible adult to accompany us. We chose an experienced boatman and checked the weather forecast. Everyone wore a properly fitted life jacket and sat where the boatman directed. The boat moved slowly past green fields and small riverside houses. We watched fishing boats from a safe distance and enjoyed the cool breeze. At our destination we stepped ashore carefully and ate the food we had brought. We collected our rubbish instead of leaving it on the bank. When clouds began to gather, our adult companion decided that we should return early. We reached home before the weather worsened and thanked the boatman. The journey taught us that sensible preparation made an outing both enjoyable and safe."
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "examYear": 2024,
+      "group": "dialogue",
+      "topic": "Dengue fever and its remedies",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 12,
+          "sourceMarks": 10,
+          "pdfPage": 4,
+          "instruction": "Suppose, you are Robin/Rubi and you have a friend named Fardin/Fariha. Now, write a dialogue between you and your friend about Dengue fever and its remedies.",
+          "subitems": [],
+          "answer": "Robin: Hello, Fardin! Our school has asked us to help prevent dengue.\nFardin: How does dengue spread?\nRobin: It spreads through the bite of an infected mosquito, not through ordinary conversation or sharing a classroom.\nFardin: How can we reduce mosquito breeding around our homes?\nRobin: Empty and clean containers that collect water and keep stored water covered.\nFardin: Can we protect ourselves from bites too?\nRobin: Yes. Use suitable repellent according to its label, wear protective clothing and use screens or nets where needed.\nFardin: What should someone with a suspected dengue fever do?\nRobin: Seek medical advice promptly, rest and drink fluids as advised by a clinician.\nFardin: Is it safe to take any pain medicine?\nRobin: No. Avoid self-medication, especially aspirin or ibuprofen, and ask a clinician what is appropriate.\nFardin: When is urgent medical help needed?\nRobin: Warning signs such as severe abdominal pain, persistent vomiting, bleeding or difficulty breathing need urgent care, even if the fever falls.\nFardin: Thank you. We should share reliable health advice and keep our surroundings clean."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2024,
+      "group": "dialogue",
+      "topic": "borrowing a book",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 12,
+          "sourceMarks": 10,
+          "pdfPage": 13,
+          "instruction": "Suppose, you are Nabil/Nabila. You read in Blue Bird School, Sylhet. Now, write a dialogue between you and the librarian of your school about borrowing a book.",
+          "subitems": [],
+          "answer": "Nabil: Good morning. May I borrow a book from the school library?\nLibrarian: Good morning. Certainly. What kind of book would you like?\nNabil: I would like a short English storybook suitable for my level.\nLibrarian: You can look at this shelf and read a page before choosing.\nNabil: This one looks interesting. Is it available to borrow?\nLibrarian: Yes. Please show me your library card.\nNabil: Here it is. How long may I keep the book?\nLibrarian: The due date is written on this slip. Please follow our library’s borrowing rules.\nNabil: What should I do if I need more time?\nLibrarian: Ask about renewal before the due date, as another reader may have reserved it.\nNabil: I understand. I will keep it clean and return it on time.\nLibrarian: Thank you. Let me know if you need help choosing your next book."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2024,
+      "group": "dialogue",
+      "topic": "future plan of life",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 12,
+          "sourceMarks": 10,
+          "pdfPage": 16,
+          "instruction": "A future plan of life helps one to reach one's goal. A student must have a definite future plan in life. Now, write a dialogue between you and your friend Sadik/Sadika about your future plan of life.",
+          "subitems": [],
+          "answer": "Me: Hello, Sadik! Have you thought about your future plan of life?\nSadik: Yes. I would like to become a teacher. What about you?\nMe: I am interested in becoming an agricultural researcher.\nSadik: Why have you chosen that field?\nMe: I want to help farmers find practical ways to grow food while caring for soil and water.\nSadik: What will you do to prepare?\nMe: I will build a strong foundation in science and mathematics and ask my teachers about relevant courses.\nSadik: I need to improve my subject knowledge and communication skills for teaching.\nMe: We should also learn about the qualifications and costs involved instead of relying only on dreams.\nSadik: Certainly. We can review our plans as we learn more about our abilities and opportunities.\nMe: Whatever work we choose, honesty and service should guide us.\nSadik: I agree. Let us work steadily towards our goals."
+        }
+      ]
+    },
+    {
+      "board": "Mymensingh",
+      "examYear": 2024,
+      "group": "dialogue",
+      "topic": "importance of tree plantation",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 12,
+          "sourceMarks": 10,
+          "pdfPage": 21,
+          "instruction": "Suppose, you are Tanveer/Tanisa. You have a friend named Habib/Habiba who is fond of trees and nature. Now, write a dialogue between you and your friend about the importance of tree plantation.",
+          "subitems": [],
+          "answer": "Tanveer: Hello, Habib! Why is tree plantation important?\nHabib: Trees provide shade, store carbon and support birds and other wildlife.\nTanveer: Can they help protect the soil?\nHabib: Yes. Their roots can reduce erosion when the right trees are planted in suitable places.\nTanveer: Should we plant any species wherever there is space?\nHabib: No. We should ask local experts about native or suitable species, mature size and local conditions.\nTanveer: Where could our school plant trees?\nHabib: We can ask permission to use a suitable part of the grounds away from buildings, drains and power lines.\nTanveer: Is planting enough?\nHabib: No. Young trees need watering, protection and regular care.\nTanveer: We should also protect healthy trees that already exist.\nHabib: Exactly. Let us ask our teacher to help organise a planting and care programme."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2023,
+      "group": "dialogue",
+      "topic": "importance of learning English",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 10,
+          "sourceMarks": 12,
+          "pdfPage": 35,
+          "instruction": "Suppose, you are Samir/Samira and your friend is Sumon/Sumona. English is an international language. It is very important for many reasons. Now, write a dialogue between you and your friend about the importance of learning English.",
+          "subitems": [],
+          "answer": "Samir: Hello, Sumon! Why do people say learning English is important?\nSumon: It is widely used in international communication, education and many workplaces.\nSamir: How can it help us as students?\nSumon: It gives us access to books, courses and other learning resources from different countries.\nSamir: I know some grammar, but I feel shy about speaking.\nSumon: Start with short conversations with a supportive friend and do not be afraid of mistakes.\nSamir: What else should I practise?\nSumon: Read suitable texts, listen carefully and write a little each day, asking a teacher for feedback.\nSamir: Does learning English mean neglecting Bangla?\nSumon: Not at all. We can value our mother tongue while learning another language.\nSamir: Will English alone guarantee a good job?\nSumon: No. Subject knowledge, practical skills and honesty matter too, but English can widen our opportunities.\nSamir: Thank you. Let us practise regularly without neglecting our other studies.\nSumon: That is a good plan."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2023,
+      "group": "dialogue",
+      "topic": "bad effects of smoking",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 10,
+          "sourceMarks": 12,
+          "pdfPage": 37,
+          "instruction": "Imagine, you are Sabuj and Sagor is your friend. Your friend is addicted to smoking. Now, write a dialogue between you and your friend about the bad effects of smoking.",
+          "subitems": [],
+          "answer": "Sabuj: Hello, Sagor. May I talk to you about smoking?\nSagor: Yes. I have been finding it difficult to stop.\nSabuj: Smoking damages health and increases the risk of serious lung and heart diseases.\nSagor: Does it affect people around me as well?\nSabuj: Yes. Second-hand smoke can harm others, including children.\nSagor: I wish I had never started. What can I do now?\nSabuj: Ask a qualified health professional for help with a quitting plan.\nSagor: I am worried about cravings and pressure from friends.\nSabuj: Tell supportive people about your plan, avoid situations that trigger smoking and ask for advice on managing cravings.\nSagor: What if I slip and smoke again?\nSabuj: Seek support and return to your plan rather than giving up. Quitting can take more than one attempt.\nSagor: Thank you for speaking kindly. I will ask for help and work towards stopping."
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "examYear": 2020,
+      "group": "story",
+      "topic": "Robert Bruce was the king of Scotland",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 62,
+          "instruction": "Read the following outlines and develop them into a complete story. Give a suitable title to it : Robert Bruce was the king of Scotland. His army was defeated again and again against the King Edward-1 of England. Being defeated for six times he lost his hope.....",
+          "subitems": [],
+          "answer": "Try Again\nRobert Bruce was the king of Scotland. His army was defeated again and again against the King Edward-1 of England. Being defeated for six times he lost his hope.....\nHe took shelter in a quiet cave and wondered whether to abandon his struggle. There he noticed a spider trying to reach a ledge with its thread. The spider fell several times but began again after each failure. Bruce watched with growing interest as it continued its work. At last the spider reached the ledge and secured its thread. The sight reminded Bruce that failure did not always mean the end of hope. He left the cave determined to learn from his mistakes. He met his followers and carefully planned another effort. In this traditional tale, their renewed courage eventually brought success. Bruce remembered the patient spider whenever he faced another difficulty."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2020,
+      "group": "story",
+      "topic": "Once a school boy named Talha",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 67,
+          "instruction": "Read the following outlines and develop them into a complete story. Give a suitable title to it : Once a school boy named Talha was returning from school. On the way to his home, he saw a boy of his age. The boy was working in a workshop. His body was covered with dirt, oil and other chemicals. Talha became curious about the boy. He asked the boy .....",
+          "subitems": [],
+          "answer": "A Chance to Learn\nOnce a school boy named Talha was returning from school. On the way to his home, he saw a boy of his age. The boy was working in a workshop. His body was covered with dirt, oil and other chemicals. Talha became curious about the boy. He asked the boy .....\nHe asked the boy why he was working instead of attending school. The boy explained that his family was struggling and he had left his studies. Talha listened respectfully and did not make promises he could not keep. After asking whether the boy wanted help, he told his parents and class teacher. The adults contacted the boy’s family and a local organisation supporting children. They discussed safe assistance that would not simply take away the family’s income. With their support, the family found a way for the boy to return to school. Talha welcomed him as a classmate and shared the lesson notes he had missed. The school continued to check that he had the support he needed. Talha learned that kindness involved listening and working with responsible adults."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "examYear": 2020,
+      "group": "story",
+      "topic": "One day two rats stole a piece of bread",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 77,
+          "instruction": "Read the beginning of the following story. This story is not complete. Write ten new sentences to complete the story and give a suitable title to it : One day two rats stole a piece of bread. They tried to divide it into two equal parts but failed. Because each rat wanted the larger part of the bread. They even fought for that. Lastly, they agreed to put up their problem to the monkey who was considered the wisest animal in the forest. They went ........",
+          "subitems": [],
+          "answer": "The Cost of Quarrelling\nOne day two rats stole a piece of bread. They tried to divide it into two equal parts but failed. Because each rat wanted the larger part of the bread. They even fought for that. Lastly, they agreed to put up their problem to the monkey who was considered the wisest animal in the forest. They went ........\nThey went to the monkey and asked him to settle their quarrel. The monkey placed the two pieces on a balance and found one heavier. He bit some bread from that piece, claiming that he was making them equal. The other piece then seemed heavier, so he took a bite from it too. He continued doing this until very little bread remained. The rats begged him to return what was left. The monkey ate the last pieces and called them his payment. The hungry rats realised that their quarrel had allowed someone else to take everything. They regretted stealing the bread and refusing to share fairly. They agreed to settle future disagreements calmly instead of letting greed guide them."
+        }
+      ]
+    },
+    {
+      "board": "Mymensingh",
+      "examYear": 2020,
+      "group": "story",
+      "topic": "The King of Iran used to invite the great poet Sheikh Saadi",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 83,
+          "instruction": "Read the following outlines and develop them into a complete story. Give a suitable title to it : The King of Iran used to invite the great poet Sheikh Saadi to his court. Once on his way to.......",
+          "subitems": [],
+          "answer": "Respect the Person\nThe King of Iran used to invite the great poet Sheikh Saadi to his court. Once on his way to.......\nThe poet stopped at a wealthy man’s house to ask for a night’s shelter. Because Saadi wore plain clothes, his host treated him with little respect. Saadi quietly continued to the royal court the next morning. On his return journey he wore the fine clothes presented to him there. The same host now welcomed him warmly and offered an elaborate meal. Saadi began putting a little food near the sleeve of his rich coat. The surprised host asked why he was doing such a strange thing. The poet replied that the honour seemed to belong to his clothes rather than to him. The host understood the lesson and apologised for his earlier behaviour. He resolved to treat guests respectfully without judging them by their appearance."
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "examYear": 2019,
+      "group": "story",
+      "topic": "Once upon a time, the house of a rich man",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 85,
+          "instruction": "Read the beginning of a story. Add at least ten new sentences to complete the story. Give a suitable title ot it. Once upon a time, the house of a rich man was infested with rats. They were living there with great happiness without any fear. They were having a great fun and boldly moved in the house. But the inmates of the house were having a great trouble. One day they brought a cat.......",
+          "subitems": [],
+          "answer": "Who Will Bell the Cat?\nOnce upon a time, the house of a rich man was infested with rats. They were living there with great happiness without any fear. They were having a great fun and boldly moved in the house. But the inmates of the house were having a great trouble. One day they brought a cat.......\nThe cat soon began catching rats, and the others became afraid to leave their holes. They called a meeting to discuss how they might protect themselves. A young rat suggested tying a bell around the cat’s neck. He explained that its ringing would warn them whenever the cat approached. The rats cheered because the idea sounded clever. Then an old rat asked who would put the bell on the cat. The room became silent as each rat looked at the others. Nobody was willing to approach the dangerous animal. They realised that a plan was useless unless it could actually be carried out. The meeting ended with a lesson about considering practical difficulties before celebrating an idea."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2019,
+      "group": "story",
+      "topic": "There lived a hare and a tortoise",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 89,
+          "instruction": "Read the beginning of a story. Add at least ten new sentences to complete the story. There lived a hare and a tortoise in the same jungle. The hare used to taunt the tortoise for its slow pace. One day he challenged the tortoise in a race....",
+          "subitems": [],
+          "answer": "Steady Effort Wins\nThere lived a hare and a tortoise in the same jungle. The hare used to taunt the tortoise for its slow pace. One day he challenged the tortoise in a race....\nThe tortoise accepted the challenge and they agreed on a finishing point. At the starting signal, the hare ran far ahead. Looking back, he saw the tortoise moving slowly along the path. He felt certain of victory and decided to rest beneath a tree. Soon he fell asleep while the tortoise continued without stopping. The tortoise passed the sleeping hare and steadily approached the finish. When the hare woke, he saw his rival almost at the goal. He ran as fast as he could, but he arrived too late. The tortoise had won through patience and steady effort. The hare apologised for mocking him and learned not to confuse confidence with carelessness."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2019,
+      "group": "story",
+      "topic": "Lina is a student of class ten",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 96,
+          "instruction": "Read the beginning of a story. Add at least ten new sentences to complete the story. Give a suitable title to it. Lina is a student of class ten. One day in the afternoon she was gossiping with her friend beside a pond near her house. While gossiping she noticed two small boys quarrelling over a trifling matter. She did not take it seriously thinking that their quarrel would come to an end soon. But......",
+          "subitems": [],
+          "answer": "A Quarrel Settled\nLina is a student of class ten. One day in the afternoon she was gossiping with her friend beside a pond near her house. While gossiping she noticed two small boys quarrelling over a trifling matter. She did not take it seriously thinking that their quarrel would come to an end soon. But......\nBut the argument grew louder and one boy pushed the other towards the pond. Lina immediately called to an adult who was working nearby. Together they asked the boys to step away from the water and keep apart. Once both boys were safely on the path, the adult checked whether either was hurt. Lina listened as each explained what had started the quarrel. They had both wanted to use the same ball at the same time. She suggested that they take turns rather than fight over it. The boys calmed down and apologised for pushing each other. The adult reminded them never to play rough games beside deep water. Lina was glad that asking for help had prevented the quarrel from becoming a serious accident."
+        }
+      ]
+    },
+    {
+      "board": "Dinajpur",
+      "examYear": 2019,
+      "group": "story",
+      "topic": "Liton is a brilliant student",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 9,
+          "sourceMarks": 10,
+          "pdfPage": 102,
+          "instruction": "Read the beginning of a story. Add at least ten new sentences to complete the story. Liton is a brilliant student. Though he wants to make good result, he does not attend classes regularly. Rather going to a coaching center, he memorises answers from guide books and sheets and finds that he cannot cut a good figure in the exams. One day his class teacher called him and......",
+          "subitems": [],
+          "answer": "Understanding Instead of Memorising\nLiton is a brilliant student. Though he wants to make good result, he does not attend classes regularly. Rather going to a coaching center, he memorises answers from guide books and sheets and finds that he cannot cut a good figure in the exams. One day his class teacher called him and......\nThe teacher asked him why his results did not reflect his ability. Liton admitted that he memorised model answers without understanding the lessons. The teacher gave him a familiar problem with slightly different details. Liton found that he could not solve it by repeating a memorised answer. Together they worked through the idea behind the problem. The teacher advised him to attend classes regularly and ask questions when confused. Liton made a study plan based on his textbook, practice and revision. He began explaining answers in his own words instead of copying sheets. His understanding improved gradually, and he became more confident in examinations. He learned that lasting progress came from learning actively rather than collecting ready-made answers."
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "examYear": 2022,
+      "group": "dialogue",
+      "topic": "benefits of early rising",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 9,
+          "sourceMarks": 5,
+          "pdfPage": 46,
+          "instruction": "Suppose, you are Bakul and your friend is Nayon. Now, write a dialogue between you and your friend on the benefits of early rising.",
+          "subitems": [],
+          "answer": "Bakul: Hello, Nayon! How do you organise your mornings?\nNayon: I often wake late and rush to school without breakfast.\nBakul: A regular bedtime and an earlier start could make your morning less hurried.\nNayon: Should I reduce my sleep to wake early?\nBakul: No. Getting enough sleep is essential, especially for students.\nNayon: What could I do with a little extra time in the morning?\nBakul: Eat breakfast, prepare your books and review a short lesson calmly.\nNayon: Could I exercise too?\nBakul: Yes, if it suits your health and schedule, but do not sacrifice needed rest.\nNayon: I will put my phone away earlier and keep a regular sleep routine.\nBakul: Change gradually and ask a trusted adult for help if sleep remains difficult.\nNayon: Thank you. I want a balanced routine, not simply an earlier alarm."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "examYear": 2022,
+      "group": "dialogue",
+      "topic": "preparation for the coming examination",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 9,
+          "sourceMarks": 5,
+          "pdfPage": 48,
+          "instruction": "Write a dialogue between you and your friend about your preparation for the coming examination.",
+          "subitems": [],
+          "answer": "Me: Hello! How is your preparation for the coming examination?\nFriend: I have revised some subjects, but I am worried about mathematics.\nMe: Have you listed the topics you find difficult?\nFriend: Not yet. I keep rereading the whole book without a clear plan.\nMe: Make a realistic timetable and practise one topic at a time.\nFriend: How can I check whether I understand it?\nMe: Try questions without looking at the answers, then review your mistakes.\nFriend: What should I do when I cannot solve a problem?\nMe: Ask your teacher to explain the method rather than just memorising a solution.\nFriend: I should also practise finishing a paper within the allotted time.\nMe: Certainly, and leave time for sleep, meals and short breaks.\nFriend: Thank you. Let us compare our progress next week."
+        }
+      ]
+    },
+    {
+      "board": "Chattogram",
+      "examYear": 2022,
+      "group": "dialogue",
+      "topic": "road accidents and how to prevent it",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 9,
+          "sourceMarks": 5,
+          "pdfPage": 52,
+          "instruction": "Suppose, you are Tomai/Jessica. Your friend’s father has fallen in a road accident recently. Now, write a dialogue between you and your friend about road accidents and how to prevent it.",
+          "subitems": [],
+          "answer": "Tomai: Jessica, I am sorry to hear about your father’s road accident. How is he now?\nJessica: Thank you. He is receiving care, and our family is following the doctors’ advice.\nTomai: Road accidents cause so much suffering. What can reduce them?\nJessica: Drivers should follow speed limits, stay attentive and never drive when impaired or dangerously tired.\nTomai: Using a phone while driving is unsafe too.\nJessica: Yes. Vehicles also need proper maintenance and trained, licensed drivers.\nTomai: What can passengers and pedestrians do?\nJessica: Use appropriate seat belts or helmets, cross at safe designated places and remain alert to traffic.\nTomai: Authorities should improve crossings, lighting and enforcement of traffic rules.\nJessica: They should also ensure that emergency help can reach people quickly.\nTomai: I hope your father recovers well. Please tell me if our class can offer practical support.\nJessica: Thank you. Responsible behaviour and safer roads must be everyone’s concern."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "examYear": 2022,
+      "group": "dialogue",
+      "topic": "Digital Bangladesh",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 9,
+          "sourceMarks": 5,
+          "pdfPage": 54,
+          "instruction": "Suppose, you are Limon/Lima. Your friend Milon/Maliha wants to know about Digital Bangladesh. Now, write a dialogue between you and your friend about Digital Bangladesh.",
+          "subitems": [],
+          "answer": "Limon: Hello, Milon! You wanted to know about Digital Bangladesh.\nMilon: Yes. What does the phrase mean in this discussion?\nLimon: It refers to using digital technology to improve services, communication, education and economic opportunities.\nMilon: Can you give an example?\nLimon: People may use online information, digital payments and electronic applications where reliable services are available.\nMilon: Does everyone have equal access to these opportunities?\nLimon: No. Reliable connections, affordable devices, accessibility and digital skills are important challenges.\nMilon: We should help people learn rather than assume that everyone can use an app.\nLimon: Exactly. Services also need privacy protection, strong security and alternatives for people who cannot go online.\nMilon: How can students prepare?\nLimon: Learn useful computer skills, check information carefully and protect personal data.\nMilon: Thank you. Technology should serve people fairly, not leave them behind."
+        }
+      ]
+    },
+    {
+      "board": "Mymensingh",
+      "examYear": 2022,
+      "group": "dialogue",
+      "topic": "your plan that you are going to materialize after the SSC Examination",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 9,
+          "sourceMarks": 5,
+          "pdfPage": 60,
+          "instruction": "Suppose, you are Shamim/Shamima. Your friend is Rahim/ Rahima. You want to do something good for the people of your locality after your SSC Examination. Now, write a dialogue between you and your friend about your plan that you are going to materialize after the SSC Examination.",
+          "subitems": [],
+          "answer": "Shamim: Rahim, I would like to do something useful for our locality after the SSC Examination.\nRahim: That sounds worthwhile. What do people here actually need?\nShamim: We should first ask residents and our teachers instead of deciding for everyone.\nRahim: Some younger pupils have difficulty reading. Could we support them?\nShamim: Yes, with permission we could organise supervised reading sessions in the community library.\nRahim: We could invite adult volunteers and ask the librarian to choose suitable books.\nShamim: Let us keep the sessions free, welcoming and accessible.\nRahim: How will we know whether the programme helps?\nShamim: We can ask the children, their parents and the supervising teacher for feedback.\nRahim: We should make a modest timetable that volunteers can realistically follow.\nShamim: Agreed. We must also protect the children’s privacy and avoid posting their photos without proper permission.\nRahim: Let us discuss the idea with our teacher after the exams."
+        }
+      ]
+    }
+  ]
+}

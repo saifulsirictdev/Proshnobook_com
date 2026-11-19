@@ -1,3 +1,16 @@
+import { preparedSSCTextbookLiteratureItems } from "./prepared-ssc-textbook-literature";
+import { preparedSSCTextbookSeenItems } from "./prepared-ssc-textbook-seen";
+import { preparedRajshahiItems } from "./prepared-ssc-rajshahi";
+import { preparedSSCBoardBatch2 } from "./prepared-ssc-batch2";
+import { preparedSSCLiteratureItems } from "./prepared-ssc-literature";
+import { preparedSSCSchoolReadingItems } from "./prepared-ssc-school-reading";
+import { preparedSSCSchoolItems } from "./prepared-ssc-school";
+import { preparedSSCSchoolExerciseItems } from "./prepared-ssc-school-exercises";
+import { preparedSSCExerciseItems } from "./prepared-ssc-exercises";
+import { preparedSSCCreativeItems } from "./prepared-ssc-creative";
+import { preparedSSC2019Items } from "./prepared-ssc-2019";
+import { preparedSSC2020Items } from "./prepared-ssc-2020";
+import { preparedSSC2023Items } from "./prepared-ssc-2023";
 import seen from "../../docs/english/ssc-dhaka-2024-seen-review.json";
 import unseen from "../../docs/english/ssc-dhaka-2024-unseen-review.json";
 import more from "./data/ssc-dhaka-2024-items.json";
@@ -34,6 +47,19 @@ export function preparedSSCEnglishItems() {
       ...task, passageKey: "unseen", boardSource: source(index + 4, 2, index === 0 ? 5 : 10),
       instruction: task.id === "information" ? `${task.instruction}\nCaptain Mohiuddin Jahangir\nSpecialty: One of the greatest freedom fighters\nRecognition: Birshrestho` : task.instruction,
     })), unseen.passage),
+    ...preparedRajshahiItems(),
+    ...preparedSSCBoardBatch2(),
+    ...preparedSSCLiteratureItems(),
+    ...preparedSSCTextbookLiteratureItems(),
+    ...preparedSSCTextbookSeenItems(),
+    ...preparedSSC2023Items(),
+    ...preparedSSC2020Items(),
+    ...preparedSSC2019Items(),
+    ...preparedSSCCreativeItems(),
+    ...preparedSSCExerciseItems(),
+    ...preparedSSCSchoolItems(),
+    ...preparedSSCSchoolReadingItems(),
+    ...preparedSSCSchoolExerciseItems(),
     ...more.items.flatMap(entry => prepare(entry.group, entry.tasks.map(t => t.id), entry.tasks.map(task => {
       const { sourceQuestion, sourceMarks, pdfPage, ...content } = task;
       return { ...content, ...(entry.passage ? { passageKey: entry.group } : {}), boardSource: source(sourceQuestion, pdfPage, sourceMarks) };

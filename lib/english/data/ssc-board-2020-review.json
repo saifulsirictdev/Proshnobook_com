@@ -1,0 +1,792 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "examYear": 2020,
+  "notes": [
+    "Question images checked on PDF pp.61–62,64,66,71,74,76. Source passages and table layouts retained, including blank cells and header blanks. Answers assistant-prepared, not official keys; teacher review required.",
+    "Dhaka Armstrong passage begins on p.61 and continues on p.62. Collins remained in lunar orbit; summary avoids extending the source’s collective landing wording to him. Rajshahi Armstrong held as same biography rather than another distinct Unseen.",
+    "Jashore Volta source claims about honours require historical verification. Header blank (i) remains in the instruction; no original blank is prefilled. Table placement oddities retained.",
+    "Held Cumilla Lincoln historical errors, Sylhet Rouf martyrdom/enlistment claims and Dinajpur Fazlul Hoque historical claims; Mymensingh Bose table asks WWII dates absent from passage.",
+    "Held Chattogram email matching outdated equipment claim and Pasteur rearranging oversimplified medical account. Existing Fleming/Napoleon/Keats/Mandela exercises not duplicated.",
+    "Matching retains original source generalisations/grammar rather than endorsing them as universal claims. Suggested rearranging orders can admit alternatives; teacher judgement required."
+  ],
+  "items": [
+    {
+      "board": "Dhaka",
+      "group": "unseen",
+      "passage": "Neil Armstrong commanded the Gemini-8 Mission and became the first human to walk on the moon as commander of Apollo 11. He was born in Wapakoneta, Ohio, on August 5, 1930. He received a Bachelor of Science degree from Purdue University and a Master of Science degree from the University of Southern California. Astronauts Neil A. Armstrong, Buzz Aldrin and Michael Collins launched the mission to the moon with Apollo 11, on July 16 and landed on the moon on July 20, 1969. Neil A. Armstrong first stepped on to the surface and then Aldrin. They explored the surface and gathered moon rocks for over two hours. After exploring the surface they rejoined Collins in the orbiting mothership. Neil A. Armstrong died on August 25, 2012.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 62,
+          "instruction": "Complete the following table with information from the passage.\nNeil Armstrong",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "August 5, 1930"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Purdue University"
+            },
+            {
+              "text": "(iii)",
+              "answer": "July 16, 1969"
+            },
+            {
+              "text": "(iv)",
+              "answer": "first human to walk on the moon"
+            },
+            {
+              "text": "(v)",
+              "answer": "August 25, 2012"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Event",
+              "Year/Time",
+              "Place",
+              "Achievement"
+            ],
+            "rows": [
+              [
+                "Born",
+                "(i) ——",
+                "",
+                ""
+              ],
+              [
+                "Received BSc",
+                "",
+                "(ii) ——",
+                ""
+              ],
+              [
+                "Left for the moon",
+                "(iii) ——",
+                "",
+                ""
+              ],
+              [
+                "",
+                "20 July 1969",
+                "",
+                "(iv) ——"
+              ],
+              [
+                "Died",
+                "(v) ——",
+                "",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 62,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Neil Armstrong was an American astronaut who commanded Gemini-8 and Apollo 11. Born in Ohio in 1930, he studied at Purdue University and the University of Southern California. Apollo 11 launched on 16 July 1969 with Armstrong, Buzz Aldrin and Michael Collins. Armstrong and Aldrin landed on the moon on 20 July, explored its surface and collected rocks before rejoining Collins. Armstrong was the first human to walk on the moon. He died on 25 August 2012."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "unseen",
+      "passage": "Alessandro Volta was a famous Italian physicist. He is well-known for the invention of the first battery in 1800. He was born in Como, Italy on February 18, 1745. In 1774, he became a professor of Physics at the Royal School in Como. Volta studied the Chemistry of gases from 17761778. In November, 1777, he discovered methane in a lake. In 1779, he became a professor of experimental physics at the University of Pavia. In 1794, Volta married an aristocratic lady. In honor of his work, he was made a count by Napoleon Bonaparte in 1801. In 1782, he travelled to France and Germany. In 1815, the Emperor of Austria made him the director of Philosophical Faculty of Padua. In 1819, he retired and settled in his native town where he died in March, 1827.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 66,
+          "instruction": "Complete the following table with information from the passage.\nAbout Alessandro Volta\nAims: introducing his invention to the readers\nLife span: Born in 1745 and died in 1827 after (i) —— years of his retirement.",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "eight"
+            },
+            {
+              "text": "(ii)",
+              "answer": "the Royal School in Como"
+            },
+            {
+              "text": "(iii)",
+              "answer": "November, 1777"
+            },
+            {
+              "text": "(iv)",
+              "answer": "the University of Pavia"
+            },
+            {
+              "text": "(v)",
+              "answer": "the Emperor of Austria"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event",
+              "Year/Time",
+              "Place/Country",
+              "Work/field"
+            ],
+            "rows": [
+              [
+                "Alessandro Volta",
+                "Professor",
+                "1774",
+                "(ii) ——",
+                "Physics"
+              ],
+              [
+                "He",
+                "discovered",
+                "(iii) ——",
+                "methane in a lake",
+                ""
+              ],
+              [
+                "He",
+                "joined as a professor",
+                "1779",
+                "(iv) ——",
+                "Experimental Physics"
+              ],
+              [
+                "(v) ——",
+                "made Alessandro Volta director",
+                "1815",
+                "Padua",
+                "Philosophical faculty"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 66,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Alessandro Volta was an Italian physicist best known for inventing the first battery in 1800. Born in Como in 1745, he became a professor there in 1774 and later taught experimental physics at Pavia. He studied gases and discovered methane in 1777. The passage describes honours and appointments he received from European rulers, including a directorship at Padua in 1815. He retired in 1819 and died in his native town in March 1827."
+        }
+      ]
+    },
+    {
+      "board": "Chattogram",
+      "group": "unseen",
+      "passage": "Humayun Ahmed was a teacher, author, dramatist, playwright and filmmaker. He was born in Mohongonj, Netrokona, Mymensingh on 13 November, 1948. His father Faizur Rahman Ahmed, a police officer, was killed by Pakistani military during the liberation war of Bangladesh in 1971. He passed SSC Examination from Bogura Zilla School in 1965 and stood second in the merit list in Rajshahi Education Board. He passed his HSC exam from Dhaka College in 1967. He took his Honours and Masters in Chemistry from the University of Dhaka with first class. He did his Ph.D. from North Dakota State University. He worked as a Professor of Chemistry in Dhaka University. Humayun Ahmed reached his peak of fame with the publication of his novel Nondito Noroke in 1972. He wrote over 200 fiction and non-fiction books all of which were best sellers in Bangladesh. His first television drama was ―Prothom Prohor'. It was followed by many dramas and drama serials. He also directed many films based on his own stories. For his outstanding achievements he was honoured with many awards including Bangla Academy Award (1981) and Ekushey Padak (1994). He died on 19 July, 2012 at Bellevue Hospital in New York. He was burried in Nuhash Palli.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 71,
+          "instruction": "Complete the following table with information from the passage.\n",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "Bogura Zilla School"
+            },
+            {
+              "text": "(ii)",
+              "answer": "in 1971"
+            },
+            {
+              "text": "(iii)",
+              "answer": "was published"
+            },
+            {
+              "text": "(iv)",
+              "answer": "over 200 fiction and non-fiction books"
+            },
+            {
+              "text": "(v)",
+              "answer": "Bellevue Hospital in New York"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/Activity",
+              "Year/When",
+              "Place/Where"
+            ],
+            "rows": [
+              [
+                "Humayun Ahmed",
+                "passed SSC",
+                "in 1965",
+                "(i) ——"
+              ],
+              [
+                "Faizur Rahman Ahmed",
+                "was killed",
+                "(ii) ——",
+                ""
+              ],
+              [
+                "Nondito Noroke",
+                "(iii) ——",
+                "in 1972",
+                ""
+              ],
+              [
+                "(iv) ——",
+                "were written by him",
+                "",
+                "during his life time"
+              ],
+              [
+                "He",
+                "died",
+                "on 19 July, 2012",
+                "(v) ——"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 71,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Humayun Ahmed was a Bangladeshi teacher, writer, dramatist and filmmaker. Born in 1948, he studied at Bogura Zilla School, Dhaka College and the University of Dhaka before earning a doctorate from North Dakota State University. He taught chemistry at Dhaka University. His novel Nondito Noroke, published in 1972, brought him fame. He wrote more than 200 books and created television dramas and films. His achievements earned several awards, including the Bangla Academy Award and Ekushey Padak. He died in New York in 2012 and was buried at Nuhash Palli."
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "group": "unseen",
+      "passage": "Abul Fazal, educationist and writer, was born on 1 July 1903 in the village of Keochia in Satkania upaziila of Chattogram district. His father, Mulavi Fazlur Rahman, was an Imam of Chattogram Jame Masjid. He completed his BA from Dhaka University in 1928. In 1930, he did his BT from Teachers' Training College, Dhaka. He completed his Masters degree in Bangla Language and Literature from Kolkata University in 1940. He worked as a teacher of Bangla in Krishnanagar College and Chattogram College. In 1973 he was made Vice-chancellor of Chattogram University. In 1975 he Joined the Advisory Council of the Government of Bangladesh, but resigned on 23 June 1977. He wrote novels, short stories, plays, memories of travels etc. His contribution to Bangla literature earned him the Bangla Academy Award (1962), the President's Award (1963), the Adamjee Literary Award (1966) etc. He died on 4 May 1983 in Chattogram.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 76,
+          "instruction": "Complete the following table with information from the passage.\nBiography of Abul Fazal\nKnown as: educationist and writer\nLife span: from 1 July 1903 to (i) ——",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "4 May 1983"
+            },
+            {
+              "text": "(ii)",
+              "answer": "completed his Masters degree"
+            },
+            {
+              "text": "(iii)",
+              "answer": "Bangla Language and Literature"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Chattogram University"
+            },
+            {
+              "text": "(v)",
+              "answer": "in 1975"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who",
+              "What",
+              "Event/Activity",
+              "Time",
+              "Place",
+              "Specialty"
+            ],
+            "rows": [
+              [
+                "Abul Fazal",
+                "education",
+                "(ii) ——",
+                "in 1940",
+                "Kolkata University",
+                "(iii) ——"
+              ],
+              [
+                "Abul Fazal",
+                "professional life",
+                "Vice-chancellor",
+                "in 1973",
+                "(iv) ——",
+                ""
+              ],
+              [
+                "Abul Fazal",
+                "",
+                "joined",
+                "(v) ——",
+                "Advisory council",
+                "of the Government"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 76,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Abul Fazal was a Bangladeshi educationist and writer born in Chattogram in 1903. He studied at Dhaka University, Teachers’ Training College and Kolkata University, completing his master’s degree in Bangla in 1940. He taught at colleges and became Vice-chancellor of Chattogram University in 1973. He joined the government’s Advisory Council in 1975 and resigned in 1977. He wrote fiction, plays and travel accounts, receiving several literary awards. He died in Chattogram on 4 May 1983."
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 62,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Democracy means a system of government."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It allows freedom of speech, religion and political opinions."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "It means fair and equal treatment for citizens."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "People elect their representative directly in a democratic country."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Free and fair election is the precondition of democracy."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Democracy means",
+                "i. fair and equal",
+                "i. of democracy."
+              ],
+              [
+                "(b) It allows freedom",
+                "ii. a system",
+                "ii. in a democratic country."
+              ],
+              [
+                "(c) It means",
+                "iii. of speech, religion",
+                "iii. of government."
+              ],
+              [
+                "(d) People elect",
+                "iv. their representative directly",
+                "iv. and political opinions."
+              ],
+              [
+                "(e) Free and fair",
+                "v. election is the precondition",
+                "v. treatment for citizens."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 64,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Punctuality is a virtue which can make us successful in future."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It helps us to become accurate in timing."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "A punctual person is loved by all."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "He who is punctual never gets late in his work."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "If we become punctual we shall surely succeed in life."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Punctuality is a virtue",
+                "i. person is",
+                "i. accurate in timing."
+              ],
+              [
+                "(b) It helps",
+                "ii. which can make us",
+                "ii. loved by all."
+              ],
+              [
+                "(c) A punctual",
+                "iii. punctual we shall",
+                "iii. surely succeed in life."
+              ],
+              [
+                "(d) He who",
+                "iv. is punctual never",
+                "iv. successful in future."
+              ],
+              [
+                "(e) If we become",
+                "v. us to become",
+                "v. gets late in his work."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 66,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Patriotism is a great virtue without which we cannot dream of a developed nation."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It is such a virtue for which a citizen doesn’t hesitate to shed the last drop of his blood."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "Patriotism inspires us to be ready to fight against all oppressions that can hinder our progress."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "So, we all should encourage our children to be patriot and to be devoted to their respective duties and responsibilities."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Radio and television should telecast programmes that inspire children to prepare themselves to work for the country."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Patriotism is a great virtue",
+                "i. to be ready to fight against",
+                "i. themselves to work for the country."
+              ],
+              [
+                "(b) It is such a virtue",
+                "ii. to be patriot and to be devoted",
+                "ii. all oppressions that can hinder our progress."
+              ],
+              [
+                "(c) Patriotism inspires us",
+                "iii. that inspire children to prepare",
+                "iii. dream of a developed nation."
+              ],
+              [
+                "(d) So, we all should encourage our children",
+                "iv. without which we cannot",
+                "iv. to their respective duties and responsibilities."
+              ],
+              [
+                "(e) Radio and television should telecast programmes",
+                "v. for which a citizen doesn’t hesitate",
+                "v. to shed the last drop of his blood."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 74,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "ICT means information and communication technology"
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "In education sector ICT works as a means of class presentation"
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "In health science ICT is used to diagnose disease and give good treatment"
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Teachers use ICT to take multimedia classes"
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Patients can get treatment through telemedicine which is run with the help of ICT"
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) ICT means",
+                "i. ICT to take",
+                "i. multimedia classes"
+              ],
+              [
+                "(b) In education sector",
+                "ii. through telemedicine which",
+                "ii. is run with the help of ICT"
+              ],
+              [
+                "(c) In health science ICT is",
+                "iii. ICT works as a means",
+                "iii. and give good treatment"
+              ],
+              [
+                "(d) Teachers use",
+                "iv. used to diagnose disease",
+                "iv. of class presentation"
+              ],
+              [
+                "(e) Patients can get treatment",
+                "v. information and",
+                "v. communication technology"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 76,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Bangladesh lies in an active earthquake zone."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "During recent years Earthquakes recur frequently in Bangladesh."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The recurrences of quakes in recent years have frightened everybody of our country."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "Experts gave warning regarding earthquake."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "Earthquake-resistant building code should be followed strictly at the time of building any house."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Bangladesh lies",
+                "i. gave warning",
+                "i. everybody of our country."
+              ],
+              [
+                "(b) During recent years",
+                "ii. should be followed strictly",
+                "ii. earthquake zone."
+              ],
+              [
+                "(c) The recurrences of quakes",
+                "iii. in an active",
+                "iii. at the time of building any house."
+              ],
+              [
+                "(d) Experts",
+                "iv. Earthquakes recur",
+                "iv. frequently in Bangladesh."
+              ],
+              [
+                "(e) Earthquake-resistant building code",
+                "v. in recent years have frightened",
+                "v. regarding earthquake."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 62,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "In the evening, a lion entered the cave.",
+              "answer": "5"
+            },
+            {
+              "text": "One day, he fled from his master's house and took shelter in a cave.",
+              "answer": "4"
+            },
+            {
+              "text": "Once upon a time, there lived a young man named Androcles.",
+              "answer": "1"
+            },
+            {
+              "text": "He came near Androcles and lifted his paw.",
+              "answer": "7"
+            },
+            {
+              "text": "He was caught by a slave merchant who sold him to a rich man in another country.",
+              "answer": "2"
+            },
+            {
+              "text": "The lion seemed wounded as he was groaning.",
+              "answer": "6"
+            },
+            {
+              "text": "His master was very bad and inflicted heavy torture on him.",
+              "answer": "3"
+            },
+            {
+              "text": "He took the lion’s paw in his hand and removed a big thorn from it. The lion was relieved of his pain.",
+              "answer": "8"
+            }
+          ],
+          "answer": "c → e → g → b → a → f → d → h"
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "rearranging",
+      "tasks": [
+        {
+          "id": "rearranging",
+          "sourceQuestion": 7,
+          "sourceMarks": 8,
+          "pdfPage": 66,
+          "instruction": "Put the following parts of the story in correct order to make the whole story. Only the corresponding numbers of the sentences need to be written.",
+          "subitems": [
+            {
+              "text": "They got money, made a shelter in a makeshift house and started making “Nakshi Kantha” with new and old clothes and thread of different colours.",
+              "answer": "5"
+            },
+            {
+              "text": "Yet Nur Banu did not become frustrated and inspired her husband to stand against all odds.",
+              "answer": "3"
+            },
+            {
+              "text": "Her husband was a farmer and they had everything but they became helpless.",
+              "answer": "2"
+            },
+            {
+              "text": "As Nur Banu was good at art in her early age, she could make wonderful design in her Kanthas.",
+              "answer": "6"
+            },
+            {
+              "text": "A few years back Nur Banu lost everything for the river erosion.",
+              "answer": "1"
+            },
+            {
+              "text": "Her husband sold them in the market and became solvent.",
+              "answer": "8"
+            },
+            {
+              "text": "She together with her husband worked hard and made a lot of Kanthas.",
+              "answer": "7"
+            },
+            {
+              "text": "She had an ornament made of gold and she gave it to her husband to sell it.",
+              "answer": "4"
+            }
+          ],
+          "answer": "e → c → b → h → a → d → g → f"
+        }
+      ]
+    }
+  ]
+}

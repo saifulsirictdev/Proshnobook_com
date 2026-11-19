@@ -1,0 +1,310 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "examYear": 2019,
+  "notes": [
+    "Question images checked on PDF pp.88–89,95,98. Shahidullah passage continues across pp.88–89. Original header blanks and blank cells retained; answers assistant-prepared, not official keys; teacher review required.",
+    "Source Sorborne spelling and historical degree/publication claims retained, not independently certified. SAARC membership and activity statements describe the source-era text, not verified current political status. Kathmandu identifies the capital named in the passage.",
+    "Held Thai rescue discovery/date discrepancies, Gagarin vocational/bachelor degree mismatch, Altaf Mahmud song timeline, and 2018 Eiffel height/superlative wording. Repeat Babbage/Armstrong/Milton biographies not counted as distinct Unseen.",
+    "Matching retains literary personification of the moon and source moral generalisations. No new poem/story extract invented."
+  ],
+  "items": [
+    {
+      "board": "Jashore",
+      "group": "unseen",
+      "passage": "The great men were born in different places of this world but their activities make them familiar and closer to us. Dr. Muhammad Shahidullah was one of those who contributed a lot towards Bangla language and literature. He was the greatest scholar of Bengal. This great scholar was born on July, 1885 at 24 Pargonas in West Bengal, India. He passed his Entrance examination in 1904 and obtained his B.A. degree six years later. It took him two years to complete his M.A. and another two years for his Bachelor of Law Degree. He later joined the University of Dhaka in 1921 as a Professor of Sanskrit and Bengali. He was awarded the Doctorate Degree from Sorborne University, Paris in 1928. \"Bangla Shahitter Katha\", the first well-arranged history of Bengali literature was composed by him that was published in 1953. This great scholar remained busy with his work till he became seriously ill in 1967 and was confined to bed for about two and a half years. Dr. Shahidullah breathed his last on 13 July 1969 in Dhaka. We remember him with great respect and gratitude.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 89,
+          "instruction": "Complete the following table with information from the passage.\nDr. Muhammad Shahidullah\nSpeciality: Great contribution to Bengali literature\nTime: Dr. Muhammad Shahidullah was born in (i) ——",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "July, 1885"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Dr. Muhammad Shahidullah"
+            },
+            {
+              "text": "(iii)",
+              "answer": "the University of Dhaka"
+            },
+            {
+              "text": "(iv)",
+              "answer": "was awarded the Doctorate Degree"
+            },
+            {
+              "text": "(v)",
+              "answer": "1953"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/Activity",
+              "When",
+              "Where"
+            ],
+            "rows": [
+              [
+                "(ii) ——",
+                "passed Entrance examination",
+                "in 1904",
+                ""
+              ],
+              [
+                "Dr. Muhammad Shahidullah",
+                "joined as Professor",
+                "in 1921",
+                "(iii) ——"
+              ],
+              [
+                "He",
+                "(iv) ——",
+                "in 1928",
+                "Sorborne University, Paris"
+              ],
+              [
+                "“Bangla Shahitter Katha”",
+                "was published",
+                "in (v) ——",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 89,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "Dr. Muhammad Shahidullah was a scholar who contributed greatly to Bangla language and literature. Born in 1885 in West Bengal, he completed his Entrance examination in 1904 and continued his studies in arts and law. He joined Dhaka University in 1921 as a professor of Sanskrit and Bengali and received a doctorate from a university in Paris in 1928. His Bangla Shahitter Katha was published in 1953. He worked until illness confined him to bed and died in Dhaka on 13 July 1969."
+        }
+      ]
+    },
+    {
+      "board": "Sylhet",
+      "group": "unseen",
+      "passage": "SAARC is a regional organization for mutual cooperation, friendship and development. The full form of SAARC is 'South Asian Association for Regional Cooperation'. At the initial stage, there were only seven developing nations to form the organization. Later, Afghanistan was included as one of its member countries. SAARC started its journey through holding its first conference in Dhaka on 8 December 1985. At present, the member countries of this organization are Bangladesh, Bhutan, Maldives, Nepal, India, Pakistan, Sri Lanka and Afghanistan. The secretariat of this organization is situated in the capital of Nepal. Its head is called Secretary General. There is a deep relationship between Bangladesh and SAARC. It was Bangladesh that took the first initiative to form SAARC. As the initiator of SAARC, Bangladesh has been playing a significant and strong role in its different activities. As one of the member countries it has also been making every effort to expand the trade between the member countries and to solve the regional conflicts and existing crisis between the neighbouring countries.",
+      "tasks": [
+        {
+          "id": "information",
+          "sourceQuestion": 4,
+          "sourceMarks": 5,
+          "pdfPage": 95,
+          "instruction": "Complete the following table with information from the passage.\nAim: Mutual cooperation\nTime: Officially started in (i) ——",
+          "subitems": [
+            {
+              "text": "(i)",
+              "answer": "1985"
+            },
+            {
+              "text": "(ii)",
+              "answer": "Bangladesh"
+            },
+            {
+              "text": "(iii)",
+              "answer": "the capital of Nepal (Kathmandu)"
+            },
+            {
+              "text": "(iv)",
+              "answer": "Afghanistan"
+            },
+            {
+              "text": "(v)",
+              "answer": "was held"
+            }
+          ],
+          "table": {
+            "headers": [
+              "Who/What",
+              "Event/Activity",
+              "When",
+              "Where"
+            ],
+            "rows": [
+              [
+                "(ii) ——",
+                "initiator of SAARC",
+                "1985",
+                ""
+              ],
+              [
+                "Secretariat",
+                "located",
+                "",
+                "(iii) ——"
+              ],
+              [
+                "(iv) ——",
+                "included as the last member country",
+                "",
+                ""
+              ],
+              [
+                "First conference",
+                "(v) ——",
+                "",
+                "Dhaka"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "summary",
+          "sourceQuestion": 5,
+          "sourceMarks": 10,
+          "pdfPage": 95,
+          "instruction": "Write a summary of the above passage in your own words.",
+          "subitems": [],
+          "answer": "SAARC stands for South Asian Association for Regional Cooperation. It was formed to promote mutual cooperation, friendship and development among South Asian countries. Its first conference was held in Dhaka on 8 December 1985. Originally it had seven members, and Afghanistan joined later. Its secretariat is in Nepal’s capital and is headed by a Secretary General. Bangladesh initiated the organisation and, according to the passage, has worked to expand regional trade and address conflicts among neighbouring countries."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 89,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "Morality develops the conscience by which man can judge good or bad and right or wrong."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "It helps a man guide himself in a proper way and cultivate all the virtues to become a complete man."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "It is such a great natural power that it grows naturally in human behaviour which cannot ignore logic and reason."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "But nowadays moral erosion is increasing and we are losing the invaluable virtue of morality."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "If we do not practise morality from our childhood, we shall fail in every aspect of life."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) Morality develops the conscience",
+                "i. himself in a proper way and cultivate",
+                "i. which cannot ignore logic and reason."
+              ],
+              [
+                "(b) It helps a man guide",
+                "ii. is increasing and we are losing",
+                "ii. and right or wrong."
+              ],
+              [
+                "(c) It is such a great natural power",
+                "iii. from our childhood, we shall",
+                "iii. the invaluable virtue of morality."
+              ],
+              [
+                "(d) But nowadays moral erosion",
+                "iv. that it grows naturally in human behaviour",
+                "iv. fail in every aspect of life."
+              ],
+              [
+                "(e) If we do not practise morality",
+                "v. by which man can judge good or bad",
+                "v. all the virtues to become a complete man."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "board": "Barishal",
+      "group": "matching",
+      "tasks": [
+        {
+          "id": "matching",
+          "sourceQuestion": 6,
+          "sourceMarks": 5,
+          "pdfPage": 98,
+          "instruction": "Match the parts of sentences given in columns A, B and C to write five complete sentences.",
+          "subitems": [
+            {
+              "text": "Complete sentence (a).",
+              "answer": "The moon has an appeal on poets and artists."
+            },
+            {
+              "text": "Complete sentence (b).",
+              "answer": "She has no light of her own."
+            },
+            {
+              "text": "Complete sentence (c).",
+              "answer": "The sun pours forth a vast flood of light."
+            },
+            {
+              "text": "Complete sentence (d).",
+              "answer": "To illuminate the earth the moon reflects a small fraction of brightness."
+            },
+            {
+              "text": "Complete sentence (e).",
+              "answer": "The moon’s light depends on the gift of the sun."
+            }
+          ],
+          "table": {
+            "headers": [
+              "A",
+              "B",
+              "C"
+            ],
+            "rows": [
+              [
+                "(a) The moon",
+                "i. has no light",
+                "i. the gift of the sun."
+              ],
+              [
+                "(b) She",
+                "ii. the moon reflects",
+                "ii. a small fraction of brightness."
+              ],
+              [
+                "(c) The sun",
+                "iii. has an appeal",
+                "iii. vast flood of light."
+              ],
+              [
+                "(d) To illuminate the earth",
+                "iv. light depends on",
+                "iv. of her own."
+              ],
+              [
+                "(e) The moon’s",
+                "v. pours forth a",
+                "v. on poets and artists."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

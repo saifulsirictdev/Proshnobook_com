@@ -1,0 +1,1027 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1_ZqFc41JXqhoL2cQPyWIz1NylNqZVp4o",
+  "sourceSha256": "768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874",
+  "examYear": 2023,
+  "notes": [
+    "Source questions checked against PDF pages 29,36,38,39,41,42. Answers are assistant-prepared; teacher review required.",
+    "2023 original MCQ had 10 parts for 10 marks and comprehension 6 parts for 12 marks. Current practice selects 7 and 5 without rewording; original counts, full question arrays and selected original letters retained. Not an intact historic-paper reproduction.",
+    "Creative prompts originally carry 12 marks; current practice assigns 15 and retains the original mark metadata. Answers are illustrative, not claimed official keys.",
+    "Mymensingh MCQ(d) and Dinajpur MCQ(a,f) not selected due to ambiguity; full source question wording remains in sourceQuestions.",
+    "Dinajpur comprehension(b) answers the explicit conversion statement rather than inventing a new middle-age event.",
+    "Source-era claims/statistics, terminology, scientific recommendations and spellings retained, not certified as current facts.",
+    "2023 Unseen tables have six blanks versus current five; none silently truncated or prefilled. 2023 matching also has seven sentences versus five.",
+    "Repeat Dhaka/Sylhet Independence Day, Jashore Meherjan and Barishal Pritilata sources were not added as new passages.",
+    "Additional prompts checked against PDF pages 22–23,25,27. Dhaka Lipi passage continues from p.22 to p.23; Jashore repeat Lipi not counted again. Rajshahi air-pollution gap repeats existing Mymensingh source, held as duplicate.",
+    "Creative continuations are illustrative and exactly ten new sentences where requested; dialogues are illustrative. Jashore games/sports dialogue held as overlapping existing physical-exercise theme, not counted for padding."
+  ],
+  "items": [
+    {
+      "board": "Barishal",
+      "group": "seen-1",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 10,
+          "pdfPage": 36,
+          "instruction": "Choose the best answer from the alternatives.",
+          "subitems": [
+            {
+              "text": "Pahela Boishakh is a day of ——.",
+              "options": [
+                "agony",
+                "sorrows",
+                "joy",
+                "suffering"
+              ],
+              "answer": "joy"
+            },
+            {
+              "text": "The day is conventionally observed ——.",
+              "options": [
+                "without missing a year",
+                "after two years",
+                "every month",
+                "daily"
+              ],
+              "answer": "without missing a year"
+            },
+            {
+              "text": "The day signifies ——.",
+              "options": [
+                "cultural difference",
+                "Bangalee culture and tradition",
+                "Bengali food",
+                "contemporaiy worries"
+              ],
+              "answer": "Bangalee culture and tradition"
+            },
+            {
+              "text": "On Pahela Boishakh, people enjoy having ——.",
+              "options": [
+                "rich dish",
+                "delicious dish",
+                "unconventional dish",
+                "traditional dish"
+              ],
+              "answer": "traditional dish"
+            },
+            {
+              "text": "The biggest carnival of the state is organised by ——.",
+              "options": [
+                "the people of all classes",
+                "Chhayanaut",
+                "The Fine Arts students of Dhaka University",
+                "different organizations"
+              ],
+              "answer": "The Fine Arts students of Dhaka University"
+            },
+            {
+              "text": "On this day, the whole country wears a/an —— look.",
+              "options": [
+                "depressed",
+                "unhappy",
+                "lethargic",
+                "jubilant"
+              ],
+              "answer": "jubilant"
+            },
+            {
+              "text": "“People from all walks of life” means ——.",
+              "options": [
+                "the rich people of the country",
+                "all the aristocratic people of the country",
+                "all categories of people",
+                "people of an organisation"
+              ],
+              "answer": "all categories of people"
+            }
+          ],
+          "originalSubitemCount": 10,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "j"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "Pahela Boishakh is a day of ——.",
+              "options": [
+                "agony",
+                "sorrows",
+                "joy",
+                "suffering"
+              ]
+            },
+            {
+              "text": "The day is conventionally observed ——.",
+              "options": [
+                "without missing a year",
+                "after two years",
+                "every month",
+                "daily"
+              ]
+            },
+            {
+              "text": "The day signifies ——.",
+              "options": [
+                "cultural difference",
+                "Bangalee culture and tradition",
+                "Bengali food",
+                "contemporaiy worries"
+              ]
+            },
+            {
+              "text": "On Pahela Boishakh, people enjoy having ——.",
+              "options": [
+                "rich dish",
+                "delicious dish",
+                "unconventional dish",
+                "traditional dish"
+              ]
+            },
+            {
+              "text": "In the text, the word ‘ethnic’ is related to the ——.",
+              "options": [
+                "position",
+                "people",
+                "country",
+                "programme"
+              ]
+            },
+            {
+              "text": "The biggest carnival of the state is organised by ——.",
+              "options": [
+                "the people of all classes",
+                "Chhayanaut",
+                "The Fine Arts students of Dhaka University",
+                "different organizations"
+              ]
+            },
+            {
+              "text": "On this day, the whole country wears a/an —— look.",
+              "options": [
+                "depressed",
+                "unhappy",
+                "lethargic",
+                "jubilant"
+              ]
+            },
+            {
+              "text": "What does the phrase 'the masks and wreaths’ represent?",
+              "options": [
+                "Our Bangalee culture",
+                "Social activities",
+                "Joys and sorrows of contemporary life",
+                "Cultural diversity"
+              ]
+            },
+            {
+              "text": "What is the closest meaning of the word ‘adorn’ in the text?",
+              "options": [
+                "Organise",
+                "Wear",
+                "Beautify",
+                "Arrange"
+              ]
+            },
+            {
+              "text": "“People from all walks of life” means ——.",
+              "options": [
+                "the rich people of the country",
+                "all the aristocratic people of the country",
+                "all categories of people",
+                "people of an organisation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 12,
+          "pdfPage": 36,
+          "instruction": "Answer the following questions in your own words.",
+          "subitems": [
+            {
+              "text": "When do people get up on Pahela Boishakh?",
+              "answer": "People wake up early in the morning on Pahela Boishakh."
+            },
+            {
+              "text": "How does the cultural programme begin?",
+              "answer": "The cultural programme begins at sunrise with the famous Tagore song “Esho-he-Boishakh, Esho Esho”."
+            },
+            {
+              "text": "What do newspapers bring out on this day?",
+              "answer": "Newspapers bring out special supplements on the day."
+            },
+            {
+              "text": "What does the celebration of Pahela Boishakh mark?",
+              "answer": "The celebration marks a day of cultural unity for the whole nation."
+            },
+            {
+              "text": "How do people dress themselves on this day?",
+              "answer": "People wear traditional clothes. The passage describes women wearing white sarees with red borders, colourful bangles and flowers, and men wearing pajamas and punjabis."
+            }
+          ],
+          "originalSubitemCount": 6,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "When do people get up on Pahela Boishakh?"
+            },
+            {
+              "text": "How does the cultural programme begin?"
+            },
+            {
+              "text": "What do newspapers bring out on this day?"
+            },
+            {
+              "text": "What does the celebration of Pahela Boishakh mark?"
+            },
+            {
+              "text": "How do people dress themselves on this day?"
+            },
+            {
+              "text": "“The day inspires people to start life with renewed hopes and aspirations.”—Explain the statement in 2/3 sentences."
+            }
+          ]
+        }
+      ],
+      "passage": "'Pahela Boishakh' is the first day of Bangla new year. The day is a public holiday. This day has a special significance for us as it is a part of Bangalee culture and tradition. People from all walks of life, irrespective of their ethnic identity or religious beliefs, celebrate the day with traditional festivities. On this day, the whole of Bangladesh is in a festive mood. The day inspires people to start life with renewed hopes and aspirations. Every year the day is celebrated traditionally. People wake up early in the morning, have a bath and wear traditional clothes. Women wear white sarees with red borders and adorn themselves with colourful churis and flowers, while men dress themselves in pajamas and punjabis. It is a day when people love eating traditional food. One of the most colourful events of the day is held in Dhaka. Early in the morning, people in hundreds and thousands pour in from all directions to attend the cultural function at Ramna Batamul organised by Chhayanaut. The cultural programme begins just at sunrise and the renowned artists of the country take part in the programme that starts with the famous Tagore-song Esho-he-Boishakh, Esho Esho .......... Artists also sing traditional folk songs, and perform classical dances to the rhythm of musical instruments. People also come to join the colourful processions, the biggest carnival of the country, organised by the Fine Arts students of Dhaka University. The procession usually displays the traditional practices of Bangalee culture. The masks and wreaths worn by the people are so fascinating! Often they symbolise contemporary worries or happiness in the national life. It attracts an increasing number of foreign tourists every year. The day is also observed all over the country. Different social and cultural organisations and educational institutions celebrate the day with their own cultural programmes. On this day, newspapers bring out special supplements. There are also special programmes on the radio and television. The celebration of Pahela Boishakh marks a day of cultural unity for the whole nation."
+    },
+    {
+      "board": "Dinajpur",
+      "group": "seen-1",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 10,
+          "pdfPage": 38,
+          "instruction": "Choose the best answer from the alternatives.",
+          "subitems": [
+            {
+              "text": "The word ‘aspire’ means ——.",
+              "options": [
+                "deprive",
+                "frustrate",
+                "wish",
+                "appeal"
+              ],
+              "answer": "wish"
+            },
+            {
+              "text": "The word ‘adopt’ means ——.",
+              "options": [
+                "to reject something new",
+                "to deny something new",
+                "to fall something",
+                "to accept something new"
+              ],
+              "answer": "to accept something new"
+            },
+            {
+              "text": "What type of talent did the teachers recognise in Madhusudan?",
+              "options": [
+                "Artistic",
+                "Literary",
+                "Mathematical",
+                "Musical"
+              ],
+              "answer": "Literary"
+            },
+            {
+              "text": "When did Madhusudan start to believe that his birth was not in the right place?",
+              "options": [
+                "Since his childhood",
+                "Since his teenage",
+                "Since his middle age",
+                "After his youth"
+              ],
+              "answer": "Since his teenage"
+            },
+            {
+              "text": "The word ‘ardent’ means ——.",
+              "options": [
+                "showing strong feelings",
+                "closely fit",
+                "comparable",
+                "unhappy"
+              ],
+              "answer": "showing strong feelings"
+            },
+            {
+              "text": "The name of the first Bangla epic is ——.",
+              "options": [
+                "Kopotaksha Nad",
+                "Gitanjali",
+                "Meghnad Badh Kabya",
+                "Gitobitan"
+              ],
+              "answer": "Meghnad Badh Kabya"
+            },
+            {
+              "text": "Madhusudan was a sojourner in Europe”, the line means ——.",
+              "options": [
+                "He left Europe earlier",
+                "He lived in Europe for a short period",
+                "He lived in Sagordari for a short period",
+                "He lived in Europe for a long period"
+              ],
+              "answer": "He lived in Europe for a short period"
+            }
+          ],
+          "originalSubitemCount": 10,
+          "selectedParts": [
+            "b",
+            "c",
+            "d",
+            "g",
+            "h",
+            "i",
+            "j"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "“Kopotaksha Nad” is a ——.",
+              "options": [
+                "poem",
+                "sonnet",
+                "story",
+                "epic"
+              ]
+            },
+            {
+              "text": "The word ‘aspire’ means ——.",
+              "options": [
+                "deprive",
+                "frustrate",
+                "wish",
+                "appeal"
+              ]
+            },
+            {
+              "text": "The word ‘adopt’ means ——.",
+              "options": [
+                "to reject something new",
+                "to deny something new",
+                "to fall something",
+                "to accept something new"
+              ]
+            },
+            {
+              "text": "What type of talent did the teachers recognise in Madhusudan?",
+              "options": [
+                "Artistic",
+                "Literary",
+                "Mathematical",
+                "Musical"
+              ]
+            },
+            {
+              "text": "The word ‘ire’ in the passage means ——.",
+              "options": [
+                "brightness",
+                "talent",
+                "formal anger",
+                "formal change"
+              ]
+            },
+            {
+              "text": "His days in Europe were full of ——.",
+              "options": [
+                "hope",
+                "fun",
+                "appreciation",
+                "hardship"
+              ]
+            },
+            {
+              "text": "When did Madhusudan start to believe that his birth was not in the right place?",
+              "options": [
+                "Since his childhood",
+                "Since his teenage",
+                "Since his middle age",
+                "After his youth"
+              ]
+            },
+            {
+              "text": "The word ‘ardent’ means ——.",
+              "options": [
+                "showing strong feelings",
+                "closely fit",
+                "comparable",
+                "unhappy"
+              ]
+            },
+            {
+              "text": "The name of the first Bangla epic is ——.",
+              "options": [
+                "Kopotaksha Nad",
+                "Gitanjali",
+                "Meghnad Badh Kabya",
+                "Gitobitan"
+              ]
+            },
+            {
+              "text": "Madhusudan was a sojourner in Europe”, the line means ——.",
+              "options": [
+                "He left Europe earlier",
+                "He lived in Europe for a short period",
+                "He lived in Sagordari for a short period",
+                "He lived in Europe for a long period"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 12,
+          "pdfPage": 38,
+          "instruction": "Answer the following questions in your own words.",
+          "subitems": [
+            {
+              "text": "In what manner did Madhusudan want to grow himself?",
+              "answer": "Madhusudan wanted to become English in form and manner. He wished to imitate English taste, manners and intellect."
+            },
+            {
+              "text": "Which religion did Madhusudan practise in his middle age?",
+              "answer": "The passage says that he converted to Christianity as a young man and adopted the name Michael. It does not separately date a religious change to his middle age."
+            },
+            {
+              "text": "Why did his college inspire him to imitate the English in taste, manners and intellect?",
+              "answer": "His exposure to English education and European literature at home and college led him to admire and imitate English tastes, manners and intellectual life."
+            },
+            {
+              "text": "Which sectors of English literature reflected his intellectual ability?",
+              "answer": "His English poems and plays reflected his intellectual ability."
+            },
+            {
+              "text": "What did Madhusudan realise after coming back to Bengal?",
+              "answer": "He realised that his true identity was rooted in Bengal and that he was only a temporary resident in Europe. He regretted his earlier fascination with the West and devoted himself to Bangla literature."
+            }
+          ],
+          "originalSubitemCount": 6,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "In what manner did Madhusudan want to grow himself?"
+            },
+            {
+              "text": "Which religion did Madhusudan practise in his middle age?"
+            },
+            {
+              "text": "Why did his college inspire him to imitate the English in taste, manners and intellect?"
+            },
+            {
+              "text": "Which sectors of English literature reflected his intellectual ability?"
+            },
+            {
+              "text": "What did Madhusudan realise after coming back to Bengal?"
+            },
+            {
+              "text": "Why was Madhusudan frustrated as a writer of English literature? 53"
+            }
+          ]
+        }
+      ],
+      "passage": "Michael Madhusudan Dutt, popularly known as Madhusudan, was a celebrated 19th century Bangalee poet and dramatist. He was born in Sagordari on the bank of the Kopotaksho River, a village in Keshobpur Upazila under Jashore district. From an early age, Michael aspired to be an Englishman in form and manner. Though he was born in a sophisticated Hindu family, he converted to Christianity as a young man, much to the ire of his family, and adopted the first name Michael. In his childhood, he was recognised by his teachers as a precious child with a gift of literary talent. His early exposure to English education and European literature at home and his college inspired him to imitate the English in taste, manners and intellect. Since his adolescence he started believing that he was born on the wrong side of the planet, and that his society was unable to appreciate his talent. He also believed that the West would be more receptive to his creative genius. Madhusudan was an ardent follower of the famous English poet Lord Byron. So after adopting Christianity, he went to Europe and started composing poems and plays in English. They showed his higher level of intellectual ability. However, he failed to gain the right appreciation. To his utter frustration he found that he was not esteemed as a native writer of English literature. Out of his frustration, he composed a sonnet in Bangla \"Kopotaksha Nad\" which earned him huge reputation in Bangla. Gradually he could realise that his true identity lay in Bengal and he was a sojourner in Europe. Afterwards he regretted his fascination for England and the West. He came back to Bengal and devoted himself to Bangla literature from this period. He has written the first Bangla epic Meghnad Badh Kabya."
+    },
+    {
+      "board": "Mymensingh",
+      "group": "seen-1",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 10,
+          "pdfPage": 41,
+          "instruction": "Choose the best answer from the alternatives.",
+          "subitems": [
+            {
+              "text": "People go home on Eid in order to —— happiness with their near and dear ones.",
+              "options": [
+                "observe",
+                "distribute",
+                "share",
+                "sharing"
+              ],
+              "answer": "share"
+            },
+            {
+              "text": "Human roots grow in our ——.",
+              "options": [
+                "minds",
+                "family",
+                "society",
+                "relation"
+              ],
+              "answer": "minds"
+            },
+            {
+              "text": "We get united to our relatives ——.",
+              "options": [
+                "as a traditional rule of our society",
+                "for our strong invisible bond",
+                "as a social being",
+                "for financial interest"
+              ],
+              "answer": "for our strong invisible bond"
+            },
+            {
+              "text": "Where we were born and grown up is our ——.",
+              "options": [
+                "neighbours",
+                "origin",
+                "living place",
+                "local place"
+              ],
+              "answer": "origin"
+            },
+            {
+              "text": "The phrase near and dear ones means ——.",
+              "options": [
+                "known persons",
+                "kith and kin",
+                "close friends",
+                "neighbours"
+              ],
+              "answer": "kith and kin"
+            },
+            {
+              "text": "What does the phrase 'a mad rush' refer to in the passage?",
+              "options": [
+                "A violent forward motion.",
+                "A sudden feeling of intense pleasure .",
+                "A wild hurry to go somewhere.",
+                "A burst of activity."
+              ],
+              "answer": "A wild hurry to go somewhere."
+            },
+            {
+              "text": "We should have —— between us and our dearest ones.",
+              "options": [
+                "bondage",
+                "bond",
+                "knack",
+                "communication"
+              ],
+              "answer": "bond"
+            }
+          ],
+          "originalSubitemCount": 10,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "e",
+            "f",
+            "g",
+            "i"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "People go home on Eid in order to —— happiness with their near and dear ones.",
+              "options": [
+                "observe",
+                "distribute",
+                "share",
+                "sharing"
+              ]
+            },
+            {
+              "text": "Human roots grow in our ——.",
+              "options": [
+                "minds",
+                "family",
+                "society",
+                "relation"
+              ]
+            },
+            {
+              "text": "We get united to our relatives ——.",
+              "options": [
+                "as a traditional rule of our society",
+                "for our strong invisible bond",
+                "as a social being",
+                "for financial interest"
+              ]
+            },
+            {
+              "text": "A man who has no family bond can be compared with a ——.",
+              "options": [
+                "vagabond",
+                "easy-going",
+                "traveller",
+                "nomad"
+              ]
+            },
+            {
+              "text": "Where we were born and grown up is our ——.",
+              "options": [
+                "neighbours",
+                "origin",
+                "living place",
+                "local place"
+              ]
+            },
+            {
+              "text": "The phrase near and dear ones means ——.",
+              "options": [
+                "known persons",
+                "kith and kin",
+                "close friends",
+                "neighbours"
+              ]
+            },
+            {
+              "text": "What does the phrase 'a mad rush' refer to in the passage?",
+              "options": [
+                "A violent forward motion.",
+                "A sudden feeling of intense pleasure .",
+                "A wild hurry to go somewhere.",
+                "A burst of activity."
+              ]
+            },
+            {
+              "text": "What is the main purpose of the author of this text?",
+              "options": [
+                "To criticize the home bound people.",
+                "To describe the mad rush of people.",
+                "To highlight the return to entity.",
+                "To focus on the transport accidents occurred during the Eid."
+              ]
+            },
+            {
+              "text": "We should have —— between us and our dearest ones.",
+              "options": [
+                "bondage",
+                "bond",
+                "knack",
+                "communication"
+              ]
+            },
+            {
+              "text": "What should be the most suitable title of the passage?",
+              "options": [
+                "Eid means happiness.",
+                "The pull of the roots.",
+                "Eid is the biggest festival for us.",
+                "Developing our identity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 12,
+          "pdfPage": 41,
+          "instruction": "Answer the following questions in your own words.",
+          "subitems": [
+            {
+              "text": "Why do people rush for homes during Eid vacation?",
+              "answer": "People rush home to share the happiness of Eid with their family, relatives and friends. They feel a strong desire to return to their roots."
+            },
+            {
+              "text": "Do you think human beings have roots like trees? Explain.",
+              "answer": "Human roots are not physical roots like those of trees. They are the invisible emotional and cultural bonds that connect people with their families, birthplace, relatives and surroundings."
+            },
+            {
+              "text": "What happens to transport during Eid vacation?",
+              "answer": "There is a mad rush to board buses, trains and launches. The pressure on transport can cause accidents, although people still want to return home."
+            },
+            {
+              "text": "What is your idea about the significance of family and society in human life?",
+              "answer": "Family and society give people emotional support, belonging and a sense of identity. These relationships help connect individuals to their history, culture and community."
+            },
+            {
+              "text": "What are the characteristics of the people having no roots?",
+              "answer": "The passage describes people who have lost their roots as feeling empty and lost. They lack a clear sense of where they come from or where they are going."
+            }
+          ],
+          "originalSubitemCount": 6,
+          "selectedParts": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "sourceQuestions": [
+            {
+              "text": "Why do people rush for homes during Eid vacation?"
+            },
+            {
+              "text": "Do you think human beings have roots like trees? Explain."
+            },
+            {
+              "text": "What happens to transport during Eid vacation?"
+            },
+            {
+              "text": "What is your idea about the significance of family and society in human life?"
+            },
+            {
+              "text": "What are the characteristics of the people having no roots?"
+            },
+            {
+              "text": "Wherever we stay, we feel the power of our roots—explain in your words."
+            }
+          ]
+        }
+      ],
+      "passage": "Eid is the main religious festival of the Muslims in Bangladeh. Eid means happiness. Everyone wants to share this happiness with near and dear ones. So most of the people, who are living outside their home for different reasons have a strong desire to get back home during the Eid vacation. As a result, there is a mad rush to board buses, trains, or launches for going home. This often causes transport accidents that take away many lives. However, these cannot stop people from going home to meet their family, in-laws, or friends. What makes people rush for their homes in spite of serious hazards? This is nothing but people's desire to return to the roots. Do human beings have roots like the trees? The answer is 'yes' but unlike the roots of the trees they are invisible, they lie in our minds. It's these roots that make a bond between us and family members, in-laws, friends, neighbours or even between us and the land where we were born and grew up. In that sense our families, our land of birth, relatives, our culture, traditions, or surroundings are our roots. And wherever we stay, we feel the power of our roots. It's our roots that develop our identity making us what we are. When we lose that bond, we become rootless. Human beings who do not have any roots or context are a non-entity. In other words, they do not have an identity. They don't know where they are from, and/or where they are heading towards. This often makes them feel empty and lost."
+    },
+    {
+      "board": "Cumilla",
+      "group": "seen-2",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 29,
+          "instruction": "Fill in each gap with a suitable word based on the information of the text.\n21 February is (a) —— as the International Mother Language Day not only in Bangladesh, but also worldwide. We (b) —— this day as Shaheed Dibosh every year. The people of Bangladesh observe the day with (c) —— songs to (d) —— respect to the martyrs. They go to the Shaheed Minar (e) —— wearing black badges.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "recognised"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "observe"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "mourning"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "show"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "barefoot"
+            }
+          ]
+        }
+      ],
+      "passage": "21 February is observed as Shaheed Dibosh every year throughout the country in remembrance of the martyrs of language movement of 1952. The commemoration begins at the early hours of the day with mourning songs that recall the supreme sacrifices of our language martyrs. People wear black badges and go to the Shaheed Minar in barefoot processions, singing mourning songs. They place wreaths at the Minar. Many of them visit the graves of the martyrs at Azimpur graveyard and pray for them. They also attend various programmes organised in remembrance of the language martyrs. The UNESCO (United Nations Educational, Scientific and Cultural Organisation) on 17 November in 1999 proclaimed February 21 as the International Mother Language Day in recognition of the sacrifices of the martyrs for the rightful place of Bangla. Two Bangladeshi expatriates living in Vancouver in Canada, Rafiqul Islam and Abdus Salam, sent a proposal to Kofi Anan the then secrtary General of United Nations. They requested him to declare 21st February as the International Mother Language Day. They added that the decision will honour and save all extinct languages of the world. As per their logical expectations the government of Bangladesh then took prompt initiative by sending formal proposal to UNESCO. Finally, on 17 November 1999, UNESCO declared 21st February as the International Mother Language Day. The day is now annually observed worldwide to promote awareness of linguistic and cultural diversity and multilingualism."
+    },
+    {
+      "board": "Dinajpur",
+      "group": "seen-2",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 39,
+          "instruction": "Fill in each gap with a suitable word based on the information of the text.\nFossil fuels are burned at an alarming rate due to (a) ——. Coal is one of the fuels used for (b) —— energy. Our atmosphere is being polluted for the (c) —— of greenhouse gases day by day. Our (d) —— on fossil fuels should be reduced. We should not destroy our (e) —— which play a vital role to produce oxygen.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "industrialisation"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "producing"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "emission"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "dependence"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "forests"
+            }
+          ]
+        }
+      ],
+      "passage": "Humans can neither change the sun's radiation nor the earth's orbit around the sun. But they can control the increase in the amount of greenhouse gases and its effect on the atmosphere. Only during the last hundred years the carbon dioxide concentration has been raised alarmingly in the atmosphere and we humans can be held responsible for this. The main cause of the increase in carbon dioxide level in the atmosphere is the burning of fossil fuels. Since the end of the 19th century, industrial activities increased rapidly giving rise to many factories. These factories required energy, which was produced through the combustion of coal. Besides coal, other sources of energy such as mineral oil and natural gas were also burned to heat our houses, run cars and airplanes or to produce electricity. Nowadays, about 85 million barrels of crude oil are burned daily. Every time a fossil raw material is burned, it releases carbon dioxide into the air.Therefore, it is clear that more and more greenhouse gases like carbon dioxide are being generated worldwide by humans. Moreover, we are also strengthening the greenhouse effect by deforestation, which means cutting down trees. Every year enormous areas of forests are destroyed by people to obtain wood and to clear regions for mining and to create pasture. This loss of the forest causes dual problems. Trees that are burned up release large volumes of carbon dioxide gas into the air. On the other hand, as forests absorb a lot of carbon dioxide from the air and deliver oxygen instead, we also destroy an important storehouse of carbon dioxide when we clear forests."
+    },
+    {
+      "board": "Mymensingh",
+      "group": "seen-2",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 42,
+          "instruction": "Fill in each gap with a suitable word based on the information of the text.\nAmong all the elements of the environment air is the most important one. We cannot (a) —— a single moment without it. Unfortunately, this vital element is continuously (b) —— polluted in many ways. Our (c) —— activities are mainly responsible for it. So, the (d) —— of air pollution is a must for our own existence. We should also (e) —— environment friendly activities for decreasing air pollution.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "live"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "being"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "human"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "prevention"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "promote"
+            }
+          ]
+        }
+      ],
+      "passage": "Air pollution comes from a wide variety of sources. In Bangladesh poisonous exhausts from industrial plants, brick kilns, old or poorly-serviced vehicles and dust from roads and construction sites are some of the major sources of air pollution. We can minimise this type of pollution by making less use of motor vehicles and avoiding the use of vehicles older than 20 years. We may also use proper lubricants to lessen the level of emission and pollutants. We can encourage people to use Compressed Natural Gas (CNG) or Liquid Petroleum Gas (LPG) for fuelling their cars. The government may relocate hazardous industries like brick kilns to areas away from human habitations."
+    },
+    {
+      "board": "Cumilla",
+      "group": "story",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 29,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it.\nOne day, a farmer was taking some sacks of wheat to a mill. The mill was a few kilometers away. On the way, the horse stumbled and one of the sacks fell to the ground.....",
+          "subitems": [],
+          "answer": "A Helping Hand\nOne day, a farmer was taking some sacks of wheat to a mill. The mill was a few kilometers away. On the way, the horse stumbled and one of the sacks fell to the ground.....\nThe farmer tried to lift the sack, but it was too heavy for him. He looked around and wondered whom he could ask for help. Soon a rider approached along the road. The farmer recognised him as a respected gentleman of the area. The rider stopped when he saw the fallen sack. He got down from his horse and offered to help. Together they lifted the sack and secured it safely. The farmer thanked him and asked how he could repay his kindness. The gentleman smiled and told him to help another person whenever he had the chance. He understood that real greatness lay in helping others rather than displaying one’s position."
+        }
+      ],
+      "topic": "One day, a farmer was taking some sacks of wheat"
+    },
+    {
+      "board": "Mymensingh",
+      "group": "story",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 42,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it.\nRumana was a student of class ten in Dhaka city. Every morning she started for school and came back home in the afternoon. Oneday after coming back home, to her utter surprise, she found a lock hanging on the door.....",
+          "subitems": [],
+          "answer": "A Safe Decision\nRumana was a student of class ten in Dhaka city. Every morning she started for school and came back home in the afternoon. Oneday after coming back home, to her utter surprise, she found a lock hanging on the door.....\nShe went to the trusted neighbour whom her parents had told her to contact in an emergency. The neighbour invited her to sit safely inside and helped her call her mother. Her mother answered and explained that she had taken Rumana’s grandmother to a medical appointment. In the hurry, she had forgotten to tell Rumana about the change of plan. She apologised and asked Rumana to wait with the neighbour. Rumana finished some homework while she waited. A little later her father arrived with a key. He thanked the neighbour for helping her. That evening the family agreed to leave a message whenever their plans changed. Rumana felt relieved and pleased that she had asked a trusted adult for help."
+        }
+      ],
+      "topic": "Rumana was a student of class ten"
+    },
+    {
+      "board": "Cumilla",
+      "group": "dialogue",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 10,
+          "sourceMarks": 12,
+          "pdfPage": 29,
+          "instruction": "At present, mobile phone has become a common device for communication. But it has both merits and demerits. Now, write a dialogue between you and your friend, Rana about the merits and demerits of mobile phone.",
+          "subitems": [],
+          "answer": "Me: Hello, Rana. Why do you think mobile phones are so common?\nRana: They let us contact people quickly, especially when we need help.\nMe: We can also use them to find information and take part in lessons.\nRana: Yes, but we should check whether online information is reliable.\nMe: What problems can excessive phone use cause?\nRana: It can waste time, disturb sleep and distract us from study or face-to-face conversation.\nMe: There are privacy risks too.\nRana: We should protect passwords and never share private details with strangers.\nMe: Should we use phones while crossing roads?\nRana: No. We should put them away and pay attention to our surroundings.\nMe: How can we develop good habits?\nRana: We can set limits, silence unnecessary notifications and keep phones away during study and sleep.\nMe: So the important thing is responsible use.\nRana: Exactly. A useful tool should support our lives, not control them."
+        }
+      ],
+      "topic": "merits and demerits of mobile phone"
+    },
+    {
+      "board": "Dhaka",
+      "group": "seen-2",
+      "passage": "In the next class Ms Choudhury tells her students the story of Lipi.\nThe year before last, Lipi, a 14-year old girl, was in class 9 in a rural school in Rangpur. Lipi is the eldest of five children—three daughters and two sons. Her father is a day labourer working on other people's land and mother is a homemaker and a part-time worker at other people's homes. The parents, particularly the mother, found it real difficult to raise five children on the small income the father could earn. Perhaps that is why Lipi's father wanted to marry her off. But Lipi was not ready to accept what her parents wanted to impose on her. She wanted to pursue her education. Her mother stood by her, though secretly. When her father arranged her marriage with Tara Mia, the only son of a farmer in the same village, she became greatly upset. Tara Mia was a widower—illiterate, but well off. His father had a few acres of arable land and was influential in the village. The marriage seemed to be inevitable.",
+      "tasks": [
+        {
+          "id": "gap",
+          "sourceQuestion": 3,
+          "sourceMarks": 5,
+          "pdfPage": 23,
+          "instruction": "Fill in each gap with a suitable word based on the information of the text.\nLipi is the eldest child of her parents. Her parents have (a) —— more children. Two of them are sons and two others are daughters. Lipi’s family is not well (b) ——. Her father (c) —— as a day labourer on other’s land. Her mother works as a part-time worker at other people’s houses. It was so (d) —— for Lipi’s mother to (e) —— the family with their very limited income.",
+          "subitems": [
+            {
+              "text": "Fill gap (a).",
+              "answer": "four"
+            },
+            {
+              "text": "Fill gap (b).",
+              "answer": "off"
+            },
+            {
+              "text": "Fill gap (c).",
+              "answer": "works"
+            },
+            {
+              "text": "Fill gap (d).",
+              "answer": "difficult"
+            },
+            {
+              "text": "Fill gap (e).",
+              "answer": "maintain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "group": "story",
+      "topic": "One day Ayat, a school boy",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 23,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it.\nOne day Ayat, a school boy, was going to school on foot. While walking he found a bundle of money on his way to school. He took the bundle of money and went to his class teacher.....",
+          "subitems": [],
+          "answer": "Honesty Rewarded\nOne day Ayat, a school boy, was going to school on foot. While walking he found a bundle of money on his way to school. He took the bundle of money and went to his class teacher.....\nHis teacher thanked him for bringing the money instead of keeping it. Together they informed the head teacher about the discovery. The head teacher kept the bundle safely and contacted the local police. Later that morning a worried shopkeeper reported that he had lost some money near the school. The police asked him to describe the bundle and state the amount without showing it to him. His description matched the money that Ayat had found. After verifying his claim, they returned the bundle to him. The shopkeeper thanked Ayat warmly and praised his honesty. Ayat politely said that he had only done what was right. He returned to class feeling happy that someone had recovered his hard-earned money."
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "group": "story",
+      "topic": "A schoolboy named Mahbub",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 25,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it.\nA schoolboy named Mahbub was coming home from school. Suddenly he saw an old man lying on the road. He.....",
+          "subitems": [],
+          "answer": "Help at the Right Time\nA schoolboy named Mahbub was coming home from school. Suddenly he saw an old man lying on the road. He.....\nHe stopped at a safe distance and called to a nearby shopkeeper for help. The shopkeeper came over and spoke gently to the old man. The man was conscious but said that he felt too weak to stand. Mahbub asked another adult to call the emergency service. They stayed beside the man and kept other people from crowding around him. They did not try to lift him or give him any medicine. Soon trained helpers arrived and examined him. With his permission, the shopkeeper contacted his family using the number he provided. His son arrived and thanked Mahbub for finding responsible help. Mahbub went home relieved that the old man was receiving proper care."
+        }
+      ]
+    },
+    {
+      "board": "Jashore",
+      "group": "story",
+      "topic": "One day, a crow became very thirsty",
+      "tasks": [
+        {
+          "id": "story",
+          "sourceQuestion": 8,
+          "sourceMarks": 12,
+          "pdfPage": 27,
+          "instruction": "Read the beginning of a story. Write ten new sentences to complete the story. Give a suitable title to it.\nOne day, a crow became very thirsty. He flew from one place to another in search of water.....",
+          "subitems": [],
+          "answer": "The Clever Crow\nOne day, a crow became very thirsty. He flew from one place to another in search of water.....\nAt last he noticed a pitcher under a tree. He flew down and looked inside it. There was a little water at the bottom. He put his beak into the pitcher but could not reach the water. He tried to tip the pitcher, but it was too heavy. Then he saw some small pebbles lying nearby. He picked them up one by one and dropped them into the pitcher. As the pebbles collected at the bottom, the water level rose. Soon the water came within his reach and he drank enough to satisfy his thirst. The crow flew away, having solved his problem through patience and clever thinking."
+        }
+      ]
+    },
+    {
+      "board": "Dhaka",
+      "group": "dialogue",
+      "topic": "importance of reading newspaper",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 10,
+          "sourceMarks": 12,
+          "pdfPage": 23,
+          "instruction": "Suppose, you are Nadim/Nadia, you have a friend named Fahim/Fahima who does not read newspaper. Now, write a dialogue between you and your friend about the importance of reading newspaper.",
+          "subitems": [],
+          "answer": "Nadim: Hello, Fahim! Do you read a newspaper regularly?\nFahim: Not really. I usually hear the news from friends.\nNadim: Newspapers can help you learn about events at home and abroad.\nFahim: What else can I learn from them?\nNadim: You can read about education, science, sports, culture and public issues.\nFahim: Can reading an English newspaper improve my English?\nNadim: Yes. Start with short reports and note useful words in context.\nFahim: Should I believe every report I read?\nNadim: No. Check the date and source, distinguish news from opinion, and compare important claims with other reliable sources.\nFahim: That sounds sensible. How much time should I spend?\nNadim: You could begin with fifteen minutes a day without neglecting your studies.\nFahim: Thank you. I will try reading a reliable newspaper regularly."
+        }
+      ]
+    },
+    {
+      "board": "Rajshahi",
+      "group": "dialogue",
+      "topic": "importance of learning computer",
+      "tasks": [
+        {
+          "id": "dialogue",
+          "sourceQuestion": 10,
+          "sourceMarks": 12,
+          "pdfPage": 25,
+          "instruction": "Nowadays, computer is used in different sections. It has become very essential to learn about computer. Your friend Nabil/Nabila wants to know a lot about it. Now, write a dialogue between you and your friend about the importance of learning computer.",
+          "subitems": [],
+          "answer": "Me: Hello, Nabil! You wanted to know why learning to use a computer is important.\nNabil: Yes. How can it help a student?\nMe: It helps us type assignments, organise information and use educational resources.\nNabil: Is it useful outside school?\nMe: Certainly. Many workplaces use computers for communication, records, calculations and design.\nNabil: What should I learn first?\nMe: Start with basic operation, typing, managing files and using a word processor.\nNabil: Should I learn to use the internet too?\nMe: Yes, but learn to check sources and protect your personal information.\nNabil: How can I stay safe online?\nMe: Use strong passwords, avoid suspicious links and ask a trusted adult when something seems unsafe.\nNabil: I do not have a computer at home. Can I still learn?\nMe: Ask your teacher about supervised practice in the school computer room.\nNabil: Thank you. I will practise regularly and use technology responsibly."
+        }
+      ]
+    }
+  ]
+}

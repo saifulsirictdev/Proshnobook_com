@@ -7,7 +7,7 @@
 - Existing shared user item/full-model preparation, processing popup and direct setup remain intact. No AI fallback, automatic approval or cross-grade content substitution.
 
 ## Not complete
-Class 6 retains its existing prepared stock. Class 10 now has seven teacher-review groups from Dhaka Board 2024 (nine existing item types); Classes 7, 8, 9, 11 and 12 remain empty rather than reusing Class 6. Class 10 target quantities are NOT complete, and full assembly honestly reports missing poem/short-story comprehension. No production import or approval was executed.
+Class 6 retains its existing prepared stock. Class 10 now has 29 teacher-review groups across all 11 existing item types (board and explicitly identified school sources); Classes 7, 8, 9, 11 and 12 remain empty rather than reusing Class 6. Class 10 target quantities are NOT complete. Local approved-fixture assembly now covers all item types without a year filter, while board-year-only assembly still reports literature missing rather than substituting school sources. No production import or approval was executed.
 
 ## Drive source inventory checked during this phase
 Read-only Drive search returned these source files; folder ancestry identifies their grade:
@@ -82,3 +82,190 @@ Validation: 135 focused English/builder/pagination/purchased-editor/import-short
 
 ### User-controlled source-label visibility
 Board/year filtering is independent of paper presentation. `show.boardSource` defaults to false, including restored older settings. Page Setup provides an explicit toggle for board name, year and original question-number labels. Turning it off hides the entire provenance label (including historical-mark annotations) in the shared Preview/Print renderer without deleting metadata or changing filtering. Turning it on is saved with builder settings; historical marks still respect the separate marks visibility control. Regression coverage checks default-hidden, opt-in rendering, hide-again, settings roundtrip and filtering while hidden. All 135 focused tests pass.
+
+## SSC content batch 3 — Rajshahi 2024 (partial)
+- Added distinct Meherjan comprehension passage (five questions/answers, original Q2) and Hydrogen gap passage (five answers, original Q3) from supplied board compilation PDF p.3 / printed p.17. Prompts checked against page image. Both are Class 10 teacher-review drafts, not official answer keys or live stock.
+- Existing registry now has nine groups: seven Dhaka plus two Rajshahi. There are four distinct Seen passages across both roles, but still only ONE complete MCQ/comprehension Seen group. Rajshahi comprehension alone must not be counted as a complete Seen MCQ set. Unseen remains one linked group. Quantity targets are far from complete.
+- Rajshahi MCQs held outside registry because the source's shatter alternatives overlap; no replacement/altered question invented. Comprehension Q(d)'s answer explicitly notes that the passage calls for climate adaptation but does not specify how to completely stop river erosion.
+- Rearranging Q7: eight source sentences and a suggested order prepared in the batch JSON, but excluded from registry pending page-image verification and teacher review. Its advice is narrative source content, not medical guidance.
+- Existing Pending import consent, exact-grade scoping, source-year filtering and default-hidden labels unchanged. No database imports or approvals performed.
+- Validation: 136 focused tests passed; includes distinct-passages, provenance, complete-vs-partial coverage and held-item exclusion checks. No typecheck diagnostics in changed paths; full local typecheck still blocked by missing generated Prisma client. No mobile/live deployment verification.
+
+## SSC content batch 4 — Cumilla/Jashore 2024 and Rajshahi rearranging
+This supersedes the earlier partial registry counts, not the original targets.
+- Six additional source-image-checked groups: Cumilla Seen MCQ/comprehension (May Day), Cumilla gap (fish/climate), Cumilla rearranging (Napoleon/boat), Jashore Unseen table/summary (Babbage), Jashore matching (price hike), Jashore rearranging (Fleming). Source PDF pages 5–8, printed 19–22. Answer keys are assistant-prepared and still require teacher review.
+- Rajshahi rearranging Q7 has now been checked against PDF page 4 / printed 18 and registered. The prior hold for this task is resolved; the Rajshahi ambiguous MCQ hold remains.
+- This batch contributes 52 answer entries, counting each subitem or standalone long answer once. Combined prepared registry: 16 groups, 100 answer entries. These are NOT 100 complete sets.
+- Jashore social-network passage repeats Dhaka; not registered as a new Seen. Fish passage repeats between Jashore/Cumilla; only one registered. Source spelling/history is not independently certified; especially historical Babbage/Fleming statements require teacher fact-check, and the source narrative is not medical advice.
+- Original blank table cells in the Babbage information-transfer table are retained, not replaced by invented answer gaps. Table validation now permits individual empty cells but rejects entirely empty rows; headers, widths and answer requirements remain validated.
+
+### Current prepared review coverage (not approved/live)
+| Item / linked group | Count | Required |
+|---|---:|---|
+| Complete Seen MCQ + comprehension | 2 | 50 distinct complete sets |
+| Additional comprehension-only Seen | 1 | Not counted as complete MCQ set |
+| Gap Seen passages | 3 | Separate source-role coverage; not extra complete MCQ sets |
+| Unseen information + summary | 2 | 50 distinct linked sets |
+| Matching | 2 | 40–60 |
+| Rearranging | 4 | 40–60 |
+| Poem comprehension | 0 | 40–60 |
+| Short-story comprehension | 0 | 40–60 |
+| Completing story | 1 | 40–60 |
+| Dialogue | 1 | 40–60 |
+
+There are six distinct registered Seen passages across the two source roles and two distinct Unseen passages. Full subject completion is NOT achieved. Missing items still prevent full auto assembly rather than invoking AI or substituting other grades. No production import, approval or deployment was performed. Existing optional/default-hidden source labels and year filter are unchanged. Validation: 138 focused tests pass; no typecheck diagnostics in changed modules, full local typecheck still blocked by ungenerated Prisma client.
+
+
+## SSC literature batch — source questions without fabricated extracts
+- The supplied 2025 test-paper compilation (target exam 2026) contains school poem/story comprehension questions on PDF pages 5 and 7. Neither date is assigned as a board exam year. Exact question wording was checked against page images.
+- Added one poem set (8 questions) and one short-story set (8 questions), answers assistant-prepared and requiring verification against the original literary works. Poems use Tejgoan Q8(a–h), PDF p.7. Stories use Tejgoan Q9(b–h), PDF p.7 plus Govt. Mohammadpur Model School & College Q9(f), PDF p.5. Mixed provenance is explicit, not represented as one intact original paper. Individual source part locators are in the review JSON.
+- Held unfamiliar Ameen/Mr. Moti/Great Derangement questions rather than guessing. No original literary-work text was available in this source; none was invented or copied from Class 6.
+- Added explicitly typed SSC literature `question-bank` source excerpts. Their text must exactly equal the eight supplied subquestions. They cannot masquerade as a printable poem/story passage, cannot be used for Seen/Unseen or other grades, and keep their references in ADMIN preview. Ordinary textbook-extract workflows and old drafts remain unchanged.
+- Existing source grouping, private draft save, original setup/print and default-hidden board tags remain in place. School literature has no boardSource, and is excluded when selecting a board exam year. All content still requires the existing explicit consent -> Pending -> teacher approval workflow. No database writes or approvals executed here.
+
+### Current coverage and acceptance status
+18 prepared groups / 116 answer entries, counting subitems or standalone long answers once. Counts: 2 complete Seen MCQ/comprehension pairs, 1 additional comprehension-only set, 3 Seen gap passages, 2 Unseen information/summary pairs, 2 matching, 4 rearranging, 1 poem set (8 questions), 1 story-comprehension set (8 questions), 1 completing story and 1 dialogue. Every existing item type now has a draft, but the requested 50 Seen / 50 Unseen / 40–60 per remaining item is NOT met. Review-only stock is not live approved stock.
+
+Validation: 139 focused tests passed. In-memory APPROVED fixtures assemble all 11 items; PENDING fixtures remain unusable, and year=2024 still rejects school literature rather than silently substituting. Tests also reject altered source questions, fake literary passages, and question-bank references for non-SSC/non-literature uses. No changed-path typecheck diagnostics; full local typecheck still has missing generated Prisma-client errors. No mobile-browser or production verification.
+
+
+## SSC board batch 5 — Chattogram, Sylhet, Barishal, Dinajpur 2024
+- Added 11 source-image-checked groups, 82 answer entries: two complete Seen MCQ/comprehension pairs (Barishal energy, Dinajpur Independence Day), Chattogram Mother Teresa comprehension only, Sylhet Pritilata gap, Barishal Language Movement gap, Chattogram Wordsworth Unseen table/summary, four rearranging sets and Dinajpur matching. Source PDF pp.9–18 / printed pp.23–32. File checksum is recorded in `ssc-board-2024-batch3.json`.
+- Answers are assistant-prepared and remain teacher-review drafts. Personal school-celebration answer is explicitly illustrative. Chattogram teaching-date answer explicitly avoids affirming the question's unsupported first-seventeen-years premise. Renewable/hydrogen classifications and historical narrative follow the source, not independent scientific/historical certification. Rearranging setup sentences can admit coherent alternatives; teacher judgement is required.
+- Held Chattogram overlapping MCQ alternatives, Dinajpur Milton marriage-date conflict (1641 narrative / 1642 fixed table), Sylhet Sher-E-Bangla historical dates, and Barishal matching's erroneous 1977 independence date. No silent repair, invented replacement or automatic approval.
+- Excluded repeat Sylhet social-network Seen, repeat Dinajpur fish gap and near-duplicate Barishal Wordsworth biography, rather than counting them toward targets.
+
+### Current real coverage
+29 review groups / 198 answer entries, NOT 198 complete sets. Four complete Seen pairs plus two comprehension-only groups; five separate gap passages; three Unseen information/summary groups; three matching; eight rearranging; one poem set (8 questions); one short-story set (8 questions); one completing story; one dialogue. Eleven distinct Seen passages across both source roles, three distinct Unseen passages.
+
+The requested quantities remain unmet: at least 46 complete Seen and 47 Unseen sets still needed, matching needs 37 and rearranging 32 to reach minimum 40, and the other minimum-40 items remain at one each. Standalone comprehension/gap groups do not inflate complete Seen counts. All existing item types have draft coverage and in-memory APPROVED fixtures assemble 100 marks, but no live stock readiness claim is made.
+
+Validation: 140 focused tests pass, including counters, unique passages, source-error holds, question-page bounds, rearranging answer permutations, grade/approval isolation and hidden source labels. No typecheck diagnostics in changed paths; full local typecheck still blocked by missing generated Prisma client. No live import, approval, mobile-browser validation or production deployment performed.
+
+## SSC board batch 6 — 2023, explicit practice subsets
+- Added 15 review groups / 64 answer entries from the supplied board compilation. Three Seen MCQ/comprehension pairs: Barishal (Pahela Boishakh), Dinajpur (Madhusudan), Mymensingh (roots/Eid). Four gap passages: Cumilla Language Day, Dinajpur fossil fuels, Mymensingh air pollution and Dhaka Lipi. Five story continuations and three dialogues. Checked question images on PDF pp.22–23,25,27,29,36,38–39,41–42; file checksum and limitations retained in review JSON.
+- Original 2023 MCQ/comprehension exercises have 10/6 parts, while current practice uses 7/5. These are explicitly selected practice subsets, **not intact historical papers**. Exact selected question wording/options, original counts, original part letters, all original source questions and historical marks remain recorded. Runtime drafts retain validated subset metadata; optional source labels disclose the selected letters. Year filtering remains independent of default-hidden labels.
+- Held ambiguous Dinajpur MCQ(a,f), Mymensingh MCQ(d); did not invent a middle-age conversion event for the Dinajpur comprehension premise. Held six-blank Unseen and seven-part matching rather than silently truncating or filling original blanks. Repeated source passages and overlapping games/sports dialogue were not counted as new stock.
+- Creative answers are illustrative, not official keys. Story continuations contain exactly ten new sentences after the supplied opening, checked by regression tests. New dialogues cover mobile merits/demerits, newspaper reading and computer learning. All answers still require teacher review.
+
+### Latest coverage (supersedes earlier batch totals)
+**44 prepared review groups / 262 answer entries**, not 262 sets or approved live records.
+
+| Item / linked group | Prepared count | Target |
+|---|---:|---|
+| Complete Seen MCQ + comprehension practice pairs | 7 | 50 distinct sets |
+| Extra comprehension-only Seen | 2 | Not counted as complete pairs |
+| Separate Seen gap passages | 9 | Not counted as complete pairs |
+| Unseen information + summary | 3 | 50 distinct sets |
+| Matching | 3 | 40–60 |
+| Rearranging | 8 | 40–60 |
+| Poem comprehension | 1 | 40–60 |
+| Short-story comprehension | 1 | 40–60 |
+| Completing story | 6 | 40–60 |
+| Dialogue | 4 | 40–60 |
+
+18 distinct Seen texts across source roles, three distinct Unseen texts. Requested quotas remain **unfinished**: 43 complete Seen / 47 Unseen still needed; minimum-40 deficits are matching 37, rearranging 32, poem 39, short-story comprehension 39, completing story 34 and dialogue 36. No production import, approval or deployment. Existing Preview -> explicit consent -> Pending -> ADMIN review remains mandatory.
+
+Validation: 142 focused tests pass, including exact subset-to-source mapping, rejected malformed part/count metadata, year isolation, sentence counts, accurate coverage and Pending-only import fixtures. Full typecheck remains blocked by missing generated Prisma client/cascading diagnostics; changed paths have no typecheck diagnostics. No mobile-browser or production verification performed.
+
+## SSC board batches 7–8 — 2020 and 2019
+- Added 15 groups / 87 answer entries: six distinct Unseen information/summary pairs (Armstrong, Volta, Humayun Ahmed, Abul Fazal, Shahidullah, SAARC), seven matching sets (democracy, punctuality, patriotism, ICT, earthquake, morality, moon), and two rearranging sets (Androcles, Nur Banu).
+- Checked PDF images pp.61–62,64,66,71,74,76,88–89,95,98. Armstrong and Shahidullah passages span two pages; both halves are retained. Table header blanks remain in instructions and ordinary blank cells remain empty, with exactly five labelled answer gaps per information task. No invented prefilled answers.
+- Original examination years 2019/2020 are retained and independently filterable. Suggested summaries/keys are assistant-prepared, require teacher review and are not official keys. Collins is not described as having walked on the moon. SAARC prose describes the source-era organisation, not a current political-status assertion. Source scientific/historical claims remain subject to verification.
+- Held questionable Lincoln, Rouf, Fazlul Hoque, Bose, Gagarin, Thai rescue, Altaf Mahmud and Eiffel exercises; held outdated email-equipment matching and simplified Pasteur medical story. Repeat biographies and existing Fleming/Napoleon/Keats/Mandela rearranging were not counted again. Specific holds are in each batch JSON.
+
+### Latest cumulative status
+**59 prepared review groups / 349 answer entries. Still not complete or live approved stock.**
+- Complete Seen practice pairs 7/50; extra comprehension-only 2; separate gap texts 9. These cover 18 distinct Seen texts, not 18 complete pairs.
+- Unseen pairs 9/50; matching 10/40 minimum; rearranging 10/40 minimum.
+- Poem comprehension 1/40 minimum; short-story comprehension 1/40 minimum; completing story 6/40 minimum; dialogue 4/40 minimum.
+- Remaining minimum deficits: complete Seen 43, Unseen 41, matching 30, rearranging 30, poems 39, short-story comprehension 39, completing story 34, dialogue 36. Distinct verified sources, not alternative wordings or repeated board appearances, must fill these deficits.
+
+Validation: 144 focused tests pass, including original header/table blanks, cross-page text continuity, answer permutations, exact year isolation and missing-stock rejection. Changed modules have no typecheck diagnostics; global typecheck remains blocked by missing generated Prisma client and cascading existing diagnostics. No import, approval, deployment or mobile-browser verification performed. Consent -> Pending -> ADMIN review is unchanged.
+
+## Expanded creative, exercise and school-source review batch
+- Added 42 groups / 117 answer entries beyond the 59-group baseline: 28 creative groups, 11 exercise groups and three school Unseen pairs. Original source files/checksums, page numbers, question numbers and marks are retained in the new review JSON files. Continuations/dialogues/summaries are illustrative authored answers, not official keys.
+- Older creative headers were checked separately: five dialogue prompts are **2022**, not 2023; original Q9/five marks remain distinct from current practice marks. Eight additional 2019/2020 stories retain original beginnings and ten new continuation sentences each. Repeated themes and defective source exercises are held rather than counted again.
+- Three school sources: Madhupur Shahid Smrity Higher Secondary School Test 2025 (Salimullah), Akij Collegiate School Test 2024 (Victoria), Joypurhat Girls’ Cadet College Pre-Test 2024 (Mother Teresa). Dedicated school provenance cannot coexist with board provenance. Schools are never assigned a board or silently admitted through board-year filtering. Optional labels remain hidden by default; toggle wording now covers board/school sources.
+- Additional Seen passages include Maldives, Shat Gambuj and reviewed paired/subset material; matching and rearranging retain source combinations/permutations. Historical/scientific/source-language limitations and explicit holds are recorded alongside data, not silently corrected.
+
+### Current cumulative status (supersedes all earlier totals)
+**101 prepared teacher-review groups / 466 answer entries. Not approved live stock.**
+
+| Item / linked group | Prepared | Target minimum |
+|---|---:|---:|
+| Complete Seen practice pairs | 8 | 50 |
+| Additional comprehension-only Seen | 4 | Not complete pairs |
+| Separate Seen gap texts | 9 | Not complete pairs |
+| Unseen information + summary pairs | 12 | 50 |
+| Matching | 15 | 40 |
+| Rearranging | 13 | 40 |
+| Poem comprehension | 1 | 40 |
+| Short-story comprehension | 1 | 40 |
+| Completing story | 23 | 40 |
+| Dialogue | 15 | 40 |
+
+The quantity target remains unmet: deficits are Seen pairs 42, Unseen 38, matching 25, rearranging 27, poems 39, short-story comprehension 39, completing stories 17 and dialogues 25. The supplied compilations contain repeated, malformed and historically questionable exercises; these were not used to inflate totals. More distinct, usable source material and teacher review are required before claiming completion.
+
+Validation: **148/148 focused tests pass**, including all 41 English bank model tests. `git diff --check` passes. Full TypeScript check remains blocked by generated Prisma-client/cascading project errors; no diagnostics reference the changed English/provenance/render modules. No live import, approval, push or deployment performed. Preview -> explicit consent -> Pending -> ADMIN review is unchanged. No mobile-browser or production verification performed.
+
+## School compilation expansion — source-linked language and writing practice
+Added **43 groups / 178 answer entries** beyond the 101-group baseline:
+- 14 rearranging sets: sailor, fisherman, tax collector, Hatem Tai, fox/grapes, Ferdousi, Bayazid, donkey/statue, crow/peacock, Solomon, jackal/camel, dream, unpaid parcel and farmer/horse. Suggested narrative orders retain all eight original sentences. Variants may need teacher judgement.
+- Four matching sets: Mother Teresa, good manners, responsible Facebook use and education. Exact zero-based B/C key mappings are retained and tested against the original column fragments.
+- Ten completing-story scenarios: false alarm, friends/bear, Bayazid, Azam Shah, boatman, dog/reflection, lion/lamb, crow/fox, fox/grapes and honest woodcutter. Ten authored continuation sentences follow each original opening. Traditional accounts are not claimed as verified history or canonical endings; the bear example expressly disclaims real wildlife-safety advice. The boatman ending avoids endorsing drowning and uses a life jacket/sheltered landing.
+- Ten dialogues: deforestation, education, fictional cricket match, price increases, examination anxiety, scholarship bank account, city/village life, Facebook, adult literacy and unemployment. No invented current prices, guaranteed banking requirements or medical prescriptions. The Naogaon stress prompt is original Q10, not Q11; Akij's Facebook prompt retains Test **2024**, not 2025/2026.
+- Three comprehension-only school Seen excerpts (general loneliness, causes/demographics, coping strategies) and one separate gap role using the same general-loneliness text. Held all corresponding MCQ sets because of overlapping, unsupported or overstated alternatives. Under-supported comprehension premises are disclosed in the draft answers rather than answered with invented facts. This adds three distinct Seen excerpts, **zero complete Seen pairs**.
+- One Unseen pair: Washington, Lions School and College Test 2025, header PDF p.59, passage p.60, original five table blanks/summary p.61; authored summary has 73 whitespace-delimited words against the original 70–90 instruction.
+
+Question images were checked individually, and each exercise is linked to the school header **before its question**, including when another school starts on the same page. PDF p.38's first three exercises belong to Unique Progressive School, not the Sherpur paper starting below them. School data never acquires board provenance or becomes eligible through the board-year filter.
+
+### Current cumulative quantities
+**144 review groups / 644 answer entries**, not 644 complete papers, distinct sets or approved records.
+
+| Item / linked group | Prepared | Requested minimum | Remaining |
+|---|---:|---:|---:|
+| Complete Seen practice pairs | 8 | 50 | 42 |
+| Extra comprehension-only Seen | 7 | Not complete pairs | — |
+| Separate Seen gap roles | 10 | Not complete pairs | — |
+| Unseen information + summary pairs | 13 | 50 | 37 |
+| Matching | 19 | 40 | 21 |
+| Rearranging | 27 | 40 | 13 |
+| Poem comprehension | 1 | 40 | 39 |
+| Short-story comprehension | 1 | 40 | 39 |
+| Completing story | 33 | 40 | 7 |
+| Dialogue | 25 | 40 | 15 |
+
+Seen roles cover 24 distinct excerpts across 25 groups; the extra general-loneliness gap role is deliberately **not** a 25th unique text. Three loneliness excerpts are separate parts of one topic, not three distinct literary works. Unseen has 13 distinct retained passages. Source errors, duplicates and missing original literary works still prevent an honest claim that requested quotas are complete. Original works are needed for further trustworthy poem/story interpretations; recombinations of the same questions must not be presented as new distinct source sets.
+
+### Validation and release boundary
+- **152/152 focused tests pass**, including 45 bank-model tests. Added regression coverage for school-source header ownership, original question-number exceptions, exact matching mappings, complete eight-position permutations, ten new story sentences, twelve-line dialogues, reading-role counts, cross-page table blanks, summary length and filtered/unfiltered assembly.
+- Whole repository suite ran: **848 passed / 13 failed, 861 total**. All 13 failures report missing `.prisma/client/default` in `chapter-filter.test.cjs`, `paper-generation.test.cjs` or `question-types.test.cjs`; the environment lacks its generated Prisma client. This is not a full-suite pass.
+- Full TypeScript check remains blocked by generated Prisma/cascading project errors. No diagnostics reference changed English loaders/data modules. Diff whitespace checks pass. No production/browser verification claimed.
+- No live import, approval, push or deployment. Preview -> explicit consent -> Pending -> ADMIN review remains mandatory. This batch is preserved on the current working branch, not silently published.
+
+## Textbook-based authored supplement (2026-11-10; review only)
+
+The source-question inventory immediately above remains **144 groups / 644 answers**. A separately labelled supplement now adds **22 groups / 208 authored answers**, making the complete preview registry **166 groups / 852 answers**. The supplement must **not** be described as 22 newly recovered board/school exercises, verbatim NCTB exercises, official answers, or approved live records. It does not resolve the deficit in *original exam* stock.
+
+Source: supplied *English for Today — Classes Nine and Ten*, revised October 2025 / 2026 imprint; Drive file `1XLk9TBYh1R-jYrpFzjXwIv51239u4Sf4`; PDF SHA256 `a5628de6a7b1a2afd1caf0adfb0d49603dc0c5a8b51f031d2b8c168ed5fd78f6`. Literary pages and selected reading excerpts were checked against page images, not OCR alone. PDF pages equal printed pages +5 for these selections. Source files retain work/author or excerpt locator, page ranges, authorship, limitations and review status; preview references retain source identity/checksum/pages. Neither loader assigns invented board/school/year provenance. Board-year filtering excludes these groups.
+
+- `ssc-textbook-literature-review.json`: **14 groups / 112 authored questions**, eight per group: seven poems and seven story/episode groups. Three Merchant of Venice episodes represent **one original play**, not three independently sourced short stories. These are passage-free, question-bank references to the actual work, not fabricated literary extracts. Interpretations are suggested, not unique official keys. Literary/source exercise collections may overlap works; do not count every group as a new distinct work.
+- `ssc-textbook-seen-review.json`: **8 linked MCQ/comprehension pairs / 96 authored answers**, seven four-option MCQs and five written questions per excerpt. Topics: Anusha/Tiya, historical outdoor-pastime survey, Partha’s mime, Jobs/Hill, nursery work, floral design, Nepal heritage, Indian attractions. Questions share the exact displayed excerpt; shorter excerpt boundaries are explicit. No duplicated alternatives or invented replacement passages. Original textbook wording/grammar retained with line-wrap and typographic/OCR normalisation.
+- Hold disclosures: no universal health prescriptions, current-population or Olympic-record certification, speculative adoption psychology, guaranteed floral earnings, religious stereotypes or hazardous rescue advice. Survey claims are historical and attributed; character opinions and travel superlatives are not universal facts.
+
+### Registry totals including authored practice (not original-exam completion)
+
+| Role | Registry total | Composition / remaining minimum |
+|---|---:|---|
+| Complete Seen pairs | 16 | 8 original-exercise + 8 authored; 34 short of 50 even if authored practice is accepted |
+| Extra Seen comprehension / gap roles | 7 / 10 | Not additional complete pairs |
+| Unseen pairs | 13 | 37 short of 50 |
+| Matching / rearranging | 19 / 27 | 21 / 13 short of 40 |
+| Poem comprehension groups | 8 | 1 original-exercise + 7 authored; 32 groups short, not a claim of 8 distinct original works |
+| Story/episode comprehension groups | 8 | 1 original-exercise + 7 authored; 32 groups short, Merchant episodes are one play |
+| Completing story / dialogue | 33 / 25 | 7 / 15 short of 40 |
+
+The registry now has 33 Seen passage roles on 32 distinct displayed excerpts; the extra general-loneliness gap role remains the single duplicate text. Distinct excerpts are not necessarily distinct underlying lessons or literary works. All requested quotas remain unfinished. Additional defensible original source exercises are still needed rather than alternate questions on the same work being presented as new original sources.
+
+Validation for this supplement: **153/153 focused tests, including 46/46 bank-model tests, pass**. Regression checks cover 22 unique prepared keys, 208 complete answers, four distinct MCQ alternatives/one key, linked shared excerpts, PDF/printed page offsets, preservation through assembly, Pending rejection and board-year exclusion. Full typecheck still fails on existing generated-Prisma/cascading project errors; no diagnostics mention the changed loaders. Previous whole-suite result (848 pass / 13 missing-Prisma failures) is historical, not a newly rerun full-suite pass. No production import, approval or deployment. Preview → explicit consent → Pending → ADMIN review remains unchanged.

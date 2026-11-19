@@ -460,6 +460,13 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+  /* Shared builder CSS hides semantic <header> elements in print. These
+     are document headers, not site chrome; restore both supported styles.
+     Visibility alone cannot undo display:none from another stylesheet. */
+  #ready-print .rp-print-header,
+  #ready-print .rp-custom-print-header {
+    display: block !important;
+  }
   .rp-print-sheet {
     break-after: page;
     page-break-after: always;
