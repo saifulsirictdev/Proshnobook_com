@@ -710,23 +710,23 @@ test('School dropdown options come only from approved grade-matched homogeneous 
  const yes=options({id:'t',role:'TEACHER'},[{key:'s',value:record('APPROVED',school)},{key:'dup',value:record('APPROVED',school)}]);assert.deepEqual(await yes.list(10),{schools:[school.output.tasks[0].schoolSource.school],error:''});assert.deepEqual((await yes.list(9)).schools,[]);
 });
 
-test('Source-filter UI clears mutually exclusive choices, retries failures and ignores stale school requests',async()=>{
+test('Source-filter UI hides year search, retries failures and ignores stale school requests',async()=>{
  const React=require('react');const BoardYear=()=>null;const pending=[];let state=[],cursor=0,effectDeps,cleanup;
  const hooks={useState(initial){const index=cursor++;if(!(index in state))state[index]=initial;return[state[index],value=>{state[index]=typeof value==='function'?value(state[index]):value;}];},useEffect(fn,deps){if(!effectDeps||deps.some((d,i)=>d!==effectDeps[i])){cleanup?.();effectDeps=deps;cleanup=fn();}}};
  const m=new Module(path.resolve('components/english-source-filter.tsx'),module);m.paths=module.paths;m.require=id=>id==='react'?hooks:id==='./english-board-year'?{__esModule:true,default:BoardYear}:id==='@/app/actions/english-bank-model'?{listEnglishBankSchools:grade=>new Promise((resolve,reject)=>pending.push({grade,resolve,reject}))}:require(id);
  m._compile(ts.transpileModule(fs.readFileSync('components/english-source-filter.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,'components/english-source-filter.tsx');
- const Filter=m.exports.default,changes=[];let props={grade:10,examYear:'',school:'',onYearChange:v=>changes.push(['year',v]),onSchoolChange:v=>changes.push(['school',v])};
+ const Filter=m.exports.default,changes=[];let props={grade:10,school:'',onSchoolChange:v=>changes.push(['school',v])};
  const render=()=>{cursor=0;return Filter(props);};
  function find(node,predicate){if(!React.isValidElement(node))return null;if(predicate(node))return node;for(const child of React.Children.toArray(node.props.children)){const got=find(child,predicate);if(got)return got;}return null;}
  let tree=render();assert.equal(pending[0].grade,10);assert.equal(find(tree,n=>n.type==='select').props.disabled,true);
- const board=find(tree,n=>n.type===BoardYear);board.props.onChange('2024');assert.deepEqual(changes.splice(0),[['year','2024'],['school','']]);
- const select=find(tree,n=>n.type==='select');select.props.onChange({target:{value:'School A'}});assert.deepEqual(changes.splice(0),[['school','School A'],['year','']]);
+ assert.equal(find(tree,n=>n.type===BoardYear),null);
+ const select=find(tree,n=>n.type==='select');select.props.onChange({target:{value:'School A'}});assert.deepEqual(changes.splice(0),[['school','School A']]);
  // A stale grade10 response must not replace the current grade9 list.
  props={...props,grade:9};tree=render();assert.equal(pending[1].grade,9);pending[0].resolve({schools:['Wrong grade'],error:''});pending[1].resolve({schools:['Current school'],error:''});await new Promise(resolve=>setImmediate(resolve));tree=render();
  const html=require('react-dom/server').renderToStaticMarkup(tree);assert.match(html,/Current school/);assert.doesNotMatch(html,/Wrong grade/);assert.equal(find(tree,n=>n.type==='select').props.disabled,false);
  // A rejected refresh exposes an error and a retry rather than fabricated options.
  props={...props,grade:10};tree=render();pending[2].reject(Error('network'));await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='alert'));const retry=find(tree,n=>n.type==='button');assert.equal(retry.props.type,'button');retry.props.onClick();tree=render();assert.equal(pending.length,4);pending[3].resolve({schools:[],error:''});await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='status'));assert.equal(find(tree,n=>n.props.role==='alert'),null);
- for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){const text=fs.readFileSync(file,'utf8');assert.match(text,/EnglishSourceFilter/);assert.match(text,/school \? \{ school \}/);}
+ for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){const text=fs.readFileSync(file,'utf8');assert.match(text,/EnglishSourceFilter/);assert.match(text,/school \? \{ school \}/);assert.doesNotMatch(text,/examYear|setExamYear|onYearChange/);}
  cleanup?.();
 });
 
