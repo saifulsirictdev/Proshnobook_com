@@ -1,0 +1,1040 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+  "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91",
+  "sourceKind": "supplied-textbook-excerpt-based-authored-practice",
+  "notes": [
+    "Nine authored MCQ/comprehension pairs, seven MCQs plus five written questions each (108 suggested answers). Source passages are exact selected excerpts from the supplied SSC compilation, whose unit labels identify textbook reading. Page images checked individually. These are NOT the original school questions, official NCTB exercises or official keys. No school/board exam metadata is assigned to the new questions.",
+    "Original exam sets with defects remain held; authored alternatives do not silently overwrite them. Excerpt locators state omitted paragraphs; whitespace/line wraps normalised, source wording otherwise retained. All questions answerable from displayed text, except explicitly identified general-vocabulary synonym question.",
+    "Loneliness definition, demographic risks and coping are parts of one lesson, not three independent works. Their longer source versions already have comprehension-only roles. New full pairs do not create nine new distinct underlying works or erase original-exam stock deficits. Meherjan and Maldives also overlap underlying topics of earlier partial reading roles.",
+    "No fabricated passages. Zahir disappearance date, Maldives history, current-statistic claims, unsupported universal diagnoses and method-of-death questions excluded from these excerpts. Historical/source descriptions are attributed, not independently certified. All keys require teacher review. Preview/explicit consent/Pending/ADMIN review unchanged."
+  ],
+  "items": [
+    {
+      "topic": "Graffiti — expression and silenced voices",
+      "pdfPages": [
+        3
+      ],
+      "excerptLocator": "Opening paragraph only; excludes quotations, uprising chronology and original exam questions",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Only the first paragraph retained. Interpretation of a source description, not advice to vandalise property, evade law enforcement or perform unsafe acts. Original school MCQs/comprehensions are not repaired or relabelled here.",
+      "passage": "Graffiti‘s potency lies in its subversive, guerrilla nature. Unlike wall art, which is typically organized and sanctioned, graffiti thrives on immediacy, spontaneity, and the risk of persecution. Where wall art may take time and care, graffiti is often quick, requiring speed and anonymity due to the threat of detection. Its purpose is to challenge power, counter surveillance, and inscribe messages that are otherwise censored or suppressed.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How does the excerpt contrast graffiti with sanctioned wall art?",
+              "options": [
+                "Graffiti is often quick and risky",
+                "Graffiti is always officially commissioned",
+                "Graffiti never conveys a message",
+                "Graffiti requires no public surface"
+              ],
+              "answer": "Graffiti is often quick and risky"
+            },
+            {
+              "text": "Which quality is directly associated with graffiti?",
+              "options": [
+                "Guaranteed official approval",
+                "Spontaneity",
+                "Permanent secrecy without risk",
+                "Commercial accounting"
+              ],
+              "answer": "Spontaneity"
+            },
+            {
+              "text": "Why does the excerpt associate graffiti with speed?",
+              "options": [
+                "All paint dries in one second",
+                "The public cannot read slowly",
+                "Writers face the threat of detection",
+                "The art is only displayed on clocks"
+              ],
+              "answer": "Writers face the threat of detection"
+            },
+            {
+              "text": "What does anonymity protect in this account?",
+              "options": [
+                "The price of a paintbrush",
+                "The colour of the wall",
+                "The opening time of a museum",
+                "The identity of the person making the message"
+              ],
+              "answer": "The identity of the person making the message"
+            },
+            {
+              "text": "What may graffiti communicate according to the excerpt?",
+              "options": [
+                "Messages otherwise censored or suppressed",
+                "Only weather forecasts",
+                "Only official advertisements",
+                "Only examination results"
+              ],
+              "answer": "Messages otherwise censored or suppressed"
+            },
+            {
+              "text": "What does “sanctioned” mean in this contrast?",
+              "options": [
+                "Completely invisible",
+                "Officially authorised",
+                "Without any planning",
+                "Written in a foreign language"
+              ],
+              "answer": "Officially authorised"
+            },
+            {
+              "text": "What is one stated purpose of graffiti?",
+              "options": [
+                "To prevent all communication",
+                "To replace every classroom",
+                "To challenge power",
+                "To guarantee personal wealth"
+              ],
+              "answer": "To challenge power"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Which differences between graffiti and wall art does the excerpt emphasise?",
+              "answer": "Wall art is described as typically organised and sanctioned, while graffiti is presented as more immediate, spontaneous and risky. These are the author’s general contrasts, not rules covering every artwork."
+            },
+            {
+              "text": "How are speed and anonymity connected to the setting described?",
+              "answer": "Detection may bring persecution. Working quickly and concealing identity are presented as responses to that risk."
+            },
+            {
+              "text": "Why might a suppressed message appear as graffiti?",
+              "answer": "The excerpt says graffiti can inscribe messages that are otherwise censored. A wall can therefore become a medium for voices excluded from authorised channels."
+            },
+            {
+              "text": "What makes the description more than an account of decoration?",
+              "answer": "It links graffiti with challenging power and countering surveillance. Its emphasis is political expression, not simply appearance."
+            },
+            {
+              "text": "Does the excerpt establish that every example of wall art is slow?",
+              "answer": "No. It uses qualifiers such as typically, may and often. Its contrast should not be turned into an absolute rule."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Zahir Raihan — film and public commitment",
+      "pdfPages": [
+        8
+      ],
+      "excerptLocator": "First two paragraphs; excludes erroneous disappearance-date paragraph",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "The excerpt ends before the incorrect 30 December disappearance account. Original spelling East. Pakistan retained. No question depends on omitted material or claims independent historical certification.",
+      "passage": "Zahir Raihan was one of the most talented filmmakers in Bangladesh. He was born on 19 August 1935 in the village Majupur in Feni district. He was an active worker of the Language Movement. He was one of the ten students to go out in a procession on 21 February 1952 despite a ban on such activities. As a result, he and many others were arrested and taken to prison. Raihan was also present at the historical meeting of Amtala on February 21, 1952. He also took part in the mass movement in 1969. In 1971, he joined the Liberation War. All through his life, Zahir Raihan dreamt of a democratic society, a society that will ensure freedom of speech and will. He had many dreams about our film industry too. He made a legendary film, \"Jibon Theke Neya\", based on the Language Movement of 1952. It was a revolt against the then autocratic government. The family presented in that film was a miniature East. Pakistan ruled by an autocrat who had to go to prison for her conspiracy. During the Liberation War, this film was shown outside Bangladesh. Critics like Satyajit Ray, Mrinal Sen, and Ritwik Ghatak appreciated this film. Zahir gave all his money to the Freedom Fighters' Trust that he got from his film shows. Besides, his great documentary on Pakistani atrocities, Stop Genocide, helped create world sentiment in favour of our Liberation War.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Which occupation is central to the description of Zahir Raihan?",
+              "options": [
+                "Filmmaker",
+                "Shipbuilder",
+                "Physician",
+                "Astronaut"
+              ],
+              "answer": "Filmmaker"
+            },
+            {
+              "text": "In which district does the excerpt locate his birthplace?",
+              "options": [
+                "Sylhet",
+                "Feni",
+                "Khulna",
+                "Barishal"
+              ],
+              "answer": "Feni"
+            },
+            {
+              "text": "Why were Raihan and others arrested in the 1952 episode?",
+              "options": [
+                "They refused to make a film",
+                "They moved to another country",
+                "They joined a procession despite a ban",
+                "They missed a school examination"
+              ],
+              "answer": "They joined a procession despite a ban"
+            },
+            {
+              "text": "What kind of society did Raihan dream of in the passage?",
+              "options": [
+                "A society without any art",
+                "A society prohibiting all opinions",
+                "A society without schools",
+                "A democratic society"
+              ],
+              "answer": "A democratic society"
+            },
+            {
+              "text": "Which film symbolically presented East Pakistan through a family?",
+              "options": [
+                "Jibon Theke Neya",
+                "The Old Man and the Sea",
+                "The Purple Jar",
+                "Shahnama"
+              ],
+              "answer": "Jibon Theke Neya"
+            },
+            {
+              "text": "Where did the excerpt say money from his film shows went?",
+              "options": [
+                "A private shipping company",
+                "The Freedom Fighters’ Trust",
+                "An overseas sports club",
+                "A new jewellery market"
+              ],
+              "answer": "The Freedom Fighters’ Trust"
+            },
+            {
+              "text": "What does “autocratic” describe here?",
+              "options": [
+                "A system of free discussion only",
+                "An agricultural technique",
+                "Rule by a person exercising unchecked power",
+                "A style of musical instrument"
+              ],
+              "answer": "Rule by a person exercising unchecked power"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How does the excerpt connect Raihan with more than one public movement?",
+              "answer": "It mentions the Language Movement, the 1969 mass movement and the Liberation War. It presents his public commitment across several periods."
+            },
+            {
+              "text": "How does the family in Jibon Theke Neya carry a political meaning?",
+              "answer": "The family is described as a miniature East Pakistan ruled by an autocrat. Its domestic conflict symbolically protests authoritarian government."
+            },
+            {
+              "text": "What evidence does the excerpt give of appreciation beyond the immediate audience?",
+              "answer": "It says the film was shown outside Bangladesh and appreciated by Satyajit Ray, Mrinal Sen and Ritwik Ghatak."
+            },
+            {
+              "text": "How did Raihan use film earnings in the account?",
+              "answer": "He gave money obtained from film shows to the Freedom Fighters’ Trust. The excerpt connects cultural work with practical support."
+            },
+            {
+              "text": "What role is assigned to Stop Genocide?",
+              "answer": "The documentary is said to have helped create world sentiment in favour of the Liberation War by presenting Pakistani atrocities. This is the passage’s account of its public impact."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Maldives — islands and atolls",
+      "pdfPages": [
+        17
+      ],
+      "excerptLocator": "First geography paragraph only; excludes settlement and political history",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Textbook-era counts/rankings retained as attributed passage data, not certified current statistics. Does not repeat the original school set’s overlapping more-than-one-hundred/less-than-1200 alternatives or ambiguous traveller/historian question.",
+      "passage": "The Republic of Maldives is an island country in the Indian Ocean. It has 1199 islands that are clustered into 26 major atolls. An atoll is a ring-shaped coral reef or a string of closely spaced coral islands. The natural coral reefs of the Maldives are surrounded by the sea all around and stand out as a pearl in the Indian Ocean. The Maldives is the eighth smallest country in the world with an area of only 300 square kilometres. It is the smallest Asian country in terms of population and area.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "In which ocean does the excerpt locate the Maldives?",
+              "options": [
+                "The Indian Ocean",
+                "The Arctic Ocean",
+                "The Atlantic Ocean",
+                "The Southern Ocean"
+              ],
+              "answer": "The Indian Ocean"
+            },
+            {
+              "text": "What type of country is it called?",
+              "options": [
+                "A landlocked country",
+                "An island country",
+                "A polar continent",
+                "A mountain kingdom"
+              ],
+              "answer": "An island country"
+            },
+            {
+              "text": "How many major atolls are stated in the excerpt?",
+              "options": [
+                "12",
+                "60",
+                "26",
+                "300"
+              ],
+              "answer": "26"
+            },
+            {
+              "text": "Which description matches an atoll in the excerpt?",
+              "options": [
+                "A railway tunnel through a hill",
+                "A single inland freshwater lake",
+                "An artificial desert road",
+                "A ring-shaped coral reef or closely spaced coral islands"
+              ],
+              "answer": "A ring-shaped coral reef or closely spaced coral islands"
+            },
+            {
+              "text": "What surrounds the natural coral reefs in the description?",
+              "options": [
+                "The sea",
+                "Snow-covered farmland",
+                "An inland desert",
+                "A chain of factories"
+              ],
+              "answer": "The sea"
+            },
+            {
+              "text": "What image is used to praise the country?",
+              "options": [
+                "A frozen fortress",
+                "A pearl in the Indian Ocean",
+                "A golden desert",
+                "A tower above the clouds"
+              ],
+              "answer": "A pearl in the Indian Ocean"
+            },
+            {
+              "text": "What does “clustered” mean here?",
+              "options": [
+                "Separated by legal ownership",
+                "Destroyed completely",
+                "Grouped together",
+                "Moved underground"
+              ],
+              "answer": "Grouped together"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How does the excerpt explain an atoll?",
+              "answer": "It is a ring-shaped coral reef or a string of closely spaced coral islands. The definition connects the term with the islands’ physical arrangement."
+            },
+            {
+              "text": "What two measures are used when the passage calls it the smallest Asian country?",
+              "answer": "It refers to population and area. The claim belongs to the supplied geography description rather than a newly measured ranking."
+            },
+            {
+              "text": "Why is the pearl comparison appropriate to the author’s description?",
+              "answer": "It presents the coral islands standing out within the surrounding ocean. The comparison expresses admiration for their appearance."
+            },
+            {
+              "text": "How are individual islands and major atolls related in the passage?",
+              "answer": "The individual islands are described as clustered into 26 major atolls. Atolls are thus groups or reef formations rather than an alternative name for the whole ocean."
+            },
+            {
+              "text": "Should the excerpt’s island count be treated as an independently updated inventory?",
+              "answer": "No. It is a figure printed in the supplied passage. The question set does not verify a current survey or changes in geographical classification."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Air pollution — sources and proposed responses",
+      "pdfPages": [
+        42
+      ],
+      "excerptLocator": "Boxed Q3 source paragraph only; the new pair is authored, not the original gap exercise",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Original poorly serviced, industrious and older-than-20 wording retained. No legal age limit or current clean-fuel certification inferred; no claim relocation removes pollution. Vocabulary synonym question explicitly asks a general synonym, not an occurrence of minimise in this excerpt.",
+      "passage": "Air pollution comes from a wide variety of sources. In Bangladesh poisonous exhaust from industrial plants, brick kilns, old or poorly serviced vehicles and dust from roads and construction sites are some of the major sources of air pollution. We can reduce this type of pollution by making less use of motor vehicles older than 20 years. We may also use proper lubricants to lessen the level of emission and pollutants. We can encourage people to use Compressed Natural Gas (CNG) or Liquid Petroleum Gas (LPG) for fuelling their cars. The government may relocate hazardous industrious like brick kilns to areas away from human habitation.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Which source of polluted air is explicitly mentioned?",
+              "options": [
+                "Brick kilns",
+                "Unopened books",
+                "Unlit candles in storage",
+                "Unpainted classroom walls"
+              ],
+              "answer": "Brick kilns"
+            },
+            {
+              "text": "Which vehicles does the passage identify among pollution sources?",
+              "options": [
+                "Only bicycles without engines",
+                "Old or poorly serviced vehicles",
+                "Only boats moved by oars",
+                "Only trains in photographs"
+              ],
+              "answer": "Old or poorly serviced vehicles"
+            },
+            {
+              "text": "Dust from which activities is included?",
+              "options": [
+                "Reading and drawing",
+                "Singing and storytelling",
+                "Roads and construction sites",
+                "Weaving and sewing only"
+              ],
+              "answer": "Roads and construction sites"
+            },
+            {
+              "text": "Why does the passage mention proper lubricants?",
+              "options": [
+                "To make roads wider",
+                "To remove all traffic rules",
+                "To increase a vehicle’s age",
+                "To lessen emissions and pollutants"
+              ],
+              "answer": "To lessen emissions and pollutants"
+            },
+            {
+              "text": "What does CNG stand for in the excerpt?",
+              "options": [
+                "Compressed Natural Gas",
+                "Central National Garden",
+                "Coastal Navigation Group",
+                "Common News Guide"
+              ],
+              "answer": "Compressed Natural Gas"
+            },
+            {
+              "text": "Where does the passage suggest relocating hazardous industries?",
+              "options": [
+                "Inside every school",
+                "Away from human habitation",
+                "Beside every bedroom",
+                "Under hospital wards"
+              ],
+              "answer": "Away from human habitation"
+            },
+            {
+              "text": "What does “minimise” mean as a general synonym for reduce?",
+              "options": [
+                "Make compulsory",
+                "Make invisible by definition",
+                "Make smaller in amount",
+                "Make permanent"
+              ],
+              "answer": "Make smaller in amount"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Name three pollution sources listed in the excerpt.",
+              "answer": "Examples are industrial plants, brick kilns and old or poorly serviced vehicles. Road and construction dust are also included."
+            },
+            {
+              "text": "How does the paragraph connect transport choices with pollution?",
+              "answer": "It suggests less use of older motor vehicles, suitable lubricants and alternative fuels. These are proposed responses in the text, not a promise that any fuel is pollution-free."
+            },
+            {
+              "text": "Why might relocating a hazardous industry matter for residents?",
+              "answer": "The paragraph proposes moving such industries away from human habitation. This can be read as reducing people’s immediate exposure, not eliminating the pollution itself."
+            },
+            {
+              "text": "Which fuels are suggested, and how are they described?",
+              "answer": "The text names Compressed Natural Gas and Liquid Petroleum Gas, abbreviated CNG and LPG. It suggests encouraging their use for cars."
+            },
+            {
+              "text": "Does the passage provide enough information to compare every environmental cost of the suggested fuels?",
+              "answer": "No. It names possible responses but supplies no full emissions or life-cycle comparison. Answers should not claim the fuels are universally harmless."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Meherjan — loss and displacement",
+      "pdfPages": [
+        54
+      ],
+      "excerptLocator": "Opening narrative through shattered dreams; excludes numerical national estimates",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Excerpt ends before source-era 100,000/year estimate. Character narrative, not a statistical or medical causal study. Does not silently repair overlapping original school MCQs; source Meher/Meherjan names retained.",
+      "passage": "Meherjan lives in a slum on the Sirajgonj Town Protection Embankment. The whispering wind from the river Jamuna makes the fire unsteady. The dancing flames remind Meherjan of the turmoil in her life. Not long ago Meherjan had everything-a family, arable land and cattle. The erosion of the Jamuna gradually consumed all her land property. It finally claimed her only shelter during the last monsoon. It took the river only a day to devour Meher's house, trees, vegetable garden and the bamboo bush. She had a happy family once. Over the years, she lost her husband and her family to diseases that cruel hunger and poverty brought to the family. Now, she is the only one left to live on with the loss and the pain. The greedy Jamuna has shattered her dreams and happiness.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Where is Meherjan living in this account?",
+              "options": [
+                "On the Sirajgonj Town Protection Embankment",
+                "Inside a university hostel",
+                "On an ocean liner",
+                "In a palace garden"
+              ],
+              "answer": "On the Sirajgonj Town Protection Embankment"
+            },
+            {
+              "text": "Which river is central to her losses?",
+              "options": [
+                "The Nile",
+                "The Jamuna",
+                "The Thames",
+                "The Dee"
+              ],
+              "answer": "The Jamuna"
+            },
+            {
+              "text": "What does “arable land” mean?",
+              "options": [
+                "Land permanently inside a building",
+                "Land covered only by roads",
+                "Land suitable for cultivation",
+                "Land used solely as a harbour"
+              ],
+              "answer": "Land suitable for cultivation"
+            },
+            {
+              "text": "When does the excerpt say her only shelter was claimed?",
+              "options": [
+                "During a winter festival",
+                "During a classroom lesson",
+                "During a mountain expedition",
+                "During the last monsoon"
+              ],
+              "answer": "During the last monsoon"
+            },
+            {
+              "text": "How is her family’s death explained in the account?",
+              "options": [
+                "Through diseases associated with hunger and poverty",
+                "Through a named shipwreck",
+                "Through an identified factory fire",
+                "Through a specified road collision"
+              ],
+              "answer": "Through diseases associated with hunger and poverty"
+            },
+            {
+              "text": "What does “turmoil” suggest about her life?",
+              "options": [
+                "Undisturbed luxury",
+                "Distress and upheaval",
+                "A completed holiday",
+                "A regular timetable"
+              ],
+              "answer": "Distress and upheaval"
+            },
+            {
+              "text": "What technique is used in “greedy Jamuna”?",
+              "options": [
+                "Providing an official river measurement",
+                "Listing a chemical formula",
+                "Giving a river a human quality",
+                "Quoting a legal judgement"
+              ],
+              "answer": "Giving a river a human quality"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How does the scene with the fire connect with Meherjan’s memories?",
+              "answer": "The unsteady fire and dancing flames remind her of turmoil. The physical scene introduces the instability and loss in her life."
+            },
+            {
+              "text": "What contrast is made between her past and present?",
+              "answer": "She once had family, farmland and cattle. Now she is alone, living with grief after the loss of property and family."
+            },
+            {
+              "text": "Which belongings were taken by the river according to the excerpt?",
+              "answer": "The account names her land, house, trees, vegetable garden and bamboo bush. Their loss removed both shelter and parts of her livelihood."
+            },
+            {
+              "text": "Why is the Jamuna described as greedy?",
+              "answer": "The river is presented as consuming her land and shelter. Greed personifies the destructive effect on her life rather than describing a river’s literal intentions."
+            },
+            {
+              "text": "Does the passage say the river directly drowned her family?",
+              "answer": "No. It connects their deaths with diseases brought by hunger and poverty. The loss of property and the loss of family should not be merged into an invented drowning event."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Pritilata — education and aspirations",
+      "pdfPages": [
+        99
+      ],
+      "excerptLocator": "Opening paragraph through two aspirations only; excludes violence and death account",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Only introductory education/aspirations paragraph retained. No death method, tactical instruction or glorification of self-harm. Original full school questions held rather than falsely claimed repaired original MCQs.",
+      "passage": "Pritilata Waddedar was born in Chattogram on 5 May 1911. She was a meritorious student at Dr Khastagir Government Girls' School in Chattogram and Eden College, Dhaka. She finally graduated in philosophy with distinction from Bethune College in Kolkata. In her college days, Pritilata was an activist in the anti–British movement. All through her life, she dreamt of two things : a society without gender discrimination, and her motherland free from British colonial rule.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Where was Pritilata born in this passage?",
+              "options": [
+                "Chattogram",
+                "Dhaka",
+                "Delhi",
+                "London"
+              ],
+              "answer": "Chattogram"
+            },
+            {
+              "text": "Which birth year is given?",
+              "options": [
+                "1833",
+                "1911",
+                "1947",
+                "1969"
+              ],
+              "answer": "1911"
+            },
+            {
+              "text": "Which Dhaka institution is named among her places of study?",
+              "options": [
+                "Trinity College",
+                "St. Mary’s High School",
+                "Eden College",
+                "The Royal School in Como"
+              ],
+              "answer": "Eden College"
+            },
+            {
+              "text": "Which subject did she graduate in?",
+              "options": [
+                "Medicine",
+                "Engineering",
+                "Agriculture",
+                "Philosophy"
+              ],
+              "answer": "Philosophy"
+            },
+            {
+              "text": "Where is Bethune College located in the excerpt?",
+              "options": [
+                "Kolkata",
+                "Kathmandu",
+                "Rome",
+                "Paris"
+              ],
+              "answer": "Kolkata"
+            },
+            {
+              "text": "What does “with distinction” suggest about her academic achievement?",
+              "options": [
+                "It was not completed",
+                "It was especially successful",
+                "It was unrelated to study",
+                "It involved no assessment"
+              ],
+              "answer": "It was especially successful"
+            },
+            {
+              "text": "What pair of aspirations does the paragraph give?",
+              "options": [
+                "A private palace and a royal title",
+                "A foreign holiday and a new camera",
+                "Gender equality and freedom from colonial rule",
+                "A trading fleet and a gold mine"
+              ],
+              "answer": "Gender equality and freedom from colonial rule"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How does the paragraph portray her as a student?",
+              "answer": "It calls her meritorious and says she graduated with distinction. These details emphasise academic ability and achievement."
+            },
+            {
+              "text": "Trace the educational institutions named in the excerpt.",
+              "answer": "It mentions Dr Khastagir Government Girls’ School in Chattogram, Eden College in Dhaka and Bethune College in Kolkata. It does not give a full dated enrolment history."
+            },
+            {
+              "text": "What two social changes did she desire?",
+              "answer": "She wanted a society without gender discrimination and a motherland free from British colonial rule. These aspirations concern both equality and political freedom."
+            },
+            {
+              "text": "What public activity does the paragraph associate with her college years?",
+              "answer": "It identifies her as an activist in the anti-British movement. No details of later actions are needed to answer from this excerpt."
+            },
+            {
+              "text": "Why would it be unsupported to give her examination marks from this paragraph?",
+              "answer": "The paragraph describes her success but gives no numerical marks. A defensible answer should not invent an examination score."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Loneliness — feeling and situation",
+      "pdfPages": [
+        28
+      ],
+      "excerptLocator": "Definition and loneliness-versus-being-alone sections only; excludes Cigna figures",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Authored replacement practice on a previously retained comprehension-only source, not a newly discovered original exam pair or a new literary work. Excludes statistics. Source It‘ is retained. General reading, not diagnosis or treatment advice.",
+      "passage": "What Is Loneliness? The American Psychological Association (APA) defines loneliness as the ―affective and cognitive discomfort or uneasiness from being or perceiving oneself to be alone or otherwise solitary.‖ In other words, loneliness is the mental or emotional discomfort you may experience from either being alone or feeling as though you are alone. This feeling stems from your social needs not being met and/or an inability to get the social connection you desire. Loneliness vs Being Alone Although loneliness and being alone are commonly confused, being alone doesn‘t necessarily mean someone is lonely. ―Loneliness is a feeling, while being alone is a situation or state of being, which isn't inherently negative,‖ says Nina Vasan. It‘ is also possible to be alone, but not feel lonely, she adds. ―For example, if you‘re by yourself but connecting to others through good communication or activities like volunteering, you don‘t feel lonely.‖",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "What does the definition primarily describe?",
+              "options": [
+                "Mental or emotional discomfort",
+                "A compulsory living arrangement",
+                "A particular school subject",
+                "A guaranteed physical illness"
+              ],
+              "answer": "Mental or emotional discomfort"
+            },
+            {
+              "text": "Which organisation is credited with the quoted definition?",
+              "options": [
+                "UNESCO",
+                "The American Psychological Association",
+                "RSPB",
+                "SAARC"
+              ],
+              "answer": "The American Psychological Association"
+            },
+            {
+              "text": "What may not be met when the feeling arises?",
+              "options": [
+                "A vehicle’s fuel requirement",
+                "A building’s paint specification",
+                "A person’s social needs",
+                "A river’s water-level target"
+              ],
+              "answer": "A person’s social needs"
+            },
+            {
+              "text": "How does the passage distinguish being alone?",
+              "options": [
+                "It always proves unhappiness",
+                "It is the name of a disease",
+                "It means a person has no interests",
+                "It is a situation or state of being"
+              ],
+              "answer": "It is a situation or state of being"
+            },
+            {
+              "text": "Which activity is used as an example of connection?",
+              "options": [
+                "Volunteering",
+                "Avoiding all communication",
+                "Cancelling every friendship",
+                "Refusing every shared activity"
+              ],
+              "answer": "Volunteering"
+            },
+            {
+              "text": "What does “inherently” mean in this context?",
+              "options": [
+                "At a specified clock time",
+                "By its very nature",
+                "With written permission",
+                "Across a national border"
+              ],
+              "answer": "By its very nature"
+            },
+            {
+              "text": "Which statement best fits the excerpt?",
+              "options": [
+                "Every person alone feels lonely",
+                "Social needs are identical for everyone",
+                "Someone can be alone without feeling lonely",
+                "Volunteering replaces all professional care"
+              ],
+              "answer": "Someone can be alone without feeling lonely"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How can loneliness arise without literal physical isolation?",
+              "answer": "The definition includes perceiving oneself to be alone and lacking desired social connection. The feeling is not measured simply by counting nearby people."
+            },
+            {
+              "text": "Why should being alone not automatically be described as negative?",
+              "answer": "The passage distinguishes a situation from a feeling. A person may be by themselves while still connected to others and not distressed."
+            },
+            {
+              "text": "What kind of need is emphasised in the explanation?",
+              "answer": "It emphasises desired social connection. A mismatch between that need and the connection available may produce discomfort."
+            },
+            {
+              "text": "How does the example of volunteering support the distinction?",
+              "answer": "It shows a way to maintain meaningful contact even when someone is otherwise by themselves. It illustrates a possibility, not a guaranteed cure."
+            },
+            {
+              "text": "Does the paragraph diagnose a named individual?",
+              "answer": "No. It explains terms and gives a general example. It does not provide a clinical assessment of a particular reader."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Loneliness — life changes and differing risks",
+      "pdfPages": [
+        33
+      ],
+      "excerptLocator": "First three paragraphs; excludes bulleted list",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Authored practice completing another previously comprehension-only reading role. Same loneliness lesson as definition/coping, not a third distinct lesson. Preserves source generalisations with explicit non-universal questions/answers; no new survey or diagnosis.",
+      "passage": "There are various demographic factors that may contribute to loneliness. Although Dr. Vasan notes that anyone can feel lonely at any time in their life, a few groups that stand out as having an increased risk of loneliness include \"young adults, mothers with young children and the elderly.\" Immigrants are also at higher risk for loneliness, continues Dr. Vasan. You may experience loneliness for a variety of reasons, but it can often stem from a major life change. A 2020 study by the University of Edinburgh suggests that the causes of loneliness differ depending on the age of the individual. For example, older adults experience loneliness more frequently as a result of living alone. while middle-aged individuals aren't as likely to report living alone as a cause of their loneliness. This discrepancy between what causes loneliness in older adults versus those who are middle-aged could be due to the fact that older adults have retired and no longer have the community and daily interactions of work life, explains Nikki Press. Psy.D., a clinical psychologist in New York City. Older individuals are more likely to have lost friends and family members and they are more likely to experience medical or physical limitations that restrict their opportunities for activities and socializing, continues Dr. Press.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Who can experience loneliness according to Dr. Vasan’s statement?",
+              "options": [
+                "Anyone at any time in life",
+                "Only retired people",
+                "Only university students",
+                "Only people who live abroad"
+              ],
+              "answer": "Anyone at any time in life"
+            },
+            {
+              "text": "Which group is expressly mentioned as having increased risk?",
+              "options": [
+                "Only professional athletes",
+                "Mothers with young children",
+                "Only airline pilots",
+                "Only people who own farms"
+              ],
+              "answer": "Mothers with young children"
+            },
+            {
+              "text": "Which year identifies the Edinburgh study mentioned?",
+              "options": [
+                "1910",
+                "1886",
+                "2020",
+                "1962"
+              ],
+              "answer": "2020"
+            },
+            {
+              "text": "What does the study suggest about causes?",
+              "options": [
+                "They are identical for everyone",
+                "They never involve life changes",
+                "They affect only one country",
+                "They can differ with age"
+              ],
+              "answer": "They can differ with age"
+            },
+            {
+              "text": "What work-related change is offered as one explanation for older adults?",
+              "options": [
+                "Retirement can remove daily workplace interaction",
+                "Retirement always creates a new workplace",
+                "Retirement prevents all communication",
+                "Retirement guarantees loneliness"
+              ],
+              "answer": "Retirement can remove daily workplace interaction"
+            },
+            {
+              "text": "What does “restrict” mean here?",
+              "options": [
+                "Guarantee",
+                "Limit",
+                "Celebrate",
+                "Measure in metres"
+              ],
+              "answer": "Limit"
+            },
+            {
+              "text": "How does the passage describe the proposed explanation?",
+              "options": [
+                "As a law with no exceptions",
+                "As an instruction to stop working",
+                "As a possibility, using could be due to",
+                "As a universal diagnosis"
+              ],
+              "answer": "As a possibility, using could be due to"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "Which life-stage groups are mentioned as at increased risk?",
+              "answer": "The passage mentions young adults, mothers with young children and the elderly. It also mentions immigrants; increased risk does not mean every member is lonely."
+            },
+            {
+              "text": "How might retirement change opportunities for social contact?",
+              "answer": "It can remove the community and daily interaction of working life. The text offers that as one possible explanation, not an unavoidable result."
+            },
+            {
+              "text": "What comparison does the Edinburgh study make?",
+              "answer": "It suggests older adults more frequently link loneliness with living alone than middle-aged individuals do. It does not give precise percentages in this excerpt."
+            },
+            {
+              "text": "How may losses or physical limitations affect opportunities?",
+              "answer": "Losing friends or relatives can reduce familiar connections. Medical or physical limitations may also restrict activities and socialising."
+            },
+            {
+              "text": "Why is it inaccurate to say age alone causes loneliness in everyone?",
+              "answer": "The opening says anyone can feel lonely, and the explanation uses cautious terms such as may and could. It describes risks and possible causes rather than an inevitable outcome."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Loneliness — connection and support",
+      "pdfPages": [
+        79
+      ],
+      "excerptLocator": "Full boxed reading passage; authored questions replace no original record",
+      "questionOrigin": "assistant-authored-practice",
+      "limitations": "Previously retained comprehension-only source; no claim of a new distinct lesson or original exam questions. Preserves professional-help caveat; general reading not diagnosis, guaranteed prevention or treatment. Exact source spelling other who retained.",
+      "passage": "How to Cope with and Prevent Loneliness Just as the cause of loneliness can vary from person to person, coping and prevention strategies can also differ. In general, the goal is to make strong, healthy connections that fulfil your need for social interaction. While there is no substitute for help from a mental health professional, the following tips may help you build emotional connections. Find hobbies you enjoy : Taking part in activities you enjoy can be a great way to meet others with similar interests. Consider a book club, art class, fitness group or any other activity where you can interact with others who enjoy the same things. Volunteer for an organisation you support : Volunteering will not only give you a sense of accomplishment and pride, but it's an opportunity to meet others who support that same organization. Join support groups: Support groups are an excellent way to connect with other who you have something in common with, such as a mental or physical condition. Routinely contacting family and friends : Attempting to stay connected, even if only by phone or video chat, can help nurture your emotional health and help prevent loneliness. Maintain a healthy diet and regular exercise regime : Living a healthy lifestyle promotes overall wellness and reduces your risk of chronic medical conditions-which could interfere with your social life. Regardless of your interests, it's important to listen to and fulfil your desire for social connection. This can help diminish feelings of loneliness or isolation, and could help improve the overall quality of your life.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "instruction": "Choose the correct answer according to the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "What is the general goal of the strategies?",
+              "options": [
+                "Strong, healthy social connections",
+                "Winning every argument",
+                "Avoiding every shared activity",
+                "Guaranteeing permanent happiness"
+              ],
+              "answer": "Strong, healthy social connections"
+            },
+            {
+              "text": "Which source of help does the passage say has no substitute?",
+              "options": [
+                "A new camera",
+                "A mental health professional",
+                "A travel advertisement",
+                "A sports trophy"
+              ],
+              "answer": "A mental health professional"
+            },
+            {
+              "text": "Why might a book club be useful in this account?",
+              "options": [
+                "It guarantees all members have identical lives",
+                "It removes the need for all other relationships",
+                "It offers contact with people sharing an interest",
+                "It diagnoses every participant"
+              ],
+              "answer": "It offers contact with people sharing an interest"
+            },
+            {
+              "text": "What shared link does a support group offer?",
+              "options": [
+                "An obligation never to speak",
+                "A guarantee of wealth",
+                "An identical occupation in every case",
+                "Something members have in common"
+              ],
+              "answer": "Something members have in common"
+            },
+            {
+              "text": "What form of contact is expressly included for family and friends?",
+              "options": [
+                "Phone or video chat",
+                "Only handwritten legal notices",
+                "Only public speeches",
+                "Only printed advertisements"
+              ],
+              "answer": "Phone or video chat"
+            },
+            {
+              "text": "What does “accomplishment” mean here?",
+              "options": [
+                "Complaint",
+                "Achievement",
+                "Replacement",
+                "Accommodation"
+              ],
+              "answer": "Achievement"
+            },
+            {
+              "text": "Why can strategies differ between people?",
+              "options": [
+                "Only one hobby is allowed",
+                "All social needs are exactly equal",
+                "The causes and personal needs can differ",
+                "No one benefits from connection"
+              ],
+              "answer": "The causes and personal needs can differ"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "instruction": "Answer the following questions from the supplied excerpt. Authored practice, not original exam questions.",
+          "subitems": [
+            {
+              "text": "How can enjoyable hobbies provide an opportunity for contact?",
+              "answer": "A shared activity can bring together people with similar interests. The text gives book clubs, art classes and fitness groups as examples."
+            },
+            {
+              "text": "What two benefits does the passage associate with volunteering?",
+              "answer": "It mentions a sense of accomplishment and an opportunity to meet others who support the same organisation. Neither is a promise of a clinical cure."
+            },
+            {
+              "text": "How may regular remote contact help?",
+              "answer": "Phone or video conversations can help maintain ties with family and friends. The passage includes these as ways to nurture emotional connection."
+            },
+            {
+              "text": "What limit does the passage place on its own suggestions?",
+              "answer": "It says there is no substitute for help from a mental health professional. The suggestions are general possibilities, not an individual treatment plan."
+            },
+            {
+              "text": "Why should a response avoid promising that a single activity will end loneliness?",
+              "answer": "The passage says causes and strategies differ, and uses terms such as may and could. It supports trying suitable connections without guaranteeing a result."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

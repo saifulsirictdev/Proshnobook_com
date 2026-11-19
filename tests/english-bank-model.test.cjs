@@ -199,7 +199,7 @@ test('English pagination splits presentation blocks without losing passages, tab
 });
 test('SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance',()=>{
  const registry=require('../lib/english/prepared-items.ts'),items=registry.preparedEnglishItems(10),{validateEnglishReferenceShape}=require('../lib/english/generation.ts');
- assert.equal(items.length,166);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
+ assert.equal(items.length,365);const d=items[0].draft;assert.equal(d.selection.grade,10);assert.deepEqual(d.selection.itemIds,['mcq','comprehension']);validateEnglishReferenceShape(d.selection,d.output);
  assert.equal(d.output.tasks[0].subitems.length,7);assert.equal(d.output.tasks[1].subitems.length,5);
  assert.ok(d.output.tasks.every(t=>t.boardSource.examYear===2024&&t.boardSource?.board==='Dhaka'));assert.match(d.selection.sources["seen-1"].reference,/review/);
  assert.equal(registry.englishItemsDigest(10),registry.englishItemsDigest(10));assert.equal(registry.preparedEnglishItems(9).length,0);
@@ -234,7 +234,7 @@ test('SSC registry covers nine existing item types and honestly reports missing 
  const registry=require('../lib/english/prepared-items.ts'),bank=require('../lib/english/item-bank.ts'),generation=require('../lib/english/generation.ts');
  const items=registry.preparedEnglishItems(10).filter(i=>!['textbook-poems','textbook-stories'].includes(i.group)),stock=items.map(i=>i.draft);
  assert.deepEqual(new Set(items.map(i=>i.group)),new Set(['seen-1','seen-2','unseen','matching','rearranging','story','dialogue']));
- for(const d of stock){generation.validateEnglishReferenceShape(d.selection,d.output);assert.match(d.name,/teacher review/);assert.ok(d.output.tasks.every(t=>{const src=t.boardSource??t.schoolSource;return src ? src.sourceFile&&src.pdfPage>0 : /Textbook-based authored practice/.test(d.selection.sources["seen-1"].reference);}));}
+ for(const d of stock){generation.validateEnglishReferenceShape(d.selection,d.output);assert.match(d.name,/teacher review/);assert.ok(d.output.tasks.every(t=>{const src=t.boardSource??t.schoolSource;return src ? src.sourceFile&&src.pdfPage>0 : ((d.name.startsWith("SSC authored writing")||d.name.startsWith("SSC authored matching")||d.name.startsWith("SSC authored Unseen")||d.name.startsWith("SSC authored rearranging")) ? /^Authored (?:fictional )?practice/.test(t.instruction) : /(?:Textbook-based authored practice|Supplied-passage-based AUTHORED practice|Authored SAME-TEXT practice)/.test(d.selection.sources["seen-1"].reference));}));}
  const full=bank.assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2024});assert.equal(full.draft,null);assert.deepEqual(full.missing,['poems','stories']);
  const ids=require('../lib/english/blueprints.ts').englishBlueprint(10,1).items.filter(i=>!['poems','stories'].includes(i.id)).map(i=>i.id);
  const selected=bank.assembleEnglishItems(stock,10,()=>0,ids,{examYear:2024}).draft;assert.ok(selected);assert.equal(selected.output.tasks.length,9);
@@ -267,7 +267,7 @@ test('SSC registry imports only through explicit ADMIN consent and always create
  const mocks={'@/auth':{auth:async()=>({user:{id:'admin',role:'ADMIN'}})},'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async arg=>{writes.push(arg);return {count:arg.data.length};}}}}};
  const action=load('app/admin/english-review/item-actions.ts',mocks).importEnglishItems;
  const fd=new FormData();fd.set('grade','10');fd.set('digest',registry.englishItemsDigest(10));await action(fd);assert.equal(writes.length,0);
- fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,166);
+ fd.set('reviewed','yes');await action(fd);assert.equal(writes.length,1);assert.equal(writes[0].skipDuplicates,true);assert.equal(writes[0].data.length,365);
  for(const row of writes[0].data){const r=JSON.parse(row.value);assert.equal(r.status,'PENDING');assert.equal(r.draft.selection.grade,10);assert.ok(r.draft.output.tasks.every(t=>!t.boardSource || [2018,2019,2020,2022,2023,2024].includes(t.boardSource.examYear)));}
 });
 test('Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry',()=>{
@@ -275,18 +275,18 @@ test('Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of
  const raj=items.filter(i=>i.draft.output.tasks.some(t=>t.boardSource?.board==='Rajshahi'&&t.boardSource.examYear===2024&&[3,4].includes(t.boardSource.pdfPage)&&!['story','dialogue'].includes(t.id)));
  assert.equal(raj.length,3);assert.deepEqual(raj.flatMap(i=>i.draft.output.tasks.map(t=>t.id)),['comprehension','gap','rearranging']);
  for(const i of raj){assert.equal(i.draft.selection.grade,10);assert.ok(i.draft.output.tasks.every(t=>t.boardSource.examYear===2024&&[3,4].includes(t.boardSource.pdfPage)));assert.ok(i.draft.output.tasks.every(t=>t.subitems.every(s=>s.answer)));}
- const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length-new Set(texts).size,1); // Same school text has separate comprehension/gap roles, not another distinct Seen text.
+ const texts=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(texts.length-new Set(texts).size,26); // Same school text has separate comprehension/gap roles, not another distinct Seen text; greenhouse full pair also shares its excerpt with a partial role.
  const comp=raj[0].draft.output.tasks[0];assert.match(comp.subitems[3].answer,/does not describe a method/);
  const raw=require('../lib/english/data/ssc-rajshahi-2024-items.json');assert.ok(raw.items.some(i=>i.group==='rearranging'));assert.ok(raj.some(i=>i.group==='rearranging'));assert.match(raw.notes.join(' '),/MCQ held/);
 });
 test('Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage',()=>{
  const items=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),counts={};let answers=0;
- for(const item of items)for(const task of item.draft.output.tasks){counts[task.id]=(counts[task.id]||0)+1;answers+=task.subitems.length||1;assert.ok(task.boardSource ? task.boardSource.pdfPage>=1 : task.schoolSource ? task.schoolSource.pdfPage>=1 : ["poems","stories"].includes(task.id)||item.draft.name.startsWith("SSC authored Seen"));}
- assert.equal(items.length,166);assert.equal(answers,852);
- assert.deepEqual(counts,{mcq:16,comprehension:23,information:13,summary:13,gap:10,rearranging:27,matching:19,poems:8,stories:8,story:33,dialogue:25});
- assert.equal(items.filter(i=>i.draft.output.tasks.some(t=>t.id==='mcq')&&i.draft.output.tasks.some(t=>t.id==='comprehension')).length,16);
- const seen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(seen.length,33);assert.equal(new Set(seen).size,32);
- const unseen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key==='unseen'));assert.equal(unseen.length,13);assert.equal(new Set(unseen.map(p=>p.text)).size,13);
+ for(const item of items)for(const task of item.draft.output.tasks){counts[task.id]=(counts[task.id]||0)+1;answers+=task.subitems.length||1;assert.ok(task.boardSource ? task.boardSource.pdfPage>=1 : task.schoolSource ? task.schoolSource.pdfPage>=1 : ["poems","stories"].includes(task.id)||item.draft.name.startsWith("SSC authored"));}
+ assert.equal(items.length,365);assert.equal(answers,2268);
+ assert.deepEqual(counts,{mcq:50,comprehension:57,information:50,summary:50,gap:10,rearranging:40,matching:48,poems:40,stories:40,story:40,dialogue:40});
+ assert.equal(items.filter(i=>i.draft.output.tasks.some(t=>t.id==='mcq')&&i.draft.output.tasks.some(t=>t.id==='comprehension')).length,50);
+ const seen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key.startsWith('seen-')).map(p=>p.text));assert.equal(seen.length,67);assert.equal(new Set(seen).size,41);
+ const unseen=items.flatMap(i=>i.draft.output.passages.filter(p=>p.key==='unseen'));assert.equal(unseen.length,50);assert.equal(new Set(unseen.map(p=>p.text)).size,50);
 });
 test('Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail',()=>{
  const {validateEnglishDraft}=require('../lib/english/draft.ts'),{preparedEnglishItems}=require('../lib/english/prepared-items.ts');
@@ -321,7 +321,7 @@ test('New 2024 batch expands distinct Seen/Unseen stock while keeping conflictin
 });
 test('2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts',()=>{
  const data=require('../lib/english/data/ssc-board-2023-review.json'),{preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts'),{validateEnglishDraft}=require('../lib/english/draft.ts');
- const stock=preparedEnglishItems(10).map(i=>i.draft),year=stock.filter(d=>d.output.tasks[0].boardSource?.examYear===2023);assert.equal(year.length,19);
+ const stock=preparedEnglishItems(10).map(i=>i.draft),year=stock.filter(d=>d.output.tasks[0].boardSource?.examYear===2023);assert.equal(year.length,24);
  for(const entry of data.items)for(const task of entry.tasks){
   if(task.selectedParts){assert.equal(task.sourceQuestions.length,task.originalSubitemCount);assert.equal(task.selectedParts.length,task.subitems.length);
    for(let i=0;i<task.subitems.length;i++){const source=task.sourceQuestions[task.selectedParts[i].charCodeAt(0)-97];assert.equal(task.subitems[i].text,source.text);if(source.options)assert.deepEqual(task.subitems[i].options,source.options);}
@@ -330,7 +330,7 @@ test('2023 subsets preserve exact original questions, part mapping and historica
  const chosen=assembleEnglishItems(stock,10,()=>0,['mcq','comprehension'],{examYear:2023}).draft;assert.ok(chosen);assert.ok(chosen.output.tasks.every(t=>t.boardSource.examYear===2023));
  assert.equal(chosen.output.tasks[0].subitems.length,7);assert.equal(chosen.output.tasks[0].boardSource.originalSubitemCount,10);assert.equal(chosen.output.tasks[1].boardSource.originalSubitemCount,6);
  for(const patch of [{selectedParts:['a','a']},{selectedParts:['z']},{originalSubitemCount:1},{selectedParts:undefined}]){const bad=structuredClone(chosen);Object.assign(bad.output.tasks[0].boardSource,patch);assert.throws(()=>validateEnglishDraft(bad));}
- const missing=assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2023});assert.equal(missing.draft,null);assert.deepEqual(missing.missing,['information','summary','matching','rearranging','poems','stories']);
+ const missing=assembleEnglishItems(stock,10,()=>0,undefined,{examYear:2023});assert.equal(missing.draft,null);assert.deepEqual(missing.missing,['rearranging','poems','stories']);
  const label=require('../lib/english/board-source.ts').englishBoardLabel(chosen.output.tasks[0].boardSource);assert.match(label,/2023/);assert.match(label,/নির্বাচিত অংশ/);
 });
 
@@ -342,7 +342,7 @@ test('2023 creative continuations meet the ten-new-sentence prompt and do not du
 });
 test('2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering',()=>{
  const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts');
- const drafts=preparedEnglishItems(10).map(i=>i.draft),batch=drafts.filter(d=>d.output.tasks[0].boardSource?.examYear===2020);assert.equal(batch.length,16);
+ const drafts=preparedEnglishItems(10).map(i=>i.draft),batch=drafts.filter(d=>d.output.tasks[0].boardSource?.examYear===2020);assert.equal(batch.length,17);
  const unseen=batch.filter(d=>d.output.passages.some(p=>p.key==='unseen'));assert.equal(unseen.length,4);
  for(const d of unseen){const [info,summary]=d.output.tasks;assert.equal(info.id,'information');assert.equal(summary.id,'summary');assert.equal(info.passageKey,summary.passageKey);assert.equal(info.subitems.length,5);assert.equal(info.table.headers.length,info.table.rows[0].length);
   const printable=info.instruction+'\n'+info.table.rows.flat().join('\n');for(const sub of info.subitems)assert.equal(printable.split(sub.text+' ——').length-1,1);
@@ -465,4 +465,312 @@ test('Textbook authored practice is distinct, answer-complete, traceable and nev
   for(const sub of d.output.tasks[0].subitems){assert.equal(sub.options.length,4);assert.equal(new Set(sub.options).size,4);assert.equal(sub.options.filter(o=>o===sub.answer).length,1);}
  }
  for(const file of ['literature','seen']){const raw=require('../lib/english/data/ssc-textbook-'+file+'-review.json');assert.equal(raw.status,'DRAFT_TEACHER_REVIEW_REQUIRED');assert.match(raw.sourceSha256,/^[a-f0-9]{64}$/);for(const e of raw.items){assert.equal(e.questionOrigin,'assistant-authored-practice');assert.deepEqual(e.printedPages,e.pdfPages.map(p=>p-5));}}
+});
+
+
+test('Additional image-checked school exercises have exact matching mappings, complete narrative orders and no board-year eligibility',()=>{
+ const raw=require('../lib/english/data/ssc-school-additional-review.json');
+ const {preparedSSCSchoolAdditionalItems}=require('../lib/english/prepared-ssc-school-additional.ts');
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ const items=preparedSSCSchoolAdditionalItems();assert.equal(items.length,7);assert.equal(new Set(items.map(i=>i.key)).size,7);
+ assert.equal(items.reduce((n,i)=>n+i.draft.output.tasks[0].subitems.length,0),44);
+ assert.equal(raw.sourceSha256,'b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91');
+ const strip=s=>s.replace(/^\([a-e]\)\s*|^[ivx]+\.\s*/,'');
+ for(let j=0;j<items.length;j++){const item=items[j],d=item.draft,t=d.output.tasks[0],e=raw.items[j];assert.equal(d.selection.grade,10);assert.equal(t.schoolSource.examYear,2025);assert.equal(t.schoolSource.pdfPage,e.tasks[0].pdfPage);assert.equal(t.schoolSource.school,e.school);assert.ok(e.headerPage<t.schoolSource.pdfPage);assert.equal(t.boardSource,undefined);assert.equal(approvedEnglishItem(record('PENDING',d),10),null);
+  assert.equal(assembleEnglishItems([d],10,()=>0,d.selection.itemIds,{examYear:2025}).draft,null);
+  const combined=assembleEnglishItems([d],10,()=>0,d.selection.itemIds).draft;assert.ok(combined);assert.deepEqual(combined.output.tasks[0].schoolSource,t.schoolSource);
+  if(t.id==='matching'){assert.equal(t.subitems.length,5);assert.equal(t.schoolSource.originalMarks,5);for(const col of [0,1])assert.deepEqual(e.answerPairs.map(p=>p[col]).sort(),[0,1,2,3,4]);for(let i=0;i<5;i++){const [b,c]=e.answerPairs[i];assert.equal(t.subitems[i].answer,[strip(t.table.rows[i][0]),strip(t.table.rows[b][1]),strip(t.table.rows[c][2])].join(' '));}}
+  else {assert.equal(t.subitems.length,8);assert.equal(t.schoolSource.originalMarks,8);assert.equal(new Set(e.order).size,8);assert.deepEqual(t.subitems.map(s=>Number(s.answer)).sort(),[1,2,3,4,5,6,7,8]);assert.equal(t.subitems.map((s,i)=>({pos:Number(s.answer),letter:String.fromCharCode(97+i)})).sort((a,b)=>a.pos-b.pos).map(x=>x.letter).join(''),e.order);}
+ }
+ assert.deepEqual(raw.items.filter(e=>e.group==='rearranging').map(e=>e.order),['cafhdbge','hgacdfbe','fcdbhage']);
+ assert.match(raw.notes.join(' '),/illness-for-years blank does not specify an endpoint/);assert.match(raw.notes.join(' '),/none guarantee immunity/);
+ const cyber=items.find(i=>i.group==='matching'&&i.draft.output.tasks[0].schoolSource.pdfPage===75).draft.output.tasks[0];assert.match(cyber.subitems[4].answer,/prevent exposure to phishing/);
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);assert.equal(new Set(stock.map(i=>i.key)).size,stock.length);
+});
+
+test('New reading pairs distinguish authored practice from intact school questions and stay review-gated',()=>{
+ const {preparedSSCAuthoredReadingItems}=require('../lib/english/prepared-ssc-authored-reading.ts');
+ const {preparedSSCSchoolSeenPairItems}=require('../lib/english/prepared-ssc-school-seen-pairs.ts');
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ const authored=preparedSSCAuthoredReadingItems(),school=preparedSSCSchoolSeenPairItems();
+ assert.equal(authored.length,9);assert.equal(school.length,1);
+ const raw=require('../lib/english/data/ssc-authored-reading-review.json');
+ assert.equal(raw.status,'DRAFT_TEACHER_REVIEW_REQUIRED');assert.match(raw.notes.join(' '),/NOT the original school questions/);
+ for(const [j,item] of [...authored,...school].entries()){
+  const d=item.draft;assert.deepEqual(d.output.tasks.map(t=>t.id),['mcq','comprehension']);assert.deepEqual(d.output.tasks.map(t=>t.subitems.length),[7,5]);
+  assert.equal(d.output.passages.length,1);assert.equal(d.output.passages[0].text,d.selection.sources['seen-1'].text);
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);assert.equal(assembleEnglishItems([d],10,()=>0,d.selection.itemIds,{examYear:2025}).draft,null);
+  const merged=assembleEnglishItems([d],10,()=>0,d.selection.itemIds).draft;assert.ok(merged);assert.equal(merged.selection.sources['seen-1'].reference,d.selection.sources['seen-1'].reference);
+  for(const sub of d.output.tasks[0].subitems){assert.equal(sub.options.length,4);assert.equal(new Set(sub.options).size,4);assert.equal(sub.options.filter(o=>o===sub.answer).length,1);}
+  assert.ok(d.output.tasks.every(t=>!t.boardSource&&t.subitems.every(s=>s.answer)));
+  if(j<9){assert.ok(d.output.tasks.every(t=>!t.schoolSource));assert.match(d.selection.sources['seen-1'].reference,/AUTHORED practice/);const e=raw.items[j];assert.equal(e.questionOrigin,'assistant-authored-practice');assert.ok(e.excerptLocator&&e.limitations);}
+  else for(const t of d.output.tasks){assert.equal(t.schoolSource.school,'Habiganj Government High School, Habiganj');assert.equal(t.schoolSource.pdfPage,112);assert.equal(t.schoolSource.examYear,2025);assert.equal(t.schoolSource.originalMarks,t.id==='mcq'?7:10);}
+ }
+ assert.ok(!raw.items.find(e=>e.topic.startsWith('Zahir')).passage.includes('30 December'));
+ assert.ok(!raw.items.find(e=>e.topic.startsWith('Meherjan')).passage.includes('100,000'));
+ assert.equal(new Set([...authored,...school].map(i=>i.key)).size,10);
+});
+
+test('Intact historic board tables preserve every fragment/blank, original counts and review gating',()=>{
+ const raw=require('../lib/english/data/ssc-board-intact-tables-review.json');
+ const items=require('../lib/english/prepared-ssc-intact-tables.ts').preparedSSCIntactTableItems();
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ const {validateEnglishDraft}=require('../lib/english/draft.ts');
+ const {englishBoardLabel}=require('../lib/english/board-source.ts');
+ assert.equal(items.length,11);assert.equal(new Set(items.map(i=>i.key)).size,11);
+ assert.equal(items.reduce((n,i)=>n+i.draft.output.tasks.reduce((m,t)=>m+(t.subitems.length||1),0),0),60);
+ assert.equal(raw.sourceSha256,'768d1d0b6f3c67ffe57187e64908a68f82f6a2553847642f840ea9f492946874');
+ const strip=s=>s.replace(/^\([a-g]\)\s*|^[ivx]+\.\s*/,'');
+ for(let j=0;j<items.length;j++){
+  const item=items[j],d=item.draft,t=d.output.tasks[0],e=raw.items[j],src=t.boardSource;
+  assert.equal(src.board,e.board);assert.equal(src.examYear,e.examYear);assert.equal(src.pdfPage,e.tasks[0].pdfPage);assert.equal(t.schoolSource,undefined);
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);
+  assert.equal(assembleEnglishItems([d],10,()=>0,d.selection.itemIds,{examYear:2024}).draft,null);
+  const combined=assembleEnglishItems([d],10,()=>0,d.selection.itemIds,{examYear:e.examYear}).draft;assert.ok(combined);assert.deepEqual(combined.output.tasks[0],t);
+  assert.ok(validateEnglishDraft(combined));
+  if(t.id==='matching'){
+   const n=t.subitems.length;assert.ok([4,5,7].includes(n));assert.equal(t.table.rows.length,n);assert.equal(src.originalMarks,n);
+   for(const col of [0,1])assert.deepEqual(e.answerPairs.map(p=>p[col]).sort(),Array.from({length:n},(_,i)=>i));
+   for(let k=0;k<n;k++){const [b,c]=e.answerPairs[k];assert.equal(t.subitems[k].answer,[strip(t.table.rows[k][0]),strip(t.table.rows[b][1]),strip(t.table.rows[c][2])].join(' '));}
+  }else{
+   assert.equal(t.subitems.length,6);assert.equal(d.output.tasks[1].id,'summary');assert.equal(t.passageKey,'unseen');assert.equal(d.output.tasks[1].passageKey,'unseen');
+   for(const sub of t.subitems)assert.equal(t.table.rows.flat().join('\n').split(sub.text+' ——').length-1,1);
+   assert.ok(d.output.tasks[1].answer.split(/\s+/).length>=70);assert.ok(d.output.tasks[1].answer.split(/\s+/).length<=90);
+  }
+  if(src.originalSubitemCount){assert.equal(src.originalSubitemCount,t.subitems.length);assert.deepEqual(src.selectedParts,Array.from({length:t.subitems.length},(_,i)=>String.fromCharCode(97+i)));assert.match(englishBoardLabel(src),/অক্ষুণ্ণ/);assert.doesNotMatch(englishBoardLabel(src),/নির্বাচিত অংশ/);assert.match(t.instruction,/Practice note:/);assert.match(t.instruction,/5 marks in total/);}
+ }
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);assert.equal(new Set(stock.map(i=>i.key)).size,stock.length);
+ const unseen=items.filter(i=>i.group==='unseen');assert.equal(unseen.length,2);assert.match(unseen[0].draft.output.tasks[1].answer,/posthumous/);
+ assert.match(raw.notes.join(' '),/Deduplicated 2023 Shahidullah/);
+});
+
+test('Historical count compatibility is narrow and cannot silently truncate standard or original exercises',()=>{
+ const {validateEnglishDraft}=require('../lib/english/draft.ts');
+ const items=require('../lib/english/prepared-ssc-intact-tables.ts').preparedSSCIntactTableItems();
+ for(const item of items.filter(i=>i.draft.output.tasks[0].boardSource.originalSubitemCount)){
+  const original=item.draft;
+  for(const mutate of [
+   d=>{delete d.output.tasks[0].boardSource;},
+   d=>{d.output.tasks[0].boardSource.examYear=2024;},
+   d=>{d.output.tasks[0].boardSource.questionNumber=1;},
+   d=>{d.output.tasks[0].boardSource.originalMarks=99;},
+   d=>{delete d.output.tasks[0].boardSource.selectedParts;},
+   d=>{d.output.tasks[0].subitems.pop();},
+   d=>{d.output.tasks[0].boardSource.selectedParts.reverse();},
+  ]){const bad=structuredClone(original);mutate(bad);assert.throws(()=>validateEnglishDraft(bad));}
+  const bad=structuredClone(original);if(bad.output.tasks[0].id==='matching')bad.output.tasks[0].table.rows.pop();else bad.output.tasks[0].table.rows=bad.output.tasks[0].table.rows.map(r=>r.map(c=>c.replace('(vi)','(vii)')));assert.throws(()=>validateEnglishDraft(bad));
+ }
+});
+
+test('Historical table counts survive print fragmentation with practice marks and visible adaptation notes',()=>{
+ const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
+ try{
+  const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
+  const items=require('../lib/english/prepared-ssc-intact-tables.ts').preparedSSCIntactTableItems();
+  for(const item of items){
+   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(item.draft),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
+   const tasks=fragments.flatMap(q=>q.englishGroup.tasks);
+   assert.equal(tasks.reduce((n,t)=>n+t.subitems.length,0),item.draft.output.tasks.reduce((n,t)=>n+t.subitems.length,0));
+   assert.equal(p.settings.show.boardSource,false);
+   const html=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
+   assert.doesNotMatch(html,/Board 202[023]/);
+   const t=item.draft.output.tasks[0];if(t.boardSource.originalSubitemCount){assert.equal((html.match(/Practice note:/g)||[]).length,1);assert.match(html,/5 marks in total/);}
+   if(t.id==='information')for(const sub of t.subitems)assert.ok(tasks.some(t=>t.subitems.some(s=>s.answer===sub.answer)));
+   p.settings.show.boardSource=true;p.settings.show.marks=true;
+   const provenance=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
+   if(t.boardSource.originalSubitemCount){assert.match(provenance,/অক্ষুণ্ণ/);assert.match(provenance,new RegExp(`মূল প্রশ্নে ${t.boardSource.originalMarks} নম্বর; practice-এ 5`));}
+  }
+ }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
+});
+
+test('Authored writing closes practice-only minima with seven ten-sentence stories and fifteen twelve-turn dialogues',()=>{
+ const raw=require('../lib/english/data/ssc-authored-writing-review.json');
+ const items=require('../lib/english/prepared-ssc-authored-writing.ts').preparedSSCAuthoredWritingItems();
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ assert.equal(raw.status,'DRAFT_TEACHER_REVIEW_REQUIRED');assert.equal(raw.sourceKind,'original-authored-writing-practice');
+ assert.equal(raw.sourceFile,undefined);assert.equal(raw.sourceSha256,undefined);
+ assert.equal(items.length,22);assert.equal(items.filter(i=>i.group==='story').length,7);assert.equal(items.filter(i=>i.group==='dialogue').length,15);
+ for(let j=0;j<items.length;j++){
+  const e=raw.items[j],i=items[j],d=i.draft,t=d.output.tasks[0];assert.equal(e.questionOrigin,'assistant-authored-practice');assert.ok(e.learningFocus);
+  assert.ok(d.name.startsWith('SSC authored writing'));assert.equal(d.output.passages.length,0);assert.deepEqual(d.selection.sources,{});assert.deepEqual(d.selection.itemIds,[e.group]);
+  assert.equal(t.boardSource,undefined);assert.equal(t.schoolSource,undefined);assert.equal(t.passageKey,undefined);assert.equal(t.subitems.length,0);assert.match(t.instruction,/Authored practice — not a board or school examination question/);assert.ok(t.instruction.includes(e.topic));
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);
+  for(const examYear of [2019,2020,2022,2023,2024,2025])assert.equal(assembleEnglishItems([d],10,()=>0,[e.group],{examYear}).draft,null);
+  const assembled=assembleEnglishItems([d],10,()=>0,[e.group]).draft;assert.ok(assembled);assert.deepEqual(assembled.output.tasks,[t]);
+  if(e.group==='story'){
+   const lines=t.answer.split('\n');assert.equal(lines.length,3);assert.equal(lines[1],e.beginning);assert.ok(t.instruction.endsWith(e.beginning));assert.equal(e.continuationSentences.length,10);assert.equal(lines[2],e.continuationSentences.join(' '));assert.equal(lines[2].split(/(?<=[.!?])\s+/).length,10);assert.ok(e.continuationSentences.every(s=>/[.!?]$/.test(s)));
+  }else{
+   const lines=t.answer.split('\n');assert.equal(lines.length,12);const names=lines.map(l=>l.split(':')[0]);assert.equal(new Set(names).size,2);
+   for(let k=0;k<12;k++){assert.equal(names[k],names[k%2]);assert.ok(t.instruction.includes(names[k]));assert.ok(lines[k].split(':').slice(1).join(':').trim().length>15);}
+  }
+ }
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);
+ assert.equal(stock.filter(i=>i.group==='story').length,40);assert.equal(stock.filter(i=>i.group==='dialogue').length,40);
+ for(const group of ['story','dialogue']){const prompts=stock.filter(i=>i.group===group).map(i=>i.draft.output.tasks[0].instruction.replace(/\s+/g,' ').trim());assert.equal(new Set(prompts).size,40);}
+});
+
+test('Authored matching has sixteen standard five-part permutations, exact keys and no false exam provenance',()=>{
+ const raw=require('../lib/english/data/ssc-authored-matching-review.json');
+ const items=require('../lib/english/prepared-ssc-authored-matching.ts').preparedSSCAuthoredMatchingItems();
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ assert.equal(raw.status,'DRAFT_TEACHER_REVIEW_REQUIRED');assert.equal(raw.sourceKind,'original-authored-matching-practice');assert.equal(raw.sourceFile,undefined);assert.equal(raw.sourceSha256,undefined);
+ assert.equal(items.length,16);assert.equal(new Set(raw.items.map(e=>e.topic)).size,16);
+ const strip=s=>s.replace(/^\([a-e]\)\s*|^[ivx]+\.\s*/,'');
+ for(let j=0;j<items.length;j++){
+  const e=raw.items[j],d=items[j].draft,t=d.output.tasks[0];assert.equal(e.questionOrigin,'assistant-authored-practice');assert.equal(t.id,'matching');assert.equal(t.subitems.length,5);assert.equal(t.table.rows.length,5);assert.equal(t.table.headers.length,3);
+  assert.equal(t.boardSource,undefined);assert.equal(t.schoolSource,undefined);assert.equal(d.output.passages.length,0);assert.deepEqual(d.selection.sources,{});assert.deepEqual(d.selection.writing,{});assert.match(t.instruction,/Authored practice — not a board or school examination question/);
+  for(const col of [0,1])assert.deepEqual(e.answerPairs.map(p=>p[col]).sort(),[0,1,2,3,4]);
+  for(const col of [0,1,2])assert.equal(new Set(t.table.rows.map(r=>strip(r[col]))).size,5);
+  for(let k=0;k<5;k++){const [b,c]=e.answerPairs[k];assert.equal(t.subitems[k].answer,[strip(t.table.rows[k][0]),strip(t.table.rows[b][1]),strip(t.table.rows[c][2])].join(' '));}
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);assert.equal(assembleEnglishItems([d],10,()=>0,['matching'],{examYear:2024}).draft,null);assert.deepEqual(assembleEnglishItems([d],10,()=>0,['matching']).draft.output.tasks,[t]);
+ }
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),matching=stock.filter(i=>i.group==='matching');
+ assert.equal(matching.length,48);assert.equal(matching.filter(i=>i.draft.output.tasks[0].subitems.length===5).length,40);
+ assert.equal(new Set(stock.map(i=>i.key)).size,stock.length);
+});
+
+test('Authored practice labels, prompts and answers survive assembly and print with provenance hidden',()=>{
+ const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
+ try{
+  const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
+  const {assembleEnglishItems}=require('../lib/english/item-bank.ts');
+  const writing=require('../lib/english/prepared-ssc-authored-writing.ts').preparedSSCAuthoredWritingItems(),matching=require('../lib/english/prepared-ssc-authored-matching.ts').preparedSSCAuthoredMatchingItems();
+  const combined=assembleEnglishItems([...writing,...matching].map(i=>i.draft),10,()=>0,['matching','story','dialogue']).draft;
+  assert.ok(combined);assert.deepEqual(combined.output.tasks.map(t=>t.id),['matching','story','dialogue']);assert.ok(combined.output.tasks.every(t=>!t.boardSource&&!t.schoolSource));
+  for(const d of [combined,...writing.map(i=>i.draft),...matching.map(i=>i.draft)]){
+   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(d),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
+   assert.equal(p.settings.show.boardSource,false);
+   const html=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
+   assert.equal((html.match(/Authored practice — not a board or school examination question/g)||[]).length,d.output.tasks.length);assert.doesNotMatch(html,/Board 202[02345]|মূল প্রশ্নে/);
+   const actual=fragments.flatMap(q=>q.englishGroup.tasks);assert.equal(actual.reduce((n,t)=>n+t.subitems.length,0),d.output.tasks.reduce((n,t)=>n+t.subitems.length,0));
+  }
+ }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
+});
+
+test('Thirty-five authored Unseen pairs reach fifty without false exam provenance or invented answer details',()=>{
+ const raw=require('../lib/english/data/ssc-authored-unseen-review.json'),items=require('../lib/english/prepared-ssc-authored-unseen.ts').preparedSSCAuthoredUnseenItems();
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');
+ assert.equal(raw.status,'DRAFT_TEACHER_REVIEW_REQUIRED');assert.equal(raw.sourceFile,undefined);assert.equal(raw.sourceSha256,undefined);assert.equal(items.length,35);assert.equal(new Set(raw.items.map(e=>e.topic)).size,35);
+ assert.equal(items.reduce((n,i)=>n+i.draft.output.tasks.reduce((m,t)=>m+(t.subitems.length||1),0),0),210);
+ for(let j=0;j<items.length;j++){
+  const e=raw.items[j],d=items[j].draft,[info,summary]=d.output.tasks;
+  assert.equal(e.questionOrigin,'assistant-authored-practice');assert.equal(e.fictional,true);assert.ok(d.name.startsWith('SSC authored Unseen'));
+  assert.equal(d.output.passages.length,1);assert.equal(d.output.passages[0].text,e.passage);assert.match(e.passage,/^Authored fictional practice — not a board or school examination passage/);
+  assert.deepEqual(d.output.tasks.map(t=>t.id),['information','summary']);assert.ok(d.output.tasks.every(t=>t.passageKey==='unseen'&&!t.boardSource&&!t.schoolSource&&/^Authored practice/.test(t.instruction)));
+  assert.equal(info.subitems.length,5);assert.equal(info.table.rows.length,5);assert.equal(new Set(info.table.rows.map(r=>r[0])).size,5);
+  for(const sub of info.subitems){assert.equal(info.table.rows.flat().join('\n').split(sub.text+' ——').length-1,1);assert.ok(e.passage.toLowerCase().includes(sub.answer.toLowerCase()));}
+  assert.ok(summary.answer.split(/\s+/).length>=70);assert.ok(summary.answer.split(/\s+/).length<=90);
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);
+  for(const filter of [{examYear:2024},{school:'Invented School'}])assert.equal(assembleEnglishItems([d],10,()=>0,['information','summary'],filter).draft,null);
+  const combined=assembleEnglishItems([d],10,()=>0,['information','summary']).draft;assert.ok(combined);assert.deepEqual(combined.output,d.output);
+ }
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10),unseen=stock.filter(i=>i.group==='unseen');assert.equal(unseen.length,50);assert.equal(new Set(unseen.map(i=>i.draft.output.passages[0].text)).size,50);
+});
+
+test('Ten authored rearranging groups preserve all eight sentences and complete the forty-group practice minimum',()=>{
+ const raw=require('../lib/english/data/ssc-authored-rearranging-review.json'),items=require('../lib/english/prepared-ssc-authored-rearranging.ts').preparedSSCAuthoredRearrangingItems();
+ const {assembleEnglishItems,approvedEnglishItem}=require('../lib/english/item-bank.ts');assert.equal(items.length,10);assert.equal(raw.sourceFile,undefined);assert.equal(raw.sourceSha256,undefined);
+ for(let j=0;j<10;j++){
+  const e=raw.items[j],d=items[j].draft,t=d.output.tasks[0];assert.equal(e.questionOrigin,'assistant-authored-practice');assert.equal(e.fictional,true);assert.equal(e.coherentNarrative.length,8);assert.equal(t.subitems.length,8);assert.match(t.instruction,/Authored fictional practice/);assert.equal(t.boardSource,undefined);assert.equal(t.schoolSource,undefined);assert.equal(d.output.passages.length,0);
+  assert.deepEqual(t.subitems.map(s=>Number(s.answer)).sort(),[1,2,3,4,5,6,7,8]);assert.deepEqual([...e.order].sort(),[...'abcdefgh']);
+  assert.deepEqual([...t.subitems].sort((a,b)=>Number(a.answer)-Number(b.answer)).map(s=>s.text),e.coherentNarrative);
+  assert.equal(t.subitems.map((s,k)=>({rank:Number(s.answer),label:String.fromCharCode(97+k)})).sort((a,b)=>a.rank-b.rank).map(s=>s.label).join(''),e.order);assert.equal(t.answer,e.order.split('').join(' → '));
+  assert.equal(approvedEnglishItem(record('PENDING',d),10),null);for(const filter of [{examYear:2024},{school:'Invented School'}])assert.equal(assembleEnglishItems([d],10,()=>0,['rearranging'],filter).draft,null);
+  assert.deepEqual(assembleEnglishItems([d],10,()=>0,['rearranging']).draft.output,d.output);
+ }
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10);assert.equal(stock.filter(i=>i.group==='rearranging').length,40);assert.equal(new Set(stock.map(i=>i.key)).size,stock.length);
+});
+
+test('School-name selection isolates complete atomic groups, preserves true headers and never falls back',async()=>{
+ const {assembleEnglishItems}=require('../lib/english/item-bank.ts'),{englishBoardFilterSchema}=require('../lib/english/board-source.ts');
+ const stock=require('../lib/english/prepared-items.ts').preparedEnglishItems(10).map(i=>i.draft);
+ const school=stock.find(d=>d.output.tasks[0].schoolSource&&d.output.tasks[0].id==='matching').output.tasks[0].schoolSource.school;
+ const selected=assembleEnglishItems(stock,10,()=>0,['matching'],{school}).draft;assert.ok(selected);assert.ok(selected.output.tasks.every(t=>t.schoolSource.school===school&&!t.boardSource));
+ assert.equal(assembleEnglishItems(stock,10,()=>0,['matching'],{school:'No such approved school'}).draft,null);
+ assert.equal(assembleEnglishItems(stock,10,()=>0,undefined,{school}).draft,null);
+ for(const filter of [{school:''},{school:'   '},{school:42},{school:'x'.repeat(201)},{school,examYear:2025},{school,extra:true}])assert.equal(englishBoardFilterSchema.safeParse(filter).success,false);
+ const seen=require('../lib/english/prepared-ssc-school-seen-pairs.ts').preparedSSCSchoolSeenPairItems()[0].draft;
+ const mixed=structuredClone(seen);mixed.output.tasks[1].schoolSource.school='Another school';
+ assert.equal(assembleEnglishItems([mixed],10,()=>0,['mcq','comprehension'],{school:seen.output.tasks[0].schoolSource.school}).draft,null);
+ for(const filter of [{school:''},{school:12},{school,examYear:2025}]){const h=harness();assert.equal((await h.run(10,['matching'],filter)).ok,false);assert.equal(h.reads(),0);assert.equal(h.writes.length,0);}
+ const invalidGrade=harness();assert.equal((await invalidGrade.run(6,['matching'],{school})).ok,false);assert.equal(invalidGrade.reads(),0);
+ const approved=harness([{key:'english-item:v1:school',value:record('APPROVED',selected)}]);assert.equal((await approved.run(10,['matching'],{school})).ok,true);assert.equal(approved.writes.length,1);assert.equal(JSON.parse(approved.writes[0].value).output.tasks[0].schoolSource.school,school);
+ const pending=harness([{key:'english-item:v1:pending',value:record('PENDING',selected)}]);const noStock=await pending.run(10,['matching'],{school});assert.equal(noStock.ok,false);assert.ok(noStock.error.includes(school));assert.equal(pending.writes.length,0);
+});
+
+test('School dropdown options come only from approved grade-matched homogeneous reusable groups',async()=>{
+ const school=require('../lib/english/prepared-ssc-school-seen-pairs.ts').preparedSSCSchoolSeenPairItems()[0].draft;
+ const mixed=structuredClone(school);mixed.output.tasks[1].schoolSource.school='Mixed school';
+ const board=require('../lib/english/prepared-items.ts').preparedEnglishItems(10)[0].draft;
+ const authored=require('../lib/english/prepared-ssc-authored-unseen.ts').preparedSSCAuthoredUnseenItems()[0].draft;
+ function options(user,rows){let reads=0;const action=load('app/actions/english-bank-model.ts',{'@/auth':{auth:async()=>({user})},'@/lib/db':{db:{setting:{findMany:async()=>{reads++;return rows;},create:async()=>{throw Error('options must never write');}}}}});return {list:action.listEnglishBankSchools,reads:()=>reads};}
+ for(const user of [null,{id:'s',role:'STUDENT'}]){const h=options(user,[]);assert.deepEqual((await h.list(10)).schools,[]);assert.equal(h.reads(),0);}
+ const invalid=options({id:'t',role:'TEACHER'},[]);assert.deepEqual((await invalid.list(6)).schools,[]);assert.equal(invalid.reads(),0);
+ const only=options({id:'t',role:'TEACHER'},[{key:'a',value:record('PENDING',school)},{key:'b',value:record('APPROVED',board)},{key:'c',value:record('APPROVED',authored)},{key:'d',value:record('APPROVED',mixed)}]);assert.deepEqual((await only.list(10)).schools,[]);
+ const yes=options({id:'t',role:'TEACHER'},[{key:'s',value:record('APPROVED',school)},{key:'dup',value:record('APPROVED',school)}]);assert.deepEqual(await yes.list(10),{schools:[school.output.tasks[0].schoolSource.school],error:''});assert.deepEqual((await yes.list(9)).schools,[]);
+});
+
+test('Source-filter UI clears mutually exclusive choices, retries failures and ignores stale school requests',async()=>{
+ const React=require('react');const BoardYear=()=>null;const pending=[];let state=[],cursor=0,effectDeps,cleanup;
+ const hooks={useState(initial){const index=cursor++;if(!(index in state))state[index]=initial;return[state[index],value=>{state[index]=typeof value==='function'?value(state[index]):value;}];},useEffect(fn,deps){if(!effectDeps||deps.some((d,i)=>d!==effectDeps[i])){cleanup?.();effectDeps=deps;cleanup=fn();}}};
+ const m=new Module(path.resolve('components/english-source-filter.tsx'),module);m.paths=module.paths;m.require=id=>id==='react'?hooks:id==='./english-board-year'?{__esModule:true,default:BoardYear}:id==='@/app/actions/english-bank-model'?{listEnglishBankSchools:grade=>new Promise((resolve,reject)=>pending.push({grade,resolve,reject}))}:require(id);
+ m._compile(ts.transpileModule(fs.readFileSync('components/english-source-filter.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,'components/english-source-filter.tsx');
+ const Filter=m.exports.default,changes=[];let props={grade:10,examYear:'',school:'',onYearChange:v=>changes.push(['year',v]),onSchoolChange:v=>changes.push(['school',v])};
+ const render=()=>{cursor=0;return Filter(props);};
+ function find(node,predicate){if(!React.isValidElement(node))return null;if(predicate(node))return node;for(const child of React.Children.toArray(node.props.children)){const got=find(child,predicate);if(got)return got;}return null;}
+ let tree=render();assert.equal(pending[0].grade,10);assert.equal(find(tree,n=>n.type==='select').props.disabled,true);
+ const board=find(tree,n=>n.type===BoardYear);board.props.onChange('2024');assert.deepEqual(changes.splice(0),[['year','2024'],['school','']]);
+ const select=find(tree,n=>n.type==='select');select.props.onChange({target:{value:'School A'}});assert.deepEqual(changes.splice(0),[['school','School A'],['year','']]);
+ // A stale grade10 response must not replace the current grade9 list.
+ props={...props,grade:9};tree=render();assert.equal(pending[1].grade,9);pending[0].resolve({schools:['Wrong grade'],error:''});pending[1].resolve({schools:['Current school'],error:''});await new Promise(resolve=>setImmediate(resolve));tree=render();
+ const html=require('react-dom/server').renderToStaticMarkup(tree);assert.match(html,/Current school/);assert.doesNotMatch(html,/Wrong grade/);assert.equal(find(tree,n=>n.type==='select').props.disabled,false);
+ // A rejected refresh exposes an error and a retry rather than fabricated options.
+ props={...props,grade:10};tree=render();pending[2].reject(Error('network'));await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='alert'));const retry=find(tree,n=>n.type==='button');assert.equal(retry.props.type,'button');retry.props.onClick();tree=render();assert.equal(pending.length,4);pending[3].resolve({schools:[],error:''});await new Promise(resolve=>setImmediate(resolve));tree=render();assert.ok(find(tree,n=>n.props.role==='status'));assert.equal(find(tree,n=>n.props.role==='alert'),null);
+ for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){const text=fs.readFileSync(file,'utf8');assert.match(text,/EnglishSourceFilter/);assert.match(text,/school \? \{ school \}/);}
+ cleanup?.();
+});
+
+test('New fictional reading and narrative practice keep disclosure, all answers and source-free status through print flow',()=>{
+ const old=require.extensions['.tsx'];require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);
+ try{
+  const React=require('react'),render=require('react-dom/server').renderToStaticMarkup,Group=require('../components/paper-builder/english-group.tsx').default;
+  const items=[...require('../lib/english/prepared-ssc-authored-unseen.ts').preparedSSCAuthoredUnseenItems(),...require('../lib/english/prepared-ssc-authored-rearranging.ts').preparedSSCAuthoredRearrangingItems()];
+  for(const item of items){
+   const p=require('../lib/english/legacy-builder.ts').englishLegacyPaper(item.draft),fragments=p.items.flatMap(require('../lib/english/flow-blocks.ts').englishFlowBlocks);
+   assert.equal(p.settings.show.boardSource,false);const html=fragments.map(q=>render(React.createElement(Group,{q,answers:true,s:p.settings}))).join('');
+   assert.match(html,/Authored (?:fictional )?practice/);assert.doesNotMatch(html,/Board 202[02345]|মূল প্রশ্নে/);
+   const tasks=fragments.flatMap(q=>q.englishGroup.tasks);assert.equal(tasks.reduce((n,t)=>n+t.subitems.length,0),item.draft.output.tasks.reduce((n,t)=>n+t.subitems.length,0));assert.ok(tasks.every(t=>!t.boardSource&&!t.schoolSource));
+  }
+ }finally{if(old)require.extensions['.tsx']=old;else delete require.extensions['.tsx'];}
+});
+
+test('User-approved same-text variants retain eight source excerpts and disclose authored scope',()=>{
+ const batch=require('../lib/english/data/ssc-seen-variants-review.json');
+ const base=require('../lib/english/data/ssc-textbook-seen-review.json');
+ assert.equal(batch.items.length,24);assert.equal(new Set(batch.items.map(x=>x.passage)).size,8);
+ for(const entry of batch.items){
+  const source=base.items.find(x=>x.passage===entry.passage);assert.ok(source);
+  assert.deepEqual(entry.pdfPages,source.pdfPages);assert.deepEqual(entry.printedPages,source.printedPages);
+  assert.equal(entry.tasks[0].subitems.length,7);assert.equal(entry.tasks[1].subitems.length,5);
+  for(const q of entry.tasks[0].subitems){assert.equal(new Set(q.options).size,4);assert.ok(q.options.includes(q.answer));}
+ }
+ const items=require('../lib/english/prepared-ssc-seen-variants.ts').preparedSSCSeenVariantItems();
+ assert.equal(items.length,24);
+ for(const item of items){assert.match(item.draft.selection.sources['seen-1'].reference,/SAME-TEXT.*NOT a new reading/);}
+});
+test('Literary variants explicitly retain four new and four reused foundations, not new works',()=>{
+ const batch=require('../lib/english/data/ssc-literature-variants-review.json');
+ const base=require('../lib/english/data/ssc-textbook-literature-review.json');
+ assert.equal(batch.items.length,64);assert.equal(batch.items.filter(x=>x.id==='poems').length,32);
+ let newlyWorded=0,reused=0;
+ for(const entry of batch.items){
+  const source=base.items.find(x=>x.work===entry.work);assert.ok(source);
+  assert.deepEqual(entry.pdfPages,source.pdfPages);assert.equal(entry.questions.length,8);
+  assert.equal(entry.newQuestions.length,4);assert.equal(entry.newQuestionCount,4);assert.equal(entry.reusedFoundationCount,4);
+  for(const i of entry.reusedFoundationIndices)assert.ok(entry.questions.some(q=>q.text===source.questions[i].text&&q.answer===source.questions[i].answer));
+  newlyWorded+=entry.newQuestionCount;reused+=entry.reusedFoundationCount;
+ }
+ assert.equal(newlyWorded,256);assert.equal(reused,256);
+ const items=require('../lib/english/prepared-ssc-literature-variants.ts').preparedSSCLiteratureVariantItems();
+ for(const item of items)assert.match(item.draft.output.tasks[0].instruction,/four new questions and four reused foundation questions; not a new work/);
 });

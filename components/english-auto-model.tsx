@@ -1,5 +1,5 @@
 "use client";
-import EnglishBoardYear from "./english-board-year";
+import EnglishSourceFilter from "./english-source-filter";
 import PreparationPopup from "./preparation-popup";
 import { prepareEnglishBankModel } from "@/app/actions/english-bank-model";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +9,7 @@ export default function EnglishAutoModel({ grade, paper = 1, itemIds }: { grade:
   const router = useRouter();
   const isSSC = paper === 1 && (grade === 9 || grade === 10);
   const [examYear, setExamYear] = useState("");
+  const [school, setSchool] = useState("");
   const [started, setStarted] = useState(!isSSC);
   const [busy, setBusy] = useState(!isSSC), [error, setError] = useState("");
   const [missing, setMissing] = useState<string[]>([]);
@@ -17,7 +18,7 @@ export default function EnglishAutoModel({ grade, paper = 1, itemIds }: { grade:
   const request = useRef<ReturnType<typeof prepareEnglishFullModel> | null>(null);
   const itemSignature = itemIds?.join(",") ?? "";
   function prepare() {
-    return paper === 1 ? prepareEnglishBankModel(grade, itemSignature ? itemSignature.split(",") : undefined, examYear ? { examYear: Number(examYear) } : {}) : prepareEnglishFullModel({ grade, paper, sources });
+    return paper === 1 ? prepareEnglishBankModel(grade, itemSignature ? itemSignature.split(",") : undefined, school ? { school } : examYear ? { examYear: Number(examYear) } : {}) : prepareEnglishFullModel({ grade, paper, sources });
   }
   function accept(result: Awaited<ReturnType<typeof prepareEnglishFullModel>>) {
     if (result.ok) { router.replace(`/question-builder/build?englishKey=${encodeURIComponent(result.key)}${paper === 2 ? "&stage=review" : "&stage=setup"}`); return; }
@@ -42,7 +43,7 @@ export default function EnglishAutoModel({ grade, paper = 1, itemIds }: { grade:
     <h1 className="text-2xl font-bold">Class {grade} · English {paper === 2 ? "2nd" : "1st"} Paper — {itemIds ? "Question Items" : "Full Model Test"}</h1>
     <p>{paper === 1 ? "প্রশ্নভান্ডার থেকে মানবণ্টনের ক্রমে প্রশ্ন সাজানো হবে। এরপর প্রশ্ন দেখুন ও সম্পাদনা করে Page Set-up করুন।" : "ধাপ ১: প্রশ্নভান্ডার / না-থাকলে AI → ধাপ ২: প্রশ্ন দেখুন ও বদলান → ধাপ ৩: Page Set-up।"}</p>
     <p className="text-sm">বিদ্যমান class অনুযায়ী practice কাঠামো ব্যবহৃত হচ্ছে; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন। {paper === 2 ? "AI প্রয়োজন হলে বিদ্যমান generation quota প্রযোজ্য।" : "Seen ও Unseen passage-এর সঙ্গে সংশ্লিষ্ট প্রশ্ন একসঙ্গে থাকবে।"}</p>
-    {isSSC && <EnglishBoardYear value={examYear} onChange={setExamYear} disabled={busy} />}
+    {isSSC && <EnglishSourceFilter key={grade} grade={grade} examYear={examYear} school={school} onYearChange={setExamYear} onSchoolChange={setSchool} disabled={busy} />}
     {busy && <p role="status">{paper === 1 ? "প্রশ্নগুলো নির্ধারিত ক্রমে সাজানো হচ্ছে…" : "সব অংশ স্বয়ংক্রিয়ভাবে নির্বাচন করে সম্পূর্ণ প্রশ্নপত্র প্রস্তুত করা হচ্ছে…"}</p>}
     {error && <p role="alert" className="rounded border border-amber-300 bg-amber-50 p-3">{error}</p>}
     {!busy && missing.map(key => <fieldset key={key} className="space-y-2 rounded border p-4">

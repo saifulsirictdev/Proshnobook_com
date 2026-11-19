@@ -1,0 +1,131 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "sourceFile": "1y7M_psgvAVfEDgcFB7kpHcJaJqafsDp0",
+  "sourceSha256": "b0603b5eb98f2f6d25b991257da8975bbfcf9550508505d26d8548ec98b4cd91",
+  "notes": [
+    "One intact original Seen pair from Habiganj Government High School Test 2025, supplied school compilation PDF112, header and all questions on the same image. Original seven four-option MCQs and five written questions retained without subset selection or rewritten alternatives. Suggested keys authored, not official. Original wording and grammar retained; line wraps normalised.",
+    "The 85 million barrels/day figure is source-era text, not a verified current figure; no question tests or certifies it. Broad statements about human causation concern the passage's enhanced greenhouse effect, not a denial that natural greenhouse gases exist. Tree answer describes the simplified passage model, not a claim photosynthesis is the only plant process.",
+    "This completes a greenhouse reading pair on a topic already present in partial comprehension-only stock; it is not a newly discovered textbook lesson. No duplicate greenhouse pair from other schools is added. No board provenance, automatic import or approval."
+  ],
+  "items": [
+    {
+      "school": "Habiganj Government High School, Habiganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "headerPage": 112,
+      "passagePage": 112,
+      "group": "seen-1",
+      "passage": "Humans can neither change the sun's radiation nor the earth's orbit around the sun. But they can control the increase in the amount of greenhouse gases and its effect on the atmosphere. Only during the last hundred years the carbon dioxide concentration has been raised alarmingly in the atmosphere and we humans can be held responsible for this. The main cause of the increase in carbon dioxide level in the atmosphere is the burning of fossil fuels. Since the end of the 19th century, industrial activities increased rapidly giving rise to many factories. These factories required energy, which was produced through the combustion of coal. Besides coal, other sources of energy such as mineral oil and natural gas were also burned to heat our houses, run cars and airplanes or to produce electricity. Nowadays, about 85 million barrels of crude oil are burned daily. Every time a fossil raw material is burned, it releases carbon dioxide into the air. Therefore, it is clear that more and more greenhouse gases like carbon dioxide are being generated worldwide by humans. Moreover, we are also strengthening the greenhouse effect by deforestation, which means cutting down trees. Every year enormous areas of forests are destroyed by people to obtain wood and to clear regions for mining and to create pasture. This loss of the forest causes dual problems. Trees that are burned up release large volumes of carbon dioxide gas into the air. On the other hand, as forests absorb a lot of carbon dioxide from the air and deliver oxygen instead, we also destroy an important storehouse of carbon dioxide when we clear forests.",
+      "tasks": [
+        {
+          "id": "mcq",
+          "sourceQuestion": 1,
+          "sourceMarks": 7,
+          "pdfPage": 112,
+          "instruction": "Choose the correct answer the each question from the alternatives given and write the corresponding number of the answer in your answer script :",
+          "subitems": [
+            {
+              "text": "The word loss is a/an——.",
+              "options": [
+                "verb",
+                "pronoun",
+                "adjective",
+                "noun"
+              ],
+              "answer": "noun"
+            },
+            {
+              "text": "Who are main culprit for greenhouse?",
+              "options": [
+                "Wild animals",
+                "Plants",
+                "Men",
+                "Aquatic life"
+              ],
+              "answer": "Men"
+            },
+            {
+              "text": "Region means–",
+              "options": [
+                "locality",
+                "religion",
+                "reunion",
+                "enemy"
+              ],
+              "answer": "locality"
+            },
+            {
+              "text": "Antonym of enormous is——.",
+              "options": [
+                "giant",
+                "tiny",
+                "tremendous",
+                "pompous"
+              ],
+              "answer": "tiny"
+            },
+            {
+              "text": "Deforestation refers——.",
+              "options": [
+                "planting trees",
+                "cutting trees",
+                "a forestation",
+                "defaming anyone"
+              ],
+              "answer": "cutting trees"
+            },
+            {
+              "text": "Combustion indicates——.",
+              "options": [
+                "process of burning",
+                "process of planting",
+                "process of using",
+                "none of them"
+              ],
+              "answer": "process of burning"
+            },
+            {
+              "text": "What is the another word of moreover?",
+              "options": [
+                "However",
+                "Therefore",
+                "In addition",
+                "Despite"
+              ],
+              "answer": "In addition"
+            }
+          ]
+        },
+        {
+          "id": "comprehension",
+          "sourceQuestion": 2,
+          "sourceMarks": 10,
+          "pdfPage": 112,
+          "instruction": "Answer the following questions.",
+          "subitems": [
+            {
+              "text": "What is the main cause of increasing carbon dioxide level in the atmosphere?",
+              "answer": "The passage identifies the burning of fossil fuels as the main cause of the increase in atmospheric carbon dioxide. It mentions coal, mineral oil and natural gas used for energy."
+            },
+            {
+              "text": "How do trees help us?",
+              "answer": "Trees absorb carbon dioxide and release oxygen, according to the text. Forests therefore help by storing carbon and taking carbon dioxide from the air."
+            },
+            {
+              "text": "Why are large number of forest being damaged?",
+              "answer": "The passage says forests are destroyed to obtain wood, clear regions for mining and create pasture. These uses reduce forest cover."
+            },
+            {
+              "text": "How does the reduction of woodland cause double menaces?",
+              "answer": "Burning trees releases carbon dioxide, while removing forests also reduces the trees available to absorb it. The text presents these as the two connected problems."
+            },
+            {
+              "text": "What do the trees absorb and release?",
+              "answer": "The passage says trees absorb carbon dioxide from the air and release oxygen. This is the exchange it describes; it does not provide a full account of every plant process."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -66,7 +66,26 @@ export function validateEnglishOutput(
       throw new EnglishOutputValidationError(
         "Generated tasks must follow selected blueprint order.",
       );
-    if (item.count !== undefined && task.subitems.length !== item.count)
+    // Keep intact historical SSC tables rather than inventing a fifth match or
+    // dropping a sixth information blank. This is not a general count override:
+    // only the documented original formats, with every original part and table,
+    // are eligible. The current practice total remains the blueprint total.
+    const src = task.boardSource;
+    const originalCount = src?.originalSubitemCount;
+    const intactParts = originalCount !== undefined &&
+      task.subitems.length === originalCount &&
+      src?.selectedParts?.join("") === Array.from({ length: originalCount }, (_, i) => String.fromCharCode(97 + i)).join("");
+    const historicalTable = request.selection.grade === 10 && request.selection.paper === 1 && intactParts && !!task.table && (
+      (task.id === "matching" && src?.questionNumber === 4 &&
+        ((src.examYear === 2022 && originalCount === 4 && src.originalMarks === 4) ||
+         (src.examYear === 2023 && originalCount === 7 && src.originalMarks === 7)) &&
+        task.table.headers.length === 3 && task.table.rows.length === originalCount) ||
+      (task.id === "information" && src?.examYear === 2023 && src.questionNumber === 5 &&
+        originalCount === 6 && src.originalMarks === 6 &&
+        ["i", "ii", "iii", "iv", "v", "vi"].every(label =>
+          task.table!.rows.flat().filter(cell => cell.includes(`(${label})`)).length === 1))
+    );
+    if (item.count !== undefined && task.subitems.length !== item.count && !historicalTable)
       throw new EnglishOutputValidationError(
         `Wrong subitem count: ${item.id}.`,
       );
