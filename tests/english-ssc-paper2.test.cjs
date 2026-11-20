@@ -28,7 +28,7 @@ test('51 distinct complete source-backed cloze exercises, not school reprints or
  }
 });
 for(const grade of [9,10]) test(`SSC grade ${grade}, Paper 2: all 51 validate at ten marks and retain complete source and keys`,()=>{
- const items=preparedEnglishItems(grade,2);assert.equal(items.length,51);assert.equal(new Set(items.map(p=>p.key)).size,51);
+ const items=preparedEnglishItems(grade,2,"gap-clues");assert.equal(items.length,51);assert.equal(new Set(items.map(p=>p.key)).size,51);
  for(let i=0;i<items.length;i++){
   const {draft}=items[i],e=data.items[i],t=validateEnglishOutput(draft.selection,draft.output).tasks[0];
   assert.equal(draft.selection.grade,grade);assert.equal(draft.selection.paper,2);assert.equal(draft.selection.includeAnswers,true);
@@ -78,11 +78,11 @@ test('Paper 2 batch import requires ADMIN, explicit consent and matching grade/p
  const saved=new Map();let writes=0;
  const mock={'next/cache':{revalidatePath(){}},'@/lib/db':{db:{setting:{createMany:async({data,skipDuplicates})=>{writes++;assert.equal(skipDuplicates,true);for(const r of data)if(!saved.has(r.key))saved.set(r.key,r.value);}}}}};
  function action(role){return load('app/admin/english-review/item-actions.ts',{...mock,'@/auth':{auth:async()=>({user:{id:'actor',role}})}}).importEnglishItems;}
- const form=new FormData();form.set('grade','10');form.set('paper','2');form.set('digest',englishItemsDigest(10,2));
+ const form=new FormData();form.set('grade','10');form.set('paper','2');form.set('item','gap-clues');form.set('digest',englishItemsDigest(10,2,'gap-clues'));
  await action('ADMIN')(form);assert.equal(writes,0);
  form.set('reviewed','yes');await assert.rejects(action('TEACHER')(form),/Forbidden/);assert.equal(writes,0);
  form.set('digest',englishItemsDigest(10));await action('ADMIN')(form);assert.equal(writes,0);
- form.set('digest',englishItemsDigest(10,2));await action('ADMIN')(form);assert.equal(saved.size,51);
+ form.set('digest',englishItemsDigest(10,2,'gap-clues'));await action('ADMIN')(form);assert.equal(saved.size,51);
  for(const r of saved.values()){const v=JSON.parse(r);assert.equal(v.status,'PENDING');assert.equal(v.draft.selection.paper,2);assert.equal(v.draft.selection.grade,10);}
  const [key,value]=[...saved][0];saved.set(key,value.replace('PENDING','APPROVED'));await action('ADMIN')(form);assert.equal(saved.size,51);assert.equal(JSON.parse(saved.get(key)).status,'APPROVED');
 });

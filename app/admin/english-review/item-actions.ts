@@ -10,8 +10,10 @@ export async function importEnglishItems(form: FormData) {
   const grade = englishAdminGrade(form.get("grade") ?? 6);
   const paper = englishAdminPaper(form.get("paper"));
   if (!grade || !paper) return;
-  if (form.get("reviewed") !== "yes" || form.get("digest") !== englishItemsDigest(grade, paper)) return;
-  const records = new Map(preparedEnglishItems(grade, paper).map(p => [p.key,p]));
+  const itemId = form.has("item") ? String(form.get("item")) : undefined;
+  if (itemId !== undefined && (!itemId || itemId.length > 80)) return;
+  if (form.get("reviewed") !== "yes" || form.get("digest") !== englishItemsDigest(grade, paper, itemId)) return;
+  const records = new Map(preparedEnglishItems(grade, paper, itemId).map(p => [p.key,p]));
   if (!records.size) return;
   await db.setting.createMany({ data: [...records.values()].map(p => ({key:p.key,value:JSON.stringify({status:"PENDING",draft:p.draft,group:p.group,...("review" in p ? {review:p.review} : {}),importedBy:user.id,importedAt:new Date().toISOString()})})), skipDuplicates:true });
   revalidatePath("/admin/english-review");

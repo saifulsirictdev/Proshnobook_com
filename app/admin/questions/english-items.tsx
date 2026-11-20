@@ -1,3 +1,4 @@
+import substitution from "@/lib/english/data/ssc-paper2-substitution-review.json";
 import gapClues from "@/lib/english/data/ssc-paper2-gap-clues-review.json";
 import { preparedEnglishItems, englishItemsDigest } from "@/lib/english/prepared-items";
 import { englishAdminHref } from "@/lib/english/admin-scope";
@@ -20,6 +21,7 @@ export default async function EnglishQuestionItems({review = false, status = "al
   const prepared = preparedEnglishItems(grade,paper);
   const rows: {key:string;value:string}[] = await db.setting.findMany({where:{OR:[{key:{startsWith:"english-item:v1:"}},{key:{startsWith:"english-review:"}}]},orderBy:{key:"asc"}});
   const invalid = rows.flatMap(row => {try {const record = JSON.parse(row.value);validateEnglishDraft(record.draft);return [];}catch{return [row.key];}});
+  const paper2Entries = [...gapClues.items, ...substitution.items];
   const stored = new Map(rows.map(r => [r.key,r.value]));
   const stock = await loadEnglishStock(grade, (prefix, cursor) => db.setting.findMany({where:{key:{startsWith:prefix,...(cursor?{gt:cursor}:{})}},orderBy:{key:"asc"},take:100}), paper);
   const readiness = assembleEnglishItems(stock,grade,()=>0,undefined,{},paper);
@@ -41,12 +43,30 @@ export default async function EnglishQuestionItems({review = false, status = "al
       <p>{prepared.length}টি স্বতন্ত্র group; বর্তমান সংরক্ষিত item/model: {rows.length}টি। আগের approval/rejection অক্ষত থাকবে।</p>
       <Link className="qm-action-link block" href={englishAdminHref(grade,false,paper)}>পাঠানো প্রশ্ন review / অনুমোদন করুন →</Link>
     </form>}
+    {!review && paper===2 && <div className="space-y-3">
+      <h3 className="font-bold">একটি item-এর বড় ব্যাচ আলাদাভাবে Pending করুন</h3>
+      {blueprint.items.map(item=>{
+        const count = prepared.filter(p=>p.draft.selection.itemIds.includes(item.id)).length;
+        return count > 0 ? <form key={item.id} action={importEnglishItems} className="space-y-2 rounded border p-3">
+          <h4 className="font-semibold">{item.title} — {count}টি স্বতন্ত্র সেট</h4>
+          <input type="hidden" name="grade" value={grade}/><input type="hidden" name="paper" value={paper}/>
+          <input type="hidden" name="item" value={item.id}/><input type="hidden" name="digest" value={englishItemsDigest(grade,paper,item.id)}/>
+          <label className="block"><input required type="checkbox" name="reviewed" value="yes"/> এই item-এর সব প্রশ্ন, উত্তর, উৎস ও সংশোধন preview করেছি; শুধু Pending import করব।</label>
+          <button className="rounded bg-emerald-700 px-3 py-2 text-white">শুধু {item.title}: {count}টি সেট Pending করুন</button>
+        </form> : null;
+      })}
+    </div>}
     {review && <EnglishBulkApproval grade={grade} paper={paper} entries={cards.flatMap(card => card?.record?.status === "PENDING" ? [{key:card.key,digest:createHash("sha256").update(stored.get(card.key)!).digest("hex")}] : [])} />}
     {!cards.length && <p>এই অবস্থায় কোনো সংরক্ষিত item নেই। Import পেজ থেকে preview করে Pending করুন।</p>}
     <p>Seen/Unseen নিজ নিজ প্রশ্ন–উত্তরসহ অক্ষত। প্রতিটি শ্রেণির নিজস্ব কনটেন্ট ব্যবহৃত হবে; শিক্ষকের পূর্ণ পর্যালোচনা ও বর্তমান মানবণ্টন মিলিয়ে নেওয়া প্রয়োজন।</p>
     {cards.map(card => card && <details key={card.key} className="space-y-3 rounded border p-3">
       <summary className="cursor-pointer font-semibold">{card.draft.name} · {card.draft.output.tasks.map(t => blueprint.items.find(i => i.id===t.id)?.title ?? t.id).join(" / ")} — {card.record?.status ?? "NOT IMPORTED"}</summary>
-      {paper===2 && <p className="rounded border p-2">Assistant-prepared answers; teacher review required. {gapClues.items.find(e=>card.draft.name.startsWith(e.id))?.editorialNotes.join(" ")}</p>}
+      {paper===2 && <p className="rounded border p-2">Assistant-prepared answers; teacher review required. {(card.record?.review?.editorialNotes ?? paper2Entries.find(e=>card.draft.name.startsWith(e.id))?.editorialNotes ?? []).join(" ")}</p>}
+      {paper===2 && card.draft.output.tasks.some(t=>t.id==="substitution") && <details className="rounded border p-2">
+        <summary>মূল টেবিলের transcription / সংশোধন মিলিয়ে দেখুন</summary>
+        <p>প্রস্তুত practice-এ verb form বদলানো ও fragment পুনর্ব্যবহার অনুমোদিত; এটি মূল প্রশ্নের হুবহু অবিকৃত সংস্করণ নয়। বিকল্প শুদ্ধ বাক্য শিক্ষক গ্রহণ করতে পারেন।</p>
+        <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review?.sourceRows ?? substitution.items.find(e=>card.draft.name.startsWith(e.id))?.sourceRows,null,2)}</pre>
+      </details>}
       {card.draft.output.passages.map(p => <div key={p.key}><h3 className="font-bold">{p.key}</h3><p className="whitespace-pre-wrap">{p.text}</p><p>{card.draft.selection.sources[p.key]?.reference}</p></div>)}
       {Object.entries(card.draft.selection.sources).filter(([, source]) => source.kind === "question-bank").map(([key, source]) => <section key={key} className="rounded border p-3">
         <h3 className="font-bold">উৎসের প্রশ্নের উদ্ধৃতি — মূল কবিতা/গল্পের পাঠ নয়</h3>

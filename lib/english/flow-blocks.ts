@@ -15,6 +15,12 @@ export function englishFlowBlocks(q:PaperItem):PaperItem[] {
       blocks.push({fragment:true,passages:[],tasks:[task]});
       continue;
     }
+    // A substitution table is a shared choice bank, not independent row questions.
+    // Keep all of its columns available together for every one of the five sentences.
+    if(task.id === "substitution" && task.table){
+      blocks.push({fragment:true,passages:[],tasks:[task]});
+      continue;
+    }
     const tables=task.table ? Array.from({length:Math.ceil(task.table.rows.length/4)},(_,i)=>({...task.table!,rows:task.table!.rows.slice(i*4,i*4+4)})) : [];
     if(tables.length){
       tables.forEach((table,i)=>blocks.push({fragment:true,continued:i>0,passages:[],tasks:[{...task,table,clues:i===0?task.clues:undefined,subitems:[],answer:undefined}]}));
