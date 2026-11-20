@@ -43,7 +43,7 @@ test('Shortened source exams are preserved, not padded, truncated or relabelled 
  const rajshahi=transformation.candidates.find(e=>e.board==='Rajshahi'&&e.examYear===2023);assert.ok(rajshahi.issues.includes('TRANSFORMATION_DIRECTION_REQUIRES_MANUAL_REVIEW'));
  assert.equal(rajshahi.sourceSubitems[6].text,'By reading newspaper, we can enrich our knowledge.');
 });
-test('Candidate-only staging has not added an importable prepared batch or changed the production registry',()=>{
+test('Archived raw source candidates stay outside runtime imports; authored review batches are registered separately',()=>{
  const registry=fs.readFileSync(path.join(root,'lib/english/prepared-ssc-paper2.ts'),'utf8');
  assert.ok(registry.includes('preparedSSCVerbItems'));assert.ok(registry.includes('preparedSSCSubstitutionItems'));
  assert.doesNotMatch(registry,/sentence-candidates|work-in-progress|preparedSSCTransformation|preparedSSCTags/);

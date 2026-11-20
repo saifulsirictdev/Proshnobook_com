@@ -1,5 +1,6 @@
 # SSC English Paper 2 — Items 6 & 7: source work started
 
+> **Historical extraction-stage snapshot. Superseded on 2026-11-20:** Items 4–7 now each have 51 authored, integrated PREPARED_NOT_IMPORTED review sets. See [completion report](ssc-paper2-items-4-7-completion.md). Candidate JSON below remains an unchanged source audit, not an import registry.
 **Status: EXTRACTED / UNREVIEWED / NOT IMPORTABLE. Answer authoring and runtime integration have not been completed.**
 
 This paired work covers **Item 6: Suffixes and prefixes** and **Item 7: Gap filling with prepositions** for Classes 9–10. The target remains **at least 51 genuinely distinct complete sets per item**. A source candidate or an adaptation slot is not a completed set.

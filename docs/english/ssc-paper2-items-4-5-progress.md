@@ -1,5 +1,6 @@
 # SSC English Paper 2 — Items 4 & 5: paired authoring started
 
+> **Historical extraction-stage snapshot. Superseded on 2026-11-20:** Items 4–7 now each have 51 authored, integrated PREPARED_NOT_IMPORTED review sets. See [completion report](ssc-paper2-items-4-7-completion.md). Candidate JSON below remains an unchanged source audit, not an import registry.
 **Status: source extraction / provisional selection only — NOT PREPARED, NOT IMPORTABLE.**
 
 The request now permits two items together. Work has started on **Item 4: Changing sentences** and **Item 5: Tag questions**, targeting at least 51 distinct complete sets each. This does not start Items 6–12.

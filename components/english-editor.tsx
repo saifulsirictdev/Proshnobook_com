@@ -437,7 +437,7 @@ export default function EnglishEditor({
                   )}
                   <div className="english-question-heading">
                     <strong>
-                      {task.number}. <RichPaperText text={task.clues?.length && task.instruction.includes("\n") ? task.instruction.split("\n")[0] : task.instruction} />
+                      {task.number}. <RichPaperText text={(isEnglishPassageCloze(task) || task.clues?.length) && task.instruction.includes("\n") ? task.instruction.split("\n")[0] : task.instruction} />
                     </strong>
                     <span className="english-mark-formula">
                       {englishMarksLabel(
@@ -463,7 +463,7 @@ export default function EnglishEditor({
                       ))}
                     </div>
                   )}
-                  {!answerMode && !!task.clues?.length && task.instruction.includes("\n") && <p><RichPaperText text={task.instruction.slice(task.instruction.indexOf("\n")+1)} /></p>}
+                  {!answerMode && (isEnglishPassageCloze(task) || !!task.clues?.length) && task.instruction.includes("\n") && <p><RichPaperText text={task.instruction.slice(task.instruction.indexOf("\n")+1)} /></p>}
                   {!answerMode && task.id === "graph" && (
                     <EnglishDataChart table={task.table} />
                   )}

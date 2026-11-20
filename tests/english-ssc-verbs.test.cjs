@@ -58,8 +58,8 @@ test('All practice changes are replayable from the preserved source transcriptio
 });
 for(const grade of [9,10]) test(`Class ${grade}: 51 verb sets validate at ten marks; previous two batches remain intact`,()=>{
  const prepared=items(grade);assert.equal(prepared.length,51);assert.equal(new Set(prepared.map(e=>e.key)).size,51);
- assert.equal(preparedEnglishItems(grade,2).length,153);assert.equal(preparedEnglishItems(grade,2,'gap-clues').length,51);assert.equal(preparedEnglishItems(grade,2,'substitution').length,51);
- assert.equal(preparedEnglishItems(grade,2,'transformation').length,0);
+ assert.equal(preparedEnglishItems(grade,2).length,357);assert.equal(preparedEnglishItems(grade,2,'gap-clues').length,51);assert.equal(preparedEnglishItems(grade,2,'substitution').length,51);
+ assert.equal(preparedEnglishItems(grade,2,'transformation').length,51);
  for(let i=0;i<prepared.length;i++){
   const p=prepared[i],e=data.items[i],d=p.draft,t=d.output.tasks[0],v=validateEnglishOutput(d.selection,d.output);
   assert.equal(d.selection.grade,grade);assert.equal(d.selection.paper,2);assert.equal(d.selection.includeAnswers,true);assert.deepEqual(d.selection.itemIds,['verbs']);
@@ -72,7 +72,7 @@ for(const grade of [9,10]) test(`Class ${grade}: 51 verb sets validate at ten ma
  }
 });
 test('Three prepared items assemble to 25 marks, never silently fabricate the other nine items',()=>{
- const stock=preparedEnglishItems(10,2).map(p=>p.draft);
+ const stock=preparedEnglishItems(10,2).filter(p=>['gap-clues','substitution','verbs'].includes(p.group)).map(p=>p.draft);
  const r=assembleEnglishItems(stock,10,()=>0,['gap-clues','substitution','verbs'],{},2);assert.ok(r.draft);assert.equal(validateEnglishOutput(r.draft.selection,r.draft.output).total,25);
  assert.deepEqual(assembleEnglishItems(stock,10,()=>0,undefined,{},2).missing,['transformation','tags','affixes','prepositions','connectors','punctuation','paragraph','letter-email','composition']);
  const board=assembleEnglishItems(stock,10,()=>0,['verbs'],{examYear:2022},2);assert.equal(board.draft.output.tasks[0].boardSource.examYear,2022);

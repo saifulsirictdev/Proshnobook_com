@@ -1,10 +1,9 @@
-/** Distinguish a complete boxed passage from independent contextual verb subquestions.
- * A newline in directions alone must never hide separately authored subitems.
- */
+/** Complete passages remain atomic; newline-only directions must not hide independent questions. */
 export function isEnglishPassageCloze(task: { id: string; instruction: string; clues?: string[] }) {
-  if (!task.clues?.length || !task.instruction.includes("\n")) return false;
-  if (task.id === "gap-clues") return true;
-  return task.id === "verbs" && Array.from({ length: 10 }, (_, i) =>
+  if (!task.instruction.includes("\n")) return false;
+  if (task.id === "gap-clues") return !!task.clues?.length;
+  const count = task.id === "verbs" && task.clues?.length ? 10 : ["affixes", "prepositions"].includes(task.id) ? 5 : 0;
+  return count > 0 && Array.from({ length: count }, (_, i) =>
     task.instruction.includes(`(${String.fromCharCode(97 + i)})`),
   ).every(Boolean);
 }
