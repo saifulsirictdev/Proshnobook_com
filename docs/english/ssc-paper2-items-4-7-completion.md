@@ -1,6 +1,6 @@
 # SSC English 2nd Paper — Items 4–7 preparation completed
 
-> Historical Item 4–7 completion report. Items 8–9 have since added 102 prepared sets: the current library totals 459 sets across nine items. See [Items 8–9 completion](ssc-paper2-items-8-9-completion.md).
+> Historical Item 4–7 completion report. Items 8–12 have since been prepared: the complete library totals 612 sets across twelve items. See [Items 10–12 / full-library completion](ssc-paper2-items-10-12-completion.md).
 **Classes 9–10 · 204 new unique prepared review sets · 1,275 possible answer entries**
 
 **PREPARED_NOT_IMPORTED — NOT production-imported, NOT teacher-approved.** These are assistant-prepared possible answers, not official board/school answer keys. Teacher approval remains a substantive, separate step; passing software tests is not content approval.

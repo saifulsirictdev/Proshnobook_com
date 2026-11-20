@@ -1,5 +1,6 @@
 # SSC English 2nd Paper — Items 8 & 9 completed
 
+> Historical Item 8–9 completion report. Items 10–12 have since added 153 prepared writing sets: the complete library totals 612 sets across all twelve items. See [Items 10–12 / full-library completion](ssc-paper2-items-10-12-completion.md).
 **Prepared for Classes 9–10 · 102 new distinct sets · PREPARED_NOT_IMPORTED**
 
 These are source-backed prepared practice sets with assistant-authored **possible answers**, not official board/school keys. Teacher review is still required. No production import, approval, PR merge or manual deployment is part of this work.

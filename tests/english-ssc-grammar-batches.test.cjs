@@ -86,11 +86,11 @@ test('Internet supplementation: 22 distinct web exercises retain actual URL/exer
  const webDrafts=preparedEnglishItems(10,2,'prepositions').filter(p=>p.review.sourceKind==='web').map(p=>p.draft);
  for(const filter of [{examYear:2025},{school:'Skylark Education'}])assert.deepEqual(assembleEnglishItems(webDrafts,10,()=>0,['prepositions'],filter,2).missing,['prepositions']);
 });
-test('Original seven-item selection remains 50 marks; expanded registry has 459 unique sets and three writing items stay missing',()=>{
+test('Original seven-item selection remains 50 marks; complete registry has 612 unique sets and no item stays missing',()=>{
  for(const grade of [9,10]){
-  const all=preparedEnglishItems(grade,2);assert.equal(all.length,459);const ids=['gap-clues','substitution','verbs',...kinds];
+  const all=preparedEnglishItems(grade,2);assert.equal(all.length,612);const ids=['gap-clues','substitution','verbs',...kinds];
   const partial=assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,ids,{},2);assert.ok(partial.draft);assert.equal(validateEnglishOutput(partial.draft.selection,partial.draft.output).total,50);
-  assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,['paragraph','letter-email','composition']);
+  assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,[]);
  }
  for(const grade of [6,7,8,11,12])for(const kind of kinds)assert.deepEqual(preparedEnglishItems(grade,2,kind),[]);
 });

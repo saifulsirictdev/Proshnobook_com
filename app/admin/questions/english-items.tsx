@@ -1,3 +1,4 @@
+import { preparedSSCWritingEntries } from "@/lib/english/prepared-ssc-writing";
 import { preparedSSCLinkingEntries } from "@/lib/english/prepared-ssc-linking";
 import { preparedSSCGrammarEntries } from "@/lib/english/prepared-ssc-grammar";
 import verbs from "@/lib/english/data/ssc-paper2-verbs-review.json";
@@ -24,7 +25,7 @@ export default async function EnglishQuestionItems({review = false, status = "al
   const prepared = preparedEnglishItems(grade,paper);
   const rows: {key:string;value:string}[] = await db.setting.findMany({where:{OR:[{key:{startsWith:"english-item:v1:"}},{key:{startsWith:"english-review:"}}]},orderBy:{key:"asc"}});
   const invalid = rows.flatMap(row => {try {const record = JSON.parse(row.value);validateEnglishDraft(record.draft);return [];}catch{return [row.key];}});
-  const paper2Entries = [...gapClues.items, ...substitution.items, ...verbs.items, ...preparedSSCGrammarEntries, ...preparedSSCLinkingEntries];
+  const paper2Entries = [...gapClues.items, ...substitution.items, ...verbs.items, ...preparedSSCGrammarEntries, ...preparedSSCLinkingEntries, ...preparedSSCWritingEntries];
   const stored = new Map(rows.map(r => [r.key,r.value]));
   const stock = await loadEnglishStock(grade, (prefix, cursor) => db.setting.findMany({where:{key:{startsWith:prefix,...(cursor?{gt:cursor}:{})}},orderBy:{key:"asc"},take:100}), paper);
   const readiness = assembleEnglishItems(stock,grade,()=>0,undefined,{},paper);
@@ -79,6 +80,11 @@ export default async function EnglishQuestionItems({review = false, status = "al
         <summary>মূল উৎস, উত্তর, adaptation ও সংশোধনের সম্পূর্ণ review snapshot</summary>
         <p>Source-backed adapted practice; official answer key নয়। Web practice-এ অজানা board/school/year বসানো হয়নি। মূল ১০/১৪-gap থেকে পাঁচটি রাখলে বাকি filled answers-ও মিলিয়ে দেখুন।</p>
         <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? [...preparedSSCGrammarEntries, ...preparedSSCLinkingEntries].find(e=>card.draft.name.startsWith(e.id)),null,2)}</pre>
+      </details>}
+      {paper===2 && card.draft.output.tasks.some(t=>["paragraph","letter-email","composition"].includes(t.id)) && <details className="rounded border p-2">
+        <summary>Writing: মূল prompt/topic, সম্পূর্ণ sample answer ও source snapshot</summary>
+        <p>সম্ভাব্য নমুনা উত্তর; official key বা বাধ্যতামূলক মুখস্থ উত্তর নয়। Web index থেকে শুধু topic নেওয়া হয়েছে; prompt ও model এখানে লেখা। Fictional নাম/ঘটনা/contact details-কে বাস্তব পরীক্ষা বা প্রতিষ্ঠান-প্রদত্ত উত্তর মনে করবেন না।</p>
+        <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? preparedSSCWritingEntries.find(e=>card.draft.name.startsWith(e.id)),null,2)}</pre>
       </details>}
       {card.draft.output.passages.map(p => <div key={p.key}><h3 className="font-bold">{p.key}</h3><p className="whitespace-pre-wrap">{p.text}</p><p>{card.draft.selection.sources[p.key]?.reference}</p></div>)}
       {Object.entries(card.draft.selection.sources).filter(([, source]) => source.kind === "question-bank").map(([key, source]) => <section key={key} className="rounded border p-3">

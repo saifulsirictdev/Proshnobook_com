@@ -1,3 +1,4 @@
+import { preparedSSCWritingItems } from "./prepared-ssc-writing";
 import { preparedSSCLinkingItems } from "./prepared-ssc-linking";
 import { preparedSSCGrammarItems } from "./prepared-ssc-grammar";
 import { preparedSSCVerbItems } from "./prepared-ssc-verbs";
@@ -25,5 +26,5 @@ export function preparedSSCPaper2Items(grade: number) {
       header: paperHeaderSchema.parse({}), fontSize: 12, font: "kalpurush", updatedAt: "2026-11-20T00:00:00.000Z",
     });
     return englishItemGroups(draft).map(item => ({ ...item, draft: { ...item.draft, name: draft.name }, review: { entryId: entry.id, contentSha256: entry.contentSha256, sourceSha256: data.sources.find(s=>s.fileId===entry.sourceFile)!.sha256, editorialNotes: entry.editorialNotes, answerStatus: data.answerStatus } }));
-  }), ...preparedSSCSubstitutionItems(grade), ...preparedSSCVerbItems(grade), ...preparedSSCGrammarItems(grade), ...preparedSSCLinkingItems(grade)];
+  }), ...preparedSSCSubstitutionItems(grade), ...preparedSSCVerbItems(grade), ...preparedSSCGrammarItems(grade), ...preparedSSCLinkingItems(grade), ...preparedSSCWritingItems(grade)];
 }

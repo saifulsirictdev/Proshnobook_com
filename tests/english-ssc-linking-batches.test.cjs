@@ -103,12 +103,12 @@ test('Human-reviewed corrections cover parallel verbs, causal fragments, omitted
  assert.match(bySource(0,'062').passage,/fictional account/);assert.match(bySource(0,'062').sourcePassage,/political parties/);
  assert.match(bySource(1,'065').passage,/listen carefully/);assert.match(bySource(1,'065').editorialChanges[0].reason,/missing imperative/);
 });
-test('Nine prepared item types total 60 marks / 459 distinct sets; only the three writing items remain unavailable',()=>{
+test('Original nine-item selection stays 60 marks; complete registry now has 612 sets and all twelve items',()=>{
  const ids=['gap-clues','substitution','verbs','transformation','tags','affixes','prepositions',...kinds];
  for(const grade of [9,10]){
-  const all=preparedEnglishItems(grade,2);assert.equal(all.length,459);assert.equal(new Set(all.map(p=>p.key)).size,459);
+  const all=preparedEnglishItems(grade,2);assert.equal(all.length,612);assert.equal(new Set(all.map(p=>p.key)).size,612);
   const result=assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,ids,{},2);assert.ok(result.draft);assert.deepEqual(result.missing,[]);assert.equal(validateEnglishOutput(result.draft.selection,result.draft.output).total,60);assert.deepEqual(validateEnglishOutput(result.draft.selection,result.draft.output).tasks.map(t=>t.number),[1,2,3,4,5,6,7,8,9]);
-  assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,['paragraph','letter-email','composition']);
+  assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,[]);
  }
  for(const grade of [6,7,8,11,12])for(const k of kinds)assert.deepEqual(preparedEnglishItems(grade,2,k),[]);
  assert.equal(preparedEnglishItems(10,1).length,365);assert.deepEqual(preparedEnglishItems(9,1),[]);
