@@ -34,7 +34,7 @@ ADMIN web action, expose database credentials, or introduce a public import API.
 ## Teacher review
 
 - `/admin/questions?category=Class%209&subject=English%20Grammar%20and%20Composition&grade=9&status=pending#english-question-items`
-- `/admin/questions?category=Class%2010&subject=English%20Grammar%20and%20Composition&grade=10&status=pending#english-question-items`
+- `/admin/questions?category=Class%209&subject=English%20Grammar%20and%20Composition&grade=10&status=pending#english-question-items`
 
 Existing approved/rejected records are preserved. Pending material cannot enter
 the approved-only question bank until the teacher reviews and approves it.
