@@ -1,0 +1,65 @@
+{
+  "status": "PENDING_IMPORT_VERIFIED",
+  "digest": "4ec9d2ea8f1935a2b5c9863b94fcbc2fb068d102d9aaf210e998c9bf3a8227ae",
+  "inserted": 1224,
+  "preserved": 0,
+  "verified": 1224,
+  "statuses": {
+    "PENDING": 1224
+  },
+  "scopes": [
+    {
+      "grade": 9,
+      "paper": 2,
+      "count": 612,
+      "counts": {
+        "gap-clues": 51,
+        "substitution": 51,
+        "verbs": 51,
+        "transformation": 51,
+        "tags": 51,
+        "affixes": 51,
+        "prepositions": 51,
+        "connectors": 51,
+        "punctuation": 51,
+        "paragraph": 51,
+        "letter-email": 51,
+        "composition": 51
+      },
+      "digest": "38efe311d296a2824ab6d9e12720947ba93cb024da71974051ca6e6bde39aa28"
+    },
+    {
+      "grade": 10,
+      "paper": 2,
+      "count": 612,
+      "counts": {
+        "gap-clues": 51,
+        "substitution": 51,
+        "verbs": 51,
+        "transformation": 51,
+        "tags": 51,
+        "affixes": 51,
+        "prepositions": 51,
+        "connectors": 51,
+        "punctuation": 51,
+        "paragraph": 51,
+        "letter-email": 51,
+        "composition": 51
+      },
+      "digest": "fad5e93bace58528944a20f7c1f305941e90d76da8aebf9af4a526f3204ca7e5"
+    }
+  ],
+  "actor": "github:saifulsirictdev:44801766249",
+  "importedAt": "2026-11-20T19:26:30.248Z",
+  "execution": {
+    "platform": "vercel",
+    "deploymentId": "dpl_XUXde9FdiLd6nTTo3BzfAdiz5M4a",
+    "sourceCommit": "ba42e2553d2c68539967a3c232e3857c14433cb5",
+    "authorizationReference": "GitHub owner manual dispatch 44801766249 plus explicit Arena owner consent. GitHub execution itself stopped before DB access because its DATABASE_URL secret was absent; actual import ran once inside the existing Vercel production binding.",
+    "evidence": "Credential-free receipt lines in Vercel build log at Unix milliseconds 1795202791695–1795202791702."
+  },
+  "approvalPerformed": false,
+  "publicationPerformed": false,
+  "distinctSharedExercises": 612,
+  "note": "1224 grade-specific records are not 1224 distinct exercises. Existing unrelated bank records were not touched."
+}
