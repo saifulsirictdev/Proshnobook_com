@@ -316,18 +316,19 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         const row = await db.question.findFirstOrThrow({ where: { text: fixture.items[0].text } });
         assert.equal(row.approved, false);
         assert.equal(row.category, "Class 6");
-        phase = "admin_mcq_repeat_submit";
-        // Server-action revalidation may remount the legacy details panel closed.
-        // Reopen through its visible summary before interacting; do not force-click
-        // hidden controls or weaken the repeat-save/database assertions below.
-        const legacySummary = page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true });
-        if (!(await legacySummary.evaluate(el => el.closest("details")?.open))) await legacySummary.click();
-        // Re-preview the identical payload after revalidation; client action state
-        // can be reset by the refreshed server tree. This still tests the same
-        // receipt/dedup path, not a second distinct fixture.
+        phase = "admin_mcq_repeat_reload";
+        // The success message can render before the revalidated server tree has
+        // settled. Start the repeat from a fresh page instead of racing a details
+        // node that the first action can still replace. The same authenticated
+        // browser, identical payload and real receipt/dedup assertions remain.
+        await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
+        await page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true }).click();
+        phase = "admin_mcq_repeat_preview";
         await page.getByLabel("প্রশ্নের JSON", { exact: true }).fill(JSON.stringify(fixture));
         await page.getByRole("button", { name: "প্রিভিউ ও গঠন যাচাই", exact: true }).click();
+        phase = "admin_mcq_repeat_consent";
         await page.getByRole("checkbox").check();
+        phase = "admin_mcq_repeat_save";
         await page.getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true }).click();
         phase = "admin_mcq_repeat_status";
         await page.getByRole("status").filter({ hasText: "0টি Pending" }).waitFor();
