@@ -55,9 +55,14 @@ async function main() {
   const plan = prepare();
   if (mode === 'preview') { console.log(JSON.stringify({digest: plan.digest, scopes: plan.preview, limitations: 'Possible answers, not official keys. Pending only; teacher approval required. 612 shared exercises stored separately for grades 9 and 10 (1224 rows). Existing records never overwritten.'}, null, 2)); return; }
   if (process.env.ACKNOWLEDGE_PENDING_ONLY !== 'IMPORT_SSC_9_10_PENDING_ONLY') throw Error('Explicit Pending-only acknowledgement required');
+  if (!process.env.DATABASE_URL) { console.error('::error::SSC import requires the repository DATABASE_URL secret; it is missing or empty. No database connection attempted.'); process.exitCode = 1; return; }
   const {PrismaClient} = require('@prisma/client'), db = new PrismaClient();
   try { const receipt = await save(db, plan, process.env.SSC_IMPORT_DIGEST, process.env.SSC_IMPORT_ACTOR); console.log(JSON.stringify(receipt, null, 2)); }
   finally { await db.$disconnect(); }
 }
 module.exports = {prepare, save};
-if (require.main === module) main().catch(() => { console.error('SSC Pending import stopped; no successful import confirmed. Credentials and question data are not logged.'); process.exitCode = 1; });
+if (require.main === module) main().catch(error => {
+  const code = /^P\d{4}$/.test(error?.code || '') ? error.code : 'VALIDATION_OR_CONNECTION';
+  console.error(`::error::SSC Pending import stopped (${code}); no successful import confirmed. Credentials and question data are not logged.`);
+  process.exitCode = 1;
+});
