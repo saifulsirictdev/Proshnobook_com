@@ -1,5 +1,5 @@
 "use server";
-import { englishAdminGrade } from "@/lib/english/admin-scope";
+import { englishAdminGrade, englishAdminPaper } from "@/lib/english/admin-scope";
 import { createHash } from "node:crypto";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
@@ -59,7 +59,8 @@ export async function approveEnglishPendingBatch(_: {error?:string;message?:stri
   if (!user?.id || user.role !== "ADMIN") return {error:"শুধু ADMIN অনুমোদন দিতে পারবেন।"};
   if (form.get("reviewed") !== "yes") return {error:"সব নির্বাচিত প্রশ্ন–উত্তর পর্যালোচনার সম্মতি দিন।"};
   const grade = englishAdminGrade(form.get("grade") ?? 6);
-  if (!grade) return {error:"শ্রেণি যাচাই করুন।"};
+  const paper = englishAdminPaper(form.get("paper"));
+  if (!grade || !paper) return {error:"শ্রেণি যাচাই করুন।"};
   let entries: {key:string;digest:string}[];
   try {
     const raw = String(form.get("entries") ?? "");
@@ -79,7 +80,7 @@ export async function approveEnglishPendingBatch(_: {error?:string;message?:stri
         if (record.status !== "PENDING") {skipped++;continue;}
         const draft = validateEnglishDraft(record.draft);
         validateEnglishReferenceShape(draft.selection,draft.output);
-        if (draft.selection.grade !== grade || draft.selection.paper !== 1 || !draft.selection.includeAnswers) {invalid++;continue;}
+        if (draft.selection.grade !== grade || draft.selection.paper !== paper || !draft.selection.includeAnswers) {invalid++;continue;}
       } catch {invalid++;continue;}
       const result = await db.setting.updateMany({where:{key:entry.key,value:row.value},data:{value:JSON.stringify({...record,status:"APPROVED",reviewedBy:user.id,reviewedAt:new Date().toISOString()})}});
       if (result.count === 1) approved++; else skipped++;

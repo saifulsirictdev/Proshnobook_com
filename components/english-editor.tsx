@@ -436,7 +436,7 @@ export default function EnglishEditor({
                   )}
                   <div className="english-question-heading">
                     <strong>
-                      {task.number}. <RichPaperText text={task.instruction} />
+                      {task.number}. <RichPaperText text={task.clues?.length && task.instruction.includes("\n") ? task.instruction.split("\n")[0] : task.instruction} />
                     </strong>
                     <span className="english-mark-formula">
                       {englishMarksLabel(
@@ -462,6 +462,7 @@ export default function EnglishEditor({
                       ))}
                     </div>
                   )}
+                  {!answerMode && !!task.clues?.length && task.instruction.includes("\n") && <p><RichPaperText text={task.instruction.slice(task.instruction.indexOf("\n")+1)} /></p>}
                   {!answerMode && task.id === "graph" && (
                     <EnglishDataChart table={task.table} />
                   )}
@@ -489,7 +490,7 @@ export default function EnglishEditor({
                       </tbody>
                     </table>
                   )}
-                  <ol type="a">
+                  {(answerMode || !(task.id === "gap-clues" && task.clues?.length && task.instruction.includes("\n"))) && <ol type="a">
                     {task.subitems.map((s, i) => (
                       <li key={i}>
                         <RichPaperText
@@ -506,7 +507,7 @@ export default function EnglishEditor({
                         )}
                       </li>
                     ))}
-                  </ol>
+                  </ol>}
                   {answerMode && task.answer && (
                     <RichPaperText text={task.answer} />
                   )}

@@ -10,6 +10,11 @@ export function englishFlowBlocks(q:PaperItem):PaperItem[] {
     for(const text of chunks)blocks.push({fragment:true,passages:[{...p,text}],tasks:[]});
   }
   for(const task of group.tasks){
+    // A cloze passage and its clue box are one exercise, not ten standalone prompts.
+    if(task.id === "gap-clues" && task.clues?.length && task.instruction.includes("\n")){
+      blocks.push({fragment:true,passages:[],tasks:[task]});
+      continue;
+    }
     const tables=task.table ? Array.from({length:Math.ceil(task.table.rows.length/4)},(_,i)=>({...task.table!,rows:task.table!.rows.slice(i*4,i*4+4)})) : [];
     if(tables.length){
       tables.forEach((table,i)=>blocks.push({fragment:true,continued:i>0,passages:[],tasks:[{...task,table,clues:i===0?task.clues:undefined,subitems:[],answer:undefined}]}));
