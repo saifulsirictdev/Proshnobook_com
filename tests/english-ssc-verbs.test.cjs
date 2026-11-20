@@ -58,7 +58,7 @@ test('All practice changes are replayable from the preserved source transcriptio
 });
 for(const grade of [9,10]) test(`Class ${grade}: 51 verb sets validate at ten marks; previous two batches remain intact`,()=>{
  const prepared=items(grade);assert.equal(prepared.length,51);assert.equal(new Set(prepared.map(e=>e.key)).size,51);
- assert.equal(preparedEnglishItems(grade,2).length,357);assert.equal(preparedEnglishItems(grade,2,'gap-clues').length,51);assert.equal(preparedEnglishItems(grade,2,'substitution').length,51);
+ assert.equal(preparedEnglishItems(grade,2).length,459);assert.equal(preparedEnglishItems(grade,2,'gap-clues').length,51);assert.equal(preparedEnglishItems(grade,2,'substitution').length,51);
  assert.equal(preparedEnglishItems(grade,2,'transformation').length,51);
  for(let i=0;i<prepared.length;i++){
   const p=prepared[i],e=data.items[i],d=p.draft,t=d.output.tasks[0],v=validateEnglishOutput(d.selection,d.output);

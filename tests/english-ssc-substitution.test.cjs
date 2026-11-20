@@ -50,7 +50,7 @@ test('Every one of the 255 answer sentences is traceable to A/B/C source-adapted
 });
 for(const grade of [9,10]) test(`Class ${grade} registers 51 substitution sets at five marks without relabelling Paper 1 or Item 1`,()=>{
  const items=stock(grade);assert.equal(items.length,51);assert.equal(new Set(items.map(e=>e.key)).size,51);
- assert.equal(prepared.preparedEnglishItems(grade,2).length,357);assert.equal(prepared.preparedEnglishItems(grade,2,'gap-clues').length,51);
+ assert.equal(prepared.preparedEnglishItems(grade,2).length,459);assert.equal(prepared.preparedEnglishItems(grade,2,'gap-clues').length,51);
  assert.equal(prepared.preparedEnglishItems(grade,2,'verbs').length,51);assert.equal(prepared.preparedEnglishItems(grade,2,'not-a-real-item').length,0);
  for(let i=0;i<items.length;i++){
   const p=items[i],e=data.items[i],d=p.draft,t=d.output.tasks[0],v=validateEnglishOutput(d.selection,d.output);
