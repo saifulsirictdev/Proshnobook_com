@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { auth } from "@/auth";
-import { callGeminiJson } from "@/lib/gemini-json";
+import { callDeepSeekJson } from "@/lib/deepseek";
 import { normalizeItems } from "@/lib/keyword-research";
 
 export const maxDuration = 60;
@@ -46,7 +46,7 @@ Topic: "${topic}"
 
 Suggest exactly ${count} realistic keywords that Bangladeshi users would actually type into Google for this topic. ${LANG[lang]} Include a mix of short primary keywords, long-tail phrases and question-style searches. Avoid near-duplicates.
 
-Return ONLY a JSON array. Each item must have exactly these fields:
+Return ONLY a JSON object in this exact shape: { "keywords": [ ... ] }. Each item in "keywords" must have exactly these fields:
 - "keyword": string
 - "type": one of "Primary", "Long-tail", "Question"
 - "intent": one of "Informational", "Download", "Solution", "Preparation"
@@ -54,7 +54,7 @@ Return ONLY a JSON array. Each item must have exactly these fields:
 - "monthlySearchEst": string, a rough estimate such as "1K-5K" or "100-500"
 - "usageTip": a short practical tip written in Bangla about where to use it (for example H1, H2, meta description, image alt text or URL slug)`;
 
-  const r = await callGeminiJson(prompt);
+  const r = await callDeepSeekJson(prompt, 0.7);
   if (!r.ok) return fail(r.error, r.status);
   const items = normalizeItems(r.data, count);
   if (!items.length) return fail("কোনো কিওয়ার্ড পাওয়া যায়নি। অন্যভাবে বিষয়টা লিখে চেষ্টা করুন।", 502);
