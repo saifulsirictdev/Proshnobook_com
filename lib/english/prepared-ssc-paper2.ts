@@ -1,3 +1,4 @@
+import { preparedSSCVerbItems } from "./prepared-ssc-verbs";
 import { preparedSSCSubstitutionItems } from "./prepared-ssc-substitution";
 import data from "./data/ssc-paper2-gap-clues-review.json";
 import { validateEnglishDraft } from "./draft";
@@ -22,5 +23,5 @@ export function preparedSSCPaper2Items(grade: number) {
       header: paperHeaderSchema.parse({}), fontSize: 12, font: "kalpurush", updatedAt: "2026-11-20T00:00:00.000Z",
     });
     return englishItemGroups(draft).map(item => ({ ...item, draft: { ...item.draft, name: draft.name }, review: { entryId: entry.id, contentSha256: entry.contentSha256, sourceSha256: data.sources.find(s=>s.fileId===entry.sourceFile)!.sha256, editorialNotes: entry.editorialNotes, answerStatus: data.answerStatus } }));
-  }), ...preparedSSCSubstitutionItems(grade)];
+  }), ...preparedSSCSubstitutionItems(grade), ...preparedSSCVerbItems(grade)];
 }

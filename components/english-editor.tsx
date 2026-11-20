@@ -1,4 +1,5 @@
 "use client";
+import { isEnglishPassageCloze } from "@/lib/english/cloze-layout";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { type EnglishDraft, validateEnglishDraft } from "@/lib/english/draft";
@@ -490,7 +491,7 @@ export default function EnglishEditor({
                       </tbody>
                     </table>
                   )}
-                  {(answerMode || !(task.id === "gap-clues" && task.clues?.length && task.instruction.includes("\n"))) && <ol type="a">
+                  {(answerMode || !(isEnglishPassageCloze(task))) && <ol type="a">
                     {task.subitems.map((s, i) => (
                       <li key={i}>
                         <RichPaperText

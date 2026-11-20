@@ -50,8 +50,8 @@ test('Every one of the 255 answer sentences is traceable to A/B/C source-adapted
 });
 for(const grade of [9,10]) test(`Class ${grade} registers 51 substitution sets at five marks without relabelling Paper 1 or Item 1`,()=>{
  const items=stock(grade);assert.equal(items.length,51);assert.equal(new Set(items.map(e=>e.key)).size,51);
- assert.equal(prepared.preparedEnglishItems(grade,2).length,102);assert.equal(prepared.preparedEnglishItems(grade,2,'gap-clues').length,51);
- assert.equal(prepared.preparedEnglishItems(grade,2,'verbs').length,0);assert.equal(prepared.preparedEnglishItems(grade,2,'not-a-real-item').length,0);
+ assert.equal(prepared.preparedEnglishItems(grade,2).length,153);assert.equal(prepared.preparedEnglishItems(grade,2,'gap-clues').length,51);
+ assert.equal(prepared.preparedEnglishItems(grade,2,'verbs').length,51);assert.equal(prepared.preparedEnglishItems(grade,2,'not-a-real-item').length,0);
  for(let i=0;i<items.length;i++){
   const p=items[i],e=data.items[i],d=p.draft,t=d.output.tasks[0],v=validateEnglishOutput(d.selection,d.output);
   assert.equal(d.selection.grade,grade);assert.equal(d.selection.paper,2);assert.deepEqual(d.selection.itemIds,['substitution']);assert.equal(d.selection.includeAnswers,true);
@@ -77,7 +77,7 @@ test('Item digest is grade/paper/item scoped and binds editorial notes as well a
  for(const g of [6,7,8,11,12])assert.deepEqual(stock(g),[]);
 });
 test('Two completed items assemble as 15 marks, but remaining ten items are still missing; source filters remain exact',()=>{
- const drafts=prepared.preparedEnglishItems(10,2).map(p=>p.draft);
+ const drafts=prepared.preparedEnglishItems(10,2).filter(p=>p.group!=='verbs').map(p=>p.draft);
  const combined=assembleEnglishItems(drafts,10,()=>0,['gap-clues','substitution'],{},2);
  assert.ok(combined.draft);assert.equal(validateEnglishOutput(combined.draft.selection,combined.draft.output).total,15);
  assert.deepEqual(assembleEnglishItems(drafts,10,()=>0,undefined,{},2).missing,['verbs','transformation','tags','affixes','prepositions','connectors','punctuation','paragraph','letter-email','composition']);

@@ -1,3 +1,4 @@
+import { isEnglishPassageCloze } from "./cloze-layout";
 import type { PaperItem } from "../paper-builder";
 /** Layout fragments only: the saved question set/passage relationships remain untouched. */
 export function englishFlowBlocks(q:PaperItem):PaperItem[] {
@@ -11,7 +12,7 @@ export function englishFlowBlocks(q:PaperItem):PaperItem[] {
   }
   for(const task of group.tasks){
     // A cloze passage and its clue box are one exercise, not ten standalone prompts.
-    if(task.id === "gap-clues" && task.clues?.length && task.instruction.includes("\n")){
+    if(isEnglishPassageCloze(task)){
       blocks.push({fragment:true,passages:[],tasks:[task]});
       continue;
     }
