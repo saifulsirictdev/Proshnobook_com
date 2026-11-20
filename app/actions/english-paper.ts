@@ -97,11 +97,11 @@ export async function generateEnglishPaper(raw: unknown) {
         error: "আপনার একটি generation চলছে। কিছুক্ষণ অপেক্ষা করুন।",
       };
     }
-    const bank = await findEnglishBankParts(request.selection, async (after) =>
+    const bank = await findEnglishBankParts(request.selection, async (after, prefix) =>
       db.setting.findMany({
         where: {
           key: {
-            startsWith: "english-review:",
+            startsWith: prefix ?? "english-review:",
             ...(after ? { gt: after } : {}),
           },
           value: { contains: '"status":"APPROVED"' },
