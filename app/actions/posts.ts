@@ -4,6 +4,7 @@ import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
+import { PUBLIC_SITE_ORIGIN } from "@/lib/brand";
 import { staff } from "@/lib/guard";
 import { parseTags } from "@/lib/tags";
 import { cleanHtml, htmlToText } from "@/lib/html";
@@ -93,14 +94,8 @@ export async function savePost(id: string | null, _: PostState, fd: FormData): P
     // 🚀 অটোমেশন: পোস্টটি Published হলে স্বয়ংক্রিয়ভাবে Telegram, Facebook ও WhatsApp-এ চলে যাবে
     if (isPublished) {
       try {
-        let isNews = false;
-        if (d.categoryId) {
-          const cat = await db.category.findUnique({ where: { id: d.categoryId } }).catch(() => null);
-          if (cat?.slug === "news") isNews = true;
-        }
-
-        const siteUrl = process.env.SITE_URL || "https://saifulsir.com";
-        const postUrl = `${siteUrl}/${isNews ? "news" : "blog"}/${savedPost.slug || savedPost.id}`;
+        const siteUrl = (process.env.SITE_URL || PUBLIC_SITE_ORIGIN).replace(/\/$/, "");
+        const postUrl = `${siteUrl}/blog/${savedPost.slug || savedPost.id}`;
 
         // সোশ্যাল মিডিয়ায় অটো-পোস্ট পাঠানো
         await broadcastToSocial({
