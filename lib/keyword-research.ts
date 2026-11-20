@@ -34,7 +34,9 @@ export function normalizeItems(raw: unknown, max = 12): KeywordItem[] {
     ? raw
     : raw && typeof raw === "object" && Array.isArray((raw as { keywords?: unknown }).keywords)
       ? (raw as { keywords: unknown[] }).keywords
-      : [];
+      : raw && typeof raw === "object" && Array.isArray((raw as { items?: unknown }).items)
+        ? (raw as { items: unknown[] }).items
+        : [];
 
   const seen = new Set<string>();
   const out: KeywordItem[] = [];
