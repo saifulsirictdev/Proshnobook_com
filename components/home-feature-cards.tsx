@@ -18,7 +18,7 @@ const LINKS = {
   live: "/model-test",
   exam: "/exam",
   tests: "/tests",
-  books: "/books",
+  readyPapers: "/ready-papers",
   tools: "/tools",
 };
 
@@ -147,10 +147,10 @@ const MINIS = [
   },
   {
     cls: "hfc-green",
-    href: LINKS.books,
+    href: LINKS.readyPapers,
     Icon: BookOpen,
-    title: "বইঘর (PDF)",
-    text: "গাইড বই ও লেকচার শিট ডাউনলোড",
+    title: "রেডি প্রশ্নপত্র",
+    text: "PDF থেকে প্রশ্নপত্র তৈরি ও প্রিন্ট",
     cta: "দেখুন",
   },
   {
