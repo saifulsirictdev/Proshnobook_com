@@ -1,5 +1,5 @@
 "use client";
-import { englishCategoryGrades } from "@/lib/english/admin-scope";
+import { englishCategoryGrades, englishCategoryLabel } from "@/lib/english/admin-scope";
 import {useActionState,useState,type ReactNode} from "react";
 import Link from "next/link";
 import {selectPreparedBatches,pendingReviewHref} from "@/lib/prepared-batch-selection";
@@ -59,7 +59,7 @@ function SubjectBatchPanel({batches}:{batches:Summary[]}){
  </div>;
 }
 export default function PreparedLibrary({catalog,batches,savedIds,englishItems,initialCategory,initialSubject,initialGrade}:{catalog:Catalog;batches:Summary[];savedIds:string[];englishItems?:Record<string,ReactNode>;initialGrade?:string;initialCategory?:string;initialSubject?:string}){
- const [category,setCategory]=useState(catalog.some(c=>c.category===initialCategory)?initialCategory!:catalog[0]?.category??"");const [subject,setSubject]=useState(initialSubject??"");const [topic,setTopic]=useState("");
+ const [category,setCategory]=useState(catalog.find(c=>englishCategoryLabel(c.category)===englishCategoryLabel(initialCategory??""))?.category??catalog[0]?.category??"");const [subject,setSubject]=useState(initialSubject??"");const [topic,setTopic]=useState("");
  const subjects=catalog.find(c=>c.category===category)?.subjects??[];
  const chapters=subjects.find(s=>s.name===subject)?.chapters??[];
  const grades = englishCategoryGrades(category);
@@ -72,7 +72,7 @@ export default function PreparedLibrary({catalog,batches,savedIds,englishItems,i
   <h2 className="text-2xl font-bold">অধ্যায়ভিত্তিক প্রস্তুত প্রশ্নব্যাচ</h2>
   <p>শ্রেণি ও বিষয় নির্বাচন করলে সেই বিষয়ের সব প্রস্তুত অধ্যায়ের ব্যাচ দেখাবে। ব্যাচ বেছে প্রিভিউ করুন, তারপর Pending হিসেবে সেভ করুন। সেভ করলেই Approved বা প্রকাশিত হবে না। এই পেজ নিজে নতুন প্রশ্ন তৈরি করে না; পরবর্তী প্রস্তুত ব্যাচ যুক্ত হলে এখানে পাওয়া যাবে।</p>
   <div className="grid gap-3 sm:grid-cols-3">
-   <label>শ্রেণি<select className="block w-full rounded border p-2" value={category} onChange={e=>{setCategory(e.target.value);setSubject("");setTopic("");}}>{catalog.map(c=><option key={c.category}>{c.category}</option>)}</select></label>
+   <label>শ্রেণি<select className="block w-full rounded border p-2" value={category} onChange={e=>{setCategory(e.target.value);setSubject("");setTopic("");}}>{catalog.map(c=><option key={c.category} value={c.category}>{englishCategoryLabel(c.category)}</option>)}</select></label>
    <label>বিষয়<select className="block w-full rounded border p-2" value={subject} onChange={e=>{setSubject(e.target.value);setTopic("");}}><option value="">বিষয় নির্বাচন করুন</option>{subjects.map(s=><option key={s.name}>{s.name}</option>)}</select></label>
    <label>{english?"Question Item":"অধ্যায়"}<select disabled={!subject||english} className="block w-full rounded border p-2" value={topic} onChange={e=>setTopic(e.target.value)}><option value="">সব প্রস্তুত অধ্যায়</option>{chapters.map(t=><option key={t}>{t}</option>)}</select></label>
   </div>

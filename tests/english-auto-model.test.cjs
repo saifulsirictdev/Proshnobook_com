@@ -3,9 +3,9 @@ function load(file,mocks={}){const m=new Module(path.resolve(file),module);m.pat
 const blueprint=load('lib/english/blueprints.ts');
 const selection=load('lib/english/selection.ts',{'./blueprints':blueprint});
 const builder=load('lib/english/builder-mode.ts',{'./blueprints':blueprint,'./selection':selection,'./topic-options':{}});
-function harness(user={id:'teacher',role:'TEACHER'},sources={}){let reads=0,requests=[],bank=[];
- const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'./english-bank-model':{prepareEnglishBankModel:async grade=>{bank.push(grade);return{ok:false,error:'No approved model'};}},'@/lib/english/bundled-model-sources':{bundledEnglishModelSources:()=>({})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);selection.resolveEnglishSelection(raw);return{ok:true,key:'owned-draft-key'};}}});
- return{prepare:actions.prepareEnglishFullModel,requests,bank,reads:()=>reads};
+function harness(user={id:'teacher',role:'TEACHER'},sources={},bankResult={ok:false,reason:'MISSING_APPROVED_ITEMS',error:'No approved model'}){let reads=0,requests=[],bank=[],bankCalls=[];
+ const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'./english-bank-model':{prepareEnglishBankModel:async (...args)=>{bank.push(args[0]);bankCalls.push(args);return bankResult;}},'@/lib/english/bundled-model-sources':{bundledEnglishModelSources:()=>({})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);selection.resolveEnglishSelection(raw);return{ok:true,key:'owned-draft-key'};}}});
+ return{prepare:actions.prepareEnglishFullModel,requests,bank,bankCalls,reads:()=>reads};
 }
 test('First paper auto models delegate only to approved database full models across all grades',async()=>{
  for(let grade=6;grade<=12;grade++){const h=harness();const r=await h.prepare({grade,paper:1});assert.equal(r.ok,false);assert.deepEqual(h.bank,[grade]);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);}
@@ -63,4 +63,21 @@ test('First-paper Question Item routes use the same bank preparation with the ch
   const result=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',...query})});assert.equal(result.type,Auto);assert.deepEqual(result.props.itemIds,expected);
  }
  const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.match(ui,/<PreparationPopup/);assert.match(ui,/databaseOnly=\{paper === 1\}/);assert.match(ui,/paper === 2 \? "&stage=review" : "&stage=setup"/);
+});
+test('Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup',async()=>{
+ for(const grade of [9,10]){
+  const h=harness({id:'teacher',role:'TEACHER'},{},{ok:true,key:'approved-bank-owned-draft'});
+  assert.deepEqual(await h.prepare({grade,paper:2}),{ok:true,key:'approved-bank-owned-draft'});
+  assert.deepEqual(h.bankCalls,[[grade,undefined,{},2]]);assert.equal(h.requests.length,0);assert.equal(h.reads(),0);
+ }
+});
+test('Second paper does not spend AI quota on a database/save failure or unclassified failure',async()=>{
+ for(const bankResult of [{ok:false,reason:'DATABASE_FAILURE',error:'DB unavailable'},{ok:false,error:'Session or unknown failure'}]){
+  const h=harness({id:'teacher',role:'TEACHER'},{},bankResult);
+  assert.deepEqual(await h.prepare({grade:9,paper:2}),bankResult);assert.equal(h.requests.length,0);
+ }
+});
+test('Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade',async()=>{
+ const h=harness();assert.equal((await h.prepare({grade:9,paper:2})).ok,true);
+ assert.deepEqual(h.bankCalls,[[9,undefined,{},2]]);assert.equal(h.requests.length,1);assert.equal(h.requests[0].grade,9);assert.equal(h.requests[0].paper,2);
 });

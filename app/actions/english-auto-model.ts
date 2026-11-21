@@ -12,7 +12,8 @@ const input = z.object({
   paper: z.union([z.literal(1), z.literal(2)]).default(1),
   sources: z.record(z.string(), z.object({ text: z.string().trim().min(1).max(20000), reference: z.string().trim().min(1).max(500) }).strict()).default({}),
 }).strict();
-/** First-paper automatic entry is database-only; second paper retains bank/AI generation.
+/** First-paper automatic entry is database-only; second paper assembles approved stock
+ * BEFORE fixing default writing topics for an optional AI fallback.
  * Never synthesise a seen passage or silently substitute another class's source.
  */
 export async function prepareEnglishFullModel(raw: unknown) {
@@ -25,6 +26,12 @@ export async function prepareEnglishFullModel(raw: unknown) {
   if (paper === 1) return prepareEnglishBankModel(grade);
   const required = [...new Set(englishBlueprint(grade, paper).items.map(i => i.sourceGroup).filter((k): k is NonNullable<typeof k> => !!k && k !== "unseen"))];
   if (Object.keys(parsed.data.sources).some(k => !required.includes(k as typeof required[number]))) return { ok: false as const, error: "অপ্রত্যাশিত textbook source।" };
+  // Auto mode has no user-selected writing topic. Reuse a complete approved
+  // model with its own topics, rather than looking for fixed default topics
+  // that usually do not exist in the bank and unnecessarily invoking AI.
+  const bank = await prepareEnglishBankModel(grade, undefined, {}, paper);
+  if (bank.ok || !("reason" in bank) || bank.reason !== "MISSING_APPROVED_ITEMS") return bank;
+  // Only an explicit stock shortfall permits AI; DB/auth/save failures do not.
   const approved = required.length ? await loadEnglishModelSources(grade, paper) : { sources: {}, error: "" };
   const sources = { ...bundledEnglishModelSources(grade, paper), ...approved.sources, ...parsed.data.sources };
   const missing = required.filter(k => !sources[k]);

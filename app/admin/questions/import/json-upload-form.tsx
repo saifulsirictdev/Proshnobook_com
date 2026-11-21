@@ -1,5 +1,6 @@
 "use client";
 import {useActionState,useRef,useState} from "react";
+import {englishCategoryLabel} from "@/lib/english/admin-scope";
 import type {NctbClass} from "@/lib/nctb-data";
 import {previewUpload,saveUpload,type UploadState} from "./upload-actions";
 type Scope={category:string;subject:string;group:string;topic:string};
@@ -29,7 +30,7 @@ export default function JsonUploadForm({catalog}:{catalog:NctbClass[]}){
  const subjects=catalog.find(c=>c.class===category)?.subjects??[];const selected=subjects.find(s=>s.name===subject);const topics=selected?.subCategories?selected.subCategories.find(g=>g.category===group)?.topics??[]:selected?.chapters??[];
  const cls="block w-full rounded border p-2";
  return <section className="space-y-4 rounded-2xl border bg-white p-5"><h2 className="text-2xl font-bold">বিষয় ও অধ্যায় নির্বাচন করে JSON ফাইল আপলোড</h2><p>সাইটের বিদ্যমান শ্রেণি, বিষয় ও অধ্যায়ের তালিকা। নতুন বিভাগ তৈরি হবে না। আপলোড বা প্রিভিউতে ডাটাবেজে কিছু সেভ হয় না।</p><div className="grid gap-3 sm:grid-cols-2">
- <label>আপলোডের শ্রেণি<select className={cls} value={category} onChange={e=>{setCategory(e.target.value);setSubject("");setGroup("");setTopic("");}}>{catalog.map(c=><option key={c.class}>{c.class}</option>)}</select></label>
+ <label>আপলোডের শ্রেণি<select className={cls} value={category} onChange={e=>{setCategory(e.target.value);setSubject("");setGroup("");setTopic("");}}>{catalog.map(c=><option key={c.class} value={c.class}>{englishCategoryLabel(c.class)}</option>)}</select></label>
  <label>আপলোডের বিষয়<select className={cls} value={subject} onChange={e=>{setSubject(e.target.value);setGroup("");setTopic("");}}><option value="">বিষয় নির্বাচন করুন</option>{subjects.map(s=><option key={s.name}>{s.name}</option>)}</select></label>
  {selected?.subCategories&&<label>আপলোডের বিভাগ<select className={cls} value={group} onChange={e=>{setGroup(e.target.value);setTopic("");}}><option value="">বিভাগ নির্বাচন করুন</option>{selected.subCategories.map(g=><option key={g.category}>{g.category}</option>)}</select></label>}
  <label>আপলোডের অধ্যায়<select className={cls} disabled={!subject} value={topic} onChange={e=>setTopic(e.target.value)}><option value="">অধ্যায় নির্বাচন করুন</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label></div>
