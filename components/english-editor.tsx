@@ -187,7 +187,7 @@ export default function EnglishEditor({
         </div>
         <p role="status">{message}</p>
         <p>
-          AI-generated draft: প্রশ্ন, passage, grammar ও answer ব্যবহারের আগে নিজে
+          প্রস্তুত খসড়া: প্রশ্ন, passage, grammar ও answer ব্যবহারের আগে নিজে
           যাচাই করুন। English draft আলাদা editor-এ রাখা হয়েছে; বাংলা builder-এর
           layout/settings বদলাবে না।
         </p>
