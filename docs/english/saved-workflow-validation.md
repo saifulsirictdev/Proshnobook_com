@@ -24,6 +24,8 @@ EnglishLegacyBuilder sent a new client-clock `updatedAt` for each save, while `s
 
 The client now sends the original server token, advances its ref only after a confirmed response with a new server token, and retains real concurrent-tab rejection. No source-question mutation, backend concurrency relaxation, or quota change is needed. Unit regressions cover first/repeated saves, no mutation of initial draft/source tasks, busy guarding and failed/uncertain save behavior.
 
+The first full browser run also exposed disabled custom-header schema placeholders leaking into Page Setup (e.g. 50 marks on a 100-mark paper). The legacy adapter now applies only an enabled custom header; a disabled header uses neutral base settings so class/subject/total derive from the selected paper. Saved owner settings and enabled custom templates remain authoritative; absent duration stays unspecified rather than inventing an official exam time.
+
 ## Running / evidence
 
 `node scripts/authenticated-browser-check.cjs` runs the new workflow after real TEACHER login. The parent harness accepts only its existing loopback disposable DB target, creates a fresh random DB, starts the built app with an allowlisted environment (no provider/payment/blob credentials), blocks external browser traffic, and tears down server/browser/database.

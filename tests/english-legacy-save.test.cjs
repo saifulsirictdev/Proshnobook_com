@@ -30,3 +30,17 @@ test('Failed or uncertain saves never advance the token or claim success; double
  let sent;const failed=harness(async(_,draft)=>{sent=draft.updatedAt;throw Error('network uncertain');});
  assert.equal((await failed.persist(failed.paper.settings)).ok,false);assert.equal(sent,failed.initial.updatedAt);
 });
+test('Disabled header placeholders cannot override automatic class/subject/marks or invent a duration',()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts'),{assembleEnglishItems}=require('../lib/english/item-bank.ts');
+ const {withDefaultHeader,resolveDefaultHeader}=require('../lib/default-paper-header.ts');
+ for(const [grade,paper,total]of [[6,1,100],[6,2,50],[10,2,100]]){
+  const draft=structuredClone(assembleEnglishItems(preparedEnglishItems(grade,paper).map(p=>p.draft),grade,()=>0,undefined,{},paper).draft);
+  draft.header.enabled=false;
+  const model=englishLegacyPaper(draft),settings=withDefaultHeader(model.settings,true),header=resolveDefaultHeader(settings,model.items);
+  assert.equal(settings.info.marks,'');assert.equal(settings.info.minutes,'');assert.equal(settings.info.inst,'');
+  assert.equal(header.fullMarks,String(total).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[Number(d)]));assert.equal(header.time,'নির্ধারিত নয়');
+  assert.equal(header.institute,'প্রশ্নবুক.কম উচ্চ বিদ্যালয় ও কলেজ');
+  const custom=structuredClone(settings);custom.info.marks='75';custom.info.minutes='90 minutes';draft.builderSettings=custom;
+  assert.equal(englishLegacyPaper(draft).settings.info.marks,'75');assert.equal(englishLegacyPaper(draft).settings.info.minutes,'90 minutes');
+ }
+});

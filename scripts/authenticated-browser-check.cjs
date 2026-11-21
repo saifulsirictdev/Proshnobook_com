@@ -376,7 +376,16 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         }
       }
       if (role === "TEACHER") {
-        await require("./english-browser/authenticated-flow.cjs").runEnglishWorkflow({db,page,context,origin,testPassword:password,setPhase:value=>{phase=value;}});
+        try {
+          await require("./english-browser/authenticated-flow.cjs").runEnglishWorkflow({db,page,context,origin,testPassword:password,setPhase:value=>{phase=value;}});
+        } catch (error) {
+          // Only synthetic isolated pages; no passwords/cookies/server logs in artifacts.
+          const fs = require("node:fs"), out = ".cache/english-authenticated-flow";
+          fs.mkdirSync(out,{recursive:true});
+          fs.writeFileSync(out+"/failure.json",JSON.stringify({phase,errorType:error.name}));
+          await page.screenshot({path:out+"/failure.png"}).catch(()=>{});
+          throw error;
+        }
       }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
       if (errors.length) {
