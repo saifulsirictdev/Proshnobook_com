@@ -1,6 +1,6 @@
 import { formatPaperFractions } from "@/lib/paper-math";
 import { z } from "zod";
-import { paperHeaderSchema } from "@/lib/paper-header";
+import { paperHeaderSchema, defaultPaperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
   englishGroup?: {
     /** Presentation metadata only; never changes the saved exercise or answer key. */
@@ -34,6 +34,8 @@ const number = (value: number, min: number, max: number) =>
   z.number().int().min(min).max(max).catch(value).default(value);
 export const settingsSchema = z.object({
   version: z.literal(2).default(2),
+  // Opt-in presentation state; absent on legacy drafts and frozen approved stock.
+  defaultHeader: defaultPaperHeaderSchema.optional().catch(undefined),
   header: paperHeaderSchema
     .catch(() => paperHeaderSchema.parse({}))
     .prefault({}),

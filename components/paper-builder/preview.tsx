@@ -9,6 +9,8 @@ import {
 } from "@/lib/continuous-paper";
 import PaperAnswer from "./paper-answer";
 import HeaderPreview from "./header-preview";
+import DefaultHeaderPreview from "./default-header-preview";
+import {resolveDefaultHeader,usesDefaultHeader,type DefaultHeaderValues} from "@/lib/default-paper-header";
 import { currentHeader } from "@/lib/paper-header";
 import RichPaperText from "./rich-paper-text";
 import {
@@ -54,6 +56,7 @@ export default function PaperPreview({
   title,
   onQuestionAction,
   previewScale = 1,
+  defaultHeaderValues,
   mode = "questions",
   sections: originalSections,
   auxiliaryOnly = false,
@@ -74,6 +77,7 @@ export default function PaperPreview({
   onImageSize: (id: string, size: number | undefined) => void;
   title: string;
   previewScale?: number;
+  defaultHeaderValues?: DefaultHeaderValues;
   mode?: "questions" | "answers" | "omr";
 }) {
   const expand = (list:PreviewQuestion[]) => withEnglishPartHeadings(list).flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
@@ -152,7 +156,10 @@ export default function PaperPreview({
     </div>
   );
   const referenceEnglish = originalQuestions.some(v=>v.q.englishGroup?.referenceModel);
-  const paperHeader = s.header.enabled ? (
+  const resolvedDefaultHeader = defaultHeaderValues??resolveDefaultHeader(s,(originalSections?.flatMap(part=>part.questions)??originalQuestions).map(v=>v.q));
+  const paperHeader = usesDefaultHeader(s) ? (
+    <div className="paper-heading"><DefaultHeaderPreview values={resolvedDefaultHeader}/></div>
+  ) : s.header.enabled ? (
     <div className="paper-heading">
       <HeaderPreview
         referenceModel={referenceEnglish}
@@ -804,6 +811,7 @@ export default function PaperPreview({
             duplicate={duplicate}
             onImageSize={onImageSize}
             previewScale={previewScale}
+            defaultHeaderValues={resolvedDefaultHeader}
             auxiliaryOnly
           />
         ))}
@@ -817,6 +825,7 @@ export default function PaperPreview({
           onImageSize={onImageSize}
           title={`OMR — সেট ${setName}`}
           previewScale={previewScale}
+            defaultHeaderValues={resolvedDefaultHeader}
           mode="omr"
         />
       )}
@@ -832,6 +841,7 @@ export default function PaperPreview({
             onImageSize={onImageSize}
             title={`উত্তরমালা — ${title} — সেট ${setName}`}
             previewScale={previewScale}
+            defaultHeaderValues={resolvedDefaultHeader}
             mode="answers"
           />
         )}

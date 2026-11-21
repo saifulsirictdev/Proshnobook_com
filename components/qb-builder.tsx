@@ -13,6 +13,8 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import { Download, Settings2, Shuffle, Plus, AlertCircle } from "lucide-react";
 import HeaderManager from "@/components/paper-builder/header-manager";
+import DefaultHeaderEditor from "@/components/paper-builder/default-header-editor";
+import {resolveDefaultHeader,withDefaultHeader} from "@/lib/default-paper-header";
 import { currentHeader } from "@/lib/paper-header";
 import PaperSettingsPanel from "@/components/paper-builder/settings";
 import PaperPreview, {
@@ -40,13 +42,13 @@ export default function QbBuilder({
   purchased,
   english,
 }: {
-  english?: {key:string;items:PaperItem[];settings:PaperSettings;onSettings:(s:PaperSettings)=>void};
+  english?: {key:string;items:PaperItem[];settings:PaperSettings;useDefaultHeader?:boolean;saveSettings?:(s:PaperSettings)=>Promise<{ok:boolean;error?:string}>;onSettings:(s:PaperSettings)=>void};
   purchased?: { id: string; items: PaperItem[]; settings: PaperSettings };
   supportHref?: string;
   tutorialHref?: string;
 }) {
   const [items, setItems] = useState<PaperItem[]>([]),
-    [s, setSettings] = useState<PaperSettings>(defaults),
+    [s, setSettings] = useState<PaperSettings>(()=>withDefaultHeader(defaults())),
     [loading, setLoading] = useState(true),
     [ready, setReady] = useState(false),
     [error, setError] = useState("");
@@ -58,6 +60,7 @@ export default function QbBuilder({
   const previewRef = useRef<HTMLDivElement>(null);
   const [previewScale, setPreviewScale] = useState(1);
   const [newDivision, setNewDivision] = useState("");
+  const [headerEditRequest, requestHeaderEdit] = useState(0);
   const [divisionQuestion, setDivisionQuestion] = useState("");
   const [actionMessage, setActionMessage] = useState("");
   const [exchanging, setExchanging] = useState(false);
@@ -112,7 +115,7 @@ export default function QbBuilder({
   const close = useCallback(() => setOpen(false), []);
   useEffect(() => {
     if (english) {
-      setItems(english.items);setSettings(english.settings);setDivision(english.settings.cfg.divisionFilter);setOpen(true);setReady(true);setLoading(false);return;
+      setItems(english.items);setSettings(english.useDefaultHeader ? withDefaultHeader(english.settings,true) : english.settings);setDivision(english.settings.cfg.divisionFilter);setOpen(true);setReady(true);setLoading(false);return;
     }
     if (purchased) {
       setItems(purchased.items);
@@ -127,7 +130,7 @@ export default function QbBuilder({
       const restored = restoreSettings(
         JSON.parse(localStorage.getItem("qb:settings") || "{}"),
       );
-      setSettings(restored);
+      setSettings(withDefaultHeader(restored));
       setDivision(restored.cfg.divisionFilter);
     } catch {}
     setReady(true);
@@ -226,6 +229,18 @@ export default function QbBuilder({
       setStorageError(true);
     }
   }, []);
+  async function saveDefaultHeader(next: PaperSettings) {
+    if (english) {
+      if (!english.saveSettings) return {ok:false,error:"প্রশ্নপত্র সেভ করার ব্যবস্থা পাওয়া যায়নি।"};
+      const result=await english.saveSettings(next);
+      if(!result.ok)return result;
+    } else {
+      try {localStorage.setItem("qb:settings",JSON.stringify(next));setStorageError(false);}
+      catch {setStorageError(true);return {ok:false,error:"ব্রাউজারে হেডার সেভ হয়নি। স্টোরেজ পরীক্ষা করে আবার চেষ্টা করুন।"};}
+    }
+    update(next);
+    return {ok:true};
+  }
   const data = useMemo(
     () =>
       items
@@ -477,6 +492,7 @@ export default function QbBuilder({
       >
         <PaperPreview
           s={enriched}
+          defaultHeaderValues={resolveDefaultHeader(s,data)}
           questions={parts[0].questions}
           type={parts[0].type}
           title={parts[0].title}
@@ -786,6 +802,7 @@ export default function QbBuilder({
             >
               <Shuffle size={15} /> এলোমেলো
             </button>
+            {!purchased && !s.header.enabled && <button type="button" onClick={()=>requestHeaderEdit(v=>v+1)} className="rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-900">ডিফল্ট হেডার এডিট করুন</button>}
             {s.seed > 0 && (
               <button
                 onClick={() => update({ ...s, seed: 0 })}
@@ -795,6 +812,7 @@ export default function QbBuilder({
               </button>
             )}
           </div>
+          {!purchased && <DefaultHeaderEditor settings={s} items={data} editRequest={headerEditRequest} update={update} onSave={saveDefaultHeader} storageError={storageError}/>}
           {edit && (
             <section
               data-noprint
