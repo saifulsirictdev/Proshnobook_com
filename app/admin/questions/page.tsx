@@ -1,4 +1,4 @@
-import { englishCategoryGrades } from "@/lib/english/admin-scope";
+import { englishCategoryGrades, englishCategoryLabel } from "@/lib/english/admin-scope";
 import EnglishQuestionItems from "./english-items";
 import React from "react";
 import Link from "next/link";
@@ -24,7 +24,7 @@ export default async function AdminQuestionsPage({
   const params = await searchParams;
 
   const page = Math.max(1, Number(params.page || 1));
-  const category = typeof params.category === "string" ? params.category : "";
+  const category = englishCategoryLabel(typeof params.category === "string" ? params.category : "");
   const subject = typeof params.subject === "string" ? params.subject : "";
   const status = typeof params.status === "string" ? params.status : "all";
   const query = typeof params.q === "string" ? params.q.trim() : "";
@@ -35,7 +35,7 @@ export default async function AdminQuestionsPage({
   const skip = (page - 1) * take;
 
   const where: any = {};
-  if (category) where.category = category;
+  if (category) where.category = category === "SSC" ? {in:["SSC","Class 9","Class 10","Class 9-10","9","10","9-10"]} : category;
   if (subject) where.subject = { contains: subject, mode: "insensitive" };
   if (status === "approved") where.approved = true;
   if (status === "pending") where.approved = false;
@@ -61,7 +61,7 @@ export default async function AdminQuestionsPage({
 
   return (
     <div className="mx-auto max-w-6xl px-3 py-6 font-sans">
-      {subject && /english.*(2nd|grammar)/i.test(subject) && category === "Class 9" && ([9,10] as const).filter(grade=>!params.grade || String(grade)===params.grade).map(grade=><EnglishQuestionItems key={`${grade}:2`} grade={grade} paper={2} review status={status} />)}
+      {subject && /english.*(2nd|grammar)/i.test(subject) && category === "SSC" && ([9,10] as const).filter(grade=>!params.grade || String(grade)===params.grade).map(grade=><EnglishQuestionItems key={`${grade}:2`} grade={grade} paper={2} review status={status} />)}
       {(!subject || /english.*1st/i.test(subject)) && (category ? englishCategoryGrades(category) : [6 as const]).filter(grade=>!params.grade || String(grade)===params.grade).map(grade=><EnglishQuestionItems key={grade} grade={grade} review status={status} />)}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
         <div>
