@@ -3,6 +3,9 @@ import { z } from "zod";
 import { paperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
   englishGroup?: {
+    /** Presentation metadata only; never changes the saved exercise or answer key. */
+    part?: {id: "reading" | "grammar" | "writing"; title: string};
+    partHeading?: string;
     continued?: boolean;
     subitemOffset?: number;
     fragment?: boolean;
