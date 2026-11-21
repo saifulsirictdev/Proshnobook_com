@@ -26,6 +26,8 @@ The client now sends the original server token, advances its ref only after a co
 
 The first full browser run also exposed disabled custom-header schema placeholders leaking into Page Setup (e.g. 50 marks on a 100-mark paper). The legacy adapter now applies only an enabled custom header; a disabled header uses neutral base settings so class/subject/total derive from the selected paper. Saved owner settings and enabled custom templates remain authoritative; absent duration stays unspecified rather than inventing an official exam time.
 
+The built-app run also caught the delayed InstallPrompt overlay (`ip-backdrop`) intercepting header/save clicks. The install prompt now cancels its timer and stays hidden throughout `/question-builder` and its child routes, including when an already-open prompt is followed by client navigation into the editor. Install help remains available on other pages. Static render tests and the real workflow cover this non-interruption rule.
+
 ## Running / evidence
 
 `node scripts/authenticated-browser-check.cjs` runs the new workflow after real TEACHER login. The parent harness accepts only its existing loopback disposable DB target, creates a fresh random DB, starts the built app with an allowlisted environment (no provider/payment/blob credentials), blocks external browser traffic, and tears down server/browser/database.

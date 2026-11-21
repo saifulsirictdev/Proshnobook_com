@@ -57,6 +57,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   assert.equal(await db.setting.count({where:{key:{startsWith:prefix}}}),before+1,'Automatic entry must save exactly one owned draft');
   const originalTasks=JSON.stringify(initial.output),originalItems=englishLegacyPaper(initial).items;
   await waitPaper(count);await closeSettings();
+  assert.equal(await page.locator('.ip-root').count(),0,'Install prompt must not interrupt the paper workflow');
   setPhase(label+'_default_header');
   const header=page.locator('#paper .paper-sheet .default-paper-header').first();
   await header.waitFor();assert.match(await header.innerText(),/ইংরেজি/);
