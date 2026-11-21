@@ -375,6 +375,9 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           assert.equal(await db.setting.count({where:{key:{startsWith:"english-item:v1:"}}}),englishBefore);
         }
       }
+      if (role === "TEACHER") {
+        await require("./english-browser/authenticated-flow.cjs").runEnglishWorkflow({db,page,context,origin,testPassword:password,setPhase:value=>{phase=value;}});
+      }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
       if (errors.length) {
         phase = errors[0];

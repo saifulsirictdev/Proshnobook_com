@@ -22,6 +22,10 @@ export default function EnglishLegacyBuilder({
   const settings = useRef<PaperSettings>(
     useDefaultHeader ? withDefaultHeader(paper.settings, true) : paper.settings,
   );
+  // updatedAt is the server's optimistic-concurrency token, not a client clock.
+  // Advance it only after a confirmed save so repeat saves work, while a real
+  // concurrent tab still receives a conflict instead of overwriting its work.
+  const latest = useRef(initial);
   const saving = useRef(false);
   const [busy, setBusy] = useState(false),
     [message, setMessage] = useState("");
@@ -34,8 +38,8 @@ export default function EnglishLegacyBuilder({
     setBusy(true);
     setMessage("");
     try {
-      const result = await saveEnglishPaper(draftKey, {
-        ...initial,
+      const next: EnglishDraft = {
+        ...latest.current,
         builderSettings: s,
         header: currentHeader(s),
         font: s.cfg.font,
@@ -48,9 +52,10 @@ export default function EnglishLegacyBuilder({
           marginLeft: s.cfg.marginLeft,
           marginRight: s.cfg.marginRight,
         },
-        updatedAt: new Date().toISOString(),
-      });
-      if (result.ok) {
+      };
+      const result = await saveEnglishPaper(draftKey, next);
+      if (result.ok && result.updatedAt) {
+        latest.current = { ...next, updatedAt: result.updatedAt };
         settings.current = s;
         setMessage("সেভ হয়েছে।");
         return { ok: true };

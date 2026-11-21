@@ -46,3 +46,15 @@ test("browser uses actual password UI and isolated full app, not fake session co
       workflow.indexOf("node scripts/authenticated-browser-check.cjs"),
   );
 });
+test('English workflow stays inside the guarded DB harness, uses real actions and checks repeated save/reopen/PDF',()=>{
+ const parent=fs.readFileSync('scripts/authenticated-browser-check.cjs','utf8');
+ const code=fs.readFileSync('scripts/english-browser/authenticated-flow.cjs','utf8');
+ assert.ok(parent.includes('runEnglishWorkflow({db,page,context,origin'));
+ for(const signal of ['page.waitForURL','builderSettings.edits','repeat_save_header','saved_list_reopen','page.pdf(','getTextContent()','real_stale_tab_conflict','saved_']){
+  assert.ok(code.includes(signal),signal);
+ }
+ assert.ok(code.includes('db.setting.findMany'));assert.ok(code.includes('bankBefore'));
+ assert.ok(code.includes('providerCalls:0'));assert.ok(code.includes('nativePrinterVerified:false'));
+ assert.ok(!code.includes('route.fulfill'));assert.ok(!code.includes('addCookies'));
+ assert.ok(!code.includes('DATABASE_URL'));assert.ok(!code.includes('process.env'));
+});
