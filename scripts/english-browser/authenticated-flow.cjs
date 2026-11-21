@@ -30,16 +30,21 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
  const bankBefore=await db.setting.findMany({where:{key:{startsWith:'english-item:v1:'}},orderBy:{key:'asc'}});
  const prefix=englishOwnerPrefix('teacher'),results=[];
  await page.addInitScript(()=>{window.__englishPrintCalls=0;window.print=()=>{window.__englishPrintCalls++;};});
+ async function click(locator){
+  await locator.scrollIntoViewIfNeeded();
+  await locator.evaluate(el=>el.scrollIntoView({block:'center',inline:'nearest',behavior:'instant'}));
+  await locator.click();
+ }
  const panel=()=>page.locator('aside[aria-labelledby="paper-settings-title"]');
- async function closeSettings(){if(await panel().isVisible()&&await panel().getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true}).isVisible())await panel().getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true}).click();}
- async function openSettings(){if(!(await panel().isVisible()))await page.getByRole('button',{name:'সেটিংস',exact:true}).click();}
+ async function closeSettings(){if(await panel().isVisible()&&await panel().getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true}).isVisible())await click(panel().getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true}));}
+ async function openSettings(){if(!(await panel().isVisible()))await click(page.getByRole('button',{name:'সেটিংস',exact:true}));}
  async function waitPaper(count){
   await page.locator('#paper .paper-sheet').first().waitFor();
   await page.evaluate(()=>document.fonts.ready);
   await page.waitForFunction(n=>[...document.querySelectorAll('#paper .paper-sheet .english-question-heading')].filter(e=>e.textContent.trim()).length===n,count);
  }
  async function saved(key){return JSON.parse((await db.setting.findUniqueOrThrow({where:{key}})).value);}
- async function savePaper(){await page.getByRole('button',{name:'প্রশ্নপত্র সেভ করুন',exact:true}).click();await page.getByRole('status').filter({hasText:'সেভ হয়েছে।'}).first().waitFor();}
+ async function savePaper(){await click(page.getByRole('button',{name:'প্রশ্নপত্র সেভ করুন',exact:true}));await page.getByRole('status').filter({hasText:'সেভ হয়েছে।'}).first().waitFor();}
  for(const {grade,paper,width}of cases){
   const label=`english_${grade}_${paper}_${width}`;setPhase(label+'_generate');
   await page.setViewportSize({width,height:900});
@@ -64,12 +69,12 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   // Editing the last writing item must stay visible and survive actual DB saves.
   const last=originalItems.at(-1),marker=`Reviewed writing instruction ${grade} ${paper} ${width}`;
   const editor=page.locator('section').filter({has:page.getByRole('heading',{name:'প্রশ্ন সম্পাদনা ও সংযুক্তি',exact:true})}).last();
-  await editor.locator('details').last().locator('summary').click();
+  await click(editor.locator('details').last().locator('summary'));
   await editor.getByRole('textbox',{name:`প্রশ্ন ${originalItems.length}`,exact:true}).fill(marker);
-  await page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}).click();
+  await click(page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}));
   await page.getByRole('textbox',{name:'সময় (মিনিট বা পূর্ণ বিবরণ)',exact:true}).fill('2 hours');
   await page.getByRole('textbox',{name:'পূর্ণমান',exact:true}).fill(String(blueprint.total));
-  await page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}).click();
+  await click(page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}));
   await waitPaper(count);
   assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(marker));
   await savePaper();
@@ -77,17 +82,17 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   assert.equal(JSON.stringify(stored.output),originalTasks,'Layout edits must not mutate source tasks/keys');
   setPhase(label+'_repeat_save_header');
   const headerEditor=page.getByRole('region',{name:'ডিফল্ট হেডার সম্পাদনা',exact:true});
-  await headerEditor.getByRole('button',{name:'হেডার এডিট করুন',exact:true}).click();
+  await click(headerEditor.getByRole('button',{name:'হেডার এডিট করুন',exact:true}));
   const institute=`Workflow School ${grade} ${paper} ${width}`;
   await headerEditor.getByRole('textbox',{name:'প্রতিষ্ঠানের নাম',exact:true}).fill(institute);
-  await headerEditor.getByRole('button',{name:'ডিফল্ট হেডার সেভ করুন',exact:true}).click();
+  await click(headerEditor.getByRole('button',{name:'ডিফল্ট হেডার সেভ করুন',exact:true}));
   await headerEditor.getByText('ডিফল্ট হেডার সেভ হয়েছে।',{exact:true}).waitFor();
   const next=await saved(key);assert.notEqual(next.updatedAt,stored.updatedAt);stored=next;
   assert.equal(stored.builderSettings.defaultHeader.overrides.institute,institute);
   setPhase(label+'_saved_list_reopen');
-  await page.getByRole('link',{name:'সংরক্ষিত প্রশ্নপত্র',exact:true}).click();
+  await click(page.getByRole('link',{name:'সংরক্ষিত প্রশ্নপত্র',exact:true}));
   setPhase(label+'_saved_list_link');
-  await page.locator(`a[href*="${encodeURIComponent(key)}"]`).click();
+  await click(page.locator(`a[href*="${encodeURIComponent(key)}"]`));
   setPhase(label+'_reopen_pagination');
   await waitPaper(count);await closeSettings();
   setPhase(label+'_reopen_saved_values');
@@ -97,7 +102,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   setPhase(label+'_reopen_viewport');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Mobile controls must not widen the viewport');
   setPhase(label+'_print_and_pdf');
-  await page.getByRole('button',{name:'ডাউনলোড',exact:true}).click();
+  await click(page.getByRole('button',{name:'ডাউনলোড',exact:true}));
   await page.waitForFunction(()=>window.__englishPrintCalls===1);
   // Real Chromium print CSS/PDF, not a claim about a physical printer or native mobile dialog.
   const file=path.join(out,label+'.pdf');await page.pdf({path:file,format:'A4',printBackground:true,preferCSSPageSize:true});
@@ -119,29 +124,29 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     await stale.goto(page.url(),{waitUntil:'networkidle'});
     await stale.locator('#paper .paper-sheet').first().waitFor();
     const staleClose=stale.locator('aside[aria-labelledby="paper-settings-title"]').getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true});
-    if(await staleClose.isVisible())await staleClose.click();
+    if(await staleClose.isVisible())await click(staleClose);
     await savePaper();const winner=await saved(key);
-    await stale.getByRole('button',{name:'প্রশ্নপত্র সেভ করুন',exact:true}).click();
+    await click(stale.getByRole('button',{name:'প্রশ্নপত্র সেভ করুন',exact:true}));
     await stale.getByRole('status').filter({hasText:'অন্য tab/session থেকে draft বদলেছে'}).waitFor();
     assert.deepEqual(await saved(key),winner,'Stale tab must not overwrite newer saved work');
    }finally{await stale.close();}
    for(const mode of ['Smart','Dynamic']){
     const templatePhase=label+'_saved_'+mode.toLowerCase()+'_header';
     setPhase(templatePhase+'_tab');
-    await page.getByRole('tab',{name:mode+' Header',exact:true}).click();
+    await click(page.getByRole('tab',{name:mode+' Header',exact:true}));
     const templates=page.locator('#header-template-panel');
     setPhase(templatePhase+'_create');
-    await templates.getByRole('button',{name:new RegExp('Create')}).click();
+    await click(templates.getByRole('button',{name:new RegExp('Create')}));
     const dialog=page.getByRole('dialog',{name:mode==='Smart'?'হেডার সেটিংস':'Create Dynamic Header',exact:true});
     const templateName='Workflow '+mode+' Template';
     setPhase(templatePhase+'_name');
     await dialog.getByRole('textbox',{name:mode==='Smart'?'Your header name *':'Header Name *',exact:true}).fill(templateName);
-    if(mode==='Dynamic')await dialog.getByRole('button',{name:'Create Header',exact:true}).click();
+    if(mode==='Dynamic')await click(dialog.getByRole('button',{name:'Create Header',exact:true}));
     const active=page.locator('[aria-labelledby="header-modal-title"]');
     setPhase(templatePhase+'_institute');
     await active.getByRole('textbox',{name:'Institute Name text',exact:true}).fill(templateName+' School');
     setPhase(templatePhase+'_submit');
-    await active.getByRole('button',{name:'Save',exact:true}).click();
+    await click(active.getByRole('button',{name:'Save',exact:true}));
     setPhase(templatePhase+'_closed');
     await active.waitFor({state:'hidden'});
     setPhase(templatePhase+'_save_paper');
@@ -153,7 +158,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
     setPhase(templatePhase+'_return_default');
-    await page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}).click();
+    await click(page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}));
     setPhase(templatePhase+'_save_default');
     await savePaper();
     setPhase(templatePhase+'_visible_default');
