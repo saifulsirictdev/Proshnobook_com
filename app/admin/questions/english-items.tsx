@@ -86,6 +86,11 @@ export default async function EnglishQuestionItems({review = false, status = "al
         <p>সম্ভাব্য নমুনা উত্তর; official key বা বাধ্যতামূলক মুখস্থ উত্তর নয়। Web index থেকে শুধু topic নেওয়া হয়েছে; prompt ও model এখানে লেখা। Fictional নাম/ঘটনা/contact details-কে বাস্তব পরীক্ষা বা প্রতিষ্ঠান-প্রদত্ত উত্তর মনে করবেন না।</p>
         <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? preparedSSCWritingEntries.find(e=>card.draft.name.startsWith(e.id)),null,2)}</pre>
       </details>}
+      {(card.record?.review ?? ("review" in card ? card.review : undefined)) && <details className="rounded border p-2">
+        <summary>উৎস, editorial পরিবর্তন ও suggested answer-এর সীমাবদ্ধতা</summary>
+        <p>প্রশ্ন–উত্তর ও উৎস একসঙ্গে যাচাই করুন। Practice model বা assistant-authored key-কে official circular, প্রতিষ্ঠান-প্রদত্ত প্রশ্ন বা স্বাধীন শিক্ষক-সনদ মনে করবেন না।</p>
+        <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? ("review" in card ? card.review : undefined),null,2)}</pre>
+      </details>}
       {card.draft.output.passages.map(p => <div key={p.key}><h3 className="font-bold">{p.key}</h3><p className="whitespace-pre-wrap">{p.text}</p><p>{card.draft.selection.sources[p.key]?.reference}</p></div>)}
       {Object.entries(card.draft.selection.sources).filter(([, source]) => source.kind === "question-bank").map(([key, source]) => <section key={key} className="rounded border p-3">
         <h3 className="font-bold">উৎসের প্রশ্নের উদ্ধৃতি — মূল কবিতা/গল্পের পাঠ নয়</h3>

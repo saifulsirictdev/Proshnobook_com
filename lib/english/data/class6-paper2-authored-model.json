@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "id": "class6-paper2-authored-model-01",
+  "provenance": {
+    "kind": "AUTHORED_PRACTICE",
+    "formatReference": "user-class-6-distribution",
+    "sourceNote": "Original age-appropriate questions aligned with the existing user-supplied blueprint; no textbook, school, board or exam-year attribution.",
+    "answerStatus": "Assistant-authored suggested answers; owner review workflow required, not official keys.",
+    "limitations": [
+      "One distinct model, not 50 sets per item.",
+      "Creative writing samples and open-ended substitution answers are illustrative."
+    ]
+  },
+  "writing": {
+    "letter-email": {
+      "topic": "permission to start a reading club",
+      "choice": "formal-letter"
+    },
+    "composition": {
+      "topic": "Your School Library",
+      "words": 200
+    }
+  },
+  "output": {
+    "passages": [],
+    "tasks": [
+      {
+        "id": "parts-of-speech",
+        "instruction": "Identify the part of speech of the word in square brackets in each sentence.",
+        "subitems": [
+          {
+            "text": "[Rina] lives in Sylhet.",
+            "answer": "Noun (proper noun)."
+          },
+          {
+            "text": "She has a [small] garden.",
+            "answer": "Adjective."
+          },
+          {
+            "text": "[She] waters the plants.",
+            "answer": "Pronoun."
+          },
+          {
+            "text": "The birds [sing] every morning.",
+            "answer": "Verb."
+          },
+          {
+            "text": "They sing [sweetly].",
+            "answer": "Adverb."
+          },
+          {
+            "text": "A cat is [under] the tree.",
+            "answer": "Preposition."
+          },
+          {
+            "text": "Rina grows roses [and] lilies.",
+            "answer": "Conjunction."
+          },
+          {
+            "text": "[Hurrah]! Our team has won.",
+            "answer": "Interjection."
+          },
+          {
+            "text": "The [children] enjoy the garden.",
+            "answer": "Noun (common noun)."
+          },
+          {
+            "text": "They [are] happy.",
+            "answer": "Verb (linking verb)."
+          }
+        ]
+      },
+      {
+        "id": "gap-clues",
+        "instruction": "Fill in the gaps using the words in the box. Use each entry once.\nRina is (a) ___ student of Class Six. She lives (b) ___ Sylhet. Every morning, she (c) ___ up early. She keeps her books (d) ___ a shelf. Before school, she eats (e) ___ egg and some bread. She goes to school (f) ___ foot. Her classroom is clean (g) ___ bright. She listens (h) ___ to her teachers. After school, she (i) ___ with her friends. At night, she finishes her work and goes to bed (j) ___.",
+        "clues": [
+          "carefully",
+          "an",
+          "gets",
+          "early",
+          "on",
+          "a",
+          "and",
+          "plays",
+          "in",
+          "on"
+        ],
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "a"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "in"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "gets"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "on"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "an"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "on"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "and"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "carefully"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "plays"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "early"
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "instruction": "Make five meaningful sentences using the substitution table. Other sensible combinations are acceptable.",
+        "subitems": [
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The gardener waters the plants every morning."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The librarian arranges the books on the shelves."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The bus driver drives the bus carefully."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The doctor examines the patients at the clinic."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The farmer grows rice in the field."
+          }
+        ],
+        "table": {
+          "headers": [
+            "A",
+            "B",
+            "C"
+          ],
+          "rows": [
+            [
+              "The gardener",
+              "drives",
+              "the patients at the clinic."
+            ],
+            [
+              "The librarian",
+              "examines",
+              "rice in the field."
+            ],
+            [
+              "The bus driver",
+              "grows",
+              "the plants every morning."
+            ],
+            [
+              "The doctor",
+              "waters",
+              "the books on the shelves."
+            ],
+            [
+              "The farmer",
+              "arranges",
+              "the bus carefully."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "verbs",
+        "instruction": "Fill in the blanks with the correct forms of the verbs in brackets.",
+        "subitems": [
+          {
+            "text": "Rina ___ (read) every evening.",
+            "answer": "reads"
+          },
+          {
+            "text": "The boys ___ (play) in the field now.",
+            "answer": "are playing"
+          },
+          {
+            "text": "We ___ (visit) our grandmother yesterday.",
+            "answer": "visited"
+          },
+          {
+            "text": "Mina has ___ (finish) her homework.",
+            "answer": "finished"
+          },
+          {
+            "text": "You should ___ (help) your parents.",
+            "answer": "help"
+          }
+        ]
+      },
+      {
+        "id": "transformation",
+        "instruction": "Change the following sentences as directed in brackets.",
+        "subitems": [
+          {
+            "text": "He goes to school. (Past simple)",
+            "answer": "He went to school."
+          },
+          {
+            "text": "She is a kind girl. (Negative without changing the meaning)",
+            "answer": "She is not an unkind girl."
+          },
+          {
+            "text": "It is a very beautiful flower. (Exclamatory)",
+            "answer": "What a beautiful flower it is!"
+          },
+          {
+            "text": "You should be honest. (Imperative)",
+            "answer": "Be honest."
+          },
+          {
+            "text": "Everybody wants to be happy. (Interrogative without changing the meaning)",
+            "answer": "Who does not want to be happy?"
+          }
+        ]
+      },
+      {
+        "id": "punctuation",
+        "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten positions.\nits Friday. rinas sister is at home. she cant find her pen. where is it. her mother says that its on the desk.",
+        "subitems": [],
+        "answer": "It’s Friday. Rina’s sister is at home. She can’t find her pen. Where is it? Her mother says that it’s on the desk."
+      },
+      {
+        "id": "letter-email",
+        "instruction": "Suppose you are a student of a school. Write a formal letter to the headteacher asking for permission to start a reading club. Explain why you want the club and when it could meet.",
+        "subitems": [],
+        "answer": "20 November 2026\nThe Headteacher\nYour School\nSubject: Application for permission to start a reading club\n\nSir/Madam,\nWe, the students of Class Six, wish to start a reading club at our school. Many of us enjoy stories, but we need a place to share books and discuss them with friends. A reading club would help us improve our vocabulary and develop a regular reading habit.\n\nWe propose meeting in the library once a week after classes. We will follow the library rules and request a teacher to guide our activities. We will not allow the meetings to disturb our lessons.\n\nWe therefore request your kind permission to start the club.\nYours obediently,\nRina\nOn behalf of the students of Class Six\n\nThe identity and date are illustrative application details, not examination provenance."
+      },
+      {
+        "id": "composition",
+        "instruction": "Write a composition of about 200 words on Your School Library.",
+        "subitems": [],
+        "answer": "Your School Library\n\nOur school library is one of my favourite places. It is a quiet room beside the teachers’ room. There are shelves of books along the walls and several tables where students can sit and read. The room has large windows, so it receives plenty of light during the day.\n\nThe library contains storybooks, dictionaries, magazines and books about science and history. Some books help us understand our lessons, while others introduce us to new places and people. I especially enjoy short stories because they are interesting and easy to carry home.\n\nOur librarian helps us choose suitable books. Every student has a library card and can borrow books according to the school rules. We must return them on time, keep them clean and never tear or write on their pages. We should also speak softly so that other readers are not disturbed.\n\nI visit the library at least once a week. Reading there improves my vocabulary and helps me learn things beyond my textbooks. Sometimes I discuss a book with my friends and we recommend stories to one another.\n\nA good library makes school life richer. I hope our school can add more books and give every student enough time to use them. We should all help to protect this valuable place."
+      }
+    ]
+  }
+}

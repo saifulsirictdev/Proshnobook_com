@@ -14,7 +14,7 @@ export type EnglishItem = {
   correctionCount?: number;
   words?: number;
   sourceGroup?:
-    "seen-1" | "seen-2" | "unseen" | "textbook-poems" | "textbook-stories";
+    "seen-1" | "seen-2" | "summary-text" | "unseen" | "textbook-poems" | "textbook-stories";
   writingChoices?: readonly string[];
 };
 export type EnglishBlueprint = {
@@ -312,6 +312,7 @@ function hscSecond(): EnglishItem[] {
 export function englishBlueprint(
   grade: EnglishGrade,
   paper: EnglishPaper,
+  modelStyle?: string,
 ): EnglishBlueprint {
   const junior = grade <= 8,
     ssc = grade === 9 || grade === 10;
@@ -326,6 +327,20 @@ export function englishBlueprint(
       : paper === 1
         ? hscFirst()
         : hscSecond();
+  // Versioned source grouping preserves older saved HSC drafts that used one
+  // shared seen extract, while new reference models keep Q1/Q2/Q3 distinct.
+  if (!junior && !ssc && paper === 1 && modelStyle === "hsc-first-reference-v1") {
+    for (const item of items) {
+      if (item.id === "information") item.sourceGroup = "seen-2";
+      if (item.id === "summary") item.sourceGroup = "summary-text";
+      if (["mcq", "comprehension", "information"].includes(item.id)) {
+        item.count = 5; item.markEach = item.id === "mcq" ? 1 : 2;
+      }
+      if (["cloze-clues", "cloze-no-clues", "rearranging"].includes(item.id)) {
+        item.count = 10; item.markEach = item.id === "cloze-clues" ? 0.5 : 1;
+      }
+    }
+  }
   const firstSection = paper === 1 ? "reading" : "grammar";
   const firstMarks = junior
     ? paper === 1

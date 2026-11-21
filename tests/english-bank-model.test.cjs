@@ -151,7 +151,7 @@ test('Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and p
 test('Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock',()=>{
  const scope=require('../lib/english/admin-scope.ts'),registry=require('../lib/english/prepared-items.ts');
  assert.deepEqual(scope.englishCategoryGrades('Class 9'),[9,10]);assert.deepEqual(scope.englishCategoryGrades('Class 11-12'),[11,12]);assert.deepEqual(scope.englishCategoryGrades('Class 7'),[7]);
- for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade!==6 && grade!==10)assert.deepEqual(registry.preparedEnglishItems(grade),[]);}
+ for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade===9)assert.deepEqual(registry.preparedEnglishItems(grade),[]);else assert.ok(registry.preparedEnglishItems(grade).every(p=>p.draft.selection.grade===grade));}
  for(const raw of [5,13,'bad',''])assert.equal(scope.englishAdminGrade(raw),null);
  assert.ok(registry.preparedEnglishItems(6).length>40);assert.notEqual(registry.englishItemsDigest(7),registry.englishItemsDigest(8));
 });

@@ -6,7 +6,7 @@ import { applyHeader } from "../paper-header";
 /** Adapt owned drafts to the original builder without flattening passage/table/answer data. */
 export function englishLegacyPaper(raw: EnglishDraft) {
   const draft = validateEnglishDraft(raw);
-  const blueprint = englishBlueprint(draft.selection.grade as EnglishGrade,draft.selection.paper);
+  const blueprint = englishBlueprint(draft.selection.grade as EnglishGrade,draft.selection.paper,draft.selection.modelStyle);
   const referenceModel = draft.selection.grade === 8 && draft.selection.paper === 2;
   const seenParts = new Set<string>();
   const items: PaperItem[] = englishItemGroups(draft).map(group=>{
@@ -21,6 +21,9 @@ export function englishLegacyPaper(raw: EnglishDraft) {
     };
   });
   const settings = draft.builderSettings ? restoreSettings(draft.builderSettings) : applyHeader(restoreSettings({cfg:{cols:1,cqColumns:1,label:"abc",font:draft.font==="sans-serif"?"hind":draft.font,fontSize:draft.fontSize,...draft.layout}}),draft.header);
+  // English model papers need visible question marks on first setup.
+  // Preserve the owner's explicit saved Show/Hide and Page Setup preferences.
+  if (!draft.builderSettings) settings.show.marks = true;
   // Compact reference defaults only on first setup; never overwrite saved Page Setup.
   if (referenceModel && !draft.builderSettings) {
     Object.assign(settings.cfg, {fontSize:11, lineHeight:1.3, questionGap:5, marginTop:24, marginBottom:24, marginLeft:45, marginRight:45, autoFit:false});

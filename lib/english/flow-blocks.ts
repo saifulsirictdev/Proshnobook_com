@@ -1,4 +1,5 @@
 import { isEnglishPassageCloze } from "./cloze-layout";
+import { isEnglishSharedTable } from "./shared-table";
 import type { PaperItem } from "../paper-builder";
 /** Recompute headings AFTER exclusions/reordering, so removing question 1 cannot
  * remove Part A. Part letters come from the blueprint, not the selected subset. */
@@ -34,7 +35,7 @@ export function englishFlowBlocks(q:PaperItem):PaperItem[] {
     }
     // A substitution table is a shared choice bank, not independent row questions.
     // Keep all of its columns available together for every one of the five sentences.
-    if(task.id === "substitution" && task.table){
+    if(isEnglishSharedTable(task)){
       blocks.push({fragment:true,passages:[],tasks:[task]});
       continue;
     }

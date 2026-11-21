@@ -1,5 +1,7 @@
 # English 1st Paper: remaining-grade rollout
 
+> Current owner scope is **both papers, Classes 6–8, SSC and HSC**; earlier deferral/pause notes below are historical. See [expanded-model-rollout.md](expanded-model-rollout.md) for current prepared coverage, new grade-specific Second Paper models, source limitations and remaining release gates. SSC is the canonical visible category, not separate Class 9/Class 10 categories.
+
 ## Implemented in this phase
 - The common ADMIN import/review panels support exact grades 6–12, each using its existing grade-specific practice blueprint.
 - Preserve existing catalog categories: Class 9 contains separate grade 9/10 selections; Class 11-12 contains separate grade 11/12 selections. Do not add/rename categories.

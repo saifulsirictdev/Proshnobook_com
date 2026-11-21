@@ -9,7 +9,7 @@ export const englishSelectionSchema = z
     grade: z.number().int().min(6).max(12),
     paper: z.union([z.literal(1), z.literal(2)]),
     mode: z.enum(["full", "selected", "writing"]),
-    modelStyle: z.literal("class8-reference-v1").optional(),
+    modelStyle: z.enum(["class8-reference-v1", "hsc-first-reference-v1"]).optional(),
     itemIds: z.array(z.string().max(80)).max(20),
     writing: z.record(
       z.string(),
@@ -37,11 +37,14 @@ export const englishSelectionSchema = z
   .strict();
 export function resolveEnglishSelection(raw: unknown) {
   const selection = englishSelectionSchema.parse(raw);
-  if (selection.modelStyle && (selection.grade !== 8 || selection.paper !== 2))
+  if (selection.modelStyle === "class8-reference-v1" && (selection.grade !== 8 || selection.paper !== 2))
     throw new Error("The supplied model style is only for Class 8 Second Paper.");
+  if (selection.modelStyle === "hsc-first-reference-v1" && (![11,12].includes(selection.grade) || selection.paper !== 1))
+    throw new Error("The HSC first-paper source format is only for grades 11/12 First Paper.");
   const blueprint = englishBlueprint(
     selection.grade as EnglishGrade,
     selection.paper as EnglishPaper,
+    selection.modelStyle,
   );
   for (const [key, source] of Object.entries(selection.sources)) {
     if (source.kind === "question-bank" && (!(selection.grade === 9 || selection.grade === 10) || selection.paper !== 1 || !["textbook-poems", "textbook-stories"].includes(key)))

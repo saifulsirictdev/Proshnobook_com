@@ -6,7 +6,7 @@ import { englishBlueprint, type EnglishGrade, type EnglishPaper } from "./bluepr
 
 /** Passage-dependent items form an indivisible group: never mix seen and unseen keys. */
 export function englishItemGroups(draft: EnglishDraft) {
-  const blueprint = englishBlueprint(draft.selection.grade as EnglishGrade, draft.selection.paper);
+  const blueprint = englishBlueprint(draft.selection.grade as EnglishGrade, draft.selection.paper, draft.selection.modelStyle);
   const groups = new Map<string, string[]>();
   for (const item of blueprint.items.filter(i => draft.output.tasks.some(t => t.id === i.id))) {
     const group = item.sourceGroup ?? item.id;
@@ -41,7 +41,12 @@ export function assembleEnglishItems(stock: EnglishDraft[], grade: number, rando
         ? t.schoolSource?.school === school && !t.boardSource
         : t.boardSource?.examYear === examYear && !t.schoolSource));
   }
-  const blueprint = englishBlueprint(grade as EnglishGrade, paper);
+  const hscFirst = [11,12].includes(grade) && paper === 1;
+  const style = hscFirst && stock.some(d => d.selection.grade === grade && d.selection.paper === paper && d.selection.modelStyle === "hsc-first-reference-v1")
+    ? "hsc-first-reference-v1" : undefined;
+  // Never mix the old shared-source and new three-source HSC contracts.
+  if (hscFirst) stock = stock.filter(d => d.selection.modelStyle === style);
+  const blueprint = englishBlueprint(grade as EnglishGrade, paper, style);
   if (itemIds && (!itemIds.length || new Set(itemIds).size !== itemIds.length || itemIds.some(id => !blueprint.items.some(i => i.id === id)))) throw new Error("Invalid question items");
   const requested = blueprint.items.filter(i => !itemIds || itemIds.includes(i.id));
   const groups = new Map<string, string[]>();
