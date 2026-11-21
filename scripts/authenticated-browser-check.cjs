@@ -382,7 +382,11 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           // Only synthetic isolated pages; no passwords/cookies/server logs in artifacts.
           const fs = require("node:fs"), out = ".cache/english-authenticated-flow";
           fs.mkdirSync(out,{recursive:true});
-          fs.writeFileSync(out+"/failure.json",JSON.stringify({phase,errorType:error.name}));
+          const diagnostic = {phase,errorType:error.name,
+            ...(error.code === "ERR_ASSERTION" ? {assertion:String(error.message).split("\n")[0],actual:typeof error.actual === "number" || typeof error.actual === "boolean" ? error.actual : undefined,expected:typeof error.expected === "number" || typeof error.expected === "boolean" ? error.expected : undefined} : {}),
+            viewport:await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth})).catch(()=>null)};
+          fs.writeFileSync(out+"/failure.json",JSON.stringify(diagnostic));
+          console.error("::error::Isolated English diagnostic: "+JSON.stringify(diagnostic));
           await page.screenshot({path:out+"/failure.png"}).catch(()=>{});
           throw error;
         }

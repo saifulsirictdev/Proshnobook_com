@@ -86,11 +86,15 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   assert.equal(stored.builderSettings.defaultHeader.overrides.institute,institute);
   setPhase(label+'_saved_list_reopen');
   await page.getByRole('link',{name:'সংরক্ষিত প্রশ্নপত্র',exact:true}).click();
+  setPhase(label+'_saved_list_link');
   await page.locator(`a[href*="${encodeURIComponent(key)}"]`).click();
+  setPhase(label+'_reopen_pagination');
   await waitPaper(count);await closeSettings();
+  setPhase(label+'_reopen_saved_values');
   const reopened=await saved(key);assert.equal(reopened.updatedAt,stored.updatedAt,'Opening a draft must not write it');
   assert.equal(await page.locator('#paper .default-header-institute').first().innerText(),institute);
   assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(marker));
+  setPhase(label+'_reopen_viewport');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Mobile controls must not widen the viewport');
   setPhase(label+'_print_and_pdf');
   await page.getByRole('button',{name:'ডাউনলোড',exact:true}).click();
