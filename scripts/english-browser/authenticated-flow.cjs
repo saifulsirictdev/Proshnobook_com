@@ -126,26 +126,38 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     assert.deepEqual(await saved(key),winner,'Stale tab must not overwrite newer saved work');
    }finally{await stale.close();}
    for(const mode of ['Smart','Dynamic']){
-    setPhase(label+'_saved_'+mode.toLowerCase()+'_header');
+    const templatePhase=label+'_saved_'+mode.toLowerCase()+'_header';
+    setPhase(templatePhase+'_tab');
     await page.getByRole('tab',{name:mode+' Header',exact:true}).click();
     const templates=page.locator('#header-template-panel');
+    setPhase(templatePhase+'_create');
     await templates.getByRole('button',{name:new RegExp('Create')}).click();
     const dialog=page.getByRole('dialog',{name:mode==='Smart'?'হেডার সেটিংস':'Create Dynamic Header',exact:true});
     const templateName='Workflow '+mode+' Template';
+    setPhase(templatePhase+'_name');
     await dialog.getByRole('textbox',{name:mode==='Smart'?'Your header name *':'Header Name *',exact:true}).fill(templateName);
     if(mode==='Dynamic')await dialog.getByRole('button',{name:'Create Header',exact:true}).click();
     const active=page.locator('[aria-labelledby="header-modal-title"]');
+    setPhase(templatePhase+'_institute');
     await active.getByRole('textbox',{name:'Institute Name text',exact:true}).fill(templateName+' School');
+    setPhase(templatePhase+'_submit');
     await active.getByRole('button',{name:'Save',exact:true}).click();
+    setPhase(templatePhase+'_closed');
     await active.waitFor({state:'hidden'});
+    setPhase(templatePhase+'_save_paper');
     await savePaper();
     const custom=await saved(key);assert.equal(custom.builderSettings.header.mode,mode.toLowerCase());assert.equal(custom.builderSettings.header.enabled,true);
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0,'Custom template must replace the default header, not stack with it');
+    setPhase(templatePhase+'_reload');
     await page.reload({waitUntil:'networkidle'});await waitPaper(count);await closeSettings();
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
+    setPhase(templatePhase+'_return_default');
     await page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}).click();
-    await savePaper();await page.locator('#paper .paper-sheet .default-paper-header').first().waitFor();
+    setPhase(templatePhase+'_save_default');
+    await savePaper();
+    setPhase(templatePhase+'_visible_default');
+    await page.locator('#paper .paper-sheet .default-paper-header').first().waitFor();
    }
   }
   results.push({grade,paper,width,tasks:count,marks:blueprint.total,pdfPages:pdf.getPageCount(),repeatSave:true,reopened:true});
