@@ -21,11 +21,11 @@ execFileSync(path.join(root,'node_modules/.bin/tailwindcss'),['-i',path.join(roo
 fs.writeFileSync(path.join(out,'index.html'),'<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/global.css"><link rel="stylesheet" href="/app.css"><style>@font-face{font-family:DocumentEnglish;src:url(/fonts/Tinos-Regular.ttf)}@font-face{font-family:DocumentEnglish;src:url(/fonts/Tinos-Bold.ttf);font-weight:700}@font-face{font-family:DocumentBangla;src:url(/fonts/AdorshoLipi.ttf);unicode-range:U+0980-09FF,U+200C-200D}:root{--font-en:DocumentEnglish;--font-bn:DocumentBangla}body{margin:0;background:#eee}@page{size:A4;margin:0}</style><div id="root"></div><script src="/app.js"></script>');
 const normalize=s=>s.replace(/\s+/g,' ').trim();
 (async()=>{
- const {chromium}=require('playwright-core'),pkg=require('@sparticuz/chromium'),engine=pkg.default??pkg;
+ const {chromium}=require('playwright-core'),pkg=process.env.CHROMIUM_EXECUTABLE_PATH?null:require('@sparticuz/chromium'),engine=pkg?.default??pkg;
  const server=http.createServer((req,res)=>{const u=new URL(req.url,'http://localhost'),file=u.pathname==='/fonts/AdorshoLipi.ttf'?path.join(root,'app/fonts/AdorshoLipi.ttf'):u.pathname.startsWith('/fonts/')?path.join(root,'public/fonts',path.basename(u.pathname)):path.join(out,u.pathname==='/'?'index.html':path.basename(u.pathname));if(!fs.existsSync(file)){res.writeHead(404);return res.end();}res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':file.endsWith('.ttf')?'font/ttf':'text/html');res.end(fs.readFileSync(file));});
  await new Promise(r=>server.listen(0,'0.0.0.0',r));let browser;
  try{
-  browser=await chromium.launch({executablePath:process.env.CHROMIUM_EXECUTABLE_PATH??await engine.executablePath(),args:engine.args,headless:true});
+  browser=await chromium.launch({executablePath:process.env.CHROMIUM_EXECUTABLE_PATH??await engine.executablePath(),args:engine?.args??[],headless:true});
   const page=await browser.newPage(),errors=[],results=[];page.on('pageerror',e=>errors.push(String(e)));
   const url=`http://127.0.0.1:${server.address().port}`;
   for(let index=0;index<models.length;index++)for(const width of [1100,390]){
