@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "id": "class7-paper2-authored-model-01",
+  "provenance": {
+    "kind": "AUTHORED_PRACTICE",
+    "formatReference": "user-class-7-distribution",
+    "sourceNote": "Original age-appropriate questions aligned with the existing user-supplied blueprint; no textbook, school, board or exam-year attribution.",
+    "answerStatus": "Assistant-authored suggested answers; owner review workflow required, not official keys.",
+    "limitations": [
+      "One distinct model, not 50 sets per item.",
+      "Creative writing samples and open-ended substitution answers are illustrative."
+    ]
+  },
+  "writing": {
+    "letter-email": {
+      "topic": "your school reading club",
+      "choice": "informal-email"
+    },
+    "composition": {
+      "topic": "The Importance of Keeping Our Environment Clean",
+      "words": 250
+    }
+  },
+  "output": {
+    "passages": [],
+    "tasks": [
+      {
+        "id": "gap-clues",
+        "instruction": "Fill in the gaps using the words in the box. Use each entry once.\nOur class has started a small garden. We chose (a) ___ sunny place beside the school. First, we removed the rubbish (b) ___ the ground. Then we planted seeds (c) ___ watered them. Our science teacher told us (d) ___ care for the young plants. Every student (e) ___ a duty. Rafi brings water (f) ___ a bucket. Salma checks the leaves (g) ___ insects. We work (h) ___ so that the plants are not damaged. After a few weeks, the garden looks (i) ___. We feel proud (j) ___ our work.",
+        "clues": [
+          "green",
+          "has",
+          "of",
+          "a",
+          "carefully",
+          "for",
+          "from",
+          "and",
+          "in",
+          "to"
+        ],
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "a"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "from"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "and"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "to"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "has"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "in"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "for"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "carefully"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "green"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "of"
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "instruction": "Make five meaningful sentences using the substitution table. Other sensible combinations are acceptable.",
+        "subitems": [
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The volunteers sort books for the children."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The librarian guides new readers patiently."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The students discuss their favourite stories."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The reading club organises a book fair each year."
+          },
+          {
+            "text": "Make a meaningful sentence using one fragment from each column.",
+            "answer": "The headteacher encourages every child to read."
+          }
+        ],
+        "table": {
+          "headers": [
+            "A",
+            "B",
+            "C"
+          ],
+          "rows": [
+            [
+              "The volunteers",
+              "guides",
+              "a book fair each year."
+            ],
+            [
+              "The librarian",
+              "discuss",
+              "every child to read."
+            ],
+            [
+              "The students",
+              "organises",
+              "books for the children."
+            ],
+            [
+              "The reading club",
+              "encourages",
+              "new readers patiently."
+            ],
+            [
+              "The headteacher",
+              "sort",
+              "their favourite stories."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "verbs",
+        "instruction": "Fill in the blanks with the correct forms of the verbs in brackets.",
+        "subitems": [
+          {
+            "text": "Neither of the two boys ___ (be) absent today.",
+            "answer": "is"
+          },
+          {
+            "text": "When the bell rang, we ___ (read) quietly.",
+            "answer": "were reading"
+          },
+          {
+            "text": "She ___ (live) here since 2020.",
+            "answer": "has lived"
+          },
+          {
+            "text": "If it rains, we ___ (stay) indoors.",
+            "answer": "will stay"
+          },
+          {
+            "text": "The book was ___ (write) for young readers.",
+            "answer": "written"
+          }
+        ]
+      },
+      {
+        "id": "narration",
+        "instruction": "Change the narrative style of the following individual sentences into indirect speech.",
+        "subitems": [
+          {
+            "text": "Rafi said, “I am ready.”",
+            "answer": "Rafi said that he was ready."
+          },
+          {
+            "text": "The teacher said to Mina, “Are you ill?”",
+            "answer": "The teacher asked Mina whether she was ill."
+          },
+          {
+            "text": "Mother said to me, “Please close the door.”",
+            "answer": "Mother requested me to close the door."
+          },
+          {
+            "text": "Rupa said to me, “Where do you live?”",
+            "answer": "Rupa asked me where I lived."
+          },
+          {
+            "text": "The teacher said to us, “Do not make a noise.”",
+            "answer": "The teacher told us not to make a noise."
+          }
+        ]
+      },
+      {
+        "id": "transformation",
+        "instruction": "Change the following sentences as directed in brackets.",
+        "subitems": [
+          {
+            "text": "The students cleaned the room. (Passive)",
+            "answer": "The room was cleaned by the students."
+          },
+          {
+            "text": "She is never late for school. (Affirmative)",
+            "answer": "She is always punctual for school."
+          },
+          {
+            "text": "How useful the dictionary is! (Assertive)",
+            "answer": "The dictionary is very useful."
+          },
+          {
+            "text": "Everybody respects an honest person. (Interrogative without changing the meaning)",
+            "answer": "Who does not respect an honest person?"
+          },
+          {
+            "text": "You should keep the classroom clean. (Imperative)",
+            "answer": "Keep the classroom clean."
+          }
+        ]
+      },
+      {
+        "id": "punctuation",
+        "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten positions.\nits Saturday morning. salmas brother is reading. he doesnt hear the bell. who is at the door. his mother says that its their uncle.",
+        "subitems": [],
+        "answer": "It’s Saturday morning. Salma’s brother is reading. He doesn’t hear the bell. Who is at the door? His mother says that it’s their uncle."
+      },
+      {
+        "id": "letter-email",
+        "instruction": "Suppose you are Salma. Write an informal email to your friend Rupa describing your school reading club and inviting her to share ideas for its next activity.",
+        "subitems": [],
+        "answer": "To: rupa@example.com\nSubject: News about our school reading club\nDear Rupa,\nI hope you are well. I am writing to tell you about our school reading club. We meet in the library every Thursday after classes. A teacher helps us choose suitable books and makes sure that everyone has a chance to speak.\n\nLast week we discussed a short story and exchanged books. I enjoyed hearing different opinions about the ending. Next month we hope to arrange a small book-exchange fair. We are also thinking about making a wall magazine with short reviews.\n\nDo you have any ideas for our next activity? Please write and tell me about the books you enjoy. I would love to recommend one of them to our club.\nWith love,\nSalma\n\nThe address and identity are hypothetical examples."
+      },
+      {
+        "id": "composition",
+        "instruction": "Write a composition of about 250 words on The Importance of Keeping Our Environment Clean.",
+        "subitems": [],
+        "answer": "The Importance of Keeping Our Environment Clean\n\nOur environment includes the air, water, soil, plants and living things around us. A clean environment helps us live comfortably and reduces many everyday health risks. Keeping it clean is not the responsibility of one person or one group. Everyone has a part to play.\n\nCarelessly thrown rubbish makes roads, school grounds and waterways dirty. Plastic bags can block drains, and stagnant water can become a breeding place for mosquitoes. Smoke and dust make the air unpleasant to breathe. Dirty surroundings also harm animals and spoil the natural beauty of a place.\n\nStudents can begin with simple habits. We should put waste in suitable bins, avoid wasting paper and carry reusable bottles when possible. At school, we can keep our classrooms tidy and take part in supervised cleaning activities. We must not handle dangerous waste ourselves; an adult or trained worker should deal with it safely.\n\nFamilies can help by separating waste where collection systems support it and reducing unnecessary packaging. Local authorities need to provide reliable waste collection, maintain drains and enforce sensible rules against pollution. Planting and caring for trees can improve shared spaces, but it cannot replace the proper management of rubbish.\n\nEducation is equally important. Posters, discussions and community activities can explain why small actions matter. We should treat the people who clean our streets with respect and avoid making their work harder.\n\nA clean environment supports health, dignity and a better quality of life. If we act responsibly at home, at school and in public places, our neighbourhoods can become safer and more pleasant for everyone."
+      }
+    ]
+  }
+}

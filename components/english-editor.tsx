@@ -1,6 +1,7 @@
 "use client";
 import { englishSubitemText } from "@/lib/english/reference-model";
 import { isEnglishPassageCloze } from "@/lib/english/cloze-layout";
+import { isEnglishSharedTable } from "@/lib/english/shared-table";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { type EnglishDraft, validateEnglishDraft } from "@/lib/english/draft";
@@ -446,6 +447,7 @@ export default function EnglishEditor({
                         englishBlueprint(
                           draft.selection.grade as EnglishGrade,
                           draft.selection.paper,
+                          draft.selection.modelStyle,
                         ).items.find((i) => i.id === task.id)!,
                       )}
                     </span>
@@ -493,7 +495,7 @@ export default function EnglishEditor({
                       </tbody>
                     </table>
                   )}
-                  {(answerMode || !(isEnglishPassageCloze(task))) && <ol type="a">
+                  {(answerMode || !(isEnglishPassageCloze(task) || isEnglishSharedTable(task))) && <ol type="a">
                     {task.subitems.map((s, i) => (
                       <li key={i}>
                         <RichPaperText

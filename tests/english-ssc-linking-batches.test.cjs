@@ -110,7 +110,7 @@ test('Original nine-item selection stays 60 marks; complete registry now has 612
   const result=assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,ids,{},2);assert.ok(result.draft);assert.deepEqual(result.missing,[]);assert.equal(validateEnglishOutput(result.draft.selection,result.draft.output).total,60);assert.deepEqual(validateEnglishOutput(result.draft.selection,result.draft.output).tasks.map(t=>t.number),[1,2,3,4,5,6,7,8,9]);
   assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,[]);
  }
- for(const grade of [6,7,11,12])for(const k of kinds)assert.deepEqual(preparedEnglishItems(grade,2,k),[]);
+ for(const grade of [6,7,11,12])for(const k of kinds)assert.ok(preparedEnglishItems(grade,2,k).every(p=>p.draft.selection.grade===grade && p.review.kind==='AUTHORED_PRACTICE'));
  assert.equal(preparedEnglishItems(10,1).length,365);assert.deepEqual(preparedEnglishItems(9,1),[]);
 });
 test('All 102 passages print once, preserve five-gap/continuous structure and isolate question/answer-only output',()=>{
