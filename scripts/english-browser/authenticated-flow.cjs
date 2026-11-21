@@ -118,6 +118,8 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
    try{
     await stale.goto(page.url(),{waitUntil:'networkidle'});
     await stale.locator('#paper .paper-sheet').first().waitFor();
+    const staleClose=stale.locator('aside[aria-labelledby="paper-settings-title"]').getByRole('button',{name:'সেটিংস বন্ধ করুন',exact:true});
+    if(await staleClose.isVisible())await staleClose.click();
     await savePaper();const winner=await saved(key);
     await stale.getByRole('button',{name:'প্রশ্নপত্র সেভ করুন',exact:true}).click();
     await stale.getByRole('status').filter({hasText:'অন্য tab/session থেকে draft বদলেছে'}).waitFor();
@@ -138,12 +140,12 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     await active.waitFor({state:'hidden'});
     await savePaper();
     const custom=await saved(key);assert.equal(custom.builderSettings.header.mode,mode.toLowerCase());assert.equal(custom.builderSettings.header.enabled,true);
-    assert.equal(await page.locator('#paper .default-paper-header').count(),0,'Custom template must replace the default header, not stack with it');
+    assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0,'Custom template must replace the default header, not stack with it');
     await page.reload({waitUntil:'networkidle'});await waitPaper(count);await closeSettings();
-    assert.equal(await page.locator('#paper .default-paper-header').count(),0);
+    assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
-    await page.getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}).click();
-    await savePaper();await page.locator('#paper .default-paper-header').first().waitFor();
+    await page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}).click();
+    await savePaper();await page.locator('#paper .paper-sheet .default-paper-header').first().waitFor();
    }
   }
   results.push({grade,paper,width,tasks:count,marks:blueprint.total,pdfPages:pdf.getPageCount(),repeatSave:true,reopened:true});
