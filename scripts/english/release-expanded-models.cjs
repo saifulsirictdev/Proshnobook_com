@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'../..');
 const SCOPES=[6,7,8,10,11,12].flatMap(grade=>[1,2].map(paper=>({grade,paper})));
 const WRITE_SCOPES=SCOPES.filter(s=>!(s.grade===8&&s.paper===2));
 const ACK='APPROVE_REVIEWED_EXPANDED_ENGLISH_MODELS_V1';
-const FROZEN='51fd0af358c17e3f6a20c9e5b57ae48e5c23f483ee9ab5186dddf589b44d080d';
+const FROZEN='132791f370a3f0177aeb18efe89a25d085f567c178e6ec5e9de3af8eefecfeec';
 const AUDIT_KEY='english-expanded-model-release:v1:'+FROZEN;
 const CLASS8_DIGEST='30d8da8ae12003fc189241ba961e92e8cfd050f39d10d62ad171c9b4c1ba5b8c';
 const content=items=>items.map(p=>({key:p.key,draft:p.draft,...('review' in p?{review:p.review}:{})}));
@@ -98,14 +98,36 @@ async function verifyAutoModels(db,plan=prepare()){
  }
  return {status:'EXPANDED_ENGLISH_AUTO_MODELS_VERIFIED',models:480,providerCalls:0,scopes,limitations:'Deterministic assemblies are rotations, not 480 distinct authored papers.'};
 }
+/** Bounded read-only diagnostics: counts/field names only, never DB values or secrets. */
+async function diagnose(db,plan=prepare()){
+ const all=[...plan.items,...plan.readOnly],rows=await db.setting.findMany({where:{key:{in:all.map(p=>p.key)}}});
+ const stored=new Map(rows.map(r=>[r.key,r.value]));
+ const scopes=SCOPES.map(({grade,paper})=>{
+  const targets=all.filter(p=>p.draft.selection.grade===grade&&p.draft.selection.paper===paper);
+  const counts={missing:0,approved:0,pending:0,rejected:0,invalid:0,reopened:0,draftMismatch:0,reviewMismatch:0},fields=new Set();
+  for(const p of targets){
+   if(!stored.has(p.key)){counts.missing++;continue;}
+   let r;try{r=JSON.parse(stored.get(p.key));if(!r||typeof r!=='object')throw Error();}catch{counts.invalid++;continue;}
+   if(['APPROVED','PENDING','REJECTED'].includes(r.status))counts[r.status.toLowerCase()]++;else counts.invalid++;
+   if(r.previousDecision)counts.reopened++;
+   if(JSON.stringify(r.draft)!==JSON.stringify(p.draft)){
+    counts.draftMismatch++;
+    for(const key of Object.keys(p.draft))if(JSON.stringify(r.draft?.[key])!==JSON.stringify(p.draft[key]))fields.add(key);
+   }
+   if(JSON.stringify(r.review??null)!==JSON.stringify(p.review??null))counts.reviewMismatch++;
+  }
+  return {grade,paper,targets:targets.length,...counts,mismatchFields:[...fields].sort()};
+ });
+ return {status:'EXPANDED_ENGLISH_READ_ONLY_DIAGNOSTIC',digest:plan.digest,scopes};
+}
 async function main(){
- const mode=process.argv[2];if(!['manifest','preview','approve','verify'].includes(mode))throw Error('Choose manifest, preview, approve or verify');
+ const mode=process.argv[2];if(!['manifest','preview','approve','verify','diagnose'].includes(mode))throw Error('Choose manifest, preview, approve, verify or diagnose');
  const plan=prepare();
  if(mode==='manifest'){console.log(JSON.stringify({digest:plan.digest,targets:plan.items.length,class8ReadOnly:plan.readOnly.length}));return;}
  if(plan.digest!==FROZEN)throw Error('Frozen manifest mismatch');
  if(mode==='approve')assertPlan(plan,process.env.EXPANDED_ENGLISH_DIGEST,process.env.EXPANDED_ENGLISH_ACK);
  const {PrismaClient}=require('@prisma/client'),db=new PrismaClient();
- try{if(mode==='verify')console.log(JSON.stringify(await verifyAutoModels(db,plan)));else{console.log(JSON.stringify(await preview(db,plan)));if(mode==='approve'){console.log(JSON.stringify(await release(db,plan,process.env.EXPANDED_ENGLISH_DIGEST,process.env.EXPANDED_ENGLISH_ACK)));console.log(JSON.stringify(await verifyAutoModels(db,plan)));}}}finally{await db.$disconnect();}
+ try{if(mode==='diagnose')console.log(JSON.stringify(await diagnose(db,plan)));else if(mode==='verify')console.log(JSON.stringify(await verifyAutoModels(db,plan)));else{console.log(JSON.stringify(await preview(db,plan)));if(mode==='approve'){console.log(JSON.stringify(await release(db,plan,process.env.EXPANDED_ENGLISH_DIGEST,process.env.EXPANDED_ENGLISH_ACK)));console.log(JSON.stringify(await verifyAutoModels(db,plan)));}}}finally{await db.$disconnect();}
 }
-module.exports={SCOPES,WRITE_SCOPES,ACK,FROZEN,AUDIT_KEY,prepare,preview,release,verifyAutoModels};
+module.exports={SCOPES,WRITE_SCOPES,ACK,FROZEN,AUDIT_KEY,prepare,preview,release,verifyAutoModels,diagnose};
 if(require.main===module)main().catch(()=>{console.error('Expanded English release stopped; no successful approval/release confirmed. Credentials and question text are not logged.');process.exitCode=1;});

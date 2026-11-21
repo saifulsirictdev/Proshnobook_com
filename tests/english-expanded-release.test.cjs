@@ -52,3 +52,17 @@ test('Production verifier consumes actual DB record values, rejects missing keys
  const key=plan.items[0].key,original=f.store.get(key),altered=JSON.parse(original);altered.draft.name+=' altered';f.store.set(key,JSON.stringify(altered));await assert.rejects(api.verifyAutoModels(db,plan));
  f.store.set(key,original);f.store.delete(key);await assert.rejects(api.verifyAutoModels(db,plan));
 });
+
+test('Preparing other grades in any sequence cannot mutate frozen drafts or existing default headers',()=>{
+ const before=JSON.stringify(plan),registry=require('../lib/english/prepared-items.ts');
+ for(const {grade,paper}of [...api.SCOPES].reverse())registry.preparedEnglishItems(grade,paper);
+ assert.equal(JSON.stringify(plan),before);assert.equal(api.prepare().digest,api.FROZEN);
+ assert.equal(plan.items.find(p=>p.draft.selection.grade===10).draft.header.fields.subject.value,'বিষয় / সিলেবাস');
+});
+test('Read-only diagnostics disclose bounded scope counts and differing field names, not values',async()=>{
+ const f=fixture(),p=plan.items[0];f.store.set(p.key,JSON.stringify({status:'REJECTED',draft:{...p.draft,name:'private-sentinel-title'},review:{private:'sentinel-secret'},previousDecision:{status:'APPROVED'}}));
+ const result=await api.diagnose(f.db,plan);assert.equal(f.writes,0);assert.equal(result.scopes.length,12);
+ const scope=result.scopes.find(s=>s.grade===p.draft.selection.grade&&s.paper===p.draft.selection.paper);
+ assert.equal(scope.rejected,1);assert.equal(scope.reopened,1);assert.equal(scope.draftMismatch,1);assert.equal(scope.reviewMismatch,1);assert.deepEqual(scope.mismatchFields,['name']);
+ assert.doesNotMatch(JSON.stringify(result),/private-sentinel|sentinel-secret/);
+});

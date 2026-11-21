@@ -52,7 +52,7 @@ Each adapter validates complete drafts before splitting atomic groups and attach
 
 `node scripts/english/release-expanded-models.cjs manifest` is DB-free.
 
-- Digest: `51fd0af358c17e3f6a20c9e5b57ae48e5c23f483ee9ab5186dddf589b44d080d`
+- Digest: `132791f370a3f0177aeb18efe89a25d085f567c178e6ec5e9de3af8eefecfeec`
 - **1,144 exact target keys** across 11 grade/paper scopes; previously released Class 8 Paper 2 is excluded from writes and separately checked (440 keys).
 - Modes: `preview`, `approve`, `verify`; approval additionally requires matching `EXPANDED_ENGLISH_DIGEST` and `EXPANDED_ENGLISH_ACK=APPROVE_REVIEWED_EXPANDED_ENGLISH_MODELS_V1`.
 - Preview performs no writes. Approval is one serializable transaction: missing targets are created Pending, exact Pending values are compare-and-swap approved, existing matching approvals are preserved. Rejected, reopened, changed records, revoked historical Class 8 rows, content drift and concurrent conflicts stop the transaction. Unrelated records are never updated.
@@ -71,3 +71,9 @@ This script is **not** a permanent build hook. Production engine generation must
 - **No expanded production import, approval or deployment has yet been executed.** Authenticated live UI and physical duplex folding are not certified by the local renderer harness.
 
 Do not describe the entire larger editorial request as completed while genuinely distinct quantity, independent teacher review, or physical printing remain unverified.
+
+### Post-merge rollout gate: isolated header defaults
+
+PR #11 passed PR and main CI and was merged. Its first production attempt stopped **during read-only preview, before the approval function was called**; the deployment was not promoted. Read-only diagnostics reported an existing-content mismatch. Investigation reproduced Zod's shallow default entries: changing one prepared model's header mutated the default field entries later used by other grades. The exact-content gate correctly refused to overwrite historical stock.
+
+`paperHeaderSchema` now creates deep-isolated default entries. The expanded manifest is re-frozen to the digest above; the historical Class 8 digest remains unchanged. No existing DB row is rewritten to make the check pass. `diagnose` reports only scope counts and mismatching field names, never question text, names or secrets. The corrective branch still requires fresh CI, read-only production diagnostics and exact-content preview before approval. Earlier 1,077-test and 36-PDF results belong to PR #11, not a claim that this correction has already shipped.
