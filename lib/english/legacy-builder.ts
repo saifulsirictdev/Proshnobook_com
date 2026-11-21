@@ -20,7 +20,11 @@ export function englishLegacyPaper(raw: EnglishDraft) {
       englishGroup:{referenceModel,part,partHeading,passages:group.draft.output.passages,tasks:group.draft.output.tasks.map(t=>({...t,number:blueprint.items.findIndex(i=>i.id===t.id)+1,marks:blueprint.items.find(i=>i.id===t.id)!.marks,marksLabel:englishMarksLabel(blueprint.items.find(i=>i.id===t.id)!)}))},
     };
   });
-  const settings = draft.builderSettings ? restoreSettings(draft.builderSettings) : applyHeader(restoreSettings({cfg:{cols:1,cqColumns:1,label:"abc",font:draft.font==="sans-serif"?"hind":draft.font,fontSize:draft.fontSize,...draft.layout}}),draft.header);
+  const base = restoreSettings({cfg:{cols:1,cqColumns:1,label:"abc",font:draft.font==="sans-serif"?"hind":draft.font,fontSize:draft.fontSize,...draft.layout}});
+  // A disabled header still contains schema placeholder values (e.g. 50 marks,
+  // 30 minutes). Do not copy them into Page Setup and override real paper totals.
+  // Explicit custom headers and saved owner settings remain authoritative.
+  const settings = draft.builderSettings ? restoreSettings(draft.builderSettings) : draft.header.enabled ? applyHeader(base,draft.header) : base;
   // English model papers need visible question marks on first setup.
   // Preserve the owner's explicit saved Show/Hide and Page Setup preferences.
   if (!draft.builderSettings) settings.show.marks = true;

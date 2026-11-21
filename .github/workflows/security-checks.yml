@@ -8,7 +8,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     services:
       auth-rate-postgres:
         image: postgres:16
@@ -90,3 +90,11 @@ jobs:
           node scripts/authenticated-browser-check.cjs
         env:
           WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+      - name: Keep isolated English workflow proof (no production data)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-english-workflow-proof
+          path: .cache/english-authenticated-flow/
+          if-no-files-found: ignore
+          retention-days: 7
