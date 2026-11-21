@@ -4,6 +4,7 @@ import { paperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
   englishGroup?: {
     /** Presentation metadata only; never changes the saved exercise or answer key. */
+    referenceModel?: boolean;
     part?: {id: "reading" | "grammar" | "writing"; title: string};
     partHeading?: string;
     continued?: boolean;
@@ -11,7 +12,7 @@ export type PaperItem = {
     fragment?: boolean;
     attachmentId?: string;
     passages: {key:string;text:string}[];
-    tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {number:number;marks:number})[];
+    tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {number:number;marks:number;marksLabel?:string})[];
   };
   id: string;
   text: string;

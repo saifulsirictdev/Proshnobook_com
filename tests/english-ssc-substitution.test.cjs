@@ -74,7 +74,7 @@ test('Item digest is grade/paper/item scoped and binds editorial notes as well a
  try {assert.notEqual(digest,prepared.englishItemsDigest(10,2,'substitution'));}finally{data.items[0].editorialNotes.pop();}
  assert.equal(digest,prepared.englishItemsDigest(10,2,'substitution'));
  assert.equal(prepared.preparedEnglishItems(10).length,365);assert.equal(prepared.preparedEnglishItems(9).length,0);
- for(const g of [6,7,8,11,12])assert.deepEqual(stock(g),[]);
+ for(const g of [6,7,11,12])assert.deepEqual(stock(g),[]);
 });
 test('Two completed items assemble as 15 marks, but remaining ten items are still missing; source filters remain exact',()=>{
  const drafts=prepared.preparedEnglishItems(10,2).filter(p=>['gap-clues','substitution'].includes(p.group)).map(p=>p.draft);

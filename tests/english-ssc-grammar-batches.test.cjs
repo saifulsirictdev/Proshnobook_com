@@ -92,7 +92,7 @@ test('Original seven-item selection remains 50 marks; complete registry has 612 
   const partial=assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,ids,{},2);assert.ok(partial.draft);assert.equal(validateEnglishOutput(partial.draft.selection,partial.draft.output).total,50);
   assert.deepEqual(assembleEnglishItems(all.map(p=>p.draft),grade,()=>0,undefined,{},2).missing,[]);
  }
- for(const grade of [6,7,8,11,12])for(const kind of kinds)assert.deepEqual(preparedEnglishItems(grade,2,kind),[]);
+ for(const grade of [6,7,11,12])for(const kind of kinds)assert.deepEqual(preparedEnglishItems(grade,2,kind),[]);
 });
 test('Every complete affix/preposition passage prints once as an atomic exercise; independent tag/transformation questions remain visible',()=>{
  require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);

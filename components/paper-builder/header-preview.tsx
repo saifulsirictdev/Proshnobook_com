@@ -4,11 +4,13 @@ export default function HeaderPreview({
   setName,
   autoSet = false,
   sectionTitle,
+  referenceModel = false,
 }: {
   header: PaperHeaderConfig;
   setName?: string;
   autoSet?: boolean;
   sectionTitle?: string;
+  referenceModel?: boolean;
 }) {
   const f = h.fields;
   const text = (key: keyof typeof f) => (f[key].enabled ? f[key].value : "");
@@ -17,6 +19,17 @@ export default function HeaderPreview({
       ? `সেট: ${setName}`
       : text("setCode")
     : "";
+  if (referenceModel) return <div className="custom-paper-header english-reference-header" style={{textAlign:"center",marginBottom:"0.25em",paddingBottom:0,borderBottom:0,lineHeight:1.2}}>
+    {text("institute") && <div style={{fontWeight:700,fontSize:"1.15em"}}>{text("institute")}</div>}
+    {text("subject") && <div style={{borderBottom:"1px solid #000",fontFamily:"Arial, sans-serif",fontWeight:700,paddingBottom:"0.15em"}}>{text("subject")}</div>}
+    {set && <div style={{display:"table",margin:"0.15em auto",background:"#000",color:"#fff",fontFamily:"Arial, sans-serif",fontSize:"1.6em",fontWeight:800,padding:"0.08em 0.5em",printColorAdjust:"exact"}}>{set}</div>}
+    {text("program") && <div style={{fontWeight:700,fontSize:"1.15em"}}>{text("program")}</div>}
+    {text("class") && <div>{text("class")}</div>}
+    {text("subjectCode") && <div>Subject Code: {text("subjectCode")}</div>}
+    {(text("time") || text("fullMarks")) && <div style={{display:"flex",justifyContent:"space-between",fontSize:"0.85em"}}><span>{text("time") && `Time: ${text("time")}`}</span><span>{text("fullMarks") && `Full Marks: ${text("fullMarks")}`}</span></div>}
+    {(["questionType","note","extraInfo","addNew","studentName","studentRoll"] as const).map(k=>text(k)?<div key={k}>{text(k)}</div>:null)}
+    {h.mode === "dynamic" && h.layout === "branded" && h.branding && <div>{h.branding}</div>}
+  </div>;
   return (
     <div
       className={`custom-paper-header ${h.mode === "dynamic" ? "custom-paper-header-dynamic" : ""} ${h.layout === "branded" && h.mode === "dynamic" ? "custom-paper-header-branded" : ""}`}

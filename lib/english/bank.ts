@@ -33,6 +33,7 @@ function signature(selection: Selection, id: string) {
   return JSON.stringify([
     selection.grade,
     selection.paper,
+    selection.modelStyle ?? null,
     id,
     w
       ? [

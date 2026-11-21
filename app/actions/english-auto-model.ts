@@ -36,5 +36,5 @@ export async function prepareEnglishFullModel(raw: unknown) {
   const sources = { ...bundledEnglishModelSources(grade, paper), ...approved.sources, ...parsed.data.sources };
   const missing = required.filter(k => !sources[k]);
   if (missing.length) return { ok: false as const, error: "বইয়ের নির্ভরযোগ্য seen passage/poem/story নেই। শুধু নিচের অনুপস্থিত textbook extract/reference দিন; বাকি প্রশ্ন স্বয়ংক্রিয়ভাবে তৈরি হবে।", missing };
-  return generateEnglishPaper({ grade, paper, mode: "full", itemIds: [], writing: fullModelWriting(grade, paper), sources, includeAnswers: true });
+  return generateEnglishPaper({ grade, paper, mode: "full", itemIds: [], writing: fullModelWriting(grade, paper), sources, includeAnswers: true, ...(grade === 8 && paper === 2 ? {modelStyle: "class8-reference-v1"} : {}) });
 }
