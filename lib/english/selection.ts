@@ -9,6 +9,7 @@ export const englishSelectionSchema = z
     grade: z.number().int().min(6).max(12),
     paper: z.union([z.literal(1), z.literal(2)]),
     mode: z.enum(["full", "selected", "writing"]),
+    modelStyle: z.literal("class8-reference-v1").optional(),
     itemIds: z.array(z.string().max(80)).max(20),
     writing: z.record(
       z.string(),
@@ -36,6 +37,8 @@ export const englishSelectionSchema = z
   .strict();
 export function resolveEnglishSelection(raw: unknown) {
   const selection = englishSelectionSchema.parse(raw);
+  if (selection.modelStyle && (selection.grade !== 8 || selection.paper !== 2))
+    throw new Error("The supplied model style is only for Class 8 Second Paper.");
   const blueprint = englishBlueprint(
     selection.grade as EnglishGrade,
     selection.paper as EnglishPaper,

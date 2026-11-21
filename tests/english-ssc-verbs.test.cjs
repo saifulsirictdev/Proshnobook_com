@@ -100,7 +100,7 @@ test('Scoped verb import requires ADMIN and exact preview digest; writes only 51
  }
  const [key,value]=[...saved][0];saved.set(key,value.replace('PENDING','APPROVED'));await action('ADMIN')(f);assert.equal(saved.size,51);assert.equal(JSON.parse(saved.get(key)).status,'APPROVED');
  const digest=englishItemsDigest(10,2,'verbs');data.items[0].editorialNotes.push('test edit');try{assert.notEqual(digest,englishItemsDigest(10,2,'verbs'));}finally{data.items[0].editorialNotes.pop();}
- for(const g of [6,7,8,11,12])assert.deepEqual(items(g),[]);
+ for(const g of [6,7,11,12])assert.deepEqual(items(g),[]);
 });
 test('All 51 verb exercises print prompt, verb box then passage once, with no duplicated prompts or answer leakage',()=>{
  require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);

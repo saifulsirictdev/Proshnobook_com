@@ -50,6 +50,13 @@ function makeDraft(
     enabled: true,
     value: String(generated.total),
   });
+  if (selection.modelStyle === "class8-reference-v1") {
+    Object.assign(header.fields.institute, {enabled:false, value:""});
+    Object.assign(header.fields.class, {enabled:false});
+    Object.assign(header.fields.subject, {value:"English Second Paper · Model Tests"});
+    Object.assign(header.fields.setCode, {enabled:true, value:"Model Test-05"});
+    Object.assign(header.fields.program, {value:"Final/Annual Examination"});
+  }
   return validateEnglishDraft({
     version: 1,
     name: `English ${selection.grade} — Paper ${selection.paper}`,

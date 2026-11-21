@@ -131,3 +131,11 @@
 }
 .english-data-chart{margin:1rem 0;break-inside:avoid}.english-data-chart figcaption{text-align:center;font-weight:600}.english-data-chart svg{display:block;width:100%;height:auto;max-height:160mm}
 .english-mark-formula{white-space:nowrap;font-variant-numeric:tabular-nums}.english-clues>span{border-right:1px solid}.english-clues>span:last-child{border-right:0}
+
+/* Supplied Class 8 model: shared instruction/body hierarchy in review and print. */
+.english-reference-paper { line-height: 1.3; }
+.english-reference-paper .english-task { break-inside: avoid; margin-bottom: .35em; }
+.english-reference-paper .english-task h2 { display: table; background: #000; color: #fff; text-align: left; padding: 0 .3em; margin: .3em 0; print-color-adjust: exact; }
+.english-reference-paper .english-task p { margin: .2em 0; }
+.english-reference-paper li { margin: .12em 0; }
+.english-reference-paper td { padding: .1em .35em; }

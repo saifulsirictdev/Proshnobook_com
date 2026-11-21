@@ -196,3 +196,8 @@
 .paper-equation-equals {
   align-self: start;
 }
+
+/* The same compact reference geometry is measured and printed. */
+.english-reference-question .english-part-heading { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.english-reference-question p { margin: .15em 0; }
+.english-reference-question section > div > p { padding-left: 1.8em; }

@@ -93,7 +93,7 @@ test('All twelve item types now support a 100-mark model for both grades; 612 di
   for(const random of [()=>0,()=>0.5,()=>0.999]){const r=assembleEnglishItems(prepared.map(p=>p.draft),grade,random,undefined,{},2);assert.deepEqual(r.missing,[]);assert.ok(r.draft);const v=validateEnglishOutput(r.draft.selection,r.draft.output);assert.equal(v.total,100);assert.deepEqual(v.tasks.map(t=>t.number),[1,2,3,4,5,6,7,8,9,10,11,12]);assert.deepEqual(v.tasks.map(t=>t.marks),[10,5,10,10,5,5,5,5,5,10,10,20]);assert.equal(r.draft.output.tasks.length,12);assert.deepEqual(Object.keys(r.draft.selection.writing),kinds);validateEnglishReferenceShape(r.draft.selection,r.draft.output);}
   const writing=assembleEnglishItems(prepared.map(p=>p.draft),grade,()=>0,kinds,{},2);assert.equal(validateEnglishOutput(writing.draft.selection,writing.draft.output).total,40);
  }
- for(const grade of [6,7,8,11,12])for(const kind of kinds)assert.deepEqual(preparedEnglishItems(grade,2,kind),[]);assert.equal(preparedEnglishItems(10,1).length,365);assert.deepEqual(preparedEnglishItems(9,1),[]);
+ for(const grade of [6,7,11,12])for(const kind of kinds)assert.deepEqual(preparedEnglishItems(grade,2,kind),[]);assert.equal(preparedEnglishItems(10,1).length,365);assert.deepEqual(preparedEnglishItems(9,1),[]);
 });
 test('All 153 writing tasks print the full requested question once and model only when answers are requested',()=>{
  require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);

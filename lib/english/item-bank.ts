@@ -15,7 +15,7 @@ export function englishItemGroups(draft: EnglishDraft) {
   return [...groups].map(([group, ids]) => {
     const sources = Object.fromEntries(Object.entries(draft.selection.sources).filter(([k]) => k === group));
     const writing = Object.fromEntries(Object.entries(draft.selection.writing).filter(([k]) => ids.includes(k)));
-    const part = validateEnglishDraft({ ...draft, name: `Class ${draft.selection.grade} — ${group}`, selection: { ...draft.selection, mode: "selected", itemIds: ids, sources, writing }, output: { tasks: draft.output.tasks.filter(t => ids.includes(t.id)), passages: draft.output.passages.filter(p => p.key === group) } });
+    const part = validateEnglishDraft({ ...draft, name: `Class ${draft.selection.grade} — ${group}`, selection: { ...draft.selection, mode: "selected", itemIds: ids, sources, writing }, output: { tasks: draft.output.tasks.filter(t => ids.includes(t.id)), passages: draft.output.passages.filter(p => draft.output.tasks.some(t => ids.includes(t.id) && t.passageKey === p.key)) } });
     validateEnglishReferenceShape(part.selection, part.output);
     const digest = createHash("sha256").update(JSON.stringify({selection:part.selection,output:part.output})).digest("hex");
     return { key: `english-item:v1:${digest}`, group, draft: part };

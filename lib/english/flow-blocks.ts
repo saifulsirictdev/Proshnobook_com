@@ -16,6 +16,10 @@ export function withEnglishPartHeadings<T extends {q: PaperItem}>(items: T[]): T
 export function englishFlowBlocks(q:PaperItem):PaperItem[] {
   const group=q.englishGroup;
   if(!group || group.fragment)return [q];
+  // Each Class 8 reference exercise stays intact, including its passage/table.
+  // If an unusually long exercise cannot fit, pagination reports it instead of
+  // losing content or splitting the transformation list between sheets.
+  if(group.referenceModel)return [q];
   const blocks:NonNullable<PaperItem["englishGroup"]>[]=[];
   for(const p of group.passages){
     // Preserve every character. Small line/word chunks let long prose and poems continue.

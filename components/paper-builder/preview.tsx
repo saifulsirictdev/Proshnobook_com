@@ -144,16 +144,18 @@ export default function PaperPreview({
             : ""}
         </h3>
       )}
-      {mode === "questions" && !sections && (
+      {mode === "questions" && !sections && !questions.some(v=>v.q.englishGroup) && (
         <p className="mb-3 text-right text-[0.85em]">
           {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
         </p>
       )}
     </div>
   );
+  const referenceEnglish = originalQuestions.some(v=>v.q.englishGroup?.referenceModel);
   const paperHeader = s.header.enabled ? (
     <div className="paper-heading">
       <HeaderPreview
+        referenceModel={referenceEnglish}
         header={
           sections
             ? {
@@ -188,7 +190,7 @@ export default function PaperPreview({
           প্রাপ্ত নম্বর: ……………
         </div>
       )}
-      {mode === "questions" && !sections && (
+      {mode === "questions" && !sections && !questions.some(v=>v.q.englishGroup) && (
         <p className="mb-3 text-right text-[0.85em]">
           {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
         </p>

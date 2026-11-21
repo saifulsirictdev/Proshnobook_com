@@ -45,7 +45,7 @@ for(const grade of [9,10]) test(`SSC grade ${grade}, Paper 2: all 51 validate at
 });
 test('First paper registries and unsupported second-paper grades remain isolated',()=>{
  assert.equal(preparedEnglishItems(10).length,365);assert.equal(preparedEnglishItems(9).length,0);
- for(const g of [6,7,8,11,12])assert.equal(preparedEnglishItems(g,2).length,0);
+ for(const g of [6,7,11,12])assert.equal(preparedEnglishItems(g,2).length,0);
  assert.notEqual(englishItemsDigest(10),englishItemsDigest(10,2));assert.notEqual(englishItemsDigest(9,2),englishItemsDigest(10,2));
 });
 test('Paper-aware stock and selected-item assembly do not pretend the remaining eleven items are ready',async()=>{
