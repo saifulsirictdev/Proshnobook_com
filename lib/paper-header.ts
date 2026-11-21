@@ -66,7 +66,9 @@ export const paperHeaderSchema = z.object({
         headerFieldDefinitions.map(([key]) => [key, entry]),
       ) as Record<HeaderKey, typeof entry>,
     )
-    .default(baseFields),
+    // Zod defaults are shallow: never share mutable field entries between
+    // independently prepared papers (or let one grade rewrite another header).
+    .default(() => structuredClone(baseFields)),
 });
 export type PaperHeaderConfig = z.infer<typeof paperHeaderSchema>;
 export const newHeader = () => paperHeaderSchema.parse({});
