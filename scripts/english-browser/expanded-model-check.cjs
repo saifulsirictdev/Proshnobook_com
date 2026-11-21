@@ -6,8 +6,11 @@ const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),
 const {preparedEnglishItems}=require('../../lib/english/prepared-items.ts');
 const {assembleEnglishItems}=require('../../lib/english/item-bank.ts');
 const {englishLegacyPaper}=require('../../lib/english/legacy-builder.ts');
-const out=path.join(root,'.cache/expanded/browser');fs.mkdirSync(out,{recursive:true});
-const models=[6,7,8,10,11,12].flatMap(grade=>[1,2].map(paper=>{
+const browserSet=process.env.ENGLISH_BROWSER_SET;
+if(browserSet && browserSet!=='junior-expansion-01')throw Error('Unknown English browser fixture set');
+const expansion=browserSet==='junior-expansion-01';
+const out=path.join(root,expansion?'.cache/junior-expansion/browser':'.cache/expanded/browser');fs.mkdirSync(out,{recursive:true});
+const models=expansion?[6,7].flatMap(grade=>require('../../lib/english/prepared-junior-paper2-expansion.ts').preparedJuniorPaper2ExpansionModels(grade).map((entry,i)=>({grade,paper:2,modelNumber:i+2,model:englishLegacyPaper(entry.draft)}))):[6,7,8,10,11,12].flatMap(grade=>[1,2].map(paper=>{
  const assembled=assembleEnglishItems(preparedEnglishItems(grade,paper).map(p=>p.draft),grade,()=>0,undefined,{},paper);assert.ok(assembled.draft);
  return {grade,paper,model:englishLegacyPaper(assembled.draft)};
 }));
@@ -29,11 +32,11 @@ const normalize=s=>s.replace(/\s+/g,' ').trim();
   const page=await browser.newPage(),errors=[],results=[];page.on('pageerror',e=>errors.push(String(e)));
   const url=`http://127.0.0.1:${server.address().port}`;
   for(let index=0;index<models.length;index++)for(const width of [1100,390]){
-   const {grade,paper,model}=models[index];await page.setViewportSize({width,height:1400});await page.goto(url+'/?model='+index);await page.locator('.paper-sheet').first().waitFor();await page.evaluate(()=>document.fonts.ready);
+   const {grade,paper,model,modelNumber}=models[index],suffix=modelNumber?`-model${modelNumber}`:'';await page.setViewportSize({width,height:1400});await page.goto(url+'/?model='+index);await page.locator('.paper-sheet').first().waitFor();await page.evaluate(()=>document.fonts.ready);
    // Wait until all selected task numbers have reached the visible sheets.
    const count=model.items.flatMap(q=>q.englishGroup.tasks).length;
    await page.waitForFunction(n=>[...document.querySelectorAll('.paper-sheet .english-question-heading')].filter(e=>e.textContent.trim()).length>=n,count);
-   const text=normalize((await page.locator('.paper-sheet .paper-question').allTextContents()).join(' '));fs.writeFileSync(path.join(out,`text-${grade}-${paper}-${width}.txt`),text);
+   const text=normalize((await page.locator('.paper-sheet .paper-question').allTextContents()).join(' '));fs.writeFileSync(path.join(out,`text-${grade}-${paper}${suffix}-${width}.txt`),text);
    for(const q of model.items){for(const p of q.englishGroup.passages)for(const line of p.text.split('\n').filter(l=>l.trim()))assert.ok(text.includes(normalize(line)),`${grade}/${paper}: lost passage ${p.key}: ${line}`);
     for(const t of q.englishGroup.tasks){
      assert.ok(text.includes(normalize(t.instruction.split('\n')[0].replace(/^Writing task\s*\([^)]*\)\.\s*Topic:\s*/i,''))),`${grade}/${paper}: lost instruction ${t.id}`);
@@ -45,15 +48,15 @@ const normalize=s=>s.replace(/\s+/g,' ').trim();
    const overflow=await page.locator('.paper-sheet').evaluateAll(sheets=>sheets.some(sheet=>{const r=sheet.getBoundingClientRect();return [...sheet.querySelectorAll('.paper-question')].some(q=>q.getBoundingClientRect().bottom>r.bottom+1)}));
    assert.equal(overflow,false,`${grade}/${paper}/${width}: question crosses page bottom`);
    assert.equal(await page.locator('.paper-sheet .english-mark-formula').count(),count,`${grade}/${paper}: every task needs visible marks`);
-   const file=`class${grade}-paper${paper}-${width}`;
+   const file=`class${grade}-paper${paper}${suffix}-${width}`;
    await page.pdf({path:path.join(out,file+'.pdf'),format:'A4',printBackground:true,preferCSSPageSize:true});
    const pdf=await require('pdf-lib').PDFDocument.load(fs.readFileSync(path.join(out,file+'.pdf')));assert.ok(pdf.getPageCount()>0);assert.ok(fs.statSync(path.join(out,file+'.pdf')).size>10000,'PDF must contain actual printed content');
-   if([7,8,11].includes(grade)&&paper===1&&width===1100)await page.locator('.paper-sheet').first().screenshot({path:path.join(out,file+'.png')});
-   results.push({grade,paper,width,pages:pdf.getPageCount()});
+   if(width===1100&&(expansion||([7,8,11].includes(grade)&&paper===1)))await page.locator('.paper-sheet').first().screenshot({path:path.join(out,file+'.png')});
+   results.push({grade,paper,...(modelNumber?{modelNumber}:{}),width,pages:pdf.getPageCount()});
   }
   for(let index=0;index<models.length;index++){
    await page.setViewportSize({width:1100,height:1400});await page.goto(url+'/?model='+index+'&landscape=1');await page.locator('.paper-sheet').first().waitFor();
-   const {model,grade,paper}=models[index],count=model.items.flatMap(q=>q.englishGroup.tasks).length;
+   const {model,grade,paper,modelNumber}=models[index],suffix=modelNumber?`-model${modelNumber}`:'',count=model.items.flatMap(q=>q.englishGroup.tasks).length;
    await page.waitForFunction(n=>[...document.querySelectorAll('.paper-sheet .english-question-heading')].filter(e=>e.textContent.trim()).length>=n,count);
    const t=normalize((await page.locator('.paper-sheet .paper-question').allTextContents()).join(' '));
    for(const item of model.items)for(const task of item.englishGroup.tasks)assert.ok(t.includes(normalize(task.instruction.split('\n')[0].replace(/^Writing task\s*\([^)]*\)\.\s*Topic:\s*/i,''))),'Landscape booklet must retain every task');
@@ -68,10 +71,10 @@ const normalize=s=>s.replace(/\s+/g,' ').trim();
     }
     const style=document.createElement('style');style.textContent='@media print{@page{size:297mm 210mm;margin:0}#root{display:none!important}body.booklet-print .booklet-output{display:block!important}.booklet-imposed{break-after:page!important}.booklet-imposed:last-child{break-after:auto!important}.booklet-imposed .paper-sheet{break-after:auto!important;page-break-after:auto!important}}';document.body.append(output,style);document.body.classList.add('booklet-print');
    },order);
-   const pdfPath=path.join(out,`class${grade}-paper${paper}-booklet.pdf`);
+   const pdfPath=path.join(out,`class${grade}-paper${paper}${suffix}-booklet.pdf`);
    await page.pdf({path:pdfPath,printBackground:true,preferCSSPageSize:true});
    const pdf=await require('pdf-lib').PDFDocument.load(fs.readFileSync(pdfPath));assert.ok(pdf.getPages().every(p=>p.getWidth()>p.getHeight()));assert.equal(pdf.getPageCount(),order.length);
   }
-  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'receipt.json'),JSON.stringify({ok:true,desktopMobile:results,landscapeModels:12,providerCalls:0,limitations:'Real renderer with local prepared data; not authenticated live UI or physical printing.'},null,2));console.log(fs.readFileSync(path.join(out,'receipt.json'),'utf8'));
+  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'receipt.json'),JSON.stringify({ok:true,desktopMobile:results,landscapeModels:models.length,providerCalls:0,limitations:'Real renderer with local prepared data; not authenticated live UI or physical printing.'},null,2));console.log(fs.readFileSync(path.join(out,'receipt.json'),'utf8'));
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});

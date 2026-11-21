@@ -356,6 +356,24 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         assert.equal(await db.setting.count({ where: { key: { startsWith: "mcqimport:v1:" } } }), 2);
         phase = "admin_mcq_overflow";
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
+        // Real authenticated catalog routing, not just pure registry availability.
+        // Browsing the new review drafts must not import or approve anything.
+        const englishBefore = await db.setting.count({where:{key:{startsWith:"english-item:v1:"}}});
+        for (const grade of [6, 7]) {
+          phase = `admin_junior_paper2_catalog_${grade}`;
+          await page.setViewportSize({width:390,height:844});
+          await page.goto(origin + `/admin/questions/import?category=Class%20${grade}&subject=English%202nd%20Paper&grade=${grade}`, {waitUntil:"networkidle"});
+          const section = page.locator("#english-question-items");
+          await section.getByRole("heading",{name:`Class ${grade} · English 2nd Paper — Question Item`,exact:true}).waitFor();
+          assert.equal(await section.locator(":scope > details").count(),40);
+          assert.equal(await section.locator("summary").filter({hasText:new RegExp(`class${grade}-paper2-authored-model-0[2-5]`)}).count(),32);
+          assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2));
+          assert.equal(await db.setting.count({where:{key:{startsWith:"english-item:v1:"}}}),englishBefore);
+          phase = `admin_junior_paper2_review_${grade}`;
+          await page.goto(origin + `/admin/questions?category=Class%20${grade}&subject=English%202nd%20Paper&grade=${grade}&status=pending`,{waitUntil:"networkidle"});
+          await page.locator("#english-question-items").getByRole("heading",{name:`Class ${grade} · English 2nd Paper — Question Item`,exact:true}).waitFor();
+          assert.equal(await db.setting.count({where:{key:{startsWith:"english-item:v1:"}}}),englishBefore);
+        }
       }
       phase = `${role.toLowerCase()}_browser_runtime_clean`;
       if (errors.length) {

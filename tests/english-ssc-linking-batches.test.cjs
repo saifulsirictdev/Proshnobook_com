@@ -135,7 +135,7 @@ test('All 102 passages print once, preserve five-gap/continuous structure and is
 test('Admin exposes snapshots for both new item types; changed-word questions identify adapted practice in printable instructions',()=>{
  const admin=fs.readFileSync(path.join(root,'app/admin/questions/english-items.tsx'),'utf8');
  assert.match(admin,/\["transformation","tags","affixes","prepositions","connectors","punctuation"\]\.includes\(t.id\)/);
- assert.match(admin,/card.record\?\.review \?\? \[\.\.\.preparedSSCGrammarEntries, \.\.\.preparedSSCLinkingEntries\]/);
+ assert.match(admin,/card.record\?\.review \?\? \("review" in card \? card.review : undefined\) \?\? \[\.\.\.preparedSSCGrammarEntries, \.\.\.preparedSSCLinkingEntries\]/);
  for(const b of batches)for(const e of b.items){
   if(e.editorialChanges.some(c=>c.reason!=='Normalise gap spacing without changing words.'))assert.ok(e.instruction.startsWith('Source-backed adapted practice.'));
  }

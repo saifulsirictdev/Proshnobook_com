@@ -4,7 +4,7 @@ import { preparedSSCGrammarEntries } from "@/lib/english/prepared-ssc-grammar";
 import verbs from "@/lib/english/data/ssc-paper2-verbs-review.json";
 import substitution from "@/lib/english/data/ssc-paper2-substitution-review.json";
 import gapClues from "@/lib/english/data/ssc-paper2-gap-clues-review.json";
-import { preparedEnglishItems, englishItemsDigest } from "@/lib/english/prepared-items";
+import { preparedEnglishImportItems as preparedEnglishItems, englishImportItemsDigest as englishItemsDigest } from "@/lib/english/prepared-import-items";
 import { englishAdminHref } from "@/lib/english/admin-scope";
 import type { EnglishGrade, EnglishPaper } from "@/lib/english/blueprints";
 import { createHash } from "node:crypto";
@@ -34,6 +34,7 @@ export default async function EnglishQuestionItems({review = false, status = "al
   const cards = review ? rows.map(row => {try {const record=JSON.parse(row.value);return {key:row.key,draft:validateEnglishDraft(record.draft),record};}catch{return null;}}).filter(c => c !== null && c.draft.selection.grade===grade && c.draft.selection.paper===paper && (status==="all" || c.record.status===status.toUpperCase())) : prepared.map(p => ({...p,record:(()=>{try{return JSON.parse(stored.get(p.key)??"null");}catch{return {status:"INVALID — পুনরায় review প্রয়োজন"};}})()}));
   return <section id="english-question-items" className="space-y-4 rounded-xl border bg-white p-4">
     <h2 className="text-xl font-bold">Class {grade} · English {paper===1?"1st":"2nd"} Paper — Question Item</h2>
+    {paper===2 && (grade===6 || grade===7) && <p className="rounded border border-amber-200 bg-amber-50 p-3">নতুন authored practice ব্যাচ: আগের ১টির সঙ্গে প্রতি item-এ আরও ৪টি স্বতন্ত্র সেট প্রস্তুত—এখন প্রতি item-এ মোট ৫টি, ৫০টি নয়। নতুন ব্যাচে এই শ্রেণির ৩২টি group আছে। এগুলো নিজে থেকে import/Approved/লাইভ হয় না; প্রস্তাবিত উত্তর স্বাধীন শিক্ষক দিয়ে যাচাই করা বাকি। নিচে preview করে শুধু Pending-এ পাঠাতে পারবেন।</p>}
     <p role="status" className="rounded border p-3">{readiness.draft ? "পূর্ণ মডেল তৈরির সব প্রয়োজনীয় অনুমোদিত item পাওয়া গেছে।" : `পূর্ণ মডেলে ঘাটতি: ${missing.join(" · ")}`} একই যাচাই ইউজারের মডেল তৈরিতেও ব্যবহৃত হয়।</p>
     {invalid.length>0 && <p role="alert">{invalid.length}টি সংরক্ষিত record-এর প্রশ্ন–উত্তরের গঠন যাচাই হয়নি; Approved লেখা থাকলেও মডেলে ব্যবহার করা হবে না। Record: {invalid.join(", ")}</p>}
     <ol className="list-inside list-decimal">{blueprint.items.map(item=><li key={item.id}>{item.title} — {item.marks} নম্বর</li>)}</ol>
@@ -78,8 +79,8 @@ export default async function EnglishQuestionItems({review = false, status = "al
       </details>}
       {paper===2 && card.draft.output.tasks.some(t=>["transformation","tags","affixes","prepositions","connectors","punctuation"].includes(t.id)) && <details className="rounded border p-2">
         <summary>মূল উৎস, উত্তর, adaptation ও সংশোধনের সম্পূর্ণ review snapshot</summary>
-        <p>Source-backed adapted practice; official answer key নয়। Web practice-এ অজানা board/school/year বসানো হয়নি। মূল ১০/১৪-gap থেকে পাঁচটি রাখলে বাকি filled answers-ও মিলিয়ে দেখুন।</p>
-        <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? [...preparedSSCGrammarEntries, ...preparedSSCLinkingEntries].find(e=>card.draft.name.startsWith(e.id)),null,2)}</pre>
+        <p>{grade===6 || grade===7 ? "Original authored practice; কোনো board/school প্রশ্নের transcription বা official answer key নয়। পূর্ণ প্রশ্ন, proposed answer ও editorial check মিলিয়ে শিক্ষক review করুন।" : "Source-backed adapted practice; official answer key নয়। Web practice-এ অজানা board/school/year বসানো হয়নি। মূল ১০/১৪-gap থেকে পাঁচটি রাখলে বাকি filled answers-ও মিলিয়ে দেখুন।"}</p>
+        <pre className="whitespace-pre-wrap break-words text-sm">{JSON.stringify(card.record?.review ?? ("review" in card ? card.review : undefined) ?? [...preparedSSCGrammarEntries, ...preparedSSCLinkingEntries].find(e=>card.draft.name.startsWith(e.id)),null,2)}</pre>
       </details>}
       {paper===2 && card.draft.output.tasks.some(t=>["paragraph","letter-email","composition"].includes(t.id)) && <details className="rounded border p-2">
         <summary>Writing: মূল prompt/topic, সম্পূর্ণ sample answer ও source snapshot</summary>
