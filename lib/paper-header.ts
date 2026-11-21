@@ -70,6 +70,13 @@ export const paperHeaderSchema = z.object({
     // independently prepared papers (or let one grade rewrite another header).
     .default(() => structuredClone(baseFields)),
 });
+// Optional default-header presentation data; old header schema and stock stay unchanged.
+const defaultHeaderText = z.string().max(2000);
+export const defaultPaperHeaderSchema = z.object({
+  enabled:z.boolean(),
+  // Missing means automatic; an explicit empty string is an intentional edit.
+  overrides:z.object({institute:defaultHeaderText.optional(),exam:defaultHeaderText.optional(),className:defaultHeaderText.optional(),subject:defaultHeaderText.optional(),time:defaultHeaderText.optional(),fullMarks:defaultHeaderText.optional()}).strict(),
+}).strict();
 export type PaperHeaderConfig = z.infer<typeof paperHeaderSchema>;
 export const newHeader = () => paperHeaderSchema.parse({});
 const maps = {
@@ -104,6 +111,7 @@ export function applyHeader(
     info: { ...s.info },
     show: { ...s.show },
     header: { ...header, enabled: true },
+    ...(s.defaultHeader ? {defaultHeader:{...s.defaultHeader,enabled:false}} : {}),
   };
   for (const [key, [info, show]] of Object.entries(maps)) {
     const field = header.fields[key as HeaderKey];

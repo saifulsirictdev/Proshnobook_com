@@ -171,7 +171,7 @@ test('Original builder adapter preserves linked English passages, structured tab
 });
 test('English build route uses the original builder, isolates general storage and retains owned draft checks',()=>{
  const page=fs.readFileSync('app/question-builder/build/page.tsx','utf8');assert.match(page,/<EnglishLegacyBuilder/);assert.doesNotMatch(page,/<EnglishEditor/);
- const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder english=/);assert.match(wrapper,/saveEnglishPaper\(draftKey/);
+ const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder\s+english=/);assert.match(wrapper,/saveEnglishPaper\(\s*draftKey/);
  const builder=fs.readFileSync('components/qb-builder.tsx','utf8');assert.match(builder,/if \(!ready \|\| purchased \|\| english\) return/);assert.match(builder,/loadEnglishPaper\(english.key\)/);assert.match(builder,/!purchased && !english && <WalletCheckout/);
 });
 test('Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle',()=>{

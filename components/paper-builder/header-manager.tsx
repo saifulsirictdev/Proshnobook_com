@@ -16,6 +16,7 @@ import {
 } from "@/lib/paper-header";
 import type { PaperSettings } from "@/lib/paper-builder";
 import HeaderPreview from "./header-preview";
+import {withDefaultHeader} from "@/lib/default-paper-header";
 const input =
   "w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-green-500";
 export default function HeaderManager({
@@ -293,11 +294,11 @@ export default function HeaderManager({
             </span>
             <button
               onClick={() =>
-                update({ ...s, header: { ...s.header, enabled: false } })
+                update(withDefaultHeader(s,true))
               }
               className="underline"
             >
-              আগের সাধারণ হেডারে ফিরুন
+              ডিফল্ট হেডারে ফিরুন
             </button>
           </div>
         )}
