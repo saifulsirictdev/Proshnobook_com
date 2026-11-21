@@ -1,0 +1,286 @@
+{
+  "status": "MODEL_ALIGNED_DRAFT_TEACHER_REVIEW_REQUIRED",
+  "category": "Class 8",
+  "subject": "English 2nd Paper",
+  "sourceFolderId": "1hDrKL99fqj_Z5ocITftlhbrVEIMuUxOK",
+  "total": 440,
+  "topicCount": 11,
+  "teacherApproved": false,
+  "storagePolicy": "ADMIN preview → explicit consent → Pending only → teacher review. No automatic import or approval.",
+  "limitations": [
+    "440 exercise sets across 11 catalog topics, not 440 full papers or a guarantee of complete official syllabus coverage.",
+    "Supplied model PDF and scanned 2026 Class Eight grammar textbook contents checked; no independent official marks circular verified.",
+    "Raw Drive JSON bytes retained unchanged. Website uses explicit locally authored adaptations from syllabus-revisions.json; edited questions and keys are not represented as verbatim source extracts.",
+    "Ordinary question-bank SQ imports, not certified structured Auto Model stock. Alternatives, source rights and age suitability remain subject to final teacher review.",
+    "Display-only normalization of literal backslash-n and the multiplication glyph; full original per-entry page references are retained as raw provenance, not attribution for new wording."
+  ],
+  "entries": [
+    {
+      "id": "class8-english2-gap-clues-drive-v1",
+      "file": "gap-clues.json",
+      "fileId": "1U_MLdAXt5aA-GnNaB50LPJl3dbgt66kM",
+      "fileName": "questions-DRAFT-v004.json",
+      "validationFileId": "1IEAYloVOixuBqwbf93Y96rBEHcN5H-Oq",
+      "sha256": "d6fbfbd7fb9d231868d2c43265528986ec802a2a96298cb07ab5bd4793245814",
+      "count": 40,
+      "topic": "Section A - Ques 1: Gap Filling Activities with/without Clues (Parts of Speech, Use of Articles, Preposition etc.)",
+      "limitations": [
+        "5 model-derived plus 35 original raw exercises; wording repairs are explicit local adaptations. All ten-gap passages are WITHOUT clues, as allowed by the supplied model. Answers are suggestions, not exhaustive."
+      ],
+      "revisedEntries": [
+        1,
+        2,
+        5,
+        12
+      ]
+    },
+    {
+      "id": "class8-english2-substitution-drive-v1",
+      "file": "substitution.json",
+      "fileId": "1uS53l7fZtvIrfP1IjyefaYXQX0jsp0T7",
+      "fileName": "questions-DRAFT-v002.json",
+      "validationFileId": "1MCagaR3HPLrmayCv76PdTvVW968GMCKu",
+      "sha256": "e0a83e21a4bb18eac6704309f17215304838a117af82347ee7e0161047d63c85",
+      "count": 40,
+      "topic": "Section A - Ques 2: Substitution Table",
+      "limitations": [
+        "Eight four-sentence raw exercises replaced by five-sentence authored adaptations; one additional wording correction. All 40 tables now have five reconstructible answers. Alternative meaningful combinations may be accepted."
+      ],
+      "revisedEntries": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        31
+      ]
+    },
+    {
+      "id": "class8-english2-verbs-drive-v1",
+      "file": "verbs.json",
+      "fileId": "1vInRG171-p5JIei2-C3NHiz4z6sHZHXE",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1UVpewz0KZ4VhNZWaM04eW2aPKs8dKMhV",
+      "sha256": "11372abc9bfbb00a1cc93a438107b3bf409c7c5ee5a0db1adddf95e743e3d32f",
+      "count": 40,
+      "topic": "Section A - Ques 3: Right Form of Verbs",
+      "limitations": [
+        "Three raw model-derived and 37 original exercises. The problematic preservation/death passage is replaced with an authored five-gap observation passage. Source model pp.12 and 17 defects are not imported."
+      ],
+      "revisedEntries": [
+        2
+      ]
+    },
+    {
+      "id": "class8-english2-narration-drive-v1",
+      "file": "narration.json",
+      "fileId": "1rFpsHh_DEMtTmg2QXqHb6vPC7-hmU0Yz",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1QEcMTyUF57UKGGz9_DF9tm2-kuw6qu59",
+      "sha256": "52b3e9949df4bb48384db99b6454c03e6852f70d39c15d22795b020bb420226f",
+      "count": 40,
+      "topic": "Section A - Ques 4: Passage Narration",
+      "limitations": [
+        "Three raw model-derived and 37 original dialogues; reporting variants may differ with context. Entry 30 reporting pronoun clarified locally."
+      ],
+      "revisedEntries": [
+        30
+      ]
+    },
+    {
+      "id": "class8-english2-transformation-drive-v1",
+      "file": "transformation.json",
+      "fileId": "1QQd0Xxd38SCrWGVKWwJPd5djQW9kQUn_",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1_McdbOGk4wOCaClIbyLo3plYd-zIWviu",
+      "sha256": "378ba69c94a94ebc4cc85a0de4d297bb40b057521c842ac331717f93a546a5c9",
+      "count": 40,
+      "topic": "Section A - Ques 5: Changing Sentences (Affirmative, Negative, Assertive, Interrogative, Optative, Imperative, Exclamatory, Voice & Degrees of Comparison)",
+      "limitations": [
+        "Five-part sets with explicit local repairs for meaning, subjects and modality. School rhetorical interrogatives and inclusive imperatives remain conventional transformations rather than formal logical equivalence.",
+        "Raw abbreviated topic maps to the existing full Changing Sentences catalog topic."
+      ],
+      "originalTopic": "Section A - Ques 5: Changing Sentences",
+      "revisedEntries": [
+        2,
+        7,
+        11,
+        25,
+        29,
+        39
+      ]
+    },
+    {
+      "id": "class8-english2-punctuation-drive-v1",
+      "file": "punctuation.json",
+      "fileId": "1xj0a90a0mAarXHiG2Nzikh1cjt7E3kBR",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1KABfnpjk8DFGZFA8NazooGN_iqnW00ki",
+      "sha256": "e88fc00e865914febf8b3241f83b1fe6376d61977c9fe838124ecc522269e949",
+      "count": 40,
+      "topic": "Section A - Ques 6: Punctuation & Capitalization",
+      "limitations": [
+        "Forty continuous passages adapted to ten recorded punctuation/case correction positions each. 37 dialogues reused from narration; not independently new source passages."
+      ],
+      "revisedEntries": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "class8-english2-formal-letter-drive-v1",
+      "file": "formal-letter.json",
+      "fileId": "1AwRBYb2oXO2uH_HnXCGxRiIFVvXotLiG",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1UZNHEoIonjTZDdmF2BiPTB4s32mha_pu",
+      "sha256": "460b142df5f65fef9af5457165401613dc08e66661837cf13ff5c939125e60d8",
+      "count": 40,
+      "topic": "Section B - Ques 7: Writing Formal Letter",
+      "limitations": [
+        "Two model-derived plus 38 original practice scenarios in the raw draft. Sample dates, names and school details are hypothetical prompt context, not exam-source metadata."
+      ],
+      "revisedEntries": []
+    },
+    {
+      "id": "class8-english2-informal-letter-drive-v1",
+      "file": "informal-letter.json",
+      "fileId": "1bOUVebj3mxv0fYNU41lYqZ74jd_Y-6eM",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "176QdgFS4yriod2cBuwYuThLzQfcvqxa7",
+      "sha256": "bf7f718c578dd5782900d742524cb757f96572377f85d43993522bcc1080131f",
+      "count": 40,
+      "topic": "Section B - Ques 7 (Or): Writing Informal Letter",
+      "limitations": [
+        "Thirty guide-heading-inspired plus ten original practice prompts. Sample letters use hypothetical personal details; not source transcriptions."
+      ],
+      "revisedEntries": []
+    },
+    {
+      "id": "class8-english2-formal-email-drive-v1",
+      "file": "formal-email.json",
+      "fileId": "1LoZfGQvAkTkm12YUfAXX79MwOvtRS-9Z",
+      "fileName": "questions-DRAFT-v001.json",
+      "validationFileId": "1d6VReEMB3r2RcnD7tSadNDxqOBCkG7yA",
+      "sha256": "7d9cdaadfba0389df5de81f8bc66852620be11b37acf2bded1e45901001a0304",
+      "count": 40,
+      "topic": "Section B - Ques 7 (Or): Writing Formal E-mail",
+      "limitations": [
+        "15 guide-heading-inspired prompts plus 25 scenarios adapted from formal-letter practice. Reserved example.com addresses are illustrative, not real recipients."
+      ],
+      "revisedEntries": []
+    },
+    {
+      "id": "class8-english2-informal-email-drive-v1",
+      "file": "informal-email.json",
+      "fileId": "1Qp5vv-KnXSPLoJZrnK77FSvZeM4HC8a7",
+      "fileName": "questions-DRAFT-v002.json",
+      "validationFileId": "1yHntXzaG6WdzfxkQK7ir8FEB_JPtylqT",
+      "sha256": "e49acaed09e4f6340d66b901f1923c623168025975f0ecd6e394e2d9db4c1422",
+      "count": 40,
+      "topic": "Section B - Ques 7 (Or): Writing Informal E-mail",
+      "limitations": [
+        "Two model-derived prompts plus 38 adapted letter scenarios. Reserved example.com addresses and sample names are illustrative."
+      ],
+      "revisedEntries": []
+    },
+    {
+      "id": "class8-english2-composition-drive-v1",
+      "file": "composition.json",
+      "fileId": "1mtLT_vKoJ4C0Vq0vBFOVODd3ou66b7TV",
+      "fileName": "questions-DRAFT-v002.json",
+      "validationFileId": "13v9PHqUW1RAyej_SRzPwdetrR-rjuWlt",
+      "sha256": "de84e030eafed9f090b71cd4c0bebfc48090d7d8090e5982cbe7482b68d2aad3",
+      "count": 40,
+      "topic": "Section B - Ques 8: Writing Short Composition",
+      "limitations": [
+        "Forty original raw samples were 183–222 body words; each is now expanded with locally authored topic-specific prose to approximately 250 words (242–258 body words). Imagined accounts are illustrative, not attributed reporting."
+      ],
+      "revisedEntries": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    }
+  ],
+  "revisionFile": "syllabus-revisions.json",
+  "revisionSha256": "174be3f90b3642fb16a6c239278cc155a63dfc5d7538ba55f6f574d4679e9cd6",
+  "revisionCount": 101
+}
