@@ -198,12 +198,14 @@ fs.writeFileSync(
       await editor.screenshot({
         path: path.join(out, "editor-" + width + ".png"),
       });
+      // A previous iteration explicitly emulates screen media: switch back
+      // before PDF generation, not only before checking control visibility.
+      await page.emulateMedia({ media: "print" });
+      assert.equal(await editor.isVisible(), false);
       await page.pdf({
         path: path.join(out, "paper-" + width + ".pdf"),
         printBackground: true,
       });
-      await page.emulateMedia({ media: "print" });
-      assert.equal(await editor.isVisible(), false);
       await page.emulateMedia({ media: "screen" });
       await page.locator("#custom").click();
       assert.equal(
