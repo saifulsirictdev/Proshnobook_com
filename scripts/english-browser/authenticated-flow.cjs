@@ -179,11 +179,13 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
  const other=await context.browser().newContext();
  try{
   await other.route('**/*',route=>route.request().url().startsWith(origin+'/')?route.continue():route.abort());
-  const p=await other.newPage();await p.goto(origin+'/login',{waitUntil:'networkidle'});
+  const p=await other.newPage();await p.goto(origin+'/login?next=/dashboard',{waitUntil:'networkidle'});
   await p.locator('input[name="email"]').fill('english-other@example.invalid');
   await p.locator('input[name="password"]').fill(testPassword);
   await p.locator('.qm-login-primary').click();
   await p.waitForURL(origin+'/dashboard',{waitUntil:'networkidle'});
+  const otherSession=await(await other.request.get(origin+'/api/auth/session')).json();
+  assert.equal(otherSession.user.id,'english-other');assert.equal(otherSession.user.role,'TEACHER');
   const response=await p.goto(origin+'/question-builder/build?englishKey='+encodeURIComponent(teacherKey),{waitUntil:'networkidle'});
   assert.equal(response.status(),404);
  }finally{await other.close();}
