@@ -19,9 +19,12 @@ export default function PreparationPopup({
   error,
   children,
   databaseOnly = false,
+  neutralBranding = false,
 }: {
   subject: string;
   databaseOnly?: boolean;
+  /** Same calm presentation for bank selection and automatic preparation. */
+  neutralBranding?: boolean;
   stage?: number;
   progress?: number;
   error?: string;
@@ -54,7 +57,7 @@ export default function PreparationPopup({
     >
       <div className="prep-badge">
         <Sparkles size={19} />
-        {BRAND.nameEn}{databaseOnly ? "" : " AI"}
+        {BRAND.nameEn}{databaseOnly || neutralBranding ? "" : " AI"}
       </div>
       <div className="prep-art" aria-hidden="true">
         <div className="prep-ring" />

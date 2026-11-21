@@ -54,3 +54,7 @@ test("real progress and failure are displayed; animation supports reduced motion
   assert.match(css, /100dvh/);
   assert.match(css, /prep-scan/);
 });
+test('neutral preparation branding does not mislabel automatic work as database-only or completed',()=>{
+ const s=html({subject:'English',databaseOnly:false,neutralBranding:true});
+ assert.match(s,/Proshnobook/);assert.doesNotMatch(s,/Proshnobook AI/);assert.doesNotMatch(s,/value="/);
+});
