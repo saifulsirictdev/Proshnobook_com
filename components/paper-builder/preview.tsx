@@ -1,5 +1,5 @@
 "use client";
-import { englishFlowBlocks } from "@/lib/english/flow-blocks";
+import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -76,7 +76,7 @@ export default function PaperPreview({
   previewScale?: number;
   mode?: "questions" | "answers" | "omr";
 }) {
-  const expand = (list:PreviewQuestion[]) => list.flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
+  const expand = (list:PreviewQuestion[]) => withEnglishPartHeadings(list).flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
   const questions = useMemo(()=>expand(originalQuestions),[originalQuestions]);
   const sections = useMemo(()=>originalSections?.map(section=>({...section,questions:expand(section.questions)})),[originalSections]);
   const [flowPages, setFlowPages] = useState<FlowSegment[][]>([]);

@@ -1,5 +1,17 @@
 import { isEnglishPassageCloze } from "./cloze-layout";
 import type { PaperItem } from "../paper-builder";
+/** Recompute headings AFTER exclusions/reordering, so removing question 1 cannot
+ * remove Part A. Part letters come from the blueprint, not the selected subset. */
+export function withEnglishPartHeadings<T extends {q: PaperItem}>(items: T[]): T[] {
+  const seen = new Set<string>();
+  return items.map(item => {
+    const group = item.q.englishGroup;
+    if (!group?.part) return item;
+    const partHeading = seen.has(group.part.id) ? undefined : group.part.title;
+    seen.add(group.part.id);
+    return {...item, q: {...item.q, englishGroup: {...group, partHeading}}};
+  });
+}
 /** Layout fragments only: the saved question set/passage relationships remain untouched. */
 export function englishFlowBlocks(q:PaperItem):PaperItem[] {
   const group=q.englishGroup;
@@ -32,5 +44,5 @@ export function englishFlowBlocks(q:PaperItem):PaperItem[] {
       blocks.push({fragment:true,continued:tables.length>0,passages:[],tasks:[{...task,table:undefined,clues:tables.length?undefined:task.clues}]});
     }
   }
-  return blocks.map((englishGroup,i)=>({...q,id:`${q.id}:flow:${i}`,text:q.text===group.tasks.map(t=>t.instruction).join("\n")?englishGroup.tasks.map(t=>t.instruction).join("\n"):i===0?q.text:englishGroup.tasks.map(t=>t.instruction).join("\n"),englishGroup:{...englishGroup,attachmentId:i===0?q.id:undefined}}));
+  return blocks.map((englishGroup,i)=>({...q,id:`${q.id}:flow:${i}`,text:q.text===group.tasks.map(t=>t.instruction).join("\n")?englishGroup.tasks.map(t=>t.instruction).join("\n"):i===0?q.text:englishGroup.tasks.map(t=>t.instruction).join("\n"),englishGroup:{...englishGroup,part:group.part,partHeading:i===0?group.partHeading:undefined,attachmentId:i===0?q.id:undefined}}));
 }

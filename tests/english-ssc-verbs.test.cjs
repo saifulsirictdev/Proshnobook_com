@@ -110,8 +110,8 @@ test('All 51 verb exercises print prompt, verb box then passage once, with no du
   const paper=englishLegacyPaper(p.draft),blocks=paper.items.flatMap(englishFlowBlocks);assert.equal(blocks.length,1);const q=blocks[0],t=q.englishGroup.tasks[0];
   assert.equal(t.subitems.length,10);assert.deepEqual(englishFlowBlocks(q),[q]);
   const html=renderToStaticMarkup(React.createElement(C,{q,s:paper.settings,answers:false}));
-  assert.doesNotMatch(html,/Fill gap|Answer:/);assert.ok(html.indexOf('Complete the following')<html.indexOf('border p-2'));assert.equal((html.match(/\([a-j]\) ____/g)||[]).length,10);
-  const key=renderToStaticMarkup(React.createElement(C,{q,s:paper.settings,answers:true,questions:false}));assert.doesNotMatch(key,/border p-2|Fill gap/);assert.equal((key.match(/<b>\([a-j]\)/g)||[]).length,10);
+  assert.doesNotMatch(html,/Fill gap|Answer:/);assert.ok(html.indexOf('Complete the following')<html.indexOf('aria-label="Word box"'));assert.equal((html.match(/\([a-j]\) ____/g)||[]).length,10);
+  const key=renderToStaticMarkup(React.createElement(C,{q,s:paper.settings,answers:true,questions:false}));assert.doesNotMatch(key,/english-clue-box|Fill gap/);assert.equal((key.match(/<b>\([a-j]\)/g)||[]).length,10);
  }
 });
 test('A newline and verb box alone do not hide independent contextual subquestions',()=>{

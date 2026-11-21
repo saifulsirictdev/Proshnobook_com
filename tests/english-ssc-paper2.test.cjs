@@ -94,8 +94,8 @@ test('Question print puts clue box before the cloze passage, suppresses duplicat
  const q={id:'cloze',text:task.instruction,englishGroup:{tasks:[task],passages:[]}};
  const s={attachments:{},cfg:{questionGap:0,optCols:2},show:{boardSource:true,marks:true}};
  const html=renderToStaticMarkup(React.createElement(C,{q,s,answers:false}));
- assert.ok(html.indexOf('Fill in the blanks')<html.indexOf('gentle · by'));
- assert.ok(html.indexOf('gentle · by')<html.indexOf('The Kaptai Lake'));
+ assert.ok(html.indexOf('Fill in the blanks')<html.indexOf('aria-label="Word box"'));
+ assert.ok(html.indexOf('aria-label="Word box"')<html.indexOf('The Kaptai Lake'));
  assert.doesNotMatch(html,/Fill gap|biggest|Answer:/);
- const key=renderToStaticMarkup(React.createElement(C,{q,s,answers:true,questions:false}));assert.match(key,/biggest/);assert.doesNotMatch(key,/The Kaptai Lake|gentle · by/);
+ const key=renderToStaticMarkup(React.createElement(C,{q,s,answers:true,questions:false}));assert.match(key,/biggest/);assert.doesNotMatch(key,/The Kaptai Lake|english-clue-box/);
 });
