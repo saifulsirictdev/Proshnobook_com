@@ -82,6 +82,7 @@ async function verifyAutoModels(db,plan=prepare()){
  const {validateEnglishOutput}=require(path.join(root,'lib/english/generation.ts'));
  const all=[...plan.items,...plan.readOnly],rows=await db.setting.findMany({where:{key:{in:all.map(p=>p.key)}}});
  const map=new Map(rows.map(r=>[r.key,r.value])),scopes=[];
+ if(rows.length!==all.length || all.some(p=>{try{const r=JSON.parse(map.get(p.key)||'null');return r?.status!=='APPROVED'||!expected(r,p);}catch{return true;}}))throw Error('Approved content differs from the frozen release manifest');
  for(const {grade,paper} of SCOPES){
   const targets=all.filter(p=>p.draft.selection.grade===grade&&p.draft.selection.paper===paper);
   const stock=targets.map(p=>approvedEnglishItem(map.get(p.key)||'',grade,paper));

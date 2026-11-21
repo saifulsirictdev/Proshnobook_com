@@ -49,5 +49,6 @@ test('Production verifier consumes actual DB record values, rejects missing keys
  // Use a live read over the fixture map, rather than the last transaction's copy.
  const db={setting:{findMany:async({where})=>[...f.store].filter(([k])=>where.key.in.includes(k)).map(([key,value])=>({key,value}))}};
  const r=await api.verifyAutoModels(db,plan);assert.equal(r.models,480);assert.equal(r.providerCalls,0);assert.equal(r.scopes.length,12);assert.ok(r.scopes.every(s=>s.missing===0));
- f.store.delete(plan.items[0].key);await assert.rejects(api.verifyAutoModels(db,plan));
+ const key=plan.items[0].key,original=f.store.get(key),altered=JSON.parse(original);altered.draft.name+=' altered';f.store.set(key,JSON.stringify(altered));await assert.rejects(api.verifyAutoModels(db,plan));
+ f.store.set(key,original);f.store.delete(key);await assert.rejects(api.verifyAutoModels(db,plan));
 });
