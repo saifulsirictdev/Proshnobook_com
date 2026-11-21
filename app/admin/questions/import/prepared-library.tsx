@@ -1,5 +1,5 @@
 "use client";
-import { englishCategoryGrades, englishCategoryLabel } from "@/lib/english/admin-scope";
+import { englishCategoryGrades, englishCategoryLabel, englishAdminPaperForSubject } from "@/lib/english/admin-scope";
 import {useActionState,useState,type ReactNode} from "react";
 import Link from "next/link";
 import {selectPreparedBatches,pendingReviewHref} from "@/lib/prepared-batch-selection";
@@ -65,8 +65,9 @@ export default function PreparedLibrary({catalog,batches,savedIds,englishItems,i
  const grades = englishCategoryGrades(category);
  const [chosenGrade,setChosenGrade] = useState(Number(initialGrade??6));
  const grade = grades.includes(chosenGrade as 6)?chosenGrade:grades[0];
- const paper2 = grades.some(g=>g===9||g===10) && ["English 2nd Paper","English Grammar and Composition"].includes(subject);
- const english = grades.length>0 && (subject === "English 1st Paper" || paper2);
+ const paper = englishAdminPaperForSubject(subject);
+ const paper2 = paper === 2;
+ const english = grades.length>0 && paper !== null;
  const selected=selectPreparedBatches(batches,{category,subject,topic});
  return <section className="space-y-4 rounded-2xl border bg-slate-50 p-5">
   <h2 className="text-2xl font-bold">অধ্যায়ভিত্তিক প্রস্তুত প্রশ্নব্যাচ</h2>

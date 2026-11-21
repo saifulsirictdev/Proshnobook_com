@@ -77,6 +77,7 @@ jobs:
           node scripts/pdf-browser-check.cjs
           node scripts/english-browser/class8-reference-check.cjs
           node scripts/english-browser/expanded-model-check.cjs
+          ENGLISH_BROWSER_SET=junior-expansion-01 node scripts/english-browser/expanded-model-check.cjs
           node scripts/paper-browser/default-header-check.cjs
       - name: Production build (no production credentials)
         run: npm run build

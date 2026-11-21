@@ -6,6 +6,12 @@ The owner extended the completed Class 8 Second Paper work to both papers for al
 
 The earlier Class 8 release is immutable and verification-only here. Its 440 structured rows and historical release script must not be replayed. No denied Drive source is retried.
 
+## Current release / follow-up status
+
+The bounded rollout below **has shipped**: PR #12 merged as `dc3e497cfb81028adfc271b4ad3fad6a35b9eeaa`; the successful receipt verified 1,144 targets (287 inserted/approved, 857 preserved), with 440 historical Class 8 items read-only. Ordinary production deployment followed without a permanent approval build hook. [Final release receipt](https://github.com/saifulsirictdev/Proshnobook_com/pull/12#issuecomment-7061732664).
+
+The table below describes that frozen historical registry, not all subsequent prepared material. [Junior Paper 2 expansion batch 01](junior-paper2-expansion-01.md) adds four original models per grade to a separate ADMIN import catalog. It does not enlarge/replay the historical release or automatically approve new content. The all-grade distinct-quantity target and independent teacher verification remain unfinished.
+
 ## Prepared inventory
 
 | Category / exact grade | Paper 1 atomic groups | Paper 2 atomic groups | Complete local assembly |
@@ -68,7 +74,7 @@ This script is **not** a permanent build hook. Production engine generation must
 - Production dependency audit: **0 vulnerabilities** (dev-inclusive installation previously reported one moderate advisory).
 - Real Chromium preview: all 12 exact scopes at desktop 1100px and mobile 390px produced nonempty PDFs with source/task/table retention, visible marks, no whole-answer leaks and no page-bottom question overflow. Twelve landscape models also passed padded booklet-imposition/PDF-page-count checks. The final run used the actual Tinos/Adorsho document fonts. Independent PyMuPDF extraction verified printed task-opening and source beginning/end phrases in all **36 PDFs**, not merely screen DOM or blank-PDF metadata.
 - Local webpack production build passed. Builds in the sandbox use the explicitly engine-less generated Prisma client only; deployment must generate real engines.
-- **No expanded production import, approval or deployment has yet been executed.** Authenticated live UI and physical duplex folding are not certified by the local renderer harness.
+- **Historical pre-release validation:** these local checks preceded the successful PR #12 rollout described above. Authenticated production-user UI and physical duplex folding are not certified by the local renderer harness.
 
 Do not describe the entire larger editorial request as completed while genuinely distinct quantity, independent teacher review, or physical printing remain unverified.
 
@@ -76,4 +82,4 @@ Do not describe the entire larger editorial request as completed while genuinely
 
 PR #11 passed PR and main CI and was merged. Its first production attempt stopped **during read-only preview, before the approval function was called**; the deployment was not promoted. Read-only diagnostics reported an existing-content mismatch. Investigation reproduced Zod's shallow default entries: changing one prepared model's header mutated the default field entries later used by other grades. The exact-content gate correctly refused to overwrite historical stock.
 
-`paperHeaderSchema` now creates deep-isolated default entries. The expanded manifest is re-frozen to the digest above; the historical Class 8 digest remains unchanged. No existing DB row is rewritten to make the check pass. `diagnose` reports only scope counts and mismatching field names, never question text, names or secrets. The corrective branch still requires fresh CI, read-only production diagnostics and exact-content preview before approval. Earlier 1,077-test and 36-PDF results belong to PR #11, not a claim that this correction has already shipped.
+`paperHeaderSchema` now creates deep-isolated default entries. The expanded manifest is re-frozen to the digest above; the historical Class 8 digest remains unchanged. No existing DB row is rewritten to make the check pass. `diagnose` reports only scope counts and mismatching field names, never question text, names or secrets. That corrective gate was subsequently completed in PR #12: CI, read-only production diagnostics, exact-content preview, bounded approval and ordinary deployment all succeeded (see final receipt above). The earlier 1,077-test and 36-PDF results were PR #11 evidence; they are retained here as history, not as a substitute for the later corrective checks.

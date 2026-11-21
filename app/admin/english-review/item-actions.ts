@@ -1,5 +1,5 @@
 "use server";
-import { preparedEnglishItems, englishItemsDigest } from "@/lib/english/prepared-items";
+import { preparedEnglishImportItems as preparedEnglishItems, englishImportItemsDigest as englishItemsDigest } from "@/lib/english/prepared-import-items";
 import { englishAdminGrade, englishAdminPaper } from "@/lib/english/admin-scope";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
