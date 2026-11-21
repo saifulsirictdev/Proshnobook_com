@@ -73,8 +73,9 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   await click(editor.locator('details').last().locator('summary'));
   await editor.getByRole('textbox',{name:`প্রশ্ন ${originalItems.length}`,exact:true}).fill(marker);
   await click(page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}));
-  await page.getByRole('textbox',{name:'সময় (মিনিট বা পূর্ণ বিবরণ)',exact:true}).fill('2 hours');
-  await page.getByRole('textbox',{name:'পূর্ণমান',exact:true}).fill(String(blueprint.total));
+  const metadata=page.locator('details').filter({has:page.getByText('Page Setup ও অতিরিক্ত সেটিংস',{exact:true})});
+  await metadata.getByRole('textbox',{name:'সময় (মিনিট বা পূর্ণ বিবরণ)',exact:true}).fill('2 hours');
+  await metadata.getByRole('textbox',{name:'পূর্ণমান',exact:true}).fill(String(blueprint.total));
   await click(page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}));
   await waitPaper(count);
   assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(marker));
