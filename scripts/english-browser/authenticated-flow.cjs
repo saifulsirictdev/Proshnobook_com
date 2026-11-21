@@ -92,7 +92,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   await waitPaper(count);await closeSettings();
   setPhase(label+'_reopen_saved_values');
   const reopened=await saved(key);assert.equal(reopened.updatedAt,stored.updatedAt,'Opening a draft must not write it');
-  assert.equal(await page.locator('#paper .default-header-institute').first().innerText(),institute);
+  assert.equal(await page.locator('#paper .paper-sheet .default-header-institute').first().innerText(),institute);
   assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(marker));
   setPhase(label+'_reopen_viewport');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Mobile controls must not widen the viewport');
