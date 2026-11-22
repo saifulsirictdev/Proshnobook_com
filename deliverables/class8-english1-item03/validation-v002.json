@@ -1,0 +1,24 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 50,
+  "target": 50,
+  "model_source_sets": 1,
+  "original_practice_sets": 49,
+  "websiteImported": false,
+  "teacherApproved": false,
+  "checks": {
+    "json_reparsed": true,
+    "count_50": true,
+    "eight_parts_each": true,
+    "unique_exact_prompts": true,
+    "unique_coherent_order_reviewed": false,
+    "semantic_overlap_reviewed": false,
+    "teacher_approved": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "Model Q9 uses eight shuffled parts; one sequence per set.",
+    "Several original themes repeat or overlap (library returns, school noticeboards, gardens); revise for stronger distinctness.",
+    "Automated count does not prove a single coherent order or confirm quality."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "count": 3,
+  "target": 50,
+  "remaining": 47,
+  "checks": {
+    "model_answer_continuation_at_least_ten_sentences": true,
+    "source_and_teacher_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "Three fictional original story prompts and sample continuations.",
+    "Model Test 01 Q11 asks for at least ten new sentences and a title."
+  ]
+}

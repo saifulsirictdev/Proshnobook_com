@@ -1,0 +1,17 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 50,
+  "target": 50,
+  "checks": {
+    "distinct_exact_prompts": true,
+    "minimum_continuation_sentences": 11,
+    "teacher_review": false,
+    "semantic_overlap_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "All 50 prompts and continuations are original fictional practice.",
+    "Model Test 01 Q11 requires a suitable title and at least ten new sentences.",
+    "Sentence counting is punctuation-based; teacher review required."
+  ]
+}

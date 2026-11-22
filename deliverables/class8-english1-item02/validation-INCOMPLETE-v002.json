@@ -1,0 +1,23 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "count": 17,
+  "target": 50,
+  "remaining": 33,
+  "source_model_questions": 2,
+  "original_practice": 15,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "all_two_columns": true,
+    "five_starts_per_set": true,
+    "exact_duplicate_prompts": false,
+    "alternative_matches_review": false,
+    "source_transcription_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "v002 follows model tests with two columns; website topic says three columns.",
+    "15 original sets contain six B options, while Model Test 01 has six and Model Test 03 has five.",
+    "Review distractors and alternative matches; some may form another plausible sentence. Source example UNICEF uses a simplified claim; verify factual and grammatical suitability."
+  ]
+}

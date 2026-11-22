@@ -1,0 +1,20 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 40,
+  "source_questions": 3,
+  "repurposed_item04_dialogues": 37,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "json_parse": true,
+    "exact_duplicate_text": false,
+    "exact_ten_corrections_checked": false,
+    "teacher_review": false,
+    "importer_tested": false
+  },
+  "caveats": [
+    "Original dialogues are repurposed from item 04, not independent new passages across topics.",
+    "Unpunctuated text can admit alternatives; punctuation count not standardized to ten.",
+    "Teacher must verify punctuation, source transcription, rights and display."
+  ]
+}

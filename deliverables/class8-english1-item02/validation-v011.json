@@ -1,0 +1,26 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "total_sets": 50,
+  "replaced_overlap_sets": [
+    21,
+    22,
+    26,
+    27,
+    30,
+    32,
+    33
+  ],
+  "checks": {
+    "five_A_six_B": true,
+    "keys_match_options_and_unique": true,
+    "semantic_uniqueness_independently_verified": false,
+    "teacher_review": false,
+    "importer_tested": false,
+    "website_imported": false
+  },
+  "notes": [
+    "Seven near-duplicate sets replaced. Remaining theme overlap still needs a full review.",
+    "Distractors are deliberately unrelated and may be too easy; grammar and pedagogy review required, particularly plural subjects.",
+    "Model and website catalog disagree on A/B versus A/B/C."
+  ]
+}

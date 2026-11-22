@@ -1,0 +1,23 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 40,
+  "subquestions_per_set": 5,
+  "original_sets": 38,
+  "copied_model_sets": 2,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "json_parse": true,
+    "five_parts_and_answers_per_question": true,
+    "exact_duplicate_question_sets": false,
+    "semantic_duplicate_review": false,
+    "teacher_review": false,
+    "importer_compatibility_tested": false
+  },
+  "caveats": [
+    "Patterns in original sets are repetitive; review pedagogical diversity and semantic overlap.",
+    "Review equivalence especially negative forms, rhetorical questions and imperative suggestions with shifted subject or modality.",
+    "Teacher verification of source transcription and source reuse rights required.",
+    "No independent grammatical review or importer compatibility test."
+  ]
+}

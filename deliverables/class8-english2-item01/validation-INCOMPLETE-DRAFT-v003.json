@@ -1,0 +1,23 @@
+{
+  "status": "INCOMPLETE_DRAFT",
+  "target": 40,
+  "total": 10,
+  "source_extracts": 5,
+  "original_authored": 5,
+  "remaining_to_40": 30,
+  "suggested_keys": 10,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "json_parse": true,
+    "labels_a_to_j_in_each": true,
+    "teacher_verified": false,
+    "source_visual_verified": false,
+    "semantic_duplicates_checked": false
+  },
+  "limitations": [
+    "All answers provisional; alternatives may exist. Source model language requires teacher review.",
+    "No website import or approval; not ready for import.",
+    "Additional authentic sources and 30 more questions required."
+  ]
+}

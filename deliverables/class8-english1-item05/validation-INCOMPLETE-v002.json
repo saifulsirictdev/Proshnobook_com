@@ -1,0 +1,16 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "count": 23,
+  "target": 50,
+  "remaining": 27,
+  "checks": {
+    "distinct_exact_prompts": true,
+    "minimum_continuation_sentences": 11,
+    "teacher_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "Original fictional prompts; Model Test 01 Q11 requires a title and at least ten new sentences.",
+    "Review story quality, sentence counts, age suitability and theme overlap."
+  ]
+}

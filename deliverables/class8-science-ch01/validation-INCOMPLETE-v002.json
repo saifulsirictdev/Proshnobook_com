@@ -1,0 +1,24 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "counts": {
+    "MCQ": 20,
+    "SQ": 12,
+    "CQ": 1
+  },
+  "targets": {
+    "MCQ_min": 121,
+    "SQ": 50,
+    "CQ_max": 50
+  },
+  "checks": {
+    "four_unique_options": true,
+    "exact_stem_unique": true,
+    "textbook_read": false,
+    "teacher_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "১২টি নতুন MCQ ও ৬টি সংক্ষিপ্ত প্রশ্ন অনলাইন সহায়ক উৎসের তথ্য অনুসরণে নিজস্ব ভাষায় তৈরি।",
+    "প্রাণীর বৈশিষ্ট্য, পাঠ্যবইয়ের সংস্করণ ও প্রশ্নের পুনরাবৃত্তি শিক্ষক যাচাই বাকি।"
+  ]
+}

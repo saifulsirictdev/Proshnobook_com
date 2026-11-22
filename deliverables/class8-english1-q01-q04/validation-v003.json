@@ -1,0 +1,27 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "sets_per_question": {
+    "Q1": 10,
+    "Q2": 10,
+    "Q3": 10,
+    "Q4": 10
+  },
+  "target_per_question": 50,
+  "remaining_per_question": 40,
+  "textbook_mirror": "https://drive.google.com/uc?export=download&id=1m7TlILofUr64YC61XBW96rhW0fvCI_dv",
+  "source_title_page": "Revised for the year 2026",
+  "source_caveat": "Preface retains reference to 2025, compare with supplied Drive textbook; ethnic source punctuation normalized after PDF extraction.",
+  "checks": [
+    "7 MCQs with four options per set",
+    "5 short answers per set",
+    "5 gaps and 5 vocabulary items per set",
+    "vocabulary words occur in second textbook excerpt",
+    "answers provided"
+  ],
+  "not_checked": [
+    "independent pedagogical review",
+    "rights clearance",
+    "importer compatibility",
+    "website import"
+  ]
+}

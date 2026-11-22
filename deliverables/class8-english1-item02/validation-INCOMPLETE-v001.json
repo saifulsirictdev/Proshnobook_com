@@ -1,0 +1,19 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "count": 15,
+  "target": 50,
+  "remaining": 35,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "five_rows_per_set": true,
+    "exact_duplicate_prompts": false,
+    "semantic_uniqueness_review": false,
+    "teacher_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "Three-column practice follows the website item; source Model Test 01 uses two columns.",
+    "A single intended key does not prove other grammatical or plausible combinations are impossible. Review all alternatives."
+  ]
+}

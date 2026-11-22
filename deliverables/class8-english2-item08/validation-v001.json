@@ -1,0 +1,20 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 40,
+  "guide_heading_inspired": 30,
+  "additional_original": 10,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "json_parse": true,
+    "exact_duplicate_prompts": false,
+    "nonempty_answers": true,
+    "teacher_review": false,
+    "semantic_duplicate_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "All letters and sample details are original; first 30 subjects correspond to guide headings in lib/english/class-eight-writing-topics.ts, not verbatim guide answers.",
+    "Fictional names and addresses. Review date/event consistency and advice with teacher."
+  ]
+}

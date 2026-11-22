@@ -1,0 +1,29 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "new_sets": 8,
+  "set_numbers": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "total_sets_including_v003": 18,
+  "target_per_item": 50,
+  "remaining_per_item": 32,
+  "checks": [
+    "7 MCQs each with 4 options",
+    "5 short questions with answers",
+    "5 gaps with keys",
+    "5 vocabulary words present in second passage"
+  ],
+  "caveats": [
+    "Passages and question concepts reused; avoid representing all exercises as fully distinct.",
+    "Answer quality and uniqueness require independent semantic and teacher review.",
+    "Compare public 2026-labelled copy with user-provided Drive textbook.",
+    "Rights and importer compatibility not verified; no website import."
+  ]
+}

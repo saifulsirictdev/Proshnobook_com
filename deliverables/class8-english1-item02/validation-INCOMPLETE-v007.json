@@ -1,0 +1,17 @@
+{
+  "status": "INCOMPLETE_DRAFT_NOT_APPROVED",
+  "total_sets": 50,
+  "rewritten_sets": 20,
+  "remaining_to_review": 30,
+  "checks": {
+    "rewritten_sets_have_five_A_six_B": true,
+    "independent_answer_uniqueness_review": false,
+    "teacher_review": false,
+    "importer_tested": false,
+    "website_imported": false
+  },
+  "notes": [
+    "Sets 11–20 rewritten in v007; sets 1–10 retained from v006. Sets 21–50 carry forward v005 and need distractor and matching review.",
+    "Website topic label still says A/B/C; importer compatibility not established."
+  ]
+}

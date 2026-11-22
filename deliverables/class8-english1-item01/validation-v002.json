@@ -1,0 +1,26 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "count": 50,
+  "target": 50,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "checks": {
+    "count_50": true,
+    "unique_exact_passages": true,
+    "unique_exact_prompts": true,
+    "five_table_entries_per_set": true,
+    "five_true_false_per_set": true,
+    "five_cloze_answers_per_set": true,
+    "json_reparsed": true,
+    "all_items_within_schema_string_limits": true,
+    "teacher_review": false,
+    "semantic_review": false,
+    "importer_tested": false
+  },
+  "notes": [
+    "All passages are original fictional practice, not source transcriptions.",
+    "Q7 cloze was derived directly from the original passage and reuses Q5 facts; this makes it a basic recall exercise and requires pedagogical review.",
+    "Model Test 01 uses summary for Q7 but the website catalog says cloze; both are supplied as separate options for review, not claimed mandatory together.",
+    "Five factual answers and True/False corrections per set; exact duplicate checks do not verify semantic diversity or correctness."
+  ]
+}
