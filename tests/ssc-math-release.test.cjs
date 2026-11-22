@@ -37,6 +37,11 @@ test('alias duplicates are skipped and never approved; altered canonical rows st
  assert.equal(r.conflictingSkipped,1);assert.equal(r.approvedCanonical,5749);assert.equal(db.rows.find(q=>q.id==='legacy').approved,false);assert.ok(!db.rows.some(q=>q.id===row.id));
  const bad=database([{...row,approved:false,explanation:'Changed outside release'}]);await assert.rejects(release.publish(bad,plan,plan.digest,actor,release.ACK));assert.equal(bad.rows.length,1);assert.equal(bad.settings.length,0);
 });
+test('application scan bound failure rolls back approval instead of claiming Auto Model works',async()=>{
+ const legacy=Array.from({length:4251},(_,i)=>({id:'older-'+i,category:'SSC',subject:'গণিত',topic:'legacy-other-topic',approved:true}));
+ const db=database(legacy);await assert.rejects(release.publish(db,plan,plan.digest,actor,release.ACK),/scan bound/);
+ assert.equal(db.rows.filter(q=>q.approved).length,4251);assert.equal(db.rows.filter(q=>!q.approved).length,5750);
+});
 test('phase-two failure leaves imported records Pending, with zero partial approvals',async()=>{
  const db=database([],call=>{if(call===2)throw Error('approval unavailable');});await assert.rejects(release.publish(db,plan,plan.digest,actor,release.ACK));assert.equal(db.rows.length,5750);assert.ok(db.rows.every(q=>q.approved===false));assert.ok(!db.settings.some(s=>s.key.includes(':approval:')));
 });

@@ -107,10 +107,14 @@ async function publish(db, plan, digest, actor, acknowledgement) {
     const changed=await tx.question.updateMany({where:{id:{in:imported.canonicalIds},approved:false},data:{approved:true}});
     const after=await tx.question.findMany({where:{id:{in:imported.canonicalIds}}});
     if(after.length!==before.length||after.some(q=>!q.approved||!equalRow(q,expected.get(q.id))))throw Error('Approval verification failed');
-    const result={status:'OWNER_APPROVED_PUBLICATION_VERIFIED',digest,actor,createdAt:now,insertedPending:imported.inserted,newlyApproved:changed.count,previouslyApproved,approvedCanonical:after.length,conflictingSkipped:imported.conflictingSkippedIds.length,autoModel:models,approvalBasis:plan.preview.approvalBasis,teacherCertified:false};
+    // Mirror the application's bounded approved-stock query, not just our imported pool.
+    const appStock=await tx.question.findMany({where:{category:{in:plan.aliases},subject:'গণিত',approved:true},orderBy:{id:'asc'},take:10001});
+    if(appStock.length>10000)throw Error('Application Auto Model scan bound exceeded');
+    const appModels=plan.modelCheck(appStock);
+    const result={status:'OWNER_APPROVED_PUBLICATION_VERIFIED',digest,actor,createdAt:now,insertedPending:imported.inserted,newlyApproved:changed.count,previouslyApproved,approvedCanonical:after.length,conflictingSkipped:imported.conflictingSkippedIds.length,autoModel:models,applicationApprovedStock:appStock.length,applicationAutoModel:appModels,approvalBasis:plan.preview.approvalBasis,teacherCertified:false};
     const key=prefix+':approval';
     // A separate immutable event records each successful reconciliation/release.
-    await tx.setting.create({data:{key:key+':'+createHash('sha256').update(actor+now).digest('hex'),value:JSON.stringify({...result,approvedIds:imported.canonicalIds})}});
+    await tx.setting.create({data:{key:key+':'+createHash('sha256').update(actor+now).digest('hex'),value:JSON.stringify({...result,approvedIds:imported.canonicalIds,newlyApprovedIds:before.filter(q=>!q.approved).map(q=>q.id),previouslyApprovedIds:before.filter(q=>q.approved).map(q=>q.id)})}});
     return result;
   });
   return published;
