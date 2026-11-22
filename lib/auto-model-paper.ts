@@ -8,6 +8,8 @@ import {
   autoModelBlueprint,
   MATH_DIVISIONS,
   MATH_MCQ_QUOTAS,
+  MATH_MCQ_FIXED_GROUPS,
+  mathMcqGroup,
   autoModelHasDiagram,
   MATH_MCQ_DISTRIBUTION,
   mathDivision,
@@ -81,7 +83,8 @@ export function autoModelIssues(
       issues.push("নৈর্ব্যক্তিক মডেলে চিত্রযুক্ত প্রশ্ন সর্বোচ্চ ৫টি হতে পারবে।");
     if (counts[0] < quota.algebra.min || counts[0] > quota.algebra.max ||
         counts[1] < quota.geometry.min || counts[1] > quota.geometry.max ||
-        counts[2] + counts[3] !== quota.combined)
+        MATH_MCQ_FIXED_GROUPS.some(group =>
+          items.filter(q => questionType(q) === "MCQ" && mathMcqGroup(q.topic ?? "") === group.id).length !== group.count))
       issues.push(`MCQ মানবণ্টন মিলছে না: ${MATH_MCQ_DISTRIBUTION} প্রয়োজন।`);
   } else {
     if (

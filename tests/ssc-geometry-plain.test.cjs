@@ -57,6 +57,7 @@ test('local original bank plus 50 drafts is sufficient for both MCQ quotas and g
   let n=seed;const random=()=>((n=(n*1664525+1013904223)>>>0)/4294967296);
   const r=api.assembleAutoModel(all,'MCQ',random);assert.equal(r.ok,true);
   const chosen=all.filter(q=>r.ids.includes(q.id));assert.equal(chosen.length,30);
+  assert.deepEqual(api.MATH_MCQ_FIXED_GROUPS.map(g=>chosen.filter(q=>api.mathMcqGroup(q.topic)===g.id).length),[2,1,2]);
   assert.ok(chosen.filter(api.autoModelHasDiagram).length<=5);
   assert.ok(chosen.some(q=>rows.some(x=>x.id===q.id)));
   assert.deepEqual(autoModelIssues(chosen.map(q=>({...q,type:'MCQ'})),autoModelSettings('SSC','গণিত','MCQ')),[]);

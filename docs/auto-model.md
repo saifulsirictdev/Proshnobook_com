@@ -12,7 +12,7 @@ The practice notice is shown before generation. Neither blueprint claims to be t
 
 | Variant | Offered | Answer | Marks | Time |
 |---|---|---|---|---|
-| MCQ | 30: algebra 12–15, geometry 10–13, trigonometry/mensuration + statistics combined exactly 5 | All 30 | 30 × 1 = 30 | 30 minutes |
+| MCQ | 30: algebra 12–15, geometry 10–13, trigonometry exactly 2, mensuration exactly 1, statistics exactly 2 | All 30 | 30 × 1 = 30 | 30 minutes |
 | Written (`CQ`) | 8 CQ: two in each of four divisions; plus 15 short answers | 5 CQ, including at least one from each division; any 10 short answers | 5 × 10 + 10 × 2 = 70 | 150 minutes |
 
 Written divisions: algebra; geometry; trigonometry/mensuration; statistics. Classification uses the **exact existing general-math chapter titles** from `lib/nctb-data.ts`; unknown or ambiguous chapter strings are not guessed. The CQ contract is three nonempty subparts, ক/খ/গ, with marks 2/4/4; ordinary legacy four-part CQ is excluded from this model rather than printed with an incorrect marking scheme. Missing explicit marks are assigned the selected practice blueprint's 2/4/4, not claimed as verified original source marks.
@@ -25,12 +25,16 @@ subject code 109. The page was rendered and visually read, not inferred from the
 corrupted extracted Bengali. This is the owner's requested navigation/practice
 contract, not independent verification of a board publication.
 
-- Eligible, deduplicated stock is split into algebra, geometry and a combined
-  trigonometry/mensuration + statistics pool.
+- Owner refinement: the last five now require **2 trigonometry + 1 mensuration +
+  2 statistics**, not any five from a shared pool. This is the owner's additional
+  practice-paper rule, not a separate minimum attributed to the source PDF.
+- Eligible, deduplicated stock is split into five MCQ pools: algebra, geometry,
+  trigonometry (exact catalog chapters 9–10), mensuration (chapter 16), and
+  statistics (chapter 17). Written divisions remain unchanged.
 - Choose randomly among **feasible** splits 12/13, 13/12, 14/11 or 15/10
-  (algebra/geometry), plus exactly 5 combined. Chapter rotation remains within
-  each pool. The source does not specify a separate minimum for either part of
-  the combined pool; none is invented.
+  (algebra/geometry), plus the fixed 2/1/2. Chapter rotation remains within
+  each pool. Diagram-budget feasibility and reservation cover all five pools,
+  so spare plain statistics cannot replace a required illustrated mensuration item.
 - Missing compatible questions in any quota fails closed, even if another
   division has abundant stock. No cross-division top-up or partial IDs.
 - The starter/preparation summary shows the distribution. Existing 30 marks,
@@ -41,9 +45,17 @@ contract, not independent verification of a board publication.
   written CQ + SHORT model are unchanged. Existing blueprint ID is retained so
   old model drafts also receive the new validation when opened.
 - Regression coverage includes every split, skewed pools, deduplication,
-  incompatible rows, combined-pool-only cases, server action IDs-only boundary,
+  incompatible rows, fixed-component shortages, rejection of legacy combined-only
+  papers, five-pool diagram reservation, server action IDs-only boundary,
   edited-paper warnings and checks against the existing 5,750 canonical local
   records. Canonical tests are read-only, not a live stock/import/approval run.
+
+The prior production approval receipt records the policy verified at publication
+time; it is historical evidence, not proof of deploying this later 2/1/2 change.
+The updated local canonical+supplement test passes 25 seeded assemblies with the
+new fixed counts, unchanged algebra/geometry quotas, and the <=5 figure cap.
+Existing saved papers are not rearranged automatically; noncompliant old drafts
+receive a distribution warning.
 
 ### Owner-requested figure-question cap
 
