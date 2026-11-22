@@ -5,15 +5,11 @@ const fs = require("node:fs"),
 const { build, response } = require("./server.cjs");
 (async () => {
   await build();
-  const { chromium } = require("playwright-core"),
-    m = require("@sparticuz/chromium"),
-    c = m.default || m;
-  const browser = await chromium.launch({
-    executablePath: await c.executablePath(),
-    args: c.args.filter((a) => a !== "--single-process"),
-    headless: true,
-  });
-  const proof = path.resolve("docs/proof/auto-model");
+  const { chromium } = require("playwright-core");
+  let executablePath=process.env.CHROMIUM_EXECUTABLE_PATH,args=['--no-sandbox'];
+  if(!executablePath){const m=require('@sparticuz/chromium'),c=m.default||m;executablePath=await c.executablePath();args=c.args.filter(a=>a!=='--single-process');}
+  const browser = await chromium.launch({executablePath,args,headless:true});
+  const proof = path.resolve(process.env.AUTO_MODEL_PROOF_DIR || "docs/proof/auto-model");
   fs.mkdirSync(proof, { recursive: true });
   const results = [];
   try {
@@ -96,48 +92,18 @@ const { build, response } = require("./server.cjs");
       await page
         .getByRole("button", { name: "CQ সৃজনশীল / লিখিত", exact: true })
         .click();
-      await page
-        .getByRole("button", { name: /মডেল প্রস্তুত ও কাঠামো/ })
-        .click();
-      // Explicit shortage branch must not overwrite the previous draft selection.
-      await page.evaluate(() =>
-        localStorage.setItem("qb:selected", '["old-draft"]'),
-      );
-      await page
-        .getByRole("checkbox", { name: "প্রশ্নের ঘাটতি পরীক্ষা" })
-        .check();
-      await page
-        .getByRole("button", { name: "পূর্ণ মডেল প্রস্তুত করুন", exact: true })
-        .click();
-      await page
-        .getByText(
-          "নমুনা পরীক্ষায় প্রশ্নের ঘাটতি। কোনো আংশিক মডেল তৈরি করা হয়নি।",
-        )
-        .waitFor();
-      assert.equal(
-        await page.evaluate(() => localStorage.getItem("qb:selected")),
-        '["old-draft"]',
-      );
-      assert.equal(
-        await page
-          .getByRole("button", { name: "মূল্য যাচাই ও সেটআপ →" })
-          .count(),
-        0,
-      );
-      await page
-        .getByRole("checkbox", { name: "প্রশ্নের ঘাটতি পরীক্ষা" })
-        .uncheck();
-      await page
-        .getByRole("button", { name: "পূর্ণ মডেল প্রস্তুত করুন", exact: true })
-        .click();
-      await page
-        .getByRole("button", { name: "মূল্য যাচাই ও সেটআপ →" })
-        .waitFor();
-      await page.screenshot({
-        path: path.join(proof, `review-${width}.png`),
-        fullPage: true,
+      // Configure shortage before the starter's single click starts preparation.
+      await page.evaluate(() => {
+        localStorage.setItem("qb:selected", '["old-draft"]');
+        sessionStorage.setItem("auto-test-shortage", "1");
       });
-      await page.getByRole("button", { name: "মূল্য যাচাই ও সেটআপ →" }).click();
+      await page.getByRole("button", { name: /মডেল প্রস্তুত ও কাঠামো/ }).click();
+      await page.getByText("নমুনা পরীক্ষায় প্রশ্নের ঘাটতি। কোনো আংশিক মডেল তৈরি করা হয়নি।").waitFor();
+      assert.equal(await page.evaluate(() => localStorage.getItem("qb:selected")), '["old-draft"]');
+      assert.equal(await page.getByRole("button", { name: "মূল্য যাচাই ও সেটআপ →" }).count(), 0);
+      await page.screenshot({path:path.join(proof, `review-${width}.png`),fullPage:true});
+      await page.evaluate(() => sessionStorage.setItem("auto-test-shortage", "0"));
+      await page.getByRole("button", {name:"আবার চেষ্টা করুন",exact:true}).click();
       const sheet = () => page.locator("#paper .paper-sheet");
       await page.waitForFunction(
         () =>
@@ -215,10 +181,6 @@ const { build, response } = require("./server.cjs");
       await page
         .getByRole("button", { name: /মডেল প্রস্তুত ও কাঠামো/ })
         .click();
-      await page
-        .getByRole("button", { name: "পূর্ণ মডেল প্রস্তুত করুন", exact: true })
-        .click();
-      await page.getByRole("button", { name: "মূল্য যাচাই ও সেটআপ →" }).click();
       await page.waitForFunction(
         () =>
           document.querySelectorAll("#paper .paper-sheet .paper-question")

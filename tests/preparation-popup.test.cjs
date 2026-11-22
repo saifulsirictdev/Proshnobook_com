@@ -58,3 +58,9 @@ test('neutral preparation branding does not mislabel automatic work as database-
  const s=html({subject:'English',databaseOnly:false,neutralBranding:true});
  assert.match(s,/Proshnobook/);assert.doesNotMatch(s,/Proshnobook AI/);assert.doesNotMatch(s,/value="/);
 });
+test('auto model popup names setup destination without changing the chapter default',()=>{
+ const s=html({subject:'গণিত',databaseOnly:true,destination:'setup',stage:2});
+ assert.match(s,/সেটআপ পেজ খোলা হচ্ছে/);assert.match(s,/সেটআপের জন্য/);
+ assert.doesNotMatch(s,/Proshnobook AI|নির্বাচন পেজ খোলা হচ্ছে/);
+ assert.match(html({subject:'গণিত',stage:2}),/নির্বাচন পেজ খোলা হচ্ছে/);
+});

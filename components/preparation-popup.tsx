@@ -20,8 +20,10 @@ export default function PreparationPopup({
   children,
   databaseOnly = false,
   neutralBranding = false,
+  destination = "selection",
 }: {
   subject: string;
+  destination?: "selection" | "setup";
   databaseOnly?: boolean;
   /** Same calm presentation for bank selection and automatic preparation. */
   neutralBranding?: boolean;
@@ -45,7 +47,9 @@ export default function PreparationPopup({
   const steps = [
     "নির্বাচিত বিষয় ও অধ্যায় পরীক্ষা হচ্ছে…",
     `${subject} বিষয়ের প্রশ্নভান্ডার যাচাই ও প্রশ্ন প্রস্তুত হচ্ছে…`,
-    "প্রস্তুত প্রশ্নগুলো নির্বাচনের জন্য সাজানো হচ্ছে…",
+    destination === "setup"
+      ? "প্রস্তুত প্রশ্নগুলো সেটআপের জন্য সাজানো হচ্ছে…"
+      : "প্রস্তুত প্রশ্নগুলো নির্বাচনের জন্য সাজানো হচ্ছে…",
   ];
   return (
     <dialog
@@ -118,7 +122,7 @@ export default function PreparationPopup({
               : stage === 0
                 ? "নির্বাচন যাচাই হচ্ছে"
                 : stage === 2
-                  ? "নির্বাচন পেজ খোলা হচ্ছে"
+                  ? destination === "setup" ? "সেটআপ পেজ খোলা হচ্ছে" : "নির্বাচন পেজ খোলা হচ্ছে"
                   : "প্রশ্ন প্রস্তুত হচ্ছে"}
           </span>
           {progress !== undefined && (
