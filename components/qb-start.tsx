@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { autoModelBlueprint, isAcademicCategory, AUTO_MODEL_NOTICE } from "@/lib/auto-model";
+import { ACADEMIC_SUBJECT_GROUPS, sscGroupSubjects, hscGroupSubjects } from "@/lib/academic-subject-groups";
 import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
 import { englishQuestionItemGroups, englishLessonOptions } from "@/lib/english/topic-options";
 import { englishBuilderContext, englishBuilderHref } from "@/lib/english/builder-mode";
@@ -84,6 +85,10 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const [topic, setTopic] = useState(""); // নির্দিষ্ট টপিক
   const [selectionMode, setSelectionMode] = useState("");
   const [modelVariant, setModelVariant] = useState("");
+  const [subjectGroup, setSubjectGroup] = useState("");
+  const isSsc = category === "SSC";
+  const isHsc = category === "HSC";
+  const hasSubjectGroups = isSsc || isHsc;
   const academic = isAcademicCategory(category) && !/english|ইংরেজি/i.test(subject) && !append;
   const modelPlan = autoModelBlueprint(category, subject, modelVariant);
 
@@ -107,8 +112,11 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   }, [pairs, category]);
 
   const subjects = useMemo(
-    () => isJob ? jobSubjects.map((item) => item.name) : Array.from(new Set([...curriculumSubjects, ...examSubjects, ...dbSubjects])),
-    [isJob, jobSubjects, curriculumSubjects, examSubjects, dbSubjects],
+    () => {
+      const available = isJob ? jobSubjects.map((item) => item.name) : Array.from(new Set([...curriculumSubjects, ...examSubjects, ...dbSubjects]));
+      return isSsc ? sscGroupSubjects(available, subjectGroup) : isHsc ? hscGroupSubjects(available, subjectGroup) : available;
+    },
+    [isSsc, isHsc, subjectGroup, isJob, jobSubjects, curriculumSubjects, examSubjects, dbSubjects],
   );
 
   // নির্বাচিত সাবজেক্টের ডেটা (chapters/subCategories সহ)
@@ -141,6 +149,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
     }`;
 
   function go() {
+    if (hasSubjectGroups && (!subjectGroup || !subjects.includes(subject))) return;
     if (academic && selectionMode === "auto") {
       if (!modelPlan) return;
       router.push(`/question-builder/auto-model?${new URLSearchParams({category, subject, variant:modelVariant})}`);
@@ -176,6 +185,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           value={LOW.includes(category) ? category : ""}
           onChange={(e) => {
             setCategory(e.target.value);
+            setSubjectGroup("");
             setExamId("");
             setBranchId("");
             setSubject(""); setSelectionMode(""); setModelVariant(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
@@ -197,6 +207,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             className={chip(category === c)}
             onClick={() => {
               setCategory(category === c ? "" : c);
+              setSubjectGroup("");
               setQuestionType(c === "Job" ? "MCQ" : "ALL");
               setExamId("");
             setBranchId("");
@@ -251,8 +262,26 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </section>
       )}
 
+      {hasSubjectGroups && <label className="block space-y-2 text-sm font-semibold text-slate-800">
+        <span>বিভাগ নির্বাচন করুন</span>
+        <select aria-label={`${category} বিভাগ`} value={subjectGroup}
+          className="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
+          onChange={e => {
+            setSubjectGroup(e.target.value);
+            setSubject(""); setQuestionType("ALL");
+            setSelectionMode(""); setModelVariant("");
+            setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
+            setTopicCategory(""); setTopic("");
+          }}>
+          <option value="">— বিভাগ নির্বাচন করুন —</option>
+          {ACADEMIC_SUBJECT_GROUPS.map((group, i) => <option key={group.id} value={group.id}>{["১", "২", "৩", "৪"][i]}. {group.label}</option>)}
+        </select>
+        <span className="block text-xs font-normal text-slate-500">{isSsc ? "বাংলা, ইংরেজি, গণিত ও অন্যান্য সাধারণ/ঐচ্ছিক বিষয় পেতে সাধারণ নির্বাচন করুন।" : "বাংলা, ইংরেজি, ICT ও অন্যান্য সাধারণ/ঐচ্ছিক বিষয় পেতে সাধারণ নির্বাচন করুন।"}</span>
+      </label>}
+
       <select
         aria-label="বিষয়"
+        disabled={hasSubjectGroups && !subjectGroup}
         className="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
         value={subject}
         onChange={(e) => {
@@ -262,7 +291,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           setTopic("");
         }}
       >
-        <option value="">— Select Subject —</option>
+        <option value="">{hasSubjectGroups && !subjectGroup ? "— আগে বিভাগ নির্বাচন করুন —" : "— Select Subject —"}</option>
         {subjects.map((s) => (
           <option key={s} value={s}>
             {s}
@@ -318,12 +347,12 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </p>}
       </>}
       {academic && subject && <fieldset className="space-y-3 rounded-xl border border-emerald-200 bg-emerald-50/50 p-4">
-        <legend className="px-2 text-sm font-bold text-emerald-900">৩ · কীভাবে প্রশ্ন বাছবেন?</legend>
+        <legend className="px-2 text-sm font-bold text-emerald-900">{hasSubjectGroups ? "৪" : "৩"} · কীভাবে প্রশ্ন বাছবেন?</legend>
         <div className="grid grid-cols-2 gap-3">
           {[{id:"chapter",title:"Chapter",desc:"অধ্যায় থেকে নিজে বাছুন"},{id:"auto",title:"Auto Model",desc:"কাঠামো মেনে পূর্ণ মডেল"}].map(o=><button key={o.id} type="button" aria-pressed={selectionMode===o.id} onClick={()=>{setSelectionMode(o.id);setModelVariant("");}} className={`rounded-xl border p-3 text-left ${selectionMode===o.id?"border-emerald-700 bg-emerald-700 text-white shadow-sm":"border-slate-200 bg-white text-slate-800"}`}><span className="block font-bold">{o.title}</span><span className="mt-1 block text-xs">{o.desc}</span></button>)}
         </div>
         {selectionMode==="auto" && <>
-          <p className="text-sm font-semibold text-slate-700">৪ · মডেলের ধরন</p>
+          <p className="text-sm font-semibold text-slate-700">{hasSubjectGroups ? "৫" : "৪"} · মডেলের ধরন</p>
           <div className="grid grid-cols-2 gap-3">{[{id:"MCQ",title:"MCQ",desc:"নৈর্ব্যক্তিক"},{id:"CQ",title:"CQ",desc:"সৃজনশীল / লিখিত"}].map(o=><button type="button" key={o.id} aria-pressed={modelVariant===o.id} onClick={()=>setModelVariant(o.id)} className={`rounded-lg border p-3 text-left ${modelVariant===o.id?"border-emerald-600 bg-emerald-100 text-emerald-950":"border-slate-200 bg-white"}`}><b>{o.title}</b><span className="block text-xs">{o.desc}</span></button>)}</div>
           {modelPlan ? <div className="rounded-lg border border-emerald-200 bg-white p-3 text-sm"><h3 className="font-bold text-emerald-900">{modelPlan.title}</h3><p className="my-2">পূর্ণমান {modelPlan.totalMarks} · সময় {modelPlan.minutes}</p><p>{modelPlan.offered}</p><p className="mt-2">{modelPlan.instructions}</p><p className="mt-3 text-xs text-slate-500">{AUTO_MODEL_NOTICE}</p></div> : modelVariant && <p role="status" className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950">এই শ্রেণি ও বিষয়ের নিজস্ব পূর্ণ মডেল কাঠামো এখনও প্রস্তুত নয়। গণিতের কাঠামো এখানে ব্যবহার করা হবে না। আপাতত Chapter থেকে প্রশ্ন বাছুন।</p>}
         </>}
@@ -401,7 +430,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
 
       <button
         type="button"
-        disabled={!subject || (academic && (!selectionMode || (selectionMode === "auto" && !modelPlan))) || (!!english && !append && (!englishMode || (englishMode === "topic" && ((english.paper === 1 && !englishTopicKind) || !englishTopic))))}
+        disabled={!subject || (hasSubjectGroups && (!subjectGroup || !subjects.includes(subject))) || (academic && (!selectionMode || (selectionMode === "auto" && !modelPlan))) || (!!english && !append && (!englishMode || (englishMode === "topic" && ((english.paper === 1 && !englishTopicKind) || !englishTopic))))}
         onClick={go}
         className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-3 font-semibold text-white disabled:opacity-50"
       >

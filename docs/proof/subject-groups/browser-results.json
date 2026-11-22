@@ -1,0 +1,33 @@
+{
+  "scope": "Local actual QbStart UI; isolated transport, not production auth/DB/deployment",
+  "results": [
+    {
+      "width": 1280,
+      "status": "PASS",
+      "sscGroups": 4,
+      "hscGroups": 4,
+      "subjectFiltering": true,
+      "resetOnGroupAndClassChange": true,
+      "englishModesRetained": true,
+      "mathCqAndShortBlueprintRetained": true,
+      "unsupportedHscModelBlocked": true,
+      "admissionJobAndLowerClassesUnchanged": true,
+      "pageErrors": [],
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "status": "PASS",
+      "sscGroups": 4,
+      "hscGroups": 4,
+      "subjectFiltering": true,
+      "resetOnGroupAndClassChange": true,
+      "englishModesRetained": true,
+      "mathCqAndShortBlueprintRetained": true,
+      "unsupportedHscModelBlocked": true,
+      "admissionJobAndLowerClassesUnchanged": true,
+      "pageErrors": [],
+      "horizontalOverflow": false
+    }
+  ]
+}

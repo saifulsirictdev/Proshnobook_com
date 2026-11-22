@@ -43,6 +43,7 @@ const { build, response } = require("./server.cjs");
       page.on("dialog", (d) => d.accept());
       await page.goto(origin + "/question-builder");
       await page.getByRole("button", { name: /^SSC/ }).click();
+      await page.getByRole("combobox", { name: "SSC বিভাগ", exact: true }).selectOption("general");
       await page
         .getByRole("combobox", { name: "বিষয়", exact: true })
         .selectOption("গণিত");
@@ -71,7 +72,7 @@ const { build, response } = require("./server.cjs");
       // Subject changes reset both the mode and variant; unverified subjects cannot start models.
       await page
         .getByRole("combobox", { name: "বিষয়", exact: true })
-        .selectOption("বিজ্ঞান");
+        .selectOption("তথ্য ও যোগাযোগ প্রযুক্তি");
       assert.equal(
         await page
           .getByRole("button", { name: /Auto Model কাঠামো/ })
@@ -203,6 +204,7 @@ const { build, response } = require("./server.cjs");
         .getByRole("button", { name: "শুরুতে ফিরুন", exact: true })
         .click();
       await page.getByRole("button", { name: /^SSC/ }).click();
+      await page.getByRole("combobox", { name: "SSC বিভাগ", exact: true }).selectOption("general");
       await page
         .getByRole("combobox", { name: "বিষয়", exact: true })
         .selectOption("গণিত");
