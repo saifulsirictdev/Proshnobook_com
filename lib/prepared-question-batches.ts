@@ -1,4 +1,5 @@
 import {sscMathBatches} from "./ssc-math-batches";
+import {sscGeometryPlainBatches} from "./ssc-geometry-plain-batches";
 import {class8English2Batches} from "./class8-english2-batches";
 import {english1Batches} from "./class6-english1-batches";
 import {bgsBatches} from "./class6-bgs-batches";
@@ -33,7 +34,8 @@ export function preparedBatches():PreparedBatch[]{
   ...bgsBatches(),
   ...english1Batches(),
   ...class8English2Batches(),
-  ...sscMathBatches()
+  ...sscMathBatches(),
+  ...sscGeometryPlainBatches()
  ];
 }
 function validatePreparedBatch(b:PreparedBatch){

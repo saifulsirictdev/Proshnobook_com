@@ -1,12 +1,14 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),ts=require('typescript'),Module=require('node:module'),React=require('react'),{renderToStaticMarkup}=require('react-dom/server');
-const release=require('../scripts/question-bank/release-ssc-math.cjs'),api=release.load(),plan=release.prepare(api);
+const release=require('../scripts/question-bank/release-ssc-math.cjs'),api=release.load();
+// Explicit old-policy fixture only for historical publication transaction tests.
+const plan=require('../scripts/helpers/ssc-math-historical-release-fixture.cjs').historicalReleaseFixture(release,api);
 const actor='vercel-owner-release:'+'a'.repeat(40);
 function database(initial=[],fail){
  let rows=new Map(initial.map(q=>[q.id,structuredClone(q)])),settings=new Map(),calls=0;
  const matches=(q,w={})=>Object.entries(w).every(([k,v])=>v&&typeof v==='object'?v.in.includes(q[k]):q[k]===v);
  const db={get rows(){return [...rows.values()]},get settings(){return [...settings.values()]},get calls(){return calls},async $transaction(work){calls++;const oldRows=structuredClone(rows),oldSettings=structuredClone(settings);try{if(fail)fail(calls,rows);return await work({question:{findMany:async({where})=>[...rows.values()].filter(q=>matches(q,where)).map(q=>structuredClone(q)),createMany:async({data})=>{for(const q of data){if(rows.has(q.id))throw Error('duplicate');rows.set(q.id,structuredClone(q));}return{count:data.length}},updateMany:async({where,data})=>{let count=0;for(const q of rows.values())if(matches(q,where)){Object.assign(q,data);count++;}return{count}}},setting:{findUnique:async({where})=>settings.get(where.key)||null,create:async({data})=>{if(settings.has(data.key))throw Error('duplicate receipt');settings.set(data.key,structuredClone(data));return data;},upsert:async({where,create,update})=>{settings.set(where.key,settings.has(where.key)?{...settings.get(where.key),...update}:structuredClone(create));}}});}catch(e){rows=oldRows;settings=oldSettings;throw e;}}};return db;
 }
-test('canonical 53 slices/5750 questions, all 17 chapters and real-stock Auto Model includes 15 SHORT',()=>{
+test('historical release fixture: 53 slices/5750 questions and old-policy transaction plan includes 15 SHORT',()=>{
  assert.equal(plan.scopes.length,53);assert.equal(plan.records.length,5750);assert.equal(Object.keys(plan.preview.chapters).length,17);assert.equal(plan.preview.autoModel.short,15);assert.deepEqual(Object.values(plan.preview.autoModel.divisions),[2,2,2,2]);assert.equal(plan.preview.autoModel.mcq,30);assert.ok(plan.preview.assets.length>2600);
  // IDs/digests are exactly the existing prepared-import convention, not new stock.
  const {createHash}=require('node:crypto'),s=plan.scopes[0],q=s.batch.records[0];
@@ -44,4 +46,13 @@ test('application scan bound failure rolls back approval instead of claiming Aut
 });
 test('phase-two failure leaves imported records Pending, with zero partial approvals',async()=>{
  const db=database([],call=>{if(call===2)throw Error('approval unavailable');});await assert.rejects(release.publish(db,plan,plan.digest,actor,release.ACK));assert.equal(db.rows.length,5750);assert.ok(db.rows.every(q=>q.approved===false));assert.ok(!db.settings.some(s=>s.key.includes(':approval:')));
+});
+test('current canonical geometry stock fails closed under five-diagram cap; historical release must not be rerun',()=>{
+ const r=api.assembleAutoModel(plan.records,'MCQ',()=>0.5);assert.equal(r.ok,false);assert.equal(r.ids,undefined);
+ assert.match(r.gaps[0].section,/চিত্র/);assert.equal(r.gaps[0].required,25);assert.equal(r.gaps[0].available,21);
+ // Existing publication gate correctly refuses a new release with insufficient
+ // current-policy stock. No weakening of the production release gate.
+ assert.throws(()=>release.prepare(api),/Insufficient compatible Auto Model stock/);
+ const geometry=plan.records.filter(q=>api.autoModelRowKind(q)==='MCQ'&&api.mathDivision(q.topic)?.id==='geometry');
+ assert.equal(geometry.filter(q=>!api.autoModelHasDiagram(q)).length,1);
 });

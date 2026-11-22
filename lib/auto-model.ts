@@ -17,6 +17,17 @@ export const MATH_DIVISIONS = [
   },
   { id: "statistics", title: "ঘ-বিভাগ: পরিসংখ্যান", chapters: [17] },
 ] as const;
+// Owner-supplied SSC 2027 distribution, printed p14 (subject 109).
+// Trigonometry/mensuration + statistics share ONE five-question quota.
+export const MATH_MCQ_QUOTAS = {
+  algebra: { min: 12, max: 15 },
+  geometry: { min: 10, max: 13 },
+  combined: 5,
+  total: 30,
+  maxDiagramQuestions: 5,
+} as const;
+export const MATH_MCQ_DISTRIBUTION =
+  "বীজগণিত ১২–১৫টি · জ্যামিতি ১০–১৩টি · ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে ৫টি";
 const mathChapters =
   NCTB_CLASSES.find(
     (c) => c.class === "Class 9" || c.class === "Class 10",
@@ -43,7 +54,7 @@ export function autoModelBlueprint(
         title: "SSC গণিত — নৈর্ব্যক্তিক মডেল",
         totalMarks: 30,
         minutes: "৩০ মিনিট",
-        offered: "৩০টি MCQ · প্রতিটি ১ নম্বর",
+        offered: `৩০টি MCQ · প্রতিটি ১ নম্বর। ${MATH_MCQ_DISTRIBUTION} · চিত্রযুক্ত প্রশ্ন সর্বোচ্চ ৫টি`,
         instructions: "সকল ৩০টি প্রশ্নের উত্তর দাও। প্রতিটি প্রশ্নের মান ১।",
         variant: "MCQ" as const,
       }
@@ -79,6 +90,12 @@ function object(raw: unknown): Record<string, unknown> {
   return raw && typeof raw === "object" && !Array.isArray(raw)
     ? (raw as Record<string, unknown>)
     : {};
+}
+/** Count question-side figures, not answer/explanation figures. Multiple figures
+ * in one question consume one slot. Used by assembly and editor validation. */
+export function autoModelHasDiagram(q: { text: string; stimulus?: string; options?: unknown }): boolean {
+  const o = object(q.options);
+  return [q.text, q.stimulus, o.stimulus].some(value => typeof value === "string" && value.includes("!["));
 }
 export function autoModelRowKind(
   q: AutoModelRow,
@@ -189,7 +206,7 @@ export function assembleAutoModel(
     divisions: Record<string, string> = {},
     gaps: { section: string; required: number; available: number }[] = [];
   const used = new Set<string>();
-  function take(pool: AutoModelRow[], count: number, section: string) {
+  function take(pool: AutoModelRow[], count: number, section: string, diagramLimit = Infinity) {
     const buckets = new Map<string, AutoModelRow[]>();
     for (const q of pool)
       if (!used.has(q.id))
@@ -197,21 +214,65 @@ export function assembleAutoModel(
     const ordered: AutoModelRow[] = [];
     while ([...buckets.values()].some((b) => b.length))
       for (const b of buckets.values()) if (b.length) ordered.push(b.shift()!);
-    if (ordered.length < count)
-      gaps.push({ section, required: count, available: ordered.length });
-    for (const q of ordered.slice(0, count)) {
+    let diagrams = 0;
+    const selected = ordered.filter(q => {
+      if (!autoModelHasDiagram(q)) return true;
+      if (diagrams >= diagramLimit) return false;
+      diagrams++;
+      return true;
+    }).slice(0, count);
+    if (selected.length < count)
+      gaps.push({ section, required: count, available: selected.length });
+    for (const q of selected) {
       ids.push(q.id);
       used.add(q.id);
       divisions[q.id] = mathDivision(q.topic)!.title;
     }
   }
-  if (variant === "MCQ")
-    take(
-      eligible.filter((q) => autoModelRowKind(q) === "MCQ"),
-      30,
-      "নৈর্ব্যক্তিক",
-    );
-  else {
+  if (variant === "MCQ") {
+    const algebra = eligible.filter(q => mathDivision(q.topic)?.id === "algebra");
+    const geometry = eligible.filter(q => mathDivision(q.topic)?.id === "geometry");
+    const combined = eligible.filter(q => ["trigonometry", "statistics"].includes(mathDivision(q.topic)!.id));
+    const quota = MATH_MCQ_QUOTAS;
+    const minimumDiagrams = (pool: AutoModelRow[], count: number) =>
+      Math.max(0, count - pool.filter(q => !autoModelHasDiagram(q)).length);
+    const splits = Array.from({ length: quota.algebra.max - quota.algebra.min + 1 }, (_, i) => quota.algebra.min + i)
+      .map(a => ({ algebra: a, geometry: quota.total - quota.combined - a }))
+      .filter(s => s.geometry >= quota.geometry.min && s.geometry <= quota.geometry.max && s.algebra <= algebra.length && s.geometry <= geometry.length);
+    if (!splits.length) {
+      if (algebra.length < quota.algebra.min)
+        gaps.push({ section: MATH_DIVISIONS[0].title, required: quota.algebra.min, available: algebra.length });
+      if (geometry.length < quota.geometry.min)
+        gaps.push({ section: MATH_DIVISIONS[1].title, required: quota.geometry.min, available: geometry.length });
+      if (!gaps.length)
+        gaps.push({ section: "বীজগণিত ও জ্যামিতি (বিভাগীয় সীমার মধ্যে)", required: 25, available: Math.min(algebra.length, quota.algebra.max) + Math.min(geometry.length, quota.geometry.max) });
+    }
+    if (combined.length < quota.combined)
+      gaps.push({ section: "ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে", required: quota.combined, available: combined.length });
+    if (gaps.length) return { ok: false as const, gaps };
+    // Reserve mandatory figure slots across ALL pools before sampling. A greedy
+    // cap per division can exhaust the budget and falsely reject a feasible paper.
+    const neededDiagrams = (s: typeof splits[number]) =>
+      minimumDiagrams(algebra, s.algebra) + minimumDiagrams(geometry, s.geometry) + minimumDiagrams(combined, quota.combined);
+    const feasible = splits.filter(s => neededDiagrams(s) <= quota.maxDiagramQuestions);
+    if (!feasible.length) return { ok: false as const, gaps: [{
+      section: "সর্বোচ্চ ৫টি চিত্রযুক্ত প্রশ্ন রেখে পূর্ণ MCQ (চিত্রবিহীন প্রশ্নের ঘাটতি)",
+      required: quota.total - quota.maxDiagramQuestions,
+      available: Math.max(...splits.map(s => quota.total - neededDiagrams(s))),
+    }] };
+    const split = feasible[Math.min(feasible.length - 1, Math.max(0, Math.floor(random() * feasible.length)))];
+    const pools = [algebra, geometry, combined];
+    const counts = [split.algebra, split.geometry, quota.combined];
+    const labels = [MATH_DIVISIONS[0].title, MATH_DIVISIONS[1].title, "ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে"];
+    let remaining = quota.maxDiagramQuestions;
+    for (let i = 0; i < pools.length; i++) {
+      const reserve = pools.slice(i + 1).reduce((n, pool, j) => n + minimumDiagrams(pool, counts[i + j + 1]), 0);
+      const start = ids.length;
+      take(pools[i], counts[i], labels[i], remaining - reserve);
+      const selectedIds = new Set(ids.slice(start));
+      remaining -= pools[i].filter(q => selectedIds.has(q.id) && autoModelHasDiagram(q)).length;
+    }
+  } else {
     for (const d of MATH_DIVISIONS)
       take(
         eligible.filter(
