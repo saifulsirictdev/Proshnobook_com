@@ -104,7 +104,7 @@ test("complete written assembly: 2 CQ per division and 15 SHORT, no partial succ
 });
 test("MCQ balanced topic rotation, exact count, no duplicate stems or IDs", () => {
   const rows = Array.from({ length: 40 }, (_, i) =>
-    row(`m${i}`, i < 30 ? 1 : 17, "MCQ"),
+    row(`m${i}`, i < 16 ? 1 : i < 31 ? 6 : 17, "MCQ"),
   );
   rows.push({
     ...rows[0],
@@ -114,7 +114,7 @@ test("MCQ balanced topic rotation, exact count, no duplicate stems or IDs", () =
   const r = a.assembleAutoModel(rows, "MCQ", () => 0.99);
   assert.equal(r.ok, true);
   assert.equal(r.ids.length, 30);
-  assert.equal(r.ids[1], "m30");
+  assert.ok(r.ids.some(id => rows.find(q => q.id === id).topic === chapters[16]));
   assert.ok(!r.ids.includes("duplicate"));
   assert.equal(a.assembleAutoModel(rows.slice(0, 29), "MCQ").ok, false);
 });
@@ -277,4 +277,84 @@ test("oversized pool fails explicitly rather than reporting truncated bank short
   assert.equal(r.ok, false);
   assert.match(r.error, /বড়/);
   assert.equal(r.gaps, undefined);
+});
+
+const mcqPool = (algebra, geometry, trig, stats) => [
+ ...Array.from({length:algebra},(_,i)=>row(`a${i}`,i%2?1:2,'MCQ')),
+ ...Array.from({length:geometry},(_,i)=>row(`g${i}`,i%2?6:8,'MCQ')),
+ ...Array.from({length:trig},(_,i)=>row(`t${i}`,i%2?9:16,'MCQ')),
+ ...Array.from({length:stats},(_,i)=>row(`s${i}`,17,'MCQ')),
+];
+const divisionCounts = (rows,ids) => a.MATH_DIVISIONS.map(d=>rows.filter(q=>ids.includes(q.id)&&a.mathDivision(q.topic).id===d.id).length);
+test('MCQ enforces every feasible split and exactly five combined, even under skewed stock',()=>{
+ for(const algebra of [12,13,14,15]){
+  const geometry=25-algebra, rows=mcqPool(algebra,geometry,3,2);
+  const r=a.assembleAutoModel(rows,'MCQ',()=>0.5);assert.equal(r.ok,true);
+  assert.deepEqual(divisionCounts(rows,r.ids),[algebra,geometry,3,2]);
+  assert.deepEqual(p.autoModelIssues(r.ids.map(id=>paper(rows.find(q=>q.id===id))),p.autoModelSettings('SSC','গণিত','MCQ')),[]);
+ }
+ for(const rand of [0,0.25,0.5,0.99,1]){
+  const rows=mcqPool(100,50,30,20),r=a.assembleAutoModel(rows,'MCQ',()=>rand);assert.equal(r.ok,true);
+  const [al,ge,tr,st]=divisionCounts(rows,r.ids);assert.ok(al>=12&&al<=15);assert.ok(ge>=10&&ge<=13);assert.equal(al+ge,25);assert.equal(tr+st,5);assert.equal(r.ids.length,30);
+ }
+ // The source specifies a combined quota, not a separate minimum per component.
+ for(const [tr,st] of [[5,0],[0,5]])assert.equal(a.assembleAutoModel(mcqPool(15,10,tr,st),'MCQ').ok,true);
+});
+test('MCQ shortages fail closed despite abundant total stock, after eligibility and deduplication',()=>{
+ for(const rows of [mcqPool(11,40,10,10),mcqPool(40,9,10,10),mcqPool(12,12,10,10),mcqPool(40,40,2,2)]){
+  const r=a.assembleAutoModel(rows,'MCQ');assert.equal(r.ok,false);assert.ok(r.gaps.length);assert.equal(r.ids,undefined);
+ }
+ const rows=mcqPool(12,13,3,2);rows[0].text=rows[1].text;
+ const r=a.assembleAutoModel(rows,'MCQ');assert.equal(r.ok,false);assert.equal(r.gaps[0].available,11);
+ const bad=mcqPool(12,13,3,2);bad[0].explanation='';assert.equal(a.assembleAutoModel(bad,'MCQ').ok,false);
+});
+test('editor flags 30 valid MCQ with wrong division counts but accepts all allowed distributions',()=>{
+ const s=p.autoModelSettings('SSC','গণিত','MCQ');assert.equal(s.info.minutes,'৩০ মিনিট');assert.equal(s.info.marks,'30');assert.equal(s.cfg.mcqAnswer,30);
+ for(const rows of [mcqPool(16,9,3,2),mcqPool(12,14,2,2),mcqPool(11,13,3,3)])assert.ok(p.autoModelIssues(rows.map(paper),s).some(i=>i.includes('মানবণ্টন')));
+ for(const al of [12,13,14,15])assert.deepEqual(p.autoModelIssues(mcqPool(al,25-al,3,2).map(paper),s),[]);
+ assert.match(a.autoModelBlueprint('SSC','গণিত','MCQ').offered,/১২–১৫/);
+});
+test('server action returns only IDs for compliant MCQ; stream shortage returns no partial model',async()=>{
+ const rows=mcqPool(18,15,5,5),selection={...choice,variant:'MCQ'};
+ const r=await action({id:'t',role:'TEACHER'},rows).run(selection);
+ assert.equal(r.ok,true);assert.deepEqual(Object.keys(r).sort(),['ids','ok']);
+ const [al,ge,tr,st]=divisionCounts(rows,r.ids);assert.ok(al>=12&&al<=15);assert.ok(ge>=10&&ge<=13);assert.equal(tr+st,5);
+ const fail=await action({id:'t',role:'TEACHER'},mcqPool(80,9,10,10)).run(selection);
+ assert.equal(fail.ok,false);assert.equal(fail.ids,undefined);assert.ok(fail.gaps.some(g=>g.required===10&&g.available===9));
+});
+const diagram = q => ({...q,text:q.text+' ![চিত্র](https://proshnobook.com/question-bank/fixture.svg)'});
+const illustratedCount = (rows,ids) => rows.filter(q=>ids.includes(q.id)&&a.autoModelHasDiagram(q)).length;
+test('MCQ caps figure-bearing QUESTIONS at five while preserving every division quota',()=>{
+ const rows=mcqPool(30,30,15,15).map((q,i)=>i%3===0?q:diagram(q));
+ for(const rand of [0,0.2,0.5,0.9,1]){
+  const r=a.assembleAutoModel(rows,'MCQ',()=>rand);assert.equal(r.ok,true);
+  assert.ok(illustratedCount(rows,r.ids)<=5);
+  const [al,ge,tr,st]=divisionCounts(rows,r.ids);assert.ok(al>=12&&al<=15);assert.ok(ge>=10&&ge<=13);assert.equal(tr+st,5);assert.equal(r.ids.length,30);
+ }
+ const noFigures=mcqPool(12,13,3,2);assert.equal(a.assembleAutoModel(noFigures,'MCQ').ok,true);
+});
+test('diagram sampling reserves slots for later divisions rather than greedily exhausting five',()=>{
+ const rows=mcqPool(20,10,3,2).map(q=>q.id.startsWith('a')||q.id.startsWith('t')||q.id.startsWith('s')?diagram(q):q);
+ // Algebra needs no figures: add 15 different plain algebra rows; combined requires all five.
+ rows.push(...Array.from({length:15},(_,i)=>row('plain'+i,3,'MCQ')));
+ const r=a.assembleAutoModel(rows,'MCQ',()=>0.99);assert.equal(r.ok,true);assert.equal(illustratedCount(rows,r.ids),5);
+ assert.ok(r.ids.filter(id=>id.startsWith('a')).length===0);
+ const scarce=mcqPool(15,10,3,2).map(q=>q.id==='g0'||q.id.startsWith('t')||q.id.startsWith('s')?diagram(q):q);
+ const fail=a.assembleAutoModel(scarce,'MCQ');assert.equal(fail.ok,false);assert.equal(fail.ids,undefined);assert.match(fail.gaps[0].section,/চিত্র/);
+});
+test('only splits compatible with the global image budget are sampled',()=>{
+ // Geometry offers 10 plain +3 figures; combined requires 5 figures.
+ // Only 15 algebra /10 geometry is feasible, despite all four count splits fitting.
+ const rows=mcqPool(15,13,3,2).map(q=>(q.id.startsWith('g')&&Number(q.id.slice(1))>=10)||q.id.startsWith('t')||q.id.startsWith('s')?diagram(q):q);
+ const r=a.assembleAutoModel(rows,'MCQ',()=>0);assert.equal(r.ok,true);assert.deepEqual(divisionCounts(rows,r.ids),[15,10,3,2]);assert.equal(illustratedCount(rows,r.ids),5);
+});
+test('editor warns on six diagram questions; five questions with multiple figures are valid',()=>{
+ const rows=mcqPool(15,10,3,2),s=p.autoModelSettings('SSC','গণিত','MCQ');
+ const five=rows.map((q,i)=>i<5?diagram(diagram(q)):q);
+ assert.deepEqual(p.autoModelIssues(five.map(paper),s),[]);
+ assert.ok(p.autoModelIssues(five.map((q,i)=>paper(i===5?diagram(q):q)),s).some(i=>i.includes('চিত্রযুক্ত')));
+ assert.equal(a.autoModelHasDiagram({...rows[0],explanation:'![answer](https://example.com/a.svg)'}),false);
+ assert.equal(a.autoModelHasDiagram({...rows[0],stimulus:'![figure](https://example.com/a.svg)'}),true);
+ assert.equal(a.autoModelHasDiagram({...rows[0],options:{stimulus:'![figure](https://example.com/a.svg)'}}),true);
+ assert.equal(a.assembleAutoModel(written().map(q=>q.options.stimulus?{...q,options:{...q.options,stimulus:diagram(q).text}}:diagram(q)),'CQ').ok,true);
 });

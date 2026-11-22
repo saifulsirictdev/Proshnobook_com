@@ -7,6 +7,9 @@ import {
 import {
   autoModelBlueprint,
   MATH_DIVISIONS,
+  MATH_MCQ_QUOTAS,
+  autoModelHasDiagram,
+  MATH_MCQ_DISTRIBUTION,
   mathDivision,
   type AutoModelVariant,
 } from "./auto-model";
@@ -72,6 +75,14 @@ export function autoModelIssues(
   if (s.autoModel === "ssc-math-mcq-v1") {
     if (items.length !== 30 || items.some((q) => questionType(q) !== "MCQ"))
       issues.push("নৈর্ব্যক্তিক মডেলে ঠিক ৩০টি MCQ প্রয়োজন।");
+    const counts = MATH_DIVISIONS.map(d => items.filter(q => questionType(q) === "MCQ" && mathDivision(q.topic ?? "")?.id === d.id).length);
+    const quota = MATH_MCQ_QUOTAS;
+    if (items.filter(q => questionType(q) === "MCQ" && autoModelHasDiagram(q)).length > quota.maxDiagramQuestions)
+      issues.push("নৈর্ব্যক্তিক মডেলে চিত্রযুক্ত প্রশ্ন সর্বোচ্চ ৫টি হতে পারবে।");
+    if (counts[0] < quota.algebra.min || counts[0] > quota.algebra.max ||
+        counts[1] < quota.geometry.min || counts[1] > quota.geometry.max ||
+        counts[2] + counts[3] !== quota.combined)
+      issues.push(`MCQ মানবণ্টন মিলছে না: ${MATH_MCQ_DISTRIBUTION} প্রয়োজন।`);
   } else {
     if (
       items.some(

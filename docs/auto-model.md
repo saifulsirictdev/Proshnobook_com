@@ -12,10 +12,81 @@ The practice notice is shown before generation. Neither blueprint claims to be t
 
 | Variant | Offered | Answer | Marks | Time |
 |---|---|---|---|---|
-| MCQ | 30 | All 30 | 30 × 1 = 30 | 30 minutes |
+| MCQ | 30: algebra 12–15, geometry 10–13, trigonometry/mensuration + statistics combined exactly 5 | All 30 | 30 × 1 = 30 | 30 minutes |
 | Written (`CQ`) | 8 CQ: two in each of four divisions; plus 15 short answers | 5 CQ, including at least one from each division; any 10 short answers | 5 × 10 + 10 × 2 = 70 | 150 minutes |
 
 Written divisions: algebra; geometry; trigonometry/mensuration; statistics. Classification uses the **exact existing general-math chapter titles** from `lib/nctb-data.ts`; unknown or ambiguous chapter strings are not guessed. The CQ contract is three nonempty subparts, ক/খ/গ, with marks 2/4/4; ordinary legacy four-part CQ is excluded from this model rather than printed with an incorrect marking scheme. Missing explicit marks are assigned the selected practice blueprint's 2/4/4, not claimed as verified original source marks.
+
+## MCQ distribution update — owner-supplied document
+
+Source: owner's Drive file `1wqyrpfLasmEaFSgh_iNd17fhZMly3P62`,
+“এসএসসি সকল বিষয় মানববন্টন ২০২৭.pdf”, PDF page 12 / printed page 14,
+subject code 109. The page was rendered and visually read, not inferred from the
+corrupted extracted Bengali. This is the owner's requested navigation/practice
+contract, not independent verification of a board publication.
+
+- Eligible, deduplicated stock is split into algebra, geometry and a combined
+  trigonometry/mensuration + statistics pool.
+- Choose randomly among **feasible** splits 12/13, 13/12, 14/11 or 15/10
+  (algebra/geometry), plus exactly 5 combined. Chapter rotation remains within
+  each pool. The source does not specify a separate minimum for either part of
+  the combined pool; none is invented.
+- Missing compatible questions in any quota fails closed, even if another
+  division has abundant stock. No cross-division top-up or partial IDs.
+- The starter/preparation summary shows the distribution. Existing 30 marks,
+  30 minutes and answer-all-30 instructions are unchanged.
+- Editor validation also detects a 30-question paper with the wrong division
+  counts and displays the existing incomplete-model draft warning. Previously
+  saved papers are not silently regenerated; ordinary Chapter papers and the
+  written CQ + SHORT model are unchanged. Existing blueprint ID is retained so
+  old model drafts also receive the new validation when opened.
+- Regression coverage includes every split, skewed pools, deduplication,
+  incompatible rows, combined-pool-only cases, server action IDs-only boundary,
+  edited-paper warnings and checks against the existing 5,750 canonical local
+  records. Canonical tests are read-only, not a live stock/import/approval run.
+
+### Owner-requested figure-question cap
+
+Auto MCQ permits **at most five figure-bearing questions**, not a mandatory
+minimum of three. A question with multiple inline figures consumes one slot;
+figures in the answer/explanation do not count toward the question-paper limit.
+Both row text and stimulus are checked. Existing detached-image/shared-stimulus
+eligibility exclusions remain unchanged; images are never stripped to evade the
+cap. Written CQ/SHORT models have no new image cap.
+
+Before sampling, each feasible division split is checked for the minimum number
+of unavoidable diagram questions across all three pools. Sampling reserves those
+slots for later pools, so optional algebra figures cannot consume the geometry
+budget. If no split fits the global cap, return a clear compatible-stock shortage
+and no partial IDs. The editor also warns when an MCQ model has over five figure
+questions.
+
+**Observed local-stock limitation:** the canonical bank has 900 eligible geometry
+MCQ but only **one** without a question-side figure. Even the 15-algebra /
+10-geometry / 5-combined split therefore needs at least nine figure questions.
+The new rules correctly reject this stock; at least four additional distinct,
+approved-compatible plain geometry MCQ are needed to make that minimal split
+possible (using plain algebra and plain statistics). This is local canonical
+analysis, not an authenticated query of the current production DB. No existing
+question content or diagrams were altered; no import/approval/deployment was done.
+
+The owner subsequently requested **50 additional text-only geometry MCQ**.
+These now live in `content/question-bank/ssc/math/geometry-plain-v1/`, ten each
+for chapters 6/7/8/14/15, registered separately via
+`lib/ssc-geometry-plain-batches.ts`. Local assembly using the historical bank plus
+these 50 succeeds for 25 seeded runs with both division quotas and the five-image
+cap. They remain drafts until imported/reviewed/approved through the existing
+ADMIN workflow; the production assembler still reads approved DB rows only.
+The one-time 5750 release remains frozen and does not include this supplement.
+
+The one-time production release gate is deliberately **not weakened**; rerunning
+it with current stock fails closed under the new rules. Historical publication
+transaction tests and the disposable PostgreSQL rehearsal use an explicitly
+labelled **old count-only gate test double** in
+`scripts/helpers/ssc-math-historical-release-fixture.cjs` to replay prior
+idempotency/approval behavior. Separate tests assert that real current-policy
+preparation and assembly fail. That helper is never imported by production
+selection or publication modules.
 
 ## Server selection and payment boundary
 

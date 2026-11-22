@@ -1,0 +1,151 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৪শ অধ্যায়: অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "book": "Proshnobook — নিজস্ব চিত্রবিহীন জ্যামিতি অনুশীলনী",
+  "edition": "Supplement v1; DRAFT; স্বাধীন শিক্ষক অনুমোদন বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত ২ : ৫। ছোটটির পরিসীমা ১৮ সেমি হলে বড়টির পরিসীমা কত সেমি?",
+      "options": {
+        "A": "36",
+        "B": "50",
+        "C": "45",
+        "D": "30"
+      },
+      "correct": "C",
+      "explanation": "সদৃশ ত্রিভুজের পরিসীমার অনুপাত অনুরূপ বাহুর অনুপাতের সমান; ১৮ × ৫/২ = ৪৫।",
+      "page": "Original plain geometry v1 / ch14 / Q01",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত ৩ : ৪। ক্ষেত্রফলের অনুপাত কত?",
+      "options": {
+        "A": "২৭ : ৬৪",
+        "B": "৯ : ১৬",
+        "C": "৩ : ৪",
+        "D": "৬ : ৮"
+      },
+      "correct": "B",
+      "explanation": "ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ; ৩² : ৪² = ৯ : ১৬।",
+      "page": "Original plain geometry v1 / ch14 / Q02",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল ২৫ ও ৮১ বর্গসেমি। অনুরূপ বাহুর অনুপাত কত?",
+      "options": {
+        "A": "৫ : ৯",
+        "B": "২৫ : ৮১",
+        "C": "১০ : ১৮১",
+        "D": "১ : ৩"
+      },
+      "correct": "A",
+      "explanation": "অনুরূপ বাহুর অনুপাত = √২৫ : √৮১ = ৫ : ৯।",
+      "page": "Original plain geometry v1 / ch14 / Q03",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর AB ও AC বাহুতে যথাক্রমে D ও E বিন্দু এমন যে DE সমান্তরাল BC। AD/AB = ২/৩ এবং BC = ১৫ সেমি হলে DE কত সেমি?",
+      "options": {
+        "A": "5",
+        "B": "12",
+        "C": "22.5",
+        "D": "10"
+      },
+      "correct": "D",
+      "explanation": "ত্রিভুজ ADE ও ABC সদৃশ; DE/BC = AD/AB = ২/৩। তাই DE = ১০ সেমি।",
+      "page": "Original plain geometry v1 / ch14 / Q04",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D হলো AB-এর মধ্যবিন্দু। D দিয়ে BC-এর সমান্তরাল রেখা AC-কে E-তে ছেদ করে। AC = ১৮ সেমি হলে AE কত সেমি?",
+      "options": {
+        "A": "12",
+        "B": "18",
+        "C": "9",
+        "D": "6"
+      },
+      "correct": "C",
+      "explanation": "মধ্যবিন্দু উপপাদ্য অনুযায়ী E-ও AC-এর মধ্যবিন্দু; AE = ১৮/২ = ৯।",
+      "page": "Original plain geometry v1 / ch14 / Q05",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি অ-বর্গাকার আয়তক্ষেত্রের প্রতিসাম্য অক্ষের সংখ্যা কত?",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "1",
+        "D": "3"
+      },
+      "correct": "B",
+      "explanation": "বিপরীত বাহুদ্বয়ের মধ্যবিন্দুসংযোগী দুটি রেখাই প্রতিসাম্য অক্ষ; কর্ণদ্বয় নয়।",
+      "page": "Original plain geometry v1 / ch14 / Q06",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজের প্রতিসাম্য অক্ষ কয়টি?",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "2",
+        "D": "6"
+      },
+      "correct": "A",
+      "explanation": "প্রতিটি শীর্ষবিন্দু থেকে বিপরীত বাহুর মধ্যবিন্দুগামী রেখা একটি করে প্রতিসাম্য অক্ষ; মোট তিনটি।",
+      "page": "Original plain geometry v1 / ch14 / Q07",
+      "difficulty": "EASY"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গকে তার কেন্দ্রের চারদিকে ঘোরালে প্রথমবার নিজের সঙ্গে মিলে যাওয়ার জন্য সর্বনিম্ন ধনাত্মক ঘূর্ণনকোণ কত ডিগ্রি?",
+      "options": {
+        "A": "45",
+        "B": "120",
+        "C": "180",
+        "D": "90"
+      },
+      "correct": "D",
+      "explanation": "বর্গের ঘূর্ণন প্রতিসাম্যের ক্রম ৪; সর্বনিম্ন কোণ = ৩৬০/৪ = ৯০°।",
+      "page": "Original plain geometry v1 / ch14 / Q08",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত ৪ : ৭। ছোটটির একটি উচ্চতা ১২ সেমি হলে অনুরূপ বড় উচ্চতা কত সেমি?",
+      "options": {
+        "A": "18",
+        "B": "28",
+        "C": "21",
+        "D": "16"
+      },
+      "correct": "C",
+      "explanation": "অনুরূপ উচ্চতার অনুপাতও ৪ : ৭; বড় উচ্চতা = ১২ × ৭/৪ = ২১।",
+      "page": "Original plain geometry v1 / ch14 / Q09",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত ৫ : ৬। ছোটটির ক্ষেত্রফল ৭৫ বর্গসেমি হলে বড়টির ক্ষেত্রফল কত বর্গসেমি?",
+      "options": {
+        "A": "125",
+        "B": "108",
+        "C": "90",
+        "D": "100"
+      },
+      "correct": "B",
+      "explanation": "ক্ষেত্রফলের অনুপাত ২৫ : ৩৬। বড় ক্ষেত্রফল = ৭৫ × ৩৬/২৫ = ১০৮।",
+      "page": "Original plain geometry v1 / ch14 / Q10",
+      "difficulty": "EASY"
+    }
+  ]
+}

@@ -3,7 +3,10 @@ const assert=require('node:assert/strict');
 const {withDisposableWalletDatabase}=require('./helpers/disposable-wallet-db.cjs');
 const release=require('./question-bank/release-ssc-math.cjs');
 withDisposableWalletDatabase(async db=>{
- const plan=release.prepare(),actor='vercel-owner-release:'+'a'.repeat(40);
+ // Real current-policy preparation fails before any publication: too few plain geometry MCQ.
+ assert.throws(()=>release.prepare(),/Insufficient compatible Auto Model stock/);
+ // Replay historical transaction mechanics only, with an explicitly old-policy test gate.
+ const plan=require('./helpers/ssc-math-historical-release-fixture.cjs').historicalReleaseFixture(release),actor='vercel-owner-release:'+'a'.repeat(40);
  const unrelated={...plan.records[0],id:'unrelated-other-class',category:'Class 6',approved:false};
  const legacy={...plan.records[0],id:'legacy-ssc-alias',category:'SSC',approved:false};
  await db.question.createMany({data:[unrelated,legacy]});
@@ -19,5 +22,5 @@ withDisposableWalletDatabase(async db=>{
  const changed=plan.records[1];await db.question.update({where:{id:changed.id},data:{explanation:'Changed by review; do not overwrite'}});
  await assert.rejects(release.publish(db,plan,plan.digest,actor,release.ACK));
  assert.equal((await db.question.findUnique({where:{id:changed.id}})).explanation,'Changed by review; do not overwrite');
- console.log('PASS: disposable PostgreSQL SSC release, 5749 exact owner approvals, alias duplicate preserved, unrelated stock unchanged, repeat idempotent, edits fail closed; 8 CQ (2/division) + 15 SHORT and 30 MCQ assembled.');
+ console.log('PASS: disposable PostgreSQL SSC release, 5749 exact owner approvals, alias duplicate preserved, unrelated stock unchanged, repeat idempotent, edits fail closed; historical-policy fixture only; current five-diagram model gate correctly rejects insufficient plain geometry stock.');
 }).catch(()=>{console.error('Disposable SSC math release regression failed; no production database used.');process.exitCode=1;});
