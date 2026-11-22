@@ -157,3 +157,33 @@ Final validation in this workspace: full regression **1,133/1,133 passing**, foc
 2. Review/import sufficient approved compatible math stock, including source-faithful diagrams and three-part 2/4/4 CQ where appropriate. This change does not claim that the live bank has enough questions.
 3. Define and test cross-row shared-stimulus bundles before enabling them for automatic selection.
 4. Perform authenticated integration testing against a real database, including checkout, save/reopen, and PDF, before release.
+
+## Single-click processing → setup flow
+
+The starter's Auto Model submit now mounts the existing `PreparationPopup` and
+immediately calls the approved-bank action. On success it saves the complete new
+IDs/settings and replaces the processing route with `/question-builder/build`.
+There is no intermediate “পূর্ণ কাঠামোর … প্রশ্ন নির্বাচন হয়েছে” success card or
+second “মূল্য যাচাই ও সেটআপ” preparation button. Back does not reopen that
+processing entry. The popup uses database-only branding, indeterminate progress
+while awaiting the real result, and setup-specific destination wording.
+
+The build route's existing `PaidBuilderGate` is unchanged: price review, explicit
+checkout consent, authentication and server-side question access remain required.
+This change neither auto-charges nor grants free access. Chapter/English flows,
+MCQ 2-trig/1-mensuration/2-statistics counts, <=5 figures and written quotas remain
+unchanged. Shortage/network/storage errors remain in the popup with retry and a
+return link; previous selection/settings survive failures. Late results after
+leaving the page cannot overwrite a draft or force navigation. Effect replay
+reuses the same in-flight read; explicit retry starts a new read.
+
+Verification: `node scripts/auto-model/check-preparation-flow.cjs`, also in CI's
+browser step, runs actual starter/preparation/popup components at desktop 1280px
+and mobile 390px using isolated synthetic stock and mocked action/router
+transport. Covers single-click MCQ and written success, visible processing,
+no success interstitial, route replacement/Back, exact saved counts, retries,
+shortage/network/storage rollback and leaving during a read. Local evidence is
+`.cache/auto-model-flow-proof/results.json` and loading screenshots, not committed
+production data. Existing full `check.cjs` was updated for this flow and passed
+both sizes, including preview/local edit/save/reopen and print generation.
+Neither browser harness proves authenticated production checkout/DB save/reopen.

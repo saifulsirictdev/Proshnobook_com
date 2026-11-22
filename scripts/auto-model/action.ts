@@ -5,6 +5,10 @@ export async function prepareAutoModel(raw: {
   subject: string;
   variant: "MCQ" | "CQ";
 }) {
+  // Test-only latency/failure controls let the browser observe the actual popup.
+  sessionStorage.setItem("auto-test-calls", String(Number(sessionStorage.getItem("auto-test-calls") || "0") + 1));
+  await new Promise(resolve => setTimeout(resolve, Number(sessionStorage.getItem("auto-test-delay") || "0")));
+  if (sessionStorage.getItem("auto-test-network") === "1") throw Error("isolated network failure");
   const rows =
     sessionStorage.getItem("auto-test-shortage") === "1"
       ? []
