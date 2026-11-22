@@ -20,4 +20,10 @@ ADMIN-এর existing preview → acknowledgement → Pending import → review/
 - ঐতিহাসিক স্থানীয় ৫,৭৫০টি প্রশ্নের সঙ্গে এই ৫০টি মিলিয়ে ২৫টি seeded model-এ বিভাগীয় quota এবং সর্বোচ্চ পাঁচটি চিত্রযুক্ত MCQ পরীক্ষা। এটি স্থানীয় compatibility test, production approval/import নয়।
 - Registry মোট ১৩৯ batch / ১২,৬১৬ record; ঐতিহাসিক SSC target registry ৫৩ slice / ৫,৭৫০ অপরিবর্তিত।
 
-এই সংযোজনে কোনো production DB import/approval বা deployment চালানো হয়নি।
+## পরবর্তী owner-authorized প্রকাশ
+
+প্রাথমিক সংযোজনের সময় production import/approval করা হয়নি। পরে মালিকের স্পষ্ট
+অনুমোদনে এই ৫০টিই production-এ import ও approve হয়েছে; পুরোনো প্রশ্ন অপরিবর্তিত।
+লাইভ approved stock (৫,৮৫৯টি) দিয়ে পাঁচটি MCQ assembly-তে quota ও সর্বোচ্চ পাঁচটি
+চিত্রযুক্ত প্রশ্নের নিয়ম পাস; written assembly-ও পাস। এটি independent teacher
+certification নয়। রসিদ: `docs/question-bank/ssc-geometry-plain-live-release-receipt.json`।

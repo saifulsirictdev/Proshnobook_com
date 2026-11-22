@@ -75,8 +75,13 @@ These now live in `content/question-bank/ssc/math/geometry-plain-v1/`, ten each
 for chapters 6/7/8/14/15, registered separately via
 `lib/ssc-geometry-plain-batches.ts`. Local assembly using the historical bank plus
 these 50 succeeds for 25 seeded runs with both division quotas and the five-image
-cap. They remain drafts until imported/reviewed/approved through the existing
-ADMIN workflow; the production assembler still reads approved DB rows only.
+cap. Subsequently the owner explicitly authorized approval: the scoped production
+release imported and approved exactly these 50, with no conflicts. Five seeded
+assemblies over 5,859 actual approved DB rows passed quotas and the <=5 figure
+cap; written assembly also passed (23 items). See
+`docs/question-bank/ssc-geometry-plain-live-release-receipt.json` for the receipt.
+This is owner approval, not independent teacher certification. The production
+assembler still reads approved DB rows only.
 The one-time 5750 release remains frozen and does not include this supplement.
 
 The one-time production release gate is deliberately **not weakened**; rerunning
