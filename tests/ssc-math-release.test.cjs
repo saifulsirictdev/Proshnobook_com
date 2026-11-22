@@ -49,7 +49,9 @@ test('phase-two failure leaves imported records Pending, with zero partial appro
 });
 test('current canonical geometry stock fails closed under five-diagram cap; historical release must not be rerun',()=>{
  const r=api.assembleAutoModel(plan.records,'MCQ',()=>0.5);assert.equal(r.ok,false);assert.equal(r.ids,undefined);
- assert.match(r.gaps[0].section,/চিত্র/);assert.equal(r.gaps[0].required,25);assert.equal(r.gaps[0].available,21);
+ assert.match(r.gaps[0].section,/চিত্র/);assert.equal(r.gaps[0].required,25);assert.equal(r.gaps[0].available,18);
+ // Fixed 2 trig + 1 mensuration need three figures in this historical stock;
+ // abundant plain statistics can no longer replace those mandatory items.
  // Existing publication gate correctly refuses a new release with insufficient
  // current-policy stock. No weakening of the production release gate.
  assert.throws(()=>release.prepare(api),/Insufficient compatible Auto Model stock/);

@@ -18,16 +18,19 @@ export const MATH_DIVISIONS = [
   { id: "statistics", title: "ঘ-বিভাগ: পরিসংখ্যান", chapters: [17] },
 ] as const;
 // Owner-supplied SSC 2027 distribution, printed p14 (subject 109).
-// Trigonometry/mensuration + statistics share ONE five-question quota.
+// Owner refinement: the final five are 2 trigonometry + 1 mensuration + 2 statistics.
 export const MATH_MCQ_QUOTAS = {
   algebra: { min: 12, max: 15 },
   geometry: { min: 10, max: 13 },
   combined: 5,
+  trigonometry: 2,
+  mensuration: 1,
+  statistics: 2,
   total: 30,
   maxDiagramQuestions: 5,
 } as const;
 export const MATH_MCQ_DISTRIBUTION =
-  "বীজগণিত ১২–১৫টি · জ্যামিতি ১০–১৩টি · ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে ৫টি";
+  "বীজগণিত ১২–১৫টি · জ্যামিতি ১০–১৩টি · ত্রিকোণমিতি ২টি · পরিমিতি ১টি · পরিসংখ্যান ২টি";
 const mathChapters =
   NCTB_CLASSES.find(
     (c) => c.class === "Class 9" || c.class === "Class 10",
@@ -78,6 +81,20 @@ export function mathDivision(topic: string) {
         (d.chapters as readonly number[]).includes(index + 1),
       );
 }
+/** MCQ-only split of the written trigonometry/mensuration division.
+ * Exact catalog chapters: 9–10 trigonometry, 16 mensuration, 17 statistics.
+ * Written division classification deliberately remains unchanged. */
+export function mathMcqGroup(topic: string) {
+  const division = mathDivision(topic)?.id;
+  return division === "trigonometry"
+    ? (mathChapters.indexOf(topic) === 15 ? "mensuration" : "trigonometry")
+    : division;
+}
+export const MATH_MCQ_FIXED_GROUPS = [
+  { id: "trigonometry", title: "ত্রিকোণমিতি", count: MATH_MCQ_QUOTAS.trigonometry },
+  { id: "mensuration", title: "পরিমিতি", count: MATH_MCQ_QUOTAS.mensuration },
+  { id: "statistics", title: "পরিসংখ্যান", count: MATH_MCQ_QUOTAS.statistics },
+] as const;
 export type AutoModelRow = {
   id: string;
   text: string;
@@ -232,7 +249,7 @@ export function assembleAutoModel(
   if (variant === "MCQ") {
     const algebra = eligible.filter(q => mathDivision(q.topic)?.id === "algebra");
     const geometry = eligible.filter(q => mathDivision(q.topic)?.id === "geometry");
-    const combined = eligible.filter(q => ["trigonometry", "statistics"].includes(mathDivision(q.topic)!.id));
+    const fixedPools = MATH_MCQ_FIXED_GROUPS.map(group => eligible.filter(q => mathMcqGroup(q.topic) === group.id));
     const quota = MATH_MCQ_QUOTAS;
     const minimumDiagrams = (pool: AutoModelRow[], count: number) =>
       Math.max(0, count - pool.filter(q => !autoModelHasDiagram(q)).length);
@@ -247,13 +264,15 @@ export function assembleAutoModel(
       if (!gaps.length)
         gaps.push({ section: "বীজগণিত ও জ্যামিতি (বিভাগীয় সীমার মধ্যে)", required: 25, available: Math.min(algebra.length, quota.algebra.max) + Math.min(geometry.length, quota.geometry.max) });
     }
-    if (combined.length < quota.combined)
-      gaps.push({ section: "ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে", required: quota.combined, available: combined.length });
+    MATH_MCQ_FIXED_GROUPS.forEach((group, i) => {
+      if (fixedPools[i].length < group.count)
+        gaps.push({ section: group.title, required: group.count, available: fixedPools[i].length });
+    });
     if (gaps.length) return { ok: false as const, gaps };
     // Reserve mandatory figure slots across ALL pools before sampling. A greedy
     // cap per division can exhaust the budget and falsely reject a feasible paper.
     const neededDiagrams = (s: typeof splits[number]) =>
-      minimumDiagrams(algebra, s.algebra) + minimumDiagrams(geometry, s.geometry) + minimumDiagrams(combined, quota.combined);
+      minimumDiagrams(algebra, s.algebra) + minimumDiagrams(geometry, s.geometry) + fixedPools.reduce((n, pool, i) => n + minimumDiagrams(pool, MATH_MCQ_FIXED_GROUPS[i].count), 0);
     const feasible = splits.filter(s => neededDiagrams(s) <= quota.maxDiagramQuestions);
     if (!feasible.length) return { ok: false as const, gaps: [{
       section: "সর্বোচ্চ ৫টি চিত্রযুক্ত প্রশ্ন রেখে পূর্ণ MCQ (চিত্রবিহীন প্রশ্নের ঘাটতি)",
@@ -261,9 +280,9 @@ export function assembleAutoModel(
       available: Math.max(...splits.map(s => quota.total - neededDiagrams(s))),
     }] };
     const split = feasible[Math.min(feasible.length - 1, Math.max(0, Math.floor(random() * feasible.length)))];
-    const pools = [algebra, geometry, combined];
-    const counts = [split.algebra, split.geometry, quota.combined];
-    const labels = [MATH_DIVISIONS[0].title, MATH_DIVISIONS[1].title, "ত্রিকোণমিতি ও পরিমিতি এবং পরিসংখ্যান মিলিয়ে"];
+    const pools = [algebra, geometry, ...fixedPools];
+    const counts = [split.algebra, split.geometry, ...MATH_MCQ_FIXED_GROUPS.map(group => group.count)];
+    const labels = [MATH_DIVISIONS[0].title, MATH_DIVISIONS[1].title, ...MATH_MCQ_FIXED_GROUPS.map(group => group.title)];
     let remaining = quota.maxDiagramQuestions;
     for (let i = 0; i < pools.length; i++) {
       const reserve = pools.slice(i + 1).reduce((n, pool, j) => n + minimumDiagrams(pool, counts[i + j + 1]), 0);
