@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING",
+  "chapter": 13,
+  "topic": "১৩শ অধ্যায়: সসীম ধারা",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 96535,
+      "sha256": "90f8683d1ade2a587a91ab48f3a0ebc194cdc43e97e4853f2bce5753694103af"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 62913,
+      "sha256": "ac035b5b2d05f4311c8a87202913a6789e55c722a9539d7e700cde48501ea525"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 39985,
+      "sha256": "15c3b9fa18fce44d97398e35e6e0118cd75596b758c4cbd18960b9a7e1100c81"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 156298,
+    "sha256": "f6bf187f68008c9329128449867b9d00251e85686a0022e9e509f6e6d4833232"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 2065,
+    "sha256": "9e3645ae241b05b436b404e0cdcda4b38c3f9a8b118af9e3b7470b4b0dfc167c"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

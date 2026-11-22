@@ -9,3 +9,12 @@ node_modules/
 
 # Local PDF-review tooling
 .venv/
+
+# Python generator caches
+__pycache__/
+*.py[cod]
+
+# Redundant generated bundles are backed up in Drive; retain generators/receipts.
+# Canonical importer slices, SVG assets and review evidence remain versioned.
+docs/question-bank/ssc-math-*-backup.zip
+docs/question-bank/ssc-math-*-questions-v1-backup.json

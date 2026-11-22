@@ -201,7 +201,7 @@ export default async function AdminQuestionsPage({
 
                     {Object.keys(options).length > 0 && (
                       <div className="mt-2.5 grid grid-cols-2 gap-2 text-xs">
-                        {Object.entries(options).map(([k, v]) => {
+                        {Object.entries(options).filter(([key]) => key !== "_provenance").map(([k, v]) => {
                           const isCorrect = q.correct === k;
                           return (
                             <div

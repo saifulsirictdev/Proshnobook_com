@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { autoModelBlueprint, isAcademicCategory, AUTO_MODEL_NOTICE } from "@/lib/auto-model";
 import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
 import { englishQuestionItemGroups, englishLessonOptions } from "@/lib/english/topic-options";
 import { englishBuilderContext, englishBuilderHref } from "@/lib/english/builder-mode";
@@ -81,6 +82,10 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const jobSubject = jobSubjects.find((item) => item.name === subject);
   const [topicCategory, setTopicCategory] = useState(""); // ক্যাটাগরি/ইউনিট
   const [topic, setTopic] = useState(""); // নির্দিষ্ট টপিক
+  const [selectionMode, setSelectionMode] = useState("");
+  const [modelVariant, setModelVariant] = useState("");
+  const academic = isAcademicCategory(category) && !/english|ইংরেজি/i.test(subject) && !append;
+  const modelPlan = autoModelBlueprint(category, subject, modelVariant);
 
   const selectedClassData = useMemo(() => findClassData(category), [category]);
 
@@ -136,6 +141,12 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
     }`;
 
   function go() {
+    if (academic && selectionMode === "auto") {
+      if (!modelPlan) return;
+      router.push(`/question-builder/auto-model?${new URLSearchParams({category, subject, variant:modelVariant})}`);
+      return;
+    }
+    if (academic && selectionMode !== "chapter") return;
     if (english && !append) {
       const href = englishBuilderHref(category, subject, englishMode, englishTopic, english.paper === 2 ? "item" : englishTopicKind);
       if (href) router.push(href);
@@ -167,7 +178,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
             setCategory(e.target.value);
             setExamId("");
             setBranchId("");
-            setSubject(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
+            setSubject(""); setSelectionMode(""); setModelVariant(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
             setTopicCategory("");
             setTopic("");
           }}
@@ -189,7 +200,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
               setQuestionType(c === "Job" ? "MCQ" : "ALL");
               setExamId("");
             setBranchId("");
-              setSubject(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
+              setSubject(""); setSelectionMode(""); setModelVariant(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
               setTopicCategory("");
               setTopic("");
             }}
@@ -213,7 +224,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
               aria-label="পরীক্ষার প্রস্তুতির ধরন"
               className="mt-2 w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
               value={examId}
-              onChange={(e) => { setExamId(e.target.value); setBranchId(""); setSubject(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind(""); setTopicCategory(""); setTopic(""); }}
+              onChange={(e) => { setExamId(e.target.value); setBranchId(""); setSubject(""); setSelectionMode(""); setModelVariant(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind(""); setTopicCategory(""); setTopic(""); }}
             >
               <option value="">{isJob ? "— পরীক্ষা নির্বাচন করুন —" : "সব প্রস্তুতির বিষয়"}</option>
               {outlines.map((exam) => <option key={exam.id} value={exam.id}>{exam.name}</option>)}
@@ -221,7 +232,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           </label>
           {isJob && jobExam?.branches && (
             <label className="block font-semibold">NTRCA শাখা
-              <select aria-label="NTRCA শাখা" value={branchId} className="mt-2 w-full rounded-lg border bg-white px-3 py-3 text-sm" onChange={(e) => { setBranchId(e.target.value); setSubject(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind(""); setTopicCategory(""); setTopic(""); }}>
+              <select aria-label="NTRCA শাখা" value={branchId} className="mt-2 w-full rounded-lg border bg-white px-3 py-3 text-sm" onChange={(e) => { setBranchId(e.target.value); setSubject(""); setSelectionMode(""); setModelVariant(""); setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind(""); setTopicCategory(""); setTopic(""); }}>
                 <option value="">— School / College বাছুন —</option>
                 {jobExam.branches.map((branch) => <option key={branch.id} value={branch.id}>{branch.name}</option>)}
               </select>
@@ -245,7 +256,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         className="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm"
         value={subject}
         onChange={(e) => {
-          setSubject(e.target.value);
+          setSubject(e.target.value); setSelectionMode(""); setModelVariant("");
           setEnglishMode(""); setEnglishTopic(""); setEnglishTopicKind("");
           setTopicCategory("");
           setTopic("");
@@ -306,7 +317,18 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
           এটি practice template; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন।
         </p>}
       </>}
-      {(!english || append) && <>
+      {academic && subject && <fieldset className="space-y-3 rounded-xl border border-emerald-200 bg-emerald-50/50 p-4">
+        <legend className="px-2 text-sm font-bold text-emerald-900">৩ · কীভাবে প্রশ্ন বাছবেন?</legend>
+        <div className="grid grid-cols-2 gap-3">
+          {[{id:"chapter",title:"Chapter",desc:"অধ্যায় থেকে নিজে বাছুন"},{id:"auto",title:"Auto Model",desc:"কাঠামো মেনে পূর্ণ মডেল"}].map(o=><button key={o.id} type="button" aria-pressed={selectionMode===o.id} onClick={()=>{setSelectionMode(o.id);setModelVariant("");}} className={`rounded-xl border p-3 text-left ${selectionMode===o.id?"border-emerald-700 bg-emerald-700 text-white shadow-sm":"border-slate-200 bg-white text-slate-800"}`}><span className="block font-bold">{o.title}</span><span className="mt-1 block text-xs">{o.desc}</span></button>)}
+        </div>
+        {selectionMode==="auto" && <>
+          <p className="text-sm font-semibold text-slate-700">৪ · মডেলের ধরন</p>
+          <div className="grid grid-cols-2 gap-3">{[{id:"MCQ",title:"MCQ",desc:"নৈর্ব্যক্তিক"},{id:"CQ",title:"CQ",desc:"সৃজনশীল / লিখিত"}].map(o=><button type="button" key={o.id} aria-pressed={modelVariant===o.id} onClick={()=>setModelVariant(o.id)} className={`rounded-lg border p-3 text-left ${modelVariant===o.id?"border-emerald-600 bg-emerald-100 text-emerald-950":"border-slate-200 bg-white"}`}><b>{o.title}</b><span className="block text-xs">{o.desc}</span></button>)}</div>
+          {modelPlan ? <div className="rounded-lg border border-emerald-200 bg-white p-3 text-sm"><h3 className="font-bold text-emerald-900">{modelPlan.title}</h3><p className="my-2">পূর্ণমান {modelPlan.totalMarks} · সময় {modelPlan.minutes}</p><p>{modelPlan.offered}</p><p className="mt-2">{modelPlan.instructions}</p><p className="mt-3 text-xs text-slate-500">{AUTO_MODEL_NOTICE}</p></div> : modelVariant && <p role="status" className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950">এই শ্রেণি ও বিষয়ের নিজস্ব পূর্ণ মডেল কাঠামো এখনও প্রস্তুত নয়। গণিতের কাঠামো এখানে ব্যবহার করা হবে না। আপাতত Chapter থেকে প্রশ্ন বাছুন।</p>}
+        </>}
+      </fieldset>}
+      {(!english || append) && (!academic || selectionMode === "chapter") && <>
       {/* 🎯 দুই-ধাপে ক্যাটাগরি/ইউনিট → টপিক সিলেকশন (subCategories থাকলে) */}
       {hasGroups ? (
         <>
@@ -379,11 +401,11 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
 
       <button
         type="button"
-        disabled={!subject || (!!english && !append && (!englishMode || (englishMode === "topic" && ((english.paper === 1 && !englishTopicKind) || !englishTopic))))}
+        disabled={!subject || (academic && (!selectionMode || (selectionMode === "auto" && !modelPlan))) || (!!english && !append && (!englishMode || (englishMode === "topic" && ((english.paper === 1 && !englishTopicKind) || !englishTopic))))}
         onClick={go}
         className="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-3 font-semibold text-white disabled:opacity-50"
       >
-        {english && !append && englishMode === "full" ? "পূর্ণ মডেল টেস্ট তৈরি করুন" : "প্রশ্ন তৈরী করুন"} <ArrowRight size={18} />
+        {academic && selectionMode === "auto" ? "মডেল প্রস্তুত ও কাঠামো যাচাই করুন" : english && !append && englishMode === "full" ? "পূর্ণ মডেল টেস্ট তৈরি করুন" : "প্রশ্ন তৈরী করুন"} <ArrowRight size={18} />
       </button>
       {!pairs.length && !curriculumSubjects.length && !outlines.length && (
         <p className="text-center text-xs text-slate-500">

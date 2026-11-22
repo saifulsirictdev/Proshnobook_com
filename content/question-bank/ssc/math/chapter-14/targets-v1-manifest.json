@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 14,
+  "topic": "১৪শ অধ্যায়: অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 135494,
+      "sha256": "d5e8f78c4cfeb53bda49eca7c3ff2224089a984e3c612cbee031a72c14ac7098"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 88208,
+      "sha256": "fdebaa67f51a1a1dac80c1129341ba46f76d940d6856b03a123cc11f3d8bdf80"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 63848,
+      "sha256": "f52ed4e46f9a09be88a2f298132c6cae47122294b0e02287203bbad1d24cb56e"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 691272,
+    "sha256": "9ec07ddba15863128ddb27aab9fad1c608aed05f0dc879848c88e4752ae121de"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 3159,
+    "sha256": "00f1a368fc3948918d93c169d2306ad0e80c853c6d6b546f4ff8d4997f4e0344"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৭ম অধ্যায়: ব্যবহারিক জ্যামিতি",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ জ্যামিতি অনুশীলনী",
+  "edition": "Chapter 7 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বস আঁকতে কটি উপাত্ত প্রয়োজন?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-rajshahi-2.svg)",
+      "options": {
+        "A": "২টি",
+        "B": "৩টি",
+        "C": "৪টি",
+        "D": "৫টি"
+      },
+      "correct": "A",
+      "explanation": "যথাযথ দুটি স্বাধীন উপাত্তে রম্বস নির্দিষ্ট হয়—যেমন দুই কর্ণ। শুধু যেকোনো দুটি সংখ্যা যথেষ্ট নয়; উপাত্তগুলো সঙ্গত হতে হবে।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক আঁকতে কটি নিরপেক্ষ উপাত্তের প্রয়োজন?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-cumilla-18.svg)",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪",
+        "D": "৫"
+      },
+      "correct": "B",
+      "explanation": "তিনটি উপযুক্ত স্বাধীন উপাত্ত লাগে; যেমন দুটি সন্নিহিত বাহু ও তাদের অন্তর্ভুক্ত কোণ। বিপরীত বাহু সমান হওয়ায় শুধু চার বাহুর দৈর্ঘ্য দিলে সাধারণভাবে কোণ নির্দিষ্ট হয় না।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 18",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "18"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "দুইটি কর্ণের দৈর্ঘ্য দেওয়া থাকলে নিচের কোনটি আঁকা সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-mymensingh-10.svg)",
+      "options": {
+        "A": "ট্রাপিজিয়াম",
+        "B": "রম্বস",
+        "C": "আয়ত",
+        "D": "সামান্তরিক"
+      },
+      "correct": "B",
+      "explanation": "রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে। তাই দুটি প্রদত্ত কর্ণকে এভাবে বসিয়ে চার প্রান্ত যোগ করলে রম্বস পাওয়া যায়। সাধারণ আয়ত/সামান্তরিক শুধু এই উপাত্তে নির্দিষ্ট হয় না।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 10",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "10"
+        }
+      ]
+    }
+  ]
+}

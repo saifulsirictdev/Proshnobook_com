@@ -1,6 +1,7 @@
 "use client";
 import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
+import { questionProvenanceLabels } from "@/lib/question-provenance";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   paginateContinuous,
@@ -25,8 +26,14 @@ import {
   type PaperItem,
   type PaperSettings,
 } from "@/lib/paper-builder";
-function PaperMathText({ text }: { text: string }) {
-  return <RichPaperText text={text} />;
+function PaperMathText({ text, inlineImages = false }: { text: string; inlineImages?: boolean }) {
+  if (!inlineImages) return <RichPaperText text={text} />;
+  // Auto-model self-contained diagrams: no HTML/attributes are interpreted.
+  const parts = text.split(/(!\[[^\]\n]*\]\(https:\/\/[^\s)]+\))/g);
+  return <>{parts.map((part,i)=>{
+    const image=part.match(/^!\[([^\]\n]*)\]\((https:\/\/[^\s)]+)\)$/);
+    return image && safeImage(image[2]) ? <img key={i} src={image[2]} alt={image[1]||"প্রশ্নের চিত্র"} referrerPolicy="no-referrer" style={{display:"block",maxWidth:"100%",width:180,height:"auto",margin:"6px auto"}}/> : <RichPaperText key={i} text={part}/>;
+  })}</>;
 }
 
 export type PreviewQuestion = {
@@ -38,6 +45,8 @@ export type PreviewSection = {
   type: string;
   title: string;
   questions: PreviewQuestion[];
+  instruction?: string;
+  startNumber?: number;
 };
 const families = {
   kalpurush: '"QmPaperKalpurush", var(--font-en), serif',
@@ -141,7 +150,7 @@ export default function PaperPreview({
       )}
       {s.show.instr && <p className="mb-2 italic">{s.info.instr}</p>}
       {!sections && (
-        <h3 className="font-bold underline">
+        <h3 className="font-bold underline" style={{ whiteSpace: "pre-line" }}>
           {title}
           {mode === "questions" && type === "MCQ"
             ? " (প্রতিটি প্রশ্নের মান ১)"
@@ -288,15 +297,22 @@ export default function PaperPreview({
         <div className="flex items-start gap-1.5">
           <b className="shrink-0">{bn(String(index + 1).padStart(2, "0"))}।</b>
           <div className="min-w-0 flex-1">
+            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{type === "CQ" ? "১০" : type === "SHORT" ? "২" : "১"}]</span>}
             <span>
               {s.show.important && attachment?.important && (
                 <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
               )}
               <PaperMathText
                 text={type === "CQ" ? q.stimulus || q.text : q.text}
+                inlineImages={!!s.autoModel}
               />
+              {s.show.boardSource && questionProvenanceLabels(q).map(label => (
+                <span key={label} className="paper-provenance" style={{ display: "inline-block", maxWidth: "100%", marginInlineStart: "0.6em", fontSize: "0.78em", whiteSpace: "normal", overflowWrap: "anywhere" }}>
+                  [{label}]
+                </span>
+              ))}
             </span>
-            {s.show.marks && (
+            {s.show.marks && !s.autoModel && (
               <span className="float-right">
                 [{type === "CQ" ? "১০" : "১"}]
               </span>
@@ -386,11 +402,11 @@ export default function PaperPreview({
             )}
             {type === "CQ" && q.subQuestions && (
               <div className="mt-2 space-y-1">
-                {Object.entries(q.subQuestions).map(([key, text], i) => (
+                {Object.entries(q.subQuestions).filter(([,text])=>!!text?.trim()).map(([key, text], i) => (
                   <p key={key}>
                     <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
                     <PaperMathText text={text} />
-                    <span className="float-right">{bn(i + 1)}</span>
+                    <span className="float-right">{bn(s.autoModel === "ssc-math-written-v1" ? [2,4,4][i] ?? i+1 : i + 1)}</span>
                   </p>
                 ))}
               </div>
@@ -424,7 +440,7 @@ export default function PaperPreview({
           : s.cfg.shortAnswer) || section.questions.length;
     return (
       <div id={id} style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
-        <h3 className="font-bold underline">
+        <h3 className="font-bold underline" style={{ whiteSpace: "pre-line" }}>
           {section.title}
           {section.type === "MCQ" ? " (প্রতিটি প্রশ্নের মান ১)" : ""}
         </h3>
@@ -432,8 +448,7 @@ export default function PaperPreview({
           className="text-right"
           style={{ fontSize: "0.85em", marginBottom: 0 }}
         >
-          {bn(section.questions.length)}টির মধ্যে{" "}
-          {bn(Math.min(answer, section.questions.length))}টির উত্তর দাও।
+          {section.instruction !== undefined ? section.instruction : <>{bn(section.questions.length)}টির মধ্যে {bn(Math.min(answer, section.questions.length))}টির উত্তর দাও।</>}
         </p>
       </div>
     );
@@ -623,7 +638,7 @@ export default function PaperPreview({
               >
                 {section.questions.map((v, i) => (
                   <div data-measure-question key={v.q.id}>
-                    {question(v, i, section.type)}
+                    {question(v, i + (section.startNumber ?? 0), section.type)}
                   </div>
                 ))}
               </div>
@@ -720,7 +735,7 @@ export default function PaperPreview({
                           )}
                         {segment.columns.flat().map((i) => (
                           <div key={section.questions[i].q.id}>
-                            {question(section.questions[i], i, section.type)}
+                            {question(section.questions[i], i + (section.startNumber ?? 0), section.type)}
                           </div>
                         ))}
                       </div>

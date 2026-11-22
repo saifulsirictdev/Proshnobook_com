@@ -1,0 +1,2133 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৪শ অধ্যায়: অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 14 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি বিষমবাহু ত্রিভুজের মোট কয়টি প্রতিসাম্য রেখা আছে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/source-cumilla-7.svg)",
+      "options": {
+        "A": "$0$",
+        "B": "$1$",
+        "C": "$3$",
+        "D": "অসংখ্য"
+      },
+      "correct": "A",
+      "explanation": "প্রতিফলন-অক্ষ থাকলে ত্রিভুজের অন্তত দুই বাহু সমান হতে হয়। বিষমবাহুতে তিন বাহুই ভিন্ন; তাই কোনো প্রতিসাম্য অক্ষ নেই।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 7",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "7"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সাধারণ আয়তক্ষেত্রের (বর্গ নয়) ক্ষুদ্রতম ধনাত্মক আবর্তন কোণের পরিমাণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/source-rajshahi-13.svg)",
+      "options": {
+        "A": "$360$",
+        "B": "$180$",
+        "C": "$90$",
+        "D": "$45$"
+      },
+      "correct": "B",
+      "explanation": "কেন্দ্রের চারদিকে 180° ঘোরালে বিপরীত শীর্ষগুলো বিনিময় হয় এবং আয়তক্ষেত্র মিলে যায়। বর্গ না হওয়ায় 90°-এ দৈর্ঘ্য ও প্রস্থের অবস্থান বিনিময়ে মেলে না।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 13",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "13"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=9 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-1.svg)",
+      "explanation": "$QR/BC=PQ/AB=3$; $QR=4\\times3=12$ সেমি। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$13$",
+        "C": "$12$",
+        "D": "$24$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/3, BC=9 সেমি ও AC=12 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-1.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/3$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:5 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-1.svg)",
+      "explanation": "$A_2/A_1=[(5)/2]^2$; $A_2=12\\times(5)^2/4=75$। সঠিক উত্তর $75$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{75}{2}$",
+        "B": "$76$",
+        "C": "$75$",
+        "D": "$150$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(3,2), B=(6,2), C=(3,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-1.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(3,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-1.svg)",
+      "explanation": "P=(-1,3); y-স্থানাঙ্ক 3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 6-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-1.svg)",
+      "explanation": "$360^\\circ/6=60^\\circ$। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$120$",
+        "B": "$30$",
+        "C": "$61$",
+        "D": "$60$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=6, AC=9, BC=12 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-1.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(12)=\\frac{24}{5}$ সেমি। সঠিক উত্তর $\\frac{24}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{29}{5}$",
+        "B": "$\\frac{24}{5}$",
+        "C": "$\\frac{48}{5}$",
+        "D": "$\\frac{12}{5}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 18 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-1.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times3=12$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$6$",
+        "C": "$13$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 9 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-1.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=9/3=3$; H=6 মিটার। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$7$",
+        "C": "$6$",
+        "D": "$12$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 3 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-1.svg)",
+      "explanation": "$4\\times3=12$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$6$",
+        "C": "$13$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 81 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-1.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{9}=3$; বাহু $15$ সেমি। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$15$",
+        "C": "$30$",
+        "D": "$\\frac{15}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 3। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-1.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 3; মধ্যমা $18$ সেমি। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$9$",
+        "C": "$19$",
+        "D": "$18$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 6 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-1.svg)",
+      "explanation": "$2\\pi(6)/(2\\pi\\cdot2)=3$। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(3,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-1.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=6 সেমি এবং ABC-এর ক্ষেত্রফল 36 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-1.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=3$। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=12 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-2.svg)",
+      "explanation": "$QR/BC=PQ/AB=4$; $QR=4\\times4=16$ সেমি। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$16$",
+        "C": "$32$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/4, BC=12 সেমি ও AC=16 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-2.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/4$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:6 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-2.svg)",
+      "explanation": "$A_2/A_1=[(6)/2]^2$; $A_2=12\\times(6)^2/4=108$। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$109$",
+        "B": "$108$",
+        "C": "$216$",
+        "D": "$54$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(4,2), B=(7,2), C=(4,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-2.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(4,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-2.svg)",
+      "explanation": "P=(-1,4); y-স্থানাঙ্ক 4। সঠিক উত্তর $4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$5$",
+        "C": "$4$",
+        "D": "$8$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 7-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-2.svg)",
+      "explanation": "$360^\\circ/7=\\frac{360}{7}^\\circ$। সঠিক উত্তর $\\frac{360}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{180}{7}$",
+        "B": "$\\frac{367}{7}$",
+        "C": "$\\frac{360}{7}$",
+        "D": "$\\frac{720}{7}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=8, AC=12, BC=16 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-2.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(16)=\\frac{32}{5}$ সেমি। সঠিক উত্তর $\\frac{32}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{32}{5}$",
+        "B": "$\\frac{64}{5}$",
+        "C": "$\\frac{16}{5}$",
+        "D": "$\\frac{37}{5}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 24 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-2.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times4=16$। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$17$",
+        "C": "$16$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 12 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-2.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=12/3=4$; H=8 মিটার। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$8$",
+        "C": "$16$",
+        "D": "$4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 4 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-2.svg)",
+      "explanation": "$4\\times4=16$। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$17$",
+        "C": "$16$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 144 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-2.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{16}=4$; বাহু $20$ সেমি। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$40$",
+        "C": "$10$",
+        "D": "$21$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 4। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-2.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 4; মধ্যমা $24$ সেমি। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$25$",
+        "C": "$24$",
+        "D": "$48$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 8 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-2.svg)",
+      "explanation": "$2\\pi(8)/(2\\pi\\cdot2)=4$। সঠিক উত্তর $4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$5$",
+        "B": "$4$",
+        "C": "$8$",
+        "D": "$2$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(4,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-2.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=8 সেমি এবং ABC-এর ক্ষেত্রফল 64 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-2.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=4$। সঠিক উত্তর $4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$2$",
+        "C": "$5$",
+        "D": "$4$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=15 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-3.svg)",
+      "explanation": "$QR/BC=PQ/AB=5$; $QR=4\\times5=20$ সেমি। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$40$",
+        "C": "$10$",
+        "D": "$21$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/5, BC=15 সেমি ও AC=20 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-3.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/5$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:7 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-3.svg)",
+      "explanation": "$A_2/A_1=[(7)/2]^2$; $A_2=12\\times(7)^2/4=147$। সঠিক উত্তর $147$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$147$",
+        "B": "$294$",
+        "C": "$\\frac{147}{2}$",
+        "D": "$148$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(5,2), B=(8,2), C=(5,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-3.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(5,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-3.svg)",
+      "explanation": "P=(-1,5); y-স্থানাঙ্ক 5। সঠিক উত্তর $5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$5$",
+        "C": "$10$",
+        "D": "$\\frac{5}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 8-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-3.svg)",
+      "explanation": "$360^\\circ/8=45^\\circ$। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$46$",
+        "B": "$45$",
+        "C": "$90$",
+        "D": "$\\frac{45}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=10, AC=15, BC=20 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-3.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(20)=8$ সেমি। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$4$",
+        "C": "$9$",
+        "D": "$8$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 30 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-3.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times5=20$। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$20$",
+        "C": "$40$",
+        "D": "$10$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 15 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-3.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=15/3=5$; H=10 মিটার। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$20$",
+        "C": "$5$",
+        "D": "$11$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 5 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-3.svg)",
+      "explanation": "$4\\times5=20$। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$20$",
+        "C": "$40$",
+        "D": "$10$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 225 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-3.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{25}=5$; বাহু $25$ সেমি। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$\\frac{25}{2}$",
+        "C": "$26$",
+        "D": "$25$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 5। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-3.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 5; মধ্যমা $30$ সেমি। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$30$",
+        "C": "$60$",
+        "D": "$15$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 10 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-3.svg)",
+      "explanation": "$2\\pi(10)/(2\\pi\\cdot2)=5$। সঠিক উত্তর $5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$5$",
+        "B": "$10$",
+        "C": "$\\frac{5}{2}$",
+        "D": "$6$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(5,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-3.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=10 সেমি এবং ABC-এর ক্ষেত্রফল 100 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-3.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=5$। সঠিক উত্তর $5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{5}{2}$",
+        "B": "$6$",
+        "C": "$5$",
+        "D": "$10$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=18 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-4.svg)",
+      "explanation": "$QR/BC=PQ/AB=6$; $QR=4\\times6=24$ সেমি। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$12$",
+        "C": "$25$",
+        "D": "$24$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/6, BC=18 সেমি ও AC=24 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-4.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/6$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:8 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-4.svg)",
+      "explanation": "$A_2/A_1=[(8)/2]^2$; $A_2=12\\times(8)^2/4=192$। সঠিক উত্তর $192$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$384$",
+        "B": "$96$",
+        "C": "$193$",
+        "D": "$192$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(6,2), B=(9,2), C=(6,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-4.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(6,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-4.svg)",
+      "explanation": "P=(-1,6); y-স্থানাঙ্ক 6। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$12$",
+        "C": "$3$",
+        "D": "$7$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 9-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-4.svg)",
+      "explanation": "$360^\\circ/9=40^\\circ$। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$80$",
+        "C": "$20$",
+        "D": "$41$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=12, AC=18, BC=24 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-4.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(24)=\\frac{48}{5}$ সেমি। সঠিক উত্তর $\\frac{48}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{24}{5}$",
+        "B": "$\\frac{53}{5}$",
+        "C": "$\\frac{48}{5}$",
+        "D": "$\\frac{96}{5}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 36 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-4.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times6=24$। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$48$",
+        "C": "$12$",
+        "D": "$25$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 18 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-4.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=18/3=6$; H=12 মিটার। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$6$",
+        "C": "$13$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 6 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-4.svg)",
+      "explanation": "$4\\times6=24$। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$48$",
+        "C": "$12$",
+        "D": "$25$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 324 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-4.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{36}=6$; বাহু $30$ সেমি। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$31$",
+        "C": "$30$",
+        "D": "$60$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 6। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-4.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 6; মধ্যমা $36$ সেমি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$72$",
+        "C": "$18$",
+        "D": "$37$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 12 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-4.svg)",
+      "explanation": "$2\\pi(12)/(2\\pi\\cdot2)=6$। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$3$",
+        "C": "$7$",
+        "D": "$6$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(6,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-4.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=12 সেমি এবং ABC-এর ক্ষেত্রফল 144 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-4.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=6$। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$6$",
+        "C": "$12$",
+        "D": "$3$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=21 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-5.svg)",
+      "explanation": "$QR/BC=PQ/AB=7$; $QR=4\\times7=28$ সেমি। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$29$",
+        "C": "$28$",
+        "D": "$56$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/7, BC=21 সেমি ও AC=28 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-5.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/7$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:9 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-5.svg)",
+      "explanation": "$A_2/A_1=[(9)/2]^2$; $A_2=12\\times(9)^2/4=243$। সঠিক উত্তর $243$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{243}{2}$",
+        "B": "$244$",
+        "C": "$243$",
+        "D": "$486$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(7,2), B=(10,2), C=(7,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-5.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(7,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-5.svg)",
+      "explanation": "P=(-1,7); y-স্থানাঙ্ক 7। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$\\frac{7}{2}$",
+        "C": "$8$",
+        "D": "$7$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 10-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-5.svg)",
+      "explanation": "$360^\\circ/10=36^\\circ$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$18$",
+        "C": "$37$",
+        "D": "$36$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=14, AC=21, BC=28 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-5.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(28)=\\frac{56}{5}$ সেমি। সঠিক উত্তর $\\frac{56}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{61}{5}$",
+        "B": "$\\frac{56}{5}$",
+        "C": "$\\frac{112}{5}$",
+        "D": "$\\frac{28}{5}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 42 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-5.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times7=28$। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$14$",
+        "C": "$29$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 21 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-5.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=21/3=7$; H=14 মিটার। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$15$",
+        "C": "$14$",
+        "D": "$28$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 7 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-5.svg)",
+      "explanation": "$4\\times7=28$। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$14$",
+        "C": "$29$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 441 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-5.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{49}=7$; বাহু $35$ সেমি। সঠিক উত্তর $35$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$35$",
+        "C": "$70$",
+        "D": "$\\frac{35}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 7। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-5.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 7; মধ্যমা $42$ সেমি। সঠিক উত্তর $42$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$84$",
+        "B": "$21$",
+        "C": "$43$",
+        "D": "$42$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 14 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-5.svg)",
+      "explanation": "$2\\pi(14)/(2\\pi\\cdot2)=7$। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{7}{2}$",
+        "B": "$8$",
+        "C": "$7$",
+        "D": "$14$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(7,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-5.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=14 সেমি এবং ABC-এর ক্ষেত্রফল 196 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-5.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=7$। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$14$",
+        "C": "$\\frac{7}{2}$",
+        "D": "$8$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=24 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-6.svg)",
+      "explanation": "$QR/BC=PQ/AB=8$; $QR=4\\times8=32$ সেমি। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$32$",
+        "C": "$64$",
+        "D": "$16$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/8, BC=24 সেমি ও AC=32 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-6.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/8$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:10 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-6.svg)",
+      "explanation": "$A_2/A_1=[(10)/2]^2$; $A_2=12\\times(10)^2/4=300$। সঠিক উত্তর $300$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$301$",
+        "B": "$300$",
+        "C": "$600$",
+        "D": "$150$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(8,2), B=(11,2), C=(8,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-6.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(8,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-6.svg)",
+      "explanation": "P=(-1,8); y-স্থানাঙ্ক 8। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$9$",
+        "C": "$8$",
+        "D": "$16$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 11-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-6.svg)",
+      "explanation": "$360^\\circ/11=\\frac{360}{11}^\\circ$। সঠিক উত্তর $\\frac{360}{11}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{180}{11}$",
+        "B": "$\\frac{371}{11}$",
+        "C": "$\\frac{360}{11}$",
+        "D": "$\\frac{720}{11}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=16, AC=24, BC=32 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-6.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(32)=\\frac{64}{5}$ সেমি। সঠিক উত্তর $\\frac{64}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{64}{5}$",
+        "B": "$\\frac{128}{5}$",
+        "C": "$\\frac{32}{5}$",
+        "D": "$\\frac{69}{5}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 48 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-6.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times8=32$। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$33$",
+        "C": "$32$",
+        "D": "$64$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 24 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-6.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=24/3=8$; H=16 মিটার। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$16$",
+        "C": "$32$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 8 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-6.svg)",
+      "explanation": "$4\\times8=32$। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$33$",
+        "C": "$32$",
+        "D": "$64$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 576 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-6.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{64}=8$; বাহু $40$ সেমি। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$80$",
+        "C": "$20$",
+        "D": "$41$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 8। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-6.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 8; মধ্যমা $48$ সেমি। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$49$",
+        "C": "$48$",
+        "D": "$96$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 16 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-6.svg)",
+      "explanation": "$2\\pi(16)/(2\\pi\\cdot2)=8$। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$8$",
+        "C": "$16$",
+        "D": "$4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(8,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-6.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=16 সেমি এবং ABC-এর ক্ষেত্রফল 256 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-6.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=8$। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$4$",
+        "C": "$9$",
+        "D": "$8$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=27 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-7.svg)",
+      "explanation": "$QR/BC=PQ/AB=9$; $QR=4\\times9=36$ সেমি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$72$",
+        "C": "$18$",
+        "D": "$37$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/9, BC=27 সেমি ও AC=36 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-7.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/9$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:11 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-7.svg)",
+      "explanation": "$A_2/A_1=[(11)/2]^2$; $A_2=12\\times(11)^2/4=363$। সঠিক উত্তর $363$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$363$",
+        "B": "$726$",
+        "C": "$\\frac{363}{2}$",
+        "D": "$364$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(9,2), B=(12,2), C=(9,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-7.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(9,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-7.svg)",
+      "explanation": "P=(-1,9); y-স্থানাঙ্ক 9। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$9$",
+        "C": "$18$",
+        "D": "$\\frac{9}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 12-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-7.svg)",
+      "explanation": "$360^\\circ/12=30^\\circ$। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$30$",
+        "C": "$60$",
+        "D": "$15$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=18, AC=27, BC=36 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-7.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(36)=\\frac{72}{5}$ সেমি। সঠিক উত্তর $\\frac{72}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{144}{5}$",
+        "B": "$\\frac{36}{5}$",
+        "C": "$\\frac{77}{5}$",
+        "D": "$\\frac{72}{5}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 54 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-7.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times9=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 27 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-7.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=27/3=9$; H=18 মিটার। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$18$",
+        "B": "$36$",
+        "C": "$9$",
+        "D": "$19$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 9 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-7.svg)",
+      "explanation": "$4\\times9=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 729 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-7.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{81}=9$; বাহু $45$ সেমি। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$\\frac{45}{2}$",
+        "C": "$46$",
+        "D": "$45$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 9। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-7.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 9; মধ্যমা $54$ সেমি। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$54$",
+        "C": "$108$",
+        "D": "$27$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 18 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-7.svg)",
+      "explanation": "$2\\pi(18)/(2\\pi\\cdot2)=9$। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$18$",
+        "C": "$\\frac{9}{2}$",
+        "D": "$10$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(9,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-7.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=18 সেমি এবং ABC-এর ক্ষেত্রফল 324 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-7.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=9$। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{9}{2}$",
+        "B": "$10$",
+        "C": "$9$",
+        "D": "$18$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=30 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-8.svg)",
+      "explanation": "$QR/BC=PQ/AB=10$; $QR=4\\times10=40$ সেমি। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$80$",
+        "B": "$20$",
+        "C": "$41$",
+        "D": "$40$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/10, BC=30 সেমি ও AC=40 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-8.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/10$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:12 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-8.svg)",
+      "explanation": "$A_2/A_1=[(12)/2]^2$; $A_2=12\\times(12)^2/4=432$। সঠিক উত্তর $432$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$864$",
+        "B": "$216$",
+        "C": "$433$",
+        "D": "$432$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(10,2), B=(13,2), C=(10,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-8.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(10,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-8.svg)",
+      "explanation": "P=(-1,10); y-স্থানাঙ্ক 10। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$20$",
+        "C": "$5$",
+        "D": "$11$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 13-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-8.svg)",
+      "explanation": "$360^\\circ/13=\\frac{360}{13}^\\circ$। সঠিক উত্তর $\\frac{360}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{360}{13}$",
+        "B": "$\\frac{720}{13}$",
+        "C": "$\\frac{180}{13}$",
+        "D": "$\\frac{373}{13}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=20, AC=30, BC=40 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-8.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(40)=16$ সেমি। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$17$",
+        "C": "$16$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 60 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-8.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times10=40$। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$80$",
+        "C": "$20$",
+        "D": "$41$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 30 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-8.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=30/3=10$; H=20 মিটার। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$10$",
+        "C": "$21$",
+        "D": "$20$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 10 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-8.svg)",
+      "explanation": "$4\\times10=40$। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$80$",
+        "C": "$20$",
+        "D": "$41$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 900 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-8.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{100}=10$; বাহু $50$ সেমি। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$51$",
+        "C": "$50$",
+        "D": "$100$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 10। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-8.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 10; মধ্যমা $60$ সেমি। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$120$",
+        "C": "$30$",
+        "D": "$61$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 20 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-8.svg)",
+      "explanation": "$2\\pi(20)/(2\\pi\\cdot2)=10$। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$5$",
+        "C": "$11$",
+        "D": "$10$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(10,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-8.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$\\frac{3}{2}$",
+        "C": "$4$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=20 সেমি এবং ABC-এর ক্ষেত্রফল 400 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-8.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=10$। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$10$",
+        "C": "$20$",
+        "D": "$5$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=33 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-9.svg)",
+      "explanation": "$QR/BC=PQ/AB=11$; $QR=4\\times11=44$ সেমি। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$45$",
+        "C": "$44$",
+        "D": "$88$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/11, BC=33 সেমি ও AC=44 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-9.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/11$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:13 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-9.svg)",
+      "explanation": "$A_2/A_1=[(13)/2]^2$; $A_2=12\\times(13)^2/4=507$। সঠিক উত্তর $507$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{507}{2}$",
+        "B": "$508$",
+        "C": "$507$",
+        "D": "$1014$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(11,2), B=(14,2), C=(11,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-9.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$3$",
+        "C": "$6$",
+        "D": "$\\frac{3}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(11,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-9.svg)",
+      "explanation": "P=(-1,11); y-স্থানাঙ্ক 11। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$\\frac{11}{2}$",
+        "C": "$12$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 14-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-9.svg)",
+      "explanation": "$360^\\circ/14=\\frac{180}{7}^\\circ$। সঠিক উত্তর $\\frac{180}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{360}{7}$",
+        "B": "$\\frac{90}{7}$",
+        "C": "$\\frac{187}{7}$",
+        "D": "$\\frac{180}{7}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=22, AC=33, BC=44 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-9.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(44)=\\frac{88}{5}$ সেমি। সঠিক উত্তর $\\frac{88}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{93}{5}$",
+        "B": "$\\frac{88}{5}$",
+        "C": "$\\frac{176}{5}$",
+        "D": "$\\frac{44}{5}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 66 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-9.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times11=44$। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$22$",
+        "C": "$45$",
+        "D": "$44$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 33 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-9.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=33/3=11$; H=22 মিটার। সঠিক উত্তর $22$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$23$",
+        "C": "$22$",
+        "D": "$44$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 11 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-9.svg)",
+      "explanation": "$4\\times11=44$। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$22$",
+        "C": "$45$",
+        "D": "$44$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 1089 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-9.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{121}=11$; বাহু $55$ সেমি। সঠিক উত্তর $55$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$55$",
+        "C": "$110$",
+        "D": "$\\frac{55}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 11। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-9.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 11; মধ্যমা $66$ সেমি। সঠিক উত্তর $66$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$132$",
+        "B": "$33$",
+        "C": "$67$",
+        "D": "$66$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 22 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-9.svg)",
+      "explanation": "$2\\pi(22)/(2\\pi\\cdot2)=11$। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{11}{2}$",
+        "B": "$12$",
+        "C": "$11$",
+        "D": "$22$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A=(11,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-origin-reflection-9.svg)",
+      "explanation": "−(−3)=3; এটি শুধু y-অক্ষে প্রতিফলন নয়। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/origin-reflection/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{3}{2}$",
+        "B": "$4$",
+        "C": "$3$",
+        "D": "$6$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB,AC-এর মধ্যবিন্দু; BC=22 সেমি এবং ABC-এর ক্ষেত্রফল 484 বর্গসেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-midpoint-similarity-9.svg)",
+      "explanation": "মধ্যবিন্দু উপপাদ্যে DE∥BC এবং $DE=BC/2=11$। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/midpoint-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$22$",
+        "C": "$\\frac{11}{2}$",
+        "D": "$12$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=36 সেমি। QR কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-sides-10.svg)",
+      "explanation": "$QR/BC=PQ/AB=12$; $QR=4\\times12=48$ সেমি। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$48$",
+        "C": "$96$",
+        "D": "$24$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/12, BC=36 সেমি ও AC=48 সেমি। DE কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-parallel-intercept-10.svg)",
+      "explanation": "∠ADE=∠ABC ও ∠AED=∠ACB (সমান্তরাল রেখায় অনুরূপ কোণ), তাই AA-এ ADE∼ABC। $DE/BC=AD/AB=1/12$; DE=3 সেমি। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/parallel-intercept/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:14 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-areas-10.svg)",
+      "explanation": "$A_2/A_1=[(14)/2]^2$; $A_2=12\\times(14)^2/4=588$। সঠিক উত্তর $588$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-areas/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$589$",
+        "B": "$588$",
+        "C": "$1176$",
+        "D": "$294$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কার্তেসীয় সমতলে A=(12,2), B=(15,2), C=(12,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। PQ-এর দৈর্ঘ্য কত একক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-reflection-10.svg)",
+      "explanation": "$AB=3$; প্রতিফলন দূরত্ব সংরক্ষণ করে, তাই PQ=3। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/reflection/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$\\frac{3}{2}$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O=(0,0) কেন্দ্র করে A=(12,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। P-এর y-স্থানাঙ্ক কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rotation-10.svg)",
+      "explanation": "P=(-1,12); y-স্থানাঙ্ক 12। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rotation/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$13$",
+        "C": "$12$",
+        "D": "$24$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সুষম 15-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। ক্ষুদ্রতম ধনাত্মক আবর্তন কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-regular-symmetry-10.svg)",
+      "explanation": "$360^\\circ/15=24^\\circ$। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/regular-symmetry/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$25$",
+        "C": "$24$",
+        "D": "$48$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=24, AC=36, BC=48 সেমি। BD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-angle-bisector-10.svg)",
+      "explanation": "$BD=\\frac25BC=\\frac25(48)=\\frac{96}{5}$ সেমি। সঠিক উত্তর $\\frac{96}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/angle-bisector/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{96}{5}$",
+        "B": "$\\frac{192}{5}$",
+        "C": "$\\frac{48}{5}$",
+        "D": "$\\frac{101}{5}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 72 সেমি। বড় আয়তক্ষেত্রের প্রস্থ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-rectangle-similarity-10.svg)",
+      "explanation": "সদৃশতার জন্য উভয় রৈখিক মাপ একই গুণকে বাড়ে; প্রস্থ $4\\times12=48$। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/rectangle-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$49$",
+        "C": "$48$",
+        "D": "$96$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 36 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। গাছের উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-shadow-similarity-10.svg)",
+      "explanation": "সমকোণ ও সমান্তরাল সূর্যরশ্মির অনুরূপ কোণে ত্রিভুজ দুটি সদৃশ। $H/2=36/3=12$; H=24 মিটার। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/shadow-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$24$",
+        "C": "$48$",
+        "D": "$12$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 12 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন BC-অনুরূপ বাহুর দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-similar-construction-10.svg)",
+      "explanation": "$4\\times12=48$। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/similar-construction/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$49$",
+        "C": "$48$",
+        "D": "$96$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 1296 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়টির অনুরূপ বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-inverse-area-scale-10.svg)",
+      "explanation": "রৈখিক গুণক $\\sqrt{144}=12$; বাহু $60$ সেমি। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/inverse-area-scale/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$120$",
+        "C": "$30$",
+        "D": "$61$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 12। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়টির অনুরূপ মধ্যমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-median-scale-10.svg)",
+      "explanation": "অনুরূপ মধ্যবিন্দুতে যোগ করা রেখাংশের অনুপাতও 12; মধ্যমা $72$ সেমি। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/median-scale/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$73$",
+        "C": "$72$",
+        "D": "$144$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্তের ব্যাসার্ধ 2 ও 24 সেমি। পরিধির বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/mcq-circle-similarity-10.svg)",
+      "explanation": "$2\\pi(24)/(2\\pi\\cdot2)=12$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/MCQ/circle-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$12$",
+        "C": "$24$",
+        "D": "$6$"
+      },
+      "correct": "B"
+    }
+  ]
+}

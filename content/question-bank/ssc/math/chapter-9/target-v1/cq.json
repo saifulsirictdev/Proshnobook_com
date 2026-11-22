@@ -1,0 +1,4061 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৯ম অধ্যায়: ত্রিকোণমিতিক অনুপাত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ ত্রিকোণমিতি অনুশীলনী",
+  "edition": "Chapter 9 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=12, AB=16 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=12²+16²=400; AC=20 সেমি। $\\sin\\theta=\\frac{3}{5}$, $\\cos\\theta=\\frac{4}{5}$, $\\tan\\theta=\\frac{3}{4}$, $\\operatorname{cosec}\\theta=\\frac{5}{3}$, $\\sec\\theta=\\frac{5}{4}$, $\\cot\\theta=\\frac{4}{3}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{3}{5}$ এবং পরিসীমা 48 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 10, বিপরীত 6 নিলে সন্নিহিত $\\sqrt{100-36}=8$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=6:8:10। অনুপাতের যোগ 24; গুণক 2। তাই BC=12, AB=16, AC=20 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{4}{5}$, $\\tan\\theta=\\frac{3}{4}$; $(\\frac{3}{5})/(\\frac{4}{5})=\\frac{3}{4}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{4}{5}$ ও AC=20 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{4}{5}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=16। পিথাগোরাসে BC=12 সেমি; $\\sin\\theta=\\frac{3}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{5}{3}$, $\\cot\\theta=\\frac{4}{3}$। বর্গের বিয়োগ $(100-64)/36=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{3}{4}$ ও AB=16 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=12, AC=√(12²+16²)=20 সেমি। $\\sin\\theta=\\frac{3}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{5}{4}$; তাই $(100-36)/64=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{4}{3}$ ও BC=12 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=16, AC=20 সেমি। $\\tan\\theta=\\frac{3}{4}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{3}{5}$, $\\cos\\theta=\\frac{4}{5}$, $\\tan\\theta=\\frac{3}{4}$, $\\operatorname{cosec}\\theta=\\frac{5}{3}$, $\\sec\\theta=\\frac{5}{4}$, $\\cot\\theta=\\frac{4}{3}$। ভাগে $(\\frac{3}{5})/(\\frac{4}{5})=\\frac{3}{4}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{5}{4}$ ও AB=16 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{4}{5}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=20। পিথাগোরাসে BC=12 সেমি; $\\tan\\theta=\\frac{3}{4}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{9}{16}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{3}{4}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{5}{3}$ ও BC=12 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{3}{5}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=20; AB=√(20²−12²)=16 সেমি। $\\cos\\theta=\\frac{4}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{12}{25}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=2x^\\circ$, $\\angle C=3x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$5x=90$; $x=18$, $A=36^\\circ$, $C=54^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=4 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=2; AB=2 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=4+12=16=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=2 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=2, AC=2 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=4 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=2, BC=2 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=3$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/3$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{5}{3}$, $\\tan\\theta=\\frac{4}{3}$; ভাগে $\\sin\\theta=\\frac{4}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{5}{3}+\\frac{4}{3}=3$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=3\\times1/3=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=3$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/3$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{5}{3}$, $\\cot\\theta=\\frac{4}{3}$; ভাগে $\\cos\\theta=\\frac{4}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{3}{5}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{7}{5}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{12}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{12}{25})^2=\\frac{337}{625}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{25}{12}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-1.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{12}{25}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{25}{12}=\\frac{49}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=24, AB=45 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=24²+45²=2601; AC=51 সেমি। $\\sin\\theta=\\frac{8}{17}$, $\\cos\\theta=\\frac{15}{17}$, $\\tan\\theta=\\frac{8}{15}$, $\\operatorname{cosec}\\theta=\\frac{17}{8}$, $\\sec\\theta=\\frac{17}{15}$, $\\cot\\theta=\\frac{15}{8}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{8}{17}$ এবং পরিসীমা 120 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 17, বিপরীত 8 নিলে সন্নিহিত $\\sqrt{289-64}=15$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=8:15:17। অনুপাতের যোগ 40; গুণক 3। তাই BC=24, AB=45, AC=51 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{15}{17}$, $\\tan\\theta=\\frac{8}{15}$; $(\\frac{8}{17})/(\\frac{15}{17})=\\frac{8}{15}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{15}{17}$ ও AC=51 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{15}{17}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=45। পিথাগোরাসে BC=24 সেমি; $\\sin\\theta=\\frac{8}{17}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{17}{8}$, $\\cot\\theta=\\frac{15}{8}$। বর্গের বিয়োগ $(289-225)/64=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{8}{15}$ ও AB=45 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=24, AC=√(24²+45²)=51 সেমি। $\\sin\\theta=\\frac{8}{17}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{17}{15}$; তাই $(289-64)/225=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{15}{8}$ ও BC=24 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=45, AC=51 সেমি। $\\tan\\theta=\\frac{8}{15}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{8}{17}$, $\\cos\\theta=\\frac{15}{17}$, $\\tan\\theta=\\frac{8}{15}$, $\\operatorname{cosec}\\theta=\\frac{17}{8}$, $\\sec\\theta=\\frac{17}{15}$, $\\cot\\theta=\\frac{15}{8}$। ভাগে $(\\frac{8}{17})/(\\frac{15}{17})=\\frac{8}{15}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{17}{15}$ ও AB=45 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{15}{17}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=51। পিথাগোরাসে BC=24 সেমি; $\\tan\\theta=\\frac{8}{15}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{64}{225}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{8}{15}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{17}{8}$ ও BC=24 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{8}{17}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=51; AB=√(51²−24²)=45 সেমি। $\\cos\\theta=\\frac{15}{17}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{120}{289}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=3x^\\circ$, $\\angle C=4x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$7x=90$; $x=\\frac{90}{7}$, $A=\\frac{270}{7}^\\circ$, $C=\\frac{360}{7}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=6 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=3; AB=3 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=9+27=36=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=3 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=3, AC=3 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=6 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=3, BC=3 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=4$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/4$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{17}{8}$, $\\tan\\theta=\\frac{15}{8}$; ভাগে $\\sin\\theta=\\frac{15}{17}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{17}{8}+\\frac{15}{8}=4$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=4\\times1/4=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=4$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/4$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{17}{8}$, $\\cot\\theta=\\frac{15}{8}$; ভাগে $\\cos\\theta=\\frac{15}{17}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{8}{17}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{23}{17}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{120}{289}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{120}{289})^2=\\frac{54721}{83521}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{289}{120}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-2.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{120}{289}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{289}{120}=\\frac{529}{289}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=40, AB=96 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=40²+96²=10816; AC=104 সেমি। $\\sin\\theta=\\frac{5}{13}$, $\\cos\\theta=\\frac{12}{13}$, $\\tan\\theta=\\frac{5}{12}$, $\\operatorname{cosec}\\theta=\\frac{13}{5}$, $\\sec\\theta=\\frac{13}{12}$, $\\cot\\theta=\\frac{12}{5}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{5}{13}$ এবং পরিসীমা 240 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 26, বিপরীত 10 নিলে সন্নিহিত $\\sqrt{676-100}=24$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=10:24:26। অনুপাতের যোগ 60; গুণক 4। তাই BC=40, AB=96, AC=104 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{12}{13}$, $\\tan\\theta=\\frac{5}{12}$; $(\\frac{5}{13})/(\\frac{12}{13})=\\frac{5}{12}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{12}{13}$ ও AC=104 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{12}{13}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=96। পিথাগোরাসে BC=40 সেমি; $\\sin\\theta=\\frac{5}{13}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{13}{5}$, $\\cot\\theta=\\frac{12}{5}$। বর্গের বিয়োগ $(676-576)/100=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{5}{12}$ ও AB=96 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=40, AC=√(40²+96²)=104 সেমি। $\\sin\\theta=\\frac{5}{13}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{13}{12}$; তাই $(676-100)/576=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{12}{5}$ ও BC=40 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=96, AC=104 সেমি। $\\tan\\theta=\\frac{5}{12}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{5}{13}$, $\\cos\\theta=\\frac{12}{13}$, $\\tan\\theta=\\frac{5}{12}$, $\\operatorname{cosec}\\theta=\\frac{13}{5}$, $\\sec\\theta=\\frac{13}{12}$, $\\cot\\theta=\\frac{12}{5}$। ভাগে $(\\frac{5}{13})/(\\frac{12}{13})=\\frac{5}{12}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{13}{12}$ ও AB=96 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{12}{13}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=104। পিথাগোরাসে BC=40 সেমি; $\\tan\\theta=\\frac{5}{12}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{25}{144}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{5}{12}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{13}{5}$ ও BC=40 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{5}{13}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=104; AB=√(104²−40²)=96 সেমি। $\\cos\\theta=\\frac{12}{13}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{60}{169}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=4x^\\circ$, $\\angle C=5x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$9x=90$; $x=10$, $A=40^\\circ$, $C=50^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=8 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=4; AB=4 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=16+48=64=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=4 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=4, AC=4 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=8 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=4, BC=4 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=5$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/5$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{13}{5}$, $\\tan\\theta=\\frac{12}{5}$; ভাগে $\\sin\\theta=\\frac{12}{13}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{13}{5}+\\frac{12}{5}=5$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=5\\times1/5=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=5$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/5$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{13}{5}$, $\\cot\\theta=\\frac{12}{5}$; ভাগে $\\cos\\theta=\\frac{12}{13}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{5}{13}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{17}{13}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{60}{169}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{60}{169})^2=\\frac{21361}{28561}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{169}{60}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-3.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{60}{169}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{169}{60}=\\frac{289}{169}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=60, AB=175 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=60²+175²=34225; AC=185 সেমি। $\\sin\\theta=\\frac{12}{37}$, $\\cos\\theta=\\frac{35}{37}$, $\\tan\\theta=\\frac{12}{35}$, $\\operatorname{cosec}\\theta=\\frac{37}{12}$, $\\sec\\theta=\\frac{37}{35}$, $\\cot\\theta=\\frac{35}{12}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{12}{37}$ এবং পরিসীমা 420 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 37, বিপরীত 12 নিলে সন্নিহিত $\\sqrt{1369-144}=35$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=12:35:37। অনুপাতের যোগ 84; গুণক 5। তাই BC=60, AB=175, AC=185 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{35}{37}$, $\\tan\\theta=\\frac{12}{35}$; $(\\frac{12}{37})/(\\frac{35}{37})=\\frac{12}{35}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{35}{37}$ ও AC=185 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{35}{37}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=175। পিথাগোরাসে BC=60 সেমি; $\\sin\\theta=\\frac{12}{37}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{37}{12}$, $\\cot\\theta=\\frac{35}{12}$। বর্গের বিয়োগ $(1369-1225)/144=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{12}{35}$ ও AB=175 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=60, AC=√(60²+175²)=185 সেমি। $\\sin\\theta=\\frac{12}{37}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{37}{35}$; তাই $(1369-144)/1225=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{35}{12}$ ও BC=60 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=175, AC=185 সেমি। $\\tan\\theta=\\frac{12}{35}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{12}{37}$, $\\cos\\theta=\\frac{35}{37}$, $\\tan\\theta=\\frac{12}{35}$, $\\operatorname{cosec}\\theta=\\frac{37}{12}$, $\\sec\\theta=\\frac{37}{35}$, $\\cot\\theta=\\frac{35}{12}$। ভাগে $(\\frac{12}{37})/(\\frac{35}{37})=\\frac{12}{35}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{37}{35}$ ও AB=175 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{35}{37}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=185। পিথাগোরাসে BC=60 সেমি; $\\tan\\theta=\\frac{12}{35}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{144}{1225}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{12}{35}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{37}{12}$ ও BC=60 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{12}{37}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=185; AB=√(185²−60²)=175 সেমি। $\\cos\\theta=\\frac{35}{37}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{420}{1369}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=5x^\\circ$, $\\angle C=6x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$11x=90$; $x=\\frac{90}{11}$, $A=\\frac{450}{11}^\\circ$, $C=\\frac{540}{11}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=10 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=5; AB=5 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=25+75=100=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=5 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=5, AC=5 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=10 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=5, BC=5 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=6$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/6$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{37}{12}$, $\\tan\\theta=\\frac{35}{12}$; ভাগে $\\sin\\theta=\\frac{35}{37}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{37}{12}+\\frac{35}{12}=6$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=6\\times1/6=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=6$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/6$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{37}{12}$, $\\cot\\theta=\\frac{35}{12}$; ভাগে $\\cos\\theta=\\frac{35}{37}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{12}{37}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{47}{37}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{420}{1369}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{420}{1369})^2=\\frac{1521361}{1874161}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{1369}{420}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-4.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{420}{1369}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{1369}{420}=\\frac{2209}{1369}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=84, AB=288 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=84²+288²=90000; AC=300 সেমি। $\\sin\\theta=\\frac{7}{25}$, $\\cos\\theta=\\frac{24}{25}$, $\\tan\\theta=\\frac{7}{24}$, $\\operatorname{cosec}\\theta=\\frac{25}{7}$, $\\sec\\theta=\\frac{25}{24}$, $\\cot\\theta=\\frac{24}{7}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{7}{25}$ এবং পরিসীমা 672 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 50, বিপরীত 14 নিলে সন্নিহিত $\\sqrt{2500-196}=48$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=14:48:50। অনুপাতের যোগ 112; গুণক 6। তাই BC=84, AB=288, AC=300 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{24}{25}$, $\\tan\\theta=\\frac{7}{24}$; $(\\frac{7}{25})/(\\frac{24}{25})=\\frac{7}{24}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{24}{25}$ ও AC=300 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{24}{25}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=288। পিথাগোরাসে BC=84 সেমি; $\\sin\\theta=\\frac{7}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{25}{7}$, $\\cot\\theta=\\frac{24}{7}$। বর্গের বিয়োগ $(2500-2304)/196=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{7}{24}$ ও AB=288 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=84, AC=√(84²+288²)=300 সেমি। $\\sin\\theta=\\frac{7}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{25}{24}$; তাই $(2500-196)/2304=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{24}{7}$ ও BC=84 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=288, AC=300 সেমি। $\\tan\\theta=\\frac{7}{24}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{7}{25}$, $\\cos\\theta=\\frac{24}{25}$, $\\tan\\theta=\\frac{7}{24}$, $\\operatorname{cosec}\\theta=\\frac{25}{7}$, $\\sec\\theta=\\frac{25}{24}$, $\\cot\\theta=\\frac{24}{7}$। ভাগে $(\\frac{7}{25})/(\\frac{24}{25})=\\frac{7}{24}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{25}{24}$ ও AB=288 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{24}{25}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=300। পিথাগোরাসে BC=84 সেমি; $\\tan\\theta=\\frac{7}{24}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{49}{576}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{7}{24}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{25}{7}$ ও BC=84 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{7}{25}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=300; AB=√(300²−84²)=288 সেমি। $\\cos\\theta=\\frac{24}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{168}{625}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=6x^\\circ$, $\\angle C=7x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$13x=90$; $x=\\frac{90}{13}$, $A=\\frac{540}{13}^\\circ$, $C=\\frac{630}{13}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=12 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=6; AB=6 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=36+108=144=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=6 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=6, AC=6 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=12 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=6, BC=6 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=7$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/7$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{25}{7}$, $\\tan\\theta=\\frac{24}{7}$; ভাগে $\\sin\\theta=\\frac{24}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{25}{7}+\\frac{24}{7}=7$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=7\\times1/7=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=7$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/7$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{25}{7}$, $\\cot\\theta=\\frac{24}{7}$; ভাগে $\\cos\\theta=\\frac{24}{25}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{7}{25}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{31}{25}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{168}{625}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{168}{625})^2=\\frac{334177}{390625}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{625}{168}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-5.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{168}{625}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{625}{168}=\\frac{961}{625}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=112, AB=441 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=112²+441²=207025; AC=455 সেমি। $\\sin\\theta=\\frac{16}{65}$, $\\cos\\theta=\\frac{63}{65}$, $\\tan\\theta=\\frac{16}{63}$, $\\operatorname{cosec}\\theta=\\frac{65}{16}$, $\\sec\\theta=\\frac{65}{63}$, $\\cot\\theta=\\frac{63}{16}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{16}{65}$ এবং পরিসীমা 1008 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 65, বিপরীত 16 নিলে সন্নিহিত $\\sqrt{4225-256}=63$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=16:63:65। অনুপাতের যোগ 144; গুণক 7। তাই BC=112, AB=441, AC=455 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{63}{65}$, $\\tan\\theta=\\frac{16}{63}$; $(\\frac{16}{65})/(\\frac{63}{65})=\\frac{16}{63}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{63}{65}$ ও AC=455 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{63}{65}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=441। পিথাগোরাসে BC=112 সেমি; $\\sin\\theta=\\frac{16}{65}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{65}{16}$, $\\cot\\theta=\\frac{63}{16}$। বর্গের বিয়োগ $(4225-3969)/256=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{16}{63}$ ও AB=441 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=112, AC=√(112²+441²)=455 সেমি। $\\sin\\theta=\\frac{16}{65}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{65}{63}$; তাই $(4225-256)/3969=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{63}{16}$ ও BC=112 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=441, AC=455 সেমি। $\\tan\\theta=\\frac{16}{63}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{16}{65}$, $\\cos\\theta=\\frac{63}{65}$, $\\tan\\theta=\\frac{16}{63}$, $\\operatorname{cosec}\\theta=\\frac{65}{16}$, $\\sec\\theta=\\frac{65}{63}$, $\\cot\\theta=\\frac{63}{16}$। ভাগে $(\\frac{16}{65})/(\\frac{63}{65})=\\frac{16}{63}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{65}{63}$ ও AB=441 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{63}{65}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=455। পিথাগোরাসে BC=112 সেমি; $\\tan\\theta=\\frac{16}{63}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{256}{3969}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{16}{63}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{65}{16}$ ও BC=112 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{16}{65}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=455; AB=√(455²−112²)=441 সেমি। $\\cos\\theta=\\frac{63}{65}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{1008}{4225}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=7x^\\circ$, $\\angle C=8x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$15x=90$; $x=6$, $A=42^\\circ$, $C=48^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=14 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=7; AB=7 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=49+147=196=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=7 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=7, AC=7 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=14 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=7, BC=7 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=8$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/8$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{65}{16}$, $\\tan\\theta=\\frac{63}{16}$; ভাগে $\\sin\\theta=\\frac{63}{65}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{65}{16}+\\frac{63}{16}=8$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=8\\times1/8=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=8$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/8$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{65}{16}$, $\\cot\\theta=\\frac{63}{16}$; ভাগে $\\cos\\theta=\\frac{63}{65}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{16}{65}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{79}{65}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{1008}{4225}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{1008}{4225})^2=\\frac{15818497}{17850625}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{4225}{1008}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-6.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{1008}{4225}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{4225}{1008}=\\frac{6241}{4225}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=144, AB=640 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=144²+640²=430336; AC=656 সেমি। $\\sin\\theta=\\frac{9}{41}$, $\\cos\\theta=\\frac{40}{41}$, $\\tan\\theta=\\frac{9}{40}$, $\\operatorname{cosec}\\theta=\\frac{41}{9}$, $\\sec\\theta=\\frac{41}{40}$, $\\cot\\theta=\\frac{40}{9}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{9}{41}$ এবং পরিসীমা 1440 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 82, বিপরীত 18 নিলে সন্নিহিত $\\sqrt{6724-324}=80$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=18:80:82। অনুপাতের যোগ 180; গুণক 8। তাই BC=144, AB=640, AC=656 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{40}{41}$, $\\tan\\theta=\\frac{9}{40}$; $(\\frac{9}{41})/(\\frac{40}{41})=\\frac{9}{40}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{40}{41}$ ও AC=656 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{40}{41}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=640। পিথাগোরাসে BC=144 সেমি; $\\sin\\theta=\\frac{9}{41}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{41}{9}$, $\\cot\\theta=\\frac{40}{9}$। বর্গের বিয়োগ $(6724-6400)/324=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{9}{40}$ ও AB=640 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=144, AC=√(144²+640²)=656 সেমি। $\\sin\\theta=\\frac{9}{41}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{41}{40}$; তাই $(6724-324)/6400=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{40}{9}$ ও BC=144 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=640, AC=656 সেমি। $\\tan\\theta=\\frac{9}{40}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{9}{41}$, $\\cos\\theta=\\frac{40}{41}$, $\\tan\\theta=\\frac{9}{40}$, $\\operatorname{cosec}\\theta=\\frac{41}{9}$, $\\sec\\theta=\\frac{41}{40}$, $\\cot\\theta=\\frac{40}{9}$। ভাগে $(\\frac{9}{41})/(\\frac{40}{41})=\\frac{9}{40}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{41}{40}$ ও AB=640 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{40}{41}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=656। পিথাগোরাসে BC=144 সেমি; $\\tan\\theta=\\frac{9}{40}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{81}{1600}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{9}{40}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{41}{9}$ ও BC=144 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{9}{41}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=656; AB=√(656²−144²)=640 সেমি। $\\cos\\theta=\\frac{40}{41}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{360}{1681}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=8x^\\circ$, $\\angle C=9x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$17x=90$; $x=\\frac{90}{17}$, $A=\\frac{720}{17}^\\circ$, $C=\\frac{810}{17}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=16 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=8; AB=8 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=64+192=256=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=8 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=8, AC=8 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=16 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=8, BC=8 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=9$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/9$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{41}{9}$, $\\tan\\theta=\\frac{40}{9}$; ভাগে $\\sin\\theta=\\frac{40}{41}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{41}{9}+\\frac{40}{9}=9$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=9\\times1/9=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=9$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/9$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{41}{9}$, $\\cot\\theta=\\frac{40}{9}$; ভাগে $\\cos\\theta=\\frac{40}{41}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{9}{41}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{49}{41}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{360}{1681}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{360}{1681})^2=\\frac{2566561}{2825761}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{1681}{360}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-7.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{360}{1681}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{1681}{360}=\\frac{2401}{1681}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=180, AB=891 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=180²+891²=826281; AC=909 সেমি। $\\sin\\theta=\\frac{20}{101}$, $\\cos\\theta=\\frac{99}{101}$, $\\tan\\theta=\\frac{20}{99}$, $\\operatorname{cosec}\\theta=\\frac{101}{20}$, $\\sec\\theta=\\frac{101}{99}$, $\\cot\\theta=\\frac{99}{20}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{20}{101}$ এবং পরিসীমা 1980 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 101, বিপরীত 20 নিলে সন্নিহিত $\\sqrt{10201-400}=99$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=20:99:101। অনুপাতের যোগ 220; গুণক 9। তাই BC=180, AB=891, AC=909 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{99}{101}$, $\\tan\\theta=\\frac{20}{99}$; $(\\frac{20}{101})/(\\frac{99}{101})=\\frac{20}{99}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{99}{101}$ ও AC=909 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{99}{101}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=891। পিথাগোরাসে BC=180 সেমি; $\\sin\\theta=\\frac{20}{101}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{101}{20}$, $\\cot\\theta=\\frac{99}{20}$। বর্গের বিয়োগ $(10201-9801)/400=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{20}{99}$ ও AB=891 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=180, AC=√(180²+891²)=909 সেমি। $\\sin\\theta=\\frac{20}{101}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{101}{99}$; তাই $(10201-400)/9801=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{99}{20}$ ও BC=180 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=891, AC=909 সেমি। $\\tan\\theta=\\frac{20}{99}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{20}{101}$, $\\cos\\theta=\\frac{99}{101}$, $\\tan\\theta=\\frac{20}{99}$, $\\operatorname{cosec}\\theta=\\frac{101}{20}$, $\\sec\\theta=\\frac{101}{99}$, $\\cot\\theta=\\frac{99}{20}$। ভাগে $(\\frac{20}{101})/(\\frac{99}{101})=\\frac{20}{99}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{101}{99}$ ও AB=891 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{99}{101}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=909। পিথাগোরাসে BC=180 সেমি; $\\tan\\theta=\\frac{20}{99}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{400}{9801}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{20}{99}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{101}{20}$ ও BC=180 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{20}{101}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=909; AB=√(909²−180²)=891 সেমি। $\\cos\\theta=\\frac{99}{101}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{1980}{10201}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=9x^\\circ$, $\\angle C=10x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$19x=90$; $x=\\frac{90}{19}$, $A=\\frac{810}{19}^\\circ$, $C=\\frac{900}{19}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=18 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=9; AB=9 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=81+243=324=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=9 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=9, AC=9 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=18 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=9, BC=9 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=10$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/10$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{101}{20}$, $\\tan\\theta=\\frac{99}{20}$; ভাগে $\\sin\\theta=\\frac{99}{101}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{101}{20}+\\frac{99}{20}=10$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=10\\times1/10=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=10$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/10$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{101}{20}$, $\\cot\\theta=\\frac{99}{20}$; ভাগে $\\cos\\theta=\\frac{99}{101}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{20}{101}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{119}{101}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{1980}{10201}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{1980}{10201})^2=\\frac{96219601}{104060401}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{10201}{1980}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-8.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{1980}{10201}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{10201}{1980}=\\frac{14161}{10201}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=220, AB=1200 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=220²+1200²=1488400; AC=1220 সেমি। $\\sin\\theta=\\frac{11}{61}$, $\\cos\\theta=\\frac{60}{61}$, $\\tan\\theta=\\frac{11}{60}$, $\\operatorname{cosec}\\theta=\\frac{61}{11}$, $\\sec\\theta=\\frac{61}{60}$, $\\cot\\theta=\\frac{60}{11}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{11}{61}$ এবং পরিসীমা 2640 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 122, বিপরীত 22 নিলে সন্নিহিত $\\sqrt{14884-484}=120$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=22:120:122। অনুপাতের যোগ 264; গুণক 10। তাই BC=220, AB=1200, AC=1220 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{60}{61}$, $\\tan\\theta=\\frac{11}{60}$; $(\\frac{11}{61})/(\\frac{60}{61})=\\frac{11}{60}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{60}{61}$ ও AC=1220 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{60}{61}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=1200। পিথাগোরাসে BC=220 সেমি; $\\sin\\theta=\\frac{11}{61}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{61}{11}$, $\\cot\\theta=\\frac{60}{11}$। বর্গের বিয়োগ $(14884-14400)/484=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{11}{60}$ ও AB=1200 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=220, AC=√(220²+1200²)=1220 সেমি। $\\sin\\theta=\\frac{11}{61}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{61}{60}$; তাই $(14884-484)/14400=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{60}{11}$ ও BC=220 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=1200, AC=1220 সেমি। $\\tan\\theta=\\frac{11}{60}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{11}{61}$, $\\cos\\theta=\\frac{60}{61}$, $\\tan\\theta=\\frac{11}{60}$, $\\operatorname{cosec}\\theta=\\frac{61}{11}$, $\\sec\\theta=\\frac{61}{60}$, $\\cot\\theta=\\frac{60}{11}$। ভাগে $(\\frac{11}{61})/(\\frac{60}{61})=\\frac{11}{60}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{61}{60}$ ও AB=1200 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{60}{61}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=1220। পিথাগোরাসে BC=220 সেমি; $\\tan\\theta=\\frac{11}{60}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{121}{3600}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{11}{60}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{61}{11}$ ও BC=220 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{11}{61}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=1220; AB=√(1220²−220²)=1200 সেমি। $\\cos\\theta=\\frac{60}{61}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{660}{3721}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=10x^\\circ$, $\\angle C=11x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$21x=90$; $x=\\frac{30}{7}$, $A=\\frac{300}{7}^\\circ$, $C=\\frac{330}{7}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=20 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=10; AB=10 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=100+300=400=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=10 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=10, AC=10 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=20 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=10, BC=10 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=11$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/11$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{61}{11}$, $\\tan\\theta=\\frac{60}{11}$; ভাগে $\\sin\\theta=\\frac{60}{61}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{61}{11}+\\frac{60}{11}=11$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=11\\times1/11=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=11$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/11$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{61}{11}$, $\\cot\\theta=\\frac{60}{11}$; ভাগে $\\cos\\theta=\\frac{60}{61}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{11}{61}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{71}{61}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{660}{3721}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{660}{3721})^2=\\frac{12974641}{13845841}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{3721}{660}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-9.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{660}{3721}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{3721}{660}=\\frac{5041}{3721}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=264, AB=1573 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sides-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "θ-এর বিপরীত, সন্নিহিত ও অতিভুজ শনাক্ত কর।",
+          "solution": "বিপরীত BC, সন্নিহিত AB এবং অতিভুজ AC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।",
+          "solution": "AC²=264²+1573²=2544025; AC=1595 সেমি। $\\sin\\theta=\\frac{24}{145}$, $\\cos\\theta=\\frac{143}{145}$, $\\tan\\theta=\\frac{24}{143}$, $\\operatorname{cosec}\\theta=\\frac{145}{24}$, $\\sec\\theta=\\frac{145}{143}$, $\\cot\\theta=\\frac{143}{24}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "ত্রিভুজের দুই সূক্ষ্মকোণের অনুপাতের পূরক সম্পর্ক দেখাও।",
+          "solution": "ধরি φ=∠BCA; θ+φ=৯০°। φ-এর বিপরীত AB, সন্নিহিত BC। তাই $\\sin\\varphi=AB/AC=\\cos\\theta$, $\\cos\\varphi=BC/AC=\\sin\\theta$, $\\tan\\varphi=AB/BC=\\cot\\theta$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{24}{145}$ এবং পরিসীমা 3432 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sine-perimeter-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sine-perimeter/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "সন্নিহিত বাহুর অনুপাত নির্ণয় কর।",
+          "solution": "অতিভুজের অনুপাত 145, বিপরীত 24 নিলে সন্নিহিত $\\sqrt{21025-576}=143$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "তিন বাহুর দৈর্ঘ্য নির্ণয় কর।",
+          "solution": "BC:AB:AC=24:143:145। অনুপাতের যোগ 312; গুণক 11। তাই BC=264, AB=1573, AC=1595 সেমি।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cos ও tan নির্ণয় করে tan=sin/cos যাচাই কর।",
+          "solution": "$\\cos\\theta=\\frac{143}{145}$, $\\tan\\theta=\\frac{24}{143}$; $(\\frac{24}{145})/(\\frac{143}{145})=\\frac{24}{143}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{143}{145}$ ও AC=1595 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosine-hypotenuse-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosine-hypotenuse/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "AB/AC কত এবং কেন?",
+          "solution": "$AB/AC=\\cos\\theta=\\frac{143}{145}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও sin নির্ণয় কর।",
+          "solution": "AB=1573। পিথাগোরাসে BC=264 সেমি; $\\sin\\theta=\\frac{24}{145}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "cosec ও cot নির্ণয় করে পরিচিতি যাচাই কর।",
+          "solution": "$\\operatorname{cosec}\\theta=\\frac{145}{24}$, $\\cot\\theta=\\frac{143}{24}$। বর্গের বিয়োগ $(21025-20449)/576=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{24}{143}$ ও AB=1573 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tangent-adjacent-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tangent-adjacent/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "tan-এর সংজ্ঞা লেখ।",
+          "solution": "$\\tan\\theta=BC/AB$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sin নির্ণয় কর।",
+          "solution": "BC=264, AC=√(264²+1573²)=1595 সেমি। $\\sin\\theta=\\frac{24}{145}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−tan²=1 প্রদত্ত মানে যাচাই কর।",
+          "solution": "$\\sec\\theta=\\frac{145}{143}$; তাই $(21025-576)/20449=1$। সাধারণভাবেও $AC^2-BC^2=AB^2$-কে AB² দিয়ে ভাগ করলে পরিচিতিটি পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{143}{24}$ ও BC=264 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cotangent-opposite-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cotangent-opposite/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cot-এর সংজ্ঞা ও বিপরীত অনুপাত লেখ।",
+          "solution": "$\\cot\\theta=AB/BC$, তার বিপরীত $\\tan\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, AC ও tan নির্ণয় কর।",
+          "solution": "AB=1573, AC=1595 সেমি। $\\tan\\theta=\\frac{24}{143}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin ও cos-এর ভাগ থেকে tan পুনরায় নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{24}{145}$, $\\cos\\theta=\\frac{143}{145}$, $\\tan\\theta=\\frac{24}{143}$, $\\operatorname{cosec}\\theta=\\frac{145}{24}$, $\\sec\\theta=\\frac{145}{143}$, $\\cot\\theta=\\frac{143}{24}$। ভাগে $(\\frac{24}{145})/(\\frac{143}{145})=\\frac{24}{143}$; সংজ্ঞার সঙ্গে মেলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{145}{143}$ ও AB=1573 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-secant-adjacent-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/secant-adjacent/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\cos\\theta=1/\\sec\\theta=\\frac{143}{145}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, BC ও tan নির্ণয় কর।",
+          "solution": "AC=AB·secθ=1595। পিথাগোরাসে BC=264 সেমি; $\\tan\\theta=\\frac{24}{143}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sec²−1 থেকে tan² নির্ণয় ও ধনাত্মক মূলের কারণ লেখ।",
+          "solution": "$\\sec^2\\theta-1=\\frac{576}{20449}=\\tan^2\\theta$। θ সূক্ষ্মকোণ বলে tan ধনাত্মক; তাই $\\tan\\theta=\\frac{24}{143}$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{145}{24}$ ও BC=264 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosecant-opposite-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosecant-opposite/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosec-এর বিপরীত অনুপাত নির্ণয় কর।",
+          "solution": "$\\sin\\theta=\\frac{24}{145}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AC, AB ও cos নির্ণয় কর।",
+          "solution": "AC=1595; AB=√(1595²−264²)=1573 সেমি। $\\cos\\theta=\\frac{143}{145}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin·cos নির্ণয় করে দুই কোণের বিনিময়ে গুণফল অপরিবর্তিত দেখাও।",
+          "solution": "$\\sin\\theta\\cos\\theta=\\frac{3432}{21025}$। পূরক φ-এ sinφ=cosθ ও cosφ=sinθ; তাই গুণের ক্রম বদলালেও একই মান।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=11x^\\circ$, $\\angle C=12x^\\circ$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-complementary-angles-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/complementary-angles/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "A ও C-এর কোণের যোগ কত?",
+          "solution": "সমকোণী ত্রিভুজের বাকি দুই কোণের যোগ ৯০°।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "x, A ও C নির্ণয় কর।",
+          "solution": "$23x=90$; $x=\\frac{90}{23}$, $A=\\frac{990}{23}^\\circ$, $C=\\frac{1080}{23}^\\circ$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "কোণ না মেপে sinA=cosC ও tanA·tanC=1 প্রমাণ কর।",
+          "solution": "$\\sin A=BC/AC=\\cos C$। আবার $\\tan A=BC/AB$, $\\tan C=AB/BC$; বাহু ধনাত্মক বলে গুণফল ১।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=22 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-thirty-degrees-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/thirty-degrees/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "sin30° ও cos30°-এর মান লেখ।",
+          "solution": "$\\sin30^\\circ=1/2$, $\\cos30^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AB ও tanθ নির্ণয় কর।",
+          "solution": "BC=AC/২=11; AB=11 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "প্রদত্ত বাহুগুলো পিথাগোরাস মেনে চলে দেখাও।",
+          "solution": "$BC^2+AB^2=121+363=484=AC^2$। সমবাহু ত্রিভুজের অর্ধেকেও এই ১:√৩:২ অনুপাত পাওয়া যায়।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=11 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-fortyfive-degrees-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/fortyfive-degrees/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "C কোণ নির্ণয় কর।",
+          "solution": "C=৯০°−৪৫°=৪৫°; তাই সমান কোণের বিপরীত বাহু AB=BC।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "BC, AC ও sinθ নির্ণয় কর।",
+          "solution": "BC=11, AC=11 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "tanθ ও sec²θ−tan²θ নির্ণয় কর।",
+          "solution": "$\\tan45^\\circ=1$, $\\sec45^\\circ=\\sqrt2$। তাই বর্গের বিয়োগ $2-1=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=60^\\circ$ ও AC=22 সেমি।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sixty-degrees-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sixty-degrees/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cos60° ও sin60°-এর মান লেখ।",
+          "solution": "$\\cos60^\\circ=1/2$, $\\sin60^\\circ=\\sqrt3/2$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "AB, BC ও cotθ নির্ণয় কর।",
+          "solution": "AB=11, BC=11 \\sqrt{3} সেমি। $\\cot\\theta=1/\\sqrt3$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "θ-এর পূরক φ-এর sin, cos ও tan নির্ণয় কর।",
+          "solution": "φ=৩০°। তাই $\\sin\\varphi=1/2$, $\\cos\\varphi=\\sqrt3/2$, $\\tan\\varphi=1/\\sqrt3$; পূরক অনুপাতের সম্পর্ক মেনে চলে।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta+\\tan\\theta=12$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sec-plus-tan-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sec-plus-tan/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "secθ−tanθ নির্ণয় কর।",
+          "solution": "$\\sec^2\\theta-\\tan^2\\theta=1$ থেকে $\\sec\\theta-\\tan\\theta=1/12$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "secθ, tanθ ও sinθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\sec\\theta=\\frac{145}{24}$, $\\tan\\theta=\\frac{143}{24}$; ভাগে $\\sin\\theta=\\frac{143}{145}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানদ্বয়ের যোগ ও বর্গের বিয়োগ যাচাই কর।",
+          "solution": "যোগ $\\frac{145}{24}+\\frac{143}{24}=12$। বর্গের বিয়োগ $(\\sec+\\tan)(\\sec-\\tan)=12\\times1/12=1$। θ সূক্ষ্মকোণে সব প্রযোজ্য অনুপাত ধনাত্মক।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta+\\cot\\theta=12$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-cosec-plus-cot-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/cosec-plus-cot/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "cosecθ−cotθ নির্ণয় কর।",
+          "solution": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$ থেকে বিয়োগ $1/12$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "cosecθ, cotθ ও cosθ নির্ণয় কর।",
+          "solution": "যোগ-বিয়োগে $\\operatorname{cosec}\\theta=\\frac{145}{24}$, $\\cot\\theta=\\frac{143}{24}$; ভাগে $\\cos\\theta=\\frac{143}{145}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "পাওয়া মানে sin²θ+cos²θ যাচাই কর।",
+          "solution": "$\\sin\\theta=1/u=\\frac{24}{145}$। $\\cos\\theta=v/u$। তাই বর্গের যোগ $(1+v^2)/u^2=1$, কারণ $u^2-v^2=1$।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta+\\cos\\theta=\\frac{167}{145}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-sum-to-product-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/sum-to-product/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগের বর্গ প্রসারিত কর।",
+          "solution": "$a^2=\\sin^2\\theta+\\cos^2\\theta+2\\sin\\theta\\cos\\theta=1+2\\sin\\theta\\cos\\theta$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ নির্ণয় কর।",
+          "solution": "গুণফল $(a^2-1)/2=\\frac{3432}{21025}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "sin⁴θ+cos⁴θ নির্ণয় কর।",
+          "solution": "রাশি $(\\sin^2\\theta+\\cos^2\\theta)^2-2\\sin^2\\theta\\cos^2\\theta=1-2(\\frac{3432}{21025})^2=\\frac{418493377}{442050625}$। শুধু যোগ থেকে θ ও তার পূরককে আলাদা করা যায় না, কিন্তু এই সমমিত রাশির মান নির্দিষ্ট।"
+        }
+      ]
+    },
+    {
+      "type": "CQ",
+      "text": "ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta+\\cot\\theta=\\frac{21025}{3432}$।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/cq-tan-plus-cot-10.svg)",
+      "explanation": "চিত্র মাপানুযায়ী নয়। অনুপাতের সংজ্ঞা, সূক্ষ্মকোণের শর্ত, পিথাগোরাস ও প্রযোজ্য পরিচিতি ব্যবহার করে প্রতিটি অংশে সমাধান দেওয়া আছে।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/CQ/tan-plus-cot/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "HARD",
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "যোগটিকে sin ও cos-এর এক ভগ্নাংশে প্রকাশ কর।",
+          "solution": "$\\tan\\theta+\\cot\\theta=(\\sin^2\\theta+\\cos^2\\theta)/(\\sin\\theta\\cos\\theta)=1/(\\sin\\theta\\cos\\theta)$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "sinθ·cosθ ও (sinθ+cosθ)² নির্ণয় কর।",
+          "solution": "গুণফল $\\frac{3432}{21025}$; বর্গের যোগ-প্রসারণে $(\\sin\\theta+\\cos\\theta)^2=1+2/\\frac{21025}{3432}=\\frac{27889}{21025}$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "যেকোনো সূক্ষ্মকোণে tanθ+cotθ≥2 প্রমাণ কর।",
+          "solution": "ধনাত্মক $t=\\tan\\theta$ নিলে $(t-1)^2\\ge0$। t দিয়ে ভাগে $t+1/t\\ge2$। সমতা হয় t=1 অর্থাৎ θ=৪৫°-এ।"
+        }
+      ]
+    }
+  ]
+}

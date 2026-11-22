@@ -1,0 +1,54 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 6,
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৬ষ্ঠ অধ্যায়: রেখা, কোণ ও ত্রিভুজ",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 30
+  },
+  "illustratedCounts": {
+    "MCQ": 149,
+    "CQ": 50,
+    "SQ": 30
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 138209,
+      "sha256": "08f3828ad222fd5981a9992de37a808f043956f3e568d31de9bc0da7f0c5e56c"
+    },
+    {
+      "file": "target-v1/written.json",
+      "bytes": 131084,
+      "sha256": "46e00439fa0de75befb0f7b7bb852b01c0c3ee44ec3670fd7164e994256a46f3"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 230893,
+    "sha256": "36c6bba45d19f6ba33b7532e791f22b20b0c118b6ded3b0d86849a20b2a00a86"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 11931,
+    "sha256": "78cc1347d8768460a87ac4c5fed475bc3f4e9cf6d2bd1902504dbe2445beb7ac"
+  },
+  "limitations": [
+    "Numeric target met: 10 adapted compilation MCQ + 220 original parameter variants, not 230 distinct concepts.",
+    "Compilation board/year labels not independently authenticated. Source figures redrawn, or helpful figures added; not facsimiles. Five source questions had native figures.",
+    "149 MCQ, 50 CQ and 30 SQ carry schematic SVGs. No claim that 149 illustrated MCQ are board questions. Drawings not to scale; independent diagram/proof/teacher review pending.",
+    "HTTPS image references target versioned static assets included in public/question-bank/ssc-math-ch6-v1. Assets are NOT yet deployed; production URL availability unverified. Use bundled local review gallery/assets until deployment.",
+    "Source search not exhaustive. Full current-edition NCTB chapter not obtained/read; no exhaustive textbook/board coverage claim.",
+    "No real database import, approval or deployment. Exact numerical witnesses do not establish every narrative proof step."
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৯ম অধ্যায়: ত্রিকোণমিতিক অনুপাত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ ত্রিকোণমিতি অনুশীলনী",
+  "edition": "Chapter 9 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=12, AB=16 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-1.svg)",
+      "explanation": "AC²=12²+16²=400; AC=20 সেমি। $\\sin\\theta=\\frac{3}{5}$, $\\cos\\theta=\\frac{4}{5}$, $\\tan\\theta=\\frac{3}{4}$, $\\operatorname{cosec}\\theta=\\frac{5}{3}$, $\\sec\\theta=\\frac{5}{4}$, $\\cot\\theta=\\frac{4}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{3}{5}$ এবং পরিসীমা 48 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-1.svg)",
+      "explanation": "BC:AB:AC=6:8:10। অনুপাতের যোগ 24; গুণক 2। তাই BC=12, AB=16, AC=20 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{4}{5}$ ও AC=20 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-1.svg)",
+      "explanation": "AB=16। পিথাগোরাসে BC=12 সেমি; $\\sin\\theta=\\frac{3}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{3}{4}$ ও AB=16 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-1.svg)",
+      "explanation": "BC=12, AC=√(12²+16²)=20 সেমি। $\\sin\\theta=\\frac{3}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{4}{3}$ ও BC=12 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-1.svg)",
+      "explanation": "AB=16, AC=20 সেমি। $\\tan\\theta=\\frac{3}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{5}{4}$ ও AB=16 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-1.svg)",
+      "explanation": "AC=AB·secθ=20। পিথাগোরাসে BC=12 সেমি; $\\tan\\theta=\\frac{3}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{5}{3}$ ও BC=12 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-1.svg)",
+      "explanation": "AC=20; AB=√(20²−12²)=16 সেমি। $\\cos\\theta=\\frac{4}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=2x^\\circ$, $\\angle C=3x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-1.svg)",
+      "explanation": "$5x=90$; $x=18$, $A=36^\\circ$, $C=54^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=4 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-1.svg)",
+      "explanation": "BC=AC/২=2; AB=2 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=2 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-1.svg)",
+      "explanation": "BC=2, AC=2 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=24, AB=45 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-2.svg)",
+      "explanation": "AC²=24²+45²=2601; AC=51 সেমি। $\\sin\\theta=\\frac{8}{17}$, $\\cos\\theta=\\frac{15}{17}$, $\\tan\\theta=\\frac{8}{15}$, $\\operatorname{cosec}\\theta=\\frac{17}{8}$, $\\sec\\theta=\\frac{17}{15}$, $\\cot\\theta=\\frac{15}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{8}{17}$ এবং পরিসীমা 120 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-2.svg)",
+      "explanation": "BC:AB:AC=8:15:17। অনুপাতের যোগ 40; গুণক 3। তাই BC=24, AB=45, AC=51 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{15}{17}$ ও AC=51 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-2.svg)",
+      "explanation": "AB=45। পিথাগোরাসে BC=24 সেমি; $\\sin\\theta=\\frac{8}{17}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{8}{15}$ ও AB=45 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-2.svg)",
+      "explanation": "BC=24, AC=√(24²+45²)=51 সেমি। $\\sin\\theta=\\frac{8}{17}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{15}{8}$ ও BC=24 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-2.svg)",
+      "explanation": "AB=45, AC=51 সেমি। $\\tan\\theta=\\frac{8}{15}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{17}{15}$ ও AB=45 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-2.svg)",
+      "explanation": "AC=AB·secθ=51। পিথাগোরাসে BC=24 সেমি; $\\tan\\theta=\\frac{8}{15}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{17}{8}$ ও BC=24 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-2.svg)",
+      "explanation": "AC=51; AB=√(51²−24²)=45 সেমি। $\\cos\\theta=\\frac{15}{17}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=3x^\\circ$, $\\angle C=4x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-2.svg)",
+      "explanation": "$7x=90$; $x=\\frac{90}{7}$, $A=\\frac{270}{7}^\\circ$, $C=\\frac{360}{7}^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=6 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-2.svg)",
+      "explanation": "BC=AC/২=3; AB=3 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=3 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-2.svg)",
+      "explanation": "BC=3, AC=3 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=40, AB=96 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-3.svg)",
+      "explanation": "AC²=40²+96²=10816; AC=104 সেমি। $\\sin\\theta=\\frac{5}{13}$, $\\cos\\theta=\\frac{12}{13}$, $\\tan\\theta=\\frac{5}{12}$, $\\operatorname{cosec}\\theta=\\frac{13}{5}$, $\\sec\\theta=\\frac{13}{12}$, $\\cot\\theta=\\frac{12}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{5}{13}$ এবং পরিসীমা 240 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-3.svg)",
+      "explanation": "BC:AB:AC=10:24:26। অনুপাতের যোগ 60; গুণক 4। তাই BC=40, AB=96, AC=104 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{12}{13}$ ও AC=104 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-3.svg)",
+      "explanation": "AB=96। পিথাগোরাসে BC=40 সেমি; $\\sin\\theta=\\frac{5}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{5}{12}$ ও AB=96 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-3.svg)",
+      "explanation": "BC=40, AC=√(40²+96²)=104 সেমি। $\\sin\\theta=\\frac{5}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{12}{5}$ ও BC=40 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-3.svg)",
+      "explanation": "AB=96, AC=104 সেমি। $\\tan\\theta=\\frac{5}{12}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{13}{12}$ ও AB=96 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-3.svg)",
+      "explanation": "AC=AB·secθ=104। পিথাগোরাসে BC=40 সেমি; $\\tan\\theta=\\frac{5}{12}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{13}{5}$ ও BC=40 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-3.svg)",
+      "explanation": "AC=104; AB=√(104²−40²)=96 সেমি। $\\cos\\theta=\\frac{12}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=4x^\\circ$, $\\angle C=5x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-3.svg)",
+      "explanation": "$9x=90$; $x=10$, $A=40^\\circ$, $C=50^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=8 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-3.svg)",
+      "explanation": "BC=AC/২=4; AB=4 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=4 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-3.svg)",
+      "explanation": "BC=4, AC=4 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=60, AB=175 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-4.svg)",
+      "explanation": "AC²=60²+175²=34225; AC=185 সেমি। $\\sin\\theta=\\frac{12}{37}$, $\\cos\\theta=\\frac{35}{37}$, $\\tan\\theta=\\frac{12}{35}$, $\\operatorname{cosec}\\theta=\\frac{37}{12}$, $\\sec\\theta=\\frac{37}{35}$, $\\cot\\theta=\\frac{35}{12}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{12}{37}$ এবং পরিসীমা 420 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-4.svg)",
+      "explanation": "BC:AB:AC=12:35:37। অনুপাতের যোগ 84; গুণক 5। তাই BC=60, AB=175, AC=185 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{35}{37}$ ও AC=185 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-4.svg)",
+      "explanation": "AB=175। পিথাগোরাসে BC=60 সেমি; $\\sin\\theta=\\frac{12}{37}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{12}{35}$ ও AB=175 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-4.svg)",
+      "explanation": "BC=60, AC=√(60²+175²)=185 সেমি। $\\sin\\theta=\\frac{12}{37}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{35}{12}$ ও BC=60 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-4.svg)",
+      "explanation": "AB=175, AC=185 সেমি। $\\tan\\theta=\\frac{12}{35}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{37}{35}$ ও AB=175 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-4.svg)",
+      "explanation": "AC=AB·secθ=185। পিথাগোরাসে BC=60 সেমি; $\\tan\\theta=\\frac{12}{35}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{37}{12}$ ও BC=60 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-4.svg)",
+      "explanation": "AC=185; AB=√(185²−60²)=175 সেমি। $\\cos\\theta=\\frac{35}{37}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=5x^\\circ$, $\\angle C=6x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-4.svg)",
+      "explanation": "$11x=90$; $x=\\frac{90}{11}$, $A=\\frac{450}{11}^\\circ$, $C=\\frac{540}{11}^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=10 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-4.svg)",
+      "explanation": "BC=AC/২=5; AB=5 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=5 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-4.svg)",
+      "explanation": "BC=5, AC=5 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=84, AB=288 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-5.svg)",
+      "explanation": "AC²=84²+288²=90000; AC=300 সেমি। $\\sin\\theta=\\frac{7}{25}$, $\\cos\\theta=\\frac{24}{25}$, $\\tan\\theta=\\frac{7}{24}$, $\\operatorname{cosec}\\theta=\\frac{25}{7}$, $\\sec\\theta=\\frac{25}{24}$, $\\cot\\theta=\\frac{24}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{7}{25}$ এবং পরিসীমা 672 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-5.svg)",
+      "explanation": "BC:AB:AC=14:48:50। অনুপাতের যোগ 112; গুণক 6। তাই BC=84, AB=288, AC=300 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{24}{25}$ ও AC=300 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-5.svg)",
+      "explanation": "AB=288। পিথাগোরাসে BC=84 সেমি; $\\sin\\theta=\\frac{7}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{7}{24}$ ও AB=288 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-5.svg)",
+      "explanation": "BC=84, AC=√(84²+288²)=300 সেমি। $\\sin\\theta=\\frac{7}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{24}{7}$ ও BC=84 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-5.svg)",
+      "explanation": "AB=288, AC=300 সেমি। $\\tan\\theta=\\frac{7}{24}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{25}{24}$ ও AB=288 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-5.svg)",
+      "explanation": "AC=AB·secθ=300। পিথাগোরাসে BC=84 সেমি; $\\tan\\theta=\\frac{7}{24}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{25}{7}$ ও BC=84 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-5.svg)",
+      "explanation": "AC=300; AB=√(300²−84²)=288 সেমি। $\\cos\\theta=\\frac{24}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=6x^\\circ$, $\\angle C=7x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-5.svg)",
+      "explanation": "$13x=90$; $x=\\frac{90}{13}$, $A=\\frac{540}{13}^\\circ$, $C=\\frac{630}{13}^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=12 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-5.svg)",
+      "explanation": "BC=AC/২=6; AB=6 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=6 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-5.svg)",
+      "explanation": "BC=6, AC=6 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=112, AB=441 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-6.svg)",
+      "explanation": "AC²=112²+441²=207025; AC=455 সেমি। $\\sin\\theta=\\frac{16}{65}$, $\\cos\\theta=\\frac{63}{65}$, $\\tan\\theta=\\frac{16}{63}$, $\\operatorname{cosec}\\theta=\\frac{65}{16}$, $\\sec\\theta=\\frac{65}{63}$, $\\cot\\theta=\\frac{63}{16}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{16}{65}$ এবং পরিসীমা 1008 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-6.svg)",
+      "explanation": "BC:AB:AC=16:63:65। অনুপাতের যোগ 144; গুণক 7। তাই BC=112, AB=441, AC=455 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{63}{65}$ ও AC=455 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-6.svg)",
+      "explanation": "AB=441। পিথাগোরাসে BC=112 সেমি; $\\sin\\theta=\\frac{16}{65}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{16}{63}$ ও AB=441 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-6.svg)",
+      "explanation": "BC=112, AC=√(112²+441²)=455 সেমি। $\\sin\\theta=\\frac{16}{65}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{63}{16}$ ও BC=112 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-6.svg)",
+      "explanation": "AB=441, AC=455 সেমি। $\\tan\\theta=\\frac{16}{63}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{65}{63}$ ও AB=441 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-6.svg)",
+      "explanation": "AC=AB·secθ=455। পিথাগোরাসে BC=112 সেমি; $\\tan\\theta=\\frac{16}{63}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{65}{16}$ ও BC=112 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-6.svg)",
+      "explanation": "AC=455; AB=√(455²−112²)=441 সেমি। $\\cos\\theta=\\frac{63}{65}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=7x^\\circ$, $\\angle C=8x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-6.svg)",
+      "explanation": "$15x=90$; $x=6$, $A=42^\\circ$, $C=48^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=14 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-6.svg)",
+      "explanation": "BC=AC/২=7; AB=7 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=7 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-6.svg)",
+      "explanation": "BC=7, AC=7 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। BC=144, AB=640 সেমি। AC ও θ-এর ছয়টি অনুপাত নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sides-7.svg)",
+      "explanation": "AC²=144²+640²=430336; AC=656 সেমি। $\\sin\\theta=\\frac{9}{41}$, $\\cos\\theta=\\frac{40}{41}$, $\\tan\\theta=\\frac{9}{40}$, $\\operatorname{cosec}\\theta=\\frac{41}{9}$, $\\sec\\theta=\\frac{41}{40}$, $\\cot\\theta=\\frac{40}{9}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sides/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sin\\theta=\\frac{9}{41}$ এবং পরিসীমা 1440 সেমি। তিন বাহুর দৈর্ঘ্য নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-sine-perimeter-7.svg)",
+      "explanation": "BC:AB:AC=18:80:82। অনুপাতের যোগ 180; গুণক 8। তাই BC=144, AB=640, AC=656 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/sine-perimeter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cos\\theta=\\frac{40}{41}$ ও AC=656 সেমি। AB, BC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosine-hypotenuse-7.svg)",
+      "explanation": "AB=640। পিথাগোরাসে BC=144 সেমি; $\\sin\\theta=\\frac{9}{41}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosine-hypotenuse/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\tan\\theta=\\frac{9}{40}$ ও AB=640 সেমি। BC, AC ও sin নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-tangent-adjacent-7.svg)",
+      "explanation": "BC=144, AC=√(144²+640²)=656 সেমি। $\\sin\\theta=\\frac{9}{41}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/tangent-adjacent/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\cot\\theta=\\frac{40}{9}$ ও BC=144 সেমি। AB, AC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cotangent-opposite-7.svg)",
+      "explanation": "AB=640, AC=656 সেমি। $\\tan\\theta=\\frac{9}{40}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cotangent-opposite/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\sec\\theta=\\frac{41}{40}$ ও AB=640 সেমি। AC, BC ও tan নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-secant-adjacent-7.svg)",
+      "explanation": "AC=AB·secθ=656। পিথাগোরাসে BC=144 সেমি; $\\tan\\theta=\\frac{9}{40}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/secant-adjacent/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\operatorname{cosec}\\theta=\\frac{41}{9}$ ও BC=144 সেমি। AC, AB ও cos নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-cosecant-opposite-7.svg)",
+      "explanation": "AC=656; AB=√(656²−144²)=640 সেমি। $\\cos\\theta=\\frac{40}{41}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/cosecant-opposite/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\angle A=8x^\\circ$, $\\angle C=9x^\\circ$। x, A ও C নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-complementary-angles-7.svg)",
+      "explanation": "$17x=90$; $x=\\frac{90}{17}$, $A=\\frac{720}{17}^\\circ$, $C=\\frac{810}{17}^\\circ$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/complementary-angles/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=30^\\circ$ ও AC=16 সেমি। BC, AB ও tanθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-thirty-degrees-7.svg)",
+      "explanation": "BC=AC/২=8; AB=8 \\sqrt{3} সেমি; $\\tan\\theta=1/\\sqrt3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/thirty-degrees/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABC ত্রিভুজে B সমকোণ এবং θ=∠BAC সূক্ষ্মকোণ। $\\theta=45^\\circ$ ও AB=8 সেমি। BC, AC ও sinθ নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/sq-fortyfive-degrees-7.svg)",
+      "explanation": "BC=8, AC=8 \\sqrt{2} সেমি। $\\sin\\theta=1/\\sqrt2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/SQ/fortyfive-degrees/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    }
+  ]
+}

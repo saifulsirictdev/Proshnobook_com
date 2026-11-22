@@ -1,0 +1,105 @@
+{
+  "status": "DRAFT_SAMPLE_NOT_APPROVED_NOT_IMPORTED",
+  "source": {
+    "fileId": "1PN3QZQ7YpsJ5XlHCz5PLXVhAlWy9fs8G",
+    "fileName": "5.-Math-School-Question-428-461.pdf",
+    "sha256": "33f86decae7b0f022ae2d89fb9eb98203b2bf8978bf78a751eb7f5ca23b30c92",
+    "pdfPage": 1,
+    "printedPage": 428,
+    "attribution": "রাজউক উত্তরা মডেল কলেজ, ঢাকা — মডেল টেস্ট ০১ (সংকলনে উল্লিখিত; স্বাধীনভাবে প্রমাণিত বোর্ড প্রশ্ন নয়)",
+    "method": "Unicode transcription and deterministic diagram redraw from visually inspected source page; not a batch font conversion. Original diagram crops retained for comparison."
+  },
+  "questions": [
+    {
+      "id": "ssc-math-sample-midpoint",
+      "type": "MCQ",
+      "category": "SSC",
+      "subject": "গণিত",
+      "topic": "ত্রিভুজের মধ্যবিন্দু উপপাদ্য",
+      "source": "নমুনা উৎস: পৃষ্ঠা ৪২৮, প্রশ্ন ১০",
+      "sourceQuestion": 10,
+      "diagram": "midpoint",
+      "text": "চিত্রে AD = BD এবং AE = EC হলে—\ni. DE ∥ BC\nii. $DE = \\frac{1}{2}BC$\niii. AB = AC\nনিচের কোনটি সঠিক?",
+      "options": {
+        "a": "i ও ii",
+        "b": "i ও iii",
+        "c": "ii ও iii",
+        "d": "i, ii ও iii"
+      },
+      "correct": "a",
+      "explanation": "D ও E যথাক্রমে AB ও AC বাহুর মধ্যবিন্দু। মধ্যবিন্দু উপপাদ্য অনুযায়ী DE ∥ BC এবং DE = BC/2। কিন্তু AB = AC হওয়ার শর্ত দেওয়া নেই। তাই i ও ii সঠিক।",
+      "provenance": [
+        {
+          "kind": "school",
+          "school": "রাজউক উত্তরা মডেল কলেজ, ঢাকা",
+          "examType": "মডেল টেস্ট ০১",
+          "sourceFile": "5.-Math-School-Question-428-461.pdf",
+          "pdfPage": 1,
+          "printedPage": "428",
+          "questionNumber": "10"
+        }
+      ]
+    },
+    {
+      "id": "ssc-math-sample-circle",
+      "type": "MCQ",
+      "category": "SSC",
+      "subject": "গণিত",
+      "topic": "বৃত্তের জ্যা",
+      "source": "নমুনা উৎস: পৃষ্ঠা ৪২৮, প্রশ্ন ১৬; প্রশ্ন ১৫–১৬-এর অভিন্ন চিত্র",
+      "sourceQuestion": 16,
+      "diagram": "circle",
+      "text": "চিত্রে O বৃত্তের কেন্দ্র এবং OM ⟂ AB। OA = ৫ সে.মি. ও OM = ৪ সে.মি. হলে AB কত?",
+      "options": {
+        "a": "৬ সে.মি.",
+        "b": "৭ সে.মি.",
+        "c": "৮ সে.মি.",
+        "d": "১২ সে.মি."
+      },
+      "correct": "a",
+      "explanation": "কেন্দ্র থেকে জ্যার ওপর অঙ্কিত লম্ব জ্যাকে সমদ্বিখণ্ডিত করে। AM = √(OA² − OM²) = √(২৫ − ১৬) = ৩ সে.মি.। অতএব AB = ২ × AM = ৬ সে.মি.।",
+      "adaptation": "অভিন্ন চিত্রটি স্বয়ংসম্পূর্ণ করতে কেন্দ্র ও লম্বের তথ্য প্রশ্নে স্পষ্টভাবে লেখা হয়েছে; মূল চিত্রে দেখানো তথ্যই ব্যবহৃত।",
+      "provenance": [
+        {
+          "kind": "school",
+          "school": "রাজউক উত্তরা মডেল কলেজ, ঢাকা",
+          "examType": "মডেল টেস্ট ০১",
+          "sourceFile": "5.-Math-School-Question-428-461.pdf",
+          "pdfPage": 1,
+          "printedPage": "428",
+          "questionNumber": "16"
+        }
+      ]
+    },
+    {
+      "id": "ssc-math-sample-trigonometry",
+      "type": "MCQ",
+      "category": "SSC",
+      "subject": "গণিত",
+      "topic": "ত্রিকোণমিতিক অনুপাত",
+      "source": "নমুনা উৎস: পৃষ্ঠা ৪২৮, প্রশ্ন ২০",
+      "sourceQuestion": 20,
+      "diagram": "trigonometry",
+      "text": "চিত্রে—\ni. $\\theta = 30^\\circ$\nii. $\\cos\\theta = \\frac{\\sqrt{3}}{2}$\niii. $1 + \\tan^2\\theta = \\frac{4}{3}$\nনিচের কোনটি সঠিক?",
+      "options": {
+        "a": "i ও ii",
+        "b": "i ও iii",
+        "c": "ii ও iii",
+        "d": "i, ii ও iii"
+      },
+      "correct": "d",
+      "explanation": "সমকোণী MNO ত্রিভুজে MN = ১ ও NO = √৩। তাই MO = ২, tanθ = ১/√৩ এবং θ = ৩০°। cosθ = √৩/২ এবং ১ + tan²θ = ১ + ১/৩ = ৪/৩। তিনটিই সঠিক।",
+      "provenance": [
+        {
+          "kind": "school",
+          "school": "রাজউক উত্তরা মডেল কলেজ, ঢাকা",
+          "examType": "মডেল টেস্ট ০১",
+          "sourceFile": "5.-Math-School-Question-428-461.pdf",
+          "pdfPage": 1,
+          "printedPage": "428",
+          "questionNumber": "20"
+        }
+      ]
+    }
+  ]
+}

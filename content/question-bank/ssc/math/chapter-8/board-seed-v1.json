@@ -1,0 +1,311 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৮ম অধ্যায়: বৃত্ত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ জ্যামিতি অনুশীলনী",
+  "edition": "Chapter 8 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ চতুর্ভুজ ABCD-এর ∠ABC=110° হলে ∠ADC কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-rajshahi-14.svg)",
+      "options": {
+        "A": "250°",
+        "B": "110°",
+        "C": "70°",
+        "D": "60°"
+      },
+      "correct": "C",
+      "explanation": "বৃত্তস্থ চতুর্ভুজের বিপরীত কোণের যোগ ১৮০°; তাই ১৮০°−১১০°=৭০°।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 14",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "14"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে AB জ্যা; OC⊥AB এবং C জ্যার উপর। D বৃহৎ AB চাপে অবস্থিত। i. C, AB-এর মধ্যবিন্দু; ii. ∠OAC=∠OBC; iii. ∠OAC ও ∠OBC পরস্পর পূরক। কোনটি সাধারণভাবে সঠিক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-rajshahi-27.svg)",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "A",
+      "explanation": "কেন্দ্র থেকে জ্যার উপর লম্ব জ্যাকে সমদ্বিখণ্ডিত করে; OA=OB বলে ভূমিসংলগ্ন কোণদ্বয় সমান। তাদের যোগ সাধারণভাবে ৯০° নয়।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 27",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "27"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "সমকোণী ত্রিভুজের পরিবৃত্তের কেন্দ্র কোথায় অবস্থিত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-rajshahi-30.svg)",
+      "options": {
+        "A": "অভ্যন্তরে",
+        "B": "বহির্ভাগে",
+        "C": "অতিভুজের উপর",
+        "D": "লম্বের উপর"
+      },
+      "correct": "C",
+      "explanation": "অতিভুজের মধ্যবিন্দু তিন শীর্ষ থেকে সমদূরবর্তী; অতিভুজই পরিবৃত্তের ব্যাস।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 30",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "30"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রবিশিষ্ট বৃত্তের ব্যাসার্ধ OA হলে A বিন্দুতে কয়টি স্পর্শক আঁকা যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-cumilla-26.svg)",
+      "options": {
+        "A": "৪টি",
+        "B": "৩টি",
+        "C": "২টি",
+        "D": "১টি"
+      },
+      "correct": "D",
+      "explanation": "বৃত্তের নির্দিষ্ট বিন্দুতে ব্যাসার্ধের লম্ব একটিই রেখা; সেটিই স্পর্শক।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 26",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "26"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি বৃত্ত পরস্পর বহিঃস্পর্শ করে এবং তাদের ব্যাসার্ধ যথাক্রমে ৫ ও ৩ সেমি। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-cumilla-27.svg)",
+      "options": {
+        "A": "১৫ সেমি",
+        "B": "৮ সেমি",
+        "C": "২ সেমি",
+        "D": "১.৬৬ সেমি"
+      },
+      "correct": "B",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদ্বয়ের দূরত্ব ব্যাসার্ধদ্বয়ের যোগ ৫+৩=৮ সেমি।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 27",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "27"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তের ব্যাস দ্বারা পরিধিতে উৎপন্ন কোণ কোনটি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-cumilla-28.svg)",
+      "options": {
+        "A": "সূক্ষ্মকোণ",
+        "B": "সমকোণ",
+        "C": "প্রবৃদ্ধকোণ",
+        "D": "স্থূলকোণ"
+      },
+      "correct": "B",
+      "explanation": "ব্যাস অর্ধবৃত্ত চাপ উৎপন্ন করে; পরিধির কোণ কেন্দ্রে ১৮০° কোণের অর্ধেক ৯০°।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 28",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "28"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে AB ও AC স্পর্শক; B,C স্পর্শবিন্দু। ∠BAC=60° হলে ক্ষুদ্র ∠BOC কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-barishal-3.svg)",
+      "options": {
+        "A": "300°",
+        "B": "270°",
+        "C": "120°",
+        "D": "90°"
+      },
+      "correct": "C",
+      "explanation": "OB⊥AB ও OC⊥AC। চতুর্ভুজ ABOC-তে O ও A-এর কোণের যোগ ১৮০°; তাই ১২০°।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 3",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "3"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে AB, AC স্পর্শক, ∠BAC=60°। D বৃহৎ BDC চাপের মধ্যবিন্দু। i. ∠BDC=∠BAC; ii. ক্ষুদ্র ∠BOC=2∠BAC; iii. ∠BCD+∠DBC=ক্ষুদ্র ∠BOC। কোনটি সঠিক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-barishal-4.svg)",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D",
+      "explanation": "ক্ষুদ্র BOC=120°; BDC=60°। তাই i,ii সত্য। BCD ও DBC-এর যোগ 180°−60°=120°, ফলে iii-ও সত্য। এই সংখ্যাগত সমতা প্রদত্ত ৬০°-এর জন্য; সর্বক্ষেত্রের পরিচিতি নয়।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 4",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "4"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে AB,CD জ্যা; OE⊥AB, OF⊥CD এবং OE=OF। BE=4 সেমি হলে CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-barishal-29.svg)",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৬",
+        "D": "৮"
+      },
+      "correct": "D",
+      "explanation": "লম্বে E, AB-এর মধ্যবিন্দু; তাই AB=২×৪=৮। সমদূরবর্তী জ্যা সমান, ফলে CD=৮।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 29",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "29"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে AB,CD জ্যা; OE⊥AB, OF⊥CD, BE=4 সেমি। AB=CD এবং OE=3 সেমি হলে বৃত্তটির ব্যাস কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-barishal-30.svg)",
+      "options": {
+        "A": "৪",
+        "B": "৫",
+        "C": "৬",
+        "D": "১০"
+      },
+      "correct": "D",
+      "explanation": "E জ্যার মধ্যবিন্দু, তাই BE=৪। OEB সমকোণী; ব্যাসার্ধ OB=√(৩²+৪²)=৫ সেমি। ব্যাস ২×৫=১০ সেমি।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 30",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "30"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তের বহিঃস্থ কোনো বিন্দু থেকে ঐ বৃত্তে সর্বোচ্চ কয়টি স্পর্শক আঁকা যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-mymensingh-12.svg)",
+      "options": {
+        "A": "১",
+        "B": "২",
+        "C": "৩",
+        "D": "৪"
+      },
+      "correct": "B",
+      "explanation": "একটি বহিঃস্থ বিন্দু থেকে বৃত্তে দুটি পৃথক স্পর্শক আঁকা যায়।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 12",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "12"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তে অন্তর্লিখিত কোনো চতুর্ভুজের একটি কোণ 75° হলে তার বিপরীত কোণের মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/source-mymensingh-13.svg)",
+      "options": {
+        "A": "180°",
+        "B": "165°",
+        "C": "105°",
+        "D": "75°"
+      },
+      "correct": "C",
+      "explanation": "বৃত্তস্থ চতুর্ভুজের বিপরীত কোণদ্বয় সম্পূরক; ১৮০°−৭৫°=১০৫°।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 13",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "13"
+        }
+      ]
+    }
+  ]
+}

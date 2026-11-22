@@ -70,13 +70,16 @@ export async function POST(req: Request) {
     if (!r) return [];
 
     const options = asObj(r.options);
+    // Provenance is metadata, never an MCQ choice or editable answer option.
+    const { _provenance, ...choiceOptions } = options;
     const correct = r.correct ?? "";
     const type = detectType(r.text ?? "", options, correct);
 
     const base = {
       id: r.id,
       text: r.text,
-      options: r.options as Record<string, string>,
+      options: choiceOptions as Record<string, string>,
+      ...(_provenance ? { provenance: _provenance } : {}),
       correct: r.correct,
       explanation: r.explanation,
       category: r.category,

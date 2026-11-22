@@ -1,0 +1,199 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৩য় অধ্যায়: বীজগাণিতিক রাশি",
+  "book": "চ্যান্সেলর SSC বোর্ড প্রশ্ন ও উত্তরমালা — গণিত (বোর্ড-আরোপিত সংকলন)",
+  "edition": "প্রথম উৎস-যাচাইকৃত খসড়া; ২০২৪ সালের বোর্ড-আরোপিত প্রশ্ন",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$x^2+y^2=9$ এবং $xy=3$ হলে— i. $(x-y)^2=3$; ii. $(x+y)^2=15$; iii. $x^2+y^2+x^2y^2=18$। নিচের কোনটি সঠিক?",
+      "explanation": "$(x-y)^2=x^2+y^2-2xy=9-6=3$; $(x+y)^2=x^2+y^2+2xy=9+6=15$। আবার $x^2+y^2+x^2y^2=9+(xy)^2=9+9=18$। তাই তিনটি বিবৃতিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 20",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "20"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+y=\\sqrt{8}$ এবং $x-y=\\sqrt{5}$ হলে— i. $xy=\\frac34$; ii. $x^2+y^2=\\frac{13}{2}$; iii. $x^2-y^2=\\sqrt{40}$। নিচের কোনটি সঠিক?",
+      "explanation": "দুই শর্ত বর্গ করে পাই $(x+y)^2=8$ এবং $(x-y)^2=5$। বিয়োগে $4xy=3$, তাই $xy=3/4$। যোগে $2(x^2+y^2)=13$, তাই $x^2+y^2=13/2$। আবার $x^2-y^2=(x+y)(x-y)=\\sqrt8\\sqrt5=\\sqrt{40}$। তিনটিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 16",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "16"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x=\\sqrt6$, $y=\\sqrt3$ হলে $(x-y)^2+2xy$ এর মান কত?",
+      "explanation": "$(x-y)^2+2xy=x^2-2xy+y^2+2xy=x^2+y^2$। তাই মান $6+3=9$; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 22",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "22"
+        }
+      ],
+      "options": {
+        "A": "$3$",
+        "B": "$\\sqrt{18}$",
+        "C": "$2\\sqrt{18}$",
+        "D": "$9$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=\\sqrt3$, $a-b=1$ হলে $4ab$ এর মান নিচের কোনটি?",
+      "explanation": "$(a+b)^2-(a-b)^2=4ab$। ফলে $4ab=(\\sqrt3)^2-1^2=3-1=2$; উত্তর C।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "24"
+        }
+      ],
+      "options": {
+        "A": "$4$",
+        "B": "$\\sqrt3+1$",
+        "C": "$2$",
+        "D": "$\\sqrt3-1$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=6$, $a-b=4$ হলে— i. $a^2-b^2=24$; ii. $a^2+b^2=26$; iii. $4ab=20$। নিচের কোনটি সঠিক?",
+      "explanation": "$a^2-b^2=(a+b)(a-b)=6\\times4=24$। $a^2+b^2=((a+b)^2+(a-b)^2)/2=(36+16)/2=26$। $4ab=(a+b)^2-(a-b)^2=36-16=20$। তাই তিনটি বিবৃতিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 21",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "21"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "যদি $f(x)=x^3+ax^2-6x-9$ হয়, তবে $a$ এর কোন মানের জন্য $f(-3)=0$ হবে?",
+      "explanation": "$x=-3$ বসিয়ে পাই $f(-3)=-27+9a+18-9=9a-18$। শূন্য হওয়ার শর্তে $9a-18=0$; তাই $a=2$। সমতুল্যভাবে বহুপদীটি $(x+3)$ দ্বারা নিঃশেষে বিভাজ্য; উত্তর B।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "2"
+        }
+      ],
+      "options": {
+        "A": "$6$",
+        "B": "$2$",
+        "C": "$-2$",
+        "D": "$-4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "CQ",
+      "text": "(i) $a^2-2\\sqrt6\\,a+1=0$ এবং (ii) $x-5=2\\sqrt6$।",
+      "explanation": "উৎপাদকে বিশ্লেষণ, ঘনের সূত্র এবং বিপরীত রাশির সূত্র ব্যবহার করতে হবে। মূল রাশির সংজ্ঞার শর্ত সমাধানে সংরক্ষিত।",
+      "page": "সংকলন: মুদ্রিত 209; PDF 68; প্রশ্ন 2",
+      "difficulty": "HARD",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 68,
+          "printedPage": "209",
+          "questionNumber": "2"
+        }
+      ],
+      "parts": [
+        {
+          "label": "ক",
+          "marks": 2,
+          "question": "$4b^2+\\frac{1}{4b^2}-2+4b-\\frac1b$ কে উৎপাদকে বিশ্লেষণ কর।",
+          "solution": "$b\\ne0$। ধরি $t=2b-\\frac1{2b}$। তাহলে রাশিটি $t^2+2t=t(t+2)$। অর্থাৎ $\\left(2b-\\frac1{2b}\\right)\\left(2b-\\frac1{2b}+2\\right)=\\frac{(2b-1)(2b+1)(4b^2+4b-1)}{4b^2}$।"
+        },
+        {
+          "label": "খ",
+          "marks": 4,
+          "question": "প্রমাণ কর যে, $x\\sqrt{x}-\\frac1{x\\sqrt{x}}=22\\sqrt2$।",
+          "solution": "$x=5+2\\sqrt6=(\\sqrt3+\\sqrt2)^2>0$। প্রধান বর্গমূল $\\sqrt{x}=\\sqrt3+\\sqrt2$ এবং $1/\\sqrt{x}=\\sqrt3-\\sqrt2$, কারণ তাদের গুণফল ১। অতএব $x\\sqrt{x}-1/(x\\sqrt{x})=(\\sqrt3+\\sqrt2)^3-(\\sqrt3-\\sqrt2)^3=6(\\sqrt3)^2\\sqrt2+2(\\sqrt2)^3=18\\sqrt2+4\\sqrt2=22\\sqrt2$।"
+        },
+        {
+          "label": "গ",
+          "marks": 4,
+          "question": "দেখাও যে, $\\frac{a^{10}+1}{a^5}=922\\sqrt6$।",
+          "solution": "মূল সমীকরণে $a=0$ অসম্ভব। $a$ দিয়ে ভাগ করলে $a+1/a=2\\sqrt6$। ধরি $s_n=a^n+a^{-n}$। তাহলে $s_0=2$, $s_1=2\\sqrt6$ এবং $s_n=(a+1/a)s_{n-1}-s_{n-2}$; গুণ করে মধ্যের দুইটি পদ বাদ দিলেই সূত্রটি মেলে। তাই $s_2=24-2=22$, $s_3=44\\sqrt6-2\\sqrt6=42\\sqrt6$, $s_4=504-22=482$, $s_5=964\\sqrt6-42\\sqrt6=922\\sqrt6$। চাওয়া রাশি $(a^{10}+1)/a^5=a^5+a^{-5}=s_5$; প্রমাণিত।"
+        }
+      ]
+    }
+  ]
+}

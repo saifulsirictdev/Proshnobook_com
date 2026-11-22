@@ -1,0 +1,111 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৭শ অধ্যায়: পরিসংখ্যান",
+  "book": "Proshnobook — সারণি ও লেখচিত্রসহ পরিসংখ্যান অনুশীলনী",
+  "edition": "Chapter 17 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "নিচের সারণিতে মধ্যক শ্রেণির পূর্ববর্তী ক্রমযোজিত গণসংখ্যা কত?\n\n| শ্রেণি | 31–40 | 41–50 | 51–60 | 61–70 | 71–80 |\n| --- | --- | --- | --- | --- | --- |\n| গণসংখ্যা f | 4 | 8 | 20 | 12 | 6 |\n\n",
+      "options": {
+        "A": "$12$",
+        "B": "$20$",
+        "C": "$25$",
+        "D": "$32$"
+      },
+      "correct": "A",
+      "explanation": "মোট N=50; N/2=25। সঞ্চিত গণসংখ্যা 4,12,32,44,50; মধ্যক শ্রেণি 51–60, তার পূর্ববর্তী ক্রমযোজিত গণসংখ্যা 12।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "কোনো শ্রেণির নিম্নসীমা 30 এবং শ্রেণিমধ্যমান 32 হলে ঐ শ্রেণির উচ্চসীমা কত?",
+      "options": {
+        "A": "$37$",
+        "B": "$35$",
+        "C": "$34$",
+        "D": "$33$"
+      },
+      "correct": "C",
+      "explanation": "মধ্যমান=(নিম্নসীমা+উচ্চসীমা)/2; $32=(30+U)/2$ থেকে U=34। এখানে আপাত সীমা বোঝানো হয়েছে, প্রকৃত উচ্চসীমানা নয়।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 15",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "15"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোনটি বিচ্ছিন্ন চলক?",
+      "options": {
+        "A": "জনসংখ্যা",
+        "B": "শিক্ষার্থীদের উচ্চতা",
+        "C": "বয়স",
+        "D": "তাপমাত্রা"
+      },
+      "correct": "A",
+      "explanation": "জনসংখ্যা গণনাযোগ্য পূর্ণসংখ্যা। উচ্চতা ও তাপমাত্রা পরিমাপযোগ্য অবিচ্ছিন্ন চলক; বয়সও সময়ের পরিমাপ হিসেবে অবিচ্ছিন্ন (পূর্ণবছরে রেকর্ড করা আলাদা বিষয়)।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 11",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "11"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের গণসংখ্যা সারণির প্রচুরক শ্রেণির উচ্চসীমা কত?\n\n| শ্রেণি | 21–30 | 31–40 | 41–50 | 51–60 | 61–70 |\n| --- | --- | --- | --- | --- | --- |\n| গণসংখ্যা f | 8 | 15 | 12 | 8 | 7 |\n\n",
+      "options": {
+        "A": "$50$",
+        "B": "$41$",
+        "C": "$40$",
+        "D": "$31$"
+      },
+      "correct": "C",
+      "explanation": "সর্বাধিক গণসংখ্যা 15; শ্রেণি 31–40, তাই আপাত উচ্চসীমা 40। প্রকৃত উচ্চসীমানা 40.5 আলাদা।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 12",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "12"
+        }
+      ]
+    }
+  ]
+}

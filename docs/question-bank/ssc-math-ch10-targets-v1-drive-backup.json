@@ -1,0 +1,49 @@
+{
+  "chapter": 10,
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 120,
+    "SQ": 50,
+    "total": 320,
+    "diagrams": 320
+  },
+  "files": [
+    {
+      "file": "docs/question-bank/ssc-math-ch10-questions-v1-backup.json",
+      "driveId": "1Y83UhlzdTrap32UO2vlVNW5EPViQ8q96",
+      "url": "https://drive.google.com/file/d/1Y83UhlzdTrap32UO2vlVNW5EPViQ8q96/view",
+      "bytes": 1081455,
+      "md5": "f229740d907e124babd2dd51d27fd083",
+      "sha256": "7b15251f4393019504b0dd74ef8746640ef6b9bc6012b7409ea33186954de408",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch10-illustrated-v1-backup.zip",
+      "driveId": "1Q0xCmOqqVBY-fsOG8FBd167A5DhTOaTm",
+      "url": "https://drive.google.com/file/d/1Q0xCmOqqVBY-fsOG8FBd167A5DhTOaTm/view",
+      "bytes": 901568,
+      "md5": "866eb91db60f4c7f709fc3c2606455c9",
+      "sha256": "833fc1260183d130bc695228714e2844fb8b21723e41fc26c5787a29e44734ef",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch10-illustrated-review.html",
+      "driveId": "19p8Ocn-N-lmH16FKXHk33IaQS3dxk2NZ",
+      "url": "https://drive.google.com/file/d/19p8Ocn-N-lmH16FKXHk33IaQS3dxk2NZ/view",
+      "bytes": 4711702,
+      "md5": "3d9387a8b6c279ffae0adc2e37c478b8",
+      "sha256": "c49a6393d75ea5dfc5f7b701ec832e9db8b3a00fbcb4634c535fcfc758a54f47",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    }
+  ],
+  "notes": [
+    "Backup JSON is a container, not direct importer input; use importFiles[].payload or original slices in ZIP.",
+    "No permission changes, DB import, approval or deployment.",
+    "6 compilation-adapted MCQ; 314 original parameter variants; not exhaustive board or current-textbook coverage."
+  ]
+}

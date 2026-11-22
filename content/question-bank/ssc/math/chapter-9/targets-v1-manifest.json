@@ -1,0 +1,58 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 9,
+  "topic": "৯ম অধ্যায়: ত্রিকোণমিতিক অনুপাত",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 250,
+    "CQ": 150,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 250,
+    "CQ": 150,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq-1.json",
+      "bytes": 128603,
+      "sha256": "31e4be4cb4c9b46e94407311dac89d6984f33580f79730c80f4e791e6ac9dfdd"
+    },
+    {
+      "file": "target-v1/mcq-2.json",
+      "bytes": 85916,
+      "sha256": "15b9b9375c642b3da0acbfbbbf1b9b07abb63b7b0705c50739f2d30b861f16bb"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 277166,
+      "sha256": "d824c866f6af196e9960f6a90e1c88cca8808ace50442ddd9ea7157397bdd7a7"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 52269,
+      "sha256": "75415601f991318154684e6eec2556b5eeb9b23e275f42a1ce9e983615e0e6fc"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 659726,
+    "sha256": "8c152493f915e60eedcb9d51e262ef9a14e8753e353b94e92ea117945e21c5d8"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 11075,
+    "sha256": "14c35656380166c858e5d8a8162968c8251ce9e9e693b1d006e200ae7364b289"
+  },
+  "limitations": [
+    "Numeric target 470 met; 10 source-adapted MCQ and 460 original parameter variants, not 470 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

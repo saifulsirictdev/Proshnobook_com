@@ -46,11 +46,11 @@ export default function LayoutControls({
       <section className="studio-section">
         <h3>Page Setup</h3>
         <Toggle
-          label="English প্রশ্নে বোর্ড/স্কুলের নাম, সাল ও মূল প্রশ্ন নম্বর দেখান"
+          label="প্রশ্নের পাশে বোর্ড/স্কুলের নাম, সাল ও মূল প্রশ্ন নম্বর দেখান"
           checked={s.show.boardSource}
           onChange={(v) => update({ ...s, show: { ...s.show, boardSource: v } })}
         />
-        <p className="text-xs text-slate-500">বন্ধ রাখলে Preview/Print-এ উৎসের তথ্য থাকবে না; সাল দিয়ে filter অপরিবর্তিত থাকবে।</p>
+        <p className="text-xs text-slate-500">যে প্রশ্নে উৎসের তথ্য আছে, শুধু সেটিতেই দেখাবে। বন্ধ রাখলে Preview/Print-এ লুকাবে; সংরক্ষিত বোর্ড/সালের তথ্য ও filter বদলাবে না।</p>
         <label className="my-3 block text-xs">লাইনের দূরত্ব — {s.cfg.lineHeight.toFixed(2)}
           <input className="mt-2 w-full" aria-label="লাইনের দূরত্ব" type="range" min="1" max="2.5" step="0.05" value={s.cfg.lineHeight} onChange={e=>cfg("lineHeight",Number(e.target.value))}/>
         </label>

@@ -1,0 +1,2221 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৬ষ্ঠ অধ্যায়: রেখা, কোণ ও ত্রিভুজ",
+  "book": "Proshnobook — বোর্ড সংকলন ও চিত্রসহ রেখা-কোণ-ত্রিভুজ অনুশীলনী",
+  "edition": "Chapter 6 target v1; DRAFT; শিক্ষক ও diagram semantic review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle ABC=30^\\circ$, $\\angle ACB=60^\\circ$ এবং BA-কে A-এর দিকে D পর্যন্ত বাড়ানো হয়েছে। $\\angle CAD$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-cumilla-24.svg)",
+      "options": {
+        "A": "$30^\\circ$",
+        "B": "$60^\\circ$",
+        "C": "$90^\\circ$",
+        "D": "$100^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "বহিঃকোণ $\\angle CAD=\\angle ABC+\\angle ACB=30^\\circ+60^\\circ=90^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "24"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\angle X=70^\\circ$, $XY=XZ$ এবং OY ও OZ হলো $\\angle Y$ ও $\\angle Z$-এর সমদ্বিখণ্ডক। $\\angle XYZ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-jashore-18.svg)",
+      "options": {
+        "A": "$70^\\circ$",
+        "B": "$65^\\circ$",
+        "C": "$60^\\circ$",
+        "D": "$55^\\circ$"
+      },
+      "correct": "D",
+      "explanation": "সমদ্বিবাহু ত্রিভুজের ভূমির কোণ সমান। তাই $\\angle XYZ=(180^\\circ-70^\\circ)/2=55^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 18",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "18"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\angle X=70^\\circ$, $XY=XZ$ এবং OY ও OZ হলো $\\angle Y$ ও $\\angle Z$-এর সমদ্বিখণ্ডক। $\\angle YOZ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-jashore-19.svg)",
+      "options": {
+        "A": "$55^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$125^\\circ$",
+        "D": "$130^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "দুটি ভূমির কোণের অর্ধেকের যোগ $55^\\circ$। তাই $\\angle YOZ=180^\\circ-55^\\circ=125^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 19",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "19"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$, $\\angle A=40^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-barishal-27.svg)",
+      "options": {
+        "A": "$55^\\circ$",
+        "B": "$90^\\circ$",
+        "C": "$110^\\circ$",
+        "D": "$140^\\circ$"
+      },
+      "correct": "A",
+      "explanation": "ভূমির কোণ $70^\\circ$। বহিঃকোণ $\\angle ACD=110^\\circ$; এর অর্ধেক $55^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 27",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "27"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ PQR-এর $\\angle P$ ও $\\angle Q$-এর সমদ্বিখণ্ডকদ্বয় O-তে মিলিত এবং $\\angle R=40^\\circ$। $\\angle POQ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-mymensingh-9.svg)",
+      "options": {
+        "A": "$70^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$130^\\circ$",
+        "D": "$140^\\circ$"
+      },
+      "correct": "B",
+      "explanation": "$\\angle POQ=90^\\circ+\\angle R/2=90^\\circ+20^\\circ=110^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 9",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "9"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ PQR-এর $\\angle Q$ ও $\\angle R$-এর সমদ্বিখণ্ডকদ্বয় O-তে মিলিত হয়েছে। $\\angle P=50^\\circ$ হলে $\\angle QOR$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-dinajpur-12.svg)",
+      "options": {
+        "A": "$40^\\circ$",
+        "B": "$65^\\circ$",
+        "C": "$115^\\circ$",
+        "D": "$130^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "$\\angle QOR=90^\\circ+\\angle P/2=115^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 12",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "12"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিনটি কোণের অনুপাত $2:3:5$ হলে বৃহত্তম কোণটি ক্ষুদ্রতম কোণটির কত গুণ?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-rajshahi-3.svg)",
+      "options": {
+        "A": "$\\frac52$",
+        "B": "$\\frac53$",
+        "C": "$\\frac35$",
+        "D": "$\\frac25$"
+      },
+      "correct": "A",
+      "explanation": "কোণগুলো $2t,3t,5t$। তাই বৃহত্তম/ক্ষুদ্রতম $=5t/(2t)=5/2$।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 3",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "3"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য 10 সেমি হলে এর মধ্যমার দৈর্ঘ্য কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-sylhet-6.svg)",
+      "options": {
+        "A": "$5\\sqrt3$ সেমি",
+        "B": "$3\\sqrt5$ সেমি",
+        "C": "75 সেমি",
+        "D": "125 সেমি"
+      },
+      "correct": "A",
+      "explanation": "মধ্যমা লম্বও; ভূমিকে ৫ ও ৫ সেমিতে ভাগ করে। পিথাগোরাসে মধ্যমা $=\\sqrt{10^2-5^2}=5\\sqrt3$ সেমি।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 6",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "6"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজ সর্বসম আঁকতে ন্যূনতম কতটি উপাত্ত প্রয়োজন?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct": "C",
+      "explanation": "যথাযথ তিনটি স্বাধীন উপাত্ত লাগে—যেমন তিন বাহু, অথবা দুই বাহু ও অন্তর্ভুক্ত কোণ। যেকোনো তিনটি কোণ দিলেই সর্বসম হয় না।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 7",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "7"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "সুষম পঞ্চভুজের শীর্ষবিন্দুতে উৎপন্ন অন্তঃকোণের পরিমাণ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-dhaka-5.svg)",
+      "options": {
+        "A": "$108^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$120^\\circ$",
+        "D": "$144^\\circ$"
+      },
+      "correct": "A",
+      "explanation": "পঞ্চভুজকে তিন ত্রিভুজে ভাগ করলে কোণসমষ্টি $3\\times180^\\circ=540^\\circ$। সুষম হওয়ায় প্রতিটি অন্তঃকোণ $540^\\circ/5=108^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "5"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=28^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-1.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-28^\\circ=152^\\circ$। সঠিক উত্তর $152$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$152$",
+        "B": "$153$",
+        "C": "$151$",
+        "D": "$154$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=28^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-1.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$27$",
+        "C": "$30$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=28^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-1.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $62$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$64$",
+        "B": "$62$",
+        "C": "$63$",
+        "D": "$61$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $28^\\circ$, $41^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-1.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $191$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$192$",
+        "B": "$190$",
+        "C": "$193$",
+        "D": "$191$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=28^\\circ$ ও $\\angle B=41^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-1.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $111$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$113$",
+        "B": "$111$",
+        "C": "$112$",
+        "D": "$110$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=28^\\circ$, $\\angle B=41^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-1.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $69$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$70$",
+        "B": "$68$",
+        "C": "$71$",
+        "D": "$69$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=28^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-1.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $124$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$123$",
+        "B": "$126$",
+        "C": "$124$",
+        "D": "$125$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=28^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-1.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $76$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$75$",
+        "B": "$78$",
+        "C": "$76$",
+        "D": "$77$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=28^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-1.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $62$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$63$",
+        "C": "$61$",
+        "D": "$64$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=28^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-1.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$13$",
+        "C": "$16$",
+        "D": "$14$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=28^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-1.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $104$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$105$",
+        "B": "$103$",
+        "C": "$106$",
+        "D": "$104$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $28^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-1.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$30$",
+        "C": "$28$",
+        "D": "$29$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $28^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-1.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $152$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$154$",
+        "B": "$152$",
+        "C": "$153$",
+        "D": "$151$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 6 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-1.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $3 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2 + 3 \\sqrt{3}$",
+        "B": "$3 \\sqrt{3}$",
+        "C": "$1 + 3 \\sqrt{3}$",
+        "D": "$-1 + 3 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 5 ও 7 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-1.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<12$; পূর্ণসংখ্যা ৩ থেকে 11 পর্যন্ত। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$9$",
+        "C": "$10$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=5$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-1.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$5$",
+        "C": "$6$",
+        "D": "$4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 24 সেমি এবং $BC=6$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-1.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$9$",
+        "C": "$10$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=28^\\circ$, $\\angle B=41^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-1.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{69}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{67}{2}$",
+        "B": "$\\frac{73}{2}$",
+        "C": "$\\frac{69}{2}$",
+        "D": "$\\frac{71}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:3$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-1.svg)",
+      "explanation": "অনুপাতের মোট অংশ 6। এক অংশ $180^\\circ/6$। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$30$",
+        "B": "$31$",
+        "C": "$29$",
+        "D": "$32$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+1^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-1.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $31$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$30$",
+        "B": "$33$",
+        "C": "$31$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=31^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-2.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-31^\\circ=149^\\circ$। সঠিক উত্তর $149$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$150$",
+        "B": "$148$",
+        "C": "$151$",
+        "D": "$149$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=31^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-2.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $31$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$30$",
+        "B": "$33$",
+        "C": "$31$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=31^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-2.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $59$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$60$",
+        "C": "$58$",
+        "D": "$61$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $31^\\circ$, $42^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-2.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $187$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$186$",
+        "B": "$189$",
+        "C": "$187$",
+        "D": "$188$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=31^\\circ$ ও $\\angle B=42^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-2.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $107$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$107$",
+        "B": "$108$",
+        "C": "$106$",
+        "D": "$109$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=31^\\circ$, $\\angle B=42^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-2.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $73$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$75$",
+        "C": "$73$",
+        "D": "$74$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=31^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-2.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $118$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$120$",
+        "B": "$118$",
+        "C": "$119$",
+        "D": "$117$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=31^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-2.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $\\frac{149}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{153}{2}$",
+        "B": "$\\frac{149}{2}$",
+        "C": "$\\frac{151}{2}$",
+        "D": "$\\frac{147}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=31^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-2.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $59$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$58$",
+        "C": "$61$",
+        "D": "$59$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=31^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-2.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $\\frac{31}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{29}{2}$",
+        "B": "$\\frac{35}{2}$",
+        "C": "$\\frac{31}{2}$",
+        "D": "$\\frac{33}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=31^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-2.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $\\frac{211}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{209}{2}$",
+        "B": "$\\frac{215}{2}$",
+        "C": "$\\frac{211}{2}$",
+        "D": "$\\frac{213}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $31^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-2.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $31$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$31$",
+        "C": "$32$",
+        "D": "$30$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $31^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-2.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $149$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$149$",
+        "B": "$150$",
+        "C": "$148$",
+        "D": "$151$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 8 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-2.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $4 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4 \\sqrt{3}$",
+        "B": "$1 + 4 \\sqrt{3}$",
+        "C": "$-1 + 4 \\sqrt{3}$",
+        "D": "$2 + 4 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 6 ও 8 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-2.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<14$; পূর্ণসংখ্যা ৩ থেকে 13 পর্যন্ত। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$12$",
+        "C": "$10$",
+        "D": "$13$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=6$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-2.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$7$",
+        "C": "$5$",
+        "D": "$8$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 28 সেমি এবং $BC=8$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-2.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$11$",
+        "C": "$9$",
+        "D": "$12$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=31^\\circ$, $\\angle B=42^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-2.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{73}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{77}{2}$",
+        "B": "$\\frac{73}{2}$",
+        "C": "$\\frac{75}{2}$",
+        "D": "$\\frac{71}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:4$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-2.svg)",
+      "explanation": "অনুপাতের মোট অংশ 7। এক অংশ $180^\\circ/7$। সঠিক উত্তর $\\frac{180}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{187}{7}$",
+        "B": "$\\frac{173}{7}$",
+        "C": "$\\frac{194}{7}$",
+        "D": "$\\frac{180}{7}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+2^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-2.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$32$",
+        "C": "$33$",
+        "D": "$31$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=34^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-3.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-34^\\circ=146^\\circ$। সঠিক উত্তর $146$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$148$",
+        "C": "$146$",
+        "D": "$147$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=34^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-3.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$34$",
+        "C": "$35$",
+        "D": "$33$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=34^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-3.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$57$",
+        "B": "$55$",
+        "C": "$58$",
+        "D": "$56$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $34^\\circ$, $43^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-3.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $183$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$185$",
+        "B": "$183$",
+        "C": "$184$",
+        "D": "$182$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=34^\\circ$ ও $\\angle B=43^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-3.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $103$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$104$",
+        "B": "$102$",
+        "C": "$105$",
+        "D": "$103$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=34^\\circ$, $\\angle B=43^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-3.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $77$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$79$",
+        "B": "$77$",
+        "C": "$78$",
+        "D": "$76$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=34^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-3.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $112$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$112$",
+        "B": "$113$",
+        "C": "$111$",
+        "D": "$114$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=34^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-3.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $73$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$73$",
+        "B": "$74$",
+        "C": "$72$",
+        "D": "$75$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=34^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-3.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$58$",
+        "C": "$56$",
+        "D": "$57$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=34^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-3.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $17$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$17$",
+        "C": "$18$",
+        "D": "$16$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=34^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-3.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $107$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$109$",
+        "B": "$107$",
+        "C": "$108$",
+        "D": "$106$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $34^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-3.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$35$",
+        "C": "$33$",
+        "D": "$36$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $34^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-3.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $146$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$147$",
+        "B": "$145$",
+        "C": "$148$",
+        "D": "$146$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 10 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-3.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $5 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 5 \\sqrt{3}$",
+        "B": "$-1 + 5 \\sqrt{3}$",
+        "C": "$2 + 5 \\sqrt{3}$",
+        "D": "$5 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 7 ও 9 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-3.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<16$; পূর্ণসংখ্যা ৩ থেকে 15 পর্যন্ত। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$12$",
+        "C": "$15$",
+        "D": "$13$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=7$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-3.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$6$",
+        "C": "$9$",
+        "D": "$7$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 32 সেমি এবং $BC=10$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-3.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$10$",
+        "C": "$13$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=34^\\circ$, $\\angle B=43^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-3.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{77}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{77}{2}$",
+        "B": "$\\frac{79}{2}$",
+        "C": "$\\frac{75}{2}$",
+        "D": "$\\frac{81}{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:5$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-3.svg)",
+      "explanation": "অনুপাতের মোট অংশ 8। এক অংশ $180^\\circ/8$। সঠিক উত্তর $\\frac{45}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{43}{2}$",
+        "B": "$\\frac{49}{2}$",
+        "C": "$\\frac{45}{2}$",
+        "D": "$\\frac{47}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+3^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-3.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $33$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$34$",
+        "C": "$32$",
+        "D": "$35$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=37^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-4.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-37^\\circ=143^\\circ$। সঠিক উত্তর $143$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$143$",
+        "C": "$144$",
+        "D": "$142$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=37^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-4.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $37$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$38$",
+        "C": "$36$",
+        "D": "$39$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=37^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-4.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $53$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$55$",
+        "C": "$53$",
+        "D": "$54$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $37^\\circ$, $44^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-4.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $179$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$179$",
+        "B": "$180$",
+        "C": "$178$",
+        "D": "$181$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=37^\\circ$ ও $\\angle B=44^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-4.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $99$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$98$",
+        "B": "$101$",
+        "C": "$99$",
+        "D": "$100$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=37^\\circ$, $\\angle B=44^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-4.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $81$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$81$",
+        "B": "$82$",
+        "C": "$80$",
+        "D": "$83$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=37^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-4.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $106$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$107$",
+        "B": "$105$",
+        "C": "$108$",
+        "D": "$106$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=37^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-4.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $\\frac{143}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{145}{2}$",
+        "B": "$\\frac{141}{2}$",
+        "C": "$\\frac{147}{2}$",
+        "D": "$\\frac{143}{2}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=37^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-4.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $53$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$53$",
+        "C": "$54$",
+        "D": "$52$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=37^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-4.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $\\frac{37}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{37}{2}$",
+        "B": "$\\frac{39}{2}$",
+        "C": "$\\frac{35}{2}$",
+        "D": "$\\frac{41}{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=37^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-4.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $\\frac{217}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{217}{2}$",
+        "B": "$\\frac{219}{2}$",
+        "C": "$\\frac{215}{2}$",
+        "D": "$\\frac{221}{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $37^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-4.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $37$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$36$",
+        "C": "$39$",
+        "D": "$37$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $37^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-4.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $143$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$142$",
+        "B": "$145$",
+        "C": "$143$",
+        "D": "$144$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 12 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-4.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $6 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-1 + 6 \\sqrt{3}$",
+        "B": "$2 + 6 \\sqrt{3}$",
+        "C": "$6 \\sqrt{3}$",
+        "D": "$1 + 6 \\sqrt{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 8 ও 10 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-4.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<18$; পূর্ণসংখ্যা ৩ থেকে 17 পর্যন্ত। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$17$",
+        "C": "$15$",
+        "D": "$16$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=8$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-4.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$10$",
+        "C": "$8$",
+        "D": "$9$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 36 সেমি এবং $BC=12$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-4.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$14$",
+        "C": "$12$",
+        "D": "$13$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=37^\\circ$, $\\angle B=44^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-4.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{81}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{83}{2}$",
+        "B": "$\\frac{79}{2}$",
+        "C": "$\\frac{85}{2}$",
+        "D": "$\\frac{81}{2}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:6$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-4.svg)",
+      "explanation": "অনুপাতের মোট অংশ 9। এক অংশ $180^\\circ/9$। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$20$",
+        "C": "$21$",
+        "D": "$19$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+4^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-4.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35$",
+        "B": "$33$",
+        "C": "$36$",
+        "D": "$34$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=40^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-5.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-40^\\circ=140^\\circ$। সঠিক উত্তর $140$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$140$",
+        "B": "$141$",
+        "C": "$139$",
+        "D": "$142$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=40^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-5.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$41$",
+        "B": "$39$",
+        "C": "$42$",
+        "D": "$40$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=40^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-5.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$50$",
+        "C": "$51$",
+        "D": "$49$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $40^\\circ$, $45^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-5.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $175$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$176$",
+        "B": "$174$",
+        "C": "$177$",
+        "D": "$175$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=40^\\circ$ ও $\\angle B=45^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-5.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $95$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$97$",
+        "B": "$95$",
+        "C": "$96$",
+        "D": "$94$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=40^\\circ$, $\\angle B=45^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-5.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $85$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$86$",
+        "B": "$84$",
+        "C": "$87$",
+        "D": "$85$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=40^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-5.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$99$",
+        "B": "$102$",
+        "C": "$100$",
+        "D": "$101$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=40^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-5.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $70$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$69$",
+        "B": "$72$",
+        "C": "$70$",
+        "D": "$71$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=40^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-5.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$51$",
+        "C": "$49$",
+        "D": "$52$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=40^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-5.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$19$",
+        "C": "$22$",
+        "D": "$20$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=40^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-5.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $110$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$111$",
+        "B": "$109$",
+        "C": "$112$",
+        "D": "$110$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $40^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-5.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$39$",
+        "B": "$42$",
+        "C": "$40$",
+        "D": "$41$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $40^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-5.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $140$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$142$",
+        "B": "$140$",
+        "C": "$141$",
+        "D": "$139$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 14 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-5.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $7 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2 + 7 \\sqrt{3}$",
+        "B": "$7 \\sqrt{3}$",
+        "C": "$1 + 7 \\sqrt{3}$",
+        "D": "$-1 + 7 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 9 ও 11 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-5.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<20$; পূর্ণসংখ্যা ৩ থেকে 19 পর্যন্ত। সঠিক উত্তর $17$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$17$",
+        "C": "$18$",
+        "D": "$16$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=9$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-5.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$9$",
+        "C": "$10$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 40 সেমি এবং $BC=14$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-5.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$13$",
+        "C": "$14$",
+        "D": "$12$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=40^\\circ$, $\\angle B=45^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-5.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{85}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{83}{2}$",
+        "B": "$\\frac{89}{2}$",
+        "C": "$\\frac{85}{2}$",
+        "D": "$\\frac{87}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:7$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-5.svg)",
+      "explanation": "অনুপাতের মোট অংশ 10। এক অংশ $180^\\circ/10$। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$18$",
+        "B": "$19$",
+        "C": "$17$",
+        "D": "$20$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+5^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-5.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $35$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$37$",
+        "C": "$35$",
+        "D": "$36$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=43^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-6.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-43^\\circ=137^\\circ$। সঠিক উত্তর $137$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$138$",
+        "B": "$136$",
+        "C": "$139$",
+        "D": "$137$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=43^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-6.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $43$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$42$",
+        "B": "$45$",
+        "C": "$43$",
+        "D": "$44$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=43^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-6.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $47$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$47$",
+        "B": "$48$",
+        "C": "$46$",
+        "D": "$49$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $43^\\circ$, $46^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-6.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $171$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$170$",
+        "B": "$173$",
+        "C": "$171$",
+        "D": "$172$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=43^\\circ$ ও $\\angle B=46^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-6.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $91$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$91$",
+        "B": "$92$",
+        "C": "$90$",
+        "D": "$93$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=43^\\circ$, $\\angle B=46^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-6.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $89$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$91$",
+        "C": "$89$",
+        "D": "$90$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=43^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-6.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $94$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$96$",
+        "B": "$94$",
+        "C": "$95$",
+        "D": "$93$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=43^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-6.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $\\frac{137}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{141}{2}$",
+        "B": "$\\frac{137}{2}$",
+        "C": "$\\frac{139}{2}$",
+        "D": "$\\frac{135}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=43^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-6.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $47$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$46$",
+        "C": "$49$",
+        "D": "$47$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=43^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-6.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $\\frac{43}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{41}{2}$",
+        "B": "$\\frac{47}{2}$",
+        "C": "$\\frac{43}{2}$",
+        "D": "$\\frac{45}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=43^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-6.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $\\frac{223}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{221}{2}$",
+        "B": "$\\frac{227}{2}$",
+        "C": "$\\frac{223}{2}$",
+        "D": "$\\frac{225}{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $43^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-6.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $43$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$45$",
+        "B": "$43$",
+        "C": "$44$",
+        "D": "$42$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $43^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-6.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $137$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$137$",
+        "B": "$138$",
+        "C": "$136$",
+        "D": "$139$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 16 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-6.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $8 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8 \\sqrt{3}$",
+        "B": "$1 + 8 \\sqrt{3}$",
+        "C": "$-1 + 8 \\sqrt{3}$",
+        "D": "$2 + 8 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 10 ও 12 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-6.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<22$; পূর্ণসংখ্যা ৩ থেকে 21 পর্যন্ত। সঠিক উত্তর $19$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$20$",
+        "C": "$18$",
+        "D": "$21$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=10$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-6.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$11$",
+        "C": "$9$",
+        "D": "$12$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 44 সেমি এবং $BC=16$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-6.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$15$",
+        "C": "$13$",
+        "D": "$16$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=43^\\circ$, $\\angle B=46^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-6.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{89}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{93}{2}$",
+        "B": "$\\frac{89}{2}$",
+        "C": "$\\frac{91}{2}$",
+        "D": "$\\frac{87}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:8$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-6.svg)",
+      "explanation": "অনুপাতের মোট অংশ 11। এক অংশ $180^\\circ/11$। সঠিক উত্তর $\\frac{180}{11}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{191}{11}$",
+        "B": "$\\frac{169}{11}$",
+        "C": "$\\frac{202}{11}$",
+        "D": "$\\frac{180}{11}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+6^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-6.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$36$",
+        "C": "$37$",
+        "D": "$35$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,O,B একই সরলরেখায়। $\\angle AOC=46^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-linear-pair-7.svg)",
+      "explanation": "সন্নিহিত সরলকোণের যোগ ১৮০°; চাওয়া কোণ $180^\\circ-46^\\circ=134^\\circ$। সঠিক উত্তর $134$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/linear-pair/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$133$",
+        "B": "$136$",
+        "C": "$134$",
+        "D": "$135$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB ও CD রেখা O-তে ছেদ করেছে। $\\angle BOC=46^\\circ$ হলে বিপ্রতীপ $\\angle AOD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-vertical-7.svg)",
+      "explanation": "বিপ্রতীপ কোণদ্বয় সমান। সঠিক উত্তর $46$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/vertical/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$46$",
+        "C": "$47$",
+        "D": "$45$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$OA\\perp OB$, C হলো সমকোণ AOB-এর অভ্যন্তরে একটি বিন্দু। $\\angle AOC=46^\\circ$ হলে $\\angle COB$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-complement-7.svg)",
+      "explanation": "দুটি অংশের যোগ ৯০°; তাই অপর অংশ ৯০° থেকে প্রদত্ত কোণ বিয়োগ। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/complement/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$45$",
+        "B": "$43$",
+        "C": "$46$",
+        "D": "$44$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O বিন্দুর চারপাশে চারটি ক্রমিক কোণ $46^\\circ$, $47^\\circ$, $100^\\circ$ ও x। x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-around-point-7.svg)",
+      "explanation": "এক বিন্দুর চারপাশে কোণসমষ্টি ৩৬০°। তিনটি প্রদত্ত কোণ বিয়োগ করতে হবে। সঠিক উত্তর $167$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/around-point/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$169$",
+        "B": "$167$",
+        "C": "$168$",
+        "D": "$166$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=46^\\circ$ ও $\\angle B=47^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-triangle-third-7.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০° থেকে অন্য দুই কোণের যোগ বিয়োগ করি। সঠিক উত্তর $87$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/triangle-third/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$86$",
+        "C": "$89$",
+        "D": "$87$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=46^\\circ$, $\\angle B=47^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-exterior-7.svg)",
+      "explanation": "বহিঃকোণ বিপরীত দুই অন্তঃকোণের যোগফলের সমান। সঠিক উত্তর $93$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/exterior/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$95$",
+        "B": "$93$",
+        "C": "$94$",
+        "D": "$92$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle B=46^\\circ$। $\\angle A$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-apex-7.svg)",
+      "explanation": "ভূমির উভয় কোণ সমান; ১৮০° থেকে তাদের যোগ বিয়োগ। সঠিক উত্তর $88$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-apex/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$89$",
+        "C": "$87$",
+        "D": "$90$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$ ও $\\angle A=46^\\circ$। $\\angle B$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-base-7.svg)",
+      "explanation": "শীর্ষকোণ বাদ দিয়ে বাকি কোণসমষ্টি দুই সমান ভাগ হয়। সঠিক উত্তর $67$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-base/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$67$",
+        "B": "$68$",
+        "C": "$66$",
+        "D": "$69$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle B=90^\\circ$ ও $\\angle A=46^\\circ$। $\\angle C$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-right-other-7.svg)",
+      "explanation": "সমকোণী ত্রিভুজের দুই সূক্ষ্মকোণের যোগ ৯০°। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/right-other/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$43$",
+        "B": "$46$",
+        "C": "$44$",
+        "D": "$45$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে AD হলো $\\angle A$-এর সমদ্বিখণ্ডক এবং $\\angle A=46^\\circ$। $\\angle BAD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-bisector-7.svg)",
+      "explanation": "সমদ্বিখণ্ডক কোণকে দুই সমান অংশে ভাগ করে। সঠিক উত্তর $23$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/bisector/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$23$",
+        "C": "$24$",
+        "D": "$22$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে BI ও CI হলো অন্তঃকোণদ্বয়ের সমদ্বিখণ্ডক এবং $\\angle A=46^\\circ$। $\\angle BIC$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-incenter-7.svg)",
+      "explanation": "ত্রিভুজ BIC-তে কোণসমষ্টি থেকে $\\angle BIC=180^\\circ-(180^\\circ-\\angle A)/2$। সঠিক উত্তর $113$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/incenter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$115$",
+        "B": "$113$",
+        "C": "$114$",
+        "D": "$112$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের l ও m সমান্তরাল; ছেদকের সঙ্গে উপরের ছেদবিন্দুতে গঠিত কোণ $46^\\circ$। নিচের ছেদবিন্দুর অনুরূপ কোণ x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-corresponding-7.svg)",
+      "explanation": "সমান্তরাল রেখায় অনুরূপ কোণ সমান। সঠিক উত্তর $46$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/corresponding/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$46$",
+        "B": "$47$",
+        "C": "$45$",
+        "D": "$48$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "l ও m সমান্তরাল রেখাকে একটি ছেদক ছেদ করেছে। একই পাশের অন্তঃস্থ একটি কোণ $46^\\circ$ হলে অপরটি x কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-cointerior-7.svg)",
+      "explanation": "একই পাশের অন্তঃস্থ কোণদ্বয় সম্পূরক; যোগ ১৮০°। সঠিক উত্তর $134$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/cointerior/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$135$",
+        "B": "$133$",
+        "C": "$136$",
+        "D": "$134$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-এর বাহু 18 সেমি। AD মধ্যমা হলে AD কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-median-7.svg)",
+      "explanation": "সমবাহু ত্রিভুজের মধ্যমা লম্বও। অর্ধভূমি দিয়ে পিথাগোরাস প্রয়োগে মধ্যমা $=\\sqrt3/2$ গুণ বাহু। সঠিক উত্তর $9 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-median/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 9 \\sqrt{3}$",
+        "B": "$-1 + 9 \\sqrt{3}$",
+        "C": "$2 + 9 \\sqrt{3}$",
+        "D": "$9 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক ত্রিভুজের দুই বাহু 11 ও 13 সেমি। তৃতীয় বাহু x পূর্ণসংখ্যা হলে x-এর সম্ভাব্য মান কয়টি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-integer-third-side-7.svg)",
+      "explanation": "বাহুর পার্থক্যের চেয়ে তৃতীয় বাহু বড় এবং যোগফলের চেয়ে ছোট। তাই $2<x<24$; পূর্ণসংখ্যা ৩ থেকে 23 পর্যন্ত। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/integer-third-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$20$",
+        "C": "$23$",
+        "D": "$21$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\triangle ABC\\cong\\triangle DEF$ প্রদত্ত ক্রমে এবং $DE=11$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-congruent-side-7.svg)",
+      "explanation": "প্রদত্ত সর্বসমতার ক্রমে AB ও DE অনুরূপ বাহু, তাই সমান। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/congruent-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$10$",
+        "C": "$13$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=AC$ ত্রিভুজের পরিসীমা 48 সেমি এবং $BC=18$ সেমি। AB কত সেমি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-isos-perimeter-7.svg)",
+      "explanation": "সমান দুই বাহুর যোগ পরিসীমা থেকে ভূমি বাদ দিয়ে পাওয়া যায়; তার অর্ধেক এক বাহু। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/isos-perimeter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$14$",
+        "C": "$17$",
+        "D": "$15$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle A=46^\\circ$, $\\angle B=47^\\circ$। BC-কে D পর্যন্ত বাড়ালে $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-half-exterior-7.svg)",
+      "explanation": "বহিঃকোণ দুই বিপরীত অন্তঃকোণের যোগ; তার অর্ধেক নিতে হবে। সঠিক উত্তর $\\frac{93}{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/half-exterior/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{93}{2}$",
+        "B": "$\\frac{95}{2}$",
+        "C": "$\\frac{91}{2}$",
+        "D": "$\\frac{97}{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর কোণগুলোর অনুপাত $1:2:9$। ক্ষুদ্রতম কোণ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-angle-ratio-7.svg)",
+      "explanation": "অনুপাতের মোট অংশ 12। এক অংশ $180^\\circ/12$। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/angle-ratio/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$17$",
+        "C": "$15$",
+        "D": "$16$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সমবাহু ত্রিভুজ ABC-তে AD কোণসমদ্বিখণ্ডক। $\\angle BAD+7^\\circ$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/mcq-equilateral-angle-7.svg)",
+      "explanation": "সমবাহু ত্রিভুজের কোণ ৬০°; তার অর্ধেক ৩০°। চাওয়া রাশিতে প্রদত্ত সংখ্যা যোগ করি। সঠিক উত্তর $37$।",
+      "page": "নিজস্ব অনুশীলনী; Ch6/MCQ/equilateral-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$38$",
+        "C": "$36$",
+        "D": "$39$"
+      },
+      "correct": "A"
+    }
+  ]
+}

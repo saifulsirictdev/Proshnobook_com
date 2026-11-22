@@ -1,0 +1,58 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "chapter": 5,
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৫ম অধ্যায়: এক চলকবিশিষ্ট সমীকরণ",
+  "counts": {
+    "MCQ": 100,
+    "CQ": 20,
+    "SQ": 30
+  },
+  "boardCounts": {
+    "MCQ": 5,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 95,
+    "CQ": 20,
+    "SQ": 30
+  },
+  "teacherApproved": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 65632,
+      "sha256": "211c6624b38b024b4817bbb1476decf64d29a81f78d2d1cd35773f2b08a11bd3"
+    },
+    {
+      "file": "target-v1/written.json",
+      "bytes": 56635,
+      "sha256": "51de85c2440a0b911bf4cce913f10f47922c402e74efd3e1e0b1e9b719c9d1df"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 99326,
+    "sha256": "1620c80a58ed441d69ab90d367b2ff8e466111e7ba1c74742d985a440687e339"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 5624,
+    "sha256": "fddda312de0fa8099a67c2fc46c90eea269a4ae804e000315bc0295b56faedb5"
+  },
+  "limitations": [
+    "Numeric target met: 5 visually read board-compilation MCQ + 145 original parameter variants, not 150 distinct concepts.",
+    "Compilation board/year labels have not been independently authenticated against official original papers. No source CQ/SQ is claimed.",
+    "Independent teacher review pending. Original practice is not board or verbatim NCTB/internet content.",
+    "Board search is not exhaustive; full current-edition NCTB chapter was not obtained/read. Source priority and chapter coverage are not exhaustively fulfilled.",
+    "Source Cumilla Q19 has equivalent incorrect B/D root-set distractors; preserved. Source Jashore Q8 B {empty set} is a singleton, not the empty set C {}.",
+    "Exact real-root, exclusion and rendering checks do not replace independent semantic/teacher review. No database import, approval or deployment."
+  ]
+}

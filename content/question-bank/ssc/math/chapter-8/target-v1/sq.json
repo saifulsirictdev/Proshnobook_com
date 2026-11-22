@@ -1,0 +1,221 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৮ম অধ্যায়: বৃত্ত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ জ্যামিতি অনুশীলনী",
+  "edition": "Chapter 8 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে A বৃহৎ BC চাপে; $\\angle BAC=32^\\circ$। ক্ষুদ্র ও প্রবৃদ্ধ BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-central-1.svg)",
+      "explanation": "ক্ষুদ্র BOC=২×32=64°। প্রবৃদ্ধ BOC=৩৬০°−64°=296°। একই চাপের উপর কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। কোণটি ক্ষুদ্র না প্রবৃদ্ধ তা সংশ্লিষ্ট চাপ দিয়ে নির্ধারণ করতে হয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/central/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A,D একই বৃহৎ BC চাপে এবং $\\angle BAC=32^\\circ$। O কেন্দ্র। BDC ও ক্ষুদ্র BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-same-segment-1.svg)",
+      "explanation": "একই বৃত্তাংশে BAC=BDC=32°। একই ক্ষুদ্র চাপের কেন্দ্রস্থ BOC=64°। জ্যা BC বৃত্তকে দুটি বৃত্তাংশে ভাগ করে; A,D একই দিকে বৃহৎ চাপের উপর।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/same-segment/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABCD বৃত্তস্থ চতুর্ভুজ; $\\angle ABC=61^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ানো হলো। ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-1.svg)",
+      "explanation": "ADC=১৮০°−61°=119°। বৃত্তস্থ চতুর্ভুজের বিপরীত কোণের যোগ ১৮০°।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: বৃত্তস্থ ABCD-তে $\\angle ABC:\\angle ADC=3:4$। ABC ও ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-ratio-1.svg)",
+      "explanation": "এক অংশ $=180/7$ ডিগ্রি। তাই ABC=$\\frac{540}{7}^\\circ$, ADC=$\\frac{720}{7}^\\circ$। ১৮০°; এটি বৃত্তস্থ চতুর্ভুজের প্রয়োজনীয় কোণসম্পর্ক।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic-ratio/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে OA=OB=10 সেমি; AB জ্যার উপর OM⊥AB এবং OM=6 সেমি। AB নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-1.svg)",
+      "explanation": "OMB সমকোণী। MB²=10²−6²=64; MB=8। তাই AB=16 সেমি। লম্ব জ্যাকে সমদ্বিখণ্ডিত করে; AM=MB।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ব্যাসার্ধ 10 সেমি; জ্যা AB=16 সেমি। কেন্দ্র O থেকে OM⊥AB। OM নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-distance-1.svg)",
+      "explanation": "OM²=OA²−AM²=100−64=36; OM=6 সেমি। AM=8 সেমি; কেন্দ্র থেকে লম্ব জ্যাকে সমদ্বিখণ্ডিত করে।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-distance/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=16 সেমি; O কেন্দ্র থেকে OM⊥AB এবং OM=6 সেমি। ব্যাসার্ধ ও ব্যাস নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-radius-1.svg)",
+      "explanation": "OA²=OM²+AM²=36+64=100। OA=10, ব্যাস=20 সেমি। AM=MB=8 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-radius/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF=6 সেমি ও BE=8 সেমি। AB ও CD নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-chords-1.svg)",
+      "explanation": "AB=২BE=16। কেন্দ্র থেকে সমদূরবর্তী জ্যা সমান, তাই CD=16 সেমি। যথাক্রমে AB ও CD-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-chords/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে AB=CD=16 সেমি; OE⊥AB, OF⊥CD; ব্যাসার্ধ 10 সেমি। OE ও OF নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-distance-1.svg)",
+      "explanation": "উভয়ের বর্গ r²−অর্ধজ্যা²=100−64=36। তাই OE=OF=6 সেমি। BE=DF=8 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-distance/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্র; বহিঃস্থ P থেকে PT,PU স্পর্শক। OT=OU=6 এবং OP=10 সেমি। PT ও PU নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-tangent-length-1.svg)",
+      "explanation": "PT²=OP²−OT²=100−36=64; PT=8 সেমি। একই বহিঃস্থ বিন্দুর স্পর্শকদ্বয় সমান; PU=8। T-তে; ব্যাসার্ধ OT স্পর্শক PT-এর লম্ব।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/tangent-length/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে A বৃহৎ BC চাপে; $\\angle BAC=36^\\circ$। ক্ষুদ্র ও প্রবৃদ্ধ BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-central-2.svg)",
+      "explanation": "ক্ষুদ্র BOC=২×36=72°। প্রবৃদ্ধ BOC=৩৬০°−72°=288°। একই চাপের উপর কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। কোণটি ক্ষুদ্র না প্রবৃদ্ধ তা সংশ্লিষ্ট চাপ দিয়ে নির্ধারণ করতে হয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/central/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A,D একই বৃহৎ BC চাপে এবং $\\angle BAC=36^\\circ$। O কেন্দ্র। BDC ও ক্ষুদ্র BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-same-segment-2.svg)",
+      "explanation": "একই বৃত্তাংশে BAC=BDC=36°। একই ক্ষুদ্র চাপের কেন্দ্রস্থ BOC=72°। জ্যা BC বৃত্তকে দুটি বৃত্তাংশে ভাগ করে; A,D একই দিকে বৃহৎ চাপের উপর।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/same-segment/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABCD বৃত্তস্থ চতুর্ভুজ; $\\angle ABC=66^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ানো হলো। ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-2.svg)",
+      "explanation": "ADC=১৮০°−66°=114°। বৃত্তস্থ চতুর্ভুজের বিপরীত কোণের যোগ ১৮০°।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: বৃত্তস্থ ABCD-তে $\\angle ABC:\\angle ADC=4:5$। ABC ও ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-ratio-2.svg)",
+      "explanation": "এক অংশ $=180/9$ ডিগ্রি। তাই ABC=$80^\\circ$, ADC=$100^\\circ$। ১৮০°; এটি বৃত্তস্থ চতুর্ভুজের প্রয়োজনীয় কোণসম্পর্ক।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic-ratio/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে OA=OB=15 সেমি; AB জ্যার উপর OM⊥AB এবং OM=9 সেমি। AB নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-2.svg)",
+      "explanation": "OMB সমকোণী। MB²=15²−9²=144; MB=12। তাই AB=24 সেমি। লম্ব জ্যাকে সমদ্বিখণ্ডিত করে; AM=MB।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ব্যাসার্ধ 15 সেমি; জ্যা AB=24 সেমি। কেন্দ্র O থেকে OM⊥AB। OM নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-distance-2.svg)",
+      "explanation": "OM²=OA²−AM²=225−144=81; OM=9 সেমি। AM=12 সেমি; কেন্দ্র থেকে লম্ব জ্যাকে সমদ্বিখণ্ডিত করে।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-distance/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=24 সেমি; O কেন্দ্র থেকে OM⊥AB এবং OM=9 সেমি। ব্যাসার্ধ ও ব্যাস নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-radius-2.svg)",
+      "explanation": "OA²=OM²+AM²=81+144=225। OA=15, ব্যাস=30 সেমি। AM=MB=12 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-radius/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF=9 সেমি ও BE=12 সেমি। AB ও CD নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-chords-2.svg)",
+      "explanation": "AB=২BE=24। কেন্দ্র থেকে সমদূরবর্তী জ্যা সমান, তাই CD=24 সেমি। যথাক্রমে AB ও CD-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-chords/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে AB=CD=24 সেমি; OE⊥AB, OF⊥CD; ব্যাসার্ধ 15 সেমি। OE ও OF নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-distance-2.svg)",
+      "explanation": "উভয়ের বর্গ r²−অর্ধজ্যা²=225−144=81। তাই OE=OF=9 সেমি। BE=DF=12 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-distance/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্র; বহিঃস্থ P থেকে PT,PU স্পর্শক। OT=OU=9 এবং OP=15 সেমি। PT ও PU নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-tangent-length-2.svg)",
+      "explanation": "PT²=OP²−OT²=225−81=144; PT=12 সেমি। একই বহিঃস্থ বিন্দুর স্পর্শকদ্বয় সমান; PU=12। T-তে; ব্যাসার্ধ OT স্পর্শক PT-এর লম্ব।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/tangent-length/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে A বৃহৎ BC চাপে; $\\angle BAC=40^\\circ$। ক্ষুদ্র ও প্রবৃদ্ধ BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-central-3.svg)",
+      "explanation": "ক্ষুদ্র BOC=২×40=80°। প্রবৃদ্ধ BOC=৩৬০°−80°=280°। একই চাপের উপর কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। কোণটি ক্ষুদ্র না প্রবৃদ্ধ তা সংশ্লিষ্ট চাপ দিয়ে নির্ধারণ করতে হয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/central/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A,D একই বৃহৎ BC চাপে এবং $\\angle BAC=40^\\circ$। O কেন্দ্র। BDC ও ক্ষুদ্র BOC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-same-segment-3.svg)",
+      "explanation": "একই বৃত্তাংশে BAC=BDC=40°। একই ক্ষুদ্র চাপের কেন্দ্রস্থ BOC=80°। জ্যা BC বৃত্তকে দুটি বৃত্তাংশে ভাগ করে; A,D একই দিকে বৃহৎ চাপের উপর।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/same-segment/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ABCD বৃত্তস্থ চতুর্ভুজ; $\\angle ABC=71^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ানো হলো। ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-3.svg)",
+      "explanation": "ADC=১৮০°−71°=109°। বৃত্তস্থ চতুর্ভুজের বিপরীত কোণের যোগ ১৮০°।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: বৃত্তস্থ ABCD-তে $\\angle ABC:\\angle ADC=5:6$। ABC ও ADC নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-cyclic-ratio-3.svg)",
+      "explanation": "এক অংশ $=180/11$ ডিগ্রি। তাই ABC=$\\frac{900}{11}^\\circ$, ADC=$\\frac{1080}{11}^\\circ$। ১৮০°; এটি বৃত্তস্থ চতুর্ভুজের প্রয়োজনীয় কোণসম্পর্ক।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/cyclic-ratio/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্রের বৃত্তে OA=OB=20 সেমি; AB জ্যার উপর OM⊥AB এবং OM=12 সেমি। AB নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-3.svg)",
+      "explanation": "OMB সমকোণী। MB²=20²−12²=256; MB=16। তাই AB=32 সেমি। লম্ব জ্যাকে সমদ্বিখণ্ডিত করে; AM=MB।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ব্যাসার্ধ 20 সেমি; জ্যা AB=32 সেমি। কেন্দ্র O থেকে OM⊥AB। OM নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-distance-3.svg)",
+      "explanation": "OM²=OA²−AM²=400−256=144; OM=12 সেমি। AM=16 সেমি; কেন্দ্র থেকে লম্ব জ্যাকে সমদ্বিখণ্ডিত করে।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-distance/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=32 সেমি; O কেন্দ্র থেকে OM⊥AB এবং OM=12 সেমি। ব্যাসার্ধ ও ব্যাস নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-chord-radius-3.svg)",
+      "explanation": "OA²=OM²+AM²=144+256=400। OA=20, ব্যাস=40 সেমি। AM=MB=16 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/chord-radius/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF=12 সেমি ও BE=16 সেমি। AB ও CD নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-chords-3.svg)",
+      "explanation": "AB=২BE=32। কেন্দ্র থেকে সমদূরবর্তী জ্যা সমান, তাই CD=32 সেমি। যথাক্রমে AB ও CD-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-chords/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই বৃত্তে AB=CD=32 সেমি; OE⊥AB, OF⊥CD; ব্যাসার্ধ 20 সেমি। OE ও OF নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-equal-distance-3.svg)",
+      "explanation": "উভয়ের বর্গ r²−অর্ধজ্যা²=400−256=144। তাই OE=OF=12 সেমি। BE=DF=16 সেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/equal-distance/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O কেন্দ্র; বহিঃস্থ P থেকে PT,PU স্পর্শক। OT=OU=12 এবং OP=20 সেমি। PT ও PU নির্ণয় কর।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/sq-tangent-length-3.svg)",
+      "explanation": "PT²=OP²−OT²=400−144=256; PT=16 সেমি। একই বহিঃস্থ বিন্দুর স্পর্শকদ্বয় সমান; PU=16। T-তে; ব্যাসার্ধ OT স্পর্শক PT-এর লম্ব।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/SQ/tangent-length/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    }
+  ]
+}

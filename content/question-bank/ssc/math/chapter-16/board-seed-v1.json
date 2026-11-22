@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৬শ অধ্যায়: পরিমিতি",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 16 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণের দৈর্ঘ্য $6\\sqrt2$ মিটার হলে ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/source-cumilla-8.svg)",
+      "options": {
+        "A": "$36$",
+        "B": "$24$",
+        "C": "$18$",
+        "D": "$6$"
+      },
+      "correct": "A",
+      "explanation": "বাহু $=6\\sqrt2/\\sqrt2=6$ মিটার; ক্ষেত্রফল $6^2=36$ বর্গমিটার।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 8",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "8"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "3 সেমি ধারবিশিষ্ট ঘনকের জন্য— i. আয়তন 27 ঘনসেমি; ii. দেহকর্ণের দৈর্ঘ্য $3\\sqrt3$ সেমি; iii. সমগ্র পৃষ্ঠের ক্ষেত্রফল 54 বর্গসেমি। কোন বিবৃতিগুলো সঠিক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/source-rajshahi-5.svg)",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D",
+      "explanation": "$V=a^3=27$; দেহকর্ণ $a\\sqrt3=3\\sqrt3$; পৃষ্ঠতল $6a^2=54$। তিনটিই সঠিক।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "5"
+        }
+      ]
+    }
+  ]
+}

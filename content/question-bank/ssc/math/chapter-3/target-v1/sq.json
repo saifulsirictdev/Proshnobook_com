@@ -1,0 +1,711 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৩য় অধ্যায়: বীজগাণিতিক রাশি",
+  "book": "Proshnobook — যাচাইকৃত বোর্ড সংকলন + নিজস্ব বীজগাণিতিক অনুশীলনী",
+  "edition": "Chapter 3 target v1; DRAFT; স্বাধীন শিক্ষক অনুমোদন বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "SQ",
+      "text": "$(x+2)^2$ বিস্তার কর।",
+      "explanation": "$(u+v)^2=u^2+2uv+v^2$। তাই $(x+2)^2=x^2+4x+4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(2x-2)^2$ বিস্তার কর।",
+      "explanation": "$(u-v)^2=u^2-2uv+v^2$। তাই $(2x-2)^2=4x^2-8x+4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-diff-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+2)^3$ বিস্তার কর।",
+      "explanation": "ঘনের সূত্রে $x^3+6x^2+12x+8$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-cube/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-2)^3$ বিস্তার কর।",
+      "explanation": "$(u-v)^3=u^3-3u^2v+3uv^2-v^3$। তাই ফল $x^3-6x^2+12x-8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-minus-cube/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2-4$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$4=2^2$। বর্গের অন্তর সূত্রে $(x-2)(x+2)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2+5x+6$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$2+3=5$ এবং $2\\times3=6$। মধ্যপদ ভেঙে $(x+2)(x+3)$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quadratic/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3+8$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের যোগের সূত্রে $(x+2)(x^2-2x+4)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-plus/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3-8$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের অন্তরের সূত্রে $(x-2)(x^2+2x+4)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-minus/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^{3} + 2 x^{2} - 3 x - 6$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "গুচ্ছ করে $x^2(x+2)-3(x+2)=(x+2)(x^2-3)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-grouping/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^4+3x^2+4$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "রাশিটি $(x^2+2)^2-x^2$। তাই উৎপাদক $(x^2+x+2)(x^2-x+2)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quartic/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^3+2x+3$-কে $(x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে $P(1)=1+2+3=6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/remainder/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^2+2x+3$-কে $(2x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "$2x-1=0$ হলে $x=1/2$। ভাগশেষ $P(1/2)=1/4+2/2+3=\\frac{17}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/scaled-remainder/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-2)$ যদি $x^2+x+k$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "উৎপাদক শর্তে $2^2+2+k=0$। তাই $k=-(4+2)=-6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-constant/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+2$ যদি $x^2+kx+6$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "$x=-2$ বসালে $4-2k+6=0$। তাই $k=5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-coefficient/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac{x^2-4}{x+2}$ সরল করে নিষিদ্ধ মান লেখ।",
+      "explanation": "লব $(x-2)(x+2)$। তাই সরল রূপ $x-2$; শর্ত $x\\ne-2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/cancel-with-domain/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(\\sqrt{3}+\\sqrt{2})(\\sqrt{3}-\\sqrt{2})$ সরল কর।",
+      "explanation": "বর্গের অন্তর $(3)-(2)=1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/conjugate/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac1{\\sqrt{3}+\\sqrt{2}}$-এর হর মূলদ কর।",
+      "explanation": "অনুবন্ধী দিয়ে লব-হর গুণ করলে হর ১। তাই ফল $\\sqrt{3}-\\sqrt{2}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/rationalise/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+\\frac1x=4$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ নির্ণয় কর।",
+      "explanation": "বর্গে $x^2+x^{-2}+2=4^2$। তাই চাওয়া মান $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x-\\frac1x=4$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ নির্ণয় কর।",
+      "explanation": "ঘনের সূত্রে $x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=76$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-cube/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$a+b+c=0$ ও $abc=-6$ হলে $a^3+b^3+c^3$ নির্ণয় কর।",
+      "explanation": "তিন ঘনের সূত্রে $a^3+b^3+c^3-3abc=0$। তাই চাওয়া মান $3abc=-18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/three-cubes/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+3)^2$ বিস্তার কর।",
+      "explanation": "$(u+v)^2=u^2+2uv+v^2$। তাই $(x+3)^2=x^2+6x+9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(2x-3)^2$ বিস্তার কর।",
+      "explanation": "$(u-v)^2=u^2-2uv+v^2$। তাই $(2x-3)^2=4x^2-12x+9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-diff-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+3)^3$ বিস্তার কর।",
+      "explanation": "ঘনের সূত্রে $x^3+9x^2+27x+27$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-cube/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-3)^3$ বিস্তার কর।",
+      "explanation": "$(u-v)^3=u^3-3u^2v+3uv^2-v^3$। তাই ফল $x^3-9x^2+27x-27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-minus-cube/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2-9$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$9=3^2$। বর্গের অন্তর সূত্রে $(x-3)(x+3)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2+7x+12$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$3+4=7$ এবং $3\\times4=12$। মধ্যপদ ভেঙে $(x+3)(x+4)$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quadratic/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3+27$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের যোগের সূত্রে $(x+3)(x^2-3x+9)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-plus/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3-27$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের অন্তরের সূত্রে $(x-3)(x^2+3x+9)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-minus/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^{3} + 3 x^{2} - 4 x - 12$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "গুচ্ছ করে $x^2(x+3)-4(x+3)=(x+3)(x^2-4)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-grouping/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^4+5x^2+9$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "রাশিটি $(x^2+3)^2-x^2$। তাই উৎপাদক $(x^2+x+3)(x^2-x+3)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quartic/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^3+3x+4$-কে $(x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে $P(1)=1+3+4=8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/remainder/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^2+3x+4$-কে $(2x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "$2x-1=0$ হলে $x=1/2$। ভাগশেষ $P(1/2)=1/4+3/2+4=\\frac{23}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/scaled-remainder/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-3)$ যদি $x^2+x+k$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "উৎপাদক শর্তে $3^2+3+k=0$। তাই $k=-(9+3)=-12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-constant/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+3$ যদি $x^2+kx+12$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "$x=-3$ বসালে $9-3k+12=0$। তাই $k=7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-coefficient/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac{x^2-9}{x+3}$ সরল করে নিষিদ্ধ মান লেখ।",
+      "explanation": "লব $(x-3)(x+3)$। তাই সরল রূপ $x-3$; শর্ত $x\\ne-3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/cancel-with-domain/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(\\sqrt{4}+\\sqrt{3})(\\sqrt{4}-\\sqrt{3})$ সরল কর।",
+      "explanation": "বর্গের অন্তর $(4)-(3)=1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/conjugate/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac1{\\sqrt{4}+\\sqrt{3}}$-এর হর মূলদ কর।",
+      "explanation": "অনুবন্ধী দিয়ে লব-হর গুণ করলে হর ১। তাই ফল $\\sqrt{4}-\\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/rationalise/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+\\frac1x=5$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ নির্ণয় কর।",
+      "explanation": "বর্গে $x^2+x^{-2}+2=5^2$। তাই চাওয়া মান $23$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x-\\frac1x=5$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ নির্ণয় কর।",
+      "explanation": "ঘনের সূত্রে $x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=140$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-cube/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$a+b+c=0$ ও $abc=-30$ হলে $a^3+b^3+c^3$ নির্ণয় কর।",
+      "explanation": "তিন ঘনের সূত্রে $a^3+b^3+c^3-3abc=0$। তাই চাওয়া মান $3abc=-90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/three-cubes/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+4)^2$ বিস্তার কর।",
+      "explanation": "$(u+v)^2=u^2+2uv+v^2$। তাই $(x+4)^2=x^2+8x+16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(2x-4)^2$ বিস্তার কর।",
+      "explanation": "$(u-v)^2=u^2-2uv+v^2$। তাই $(2x-4)^2=4x^2-16x+16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-diff-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+4)^3$ বিস্তার কর।",
+      "explanation": "ঘনের সূত্রে $x^3+12x^2+48x+64$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-cube/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-4)^3$ বিস্তার কর।",
+      "explanation": "$(u-v)^3=u^3-3u^2v+3uv^2-v^3$। তাই ফল $x^3-12x^2+48x-64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-minus-cube/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2-16$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$16=4^2$। বর্গের অন্তর সূত্রে $(x-4)(x+4)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2+9x+20$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$4+5=9$ এবং $4\\times5=20$। মধ্যপদ ভেঙে $(x+4)(x+5)$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quadratic/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3+64$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের যোগের সূত্রে $(x+4)(x^2-4x+16)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-plus/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3-64$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের অন্তরের সূত্রে $(x-4)(x^2+4x+16)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-minus/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^{3} + 4 x^{2} - 5 x - 20$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "গুচ্ছ করে $x^2(x+4)-5(x+4)=(x+4)(x^2-5)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-grouping/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^4+7x^2+16$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "রাশিটি $(x^2+4)^2-x^2$। তাই উৎপাদক $(x^2+x+4)(x^2-x+4)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quartic/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^3+4x+5$-কে $(x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে $P(1)=1+4+5=10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/remainder/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^2+4x+5$-কে $(2x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "$2x-1=0$ হলে $x=1/2$। ভাগশেষ $P(1/2)=1/4+4/2+5=\\frac{29}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/scaled-remainder/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-4)$ যদি $x^2+x+k$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "উৎপাদক শর্তে $4^2+4+k=0$। তাই $k=-(16+4)=-20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-constant/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+4$ যদি $x^2+kx+20$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "$x=-4$ বসালে $16-4k+20=0$। তাই $k=9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-coefficient/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac{x^2-16}{x+4}$ সরল করে নিষিদ্ধ মান লেখ।",
+      "explanation": "লব $(x-4)(x+4)$। তাই সরল রূপ $x-4$; শর্ত $x\\ne-4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/cancel-with-domain/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(\\sqrt{5}+\\sqrt{4})(\\sqrt{5}-\\sqrt{4})$ সরল কর।",
+      "explanation": "বর্গের অন্তর $(5)-(4)=1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/conjugate/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac1{\\sqrt{5}+\\sqrt{4}}$-এর হর মূলদ কর।",
+      "explanation": "অনুবন্ধী দিয়ে লব-হর গুণ করলে হর ১। তাই ফল $\\sqrt{5}-\\sqrt{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/rationalise/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+\\frac1x=6$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ নির্ণয় কর।",
+      "explanation": "বর্গে $x^2+x^{-2}+2=6^2$। তাই চাওয়া মান $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x-\\frac1x=6$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ নির্ণয় কর।",
+      "explanation": "ঘনের সূত্রে $x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=234$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-cube/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$a+b+c=0$ ও $abc=-84$ হলে $a^3+b^3+c^3$ নির্ণয় কর।",
+      "explanation": "তিন ঘনের সূত্রে $a^3+b^3+c^3-3abc=0$। তাই চাওয়া মান $3abc=-252$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/three-cubes/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+5)^2$ বিস্তার কর।",
+      "explanation": "$(u+v)^2=u^2+2uv+v^2$। তাই $(x+5)^2=x^2+10x+25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(2x-5)^2$ বিস্তার কর।",
+      "explanation": "$(u-v)^2=u^2-2uv+v^2$। তাই $(2x-5)^2=4x^2-20x+25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-diff-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+5)^3$ বিস্তার কর।",
+      "explanation": "ঘনের সূত্রে $x^3+15x^2+75x+125$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-cube/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-5)^3$ বিস্তার কর।",
+      "explanation": "$(u-v)^3=u^3-3u^2v+3uv^2-v^3$। তাই ফল $x^3-15x^2+75x-125$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-minus-cube/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2-25$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$25=5^2$। বর্গের অন্তর সূত্রে $(x-5)(x+5)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2+11x+30$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$5+6=11$ এবং $5\\times6=30$। মধ্যপদ ভেঙে $(x+5)(x+6)$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quadratic/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3+125$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের যোগের সূত্রে $(x+5)(x^2-5x+25)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-plus/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3-125$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের অন্তরের সূত্রে $(x-5)(x^2+5x+25)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-minus/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^{3} + 5 x^{2} - 6 x - 30$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "গুচ্ছ করে $x^2(x+5)-6(x+5)=(x+5)(x^2-6)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-grouping/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^4+9x^2+25$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "রাশিটি $(x^2+5)^2-x^2$। তাই উৎপাদক $(x^2+x+5)(x^2-x+5)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quartic/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^3+5x+6$-কে $(x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে $P(1)=1+5+6=12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/remainder/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^2+5x+6$-কে $(2x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "$2x-1=0$ হলে $x=1/2$। ভাগশেষ $P(1/2)=1/4+5/2+6=\\frac{35}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/scaled-remainder/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-5)$ যদি $x^2+x+k$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "উৎপাদক শর্তে $5^2+5+k=0$। তাই $k=-(25+5)=-30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-constant/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+5$ যদি $x^2+kx+30$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "$x=-5$ বসালে $25-5k+30=0$। তাই $k=11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-coefficient/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac{x^2-25}{x+5}$ সরল করে নিষিদ্ধ মান লেখ।",
+      "explanation": "লব $(x-5)(x+5)$। তাই সরল রূপ $x-5$; শর্ত $x\\ne-5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/cancel-with-domain/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(\\sqrt{6}+\\sqrt{5})(\\sqrt{6}-\\sqrt{5})$ সরল কর।",
+      "explanation": "বর্গের অন্তর $(6)-(5)=1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/conjugate/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac1{\\sqrt{6}+\\sqrt{5}}$-এর হর মূলদ কর।",
+      "explanation": "অনুবন্ধী দিয়ে লব-হর গুণ করলে হর ১। তাই ফল $\\sqrt{6}-\\sqrt{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/rationalise/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+\\frac1x=7$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ নির্ণয় কর।",
+      "explanation": "বর্গে $x^2+x^{-2}+2=7^2$। তাই চাওয়া মান $47$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x-\\frac1x=7$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ নির্ণয় কর।",
+      "explanation": "ঘনের সূত্রে $x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=364$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-cube/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$a+b+c=0$ ও $abc=-180$ হলে $a^3+b^3+c^3$ নির্ণয় কর।",
+      "explanation": "তিন ঘনের সূত্রে $a^3+b^3+c^3-3abc=0$। তাই চাওয়া মান $3abc=-540$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/three-cubes/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+6)^2$ বিস্তার কর।",
+      "explanation": "$(u+v)^2=u^2+2uv+v^2$। তাই $(x+6)^2=x^2+12x+36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(2x-6)^2$ বিস্তার কর।",
+      "explanation": "$(u-v)^2=u^2-2uv+v^2$। তাই $(2x-6)^2=4x^2-24x+36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-diff-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x+6)^3$ বিস্তার কর।",
+      "explanation": "ঘনের সূত্রে $x^3+18x^2+108x+216$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-cube/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-6)^3$ বিস্তার কর।",
+      "explanation": "$(u-v)^3=u^3-3u^2v+3uv^2-v^3$। তাই ফল $x^3-18x^2+108x-216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/expand-minus-cube/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2-36$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$36=6^2$। বর্গের অন্তর সূত্রে $(x-6)(x+6)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^2+13x+42$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "$6+7=13$ এবং $6\\times7=42$। মধ্যপদ ভেঙে $(x+6)(x+7)$ পাওয়া যায়।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quadratic/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3+216$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের যোগের সূত্রে $(x+6)(x^2-6x+36)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-plus/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^3-216$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "ঘনের অন্তরের সূত্রে $(x-6)(x^2+6x+36)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-cube-minus/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^{3} + 6 x^{2} - 7 x - 42$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "গুচ্ছ করে $x^2(x+6)-7(x+6)=(x+6)(x^2-7)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-grouping/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x^4+11x^2+36$ উৎপাদকে বিশ্লেষণ কর।",
+      "explanation": "রাশিটি $(x^2+6)^2-x^2$। তাই উৎপাদক $(x^2+x+6)(x^2-x+6)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-quartic/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^3+6x+7$-কে $(x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে $P(1)=1+6+7=14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/remainder/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$P(x)=x^2+6x+7$-কে $(2x-1)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "$2x-1=0$ হলে $x=1/2$। ভাগশেষ $P(1/2)=1/4+6/2+7=\\frac{41}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/scaled-remainder/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(x-6)$ যদি $x^2+x+k$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "উৎপাদক শর্তে $6^2+6+k=0$। তাই $k=-(36+6)=-42$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-constant/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+6$ যদি $x^2+kx+42$-এর উৎপাদক হয়, k নির্ণয় কর।",
+      "explanation": "$x=-6$ বসালে $36-6k+42=0$। তাই $k=13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/factor-coefficient/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac{x^2-36}{x+6}$ সরল করে নিষিদ্ধ মান লেখ।",
+      "explanation": "লব $(x-6)(x+6)$। তাই সরল রূপ $x-6$; শর্ত $x\\ne-6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/cancel-with-domain/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$(\\sqrt{7}+\\sqrt{6})(\\sqrt{7}-\\sqrt{6})$ সরল কর।",
+      "explanation": "বর্গের অন্তর $(7)-(6)=1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/conjugate/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$\\frac1{\\sqrt{7}+\\sqrt{6}}$-এর হর মূলদ কর।",
+      "explanation": "অনুবন্ধী দিয়ে লব-হর গুণ করলে হর ১। তাই ফল $\\sqrt{7}-\\sqrt{6}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/rationalise/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x+\\frac1x=8$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ নির্ণয় কর।",
+      "explanation": "বর্গে $x^2+x^{-2}+2=8^2$। তাই চাওয়া মান $62$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$x-\\frac1x=8$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ নির্ণয় কর।",
+      "explanation": "ঘনের সূত্রে $x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=536$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/reciprocal-cube/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "$a+b+c=0$ ও $abc=-330$ হলে $a^3+b^3+c^3$ নির্ণয় কর।",
+      "explanation": "তিন ঘনের সূত্রে $a^3+b^3+c^3-3abc=0$। তাই চাওয়া মান $3abc=-990$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/SQ/three-cubes/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM"
+    }
+  ]
+}

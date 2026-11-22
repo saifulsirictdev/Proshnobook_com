@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),ts=require('typescript'),Module=require('node:module'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports;}
-const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data});const lib=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq});
+const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data});const lib=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
 function rational(s){s=String(s).replace(/[০-৯]/g,c=>'০১২৩৪৫৬৭৮৯'.indexOf(c));const [a,b='1']=s.split('/');return[BigInt(a),BigInt(b)];}
 function equal(a,b){return a[0]*b[1]===b[0]*a[1];}
 for(let ch=3;ch<=8;ch++)test(`chapter ${ch}: 100 MCQ/30 CQ/30 SQ pass real uploader, exact answer choices and honest review gates`,()=>{

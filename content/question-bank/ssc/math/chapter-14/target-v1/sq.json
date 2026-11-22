@@ -1,0 +1,501 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৪শ অধ্যায়: অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 14 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: $\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=24 সেমি। বড় ত্রিভুজের পরিসীমা কত সেমি এবং কেন পরিসীমার অনুপাতও k?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-sides-6.svg)",
+      "explanation": "$PR=40$; পরিসীমা $24+32+40=96$। প্রতিটি অনুরূপ বাহু 8 গুণ, তাই যোগফলও 8 গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-sides/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/8, BC=24 সেমি ও AC=32 সেমি। ত্রিভুজ ADE-এর ক্ষেত্রফল ত্রিভুজ ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-parallel-intercept-6.svg)",
+      "explanation": "সদৃশ ত্রিভুজের ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ। তাই $(1/8)^2=1/64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/parallel-intercept/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:10 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল থেকে ছোটটির ক্ষেত্রফল বাদ দিলে কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-areas-6.svg)",
+      "explanation": "পার্থক্য $300-12=288$ বর্গসেমি। ক্ষেত্রফল রৈখিক অনুপাতে বাড়ে না।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-areas/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: কার্তেসীয় সমতলে A=(8,2), B=(11,2), C=(8,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। প্রতিফলিত ত্রিভুজের ক্ষেত্রফল কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-reflection-6.svg)",
+      "explanation": "AB=3, AC=4, AB⊥AC। মূল ক্ষেত্রফল $\\frac12(3)(4)=6$। প্রতিফলন দৈর্ঘ্য ও লম্বত্ব সংরক্ষণ করে; প্রতিচ্ছবির ক্ষেত্রফলও 6, অভিমুখ বিপরীত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/reflection/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O=(0,0) কেন্দ্র করে A=(8,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। OA² ও OP²-এর সাধারণ মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rotation-6.svg)",
+      "explanation": "$OA^2=8^2+1^2=65$ এবং $OP^2=(-1)^2+8^2=65$। আবর্তনে কেন্দ্র থেকে দূরত্ব অপরিবর্তিত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rotation/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি সুষম 11-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। 360°-এর কম ধনাত্মক কতটি কোণে নিজের সঙ্গে মিলে যাবে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-regular-symmetry-6.svg)",
+      "explanation": "θ,2θ,…,(10)θ; মোট 10টি। পূর্ণ 360°-সহ আবর্তন-প্রতিসাম্যের ক্রম 11।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/regular-symmetry/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=16, AC=24, BC=32 সেমি। ADC-এর ক্ষেত্রফল থেকে ABD-এর ক্ষেত্রফল বাদ দিলে তা ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-angle-bisector-6.svg)",
+      "explanation": "একই A থেকে BC-এর উপর লম্ব উচ্চতা। তাই ক্ষেত্রফল অনুপাত BD:DC=2:3। পার্থক্য/মোট=(3−2)/(3+2)=1/5।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/angle-bisector/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 48 সেমি। বড় আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rectangle-similarity-6.svg)",
+      "explanation": "$48\\times32=1536$; ক্ষেত্রফলের গুণক $64$। শুধু সব কোণ সমকোণ হলেই দুই আয়তক্ষেত্র সদৃশ হয় না; বাহুর অনুপাতও সমান চাই।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rectangle-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 24 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। উচ্চতা-ছায়া ত্রিভুজদ্বয়ের ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-shadow-similarity-6.svg)",
+      "explanation": "সদৃশতার রৈখিক গুণক 8; ক্ষেত্রফলের অনুপাত $8^2=64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/shadow-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 8 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন ত্রিভুজের ক্ষেত্রফল কত বর্গসেমি? নির্মাণ ও যুক্তি লেখ।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-construction-6.svg)",
+      "explanation": "PQ=24 সেমি আঁক। P কেন্দ্র 40 ও Q কেন্দ্র 32 সেমি ব্যাসার্ধের চাপের ছেদ R; PR,QR যোগ কর। তিন বাহুর অনুপাত 8 হওয়ায় SSS-এ PQR∼ABC। 3,4,5 সমকোণী; মূল ক্ষেত্রফল 6, নতুনটি $6\\times64=384$ বর্গসেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-construction/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 576 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়/ছোট পরিসীমার অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-inverse-area-scale-6.svg)",
+      "explanation": "প্রতিটি বাহুর অনুপাত 8; পরিসীমার অনুপাতও 8, ক্ষেত্রফলের অনুপাত নয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/inverse-area-scale/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 8। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়/ছোট ক্ষেত্রফলের অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-median-scale-6.svg)",
+      "explanation": "ভূমি ও উচ্চতা উভয়ই 8 গুণ, ফলে ক্ষেত্রফল $64$ গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/median-scale/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি বৃত্তের ব্যাসার্ধ 2 ও 16 সেমি। ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-circle-similarity-6.svg)",
+      "explanation": "$\\pi(16)^2/(\\pi\\cdot2^2)=64$; সব বৃত্ত সদৃশ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/circle-similarity/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A=(8,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। AP² কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-origin-reflection-6.svg)",
+      "explanation": "$AP^2=(16)^2+(-6)^2=292$; O হলো AP-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/origin-reflection/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: $\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=27 সেমি। বড় ত্রিভুজের পরিসীমা কত সেমি এবং কেন পরিসীমার অনুপাতও k?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-sides-7.svg)",
+      "explanation": "$PR=45$; পরিসীমা $27+36+45=108$। প্রতিটি অনুরূপ বাহু 9 গুণ, তাই যোগফলও 9 গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-sides/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/9, BC=27 সেমি ও AC=36 সেমি। ত্রিভুজ ADE-এর ক্ষেত্রফল ত্রিভুজ ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-parallel-intercept-7.svg)",
+      "explanation": "সদৃশ ত্রিভুজের ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ। তাই $(1/9)^2=1/81$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/parallel-intercept/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:11 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল থেকে ছোটটির ক্ষেত্রফল বাদ দিলে কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-areas-7.svg)",
+      "explanation": "পার্থক্য $363-12=351$ বর্গসেমি। ক্ষেত্রফল রৈখিক অনুপাতে বাড়ে না।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-areas/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: কার্তেসীয় সমতলে A=(9,2), B=(12,2), C=(9,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। প্রতিফলিত ত্রিভুজের ক্ষেত্রফল কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-reflection-7.svg)",
+      "explanation": "AB=3, AC=4, AB⊥AC। মূল ক্ষেত্রফল $\\frac12(3)(4)=6$। প্রতিফলন দৈর্ঘ্য ও লম্বত্ব সংরক্ষণ করে; প্রতিচ্ছবির ক্ষেত্রফলও 6, অভিমুখ বিপরীত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/reflection/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O=(0,0) কেন্দ্র করে A=(9,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। OA² ও OP²-এর সাধারণ মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rotation-7.svg)",
+      "explanation": "$OA^2=9^2+1^2=82$ এবং $OP^2=(-1)^2+9^2=82$। আবর্তনে কেন্দ্র থেকে দূরত্ব অপরিবর্তিত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rotation/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি সুষম 12-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। 360°-এর কম ধনাত্মক কতটি কোণে নিজের সঙ্গে মিলে যাবে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-regular-symmetry-7.svg)",
+      "explanation": "θ,2θ,…,(11)θ; মোট 11টি। পূর্ণ 360°-সহ আবর্তন-প্রতিসাম্যের ক্রম 12।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/regular-symmetry/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=18, AC=27, BC=36 সেমি। ADC-এর ক্ষেত্রফল থেকে ABD-এর ক্ষেত্রফল বাদ দিলে তা ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-angle-bisector-7.svg)",
+      "explanation": "একই A থেকে BC-এর উপর লম্ব উচ্চতা। তাই ক্ষেত্রফল অনুপাত BD:DC=2:3। পার্থক্য/মোট=(3−2)/(3+2)=1/5।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/angle-bisector/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 54 সেমি। বড় আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rectangle-similarity-7.svg)",
+      "explanation": "$54\\times36=1944$; ক্ষেত্রফলের গুণক $81$। শুধু সব কোণ সমকোণ হলেই দুই আয়তক্ষেত্র সদৃশ হয় না; বাহুর অনুপাতও সমান চাই।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rectangle-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 27 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। উচ্চতা-ছায়া ত্রিভুজদ্বয়ের ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-shadow-similarity-7.svg)",
+      "explanation": "সদৃশতার রৈখিক গুণক 9; ক্ষেত্রফলের অনুপাত $9^2=81$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/shadow-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 9 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন ত্রিভুজের ক্ষেত্রফল কত বর্গসেমি? নির্মাণ ও যুক্তি লেখ।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-construction-7.svg)",
+      "explanation": "PQ=27 সেমি আঁক। P কেন্দ্র 45 ও Q কেন্দ্র 36 সেমি ব্যাসার্ধের চাপের ছেদ R; PR,QR যোগ কর। তিন বাহুর অনুপাত 9 হওয়ায় SSS-এ PQR∼ABC। 3,4,5 সমকোণী; মূল ক্ষেত্রফল 6, নতুনটি $6\\times81=486$ বর্গসেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-construction/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 729 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়/ছোট পরিসীমার অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-inverse-area-scale-7.svg)",
+      "explanation": "প্রতিটি বাহুর অনুপাত 9; পরিসীমার অনুপাতও 9, ক্ষেত্রফলের অনুপাত নয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/inverse-area-scale/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 9। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়/ছোট ক্ষেত্রফলের অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-median-scale-7.svg)",
+      "explanation": "ভূমি ও উচ্চতা উভয়ই 9 গুণ, ফলে ক্ষেত্রফল $81$ গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/median-scale/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি বৃত্তের ব্যাসার্ধ 2 ও 18 সেমি। ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-circle-similarity-7.svg)",
+      "explanation": "$\\pi(18)^2/(\\pi\\cdot2^2)=81$; সব বৃত্ত সদৃশ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/circle-similarity/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A=(9,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। AP² কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-origin-reflection-7.svg)",
+      "explanation": "$AP^2=(18)^2+(-6)^2=360$; O হলো AP-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/origin-reflection/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: $\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=30 সেমি। বড় ত্রিভুজের পরিসীমা কত সেমি এবং কেন পরিসীমার অনুপাতও k?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-sides-8.svg)",
+      "explanation": "$PR=50$; পরিসীমা $30+40+50=120$। প্রতিটি অনুরূপ বাহু 10 গুণ, তাই যোগফলও 10 গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/10, BC=30 সেমি ও AC=40 সেমি। ত্রিভুজ ADE-এর ক্ষেত্রফল ত্রিভুজ ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-parallel-intercept-8.svg)",
+      "explanation": "সদৃশ ত্রিভুজের ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ। তাই $(1/10)^2=1/100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/parallel-intercept/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:12 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল থেকে ছোটটির ক্ষেত্রফল বাদ দিলে কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-areas-8.svg)",
+      "explanation": "পার্থক্য $432-12=420$ বর্গসেমি। ক্ষেত্রফল রৈখিক অনুপাতে বাড়ে না।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-areas/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: কার্তেসীয় সমতলে A=(10,2), B=(13,2), C=(10,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। প্রতিফলিত ত্রিভুজের ক্ষেত্রফল কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-reflection-8.svg)",
+      "explanation": "AB=3, AC=4, AB⊥AC। মূল ক্ষেত্রফল $\\frac12(3)(4)=6$। প্রতিফলন দৈর্ঘ্য ও লম্বত্ব সংরক্ষণ করে; প্রতিচ্ছবির ক্ষেত্রফলও 6, অভিমুখ বিপরীত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/reflection/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O=(0,0) কেন্দ্র করে A=(10,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। OA² ও OP²-এর সাধারণ মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rotation-8.svg)",
+      "explanation": "$OA^2=10^2+1^2=101$ এবং $OP^2=(-1)^2+10^2=101$। আবর্তনে কেন্দ্র থেকে দূরত্ব অপরিবর্তিত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rotation/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি সুষম 13-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। 360°-এর কম ধনাত্মক কতটি কোণে নিজের সঙ্গে মিলে যাবে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-regular-symmetry-8.svg)",
+      "explanation": "θ,2θ,…,(12)θ; মোট 12টি। পূর্ণ 360°-সহ আবর্তন-প্রতিসাম্যের ক্রম 13।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/regular-symmetry/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=20, AC=30, BC=40 সেমি। ADC-এর ক্ষেত্রফল থেকে ABD-এর ক্ষেত্রফল বাদ দিলে তা ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-angle-bisector-8.svg)",
+      "explanation": "একই A থেকে BC-এর উপর লম্ব উচ্চতা। তাই ক্ষেত্রফল অনুপাত BD:DC=2:3। পার্থক্য/মোট=(3−2)/(3+2)=1/5।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/angle-bisector/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 60 সেমি। বড় আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rectangle-similarity-8.svg)",
+      "explanation": "$60\\times40=2400$; ক্ষেত্রফলের গুণক $100$। শুধু সব কোণ সমকোণ হলেই দুই আয়তক্ষেত্র সদৃশ হয় না; বাহুর অনুপাতও সমান চাই।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rectangle-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 30 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। উচ্চতা-ছায়া ত্রিভুজদ্বয়ের ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-shadow-similarity-8.svg)",
+      "explanation": "সদৃশতার রৈখিক গুণক 10; ক্ষেত্রফলের অনুপাত $10^2=100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/shadow-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 10 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন ত্রিভুজের ক্ষেত্রফল কত বর্গসেমি? নির্মাণ ও যুক্তি লেখ।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-construction-8.svg)",
+      "explanation": "PQ=30 সেমি আঁক। P কেন্দ্র 50 ও Q কেন্দ্র 40 সেমি ব্যাসার্ধের চাপের ছেদ R; PR,QR যোগ কর। তিন বাহুর অনুপাত 10 হওয়ায় SSS-এ PQR∼ABC। 3,4,5 সমকোণী; মূল ক্ষেত্রফল 6, নতুনটি $6\\times100=600$ বর্গসেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-construction/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 900 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়/ছোট পরিসীমার অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-inverse-area-scale-8.svg)",
+      "explanation": "প্রতিটি বাহুর অনুপাত 10; পরিসীমার অনুপাতও 10, ক্ষেত্রফলের অনুপাত নয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/inverse-area-scale/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 10। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়/ছোট ক্ষেত্রফলের অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-median-scale-8.svg)",
+      "explanation": "ভূমি ও উচ্চতা উভয়ই 10 গুণ, ফলে ক্ষেত্রফল $100$ গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/median-scale/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি বৃত্তের ব্যাসার্ধ 2 ও 20 সেমি। ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-circle-similarity-8.svg)",
+      "explanation": "$\\pi(20)^2/(\\pi\\cdot2^2)=100$; সব বৃত্ত সদৃশ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/circle-similarity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A=(10,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। AP² কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-origin-reflection-8.svg)",
+      "explanation": "$AP^2=(20)^2+(-6)^2=436$; O হলো AP-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/origin-reflection/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: $\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=33 সেমি। বড় ত্রিভুজের পরিসীমা কত সেমি এবং কেন পরিসীমার অনুপাতও k?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-sides-9.svg)",
+      "explanation": "$PR=55$; পরিসীমা $33+44+55=132$। প্রতিটি অনুরূপ বাহু 11 গুণ, তাই যোগফলও 11 গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/11, BC=33 সেমি ও AC=44 সেমি। ত্রিভুজ ADE-এর ক্ষেত্রফল ত্রিভুজ ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-parallel-intercept-9.svg)",
+      "explanation": "সদৃশ ত্রিভুজের ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ। তাই $(1/11)^2=1/121$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/parallel-intercept/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:13 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল থেকে ছোটটির ক্ষেত্রফল বাদ দিলে কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-areas-9.svg)",
+      "explanation": "পার্থক্য $507-12=495$ বর্গসেমি। ক্ষেত্রফল রৈখিক অনুপাতে বাড়ে না।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-areas/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: কার্তেসীয় সমতলে A=(11,2), B=(14,2), C=(11,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। প্রতিফলিত ত্রিভুজের ক্ষেত্রফল কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-reflection-9.svg)",
+      "explanation": "AB=3, AC=4, AB⊥AC। মূল ক্ষেত্রফল $\\frac12(3)(4)=6$। প্রতিফলন দৈর্ঘ্য ও লম্বত্ব সংরক্ষণ করে; প্রতিচ্ছবির ক্ষেত্রফলও 6, অভিমুখ বিপরীত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/reflection/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O=(0,0) কেন্দ্র করে A=(11,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। OA² ও OP²-এর সাধারণ মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rotation-9.svg)",
+      "explanation": "$OA^2=11^2+1^2=122$ এবং $OP^2=(-1)^2+11^2=122$। আবর্তনে কেন্দ্র থেকে দূরত্ব অপরিবর্তিত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rotation/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি সুষম 14-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। 360°-এর কম ধনাত্মক কতটি কোণে নিজের সঙ্গে মিলে যাবে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-regular-symmetry-9.svg)",
+      "explanation": "θ,2θ,…,(13)θ; মোট 13টি। পূর্ণ 360°-সহ আবর্তন-প্রতিসাম্যের ক্রম 14।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/regular-symmetry/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=22, AC=33, BC=44 সেমি। ADC-এর ক্ষেত্রফল থেকে ABD-এর ক্ষেত্রফল বাদ দিলে তা ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-angle-bisector-9.svg)",
+      "explanation": "একই A থেকে BC-এর উপর লম্ব উচ্চতা। তাই ক্ষেত্রফল অনুপাত BD:DC=2:3। পার্থক্য/মোট=(3−2)/(3+2)=1/5।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/angle-bisector/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 66 সেমি। বড় আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rectangle-similarity-9.svg)",
+      "explanation": "$66\\times44=2904$; ক্ষেত্রফলের গুণক $121$। শুধু সব কোণ সমকোণ হলেই দুই আয়তক্ষেত্র সদৃশ হয় না; বাহুর অনুপাতও সমান চাই।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rectangle-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 33 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। উচ্চতা-ছায়া ত্রিভুজদ্বয়ের ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-shadow-similarity-9.svg)",
+      "explanation": "সদৃশতার রৈখিক গুণক 11; ক্ষেত্রফলের অনুপাত $11^2=121$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/shadow-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 11 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন ত্রিভুজের ক্ষেত্রফল কত বর্গসেমি? নির্মাণ ও যুক্তি লেখ।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-construction-9.svg)",
+      "explanation": "PQ=33 সেমি আঁক। P কেন্দ্র 55 ও Q কেন্দ্র 44 সেমি ব্যাসার্ধের চাপের ছেদ R; PR,QR যোগ কর। তিন বাহুর অনুপাত 11 হওয়ায় SSS-এ PQR∼ABC। 3,4,5 সমকোণী; মূল ক্ষেত্রফল 6, নতুনটি $6\\times121=726$ বর্গসেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-construction/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 1089 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়/ছোট পরিসীমার অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-inverse-area-scale-9.svg)",
+      "explanation": "প্রতিটি বাহুর অনুপাত 11; পরিসীমার অনুপাতও 11, ক্ষেত্রফলের অনুপাত নয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/inverse-area-scale/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 11। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়/ছোট ক্ষেত্রফলের অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-median-scale-9.svg)",
+      "explanation": "ভূমি ও উচ্চতা উভয়ই 11 গুণ, ফলে ক্ষেত্রফল $121$ গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/median-scale/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি বৃত্তের ব্যাসার্ধ 2 ও 22 সেমি। ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-circle-similarity-9.svg)",
+      "explanation": "$\\pi(22)^2/(\\pi\\cdot2^2)=121$; সব বৃত্ত সদৃশ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/circle-similarity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A=(11,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। AP² কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-origin-reflection-9.svg)",
+      "explanation": "$AP^2=(22)^2+(-6)^2=520$; O হলো AP-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/origin-reflection/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: $\\triangle ABC\\sim\\triangle PQR$; A↔P,B↔Q,C↔R। AB=3, BC=4, CA=5 সেমি এবং PQ=36 সেমি। বড় ত্রিভুজের পরিসীমা কত সেমি এবং কেন পরিসীমার অনুপাতও k?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-sides-10.svg)",
+      "explanation": "$PR=60$; পরিসীমা $36+48+60=144$। প্রতিটি অনুরূপ বাহু 12 গুণ, তাই যোগফলও 12 গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে D∈AB, E∈AC এবং DE∥BC। AD/AB=1/12, BC=36 সেমি ও AC=48 সেমি। ত্রিভুজ ADE-এর ক্ষেত্রফল ত্রিভুজ ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-parallel-intercept-10.svg)",
+      "explanation": "সদৃশ ত্রিভুজের ক্ষেত্রফলের অনুপাত অনুরূপ বাহুর অনুপাতের বর্গ। তাই $(1/12)^2=1/144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/parallel-intercept/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের অনুরূপ বাহুর অনুপাত 2:14 এবং ছোটটির ক্ষেত্রফল 12 বর্গসেমি। বড়টির ক্ষেত্রফল থেকে ছোটটির ক্ষেত্রফল বাদ দিলে কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-areas-10.svg)",
+      "explanation": "পার্থক্য $588-12=576$ বর্গসেমি। ক্ষেত্রফল রৈখিক অনুপাতে বাড়ে না।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-areas/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: কার্তেসীয় সমতলে A=(12,2), B=(15,2), C=(12,6)। y-অক্ষের সাপেক্ষে প্রতিফলিত বিন্দুগুলো P,Q,R। প্রতিফলিত ত্রিভুজের ক্ষেত্রফল কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-reflection-10.svg)",
+      "explanation": "AB=3, AC=4, AB⊥AC। মূল ক্ষেত্রফল $\\frac12(3)(4)=6$। প্রতিফলন দৈর্ঘ্য ও লম্বত্ব সংরক্ষণ করে; প্রতিচ্ছবির ক্ষেত্রফলও 6, অভিমুখ বিপরীত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/reflection/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: O=(0,0) কেন্দ্র করে A=(12,1) বিন্দুকে ঘড়ির কাঁটার বিপরীতে 90° ঘোরালে P হয়। OA² ও OP²-এর সাধারণ মান কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rotation-10.svg)",
+      "explanation": "$OA^2=12^2+1^2=145$ এবং $OP^2=(-1)^2+12^2=145$। আবর্তনে কেন্দ্র থেকে দূরত্ব অপরিবর্তিত।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rotation/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি সুষম 15-ভুজের প্রতিফলন ও আবর্তন প্রতিসমতা বিবেচনা কর। 360°-এর কম ধনাত্মক কতটি কোণে নিজের সঙ্গে মিলে যাবে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-regular-symmetry-10.svg)",
+      "explanation": "θ,2θ,…,(14)θ; মোট 14টি। পূর্ণ 360°-সহ আবর্তন-প্রতিসাম্যের ক্রম 15।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/regular-symmetry/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: ত্রিভুজ ABC-তে AD হলো A-কোণের অন্তঃসমদ্বিখণ্ডক; D∈BC। AB=24, AC=36, BC=48 সেমি। ADC-এর ক্ষেত্রফল থেকে ABD-এর ক্ষেত্রফল বাদ দিলে তা ABC-এর কত অংশ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-angle-bisector-10.svg)",
+      "explanation": "একই A থেকে BC-এর উপর লম্ব উচ্চতা। তাই ক্ষেত্রফল অনুপাত BD:DC=2:3। পার্থক্য/মোট=(3−2)/(3+2)=1/5।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/angle-bisector/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একটি আয়তক্ষেত্রের দৈর্ঘ্য 6 ও প্রস্থ 4 সেমি। সদৃশ বড় আয়তক্ষেত্রের দৈর্ঘ্য 72 সেমি। বড় আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-rectangle-similarity-10.svg)",
+      "explanation": "$72\\times48=3456$; ক্ষেত্রফলের গুণক $144$। শুধু সব কোণ সমকোণ হলেই দুই আয়তক্ষেত্র সদৃশ হয় না; বাহুর অনুপাতও সমান চাই।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/rectangle-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: একই সময়ে সমতল ভূমিতে 2 মিটার লম্ব খুঁটির ছায়া 3 মিটার এবং একটি উল্লম্ব গাছের ছায়া 36 মিটার। সূর্যরশ্মি পরস্পর সমান্তরাল। উচ্চতা-ছায়া ত্রিভুজদ্বয়ের ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-shadow-similarity-10.svg)",
+      "explanation": "সদৃশতার রৈখিক গুণক 12; ক্ষেত্রফলের অনুপাত $12^2=144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/shadow-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: AB=3, BC=4, CA=5 সেমি ত্রিভুজ ABC-এর 12 গুণ অনুরূপ বাহুবিশিষ্ট ত্রিভুজ নির্মাণ করতে হবে। নতুন ত্রিভুজের ক্ষেত্রফল কত বর্গসেমি? নির্মাণ ও যুক্তি লেখ।\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-similar-construction-10.svg)",
+      "explanation": "PQ=36 সেমি আঁক। P কেন্দ্র 60 ও Q কেন্দ্র 48 সেমি ব্যাসার্ধের চাপের ছেদ R; PR,QR যোগ কর। তিন বাহুর অনুপাত 12 হওয়ায় SSS-এ PQR∼ABC। 3,4,5 সমকোণী; মূল ক্ষেত্রফল 6, নতুনটি $6\\times144=864$ বর্গসেমি।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/similar-construction/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের ক্ষেত্রফল 9 এবং 1296 বর্গসেমি; ছোটটির একটি বাহু 5 সেমি। বড়/ছোট পরিসীমার অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-inverse-area-scale-10.svg)",
+      "explanation": "প্রতিটি বাহুর অনুপাত 12; পরিসীমার অনুপাতও 12, ক্ষেত্রফলের অনুপাত নয়।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/inverse-area-scale/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি সদৃশ ত্রিভুজের বড়/ছোট রৈখিক গুণক 12। ছোটটির একটি মধ্যমা 6 ও অনুরূপ উচ্চতা 4 সেমি। বড়/ছোট ক্ষেত্রফলের অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-median-scale-10.svg)",
+      "explanation": "ভূমি ও উচ্চতা উভয়ই 12 গুণ, ফলে ক্ষেত্রফল $144$ গুণ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/median-scale/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: দুটি বৃত্তের ব্যাসার্ধ 2 ও 24 সেমি। ক্ষেত্রফলের বড়/ছোট অনুপাত কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-circle-similarity-10.svg)",
+      "explanation": "$\\pi(24)^2/(\\pi\\cdot2^2)=144$; সব বৃত্ত সদৃশ।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/circle-similarity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "সংক্ষিপ্ত প্রশ্ন: A=(12,−3) বিন্দুর মূলবিন্দুর সাপেক্ষে প্রতিসম বিন্দু P। AP² কত বর্গএকক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/sq-origin-reflection-10.svg)",
+      "explanation": "$AP^2=(24)^2+(-6)^2=612$; O হলো AP-এর মধ্যবিন্দু।",
+      "page": "নিজস্ব অনুশীলনী; Ch14/SQ/origin-reflection/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM"
+    }
+  ]
+}

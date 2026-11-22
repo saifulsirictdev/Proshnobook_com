@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),ts=require('typescript'),Module=require('node:module'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports;}
-const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq});
+const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
 const manifest=JSON.parse(fs.readFileSync('deliverables/class6-science-starters/manifest.json','utf8'));
 for(let n=1;n<=14;n++)test(`science chapter ${n}: real uploader, incomplete status and four-part CQ`,()=>{
  const base=`content/question-bank/class-6/science/chapter-${n}`;

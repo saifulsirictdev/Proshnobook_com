@@ -1,0 +1,26 @@
+{
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "folderUrl": "https://drive.google.com/drive/folders/10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "policy": "Back up every prepared question batch as versioned JSON with answers, explanations, provenance and review status before import. Keep draft and final snapshots distinct; never overwrite previous snapshots.",
+  "status": "PARTIAL_DRAFT_BACKED_UP_NOT_IMPORTED",
+  "files": [
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-1/board-seed-v1.json",
+      "driveFileId": "17Ex_ZH7GLS8M46P-wpKYHntj8xldQA0G",
+      "driveName": "ssc-math-ch1-board-seed-v1-DRAFT.json",
+      "bytes": 10463,
+      "sha256": "4429d88cc856da0b47804b8de55ddb065d2a046e076190c29029d93e11afa419",
+      "driveMd5Checksum": "4bcd50cdd603902a8c0f7cc1ce01b21b",
+      "checksumMatched": true
+    },
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-1/validation.json",
+      "driveFileId": "1db3IJaqbewGe0G1ovERK9RMzbQp0ZZ8A",
+      "driveName": "ssc-math-ch1-board-seed-v1-validation.json",
+      "bytes": 9520,
+      "sha256": "98c6fdd9fec65a1d2b2adc4eddad98a3f4f76f8e79193f7ec758d4f657be469e",
+      "driveMd5Checksum": "3dc49621de856aab253ae28d2e1e34b0",
+      "checksumMatched": true
+    }
+  ]
+}

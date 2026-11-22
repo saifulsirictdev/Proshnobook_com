@@ -1,0 +1,280 @@
+const { test } = require("node:test"),
+  assert = require("node:assert/strict"),
+  fs = require("node:fs"),
+  path = require("node:path"),
+  ts = require("typescript"),
+  Module = require("node:module");
+const root = path.resolve(__dirname, ".."),
+  resolve = Module._resolveFilename;
+Module._resolveFilename = function (id, parent, ...rest) {
+  return resolve.call(
+    this,
+    id.startsWith("@/") ? path.join(root, id.slice(2)) : id,
+    parent,
+    ...rest,
+  );
+};
+require.extensions[".ts"] = (m, file) =>
+  m._compile(
+    ts.transpileModule(fs.readFileSync(file, "utf8"), {
+      compilerOptions: {
+        module: ts.ModuleKind.CommonJS,
+        target: ts.ScriptTarget.ES2022,
+        esModuleInterop: true,
+      },
+    }).outputText,
+    file,
+  );
+const a = require("../lib/auto-model.ts"),
+  p = require("../lib/auto-model-paper.ts"),
+  b = require("../lib/paper-builder.ts"),
+  catalog = require("../lib/nctb-data.ts");
+const chapters = catalog.NCTB_CLASSES.find(
+  (c) => c.class === "Class 9",
+).subjects.find((s) => s.name === "গণিত").chapters;
+const row = (id, chapter = 1, kind = "CQ") => ({
+  id,
+  text: `Question ${id}`,
+  topic: chapters[chapter - 1],
+  correct: kind === "MCQ" ? "A" : "",
+  explanation: "Verified answer fixture",
+  options:
+    kind === "MCQ"
+      ? { A: "one", B: "two", C: "three", D: "four" }
+      : kind === "CQ"
+        ? {
+            stimulus: `Stimulus ${id}`,
+            subQuestions: { k: "First", kh: "Second", g: "Third" },
+            marks: { k: 2, kh: 4, g: 4 },
+          }
+        : {},
+});
+const written = () => [
+  ...[1, 6, 9, 17].flatMap((ch, i) => [row(`cq${i}a`, ch), row(`cq${i}b`, ch)]),
+  ...Array.from({ length: 15 }, (_, i) => row(`sq${i}`, (i % 17) + 1, "SHORT")),
+];
+const paper = (q) => ({
+  ...q,
+  subject: "গণিত",
+  category: "SSC",
+  type: a.autoModelRowKind(q),
+  stimulus: q.options.stimulus,
+  subQuestions: q.options.subQuestions
+    ? { ...q.options.subQuestions, gh: "" }
+    : undefined,
+  options: q.correct ? q.options : undefined,
+});
+test("blueprints scoped to SSC general math, practice-only, not English/higher math/other grades", () => {
+  for (const cat of ["SSC", "Class 9", "Class 10", "Class 9-10", "9", "10"])
+    assert.equal(a.autoModelBlueprint(cat, "গণিত", "CQ").totalMarks, 70);
+  for (const [cat, sub] of [
+    ["Class 8", "গণিত"],
+    ["HSC", "গণিত"],
+    ["SSC", "উচ্চতর গণিত"],
+    ["SSC", "বিজ্ঞান"],
+    ["SSC", "English 1st Paper"],
+    ["Job", "গণিত"],
+  ])
+    assert.equal(a.autoModelBlueprint(cat, sub, "CQ"), null);
+  assert.equal(a.autoModelBlueprint("SSC", "গণিত", "SHORT"), null);
+  assert.match(a.AUTO_MODEL_NOTICE, /সরকারি/);
+  for (const cat of ["6", "SSC", "HSC", "Class 9-10", "Class 11-12"])
+    assert.equal(a.isAcademicCategory(cat), true);
+});
+test("all 17 exact catalog topics map once, unknown chapter text is never guessed", () => {
+  assert.equal(chapters.length, 17);
+  for (const ch of chapters) assert.ok(a.mathDivision(ch));
+  assert.equal(a.mathDivision("chapter 17"), undefined);
+  assert.equal(a.mathDivision("পরিসংখ্যান"), undefined);
+});
+test("complete written assembly: 2 CQ per division and 15 SHORT, no partial success", () => {
+  const result = a.assembleAutoModel(written(), "CQ", () => 0.5);
+  assert.equal(result.ok, true);
+  assert.equal(result.ids.length, 23);
+  assert.equal(new Set(result.ids).size, 23);
+  const fail = a.assembleAutoModel(
+    written().filter((q) => q.id !== "cq3b"),
+    "CQ",
+  );
+  assert.equal(fail.ok, false);
+  assert.deepEqual(fail.gaps, [
+    { section: a.MATH_DIVISIONS[3].title, required: 2, available: 1 },
+  ]);
+  assert.equal(fail.ids, undefined);
+});
+test("MCQ balanced topic rotation, exact count, no duplicate stems or IDs", () => {
+  const rows = Array.from({ length: 40 }, (_, i) =>
+    row(`m${i}`, i < 30 ? 1 : 17, "MCQ"),
+  );
+  rows.push({
+    ...rows[0],
+    id: "duplicate",
+    text: "  " + rows[0].text.toUpperCase() + "  ",
+  });
+  const r = a.assembleAutoModel(rows, "MCQ", () => 0.99);
+  assert.equal(r.ok, true);
+  assert.equal(r.ids.length, 30);
+  assert.equal(r.ids[1], "m30");
+  assert.ok(!r.ids.includes("duplicate"));
+  assert.equal(a.assembleAutoModel(rows.slice(0, 29), "MCQ").ok, false);
+});
+test("four-part generic CQ, bad marks/options, missing answers, unknown dependencies excluded", () => {
+  assert.equal(a.autoModelRowKind(row("good")), "CQ");
+  const q = row("bad");
+  q.options.subQuestions.gh = "fourth";
+  assert.equal(a.autoModelRowKind(q), null);
+  q.options.subQuestions.gh = "";
+  q.options.marks.g = 3;
+  assert.equal(a.autoModelRowKind(q), null);
+  for (const patch of [
+    { explanation: "" },
+    { topic: "unknown" },
+    { options: { image: "https://example.com/a.png" } },
+    { text: "নিচের চিত্র অনুসারে উত্তর দাও।", options: {} },
+    { options: { groupId: "shared" } },
+  ])
+    assert.equal(
+      a.autoModelRowKind({ ...row("dependency", 1, "SHORT"), ...patch }),
+      null,
+    );
+  const mcq = row("mcq", 1, "MCQ");
+  mcq.options.B = "one";
+  assert.equal(a.autoModelRowKind(mcq), null);
+});
+test("inline diagram stays in same selected record; repeated CQ stimuli do not duplicate", () => {
+  const q = row("diagram", 6);
+  q.options.stimulus += " ![চিত্র](https://example.com/diagram.svg)";
+  assert.equal(a.autoModelRowKind(q), "CQ");
+  const unsafe=row("unsafe");unsafe.options.stimulus+=" ![x](javascript:alert)";
+  assert.equal(a.autoModelRowKind(unsafe),null);
+  const all = written();
+  all.find((q) => q.id === "cq3b").options.stimulus = all.find(
+    (q) => q.id === "cq3a",
+  ).options.stimulus;
+  assert.equal(a.assembleAutoModel(all, "CQ").ok, false);
+});
+test("new model settings survive validation and normal saved paper restoration", () => {
+  const settings = p.autoModelSettings("SSC", "গণিত", "CQ"),
+    restored = b.restoreSettings(JSON.parse(JSON.stringify(settings)));
+  assert.equal(restored.autoModel, "ssc-math-written-v1");
+  assert.equal(restored.info.marks, "70");
+  assert.equal(restored.info.minutes, "২ ঘণ্টা ৩০ মিনিট");
+  assert.equal(restored.cfg.cqAnswer, 5);
+  assert.equal(restored.cfg.shortAnswer, 10);
+  assert.equal(restored.defaultHeader.enabled, true);
+  const fresh = require("../lib/paper-sections.ts").freshPaperSettings(
+    restored,
+  );
+  assert.equal(fresh.autoModel, undefined);
+  assert.equal(b.defaults().autoModel, undefined);
+});
+test("written preview has 4 divisions + SHORT, CQ numbering 1–8, one global choice instruction", () => {
+  const items = written().map(paper),
+    settings = p.autoModelSettings("SSC", "গণিত", "CQ"),
+    sections = p.autoModelSections(items, settings);
+  assert.equal(sections.length, 5);
+  assert.deepEqual(
+    sections.map((s) => s.questions.length),
+    [2, 2, 2, 2, 15],
+  );
+  assert.deepEqual(
+    sections.map((s) => s.startNumber),
+    [0, 2, 4, 6, 0],
+  );
+  assert.match(sections[0].instruction, /মোট ৫টি/);
+  assert.equal(sections[1].instruction, "");
+  assert.match(sections[4].instruction, /প্রতিটি প্রশ্নের মান ২/);
+  assert.deepEqual(p.autoModelIssues(items, settings), []);
+  const changed = items.slice(1);
+  assert.ok(p.autoModelIssues(changed, settings).length);
+  assert.match(
+    p.autoModelSections(changed, settings)[0].instruction,
+    /অসম্পূর্ণ/,
+  );
+  assert.equal(p.autoModelSections(items, b.defaults()), null);
+  const extra = {...paper(row("extra-mcq",1,"MCQ")),topic:"unknown",subject:"বিজ্ঞান"};
+  const appended = p.autoModelSections([...items,extra],settings);
+  assert.equal(appended.flatMap(s=>s.questions).length,24);
+  assert.match(appended.at(-1).title,/মডেল কাঠামোর বাইরে/);
+  assert.equal(p.autoModelSections([...items,extra],p.autoModelSettings("SSC","গণিত","MCQ")).flatMap(s=>s.questions).length,24);
+  assert.ok(p.autoModelIssues([...items,items[0]],settings).some(s=>s.includes("পুনরাবৃত্তি")));
+});
+function action(user, rows, fail = false) {
+  let query;
+  const file = path.resolve("app/actions/auto-model.ts"),
+    m = new Module(file, module);
+  m.paths = module.paths;
+  m.require = (id) =>
+    id === "@/auth"
+      ? { auth: async () => ({ user }) }
+      : id === "@/lib/db"
+        ? {
+            db: {
+              question: {
+                findMany: async (args) => {
+                  query = args;
+                  if (fail) throw Error("offline");
+                  return rows;
+                },
+              },
+            },
+          }
+        : require(id);
+  m._compile(
+    ts.transpileModule(fs.readFileSync(file, "utf8"), {
+      compilerOptions: {
+        module: ts.ModuleKind.CommonJS,
+        target: ts.ScriptTarget.ES2022,
+        esModuleInterop: true,
+      },
+    }).outputText,
+    file,
+  );
+  return { run: m.exports.prepareAutoModel, query: () => query };
+}
+const choice = { category: "SSC", subject: "গণিত", variant: "CQ" };
+test("server action requires teacher auth and valid blueprint before any DB access", async () => {
+  for (const user of [null, { id: "s", role: "STUDENT" }]) {
+    const x = action(user, []);
+    assert.equal((await x.run(choice)).ok, false);
+    assert.equal(x.query(), undefined);
+  }
+  for (const patch of [
+    { variant: "ALL" },
+    { category: "Class 8" },
+    { subject: "English" },
+    { category: [] },
+  ]) {
+    const x = action({ id: "t", role: "TEACHER" }, []);
+    assert.equal((await x.run({ ...choice, ...patch })).ok, false);
+    assert.equal(x.query(), undefined);
+  }
+});
+test("server action selects only approved alias-matched stock and returns IDs, never paid text/answers", async () => {
+  const x = action({ id: "t", role: "TEACHER" }, written()),
+    r = await x.run(choice);
+  assert.equal(r.ok, true);
+  assert.equal(r.ids.length, 23);
+  assert.deepEqual(Object.keys(r).sort(), ["ids", "ok"]);
+  assert.equal(x.query().where.approved, true);
+  assert.equal(x.query().where.subject, "গণিত");
+  assert.ok(x.query().where.category.in.includes("Class 10"));
+  assert.equal(x.query().take, 10001);
+  const missing = await action({ id: "t", role: "TEACHER" }, []).run(choice);
+  assert.equal(missing.ok, false);
+  assert.equal(missing.gaps.length, 5);
+  assert.equal(
+    (await action({ id: "t", role: "TEACHER" }, [], true).run(choice)).ok,
+    false,
+  );
+});
+test("oversized pool fails explicitly rather than reporting truncated bank shortages", async () => {
+  const x = action(
+    { id: "t", role: "TEACHER" },
+    Array(10001).fill(row("large")),
+  );
+  const r = await x.run(choice);
+  assert.equal(r.ok, false);
+  assert.match(r.error, /বড়/);
+  assert.equal(r.gaps, undefined);
+});

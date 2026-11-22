@@ -1,0 +1,2111 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৮ম অধ্যায়: বৃত্ত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ জ্যামিতি অনুশীলনী",
+  "edition": "Chapter 8 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=48^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-6.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$47$",
+        "C": "$50$",
+        "D": "$48$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "11 ও 8 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-6.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $19$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$18$",
+        "B": "$21$",
+        "C": "$19$",
+        "D": "$20$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "17 ও 8 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-6.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$11$",
+        "C": "$9$",
+        "D": "$10$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=48^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-6.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $42$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$42$",
+        "B": "$43$",
+        "C": "$41$",
+        "D": "$44$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "9 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-6.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$120$",
+        "B": "$121$",
+        "C": "$119$",
+        "D": "$122$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 35 ও 21 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-6.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 21। অর্ধজ্যা √(35²−21²)=28, পূর্ণজ্যা 56 সেমি। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$58$",
+        "C": "$56$",
+        "D": "$57$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=52^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-7.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $104$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$105$",
+        "B": "$103$",
+        "C": "$106$",
+        "D": "$104$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=104^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-7.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$53$",
+        "B": "$51$",
+        "C": "$54$",
+        "D": "$52$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=52^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-7.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $256$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$257$",
+        "C": "$255$",
+        "D": "$258$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=52^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-7.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$52$",
+        "C": "$53$",
+        "D": "$51$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=83^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-7.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $97$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$96$",
+        "B": "$99$",
+        "C": "$97$",
+        "D": "$98$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=9:10$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-7.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{1620}{19}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1658}{19}$",
+        "B": "$\\frac{1620}{19}$",
+        "C": "$\\frac{1639}{19}$",
+        "D": "$\\frac{1601}{19}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=83^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-7.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $83$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$82$",
+        "B": "$85$",
+        "C": "$83$",
+        "D": "$84$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 40 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 24 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-7.svg)",
+      "explanation": "অর্ধজ্যা = √(40²−24²)=32 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$66$",
+        "B": "$64$",
+        "C": "$65$",
+        "D": "$63$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 40 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 64 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-7.svg)",
+      "explanation": "অর্ধজ্যা 32; দূরত্ব = √(40²−32²)=24 সেমি। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$23$",
+        "C": "$26$",
+        "D": "$24$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=64 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 24 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-7.svg)",
+      "explanation": "অর্ধজ্যা 32 সেমি। ব্যাসার্ধ = √(24²+32²)=40 সেমি। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$42$",
+        "B": "$40$",
+        "C": "$41$",
+        "D": "$39$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=32 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-7.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$63$",
+        "B": "$66$",
+        "C": "$64$",
+        "D": "$65$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=64 সেমি; OE⊥AB, OF⊥CD ও OE=24 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-7.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$25$",
+        "C": "$23$",
+        "D": "$26$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=24, OP=40 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-7.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$31$",
+        "C": "$34$",
+        "D": "$32$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=32 সেমি স্পর্শক; ব্যাসার্ধ OT=24 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-7.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$39$",
+        "B": "$42$",
+        "C": "$40$",
+        "D": "$41$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=9x+7 এবং PU=8x+17 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-7.svg)",
+      "explanation": "সমান স্পর্শক থেকে (9)x+7=(8)x+17। তাই x=10; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$9$",
+        "C": "$12$",
+        "D": "$10$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=52^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-7.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$129$",
+        "B": "$127$",
+        "C": "$130$",
+        "D": "$128$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=104^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-7.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$53$",
+        "C": "$51$",
+        "D": "$54$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 40 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-7.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$92$",
+        "B": "$90$",
+        "C": "$91$",
+        "D": "$89$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=52^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-7.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$51$",
+        "B": "$54$",
+        "C": "$52$",
+        "D": "$53$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "12 ও 9 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-7.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$23$",
+        "B": "$21$",
+        "C": "$22$",
+        "D": "$20$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "19 ও 9 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-7.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$10$",
+        "C": "$11$",
+        "D": "$9$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=52^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-7.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $38$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$39$",
+        "B": "$37$",
+        "C": "$40$",
+        "D": "$38$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "10 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-7.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$121$",
+        "B": "$119$",
+        "C": "$122$",
+        "D": "$120$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 40 ও 24 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-7.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 24। অর্ধজ্যা √(40²−24²)=32, পূর্ণজ্যা 64 সেমি। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$66$",
+        "B": "$64$",
+        "C": "$65$",
+        "D": "$63$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=56^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-8.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $112$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$111$",
+        "B": "$114$",
+        "C": "$112$",
+        "D": "$113$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=112^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-8.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$58$",
+        "C": "$56$",
+        "D": "$57$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=56^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-8.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $248$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$249$",
+        "B": "$247$",
+        "C": "$250$",
+        "D": "$248$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=56^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-8.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$57$",
+        "C": "$55$",
+        "D": "$58$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=88^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-8.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $92$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$94$",
+        "B": "$92$",
+        "C": "$93$",
+        "D": "$91$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=10:11$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-8.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{600}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{600}{7}$",
+        "B": "$\\frac{607}{7}$",
+        "C": "$\\frac{593}{7}$",
+        "D": "$\\frac{614}{7}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=88^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-8.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $88$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$88$",
+        "C": "$89$",
+        "D": "$87$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 45 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 27 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-8.svg)",
+      "explanation": "অর্ধজ্যা = √(45²−27²)=36 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$73$",
+        "C": "$71$",
+        "D": "$74$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 45 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 72 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-8.svg)",
+      "explanation": "অর্ধজ্যা 36; দূরত্ব = √(45²−36²)=27 সেমি। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$29$",
+        "C": "$27$",
+        "D": "$28$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=72 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 27 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-8.svg)",
+      "explanation": "অর্ধজ্যা 36 সেমি। ব্যাসার্ধ = √(27²+36²)=45 সেমি। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$45$",
+        "B": "$46$",
+        "C": "$44$",
+        "D": "$47$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=36 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-8.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$74$",
+        "B": "$72$",
+        "C": "$73$",
+        "D": "$71$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=72 সেমি; OE⊥AB, OF⊥CD ও OE=27 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-8.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$28$",
+        "B": "$26$",
+        "C": "$29$",
+        "D": "$27$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=27, OP=45 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-8.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35$",
+        "B": "$38$",
+        "C": "$36$",
+        "D": "$37$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=36 সেমি স্পর্শক; ব্যাসার্ধ OT=27 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-8.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$47$",
+        "B": "$45$",
+        "C": "$46$",
+        "D": "$44$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=10x+8 এবং PU=9x+19 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-8.svg)",
+      "explanation": "সমান স্পর্শক থেকে (10)x+8=(9)x+19। তাই x=11; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$13$",
+        "C": "$11$",
+        "D": "$12$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=56^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-8.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $124$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$123$",
+        "B": "$126$",
+        "C": "$124$",
+        "D": "$125$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=112^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-8.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$57$",
+        "B": "$55$",
+        "C": "$58$",
+        "D": "$56$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 45 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-8.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$91$",
+        "C": "$89$",
+        "D": "$92$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=56^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-8.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$58$",
+        "B": "$56$",
+        "C": "$57$",
+        "D": "$55$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "13 ও 10 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-8.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $23$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$23$",
+        "B": "$24$",
+        "C": "$22$",
+        "D": "$25$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "21 ও 10 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-8.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$12$",
+        "C": "$10$",
+        "D": "$13$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=56^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-8.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$36$",
+        "C": "$34$",
+        "D": "$35$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "11 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-8.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$119$",
+        "B": "$122$",
+        "C": "$120$",
+        "D": "$121$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 45 ও 27 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-8.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 27। অর্ধজ্যা √(45²−27²)=36, পূর্ণজ্যা 72 সেমি। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$73$",
+        "C": "$71$",
+        "D": "$74$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=60^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-9.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$122$",
+        "B": "$120$",
+        "C": "$121$",
+        "D": "$119$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=120^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-9.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$60$",
+        "C": "$61$",
+        "D": "$59$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=60^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-9.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $240$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$239$",
+        "B": "$242$",
+        "C": "$240$",
+        "D": "$241$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=60^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-9.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$61$",
+        "B": "$59$",
+        "C": "$62$",
+        "D": "$60$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=93^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-9.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $87$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$87$",
+        "B": "$88$",
+        "C": "$86$",
+        "D": "$89$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=11:12$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-9.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{1980}{23}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2003}{23}$",
+        "B": "$\\frac{1957}{23}$",
+        "C": "$\\frac{2026}{23}$",
+        "D": "$\\frac{1980}{23}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=93^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-9.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $93$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$93$",
+        "B": "$94$",
+        "C": "$92$",
+        "D": "$95$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 50 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 30 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-9.svg)",
+      "explanation": "অর্ধজ্যা = √(50²−30²)=40 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $80$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$81$",
+        "B": "$79$",
+        "C": "$82$",
+        "D": "$80$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 50 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 80 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-9.svg)",
+      "explanation": "অর্ধজ্যা 40; দূরত্ব = √(50²−40²)=30 সেমি। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$30$",
+        "C": "$31$",
+        "D": "$29$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=80 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 30 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-9.svg)",
+      "explanation": "অর্ধজ্যা 40 সেমি। ব্যাসার্ধ = √(30²+40²)=50 সেমি। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$51$",
+        "B": "$49$",
+        "C": "$52$",
+        "D": "$50$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=40 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-9.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $80$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$80$",
+        "B": "$81$",
+        "C": "$79$",
+        "D": "$82$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=80 সেমি; OE⊥AB, OF⊥CD ও OE=30 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-9.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$32$",
+        "C": "$30$",
+        "D": "$31$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=30, OP=50 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-9.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$42$",
+        "B": "$40$",
+        "C": "$41$",
+        "D": "$39$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=40 সেমি স্পর্শক; ব্যাসার্ধ OT=30 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-9.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$51$",
+        "C": "$49$",
+        "D": "$52$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=11x+9 এবং PU=10x+21 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-9.svg)",
+      "explanation": "সমান স্পর্শক থেকে (11)x+9=(10)x+21। তাই x=12; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$12$",
+        "C": "$13$",
+        "D": "$11$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=60^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-9.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$122$",
+        "B": "$120$",
+        "C": "$121$",
+        "D": "$119$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=120^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-9.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$62$",
+        "C": "$60$",
+        "D": "$61$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 50 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-9.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$91$",
+        "B": "$89$",
+        "C": "$92$",
+        "D": "$90$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=60^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-9.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$61$",
+        "C": "$59$",
+        "D": "$62$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "14 ও 11 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-9.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$24$",
+        "C": "$27$",
+        "D": "$25$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "23 ও 11 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-9.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$11$",
+        "C": "$14$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=60^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-9.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$30$",
+        "C": "$31$",
+        "D": "$29$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "12 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-9.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$122$",
+        "B": "$120$",
+        "C": "$121$",
+        "D": "$119$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 50 ও 30 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-9.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 30। অর্ধজ্যা √(50²−30²)=40, পূর্ণজ্যা 80 সেমি। সঠিক উত্তর $80$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$81$",
+        "B": "$79$",
+        "C": "$82$",
+        "D": "$80$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=64^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-10.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$128$",
+        "B": "$129$",
+        "C": "$127$",
+        "D": "$130$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=128^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-10.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$64$",
+        "B": "$65$",
+        "C": "$63$",
+        "D": "$66$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=64^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-10.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $232$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$234$",
+        "B": "$232$",
+        "C": "$233$",
+        "D": "$231$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=64^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-10.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$63$",
+        "B": "$66$",
+        "C": "$64$",
+        "D": "$65$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=98^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-10.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $82$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$83$",
+        "B": "$81$",
+        "C": "$84$",
+        "D": "$82$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=12:13$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-10.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{432}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{427}{5}$",
+        "B": "$\\frac{442}{5}$",
+        "C": "$\\frac{432}{5}$",
+        "D": "$\\frac{437}{5}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=98^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-10.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $98$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$99$",
+        "B": "$97$",
+        "C": "$100$",
+        "D": "$98$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 55 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 33 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-10.svg)",
+      "explanation": "অর্ধজ্যা = √(55²−33²)=44 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $88$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$87$",
+        "B": "$90$",
+        "C": "$88$",
+        "D": "$89$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 55 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 88 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-10.svg)",
+      "explanation": "অর্ধজ্যা 44; দূরত্ব = √(55²−44²)=33 সেমি। সঠিক উত্তর $33$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$34$",
+        "C": "$32$",
+        "D": "$35$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=88 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 33 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-10.svg)",
+      "explanation": "অর্ধজ্যা 44 সেমি। ব্যাসার্ধ = √(33²+44²)=55 সেমি। সঠিক উত্তর $55$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$57$",
+        "C": "$55$",
+        "D": "$56$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=44 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-10.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $88$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$89$",
+        "B": "$87$",
+        "C": "$90$",
+        "D": "$88$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=88 সেমি; OE⊥AB, OF⊥CD ও OE=33 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-10.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $33$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35$",
+        "B": "$33$",
+        "C": "$34$",
+        "D": "$32$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=33, OP=55 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-10.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$44$",
+        "B": "$45$",
+        "C": "$43$",
+        "D": "$46$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=44 সেমি স্পর্শক; ব্যাসার্ধ OT=33 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-10.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $55$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$54$",
+        "C": "$57$",
+        "D": "$55$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=12x+10 এবং PU=11x+23 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-10.svg)",
+      "explanation": "সমান স্পর্শক থেকে (12)x+10=(11)x+23। তাই x=13; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$14$",
+        "C": "$12$",
+        "D": "$15$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=64^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-10.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $116$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$116$",
+        "B": "$117$",
+        "C": "$115$",
+        "D": "$118$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=128^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-10.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$66$",
+        "B": "$64$",
+        "C": "$65$",
+        "D": "$63$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 55 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-10.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$89$",
+        "B": "$92$",
+        "C": "$90$",
+        "D": "$91$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=64^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-10.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$65$",
+        "B": "$63$",
+        "C": "$66$",
+        "D": "$64$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "15 ও 12 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-10.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$29$",
+        "C": "$27$",
+        "D": "$28$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "25 ও 12 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-10.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$15$",
+        "C": "$13$",
+        "D": "$14$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=64^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-10.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$27$",
+        "C": "$25$",
+        "D": "$28$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "13 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-10.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$120$",
+        "B": "$121$",
+        "C": "$119$",
+        "D": "$122$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 55 ও 33 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-10.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 33। অর্ধজ্যা √(55²−33²)=44, পূর্ণজ্যা 88 সেমি। সঠিক উত্তর $88$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$87$",
+        "B": "$90$",
+        "C": "$88$",
+        "D": "$89$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=68^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-11.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $136$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$137$",
+        "B": "$135$",
+        "C": "$138$",
+        "D": "$136$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=136^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-11.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $68$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$69$",
+        "B": "$67$",
+        "C": "$70$",
+        "D": "$68$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=68^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-11.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $224$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$224$",
+        "B": "$225$",
+        "C": "$223$",
+        "D": "$226$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=68^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-11.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $68$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$70$",
+        "B": "$68$",
+        "C": "$69$",
+        "D": "$67$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=103^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-11.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $77$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$76$",
+        "B": "$79$",
+        "C": "$77$",
+        "D": "$78$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=13:14$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-11.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{260}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{266}{3}$",
+        "B": "$\\frac{260}{3}$",
+        "C": "$\\frac{263}{3}$",
+        "D": "$\\frac{257}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=103^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-11.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $103$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$102$",
+        "B": "$105$",
+        "C": "$103$",
+        "D": "$104$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 60 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 36 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-11.svg)",
+      "explanation": "অর্ধজ্যা = √(60²−36²)=48 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$98$",
+        "B": "$96$",
+        "C": "$97$",
+        "D": "$95$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 60 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 96 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-11.svg)",
+      "explanation": "অর্ধজ্যা 48; দূরত্ব = √(60²−48²)=36 সেমি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$35$",
+        "C": "$38$",
+        "D": "$36$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=96 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 36 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-11.svg)",
+      "explanation": "অর্ধজ্যা 48 সেমি। ব্যাসার্ধ = √(36²+48²)=60 সেমি। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$60$",
+        "C": "$61$",
+        "D": "$59$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=48 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-11.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$95$",
+        "B": "$98$",
+        "C": "$96$",
+        "D": "$97$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=96 সেমি; OE⊥AB, OF⊥CD ও OE=36 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-11.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$37$",
+        "C": "$35$",
+        "D": "$38$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=36, OP=60 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-11.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$47$",
+        "C": "$50$",
+        "D": "$48$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=48 সেমি স্পর্শক; ব্যাসার্ধ OT=36 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-11.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$62$",
+        "C": "$60$",
+        "D": "$61$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=13x+11 এবং PU=12x+25 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-11.svg)",
+      "explanation": "সমান স্পর্শক থেকে (13)x+11=(12)x+25। তাই x=14; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$13$",
+        "C": "$16$",
+        "D": "$14$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=68^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-11.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $112$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$113$",
+        "B": "$111$",
+        "C": "$114$",
+        "D": "$112$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=136^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-11.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $68$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$68$",
+        "B": "$69$",
+        "C": "$67$",
+        "D": "$70$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 60 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-11.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$92$",
+        "B": "$90$",
+        "C": "$91$",
+        "D": "$89$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=68^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-11.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $68$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$67$",
+        "B": "$70$",
+        "C": "$68$",
+        "D": "$69$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "16 ও 13 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-11.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $29$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$29$",
+        "C": "$30$",
+        "D": "$28$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "27 ও 13 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-11.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$14$",
+        "C": "$15$",
+        "D": "$13$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=68^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-11.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $22$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$23$",
+        "B": "$21$",
+        "C": "$24$",
+        "D": "$22$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "14 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-11.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$121$",
+        "B": "$119$",
+        "C": "$122$",
+        "D": "$120$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 60 ও 36 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-11.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 36। অর্ধজ্যা √(60²−36²)=48, পূর্ণজ্যা 96 সেমি। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$98$",
+        "B": "$96$",
+        "C": "$97$",
+        "D": "$95$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে একই ক্ষুদ্র BC চাপের উপর $\\angle BAC=72^\\circ$। ক্ষুদ্র $\\angle BOC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-central-double-12.svg)",
+      "explanation": "একই চাপের কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/central-double/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$143$",
+        "B": "$146$",
+        "C": "$144$",
+        "D": "$145$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের বৃত্তে ক্ষুদ্র $\\angle BOC=144^\\circ$। A বৃহৎ BC চাপে হলে $\\angle BAC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-inscribed-half-12.svg)",
+      "explanation": "A বৃহৎ চাপে বলে A-তে কোণটি ক্ষুদ্র BC চাপের উপর; কেন্দ্রস্থ কোণের অর্ধেক। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/inscribed-half/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$71$",
+        "B": "$74$",
+        "C": "$72$",
+        "D": "$73$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃহৎ BC চাপের A বিন্দুতে $\\angle BAC=72^\\circ$। O কেন্দ্রে প্রবৃদ্ধ BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-reflex-center-12.svg)",
+      "explanation": "ক্ষুদ্র BOC বৃত্তস্থ কোণের দ্বিগুণ; প্রবৃদ্ধ কোণ পেতে ৩৬০° থেকে বাদ দিই। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/reflex-center/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$217$",
+        "B": "$215$",
+        "C": "$218$",
+        "D": "$216$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "A,D একই বৃহৎ BC চাপে অবস্থিত এবং $\\angle BAC=72^\\circ$। $\\angle BDC$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-same-segment-12.svg)",
+      "explanation": "একই বৃত্তাংশে একই জ্যার উপর উৎপন্ন কোণগুলো সমান। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/same-segment/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$73$",
+        "C": "$71$",
+        "D": "$74$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD চতুর্ভুজে $\\angle ABC=108^\\circ$। $\\angle ADC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-opposite-12.svg)",
+      "explanation": "বিপরীত কোণের যোগ ১৮০°। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-opposite/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$74$",
+        "B": "$72$",
+        "C": "$73$",
+        "D": "$71$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে বিপরীত $\\angle ABC:\\angle ADC=14:15$। $\\angle ABC$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-ratio-12.svg)",
+      "explanation": "অনুপাতের অংশের যোগ দিয়ে ১৮০° ভাগ করে প্রথম অংশগুণ করি। সঠিক উত্তর $\\frac{2520}{29}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-ratio/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2520}{29}$",
+        "B": "$\\frac{2549}{29}$",
+        "C": "$\\frac{2491}{29}$",
+        "D": "$\\frac{2578}{29}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বৃত্তস্থ ABCD-তে $\\angle ABC=108^\\circ$। CD-কে D ছাড়িয়ে E পর্যন্ত বাড়ালে $\\angle ADE$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-cyclic-exterior-12.svg)",
+      "explanation": "D-এর অন্তঃকোণ ১৮০°−B; সংলগ্ন বহিঃকোণ আবার ১৮০° থেকে বাদ দিলে B-এর সমান। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/cyclic-exterior/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$110$",
+        "B": "$108$",
+        "C": "$109$",
+        "D": "$107$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 65 সেমি; কেন্দ্র O থেকে AB জ্যার উপর OM লম্বের দৈর্ঘ্য 39 সেমি। AB কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-length-12.svg)",
+      "explanation": "অর্ধজ্যা = √(65²−39²)=52 সেমি; পূর্ণজ্যা দ্বিগুণ। সঠিক উত্তর $104$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-length/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$104$",
+        "B": "$105$",
+        "C": "$103$",
+        "D": "$106$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ব্যাসার্ধ 65 সেমির বৃত্তে AB জ্যার দৈর্ঘ্য 104 সেমি। কেন্দ্র থেকে জ্যার দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-distance-12.svg)",
+      "explanation": "অর্ধজ্যা 52; দূরত্ব = √(65²−52²)=39 সেমি। সঠিক উত্তর $39$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-distance/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$41$",
+        "C": "$39$",
+        "D": "$40$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=104 সেমি এবং কেন্দ্র থেকে জ্যার দূরত্ব 39 সেমি। বৃত্তের ব্যাসার্ধ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-chord-radius-12.svg)",
+      "explanation": "অর্ধজ্যা 52 সেমি। ব্যাসার্ধ = √(39²+52²)=65 সেমি। সঠিক উত্তর $65$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/chord-radius/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$65$",
+        "B": "$66$",
+        "C": "$64$",
+        "D": "$67$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে OE⊥AB, OF⊥CD, OE=OF ও BE=52 সেমি। CD কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-length-12.svg)",
+      "explanation": "BE অর্ধজ্যা। সমদূরবর্তী জ্যা সমান; CD=AB=২BE। সঠিক উত্তর $104$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-length/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$106$",
+        "B": "$104$",
+        "C": "$105$",
+        "D": "$103$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একই বৃত্তে AB=CD=104 সেমি; OE⊥AB, OF⊥CD ও OE=39 সেমি। OF কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-chords-distance-12.svg)",
+      "explanation": "সমান জ্যা কেন্দ্র থেকে সমদূরবর্তী। সঠিক উত্তর $39$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-chords-distance/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$38$",
+        "C": "$41$",
+        "D": "$39$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT স্পর্শক; O কেন্দ্র, OT=39, OP=65 সেমি। PT কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-length-12.svg)",
+      "explanation": "স্পর্শবিন্দুর ব্যাসার্ধ স্পর্শকের লম্ব; PT²=OP²−OT²। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-length/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$51$",
+        "B": "$54$",
+        "C": "$52$",
+        "D": "$53$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বহিঃস্থ P থেকে PT=52 সেমি স্পর্শক; ব্যাসার্ধ OT=39 সেমি। OP কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-center-distance-12.svg)",
+      "explanation": "OTP সমকোণী; পিথাগোরাসে OP²=OT²+PT²। সঠিক উত্তর $65$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-center-distance/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$67$",
+        "B": "$65$",
+        "C": "$66$",
+        "D": "$64$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক। PT=14x+12 এবং PU=13x+27 সেমি। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equal-tangents-12.svg)",
+      "explanation": "সমান স্পর্শক থেকে (14)x+12=(13)x+27। তাই x=15; উভয় দৈর্ঘ্য ধনাত্মক। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equal-tangents/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$17$",
+        "C": "$15$",
+        "D": "$16$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "PT,PU স্পর্শক ও $\\angle TPU=72^\\circ$। ক্ষুদ্র $\\angle TOU$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-central-angle-12.svg)",
+      "explanation": "OT ও OU স্পর্শকের লম্ব; T ও U-তে ৯০° করে। চতুর্ভুজে O ও P-এর কোণের যোগ ১৮০°। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-central-angle/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$107$",
+        "B": "$110$",
+        "C": "$108$",
+        "D": "$109$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "P থেকে PT,PU স্পর্শক; $\\angle TPU=144^\\circ$। $\\angle TPO$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangents-bisector-12.svg)",
+      "explanation": "OTP ও OUP RHS-এ সর্বসম; OP বাহিরের কোণ সমদ্বিখণ্ডিত করে। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangents-bisector/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$73$",
+        "B": "$71$",
+        "C": "$74$",
+        "D": "$72$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "O কেন্দ্রের 65 সেমি ব্যাসার্ধের বৃত্তে A বিন্দুর স্পর্শক AT। ∠OAT কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-radius-angle-12.svg)",
+      "explanation": "স্পর্শবিন্দুতে ব্যাসার্ধ স্পর্শকের লম্ব। সঠিক উত্তর $90$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-radius-angle/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$91$",
+        "C": "$89$",
+        "D": "$92$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "A-তে AT স্পর্শক ও AB জ্যা। $\\angle TAB=72^\\circ$। C অপর বৃত্তাংশে হলে $\\angle ACB$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-tangent-chord-angle-12.svg)",
+      "explanation": "স্পর্শক-জ্যার মধ্যবর্তী কোণ বিপরীত বৃত্তাংশে ওই জ্যার উৎপন্ন কোণের সমান। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/tangent-chord-angle/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$74$",
+        "B": "$72$",
+        "C": "$73$",
+        "D": "$71$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "17 ও 14 সেমি ব্যাসার্ধের দুটি বৃত্ত বহিঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-external-contact-12.svg)",
+      "explanation": "বহিঃস্পর্শে কেন্দ্রদূরত্ব ব্যাসার্ধদ্বয়ের যোগ। সঠিক উত্তর $31$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/external-contact/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$32$",
+        "C": "$30$",
+        "D": "$33$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "29 ও 14 সেমি ব্যাসার্ধের দুটি বৃত্ত অন্তঃস্পর্শী। কেন্দ্রদ্বয়ের দূরত্ব কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-internal-contact-12.svg)",
+      "explanation": "অন্তঃস্পর্শে কেন্দ্রদূরত্ব বড় ব্যাসার্ধ−ছোট ব্যাসার্ধ। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/internal-contact/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$16$",
+        "C": "$14$",
+        "D": "$17$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB বৃত্তের ব্যাস; C পরিধিতে এবং $\\angle CAB=72^\\circ$। $\\angle CBA$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-semicircle-other-angle-12.svg)",
+      "explanation": "অর্ধবৃত্তস্থ ACB=৯০°। ত্রিভুজের বাকি দুই কোণ পরস্পর পূরক। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/semicircle-other-angle/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$20$",
+        "C": "$18$",
+        "D": "$19$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "15 সেমি বাহুর সমবাহু ত্রিভুজ ABC বৃত্তে অন্তর্লিখিত। O কেন্দ্রে ক্ষুদ্র BOC কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-equilateral-center-12.svg)",
+      "explanation": "সমবাহু ত্রিভুজে BAC=৬০°। একই ক্ষুদ্র BC চাপের কেন্দ্রস্থ কোণ ১২০°। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/equilateral-center/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$119$",
+        "B": "$122$",
+        "C": "$120$",
+        "D": "$121$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এককেন্দ্রিক দুটি বৃত্তের ব্যাসার্ধ 65 ও 39 সেমি। বড় বৃত্তের AB জ্যা ছোট বৃত্তকে স্পর্শ করে। AB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch8-v1/mcq-concentric-chord-12.svg)",
+      "explanation": "জ্যার দূরত্ব ছোট ব্যাসার্ধ 39। অর্ধজ্যা √(65²−39²)=52, পূর্ণজ্যা 104 সেমি। সঠিক উত্তর $104$।",
+      "page": "নিজস্ব অনুশীলনী; Ch8/MCQ/concentric-chord/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$104$",
+        "B": "$105$",
+        "C": "$103$",
+        "D": "$106$"
+      },
+      "correct": "A"
+    }
+  ]
+}
