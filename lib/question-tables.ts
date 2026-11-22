@@ -1,7 +1,7 @@
 /** Bounded, literal Markdown tables and our versioned statistics SVGs only.
  * No HTML, attributes, arbitrary URLs, links or Markdown evaluation.
  */
-export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string};
+export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string};
 export function questionBlocks(text:string):QuestionBlock[]{
  const lines=text.split("\n"),out:QuestionBlock[]=[];let buffer:string[]=[];
  const flush=()=>{if(buffer.length){out.push({kind:"text",text:buffer.join("\n")});buffer=[];}};
@@ -10,6 +10,10 @@ export function questionBlocks(text:string):QuestionBlock[]{
  for(let i=0;i<lines.length;){
   const image=lines[i].trim().match(/^!\[([^\]\n]{0,100})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-math-ch17-v1\/[a-z0-9-]+\.svg)\)$/);
   if(image){flush();out.push({kind:"statistics-image",alt:image[1]||"পরিসংখ্যানের লেখচিত্র",src:image[2]});i++;continue;}
+  // Canonical self-contained geometry assets also render in Chapter, quiz and answers.
+  // Exact origin/version/path only: no arbitrary SVG hosts, queries or HTML.
+  const geometry=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-math-ch(?:[6-9]|10|14|15|16)-v1\/[a-z0-9-]+\.svg)\)$/);
+  if(geometry){flush();out.push({kind:"geometry-image",alt:geometry[1]||"গণিতের চিত্র",src:geometry[2]});i++;continue;}
   if(pipe(lines[i])&&i+2<lines.length&&pipe(lines[i+1])){
    const headers=cells(lines[i]),divider=cells(lines[i+1]);let end=i+2;
    while(end<lines.length&&pipe(lines[end]))end++;
