@@ -1,0 +1,48 @@
+@font-face {
+  font-family: QmPaperKalpurush;
+  src: url("/fonts/Kalpurush.woff2");
+}
+@font-face {
+  font-family: AutoBn;
+  src: url("/fonts/HindSiliguri-Regular.ttf");
+}
+body {
+  margin: 0;
+  background: #f5f8f7;
+  font-family: AutoBn, QmPaperKalpurush, sans-serif;
+  --qk-body: AutoBn;
+  --font-bn: AutoBn;
+  --font-en: Arial;
+}
+button,
+a {
+  cursor: pointer;
+}
+aside button,
+section[data-noprint] button {
+  color: #047857;
+  font-weight: 600;
+}
+.paper-preview-scroll {
+  max-width: 100%;
+}
+@media print {
+  [data-noprint] {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  #paper {
+    margin: 0;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}

@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৫শ অধ্যায়: ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 15 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ABCD একটি আয়তক্ষেত্র। AB-কে B-এর দিকে E পর্যন্ত বাড়ানো হয়েছে, BE=AB; D,E যোগ করলে তা BC-কে F-এ ছেদ করে। △ADE-এর ক্ষেত্রফল কোনটির সমান?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/source-rajshahi-9.svg)",
+      "options": {
+        "A": "আয়তক্ষেত্র ABCD",
+        "B": "চতুর্ভুজ ABFD",
+        "C": "ত্রিভুজ CDF",
+        "D": "ত্রিভুজ BEF"
+      },
+      "correct": "A",
+      "explanation": "$AE=2AB$ এবং AD উভয়ের লম্ব উচ্চতা। $[ADE]=\\frac12(2AB)AD=AB\\cdot AD=[ABCD]$।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 9",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "9"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "△ABC-তে AB ও BC-এর মধ্যবিন্দু যথাক্রমে D ও E হলে △BDE:△ABC ক্ষেত্রফলের অনুপাত কোনটি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/source-dinajpur-26.svg)",
+      "options": {
+        "A": "2:3",
+        "B": "1:2",
+        "C": "1:3",
+        "D": "1:4"
+      },
+      "correct": "D",
+      "explanation": "$BD/BA=BE/BC=1/2$ এবং অন্তর্ভুক্ত B-কোণ সাধারণ; SAS-এ BDE∼BAC। তাই ক্ষেত্রফলের অনুপাত $(1/2)^2=1/4$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 26",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "26"
+        }
+      ]
+    }
+  ]
+}

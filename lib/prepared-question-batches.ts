@@ -1,3 +1,4 @@
+import {sscMathBatches} from "./ssc-math-batches";
 import {class8English2Batches} from "./class8-english2-batches";
 import {english1Batches} from "./class6-english1-batches";
 import {bgsBatches} from "./class6-bgs-batches";
@@ -31,7 +32,8 @@ export function preparedBatches():PreparedBatch[]{
   ...hscIctBatches(),
   ...bgsBatches(),
   ...english1Batches(),
-  ...class8English2Batches()
+  ...class8English2Batches(),
+  ...sscMathBatches()
  ];
 }
 function validatePreparedBatch(b:PreparedBatch){

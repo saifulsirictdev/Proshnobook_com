@@ -1,0 +1,136 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৪র্থ অধ্যায়: সূচক ও লগারিদম",
+  "book": "বোর্ড-আরোপিত গণিত প্রশ্নসংকলন — সূচক ও লগারিদম",
+  "edition": "Chapter 4 target v1; DRAFT; স্বাধীন শিক্ষক অনুমোদন বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$144$ এর $2\\sqrt3$ ভিত্তিক log কত?",
+      "options": {
+        "A": "$\\sqrt3$",
+        "B": "$2$",
+        "C": "$2\\sqrt3$",
+        "D": "$4$"
+      },
+      "correct": "D",
+      "explanation": "$(2\\sqrt3)^2=12$ এবং $(2\\sqrt3)^4=144$। ভিত্তি ধনাত্মক ও ১ নয়; তাই $\\log_{2\\sqrt3}144=4$।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 4",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "4"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$0.0305$ এর সাধারণ লগের পূর্ণক কত?",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$\\overline2$",
+        "D": "$\\overline3$"
+      },
+      "correct": "C",
+      "explanation": "$0.0305=3.05\\times10^{-2}$। যেহেতু $1<3.05<10$, সাধারণ লগ $=-2+\\log_{10}3.05$ এবং অংশক ০ ও ১-এর মধ্যে। তাই পূর্ণক $-2$, প্রচলিত চিহ্নে $\\overline2$।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 22",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "22"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\log625-2\\log5=$ কত? (log সাধারণ লগ।)",
+      "options": {
+        "A": "$\\log600$",
+        "B": "$\\log125$",
+        "C": "$\\log25$",
+        "D": "$\\log5$"
+      },
+      "correct": "C",
+      "explanation": "সব argument ধনাত্মক। $\\log625-2\\log5=\\log(625/5^2)=\\log25$। বিয়োগকে $\\log(625-25)$ করা যাবে না।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 23",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "23"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "যদি $\\log_x16=2$ তবে x এর মান কত?",
+      "options": {
+        "A": "$2$",
+        "B": "$\\pm4$",
+        "C": "$4$",
+        "D": "$16$"
+      },
+      "correct": "C",
+      "explanation": "লগের শর্ত $x>0$, $x\\ne1$। সংজ্ঞায় $x^2=16$, তাই সম্ভাব্য বীজগাণিতিক মান $\\pm4$ হলেও ঋণাত্মক ভিত্তি বাদ যাবে। বৈধ মান $x=4$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 6",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "6"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$0.00000538$ এর সাধারণ লগের পূর্ণক কত?",
+      "options": {
+        "A": "$\\overline6$",
+        "B": "$\\overline5$",
+        "C": "$5$",
+        "D": "$6$"
+      },
+      "correct": "A",
+      "explanation": "$0.00000538=5.38\\times10^{-6}$ এবং $1<5.38<10$। তাই $\\log_{10}(0.00000538)=-6+\\log_{10}5.38$; পূর্ণক $-6$ বা $\\overline6$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "5"
+        }
+      ]
+    }
+  ]
+}

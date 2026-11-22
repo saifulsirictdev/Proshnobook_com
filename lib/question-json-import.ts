@@ -2,9 +2,10 @@ import {createHash} from "node:crypto";
 import {z} from "zod";
 import {NCTB_CLASSES} from "./nctb-data";
 import {normalizeStem} from "./mcq-import";
+import {questionProvenanceListSchema} from "./question-provenance";
 export const JSON_IMPORT_MAX_BYTES=750000;
 const text=z.string().trim().min(1).max(6000);
-const common={text,explanation:text,page:z.string().trim().min(1).max(100),difficulty:z.enum(["EASY","MEDIUM","HARD"])};
+const common={text,explanation:text,page:z.string().trim().min(1).max(100),difficulty:z.enum(["EASY","MEDIUM","HARD"]),provenance:questionProvenanceListSchema.optional()};
 const item=z.discriminatedUnion("type",[
  z.object({...common,type:z.literal("MCQ"),options:z.object({A:text,B:text,C:text,D:text}).strict(),correct:z.enum(["A","B","C","D"])}).strict(),
  z.object({...common,type:z.literal("SQ")}).strict(),
@@ -31,6 +32,6 @@ export function parseQuestionUpload(raw:string,selection:unknown){
   }
  }
  const digest=createHash("sha256").update(JSON.stringify({selection:s,batch:b})).digest("hex");
- const records=b.items.map(q=>({id:"jsonupload_"+createHash("sha256").update(JSON.stringify([s.category,s.subject,s.topic,q.type,normalizeStem(q.text)])).digest("hex"),text:q.text,options:q.type==="MCQ"?q.options:q.type==="SQ"?{}:{stimulus:q.text,subQuestions:Object.fromEntries(q.parts.map((p,i)=>[["k","kh","g","gh"][i],p.question])),marks:Object.fromEntries(q.parts.map((p,i)=>[["k","kh","g","gh"][i],p.marks]))},correct:q.type==="MCQ"?q.correct:"",explanation:q.type==="CQ"?`${q.explanation}\n\n${q.parts.map(p=>`${p.label}) ${p.solution}`).join("\n\n")}`:q.explanation,difficulty:q.difficulty}));
+ const records=b.items.map(q=>({id:"jsonupload_"+createHash("sha256").update(JSON.stringify([s.category,s.subject,s.topic,q.type,normalizeStem(q.text)])).digest("hex"),text:q.text,options:{...(q.type==="MCQ"?q.options:q.type==="SQ"?{}:{stimulus:q.text,subQuestions:Object.fromEntries(q.parts.map((p,i)=>[["k","kh","g","gh"][i],p.question])),marks:Object.fromEntries(q.parts.map((p,i)=>[["k","kh","g","gh"][i],p.marks]))}),...(q.provenance?{_provenance:q.provenance}:{})},correct:q.type==="MCQ"?q.correct:"",explanation:q.type==="CQ"?`${q.explanation}\n\n${q.parts.map(p=>`${p.label}) ${p.solution}`).join("\n\n")}`:q.explanation,difficulty:q.difficulty}));
  return{selection:s,batch:b,digest,records};
 }

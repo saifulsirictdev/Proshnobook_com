@@ -2,6 +2,8 @@ import { formatPaperFractions } from "@/lib/paper-math";
 import { z } from "zod";
 import { paperHeaderSchema, defaultPaperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
+  /** Verified per-question occurrences, independent of topic/category and display toggles. */
+  provenance?: import("./question-provenance").QuestionProvenance[];
   englishGroup?: {
     /** Presentation metadata only; never changes the saved exercise or answer key. */
     referenceModel?: boolean;
@@ -34,6 +36,7 @@ const number = (value: number, min: number, max: number) =>
   z.number().int().min(min).max(max).catch(value).default(value);
 export const settingsSchema = z.object({
   version: z.literal(2).default(2),
+  autoModel: z.enum(["ssc-math-mcq-v1", "ssc-math-written-v1"]).optional().catch(undefined),
   // Opt-in presentation state; absent on legacy drafts and frozen approved stock.
   defaultHeader: defaultPaperHeaderSchema.optional().catch(undefined),
   header: paperHeaderSchema

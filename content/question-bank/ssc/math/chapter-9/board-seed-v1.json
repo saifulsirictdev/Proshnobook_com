@@ -1,0 +1,261 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৯ম অধ্যায়: ত্রিকোণমিতিক অনুপাত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ ত্রিকোণমিতি অনুশীলনী",
+  "edition": "Chapter 9 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$\\tan A=\\frac43$ হলে $\\sqrt{\\frac{1-\\sin^2 A}{\\sin^2 A}}$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-dhaka-9.svg)",
+      "options": {
+        "A": "$\\frac34$",
+        "B": "$\\frac45$",
+        "C": "$\\frac54$",
+        "D": "$\\frac53$"
+      },
+      "correct": "A",
+      "explanation": "$1-\\sin^2 A=\\cos^2 A$। তাই রাশি $=|\\cot A|=\\frac34$। বর্গমূলের ধনাত্মক মান নেওয়া হয়েছে।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 9",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "9"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ এবং $\\sin\\theta=\\frac{\\sqrt3}{2}$ হলে $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-dhaka-11.svg)",
+      "options": {
+        "A": "$\\frac1{\\sqrt3}$",
+        "B": "$\\frac1{\\sqrt2}$",
+        "C": "$\\frac{\\sqrt3}{2}$",
+        "D": "$\\sqrt3$"
+      },
+      "correct": "A",
+      "explanation": "সূক্ষ্মকোণ বলে $\\theta=60^\\circ$। তাই $\\cot\\theta=\\frac1{\\sqrt3}$।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 11",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "11"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\sec A+\\tan A=\\sqrt5$ হলে $\\sin A$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-dhaka-20.svg)",
+      "options": {
+        "A": "$\\sqrt5$",
+        "B": "$\\frac32$",
+        "C": "$\\frac23$",
+        "D": "$\\frac1{\\sqrt5}$"
+      },
+      "correct": "C",
+      "explanation": "$\\sec^2 A-\\tan^2 A=1$ থেকে $\\sec A-\\tan A=1/\\sqrt5$। যোগ-বিয়োগ করে $\\sin A=\\tan A/\\sec A=(5-1)/(5+1)=2/3$।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 20",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "20"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\sin\\theta\\ne0$ হলে $\\frac1{\\sin\\theta}\\sqrt{\\operatorname{cosec}^2\\theta-\\cot^2\\theta}$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-sylhet-1.svg)",
+      "options": {
+        "A": "$\\sin\\theta$",
+        "B": "$\\cot\\theta$",
+        "C": "$\\operatorname{cosec}\\theta$",
+        "D": "$\\tan\\theta$"
+      },
+      "correct": "C",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। বর্গমূল ১, ফলে রাশি $1/\\sin\\theta=\\operatorname{cosec}\\theta$। সংজ্ঞার শর্ত স্পষ্ট করা হয়েছে।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 1",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "1"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "PQR ত্রিভুজে $\\angle P=90^\\circ$, PR=1, RQ=2 এবং $y=\\angle PRQ$। $\\tan y$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-dinajpur-21.svg)",
+      "options": {
+        "A": "$\\sqrt3$",
+        "B": "$\\frac2{\\sqrt3}$",
+        "C": "$\\frac1{\\sqrt3}$",
+        "D": "$\\frac12$"
+      },
+      "correct": "A",
+      "explanation": "PQ$=\\sqrt{2^2-1^2}=\\sqrt3$। y কোণের বিপরীত PQ এবং সন্নিহিত PR; তাই $\\tan y=\\sqrt3$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 21",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "21"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "PQR ত্রিভুজে $\\angle P=90^\\circ$, PR=1, RQ=2; $x=\\angle PQR$, $y=\\angle PRQ$। $\\sin^2x+\\cos^2y$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-dinajpur-22.svg)",
+      "options": {
+        "A": "$\\frac12$",
+        "B": "$1$",
+        "C": "$\\frac94$",
+        "D": "$8$"
+      },
+      "correct": "A",
+      "explanation": "$\\sin x=PR/RQ=1/2$ এবং $\\cos y=PR/RQ=1/2$। তাই বর্গের যোগ $1/4+1/4=1/2$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 22",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "22"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $\\sec\\theta\\sqrt{1-\\cos^2\\theta}$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-jashore-5.svg)",
+      "options": {
+        "A": "$\\tan\\theta$",
+        "B": "$\\cot\\theta$",
+        "C": "$\\sin\\theta$",
+        "D": "$\\cos\\theta$"
+      },
+      "correct": "A",
+      "explanation": "সূক্ষ্মকোণে $\\sin\\theta>0$। তাই বর্গমূল $\\sin\\theta$ এবং রাশি $\\sin\\theta/\\cos\\theta=\\tan\\theta$। সূক্ষ্মকোণ শর্ত ছাড়া বর্গমূলকে সরাসরি sin বলা ঠিক নয়।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "5"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ এবং $\\sin(90^\\circ-\\theta)=\\frac{\\sqrt3}{2}$ হলে $\\theta$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-jashore-25.svg)",
+      "options": {
+        "A": "$90$",
+        "B": "$45$",
+        "C": "$60$",
+        "D": "$30$"
+      },
+      "correct": "D",
+      "explanation": "$\\sin(90^\\circ-\\theta)=\\cos\\theta$। সূক্ষ্মকোণে cos-এর এই মানে $\\theta=30^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 25",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "25"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\cos(90^\\circ-\\theta)=\\frac45$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-mymensingh-14.svg)",
+      "options": {
+        "A": "$\\frac54$",
+        "B": "$\\frac45$",
+        "C": "$\\frac35$",
+        "D": "$\\frac43$"
+      },
+      "correct": "A",
+      "explanation": "$\\cos(90^\\circ-\\theta)=\\sin\\theta=4/5$। তার বিপরীত অনুপাত $\\operatorname{cosec}\\theta=5/4$।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 14",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "14"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ এবং $2\\sin\\theta=1$ হলে $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/source-mymensingh-16.svg)",
+      "options": {
+        "A": "$0$",
+        "B": "$\\frac1{\\sqrt3}$",
+        "C": "$1$",
+        "D": "$\\sqrt3$"
+      },
+      "correct": "D",
+      "explanation": "$\\sin\\theta=1/2$ এবং সূক্ষ্মকোণ বলে $\\theta=30^\\circ$। তাই $\\cot\\theta=\\sqrt3$।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 16",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "16"
+        }
+      ]
+    }
+  ]
+}

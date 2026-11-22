@@ -1,0 +1,115 @@
+{
+  "status": "NUMERICAL_TARGETS_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "teacherApproved": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "sourcePriority": [
+    "reviewed-board-seeds-first",
+    "original-chapter-practice-for-remainder"
+  ],
+  "originalSourcePreference": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "sourceLimitations": [
+    "Only previously visually reviewed board seeds are transcribed; exhaustive board collection was not completed.",
+    "NCTB full chapter/edition was not obtained; no original practice is claimed as a verbatim textbook exercise.",
+    "Third-party index was read only for chapter/topic corroboration; exercise pages returned no usable body. No questions were copied from them.",
+    "User numeric targets are met using disclosed parameter variants, not 760 distinct mathematical concepts. Independent teacher review remains pending.",
+    "Prepared import files/registry and Drive backups are not proof of live database import or approval."
+  ],
+  "alignmentReferences": [
+    {
+      "url": "https://pi-mathematics.blogspot.com/2022/10/ssc9-10-general-math-solution.html",
+      "read": "chapter/topic index only",
+      "purpose": "chapter 1 real/rational/irrational/decimal; chapter 2 sets and domain/range; NOT question attribution"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "category": "Class 9",
+      "subject": "গণিত",
+      "topic": "১ম অধ্যায়: বাস্তব সংখ্যা",
+      "counts": {
+        "MCQ": 200,
+        "CQ": 50,
+        "SQ": 40
+      },
+      "boardCounts": {
+        "MCQ": 9,
+        "CQ": 0,
+        "SQ": 0
+      },
+      "originalPracticeCounts": {
+        "MCQ": 191,
+        "CQ": 50,
+        "SQ": 40
+      },
+      "files": [
+        {
+          "file": "chapter-1/target-v1/mcq-1.json",
+          "bytes": 140793,
+          "sha256": "d4168881a600231305d9f164c996379b9cdcab23874f53555477a653326ba6ff"
+        },
+        {
+          "file": "chapter-1/target-v1/written.json",
+          "bytes": 118371,
+          "sha256": "7195f5036c12d09a243585ff805e183f71146eab18ebfad275079593b73f05b2"
+        }
+      ],
+      "validation": {
+        "file": "chapter-1/target-v1/validation.json",
+        "bytes": 126949,
+        "sha256": "b127d23b44e84731bf261450bf943472101b5f3d4033665322561acb957c7ac4"
+      }
+    },
+    {
+      "chapter": 2,
+      "category": "Class 9",
+      "subject": "গণিত",
+      "topic": "২য় অধ্যায়: সেট ও ফাংশন",
+      "counts": {
+        "MCQ": 300,
+        "CQ": 100,
+        "SQ": 70
+      },
+      "boardCounts": {
+        "MCQ": 2,
+        "CQ": 2,
+        "SQ": 0
+      },
+      "originalPracticeCounts": {
+        "MCQ": 298,
+        "CQ": 98,
+        "SQ": 70
+      },
+      "files": [
+        {
+          "file": "chapter-2/target-v1/mcq-1.json",
+          "bytes": 134866,
+          "sha256": "c1657a88e97dd7f083f627cbbf2d33b57ec7c60ab4a758e582cb1fee7c1c0bb9"
+        },
+        {
+          "file": "chapter-2/target-v1/mcq-2.json",
+          "bytes": 75957,
+          "sha256": "941d83404f3980ab392355c738fa79e5b06793b49751cec3ce8d7d4be2720193"
+        },
+        {
+          "file": "chapter-2/target-v1/written.json",
+          "bytes": 229697,
+          "sha256": "366a102d788c2a71eb4c2a69bea0b38728ec5af54d32fcc4b6d6020db777f3d6"
+        }
+      ],
+      "validation": {
+        "file": "chapter-2/target-v1/validation.json",
+        "bytes": 197859,
+        "sha256": "8536ae647376556bcdae0ba91a546c363e9c08a180e59ab94b87f91fb272560d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১০ম অধ্যায়: দূরত্ব ও উচ্চতা",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ দূরত্ব ও উচ্চতা অনুশীলনী",
+  "edition": "Chapter 10 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "সমতল ভূমিতে সূর্যের উন্নতি কোণ $60^\\circ$ হলে $6\\sqrt3$ মিটার লম্ব একটি উল্লম্ব খুঁটির ছায়ার দৈর্ঘ্য কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-cumilla-2.svg)",
+      "options": {
+        "A": "$9$",
+        "B": "$6$",
+        "C": "$3\\sqrt3$",
+        "D": "$2\\sqrt3$"
+      },
+      "correct": "B",
+      "explanation": "খুঁটির উচ্চতা/ছায়া $=\\tan60^\\circ=\\sqrt3$। তাই ছায়া $=6\\sqrt3/\\sqrt3=6$ মিটার।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গাছের উচ্চতা $2\\sqrt3$ মিটার। সমতল ভূমিতে গাছের গোড়া হতে 6 মিটার দূরের ভূমিসংলগ্ন বিন্দু থেকে শীর্ষের উন্নতি কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-sylhet-10.svg)",
+      "options": {
+        "A": "$15$",
+        "B": "$30$",
+        "C": "$45$",
+        "D": "$60$"
+      },
+      "correct": "B",
+      "explanation": "$\\tan\\theta=2\\sqrt3/6=1/\\sqrt3$। উন্নতি কোণ সূক্ষ্মকোণ, তাই $\\theta=30^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 10",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "10"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "সমতল ভূমিতে সূর্যের উন্নতি কোণ $30^\\circ$ হলে একটি উল্লম্ব দণ্ডের ছায়ার দৈর্ঘ্য তার উচ্চতার কত গুণ?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-dinajpur-24.svg)",
+      "options": {
+        "A": "$\\frac1{\\sqrt3}$",
+        "B": "$\\frac1{\\sqrt2}$",
+        "C": "$\\sqrt2$",
+        "D": "$\\sqrt3$"
+      },
+      "correct": "D",
+      "explanation": "উচ্চতা/ছায়া $=\\tan30^\\circ=1/\\sqrt3$। তাই ছায়া/উচ্চতা $=\\sqrt3$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "24"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "সমতল ভূমিতে 20 মিটার লম্ব মই ভূমির সঙ্গে $30^\\circ$ কোণ করে একটি উল্লম্ব দেয়াল স্পর্শ করে। দেয়ালে স্পর্শবিন্দুর উচ্চতা কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-jashore-24.svg)",
+      "options": {
+        "A": "$10$",
+        "B": "$12$",
+        "C": "$20$",
+        "D": "$40$"
+      },
+      "correct": "A",
+      "explanation": "মই অতিভুজ। উচ্চতা $=20\\sin30^\\circ=20/2=10$ মিটার।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "24"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "12 মিটার দীর্ঘ একটি মই দেয়াল থেকে $6\\sqrt3$ মিটার দূরে সমতল ভূমির সঙ্গে θ কোণ উৎপন্ন করে উল্লম্ব দেয়ালে ঠেকানো আছে। θ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-barishal-8.svg)",
+      "options": {
+        "A": "$30$",
+        "B": "$45$",
+        "C": "$60$",
+        "D": "$90$"
+      },
+      "correct": "A",
+      "explanation": "$\\cos\\theta=6\\sqrt3/12=\\sqrt3/2$। ভূমির সঙ্গে মইয়ের সূক্ষ্মকোণ $30^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 8",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "8"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রে A,C,B একই উল্লম্ব রেখায়, BD অনুভূমিক; $BC=10$ মিটার, $\\angle DCB=60^\\circ$ এবং AC=CD। AB কত মিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch10-v1/source-chattogram-28.svg)",
+      "options": {
+        "A": "$20$",
+        "B": "$10\\sqrt2$",
+        "C": "$30$",
+        "D": "$30\\sqrt2$"
+      },
+      "correct": "C",
+      "explanation": "CDB সমকোণী। $\\cos60^\\circ=BC/CD=10/CD$ থেকে CD=20 মিটার। AC=CD=20, তাই AB=AC+CB=30 মিটার। এখানে ৬০° কোণটি উল্লম্ব CB-এর সঙ্গে, ভূমির সঙ্গে নয়।",
+      "page": "সংকলন: মুদ্রিত 180; PDF 39; প্রশ্ন 28",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "chattogram",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 39,
+          "printedPage": "180",
+          "questionNumber": "28"
+        }
+      ]
+    }
+  ]
+}

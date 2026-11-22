@@ -1,0 +1,114 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "chapters": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "excludedChapter": 17,
+  "countsPerChapter": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70,
+    "total": 270
+  },
+  "countsTotal": {
+    "MCQ": 900,
+    "CQ": 300,
+    "SQ": 420,
+    "total": 1620,
+    "diagrams": 810
+  },
+  "sourceAdaptedMCQ": 12,
+  "originalParameterVariants": 1608,
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "files": [
+    {
+      "file": "docs/question-bank/ssc-math-ch11-questions-v1-backup.json",
+      "driveId": "1d6aDmWvfAzLNTesv5L1f1pBYNGSFz8ch",
+      "url": "https://drive.google.com/file/d/1d6aDmWvfAzLNTesv5L1f1pBYNGSFz8ch/view",
+      "bytes": 402527,
+      "md5": "0d4d31d0bc082848c91abde6abf432be",
+      "sha256": "3014f10e2c1517fde9129e033e5d22e6c4f0c115d17370aa91c47da107d70de3",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch12-questions-v1-backup.json",
+      "driveId": "1and452hamXWhYZj7Qyfrjz_JJH9_Fz98",
+      "url": "https://drive.google.com/file/d/1and452hamXWhYZj7Qyfrjz_JJH9_Fz98/view",
+      "bytes": 447594,
+      "md5": "4a046ee05bf6898d9fd407cf01074d28",
+      "sha256": "f50188505b9368f15b7b0404273f1bd3576a3f8aad3ea89162bae6fb6cd2486e",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch13-questions-v1-backup.json",
+      "driveId": "1nOHcDmC6A4WLYfcNbm8qDzhEnu1LLs0T",
+      "url": "https://drive.google.com/file/d/1nOHcDmC6A4WLYfcNbm8qDzhEnu1LLs0T/view",
+      "bytes": 397729,
+      "md5": "c3f7c206328bfb8045cf5850dfd03808",
+      "sha256": "f0490af0025c0be7e6ec7302b0392734a18d05f416127df81d38f0a9595b5c33",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch14-questions-v1-backup.json",
+      "driveId": "1GoLWg_3qzlkq5aBNQ9CvlOLzI8fu4Ccz",
+      "url": "https://drive.google.com/file/d/1GoLWg_3qzlkq5aBNQ9CvlOLzI8fu4Ccz/view",
+      "bytes": 1076370,
+      "md5": "110e7d21928afa77c0a1adff66f10028",
+      "sha256": "fd739f3f2a4894300382a6a98042958a2490c78046406ebdd9d046bd35e61599",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch15-questions-v1-backup.json",
+      "driveId": "1webYzjRaf7jlJi959VWlC41WTRGCdIFx",
+      "url": "https://drive.google.com/file/d/1webYzjRaf7jlJi959VWlC41WTRGCdIFx/view",
+      "bytes": 1037362,
+      "md5": "3ca019c8e23408bd7580786fc77694f6",
+      "sha256": "7c647476f6c999938d6d024f30978b81231697ed59db6b7b26808a25f6604c5b",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch16-questions-v1-backup.json",
+      "driveId": "11fkwf0yKYmYu8QUV9iRLZL2pdtlkuYLP",
+      "url": "https://drive.google.com/file/d/11fkwf0yKYmYu8QUV9iRLZL2pdtlkuYLP/view",
+      "bytes": 868804,
+      "md5": "a8ee2c3e249f6f84d1197a2e998b0cd7",
+      "sha256": "3935a020bc286f9b20e874a9945e1a8ee923d0a88d5fd98588b55c18cff4bef4",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch11-ch16-complete-v1-backup.zip",
+      "driveId": "1WNDNtZID7DsRoDCH70A88PJLik6YwbnP",
+      "url": "https://drive.google.com/file/d/1WNDNtZID7DsRoDCH70A88PJLik6YwbnP/view",
+      "bytes": 3968664,
+      "md5": "def9661ef947b3a2ff23a86ceb300c83",
+      "sha256": "f13c32cdc438cc6e9041aef5ae99dcdcd62439c9bea49f0e685c2155cacb6f81",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    }
+  ],
+  "verification": {
+    "focusedTests": 43,
+    "broadRegressionTests": 159,
+    "typecheck": "PASS",
+    "recomputedResponseWitnesses": 4824,
+    "diagramHashCoordinateChecks": 810,
+    "offlineDesktopMobileGalleries": 6
+  },
+  "notes": [
+    "Backup JSON is a container, not direct importer input; use importFiles[].payload or original slices in ZIP.",
+    "Extract full ZIP then open INDEX.html for six offline galleries.",
+    "No permission changes, DB import, teacher approval or deployment.",
+    "Not exhaustive board/current-textbook/concept coverage; independent narrative/proof/construction/marks-depth review pending."
+  ]
+}

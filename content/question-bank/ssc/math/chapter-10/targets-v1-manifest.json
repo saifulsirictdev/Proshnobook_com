@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 10,
+  "topic": "১০ম অধ্যায়: দূরত্ব ও উচ্চতা",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 120,
+    "SQ": 50
+  },
+  "illustratedCounts": {
+    "MCQ": 150,
+    "CQ": 120,
+    "SQ": 50
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 156040,
+      "sha256": "6d0fbbf3a5329d477f78cb6ab97c10f8cd48f7898f707262e4d45476a03358a4"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 302860,
+      "sha256": "825a1044c9d174ddc149fab96c35e78a35027f10e6d67dfd49cd529a8c0b6dd7"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 56999,
+      "sha256": "675b2a503f0c11076f295f33b8a8f6d32d6beac8d9b4a03f570ba82af578ff16"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 482154,
+    "sha256": "e1e79ad419889c578129cd03bc04731832d66f0e66bc1ca282ed1d1c3c0362ff"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 7742,
+    "sha256": "4954709bb727b0c3a32acfbfa875fdf6def3d97dbb79eeb2c8cf12790ecf5d58"
+  },
+  "limitations": [
+    "Numeric target 320 met; 6 source-adapted MCQ and 314 original parameter variants, not 320 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

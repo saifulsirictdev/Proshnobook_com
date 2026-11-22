@@ -1,4 +1,5 @@
 "use client";
+import { autoModelSections, autoModelIssues } from "@/lib/auto-model-paper";
 import { loadEnglishPaper } from "@/app/actions/english-paper";
 import {
   PAPER_SECTION_ORDER,
@@ -440,7 +441,7 @@ export default function QbBuilder({
   function sections(setName: string) {
     const base = s.seed + (setName === "খ" ? 7919 : 0);
     const types = PAPER_SECTION_ORDER;
-    const parts = types
+    const parts = autoModelSections(data, s) ?? types
       .flatMap((type) => {
         const selected = shuffled(
           data.filter((q) => questionType(q) === type),
@@ -496,7 +497,7 @@ export default function QbBuilder({
           questions={parts[0].questions}
           type={parts[0].type}
           title={parts[0].title}
-          sections={parts.length > 1 ? parts : undefined}
+          sections={s.autoModel || parts.length > 1 ? parts : undefined}
           setName={setName}
           duplicate={duplicates}
           onQuestionAction={edit ? questionAction : undefined}
@@ -538,6 +539,7 @@ export default function QbBuilder({
     <div className="paper-builder-root">
       {!purchased && !english && <WalletCheckout ids={data.map((q) => q.id)} />}
       <style>{style}</style>
+      {s.autoModel && autoModelIssues(data,s).length>0 && <aside data-noprint role="alert" className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950"><b>সম্পাদিত মডেলের কাঠামো বদলেছে</b><ul>{autoModelIssues(data,s).map(issue=><li key={issue}>{issue}</li>)}</ul><p>এটি এখন কাস্টম খসড়া; পূর্ণ practice model হিসেবে ব্যবহার করার আগে প্রশ্নসংখ্যা মিলিয়ে নিন।</p></aside>}
       {missingCount > 0 && (
         <p
           role="alert"

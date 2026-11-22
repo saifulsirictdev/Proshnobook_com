@@ -1,0 +1,4000 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "targetMet": true,
+  "teacherApproved": false,
+  "targetCounts": {
+    "MCQ": 100,
+    "CQ": 20,
+    "SQ": 30
+  },
+  "counts": {
+    "MCQ": 100,
+    "CQ": 20,
+    "SQ": 30
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "boardCounts": {
+    "MCQ": 5,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 95,
+    "CQ": 20,
+    "SQ": 30
+  },
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "fullChapterTextbookRead": false,
+  "boardSearchExhaustive": false,
+  "originalSourcePreference": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111"
+  },
+  "familyCounts": {
+    "MCQ": {
+      "age": 5,
+      "both-sides": 5,
+      "brackets": 5,
+      "discriminant": 5,
+      "excluded-root": 5,
+      "fraction-linear": 5,
+      "identity-constant": 5,
+      "linear": 5,
+      "no-real-root": 5,
+      "parameter-root": 5,
+      "quadratic-negative": 5,
+      "quadratic-positive": 5,
+      "radical": 5,
+      "rational": 5,
+      "reciprocal-equation": 5,
+      "rectangle-width": 5,
+      "repeated-root": 5,
+      "root-product": 5,
+      "root-sum": 5
+    },
+    "CQ": {
+      "ages": 2,
+      "complete-square": 2,
+      "consecutive": 2,
+      "radical-extraneous": 2,
+      "rational-domain": 2,
+      "rectangle": 2,
+      "tickets": 2,
+      "travel-speed": 2,
+      "two-digit": 2,
+      "work-rate": 2
+    },
+    "SQ": {
+      "cancel-domain": 3,
+      "double-root": 3,
+      "factor-quadratic": 3,
+      "fraction": 3,
+      "irrational-roots": 3,
+      "linear": 3,
+      "no-real": 3,
+      "purchase": 3,
+      "radical": 3,
+      "root-parameter": 3
+    }
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 65632,
+      "sha256": "211c6624b38b024b4817bbb1476decf64d29a81f78d2d1cd35773f2b08a11bd3"
+    },
+    {
+      "file": "target-v1/written.json",
+      "bytes": 56635,
+      "sha256": "51de85c2440a0b911bf4cce913f10f47922c402e74efd3e1e0b1e9b719c9d1df"
+    }
+  ],
+  "limitations": [
+    "Numeric target met: 5 visually read board-compilation MCQ + 145 original parameter variants, not 150 distinct concepts.",
+    "Compilation board/year labels have not been independently authenticated against official original papers. No source CQ/SQ is claimed.",
+    "Independent teacher review pending. Original practice is not board or verbatim NCTB/internet content.",
+    "Board search is not exhaustive; full current-edition NCTB chapter was not obtained/read. Source priority and chapter coverage are not exhaustively fulfilled.",
+    "Source Cumilla Q19 has equivalent incorrect B/D root-set distractors; preserved. Source Jashore Q8 B {empty set} is a singleton, not the empty set C {}.",
+    "Exact real-root, exclusion and rendering checks do not replace independent semantic/teacher review. No database import, approval or deployment."
+  ],
+  "itemReviews": [
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 1,
+      "visualRead": true,
+      "equations": [
+        {
+          "lhs": "sqrt(3*x - 6) + 5",
+          "rhs": "2",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "correct": "A",
+      "adaptation": "বিকল্পের ক্রম ও শর্ত বজায় রেখে Unicode/LaTeX প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceSolutionSets": {
+        "A": [],
+        "B": [
+          "-5"
+        ],
+        "C": [
+          "-3"
+        ],
+        "D": [
+          "5"
+        ]
+      },
+      "questionSha256": "9924b75ac4aeefdaceba1619da97ff31d886b598f932d7844de72c102d0fa201",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 1
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 2,
+      "visualRead": true,
+      "equations": [
+        {
+          "lhs": "4*x - 4",
+          "rhs": "20",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "correct": "B",
+      "adaptation": "বিকল্পের ক্রম ও শর্ত বজায় রেখে Unicode/LaTeX প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceExpressions": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answerExpression": "6",
+      "interpretation": "x is length in metres",
+      "questionSha256": "bf79537af4cfa96bde631495bb114c528c83d3df235287ccadaceb3cec7ef3da",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 2
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 3,
+      "visualRead": true,
+      "equations": [
+        {
+          "lhs": "x**2 - 5*x + 6",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2",
+            "3"
+          ]
+        }
+      ],
+      "correct": "A",
+      "adaptation": "বিকল্পের ক্রম ও শর্ত বজায় রেখে Unicode/LaTeX প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceSolutionSets": {
+        "A": [
+          "2",
+          "3"
+        ],
+        "B": [
+          "-5",
+          "1"
+        ],
+        "C": [
+          "-2",
+          "3"
+        ],
+        "D": [
+          "1",
+          "-5"
+        ]
+      },
+      "choiceSemanticNotes": "Source B and D list the same incorrect root set in opposite order. Preserved without silently repairing the source; correct A remains unique.",
+      "questionSha256": "383289d00c5dd318ec32099fbbdbfa2ac0c7c61f1d9852aa69517ccfb7e504fc",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 3
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 4,
+      "visualRead": true,
+      "equations": [
+        {
+          "lhs": "(x - 2)/(x - 1)",
+          "rhs": "2 - 1/(x - 1)",
+          "excluded": [
+            "1"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "correct": "C",
+      "adaptation": "বিকল্পের ক্রম ও শর্ত বজায় রেখে Unicode/LaTeX প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceSolutionSets": {
+        "A": [
+          "1"
+        ],
+        "B": [
+          "EMPTY_SET_ELEMENT"
+        ],
+        "C": [],
+        "D": [
+          "2"
+        ]
+      },
+      "choiceSemanticNotes": "Preserved source B {∅} versus C {}; do not conflate singleton containing the empty set with the empty set.",
+      "questionSha256": "44c1df3e3cdae395867f8d7d2e3ff7e9b0795b60341bb6f2f605fa8e4ca7b918",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 4
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 5,
+      "visualRead": true,
+      "equations": [
+        {
+          "lhs": "sqrt(2*x - 2) + 4",
+          "rhs": "5",
+          "excluded": [],
+          "expectedRoots": [
+            "3/2"
+          ]
+        }
+      ],
+      "correct": "C",
+      "adaptation": "বিকল্পের ক্রম ও শর্ত বজায় রেখে Unicode/LaTeX প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceSolutionSets": {
+        "A": [
+          "0"
+        ],
+        "B": [
+          "1"
+        ],
+        "C": [
+          "3/2"
+        ],
+        "D": []
+      },
+      "questionSha256": "6f70a7e0d651227322689366ac58babf7b7e3a6aa42ea4f4e1b57d3dcd36da36",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 5
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x + 1",
+          "rhs": "16",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "6",
+        "4"
+      ],
+      "correct": "B",
+      "questionSha256": "37261d1546682fb00b9df68251f1e1037becefde6615ac5d299ad4ef6baec720",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 6
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "both-sides",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "4*x - 3",
+          "rhs": "3*x + 5",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "9",
+        "7"
+      ],
+      "correct": "B",
+      "questionSha256": "177f59488e7125dd1592065251e10781f32a33f148131d00780941b0f226a7b9",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 7
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-linear",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x/5 + 3/5",
+          "rhs": "3/2",
+          "excluded": [],
+          "expectedRoots": [
+            "9/2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "9/2",
+      "choiceExpressions": [
+        "9/2",
+        "11/2",
+        "7/2",
+        "13/2"
+      ],
+      "correct": "A",
+      "questionSha256": "939765c3671d4cfcc851bf8d2eb736ec14946e1af78a69fbd62fa304082ea231",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 8
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "brackets",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x - 3",
+          "rhs": "12",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ],
+      "correct": "D",
+      "questionSha256": "b7b83f391df562338f3b30e70e81da86bc7416142b40865a8a4bad556a414368",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 9
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x + 3)/(x - 3)",
+          "rhs": "3",
+          "excluded": [
+            "3"
+          ],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "8",
+        "6"
+      ],
+      "correct": "D",
+      "questionSha256": "71d6fdebffbf4726f3b46ddb4bea73274f933fe4fe8cf9f813e0f3d62488856c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 10
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "excluded-root",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x**2 - 9)/(x - 3)",
+          "rhs": "6",
+          "excluded": [
+            "3"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "-1",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct": "C",
+      "questionSha256": "6c13414c5f2d7efc4494422ac683f02448f5bf49250ce082251ddedee811dcca",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 11
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "identity-constant",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "6",
+          "rhs": "x",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "5",
+        "8",
+        "6",
+        "7"
+      ],
+      "correct": "C",
+      "questionSha256": "832767fde11fed3c128bb9532869415e91a7cd56cd4e611c5e1fd350cf599879",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 12
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-positive",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2",
+          "rhs": "9",
+          "excluded": [],
+          "expectedRoots": [
+            "-3",
+            "3"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "B",
+      "questionSha256": "31861f6a4cbe3f9e486f233376130c13f58b878fb942529b067c76f7ec6ee0d5",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 13
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-negative",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x + 3)*(x + 5)",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-5",
+            "-3"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "-3",
+      "choiceExpressions": [
+        "-1",
+        "-3",
+        "-2",
+        "-4"
+      ],
+      "correct": "B",
+      "questionSha256": "a9149049bb328149fdb334b148a89f3f1664bcbabe291307970a3c3e4ccde418",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 14
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "repeated-root",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 6*x + 9",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3"
+          ]
+        }
+      ],
+      "query": "count",
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "38802f07dc25a5dddc790151a1be98b511f3a83056370ecded3da91f52913321",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 15
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real-root",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x - 3)**2 + 1",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "1",
+        "-1",
+        "2",
+        "0"
+      ],
+      "correct": "D",
+      "questionSha256": "10f06fbac89acd9d8035b75e7731fce8b0736ce4c6712143b62f1c1263d3f206",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 16
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "discriminant",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 8*x + 15",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3",
+            "5"
+          ]
+        }
+      ],
+      "query": "discriminant",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct": "D",
+      "questionSha256": "39474af14f9c58c22b94d253ca890926b082f5581b07865a98ac5f4555688c36",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 17
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-sum",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 8*x + 15",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3",
+            "5"
+          ]
+        }
+      ],
+      "query": "sum",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "9",
+        "7",
+        "10",
+        "8"
+      ],
+      "correct": "D",
+      "questionSha256": "1d2401db8ce161fb2663c62a2f9002a7f2a216fa528991606d8df4b59d058ef2",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 18
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-product",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 8*x + 15",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3",
+            "5"
+          ]
+        }
+      ],
+      "query": "product",
+      "answerExpression": "15",
+      "choiceExpressions": [
+        "16",
+        "14",
+        "17",
+        "15"
+      ],
+      "correct": "D",
+      "questionSha256": "950c21a3edd4a0214f4f2308358e73b8f13f94afef0bbcc1ad6339848fa42b70",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 19
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-root",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x - 6",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "correct": "B",
+      "questionSha256": "c462641f55720dd6d50cb8eb142ecd7ffd3e580cc8944bd218730abfb3789b27",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 20
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-equation",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x + 1/x",
+          "rhs": "10/3",
+          "excluded": [
+            "0"
+          ],
+          "expectedRoots": [
+            "1/3",
+            "3"
+          ]
+        }
+      ],
+      "query": "min",
+      "answerExpression": "1/3",
+      "choiceExpressions": [
+        "1/3",
+        "4/3",
+        "-2/3",
+        "7/3"
+      ],
+      "correct": "A",
+      "questionSha256": "f196070e06f508697cab1c85bb204c78f30ee81006dce08b94ed43a3ab017689",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 21
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "sqrt(x + 3)",
+          "rhs": "5",
+          "excluded": [],
+          "expectedRoots": [
+            "22"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "22",
+      "choiceExpressions": [
+        "22",
+        "23",
+        "21",
+        "24"
+      ],
+      "correct": "A",
+      "questionSha256": "b108e1c85549971a957525430fbee942a176baabc373dc238432573ab2d55ad3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 22
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-width",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "4*x + 6",
+          "rhs": "26",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correct": "A",
+      "questionSha256": "e01c689687acb90784c9cbfb8f45e7e6d35eb01443e48ff26d4cdd0e80c720ae",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 23
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "age",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x + 3",
+          "rhs": "2*x + 6",
+          "excluded": [],
+          "expectedRoots": [
+            "3"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct": "A",
+      "questionSha256": "8896652418569ab6bc20ef8eb500c184ca94e14ec94e12229c54cb7796df6294",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 24
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "4*x + 2",
+          "rhs": "26",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correct": "A",
+      "questionSha256": "9e0c0e078c196ff61d5c71240d94090a79aa37d128f50dfbb9e104529825607c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 25
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "both-sides",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "5*x - 4",
+          "rhs": "4*x + 6",
+          "excluded": [],
+          "expectedRoots": [
+            "10"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correct": "A",
+      "questionSha256": "57c3909665a29456f7c72a4cee890696516dfec46d35eb5ed060980471d5168b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 26
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-linear",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x/6 + 2/3",
+          "rhs": "3/2",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ],
+      "correct": "D",
+      "questionSha256": "df059c4e58ab95bbd2d793106a8e09650c606d95332e34adc76adec5d82dcf4d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 27
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "brackets",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "4*x - 5",
+          "rhs": "19",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "5",
+        "8",
+        "6",
+        "7"
+      ],
+      "correct": "C",
+      "questionSha256": "ce2a3f6c58627a39e03b4fa5a0680922f2f2392fc76c2ede7bb2419e307dc38f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 28
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x + 4)/(x - 4)",
+          "rhs": "3",
+          "excluded": [
+            "4"
+          ],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "7",
+        "10",
+        "8",
+        "9"
+      ],
+      "correct": "C",
+      "questionSha256": "19710859bcc04588fdde2c834951183705632145657b9db598fa8de9ff20898d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 29
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "excluded-root",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x**2 - 16)/(x - 4)",
+          "rhs": "8",
+          "excluded": [
+            "4"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "1",
+        "-1"
+      ],
+      "correct": "B",
+      "questionSha256": "6527e155dadb2d6dd69217f1a90056e6d0d35eff41cd738f68c3cfdc185fd539",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 30
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "identity-constant",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "8",
+          "rhs": "x",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "9",
+        "7"
+      ],
+      "correct": "B",
+      "questionSha256": "dfd0f737e2f57197176900742fef48504de3b5869ca7bb01ab359d14cb654237",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 31
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-positive",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2",
+          "rhs": "16",
+          "excluded": [],
+          "expectedRoots": [
+            "-4",
+            "4"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correct": "A",
+      "questionSha256": "a7462a189f5cc52484b36fed450ba55257daf658e09258932e6797e4fc2343f4",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 32
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-negative",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x + 4)*(x + 6)",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-6",
+            "-4"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "-4",
+      "choiceExpressions": [
+        "-4",
+        "-3",
+        "-5",
+        "-2"
+      ],
+      "correct": "A",
+      "questionSha256": "3701356d81e5b22ab3d86a5a7860d1a564d7aecd4a569139f5bdbc3308317c2b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 33
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "repeated-root",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 8*x + 16",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4"
+          ]
+        }
+      ],
+      "query": "count",
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "efbcda5f5582496501be50ec4b38396ca52a45308bbe6464e170efc4e32220ba",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 34
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real-root",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x - 4)**2 + 2",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "-1",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct": "C",
+      "questionSha256": "f51b06af286c60231b398f468f9d0377b2cbf8b08953fa9baa8e478d10fffc24",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 35
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "discriminant",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 10*x + 24",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4",
+            "6"
+          ]
+        }
+      ],
+      "query": "discriminant",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "correct": "C",
+      "questionSha256": "74b051bda87a1f966e9ed5c3e3313fa893d6bc22b9ce3d2e9d92b4409233d4ac",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 36
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-sum",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 10*x + 24",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4",
+            "6"
+          ]
+        }
+      ],
+      "query": "sum",
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "9",
+        "12",
+        "10",
+        "11"
+      ],
+      "correct": "C",
+      "questionSha256": "6fa913ad6c661c05f9564aea8c3c779e9e3f1e3ff21d980af689fdedaf1a48a1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 37
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-product",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 10*x + 24",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4",
+            "6"
+          ]
+        }
+      ],
+      "query": "product",
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "23",
+        "26",
+        "24",
+        "25"
+      ],
+      "correct": "C",
+      "questionSha256": "4f487773d6f21bfe96f3dc62277ec2d793c51385f16cd0595553a66477ee05c3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 38
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-root",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "4*x - 8",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "correct": "A",
+      "questionSha256": "61f32e9fa9d953f225999b8bb87deeedde110de3a9f680e9d4813ead473a1b21",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 39
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-equation",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x + 1/x",
+          "rhs": "17/4",
+          "excluded": [
+            "0"
+          ],
+          "expectedRoots": [
+            "1/4",
+            "4"
+          ]
+        }
+      ],
+      "query": "min",
+      "answerExpression": "1/4",
+      "choiceExpressions": [
+        "5/4",
+        "-3/4",
+        "9/4",
+        "1/4"
+      ],
+      "correct": "D",
+      "questionSha256": "5e33d88bf154e747d4278b655cb04a1c640800718af09133e30dde8e85673171",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 40
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "sqrt(x + 4)",
+          "rhs": "6",
+          "excluded": [],
+          "expectedRoots": [
+            "32"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "32",
+      "choiceExpressions": [
+        "33",
+        "31",
+        "34",
+        "32"
+      ],
+      "correct": "D",
+      "questionSha256": "31ede703f4b63c9ce4402aa50bb102d59948cce66c4fbe74302162481f852f0f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 41
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-width",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "4*x + 8",
+          "rhs": "32",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "8",
+        "6"
+      ],
+      "correct": "D",
+      "questionSha256": "97e3e1623e9b7a76b5ae50d089c8abd9033acdb8e5ae4d8f496c5482bc36d95c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 42
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "age",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "3*x + 4",
+          "rhs": "2*x + 8",
+          "excluded": [],
+          "expectedRoots": [
+            "4"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct": "D",
+      "questionSha256": "66166cecec17044fbaf01a4806458fe5e822f7b1636ecba192c15d220123b589",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 43
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "5*x + 3",
+          "rhs": "38",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ],
+      "correct": "D",
+      "questionSha256": "4bc2c5898e8050598c26285b21cccc8ddc0b230eff7443e972a8e371f0ba4277",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 44
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "both-sides",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "6*x - 5",
+          "rhs": "5*x + 7",
+          "excluded": [],
+          "expectedRoots": [
+            "12"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "11",
+        "14",
+        "12"
+      ],
+      "correct": "D",
+      "questionSha256": "020fe0b1bfc29ee28cda6c7b8c22424ff8de72fdfc79f61c55adadaed0100e8f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 45
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-linear",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x/7 + 5/7",
+          "rhs": "3/2",
+          "excluded": [],
+          "expectedRoots": [
+            "11/2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "11/2",
+      "choiceExpressions": [
+        "9/2",
+        "15/2",
+        "11/2",
+        "13/2"
+      ],
+      "correct": "C",
+      "questionSha256": "104ed9c0fedb4027ae99a6d892d91ec8dbf3e9b04db52f75e2e5193eed9e2f01",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 46
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "brackets",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "5*x - 7",
+          "rhs": "28",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "9",
+        "7",
+        "8",
+        "6"
+      ],
+      "correct": "B",
+      "questionSha256": "bab6106a0fbe25937484426bcc7f968b13e8000b3b972fc61d04f1470b5f6408",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 47
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x + 5)/(x - 5)",
+          "rhs": "3",
+          "excluded": [
+            "5"
+          ],
+          "expectedRoots": [
+            "10"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "12",
+        "10",
+        "11",
+        "9"
+      ],
+      "correct": "B",
+      "questionSha256": "d2085b48db8101d856ac4a878778b570c542e018b29842c42160a5969bc34f5c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 48
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "excluded-root",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x**2 - 25)/(x - 5)",
+          "rhs": "10",
+          "excluded": [
+            "5"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "0",
+        "1",
+        "-1",
+        "2"
+      ],
+      "correct": "A",
+      "questionSha256": "910e1372daf7acbcd668720d72738b2ec9e77290f72dc2d84af2f6f7f62da856",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 49
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "identity-constant",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "10",
+          "rhs": "x",
+          "excluded": [],
+          "expectedRoots": [
+            "10"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correct": "A",
+      "questionSha256": "385ba76cd50d9c466a8daae824801a87a2d4ea2935b04325ec838a5940a8450d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 50
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-positive",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2",
+          "rhs": "25",
+          "excluded": [],
+          "expectedRoots": [
+            "-5",
+            "5"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ],
+      "correct": "D",
+      "questionSha256": "7e6ae846ee0af503b7ff344bcc76be4a4768a4cb0da1aa36231d248c159691e7",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 51
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-negative",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x + 5)*(x + 7)",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-7",
+            "-5"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "-5",
+      "choiceExpressions": [
+        "-4",
+        "-6",
+        "-3",
+        "-5"
+      ],
+      "correct": "D",
+      "questionSha256": "b40667e3a099ed45fa190356842040cb2fcf39a46ec4ea9da8f07619cf8631de",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 52
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "repeated-root",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 - 10*x + 25",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "count",
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "4f00fe465142ffe44b0864e4b8848d1954bb167539a3b1ca4e4643ccc8250d2a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 53
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real-root",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x - 5)**2 + 3",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "1",
+        "-1"
+      ],
+      "correct": "B",
+      "questionSha256": "038cef4fc5ae0957becbfb0fb55a26a8e8b050a1e2bc94f3f04be17c251d11e6",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 54
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "discriminant",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 - 12*x + 35",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "5",
+            "7"
+          ]
+        }
+      ],
+      "query": "discriminant",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "5",
+        "3"
+      ],
+      "correct": "B",
+      "questionSha256": "4445929015029447248fe4e346b6e29365f6e466eeb4a6a4c39d1e499d937719",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 55
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-sum",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 - 12*x + 35",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "5",
+            "7"
+          ]
+        }
+      ],
+      "query": "sum",
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "14",
+        "12",
+        "13",
+        "11"
+      ],
+      "correct": "B",
+      "questionSha256": "440c914910d6ccbc1652179ccfa0f628c4d871fbeb5bd29a20a94cf74ad351d1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 56
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-product",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 - 12*x + 35",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "5",
+            "7"
+          ]
+        }
+      ],
+      "query": "product",
+      "answerExpression": "35",
+      "choiceExpressions": [
+        "37",
+        "35",
+        "36",
+        "34"
+      ],
+      "correct": "B",
+      "questionSha256": "01079a36ebece9e4868d66b8b6186392ba8edee9691caceba0d20dd3016e4e60",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 57
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-root",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "5*x - 10",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "correct": "D",
+      "questionSha256": "cfe780168a8ac4b9e39f2e86a6ba966c4b731afccaace407ecc210c73c5acc88",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 58
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-equation",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x + 1/x",
+          "rhs": "26/5",
+          "excluded": [
+            "0"
+          ],
+          "expectedRoots": [
+            "1/5",
+            "5"
+          ]
+        }
+      ],
+      "query": "min",
+      "answerExpression": "1/5",
+      "choiceExpressions": [
+        "-4/5",
+        "11/5",
+        "1/5",
+        "6/5"
+      ],
+      "correct": "C",
+      "questionSha256": "d4f7e9bb32cbc9298e514ea948e80e1ff586f0cb29b7492e18cfa9c2cf3f7178",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 59
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "sqrt(x + 5)",
+          "rhs": "7",
+          "excluded": [],
+          "expectedRoots": [
+            "44"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "44",
+      "choiceExpressions": [
+        "43",
+        "46",
+        "44",
+        "45"
+      ],
+      "correct": "C",
+      "questionSha256": "80ee939e7e30acf5b4765e6ec0d8f57740aee6b0b136f8bc789d59ffa1164806",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 60
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-width",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "4*x + 10",
+          "rhs": "38",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "6",
+        "9",
+        "7",
+        "8"
+      ],
+      "correct": "C",
+      "questionSha256": "80848d315351321460ffbe571d152817b7531209808c7f7c89f74c0d5ec04acb",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 61
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "age",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "3*x + 5",
+          "rhs": "2*x + 10",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "correct": "C",
+      "questionSha256": "451106dde5851651b5750ec287ba05c479697472f5c4b99c43a5dbc2cda34813",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 62
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "6*x + 4",
+          "rhs": "52",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "7",
+        "10",
+        "8",
+        "9"
+      ],
+      "correct": "C",
+      "questionSha256": "04061f536b73f8b7c78874a64ec9dfc59d91ce23354e8b587b1d0bef5a3eebe8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 63
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "both-sides",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "7*x - 6",
+          "rhs": "6*x + 8",
+          "excluded": [],
+          "expectedRoots": [
+            "14"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "13",
+        "16",
+        "14",
+        "15"
+      ],
+      "correct": "C",
+      "questionSha256": "3d3a7c896397cf26062446f176b0fd9c6277f7bbb7b2ed3c72e5ba6cf085ed08",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 64
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-linear",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x/8 + 3/4",
+          "rhs": "3/2",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correct": "B",
+      "questionSha256": "f1c2b2a4fd7737c97501abb29d613c1f701aa984ca19ab935f75e8d911b958b3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 65
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "brackets",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "6*x - 9",
+          "rhs": "39",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correct": "A",
+      "questionSha256": "aec6b116eab1dc566e1047ea92256cf46651d1ae0e9bdd5491a17353c96ec421",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 66
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "(x + 6)/(x - 6)",
+          "rhs": "3",
+          "excluded": [
+            "6"
+          ],
+          "expectedRoots": [
+            "12"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ],
+      "correct": "A",
+      "questionSha256": "de4e4a81870cb3386adc328d72bc8e1209f9fafb1af10477c30421de9654529d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 67
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "excluded-root",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "(x**2 - 36)/(x - 6)",
+          "rhs": "12",
+          "excluded": [
+            "6"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "1",
+        "-1",
+        "2",
+        "0"
+      ],
+      "correct": "D",
+      "questionSha256": "1b57c0ac4cae4e283b9201d94cf427fc402e12ba28433eae7531e26ea81a50d1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 68
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "identity-constant",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "12",
+          "rhs": "x",
+          "excluded": [],
+          "expectedRoots": [
+            "12"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "11",
+        "14",
+        "12"
+      ],
+      "correct": "D",
+      "questionSha256": "b177a24efb93edda7fd4f5874924a708911f317aded9b14ab3e5745715016750",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 69
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-positive",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x**2",
+          "rhs": "36",
+          "excluded": [],
+          "expectedRoots": [
+            "-6",
+            "6"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "5",
+        "8",
+        "6",
+        "7"
+      ],
+      "correct": "C",
+      "questionSha256": "ff7c40f0ff87dd426038636580d97fea31d5b705317449234bfee95da0ce18ee",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 70
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-negative",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "(x + 6)*(x + 8)",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-8",
+            "-6"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "-6",
+      "choiceExpressions": [
+        "-7",
+        "-4",
+        "-6",
+        "-5"
+      ],
+      "correct": "C",
+      "questionSha256": "efff20edf694f3acc8e9c110e2dd64072ee8b8aa15b641ef9dbf2275c9ab4bbb",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 71
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "repeated-root",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x**2 - 12*x + 36",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "count",
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "correct": "D",
+      "questionSha256": "1539cef3915792fe079fb7cf62bd0989cbc299e562d2cd05a1464aeae6834299",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 72
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real-root",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "(x - 6)**2 + 4",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "0",
+        "1",
+        "-1",
+        "2"
+      ],
+      "correct": "A",
+      "questionSha256": "17b253acd5011000fb8fb94f0dd9fee6f442f7d786f0c04ce87b2c0d2416ceeb",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 73
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "discriminant",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x**2 - 14*x + 48",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "query": "discriminant",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correct": "A",
+      "questionSha256": "ee77d7d2a7b3430bbaa1513e14084152b98feaf89f687a42018efccf03e4c636",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 74
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-sum",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x**2 - 14*x + 48",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "query": "sum",
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "14",
+        "15",
+        "13",
+        "16"
+      ],
+      "correct": "A",
+      "questionSha256": "076c2240353d41190419d37a63b283f29af38d6d04e8639c26b55a9142711ded",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 75
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-product",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x**2 - 14*x + 48",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "query": "product",
+      "answerExpression": "48",
+      "choiceExpressions": [
+        "48",
+        "49",
+        "47",
+        "50"
+      ],
+      "correct": "A",
+      "questionSha256": "899bf75e485e68fecac3a78e55e91f87c7fb60fff4ecf2fac938e8deb7efed0b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 76
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-root",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "6*x - 12",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "1",
+        "4",
+        "2",
+        "3"
+      ],
+      "correct": "C",
+      "questionSha256": "a0397f132c03d06b83039fe0bd061d6b14554603975d6772aca1397a433f8b64",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 77
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-equation",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "x + 1/x",
+          "rhs": "37/6",
+          "excluded": [
+            "0"
+          ],
+          "expectedRoots": [
+            "1/6",
+            "6"
+          ]
+        }
+      ],
+      "query": "min",
+      "answerExpression": "1/6",
+      "choiceExpressions": [
+        "13/6",
+        "1/6",
+        "7/6",
+        "-5/6"
+      ],
+      "correct": "B",
+      "questionSha256": "1e8d680a9c6acd8d3591b518bea874bbee53fc338d369f78dc24c094fca4b753",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 78
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "sqrt(x + 6)",
+          "rhs": "8",
+          "excluded": [],
+          "expectedRoots": [
+            "58"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "58",
+      "choiceExpressions": [
+        "60",
+        "58",
+        "59",
+        "57"
+      ],
+      "correct": "B",
+      "questionSha256": "e1bbd70942fe765552539a2929a9e52f7d22babb3c50ccaa86162bd4f3ce0a98",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 79
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-width",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "4*x + 12",
+          "rhs": "44",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "9",
+        "7"
+      ],
+      "correct": "B",
+      "questionSha256": "75bf13ffdcde33034bd1f3d9fc83323d63e81658df395aa2edf5669eaa0b54b0",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 80
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "age",
+      "variant": 4,
+      "equations": [
+        {
+          "lhs": "3*x + 6",
+          "rhs": "2*x + 12",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correct": "B",
+      "questionSha256": "eb08ba02cb9c4869ec39c96c3e359c55f5a2874de7176cf5a337dfeca161845f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 81
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "7*x + 5",
+          "rhs": "68",
+          "excluded": [],
+          "expectedRoots": [
+            "9"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "11",
+        "9",
+        "10",
+        "8"
+      ],
+      "correct": "B",
+      "questionSha256": "918ac17b40d527d2a85601a868da199f0bcc1fea308864a28a6616f0f0e2f563",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 82
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "both-sides",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "8*x - 7",
+          "rhs": "7*x + 9",
+          "excluded": [],
+          "expectedRoots": [
+            "16"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "18",
+        "16",
+        "17",
+        "15"
+      ],
+      "correct": "B",
+      "questionSha256": "b55dee92669795b3ffd0431675988d76b67d688a9ddbda720b90cd5f551ca4ce",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 83
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-linear",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x/9 + 7/9",
+          "rhs": "3/2",
+          "excluded": [],
+          "expectedRoots": [
+            "13/2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "13/2",
+      "choiceExpressions": [
+        "13/2",
+        "15/2",
+        "11/2",
+        "17/2"
+      ],
+      "correct": "A",
+      "questionSha256": "db301824563410d2bd39c171519683f79948be02b97fcc48889e3e9ff8b7ce81",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 84
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "brackets",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "7*x - 11",
+          "rhs": "52",
+          "excluded": [],
+          "expectedRoots": [
+            "9"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "11",
+        "9"
+      ],
+      "correct": "D",
+      "questionSha256": "df71e056467aa6352b85de23f1d6695e637a3572ff91ab062027a7991a35b3d2",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 85
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "(x + 7)/(x - 7)",
+          "rhs": "3",
+          "excluded": [
+            "7"
+          ],
+          "expectedRoots": [
+            "14"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "15",
+        "13",
+        "16",
+        "14"
+      ],
+      "correct": "D",
+      "questionSha256": "cbcfbe80d275d980a7a238904bb16770b92a6167a4d51b8b723b3b7ff6ab144d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 86
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "excluded-root",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "(x**2 - 49)/(x - 7)",
+          "rhs": "14",
+          "excluded": [
+            "7"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "-1",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct": "C",
+      "questionSha256": "0d2362846650d76fe11cafe4c950ce41f83a2b77d91ef445828f85951e69dbc6",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 87
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "identity-constant",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "14",
+          "rhs": "x",
+          "excluded": [],
+          "expectedRoots": [
+            "14"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "13",
+        "16",
+        "14",
+        "15"
+      ],
+      "correct": "C",
+      "questionSha256": "fe389fe6ea81cdd752a0247269daab7c1eafde7ee75fe972ed12dd7fbb56eb9c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 88
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-positive",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x**2",
+          "rhs": "49",
+          "excluded": [],
+          "expectedRoots": [
+            "-7",
+            "7"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "9",
+        "7",
+        "8",
+        "6"
+      ],
+      "correct": "B",
+      "questionSha256": "ed1ec22d29849b5f7cfd3f24539d3aed67695af24b6a02221c35cd9f9fa9d0ff",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 89
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-negative",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "(x + 7)*(x + 9)",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-9",
+            "-7"
+          ]
+        }
+      ],
+      "query": "max",
+      "answerExpression": "-7",
+      "choiceExpressions": [
+        "-5",
+        "-7",
+        "-6",
+        "-8"
+      ],
+      "correct": "B",
+      "questionSha256": "768d785e73f91a027360fda9d6df82a1d3401cfcadc5d96e85a660aa7bacfe10",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 90
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "repeated-root",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x**2 - 14*x + 49",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "query": "count",
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "f9c0d17b47aee2ddabae98dffa33a2f0210c4fdcba4ffbda9fad01803b189832",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 91
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real-root",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "(x - 7)**2 + 5",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "query": "count",
+      "answerExpression": "0",
+      "choiceExpressions": [
+        "1",
+        "-1",
+        "2",
+        "0"
+      ],
+      "correct": "D",
+      "questionSha256": "09b9776da649ef6532097ab7e6cffe0c5d0988e3119113a1cc0adcc94c5ff68e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 92
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "discriminant",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x**2 - 16*x + 63",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "7",
+            "9"
+          ]
+        }
+      ],
+      "query": "discriminant",
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct": "D",
+      "questionSha256": "b52a5a47c9744dbf00fa80d074c69adf65ffb9bd0732499b5c1440cf35b24947",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 93
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-sum",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x**2 - 16*x + 63",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "7",
+            "9"
+          ]
+        }
+      ],
+      "query": "sum",
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "17",
+        "15",
+        "18",
+        "16"
+      ],
+      "correct": "D",
+      "questionSha256": "a223be8813ff5fb5ae0e9b057d83b44a4a03f814ab6a12d234e2ecd7f3d57582",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 94
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-product",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x**2 - 16*x + 63",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "7",
+            "9"
+          ]
+        }
+      ],
+      "query": "product",
+      "answerExpression": "63",
+      "choiceExpressions": [
+        "64",
+        "62",
+        "65",
+        "63"
+      ],
+      "correct": "D",
+      "questionSha256": "79171f08c03a7096fc81f2384f7963d1420a1dab04c92d07d824260595da78e9",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 95
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-root",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "7*x - 14",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "2"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "correct": "B",
+      "questionSha256": "0f33ae0d45b9bb9107cf0cba9ee3c7748d2566d5f3d98bafd752ac50f26a81da",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 96
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-equation",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "x + 1/x",
+          "rhs": "50/7",
+          "excluded": [
+            "0"
+          ],
+          "expectedRoots": [
+            "1/7",
+            "7"
+          ]
+        }
+      ],
+      "query": "min",
+      "answerExpression": "1/7",
+      "choiceExpressions": [
+        "1/7",
+        "8/7",
+        "-6/7",
+        "15/7"
+      ],
+      "correct": "A",
+      "questionSha256": "8c3b552e0db65ae630cdb6b151ad6fc8e82aa10b28e300545ab0823c9e74fad0",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 97
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "sqrt(x + 7)",
+          "rhs": "9",
+          "excluded": [],
+          "expectedRoots": [
+            "74"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "74",
+      "choiceExpressions": [
+        "74",
+        "75",
+        "73",
+        "76"
+      ],
+      "correct": "A",
+      "questionSha256": "fffca0add232fe68aef433420ffc52f607d7b3668c8ba54ee75ea2d5ec44f869",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 98
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-width",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "4*x + 14",
+          "rhs": "50",
+          "excluded": [],
+          "expectedRoots": [
+            "9"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9",
+        "10",
+        "8",
+        "11"
+      ],
+      "correct": "A",
+      "questionSha256": "11d91f28b66dd334e2980fdf8a4c14c6e10e79ca6e43fa2c6a02fda9b1c03187",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 99
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "age",
+      "variant": 5,
+      "equations": [
+        {
+          "lhs": "3*x + 7",
+          "rhs": "2*x + 14",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "query": "only",
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ],
+      "correct": "A",
+      "questionSha256": "aed286c637300858a64ba755d54f4bea32a1b03be2a69df5ea8e3ef050854713",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 100
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x*(x + 3)",
+          "rhs": "28",
+          "excluded": [],
+          "expectedRoots": [
+            "-7",
+            "4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "physical width x>0; reject negative algebraic root"
+      ],
+      "questionSha256": "d89fb31a804d5dd6820db99b57c0c5fab78baabcb3e544189e254cb6c0138924",
+      "file": "target-v1/written.json",
+      "itemInFile": 1
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x + 8",
+          "rhs": "2*x + 16",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "ages positive; son age two years ago s-2>0"
+      ],
+      "questionSha256": "9bcb9e0531ca5db31056756077e5ae0397d4d8c1bed98e5eec58395d5fc67ccd",
+      "file": "target-v1/written.json",
+      "itemInFile": 2
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "consecutive",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x*(x + 1)",
+          "rhs": "30",
+          "excluded": [],
+          "expectedRoots": [
+            "-6",
+            "5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x is positive integer"
+      ],
+      "questionSha256": "351a1097800fa33a73668c50e3d87962988eeba58fd5f598f13b30e0337066a8",
+      "file": "target-v1/written.json",
+      "itemInFile": 3
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rate",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "1/(x + 3) + 1/x",
+          "rhs": "11/28",
+          "excluded": [
+            "0",
+            "-3"
+          ],
+          "expectedRoots": [
+            "-21/11",
+            "4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "physical time x>0; algebraic negative root rejected; no leakage"
+      ],
+      "questionSha256": "f38a266e0e0ee57bddcb8cacb30894f0d067232eabd5a8b896950a6e7a381589",
+      "file": "target-v1/written.json",
+      "itemInFile": 4
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "travel-speed",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "-18/(x + 3) + 18/x",
+          "rhs": "1",
+          "excluded": [
+            "0",
+            "-3"
+          ],
+          "expectedRoots": [
+            "-9",
+            "6"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "speed x>0; reject negative speed"
+      ],
+      "questionSha256": "d2c19a2024a979ac0824b1e0c7b18094ca21b2e3c69005287d4dd92a97fd4ad5",
+      "file": "target-v1/written.json",
+      "itemInFile": 5
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "two-digit",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "72 - 18*x",
+          "rhs": "18",
+          "excluded": [],
+          "expectedRoots": [
+            "3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "integer tens digit 1..9, units digit 0..9; reversed number also two-digit"
+      ],
+      "questionSha256": "4eaf29829dbd20f3a6b0a498863faeb6001df6406e9ccbc9c8449707e458f862",
+      "file": "target-v1/written.json",
+      "itemInFile": 6
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "tickets",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "20*x + 360",
+          "rhs": "440",
+          "excluded": [],
+          "expectedRoots": [
+            "4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "ticket counts integer in [0,T]"
+      ],
+      "questionSha256": "51a2d3b1f2911f49a712a59385e3df90e7904adce1647f2248bf7541736fa37a",
+      "file": "target-v1/written.json",
+      "itemInFile": 7
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical-extraneous",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "sqrt(x)",
+          "rhs": "x - 2",
+          "excluded": [],
+          "expectedRoots": [
+            "4"
+          ]
+        },
+        {
+          "lhs": "x",
+          "rhs": "(x - 2)**2",
+          "excluded": [],
+          "expectedRoots": [
+            "1",
+            "4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "radicand >=0 and right side >=0; squaring is not reversible without sign check"
+      ],
+      "questionSha256": "2f119a1ddb02e0428fc17bdc0c76a026b1e73802f1302efbeb34d5f06ee9ce8d",
+      "file": "target-v1/written.json",
+      "itemInFile": 8
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-domain",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x**2 - 9)/(x - 3)",
+          "rhs": "8",
+          "excluded": [
+            "3"
+          ],
+          "expectedRoots": [
+            "5"
+          ]
+        },
+        {
+          "lhs": "(x**2 - 9)/(x - 3)",
+          "rhs": "6",
+          "excluded": [
+            "3"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "denominator x-a !=0 retained after cancellation"
+      ],
+      "questionSha256": "9fb77b5c7c9c656810d7fc1a4b5904b9fe1f0107ac0408ee8ca23489c68f1c7a",
+      "file": "target-v1/written.json",
+      "itemInFile": 9
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "complete-square",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 6*x + 7",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3 - sqrt(2)",
+            "sqrt(2) + 3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "both real roots retained; a>sqrt(2) ensures positivity"
+      ],
+      "questionSha256": "992ceb3370cb4e40da00dc8d5627a7ea811e4374e7bad7d7726bee4ee78497b3",
+      "file": "target-v1/written.json",
+      "itemInFile": 10
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x*(x + 4)",
+          "rhs": "45",
+          "excluded": [],
+          "expectedRoots": [
+            "-9",
+            "5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "physical width x>0; reject negative algebraic root"
+      ],
+      "questionSha256": "a70ed0f6d6846e21b2a6654bfe75bea34c24974d34069bf0742a1d69a34e42ae",
+      "file": "target-v1/written.json",
+      "itemInFile": 11
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "3*x + 9",
+          "rhs": "2*x + 18",
+          "excluded": [],
+          "expectedRoots": [
+            "9"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "ages positive; son age two years ago s-2>0"
+      ],
+      "questionSha256": "43f280baa0807b6edddf9fb8d85355cd0654899cdf7830202f4ed1b401e1da0e",
+      "file": "target-v1/written.json",
+      "itemInFile": 12
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "consecutive",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x*(x + 1)",
+          "rhs": "42",
+          "excluded": [],
+          "expectedRoots": [
+            "-7",
+            "6"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x is positive integer"
+      ],
+      "questionSha256": "8bfe8ff41562230ced9ca23d141de5eacd35ab7fc1ab82077116ddd5782c7a5e",
+      "file": "target-v1/written.json",
+      "itemInFile": 13
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rate",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "1/(x + 4) + 1/x",
+          "rhs": "14/45",
+          "excluded": [
+            "0",
+            "-4"
+          ],
+          "expectedRoots": [
+            "-18/7",
+            "5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "physical time x>0; algebraic negative root rejected; no leakage"
+      ],
+      "questionSha256": "5e8d933f61ca978f81e276dc86b03bfcf2e45c86139f6d3da187216575fa116e",
+      "file": "target-v1/written.json",
+      "itemInFile": 14
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "travel-speed",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "-24/(x + 4) + 24/x",
+          "rhs": "1",
+          "excluded": [
+            "0",
+            "-4"
+          ],
+          "expectedRoots": [
+            "-12",
+            "8"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "speed x>0; reject negative speed"
+      ],
+      "questionSha256": "6e5dbae0d545046e2cc0b68fe1ef82db5471e36349c075dd156cdda589e9acfa",
+      "file": "target-v1/written.json",
+      "itemInFile": 15
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "two-digit",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "90 - 18*x",
+          "rhs": "18",
+          "excluded": [],
+          "expectedRoots": [
+            "4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "integer tens digit 1..9, units digit 0..9; reversed number also two-digit"
+      ],
+      "questionSha256": "b0b91e205c84a9e4654dda82d154d1471124d69a17d4a1e4afd22d1aa27065af",
+      "file": "target-v1/written.json",
+      "itemInFile": 16
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "tickets",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "20*x + 420",
+          "rhs": "520",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "ticket counts integer in [0,T]"
+      ],
+      "questionSha256": "05c1a649641d940d7c0f8500ca9118f1a6002fa88fe79a978e3ba7e1c27add48",
+      "file": "target-v1/written.json",
+      "itemInFile": 17
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical-extraneous",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "sqrt(x - 1)",
+          "rhs": "x - 3",
+          "excluded": [],
+          "expectedRoots": [
+            "5"
+          ]
+        },
+        {
+          "lhs": "x - 1",
+          "rhs": "(x - 3)**2",
+          "excluded": [],
+          "expectedRoots": [
+            "2",
+            "5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "radicand >=0 and right side >=0; squaring is not reversible without sign check"
+      ],
+      "questionSha256": "0cbaeb0331bb8eff9ddc5449720a57795ae1e945eb61d5db0166647ee5c05ddf",
+      "file": "target-v1/written.json",
+      "itemInFile": 18
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-domain",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x**2 - 16)/(x - 4)",
+          "rhs": "10",
+          "excluded": [
+            "4"
+          ],
+          "expectedRoots": [
+            "6"
+          ]
+        },
+        {
+          "lhs": "(x**2 - 16)/(x - 4)",
+          "rhs": "8",
+          "excluded": [
+            "4"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "denominator x-a !=0 retained after cancellation"
+      ],
+      "questionSha256": "a86c38ba45a03062337bb494bb5aeab94fe1bc064ea6026dcc21f0e13444487b",
+      "file": "target-v1/written.json",
+      "itemInFile": 19
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "complete-square",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 8*x + 14",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4 - sqrt(2)",
+            "sqrt(2) + 4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "both real roots retained; a>sqrt(2) ensures positivity"
+      ],
+      "questionSha256": "a77503c07ad8c099dad4027544b3408838e426ec510c6756f8508e7fa348ab2e",
+      "file": "target-v1/written.json",
+      "itemInFile": 20
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "3*x - 1",
+          "rhs": "17",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x real"
+      ],
+      "questionSha256": "4582ba61e22e101f6db4f4bd77b434e0f3e5b1ea5167aacd4f638d3607ff5fa1",
+      "file": "target-v1/written.json",
+      "itemInFile": 21
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "2*x/3",
+          "rhs": "12",
+          "excluded": [],
+          "expectedRoots": [
+            "18"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "constant denominator a>0"
+      ],
+      "questionSha256": "248ebe2408a986d7d73177a935fe7489e36ab12ba5b17e27d018e0cca9f628b4",
+      "file": "target-v1/written.json",
+      "itemInFile": 22
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "factor-quadratic",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 - 9*x + 18",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "3",
+            "6"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "all real roots retained"
+      ],
+      "questionSha256": "3a33bb262364260962c3001f4547fe048b9e7adc1db9bb73e67836700efdbd74",
+      "file": "target-v1/written.json",
+      "itemInFile": 23
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "double-root",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 + 6*x + 9",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "distinct root versus multiplicity"
+      ],
+      "questionSha256": "e02020a9fb4ed7bf2696747703d9ad4120c665679ef78bc94d0289604b672d57",
+      "file": "target-v1/written.json",
+      "itemInFile": 24
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "irrational-roots",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x - 3)**2",
+          "rhs": "2",
+          "excluded": [],
+          "expectedRoots": [
+            "3 - sqrt(2)",
+            "sqrt(2) + 3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "principal square root plus both algebraic signs"
+      ],
+      "questionSha256": "17386508dd5417398a21069323c9b5229d509a62a78533a82ced58b832aadd87",
+      "file": "target-v1/written.json",
+      "itemInFile": 25
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "x**2 + 3",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "real number domain only"
+      ],
+      "questionSha256": "3d2f06f034627da11ce63407c34885727b4674cef334378068336dce55275a06",
+      "file": "target-v1/written.json",
+      "itemInFile": 26
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cancel-domain",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "(x**2 - 9)/(x - 3)",
+          "rhs": "6",
+          "excluded": [
+            "3"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "exclude x=a before and after cancellation"
+      ],
+      "questionSha256": "9f8d4e4dd2d61f695b756612b0a310e7c48c966c5e9c1540013529f025a926e8",
+      "file": "target-v1/written.json",
+      "itemInFile": 27
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "sqrt(3*x + 1)",
+          "rhs": "3",
+          "excluded": [],
+          "expectedRoots": [
+            "8/3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "radicand>=0; check original equation after squaring"
+      ],
+      "questionSha256": "bd0faee46e2506f03757f0d87a1ad2cf1e118689645faacac5f969f6ecb3a45d",
+      "file": "target-v1/written.json",
+      "itemInFile": 28
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "20*x + 45",
+          "rhs": "165",
+          "excluded": [],
+          "expectedRoots": [
+            "6"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x nonnegative integer"
+      ],
+      "questionSha256": "a00e59ac9a24df2d9d2445d04db252e7e891973c918542b363207d882b1d5ca3",
+      "file": "target-v1/written.json",
+      "itemInFile": 29
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-parameter",
+      "variant": 1,
+      "equations": [
+        {
+          "lhs": "6*x + 18",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "audit x represents requested coefficient k"
+      ],
+      "questionSha256": "2885c57206a642ab70eb5fab5d6d38e8134cdb6cf05fa7116635be6c6afdd377",
+      "file": "target-v1/written.json",
+      "itemInFile": 30
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "4*x - 2",
+          "rhs": "26",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x real"
+      ],
+      "questionSha256": "1896dfeef57a92f876a45a7cebdd8d9c1cbfed58b75389cb0b346c7426439c93",
+      "file": "target-v1/written.json",
+      "itemInFile": 31
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x/2",
+          "rhs": "14",
+          "excluded": [],
+          "expectedRoots": [
+            "28"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "constant denominator a>0"
+      ],
+      "questionSha256": "21664dee5b13444cbc816b4b076f78e729850ea957368a8f3f4a9d740a078171",
+      "file": "target-v1/written.json",
+      "itemInFile": 32
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "factor-quadratic",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 - 11*x + 28",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "4",
+            "7"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "all real roots retained"
+      ],
+      "questionSha256": "c5780b4eb45e458f8f7c9fc48fcbab1241681a98f9f41885076520f103a40789",
+      "file": "target-v1/written.json",
+      "itemInFile": 33
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "double-root",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 + 8*x + 16",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "distinct root versus multiplicity"
+      ],
+      "questionSha256": "a8287d86cedf882afc84a7742df21524bdf03f45c111e936960130401606594e",
+      "file": "target-v1/written.json",
+      "itemInFile": 34
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "irrational-roots",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x - 4)**2",
+          "rhs": "3",
+          "excluded": [],
+          "expectedRoots": [
+            "4 - sqrt(3)",
+            "sqrt(3) + 4"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "principal square root plus both algebraic signs"
+      ],
+      "questionSha256": "6a2dbc53fb01e67735102a899c2b54d6426ae5b335dc034e656b15d5cf8f2e16",
+      "file": "target-v1/written.json",
+      "itemInFile": 35
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "x**2 + 4",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "real number domain only"
+      ],
+      "questionSha256": "524bdf0d9b92a42268fa7b1ec33fbf43a15780de102682ff43db166e780f712f",
+      "file": "target-v1/written.json",
+      "itemInFile": 36
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cancel-domain",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "(x**2 - 16)/(x - 4)",
+          "rhs": "8",
+          "excluded": [
+            "4"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "exclude x=a before and after cancellation"
+      ],
+      "questionSha256": "c7b21c88b1f025a2ffda7f8e099cedc16dd5c9c0ea48d9f635a8f8ec9aa96ee4",
+      "file": "target-v1/written.json",
+      "itemInFile": 37
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "sqrt(3*x + 2)",
+          "rhs": "4",
+          "excluded": [],
+          "expectedRoots": [
+            "14/3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "radicand>=0; check original equation after squaring"
+      ],
+      "questionSha256": "bda20f560bf8d496d2225ce90f6f3d97f4fb5a626685218edf8552eaa6815d0b",
+      "file": "target-v1/written.json",
+      "itemInFile": 38
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "20*x + 60",
+          "rhs": "200",
+          "excluded": [],
+          "expectedRoots": [
+            "7"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x nonnegative integer"
+      ],
+      "questionSha256": "499c17b484e42f32e6b659cfca078eb50297d3f0f52474e2ed0f0a30aed3dcd3",
+      "file": "target-v1/written.json",
+      "itemInFile": 39
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-parameter",
+      "variant": 2,
+      "equations": [
+        {
+          "lhs": "7*x + 21",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "audit x represents requested coefficient k"
+      ],
+      "questionSha256": "5791965566d78e43a906efe851a9ff64c3dc3e78a32d9ec36a0f74bd577a2af7",
+      "file": "target-v1/written.json",
+      "itemInFile": 40
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "5*x - 3",
+          "rhs": "37",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x real"
+      ],
+      "questionSha256": "17bdf84c61ea0aca17ff3ea1c17a2dfaf9438617ce472307b034ae3c0cb5e551",
+      "file": "target-v1/written.json",
+      "itemInFile": 41
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "2*x/5",
+          "rhs": "16",
+          "excluded": [],
+          "expectedRoots": [
+            "40"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "constant denominator a>0"
+      ],
+      "questionSha256": "e25f109be42866bb4b4306e7cdfdf7f5d9187f3e0619bc1467a18e130ba1d254",
+      "file": "target-v1/written.json",
+      "itemInFile": 42
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "factor-quadratic",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 - 13*x + 40",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "5",
+            "8"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "all real roots retained"
+      ],
+      "questionSha256": "a41123b093c0eb5ddd7605bcec913be6c629d9046faea083be3a7e1200d83d8c",
+      "file": "target-v1/written.json",
+      "itemInFile": 43
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "double-root",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 + 10*x + 25",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-5"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "distinct root versus multiplicity"
+      ],
+      "questionSha256": "45a9be36b4e4ae81629b06be38eaee6f2930286019175f63f10ef130d1b1db88",
+      "file": "target-v1/written.json",
+      "itemInFile": 44
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "irrational-roots",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x - 5)**2",
+          "rhs": "4",
+          "excluded": [],
+          "expectedRoots": [
+            "3",
+            "7"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "principal square root plus both algebraic signs"
+      ],
+      "questionSha256": "72eb1e6eb6e16e2665066ad8ddf0ce6891103bd4b4293de52ffae6539f5affbf",
+      "file": "target-v1/written.json",
+      "itemInFile": 45
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "no-real",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "x**2 + 5",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "real number domain only"
+      ],
+      "questionSha256": "3196268d18cb4686c8fa064246cd3cbdadffc483b851e727595b3261edd97ae2",
+      "file": "target-v1/written.json",
+      "itemInFile": 46
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cancel-domain",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "(x**2 - 25)/(x - 5)",
+          "rhs": "10",
+          "excluded": [
+            "5"
+          ],
+          "expectedRoots": []
+        }
+      ],
+      "domainNotes": [
+        "exclude x=a before and after cancellation"
+      ],
+      "questionSha256": "2a55180fa0338e692e75a7a58ca2d2a24a5b3e37c8a0b3b28dc1060a425f2769",
+      "file": "target-v1/written.json",
+      "itemInFile": 47
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "radical",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "sqrt(3*x + 3)",
+          "rhs": "5",
+          "excluded": [],
+          "expectedRoots": [
+            "22/3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "radicand>=0; check original equation after squaring"
+      ],
+      "questionSha256": "161a8e41416938116c846b931397c6a46550118f234a1a1d9cdff250e160d035",
+      "file": "target-v1/written.json",
+      "itemInFile": 48
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "20*x + 75",
+          "rhs": "235",
+          "excluded": [],
+          "expectedRoots": [
+            "8"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "x nonnegative integer"
+      ],
+      "questionSha256": "04f4a7327327b32e86573cc194beb6f944f73be4df35abef3eddbc3b94d7bb62",
+      "file": "target-v1/written.json",
+      "itemInFile": 49
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-parameter",
+      "variant": 3,
+      "equations": [
+        {
+          "lhs": "8*x + 24",
+          "rhs": "0",
+          "excluded": [],
+          "expectedRoots": [
+            "-3"
+          ]
+        }
+      ],
+      "domainNotes": [
+        "audit x represents requested coefficient k"
+      ],
+      "questionSha256": "33fea438c0a8ac53e8cf8e81c7cd30806b816fa5e570ffcbdcb59d2ffe88c62b",
+      "file": "target-v1/written.json",
+      "itemInFile": 50
+    }
+  ]
+}

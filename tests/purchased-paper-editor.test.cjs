@@ -127,3 +127,11 @@ test("purchased setup uses private receipt, skips bank checkout and does not sav
     /if \(!purchased && !english\)\s*localStorage.setItem\("qb:settings"/,
   );
 });
+test('purchased snapshots retain per-question provenance without turning it into an editable choice',()=>{
+ const provenance=[{kind:'board',board:'dhaka',examYear:2024,sourceFile:'Fixture.pdf',pdfPage:1,questionNumber:'10'}];
+ const items=marketSnapshotItems({settings:{},questions:[{id:'q',text:'Question',correct:'A',options:{A:'one',B:'two',C:'three',D:'four',_provenance:provenance}}]});
+ assert.deepEqual(items[0].provenance,provenance);
+ assert.deepEqual(Object.keys(items[0].options),['A','B','C','D']);
+ const copied=marketSnapshotItems({settings:{},questions:JSON.parse(JSON.stringify(items))});
+ assert.deepEqual(copied[0].provenance,provenance);
+});

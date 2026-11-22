@@ -1,0 +1,236 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১ম অধ্যায়: বাস্তব সংখ্যা",
+  "book": "চ্যান্সেলর SSC বোর্ড প্রশ্ন ও উত্তরমালা — গণিত (বোর্ড-আরোপিত সংকলন)",
+  "edition": "সংকলনে ২০২৪ ও ২০২৩; এই প্রাথমিক ব্যাচে ২০২৪ সালের প্রশ্ন",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$0.\\overline{3}\\times0.\\overline{6}$ এর মান কত?",
+      "options": {
+        "A": "$1$",
+        "B": "$0.\\overline{2}$",
+        "C": "$0.\\overline{18}$",
+        "D": "$0.1\\overline{8}$"
+      },
+      "correct": "B",
+      "explanation": "$0.\\overline{3}=\\frac{1}{3}$ এবং $0.\\overline{6}=\\frac{2}{3}$। তাই গুণফল $\\frac{1}{3}\\times\\frac{2}{3}=\\frac{2}{9}=0.\\overline{2}$। দুই অঙ্ক ১৮ আবৃত্ত হলে মান $\\frac{18}{99}=\\frac{2}{11}$; আর $0.1\\overline{8}=\\frac{17}{90}$—এগুলো গুণফল নয়।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 23",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "23"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "মূলদ–অমূলদ বিচার করে নিচের কোন সংখ্যাটিকে অমূলদ বলা যায়?",
+      "options": {
+        "A": "$0.\\overline{2}$",
+        "B": "$\\sqrt{\\frac{9}{16}}$",
+        "C": "$\\sqrt[3]{\\frac{8}{27}}$",
+        "D": "$\\frac{5}{\\sqrt{3}}$"
+      },
+      "correct": "D",
+      "explanation": "প্রথম তিনটি সংখ্যা যথাক্রমে $\\frac{2}{9}$, $\\frac{3}{4}$ ও $\\frac{2}{3}$—সবই মূলদ। শেষটি $\\frac{5}{\\sqrt{3}}=\\frac{5\\sqrt{3}}{3}$। $\\sqrt{3}$ অমূলদ এবং $\\frac{5}{3}$ অশূন্য মূলদ, তাই শেষ সংখ্যাটি অমূলদ।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 16",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "16"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$a$ ও $b$ দুটি ক্রমিক জোড় সংখ্যা হলে নিচের কোনটি বিজোড় সংখ্যা?",
+      "options": {
+        "A": "$a^2+1$",
+        "B": "$b^2+2$",
+        "C": "$a^2$",
+        "D": "$b^2$"
+      },
+      "correct": "A",
+      "explanation": "জোড় সংখ্যার বর্গ জোড়। তাই $a^2+1$ বিজোড়, কিন্তু $b^2+2$, $a^2$ ও $b^2$ সবই জোড়। ক্রমিক হওয়ার অতিরিক্ত শর্তটি ফলের জন্য প্রয়োজন না হলেও মূল প্রশ্ন অনুযায়ী রাখা হয়েছে।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 2",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$0.53$ এর সাধারণ ভগ্নাংশ কোনটি?",
+      "options": {
+        "A": "$\\frac{53}{90}$",
+        "B": "$\\frac{50}{90}$",
+        "C": "$\\frac{53}{100}$",
+        "D": "$\\frac{24}{45}$"
+      },
+      "correct": "C",
+      "explanation": "মূল প্রশ্নে $0.53$ একটি সসীম দশমিক; ৩-এর উপর আবৃত্তির বিন্দু নেই। দশমিকের পরে দুই অঙ্ক থাকায় $0.53=\\frac{53}{100}$। ৫৩ ও ১০০ সহমৌলিক, তাই এটিই সরলতম আকার।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 2",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\sqrt{\\frac{5}{80}}$ কোন ধরনের সংখ্যা?",
+      "options": {
+        "A": "স্বাভাবিক",
+        "B": "অমূলদ",
+        "C": "মূলদ",
+        "D": "মৌলিক"
+      },
+      "correct": "C",
+      "explanation": "$\\sqrt{\\frac{5}{80}}=\\sqrt{\\frac{1}{16}}=\\frac{1}{4}$। এটি দুই পূর্ণসংখ্যার অনুপাত, তাই মূলদ; এটি স্বাভাবিক বা মৌলিক সংখ্যা নয়।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 18",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "18"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "নিচের কোন সংখ্যাটি অমূলদ?",
+      "options": {
+        "A": "$0.\\overline{53}$",
+        "B": "$0.80$",
+        "C": "$\\sqrt{8}$",
+        "D": "$\\sqrt{9}$"
+      },
+      "correct": "C",
+      "explanation": "$0.\\overline{53}=\\frac{53}{99}$, $0.80=\\frac{4}{5}$ এবং $\\sqrt{9}=3$ মূলদ। কিন্তু $\\sqrt{8}=2\\sqrt{2}$ অমূলদ, কারণ $\\sqrt{2}$ অমূলদ।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 28",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "28"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$0.1\\overline{3}\\div0.\\overline{3}$ এর মান কত?",
+      "options": {
+        "A": "$\\frac{2}{45}$",
+        "B": "$\\frac{2}{5}$",
+        "C": "$\\frac{4}{9}$",
+        "D": "$4$"
+      },
+      "correct": "B",
+      "explanation": "$0.1\\overline{3}=\\frac{13-1}{90}=\\frac{2}{15}$ এবং $0.\\overline{3}=\\frac{1}{3}$। অতএব ভাগফল $\\frac{2}{15}\\div\\frac{1}{3}=\\frac{2}{5}$। প্রথম দশমিকের ১ আবৃত্ত নয়; শুধু শেষের ৩ আবৃত্ত।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 16",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "16"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রদত্ত চারটি সংখ্যার মধ্যে অমূলদ সংখ্যাটি কোনটি?",
+      "options": {
+        "A": "$\\frac{\\sqrt[3]{64}}{\\sqrt{36}}$",
+        "B": "$\\frac{\\sqrt{32}}{\\sqrt{64}}$",
+        "C": "$\\sqrt{\\frac{81}{625}}$",
+        "D": "$\\frac{\\sqrt[3]{8}}{\\sqrt[3]{27}}$"
+      },
+      "correct": "B",
+      "explanation": "প্রথমটি $\\frac{4}{6}=\\frac{2}{3}$, তৃতীয়টি $\\frac{9}{25}$ এবং চতুর্থটি $\\frac{2}{3}$—মূলদ। দ্বিতীয়টি $\\frac{\\sqrt{32}}{\\sqrt{64}}=\\frac{4\\sqrt{2}}{8}=\\frac{\\sqrt{2}}{2}$ অমূলদ। প্রথম ও চতুর্থ বিকল্পের মান সমান হলেও মূল প্রশ্নের চার বিকল্পই অক্ষত রাখা হয়েছে।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 1",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "1"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$1.\\overline{43}$ এর সাধারণ ভগ্নাংশ কোনটি?",
+      "options": {
+        "A": "$\\frac{142}{99}$",
+        "B": "$\\frac{143}{99}$",
+        "C": "$\\frac{142}{100}$",
+        "D": "$\\frac{143}{100}$"
+      },
+      "correct": "A",
+      "explanation": "$x=1.\\overline{43}$ হলে $100x=143.\\overline{43}$। বিয়োগে $99x=142$, তাই $x=\\frac{142}{99}$। এখানে দশমিকের পরে ৪৩—পুরো block আবৃত্ত হয়।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 1",
+      "difficulty": "EASY",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "1"
+        }
+      ]
+    }
+  ]
+}

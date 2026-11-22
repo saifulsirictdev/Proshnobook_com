@@ -1,0 +1,63 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 8,
+  "topic": "৮ম অধ্যায়: বৃত্ত",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 30
+  },
+  "illustratedCounts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 30
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq-1.json",
+      "bytes": 132729,
+      "sha256": "62b7f343d11fe779914cf1562624ccb11ceab2fdf872753f94d6bd5bf9762d11"
+    },
+    {
+      "file": "target-v1/mcq-2.json",
+      "bytes": 129982,
+      "sha256": "9ac4c6c67dc3e1b322239ebf0f1c61c5a19cdc8217c4ed6f7f72efc7042b8065"
+    },
+    {
+      "file": "target-v1/cq-1.json",
+      "bytes": 273841,
+      "sha256": "2ef7fdcb9ab1cf747452c62cdc4c7ae8c5cdaa67d379b2a4b97b2fc8072ed3cd"
+    },
+    {
+      "file": "target-v1/cq-2.json",
+      "bytes": 92299,
+      "sha256": "1bf5968f25712c66f5be0ee577eb5993eedae23cf4a8aed3c54815ca1a59fe55"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 24739,
+      "sha256": "46c21c2228ed5fb8670068fd8ded5df5a5a4f2dfb446ecbbbef6c5f836e10703"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 655108,
+    "sha256": "751b0232d1d205f3d9bf1845a5224bdba1265180693c08232148d5201440f18d"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 14782,
+    "sha256": "a15afc52cae9ab9933e816e8e599b3e3f48daf03ce812a8e7d49825a1e8f0d68"
+  },
+  "limitations": [
+    "Numeric target 530 met; 12 source-adapted MCQ and 518 original parameter variants, not 530 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

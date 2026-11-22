@@ -1,0 +1,2144 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৭ম অধ্যায়: ব্যবহারিক জ্যামিতি",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ জ্যামিতি অনুশীলনী",
+  "edition": "Chapter 7 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বস আঁকতে কটি উপাত্ত প্রয়োজন?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-rajshahi-2.svg)",
+      "options": {
+        "A": "২টি",
+        "B": "৩টি",
+        "C": "৪টি",
+        "D": "৫টি"
+      },
+      "correct": "A",
+      "explanation": "যথাযথ দুটি স্বাধীন উপাত্তে রম্বস নির্দিষ্ট হয়—যেমন দুই কর্ণ। শুধু যেকোনো দুটি সংখ্যা যথেষ্ট নয়; উপাত্তগুলো সঙ্গত হতে হবে।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "2"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক আঁকতে কটি নিরপেক্ষ উপাত্তের প্রয়োজন?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-cumilla-18.svg)",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪",
+        "D": "৫"
+      },
+      "correct": "B",
+      "explanation": "তিনটি উপযুক্ত স্বাধীন উপাত্ত লাগে; যেমন দুটি সন্নিহিত বাহু ও তাদের অন্তর্ভুক্ত কোণ। বিপরীত বাহু সমান হওয়ায় শুধু চার বাহুর দৈর্ঘ্য দিলে সাধারণভাবে কোণ নির্দিষ্ট হয় না।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 18",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "18"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "দুইটি কর্ণের দৈর্ঘ্য দেওয়া থাকলে নিচের কোনটি আঁকা সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/source-mymensingh-10.svg)",
+      "options": {
+        "A": "ট্রাপিজিয়াম",
+        "B": "রম্বস",
+        "C": "আয়ত",
+        "D": "সামান্তরিক"
+      },
+      "correct": "B",
+      "explanation": "রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে। তাই দুটি প্রদত্ত কর্ণকে এভাবে বসিয়ে চার প্রান্ত যোগ করলে রম্বস পাওয়া যায়। সাধারণ আয়ত/সামান্তরিক শুধু এই উপাত্তে নির্দিষ্ট হয় না।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 10",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "10"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=4, CA=5, AB=6 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-1.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$17$",
+        "C": "$15$",
+        "D": "$16$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 4 ও 5 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-1.svg)",
+      "explanation": "শর্ত $|5-4|<x<9$। অর্থাৎ ১-এর চেয়ে বড় ও 9-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 7টি। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$6$",
+        "C": "$9$",
+        "D": "$7$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=4$, $AC=5$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-1.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$20$",
+        "C": "$23$",
+        "D": "$21$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=6$ সেমি, $\\angle B=44^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-1.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $86$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$85$",
+        "B": "$88$",
+        "C": "$86$",
+        "D": "$87$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 15 ও এক লম্ব বাহু 9 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-1.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{15^2-9^2}=12$ সেমি। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$13$",
+        "C": "$11$",
+        "D": "$14$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 6 ও সমান বাহু 6 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-1.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$28$",
+        "C": "$26$",
+        "D": "$29$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "6 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-1.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $3 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2 + 3 \\sqrt{3}$",
+        "B": "$3 \\sqrt{3}$",
+        "C": "$1 + 3 \\sqrt{3}$",
+        "D": "$-1 + 3 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=6 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-1.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$2$",
+        "C": "$5$",
+        "D": "$3$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $44^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-1.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $22$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$24$",
+        "C": "$22$",
+        "D": "$23$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=6 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-1.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$5$",
+        "B": "$8$",
+        "C": "$6$",
+        "D": "$7$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $44^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-1.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$43$",
+        "B": "$46$",
+        "C": "$44$",
+        "D": "$45$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 4 ও 5 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-1.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$18$",
+        "B": "$19$",
+        "C": "$17$",
+        "D": "$20$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 18 ও 24 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-1.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$14$",
+        "C": "$17$",
+        "D": "$15$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 15 ও এক বাহু 9 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-1.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$11$",
+        "C": "$14$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $44^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-1.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $22$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$22$",
+        "C": "$23$",
+        "D": "$21$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "4 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-1.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=4, CA=5, AB=6 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-1.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 4, 5 ও 9 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-1.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$1$",
+        "D": "$-1$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "4 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-1.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$62$",
+        "C": "$60$",
+        "D": "$61$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $44^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-1.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $136$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$138$",
+        "B": "$136$",
+        "C": "$137$",
+        "D": "$135$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 9 ও 12 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-1.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$15$",
+        "C": "$16$",
+        "D": "$14$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=5, CA=6, AB=7 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-2.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$18$",
+        "C": "$19$",
+        "D": "$17$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 5 ও 6 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-2.svg)",
+      "explanation": "শর্ত $|6-5|<x<11$। অর্থাৎ ১-এর চেয়ে বড় ও 11-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 9টি। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$11$",
+        "C": "$9$",
+        "D": "$10$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=5$, $AC=6$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-2.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $31$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$30$",
+        "B": "$33$",
+        "C": "$31$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=7$ সেমি, $\\angle B=48^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-2.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $82$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$84$",
+        "B": "$82$",
+        "C": "$83$",
+        "D": "$81$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 20 ও এক লম্ব বাহু 12 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-2.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{20^2-12^2}=16$ সেমি। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$15$",
+        "C": "$18$",
+        "D": "$16$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 8 ও সমান বাহু 8 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-2.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$47$",
+        "C": "$50$",
+        "D": "$48$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "8 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-2.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $4 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4 \\sqrt{3}$",
+        "B": "$1 + 4 \\sqrt{3}$",
+        "C": "$-1 + 4 \\sqrt{3}$",
+        "D": "$2 + 4 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=8 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-2.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$6$",
+        "C": "$4$",
+        "D": "$5$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $48^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-2.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$24$",
+        "C": "$25$",
+        "D": "$23$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=7 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-2.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$7$",
+        "C": "$8$",
+        "D": "$6$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $48^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-2.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$48$",
+        "C": "$49$",
+        "D": "$47$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 5 ও 6 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-2.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $22$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$23$",
+        "B": "$21$",
+        "C": "$24$",
+        "D": "$22$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 24 ও 32 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-2.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$22$",
+        "C": "$20$",
+        "D": "$21$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 20 ও এক বাহু 12 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-2.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$18$",
+        "C": "$16$",
+        "D": "$17$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $48^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-2.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$25$",
+        "C": "$23$",
+        "D": "$26$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "5 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-2.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$2$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=5, CA=6, AB=7 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-2.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$4$",
+        "D": "$2$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 5, 6 ও 11 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-2.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$1$",
+        "C": "$-1$",
+        "D": "$2$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "5 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-2.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$60$",
+        "C": "$61$",
+        "D": "$59$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $48^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-2.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $132$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$132$",
+        "B": "$133$",
+        "C": "$131$",
+        "D": "$134$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 12 ও 16 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-2.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$21$",
+        "C": "$19$",
+        "D": "$22$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=6, CA=7, AB=8 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-3.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$22$",
+        "C": "$20$",
+        "D": "$23$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 6 ও 7 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-3.svg)",
+      "explanation": "শর্ত $|7-6|<x<13$। অর্থাৎ ১-এর চেয়ে বড় ও 13-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 11টি। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$11$",
+        "C": "$12$",
+        "D": "$10$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=6$, $AC=7$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-3.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $43$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$45$",
+        "B": "$43$",
+        "C": "$44$",
+        "D": "$42$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=8$ সেমি, $\\angle B=52^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-3.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $78$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$78$",
+        "B": "$79$",
+        "C": "$77$",
+        "D": "$80$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 25 ও এক লম্ব বাহু 15 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-3.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{25^2-15^2}=20$ সেমি। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$22$",
+        "C": "$20$",
+        "D": "$21$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 10 ও সমান বাহু 10 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-3.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $75$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$74$",
+        "B": "$77$",
+        "C": "$75$",
+        "D": "$76$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "10 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-3.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $5 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 5 \\sqrt{3}$",
+        "B": "$-1 + 5 \\sqrt{3}$",
+        "C": "$2 + 5 \\sqrt{3}$",
+        "D": "$5 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=10 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-3.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$5$",
+        "C": "$6$",
+        "D": "$4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $52^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-3.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$27$",
+        "C": "$25$",
+        "D": "$28$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=8 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-3.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$9$",
+        "C": "$7$",
+        "D": "$10$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $52^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-3.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$53$",
+        "C": "$51$",
+        "D": "$54$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 6 ও 7 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-3.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$28$",
+        "C": "$26$",
+        "D": "$27$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 30 ও 40 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-3.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$25$",
+        "C": "$26$",
+        "D": "$24$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 25 ও এক বাহু 15 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-3.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$20$",
+        "C": "$21$",
+        "D": "$19$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $52^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-3.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$25$",
+        "C": "$28$",
+        "D": "$26$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "6 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-3.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=6, CA=7, AB=8 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-3.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$4$",
+        "C": "$2$",
+        "D": "$3$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 6, 7 ও 13 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-3.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$-1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "6 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-3.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$61$",
+        "C": "$59$",
+        "D": "$62$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $52^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-3.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$129$",
+        "B": "$127$",
+        "C": "$130$",
+        "D": "$128$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 15 ও 20 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-3.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$24$",
+        "C": "$27$",
+        "D": "$25$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=7, CA=8, AB=9 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-4.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$23$",
+        "C": "$26$",
+        "D": "$24$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 7 ও 8 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-4.svg)",
+      "explanation": "শর্ত $|8-7|<x<15$। অর্থাৎ ১-এর চেয়ে বড় ও 15-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 13টি। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$14$",
+        "C": "$12$",
+        "D": "$15$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=7$, $AC=8$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-4.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $57$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$57$",
+        "B": "$58$",
+        "C": "$56$",
+        "D": "$59$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=9$ সেমি, $\\angle B=56^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-4.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $74$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$75$",
+        "B": "$73$",
+        "C": "$76$",
+        "D": "$74$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 30 ও এক লম্ব বাহু 18 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-4.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{30^2-18^2}=24$ সেমি। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$24$",
+        "C": "$25$",
+        "D": "$23$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 12 ও সমান বাহু 12 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-4.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$110$",
+        "B": "$108$",
+        "C": "$109$",
+        "D": "$107$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "12 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-4.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $6 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-1 + 6 \\sqrt{3}$",
+        "B": "$2 + 6 \\sqrt{3}$",
+        "C": "$6 \\sqrt{3}$",
+        "D": "$1 + 6 \\sqrt{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=12 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-4.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$7$",
+        "C": "$5$",
+        "D": "$8$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $56^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-4.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$27$",
+        "C": "$30$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=9 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-4.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$8$",
+        "C": "$11$",
+        "D": "$9$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $56^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-4.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $56$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$57$",
+        "B": "$55$",
+        "C": "$58$",
+        "D": "$56$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 7 ও 8 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-4.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$30$",
+        "C": "$31$",
+        "D": "$29$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 36 ও 48 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-4.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$30$",
+        "B": "$31$",
+        "C": "$29$",
+        "D": "$32$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 30 ও এক বাহু 18 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-4.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$25$",
+        "C": "$23$",
+        "D": "$26$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $56^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-4.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$30$",
+        "C": "$28$",
+        "D": "$29$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "7 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-4.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$3$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=7, CA=8, AB=9 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-4.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4$",
+        "B": "$2$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 7, 8 ও 15 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-4.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-1$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$1$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "7 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-4.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$61$",
+        "B": "$59$",
+        "C": "$62$",
+        "D": "$60$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $56^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-4.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $124$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$123$",
+        "B": "$126$",
+        "C": "$124$",
+        "D": "$125$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 18 ও 24 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-4.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$32$",
+        "C": "$30$",
+        "D": "$31$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=8, CA=9, AB=10 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-5.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$29$",
+        "C": "$27$",
+        "D": "$28$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 8 ও 9 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-5.svg)",
+      "explanation": "শর্ত $|9-8|<x<17$। অর্থাৎ ১-এর চেয়ে বড় ও 17-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 15টি। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$14$",
+        "C": "$17$",
+        "D": "$15$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=8$, $AC=9$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-5.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $73$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$74$",
+        "B": "$72$",
+        "C": "$75$",
+        "D": "$73$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=10$ সেমি, $\\angle B=60^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-5.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $70$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$69$",
+        "B": "$72$",
+        "C": "$70$",
+        "D": "$71$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 35 ও এক লম্ব বাহু 21 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-5.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{35^2-21^2}=28$ সেমি। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$28$",
+        "B": "$29$",
+        "C": "$27$",
+        "D": "$30$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 14 ও সমান বাহু 14 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-5.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $147$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$147$",
+        "B": "$148$",
+        "C": "$146$",
+        "D": "$149$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "14 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-5.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $7 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2 + 7 \\sqrt{3}$",
+        "B": "$7 \\sqrt{3}$",
+        "C": "$1 + 7 \\sqrt{3}$",
+        "D": "$-1 + 7 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=14 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-5.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$6$",
+        "C": "$9$",
+        "D": "$7$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $60^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-5.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$32$",
+        "C": "$30$",
+        "D": "$31$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=10 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-5.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$12$",
+        "C": "$10$",
+        "D": "$11$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $60^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-5.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$62$",
+        "C": "$60$",
+        "D": "$61$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 8 ও 9 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-5.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$35$",
+        "C": "$33$",
+        "D": "$36$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 42 ও 56 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-5.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $35$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$34$",
+        "C": "$37$",
+        "D": "$35$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 35 ও এক বাহু 21 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-5.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$27$",
+        "C": "$30$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $60^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-5.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$30$",
+        "C": "$31$",
+        "D": "$29$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "8 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-5.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=8, CA=9, AB=10 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-5.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$4$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 8, 9 ও 17 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-5.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$1$",
+        "D": "$-1$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "8 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-5.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$59$",
+        "B": "$62$",
+        "C": "$60$",
+        "D": "$61$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $60^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-5.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $120$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$122$",
+        "B": "$120$",
+        "C": "$121$",
+        "D": "$119$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 21 ও 28 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-5.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $35$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$35$",
+        "C": "$36$",
+        "D": "$34$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=9, CA=10, AB=11 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-6.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$30$",
+        "C": "$31$",
+        "D": "$29$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 9 ও 10 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-6.svg)",
+      "explanation": "শর্ত $|10-9|<x<19$। অর্থাৎ ১-এর চেয়ে বড় ও 19-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 17টি। সঠিক উত্তর $17$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$19$",
+        "C": "$17$",
+        "D": "$18$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=9$, $AC=10$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-6.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $91$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$93$",
+        "C": "$91$",
+        "D": "$92$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=11$ সেমি, $\\angle B=64^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-6.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $66$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$68$",
+        "B": "$66$",
+        "C": "$67$",
+        "D": "$65$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 40 ও এক লম্ব বাহু 24 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-6.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{40^2-24^2}=32$ সেমি। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$31$",
+        "C": "$34$",
+        "D": "$32$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 16 ও সমান বাহু 16 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-6.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $192$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$193$",
+        "B": "$191$",
+        "C": "$194$",
+        "D": "$192$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "16 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-6.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $8 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8 \\sqrt{3}$",
+        "B": "$1 + 8 \\sqrt{3}$",
+        "C": "$-1 + 8 \\sqrt{3}$",
+        "D": "$2 + 8 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=16 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-6.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7$",
+        "B": "$10$",
+        "C": "$8$",
+        "D": "$9$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $64^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-6.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$32$",
+        "C": "$33$",
+        "D": "$31$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=11 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-6.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$11$",
+        "C": "$12$",
+        "D": "$10$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $64^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-6.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$66$",
+        "B": "$64$",
+        "C": "$65$",
+        "D": "$63$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 9 ও 10 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-6.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $38$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$39$",
+        "B": "$37$",
+        "C": "$40$",
+        "D": "$38$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 48 ও 64 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-6.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$39$",
+        "B": "$42$",
+        "C": "$40$",
+        "D": "$41$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 40 ও এক বাহু 24 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-6.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$34$",
+        "C": "$32$",
+        "D": "$33$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $64^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-6.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$33$",
+        "C": "$31$",
+        "D": "$34$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "9 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-6.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$2$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=9, CA=10, AB=11 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-6.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$4$",
+        "D": "$2$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 9, 10 ও 19 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-6.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$1$",
+        "C": "$-1$",
+        "D": "$2$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "9 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-6.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$60$",
+        "C": "$61$",
+        "D": "$59$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $64^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-6.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $116$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$116$",
+        "B": "$117$",
+        "C": "$115$",
+        "D": "$118$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 24 ও 32 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-6.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$41$",
+        "C": "$39$",
+        "D": "$42$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=10, CA=11, AB=12 সেমি দিয়ে নির্মিত ত্রিভুজের পরিসীমা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-perimeter-7.svg)",
+      "explanation": "তিন বাহুর যোগই পরিসীমা। সঠিক উত্তর $33$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-perimeter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$34$",
+        "C": "$32$",
+        "D": "$35$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই বাহু 10 ও 11 সেমি; তৃতীয় বাহু পূর্ণসংখ্যা হলে কয়টি মানে প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-third-side-count-7.svg)",
+      "explanation": "শর্ত $|11-10|<x<21$। অর্থাৎ ১-এর চেয়ে বড় ও 21-এর চেয়ে ছোট পূর্ণসংখ্যা মোট 19টি। সঠিক উত্তর $19$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/third-side-count/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$19$",
+        "C": "$20$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$AB=10$, $AC=11$ সেমি এবং অন্তর্ভুক্ত কোণ $60^\\circ$ দিয়ে ত্রিভুজ নির্মাণ করলে $BC^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sas-side-7.svg)",
+      "explanation": "AC-এর B-দিকের প্রক্ষেপ AC/2; লম্ব নামিয়ে পিথাগোরাসে $BC^2=AB^2+AC^2-AB\\cdot AC$। সঠিক উত্তর $111$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sas-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$113$",
+        "B": "$111$",
+        "C": "$112$",
+        "D": "$110$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$BC=12$ সেমি, $\\angle B=68^\\circ$, $\\angle C=50^\\circ$ দিয়ে নির্মিত ত্রিভুজের $\\angle A$ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-asa-angle-7.svg)",
+      "explanation": "ত্রিভুজের কোণসমষ্টি ১৮০°; প্রদত্ত দুই কোণ বাদ দিই। সঠিক উত্তর $62$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/asa-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$62$",
+        "B": "$63$",
+        "C": "$61$",
+        "D": "$64$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "অতিভুজ 45 ও এক লম্ব বাহু 27 সেমির সমকোণী ত্রিভুজ নির্মাণ করলে অন্য লম্ব বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhs-leg-7.svg)",
+      "explanation": "পিথাগোরাসে অন্য বাহু $=\\sqrt{45^2-27^2}=36$ সেমি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhs-leg/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35$",
+        "B": "$38$",
+        "C": "$36$",
+        "D": "$37$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ভূমি 18 ও সমান বাহু 18 সেমি দিয়ে নির্মিত সমদ্বিবাহু ত্রিভুজে শীর্ষ থেকে ভূমির লম্বের বর্গ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-isos-height-7.svg)",
+      "explanation": "লম্ব ভূমিকে সমান ভাগে ভাগ করে। লম্বের বর্গ = সমান বাহুর বর্গ − অর্ধভূমির বর্গ। সঠিক উত্তর $243$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/isos-height/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$242$",
+        "B": "$245$",
+        "C": "$243$",
+        "D": "$244$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "18 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণ করলে মধ্যমার দৈর্ঘ্য কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-median-7.svg)",
+      "explanation": "মধ্যমা ভূমিকে সমদ্বিখণ্ডিত করে এবং লম্ব হয়। পিথাগোরাসে ফল পাওয়া যায়। সঠিক উত্তর $9 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-median/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 9 \\sqrt{3}$",
+        "B": "$-1 + 9 \\sqrt{3}$",
+        "C": "$2 + 9 \\sqrt{3}$",
+        "D": "$9 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=18 সেমি রেখাংশের লম্বদ্বিখণ্ডক AB-কে M-তে ছেদ করলে AM কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-segment-midpoint-7.svg)",
+      "explanation": "লম্বদ্বিখণ্ডক রেখাংশের মধ্যবিন্দু দিয়ে যায়; তাই অর্ধেক দৈর্ঘ্য। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/segment-midpoint/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$11$",
+        "B": "$9$",
+        "C": "$10$",
+        "D": "$8$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "রুলার-কম্পাসে $68^\\circ$ কোণ সমদ্বিখণ্ডিত করলে প্রতিটি অংশ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-bisector-half-7.svg)",
+      "explanation": "সমদ্বিখণ্ডনে দুটি সমান কোণ হয়; প্রদত্ত কোণের অর্ধেক নিতে হবে। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/bisector-half/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$34$",
+        "B": "$35$",
+        "C": "$33$",
+        "D": "$36$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB-এর লম্বদ্বিখণ্ডকের উপর P অবস্থিত। PA=12 সেমি হলে PB কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-perp-distance-7.svg)",
+      "explanation": "লম্বদ্বিখণ্ডকের প্রত্যেক বিন্দু দুই প্রান্ত থেকে সমদূরবর্তী। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/perp-distance/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$13$",
+        "C": "$11$",
+        "D": "$14$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রেখার বাইরে P দিয়ে সমান্তরাল নির্মাণে অনুরূপ কোণ $68^\\circ$ হলে অনুলিপি করা কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallel-copy-7.svg)",
+      "explanation": "অনুরূপ কোণ সমান করে সমান্তরাল নির্মাণ করা যায়। সঠিক উত্তর $68$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallel-copy/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$68$",
+        "B": "$69$",
+        "C": "$67$",
+        "D": "$70$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 10 ও 11 সেমির সামান্তরিক নির্মাণ করলে পরিসীমা কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-perimeter-7.svg)",
+      "explanation": "বিপরীত বাহু সমান; সন্নিহিত বাহুদ্বয়ের যোগের দ্বিগুণ। সঠিক উত্তর $42$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-perimeter/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$41$",
+        "B": "$44$",
+        "C": "$42$",
+        "D": "$43$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 54 ও 72 সেমি দিয়ে রম্বস নির্মাণ করলে এক বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-side-7.svg)",
+      "explanation": "কর্ণদ্বয় লম্ব সমদ্বিখণ্ডক। অর্ধকর্ণ ৩k ও ৪k থেকে পিথাগোরাসে বাহু ৫k। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$47$",
+        "B": "$45$",
+        "C": "$46$",
+        "D": "$44$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "কর্ণ 45 ও এক বাহু 27 সেমি দিয়ে আয়ত নির্মাণ করলে অপর বাহু কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-other-side-7.svg)",
+      "explanation": "আয়তের কর্ণ ও দুই সন্নিহিত বাহু সমকোণী ত্রিভুজ তৈরি করে। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-other-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$36$",
+        "C": "$37$",
+        "D": "$35$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "রম্বসের একটি কোণ $68^\\circ$। সেই শীর্ষগামী কর্ণ কোণটিকে সমদ্বিখণ্ডিত করলে একটি অংশ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rhombus-half-angle-7.svg)",
+      "explanation": "রম্বসের কর্ণ শীর্ষকোণ সমদ্বিখণ্ডিত করে; তাই অর্ধেক। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rhombus-half-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35$",
+        "B": "$33$",
+        "C": "$36$",
+        "D": "$34$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "10 সেমি বাহুর সমবাহু ত্রিভুজের একটি বাহু AB স্থির। AB-এর নির্দিষ্ট এক পাশে কয়টি শীর্ষবিন্দু পাওয়া যায়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-one-side-7.svg)",
+      "explanation": "দুই প্রান্তে প্রদত্ত বাহুসমান ব্যাসার্ধের বৃত্তচাপ নির্দিষ্ট অর্ধতলে এক বিন্দুতে মেলে। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-one-side/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "BC=10, CA=11, AB=12 সেমি দিয়ে BC স্থির রেখে রেখার দুই পাশ মিলিয়ে A-এর কয়টি অবস্থান হয়?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-sss-mirrors-7.svg)",
+      "explanation": "ত্রিভুজ অসমতা কঠোরভাবে পূরণ হয়। দুই নির্মাণ-বৃত্তের দুটি ছেদবিন্দু BC-এর দুই পাশে প্রতিবিম্ব অবস্থান দেয়। সঠিক উত্তর $2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/sss-mirrors/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$4$",
+        "C": "$2$",
+        "D": "$3$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বাহু 10, 11 ও 21 সেমি হলে কয়টি প্রকৃত ত্রিভুজ নির্মাণ সম্ভব?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-degenerate-7.svg)",
+      "explanation": "দুই বাহুর যোগ তৃতীয়টির সমান; প্রান্তগুলো সমরেখ হয়। প্রকৃত ত্রিভুজ হয় না। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/degenerate/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$-1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "10 সেমি বাহুর সমবাহু ত্রিভুজ নির্মাণে শীর্ষকোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-equilateral-angle-7.svg)",
+      "explanation": "তিন কোণ সমান এবং যোগ ১৮০°। সঠিক উত্তর $60$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/equilateral-angle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$61$",
+        "C": "$59$",
+        "D": "$62$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সামান্তরিক নির্মাণে একটি কোণ $68^\\circ$ দেওয়া। সন্নিহিত কোণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-parallelogram-adjacent-7.svg)",
+      "explanation": "সামান্তরিকের একই বাহুর দুই প্রান্তের কোণ সম্পূরক। সঠিক উত্তর $112$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/parallelogram-adjacent/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$113$",
+        "B": "$111$",
+        "C": "$114$",
+        "D": "$112$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সন্নিহিত বাহু 27 ও 36 সেমির আয়ত নির্মাণ করলে কর্ণ কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch7-v1/mcq-rectangle-diagonal-7.svg)",
+      "explanation": "পিথাগোরাসে কর্ণ = দুই সন্নিহিত বাহুর বর্গের যোগের বর্গমূল। সঠিক উত্তর $45$।",
+      "page": "নিজস্ব অনুশীলনী; Ch7/MCQ/rectangle-diagonal/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$46$",
+        "B": "$44$",
+        "C": "$47$",
+        "D": "$45$"
+      },
+      "correct": "D"
+    }
+  ]
+}

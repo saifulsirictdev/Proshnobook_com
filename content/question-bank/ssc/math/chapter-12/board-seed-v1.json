@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১২শ অধ্যায়: দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 12 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$2x+3y=-4$ ও x=1 হলে y কত?",
+      "options": {
+        "A": "$4$",
+        "B": "$-1$",
+        "C": "$-2$",
+        "D": "$-4$"
+      },
+      "correct": "C",
+      "explanation": "2+3y=−4 থেকে 3y=−6, তাই y=−2। এটি x=1 রেখার সঙ্গে সহসমীকরণ হিসেবেও দেখা যায়।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 8",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "8"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$2a-b=8$ এবং $a-2b=4$ হলে a+b কত?",
+      "options": {
+        "A": "$0$",
+        "B": "$4$",
+        "C": "$8$",
+        "D": "$12$"
+      },
+      "correct": "B",
+      "explanation": "দ্বিতীয় সমীকরণের দ্বিগুণ প্রথমটি থেকে বাদ দিলে 3b=0; b=0, a=4; a+b=4।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 4",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "4"
+        }
+      ]
+    }
+  ]
+}

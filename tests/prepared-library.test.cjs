@@ -2,7 +2,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports;}
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),written=load('lib/written-question-import.ts',{'./mcq-import':mcq});
-const upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq});
+const upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
 const remainingMocks={'./question-json-import':upload};
 for(let n=3;n<=8;n++){for(const file of ['questions','validation'])remainingMocks[`@/content/question-bank/class-6/chapter-${n}/${file}.json`]=json(`content/question-bank/class-6/chapter-${n}/${file}.json`);}
 const remaining=load('lib/class6-remaining-batches.ts',remainingMocks);
@@ -21,10 +21,13 @@ const english=load('lib/class6-english1-batches.ts',englishMocks);
 const class8Mocks={'./question-json-import':upload};
 for(const f of fs.readdirSync('content/question-bank/class-8/english-2nd').filter(f=>f.endsWith('.json'))){const p='content/question-bank/class-8/english-2nd/'+f;class8Mocks['@/'+p]=json(p);}
 const class8=load('lib/class8-english2-batches.ts',class8Mocks);
-const lib=load('lib/prepared-question-batches.ts',{'./class8-english2-batches':class8,'./class6-english1-batches':english,'./class6-bgs-batches':bgs,'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
+const sscMocks={'./question-json-import':upload};
+for(const [chapter,files] of [[1,['mcq-1','written','validation']],[2,['mcq-1','mcq-2','written','validation']],[3,['mcq-1','mcq-2','cq','sq','validation']],[4,['mcq','written','validation']],[5,['mcq','written','validation']],[6,['mcq','written','validation']],[7,['mcq','cq','sq','validation']],[8,['mcq-1','mcq-2','cq-1','cq-2','sq','validation']],[9,['mcq-1','mcq-2','cq','sq','validation']],[10,['mcq','cq','sq','validation']],[11,['mcq','cq','sq','validation']],[12,['mcq','cq','sq','validation']],[13,['mcq','cq','sq','validation']],[14,['mcq','cq','sq','validation']],[15,['mcq','cq','sq','validation']],[16,['mcq','cq','sq','validation']],[17,['mcq-1','mcq-2','cq-1','cq-2','sq','validation']]])for(const file of files){const p=`content/question-bank/ssc/math/chapter-${chapter}/target-v1/${file}.json`;sscMocks['@/'+p]=json(p);}
+const ssc=load('lib/ssc-math-batches.ts',sscMocks);
+const lib=load('lib/prepared-question-batches.ts',{'./ssc-math-batches':ssc,'./class8-english2-batches':class8,'./class6-english1-batches':english,'./class6-bgs-batches':bgs,'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
 test('catalog reuses all existing classes and batch summaries do not expose answers',()=>{
  assert.deepEqual(lib.importCatalog.map(c=>c.category),data.NCTB_CLASSES.map(c=>c.class));
- const summaries=lib.preparedSummaries();assert.equal(summaries.length,81);
+ const summaries=lib.preparedSummaries();assert.equal(summaries.length,134);
  assert.deepEqual(summaries[0].counts,{MCQ:100,CQ:0,SQ:0});assert.deepEqual(summaries[1].counts,{MCQ:0,CQ:30,SQ:30});
  assert.equal(summaries[0].records,undefined);assert.throws(()=>lib.getPreparedBatch('unregistered'));
  for(const s of summaries){const {batch,digest}=lib.getPreparedBatch(s.id);assert.equal(digest.length,64);assert.equal(new Set(batch.records.map(q=>lib.preparedQuestionId(batch,q))).size,batch.records.length);}
@@ -43,8 +46,8 @@ test('selection is not authority; unknown batches, missing acknowledgement and n
 test('preview read-only, both batch types save Pending, retry/dedup/audit maintained',async()=>{
  const h=harness();assert.equal((await h.actions.previewPrepared({},h.form())).preview.length,100);assert.equal(h.calls(),0);
  h.retry();for(const b of lib.preparedSummaries()){const f=h.form(b.id);f.set('category','INJECTED');assert.ok((await h.actions.savePrepared({},f)).message);await h.actions.savePrepared({},f);}
- assert.equal(h.questions.length,6816);assert.equal(h.settings.size,81);
- for(const q of h.questions){assert.ok(['Class 6','Class 8','Class 11-12'].includes(q.category));assert.equal(q.approved,false);}
+ assert.equal(h.questions.length,12566);assert.equal(h.settings.size,134);
+ for(const q of h.questions){assert.ok(['Class 6','Class 8','Class 9','Class 11-12'].includes(q.category));assert.equal(q.approved,false);}
  const audit=JSON.parse([...h.settings.values()][0].value);assert.equal(audit.actorId,'owner');assert.ok(audit.provenance);assert.equal(audit.inserted,100);
  const legacy=harness();legacy.questions.push({text:lib.getPreparedBatch(lib.preparedSummaries()[0].id).batch.records[0].text});await legacy.actions.savePrepared({},legacy.form());assert.equal(legacy.questions.length,100);
 });
@@ -102,7 +105,7 @@ test('HSC ICT uses six existing topics, honest quarantine counts and preserved s
 });
 
 test('import index builds registry once and preserves every action digest without exposing answers',()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,81);
+ const index=lib.preparedImportIndex();assert.equal(index.length,134);
  for(const entry of index){
   const {batch,digest}=lib.getPreparedBatch(entry.id);
   assert.equal(entry.digest,digest);assert.equal(entry.records,undefined);assert.equal(entry.provenance,undefined);

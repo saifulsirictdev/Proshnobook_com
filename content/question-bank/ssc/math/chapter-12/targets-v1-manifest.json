@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING",
+  "chapter": 12,
+  "topic": "১২শ অধ্যায়: দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 104350,
+      "sha256": "7e69eb5222e1b1557c62f610faf42c5679eaa796137df436122ad512dfe15846"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 73981,
+      "sha256": "7e6b4f5fbff24f172c8aa77fd1d90db27913eb44702a09d723bc4c5f730c8dcc"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 48451,
+      "sha256": "57304ec387dc42108acecf7920aba197f88993bee8cee68187ca30960809e468"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 175877,
+    "sha256": "0c35976ce3d516231dd0e22cc90386da9ee29dc738ead9a47e080baed01185bc"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 2231,
+    "sha256": "cfcda09046df6733a8ad6521497e04d72f0a200a27f7482d3ff9adfa18701487"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

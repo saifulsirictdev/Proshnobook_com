@@ -1,0 +1,133 @@
+{
+  "status": "STARTED_PARTIAL_SOURCE_REVIEWED_DRAFT_NOT_IMPORTED",
+  "teacherApproved": false,
+  "targetMet": false,
+  "targetCounts": {
+    "MCQ": 300,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "counts": {
+    "MCQ": 6,
+    "CQ": 1,
+    "SQ": 0
+  },
+  "remaining": {
+    "MCQ": 294,
+    "CQ": 149,
+    "SQ": 100
+  },
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "chapterTextbookRead": false,
+  "boardSearchExhaustive": false,
+  "officialOriginalPaperIndependentlyVerified": false,
+  "sourcePriority": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111",
+    "attribution": "বোর্ড ও সাল সংকলনের শিরোনাম থেকে; মূল সরকারি প্রশ্নপত্রের স্বাধীন authentication নয়।"
+  },
+  "itemReviews": [
+    {
+      "item": 1,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 20,
+      "printedPage": 161,
+      "questionNumber": "20",
+      "skill": "বর্গের সূত্র",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 2,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": "16",
+      "skill": "যোগ-বিয়োগের বর্গ ও বর্গের অন্তর",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 3,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": "22",
+      "skill": "বর্গের সূত্রে সরলীকরণ",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 4,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": "24",
+      "skill": "বর্গের সূত্রে গুণফল",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 5,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 29,
+      "printedPage": 170,
+      "questionNumber": "21",
+      "skill": "বর্গের অন্তর ও যোগফলের সূত্র",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 6,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 67,
+      "printedPage": 208,
+      "questionNumber": "2",
+      "skill": "বহুপদীর শূন্যমান/ভাগশেষ উপপাদ্য",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    },
+    {
+      "item": 7,
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "visualRead": true,
+      "pdfPage": 68,
+      "printedPage": 209,
+      "questionNumber": "2",
+      "skill": "উৎপাদকে বিশ্লেষণ; করণীর ঘন; a ও 1/a-এর ঘাতসমষ্টি",
+      "adaptation": "মূল শর্ত, বিকল্পের ক্রম ও CQ-র সব অংশ রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে রচিত।"
+    }
+  ],
+  "excluded": [
+    {
+      "pdfPage": 30,
+      "questionNumber": "1",
+      "reason": "যশোর ২০২৪ CQ: x^2=5+2sqrt(6) হলেও x-এর চিহ্ন নেই; খ অংশের দাবি ঋণাত্মক x-এ মেলে না। অন্ধ প্রতিলিপি বা নীরবে x>0 যোগ করে অবিকল বোর্ড প্রশ্ন হিসেবে গণনা নয়।"
+    }
+  ],
+  "nextWork": [
+    "২০২৪-এর অবশিষ্ট এবং ২০২৩ সালের বোর্ড প্রশ্ন দেখে উপযুক্ত প্রশ্ন সংগ্রহ",
+    "অধ্যায়ের সূত্র, ঘন, উৎপাদকে বিশ্লেষণ ও ভাগশেষ উপপাদ্যের coverage map",
+    "প্রয়োজন হলে textbook/অন্যান্য উৎস; নিজস্ব practice হলে স্পষ্ট attribution",
+    "SQ-র স্বতন্ত্র উত্তর; সব CQ-তে পূর্ণ ২–৪–৪ অংশ ও solution",
+    "চূড়ান্ত ৫৫০টি হলে <=২০০ item-এর অন্তত তিনটি importer batch; সব version Drive backup"
+  ],
+  "limitations": [
+    "শুধু শুরু হয়েছে: ৬ MCQ ও ১ পূর্ণ CQ; ৩০০/১৫০/১০০ লক্ষ্য এখনও পূর্ণ নয়।",
+    "মূল সংকলনের পাঠ্য দেখে উত্তর নতুনভাবে লেখা; শিক্ষক অনুমোদন বাকি।",
+    "MCQ key সংকলনের উত্তরতালিকা থেকে অন্ধভাবে নেওয়া হয়নি; exact symbolic calculation দিয়ে মেলানো হয়েছে।",
+    "CQ খ-তে x>0 মূল শর্ত থেকেই অনুসৃত; গ-তে a-এর দুই মূলেই দাবি যাচাই হয়েছে।",
+    "শুধু standalone importer-compatible JSON; prepared registry/live database-এ এই অধ্যায় এখনও যোগ হয়নি।"
+  ]
+}

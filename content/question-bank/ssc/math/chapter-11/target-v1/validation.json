@@ -1,0 +1,6732 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING",
+  "targetMet": true,
+  "teacherApproved": false,
+  "diagramTeacherApproved": false,
+  "assetsDeployed": false,
+  "assetLiveAvailabilityVerified": false,
+  "targetCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "boardCounts": {
+    "MCQ": 2,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 148,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "sourceNativeFigureCount": 0,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "fullChapterTextbookRead": false,
+  "boardSearchExhaustive": false,
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111"
+  },
+  "familyCounts": {
+    "MCQ": {
+      "chain-ratio": 10,
+      "componendo": 10,
+      "compound-ratio": 10,
+      "continued-proportion": 10,
+      "divide-difference": 10,
+      "divide-total": 10,
+      "dividendo": 10,
+      "fourth-proportional": 10,
+      "inverse-ratio": 10,
+      "mean-proportional": 10,
+      "mixture": 10,
+      "ratio-change": 10,
+      "ratio-squares": 9,
+      "third-proportional": 10,
+      "three-way-share": 9
+    },
+    "CQ": {
+      "chain-ratio": 5,
+      "componendo": 5,
+      "compound-ratio": 5,
+      "continued-proportion": 5,
+      "divide-difference": 5,
+      "divide-total": 5,
+      "dividendo": 5,
+      "fourth-proportional": 5,
+      "mean-proportional": 5,
+      "third-proportional": 5
+    },
+    "SQ": {
+      "chain-ratio": 5,
+      "componendo": 5,
+      "compound-ratio": 5,
+      "continued-proportion": 5,
+      "divide-difference": 5,
+      "divide-total": 5,
+      "dividendo": 5,
+      "fourth-proportional": 5,
+      "inverse-ratio": 5,
+      "mean-proportional": 5,
+      "mixture": 5,
+      "ratio-change": 5,
+      "third-proportional": 5,
+      "three-way-share": 5
+    }
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 94732,
+      "sha256": "15e106298ef2aa1340f4393bc6667afd58246f713f69510c2366340d8e5a3ee9"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 61877,
+      "sha256": "62afa6ccdb0a4c3805dea1753dbadb4d9caeed61741d9842c2faad026598920c"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 36493,
+      "sha256": "3c34992f8d60473e334e66e45a21da3bccafc3a4b6499a1cca065ef095a9298d"
+    }
+  ],
+  "assets": [],
+  "itemReviews": [
+    {
+      "origin": "ADAPTED_BOARD_COMPILATION_REDRAWN_OR_ADDED_FIGURE",
+      "family": "board-seed",
+      "variant": 1,
+      "hasDiagram": false,
+      "sourceHadFigure": false,
+      "visualRead": true,
+      "correct": "A",
+      "answerExpression": "2/3",
+      "adaptation": "মূল তথ্য ও বিকল্পের ক্রম রেখে গদ্য/যৌথ উদ্দীপক inline; চিত্র নতুন করে অঙ্কিত বা সহায়ক চিত্র যোগ করা। অবিকল scan নয়। শূন্য নয় শর্ত স্পষ্ট করা হয়েছে; মূল ratio options অক্ষুণ্ণ।",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 1,
+      "questionSha256": "25ad45e59ff91ffecbd1bc9b5528475a478b09826ecb2ad24b165430e7c86e4c"
+    },
+    {
+      "origin": "ADAPTED_BOARD_COMPILATION_REDRAWN_OR_ADDED_FIGURE",
+      "family": "board-seed",
+      "variant": 2,
+      "hasDiagram": false,
+      "sourceHadFigure": false,
+      "visualRead": true,
+      "correct": "A",
+      "answerExpression": "30",
+      "adaptation": "মূল তথ্য ও বিকল্পের ক্রম রেখে গদ্য/যৌথ উদ্দীপক inline; চিত্র নতুন করে অঙ্কিত বা সহায়ক চিত্র যোগ করা। অবিকল scan নয়।",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 2,
+      "questionSha256": "f659cbbef00da82f2b2b7d9e69dd6413633cf2393c56c79fb62451ecf5fde112"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "3",
+        "12",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 3,
+      "questionSha256": "bce2cf5474968f01ad1a7327e4b63c6b9204aea597bcae2d4ed438667df0491b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "18",
+        "37",
+        "36",
+        "72"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4",
+        "36",
+        "320"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 4,
+      "questionSha256": "dde787edfc9601dd06178841f479294d9a0260fc33ad5d20d7de1de5dd4cf16a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "9/5",
+      "choiceExpressions": [
+        "14/5",
+        "9/5",
+        "18/5",
+        "9/10"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4/5",
+        "9/5",
+        "9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 5,
+      "questionSha256": "9a8e7540342eb5682f184761194a1c9cd029847ab64b883ee51f3ce9eff59b71"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "1/4",
+        "3/2",
+        "1/2",
+        "1"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "3/2",
+        "1/2",
+        "9/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 6,
+      "questionSha256": "59f277925ba0ba1b9120b7ca220d42a095bc669b376daba01b2e8f9913052fad"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "10",
+        "20",
+        "5",
+        "11"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4",
+        "10",
+        "4/5"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 7,
+      "questionSha256": "7a6dfcba57773719aeb29b5fc1e05b27d7915467048eba13d0d46d29aca62286"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "17",
+        "16",
+        "32",
+        "8"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3",
+        "a": "4"
+      },
+      "responseExpressions": [
+        "64",
+        "16",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 8,
+      "questionSha256": "bbaedbda95362bd3dc1e2c4549f5a0ed83e137030a897a4e997f28b604fd356c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "27",
+      "choiceExpressions": [
+        "27/2",
+        "28",
+        "27",
+        "54"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "729",
+        "27",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 9,
+      "questionSha256": "d4ad1776cb922499df33c255ac00bf334c3388771d2a5e103769b55c91abbedd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "2",
+        "12",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 10,
+      "questionSha256": "9624c1cb41af8210290d1458609b077cbf0b3e63ad557589643163de60d9ce3b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "responseExpressions": [
+        "3/2",
+        "2",
+        "15/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 11,
+      "questionSha256": "1356d294a49f2d4ab666d0b4d75853dca0990656b8075a29cb77cd4de22ca89d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "2/5",
+      "choiceExpressions": [
+        "7/5",
+        "2/5",
+        "4/5",
+        "1/5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "responseExpressions": [
+        "1/2",
+        "2/5",
+        "16/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 12,
+      "questionSha256": "7f1e88d32e8d2b4889e38549f5a9372855aa248913ac9be5b3a457ccfec8a7a8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "5/4",
+      "choiceExpressions": [
+        "5/8",
+        "9/4",
+        "5/4",
+        "5/2"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4/5",
+        "5/4",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 13,
+      "questionSha256": "86335c38013c40d93c3439daf4a6d83f7994d0d377a21c203c9f2a715ab14de1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "3",
+        "12",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 14,
+      "questionSha256": "dc861b4ff50a6e95c9ad431f8f1df58a5d83825f8f2aceb0a1151740a83ea2ac"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "50",
+      "choiceExpressions": [
+        "50",
+        "100",
+        "25",
+        "51"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "10",
+        "50",
+        "500/9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 15,
+      "questionSha256": "2e75fd2f904adc61fb2ea88f4972be467c203a95cefaa2a718876b1437730f3d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "36",
+        "72",
+        "18",
+        "37"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "responseExpressions": [
+        "15",
+        "36",
+        "54"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 16,
+      "questionSha256": "812940df6d1f2ea829ffab302496e549affe0716852e6ea10df5085448a3053c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "41/20",
+      "choiceExpressions": [
+        "41/40",
+        "61/20",
+        "41/20",
+        "41/10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "16/25",
+        "41/20",
+        "9/20"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 17,
+      "questionSha256": "5283f51d0bcd82d31201a45cf6accb26c05cba9236df4892a7a0ccee93811ada"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "15",
+      "choiceExpressions": [
+        "15/2",
+        "16",
+        "15",
+        "30"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "3",
+        "15",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 18,
+      "questionSha256": "e3cce05b698b1cbd89d2d9dfbcdc5d00fe7eb3bff97ff5a1618e90971f1fec94"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "44",
+      "choiceExpressions": [
+        "45",
+        "44",
+        "88",
+        "22"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "4",
+        "44",
+        "480"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 19,
+      "questionSha256": "63c5809d2abed6c3ccd79f79a5dc66f8a24a18aea2b711ffde8ee11bf11ca35a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "11/6",
+      "choiceExpressions": [
+        "11/6",
+        "11/3",
+        "11/12",
+        "17/6"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "5/6",
+        "11/6",
+        "11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 20,
+      "questionSha256": "63523bc3865005a79374f449cb29fc011f4371995e2ba8b89572c8a75472e5a6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "2/5",
+      "choiceExpressions": [
+        "7/5",
+        "2/5",
+        "4/5",
+        "1/5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "7/5",
+        "2/5",
+        "49/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 21,
+      "questionSha256": "1cfb2e4056af7700fa31c4d05cb242c3125492aa8c41f4cf9b140eec4b5deb68"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "5",
+        "12",
+        "5/6"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 22,
+      "questionSha256": "f3b59225fc97fb1bb1a91356a648aebda18caf692551233e5b34fe17953b3b43"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "20",
+        "40",
+        "10",
+        "21"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4",
+        "a": "5"
+      },
+      "responseExpressions": [
+        "100",
+        "20",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 23,
+      "questionSha256": "488b5b16cae68c85fb06e27daa05b2e946d318ac1bd9cbd8e0ad84bc593f674a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "48",
+      "choiceExpressions": [
+        "49",
+        "48",
+        "96",
+        "24"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "2304",
+        "48",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 24,
+      "questionSha256": "3294f38e5b17afacea87353e294dbe2b15bcd2572b5e27afdbfc9520ee569389"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "8",
+        "17",
+        "16",
+        "32"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "2",
+        "16",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 25,
+      "questionSha256": "a8326256f9889f56bf32996c575031e57aa64c9732b70e5d4591cb2212238ea1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "1",
+        "3",
+        "2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "responseExpressions": [
+        "7/5",
+        "2",
+        "18/5"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 26,
+      "questionSha256": "1dd5d34ca7637363e144342d3c4c849e9a7faf029b9e2b1cc717041226a7b6c5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5/12",
+      "choiceExpressions": [
+        "5/12",
+        "5/6",
+        "5/24",
+        "17/12"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "responseExpressions": [
+        "1/2",
+        "5/12",
+        "25/36"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 27,
+      "questionSha256": "5199b825694d2726965db935f0a6922730ccf65dd8b243c823980114f19f3d47"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "6/5",
+      "choiceExpressions": [
+        "11/5",
+        "6/5",
+        "12/5",
+        "3/5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "5/6",
+        "6/5",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 28,
+      "questionSha256": "a60be667c7ad49b1c48c88f612ab31596f79ec549b5bd95320010efbc12a80f1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "10",
+        "21",
+        "20",
+        "40"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "4",
+        "20",
+        "4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 29,
+      "questionSha256": "30d28b213cc041ce7f959d472acac5f59f164291b2b5adf7fbdbe39741cab349"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "60",
+      "choiceExpressions": [
+        "120",
+        "30",
+        "61",
+        "60"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "10",
+        "60",
+        "600/11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 30,
+      "questionSha256": "3f39d97bc3bd59e4918d965ce3c7779b8ba7822ec563df270d1c27b24949cda5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "42",
+      "choiceExpressions": [
+        "84",
+        "21",
+        "43",
+        "42"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "responseExpressions": [
+        "18",
+        "42",
+        "66"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 31,
+      "questionSha256": "9376bda7f4ede47c61bce216d9ad24f599c6f8247031def360828ec417ca9e03"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "61/30",
+      "choiceExpressions": [
+        "91/30",
+        "61/30",
+        "61/15",
+        "61/60"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "25/36",
+        "61/30",
+        "11/30"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 32,
+      "questionSha256": "9869fae66634b2a82b6c485247d91c6455111a7d8ad4f7316239b11cf2e0cfd0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "18",
+      "choiceExpressions": [
+        "19",
+        "18",
+        "36",
+        "9"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "3",
+        "18",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 33,
+      "questionSha256": "df754b5815ab09188153bdc5712efeddaeb2a8c1e9831402a24f3f1bb012835d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "52",
+      "choiceExpressions": [
+        "52",
+        "104",
+        "26",
+        "53"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "4",
+        "52",
+        "672"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 34,
+      "questionSha256": "a9bb83d73c9e8e707230c297c78213b17651b38e1c9eaa4ae47672f001ce72bc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "13/7",
+      "choiceExpressions": [
+        "26/7",
+        "13/14",
+        "20/7",
+        "13/7"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "6/7",
+        "13/7",
+        "13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 35,
+      "questionSha256": "ae72df657f6fb7cdc3a14540087beb2cc59dcf6de81c7bf226a68e4c6aebc76b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "1/3",
+      "choiceExpressions": [
+        "1/3",
+        "2/3",
+        "1/6",
+        "4/3"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "4/3",
+        "1/3",
+        "16/9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 36,
+      "questionSha256": "5caa1707272825b3fdcd62f876affef17be144480765db82a56f1c80eaad7be2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "7",
+        "15",
+        "14",
+        "28"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "6",
+        "14",
+        "6/7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 37,
+      "questionSha256": "2b217065227a911753ecf24c8a8cfbbc7bf07f9e4d67805235a5f4077f2a3385"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "48",
+        "12",
+        "25",
+        "24"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5",
+        "a": "6"
+      },
+      "responseExpressions": [
+        "144",
+        "24",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 38,
+      "questionSha256": "1ceae243e8b870fe998ede8f9f9269f5edc798de6c6797ecc008361d0e0c9260"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "75",
+      "choiceExpressions": [
+        "75",
+        "150",
+        "75/2",
+        "76"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "5625",
+        "75",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 39,
+      "questionSha256": "1687e14024f3bd3631498e08fb4beaa36dade361fd36550d63b3d28bbd883266"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "21",
+        "20",
+        "40",
+        "10"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "2",
+        "20",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 40,
+      "questionSha256": "3b89f77f1b40cb8126669cca92930067aff5ef93a0f54b07b6b47fa096214b53"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7",
+        "c": "8"
+      },
+      "responseExpressions": [
+        "4/3",
+        "2",
+        "7/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 41,
+      "questionSha256": "65dfc7b60936815626720386f65d57f911bc3398e717534a473020980c0ad4de"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "3/7",
+      "choiceExpressions": [
+        "6/7",
+        "3/14",
+        "10/7",
+        "3/7"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7",
+        "c": "8"
+      },
+      "responseExpressions": [
+        "1/2",
+        "3/7",
+        "36/49"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 42,
+      "questionSha256": "40198d9447c834cba15ab151f0b070a89f9955c2d00646325cca5f323bab8e46"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "7/6",
+      "choiceExpressions": [
+        "7/6",
+        "7/3",
+        "7/12",
+        "13/6"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "6/7",
+        "7/6",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 43,
+      "questionSha256": "4e8a9240c6203a40808f9ed0030c4085a21d9c7a469b7f321060f962f36557ab"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "30",
+      "choiceExpressions": [
+        "31",
+        "30",
+        "60",
+        "15"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "5",
+        "30",
+        "5"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 44,
+      "questionSha256": "c61aaa894c20ed923f1e18ee99b548363101ba27061fc516abdc8e2c62b88b06"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "70",
+      "choiceExpressions": [
+        "35",
+        "71",
+        "70",
+        "140"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "10",
+        "70",
+        "700/13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 45,
+      "questionSha256": "3e3167a69cab57546160fc86f41900dc0d6bf61d23d370834b35f077a50af09e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "48",
+      "choiceExpressions": [
+        "24",
+        "49",
+        "48",
+        "96"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7",
+        "c": "8"
+      },
+      "responseExpressions": [
+        "21",
+        "48",
+        "78"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 46,
+      "questionSha256": "5912482a46471065efa81bfd3a3a254ef365a568c11bef5fdb689a2e3fad5a4f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "85/42",
+      "choiceExpressions": [
+        "85/42",
+        "85/21",
+        "85/84",
+        "127/42"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "36/49",
+        "85/42",
+        "13/42"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 47,
+      "questionSha256": "a8e637ac1c731347a49de23b1a8b0582af37123f8a288ccc3964d8e04c272a02"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "21",
+      "choiceExpressions": [
+        "21",
+        "42",
+        "21/2",
+        "22"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "3",
+        "21",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 48,
+      "questionSha256": "fa4179ed3718d6917fda26794bbbaa91a957ca1f6e03403438114853d81a86f3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "60",
+      "choiceExpressions": [
+        "120",
+        "30",
+        "61",
+        "60"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "4",
+        "60",
+        "896"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 49,
+      "questionSha256": "0b2283a1b23b7fbd5b5aefdbf487a2fc7577f0514db81761475e191ea00b357f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "15/8",
+      "choiceExpressions": [
+        "15/16",
+        "23/8",
+        "15/8",
+        "15/4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "7/8",
+        "15/8",
+        "15"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 50,
+      "questionSha256": "2aa39f083c6b74453ac108e834de4f5cef203a666a70a6e7db7e9ffffafbad0a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "2/7",
+      "choiceExpressions": [
+        "4/7",
+        "1/7",
+        "9/7",
+        "2/7"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "9/7",
+        "2/7",
+        "81/49"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 51,
+      "questionSha256": "5aac62bdc22d8febc5cfb98f2ca4690449b0ce9c46e6b1dbbda2afdc7b8f53af"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "17",
+        "16",
+        "32",
+        "8"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "7",
+        "16",
+        "7/8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 52,
+      "questionSha256": "5190859c8b7f3217a6257bb1d5ffc87742ed36ce045d3f5e4a6936dd20f52b78"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "28",
+      "choiceExpressions": [
+        "14",
+        "29",
+        "28",
+        "56"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6",
+        "a": "7"
+      },
+      "responseExpressions": [
+        "196",
+        "28",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 53,
+      "questionSha256": "d4e4f630f34353817fc050ba56459d1225369e384a8036d40b3880aa545e44db"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "108",
+      "choiceExpressions": [
+        "216",
+        "54",
+        "109",
+        "108"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "11664",
+        "108",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 54,
+      "questionSha256": "356933fbe12de46533138ca64bab681aa307df09d9585ef59700c8b89dc233a5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "24",
+        "48",
+        "12",
+        "25"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "2",
+        "24",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 55,
+      "questionSha256": "87b4656e3b977ea7f80fe265fe3ee82714276b3433fc0796339f5a85f533798b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "responseExpressions": [
+        "9/7",
+        "2",
+        "24/7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 56,
+      "questionSha256": "009015a328d0e6afb77c24e36e3fd09ea0a82f0ae4e172874c6cefb82daef5b8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7/16",
+      "choiceExpressions": [
+        "7/32",
+        "23/16",
+        "7/16",
+        "7/8"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "responseExpressions": [
+        "1/2",
+        "7/16",
+        "49/64"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 57,
+      "questionSha256": "e9666299e8885f7dc199ae2d3b0d82112a4e91c750665d257a370c466c4d996f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "8/7",
+      "choiceExpressions": [
+        "16/7",
+        "4/7",
+        "15/7",
+        "8/7"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "7/8",
+        "8/7",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 58,
+      "questionSha256": "0407bf0c11e4ae9d4c569b0bc230504db1e95aaa998a462efa728d7859bd4514"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "42",
+      "choiceExpressions": [
+        "42",
+        "84",
+        "21",
+        "43"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "6",
+        "42",
+        "6"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 59,
+      "questionSha256": "bef5c3405c6cf1be5825c0d2332c09e2713676fbdfed51b30355c2f984aec8ce"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "80",
+      "choiceExpressions": [
+        "81",
+        "80",
+        "160",
+        "40"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "10",
+        "80",
+        "160/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 60,
+      "questionSha256": "85fee4f9c5ec5570a5b24e77ef7d4324f4af4faeac243c257e5e94fc5d72314e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "54",
+      "choiceExpressions": [
+        "55",
+        "54",
+        "108",
+        "27"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "responseExpressions": [
+        "24",
+        "54",
+        "90"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 61,
+      "questionSha256": "acc8d244513b40763d0eef65df110278ec6c4f77428928ad11ee3aa56c1bc166"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "113/56",
+      "choiceExpressions": [
+        "113/28",
+        "113/112",
+        "169/56",
+        "113/56"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "49/64",
+        "113/56",
+        "15/56"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 62,
+      "questionSha256": "8965972eb31a9d943189b8c89b3e92587a7aec7cb7979f7b6d8073f29fd04cf1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "48",
+        "12",
+        "25",
+        "24"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "3",
+        "24",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 63,
+      "questionSha256": "2cc6ff817c3f1866235f2b4c5634105559f1368c80d3f82bb64fff8019649b8b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "68",
+      "choiceExpressions": [
+        "34",
+        "69",
+        "68",
+        "136"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "4",
+        "68",
+        "1152"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 64,
+      "questionSha256": "8be641d7f84f8a4d6cc9bdc4c2c93704f8332f1848cbd74693dbf80d87bdf90b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "17/9",
+      "choiceExpressions": [
+        "26/9",
+        "17/9",
+        "34/9",
+        "17/18"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "8/9",
+        "17/9",
+        "17"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 65,
+      "questionSha256": "ff677adf9de625f223fca14412e04b15a9e217977d78cb457e29483d44dd889b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "1/4",
+      "choiceExpressions": [
+        "1/8",
+        "5/4",
+        "1/4",
+        "1/2"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "5/4",
+        "1/4",
+        "25/16"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 66,
+      "questionSha256": "197c25e41f3defae9dec2720b730cac4e3907ac89a5f0c230eb7f839295ab168"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "18",
+      "choiceExpressions": [
+        "18",
+        "36",
+        "9",
+        "19"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "8",
+        "18",
+        "8/9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 67,
+      "questionSha256": "079bfd0891326dfe0bf4735e75fd6cb22b084d07339e14076469614080b9da78"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "32",
+      "choiceExpressions": [
+        "33",
+        "32",
+        "64",
+        "16"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7",
+        "a": "8"
+      },
+      "responseExpressions": [
+        "256",
+        "32",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 68,
+      "questionSha256": "baffdd7bab664f7f5d2715f1c2cc7adae981fe1f5d9e328fedcc8aa6842c8daf"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "147",
+      "choiceExpressions": [
+        "147/2",
+        "148",
+        "147",
+        "294"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "21609",
+        "147",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 69,
+      "questionSha256": "35d403d083d8ffe87c977a0bb99b9b1f6ffe62e4964da473dd890b777b2339c9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "28",
+      "choiceExpressions": [
+        "56",
+        "14",
+        "29",
+        "28"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "2",
+        "28",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 70,
+      "questionSha256": "e934708eb8fe6bd9efc8395704f40f073dc606d5e5a8e0f089cb002d019a37ab"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9",
+        "c": "10"
+      },
+      "responseExpressions": [
+        "5/4",
+        "2",
+        "27/8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 71,
+      "questionSha256": "8de88d615d56c2f4a59f3ffd0337b67afcac509410b4b9dab78b9bb6cb2d4737"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "4/9",
+      "choiceExpressions": [
+        "13/9",
+        "4/9",
+        "8/9",
+        "2/9"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9",
+        "c": "10"
+      },
+      "responseExpressions": [
+        "1/2",
+        "4/9",
+        "64/81"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 72,
+      "questionSha256": "de76e89e938c4a09a7ea4c33bcc177f47c12bf94c1d97d5206d216333c2d4235"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "9/8",
+      "choiceExpressions": [
+        "9/16",
+        "17/8",
+        "9/8",
+        "9/4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "8/9",
+        "9/8",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 73,
+      "questionSha256": "ca2f2d356cc0e4ab045a88ccbdb03a3199f3912e92aaf762356707358573e12d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "56",
+      "choiceExpressions": [
+        "112",
+        "28",
+        "57",
+        "56"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "7",
+        "56",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 74,
+      "questionSha256": "aa7a9d3785d5d62adf305985204086b9cbeb92c2b4435e4d1c2a6353bc771029"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "90",
+      "choiceExpressions": [
+        "90",
+        "180",
+        "45",
+        "91"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "10",
+        "90",
+        "900/17"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 75,
+      "questionSha256": "6eaca552348a5437a801d2763b02db92d94cf62c2a0c1a0f663ba0db30416a88"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "60",
+      "choiceExpressions": [
+        "60",
+        "120",
+        "30",
+        "61"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9",
+        "c": "10"
+      },
+      "responseExpressions": [
+        "27",
+        "60",
+        "102"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 76,
+      "questionSha256": "6a38e9289706f2c0086139621baa2cb9a5fb150abfe9b8078281bac1fa9e3aa0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "145/72",
+      "choiceExpressions": [
+        "145/144",
+        "217/72",
+        "145/72",
+        "145/36"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "64/81",
+        "145/72",
+        "17/72"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 77,
+      "questionSha256": "f1fa0578279ee0ab816039b1971b0a0c8f1999f869c2e8a28a73f2b680e6c232"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "27",
+      "choiceExpressions": [
+        "27/2",
+        "28",
+        "27",
+        "54"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "3",
+        "27",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 78,
+      "questionSha256": "3b0f19b4d2bb5885a77a1e02e15a52166b8c08e746382de9e2f678495f5d6e73"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "76",
+      "choiceExpressions": [
+        "77",
+        "76",
+        "152",
+        "38"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "4",
+        "76",
+        "1440"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 79,
+      "questionSha256": "f5b9c616e02b8d33fe188d9864e3854de647c03211dfef8fab95b1686b2a1de2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "19/10",
+      "choiceExpressions": [
+        "19/10",
+        "19/5",
+        "19/20",
+        "29/10"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9/10",
+        "19/10",
+        "19"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 80,
+      "questionSha256": "96e6960b9d0452d3020840fa0c56713d9a7bf0d0282513c4be030df45fd71e14"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "2/9",
+      "choiceExpressions": [
+        "11/9",
+        "2/9",
+        "4/9",
+        "1/9"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "11/9",
+        "2/9",
+        "121/81"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 81,
+      "questionSha256": "2eeb3ac6346bdee4c52e3a0d9fed6697ef07b2a9be33e612c6cda964f192a398"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "40",
+        "10",
+        "21",
+        "20"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9",
+        "20",
+        "9/10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 82,
+      "questionSha256": "a0619cc5412a809eb3672afe7bf8aaa4306e88d45a0b1b06b7604871c860adc5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "36",
+        "72",
+        "18",
+        "37"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8",
+        "a": "9"
+      },
+      "responseExpressions": [
+        "324",
+        "36",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 83,
+      "questionSha256": "84004ec1bbebe128adac057dc92757027300c7b27c0a617ae5d2c0dd39bb80b2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "192",
+      "choiceExpressions": [
+        "193",
+        "192",
+        "384",
+        "96"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "36864",
+        "192",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 84,
+      "questionSha256": "70cdc3fc68b43f3fbc7a40dbaa8f8a1947b8990c4444ddce6124c0c1ce3376df"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "32",
+      "choiceExpressions": [
+        "16",
+        "33",
+        "32",
+        "64"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "2",
+        "32",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 85,
+      "questionSha256": "9674bf82ee1a2c17c9decd0333ffe9eb681cca27b906e268931e63e10e192c13"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "1",
+        "3",
+        "2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "11/9",
+        "2",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 86,
+      "questionSha256": "c2c3d72dd497fb3cf43df8e855542dc670b98e01de709d8b9e12d9b90b79b482"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9/20",
+      "choiceExpressions": [
+        "9/20",
+        "9/10",
+        "9/40",
+        "29/20"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "1/2",
+        "9/20",
+        "81/100"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 87,
+      "questionSha256": "43c2a0145a99fef34af6be860b432fd9979528cf7f3221aca928900621e83757"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "10/9",
+      "choiceExpressions": [
+        "19/9",
+        "10/9",
+        "20/9",
+        "5/9"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9/10",
+        "10/9",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 88,
+      "questionSha256": "8b133cdd2d9d78485cf902262fc96444e0115e0598fd0b626fc46f9694ad4e08"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "72",
+      "choiceExpressions": [
+        "36",
+        "73",
+        "72",
+        "144"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "8",
+        "72",
+        "8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 89,
+      "questionSha256": "0fc072ab2d29867d3405db2f0f1ec90969f65c4d4085c262ed934f401df45d2b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "100",
+      "choiceExpressions": [
+        "200",
+        "50",
+        "101",
+        "100"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "10",
+        "100",
+        "1000/19"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 90,
+      "questionSha256": "b68894934015ec3ba9349b47ee90ebb59c0731b7a67a3f4fb6bcbcd2cb1e667f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "66",
+      "choiceExpressions": [
+        "132",
+        "33",
+        "67",
+        "66"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "30",
+        "66",
+        "114"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 91,
+      "questionSha256": "9de5ed60dc6aa6429aa3de04e6a154396a2b229e73f640514f86897685e88fab"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "181/90",
+      "choiceExpressions": [
+        "271/90",
+        "181/90",
+        "181/45",
+        "181/180"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "81/100",
+        "181/90",
+        "19/90"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 92,
+      "questionSha256": "a857b0ac1278b8740d05c7367483a652cff9173542716df18ee5e06e1438d666"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "30",
+      "choiceExpressions": [
+        "31",
+        "30",
+        "60",
+        "15"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "3",
+        "30",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 93,
+      "questionSha256": "760e5480f313a1c28f277fb3462de7caa92781f7e7f639d8231f2121a9b3738d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "84",
+      "choiceExpressions": [
+        "84",
+        "168",
+        "42",
+        "85"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "4",
+        "84",
+        "1760"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 94,
+      "questionSha256": "7833d531be5ad99d4da2074c31604077a069518303f58487de8a5a319a5b2b3b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "21/11",
+      "choiceExpressions": [
+        "42/11",
+        "21/22",
+        "32/11",
+        "21/11"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10/11",
+        "21/11",
+        "21"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 95,
+      "questionSha256": "73184045ac506849e041b37bac40fa7d20dbcb614850b84accf4d40ea9df3866"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "1/5",
+      "choiceExpressions": [
+        "1/5",
+        "2/5",
+        "1/10",
+        "6/5"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "6/5",
+        "1/5",
+        "36/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 96,
+      "questionSha256": "8cd8463b53117c7a24cc2e6a058c10a79dbd32acc59c0f4882a9850b19907504"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "22",
+      "choiceExpressions": [
+        "11",
+        "23",
+        "22",
+        "44"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10",
+        "22",
+        "10/11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 97,
+      "questionSha256": "8bcc72f5b9bd5163586805e44b5bf597ddac5d6709a6bc15147423348b3be0fa"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "40",
+      "choiceExpressions": [
+        "80",
+        "20",
+        "41",
+        "40"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9",
+        "a": "10"
+      },
+      "responseExpressions": [
+        "400",
+        "40",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 98,
+      "questionSha256": "3f1fd9061ab538fa08a10d26b1ab592ce0bc67519d38ff5100fb9b8a7f1c6f40"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "243",
+      "choiceExpressions": [
+        "243",
+        "486",
+        "243/2",
+        "244"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "59049",
+        "243",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 99,
+      "questionSha256": "1295e301e7b14941922a78b0ffb6f1a3ba4d990099ec251181913ed146bd7560"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "37",
+        "36",
+        "72",
+        "18"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "2",
+        "36",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 100,
+      "questionSha256": "5811020f0e5995f9a6b7de827942633a54a9b4bb55f3d51a6c184c36b23a4989"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "6/5",
+        "2",
+        "33/10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 101,
+      "questionSha256": "2811f7cbf5f2d7f03d3a3a5c96087f4d2eb3d40fda59ab9bc6e012815edb0850"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "5/11",
+      "choiceExpressions": [
+        "10/11",
+        "5/22",
+        "16/11",
+        "5/11"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "1/2",
+        "5/11",
+        "100/121"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 102,
+      "questionSha256": "5b908f2dc099e10b3fbe03a45077e28686ac174ff215f3c98ec5b3bef4646e37"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "11/10",
+      "choiceExpressions": [
+        "11/10",
+        "11/5",
+        "11/20",
+        "21/10"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10/11",
+        "11/10",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 103,
+      "questionSha256": "637db15c532942337d96fe934f4b46b5279c19a8974cb59e6fe8ba584eb83419"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "90",
+      "choiceExpressions": [
+        "91",
+        "90",
+        "180",
+        "45"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "9",
+        "90",
+        "9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 104,
+      "questionSha256": "f05ae566aebffd3abe177c967ea49f89a5dee4f62339c23e8ce1eb02d9d0c5ea"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "110",
+      "choiceExpressions": [
+        "55",
+        "111",
+        "110",
+        "220"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10",
+        "110",
+        "1100/21"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 105,
+      "questionSha256": "86b5cc689c438d888620efe868724f7d2744b497fc9bbde665f9a9699220a1fb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "72",
+      "choiceExpressions": [
+        "36",
+        "73",
+        "72",
+        "144"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "33",
+        "72",
+        "126"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 106,
+      "questionSha256": "1aae5756b1e0839ac0573d3ab74c6f87ed756e912478e72a2eb80d4616b07ecc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "221/110",
+      "choiceExpressions": [
+        "221/110",
+        "221/55",
+        "221/220",
+        "331/110"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "100/121",
+        "221/110",
+        "21/110"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 107,
+      "questionSha256": "eafd1749f635ba2e3404143f23397706fe8742acee45e250b2f675b93720c631"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "33",
+      "choiceExpressions": [
+        "33",
+        "66",
+        "33/2",
+        "34"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "3",
+        "33",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 108,
+      "questionSha256": "e2a424ee3caa38c26ebdd70ab85782c6147359b49ea7c4e6dbb1a918285aa296"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "92",
+      "choiceExpressions": [
+        "184",
+        "46",
+        "93",
+        "92"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "4",
+        "92",
+        "2112"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 109,
+      "questionSha256": "eddc33a904aee00e5e69862c6c72c3b60e6da04470f95a1e0173bbf1d7a241ea"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "23/12",
+      "choiceExpressions": [
+        "23/24",
+        "35/12",
+        "23/12",
+        "23/6"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11/12",
+        "23/12",
+        "23"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 110,
+      "questionSha256": "859835daedcd451c212931d596888d6a5030e7d0f62eb2223aafb023c0d16a70"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "2/11",
+      "choiceExpressions": [
+        "4/11",
+        "1/11",
+        "13/11",
+        "2/11"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "13/11",
+        "2/11",
+        "169/121"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 111,
+      "questionSha256": "0c3b6f7d06338ba0968cb6a01afb2d4d49935cab865d315d6f7104cd03b8fc9c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "25",
+        "24",
+        "48",
+        "12"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11",
+        "24",
+        "11/12"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 112,
+      "questionSha256": "9de92a3d6ffa4fa302521a9773818b984d169d40a300f9ae05818f342b2c8ec2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "44",
+      "choiceExpressions": [
+        "22",
+        "45",
+        "44",
+        "88"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10",
+        "a": "11"
+      },
+      "responseExpressions": [
+        "484",
+        "44",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 113,
+      "questionSha256": "efe9ffb72f3228bb93b9cc64a2716951a3c7f82ba316f1fafff5a80a934d0956"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "300",
+      "choiceExpressions": [
+        "600",
+        "150",
+        "301",
+        "300"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "90000",
+        "300",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 114,
+      "questionSha256": "afe1f6a7bd99bf56bf16e8eec74e121082e43186c7615932b47749ab403e2035"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "40",
+      "choiceExpressions": [
+        "40",
+        "80",
+        "20",
+        "41"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "2",
+        "40",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 115,
+      "questionSha256": "d9aa11d5045c5a097125db169e3da54897cc8cddad2a17937b86cc85ec4bb3f3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "13/11",
+        "2",
+        "36/11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 116,
+      "questionSha256": "91f0cbf15c313650c894c175a9fd40e1e21682ea7fd5841dc0aafb89284be43f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11/24",
+      "choiceExpressions": [
+        "11/48",
+        "35/24",
+        "11/24",
+        "11/12"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "1/2",
+        "11/24",
+        "121/144"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 117,
+      "questionSha256": "6e79d13a4dab9b5c0f9b914c27366c845ee0d07477cdfe028b429c966aa8b81e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "12/11",
+      "choiceExpressions": [
+        "24/11",
+        "6/11",
+        "23/11",
+        "12/11"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11/12",
+        "12/11",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 118,
+      "questionSha256": "6d578579b2a32d66d25ad36aa2670ae1fcecadcf79ff780cb1c1a9686a28af3a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "110",
+      "choiceExpressions": [
+        "110",
+        "220",
+        "55",
+        "111"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "10",
+        "110",
+        "10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 119,
+      "questionSha256": "93dbf453faa4407c146fcbbf2d36cce746571cb52e74c16a0e729e98369676a3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "120",
+      "choiceExpressions": [
+        "121",
+        "120",
+        "240",
+        "60"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "10",
+        "120",
+        "1200/23"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 120,
+      "questionSha256": "a46095bc3af65ae8a125f79abf49ee0fb82c598268a66c4f57eee17fe0b7e71e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "78",
+      "choiceExpressions": [
+        "79",
+        "78",
+        "156",
+        "39"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "36",
+        "78",
+        "138"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 121,
+      "questionSha256": "207df440226912da42bd867f66a768f69adb9a1bd4c0c756c8a78c6d47b53a8b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "265/132",
+      "choiceExpressions": [
+        "265/66",
+        "265/264",
+        "397/132",
+        "265/132"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "121/144",
+        "265/132",
+        "23/132"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 122,
+      "questionSha256": "e4626dc36178ff4ce5c26f1ea2f980a012320a350f508014d9d6c95ff72ab9d0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "72",
+        "18",
+        "37",
+        "36"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "3",
+        "36",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 123,
+      "questionSha256": "d569b0fcfb1664ffa291b0b530ee01f49fa28d4d639d9a172096acbf5e3c0567"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "100",
+      "choiceExpressions": [
+        "50",
+        "101",
+        "100",
+        "200"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "4",
+        "100",
+        "2496"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 124,
+      "questionSha256": "05a5271ed91fa14ca9993640e96581b30893356ed008c5c348567806aa03649f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "25/13",
+      "choiceExpressions": [
+        "38/13",
+        "25/13",
+        "50/13",
+        "25/26"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12/13",
+        "25/13",
+        "25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 125,
+      "questionSha256": "6801e09c5bd92ab5c4cb9c6277e8a109778ce7e27b697ee2ccc915220b19198f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "1/6",
+      "choiceExpressions": [
+        "1/12",
+        "7/6",
+        "1/6",
+        "1/3"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "7/6",
+        "1/6",
+        "49/36"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 126,
+      "questionSha256": "bde72be96d7bb256d7de0383e4712c36983ceba5eb3120632edd9ef71a3a5e27"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "26",
+      "choiceExpressions": [
+        "26",
+        "52",
+        "13",
+        "27"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12",
+        "26",
+        "12/13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 127,
+      "questionSha256": "7d3077d6a3cc11d7d61f2ae7b89447db50cc2cce3a3bc3d2748b2614055f3e17"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "48",
+      "choiceExpressions": [
+        "49",
+        "48",
+        "96",
+        "24"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11",
+        "a": "12"
+      },
+      "responseExpressions": [
+        "576",
+        "48",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 128,
+      "questionSha256": "b3e13f34e69508930ade2fc8db2e3d6038988a4c8c644e9955007347f79d97ff"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "363",
+      "choiceExpressions": [
+        "363/2",
+        "364",
+        "363",
+        "726"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "131769",
+        "363",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 129,
+      "questionSha256": "2686f91c133c32a9fae1902572fcf2ff98aebaef76079b973f9260da89620db2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "44",
+      "choiceExpressions": [
+        "88",
+        "22",
+        "45",
+        "44"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "2",
+        "44",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 130,
+      "questionSha256": "b6baa2bca6ca3b1e8121c15cf3488d3e41774c1a5443a3468c4d95179fc1f8c6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "7/6",
+        "2",
+        "13/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 131,
+      "questionSha256": "3c16215fce3ef1facada47322b96c29be5b6ca237f11faa071c3616c9c83508b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "6/13",
+      "choiceExpressions": [
+        "19/13",
+        "6/13",
+        "12/13",
+        "3/13"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "1/2",
+        "6/13",
+        "144/169"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 132,
+      "questionSha256": "a203393d75616fad3cd859454f1fefd67db8a235a1bbd586cf0af4c112ad9a72"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "13/12",
+      "choiceExpressions": [
+        "13/24",
+        "25/12",
+        "13/12",
+        "13/6"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12/13",
+        "13/12",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 133,
+      "questionSha256": "12e09dab123f270ecb4866337bc976e71a08f4634ec24157a174915213ac64d4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "132",
+      "choiceExpressions": [
+        "264",
+        "66",
+        "133",
+        "132"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "11",
+        "132",
+        "11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 134,
+      "questionSha256": "09ff48fc6980157dece4daa5be2538045071c71228556df605883789bb519854"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "130",
+      "choiceExpressions": [
+        "130",
+        "260",
+        "65",
+        "131"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "10",
+        "130",
+        "52"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 135,
+      "questionSha256": "0fb8514207fc576f8706c86e143aca194576715596b4bf876778e93f5a518b1a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "84",
+      "choiceExpressions": [
+        "84",
+        "168",
+        "42",
+        "85"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "39",
+        "84",
+        "150"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 136,
+      "questionSha256": "d8727c0b524324715131461f59518260d7cbf181187f5b23e7f11895b1387c32"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-squares",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "313/156",
+      "choiceExpressions": [
+        "313/312",
+        "469/156",
+        "313/156",
+        "313/78"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "144/169",
+        "313/156",
+        "25/156"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 137,
+      "questionSha256": "8f45b15bb86c1e39007b99c27dedd236da5a0e17f4c1a7e8cabbddbcd408328c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "39",
+      "choiceExpressions": [
+        "39/2",
+        "40",
+        "39",
+        "78"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "3",
+        "39",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 138,
+      "questionSha256": "49ef1a806ec1ce486e605fd1a8e64cafb8762eb9ef66b832592c0c4e7f6e0aef"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "108",
+      "choiceExpressions": [
+        "109",
+        "108",
+        "216",
+        "54"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "4",
+        "108",
+        "2912"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 139,
+      "questionSha256": "4c89b468a7a98571cf03e302362f605210ab41f921413fe1522e777cbd0abc7a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "27/14",
+      "choiceExpressions": [
+        "27/14",
+        "27/7",
+        "27/28",
+        "41/14"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13/14",
+        "27/14",
+        "27"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 140,
+      "questionSha256": "3298cc3c061387f6740e81e74b41b0b460f44c855571b03fd007807d57304849"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "2/13",
+      "choiceExpressions": [
+        "15/13",
+        "2/13",
+        "4/13",
+        "1/13"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "15/13",
+        "2/13",
+        "225/169"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 141,
+      "questionSha256": "f5f5e07f83fb7ab46cc733d2a21a224d6db2dc5f94ee2a12ad49f7aa2853a955"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "28",
+      "choiceExpressions": [
+        "56",
+        "14",
+        "29",
+        "28"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13",
+        "28",
+        "13/14"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 142,
+      "questionSha256": "49d065c7603bde8a6be10b2ebbc87177ca0fd907792c2e7e90389da313d3bbaa"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "52",
+      "choiceExpressions": [
+        "52",
+        "104",
+        "26",
+        "53"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12",
+        "a": "13"
+      },
+      "responseExpressions": [
+        "676",
+        "52",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 143,
+      "questionSha256": "114646e2ccf80d6aa29585748e17cf7df00ec1af7ab754bc6584281877610f17"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "432",
+      "choiceExpressions": [
+        "433",
+        "432",
+        "864",
+        "216"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "186624",
+        "432",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 144,
+      "questionSha256": "2ef9ea3a5a3524508ab27d7e48e59887f7baa51d1a6090dea9ad9ac27abffa7a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "48",
+      "choiceExpressions": [
+        "24",
+        "49",
+        "48",
+        "96"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "2",
+        "48",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 145,
+      "questionSha256": "522219205bc31e397c0b487f14fb3ed88f315d8d3b9b2f66e8927580e673b098"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "1",
+        "3",
+        "2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14",
+        "c": "15"
+      },
+      "responseExpressions": [
+        "15/13",
+        "2",
+        "42/13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 146,
+      "questionSha256": "ad33776e5ce5fd08986f313ce8f65348720f7b55db20966677ce101a3a1eda39"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13/28",
+      "choiceExpressions": [
+        "13/28",
+        "13/14",
+        "13/56",
+        "41/28"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14",
+        "c": "15"
+      },
+      "responseExpressions": [
+        "1/2",
+        "13/28",
+        "169/196"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 147,
+      "questionSha256": "37f83f6e495fe450d13c44e2cf6a9816097421646d4f691bc4976ebc5e1c2361"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "14/13",
+      "choiceExpressions": [
+        "27/13",
+        "14/13",
+        "28/13",
+        "7/13"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13/14",
+        "14/13",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 148,
+      "questionSha256": "28f58d365359f2bdaee8820210811d8b6824fdde9bdbcd3b9ad03df6b3408341"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "156",
+      "choiceExpressions": [
+        "78",
+        "157",
+        "156",
+        "312"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "12",
+        "156",
+        "12"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 149,
+      "questionSha256": "37684211a4340bbd5fa1ae6e17f5d4dead354fe2b9947815fd6ae0d8ecf28ba3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "140",
+      "choiceExpressions": [
+        "280",
+        "70",
+        "141",
+        "140"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "10",
+        "140",
+        "1400/27"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 150,
+      "questionSha256": "817652368adedd9e5df16b7b445f12760648408ea59786cfe20f5db1a42f84bb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "3",
+        "12",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 1,
+      "questionSha256": "05194a02ececb87d9db9d3f0dbc10aba82e15c6d35fe8d7b1b4616f4d6acde84"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4",
+        "36",
+        "320"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 2,
+      "questionSha256": "491a22147ab5a3fe1eb3e50f92157f75e4964f1ae555f1d1da534ae7b729a4b5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4/5",
+        "9/5",
+        "9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 3,
+      "questionSha256": "19f14049e186960631301a4e12498b50e780dd92d883339ecae03944d01e3097"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "3/2",
+        "1/2",
+        "9/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 4,
+      "questionSha256": "f3bf4ea825558b4c2506439f718cffd0df5470347df786537d5939fcd4112a04"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5"
+      },
+      "responseExpressions": [
+        "4",
+        "10",
+        "4/5"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 5,
+      "questionSha256": "3e7491d510a482eeaad3717082da94c9474549438085a8386d737a34de7dfc9f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4"
+      },
+      "responseExpressions": [
+        "64",
+        "16",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 6,
+      "questionSha256": "af68fd91dfa893942a2fa8cf1914e4ce2409178b242c367134eb55dd78e94eb4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "729",
+        "27",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 7,
+      "questionSha256": "5e02645ed7d43a219b5ab336e2435025716ad357f5860bab3d525593bd1dd7d9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "2",
+        "12",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 8,
+      "questionSha256": "8ba7c24ba9b9eec1f3926ba0ed6522c7b2c26f8a86c14af05d896e2bb4f90a40"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "responseExpressions": [
+        "3/2",
+        "2",
+        "15/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 9,
+      "questionSha256": "30d3a0511ed635b826f92b4e90946b34518d7a5228474bfdb504ddc01d949d7d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "a": "4",
+        "b": "5",
+        "c": "6"
+      },
+      "responseExpressions": [
+        "1/2",
+        "2/5",
+        "16/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 10,
+      "questionSha256": "7f17373600c02338f61bcc9827b41d881b8ae8b748ceef11bbe595f2f76e86d9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "3",
+        "15",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 11,
+      "questionSha256": "10acde07d8f38f1c6d7afd9c6717ed720f4abb5549c7af0e57f6e8eadba31dad"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "4",
+        "44",
+        "480"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 12,
+      "questionSha256": "bd45abe172cf35bd50271d514bf588f6ffbc64ccea1b8f9404730d65213fbb14"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "5/6",
+        "11/6",
+        "11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 13,
+      "questionSha256": "21fc452ffcc1989c4e10bcfd6e84c1120c21f943b33df74c3ff44197d24cfeeb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "7/5",
+        "2/5",
+        "49/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 14,
+      "questionSha256": "9d8929ede3e83c98ced262f02e0d07f8847c80db7ee16a18a3fdd804d6c0d3b4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6"
+      },
+      "responseExpressions": [
+        "5",
+        "12",
+        "5/6"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 15,
+      "questionSha256": "938e79c7cbe4ee341ef102f050cf4f84f6ecab66bf5e0c4f0400cc03a7737176"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5"
+      },
+      "responseExpressions": [
+        "100",
+        "20",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 16,
+      "questionSha256": "76216f3e3b21c8dec2e56e1fe686c504a9bf7a88fac9970677f0de428a2701c6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "2304",
+        "48",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 17,
+      "questionSha256": "fdd603fe2726a34b84b2efea575dafe64f988fa9f06989039706e0bac4c8e831"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "2",
+        "16",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 18,
+      "questionSha256": "fc54cffc20e4505a4d01a0660eedc9a70f6363a717bf03819ccfa5bfc224c105"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "responseExpressions": [
+        "7/5",
+        "2",
+        "18/5"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 19,
+      "questionSha256": "dc007dedf49cba72b11812b6e959f3a1ceebab1c21af01938bfda2257ab85f7c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "a": "5",
+        "b": "6",
+        "c": "7"
+      },
+      "responseExpressions": [
+        "1/2",
+        "5/12",
+        "25/36"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 20,
+      "questionSha256": "91383e3d2511e1067a999fca3c042cb1b30098cdc4210961a01a928d618387b9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "3",
+        "18",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 21,
+      "questionSha256": "f2e295d20b861f53a04e7dd902e8848382d837f2b526ca0a46e4ad9810bb1252"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "4",
+        "52",
+        "672"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 22,
+      "questionSha256": "cbb5fee506027294183a4e9e2af29267545dfbc49c3f71b2c73af436d165a44a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "6/7",
+        "13/7",
+        "13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 23,
+      "questionSha256": "40ffce1899a4fcde2a5b18b6991d2a124aa8a5342290ed3056d5eb5977803f8b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "4/3",
+        "1/3",
+        "16/9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 24,
+      "questionSha256": "265c0d0fa27aba9c823d40373fabc82b8b9058d33dbde1362c7d34ae6e2e2abf"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7"
+      },
+      "responseExpressions": [
+        "6",
+        "14",
+        "6/7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 25,
+      "questionSha256": "b05465a53b64b5e5156a37f72b7995752f8041d73976b5f5be5002ff027dfb76"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6"
+      },
+      "responseExpressions": [
+        "144",
+        "24",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 26,
+      "questionSha256": "186761007966325a8383d1834f939b56e2fba9f17357d8a1394e35e975f78d80"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "5625",
+        "75",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 27,
+      "questionSha256": "ac37f2ba20cecf37d128dab18342e607bcd6e135da8b4d8aaac48d712673f6ab"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "2",
+        "20",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 28,
+      "questionSha256": "575838770ba3d463915f36592df2492580ea6c470af4e71607187ca9909bf7c1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7",
+        "c": "8"
+      },
+      "responseExpressions": [
+        "4/3",
+        "2",
+        "7/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 29,
+      "questionSha256": "5c3569af93b7cb0e94523a40e7dd1f5173620c8d7b21e2080a434952d2693c42"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "a": "6",
+        "b": "7",
+        "c": "8"
+      },
+      "responseExpressions": [
+        "1/2",
+        "3/7",
+        "36/49"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 30,
+      "questionSha256": "9edee6e2b0a13638f2111f66b50948b78f42245f2e6d6ca72160570f27ddeedd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "3",
+        "21",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 31,
+      "questionSha256": "25ed4066361369d193d8abe73f4ba8941d93724ff10a78183a86103a4bb1f419"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "4",
+        "60",
+        "896"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 32,
+      "questionSha256": "0552bafee02d67b7baa4d7a58de5d035199e1ea64226442036ab024c8ff6bb2c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "7/8",
+        "15/8",
+        "15"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 33,
+      "questionSha256": "c2b357c92f36b86d353acae0a6ee662baa72b6b46a107c5e375396f430e85e2f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "9/7",
+        "2/7",
+        "81/49"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 34,
+      "questionSha256": "4245268d40a1bce245b54b0e3969223515019324934353491c8f33a4f76086ed"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8"
+      },
+      "responseExpressions": [
+        "7",
+        "16",
+        "7/8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 35,
+      "questionSha256": "d6fdd9986f4d2aa635206caa282eb3df164b98214c1d3f4a7158362d35e87d8e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7"
+      },
+      "responseExpressions": [
+        "196",
+        "28",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 36,
+      "questionSha256": "116390e69f5972605ca000afba83e6ff4d3e3f193d37b244755cff1049b96686"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "11664",
+        "108",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 37,
+      "questionSha256": "e535acf88dca023ba668ec3cc00d3242aad435b17721cd8e82f3a853f1a44d00"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "2",
+        "24",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 38,
+      "questionSha256": "6dbe1a521cb502dc071eb196fcda5cff37933cdfaaea7929fc1eb805032d2ac2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "responseExpressions": [
+        "9/7",
+        "2",
+        "24/7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 39,
+      "questionSha256": "3f5959a4e183137a69387ba74c0490adb48a5284970c24ba655ad6ff1e5925a8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "a": "7",
+        "b": "8",
+        "c": "9"
+      },
+      "responseExpressions": [
+        "1/2",
+        "7/16",
+        "49/64"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 40,
+      "questionSha256": "ba9dfd996dc7ace64a48e1da1cfd5f3e63137636102ffddb0a03b0b72e7ed68d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "3",
+        "24",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 41,
+      "questionSha256": "31f18c46da74b1adeda0195247b38fb548095f3b43a9a703a5bbc18aa036eecc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "4",
+        "68",
+        "1152"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 42,
+      "questionSha256": "2e6dead8dd184af5d22d37138829d8627bcc4f16829e8132fca9e65f2ff6cd91"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "8/9",
+        "17/9",
+        "17"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 43,
+      "questionSha256": "3643beaed1e842dafcd444a29007d9ae908cc3e59fc16beed65287382fdf65e6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "5/4",
+        "1/4",
+        "25/16"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 44,
+      "questionSha256": "e73faed82859579953320b0f03264ed833ba026dfc5e374e9160bddc79795d14"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9"
+      },
+      "responseExpressions": [
+        "8",
+        "18",
+        "8/9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 45,
+      "questionSha256": "a48fc6cc41695afdf878e39d3293c9b52f863cc4b66c94fc55a5bb7eb92dc8bc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8"
+      },
+      "responseExpressions": [
+        "256",
+        "32",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 46,
+      "questionSha256": "f88c3ea31ad36d6abc172919ad9bc36992b97b5e6133d9df0bd702be83e90c0b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "21609",
+        "147",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 47,
+      "questionSha256": "93f121fcc663f4096d1541b5c8136239acdc2d43c219b860216fb93ad5a681d2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "2",
+        "28",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 48,
+      "questionSha256": "96a3b97b40eff2471bc874cfb4b86636a9d132a1e5ce933ac377f6dd0c0590c0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9",
+        "c": "10"
+      },
+      "responseExpressions": [
+        "5/4",
+        "2",
+        "27/8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 49,
+      "questionSha256": "f9ae9b26b9fe3343dc9e9f940d180dad1ec97c713c5dd9b8ca8f37ae2b4eb9eb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "a": "8",
+        "b": "9",
+        "c": "10"
+      },
+      "responseExpressions": [
+        "1/2",
+        "4/9",
+        "64/81"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/cq.json",
+      "itemInFile": 50,
+      "questionSha256": "0b3397f26815e402969e35635e10da383b344b2cfe6f378fc85d35242cca21dc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "3",
+        "27",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 1,
+      "questionSha256": "b81aa1e328bff827fc204af3264162c3550f7442943f6c24d17aca4c9361aae3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "4",
+        "76",
+        "1440"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 2,
+      "questionSha256": "2a9da81c03042b0b2b14dae145a40d0cd9ac006c8fb98b849d41c0c4c3c80706"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9/10",
+        "19/10",
+        "19"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 3,
+      "questionSha256": "149509278f3d1b5a4588cad81a3979e4bfc14215741d97d29aa31fb86c21e920"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "11/9",
+        "2/9",
+        "121/81"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 4,
+      "questionSha256": "6f490375727118b5611204a24b3da2470617d146e5e1dce5126553b8bebef45f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9",
+        "20",
+        "9/10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 5,
+      "questionSha256": "ee814f729291bb1bc821f3034a014d0366df485ca5c25f95c7af29af82c4367b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9"
+      },
+      "responseExpressions": [
+        "324",
+        "36",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 6,
+      "questionSha256": "9e22cd7356fb458ff82f897eb8c2ff6a6fe049c5264e549b04fefb5c614e24db"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "36864",
+        "192",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 7,
+      "questionSha256": "c82e5adfbb1052c3e25f551b4cebd13b81316b942414b70ac2c469c9fe82bda6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "2",
+        "32",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 8,
+      "questionSha256": "de79dab8a8b207d14d08630f1dfc4b6634ac3c9cff0da0cd1f1f53429a5f0d0a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "11/9",
+        "2",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 9,
+      "questionSha256": "bd56baba47022a156553ed5cf5330cb23ab6925e739c307ae52e08215316e3bb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "1/2",
+        "9/20",
+        "81/100"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 10,
+      "questionSha256": "f1d7fc2b30a5a6bd58cd6d7c4d06e0c0126ccd51fb3f0e002b2f43f408df0aca"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "9/10",
+        "10/9",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 11,
+      "questionSha256": "c4290140f4ba99b5a76942db94c1bf7000cf06d431678e0ede5785204fd94247"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "8",
+        "72",
+        "8"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 12,
+      "questionSha256": "a1c5f1f184613af652b741cfa1f979d4eed2e7b0b853cdbffa05255be63fa6f5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10"
+      },
+      "responseExpressions": [
+        "10",
+        "100",
+        "1000/19"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 13,
+      "questionSha256": "86bcfadc9752d5f75016e535437ce3ab8d16cc95e75c7985745e82ff76ce7df9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "a": "9",
+        "b": "10",
+        "c": "11"
+      },
+      "responseExpressions": [
+        "30",
+        "66",
+        "114"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 14,
+      "questionSha256": "437092fcc5a363029ec906f585ea5e4031c0cb068aecc7753f94e4b05bb9e6c5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "3",
+        "30",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 15,
+      "questionSha256": "397902f8dbf44b0d730202a932f48823bc0dc1fff62cc2a8af2afd295ecae803"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "4",
+        "84",
+        "1760"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 16,
+      "questionSha256": "566ff1a799ad0c1bc63b9162be5d74b88f4d68c3cef97171f44018c16bbcaee5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10/11",
+        "21/11",
+        "21"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 17,
+      "questionSha256": "725f368c305a7cfd4de80163499cf09962478a36a7021b1b94f208e07117e066"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "6/5",
+        "1/5",
+        "36/25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 18,
+      "questionSha256": "1e0d6421e9d83e6180faaa1ae9f20d40a0df1bbc1eecc8f80f04466a4e5eee5e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10",
+        "22",
+        "10/11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 19,
+      "questionSha256": "9647f331d5a7582d0bc4bea54870216d4f24c4c9dadf4cdf28948f3deac7f4d2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10"
+      },
+      "responseExpressions": [
+        "400",
+        "40",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 20,
+      "questionSha256": "471bf9ee68caeb902eeb1033d5562bc19bce0be7f51a3bdc2e658c4dd0d21ae2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "59049",
+        "243",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 21,
+      "questionSha256": "98bd75360b06dbab04e7b022a97d28420e22c578db9a736db49c5f64fd05961d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "2",
+        "36",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 22,
+      "questionSha256": "69871d99c6508e1d248c00844b1be06f63061f12b72dc593589bf760caa61c4b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "6/5",
+        "2",
+        "33/10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 23,
+      "questionSha256": "020be1e87cc928476f654f05deb70adc6aea47a983147f85ce94ff838ecdac89"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "1/2",
+        "5/11",
+        "100/121"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 24,
+      "questionSha256": "0c031c3ecf84fe7d295b41ffc4ba01c48747b5f4e9d6161473c8f2626f99ea51"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10/11",
+        "11/10",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 25,
+      "questionSha256": "5e1a23ed81edd63687088d7f7b411c4fbc0ee67aae103076f92236170c912e02"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "9",
+        "90",
+        "9"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 26,
+      "questionSha256": "d7df9df80ddbb5af3287b297beefe80632afa7552ca7b3666fba4d6e052fa8e8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11"
+      },
+      "responseExpressions": [
+        "10",
+        "110",
+        "1100/21"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 27,
+      "questionSha256": "9fa39ec961230819b78f1c2d55eab7d2d03bfa1566d78e4e2659a992987bd5ff"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "a": "10",
+        "b": "11",
+        "c": "12"
+      },
+      "responseExpressions": [
+        "33",
+        "72",
+        "126"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 28,
+      "questionSha256": "b2fbebb5c8a61de0f07f3c3eeaed7435f1bee839da3def033afc2726a0d0f6cd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "3",
+        "33",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 29,
+      "questionSha256": "141dccf2f8c44d3e5873a83015b4ab54dafde4a2333fe4430b6c219eca3e47b9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "4",
+        "92",
+        "2112"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 30,
+      "questionSha256": "5e4d5348ba6833e07e0498e886f52962171d7c766a606f660b384c9f34c11214"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11/12",
+        "23/12",
+        "23"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 31,
+      "questionSha256": "c61aae4eff4c3b9d13b97fe4ca1cbd48b0bc901615905603d73ccb7c0788c49d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "13/11",
+        "2/11",
+        "169/121"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 32,
+      "questionSha256": "7c406e20fbc7a46262f6f052a1665995d806d9251a85325cd37adfb3ad196537"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11",
+        "24",
+        "11/12"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 33,
+      "questionSha256": "fe07ba63d8ace03a4243258c0b5caa3cdb189e27ab0db99f5d8b67f7c24efc28"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11"
+      },
+      "responseExpressions": [
+        "484",
+        "44",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 34,
+      "questionSha256": "b28e1abdd4fd5123275cd5ee24af68e8731e1c5bd7339393018941172b63e579"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "90000",
+        "300",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 35,
+      "questionSha256": "6199bb6f8dbe65eb07e870f37a0d3659218afa8c2e138ddb5eba2c866877a3fc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "2",
+        "40",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 36,
+      "questionSha256": "5016127d7dcc5f5d4c31291703c232d598b5785b250f0ebd4dc93e9b32a9d3f8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "13/11",
+        "2",
+        "36/11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 37,
+      "questionSha256": "021e552a148849abb585ca19b2e94945e5bf807e9227103b8db3c204afd58bdf"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "1/2",
+        "11/24",
+        "121/144"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 38,
+      "questionSha256": "e5edcfb227baa124b12b5c3693306a745f0953c58bb492ca3de8228fcc3fc750"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "11/12",
+        "12/11",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 39,
+      "questionSha256": "42d257a552020aea43b2fa9800d73271ef8de9d59a3f7630d9ee1849faa89cb0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "10",
+        "110",
+        "10"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 40,
+      "questionSha256": "369532e3aac51144ed0a44eaaa5e665b2c8cac048ffe2cc74944993834cf3e85"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12"
+      },
+      "responseExpressions": [
+        "10",
+        "120",
+        "1200/23"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 41,
+      "questionSha256": "e50dd1fb8270cf85024c56fd7248e773cb07999ea1a5fbc8f7dd9f87ae3d92af"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "a": "11",
+        "b": "12",
+        "c": "13"
+      },
+      "responseExpressions": [
+        "36",
+        "78",
+        "138"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 42,
+      "questionSha256": "0ac2714669d04771bc396adabf3eb5dcc64cf1d5b0aca2477653c5a15057331f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "3",
+        "36",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 43,
+      "questionSha256": "1f1a76184f9ea03cf5cf7a5da13f22e5b4b84df984acf571e90981a5f006d78d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "4",
+        "100",
+        "2496"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 44,
+      "questionSha256": "570fc53534532fd330d89b684bdbfa0743bacbbfe5042f6db0e6b06d84cba185"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12/13",
+        "25/13",
+        "25"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 45,
+      "questionSha256": "ad30609f6e86d4726305939c2e8532450648f0a6b533fc8375c42804e1980b0c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "7/6",
+        "1/6",
+        "49/36"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 46,
+      "questionSha256": "88c38648c3944ca99b4964f5c268e6c1857dea35c0d8ef8c57bbf1b69324fc01"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12",
+        "26",
+        "12/13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 47,
+      "questionSha256": "a424ea093d398f91325ef5479daf4f406faea193f90e421b35f003d579b25606"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12"
+      },
+      "responseExpressions": [
+        "576",
+        "48",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 48,
+      "questionSha256": "1e52dc376aa72216258880eaa14f4936deebf996bd8f527fd770f605201d342c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "131769",
+        "363",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 49,
+      "questionSha256": "378556bbc2c17396b7971a35cc9a59c90184dcf14b582785ccb11117853faa88"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "2",
+        "44",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 50,
+      "questionSha256": "3aba293971a5444602e07f468dc7bb3510aa39eca1e0143cbd84c192af9acceb"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "7/6",
+        "2",
+        "13/4"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 51,
+      "questionSha256": "804f14bd916f7cf25d36063e894d837b32236f4520043a907510b40cd61cdcbc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "1/2",
+        "6/13",
+        "144/169"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 52,
+      "questionSha256": "db5f947c28fb349a25ee929548f7fc7ab0e6db11098b172b6b815a0446c87650"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "12/13",
+        "13/12",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 53,
+      "questionSha256": "12998eab29823bcb03ed757c72ba265aaeb1f241cf29299098b6a5cbee47a3d4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "11",
+        "132",
+        "11"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 54,
+      "questionSha256": "cc70e57ee86209663883d3a4c1674ecff266a5632ffda99afa2dc22f92860f90"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13"
+      },
+      "responseExpressions": [
+        "10",
+        "130",
+        "52"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 55,
+      "questionSha256": "b0eb5fb48f790e443afbb70cd5b709028bff048028434b028b06a0224a70a31c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "a": "12",
+        "b": "13",
+        "c": "14"
+      },
+      "responseExpressions": [
+        "39",
+        "84",
+        "150"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 56,
+      "questionSha256": "cc8df0a50611373ce97cf96b2928532df160c510e5618db08de27090cd01cbf6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-total",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "3",
+        "39",
+        "3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 57,
+      "questionSha256": "d2c76e36b3f6fcee2955bc86479d226818c6b386dc2440625b0a4d504a7b6507"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "divide-difference",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "4",
+        "108",
+        "2912"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 58,
+      "questionSha256": "76bc1fdaa13760bf155f30f9580c753c0f940787c72138dd82b3074a87769480"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "componendo",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13/14",
+        "27/14",
+        "27"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 59,
+      "questionSha256": "171680fd47cffc87c7973da1566a0176da140110a7cafc435209499e4f42e4e9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "dividendo",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "15/13",
+        "2/13",
+        "225/169"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 60,
+      "questionSha256": "2645dfec6e40cbc91419968974b8127d10c1b038a9509bb112295de14c16a4d5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fourth-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13",
+        "28",
+        "13/14"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 61,
+      "questionSha256": "71b268a1c0204659bd23032f398a45dd37019a3d1a064a4901ef864db2159255"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "third-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13"
+      },
+      "responseExpressions": [
+        "676",
+        "52",
+        "1/2"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 62,
+      "questionSha256": "2c4af69bda3fcf61f9203f5bf61d0f9b8c2581e5a308eeb07964a9aea36798ef"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mean-proportional",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "186624",
+        "432",
+        "10/3"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 63,
+      "questionSha256": "9f1e488f08ab861013308f752e0e046fa0ba1d36e8f8417da1ba09e67a385fe8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "continued-proportion",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "2",
+        "48",
+        "7"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 64,
+      "questionSha256": "54f0f9c08548ab51b05d50edb5efa5cda0615673b4ee3125ec1dacc86f39a1f2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "chain-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14",
+        "c": "15"
+      },
+      "responseExpressions": [
+        "15/13",
+        "2",
+        "42/13"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 65,
+      "questionSha256": "1f2126ac8aed101bd1048492326f193d9e09c66f36ba258d6ca24e82060572fa"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "compound-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14",
+        "c": "15"
+      },
+      "responseExpressions": [
+        "1/2",
+        "13/28",
+        "169/196"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 66,
+      "questionSha256": "693d8703be2618d5cae6ad17f5fcca9960bb013dce830e8b830fe832cefff56c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "inverse-ratio",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "13/14",
+        "14/13",
+        "1"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 67,
+      "questionSha256": "01032d208f993590a9a51c20bbfd2a8e06968399e4780f2d4d10b6486d8e77a7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ratio-change",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "12",
+        "156",
+        "12"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 68,
+      "questionSha256": "1606e74e2af06918db8a8c88ccae3192da9ff8c3b50061a1b069f9bc943ca030"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mixture",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14"
+      },
+      "responseExpressions": [
+        "10",
+        "140",
+        "1400/27"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 69,
+      "questionSha256": "bbf3b35351d88486e3f818fd726bbcfb794a32f5e24b47f9a7654d208f54983c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "three-way-share",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "a": "13",
+        "b": "14",
+        "c": "15"
+      },
+      "responseExpressions": [
+        "42",
+        "90",
+        "162"
+      ],
+      "modelChapter": 11,
+      "file": "target-v1/sq.json",
+      "itemInFile": 70,
+      "questionSha256": "1a18d033c90cea3ffabb94bc60373c58e9c8cb10695956f71132680c94931dca"
+    }
+  ],
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

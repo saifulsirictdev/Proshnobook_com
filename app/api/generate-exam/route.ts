@@ -28,8 +28,9 @@ export async function POST(req: Request) {
       });
       const requestedType = questionType || type || "MCQ";
       const questions = rows.flatMap<Record<string, unknown>>((q) => {
-        const options = q.options as Record<string, unknown>;
-        if (!options || typeof options !== "object") return [];
+        const rawOptions = q.options as Record<string, unknown>;
+        if (!rawOptions || typeof rawOptions !== "object") return [];
+        const { _provenance, ...options } = rawOptions;
         if (!q.correct) {
           if ((requestedType === "SHORT" || requestedType === "MIXED") && !options.stimulus && !options.subQuestions && !options.k) return [{ type: "SHORT", question: q.text, answer: q.explanation }];
           if ((requestedType === "CQ" || requestedType === "MIXED") && (options.stimulus || options.subQuestions || options.k)) return [{ type: "CQ", question: q.text, ...options }];

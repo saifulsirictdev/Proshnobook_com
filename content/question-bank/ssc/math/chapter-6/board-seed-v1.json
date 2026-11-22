@@ -1,0 +1,261 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৬ষ্ঠ অধ্যায়: রেখা, কোণ ও ত্রিভুজ",
+  "book": "Proshnobook — বোর্ড সংকলন ও চিত্রসহ রেখা-কোণ-ত্রিভুজ অনুশীলনী",
+  "edition": "Chapter 6 target v1; DRAFT; শিক্ষক ও diagram semantic review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $\\angle ABC=30^\\circ$, $\\angle ACB=60^\\circ$ এবং BA-কে A-এর দিকে D পর্যন্ত বাড়ানো হয়েছে। $\\angle CAD$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-cumilla-24.svg)",
+      "options": {
+        "A": "$30^\\circ$",
+        "B": "$60^\\circ$",
+        "C": "$90^\\circ$",
+        "D": "$100^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "বহিঃকোণ $\\angle CAD=\\angle ABC+\\angle ACB=30^\\circ+60^\\circ=90^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "24"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\angle X=70^\\circ$, $XY=XZ$ এবং OY ও OZ হলো $\\angle Y$ ও $\\angle Z$-এর সমদ্বিখণ্ডক। $\\angle XYZ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-jashore-18.svg)",
+      "options": {
+        "A": "$70^\\circ$",
+        "B": "$65^\\circ$",
+        "C": "$60^\\circ$",
+        "D": "$55^\\circ$"
+      },
+      "correct": "D",
+      "explanation": "সমদ্বিবাহু ত্রিভুজের ভূমির কোণ সমান। তাই $\\angle XYZ=(180^\\circ-70^\\circ)/2=55^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 18",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "18"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\angle X=70^\\circ$, $XY=XZ$ এবং OY ও OZ হলো $\\angle Y$ ও $\\angle Z$-এর সমদ্বিখণ্ডক। $\\angle YOZ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-jashore-19.svg)",
+      "options": {
+        "A": "$55^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$125^\\circ$",
+        "D": "$130^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "দুটি ভূমির কোণের অর্ধেকের যোগ $55^\\circ$। তাই $\\angle YOZ=180^\\circ-55^\\circ=125^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 19",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "19"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে $AB=AC$, $\\angle A=40^\\circ$ এবং BC-কে D পর্যন্ত বাড়ানো হয়েছে। $\\frac12\\angle ACD$ কত ডিগ্রি?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-barishal-27.svg)",
+      "options": {
+        "A": "$55^\\circ$",
+        "B": "$90^\\circ$",
+        "C": "$110^\\circ$",
+        "D": "$140^\\circ$"
+      },
+      "correct": "A",
+      "explanation": "ভূমির কোণ $70^\\circ$। বহিঃকোণ $\\angle ACD=110^\\circ$; এর অর্ধেক $55^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 199; PDF 58; প্রশ্ন 27",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "barishal",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 58,
+          "printedPage": "199",
+          "questionNumber": "27"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ PQR-এর $\\angle P$ ও $\\angle Q$-এর সমদ্বিখণ্ডকদ্বয় O-তে মিলিত এবং $\\angle R=40^\\circ$। $\\angle POQ$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-mymensingh-9.svg)",
+      "options": {
+        "A": "$70^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$130^\\circ$",
+        "D": "$140^\\circ$"
+      },
+      "correct": "B",
+      "explanation": "$\\angle POQ=90^\\circ+\\angle R/2=90^\\circ+20^\\circ=110^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 218; PDF 77; প্রশ্ন 9",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "mymensingh",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 77,
+          "printedPage": "218",
+          "questionNumber": "9"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ PQR-এর $\\angle Q$ ও $\\angle R$-এর সমদ্বিখণ্ডকদ্বয় O-তে মিলিত হয়েছে। $\\angle P=50^\\circ$ হলে $\\angle QOR$ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-dinajpur-12.svg)",
+      "options": {
+        "A": "$40^\\circ$",
+        "B": "$65^\\circ$",
+        "C": "$115^\\circ$",
+        "D": "$130^\\circ$"
+      },
+      "correct": "C",
+      "explanation": "$\\angle QOR=90^\\circ+\\angle P/2=115^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 12",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "12"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিনটি কোণের অনুপাত $2:3:5$ হলে বৃহত্তম কোণটি ক্ষুদ্রতম কোণটির কত গুণ?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-rajshahi-3.svg)",
+      "options": {
+        "A": "$\\frac52$",
+        "B": "$\\frac53$",
+        "C": "$\\frac35$",
+        "D": "$\\frac25$"
+      },
+      "correct": "A",
+      "explanation": "কোণগুলো $2t,3t,5t$। তাই বৃহত্তম/ক্ষুদ্রতম $=5t/(2t)=5/2$।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 3",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "3"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য 10 সেমি হলে এর মধ্যমার দৈর্ঘ্য কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-sylhet-6.svg)",
+      "options": {
+        "A": "$5\\sqrt3$ সেমি",
+        "B": "$3\\sqrt5$ সেমি",
+        "C": "75 সেমি",
+        "D": "125 সেমি"
+      },
+      "correct": "A",
+      "explanation": "মধ্যমা লম্বও; ভূমিকে ৫ ও ৫ সেমিতে ভাগ করে। পিথাগোরাসে মধ্যমা $=\\sqrt{10^2-5^2}=5\\sqrt3$ সেমি।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 6",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "6"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজ সর্বসম আঁকতে ন্যূনতম কতটি উপাত্ত প্রয়োজন?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct": "C",
+      "explanation": "যথাযথ তিনটি স্বাধীন উপাত্ত লাগে—যেমন তিন বাহু, অথবা দুই বাহু ও অন্তর্ভুক্ত কোণ। যেকোনো তিনটি কোণ দিলেই সর্বসম হয় না।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 7",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "7"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "সুষম পঞ্চভুজের শীর্ষবিন্দুতে উৎপন্ন অন্তঃকোণের পরিমাণ কত?\n![জ্যামিতিক চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch6-v1/source-dhaka-5.svg)",
+      "options": {
+        "A": "$108^\\circ$",
+        "B": "$110^\\circ$",
+        "C": "$120^\\circ$",
+        "D": "$144^\\circ$"
+      },
+      "correct": "A",
+      "explanation": "পঞ্চভুজকে তিন ত্রিভুজে ভাগ করলে কোণসমষ্টি $3\\times180^\\circ=540^\\circ$। সুষম হওয়ায় প্রতিটি অন্তঃকোণ $540^\\circ/5=108^\\circ$।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "5"
+        }
+      ]
+    }
+  ]
+}

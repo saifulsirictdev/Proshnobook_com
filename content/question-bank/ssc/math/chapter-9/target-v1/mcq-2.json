@@ -1,0 +1,1411 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৯ম অধ্যায়: ত্রিকোণমিতিক অনুপাত",
+  "book": "Proshnobook — সংকলন ও নিজস্ব চিত্রসহ ত্রিকোণমিতি অনুশীলনী",
+  "edition": "Chapter 9 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় বিপরীত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{10 \\sqrt{461}}{461}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{461}}{10}$",
+        "B": "$1 - \\frac{10 \\sqrt{461}}{461}$",
+        "C": "$\\frac{5 \\sqrt{461}}{461}$",
+        "D": "$\\frac{10 \\sqrt{461}}{461}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{19 \\sqrt{461}}{461}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{461}}{19}$",
+        "B": "$1 - \\frac{19 \\sqrt{461}}{461}$",
+        "C": "$\\frac{19 \\sqrt{461}}{922}$",
+        "D": "$\\frac{19 \\sqrt{461}}{461}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় বিপরীত বাহু/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{10}{19}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{19}{10}$",
+        "B": "$\\frac{9}{19}$",
+        "C": "$\\frac{5}{19}$",
+        "D": "$\\frac{10}{19}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় অতিভুজ/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{461}}{10}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{461}}{5}$",
+        "B": "$\\frac{\\sqrt{461}}{10}$",
+        "C": "$\\frac{10 \\sqrt{461}}{461}$",
+        "D": "$\\frac{\\sqrt{461}}{20}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় অতিভুজ/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{461}}{19}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{19 \\sqrt{461}}{461}$",
+        "B": "$\\frac{\\sqrt{461}}{38}$",
+        "C": "$\\frac{2 \\sqrt{461}}{19}$",
+        "D": "$\\frac{\\sqrt{461}}{19}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=10 ও AB=19 সেমি। $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cot-sides-8.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{461}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{19}{10}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cot-sides/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{10}{19}$",
+        "B": "$\\frac{19}{20}$",
+        "C": "$\\frac{19}{5}$",
+        "D": "$\\frac{19}{10}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{20}{101}$ হলে $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-from-sin-8.svg)",
+      "explanation": "$\\cos\\theta=\\sqrt{1-(20/101)^2}=\\frac{99}{101}$; সূক্ষ্মকোণে ধনাত্মক মূল। সঠিক উত্তর $\\frac{99}{101}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-from-sin/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{99}{101}$",
+        "B": "$\\frac{101}{99}$",
+        "C": "$\\frac{2}{101}$",
+        "D": "$\\frac{99}{202}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{99}{101}$ হলে $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-from-cos-8.svg)",
+      "explanation": "$\\sin\\theta=\\sqrt{1-(99/101)^2}=\\frac{20}{101}$। সঠিক উত্তর $\\frac{20}{101}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-from-cos/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{20}{101}$",
+        "B": "$\\frac{101}{20}$",
+        "C": "$\\frac{81}{101}$",
+        "D": "$\\frac{10}{101}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cot\\theta=\\frac{19}{10}$ হলে $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-from-cot-8.svg)",
+      "explanation": "tan ও cot পরস্পরের বিপরীত অনুপাত। সঠিক উত্তর $\\frac{10}{19}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-from-cot/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{10}{19}$",
+        "B": "$\\frac{19}{10}$",
+        "C": "$\\frac{9}{19}$",
+        "D": "$\\frac{5}{19}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{20}{99}$ হলে $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-from-tan-8.svg)",
+      "explanation": "$\\sec\\theta=\\sqrt{1+(20/99)^2}=\\frac{101}{99}$। সঠিক উত্তর $\\frac{101}{99}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-from-tan/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{101}{99}$",
+        "B": "$\\frac{99}{101}$",
+        "C": "$\\frac{101}{198}$",
+        "D": "$\\frac{202}{99}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{99}{101}$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-from-cos-8.svg)",
+      "explanation": "$\\sin\\theta=\\frac{20}{101}$; বিপরীত নিলে cosec। সঠিক উত্তর $\\frac{101}{20}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-from-cos/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{101}{40}$",
+        "B": "$\\frac{101}{10}$",
+        "C": "$\\frac{101}{20}$",
+        "D": "$\\frac{20}{101}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{20}{99}$ হলে $\\sin\\theta+\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-plus-cos-8.svg)",
+      "explanation": "অতিভুজ অনুপাতে 101; তাই যোগ $(20+99)/101$। সঠিক উত্তর $\\frac{119}{101}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-plus-cos/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{119}{101}$",
+        "B": "$\\frac{101}{119}$",
+        "C": "$\\frac{119}{202}$",
+        "D": "$\\frac{238}{101}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{20}{101}$ হলে $\\sin\\theta\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-cos-product-8.svg)",
+      "explanation": "ধনাত্মক $\\cos\\theta=\\frac{99}{101}$; sin ও cos গুণ করি। সঠিক উত্তর $\\frac{1980}{10201}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-cos-product/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{990}{10201}$",
+        "B": "$\\frac{1980}{10201}$",
+        "C": "$\\frac{10201}{1980}$",
+        "D": "$\\frac{8221}{10201}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $9\\sin^2\\theta+9\\cos^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-pythagorean-8.svg)",
+      "explanation": "$\\sin^2\\theta+\\cos^2\\theta=1$; সাধারণ গুণক বাইরে নিই। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/pythagorean/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$18$",
+        "B": "$9$",
+        "C": "$\\frac{1}{9}$",
+        "D": "$\\frac{9}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $10\\sec^2\\theta-10\\tan^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-identity-8.svg)",
+      "explanation": "$\\sec^2\\theta-\\tan^2\\theta=1$। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-identity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$\\frac{1}{10}$",
+        "C": "$5$",
+        "D": "$20$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $11\\operatorname{cosec}^2\\theta-11\\cot^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-identity-8.svg)",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-identity/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{11}{2}$",
+        "B": "$22$",
+        "C": "$11$",
+        "D": "$\\frac{1}{11}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{20}{101}$ হলে $\\sin(90^\\circ-\\theta)$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cofunction-8.svg)",
+      "explanation": "পূরক কোণের sin = cos। প্রদত্ত sin থেকে ধনাত্মক cos নির্ণয় করি। সঠিক উত্তর $\\frac{99}{101}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cofunction/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2}{101}$",
+        "B": "$\\frac{99}{202}$",
+        "C": "$\\frac{99}{101}$",
+        "D": "$\\frac{101}{99}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে B সমকোণ; $\\angle A=9x^\\circ$, $\\angle C=10x^\\circ$। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-complement-equation-8.svg)",
+      "explanation": "দুটি সূক্ষ্মকোণের যোগ ৯০°; x-এর সহগদ্বয় যোগ করে ৯০ ভাগ করি। সঠিক উত্তর $\\frac{90}{19}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/complement-equation/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{180}{19}$",
+        "B": "$\\frac{90}{19}$",
+        "C": "$\\frac{19}{90}$",
+        "D": "$\\frac{45}{19}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$8\\sin0^\\circ+10\\cos90^\\circ$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-standard-values-8.svg)",
+      "explanation": "$\\sin0^\\circ=\\cos90^\\circ=0$। চিত্রটি সূক্ষ্মকোণের reference; প্রান্তিক মান সরাসরি বিশেষ মানের সারণি থেকে নেওয়া হয়। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/standard-values/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$1$",
+        "D": "$\\frac{1}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{20}{99}$ হলে $(\\sin\\theta+\\cos\\theta)^2-(\\sin\\theta-\\cos\\theta)^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sum-difference-8.svg)",
+      "explanation": "বর্গের অন্তরের বীজগাণিতিক সূত্রে রাশি $4\\sin\\theta\\cos\\theta$। অনুপাত থেকে দুই মান বসাই। সঠিক উত্তর $\\frac{7920}{10201}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sum-difference/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2281}{10201}$",
+        "B": "$\\frac{3960}{10201}$",
+        "C": "$\\frac{7920}{10201}$",
+        "D": "$\\frac{10201}{7920}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় বিপরীত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{11 \\sqrt{562}}{562}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 - \\frac{11 \\sqrt{562}}{562}$",
+        "B": "$\\frac{11 \\sqrt{562}}{1124}$",
+        "C": "$\\frac{11 \\sqrt{562}}{562}$",
+        "D": "$\\frac{\\sqrt{562}}{11}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{21 \\sqrt{562}}{562}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 - \\frac{21 \\sqrt{562}}{562}$",
+        "B": "$\\frac{21 \\sqrt{562}}{1124}$",
+        "C": "$\\frac{21 \\sqrt{562}}{562}$",
+        "D": "$\\frac{\\sqrt{562}}{21}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় বিপরীত বাহু/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{11}{21}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{10}{21}$",
+        "B": "$\\frac{11}{42}$",
+        "C": "$\\frac{11}{21}$",
+        "D": "$\\frac{21}{11}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় অতিভুজ/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{562}}{11}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{562}}{11}$",
+        "B": "$\\frac{11 \\sqrt{562}}{562}$",
+        "C": "$\\frac{\\sqrt{562}}{22}$",
+        "D": "$\\frac{2 \\sqrt{562}}{11}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় অতিভুজ/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{562}}{21}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{562}}{42}$",
+        "B": "$\\frac{2 \\sqrt{562}}{21}$",
+        "C": "$\\frac{\\sqrt{562}}{21}$",
+        "D": "$\\frac{21 \\sqrt{562}}{562}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=11 ও AB=21 সেমি। $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cot-sides-9.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{562}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{21}{11}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cot-sides/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{21}{22}$",
+        "B": "$\\frac{42}{11}$",
+        "C": "$\\frac{21}{11}$",
+        "D": "$\\frac{11}{21}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{22}{122}$ হলে $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-from-sin-9.svg)",
+      "explanation": "$\\cos\\theta=\\sqrt{1-(22/122)^2}=\\frac{60}{61}$; সূক্ষ্মকোণে ধনাত্মক মূল। সঠিক উত্তর $\\frac{60}{61}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-from-sin/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{61}{60}$",
+        "B": "$\\frac{1}{61}$",
+        "C": "$\\frac{30}{61}$",
+        "D": "$\\frac{60}{61}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{120}{122}$ হলে $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-from-cos-9.svg)",
+      "explanation": "$\\sin\\theta=\\sqrt{1-(120/122)^2}=\\frac{11}{61}$। সঠিক উত্তর $\\frac{11}{61}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-from-cos/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{61}{11}$",
+        "B": "$\\frac{50}{61}$",
+        "C": "$\\frac{11}{122}$",
+        "D": "$\\frac{11}{61}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cot\\theta=\\frac{21}{11}$ হলে $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-from-cot-9.svg)",
+      "explanation": "tan ও cot পরস্পরের বিপরীত অনুপাত। সঠিক উত্তর $\\frac{11}{21}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-from-cot/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{21}{11}$",
+        "B": "$\\frac{10}{21}$",
+        "C": "$\\frac{11}{42}$",
+        "D": "$\\frac{11}{21}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{22}{120}$ হলে $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-from-tan-9.svg)",
+      "explanation": "$\\sec\\theta=\\sqrt{1+(22/120)^2}=\\frac{61}{60}$। সঠিক উত্তর $\\frac{61}{60}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-from-tan/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{60}{61}$",
+        "B": "$\\frac{61}{120}$",
+        "C": "$\\frac{61}{30}$",
+        "D": "$\\frac{61}{60}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{120}{122}$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-from-cos-9.svg)",
+      "explanation": "$\\sin\\theta=\\frac{11}{61}$; বিপরীত নিলে cosec। সঠিক উত্তর $\\frac{61}{11}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-from-cos/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{122}{11}$",
+        "B": "$\\frac{61}{11}$",
+        "C": "$\\frac{11}{61}$",
+        "D": "$\\frac{61}{22}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{22}{120}$ হলে $\\sin\\theta+\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-plus-cos-9.svg)",
+      "explanation": "অতিভুজ অনুপাতে 122; তাই যোগ $(22+120)/122$। সঠিক উত্তর $\\frac{71}{61}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-plus-cos/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{61}{71}$",
+        "B": "$\\frac{71}{122}$",
+        "C": "$\\frac{142}{61}$",
+        "D": "$\\frac{71}{61}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{22}{122}$ হলে $\\sin\\theta\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-cos-product-9.svg)",
+      "explanation": "ধনাত্মক $\\cos\\theta=\\frac{60}{61}$; sin ও cos গুণ করি। সঠিক উত্তর $\\frac{660}{3721}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-cos-product/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{660}{3721}$",
+        "B": "$\\frac{3721}{660}$",
+        "C": "$\\frac{3061}{3721}$",
+        "D": "$\\frac{330}{3721}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $10\\sin^2\\theta+10\\cos^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-pythagorean-9.svg)",
+      "explanation": "$\\sin^2\\theta+\\cos^2\\theta=1$; সাধারণ গুণক বাইরে নিই। সঠিক উত্তর $10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/pythagorean/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10$",
+        "B": "$\\frac{1}{10}$",
+        "C": "$5$",
+        "D": "$20$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $11\\sec^2\\theta-11\\tan^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-identity-9.svg)",
+      "explanation": "$\\sec^2\\theta-\\tan^2\\theta=1$। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-identity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1}{11}$",
+        "B": "$\\frac{11}{2}$",
+        "C": "$22$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $12\\operatorname{cosec}^2\\theta-12\\cot^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-identity-9.svg)",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-identity/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$12$",
+        "C": "$\\frac{1}{12}$",
+        "D": "$6$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{22}{122}$ হলে $\\sin(90^\\circ-\\theta)$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cofunction-9.svg)",
+      "explanation": "পূরক কোণের sin = cos। প্রদত্ত sin থেকে ধনাত্মক cos নির্ণয় করি। সঠিক উত্তর $\\frac{60}{61}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cofunction/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{30}{61}$",
+        "B": "$\\frac{60}{61}$",
+        "C": "$\\frac{61}{60}$",
+        "D": "$\\frac{1}{61}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে B সমকোণ; $\\angle A=10x^\\circ$, $\\angle C=11x^\\circ$। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-complement-equation-9.svg)",
+      "explanation": "দুটি সূক্ষ্মকোণের যোগ ৯০°; x-এর সহগদ্বয় যোগ করে ৯০ ভাগ করি। সঠিক উত্তর $\\frac{30}{7}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/complement-equation/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{30}{7}$",
+        "B": "$\\frac{7}{30}$",
+        "C": "$\\frac{15}{7}$",
+        "D": "$\\frac{60}{7}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$9\\cos0^\\circ+11\\sin90^\\circ$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-standard-values-9.svg)",
+      "explanation": "$\\cos0^\\circ=\\sin90^\\circ=1$। চিত্রটি সূক্ষ্মকোণের reference; প্রান্তিক মান সরাসরি বিশেষ মানের সারণি থেকে নেওয়া হয়। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/standard-values/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$\\frac{1}{20}$",
+        "C": "$10$",
+        "D": "$40$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{22}{120}$ হলে $(\\sin\\theta+\\cos\\theta)^2-(\\sin\\theta-\\cos\\theta)^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sum-difference-9.svg)",
+      "explanation": "বর্গের অন্তরের বীজগাণিতিক সূত্রে রাশি $4\\sin\\theta\\cos\\theta$। অনুপাত থেকে দুই মান বসাই। সঠিক উত্তর $\\frac{2640}{3721}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sum-difference/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1320}{3721}$",
+        "B": "$\\frac{2640}{3721}$",
+        "C": "$\\frac{3721}{2640}$",
+        "D": "$\\frac{1081}{3721}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় বিপরীত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{12 \\sqrt{673}}{673}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{6 \\sqrt{673}}{673}$",
+        "B": "$\\frac{12 \\sqrt{673}}{673}$",
+        "C": "$\\frac{\\sqrt{673}}{12}$",
+        "D": "$1 - \\frac{12 \\sqrt{673}}{673}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{23 \\sqrt{673}}{673}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{23 \\sqrt{673}}{1346}$",
+        "B": "$\\frac{23 \\sqrt{673}}{673}$",
+        "C": "$\\frac{\\sqrt{673}}{23}$",
+        "D": "$1 - \\frac{23 \\sqrt{673}}{673}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় বিপরীত বাহু/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{12}{23}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{6}{23}$",
+        "B": "$\\frac{12}{23}$",
+        "C": "$\\frac{23}{12}$",
+        "D": "$\\frac{11}{23}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় অতিভুজ/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{673}}{12}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{12 \\sqrt{673}}{673}$",
+        "B": "$\\frac{\\sqrt{673}}{24}$",
+        "C": "$\\frac{\\sqrt{673}}{6}$",
+        "D": "$\\frac{\\sqrt{673}}{12}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় অতিভুজ/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{673}}{23}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2 \\sqrt{673}}{23}$",
+        "B": "$\\frac{\\sqrt{673}}{23}$",
+        "C": "$\\frac{23 \\sqrt{673}}{673}$",
+        "D": "$\\frac{\\sqrt{673}}{46}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=12 ও AB=23 সেমি। $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cot-sides-10.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{673}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{23}{12}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cot-sides/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{23}{6}$",
+        "B": "$\\frac{23}{12}$",
+        "C": "$\\frac{12}{23}$",
+        "D": "$\\frac{23}{24}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{24}{145}$ হলে $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-from-sin-10.svg)",
+      "explanation": "$\\cos\\theta=\\sqrt{1-(24/145)^2}=\\frac{143}{145}$; সূক্ষ্মকোণে ধনাত্মক মূল। সঠিক উত্তর $\\frac{143}{145}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-from-sin/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2}{145}$",
+        "B": "$\\frac{143}{290}$",
+        "C": "$\\frac{143}{145}$",
+        "D": "$\\frac{145}{143}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{143}{145}$ হলে $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-from-cos-10.svg)",
+      "explanation": "$\\sin\\theta=\\sqrt{1-(143/145)^2}=\\frac{24}{145}$। সঠিক উত্তর $\\frac{24}{145}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-from-cos/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{121}{145}$",
+        "B": "$\\frac{12}{145}$",
+        "C": "$\\frac{24}{145}$",
+        "D": "$\\frac{145}{24}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cot\\theta=\\frac{23}{12}$ হলে $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-from-cot-10.svg)",
+      "explanation": "tan ও cot পরস্পরের বিপরীত অনুপাত। সঠিক উত্তর $\\frac{12}{23}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-from-cot/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{11}{23}$",
+        "B": "$\\frac{6}{23}$",
+        "C": "$\\frac{12}{23}$",
+        "D": "$\\frac{23}{12}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{24}{143}$ হলে $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-from-tan-10.svg)",
+      "explanation": "$\\sec\\theta=\\sqrt{1+(24/143)^2}=\\frac{145}{143}$। সঠিক উত্তর $\\frac{145}{143}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-from-tan/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{145}{286}$",
+        "B": "$\\frac{290}{143}$",
+        "C": "$\\frac{145}{143}$",
+        "D": "$\\frac{143}{145}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{143}{145}$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-from-cos-10.svg)",
+      "explanation": "$\\sin\\theta=\\frac{24}{145}$; বিপরীত নিলে cosec। সঠিক উত্তর $\\frac{145}{24}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-from-cos/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{145}{24}$",
+        "B": "$\\frac{24}{145}$",
+        "C": "$\\frac{145}{48}$",
+        "D": "$\\frac{145}{12}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{24}{143}$ হলে $\\sin\\theta+\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-plus-cos-10.svg)",
+      "explanation": "অতিভুজ অনুপাতে 145; তাই যোগ $(24+143)/145$। সঠিক উত্তর $\\frac{167}{145}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-plus-cos/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{167}{290}$",
+        "B": "$\\frac{334}{145}$",
+        "C": "$\\frac{167}{145}$",
+        "D": "$\\frac{145}{167}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{24}{145}$ হলে $\\sin\\theta\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-cos-product-10.svg)",
+      "explanation": "ধনাত্মক $\\cos\\theta=\\frac{143}{145}$; sin ও cos গুণ করি। সঠিক উত্তর $\\frac{3432}{21025}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-cos-product/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{21025}{3432}$",
+        "B": "$\\frac{17593}{21025}$",
+        "C": "$\\frac{1716}{21025}$",
+        "D": "$\\frac{3432}{21025}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $11\\sin^2\\theta+11\\cos^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-pythagorean-10.svg)",
+      "explanation": "$\\sin^2\\theta+\\cos^2\\theta=1$; সাধারণ গুণক বাইরে নিই। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/pythagorean/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1}{11}$",
+        "B": "$\\frac{11}{2}$",
+        "C": "$22$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $12\\sec^2\\theta-12\\tan^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-identity-10.svg)",
+      "explanation": "$\\sec^2\\theta-\\tan^2\\theta=1$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-identity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$24$",
+        "C": "$12$",
+        "D": "$\\frac{1}{12}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $13\\operatorname{cosec}^2\\theta-13\\cot^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-identity-10.svg)",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-identity/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$\\frac{1}{13}$",
+        "C": "$\\frac{13}{2}$",
+        "D": "$26$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{24}{145}$ হলে $\\sin(90^\\circ-\\theta)$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cofunction-10.svg)",
+      "explanation": "পূরক কোণের sin = cos। প্রদত্ত sin থেকে ধনাত্মক cos নির্ণয় করি। সঠিক উত্তর $\\frac{143}{145}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cofunction/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{143}{145}$",
+        "B": "$\\frac{145}{143}$",
+        "C": "$\\frac{2}{145}$",
+        "D": "$\\frac{143}{290}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে B সমকোণ; $\\angle A=11x^\\circ$, $\\angle C=12x^\\circ$। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-complement-equation-10.svg)",
+      "explanation": "দুটি সূক্ষ্মকোণের যোগ ৯০°; x-এর সহগদ্বয় যোগ করে ৯০ ভাগ করি। সঠিক উত্তর $\\frac{90}{23}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/complement-equation/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{23}{90}$",
+        "B": "$\\frac{45}{23}$",
+        "C": "$\\frac{180}{23}$",
+        "D": "$\\frac{90}{23}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$10\\sin30^\\circ+12\\cos60^\\circ$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-standard-values-10.svg)",
+      "explanation": "$\\sin30^\\circ=\\cos60^\\circ=1/2$; সহগের যোগের অর্ধেক। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/standard-values/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1}{11}$",
+        "B": "$\\frac{11}{2}$",
+        "C": "$22$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{24}{143}$ হলে $(\\sin\\theta+\\cos\\theta)^2-(\\sin\\theta-\\cos\\theta)^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sum-difference-10.svg)",
+      "explanation": "বর্গের অন্তরের বীজগাণিতিক সূত্রে রাশি $4\\sin\\theta\\cos\\theta$। অনুপাত থেকে দুই মান বসাই। সঠিক উত্তর $\\frac{13728}{21025}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sum-difference/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13728}{21025}$",
+        "B": "$\\frac{21025}{13728}$",
+        "C": "$\\frac{7297}{21025}$",
+        "D": "$\\frac{6864}{21025}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় বিপরীত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{13 \\sqrt{794}}{794}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13 \\sqrt{794}}{794}$",
+        "B": "$\\frac{\\sqrt{794}}{13}$",
+        "C": "$1 - \\frac{13 \\sqrt{794}}{794}$",
+        "D": "$\\frac{13 \\sqrt{794}}{1588}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{25 \\sqrt{794}}{794}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25 \\sqrt{794}}{794}$",
+        "B": "$\\frac{\\sqrt{794}}{25}$",
+        "C": "$1 - \\frac{25 \\sqrt{794}}{794}$",
+        "D": "$\\frac{25 \\sqrt{794}}{1588}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় বিপরীত বাহু/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{13}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13}{25}$",
+        "B": "$\\frac{25}{13}$",
+        "C": "$\\frac{12}{25}$",
+        "D": "$\\frac{13}{50}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় অতিভুজ/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{794}}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{794}}{26}$",
+        "B": "$\\frac{2 \\sqrt{794}}{13}$",
+        "C": "$\\frac{\\sqrt{794}}{13}$",
+        "D": "$\\frac{13 \\sqrt{794}}{794}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় অতিভুজ/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{\\sqrt{794}}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{\\sqrt{794}}{25}$",
+        "B": "$\\frac{25 \\sqrt{794}}{794}$",
+        "C": "$\\frac{\\sqrt{794}}{50}$",
+        "D": "$\\frac{2 \\sqrt{794}}{25}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=13 ও AB=25 সেমি। $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cot-sides-11.svg)",
+      "explanation": "পিথাগোরাসে $AC=\\sqrt{794}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{25}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cot-sides/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25}{13}$",
+        "B": "$\\frac{13}{25}$",
+        "C": "$\\frac{25}{26}$",
+        "D": "$\\frac{50}{13}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{26}{170}$ হলে $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-from-sin-11.svg)",
+      "explanation": "$\\cos\\theta=\\sqrt{1-(26/170)^2}=\\frac{84}{85}$; সূক্ষ্মকোণে ধনাত্মক মূল। সঠিক উত্তর $\\frac{84}{85}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-from-sin/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{42}{85}$",
+        "B": "$\\frac{84}{85}$",
+        "C": "$\\frac{85}{84}$",
+        "D": "$\\frac{1}{85}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{168}{170}$ হলে $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-from-cos-11.svg)",
+      "explanation": "$\\sin\\theta=\\sqrt{1-(168/170)^2}=\\frac{13}{85}$। সঠিক উত্তর $\\frac{13}{85}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-from-cos/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13}{170}$",
+        "B": "$\\frac{13}{85}$",
+        "C": "$\\frac{85}{13}$",
+        "D": "$\\frac{72}{85}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cot\\theta=\\frac{25}{13}$ হলে $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-from-cot-11.svg)",
+      "explanation": "tan ও cot পরস্পরের বিপরীত অনুপাত। সঠিক উত্তর $\\frac{13}{25}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-from-cot/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13}{50}$",
+        "B": "$\\frac{13}{25}$",
+        "C": "$\\frac{25}{13}$",
+        "D": "$\\frac{12}{25}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{26}{168}$ হলে $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-from-tan-11.svg)",
+      "explanation": "$\\sec\\theta=\\sqrt{1+(26/168)^2}=\\frac{85}{84}$। সঠিক উত্তর $\\frac{85}{84}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-from-tan/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{85}{42}$",
+        "B": "$\\frac{85}{84}$",
+        "C": "$\\frac{84}{85}$",
+        "D": "$\\frac{85}{168}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{168}{170}$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-from-cos-11.svg)",
+      "explanation": "$\\sin\\theta=\\frac{13}{85}$; বিপরীত নিলে cosec। সঠিক উত্তর $\\frac{85}{13}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-from-cos/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{13}{85}$",
+        "B": "$\\frac{85}{26}$",
+        "C": "$\\frac{170}{13}$",
+        "D": "$\\frac{85}{13}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{26}{168}$ হলে $\\sin\\theta+\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-plus-cos-11.svg)",
+      "explanation": "অতিভুজ অনুপাতে 170; তাই যোগ $(26+168)/170$। সঠিক উত্তর $\\frac{97}{85}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-plus-cos/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{194}{85}$",
+        "B": "$\\frac{97}{85}$",
+        "C": "$\\frac{85}{97}$",
+        "D": "$\\frac{97}{170}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{26}{170}$ হলে $\\sin\\theta\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-cos-product-11.svg)",
+      "explanation": "ধনাত্মক $\\cos\\theta=\\frac{84}{85}$; sin ও cos গুণ করি। সঠিক উত্তর $\\frac{1092}{7225}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-cos-product/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{6133}{7225}$",
+        "B": "$\\frac{546}{7225}$",
+        "C": "$\\frac{1092}{7225}$",
+        "D": "$\\frac{7225}{1092}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $12\\sin^2\\theta+12\\cos^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-pythagorean-11.svg)",
+      "explanation": "$\\sin^2\\theta+\\cos^2\\theta=1$; সাধারণ গুণক বাইরে নিই। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/pythagorean/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6$",
+        "B": "$24$",
+        "C": "$12$",
+        "D": "$\\frac{1}{12}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $13\\sec^2\\theta-13\\tan^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-identity-11.svg)",
+      "explanation": "$\\sec^2\\theta-\\tan^2\\theta=1$। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-identity/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$13$",
+        "C": "$\\frac{1}{13}$",
+        "D": "$\\frac{13}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $14\\operatorname{cosec}^2\\theta-14\\cot^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-identity-11.svg)",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-identity/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1}{14}$",
+        "B": "$7$",
+        "C": "$28$",
+        "D": "$14$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{26}{170}$ হলে $\\sin(90^\\circ-\\theta)$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cofunction-11.svg)",
+      "explanation": "পূরক কোণের sin = cos। প্রদত্ত sin থেকে ধনাত্মক cos নির্ণয় করি। সঠিক উত্তর $\\frac{84}{85}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cofunction/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{85}{84}$",
+        "B": "$\\frac{1}{85}$",
+        "C": "$\\frac{42}{85}$",
+        "D": "$\\frac{84}{85}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে B সমকোণ; $\\angle A=12x^\\circ$, $\\angle C=13x^\\circ$। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-complement-equation-11.svg)",
+      "explanation": "দুটি সূক্ষ্মকোণের যোগ ৯০°; x-এর সহগদ্বয় যোগ করে ৯০ ভাগ করি। সঠিক উত্তর $\\frac{18}{5}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/complement-equation/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{9}{5}$",
+        "B": "$\\frac{36}{5}$",
+        "C": "$\\frac{18}{5}$",
+        "D": "$\\frac{5}{18}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$11\\sin0^\\circ+13\\cos90^\\circ$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-standard-values-11.svg)",
+      "explanation": "$\\sin0^\\circ=\\cos90^\\circ=0$। চিত্রটি সূক্ষ্মকোণের reference; প্রান্তিক মান সরাসরি বিশেষ মানের সারণি থেকে নেওয়া হয়। সঠিক উত্তর $0$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/standard-values/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1}{2}$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$1$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{26}{168}$ হলে $(\\sin\\theta+\\cos\\theta)^2-(\\sin\\theta-\\cos\\theta)^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sum-difference-11.svg)",
+      "explanation": "বর্গের অন্তরের বীজগাণিতিক সূত্রে রাশি $4\\sin\\theta\\cos\\theta$। অনুপাত থেকে দুই মান বসাই। সঠিক উত্তর $\\frac{4368}{7225}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sum-difference/11; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{7225}{4368}$",
+        "B": "$\\frac{2857}{7225}$",
+        "C": "$\\frac{2184}{7225}$",
+        "D": "$\\frac{4368}{7225}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় বিপরীত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{14 \\sqrt{37}}{185}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{5 \\sqrt{37}}{14}$",
+        "B": "$1 - \\frac{14 \\sqrt{37}}{185}$",
+        "C": "$\\frac{7 \\sqrt{37}}{185}$",
+        "D": "$\\frac{14 \\sqrt{37}}{185}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/অতিভুজ নিতে হবে। সঠিক উত্তর $\\frac{27 \\sqrt{37}}{185}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{5 \\sqrt{37}}{27}$",
+        "B": "$1 - \\frac{27 \\sqrt{37}}{185}$",
+        "C": "$\\frac{27 \\sqrt{37}}{370}$",
+        "D": "$\\frac{27 \\sqrt{37}}{185}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় বিপরীত বাহু/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{14}{27}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{27}{14}$",
+        "B": "$\\frac{13}{27}$",
+        "C": "$\\frac{7}{27}$",
+        "D": "$\\frac{14}{27}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় অতিভুজ/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{5 \\sqrt{37}}{14}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{5 \\sqrt{37}}{7}$",
+        "B": "$\\frac{5 \\sqrt{37}}{14}$",
+        "C": "$\\frac{14 \\sqrt{37}}{185}$",
+        "D": "$\\frac{5 \\sqrt{37}}{28}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় অতিভুজ/সন্নিহিত বাহু নিতে হবে। সঠিক উত্তর $\\frac{5 \\sqrt{37}}{27}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{27 \\sqrt{37}}{185}$",
+        "B": "$\\frac{5 \\sqrt{37}}{54}$",
+        "C": "$\\frac{10 \\sqrt{37}}{27}$",
+        "D": "$\\frac{5 \\sqrt{37}}{27}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ত্রিভুজে B সমকোণ, θ=∠BAC; BC=14 ও AB=27 সেমি। $\\cot\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cot-sides-12.svg)",
+      "explanation": "পিথাগোরাসে $AC=5 \\sqrt{37}$ সেমি। সংজ্ঞায় সন্নিহিত বাহু/বিপরীত বাহু নিতে হবে। সঠিক উত্তর $\\frac{27}{14}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cot-sides/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{14}{27}$",
+        "B": "$\\frac{27}{28}$",
+        "C": "$\\frac{27}{7}$",
+        "D": "$\\frac{27}{14}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{28}{197}$ হলে $\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cos-from-sin-12.svg)",
+      "explanation": "$\\cos\\theta=\\sqrt{1-(28/197)^2}=\\frac{195}{197}$; সূক্ষ্মকোণে ধনাত্মক মূল। সঠিক উত্তর $\\frac{195}{197}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cos-from-sin/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{195}{197}$",
+        "B": "$\\frac{197}{195}$",
+        "C": "$\\frac{2}{197}$",
+        "D": "$\\frac{195}{394}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{195}{197}$ হলে $\\sin\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-from-cos-12.svg)",
+      "explanation": "$\\sin\\theta=\\sqrt{1-(195/197)^2}=\\frac{28}{197}$। সঠিক উত্তর $\\frac{28}{197}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-from-cos/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{28}{197}$",
+        "B": "$\\frac{197}{28}$",
+        "C": "$\\frac{169}{197}$",
+        "D": "$\\frac{14}{197}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cot\\theta=\\frac{27}{14}$ হলে $\\tan\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-tan-from-cot-12.svg)",
+      "explanation": "tan ও cot পরস্পরের বিপরীত অনুপাত। সঠিক উত্তর $\\frac{14}{27}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/tan-from-cot/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{14}{27}$",
+        "B": "$\\frac{27}{14}$",
+        "C": "$\\frac{13}{27}$",
+        "D": "$\\frac{7}{27}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{28}{195}$ হলে $\\sec\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-from-tan-12.svg)",
+      "explanation": "$\\sec\\theta=\\sqrt{1+(28/195)^2}=\\frac{197}{195}$। সঠিক উত্তর $\\frac{197}{195}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-from-tan/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{197}{195}$",
+        "B": "$\\frac{195}{197}$",
+        "C": "$\\frac{197}{390}$",
+        "D": "$\\frac{394}{195}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\cos\\theta=\\frac{195}{197}$ হলে $\\operatorname{cosec}\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-from-cos-12.svg)",
+      "explanation": "$\\sin\\theta=\\frac{28}{197}$; বিপরীত নিলে cosec। সঠিক উত্তর $\\frac{197}{28}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-from-cos/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{197}{56}$",
+        "B": "$\\frac{197}{14}$",
+        "C": "$\\frac{197}{28}$",
+        "D": "$\\frac{28}{197}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{28}{195}$ হলে $\\sin\\theta+\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-plus-cos-12.svg)",
+      "explanation": "অতিভুজ অনুপাতে 197; তাই যোগ $(28+195)/197$। সঠিক উত্তর $\\frac{223}{197}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-plus-cos/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{223}{197}$",
+        "B": "$\\frac{197}{223}$",
+        "C": "$\\frac{223}{394}$",
+        "D": "$\\frac{446}{197}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{28}{197}$ হলে $\\sin\\theta\\cos\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sin-cos-product-12.svg)",
+      "explanation": "ধনাত্মক $\\cos\\theta=\\frac{195}{197}$; sin ও cos গুণ করি। সঠিক উত্তর $\\frac{5460}{38809}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sin-cos-product/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2730}{38809}$",
+        "B": "$\\frac{5460}{38809}$",
+        "C": "$\\frac{38809}{5460}$",
+        "D": "$\\frac{33349}{38809}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $13\\sin^2\\theta+13\\cos^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-pythagorean-12.svg)",
+      "explanation": "$\\sin^2\\theta+\\cos^2\\theta=1$; সাধারণ গুণক বাইরে নিই। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/pythagorean/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$26$",
+        "B": "$13$",
+        "C": "$\\frac{1}{13}$",
+        "D": "$\\frac{13}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $14\\sec^2\\theta-14\\tan^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sec-identity-12.svg)",
+      "explanation": "$\\sec^2\\theta-\\tan^2\\theta=1$। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sec-identity/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$14$",
+        "B": "$\\frac{1}{14}$",
+        "C": "$7$",
+        "D": "$28$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ হলে $15\\operatorname{cosec}^2\\theta-15\\cot^2\\theta$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cosec-identity-12.svg)",
+      "explanation": "$\\operatorname{cosec}^2\\theta-\\cot^2\\theta=1$। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cosec-identity/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{15}{2}$",
+        "B": "$30$",
+        "C": "$15$",
+        "D": "$\\frac{1}{15}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\sin\\theta=\\frac{28}{197}$ হলে $\\sin(90^\\circ-\\theta)$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-cofunction-12.svg)",
+      "explanation": "পূরক কোণের sin = cos। প্রদত্ত sin থেকে ধনাত্মক cos নির্ণয় করি। সঠিক উত্তর $\\frac{195}{197}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/cofunction/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2}{197}$",
+        "B": "$\\frac{195}{394}$",
+        "C": "$\\frac{195}{197}$",
+        "D": "$\\frac{197}{195}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে B সমকোণ; $\\angle A=13x^\\circ$, $\\angle C=14x^\\circ$। x কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-complement-equation-12.svg)",
+      "explanation": "দুটি সূক্ষ্মকোণের যোগ ৯০°; x-এর সহগদ্বয় যোগ করে ৯০ ভাগ করি। সঠিক উত্তর $\\frac{10}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/complement-equation/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{20}{3}$",
+        "B": "$\\frac{10}{3}$",
+        "C": "$\\frac{3}{10}$",
+        "D": "$\\frac{5}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$12\\cos0^\\circ+14\\sin90^\\circ$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-standard-values-12.svg)",
+      "explanation": "$\\cos0^\\circ=\\sin90^\\circ=1$। চিত্রটি সূক্ষ্মকোণের reference; প্রান্তিক মান সরাসরি বিশেষ মানের সারণি থেকে নেওয়া হয়। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/standard-values/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$26$",
+        "C": "$\\frac{1}{26}$",
+        "D": "$13$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\theta$ সূক্ষ্মকোণ ও $\\tan\\theta=\\frac{28}{195}$ হলে $(\\sin\\theta+\\cos\\theta)^2-(\\sin\\theta-\\cos\\theta)^2$ কত?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch9-v1/mcq-sum-difference-12.svg)",
+      "explanation": "বর্গের অন্তরের বীজগাণিতিক সূত্রে রাশি $4\\sin\\theta\\cos\\theta$। অনুপাত থেকে দুই মান বসাই। সঠিক উত্তর $\\frac{21840}{38809}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch9/MCQ/sum-difference/12; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{16969}{38809}$",
+        "B": "$\\frac{10920}{38809}$",
+        "C": "$\\frac{21840}{38809}$",
+        "D": "$\\frac{38809}{21840}$"
+      },
+      "correct": "C"
+    }
+  ]
+}

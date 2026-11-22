@@ -1,0 +1,4986 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "targetMet": true,
+  "teacherApproved": false,
+  "targetCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "boardCounts": {
+    "MCQ": 5,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 145,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "fullChapterTextbookRead": false,
+  "boardSearchExhaustive": false,
+  "originalSourcePreference": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111"
+  },
+  "familyCounts": {
+    "MCQ": {
+      "change-base": 5,
+      "characteristic-large": 5,
+      "characteristic-small": 5,
+      "cyclic-logs": 5,
+      "decimal-scale": 5,
+      "finite-domain": 5,
+      "fraction-base": 5,
+      "fractional-index": 5,
+      "given-logs": 5,
+      "linear-exponent": 5,
+      "log-definition": 5,
+      "log-power": 5,
+      "log-product": 5,
+      "log-quotient": 5,
+      "log-reciprocal": 5,
+      "log-root": 5,
+      "negative-fraction": 5,
+      "negative-index": 5,
+      "nested-log": 5,
+      "power-of-power": 5,
+      "power-product": 5,
+      "power-quotient": 5,
+      "reciprocal-logs": 5,
+      "subunit-log": 5,
+      "sum-not-product": 5,
+      "unknown-argument": 5,
+      "unknown-base": 5,
+      "unknown-index": 5,
+      "zero-index": 5
+    },
+    "CQ": {
+      "bar-characteristic": 5,
+      "base-change": 5,
+      "common-log-scaling": 5,
+      "log-definition-domain": 5,
+      "log-equation-roots": 5,
+      "product-quotient-laws": 5,
+      "quadratic-in-power": 5,
+      "rational-exponents": 5,
+      "root-and-subunit-base": 5,
+      "same-base-powers": 5
+    },
+    "SQ": {
+      "change-base": 5,
+      "characteristic-large": 5,
+      "characteristic-small": 5,
+      "fraction-index": 5,
+      "log-definition": 5,
+      "log-product": 5,
+      "log-quotient": 5,
+      "mantissa-scaling": 5,
+      "negative-index": 5,
+      "power-division": 5,
+      "power-of-power": 5,
+      "power-product": 5,
+      "solve-exponent": 5,
+      "unknown-base": 5
+    }
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 93959,
+      "sha256": "4162c493351dfd6954d2f2521821cfc20808a002842defcea990dfa10f9ed73c"
+    },
+    {
+      "file": "target-v1/written.json",
+      "bytes": 117750,
+      "sha256": "29cbd94236a47e232c5898ba18c9bc3391de0e0990945dfb94695c4aa23e7e09"
+    }
+  ],
+  "limitations": [
+    "Numeric target met: 5 visually reviewed board-compilation MCQ and 265 original parameterised practice items, not 270 distinct concepts.",
+    "Board/year metadata comes from compilation headers, not independent authentication of official original papers. No source CQ/SQ is claimed.",
+    "Independent teacher review pending. Original questions are not board or verbatim NCTB/internet questions.",
+    "Board-source collection is not exhaustive. The full current-edition NCTB chapter was not obtained/read; source preference was not exhaustively fulfilled.",
+    "Exact answer, domain and rendering checks do not replace independent semantic/teacher review. No database import, approved stock, deployment or live receipt."
+  ],
+  "itemReviews": [
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 1,
+      "visualRead": true,
+      "source": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "4"
+        }
+      ],
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "sqrt(3)",
+        "2",
+        "2*sqrt(3)",
+        "4"
+      ],
+      "correct": "D",
+      "adaptation": "শর্ত ও বিকল্পের ক্রম অক্ষত রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "questionSha256": "d49d1e4dbe9719838f26e0f4b0f6f181253b2c40eac338e1115392806c1c4c42",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 1
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 2,
+      "visualRead": true,
+      "source": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "22"
+        }
+      ],
+      "answerExpression": "-2",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "-2",
+        "-3"
+      ],
+      "correct": "C",
+      "adaptation": "শর্ত ও বিকল্পের ক্রম অক্ষত রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "questionSha256": "e56f434573b11445dd5363028e8e815d962f17880e60b96935378e9f9498eacd",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 2
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 3,
+      "visualRead": true,
+      "source": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "23"
+        }
+      ],
+      "answerExpression": "2*log(5)/log(10)",
+      "choiceExpressions": [
+        "log(6)/log(10) + 2",
+        "3*log(5)/log(10)",
+        "2*log(5)/log(10)",
+        "log(5)/log(10)"
+      ],
+      "correct": "C",
+      "adaptation": "শর্ত ও বিকল্পের ক্রম অক্ষত রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "questionSha256": "0caed9ea7d3c6369be47df3cff8883298d42f5823185b28b85e0f52e49b82fec",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 3
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 4,
+      "visualRead": true,
+      "source": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "6"
+        }
+      ],
+      "correct": "C",
+      "adaptation": "শর্ত ও বিকল্পের ক্রম অক্ষত রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "choiceSolutionSets": {
+        "A": [
+          2
+        ],
+        "B": [
+          -4,
+          4
+        ],
+        "C": [
+          4
+        ],
+        "D": [
+          16
+        ]
+      },
+      "expectedAllowedBases": [
+        4
+      ],
+      "questionSha256": "1992f281c53a7b7a1d63f5924b23d51898bb2f72d541a5e5f1b647fc3dc16f64",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 4
+    },
+    {
+      "origin": "TRANSCRIBED_BOARD_COMPILATION",
+      "family": "board-seed",
+      "variant": 5,
+      "visualRead": true,
+      "source": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "5"
+        }
+      ],
+      "answerExpression": "-6",
+      "choiceExpressions": [
+        "-6",
+        "-5",
+        "5",
+        "6"
+      ],
+      "correct": "A",
+      "adaptation": "শর্ত ও বিকল্পের ক্রম অক্ষত রেখে Unicode/LaTeX-এ প্রতিলিপি; সমাধান নতুনভাবে লেখা।",
+      "questionSha256": "9539d1a2624d987943d59587c00f20abb39c7fd0ed473177e01368744e4fc40e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 5
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 1,
+      "answerExpression": "81",
+      "choiceExpressions": [
+        "80",
+        "83",
+        "81",
+        "82"
+      ],
+      "correct": "C",
+      "questionSha256": "e3083c64975d056cfdb15458400d06d079f22aed7379913147ebbd9ef9fdc028",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 6
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 2,
+      "answerExpression": "1024",
+      "choiceExpressions": [
+        "1026",
+        "1024",
+        "1025",
+        "1023"
+      ],
+      "correct": "B",
+      "questionSha256": "a302bb5564dd5ccf1436cb7aac529dc030af90dba24f5b49e517e6747e63c7f8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 7
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 3,
+      "answerExpression": "15625",
+      "choiceExpressions": [
+        "15625",
+        "15626",
+        "15624",
+        "15627"
+      ],
+      "correct": "A",
+      "questionSha256": "47457b9e89239366004d31bf3973e485c9ac06afd952297041ae4135922de8e0",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 8
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 4,
+      "answerExpression": "279936",
+      "choiceExpressions": [
+        "279937",
+        "279935",
+        "279938",
+        "279936"
+      ],
+      "correct": "D",
+      "questionSha256": "5604c9e9a278ab2883ad3a5069461aced9f7ad656d3b76e29866560ba2d8ac3c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 9
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 5,
+      "answerExpression": "5764801",
+      "choiceExpressions": [
+        "5764800",
+        "5764803",
+        "5764801",
+        "5764802"
+      ],
+      "correct": "C",
+      "questionSha256": "d589589d2f51e91ea1871ecad708a764f01d9f5ae82774d5c823b603c6b67435",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 10
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-quotient",
+      "variant": 1,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "11",
+        "9",
+        "10",
+        "8"
+      ],
+      "correct": "B",
+      "questionSha256": "401042e13f7cc6097310c3e541aec7f11c028f8ab2d1b8d45178e87df60e93a1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 11
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-quotient",
+      "variant": 2,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "16",
+        "17",
+        "15",
+        "18"
+      ],
+      "correct": "A",
+      "questionSha256": "7119c795766e15188f15799f8e4d3601489bb74031feccf29777d9361e43d496",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 12
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-quotient",
+      "variant": 3,
+      "answerExpression": "25",
+      "choiceExpressions": [
+        "26",
+        "24",
+        "27",
+        "25"
+      ],
+      "correct": "D",
+      "questionSha256": "2e1ec3f62895d18f0648a8a4235987989985954d652befe4bf3d86d292c03c9f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 13
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-quotient",
+      "variant": 4,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "35",
+        "38",
+        "36",
+        "37"
+      ],
+      "correct": "C",
+      "questionSha256": "ae0644cda13871dad272abb1b28e3ec64111964f57573d2e42d42630a424bbc9",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 14
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-quotient",
+      "variant": 5,
+      "answerExpression": "49",
+      "choiceExpressions": [
+        "51",
+        "49",
+        "50",
+        "48"
+      ],
+      "correct": "B",
+      "questionSha256": "8e06099bb216c76da21da5464e6f807b081c3a8dc8a7fb3af81d5e3e30039e36",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 15
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 1,
+      "answerExpression": "81",
+      "choiceExpressions": [
+        "83",
+        "81",
+        "82",
+        "80"
+      ],
+      "correct": "B",
+      "questionSha256": "22ca3df337dcf2c4e529d2f12cdc7a523fa620bb1f556beb8d164bc3e6ca57ee",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 16
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 2,
+      "answerExpression": "4096",
+      "choiceExpressions": [
+        "4096",
+        "4097",
+        "4095",
+        "4098"
+      ],
+      "correct": "A",
+      "questionSha256": "8de0df207cb15a47fab8751b6f0bdbbca3a2b989aeeb090405459ce690f8ef56",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 17
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 3,
+      "answerExpression": "390625",
+      "choiceExpressions": [
+        "390626",
+        "390624",
+        "390627",
+        "390625"
+      ],
+      "correct": "D",
+      "questionSha256": "1a6a7c05a3c5386392ce59a9a8018c9a0b696cab0c2531eb37f2f7458a2199fd",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 18
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 4,
+      "answerExpression": "60466176",
+      "choiceExpressions": [
+        "60466175",
+        "60466178",
+        "60466176",
+        "60466177"
+      ],
+      "correct": "C",
+      "questionSha256": "dba31dd34cd9e0ace6ca8730c061c1dc03f7dcd7d88c32d88a5ae98b27b6a869",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 19
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 5,
+      "answerExpression": "13841287201",
+      "choiceExpressions": [
+        "13841287203",
+        "13841287201",
+        "13841287202",
+        "13841287200"
+      ],
+      "correct": "B",
+      "questionSha256": "a06e83fb22ea5ae40912b9ae4508300190cff1a1a0ba84c7cc00d2b876a25556",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 20
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "zero-index",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "9bb7584c3693a1f48b0f13e5dbf3e8208ead628f573c63780d4d3c6ec0edb6da",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 21
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "zero-index",
+      "variant": 2,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "b89a8bd6c5e1dfc684dd89fa897267b5b7e7176ddc968477c71d37294ff1e770",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 22
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "zero-index",
+      "variant": 3,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "correct": "D",
+      "questionSha256": "7aa2b13b435d20fde6a1305870196283dcb788a6ff0388c6b48c520fa0d60d8e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 23
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "zero-index",
+      "variant": 4,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "798d6c4d9f989ff6e7a4a89e46e9902d1d74b3816323ae5defb1128b0a369eae",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 24
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "zero-index",
+      "variant": 5,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "4219ac11e41df6bc490880a153f7d99b5a3d6d8eeb8bf1e3dfaa0f4e2ce8e69b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 25
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 1,
+      "answerExpression": "1/9",
+      "choiceExpressions": [
+        "19/9",
+        "1/9",
+        "10/9",
+        "-8/9"
+      ],
+      "correct": "B",
+      "questionSha256": "831420cedf4e11366fd7f2bb69a7758235edec96c159d2fcca088695c5802772",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 26
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 2,
+      "answerExpression": "1/64",
+      "choiceExpressions": [
+        "1/64",
+        "65/64",
+        "-63/64",
+        "129/64"
+      ],
+      "correct": "A",
+      "questionSha256": "49cd35e18de634248fce55b074f94be32955b8c2a13864e20c472c630a8e9410",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 27
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 3,
+      "answerExpression": "1/625",
+      "choiceExpressions": [
+        "626/625",
+        "-624/625",
+        "1251/625",
+        "1/625"
+      ],
+      "correct": "D",
+      "questionSha256": "103c4b81839e6f7e7e815886eb3d7c61cf2d3158d640f93a36efeec8917c5ec3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 28
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 4,
+      "answerExpression": "1/7776",
+      "choiceExpressions": [
+        "-7775/7776",
+        "15553/7776",
+        "1/7776",
+        "7777/7776"
+      ],
+      "correct": "C",
+      "questionSha256": "0764204d271c4c774173ee1394687cf7ca7b4d473e3f46ffb1f55e138e9e8f79",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 29
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 5,
+      "answerExpression": "1/117649",
+      "choiceExpressions": [
+        "235299/117649",
+        "1/117649",
+        "117650/117649",
+        "-117648/117649"
+      ],
+      "correct": "B",
+      "questionSha256": "bac3576f6b4e3145f188d0d470f606a97ab9fb4ecc47187f48caa25b3a7e5602",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 30
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fractional-index",
+      "variant": 1,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "11",
+        "9"
+      ],
+      "correct": "D",
+      "questionSha256": "2416093575c8e4e06adfc4680b0406f923f109410aa140b1cb22b8123c6f6ad8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 31
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fractional-index",
+      "variant": 2,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "15",
+        "18",
+        "16",
+        "17"
+      ],
+      "correct": "C",
+      "questionSha256": "0a74cb7dd8839c5f4dc0f4a6f43ad7149835e69d85137e908546f853a812942a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 32
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fractional-index",
+      "variant": 3,
+      "answerExpression": "25",
+      "choiceExpressions": [
+        "27",
+        "25",
+        "26",
+        "24"
+      ],
+      "correct": "B",
+      "questionSha256": "b2ec197cbc590acef1c69305b4f4cf7c32386cdca727b9e4c56bb59bba66497a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 33
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fractional-index",
+      "variant": 4,
+      "answerExpression": "36",
+      "choiceExpressions": [
+        "36",
+        "37",
+        "35",
+        "38"
+      ],
+      "correct": "A",
+      "questionSha256": "6ccdaa7f0396927bb4f6658941bd947f82bdf304d962cef42cfce3756517c144",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 34
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fractional-index",
+      "variant": 5,
+      "answerExpression": "49",
+      "choiceExpressions": [
+        "50",
+        "48",
+        "51",
+        "49"
+      ],
+      "correct": "D",
+      "questionSha256": "02772390cbd408d35c2e6e44d949481f17027b37f91beab13fbd25a961de32b7",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 35
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-fraction",
+      "variant": 1,
+      "answerExpression": "1/9",
+      "choiceExpressions": [
+        "-8/9",
+        "19/9",
+        "1/9",
+        "10/9"
+      ],
+      "correct": "C",
+      "questionSha256": "dd636c85e1e118a3dd4bf6119d8c4de06887825841bf3281e1e12924fa61d9a5",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 36
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-fraction",
+      "variant": 2,
+      "answerExpression": "1/16",
+      "choiceExpressions": [
+        "33/16",
+        "1/16",
+        "17/16",
+        "-15/16"
+      ],
+      "correct": "B",
+      "questionSha256": "9793f81bed009ada7ada1e35f5ade2ddb588c5f6b33822cc2a08813df12430ca",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 37
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-fraction",
+      "variant": 3,
+      "answerExpression": "1/25",
+      "choiceExpressions": [
+        "1/25",
+        "26/25",
+        "-24/25",
+        "51/25"
+      ],
+      "correct": "A",
+      "questionSha256": "1abdf62a2be2a462f0320d835dada266f87df1f17baa4460b07f9510207a45cf",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 38
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-fraction",
+      "variant": 4,
+      "answerExpression": "1/36",
+      "choiceExpressions": [
+        "37/36",
+        "-35/36",
+        "73/36",
+        "1/36"
+      ],
+      "correct": "D",
+      "questionSha256": "1fa37c14cc4cad5eae81e08572320d804908e092f7de1a8d33ca06fb2845db45",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 39
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-fraction",
+      "variant": 5,
+      "answerExpression": "1/49",
+      "choiceExpressions": [
+        "-48/49",
+        "99/49",
+        "1/49",
+        "50/49"
+      ],
+      "correct": "C",
+      "questionSha256": "f1eca031da250e50e2ee4f67d240189180ae1ae73f6133dc46aed9666e1d53e8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 40
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-base",
+      "variant": 1,
+      "answerExpression": "9/4",
+      "choiceExpressions": [
+        "5/4",
+        "17/4",
+        "9/4",
+        "13/4"
+      ],
+      "correct": "C",
+      "questionSha256": "b019d75c51d7aaa4bb4dd576fc5d27d0b43a6faa1946182800e7ebbeaff975a3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 41
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-base",
+      "variant": 2,
+      "answerExpression": "16/9",
+      "choiceExpressions": [
+        "34/9",
+        "16/9",
+        "25/9",
+        "7/9"
+      ],
+      "correct": "B",
+      "questionSha256": "1230523d6da4a733190e051c965850db6f8ce7aed1b31c3c0eb26bf398c05b1b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 42
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-base",
+      "variant": 3,
+      "answerExpression": "25/16",
+      "choiceExpressions": [
+        "25/16",
+        "41/16",
+        "9/16",
+        "57/16"
+      ],
+      "correct": "A",
+      "questionSha256": "3b14f135a48af18b671101271194b0112968626849980cfa85e3ea451aa9a623",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 43
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-base",
+      "variant": 4,
+      "answerExpression": "36/25",
+      "choiceExpressions": [
+        "61/25",
+        "11/25",
+        "86/25",
+        "36/25"
+      ],
+      "correct": "D",
+      "questionSha256": "a515aa064c77b08b2c00afb0d78ab639a35eee56897ee01d23c381ec2f4623e1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 44
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-base",
+      "variant": 5,
+      "answerExpression": "49/36",
+      "choiceExpressions": [
+        "13/36",
+        "121/36",
+        "49/36",
+        "85/36"
+      ],
+      "correct": "C",
+      "questionSha256": "36210ffb40614a784ce4da790af84d3fb5cbb65f79d3b1bde9ac92d94957fe03",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 45
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-index",
+      "variant": 1,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "correct": "C",
+      "questionSha256": "ac9b5d07a388cef9c4ecf53a6c6a1cdeb9891d332eb1920b4dcc4aa55d183f36",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 46
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-index",
+      "variant": 2,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "6",
+        "4"
+      ],
+      "correct": "B",
+      "questionSha256": "e1d8dc2fb9045338803f3094ebd9f71155f3650a69e29d9fd7cfc2a9a8bfef71",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 47
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-index",
+      "variant": 3,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correct": "A",
+      "questionSha256": "2656d6a17c31fa64e29747f2f2f82111c5ff965d6af764cdf60a15d2391b6505",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 48
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-index",
+      "variant": 4,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ],
+      "correct": "D",
+      "questionSha256": "3c40869e95cd5ed83fa8aad1711a648e7e3dba7b8f6d7fe9775073f96a55383b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 49
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-index",
+      "variant": 5,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "7",
+        "10",
+        "8",
+        "9"
+      ],
+      "correct": "C",
+      "questionSha256": "3cf54c6932c80244e3f5be5c5fbe178725e2aa655546fac9649f007b72295239",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 50
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear-exponent",
+      "variant": 1,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "correct": "A",
+      "questionSha256": "aa7b3a5f0c3f46d898b2c3d5aa454b447bcf6c9396e17b71a7ab74b7c4a957a0",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 51
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear-exponent",
+      "variant": 2,
+      "answerExpression": "5/2",
+      "choiceExpressions": [
+        "7/2",
+        "3/2",
+        "9/2",
+        "5/2"
+      ],
+      "correct": "D",
+      "questionSha256": "055fcd77a6ae12383a3c5631d75e7708d1218f4dc236b74a558a228f43c0883e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 52
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear-exponent",
+      "variant": 3,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "4e642742f03a378fecb59ae9578cbad4242620afc3a062c997819f0f83e9f279",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 53
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear-exponent",
+      "variant": 4,
+      "answerExpression": "7/2",
+      "choiceExpressions": [
+        "11/2",
+        "7/2",
+        "9/2",
+        "5/2"
+      ],
+      "correct": "B",
+      "questionSha256": "333b687213295df15b3c52212c5fee5b1ab99f6daf4c8e55f0ba414cbe832e17",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 54
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "linear-exponent",
+      "variant": 5,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correct": "A",
+      "questionSha256": "250085f651d646786f372bf8aa724899edf26694927762c00bfb50d51ca8ab5c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 55
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "subunit-log",
+      "variant": 1,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-1",
+        "0",
+        "-2",
+        "1"
+      ],
+      "correct": "A",
+      "questionSha256": "f42882a3adcf813cc3b35b166c15052d32ec74fd8f7e29f6f2d8f987d7d72831",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 56
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "subunit-log",
+      "variant": 2,
+      "answerExpression": "-2",
+      "choiceExpressions": [
+        "-1",
+        "-3",
+        "0",
+        "-2"
+      ],
+      "correct": "D",
+      "questionSha256": "05871c4c4985902ba87f17d5567b3189dfae94bb673651233c46f5f9b406b65b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 57
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "subunit-log",
+      "variant": 3,
+      "answerExpression": "-3",
+      "choiceExpressions": [
+        "-4",
+        "-1",
+        "-3",
+        "-2"
+      ],
+      "correct": "C",
+      "questionSha256": "2fb7bc9c4d109972795d5df19323c9088be0d0980c2ee513a6939bd833299b5a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 58
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "subunit-log",
+      "variant": 4,
+      "answerExpression": "-4",
+      "choiceExpressions": [
+        "-2",
+        "-4",
+        "-3",
+        "-5"
+      ],
+      "correct": "B",
+      "questionSha256": "f72ff9b32ecf8482093ca13b8e15e33fdb389986ece3005a9e421501455feddf",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 59
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "subunit-log",
+      "variant": 5,
+      "answerExpression": "-5",
+      "choiceExpressions": [
+        "-5",
+        "-4",
+        "-6",
+        "-3"
+      ],
+      "correct": "A",
+      "questionSha256": "8b296d941d13cfdcca361b497e2c126512e87acc34575465a5270d1f4e3f5c2e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 60
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 1,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "correct": "B",
+      "questionSha256": "fa68c43033c8e10935962b051ec19258522efeb33a810684b4d3a0bc2b1d773a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 61
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 2,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct": "A",
+      "questionSha256": "aa734b164e9450d5f6f972494f3bb151923ff8c5837392e61b2c785e2eccf3db",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 62
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 3,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct": "D",
+      "questionSha256": "b315257ec9042768c17fac31398715f383be71ccd5703824317e3f5ee59be3bb",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 63
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 4,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "correct": "C",
+      "questionSha256": "6d9b514cb0a4585890bc966033246d1264b70d595b27b345e4469131c9fa9970",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 64
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 5,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correct": "B",
+      "questionSha256": "fa5ba2c7a336f3b098198c6dc3e1f1c567d8b0e646e7c69dea643cf5128eaa5c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 65
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-reciprocal",
+      "variant": 1,
+      "answerExpression": "-2",
+      "choiceExpressions": [
+        "0",
+        "-2",
+        "-1",
+        "-3"
+      ],
+      "correct": "B",
+      "questionSha256": "707142dacff33faa876cc9bd3a11f3122f829e3d3588c9715c1f37f1948da0dd",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 66
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-reciprocal",
+      "variant": 2,
+      "answerExpression": "-3",
+      "choiceExpressions": [
+        "-3",
+        "-2",
+        "-4",
+        "-1"
+      ],
+      "correct": "A",
+      "questionSha256": "9051c817ed8416a6337778cdf5dcaa7b9f240dce2605347709ccb73073428094",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 67
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-reciprocal",
+      "variant": 3,
+      "answerExpression": "-4",
+      "choiceExpressions": [
+        "-3",
+        "-5",
+        "-2",
+        "-4"
+      ],
+      "correct": "D",
+      "questionSha256": "11125c92ed4aa836b5508baa2cf1db417ee080ff73f730ff39d7475fdc766d55",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 68
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-reciprocal",
+      "variant": 4,
+      "answerExpression": "-5",
+      "choiceExpressions": [
+        "-6",
+        "-3",
+        "-5",
+        "-4"
+      ],
+      "correct": "C",
+      "questionSha256": "e6622be2ffc4c4f95f8965f6ac87301db7ec8004d3b2600f19f7fcf0ac079e13",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 69
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-reciprocal",
+      "variant": 5,
+      "answerExpression": "-6",
+      "choiceExpressions": [
+        "-4",
+        "-6",
+        "-5",
+        "-7"
+      ],
+      "correct": "B",
+      "questionSha256": "37f3bda1d6f3e850eb9a091e4d86b8cbfd2247a033aa45a6de89e5b61ab065e8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 70
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-root",
+      "variant": 1,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "3/2",
+        "-1/2",
+        "5/2",
+        "1/2"
+      ],
+      "correct": "D",
+      "questionSha256": "cc8bb145dc370cf06c7d2dd265fe007fb313b7c2e42075effe8411375189a450",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 71
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-root",
+      "variant": 2,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "-1/2",
+        "5/2",
+        "1/2",
+        "3/2"
+      ],
+      "correct": "C",
+      "questionSha256": "c5e7984b706425d9f10123baa90d4ba377abd806be861eb7e915a2c4b8e67029",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 72
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-root",
+      "variant": 3,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "5/2",
+        "1/2",
+        "3/2",
+        "-1/2"
+      ],
+      "correct": "B",
+      "questionSha256": "f7531cc2942715964c4051a0e6dc474ef59ae2d1c436130180823d99dc637b6a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 73
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-root",
+      "variant": 4,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "1/2",
+        "3/2",
+        "-1/2",
+        "5/2"
+      ],
+      "correct": "A",
+      "questionSha256": "1f59a9d7be71b948ea367864158960a713d0e980e363a37e6f1eaca55dae0161",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 74
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-root",
+      "variant": 5,
+      "answerExpression": "1/2",
+      "choiceExpressions": [
+        "3/2",
+        "-1/2",
+        "5/2",
+        "1/2"
+      ],
+      "correct": "D",
+      "questionSha256": "3fec4285ac316fc0dc86dccf8c745145acaee83e0130e4f1c2aca06ff18ca1b9",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 75
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 1,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "4",
+        "5",
+        "3",
+        "6"
+      ],
+      "correct": "A",
+      "questionSha256": "54af38daf48b9c746e72fcc9bc111d44d47cef93e66d3267a3977804d2c6ba43",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 76
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 2,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "7",
+        "5"
+      ],
+      "correct": "D",
+      "questionSha256": "f5a30224f94f5cb8ce387038d46d45350f52c8fdf731820adba2e30f2e074ba2",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 77
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 3,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "5",
+        "8",
+        "6",
+        "7"
+      ],
+      "correct": "C",
+      "questionSha256": "c0fe930e4862943c217cfad039d1377ee2cd17c228dd4c7c3c09469ff8fc7c24",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 78
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 4,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "9",
+        "7",
+        "8",
+        "6"
+      ],
+      "correct": "B",
+      "questionSha256": "01f20a9497c7a305e3ef07b6ce130a13ea1c932ac2c2785a2c27e889647f5cb3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 79
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 5,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correct": "A",
+      "questionSha256": "1392d25b300bd2bb71da2772e144040c4ac22f63e15a396a2f7be89a06ddd89d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 80
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 1,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "correct": "D",
+      "questionSha256": "854489b0389a0710febccc8f72f4a406261fb4877155975612c44ce49df06429",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 81
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 2,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "7ec3654b3925b710c22d5d2651f69089536024c0a518064756a47700aa353dc9",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 82
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 3,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "5",
+        "3"
+      ],
+      "correct": "B",
+      "questionSha256": "30e868e6d726def69251e749fd3d7e130c01bc7800746dd3213aa81c644ace8e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 83
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 4,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correct": "A",
+      "questionSha256": "fc408993d2d31a8ada6a30b842119c5c06a7b398b39db4c26352e884f2956422",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 84
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 5,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "8",
+        "6"
+      ],
+      "correct": "D",
+      "questionSha256": "83729bb1aaa62fac859ae73b8b02d7c9e82837144db50f13c2b4595f30ad6a39",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 85
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-power",
+      "variant": 1,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "6dd4b969ed3d5ababd4b12b9ff587a8f27ecab88ea207bea96815a4e7122c920",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 86
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-power",
+      "variant": 2,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correct": "B",
+      "questionSha256": "5c0f9b3e158daf970320b5a4335c65ea7a9ba8245e145eb33a5c3dd8a46067cd",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 87
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-power",
+      "variant": 3,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9",
+        "10",
+        "8",
+        "11"
+      ],
+      "correct": "A",
+      "questionSha256": "6eaa41c61992a4a7f70862ed4f4ccc14501c0815dd4e07968867a52b317db8c1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 88
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-power",
+      "variant": 4,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "11",
+        "14",
+        "12"
+      ],
+      "correct": "D",
+      "questionSha256": "180b4f7bacb5afd5852e1a981a62becd0238b0ae2d820f234df96dd22ed3d410",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 89
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-power",
+      "variant": 5,
+      "answerExpression": "15",
+      "choiceExpressions": [
+        "14",
+        "17",
+        "15",
+        "16"
+      ],
+      "correct": "C",
+      "questionSha256": "d2c4c0d2f911d0a1d14419746f17f9d9e4b705ee02ad3e629eccc8f4f9cb3c85",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 90
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 1,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "3/2",
+        "5/2",
+        "1/2",
+        "7/2"
+      ],
+      "correct": "A",
+      "questionSha256": "474def8bd7f6a6ac35ced970391cec33badd2d0f39cf727676ebe8ec7959d605",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 91
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 2,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "5/2",
+        "1/2",
+        "7/2",
+        "3/2"
+      ],
+      "correct": "D",
+      "questionSha256": "49109febbf617488678b585ef0533cda277fd91a95f0c1eac5ea530e6bd32f89",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 92
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 3,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "1/2",
+        "7/2",
+        "3/2",
+        "5/2"
+      ],
+      "correct": "C",
+      "questionSha256": "4f323da1ccc2d5eb96f8e99b8cfa75ad20404cd5f25179b4544c67aff62e5d39",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 93
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 4,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "7/2",
+        "3/2",
+        "5/2",
+        "1/2"
+      ],
+      "correct": "B",
+      "questionSha256": "3c0eab1bca1f72b991ab2e9e4236e7cb2f00c731313eff861f600aba83a048c0",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 94
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 5,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "3/2",
+        "5/2",
+        "1/2",
+        "7/2"
+      ],
+      "correct": "A",
+      "questionSha256": "098d794353f74771d64a0a7685e01d21544870165bd4d2cd9a69e4754f9e7f2b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 95
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-logs",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "9bcc64c4140e74152d16a2eebac867e4d76ecf6a5ccfbe93594fe6e2f297781f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 96
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-logs",
+      "variant": 2,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "correct": "D",
+      "questionSha256": "2d45860c986b15eb3fe7726f678a8bb6a5bfc220027e8ddc1a27ee0cc1604be3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 97
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-logs",
+      "variant": 3,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "82c7312568660fa4786c6b4125fc21d42bf712785dc7a7c362fd127799f5da15",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 98
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-logs",
+      "variant": 4,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "281abf0565b2ad6da76d396bfed936bda2184c11eccf1e18eba60ca81366a77b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 99
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "reciprocal-logs",
+      "variant": 5,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "e46a444080c0443f709a271c735266346ddbabb3fe1a6bd585c2a08442a9012f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 100
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cyclic-logs",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "42db2635a6df180cdc7bb9c29f30b0c9d28d3fc8d845ac83b3d7829b0426c2f2",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 101
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cyclic-logs",
+      "variant": 2,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "correct": "D",
+      "questionSha256": "858e176db4d501d97e541f2bc569618ad382dc12ffcd46ade8d23a88045049e1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 102
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cyclic-logs",
+      "variant": 3,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "a0f8cb07b66da47dc6cc481f9a2ab7b94cfd0e374214295f47db900930ef8706",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 103
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cyclic-logs",
+      "variant": 4,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "b27d2eb0b75f9ec845c97980bf3664b93242cbbd069e4f436d0d223e29211ec6",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 104
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "cyclic-logs",
+      "variant": 5,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "09be47003c255ad6992ee73fa9dd1cf95bbb9570e1415b6ac118e4440b720c2e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 105
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 1,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ],
+      "correct": "D",
+      "questionSha256": "89a65eb043db4597c1f1a5dead9caf38351d7e2d82dc6b62d375b160541c4a5c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 106
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 2,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "correct": "C",
+      "questionSha256": "b8454a30d881ec4a8a90cbcfdc567f72306dfaccc39ac0a9c6d37b8cd4c7c28f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 107
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 3,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "6",
+        "4"
+      ],
+      "correct": "B",
+      "questionSha256": "c377114288bddf7dd193b604f64008ee16c281647446d6c0e9268828a324d974",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 108
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 4,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correct": "A",
+      "questionSha256": "b26cbc611d9cfc76da6215bb0ca0ef1bc26c43844f059c9d79a485f73566fd1e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 109
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 5,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "8",
+        "6",
+        "9",
+        "7"
+      ],
+      "correct": "D",
+      "questionSha256": "3d7d348b2bfd72baabc937a7ab760cc6d464f6cc25e8dde5e132c82998383ff5",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 110
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-argument",
+      "variant": 1,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "10",
+        "8",
+        "11",
+        "9"
+      ],
+      "correct": "D",
+      "questionSha256": "e03ef53f203b5064a9cdad1d148a5b88cc2f82033e4b20638c28c1aebb7177bd",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 111
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-argument",
+      "variant": 2,
+      "answerExpression": "64",
+      "choiceExpressions": [
+        "63",
+        "66",
+        "64",
+        "65"
+      ],
+      "correct": "C",
+      "questionSha256": "5726ac8096e18329acce5836833b1399c097c12c45f77b8d70acf190a15ef5ca",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 112
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-argument",
+      "variant": 3,
+      "answerExpression": "625",
+      "choiceExpressions": [
+        "627",
+        "625",
+        "626",
+        "624"
+      ],
+      "correct": "B",
+      "questionSha256": "3f0ee8490d619d95ba85a5c6fe3051e358ac093bae973c2d7d8f9d34c9b6e780",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 113
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-argument",
+      "variant": 4,
+      "answerExpression": "7776",
+      "choiceExpressions": [
+        "7776",
+        "7777",
+        "7775",
+        "7778"
+      ],
+      "correct": "A",
+      "questionSha256": "40da37a575a4beb58b3712cf80a634d1c56684869d58aca191691d4d2710fe4d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 114
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-argument",
+      "variant": 5,
+      "answerExpression": "117649",
+      "choiceExpressions": [
+        "117650",
+        "117648",
+        "117651",
+        "117649"
+      ],
+      "correct": "D",
+      "questionSha256": "f419946e3c189a11b536f7a46c5f93568fafbc1587078afad0a06512ce9daeaa",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 115
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "given-logs",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "f3c53a9e2eb587e0e91cb5f13742e9e963ea776587e96fd961f786b8f6505aca",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 116
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "given-logs",
+      "variant": 2,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "3",
+        "1",
+        "4"
+      ],
+      "correct": "A",
+      "questionSha256": "ee1ac42ba70035715d9da220f2bf39da8945317843da60f73ac6a63dbb1f311a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 117
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "given-logs",
+      "variant": 3,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ],
+      "correct": "D",
+      "questionSha256": "8b2608eea92db5622b85ed572be8314cf54f17140c9146d77342cde33a13a4c4",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 118
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "given-logs",
+      "variant": 4,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "correct": "C",
+      "questionSha256": "0e34c4385cede0d6193806176c67db24c685d529f9026ecfafc9c54495254c25",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 119
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "given-logs",
+      "variant": 5,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "6",
+        "4"
+      ],
+      "correct": "B",
+      "questionSha256": "4a89c8ef8724d3d9d61f8f9aa9292c441d2dd66201fe7380244bab7f291dc94a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 120
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 1,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "correct": "D",
+      "questionSha256": "22aeb0c2c3f9f36b41ad35d7b1fc37d0eaca36f4262a85554f2aec443d7704ea",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 121
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 2,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "bc386e0e9e97bd9a34ffb76db36155dff7b619797b3b7af01b0762bc4ad6e24b",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 122
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 3,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "6",
+        "4",
+        "5",
+        "3"
+      ],
+      "correct": "B",
+      "questionSha256": "3c835bd959c883e8b66123780116e5df75eff4677b73edcdda5a9509ae3b565a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 123
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 4,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correct": "A",
+      "questionSha256": "0e61fcbe219dd875d2e2170bc1a27f86f47b44b55f3a84400c2fb282af454411",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 124
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 5,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "5",
+        "8",
+        "6"
+      ],
+      "correct": "D",
+      "questionSha256": "f4e39332b31cc1c5caeef52b2c2c80c6594977a942bd3976da99dc719016ead7",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 125
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 1,
+      "answerExpression": "-3",
+      "choiceExpressions": [
+        "-2",
+        "-4",
+        "-1",
+        "-3"
+      ],
+      "correct": "D",
+      "questionSha256": "01f7da8969ff7c79046c65d6efede34a1b7b2b0b0a7dfada04d8c01e0f71b26f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 126
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 2,
+      "answerExpression": "-4",
+      "choiceExpressions": [
+        "-5",
+        "-2",
+        "-4",
+        "-3"
+      ],
+      "correct": "C",
+      "questionSha256": "e5e100b276fd66d20960ea85932015b58338874e1d831c07a37922245403d9cf",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 127
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 3,
+      "answerExpression": "-5",
+      "choiceExpressions": [
+        "-3",
+        "-5",
+        "-4",
+        "-6"
+      ],
+      "correct": "B",
+      "questionSha256": "e5e01661279937ba20dcb647a16836c3b6b37a75aea8888c54da67541d4cd595",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 128
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 4,
+      "answerExpression": "-6",
+      "choiceExpressions": [
+        "-6",
+        "-5",
+        "-7",
+        "-4"
+      ],
+      "correct": "A",
+      "questionSha256": "152b8829d5fdf4efb8dbc58c7dfcb60c406107516f2efd5baedcbc5df3c38c98",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 129
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 5,
+      "answerExpression": "-7",
+      "choiceExpressions": [
+        "-6",
+        "-8",
+        "-5",
+        "-7"
+      ],
+      "correct": "D",
+      "questionSha256": "cdd81380fb3fff40cd35a6fde7f762cf3f0978c6b6fd77395e6f6b5135463d5d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 130
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "decimal-scale",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "9fc223e5ed0900fc7790e170b192568c50aa0dfe0082efce7c14450b0a920f1c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 131
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "decimal-scale",
+      "variant": 2,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "correct": "B",
+      "questionSha256": "63ab6f18cf6c5d64ea7d424ecaea8d8df560e0a2e12a995a3cc8a9879072ba2f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 132
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "decimal-scale",
+      "variant": 3,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct": "A",
+      "questionSha256": "652f835608242e98b169148f146405c9c51bd3eb05eb2048a016a22e9fe44fa8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 133
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "decimal-scale",
+      "variant": 4,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correct": "D",
+      "questionSha256": "3cfef6a059bf08ae68fab72b3954af38b2ab4dab77433bd20417cd8be2d343c8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 134
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "decimal-scale",
+      "variant": 5,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "correct": "C",
+      "questionSha256": "51786c14a6014dfb7a417d5820c09604c2cb274136050812c038010df3c63225",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 135
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-not-product",
+      "variant": 1,
+      "answerExpression": "log(6)/log(3)",
+      "choiceExpressions": [
+        "log(6)/log(3)",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct": "A",
+      "questionSha256": "50c3e6e04b443fe1834ef61697f14b164b3bd79653b01cf01289c413150dde6f",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 136
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-not-product",
+      "variant": 2,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "1",
+        "3/2"
+      ],
+      "correct": "D",
+      "questionSha256": "9c8b3db526293197595c74151910c5d09c5026291a4d4aadcc6340941151700e",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 137
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-not-product",
+      "variant": 3,
+      "answerExpression": "log(10)/log(5)",
+      "choiceExpressions": [
+        "0",
+        "1",
+        "log(10)/log(5)",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "cf4b0bfe23aacf0b7c80d84eeec78e4e0977ab363112f976efbbc8a5feea45c1",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 138
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-not-product",
+      "variant": 4,
+      "answerExpression": "log(12)/log(6)",
+      "choiceExpressions": [
+        "1",
+        "log(12)/log(6)",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "a63465e00f62d1ccf74fb9ac2eaf904ac4d39cf539cb109be0ab5187f3e1b384",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 139
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-not-product",
+      "variant": 5,
+      "answerExpression": "log(14)/log(7)",
+      "choiceExpressions": [
+        "log(14)/log(7)",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct": "A",
+      "questionSha256": "c4a401f2da89d07ea246247083d379668cd67fbf9884aaf8acbdbcb6adecc720",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 140
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "finite-domain",
+      "variant": 1,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "2ba9fe768d9c86c61ba34fe72c725899cbdb4516bce7a18e21b72ada131b47b7",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 141
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "finite-domain",
+      "variant": 2,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "5",
+        "3",
+        "4",
+        "2"
+      ],
+      "correct": "B",
+      "questionSha256": "4b6e2f4a7281bf5e8f7469862f733dacb1a3c23be0b4789f5ca7191bbe9bd14d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 142
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "finite-domain",
+      "variant": 3,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "4",
+        "2",
+        "5"
+      ],
+      "correct": "A",
+      "questionSha256": "a3005d6e8bbc0bb5526bf19e946a203c464de5e2da91244f494615e23c71954a",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 143
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "finite-domain",
+      "variant": 4,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ],
+      "correct": "D",
+      "questionSha256": "58b6d27f656c4848dfd57419fe412e9a2b42df4105708bf8a4410f8aae9674a8",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 144
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "finite-domain",
+      "variant": 5,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correct": "C",
+      "questionSha256": "cbd5cccced480cab7bf4fca128b9538c074cf7b8b812ce7ff785e1257d1290a3",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 145
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "nested-log",
+      "variant": 1,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "24a63f9d76ca79110f736c69feb56396b3918a122d5a6fd3fbc75da49b243b3d",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 146
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "nested-log",
+      "variant": 2,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "correct": "A",
+      "questionSha256": "8b40e531fe8fc8c6ee0c10f9b8c498b2ae40c38309968e5ba1aaa8561cd5ff79",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 147
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "nested-log",
+      "variant": 3,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "0",
+        "3",
+        "1"
+      ],
+      "correct": "D",
+      "questionSha256": "96828020619587194785f6d0d4121039fe0c2bc77de9bc5e7b2fac47a85c1a84",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 148
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "nested-log",
+      "variant": 4,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "questionSha256": "eb7849b560977321540227f2db12878a2e19f74a0bb8b812e778dbfd313650ba",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 149
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "nested-log",
+      "variant": 5,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": "B",
+      "questionSha256": "d67b70455c25474f7e9c397ea3c0cfa4f9938f6b9bbf5650b1f857272948564c",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 150
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "same-base-powers",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "1/3",
+          "rhs": "1/3"
+        },
+        {
+          "lhs": "243",
+          "rhs": "243"
+        }
+      ],
+      "domainNotes": [
+        "A>0, B>0; fixed base b>1; x real"
+      ],
+      "questionSha256": "2bc334e6dea12b2d4e652c7216a55ba7234a6e12119654540489304979ff5c6e",
+      "file": "target-v1/written.json",
+      "itemInFile": 1
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-exponents",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "A>0 and B>0; principal positive roots; denominator 2a>0"
+      ],
+      "questionSha256": "c1298d68f1473cec3e83b19cc31db7c3adba6468c100dfc67f51e9277e188cd7",
+      "file": "target-v1/written.json",
+      "itemInFile": 2
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-in-power",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "9/4",
+          "rhs": "9/4"
+        }
+      ],
+      "domainNotes": [
+        "x real; y=2^x>0; do not retain y<=0"
+      ],
+      "questionSha256": "609bfa60496facb3def4098698a9f5d2b7e8f39912f16a86930cf5f04e33e89e",
+      "file": "target-v1/written.json",
+      "itemInFile": 3
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition-domain",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "9",
+          "rhs": "9"
+        }
+      ],
+      "domainNotes": [
+        "b>1; arguments x-b>0,x+b>0 imply x>b; reject -b*sqrt(2)"
+      ],
+      "questionSha256": "dfae5af57c3ec2c319e8ecf69a8b28e2175369cfe3afa5d9fa8964e955d020b1",
+      "file": "target-v1/written.json",
+      "itemInFile": 4
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "product-quotient-laws",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        },
+        {
+          "lhs": "-2",
+          "rhs": "-2"
+        }
+      ],
+      "domainNotes": [
+        "b>1,u>0,v>0; no logarithm sum-splitting rule"
+      ],
+      "questionSha256": "880e37e6aa7bde39fe4553214f026478f83bdb11d6586ac3916692501a1ccefb",
+      "file": "target-v1/written.json",
+      "itemInFile": 5
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "base-change",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "81",
+          "rhs": "81"
+        }
+      ],
+      "domainNotes": [
+        "a,b,c>1; unknown base x>0 and x!=1"
+      ],
+      "questionSha256": "308db35fc668356cabe8a17421abffe0ea1782a4ec2261cfd604ed9bde6590e5",
+      "file": "target-v1/written.json",
+      "itemInFile": 6
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "common-log-scaling",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "log(3)/log(10) + 2",
+          "rhs": "log(3)/log(10) + 2"
+        },
+        {
+          "lhs": "(-3*log(10) + log(3))/log(10)",
+          "rhs": "-3 + log(3)/log(10)"
+        },
+        {
+          "lhs": "100000",
+          "rhs": "100000"
+        }
+      ],
+      "domainNotes": [
+        "A>0,B>0; 1<a<10 implies 0<m<1; characteristic is floor(log)"
+      ],
+      "questionSha256": "19843c2b0f96738ad5cc5b2281f66d04a3262a0a8b2f1f9b018c99ab23193cca",
+      "file": "target-v1/written.json",
+      "itemInFile": 7
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "bar-characteristic",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "-1 - log(5)/log(10)",
+          "rhs": "-2 + log(2)/log(10)"
+        },
+        {
+          "lhs": "(-log(10) + log(2)/2)/log(10)",
+          "rhs": "-1 + log(2)/(2*log(10))"
+        }
+      ],
+      "domainNotes": [
+        "N>0; 0<m<1; mantissa must be in [0,1); bar applies only to characteristic"
+      ],
+      "questionSha256": "bb0569772f87688c48cf4b08ac6a00b0c74efd913d7fba8400158336eabc2719",
+      "file": "target-v1/written.json",
+      "itemInFile": 8
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-equation-roots",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "8",
+          "rhs": "8"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "x>a>0; reject negative algebraic root -a before logging"
+      ],
+      "questionSha256": "fb2d91f3cb298197d63799106e7cde93cf0ef4b6607a03a48423ace8f3483958",
+      "file": "target-v1/written.json",
+      "itemInFile": 9
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-and-subunit-base",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        },
+        {
+          "lhs": "-3/2",
+          "rhs": "-3/2"
+        },
+        {
+          "lhs": "9",
+          "rhs": "9"
+        }
+      ],
+      "domainNotes": [
+        "a>1; sqrt(a)>1; 0<1/a<1; all logarithm arguments positive"
+      ],
+      "questionSha256": "1049c2c8b62e03c602c1b4bd0c7107dca29f9f3b61d48b5dbc7be7dabdd82264",
+      "file": "target-v1/written.json",
+      "itemInFile": 10
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "same-base-powers",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        },
+        {
+          "lhs": "1/16",
+          "rhs": "1/16"
+        },
+        {
+          "lhs": "16384",
+          "rhs": "16384"
+        }
+      ],
+      "domainNotes": [
+        "A>0, B>0; fixed base b>1; x real"
+      ],
+      "questionSha256": "de5d3f5172dd9d82ad0c47cccff97d0d6c42301b93154f1eccddcb7a31f586a3",
+      "file": "target-v1/written.json",
+      "itemInFile": 11
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-exponents",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "9",
+          "rhs": "9"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "6",
+          "rhs": "6"
+        }
+      ],
+      "domainNotes": [
+        "A>0 and B>0; principal positive roots; denominator 2a>0"
+      ],
+      "questionSha256": "ceb23b6bbb129a563eb3285ba3574f61b4e5b8c1f4c4f86540745aeabea4385b",
+      "file": "target-v1/written.json",
+      "itemInFile": 12
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-in-power",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "49/8",
+          "rhs": "49/8"
+        }
+      ],
+      "domainNotes": [
+        "x real; y=2^x>0; do not retain y<=0"
+      ],
+      "questionSha256": "a7ab2b0c555444618b746dd802b988d8ec8cb080d61ec7ff118caf0854938051",
+      "file": "target-v1/written.json",
+      "itemInFile": 13
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition-domain",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "16",
+          "rhs": "16"
+        }
+      ],
+      "domainNotes": [
+        "b>1; arguments x-b>0,x+b>0 imply x>b; reject -b*sqrt(2)"
+      ],
+      "questionSha256": "b71cfc525c2980f4960d401d76e4f516d2b4f2e7833121daac248306646831a3",
+      "file": "target-v1/written.json",
+      "itemInFile": 14
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "product-quotient-laws",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        }
+      ],
+      "domainNotes": [
+        "b>1,u>0,v>0; no logarithm sum-splitting rule"
+      ],
+      "questionSha256": "0093857cba85c7dbdd252550190ae80d2f1f8119678a24680913248f42ef9fb7",
+      "file": "target-v1/written.json",
+      "itemInFile": 15
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "base-change",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "256",
+          "rhs": "256"
+        }
+      ],
+      "domainNotes": [
+        "a,b,c>1; unknown base x>0 and x!=1"
+      ],
+      "questionSha256": "8db36868bb5fc27b5e3ba5fef051ffa00c36aad936beda5f5d80ef28033374df",
+      "file": "target-v1/written.json",
+      "itemInFile": 16
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "common-log-scaling",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "2*log(2)/log(10) + 3",
+          "rhs": "2*log(2)/log(10) + 3"
+        },
+        {
+          "lhs": "-2 - 2*log(5)/log(10)",
+          "rhs": "-4 + 2*log(2)/log(10)"
+        },
+        {
+          "lhs": "10000000",
+          "rhs": "10000000"
+        }
+      ],
+      "domainNotes": [
+        "A>0,B>0; 1<a<10 implies 0<m<1; characteristic is floor(log)"
+      ],
+      "questionSha256": "b721b364e57e2f407a1a209af73473f3826e83137cb81506ca47ee6673b01393",
+      "file": "target-v1/written.json",
+      "itemInFile": 17
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "bar-characteristic",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "-2 - log(5)/log(10)",
+          "rhs": "-3 + log(2)/log(10)"
+        },
+        {
+          "lhs": "(-log(50) + log(5)/2)/log(10)",
+          "rhs": "-3/2 + log(2)/(2*log(10))"
+        }
+      ],
+      "domainNotes": [
+        "N>0; 0<m<1; mantissa must be in [0,1); bar applies only to characteristic"
+      ],
+      "questionSha256": "bdedc9f7a711efdb4b7b5bb9451a7093f7db2044f0489a2d017fc8424874326a",
+      "file": "target-v1/written.json",
+      "itemInFile": 18
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-equation-roots",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "18",
+          "rhs": "18"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "x>a>0; reject negative algebraic root -a before logging"
+      ],
+      "questionSha256": "b46cc6a58cef0a3babe6e8ef6bdffb8bdb9c29e7242de81da63e9acf69c5b02a",
+      "file": "target-v1/written.json",
+      "itemInFile": 19
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-and-subunit-base",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "6",
+          "rhs": "6"
+        },
+        {
+          "lhs": "-3/2",
+          "rhs": "-3/2"
+        },
+        {
+          "lhs": "64",
+          "rhs": "64"
+        }
+      ],
+      "domainNotes": [
+        "a>1; sqrt(a)>1; 0<1/a<1; all logarithm arguments positive"
+      ],
+      "questionSha256": "c5090f6dfde42f2688360d5579cdab450487b9b218fd6019d6b15dacea874c5d",
+      "file": "target-v1/written.json",
+      "itemInFile": 20
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "same-base-powers",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "1/125",
+          "rhs": "1/125"
+        },
+        {
+          "lhs": "1953125",
+          "rhs": "1953125"
+        }
+      ],
+      "domainNotes": [
+        "A>0, B>0; fixed base b>1; x real"
+      ],
+      "questionSha256": "8d0168c7a8821c94f6c67df446963c6085e4eba3f2eef77f0ffada8865408529",
+      "file": "target-v1/written.json",
+      "itemInFile": 21
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-exponents",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "16",
+          "rhs": "16"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "10",
+          "rhs": "10"
+        }
+      ],
+      "domainNotes": [
+        "A>0 and B>0; principal positive roots; denominator 2a>0"
+      ],
+      "questionSha256": "18acfe665bf4d84d498738a0015b08f359a2d266df2650ceb503878d9f834ba1",
+      "file": "target-v1/written.json",
+      "itemInFile": 22
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-in-power",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "225/16",
+          "rhs": "225/16"
+        }
+      ],
+      "domainNotes": [
+        "x real; y=2^x>0; do not retain y<=0"
+      ],
+      "questionSha256": "52e055b0ad6dfb07f67add054b8754bcba519f4af874eae3b914716f300a7d5e",
+      "file": "target-v1/written.json",
+      "itemInFile": 23
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition-domain",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "25",
+          "rhs": "25"
+        }
+      ],
+      "domainNotes": [
+        "b>1; arguments x-b>0,x+b>0 imply x>b; reject -b*sqrt(2)"
+      ],
+      "questionSha256": "25ea9fc0832eb60437c099681c92104bf3644474fc9d1d3772351264d721ddb6",
+      "file": "target-v1/written.json",
+      "itemInFile": 24
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "product-quotient-laws",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "6",
+          "rhs": "6"
+        },
+        {
+          "lhs": "2",
+          "rhs": "2"
+        }
+      ],
+      "domainNotes": [
+        "b>1,u>0,v>0; no logarithm sum-splitting rule"
+      ],
+      "questionSha256": "071ecfed0d303f16feacaa73cb27cc6a7ac57b1f7db3377f55fc633c132aa4ad",
+      "file": "target-v1/written.json",
+      "itemInFile": 25
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "base-change",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "625",
+          "rhs": "625"
+        }
+      ],
+      "domainNotes": [
+        "a,b,c>1; unknown base x>0 and x!=1"
+      ],
+      "questionSha256": "3994298706b5f098b989cf4b3de24946b35812a913e5633ee0d76aa3f365547b",
+      "file": "target-v1/written.json",
+      "itemInFile": 26
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "common-log-scaling",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "log(5)/log(10) + 4",
+          "rhs": "log(5)/log(10) + 4"
+        },
+        {
+          "lhs": "-4 - log(2)/log(10)",
+          "rhs": "-5 + log(5)/log(10)"
+        },
+        {
+          "lhs": "1000000000",
+          "rhs": "1000000000"
+        }
+      ],
+      "domainNotes": [
+        "A>0,B>0; 1<a<10 implies 0<m<1; characteristic is floor(log)"
+      ],
+      "questionSha256": "bd4b005ca8949af527f78b38d70d8ff0bc25af1d52b25f7366dfc6ab7232b453",
+      "file": "target-v1/written.json",
+      "itemInFile": 27
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "bar-characteristic",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "-3 - log(5)/log(10)",
+          "rhs": "-4 + log(2)/log(10)"
+        },
+        {
+          "lhs": "(-2*log(10) + log(2)/2)/log(10)",
+          "rhs": "-2 + log(2)/(2*log(10))"
+        }
+      ],
+      "domainNotes": [
+        "N>0; 0<m<1; mantissa must be in [0,1); bar applies only to characteristic"
+      ],
+      "questionSha256": "25aa8a1fd7084cf44881a8ce91c0b7734baba120af40a99967f618c4e06c77a1",
+      "file": "target-v1/written.json",
+      "itemInFile": 28
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-equation-roots",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "32",
+          "rhs": "32"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "x>a>0; reject negative algebraic root -a before logging"
+      ],
+      "questionSha256": "a88c89112ccdd234e980762017234a9391bf6a4b64d2df8dd26ef87b3f8c007e",
+      "file": "target-v1/written.json",
+      "itemInFile": 29
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-and-subunit-base",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "8",
+          "rhs": "8"
+        },
+        {
+          "lhs": "-3/2",
+          "rhs": "-3/2"
+        },
+        {
+          "lhs": "625",
+          "rhs": "625"
+        }
+      ],
+      "domainNotes": [
+        "a>1; sqrt(a)>1; 0<1/a<1; all logarithm arguments positive"
+      ],
+      "questionSha256": "d1979f5a616f449437a69975b6118870539e1539f6b58bfb7261489eae3aa8c3",
+      "file": "target-v1/written.json",
+      "itemInFile": 30
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "same-base-powers",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "6",
+          "rhs": "6"
+        },
+        {
+          "lhs": "1/1296",
+          "rhs": "1/1296"
+        },
+        {
+          "lhs": "362797056",
+          "rhs": "362797056"
+        }
+      ],
+      "domainNotes": [
+        "A>0, B>0; fixed base b>1; x real"
+      ],
+      "questionSha256": "1adaf0e1d6dc76121a1285ee3dcffc452b69625f1544ee3e64510f06abdef1b7",
+      "file": "target-v1/written.json",
+      "itemInFile": 31
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-exponents",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "25",
+          "rhs": "25"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "15",
+          "rhs": "15"
+        }
+      ],
+      "domainNotes": [
+        "A>0 and B>0; principal positive roots; denominator 2a>0"
+      ],
+      "questionSha256": "857a63416580100c64b6e635bf6cae9bf07f9fc43c8926c42e8e33e4db8391dc",
+      "file": "target-v1/written.json",
+      "itemInFile": 32
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-in-power",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "961/32",
+          "rhs": "961/32"
+        }
+      ],
+      "domainNotes": [
+        "x real; y=2^x>0; do not retain y<=0"
+      ],
+      "questionSha256": "b61d1b3e4402fba7588b8b726baed8bfda7e1594512b322598dd6da7fe481eec",
+      "file": "target-v1/written.json",
+      "itemInFile": 33
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition-domain",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "36",
+          "rhs": "36"
+        }
+      ],
+      "domainNotes": [
+        "b>1; arguments x-b>0,x+b>0 imply x>b; reject -b*sqrt(2)"
+      ],
+      "questionSha256": "44060e46f34a79e83358708a744e31bc3e4c945900f3607a5cc5177e54f31f41",
+      "file": "target-v1/written.json",
+      "itemInFile": 34
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "product-quotient-laws",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "7",
+          "rhs": "7"
+        },
+        {
+          "lhs": "4",
+          "rhs": "4"
+        }
+      ],
+      "domainNotes": [
+        "b>1,u>0,v>0; no logarithm sum-splitting rule"
+      ],
+      "questionSha256": "9d0c0b1395e99f7ad40a67c57329d9a4819985b0d3efb0808d956ccfe2914bbe",
+      "file": "target-v1/written.json",
+      "itemInFile": 35
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "base-change",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "1296",
+          "rhs": "1296"
+        }
+      ],
+      "domainNotes": [
+        "a,b,c>1; unknown base x>0 and x!=1"
+      ],
+      "questionSha256": "4ddb27c8a05157d5e3f22b493003d6cef1f1c19d8c5003d6427436355fb9cbac",
+      "file": "target-v1/written.json",
+      "itemInFile": 36
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "common-log-scaling",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "log(6)/log(10) + 5",
+          "rhs": "log(6)/log(10) + 5"
+        },
+        {
+          "lhs": "(-log(500000) + log(3))/log(10)",
+          "rhs": "-6 + log(6)/log(10)"
+        },
+        {
+          "lhs": "100000000000",
+          "rhs": "100000000000"
+        }
+      ],
+      "domainNotes": [
+        "A>0,B>0; 1<a<10 implies 0<m<1; characteristic is floor(log)"
+      ],
+      "questionSha256": "e44c03ab6fd15f4794755f7b6afcf7b4f6395c6f3fe1132d9b4cd396f73fac38",
+      "file": "target-v1/written.json",
+      "itemInFile": 37
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "bar-characteristic",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "-4 - log(5)/log(10)",
+          "rhs": "-5 + log(2)/log(10)"
+        },
+        {
+          "lhs": "(-log(500) + log(5)/2)/log(10)",
+          "rhs": "-5/2 + log(2)/(2*log(10))"
+        }
+      ],
+      "domainNotes": [
+        "N>0; 0<m<1; mantissa must be in [0,1); bar applies only to characteristic"
+      ],
+      "questionSha256": "0b1b8eb31b6fcefa3a9e97a8d6c77dd029827f1bb5481d6439b38754a3cf9bd7",
+      "file": "target-v1/written.json",
+      "itemInFile": 38
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-equation-roots",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "50",
+          "rhs": "50"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "x>a>0; reject negative algebraic root -a before logging"
+      ],
+      "questionSha256": "8201279b95aa8fbd2f1b9d7b4db5299ba8190995fb9ee06e66635f394938f6da",
+      "file": "target-v1/written.json",
+      "itemInFile": 39
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-and-subunit-base",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "10",
+          "rhs": "10"
+        },
+        {
+          "lhs": "-3/2",
+          "rhs": "-3/2"
+        },
+        {
+          "lhs": "7776",
+          "rhs": "7776"
+        }
+      ],
+      "domainNotes": [
+        "a>1; sqrt(a)>1; 0<1/a<1; all logarithm arguments positive"
+      ],
+      "questionSha256": "cfbd786029a1ffe53c9ca70414d5aad266398d488ccab1caec784abc461452de",
+      "file": "target-v1/written.json",
+      "itemInFile": 40
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "same-base-powers",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "7",
+          "rhs": "7"
+        },
+        {
+          "lhs": "1/16807",
+          "rhs": "1/16807"
+        },
+        {
+          "lhs": "96889010407",
+          "rhs": "96889010407"
+        }
+      ],
+      "domainNotes": [
+        "A>0, B>0; fixed base b>1; x real"
+      ],
+      "questionSha256": "16630ae97d388c379e020d9de0e6dfa1fe496e729b53732a90781391d9b936b0",
+      "file": "target-v1/written.json",
+      "itemInFile": 41
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rational-exponents",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "36",
+          "rhs": "36"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "21",
+          "rhs": "21"
+        }
+      ],
+      "domainNotes": [
+        "A>0 and B>0; principal positive roots; denominator 2a>0"
+      ],
+      "questionSha256": "3dc539b2cd684cb9137902504cf6de55f19da4246f6e4b560161bf981c9f6aae",
+      "file": "target-v1/written.json",
+      "itemInFile": 42
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "quadratic-in-power",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "0",
+          "rhs": "0"
+        },
+        {
+          "lhs": "3969/64",
+          "rhs": "3969/64"
+        }
+      ],
+      "domainNotes": [
+        "x real; y=2^x>0; do not retain y<=0"
+      ],
+      "questionSha256": "bbc6e77ff48ebeffbdc0a71945d2112f7c83a8ccd4362b32e1496f2c69b22a6d",
+      "file": "target-v1/written.json",
+      "itemInFile": 43
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition-domain",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        },
+        {
+          "lhs": "5",
+          "rhs": "5"
+        },
+        {
+          "lhs": "49",
+          "rhs": "49"
+        }
+      ],
+      "domainNotes": [
+        "b>1; arguments x-b>0,x+b>0 imply x>b; reject -b*sqrt(2)"
+      ],
+      "questionSha256": "fa0d2749d2a1777f522955dafc9431174b955649c85b4b00f0bbca4ab3dc974a",
+      "file": "target-v1/written.json",
+      "itemInFile": 44
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "product-quotient-laws",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "8",
+          "rhs": "8"
+        },
+        {
+          "lhs": "6",
+          "rhs": "6"
+        }
+      ],
+      "domainNotes": [
+        "b>1,u>0,v>0; no logarithm sum-splitting rule"
+      ],
+      "questionSha256": "9171ec0abd6998cc28068ec02b17b53fa8797e9db980b8c82fd2e77c9b42904b",
+      "file": "target-v1/written.json",
+      "itemInFile": 45
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "base-change",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        },
+        {
+          "lhs": "2401",
+          "rhs": "2401"
+        }
+      ],
+      "domainNotes": [
+        "a,b,c>1; unknown base x>0 and x!=1"
+      ],
+      "questionSha256": "ff8e5dd098c5cacd349dc8150611e88728ac4ce301bf5f03df820214f2ca3d0f",
+      "file": "target-v1/written.json",
+      "itemInFile": 46
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "common-log-scaling",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 6",
+          "rhs": "log(7)/log(10) + 6"
+        },
+        {
+          "lhs": "(-7*log(10) + log(7))/log(10)",
+          "rhs": "-7 + log(7)/log(10)"
+        },
+        {
+          "lhs": "10000000000000",
+          "rhs": "10000000000000"
+        }
+      ],
+      "domainNotes": [
+        "A>0,B>0; 1<a<10 implies 0<m<1; characteristic is floor(log)"
+      ],
+      "questionSha256": "98590764b6396d4d79e1c07d0e19bcad29c84f3092e0da821b13e6d6e2d93de6",
+      "file": "target-v1/written.json",
+      "itemInFile": 47
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "bar-characteristic",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "-5 - log(5)/log(10)",
+          "rhs": "-6 + log(2)/log(10)"
+        },
+        {
+          "lhs": "(-3*log(10) + log(2)/2)/log(10)",
+          "rhs": "-3 + log(2)/(2*log(10))"
+        }
+      ],
+      "domainNotes": [
+        "N>0; 0<m<1; mantissa must be in [0,1); bar applies only to characteristic"
+      ],
+      "questionSha256": "828f866d28008b855df986ea51c8f5a76ffb5b6c4590664c2a727a2b77f92e3b",
+      "file": "target-v1/written.json",
+      "itemInFile": 48
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-equation-roots",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "72",
+          "rhs": "72"
+        },
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "x>a>0; reject negative algebraic root -a before logging"
+      ],
+      "questionSha256": "78de61a5a30c701afc8a5eca96f47a3566368b307d35e1b5772b12f93a75985b",
+      "file": "target-v1/written.json",
+      "itemInFile": 49
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "root-and-subunit-base",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "12",
+          "rhs": "12"
+        },
+        {
+          "lhs": "-3/2",
+          "rhs": "-3/2"
+        },
+        {
+          "lhs": "117649",
+          "rhs": "117649"
+        }
+      ],
+      "domainNotes": [
+        "a>1; sqrt(a)>1; 0<1/a<1; all logarithm arguments positive"
+      ],
+      "questionSha256": "4605671ea901d6fb073bde1cef0b711a475b59467254c9a7fb182efd86bf8126",
+      "file": "target-v1/written.json",
+      "itemInFile": 50
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "81",
+          "rhs": "81"
+        }
+      ],
+      "domainNotes": [
+        "b>0"
+      ],
+      "questionSha256": "d0aeff2d5aaba3f7948baf02f10c4987199d87d0bee425c61f22555ef2977e30",
+      "file": "target-v1/written.json",
+      "itemInFile": 51
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-division",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "27",
+          "rhs": "27"
+        }
+      ],
+      "domainNotes": [
+        "nonzero denominator"
+      ],
+      "questionSha256": "f28b9fbd98397e77b0ca6cea049736a9f011f23269d03dca582e0484cb78fd6d",
+      "file": "target-v1/written.json",
+      "itemInFile": 52
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "81",
+          "rhs": "81"
+        }
+      ],
+      "domainNotes": [
+        "positive base"
+      ],
+      "questionSha256": "a3e4a92174094f7a093c747a73ecc0e343cdac9ca95523021c9223bcbc010795",
+      "file": "target-v1/written.json",
+      "itemInFile": 53
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "1/3",
+          "rhs": "1/3"
+        }
+      ],
+      "domainNotes": [
+        "base b!=0"
+      ],
+      "questionSha256": "e30b8b68f94a836869e52621cee43812c896d203c638a3081b37372421aff5e0",
+      "file": "target-v1/written.json",
+      "itemInFile": 54
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-index",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "9",
+          "rhs": "9"
+        }
+      ],
+      "domainNotes": [
+        "principal real root of positive number"
+      ],
+      "questionSha256": "c381a210e4f4c89f4520fe4bcf702f182bd0f5ca63003f1bacb7427b3d2e7780",
+      "file": "target-v1/written.json",
+      "itemInFile": 55
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "solve-exponent",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "729",
+          "rhs": "729"
+        }
+      ],
+      "domainNotes": [
+        "base b>1, real exponent"
+      ],
+      "questionSha256": "eed2a03ef54145d530c760521d378dbf50d59663d482597d414dd66cb956def5",
+      "file": "target-v1/written.json",
+      "itemInFile": 56
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "base b>0,b!=1; argument>0"
+      ],
+      "questionSha256": "3054a475cddd2b6f9c8075c80fb8c19260ff5258898cb546dac2be75184104b7",
+      "file": "target-v1/written.json",
+      "itemInFile": 57
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        }
+      ],
+      "domainNotes": [
+        "both log arguments positive"
+      ],
+      "questionSha256": "75afd6c114c63a8a479258ca59618169d91d04f3faf26939ad6d4b787bc9580a",
+      "file": "target-v1/written.json",
+      "itemInFile": 58
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "1",
+          "rhs": "1"
+        }
+      ],
+      "domainNotes": [
+        "positive arguments; valid base"
+      ],
+      "questionSha256": "692f583e210dacb6e372a5f787052ab73791ca7e30c0200f780a973066c6d29d",
+      "file": "target-v1/written.json",
+      "itemInFile": 59
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        }
+      ],
+      "domainNotes": [
+        "both bases>1; change-base denominator nonzero"
+      ],
+      "questionSha256": "24df610cadeafa20287ceb3fdf27a10622ff8ed28cd0bab050e4d7e9c92a4523",
+      "file": "target-v1/written.json",
+      "itemInFile": 60
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "unknown base x>0,x!=1"
+      ],
+      "questionSha256": "cd11353488415cc753f0727dcf893136ded001e945e598801c8ddf60a140e668",
+      "file": "target-v1/written.json",
+      "itemInFile": 61
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 1",
+          "rhs": "log(7)/log(10) + 1"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(7)<1"
+      ],
+      "questionSha256": "09e3abe09bb9a13f1a5fbff51e012e2b7e9294d8263d4adfeb17246e04481c8c",
+      "file": "target-v1/written.json",
+      "itemInFile": 62
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "(-log(50) + log(3))/log(10)",
+          "rhs": "-2 + log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(6)<1; floor negative log, not truncation"
+      ],
+      "questionSha256": "382a065d53240f7a8d1277b4f3c5743fc9af26ac539dd5f08a6055f03694e8e3",
+      "file": "target-v1/written.json",
+      "itemInFile": 63
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mantissa-scaling",
+      "variant": 1,
+      "exactChecks": [
+        {
+          "lhs": "(-log(10) + log(3))/log(10) + 1",
+          "rhs": "log(3)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "1<b<10; common log mantissa in [0,1)"
+      ],
+      "questionSha256": "06d7e6a186d4045cb77d76bb4ae2f66b63192e33a010fabefd4484f356f61da3",
+      "file": "target-v1/written.json",
+      "itemInFile": 64
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "1024",
+          "rhs": "1024"
+        }
+      ],
+      "domainNotes": [
+        "b>0"
+      ],
+      "questionSha256": "a9d21e13ba71a4f304bd865108808d5576032d653372667071214dd1aa63f053",
+      "file": "target-v1/written.json",
+      "itemInFile": 65
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-division",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "64",
+          "rhs": "64"
+        }
+      ],
+      "domainNotes": [
+        "nonzero denominator"
+      ],
+      "questionSha256": "0ffc31b385fc9828d07b706379e1ba0c56fbc6726f385222de4ad77f3f8fb8f4",
+      "file": "target-v1/written.json",
+      "itemInFile": 66
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "4096",
+          "rhs": "4096"
+        }
+      ],
+      "domainNotes": [
+        "positive base"
+      ],
+      "questionSha256": "5eed2f93542b1d29deb6113c0e8d207b8936af8a043ed3debc15309604dc302b",
+      "file": "target-v1/written.json",
+      "itemInFile": 67
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "1/16",
+          "rhs": "1/16"
+        }
+      ],
+      "domainNotes": [
+        "base b!=0"
+      ],
+      "questionSha256": "615d31a9ca2375b0f47abe8785088ba7883e4e8f78047ba64357fb2b81f9fad3",
+      "file": "target-v1/written.json",
+      "itemInFile": 68
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-index",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "16",
+          "rhs": "16"
+        }
+      ],
+      "domainNotes": [
+        "principal real root of positive number"
+      ],
+      "questionSha256": "2ee8264cfba76df789b31c10ecba91abb5f2da430d10424502cea681d8e1baae",
+      "file": "target-v1/written.json",
+      "itemInFile": 69
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "solve-exponent",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "16384",
+          "rhs": "16384"
+        }
+      ],
+      "domainNotes": [
+        "base b>1, real exponent"
+      ],
+      "questionSha256": "4890930c1a1b7b0b1cca98cb76f05d68137f78eccf7e074de2b348af2ac7c000",
+      "file": "target-v1/written.json",
+      "itemInFile": 70
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "base b>0,b!=1; argument>0"
+      ],
+      "questionSha256": "55d1f16649e7c2d615fdccf0004a976cdf14a1e67cc23789e39387fca2e88075",
+      "file": "target-v1/written.json",
+      "itemInFile": 71
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "5",
+          "rhs": "5"
+        }
+      ],
+      "domainNotes": [
+        "both log arguments positive"
+      ],
+      "questionSha256": "32bd0fc9307d4d43c2c907941cf94b25c8853a7712dff277a9d0c6699103fc2e",
+      "file": "target-v1/written.json",
+      "itemInFile": 72
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "2",
+          "rhs": "2"
+        }
+      ],
+      "domainNotes": [
+        "positive arguments; valid base"
+      ],
+      "questionSha256": "c4f791a33baaa92360404bfba42914344b2c9042e3c50930b02f688ada2430c4",
+      "file": "target-v1/written.json",
+      "itemInFile": 73
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        }
+      ],
+      "domainNotes": [
+        "both bases>1; change-base denominator nonzero"
+      ],
+      "questionSha256": "6ff31ceb606cab53acd45c1e7974307eb50b9191ce007e6a3cce74dd3b827cd6",
+      "file": "target-v1/written.json",
+      "itemInFile": 74
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "unknown base x>0,x!=1"
+      ],
+      "questionSha256": "3548915e89c4ab43d6876255d699a721540d253c1a5a17f9bc452e7fe1e006b9",
+      "file": "target-v1/written.json",
+      "itemInFile": 75
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 2",
+          "rhs": "log(7)/log(10) + 2"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(7)<1"
+      ],
+      "questionSha256": "e97cb5d9412c79ef783fb0a26bd81d89fa7d0d69ab1e52944f4cf0becc031d19",
+      "file": "target-v1/written.json",
+      "itemInFile": 76
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "(-log(500) + log(3))/log(10)",
+          "rhs": "-3 + log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(6)<1; floor negative log, not truncation"
+      ],
+      "questionSha256": "61415313e4d0f169799e7ef8c1719e134c64d4dcefb80050c104f94947089ecf",
+      "file": "target-v1/written.json",
+      "itemInFile": 77
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mantissa-scaling",
+      "variant": 2,
+      "exactChecks": [
+        {
+          "lhs": "-2*log(5)/log(10) + 2",
+          "rhs": "2*log(2)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "1<b<10; common log mantissa in [0,1)"
+      ],
+      "questionSha256": "c6bf3192f1e9b84c629ca230586b7767da5198fee0556710559b2816c257825b",
+      "file": "target-v1/written.json",
+      "itemInFile": 78
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "15625",
+          "rhs": "15625"
+        }
+      ],
+      "domainNotes": [
+        "b>0"
+      ],
+      "questionSha256": "80b21e23efb58f9111bcb80c038022f9c6a658e6171ef4c512dc5fab326a7a5f",
+      "file": "target-v1/written.json",
+      "itemInFile": 79
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-division",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "125",
+          "rhs": "125"
+        }
+      ],
+      "domainNotes": [
+        "nonzero denominator"
+      ],
+      "questionSha256": "42ab2b5e3885b2eb0bec7a6bf6cd36b6b63bcfbaf21195018af2ccf909d09b93",
+      "file": "target-v1/written.json",
+      "itemInFile": 80
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "390625",
+          "rhs": "390625"
+        }
+      ],
+      "domainNotes": [
+        "positive base"
+      ],
+      "questionSha256": "cfb23633a0515d696f55f790bae78b62c38397144bbbd9a372d6a306f230cecd",
+      "file": "target-v1/written.json",
+      "itemInFile": 81
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "1/125",
+          "rhs": "1/125"
+        }
+      ],
+      "domainNotes": [
+        "base b!=0"
+      ],
+      "questionSha256": "fd2bd031980ba0d02e43ae1d61a137ca340d8e7a925174af014ef35b6d9aa265",
+      "file": "target-v1/written.json",
+      "itemInFile": 82
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-index",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "25",
+          "rhs": "25"
+        }
+      ],
+      "domainNotes": [
+        "principal real root of positive number"
+      ],
+      "questionSha256": "7700b9701ebd3ad53cc695167d5126d39735c6f9e4d4e2402726c405b262b48a",
+      "file": "target-v1/written.json",
+      "itemInFile": 83
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "solve-exponent",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "390625",
+          "rhs": "390625"
+        }
+      ],
+      "domainNotes": [
+        "base b>1, real exponent"
+      ],
+      "questionSha256": "089a08a50074da1973ec14f24891157f9cbd67acccd7325fe08681332f4df3b0",
+      "file": "target-v1/written.json",
+      "itemInFile": 84
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "base b>0,b!=1; argument>0"
+      ],
+      "questionSha256": "fd3f443e46f1d0fb0c04fb751799a351ba457bee2b7f3967edb2c81f4ec64c53",
+      "file": "target-v1/written.json",
+      "itemInFile": 85
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "6",
+          "rhs": "6"
+        }
+      ],
+      "domainNotes": [
+        "both log arguments positive"
+      ],
+      "questionSha256": "270208ced13a07b70d33eb08752c13fdc9c046b42984cafe1f30a761aa210f2f",
+      "file": "target-v1/written.json",
+      "itemInFile": 86
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "positive arguments; valid base"
+      ],
+      "questionSha256": "33a50af12715e7573f562aea9b48dee6ad16047527d97c1dafb6c4bf08dcca01",
+      "file": "target-v1/written.json",
+      "itemInFile": 87
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        }
+      ],
+      "domainNotes": [
+        "both bases>1; change-base denominator nonzero"
+      ],
+      "questionSha256": "afc6029e049565e0e2c863fd6ecb3feb05a6c060e7fd2500b38902447e4641f5",
+      "file": "target-v1/written.json",
+      "itemInFile": 88
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "unknown base x>0,x!=1"
+      ],
+      "questionSha256": "73175acb68f02faeec599cb5c08ed1007f5720eadefe9371ca867670c98261a4",
+      "file": "target-v1/written.json",
+      "itemInFile": 89
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 3",
+          "rhs": "log(7)/log(10) + 3"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(7)<1"
+      ],
+      "questionSha256": "a43799227ddd9488cf2246f830e9200818fdaeb00d54428705fa5059d24cbcca",
+      "file": "target-v1/written.json",
+      "itemInFile": 90
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "(-log(5000) + log(3))/log(10)",
+          "rhs": "-4 + log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(6)<1; floor negative log, not truncation"
+      ],
+      "questionSha256": "bb422412a7fbe2bcc555f9082970b3520797ea1af173d5d3460f73850df72c8c",
+      "file": "target-v1/written.json",
+      "itemInFile": 91
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mantissa-scaling",
+      "variant": 3,
+      "exactChecks": [
+        {
+          "lhs": "-log(2)/log(10) + 1",
+          "rhs": "log(5)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "1<b<10; common log mantissa in [0,1)"
+      ],
+      "questionSha256": "0d3d0804b52f14874267d0006ea32562acadb2b76aec7329d7774666663315f3",
+      "file": "target-v1/written.json",
+      "itemInFile": 92
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "279936",
+          "rhs": "279936"
+        }
+      ],
+      "domainNotes": [
+        "b>0"
+      ],
+      "questionSha256": "c5dcefda775cf95079da38e16abe558f4b5a3b776a5261c01f3550d2a4df3d53",
+      "file": "target-v1/written.json",
+      "itemInFile": 93
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-division",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "216",
+          "rhs": "216"
+        }
+      ],
+      "domainNotes": [
+        "nonzero denominator"
+      ],
+      "questionSha256": "4d9c3ee89571f7d61b93175b19c31313442d7fe2009802b93d2af162d688c4ea",
+      "file": "target-v1/written.json",
+      "itemInFile": 94
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "60466176",
+          "rhs": "60466176"
+        }
+      ],
+      "domainNotes": [
+        "positive base"
+      ],
+      "questionSha256": "075da90f8567f848a7acfdeaf6db1e7b89dc5940844603f5bb50530c9e817b92",
+      "file": "target-v1/written.json",
+      "itemInFile": 95
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "1/1296",
+          "rhs": "1/1296"
+        }
+      ],
+      "domainNotes": [
+        "base b!=0"
+      ],
+      "questionSha256": "cce7924d6185eb8dd9fe36ff6ea2e21b638020bec0c6c98ba1747cb723777e1e",
+      "file": "target-v1/written.json",
+      "itemInFile": 96
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-index",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "36",
+          "rhs": "36"
+        }
+      ],
+      "domainNotes": [
+        "principal real root of positive number"
+      ],
+      "questionSha256": "db049cd1d97ccc7a0cc17b43e98a3d4a460a1ed5dae526ae974e809d5cf9f3d1",
+      "file": "target-v1/written.json",
+      "itemInFile": 97
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "solve-exponent",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "10077696",
+          "rhs": "10077696"
+        }
+      ],
+      "domainNotes": [
+        "base b>1, real exponent"
+      ],
+      "questionSha256": "b7f977ecca30f24906c4c4f95efd4684cf378e675a759f36cf15a83d776f57a8",
+      "file": "target-v1/written.json",
+      "itemInFile": 98
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "base b>0,b!=1; argument>0"
+      ],
+      "questionSha256": "70b3e48d71ca008e11c455f999057764a0b14f83953c4bfc66eb8509aea5dab5",
+      "file": "target-v1/written.json",
+      "itemInFile": 99
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "7",
+          "rhs": "7"
+        }
+      ],
+      "domainNotes": [
+        "both log arguments positive"
+      ],
+      "questionSha256": "7c7716e93528b58c45eb38da49bedf34f539dd8288c992368458f1307179b30a",
+      "file": "target-v1/written.json",
+      "itemInFile": 100
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "4",
+          "rhs": "4"
+        }
+      ],
+      "domainNotes": [
+        "positive arguments; valid base"
+      ],
+      "questionSha256": "fde5752054eadb844f2103488931b5cd3411d1c9df1e62b3c18fe573d50947e5",
+      "file": "target-v1/written.json",
+      "itemInFile": 101
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        }
+      ],
+      "domainNotes": [
+        "both bases>1; change-base denominator nonzero"
+      ],
+      "questionSha256": "35c52dee3aa0dabb432d221cf5ca765c913257f5af3bb4d14e5db0e5c1e13fab",
+      "file": "target-v1/written.json",
+      "itemInFile": 102
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "unknown base x>0,x!=1"
+      ],
+      "questionSha256": "8cdcce471e9d1f0f1870ea93965153769c95df3dd5e8f3e6439d270d255e85be",
+      "file": "target-v1/written.json",
+      "itemInFile": 103
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 4",
+          "rhs": "log(7)/log(10) + 4"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(7)<1"
+      ],
+      "questionSha256": "2cbf6b76e11e3924a470f1a1a4a35a9efceedbfe62e13d351828c3df48d5bd1a",
+      "file": "target-v1/written.json",
+      "itemInFile": 104
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "(-log(50000) + log(3))/log(10)",
+          "rhs": "-5 + log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(6)<1; floor negative log, not truncation"
+      ],
+      "questionSha256": "74b190bb1db8cdfbc366207a3ce9115628b8bff8cc6acf076ca2220c38472362",
+      "file": "target-v1/written.json",
+      "itemInFile": 105
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mantissa-scaling",
+      "variant": 4,
+      "exactChecks": [
+        {
+          "lhs": "(-log(5000) + log(3))/log(10) + 4",
+          "rhs": "log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "1<b<10; common log mantissa in [0,1)"
+      ],
+      "questionSha256": "2ec2be1d196f78a7f6991f0e5daa10b137611f737ab26410ea973bcaed1fec44",
+      "file": "target-v1/written.json",
+      "itemInFile": 106
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-product",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "5764801",
+          "rhs": "5764801"
+        }
+      ],
+      "domainNotes": [
+        "b>0"
+      ],
+      "questionSha256": "d89203d85dc980018e4186dbb9db6f7248c8418c81bfc016f460b81a43d34da9",
+      "file": "target-v1/written.json",
+      "itemInFile": 107
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-division",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "343",
+          "rhs": "343"
+        }
+      ],
+      "domainNotes": [
+        "nonzero denominator"
+      ],
+      "questionSha256": "287b8f430fcf3d64227483931fd43855db432ba932ebadd164da8beb45b5eb73",
+      "file": "target-v1/written.json",
+      "itemInFile": 108
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "power-of-power",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "13841287201",
+          "rhs": "13841287201"
+        }
+      ],
+      "domainNotes": [
+        "positive base"
+      ],
+      "questionSha256": "621c30599a2673e366b0dc0939fac8b3f44bb3f66d1957bbae0e2269dd882711",
+      "file": "target-v1/written.json",
+      "itemInFile": 109
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-index",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "1/16807",
+          "rhs": "1/16807"
+        }
+      ],
+      "domainNotes": [
+        "base b!=0"
+      ],
+      "questionSha256": "7fe9c59c89283397e2d8c514a2bd5c6b5870790a4a196bc82a407a896cda0c9f",
+      "file": "target-v1/written.json",
+      "itemInFile": 110
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-index",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "49",
+          "rhs": "49"
+        }
+      ],
+      "domainNotes": [
+        "principal real root of positive number"
+      ],
+      "questionSha256": "691e11f5d6ca3b5bcb131cfda9d136c38287f99ac4a0bc1b2c4ed9fe4e950247",
+      "file": "target-v1/written.json",
+      "itemInFile": 111
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "solve-exponent",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "282475249",
+          "rhs": "282475249"
+        }
+      ],
+      "domainNotes": [
+        "base b>1, real exponent"
+      ],
+      "questionSha256": "24c2d105263b7d492643b8e8e26e3d5881734d821ba976fad4530319661c6e94",
+      "file": "target-v1/written.json",
+      "itemInFile": 112
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-definition",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "base b>0,b!=1; argument>0"
+      ],
+      "questionSha256": "fb55f3980cfff566b0ddd37681bbe4f6ef392fc7ce22ab3378318688e63d8ca0",
+      "file": "target-v1/written.json",
+      "itemInFile": 113
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-product",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "8",
+          "rhs": "8"
+        }
+      ],
+      "domainNotes": [
+        "both log arguments positive"
+      ],
+      "questionSha256": "31608180c6320532d4c63d6e3a7229a738237a2c6a706d8f78d302633c48bbde",
+      "file": "target-v1/written.json",
+      "itemInFile": 114
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "log-quotient",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "5",
+          "rhs": "5"
+        }
+      ],
+      "domainNotes": [
+        "positive arguments; valid base"
+      ],
+      "questionSha256": "4c1da5839ebec1f55fad5a961d96a76bfe7b73bd64b55e825fbd3d6ec713db7d",
+      "file": "target-v1/written.json",
+      "itemInFile": 115
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "change-base",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "3/2",
+          "rhs": "3/2"
+        }
+      ],
+      "domainNotes": [
+        "both bases>1; change-base denominator nonzero"
+      ],
+      "questionSha256": "ceb3691542d22112cc5692285adc35adcd2cef68dee11ce22d1704801f55a33f",
+      "file": "target-v1/written.json",
+      "itemInFile": 116
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "unknown-base",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "3",
+          "rhs": "3"
+        }
+      ],
+      "domainNotes": [
+        "unknown base x>0,x!=1"
+      ],
+      "questionSha256": "dcb6404ad7fc9b5f342f3f3baba50cdcde8816bc410880adc04df811b93cd8e5",
+      "file": "target-v1/written.json",
+      "itemInFile": 117
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-large",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "log(7)/log(10) + 5",
+          "rhs": "log(7)/log(10) + 5"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(7)<1"
+      ],
+      "questionSha256": "21eea490e6a6995fd2dd045570686519f361c6bf176ce501409e2e3fe5afbca0",
+      "file": "target-v1/written.json",
+      "itemInFile": 118
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "characteristic-small",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "(-log(500000) + log(3))/log(10)",
+          "rhs": "-6 + log(6)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "0<log10(6)<1; floor negative log, not truncation"
+      ],
+      "questionSha256": "aed38713b9dc6ca2bb45348d1675d93caccb830ae019b9839f15b1a8ae304cb5",
+      "file": "target-v1/written.json",
+      "itemInFile": 119
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "mantissa-scaling",
+      "variant": 5,
+      "exactChecks": [
+        {
+          "lhs": "(-5*log(10) + log(7))/log(10) + 5",
+          "rhs": "log(7)/log(10)"
+        }
+      ],
+      "domainNotes": [
+        "1<b<10; common log mantissa in [0,1)"
+      ],
+      "questionSha256": "cb24ae3bd975e34ab763f2e4b45025da6585e0ba42e420c6dc8a0b6f9a38333d",
+      "file": "target-v1/written.json",
+      "itemInFile": 120
+    }
+  ]
+}

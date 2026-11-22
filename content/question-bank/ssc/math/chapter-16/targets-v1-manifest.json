@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 16,
+  "topic": "১৬শ অধ্যায়: পরিমিতি",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 133366,
+      "sha256": "1ea68e3b30183d80e6996a8ba10c727dfec3dc5fa812fa2285059839c123b72c"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 81174,
+      "sha256": "fa4ad027bd8d2fcff531ab80b4fd9f8b26e63f5b40085391e0c6f77a6c4630fd"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 59003,
+      "sha256": "1dfa7a3869fa5b17d906b309e72412970fc7eba0784deddd86a6a6ec5a8ffbf1"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 517560,
+    "sha256": "d5c842a5869d12ba6a0b395f60d5a2e69b829a4a5b07316a076fb469c4471703"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 2837,
+    "sha256": "f25d6e9a72ff300b7b69eb300ef87c68f74eeb92f3566fd30b147f9afdeea90f"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

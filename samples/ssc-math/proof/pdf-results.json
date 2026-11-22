@@ -1,0 +1,42 @@
+[
+  {
+    "file": "sample.pdf",
+    "pages": 2,
+    "diagrams": 3,
+    "allImagesInPageBounds": true,
+    "questionImageAndOptionsTogether": true,
+    "noEditorOrSolutionLeak": true,
+    "sourceLabelsVisible": true,
+    "sourceLabelCount": 3
+  },
+  {
+    "file": "sample-mobile.pdf",
+    "pages": 2,
+    "diagrams": 3,
+    "allImagesInPageBounds": true,
+    "questionImageAndOptionsTogether": true,
+    "noEditorOrSolutionLeak": true,
+    "sourceLabelsVisible": true,
+    "sourceLabelCount": 3
+  },
+  {
+    "file": "sample-without-source.pdf",
+    "pages": 2,
+    "diagrams": 3,
+    "allImagesInPageBounds": true,
+    "questionImageAndOptionsTogether": true,
+    "noEditorOrSolutionLeak": true,
+    "sourceLabelsVisible": false,
+    "sourceLabelCount": 0
+  },
+  {
+    "file": "sample-mobile-without-source.pdf",
+    "pages": 2,
+    "diagrams": 3,
+    "allImagesInPageBounds": true,
+    "questionImageAndOptionsTogether": true,
+    "noEditorOrSolutionLeak": true,
+    "sourceLabelsVisible": false,
+    "sourceLabelCount": 0
+  }
+]

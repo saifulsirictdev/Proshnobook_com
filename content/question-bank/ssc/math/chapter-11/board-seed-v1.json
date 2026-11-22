@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১১শ অধ্যায়: বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 11 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$a/2=b/3=c/4\\ne0$ হলে a:b:c কোনটি?",
+      "options": {
+        "A": "2:3:4",
+        "B": "4:3:2",
+        "C": "8:9:6",
+        "D": "6:8:9"
+      },
+      "correct": "A",
+      "explanation": "সাধারণ মান t≠0 নিলে a=2t,b=3t,c=4t; তাই a:b:c=2:3:4।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 4",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "4"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "চা ও চিনির অনুপাত 7:3; মিশ্রণে চিনির পরিমাণ শতকরা কত?",
+      "options": {
+        "A": "$30$",
+        "B": "$40$",
+        "C": "$50$",
+        "D": "$70$"
+      },
+      "correct": "A",
+      "explanation": "মোট অংশ 7+3=10; চিনি 3 অংশ। শতকরা (3/10)×100=30।",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 18",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "18"
+        }
+      ]
+    }
+  ]
+}

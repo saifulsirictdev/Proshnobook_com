@@ -29,6 +29,7 @@ test("starter displays shared question type options and forwards the selected ty
       useRouter: () => ({ push() {} }),
       useSearchParams: () => new URLSearchParams(),
     },
+    "@/lib/auto-model": load("lib/auto-model.ts", {"./nctb-data":load("lib/nctb-data.ts")}),
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,
     '@/lib/english/topic-options': { englishLessonOptions: () => ({ topics: [], groups: [], notice: '' }), englishQuestionItemGroups: () => [] },

@@ -1,0 +1,62 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "chapter": 3,
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৩য় অধ্যায়: বীজগাণিতিক রাশি",
+  "counts": {
+    "MCQ": 300,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "boardCounts": {
+    "MCQ": 6,
+    "CQ": 1,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 294,
+    "CQ": 149,
+    "SQ": 100
+  },
+  "teacherApproved": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq-1.json",
+      "bytes": 134079,
+      "sha256": "f63c8bfda7e16e163503d2e45248d3ff477f226fc23ad166ccc5dfe63eafc7bb"
+    },
+    {
+      "file": "target-v1/mcq-2.json",
+      "bytes": 65521,
+      "sha256": "1bb36f0053a9b7010fb68c2bb0d8fce661ea002327d2c4e6e7ab0027cc4f405c"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 243058,
+      "sha256": "5c2ea5810f76bfedbd6b9b3426d2fb8640f137be6eee1985386392706f70dc65"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 42117,
+      "sha256": "26299d3a89a553513fc10d7ad9771dc482d85c57f10d6eea8d7c5569a2b76fe0"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 265349,
+    "sha256": "c66ce3879836fea89739a550640c778423c3f87a4c91b608def30833ba3dc57a"
+  },
+  "limitations": [
+    "Numeric target met using 7 reviewed board-compilation seeds and 543 original parameterised practice items; not 550 distinct concepts.",
+    "Independent teacher review pending. All original rows are explicitly marked; none is attributed to a board or claimed as a verbatim NCTB exercise.",
+    "Full board-source search and chapter audit are not complete. Full current-edition NCTB chapter was not obtained/read. Source preference was not exhaustively fulfilled.",
+    "Exact symbolic/answer checks and strict importer compatibility do not prove full semantic or independent human approval.",
+    "No database import, approved stock, deployment or live receipt. Previous source seed files/backups remain unchanged."
+  ]
+}

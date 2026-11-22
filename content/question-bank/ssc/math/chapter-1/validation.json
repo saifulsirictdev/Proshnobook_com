@@ -1,0 +1,269 @@
+{
+  "status": "PARTIAL_SOURCE_REVIEWED_DRAFT_NOT_IMPORTED",
+  "targetMet": false,
+  "teacherApproved": false,
+  "officialOriginalPaperIndependentlyVerified": false,
+  "targetCounts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 40
+  },
+  "counts": {
+    "MCQ": 9,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "remaining": {
+    "MCQ": 191,
+    "CQ": 50,
+    "SQ": 40
+  },
+  "scope": {
+    "category": "Class 9",
+    "subject": "গণিত",
+    "topic": "১ম অধ্যায়: বাস্তব সংখ্যা"
+  },
+  "source": {
+    "fileId": "1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5",
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111",
+    "pdfPages": 170,
+    "bytes": 2867507,
+    "yearCoverage": [
+      2024,
+      2023
+    ],
+    "attribution": "সংকলনের নিজস্ব বোর্ড/সাল শিরোনাম; মূল সরকারি প্রশ্নপত্রের স্বাধীন authentication নয়।"
+  },
+  "sourcePriority": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "chapterTextbookRead": false,
+  "localSourceInventoryOnly": true,
+  "databaseCountVerified": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "items": [
+    {
+      "item": 1,
+      "sourceBoard": "dhaka",
+      "sourceYear": 2024,
+      "pdfPage": 1,
+      "printedPage": 142,
+      "questionNumber": 23,
+      "visualRead": true,
+      "adaptation": "Unicode-এ প্রতিলিপি; অর্থ/বিকল্প অপরিবর্তিত।",
+      "independentCalculation": {
+        "operation": "multiply",
+        "operands": [
+          "1/3",
+          "2/3"
+        ],
+        "expected": "2/9",
+        "choiceValues": [
+          "1",
+          "2/9",
+          "2/11",
+          "17/90"
+        ]
+      }
+    },
+    {
+      "item": 2,
+      "sourceBoard": "cumilla",
+      "sourceYear": 2024,
+      "pdfPage": 20,
+      "printedPage": 161,
+      "questionNumber": 16,
+      "visualRead": true,
+      "adaptation": "মূল প্রশ্নের সাধারণ বাক্য “নিচের কোনটি অমূলদ সংখ্যা?” সামান্য পুনর্লিখিত, যাতে একই generic stem-যুক্ত ভিন্ন বোর্ডের বিকল্পসমৃদ্ধ প্রশ্ন stem-only importer-এ হারিয়ে না যায়। মূল চার বিকল্পের মান/ক্রম অক্ষত।",
+      "independentCalculation": {
+        "operation": "uniqueIrrational",
+        "rationalChoices": [
+          "2/9",
+          "3/4",
+          "2/3",
+          null
+        ],
+        "radicand": 3,
+        "coefficient": "5/3"
+      }
+    },
+    {
+      "item": 3,
+      "sourceBoard": "jashore",
+      "sourceYear": 2024,
+      "pdfPage": 29,
+      "printedPage": 170,
+      "questionNumber": 2,
+      "visualRead": true,
+      "adaptation": "Unicode-এ প্রতিলিপি; অর্থ/বিকল্প অপরিবর্তিত।",
+      "independentCalculation": {
+        "operation": "parity",
+        "evenSamples": [
+          -4,
+          -2,
+          0,
+          2,
+          4,
+          100
+        ],
+        "expectedParity": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "item": 4,
+      "sourceBoard": "sylhet",
+      "sourceYear": 2024,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": 2,
+      "visualRead": true,
+      "adaptation": "মূল পৃষ্ঠা ও উচ্চ রেজোলিউশন crop-এ দেখা হয়েছে: 0.53-এ আবৃত্তির বিন্দু নেই; একে 0.5-আবৃত্ত-3 করা হয়নি।",
+      "independentCalculation": {
+        "operation": "finiteDecimal",
+        "digits": "53",
+        "places": 2,
+        "expected": "53/100",
+        "choiceValues": [
+          "53/90",
+          "5/9",
+          "53/100",
+          "8/15"
+        ]
+      }
+    },
+    {
+      "item": 5,
+      "sourceBoard": "sylhet",
+      "sourceYear": 2024,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": 18,
+      "visualRead": true,
+      "adaptation": "Unicode-এ প্রতিলিপি; অর্থ/বিকল্প অপরিবর্তিত।",
+      "independentCalculation": {
+        "operation": "rationalSquareRoot",
+        "fraction": "5/80",
+        "expected": "1/4"
+      }
+    },
+    {
+      "item": 6,
+      "sourceBoard": "sylhet",
+      "sourceYear": 2024,
+      "pdfPage": 49,
+      "printedPage": 190,
+      "questionNumber": 28,
+      "visualRead": true,
+      "adaptation": "মূল generic stem সামান্য পুনর্লিখিত; বিকল্প/ক্রম অক্ষত। প্রথম বিকল্পে ৫ ও ৩ উভয়টি আবৃত্ত—পূর্ণ block 53-কে overline-এ দেখানো হয়েছে।",
+      "independentCalculation": {
+        "operation": "uniqueIrrational",
+        "rationalChoices": [
+          "53/99",
+          "4/5",
+          null,
+          "3"
+        ],
+        "radicand": 2,
+        "coefficient": "2"
+      }
+    },
+    {
+      "item": 7,
+      "sourceBoard": "barishal",
+      "sourceYear": 2024,
+      "pdfPage": 58,
+      "printedPage": 199,
+      "questionNumber": 16,
+      "visualRead": true,
+      "adaptation": "উচ্চ রেজোলিউশন crop-এ প্রথম দশমিকে শুধু ৩-এর উপরের বিন্দু ও দ্বিতীয় দশমিকে ৩-এর বিন্দু দেখা হয়েছে। overline দিয়ে স্পষ্ট করা হয়েছে।",
+      "independentCalculation": {
+        "operation": "divide",
+        "operands": [
+          "2/15",
+          "1/3"
+        ],
+        "expected": "2/5",
+        "choiceValues": [
+          "2/45",
+          "2/5",
+          "4/9",
+          "4"
+        ]
+      }
+    },
+    {
+      "item": 8,
+      "sourceBoard": "dinajpur",
+      "sourceYear": 2024,
+      "pdfPage": 67,
+      "printedPage": 208,
+      "questionNumber": 1,
+      "visualRead": true,
+      "adaptation": "মূল generic stem সামান্য পুনর্লিখিত; মূল/ঘনমূলের সূচক ও বিকল্পের ক্রম ছবির সঙ্গে মিলেছে। A ও D গাণিতিকভাবে সমমান হলেও প্রকাশভঙ্গি আলাদা; মূল প্রশ্ন বদলানো হয়নি।",
+      "independentCalculation": {
+        "operation": "uniqueIrrational",
+        "rationalChoices": [
+          "2/3",
+          null,
+          "9/25",
+          "2/3"
+        ],
+        "radicand": 2,
+        "coefficient": "1/2"
+      }
+    },
+    {
+      "item": 9,
+      "sourceBoard": "mymensingh",
+      "sourceYear": 2024,
+      "pdfPage": 77,
+      "printedPage": 218,
+      "questionNumber": 1,
+      "visualRead": true,
+      "adaptation": "Unicode-এ প্রতিলিপি; অর্থ/বিকল্প অপরিবর্তিত।",
+      "independentCalculation": {
+        "operation": "pureRecurring",
+        "integer": 1,
+        "block": "43",
+        "expected": "142/99",
+        "choiceValues": [
+          "142/99",
+          "143/99",
+          "71/50",
+          "143/100"
+        ]
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "pdfPage": 12,
+      "printedPage": 153,
+      "questionNumber": "1",
+      "reason": "রাজশাহী ২০২৪ CQ-র ক/খ সেট-সংক্রান্ত; শুধু গ-তে sqrt(7) অমূলদ প্রমাণ। এটিকে বাস্তব সংখ্যা অধ্যায়ের পূর্ণ CQ বা ২ নম্বরের SQ হিসেবে গণনা করা হয়নি।"
+    },
+    {
+      "fileId": "12YNXtbbFAJDrT0rxdJmFWr62HDAs0Kai",
+      "reason": "metadata-তে Board-Ques থাকলেও read_file_text-এ English First Paper; গণিতের উৎস নয়।"
+    }
+  ],
+  "limitations": [
+    "প্রাথমিক বোর্ড-উৎসভিত্তিক ৯ MCQ; ২০০/৫০/৪০ লক্ষ্য পূর্ণ নয়।",
+    "শুধু নির্বাচিত পৃষ্ঠা/প্রশ্ন ছবিতে পড়া হয়েছে; পুরো সংকলনের প্রতিটি প্রশ্নের semantic chapter audit সম্পন্ন দাবি নয়।",
+    "একই বিষয়ের সাদৃশ্যপূর্ণ stem-এর তিনটি প্রশ্নে শব্দগত সামান্য সম্পাদনা করা হয়েছে; item-wise adaptation সংরক্ষিত।",
+    "NCTB মূল বইয়ের সম্পূর্ণ অধ্যায় ও চলতি সংস্করণ এখনও হাতে পাওয়া/পড়া হয়নি; এগুলোকে NCTB exercise-এর অবিকল প্রশ্ন বলা হয়নি।",
+    "স্বাধীন শিক্ষক অনুমোদন ও live stock-এর alias-aware duplicate check বাকি; বাস্তব database/Pending import হয়নি।"
+  ]
+}

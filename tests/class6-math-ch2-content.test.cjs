@@ -2,7 +2,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);return m.exports;}
 const base='content/question-bank/class-6/chapter-2';
 test('chapter 2 mixed JSON passes real upload schema; 100 MCQ, 30 complete CQ and 30 SQ',()=>{
- const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data});const lib=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq});
+ const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data});const lib=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
  const r=lib.parseQuestionUpload(fs.readFileSync(`${base}/questions.json`,'utf8'),{category:'Class 6',subject:'গণিত',group:'',topic:'২. অনুপাত ও শতকরা'});
  assert.equal(r.records.length,160);const qs=r.batch.items;
  for(const [type,count] of [['MCQ',100],['CQ',30],['SQ',30]])assert.equal(qs.filter(q=>q.type===type).length,count);
