@@ -705,6 +705,9 @@ export default function PaperPreview({
                 >
                   {segments.map((segment, segmentIndex) => {
                     const section = sections[segment.section];
+                    // Pagination belongs to the previous render until measurement
+                    // catches up after a remove/exchange or section-count change.
+                    if (!section) return null;
                     return (
                       <div
                         data-paper-section={section.type}
@@ -733,7 +736,7 @@ export default function PaperPreview({
                               ? `paper-section-${section.type}`
                               : undefined,
                           )}
-                        {segment.columns.flat().map((i) => (
+                        {segment.columns.flat().filter(i => !!section.questions[i]).map((i) => (
                           <div key={section.questions[i].q.id}>
                             {question(section.questions[i], i + (section.startNumber ?? 0), section.type)}
                           </div>
@@ -791,7 +794,7 @@ export default function PaperPreview({
                         paddingLeft: col > 0 ? 10 : 0,
                       }}
                     >
-                      {indexes.map((i) => (
+                      {indexes.filter(i => !!questions[i]).map((i) => (
                         <div key={questions[i].q.id}>
                           {question(questions[i], i)}
                         </div>

@@ -4,7 +4,7 @@ function load(file,mocks={}){const m=new Module(file,module);m.paths=module.path
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),prov=load('lib/question-provenance.ts');
 const upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':prov});
-const auto=load('lib/auto-model.ts',{'./nctb-data':data});
+const auto=load('lib/auto-model.ts',{'./nctb-data':data,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':data}),'./question-tables':load('lib/question-tables.ts')});
 for(const [chapter,counts,seeds,families,slices,native] of [[9,{MCQ:250,CQ:150,SQ:70},10,[20,15,10],4,2]]){
  const base=`content/question-bank/ssc/math/chapter-${chapter}/`,manifest=json(base+'targets-v1-manifest.json'),review=json(base+manifest.validation.file);
  const inputs=manifest.files.map(f=>json(base+f.file)),all=inputs.flatMap(b=>b.items),size=Object.values(counts).reduce((a,b)=>a+b,0);
