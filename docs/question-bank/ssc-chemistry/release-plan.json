@@ -1,0 +1,504 @@
+{
+  "digest": "a9fbded7f0592af48e0a86f75b37b1e872c9f96c60dc6f278a944230e06bd637",
+  "count": 8110,
+  "counts": {
+    "MCQ": 5500,
+    "CQ": 1550,
+    "SQ": 1060
+  },
+  "chapters": {
+    "1": {
+      "topic": "১ম অধ্যায়: রসায়নের ধারণা",
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "2": {
+      "topic": "২য় অধ্যায়: পদার্থের অবস্থা",
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "3": {
+      "topic": "৩য় অধ্যায়: পদার্থের গঠন",
+      "MCQ": 500,
+      "CQ": 100,
+      "SQ": 100
+    },
+    "4": {
+      "topic": "৪র্থ অধ্যায়: পর্যায় সারণি",
+      "MCQ": 550,
+      "CQ": 150,
+      "SQ": 100
+    },
+    "5": {
+      "topic": "৫ম অধ্যায়: রাসায়নিক বন্ধন",
+      "MCQ": 500,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "6": {
+      "topic": "৬ষ্ঠ অধ্যায়: মোলের ধারণা ও রাসায়নিক গণনা",
+      "MCQ": 500,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "7": {
+      "topic": "৭ম অধ্যায়: রাসায়নিক বিক্রিয়া",
+      "MCQ": 500,
+      "CQ": 150,
+      "SQ": 100
+    },
+    "8": {
+      "topic": "৮ম অধ্যায়: রসায়ন ও শক্তি",
+      "MCQ": 200,
+      "CQ": 100,
+      "SQ": 70
+    },
+    "9": {
+      "topic": "৯ম অধ্যায়: এসিড-ক্ষারক সমতা",
+      "MCQ": 300,
+      "CQ": 100,
+      "SQ": 80
+    },
+    "10": {
+      "topic": "১০ম অধ্যায়: খনিজ সম্পদ: ধাতু-অধাতু",
+      "MCQ": 700,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "11": {
+      "topic": "১১শ অধ্যায়: খনিজ সম্পদ: জীবাশ্ম",
+      "MCQ": 700,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "12": {
+      "topic": "১২শ অধ্যায়: আমাদের জীবনে রসায়ন",
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    }
+  },
+  "illustrated": 2598,
+  "scopes": [
+    {
+      "id": "ssc-chemistry-ch1-mcq-1-v1",
+      "digest": "288d328b29d6280738b256d23524ac9073d41e905b7f80bf0ab1d969d525bd47",
+      "count": 120
+    },
+    {
+      "id": "ssc-chemistry-ch1-mcq-2-v1",
+      "digest": "42db24f4821a2df34a94b4ae4fbcae0d7c6339318ebd4a8e79ea309b009b8359",
+      "count": 120
+    },
+    {
+      "id": "ssc-chemistry-ch1-mcq-3-v1",
+      "digest": "9e7613cd6b96c280904c3922b832d1f3c3e43d56b35710e2c561168bef7b8478",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch1-cq-v1",
+      "digest": "c877b878293be726a5e5e400e97d9c71f03866569e5a91306bb90c6f9862785c",
+      "count": 50
+    },
+    {
+      "id": "ssc-chemistry-ch1-sq-v1",
+      "digest": "49bb66d3b2122b2fc8e79ab5e9a4cd4ff5056d96575bef6cb9d15ab95116cff1",
+      "count": 70
+    },
+    {
+      "id": "ssc-chemistry-ch2-mcq-1-v1",
+      "digest": "091d9b012aaf4100439cdc3ad37aaa2e62476d05d3f68363fadb7f2047dc93e7",
+      "count": 120
+    },
+    {
+      "id": "ssc-chemistry-ch2-mcq-2-v1",
+      "digest": "fe2bf7b300195fe469e6748816eda7d4a27ed8f6455f67d64122205650e5c22d",
+      "count": 120
+    },
+    {
+      "id": "ssc-chemistry-ch2-mcq-3-v1",
+      "digest": "f0eecb66b39f1b611c813cf2fd8dc45c166f1c282e0a51bbe239f78bcbca00d7",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch2-cq-v1",
+      "digest": "6d928adba4faf4d7fc47912cbf2d427474e133df14b13492852704f577602e84",
+      "count": 50
+    },
+    {
+      "id": "ssc-chemistry-ch2-sq-v1",
+      "digest": "0b6467017daa9f65dbe83dc33b25470e4f031168b2a25bad5432dedb72075ada",
+      "count": 70
+    },
+    {
+      "id": "ssc-chemistry-ch3-mcq-1-v1",
+      "digest": "f8ba5f51b4b0b7391f14bd9e8220476a3971588e31f06d9874b69e9bb40c338d",
+      "count": 125
+    },
+    {
+      "id": "ssc-chemistry-ch3-mcq-2-v1",
+      "digest": "0fddd40dbc419bc03aa4dd92b63b5edd70bc1ec7d3a94adeebaa38a12c7c725b",
+      "count": 125
+    },
+    {
+      "id": "ssc-chemistry-ch3-mcq-3-v1",
+      "digest": "35f38a961ee5dccc01de27c34143e1e4bed46a1dc4058bd39e05154a3946568e",
+      "count": 125
+    },
+    {
+      "id": "ssc-chemistry-ch3-mcq-4-v1",
+      "digest": "ca319f53ff0e10166b3b62c054cf410d054a972e97f0f78324c222057b9b6d22",
+      "count": 125
+    },
+    {
+      "id": "ssc-chemistry-ch3-cq-v1",
+      "digest": "d7cf355f543d66e5cadfe3a2c4ba68757742369cf3cc11ff45d0051610e5ce40",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch3-sq-v1",
+      "digest": "e3bddde554a427a01727569eb97acf6b9dc9a721aacc5fc34f42e0f2080b131a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch4-mcq-1-v1",
+      "digest": "2a39aaae7859b40a5d7d3bfb19d1ba1fa0f70c9829f124417e99cef65983804f",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch4-mcq-2-v1",
+      "digest": "17c20ee8adc70fd9db25de206f9b10d391f41ad21804621e5320c9828965bc7b",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch4-mcq-3-v1",
+      "digest": "591004e60bb18681eb6f9c5bcc9ed0fb89a0a776309073f92db6a71a21fa6dde",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch4-mcq-4-v1",
+      "digest": "081c69fe3037da80a924efb32d0bd31f9ca991fc58b8402a82b74998e68acf95",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch4-mcq-5-v1",
+      "digest": "45fdcf9f567a62d5d4e1ebee6ac97ed57682fc71c18c7c487f4638a1177fc2b7",
+      "count": 110
+    },
+    {
+      "id": "ssc-chemistry-ch4-cq-v1",
+      "digest": "f029dd0a95f6befee75dd4fa736159c9b56f599a8b4e30362c37a314ad74361a",
+      "count": 150
+    },
+    {
+      "id": "ssc-chemistry-ch4-sq-v1",
+      "digest": "7ac6889545c6250d774478b2790f9c4c37a384d435996273eac844db62e6d856",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-mcq-1-v1",
+      "digest": "5c04ddb9cb1c82e957a7d094aa9f6b949c8b225b3715e1df44eca18ab9f0838d",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-mcq-2-v1",
+      "digest": "3fb460200507f2aa219d4bfa436c43eab1a831a5faf56fc09655b63634626b28",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-mcq-3-v1",
+      "digest": "f020e5127b8cd9db44f5205567c9d85250e2774c09b5488922a2c3f6b85de2bb",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-mcq-4-v1",
+      "digest": "2206e1d84480f661d6e5aecb19106c394e9ff0b2407edd23404c14915cbe8fc2",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-mcq-5-v1",
+      "digest": "ba47a6be0131d9b06cdf1b6a093951c8a5b482e711d03ba2e1a4ddfa47caaf19",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-cq-1-v1",
+      "digest": "716aec349635ec1a1d15acbd76ea73a53d4f71b7ec7c9e6832ed073b6884dab6",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-cq-2-v1",
+      "digest": "b76b8be64d15316746646c34ec40ebbf3de5740651a9371468f9cb9376552406",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch5-sq-v1",
+      "digest": "42d190db14f4e48bc26a505058d756913d46675e223b3c68a7097b8d2d945fed",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-mcq-1-v1",
+      "digest": "567daf45204bf67ce918d820e421dddc34e8cc47b9cb07ebf9d35ce61d24d8a3",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-mcq-2-v1",
+      "digest": "ec98c77dd52fea87638862b4c28faf754553dc5402da980c690dad5ab47d50d5",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-mcq-3-v1",
+      "digest": "6afc1f06e1b03f7e5bb257b610ae7093a4c103895aca402a2115defaea21d09a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-mcq-4-v1",
+      "digest": "056bab67547ffc04eba547bbafcbbeeecacd8089606b0580a38f86557804c7ce",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-mcq-5-v1",
+      "digest": "4433194bdd387585a6c47ca0e043e85d4d72fb1d0f38e9f3a6f46d913fd4193a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-cq-1-v1",
+      "digest": "fe024556e1604ec940a821ad6a075928ce6267f49b13d29f6f2ad521da158e4f",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-cq-2-v1",
+      "digest": "cf4638fad7c547965628c99b2cae7d9c2f93f3c98107046e098fed1b413601a4",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch6-sq-v1",
+      "digest": "0be38a6b743f5a44399548ebe899e8fc06be4c112cf3fe841273dfcaf36e1f70",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-mcq-1-v1",
+      "digest": "cafd6f0b83a7dca826c64c75bf07fcd3132cfdc7d1ba870a4c1542d5a83bb571",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-mcq-2-v1",
+      "digest": "1d9369db0e32beeedc35b60494754b207fa40466af5b47bbfd629e85ea698203",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-mcq-3-v1",
+      "digest": "f23f55ed937b6495759faf2391a96047fe481a2f2018398882848ef09b495eef",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-mcq-4-v1",
+      "digest": "910d7bb8a46ca0dbd65b3284a001631a1527b18c8a67e83d3b9cd37ac15edfde",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-mcq-5-v1",
+      "digest": "4c2899de0ca41b2703d857cbe0534c40fa1f8ace3f191716703c23fb5d6021fe",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-cq-1-v1",
+      "digest": "15b03d18ce257c83492110ca989ad6354bf61cd1c89031c40186963c8c235ebc",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch7-cq-2-v1",
+      "digest": "bc5cb8998e75df24e330d1140d0627487b9d118f9557bdb35c0cb9c7686ee671",
+      "count": 50
+    },
+    {
+      "id": "ssc-chemistry-ch7-sq-1-v1",
+      "digest": "8c458690426cba82410ad3762c46460d9ed94975d7c2f9d559fb934b94af21ac",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch8-mcq-1-v1",
+      "digest": "8a2978459ea3053b275ac585bf468ccd6278a8ca0ab1d0625fdc473ab4b5c5be",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch8-mcq-2-v1",
+      "digest": "b4ded10cb33efb510a92117baa28e245564990c4d6663f199f94d34224007ea2",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch8-cq-1-v1",
+      "digest": "f8135e19a0925918759a2b9d3ba9aeda0ccbbf0626c0c1a6c08fd4d512d4e753",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch8-sq-1-v1",
+      "digest": "c497d710fb16f0524cae41009d4cdb037ccc9042557dfc47a01d10207dbe46b6",
+      "count": 70
+    },
+    {
+      "id": "ssc-chemistry-ch9-mcq-1-v1",
+      "digest": "064fe016f6f84f1a4a4ac5c9c97c07e8a2bd678b70e3520b4ca6fde2f7889715",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch9-mcq-2-v1",
+      "digest": "fcf0db0e6b7f81ed705906b894b435363a76242a8dd2e1fce9b77b1cda202287",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch9-mcq-3-v1",
+      "digest": "dd6e959fbfcd384dd977dbc6696a727ccd157248c0c48524a6a8fab98bfd3b9d",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch9-cq-1-v1",
+      "digest": "773a591a9657e9cc725da52050f25c045f9cbe219118ea79eb29e02026bb513a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch9-sq-1-v1",
+      "digest": "5146dfe0a89af5669df5fdaa78f575d120a0319a7e0da5b87977d2ec5f1db9b4",
+      "count": 80
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-1-v1",
+      "digest": "a053bf1476479cd35c1236e244588e8fc0fc67a94ddddb79f2795c0777ed604d",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-2-v1",
+      "digest": "23fae053e2e0f419ac587caf9bc589649076c32d22db3696dbc34bf54c2e8c96",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-3-v1",
+      "digest": "34282878fa0cc9df66d8c3f3da8056dfb9552c2b8ae7279aa53e11c8ace281cc",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-4-v1",
+      "digest": "2be237d172cd3e092c4b6ac0ed6ac4ee2e154bfd79b9e654be18664a636e7c9f",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-5-v1",
+      "digest": "04a0a28fd4e6b88e9e7a2656570eb29bf03b447cf4b7bd29dd0c510b4ee63171",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-6-v1",
+      "digest": "b0782b77b602fddec4dc5321e9bd975ca77d00ff86888dcd91c32d71f3659ef9",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-mcq-7-v1",
+      "digest": "6f8ece7f0e59955ba721c7f3b81b928fa763b4ae2617ebf0caeae8a2fb05ac3a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-cq-1-v1",
+      "digest": "fbd6f9b9415f9fa8f10f1b84c3b526072b8d4b738202cdf013bfd11a1b1fd9fb",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-cq-2-v1",
+      "digest": "ac615acefff4bf39c6b19a38eb119f4113b12869f15fe7b7467ddb540b60ce1b",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch10-sq-1-v1",
+      "digest": "5c942f89488c971593120095b81c8d1b2e2b013fb0aa219750c7a749857bb64e",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-1-v1",
+      "digest": "8ebb989011e3e28ada3bf3a04019d8d4d879c278524c7593fa114b284b91d317",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-2-v1",
+      "digest": "1db11fef36bcde41265ec988ebca598f2200a428642f44a7c756e7d18a86dd04",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-3-v1",
+      "digest": "512326b9aa53ebc9137841df714d6299a3d7102c552a9e6fb07fec966741ff39",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-4-v1",
+      "digest": "b25cdd603739656470e5ebd9e54d94c91ba688ed226fdf73329d7b17e562998d",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-5-v1",
+      "digest": "2bd8cb9343b517018cd75fbcdfb7d89862d12e71fdf73f087ad43b6f2633d499",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-6-v1",
+      "digest": "998929fb5cb98138066b1d16cd8673318a42d8ef7c8b92876f926d93303dd480",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-mcq-7-v1",
+      "digest": "028f33ea69c76cbb606ad6b3dec1661c99c13f155d81a96f36d7f5eb558caecd",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-cq-1-v1",
+      "digest": "ad88f3d328fe0bd98e85db73daf0d3bf926ae3ce0ba82e5af9d15c9ad7aaf02d",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-cq-2-v1",
+      "digest": "4524c68167e533885ef37bfa5d09829010dbabbe03c091b16ce97b739329ef7b",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch11-sq-1-v1",
+      "digest": "769e691fc275b058a2c33a846b5e36dcf9099052f27df9b49295ca6b91854919",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch12-mcq-1-v1",
+      "digest": "bec92b89efd800d85a514a715c15fb961d85833cab0b5160cf42f584fdaa2ca2",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch12-mcq-2-v1",
+      "digest": "3ed376e444fc1e1f626c5ac40809ec8b246c76da311107db426b86940030674a",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch12-mcq-3-v1",
+      "digest": "407eb354feafb1b30f77a3be394a7bdc33110b4084ce5565cb5978ad4af6cdbe",
+      "count": 100
+    },
+    {
+      "id": "ssc-chemistry-ch12-mcq-4-v1",
+      "digest": "8a028c6cdb28f4651461c1ebb0298cf43c7054cad63304756a9aac8777c4e139",
+      "count": 50
+    },
+    {
+      "id": "ssc-chemistry-ch12-cq-1-v1",
+      "digest": "a848b7e725d45c978d648c3c379cff932c04e03797ad90554a08eba086c2f13b",
+      "count": 50
+    },
+    {
+      "id": "ssc-chemistry-ch12-sq-1-v1",
+      "digest": "695eef8950eff38c07edffd74d5069f81bc85cdbc64cf4d96b45ab1b6ba62abe",
+      "count": 70
+    }
+  ],
+  "approvalBasis": "OWNER_EXPLICIT_IMPORT_APPROVE_DEPLOY; NOT_INDEPENDENT_TEACHER_CERTIFICATION",
+  "teacherCertified": false,
+  "officialYearVerified": false,
+  "taskVariants": true,
+  "chemistryAutoModelPolicy": "ssc-chemistry-owner-chapter-policy-v1",
+  "assetsCount": 415,
+  "assetsDigest": "e6a8af6d59a0f48e8b69478daf609528f22034fec8b7db68b3a5af999f1f7d55",
+  "status": "PINNED_RELEASE_PLAN_NOT_A_PRODUCTION_RECEIPT"
+}

@@ -33,7 +33,7 @@ export default async function QuizPage({ searchParams }: { searchParams: Promise
     .filter((r) => !!(r.correct && r.correct.trim()))
     .sort(() => Math.random() - 0.5)
     .slice(0, 10)
-    .map((r) => ({ id: r.id, text: r.text, options: Object.fromEntries(Object.entries((r.options ?? {}) as Record<string, string>).filter(([key]) => key !== "_provenance")), correct: r.correct, explanation: r.explanation }));
+    .map((r) => ({ id: r.id, text: r.text, options: Object.fromEntries(Object.entries((r.options ?? {}) as Record<string, string>).filter(([key]) => key !== "_provenance" && key !== "_authoring")), correct: r.correct, explanation: r.explanation }));
   return (
     <main className="qm-feature-page mx-auto grid max-w-5xl gap-10 px-4 py-10 lg:grid-cols-2">
       <div className="grid gap-4 sm:grid-cols-2 lg:col-span-2">
