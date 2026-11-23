@@ -56,4 +56,3 @@ test('normal application build does not implicitly publish stock',()=>{
  const fs=require('node:fs');assert.equal(JSON.parse(fs.readFileSync('package.json')).scripts.build,'prisma generate && next build --webpack');
  const {spawnSync}=require('node:child_process'),r=spawnSync(process.execPath,['scripts/question-bank/release-ssc-chemistry.cjs','publish',plan.digest,release.ACK],{env:{...process.env,VERCEL_ENV:'preview'},encoding:'utf8'});assert.notEqual(r.status,0);assert.match(r.stderr,/SSC_CHEMISTRY_RELEASE_STOPPED/);
 });
-
