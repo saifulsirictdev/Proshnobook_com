@@ -1,5 +1,5 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),{createHash}=require('node:crypto');
-const release=require('../scripts/question-bank/release-ssc-physics.cjs'),plan=release.prepare(),actor='vercel-owner-release:'+'a'.repeat(40);
+const release=require('../scripts/question-bank/release-ssc-physics.cjs'),plan=release.prepare({...release.load(),autoModelBlueprint:()=>null}),actor='vercel-owner-release:'+'a'.repeat(40);
 const evidence={verified:2205,assetsDigest:createHash('sha256').update(JSON.stringify(plan.preview.assets)).digest('hex'),origin:'https://proshnobook.com'};
 const publish=db=>release.publish(db,plan,plan.digest,actor,release.ACK,evidence);
 function database(initial=[],fail){
@@ -56,3 +56,5 @@ test('normal application build does not implicitly publish stock',()=>{
  const fs=require('node:fs');assert.equal(JSON.parse(fs.readFileSync('package.json')).scripts.build,'prisma generate && next build --webpack');
  const {spawnSync}=require('node:child_process'),r=spawnSync(process.execPath,['scripts/question-bank/release-ssc-physics.cjs','publish',plan.digest,release.ACK],{env:{...process.env,VERCEL_ENV:'preview'},encoding:'utf8'});assert.notEqual(r.status,0);assert.match(r.stderr,/SSC_PHYSICS_RELEASE_STOPPED/);
 });
+
+test('historical Physics publication cannot rerun after Auto Model policy activation',()=>{assert.throws(()=>release.prepare(),/Pinned Physics scope or blocked blueprint changed/);});

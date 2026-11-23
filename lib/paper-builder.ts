@@ -36,7 +36,7 @@ const number = (value: number, min: number, max: number) =>
   z.number().int().min(min).max(max).catch(value).default(value);
 export const settingsSchema = z.object({
   version: z.literal(2).default(2),
-  autoModel: z.enum(["ssc-math-mcq-v1", "ssc-math-written-v1"]).optional().catch(undefined),
+  autoModel: z.enum(["ssc-math-mcq-v1", "ssc-math-written-v1", "ssc-physics-mcq-v1", "ssc-physics-written-v1"]).optional().catch(undefined),
   // Opt-in presentation state; absent on legacy drafts and frozen approved stock.
   defaultHeader: defaultPaperHeaderSchema.optional().catch(undefined),
   header: paperHeaderSchema

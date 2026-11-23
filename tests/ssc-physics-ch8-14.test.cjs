@@ -63,7 +63,7 @@ test('Physics image allowlist rejects external SVG, traversal, query, wrong orig
 test('remaining chapters include source-backed chapter 14 without opening Physics Auto Model',()=>{
  const subject=catalog.NCTB_CLASSES.find(c=>c.class==='Class 9').subjects.find(s=>s.name==='পদার্থবিজ্ঞান');
  assert.equal(subject.chapters.length,14);assert.equal(subject.chapters[13],'১৪শ অধ্যায়: জীবন বাঁচাতে পদার্থবিজ্ঞান');
- const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ'),null);
+ const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts')});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
  const source=json('docs/question-bank/ssc-physics/source-inspection-ch8-14.json');
  for(let ch=8;ch<=14;ch++){
   const v=source.chapters[ch];assert.equal(v.fullChapterRead,false);assert.equal(v.visualInspection.allSourceFiguresInspected,false);

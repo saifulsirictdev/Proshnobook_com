@@ -60,9 +60,9 @@ test('Physics image allowlist rejects external SVG, traversal, query, wrong orig
  assert.equal(tables.questionBlocks('<svg onload="alert(1)"></svg>')[0].kind,'text');
  assert.doesNotMatch(renderToStaticMarkup(React.createElement(MathText,{text:'<svg onload="alert(1)"></svg>'})),/<svg/);
 });
-test('owner profile and Physics Auto Model block unchanged; source completeness not invented',()=>{
+test('owner profile and separately enabled Physics Auto Model; source completeness not invented',()=>{
  const p=json('docs/question-bank/ssc-physics/mark-distribution.json');assert.equal(p.totalTheoryMinutes,180);assert.equal(p.practicalMarks,25);assert.equal(p.theoryMarks,75);
- const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ'),null);
+ const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts')});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
  const src=json('docs/question-bank/ssc-physics/source-inspection-ch5-6.json');assert.equal(src.chapters['5'].visualInspection.nativeQuestionFiguresObserved,true);assert.equal(src.chapters['6'].visualInspection.allSourceFiguresInspected,false);
  for(const f of src.chapters['5'].observedFigures)assert.equal(createHash('sha256').update(fs.readFileSync(f.file)).digest('hex'),f.sha256);
 });

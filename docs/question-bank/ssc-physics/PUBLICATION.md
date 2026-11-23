@@ -29,3 +29,18 @@ Original practice questions include disclosed numerical parameter variants. Part
 ## Validation for this release
 
 77 focused Physics tests passed before deployment, including 10 publication tests (exact scope, authorization, immutable audits, idempotency, alias/content/provenance conflict rejection, rollback, live asset hashes and no implicit normal-build publication). The independent chapters 8–14 verifier passed. Local Prisma client generation was blocked by the sandbox's outbound host allowlist (`binaries.prisma.sh`), so local full typecheck/build could not be completed in this fresh sandbox. The production Vercel build is the required full build/typecheck gate; its outcome must be recorded in the release receipt.
+
+## Confirmed production outcome
+
+- Assets/application deployment: `dpl_8DkUvbKwAykar1Penm2YyN8HBJNq`, READY / PROMOTED.
+- Explicit publication deployment: `dpl_2X564jAWw3eT1h4ma1JnczFJryzu`, READY / PROMOTED; `https://proshnobook.com` alias assigned.
+- Published code: `1a1f205e20c43a219570abd7a5ec0d21a9f66e68`.
+- Committed database receipt: **6400 newly approved**, **0 previously approved**; 3500 MCQ / 1640 CQ / 1260 SQ. All 2205 live SVGs verified by content type and SHA256. Asset-list digest: `b0821dc1f991e402f7736bba6db1578ff8ef50ee6a850b0c8fb26b0232d394c2`.
+- Normal full Vercel production build/typecheck passed. All **14 paper-generation tests passed in Vercel**, resolving the local missing-generated-Prisma limitation. Separately, 77 focused Physics tests, 44 unaffected Auto Model/English/rendering tests, two real registry tests, and every independent chapter verifier passed locally.
+- Vercel project re-read confirms its default build command remains **`npm run build`**; the publication override was deployment-specific only. Do not redeploy the release deployment with inherited settings to publish again; deploy from git with normal project settings.
+- Machine-readable production receipt: `production-release-receipt.json`. Its service-reported timestamp is retained verbatim; it is not used as the conversation's date.
+- PR #23 is open for merging this deployed code into main. Full GitHub security CI is separate and was still running at the time these production results were recorded; no full-suite pass is claimed. Do not deploy the old main without the Physics assets after this release.
+
+### Later feature change (separate from publication)
+
+The owner subsequently requested Physics Auto Model and explicitly confirmed CQ/SQ chapter quotas. The new policy is documented in `AUTO-MODEL-POLICY.md`. The old release receipt above remains unchanged historical evidence of the 6400-question approval, including its then-disabled Auto Model flag. This feature must NOT rerun publication. The earlier source commit's GitHub security run `45090374661` subsequently passed; any later feature commit requires its own checks.

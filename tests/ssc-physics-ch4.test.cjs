@@ -67,9 +67,9 @@ test('Draft validation does not claim a live import, teacher approval or full ch
  assert.match(fs.readFileSync('lib/prepared-question-batches.ts','utf8'),/\.\.\.sscPhysicsChapter4Batches\(\)/);
  const src=fs.readFileSync('lib/ssc-physics-ch4-batches.ts','utf8');
  assert.doesNotMatch(src,/from ["'].*(?:db|guard|prisma)/);
- // Unsupported Physics Auto Models must remain blocked until separately implemented.
- const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog});
- assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ'),null);
+ // Separately owner-authorized subject policy now enables Physics, not other subjects.
+ const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts')});
+ assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
 });
 
 test('Physics preview is read-only; explicit ADMIN consent saves all 600 only Pending with replay protection (mock DB)',async()=>{

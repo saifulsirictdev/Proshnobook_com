@@ -1,11 +1,14 @@
+import { subjectModelPolicy, subjectModelById, subjectModelChapter } from "./subject-model-policy";
 import {
   defaults,
+  settingsSchema,
   questionType,
   type PaperItem,
   type PaperSettings,
 } from "./paper-builder";
 import {
   autoModelBlueprint,
+  autoModelRowKind,
   MATH_DIVISIONS,
   MATH_MCQ_QUOTAS,
   MATH_MCQ_FIXED_GROUPS,
@@ -24,7 +27,8 @@ export function autoModelSettings(
   const plan = autoModelBlueprint(category, subject, variant);
   if (!plan) throw Error("এই নির্বাচনের Auto Model কাঠামো প্রস্তুত নয়।");
   const s = defaults();
-  s.autoModel = plan.id;
+  s.autoModel = settingsSchema.shape.autoModel.parse(plan.id);
+  if (!s.autoModel) throw Error("মডেলের সংরক্ষণ কাঠামো প্রস্তুত নয়।");
   s.defaultHeader = { enabled: true, overrides: {} };
   s.info = {
     ...s.info,
@@ -39,18 +43,22 @@ export function autoModelSettings(
   };
   s.show.chapter = false;
   s.show.marks = true;
+  const policy = subjectModelPolicy(category, subject);
+  const sections = policy?.variants[variant].sections;
+  const offered = (kind: string, fallback: number) => sections?.find(s=>s.kind===kind)?.offered ?? (sections ? 0 : fallback);
+  const answer = (kind: string, fallback: number) => sections?.find(s=>s.kind===kind)?.answer ?? (sections ? 0 : fallback);
   s.cfg = {
     ...s.cfg,
-    expectedMCQ: variant === "MCQ" ? 30 : 0,
-    expectedCQ: variant === "CQ" ? 8 : 0,
-    expectedSHORT: variant === "CQ" ? 15 : 0,
+    expectedMCQ: offered("MCQ", variant === "MCQ" ? 30 : 0),
+    expectedCQ: offered("CQ", variant === "CQ" ? 8 : 0),
+    expectedSHORT: offered("SHORT", variant === "CQ" ? 15 : 0),
     cols: 3,
     cqColumns: 2,
     optCols: 2,
     fontSize: 14,
-    mcqAnswer: variant === "MCQ" ? 30 : 0,
-    cqAnswer: variant === "CQ" ? 5 : 0,
-    shortAnswer: variant === "CQ" ? 10 : 0,
+    mcqAnswer: answer("MCQ", variant === "MCQ" ? 30 : 0),
+    cqAnswer: answer("CQ", variant === "CQ" ? 5 : 0),
+    shortAnswer: answer("SHORT", variant === "CQ" ? 10 : 0),
   };
   return s;
 }
@@ -63,6 +71,7 @@ export function autoModelIssues(
   const stems = items.map((q) =>
     (q.stimulus || q.text)
       .normalize("NFKC")
+      .replace(/[০-৯]/g, c=>String("০১২৩৪৫৬৭৮৯".indexOf(c)))
       .replace(/\s+/g, " ")
       .trim()
       .toLowerCase(),
@@ -72,6 +81,24 @@ export function autoModelIssues(
     new Set(items.map((q) => q.id)).size !== items.length
   )
     issues.push("সম্পাদিত মডেলে একই প্রশ্ন পুনরাবৃত্তি হয়েছে।");
+  const registered = subjectModelById(s.autoModel);
+  if (registered) {
+    const {policy, sections} = registered;
+    if (items.some(q => q.subject !== policy.subject || !subjectModelChapter(policy,q.topic ?? "") || (q.category && !subjectModelPolicy(q.category,q.subject)))) issues.push("মডেলের বাইরে বিষয়/অধ্যায়ের প্রশ্ন আছে।");
+    const kinds = new Map(items.map(q => [q.id, autoModelRowKind({id:q.id,text:q.text,topic:q.topic ?? "",explanation:q.explanation ?? "",correct:q.correct ?? "",options:questionType(q)==="CQ" ? {stimulus:q.stimulus || q.text,subQuestions:q.subQuestions} : q.options ?? {}},policy)]));
+    if (items.some(q=>!kinds.get(q.id)||questionType(q)!==kinds.get(q.id)||!sections.some(section=>section.kind===kinds.get(q.id)))) issues.push("মডেলের প্রশ্নের ধরন, উত্তর, উপপ্রশ্ন বা চিত্র অসম্পূর্ণ।");
+    if(items.length !== sections.reduce((n,section)=>n+section.offered,0)) issues.push("মডেলের মোট প্রশ্নসংখ্যা মিলছে না।");
+    for(const section of sections) {
+      const qs=items.filter(q=>kinds.get(q.id)===section.kind);
+      const counts=policy.chapters.map(topic=>qs.filter(q=>q.topic===topic).length);
+      if(qs.length!==section.offered || section.requiredChapters.some(ch=>counts[ch-1]<1) || counts.some(n=>n>section.maxPerChapter)) issues.push(`${section.kind}: অধ্যায়-কোটা মিলছে না — অধ্যায় ${section.requiredChapters.join(", ")} থেকে অন্তত ১টি করে, প্রতি অধ্যায় সর্বোচ্চ ${section.maxPerChapter}টি; মোট ${section.offered}টি প্রয়োজন।`);
+      const offered=section.kind==="MCQ"?s.cfg.expectedMCQ:section.kind==="CQ"?s.cfg.expectedCQ:s.cfg.expectedSHORT;
+      const answer=section.kind==="MCQ"?s.cfg.mcqAnswer:section.kind==="CQ"?s.cfg.cqAnswer:s.cfg.shortAnswer;
+      if(offered!==section.offered || answer!==section.answer) issues.push(`${section.kind}: উত্তর দিতে হবে ${section.answer}টি; সেটআপের মানবণ্টন বদলেছে।`);
+    }
+    return issues;
+  }
+  if (!["ssc-math-mcq-v1", "ssc-math-written-v1"].includes(s.autoModel)) return [...issues,"এই বিষয়ের মডেল নীতি প্রস্তুত নয়।"];
   if (items.some((q) => q.subject !== "গণিত" || !mathDivision(q.topic ?? "")))
     issues.push("মডেলের বাইরে বিষয়/অধ্যায়ের প্রশ্ন আছে।");
   if (s.autoModel === "ssc-math-mcq-v1") {
@@ -153,6 +180,14 @@ export function autoModelSections(items: PaperItem[], s: PaperSettings) {
       });
     return parts;
   }
+  const registered = subjectModelById(s.autoModel);
+  if (registered) return withExtras(registered.sections.map((section,i)=>({
+    type: section.kind,
+    title: `${section.kind === "MCQ" ? "নৈর্ব্যক্তিক" : section.kind === "CQ" ? "সৃজনশীল" : "সংক্ষিপ্ত উত্তর প্রশ্ন"} — ${section.answer*section.marksEach}`,
+    instruction: (i===0 ? warning : "") + `${section.answer===section.offered ? "সকল" : `যেকোনো ${section.answer}টি`} প্রশ্নের উত্তর দাও। প্রতিটি প্রশ্নের মান ${section.marksEach}।${section.kind==="CQ" ? ` ক–খ–গ–ঘ: ${registered.policy.cqPartMarks.join("–")}।` : ""}`,
+    startNumber: 0,
+    questions: views(items.filter(q=>questionType(q)===section.kind)),
+  })));
   if (s.autoModel === "ssc-math-mcq-v1")
     return withExtras([
       {
