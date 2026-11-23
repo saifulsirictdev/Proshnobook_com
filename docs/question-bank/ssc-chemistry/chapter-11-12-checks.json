@@ -1,0 +1,80 @@
+{
+  "status": "FULL_COUNT_LOCAL_DRAFTS_NOT_IMPORTED",
+  "chapters": {
+    "11": {
+      "MCQ": 700,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "12": {
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    }
+  },
+  "total": 1470,
+  "sourceCount": 18,
+  "authoredCount": 1452,
+  "registeredBatchesAdded": 16,
+  "totalRegisteredBatches": 274,
+  "totalRegisteredRecords": 27126,
+  "chemistryRegisteredDrafts": {
+    "MCQ": 5500,
+    "CQ": 1550,
+    "SQ": 1060,
+    "total": 8110
+  },
+  "checks": [
+    {
+      "log": "ch11-12-regression.tap",
+      "sha256": "86bc70426f2509cc6bb47f082c03e010490860ca04d2f8be4b814044718d1b78",
+      "tests": 160,
+      "pass": 160,
+      "fail": 0,
+      "skipped": 0,
+      "duration_ms": 61441.554723
+    },
+    {
+      "log": "ch11-12-final.tap",
+      "sha256": "b9ebbc71e853d7307de71a878b19a4e4ecb10345c55d8430865edcfe251d6491",
+      "tests": 13,
+      "pass": 13,
+      "fail": 0,
+      "skipped": 0,
+      "duration_ms": 3226.336025
+    },
+    {
+      "log": "ch11-12-library-ui.tap",
+      "sha256": "d1eaac4f8fb4aca133aba0465e3aadb9dddd324874b5355c304f53b159d6d5eb",
+      "tests": 2,
+      "pass": 2,
+      "fail": 0,
+      "skipped": 0,
+      "duration_ms": 2720.031099
+    }
+  ],
+  "passedTests": 175,
+  "sourceAssets": {
+    "count": 7,
+    "originalPDFSHA256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "extractorCheck": "PASS byte-identical"
+  },
+  "deterministicGenerators": "PASS --check chapters11/12 and combined review; checkpoint regeneration retained",
+  "gitDiffCheck": "PASS",
+  "broaderLibrarySubset": {
+    "result": "TIMEOUT 120s; owned PIDs5225/5231terminated",
+    "passed": false,
+    "logOnlyTAPHeader": true
+  },
+  "productionBuild": false,
+  "fullAppTypecheck": false,
+  "fullAppTestSuite": false,
+  "browserPrintAudit": false,
+  "teacherCertified": false,
+  "officialChemistryBlueprintVerified": false,
+  "imported": false,
+  "approved": false,
+  "published": false,
+  "deployed": false,
+  "previousAggregateCorrection": "Earlier1–10kind totals4550/1300/790were narrative arithmetic error; actual registered4450MCQ/1300CQ/890SQ=6640. Prior record contents unchanged."
+}

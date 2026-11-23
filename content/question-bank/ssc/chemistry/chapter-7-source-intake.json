@@ -1,0 +1,242 @@
+{
+  "status": "LIMITED_REVIEWED_SOURCE_SELECTION_NOT_EXHAUSTIVE",
+  "textbook": {
+    "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+    "fileName": "২০২৬ — রসায়ন.pdf",
+    "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "chapterPrintedPages": "142–167",
+    "questionsPDFPages": [
+      170,
+      171,
+      172
+    ],
+    "formatting": "Original source pixels authoritative. Editable text uses Unicode chemistry/line wrapping; equations keep the same species, coefficients and direction. No source answer keys/marks printed on these pages.",
+    "pageMap": {
+      "165": 170,
+      "166": 171,
+      "167": 172
+    },
+    "pageMapNote": "Confirmed against labeled contact sheet and individual pages; previous visual-inspection notes misassociated parallel tool images. These three exercise pages are sequential; no scrambled-order assumption."
+  },
+  "satt": {
+    "mcqURL": "https://sattacademy.com/all-mcq/রাসায়নিক-বিক্রিয়া-55944",
+    "writtenURL": "https://sattacademy.com/all-written/রাসায়নিক-বিক্রিয়া-55944",
+    "mcqChunksRead": [
+      0,
+      1
+    ],
+    "writtenChunksRead": [
+      0
+    ],
+    "cqURL": "https://sattacademy.com/question/i-mgoh2-2hcl-mgcl2-2h2oii-cao-co2-caco3iii-ca-f2-caf2",
+    "cqChunksRead": [
+      0
+    ],
+    "notes": [
+      "Public pages only, no login bypass. Small selected excerpts; no bulk third-party bank copied.",
+      "Extraction repeats MathML equations; one copy retained as formatting cleanup, no chemical repair guessed.",
+      "Board/year labels observed on website only; no original examPDF page invented. Question5 is written-list displayed number, not asserted original exam question number.",
+      "Website counters430MCQ/529CQ are not verified unique complete-question counts. No shortage/exhaustion claim.",
+      "Correct-choice highlight and article solutions not used as source answers; solutions authored separately."
+    ]
+  },
+  "excluded": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 2,
+      "reason": "Clinical lime-on-bee-sting recommendation is unsafe; excluded from usable teaching bank, not silently rewritten as a source question."
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 3,
+      "reason": "Same unsafe lime-on-sting premise. Insect stings are not treated as simple acid-base neutralization in this bank."
+    },
+    {
+      "source": "satt",
+      "reason": "Duplicate textbook vinegar/antacid items not counted twice; electrolysis/nuclear questions on listing not used to expand this chapter; equation-corrupted questions not guessed."
+    }
+  ],
+  "items": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 1,
+      "printedPage": 165,
+      "text": "ভিনেগারে কোন এসিডটি উপস্থিত থাকে?",
+      "options": [
+        "সাইট্রিক এসিড",
+        "এসিটিক এসিড",
+        "টারটারিক এসিড",
+        "এসকরবিক এসিড"
+      ],
+      "nativeImage": "tb-mcq-1.png",
+      "pdfPage": 170
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 3,
+      "printedPage": 165,
+      "text": "এন্টাসিড জাতীয় ঔষধ সেবনে কোন ধরনের বিক্রিয়া সম্পন্ন হয়?",
+      "options": [
+        "প্রশমন",
+        "দহন",
+        "সংযোজন",
+        "প্রতিস্থাপন"
+      ],
+      "nativeImage": "tb-mcq-3.png",
+      "pdfPage": 170
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 4,
+      "printedPage": 166,
+      "text": "H₂SO₄ + MgO → লবণ + পানি; বিক্রিয়াটিতে–\n(i) তাপ উৎপন্ন হয়\n(ii) ইলেকট্রন স্থানান্তর ঘটে\n(iii) অধঃক্ষেপ পড়ে\nনিচের কোনটি সঠিক?",
+      "options": [
+        "i",
+        "ii ও iii",
+        "i ও iii",
+        "i, ii ও iii"
+      ],
+      "nativeImage": "tb-mcq-4.png",
+      "pdfPage": 171
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 5,
+      "printedPage": 166,
+      "stimulus": "নিচের উদ্দীপকের আলোকে ৫ ও ৬ নং প্রশ্নের উত্তর দাও :\nরসায়ন পরীক্ষাগারে নিচের বিক্রিয়ার মাধ্যমে ফেরিক ক্লোরাইড প্রস্তুত করা হলো:\n2FeCl₂ + Cl₂ = 2FeCl₃",
+      "text": "উদ্দীপকে কোন ধরনের বিক্রিয়াটি সংঘটিত হয়েছে?",
+      "options": [
+        "সংযোজন বিক্রিয়া",
+        "প্রতিস্থাপন বিক্রিয়া",
+        "বিয়োজন বিক্রিয়া",
+        "দহন বিক্রিয়া"
+      ],
+      "nativeImage": "tb-mcq-5.png",
+      "stimulusImage": "tb-shared-5-6.png",
+      "pdfPage": 171
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 6,
+      "printedPage": 166,
+      "stimulus": "নিচের উদ্দীপকের আলোকে ৫ ও ৬ নং প্রশ্নের উত্তর দাও :\nরসায়ন পরীক্ষাগারে নিচের বিক্রিয়ার মাধ্যমে ফেরিক ক্লোরাইড প্রস্তুত করা হলো:\n2FeCl₂ + Cl₂ = 2FeCl₃",
+      "text": "উদ্দীপকের বিক্রিয়াটিতে–\ni. FeCl₂ জারিত হয়\nii. Cl₂ জারক হিসেবে কাজ করে\niii. FeCl₃ অধঃক্ষিপ্ত হয়\nনিচের কোনটি সঠিক?",
+      "options": [
+        "i ও ii",
+        "i ও iii",
+        "ii ও iii",
+        "i, ii ও iii"
+      ],
+      "nativeImage": "tb-mcq-6.png",
+      "pdfPage": 171,
+      "stimulusImage": "tb-shared-5-6.png"
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 1,
+      "printedPage": 166,
+      "text": "অপু ও সেতু উভয়ের বাসায় রান্নার কাজে প্রাকৃতিক গ্যাস ব্যবহার করা হয়। অপুর বাসার পাত্রের নিচে কালো দাগ পড়লেও সেতুর বাসার পাত্রের নিচে কোনো দাগ নেই।",
+      "parts": [
+        "একমুখী বিক্রিয়া কাকে বলে?",
+        "রাসায়নিক সাম্যাবস্থা বলতে কী বোঝায়?",
+        "রান্নার সময় তাদের বাসায় সম্পন্ন বিক্রিয়াটি কোন ধরনের? ব্যাখ্যা করো।",
+        "উদ্দীপকের কোন বাসায় রান্নার কাজে গ্যাসের অপচয় হয় বলে তুমি মনে করো? তোমার উত্তরের পক্ষে যুক্তি দাও।"
+      ],
+      "nativeImage": "tb-cq-1.png",
+      "pdfPage": 171
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 2,
+      "printedPage": 167,
+      "text": "Na + ½Cl₂ → NaCl\nZn + H₂SO₄ → ZnSO₄ + H₂",
+      "parts": [
+        "সমাণুকরণ বিক্রিয়া কাকে বলে?",
+        "উভমুখী বিক্রিয়া উদাহরণসহ লেখো।",
+        "দ্বিতীয় বিক্রিয়াটির উৎপাদ যৌগটিতে সালফারের জারণ সংখ্যা নির্ণয় করো।",
+        "উদ্দীপকের প্রথম বিক্রিয়াটিতে জারণ-বিজারণ যুগপৎ ঘটে-বিশ্লেষণ করো।"
+      ],
+      "nativeImage": "tb-cq-2.png",
+      "stimulusImage": "tb-cq-2-stimulus.png",
+      "pdfPage": 172
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 1,
+      "printedPage": 167,
+      "text": "CaCO₃ এর বিয়োজন বিক্রিয়া খোলাপাত্রে একমুখী কিন্তু আবদ্ধ পাত্রে উভমুখী ব্যাখ্যা করো।",
+      "nativeImage": "tb-sq-1.png",
+      "pdfPage": 172
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 2,
+      "printedPage": 167,
+      "text": "তীব্র অম্ল এবং তীব্র ক্ষারের বিক্রিয়ায় প্রশমন তাপের মান ধ্রুব কেন? ব্যাখ্যা করো।",
+      "nativeImage": "tb-sq-2.png",
+      "pdfPage": 172
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা৪",
+      "text": "H2SO4 এ সালফারের জারণ সংখ্যা কত?",
+      "options": [
+        "+ 2",
+        "+4",
+        "+6",
+        "+8"
+      ],
+      "url": "https://sattacademy.com/mcq/h2so4-এ-সালফারের-জারণ-সংখ্যা-কত"
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা৯",
+      "text": "কোনটিতে জারণ-বিজারণ বিক্রিয়া ঘটে?",
+      "options": [
+        "প্রশমন",
+        "সমাণুকরণ",
+        "পলিমারকরণ",
+        "প্রতিস্থাপন"
+      ],
+      "url": "https://sattacademy.com/mcq/কোনটিতে-জারণবিজারণ-বিক্রিয়া-ঘটে",
+      "observedBoard": {
+        "board": "mymensingh",
+        "examYear": 2023,
+        "shortTag": "[ম. বো. ’২৩]",
+        "verification": "Website-displayed attribution only; original exam page not cross-checked"
+      }
+    },
+    {
+      "source": "satt",
+      "type": "CQ",
+      "number": "তালিকা৫",
+      "text": "(i) Mg(OH)2 + 2HCl → MgCl2 + 2H2O\n(ii) CaO + CO2 → CaCO3\n(iii) Ca + F2 → CaF2",
+      "parts": [
+        "জারণ সংখ্যা কাকে বলে?",
+        "গাঢ় নাইট্রিক এসিডকে বাদামী বর্ণের বোতলে রাখা হয় কেন? ব্যাখ্যা কর ।",
+        "আমাদের দৈনন্দিন জীবনে (i) নং প্রকৃতির বিক্রিয়ার ভূমিকা ব্যাখ্যা কর।",
+        "সকল সংশ্লেষণ বিক্রিয়া সংযোজন বিক্রিয়া কিন্তু সকল সংযোজন বিক্রিয়া সংশ্লেষণ বিক্রিয়া নয়— (ii) ও (iii) নং এর আলোকে বিশ্লেষণ কর।"
+      ],
+      "url": "https://sattacademy.com/question/i-mgoh2-2hcl-mgcl2-2h2oii-cao-co2-caco3iii-ca-f2-caf2",
+      "observedBoard": {
+        "board": "dhaka",
+        "examYear": 2017,
+        "shortTag": "[ঢা. বো. ’১৭]",
+        "verification": "Website-displayed attribution only; original exam page not cross-checked"
+      }
+    }
+  ]
+}

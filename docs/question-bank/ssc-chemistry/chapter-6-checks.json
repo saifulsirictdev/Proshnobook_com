@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_TARGET_COMPLETE_NOT_IMPORTED",
+  "tests": {
+    "command": "NODE_PATH=$PWD/.cache/chemistry-test-tools/node_modules node --test tests/ssc-chemistry-ch1.test.cjs tests/ssc-chemistry-ch2.test.cjs tests/ssc-chemistry-ch3.test.cjs tests/ssc-chemistry-ch4.test.cjs tests/ssc-chemistry-ch5.test.cjs tests/ssc-chemistry-ch6.test.cjs tests/ssc-chemistry-ch6-source.test.cjs tests/question-tables.test.cjs",
+    "passed": 81,
+    "failed": 0,
+    "skipped": 0,
+    "durationMS": 23765.614213,
+    "dependencies": {
+      "typescript": "5.9.3",
+      "zod": "4.6.7",
+      "react": "19.3.1",
+      "reactDOM": "19.3.1",
+      "katex": "0.19.1"
+    },
+    "dependenciesInstalledInIgnoredCacheOnly": true
+  },
+  "independentNumericalChecks": {
+    "authoredMCQ": 456,
+    "authoredCQ": 197
+  },
+  "originalAndMixedBuildersDeterministic": true,
+  "strictUploaderUnchanged": true,
+  "uniqueNormalizedStems": 800,
+  "imageBearingQuestions": 43,
+  "referencedDistinctImages": 42,
+  "visualReview": "Three diagram variants neutral01/20/40 and original bottle/shared-stimulus crops visually inspected in diagram QA image. Not a browser screenshot.",
+  "priorRegistry": {
+    "batches": 223,
+    "records": 22256
+  },
+  "newRegistry": {
+    "batches": 231,
+    "records": 23056
+  },
+  "broadPreparedLibrarySuite": "Attempted; exceeded120second tool budget and continued running; stopped explicitly after approximately3minutes. No result/pass claimed for this suite.",
+  "fullApplicationBuildRun": false,
+  "fullTypecheckRun": false,
+  "browserPrintRun": false,
+  "teacherCertified": false,
+  "imported": false,
+  "approved": false,
+  "deployed": false
+}

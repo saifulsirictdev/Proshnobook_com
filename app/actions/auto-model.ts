@@ -3,7 +3,7 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { categoryAliases } from "@/lib/paper-generation";
-import { assembleAutoModel, autoModelBlueprint } from "@/lib/auto-model";
+import { assembleSubjectAutoModel, autoModelBlueprint } from "@/lib/auto-model";
 
 const selection = z.object({
   category: z.string().trim().min(1).max(100),
@@ -54,7 +54,7 @@ export async function prepareAutoModel(raw: unknown) {
         error:
           "এই প্রশ্নভান্ডারটি বড়; পূর্ণ যাচাইয়ের জন্য administrator-এর সহায়তা নিন অথবা Chapter ব্যবহার করুন।",
       };
-    const result = assembleAutoModel(rows, variant);
+    const result = assembleSubjectAutoModel(rows, category, subject, variant);
     if (!result.ok)
       return {
         ok: false as const,

@@ -1,0 +1,127 @@
+{
+  "status": "BOUNDED_AUTOMATED_CHECKS_NOT_TEACHER_CERTIFICATION",
+  "counts": {
+    "MCQ": 700,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "total": 1000,
+  "origins": {
+    "TEXTBOOK_SOURCE_TRANSCRIPT": 13,
+    "SATT_SOURCE_TRANSCRIPT": 4,
+    "AUTHORED_COMMON_BOARD_STYLE": 983
+  },
+  "sourceCount": 17,
+  "authoredCount": 983,
+  "focused": {
+    "command": "NODE_PATH=$PWD/.cache/chemistry-test-tools/node_modules node --test --test-concurrency=1 tests/ssc-chemistry-ch{1,2,3,4,5,6-source,6,7,8,9,10}.test.cjs tests/question-tables.test.cjs",
+    "tests": 141,
+    "passCount": 141,
+    "failCount": 0,
+    "skipCount": 0,
+    "durationMs": 42327.948914,
+    "chapter10Tests": 15,
+    "tapSha256": "c55ddf8a7c2c1859a69fcc47883716e227f12979629996a0ccc141afce096961"
+  },
+  "librarySubset": {
+    "pattern": "Class 6 science selection|whole-selection preview",
+    "passCount": 2,
+    "durationMs": 2622.51107,
+    "tapSha256": "6e67c8f7493c4a15ee6d12e00890c55629b8138e27fc39744ac6588f88af5fd3"
+  },
+  "fullPreparedLibrarySuite": {
+    "status": "TIMEOUT_STOPPED_NOT_CLAIMED_PASSED",
+    "timeoutSeconds": 180,
+    "scope": "Attempted Chemistry/question-tables/prepared-library aggregate; timed out in full prepared-library test. Owned parent4323/child4329 stopped."
+  },
+  "generatorCheck": "PASS",
+  "nativeExtractorCheck": {
+    "status": "PASS",
+    "crops": 16,
+    "pdfSha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082"
+  },
+  "diffWhitespace": "PASS",
+  "review": {
+    "path": "docs/question-bank/ssc-chemistry/chapter-10-review.html",
+    "sha256": "f37961aae40cd964d008cd6dfec2fa04d2aa937177c8f13f4ea79d2ee24629e7",
+    "articles": 1000,
+    "embeddedImages": 16,
+    "selfContained": true
+  },
+  "visualInspection": {
+    "status": "16source crops inspected through4contact views; corrected fullMCQ6andtrimmedrust individually reopened",
+    "browserPrint": false,
+    "independentTeacherReview": false
+  },
+  "registry": {
+    "batches": 258,
+    "records": 25656,
+    "priorRecords": 24656
+  },
+  "authority": {
+    "imported": false,
+    "approved": false,
+    "published": false,
+    "deployed": false,
+    "chemistryOfficialBlueprintVerified": false
+  },
+  "notRun": [
+    "Full Next build",
+    "Full TypeScript check",
+    "Browser workflow",
+    "Browser print audit",
+    "Independent teacher certification"
+  ],
+  "artifacts": [
+    {
+      "file": "mcq-1.json",
+      "count": 100,
+      "sha256": "8fe679c7eb95a8989bb0cdbdfea9b77c3807a529eb132cb16cbfc3beb156f60f"
+    },
+    {
+      "file": "mcq-2.json",
+      "count": 100,
+      "sha256": "a8ee5fe15b60ed71c453168b631b0c410eaab61152e158e311fb3b4a3b884c21"
+    },
+    {
+      "file": "mcq-3.json",
+      "count": 100,
+      "sha256": "6928c3657911de7295131c6c3a27b33706725688a5fee876c479576e83285798"
+    },
+    {
+      "file": "mcq-4.json",
+      "count": 100,
+      "sha256": "5d4968116e4437e031e20307379b7a3e3e620075c1b40a2cad5cc41b602a95aa"
+    },
+    {
+      "file": "mcq-5.json",
+      "count": 100,
+      "sha256": "d72817fdb37a0289bbdf6dbe782ea731fa46b77d7a0218f92045faf59fd40ab9"
+    },
+    {
+      "file": "mcq-6.json",
+      "count": 100,
+      "sha256": "efdf3d133ece5083c7d318a9ec3fa5565cc88a286fdbf76d1a0d788f224eb421"
+    },
+    {
+      "file": "mcq-7.json",
+      "count": 100,
+      "sha256": "69512e3fafb2219ae0e7916a7e6de1bfbc55910630411e76663da657486e2c9a"
+    },
+    {
+      "file": "cq-1.json",
+      "count": 100,
+      "sha256": "342ba25e64d930bd694b9fc9d259e92aef828d42d2f3610ba0f71a707a5b961d"
+    },
+    {
+      "file": "cq-2.json",
+      "count": 100,
+      "sha256": "a1c0b2acd70165e43396c644c955686ca35d580292f70f38ff98c55cd285f43a"
+    },
+    {
+      "file": "sq-1.json",
+      "count": 100,
+      "sha256": "9463a16bf33aae6f41f72aa061ac52244fabe55f22f7fe3ef43d640e83e2d4e0"
+    }
+  ]
+}

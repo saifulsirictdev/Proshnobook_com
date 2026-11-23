@@ -1,0 +1,39 @@
+{
+  "status": "DRAFT_FOCUSED_CHECKS_PASSED_NOT_PUBLISHED",
+  "chapter": "১ম অধ্যায়: রসায়নের ধারণা",
+  "requested": {"MCQ": 350, "CQ": 50, "SQ": 70},
+  "actual": {"MCQ": 350, "CQ": 50, "SQ": 70},
+  "total": 470,
+  "sourceScope": "Textbook contents PDF p5 and chapter 1 PDF pp6–21 / printed pp1–16 visually inspected; not the whole book",
+  "sourceQuestionVerbatim": false,
+  "teacherCertified": false,
+  "officialExamYearVerified": false,
+  "chemistryExamBlueprintVerified": false,
+  "chemistryAutoModelEnabled": false,
+  "realDatabaseAccess": false,
+  "realApprovalMutation": false,
+  "deployed": false,
+  "focusedTests": {
+    "command": "NODE_PATH=$PWD/.cache/chemistry-tools/node_modules node --test tests/ssc-chemistry-ch1.test.cjs tests/question-json-upload.test.cjs tests/paper-math.test.cjs",
+    "passed": 18,
+    "failed": 0,
+    "scope": ["strict real importer and exact subject/chapter", "470 unique normalized stems", "350 correct-key positions balanced 88/88/87/87", "CQ marks 1/2/3/4", "wrong scope/options/marks rejected", "all 171 illustrated records and 168 research-table records parsed", "exact 11-file PNG allowlist, arbitrary URLs and HTML rejected", "real MathText React server rendering with same-origin images and no added captions", "source/asset hashes and deterministic generator check", "all fourteen hypothetical datasets independently recalculated", "Chemistry remains without an inherited subject model policy", "real full registry 197 batches / 19486 records, including exactly 470 new Chemistry drafts", "ADMIN consent/Pending-only/replay controls with mock DB"]
+  },
+  "broaderRegression": {
+    "status": "INCONCLUSIVE_INTERRUPTED",
+    "reason": "Combined prepared-library/Physics regression exceeded the 180-second tool window, remained CPU-active, and was stopped after several minutes. No full-suite success is claimed. Final Chemistry/importer/math focused suite and a real complete-registry integration assertion passed separately."
+  },
+  "fullTypecheckOrProductionBuildRun": false,
+  "browserInteractiveOrPrintTestRun": false,
+  "diagramReview": {
+    "nativeCrops": 11,
+    "illustratedRecords": 171,
+    "contactSheet": "chapter-1-diagram-review.png",
+    "visuallyInspected": true,
+    "meaningfulFigureLabelsRetained": true,
+    "historicalYellowWarningIconsNotCurrentGHSLabelCertification": true,
+    "unnecessarySourceCaptionsNotAdded": true
+  },
+  "draftReview": "chapter-1-review.html",
+  "variantDisclosure": "70 conceptual MCQ plus 14 research datasets x10 probes plus 14 safety contexts x10 probes; not 470 independent concepts or board questions. All research values are hypothetical."
+}

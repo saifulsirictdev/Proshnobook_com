@@ -1,0 +1,47 @@
+{
+  "chapter": "৭ম অধ্যায়: রাসায়নিক বিক্রিয়া",
+  "requested": {"MCQ": 500, "CQ": 150, "SQ": 100},
+  "status": "ACCESS_FEASIBILITY_CHECK_ONLY_NOT_A_QUESTION_COLLECTION",
+  "sources": [
+    {
+      "site": "daricomma.com",
+      "requestedURL": "https://daricomma.com/create-question/SSC%20-%20রসায়ন%20বিজ্ঞান/chapter/অধ্যায়-৭ঃ%20রাসায়নিক%20বিক্রিয়া&page=1",
+      "result": "Redirected to https://daricomma.com/sign-in; only mobile/password login/registration form returned",
+      "questionsReadFromProtectedBuilder": 0,
+      "restrictionBypassed": false,
+      "publicSearchResult": "Only general homepage surfaced in targeted chapter search; no reliable public chapter question page established",
+      "safeNextStep": "If owner wishes to use this builder, owner can sign in themselves and supply a permitted PDF/export/screenshots. Do not request passwords, OTPs, session cookies or bypass login."
+    },
+    {
+      "site": "sattacademy.com",
+      "requestedURL": "https://sattacademy.com/e-question-builder/select-question?subject_slug=রসায়ন-32512",
+      "builderResult": "Redirected to https://sattacademy.com/login",
+      "publicPagesAccessibleWithoutLogin": true,
+      "publicMCQURL": "https://sattacademy.com/all-mcq/রাসায়নিক-বিক্রিয়া-55944",
+      "publicWrittenURL": "https://sattacademy.com/all-written/রাসায়নিক-বিক্রিয়া-55944",
+      "publicBoardExample": "https://sattacademy.com/academy/board-exam/484/mcq",
+      "publicIndividualExample": "https://sattacademy.com/mcq/বিক্রিয়াটি-কী-ধরনের-বিক্রিয়া",
+      "inspectionScope": "Chunk0 of each of the four public URLs only; remaining chunks/pages not exhaustively inspected",
+      "observedContent": "Readable MCQ stems/options, some shared stimuli/reactions, chapter labels, linked individual questions; written listing includes stimuli and ক/খ/গ/ঘ and displayed board/year labels",
+      "displayedCounters": {"MCQ": 430, "CQ": 529},
+      "counterCaveat": "Site labels only, NOT verified unique complete questions. Written-page promotional prose separately says85+; subpart/group counting needs audit. Do not infer529whole four-part CQs or100SQ from those counters.",
+      "fidelityCaveats": [
+        "Math renders duplicated or flattened in extracted text; exponent, arrow and catalyst placement require faithful original review.",
+        "Some equations appear to contain OCR-like character errors (e.g. C3Hg/C3H6C2). Do not guess or silently correct source questions.",
+        "Correct-choice highlighting and some answers were not established by this initial text extraction.",
+        "All source attribution labels are website claims until cross-checked; do not fabricate original exam page numbers.",
+        "Images and all shared stimuli/subparts must be retained if a question is later selected.",
+        "Do not bulk reproduce the site's question bank without an adequate rights basis; use limited excerpts, factual research, owner-supplied authorized exports and explicitly identified authored supplementation."
+      ],
+      "restrictionBypassed": false
+    }
+  ],
+  "canonicalQuestionsCreatedThisCheck": 0,
+  "newAuthoredQuestionsCreatedThisCheck": 0,
+  "chapter7TargetComplete": false,
+  "internetOrSourceExhaustionEstablished": false,
+  "nextStep": "Prioritize the accessible public Satt chapter/individual pages and supplied Drive originals; verify completeness, chapter alignment, formulas, figures and real attributions before counting. Under revised owner policy, clearly labeled board-style authored supplementation is allowed after source research. This check does not claim that750questions were collected.",
+  "websiteImported": false,
+  "approved": false,
+  "deployed": false
+}
