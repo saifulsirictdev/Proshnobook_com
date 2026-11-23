@@ -1,0 +1,20 @@
+{
+  "status": "uploaded-metadata-verified",
+  "fileId": "1H_CuSfzVpyi6rYXXaFqP3rwd9dj0jXSG",
+  "name": "ssc-physics-ch3-200-120-70-draft-v1.zip",
+  "webViewLink": "https://drive.google.com/file/d/1H_CuSfzVpyi6rYXXaFqP3rwd9dj0jXSG/view?usp=drivesdk",
+  "sizeBytes": 211322,
+  "localSha256": "10ba037d86f7d33ead05f198da3cb163f9429d0d6c9d7b16dece3a1e20e39ce3",
+  "localAndRemoteMd5": "5b97b962821d84c52742e523db7fa439",
+  "remoteSizeAndMd5Verified": true,
+  "counts": {
+    "MCQ": 200,
+    "CQ": 120,
+    "SQ": 70
+  },
+  "location": "Drive root; previous chapter backups and source/reference files untouched",
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "note": "Upload and subsequent get_file confirmed matching size and MD5. Archive holds three strict-import JSON slices, validation, review HTML, mark-distribution evidence, README, generator/verifier, adapter and tests. Receipt itself is not inside its own archive."
+}

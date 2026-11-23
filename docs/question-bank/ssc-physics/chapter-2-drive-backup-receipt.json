@@ -1,0 +1,20 @@
+{
+  "status": "uploaded-metadata-verified",
+  "fileId": "18Ev3AFB1s-JV5WG1sGCHdT6pfMFukTSd",
+  "name": "ssc-physics-ch2-300-150-100-draft-v1.zip",
+  "webViewLink": "https://drive.google.com/file/d/18Ev3AFB1s-JV5WG1sGCHdT6pfMFukTSd/view?usp=drivesdk",
+  "sizeBytes": 241490,
+  "localSha256": "e743230f28ee03c7e68ba805c4c9ec837af450fb99b818cd84d5c469219c91bd",
+  "localAndRemoteMd5": "d5c8e91c0d2c642d8d7ecd746ad5bd1a",
+  "remoteSizeAndMd5Verified": true,
+  "counts": {
+    "MCQ": 300,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "location": "Drive root; existing source files and chapter 1 backup untouched",
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "note": "Upload and subsequent get_file metadata confirmed matching size and MD5. Archive holds strict JSON slices, validation, review, distribution evidence, README and authoring/verifier/adapter/tests. Receipt itself is not inside its own archive."
+}

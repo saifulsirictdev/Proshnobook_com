@@ -1,0 +1,8536 @@
+{
+  "status": "DRAFT",
+  "requested": {
+    "MCQ": 350,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "actual": {
+    "MCQ": 350,
+    "SQ": 100,
+    "CQ": 150
+  },
+  "originalPractice": true,
+  "fullChapterRead": false,
+  "sourcePageVerified": false,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "officialYearVerified": false,
+  "conceptualMCQ": 50,
+  "calculationMCQFamilies": 30,
+  "variantsPerCalculationMCQFamily": 10,
+  "conceptualSQ": 50,
+  "calculationSQFamilies": 10,
+  "variantsPerCalculationSQFamily": 5,
+  "cqFamilies": 30,
+  "variantsPerCQFamily": 5,
+  "cqMarks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "shortMarks": 2,
+  "numericVariants": true,
+  "distributionEvidence": "docs/question-bank/ssc-physics/mark-distribution.json",
+  "sourceUrlMeaning": "Project provenance, not external source evidence.",
+  "limitations": [
+    "সংখ্যা-পূর্ণ নিজস্ব খসড়া; একই পরিবারের সংখ্যাভিত্তিক ভ্যারিয়েন্ট আছে, 600 স্বাধীন ধারণা নয়।",
+    "মূল বইয়ের পূর্ণ পাঠ/পৃষ্ঠা, সর্বশেষ পাঠ্যসীমা ও স্বাধীন শিক্ষক যাচাই বাকি।",
+    "চিত্র/আঁকা graph নেই; ডেটা ও বলের দিক কথায় দেওয়া।",
+    "p²/(2m), কাজ-শক্তি, সৌর তীব্রতা ও প্রবাহভিত্তিক প্রয়োগগুলোর SSC স্তর শিক্ষককে মিলিয়ে দেখতে হবে।",
+    "কাল্পনিক বিদ্যুৎ-দর বর্তমান সরকারি ট্যারিফ নয়।",
+    "পূর্ণ সিলেবাসের মডেল বা প্রকাশনা নয়।"
+  ],
+  "files": {
+    "mcq-1.json": {
+      "count": 175,
+      "sha256": "decf8f5dbd018bcaa5e7b7af667c5bde19c344326e409ebdc9c0dfe2c3b66545"
+    },
+    "mcq-2.json": {
+      "count": 175,
+      "sha256": "645725ab6ff1af810feb82149579c08be21adb39e805e681ae4af85cb4ac6fda"
+    },
+    "cq.json": {
+      "count": 150,
+      "sha256": "55f23509e2727846371063d7665d10e695b2489abe5e5a28499309c407147332"
+    },
+    "sq.json": {
+      "count": 100,
+      "sha256": "91d1644203348614fdb68c3202ab63dcfd8c3f9480497cb72eaceffe3678d4c6"
+    }
+  },
+  "items": [
+    {
+      "index": 1,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 2,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 3,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 4,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 5,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 6,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 7,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 8,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 9,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 10,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 11,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 12,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 13,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 14,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 15,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 16,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 17,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 18,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 19,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 20,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 21,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 22,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 23,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 24,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 25,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 26,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 27,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 28,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 29,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 30,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 31,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 32,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 33,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 34,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 35,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 36,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 37,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 38,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 39,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 40,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 41,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 42,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 43,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 44,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 45,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 46,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 47,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 48,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 49,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 50,
+      "kind": "MCQ",
+      "family": "concept",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 51,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "12",
+          "s": "3"
+        },
+        "expected": "36",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 52,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "15",
+          "s": "4"
+        },
+        "expected": "60",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 53,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "18",
+          "s": "5"
+        },
+        "expected": "90",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 54,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "21",
+          "s": "6"
+        },
+        "expected": "126",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 55,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "24",
+          "s": "7"
+        },
+        "expected": "168",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 56,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "27",
+          "s": "8"
+        },
+        "expected": "216",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 57,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "30",
+          "s": "9"
+        },
+        "expected": "270",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 58,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "33",
+          "s": "10"
+        },
+        "expected": "330",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 59,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "36",
+          "s": "11"
+        },
+        "expected": "396",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 60,
+      "kind": "MCQ",
+      "family": "horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "39",
+          "s": "12"
+        },
+        "expected": "468",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 61,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "100",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 62,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "180",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 63,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "280",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 64,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "400",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 65,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 66,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "h": "10"
+        },
+        "expected": "700",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 67,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "h": "11"
+        },
+        "expected": "880",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 68,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "g": "10",
+          "h": "12"
+        },
+        "expected": "1080",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 69,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "g": "10",
+          "h": "13"
+        },
+        "expected": "1300",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 70,
+      "kind": "MCQ",
+      "family": "lift-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "g": "10",
+          "h": "14"
+        },
+        "expected": "1540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 71,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "36",
+          "force": "12"
+        },
+        "expected": "3",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 72,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "60",
+          "force": "15"
+        },
+        "expected": "4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 73,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "90",
+          "force": "18"
+        },
+        "expected": "5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 74,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "126",
+          "force": "21"
+        },
+        "expected": "6",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 75,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "168",
+          "force": "24"
+        },
+        "expected": "7",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 76,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "216",
+          "force": "27"
+        },
+        "expected": "8",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 77,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "270",
+          "force": "30"
+        },
+        "expected": "9",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 78,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "330",
+          "force": "33"
+        },
+        "expected": "10",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 79,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "396",
+          "force": "36"
+        },
+        "expected": "11",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 80,
+      "kind": "MCQ",
+      "family": "distance",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "468",
+          "force": "39"
+        },
+        "expected": "12",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 81,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "36",
+          "s": "3"
+        },
+        "expected": "12",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 82,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "60",
+          "s": "4"
+        },
+        "expected": "15",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 83,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "90",
+          "s": "5"
+        },
+        "expected": "18",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 84,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "126",
+          "s": "6"
+        },
+        "expected": "21",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 85,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "168",
+          "s": "7"
+        },
+        "expected": "24",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 86,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "216",
+          "s": "8"
+        },
+        "expected": "27",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 87,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "270",
+          "s": "9"
+        },
+        "expected": "30",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 88,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "330",
+          "s": "10"
+        },
+        "expected": "33",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 89,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "396",
+          "s": "11"
+        },
+        "expected": "36",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 90,
+      "kind": "MCQ",
+      "family": "force",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "468",
+          "s": "12"
+        },
+        "expected": "39",
+        "unit": " N"
+      }
+    },
+    {
+      "index": 91,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "180",
+          "t": "4"
+        },
+        "expected": "45",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 92,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "240",
+          "t": "5"
+        },
+        "expected": "48",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 93,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "300",
+          "t": "6"
+        },
+        "expected": "50",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 94,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "360",
+          "t": "7"
+        },
+        "expected": "360/7",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 95,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "420",
+          "t": "8"
+        },
+        "expected": "105/2",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 96,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "480",
+          "t": "9"
+        },
+        "expected": "160/3",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 97,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "540",
+          "t": "10"
+        },
+        "expected": "54",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 98,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "600",
+          "t": "11"
+        },
+        "expected": "600/11",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 99,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "660",
+          "t": "12"
+        },
+        "expected": "55",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 100,
+      "kind": "MCQ",
+      "family": "power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "720",
+          "t": "13"
+        },
+        "expected": "720/13",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 101,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "120",
+          "power": "30"
+        },
+        "expected": "4",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 102,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "200",
+          "power": "40"
+        },
+        "expected": "5",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 103,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "300",
+          "power": "50"
+        },
+        "expected": "6",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 104,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "420",
+          "power": "60"
+        },
+        "expected": "7",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 105,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "560",
+          "power": "70"
+        },
+        "expected": "8",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 106,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "720",
+          "power": "80"
+        },
+        "expected": "9",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 107,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "900",
+          "power": "90"
+        },
+        "expected": "10",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 108,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "1100",
+          "power": "100"
+        },
+        "expected": "11",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 109,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "1320",
+          "power": "110"
+        },
+        "expected": "12",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 110,
+      "kind": "MCQ",
+      "family": "time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "work": "1560",
+          "power": "120"
+        },
+        "expected": "13",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 111,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "25",
+          "t": "4"
+        },
+        "expected": "100",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 112,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "30",
+          "t": "5"
+        },
+        "expected": "150",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 113,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "35",
+          "t": "6"
+        },
+        "expected": "210",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 114,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "40",
+          "t": "7"
+        },
+        "expected": "280",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 115,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "45",
+          "t": "8"
+        },
+        "expected": "360",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 116,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "50",
+          "t": "9"
+        },
+        "expected": "450",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 117,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "55",
+          "t": "10"
+        },
+        "expected": "550",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 118,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "60",
+          "t": "11"
+        },
+        "expected": "660",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 119,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "65",
+          "t": "12"
+        },
+        "expected": "780",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 120,
+      "kind": "MCQ",
+      "family": "energy-pt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "70",
+          "t": "13"
+        },
+        "expected": "910",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 121,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5",
+          "t": "4"
+        },
+        "expected": "25",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 122,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6",
+          "t": "5"
+        },
+        "expected": "36",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 123,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7",
+          "t": "6"
+        },
+        "expected": "140/3",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 124,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8",
+          "t": "7"
+        },
+        "expected": "400/7",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 125,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9",
+          "t": "8"
+        },
+        "expected": "135/2",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 126,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "h": "10",
+          "t": "9"
+        },
+        "expected": "700/9",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 127,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "h": "11",
+          "t": "10"
+        },
+        "expected": "88",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 128,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "g": "10",
+          "h": "12",
+          "t": "11"
+        },
+        "expected": "1080/11",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 129,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "g": "10",
+          "h": "13",
+          "t": "12"
+        },
+        "expected": "325/3",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 130,
+      "kind": "MCQ",
+      "family": "lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "g": "10",
+          "h": "14",
+          "t": "13"
+        },
+        "expected": "1540/13",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 131,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "10",
+          "t": "10",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "2",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 132,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "15",
+          "t": "12",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "3",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 133,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "20",
+          "t": "14",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "4",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 134,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "25",
+          "t": "16",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "5",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 135,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "30",
+          "t": "18",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "6",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 136,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "35",
+          "t": "20",
+          "g": "10",
+          "h": "10"
+        },
+        "expected": "7",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 137,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "40",
+          "t": "22",
+          "g": "10",
+          "h": "11"
+        },
+        "expected": "8",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 138,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "45",
+          "t": "24",
+          "g": "10",
+          "h": "12"
+        },
+        "expected": "9",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 139,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "50",
+          "t": "26",
+          "g": "10",
+          "h": "13"
+        },
+        "expected": "10",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 140,
+      "kind": "MCQ",
+      "family": "lift-mass",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "55",
+          "t": "28",
+          "g": "10",
+          "h": "14"
+        },
+        "expected": "11",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 141,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "4"
+        },
+        "expected": "16",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 142,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "5"
+        },
+        "expected": "75/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 143,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "6"
+        },
+        "expected": "72",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 144,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "7"
+        },
+        "expected": "245/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 145,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "8"
+        },
+        "expected": "192",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 146,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "v": "9"
+        },
+        "expected": "567/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 147,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "v": "10"
+        },
+        "expected": "400",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 148,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "v": "11"
+        },
+        "expected": "1089/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 149,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "v": "12"
+        },
+        "expected": "720",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 150,
+      "kind": "MCQ",
+      "family": "kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "v": "13"
+        },
+        "expected": "1859/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 151,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "energy": "16"
+        },
+        "expected": "4",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 152,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "energy": "75/2"
+        },
+        "expected": "5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 153,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "energy": "72"
+        },
+        "expected": "6",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 154,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "energy": "245/2"
+        },
+        "expected": "7",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 155,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "energy": "192"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 156,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "energy": "567/2"
+        },
+        "expected": "9",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 157,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "energy": "400"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 158,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "energy": "1089/2"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 159,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "energy": "720"
+        },
+        "expected": "12",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 160,
+      "kind": "MCQ",
+      "family": "speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "energy": "1859/2"
+        },
+        "expected": "13",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 161,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "4",
+          "energy": "16"
+        },
+        "expected": "2",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 162,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "energy": "75/2"
+        },
+        "expected": "3",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 163,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "energy": "72"
+        },
+        "expected": "4",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 164,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "energy": "245/2"
+        },
+        "expected": "5",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 165,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "energy": "192"
+        },
+        "expected": "6",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 166,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "energy": "567/2"
+        },
+        "expected": "7",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 167,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "energy": "400"
+        },
+        "expected": "8",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 168,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "energy": "1089/2"
+        },
+        "expected": "9",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 169,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "energy": "720"
+        },
+        "expected": "10",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 170,
+      "kind": "MCQ",
+      "family": "mass-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "13",
+          "energy": "1859/2"
+        },
+        "expected": "11",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 171,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "100",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 172,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "180",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 173,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "280",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 174,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "400",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 175,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 176,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "h": "10"
+        },
+        "expected": "700",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 177,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "h": "11"
+        },
+        "expected": "880",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 178,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "g": "10",
+          "h": "12"
+        },
+        "expected": "1080",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 179,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "g": "10",
+          "h": "13"
+        },
+        "expected": "1300",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 180,
+      "kind": "MCQ",
+      "family": "potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "g": "10",
+          "h": "14"
+        },
+        "expected": "1540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 181,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "energy": "100"
+        },
+        "expected": "5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 182,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "energy": "180"
+        },
+        "expected": "6",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 183,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "energy": "280"
+        },
+        "expected": "7",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 184,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "energy": "400"
+        },
+        "expected": "8",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 185,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "energy": "540"
+        },
+        "expected": "9",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 186,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "energy": "700"
+        },
+        "expected": "10",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 187,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "energy": "880"
+        },
+        "expected": "11",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 188,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "g": "10",
+          "energy": "1080"
+        },
+        "expected": "12",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 189,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "g": "10",
+          "energy": "1300"
+        },
+        "expected": "13",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 190,
+      "kind": "MCQ",
+      "family": "height-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "g": "10",
+          "energy": "1540"
+        },
+        "expected": "14",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 191,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "5",
+          "g": "10",
+          "energy": "100"
+        },
+        "expected": "2",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 192,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "6",
+          "g": "10",
+          "energy": "180"
+        },
+        "expected": "3",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 193,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "7",
+          "g": "10",
+          "energy": "280"
+        },
+        "expected": "4",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 194,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "8",
+          "g": "10",
+          "energy": "400"
+        },
+        "expected": "5",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 195,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "9",
+          "g": "10",
+          "energy": "540"
+        },
+        "expected": "6",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 196,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "10",
+          "g": "10",
+          "energy": "700"
+        },
+        "expected": "7",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 197,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "11",
+          "g": "10",
+          "energy": "880"
+        },
+        "expected": "8",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 198,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "12",
+          "g": "10",
+          "energy": "1080"
+        },
+        "expected": "9",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 199,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "13",
+          "g": "10",
+          "energy": "1300"
+        },
+        "expected": "10",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 200,
+      "kind": "MCQ",
+      "family": "mass-pe",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "14",
+          "g": "10",
+          "energy": "1540"
+        },
+        "expected": "11",
+        "unit": " kg"
+      }
+    },
+    {
+      "index": 201,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1000",
+          "out": "200"
+        },
+        "expected": "20",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 202,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1200",
+          "out": "300"
+        },
+        "expected": "25",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 203,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1400",
+          "out": "420"
+        },
+        "expected": "30",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 204,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1600",
+          "out": "560"
+        },
+        "expected": "35",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 205,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1800",
+          "out": "720"
+        },
+        "expected": "40",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 206,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2000",
+          "out": "900"
+        },
+        "expected": "45",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 207,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2200",
+          "out": "1100"
+        },
+        "expected": "50",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 208,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2400",
+          "out": "1320"
+        },
+        "expected": "55",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 209,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2600",
+          "out": "1560"
+        },
+        "expected": "60",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 210,
+      "kind": "MCQ",
+      "family": "efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2800",
+          "out": "1820"
+        },
+        "expected": "65",
+        "unit": "%"
+      }
+    },
+    {
+      "index": 211,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1200",
+          "percent": "20"
+        },
+        "expected": "240",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 212,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1400",
+          "percent": "25"
+        },
+        "expected": "350",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 213,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1600",
+          "percent": "30"
+        },
+        "expected": "480",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 214,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1800",
+          "percent": "35"
+        },
+        "expected": "630",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 215,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2000",
+          "percent": "40"
+        },
+        "expected": "800",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 216,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2200",
+          "percent": "45"
+        },
+        "expected": "990",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 217,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2400",
+          "percent": "50"
+        },
+        "expected": "1200",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 218,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2600",
+          "percent": "55"
+        },
+        "expected": "1430",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 219,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2800",
+          "percent": "60"
+        },
+        "expected": "1680",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 220,
+      "kind": "MCQ",
+      "family": "useful-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "3000",
+          "percent": "65"
+        },
+        "expected": "1950",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 221,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "200",
+          "percent": "20"
+        },
+        "expected": "1000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 222,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "260",
+          "percent": "25"
+        },
+        "expected": "1040",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 223,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "320",
+          "percent": "30"
+        },
+        "expected": "3200/3",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 224,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "380",
+          "percent": "35"
+        },
+        "expected": "7600/7",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 225,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "440",
+          "percent": "40"
+        },
+        "expected": "1100",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 226,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "500",
+          "percent": "45"
+        },
+        "expected": "10000/9",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 227,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "560",
+          "percent": "50"
+        },
+        "expected": "1120",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 228,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "620",
+          "percent": "55"
+        },
+        "expected": "12400/11",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 229,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "680",
+          "percent": "60"
+        },
+        "expected": "3400/3",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 230,
+      "kind": "MCQ",
+      "family": "input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "740",
+          "percent": "65"
+        },
+        "expected": "14800/13",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 231,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "500",
+          "percent": "20"
+        },
+        "expected": "100",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 232,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "600",
+          "percent": "25"
+        },
+        "expected": "150",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 233,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "700",
+          "percent": "30"
+        },
+        "expected": "210",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 234,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "800",
+          "percent": "35"
+        },
+        "expected": "280",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 235,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "900",
+          "percent": "40"
+        },
+        "expected": "360",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 236,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1000",
+          "percent": "45"
+        },
+        "expected": "450",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 237,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1100",
+          "percent": "50"
+        },
+        "expected": "550",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 238,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1200",
+          "percent": "55"
+        },
+        "expected": "660",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 239,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1300",
+          "percent": "60"
+        },
+        "expected": "780",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 240,
+      "kind": "MCQ",
+      "family": "useful-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1400",
+          "percent": "65"
+        },
+        "expected": "910",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 241,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "100",
+          "percent": "20"
+        },
+        "expected": "500",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 242,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "140",
+          "percent": "25"
+        },
+        "expected": "560",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 243,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "180",
+          "percent": "30"
+        },
+        "expected": "600",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 244,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "220",
+          "percent": "35"
+        },
+        "expected": "4400/7",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 245,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "260",
+          "percent": "40"
+        },
+        "expected": "650",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 246,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "300",
+          "percent": "45"
+        },
+        "expected": "2000/3",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 247,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "340",
+          "percent": "50"
+        },
+        "expected": "680",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 248,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "380",
+          "percent": "55"
+        },
+        "expected": "7600/11",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 249,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "420",
+          "percent": "60"
+        },
+        "expected": "700",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 250,
+      "kind": "MCQ",
+      "family": "input-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "460",
+          "percent": "65"
+        },
+        "expected": "9200/13",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 251,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "1"
+        },
+        "expected": "3600000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 252,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "3/2"
+        },
+        "expected": "5400000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 253,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "2"
+        },
+        "expected": "7200000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 254,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "5/2"
+        },
+        "expected": "9000000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 255,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "3"
+        },
+        "expected": "10800000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 256,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "7/2"
+        },
+        "expected": "12600000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 257,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "4"
+        },
+        "expected": "14400000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 258,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "9/2"
+        },
+        "expected": "16200000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 259,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "5"
+        },
+        "expected": "18000000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 260,
+      "kind": "MCQ",
+      "family": "kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "11/2"
+        },
+        "expected": "19800000",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 261,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "3/4"
+        },
+        "expected": "750",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 262,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "1"
+        },
+        "expected": "1000",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 263,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "5/4"
+        },
+        "expected": "1250",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 264,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "3/2"
+        },
+        "expected": "1500",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 265,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "7/4"
+        },
+        "expected": "1750",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 266,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "2"
+        },
+        "expected": "2000",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 267,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "9/4"
+        },
+        "expected": "2250",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 268,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "5/2"
+        },
+        "expected": "2500",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 269,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "11/4"
+        },
+        "expected": "2750",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 270,
+      "kind": "MCQ",
+      "family": "kw-watt",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "3"
+        },
+        "expected": "3000",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 271,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "4",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "116",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 272,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "5",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "435/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 273,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "6",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "352",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 274,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "7",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "1045/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 275,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "8",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "732",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 276,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "v": "9",
+          "g": "10",
+          "h": "10"
+        },
+        "expected": "1967/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 277,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "v": "10",
+          "g": "10",
+          "h": "11"
+        },
+        "expected": "1280",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 278,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "v": "11",
+          "g": "10",
+          "h": "12"
+        },
+        "expected": "3249/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 279,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "v": "12",
+          "g": "10",
+          "h": "13"
+        },
+        "expected": "2020",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 280,
+      "kind": "MCQ",
+      "family": "mechanical-total",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "v": "13",
+          "g": "10",
+          "h": "14"
+        },
+        "expected": "4939/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 281,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "100",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 282,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "180",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 283,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "280",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 284,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "400",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 285,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 286,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "h": "10"
+        },
+        "expected": "700",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 287,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "h": "11"
+        },
+        "expected": "880",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 288,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "g": "10",
+          "h": "12"
+        },
+        "expected": "1080",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 289,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "g": "10",
+          "h": "13"
+        },
+        "expected": "1300",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 290,
+      "kind": "MCQ",
+      "family": "fall-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "g": "10",
+          "h": "14"
+        },
+        "expected": "1540",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 291,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "5",
+          "g": "10"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 292,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "36/5",
+          "g": "10"
+        },
+        "expected": "12",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 293,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "49/5",
+          "g": "10"
+        },
+        "expected": "14",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 294,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "64/5",
+          "g": "10"
+        },
+        "expected": "16",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 295,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "81/5",
+          "g": "10"
+        },
+        "expected": "18",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 296,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "20",
+          "g": "10"
+        },
+        "expected": "20",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 297,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "121/5",
+          "g": "10"
+        },
+        "expected": "22",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 298,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "144/5",
+          "g": "10"
+        },
+        "expected": "24",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 299,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "169/5",
+          "g": "10"
+        },
+        "expected": "26",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 300,
+      "kind": "MCQ",
+      "family": "fall-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "h": "196/5",
+          "g": "10"
+        },
+        "expected": "28",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 301,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "g": "10"
+        },
+        "expected": "5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 302,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "g": "10"
+        },
+        "expected": "36/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 303,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "14",
+          "g": "10"
+        },
+        "expected": "49/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 304,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "16",
+          "g": "10"
+        },
+        "expected": "64/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 305,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "18",
+          "g": "10"
+        },
+        "expected": "81/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 306,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "20",
+          "g": "10"
+        },
+        "expected": "20",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 307,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "22",
+          "g": "10"
+        },
+        "expected": "121/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 308,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "24",
+          "g": "10"
+        },
+        "expected": "144/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 309,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "26",
+          "g": "10"
+        },
+        "expected": "169/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 310,
+      "kind": "MCQ",
+      "family": "rise-height",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "v": "28",
+          "g": "10"
+        },
+        "expected": "196/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 311,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "4"
+        },
+        "expected": "16",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 312,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "5"
+        },
+        "expected": "75/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 313,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "6"
+        },
+        "expected": "72",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 314,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "7"
+        },
+        "expected": "245/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 315,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "8"
+        },
+        "expected": "192",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 316,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "v": "9"
+        },
+        "expected": "567/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 317,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "v": "10"
+        },
+        "expected": "400",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 318,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "v": "11"
+        },
+        "expected": "1089/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 319,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "v": "12"
+        },
+        "expected": "720",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 320,
+      "kind": "MCQ",
+      "family": "brake-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "v": "13"
+        },
+        "expected": "1859/2",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 321,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "u": "2",
+          "v": "6"
+        },
+        "expected": "32",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 322,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "3",
+          "v": "7"
+        },
+        "expected": "60",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 323,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "4",
+          "v": "8"
+        },
+        "expected": "96",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 324,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "5",
+          "v": "9"
+        },
+        "expected": "140",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 325,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "6",
+          "v": "10"
+        },
+        "expected": "192",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 326,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "u": "7",
+          "v": "11"
+        },
+        "expected": "252",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 327,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "u": "8",
+          "v": "12"
+        },
+        "expected": "320",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 328,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "9",
+          "u": "9",
+          "v": "13"
+        },
+        "expected": "396",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 329,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "u": "10",
+          "v": "14"
+        },
+        "expected": "480",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 330,
+      "kind": "MCQ",
+      "family": "net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "11",
+          "u": "11",
+          "v": "15"
+        },
+        "expected": "572",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 331,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "5",
+          "s": "3"
+        },
+        "expected": "15",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 332,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "6",
+          "s": "4"
+        },
+        "expected": "24",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 333,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "7",
+          "s": "5"
+        },
+        "expected": "35",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 334,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "8",
+          "s": "6"
+        },
+        "expected": "48",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 335,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "9",
+          "s": "7"
+        },
+        "expected": "63",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 336,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "10",
+          "s": "8"
+        },
+        "expected": "80",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 337,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "11",
+          "s": "9"
+        },
+        "expected": "99",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 338,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "12",
+          "s": "10"
+        },
+        "expected": "120",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 339,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "13",
+          "s": "11"
+        },
+        "expected": "143",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 340,
+      "kind": "MCQ",
+      "family": "friction-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fr": "14",
+          "s": "12"
+        },
+        "expected": "168",
+        "unit": " J"
+      }
+    },
+    {
+      "index": 341,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "12",
+          "v": "4"
+        },
+        "expected": "48",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 342,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "15",
+          "v": "5"
+        },
+        "expected": "75",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 343,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "18",
+          "v": "6"
+        },
+        "expected": "108",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 344,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "21",
+          "v": "7"
+        },
+        "expected": "147",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 345,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "24",
+          "v": "8"
+        },
+        "expected": "192",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 346,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "27",
+          "v": "9"
+        },
+        "expected": "243",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 347,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "30",
+          "v": "10"
+        },
+        "expected": "300",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 348,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "33",
+          "v": "11"
+        },
+        "expected": "363",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 349,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "36",
+          "v": "12"
+        },
+        "expected": "432",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 350,
+      "kind": "MCQ",
+      "family": "power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "39",
+          "v": "13"
+        },
+        "expected": "507",
+        "unit": " W"
+      }
+    },
+    {
+      "index": 351,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 352,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 353,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 354,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 355,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 356,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 357,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 358,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 359,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 360,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 361,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 362,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 363,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 364,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 365,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 366,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 367,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 368,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 369,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 370,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 371,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 372,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 373,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 374,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 375,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 376,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 377,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 378,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 379,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 380,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 381,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 382,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 383,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 384,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 385,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 386,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 387,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 388,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 389,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 390,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 391,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 392,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 393,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 394,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 395,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 396,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 397,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 398,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 399,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 400,
+      "kind": "SQ",
+      "family": "concept-short",
+      "originalPractice": true,
+      "teacherApproved": false
+    },
+    {
+      "index": 401,
+      "kind": "SQ",
+      "family": "short-horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "12",
+          "s": "3"
+        },
+        "expected": "36",
+        "unit": " J",
+        "baseFamily": "horizontal-work"
+      }
+    },
+    {
+      "index": 402,
+      "kind": "SQ",
+      "family": "short-horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "15",
+          "s": "4"
+        },
+        "expected": "60",
+        "unit": " J",
+        "baseFamily": "horizontal-work"
+      }
+    },
+    {
+      "index": 403,
+      "kind": "SQ",
+      "family": "short-horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "18",
+          "s": "5"
+        },
+        "expected": "90",
+        "unit": " J",
+        "baseFamily": "horizontal-work"
+      }
+    },
+    {
+      "index": 404,
+      "kind": "SQ",
+      "family": "short-horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "21",
+          "s": "6"
+        },
+        "expected": "126",
+        "unit": " J",
+        "baseFamily": "horizontal-work"
+      }
+    },
+    {
+      "index": 405,
+      "kind": "SQ",
+      "family": "short-horizontal-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "24",
+          "s": "7"
+        },
+        "expected": "168",
+        "unit": " J",
+        "baseFamily": "horizontal-work"
+      }
+    },
+    {
+      "index": 406,
+      "kind": "SQ",
+      "family": "short-lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5",
+          "t": "4"
+        },
+        "expected": "25",
+        "unit": " W",
+        "baseFamily": "lift-power"
+      }
+    },
+    {
+      "index": 407,
+      "kind": "SQ",
+      "family": "short-lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6",
+          "t": "5"
+        },
+        "expected": "36",
+        "unit": " W",
+        "baseFamily": "lift-power"
+      }
+    },
+    {
+      "index": 408,
+      "kind": "SQ",
+      "family": "short-lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7",
+          "t": "6"
+        },
+        "expected": "140/3",
+        "unit": " W",
+        "baseFamily": "lift-power"
+      }
+    },
+    {
+      "index": 409,
+      "kind": "SQ",
+      "family": "short-lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8",
+          "t": "7"
+        },
+        "expected": "400/7",
+        "unit": " W",
+        "baseFamily": "lift-power"
+      }
+    },
+    {
+      "index": 410,
+      "kind": "SQ",
+      "family": "short-lift-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9",
+          "t": "8"
+        },
+        "expected": "135/2",
+        "unit": " W",
+        "baseFamily": "lift-power"
+      }
+    },
+    {
+      "index": 411,
+      "kind": "SQ",
+      "family": "short-kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "4"
+        },
+        "expected": "16",
+        "unit": " J",
+        "baseFamily": "kinetic"
+      }
+    },
+    {
+      "index": 412,
+      "kind": "SQ",
+      "family": "short-kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "5"
+        },
+        "expected": "75/2",
+        "unit": " J",
+        "baseFamily": "kinetic"
+      }
+    },
+    {
+      "index": 413,
+      "kind": "SQ",
+      "family": "short-kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "6"
+        },
+        "expected": "72",
+        "unit": " J",
+        "baseFamily": "kinetic"
+      }
+    },
+    {
+      "index": 414,
+      "kind": "SQ",
+      "family": "short-kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "7"
+        },
+        "expected": "245/2",
+        "unit": " J",
+        "baseFamily": "kinetic"
+      }
+    },
+    {
+      "index": 415,
+      "kind": "SQ",
+      "family": "short-kinetic",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "8"
+        },
+        "expected": "192",
+        "unit": " J",
+        "baseFamily": "kinetic"
+      }
+    },
+    {
+      "index": 416,
+      "kind": "SQ",
+      "family": "short-speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "energy": "16"
+        },
+        "expected": "4",
+        "unit": " m/s",
+        "baseFamily": "speed-ke"
+      }
+    },
+    {
+      "index": 417,
+      "kind": "SQ",
+      "family": "short-speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "energy": "75/2"
+        },
+        "expected": "5",
+        "unit": " m/s",
+        "baseFamily": "speed-ke"
+      }
+    },
+    {
+      "index": 418,
+      "kind": "SQ",
+      "family": "short-speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "energy": "72"
+        },
+        "expected": "6",
+        "unit": " m/s",
+        "baseFamily": "speed-ke"
+      }
+    },
+    {
+      "index": 419,
+      "kind": "SQ",
+      "family": "short-speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "energy": "245/2"
+        },
+        "expected": "7",
+        "unit": " m/s",
+        "baseFamily": "speed-ke"
+      }
+    },
+    {
+      "index": 420,
+      "kind": "SQ",
+      "family": "short-speed-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "energy": "192"
+        },
+        "expected": "8",
+        "unit": " m/s",
+        "baseFamily": "speed-ke"
+      }
+    },
+    {
+      "index": 421,
+      "kind": "SQ",
+      "family": "short-potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "g": "10",
+          "h": "5"
+        },
+        "expected": "100",
+        "unit": " J",
+        "baseFamily": "potential"
+      }
+    },
+    {
+      "index": 422,
+      "kind": "SQ",
+      "family": "short-potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "g": "10",
+          "h": "6"
+        },
+        "expected": "180",
+        "unit": " J",
+        "baseFamily": "potential"
+      }
+    },
+    {
+      "index": 423,
+      "kind": "SQ",
+      "family": "short-potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "h": "7"
+        },
+        "expected": "280",
+        "unit": " J",
+        "baseFamily": "potential"
+      }
+    },
+    {
+      "index": 424,
+      "kind": "SQ",
+      "family": "short-potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "h": "8"
+        },
+        "expected": "400",
+        "unit": " J",
+        "baseFamily": "potential"
+      }
+    },
+    {
+      "index": 425,
+      "kind": "SQ",
+      "family": "short-potential",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "h": "9"
+        },
+        "expected": "540",
+        "unit": " J",
+        "baseFamily": "potential"
+      }
+    },
+    {
+      "index": 426,
+      "kind": "SQ",
+      "family": "short-efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1000",
+          "out": "200"
+        },
+        "expected": "20",
+        "unit": "%",
+        "baseFamily": "efficiency"
+      }
+    },
+    {
+      "index": 427,
+      "kind": "SQ",
+      "family": "short-efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1200",
+          "out": "300"
+        },
+        "expected": "25",
+        "unit": "%",
+        "baseFamily": "efficiency"
+      }
+    },
+    {
+      "index": 428,
+      "kind": "SQ",
+      "family": "short-efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1400",
+          "out": "420"
+        },
+        "expected": "30",
+        "unit": "%",
+        "baseFamily": "efficiency"
+      }
+    },
+    {
+      "index": 429,
+      "kind": "SQ",
+      "family": "short-efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1600",
+          "out": "560"
+        },
+        "expected": "35",
+        "unit": "%",
+        "baseFamily": "efficiency"
+      }
+    },
+    {
+      "index": 430,
+      "kind": "SQ",
+      "family": "short-efficiency",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1800",
+          "out": "720"
+        },
+        "expected": "40",
+        "unit": "%",
+        "baseFamily": "efficiency"
+      }
+    },
+    {
+      "index": 431,
+      "kind": "SQ",
+      "family": "short-input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "200",
+          "percent": "20"
+        },
+        "expected": "1000",
+        "unit": " J",
+        "baseFamily": "input-energy"
+      }
+    },
+    {
+      "index": 432,
+      "kind": "SQ",
+      "family": "short-input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "260",
+          "percent": "25"
+        },
+        "expected": "1040",
+        "unit": " J",
+        "baseFamily": "input-energy"
+      }
+    },
+    {
+      "index": 433,
+      "kind": "SQ",
+      "family": "short-input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "320",
+          "percent": "30"
+        },
+        "expected": "3200/3",
+        "unit": " J",
+        "baseFamily": "input-energy"
+      }
+    },
+    {
+      "index": 434,
+      "kind": "SQ",
+      "family": "short-input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "380",
+          "percent": "35"
+        },
+        "expected": "7600/7",
+        "unit": " J",
+        "baseFamily": "input-energy"
+      }
+    },
+    {
+      "index": 435,
+      "kind": "SQ",
+      "family": "short-input-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "out": "440",
+          "percent": "40"
+        },
+        "expected": "1100",
+        "unit": " J",
+        "baseFamily": "input-energy"
+      }
+    },
+    {
+      "index": 436,
+      "kind": "SQ",
+      "family": "short-kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "1"
+        },
+        "expected": "3600000",
+        "unit": " J",
+        "baseFamily": "kwh-joule"
+      }
+    },
+    {
+      "index": 437,
+      "kind": "SQ",
+      "family": "short-kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "3/2"
+        },
+        "expected": "5400000",
+        "unit": " J",
+        "baseFamily": "kwh-joule"
+      }
+    },
+    {
+      "index": 438,
+      "kind": "SQ",
+      "family": "short-kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "2"
+        },
+        "expected": "7200000",
+        "unit": " J",
+        "baseFamily": "kwh-joule"
+      }
+    },
+    {
+      "index": 439,
+      "kind": "SQ",
+      "family": "short-kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "5/2"
+        },
+        "expected": "9000000",
+        "unit": " J",
+        "baseFamily": "kwh-joule"
+      }
+    },
+    {
+      "index": 440,
+      "kind": "SQ",
+      "family": "short-kwh-joule",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "energy": "3"
+        },
+        "expected": "10800000",
+        "unit": " J",
+        "baseFamily": "kwh-joule"
+      }
+    },
+    {
+      "index": 441,
+      "kind": "SQ",
+      "family": "short-net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "u": "2",
+          "v": "6"
+        },
+        "expected": "32",
+        "unit": " J",
+        "baseFamily": "net-ke-change"
+      }
+    },
+    {
+      "index": 442,
+      "kind": "SQ",
+      "family": "short-net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "3",
+          "v": "7"
+        },
+        "expected": "60",
+        "unit": " J",
+        "baseFamily": "net-ke-change"
+      }
+    },
+    {
+      "index": 443,
+      "kind": "SQ",
+      "family": "short-net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "4",
+          "v": "8"
+        },
+        "expected": "96",
+        "unit": " J",
+        "baseFamily": "net-ke-change"
+      }
+    },
+    {
+      "index": 444,
+      "kind": "SQ",
+      "family": "short-net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "5",
+          "v": "9"
+        },
+        "expected": "140",
+        "unit": " J",
+        "baseFamily": "net-ke-change"
+      }
+    },
+    {
+      "index": 445,
+      "kind": "SQ",
+      "family": "short-net-ke-change",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "6",
+          "v": "10"
+        },
+        "expected": "192",
+        "unit": " J",
+        "baseFamily": "net-ke-change"
+      }
+    },
+    {
+      "index": 446,
+      "kind": "SQ",
+      "family": "short-power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "12",
+          "v": "4"
+        },
+        "expected": "48",
+        "unit": " W",
+        "baseFamily": "power-fv"
+      }
+    },
+    {
+      "index": 447,
+      "kind": "SQ",
+      "family": "short-power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "15",
+          "v": "5"
+        },
+        "expected": "75",
+        "unit": " W",
+        "baseFamily": "power-fv"
+      }
+    },
+    {
+      "index": 448,
+      "kind": "SQ",
+      "family": "short-power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "18",
+          "v": "6"
+        },
+        "expected": "108",
+        "unit": " W",
+        "baseFamily": "power-fv"
+      }
+    },
+    {
+      "index": 449,
+      "kind": "SQ",
+      "family": "short-power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "21",
+          "v": "7"
+        },
+        "expected": "147",
+        "unit": " W",
+        "baseFamily": "power-fv"
+      }
+    },
+    {
+      "index": 450,
+      "kind": "SQ",
+      "family": "short-power-fv",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "24",
+          "v": "8"
+        },
+        "expected": "192",
+        "unit": " W",
+        "baseFamily": "power-fv"
+      }
+    },
+    {
+      "index": 451,
+      "kind": "CQ",
+      "family": "cq-pull-friction",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "20",
+          "fr": "5",
+          "s": "4"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 452,
+      "kind": "CQ",
+      "family": "cq-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "h": "4",
+          "t": "5",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 453,
+      "kind": "CQ",
+      "family": "cq-stairs-compare",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "40",
+          "h": "3",
+          "t1": "5",
+          "t2": "10",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 454,
+      "kind": "CQ",
+      "family": "cq-kinetic-scaling",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "5"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 455,
+      "kind": "CQ",
+      "family": "cq-equal-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "v": "8",
+          "M": "8"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 456,
+      "kind": "CQ",
+      "family": "cq-potential-reference",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "h1": "2",
+          "h2": "8",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 457,
+      "kind": "CQ",
+      "family": "cq-freefall",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "H": "5",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 458,
+      "kind": "CQ",
+      "family": "cq-upward-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "u": "10",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 459,
+      "kind": "CQ",
+      "family": "cq-falling-initial-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "6",
+          "H": "16/5",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 460,
+      "kind": "CQ",
+      "family": "cq-known-mechanical",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "E": "96",
+          "h": "3",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 461,
+      "kind": "CQ",
+      "family": "cq-work-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "u": "4",
+          "force": "24",
+          "s": "2"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 462,
+      "kind": "CQ",
+      "family": "cq-stop-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "10",
+          "force": "20"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 463,
+      "kind": "CQ",
+      "family": "cq-two-stage-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "F1": "10",
+          "s1": "3",
+          "F2": "6",
+          "s2": "4"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 464,
+      "kind": "CQ",
+      "family": "cq-motor-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "20",
+          "h": "4",
+          "t": "8",
+          "g": "10",
+          "percent": "75"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 465,
+      "kind": "CQ",
+      "family": "cq-water-pump",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "volume": "1/5",
+          "rho": "1000",
+          "h": "5",
+          "t": "20",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 466,
+      "kind": "CQ",
+      "family": "cq-efficiency-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2000",
+          "out": "1200",
+          "newpercent": "75"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 467,
+      "kind": "CQ",
+      "family": "cq-efficiency-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "500",
+          "out": "400",
+          "t": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 468,
+      "kind": "CQ",
+      "family": "cq-fuel-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fuel": "1/5",
+          "q": "40000000",
+          "percent": "25",
+          "newpercent": "40"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 469,
+      "kind": "CQ",
+      "family": "cq-kwh-cost",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "500",
+          "hours": "2",
+          "rate": "8",
+          "days": "30"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 470,
+      "kind": "CQ",
+      "family": "cq-output-time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "400",
+          "percent": "60",
+          "work": "1200"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 471,
+      "kind": "CQ",
+      "family": "cq-compare-machines",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "500",
+          "percent1": "50",
+          "percent2": "80",
+          "work": "2000"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 472,
+      "kind": "CQ",
+      "family": "cq-force-speed-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "100",
+          "speed": "3",
+          "t": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 473,
+      "kind": "CQ",
+      "family": "cq-momentum-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "p": "12"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 474,
+      "kind": "CQ",
+      "family": "cq-descent-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "g": "10",
+          "H": "8",
+          "h": "2",
+          "loss": "60"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 475,
+      "kind": "CQ",
+      "family": "cq-speed-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "2",
+          "u": "10",
+          "v": "5"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 476,
+      "kind": "CQ",
+      "family": "cq-ke-units",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "100",
+          "kmh": "36"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 477,
+      "kind": "CQ",
+      "family": "cq-repeated-lifts",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "10",
+          "h": "3",
+          "trips": "4",
+          "moving": "5",
+          "rest": "2",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 478,
+      "kind": "CQ",
+      "family": "cq-power-loss-percent",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "800",
+          "losspercent": "20",
+          "t": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 479,
+      "kind": "CQ",
+      "family": "cq-solar-conversion",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "intensity": "500",
+          "area": "2",
+          "t": "10",
+          "percent": "20"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 480,
+      "kind": "CQ",
+      "family": "cq-hydro-flow",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "flow": "1/10",
+          "rho": "1000",
+          "H": "5",
+          "g": "10",
+          "percent": "80",
+          "t": "20"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 481,
+      "kind": "CQ",
+      "family": "cq-pull-friction",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "25",
+          "fr": "6",
+          "s": "5"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 482,
+      "kind": "CQ",
+      "family": "cq-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "15",
+          "h": "5",
+          "t": "6",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 483,
+      "kind": "CQ",
+      "family": "cq-stairs-compare",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "45",
+          "h": "4",
+          "t1": "6",
+          "t2": "12",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 484,
+      "kind": "CQ",
+      "family": "cq-kinetic-scaling",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "6"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 485,
+      "kind": "CQ",
+      "family": "cq-equal-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "v": "10",
+          "M": "12"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 486,
+      "kind": "CQ",
+      "family": "cq-potential-reference",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "h1": "3",
+          "h2": "10",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 487,
+      "kind": "CQ",
+      "family": "cq-freefall",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "H": "36/5",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 488,
+      "kind": "CQ",
+      "family": "cq-upward-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "14",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 489,
+      "kind": "CQ",
+      "family": "cq-falling-initial-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "8",
+          "H": "4",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 490,
+      "kind": "CQ",
+      "family": "cq-known-mechanical",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "E": "216",
+          "h": "4",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 491,
+      "kind": "CQ",
+      "family": "cq-work-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "6",
+          "force": "32",
+          "s": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 492,
+      "kind": "CQ",
+      "family": "cq-stop-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "12",
+          "force": "30"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 493,
+      "kind": "CQ",
+      "family": "cq-two-stage-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "F1": "12",
+          "s1": "4",
+          "F2": "7",
+          "s2": "5"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 494,
+      "kind": "CQ",
+      "family": "cq-motor-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "30",
+          "h": "5",
+          "t": "10",
+          "g": "10",
+          "percent": "75"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 495,
+      "kind": "CQ",
+      "family": "cq-water-pump",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "volume": "3/10",
+          "rho": "1000",
+          "h": "6",
+          "t": "25",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 496,
+      "kind": "CQ",
+      "family": "cq-efficiency-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "2500",
+          "out": "1500",
+          "newpercent": "75"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 497,
+      "kind": "CQ",
+      "family": "cq-efficiency-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "600",
+          "out": "480",
+          "t": "15"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 498,
+      "kind": "CQ",
+      "family": "cq-fuel-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fuel": "3/10",
+          "q": "40000000",
+          "percent": "25",
+          "newpercent": "40"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 499,
+      "kind": "CQ",
+      "family": "cq-kwh-cost",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "600",
+          "hours": "3",
+          "rate": "8",
+          "days": "30"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 500,
+      "kind": "CQ",
+      "family": "cq-output-time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "500",
+          "percent": "60",
+          "work": "1800"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 501,
+      "kind": "CQ",
+      "family": "cq-compare-machines",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "600",
+          "percent1": "50",
+          "percent2": "80",
+          "work": "3000"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 502,
+      "kind": "CQ",
+      "family": "cq-force-speed-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "120",
+          "speed": "4",
+          "t": "11"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 503,
+      "kind": "CQ",
+      "family": "cq-momentum-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "p": "24"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 504,
+      "kind": "CQ",
+      "family": "cq-descent-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "g": "10",
+          "H": "10",
+          "h": "3",
+          "loss": "175/2"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 505,
+      "kind": "CQ",
+      "family": "cq-speed-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "3",
+          "u": "12",
+          "v": "6"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 506,
+      "kind": "CQ",
+      "family": "cq-ke-units",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "150",
+          "kmh": "54"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 507,
+      "kind": "CQ",
+      "family": "cq-repeated-lifts",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "15",
+          "h": "4",
+          "trips": "5",
+          "moving": "6",
+          "rest": "2",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 508,
+      "kind": "CQ",
+      "family": "cq-power-loss-percent",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1000",
+          "losspercent": "25",
+          "t": "11"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 509,
+      "kind": "CQ",
+      "family": "cq-solar-conversion",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "intensity": "600",
+          "area": "3",
+          "t": "15",
+          "percent": "20"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 510,
+      "kind": "CQ",
+      "family": "cq-hydro-flow",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "flow": "1/5",
+          "rho": "1000",
+          "H": "6",
+          "g": "10",
+          "percent": "80",
+          "t": "25"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 511,
+      "kind": "CQ",
+      "family": "cq-pull-friction",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "30",
+          "fr": "7",
+          "s": "6"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 512,
+      "kind": "CQ",
+      "family": "cq-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "20",
+          "h": "6",
+          "t": "7",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 513,
+      "kind": "CQ",
+      "family": "cq-stairs-compare",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "50",
+          "h": "5",
+          "t1": "7",
+          "t2": "14",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 514,
+      "kind": "CQ",
+      "family": "cq-kinetic-scaling",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "7"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 515,
+      "kind": "CQ",
+      "family": "cq-equal-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "v": "12",
+          "M": "16"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 516,
+      "kind": "CQ",
+      "family": "cq-potential-reference",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "h1": "4",
+          "h2": "12",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 517,
+      "kind": "CQ",
+      "family": "cq-freefall",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "H": "49/5",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 518,
+      "kind": "CQ",
+      "family": "cq-upward-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "18",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 519,
+      "kind": "CQ",
+      "family": "cq-falling-initial-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "10",
+          "H": "24/5",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 520,
+      "kind": "CQ",
+      "family": "cq-known-mechanical",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "E": "400",
+          "h": "5",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 521,
+      "kind": "CQ",
+      "family": "cq-work-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "8",
+          "force": "40",
+          "s": "4"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 522,
+      "kind": "CQ",
+      "family": "cq-stop-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "14",
+          "force": "40"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 523,
+      "kind": "CQ",
+      "family": "cq-two-stage-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "F1": "14",
+          "s1": "5",
+          "F2": "8",
+          "s2": "6"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 524,
+      "kind": "CQ",
+      "family": "cq-motor-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "40",
+          "h": "6",
+          "t": "12",
+          "g": "10",
+          "percent": "75"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 525,
+      "kind": "CQ",
+      "family": "cq-water-pump",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "volume": "2/5",
+          "rho": "1000",
+          "h": "7",
+          "t": "30",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 526,
+      "kind": "CQ",
+      "family": "cq-efficiency-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "3000",
+          "out": "1800",
+          "newpercent": "75"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 527,
+      "kind": "CQ",
+      "family": "cq-efficiency-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "700",
+          "out": "560",
+          "t": "20"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 528,
+      "kind": "CQ",
+      "family": "cq-fuel-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fuel": "2/5",
+          "q": "40000000",
+          "percent": "25",
+          "newpercent": "40"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 529,
+      "kind": "CQ",
+      "family": "cq-kwh-cost",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "700",
+          "hours": "4",
+          "rate": "8",
+          "days": "30"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 530,
+      "kind": "CQ",
+      "family": "cq-output-time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "600",
+          "percent": "60",
+          "work": "2400"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 531,
+      "kind": "CQ",
+      "family": "cq-compare-machines",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "700",
+          "percent1": "50",
+          "percent2": "80",
+          "work": "4000"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 532,
+      "kind": "CQ",
+      "family": "cq-force-speed-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "140",
+          "speed": "5",
+          "t": "12"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 533,
+      "kind": "CQ",
+      "family": "cq-momentum-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "p": "40"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 534,
+      "kind": "CQ",
+      "family": "cq-descent-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "g": "10",
+          "H": "12",
+          "h": "4",
+          "loss": "120"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 535,
+      "kind": "CQ",
+      "family": "cq-speed-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "4",
+          "u": "14",
+          "v": "7"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 536,
+      "kind": "CQ",
+      "family": "cq-ke-units",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "200",
+          "kmh": "72"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 537,
+      "kind": "CQ",
+      "family": "cq-repeated-lifts",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "20",
+          "h": "5",
+          "trips": "6",
+          "moving": "7",
+          "rest": "2",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 538,
+      "kind": "CQ",
+      "family": "cq-power-loss-percent",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1200",
+          "losspercent": "30",
+          "t": "12"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 539,
+      "kind": "CQ",
+      "family": "cq-solar-conversion",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "intensity": "700",
+          "area": "4",
+          "t": "20",
+          "percent": "20"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 540,
+      "kind": "CQ",
+      "family": "cq-hydro-flow",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "flow": "3/10",
+          "rho": "1000",
+          "H": "7",
+          "g": "10",
+          "percent": "80",
+          "t": "30"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 541,
+      "kind": "CQ",
+      "family": "cq-pull-friction",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "35",
+          "fr": "8",
+          "s": "7"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 542,
+      "kind": "CQ",
+      "family": "cq-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "25",
+          "h": "7",
+          "t": "8",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 543,
+      "kind": "CQ",
+      "family": "cq-stairs-compare",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "55",
+          "h": "6",
+          "t1": "8",
+          "t2": "16",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 544,
+      "kind": "CQ",
+      "family": "cq-kinetic-scaling",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "8"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 545,
+      "kind": "CQ",
+      "family": "cq-equal-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "v": "14",
+          "M": "20"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 546,
+      "kind": "CQ",
+      "family": "cq-potential-reference",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "h1": "5",
+          "h2": "14",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 547,
+      "kind": "CQ",
+      "family": "cq-freefall",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "H": "64/5",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 548,
+      "kind": "CQ",
+      "family": "cq-upward-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "22",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 549,
+      "kind": "CQ",
+      "family": "cq-falling-initial-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "12",
+          "H": "28/5",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 550,
+      "kind": "CQ",
+      "family": "cq-known-mechanical",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "E": "660",
+          "h": "6",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 551,
+      "kind": "CQ",
+      "family": "cq-work-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "10",
+          "force": "48",
+          "s": "5"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 552,
+      "kind": "CQ",
+      "family": "cq-stop-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "u": "16",
+          "force": "50"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 553,
+      "kind": "CQ",
+      "family": "cq-two-stage-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "F1": "16",
+          "s1": "6",
+          "F2": "9",
+          "s2": "7"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 554,
+      "kind": "CQ",
+      "family": "cq-motor-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "50",
+          "h": "7",
+          "t": "14",
+          "g": "10",
+          "percent": "75"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 555,
+      "kind": "CQ",
+      "family": "cq-water-pump",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "volume": "1/2",
+          "rho": "1000",
+          "h": "8",
+          "t": "35",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 556,
+      "kind": "CQ",
+      "family": "cq-efficiency-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "3500",
+          "out": "2100",
+          "newpercent": "75"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 557,
+      "kind": "CQ",
+      "family": "cq-efficiency-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "800",
+          "out": "640",
+          "t": "25"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 558,
+      "kind": "CQ",
+      "family": "cq-fuel-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fuel": "1/2",
+          "q": "40000000",
+          "percent": "25",
+          "newpercent": "40"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 559,
+      "kind": "CQ",
+      "family": "cq-kwh-cost",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "800",
+          "hours": "5",
+          "rate": "8",
+          "days": "30"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 560,
+      "kind": "CQ",
+      "family": "cq-output-time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "700",
+          "percent": "60",
+          "work": "3000"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 561,
+      "kind": "CQ",
+      "family": "cq-compare-machines",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "800",
+          "percent1": "50",
+          "percent2": "80",
+          "work": "5000"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 562,
+      "kind": "CQ",
+      "family": "cq-force-speed-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "160",
+          "speed": "6",
+          "t": "13"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 563,
+      "kind": "CQ",
+      "family": "cq-momentum-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "p": "60"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 564,
+      "kind": "CQ",
+      "family": "cq-descent-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "g": "10",
+          "H": "14",
+          "h": "5",
+          "loss": "315/2"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 565,
+      "kind": "CQ",
+      "family": "cq-speed-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "5",
+          "u": "16",
+          "v": "8"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 566,
+      "kind": "CQ",
+      "family": "cq-ke-units",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "250",
+          "kmh": "90"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 567,
+      "kind": "CQ",
+      "family": "cq-repeated-lifts",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "25",
+          "h": "6",
+          "trips": "7",
+          "moving": "8",
+          "rest": "2",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 568,
+      "kind": "CQ",
+      "family": "cq-power-loss-percent",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1400",
+          "losspercent": "35",
+          "t": "13"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 569,
+      "kind": "CQ",
+      "family": "cq-solar-conversion",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "intensity": "800",
+          "area": "5",
+          "t": "25",
+          "percent": "20"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 570,
+      "kind": "CQ",
+      "family": "cq-hydro-flow",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "flow": "2/5",
+          "rho": "1000",
+          "H": "8",
+          "g": "10",
+          "percent": "80",
+          "t": "35"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 571,
+      "kind": "CQ",
+      "family": "cq-pull-friction",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "40",
+          "fr": "9",
+          "s": "8"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 572,
+      "kind": "CQ",
+      "family": "cq-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "30",
+          "h": "8",
+          "t": "9",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 573,
+      "kind": "CQ",
+      "family": "cq-stairs-compare",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "60",
+          "h": "7",
+          "t1": "9",
+          "t2": "18",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 574,
+      "kind": "CQ",
+      "family": "cq-kinetic-scaling",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "9"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 575,
+      "kind": "CQ",
+      "family": "cq-equal-ke",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "v": "16",
+          "M": "24"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 576,
+      "kind": "CQ",
+      "family": "cq-potential-reference",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "h1": "6",
+          "h2": "16",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 577,
+      "kind": "CQ",
+      "family": "cq-freefall",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "H": "81/5",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 578,
+      "kind": "CQ",
+      "family": "cq-upward-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "26",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 579,
+      "kind": "CQ",
+      "family": "cq-falling-initial-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "7",
+          "u": "14",
+          "H": "32/5",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 580,
+      "kind": "CQ",
+      "family": "cq-known-mechanical",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "E": "1008",
+          "h": "7",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 581,
+      "kind": "CQ",
+      "family": "cq-work-speed",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "12",
+          "force": "56",
+          "s": "6"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 582,
+      "kind": "CQ",
+      "family": "cq-stop-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "u": "18",
+          "force": "60"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 583,
+      "kind": "CQ",
+      "family": "cq-two-stage-work",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "F1": "18",
+          "s1": "7",
+          "F2": "10",
+          "s2": "8"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 584,
+      "kind": "CQ",
+      "family": "cq-motor-lift",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "60",
+          "h": "8",
+          "t": "16",
+          "g": "10",
+          "percent": "75"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 585,
+      "kind": "CQ",
+      "family": "cq-water-pump",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "volume": "3/5",
+          "rho": "1000",
+          "h": "9",
+          "t": "40",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 586,
+      "kind": "CQ",
+      "family": "cq-efficiency-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "4000",
+          "out": "2400",
+          "newpercent": "75"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 587,
+      "kind": "CQ",
+      "family": "cq-efficiency-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "900",
+          "out": "720",
+          "t": "30"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 588,
+      "kind": "CQ",
+      "family": "cq-fuel-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "fuel": "3/5",
+          "q": "40000000",
+          "percent": "25",
+          "newpercent": "40"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 589,
+      "kind": "CQ",
+      "family": "cq-kwh-cost",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "power": "900",
+          "hours": "6",
+          "rate": "8",
+          "days": "30"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 590,
+      "kind": "CQ",
+      "family": "cq-output-time",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "800",
+          "percent": "60",
+          "work": "3600"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 591,
+      "kind": "CQ",
+      "family": "cq-compare-machines",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "900",
+          "percent1": "50",
+          "percent2": "80",
+          "work": "6000"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 592,
+      "kind": "CQ",
+      "family": "cq-force-speed-power",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "force": "180",
+          "speed": "7",
+          "t": "14"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 593,
+      "kind": "CQ",
+      "family": "cq-momentum-energy",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "p": "84"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 594,
+      "kind": "CQ",
+      "family": "cq-descent-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "8",
+          "g": "10",
+          "H": "16",
+          "h": "6",
+          "loss": "200"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 595,
+      "kind": "CQ",
+      "family": "cq-speed-loss",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "6",
+          "u": "18",
+          "v": "9"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 596,
+      "kind": "CQ",
+      "family": "cq-ke-units",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "300",
+          "kmh": "108"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 597,
+      "kind": "CQ",
+      "family": "cq-repeated-lifts",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "m": "30",
+          "h": "7",
+          "trips": "8",
+          "moving": "9",
+          "rest": "2",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 598,
+      "kind": "CQ",
+      "family": "cq-power-loss-percent",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "inp": "1600",
+          "losspercent": "40",
+          "t": "14"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 599,
+      "kind": "CQ",
+      "family": "cq-solar-conversion",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "intensity": "900",
+          "area": "6",
+          "t": "30",
+          "percent": "20"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 600,
+      "kind": "CQ",
+      "family": "cq-hydro-flow",
+      "originalPractice": true,
+      "teacherApproved": false,
+      "calculation": {
+        "params": {
+          "flow": "1/2",
+          "rho": "1000",
+          "H": "9",
+          "g": "10",
+          "percent": "80",
+          "t": "40"
+        },
+        "variant": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-20",
+  "scope": "Local draft artifacts and mocked database tests only",
+  "chapter": 7,
+  "counts": {"MCQ": 200, "CQ": 100, "SQ": 70},
+  "illustratedCounts": {"MCQ": 100, "CQ": 70, "SQ": 25},
+  "numericVariantsDisclosed": true,
+  "checks": {
+    "allSevenBuildersCheck": "PASS: chapters 1-6 persisted artifacts still match deterministic authoring output; chapter 7 reproducible",
+    "allSevenIndependentVerifiers": "PASS",
+    "chapter7IndependentNumericChecks": {"MCQandSQ": 190, "CQprimaryAndSecondary": 100},
+    "chapter7Geometry": "PASS: two full cycles in spatial/time plots; peak-to-trough dimension; compression-spacing; reflection-path and motion semantics; safe XML and hashes",
+    "physicsNodeTests": {"passed": 36, "failed": 0},
+    "realRegistryCatalogTest": "PASS: 164 cards; summaries do not expose answers; per-batch identity/digest checks",
+    "realRegistryChapter7Test": "PASS: 15726 total prepared records and 3110 Physics drafts; 3 chapter-7 cards; preview read-only; 370 Pending with 195 image stems; replay zero inserts; mocked DB only",
+    "paperMathTests": {"passed": 5, "failed": 0},
+    "typescript": "npm run typecheck PASS",
+    "offlineReview": "PASS at 1280 and 390px: 370 articles, 195 diagrams, Bangla font, all answer details open, no page overflow or SVG label clipping, zero external HTTP requests",
+    "whitespace": "git diff --check PASS"
+  },
+  "timeoutDisclosure": "A broader prepared-library test selection timed out at 180s. Its orphan child was stopped; narrowed catalog + chapter-7 selection passed (262s), then the chapter-7 test with added aggregate-count assertions passed again (29s). The broader selection/full repository suite is not claimed as passed.",
+  "notPerformed": ["Full repository test suite", "Production build", "Live database import or approval", "Production asset or website deploy", "Full textbook/page alignment", "Independent teacher certification", "Complete source figure inspection"],
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "assetsDeployed": false,
+  "fullChapterRead": false,
+  "sourceFigureCoverageComplete": false
+}

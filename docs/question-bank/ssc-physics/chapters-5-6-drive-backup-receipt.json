@@ -1,0 +1,36 @@
+{
+  "status": "uploaded-metadata-verified",
+  "fileId": "15xyto1JGsGPk23j4hhOGCCAeSdkWGcic",
+  "name": "ssc-physics-ch5-6-200-80-50--250-100-70-illustrated-draft-v1.zip",
+  "webViewLink": "https://drive.google.com/file/d/15xyto1JGsGPk23j4hhOGCCAeSdkWGcic/view?usp=drivesdk",
+  "sizeBytes": 1073728,
+  "archiveFileCount": 326,
+  "localSha256": "30fb1f4555890f280310040d288ed3034bada8f3939fb67e5a241e7773ec506d",
+  "localAndRemoteMd5": "0a9b29f1f3be9eb19c39a23c10ffb644",
+  "remoteSizeAndMd5Verified": true,
+  "countsByChapter": {
+    "5": {
+      "MCQ": 200,
+      "CQ": 80,
+      "SQ": 50
+    },
+    "6": {
+      "MCQ": 250,
+      "CQ": 100,
+      "SQ": 70
+    }
+  },
+  "diagramCountsByChapter": {
+    "5": 195,
+    "6": 95
+  },
+  "totalQuestions": 750,
+  "totalIllustratedQuestions": 290,
+  "location": "Drive root; previous chapter backups and source/reference files untouched",
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "assetsDeployed": false,
+  "sourceFigureCoverageComplete": false,
+  "note": "Upload and a subsequent get_file confirmed matching size and MD5. Archive contains seven strict-import JSON files, two validations, 290 SVGs, combined/separate offline reviews, instructions, partial-source and browser evidence, and related code/tests. Raw source Word files and tools are excluded. Receipt itself is not inside its own archive."
+}
