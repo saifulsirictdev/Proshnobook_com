@@ -215,12 +215,65 @@
       "status": "ok",
       "check": "liveness"
     },
-    "anonymousChemistryQuiz": "Read successfully after promotion; four choices, no authoring metadata; follow-up adds shared safe image renderer to practice/saved-test UI."
+    "anonymousChemistryQuiz": "PASS after final promotion: safe shared image and table renderer is active in practice; no authoring metadata choices."
   },
   "audit": {
     "databaseImportAndApprovalSnapshots": "Immutable Setting records under ssc-chemistry-release:v1:<digest> and preparedimport:v1:<batch-digest>",
     "secretsExported": false,
     "physicsOrMathPublicationRerun": false,
     "scope": "Owner-authorized authored/practice bank; not independent teacher certification or official board-paper verification."
+  },
+  "finalDeployment": {
+    "id": "dpl_8AL43oFprgvLmc9NYWfqcPRSrDJA",
+    "commit": "5d0df6bb4b708db1717fbbd72abb1900c281f53d",
+    "target": "production",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "alias": "https://proshnobook.com",
+    "url": "https://proshnobook-ejt21ffhl-saifulislam9897info-7989.vercel.app",
+    "providerReadyAtUnixMs": 1795427931882,
+    "buildCommand": "npm run build && node scripts/question-bank/release-ssc-chemistry.cjs check && node scripts/question-bank/check-ssc-physics-auto-model.cjs && node scripts/public-release-check.cjs",
+    "importOrApprovalRerun": false
+  },
+  "postPublicationReadOnlyVerification": {
+    "chemistry": {
+      "stockScanned": 8113,
+      "modelsVerified": 20,
+      "providerEventUnixMs": 1795427905405
+    },
+    "physics": {
+      "status": "SSC_PHYSICS_AUTO_MODEL_VERIFIED",
+      "stockScanned": 6400,
+      "modelsVerified": 20,
+      "approvalMutation": false,
+      "providerEventUnixMs": 1795427910004
+    },
+    "publicReleaseSmoke": {
+      "ok": true,
+      "paths": [
+        "/",
+        "/about-us",
+        "/contact-us",
+        "/robots.txt",
+        "/sitemap.xml",
+        "/dashboard"
+      ],
+      "providerEventUnixMs": 1795427911879
+    },
+    "savedProjectBuildCommand": "npm run build",
+    "savedProjectSettingsUnchanged": true,
+    "anonymousChemistryQuizAfterFinalPromotion": "PASS: retrieved questions with rendered image markup, tables and exactly four choices; no internal authoring options",
+    "authenticatedBrowserFlow": "Not performed: no user session used",
+    "localFigureRendering": {
+      "canonicalRows": 8110,
+      "distinctFigurePathsRendered": 415,
+      "figureOccurrencesRendered": 2598,
+      "status": "PASS"
+    },
+    "localFinalReleaseTests": {
+      "pass": 27,
+      "fail": 0
+    },
+    "preparedLibraryStrictTypeScript": "PASS"
   }
 }
