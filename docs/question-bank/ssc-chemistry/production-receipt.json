@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "status": "OWNER_APPROVED_CHEMISTRY_VERIFIED",
+  "evidenceSource": "Vercel production deployment events and deployment READY/PROMOTED response; summarized without credentials or full question IDs",
+  "deployment": {
+    "id": "dpl_9WMKswB1fHvRsohX5uncawrVwmNY",
+    "commit": "7900e42a21682f5e31daad1c9db8b6f825d90a76",
+    "target": "production",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "alias": "https://proshnobook.com",
+    "url": "https://proshnobook-kof6h3cpx-saifulislam9897info-7989.vercel.app",
+    "providerReadyAtUnixMs": 1795427711459
+  },
+  "publication": {
+    "digest": "a9fbded7f0592af48e0a86f75b37b1e872c9f96c60dc6f278a944230e06bd637",
+    "actor": "vercel-owner-release:7900e42a21682f5e31daad1c9db8b6f825d90a76",
+    "providerReportedCreatedAt": "2026-11-23T09:54:37.803Z",
+    "insertedPending": 8110,
+    "newlyApproved": 8110,
+    "previouslyApproved": 0,
+    "approvedCanonical": 8110,
+    "counts": {
+      "MCQ": 5500,
+      "CQ": 1550,
+      "SQ": 1060
+    },
+    "chapters": {
+      "1": {
+        "topic": "১ম অধ্যায়: রসায়নের ধারণা",
+        "MCQ": 350,
+        "CQ": 50,
+        "SQ": 70
+      },
+      "2": {
+        "topic": "২য় অধ্যায়: পদার্থের অবস্থা",
+        "MCQ": 350,
+        "CQ": 50,
+        "SQ": 70
+      },
+      "3": {
+        "topic": "৩য় অধ্যায়: পদার্থের গঠন",
+        "MCQ": 500,
+        "CQ": 100,
+        "SQ": 100
+      },
+      "4": {
+        "topic": "৪র্থ অধ্যায়: পর্যায় সারণি",
+        "MCQ": 550,
+        "CQ": 150,
+        "SQ": 100
+      },
+      "5": {
+        "topic": "৫ম অধ্যায়: রাসায়নিক বন্ধন",
+        "MCQ": 500,
+        "CQ": 200,
+        "SQ": 100
+      },
+      "6": {
+        "topic": "৬ষ্ঠ অধ্যায়: মোলের ধারণা ও রাসায়নিক গণনা",
+        "MCQ": 500,
+        "CQ": 200,
+        "SQ": 100
+      },
+      "7": {
+        "topic": "৭ম অধ্যায়: রাসায়নিক বিক্রিয়া",
+        "MCQ": 500,
+        "CQ": 150,
+        "SQ": 100
+      },
+      "8": {
+        "topic": "৮ম অধ্যায়: রসায়ন ও শক্তি",
+        "MCQ": 200,
+        "CQ": 100,
+        "SQ": 70
+      },
+      "9": {
+        "topic": "৯ম অধ্যায়: এসিড-ক্ষারক সমতা",
+        "MCQ": 300,
+        "CQ": 100,
+        "SQ": 80
+      },
+      "10": {
+        "topic": "১০ম অধ্যায়: খনিজ সম্পদ: ধাতু-অধাতু",
+        "MCQ": 700,
+        "CQ": 200,
+        "SQ": 100
+      },
+      "11": {
+        "topic": "১১শ অধ্যায়: খনিজ সম্পদ: জীবাশ্ম",
+        "MCQ": 700,
+        "CQ": 200,
+        "SQ": 100
+      },
+      "12": {
+        "topic": "১২শ অধ্যায়: আমাদের জীবনে রসায়ন",
+        "MCQ": 350,
+        "CQ": 50,
+        "SQ": 70
+      }
+    },
+    "batches": 82,
+    "illustrated": 2598,
+    "approvalBasis": "OWNER_EXPLICIT_IMPORT_APPROVE_DEPLOY; NOT_INDEPENDENT_TEACHER_CERTIFICATION",
+    "teacherCertified": false,
+    "officialYearVerified": false,
+    "taskVariants": true
+  },
+  "liveAssets": {
+    "verified": 415,
+    "assetsDigest": "e6a8af6d59a0f48e8b69478daf609528f22034fec8b7db68b3a5af999f1f7d55",
+    "origin": "https://proshnobook.com",
+    "method": "HTTP_GET_CONTENT_TYPE_AND_SHA256",
+    "providerEventUnixMs": 1795427677802
+  },
+  "productionAutoModels": {
+    "stockScanned": 8113,
+    "modelsVerified": 20,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "variants": [
+      "MCQ",
+      "CQ"
+    ],
+    "mcqOffered": 25,
+    "writtenOffered": {
+      "CQ": 7,
+      "SHORT": 7
+    },
+    "fixedChaptersPerWrittenSection": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      11
+    ],
+    "seventhChapterPairsCQ_SHORT": [
+      [
+        1,
+        12
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        9
+      ]
+    ],
+    "editorAndPrintStructurePassed": true,
+    "policyId": "ssc-chemistry-owner-chapter-policy-v1",
+    "providerEventUnixMs": 1795427692699,
+    "note": "8113 is all approved Chemistry rows scanned, not the count imported. Only 8110 pinned canonical IDs were imported/approved; unrelated existing rows were not modified."
+  },
+  "verification": {
+    "fullProductionBuild": "PASS",
+    "typescriptProductionBuild": "PASS",
+    "localChapterTests": {
+      "pass": 162,
+      "fail": 0
+    },
+    "localSharedTests": {
+      "pass": 78,
+      "fail": 0
+    },
+    "localReleaseChemistryMetadataTests": {
+      "pass": 25,
+      "fail": 0
+    },
+    "localPracticeMetadataTests": {
+      "pass": 9,
+      "fail": 0
+    },
+    "anonymousHealth": {
+      "status": "ok",
+      "check": "liveness"
+    },
+    "anonymousChemistryQuiz": "Read successfully after promotion; four choices, no authoring metadata; follow-up adds shared safe image renderer to practice/saved-test UI."
+  },
+  "audit": {
+    "databaseImportAndApprovalSnapshots": "Immutable Setting records under ssc-chemistry-release:v1:<digest> and preparedimport:v1:<batch-digest>",
+    "secretsExported": false,
+    "physicsOrMathPublicationRerun": false,
+    "scope": "Owner-authorized authored/practice bank; not independent teacher certification or official board-paper verification."
+  }
+}
