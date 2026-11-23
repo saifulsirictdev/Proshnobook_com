@@ -1,0 +1,711 @@
+{
+  "category": "Class 9",
+  "subject": "পদার্থবিজ্ঞান",
+  "topic": "১২শ অধ্যায়: বিদ্যুতের চৌম্বক ক্রিয়া",
+  "book": "নিজস্ব চিত্রসহ অনুশীলনী; বোর্ড-প্রশ্ন হিসেবে আরোপ নয়",
+  "edition": "Chapter 12 illustrated draft v1; teacher review pending",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "SQ",
+      "text": "সোজা তড়িৎবাহী তারের চৌম্বক ক্ষেত্ররেখা কেমন? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "তারকেন্দ্রিক বৃত্ত। দিক right-hand grip rule দিয়ে নির্ণয় করা যায়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Solenoid-এর ভেতরে দীর্ঘ আদর্শ সীমায় ক্ষেত্র কেমন? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "প্রায় সুষম। ঘন দীর্ঘ coil-এর মধ্যভাগে রেখাগুলো প্রায় সমান্তরাল; প্রান্তে ভিন্নতা থাকে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "তড়িৎচুম্বকে soft iron core উপযোগী কেন? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "সহজে চুম্বকিত ও চুম্বকত্ব হারায়। নিয়ন্ত্রিত অস্থায়ী চুম্বকত্বের জন্য উপযোগী।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Motor-এর মূল শক্তিরূপান্তর কী? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "তড়িৎ থেকে যান্ত্রিক। চৌম্বক ক্ষেত্রে তড়িৎবাহী coil-এর ওপর torque কাজ করে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Generator-এর মূল শক্তিরূপান্তর কী? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "যান্ত্রিক থেকে তড়িৎ। ফ্লাক্স পরিবর্তন ঘটাতে যান্ত্রিক কাজ লাগে; শক্তি সংরক্ষিত।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আবিষ্ট emf-এর জন্য কী জরুরি? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "সংযুক্ত চৌম্বক flux-এর পরিবর্তন। স্থির flux থাকলে Faraday induction-এ emf শূন্য।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Lenz-এর সূত্র কী নির্দেশ করে? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "আবিষ্ট ক্রিয়া তার কারণের পরিবর্তনকে বাধা দেয়। এটি শক্তি সংরক্ষণের সঙ্গে সামঞ্জস্যপূর্ণ।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Step-up transformer-এ আদর্শভাবে কী বাড়ে? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "ভোল্টেজ। Ns>Np হলে Vs>Vp; একই power-এ current কমে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "উচ্চ ভোল্টেজে শক্তি পাঠালে line loss কমতে পারে কেন? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "একই power-এ current কমে। I≈P/V, তাই I²R loss কমে; insulation ও safety আলাদাভাবে জরুরি।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "AC transformer কি frequency বদলায়? কারণসহ ব্যাখ্যা করো।",
+      "explanation": "সাধারণ আদর্শ transformer-এ না। Primary-র সময়ভিত্তিক flux secondary-তে একই frequency-তে emf দেয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ডানহাতের grip rule দিয়ে field direction কীভাবে বোঝায়?",
+      "explanation": "সোজা তারে প্রচলিত current-এর দিকে ডান হাতের বৃদ্ধাঙ্গুলি ধরলে বাঁকানো আঙুল field-এর বৃত্তাকার দিক বোঝায়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চুম্বকের field line বন্ধ loop বলে কী বোঝায়?",
+      "explanation": "বাইরে N থেকে S এবং ভেতরে S থেকে N মিলিয়ে বন্ধ রেখার ধারণা। আলাদা magnetic monopole এখানে ধরা হয়নি।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Motor-এ commutator-এর সাধারণ কাজ কী?",
+      "explanation": "DC motor-এ উপযুক্ত অর্ধপাক পরে coil current-এর দিক বদলে torque একই ঘূর্ণনদিকে রাখতে সহায়তা করে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "AC generator ও DC generator-এর school model পার্থক্য কী?",
+      "explanation": "Slip ring-এ alternating output পাওয়া যায়; split-ring commutator-এ বাহিরে একমুখী pulsating output হতে পারে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চুম্বক ও coil স্থির থাকলেও induction হতে পারে কি?",
+      "explanation": "যদি অন্য কারণে linked flux বদলায়, যেমন পাশের coil-এর current পরিবর্তন। কেবল আপেক্ষিক mechanical motion-ই একমাত্র উপায় নয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Transformer-এর iron core-এর কাজ কী?",
+      "explanation": "কম reluctance-এর common flux path দিয়ে primary ও secondary coupling বাড়ায়। Laminated core eddy-current loss কমাতে সাহায্য করে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Ideal transformer-এ power বাড়ে না কেন?",
+      "explanation": "ক্ষয় শূন্য model-এ Pin=Pout। Voltage বাড়লে current অনুপাতে কমে; শক্তি বিনা input-এ তৈরি হয় না।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "বাস্তব transformer-এ loss কী হতে পারে?",
+      "explanation": "Coil resistance-এ heating, core hysteresis/eddy current, flux leakage প্রভৃতি কারণে output কম হতে পারে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "তার B-এর সমান্তরাল হলে magnetic force কত?",
+      "explanation": "F=BIL sinθ model-এ θ=0 হলে বল শূন্য। Perpendicular formula BIL নির্বিচারে ব্যবহার করা যাবে না।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "পৃথিবীর magnetic ও geographic north এক করে বলা ঠিক কেন নয়?",
+      "explanation": "ভৌগোলিক axis ও চৌম্বক axis এক নয় এবং field স্থানভেদে বদলায়। Compass-এর north-seeking end স্থানীয় field অনুসরণ করে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চিত্রের আদর্শ ট্রান্সফর্মারে Vp=300 V, Np=200, Ns=800 পাক। Vs কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-v-20.svg)",
+      "explanation": "Vs=Vp Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1200 V। ব্যবহৃত উপাত্ত: Vp=300, Np=200, Ns=800।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চিত্রের আদর্শ ট্রান্সফর্মারে Vp=310 V, Np=200, Ns=820 পাক। Vs কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-v-21.svg)",
+      "explanation": "Vs=Vp Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1271 V। ব্যবহৃত উপাত্ত: Vp=310, Np=200, Ns=820।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চিত্রের আদর্শ ট্রান্সফর্মারে Vp=320 V, Np=200, Ns=840 পাক। Vs কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-v-22.svg)",
+      "explanation": "Vs=Vp Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1344 V। ব্যবহৃত উপাত্ত: Vp=320, Np=200, Ns=840।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চিত্রের আদর্শ ট্রান্সফর্মারে Vp=330 V, Np=200, Ns=860 পাক। Vs কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-v-23.svg)",
+      "explanation": "Vs=Vp Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1419 V। ব্যবহৃত উপাত্ত: Vp=330, Np=200, Ns=860।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "চিত্রের আদর্শ ট্রান্সফর্মারে Vp=340 V, Np=200, Ns=880 পাক। Vs কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-v-24.svg)",
+      "explanation": "Vs=Vp Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1496 V। ব্যবহৃত উপাত্ত: Vp=340, Np=200, Ns=880।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vs=60 V, Np=600, Ns=300। Vp কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-v-20.svg)",
+      "explanation": "Vp=Vs Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 V। ব্যবহৃত উপাত্ত: Vs=60, Np=600, Ns=300।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vs=62 V, Np=600, Ns=310। Vp কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-v-21.svg)",
+      "explanation": "Vp=Vs Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 V। ব্যবহৃত উপাত্ত: Vs=62, Np=600, Ns=310।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vs=64 V, Np=600, Ns=320। Vp কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-v-22.svg)",
+      "explanation": "Vp=Vs Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 V। ব্যবহৃত উপাত্ত: Vs=64, Np=600, Ns=320।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vs=66 V, Np=600, Ns=330। Vp কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-v-23.svg)",
+      "explanation": "Vp=Vs Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 V। ব্যবহৃত উপাত্ত: Vs=66, Np=600, Ns=330।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vs=68 V, Np=600, Ns=340। Vp কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-v-24.svg)",
+      "explanation": "Vp=Vs Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 V। ব্যবহৃত উপাত্ত: Vs=68, Np=600, Ns=340।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=100 V, Vs=60 V, Np=500। আদর্শ ট্রান্সফর্মারের প্রয়োজনীয় Ns কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-turns-20.svg)",
+      "explanation": "Ns=Np Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 300 পাক। ব্যবহৃত উপাত্ত: Vp=100, Vs=60, Np=500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=100 V, Vs=62 V, Np=500। আদর্শ ট্রান্সফর্মারের প্রয়োজনীয় Ns কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-turns-21.svg)",
+      "explanation": "Ns=Np Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 310 পাক। ব্যবহৃত উপাত্ত: Vp=100, Vs=62, Np=500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=100 V, Vs=64 V, Np=500। আদর্শ ট্রান্সফর্মারের প্রয়োজনীয় Ns কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-turns-22.svg)",
+      "explanation": "Ns=Np Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 320 পাক। ব্যবহৃত উপাত্ত: Vp=100, Vs=64, Np=500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=100 V, Vs=66 V, Np=500। আদর্শ ট্রান্সফর্মারের প্রয়োজনীয় Ns কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-turns-23.svg)",
+      "explanation": "Ns=Np Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 330 পাক। ব্যবহৃত উপাত্ত: Vp=100, Vs=66, Np=500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=100 V, Vs=68 V, Np=500। আদর্শ ট্রান্সফর্মারের প্রয়োজনীয় Ns কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-turns-24.svg)",
+      "explanation": "Ns=Np Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 340 পাক। ব্যবহৃত উপাত্ত: Vp=100, Vs=68, Np=500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=300 V, Vs=20 V, Ns=100। আদর্শ ট্রান্সফর্মারের Np কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-turns-20.svg)",
+      "explanation": "Np=Ns Vp/Vs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 পাক। ব্যবহৃত উপাত্ত: Vp=300, Vs=20, Ns=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=310 V, Vs=20 V, Ns=100। আদর্শ ট্রান্সফর্মারের Np কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-turns-21.svg)",
+      "explanation": "Np=Ns Vp/Vs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1550 পাক। ব্যবহৃত উপাত্ত: Vp=310, Vs=20, Ns=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=320 V, Vs=20 V, Ns=100। আদর্শ ট্রান্সফর্মারের Np কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-turns-22.svg)",
+      "explanation": "Np=Ns Vp/Vs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1600 পাক। ব্যবহৃত উপাত্ত: Vp=320, Vs=20, Ns=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=330 V, Vs=20 V, Ns=100। আদর্শ ট্রান্সফর্মারের Np কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-turns-23.svg)",
+      "explanation": "Np=Ns Vp/Vs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1650 পাক। ব্যবহৃত উপাত্ত: Vp=330, Vs=20, Ns=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "Vp=340 V, Vs=20 V, Ns=100। আদর্শ ট্রান্সফর্মারের Np কত পাক? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-turns-24.svg)",
+      "explanation": "Np=Ns Vp/Vs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1700 পাক। ব্যবহৃত উপাত্ত: Vp=340, Vs=20, Ns=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vp=100 V ও Vs=400 V। Ns/Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ratio-20.svg)",
+      "explanation": "Ns/Np=Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4। ব্যবহৃত উপাত্ত: Vp=100, Vs=400।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vp=100 V ও Vs=410 V। Ns/Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ratio-21.svg)",
+      "explanation": "Ns/Np=Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.1। ব্যবহৃত উপাত্ত: Vp=100, Vs=410।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vp=100 V ও Vs=420 V। Ns/Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ratio-22.svg)",
+      "explanation": "Ns/Np=Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.2। ব্যবহৃত উপাত্ত: Vp=100, Vs=420।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vp=100 V ও Vs=430 V। Ns/Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ratio-23.svg)",
+      "explanation": "Ns/Np=Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.3। ব্যবহৃত উপাত্ত: Vp=100, Vs=430।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Vp=100 V ও Vs=440 V। Ns/Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ratio-24.svg)",
+      "explanation": "Ns/Np=Vs/Vp। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.4। ব্যবহৃত উপাত্ত: Vp=100, Vs=440।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Np=100, Ns=700 পাক। গৌণ ও মুখ্য পাকের পার্থক্যের মান কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-turn-difference-20.svg)",
+      "explanation": "ΔN=|Ns−Np|। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 600 পাক। ব্যবহৃত উপাত্ত: Np=100, Ns=700।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Np=100, Ns=720 পাক। গৌণ ও মুখ্য পাকের পার্থক্যের মান কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-turn-difference-21.svg)",
+      "explanation": "ΔN=|Ns−Np|। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 620 পাক। ব্যবহৃত উপাত্ত: Np=100, Ns=720।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Np=100, Ns=740 পাক। গৌণ ও মুখ্য পাকের পার্থক্যের মান কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-turn-difference-22.svg)",
+      "explanation": "ΔN=|Ns−Np|। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 640 পাক। ব্যবহৃত উপাত্ত: Np=100, Ns=740।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Np=100, Ns=760 পাক। গৌণ ও মুখ্য পাকের পার্থক্যের মান কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-turn-difference-23.svg)",
+      "explanation": "ΔN=|Ns−Np|। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 660 পাক। ব্যবহৃত উপাত্ত: Np=100, Ns=760।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Np=100, Ns=780 পাক। গৌণ ও মুখ্য পাকের পার্থক্যের মান কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-turn-difference-24.svg)",
+      "explanation": "ΔN=|Ns−Np|। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 680 পাক। ব্যবহৃত উপাত্ত: Np=100, Ns=780।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Ip=4 A, Np=400, Ns=300। Is কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-i-20.svg)",
+      "explanation": "Is=Ip Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.333333 A। ব্যবহৃত উপাত্ত: Ip=4, Np=400, Ns=300।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Ip=4.1 A, Np=400, Ns=310। Is কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-i-21.svg)",
+      "explanation": "Is=Ip Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.290323 A। ব্যবহৃত উপাত্ত: Ip=4.1, Np=400, Ns=310।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Ip=4.2 A, Np=400, Ns=320। Is কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-i-22.svg)",
+      "explanation": "Is=Ip Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.25 A। ব্যবহৃত উপাত্ত: Ip=4.2, Np=400, Ns=320।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Ip=4.3 A, Np=400, Ns=330। Is কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-i-23.svg)",
+      "explanation": "Is=Ip Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.212121 A। ব্যবহৃত উপাত্ত: Ip=4.3, Np=400, Ns=330।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Ip=4.4 A, Np=400, Ns=340। Is কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-i-24.svg)",
+      "explanation": "Is=Ip Np/Ns। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.176471 A। ব্যবহৃত উপাত্ত: Ip=4.4, Np=400, Ns=340।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Is=4 A, Np=400, Ns=300। Ip কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-i-20.svg)",
+      "explanation": "Ip=Is Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3 A। ব্যবহৃত উপাত্ত: Is=4, Np=400, Ns=300।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Is=4.1 A, Np=400, Ns=310। Ip কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-i-21.svg)",
+      "explanation": "Ip=Is Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.1775 A। ব্যবহৃত উপাত্ত: Is=4.1, Np=400, Ns=310।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Is=4.2 A, Np=400, Ns=320। Ip কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-i-22.svg)",
+      "explanation": "Ip=Is Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.36 A। ব্যবহৃত উপাত্ত: Is=4.2, Np=400, Ns=320।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Is=4.3 A, Np=400, Ns=330। Ip কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-i-23.svg)",
+      "explanation": "Ip=Is Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.5475 A। ব্যবহৃত উপাত্ত: Is=4.3, Np=400, Ns=330।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারে Is=4.4 A, Np=400, Ns=340। Ip কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-i-24.svg)",
+      "explanation": "Ip=Is Ns/Np। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.74 A। ব্যবহৃত উপাত্ত: Is=4.4, Np=400, Ns=340।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের AC-তে unity power factor দেওয়া: Vp=300 V (rms), Ip=4 A (rms)। গড় input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-power-input-20.svg)",
+      "explanation": "Pin=Vp Ip (pf=1)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1200 W। ব্যবহৃত উপাত্ত: Vp=300, Ip=4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের AC-তে unity power factor দেওয়া: Vp=310 V (rms), Ip=4.1 A (rms)। গড় input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-power-input-21.svg)",
+      "explanation": "Pin=Vp Ip (pf=1)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1271 W। ব্যবহৃত উপাত্ত: Vp=310, Ip=4.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের AC-তে unity power factor দেওয়া: Vp=320 V (rms), Ip=4.2 A (rms)। গড় input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-power-input-22.svg)",
+      "explanation": "Pin=Vp Ip (pf=1)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1344 W। ব্যবহৃত উপাত্ত: Vp=320, Ip=4.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের AC-তে unity power factor দেওয়া: Vp=330 V (rms), Ip=4.3 A (rms)। গড় input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-power-input-23.svg)",
+      "explanation": "Pin=Vp Ip (pf=1)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1419 W। ব্যবহৃত উপাত্ত: Vp=330, Ip=4.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের AC-তে unity power factor দেওয়া: Vp=340 V (rms), Ip=4.4 A (rms)। গড় input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-power-input-24.svg)",
+      "explanation": "Pin=Vp Ip (pf=1)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1496 W। ব্যবহৃত উপাত্ত: Vp=340, Ip=4.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Pin=600 W। সব ক্ষয় শূন্য হলে output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ideal-output-power-20.svg)",
+      "explanation": "Pout=Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 600 W। ব্যবহৃত উপাত্ত: Pin=600।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Pin=620 W। সব ক্ষয় শূন্য হলে output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ideal-output-power-21.svg)",
+      "explanation": "Pout=Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 620 W। ব্যবহৃত উপাত্ত: Pin=620।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Pin=640 W। সব ক্ষয় শূন্য হলে output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ideal-output-power-22.svg)",
+      "explanation": "Pout=Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 640 W। ব্যবহৃত উপাত্ত: Pin=640।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Pin=660 W। সব ক্ষয় শূন্য হলে output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ideal-output-power-23.svg)",
+      "explanation": "Pout=Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 660 W। ব্যবহৃত উপাত্ত: Pin=660।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "আদর্শ ট্রান্সফর্মারের Pin=680 W। সব ক্ষয় শূন্য হলে output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-ideal-output-power-24.svg)",
+      "explanation": "Pout=Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 680 W। ব্যবহৃত উপাত্ত: Pin=680।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1400 W, Pout=1000 W। দক্ষতা কত শতাংশ? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficiency-20.svg)",
+      "explanation": "η=100Pout/Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 71.428571%। ব্যবহৃত উপাত্ত: Pin=1400, Pout=1000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1420 W, Pout=1010 W। দক্ষতা কত শতাংশ? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficiency-21.svg)",
+      "explanation": "η=100Pout/Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 71.126761%। ব্যবহৃত উপাত্ত: Pin=1420, Pout=1010।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1440 W, Pout=1020 W। দক্ষতা কত শতাংশ? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficiency-22.svg)",
+      "explanation": "η=100Pout/Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 70.833333%। ব্যবহৃত উপাত্ত: Pin=1440, Pout=1020।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1460 W, Pout=1030 W। দক্ষতা কত শতাংশ? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficiency-23.svg)",
+      "explanation": "η=100Pout/Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 70.547945%। ব্যবহৃত উপাত্ত: Pin=1460, Pout=1030।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1480 W, Pout=1040 W। দক্ষতা কত শতাংশ? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficiency-24.svg)",
+      "explanation": "η=100Pout/Pin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 70.27027%। ব্যবহৃত উপাত্ত: Pin=1480, Pout=1040।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1400 W, Pout=1000 W। ক্ষয় ক্ষমতা কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-loss-20.svg)",
+      "explanation": "Ploss=Pin−Pout। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 400 W। ব্যবহৃত উপাত্ত: Pin=1400, Pout=1000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1420 W, Pout=1010 W। ক্ষয় ক্ষমতা কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-loss-21.svg)",
+      "explanation": "Ploss=Pin−Pout। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 410 W। ব্যবহৃত উপাত্ত: Pin=1420, Pout=1010।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1440 W, Pout=1020 W। ক্ষয় ক্ষমতা কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-loss-22.svg)",
+      "explanation": "Ploss=Pin−Pout। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 420 W। ব্যবহৃত উপাত্ত: Pin=1440, Pout=1020।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1460 W, Pout=1030 W। ক্ষয় ক্ষমতা কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-loss-23.svg)",
+      "explanation": "Ploss=Pin−Pout। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 430 W। ব্যবহৃত উপাত্ত: Pin=1460, Pout=1030।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারে Pin=1480 W, Pout=1040 W। ক্ষয় ক্ষমতা কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-loss-24.svg)",
+      "explanation": "Ploss=Pin−Pout। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 440 W। ব্যবহৃত উপাত্ত: Pin=1480, Pout=1040।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের input power Pin=900 W ও দক্ষতা eta=90%। output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-output-20.svg)",
+      "explanation": "Pout=Pin η/100। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 810 W। ব্যবহৃত উপাত্ত: Pin=900, eta=90।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের input power Pin=920 W ও দক্ষতা eta=90.5%। output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-output-21.svg)",
+      "explanation": "Pout=Pin η/100। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 832.6 W। ব্যবহৃত উপাত্ত: Pin=920, eta=90.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের input power Pin=940 W ও দক্ষতা eta=91%। output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-output-22.svg)",
+      "explanation": "Pout=Pin η/100। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 855.4 W। ব্যবহৃত উপাত্ত: Pin=940, eta=91।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের input power Pin=960 W ও দক্ষতা eta=91.5%। output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-output-23.svg)",
+      "explanation": "Pout=Pin η/100। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 878.4 W। ব্যবহৃত উপাত্ত: Pin=960, eta=91.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের input power Pin=980 W ও দক্ষতা eta=92%। output power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-output-24.svg)",
+      "explanation": "Pout=Pin η/100। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 901.6 W। ব্যবহৃত উপাত্ত: Pin=980, eta=92।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের output Pout=800 W, দক্ষতা eta=90%। input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-input-20.svg)",
+      "explanation": "Pin=100Pout/η। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 888.888889 W। ব্যবহৃত উপাত্ত: Pout=800, eta=90।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের output Pout=820 W, দক্ষতা eta=90.5%। input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-input-21.svg)",
+      "explanation": "Pin=100Pout/η। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 906.077348 W। ব্যবহৃত উপাত্ত: Pout=820, eta=90.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের output Pout=840 W, দক্ষতা eta=91%। input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-input-22.svg)",
+      "explanation": "Pin=100Pout/η। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 923.076923 W। ব্যবহৃত উপাত্ত: Pout=840, eta=91।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের output Pout=860 W, দক্ষতা eta=91.5%। input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-input-23.svg)",
+      "explanation": "Pin=100Pout/η। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 939.89071 W। ব্যবহৃত উপাত্ত: Pout=860, eta=91.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "ট্রান্সফর্মারের output Pout=880 W, দক্ষতা eta=92%। input power কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-efficient-input-24.svg)",
+      "explanation": "Pin=100Pout/η। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 956.521739 W। ব্যবহৃত উপাত্ত: Pout=880, eta=92।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=3, মোট পাক total=1200। Ns কত? আদর্শ ও পূর্ণসংখ্যা পাক ধরো। প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-total-turns-20.svg)",
+      "explanation": "Ns=Ntotal ratio/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 900 পাক। ব্যবহৃত উপাত্ত: ratio=3, total=1200।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=3, মোট পাক total=1240। Ns কত? আদর্শ ও পূর্ণসংখ্যা পাক ধরো। প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-total-turns-21.svg)",
+      "explanation": "Ns=Ntotal ratio/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 930 পাক। ব্যবহৃত উপাত্ত: ratio=3, total=1240।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=3, মোট পাক total=1280। Ns কত? আদর্শ ও পূর্ণসংখ্যা পাক ধরো। প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-total-turns-22.svg)",
+      "explanation": "Ns=Ntotal ratio/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 960 পাক। ব্যবহৃত উপাত্ত: ratio=3, total=1280।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=3, মোট পাক total=1320। Ns কত? আদর্শ ও পূর্ণসংখ্যা পাক ধরো। প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-total-turns-23.svg)",
+      "explanation": "Ns=Ntotal ratio/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 990 পাক। ব্যবহৃত উপাত্ত: ratio=3, total=1320।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=3, মোট পাক total=1360। Ns কত? আদর্শ ও পূর্ণসংখ্যা পাক ধরো। প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-secondary-total-turns-24.svg)",
+      "explanation": "Ns=Ntotal ratio/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1020 পাক। ব্যবহৃত উপাত্ত: ratio=3, total=1360।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=4, মোট পাক total=1500। Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-total-turns-20.svg)",
+      "explanation": "Np=Ntotal/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 300 পাক। ব্যবহৃত উপাত্ত: ratio=4, total=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=4, মোট পাক total=1550। Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-total-turns-21.svg)",
+      "explanation": "Np=Ntotal/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 310 পাক। ব্যবহৃত উপাত্ত: ratio=4, total=1550।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=4, মোট পাক total=1600। Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-total-turns-22.svg)",
+      "explanation": "Np=Ntotal/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 320 পাক। ব্যবহৃত উপাত্ত: ratio=4, total=1600।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=4, মোট পাক total=1650। Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-total-turns-23.svg)",
+      "explanation": "Np=Ntotal/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 330 পাক। ব্যবহৃত উপাত্ত: ratio=4, total=1650।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "type": "SQ",
+      "text": "কুণ্ডলীর Ns/Np=ratio=4, মোট পাক total=1700। Np কত? প্রযোজ্য সূত্র ও এককসহ হিসাব দেখাও।\n![পুনরঙ্কিত transformer চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch12-v1/sq-primary-total-turns-24.svg)",
+      "explanation": "Np=Ntotal/(1+ratio)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 340 পাক। ব্যবহৃত উপাত্ত: ratio=4, total=1700।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM"
+    }
+  ]
+}

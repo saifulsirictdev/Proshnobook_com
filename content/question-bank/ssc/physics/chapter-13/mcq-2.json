@@ -1,0 +1,1761 @@
+{
+  "category": "Class 9",
+  "subject": "পদার্থবিজ্ঞান",
+  "topic": "১৩শ অধ্যায়: আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রনিক্স",
+  "book": "নিজস্ব চিত্রসহ অনুশীলনী; বোর্ড-প্রশ্ন হিসেবে আরোপ নয়",
+  "edition": "Chapter 13 illustrated draft v1; teacher review pending",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "t=15 s-এ গড়ে events=1500টি ক্ষয় ঘটে। ঐ সময়ের গড় activity কত Bq? detector efficiency এখানে 100% দেওয়া।",
+      "explanation": "A=events/t। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100 Bq। ব্যবহৃত উপাত্ত: events=1500, t=15।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200 Bq",
+        "B": "100 Bq",
+        "C": "50 Bq",
+        "D": "110 Bq"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "t=16 s-এ গড়ে events=1600টি ক্ষয় ঘটে। ঐ সময়ের গড় activity কত Bq? detector efficiency এখানে 100% দেওয়া।",
+      "explanation": "A=events/t। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100 Bq। ব্যবহৃত উপাত্ত: events=1600, t=16।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200 Bq",
+        "B": "50 Bq",
+        "C": "100 Bq",
+        "D": "110 Bq"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "t=17 s-এ গড়ে events=1700টি ক্ষয় ঘটে। ঐ সময়ের গড় activity কত Bq? detector efficiency এখানে 100% দেওয়া।",
+      "explanation": "A=events/t। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100 Bq। ব্যবহৃত উপাত্ত: events=1700, t=17।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200 Bq",
+        "B": "50 Bq",
+        "C": "110 Bq",
+        "D": "100 Bq"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "t=18 s-এ গড়ে events=1800টি ক্ষয় ঘটে। ঐ সময়ের গড় activity কত Bq? detector efficiency এখানে 100% দেওয়া।",
+      "explanation": "A=events/t। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100 Bq। ব্যবহৃত উপাত্ত: events=1800, t=18।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "100 Bq",
+        "B": "200 Bq",
+        "C": "50 Bq",
+        "D": "110 Bq"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "t=19 s-এ গড়ে events=1900টি ক্ষয় ঘটে। ঐ সময়ের গড় activity কত Bq? detector efficiency এখানে 100% দেওয়া।",
+      "explanation": "A=events/t। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100 Bq। ব্যবহৃত উপাত্ত: events=1900, t=19।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200 Bq",
+        "B": "100 Bq",
+        "C": "50 Bq",
+        "D": "110 Bq"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=50, base current Ib=10 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-0.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 500 μA। ব্যবহৃত উপাত্ত: beta=50, Ib=10।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1000 μA",
+        "B": "250 μA",
+        "C": "500 μA",
+        "D": "510 μA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=52, base current Ib=11 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-1.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 572 μA। ব্যবহৃত উপাত্ত: beta=52, Ib=11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1144 μA",
+        "B": "286 μA",
+        "C": "582 μA",
+        "D": "572 μA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=54, base current Ib=12 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-2.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 648 μA। ব্যবহৃত উপাত্ত: beta=54, Ib=12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "648 μA",
+        "B": "1296 μA",
+        "C": "324 μA",
+        "D": "658 μA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=56, base current Ib=13 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-3.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 728 μA। ব্যবহৃত উপাত্ত: beta=56, Ib=13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1456 μA",
+        "B": "728 μA",
+        "C": "364 μA",
+        "D": "738 μA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=58, base current Ib=14 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-4.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 812 μA। ব্যবহৃত উপাত্ত: beta=58, Ib=14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1624 μA",
+        "B": "406 μA",
+        "C": "812 μA",
+        "D": "822 μA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=60, base current Ib=15 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-5.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 900 μA। ব্যবহৃত উপাত্ত: beta=60, Ib=15।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1800 μA",
+        "B": "450 μA",
+        "C": "910 μA",
+        "D": "900 μA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=62, base current Ib=16 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-6.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 992 μA। ব্যবহৃত উপাত্ত: beta=62, Ib=16।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "992 μA",
+        "B": "1984 μA",
+        "C": "496 μA",
+        "D": "1002 μA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=64, base current Ib=17 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-7.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1088 μA। ব্যবহৃত উপাত্ত: beta=64, Ib=17।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2176 μA",
+        "B": "1088 μA",
+        "C": "544 μA",
+        "D": "1098 μA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=66, base current Ib=18 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-8.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1188 μA। ব্যবহৃত উপাত্ত: beta=66, Ib=18।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2376 μA",
+        "B": "594 μA",
+        "C": "1188 μA",
+        "D": "1198 μA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN active-region model-এ beta=68, base current Ib=19 μA। Ic=βIb ধরে collector current কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ic-9.svg)",
+      "explanation": "Ic=βIb। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1292 μA। ব্যবহৃত উপাত্ত: beta=68, Ib=19।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2584 μA",
+        "B": "646 μA",
+        "C": "1302 μA",
+        "D": "1292 μA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=50, Ic=1000 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-0.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20 μA। ব্যবহৃত উপাত্ত: beta=50, Ic=1000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "20 μA",
+        "B": "40 μA",
+        "C": "10 μA",
+        "D": "30 μA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=52, Ic=1100 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-1.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 21.153846 μA। ব্যবহৃত উপাত্ত: beta=52, Ic=1100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "42.307692 μA",
+        "B": "21.153846 μA",
+        "C": "10.576923 μA",
+        "D": "31.153846 μA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=54, Ic=1200 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-2.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 22.222222 μA। ব্যবহৃত উপাত্ত: beta=54, Ic=1200।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "44.444444 μA",
+        "B": "11.111111 μA",
+        "C": "22.222222 μA",
+        "D": "32.222222 μA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=56, Ic=1300 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-3.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 23.214286 μA। ব্যবহৃত উপাত্ত: beta=56, Ic=1300।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "46.428571 μA",
+        "B": "11.607143 μA",
+        "C": "33.214286 μA",
+        "D": "23.214286 μA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=58, Ic=1400 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-4.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 24.137931 μA। ব্যবহৃত উপাত্ত: beta=58, Ic=1400।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "24.137931 μA",
+        "B": "48.275862 μA",
+        "C": "12.068966 μA",
+        "D": "34.137931 μA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=60, Ic=1500 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-5.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 25 μA। ব্যবহৃত উপাত্ত: beta=60, Ic=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "50 μA",
+        "B": "25 μA",
+        "C": "12.5 μA",
+        "D": "35 μA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=62, Ic=1600 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-6.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 25.806452 μA। ব্যবহৃত উপাত্ত: beta=62, Ic=1600।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "51.612903 μA",
+        "B": "12.903226 μA",
+        "C": "25.806452 μA",
+        "D": "35.806452 μA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=64, Ic=1700 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-7.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 26.5625 μA। ব্যবহৃত উপাত্ত: beta=64, Ic=1700।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "53.125 μA",
+        "B": "13.28125 μA",
+        "C": "36.5625 μA",
+        "D": "26.5625 μA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=66, Ic=1800 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-8.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 27.272727 μA। ব্যবহৃত উপাত্ত: beta=66, Ic=1800।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "27.272727 μA",
+        "B": "54.545455 μA",
+        "C": "13.636364 μA",
+        "D": "37.272727 μA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে β=68, Ic=1900 μA। model Ic=βIb-তে Ib কত μA?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ib-9.svg)",
+      "explanation": "Ib=Ic/β। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 27.941176 μA। ব্যবহৃত উপাত্ত: beta=68, Ic=1900।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "55.882353 μA",
+        "B": "27.941176 μA",
+        "C": "13.970588 μA",
+        "D": "37.941176 μA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1000 μA, Ib=10 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-0.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1000, Ib=10।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "100",
+        "D": "110"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1100 μA, Ib=11 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-1.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1100, Ib=11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "110",
+        "D": "100"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1200 μA, Ib=12 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-2.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1200, Ib=12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "100",
+        "B": "200",
+        "C": "50",
+        "D": "110"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1300 μA, Ib=13 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-3.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1300, Ib=13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "100",
+        "C": "50",
+        "D": "110"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1400 μA, Ib=14 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-4.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1400, Ib=14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "100",
+        "D": "110"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1500 μA, Ib=15 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-5.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1500, Ib=15।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "110",
+        "D": "100"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1600 μA, Ib=16 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-6.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1600, Ib=16।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "100",
+        "B": "200",
+        "C": "50",
+        "D": "110"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1700 μA, Ib=17 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-7.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1700, Ib=17।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "100",
+        "C": "50",
+        "D": "110"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1800 μA, Ib=18 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-8.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1800, Ib=18।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "100",
+        "D": "110"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সক্রিয় অঞ্চলে Ic=1900 μA, Ib=19 μA। DC current gain β কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-beta-9.svg)",
+      "explanation": "β=Ic/Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 100। ব্যবহৃত উপাত্ত: Ic=1900, Ib=19।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "200",
+        "B": "50",
+        "C": "110",
+        "D": "100"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2 mA, Ib=0.02 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-0.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.02 mA। ব্যবহৃত উপাত্ত: Ic=2, Ib=0.02।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.02 mA",
+        "B": "4.04 mA",
+        "C": "1.01 mA",
+        "D": "12.02 mA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.1 mA, Ib=0.03 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-1.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.13 mA। ব্যবহৃত উপাত্ত: Ic=2.1, Ib=0.03।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.26 mA",
+        "B": "2.13 mA",
+        "C": "1.065 mA",
+        "D": "12.13 mA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.2 mA, Ib=0.04 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-2.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.24 mA। ব্যবহৃত উপাত্ত: Ic=2.2, Ib=0.04।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.48 mA",
+        "B": "1.12 mA",
+        "C": "2.24 mA",
+        "D": "12.24 mA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.3 mA, Ib=0.05 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-3.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.35 mA। ব্যবহৃত উপাত্ত: Ic=2.3, Ib=0.05।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.7 mA",
+        "B": "1.175 mA",
+        "C": "12.35 mA",
+        "D": "2.35 mA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.4 mA, Ib=0.06 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-4.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.46 mA। ব্যবহৃত উপাত্ত: Ic=2.4, Ib=0.06।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.46 mA",
+        "B": "4.92 mA",
+        "C": "1.23 mA",
+        "D": "12.46 mA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.5 mA, Ib=0.07 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-5.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.57 mA। ব্যবহৃত উপাত্ত: Ic=2.5, Ib=0.07।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "5.14 mA",
+        "B": "2.57 mA",
+        "C": "1.285 mA",
+        "D": "12.57 mA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.6 mA, Ib=0.08 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-6.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.68 mA। ব্যবহৃত উপাত্ত: Ic=2.6, Ib=0.08।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "5.36 mA",
+        "B": "1.34 mA",
+        "C": "2.68 mA",
+        "D": "12.68 mA"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.7 mA, Ib=0.09 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-7.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.79 mA। ব্যবহৃত উপাত্ত: Ic=2.7, Ib=0.09।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "5.58 mA",
+        "B": "1.395 mA",
+        "C": "12.79 mA",
+        "D": "2.79 mA"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.8 mA, Ib=0.1 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-8.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.9 mA। ব্যবহৃত উপাত্ত: Ic=2.8, Ib=0.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.9 mA",
+        "B": "5.8 mA",
+        "C": "1.45 mA",
+        "D": "12.9 mA"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের NPN-এ Ic=2.9 mA, Ib=0.11 mA। emitter current-এর মান কত?\n![পুনরঙ্কিত transistor চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-transistor-ie-9.svg)",
+      "explanation": "Ie=Ic+Ib। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.01 mA। ব্যবহৃত উপাত্ত: Ic=2.9, Ib=0.11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.02 mA",
+        "B": "3.01 mA",
+        "C": "1.505 mA",
+        "D": "13.01 mA"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=5 V ও series R=100 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-0.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.05 A। ব্যবহৃত উপাত্ত: V=5, R=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.1 A",
+        "B": "0.025 A",
+        "C": "0.05 A",
+        "D": "10.05 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=6 V ও series R=110 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-1.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.054545 A। ব্যবহৃত উপাত্ত: V=6, R=110।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.109091 A",
+        "B": "0.027273 A",
+        "C": "10.054545 A",
+        "D": "0.054545 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=7 V ও series R=120 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-2.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.058333 A। ব্যবহৃত উপাত্ত: V=7, R=120।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.058333 A",
+        "B": "0.116667 A",
+        "C": "0.029167 A",
+        "D": "10.058333 A"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=8 V ও series R=130 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-3.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.061538 A। ব্যবহৃত উপাত্ত: V=8, R=130।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.123077 A",
+        "B": "0.061538 A",
+        "C": "0.030769 A",
+        "D": "10.061538 A"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=9 V ও series R=140 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-4.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.064286 A। ব্যবহৃত উপাত্ত: V=9, R=140।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.128571 A",
+        "B": "0.032143 A",
+        "C": "0.064286 A",
+        "D": "10.064286 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=10 V ও series R=150 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-5.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.066667 A। ব্যবহৃত উপাত্ত: V=10, R=150।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.133333 A",
+        "B": "0.033333 A",
+        "C": "10.066667 A",
+        "D": "0.066667 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=11 V ও series R=160 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-6.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.06875 A। ব্যবহৃত উপাত্ত: V=11, R=160।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.06875 A",
+        "B": "0.1375 A",
+        "C": "0.034375 A",
+        "D": "10.06875 A"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=12 V ও series R=170 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-7.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.070588 A। ব্যবহৃত উপাত্ত: V=12, R=170।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.141176 A",
+        "B": "0.070588 A",
+        "C": "0.035294 A",
+        "D": "10.070588 A"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=13 V ও series R=180 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-8.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.072222 A। ব্যবহৃত উপাত্ত: V=13, R=180।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.144444 A",
+        "B": "0.036111 A",
+        "C": "0.072222 A",
+        "D": "10.072222 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ideal diode forward biased, উৎস V=14 V ও series R=190 Ω। diode drop শূন্য ধরলে current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-current-9.svg)",
+      "explanation": "I=V/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.073684 A। ব্যবহৃত উপাত্ত: V=14, R=190।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.147368 A",
+        "B": "0.036842 A",
+        "C": "10.073684 A",
+        "D": "0.073684 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=5 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-0.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.3 V। ব্যবহৃত উপাত্ত: V=5, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.3 V",
+        "B": "8.6 V",
+        "C": "2.15 V",
+        "D": "14.3 V"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=6 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-1.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5.3 V। ব্যবহৃত উপাত্ত: V=6, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "10.6 V",
+        "B": "5.3 V",
+        "C": "2.65 V",
+        "D": "15.3 V"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=7 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-2.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 6.3 V। ব্যবহৃত উপাত্ত: V=7, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "12.6 V",
+        "B": "3.15 V",
+        "C": "6.3 V",
+        "D": "16.3 V"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=8 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-3.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 7.3 V। ব্যবহৃত উপাত্ত: V=8, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "14.6 V",
+        "B": "3.65 V",
+        "C": "17.3 V",
+        "D": "7.3 V"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=9 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-4.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 8.3 V। ব্যবহৃত উপাত্ত: V=9, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "8.3 V",
+        "B": "16.6 V",
+        "C": "4.15 V",
+        "D": "18.3 V"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=10 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-5.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 9.3 V। ব্যবহৃত উপাত্ত: V=10, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "18.6 V",
+        "B": "9.3 V",
+        "C": "4.65 V",
+        "D": "19.3 V"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=11 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-6.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 10.3 V। ব্যবহৃত উপাত্ত: V=11, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "20.6 V",
+        "B": "5.15 V",
+        "C": "10.3 V",
+        "D": "20.3 V"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=12 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-7.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 11.3 V। ব্যবহৃত উপাত্ত: V=12, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "22.6 V",
+        "B": "5.65 V",
+        "C": "21.3 V",
+        "D": "11.3 V"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=13 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-8.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 12.3 V। ব্যবহৃত উপাত্ত: V=13, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "12.3 V",
+        "B": "24.6 V",
+        "C": "6.15 V",
+        "D": "22.3 V"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=14 V, diode-এর দেওয়া ধ্রুব drop drop=0.7 V। series load-এর voltage কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-load-voltage-9.svg)",
+      "explanation": "VR=V−Vd। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 13.3 V। ব্যবহৃত উপাত্ত: V=14, drop=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "26.6 V",
+        "B": "13.3 V",
+        "C": "6.65 V",
+        "D": "23.3 V"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=5 V, drop=0.7 V, series R=100 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-0.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.043 A। ব্যবহৃত উপাত্ত: V=5, drop=0.7, R=100।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.086 A",
+        "B": "0.0215 A",
+        "C": "0.043 A",
+        "D": "10.043 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=6 V, drop=0.7 V, series R=110 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-1.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.048182 A। ব্যবহৃত উপাত্ত: V=6, drop=0.7, R=110।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.096364 A",
+        "B": "0.024091 A",
+        "C": "10.048182 A",
+        "D": "0.048182 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=7 V, drop=0.7 V, series R=120 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-2.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.0525 A। ব্যবহৃত উপাত্ত: V=7, drop=0.7, R=120।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.0525 A",
+        "B": "0.105 A",
+        "C": "0.02625 A",
+        "D": "10.0525 A"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=8 V, drop=0.7 V, series R=130 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-3.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.056154 A। ব্যবহৃত উপাত্ত: V=8, drop=0.7, R=130।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.112308 A",
+        "B": "0.056154 A",
+        "C": "0.028077 A",
+        "D": "10.056154 A"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=9 V, drop=0.7 V, series R=140 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-4.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.059286 A। ব্যবহৃত উপাত্ত: V=9, drop=0.7, R=140।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.118571 A",
+        "B": "0.029643 A",
+        "C": "0.059286 A",
+        "D": "10.059286 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=10 V, drop=0.7 V, series R=150 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-5.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.062 A। ব্যবহৃত উপাত্ত: V=10, drop=0.7, R=150।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.124 A",
+        "B": "0.031 A",
+        "C": "10.062 A",
+        "D": "0.062 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=11 V, drop=0.7 V, series R=160 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-6.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.064375 A। ব্যবহৃত উপাত্ত: V=11, drop=0.7, R=160।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.064375 A",
+        "B": "0.12875 A",
+        "C": "0.032188 A",
+        "D": "10.064375 A"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=12 V, drop=0.7 V, series R=170 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-7.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.066471 A। ব্যবহৃত উপাত্ত: V=12, drop=0.7, R=170।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.132941 A",
+        "B": "0.066471 A",
+        "C": "0.033235 A",
+        "D": "10.066471 A"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=13 V, drop=0.7 V, series R=180 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-8.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.068333 A। ব্যবহৃত উপাত্ত: V=13, drop=0.7, R=180।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.136667 A",
+        "B": "0.034167 A",
+        "C": "0.068333 A",
+        "D": "10.068333 A"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "Forward circuit-এ V=14 V, drop=0.7 V, series R=190 Ω। current কত?\n![পুনরঙ্কিত diode চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-diode-resistor-current-9.svg)",
+      "explanation": "I=(V−Vd)/R। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.07 A। ব্যবহৃত উপাত্ত: V=14, drop=0.7, R=190।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.14 A",
+        "B": "0.035 A",
+        "C": "10.07 A",
+        "D": "0.07 A"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=50 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-0.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.02 s। ব্যবহৃত উপাত্ত: f=50।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.02 s",
+        "B": "0.04 s",
+        "C": "0.01 s",
+        "D": "10.02 s"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=52 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-1.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.019231 s। ব্যবহৃত উপাত্ত: f=52।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.038462 s",
+        "B": "0.019231 s",
+        "C": "0.009615 s",
+        "D": "10.019231 s"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=54 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-2.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.018519 s। ব্যবহৃত উপাত্ত: f=54।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.037037 s",
+        "B": "0.009259 s",
+        "C": "0.018519 s",
+        "D": "10.018519 s"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=56 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-3.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.017857 s। ব্যবহৃত উপাত্ত: f=56।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.035714 s",
+        "B": "0.008929 s",
+        "C": "10.017857 s",
+        "D": "0.017857 s"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=58 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-4.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.017241 s। ব্যবহৃত উপাত্ত: f=58।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.017241 s",
+        "B": "0.034483 s",
+        "C": "0.008621 s",
+        "D": "10.017241 s"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=60 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-5.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.016667 s। ব্যবহৃত উপাত্ত: f=60।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.033333 s",
+        "B": "0.016667 s",
+        "C": "0.008333 s",
+        "D": "10.016667 s"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=62 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-6.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.016129 s। ব্যবহৃত উপাত্ত: f=62।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.032258 s",
+        "B": "0.008065 s",
+        "C": "0.016129 s",
+        "D": "10.016129 s"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=64 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-7.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.015625 s। ব্যবহৃত উপাত্ত: f=64।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.03125 s",
+        "B": "0.007813 s",
+        "C": "10.015625 s",
+        "D": "0.015625 s"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=66 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-8.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.015152 s। ব্যবহৃত উপাত্ত: f=66।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.015152 s",
+        "B": "0.030303 s",
+        "C": "0.007576 s",
+        "D": "10.015152 s"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আদর্শ half-wave rectifier-এ AC input frequency f=68 Hz। output pulse পুনরাবৃত্তির সময় কত?\n![পুনরঙ্কিত rectifier চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-half-wave-period-9.svg)",
+      "explanation": "T=1/f। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.014706 s। ব্যবহৃত উপাত্ত: f=68।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.029412 s",
+        "B": "0.014706 s",
+        "C": "0.007353 s",
+        "D": "10.014706 s"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=80 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-0.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.75 m। ব্যবহৃত উপাত্ত: f=80।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "7.5 m",
+        "B": "1.875 m",
+        "C": "3.75 m",
+        "D": "13.75 m"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=82 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-1.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.658537 m। ব্যবহৃত উপাত্ত: f=82।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "7.317073 m",
+        "B": "1.829268 m",
+        "C": "13.658537 m",
+        "D": "3.658537 m"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=84 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-2.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.571429 m। ব্যবহৃত উপাত্ত: f=84।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3.571429 m",
+        "B": "7.142857 m",
+        "C": "1.785714 m",
+        "D": "13.571429 m"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=86 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-3.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.488372 m। ব্যবহৃত উপাত্ত: f=86।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.976744 m",
+        "B": "3.488372 m",
+        "C": "1.744186 m",
+        "D": "13.488372 m"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=88 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-4.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.409091 m। ব্যবহৃত উপাত্ত: f=88।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.818182 m",
+        "B": "1.704545 m",
+        "C": "3.409091 m",
+        "D": "13.409091 m"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=90 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-5.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.333333 m। ব্যবহৃত উপাত্ত: f=90।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.666667 m",
+        "B": "1.666667 m",
+        "C": "13.333333 m",
+        "D": "3.333333 m"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=92 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-6.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.26087 m। ব্যবহৃত উপাত্ত: f=92।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3.26087 m",
+        "B": "6.521739 m",
+        "C": "1.630435 m",
+        "D": "13.26087 m"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=94 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-7.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.191489 m। ব্যবহৃত উপাত্ত: f=94।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.382979 m",
+        "B": "3.191489 m",
+        "C": "1.595745 m",
+        "D": "13.191489 m"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=96 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-8.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.125 m। ব্যবহৃত উপাত্ত: f=96।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.25 m",
+        "B": "1.5625 m",
+        "C": "3.125 m",
+        "D": "13.125 m"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের frequency f=98 MHz, বেগ 300×10⁶ m/s। তরঙ্গদৈর্ঘ্য কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-wavelength-9.svg)",
+      "explanation": "λ=300/fMHz। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.061224 m। ব্যবহৃত উপাত্ত: f=98।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.122449 m",
+        "B": "1.530612 m",
+        "C": "13.061224 m",
+        "D": "3.061224 m"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-0.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 150 MHz। ব্যবহৃত উপাত্ত: L=2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "150 MHz",
+        "B": "300 MHz",
+        "C": "75 MHz",
+        "D": "160 MHz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.1 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-1.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 142.857143 MHz। ব্যবহৃত উপাত্ত: L=2.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "285.714286 MHz",
+        "B": "142.857143 MHz",
+        "C": "71.428571 MHz",
+        "D": "152.857143 MHz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.2 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-2.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 136.363636 MHz। ব্যবহৃত উপাত্ত: L=2.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "272.727273 MHz",
+        "B": "68.181818 MHz",
+        "C": "136.363636 MHz",
+        "D": "146.363636 MHz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.3 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-3.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 130.434783 MHz। ব্যবহৃত উপাত্ত: L=2.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "260.869565 MHz",
+        "B": "65.217391 MHz",
+        "C": "140.434783 MHz",
+        "D": "130.434783 MHz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.4 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-4.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 125 MHz। ব্যবহৃত উপাত্ত: L=2.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "125 MHz",
+        "B": "250 MHz",
+        "C": "62.5 MHz",
+        "D": "135 MHz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.5 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-5.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 120 MHz। ব্যবহৃত উপাত্ত: L=2.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "240 MHz",
+        "B": "120 MHz",
+        "C": "60 MHz",
+        "D": "130 MHz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.6 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-6.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 115.384615 MHz। ব্যবহৃত উপাত্ত: L=2.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "230.769231 MHz",
+        "B": "57.692308 MHz",
+        "C": "115.384615 MHz",
+        "D": "125.384615 MHz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.7 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-7.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 111.111111 MHz। ব্যবহৃত উপাত্ত: L=2.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "222.222222 MHz",
+        "B": "55.555556 MHz",
+        "C": "121.111111 MHz",
+        "D": "111.111111 MHz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.8 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-8.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 107.142857 MHz। ব্যবহৃত উপাত্ত: L=2.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "107.142857 MHz",
+        "B": "214.285714 MHz",
+        "C": "53.571429 MHz",
+        "D": "117.142857 MHz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "বেতার তরঙ্গের λ=2.9 m, বেগ 300×10⁶ m/s। frequency কত MHz?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-radio-frequency-9.svg)",
+      "explanation": "fMHz=300/λ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 103.448276 MHz। ব্যবহৃত উপাত্ত: L=2.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "206.896552 MHz",
+        "B": "103.448276 MHz",
+        "C": "51.724138 MHz",
+        "D": "113.448276 MHz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=10 mV ও output Vout=200 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-0.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=10, Vout=200।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "20",
+        "D": "30"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=11 mV ও output Vout=220 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-1.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=11, Vout=220।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "30",
+        "D": "20"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=12 mV ও output Vout=240 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-2.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=12, Vout=240।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "20",
+        "B": "40",
+        "C": "10",
+        "D": "30"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=13 mV ও output Vout=260 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-3.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=13, Vout=260।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "20",
+        "C": "10",
+        "D": "30"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=14 mV ও output Vout=280 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-4.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=14, Vout=280।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "20",
+        "D": "30"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=15 mV ও output Vout=300 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-5.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=15, Vout=300।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "30",
+        "D": "20"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=16 mV ও output Vout=320 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-6.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=16, Vout=320।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "20",
+        "B": "40",
+        "C": "10",
+        "D": "30"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=17 mV ও output Vout=340 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-7.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=17, Vout=340।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "20",
+        "C": "10",
+        "D": "30"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=18 mV ও output Vout=360 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-8.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=18, Vout=360।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "20",
+        "D": "30"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দেওয়া linear signal model-এ input amplitude Vin=19 mV ও output Vout=380 mV। amplitude gain-এর মান কত?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-gain-9.svg)",
+      "explanation": "G=Vout/Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20। ব্যবহৃত উপাত্ত: Vin=19, Vout=380।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "30",
+        "D": "20"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=10, input Vin=5 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-0.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 50 mV। ব্যবহৃত উপাত্ত: G=10, Vin=5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "50 mV",
+        "B": "100 mV",
+        "C": "25 mV",
+        "D": "60 mV"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=11, input Vin=6 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-1.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 66 mV। ব্যবহৃত উপাত্ত: G=11, Vin=6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "132 mV",
+        "B": "66 mV",
+        "C": "33 mV",
+        "D": "76 mV"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=12, input Vin=7 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-2.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 84 mV। ব্যবহৃত উপাত্ত: G=12, Vin=7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "168 mV",
+        "B": "42 mV",
+        "C": "84 mV",
+        "D": "94 mV"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=13, input Vin=8 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-3.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 104 mV। ব্যবহৃত উপাত্ত: G=13, Vin=8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "208 mV",
+        "B": "52 mV",
+        "C": "114 mV",
+        "D": "104 mV"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=14, input Vin=9 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-4.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 126 mV। ব্যবহৃত উপাত্ত: G=14, Vin=9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "126 mV",
+        "B": "252 mV",
+        "C": "63 mV",
+        "D": "136 mV"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=15, input Vin=10 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-5.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 150 mV। ব্যবহৃত উপাত্ত: G=15, Vin=10।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "300 mV",
+        "B": "150 mV",
+        "C": "75 mV",
+        "D": "160 mV"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=16, input Vin=11 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-6.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 176 mV। ব্যবহৃত উপাত্ত: G=16, Vin=11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "352 mV",
+        "B": "88 mV",
+        "C": "176 mV",
+        "D": "186 mV"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=17, input Vin=12 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-7.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 204 mV। ব্যবহৃত উপাত্ত: G=17, Vin=12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "408 mV",
+        "B": "102 mV",
+        "C": "214 mV",
+        "D": "204 mV"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=18, input Vin=13 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-8.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 234 mV। ব্যবহৃত উপাত্ত: G=18, Vin=13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "234 mV",
+        "B": "468 mV",
+        "C": "117 mV",
+        "D": "244 mV"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক linear amplifier-এ amplitude gain G=19, input Vin=14 mV। distortion/saturation নেই ধরলে output কত mV?\n![পুনরঙ্কিত radio চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch13-v1/mcq-amplifier-output-9.svg)",
+      "explanation": "Vout=G Vin। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 266 mV। ব্যবহৃত উপাত্ত: G=19, Vin=14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "532 mV",
+        "B": "266 mV",
+        "C": "133 mV",
+        "D": "276 mV"
+      },
+      "correct": "B"
+    }
+  ]
+}

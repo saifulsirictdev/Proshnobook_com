@@ -1,3 +1,17 @@
+import {sscPhysicsChapter8Batches} from "./ssc-physics-ch8-batches";
+import {sscPhysicsChapter9Batches} from "./ssc-physics-ch9-batches";
+import {sscPhysicsChapter10Batches} from "./ssc-physics-ch10-batches";
+import {sscPhysicsChapter11Batches} from "./ssc-physics-ch11-batches";
+import {sscPhysicsChapter12Batches} from "./ssc-physics-ch12-batches";
+import {sscPhysicsChapter13Batches} from "./ssc-physics-ch13-batches";
+import {sscPhysicsChapter14Batches} from "./ssc-physics-ch14-batches";
+import {sscPhysicsChapter7Batches} from "./ssc-physics-ch7-batches";
+import {sscPhysicsChapter5Batches} from "./ssc-physics-ch5-batches";
+import {sscPhysicsChapter6Batches} from "./ssc-physics-ch6-batches";
+import {sscPhysicsChapter4Batches} from "./ssc-physics-ch4-batches";
+import {sscPhysicsChapter3Batches} from "./ssc-physics-ch3-batches";
+import {sscPhysicsChapter2Batches} from "./ssc-physics-ch2-batches";
+import {sscPhysicsBatches} from "./ssc-physics-batches";
 import {sscMathBatches} from "./ssc-math-batches";
 import {sscGeometryPlainBatches} from "./ssc-geometry-plain-batches";
 import {class8English2Batches} from "./class8-english2-batches";
@@ -35,7 +49,21 @@ export function preparedBatches():PreparedBatch[]{
   ...english1Batches(),
   ...class8English2Batches(),
   ...sscMathBatches(),
-  ...sscGeometryPlainBatches()
+  ...sscGeometryPlainBatches(),
+  ...sscPhysicsBatches(),
+  ...sscPhysicsChapter2Batches(),
+  ...sscPhysicsChapter3Batches(),
+  ...sscPhysicsChapter4Batches(),
+  ...sscPhysicsChapter5Batches(),
+  ...sscPhysicsChapter6Batches(),
+  ...sscPhysicsChapter7Batches(),
+  ...sscPhysicsChapter8Batches(),
+  ...sscPhysicsChapter9Batches(),
+  ...sscPhysicsChapter10Batches(),
+  ...sscPhysicsChapter11Batches(),
+  ...sscPhysicsChapter12Batches(),
+  ...sscPhysicsChapter13Batches(),
+  ...sscPhysicsChapter14Batches()
  ];
 }
 function validatePreparedBatch(b:PreparedBatch){

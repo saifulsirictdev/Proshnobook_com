@@ -1,0 +1,72 @@
+{
+  "status": "PARTIAL_SOURCE_INSPECTION_NOT_FULL_TEXTBOOK_ALIGNMENT",
+  "standingInstruction": "যে উৎস-প্রশ্নে চিত্র আছে, সেটি অভিযোজিত করলে চিত্রও যুক্ত/পুনরঙ্কন করতে হবে; চিত্রকে শুধু বর্ণনায় বদলানো যাবে না। না দেখা চিত্রকে যাচাইকৃত বলা যাবে না।",
+  "chapters": {
+    "5": {
+      "fileName": "06. 9 Phy Chap 05.doc",
+      "fileId": "1H4KqqTZyROfchxbsofQA6aPHe5rhHCai",
+      "sourceUrl": "https://drive.google.com/file/d/1H4KqqTZyROfchxbsofQA6aPHe5rhHCai/view",
+      "bytes": 2137088,
+      "sha256": "f041a31e283ce01ff2043e4586898e6c1aeddcd20c737f959274475ed1ca998b",
+      "textExtraction": {
+        "tool": "word-extractor 1.0.4",
+        "characters": 139401,
+        "sha256": "cc48010d68e427788c8a57d493a61baa65be67ca0dc2eca767df40aaf9d2c181",
+        "encoding": "Legacy Bijoy; converter @kovapdf/bijoy-unicode 1.0.1 aids reading but corrupts Latin units/equations; not authoritative"
+      },
+      "visualInspection": {
+        "tool": "Aspose.Words 26.11 evaluation HTML export",
+        "scope": "Trial-limited first portion, not full source; embedded equation/diagram positions incomplete",
+        "nativeQuestionFiguresObserved": true,
+        "allSourceFiguresInspected": false
+      },
+      "fullChapterRead": false,
+      "boardAttributionVerified": false,
+      "adaptationPolicy": "Original practice values and wording; no copied board/year badges. Native diagram structures are inspiration only, not verbatim questions.",
+      "limitations": [
+        "Legacy equation objects are missing/corrupt in text extraction.",
+        "No full textbook or page alignment claimed.",
+        "Chapter 6 native source figure coverage remains unknown; original thermal diagrams supplied."
+      ],
+      "observedFigures": [
+        {
+          "file": "docs/question-bank/ssc-physics/source-figures/ch5-source.020.png",
+          "sha256": "fe9801aeb4981d524c35fd01f0e41e09a9d9539c73b2734fba744d4294fad105",
+          "description": "Hydraulic pistons with force arrows and dimension label; design inspiration for original hydraulic items."
+        },
+        {
+          "file": "docs/question-bank/ssc-physics/source-figures/ch5-source.031.png",
+          "sha256": "4ccb11657db4591d3a728f2b2f3600120cc12d4459318104b961095784f2878f",
+          "description": "Adjacent liquid columns with densities/depth labels; inspected only, not reproduced as a source problem."
+        }
+      ]
+    },
+    "6": {
+      "fileName": "07. 9 Phy Chap 06.doc",
+      "fileId": "1GE6onDSHAtZ3hUwBfOwrWXB6teonem4l",
+      "sourceUrl": "https://drive.google.com/file/d/1GE6onDSHAtZ3hUwBfOwrWXB6teonem4l/view",
+      "bytes": 1588736,
+      "sha256": "4e8673614907d9ab8773c748daa53494d2da9aa7db5fce38aba1c28b1ece8170",
+      "textExtraction": {
+        "tool": "word-extractor 1.0.4",
+        "characters": 129054,
+        "sha256": "c6b322ecbfcec09684fdbc31896257bfba6c7408b1d3b9e354983f384256e26e",
+        "encoding": "Legacy Bijoy; converter @kovapdf/bijoy-unicode 1.0.1 aids reading but corrupts Latin units/equations; not authoritative"
+      },
+      "visualInspection": {
+        "tool": "Aspose.Words 26.11 evaluation HTML export",
+        "scope": "Trial-limited first portion, not full source; embedded equation/diagram positions incomplete",
+        "nativeQuestionFiguresObserved": false,
+        "allSourceFiguresInspected": false
+      },
+      "fullChapterRead": false,
+      "boardAttributionVerified": false,
+      "adaptationPolicy": "Original practice values and wording; no copied board/year badges. Native diagram structures are inspiration only, not verbatim questions.",
+      "limitations": [
+        "Legacy equation objects are missing/corrupt in text extraction.",
+        "No full textbook or page alignment claimed.",
+        "Chapter 6 native source figure coverage remains unknown; original thermal diagrams supplied."
+      ]
+    }
+  }
+}

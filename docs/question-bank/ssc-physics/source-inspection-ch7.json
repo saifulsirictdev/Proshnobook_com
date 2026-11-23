@@ -1,0 +1,59 @@
+{
+  "status": "PARTIAL_SOURCE_INSPECTION_NOT_FULL_TEXTBOOK_ALIGNMENT",
+  "fileName": "07. 9 Phy Chap 07.doc",
+  "fileId": "19SQykjLifA2BIeWEPOzyxXVh8nZvRu-D",
+  "sourceUrl": "https://drive.google.com/file/d/19SQykjLifA2BIeWEPOzyxXVh8nZvRu-D/view",
+  "bytes": 2743296,
+  "sha256": "e1f6d80f67b44916559a849e36ee5457d3ecf59b2e793b4203c8139b15c442af",
+  "textExtraction": {
+    "tool": "word-extractor 1.0.4",
+    "characters": 153368,
+    "sha256": "870771107133fa3ca7df5a6637bacdb73dcc676f979db74924166cd76caf982b",
+    "encoding": "Legacy Bijoy; @kovapdf/bijoy-unicode 1.0.1 aids reading but corrupts Latin units/equations, not authoritative"
+  },
+  "visualInspection": {
+    "tool": "Aspose.Words 26.11 evaluation HTML export",
+    "scope": "Trial-limited first 202 loaded paragraphs; not full source",
+    "nativeFiguresObserved": true,
+    "sourceQuestionFigureObserved": true,
+    "allSourceFiguresInspected": false,
+    "transparency": "PNG evidence may have transparent background; composite over white for inspection. No content redaction or watermark removal."
+  },
+  "observedFigures": [
+    {
+      "file": "docs/question-bank/ssc-physics/source-figures/ch7-source.009.png",
+      "sourceExportName": "source.009.png",
+      "sha256": "91ca801385b31fd70be55fcb6d520bb50507297974355e3c9e27873a2e1fa4d3",
+      "description": "Well diagram A mouth/B water surface/C bottom, d1/d2/h. Observed within source solution; original practice redraws this structure."
+    },
+    {
+      "file": "docs/question-bank/ssc-physics/source-figures/ch7-source.020.png",
+      "sourceExportName": "source.020.png",
+      "sha256": "e8bb0e225e51178e03651b775c335d420d5e6091e3665383bb4cba49d27f06ea",
+      "description": "Person moving away from stationary wall; observed source solution diagram."
+    },
+    {
+      "file": "docs/question-bank/ssc-physics/source-figures/ch7-source.021.png",
+      "sourceExportName": "source.021.png",
+      "sha256": "b2fd29e86db4bb57b725df36abab083fb65e59a82befa8a262e791ce2989ee53",
+      "description": "Person moving toward stationary wall; observed source solution diagram."
+    },
+    {
+      "file": "docs/question-bank/ssc-physics/source-figures/ch7-source.028.png",
+      "sourceExportName": "source.028.png",
+      "sha256": "8cd5f01f617e42273d10a4935dba99b3f611564d5510adc8d0214c870c36c646",
+      "description": "Question figure: longitudinal compressions/rarefactions from source S toward reflector, with time bracket. Original new values/redrawn structure, not verbatim question."
+    }
+  ],
+  "fullChapterRead": false,
+  "sourcePageVerified": false,
+  "teacherApproved": false,
+  "boardAttributionVerified": false,
+  "adaptationPolicy": "Own wording and parameters. Reused native figure structures retain redrawn diagrams; no copied board/year badges. Well and moving-observer solution figures distinguished from native question figures.",
+  "limitations": [
+    "Not all embedded equations, labels or source figures were recovered.",
+    "Source includes cross-chapter subquestions; new chapter draft is not a verbatim board compilation.",
+    "Teacher and full textbook/page/syllabus checks remain pending.",
+    "Linear sound-temperature relation is explicitly a supplied approximate model, not claimed to be the source formula."
+  ]
+}

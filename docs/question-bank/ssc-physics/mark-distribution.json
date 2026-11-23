@@ -1,0 +1,45 @@
+{
+  "id": "ssc-physics-owner-sample-v1",
+  "status": "OWNER_SAMPLE_NOT_OFFICIAL_YEAR_VERIFIED",
+  "subject": "পদার্থবিজ্ঞান",
+  "source": "owner-mark-distribution.jpg",
+  "sourceSha256": "59af0e595a8f3d2ed37ce779f50104b72da2c0c812e7290d3ef71b1fb18934ea",
+  "officialYear": null,
+  "totalMarks": 100,
+  "theoryMarks": 75,
+  "practicalMarks": 25,
+  "totalTheoryMinutes": 180,
+  "sections": [
+    {
+      "kind": "MCQ",
+      "offered": 25,
+      "answer": 25,
+      "marksEach": 1,
+      "total": 25
+    },
+    {
+      "kind": "CQ",
+      "offered": 7,
+      "answer": 4,
+      "marksEach": 10,
+      "total": 40
+    },
+    {
+      "kind": "SQ",
+      "offered": 7,
+      "answer": 5,
+      "marksEach": 2,
+      "total": 10
+    }
+  ],
+  "cqPartMarks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "cqPartMarksSource": "Existing non-math CQ importer convention; screenshot specifies 10 total, not subpart marks.",
+  "separateSectionTimingSpecified": false,
+  "practicalQuestionPreparationInScope": false,
+  "note": "ছবিতে সময় ৩ ঘণ্টা একত্রে দেওয়া; MCQ/CQ আলাদা সময় অনুমান করা হয়নি। সালের সরকারি সত্যতা যাচাই করা হয়নি।"
+}

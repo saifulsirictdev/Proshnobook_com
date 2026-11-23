@@ -1,7 +1,7 @@
-/** Bounded, literal Markdown tables and our versioned statistics SVGs only.
+/** Bounded, literal Markdown tables and our allowlisted versioned question SVGs only.
  * No HTML, attributes, arbitrary URLs, links or Markdown evaluation.
  */
-export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string};
+export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string}|{kind:"physics-image";alt:string;src:string};
 export function questionBlocks(text:string):QuestionBlock[]{
  const lines=text.split("\n"),out:QuestionBlock[]=[];let buffer:string[]=[];
  const flush=()=>{if(buffer.length){out.push({kind:"text",text:buffer.join("\n")});buffer=[];}};
@@ -14,6 +14,10 @@ export function questionBlocks(text:string):QuestionBlock[]{
   // Exact origin/version/path only: no arbitrary SVG hosts, queries or HTML.
   const geometry=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-math-ch(?:[6-9]|10|14|15|16)-v1\/[a-z0-9-]+\.svg)\)$/);
   if(geometry){flush();out.push({kind:"geometry-image",alt:geometry[1]||"গণিতের চিত্র",src:geometry[2]});i++;continue;}
+  // Self-contained Physics diagrams only. Keep the exact production
+  // origin and versioned chapter paths; never allow arbitrary images or HTML.
+  const physics=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-physics-ch(?:[5-9]|1[0-4])-v1\/[a-z0-9-]+\.svg)\)$/);
+  if(physics){flush();out.push({kind:"physics-image",alt:physics[1]||"পদার্থবিজ্ঞানের চিত্র",src:physics[2]});i++;continue;}
   if(pipe(lines[i])&&i+2<lines.length&&pipe(lines[i+1])){
    const headers=cells(lines[i]),divider=cells(lines[i+1]);let end=i+2;
    while(end<lines.length&&pipe(lines[end]))end++;

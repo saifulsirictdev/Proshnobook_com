@@ -1,0 +1,20 @@
+{
+  "status": "uploaded-metadata-verified",
+  "fileId": "14u93-zHA4O1YJ_qTcHyb-c2zoDJ3wm-v",
+  "name": "ssc-physics-ch4-350-150-100-draft-v1.zip",
+  "webViewLink": "https://drive.google.com/file/d/14u93-zHA4O1YJ_qTcHyb-c2zoDJ3wm-v/view?usp=drivesdk",
+  "sizeBytes": 235848,
+  "localSha256": "c61c654cd15d2b1378b5de102aeca6239af9cd39778e2f895bdb1622207f7323",
+  "localAndRemoteMd5": "b665b0092374600eb5c6f78169932cdf",
+  "remoteSizeAndMd5Verified": true,
+  "counts": {
+    "MCQ": 350,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "location": "Drive root; previous chapter backups and source/reference files untouched",
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "note": "Upload and subsequent get_file confirmed matching size and MD5. Archive holds four strict-import JSON slices, validation, review HTML, README, mark-distribution JSON and source image, generator/verifier, adapter and tests. Receipt itself is not inside its own archive."
+}
