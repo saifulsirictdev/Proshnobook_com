@@ -53,7 +53,9 @@ withDisposableWalletDatabase(async (db) => {
                 ? { visibleQuestions: () => ({}) }
                 : n.startsWith("@/lib/")
                   ? load(n.replace("@/", "") + ".ts")
-                  : require(n);
+                  : n.startsWith("./") || n.startsWith("../")
+                    ? load(path.join(path.dirname(file), n) + ".ts")
+                    : require(n);
     m._compile(
       ts.transpileModule(fs.readFileSync(file, "utf8"), {
         compilerOptions: {
