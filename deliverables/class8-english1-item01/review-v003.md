@@ -1,3 +1,0 @@
-# Unseen comprehension: model-aligned draft v003
-
-50 original fictional practice passages. Each uses Q5 information table (five blanks), Q6 five true/false items with corrections and Q7 a sample summary, following the user-provided Class 8 Model Test, English First Paper, printed page 3. v003 removes v002 cloze to follow that source. The site catalog currently describes Q7 as a cloze, so catalog alignment needs separate review. These are not transcriptions of the test. Tables use simple information/answer headings rather than the source’s more varied Who/Event/When layouts. Check answers, educational level, variation, semantic duplication, table display and importer; no teacher approval, import or publication.

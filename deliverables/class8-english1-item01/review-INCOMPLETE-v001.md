@@ -1,3 +1,0 @@
-# Unseen Comprehension — INCOMPLETE draft v001
-
-12 of 50 complete practice sets; 38 more needed. Each has an original fictional passage, five information-transfer prompts, five true/false items with corrections and a sample summary. The source model test uses a summary as Question 7; the website topic label calls Q7 a cloze test. Reconcile the intended pattern and add a cloze task if needed. Check pedagogical balance, all answers, diversity, formatting and importer display; no teacher approval or website import. Source: user-provided Model Test 01, English First Paper, printed page 3, format only; original passages are not source extracts.

@@ -1,5 +1,0 @@
-# Unseen Comprehension — draft v002
-
-50 distinct, original fictional practice passages with five information-transfer fields, five true/false statements with corrections, a five-gap cloze and a sample summary. Each passage with its full activities counts as one set. The 12 earlier sets were retained and 38 were added. No passage is claimed to be a source transcription.
-
-Source pattern: user-provided Class 8 English Model Test 01, English First Paper, printed page 3. That test uses a summary for Q7, while the site topic calls Q7 a cloze test. Both are included for review, not asserted to be mandatory together. The cloze copies sentences from the passage and reuses information-transfer facts: it is basic recall, not independent higher-order practice. Review cloze quality, sentence flow, answer ambiguity, fictional details, age appropriateness, semantic overlaps, source rights and importer display. Counts and structural checks do not establish answer correctness or teacher approval. No website import or approval.
