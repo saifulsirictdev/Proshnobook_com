@@ -1,3 +1,19 @@
+# Current verified result — Auto Model production rollout
+
+**Published at https://proshnobook.com.** Production deployment `dpl_9GzGcK2q34Bh2BYJdedW3SbHroP1` is **READY / PROMOTED**, source `21ead3ab00106e0da9e7dba9b3e7bc5c94d15614`.
+
+- Biology: **4,480** answered questions imported Pending then explicitly owner-approved; exact canonical readback verified. **14 chapters × (200 MCQ + 50 CQ + 70 SQ)**. CQ ক/খ/গ/ঘ marks **1/2/3/4**. **45 figures** verified from the live site by content type and SHA256.
+- Complete-book database-only guard deployed for all subjects, including section-topic filtering bypass correction. Live Biology server-action harness: selected-stock shortage **51**, **AI shortage 0**, **quota writes 0**, **provider invocations 0**, no unrelated-topic substitution. Harness uses a synthetic teacher identity, **not an authenticated browser E2E test**.
+- Physics **6,400** / Chemistry **8,113** approved live rows unchanged by before/after protected digests; **20** prior diagnostic models passed with AI0. Neither subject republished.
+- **962/962 runtime regression tests**, **157/157 AutoModel/English focused tests**, **130/130 Biology focused tests**, TypeScript and production build **PASS**. These overlap; do not sum them. Not a claim that the entire repository suite passed: heavy prepared-library full/scoped runs exceeded the practical wait and were stopped without results.
+- Owner approval is **not** independent teacher/content/semantic-duplicate or official textbook/syllabus certification; those flags remain false. Biology's official exam blueprint is not registered: ask the teacher for marks/time rather than inventing a scheme.
+- [Publication receipt](question-bank/ssc-biology/production-release-receipt.json) records event IDs, release digest, live assets and readback evidence. Generated offline `progress.json` and chapter completion reviews describe source-draft validation, not live publication; the production receipt is the release-status overlay.
+- Publication ran only through an explicitly acknowledged one-off production deployment override. Normal `npm run build` never imports or approves questions. Do not replay the publication command as a routine health check; use read-only verify mode.
+
+All sections below are **historical snapshots**, including statements that import/deployment was pending. They do not override the verified result above. Full post-release source backup is recorded separately in `drive-backup-postrelease-receipt.json`; source/receipts are not a database dump.
+
+---
+
 # Auto Model reconciliation and rollout
 
 ## Current source integration
