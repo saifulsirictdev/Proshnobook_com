@@ -91,7 +91,7 @@ export async function POST(req: Request) {
     const data = await deepseekRes.json();
     let rawText = data?.choices?.[0]?.message?.content;
 
-    if (!rawText) return NextResponse.json({ success: false, error: "AI থেকে রেসপন্স পাওয়া যায়নি।" }, { status: 500 });
+    if (!rawText) return NextResponse.json({ success: false, error: "সফটওয়্যার থেকে রেসপন্স পাওয়া যায়নি।" }, { status: 500 });
 
     let cleaned = rawText.trim();
     if (cleaned.startsWith("```")) cleaned = cleaned.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();

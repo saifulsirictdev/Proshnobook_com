@@ -176,7 +176,7 @@ export async function POST(request: Request) {
         }
         if (failed)
           p.error =
-            "এই পৃষ্ঠার AI উত্তর তৈরি হয়নি। ফাঁকা রাখা হয়েছে; আবার চেষ্টা করুন।";
+            "এই পৃষ্ঠার সফটওয়্যার উত্তর তৈরি হয়নি। ফাঁকা রাখা হয়েছে; আবার চেষ্টা করুন।";
         else delete p.error;
         delete p.lease;
         delete p.leaseUntil;

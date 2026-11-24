@@ -21,9 +21,9 @@ export async function requestAutoModelGap(p:ResolvedSyllabus,slots:AutoModelRow[
       {role:"user",content:JSON.stringify({task:"Fill ONLY these missing slots, not the entire paper",count:slots.length,kind,category:p.request.category,subject:p.request.subject,topic,syllabusInstructions:p.request.syllabus?.reference??p.registered?.offered,sectionTitle:"title" in section?section.title:kind,marks:section.marksEach,cqPartMarks:p.partMarks,avoid:existing.slice(0,150).map(q=>q.text.slice(0,400)),format:kind==="CQ"?{questions:[{type:"CQ",stimulus:"self-contained original stimulus",subQuestions:Object.fromEntries(["k","kh","g","gh"].slice(0,p.partMarks.length).map(k=>[k,"question"])),answers:Object.fromEntries(["k","kh","g","gh"].slice(0,p.partMarks.length).map(k=>[k,"complete worked solution"]))}]}:kind==="MCQ"?{questions:[{type:"MCQ",text:"question",options:{A:"distinct option",B:"distinct option",C:"distinct option",D:"distinct option"},correct:"A",explanation:"worked reasoning"}]}:{questions:[{type:"SHORT",text:"written question",explanation:"complete worked solution"}]}})},
     ]}),
   });
-  if(!res.ok)throw Error("AI প্রস্তুতির সার্ভার উত্তর দেয়নি। পরে চেষ্টা করুন।");
+  if(!res.ok)throw Error("সফটওয়্যার প্রস্তুতির সার্ভার উত্তর দেয়নি। পরে চেষ্টা করুন।");
   const data=await res.json(),raw=data?.choices?.[0]?.message?.content;
-  if(typeof raw!=="string"||raw.length>150000)throw Error("AI-এর উত্তর সঠিক কাঠামোয় নেই।");
+  if(typeof raw!=="string"||raw.length>150000)throw Error("সফটওয়্যার-এর উত্তর সঠিক কাঠামোয় নেই।");
   const parsed=generated.parse(JSON.parse(raw.replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,"")));
   const known=new Set(existing.map(q=>syllabusFingerprint(q.text))),rows:AutoModelRow[]=[];
   for(const q of parsed.questions){

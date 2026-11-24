@@ -43,7 +43,7 @@ export default function AnswerAssistant({
   }
   return (
     <details className="rp-panel" data-noprint>
-      <summary>MCQ উত্তরপত্র ও AI সহকারী</summary>
+      <summary>MCQ উত্তরপত্র ও সফটওয়্যার সহকারী</summary>
       <p>
         অনুমোদিত উত্তরমালা: {entries.filter((e) => e.approved).length} পেজ। পেজের
         ক্রম বদলালেও মূল প্রশ্ন page অনুযায়ী উত্তর মিলবে।
@@ -58,7 +58,7 @@ export default function AnswerAssistant({
       </div>
       {!admin && (
         <p>
-          উত্তর নেই বা অমীমাংসিত হলে অ্যাডমিনকে জানান। কোনো AI খসড়াকে যাচাইকৃত উত্তর
+          উত্তর নেই বা অমীমাংসিত হলে অ্যাডমিনকে জানান। কোনো সফটওয়্যার খসড়াকে যাচাইকৃত উত্তর
           বলা হয় না।
         </p>
       )}
@@ -260,14 +260,14 @@ export default function AnswerAssistant({
               </button>
             ))}
           </div>
-          <h3>AI ব্যাখ্যা · খসড়া, উত্তরমালা নয়</h3>
+          <h3>সফটওয়্যার ব্যাখ্যা · খসড়া, উত্তরমালা নয়</h3>
           <p>
             পরিষ্কার Unicode বাংলায় একটি প্রশ্ন, সব অপশন ও প্রয়োজনে প্রকাশনীর উত্তর
-            দিন। পাঠানো লেখা DeepSeek-এ যাবে। PDF/ছবি পাঠানো হয় না। AI ভুল করতে
+            দিন। পাঠানো লেখা DeepSeek-এ যাবে। PDF/ছবি পাঠানো হয় না। সফটওয়্যার ভুল করতে
             পারে; ফল নিজে যাচাই করুন।
           </p>
           <textarea
-            aria-label="AI প্রশ্ন ও অপশন"
+            aria-label="সফটওয়্যার প্রশ্ন ও অপশন"
             rows={5}
             maxLength={4000}
             value={question}
@@ -283,17 +283,17 @@ export default function AnswerAssistant({
                 if (r.ok) setExplanation(r.text);
                 else setMessage(r.error);
               } catch {
-                setMessage("AI সংযোগ ব্যর্থ।");
+                setMessage("সফটওয়্যার সংযোগ ব্যর্থ।");
               } finally {
                 setBusy(false);
               }
             }}
           >
-            AI দিয়ে ব্যাখ্যা খসড়া করুন
+            সফটওয়্যার দিয়ে ব্যাখ্যা খসড়া করুন
           </button>
           {explanation && (
             <div style={{ whiteSpace: "pre-wrap" }}>
-              <strong>AI খসড়া · যাচাইকৃত নয়</strong>
+              <strong>সফটওয়্যার খসড়া · যাচাইকৃত নয়</strong>
               <p>{explanation}</p>
             </div>
           )}

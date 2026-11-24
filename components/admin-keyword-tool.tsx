@@ -398,7 +398,7 @@ export default function AdminKeywordTool({ onSelectKeyword, onApplySeo, initialT
     <div className="space-y-4">
       {!compact && (
         <div>
-          <h2 className="text-xl font-bold">AI কিওয়ার্ড রিসার্চ</h2>
+          <h2 className="text-xl font-bold">সফটওয়্যার কিওয়ার্ড রিসার্চ</h2>
           <p className="text-sm text-slate-500">বিষয় লিখলে বাংলাদেশের ছাত্র ও চাকরিপ্রার্থীদের জন্য উপযোগী কিওয়ার্ড, সুযোগ স্কোর ও SEO প্যাক দেবে।</p>
         </div>
       )}
@@ -710,7 +710,7 @@ export default function AdminKeywordTool({ onSelectKeyword, onApplySeo, initialT
           {rows.length === 0 && <p className="rounded-lg border p-3 text-sm text-slate-500">এই ফিল্টারে কোনো কিওয়ার্ড নেই।</p>}
 
           <p className="text-xs text-slate-500">
-            মনে রাখবেন: মাসিক সার্চ, কঠিনতা ও সুযোগ স্কোর AI-এর আনুমানিক ধারণা, আসল Google ডেটা নয়। নিশ্চিত হতে Google Keyword Planner বা Search Console দেখুন।
+            মনে রাখবেন: মাসিক সার্চ, কঠিনতা ও সুযোগ স্কোর সফটওয়্যার-এর আনুমানিক ধারণা, আসল Google ডেটা নয়। নিশ্চিত হতে Google Keyword Planner বা Search Console দেখুন।
           </p>
         </>
       )}

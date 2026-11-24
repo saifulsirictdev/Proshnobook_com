@@ -27,7 +27,7 @@ export async function prepareEnglishBankModel(grade: number, itemIds?: string[],
     const key = englishOwnerPrefix(user.id) + randomUUID();
     await db.setting.create({ data: { key, value: JSON.stringify(draft) } });
     return { ok: true as const, key };
-  } catch { return { ok: false as const, reason: "DATABASE_FAILURE" as const, error: "Database থেকে পূর্ণ মডেল আনা/সেভ করা যায়নি। AI চালানো হয়নি। আমার draft দেখে আবার চেষ্টা করুন।" }; }
+  } catch { return { ok: false as const, reason: "DATABASE_FAILURE" as const, error: "Database থেকে পূর্ণ মডেল আনা/সেভ করা যায়নি। সফটওয়্যার চালানো হয়নি। আমার draft দেখে আবার চেষ্টা করুন।" }; }
 }
 
 /** Options come only from approved, grade-matched reusable stock, not draft candidates. */

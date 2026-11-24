@@ -494,6 +494,7 @@ export default function QbBuilder({
         <PaperPreview
           s={enriched}
           defaultHeaderValues={resolveDefaultHeader(s,data)}
+          defaultHeaderEditor={!purchased && setName === (s.show.autoSet ? "ক" : s.setName) ? <DefaultHeaderEditor settings={s} items={data} editRequest={headerEditRequest} update={update} onSave={saveDefaultHeader} storageError={storageError}/> : undefined}
           questions={parts[0].questions}
           type={parts[0].type}
           title={parts[0].title}
@@ -804,6 +805,7 @@ export default function QbBuilder({
             >
               <Shuffle size={15} /> এলোমেলো
             </button>
+            {!purchased && s.header.enabled && <button type="button" onClick={()=>update(withDefaultHeader(s,true))} className="qm-action-link">ডিফল্ট হেডারে ফিরুন</button>}
             {!purchased && !s.header.enabled && <button type="button" onClick={()=>requestHeaderEdit(v=>v+1)} className="rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-900">ডিফল্ট হেডার এডিট করুন</button>}
             {s.seed > 0 && (
               <button
@@ -814,7 +816,6 @@ export default function QbBuilder({
               </button>
             )}
           </div>
-          {!purchased && <DefaultHeaderEditor settings={s} items={data} editRequest={headerEditRequest} update={update} onSave={saveDefaultHeader} storageError={storageError}/>}
           {edit && (
             <section
               data-noprint

@@ -16,7 +16,7 @@ export async function callDeepSeekJson(
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
     console.error("DEEPSEEK_API_KEY is missing");
-    return { ok: false, error: "সার্ভারে এআই কনফিগারেশন নেই।", status: 500 };
+    return { ok: false, error: "সার্ভারে সফটওয়্যার কনফিগারেশন নেই।", status: 500 };
   }
 
   try {
@@ -47,14 +47,14 @@ export async function callDeepSeekJson(
     if (!response.ok) {
       return { 
         ok: false, 
-        error: data.error?.message || "DeepSeek এআই সার্ভারে সমস্যা হয়েছে।", 
+        error: data.error?.message || "DeepSeek সফটওয়্যার সার্ভারে সমস্যা হয়েছে।",
         status: response.status 
       };
     }
 
     const content = data.choices?.[0]?.message?.content;
     if (!content || typeof content !== "string") {
-      return { ok: false, error: "এআই কোনো উত্তর দেয়নি।", status: 502 };
+      return { ok: false, error: "সফটওয়্যার কোনো উত্তর দেয়নি।", status: 502 };
     }
 
     const cleaned = content
@@ -66,7 +66,7 @@ export async function callDeepSeekJson(
       return { ok: true, data: JSON.parse(cleaned) };
     } catch (parseError) {
       console.error("JSON Parse Error:", content);
-      return { ok: false, error: "এআই ভুল ফরম্যাটে উত্তর দিয়েছে।", status: 502 };
+      return { ok: false, error: "সফটওয়্যার ভুল ফরম্যাটে উত্তর দিয়েছে।", status: 502 };
     }
 
   } catch (error) {
@@ -86,7 +86,7 @@ export async function callDeepSeekText(
 ): Promise<DeepSeekTextResult> {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
-    return { ok: false, error: "সার্ভারে এআই কনফিগারেশন নেই।", status: 500 };
+    return { ok: false, error: "সার্ভারে সফটওয়্যার কনফিগারেশন নেই।", status: 500 };
   }
 
   try {
@@ -120,7 +120,7 @@ export async function callDeepSeekText(
 
     const content = data.choices?.[0]?.message?.content;
     if (!content || typeof content !== "string") {
-      return { ok: false, error: "এআই কোনো উত্তর দেয়নি।", status: 502 };
+      return { ok: false, error: "সফটওয়্যার কোনো উত্তর দেয়নি।", status: 502 };
     }
 
     return { ok: true, data: content };

@@ -209,8 +209,8 @@ test("paper header renders only on first page while remaining measurable", () =>
     ),
     "utf8",
   );
-  assert.match(source, /\{page === 0 && header\}/);
-  assert.match(source, /data-measure-header>\{header\}/);
+  assert.match(source, /\{page === 0 && header\(true\)\}/);
+  assert.match(source, /data-measure-header>\{header\(\)\}/);
 });
 
 test("Kalpurush is the new paper default while explicit saved font choices survive serialization", () => {

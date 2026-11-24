@@ -1,4 +1,5 @@
 "use client";
+import { writtenFlowBlocks, type WrittenFlow } from "@/lib/written-flow";
 import { autoModelQuestionMarks, autoModelPartMarks } from "@/lib/auto-model-paper";
 import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
@@ -41,6 +42,7 @@ export type PreviewQuestion = {
   q: PaperItem;
   opts: [string, string][];
   ci: number;
+  writtenFlow?: WrittenFlow;
 };
 export type PreviewSection = {
   type: string;
@@ -67,6 +69,7 @@ export default function PaperPreview({
   onQuestionAction,
   previewScale = 1,
   defaultHeaderValues,
+  defaultHeaderEditor,
   mode = "questions",
   sections: originalSections,
   auxiliaryOnly = false,
@@ -88,11 +91,18 @@ export default function PaperPreview({
   title: string;
   previewScale?: number;
   defaultHeaderValues?: DefaultHeaderValues;
+  /** Only the visible primary paper receives controls; measurement stays static. */
+  defaultHeaderEditor?: React.ReactNode;
   mode?: "questions" | "answers" | "omr";
 }) {
-  const expand = (list:PreviewQuestion[]) => withEnglishPartHeadings(list).flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
-  const questions = useMemo(()=>expand(originalQuestions),[originalQuestions]);
-  const sections = useMemo(()=>originalSections?.map(section=>({...section,questions:expand(section.questions)})),[originalSections]);
+  const expand = (list: PreviewQuestion[], kind: string, startNumber = 0) => writtenFlowBlocks(
+    withEnglishPartHeadings(list).flatMap(v => englishFlowBlocks(v.q).map(q => ({...v, q}))),
+    kind,
+    mode === "questions" && s.cfg.format === "q",
+    startNumber,
+  );
+  const questions = useMemo(() => expand(originalQuestions, type), [originalQuestions, type, mode, s.cfg.format]);
+  const sections = useMemo(() => originalSections?.map(section => ({...section, questions: expand(section.questions, section.type, section.startNumber)})), [originalSections, mode, s.cfg.format]);
   const [flowPages, setFlowPages] = useState<FlowSegment[][]>([]);
   const [pages, setPages] = useState<number[][][]>([]);
   const [oversized, setOversized] = useState(false);
@@ -109,12 +119,12 @@ export default function PaperPreview({
           ? s.cfg.cols
           : s.cfg.cqColumns;
   const numberToAnswer = Math.min(
-    questions.length,
+    originalQuestions.length,
     (type === "MCQ"
       ? s.cfg.mcqAnswer
       : type === "CQ"
         ? s.cfg.cqAnswer
-        : s.cfg.shortAnswer) || questions.length,
+        : s.cfg.shortAnswer) || originalQuestions.length,
   );
   const legacyHeader = (
     <div className="paper-heading text-center">
@@ -160,15 +170,15 @@ export default function PaperPreview({
       )}
       {mode === "questions" && !sections && !questions.some(v=>v.q.englishGroup) && (
         <p className="mb-3 text-right text-[0.85em]">
-          {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
+          {bn(originalQuestions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
         </p>
       )}
     </div>
   );
   const referenceEnglish = originalQuestions.some(v=>v.q.englishGroup?.referenceModel);
   const resolvedDefaultHeader = defaultHeaderValues??resolveDefaultHeader(s,(originalSections?.flatMap(part=>part.questions)??originalQuestions).map(v=>v.q));
-  const paperHeader = usesDefaultHeader(s) ? (
-    <div className="paper-heading"><DefaultHeaderPreview values={resolvedDefaultHeader}/></div>
+  const paperHeader = (editable: boolean) => usesDefaultHeader(s) ? (
+    <div className="paper-heading">{editable && !readOnly && mode === "questions" && defaultHeaderEditor ? defaultHeaderEditor : <DefaultHeaderPreview values={resolvedDefaultHeader}/>}</div>
   ) : s.header.enabled ? (
     <div className="paper-heading">
       <HeaderPreview
@@ -209,14 +219,14 @@ export default function PaperPreview({
       )}
       {mode === "questions" && !sections && !questions.some(v=>v.q.englishGroup) && (
         <p className="mb-3 text-right text-[0.85em]">
-          {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
+          {bn(originalQuestions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
         </p>
       )}
     </div>
   ) : (
     legacyHeader
   );
-  const header = (
+  const header = (editable = false) => (
     <>
       {s.show.logo && safeLogo(s.info.logo) && (
         <img
@@ -233,12 +243,14 @@ export default function PaperPreview({
       {s.show.instructor && (
         <p className="mb-2 text-center">{s.info.instructor}</p>
       )}
-      {paperHeader}
+      {paperHeader(editable)}
     </>
   );
-  function question(v: PreviewQuestion, index: number, typeOverride = type) {
+  function question(v: PreviewQuestion, index: number, typeOverride = type, startsColumn = false) {
     const type = typeOverride;
-    const { q, opts, ci } = v;
+    const { q, opts, ci, writtenFlow: flow } = v;
+    const first = !flow || flow.first, last = !flow || flow.last;
+    if (flow) index = flow.questionIndex;
     if (q.englishGroup) return <EnglishGroup q={q} s={s} questions={mode === "questions" && s.cfg.format !== "ans"} answers={mode === "answers" || s.cfg.format === "qa" || s.cfg.format === "ans" || s.cfg.format === "sug"}/>;
     if (mode !== "questions")
       return (
@@ -270,10 +282,13 @@ export default function PaperPreview({
     const marked = s.cfg.format === "qa" || s.cfg.format === "sug";
     return (
       <div
+        data-question-id={q.id}
+        data-question-fragment={flow?.partIndex ?? 0}
+        data-question-number={index + 1}
         className={`paper-question ${s.show.duplicates && duplicate.has(q.id) ? "paper-duplicate" : ""}`}
-        style={{ paddingBottom: "0.7em", breakInside: "avoid" }}
+        style={{ paddingBottom: last ? "0.7em" : "0.2em", breakInside: "avoid" }}
       >
-        {!readOnly && onQuestionAction && (
+        {first && !readOnly && onQuestionAction && (
           <div
             data-noprint
             className="mb-2 flex gap-2 rounded bg-slate-100 p-1 text-xs text-slate-700"
@@ -296,10 +311,10 @@ export default function PaperPreview({
           </div>
         )}
         <div className="flex items-start gap-1.5">
-          <b className="shrink-0">{bn(String(index + 1).padStart(2, "0"))}।</b>
+          <b className="shrink-0" style={{visibility: first || startsColumn ? "visible" : "hidden"}} aria-label={!first && startsColumn ? `প্রশ্ন ${bn(index + 1)} চলমান` : undefined}>{bn(String(index + 1).padStart(2, "0"))}।</b>
           <div className="min-w-0 flex-1">
-            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{bn(autoModelQuestionMarks(s,type,q.id))}]</span>}
-            <span>
+            {first && s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{bn(autoModelQuestionMarks(s,type,q.id))}]</span>}
+            {first && <span>
               {s.show.important && attachment?.important && (
                 <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
               )}
@@ -312,13 +327,13 @@ export default function PaperPreview({
                   [{label}]
                 </span>
               ))}
-            </span>
-            {s.show.marks && !s.autoModel && (
+            </span>}
+            {first && s.show.marks && !s.autoModel && (
               <span className="float-right">
                 [{type === "CQ" ? "১০" : "১"}]
               </span>
             )}
-            {image && (
+            {first && image && (
               <div
                 className={`paper-image-wrap group ${s.cfg.imagePosition === "center" ? "text-center" : "text-left"}`}
               >
@@ -402,9 +417,9 @@ export default function PaperPreview({
               </div>
             )}
             {type === "CQ" && q.subQuestions && (
-              <div className="mt-2 space-y-1">
+              <div className={first ? "mt-2 space-y-1" : "space-y-1"}>
                 {Object.entries(q.subQuestions).filter(([,text])=>!!text?.trim()).map(([key, text], i) => (
-                  <p key={key}>
+                  (!flow || flow.partIndex < 0 || flow.partIndex === i) && <p key={key} data-cq-part={key}>
                     <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
                     <PaperMathText text={text} />
                     <span className="float-right">{bn(s.autoModel ? autoModelPartMarks(s,i) : i+1)}</span>
@@ -412,7 +427,7 @@ export default function PaperPreview({
                 ))}
               </div>
             )}
-            {marked && type !== "MCQ" && (
+            {last && marked && type !== "MCQ" && (
               <div className="mt-2">
                 <b>উত্তর: </b>
                 <PaperAnswer
@@ -422,9 +437,9 @@ export default function PaperPreview({
                 />
               </div>
             )}
-            {s.show.tags && (
+            {last && s.show.tags && (
               <p className="mt-1 text-[0.72em]">
-                {[q.topic, q.source].filter(Boolean).join(" · ")}
+                {[q.topic, q.source?.replace(/এআই|\bAI\b/g, "সফটওয়্যার")].filter(Boolean).join(" · ")}
               </p>
             )}
           </div>
@@ -433,12 +448,13 @@ export default function PaperPreview({
     );
   }
   function sectionHeading(section: PreviewSection, id?: string) {
+    const questionCount = section.questions.filter(v => !v.writtenFlow || v.writtenFlow.first).length;
     const answer =
       (section.type === "MCQ"
         ? s.cfg.mcqAnswer
         : section.type === "CQ"
           ? s.cfg.cqAnswer
-          : s.cfg.shortAnswer) || section.questions.length;
+          : s.cfg.shortAnswer) || questionCount;
     return (
       <div id={id} style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
         <h3 className="font-bold underline" style={{ whiteSpace: "pre-line" }}>
@@ -449,7 +465,7 @@ export default function PaperPreview({
           className="text-right"
           style={{ fontSize: "0.85em", marginBottom: 0 }}
         >
-          {section.instruction !== undefined ? section.instruction : <>{bn(section.questions.length)}টির মধ্যে {bn(Math.min(answer, section.questions.length))}টির উত্তর দাও।</>}
+          {section.instruction !== undefined ? section.instruction : <>{bn(questionCount)}টির মধ্যে {bn(Math.min(answer, questionCount))}টির উত্তর দাও।</>}
         </p>
       </div>
     );
@@ -612,7 +628,7 @@ export default function PaperPreview({
           pointerEvents: "none",
         }}
       >
-        <div data-measure-header>{header}</div>
+        <div data-measure-header>{header()}</div>
         {s.show.brandFooter && (
           <div
             data-measure-footer
@@ -627,18 +643,18 @@ export default function PaperPreview({
               <div
                 data-flow-heading
                 style={{
-                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)} - 11px)`,
+                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)})`,
                 }}
               >
                 {sectionHeading(section)}
               </div>
               <div
                 style={{
-                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)} - 11px)`,
+                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)})`,
                 }}
               >
                 {section.questions.map((v, i) => (
-                  <div data-measure-question key={v.q.id}>
+                  <div data-measure-question key={`${v.q.id}:${i}`}>
                     {question(v, i + (section.startNumber ?? 0), section.type)}
                   </div>
                 ))}
@@ -649,11 +665,11 @@ export default function PaperPreview({
           <>
             <div
               style={{
-                width: `calc((100% - ${(cols - 1) * s.cfg.columnGap}px) / ${cols} - 11px)`,
+                width: `calc((100% - ${(cols - 1) * s.cfg.columnGap}px) / ${cols})`,
               }}
             >
               {questions.map((v, i) => (
-                <div data-measure-question key={v.q.id}>
+                <div data-measure-question key={`${v.q.id}:${i}`}>
                   {question(v, i)}
                 </div>
               ))}
@@ -692,7 +708,7 @@ export default function PaperPreview({
                 </div>
               )}
               <div className="relative z-[1]">
-                {page === 0 && header}
+                {page === 0 && header(true)}
                 <div
                   className="paper-flow-body"
                   style={{
@@ -712,6 +728,7 @@ export default function PaperPreview({
                     return (
                       <div
                         data-paper-section={section.type}
+                        className="paper-column"
                         data-flow-lane={segment.lane}
                         key={segmentIndex}
                         style={{
@@ -720,13 +737,9 @@ export default function PaperPreview({
                           left: `calc(${segment.lane} * (100% + ${s.cfg.columnGap}px) / ${segment.laneCount})`,
                           width: `calc((100% - ${(segment.laneCount - 1) * s.cfg.columnGap}px) / ${segment.laneCount})`,
                           boxSizing: "border-box",
-                          borderLeft:
-                            s.show.divider && segment.lane > 0
-                              ? "1px solid #888"
-                              : undefined,
-                          paddingLeft: segment.lane > 0 ? 10 : 0,
                         }}
                       >
+                        {s.show.divider && segment.lane > 0 && <span aria-hidden="true" className="paper-column-divider" style={{left: -s.cfg.columnGap / 2}} />}
                         {segment.heading &&
                           sectionHeading(
                             section,
@@ -738,8 +751,8 @@ export default function PaperPreview({
                               : undefined,
                           )}
                         {segment.columns.flat().filter(i => !!section.questions[i]).map((i) => (
-                          <div key={section.questions[i].q.id}>
-                            {question(section.questions[i], i + (section.startNumber ?? 0), section.type)}
+                          <div key={`${section.questions[i].q.id}:${i}`}>
+                            {question(section.questions[i], i + (section.startNumber ?? 0), section.type, segmentIndex === 0 || segments[segmentIndex - 1].lane !== segment.lane)}
                           </div>
                         ))}
                       </div>
@@ -776,7 +789,7 @@ export default function PaperPreview({
                 </div>
               )}
               <div className="relative z-[1]">
-                {page === 0 && header}
+                {page === 0 && header(true)}
                 <div
                   style={{
                     display: "grid",
@@ -785,19 +798,11 @@ export default function PaperPreview({
                   }}
                 >
                   {columns.map((indexes, col) => (
-                    <div
-                      key={col}
-                      style={{
-                        borderLeft:
-                          s.show.divider && col > 0
-                            ? "1px solid #888"
-                            : undefined,
-                        paddingLeft: col > 0 ? 10 : 0,
-                      }}
-                    >
-                      {indexes.filter(i => !!questions[i]).map((i) => (
-                        <div key={questions[i].q.id}>
-                          {question(questions[i], i)}
+                    <div key={col} className="paper-column" data-paper-column={col}>
+                      {s.show.divider && col > 0 && <span aria-hidden="true" className="paper-column-divider" style={{left: -s.cfg.columnGap / 2}} />}
+                      {indexes.filter(i => !!questions[i]).map((i, position) => (
+                        <div key={`${questions[i].q.id}:${i}`}>
+                          {question(questions[i], i, type, position === 0)}
                         </div>
                       ))}
                     </div>
@@ -819,7 +824,7 @@ export default function PaperPreview({
         ))}
       {sections &&
         (s.show.omr || s.cfg.ansKey || s.cfg.format === "ans") &&
-        sections.map((section, index) => (
+        originalSections?.map((section, index) => (
           <PaperPreview
             key={index}
             s={s}
@@ -837,7 +842,7 @@ export default function PaperPreview({
       {!sections && mode === "questions" && s.show.omr && type === "MCQ" && (
         <PaperPreview
           s={s}
-          questions={questions}
+          questions={originalQuestions}
           type={type}
           setName={setName}
           duplicate={duplicate}
@@ -853,7 +858,7 @@ export default function PaperPreview({
         (s.cfg.ansKey || s.cfg.format === "ans") && (
           <PaperPreview
             s={s}
-            questions={questions}
+            questions={originalQuestions}
             type={type}
             setName={setName}
             duplicate={duplicate}
