@@ -19,7 +19,7 @@ Retained: Chemistry's 12-chapter policy/IDs and chapter quotas, Physics's 14-cha
 
 ## Biology current source preparation
 
-All14 chapters now have **4,480/4,480 answered author drafts** (200MCQ/50CQ/70SQ each), with45 relevant SVGs.129focused Biology tests and157AutoModel/English tests pass; TypeScript passes. Biology registration/assets/scoped release are prepared, but import/approval and latest source deployment remain unverified until separate production receipts. Independent teacher/content/semantic certification remains false; unknown official marking schemes still require teacher input.
+All14 chapters now have **4,480/4,480 answered author drafts** (200MCQ/50CQ/70SQ each), with45 relevant SVGs.130focused Biology tests and157AutoModel/English tests pass; TypeScript passes. Biology registration/assets/scoped release are prepared, but import/approval and latest source deployment remain unverified until separate production receipts. Independent teacher/content/semantic certification remains false; unknown official marking schemes still require teacher input.
 
 Deployment receipt/status is a separate artifact. This source document does not claim deployment success or live paid-AI/browser testing.
 

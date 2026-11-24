@@ -69,3 +69,8 @@ test('read-only production probe checks real canonical fixtures, stock models an
  const db={question:{findMany:async({where})=>{calls++;return where.subject==='জীববিজ্ঞান'?plan.records.filter(q=>!where.topic||where.topic.in.includes(q.topic)).map(q=>({...q,approved:true})):[]}}};
  try{const before=await check(db,'inventory'),after=await check(db,'verify',before.protectedDigest);assert.equal(after.approvedCanonical,4480);assert.equal(after.databaseMutation,false);assert.equal(after.providerInvoked,false);assert.equal(after.modelChecks.length,2);assert.ok(after.modelChecks.every(m=>m.aiShortfall===0));assert.equal(calls,10);await assert.rejects(check(db,'verify','changed'),/Protected/);}finally{release.verifyLiveAssets=old;}
 });
+test('one-off Biology runner rejects preview context and default build never invokes it',()=>{
+ const fs=require('node:fs'),{spawnSync}=require('node:child_process');
+ const r=spawnSync(process.execPath,['scripts/publish-biology-owner-release.cjs',release.ACK],{env:{...process.env,VERCEL_ENV:'preview'},encoding:'utf8'});assert.notEqual(r.status,0);assert.match(r.stderr,/PIPELINE_STOPPED/);
+ assert.doesNotMatch(JSON.parse(fs.readFileSync('package.json')).scripts.build,/publish-biology|release-ssc/);
+});

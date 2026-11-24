@@ -3,7 +3,7 @@
   "implementationStatus": "SOURCE_TESTED_NOT_DEPLOYED",
   "autoModelEnglishFocusedTests": 157,
   "autoModelEnglishFailed": 0,
-  "biologyFocusedTests": 129,
+  "biologyFocusedTests": 130,
   "biologyFailed": 0,
   "typecheck": "PASS",
   "fullRepositorySuiteClaimed": false,
@@ -15,7 +15,7 @@
   "biologyApprovalExecuted": false,
   "files": {
     "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "9df61a5f61430e4e93039dab78834ef5e925a7a3dd40d8b30422735a3f3ba541",
-    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "bc93809f251a77ec6a65d701d335a32a79fad12c2484b1273168c42cd6781bb2"
+    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "5159d6b21bd80c7b3af7e4a8fefb956d207a39aadb8f8805451c9635d00074d6"
   },
   "sectionTopicFilterBypassRegression": "PASS: selected section topic scope is cleared only for book-wide guard; selected shortage retained"
 }
