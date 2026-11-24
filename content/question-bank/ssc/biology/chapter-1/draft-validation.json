@@ -1,0 +1,54 @@
+{
+  "chapter": 1,
+  "topic": "১ম অধ্যায়: জীবন পাঠ",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "mcq.json": {
+      "bytes": 28705,
+      "sha256": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca"
+    },
+    "cq.json": {
+      "bytes": 19425,
+      "sha256": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c"
+    },
+    "sq.json": {
+      "bytes": 9103,
+      "sha256": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb"
+    },
+    "chapter-work-mcq.json": {
+      "bytes": 146167,
+      "sha256": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710"
+    },
+    "chapter-work-cq.json": {
+      "bytes": 147878,
+      "sha256": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac"
+    },
+    "chapter-work-sq.json": {
+      "bytes": 52067,
+      "sha256": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150"
+    }
+  }
+}

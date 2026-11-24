@@ -1,0 +1,878 @@
+{
+  "date": "2026-11-20",
+  "draftItems": 3840,
+  "files": {
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": {
+      "bytes": 146167,
+      "sha256": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710"
+    },
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": {
+      "bytes": 147878,
+      "sha256": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac"
+    },
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": {
+      "bytes": 52067,
+      "sha256": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150"
+    },
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": {
+      "bytes": 198911,
+      "sha256": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e"
+    },
+    "content/question-bank/ssc/biology/chapter-1/questions.md": {
+      "bytes": 300061,
+      "sha256": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22"
+    },
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": {
+      "bytes": 1383,
+      "sha256": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6"
+    },
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": {
+      "bytes": 154554,
+      "sha256": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4"
+    },
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": {
+      "bytes": 55027,
+      "sha256": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea"
+    },
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": {
+      "bytes": 153392,
+      "sha256": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f"
+    },
+    "content/question-bank/ssc/biology/chapter-2/source-ledger.json": {
+      "bytes": 189088,
+      "sha256": "1e4f438a3d808313984ec2768d2e7aaf1a3e113550b91391210babfdbd771a3b"
+    },
+    "content/question-bank/ssc/biology/chapter-2/questions.md": {
+      "bytes": 258967,
+      "sha256": "66db306b2c4789340f8e9d5a4d6c8bcb2478e4a3be6733b56b973dc00d4b729b"
+    },
+    "content/question-bank/ssc/biology/chapter-2/draft-validation.json": {
+      "bytes": 1003,
+      "sha256": "e177f6414c9cb32d8a8a4c7eb60558e0e85a71335d96509e8ff06d953402991f"
+    },
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": {
+      "bytes": 171801,
+      "sha256": "20af772f34f14cd19a9c996b0e81dc1f7b2620119a23f7018e0ad2ca9296623e"
+    },
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": {
+      "bytes": 57360,
+      "sha256": "b4425f241fec444f5024a8979c12ceaba08362ce2a0997b292a93e7876ee19cc"
+    },
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": {
+      "bytes": 157434,
+      "sha256": "717de995fad7ed5f01151b7f9971e7df7da32029180406bc65fe908fa57689ce"
+    },
+    "content/question-bank/ssc/biology/chapter-3/source-ledger.json": {
+      "bytes": 209672,
+      "sha256": "ae33cc99ea6e380bb213086c7af2062f1da6b441a7d3c67ae6b95aa5d885d7a0"
+    },
+    "content/question-bank/ssc/biology/chapter-3/questions.md": {
+      "bytes": 286182,
+      "sha256": "72aa3d7659a2b00eb53871765551797a5e3a4ce09190852c590082e5a21c1b73"
+    },
+    "content/question-bank/ssc/biology/chapter-3/draft-validation.json": {
+      "bytes": 990,
+      "sha256": "586f77947b0971649115a438c08a8c7e9e2f89e3b042828c11bc82467c36bb88"
+    },
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": {
+      "bytes": 172806,
+      "sha256": "9d539eed6618761cb61c553d8562fabd773cbb8e00ee6f154322fcb6bab18960"
+    },
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": {
+      "bytes": 59177,
+      "sha256": "da3f331139c88863465e3f4083b80e49b03fe5e2f04ddb7e5a2630db09851202"
+    },
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": {
+      "bytes": 166128,
+      "sha256": "24b07838b0ee9ea78964ac036ce8a664a357629735d8518dca7d7dc2d3de5ae6"
+    },
+    "content/question-bank/ssc/biology/chapter-4/source-ledger.json": {
+      "bytes": 246748,
+      "sha256": "4961709e54e3d64692d42bfa82f9643f0cc42523b0bf903d0e85e0520baabab6"
+    },
+    "content/question-bank/ssc/biology/chapter-4/questions.md": {
+      "bytes": 297796,
+      "sha256": "61fb0ad785972b5ff81b6cdcce284d2fbf267e4db8635f657cdddb5f252bde92"
+    },
+    "content/question-bank/ssc/biology/chapter-4/draft-validation.json": {
+      "bytes": 995,
+      "sha256": "968e60c84885335a48542ba9e270943e25fbc3b2cadf0a3ea76e2d735127c3ba"
+    },
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": {
+      "bytes": 169663,
+      "sha256": "8267f25598c4edc48eba3d8d337b8e24571d449dad055c017ee9e3767bf8472f"
+    },
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": {
+      "bytes": 59877,
+      "sha256": "a20da8e8c18d19615ba5f0c63ac98bc44839f658430853a15f29e67c06b984c2"
+    },
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": {
+      "bytes": 162477,
+      "sha256": "eeb6315e91b39c0644f701590d8b2657874a42a1123a1debdf07fa6a655d6aa5"
+    },
+    "content/question-bank/ssc/biology/chapter-5/source-ledger.json": {
+      "bytes": 229909,
+      "sha256": "044c444a304cb3b9cf1d8bcbc7e535cd4e01ea5ea611904cd6fb37ac0178a88a"
+    },
+    "content/question-bank/ssc/biology/chapter-5/questions.md": {
+      "bytes": 291703,
+      "sha256": "91f647e9d44e7c860ddf955f5faab5a356ae0b6135bb252cdb388d7066593bdc"
+    },
+    "content/question-bank/ssc/biology/chapter-5/draft-validation.json": {
+      "bytes": 1023,
+      "sha256": "69d4eb9ea81a63616bedaeaf2723b2c231b8c4d3f911f8a36bf32f7615485495"
+    },
+    "content/question-bank/ssc/biology/chapter-6/rebuild-mcq.json": {
+      "bytes": 152894,
+      "sha256": "fd819e80853c70e074c8a8626e4e5ab9c0c5be831340ba4208a672e2c99f5db3"
+    },
+    "content/question-bank/ssc/biology/chapter-6/rebuild-cq.json": {
+      "bytes": 152635,
+      "sha256": "7572c838e6cc08152fdd24428afcf92567731ddf378f5ab945e88a93c392d251"
+    },
+    "content/question-bank/ssc/biology/chapter-6/rebuild-sq.json": {
+      "bytes": 51246,
+      "sha256": "120fbfde3b7622033f63491ea241ef15fff485a4c68f05cd7804980aacf39457"
+    },
+    "content/question-bank/ssc/biology/chapter-6/source-ledger.json": {
+      "bytes": 232766,
+      "sha256": "54f1fb2a0a0eb0794a60a1fa6488f951202aa3ab69ec64dae230ff32a0a808f2"
+    },
+    "content/question-bank/ssc/biology/chapter-6/questions.md": {
+      "bytes": 254697,
+      "sha256": "1021d421c7e5c13dc690a8b311945816c08b50b288691964193307e681799393"
+    },
+    "content/question-bank/ssc/biology/chapter-6/draft-validation.json": {
+      "bytes": 996,
+      "sha256": "b06158deccef3e1ea5e59e5ec6f1b420ae92d60db0561a32379f4b3f7081fd7c"
+    },
+    "content/question-bank/ssc/biology/chapter-7/rebuild-mcq.json": {
+      "bytes": 158056,
+      "sha256": "f9d930d3274d4e2843972ff7860272abe909ee013286b85f9de63b2db812d13f"
+    },
+    "content/question-bank/ssc/biology/chapter-7/rebuild-cq.json": {
+      "bytes": 125862,
+      "sha256": "cae98f5095ddbff63a74ac79c32d56f90684d002e3ab9ac8c7dfd6bd8c4d86f3"
+    },
+    "content/question-bank/ssc/biology/chapter-7/rebuild-sq.json": {
+      "bytes": 47831,
+      "sha256": "650aed0d9aa3fece43efc27b2ea860ebf03d0c7d9a1a372ca850ba6ff2eb333f"
+    },
+    "content/question-bank/ssc/biology/chapter-7/source-ledger.json": {
+      "bytes": 265755,
+      "sha256": "e5cbc2cb67cc7e97b2a43f4cee9cdbd1627cb7c738005e89c4ac4276cf1beff9"
+    },
+    "content/question-bank/ssc/biology/chapter-7/questions.md": {
+      "bytes": 230188,
+      "sha256": "eb2e14fd099876ed4d900fe97ccbcd1cd756af44e6dafe4996ad513f48644879"
+    },
+    "content/question-bank/ssc/biology/chapter-7/draft-validation.json": {
+      "bytes": 1005,
+      "sha256": "f217b47a8bec4cf3b9ab26feb1b65b5eedec4a72f7fd713fbe3c4ef0d6b24630"
+    },
+    "content/question-bank/ssc/biology/chapter-8/rebuild-mcq.json": {
+      "bytes": 158069,
+      "sha256": "01c7d80914e38dd89d14599ac696d66a1176d4b010e0b8d91d8e05f7c268c20e"
+    },
+    "content/question-bank/ssc/biology/chapter-8/rebuild-cq.json": {
+      "bytes": 140143,
+      "sha256": "092146aca6a9a5ae083ac735bb5cfb297a0f7faa1f065028ffa359f3fb6d310d"
+    },
+    "content/question-bank/ssc/biology/chapter-8/rebuild-sq.json": {
+      "bytes": 52183,
+      "sha256": "fa5f91e81b4a6fbf361fc44b1effbc04b2fcbb64380b1837788526d791971cb2"
+    },
+    "content/question-bank/ssc/biology/chapter-8/source-ledger.json": {
+      "bytes": 257033,
+      "sha256": "6129c440d7793639c60c3714f97dbccd74d842523195bcf6cff95dbcd0007f30"
+    },
+    "content/question-bank/ssc/biology/chapter-8/questions.md": {
+      "bytes": 250315,
+      "sha256": "1d5f12103b05125e9ab755a4024a4b97fe36cbf0ad4bfab8d025eeb36a9cbf51"
+    },
+    "content/question-bank/ssc/biology/chapter-8/draft-validation.json": {
+      "bytes": 1002,
+      "sha256": "f10a4e843bb3973f5fb9129e5a3defe59e3cab8e81c2b1b75dbe73830154e68a"
+    },
+    "content/question-bank/ssc/biology/chapter-9/rebuild-mcq.json": {
+      "bytes": 160047,
+      "sha256": "22ba05ee52249e650bcc849e67f406325ac0695ffca968166b9bbc3a7237ae82"
+    },
+    "content/question-bank/ssc/biology/chapter-9/rebuild-cq.json": {
+      "bytes": 138567,
+      "sha256": "f08582fcbcc99cfe5dd137c35ebe27c6adf2162d5525bbef54d21ac7612aff35"
+    },
+    "content/question-bank/ssc/biology/chapter-9/rebuild-sq.json": {
+      "bytes": 53188,
+      "sha256": "46ba2cc22f578044bbeaa87a08eeb088550acbfd0ae615db6fc8f83f316858bc"
+    },
+    "content/question-bank/ssc/biology/chapter-9/source-ledger.json": {
+      "bytes": 254216,
+      "sha256": "7769c29a195829fba18eb813acfd99bb6f2e26a0bbf46e4ec5536ed256281077"
+    },
+    "content/question-bank/ssc/biology/chapter-9/questions.md": {
+      "bytes": 249992,
+      "sha256": "48a0a5f1eb2319d5cea0b4fee17720a673b7a0aaef2c143d3f37bc4cb5f32eb6"
+    },
+    "content/question-bank/ssc/biology/chapter-9/draft-validation.json": {
+      "bytes": 1010,
+      "sha256": "6dc06e716f8f6a5508bc0740a84671f5264cc12ead222259059275b87c01ff5a"
+    },
+    "content/question-bank/ssc/biology/chapter-10/rebuild-mcq.json": {
+      "bytes": 166726,
+      "sha256": "8cb8450750ec45273166699ef2f7b71329b00234024168b8f7a9a70aeccbfbe9"
+    },
+    "content/question-bank/ssc/biology/chapter-10/rebuild-cq.json": {
+      "bytes": 137436,
+      "sha256": "771105413f15b5f05e70dd5773ba9c5129680a6b13bc89031142bb6c29b45f43"
+    },
+    "content/question-bank/ssc/biology/chapter-10/rebuild-sq.json": {
+      "bytes": 53959,
+      "sha256": "d2e63d59a33d46f3cc5c900f852b7373b4a4aa1d1d052af58361f87bb4784800"
+    },
+    "content/question-bank/ssc/biology/chapter-10/source-ledger.json": {
+      "bytes": 254489,
+      "sha256": "5833af2460a09665f2fb074ded3759874a897d162b916d3f831526507f0a168f"
+    },
+    "content/question-bank/ssc/biology/chapter-10/questions.md": {
+      "bytes": 258427,
+      "sha256": "92e4758ba8580fda384d066be9256c1d9f1e4027e02ae2363ed996f9569543ee"
+    },
+    "content/question-bank/ssc/biology/chapter-10/draft-validation.json": {
+      "bytes": 984,
+      "sha256": "30663e781a96bbe59d593d5e11aa9a98695672956ea9cb3f68ed1e252b356ea6"
+    },
+    "content/question-bank/ssc/biology/chapter-11/rebuild-mcq.json": {
+      "bytes": 159642,
+      "sha256": "d31557f1a22cb07cd70a02cb8f19223668bd0b62af011c1fd32b589c52bf80bd"
+    },
+    "content/question-bank/ssc/biology/chapter-11/rebuild-cq.json": {
+      "bytes": 138907,
+      "sha256": "105a4a53deb6e963ac81395a63255416676c4b42c86868e8b626d09bd32ac578"
+    },
+    "content/question-bank/ssc/biology/chapter-11/rebuild-sq.json": {
+      "bytes": 59445,
+      "sha256": "c7cd788bb5dd7f18c9d51c2c33b388fbbbc9589fe44423614e7441cdd6365ece"
+    },
+    "content/question-bank/ssc/biology/chapter-11/source-ledger.json": {
+      "bytes": 231677,
+      "sha256": "1532d620bc3112813d27a493d8517e1756e75f8742fe619f9648f091a5d4652c"
+    },
+    "content/question-bank/ssc/biology/chapter-11/questions.md": {
+      "bytes": 255877,
+      "sha256": "b6ba619636c37775c5a17b97361cde6e852703d7cc58bee96ed9fe35b6fe819e"
+    },
+    "content/question-bank/ssc/biology/chapter-11/draft-validation.json": {
+      "bytes": 997,
+      "sha256": "114521fd8b9c4f133dda661be6fa87bde4b6c949a0631b2dd43a1e73af46e022"
+    },
+    "content/question-bank/ssc/biology/chapter-12/rebuild-mcq.json": {
+      "bytes": 158183,
+      "sha256": "b571398fc498cd6979f4a039bd999f7d04613c2883688156143b121c2a6deabc"
+    },
+    "content/question-bank/ssc/biology/chapter-12/rebuild-cq.json": {
+      "bytes": 137402,
+      "sha256": "2a6bc5f8782a92174cb0a01a8449b374ddfaa430853876335a8656f17e69aacb"
+    },
+    "content/question-bank/ssc/biology/chapter-12/rebuild-sq.json": {
+      "bytes": 56830,
+      "sha256": "ab5aac8062e7484a4c45e8168498c95397053cd1b6d8caa56da5c5db7538ed0f"
+    },
+    "content/question-bank/ssc/biology/chapter-12/source-ledger.json": {
+      "bytes": 226637,
+      "sha256": "9c0c2b657a6c34cd69f0e157166aed5f55a2adcac04d5c5433acec9587b1069c"
+    },
+    "content/question-bank/ssc/biology/chapter-12/questions.md": {
+      "bytes": 250512,
+      "sha256": "323e40ecf497a43c631ec970b8d15d2440ed699eccecbefe51b50bcd9d3c2909"
+    },
+    "content/question-bank/ssc/biology/chapter-12/draft-validation.json": {
+      "bytes": 1042,
+      "sha256": "60a5f3af076e811dae47339497f6a27bd7ca57e994047d743016a2a6cfc3d384"
+    },
+    "docs/question-bank/ssc-biology/progress.json": {
+      "bytes": 16425,
+      "sha256": "ffd1b8e4bc310a3d497079bafe0ffb7bee9d54aaa5bb8412f872b2869da59e5b"
+    },
+    "docs/question-bank/ssc-biology/batch-plan.json": {
+      "bytes": 1550,
+      "sha256": "336dd7fde6b7ba88c8559dfdb0fa49e02eeae66bfd45880b9b1224325567f1d6"
+    },
+    "docs/question-bank/ssc-biology/PROGRESS.md": {
+      "bytes": 1825,
+      "sha256": "738a9d5f6335b50634055baaa7f522e947b2ebbae0d73f02419d018ca6585804"
+    },
+    "docs/question-bank/ssc-biology/BATCH-PLAN.md": {
+      "bytes": 641,
+      "sha256": "3d4fa1269a2b786ebab7a48fb2f299ba464dbe73bcc47a923ab303bf94fe399b"
+    },
+    "docs/question-bank/ssc-biology/questions.html": {
+      "bytes": 7041370,
+      "sha256": "35cb47659f0fa64866b815bb776894e5e14ae12b50897c108789db167c0614dd"
+    },
+    "docs/question-bank/ssc-biology/chapter-1.html": {
+      "bytes": 580005,
+      "sha256": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae"
+    },
+    "docs/question-bank/ssc-biology/chapter-2.html": {
+      "bytes": 541246,
+      "sha256": "c7a10f24d123137c2070f6a7b2f2081eda3e822afdb05f2ae155f39584833aae"
+    },
+    "docs/question-bank/ssc-biology/chapter-3.html": {
+      "bytes": 579743,
+      "sha256": "cb72c69f86b9e55f613b1d90cae46b17553dddfbaa9c7203471fe203ac57c1c2"
+    },
+    "docs/question-bank/ssc-biology/chapter-4.html": {
+      "bytes": 633868,
+      "sha256": "cefe87f398ba27ee9afc8c4ba0422f45d65bd02bf14b222d0b665d66d3017da8"
+    },
+    "docs/question-bank/ssc-biology/chapter-5.html": {
+      "bytes": 621519,
+      "sha256": "e2255f2769cbb3ae50a26fe2806443bd64327491f96e9cada03d029d6fe3529f"
+    },
+    "docs/question-bank/ssc-biology/chapter-6.html": {
+      "bytes": 578990,
+      "sha256": "43ca78bb1a7b4d4683e64a0fe8ca8c7fe0c05c0393ab46e7155c1a07ee92921f"
+    },
+    "docs/question-bank/ssc-biology/chapter-7.html": {
+      "bytes": 586452,
+      "sha256": "162f1a32238d6664e62bd9aacd3d7e781b9771e7907698d69c8ca2f8c8fb23d4"
+    },
+    "docs/question-bank/ssc-biology/chapter-8.html": {
+      "bytes": 601724,
+      "sha256": "0f6f27e325822d4a9d94766b77b68696d3432257296944bd8eee053ce6c90ecb"
+    },
+    "docs/question-bank/ssc-biology/chapter-9.html": {
+      "bytes": 604747,
+      "sha256": "7668d3544962d502807a985a4adb1b64b296f24e7feac58f86cf66911d8e36ce"
+    },
+    "docs/question-bank/ssc-biology/chapter-10.html": {
+      "bytes": 610110,
+      "sha256": "0e3e8c951bf7f1c5e2902fcc921873f0a6fe5e370d2d764ac0de44fdac8d7fe4"
+    },
+    "docs/question-bank/ssc-biology/chapter-11.html": {
+      "bytes": 590055,
+      "sha256": "9b2279ab3152a3d49b39e6770a2b2ced52b118b6b600c2e68c85c7de9271b152"
+    },
+    "docs/question-bank/ssc-biology/chapter-12.html": {
+      "bytes": 584746,
+      "sha256": "ee42fa15d27a1dc1cc285de55afa2f6782d99d54d246c9a0a3509a7e3255119c"
+    },
+    "scripts/question-bank/build-ssc-biology-drafts.py": {
+      "bytes": 40471,
+      "sha256": "2ea10e2a764c35d14b94523bf990a6d6797aa62c782ab5fca2dfd5efda3a0b5b"
+    },
+    "scripts/question-bank/build-ssc-biology-ch1.py": {
+      "bytes": 43106,
+      "sha256": "1b88cee41d2f28f2e6730516864c5d01b991b7fba5b83871f81e8e71efa95ef2"
+    },
+    "scripts/question-bank/biology/chapter-1-completion-cq.txt": {
+      "bytes": 81438,
+      "sha256": "ebf8807461a04125d7b40cc22d6fcb53a5a028a6fbe857fad187359c7ea1bbf5"
+    },
+    "scripts/question-bank/biology/chapter-1-completion-mcq.txt": {
+      "bytes": 64685,
+      "sha256": "84e6ae4ceb3a340c2a7d3fc1c2879eb539726b005200ec177f407a738e7a457e"
+    },
+    "scripts/question-bank/biology/chapter-1-completion-sq.txt": {
+      "bytes": 25502,
+      "sha256": "3c2db2c787ef2169b449bd1fa4591b802908826520e699d2480746c32c2b33f5"
+    },
+    "scripts/question-bank/biology/chapter-1-cq.txt": {
+      "bytes": 25517,
+      "sha256": "2be372b3ca9f07ea4e742904915e14362641224dca7c484c1791cb38daf98a8a"
+    },
+    "scripts/question-bank/biology/chapter-1-mcq.txt": {
+      "bytes": 24510,
+      "sha256": "693627c142016e2e7c2442f5bdd8bc926ebfdc73c1e6c245e34616d633b80d1a"
+    },
+    "scripts/question-bank/biology/chapter-1-sq.txt": {
+      "bytes": 13041,
+      "sha256": "0944ff8160bef342243bb2e8983e8e00370dfb2cb57af21dac798dedf0857ac3"
+    },
+    "scripts/question-bank/biology/chapter-10-cq-b.txt": {
+      "bytes": 45061,
+      "sha256": "d58fba448f07949b53cdac7248221b516e6697d5084a07776358e5e8be55feb1"
+    },
+    "scripts/question-bank/biology/chapter-10-cq.txt": {
+      "bytes": 47002,
+      "sha256": "9f5f3be39a7e9568de3e52f6cc325d17531364e4a09d9b7cf6320cb7d87f8a65"
+    },
+    "scripts/question-bank/biology/chapter-10-mcq-b.txt": {
+      "bytes": 50597,
+      "sha256": "eebcf2dfc5bdb75c3c1ebe8beb6c8ad6f1afc7f531c36d63a12c8beb71cb5c96"
+    },
+    "scripts/question-bank/biology/chapter-10-mcq.txt": {
+      "bytes": 49891,
+      "sha256": "77d74a5447f3503007d2c1d2915612d5abd102606ff851f1e58c5c4837bba736"
+    },
+    "scripts/question-bank/biology/chapter-10-sq.txt": {
+      "bytes": 38447,
+      "sha256": "985801bf8d4de1a3b615ce9b037aa5833422d0ff2b89cdf8d38d32fabce63ec0"
+    },
+    "scripts/question-bank/biology/chapter-11-cq-b.txt": {
+      "bytes": 48587,
+      "sha256": "aba6bdbf583a73e29a3ee1b08753fa899430c0307b67d072d6253b8f96c2c59d"
+    },
+    "scripts/question-bank/biology/chapter-11-cq.txt": {
+      "bytes": 44884,
+      "sha256": "49dd09aa0bf91cb9641f1e99db32d226759c7a4e766f07531595b4605a556f3e"
+    },
+    "scripts/question-bank/biology/chapter-11-mcq-b.txt": {
+      "bytes": 49581,
+      "sha256": "d4960203db3eaced41bf17c27a8b9659dc9867a01417138890e3bbde3936eef5"
+    },
+    "scripts/question-bank/biology/chapter-11-mcq.txt": {
+      "bytes": 43799,
+      "sha256": "229c847f81044b6b8a727b6689bcf1b2546067d28f00d6ab3fbbf2e84ff2f87c"
+    },
+    "scripts/question-bank/biology/chapter-11-sq.txt": {
+      "bytes": 43890,
+      "sha256": "40323edb7d2f170b16490972adf3773a4cd5c47836716b494ba6d7b7ee49e6e0"
+    },
+    "scripts/question-bank/biology/chapter-12-cq-b.txt": {
+      "bytes": 46568,
+      "sha256": "ca2ddfc02eb9dff389a67ed3c37a6e6d17b21d1220c766349152b6aee2604910"
+    },
+    "scripts/question-bank/biology/chapter-12-cq.txt": {
+      "bytes": 45506,
+      "sha256": "f9ed3efe34a981df41eba37628875641920db3937f47a28984e7d5634d1678a5"
+    },
+    "scripts/question-bank/biology/chapter-12-mcq-b.txt": {
+      "bytes": 49628,
+      "sha256": "9a666adb21bd88730ff869dcfe6dd5bf9778bbe63e443f9eb749b2f86d412b3d"
+    },
+    "scripts/question-bank/biology/chapter-12-mcq.txt": {
+      "bytes": 42832,
+      "sha256": "535c060e645fe11457f21d07eecdc0641f82a887a0366415d3f86f39704e0bcd"
+    },
+    "scripts/question-bank/biology/chapter-12-sq.txt": {
+      "bytes": 41421,
+      "sha256": "6f706b7e919f4d242e11571c58bd23ae65c65df7feb6c40989deed6c3412811b"
+    },
+    "scripts/question-bank/biology/chapter-2-cq-b.txt": {
+      "bytes": 48489,
+      "sha256": "7d24fa644adb7f5649c9b3bf1cc0d21978049f573017d81cb1cfe611df148c91"
+    },
+    "scripts/question-bank/biology/chapter-2-cq.txt": {
+      "bytes": 47589,
+      "sha256": "05d2205b3e19364fdfbe80899fa139fac07a53fe2323db99f56fda81b5c15902"
+    },
+    "scripts/question-bank/biology/chapter-2-mcq-b.txt": {
+      "bytes": 31233,
+      "sha256": "709787fe0ad2bb20ddb974532aa1cf772783ec5c740e7641074eea7338864b22"
+    },
+    "scripts/question-bank/biology/chapter-2-mcq.txt": {
+      "bytes": 38126,
+      "sha256": "2d32f3af080fed4e49e1a8bdaf76b48ab9a14d6553672cfa532ff6d337f28cb0"
+    },
+    "scripts/question-bank/biology/chapter-2-sq.txt": {
+      "bytes": 26885,
+      "sha256": "3e0393c692f67bb5d72734499275d1baa797ce64db8b25dfc5dfd66d71c3df06"
+    },
+    "scripts/question-bank/biology/chapter-3-cq-b.txt": {
+      "bytes": 50592,
+      "sha256": "916cad4039ac6be3103e6fc56e5a552425e17fdf7a968b836085ee72ad33039d"
+    },
+    "scripts/question-bank/biology/chapter-3-cq.txt": {
+      "bytes": 49574,
+      "sha256": "851974242a08b3fc09a399acc05b4a3624e50519cb3a7863510174ad797823e8"
+    },
+    "scripts/question-bank/biology/chapter-3-mcq-b.txt": {
+      "bytes": 40094,
+      "sha256": "66a7ba8a06a64d587d0378948ce30d0dfc45cd709bbcbb53a17a8cfddf7e264a"
+    },
+    "scripts/question-bank/biology/chapter-3-mcq.txt": {
+      "bytes": 46869,
+      "sha256": "d0bdd0e851a249eb1504b0d53d3919d7635aef599b88c6448d32bb547039d6fb"
+    },
+    "scripts/question-bank/biology/chapter-3-sq.txt": {
+      "bytes": 28897,
+      "sha256": "759224b7a090a827c9e26c4a1332f81626baef17328e72d692b7ece950a8844e"
+    },
+    "scripts/question-bank/biology/chapter-4-cq-b.txt": {
+      "bytes": 53406,
+      "sha256": "0dcf91602fc8f685f69aef7cd9590a35f1e41b12622eaa744e435587a4f2a9df"
+    },
+    "scripts/question-bank/biology/chapter-4-cq.txt": {
+      "bytes": 55907,
+      "sha256": "699f9342883aa98cdfa40f16ddbc3c3ce5475e7d6106d8556bfb918543c1f078"
+    },
+    "scripts/question-bank/biology/chapter-4-mcq-b.txt": {
+      "bytes": 42481,
+      "sha256": "812b3daf7a8f7ef8da19312e9fe9db13d02e74e5a71fb23c362c189a29ebc7ce"
+    },
+    "scripts/question-bank/biology/chapter-4-mcq.txt": {
+      "bytes": 46700,
+      "sha256": "46338f12f6bb7267b67c316a91583ff9a7bd93d79becf0590eb55564cdaafc44"
+    },
+    "scripts/question-bank/biology/chapter-4-sq.txt": {
+      "bytes": 31092,
+      "sha256": "efd0dc57f5e90bef2dbce841e7284e6bce0cac40ea1a01c4bf69e3dd764e1bae"
+    },
+    "scripts/question-bank/biology/chapter-5-cq-b.txt": {
+      "bytes": 54216,
+      "sha256": "6bc6027bb8f57eba426a11daa9c867fd01633585ba9ac9b899dbbc32ebf8121a"
+    },
+    "scripts/question-bank/biology/chapter-5-cq.txt": {
+      "bytes": 51617,
+      "sha256": "4b921a15999a5bd07a577ae9f67ae35f9780238bf58b1fe8306e754ee12ab75c"
+    },
+    "scripts/question-bank/biology/chapter-5-mcq-b.txt": {
+      "bytes": 46967,
+      "sha256": "b98b60b221a57c85054de79993d650402d4b38a20064819108083cd70a2c87f9"
+    },
+    "scripts/question-bank/biology/chapter-5-mcq.txt": {
+      "bytes": 38660,
+      "sha256": "f50d6668158e736fc66077595e5f2ffaa2b8c0546c91b90c75d7e79e79aec775"
+    },
+    "scripts/question-bank/biology/chapter-5-sq.txt": {
+      "bytes": 30906,
+      "sha256": "3f1bb6c905a4dda3caab9ee111938c7a1eadf059816bf13ab983005facf01363"
+    },
+    "scripts/question-bank/biology/chapter-6-cq-b.txt": {
+      "bytes": 54356,
+      "sha256": "77beb24a5cc4a5ea45c39e9322fbccd68a6d166dde11ed4f94f327b010570b42"
+    },
+    "scripts/question-bank/biology/chapter-6-cq.txt": {
+      "bytes": 52696,
+      "sha256": "a9fd214bd3d2182b08742e81dbb8e533781a13a463c01d2ee731c7fd2ac9fb73"
+    },
+    "scripts/question-bank/biology/chapter-6-mcq-b.txt": {
+      "bytes": 42661,
+      "sha256": "333bed19da9090c725e50b48cb187f7bee1c6d0d3aa4f8946729909bbb54d87a"
+    },
+    "scripts/question-bank/biology/chapter-6-mcq.txt": {
+      "bytes": 43342,
+      "sha256": "e6401cff1b0f63f06fb600bd5201811f5fc7ebec864b18327c7eba460737fe5f"
+    },
+    "scripts/question-bank/biology/chapter-6-sq.txt": {
+      "bytes": 35494,
+      "sha256": "10ae640a2a9e6eee753a2e4c4e1469740741259914897fc44a20eb02666c6a74"
+    },
+    "scripts/question-bank/biology/chapter-7-cq-b.txt": {
+      "bytes": 40713,
+      "sha256": "adcbe04e5bfa1f2152d84d18bf7656e80d94058141680718b0aa8ede4866fc4c"
+    },
+    "scripts/question-bank/biology/chapter-7-cq.txt": {
+      "bytes": 39726,
+      "sha256": "65f556b24a371843c6a65acfb55fed499629d4fef82e971a8f03af9c1a00070c"
+    },
+    "scripts/question-bank/biology/chapter-7-mcq-b.txt": {
+      "bytes": 46645,
+      "sha256": "ad13404843e6bc6b5ade7b938eb5f1e860ba18b21387c2b4c08bc3fc6c84d925"
+    },
+    "scripts/question-bank/biology/chapter-7-mcq.txt": {
+      "bytes": 45095,
+      "sha256": "111a4a8081cfc159f1b5bc7857bfa3f4bd3acc965df86eecaf3aa512f5e19e91"
+    },
+    "scripts/question-bank/biology/chapter-7-sq.txt": {
+      "bytes": 32277,
+      "sha256": "d7fd6ab871352322b411915007dab4fc72a30d73318ec7615d676c4b06288c89"
+    },
+    "scripts/question-bank/biology/chapter-8-cq-b.txt": {
+      "bytes": 47845,
+      "sha256": "dac065e942e407cd4a34236022f89bd7ae9f8f25b2dd613b009c3c35adcf71b1"
+    },
+    "scripts/question-bank/biology/chapter-8-cq.txt": {
+      "bytes": 46818,
+      "sha256": "decab0c7cd2693086ca0d632f245a46cf3d2a6c10ce243b5ea92ff8cf171fd3e"
+    },
+    "scripts/question-bank/biology/chapter-8-mcq-b.txt": {
+      "bytes": 48688,
+      "sha256": "b7ef7eefdc88b0e1efab9a488ebd2c2a686be22a3cb3e6f84ea8d82342ede0fe"
+    },
+    "scripts/question-bank/biology/chapter-8-mcq.txt": {
+      "bytes": 42675,
+      "sha256": "d8b261c392ad98cca5bd67d28310e436869284411c4aaa4d37bd37362ac90fc2"
+    },
+    "scripts/question-bank/biology/chapter-8-sq.txt": {
+      "bytes": 36568,
+      "sha256": "be4a4a80836fd9003d1ac4c0faf748a00ae3797ef8a5721f120063e35479c94e"
+    },
+    "scripts/question-bank/biology/chapter-9-cq-b.txt": {
+      "bytes": 45897,
+      "sha256": "efa27631fdbf95c26055475ea789dbd8cfadebd7c35d4353e7d644c40343fdc7"
+    },
+    "scripts/question-bank/biology/chapter-9-cq.txt": {
+      "bytes": 47216,
+      "sha256": "9a20ad0e5f8c473e6b2089f709b6069864ad08afce20bebd23c7e63654451487"
+    },
+    "scripts/question-bank/biology/chapter-9-mcq-b.txt": {
+      "bytes": 48950,
+      "sha256": "7e312d3a8c6786a9842ae7781ecf937e1611d4167fe2bb4572ded46735c4ddae"
+    },
+    "scripts/question-bank/biology/chapter-9-mcq.txt": {
+      "bytes": 44761,
+      "sha256": "6cde18a8a7805d23bca0babea5e33f606585d4a4366191ebb7cd1937ef45438e"
+    },
+    "scripts/question-bank/biology/chapter-9-sq.txt": {
+      "bytes": 37611,
+      "sha256": "6c9a470d35a99da2f38819aefc4c84c03e7d8e0f23f5fad139d28a59bc88294e"
+    },
+    "scripts/question-bank/biology/concepts-01-04.txt": {
+      "bytes": 31385,
+      "sha256": "83744dd944a9efe5085e773e2f006ec5fe8d6bcfa735cbb59bdab4357a16441b"
+    },
+    "scripts/question-bank/biology/concepts-05.txt": {
+      "bytes": 9270,
+      "sha256": "39b7d9e5afed6e113a6ef982efeb7a83b36d4689eb563e94d5525eeafbc689d9"
+    },
+    "scripts/question-bank/biology/rebuild-cq.txt": {
+      "bytes": 46230,
+      "sha256": "b1fded92ddc98ec7e8d004eb6dbcbb68c98f74efb0528596d8a47eb6ace6c81c"
+    },
+    "scripts/question-bank/biology/rebuild-mcq.txt": {
+      "bytes": 25386,
+      "sha256": "f0ee93f95c2aab11456e7bed78c5156d6e6ab0a5193243f5fb71ab7d515f8875"
+    },
+    "scripts/question-bank/biology/reader-template-ch10.html": {
+      "bytes": 6561,
+      "sha256": "f9bdf3ea854e4f1a69bd868aff3220efd03a7383d22ba5133dac6fbb2018d185"
+    },
+    "scripts/question-bank/biology/reader-template-ch11.html": {
+      "bytes": 6577,
+      "sha256": "c59488ecdc510b15ee0d6c5e9e5ff3f7f65e29ff2eed5cefd506c1507c208267"
+    },
+    "scripts/question-bank/biology/reader-template-ch12.html": {
+      "bytes": 6622,
+      "sha256": "2314424e3c2e931bcf34843f55b7665961675a3ad93ec78d2c61740baad12b46"
+    },
+    "scripts/question-bank/biology/reader-template-ch3.html": {
+      "bytes": 6459,
+      "sha256": "e1527d2eb9f86b27cafefca519726e7d84c07c62d2dbf5f5e2886051c2380572"
+    },
+    "scripts/question-bank/biology/reader-template-ch4.html": {
+      "bytes": 6567,
+      "sha256": "7ed33523ecc60b6c6c7f61d6d7f9e87500f1edde65e81b1999d7266e5b4db5cc"
+    },
+    "scripts/question-bank/biology/reader-template-ch5.html": {
+      "bytes": 6601,
+      "sha256": "243629e54e46c16cddd5c1f4115ad5b2680fe365ab54cba8834e1675d8f5b75c"
+    },
+    "scripts/question-bank/biology/reader-template-ch6.html": {
+      "bytes": 6568,
+      "sha256": "5163b820ce6025c142cb132c6360b7fa7ade18b0bb1ed27b149bcaaf770e2ed1"
+    },
+    "scripts/question-bank/biology/reader-template-ch7.html": {
+      "bytes": 6577,
+      "sha256": "90b9398fc96e4fb49d222e3d2a47fa28f07b6ddc7c1d07e733c1ed85d759eeed"
+    },
+    "scripts/question-bank/biology/reader-template-ch8.html": {
+      "bytes": 6577,
+      "sha256": "40a0b76be0369890d5b663305759825e1d4d0438a4071a934ab4d9f15140f6db"
+    },
+    "scripts/question-bank/biology/reader-template-ch9.html": {
+      "bytes": 6585,
+      "sha256": "9468862baf6929c69fa072a147724f33d6db9894a45534f5d4e9f30c6d4f3fd1"
+    },
+    "scripts/question-bank/biology/reader-template.html": {
+      "bytes": 6475,
+      "sha256": "02f0c07d69e7106e627c969f0c5dfd55af32a98337e1875d1032f2d64824a447"
+    },
+    "scripts/question-bank/biology/draw-chapter-4-figures.py": {
+      "bytes": 5201,
+      "sha256": "feae3902c89bc8c95845e5e330f7cac3f11411be4feb9148fae75a719a0cd64c"
+    },
+    "scripts/question-bank/biology/draw-chapter-5-figures.py": {
+      "bytes": 5065,
+      "sha256": "2f1423e53e88e77a3d6e3b9339b232fabbc52e872d1e81c0de32db56d61687fa"
+    },
+    "scripts/question-bank/biology/draw-chapter-6-figures.py": {
+      "bytes": 5055,
+      "sha256": "f62ba7cd6fc6e0546de467b057666ece7525209617f131347939d111160a2ee7"
+    },
+    "scripts/question-bank/biology/draw-chapter-7-figures.py": {
+      "bytes": 5276,
+      "sha256": "b168ae4550f410ba203c60c3aede8d4a9db24f1307e4dab5e0c1f45aa97ffd0a"
+    },
+    "scripts/question-bank/biology/draw-chapter-8-figures.py": {
+      "bytes": 6026,
+      "sha256": "473c3b247b835b50a44dc3510dcd2df33ad7e271d6e265c33edf8aa11eb054e5"
+    },
+    "scripts/question-bank/biology/draw-chapter-9-figures.py": {
+      "bytes": 6606,
+      "sha256": "cb18af393bba2b19590726ea6987346b50c16d581e4f89a0b9f581b5da0f3418"
+    },
+    "scripts/question-bank/biology/draw-chapter-10-figures.py": {
+      "bytes": 8553,
+      "sha256": "5be7c5409ed228793a0b86265d5734244b9d1c02986826e8f262c4f514caaeb6"
+    },
+    "scripts/question-bank/biology/draw-chapter-11-figures.py": {
+      "bytes": 6706,
+      "sha256": "0456bbbe843970103906f0151ea4489ab1e48cb9b86284e61ca1310a4cdeab20"
+    },
+    "scripts/question-bank/biology/draw-chapter-12-figures.py": {
+      "bytes": 4463,
+      "sha256": "e46a093bbb95b58a4beb1b5d30de3a06198b3c4b07f1230c7ccf40b0903358f4"
+    },
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": {
+      "bytes": 2508,
+      "sha256": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd"
+    },
+    "content/question-bank/ssc/biology/chapter-10/assets/brain-regions.svg": {
+      "bytes": 3688,
+      "sha256": "e51bd4ef7b08b600562548196054169ad63f59d01818202bd5363b65b1a5134a"
+    },
+    "content/question-bank/ssc/biology/chapter-10/assets/neuron-signaling.svg": {
+      "bytes": 4491,
+      "sha256": "4ac283a17ff08a8ed99e5e3506098d0223cc391140f50dab31bfd347ba55c751"
+    },
+    "content/question-bank/ssc/biology/chapter-10/assets/shoot-phototropism.svg": {
+      "bytes": 2903,
+      "sha256": "c7ad1faa520149e02a1ee5042084287343ad2819bfd870438770a0852a616664"
+    },
+    "content/question-bank/ssc/biology/chapter-10/assets/thyroid-feedback.svg": {
+      "bytes": 3385,
+      "sha256": "938c5580940a3a9727e9351e1ebb1ae53f02c0484c1af45a1d6e4ee95dbe34a9"
+    },
+    "content/question-bank/ssc/biology/chapter-10/assets/withdrawal-reflex.svg": {
+      "bytes": 3933,
+      "sha256": "9779027d5dc3bbac2fa2d42ca03e7b329f6ecb331f75c3172846d24af2c9212c"
+    },
+    "content/question-bank/ssc/biology/chapter-11/assets/embryo-sac.svg": {
+      "bytes": 4988,
+      "sha256": "e040ed821777b4c73cacf1546adfbdb78a9b2bb327a337081e53ec4452f2fb81"
+    },
+    "content/question-bank/ssc/biology/chapter-11/assets/flower-section.svg": {
+      "bytes": 4768,
+      "sha256": "46feda53a45179a02378f1f3da5d6bd1c207f394c02932e84b522076188d774f"
+    },
+    "content/question-bank/ssc/biology/chapter-11/assets/human-development-route.svg": {
+      "bytes": 3001,
+      "sha256": "7d3a60048666b2b04ccf1f15a492ff0f580ef7b0860a65197fa6ed733b0fe00c"
+    },
+    "content/question-bank/ssc/biology/chapter-11/assets/placental-exchange.svg": {
+      "bytes": 2863,
+      "sha256": "e442875964c30413a55d9f2b7b034e227cab31b64566f0753b3f21ee3f82a9c1"
+    },
+    "content/question-bank/ssc/biology/chapter-12/assets/ancestry-tree.svg": {
+      "bytes": 1394,
+      "sha256": "0ba8b6f6589fe61678dde4e5810fbc8f879d905a607003ccfc7a7720034c84b1"
+    },
+    "content/question-bank/ssc/biology/chapter-12/assets/dna-pairing.svg": {
+      "bytes": 2985,
+      "sha256": "ba0b8f2b0b5d719405ec1ad03ffb0e76d82019a6d792f1677b5e02035edd3b0c"
+    },
+    "content/question-bank/ssc/biology/chapter-12/assets/mendel-grid.svg": {
+      "bytes": 1664,
+      "sha256": "8dd9f6732a3d636c62f134c8887e519e7d03c56deb9d816fc1008b1119d99697"
+    },
+    "content/question-bank/ssc/biology/chapter-12/assets/replication-strands.svg": {
+      "bytes": 3219,
+      "sha256": "6562e92643aeb5e1c9024f185a7397ed33e906206d89f7ad3a174107523adeec"
+    },
+    "content/question-bank/ssc/biology/chapter-2/assets/mitochondrion.svg": {
+      "bytes": 1165,
+      "sha256": "dbe50c47f46bf1e957547c6f1ed404e3af72bbbda49b36f3aa5238d632c93032"
+    },
+    "content/question-bank/ssc/biology/chapter-2/assets/neuron.svg": {
+      "bytes": 1311,
+      "sha256": "5ed16494d4cc93b62cdb96a8607db8261eaae0de8643949bb3cc47edbc767ec2"
+    },
+    "content/question-bank/ssc/biology/chapter-2/assets/plant-cell.svg": {
+      "bytes": 1395,
+      "sha256": "bdd2207c21a39db7739a404d1d5f0933ff1fd448eb859790cffa05e3b4eecea9"
+    },
+    "content/question-bank/ssc/biology/chapter-3/assets/meiotic-anaphase.svg": {
+      "bytes": 1466,
+      "sha256": "732004dff9737e8af492cda267634786cc6fb823dcb97afbfb70357a35f7e04b"
+    },
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-anaphase.svg": {
+      "bytes": 1386,
+      "sha256": "6d21067ec6a8b96c74746c7ff20553569b060017f510628a9366e08a1a5363a6"
+    },
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-metaphase.svg": {
+      "bytes": 1425,
+      "sha256": "0836c541f625af3cc00de2cd3794fc32f9e8596a8f5863b9df53b6d5a16a19ee"
+    },
+    "content/question-bank/ssc/biology/chapter-4/assets/chloroplast-stages.svg": {
+      "bytes": 3196,
+      "sha256": "b485f1e90497f5223bd2a35e93fc3e4aef29120d375fd6fdb9c65dd701500f19"
+    },
+    "content/question-bank/ssc/biology/chapter-4/assets/light-starch-test.svg": {
+      "bytes": 2683,
+      "sha256": "eeafcfb56e5935c85adae7bf2b910708661b19b633d208dd3d8108d3e87dbf4b"
+    },
+    "content/question-bank/ssc/biology/chapter-4/assets/respiratory-coupling.svg": {
+      "bytes": 3205,
+      "sha256": "6c166230a1a2595fbb772cc59493eaf64a7b6d03da97aefa7ce41854840f1fe6"
+    },
+    "content/question-bank/ssc/biology/chapter-5/assets/digestive-routes.svg": {
+      "bytes": 3900,
+      "sha256": "4962db983e88ff022c71d1eaaa73dbb833b13f0f2331e13c1ded3b5d7d73b268"
+    },
+    "content/question-bank/ssc/biology/chapter-5/assets/fat-digestion.svg": {
+      "bytes": 2731,
+      "sha256": "064fdf29dfeb817a7143338e513e07ebfe9674464d4f74d78be5b9d93a47a184"
+    },
+    "content/question-bank/ssc/biology/chapter-5/assets/villus-transport.svg": {
+      "bytes": 2961,
+      "sha256": "57b28511293a93b69f96f5e877e681010be6b8d46333797b8fe540d2366d36cc"
+    },
+    "content/question-bank/ssc/biology/chapter-6/assets/double-circulation.svg": {
+      "bytes": 3774,
+      "sha256": "23bcb78ae7ca7dccba0ce42233eebf10cd1a5ee8db437dfdc8b927b6864cc5a8"
+    },
+    "content/question-bank/ssc/biology/chapter-6/assets/vessel-functions.svg": {
+      "bytes": 2327,
+      "sha256": "3aeee4f911cacfedb3783c04f0342af5317845234aa623595e58710d47a10b9b"
+    },
+    "content/question-bank/ssc/biology/chapter-6/assets/xylem-tension.svg": {
+      "bytes": 2681,
+      "sha256": "42773fc91488cdefe130bbd055daa57996b1e10905d93aadb48e55c538f556b0"
+    },
+    "content/question-bank/ssc/biology/chapter-7/assets/alveolar-exchange.svg": {
+      "bytes": 2248,
+      "sha256": "56596d5181f052481f4ec1f68da7104aa087157a4214ff9b8780f78f1d8fc4c3"
+    },
+    "content/question-bank/ssc/biology/chapter-7/assets/inspiration-mechanism.svg": {
+      "bytes": 2559,
+      "sha256": "6201de2904957af7cc0a75ae246e0941ad4653df66f78aaacd5ec62a48c5a96e"
+    },
+    "content/question-bank/ssc/biology/chapter-7/assets/respiratory-route.svg": {
+      "bytes": 3467,
+      "sha256": "122eae7694e5641aeb5cc26ec192121a0bca18ca29bb975e4c6364fd5c36ec39"
+    },
+    "content/question-bank/ssc/biology/chapter-8/assets/dialyzer-exchange.svg": {
+      "bytes": 2856,
+      "sha256": "c149903309608e677ec20cc5d753c5932ca92025613a5dde7f3362de4d06ecec"
+    },
+    "content/question-bank/ssc/biology/chapter-8/assets/kidney-section.svg": {
+      "bytes": 4428,
+      "sha256": "75c18dfceeb1e3be1e0826170a59c87b8ba4ccc5da360f0681727cd302102818"
+    },
+    "content/question-bank/ssc/biology/chapter-8/assets/nephron-pathways.svg": {
+      "bytes": 4645,
+      "sha256": "168c5c4d6d0dc5da5eb6fec984e53a86c7222e822073c82e8b4a48a7758eb74c"
+    },
+    "content/question-bank/ssc/biology/chapter-9/assets/elbow-antagonists.svg": {
+      "bytes": 4431,
+      "sha256": "e9426771fb501b40d21432c3bd74cb57650680d92ca0640fdd8cad4de6429a13"
+    },
+    "content/question-bank/ssc/biology/chapter-9/assets/skeleton-regions.svg": {
+      "bytes": 5522,
+      "sha256": "d31ffb050d8d9857096da613a2151f3018d068c7ec08d84b8b0bdffe0a1bad32"
+    },
+    "content/question-bank/ssc/biology/chapter-9/assets/synovial-joint.svg": {
+      "bytes": 3911,
+      "sha256": "6389404affa14bb445fe20f3d616e8edf3a5ca402237b2f5a696f079df4b88d4"
+    },
+    "content/question-bank/ssc/biology/chapter-1/cq.json": {
+      "bytes": 19425,
+      "sha256": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c"
+    },
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": {
+      "bytes": 28705,
+      "sha256": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca"
+    },
+    "content/question-bank/ssc/biology/chapter-1/sq.json": {
+      "bytes": 9103,
+      "sha256": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb"
+    },
+    "content/question-bank/ssc/biology/chapter-1/validation.json": {
+      "bytes": 1057,
+      "sha256": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce"
+    }
+  }
+}

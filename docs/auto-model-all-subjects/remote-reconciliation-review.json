@@ -1,0 +1,21 @@
+{
+  "remoteHead": "df1065f2cabc25a98cf5cb914e57761dea1c45df",
+  "strategy": "Verified Drive backup, git stash with untracked files, same-branch fast-forward; restore only local-only changes; manually reconcile shared Auto Model modules. No stale Chemistry/Physics restore.",
+  "originalLocalHead": "20e3d6ccc3131510f20ef55f3b474444ab1930ac",
+  "protectedRemoteSubjectFilesIdentical": 2878,
+  "preserved": [
+    "Chemistry12 chapter policies/quotas and model IDs",
+    "Physics14 chapter policies/quotas",
+    "_authoring metadata acceptance",
+    "relative Chemistry renderer paths",
+    "existing prepared registry, content and public figures"
+  ],
+  "legacyAPI": "Registered Physics/Chemistry calls without explicit topics remain approved-only, DB-only. New explicit topic selection opts into syllabus-aware gap preparation.",
+  "publication": "No Biology import/approval performed by reconciliation.",
+  "focusedModelTestsPassed": 73,
+  "focusedBiologyAndHarnessTestsPassed": 111,
+  "typecheck": "PASS",
+  "fullSuite": "Incomplete run stopped at prepared-library repeated whole-registry workload; four earlier harness/expectation failures repaired and rerun. Not claimed full-suite PASS.",
+  "reconciledChangedFileRegressionTestsPassed": 461,
+  "reconciledChangedFileRegressionTestsFailed": 0
+}

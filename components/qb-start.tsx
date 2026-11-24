@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { autoModelSetupSummary } from "@/lib/auto-model-syllabus";
 import { autoModelBlueprint, isAcademicCategory, AUTO_MODEL_NOTICE } from "@/lib/auto-model";
 import { ACADEMIC_SUBJECT_GROUPS, sscGroupSubjects, hscGroupSubjects } from "@/lib/academic-subject-groups";
 import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
@@ -90,7 +91,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const isHsc = category === "HSC";
   const hasSubjectGroups = isSsc || isHsc;
   const academic = isAcademicCategory(category) && !/english|ইংরেজি/i.test(subject) && !append;
-  const modelPlan = autoModelBlueprint(category, subject, modelVariant);
+  const modelPlan = autoModelBlueprint(category, subject, modelVariant) ?? autoModelSetupSummary(category, subject, modelVariant);
 
   const selectedClassData = useMemo(() => findClassData(category), [category]);
 
@@ -342,7 +343,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </>}
         {englishMode === "full" && <p className="rounded-lg bg-indigo-50 p-3 text-sm">
           Class {english.grade} · English {english.paper === 1 ? "1st" : "2nd"} Paper · {english.blueprint.total} marks।
-          {english.paper === 1 ? "অনুমোদিত database থেকে সব প্রশ্ন ও উত্তরসহ পূর্ণ মডেল নেওয়া হবে। ঘাটতি থাকলে জানাবে; AI চলবে না। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।" : "সব অংশ স্বয়ংক্রিয়ভাবে বেছে প্রশ্নভান্ডার থেকে প্রশ্ন নেওয়া হবে; না থাকলে AI তৈরি করবে (বিদ্যমান quota প্রযোজ্য)। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।"}
+          {english.paper === 1 ? "ডাটাবেজের উপযুক্ত প্রশ্ন আগে নেওয়া হবে; ঘাটতি থাকলে নির্ভরযোগ্য textbook source অনুযায়ী শুধু অনুপস্থিত অংশ AI তৈরি করবে। আগে প্রশ্ন ও উত্তর যাচাই করবেন, তারপর Set-up।" : "সব অংশ স্বয়ংক্রিয়ভাবে বেছে প্রশ্নভান্ডার থেকে প্রশ্ন নেওয়া হবে; না থাকলে AI তৈরি করবে (বিদ্যমান quota প্রযোজ্য)। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।"}
           এটি practice template; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন।
         </p>}
       </>}

@@ -65,9 +65,9 @@ test('HSC catalog papers are all reachable, with common subjects separate and sh
  }
  for(const group of ['science','humanities','business'])assert.ok(groups.hscGroupSubjects(names,group).includes('পরিসংখ্যান ২য় পত্র'));
 });
-test('HSC group precedes subjects and does not enable an unsupported mathematics Auto Model',()=>{
+test('HSC group precedes subjects; Auto Model routes to explicit syllabus setup without inheriting mathematics',()=>{
  const h=harness();h.click('HSC (একাদশ-দ্বাদশ)');assert.ok(h.byLabel('HSC বিভাগ'));assert.equal(h.byLabel('বিষয়').props.disabled,true);
- h.change('HSC বিভাগ','science');h.change('বিষয়','পদার্থবিজ্ঞান ১ম পত্র');h.click('Auto Model');h.click('CQ');assert.equal(h.button('মডেল প্রস্তুত').props.disabled,true);
+ h.change('HSC বিভাগ','science');h.change('বিষয়','পদার্থবিজ্ঞান ১ম পত্র');h.click('Auto Model');h.click('CQ');assert.equal(h.button('মডেল প্রস্তুত').props.disabled,false);h.click('মডেল প্রস্তুত');const setup=new URL(h.pushes.pop(),'https://local.invalid');assert.equal(setup.pathname,'/question-builder/auto-model');assert.equal(setup.searchParams.get('category'),'HSC');assert.equal(setup.searchParams.get('subject'),'পদার্থবিজ্ঞান ১ম পত্র');assert.equal(require('../lib/auto-model.ts').autoModelBlueprint('HSC','পদার্থবিজ্ঞান ১ম পত্র','CQ'),null);
  h.click('Chapter');h.click('প্রশ্ন তৈরী');const url=new URL(h.pushes[0],'https://local.invalid');assert.equal(url.searchParams.get('category'),'HSC');assert.equal(url.searchParams.get('subject'),'পদার্থবিজ্ঞান ১ম পত্র');
  h.change('HSC বিভাগ','humanities');assert.equal(h.byLabel('বিষয়').props.value,'');assert.ok(!h.options('বিষয়').includes('পদার্থবিজ্ঞান ১ম পত্র'));
  h.click('SSC (নবম-দশম)');assert.equal(h.byLabel('SSC বিভাগ').props.value,'');assert.deepEqual(h.options('বিষয়'),[]);h.change('SSC বিভাগ','science');assert.ok(h.options('বিষয়').includes('পদার্থবিজ্ঞান'));assert.ok(!h.options('বিষয়').includes('পদার্থবিজ্ঞান ১ম পত্র'));

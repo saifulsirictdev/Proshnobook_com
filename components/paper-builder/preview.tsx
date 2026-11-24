@@ -1,4 +1,5 @@
 "use client";
+import { autoModelQuestionMarks, autoModelPartMarks } from "@/lib/auto-model-paper";
 import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
 import { questionProvenanceLabels } from "@/lib/question-provenance";
@@ -297,7 +298,7 @@ export default function PaperPreview({
         <div className="flex items-start gap-1.5">
           <b className="shrink-0">{bn(String(index + 1).padStart(2, "0"))}।</b>
           <div className="min-w-0 flex-1">
-            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{type === "CQ" ? "১০" : type === "SHORT" ? "২" : "১"}]</span>}
+            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{bn(autoModelQuestionMarks(s,type,q.id))}]</span>}
             <span>
               {s.show.important && attachment?.important && (
                 <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
@@ -406,7 +407,7 @@ export default function PaperPreview({
                   <p key={key}>
                     <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
                     <PaperMathText text={text} />
-                    <span className="float-right">{bn(s.autoModel === "ssc-math-written-v1" ? [2,4,4][i] ?? i+1 : i + 1)}</span>
+                    <span className="float-right">{bn(s.autoModel ? autoModelPartMarks(s,i) : i+1)}</span>
                   </p>
                 ))}
               </div>

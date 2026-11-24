@@ -1,3 +1,5 @@
+import { resolveSyllabusSelection, syllabusRowKind } from "./auto-model-syllabus";
+import type { SyllabusSelection } from "./auto-model-syllabus-schema";
 import { subjectModelPolicy, subjectModelById, subjectModelChapter } from "./subject-model-policy";
 import {
   defaults,
@@ -23,7 +25,22 @@ export function autoModelSettings(
   category: string,
   subject: string,
   variant: AutoModelVariant,
+  selection?: SyllabusSelection,
 ): PaperSettings {
+  if(selection) {
+    const p=resolveSyllabusSelection(selection);
+    if(p.request.category!==category||p.request.subject!==subject||p.request.variant!==variant)throw Error("মডেলের নির্বাচন মিলছে না।");
+    const s=p.registered?autoModelSettings(category,subject,variant):defaults();
+    const {avoidQuestionIds: _historyOnly,...syllabusRequest}=p.request;
+    s.syllabusSelection=syllabusRequest;
+    if(p.registered)return s;
+    s.autoModel=variant==="MCQ"?"syllabus-mcq-v1":"syllabus-written-v1";
+    s.defaultHeader={enabled:true,overrides:{}};
+    s.info={...s.info,cls:category,subject,exam:"মডেল টেস্ট — অনুশীলন",minutes:p.minutes,marks:String(p.totalMarks),instr:"শিক্ষক-দেওয়া সিলেবাস/মানবণ্টন; সরকারি যাচাইয়ের দাবি নয়। "+p.sections.map(x=>`${x.kind}: ${x.offered}টি থেকে ${x.answer}টি; প্রতিটি ${x.marksEach} নম্বর।`).join(" "),section:variant==="MCQ"?"নৈর্ব্যক্তিক প্রশ্ন":"লিখিত প্রশ্ন"};
+    const n=(kind:string,key:"offered"|"answer")=>p.sections.filter(x=>x.kind===kind).reduce((n,x)=>n+x[key],0);
+    s.cfg={...s.cfg,expectedMCQ:n("MCQ","offered"),expectedCQ:n("CQ","offered"),expectedSHORT:n("SHORT","offered"),mcqAnswer:n("MCQ","answer"),cqAnswer:n("CQ","answer"),shortAnswer:n("SHORT","answer")};
+    s.show.chapter=false;s.show.marks=true;return s;
+  }
   const plan = autoModelBlueprint(category, subject, variant);
   if (!plan) throw Error("এই নির্বাচনের Auto Model কাঠামো প্রস্তুত নয়।");
   const s = defaults();
@@ -81,6 +98,25 @@ export function autoModelIssues(
     new Set(items.map((q) => q.id)).size !== items.length
   )
     issues.push("সম্পাদিত মডেলে একই প্রশ্ন পুনরাবৃত্তি হয়েছে।");
+  if(s.syllabusSelection) {
+    try {
+      const p=resolveSyllabusSelection(s.syllabusSelection);
+      if(s.autoModel!==(p.registered?.id??(p.request.variant==="MCQ"?"syllabus-mcq-v1":"syllabus-written-v1")))issues.push("সিলেবাস ও সংরক্ষিত মডেলের পরিচয় মিলছে না।");
+      if(items.some(q=>q.subject!==p.request.subject || (q.category && !autoModelTopicsForCategory(q.category,p.request.category)) || !p.topics.includes(q.topic??"")))issues.push("নির্বাচিত শ্রেণি–বিষয়/টপিকের বাইরের প্রশ্ন আছে।");
+      if(p.registered)return [...issues,...autoModelIssues(items,{...s,syllabusSelection:undefined})];
+      const kinds=items.map(q=>syllabusRowKind({id:q.id,text:q.text,topic:q.topic??"",explanation:q.explanation??"",correct:q.correct??"",options:questionType(q)==="CQ"?{stimulus:q.stimulus||q.text,subQuestions:q.subQuestions}:q.options??{}},p));
+      if(kinds.some((k,i)=>!k||k!==questionType(items[i])||!p.sections.some(x=>x.kind===k)))issues.push("প্রশ্নের ধরন, উত্তর বা উপপ্রশ্ন অসম্পূর্ণ।");
+      if(items.length!==p.sections.reduce((n,x)=>n+x.offered,0))issues.push("পূর্ণ মডেলের প্রশ্নসংখ্যা মিলছে না।");
+      for(const [index,x] of p.sections.entries()){
+        const offered=x.kind==="MCQ"?s.cfg.expectedMCQ:x.kind==="CQ"?s.cfg.expectedCQ:s.cfg.expectedSHORT;
+        const answer=x.kind==="MCQ"?s.cfg.mcqAnswer:x.kind==="CQ"?s.cfg.cqAnswer:s.cfg.shortAnswer;
+        const qs=items.filter(q=>questionType(q)===x.kind&&autoModelSectionIndex(s,x.kind,q.id)===index);
+        if(qs.length!==x.offered||qs.some(q=>"topics" in x&&x.topics&&!x.topics.includes(q.topic??""))||offered!==p.sections.filter(y=>y.kind===x.kind).reduce((n,y)=>n+y.offered,0)||answer!==p.sections.filter(y=>y.kind===x.kind).reduce((n,y)=>n+y.answer,0))issues.push(`${x.kind}: সিলেবাসের বিভাগ/প্রশ্নসংখ্যা/উত্তরদানের সংখ্যা মিলছে না।`);
+      }
+      if(s.info.marks!==String(p.totalMarks))issues.push("সিলেবাসের পূর্ণমান বদলেছে।");
+      return issues;
+    }catch{return [...issues,"সিলেবাসের মানবণ্টন সঠিক নয়।"];}
+  }
   const registered = subjectModelById(s.autoModel);
   if (registered) {
     const {policy, sections} = registered;
@@ -188,6 +224,10 @@ export function autoModelSections(items: PaperItem[], s: PaperSettings) {
     startNumber: 0,
     questions: views(items.filter(q=>questionType(q)===section.kind)),
   })));
+  if(s.syllabusSelection && !subjectModelById(s.autoModel) && s.autoModel.startsWith("syllabus-")) {
+    try {const p=resolveSyllabusSelection(s.syllabusSelection);return withExtras(p.sections.map((x,i)=>({type:x.kind,title:`${("title" in x&&x.title)|| (x.kind==="MCQ"?"নৈর্ব্যক্তিক":x.kind==="CQ"?"সৃজনশীল":"লিখিত/সংক্ষিপ্ত")} — ${x.answer*x.marksEach}`,instruction:(i===0?warning:"")+`${x.offered}টি থেকে ${x.answer}টি প্রশ্নের উত্তর দাও। প্রতিটি ${x.marksEach} নম্বর।${x.kind==="CQ"?` ক–খ–গ${p.partMarks.length===4?"–ঘ":""}: ${p.partMarks.join("–")}।`:""}`,startNumber:0,questions:views(items.filter(q=>questionType(q)===x.kind&&autoModelSectionIndex(s,x.kind,q.id)===i))})));}catch{return withExtras([]);}
+  }
+  if(s.autoModel.startsWith("syllabus-"))return withExtras([]);
   if (s.autoModel === "ssc-math-mcq-v1")
     return withExtras([
       {
@@ -223,4 +263,23 @@ export function autoModelSections(items: PaperItem[], s: PaperSettings) {
     questions: views(items.filter((q) => questionType(q) === "SHORT")),
   });
   return withExtras(parts);
+}
+
+function autoModelTopicsForCategory(a:string,b:string){
+  const key=(v:string)=>{const k=v.replace(/^Class\s*/i,"");return /^(SSC|9|10|9-10)$/i.test(k)?"SSC":/^(HSC|11|12|11-12)$/i.test(k)?"HSC":k;};return key(a)===key(b);
+}
+export function autoModelSectionIndex(s:PaperSettings,type:string,id?:string){
+  if(!s.syllabusSelection)return -1;
+  try{const p=resolveSyllabusSelection(s.syllabusSelection),assigned=id?s.syllabusAssignments?.[id]:undefined;
+    if(assigned!==undefined)return p.sections[assigned]?.kind===type?assigned:-1;
+    const indexes=p.sections.map((x,i)=>({x,i})).filter(({x})=>x.kind===type);return indexes.length===1?indexes[0].i:-1;
+  }catch{return -1;}
+}
+export function autoModelQuestionMarks(s:PaperSettings,type:string,id?:string){
+  if(s.syllabusSelection){try{const p=resolveSyllabusSelection(s.syllabusSelection);return p.sections[autoModelSectionIndex(s,type,id)]?.marksEach??0;}catch{return 0;}}
+  return type==="CQ"?10:type==="SHORT"?2:1;
+}
+export function autoModelPartMarks(s:PaperSettings,i:number){
+  if(s.syllabusSelection){try{return resolveSyllabusSelection(s.syllabusSelection).partMarks[i]??0;}catch{return 0;}}
+  return s.autoModel==="ssc-math-written-v1"?[2,4,4][i]??i+1:i+1;
 }

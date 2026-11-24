@@ -10,7 +10,7 @@ test('Neutral wording retains actual failure, limits, no-save and recovery infor
 });
 test('Auto and setup keep neutral busy UI, errors and quota notice; editor never falsely asserts AI origin',()=>{
  for(const file of ['components/english-auto-model.tsx','components/english-setup.tsx']){
-  const s=fs.readFileSync(file,'utf8');assert.match(s,/databaseOnly=\{paper === 1\} neutralBranding/);assert.match(s,/englishPreparationMessage\(.*\.error\)/);assert.doesNotMatch(s,/না-থাকলে AI|AI quota|কোনো AI request/);
+  const s=fs.readFileSync(file,'utf8');assert.match(s,file.endsWith("english-auto-model.tsx")?/stage=\{1\} neutralBranding/:/databaseOnly=\{paper === 1\} neutralBranding/);assert.match(s,/englishPreparationMessage\(.*\.error\)/);assert.doesNotMatch(s,/না-থাকলে AI|AI quota|কোনো AI request/);
  }
  assert.doesNotMatch(fs.readFileSync('components/english-editor.tsx','utf8'),/AI-generated draft/);
 });

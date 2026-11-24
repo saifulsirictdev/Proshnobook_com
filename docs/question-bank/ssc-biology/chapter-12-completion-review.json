@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-20",
+  "chapter": 12,
+  "topic": "জীবের বংশগতি ও জৈব অভিব্যক্তি",
+  "baseline": "69a78e9",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "total": 320,
+  "globalDraftItems": 3840,
+  "remainingTargetItems": 640,
+  "preservedEarlierFileCount": 115,
+  "preservedEarlierFileHashes": {
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6",
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/questions.md": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22",
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-1/validation.json": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce",
+    "content/question-bank/ssc/biology/chapter-10/assets/brain-regions.svg": "e51bd4ef7b08b600562548196054169ad63f59d01818202bd5363b65b1a5134a",
+    "content/question-bank/ssc/biology/chapter-10/assets/neuron-signaling.svg": "4ac283a17ff08a8ed99e5e3506098d0223cc391140f50dab31bfd347ba55c751",
+    "content/question-bank/ssc/biology/chapter-10/assets/shoot-phototropism.svg": "c7ad1faa520149e02a1ee5042084287343ad2819bfd870438770a0852a616664",
+    "content/question-bank/ssc/biology/chapter-10/assets/thyroid-feedback.svg": "938c5580940a3a9727e9351e1ebb1ae53f02c0484c1af45a1d6e4ee95dbe34a9",
+    "content/question-bank/ssc/biology/chapter-10/assets/withdrawal-reflex.svg": "9779027d5dc3bbac2fa2d42ca03e7b329f6ecb331f75c3172846d24af2c9212c",
+    "content/question-bank/ssc/biology/chapter-10/draft-validation.json": "30663e781a96bbe59d593d5e11aa9a98695672956ea9cb3f68ed1e252b356ea6",
+    "content/question-bank/ssc/biology/chapter-10/questions.md": "92e4758ba8580fda384d066be9256c1d9f1e4027e02ae2363ed996f9569543ee",
+    "content/question-bank/ssc/biology/chapter-10/rebuild-cq.json": "771105413f15b5f05e70dd5773ba9c5129680a6b13bc89031142bb6c29b45f43",
+    "content/question-bank/ssc/biology/chapter-10/rebuild-mcq.json": "8cb8450750ec45273166699ef2f7b71329b00234024168b8f7a9a70aeccbfbe9",
+    "content/question-bank/ssc/biology/chapter-10/rebuild-sq.json": "d2e63d59a33d46f3cc5c900f852b7373b4a4aa1d1d052af58361f87bb4784800",
+    "content/question-bank/ssc/biology/chapter-10/source-ledger.json": "5833af2460a09665f2fb074ded3759874a897d162b916d3f831526507f0a168f",
+    "content/question-bank/ssc/biology/chapter-11/assets/embryo-sac.svg": "e040ed821777b4c73cacf1546adfbdb78a9b2bb327a337081e53ec4452f2fb81",
+    "content/question-bank/ssc/biology/chapter-11/assets/flower-section.svg": "46feda53a45179a02378f1f3da5d6bd1c207f394c02932e84b522076188d774f",
+    "content/question-bank/ssc/biology/chapter-11/assets/human-development-route.svg": "7d3a60048666b2b04ccf1f15a492ff0f580ef7b0860a65197fa6ed733b0fe00c",
+    "content/question-bank/ssc/biology/chapter-11/assets/placental-exchange.svg": "e442875964c30413a55d9f2b7b034e227cab31b64566f0753b3f21ee3f82a9c1",
+    "content/question-bank/ssc/biology/chapter-11/draft-validation.json": "114521fd8b9c4f133dda661be6fa87bde4b6c949a0631b2dd43a1e73af46e022",
+    "content/question-bank/ssc/biology/chapter-11/questions.md": "b6ba619636c37775c5a17b97361cde6e852703d7cc58bee96ed9fe35b6fe819e",
+    "content/question-bank/ssc/biology/chapter-11/rebuild-cq.json": "105a4a53deb6e963ac81395a63255416676c4b42c86868e8b626d09bd32ac578",
+    "content/question-bank/ssc/biology/chapter-11/rebuild-mcq.json": "d31557f1a22cb07cd70a02cb8f19223668bd0b62af011c1fd32b589c52bf80bd",
+    "content/question-bank/ssc/biology/chapter-11/rebuild-sq.json": "c7cd788bb5dd7f18c9d51c2c33b388fbbbc9589fe44423614e7441cdd6365ece",
+    "content/question-bank/ssc/biology/chapter-11/source-ledger.json": "1532d620bc3112813d27a493d8517e1756e75f8742fe619f9648f091a5d4652c",
+    "content/question-bank/ssc/biology/chapter-2/assets/mitochondrion.svg": "dbe50c47f46bf1e957547c6f1ed404e3af72bbbda49b36f3aa5238d632c93032",
+    "content/question-bank/ssc/biology/chapter-2/assets/neuron.svg": "5ed16494d4cc93b62cdb96a8607db8261eaae0de8643949bb3cc47edbc767ec2",
+    "content/question-bank/ssc/biology/chapter-2/assets/plant-cell.svg": "bdd2207c21a39db7739a404d1d5f0933ff1fd448eb859790cffa05e3b4eecea9",
+    "content/question-bank/ssc/biology/chapter-2/draft-validation.json": "e177f6414c9cb32d8a8a4c7eb60558e0e85a71335d96509e8ff06d953402991f",
+    "content/question-bank/ssc/biology/chapter-2/questions.md": "66db306b2c4789340f8e9d5a4d6c8bcb2478e4a3be6733b56b973dc00d4b729b",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea",
+    "content/question-bank/ssc/biology/chapter-2/source-ledger.json": "1e4f438a3d808313984ec2768d2e7aaf1a3e113550b91391210babfdbd771a3b",
+    "content/question-bank/ssc/biology/chapter-3/assets/meiotic-anaphase.svg": "732004dff9737e8af492cda267634786cc6fb823dcb97afbfb70357a35f7e04b",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-anaphase.svg": "6d21067ec6a8b96c74746c7ff20553569b060017f510628a9366e08a1a5363a6",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-metaphase.svg": "0836c541f625af3cc00de2cd3794fc32f9e8596a8f5863b9df53b6d5a16a19ee",
+    "content/question-bank/ssc/biology/chapter-3/draft-validation.json": "586f77947b0971649115a438c08a8c7e9e2f89e3b042828c11bc82467c36bb88",
+    "content/question-bank/ssc/biology/chapter-3/questions.md": "72aa3d7659a2b00eb53871765551797a5e3a4ce09190852c590082e5a21c1b73",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": "717de995fad7ed5f01151b7f9971e7df7da32029180406bc65fe908fa57689ce",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": "20af772f34f14cd19a9c996b0e81dc1f7b2620119a23f7018e0ad2ca9296623e",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": "b4425f241fec444f5024a8979c12ceaba08362ce2a0997b292a93e7876ee19cc",
+    "content/question-bank/ssc/biology/chapter-3/source-ledger.json": "ae33cc99ea6e380bb213086c7af2062f1da6b441a7d3c67ae6b95aa5d885d7a0",
+    "content/question-bank/ssc/biology/chapter-4/assets/chloroplast-stages.svg": "b485f1e90497f5223bd2a35e93fc3e4aef29120d375fd6fdb9c65dd701500f19",
+    "content/question-bank/ssc/biology/chapter-4/assets/light-starch-test.svg": "eeafcfb56e5935c85adae7bf2b910708661b19b633d208dd3d8108d3e87dbf4b",
+    "content/question-bank/ssc/biology/chapter-4/assets/respiratory-coupling.svg": "6c166230a1a2595fbb772cc59493eaf64a7b6d03da97aefa7ce41854840f1fe6",
+    "content/question-bank/ssc/biology/chapter-4/draft-validation.json": "968e60c84885335a48542ba9e270943e25fbc3b2cadf0a3ea76e2d735127c3ba",
+    "content/question-bank/ssc/biology/chapter-4/questions.md": "61fb0ad785972b5ff81b6cdcce284d2fbf267e4db8635f657cdddb5f252bde92",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "24b07838b0ee9ea78964ac036ce8a664a357629735d8518dca7d7dc2d3de5ae6",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "9d539eed6618761cb61c553d8562fabd773cbb8e00ee6f154322fcb6bab18960",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "da3f331139c88863465e3f4083b80e49b03fe5e2f04ddb7e5a2630db09851202",
+    "content/question-bank/ssc/biology/chapter-4/source-ledger.json": "4961709e54e3d64692d42bfa82f9643f0cc42523b0bf903d0e85e0520baabab6",
+    "content/question-bank/ssc/biology/chapter-5/assets/digestive-routes.svg": "4962db983e88ff022c71d1eaaa73dbb833b13f0f2331e13c1ded3b5d7d73b268",
+    "content/question-bank/ssc/biology/chapter-5/assets/fat-digestion.svg": "064fdf29dfeb817a7143338e513e07ebfe9674464d4f74d78be5b9d93a47a184",
+    "content/question-bank/ssc/biology/chapter-5/assets/villus-transport.svg": "57b28511293a93b69f96f5e877e681010be6b8d46333797b8fe540d2366d36cc",
+    "content/question-bank/ssc/biology/chapter-5/draft-validation.json": "69d4eb9ea81a63616bedaeaf2723b2c231b8c4d3f911f8a36bf32f7615485495",
+    "content/question-bank/ssc/biology/chapter-5/questions.md": "91f647e9d44e7c860ddf955f5faab5a356ae0b6135bb252cdb388d7066593bdc",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": "eeb6315e91b39c0644f701590d8b2657874a42a1123a1debdf07fa6a655d6aa5",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": "8267f25598c4edc48eba3d8d337b8e24571d449dad055c017ee9e3767bf8472f",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": "a20da8e8c18d19615ba5f0c63ac98bc44839f658430853a15f29e67c06b984c2",
+    "content/question-bank/ssc/biology/chapter-5/source-ledger.json": "044c444a304cb3b9cf1d8bcbc7e535cd4e01ea5ea611904cd6fb37ac0178a88a",
+    "content/question-bank/ssc/biology/chapter-6/assets/double-circulation.svg": "23bcb78ae7ca7dccba0ce42233eebf10cd1a5ee8db437dfdc8b927b6864cc5a8",
+    "content/question-bank/ssc/biology/chapter-6/assets/vessel-functions.svg": "3aeee4f911cacfedb3783c04f0342af5317845234aa623595e58710d47a10b9b",
+    "content/question-bank/ssc/biology/chapter-6/assets/xylem-tension.svg": "42773fc91488cdefe130bbd055daa57996b1e10905d93aadb48e55c538f556b0",
+    "content/question-bank/ssc/biology/chapter-6/draft-validation.json": "b06158deccef3e1ea5e59e5ec6f1b420ae92d60db0561a32379f4b3f7081fd7c",
+    "content/question-bank/ssc/biology/chapter-6/questions.md": "1021d421c7e5c13dc690a8b311945816c08b50b288691964193307e681799393",
+    "content/question-bank/ssc/biology/chapter-6/rebuild-cq.json": "7572c838e6cc08152fdd24428afcf92567731ddf378f5ab945e88a93c392d251",
+    "content/question-bank/ssc/biology/chapter-6/rebuild-mcq.json": "fd819e80853c70e074c8a8626e4e5ab9c0c5be831340ba4208a672e2c99f5db3",
+    "content/question-bank/ssc/biology/chapter-6/rebuild-sq.json": "120fbfde3b7622033f63491ea241ef15fff485a4c68f05cd7804980aacf39457",
+    "content/question-bank/ssc/biology/chapter-6/source-ledger.json": "54f1fb2a0a0eb0794a60a1fa6488f951202aa3ab69ec64dae230ff32a0a808f2",
+    "content/question-bank/ssc/biology/chapter-7/assets/alveolar-exchange.svg": "56596d5181f052481f4ec1f68da7104aa087157a4214ff9b8780f78f1d8fc4c3",
+    "content/question-bank/ssc/biology/chapter-7/assets/inspiration-mechanism.svg": "6201de2904957af7cc0a75ae246e0941ad4653df66f78aaacd5ec62a48c5a96e",
+    "content/question-bank/ssc/biology/chapter-7/assets/respiratory-route.svg": "122eae7694e5641aeb5cc26ec192121a0bca18ca29bb975e4c6364fd5c36ec39",
+    "content/question-bank/ssc/biology/chapter-7/draft-validation.json": "f217b47a8bec4cf3b9ab26feb1b65b5eedec4a72f7fd713fbe3c4ef0d6b24630",
+    "content/question-bank/ssc/biology/chapter-7/questions.md": "eb2e14fd099876ed4d900fe97ccbcd1cd756af44e6dafe4996ad513f48644879",
+    "content/question-bank/ssc/biology/chapter-7/rebuild-cq.json": "cae98f5095ddbff63a74ac79c32d56f90684d002e3ab9ac8c7dfd6bd8c4d86f3",
+    "content/question-bank/ssc/biology/chapter-7/rebuild-mcq.json": "f9d930d3274d4e2843972ff7860272abe909ee013286b85f9de63b2db812d13f",
+    "content/question-bank/ssc/biology/chapter-7/rebuild-sq.json": "650aed0d9aa3fece43efc27b2ea860ebf03d0c7d9a1a372ca850ba6ff2eb333f",
+    "content/question-bank/ssc/biology/chapter-7/source-ledger.json": "e5cbc2cb67cc7e97b2a43f4cee9cdbd1627cb7c738005e89c4ac4276cf1beff9",
+    "content/question-bank/ssc/biology/chapter-8/assets/dialyzer-exchange.svg": "c149903309608e677ec20cc5d753c5932ca92025613a5dde7f3362de4d06ecec",
+    "content/question-bank/ssc/biology/chapter-8/assets/kidney-section.svg": "75c18dfceeb1e3be1e0826170a59c87b8ba4ccc5da360f0681727cd302102818",
+    "content/question-bank/ssc/biology/chapter-8/assets/nephron-pathways.svg": "168c5c4d6d0dc5da5eb6fec984e53a86c7222e822073c82e8b4a48a7758eb74c",
+    "content/question-bank/ssc/biology/chapter-8/draft-validation.json": "f10a4e843bb3973f5fb9129e5a3defe59e3cab8e81c2b1b75dbe73830154e68a",
+    "content/question-bank/ssc/biology/chapter-8/questions.md": "1d5f12103b05125e9ab755a4024a4b97fe36cbf0ad4bfab8d025eeb36a9cbf51",
+    "content/question-bank/ssc/biology/chapter-8/rebuild-cq.json": "092146aca6a9a5ae083ac735bb5cfb297a0f7faa1f065028ffa359f3fb6d310d",
+    "content/question-bank/ssc/biology/chapter-8/rebuild-mcq.json": "01c7d80914e38dd89d14599ac696d66a1176d4b010e0b8d91d8e05f7c268c20e",
+    "content/question-bank/ssc/biology/chapter-8/rebuild-sq.json": "fa5f91e81b4a6fbf361fc44b1effbc04b2fcbb64380b1837788526d791971cb2",
+    "content/question-bank/ssc/biology/chapter-8/source-ledger.json": "6129c440d7793639c60c3714f97dbccd74d842523195bcf6cff95dbcd0007f30",
+    "content/question-bank/ssc/biology/chapter-9/assets/elbow-antagonists.svg": "e9426771fb501b40d21432c3bd74cb57650680d92ca0640fdd8cad4de6429a13",
+    "content/question-bank/ssc/biology/chapter-9/assets/skeleton-regions.svg": "d31ffb050d8d9857096da613a2151f3018d068c7ec08d84b8b0bdffe0a1bad32",
+    "content/question-bank/ssc/biology/chapter-9/assets/synovial-joint.svg": "6389404affa14bb445fe20f3d616e8edf3a5ca402237b2f5a696f079df4b88d4",
+    "content/question-bank/ssc/biology/chapter-9/draft-validation.json": "6dc06e716f8f6a5508bc0740a84671f5264cc12ead222259059275b87c01ff5a",
+    "content/question-bank/ssc/biology/chapter-9/questions.md": "48a0a5f1eb2319d5cea0b4fee17720a673b7a0aaef2c143d3f37bc4cb5f32eb6",
+    "content/question-bank/ssc/biology/chapter-9/rebuild-cq.json": "f08582fcbcc99cfe5dd137c35ebe27c6adf2162d5525bbef54d21ac7612aff35",
+    "content/question-bank/ssc/biology/chapter-9/rebuild-mcq.json": "22ba05ee52249e650bcc849e67f406325ac0695ffca968166b9bbc3a7237ae82",
+    "content/question-bank/ssc/biology/chapter-9/rebuild-sq.json": "46ba2cc22f578044bbeaa87a08eeb088550acbfd0ae615db6fc8f83f316858bc",
+    "content/question-bank/ssc/biology/chapter-9/source-ledger.json": "7769c29a195829fba18eb813acfd99bb6f2e26a0bbf46e4ec5536ed256281077",
+    "docs/question-bank/ssc-biology/chapter-1.html": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae",
+    "docs/question-bank/ssc-biology/chapter-10.html": "0e3e8c951bf7f1c5e2902fcc921873f0a6fe5e370d2d764ac0de44fdac8d7fe4",
+    "docs/question-bank/ssc-biology/chapter-11.html": "9b2279ab3152a3d49b39e6770a2b2ced52b118b6b600c2e68c85c7de9271b152",
+    "docs/question-bank/ssc-biology/chapter-2.html": "c7a10f24d123137c2070f6a7b2f2081eda3e822afdb05f2ae155f39584833aae",
+    "docs/question-bank/ssc-biology/chapter-3.html": "cb72c69f86b9e55f613b1d90cae46b17553dddfbaa9c7203471fe203ac57c1c2",
+    "docs/question-bank/ssc-biology/chapter-4.html": "cefe87f398ba27ee9afc8c4ba0422f45d65bd02bf14b222d0b665d66d3017da8",
+    "docs/question-bank/ssc-biology/chapter-5.html": "e2255f2769cbb3ae50a26fe2806443bd64327491f96e9cada03d029d6fe3529f",
+    "docs/question-bank/ssc-biology/chapter-6.html": "43ca78bb1a7b4d4683e64a0fe8ca8c7fe0c05c0393ab46e7155c1a07ee92921f",
+    "docs/question-bank/ssc-biology/chapter-7.html": "162f1a32238d6664e62bd9aacd3d7e781b9771e7907698d69c8ca2f8c8fb23d4",
+    "docs/question-bank/ssc-biology/chapter-8.html": "0f6f27e325822d4a9d94766b77b68696d3432257296944bd8eee053ce6c90ecb",
+    "docs/question-bank/ssc-biology/chapter-9.html": "7668d3544962d502807a985a4adb1b64b296f24e7feac58f86cf66911d8e36ce"
+  },
+  "authoringRows": {
+    "chapter-12-cq-b.txt": 25,
+    "chapter-12-cq.txt": 25,
+    "chapter-12-mcq-b.txt": 100,
+    "chapter-12-mcq.txt": 100,
+    "chapter-12-sq.txt": 70
+  },
+  "mcqKeys": {
+    "D": 50,
+    "C": 50,
+    "A": 50,
+    "B": 50
+  },
+  "diagrams": {
+    "count": 4,
+    "hashes": {
+      "content/question-bank/ssc/biology/chapter-12/assets/ancestry-tree.svg": "0ba8b6f6589fe61678dde4e5810fbc8f879d905a607003ccfc7a7720034c84b1",
+      "content/question-bank/ssc/biology/chapter-12/assets/dna-pairing.svg": "ba0b8f2b0b5d719405ec1ad03ffb0e76d82019a6d792f1677b5e02035edd3b0c",
+      "content/question-bank/ssc/biology/chapter-12/assets/mendel-grid.svg": "8dd9f6732a3d636c62f134c8887e519e7d03c56deb9d816fc1008b1119d99697",
+      "content/question-bank/ssc/biology/chapter-12/assets/replication-strands.svg": "6562e92643aeb5e1c9024f185a7397ed33e906206d89f7ad3a174107523adeec"
+    },
+    "origin": "original_editorial_diagram",
+    "actualCqAttachments": 4,
+    "rasterizedWith": "@resvg/resvg-js",
+    "authorVisualInspection": true,
+    "productionIntegration": false,
+    "notes": "Four original diagrams rendered and author-inspected. DNA flat ladder explicitly not a scaled helix, antiparallel labels and 2/3 hydrogen-bond lines. Monohybrid grid probabilities not four compulsory births. Replication tracks original O1/O2 separately from N1/N2 used as subsequent templates; dashed style denotes all nonoriginal strands. Rooted tree displays shared ancestry, all tips modern and branch lengths not time-scaled. Bengali written equivalents in each stimulus."
+  },
+  "lexicalScreen": {
+    "method": "Same-type stem word-bigram Jaccard >=0.40; NFKC/lowercase; punctuation removed except Bengali range; all 320 chapter-12 stems",
+    "candidates": [
+      {
+        "type": "MCQ",
+        "first": 88,
+        "second": 110,
+        "jaccard": 0.4,
+        "firstStem": "উদ্ভিদে polyploidy বলতে কী বোঝায়?",
+        "secondStem": "অ্যালিল বলতে কী বোঝায়?",
+        "authorDisposition": "Retained: polyploidy (complete chromosome sets) versus allele (alternative gene version); generic Bengali definition question syntax, distinct biological scales. Not independent semantic/distractor clearance."
+      },
+      {
+        "type": "MCQ",
+        "first": 119,
+        "second": 137,
+        "jaccard": 0.5,
+        "firstStem": "DNA-এর শর্করা কোনটি?",
+        "secondStem": "RNA-এর শর্করা কোনটি?",
+        "authorDisposition": "Retained: DNA deoxyribose versus RNA ribose, separate chemical targets needed for a direct comparison; shared short syntax. Not independent semantic/distractor clearance."
+      }
+    ],
+    "candidatePairs": 2,
+    "exactUniqueStems": 320,
+    "semanticCertification": false
+  },
+  "technicalValidation": {
+    "expectedTests": 105,
+    "result": "PASS",
+    "fullAppBuildClaimed": false,
+    "executedTests": 105,
+    "passed": 105,
+    "failed": 0,
+    "testLogSha256": "e66af4f3a9ae5233e66d8edf49e8d00977288607c2a848325533700d9932a13c",
+    "command": "NODE_PATH=\"$PWD/.cache/biology-test-tools/node_modules\" node --test tests/ssc-biology*.test.cjs"
+  },
+  "incrementalBackup": {
+    "fileId": "1yVUMrvPYTPs6y3LmMuhCfIH1DIZKFdTt",
+    "name": "ssc-biology-chapter-12-authoring-checkpoint-v1.zip",
+    "bytes": 53234,
+    "md5": "a5b927b7f1d1830c045259860d883f1d",
+    "independentRemoteGetVerified": true,
+    "folder": "1VzEQ1ZfNNLE2ZYzEXdpS0azgiA4E8_Y5",
+    "scope": "200 MCQ/50 CQ/70 SQ authoring rows before mixed-script spacing and normalized-option corrections; no figures, generated artifacts or final validation. Full final archive separately versioned and verified."
+  },
+  "contentSafeguards": [
+    "Chromosome-DNA-gene relation; homologous loci do not require identical alleles. Individual diploid locus generally two copies versus population multiple alleles. Gene product may be functional RNA, not every gene one protein/one visible trait. Polygenic and environmental effects; no intelligence ranking or simplistic human tongue-rolling pedigree.",
+    "DNA sugar-phosphate backbone vs complementary bases; A-T two and G-C three hydrogen bonds, antiparallel direction. Whole double-strand A=T/G=C not obligatory in one strand. B-DNA classroom values ~10bp per turn, 20 nucleotides not ten, .34nm spacing/3.4nm pitch/2nm width explicitly approximate.",
+    "DNA vs RNA sugars and T/U, RNA commonly single-stranded but folded; RNA-genome viruses acknowledged without first-life claim. mRNA/tRNA/rRNA separate roles. DNA replication versus RNA transcription versus ribosomal translation; not every protein goes through ER/Golgi.",
+    "Semiconservative replication refers to each immediate parent, not permanent original-isotope labels. One molecule two cycles four molecules, two carry original labeled strands. Meselson-Stahl first hybrid band excludes conservative but alone not dispersive; second-generation hybrid/light distinguished. Enrichment, no student isotope experiment.",
+    "S-phase DNA quantity versus centromere-based chromosome count distinguished. Somatic vs germline mutation; new alleles vs recombined old alleles. Mutation effects variable and not needs-directed; repair reduces not eliminates errors.",
+    "Mendel TT x tt required for all Tt F1; Tt x Tt genotype1:2:1 and phenotype3:1 under full dominance and other assumptions. Dominance not commonness, value or utility. Recessive allele hidden not lost. Tall F2 conditional2/3Tt. Testcross recessive partner and small-sample all-dominant ambiguity.",
+    "Punnett cells probabilities not compulsory birth sequence; every pregnancy separately. Dihybrid independence conditional, linkage exception tagged enrichment. Incomplete/codominance distinguished. Genetic and environmental phenotype variation not automatically new species.",
+    "Identity profiling selected variable markers, not necessarily full genome or radioactive probes. PCR amplification versus size separation; smaller DNA fragments farther in standard gel toward positive electrode. Same size not identical sequence, one marker insufficient for paternity or forensic conviction. Simple fictional paternity models explicitly ignore mutation/error.",
+    "Nucleated cells usual nuclear DNA sources, mature human erythrocytes no nucleus; hair shaft vs root limits. Mixtures/contamination and chain of custody; instrument quality cannot repair uncertain specimen labels. Standard STR often cannot distinguish monozygotic twins. No clandestine classmate samples or real-family accusations.",
+    "Genetic-test negative not all risks excluded; positive may indicate risk/carrier not inevitable disease. Scope, variant/penetrance and counselling. Voluntary informed consent, family privacy, reidentification risk despite deidentification, controlled access; US privacy law not assumed universal.",
+    "Typical XX/XY,22 autosomes+X egg versus22+X/Y sperm; roughly equal probability model, independent births. Sex development also involves autosomal genes and biological variation; model not every person or identity. Neither parent consciously chooses gamete fusion, no blame or sex-based inequality.",
+    "X-linked inheritance father gives Y to typical son, X to daughter; conditional risk among sons vs all offspring distinguished. Females can be affected and carriers symptomatic. Not all color vision deficiency X-linked or inherited; red-green impairment not total blindness. Sudden changes need eye evaluation, lenses not universal cure; accessible charts use symbols/text.",
+    "Thalassemia globin not globulin and not synonymous with iron deficiency. Alpha vs beta and variable severity; trait not necessarily major illness. Simple beta autosomal-recessive25/50/25 per pregnancy; AA x Aa no aa only within stated locus model. Four alpha gene copies/both chromosome arrangement matter, enrichment not same one-pair model.",
+    "No contagious-thalassemia stigma. No unsupervised iron or chelation dose, no stopping prescribed transfusions. Repeated transfusion iron burden and individualized monitoring. No fixed short lifespan, blanket food bans, obsolete only-cure declaration or personal prognosis. Voluntary counselling no reproductive coercion or marriage ban.",
+    "Hemophilia A factorVIII versus B factorIX clotting, not thalassemia globin. X-linked model has exceptions/new mutations and female symptoms; enrichment, no dosing or provoked bleeding test.",
+    "Evolution population inherited frequency changes, not individual growth/training/acclimatization. Allele count denominators explicit:40/100 vs80/200 same.10% to60% increase50 percentage points versus relative500%. Selection heritable variation/differential reproduction not conscious strongest-only struggle; fitness not moral worth.",
+    "Resistance is microbial trait, not patient choosing resistance; variants selected not taught a directed mutation by drug. No antibiotic/pesticide selection experiments or prescription changes. Drift/gene flow additional processes, neither frequency change nor two samples alone proves selection.",
+    "Adaptations environment-dependent, no promised progress/perfection or guaranteed survival/speciation. Fossil record incomplete with preservation bias, not no evidence. Homology structure/history vs analogous flight function; vestigial not necessarily functionless. Multiple DNA/fossil/morphology evidence and uncertainty of particular ancestral claims.",
+    "Tree modern human and modern chimpanzee share an ancestor, not modern chimpanzee directly human parent. Root/branch points not moral ladder; branch lengths in original diagram unscaled. Geographic isolation reduces flow but not instant species; reproductive isolation and species-concept limits. Hybrid alone not stable species; polyploid example conditional enrichment.",
+    "Origin-of-life chemistry distinct from subsequent biological evolution. Amino acids in model not whole life or all historical steps. Multiple origin hypotheses, no certain first modern virus, virus-to-bacterium-to-human ladder or Earth-detached-from-Sun claim. Darwin/Wallace contributions and1859 separate from later Mendelian/DNA mechanisms."
+  ],
+  "sourcesRead": [
+    {
+      "url": "https://www.biologybd.com/9t12.html",
+      "scope": "all six fetched chunks0–5; secondary OCR chapter and exercises; no copied exercise or reconstructed missing figure"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits",
+      "scope": "chunk2"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing",
+      "scope": "chunk2"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication",
+      "scope": "chunk1"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution",
+      "scope": "chunks2–3"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species",
+      "scope": "chunk2"
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution",
+      "scope": "chunk2"
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/thalassemia",
+      "scope": "chunk0 full; causes and treatment subpages chunk0 full; treatment page2022 wording only cure intentionally not used"
+    },
+    {
+      "url": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/color-blindness",
+      "scope": "chunk0; redirected from older learn-about-eye-health URL"
+    },
+    {
+      "url": "https://medlineplus.gov/genetics/understanding/testing/genetictesting/",
+      "scope": "chunk0 full"
+    },
+    {
+      "url": "https://www.genome.gov/about-genomics/policy-issues/Privacy",
+      "scope": "chunk0; privacy risks not US-law advice for Bangladesh"
+    },
+    {
+      "url": "https://www.cdc.gov/hemophilia/about/index.html",
+      "scope": "chunk0; inherited A/B and female symptom qualifications"
+    }
+  ],
+  "limitations": [
+    "Original answered practice drafts, not official board/school/year questions, not official NCTB edition/page verification. BiologyBD OCR contains scientific/clinical/history errors deliberately corrected or omitted. No external source images copied.",
+    "Selected OpenStax chunks only, not whole textbook/sections; clinical pages background not medical prescription. Failed NHGRI genetic-testing fact-sheet fetch not evidence; MedlinePlus successful alternative used. Irrelevant sitewide banners excluded.",
+    "Detailed phosphodiester bonds, pleiotropy, tRNA/rRNA, enzymes/repair, isotope experiments, transcription sequence, codominance/incomplete dominance, linkage/dihybrid probability, gel polarity, alpha four-copy genetics, hemophilia, drift/gene flow and polyploidy are marked or described as enrichment. Independent SSC depth/terminology alignment remains open.",
+    "Two lexical candidates retained by author for different targets; lexical screen not semantic uniqueness or distractor plausibility certification. Cross-type concept recurrence deliberate, no claim320 independent learning objectives.",
+    "Four English-labeled relevant CQ schematics with Bengali written equivalents, author raster inspection not independent science review. Reader is offline draft only; no app import, registration, approval, publication, full application build or deployment."
+  ],
+  "textbookChapterRead": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false
+}

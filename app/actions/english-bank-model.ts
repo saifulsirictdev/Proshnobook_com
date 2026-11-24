@@ -22,7 +22,7 @@ export async function prepareEnglishBankModel(grade: number, itemIds?: string[],
       ? stock.filter(d => d.selection.modelStyle === "class8-reference-v1") : stock;
     const assembled = assembleEnglishItems(compatibleStock, grade, Math.random, itemIds, parsedFilter.data, paper);
     const chosen = assembled.draft;
-    if (!chosen) return { ok: false as const, reason: "MISSING_APPROVED_ITEMS" as const, missingIds: assembled.missing, error: `এই শ্রেণির প্রশ্নভান্ডারে কিছু অংশ এখনো প্রস্তুত নেই${parsedFilter.data.school ? ` (স্কুল: ${parsedFilter.data.school})` : parsedFilter.data.examYear ? ` (বোর্ড পরীক্ষার সাল: ${parsedFilter.data.examYear})` : ""}। অনুগ্রহ করে পরে আবার চেষ্টা করুন।` };
+    if (!chosen) return { ok: false as const, reason: "MISSING_APPROVED_ITEMS" as const, missingIds: assembled.missing, reuse: assembled.reuse, error: `এই শ্রেণির প্রশ্নভান্ডারে কিছু অংশ এখনো প্রস্তুত নেই${parsedFilter.data.school ? ` (স্কুল: ${parsedFilter.data.school})` : parsedFilter.data.examYear ? ` (বোর্ড পরীক্ষার সাল: ${parsedFilter.data.examYear})` : ""}। অনুগ্রহ করে পরে আবার চেষ্টা করুন।` };
     const draft = validateEnglishDraft({ ...chosen, name: `Class ${grade} — ${itemIds ? "Selected Question Items" : "Full Model Test"}`, header: chosen.header, updatedAt: new Date().toISOString() });
     const key = englishOwnerPrefix(user.id) + randomUUID();
     await db.setting.create({ data: { key, value: JSON.stringify(draft) } });

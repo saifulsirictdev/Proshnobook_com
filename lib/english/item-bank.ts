@@ -67,7 +67,11 @@ export function assembleEnglishItems(stock: EnglishDraft[], grade: number, rando
     selected.push(part);
     if (group.startsWith("seen-")) seenTexts.add(part.selection.sources[group].text.trim());
   }
-  if (missing.length) return { missing, draft: null };
+  if (missing.length) return { missing, draft: null, reuse: {
+    modelStyle: style ?? selected[0]?.selection.modelStyle,
+    sources: Object.assign({}, ...selected.map(d => d.selection.sources)) as EnglishDraft["selection"]["sources"],
+    writing: Object.assign({}, ...selected.map(d => d.selection.writing)) as EnglishDraft["selection"]["writing"],
+  } };
   const base = selected[0];
   const draft = validateEnglishDraft({ ...base, name: `Class ${grade} — Full Model Test`, selection: { ...base.selection, mode: itemIds ? "selected" : "full", itemIds: itemIds ? requested.map(i => i.id) : [], sources: Object.assign({}, ...selected.map(d => d.selection.sources)), writing: Object.assign({}, ...selected.map(d => d.selection.writing)) }, output: { passages: selected.flatMap(d => d.output.passages), tasks: requested.map(i => selected.flatMap(d => d.output.tasks).find(t => t.id === i.id)!) } });
   validateEnglishReferenceShape(draft.selection, draft.output);

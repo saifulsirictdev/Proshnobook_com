@@ -7,6 +7,7 @@ function load(path, mocks = {}) {
   const m = new Module(path, module);
   m.paths = module.paths;
   m.require = (name) =>
+    name === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     mocks[name] ||
     (name === "@/lib/marketplace-raster"
       ? load("lib/marketplace-raster.ts")

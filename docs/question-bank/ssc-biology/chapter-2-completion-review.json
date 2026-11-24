@@ -1,0 +1,2458 @@
+{
+  "date": "2026-11-20",
+  "chapter": 2,
+  "topic": "জীব কোষ ও টিস্যু",
+  "baseline": "5a16ef5",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "added": {
+    "MCQ": 170,
+    "CQ": 45,
+    "SQ": 50
+  },
+  "baseline55ItemsRetainedVerbatim": true,
+  "unchangedFiles": {
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6",
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/questions.md": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22",
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-1/validation.json": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": "0b8fc6bdfd274fd07b9d676e071a4684b318cc426606b8c3150bd9965cb183d1",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": "c54c90b06ebe852072425d12488e0ac798144001618fa7047910d7410f5bd60e",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": "b39de69ac2e9a5febc1a7f7077754a4cb3719c327892683d8122bf10adcdf9f8",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "0223246cb2e332c27d725860d8735d87f885ea995ec459c47d40f24aab226817",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "bd10d77efe049eea7d95ce44f84a903f6a2541931e47e93d4f5d5aff4773c99b",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "e983e76d0534c773a1847833390b4348c1af51790401cba5a7f1e4a65b3cfa53",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": "45623a8deda349b21a2c80d3bc8909df098b543ca58ad6865b16e58d52c49620",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": "6ae8e1a8e0b069df426c7f428b0437e71a05f76d84cbc93fbf7b95a69a635fc8",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": "c6313f93ac2c9ea22777decd7a71eec8f5a2ab1bc32c218bf8247fe8e988a980",
+    "docs/question-bank/ssc-biology/chapter-1.html": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae"
+  },
+  "source": {
+    "url": "https://www.biologybd.com/9t2.html",
+    "chunksRead": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5"
+    ],
+    "officialTextbookFullyRead": false
+  },
+  "diagrams": {
+    "origin": "original_editorial_diagram",
+    "files": [
+      "plant-cell.svg",
+      "mitochondrion.svg",
+      "neuron.svg"
+    ],
+    "renderedLayoutVisuallyChecked": true,
+    "bengaliWrittenEquivalents": true,
+    "productionIntegration": false
+  },
+  "lexicalScreen": {
+    "method": "same-type whitespace word-bigram Jaccard",
+    "threshold": 0.4,
+    "candidates": [
+      {
+        "kind": "mcq",
+        "indices": [
+          1,
+          2
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          2,
+          6
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          2,
+          8
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          2,
+          10
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          2,
+          11
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          2,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          3,
+          6
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          3,
+          8
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          3,
+          10
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          3,
+          11
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          3,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          4,
+          6
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          4,
+          8
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          4,
+          10
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          4,
+          11
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          4,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          5,
+          6
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          5,
+          8
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          5,
+          10
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          5,
+          11
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          5,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          7
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          8
+        ],
+        "jaccard": 0.6,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          9
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          10
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          11
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          12
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          19
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          6,
+          20
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          7,
+          8
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          9
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          10
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          11
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          12
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          19
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          8,
+          20
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          9,
+          10
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          9,
+          11
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          9,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          10,
+          11
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          10,
+          12
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          10,
+          19
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          10,
+          20
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          11,
+          12
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          11,
+          19
+        ],
+        "jaccard": 0.4545,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          11,
+          20
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          13
+        ],
+        "jaccard": 0.5385,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          14
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          15
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          16
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          17
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          18
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          19
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          12,
+          20
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          13,
+          14
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          13,
+          15
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          13,
+          17
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          13,
+          20
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          14,
+          15
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          14,
+          16
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          14,
+          17
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          14,
+          18
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          14,
+          20
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          15,
+          16
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          15,
+          17
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          15,
+          18
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          15,
+          20
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          16,
+          17
+        ],
+        "jaccard": 0.6154,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          16,
+          20
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          17,
+          18
+        ],
+        "jaccard": 0.4,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          17,
+          20
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          18,
+          20
+        ],
+        "jaccard": 0.4286,
+        "involvesNew": false
+      },
+      {
+        "kind": "mcq",
+        "indices": [
+          19,
+          20
+        ],
+        "jaccard": 0.4167,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          2
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          3
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          4
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          5
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          6
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          7
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          8
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          9
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          10
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          11
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          12
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          13
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          14
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          15
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          16
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          17
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          18
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          19
+        ],
+        "jaccard": 0.4444,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          1,
+          20
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          3
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          4
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          5
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          6
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          7
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          8
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          9
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          10
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          13
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          2,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          4
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          5
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          6
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          7
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          8
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          9
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          10
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          13
+        ],
+        "jaccard": 0.5909,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          18
+        ],
+        "jaccard": 0.619,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          3,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          5
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          6
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          7
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          8
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          9
+        ],
+        "jaccard": 0.65,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          10
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          13
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          4,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          6
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          7
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          8
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          9
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          10
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          13
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          5,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          7
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          8
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          9
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          10
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          11
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          12
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          13
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          14
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          15
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          16
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          17
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          18
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          19
+        ],
+        "jaccard": 0.4444,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          6,
+          20
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          8
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          9
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          10
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          11
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          12
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          13
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          14
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          15
+        ],
+        "jaccard": 0.5652,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          16
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          17
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          18
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          19
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          7,
+          20
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          9
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          10
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          13
+        ],
+        "jaccard": 0.5909,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          8,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          10
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          11
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          12
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          13
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          14
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          15
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          16
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          17
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          18
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          19
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          9,
+          20
+        ],
+        "jaccard": 0.5714,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          11
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          12
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          13
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          10,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          12
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          13
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          14
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          15
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          16
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          17
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          18
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          19
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          11,
+          20
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          13
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          14
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          12,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          14
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          15
+        ],
+        "jaccard": 0.5,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          16
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          17
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          18
+        ],
+        "jaccard": 0.5909,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          19
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          13,
+          20
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          15
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          16
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          14,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          15,
+          16
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          15,
+          17
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          15,
+          18
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          15,
+          19
+        ],
+        "jaccard": 0.4615,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          15,
+          20
+        ],
+        "jaccard": 0.5217,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          16,
+          17
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          16,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          16,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          16,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          17,
+          18
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          17,
+          19
+        ],
+        "jaccard": 0.5417,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          17,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          18,
+          19
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          18,
+          20
+        ],
+        "jaccard": 0.5455,
+        "involvesNew": false
+      },
+      {
+        "kind": "sq",
+        "indices": [
+          19,
+          20
+        ],
+        "jaccard": 0.48,
+        "involvesNew": false
+      }
+    ],
+    "independentSemanticReview": false,
+    "limitations": "Inherited template wording yields candidates wholly inside the restored 55; no new-involving pair meets threshold. Related concepts recur across types. Lexical screening cannot certify semantic uniqueness."
+  },
+  "technicalTests": 29,
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "approved": false,
+  "published": false,
+  "websiteImported": false,
+  "limitations": [
+    "Distractor plausibility and CQ higher-order depth require expert review.",
+    "Secondary web scope is not independently certified official syllabus coverage.",
+    "Technical correctness does not certify all biological content."
+  ]
+}

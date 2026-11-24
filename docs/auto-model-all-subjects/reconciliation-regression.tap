@@ -1,0 +1,2776 @@
+TAP version 13
+# Subtest: four exact ordered groups cover the existing SSC catalog without renaming subjects
+ok 1 - four exact ordered groups cover the existing SSC catalog without renaming subjects
+  ---
+  duration_ms: 3.585244
+  type: 'test'
+  ...
+# Subtest: streams show only their subjects; common math/English remain under General, not copied to all streams
+ok 2 - streams show only their subjects; common math/English remain under General, not copied to all streams
+  ---
+  duration_ms: 0.264145
+  type: 'test'
+  ...
+# Subtest: SSC requires a group before subjects; changing group clears subject, chapter and model choices
+ok 3 - SSC requires a group before subjects; changing group clears subject, chapter and model choices
+  ---
+  duration_ms: 893.24681
+  type: 'test'
+  ...
+# Subtest: math Auto Model route/marks contract is unchanged; stale or injected subject cannot navigate
+ok 4 - math Auto Model route/marks contract is unchanged; stale or injected subject cannot navigate
+  ---
+  duration_ms: 155.569948
+  type: 'test'
+  ...
+# Subtest: English follows its existing modes; group change and class change clear downstream selection
+ok 5 - English follows its existing modes; group change and class change clear downstream selection
+  ---
+  duration_ms: 91.947382
+  type: 'test'
+  ...
+# Subtest: Admission, Job and lower classes have no group selector; append retains its existing workflow
+ok 6 - Admission, Job and lower classes have no group selector; append retains its existing workflow
+  ---
+  duration_ms: 231.56101
+  type: 'test'
+  ...
+# Subtest: HSC catalog papers are all reachable, with common subjects separate and shared electives mapped explicitly
+ok 7 - HSC catalog papers are all reachable, with common subjects separate and shared electives mapped explicitly
+  ---
+  duration_ms: 2.440223
+  type: 'test'
+  ...
+# Subtest: HSC group precedes subjects; Auto Model routes to explicit syllabus setup without inheriting mathematics
+ok 8 - HSC group precedes subjects; Auto Model routes to explicit syllabus setup without inheriting mathematics
+  ---
+  duration_ms: 68.393815
+  type: 'test'
+  ...
+# Subtest: HSC common English retains the existing English modes and stream changes clear them
+ok 9 - HSC common English retains the existing English modes and stream changes clear them
+  ---
+  duration_ms: 61.873948
+  type: 'test'
+  ...
+# Subtest: catalog hide/re-publish/delete control new sales only, retain snapshot and receipt with audit
+ok 10 - catalog hide/re-publish/delete control new sales only, retain snapshot and receipt with audit
+  ---
+  duration_ms: 249.889039
+  type: 'test'
+  ...
+# Subtest: catalog metadata edit preserves snapshot, stale checkout terms change and stale admin request fails
+ok 11 - catalog metadata edit preserves snapshot, stale checkout terms change and stale admin request fails
+  ---
+  duration_ms: 70.702541
+  type: 'test'
+  ...
+# Subtest: catalog controls deny non-admin, pending teacher bypass, missing consent and roll back failed mutations
+ok 12 - catalog controls deny non-admin, pending teacher bypass, missing consent and roll back failed mutations
+  ---
+  duration_ms: 53.912293
+  type: 'test'
+  ...
+# Subtest: rollout probe reads approved subject stock only, assembles 20 models and never mutates or calls AI
+ok 13 - rollout probe reads approved subject stock only, assembles 20 models and never mutates or calls AI
+  ---
+  duration_ms: 1290.349235
+  type: 'test'
+  ...
+# Subtest: rollout probe fails closed on insufficient stock, truncated scans and DB errors
+ok 14 - rollout probe fails closed on insufficient stock, truncated scans and DB errors
+  ---
+  duration_ms: 28.07585
+  type: 'test'
+  ...
+# Subtest: every catalog class/subject can opt into an explicit syllabus; no guessed full marks or inherited math
+ok 15 - every catalog class/subject can opt into an explicit syllabus; no guessed full marks or inherited math
+  ---
+  duration_ms: 17.827605
+  type: 'test'
+  ...
+# Subtest: database stock completes exactly 30 unique MCQ exclusively from selected topics
+ok 16 - database stock completes exactly 30 unique MCQ exclusively from selected topics
+  ---
+  duration_ms: 80.119982
+  type: 'test'
+  ...
+# Subtest: a 28-question pool requests only the two missing MCQ, not a replacement model
+ok 17 - a 28-question pool requests only the two missing MCQ, not a replacement model
+  ---
+  duration_ms: 7.389395
+  type: 'test'
+  ...
+# Subtest: registered mathematics and physics keep their quotas and minimise AI rather than forcing empty-topic rotation
+ok 18 - registered mathematics and physics keep their quotas and minimise AI rather than forcing empty-topic rotation
+  ---
+  duration_ms: 88.680176
+  type: 'test'
+  ...
+# Subtest: written questions and per-question/part marks use the supplied syllabus, surviving save and print sections
+ok 19 - written questions and per-question/part marks use the supplied syllabus, surviving save and print sections
+  ---
+  duration_ms: 4.888983
+  type: 'test'
+  ...
+# Subtest: malformed, duplicate, incomplete and externally-dependent questions never count as stock
+ok 20 - malformed, duplicate, incomplete and externally-dependent questions never count as stock
+  ---
+  duration_ms: 0.916089
+  type: 'test'
+  ...
+# Subtest: server uses complete bank without AI, quota, settings mutation or leaking paid answers
+ok 21 - server uses complete bank without AI, quota, settings mutation or leaking paid answers
+  ---
+  duration_ms: 81.513447
+  type: 'test'
+  ...
+# Subtest: server fills just the gap into private unapproved rows, reuses checkpoints and returns only a full model
+ok 22 - server fills just the gap into private unapproved rows, reuses checkpoints and returns only a full model
+  ---
+  duration_ms: 24.187623
+  type: 'test'
+  ...
+# Subtest: auth, missing syllabus, DB failures, scan cap, locks and quotas fail closed before AI
+ok 23 - auth, missing syllabus, DB failures, scan cap, locks and quotas fail closed before AI
+  ---
+  duration_ms: 324.658728
+  type: 'test'
+  ...
+# Subtest: provider is bounded to requested gap and rejects duplicates, wrong types, missing answers and invented figures
+ok 24 - provider is bounded to requested gap and rejects duplicates, wrong types, missing answers and invented figures
+  ---
+  duration_ms: 30.295035
+  type: 'test'
+  ...
+# Subtest: setup UI requires selected topics and explicit human marks; no automatic default syllabus
+ok 25 - setup UI requires selected topics and explicit human marks; no automatic default syllabus
+  ---
+  duration_ms: 1.704296
+  type: 'test'
+  ...
+# Subtest: different written marks and overlapping topic scopes get distinct assignments and correct printed marks
+ok 26 - different written marks and overlapping topic scopes get distinct assignments and correct printed marks
+  ---
+  duration_ms: 4.011442
+  type: 'test'
+  ...
+# Subtest: setup checkbox interaction opens preparation with the exact selected syllabus, never a hidden default
+ok 27 - setup checkbox interaction opens preparation with the exact selected syllabus, never a hidden default
+  ---
+  duration_ms: 2286.936869
+  type: 'test'
+  ...
+# Subtest: private generated written rows retain section compatibility rather than filling a differently-marked essay
+ok 28 - private generated written rows retain section compatibility rather than filling a differently-marked essay
+  ---
+  duration_ms: 2.488822
+  type: 'test'
+  ...
+# Subtest: read-only preflight reports selected scope, exact shortfall and marks without answers, writes or AI
+ok 29 - read-only preflight reports selected scope, exact shortfall and marks without answers, writes or AI
+  ---
+  duration_ms: 179.533211
+  type: 'test'
+  ...
+# Subtest: recent-question rotation prefers an entirely fresh model, but never creates artificial AI shortages
+ok 30 - recent-question rotation prefers an entirely fresh model, but never creates artificial AI shortages
+  ---
+  duration_ms: 3.285144
+  type: 'test'
+  ...
+# Subtest: history is bounded, deduplicated, tolerant of corrupt browser values and isolated by class/subject/kind
+ok 31 - history is bounded, deduplicated, tolerant of corrupt browser values and isolated by class/subject/kind
+  ---
+  duration_ms: 0.875544
+  type: 'test'
+  ...
+# Subtest: blueprints scoped to SSC general math, practice-only, not English/higher math/other grades
+ok 32 - blueprints scoped to SSC general math, practice-only, not English/higher math/other grades
+  ---
+  duration_ms: 1.947654
+  type: 'test'
+  ...
+# Subtest: all 17 exact catalog topics map once, unknown chapter text is never guessed
+ok 33 - all 17 exact catalog topics map once, unknown chapter text is never guessed
+  ---
+  duration_ms: 0.411831
+  type: 'test'
+  ...
+# Subtest: complete written assembly: 2 CQ per division and 15 SHORT, no partial success
+ok 34 - complete written assembly: 2 CQ per division and 15 SHORT, no partial success
+  ---
+  duration_ms: 3.79424
+  type: 'test'
+  ...
+# Subtest: MCQ balanced topic rotation, exact count, no duplicate stems or IDs
+ok 35 - MCQ balanced topic rotation, exact count, no duplicate stems or IDs
+  ---
+  duration_ms: 2.378236
+  type: 'test'
+  ...
+# Subtest: four-part generic CQ, bad marks/options, missing answers, unknown dependencies excluded
+ok 36 - four-part generic CQ, bad marks/options, missing answers, unknown dependencies excluded
+  ---
+  duration_ms: 0.711733
+  type: 'test'
+  ...
+# Subtest: inline diagram stays in same selected record; repeated CQ stimuli do not duplicate
+ok 37 - inline diagram stays in same selected record; repeated CQ stimuli do not duplicate
+  ---
+  duration_ms: 0.864357
+  type: 'test'
+  ...
+# Subtest: new model settings survive validation and normal saved paper restoration
+ok 38 - new model settings survive validation and normal saved paper restoration
+  ---
+  duration_ms: 26.03667
+  type: 'test'
+  ...
+# Subtest: written preview has 4 divisions + SHORT, CQ numbering 1–8, one global choice instruction
+ok 39 - written preview has 4 divisions + SHORT, CQ numbering 1–8, one global choice instruction
+  ---
+  duration_ms: 3.586625
+  type: 'test'
+  ...
+# Subtest: server action requires teacher auth and valid blueprint before any DB access
+ok 40 - server action requires teacher auth and valid blueprint before any DB access
+  ---
+  duration_ms: 250.464628
+  type: 'test'
+  ...
+# Subtest: server action selects approved or own pending alias-matched stock and returns IDs, never paid text/answers
+ok 41 - server action selects approved or own pending alias-matched stock and returns IDs, never paid text/answers
+  ---
+  duration_ms: 79.704163
+  type: 'test'
+  ...
+# Subtest: oversized pool fails explicitly rather than reporting truncated bank shortages
+ok 42 - oversized pool fails explicitly rather than reporting truncated bank shortages
+  ---
+  duration_ms: 13.032868
+  type: 'test'
+  ...
+# Subtest: MCQ enforces every feasible split and fixed 2/1/2, even under skewed stock
+ok 43 - MCQ enforces every feasible split and fixed 2/1/2, even under skewed stock
+  ---
+  duration_ms: 19.610688
+  type: 'test'
+  ...
+# Subtest: MCQ shortages fail closed despite abundant total stock, after eligibility and deduplication
+ok 44 - MCQ shortages fail closed despite abundant total stock, after eligibility and deduplication
+  ---
+  duration_ms: 6.437479
+  type: 'test'
+  ...
+# Subtest: editor flags 30 valid MCQ with wrong division counts but accepts all allowed distributions
+ok 45 - editor flags 30 valid MCQ with wrong division counts but accepts all allowed distributions
+  ---
+  duration_ms: 1.771266
+  type: 'test'
+  ...
+# Subtest: server action returns only IDs for compliant MCQ; stream shortage returns no partial model
+ok 46 - server action returns only IDs for compliant MCQ; stream shortage returns no partial model
+  ---
+  duration_ms: 51.216723
+  type: 'test'
+  ...
+# Subtest: MCQ caps figure-bearing QUESTIONS at five while preserving every division quota
+ok 47 - MCQ caps figure-bearing QUESTIONS at five while preserving every division quota
+  ---
+  duration_ms: 5.641865
+  type: 'test'
+  ...
+# Subtest: diagram sampling reserves slots for later divisions rather than greedily exhausting five
+ok 48 - diagram sampling reserves slots for later divisions rather than greedily exhausting five
+  ---
+  duration_ms: 0.985749
+  type: 'test'
+  ...
+# Subtest: only splits compatible with the global image budget are sampled
+ok 49 - only splits compatible with the global image budget are sampled
+  ---
+  duration_ms: 0.508865
+  type: 'test'
+  ...
+# Subtest: editor warns on six diagram questions; five questions with multiple figures are valid
+ok 50 - editor warns on six diagram questions; five questions with multiple figures are valid
+  ---
+  duration_ms: 1.619585
+  type: 'test'
+  ...
+# Subtest: MCQ chapter classification splits only 9/10 from 16, retaining all written divisions
+ok 51 - MCQ chapter classification splits only 9/10 from 16, retaining all written divisions
+  ---
+  duration_ms: 0.254294
+  type: 'test'
+  ...
+# Subtest: missing any fixed component fails closed with specific shortage even with excess elsewhere
+ok 52 - missing any fixed component fails closed with specific shortage even with excess elsewhere
+  ---
+  duration_ms: 1.604282
+  type: 'test'
+  ...
+# Subtest: editor rejects legacy combined-only five and wrong 2/1/2 counts without rewriting questions
+ok 53 - editor rejects legacy combined-only five and wrong 2/1/2 counts without rewriting questions
+  ---
+  duration_ms: 1.157078
+  type: 'test'
+  ...
+# Subtest: diagram reservation respects each mandatory subpool instead of counting interchangeable final five
+ok 54 - diagram reservation respects each mandatory subpool instead of counting interchangeable final five
+  ---
+  duration_ms: 1.6607
+  type: 'test'
+  ...
+# Subtest: Chemistry explicit owner practice policy: canonical12chapters, separate stable IDs, preserved marks and no official-year claim
+ok 55 - Chemistry explicit owner practice policy: canonical12chapters, separate stable IDs, preserved marks and no official-year claim
+  ---
+  duration_ms: 11.913921
+  type: 'test'
+  ...
+# Subtest: all8110actual canonical local draft fixtures retain authoring metadata; compatible stock exists per chapter/type
+ok 56 - all8110actual canonical local draft fixtures retain authoring metadata; compatible stock exists per chapter/type
+  ---
+  duration_ms: 729.913568
+  type: 'test'
+  ...
+# Subtest: 40seed written models: each CQ/SQ has exact fixedsix plus oneother, independent seventh chapters and unique IDs
+ok 57 - 40seed written models: each CQ/SQ has exact fixedsix plus oneother, independent seventh chapters and unique IDs
+  ---
+  duration_ms: 10839.52611
+  type: 'test'
+  ...
+# Subtest: 25MCQ balanced fullbook rotation: all12chapters, max3, existing two perchapter stock yields one third when sufficient
+ok 58 - 25MCQ balanced fullbook rotation: all12chapters, max3, existing two perchapter stock yields one third when sufficient
+  ---
+  duration_ms: 4993.519183
+  type: 'test'
+  ...
+# Subtest: missing mandatoryCQ/SQ, nootherchapter and insufficientMCQ all fail closed without partial IDs
+ok 59 - missing mandatoryCQ/SQ, nootherchapter and insufficientMCQ all fail closed without partial IDs
+  ---
+  duration_ms: 6456.315027
+  type: 'test'
+  ...
+# Subtest: real native chemistryPNG and generatedSVG render and classify; wrongsubject, tampered URLs, malformed records rejected
+ok 60 - real native chemistryPNG and generatedSVG render and classify; wrongsubject, tampered URLs, malformed records rejected
+  ---
+  duration_ms: 25.755014
+  type: 'test'
+  ...
+# Subtest: paper/editor/print retain marks, instructions, fourparts, edits and extras visibly; settings roundtrip
+ok 61 - paper/editor/print retain marks, instructions, fourparts, edits and extras visibly; settings roundtrip
+  ---
+  duration_ms: 252.967075
+  type: 'test'
+  ...
+# Subtest: real actionqueries approvedChemistryonly; empty production-compatible stock blocks, no autoimport/approval or accessbypass
+ok 62 - real actionqueries approvedChemistryonly; empty production-compatible stock blocks, no autoimport/approval or accessbypass
+  ---
+  duration_ms: 568.329834
+  type: 'test'
+  ...
+# Subtest: First paper checks approved bank then requires sources before any missing-part AI across all grades
+ok 63 - First paper checks approved bank then requires sources before any missing-part AI across all grades
+  ---
+  duration_ms: 282.802335
+  type: 'test'
+  ...
+# Subtest: First paper rejects unauthorised and invalid inputs without bank/provider lookup
+ok 64 - First paper rejects unauthorised and invalid inputs without bank/provider lookup
+  ---
+  duration_ms: 120.344022
+  type: 'test'
+  ...
+# Subtest: Full entry mounts auto preparation instead of task configuration, with review before layout
+ok 65 - Full entry mounts auto preparation instead of task configuration, with review before layout
+  ---
+  duration_ms: 36.382137
+  type: 'test'
+  ...
+# Subtest: Second-paper auto models select grade-specific grammar/writing, require no seen extract and retain review routing
+ok 66 - Second-paper auto models select grade-specific grammar/writing, require no seen extract and retain review routing
+  ---
+  duration_ms: 220.155299
+  type: 'test'
+  ...
+# Subtest: Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback
+ok 67 - Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback
+  ---
+  duration_ms: 78.724606
+  type: 'test'
+  ...
+# Subtest: First-paper Question Item routes use the same bank preparation with the chosen ids
+ok 68 - First-paper Question Item routes use the same bank preparation with the chosen ids
+  ---
+  duration_ms: 7.891622
+  type: 'test'
+  ...
+# Subtest: Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup
+ok 69 - Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup
+  ---
+  duration_ms: 47.514755
+  type: 'test'
+  ...
+# Subtest: Second paper does not spend AI quota on a database/save failure or unclassified failure
+ok 70 - Second paper does not spend AI quota on a database/save failure or unclassified failure
+  ---
+  duration_ms: 50.730989
+  type: 'test'
+  ...
+# Subtest: Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade
+ok 71 - Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade
+  ---
+  duration_ms: 20.142973
+  type: 'test'
+  ...
+# Subtest: First-paper complete approved models never invoke source lookup or AI
+ok 72 - First-paper complete approved models never invoke source lookup or AI
+  ---
+  duration_ms: 38.432865
+  type: 'test'
+  ...
+# Subtest: First-paper AI preserves selected item IDs, requires exact sources and rejects invalid selections before DB
+ok 73 - First-paper AI preserves selected item IDs, requires exact sources and rejects invalid selections before DB
+  ---
+  duration_ms: 33.797897
+  type: 'test'
+  ...
+# Subtest: partial stock retains exact writing signatures instead of regenerating its available items
+ok 74 - partial stock retains exact writing signatures instead of regenerating its available items
+  ---
+  duration_ms: 18.335155
+  type: 'test'
+  ...
+# Subtest: Prepared complete model validates 100 marks, thirteen tasks, linked seen/unseen groups and answer keys
+ok 75 - Prepared complete model validates 100 marks, thirteen tasks, linked seen/unseen groups and answer keys
+  ---
+  duration_ms: 3.159567
+  type: 'test'
+  ...
+# Subtest: Only complete approved same-grade full models with answers are reusable
+ok 76 - Only complete approved same-grade full models with answers are reusable
+  ---
+  duration_ms: 14.719454
+  type: 'test'
+  ...
+# Subtest: Bank-only preparation saves an owned private review draft without provider or quota writes
+ok 77 - Bank-only preparation saves an owned private review draft without provider or quota writes
+  ---
+  duration_ms: 113.314253
+  type: 'test'
+  ...
+# Subtest: Every supported grade reports missing full stock instead of generating; unauthorized calls read nothing
+ok 78 - Every supported grade reports missing full stock instead of generating; unauthorized calls read nothing
+  ---
+  duration_ms: 171.191163
+  type: 'test'
+  ...
+# Subtest: Full model import is ADMIN-only, Pending-only and preserves existing records on retry
+ok 79 - Full model import is ADMIN-only, Pending-only and preserves existing records on retry
+  ---
+  duration_ms: 43.965773
+  type: 'test'
+  ...
+# Subtest: Complete library covers all thirty exact extracts with keys, three unseen groups and all six poems
+ok 80 - Complete library covers all thirty exact extracts with keys, three unseen groups and all six poems
+  ---
+  duration_ms: 127.672596
+  type: 'test'
+  ...
+# Subtest: Batch import checks manifest, writes 31 Pending snapshots atomically and preserves decisions on retry
+ok 81 - Batch import checks manifest, writes 31 Pending snapshots atomically and preserves decisions on retry
+  ---
+  duration_ms: 197.212375
+  type: 'test'
+  ...
+# Subtest: Independent Question Item stock assembles in syllabus order without a complete snapshot
+ok 82 - Independent Question Item stock assembles in syllabus order without a complete snapshot
+  ---
+  duration_ms: 113.230901
+  type: 'test'
+  ...
+# Subtest: Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicated and retry-safe
+ok 83 - Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicated and retry-safe
+  ---
+  duration_ms: 2059.575812
+  type: 'test'
+  ...
+# Subtest: The same item stock serves seen-only, unseen-only and individual tasks without requiring other stock
+ok 84 - The same item stock serves seen-only, unseen-only and individual tasks without requiring other stock
+  ---
+  duration_ms: 44.823988
+  type: 'test'
+  ...
+# Subtest: ADMIN may explicitly reopen an existing decision for reapproval without deleting content or losing old status
+ok 85 - ADMIN may explicitly reopen an existing decision for reapproval without deleting content or losing old status
+  ---
+  duration_ms: 79.484448
+  type: 'test'
+  ...
+# Subtest: Bank selection looks ahead so a random Seen-1 choice does not hide a valid distinct Seen-2
+ok 86 - Bank selection looks ahead so a random Seen-1 choice does not hide a valid distinct Seen-2
+  ---
+  duration_ms: 2.303396
+  type: 'test'
+  ...
+# Subtest: Common import saves exactly the server-prepared item Pending, never resets Approved and denies forged keys
+ok 87 - Common import saves exactly the server-prepared item Pending, never resets Approved and denies forged keys
+  ---
+  duration_ms: 224.937505
+  type: 'test'
+  ...
+# Subtest: Common ADMIN readiness and user preparation use the same validated stock, not status-only receipts
+ok 88 - Common ADMIN readiness and user preparation use the same validated stock, not status-only receipts
+  ---
+  duration_ms: 14.900605
+  type: 'test'
+  ...
+# Subtest: Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and preserves concurrent decisions
+ok 89 - Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and preserves concurrent decisions
+  ---
+  duration_ms: 71.22876
+  type: 'test'
+  ...
+# Subtest: Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock
+ok 90 - Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock
+  ---
+  duration_ms: 503.110656
+  type: 'test'
+  ...
+# Subtest: Bulk approval cannot approve another grade under the selected grade scope
+ok 91 - Bulk approval cannot approve another grade under the selected grade scope
+  ---
+  duration_ms: 24.822369
+  type: 'test'
+  ...
+# Subtest: Original builder adapter preserves linked English passages, structured tables, keys, numbering and saved setup
+ok 92 - Original builder adapter preserves linked English passages, structured tables, keys, numbering and saved setup
+  ---
+  duration_ms: 40.865029
+  type: 'test'
+  ...
+# Subtest: English build route uses the original builder, isolates general storage and retains owned draft checks
+ok 93 - English build route uses the original builder, isolates general storage and retains owned draft checks
+  ---
+  duration_ms: 0.567629
+  type: 'test'
+  ...
+# Subtest: Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle
+ok 94 - Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle
+  ---
+  duration_ms: 0.293174
+  type: 'test'
+  ...
+# Subtest: English pagination splits presentation blocks without losing passages, table rows, options, numbering or answers
+ok 95 - English pagination splits presentation blocks without losing passages, table rows, options, numbering or answers
+  ---
+  duration_ms: 27.767823
+  type: 'test'
+  ...
+# Subtest: SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance
+ok 96 - SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance
+  ---
+  duration_ms: 525.213554
+  type: 'test'
+  ...
+# Subtest: Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination
+ok 97 - Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination
+  ---
+  duration_ms: 117.692414
+  type: 'test'
+  ...
+# Subtest: Board filter is validated before reads and empty filtered stock never writes a draft
+ok 98 - Board filter is validated before reads and empty filtered stock never writes a draft
+  ---
+  duration_ms: 294.553217
+  type: 'test'
+  ...
+# Subtest: Old drafts still validate, while malformed board provenance is rejected
+ok 99 - Old drafts still validate, while malformed board provenance is rejected
+  ---
+  duration_ms: 126.889814
+  type: 'test'
+  ...
+# Subtest: SSC registry covers nine existing item types and honestly reports missing poem/story comprehension
+ok 100 - SSC registry covers nine existing item types and honestly reports missing poem/story comprehension
+  ---
+  duration_ms: 269.782351
+  type: 'test'
+  ...
+# Subtest: SSC year/source and historical-mark differences render once per question across print fragments
+ok 101 - SSC year/source and historical-mark differences render once per question across print fragments
+  ---
+  duration_ms: 483.344794
+  type: 'test'
+  ...
+# Subtest: SSC registry imports only through explicit ADMIN consent and always creates Pending records
+ok 102 - SSC registry imports only through explicit ADMIN consent and always creates Pending records
+  ---
+  duration_ms: 474.21004
+  type: 'test'
+  ...
+# Subtest: Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry
+ok 103 - Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry
+  ---
+  duration_ms: 95.213876
+  type: 'test'
+  ...
+# Subtest: Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage
+ok 104 - Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage
+  ---
+  duration_ms: 95.198683
+  type: 'test'
+  ...
+# Subtest: Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail
+ok 105 - Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail
+  ---
+  duration_ms: 118.000739
+  type: 'test'
+  ...
+# Subtest: School literature uses exact source questions, no fabricated passage or board year; full assembly remains approval-gated
+ok 106 - School literature uses exact source questions, no fabricated passage or board year; full assembly remains approval-gated
+  ---
+  duration_ms: 213.484683
+  type: 'test'
+  ...
+# Subtest: New 2024 batch expands distinct Seen/Unseen stock while keeping conflicting source exercises out
+ok 107 - New 2024 batch expands distinct Seen/Unseen stock while keeping conflicting source exercises out
+  ---
+  duration_ms: 234.509857
+  type: 'test'
+  ...
+# Subtest: 2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts
+ok 108 - 2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts
+  ---
+  duration_ms: 186.98696
+  type: 'test'
+  ...
+# Subtest: 2023 creative continuations meet the ten-new-sentence prompt and do not duplicate source prompts
+ok 109 - 2023 creative continuations meet the ten-new-sentence prompt and do not duplicate source prompts
+  ---
+  duration_ms: 0.597211
+  type: 'test'
+  ...
+# Subtest: 2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering
+ok 110 - 2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering
+  ---
+  duration_ms: 240.100891
+  type: 'test'
+  ...
+# Subtest: 2019 drafts preserve header blanks and isolate source year without inflating repeated biographies
+ok 111 - 2019 drafts preserve header blanks and isolate source year without inflating repeated biographies
+  ---
+  duration_ms: 199.398986
+  type: 'test'
+  ...
+# Subtest: New creative prompts retain original beginnings and exactly ten new sentences without repeated board themes
+ok 112 - New creative prompts retain original beginnings and exactly ten new sentences without repeated board themes
+  ---
+  duration_ms: 4.698879
+  type: 'test'
+  ...
+# Subtest: New exercise keys are exact source-column combinations and rearranging positions form the stated order
+ok 113 - New exercise keys are exact source-column combinations and rearranging positions form the stated order
+  ---
+  duration_ms: 2.767412
+  type: 'test'
+  ...
+# Subtest: School Unseen provenance stays separate from board years and survives assembly without automatic approval
+ok 114 - School Unseen provenance stays separate from board years and survives assembly without automatic approval
+  ---
+  duration_ms: 5.51505
+  type: 'test'
+  ...
+# Subtest: School source labels follow the same default-hidden and opt-in print-fragment presentation
+ok 115 - School source labels follow the same default-hidden and opt-in print-fragment presentation
+  ---
+  duration_ms: 80.253387
+  type: 'test'
+  ...
+# Subtest: Expanded school exercise registry preserves exact matching keys, permutations and preceding-paper headers
+ok 116 - Expanded school exercise registry preserves exact matching keys, permutations and preceding-paper headers
+  ---
+  duration_ms: 39.070407
+  type: 'test'
+  ...
+# Subtest: Expanded school writing retains original openings, ten new continuation sentences and safe illustrative keys
+ok 117 - Expanded school writing retains original openings, ten new continuation sentences and safe illustrative keys
+  ---
+  duration_ms: 0.721832
+  type: 'test'
+  ...
+# Subtest: School reading roles disclose held MCQs and do not inflate complete pairs or distinct text counts
+ok 118 - School reading roles disclose held MCQs and do not inflate complete pairs or distinct text counts
+  ---
+  duration_ms: 1.431853
+  type: 'test'
+  ...
+# Subtest: Washington school Unseen preserves cross-page source, original five table blanks and 70–90 word summary
+ok 119 - Washington school Unseen preserves cross-page source, original five table blanks and 70–90 word summary
+  ---
+  duration_ms: 1.394664
+  type: 'test'
+  ...
+# Subtest: Textbook authored practice is distinct, answer-complete, traceable and never board-year stock
+ok 120 - Textbook authored practice is distinct, answer-complete, traceable and never board-year stock
+  ---
+  duration_ms: 33.209948
+  type: 'test'
+  ...
+# Subtest: Additional image-checked school exercises have exact matching mappings, complete narrative orders and no board-year eligibility
+ok 121 - Additional image-checked school exercises have exact matching mappings, complete narrative orders and no board-year eligibility
+  ---
+  duration_ms: 107.983888
+  type: 'test'
+  ...
+# Subtest: New reading pairs distinguish authored practice from intact school questions and stay review-gated
+ok 122 - New reading pairs distinguish authored practice from intact school questions and stay review-gated
+  ---
+  duration_ms: 22.368021
+  type: 'test'
+  ...
+# Subtest: Intact historic board tables preserve every fragment/blank, original counts and review gating
+ok 123 - Intact historic board tables preserve every fragment/blank, original counts and review gating
+  ---
+  duration_ms: 126.073331
+  type: 'test'
+  ...
+# Subtest: Historical count compatibility is narrow and cannot silently truncate standard or original exercises
+ok 124 - Historical count compatibility is narrow and cannot silently truncate standard or original exercises
+  ---
+  duration_ms: 15.524058
+  type: 'test'
+  ...
+# Subtest: Historical table counts survive print fragmentation with practice marks and visible adaptation notes
+ok 125 - Historical table counts survive print fragmentation with practice marks and visible adaptation notes
+  ---
+  duration_ms: 167.963419
+  type: 'test'
+  ...
+# Subtest: Authored writing closes practice-only minima with seven ten-sentence stories and fifteen twelve-turn dialogues
+ok 126 - Authored writing closes practice-only minima with seven ten-sentence stories and fifteen twelve-turn dialogues
+  ---
+  duration_ms: 102.714637
+  type: 'test'
+  ...
+# Subtest: Authored matching has sixteen standard five-part permutations, exact keys and no false exam provenance
+ok 127 - Authored matching has sixteen standard five-part permutations, exact keys and no false exam provenance
+  ---
+  duration_ms: 121.784516
+  type: 'test'
+  ...
+# Subtest: Authored practice labels, prompts and answers survive assembly and print with provenance hidden
+ok 128 - Authored practice labels, prompts and answers survive assembly and print with provenance hidden
+  ---
+  duration_ms: 141.430785
+  type: 'test'
+  ...
+# Subtest: Thirty-five authored Unseen pairs reach fifty without false exam provenance or invented answer details
+ok 129 - Thirty-five authored Unseen pairs reach fifty without false exam provenance or invented answer details
+  ---
+  duration_ms: 183.770873
+  type: 'test'
+  ...
+# Subtest: Ten authored rearranging groups preserve all eight sentences and complete the forty-group practice minimum
+ok 130 - Ten authored rearranging groups preserve all eight sentences and complete the forty-group practice minimum
+  ---
+  duration_ms: 71.606541
+  type: 'test'
+  ...
+# Subtest: School-name selection isolates complete atomic groups, preserves true headers and never falls back
+ok 131 - School-name selection isolates complete atomic groups, preserves true headers and never falls back
+  ---
+  duration_ms: 315.506557
+  type: 'test'
+  ...
+# Subtest: School dropdown options come only from approved grade-matched homogeneous reusable groups
+ok 132 - School dropdown options come only from approved grade-matched homogeneous reusable groups
+  ---
+  duration_ms: 210.263178
+  type: 'test'
+  ...
+# Subtest: Source-filter UI hides year search, retries failures and ignores stale school requests
+ok 133 - Source-filter UI hides year search, retries failures and ignores stale school requests
+  ---
+  duration_ms: 81.616419
+  type: 'test'
+  ...
+# Subtest: New fictional reading and narrative practice keep disclosure, all answers and source-free status through print flow
+ok 134 - New fictional reading and narrative practice keep disclosure, all answers and source-free status through print flow
+  ---
+  duration_ms: 322.304558
+  type: 'test'
+  ...
+# Subtest: User-approved same-text variants retain eight source excerpts and disclose authored scope
+ok 135 - User-approved same-text variants retain eight source excerpts and disclose authored scope
+  ---
+  duration_ms: 7.532531
+  type: 'test'
+  ...
+# Subtest: Literary variants explicitly retain four new and four reused foundations, not new works
+ok 136 - Literary variants explicitly retain four new and four reused foundations, not new works
+  ---
+  duration_ms: 17.038796
+  type: 'test'
+  ...
+# Subtest: SSC auto second paper assembles a full 100-mark owned model from approved stock with non-default writing topics, without AI
+ok 137 - SSC auto second paper assembles a full 100-mark owned model from approved stock with non-default writing topics, without AI
+  ---
+  duration_ms: 1152.674931
+  type: 'test'
+  ...
+# Subtest: SSC admin category is SSC for both grades and old Class 9/10 URLs remain compatible without changing bank records
+ok 138 - SSC admin category is SSC for both grades and old Class 9/10 URLs remain compatible without changing bank records
+  ---
+  duration_ms: 0.716964
+  type: 'test'
+  ...
+# Subtest: incomplete auto model carries source/writing signatures so the gap engine requests only absent stock
+ok 139 - incomplete auto model carries source/writing signatures so the gap engine requests only absent stock
+  ---
+  duration_ms: 27.023458
+  type: 'test'
+  ...
+# Subtest: Neutral wording retains actual failure, limits, no-save and recovery information
+ok 140 - Neutral wording retains actual failure, limits, no-save and recovery information
+  ---
+  duration_ms: 2.11231
+  type: 'test'
+  ...
+# Subtest: Auto and setup keep neutral busy UI, errors and quota notice; editor never falsely asserts AI origin
+ok 141 - Auto and setup keep neutral busy UI, errors and quota notice; editor never falsely asserts AI origin
+  ---
+  duration_ms: 0.975173
+  type: 'test'
+  ...
+# Subtest: only four Job roots and two separately sourced NTRCA branches exist
+ok 142 - only four Job roots and two separately sourced NTRCA branches exist
+  ---
+  duration_ms: 1.549066
+  type: 'test'
+  ...
+# Subtest: all sourced subjects have valid pages, unique topics and source-specific counts
+ok 143 - all sourced subjects have valid pages, unique topics and source-specific counts
+  ---
+  duration_ms: 0.721028
+  type: 'test'
+  ...
+# Subtest: Job starter restricts subjects to selected source and forces MCQ even with stale written state
+ok 144 - Job starter restricts subjects to selected source and forces MCQ even with stale written state
+  ---
+  duration_ms: 817.301456
+  type: 'test'
+  ...
+# Subtest: NTRCA cannot start before School/College selection; Job has no union of unrelated subjects
+ok 145 - NTRCA cannot start before School/College selection; Job has no union of unrelated subjects
+  ---
+  duration_ms: 352.404417
+  type: 'test'
+  ...
+# Subtest: all visible questions and options use original model layout, with only brand watermark and no solution data
+ok 146 - all visible questions and options use original model layout, with only brand watermark and no solution data
+  ---
+  duration_ms: 23.436647
+  type: 'test'
+  ...
+# Subtest: full preview rejects hidden, deleted, pending, wrong-identity and tampered submissions
+ok 147 - full preview rejects hidden, deleted, pending, wrong-identity and tampered submissions
+  ---
+  duration_ms: 3.276218
+  type: 'test'
+  ...
+# Subtest: public full preview replaces limited sample, uses shared renderer and bakes brand pixels; private buyer renderer is unchanged
+ok 148 - public full preview replaces limited sample, uses shared renderer and bakes brand pixels; private buyer renderer is unchanged
+  ---
+  duration_ms: 0.407214
+  type: 'test'
+  ...
+# Subtest: immutable snapshot renders mixed MCQ/CQ/SHORT sections and Bengali CQ keys
+ok 149 - immutable snapshot renders mixed MCQ/CQ/SHORT sections and Bengali CQ keys
+  ---
+  duration_ms: 9.319553
+  type: 'test'
+  ...
+# Subtest: saved edits, exclusions, font and dimensions are preserved without mutating snapshot
+ok 150 - saved edits, exclusions, font and dimensions are preserved without mutating snapshot
+  ---
+  duration_ms: 1.796093
+  type: 'test'
+  ...
+# Subtest: set shuffle is deterministic and division groups keep CQ visible
+ok 151 - set shuffle is deterministic and division groups keep CQ visible
+  ---
+  duration_ms: 3.471404
+  type: 'test'
+  ...
+# Subtest: approval rejects empty, excluded, invalid-settings and malformed snapshots
+ok 152 - approval rejects empty, excluded, invalid-settings and malformed snapshots
+  ---
+  duration_ms: 1.690305
+  type: 'test'
+  ...
+# Subtest: private preview route gates owner or fresh database admin and validates checksum
+ok 153 - private preview route gates owner or fresh database admin and validates checksum
+  ---
+  duration_ms: 0.438768
+  type: 'test'
+  ...
+# Subtest: sample is deterministic allowlisted bounded excerpt, never full question or private fields
+ok 154 - sample is deterministic allowlisted bounded excerpt, never full question or private fields
+  ---
+  duration_ms: 101.302206
+  type: 'test'
+  ...
+# Subtest: unapproved, tampered, wrong identity or malformed snapshots fail closed
+ok 155 - unapproved, tampered, wrong identity or malformed snapshots fail closed
+  ---
+  duration_ms: 2.129026
+  type: 'test'
+  ...
+# Subtest: short stems, embedded resources, HTML and obvious inline solutions are not exposed
+ok 156 - short stems, embedded resources, HTML and obvious inline solutions are not exposed
+  ---
+  duration_ms: 4.982139
+  type: 'test'
+  ...
+# Subtest: sample endpoint has no client-controlled paging, snapshot prop or HTML injection
+ok 157 - sample endpoint has no client-controlled paging, snapshot prop or HTML injection
+  ---
+  duration_ms: 0.409128
+  type: 'test'
+  ...
+# Subtest: market metadata restricts grade, price, chapters and rights
+ok 158 - market metadata restricts grade, price, chapters and rights
+  ---
+  duration_ms: 12.822911
+  type: 'test'
+  ...
+# Subtest: only owner-prefixed database saves can be submitted, not purchased or uploaded papers
+ok 159 - only owner-prefixed database saves can be submitted, not purchased or uploaded papers
+  ---
+  duration_ms: 1.16015
+  type: 'test'
+  ...
+# Subtest: snapshot checksum and revision reject tampering and stale/repeated review
+ok 160 - snapshot checksum and revision reject tampering and stale/repeated review
+  ---
+  duration_ms: 0.673903
+  type: 'test'
+  ...
+# Subtest: submission snapshots server questions, blocks duplicate, isolates from original changes
+ok 161 - submission snapshots server questions, blocks duplicate, isolates from original changes
+  ---
+  duration_ms: 116.022243
+  type: 'test'
+  ...
+# Subtest: unauthenticated, foreign and unpaid submissions fail without snapshot
+ok 162 - unauthenticated, foreign and unpaid submissions fail without snapshot
+  ---
+  duration_ms: 179.351487
+  type: 'test'
+  ...
+# Subtest: fresh admin moderation requires reviewed flag and current revision; changes allow resubmission
+ok 163 - fresh admin moderation requires reviewed flag and current revision; changes allow resubmission
+  ---
+  duration_ms: 59.697169
+  type: 'test'
+  ...
+# Subtest: approved application cannot be silently replaced and no money is moved
+ok 164 - approved application cannot be silently replaced and no money is moved
+  ---
+  duration_ms: 41.651475
+  type: 'test'
+  ...
+# Subtest: four shared exam types are required for new submissions, legacy labels remain honest
+ok 165 - four shared exam types are required for new submissions, legacy labels remain honest
+  ---
+  duration_ms: 33.718109
+  type: 'test'
+  ...
+# Subtest: admin cannot approve an empty visible paper but can request corrections
+ok 166 - admin cannot approve an empty visible paper but can request corrections
+  ---
+  duration_ms: 61.912096
+  type: 'test'
+  ...
+# Subtest: ADMIN submission publishes immediately with server validation and an audit; teacher remains pending
+ok 167 - ADMIN submission publishes immediately with server validation and an audit; teacher remains pending
+  ---
+  duration_ms: 94.15034
+  type: 'test'
+  ...
+# Subtest: role removed before transaction cannot auto-publish
+ok 168 - role removed before transaction cannot auto-publish
+  ---
+  duration_ms: 21.628297
+  type: 'test'
+  ...
+# Subtest: ADMIN can publish an existing own pending paper but teacher cannot self-approve
+ok 169 - ADMIN can publish an existing own pending paper but teacher cannot self-approve
+  ---
+  duration_ms: 31.974835
+  type: 'test'
+  ...
+# Subtest: ADMIN auto-publish rejects an unrenderable snapshot
+ok 170 - ADMIN auto-publish rejects an unrenderable snapshot
+  ---
+  duration_ms: 19.479807
+  type: 'test'
+  ...
+# Subtest: both uploaded PDF and Ready Library exports use owner draft snapshots, teacher review and unchanged rights gate
+ok 171 - both uploaded PDF and Ready Library exports use owner draft snapshots, teacher review and unchanged rights gate
+  ---
+  duration_ms: 44.171884
+  type: 'test'
+  ...
+# Subtest: PDF submission rejects foreign, incomplete and non-application assets
+ok 172 - PDF submission rejects foreign, incomplete and non-application assets
+  ---
+  duration_ms: 111.418941
+  type: 'test'
+  ...
+# Subtest: ADMIN ready export publishes directly and cannot replace an approved snapshot
+ok 173 - ADMIN ready export publishes directly and cannot replace an approved snapshot
+  ---
+  duration_ms: 45.954386
+  type: 'test'
+  ...
+# Subtest: fresh ADMIN always publishes as official; teacher requests never gain the official identity
+ok 174 - fresh ADMIN always publishes as official; teacher requests never gain the official identity
+  ---
+  duration_ms: 89.496163
+  type: 'test'
+  ...
+# Subtest: teacher free publication remains pending and validates rights
+ok 175 - teacher free publication remains pending and validates rights
+  ---
+  duration_ms: 62.121741
+  type: 'test'
+  ...
+# Subtest: safe print defaults: A4, two columns, 2x2 options, no answer leakage
+ok 176 - safe print defaults: A4, two columns, 2x2 options, no answer leakage
+  ---
+  duration_ms: 10.102714
+  type: 'test'
+  ...
+# Subtest: legacy settings are migrated with metadata intact
+ok 177 - legacy settings are migrated with metadata intact
+  ---
+  duration_ms: 0.999088
+  type: 'test'
+  ...
+# Subtest: invalid enum and numeric values reset safely
+ok 178 - invalid enum and numeric values reset safely
+  ---
+  duration_ms: 0.953024
+  type: 'test'
+  ...
+# Subtest: edited text, images, custom divisions and set order survive roundtrip
+ok 179 - edited text, images, custom divisions and set order survive roundtrip
+  ---
+  duration_ms: 6.388997
+  type: 'test'
+  ...
+# Subtest: shuffling is deterministic and never mutates or drops items
+ok 180 - shuffling is deterministic and never mutates or drops items
+  ---
+  duration_ms: 0.258118
+  type: 'test'
+  ...
+# Subtest: pagination fills left then right without missing questions
+ok 181 - pagination fills left then right without missing questions
+  ---
+  duration_ms: 0.251537
+  type: 'test'
+  ...
+# Subtest: oversized questions are retained rather than clipped or dropped
+ok 182 - oversized questions are retained rather than clipped or dropped
+  ---
+  duration_ms: 0.184466
+  type: 'test'
+  ...
+# Subtest: empty pagination has no blank pages
+ok 183 - empty pagination has no blank pages
+  ---
+  duration_ms: 0.102525
+  type: 'test'
+  ...
+# Subtest: duplicates normalize whitespace and mark both occurrences
+ok 184 - duplicates normalize whitespace and mark both occurrences
+  ---
+  duration_ms: 0.498935
+  type: 'test'
+  ...
+# Subtest: only HTTPS images are accepted
+ok 185 - only HTTPS images are accepted
+  ---
+  duration_ms: 0.384267
+  type: 'test'
+  ...
+# Subtest: Bengali numbering preserves padded digits
+ok 186 - Bengali numbering preserves padded digits
+  ---
+  duration_ms: 0.243868
+  type: 'test'
+  ...
+# Subtest: Bengali math numerals normalize without changing prose
+ok 187 - Bengali math numerals normalize without changing prose
+  ---
+  duration_ms: 2.013721
+  type: 'test'
+  ...
+# Subtest: custom watermark persists when toggled off and back on
+ok 188 - custom watermark persists when toggled off and back on
+  ---
+  duration_ms: 1.02337
+  type: 'test'
+  ...
+# Subtest: settings panel exposes a labelled watermark input only when enabled
+ok 189 - settings panel exposes a labelled watermark input only when enabled
+  ---
+  duration_ms: 215.038851
+  type: 'test'
+  ...
+# Subtest: continuation pages reclaim header space in every column
+ok 190 - continuation pages reclaim header space in every column
+  ---
+  duration_ms: 0.250078
+  type: 'test'
+  ...
+# Subtest: single-column continuation pages use full available height
+ok 191 - single-column continuation pages use full available height
+  ---
+  duration_ms: 0.111123
+  type: 'test'
+  ...
+# Subtest: paper header renders only on first page while remaining measurable
+ok 192 - paper header renders only on first page while remaining measurable
+  ---
+  duration_ms: 0.438398
+  type: 'test'
+  ...
+# Subtest: Kalpurush is the new paper default while explicit saved font choices survive serialization
+ok 193 - Kalpurush is the new paper default while explicit saved font choices survive serialization
+  ---
+  duration_ms: 41.97096
+  type: 'test'
+  ...
+# Subtest: both database paper selectors expose Kalpurush and keep unlicensed NikoshBAN disabled
+ok 194 - both database paper selectors expose Kalpurush and keep unlicensed NikoshBAN disabled
+  ---
+  duration_ms: 0.680534
+  type: 'test'
+  ...
+# Subtest: Landscape booklet paginates at half-sheet width and preserves portrait dimensions
+ok 195 - Landscape booklet paginates at half-sheet width and preserves portrait dimensions
+  ---
+  duration_ms: 1.048685
+  type: 'test'
+  ...
+# Subtest: visibility is approved-public OR exactly owner private pending
+ok 196 - visibility is approved-public OR exactly owner private pending
+  ---
+  duration_ms: 1.968256
+  type: 'test'
+  ...
+# Subtest: validates topic limits and complete AI question structure
+ok 197 - validates topic limits and complete AI question structure
+  ---
+  duration_ms: 3.539656
+  type: 'test'
+  ...
+# Subtest: existing database questions avoid AI and need no API key
+ok 198 - existing database questions avoid AI and need no API key
+  ---
+  duration_ms: 206.431304
+  type: 'test'
+  ...
+# Subtest: unauthenticated callers cannot check or generate
+ok 199 - unauthenticated callers cannot check or generate
+  ---
+  duration_ms: 90.554521
+  type: 'test'
+  ...
+# Subtest: new AI questions stay pending and are correctly encoded for the creator
+ok 200 - new AI questions stay pending and are correctly encoded for the creator
+  ---
+  duration_ms: 98.353213
+  type: 'test'
+  ...
+# Subtest: daily quota exhaustion refuses AI before calling provider
+ok 201 - daily quota exhaustion refuses AI before calling provider
+  ---
+  duration_ms: 46.754596
+  type: 'test'
+  ...
+# Subtest: missing provider configuration returns actionable error without saving
+ok 202 - missing provider configuration returns actionable error without saving
+  ---
+  duration_ms: 64.863006
+  type: 'test'
+  ...
+# Subtest: all-chapter existing bank skips generation tasks
+ok 203 - all-chapter existing bank skips generation tasks
+  ---
+  duration_ms: 44.646194
+  type: 'test'
+  ...
+# Subtest: an incomplete chapter is topped up and response reports cumulative count
+ok 204 - an incomplete chapter is topped up and response reports cumulative count
+  ---
+  duration_ms: 86.955909
+  type: 'test'
+  ...
+# Subtest: repeated questions are not saved across batches
+ok 205 - repeated questions are not saved across batches
+  ---
+  duration_ms: 50.441531
+  type: 'test'
+  ...
+# Subtest: preparation does not advance before 30 and uses bounded sequential batches
+ok 206 - preparation does not advance before 30 and uses bounded sequential batches
+  ---
+  duration_ms: 0.476041
+  type: 'test'
+  ...
+# Subtest: interrupted streamed preparation keeps only validated pending questions
+ok 207 - interrupted streamed preparation keeps only validated pending questions
+  ---
+  duration_ms: 33.586571
+  type: 'test'
+  ...
+# Subtest: selected SHORT generation filters bank counts and drops wrong provider types before save
+ok 208 - selected SHORT generation filters bank counts and drops wrong provider types before save
+  ---
+  duration_ms: 64.302804
+  type: 'test'
+  ...
+# Subtest: invalid question type cannot invoke generation or database checks
+ok 209 - invalid question type cannot invoke generation or database checks
+  ---
+  duration_ms: 45.257643
+  type: 'test'
+  ...
+# Subtest: all fourteen screenshot header fields exist
+ok 210 - all fourteen screenshot header fields exist
+  ---
+  duration_ms: 2.660653
+  type: 'test'
+  ...
+# Subtest: smart and both dynamic layouts validate
+ok 211 - smart and both dynamic layouts validate
+  ---
+  duration_ms: 2.455243
+  type: 'test'
+  ...
+# Subtest: legacy papers preserve their metadata without enabling custom headers
+ok 212 - legacy papers preserve their metadata without enabling custom headers
+  ---
+  duration_ms: 5.331029
+  type: 'test'
+  ...
+# Subtest: corrupt header alone cannot discard the rest of a saved paper
+ok 213 - corrupt header alone cannot discard the rest of a saved paper
+  ---
+  duration_ms: 1.061363
+  type: 'test'
+  ...
+# Subtest: applying template syncs metadata and visibility but preserves watermark and questions
+ok 214 - applying template syncs metadata and visibility but preserves watermark and questions
+  ---
+  duration_ms: 0.572758
+  type: 'test'
+  ...
+# Subtest: legacy setup changes reflect in custom header editor and output
+ok 215 - legacy setup changes reflect in custom header editor and output
+  ---
+  duration_ms: 0.609464
+  type: 'test'
+  ...
+# Subtest: checkboxes omit disabled fields, student placeholders remain independent
+ok 216 - checkboxes omit disabled fields, student placeholders remain independent
+  ---
+  duration_ms: 7.982265
+  type: 'test'
+  ...
+# Subtest: branding banner and note box appear only for dynamic Branding+Header
+ok 217 - branding banner and note box appear only for dynamic Branding+Header
+  ---
+  duration_ms: 1.403493
+  type: 'test'
+  ...
+# Subtest: user text is escaped instead of interpreted as HTML
+ok 218 - user text is escaped instead of interpreted as HTML
+  ---
+  duration_ms: 0.968043
+  type: 'test'
+  ...
+# Subtest: auto sets use generated set name instead of stale template set
+ok 219 - auto sets use generated set name instead of stale template set
+  ---
+  duration_ms: 1.030328
+  type: 'test'
+  ...
+# Subtest: header and layout survive named-paper settings roundtrip
+ok 220 - header and layout survive named-paper settings roundtrip
+  ---
+  duration_ms: 7.340568
+  type: 'test'
+  ...
+# Subtest: saved headers are account scoped and can be edited
+ok 221 - saved headers are account scoped and can be edited
+  ---
+  duration_ms: 15.555545
+  type: 'test'
+  ...
+# Subtest: cannot edit another user header or save without authentication/name
+ok 222 - cannot edit another user header or save without authentication/name
+  ---
+  duration_ms: 55.889635
+  type: 'test'
+  ...
+# Subtest: Default header fields are deeply isolated across independent paper preparations
+ok 223 - Default header fields are deeply isolated across independent paper preparations
+  ---
+  duration_ms: 0.40899
+  type: 'test'
+  ...
+# Subtest: AES-GCM ciphertext is randomized, bound to owner/receipt/origin/hash, and integrity checked
+ok 224 - AES-GCM ciphertext is randomized, bound to owner/receipt/origin/hash, and integrity checked
+  ---
+  duration_ms: 730.177035
+  type: 'test'
+  ...
+# Subtest: key rotation retains old reads, missing/malformed keys fail closed without plaintext fallback
+ok 225 - key rotation retains old reads, missing/malformed keys fail closed without plaintext fallback
+  ---
+  duration_ms: 267.008436
+  type: 'test'
+  ...
+# Subtest: storage URLs reject redirects/credentials/query/private-network and non-vault paths
+ok 226 - storage URLs reject redirects/credentials/query/private-network and non-vault paths
+  ---
+  duration_ms: 328.445976
+  type: 'test'
+  ...
+# Subtest: server copies only purchased initial pages in order, removes annotations, encrypts storage and returns PDF without source URL
+ok 227 - server copies only purchased initial pages in order, removes annotations, encrypts storage and returns PDF without source URL
+  ---
+  duration_ms: 258.604284
+  type: 'test'
+  ...
+# Subtest: capture is idempotent; concurrent writers retain one manifest and delete losing ciphertexts
+ok 228 - capture is idempotent; concurrent writers retain one manifest and delete losing ciphertexts
+  ---
+  duration_ms: 200.463563
+  type: 'test'
+  ...
+# Subtest: manifest write rollback cleans uploaded ciphertext and does not create a paid receipt or financial event
+ok 229 - manifest write rollback cleans uploaded ciphertext and does not create a paid receipt or financial event
+  ---
+  duration_ms: 121.367255
+  type: 'test'
+  ...
+# Subtest: owner isolation, legacy receipt, origin tampering and refunded receipt block capture/delivery
+ok 230 - owner isolation, legacy receipt, origin tampering and refunded receipt block capture/delivery
+  ---
+  duration_ms: 102.178906
+  type: 'test'
+  ...
+# Subtest: download route rejects anonymous/other-owner/range and never includes provider errors
+ok 231 - download route rejects anonymous/other-owner/range and never includes provider errors
+  ---
+  duration_ms: 196.921654
+  type: 'test'
+  ...
+# Subtest: daily attempt budget blocks provider work and unbounded downloads fail before PDF parsing
+ok 232 - daily attempt budget blocks provider work and unbounded downloads fail before PDF parsing
+  ---
+  duration_ms: 142.177857
+  type: 'test'
+  ...
+# Subtest: ciphertext tampering or manifest selection mismatch fails closed
+ok 233 - ciphertext tampering or manifest selection mismatch fails closed
+  ---
+  duration_ms: 134.426798
+  type: 'test'
+  ...
+# Subtest: revocation during storage fetch prevents delivery at final authorization check
+ok 234 - revocation during storage fetch prevents delivery at final authorization check
+  ---
+  duration_ms: 196.227634
+  type: 'test'
+  ...
+# Subtest: server action requires login, rejects invalid identifiers and returns no provider details
+ok 235 - server action requires login, rejects invalid identifiers and returns no provider details
+  ---
+  duration_ms: 126.685673
+  type: 'test'
+  ...
+# Subtest: invalid PDF or nonexistent selected pages creates no vault object
+ok 236 - invalid PDF or nonexistent selected pages creates no vault object
+  ---
+  duration_ms: 152.823359
+  type: 'test'
+  ...
+# Subtest: checkpoint UI states exact scope and contains no storage link or resale promise
+ok 237 - checkpoint UI states exact scope and contains no storage link or resale promise
+  ---
+  duration_ms: 91.047605
+  type: 'test'
+  ...
+# Subtest: missing key configuration hides readiness and blocks capture before storage work
+ok 238 - missing key configuration hides readiness and blocks capture before storage work
+  ---
+  duration_ms: 395.23763
+  type: 'test'
+  ...
+# Subtest: diagnostic performs real crypto/PDF roundtrip with mock Blob and deletes only its test object
+ok 239 - diagnostic performs real crypto/PDF roundtrip with mock Blob and deletes only its test object
+  ---
+  duration_ms: 704.813201
+  type: 'test'
+  ...
+# Subtest: diagnostic fresh admin check and explicit action consent block all provider work
+ok 240 - diagnostic fresh admin check and explicit action consent block all provider work
+  ---
+  duration_ms: 250.022081
+  type: 'test'
+  ...
+# Subtest: diagnostic cleanup failure is not a successful rollout check and retains orphan only in private audit
+ok 241 - diagnostic cleanup failure is not a successful rollout check and retains orphan only in private audit
+  ---
+  duration_ms: 388.44703
+  type: 'test'
+  ...
+# Subtest: purchased editor rechecks exact buyer receipt and rejects refund, corruption, missing account and invalid IDs
+ok 242 - purchased editor rechecks exact buyer receipt and rejects refund, corruption, missing account and invalid IDs
+  ---
+  duration_ms: 64.644989
+  type: 'test'
+  ...
+# Subtest: purchased snapshot conversion retains question order and edits without mutating receipt
+ok 243 - purchased snapshot conversion retains question order and edits without mutating receipt
+  ---
+  duration_ms: 1.78116
+  type: 'test'
+  ...
+# Subtest: purchased setup uses private receipt, skips bank checkout and does not save into sellable bank drafts
+ok 244 - purchased setup uses private receipt, skips bank checkout and does not save into sellable bank drafts
+  ---
+  duration_ms: 0.620019
+  type: 'test'
+  ...
+# Subtest: purchased snapshots retain per-question provenance without turning it into an editable choice
+ok 245 - purchased snapshots retain per-question provenance without turning it into an editable choice
+  ---
+  duration_ms: 0.668381
+  type: 'test'
+  ...
+# Subtest: starter displays shared question type options and forwards the selected type to preparation
+ok 246 - starter displays shared question type options and forwards the selected type to preparation
+  ---
+  duration_ms: 717.14072
+  type: 'test'
+  ...
+# Subtest: ready page grouping 1–3/4–6/7–9/10, validates unique bounded selections
+ok 247 - ready page grouping 1–3/4–6/7–9/10, validates unique bounded selections
+  ---
+  duration_ms: 2089.029349
+  type: 'test'
+  ...
+# Subtest: quote never charges; bonus20 buys four 3-page units, retry is free
+ok 248 - quote never charges; bonus20 buys four 3-page units, retry is free
+  ---
+  duration_ms: 478.058217
+  type: 'test'
+  ...
+# Subtest: concurrent checkout double click debits once and creates one durable receipt
+ok 249 - concurrent checkout double click debits once and creates one durable receipt
+  ---
+  duration_ms: 202.965941
+  type: 'test'
+  ...
+# Subtest: server ignores tampered totals, rejects anonymous and unpublished access
+ok 250 - server ignores tampered totals, rejects anonymous and unpublished access
+  ---
+  duration_ms: 193.129911
+  type: 'test'
+  ...
+# Subtest: failed receipt or wallet write rolls back charge and ownership
+ok 251 - failed receipt or wallet write rolls back charge and ownership
+  ---
+  duration_ms: 150.878633
+  type: 'test'
+  ...
+# Subtest: saved answers are server-approved selected pages only, ownership isolated
+ok 252 - saved answers are server-approved selected pages only, ownership isolated
+  ---
+  duration_ms: 138.87602
+  type: 'test'
+  ...
+# Subtest: monthly99 plan30 units, quota debit serialized, partial quota uses wallet, no existing-package bypass
+ok 253 - monthly99 plan30 units, quota debit serialized, partial quota uses wallet, no existing-package bypass
+  ---
+  duration_ms: 141.707467
+  type: 'test'
+  ...
+# Subtest: expired plan not spent, renewal charged once, admin free
+ok 254 - expired plan not spent, renewal charged once, admin free
+  ---
+  duration_ms: 202.989888
+  type: 'test'
+  ...
+# Subtest: quota change requires fresh consent without debit
+ok 255 - quota change requires fresh consent without debit
+  ---
+  duration_ms: 136.106751
+  type: 'test'
+  ...
+# Subtest: reordering a purchased set is free and durable, adding pages cannot mutate paid selection
+ok 256 - reordering a purchased set is free and durable, adding pages cannot mutate paid selection
+  ---
+  duration_ms: 142.929517
+  type: 'test'
+  ...
+# Subtest: later approved missing answers are attached on reopen without further charge
+ok 257 - later approved missing answers are attached on reopen without further charge
+  ---
+  duration_ms: 184.358264
+  type: 'test'
+  ...
+# Subtest: plan receipt write failure rolls back wallet and entitlement
+ok 258 - plan receipt write failure rolls back wallet and entitlement
+  ---
+  duration_ms: 131.140804
+  type: 'test'
+  ...
+# Subtest: snapshot validation rejects invalid gap before charging; answer injection ignored
+ok 259 - snapshot validation rejects invalid gap before charging; answer injection ignored
+  ---
+  duration_ms: 135.974848
+  type: 'test'
+  ...
+# Subtest: UI entry requires checkout and server save is scoped to receipt; dedicated plan does not bypass old billing
+ok 260 - UI entry requires checkout and server save is scoped to receipt; dedicated plan does not bypass old billing
+  ---
+  duration_ms: 0.849803
+  type: 'test'
+  ...
+# Subtest: own pending submission uses unchanged paid checkout; others blocked until approval
+ok 261 - own pending submission uses unchanged paid checkout; others blocked until approval
+  ---
+  duration_ms: 153.20563
+  type: 'test'
+  ...
+# Subtest: checkout records immutable server source and filtered initial snapshot, ignoring browser provenance
+ok 262 - checkout records immutable server source and filtered initial snapshot, ignoring browser provenance
+  ---
+  duration_ms: 174.441953
+  type: 'test'
+  ...
+# Subtest: origin and paid receipt roll back together on provenance write failure
+ok 263 - origin and paid receipt roll back together on provenance write failure
+  ---
+  duration_ms: 182.835227
+  type: 'test'
+  ...
+# Subtest: origin remains immutable across paid edit, source replacement, archive and checkout retry
+ok 264 - origin remains immutable across paid edit, source replacement, archive and checkout retry
+  ---
+  duration_ms: 129.436873
+  type: 'test'
+  ...
+# Subtest: uploaded approved source cannot acquire library provenance or resale authorization
+ok 265 - uploaded approved source cannot acquire library provenance or resale authorization
+  ---
+  duration_ms: 98.664302
+  type: 'test'
+  ...
+# Subtest: origin access is owner scoped and unauthenticated access fails
+ok 266 - origin access is owner scoped and unauthenticated access fails
+  ---
+  duration_ms: 153.933759
+  type: 'test'
+  ...
+# Subtest: missing or changed new provenance fails closed; historical receipts stay explicitly unverified
+ok 267 - missing or changed new provenance fails closed; historical receipts stay explicitly unverified
+  ---
+  duration_ms: 129.157706
+  type: 'test'
+  ...
+# Subtest: concurrent checkout creates one origin and charges once
+ok 268 - concurrent checkout creates one origin and charges once
+  ---
+  duration_ms: 137.303045
+  type: 'test'
+  ...
+# Subtest: archived source URL cannot silently charge for a replacement PDF
+ok 269 - archived source URL cannot silently charge for a replacement PDF
+  ---
+  duration_ms: 128.152748
+  type: 'test'
+  ...
+# Subtest: 45 provisional Biology questions pass the actual strict uploader and exact catalog
+ok 270 - 45 provisional Biology questions pass the actual strict uploader and exact catalog
+  ---
+  duration_ms: 16.465186
+  type: 'test'
+  ...
+# Subtest: MCQ keys and CQ part marks are valid; no unseen-figure dependency
+ok 271 - MCQ keys and CQ part marks are valid; no unseen-figure dependency
+  ---
+  duration_ms: 2.140816
+  type: 'test'
+  ...
+# Subtest: actual uploader rejects altered scope, duplicate choices/stems and wrong CQ marks
+ok 272 - actual uploader rejects altered scope, duplicate choices/stems and wrong CQ marks
+  ---
+  duration_ms: 6.114084
+  type: 'test'
+  ...
+# Subtest: manifest hashes, truthful status flags and offline reproduction agree
+ok 273 - manifest hashes, truthful status flags and offline reproduction agree
+  ---
+  duration_ms: 80.17689
+  type: 'test'
+  ...
+# Subtest: starter remains unregistered and builder has no publication mechanism
+ok 274 - starter remains unregistered and builder has no publication mechanism
+  ---
+  duration_ms: 0.727513
+  type: 'test'
+  ...
+# Subtest: chapter 12 exact 200/50/70 raw rows reconcile all shuffled answers and CQ marks
+ok 275 - chapter 12 exact 200/50/70 raw rows reconcile all shuffled answers and CQ marks
+  ---
+  duration_ms: 17.209803
+  type: 'test'
+  ...
+# Subtest: chapter 12 reader works through every page and embeds four safe offline CQ diagrams
+ok 276 - chapter 12 reader works through every page and embeds four safe offline CQ diagrams
+  ---
+  duration_ms: 645.866149
+  type: 'test'
+  ...
+# Subtest: chapter 12 preserves all chapter 1–11 bank artifacts and readers against 69a78e9
+ok 277 - chapter 12 preserves all chapter 1–11 bank artifacts and readers against 69a78e9
+  ---
+  duration_ms: 464.866418
+  type: 'test'
+  ...
+# Subtest: chapter 12 technical counts and backups never turn author checks into independent review
+ok 278 - chapter 12 technical counts and backups never turn author checks into independent review
+  ---
+  duration_ms: 1.076648
+  type: 'test'
+  ...
+# Subtest: chapter 12 DNA arithmetic, replication labels and conditional Mendelian risks are correct
+ok 279 - chapter 12 DNA arithmetic, replication labels and conditional Mendelian risks are correct
+  ---
+  duration_ms: 5.023111
+  type: 'test'
+  ...
+# Subtest: chapter 12 clinical content separates globin from clotting and rejects self-treatment and blame
+ok 280 - chapter 12 clinical content separates globin from clotting and rejects self-treatment and blame
+  ---
+  duration_ms: 1.514808
+  type: 'test'
+  ...
+# Subtest: chapter 12 evolution and DNA testing retain uncertainty, privacy and no forced decisions
+ok 281 - chapter 12 evolution and DNA testing retain uncertainty, privacy and no forced decisions
+  ---
+  duration_ms: 1.682908
+  type: 'test'
+  ...
+# Subtest: chapter 12 four diagrams regenerate byte-identically with explicit model limitations
+ok 282 - chapter 12 four diagrams regenerate byte-identically with explicit model limitations
+  ---
+  duration_ms: 42.11884
+  type: 'test'
+  ...
+# Subtest: all 39 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted
+ok 283 - all 39 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted
+  ---
+  duration_ms: 246.298894
+  type: 'test'
+  ...
+# Subtest: all MCQ choices are normalized-distinct and rebuilt keys balanced, shuffled and repeatable
+ok 284 - all MCQ choices are normalized-distinct and rebuilt keys balanced, shuffled and repeatable
+  ---
+  duration_ms: 33.941405
+  type: 'test'
+  ...
+# Subtest: 40 authored reasoning MCQ retain their exact choices, answers and explanations
+ok 285 - 40 authored reasoning MCQ retain their exact choices, answers and explanations
+  ---
+  duration_ms: 54.798106
+  type: 'test'
+  ...
+# Subtest: only surviving/recreated chapter 2–5 concept inputs are used, without duplicating chapter-1 objectives
+ok 286 - only surviving/recreated chapter 2–5 concept inputs are used, without duplicating chapter-1 objectives
+  ---
+  duration_ms: 199.387928
+  type: 'test'
+  ...
+# Subtest: 20 authored CQ have distinct self-contained stimuli, exact solutions and supplied 1/2/3/4 marks
+ok 287 - 20 authored CQ have distinct self-contained stimuli, exact solutions and supplied 1/2/3/4 marks
+  ---
+  duration_ms: 25.014601
+  type: 'test'
+  ...
+# Subtest: ledger origins, authoring paths, content hashes and per-file manifests reconcile
+ok 288 - ledger origins, authoring paths, content hashes and per-file manifests reconcile
+  ---
+  duration_ms: 4418.450437
+  type: 'test'
+  ...
+# Subtest: 14-chapter targets and three batches reflect current files, with all review/release gates open
+ok 289 - 14-chapter targets and three batches reflect current files, with all review/release gates open
+  ---
+  duration_ms: 0.6312
+  type: 'test'
+  ...
+# Subtest: uploader rejects duplicate options, wrong chapter, duplicate stems and CQ mark mutation
+ok 290 - uploader rejects duplicate options, wrong chapter, duplicate stems and CQ mark mutation
+  ---
+  duration_ms: 13.763517
+  type: 'test'
+  ...
+# Subtest: both builders reproduce all bytes offline and do not introduce Biology registration
+ok 291 - both builders reproduce all bytes offline and do not introduce Biology registration
+  ---
+  duration_ms: 730.265051
+  type: 'test'
+  ...
+# Subtest: offline reader embeds all 3840 drafts and filters/searches/paginates/toggles without remote dependencies
+ok 292 - offline reader embeds all 3840 drafts and filters/searches/paginates/toggles without remote dependencies
+  ---
+  duration_ms: 1078.633695
+  type: 'test'
+  ...
+# Subtest: artifact index verifies every rebuild output, authoring input and retained starter file
+ok 293 - artifact index verifies every rebuild output, authoring input and retained starter file
+  ---
+  duration_ms: 35.482476
+  type: 'test'
+  ...
+# Subtest: chapter-1 work preserves 40 authored MCQ choices and avoids concept-card generation
+ok 294 - chapter-1 work preserves 40 authored MCQ choices and avoids concept-card generation
+  ---
+  duration_ms: 3.383174
+  type: 'test'
+  ...
+# Subtest: chapter-1 20 SQ preserve sample answers and distinguish two actual web-exercise adaptations
+ok 295 - chapter-1 20 SQ preserve sample answers and distinguish two actual web-exercise adaptations
+  ---
+  duration_ms: 2.855036
+  type: 'test'
+  ...
+# Subtest: chapter-1 10 self-contained CQ preserve individually authored parts and marks
+ok 296 - chapter-1 10 self-contained CQ preserve individually authored parts and marks
+  ---
+  duration_ms: 1.876395
+  type: 'test'
+  ...
+# Subtest: original chapter-1 figure is packaged, hashed, embedded offline and matched to its textual equivalent
+ok 297 - original chapter-1 figure is packaged, hashed, embedded offline and matched to its textual equivalent
+  ---
+  duration_ms: 229.584052
+  type: 'test'
+  ...
+# Subtest: single-chapter workflow meets exactly the chapter-1 count target without claiming review or publication
+ok 298 - single-chapter workflow meets exactly the chapter-1 count target without claiming review or publication
+  ---
+  duration_ms: 0.217612
+  type: 'test'
+  ...
+# Subtest: all 205 completion inputs retain their exact authored answers, choices, CQ parts and source paths
+ok 299 - all 205 completion inputs retain their exact authored answers, choices, CQ parts and source paths
+  ---
+  duration_ms: 68.986326
+  type: 'test'
+  ...
+# Subtest: completed chapter reader contains exactly 200 MCQ, 50 CQ and 70 SQ and exposes all answers offline
+ok 300 - completed chapter reader contains exactly 200 MCQ, 50 CQ and 70 SQ and exposes all answers offline
+  ---
+  duration_ms: 226.890419
+  type: 'test'
+  ...
+# Subtest: historical chapter-1 freeze remains valid outside now-authorized chapter-2, chapter-3, chapter-4 and chapter-5 expansions
+ok 301 - historical chapter-1 freeze remains valid outside now-authorized chapter-2, chapter-3, chapter-4 and chapter-5 expansions
+  ---
+  duration_ms: 0.611909
+  type: 'test'
+  ...
+# Subtest: chapter 2 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 302 - chapter 2 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.524353
+  type: 'test'
+  ...
+# Subtest: chapter-2 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 303 - chapter-2 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 94.897331
+  type: 'test'
+  ...
+# Subtest: chapter-2 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 304 - chapter-2 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 183.695085
+  type: 'test'
+  ...
+# Subtest: chapter-2 historical preservation evidence remains valid outside subsequently authorized chapters 3–5
+ok 305 - chapter-2 historical preservation evidence remains valid outside subsequently authorized chapters 3–5
+  ---
+  duration_ms: 2.473028
+  type: 'test'
+  ...
+# Subtest: chapter-2 complete bank has unique normalized stems, CQ marks and no missing figure dependency
+ok 306 - chapter-2 complete bank has unique normalized stems, CQ marks and no missing figure dependency
+  ---
+  duration_ms: 4.638415
+  type: 'test'
+  ...
+# Subtest: chapter 3 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 307 - chapter 3 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.495508
+  type: 'test'
+  ...
+# Subtest: chapter-3 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 308 - chapter-3 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 80.66099
+  type: 'test'
+  ...
+# Subtest: chapter-3 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 309 - chapter-3 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 194.427937
+  type: 'test'
+  ...
+# Subtest: chapter 3 retains all 55 baseline questions including exact option order and preserves other chapter artifacts except subsequently authorized chapters 4 and 5
+ok 310 - chapter 3 retains all 55 baseline questions including exact option order and preserves other chapter artifacts except subsequently authorized chapters 4 and 5
+  ---
+  duration_ms: 7.924232
+  type: 'test'
+  ...
+# Subtest: chapter-3 bank maintains unique normalized stems and CQ marks with explicit figure dependencies
+ok 311 - chapter-3 bank maintains unique normalized stems and CQ marks with explicit figure dependencies
+  ---
+  duration_ms: 4.803719
+  type: 'test'
+  ...
+# Subtest: chapter-3 curated counting regressions separate chromosome, chromatid, DNA, pole and set units
+ok 312 - chapter-3 curated counting regressions separate chromosome, chromatid, DNA, pole and set units
+  ---
+  duration_ms: 2.474074
+  type: 'test'
+  ...
+# Subtest: all-bank reader carries exactly thirty-four embedded original diagrams with no external image dependencies
+ok 313 - all-bank reader carries exactly thirty-four embedded original diagrams with no external image dependencies
+  ---
+  duration_ms: 896.420647
+  type: 'test'
+  ...
+# Subtest: chapter 4 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 314 - chapter 4 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.996544
+  type: 'test'
+  ...
+# Subtest: chapter-4 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 315 - chapter-4 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 92.998978
+  type: 'test'
+  ...
+# Subtest: chapter-4 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 316 - chapter-4 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 203.118754
+  type: 'test'
+  ...
+# Subtest: chapter 4 preserves all 55 baseline items, ledger entries and historical preservation outside authorized chapter 5
+ok 317 - chapter 4 preserves all 55 baseline items, ledger entries and historical preservation outside authorized chapter 5
+  ---
+  duration_ms: 11.522259
+  type: 'test'
+  ...
+# Subtest: chapter-4 curated regressions retain numerical units, sources and metabolic distinctions
+ok 318 - chapter-4 curated regressions retain numerical units, sources and metabolic distinctions
+  ---
+  duration_ms: 8.376903
+  type: 'test'
+  ...
+# Subtest: chapter-4 figures reproduce exactly, hazards stay contextual and source/release limitations remain explicit
+ok 319 - chapter-4 figures reproduce exactly, hazards stay contextual and source/release limitations remain explicit
+  ---
+  duration_ms: 34.31809
+  type: 'test'
+  ...
+# Subtest: chapter-5 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 320 - chapter-5 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 105.228518
+  type: 'test'
+  ...
+# Subtest: chapter-5 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 321 - chapter-5 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 256.950261
+  type: 'test'
+  ...
+# Subtest: chapter 5 meets its count target while review, import and release remain unauthorized
+ok 322 - chapter 5 meets its count target while review, import and release remain unauthorized
+  ---
+  duration_ms: 8.262573
+  type: 'test'
+  ...
+# Subtest: chapter 5 preserves all 55 baseline items and ledger entries plus 42 completed chapter artifacts
+ok 323 - chapter 5 preserves all 55 baseline items and ledger entries plus 42 completed chapter artifacts
+  ---
+  duration_ms: 14.341065
+  type: 'test'
+  ...
+# Subtest: chapter-5 numerical and physiology regressions preserve units, scope and distinct digestive roles
+ok 324 - chapter-5 numerical and physiology regressions preserve units, scope and distinct digestive roles
+  ---
+  duration_ms: 5.125009
+  type: 'test'
+  ...
+# Subtest: chapter-5 original figures reproduce exactly and safety and source limitations stay explicit
+ok 325 - chapter-5 original figures reproduce exactly and safety and source limitations stay explicit
+  ---
+  duration_ms: 31.152286
+  type: 'test'
+  ...
+# Subtest: chapter-6 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 326 - chapter-6 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 89.65113
+  type: 'test'
+  ...
+# Subtest: chapter-6 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 327 - chapter-6 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 195.785105
+  type: 'test'
+  ...
+# Subtest: chapter 6 meets exact 200/50/70 target with balanced keys and honest release gates
+ok 328 - chapter 6 meets exact 200/50/70 target with balanced keys and honest release gates
+  ---
+  duration_ms: 3.398541
+  type: 'test'
+  ...
+# Subtest: chapter-6 addition preserves every chapter 1–5 bank artifact and reader byte-for-byte
+ok 329 - chapter-6 addition preserves every chapter 1–5 bank artifact and reader byte-for-byte
+  ---
+  duration_ms: 9.391673
+  type: 'test'
+  ...
+# Subtest: chapter-6 transport calculations retain explicit dimensions and rates
+ok 330 - chapter-6 transport calculations retain explicit dimensions and rates
+  ---
+  duration_ms: 2.125988
+  type: 'test'
+  ...
+# Subtest: chapter-6 circulation and transfusion regressions preserve direction and clinical boundaries
+ok 331 - chapter-6 circulation and transfusion regressions preserve direction and clinical boundaries
+  ---
+  duration_ms: 2.01092
+  type: 'test'
+  ...
+# Subtest: chapter-6 original figures regenerate exactly and route labels stay non-anatomical
+ok 332 - chapter-6 original figures regenerate exactly and route labels stay non-anatomical
+  ---
+  duration_ms: 29.469862
+  type: 'test'
+  ...
+# Subtest: chapter-6 ledger keeps conceptual-source scope and independently verified checkpoint evidence
+ok 333 - chapter-6 ledger keeps conceptual-source scope and independently verified checkpoint evidence
+  ---
+  duration_ms: 2.323557
+  type: 'test'
+  ...
+# Subtest: chapter-7 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 334 - chapter-7 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 96.289617
+  type: 'test'
+  ...
+# Subtest: chapter-7 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 335 - chapter-7 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 183.67999
+  type: 'test'
+  ...
+# Subtest: chapter 7 reaches 320 answered drafts with balanced keys and uncertified release status
+ok 336 - chapter 7 reaches 320 answered drafts with balanced keys and uncertified release status
+  ---
+  duration_ms: 2.587216
+  type: 'test'
+  ...
+# Subtest: chapter-7 expansion preserves all 62 earlier chapter 1–6 bank artifacts and readers
+ok 337 - chapter-7 expansion preserves all 62 earlier chapter 1–6 bank artifacts and readers
+  ---
+  duration_ms: 11.87474
+  type: 'test'
+  ...
+# Subtest: chapter-7 quantitative regressions distinguish total, alveolar, net and partial-pressure quantities
+ok 338 - chapter-7 quantitative regressions distinguish total, alveolar, net and partial-pressure quantities
+  ---
+  duration_ms: 3.286465
+  type: 'test'
+  ...
+# Subtest: chapter-7 biology boundaries retain gas direction, airway distinctions and evidence limits
+ok 339 - chapter-7 biology boundaries retain gas direction, airway distinctions and evidence limits
+  ---
+  duration_ms: 2.540965
+  type: 'test'
+  ...
+# Subtest: chapter-7 diagrams regenerate exactly, use correct frontal lung orientation and separate gradients
+ok 340 - chapter-7 diagrams regenerate exactly, use correct frontal lung orientation and separate gradients
+  ---
+  duration_ms: 30.154495
+  type: 'test'
+  ...
+# Subtest: chapter-7 source ledger and safety retain remote checkpoint scope without certification inflation
+ok 341 - chapter-7 source ledger and safety retain remote checkpoint scope without certification inflation
+  ---
+  duration_ms: 2.491009
+  type: 'test'
+  ...
+# Subtest: chapter-8 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 342 - chapter-8 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 92.672881
+  type: 'test'
+  ...
+# Subtest: chapter-8 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 343 - chapter-8 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 217.735121
+  type: 'test'
+  ...
+# Subtest: chapter 8 meets exactly 200/50/70 with balanced keys, unique stems and honest gates
+ok 344 - chapter 8 meets exactly 200/50/70 with balanced keys, unique stems and honest gates
+  ---
+  duration_ms: 3.485095
+  type: 'test'
+  ...
+# Subtest: chapter-8 expansion preserves all 72 earlier chapter 1–7 bank artifacts and readers
+ok 345 - chapter-8 expansion preserves all 72 earlier chapter 1–7 bank artifacts and readers
+  ---
+  duration_ms: 13.389593
+  type: 'test'
+  ...
+# Subtest: chapter-8 numerical regressions retain mass balance, recovery, rate and concentration units
+ok 346 - chapter-8 numerical regressions retain mass balance, recovery, rate and concentration units
+  ---
+  duration_ms: 3.678352
+  type: 'test'
+  ...
+# Subtest: chapter-8 physiological boundaries retain organ, fluid and transport directions
+ok 347 - chapter-8 physiological boundaries retain organ, fluid and transport directions
+  ---
+  duration_ms: 2.312696
+  type: 'test'
+  ...
+# Subtest: chapter-8 original diagrams regenerate exactly and distinguish drainage and blood/dialysate paths
+ok 348 - chapter-8 original diagrams regenerate exactly and distinguish drainage and blood/dialysate paths
+  ---
+  duration_ms: 30.392252
+  type: 'test'
+  ...
+# Subtest: chapter-8 sources, safety and verified 198-row checkpoint retain explicit scope limits
+ok 349 - chapter-8 sources, safety and verified 198-row checkpoint retain explicit scope limits
+  ---
+  duration_ms: 2.436303
+  type: 'test'
+  ...
+# Subtest: chapter-9 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 350 - chapter-9 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 112.861075
+  type: 'test'
+  ...
+# Subtest: chapter-9 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 351 - chapter-9 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 211.461929
+  type: 'test'
+  ...
+# Subtest: chapter 9 reaches exact 200/50/70 with balanced keys and no certification inflation
+ok 352 - chapter 9 reaches exact 200/50/70 with balanced keys and no certification inflation
+  ---
+  duration_ms: 4.55633
+  type: 'test'
+  ...
+# Subtest: chapter-9 addition preserves all 82 earlier chapter 1–8 artifacts and readers byte-for-byte
+ok 353 - chapter-9 addition preserves all 82 earlier chapter 1–8 artifacts and readers byte-for-byte
+  ---
+  duration_ms: 15.37244
+  type: 'test'
+  ...
+# Subtest: chapter-9 numerical regressions retain torque, perpendicular arm, angle and percentage bases
+ok 354 - chapter-9 numerical regressions retain torque, perpendicular arm, angle and percentage bases
+  ---
+  duration_ms: 3.438613
+  type: 'test'
+  ...
+# Subtest: chapter-9 physiology boundaries retain bone cells, connective tissues and contraction mechanism
+ok 355 - chapter-9 physiology boundaries retain bone cells, connective tissues and contraction mechanism
+  ---
+  duration_ms: 2.306258
+  type: 'test'
+  ...
+# Subtest: chapter-9 three original figures regenerate and label simplifications and functional roles
+ok 356 - chapter-9 three original figures regenerate and label simplifications and functional roles
+  ---
+  duration_ms: 29.381782
+  type: 'test'
+  ...
+# Subtest: chapter-9 source and clinical safety evidence retains checkpoint and unapproved scope
+ok 357 - chapter-9 source and clinical safety evidence retains checkpoint and unapproved scope
+  ---
+  duration_ms: 2.402884
+  type: 'test'
+  ...
+# Subtest: chapter-10 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 358 - chapter-10 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 102.381061
+  type: 'test'
+  ...
+# Subtest: chapter-10 reader paginates all 320 answers, strips figure markdown and embeds five original figures
+ok 359 - chapter-10 reader paginates all 320 answers, strips figure markdown and embeds five original figures
+  ---
+  duration_ms: 197.015243
+  type: 'test'
+  ...
+# Subtest: chapter 10 exact count, balanced keys, lexical evidence and count-complete batch 2 retain review gates
+ok 360 - chapter 10 exact count, balanced keys, lexical evidence and count-complete batch 2 retain review gates
+  ---
+  duration_ms: 2.455694
+  type: 'test'
+  ...
+# Subtest: chapter-10 addition preserves all 92 earlier chapter 1–9 artifacts/readers against ab75bb1
+ok 361 - chapter-10 addition preserves all 92 earlier chapter 1–9 artifacts/readers against ab75bb1
+  ---
+  duration_ms: 17.96453
+  type: 'test'
+  ...
+# Subtest: chapter-10 plant distinctions retain target organ, direction, dormancy and day-neutral limits
+ok 362 - chapter-10 plant distinctions retain target organ, direction, dormancy and day-neutral limits
+  ---
+  duration_ms: 2.51677
+  type: 'test'
+  ...
+# Subtest: chapter-10 neuro-endocrine boundaries and numerical units stay correct
+ok 363 - chapter-10 neuro-endocrine boundaries and numerical units stay correct
+  ---
+  duration_ms: 3.713377
+  type: 'test'
+  ...
+# Subtest: chapter-10 clinical safety, conceptual source routes and verified partial-checkpoint scope stay explicit
+ok 364 - chapter-10 clinical safety, conceptual source routes and verified partial-checkpoint scope stay explicit
+  ---
+  duration_ms: 2.60645
+  type: 'test'
+  ...
+# Subtest: chapter-10 five relevant original figures regenerate and neuron-CQ labels match D node / E terminals
+ok 365 - chapter-10 five relevant original figures regenerate and neuron-CQ labels match D node / E terminals
+  ---
+  duration_ms: 34.573268
+  type: 'test'
+  ...
+# Subtest: chapter-11 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 366 - chapter-11 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 93.045669
+  type: 'test'
+  ...
+# Subtest: chapter-11 reader paginates all 320 answers, strips figure markdown and embeds four original figures
+ok 367 - chapter-11 reader paginates all 320 answers, strips figure markdown and embeds four original figures
+  ---
+  duration_ms: 175.03652
+  type: 'test'
+  ...
+# Subtest: chapter 11 exact counts, balanced keys and limited lexical screen never close release gates
+ok 368 - chapter 11 exact counts, balanced keys and limited lexical screen never close release gates
+  ---
+  duration_ms: 0.83449
+  type: 'test'
+  ...
+# Subtest: chapter 11 preserves every earlier chapter 1–10 bank artifact and reader against 5a84276
+ok 369 - chapter 11 preserves every earlier chapter 1–10 bank artifact and reader against 5a84276
+  ---
+  duration_ms: 408.295927
+  type: 'test'
+  ...
+# Subtest: chapter 11 plant terminology, gametophyte and fruit-source distinctions remain qualified
+ok 370 - chapter 11 plant terminology, gametophyte and fruit-source distinctions remain qualified
+  ---
+  duration_ms: 2.412675
+  type: 'test'
+  ...
+# Subtest: chapter 11 numerical examples preserve chromosome sets, denominators and gestation clocks
+ok 371 - chapter 11 numerical examples preserve chromosome sets, denominators and gestation clocks
+  ---
+  duration_ms: 1.893794
+  type: 'test'
+  ...
+# Subtest: chapter 11 human reproduction keeps anatomy, hormonal roles and safe timing boundaries
+ok 372 - chapter 11 human reproduction keeps anatomy, hormonal roles and safe timing boundaries
+  ---
+  duration_ms: 2.041175
+  type: 'test'
+  ...
+# Subtest: chapter 11 HIV evidence routes retain effective treatment, window-period limits and no stigma
+ok 373 - chapter 11 HIV evidence routes retain effective treatment, window-period limits and no stigma
+  ---
+  duration_ms: 1.994641
+  type: 'test'
+  ...
+# Subtest: chapter 11 four relevant diagrams regenerate exactly, labels align and no scripts are embedded
+ok 374 - chapter 11 four relevant diagrams regenerate exactly, labels align and no scripts are embedded
+  ---
+  duration_ms: 32.036693
+  type: 'test'
+  ...
+# Subtest: selected text format markers render nested safe elements
+ok 375 - selected text format markers render nested safe elements
+  ---
+  duration_ms: 11.487834
+  type: 'test'
+  ...
+# Subtest: formatting never evaluates raw HTML, URLs or unclosed markers
+ok 376 - formatting never evaluates raw HTML, URLs or unclosed markers
+  ---
+  duration_ms: 0.835654
+  type: 'test'
+  ...
+# Subtest: embedded logo accepts only bounded raster data and https, never svg or script
+ok 377 - embedded logo accepts only bounded raster data and https, never svg or script
+  ---
+  duration_ms: 0.766482
+  type: 'test'
+  ...
+# Subtest: autofit and uploaded logos survive paper snapshots
+ok 378 - autofit and uploaded logos survive paper snapshots
+  ---
+  duration_ms: 11.740703
+  type: 'test'
+  ...
+# Subtest: autofit uses real measured question heights and bounded font reductions
+ok 379 - autofit uses real measured question heights and bounded font reductions
+  ---
+  duration_ms: 0.463372
+  type: 'test'
+  ...
+# Subtest: booklet imposition orders front/back sides and pads missing pages
+ok 380 - booklet imposition orders front/back sides and pads missing pages
+  ---
+  duration_ms: 0.225647
+  type: 'test'
+  ...
+# Subtest: manual font sizes 7 through 28 survive restore; below minimum falls back safely
+ok 381 - manual font sizes 7 through 28 survive restore; below minimum falls back safely
+  ---
+  duration_ms: 2.784164
+  type: 'test'
+  ...
+# Subtest: old paper settings get safe layout defaults without losing saved metadata
+ok 382 - old paper settings get safe layout defaults without losing saved metadata
+  ---
+  duration_ms: 8.722825
+  type: 'test'
+  ...
+# Subtest: landscape swaps dimensions; CQ styles have independent labels
+ok 383 - landscape swaps dimensions; CQ styles have independent labels
+  ---
+  duration_ms: 0.710392
+  type: 'test'
+  ...
+# Subtest: layout values clamp invalid saved inputs and roundtrip branding and removal
+ok 384 - layout values clamp invalid saved inputs and roundtrip branding and removal
+  ---
+  duration_ms: 8.044293
+  type: 'test'
+  ...
+# Subtest: replacement only uses approved same class subject chapter and question type
+ok 385 - replacement only uses approved same class subject chapter and question type
+  ---
+  duration_ms: 134.605399
+  type: 'test'
+  ...
+# Subtest: replacement rejects malformed input before database access
+ok 386 - replacement rejects malformed input before database access
+  ---
+  duration_ms: 35.964094
+  type: 'test'
+  ...
+# Subtest: explicit full-catalog owner policy and saved IDs; other subjects/categories do not inherit Physics
+ok 387 - explicit full-catalog owner policy and saved IDs; other subjects/categories do not inherit Physics
+  ---
+  duration_ms: 13.334095
+  type: 'test'
+  ...
+# Subtest: all 6400 published canonical questions classify with preserved figures and answers
+ok 388 - all 6400 published canonical questions classify with preserved figures and answers
+  ---
+  duration_ms: 98.810908
+  type: 'test'
+  ...
+# Subtest: actual stock repeatedly satisfies exact CQ and SQ fixed six plus one OTHER; same extra chapter allowed, not forced
+ok 389 - actual stock repeatedly satisfies exact CQ and SQ fixed six plus one OTHER; same extra chapter allowed, not forced
+  ---
+  duration_ms: 4209.00976
+  type: 'test'
+  ...
+# Subtest: MCQ full-book practice offers 25, covers all 14 chapters, max 2 per chapter
+ok 390 - MCQ full-book practice offers 25, covers all 14 chapters, max 2 per chapter
+  ---
+  duration_ms: 1672.545828
+  type: 'test'
+  ...
+# Subtest: missing a mandatory CQ or SQ chapter blocks complete model, no substitution/no partial IDs
+ok 391 - missing a mandatory CQ or SQ chapter blocks complete model, no substitution/no partial IDs
+  ---
+  duration_ms: 2332.539154
+  type: 'test'
+  ...
+# Subtest: deduplicates normalized stems/IDs, rejects unknown chapters, incomplete answers/CQ and unsafe diagrams
+ok 392 - deduplicates normalized stems/IDs, rejects unknown chapters, incomplete answers/CQ and unsafe diagrams
+  ---
+  duration_ms: 6.693349
+  type: 'test'
+  ...
+# Subtest: paper settings/sections preserve correct marks, four-part CQ, shared theory time and no practical paper
+ok 393 - paper settings/sections preserve correct marks, four-part CQ, shared theory time and no practical paper
+  ---
+  duration_ms: 186.068859
+  type: 'test'
+  ...
+# Subtest: editor detects quota changes, duplicates, bad kinds, missing parts, setup changes; retains extras visibly
+ok 394 - editor detects quota changes, duplicates, bad kinds, missing parts, setup changes; retains extras visibly
+  ---
+  duration_ms: 207.785532
+  type: 'test'
+  ...
+# Subtest: real server action queries approved scoped stock only, returns IDs, keeps auth/scan/error gates
+ok 395 - real server action queries approved scoped stock only, returns IDs, keeps auth/scan/error gates
+  ---
+  duration_ms: 411.850359
+  type: 'test'
+  ...
+# Subtest: model creation never imports/approves/generates and preparation still goes directly to Setup
+ok 396 - model creation never imports/approves/generates and preparation still goes directly to Setup
+  ---
+  duration_ms: 0.88558
+  type: 'test'
+  ...
+# Subtest: deployment smoke check is read-only and verifies actual subject quotas and editor/print compatibility
+ok 397 - deployment smoke check is read-only and verifies actual subject quotas and editor/print compatibility
+  ---
+  duration_ms: 2809.768822
+  type: 'test'
+  ...
+# Subtest: integer prices and CQ identification including text-only legacy CQ
+ok 398 - integer prices and CQ identification including text-only legacy CQ
+  ---
+  duration_ms: 869.507219
+  type: 'test'
+  ...
+# Subtest: concurrent first-login wallet provisioning awards one bonus only; ADMIN exempt
+ok 399 - concurrent first-login wallet provisioning awards one bonus only; ADMIN exempt
+  ---
+  duration_ms: 422.183679
+  type: 'test'
+  ...
+# Subtest: server quote deduplicates IDs and ignores client prices; checkout charges once across retries
+ok 400 - server quote deduplicates IDs and ignores client prices; checkout charges once across retries
+  ---
+  duration_ms: 325.953478
+  type: 'test'
+  ...
+# Subtest: insufficient balance and stale amount fail without debit/entitlement
+ok 401 - insufficient balance and stale amount fail without debit/entitlement
+  ---
+  duration_ms: 318.4075
+  type: 'test'
+  ...
+# Subtest: active package and fresh database ADMIN role bypass charges
+ok 402 - active package and fresh database ADMIN role bypass charges
+  ---
+  duration_ms: 233.938833
+  type: 'test'
+  ...
+# Subtest: unknown IDs, excessive selection and unauthenticated access fail closed
+ok 403 - unknown IDs, excessive selection and unauthenticated access fail closed
+  ---
+  duration_ms: 171.727894
+  type: 'test'
+  ...
+# Subtest: recharge minimum enforced and submission alone cannot credit balance
+ok 404 - recharge minimum enforced and submission alone cannot credit balance
+  ---
+  duration_ms: 200.780385
+  type: 'test'
+  ...
+# Subtest: only ADMIN can approve; approved request credits once, repeated review cannot replay
+ok 405 - only ADMIN can approve; approved request credits once, repeated review cannot replay
+  ---
+  duration_ms: 193.852306
+  type: 'test'
+  ...
+# Subtest: rejected recharge has no credit and reused transaction ID rejected across accounts
+ok 406 - rejected recharge has no credit and reused transaction ID rejected across accounts
+  ---
+  duration_ms: 156.888045
+  type: 'test'
+  ...
+# Subtest: save/export authorization fails before checkout and passes after purchase
+ok 407 - save/export authorization fails before checkout and passes after purchase
+  ---
+  duration_ms: 153.263615
+  type: 'test'
+  ...
+# Subtest: TID is stable, unique per account, registered without another bonus
+ok 408 - TID is stable, unique per account, registered without another bonus
+  ---
+  duration_ms: 132.428971
+  type: 'test'
+  ...
+# Subtest: admin can credit verified override amount, with reason and requested amount preserved
+ok 409 - admin can credit verified override amount, with reason and requested amount preserved
+  ---
+  duration_ms: 130.010419
+  type: 'test'
+  ...
+# Subtest: recharge amount validation uses integer paisa and rejects invalid limits
+ok 410 - recharge amount validation uses integer paisa and rejects invalid limits
+  ---
+  duration_ms: 128.874557
+  type: 'test'
+  ...
+# Subtest: recharge form rejects non-admin and malformed decisions without credit
+ok 411 - recharge form rejects non-admin and malformed decisions without credit
+  ---
+  duration_ms: 124.993354
+  type: 'test'
+  ...
+# Subtest: concurrent override approvals credit exactly once and preserve bonus
+ok 412 - concurrent override approvals credit exactly once and preserve bonus
+  ---
+  duration_ms: 149.1789
+  type: 'test'
+  ...
+# Subtest: legacy funded wallet gets TID without bonus reset; mismatched request fails closed
+ok 413 - legacy funded wallet gets TID without bonus reset; mismatched request fails closed
+  ---
+  duration_ms: 134.99601
+  type: 'test'
+  ...
+# Subtest: source ledger integrates debit/recharge, preserves funds and prevents duplicate operation
+ok 414 - source ledger integrates debit/recharge, preserves funds and prevents duplicate operation
+  ---
+  duration_ms: 124.845349
+  type: 'test'
+  ...
+# Subtest: TID Send Money requires preview/confirmation and credits nonwithdrawable received funds once
+ok 415 - TID Send Money requires preview/confirmation and credits nonwithdrawable received funds once
+  ---
+  duration_ms: 212.060643
+  type: 'test'
+  ...
+# Subtest: bonus-only, self, invalid, expired, cross-user and unauthenticated transfers cannot debit
+ok 416 - bonus-only, self, invalid, expired, cross-user and unauthenticated transfers cannot debit
+  ---
+  duration_ms: 270.428968
+  type: 'test'
+  ...
+# Subtest: transfer failure rolls back both wallets, source ledger and confirmation; retry succeeds
+ok 417 - transfer failure rolls back both wallets, source ledger and confirmation; retry succeeds
+  ---
+  duration_ms: 129.30732
+  type: 'test'
+  ...
+# Subtest: daily Send Money cap and lookup quota are enforced on server
+ok 418 - daily Send Money cap and lookup quota are enforced on server
+  ---
+  duration_ms: 116.421213
+  type: 'test'
+  ...
+# Subtest: received transfer can be sent again but never becomes earnings
+ok 419 - received transfer can be sent again but never becomes earnings
+  ---
+  duration_ms: 125.060819
+  type: 'test'
+  ...
+# Subtest: withdrawal holds earnings only, duplicate request debits once and active request blocks another
+ok 420 - withdrawal holds earnings only, duplicate request debits once and active request blocks another
+  ---
+  duration_ms: 117.23054
+  type: 'test'
+  ...
+# Subtest: withdrawal rejects non earnings, below minimum, invalid number, missing consent, unauthenticated and admin
+ok 421 - withdrawal rejects non earnings, below minimum, invalid number, missing consent, unauthenticated and admin
+  ---
+  duration_ms: 294.753078
+  type: 'test'
+  ...
+# Subtest: withdrawal reject releases earnings once; nonadmin cannot review; paid after rejection blocked
+ok 422 - withdrawal reject releases earnings once; nonadmin cannot review; paid after rejection blocked
+  ---
+  duration_ms: 121.859584
+  type: 'test'
+  ...
+# Subtest: paid withdrawal requires actual payment confirmation and unique TrxID, no second wallet debit
+ok 423 - paid withdrawal requires actual payment confirmation and unique TrxID, no second wallet debit
+  ---
+  duration_ms: 127.866289
+  type: 'test'
+  ...
+# Subtest: withdrawal record write failure rolls back earnings hold; rejection history failure preserves hold
+ok 424 - withdrawal record write failure rolls back earnings hold; rejection history failure preserves hold
+  ---
+  duration_ms: 132.884372
+  type: 'test'
+  ...
+# Subtest: market purchase atomically splits 60/40 and stores immutable copy; concurrent retries charge once
+ok 425 - market purchase atomically splits 60/40 and stores immutable copy; concurrent retries charge once
+  ---
+  duration_ms: 133.547679
+  type: 'test'
+  ...
+# Subtest: market purchase rejects unauthenticated, self, admin, unapproved, modified terms and snapshot
+ok 426 - market purchase rejects unauthenticated, self, admin, unapproved, modified terms and snapshot
+  ---
+  duration_ms: 997.332404
+  type: 'test'
+  ...
+# Subtest: market purchase seller/history/platform failure rolls back buyer debit and seller earnings
+ok 427 - market purchase seller/history/platform failure rolls back buyer debit and seller earnings
+  ---
+  duration_ms: 613.10926
+  type: 'test'
+  ...
+# Subtest: buyer can change institution only, not questions/price/owner; another user cannot edit copy
+ok 428 - buyer can change institution only, not questions/price/owner; another user cannot edit copy
+  ---
+  duration_ms: 143.549212
+  type: 'test'
+  ...
+# Subtest: revenue split conserves each paisa and disallows invalid prices
+ok 429 - revenue split conserves each paisa and disallows invalid prices
+  ---
+  duration_ms: 112.380391
+  type: 'test'
+  ...
+# Subtest: refund restores exact bonus/recharge/received/earnings sources and reverses seller earnings once
+ok 430 - refund restores exact bonus/recharge/received/earnings sources and reverses seller earnings once
+  ---
+  duration_ms: 124.392
+  type: 'test'
+  ...
+# Subtest: only actual buyer may complain; admin required for review; explicit refund consent and reason
+ok 431 - only actual buyer may complain; admin required for review; explicit refund consent and reason
+  ---
+  duration_ms: 172.881921
+  type: 'test'
+  ...
+# Subtest: insufficient seller earnings or original source/platform mismatch blocks refund without taking other funds
+ok 432 - insufficient seller earnings or original source/platform mismatch blocks refund without taking other funds
+  ---
+  duration_ms: 397.025091
+  type: 'test'
+  ...
+# Subtest: refund receipt/copy/history/complaint failures roll back all money and access changes
+ok 433 - refund receipt/copy/history/complaint failures roll back all money and access changes
+  ---
+  duration_ms: 499.930331
+  type: 'test'
+  ...
+# Subtest: rejected complaint changes no balances and cannot later be refunded or overwritten
+ok 434 - rejected complaint changes no balances and cannot later be refunded or overwritten
+  ---
+  duration_ms: 174.284671
+  type: 'test'
+  ...
+# Subtest: refund access checks apply to private paper and institution mutation, with complaint audit kept
+ok 435 - refund access checks apply to private paper and institution mutation, with complaint audit kept
+  ---
+  duration_ms: 0.546332
+  type: 'test'
+  ...
+# Subtest: withdrawal cannot settle before claim; other admin cannot steal or settle even with forged form
+ok 436 - withdrawal cannot settle before claim; other admin cannot steal or settle even with forged form
+  ---
+  duration_ms: 141.985876
+  type: 'test'
+  ...
+# Subtest: claim record write or request write failure rolls back ownership and audit; claims do not expire
+ok 437 - claim record write or request write failure rolls back ownership and audit; claims do not expire
+  ---
+  duration_ms: 253.009304
+  type: 'test'
+  ...
+# Subtest: claim audit mismatch or removed hold blocks payment recording without changing money
+ok 438 - claim audit mismatch or removed hold blocks payment recording without changing money
+  ---
+  duration_ms: 377.229775
+  type: 'test'
+  ...
+# Subtest: wallet limits defaults preserve old behavior and reject malformed persisted configs
+ok 439 - wallet limits defaults preserve old behavior and reject malformed persisted configs
+  ---
+  duration_ms: 187.656406
+  type: 'test'
+  ...
+# Subtest: only fresh admin with consent and valid inputs may configure hard-bounded limits
+ok 440 - only fresh admin with consent and valid inputs may configure hard-bounded limits
+  ---
+  duration_ms: 124.162495
+  type: 'test'
+  ...
+# Subtest: concurrent limit edits accept one revision and preserve immutable before/after audit
+ok 441 - concurrent limit edits accept one revision and preserve immutable before/after audit
+  ---
+  duration_ms: 121.048301
+  type: 'test'
+  ...
+# Subtest: limit audit or config write failure rolls back both records
+ok 442 - limit audit or config write failure rolls back both records
+  ---
+  duration_ms: 230.582772
+  type: 'test'
+  ...
+# Subtest: latest lower Send Money limit blocks existing quote; daily lookup reduction does not reset usage
+ok 443 - latest lower Send Money limit blocks existing quote; daily lookup reduction does not reset usage
+  ---
+  duration_ms: 128.64337
+  type: 'test'
+  ...
+# Subtest: new withdrawal maximum is enforced, existing hold remains settleable after reduction
+ok 444 - new withdrawal maximum is enforced, existing hold remains settleable after reduction
+  ---
+  duration_ms: 112.89215
+  type: 'test'
+  ...
+# Subtest: corrupt limits fail closed for new financial requests without touching wallets
+ok 445 - corrupt limits fail closed for new financial requests without touching wallets
+  ---
+  duration_ms: 288.287811
+  type: 'test'
+  ...
+# Subtest: two-party handover freezes settlement until acceptance, updates claim and keeps immutable audit without changing funds
+ok 446 - two-party handover freezes settlement until acceptance, updates claim and keeps immutable audit without changing funds
+  ---
+  duration_ms: 125.804731
+  type: 'test'
+  ...
+# Subtest: only current claimant can offer/cancel; only designated fresh ADMIN can accept
+ok 447 - only current claimant can offer/cancel; only designated fresh ADMIN can accept
+  ---
+  duration_ms: 125.364514
+  type: 'test'
+  ...
+# Subtest: failed handover audit/claim writes roll back claim, pointer and funds
+ok 448 - failed handover audit/claim writes roll back claim, pointer and funds
+  ---
+  duration_ms: 352.256262
+  type: 'test'
+  ...
+# Subtest: stale/cancelled handover and changed hold/claim audit cannot transfer authority
+ok 449 - stale/cancelled handover and changed hold/claim audit cannot transfer authority
+  ---
+  duration_ms: 132.646972
+  type: 'test'
+  ...
+# Subtest: concurrent acceptance commits one transition/audit and no release or duplicate payout
+ok 450 - concurrent acceptance commits one transition/audit and no release or duplicate payout
+  ---
+  duration_ms: 125.308005
+  type: 'test'
+  ...
+# Subtest: refund readiness is admin-only and read-only; ready state is not a refund
+ok 451 - refund readiness is admin-only and read-only; ready state is not a refund
+  ---
+  duration_ms: 152.87848
+  type: 'test'
+  ...
+# Subtest: refund readiness excludes recharge/bonus/received/held earnings and reports exact shortfall without creating debt
+ok 452 - refund readiness excludes recharge/bonus/received/held earnings and reports exact shortfall without creating debt
+  ---
+  duration_ms: 197.818315
+  type: 'test'
+  ...
+# Subtest: refund readiness rejects missing/mismatched receipts and source ledger, corrupt wallet and closed complaint
+ok 453 - refund readiness rejects missing/mismatched receipts and source ledger, corrupt wallet and closed complaint
+  ---
+  duration_ms: 546.006562
+  type: 'test'
+  ...
+# Subtest: an earlier ready result does not bypass financial revalidation after seller earnings change
+ok 454 - an earlier ready result does not bypass financial revalidation after seller earnings change
+  ---
+  duration_ms: 137.337012
+  type: 'test'
+  ...
+# Subtest: ADMIN paper purchase credits 100 percent to platform receipt, never ADMIN wallet; retries charge once
+ok 455 - ADMIN paper purchase credits 100 percent to platform receipt, never ADMIN wallet; retries charge once
+  ---
+  duration_ms: 182.453751
+  type: 'test'
+  ...
+# Subtest: ADMIN paper needs correct revenue-mode terms and rolls back buyer debit on receipt failure
+ok 456 - ADMIN paper needs correct revenue-mode terms and rolls back buyer debit on receipt failure
+  ---
+  duration_ms: 151.418449
+  type: 'test'
+  ...
+# Subtest: platform-only purchase refund restores exact sources without ADMIN earnings and remains idempotent
+ok 457 - platform-only purchase refund restores exact sources without ADMIN earnings and remains idempotent
+  ---
+  duration_ms: 162.371227
+  type: 'test'
+  ...
+# Subtest: purchase confirmation returns committed receipt amount and distinguishes retry from new debit
+ok 458 - purchase confirmation returns committed receipt amount and distinguishes retry from new debit
+  ---
+  duration_ms: 449.872274
+  type: 'test'
+  ...
+# Subtest: PDF raster sale preserves immutable image pages, exact split, idempotency and source-preserving refund
+ok 459 - PDF raster sale preserves immutable image pages, exact split, idempotency and source-preserving refund
+  ---
+  duration_ms: 215.573254
+  type: 'test'
+  ...
+# Subtest: free paper collection is retry safe, grants a valid copy, and never moves wallet funds or creates sale receipts
+ok 460 - free paper collection is retry safe, grants a valid copy, and never moves wallet funds or creates sale receipts
+  ---
+  duration_ms: 403.370861
+  type: 'test'
+  ...
+# Subtest: stale free confirmation cannot charge a newly priced paper and failed collection rolls back
+ok 461 - stale free confirmation cannot charge a newly priced paper and failed collection rolls back
+  ---
+  duration_ms: 179.631545
+  type: 'test'
+  ...
+1..461
+# tests 461
+# suites 0
+# pass 461
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 67522.139604

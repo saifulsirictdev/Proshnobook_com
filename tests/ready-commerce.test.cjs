@@ -70,7 +70,8 @@ function setup() {
     const m = new Module(file, module);
     m.paths = module.paths;
     m.require = (n) =>
-      n === "@/lib/db"
+      n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
+    n === "@/lib/db"
         ? { db }
         : n === "@/auth"
           ? { auth: async () => (session ? { user: users[session] } : null) }

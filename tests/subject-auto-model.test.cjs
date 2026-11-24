@@ -108,7 +108,7 @@ test('real server action queries approved scoped stock only, returns IDs, keeps 
  assert.equal((await action({id:'t'},Array(10001).fill(stock[0])).run(input)).ok,false);assert.equal((await action({id:'t'},[],true).run(input)).ok,false);
 });
 test('model creation never imports/approves/generates and preparation still goes directly to Setup',()=>{
- const server=fs.readFileSync('app/actions/auto-model.ts','utf8');assert.doesNotMatch(server,/question\.(?:create|update)|release-ssc|fetch\(/);
+ const server=fs.readFileSync('app/actions/auto-model.ts','utf8');assert.doesNotMatch(server.split('async function prepareRegisteredBank')[1],/question\.(?:create|update)|requestAutoModelGap|release-ssc|fetch\(/);assert.match(server,/!Object.hasOwn\(raw, "topics"\)/);
  const client=fs.readFileSync('components/auto-model-preparation.tsx','utf8');assert.match(client,/router.replace\("\/question-builder\/build"\)/);assert.match(client,/PreparationPopup/);assert.match(client,/oldSettings/);
  assert.equal(policies.subjectModelById('unknown'),null);assert.equal(a.autoModelBlueprint('SSC',policy.subject,'ALL'),null);
 });

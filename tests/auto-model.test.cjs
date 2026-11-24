@@ -250,13 +250,15 @@ test("server action requires teacher auth and valid blueprint before any DB acce
     assert.equal(x.query(), undefined);
   }
 });
-test("server action selects only approved alias-matched stock and returns IDs, never paid text/answers", async () => {
+test("server action selects approved or own pending alias-matched stock and returns IDs, never paid text/answers", async () => {
   const x = action({ id: "t", role: "TEACHER" }, written()),
     r = await x.run(choice);
   assert.equal(r.ok, true);
   assert.equal(r.ids.length, 23);
   assert.deepEqual(Object.keys(r).sort(), ["ids", "ok"]);
-  assert.equal(x.query().where.approved, true);
+  assert.equal(x.query().where.OR[0].approved, true);
+  assert.equal(x.query().where.OR[1].approved, false);
+  assert.match(x.query().where.OR[1].source,/^AI_PENDING:/);
   assert.equal(x.query().where.subject, "গণিত");
   assert.ok(x.query().where.category.in.includes("Class 10"));
   assert.equal(x.query().take, 10001);

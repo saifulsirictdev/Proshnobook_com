@@ -64,5 +64,5 @@ test('real actionqueries approvedChemistryonly; empty production-compatible stoc
  for(const user of [null,{id:'student',role:'STUDENT'}]){const api=action(user,stock);assert.equal((await api.run(input)).ok,false);assert.equal(api.query(),undefined);}
  for(const patch of [{category:'HSC'},{subject:'জীববিজ্ঞান'},{variant:'SHORT'}]){const api=action({id:'teacher',role:'TEACHER'},stock);assert.equal((await api.run({...input,...patch})).ok,false);assert.equal(api.query(),undefined);}
  assert.equal((await action({id:'t'},Array(10001).fill(stock[0])).run(input)).ok,false);
- assert.doesNotMatch(fs.readFileSync('app/actions/auto-model.ts','utf8'),/question\.(?:create|update|delete)|release-ssc|fetch\(/);
+ assert.doesNotMatch(fs.readFileSync('app/actions/auto-model.ts','utf8').split('async function prepareRegisteredBank')[1],/question\.(?:create|update|delete)|requestAutoModelGap|release-ssc|fetch\(/);
 });

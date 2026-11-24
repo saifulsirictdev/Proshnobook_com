@@ -1,0 +1,42 @@
+{
+  "chapter": 5,
+  "topic": "৫ম অধ্যায়: খাদ্য, পুষ্টি এবং পরিপাক",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 169663,
+      "sha256": "8267f25598c4edc48eba3d8d337b8e24571d449dad055c017ee9e3767bf8472f"
+    },
+    "rebuild-sq.json": {
+      "bytes": 59877,
+      "sha256": "a20da8e8c18d19615ba5f0c63ac98bc44839f658430853a15f29e67c06b984c2"
+    },
+    "rebuild-cq.json": {
+      "bytes": 162477,
+      "sha256": "eeb6315e91b39c0644f701590d8b2657874a42a1123a1debdf07fa6a655d6aa5"
+    }
+  }
+}

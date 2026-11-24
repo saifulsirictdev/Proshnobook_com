@@ -54,6 +54,7 @@ function api({
     "@/lib/question-type-options": load("lib/question-type-options.ts"),
     "@/lib/question-types": load("lib/question-types.ts", {
       "./question-type-options": load("lib/question-type-options.ts"),
+      "@prisma/client":{Prisma:{AnyNull:Symbol.for("Prisma.AnyNull.test")}},
     }),
     "@/auth": { auth: async () => ({ user }) },
     "@/lib/db": { db },

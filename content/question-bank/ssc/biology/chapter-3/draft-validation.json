@@ -1,0 +1,42 @@
+{
+  "chapter": 3,
+  "topic": "৩য় অধ্যায়: কোষ বিভাজন",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 171801,
+      "sha256": "20af772f34f14cd19a9c996b0e81dc1f7b2620119a23f7018e0ad2ca9296623e"
+    },
+    "rebuild-sq.json": {
+      "bytes": 57360,
+      "sha256": "b4425f241fec444f5024a8979c12ceaba08362ce2a0997b292a93e7876ee19cc"
+    },
+    "rebuild-cq.json": {
+      "bytes": 157434,
+      "sha256": "717de995fad7ed5f01151b7f9971e7df7da32029180406bc65fe908fa57689ce"
+    }
+  }
+}

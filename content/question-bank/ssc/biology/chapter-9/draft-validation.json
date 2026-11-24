@@ -1,0 +1,42 @@
+{
+  "chapter": 9,
+  "topic": "৯ম অধ্যায়: দৃঢ়তা প্রদান ও চলন",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 160047,
+      "sha256": "22ba05ee52249e650bcc849e67f406325ac0695ffca968166b9bbc3a7237ae82"
+    },
+    "rebuild-cq.json": {
+      "bytes": 138567,
+      "sha256": "f08582fcbcc99cfe5dd137c35ebe27c6adf2162d5525bbef54d21ac7612aff35"
+    },
+    "rebuild-sq.json": {
+      "bytes": 53188,
+      "sha256": "46ba2cc22f578044bbeaa87a08eeb088550acbfd0ae615db6fc8f83f316858bc"
+    }
+  }
+}

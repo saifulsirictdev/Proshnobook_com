@@ -1,5 +1,7 @@
 # Database-only English first-paper auto models
 
+> **Current update:** Scope/AI-shortfall behavior below is historical. See [Syllabus-scoped all-subject Auto Model](AUTO-MODEL-ALL-SUBJECTS.md) for the new selection, teacher-supplied marks and bank-first/AI-gap behavior.
+
 ## Owner's corrected requirement
 Do not rely on live AI for first-paper Auto Model Test. Prepare complete passage-linked questions **and answers**, import Pending, ADMIN review/approve, and then assemble a private full paper from database stock. Never silently invoke AI if stock is incomplete. This supersedes older bank-first/AI-fallback descriptions **for first-paper automatic entry**. Second-paper and explicit manual/task generation remain unchanged.
 

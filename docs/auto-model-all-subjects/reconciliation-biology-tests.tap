@@ -1,0 +1,676 @@
+TAP version 13
+# Subtest: Neutral wording retains actual failure, limits, no-save and recovery information
+ok 1 - Neutral wording retains actual failure, limits, no-save and recovery information
+  ---
+  duration_ms: 1.349728
+  type: 'test'
+  ...
+# Subtest: Auto and setup keep neutral busy UI, errors and quota notice; editor never falsely asserts AI origin
+ok 2 - Auto and setup keep neutral busy UI, errors and quota notice; editor never falsely asserts AI origin
+  ---
+  duration_ms: 6.081928
+  type: 'test'
+  ...
+# Subtest: only four Job roots and two separately sourced NTRCA branches exist
+ok 3 - only four Job roots and two separately sourced NTRCA branches exist
+  ---
+  duration_ms: 1.724582
+  type: 'test'
+  ...
+# Subtest: all sourced subjects have valid pages, unique topics and source-specific counts
+ok 4 - all sourced subjects have valid pages, unique topics and source-specific counts
+  ---
+  duration_ms: 0.720995
+  type: 'test'
+  ...
+# Subtest: Job starter restricts subjects to selected source and forces MCQ even with stale written state
+ok 5 - Job starter restricts subjects to selected source and forces MCQ even with stale written state
+  ---
+  duration_ms: 980.368737
+  type: 'test'
+  ...
+# Subtest: NTRCA cannot start before School/College selection; Job has no union of unrelated subjects
+ok 6 - NTRCA cannot start before School/College selection; Job has no union of unrelated subjects
+  ---
+  duration_ms: 417.724691
+  type: 'test'
+  ...
+# Subtest: 45 provisional Biology questions pass the actual strict uploader and exact catalog
+ok 7 - 45 provisional Biology questions pass the actual strict uploader and exact catalog
+  ---
+  duration_ms: 16.687571
+  type: 'test'
+  ...
+# Subtest: MCQ keys and CQ part marks are valid; no unseen-figure dependency
+ok 8 - MCQ keys and CQ part marks are valid; no unseen-figure dependency
+  ---
+  duration_ms: 1.573589
+  type: 'test'
+  ...
+# Subtest: actual uploader rejects altered scope, duplicate choices/stems and wrong CQ marks
+ok 9 - actual uploader rejects altered scope, duplicate choices/stems and wrong CQ marks
+  ---
+  duration_ms: 9.423683
+  type: 'test'
+  ...
+# Subtest: manifest hashes, truthful status flags and offline reproduction agree
+ok 10 - manifest hashes, truthful status flags and offline reproduction agree
+  ---
+  duration_ms: 69.331742
+  type: 'test'
+  ...
+# Subtest: starter remains unregistered and builder has no publication mechanism
+ok 11 - starter remains unregistered and builder has no publication mechanism
+  ---
+  duration_ms: 0.719752
+  type: 'test'
+  ...
+# Subtest: chapter 12 exact 200/50/70 raw rows reconcile all shuffled answers and CQ marks
+ok 12 - chapter 12 exact 200/50/70 raw rows reconcile all shuffled answers and CQ marks
+  ---
+  duration_ms: 28.713991
+  type: 'test'
+  ...
+# Subtest: chapter 12 reader works through every page and embeds four safe offline CQ diagrams
+ok 13 - chapter 12 reader works through every page and embeds four safe offline CQ diagrams
+  ---
+  duration_ms: 821.634001
+  type: 'test'
+  ...
+# Subtest: chapter 12 preserves all chapter 1–11 bank artifacts and readers against 69a78e9
+ok 14 - chapter 12 preserves all chapter 1–11 bank artifacts and readers against 69a78e9
+  ---
+  duration_ms: 674.68138
+  type: 'test'
+  ...
+# Subtest: chapter 12 technical counts and backups never turn author checks into independent review
+ok 15 - chapter 12 technical counts and backups never turn author checks into independent review
+  ---
+  duration_ms: 0.880045
+  type: 'test'
+  ...
+# Subtest: chapter 12 DNA arithmetic, replication labels and conditional Mendelian risks are correct
+ok 16 - chapter 12 DNA arithmetic, replication labels and conditional Mendelian risks are correct
+  ---
+  duration_ms: 4.384241
+  type: 'test'
+  ...
+# Subtest: chapter 12 clinical content separates globin from clotting and rejects self-treatment and blame
+ok 17 - chapter 12 clinical content separates globin from clotting and rejects self-treatment and blame
+  ---
+  duration_ms: 2.506201
+  type: 'test'
+  ...
+# Subtest: chapter 12 evolution and DNA testing retain uncertainty, privacy and no forced decisions
+ok 18 - chapter 12 evolution and DNA testing retain uncertainty, privacy and no forced decisions
+  ---
+  duration_ms: 2.200971
+  type: 'test'
+  ...
+# Subtest: chapter 12 four diagrams regenerate byte-identically with explicit model limitations
+ok 19 - chapter 12 four diagrams regenerate byte-identically with explicit model limitations
+  ---
+  duration_ms: 31.239588
+  type: 'test'
+  ...
+# Subtest: all 39 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted
+ok 20 - all 39 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted
+  ---
+  duration_ms: 372.059175
+  type: 'test'
+  ...
+# Subtest: all MCQ choices are normalized-distinct and rebuilt keys balanced, shuffled and repeatable
+ok 21 - all MCQ choices are normalized-distinct and rebuilt keys balanced, shuffled and repeatable
+  ---
+  duration_ms: 35.269142
+  type: 'test'
+  ...
+# Subtest: 40 authored reasoning MCQ retain their exact choices, answers and explanations
+ok 22 - 40 authored reasoning MCQ retain their exact choices, answers and explanations
+  ---
+  duration_ms: 83.870992
+  type: 'test'
+  ...
+# Subtest: only surviving/recreated chapter 2–5 concept inputs are used, without duplicating chapter-1 objectives
+ok 23 - only surviving/recreated chapter 2–5 concept inputs are used, without duplicating chapter-1 objectives
+  ---
+  duration_ms: 331.431317
+  type: 'test'
+  ...
+# Subtest: 20 authored CQ have distinct self-contained stimuli, exact solutions and supplied 1/2/3/4 marks
+ok 24 - 20 authored CQ have distinct self-contained stimuli, exact solutions and supplied 1/2/3/4 marks
+  ---
+  duration_ms: 57.679944
+  type: 'test'
+  ...
+# Subtest: ledger origins, authoring paths, content hashes and per-file manifests reconcile
+ok 25 - ledger origins, authoring paths, content hashes and per-file manifests reconcile
+  ---
+  duration_ms: 8098.229461
+  type: 'test'
+  ...
+# Subtest: 14-chapter targets and three batches reflect current files, with all review/release gates open
+ok 26 - 14-chapter targets and three batches reflect current files, with all review/release gates open
+  ---
+  duration_ms: 0.605656
+  type: 'test'
+  ...
+# Subtest: uploader rejects duplicate options, wrong chapter, duplicate stems and CQ mark mutation
+ok 27 - uploader rejects duplicate options, wrong chapter, duplicate stems and CQ mark mutation
+  ---
+  duration_ms: 36.423329
+  type: 'test'
+  ...
+# Subtest: both builders reproduce all bytes offline and do not introduce Biology registration
+ok 28 - both builders reproduce all bytes offline and do not introduce Biology registration
+  ---
+  duration_ms: 1181.259967
+  type: 'test'
+  ...
+# Subtest: offline reader embeds all 3840 drafts and filters/searches/paginates/toggles without remote dependencies
+ok 29 - offline reader embeds all 3840 drafts and filters/searches/paginates/toggles without remote dependencies
+  ---
+  duration_ms: 1842.267693
+  type: 'test'
+  ...
+# Subtest: artifact index verifies every rebuild output, authoring input and retained starter file
+ok 30 - artifact index verifies every rebuild output, authoring input and retained starter file
+  ---
+  duration_ms: 37.446295
+  type: 'test'
+  ...
+# Subtest: chapter-1 work preserves 40 authored MCQ choices and avoids concept-card generation
+ok 31 - chapter-1 work preserves 40 authored MCQ choices and avoids concept-card generation
+  ---
+  duration_ms: 3.042495
+  type: 'test'
+  ...
+# Subtest: chapter-1 20 SQ preserve sample answers and distinguish two actual web-exercise adaptations
+ok 32 - chapter-1 20 SQ preserve sample answers and distinguish two actual web-exercise adaptations
+  ---
+  duration_ms: 2.674747
+  type: 'test'
+  ...
+# Subtest: chapter-1 10 self-contained CQ preserve individually authored parts and marks
+ok 33 - chapter-1 10 self-contained CQ preserve individually authored parts and marks
+  ---
+  duration_ms: 1.778445
+  type: 'test'
+  ...
+# Subtest: original chapter-1 figure is packaged, hashed, embedded offline and matched to its textual equivalent
+ok 34 - original chapter-1 figure is packaged, hashed, embedded offline and matched to its textual equivalent
+  ---
+  duration_ms: 230.305203
+  type: 'test'
+  ...
+# Subtest: single-chapter workflow meets exactly the chapter-1 count target without claiming review or publication
+ok 35 - single-chapter workflow meets exactly the chapter-1 count target without claiming review or publication
+  ---
+  duration_ms: 0.246249
+  type: 'test'
+  ...
+# Subtest: all 205 completion inputs retain their exact authored answers, choices, CQ parts and source paths
+ok 36 - all 205 completion inputs retain their exact authored answers, choices, CQ parts and source paths
+  ---
+  duration_ms: 185.216907
+  type: 'test'
+  ...
+# Subtest: completed chapter reader contains exactly 200 MCQ, 50 CQ and 70 SQ and exposes all answers offline
+ok 37 - completed chapter reader contains exactly 200 MCQ, 50 CQ and 70 SQ and exposes all answers offline
+  ---
+  duration_ms: 516.844836
+  type: 'test'
+  ...
+# Subtest: historical chapter-1 freeze remains valid outside now-authorized chapter-2, chapter-3, chapter-4 and chapter-5 expansions
+ok 38 - historical chapter-1 freeze remains valid outside now-authorized chapter-2, chapter-3, chapter-4 and chapter-5 expansions
+  ---
+  duration_ms: 0.590418
+  type: 'test'
+  ...
+# Subtest: chapter 2 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 39 - chapter 2 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.764145
+  type: 'test'
+  ...
+# Subtest: chapter-2 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 40 - chapter-2 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 178.919679
+  type: 'test'
+  ...
+# Subtest: chapter-2 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 41 - chapter-2 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 297.944356
+  type: 'test'
+  ...
+# Subtest: chapter-2 historical preservation evidence remains valid outside subsequently authorized chapters 3–5
+ok 42 - chapter-2 historical preservation evidence remains valid outside subsequently authorized chapters 3–5
+  ---
+  duration_ms: 2.473124
+  type: 'test'
+  ...
+# Subtest: chapter-2 complete bank has unique normalized stems, CQ marks and no missing figure dependency
+ok 43 - chapter-2 complete bank has unique normalized stems, CQ marks and no missing figure dependency
+  ---
+  duration_ms: 4.515344
+  type: 'test'
+  ...
+# Subtest: chapter 3 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 44 - chapter 3 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.548353
+  type: 'test'
+  ...
+# Subtest: chapter-3 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 45 - chapter-3 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 84.431419
+  type: 'test'
+  ...
+# Subtest: chapter-3 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 46 - chapter-3 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 286.626694
+  type: 'test'
+  ...
+# Subtest: chapter 3 retains all 55 baseline questions including exact option order and preserves other chapter artifacts except subsequently authorized chapters 4 and 5
+ok 47 - chapter 3 retains all 55 baseline questions including exact option order and preserves other chapter artifacts except subsequently authorized chapters 4 and 5
+  ---
+  duration_ms: 12.999053
+  type: 'test'
+  ...
+# Subtest: chapter-3 bank maintains unique normalized stems and CQ marks with explicit figure dependencies
+ok 48 - chapter-3 bank maintains unique normalized stems and CQ marks with explicit figure dependencies
+  ---
+  duration_ms: 4.725085
+  type: 'test'
+  ...
+# Subtest: chapter-3 curated counting regressions separate chromosome, chromatid, DNA, pole and set units
+ok 49 - chapter-3 curated counting regressions separate chromosome, chromatid, DNA, pole and set units
+  ---
+  duration_ms: 2.271326
+  type: 'test'
+  ...
+# Subtest: all-bank reader carries exactly thirty-four embedded original diagrams with no external image dependencies
+ok 50 - all-bank reader carries exactly thirty-four embedded original diagrams with no external image dependencies
+  ---
+  duration_ms: 1304.006441
+  type: 'test'
+  ...
+# Subtest: chapter 4 has precisely 200/50/70 answered drafts with all review/release gates still false
+ok 51 - chapter 4 has precisely 200/50/70 answered drafts with all review/release gates still false
+  ---
+  duration_ms: 1.875668
+  type: 'test'
+  ...
+# Subtest: chapter-4 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 52 - chapter-4 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 109.866816
+  type: 'test'
+  ...
+# Subtest: chapter-4 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 53 - chapter-4 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 224.205155
+  type: 'test'
+  ...
+# Subtest: chapter 4 preserves all 55 baseline items, ledger entries and historical preservation outside authorized chapter 5
+ok 54 - chapter 4 preserves all 55 baseline items, ledger entries and historical preservation outside authorized chapter 5
+  ---
+  duration_ms: 11.60871
+  type: 'test'
+  ...
+# Subtest: chapter-4 curated regressions retain numerical units, sources and metabolic distinctions
+ok 55 - chapter-4 curated regressions retain numerical units, sources and metabolic distinctions
+  ---
+  duration_ms: 10.207234
+  type: 'test'
+  ...
+# Subtest: chapter-4 figures reproduce exactly, hazards stay contextual and source/release limitations remain explicit
+ok 56 - chapter-4 figures reproduce exactly, hazards stay contextual and source/release limitations remain explicit
+  ---
+  duration_ms: 33.773384
+  type: 'test'
+  ...
+# Subtest: chapter-5 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+ok 57 - chapter-5 authored 170 MCQ, 50 SQ and 45 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 171.292743
+  type: 'test'
+  ...
+# Subtest: chapter-5 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 58 - chapter-5 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 323.270226
+  type: 'test'
+  ...
+# Subtest: chapter 5 meets its count target while review, import and release remain unauthorized
+ok 59 - chapter 5 meets its count target while review, import and release remain unauthorized
+  ---
+  duration_ms: 19.594589
+  type: 'test'
+  ...
+# Subtest: chapter 5 preserves all 55 baseline items and ledger entries plus 42 completed chapter artifacts
+ok 60 - chapter 5 preserves all 55 baseline items and ledger entries plus 42 completed chapter artifacts
+  ---
+  duration_ms: 22.67077
+  type: 'test'
+  ...
+# Subtest: chapter-5 numerical and physiology regressions preserve units, scope and distinct digestive roles
+ok 61 - chapter-5 numerical and physiology regressions preserve units, scope and distinct digestive roles
+  ---
+  duration_ms: 4.653126
+  type: 'test'
+  ...
+# Subtest: chapter-5 original figures reproduce exactly and safety and source limitations stay explicit
+ok 62 - chapter-5 original figures reproduce exactly and safety and source limitations stay explicit
+  ---
+  duration_ms: 68.232967
+  type: 'test'
+  ...
+# Subtest: chapter-6 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 63 - chapter-6 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 145.202912
+  type: 'test'
+  ...
+# Subtest: chapter-6 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 64 - chapter-6 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 330.608747
+  type: 'test'
+  ...
+# Subtest: chapter 6 meets exact 200/50/70 target with balanced keys and honest release gates
+ok 65 - chapter 6 meets exact 200/50/70 target with balanced keys and honest release gates
+  ---
+  duration_ms: 3.412216
+  type: 'test'
+  ...
+# Subtest: chapter-6 addition preserves every chapter 1–5 bank artifact and reader byte-for-byte
+ok 66 - chapter-6 addition preserves every chapter 1–5 bank artifact and reader byte-for-byte
+  ---
+  duration_ms: 9.147515
+  type: 'test'
+  ...
+# Subtest: chapter-6 transport calculations retain explicit dimensions and rates
+ok 67 - chapter-6 transport calculations retain explicit dimensions and rates
+  ---
+  duration_ms: 3.14597
+  type: 'test'
+  ...
+# Subtest: chapter-6 circulation and transfusion regressions preserve direction and clinical boundaries
+ok 68 - chapter-6 circulation and transfusion regressions preserve direction and clinical boundaries
+  ---
+  duration_ms: 35.461622
+  type: 'test'
+  ...
+# Subtest: chapter-6 original figures regenerate exactly and route labels stay non-anatomical
+ok 69 - chapter-6 original figures regenerate exactly and route labels stay non-anatomical
+  ---
+  duration_ms: 64.161712
+  type: 'test'
+  ...
+# Subtest: chapter-6 ledger keeps conceptual-source scope and independently verified checkpoint evidence
+ok 70 - chapter-6 ledger keeps conceptual-source scope and independently verified checkpoint evidence
+  ---
+  duration_ms: 1.749642
+  type: 'test'
+  ...
+# Subtest: chapter-7 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 71 - chapter-7 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 156.726043
+  type: 'test'
+  ...
+# Subtest: chapter-7 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 72 - chapter-7 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 264.636007
+  type: 'test'
+  ...
+# Subtest: chapter 7 reaches 320 answered drafts with balanced keys and uncertified release status
+ok 73 - chapter 7 reaches 320 answered drafts with balanced keys and uncertified release status
+  ---
+  duration_ms: 2.485114
+  type: 'test'
+  ...
+# Subtest: chapter-7 expansion preserves all 62 earlier chapter 1–6 bank artifacts and readers
+ok 74 - chapter-7 expansion preserves all 62 earlier chapter 1–6 bank artifacts and readers
+  ---
+  duration_ms: 22.305485
+  type: 'test'
+  ...
+# Subtest: chapter-7 quantitative regressions distinguish total, alveolar, net and partial-pressure quantities
+ok 75 - chapter-7 quantitative regressions distinguish total, alveolar, net and partial-pressure quantities
+  ---
+  duration_ms: 11.673016
+  type: 'test'
+  ...
+# Subtest: chapter-7 biology boundaries retain gas direction, airway distinctions and evidence limits
+ok 76 - chapter-7 biology boundaries retain gas direction, airway distinctions and evidence limits
+  ---
+  duration_ms: 9.316263
+  type: 'test'
+  ...
+# Subtest: chapter-7 diagrams regenerate exactly, use correct frontal lung orientation and separate gradients
+ok 77 - chapter-7 diagrams regenerate exactly, use correct frontal lung orientation and separate gradients
+  ---
+  duration_ms: 32.63392
+  type: 'test'
+  ...
+# Subtest: chapter-7 source ledger and safety retain remote checkpoint scope without certification inflation
+ok 78 - chapter-7 source ledger and safety retain remote checkpoint scope without certification inflation
+  ---
+  duration_ms: 2.520634
+  type: 'test'
+  ...
+# Subtest: chapter-8 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 79 - chapter-8 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 126.29804
+  type: 'test'
+  ...
+# Subtest: chapter-8 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 80 - chapter-8 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 279.96006
+  type: 'test'
+  ...
+# Subtest: chapter 8 meets exactly 200/50/70 with balanced keys, unique stems and honest gates
+ok 81 - chapter 8 meets exactly 200/50/70 with balanced keys, unique stems and honest gates
+  ---
+  duration_ms: 3.300426
+  type: 'test'
+  ...
+# Subtest: chapter-8 expansion preserves all 72 earlier chapter 1–7 bank artifacts and readers
+ok 82 - chapter-8 expansion preserves all 72 earlier chapter 1–7 bank artifacts and readers
+  ---
+  duration_ms: 24.535509
+  type: 'test'
+  ...
+# Subtest: chapter-8 numerical regressions retain mass balance, recovery, rate and concentration units
+ok 83 - chapter-8 numerical regressions retain mass balance, recovery, rate and concentration units
+  ---
+  duration_ms: 11.427513
+  type: 'test'
+  ...
+# Subtest: chapter-8 physiological boundaries retain organ, fluid and transport directions
+ok 84 - chapter-8 physiological boundaries retain organ, fluid and transport directions
+  ---
+  duration_ms: 2.154208
+  type: 'test'
+  ...
+# Subtest: chapter-8 original diagrams regenerate exactly and distinguish drainage and blood/dialysate paths
+ok 85 - chapter-8 original diagrams regenerate exactly and distinguish drainage and blood/dialysate paths
+  ---
+  duration_ms: 66.051819
+  type: 'test'
+  ...
+# Subtest: chapter-8 sources, safety and verified 198-row checkpoint retain explicit scope limits
+ok 86 - chapter-8 sources, safety and verified 198-row checkpoint retain explicit scope limits
+  ---
+  duration_ms: 2.209102
+  type: 'test'
+  ...
+# Subtest: chapter-9 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 87 - chapter-9 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 144.434369
+  type: 'test'
+  ...
+# Subtest: chapter-9 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+ok 88 - chapter-9 reader paginates all 320 answers, strips figure markdown and embeds three original figures
+  ---
+  duration_ms: 234.910396
+  type: 'test'
+  ...
+# Subtest: chapter 9 reaches exact 200/50/70 with balanced keys and no certification inflation
+ok 89 - chapter 9 reaches exact 200/50/70 with balanced keys and no certification inflation
+  ---
+  duration_ms: 5.486897
+  type: 'test'
+  ...
+# Subtest: chapter-9 addition preserves all 82 earlier chapter 1–8 artifacts and readers byte-for-byte
+ok 90 - chapter-9 addition preserves all 82 earlier chapter 1–8 artifacts and readers byte-for-byte
+  ---
+  duration_ms: 16.54044
+  type: 'test'
+  ...
+# Subtest: chapter-9 numerical regressions retain torque, perpendicular arm, angle and percentage bases
+ok 91 - chapter-9 numerical regressions retain torque, perpendicular arm, angle and percentage bases
+  ---
+  duration_ms: 4.47431
+  type: 'test'
+  ...
+# Subtest: chapter-9 physiology boundaries retain bone cells, connective tissues and contraction mechanism
+ok 92 - chapter-9 physiology boundaries retain bone cells, connective tissues and contraction mechanism
+  ---
+  duration_ms: 3.698686
+  type: 'test'
+  ...
+# Subtest: chapter-9 three original figures regenerate and label simplifications and functional roles
+ok 93 - chapter-9 three original figures regenerate and label simplifications and functional roles
+  ---
+  duration_ms: 34.052665
+  type: 'test'
+  ...
+# Subtest: chapter-9 source and clinical safety evidence retains checkpoint and unapproved scope
+ok 94 - chapter-9 source and clinical safety evidence retains checkpoint and unapproved scope
+  ---
+  duration_ms: 2.438098
+  type: 'test'
+  ...
+# Subtest: chapter-10 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 95 - chapter-10 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 104.122109
+  type: 'test'
+  ...
+# Subtest: chapter-10 reader paginates all 320 answers, strips figure markdown and embeds five original figures
+ok 96 - chapter-10 reader paginates all 320 answers, strips figure markdown and embeds five original figures
+  ---
+  duration_ms: 234.550406
+  type: 'test'
+  ...
+# Subtest: chapter 10 exact count, balanced keys, lexical evidence and count-complete batch 2 retain review gates
+ok 97 - chapter 10 exact count, balanced keys, lexical evidence and count-complete batch 2 retain review gates
+  ---
+  duration_ms: 2.086886
+  type: 'test'
+  ...
+# Subtest: chapter-10 addition preserves all 92 earlier chapter 1–9 artifacts/readers against ab75bb1
+ok 98 - chapter-10 addition preserves all 92 earlier chapter 1–9 artifacts/readers against ab75bb1
+  ---
+  duration_ms: 36.884428
+  type: 'test'
+  ...
+# Subtest: chapter-10 plant distinctions retain target organ, direction, dormancy and day-neutral limits
+ok 99 - chapter-10 plant distinctions retain target organ, direction, dormancy and day-neutral limits
+  ---
+  duration_ms: 2.377344
+  type: 'test'
+  ...
+# Subtest: chapter-10 neuro-endocrine boundaries and numerical units stay correct
+ok 100 - chapter-10 neuro-endocrine boundaries and numerical units stay correct
+  ---
+  duration_ms: 5.516929
+  type: 'test'
+  ...
+# Subtest: chapter-10 clinical safety, conceptual source routes and verified partial-checkpoint scope stay explicit
+ok 101 - chapter-10 clinical safety, conceptual source routes and verified partial-checkpoint scope stay explicit
+  ---
+  duration_ms: 2.267346
+  type: 'test'
+  ...
+# Subtest: chapter-10 five relevant original figures regenerate and neuron-CQ labels match D node / E terminals
+ok 102 - chapter-10 five relevant original figures regenerate and neuron-CQ labels match D node / E terminals
+  ---
+  duration_ms: 39.612519
+  type: 'test'
+  ...
+# Subtest: chapter-11 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+ok 103 - chapter-11 authored 200 MCQ, 70 SQ and 50 CQ retain exact inputs, answers and provenance
+  ---
+  duration_ms: 100.960647
+  type: 'test'
+  ...
+# Subtest: chapter-11 reader paginates all 320 answers, strips figure markdown and embeds four original figures
+ok 104 - chapter-11 reader paginates all 320 answers, strips figure markdown and embeds four original figures
+  ---
+  duration_ms: 335.16259
+  type: 'test'
+  ...
+# Subtest: chapter 11 exact counts, balanced keys and limited lexical screen never close release gates
+ok 105 - chapter 11 exact counts, balanced keys and limited lexical screen never close release gates
+  ---
+  duration_ms: 0.822208
+  type: 'test'
+  ...
+# Subtest: chapter 11 preserves every earlier chapter 1–10 bank artifact and reader against 5a84276
+ok 106 - chapter 11 preserves every earlier chapter 1–10 bank artifact and reader against 5a84276
+  ---
+  duration_ms: 556.264675
+  type: 'test'
+  ...
+# Subtest: chapter 11 plant terminology, gametophyte and fruit-source distinctions remain qualified
+ok 107 - chapter 11 plant terminology, gametophyte and fruit-source distinctions remain qualified
+  ---
+  duration_ms: 2.621009
+  type: 'test'
+  ...
+# Subtest: chapter 11 numerical examples preserve chromosome sets, denominators and gestation clocks
+ok 108 - chapter 11 numerical examples preserve chromosome sets, denominators and gestation clocks
+  ---
+  duration_ms: 1.943906
+  type: 'test'
+  ...
+# Subtest: chapter 11 human reproduction keeps anatomy, hormonal roles and safe timing boundaries
+ok 109 - chapter 11 human reproduction keeps anatomy, hormonal roles and safe timing boundaries
+  ---
+  duration_ms: 2.22755
+  type: 'test'
+  ...
+# Subtest: chapter 11 HIV evidence routes retain effective treatment, window-period limits and no stigma
+ok 110 - chapter 11 HIV evidence routes retain effective treatment, window-period limits and no stigma
+  ---
+  duration_ms: 2.133861
+  type: 'test'
+  ...
+# Subtest: chapter 11 four relevant diagrams regenerate exactly, labels align and no scripts are embedded
+ok 111 - chapter 11 four relevant diagrams regenerate exactly, labels align and no scripts are embedded
+  ---
+  duration_ms: 164.48899
+  type: 'test'
+  ...
+1..111
+# tests 111
+# suites 0
+# pass 111
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 27563.088559

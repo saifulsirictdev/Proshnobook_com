@@ -1,0 +1,22 @@
+{
+  "status": "UPLOADED_AND_REMOTE_METADATA_VERIFIED",
+  "fileId": "1QIYa-qK_VLdhSXS03m7k5pCMhSBngJ9f",
+  "folderId": "1VzEQ1ZfNNLE2ZYzEXdpS0azgiA4E8_Y5",
+  "webViewLink": "https://drive.google.com/file/d/1QIYa-qK_VLdhSXS03m7k5pCMhSBngJ9f/view?usp=drivesdk",
+  "archive": "backups/ssc-biology-9b9b731-265-drafts.zip",
+  "commit": "9b9b731",
+  "files": 49,
+  "bytes": 236161,
+  "localMd5": "a3bdffd1c0995caec709674d321ddcbb",
+  "remoteMd5": "a3bdffd1c0995caec709674d321ddcbb",
+  "sha256": "01bbf5b296785809f07af515386e587f20c9bef4ed52d688a27d3c5990c29e99",
+  "verification": "ZIP CRC and each archived file SHA-256 checked locally; Drive upload response and a separate get_file call both returned matching byte size and MD5.",
+  "draftItems": 265,
+  "counts": {"MCQ": 150, "CQ": 25, "SQ": 90},
+  "batchComplete": false,
+  "approved": false,
+  "published": false,
+  "userRequestedStop": true,
+  "nextWorkRule": "Do not resume question authoring without user authorization. For any subsequently authorized question-bank work, keep versioned Drive backups and verify remote size/checksum before reporting a saved milestone. Local Git alone is not a Drive backup.",
+  "automatedBackgroundBackupConfigured": false
+}
