@@ -1,0 +1,31 @@
+{
+  "deploymentId": "dpl_YV8CaJ4k9yBG31yxbCGzf3qx89Ek",
+  "sourceSha": "b4f7a635f60e143696a71b6584ea5d8453668b42",
+  "state": "READY",
+  "substate": "PROMOTED",
+  "readyAt": 1795517602429,
+  "aliasAssignedAt": 1795517602668,
+  "protectedDigest": "1ebfbd7bd656d0395e66c616065f253ba8972ac5e5800b4312e2e5b97aa558b6",
+  "protectedSubjects": [
+    {
+      "subject": "পদার্থবিজ্ঞান",
+      "count": 6400,
+      "approved": 6400,
+      "digest": "3729866457cc556c6bb5cc6c9c98b9ff9fc0eefe2c9ae844c85633b9957d7a67"
+    },
+    {
+      "subject": "রসায়ন",
+      "count": 8113,
+      "approved": 8113,
+      "digest": "93c98335d61bd46e90223bdc37b85b3b70b2109dffa4b313915373fe16571bdd"
+    }
+  ],
+  "biologyRows": 0,
+  "biologyApproved": 0,
+  "databaseMutation": false,
+  "providerInvoked": false,
+  "physicsChemistryModelsVerified": 20,
+  "productionBuild": "PASS",
+  "biologyImportExecuted": false,
+  "basis": "Vercel build events1795517576053/1795517579296 and independent deployment list READY/PROMOTED"
+}

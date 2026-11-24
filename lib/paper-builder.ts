@@ -1,5 +1,6 @@
 import { formatPaperFractions } from "@/lib/paper-math";
 import { z } from "zod";
+import { autoModelSelectionSchema } from "./auto-model-syllabus-schema";
 import { paperHeaderSchema, defaultPaperHeaderSchema } from "@/lib/paper-header";
 export type PaperItem = {
   /** Verified per-question occurrences, independent of topic/category and display toggles. */
@@ -36,7 +37,9 @@ const number = (value: number, min: number, max: number) =>
   z.number().int().min(min).max(max).catch(value).default(value);
 export const settingsSchema = z.object({
   version: z.literal(2).default(2),
-  autoModel: z.enum(["ssc-math-mcq-v1", "ssc-math-written-v1"]).optional().catch(undefined),
+  autoModel: z.enum(["ssc-math-mcq-v1", "ssc-math-written-v1", "ssc-physics-mcq-v1", "ssc-physics-written-v1", "ssc-chemistry-mcq-v1", "ssc-chemistry-written-v1", "syllabus-mcq-v1", "syllabus-written-v1"]).optional().catch(undefined),
+  syllabusSelection: autoModelSelectionSchema.optional().catch(undefined),
+  syllabusAssignments: z.record(z.string(),z.number().int().min(0).max(19)).optional().catch(undefined),
   // Opt-in presentation state; absent on legacy drafts and frozen approved stock.
   defaultHeader: defaultPaperHeaderSchema.optional().catch(undefined),
   header: paperHeaderSchema

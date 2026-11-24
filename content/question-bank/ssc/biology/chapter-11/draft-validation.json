@@ -1,0 +1,42 @@
+{
+  "chapter": 11,
+  "topic": "১১শ অধ্যায়: জীবের প্রজনন",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 159642,
+      "sha256": "d31557f1a22cb07cd70a02cb8f19223668bd0b62af011c1fd32b589c52bf80bd"
+    },
+    "rebuild-cq.json": {
+      "bytes": 138907,
+      "sha256": "105a4a53deb6e963ac81395a63255416676c4b42c86868e8b626d09bd32ac578"
+    },
+    "rebuild-sq.json": {
+      "bytes": 59445,
+      "sha256": "c7cd788bb5dd7f18c9d51c2c33b388fbbbc9589fe44423614e7441cdd6365ece"
+    }
+  }
+}

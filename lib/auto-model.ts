@@ -1,3 +1,5 @@
+import { subjectModelPolicy, subjectModelChapter, type SubjectModelPolicy } from "./subject-model-policy";
+import { questionBlocks } from "./question-tables";
 import { NCTB_CLASSES } from "./nctb-data";
 
 export type AutoModelVariant = "MCQ" | "CQ";
@@ -45,6 +47,20 @@ export function autoModelBlueprint(
   subject: string,
   variant: string,
 ) {
+  const policy = subjectModelPolicy(category, subject);
+  if (policy && (variant === "MCQ" || variant === "CQ")) {
+    const sections = policy.variants[variant].sections;
+    const label = (kind: string) => kind === "MCQ" ? "MCQ" : kind === "CQ" ? "সৃজনশীল" : "সংক্ষিপ্ত";
+    return {
+      id: policy.variants[variant].id,
+      title: `${subject} — ${variant === "CQ" ? "সৃজনশীল ও সংক্ষিপ্ত" : "নৈর্ব্যক্তিক"} মডেল`,
+      totalMarks: sections.reduce((n,s)=>n+s.answer*s.marksEach,0),
+      minutes: `তত্ত্বীয় দুই অংশ মিলিয়ে ${policy.totalTheoryMinutes} মিনিট`,
+      offered: sections.map(s=>`${s.offered}টি ${label(s.kind)} থেকে ${s.answer}টি × ${s.marksEach} নম্বর। অধ্যায় ${s.requiredChapters.join(", ")} থেকে অন্তত ১টি করে; প্রতি অধ্যায় সর্বোচ্চ ${s.maxPerChapter}টি; অবশিষ্ট ${s.offered-s.requiredChapters.length}টি ${s.maxPerChapter===1 ? "অন্য অধ্যায়" : "অধ্যায়ভিত্তিক ভারসাম্যপূর্ণ ঘূর্ণন"} থেকে।`).join(" "),
+      instructions: sections.map(s=>`${label(s.kind)}: ${s.answer === s.offered ? "সকল" : `যেকোনো ${s.answer}টি`} প্রশ্নের উত্তর দাও; প্রতিটি ${s.marksEach} নম্বর${s.kind === "CQ" ? ` (ক–খ–গ–ঘ: ${policy.cqPartMarks.join("–")})` : ""}।`).join(" ") + ` MCQ ও লিখিত মিলে তত্ত্বীয় ${policy.theoryMarks} নম্বরের মোট সময় ${policy.totalTheoryMinutes} মিনিট; আলাদা অংশের সময় নির্ধারিত নয়। ব্যবহারিক ${policy.practicalMarks} নম্বর এখানে অন্তর্ভুক্ত নয়।`,
+      variant: variant as AutoModelVariant,
+    };
+  }
   if (
     !/^(?:SSC|(?:Class\s*)?(?:9|10|9-10))$/i.test(category.trim()) ||
     subject !== "গণিত" ||
@@ -116,11 +132,16 @@ export function autoModelHasDiagram(q: { text: string; stimulus?: string; option
 }
 export function autoModelRowKind(
   q: AutoModelRow,
+  policy?: SubjectModelPolicy,
 ): "MCQ" | "CQ" | "SHORT" | null {
-  if (!q.text.trim() || !q.explanation.trim() || !mathDivision(q.topic))
+  if (!q.text.trim() || !q.explanation.trim() || !(policy ? subjectModelChapter(policy, q.topic) : mathDivision(q.topic)))
     return null;
   const o = object(q.options);
   const stem = String(o.stimulus || q.text);
+  if (policy && [q.text, stem, q.explanation].some(text => {
+    const tokens = text.match(/!\[[^\]\n]*\]\([^)]*\)/g) ?? [];
+    return (text.match(/!\[/g)?.length ?? 0) !== tokens.length || tokens.length !== questionBlocks(text).filter(b=>"src" in b && (b.src.startsWith(`https://proshnobook.com/question-bank/${policy.diagramPathPrefix}`) || b.src.startsWith(`/question-bank/${policy.diagramPathPrefix}`))).length;
+  })) return null;
   const diagramTokens = stem.match(/!\[[^\]\n]*\]\([^)]*\)/g) ?? [];
   if (stem.includes("![") && !diagramTokens.length) return null;
   for (const token of diagramTokens) {
@@ -160,8 +181,9 @@ export function autoModelRowKind(
   )
     return null;
   if (q.correct.trim()) {
-    const choices = Object.entries(o).filter(([k]) => k !== "_provenance");
-    return choices.length === 4 &&
+    // Audit metadata is not an answer choice or a SHORT attachment.
+    const choices = Object.entries(o).filter(([k]) => k !== "_provenance" && k !== "_authoring");
+    return (!policy || ["A", "B", "C", "D"].every(key=>typeof o[key] === "string")) && choices.length === 4 &&
       choices.every(
         ([, v]) => typeof v === "string" && v.trim() && !v.includes("!["),
       ) &&
@@ -174,13 +196,15 @@ export function autoModelRowKind(
   const parts = [sub.k ?? sub.ক, sub.kh ?? sub.খ, sub.g ?? sub.গ];
   const cq =
     o.stimulus || o.subQuestions || sub.k || sub.ক || q.text.includes("(ক)");
-  if (!cq) return "SHORT";
-  if (!parts.every((v) => typeof v === "string" && v.trim()) || sub.gh || sub.ঘ)
+  if (!cq) return policy && Object.keys(o).some(k=>k!=="_provenance"&&k!=="_authoring") ? null : "SHORT";
+  if (policy && (typeof o.stimulus!=="string" || !o.stimulus.trim())) return null;
+  if (policy) parts.push(sub.gh ?? sub.ঘ);
+  if (!parts.every((v) => typeof v === "string" && v.trim()) || (!policy && (sub.gh || sub.ঘ)))
     return null;
   const marks = object(o.marks);
   if (
     Object.keys(marks).length &&
-    ["k", "kh", "g"].some((k, i) => marks[k] !== [2, 4, 4][i])
+    (policy ? ["k", "kh", "g", "gh"] : ["k", "kh", "g"]).some((k, i) => marks[k] !== (policy?.cqPartMarks ?? [2, 4, 4])[i])
   )
     return null;
   return "CQ";
@@ -310,4 +334,45 @@ export function assembleAutoModel(
   return gaps.length
     ? { ok: false as const, gaps }
     : { ok: true as const, ids, divisions };
+}
+
+/** Shared subject-policy engine. Math's specialised quotas remain untouched.
+ * A new subject is opt-in via explicit policy/evidence, never a Math fallback.
+ */
+export function assembleSubjectAutoModel(
+  rows: AutoModelRow[], category: string, subject: string, variant: AutoModelVariant,
+  random: () => number = Math.random,
+) {
+  if (!autoModelBlueprint(category, subject, variant)) return {ok:false as const,gaps:[{section:"বিষয়ভিত্তিক সিলেবাস/মানবণ্টন প্রস্তুত নয়",required:1,available:0}]};
+  const policy = subjectModelPolicy(category, subject);
+  if (!policy) return assembleAutoModel(rows, variant, random);
+  const mixed = [...rows];
+  for (let i=mixed.length-1;i>0;i--) {
+    const j=Math.min(i,Math.max(0,Math.floor(random()*(i+1))));
+    [mixed[i],mixed[j]]=[mixed[j],mixed[i]];
+  }
+  const sections=policy.variants[variant].sections;
+  const eligible: {row:AutoModelRow;kind: "MCQ"|"CQ"|"SHORT";chapter:number}[]=[];
+  const seenIds=new Set<string>(),seenStems=new Set<string>();
+  for (const row of mixed) {
+    const kind=autoModelRowKind(row,policy),chapter=subjectModelChapter(policy,row.topic);
+    const key=fingerprint(String(object(row.options).stimulus||row.text));
+    if (!kind||!chapter||!sections.some(s=>s.kind===kind)||seenIds.has(row.id)||seenStems.has(key)) continue;
+    seenIds.add(row.id);seenStems.add(key);eligible.push({row,kind,chapter});
+  }
+  const ids:string[]=[],divisions:Record<string,string>={},gaps:{section:string;required:number;available:number}[]=[];
+  for (const section of sections) {
+    const buckets=new Map<number,AutoModelRow[]>();
+    for(const q of eligible.filter(q=>q.kind===section.kind)) buckets.set(q.chapter,[...(buckets.get(q.chapter)||[]),q.row]);
+    const counts=new Map<number,number>();let selected=0;
+    const take=(ch:number)=>{const q=buckets.get(ch)?.shift();if(!q)return false;ids.push(q.id);divisions[q.id]=q.topic;counts.set(ch,(counts.get(ch)||0)+1);selected++;return true;};
+    for(const ch of section.requiredChapters) if(!take(ch))gaps.push({section:`${section.kind}: ${policy.chapters[ch-1]}`,required:1,available:0});
+    // Rotation gives balanced chapter coverage without guessing a subject-wide quota.
+    while(selected<section.offered){let progress=false;for(const ch of buckets.keys()){
+      if(selected>=section.offered)break;
+      if((counts.get(ch)||0)<section.maxPerChapter&&take(ch))progress=true;
+    }if(!progress)break;}
+    if(selected<section.offered)gaps.push({section:`${section.kind}: পূর্ণ অধ্যায়-কোটা`,required:section.offered,available:selected});
+  }
+  return gaps.length ? {ok:false as const,gaps} : {ok:true as const,ids,divisions};
 }

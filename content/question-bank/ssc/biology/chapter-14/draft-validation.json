@@ -1,0 +1,42 @@
+{
+  "chapter": 14,
+  "topic": "১৪শ অধ্যায়: জীবপ্রযুক্তি",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 176338,
+      "sha256": "246ccad1036f29868fe6f67055fe36140ddf13df9b34dd11df80657c5b4061d1"
+    },
+    "rebuild-cq.json": {
+      "bytes": 147041,
+      "sha256": "ed82305f4415b4a4b11d06929be1f33c77376838608c3ef7daa2134f7a1151bc"
+    },
+    "rebuild-sq.json": {
+      "bytes": 53533,
+      "sha256": "4b24282b1587c40e1491b0d95015df110890f16966666de614dd8cb3f235d762"
+    }
+  }
+}

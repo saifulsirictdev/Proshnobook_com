@@ -1,0 +1,60 @@
+{
+  "deploymentId": "dpl_661LwZcx53L4BgYjXhreFLpFn5Ea",
+  "sourceCommit": "4f0f9dd7f6943d4d87c4d6b8df0ef72f10f15d71",
+  "source": "Vercel build event stdout AUTO_MODEL_UPGRADE_RECEIPT",
+  "eventCreatedMs": 1795513124812,
+  "eventId": "1795513124812989644856600000",
+  "receipt": {
+    "status": "READ_ONLY_AUTO_MODEL_UPGRADE_VERIFIED",
+    "subjects": [
+      {
+        "subject": "পদার্থবিজ্ঞান",
+        "approvedRowsScanned": 6400,
+        "variants": [
+          {
+            "variant": "MCQ",
+            "modelsVerified": 5,
+            "offered": 25,
+            "totalMarks": 25,
+            "aiShortfall": 0
+          },
+          {
+            "variant": "CQ",
+            "modelsVerified": 5,
+            "offered": 14,
+            "totalMarks": 50,
+            "aiShortfall": 0
+          }
+        ]
+      },
+      {
+        "subject": "রসায়ন",
+        "approvedRowsScanned": 8113,
+        "variants": [
+          {
+            "variant": "MCQ",
+            "modelsVerified": 5,
+            "offered": 25,
+            "totalMarks": 25,
+            "aiShortfall": 0
+          },
+          {
+            "variant": "CQ",
+            "modelsVerified": 5,
+            "offered": 14,
+            "totalMarks": 50,
+            "aiShortfall": 0
+          }
+        ]
+      }
+    ],
+    "modelsVerified": 20,
+    "databaseMutation": false,
+    "contentImport": false,
+    "approvalMutation": false,
+    "providerInvoked": false,
+    "authenticatedBrowserFlowVerified": false,
+    "liveAIGenerationVerified": false,
+    "officialSyllabusCertification": false
+  }
+}

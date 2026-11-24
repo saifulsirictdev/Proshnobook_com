@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-20",
+  "chapter": 12,
+  "status": "COUNT_COMPLETE_DRAFT_BACKUP_VERIFIED",
+  "contentCommit": "84c11f883b9aaa7f9ec07690a7ecb595ad6b5e03",
+  "archive": "ssc-biology-84c11f88-chapter-12-320-complete-3840-total.zip",
+  "localPath": "backups/ssc-biology-84c11f88-chapter-12-320-complete-3840-total.zip",
+  "bytes": 4570150,
+  "md5": "6d1944b5b112b2d27f40077ac9c59840",
+  "sha256": "26f286efb5c0adb2b77527f41440260e9e33502e296122abad812bdfe2288d57",
+  "archiveEntries": 259,
+  "drive": {
+    "fileId": "1xquAY4FFoSQ29f3-bnMgR3awKl47Ubcn",
+    "folderId": "1VzEQ1ZfNNLE2ZYzEXdpS0azgiA4E8_Y5",
+    "url": "https://drive.google.com/file/d/1xquAY4FFoSQ29f3-bnMgR3awKl47Ubcn/view",
+    "remoteSize": 4570150,
+    "remoteMd5": "6d1944b5b112b2d27f40077ac9c59840",
+    "trashed": false,
+    "independentGetFileVerification": true
+  },
+  "verification": [
+    "Local ZIP CRC passes",
+    "All258 payload sizes and SHA256 match BACKUP-MANIFEST.json",
+    "Committed Biology snapshot plus105/105 raw technical TAP; manifest is entry259",
+    "Separate Drive get_file after upload matched size,MD5,parent and not-trashed state"
+  ],
+  "chapterCounts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "globalCounts": {
+    "MCQ": 2400,
+    "CQ": 600,
+    "SQ": 840
+  },
+  "draftItems": 3840,
+  "focusedTechnicalTests": "105/105 PASS",
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "textbookChapterRead": false,
+  "approved": false,
+  "published": false,
+  "websiteImported": false,
+  "limitations": [
+    "Count-complete answered drafts, not independent official textbook/teacher certification",
+    "Chapters1–12 meet counts; batch3 in progress. Independent content/semantic/release gates remain incomplete",
+    "No import,approval,publication or deployment",
+    "Receipt created after upload outside this archive; recover content snapshot from84c11f88. Earlier verified receipts remain included."
+  ]
+}

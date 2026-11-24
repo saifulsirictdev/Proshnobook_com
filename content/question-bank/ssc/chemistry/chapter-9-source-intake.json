@@ -1,0 +1,330 @@
+{
+  "status": "LIMITED_SELECTED_SOURCE_INTAKE_NOT_EXHAUSTIVE",
+  "target": {
+    "MCQ": 300,
+    "CQ": 100,
+    "SQ": 80
+  },
+  "textbook": {
+    "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+    "fileName": "২০২৬ — রসায়ন.pdf",
+    "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "chapterPrintedPages": "206–232",
+    "exercisePageMap": {
+      "231": 236,
+      "232": 237
+    },
+    "fidelity": "Unicode chemistry and line wrapping normalized; native source pixels authoritative; no source answer keys or marks asserted."
+  },
+  "satt": {
+    "mcqURL": "https://sattacademy.com/all-mcq/এসিডক্ষারক-সমতা-12329",
+    "writtenURL": "https://sattacademy.com/all-written/এসিডক্ষারক-সমতা-12329",
+    "chunksRead": {
+      "mcq": [
+        0,
+        1
+      ],
+      "written": [
+        0,
+        1,
+        2
+      ],
+      "individualPancreatic": [
+        0
+      ]
+    },
+    "displayedCounters": {
+      "MCQ": 318,
+      "CQ": 585
+    },
+    "counterCaveat": "Marketing86+ CQ differs from585 counter; not verified unique collected counts or exhaustion evidence.",
+    "researchExhaustive": false,
+    "solutionsCopied": false,
+    "restrictionBypassed": false
+  },
+  "excluded": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 5,
+      "reason": "Both CO₂ and SO₂ can turn clear limewater turbid (CaCO₃/CaSO₃ precipitates). Options retained in audit only, not silently repaired.",
+      "text": "কোনটি পরিষ্কার চুনের পানিকে ঘোলা করে?",
+      "options": [
+        "CaO",
+        "HCl",
+        "SO₂",
+        "CO₂"
+      ]
+    },
+    {
+      "source": "satt",
+      "number": "তালিকা4",
+      "reason": "Both Zn and Pb can give amphoteric white hydroxides with the stated nitric-acid/NaOH observations; insufficient unique selection."
+    },
+    {
+      "source": "satt",
+      "number": "তালিকা5",
+      "reason": "CO₂ and SO₂ both present among choices: same limewater ambiguity."
+    },
+    {
+      "source": "satt-written",
+      "number": "ঢাকা2017 তালিকা2",
+      "reason": "Missing gas identity; treating E as disinfectant conflicts with CO₂-to-carbonate reading. No guessed repair or baking-powder treatment advice."
+    },
+    {
+      "source": "satt-written",
+      "number": "কুমিল্লা2017 NHCl20g",
+      "reason": "Malformed ammonium formula, mixture proportions missing; cannot infer unique NH₃ yield."
+    },
+    {
+      "source": "satt-written",
+      "number": "বরিশাল2017 তালিকা5",
+      "reason": "Missing arrow/exponent and unrelated B-to-E heating graph absent."
+    },
+    {
+      "source": "satt-written",
+      "number": "চট্টগ্রাম2017",
+      "reason": "Missing source images: not reconstructed as originals."
+    }
+  ],
+  "sourceIssues": [
+    {
+      "location": "printed208",
+      "reason": "CH₃COOH ionized4of1000 at25°C is concentration-dependent, not universal."
+    },
+    {
+      "location": "printed220",
+      "reason": "0–14 pH is a common dilute aqueous school scale, not universal strength ranking or mathematical bound."
+    },
+    {
+      "location": "printed228 water-purification",
+      "reason": "Boiling/chlorination do not remove arsenic/heavy metals/all pollutants; alum settling alone does not guarantee potable water. No dosing advice copied."
+    },
+    {
+      "location": "CQ2 partঘ",
+      "reason": "Acidic liquid effluent alone does not prove acid rain; atmosphericSO₂/NOx emissions must be established."
+    }
+  ],
+  "items": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 1,
+      "text": "চুনাপাথর ও লঘু নাইট্রিক এসিডের বিক্রিয়ায় কোনটি উৎপন্ন হয়?",
+      "pdfPage": 236,
+      "printedPage": 231,
+      "nativeImage": "tb-mcq-1.png",
+      "options": [
+        "NO₂",
+        "CO₂",
+        "SO₂",
+        "NH₃"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 2,
+      "text": "নিচের কোনটি ক্ষার?",
+      "pdfPage": 236,
+      "printedPage": 231,
+      "nativeImage": "tb-mcq-2.png",
+      "options": [
+        "Al(OH)₃",
+        "Fe(OH)₂",
+        "Cu(OH)₂",
+        "NaOH"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 3,
+      "text": "কমলালেবুতে কোন এসিড উপস্থিত থাকে?",
+      "pdfPage": 236,
+      "printedPage": 231,
+      "nativeImage": "tb-mcq-3.png",
+      "options": [
+        "ল্যাকটিক এসিড",
+        "টারটারিক এসিড",
+        "ট্যানিক এসিড",
+        "সাইট্রিক এসিড"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 4,
+      "text": "ইথানয়িক এসিড দ্রবণে pH এর মান 4। দ্রবণের pH বৃদ্ধি করতে যোগ করতে হবে—\ni. অ্যামোনিয়া দ্রবণ\nii. হাইড্রোক্লোরিক এসিড\niii. ম্যাগনেসিয়াম কার্বনেট\nনিচের কোনটি সঠিক?",
+      "pdfPage": 236,
+      "printedPage": 231,
+      "nativeImage": "tb-mcq-4.png",
+      "options": [
+        "i ও ii",
+        "ii ও iii",
+        "i ও iii",
+        "i, ii ও iii"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 1,
+      "text": "পাশের চিত্র:",
+      "pdfPage": 237,
+      "printedPage": 232,
+      "nativeImage": "tb-cq-1.png",
+      "stimulusImage": "tb-ammonia-stimulus.png",
+      "parts": [
+        "NO₂ গ্যাসের বর্ণ কী?",
+        "চুনের পানির pH-এর মান 7 থেকে বেশি না কম হবে? ব্যাখ্যা কর।",
+        "‘X’ গ্যাসটির জলীয় দ্রবণের একটি রাসায়নিক ধর্ম ব্যাখ্যা কর।",
+        "HCl গ্যাসের মধ্যে ‘X’ গ্যাস চালনা করলে কী ঘটবে? সমীকরণসহ লেখ।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 2,
+      "text": "টেক্সটাইল মিল ও ডাইং শিল্প, রং ও সালফিউরিক এসিডযুক্ত বর্জ্য সরাসরি নিকটস্থ জলাশয়ে ফেলছে। ফলে ঐ সকল জলাশয় জলজ প্রাণীর বসবাসের অনুপযুক্ত হয়ে পড়ছে।",
+      "pdfPage": 237,
+      "printedPage": 232,
+      "nativeImage": "tb-cq-2.png",
+      "parts": [
+        "তেঁতুলে কোন এসিড থাকে?",
+        "উদ্দীপকের জলাশয়ে pH মান সম্পর্কে তোমার ধারণা ব্যাখ্যা কর।",
+        "টেক্সটাইল মিল ও ডাইং শিল্পের দূষণ নিয়ন্ত্রণ প্লান্টে এসিড দূষণ নিয়ন্ত্রণে যৌক্তিক পরামর্শ দাও।",
+        "টেক্সটাইল মিল ও ডাইং শিল্পের আশপাশে এসিড বৃষ্টির সম্ভাবনা বিক্রিয়াসহ বিশ্লেষণ কর।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 1,
+      "text": "‘ফরমিক এসিড একটি দুর্বল এসিড’—ব্যাখ্যা কর।",
+      "pdfPage": 237,
+      "printedPage": 232,
+      "nativeImage": "tb-sq-1.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 2,
+      "text": "FeCl₃ এর জলীয় দ্রবণ কোন প্রকৃতির? ব্যাখ্যা কর।",
+      "pdfPage": 237,
+      "printedPage": 232,
+      "nativeImage": "tb-sq-2.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 3,
+      "text": "pH=12.5 মান বিশিষ্ট জমির উর্বরতা কীভাবে বৃদ্ধি করা যায়? ব্যাখ্যা কর।",
+      "pdfPage": 237,
+      "printedPage": 232,
+      "nativeImage": "tb-sq-3.png"
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা9",
+      "text": "কোনটি তীব্র এসিড?",
+      "url": "https://sattacademy.com/mcq/কোনটি-তীব্র-এসিড-60623",
+      "options": [
+        "CH₃COOH",
+        "H₂CO₃",
+        "H₂SO₄",
+        "C₆H₈O₇"
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা6",
+      "text": "এন্টাসিডে কোনটি বিদ্যমান?",
+      "url": "https://sattacademy.com/mcq/এন্টাসিডে-কোনটি-বিদ্যমান",
+      "options": [
+        "Mg(OH)₂",
+        "HCl",
+        "Ca(OH)₂",
+        "NaOH"
+      ],
+      "observedBoard": {
+        "board": "mymensingh",
+        "examYear": 2023,
+        "shortTag": "[ম. বো. ’২৩]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      }
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "সম্পর্কিত3",
+      "text": "কোনটি মৃদু এসিড?",
+      "url": "https://sattacademy.com/mcq/কোনটি-মৃদু-এসিড-62856",
+      "options": [
+        "HCl",
+        "HNO₃",
+        "H₂SO₄",
+        "CH₃−COOH"
+      ],
+      "observedBoard": {
+        "board": "dinajpur",
+        "examYear": 2025,
+        "shortTag": "[দি. বো. ’২৫]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      }
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "অগ্ন্যাশয়",
+      "text": "অগ্ন্যাশয় রসের pH মান কত?",
+      "url": "https://sattacademy.com/mcq/অগ্ন্যাশয়-রসের-ph-মান-কত",
+      "options": [
+        "6.0",
+        "6.5",
+        "7.43",
+        "8.1"
+      ],
+      "notes": [
+        "8.1 is the textbook classroom representative value, not an invariant clinical measurement."
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা10",
+      "text": "দুর্বল অম্ল কোনটি?",
+      "url": "https://sattacademy.com/mcq/দুর্বল-অম্ল-কোনটি",
+      "options": [
+        "HCl",
+        "HNO₃",
+        "H₂CO₃",
+        "H₂SO₄"
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "CQ",
+      "number": "তালিকা7",
+      "text": "সাবান দিয়ে কাপড় ধোয়ার সময় নাফিসা বাথরুমের মেঝেতে সাদা বর্ণের অধঃক্ষেপ দেখতে পেল। সে লক্ষ করলো সাবান ক্ষয়ে যাচ্ছে— কিন্তু পর্যাপ্ত সাবানের ফেনা উৎপন্ন হচ্ছে না।",
+      "url": "https://sattacademy.com/question/সাবান-দিয়ে-কাপড়-ধোয়ার-সময়-নাফিসা-বাথরুমের-মেঝেতে-সাদা-বর্ণের-অধঃক্ষেপ-দেখতে-",
+      "parts": [
+        "ক্যাটায়ন কাকে বলে?",
+        "আর্দ্রবিশ্লেষণ ও পানিযোজন বিক্রিয়ার মধ্যে পার্থক্য ব্যাখ্যা কর।",
+        "সাদা অধঃক্ষেপ উৎপন্ন হয়েছে কেন? সমীকরণসহ বর্ণনা কর।",
+        "নাফিসা কী ব্যবস্থা গ্রহণ করে ঐ সমস্যা সমাধান করবে—বিশ্লেষণ কর।"
+      ],
+      "observedBoard": {
+        "board": "barishal",
+        "examYear": 2017,
+        "shortTag": "[ব. বো. ’১৭]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      },
+      "notes": [
+        "Full stimulus and all four parts read in written-list chunk2; individual page not claimed read."
+      ]
+    }
+  ]
+}

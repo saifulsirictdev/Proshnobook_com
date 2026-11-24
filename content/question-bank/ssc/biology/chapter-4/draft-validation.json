@@ -1,0 +1,42 @@
+{
+  "chapter": 4,
+  "topic": "৪র্থ অধ্যায়: জীবনীশক্তি",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 172806,
+      "sha256": "9d539eed6618761cb61c553d8562fabd773cbb8e00ee6f154322fcb6bab18960"
+    },
+    "rebuild-sq.json": {
+      "bytes": 59177,
+      "sha256": "da3f331139c88863465e3f4083b80e49b03fe5e2f04ddb7e5a2630db09851202"
+    },
+    "rebuild-cq.json": {
+      "bytes": 166128,
+      "sha256": "24b07838b0ee9ea78964ac036ce8a664a357629735d8518dca7d7dc2d3de5ae6"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "count": 14,
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "count": 25,
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "count": 14,
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "count": 25,
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true
+    }
+  ],
+  "settingsReload": true,
+  "editedQuotaWarning": true,
+  "fixture": "actual canonical stock; local assets, no DB"
+}

@@ -80,7 +80,8 @@ function setup() {
     const m = new Module(file, module);
     m.paths = module.paths;
     m.require = (id) =>
-      id === "@/lib/wallet-funds"
+      id === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
+    id === "@/lib/wallet-funds"
         ? load("lib/wallet-funds.ts")
         : id === "@/lib/db"
           ? { db }

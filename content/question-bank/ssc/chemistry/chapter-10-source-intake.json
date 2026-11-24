@@ -1,0 +1,400 @@
+{
+  "status": "LIMITED_SELECTED_SOURCE_INTAKE_NOT_EXHAUSTIVE",
+  "target": {
+    "MCQ": 700,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "textbook": {
+    "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+    "fileName": "২০২৬ — রসায়ন.pdf",
+    "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "chapterPrintedPages": "233–260",
+    "exercisePageMap": {
+      "258": 263,
+      "259": 264,
+      "260": 265
+    },
+    "fidelity": "Unicode/line wrapping normalized; original pixels authoritative, not byte-verbatim. Solutions and practice marks independently authored."
+  },
+  "satt": {
+    "mcqURL": "https://sattacademy.com/all-mcq/খনিজ-সম্পদ-ধাতু-অধাতু-27753",
+    "writtenURL": "https://sattacademy.com/all-written/খনিজ-সম্পদ-ধাতু-অধাতু-27753",
+    "chunksRead": {
+      "mcq": [
+        0,
+        1
+      ],
+      "written": [
+        0,
+        1
+      ],
+      "individual365365": [
+        0
+      ]
+    },
+    "displayedCounters": {
+      "MCQ": 260,
+      "CQ": 612
+    },
+    "counterCaveat": "Marketing251+MCQ/91+CQ differs; not unique complete collected counts or shortage proof.",
+    "solutionsCopied": false,
+    "researchExhaustive": false,
+    "restrictionBypassed": false
+  },
+  "excluded": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 6,
+      "text": "SO₃ কে 98% সালফিউরিক এসিডে শোষণ করে পানি যোগে প্রয়োজনমতো লঘু করা হয়, কারণ সালফিউরিক এসিড—\n(i) জলীয় বাষ্পের সাথে ঘন কুয়াশা সৃষ্টি করে\n(ii) পানিযোগে প্রচুর তাপ নির্গত করে\n(iii) একটি নিরুদক পদার্থ\nনিচের কোনটি সঠিক?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-6.png",
+      "options": [
+        "i",
+        "i ও iii",
+        "ii ও iii",
+        "i, ii ও iii"
+      ],
+      "notes": [
+        "Authored answer distinguishes directSO3hydration mist from acid dehydration; source wording is compressed and potentially ambiguous."
+      ],
+      "reason": "No i/ii choice exists; all options retained exactly in excluded intake, no guessed answer in bank."
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 3,
+      "reason": "Salt called catalyst, but it accelerates electrochemical rust as electrolyte; excluded rather than teaching a universal classical-catalyst claim."
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 4,
+      "reason": "Hardest karat cannot be universal from gold fraction alone; identity/processing of other metals unspecified. Not copied as universalhardness law."
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 11,
+      "reason": "Patina composition depends on atmosphere; carbonates/hydroxides/sulfates need conditions. No universalallthreekey guessed."
+    },
+    {
+      "source": "satt",
+      "number": "MCQ1",
+      "reason": "Same unqualified gold-hardness ranking issue."
+    },
+    {
+      "source": "satt",
+      "number": "MCQ8/9",
+      "reason": "Duplicate sulfur meltingpoint stem with shifted choices; not recounted."
+    },
+    {
+      "source": "satt-written",
+      "number": "Chattogram2017carbonisotopes",
+      "reason": "Corrupted isotope notation and unnatural abundance data; wholeCQnot silently repaired."
+    },
+    {
+      "source": "satt-written",
+      "number": "Dhaka2019chart",
+      "reason": "Missing original chart; no invented X/Y/Z mapping or sourceimage."
+    }
+  ],
+  "sourceIssues": [
+    {
+      "location": "TBMCQ1rowখ",
+      "reason": "Printed183boiling value/sign retained, not a verifiedoxygenproperty claim."
+    },
+    {
+      "location": "TBMCQ6",
+      "reason": "Excluded: direct hydration mist/dilution explanation needs i/ii but printed options lack that pair; no repaired answer option counted."
+    },
+    {
+      "location": "TBMCQ9vsSattMCQ4",
+      "reason": "2050vs2070°Capproximation recorded, not combined into duplicate sourcekeys."
+    },
+    {
+      "location": "SattJessore2017CQ",
+      "reason": "Sourcecomposition74/18/7/1differs from textbookrepresentative74/18/8; each retained as given."
+    },
+    {
+      "location": "textbookoretableCaCO3",
+      "reason": "Limestone is a Caresource; metallicCa is not simply obtained by carbonreducingCaO. Authored content makes electrolysis distinction."
+    },
+    {
+      "location": "allmetallurgy",
+      "reason": "Extraction, toxicmetal/sulfurgas and industrialacidexamples are theoretical; no homeinstructions or dosingrecipes."
+    }
+  ],
+  "items": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 1,
+      "text": "টেবিলের কোন রেকর্ডটি সাধারণত ধাতুর বৈশিষ্ট্য প্রকাশ করে?\nরেকর্ড | গলনাঙ্ক | স্ফুটনাঙ্ক | ঘনত্ব\nক | 1539 | 2887 | 7.86\nখ | −219 | 183 | 0.002\nগ | −113 | 45 | 0.79\nঘ | 117 | 888 | 1.96",
+      "pdfPage": 263,
+      "printedPage": 258,
+      "nativeImage": "tb-mcq-1.png",
+      "options": [
+        "ক",
+        "খ",
+        "গ",
+        "ঘ"
+      ],
+      "notes": [
+        "Numbers/signs retained from source, including rowখ boiling183 as printed. No units inferred into transcript; classification not a verified property table."
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 2,
+      "text": "কোন টেস্টটিউবের পেরেকটিতে সবচেয়ে বেশি মরিচা ধরবে?",
+      "pdfPage": 263,
+      "printedPage": 258,
+      "nativeImage": "tb-mcq-2.png",
+      "stimulus": "একদল শিক্ষার্থী মরিচার অনুসন্ধান করছিল। তারা বাম থেকে ক্রমান্বয়ে চারটি টেস্টটিউবে চারটি লোহার পেরেক রাখল এবং নিচের চিত্রানুযায়ী ব্যবস্থা নিল।",
+      "stimulusImage": "tb-rust-shared.png",
+      "options": [
+        "প্রথম",
+        "দ্বিতীয়",
+        "তৃতীয়",
+        "চতুর্থ"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 5,
+      "text": "লঘুকরণের পানিতে ফোঁটায় ফোঁটায় সালফিউরিক এসিড যোগ করার কারণ, সালফিউরিক এসিড—\n(i) এর হাইড্রেশন তাপ অত্যধিক\n(ii) একটি দ্বিক্ষারকীয় এসিড\n(iii) ক্ষয়কারক পদার্থ\nনিচের কোনটি সঠিক?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-5.png",
+      "options": [
+        "i",
+        "i ও iii",
+        "ii ও iii",
+        "i, ii ও iii"
+      ],
+      "notes": [
+        "Original theoretical safety question; not a home dilution procedure."
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 7,
+      "text": "নিচের কোনটি খনিজমল?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-7.png",
+      "options": [
+        "Al₂O₃",
+        "ZnS",
+        "SiO₂",
+        "PbS"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 8,
+      "text": "সিনেবার কোন ধাতুর আকরিক?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-8.png",
+      "options": [
+        "মার্কারি",
+        "কপার",
+        "জিংক",
+        "লেড"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 9,
+      "text": "Al₂O₃ গলনাঙ্ক কত?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-9.png",
+      "options": [
+        "2050°C",
+        "2000°C",
+        "1000°C",
+        "950°C"
+      ],
+      "notes": [
+        "Textbook approximates2050°C; Satt list says2070°C. Not silently harmonized; actual reference values vary around2050–2070°C."
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 10,
+      "text": "নিচের কোনটির সক্রিয়তা বেশি?",
+      "pdfPage": 264,
+      "printedPage": 259,
+      "nativeImage": "tb-mcq-10.png",
+      "options": [
+        "Cu",
+        "Zn",
+        "Fe",
+        "Pb"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 1,
+      "text": "উদ্দীপকের চিত্র:",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-cq-1.png",
+      "stimulusImage": "tb-zinc-retort.png",
+      "parts": [
+        "ক্যালামাইনের রাসায়নিক সংকেত লেখো।",
+        "তাপজারণের ব্যাখ্যা দাও।",
+        "রিটর্টে সংঘটিত মূল বিক্রিয়াটি ব্যাখ্যা করো।",
+        "উদ্দীপকের ধাতু কেবল তড়িৎ বিশ্লেষণ প্রক্রিয়ায় নিষ্কাশন না করে তিন ধাপে করার কারণ মূল্যায়ন করো।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 2,
+      "text": "একটি খনিতে বক্সাইট ও ক্যালামাইন মিশ্রিত কিছু খনিজের অস্তিত্ব পাওয়া গেল। প্রফেসর রহমানের নেতৃত্বে একদল রসায়নবিদ উক্ত খনিজ থেকে দুটি ভিন্ন পদ্ধতিতে ধাতু দুটি নিষ্কাশন করলেন।",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-cq-2.png",
+      "parts": [
+        "খনিজ কাকে বলে?",
+        "‘সকল খনিজই আকরিক নয়’ ব্যাখ্যা করো।",
+        "দ্বিতীয় আকরিকটির বিযোজনে প্রাপ্ত অক্সাইডের প্রকৃতি ব্যাখ্যা করো।",
+        "ভিন্ন পদ্ধতিতে ধাতু দুটি নিষ্কাশনের কারণ যুক্তিসহ লেখো।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 3,
+      "text": "পর্যায় সারণির গ্রুপ-16 এর একটি মৌলকে বায়ুতে পোড়ালে একটি অক্সাইড A পাওয়া যায়। অক্সাইডটি ঝাঁঝালো গন্ধযুক্ত অত্যন্ত বিষাক্ত গ্যাস। লা-শাতেলিয়ার নীতি প্রয়োগ করে শিল্পক্ষেত্রে A থেকে একটি এসিড B তৈরি করা হয়।",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-cq-3.png",
+      "parts": [
+        "আকরিক কাকে বলে?",
+        "A অক্সাইড অম্লধর্মী—ব্যাখ্যা করো।",
+        "উদ্দীপকের B এসিডটি তৈরি করার প্রক্রিয়া বর্ণনা করো।",
+        "উদ্দীপকের B এসিডটির গাঢ়ত্বের ওপর জারণ ধর্ম নির্ভর করে—যুক্তি দ্বারা প্রমাণ করো।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 1,
+      "text": "ম্যাগনেসিয়াম ধাতুকে কার্বন বিজারণ প্রক্রিয়ায় নিষ্কাশন করা যায় না কেন? ব্যাখ্যা করো।",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-sq-1.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 2,
+      "text": "SO₂ কে অম্লধর্মী অক্সাইড বলা হয় কেন? ব্যাখ্যা করো।",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-sq-2.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 3,
+      "text": "অ্যালুমিনিয়াম ধাতু নিষ্কাশনে ক্রায়োলাইট ব্যবহার করা হয় কেন? ব্যাখ্যা করো।",
+      "pdfPage": 265,
+      "printedPage": 260,
+      "nativeImage": "tb-sq-3.png"
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "individual365365",
+      "text": "Na ধাতু নিষ্কাশন করা হয়—\ni. ক্লোরাইড আকরিক থেকে\nii. তড়িৎ বিশ্লেষণের মাধ্যমে\niii. কার্বন বিজারণ পদ্ধতিতে\nনিচের কোনটি সঠিক?",
+      "url": "https://sattacademy.com/academy/single-question?ques_id=365365",
+      "options": [
+        "i ও ii",
+        "i ও iii",
+        "ii ও iii",
+        "i, ii ও iii"
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা7",
+      "text": "বিশুদ্ধ সালফারের গলনাঙ্ক কত?",
+      "url": "https://sattacademy.com/mcq/বিশুদ্ধ-সালফারের-গলনাঙ্ক-কত",
+      "options": [
+        "0°",
+        "100°C",
+        "115°C",
+        "133°C"
+      ],
+      "observedBoard": {
+        "board": "rajshahi",
+        "examYear": 2023,
+        "shortTag": "[রা. বো. ’২৩]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      },
+      "notes": [
+        "Representative approximate classroom115°C; allotrope/pressure affect exact values. Duplicated list8/9stems not counted again."
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "related2",
+      "text": "ডুরালুমিনে কী পরিমাণ Cu থাকে?",
+      "url": "https://sattacademy.com/mcq/ডুরালুমিনে-কী-পরিমাণ-cu-থাকে",
+      "options": [
+        "4%",
+        "8.33%",
+        "65%",
+        "90%"
+      ],
+      "observedBoard": {
+        "board": "sylhet",
+        "examYear": 2025,
+        "shortTag": "[সি. বো. ’২৫]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      },
+      "notes": [
+        "Textbook representative composition; realduralumin grades vary. Read as relatedMCQinindividual365365chunk0."
+      ]
+    },
+    {
+      "source": "satt",
+      "type": "CQ",
+      "number": "তালিকা6",
+      "text": "বস্তু | লোহা | ক্রোমিয়াম | নিকেল | কার্বন\nX | 99% | − | − | 1%\nY | 74% | 18% | 7% | 1%",
+      "url": "https://sattacademy.com/question/বস্তুলোহাক্রোমিয়াম-নিকেল-কার্বনx-991y-74-1871",
+      "parts": [
+        "বক্সাইটের সংকেত লিখ।",
+        "Zn কে অবস্থান্তর মৌল বলা হয় না কেন?",
+        "X এর প্রধান মৌলের মিশ্র অক্সাইড এর জারণ সংখ্যা ও যোজনী ভিন্ন—ব্যাখ্যা কর।",
+        "X এবং Y এর মধ্যে কোনটি অধিক টেকসই—বিশ্লেষণ কর।"
+      ],
+      "observedBoard": {
+        "board": "jessore",
+        "examYear": 2017,
+        "shortTag": "[য. বো. ’১৭]",
+        "verification": "Website-displayed attribution; original exam paper not cross-checked."
+      },
+      "notes": [
+        "SourceY74/18/7/1retained, not changed to textbook74/18/8. Full listchunk0read; individual page not claimed read."
+      ]
+    }
+  ]
+}

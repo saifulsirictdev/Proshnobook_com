@@ -1,0 +1,102 @@
+{
+  "status": "LOCAL_OWNER_PRACTICE_POLICY_IMPLEMENTED",
+  "policyId": "ssc-chemistry-owner-chapter-policy-v1",
+  "writtenRequiredChapters": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    11
+  ],
+  "writtenOtherChapters": [
+    1,
+    2,
+    8,
+    9,
+    10,
+    12
+  ],
+  "CQ": {
+    "offered": 7,
+    "answer": 4,
+    "marksEach": 10,
+    "partMarks": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "SQ": {
+    "offered": 7,
+    "answer": 5,
+    "marksEach": 2
+  },
+  "MCQ": {
+    "offered": 25,
+    "answer": 25,
+    "marksEach": 1,
+    "requiredChapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "maxPerChapter": 3,
+    "authority": "full-book practice rotation, not official chapter quota"
+  },
+  "theoryMarks": 75,
+  "practicalMarksNotGenerated": 25,
+  "sharedTheoryMinutes": 180,
+  "officialYearVerified": false,
+  "localFixtureRows": 8110,
+  "fixtureNote": "Local draft fixtures, not actual approved production stock. No database mutation.",
+  "checks": [
+    {
+      "log": "chemistry-auto-model-regression.tap",
+      "sha256": "bdd8bd799d8729e03ee698daa1ac69e2106c55bb672c51f4a9de669ce55d8b55",
+      "tests": 86,
+      "pass": 86,
+      "fail": 0,
+      "skipped": 0,
+      "duration_ms": 36515.662689
+    },
+    {
+      "log": "chemistry-auto-model-chapter-regression.tap",
+      "sha256": "c9596002dd13de064c7c78db2d0fa43ed4ed73a6382f33d16dc0267820b73e80",
+      "tests": 162,
+      "pass": 162,
+      "fail": 0,
+      "skipped": 0,
+      "duration_ms": 47513.791603
+    }
+  ],
+  "passedTests": 248,
+  "focusedTypecheck": {
+    "result": "PASS",
+    "roots": [
+      "lib/subject-model-policy.ts",
+      "lib/auto-model.ts",
+      "lib/auto-model-paper.ts",
+      "lib/paper-builder.ts"
+    ],
+    "note": "Strict tsc with transitive dependencies and isolated cached dependencies, not full-app/Nextbuild."
+  },
+  "gitDiffCheck": "PASS",
+  "fullAppBuild": false,
+  "browserAudit": false,
+  "productionStockQueried": false,
+  "deployed": false,
+  "questionImported": false,
+  "questionApproved": false,
+  "productionModelReadinessCertified": false
+}

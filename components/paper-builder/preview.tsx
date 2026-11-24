@@ -1,4 +1,5 @@
 "use client";
+import { autoModelQuestionMarks, autoModelPartMarks } from "@/lib/auto-model-paper";
 import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
 import { questionProvenanceLabels } from "@/lib/question-provenance";
@@ -297,7 +298,7 @@ export default function PaperPreview({
         <div className="flex items-start gap-1.5">
           <b className="shrink-0">{bn(String(index + 1).padStart(2, "0"))}।</b>
           <div className="min-w-0 flex-1">
-            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{type === "CQ" ? "১০" : type === "SHORT" ? "২" : "১"}]</span>}
+            {s.show.marks && s.autoModel && <span className="float-right" style={{ marginInlineStart: "0.5em" }}>[{bn(autoModelQuestionMarks(s,type,q.id))}]</span>}
             <span>
               {s.show.important && attachment?.important && (
                 <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
@@ -406,7 +407,7 @@ export default function PaperPreview({
                   <p key={key}>
                     <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
                     <PaperMathText text={text} />
-                    <span className="float-right">{bn(s.autoModel === "ssc-math-written-v1" ? [2,4,4][i] ?? i+1 : i + 1)}</span>
+                    <span className="float-right">{bn(s.autoModel ? autoModelPartMarks(s,i) : i+1)}</span>
                   </p>
                 ))}
               </div>
@@ -705,6 +706,9 @@ export default function PaperPreview({
                 >
                   {segments.map((segment, segmentIndex) => {
                     const section = sections[segment.section];
+                    // Pagination belongs to the previous render until measurement
+                    // catches up after a remove/exchange or section-count change.
+                    if (!section) return null;
                     return (
                       <div
                         data-paper-section={section.type}
@@ -733,7 +737,7 @@ export default function PaperPreview({
                               ? `paper-section-${section.type}`
                               : undefined,
                           )}
-                        {segment.columns.flat().map((i) => (
+                        {segment.columns.flat().filter(i => !!section.questions[i]).map((i) => (
                           <div key={section.questions[i].q.id}>
                             {question(section.questions[i], i + (section.startNumber ?? 0), section.type)}
                           </div>
@@ -791,7 +795,7 @@ export default function PaperPreview({
                         paddingLeft: col > 0 ? 10 : 0,
                       }}
                     >
-                      {indexes.map((i) => (
+                      {indexes.filter(i => !!questions[i]).map((i) => (
                         <div key={questions[i].q.id}>
                           {question(questions[i], i)}
                         </div>

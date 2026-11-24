@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="600" viewBox="0 0 1040 600" role="img" aria-labelledby="title desc">
+<title id="title">Nested classification practice: order, family, genus and species</title>
+<desc id="desc">Order O contains families F and J. Family F contains genera G and H. G contains species X and Y; H contains Z. Family J contains genus I, which contains species W. Letters are fictional group identifiers, not formal scientific names.</desc>
+<rect width="1040" height="600" rx="18" fill="#f5f9f8"/>
+<g font-family="sans-serif" fill="#173f36">
+<text x="40" y="48" font-size="25" font-weight="bold">CLASSIFICATION: GROUPS WITHIN GROUPS</text>
+<text x="40" y="79" font-size="16">Original practice diagram · fictional identifiers · not an evolutionary timescale</text>
+<g fill="none" stroke="#60867b" stroke-width="3">
+<path d="M520 159 V185 H350 V217 M520 185 H800 V217"/>
+<path d="M350 265 V301 H230 V335 M350 301 H505 V335"/>
+<path d="M800 265 V335"/>
+<path d="M230 383 V417 H165 V453 M230 417 H335 V453"/>
+<path d="M505 383 V453 M800 383 V453"/>
+</g>
+<g stroke="#27765f" stroke-width="2" fill="#e0eee8">
+<rect x="400" y="111" width="240" height="48" rx="10"/>
+<rect x="240" y="217" width="220" height="48" rx="10"/>
+<rect x="690" y="217" width="220" height="48" rx="10"/>
+<rect x="150" y="335" width="160" height="48" rx="10"/>
+<rect x="425" y="335" width="160" height="48" rx="10"/>
+<rect x="720" y="335" width="160" height="48" rx="10"/>
+</g>
+<g stroke="#7b927e" stroke-width="2" fill="#fff9e7">
+<rect x="95" y="453" width="140" height="48" rx="10"/>
+<rect x="265" y="453" width="140" height="48" rx="10"/>
+<rect x="435" y="453" width="140" height="48" rx="10"/>
+<rect x="730" y="453" width="140" height="48" rx="10"/>
+</g>
+<g text-anchor="middle" font-size="22" font-weight="bold">
+<text x="520" y="143">Order O</text>
+<text x="350" y="249">Family F</text><text x="800" y="249">Family J</text>
+<text x="230" y="367">Genus G</text><text x="505" y="367">Genus H</text><text x="800" y="367">Genus I</text>
+<text x="165" y="485">Species X</text><text x="335" y="485">Species Y</text><text x="505" y="485">Species Z</text><text x="800" y="485">Species W</text>
+</g>
+<text x="40" y="550" font-size="17">Follow connections upward to find shared groups. One higher group may contain several lower groups.</text>
+<text x="40" y="578" font-size="15" fill="#526f64">The question includes an equivalent written description for accessibility and plain-text use.</text>
+</g></svg>

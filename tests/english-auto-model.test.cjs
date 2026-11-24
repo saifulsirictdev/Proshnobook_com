@@ -7,8 +7,8 @@ function harness(user={id:'teacher',role:'TEACHER'},sources={},bankResult={ok:fa
  const actions=load('app/actions/english-auto-model.ts',{'@/auth':{auth:async()=>({user})},'./english-bank-model':{prepareEnglishBankModel:async (...args)=>{bank.push(args[0]);bankCalls.push(args);return bankResult;}},'@/lib/english/bundled-model-sources':{bundledEnglishModelSources:()=>({})},'@/lib/english/blueprints':blueprint,'@/lib/english/builder-mode':builder,'./english-model-sources':{loadEnglishModelSources:async()=>{reads++;return{sources,error:''};}},'./english-paper':{generateEnglishPaper:async raw=>{requests.push(raw);selection.resolveEnglishSelection(raw);return{ok:true,key:'owned-draft-key'};}}});
  return{prepare:actions.prepareEnglishFullModel,requests,bank,bankCalls,reads:()=>reads};
 }
-test('First paper auto models delegate only to approved database full models across all grades',async()=>{
- for(let grade=6;grade<=12;grade++){const h=harness();const r=await h.prepare({grade,paper:1});assert.equal(r.ok,false);assert.deepEqual(h.bank,[grade]);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);}
+test('First paper checks approved bank then requires sources before any missing-part AI across all grades',async()=>{
+ for(let grade=6;grade<=12;grade++){const h=harness();const r=await h.prepare({grade,paper:1});assert.equal(r.ok,false);assert.deepEqual(h.bank,[grade]);assert.equal(h.reads(),1);assert.equal(h.requests.length,0);}
 });
 test('First paper rejects unauthorised and invalid inputs without bank/provider lookup',async()=>{
  for(const user of [null,{id:'student',role:'STUDENT'}]){const h=harness(user);assert.equal((await h.prepare({grade:6})).ok,false);assert.equal(h.bank.length,0);assert.equal(h.requests.length,0);}
@@ -36,7 +36,7 @@ test('Second-paper auto models select grade-specific grammar/writing, require no
  const page=load('app/question-builder/english/page.tsx',{'@/lib/english/topic-options':{englishQuestionItemGroups:()=>[{id:'verbs',itemIds:['verbs']}]},'@/components/english-auto-model':{__esModule:true,default:Auto},'@/components/english-setup':{__esModule:true,default:()=>null}}).default;
  const auto=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'full'})});assert.equal(auto.type,Auto);assert.equal(auto.props.paper,2);assert.equal(auto.props.grade,8);assert.equal(auto.key,'8-2');
  const item=await page({searchParams:Promise.resolve({grade:'8',paper:'2',mode:'topic',item:'verbs'})});assert.equal(item.props.initialMode,'selected');assert.equal(item.props.initialItem,'verbs');assert.equal(item.props.initialPaper,2);
- const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishBankModel(grade,'));assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources })'));
+ const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.ok(ui.includes('prepareEnglishFullModel({ grade, paper, sources,'));assert.ok(ui.includes('itemIds:itemSignature.split'));
 });
 test('Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback',()=>{
  const data=require('../lib/english/data/class6-seen-pool.json'),crypto=require('node:crypto');
@@ -62,7 +62,7 @@ test('First-paper Question Item routes use the same bank preparation with the ch
  for(const [query,expected] of [[{group:'seen'},['mcq','comprehension']],[{item:'summary'},['summary']]]){
   const result=await page({searchParams:Promise.resolve({grade:'6',paper:'1',mode:'topic',...query})});assert.equal(result.type,Auto);assert.deepEqual(result.props.itemIds,expected);
  }
- const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.match(ui,/<PreparationPopup/);assert.match(ui,/databaseOnly=\{paper === 1\}/);assert.match(ui,/paper === 2 \? "&stage=review" : "&stage=setup"/);
+ const ui=fs.readFileSync('components/english-auto-model.tsx','utf8');assert.match(ui,/<PreparationPopup/);assert.match(ui,/neutralBranding/);assert.match(ui,/&stage=review/);assert.doesNotMatch(ui,/databaseOnly=/);
 });
 test('Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup',async()=>{
  for(const grade of [9,10]){
@@ -80,4 +80,24 @@ test('Second paper does not spend AI quota on a database/save failure or unclass
 test('Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade',async()=>{
  const h=harness();assert.equal((await h.prepare({grade:9,paper:2})).ok,true);
  assert.deepEqual(h.bankCalls,[[9,undefined,{},2]]);assert.equal(h.requests.length,1);assert.equal(h.requests[0].grade,9);assert.equal(h.requests[0].paper,2);
+});
+test('First-paper complete approved models never invoke source lookup or AI',async()=>{
+ for(const grade of [6,9,12]){const h=harness({id:'t',role:'TEACHER'},{},{ok:true,key:'bank'});assert.deepEqual(await h.prepare({grade,paper:1}),{ok:true,key:'bank'});assert.deepEqual(h.bankCalls,[[grade,undefined,{},1]]);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);}
+});
+test('First-paper AI preserves selected item IDs, requires exact sources and rejects invalid selections before DB',async()=>{
+ const bp=blueprint.englishBlueprint(6,1),item=bp.items.find(i=>i.sourceGroup&&i.sourceGroup!=='unseen'),group=item.sourceGroup;
+ const sources={[group]:{text:'Exact textbook extract for isolated selection fixture.',reference:'Teacher supplied textbook reference'}};
+ const h=harness({id:'t',role:'TEACHER'},sources);const result=await h.prepare({grade:6,paper:1,itemIds:[item.id]});assert.equal(result.ok,true);assert.deepEqual(h.bankCalls,[[6,[item.id],{},1]]);assert.equal(h.requests.length,1);assert.deepEqual(h.requests[0].itemIds,[item.id]);assert.equal(h.requests[0].mode,'selected');assert.deepEqual(Object.keys(h.requests[0].sources),[group]);
+ for(const itemIds of [['unknown'],[item.id,item.id]]){const bad=harness();assert.equal((await bad.prepare({grade:6,paper:1,itemIds})).ok,false);assert.equal(bad.bank.length,0);assert.equal(bad.requests.length,0);}
+});
+test('partial stock retains exact writing signatures instead of regenerating its available items',async()=>{
+ const writing=builder.fullModelWriting(6,2),id=Object.keys(writing)[0];assert.ok(id);const retained={...writing[id],topic:'Existing teacher-approved bank topic'};
+ const h=harness({id:'t',role:'TEACHER'},{},{ok:false,reason:'MISSING_APPROVED_ITEMS',reuse:{sources:{},writing:{[id]:retained}}});assert.equal((await h.prepare({grade:6,paper:2})).ok,true);assert.deepEqual(h.requests[0].writing[id],retained);
+});
+
+test('complete-book databaseOnly flag blocks both English papers before sources, provider or quota',async()=>{
+ for(const grade of [6,8,9,10,11,12])for(const paper of [1,2]){
+  const h=harness({id:'teacher',role:'TEACHER'},{},{ok:false,reason:'MISSING_APPROVED_ITEMS',databaseOnly:true,missingIds:['paragraph'],error:'selection shortage'});
+  const r=await h.prepare({grade,paper});assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/AI বন্ধ/);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);
+ }
 });

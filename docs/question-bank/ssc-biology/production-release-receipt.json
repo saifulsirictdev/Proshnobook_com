@@ -1,0 +1,176 @@
+{
+  "status": "OWNER_APPROVED_PUBLICATION_VERIFIED",
+  "evidence": "Extracted from Vercel build event receipts and independent deployment GET; not a database dump",
+  "deploymentId": "dpl_9GzGcK2q34Bh2BYJdedW3SbHroP1",
+  "sourceSha": "21ead3ab00106e0da9e7dba9b3e7bc5c94d15614",
+  "url": "https://proshnobook.com",
+  "deploymentState": "READY",
+  "readySubstate": "PROMOTED",
+  "aliasAssignedAt": 1795518060407,
+  "readyAt": 1795518060181,
+  "serviceReportedReleaseCreatedAt": "2026-11-24T11:00:25.849Z",
+  "timestampNote": "External service clock preserved verbatim; not used to override session date",
+  "releaseDigest": "da5b49c70c4634543eeb1f86709dbb8b2ae6c1b75b8c934030fa7010fe53e0b6",
+  "actor": "vercel-owner-release:21ead3ab00106e0da9e7dba9b3e7bc5c94d15614",
+  "insertedPending": 4480,
+  "newlyApproved": 4480,
+  "previouslyApproved": 0,
+  "approvedCanonical": 4480,
+  "counts": {
+    "MCQ": 2800,
+    "CQ": 700,
+    "SQ": 980
+  },
+  "chapters": {
+    "1": {
+      "topic": "১ম অধ্যায়: জীবন পাঠ",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "2": {
+      "topic": "২য় অধ্যায়: জীবকোষ ও টিস্যু",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "3": {
+      "topic": "৩য় অধ্যায়: কোষ বিভাজন",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "4": {
+      "topic": "৪র্থ অধ্যায়: জীবনীশক্তি",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "5": {
+      "topic": "৫ম অধ্যায়: খাদ্য, পুষ্টি এবং পরিপাক",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "6": {
+      "topic": "৬ষ্ঠ অধ্যায়: জীবে পরিবহণ",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "7": {
+      "topic": "৭ম অধ্যায়: গ্যাসীয় বিনিময়",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "8": {
+      "topic": "৮ম অধ্যায়: রেচন প্রক্রিয়া",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "9": {
+      "topic": "৯ম অধ্যায়: দৃঢ়তা প্রদান ও চলন",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "10": {
+      "topic": "১০ম অধ্যায়: সমন্বয়",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "11": {
+      "topic": "১১শ অধ্যায়: জীবের প্রজনন",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "12": {
+      "topic": "১২শ অধ্যায়: জীবের বংশগতি ও জৈব অভিব্যক্তি",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "13": {
+      "topic": "১৩শ অধ্যায়: জীবের পরিবেশ",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    },
+    "14": {
+      "topic": "১৪শ অধ্যায়: জীবপ্রযুক্তি",
+      "MCQ": 200,
+      "CQ": 50,
+      "SQ": 70
+    }
+  },
+  "liveAssets": {
+    "verified": 45,
+    "assetsDigest": "cc50ebcf508de3a40931bf1c2b299160ac6fd4f5cc4924dcd0fd3e1b4a74ba50",
+    "origin": "https://proshnobook.com",
+    "method": "HTTP_GET_CONTENT_TYPE_AND_SHA256"
+  },
+  "protectedDigestBefore": "1ebfbd7bd656d0395e66c616065f253ba8972ac5e5800b4312e2e5b97aa558b6",
+  "protectedDigestAfter": "1ebfbd7bd656d0395e66c616065f253ba8972ac5e5800b4312e2e5b97aa558b6",
+  "protectedSubjects": [
+    {
+      "subject": "পদার্থবিজ্ঞান",
+      "count": 6400,
+      "approved": 6400,
+      "digest": "3729866457cc556c6bb5cc6c9c98b9ff9fc0eefe2c9ae844c85633b9957d7a67"
+    },
+    {
+      "subject": "রসায়ন",
+      "count": 8113,
+      "approved": 8113,
+      "digest": "93c98335d61bd46e90223bdc37b85b3b70b2109dffa4b313915373fe16571bdd"
+    }
+  ],
+  "readbackStatus": "READ_ONLY_BIOLOGY_PUBLICATION_READBACK_VERIFIED",
+  "readbackDatabaseMutation": false,
+  "aiGuard": {
+    "method": "READ_ONLY_SERVER_ACTION_HARNESS_WITH_LIVE_STOCK",
+    "syntheticTeacherIdentity": true,
+    "authenticatedBrowserFlowVerified": false,
+    "sectionTopicFilterCovered": true,
+    "databaseOnly": true,
+    "stockShortfall": 51,
+    "aiShortfall": 0,
+    "quotaWrites": 0,
+    "providerInvocations": 0,
+    "topicSubstitution": false
+  },
+  "biologyDiagnosticModels": [
+    {
+      "variant": "MCQ",
+      "offered": 25,
+      "aiShortfall": 0
+    },
+    {
+      "variant": "CQ",
+      "offered": 14,
+      "aiShortfall": 0
+    }
+  ],
+  "diagnosticSchemeBasis": "TEACHER_INPUT_NOT_OFFICIAL",
+  "physicsChemistryReadOnlyModelsVerified": 20,
+  "physicsChemistryRepublished": false,
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "fullTextbookAndSyllabusAlignment": false,
+  "registeredOfficialBiologyScheme": false,
+  "authenticatedBrowserFlowVerified": false,
+  "eventEvidence": {
+    "prereleaseInventory": 1795518025177,
+    "liveAssets": 1795518025848,
+    "release": 1795518030354,
+    "readback": 1795518032843,
+    "protectedModels": 1795518041378,
+    "buildCompleted": 1795518043368,
+    "deploymentCompleted": 1795518060284
+  }
+}

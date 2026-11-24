@@ -9,6 +9,7 @@ function load(file) {
   const m = new Module(file, module);
   m.paths = module.paths;
   m.require = (n) =>
+    n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     n === "server-only"
       ? {}
       : n === "@/lib/wallet"

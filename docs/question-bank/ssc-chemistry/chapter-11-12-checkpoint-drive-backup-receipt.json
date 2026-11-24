@@ -1,0 +1,40 @@
+{
+  "status": "PARTIAL_CHECKPOINT_UPLOAD_METADATA_READBACK_VERIFIED",
+  "fileId": "1r0QAhWPGv_Q0kuFUyGGSpxAwlrZr7L50",
+  "folderId": "176mPxq4l8vSRJXjJnERwEk5I190KFdzJ",
+  "url": "https://drive.google.com/file/d/1r0QAhWPGv_Q0kuFUyGGSpxAwlrZr7L50/view",
+  "local": {
+    "path": ".cache/chemistry-sources/ssc-chemistry-ch11-12-PARTIAL-108-drafts-checkpoint-v1.zip",
+    "bytes": 1659523,
+    "entries": 26,
+    "md5": "d9b09faa019dd396876defe461e4e1e9",
+    "sha256": "b1652ed49fce0c5ffaac05f5b8f7ef3b02e966e0c7de94d104e366cd0b47a77d",
+    "localZipIntegrity": "PASS",
+    "perEntrySHA256": "PASS",
+    "partial": true,
+    "totalCurrent": 108,
+    "totalTarget": 1470
+  },
+  "remote": {
+    "bytes": 1659523,
+    "md5": "d9b09faa019dd396876defe461e4e1e9",
+    "trashed": false
+  },
+  "verification": {
+    "uploadSizeMD5Matched": true,
+    "separateGetMetadataSizeMD5Matched": true,
+    "remoteBytesDownloaded": false,
+    "localZipAndPerEntrySHA256": "PASS",
+    "note": "Drive metadata comparison, not remote raw-byte/SHA256 download comparison."
+  },
+  "partial": true,
+  "totalCurrent": 108,
+  "totalTarget": 1470,
+  "totalRemaining": 1362,
+  "registered": false,
+  "imported": false,
+  "approved": false,
+  "deployed": false,
+  "teacherCertified": false,
+  "receiptInsideArchive": false
+}

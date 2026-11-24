@@ -1,0 +1,42 @@
+{
+  "chapter": 2,
+  "topic": "২য় অধ্যায়: জীবকোষ ও টিস্যু",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 154554,
+      "sha256": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4"
+    },
+    "rebuild-sq.json": {
+      "bytes": 55027,
+      "sha256": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea"
+    },
+    "rebuild-cq.json": {
+      "bytes": 153392,
+      "sha256": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f"
+    }
+  }
+}

@@ -799,3 +799,22 @@ test('SSC admin category is SSC for both grades and old Class 9/10 URLs remain c
  const page=fs.readFileSync('app/admin/questions/page.tsx','utf8');assert.match(page,/englishCategoryLabel\(typeof params.category/);assert.match(page,/category === "SSC"/);
  const library=fs.readFileSync('app/admin/questions/import/prepared-library.tsx','utf8');assert.match(library,/englishCategoryLabel\(initialCategory/);assert.match(library,/value=\{c.category\}>\{englishCategoryLabel\(c.category\)\}/);
 });
+test('incomplete auto model carries source/writing signatures so the gap engine requests only absent stock',async()=>{
+ const items=require('../lib/english/item-bank.ts'),{fullModelWriting}=require('../lib/english/builder-mode.ts'),{findEnglishBankParts}=require('../lib/english/bank.ts');
+ const groups=items.englishItemGroups(prepared.draft),omit=groups.find(g=>!Object.keys(g.draft.selection.sources).length&&Object.keys(g.draft.selection.writing).length);assert.ok(omit);
+ const stock=groups.filter(g=>g!==omit),assembly=items.assembleEnglishItems(stock.map(g=>g.draft),6,()=>0);assert.equal(assembly.draft,null);assert.ok(assembly.reuse);assert.deepEqual(assembly.missing,omit.draft.selection.itemIds);
+ const request={grade:6,paper:1,mode:'full',itemIds:[],sources:assembly.reuse.sources,writing:{...fullModelWriting(6,1),...assembly.reuse.writing},includeAnswers:true};
+ const parts=await findEnglishBankParts(request,async(_after,prefix)=>prefix==='english-item:v1:'?stock.map(g=>({key:g.key,value:record('APPROVED',g.draft)})):[]);
+ assert.deepEqual(parts.missingIds,assembly.missing);assert.equal(parts.output.tasks.length,prepared.draft.output.tasks.length-assembly.missing.length);assert.deepEqual(new Set(parts.output.tasks.map(t=>t.id)),new Set(stock.flatMap(g=>g.draft.output.tasks.map(t=>t.id))));
+});
+
+test('source-filter shortage still reports complete whole-book stock without writing a draft',async()=>{
+ const registry=require('../lib/english/prepared-items.ts');
+ const stock=registry.preparedEnglishItems(10).map(i=>i.draft);
+ const items=require('../lib/english/item-bank.ts');
+ assert.ok(items.assembleEnglishItems(stock,10,()=>0.5).draft);
+ assert.equal(items.assembleEnglishItems(stock,10,()=>0.5,undefined,{examYear:2099}).draft,null);
+ const records=stock.map((draft,i)=>({key:'english-item:v1:'+i,value:record('APPROVED',draft)}));
+ const h=harness(records);
+ const r=await h.run(10,undefined,{examYear:2099},1);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.equal(h.writes.length,0);
+});

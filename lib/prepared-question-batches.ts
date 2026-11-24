@@ -1,3 +1,30 @@
+import {sscBiologyBatches} from "./ssc-biology-batches";
+import {sscPhysicsChapter8Batches} from "./ssc-physics-ch8-batches";
+import {sscPhysicsChapter9Batches} from "./ssc-physics-ch9-batches";
+import {sscPhysicsChapter10Batches} from "./ssc-physics-ch10-batches";
+import {sscPhysicsChapter11Batches} from "./ssc-physics-ch11-batches";
+import {sscPhysicsChapter12Batches} from "./ssc-physics-ch12-batches";
+import {sscPhysicsChapter13Batches} from "./ssc-physics-ch13-batches";
+import {sscPhysicsChapter14Batches} from "./ssc-physics-ch14-batches";
+import {sscPhysicsChapter7Batches} from "./ssc-physics-ch7-batches";
+import {sscPhysicsChapter5Batches} from "./ssc-physics-ch5-batches";
+import {sscPhysicsChapter6Batches} from "./ssc-physics-ch6-batches";
+import {sscPhysicsChapter4Batches} from "./ssc-physics-ch4-batches";
+import {sscPhysicsChapter3Batches} from "./ssc-physics-ch3-batches";
+import {sscPhysicsChapter2Batches} from "./ssc-physics-ch2-batches";
+import {sscPhysicsBatches} from "./ssc-physics-batches";
+import {sscChemistryBatches} from "./ssc-chemistry-batches";
+import {sscChemistryChapter2Batches} from "./ssc-chemistry-ch2-batches";
+import {sscChemistryChapter3Batches} from "./ssc-chemistry-ch3-batches";
+import {sscChemistryChapter4Batches} from "./ssc-chemistry-ch4-batches";
+import {sscChemistryChapter5Batches} from "./ssc-chemistry-ch5-batches";
+import {sscChemistryChapter6Batches} from "./ssc-chemistry-ch6-batches";
+import {sscChemistryChapter7Batches} from "./ssc-chemistry-ch7-batches";
+import {sscChemistryChapter8Batches} from "./ssc-chemistry-ch8-batches";
+import {sscChemistryChapter9Batches} from "./ssc-chemistry-ch9-batches";
+import {sscChemistryChapter11Batches} from "./ssc-chemistry-ch11-batches";
+import {sscChemistryChapter12Batches} from "./ssc-chemistry-ch12-batches";
+import {sscChemistryChapter10Batches} from "./ssc-chemistry-ch10-batches";
 import {sscMathBatches} from "./ssc-math-batches";
 import {sscGeometryPlainBatches} from "./ssc-geometry-plain-batches";
 import {class8English2Batches} from "./class8-english2-batches";
@@ -28,6 +55,7 @@ export function preparedBatches():PreparedBatch[]{
   {id:"class6-math-ch1-mcq-v1",category:"Class 6",subject:m.subject,topic:m.topic,title:"১০০ MCQ — নিজস্ব খসড়া",lang:m.lang,limitations:"২৫ দক্ষতার চারটি করে উদাহরণ; স্বাধীন শিক্ষক অনুমোদন বাকি।",records:m.items.map(q=>({kind:"MCQ",text:q.text,options:q.options,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty})),provenance:{book:m.book,edition:m.edition,sourceUrl:m.sourceUrl,references:m.items.map(q=>q.page),review}},
   {id:"class6-math-ch1-written-v1",category:w.batch.class,subject:w.batch.subject,topic:w.batch.topic,title:"৩০ CQ + ৩০ SQ — নিজস্ব খসড়া",lang:"Bangla",limitations:"CQ: ক–খ–গ, ২–৪–৪। ছয় সমস্যা-পরিবার; স্বাধীন শিক্ষক অনুমোদন বাকি।",records:w.records.map(q=>({kind:q.kind as "CQ"|"SQ",text:q.text,options:q.options,correct:"",explanation:q.explanation,difficulty:"MEDIUM"})),provenance:{source:w.batch.source,references:w.records.map(q=>({id:q.id,page:q.referencePrintedPage})),review}},
   {id:"class6-math-ch2-mixed-v1",category:ch2.batch.category,subject:ch2.batch.subject,topic:ch2.batch.topic,title:"১০০ MCQ + ৩০ CQ + ৩০ SQ — অনুপাত ও শতকরা",lang:ch2.batch.lang,limitations:"বইয়ের ৩৮–৫৮ পৃষ্ঠা দেখে ধারণা মিলেছে; ২৫ MCQ/১০ CQ/১৫ SQ পরিবারে সংখ্যাভিত্তিক variant। স্বাধীন শিক্ষক অনুমোদন বাকি।",records:ch2.records.map((q,i)=>({kind:ch2.batch.items[i].type,text:q.text,options:q.options,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty})),provenance:{book:ch2.batch.book,edition:ch2.batch.edition,sourceUrl:ch2.batch.sourceUrl,references:ch2.batch.items.map(q=>q.page),review:chapter2Review}},
+  ...sscBiologyBatches(),
   ...remainingMathBatches(),
   ...scienceStarterBatches(),
   ...hscIctBatches(),
@@ -35,7 +63,33 @@ export function preparedBatches():PreparedBatch[]{
   ...english1Batches(),
   ...class8English2Batches(),
   ...sscMathBatches(),
-  ...sscGeometryPlainBatches()
+  ...sscGeometryPlainBatches(),
+  ...sscPhysicsBatches(),
+  ...sscPhysicsChapter2Batches(),
+  ...sscPhysicsChapter3Batches(),
+  ...sscPhysicsChapter4Batches(),
+  ...sscPhysicsChapter5Batches(),
+  ...sscPhysicsChapter6Batches(),
+  ...sscPhysicsChapter7Batches(),
+  ...sscPhysicsChapter8Batches(),
+  ...sscPhysicsChapter9Batches(),
+  ...sscPhysicsChapter10Batches(),
+  ...sscPhysicsChapter11Batches(),
+  ...sscPhysicsChapter12Batches(),
+  ...sscPhysicsChapter13Batches(),
+  ...sscPhysicsChapter14Batches(),
+  ...sscChemistryBatches(),
+  ...sscChemistryChapter2Batches(),
+  ...sscChemistryChapter3Batches(),
+  ...sscChemistryChapter4Batches(),
+  ...sscChemistryChapter5Batches(),
+  ...sscChemistryChapter6Batches(),
+  ...sscChemistryChapter7Batches(),
+  ...sscChemistryChapter8Batches(),
+  ...sscChemistryChapter9Batches(),
+  ...sscChemistryChapter10Batches(),
+  ...sscChemistryChapter11Batches(),
+  ...sscChemistryChapter12Batches()
  ];
 }
 function validatePreparedBatch(b:PreparedBatch){

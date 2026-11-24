@@ -8,6 +8,7 @@ function load(file, mocks = {}) {
   const m = new Module(file, module);
   m.paths = module.paths;
   m.require = (n) =>
+    n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     Object.hasOwn(mocks, n)
       ? mocks[n]
       : n === "server-only"

@@ -1,0 +1,270 @@
+{
+  "status": "PARTIAL_SELECTED_SOURCE_INTAKE_NOT_TARGET_COMPLETION",
+  "chapter": 12,
+  "title": "আমাদের জীবনে রসায়ন",
+  "target": {
+    "MCQ": 350,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "count": 9,
+  "counts": {
+    "MCQ": 5,
+    "CQ": 1,
+    "SQ": 3
+  },
+  "textbook": {
+    "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+    "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "exercisePageMap": {
+      "303": 308,
+      "304": 309
+    }
+  },
+  "research": {
+    "exhaustive": false,
+    "sourceFirst": true,
+    "mcqList": "https://sattacademy.com/all-mcq/আমাদের-জীবনে-রসায়ন-65566",
+    "writtenList": "https://sattacademy.com/all-written/আমাদের-জীবনে-রসায়ন-65566",
+    "readChunks": {
+      "mcq": [
+        0
+      ],
+      "written": [
+        0
+      ]
+    },
+    "countersObserved": {
+      "MCQ": 197,
+      "CQ": 544
+    },
+    "counterCaveat": "Displayed counters not collected unique counts or proof of shortage.",
+    "fullChapterRead": false,
+    "originalBoardPaperCrossChecked": false
+  },
+  "excluded": [
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 2,
+      "pdfPage": 309,
+      "reason": "Baking-powder ingestion/indigestion narrative risks endorsing self-medication and conflates baking powder with NaHCO3. WholeCQexcluded, no home treatment or dosing advice."
+    },
+    {
+      "source": "satt-written",
+      "number": "Jessore2017",
+      "reason": "Question asks a single formula for baking powder (mixture), unspecified cleaning powder and ambiguous inference. Not silently repaired."
+    },
+    {
+      "source": "satt-written",
+      "number": "Dhaka2019",
+      "reason": "Missing original container/source image; no reconstructed label mapping."
+    },
+    {
+      "source": "satt-mcq",
+      "number": "list1/2/3/5",
+      "reason": "Duplicates of selected textbook items or catalyst item; malformed Na(OH)2choice not silently repaired or recounted."
+    },
+    {
+      "source": "satt-written",
+      "number": "Shaon",
+      "reason": "Same whole source stimulus as selected textbookCQ1; not counted twice. Web subpart contains an image; not copied without that figure."
+    }
+  ],
+  "items": [
+    {
+      "type": "MCQ",
+      "number": 1,
+      "text": "অ্যামোনিয়া গ্যাস উৎপাদনে ব্যবহৃত হাইড্রোজেন ও নাইট্রোজেনের অনুপাত কত?",
+      "source": "textbook",
+      "pdfPage": 308,
+      "printedPage": 303,
+      "nativeImage": "tb-page-308.png",
+      "options": [
+        "1 : 2",
+        "1 : 3",
+        "2 : 1",
+        "3 : 1"
+      ],
+      "correct": "D",
+      "solution": "N₂+3H₂⇌2NH₃; গ্যাসের একই তাপমাত্রা/চাপে আয়তন অথবা মোলভিত্তিক H₂:N₂=3:1। ভরভিত্তিক অনুপাত নয়।",
+      "id": "ssc-chem-ch12-source-01",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "MCQ",
+      "number": 2,
+      "text": "NH₃ + H₂SO₄ বিক্রিয়াটি—\n(i) একটি প্রশমন বিক্রিয়া\n(ii) উৎপাদ উদ্ভিদের একটি গুরুত্বপূর্ণ পুষ্টি উপাদান\n(iii) উৎপাদের জলীয় দ্রবণের pH এর মান 7 এর চেয়ে বেশি\nনিচের কোনটি সঠিক?",
+      "source": "textbook",
+      "pdfPage": 308,
+      "printedPage": 303,
+      "nativeImage": "tb-page-308.png",
+      "options": [
+        "i ও ii",
+        "ii ও iii",
+        "i ও iii",
+        "i, ii ও iii"
+      ],
+      "correct": "A",
+      "solution": "পূর্ণ প্রশমনে2NH₃+H₂SO₄→(NH₄)₂SO₄। এটি নাইট্রোজেন/সালফার সরবরাহকারী সার। NH₄⁺-এর অম্লীয় জলবিশ্লেষণে সাধারণ জলীয় দ্রবণ অম্লীয়, pH>7 নয়। সার সরাসরি কত দিতে হবে তার নির্দেশ নয়।",
+      "id": "ssc-chem-ch12-source-02",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "MCQ",
+      "number": 3,
+      "text": "কোনটি রঙিন পদার্থকে বর্ণহীন করে?",
+      "source": "textbook",
+      "pdfPage": 308,
+      "printedPage": 303,
+      "nativeImage": "tb-page-308.png",
+      "options": [
+        "NaOH",
+        "Ca(OCl)Cl",
+        "HCl",
+        "CH₃COOH"
+      ],
+      "correct": "B",
+      "solution": "Ca(OCl)Cl হলো ব্লিচিং পাউডারের প্রচলিত পাঠ্য সংকেত; বাস্তব পণ্য মিশ্র প্রকৃতির। উপযুক্ত শর্তে হাইপোক্লোরাইট জারণের মাধ্যমে রং নষ্ট করতে পারে। সব রঞ্জক বা সব পৃষ্ঠে একই প্রভাব নয়; অম্ল/অ্যামোনিয়ার সঙ্গে মেশানো বিপজ্জনক।",
+      "id": "ssc-chem-ch12-source-03",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "MCQ",
+      "number": 4,
+      "text": "জমিতে ইউরিয়া প্রয়োগ করলে কোন আয়ন উদ্ভিদ দ্বারা পরিশোষিত হয়?",
+      "source": "textbook",
+      "pdfPage": 309,
+      "printedPage": 304,
+      "nativeImage": "tb-page-309.png",
+      "options": [
+        "OH⁻",
+        "NH₄⁺",
+        "H⁺",
+        "Cl⁻"
+      ],
+      "correct": "B",
+      "solution": "প্রদত্ত বিকল্পে NH₄⁺ সঠিক। ইউরিয়া মাটিতে রূপান্তরিত হয়ে অ্যামোনিয়াম দেয়, পরে নাইট্রিফিকেশনে নাইট্রেটও হতে পারে। উদ্ভিদ NH₄⁺ ও NO₃⁻ উভয়ভাবেই N নিতে পারে; শুধু একমাত্র আয়ন বলার দাবি নয়।",
+      "id": "ssc-chem-ch12-source-04",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "CQ",
+      "number": 1,
+      "text": "দশম শ্রেণির ছাত্র শাওন টিউবওয়েলের পানিতে সাবান দিয়ে কাপড় ধুয়ে দেখল সেটি তেমন পরিষ্কার হয়নি এবং ফেনাও ভালো হয়নি। তার বন্ধু রিয়াদকে কথাটি জানালে রিয়াদ তাকে ডিটারজেন্ট ব্যবহার করার পরামর্শ দিল।",
+      "source": "textbook",
+      "pdfPage": 309,
+      "printedPage": 304,
+      "nativeImage": "tb-page-309.png",
+      "parts": [
+        "সাবান কী?",
+        "গ্লাস ক্লিনার ও টয়লেট ক্লিনারের পার্থক্য লেখো।",
+        "শাওন প্রথমে যে পদার্থ দিয়ে কাপড় পরিষ্কার করার চেষ্টা করেছিল তার পরিষ্কারক কৌশল বর্ণনা করো।",
+        "রিয়াদ কাপড় পরিষ্কার করার জন্য শাওনকে যে পরিষ্কারক সামগ্রীর পরামর্শ দিয়েছিল সেটি কার্যকর হওয়ার কারণ যুক্তিসহ ব্যাখ্যা দাও।"
+      ],
+      "solutions": [
+        "উচ্চতর ফ্যাটি এসিডের Na/K লবণকে সাধারণভাবে সাবান বলে।",
+        "পাঠ্য গ্লাসক্লিনারে জলীয় অ্যামোনিয়াভিত্তিক ক্ষারীয় মডেল, আর টয়লেটক্লিনারের উপাদান পণ্যভেদে অম্লীয় স্কেলরিমুভার বা পৃথক হাইপোক্লোরাইটভিত্তিক পণ্য হতে পারে। একটিকে অন্যটির সঙ্গে মেশানোর নির্দেশ নয়; বিশেষত ব্লিচের সঙ্গে অম্ল বা অ্যামোনিয়া মেশানো যাবে না।",
+        "সাবানের দীর্ঘ অপোলার লেজ তেল-গ্রিজে, আয়নিক জলাকর্ষী মাথা পানির দিকে থাকে। নড়াচড়ায় তেলের ফোঁটা ভেঙে চারপাশে সাবান আয়নের আবরণে ছড়িয়ে যায়; ধোয়ার পানির সঙ্গে অপসারিত হয়। ময়লা নতুন মৌলে পরিণত হয় না।",
+        "খর পানিতে Ca²⁺/Mg²⁺ সাবানের অদ্রবণীয় লবণ/গাদ তৈরি করে। প্রচলিত সিন্থেটিক ডিটারজেন্টের উপযুক্ত সারফ্যাক্ট্যান্ট এই আয়নগুলোর সঙ্গে সাবানের মতো সহজে গাদ না করায় খর পানিতেও কার্যকর হতে পারে। সব ব্র্যান্ড/সব বর্জ্যের পরিবেশপ্রভাব একই নয়।"
+      ],
+      "id": "ssc-chem-ch12-source-05",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "SQ",
+      "number": 1,
+      "text": "সাবান প্রস্তুতিতে NaCl ব্যবহার করা হয় কেন? ব্যাখ্যা করো।",
+      "source": "textbook",
+      "pdfPage": 309,
+      "printedPage": 304,
+      "nativeImage": "tb-page-309.png",
+      "solution": "NaCl যোগে দ্রবণে সাবানের দ্রাব্যতা কমে আলাদা হতে সাহায্য করে—স্যাল্টিং আউট। সাধারণ সাবান তৈরির মূল বিক্রিয়ক তেল/চর্বি ও NaOH/KOH; NaCl যোগ নিজেই সাবানায়ন নয়। ঘরোয়া ক্ষার ব্যবহারের রেসিপি নয়।",
+      "id": "ssc-chem-ch12-source-06",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "SQ",
+      "number": 2,
+      "text": "অতিরিক্ত ডিটারজেন্ট ব্যবহার জলাশয়ের জন্য ক্ষতিকর কেন? ব্যাখ্যা করো।",
+      "source": "textbook",
+      "pdfPage": 309,
+      "printedPage": 304,
+      "nativeImage": "tb-page-309.png",
+      "solution": "উচ্চ সারফ্যাক্ট্যান্টমাত্রা জলজ প্রাণীর ক্ষতি/ফেনা সৃষ্টি করতে পারে। ফসফেটযুক্ত পণ্য অতিরিক্ত গেলে ইউট্রোফিকেশনে অবদান রাখতে পারে; সব ডিটারজেন্টে ফসফেট থাকে না। উপযুক্ত বর্জ্যশোধন ও পরিমিত ব্যবহার দরকার।",
+      "id": "ssc-chem-ch12-source-07",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "SQ",
+      "number": 3,
+      "text": "প্রসাধনীর pH 4.8 থেকে 5.5 এর মধ্যে হয় কেন? ব্যাখ্যা করো।",
+      "source": "textbook",
+      "pdfPage": 309,
+      "printedPage": 304,
+      "nativeImage": "tb-page-309.png",
+      "solution": "বইটি ত্বক-সংস্পর্শী অনেক প্রসাধনীর জন্য ত্বকের মৃদু অম্লীয় পৃষ্ঠের সঙ্গে সামঞ্জস্যের একটি উদাহরণ দিয়েছে। সব প্রসাধনী/সব ত্বক/অঙ্গের জন্য একই বাধ্যতামূলক pH নয়। উপযোগিতা ফর্মুলেশন, সহনশীলতা ও পণ্যনির্দেশের উপরও নির্ভর করে; pH একাই নিরাপত্তার প্রমাণ নয়।",
+      "id": "ssc-chem-ch12-source-08",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys.",
+      "sourceFileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091"
+    },
+    {
+      "type": "MCQ",
+      "number": "haber-catalyst",
+      "text": "হেবার প্রণালীতে NH₃ উৎপাদনে প্রভাবক কোনটি?",
+      "source": "satt",
+      "url": "https://sattacademy.com/mcq/হেবার-প্রণালীতে-nh3-উৎপাদনে-প্রভাবক-কোনটি",
+      "options": [
+        "Fe",
+        "Ni",
+        "Cu",
+        "Zn"
+      ],
+      "correct": "A",
+      "solution": "হেবার-বশ পদ্ধতির প্রচলিত পাঠ্যমডেলে উপযুক্ত লৌহভিত্তিক অনুঘটক ব্যবহৃত হয়। অনুঘটক গতিবৃদ্ধি করে, সাম্যের অবস্থান নিজে বদলায় না।",
+      "observedBoard": {
+        "board": "mymensingh",
+        "examYear": 2023,
+        "shortTag": "[ম. বো. ’২৩]",
+        "verification": "Website-displayed attribution; original board paper not cross-checked."
+      },
+      "readLocation": "Chapter12 MCQ listing chunk0",
+      "id": "ssc-chem-ch12-source-09",
+      "answerOrigin": "ASSISTANT_AUTHORED_NOT_SOURCE_KEY",
+      "teacherApproved": false,
+      "sourceQuestionVerbatim": false,
+      "formatting": "Unicode chemistry/punctuation/line-wrap normalized; original pixels authoritative. Practice solutions are not source keys."
+    }
+  ]
+}

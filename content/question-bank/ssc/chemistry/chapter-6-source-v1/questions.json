@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "source-only-intake-v1",
+  "status": "PARTIAL_VERIFIED_COLLECTION_NOT_IMPORTABLE",
+  "category": "Class 9",
+  "subject": "রসায়ন",
+  "topic": "৬ষ্ঠ অধ্যায়: মোলের ধারণা ও রাসায়নিক গণনা",
+  "requested": {
+    "MCQ": 500,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "verifiedCounts": {
+    "MCQ": 6,
+    "CQ": 2,
+    "SQ": 3
+  },
+  "remainingAgainstTarget": {
+    "MCQ": 494,
+    "CQ": 198,
+    "SQ": 97
+  },
+  "ownQuestionsCreated": 0,
+  "availableSourceTotalEstablished": false,
+  "scope": "Only original textbook end-of-chapter questions on printed140–141 / PDF145–146 counted; not all source files or the entire chapter.",
+  "textFidelity": "Native question image is authoritative. Editable text preserves wording, quantities and choices; line breaks/spacing and Unicode chemical subscripts/superscripts are transcription formatting, not byte-identical PDF text.",
+  "websiteImported": false,
+  "published": false,
+  "teacherApproved": false,
+  "strictApplicationUploaderCompatible": false,
+  "incompatibilityReason": "Source pages do not supply correct-answer keys or marks; the application requires them. No answers/marks were invented and no validation was relaxed.",
+  "items": [
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-1",
+      "type": "MCQ",
+      "sourceQuestionNumber": 1,
+      "text": "প্রমাণ অবস্থায় 2 গ্রাম হাইড্রোজেন গ্যাসের আয়তন কত লিটার?",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-1.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "2.24",
+        "খ": "11.2",
+        "গ": "22.4",
+        "ঘ": "44.8"
+      },
+      "correct": null
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-2",
+      "type": "MCQ",
+      "sourceQuestionNumber": 2,
+      "text": "নিচের কোনটি ক্যালসিয়াম ফসফেটের সংকেত?",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-2.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "CaPO₄",
+        "খ": "Ca(PO₄)₂",
+        "গ": "Ca₂(PO₄)₃",
+        "ঘ": "Ca₃(PO₄)₂"
+      },
+      "correct": null
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-3",
+      "type": "MCQ",
+      "sourceQuestionNumber": 3,
+      "text": "উদ্দীপকে ব্যবহৃত ক্লোরিন পরমাণুর সংখ্যা কতটি?",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-3.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "1.27×10²⁴",
+        "খ": "2.54×10²⁴",
+        "গ": "6.02×10²³",
+        "ঘ": "6.36×10²³"
+      },
+      "correct": null,
+      "stimulusText": "নিচের উদ্দীপকের আলোকে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:\n5 গ্রাম হাইড্রোজেন গ্যাসকে 75 গ্রাম ক্লোরিন গ্যাসের মধ্যে চালনা করা হলো।",
+      "stimulusImages": [
+        "/question-bank/ssc-chemistry-ch6-source-v1/textbook-shared-3-4.png"
+      ],
+      "sharedStimulusGroup": "textbook-mcq-3-4"
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-4",
+      "type": "MCQ",
+      "sourceQuestionNumber": 4,
+      "text": "উদ্দীপকের বিক্রিয়ায় অবশিষ্ট থাকে–",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-4.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "1.44 মোল H₂",
+        "খ": "1.44 মোল Cl₂",
+        "গ": "2.89 মোল H₂",
+        "ঘ": "2.89 মোল Cl₂"
+      },
+      "correct": null,
+      "stimulusText": "নিচের উদ্দীপকের আলোকে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:\n5 গ্রাম হাইড্রোজেন গ্যাসকে 75 গ্রাম ক্লোরিন গ্যাসের মধ্যে চালনা করা হলো।",
+      "stimulusImages": [
+        "/question-bank/ssc-chemistry-ch6-source-v1/textbook-shared-3-4.png"
+      ],
+      "sharedStimulusGroup": "textbook-mcq-3-4"
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-5",
+      "type": "MCQ",
+      "sourceQuestionNumber": 5,
+      "text": "CO₂ এর 2×10²³ টি অণুর ভর কত?",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-5.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "44g",
+        "খ": "22g",
+        "গ": "14.6g",
+        "ঘ": "12g"
+      },
+      "correct": null
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-mcq-6",
+      "type": "MCQ",
+      "sourceQuestionNumber": 6,
+      "text": "10g CaCO₃ এ কয়টি অণু আছে?",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-mcq-6.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 140,
+        "pdfPage": 145,
+        "section": "বহুনির্বাচনি প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "options": {
+        "ক": "6.02×10²³টি",
+        "খ": "6.02×10²²টি",
+        "গ": "6.02×10²¹টি",
+        "ঘ": "2.58×10²²টি"
+      },
+      "correct": null
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-cq-1",
+      "type": "CQ",
+      "sourceQuestionNumber": 1,
+      "text": "",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-cq-1.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 141,
+        "pdfPage": 146,
+        "section": "সৃজনশীল প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "stimulusText": null,
+      "stimulusImages": [
+        "/question-bank/ssc-chemistry-ch6-source-v1/textbook-cq-1-diagram.png"
+      ],
+      "parts": [
+        {
+          "label": "ক",
+          "question": "মোল কাকে বলে?",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "খ",
+          "question": "স্থূল সংকেত ও আণবিক সংকেত উদাহরণসহ লেখো।",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "গ",
+          "question": "উদ্দীপকের দ্রবদ্বয়কে একত্রে মিশ্রিত করলে যে লবণ পাওয়া যায় তার সংযুতি নির্ণয় করে দেখাও।",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের দ্রবণ দুটির মোলারিটি সমান হবে কিনা তার গাণিতিক যুক্তি দাও।",
+          "marks": null,
+          "answer": null
+        }
+      ],
+      "sourceNotes": [
+        "উদ্দীপকটি মূল বইয়ে ছবি; লেবেলসহ সেই ছবিই রাখা হয়েছে।",
+        "মূল মুদ্রণে গ অংশে “দ্রবদ্বয়কে” আছে; নীরবে “দ্রবণদ্বয়কে” করা হয়নি।",
+        "এই পাতায় উপপ্রশ্নের নম্বরমান ছাপা নেই; ১/২/৩/৪ অনুমান করে বসানো হয়নি।"
+      ]
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-cq-2",
+      "type": "CQ",
+      "sourceQuestionNumber": 2,
+      "text": "10 গ্রাম CaCO₃ প্রস্তুত করার লক্ষ্যে 4.4 গ্রাম কার্বন ডাইঅক্সাইড ও 5 গ্রাম ক্যালসিয়াম অক্সাইড মিশ্রিত করা হলো। বিক্রিয়ায় প্রত্যাশিত উৎপাদ পাওয়া গেল না।",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-cq-2.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 141,
+        "pdfPage": 146,
+        "section": "সৃজনশীল প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      },
+      "parts": [
+        {
+          "label": "ক",
+          "question": "রাসায়নিক সমীকরণ কাকে বলে?",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "খ",
+          "question": "কার্বন ডাইঅক্সাইড এর মোলার আয়তন-এর ব্যাখ্যা করো।",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "গ",
+          "question": "বিক্রিয়ায় কত মোল কার্বন ডাইঅক্সাইড ব্যবহার করা হয়েছিল তা নির্ণয় করে দেখাও।",
+          "marks": null,
+          "answer": null
+        },
+        {
+          "label": "ঘ",
+          "question": "উদ্দীপকের বিক্রিয়ায় প্রত্যাশিত উৎপাদের পরিমাণ কম হওয়ার যৌক্তিক ব্যাখ্যা দাও।",
+          "marks": null,
+          "answer": null
+        }
+      ]
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-sq-1",
+      "type": "SQ",
+      "sourceQuestionNumber": 1,
+      "text": "Na₂CO₃ এর সেমিমোলার দ্রবণ ব্যাখ্যা করো।",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-sq-1.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 141,
+        "pdfPage": 146,
+        "section": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      }
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-sq-2",
+      "type": "SQ",
+      "sourceQuestionNumber": 2,
+      "text": "দ্রবণের মোলারিটি দ্রবের মোল সংখ্যার সাথে সম্পর্কিত ব্যাখ্যা করো।",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-sq-2.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 141,
+        "pdfPage": 146,
+        "section": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      }
+    },
+    {
+      "id": "ssc-chemistry-ch6-source-textbook-sq-3",
+      "type": "SQ",
+      "sourceQuestionNumber": 3,
+      "text": "H₂SO₄ এর 100 মিলিলিটার ডেসিমোলার দ্রবণ কীভাবে তৈরি করা যায়? বর্ণনা করো।",
+      "questionImage": "/question-bank/ssc-chemistry-ch6-source-v1/textbook-sq-3.png",
+      "originalPractice": false,
+      "adapted": false,
+      "variant": false,
+      "sourceVerbatim": true,
+      "contentReview": "MANUALLY_COMPARED_WITH_ORIGINAL_PDF_IMAGE",
+      "teacherApproved": false,
+      "answer": null,
+      "answerOrigin": "NOT_PRESENT_ON_INSPECTED_QUESTION_PAGES",
+      "marks": null,
+      "source": {
+        "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+        "fileName": "২০২৬ — রসায়ন.pdf",
+        "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+        "printedPage": 141,
+        "pdfPage": 146,
+        "section": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+        "board": null,
+        "examYear": null,
+        "school": null,
+        "shortAttribution": null
+      }
+    }
+  ]
+}

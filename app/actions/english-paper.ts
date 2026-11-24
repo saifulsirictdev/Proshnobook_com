@@ -4,6 +4,7 @@ import {
   EnglishProviderError,
   englishProviderMessage,
 } from "@/lib/english/provider-error";
+import { loadEnglishStock, englishBookComplete } from "@/lib/english/stock";
 import { englishSubset, findEnglishBankParts } from "@/lib/english/bank";
 import { validateEnglishOutput } from "@/lib/english/generation";
 import { recoverEnglishTasks } from "@/lib/english/recovery";
@@ -129,6 +130,14 @@ export async function generateEnglishPaper(raw: unknown) {
       });
       return { ok: true as const, key };
     }
+    // Re-read after the generation lease, before ANY quota/provider call. This
+    // also closes direct-action and import-between-auto-entry-and-generation paths.
+    const fullBookStock = await loadEnglishStock(request.selection.grade, (prefix, after) =>
+      db.setting.findMany({where: {key: {startsWith: prefix,...(after ? {gt: after} : {})}},
+        orderBy: {key: "asc"},take: 100}), request.selection.paper);
+    if (englishBookComplete(fullBookStock, request.selection.grade, request.selection.paper))
+      return {ok: false as const, databaseOnly: true as const,
+        error: "এই বই/পত্রের পূর্ণ মডেল ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত পাঠ্যাংশ/লেখার বিষয় বদলান বা প্রশ্ন আইটেম থেকে মডেল নিন।"};
     if (!process.env.DEEPSEEK_API_KEY)
       return {
         ok: false as const,

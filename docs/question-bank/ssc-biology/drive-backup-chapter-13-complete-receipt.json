@@ -1,0 +1,38 @@
+{
+  "archive": ".cache/ssc-biology-chapter-13-complete-full-source-v1.zip",
+  "bytes": 61636351,
+  "md5": "11a20ad72102b096c46e6370e180bc74",
+  "sha256": "c39088ddcf0931b6db799757877cee5494f47f351ed9f21cbf4dc635d75d0dc8",
+  "payloadFiles": 8103,
+  "zipCRCAndEveryPayloadSHA256Verified": true,
+  "driveId": "18nFkxzB-CXxYUrV3ZvnukoIY0W6SsDnn",
+  "driveURL": "https://drive.google.com/file/d/18nFkxzB-CXxYUrV3ZvnukoIY0W6SsDnn/view",
+  "independentRemoteGetVerified": true,
+  "remoteSizeMatches": true,
+  "remoteMD5Matches": true,
+  "parent": "1VzEQ1ZfNNLE2ZYzEXdpS0azgiA4E8_Y5",
+  "parentVerified": true,
+  "notTrashed": true,
+  "biologyCanonicalItems": 4160,
+  "chapter13": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70,
+    "originalFigures": 4,
+    "focusedBiologyTestsPassed": 112
+  },
+  "remainingChapter14": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "newBookStockRule": {
+    "sourceTested": true,
+    "focusedAutoModelEnglishTestsPassed": 156,
+    "typecheck": "PASS",
+    "deployed": false
+  },
+  "biologyImportExecuted": false,
+  "biologyApprovalExecuted": false,
+  "scope": "Full working source/content and focused evidence. Not a database backup; credentials, dependencies and build output excluded. Receipt is created after independent remote metadata verification and is not inside its own archive."
+}

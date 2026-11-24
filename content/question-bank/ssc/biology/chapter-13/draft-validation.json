@@ -1,0 +1,42 @@
+{
+  "chapter": 13,
+  "topic": "১৩শ অধ্যায়: জীবের পরিবেশ",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 180652,
+      "sha256": "3718f0eb49ebab61b0962be84707ef54eab7d529a46e77c5ba5fd445080718ef"
+    },
+    "rebuild-cq.json": {
+      "bytes": 156166,
+      "sha256": "5c37988ffb300929f209081c2ff84d5f098525f2200685feecffd7b569ad0c20"
+    },
+    "rebuild-sq.json": {
+      "bytes": 57263,
+      "sha256": "012d419ed572c39bc64895357b557d64f637762aeb465d347eae778a88013791"
+    }
+  }
+}

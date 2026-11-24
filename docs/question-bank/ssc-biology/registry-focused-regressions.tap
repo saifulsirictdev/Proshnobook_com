@@ -1,0 +1,29 @@
+TAP version 13
+# REGISTRY_TOTALS 319 31606
+# Subtest: Class 6 science selection shows all 14 chapters and chapter narrowing preserves totals
+ok 1 - Class 6 science selection shows all 14 chapters and chapter narrowing preserves totals
+  ---
+  duration_ms: 1249.335942
+  type: 'test'
+  ...
+# Subtest: whole-selection preview/save reuses authenticated per-batch actions with digest, consent and partial retry
+ok 2 - whole-selection preview/save reuses authenticated per-batch actions with digest, consent and partial retry
+  ---
+  duration_ms: 0.450119
+  type: 'test'
+  ...
+# Subtest: Biology registry adds exactly45 cards and4480 answers without changing Physics/Chemistry totals
+ok 3 - Biology registry adds exactly45 cards and4480 answers without changing Physics/Chemistry totals
+  ---
+  duration_ms: 2079.92103
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 3
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4721.466172

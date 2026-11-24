@@ -15,7 +15,9 @@ headerMod._compile(
   }).outputText,
   "paper-header.js",
 );
+const syllabusMod = new Module("syllabus-schema",module);syllabusMod.paths=module.paths;syllabusMod.require=require;syllabusMod._compile(ts.transpileModule(fs.readFileSync("lib/auto-model-syllabus-schema.ts","utf8"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,"syllabus-schema.js");
 mod.require = (name) =>
+  name === "./auto-model-syllabus-schema" ? syllabusMod.exports :
   name === "@/lib/paper-math"
     ? require("./helpers/paper-math.cjs")
     : name === "@/lib/paper-header"

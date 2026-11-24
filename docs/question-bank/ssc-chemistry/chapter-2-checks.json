@@ -1,0 +1,39 @@
+{
+  "status": "DRAFT_FOCUSED_CHECKS_PASSED_NOT_PUBLISHED",
+  "chapter": "২য় অধ্যায়: পদার্থের অবস্থা",
+  "requested": {"MCQ": 350, "CQ": 50, "SQ": 70},
+  "actual": {"MCQ": 350, "CQ": 50, "SQ": 70},
+  "total": 470,
+  "sourceScope": "Complete chapter 2 visually inspected: printed pp17–34 / PDF pp22–39 of the previously downloaded 310-page textbook; not whole-book reading or successful OCR",
+  "sourceQuestionVerbatim": false,
+  "teacherCertified": false,
+  "officialExamYearVerified": false,
+  "chemistryExamBlueprintVerified": false,
+  "chemistryAutoModelEnabled": false,
+  "realDatabaseAccess": false,
+  "realApprovalMutation": false,
+  "deployed": false,
+  "focusedTests": {
+    "command": "NODE_PATH=$PWD/.cache/chemistry-tools/node_modules node --test tests/ssc-chemistry-ch2.test.cjs tests/ssc-chemistry-ch1.test.cjs tests/question-json-upload.test.cjs tests/paper-math.test.cjs",
+    "passed": 29,
+    "failed": 0,
+    "scope": ["exact chapter-2 count, real strict uploader and normalized stem uniqueness", "correct answer-key distribution 88/88/87/87", "CQ marks 1/2/3/4 and wrong-scope/choice/mark rejection", "all 358 image-bearing records and 42 assets", "exact origin/path/file/model-number allowlist and SVG content safety", "real MathText React server rendering with local assets and no added captions", "independent calculations for all 14 heating graphs and all 14 diffusion models", "canonical per-item file/row coordinates and all payload/asset hashes", "reproducible generators for both chapters with chapter-1 content unchanged", "scientific exception and model-approximation caveats", "Chemistry subject policy remains blocked", "real complete registry: 202 batches / 19956 records, exactly 470 new chapter-2 drafts", "ADMIN consent/Pending-only/dedup/replay behavior using mock DB"]
+  },
+  "fullRepositorySuiteRunThisTask": false,
+  "fullTypecheckOrProductionBuildRun": false,
+  "interactiveBrowserOrPrintTestRun": false,
+  "diagramReview": {
+    "nativeCrops": 14,
+    "originalSVGModels": 28,
+    "illustratedRecords": 358,
+    "nativeContactSheet": "chapter-2-diagram-review.png",
+    "modelEndpointContactSheet": "chapter-2-model-review.png",
+    "contactSheetsVisuallyInspected": true,
+    "allNumericModelVariantsIndependentlyChecked": true,
+    "meaningfulInFigureLabelsRetained": true,
+    "surroundingSourceCaptionsNotAdded": true
+  },
+  "localDraftReview": "chapter-2-review.html",
+  "variantDisclosure": "70 conceptual MCQ +14 heating models x10 probes +14 approximate diffusion models x10 probes. All model data hypothetical, not 470 independent concepts/board questions or exact Graham-law data.",
+  "workflowBoundary": "Prepared-library registration only; no real Chemistry import, approval, publication, deployment or Physics caption changes. Previous Chemistry/Physics question content remains unchanged."
+}

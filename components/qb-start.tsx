@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { autoModelSetupSummary } from "@/lib/auto-model-syllabus";
 import { autoModelBlueprint, isAcademicCategory, AUTO_MODEL_NOTICE } from "@/lib/auto-model";
 import { ACADEMIC_SUBJECT_GROUPS, sscGroupSubjects, hscGroupSubjects } from "@/lib/academic-subject-groups";
 import { QUESTION_TYPE_OPTIONS } from "@/lib/question-type-options";
@@ -90,7 +91,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
   const isHsc = category === "HSC";
   const hasSubjectGroups = isSsc || isHsc;
   const academic = isAcademicCategory(category) && !/english|ইংরেজি/i.test(subject) && !append;
-  const modelPlan = autoModelBlueprint(category, subject, modelVariant);
+  const modelPlan = autoModelBlueprint(category, subject, modelVariant) ?? autoModelSetupSummary(category, subject, modelVariant);
 
   const selectedClassData = useMemo(() => findClassData(category), [category]);
 
@@ -342,7 +343,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         </>}
         {englishMode === "full" && <p className="rounded-lg bg-indigo-50 p-3 text-sm">
           Class {english.grade} · English {english.paper === 1 ? "1st" : "2nd"} Paper · {english.blueprint.total} marks।
-          {english.paper === 1 ? "অনুমোদিত database থেকে সব প্রশ্ন ও উত্তরসহ পূর্ণ মডেল নেওয়া হবে। ঘাটতি থাকলে জানাবে; AI চলবে না। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।" : "সব অংশ স্বয়ংক্রিয়ভাবে বেছে প্রশ্নভান্ডার থেকে প্রশ্ন নেওয়া হবে; না থাকলে AI তৈরি করবে (বিদ্যমান quota প্রযোজ্য)। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।"}
+          {english.paper === 1 ? "ডাটাবেজের উপযুক্ত প্রশ্ন আগে নেওয়া হবে; ঘাটতি থাকলে নির্ভরযোগ্য textbook source অনুযায়ী শুধু অনুপস্থিত অংশ AI তৈরি করবে। আগে প্রশ্ন ও উত্তর যাচাই করবেন, তারপর Set-up।" : "সব অংশ স্বয়ংক্রিয়ভাবে বেছে প্রশ্নভান্ডার থেকে প্রশ্ন নেওয়া হবে; না থাকলে AI তৈরি করবে (বিদ্যমান quota প্রযোজ্য)। আগে প্রশ্ন দেখবেন/বদলাবেন, তারপর Set-up।"}
           এটি practice template; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন।
         </p>}
       </>}
@@ -354,7 +355,7 @@ export default function QbStart({ pairs }: { pairs: Pair[] }) {
         {selectionMode==="auto" && <>
           <p className="text-sm font-semibold text-slate-700">{hasSubjectGroups ? "৫" : "৪"} · মডেলের ধরন</p>
           <div className="grid grid-cols-2 gap-3">{[{id:"MCQ",title:"MCQ",desc:"নৈর্ব্যক্তিক"},{id:"CQ",title:"CQ",desc:"সৃজনশীল / লিখিত"}].map(o=><button type="button" key={o.id} aria-pressed={modelVariant===o.id} onClick={()=>setModelVariant(o.id)} className={`rounded-lg border p-3 text-left ${modelVariant===o.id?"border-emerald-600 bg-emerald-100 text-emerald-950":"border-slate-200 bg-white"}`}><b>{o.title}</b><span className="block text-xs">{o.desc}</span></button>)}</div>
-          {modelPlan ? <div className="rounded-lg border border-emerald-200 bg-white p-3 text-sm"><h3 className="font-bold text-emerald-900">{modelPlan.title}</h3><p className="my-2">পূর্ণমান {modelPlan.totalMarks} · সময় {modelPlan.minutes}</p><p>{modelPlan.offered}</p><p className="mt-2">{modelPlan.instructions}</p><p className="mt-3 text-xs text-slate-500">{AUTO_MODEL_NOTICE}</p></div> : modelVariant && <p role="status" className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950">এই শ্রেণি ও বিষয়ের নিজস্ব পূর্ণ মডেল কাঠামো এখনও প্রস্তুত নয়। গণিতের কাঠামো এখানে ব্যবহার করা হবে না। আপাতত Chapter থেকে প্রশ্ন বাছুন।</p>}
+          {modelPlan ? <div className="rounded-lg border border-emerald-200 bg-white p-3 text-sm"><h3 className="font-bold text-emerald-900">{modelPlan.title}</h3><p className="my-2">পূর্ণমান {modelPlan.totalMarks} · সময় {modelPlan.minutes}</p><p>{modelPlan.offered}</p>{subject === "পদার্থবিজ্ঞান" && <p className="mt-2 text-xs text-slate-600">আপনার নির্ধারিত অধ্যায়-কোটা ও পূর্ণ ১৪ অধ্যায়ের অনুশীলনভিত্তিক কাঠামো। MCQ-তে প্রতি অধ্যায় ১–২টি একটি ভারসাম্যপূর্ণ বাছাই-পদ্ধতি; সরকারি অধ্যায়-কোটা নয়।</p>}{subject === "রসায়ন" && <p className="mt-2 text-xs text-slate-600">আপনার নির্ধারিত অনুশীলননীতি: CQ ও SQ—প্রতিটি অংশে ৩, ৪, ৫, ৬, ৭ ও ১১ অধ্যায় থেকে একটি করে, বাকি ১, ২, ৮, ৯, ১০ ও ১২ অধ্যায়ের যেকোনো একটি থেকে আরও একটি। MCQ-তে পূর্ণ ১২ অধ্যায়ের ভারসাম্যপূর্ণ ঘূর্ণন; প্রতি অধ্যায় সর্বোচ্চ ৩টি। এটি সরকারি অধ্যায়-কোটা নয়। শুধু অনুমোদিত প্রশ্ন পর্যাপ্ত থাকলেই মডেল তৈরি হবে।</p>}<p className="mt-2">{modelPlan.instructions}</p><p className="mt-3 text-xs text-slate-500">{AUTO_MODEL_NOTICE}</p></div> : modelVariant && <p role="status" className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950">এই শ্রেণি ও বিষয়ের নিজস্ব পূর্ণ মডেল কাঠামো এখনও প্রস্তুত নয়। অন্য বিষয়ের কাঠামো এখানে ব্যবহার করা হবে না। আপাতত Chapter থেকে প্রশ্ন বাছুন।</p>}
         </>}
       </fieldset>}
       {(!english || append) && (!academic || selectionMode === "chapter") && <>

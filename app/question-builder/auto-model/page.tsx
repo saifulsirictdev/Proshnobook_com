@@ -1,7 +1,7 @@
 import { auth } from "@/auth";
 import { redirect, notFound } from "next/navigation";
-import AutoModelPreparation from "@/components/auto-model-preparation";
-import { autoModelBlueprint } from "@/lib/auto-model";
+import AutoModelSetup from "@/components/auto-model-setup";
+import { autoModelSetupSummary } from "@/lib/auto-model-syllabus";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Auto Model — প্রশ্নপত্র" };
 export default async function AutoModelPage({
@@ -21,12 +21,12 @@ export default async function AutoModelPage({
     typeof p.category !== "string" ||
     typeof p.subject !== "string" ||
     typeof p.variant !== "string" ||
-    !autoModelBlueprint(p.category, p.subject, p.variant)
+    !autoModelSetupSummary(p.category, p.subject, p.variant)
   )
     notFound();
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
-      <AutoModelPreparation
+      <AutoModelSetup
         category={p.category}
         subject={p.subject}
         variant={p.variant as "MCQ" | "CQ"}

@@ -41,7 +41,7 @@ test('paid builder API exposes provenance separately, never as a fifth MCQ optio
   '@/auth':{auth:async()=>({user:{id:'owner',role:'TEACHER'}})},
   '@/lib/wallet':{requirePaidQuestions:async()=>calls.push('paid')},
   '@/lib/paper-generation':{visibleQuestions:()=>({approved:true})},
-  '@/lib/db':{db:{question:{findMany:async()=>{calls.push('read');return[{id:'q',text:'Question',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()]},source:'Manual',approved:true}];}}}},
+  '@/lib/db':{db:{question:{findMany:async()=>{calls.push('read');return[{id:'q',text:'Question',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()],_authoring:{kind:'authored-practice',teacherCertified:false}},source:'Manual',approved:true}];}}}},
   'next/server':{NextResponse:{json:(data)=>data}},
  });
  const result=await api.POST({json:async()=>({ids:['q']})});
@@ -56,10 +56,18 @@ test('real math samples are school-attributed only with exact question locators 
 test('DB exam generation ignores reserved provenance instead of discarding a valid MCQ or adding a fifth option',async()=>{
  const api=load('app/api/generate-exam/route.ts',{
   '@/auth':{auth:async()=>({user:{id:'student',role:'STUDENT'}})},
-  '@/lib/db':{db:{question:{findMany:async()=>[{text:'2+2?',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()]},explanation:'4'}]},apiUsage:{upsert:()=>{throw Error('DB mode must not consume provider quota')}}}},
+  '@/lib/db':{db:{question:{findMany:async()=>[{text:'2+2?',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()],_authoring:{kind:'authored-practice',teacherCertified:false}},explanation:'4'}]},apiUsage:{upsert:()=>{throw Error('DB mode must not consume provider quota')}}}},
   'next/server':{NextResponse:{json:(data)=>data}},
  });
  const result=await api.POST({json:async()=>({mode:'DB',type:'MCQ',className:'Class 10',subject:'গণিত',count:1})});
  assert.equal(result.success,true);assert.equal(result.questions.length,1);
  assert.deepEqual(result.questions[0].options,['4','3','5','6']);assert.equal(result.questions[0].correctAnswer,0);
+});
+
+test('quiz, saved test, builder and admin strip internal authoring metadata as well as provenance',()=>{
+ for(const file of ['app/quiz/page.tsx','app/tests/[id]/page.tsx','app/admin/questions/page.tsx']){
+  const source=fs.readFileSync(file,'utf8');
+  assert.match(source,/key !== "_provenance" && key !== "_authoring"/,file);
+ }
+ assert.match(fs.readFileSync('app/question-builder/create/page.tsx','utf8'),/const \{ _provenance, _authoring, \.\.\.opts \}/);
 });

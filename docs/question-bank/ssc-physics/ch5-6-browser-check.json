@@ -1,0 +1,41 @@
+{
+  "scope": "Offline review HTML only; not live-site or DB verification",
+  "checks": [
+    {
+      "chapter": 5,
+      "width": 1280,
+      "articles": 330,
+      "diagrams": 195,
+      "overflow": false,
+      "font": true,
+      "externalRequests": 0
+    },
+    {
+      "chapter": 5,
+      "width": 390,
+      "articles": 330,
+      "diagrams": 195,
+      "overflow": false,
+      "font": true,
+      "externalRequests": 0
+    },
+    {
+      "chapter": 6,
+      "width": 1280,
+      "articles": 420,
+      "diagrams": 95,
+      "overflow": false,
+      "font": true,
+      "externalRequests": 0
+    },
+    {
+      "chapter": 6,
+      "width": 390,
+      "articles": 420,
+      "diagrams": 95,
+      "overflow": false,
+      "font": true,
+      "externalRequests": 0
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Chapter / Auto Model — first implementation
 
+> **Current update:** Scope/AI-shortfall behavior below is historical. See [Syllabus-scoped all-subject Auto Model](AUTO-MODEL-ALL-SUBJECTS.md) for the new selection, teacher-supplied marks and bank-first/AI-gap behavior.
+
 ## Scope and status
 
 Implemented inside the existing `/question-builder` starter, preserving the existing NCTB/database class and subject lists. Academic non-English selections now choose **Chapter** or **Auto Model**. Auto Model then chooses **MCQ** or **CQ**. Changing class or subject resets both choices. Chapter retains the existing preparation/bank workflow and shared question-type selector. English, Admission, Job, and append-to-an-existing-paper keep their existing workflows.

@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-20",
+  "chapter": 3,
+  "topic": "কোষ বিভাজন",
+  "baseline": "6ffa3c2",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "added": {
+    "MCQ": 170,
+    "CQ": 45,
+    "SQ": 50
+  },
+  "retainedBaselineItemHashes": {
+    "mcq": [
+      "5a974a29f731e610ec36984410fb8279f84cb60c6f9a78fba3437968e6bb98db",
+      "91bef4b0be2bf9c1c0e6a472f03b8732c4879925d0f2acd30883fe5fc94b08bc",
+      "4ff2070417a33f45e818bf390e1ba9575954fb8352b4e85cb13d0cfe9ee2468e",
+      "4ac5f36e68c1899184c9e8c24a51af1cd8044b3f64d5f86879cc80bb74c807b2",
+      "17fa4390ac56ec94c42d47e5dde9a1c39c6f34276a1de354cda75584b9648f5d",
+      "17bfc47359cab702d7104c3d7d46bfd5bc9f47b9277b7f5e28414e7f3ee3c4c3",
+      "53f42ab5370dcdbe19b25c734d6b2a09020a04d08454ce936ff65c1e373bd160",
+      "f541c2ca0cda5aa13309bfdd1071dff0ef088660e6f1fc4d13cd0c7d930c33f5",
+      "a1b8f601afddddeb8e67a01606f285fe2da66cbee827c3329623bf331cecc8f9",
+      "42d1fdd87e91b8a685c4e85ec9e32799f022db4f15d0949dbecb91c50d03a70f",
+      "0c3dfe5b4797bbfb92d719dc295c86f8becd804c9b470a0474b5f155c3869da7",
+      "6e71e88d62e6752c31a5b1190a531088cf2c532ec6761cc6d57d99d9e8843822",
+      "e90a8c008d5099ad98cbc5a54bb7e21a2aa29653ee67aba5c0bb136a8d765643",
+      "84ffeb94edc2df9dac5a94e4f79a4c6ec9df0a3f938bda06e5848d622480d676",
+      "5dd823242e719e6a4784ce37a904ab5344079055acb21abbc9c8cd2f3a6b7ea3",
+      "678d1aeba7342c5b68d2978ad5e1a88df74c47209b170ca331c33ee205c7b037",
+      "fed057fa2b8942a1c1f230889fd67230b56fe50652c8903b3e896c34ab7d4ba1",
+      "e536f332eaad852f029ab5ed0cef0baccfe8a37b4ee0076f2470388d8c855bd2",
+      "feaffba3a977326644448f151647083d8738f0ade66bc184674b8aa971cc5bd1",
+      "8451b122c3aa1dc6fd03a4535adf25f748f52c655bd7cfe3b997bcf816ebaccc",
+      "a806c9c14f7dcb4966210b52a45e4061d3e60d32ec835a7384eafb584f53e97d",
+      "56c0afab5a2a73f7663becc28a2d962ebb85741da81a84f26733d77f3bf0a622",
+      "af6a6877ae4bd0945009a6b82d40a319def60e6f9be8cc8846813445dfbcf1a9",
+      "fc4ce23ef318b7ccab73ff042b0e8f5cb7878d740c9caa4076191d9d3e655081",
+      "924127c4dbca075d9201bf79fbc5200081fdfa2ccfc04d514f7952c4a81d655c",
+      "c1fc2ecc80d5c827236c7072658d745d2be0719bb929cb6344d2124030665f4c",
+      "93da1a012f09a4a1efc63d82df50ae2b632a3cf191ce35a69ff7fbe26671987b",
+      "1304b9f67745caf4a6e863e708e341649ec3916458ed7d8c3e7e61187ec2d740",
+      "433cb748a881898c39fcf76245b403d8e1280b392ee78959a05906e0561a9d24",
+      "238e38d87a8f956b98578d3160ffad2a72141cedc59b8f0366c51c26b6f547b9"
+    ],
+    "cq": [
+      "c36b52b4596a07fc85517388aeb36eb15f731d48d251f37c63858584a3357f15",
+      "8596506c48916659774779d6317df515c6cea73f83d80b4190ab6ca141e5309c",
+      "81f79e63f607b636a45a69521c95c843f84f305a1dc6c1c6a11cd3648ea62342",
+      "e373607afe6c250e47e3b6ccef2638039e19dabc57d1dd62d241ff29987a2165",
+      "70f85f065a71f1e5227e2bd83f005b5544c32f2aacbfd0dd473ea90695ee39b8"
+    ],
+    "sq": [
+      "fd38c80fd26f2e6b20a4b813040df75f95d38581746f893e6279a76d1b6e5e8d",
+      "7e303c0265f0ed3813f9ec751548e59df3aad26700f612db5bc8a57aeff8fc20",
+      "99549dc265941bf1bc113324bc6fd646d740f1dac543f2aa3fd9b3b286f9f9e9",
+      "c94ff01f76215ed12abfebf48a65a9f9eec671a9d33438423176be03e42f9bcb",
+      "cd1688f185bf45f2dd5cca65600a46b5fbf9a445d9cafb0f34c8bf8f47ea25d7",
+      "b86d054879de51d371def8dfaeec3c05adfa19977b505880e65f00b7a125da7b",
+      "bb1a854bc67b33825b7a6c1ba226e50ab5996c1d017aad0c0ad76d93db31810f",
+      "de0d6c9bbecf21d8e07c1d9f8613bfdf7fdf8dff80c34e7aa164caed185f78c8",
+      "f262b5b6efcedc0d1b3f4b6c7865ca6186f93da6f6e4a613bc41107e12dc57cd",
+      "7100556e341287817ea86e9e1b7ffd363f9c483276f6d13ec34289012340eba0",
+      "3cf8bfb471234ba89e44ff25725164fa8bac45a1546aaea4b00ff42036ee7bb1",
+      "9b92de521bee63580ce0d73030dfe602d8d7e2dce6b7732573e4d7e6eda18bbb",
+      "ef9ada8c8c95954bd0712c3edfdff5eb877249c2a98c960a215ee0ba2dbc9dcf",
+      "11ce5617cf8527b85938c8fa5b3c6a45f25a3d25d137b7e7b1eb463530f63cec",
+      "616b2d1862a0324cbf50e37c875904168c73f6e004a1151090244ba19b9c125b",
+      "8001fffdf9f90448d4f316807ef3c43846809a525f18c8b74ff74518f7e64c5f",
+      "52483f163cff01359164e3e78db3adb95cb126e27b241c14fd986597beddd068",
+      "2485ff35efcab76823a1cd92ff3382a0fb4c84affacfe3285342d6189a1febf5",
+      "c3fdf1f8ec0e7fe38e4241d049a6215a4525da1023076ee8ca4b66793f83dc3f",
+      "4b51e25cc8c79d2e1ef9dff41647ebbbf6ea0c8da53becc55a29e1ee57ae0704"
+    ]
+  },
+  "baseline55LedgerEntriesRetained": true,
+  "unchangedFiles": {
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6",
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/questions.md": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22",
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-1/validation.json": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce",
+    "content/question-bank/ssc/biology/chapter-2/assets/mitochondrion.svg": "dbe50c47f46bf1e957547c6f1ed404e3af72bbbda49b36f3aa5238d632c93032",
+    "content/question-bank/ssc/biology/chapter-2/assets/neuron.svg": "5ed16494d4cc93b62cdb96a8607db8261eaae0de8643949bb3cc47edbc767ec2",
+    "content/question-bank/ssc/biology/chapter-2/assets/plant-cell.svg": "bdd2207c21a39db7739a404d1d5f0933ff1fd448eb859790cffa05e3b4eecea9",
+    "content/question-bank/ssc/biology/chapter-2/draft-validation.json": "e177f6414c9cb32d8a8a4c7eb60558e0e85a71335d96509e8ff06d953402991f",
+    "content/question-bank/ssc/biology/chapter-2/questions.md": "66db306b2c4789340f8e9d5a4d6c8bcb2478e4a3be6733b56b973dc00d4b729b",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea",
+    "content/question-bank/ssc/biology/chapter-2/source-ledger.json": "1e4f438a3d808313984ec2768d2e7aaf1a3e113550b91391210babfdbd771a3b",
+    "content/question-bank/ssc/biology/chapter-4/draft-validation.json": "b96bbcacf0b821d7a05dc599ab1cbcaf003dbe34ed1631a301529b8a2f13ff37",
+    "content/question-bank/ssc/biology/chapter-4/questions.md": "f229d92c6507871e5504f5f03d3bf9579a2ad9968b1de8fb6a2768f71cda6e47",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "0223246cb2e332c27d725860d8735d87f885ea995ec459c47d40f24aab226817",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "bd10d77efe049eea7d95ce44f84a903f6a2541931e47e93d4f5d5aff4773c99b",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "e983e76d0534c773a1847833390b4348c1af51790401cba5a7f1e4a65b3cfa53",
+    "content/question-bank/ssc/biology/chapter-4/source-ledger.json": "28056dac36a8eb43237ba221e1c43ff5e9a52da640ecfa88dac1e58a943d1573",
+    "content/question-bank/ssc/biology/chapter-5/draft-validation.json": "abdf3b8627f314bd5c0c133d1bc5b262a462f84a9fa578dde24ddbd0ae12e878",
+    "content/question-bank/ssc/biology/chapter-5/questions.md": "5e2f71bf9837eb7cabce3228e5aee9d81387510fac040ead637b9f6212d1ce32",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": "45623a8deda349b21a2c80d3bc8909df098b543ca58ad6865b16e58d52c49620",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": "6ae8e1a8e0b069df426c7f428b0437e71a05f76d84cbc93fbf7b95a69a635fc8",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": "c6313f93ac2c9ea22777decd7a71eec8f5a2ab1bc32c218bf8247fe8e988a980",
+    "content/question-bank/ssc/biology/chapter-5/source-ledger.json": "1bce94a588aad30480237a69afe0d3e56219c652722e3518aee53bfba63aabf6",
+    "docs/question-bank/ssc-biology/chapter-1.html": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae",
+    "docs/question-bank/ssc-biology/chapter-2.html": "c7a10f24d123137c2070f6a7b2f2081eda3e822afdb05f2ae155f39584833aae"
+  },
+  "sourceChecks": [
+    {
+      "url": "https://www.biologybd.com/9t3.html",
+      "chunksRead": [
+        0,
+        1,
+        2
+      ],
+      "purpose": "Secondary chapter text scope and misconceptions; no source exercise or diagram copied."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle",
+      "chunksRead": [
+        0,
+        2,
+        3
+      ],
+      "purpose": "DNA replication versus condensation; mitotic phases; Golgi vesicles in cell plate; G0; snapshot counting limitations."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis",
+      "chunksRead": [
+        0,
+        2,
+        3
+      ],
+      "purpose": "Synapsis, non-sister crossing over, independent assortment, haploid post-meiosis-I cells and absence of second S phase."
+    }
+  ],
+  "officialTextbookFullyRead": false,
+  "diagrams": {
+    "origin": "original_editorial_diagram",
+    "files": [
+      "mitotic-metaphase.svg",
+      "mitotic-anaphase.svg",
+      "meiotic-anaphase.svg"
+    ],
+    "bengaliWrittenEquivalents": true,
+    "renderedLayoutVisuallyChecked": true,
+    "selectedStructuresOnly": true,
+    "productionIntegration": false
+  },
+  "lexicalScreen": {
+    "method": "Same-type whitespace word-bigram Jaccard",
+    "threshold": 0.4,
+    "totalCandidates": 239,
+    "inheritedOnlyCandidates": 238,
+    "newInvolvingCandidates": [
+      {
+        "kind": "mcq",
+        "indices": [
+          129,
+          168
+        ],
+        "jaccard": 0.4,
+        "involvesNew": true,
+        "editorialDisposition": "False lexical match: metaphase plate is an equatorial alignment plane; metastasis is cancer spread. Shared definition-question wording does not make these the same objective. Independent semantic review remains open."
+      }
+    ],
+    "independentSemanticReview": false,
+    "limitations": "Stock wording in inherited concept probes raises matches; related objectives recur across question types. This heuristic and editorial screen do not certify semantic uniqueness."
+  },
+  "technicalTests": 36,
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "approved": false,
+  "published": false,
+  "websiteImported": false,
+  "limitations": [
+    "Mitotic index, checkpoint details, G0, nondisjunction, ploidy anomalies and 2^n calculations include enrichment; official SSC scope is not independently certified.",
+    "Distractor plausibility and higher-order CQ depth need expert review.",
+    "Counts, syntax, answer retention and rendering tests do not certify biological content.",
+    "Some concepts intentionally recur across MCQ/SQ/CQ with different reasoning demands."
+  ]
+}
