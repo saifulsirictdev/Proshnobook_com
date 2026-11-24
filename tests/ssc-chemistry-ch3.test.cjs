@@ -1,3 +1,4 @@
+// Historical non-Biology registry scope; full current totals are checked in prepared-library.test.cjs.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),Module=require('node:module'),{createHash}=require('node:crypto'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.React}}).outputText,file);return m.exports;}
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),root='content/question-bank/ssc/chemistry/chapter-3/';
@@ -5,7 +6,7 @@ const catalog=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb
 const upload=load('lib/question-json-import.ts',{'./nctb-data':catalog,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
 const files=['mcq-1','mcq-2','mcq-3','mcq-4','cq','sq'],mocks={'./question-json-import':upload};
 for(const file of files)mocks['@/'+root+file+'.json']=read(root+file+'.json');
-const adapter=load('lib/ssc-chemistry-ch3-batches.ts',mocks),tables=load('lib/question-tables.ts'),batches=adapter.sscChemistryChapter3Batches();
+const adapter=load('lib/ssc-chemistry-ch3-batches.ts',mocks),tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")}),batches=adapter.sscChemistryChapter3Batches();
 const rows=files.flatMap(f=>read(root+f+'.json').items),validation=read(root+'validation.json');
 test('exactly 500/100/100 owner drafts pass strict uploader; unique normalized stems and balanced keys',()=>{
  assert.deepEqual(batches.map(b=>b.records.length),[125,125,125,125,100,100]);assert.equal(new Set(rows.map(q=>mcq.normalizeStem(q.text))).size,700);
@@ -100,7 +101,7 @@ test('real registry preserves 19956 prior records; adds only 700 read-only draft
  assert.doesNotMatch(fs.readFileSync('lib/ssc-chemistry-ch3-batches.ts','utf8'),/from ["'].*(?:db|guard|prisma)/);
  const resolve=Module._resolveFilename,previous=require.extensions['.ts'];try{
   Module._resolveFilename=function(id,parent,...rest){return resolve.call(this,id.startsWith('@/')?path.resolve(id.slice(2)):id,parent,...rest);};require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
-  const all=require('../lib/prepared-question-batches.ts').preparedBatches(),ch3=all.filter(b=>b.id.startsWith('ssc-chemistry-ch3-'));
+  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')),ch3=all.filter(b=>b.id.startsWith('ssc-chemistry-ch3-'));
   assert.equal(all.length,274);assert.equal(ch3.length,6);assert.equal(ch3.reduce((n,b)=>n+b.records.length,0),700);assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-ch11-')&&!b.id.startsWith('ssc-chemistry-ch12-')&&!b.id.startsWith('ssc-chemistry-ch10-')&&!b.id.startsWith('ssc-chemistry-ch9-')&&!b.id.startsWith('ssc-chemistry-ch8-')&&!b.id.startsWith('ssc-chemistry-ch7-')&&!b.id.startsWith('ssc-chemistry-ch6-')&&!b.id.startsWith('ssc-chemistry-ch3-')&&!b.id.startsWith('ssc-chemistry-ch4-')&&!b.id.startsWith('ssc-chemistry-ch5-')).reduce((n,b)=>n+b.records.length,0),19956);
  }finally{Module._resolveFilename=resolve;if(previous)require.extensions['.ts']=previous;else delete require.extensions['.ts'];}
 });

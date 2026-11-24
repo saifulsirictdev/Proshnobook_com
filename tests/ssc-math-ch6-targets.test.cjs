@@ -89,7 +89,7 @@ test('149 MCQ / 50 CQ / 30 SQ diagrams are self-contained, versioned and backed 
  }
 });
 test('illustrated imported records remain self-contained MCQ/CQ/SQ for AutoModel; no detached or cross-row image dependency',()=>{
- const auto=load('lib/auto-model.ts',{'./nctb-data':data,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':data}),'./question-tables':load('lib/question-tables.ts')});
+ const auto=load('lib/auto-model.ts',{'./nctb-data':data,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':data}),'./question-tables':load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})});
  for(const input of inputs){const parsed=upload.parseQuestionUpload(JSON.stringify(input),scope);
   for(const [i,record] of parsed.records.entries())assert.equal(auto.autoModelRowKind({...record,topic:scope.topic}),input.items[i].type==='SQ'?'SHORT':input.items[i].type);
  }

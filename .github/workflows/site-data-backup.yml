@@ -17,6 +17,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Check backup prerequisites without printing secret values
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BLOB_BACKUP_PASSPHRASE: ${{ secrets.BLOB_BACKUP_PASSPHRASE }}
+        run: node scripts/site-data-backup-preflight.cjs
       - name: Create read-only Neon dump and encrypted source snapshot
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}

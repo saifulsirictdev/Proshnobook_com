@@ -1,7 +1,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),ts=require('typescript'),Module=require('node:module'),crypto=require('node:crypto'),React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),katex=require('katex');
 function load(file,mocks={}){const m=new Module(file);m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText,file);return m.exports;}
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=b=>crypto.createHash('sha256').update(b).digest('hex'),base='content/question-bank/ssc/math/chapter-17/';
-const tables=load('lib/question-tables.ts'),MathText=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default,answers=load('lib/paper-answers.ts');
+const tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")}),MathText=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default,answers=load('lib/paper-answers.ts');
 const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),prov=load('lib/question-provenance.ts'),upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':prov});
 const m=json(base+'targets-v1-manifest.json'),v=json(base+m.validation.file),inputs=m.files.map(f=>json(base+f.file)),all=inputs.flatMap(x=>x.items),scope={category:'Class 9',subject:'গণিত',group:'',topic:m.topic};
 test('statistics exact 300/200/100 quota, five importer-compatible catalog slices and distinct stems',()=>{

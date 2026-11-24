@@ -68,7 +68,7 @@ test('Draft validation does not claim a live import, teacher approval or full ch
  const src=fs.readFileSync('lib/ssc-physics-ch4-batches.ts','utf8');
  assert.doesNotMatch(src,/from ["'].*(?:db|guard|prisma)/);
  // Separately owner-authorized subject policy now enables Physics, not other subjects.
- const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts')});
+ const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})});
  assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
 });
 
