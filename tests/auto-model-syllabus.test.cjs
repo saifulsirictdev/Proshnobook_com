@@ -181,3 +181,10 @@ test('full-book scan overflow cannot authorize AI even when the selected-topic s
  assert.equal((await h.run(req)).ok,false);assert.equal(h.calls(),0);assert.ok(h.events.every(e=>e[0]==='read'));
  assert.equal((await h.inspect(req)).ok,false);
 });
+test('section-level selected topics cannot bypass the complete-book AI exclusion',async()=>{
+ const req=selection(),other=s.autoModelTopics(req.category,req.subject).find(t=>!req.topics.includes(t));
+ req.syllabus.sections=req.syllabus.sections.map(section=>({...section,topics:[...req.topics]}));
+ const h=harness({rows:Array.from({length:30},(_,i)=>({...row('section-book'+i,other),approved:true}))});
+ const r=await h.run(req);assert.equal(r.databaseOnly,true);assert.equal(h.calls(),0);assert.equal(h.saved.length,0);
+ const report=await h.inspect(req);assert.equal(report.report.databaseOnly,true);assert.equal(report.report.aiShortfall,0);assert.equal(report.report.stockShortfall,30);assert.equal(report.report.feasible,false);
+});

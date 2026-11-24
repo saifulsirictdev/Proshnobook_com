@@ -30,7 +30,7 @@ test("starter displays shared question type options and forwards the selected ty
       useSearchParams: () => new URLSearchParams(),
     },
     "@/lib/academic-subject-groups": load("lib/academic-subject-groups.ts"),
-    "@/lib/auto-model": load("lib/auto-model.ts", {"./nctb-data":load("lib/nctb-data.ts"),"./subject-model-policy":load("lib/subject-model-policy.ts",{"./nctb-data":load("lib/nctb-data.ts")}),"./question-tables":load("lib/question-tables.ts")}),
+    "@/lib/auto-model": load("lib/auto-model.ts", {"./nctb-data":load("lib/nctb-data.ts"),"./subject-model-policy":load("lib/subject-model-policy.ts",{"./nctb-data":load("lib/nctb-data.ts")}),"./question-tables":load("lib/question-tables.ts", {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})}),
     "@/lib/auto-model-syllabus": {autoModelSetupSummary:()=>({available:false})},
     "@/lib/nctb-data": { NCTB_CLASSES: [] },
     "@/lib/question-type-options": types,

@@ -118,7 +118,13 @@ async function prepareRegisteredBank(plan: ReturnType<typeof resolveSyllabusSele
  */
 async function completeApprovedBook(plan: ReturnType<typeof resolveSyllabusSelection>) {
   const topics = autoModelTopics(plan.request.category, plan.request.subject);
-  const book = resolveSyllabusSelection({...plan.request, topics, avoidQuestionIds: []});
+  // Section-specific topic choices are selection filters too. Preserve the exact
+  // marking scheme, but do not let these filters re-enable AI for a stocked book.
+  // The actual selected plan is unchanged and still reports its own shortages.
+  const syllabus = plan.request.syllabus && {...plan.request.syllabus,
+    sections: plan.request.syllabus.sections.map(({topics: _selection, ...section}) => section)};
+  const book = resolveSyllabusSelection({...plan.request, topics, avoidQuestionIds: [],
+    ...(syllabus ? {syllabus} : {})});
   const rows = await db.question.findMany({
     where: {category: {in: categoryAliases(plan.request.category)},subject: plan.request.subject,
       topic: {in: topics},approved: true},

@@ -2,7 +2,26 @@
 // Explicit read-only inventory/readback. Never part of the normal build.
 const {createHash}=require('node:crypto');
 const release=require('./question-bank/release-ssc-biology.cjs');
+const fs=require('node:fs'),path=require('node:path'),Module=require('node:module');
+const ROOT=path.resolve(__dirname,'..');
 const hash=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
+async function guardActionCheck(db,api){
+ const file=path.join(ROOT,'app/actions/auto-model.ts'),m=new Module(file,module);m.paths=module.paths;
+ let writes=0,providerCalls=0;const forbidden=()=>{writes++;throw Error('Read-only guard probe refused mutation');};
+ const readonly={question:{findMany:args=>db.question.findMany(args),create:forbidden},setting:{create:forbidden,deleteMany:forbidden}};
+ m.require=id=>{
+  if(id==='@/auth')return {auth:async()=>({user:{id:'readonly-stock-probe-not-a-login',role:'TEACHER'}})};
+  if(id==='@/lib/db')return {db:readonly};
+  if(id==='@/lib/auto-model-provider')return {requestAutoModelGap:async()=>{providerCalls++;throw Error('Provider forbidden in read-only probe');}};
+  return require(id.startsWith('@/')?path.join(ROOT,id.slice(2))+'.ts':id);
+ };
+ const ts=require('typescript');m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,file);
+ const topic=api.autoModelTopics('SSC','জীববিজ্ঞান')[0];
+ const request={category:'SSC',subject:'জীববিজ্ঞান',variant:'CQ',topics:[topic],syllabus:{reference:'Diagnostic explicit scheme,100 offered CQ from one selected chapter, not official distribution',totalMarks:50,minutes:60,cqPartMarks:[1,2,3,4],sections:[{kind:'CQ',offered:100,answer:5,marksEach:10,topics:[topic]}]}};
+ const result=await m.exports.prepareAutoModel(request),inspection=await m.exports.inspectAutoModel(request);
+ if(result.ok||!result.databaseOnly||!inspection.ok||!inspection.report.databaseOnly||inspection.report.aiShortfall!==0||inspection.report.stockShortfall<=0||inspection.report.feasible||inspection.report.quotaBatchUpperBound!==0||writes||providerCalls)throw Error('Live-stock server-action AI guard failed');
+ return {method:'READ_ONLY_SERVER_ACTION_HARNESS_WITH_LIVE_STOCK',syntheticTeacherIdentity:true,authenticatedBrowserFlowVerified:false,sectionTopicFilterCovered:true,databaseOnly:true,stockShortfall:inspection.report.stockShortfall,aiShortfall:0,quotaWrites:writes,providerInvocations:providerCalls,topicSubstitution:false};
+}
 async function check(db,mode,expectedProtected){
  const api=release.load(),plan=release.prepare(api),protectedSubjects=[];
  for(const subject of ['পদার্থবিজ্ঞান','রসায়ন']){
@@ -32,8 +51,9 @@ async function check(db,mode,expectedProtected){
   if(api.autoModelIssues(items,settings).length||api.autoModelSections(items,settings).flatMap(s=>s.questions).length!==items.length)throw Error('Biology editor/print mismatch');
   modelChecks.push({variant,offered:items.length,aiShortfall:0,schemeBasis:'DIAGNOSTIC_TEACHER_INPUT_NOT_OFFICIAL'});
  }
+ const aiGuard=await guardActionCheck(db,api);
  const liveAssets=await release.verifyLiveAssets(plan);
- return {status:'READ_ONLY_BIOLOGY_PUBLICATION_READBACK_VERIFIED',...common,approvedCanonical:plan.records.length,releaseDigest:plan.digest,counts:plan.preview.counts,liveAssets,modelChecks,teacherCertified:false};
+ return {status:'READ_ONLY_BIOLOGY_PUBLICATION_READBACK_VERIFIED',...common,approvedCanonical:plan.records.length,releaseDigest:plan.digest,counts:plan.preview.counts,liveAssets,modelChecks,aiGuard,teacherCertified:false};
 }
 async function main(){
  if(process.env.VERCEL_ENV!=='production'||!process.env.DATABASE_URL||process.env.VERCEL_PROJECT_ID!=='prj_gJuVKTIvUtieGaJr7mitBHdC05Ze')throw Error('Explicit production context required');

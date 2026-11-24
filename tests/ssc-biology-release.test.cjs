@@ -66,6 +66,6 @@ test('Biology exact renderer allowlist rejects external, query, wrong version an
 test('read-only production probe checks real canonical fixtures, stock models and protected hashes without mutations',async()=>{
  const {check}=require('../scripts/check-biology-release.cjs'),old=release.verifyLiveAssets;let calls=0;
  release.verifyLiveAssets=async()=>({verified:45});
- const db={question:{findMany:async({where})=>{calls++;return where.subject==='জীববিজ্ঞান'?plan.records.map(q=>({...q,approved:true})):[]}}};
- try{const before=await check(db,'inventory'),after=await check(db,'verify',before.protectedDigest);assert.equal(after.approvedCanonical,4480);assert.equal(after.databaseMutation,false);assert.equal(after.providerInvoked,false);assert.equal(after.modelChecks.length,2);assert.ok(after.modelChecks.every(m=>m.aiShortfall===0));assert.equal(calls,6);await assert.rejects(check(db,'verify','changed'),/Protected/);}finally{release.verifyLiveAssets=old;}
+ const db={question:{findMany:async({where})=>{calls++;return where.subject==='জীববিজ্ঞান'?plan.records.filter(q=>!where.topic||where.topic.in.includes(q.topic)).map(q=>({...q,approved:true})):[]}}};
+ try{const before=await check(db,'inventory'),after=await check(db,'verify',before.protectedDigest);assert.equal(after.approvedCanonical,4480);assert.equal(after.databaseMutation,false);assert.equal(after.providerInvoked,false);assert.equal(after.modelChecks.length,2);assert.ok(after.modelChecks.every(m=>m.aiShortfall===0));assert.equal(calls,10);await assert.rejects(check(db,'verify','changed'),/Protected/);}finally{release.verifyLiveAssets=old;}
 });

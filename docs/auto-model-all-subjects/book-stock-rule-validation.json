@@ -1,7 +1,7 @@
 {
   "rule": "A complete approved full-book model forbids selection-shortfall AI; no topic substitution",
   "implementationStatus": "SOURCE_TESTED_NOT_DEPLOYED",
-  "autoModelEnglishFocusedTests": 156,
+  "autoModelEnglishFocusedTests": 157,
   "autoModelEnglishFailed": 0,
   "biologyFocusedTests": 129,
   "biologyFailed": 0,
@@ -14,7 +14,8 @@
   "biologyImportExecuted": false,
   "biologyApprovalExecuted": false,
   "files": {
-    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "4d7e17a03c4eabbe849cb37a060496c66dc4cf0976f0dbde27643a7e48f02e56",
-    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "b3dd93ed465b5ef1abaa07a737dfb1f070098e1977645f416d2b398b76bdf4ea"
-  }
+    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "9df61a5f61430e4e93039dab78834ef5e925a7a3dd40d8b30422735a3f3ba541",
+    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "bc93809f251a77ec6a65d701d335a32a79fad12c2484b1273168c42cd6781bb2"
+  },
+  "sectionTopicFilterBypassRegression": "PASS: selected section topic scope is cleared only for book-wide guard; selected shortage retained"
 }

@@ -57,7 +57,7 @@ test("real rich paper renderer produces KaTeX fraction markup, not a slash", () 
     );
     return m.exports;
   }
-  const tables = load("lib/question-tables.ts");
+  const tables = load("lib/question-tables.ts", {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")});
   const math = load("components/MathText.tsx", {"@/lib/question-tables":tables}).default;
   const rich = load("components/paper-builder/rich-paper-text.tsx", {
     "@/components/MathText": math,
