@@ -1,5 +1,8 @@
 "use client";
-import { englishTextFields, applyEnglishTextEdits } from "@/lib/english/editable-text";
+import {
+  applyEnglishTextEdits,
+  resolveEnglishField,
+} from "@/lib/english/editable-text";
 import { autoModelSections, autoModelIssues } from "@/lib/auto-model-paper";
 import { loadEnglishPaper } from "@/app/actions/english-paper";
 import {
@@ -8,7 +11,6 @@ import {
   cqDivisionGroups,
 } from "@/lib/paper-sections";
 import RichPaperText from "@/components/paper-builder/rich-paper-text";
-import RichTextField from "@/components/paper-builder/rich-text-field";
 import WalletCheckout from "@/components/wallet-checkout";
 import { checkPurchasedPaperAccess } from "@/app/actions/purchased-paper-access";
 import { checkQuestionAccess } from "@/app/actions/wallet";
@@ -17,7 +19,10 @@ import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import { Download, Settings2, Shuffle, Plus, AlertCircle } from "lucide-react";
 import HeaderManager from "@/components/paper-builder/header-manager";
 import DefaultHeaderEditor from "@/components/paper-builder/default-header-editor";
-import {resolveDefaultHeader,withDefaultHeader} from "@/lib/default-paper-header";
+import {
+  resolveDefaultHeader,
+  withDefaultHeader,
+} from "@/lib/default-paper-header";
 import { currentHeader } from "@/lib/paper-header";
 import PaperSettingsPanel from "@/components/paper-builder/settings";
 import PaperPreview, {
@@ -45,13 +50,24 @@ export default function QbBuilder({
   purchased,
   english,
 }: {
-  english?: {key:string;items:PaperItem[];settings:PaperSettings;useDefaultHeader?:boolean;saveSettings?:(s:PaperSettings)=>Promise<{ok:boolean;error?:string}>;onSettings:(s:PaperSettings)=>void};
+  english?: {
+    key: string;
+    items: PaperItem[];
+    settings: PaperSettings;
+    useDefaultHeader?: boolean;
+    saveSettings?: (
+      s: PaperSettings,
+    ) => Promise<{ ok: boolean; error?: string }>;
+    onSettings: (s: PaperSettings) => void;
+  };
   purchased?: { id: string; items: PaperItem[]; settings: PaperSettings };
   supportHref?: string;
   tutorialHref?: string;
 }) {
   const [items, setItems] = useState<PaperItem[]>([]),
-    [s, setSettings] = useState<PaperSettings>(()=>withDefaultHeader(defaults())),
+    [s, setSettings] = useState<PaperSettings>(() =>
+      withDefaultHeader(defaults()),
+    ),
     [loading, setLoading] = useState(true),
     [ready, setReady] = useState(false),
     [error, setError] = useState("");
@@ -67,15 +83,42 @@ export default function QbBuilder({
   const [divisionQuestion, setDivisionQuestion] = useState("");
   const [actionMessage, setActionMessage] = useState("");
   const [exchanging, setExchanging] = useState(false);
-  const [alternatives,setAlternatives] = useState<{originalId:string;choices:{id:string;label:string;subject:string;topic:string;type:string;locked:boolean;item?:PaperItem}[]}|null>(null);
-  const [checkoutAlternative,setCheckoutAlternative] = useState("");
+  const [alternatives, setAlternatives] = useState<{
+    originalId: string;
+    choices: {
+      id: string;
+      label: string;
+      subject: string;
+      topic: string;
+      type: string;
+      locked: boolean;
+      item?: PaperItem;
+    }[];
+  } | null>(null);
+  const [checkoutAlternative, setCheckoutAlternative] = useState("");
   const alternativesRef = useRef<HTMLElement>(null);
-  function chooseAlternative(originalId:string,replacement:PaperItem) {
-    if(!items.some(q=>q.id===originalId) || items.some(q=>q.id===replacement.id)) return;
-    const next=items.map(q=>q.id===originalId?replacement:q);
-    try {localStorage.setItem("qb:selected",JSON.stringify(next.map(q=>q.id)));} catch {setStorageError(true);}
-    update({...s});setItems(next);setAlternatives(null);setCheckoutAlternative("");
-    setActionMessage("আপনার বাছাই করা একই অধ্যায় ও ধরনের বিকল্প প্রশ্ন বসানো হয়েছে।");
+  function chooseAlternative(originalId: string, replacement: PaperItem) {
+    if (
+      !items.some((q) => q.id === originalId) ||
+      items.some((q) => q.id === replacement.id)
+    )
+      return;
+    const next = items.map((q) => (q.id === originalId ? replacement : q));
+    try {
+      localStorage.setItem(
+        "qb:selected",
+        JSON.stringify(next.map((q) => q.id)),
+      );
+    } catch {
+      setStorageError(true);
+    }
+    update({ ...s });
+    setItems(next);
+    setAlternatives(null);
+    setCheckoutAlternative("");
+    setActionMessage(
+      "আপনার বাছাই করা একই অধ্যায় ও ধরনের বিকল্প প্রশ্ন বসানো হয়েছে।",
+    );
   }
   async function questionAction(
     id: string,
@@ -95,7 +138,9 @@ export default function QbBuilder({
     }
     if (english || purchased) {
       setActionMessage(
-        english ? "Passage-সংযুক্ত প্রশ্নসেট সাধারণ প্রশ্নের সঙ্গে Exchange করা যাবে না। Question Item থেকে নতুন সেট বাছুন।" : "কেনা প্রশ্নপত্রে প্রশ্নের লেখা সম্পাদনা করতে পারবেন। প্রশ্নব্যাংক থেকে নতুন প্রশ্ন নিতে আলাদা নির্বাচন ও checkout প্রয়োজন।",
+        english
+          ? "Passage-সংযুক্ত প্রশ্নসেট সাধারণ প্রশ্নের সঙ্গে Exchange করা যাবে না। Question Item থেকে নতুন সেট বাছুন।"
+          : "কেনা প্রশ্নপত্রে প্রশ্নের লেখা সম্পাদনা করতে পারবেন। প্রশ্নব্যাংক থেকে নতুন প্রশ্ন নিতে আলাদা নির্বাচন ও checkout প্রয়োজন।",
       );
       return;
     }
@@ -110,8 +155,13 @@ export default function QbBuilder({
       const result = await res.json();
       if (!res.ok || !result.alternatives?.length)
         throw Error(result.error || "বিকল্প পাওয়া যায়নি।");
-      setAlternatives({originalId:id,choices:result.alternatives});
-      requestAnimationFrame(()=>alternativesRef.current?.scrollIntoView({block:"nearest",behavior:"smooth"}));
+      setAlternatives({ originalId: id, choices: result.alternatives });
+      requestAnimationFrame(() =>
+        alternativesRef.current?.scrollIntoView({
+          block: "nearest",
+          behavior: "smooth",
+        }),
+      );
     } catch (e) {
       setActionMessage(e instanceof Error ? e.message : "প্রশ্ন বদলানো যায়নি।");
     } finally {
@@ -121,7 +171,17 @@ export default function QbBuilder({
   const close = useCallback(() => setOpen(false), []);
   useEffect(() => {
     if (english) {
-      setItems(english.items);setSettings(english.useDefaultHeader ? withDefaultHeader(english.settings,true) : english.settings);setDivision(english.settings.cfg.divisionFilter);setOpen(true);setReady(true);setLoading(false);return;
+      setItems(english.items);
+      setSettings(
+        english.useDefaultHeader
+          ? withDefaultHeader(english.settings, true)
+          : english.settings,
+      );
+      setDivision(english.settings.cfg.divisionFilter);
+      setOpen(true);
+      setReady(true);
+      setLoading(false);
+      return;
     }
     if (purchased) {
       setItems(purchased.items);
@@ -180,7 +240,9 @@ export default function QbBuilder({
       setStorageError(true);
     }
   }, [s, ready]);
-  useEffect(() => {if (english && ready) english.onSettings(s);},[s,ready]);
+  useEffect(() => {
+    if (english && ready) english.onSettings(s);
+  }, [s, ready]);
   const history = useRef<{
     past: { settings: PaperSettings; items: PaperItem[] }[];
     future: { settings: PaperSettings; items: PaperItem[] }[];
@@ -229,7 +291,8 @@ export default function QbBuilder({
     setHistoryTick((v) => v + 1);
     setSettings(next);
     try {
-      if (!purchased && !english) localStorage.setItem("qb:settings", JSON.stringify(next));
+      if (!purchased && !english)
+        localStorage.setItem("qb:settings", JSON.stringify(next));
       setStorageError(false);
     } catch {
       setStorageError(true);
@@ -237,21 +300,35 @@ export default function QbBuilder({
   }, []);
   async function saveDefaultHeader(next: PaperSettings) {
     if (english) {
-      if (!english.saveSettings) return {ok:false,error:"প্রশ্নপত্র সেভ করার ব্যবস্থা পাওয়া যায়নি।"};
-      const result=await english.saveSettings(next);
-      if(!result.ok)return result;
+      if (!english.saveSettings)
+        return { ok: false, error: "প্রশ্নপত্র সেভ করার ব্যবস্থা পাওয়া যায়নি।" };
+      const result = await english.saveSettings(next);
+      if (!result.ok) return result;
     } else {
-      try {localStorage.setItem("qb:settings",JSON.stringify(next));setStorageError(false);}
-      catch {setStorageError(true);return {ok:false,error:"ব্রাউজারে হেডার সেভ হয়নি। স্টোরেজ পরীক্ষা করে আবার চেষ্টা করুন।"};}
+      try {
+        localStorage.setItem("qb:settings", JSON.stringify(next));
+        setStorageError(false);
+      } catch {
+        setStorageError(true);
+        return {
+          ok: false,
+          error: "ব্রাউজারে হেডার সেভ হয়নি। স্টোরেজ পরীক্ষা করে আবার চেষ্টা করুন।",
+        };
+      }
     }
     update(next);
-    return {ok:true};
+    return { ok: true };
   }
   const data = useMemo(
     () =>
       items
         .filter((q) => !s.excludedIds.includes(q.id))
-        .map((q) => applyEnglishTextEdits({ ...q, ...s.edits[q.id] },s.edits[q.id]?.englishText)),
+        .map((q) =>
+          applyEnglishTextEdits(
+            { ...q, ...s.edits[q.id] },
+            s.edits[q.id]?.englishText,
+          ),
+        ),
     [items, s.edits, s.excludedIds],
   );
   const counts = useMemo(
@@ -273,6 +350,73 @@ export default function QbBuilder({
   function info(key: keyof PaperSettings["info"], value: string) {
     update({ ...s, info: { ...s.info, [key]: value } });
   }
+  const inline = edit
+    ? {
+        editable: true,
+        resolve(q: PaperItem, path: string): string | null {
+          const base = data.find((x) => x.id === q.id.split(":flow:")[0]) ?? q;
+          if (path === "text") return base.text;
+          if (path === "stimulus") return base.stimulus || "";
+          if (path.startsWith("sub:"))
+            return (
+              base.subQuestions?.[
+                path.slice(4) as keyof NonNullable<PaperItem["subQuestions"]>
+              ] ?? ""
+            );
+          if (path.startsWith("opt:"))
+            return base.options?.[path.slice(4)] ?? "";
+          if (base.englishGroup)
+            return resolveEnglishField(base.englishGroup, path)?.value ?? null;
+          return null;
+        },
+        save(q: PaperItem, path: string, value: string) {
+          const baseId = q.id.split(":flow:")[0];
+          const base = data.find((x) => x.id === baseId);
+          if (!base) return;
+          if (path === "text") return questionEdit(base, { text: value });
+          if (path === "stimulus")
+            return questionEdit(base, { stimulus: value });
+          if (path.startsWith("sub:")) {
+            const key = path.slice(4);
+            return questionEdit(base, {
+              subQuestions: { ...base.subQuestions!, [key]: value },
+            });
+          }
+          if (path.startsWith("opt:")) {
+            const key = path.slice(4);
+            return questionEdit(base, {
+              options: { ...base.options!, [key]: value },
+            });
+          }
+          const resolved = base.englishGroup
+            ? resolveEnglishField(base.englishGroup, path)
+            : null;
+          if (resolved)
+            questionEdit(base, {
+              englishText: {
+                ...s.edits[baseId]?.englishText,
+                [resolved.key]: value,
+              },
+            });
+        },
+        saveMarks(q: PaperItem, part: string | null, value: number) {
+          const baseId = q.id.split(":flow:")[0];
+          const base = data.find((x) => x.id === baseId);
+          if (!base) return;
+          if (part)
+            questionEdit(base, {
+              partMarks: { ...(base.partMarks ?? {}), [part]: value },
+            });
+          else questionEdit(base, { marks: value });
+        },
+        attachment(
+          id: string,
+          patch: Partial<PaperSettings["attachments"][string]>,
+        ) {
+          attachment(id.split(":flow:")[0], patch);
+        },
+      }
+    : undefined;
   function attachment(
     id: string,
     patch: Partial<PaperSettings["attachments"][string]>,
@@ -287,7 +431,10 @@ export default function QbBuilder({
       attachments: { ...s.attachments, [id]: { ...old, ...patch } },
     });
   }
-  function questionEdit(q: PaperItem, patch: Partial<PaperSettings["edits"][string]>) {
+  function questionEdit(
+    q: PaperItem,
+    patch: Partial<PaperSettings["edits"][string]>,
+  ) {
     update({
       ...s,
       edits: {
@@ -310,10 +457,13 @@ export default function QbBuilder({
   async function print(mode: "normal" | "booklet" = "normal") {
     try {
       const access = english
-        ? {ok:!!(await loadEnglishPaper(english.key)),error:"এই draft-এ প্রবেশাধিকার নেই।"}
+        ? {
+            ok: !!(await loadEnglishPaper(english.key)),
+            error: "এই draft-এ প্রবেশাধিকার নেই।",
+          }
         : purchased
-        ? await checkPurchasedPaperAccess(purchased.id)
-        : await checkQuestionAccess(data.map((q) => q.id));
+          ? await checkPurchasedPaperAccess(purchased.id)
+          : await checkQuestionAccess(data.map((q) => q.id));
       if (!access.ok) {
         setActionMessage(access.error);
         return;
@@ -345,13 +495,20 @@ export default function QbBuilder({
     const [w, h] = paperDimensions(s),
       sw = Math.max(w, h),
       sh = Math.min(w, h),
-      scale = s.cfg.orientation === "landscape" ? 1 : Math.min(sw / 2 / w, sh / h);
+      scale =
+        s.cfg.orientation === "landscape" ? 1 : Math.min(sw / 2 / w, sh / h);
     // Do not clip an oversized image/question inside a folded half-sheet.
-    if (s.cfg.orientation === "landscape" && sheets.some(sheet =>
-      Math.max(sheet.offsetHeight, sheet.scrollHeight) > sh * 96 / 25.4 + 3 ||
-      sheet.scrollWidth > sheet.clientWidth + 3
-    )) {
-      setActionMessage("বুকলেটের অর্ধপৃষ্ঠায় কিছু লেখা/ছবি ধরছে না। ফন্ট, মার্জিন বা ছবির আকার কমিয়ে আবার চেষ্টা করুন; কোনো প্রশ্ন কেটে প্রিন্ট করা হয়নি।");
+    if (
+      s.cfg.orientation === "landscape" &&
+      sheets.some(
+        (sheet) =>
+          Math.max(sheet.offsetHeight, sheet.scrollHeight) >
+            (sh * 96) / 25.4 + 3 || sheet.scrollWidth > sheet.clientWidth + 3,
+      )
+    ) {
+      setActionMessage(
+        "বুকলেটের অর্ধপৃষ্ঠায় কিছু লেখা/ছবি ধরছে না। ফন্ট, মার্জিন বা ছবির আকার কমিয়ে আবার চেষ্টা করুন; কোনো প্রশ্ন কেটে প্রিন্ট করা হয়নি।",
+      );
       return;
     }
     for (const side of bookletOrder(sheets.length)) {
@@ -447,46 +604,50 @@ export default function QbBuilder({
   function sections(setName: string) {
     const base = s.seed + (setName === "খ" ? 7919 : 0);
     const types = PAPER_SECTION_ORDER;
-    const parts = autoModelSections(data, s) ?? types
-      .flatMap((type) => {
-        const selected = shuffled(
-          data.filter((q) => questionType(q) === type),
-          base,
-        );
-        const groups =
-          type === "CQ"
-            ? cqDivisionGroups(s.show.divisions, division, divisions)
-            : [""];
-        return groups.map((group) => {
-          const qs = selected.filter(
-            (q) =>
-              !group ||
-              (s.attachments[q.id]?.division || q.topic || "সাধারণ বিভাগ") ===
-                group,
+    const parts =
+      autoModelSections(data, s) ??
+      types
+        .flatMap((type) => {
+          const selected = shuffled(
+            data.filter((q) => questionType(q) === type),
+            base,
           );
-          if (!qs.length) return null;
-          const views: PreviewQuestion[] = qs.map((q, i) => {
-            const opts = shuffled(
-              Object.entries(q.options || {}).filter(
-                (entry): entry is [string, string] =>
-                  typeof entry[1] === "string",
-              ),
-              base ? base + i + 1 : 0,
+          const groups =
+            type === "CQ"
+              ? cqDivisionGroups(s.show.divisions, division, divisions)
+              : [""];
+          return groups.map((group) => {
+            const qs = selected.filter(
+              (q) =>
+                !group ||
+                (s.attachments[q.id]?.division || q.topic || "সাধারণ বিভাগ") ===
+                  group,
             );
+            if (!qs.length) return null;
+            const views: PreviewQuestion[] = qs.map((q, i) => {
+              const opts = shuffled(
+                Object.entries(q.options || {}).filter(
+                  (entry): entry is [string, string] =>
+                    typeof entry[1] === "string",
+                ),
+                base ? base + i + 1 : 0,
+              );
+              return {
+                q,
+                opts,
+                ci: opts.findIndex(([key]) => key === q.correct),
+              };
+            });
             return {
-              q,
-              opts,
-              ci: opts.findIndex(([key]) => key === q.correct),
+              type,
+              title: english
+                ? "English Question Paper"
+                : paperSectionTitle(type, s.info.section, group),
+              questions: views,
             };
           });
-          return {
-            type,
-            title: english ? "English Question Paper" : paperSectionTitle(type, s.info.section, group),
-            questions: views,
-          };
-        });
-      })
-      .filter((section) => section !== null);
+        })
+        .filter((section) => section !== null);
     if (!parts.length) return null;
     // Preserve the mature single-section layout; mixed papers share one pagination pass.
     return (
@@ -499,8 +660,19 @@ export default function QbBuilder({
       >
         <PaperPreview
           s={enriched}
-          defaultHeaderValues={resolveDefaultHeader(s,data)}
-          defaultHeaderEditor={!purchased && setName === (s.show.autoSet ? "ক" : s.setName) ? <DefaultHeaderEditor settings={s} items={data} editRequest={headerEditRequest} update={update} onSave={saveDefaultHeader} storageError={storageError}/> : undefined}
+          defaultHeaderValues={resolveDefaultHeader(s, data)}
+          defaultHeaderEditor={
+            !purchased && setName === (s.show.autoSet ? "ক" : s.setName) ? (
+              <DefaultHeaderEditor
+                settings={s}
+                items={data}
+                editRequest={headerEditRequest}
+                update={update}
+                onSave={saveDefaultHeader}
+                storageError={storageError}
+              />
+            ) : undefined
+          }
           questions={parts[0].questions}
           type={parts[0].type}
           title={parts[0].title}
@@ -508,6 +680,7 @@ export default function QbBuilder({
           setName={setName}
           duplicate={duplicates}
           onQuestionAction={edit ? questionAction : undefined}
+          inlineEdit={inline}
           previewScale={previewScale}
           onImageSize={(id, size) => attachment(id, { size })}
         />
@@ -546,7 +719,24 @@ export default function QbBuilder({
     <div className="paper-builder-root">
       {!purchased && !english && <WalletCheckout ids={data.map((q) => q.id)} />}
       <style>{style}</style>
-      {s.autoModel && autoModelIssues(data,s).length>0 && <aside data-noprint role="alert" className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950"><b>সম্পাদিত মডেলের কাঠামো বদলেছে</b><ul>{autoModelIssues(data,s).map(issue=><li key={issue}>{issue}</li>)}</ul><p>এটি এখন কাস্টম খসড়া; পূর্ণ practice model হিসেবে ব্যবহার করার আগে প্রশ্নসংখ্যা মিলিয়ে নিন।</p></aside>}
+      {s.autoModel && autoModelIssues(data, s).length > 0 && (
+        <aside
+          data-noprint
+          role="alert"
+          className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950"
+        >
+          <b>সম্পাদিত মডেলের কাঠামো বদলেছে</b>
+          <ul>
+            {autoModelIssues(data, s).map((issue) => (
+              <li key={issue}>{issue}</li>
+            ))}
+          </ul>
+          <p>
+            এটি এখন কাস্টম খসড়া; পূর্ণ practice model হিসেবে ব্যবহার করার আগে
+            প্রশ্নসংখ্যা মিলিয়ে নিন।
+          </p>
+        </aside>
+      )}
       {missingCount > 0 && (
         <p
           role="alert"
@@ -723,19 +913,107 @@ export default function QbBuilder({
               {exchanging ? "বিকল্প প্রশ্ন খোঁজা হচ্ছে…" : actionMessage}
             </p>
           )}
-          {alternatives && <section ref={alternativesRef} data-noprint aria-label="সম্পর্কিত বিকল্প প্রশ্ন" className="mb-4 rounded-xl border border-emerald-200 bg-white p-4">
-            <div className="flex items-center justify-between"><h2 className="font-bold">সম্পর্কিত বিকল্প — আপনি বাছুন</h2><button type="button" onClick={()=>{setAlternatives(null);setCheckoutAlternative("");}}>বন্ধ করুন</button></div>
-            <p className="text-xs">একই বিষয়, অধ্যায় ও ধরন। নির্বাচন না করা পর্যন্ত বর্তমান প্রশ্ন বদলাবে না।</p>
-            <div className="mt-2 grid gap-3 md:grid-cols-2">{alternatives.choices.map(candidate=><article key={candidate.id} className="rounded border p-3">
-              <b>{candidate.label}</b><p className="text-xs">{candidate.subject} · {candidate.topic} · {candidate.type}</p>
-              {candidate.item ? <><RichPaperText text={candidate.item.stimulus || candidate.item.text}/>
-                {candidate.item.subQuestions && Object.entries(candidate.item.subQuestions).map(([key,val])=><p key={key}>{key}) <RichPaperText text={val}/></p>)}
-                {candidate.item.type==="MCQ" && Object.entries(candidate.item.options||{}).map(([key,val])=><p key={key}>{key}) <RichPaperText text={val}/></p>)}
-                <button type="button" className="studio-choice" onClick={()=>chooseAlternative(alternatives.originalId,candidate.item!)}>এই প্রশ্নটি নিন</button></>
-              : <><p>সম্পূর্ণ প্রশ্ন দেখতে আগে ব্যবহারাধিকার/checkout প্রয়োজন।</p><button type="button" className="studio-choice" onClick={()=>setCheckoutAlternative(candidate.id)}>মূল্য ও Checkout দেখুন</button></>}
-            </article>)}</div>
-            {checkoutAlternative && <div><WalletCheckout key={checkoutAlternative} ids={[checkoutAlternative]}/><button type="button" disabled={exchanging} className="studio-choice" onClick={()=>questionAction(alternatives.originalId,"exchange")}>Checkout শেষে বিকল্পগুলো আবার দেখুন</button></div>}
-          </section>}
+          {alternatives && (
+            <section
+              ref={alternativesRef}
+              data-noprint
+              aria-label="সম্পর্কিত বিকল্প প্রশ্ন"
+              className="mb-4 rounded-xl border border-emerald-200 bg-white p-4"
+            >
+              <div className="flex items-center justify-between">
+                <h2 className="font-bold">সম্পর্কিত বিকল্প — আপনি বাছুন</h2>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAlternatives(null);
+                    setCheckoutAlternative("");
+                  }}
+                >
+                  বন্ধ করুন
+                </button>
+              </div>
+              <p className="text-xs">
+                একই বিষয়, অধ্যায় ও ধরন। নির্বাচন না করা পর্যন্ত বর্তমান প্রশ্ন বদলাবে
+                না।
+              </p>
+              <div className="mt-2 grid gap-3 md:grid-cols-2">
+                {alternatives.choices.map((candidate) => (
+                  <article key={candidate.id} className="rounded border p-3">
+                    <b>{candidate.label}</b>
+                    <p className="text-xs">
+                      {candidate.subject} · {candidate.topic} · {candidate.type}
+                    </p>
+                    {candidate.item ? (
+                      <>
+                        <RichPaperText
+                          text={candidate.item.stimulus || candidate.item.text}
+                        />
+                        {candidate.item.subQuestions &&
+                          Object.entries(candidate.item.subQuestions).map(
+                            ([key, val]) => (
+                              <p key={key}>
+                                {key}) <RichPaperText text={val} />
+                              </p>
+                            ),
+                          )}
+                        {candidate.item.type === "MCQ" &&
+                          Object.entries(candidate.item.options || {}).map(
+                            ([key, val]) => (
+                              <p key={key}>
+                                {key}) <RichPaperText text={val} />
+                              </p>
+                            ),
+                          )}
+                        <button
+                          type="button"
+                          className="studio-choice"
+                          onClick={() =>
+                            chooseAlternative(
+                              alternatives.originalId,
+                              candidate.item!,
+                            )
+                          }
+                        >
+                          এই প্রশ্নটি নিন
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <p>
+                          সম্পূর্ণ প্রশ্ন দেখতে আগে ব্যবহারাধিকার/checkout প্রয়োজন।
+                        </p>
+                        <button
+                          type="button"
+                          className="studio-choice"
+                          onClick={() => setCheckoutAlternative(candidate.id)}
+                        >
+                          মূল্য ও Checkout দেখুন
+                        </button>
+                      </>
+                    )}
+                  </article>
+                ))}
+              </div>
+              {checkoutAlternative && (
+                <div>
+                  <WalletCheckout
+                    key={checkoutAlternative}
+                    ids={[checkoutAlternative]}
+                  />
+                  <button
+                    type="button"
+                    disabled={exchanging}
+                    className="studio-choice"
+                    onClick={() =>
+                      questionAction(alternatives.originalId, "exchange")
+                    }
+                  >
+                    Checkout শেষে বিকল্পগুলো আবার দেখুন
+                  </button>
+                </div>
+              )}
+            </section>
+          )}
           <HeaderManager settings={s} update={update} />
           <details
             data-noprint
@@ -824,8 +1102,25 @@ export default function QbBuilder({
             >
               <Shuffle size={15} /> এলোমেলো
             </button>
-            {!purchased && s.header.enabled && <button data-default-header-restore type="button" onClick={()=>update(withDefaultHeader(s,true))} className="qm-action-link">ডিফল্ট হেডারে ফিরুন</button>}
-            {!purchased && !s.header.enabled && <button type="button" onClick={()=>requestHeaderEdit(v=>v+1)} className="rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-900">ডিফল্ট হেডার এডিট করুন</button>}
+            {!purchased && s.header.enabled && (
+              <button
+                data-default-header-restore
+                type="button"
+                onClick={() => update(withDefaultHeader(s, true))}
+                className="qm-action-link"
+              >
+                ডিফল্ট হেডারে ফিরুন
+              </button>
+            )}
+            {!purchased && !s.header.enabled && (
+              <button
+                type="button"
+                onClick={() => requestHeaderEdit((v) => v + 1)}
+                className="rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-900"
+              >
+                ডিফল্ট হেডার এডিট করুন
+              </button>
+            )}
             {s.seed > 0 && (
               <button
                 onClick={() => update({ ...s, seed: 0 })}
@@ -835,288 +1130,6 @@ export default function QbBuilder({
               </button>
             )}
           </div>
-          {edit && (
-            <section
-              data-noprint
-              className="mb-4 rounded-xl border border-emerald-200 bg-white p-4"
-            >
-              <h3 className="mb-2 font-bold">বিভাগ পরিচালনা (CQ)</h3>
-              <div className="mb-3 flex flex-wrap gap-2">
-                <input
-                  className={input}
-                  aria-label="নতুন বিভাগের নাম"
-                  placeholder="নতুন বিভাগের নাম"
-                  value={newDivision}
-                  onChange={(e) => setNewDivision(e.target.value)}
-                  maxLength={100}
-                />
-                <select
-                  aria-label="বিভাগে যোগ করার প্রশ্ন"
-                  className={input}
-                  value={divisionQuestion}
-                  onChange={(e) => setDivisionQuestion(e.target.value)}
-                >
-                  <option value="">প্রশ্ন বাছুন</option>
-                  {data
-                    .filter((q) => questionType(q) === "CQ")
-                    .map((q) => (
-                      <option key={q.id} value={q.id}>
-                        {q.text.slice(0, 70)}
-                      </option>
-                    ))}
-                </select>
-                <button
-                  className="studio-choice"
-                  disabled={!newDivision.trim() || !divisionQuestion}
-                  onClick={() => {
-                    setNewDivision("");
-                    update({
-                      ...s,
-                      show: { ...s.show, divisions: true },
-                      attachments: {
-                        ...s.attachments,
-                        [divisionQuestion]: {
-                          ...(s.attachments[divisionQuestion] || {
-                            image: "",
-                            division: "",
-                            important: false,
-                          }),
-                          division: newDivision.trim(),
-                        },
-                      },
-                    });
-                  }}
-                >
-                  বিভাগে যোগ / সরান
-                </button>
-              </div>
-              {divisions.map((name) => (
-                <div
-                  key={name}
-                  className="mb-2 flex items-center justify-between gap-2 rounded bg-slate-50 p-2 text-sm"
-                >
-                  <span>{name}</span>
-                  <div className="flex gap-2">
-                    <button
-                      className="studio-choice"
-                      onClick={() => {
-                        const renamed = window
-                          .prompt("বিভাগের নতুন নাম", name)
-                          ?.trim();
-                        if (!renamed) return;
-                        const attachments = { ...s.attachments };
-                        data
-                          .filter(
-                            (q) =>
-                              questionType(q) === "CQ" &&
-                              (s.attachments[q.id]?.division ||
-                                q.topic ||
-                                "সাধারণ বিভাগ") === name,
-                          )
-                          .forEach((q) => {
-                            attachments[q.id] = {
-                              ...(attachments[q.id] || {
-                                image: "",
-                                division: "",
-                                important: false,
-                              }),
-                              division: renamed,
-                            };
-                          });
-                        update({ ...s, attachments });
-                      }}
-                    >
-                      নাম বদল
-                    </button>
-                    <button
-                      className="studio-choice"
-                      onClick={() => {
-                        if (
-                          !window.confirm(
-                            `“${name}” বিভাগের সব প্রশ্ন এই পত্র থেকে সরাবেন?`,
-                          )
-                        )
-                          return;
-                        const ids = data
-                          .filter(
-                            (q) =>
-                              questionType(q) === "CQ" &&
-                              (s.attachments[q.id]?.division ||
-                                q.topic ||
-                                "সাধারণ বিভাগ") === name,
-                          )
-                          .map((q) => q.id);
-                        setDivision("");
-                        update({
-                          ...s,
-                          cfg: { ...s.cfg, divisionFilter: "" },
-                          excludedIds: [...new Set([...s.excludedIds, ...ids])],
-                        });
-                      }}
-                    >
-                      বিভাগ মুছুন
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </section>
-          )}
-          {s.show.divisions && (
-            <label data-noprint className="mb-4 block text-sm">
-              CQ বিভাগ ফিল্টার
-              <select
-                className={`${input} mt-1`}
-                value={divisions.includes(division) ? division : ""}
-                onChange={(e) => {
-                  setDivision(e.target.value);
-                  update({
-                    ...s,
-                    cfg: { ...s.cfg, divisionFilter: e.target.value },
-                  });
-                }}
-              >
-                <option value="">সব বিভাগ</option>
-                {divisions.map((d) => (
-                  <option key={d}>{d}</option>
-                ))}
-              </select>
-            </label>
-          )}
-          {edit && (
-            <section
-              data-noprint
-              className="mb-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-4"
-            >
-              <h2 className="font-bold">প্রশ্ন সম্পাদনা ও সংযুক্তি</h2>
-              <p className="mb-3 text-xs text-slate-500">
-                পরিবর্তন এই প্রশ্নপত্রেই থাকবে; মূল প্রশ্নব্যাংক বদলাবে না।
-              </p>
-              <div className="max-h-[500px] space-y-3 overflow-y-auto">
-                {data.map((q, i) => (
-                  <details
-                    key={q.id}
-                    className="rounded-xl border bg-white p-3"
-                  >
-                    <summary className="cursor-pointer text-sm font-semibold">
-                      {i + 1}। {q.text.slice(0, 70)}…
-                    </summary>
-                    <div className="mt-3 space-y-2">
-                      <label className="block text-xs">
-                        প্রশ্নের লেখা
-                        <RichTextField
-                          label={`প্রশ্ন ${i + 1}`}
-                          value={q.text}
-                          onChange={(text) => questionEdit(q, { text })}
-                        />
-                      </label>
-                      {q.englishGroup && englishTextFields(q.englishGroup).map(field=><div key={field.key} className="text-xs">
-                        {field.label}
-                        <RichTextField label={`প্রশ্ন ${i+1}: ${field.label}`} value={field.value} onChange={value=>questionEdit(q,{englishText:{...s.edits[q.id]?.englishText,[field.key]:value}})}/>
-                      </div>)}
-                      {questionType(q) === "CQ" && (
-                        <>
-                          <label className="block text-xs">
-                            উদ্দীপক
-                            <RichTextField
-                              label={`উদ্দীপক ${i + 1}`}
-                              value={q.stimulus || q.text}
-                              onChange={(stimulus) =>
-                                questionEdit(q, { stimulus })
-                              }
-                            />
-                          </label>
-                          {Object.entries(q.subQuestions || {}).map(
-                            ([key, val]) => (
-                              <label key={key} className="block text-xs">
-                                উপপ্রশ্ন {key}
-                                <RichTextField
-                                  label={`উপপ্রশ্ন ${i + 1} ${key}`}
-                                  value={val}
-                                  onChange={(text) =>
-                                    questionEdit(q, {
-                                      subQuestions: {
-                                        ...q.subQuestions!,
-                                        [key]: text,
-                                      },
-                                    })
-                                  }
-                                />
-                              </label>
-                            ),
-                          )}
-                        </>
-                      )}
-                      {questionType(q) === "MCQ" &&
-                        Object.entries(q.options || {}).map(([key, val]) => (
-                          <label key={key} className="block text-xs">
-                            অপশন {key}
-                            <RichTextField
-                              label={`অপশন ${i + 1} ${key}`}
-                              value={val}
-                              onChange={(text) =>
-                                questionEdit(q, {
-                                  options: { ...q.options, [key]: text },
-                                })
-                              }
-                            />
-                          </label>
-                        ))}
-                      <label className="block text-xs">
-                        ছবির HTTPS URL
-                        <input
-                          className={input}
-                          type="url"
-                          value={s.attachments[q.id]?.image || ""}
-                          onChange={(e) =>
-                            attachment(q.id, { image: e.target.value })
-                          }
-                        />
-                      </label>
-                      {s.attachments[q.id]?.image &&
-                        !safeImage(s.attachments[q.id].image) && (
-                          <p className="text-xs text-red-600">
-                            সঠিক HTTPS ছবির URL দিন।
-                          </p>
-                        )}
-                      {questionType(q) === "CQ" && (
-                        <label className="block text-xs">
-                          বিভাগের নাম
-                          <input
-                            className={input}
-                            value={s.attachments[q.id]?.division || ""}
-                            placeholder={q.topic || "সাধারণ বিভাগ"}
-                            onChange={(e) =>
-                              attachment(q.id, { division: e.target.value })
-                            }
-                          />
-                        </label>
-                      )}
-                      <label className="flex gap-2 text-sm">
-                        <input
-                          type="checkbox"
-                          checked={s.attachments[q.id]?.important || false}
-                          onChange={(e) =>
-                            attachment(q.id, { important: e.target.checked })
-                          }
-                        />{" "}
-                        গুরুত্বপূর্ণ প্রশ্ন
-                      </label>
-                      <button
-                        onClick={() => {
-                          const edits = { ...s.edits };
-                          delete edits[q.id];
-                          update({ ...s, edits });
-                        }}
-                        className="text-xs text-emerald-700 underline"
-                      >
-                        প্রশ্নের মূল লেখা ফিরিয়ে আনুন
-                      </button>
-                    </div>
-                  </details>
-                ))}
-              </div>
-            </section>
-          )}
           {s.show.duplicates && duplicates.size > 0 && (
             <p
               data-noprint

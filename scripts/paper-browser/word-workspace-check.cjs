@@ -382,10 +382,11 @@ export async function quoteQuestions(){return {ok:true,total:0,balance:2000,coun
         0,
     );
     await page
-      .locator("summary")
-      .filter({ hasText: "Choose this related question?" })
+      .locator('.paper-sheet [aria-label="প্রশ্ন 1 — ক্লিক করে এডিট"]')
+      .first()
       .click();
-    const field = page.getByLabel("প্রশ্ন 1", { exact: true });
+    const box = page.locator(".inline-edit-box");
+    const field = box.getByLabel("প্রশ্ন 1", { exact: true });
     await field.fill("Select format text");
     await field.selectText();
     await page
@@ -397,6 +398,7 @@ export async function quoteQuestions(){return {ok:true,total:0,balance:2000,coun
     await page.getByLabel("প্রশ্ন 1: b", { exact: true }).click();
     assert.match(await field.inputValue(), /\[size=18\]/);
     assert.match(await field.inputValue(), /\[b\]/);
+    await box.getByRole("button", { name: "সেভ", exact: true }).click();
     const rendered = page
       .locator(".paper-question strong")
       .filter({ hasText: "Select format text" });
