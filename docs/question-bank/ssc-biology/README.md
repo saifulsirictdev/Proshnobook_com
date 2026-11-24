@@ -1,4 +1,21 @@
-# Current milestone — chapter 13, জীবের পরিবেশ (2026-11-20)
+# Current milestone — all14 chapter author drafts and scoped release preparation (2026-11-20)
+
+**4,480 answered original/review drafts:2,800MCQ /700CQ /980SQ.** Each chapter has200MCQ +50CQ +70SQ; CQ ক/খ/গ/ঘ marks1/2/3/4. Numerical completion is not independent textbook, teacher or semantic certification.
+
+- `chapter-14.html`:320 answered biotechnology questions and3 relevant original diagrams; `questions.html`:all4,480,45 embedded figures. Tissue culture, recombinant DNA and evidence stages have Bengali written equivalents. Conceptual, not laboratory protocols.
+- Chapter14 preserves137 earlier chapter1–13 artifacts/readers byte-identically to `cfff02c`. Definition-syntax lexical screen flags3 distinct-target MCQ pairs; author-dispositioned, **not semantic/distractor certification**.
+- **129/129 focused Biology tests PASS**, including actual uploader, authoring reconciliation, offline reader, owner-only/idempotent two-stage release and failed approval rollback tests. Full-repository TypeScript PASS; all-subject AutoModel/English156/156PASS. Not a full-suite or local production build claim.
+- Seven chapter14 raw tables:320 answered questions. Safeguards:callus not universal, surface asepsis not virus proof, acclimatization, marker/insertion/expression/activity distinct, no universal biotech medical/pest/food claims, no unsafe unknown cultures/environmental release. Enrichment and independent SSC depth/terminology review remain explicit.
+- Biology now explicitly registered as45 prepared cards.45 public SVGs and exact renderer allowlist mapped without rewriting historical canonical chapter files. **Assets not yet live-verified; import/approval/deployment still pending.**
+- `release-ssc-biology.cjs` is explicit one-off code, never a default build hook. It pins4480 question identities, every batch digest and45 live asset hashes, imports Pending then separately owner-approves exactly those IDs with audit records. Physics/Chemistry never republished by this code.
+- Biology official model marks/time are unregistered:teacher supplies the scheme, no invented official blueprint. Complete approved book stock blocks AI; selected-topic shortages are reported, never silently filled from other topics.
+- Source checkpoint Drive`1Hy3WEEJ8989kqZc8KkZIPu9E89EyMGFq` remote size52150/MD5`2f6605aa385cdbd85f781974a148bab7` independently verified. Final full-source backup recorded separately; not a DB backup.
+
+Historical sections below retain snapshot counts/status, not current release results.
+
+---
+
+# Historical milestone — chapter 13, জীবের পরিবেশ (2026-11-20)
 
 **4,160 answered review drafts:2,600 MCQ /650 CQ /910 SQ.** Chapters1–13 each have200MCQ +50CQ +70SQ. **Chapter14 remains320 questions short**; full target4,480 is not finished.
 

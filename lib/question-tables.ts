@@ -1,7 +1,8 @@
+import { BIOLOGY_FIGURE_PATHS } from "./ssc-biology-assets";
 /** Bounded, literal Markdown tables and our allowlisted versioned question SVGs only.
  * No HTML, attributes, arbitrary URLs, links or Markdown evaluation.
  */
-export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string}|{kind:"physics-image";alt:string;src:string}|{kind:"chemistry-image";alt:string;src:string};
+export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string}|{kind:"physics-image";alt:string;src:string}|{kind:"chemistry-image";alt:string;src:string}|{kind:"biology-image";alt:string;src:string};
 export function questionBlocks(text:string):QuestionBlock[]{
  const lines=text.split("\n"),out:QuestionBlock[]=[];let buffer:string[]=[];
  const flush=()=>{if(buffer.length){out.push({kind:"text",text:buffer.join("\n")});buffer=[];}};
@@ -18,6 +19,8 @@ export function questionBlocks(text:string):QuestionBlock[]{
   // origin and versioned chapter paths; never allow arbitrary images or HTML.
   const physics=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-physics-ch(?:[5-9]|1[0-4])-v1\/[a-z0-9-]+\.svg)\)$/);
   if(physics){flush();out.push({kind:"physics-image",alt:physics[1]||"পদার্থবিজ্ঞানের চিত্র",src:physics[2]});i++;continue;}
+  const biology=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com(\/question-bank\/ssc-biology-ch(?:[1-9]|1[0-4])-v1\/[a-z-]+\.svg))\)$/);
+  if(biology && BIOLOGY_FIGURE_PATHS.includes(biology[3])){flush();out.push({kind:"biology-image",alt:biology[1]||"জীববিজ্ঞানের চিত্র",src:biology[2]});i++;continue;}
   // Exact reviewed Chemistry figure names only; never generic URLs or SVG paths.
   const chemistry=lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-chemistry-ch1-v1\/(?:explosive|flammable|toxic|irritant|health|radioactive|environment|corrosive|ppe|photosynthesis|spraying)\.png)\)$/)
     || lines[i].trim().match(/^!\[([^\]\n]{0,300})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-chemistry-ch2-v1\/(?:(?:particle-states|permanganate|dye|gas-diffusion|leak-test|candle|urea-apparatus|wax-apparatus|boiling-apparatus|heating-native|cooling-native|sublimation-particles|sublimation-apparatus|mixtures)\.png|(?:heating|diffusion)-(?:0[1-9]|1[0-4])\.svg))\)$/)

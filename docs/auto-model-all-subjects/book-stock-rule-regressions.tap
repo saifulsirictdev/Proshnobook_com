@@ -2,937 +2,937 @@ TAP version 13
 # Subtest: rollout probe reads approved subject stock only, assembles 20 models and never mutates or calls AI
 ok 1 - rollout probe reads approved subject stock only, assembles 20 models and never mutates or calls AI
   ---
-  duration_ms: 662.599274
+  duration_ms: 811.583455
   type: 'test'
   ...
 # Subtest: rollout probe fails closed on insufficient stock, truncated scans and DB errors
 ok 2 - rollout probe fails closed on insufficient stock, truncated scans and DB errors
   ---
-  duration_ms: 12.458164
+  duration_ms: 16.840438
   type: 'test'
   ...
 # Subtest: every catalog class/subject can opt into an explicit syllabus; no guessed full marks or inherited math
 ok 3 - every catalog class/subject can opt into an explicit syllabus; no guessed full marks or inherited math
   ---
-  duration_ms: 14.376613
+  duration_ms: 31.461929
   type: 'test'
   ...
 # Subtest: database stock completes exactly 30 unique MCQ exclusively from selected topics
 ok 4 - database stock completes exactly 30 unique MCQ exclusively from selected topics
   ---
-  duration_ms: 32.354778
+  duration_ms: 61.18354
   type: 'test'
   ...
 # Subtest: a 28-question pool requests only the two missing MCQ, not a replacement model
 ok 5 - a 28-question pool requests only the two missing MCQ, not a replacement model
   ---
-  duration_ms: 6.279439
+  duration_ms: 3.631369
   type: 'test'
   ...
 # Subtest: registered mathematics and physics keep their quotas and minimise AI rather than forcing empty-topic rotation
 ok 6 - registered mathematics and physics keep their quotas and minimise AI rather than forcing empty-topic rotation
   ---
-  duration_ms: 56.955762
+  duration_ms: 65.326163
   type: 'test'
   ...
 # Subtest: written questions and per-question/part marks use the supplied syllabus, surviving save and print sections
 ok 7 - written questions and per-question/part marks use the supplied syllabus, surviving save and print sections
   ---
-  duration_ms: 4.007008
+  duration_ms: 3.541058
   type: 'test'
   ...
 # Subtest: malformed, duplicate, incomplete and externally-dependent questions never count as stock
 ok 8 - malformed, duplicate, incomplete and externally-dependent questions never count as stock
   ---
-  duration_ms: 0.539135
+  duration_ms: 0.64294
   type: 'test'
   ...
 # Subtest: server uses complete bank without AI, quota, settings mutation or leaking paid answers
 ok 9 - server uses complete bank without AI, quota, settings mutation or leaking paid answers
   ---
-  duration_ms: 77.579418
+  duration_ms: 108.973157
   type: 'test'
   ...
 # Subtest: server fills just the gap into private unapproved rows, reuses checkpoints and returns only a full model
 ok 10 - server fills just the gap into private unapproved rows, reuses checkpoints and returns only a full model
   ---
-  duration_ms: 45.918984
+  duration_ms: 51.165116
   type: 'test'
   ...
 # Subtest: auth, missing syllabus, DB failures, scan cap, locks and quotas fail closed before AI
 ok 11 - auth, missing syllabus, DB failures, scan cap, locks and quotas fail closed before AI
   ---
-  duration_ms: 223.353408
+  duration_ms: 246.738075
   type: 'test'
   ...
 # Subtest: provider is bounded to requested gap and rejects duplicates, wrong types, missing answers and invented figures
 ok 12 - provider is bounded to requested gap and rejects duplicates, wrong types, missing answers and invented figures
   ---
-  duration_ms: 17.303351
+  duration_ms: 23.826794
   type: 'test'
   ...
 # Subtest: setup UI requires selected topics and explicit human marks; no automatic default syllabus
 ok 13 - setup UI requires selected topics and explicit human marks; no automatic default syllabus
   ---
-  duration_ms: 0.557032
+  duration_ms: 0.752597
   type: 'test'
   ...
 # Subtest: different written marks and overlapping topic scopes get distinct assignments and correct printed marks
 ok 14 - different written marks and overlapping topic scopes get distinct assignments and correct printed marks
   ---
-  duration_ms: 3.581123
+  duration_ms: 9.996566
   type: 'test'
   ...
 # Subtest: setup checkbox interaction opens preparation with the exact selected syllabus, never a hidden default
 ok 15 - setup checkbox interaction opens preparation with the exact selected syllabus, never a hidden default
   ---
-  duration_ms: 562.878554
+  duration_ms: 695.708498
   type: 'test'
   ...
 # Subtest: private generated written rows retain section compatibility rather than filling a differently-marked essay
 ok 16 - private generated written rows retain section compatibility rather than filling a differently-marked essay
   ---
-  duration_ms: 1.126839
+  duration_ms: 1.758021
   type: 'test'
   ...
 # Subtest: read-only preflight reports selected scope, exact shortfall and marks without answers, writes or AI
 ok 17 - read-only preflight reports selected scope, exact shortfall and marks without answers, writes or AI
   ---
-  duration_ms: 154.333155
+  duration_ms: 177.741809
   type: 'test'
   ...
 # Subtest: recent-question rotation prefers an entirely fresh model, but never creates artificial AI shortages
 ok 18 - recent-question rotation prefers an entirely fresh model, but never creates artificial AI shortages
   ---
-  duration_ms: 18.125772
+  duration_ms: 3.385468
   type: 'test'
   ...
 # Subtest: history is bounded, deduplicated, tolerant of corrupt browser values and isolated by class/subject/kind
 ok 19 - history is bounded, deduplicated, tolerant of corrupt browser values and isolated by class/subject/kind
   ---
-  duration_ms: 1.030619
+  duration_ms: 0.944522
   type: 'test'
   ...
 # Subtest: book-wide complete approved stock disables AI even when the chosen topics are empty
 ok 20 - book-wide complete approved stock disables AI even when the chosen topics are empty
   ---
-  duration_ms: 25.067287
+  duration_ms: 15.289804
   type: 'test'
   ...
 # Subtest: book guard is structural, excludes pending items, fails closed on read errors and rechecks after lease
 ok 21 - book guard is structural, excludes pending items, fails closed on read errors and rechecks after lease
   ---
-  duration_ms: 79.340139
+  duration_ms: 90.010248
   type: 'test'
   ...
 # Subtest: the database-only book rule applies to every catalog subject with a teacher-supplied MCQ scheme
 ok 22 - the database-only book rule applies to every catalog subject with a teacher-supplied MCQ scheme
   ---
-  duration_ms: 1257.09734
+  duration_ms: 1292.787941
   type: 'test'
   ...
 # Subtest: full-book scan overflow cannot authorize AI even when the selected-topic scan is small
 ok 23 - full-book scan overflow cannot authorize AI even when the selected-topic scan is small
   ---
-  duration_ms: 19.45132
+  duration_ms: 16.295685
   type: 'test'
   ...
 # Subtest: blueprints scoped to SSC general math, practice-only, not English/higher math/other grades
 ok 24 - blueprints scoped to SSC general math, practice-only, not English/higher math/other grades
   ---
-  duration_ms: 1.963268
+  duration_ms: 1.89297
   type: 'test'
   ...
 # Subtest: all 17 exact catalog topics map once, unknown chapter text is never guessed
 ok 25 - all 17 exact catalog topics map once, unknown chapter text is never guessed
   ---
-  duration_ms: 0.342033
+  duration_ms: 0.350158
   type: 'test'
   ...
 # Subtest: complete written assembly: 2 CQ per division and 15 SHORT, no partial success
 ok 26 - complete written assembly: 2 CQ per division and 15 SHORT, no partial success
   ---
-  duration_ms: 6.788494
+  duration_ms: 3.095425
   type: 'test'
   ...
 # Subtest: MCQ balanced topic rotation, exact count, no duplicate stems or IDs
 ok 27 - MCQ balanced topic rotation, exact count, no duplicate stems or IDs
   ---
-  duration_ms: 1.599817
+  duration_ms: 1.894834
   type: 'test'
   ...
 # Subtest: four-part generic CQ, bad marks/options, missing answers, unknown dependencies excluded
 ok 28 - four-part generic CQ, bad marks/options, missing answers, unknown dependencies excluded
   ---
-  duration_ms: 0.499542
+  duration_ms: 0.576089
   type: 'test'
   ...
 # Subtest: inline diagram stays in same selected record; repeated CQ stimuli do not duplicate
 ok 29 - inline diagram stays in same selected record; repeated CQ stimuli do not duplicate
   ---
-  duration_ms: 0.68198
+  duration_ms: 0.799741
   type: 'test'
   ...
 # Subtest: new model settings survive validation and normal saved paper restoration
 ok 30 - new model settings survive validation and normal saved paper restoration
   ---
-  duration_ms: 16.237116
+  duration_ms: 21.074497
   type: 'test'
   ...
 # Subtest: written preview has 4 divisions + SHORT, CQ numbering 1–8, one global choice instruction
 ok 31 - written preview has 4 divisions + SHORT, CQ numbering 1–8, one global choice instruction
   ---
-  duration_ms: 3.19797
+  duration_ms: 3.429856
   type: 'test'
   ...
 # Subtest: server action requires teacher auth and valid blueprint before any DB access
 ok 32 - server action requires teacher auth and valid blueprint before any DB access
   ---
-  duration_ms: 213.143757
+  duration_ms: 213.794375
   type: 'test'
   ...
 # Subtest: server action selects approved or own pending alias-matched stock and returns IDs, never paid text/answers
 ok 33 - server action selects approved or own pending alias-matched stock and returns IDs, never paid text/answers
   ---
-  duration_ms: 75.498253
+  duration_ms: 80.49778
   type: 'test'
   ...
 # Subtest: oversized pool fails explicitly rather than reporting truncated bank shortages
 ok 34 - oversized pool fails explicitly rather than reporting truncated bank shortages
   ---
-  duration_ms: 12.062619
+  duration_ms: 18.647305
   type: 'test'
   ...
 # Subtest: MCQ enforces every feasible split and fixed 2/1/2, even under skewed stock
 ok 35 - MCQ enforces every feasible split and fixed 2/1/2, even under skewed stock
   ---
-  duration_ms: 13.335128
+  duration_ms: 18.786488
   type: 'test'
   ...
 # Subtest: MCQ shortages fail closed despite abundant total stock, after eligibility and deduplication
 ok 36 - MCQ shortages fail closed despite abundant total stock, after eligibility and deduplication
   ---
-  duration_ms: 1.535779
+  duration_ms: 1.397756
   type: 'test'
   ...
 # Subtest: editor flags 30 valid MCQ with wrong division counts but accepts all allowed distributions
 ok 37 - editor flags 30 valid MCQ with wrong division counts but accepts all allowed distributions
   ---
-  duration_ms: 1.417366
+  duration_ms: 1.590965
   type: 'test'
   ...
 # Subtest: server action returns only IDs for compliant MCQ; stream shortage returns no partial model
 ok 38 - server action returns only IDs for compliant MCQ; stream shortage returns no partial model
   ---
-  duration_ms: 57.006229
+  duration_ms: 67.132292
   type: 'test'
   ...
 # Subtest: MCQ caps figure-bearing QUESTIONS at five while preserving every division quota
 ok 39 - MCQ caps figure-bearing QUESTIONS at five while preserving every division quota
   ---
-  duration_ms: 4.972875
+  duration_ms: 7.86967
   type: 'test'
   ...
 # Subtest: diagram sampling reserves slots for later divisions rather than greedily exhausting five
 ok 40 - diagram sampling reserves slots for later divisions rather than greedily exhausting five
   ---
-  duration_ms: 2.902964
+  duration_ms: 1.095936
   type: 'test'
   ...
 # Subtest: only splits compatible with the global image budget are sampled
 ok 41 - only splits compatible with the global image budget are sampled
   ---
-  duration_ms: 0.623067
+  duration_ms: 0.528205
   type: 'test'
   ...
 # Subtest: editor warns on six diagram questions; five questions with multiple figures are valid
 ok 42 - editor warns on six diagram questions; five questions with multiple figures are valid
   ---
-  duration_ms: 1.609544
+  duration_ms: 1.966002
   type: 'test'
   ...
 # Subtest: MCQ chapter classification splits only 9/10 from 16, retaining all written divisions
 ok 43 - MCQ chapter classification splits only 9/10 from 16, retaining all written divisions
   ---
-  duration_ms: 0.188114
+  duration_ms: 0.252883
   type: 'test'
   ...
 # Subtest: missing any fixed component fails closed with specific shortage even with excess elsewhere
 ok 44 - missing any fixed component fails closed with specific shortage even with excess elsewhere
   ---
-  duration_ms: 1.519264
+  duration_ms: 1.328806
   type: 'test'
   ...
 # Subtest: editor rejects legacy combined-only five and wrong 2/1/2 counts without rewriting questions
 ok 45 - editor rejects legacy combined-only five and wrong 2/1/2 counts without rewriting questions
   ---
-  duration_ms: 1.039193
+  duration_ms: 1.168793
   type: 'test'
   ...
 # Subtest: diagram reservation respects each mandatory subpool instead of counting interchangeable final five
 ok 46 - diagram reservation respects each mandatory subpool instead of counting interchangeable final five
   ---
-  duration_ms: 2.24962
+  duration_ms: 1.589483
   type: 'test'
   ...
 # Subtest: Chemistry explicit owner practice policy: canonical12chapters, separate stable IDs, preserved marks and no official-year claim
 ok 47 - Chemistry explicit owner practice policy: canonical12chapters, separate stable IDs, preserved marks and no official-year claim
   ---
-  duration_ms: 11.45768
+  duration_ms: 18.588728
   type: 'test'
   ...
 # Subtest: all8110actual canonical local draft fixtures retain authoring metadata; compatible stock exists per chapter/type
 ok 48 - all8110actual canonical local draft fixtures retain authoring metadata; compatible stock exists per chapter/type
   ---
-  duration_ms: 419.261936
+  duration_ms: 516.733561
   type: 'test'
   ...
 # Subtest: 40seed written models: each CQ/SQ has exact fixedsix plus oneother, independent seventh chapters and unique IDs
 ok 49 - 40seed written models: each CQ/SQ has exact fixedsix plus oneother, independent seventh chapters and unique IDs
   ---
-  duration_ms: 9231.767534
+  duration_ms: 9120.640304
   type: 'test'
   ...
 # Subtest: 25MCQ balanced fullbook rotation: all12chapters, max3, existing two perchapter stock yields one third when sufficient
 ok 50 - 25MCQ balanced fullbook rotation: all12chapters, max3, existing two perchapter stock yields one third when sufficient
   ---
-  duration_ms: 4894.958485
+  duration_ms: 3889.508077
   type: 'test'
   ...
 # Subtest: missing mandatoryCQ/SQ, nootherchapter and insufficientMCQ all fail closed without partial IDs
 ok 51 - missing mandatoryCQ/SQ, nootherchapter and insufficientMCQ all fail closed without partial IDs
   ---
-  duration_ms: 6547.17396
+  duration_ms: 5158.175679
   type: 'test'
   ...
 # Subtest: real native chemistryPNG and generatedSVG render and classify; wrongsubject, tampered URLs, malformed records rejected
 ok 52 - real native chemistryPNG and generatedSVG render and classify; wrongsubject, tampered URLs, malformed records rejected
   ---
-  duration_ms: 29.433005
+  duration_ms: 20.178981
   type: 'test'
   ...
 # Subtest: paper/editor/print retain marks, instructions, fourparts, edits and extras visibly; settings roundtrip
 ok 53 - paper/editor/print retain marks, instructions, fourparts, edits and extras visibly; settings roundtrip
   ---
-  duration_ms: 281.361437
+  duration_ms: 210.275358
   type: 'test'
   ...
 # Subtest: real actionqueries approvedChemistryonly; empty production-compatible stock blocks, no autoimport/approval or accessbypass
 ok 54 - real actionqueries approvedChemistryonly; empty production-compatible stock blocks, no autoimport/approval or accessbypass
   ---
-  duration_ms: 561.352631
+  duration_ms: 467.175679
   type: 'test'
   ...
 # Subtest: English generation denies unauthorized users before provider or database writes
 ok 55 - English generation denies unauthorized users before provider or database writes
   ---
-  duration_ms: 692.117945
+  duration_ms: 621.142428
   type: 'test'
   ...
 # Subtest: private drafts support save/reopen but deny a second teacher; daily quota is enforced
 ok 56 - private drafts support save/reopen but deny a second teacher; daily quota is enforced
   ---
-  duration_ms: 338.227572
+  duration_ms: 281.312098
   type: 'test'
   ...
 # Subtest: concurrent generation requests allow only one provider call
 ok 57 - concurrent generation requests allow only one provider call
   ---
-  duration_ms: 211.727938
+  duration_ms: 181.044538
   type: 'test'
   ...
 # Subtest: draft save rejects stale tabs instead of silently overwriting newer edits
 ok 58 - draft save rejects stale tabs instead of silently overwriting newer edits
   ---
-  duration_ms: 221.785573
+  duration_ms: 146.792223
   type: 'test'
   ...
 # Subtest: admin bypasses daily quota including existing full quota, but retains generation lock
 ok 59 - admin bypasses daily quota including existing full quota, but retains generation lock
   ---
-  duration_ms: 192.036006
+  duration_ms: 167.618158
   type: 'test'
   ...
 # Subtest: English action durably checkpoints valid tasks before later provider failure and denies other owner
 ok 60 - English action durably checkpoints valid tasks before later provider failure and denies other owner
   ---
-  duration_ms: 166.061719
+  duration_ms: 137.893816
   type: 'test'
   ...
 # Subtest: approved bank is checked before provider configuration/quota; pending and mismatched records never cross owners
 ok 61 - approved bank is checked before provider configuration/quota; pending and mismatched records never cross owners
   ---
-  duration_ms: 182.317342
+  duration_ms: 139.678451
   type: 'test'
   ...
 # Subtest: partial bank hit sends only missing task to provider and combines validated output
 ok 62 - partial bank hit sends only missing task to provider and combines validated output
   ---
-  duration_ms: 191.94681
+  duration_ms: 137.780891
   type: 'test'
   ...
 # Subtest: signed-in TEACHER can generate, save, list and reopen only their own English drafts
 ok 63 - signed-in TEACHER can generate, save, list and reopen only their own English drafts
   ---
-  duration_ms: 150.028349
+  duration_ms: 118.884101
   type: 'test'
   ...
 # Subtest: TEACHER keeps one-generation lock and ten-per-day quota; never gets ADMIN bypass
 ok 64 - TEACHER keeps one-generation lock and ten-per-day quota; never gets ADMIN bypass
   ---
-  duration_ms: 163.100234
+  duration_ms: 130.37569
   type: 'test'
   ...
 # Subtest: TEACHER interrupted generation checkpoints remain private and pending approval
 ok 65 - TEACHER interrupted generation checkpoints remain private and pending approval
   ---
-  duration_ms: 134.57644
+  duration_ms: 128.289838
   type: 'test'
   ...
 # Subtest: paid English boundary blocks changed writing/source selection when full approved book exists
 ok 66 - paid English boundary blocks changed writing/source selection when full approved book exists
   ---
-  duration_ms: 187.34324
+  duration_ms: 210.66368
   type: 'test'
   ...
 # Subtest: First paper checks approved bank then requires sources before any missing-part AI across all grades
 ok 67 - First paper checks approved bank then requires sources before any missing-part AI across all grades
   ---
-  duration_ms: 200.392244
+  duration_ms: 173.217661
   type: 'test'
   ...
 # Subtest: First paper rejects unauthorised and invalid inputs without bank/provider lookup
 ok 68 - First paper rejects unauthorised and invalid inputs without bank/provider lookup
   ---
-  duration_ms: 96.887527
+  duration_ms: 110.352363
   type: 'test'
   ...
 # Subtest: Full entry mounts auto preparation instead of task configuration, with review before layout
 ok 69 - Full entry mounts auto preparation instead of task configuration, with review before layout
   ---
-  duration_ms: 17.149549
+  duration_ms: 30.237975
   type: 'test'
   ...
 # Subtest: Second-paper auto models select grade-specific grammar/writing, require no seen extract and retain review routing
 ok 70 - Second-paper auto models select grade-specific grammar/writing, require no seen extract and retain review routing
   ---
-  duration_ms: 151.660035
+  duration_ms: 250.671574
   type: 'test'
   ...
 # Subtest: Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback
 ok 71 - Thirty distinct textbook units and six poems rotate without duplicate passages or foreign-grade fallback
   ---
-  duration_ms: 78.772197
+  duration_ms: 76.624448
   type: 'test'
   ...
 # Subtest: First-paper Question Item routes use the same bank preparation with the chosen ids
 ok 72 - First-paper Question Item routes use the same bank preparation with the chosen ids
   ---
-  duration_ms: 8.77015
+  duration_ms: 14.621966
   type: 'test'
   ...
 # Subtest: Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup
 ok 73 - Second-paper auto models use the approved bank with its own writing topics before any AI/default-topic lookup
   ---
-  duration_ms: 26.045031
+  duration_ms: 59.179252
   type: 'test'
   ...
 # Subtest: Second paper does not spend AI quota on a database/save failure or unclassified failure
 ok 74 - Second paper does not spend AI quota on a database/save failure or unclassified failure
   ---
-  duration_ms: 39.657713
+  duration_ms: 31.011678
   type: 'test'
   ...
 # Subtest: Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade
 ok 75 - Second-paper AI fallback requires an explicit approved-stock shortfall and retains the selected grade
   ---
-  duration_ms: 22.879894
+  duration_ms: 14.62091
   type: 'test'
   ...
 # Subtest: First-paper complete approved models never invoke source lookup or AI
 ok 76 - First-paper complete approved models never invoke source lookup or AI
   ---
-  duration_ms: 35.365979
+  duration_ms: 27.859002
   type: 'test'
   ...
 # Subtest: First-paper AI preserves selected item IDs, requires exact sources and rejects invalid selections before DB
 ok 77 - First-paper AI preserves selected item IDs, requires exact sources and rejects invalid selections before DB
   ---
-  duration_ms: 24.764528
+  duration_ms: 22.568976
   type: 'test'
   ...
 # Subtest: partial stock retains exact writing signatures instead of regenerating its available items
 ok 78 - partial stock retains exact writing signatures instead of regenerating its available items
   ---
-  duration_ms: 12.82675
+  duration_ms: 7.497641
   type: 'test'
   ...
 # Subtest: complete-book databaseOnly flag blocks both English papers before sources, provider or quota
 ok 79 - complete-book databaseOnly flag blocks both English papers before sources, provider or quota
   ---
-  duration_ms: 134.950222
+  duration_ms: 110.602582
   type: 'test'
   ...
 # Subtest: Prepared complete model validates 100 marks, thirteen tasks, linked seen/unseen groups and answer keys
 ok 80 - Prepared complete model validates 100 marks, thirteen tasks, linked seen/unseen groups and answer keys
   ---
-  duration_ms: 3.73604
+  duration_ms: 3.273666
   type: 'test'
   ...
 # Subtest: Only complete approved same-grade full models with answers are reusable
 ok 81 - Only complete approved same-grade full models with answers are reusable
   ---
-  duration_ms: 15.68987
+  duration_ms: 12.271829
   type: 'test'
   ...
 # Subtest: Bank-only preparation saves an owned private review draft without provider or quota writes
 ok 82 - Bank-only preparation saves an owned private review draft without provider or quota writes
   ---
-  duration_ms: 83.525429
+  duration_ms: 153.25065
   type: 'test'
   ...
 # Subtest: Every supported grade reports missing full stock instead of generating; unauthorized calls read nothing
 ok 83 - Every supported grade reports missing full stock instead of generating; unauthorized calls read nothing
   ---
-  duration_ms: 168.256941
+  duration_ms: 123.741709
   type: 'test'
   ...
 # Subtest: Full model import is ADMIN-only, Pending-only and preserves existing records on retry
 ok 84 - Full model import is ADMIN-only, Pending-only and preserves existing records on retry
   ---
-  duration_ms: 52.739988
+  duration_ms: 35.634543
   type: 'test'
   ...
 # Subtest: Complete library covers all thirty exact extracts with keys, three unseen groups and all six poems
 ok 85 - Complete library covers all thirty exact extracts with keys, three unseen groups and all six poems
   ---
-  duration_ms: 143.484427
+  duration_ms: 108.792787
   type: 'test'
   ...
 # Subtest: Batch import checks manifest, writes 31 Pending snapshots atomically and preserves decisions on retry
 ok 86 - Batch import checks manifest, writes 31 Pending snapshots atomically and preserves decisions on retry
   ---
-  duration_ms: 176.024474
+  duration_ms: 173.176781
   type: 'test'
   ...
 # Subtest: Independent Question Item stock assembles in syllabus order without a complete snapshot
 ok 87 - Independent Question Item stock assembles in syllabus order without a complete snapshot
   ---
-  duration_ms: 100.919857
+  duration_ms: 82.83894
   type: 'test'
   ...
 # Subtest: Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicated and retry-safe
 ok 88 - Question Item import is ADMIN-only, digest-bound, Pending-only, deduplicated and retry-safe
   ---
-  duration_ms: 1505.854978
+  duration_ms: 1292.317247
   type: 'test'
   ...
 # Subtest: The same item stock serves seen-only, unseen-only and individual tasks without requiring other stock
 ok 89 - The same item stock serves seen-only, unseen-only and individual tasks without requiring other stock
   ---
-  duration_ms: 34.049619
+  duration_ms: 24.715717
   type: 'test'
   ...
 # Subtest: ADMIN may explicitly reopen an existing decision for reapproval without deleting content or losing old status
 ok 90 - ADMIN may explicitly reopen an existing decision for reapproval without deleting content or losing old status
   ---
-  duration_ms: 66.884781
+  duration_ms: 56.609915
   type: 'test'
   ...
 # Subtest: Bank selection looks ahead so a random Seen-1 choice does not hide a valid distinct Seen-2
 ok 91 - Bank selection looks ahead so a random Seen-1 choice does not hide a valid distinct Seen-2
   ---
-  duration_ms: 3.672025
+  duration_ms: 3.416143
   type: 'test'
   ...
 # Subtest: Common import saves exactly the server-prepared item Pending, never resets Approved and denies forged keys
 ok 92 - Common import saves exactly the server-prepared item Pending, never resets Approved and denies forged keys
   ---
-  duration_ms: 290.859404
+  duration_ms: 199.826069
   type: 'test'
   ...
 # Subtest: Common ADMIN readiness and user preparation use the same validated stock, not status-only receipts
 ok 93 - Common ADMIN readiness and user preparation use the same validated stock, not status-only receipts
   ---
-  duration_ms: 19.043922
+  duration_ms: 13.932468
   type: 'test'
   ...
 # Subtest: Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and preserves concurrent decisions
 ok 94 - Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and preserves concurrent decisions
   ---
-  duration_ms: 77.057316
+  duration_ms: 56.992107
   type: 'test'
   ...
 # Subtest: Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock
 ok 95 - Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock
   ---
-  duration_ms: 348.915333
+  duration_ms: 306.707409
   type: 'test'
   ...
 # Subtest: Bulk approval cannot approve another grade under the selected grade scope
 ok 96 - Bulk approval cannot approve another grade under the selected grade scope
   ---
-  duration_ms: 12.596069
+  duration_ms: 12.307333
   type: 'test'
   ...
 # Subtest: Original builder adapter preserves linked English passages, structured tables, keys, numbering and saved setup
 ok 97 - Original builder adapter preserves linked English passages, structured tables, keys, numbering and saved setup
   ---
-  duration_ms: 25.579041
+  duration_ms: 20.526811
   type: 'test'
   ...
 # Subtest: English build route uses the original builder, isolates general storage and retains owned draft checks
 ok 98 - English build route uses the original builder, isolates general storage and retains owned draft checks
   ---
-  duration_ms: 0.619135
+  duration_ms: 0.681422
   type: 'test'
   ...
 # Subtest: Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle
 ok 99 - Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle
   ---
-  duration_ms: 0.300115
+  duration_ms: 0.318108
   type: 'test'
   ...
 # Subtest: English pagination splits presentation blocks without losing passages, table rows, options, numbering or answers
 ok 100 - English pagination splits presentation blocks without losing passages, table rows, options, numbering or answers
   ---
-  duration_ms: 20.541935
+  duration_ms: 18.88441
   type: 'test'
   ...
 # Subtest: SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance
 ok 101 - SSC prepared Seen candidate is grade-specific, keyed, answer-complete and retains original board provenance
   ---
-  duration_ms: 326.91663
+  duration_ms: 352.98371
   type: 'test'
   ...
 # Subtest: Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination
 ok 102 - Board year filters reject unknown or mixed years without fallback and preserve source through assembly and pagination
   ---
-  duration_ms: 91.87378
+  duration_ms: 87.507193
   type: 'test'
   ...
 # Subtest: Board filter is validated before reads and empty filtered stock never writes a draft
 ok 103 - Board filter is validated before reads and empty filtered stock never writes a draft
   ---
-  duration_ms: 174.808769
+  duration_ms: 206.640787
   type: 'test'
   ...
 # Subtest: Old drafts still validate, while malformed board provenance is rejected
 ok 104 - Old drafts still validate, while malformed board provenance is rejected
   ---
-  duration_ms: 144.633673
+  duration_ms: 94.188345
   type: 'test'
   ...
 # Subtest: SSC registry covers nine existing item types and honestly reports missing poem/story comprehension
 ok 105 - SSC registry covers nine existing item types and honestly reports missing poem/story comprehension
   ---
-  duration_ms: 204.907885
+  duration_ms: 174.090671
   type: 'test'
   ...
 # Subtest: SSC year/source and historical-mark differences render once per question across print fragments
 ok 106 - SSC year/source and historical-mark differences render once per question across print fragments
   ---
-  duration_ms: 295.748061
+  duration_ms: 245.565854
   type: 'test'
   ...
 # Subtest: SSC registry imports only through explicit ADMIN consent and always creates Pending records
 ok 107 - SSC registry imports only through explicit ADMIN consent and always creates Pending records
   ---
-  duration_ms: 279.061541
+  duration_ms: 240.050594
   type: 'test'
   ...
 # Subtest: Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry
 ok 108 - Rajshahi batch preserves distinct passages and keeps ambiguous MCQs out of import registry
   ---
-  duration_ms: 82.547636
+  duration_ms: 82.497529
   type: 'test'
   ...
 # Subtest: Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage
 ok 109 - Expanded SSC batch reports real per-item counts, complete Seen pairs and unique passage coverage
   ---
-  duration_ms: 82.858908
+  duration_ms: 70.520973
   type: 'test'
   ...
 # Subtest: Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail
 ok 110 - Source information tables retain empty cells without inventing extra blanks; wholly empty rows still fail
   ---
-  duration_ms: 99.0415
+  duration_ms: 71.227262
   type: 'test'
   ...
 # Subtest: School literature uses exact source questions, no fabricated passage or board year; full assembly remains approval-gated
 ok 111 - School literature uses exact source questions, no fabricated passage or board year; full assembly remains approval-gated
   ---
-  duration_ms: 226.677138
+  duration_ms: 191.418934
   type: 'test'
   ...
 # Subtest: New 2024 batch expands distinct Seen/Unseen stock while keeping conflicting source exercises out
 ok 112 - New 2024 batch expands distinct Seen/Unseen stock while keeping conflicting source exercises out
   ---
-  duration_ms: 128.084135
+  duration_ms: 83.114541
   type: 'test'
   ...
 # Subtest: 2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts
 ok 113 - 2023 subsets preserve exact original questions, part mapping and historical marks without changing old drafts
   ---
-  duration_ms: 214.010442
+  duration_ms: 156.995071
   type: 'test'
   ...
 # Subtest: 2023 creative continuations meet the ten-new-sentence prompt and do not duplicate source prompts
 ok 114 - 2023 creative continuations meet the ten-new-sentence prompt and do not duplicate source prompts
   ---
-  duration_ms: 0.707478
+  duration_ms: 0.856403
   type: 'test'
   ...
 # Subtest: 2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering
 ok 115 - 2020 source-image batch retains linked Unseen tables, original blanks and independent year filtering
   ---
-  duration_ms: 236.933644
+  duration_ms: 163.872295
   type: 'test'
   ...
 # Subtest: 2019 drafts preserve header blanks and isolate source year without inflating repeated biographies
 ok 116 - 2019 drafts preserve header blanks and isolate source year without inflating repeated biographies
   ---
-  duration_ms: 231.757052
+  duration_ms: 131.303897
   type: 'test'
   ...
 # Subtest: New creative prompts retain original beginnings and exactly ten new sentences without repeated board themes
 ok 117 - New creative prompts retain original beginnings and exactly ten new sentences without repeated board themes
   ---
-  duration_ms: 5.781464
+  duration_ms: 4.014988
   type: 'test'
   ...
 # Subtest: New exercise keys are exact source-column combinations and rearranging positions form the stated order
 ok 118 - New exercise keys are exact source-column combinations and rearranging positions form the stated order
   ---
-  duration_ms: 2.865044
+  duration_ms: 2.728107
   type: 'test'
   ...
 # Subtest: School Unseen provenance stays separate from board years and survives assembly without automatic approval
 ok 119 - School Unseen provenance stays separate from board years and survives assembly without automatic approval
   ---
-  duration_ms: 9.971453
+  duration_ms: 7.938414
   type: 'test'
   ...
 # Subtest: School source labels follow the same default-hidden and opt-in print-fragment presentation
 ok 120 - School source labels follow the same default-hidden and opt-in print-fragment presentation
   ---
-  duration_ms: 74.620018
+  duration_ms: 58.114006
   type: 'test'
   ...
 # Subtest: Expanded school exercise registry preserves exact matching keys, permutations and preceding-paper headers
 ok 121 - Expanded school exercise registry preserves exact matching keys, permutations and preceding-paper headers
   ---
-  duration_ms: 26.340634
+  duration_ms: 26.104506
   type: 'test'
   ...
 # Subtest: Expanded school writing retains original openings, ten new continuation sentences and safe illustrative keys
 ok 122 - Expanded school writing retains original openings, ten new continuation sentences and safe illustrative keys
   ---
-  duration_ms: 0.856686
+  duration_ms: 0.913366
   type: 'test'
   ...
 # Subtest: School reading roles disclose held MCQs and do not inflate complete pairs or distinct text counts
 ok 123 - School reading roles disclose held MCQs and do not inflate complete pairs or distinct text counts
   ---
-  duration_ms: 1.715685
+  duration_ms: 1.691328
   type: 'test'
   ...
 # Subtest: Washington school Unseen preserves cross-page source, original five table blanks and 70–90 word summary
 ok 124 - Washington school Unseen preserves cross-page source, original five table blanks and 70–90 word summary
   ---
-  duration_ms: 1.549405
+  duration_ms: 1.752914
   type: 'test'
   ...
 # Subtest: Textbook authored practice is distinct, answer-complete, traceable and never board-year stock
 ok 125 - Textbook authored practice is distinct, answer-complete, traceable and never board-year stock
   ---
-  duration_ms: 18.807745
+  duration_ms: 20.171472
   type: 'test'
   ...
 # Subtest: Additional image-checked school exercises have exact matching mappings, complete narrative orders and no board-year eligibility
 ok 126 - Additional image-checked school exercises have exact matching mappings, complete narrative orders and no board-year eligibility
   ---
-  duration_ms: 88.766364
+  duration_ms: 86.515264
   type: 'test'
   ...
 # Subtest: New reading pairs distinguish authored practice from intact school questions and stay review-gated
 ok 127 - New reading pairs distinguish authored practice from intact school questions and stay review-gated
   ---
-  duration_ms: 16.34441
+  duration_ms: 13.719748
   type: 'test'
   ...
 # Subtest: Intact historic board tables preserve every fragment/blank, original counts and review gating
 ok 128 - Intact historic board tables preserve every fragment/blank, original counts and review gating
   ---
-  duration_ms: 110.718625
+  duration_ms: 97.758132
   type: 'test'
   ...
 # Subtest: Historical count compatibility is narrow and cannot silently truncate standard or original exercises
 ok 129 - Historical count compatibility is narrow and cannot silently truncate standard or original exercises
   ---
-  duration_ms: 29.782862
+  duration_ms: 22.118674
   type: 'test'
   ...
 # Subtest: Historical table counts survive print fragmentation with practice marks and visible adaptation notes
 ok 130 - Historical table counts survive print fragmentation with practice marks and visible adaptation notes
   ---
-  duration_ms: 165.890309
+  duration_ms: 163.530835
   type: 'test'
   ...
 # Subtest: Authored writing closes practice-only minima with seven ten-sentence stories and fifteen twelve-turn dialogues
 ok 131 - Authored writing closes practice-only minima with seven ten-sentence stories and fifteen twelve-turn dialogues
   ---
-  duration_ms: 151.589663
+  duration_ms: 95.545879
   type: 'test'
   ...
 # Subtest: Authored matching has sixteen standard five-part permutations, exact keys and no false exam provenance
 ok 132 - Authored matching has sixteen standard five-part permutations, exact keys and no false exam provenance
   ---
-  duration_ms: 117.917066
+  duration_ms: 88.775353
   type: 'test'
   ...
 # Subtest: Authored practice labels, prompts and answers survive assembly and print with provenance hidden
 ok 133 - Authored practice labels, prompts and answers survive assembly and print with provenance hidden
   ---
-  duration_ms: 108.324694
+  duration_ms: 106.618814
   type: 'test'
   ...
 # Subtest: Thirty-five authored Unseen pairs reach fifty without false exam provenance or invented answer details
 ok 134 - Thirty-five authored Unseen pairs reach fifty without false exam provenance or invented answer details
   ---
-  duration_ms: 97.386582
+  duration_ms: 99.782478
   type: 'test'
   ...
 # Subtest: Ten authored rearranging groups preserve all eight sentences and complete the forty-group practice minimum
 ok 135 - Ten authored rearranging groups preserve all eight sentences and complete the forty-group practice minimum
   ---
-  duration_ms: 134.949617
+  duration_ms: 71.185074
   type: 'test'
   ...
 # Subtest: School-name selection isolates complete atomic groups, preserves true headers and never falls back
 ok 136 - School-name selection isolates complete atomic groups, preserves true headers and never falls back
   ---
-  duration_ms: 258.907038
+  duration_ms: 243.334985
   type: 'test'
   ...
 # Subtest: School dropdown options come only from approved grade-matched homogeneous reusable groups
 ok 137 - School dropdown options come only from approved grade-matched homogeneous reusable groups
   ---
-  duration_ms: 149.122389
+  duration_ms: 170.392526
   type: 'test'
   ...
 # Subtest: Source-filter UI hides year search, retries failures and ignores stale school requests
 ok 138 - Source-filter UI hides year search, retries failures and ignores stale school requests
   ---
-  duration_ms: 58.13062
+  duration_ms: 56.535941
   type: 'test'
   ...
 # Subtest: New fictional reading and narrative practice keep disclosure, all answers and source-free status through print flow
 ok 139 - New fictional reading and narrative practice keep disclosure, all answers and source-free status through print flow
   ---
-  duration_ms: 300.011125
+  duration_ms: 252.197336
   type: 'test'
   ...
 # Subtest: User-approved same-text variants retain eight source excerpts and disclose authored scope
 ok 140 - User-approved same-text variants retain eight source excerpts and disclose authored scope
   ---
-  duration_ms: 9.21318
+  duration_ms: 7.624828
   type: 'test'
   ...
 # Subtest: Literary variants explicitly retain four new and four reused foundations, not new works
 ok 141 - Literary variants explicitly retain four new and four reused foundations, not new works
   ---
-  duration_ms: 14.873349
+  duration_ms: 13.309373
   type: 'test'
   ...
 # Subtest: SSC auto second paper assembles a full 100-mark owned model from approved stock with non-default writing topics, without AI
 ok 142 - SSC auto second paper assembles a full 100-mark owned model from approved stock with non-default writing topics, without AI
   ---
-  duration_ms: 806.810313
+  duration_ms: 543.634717
   type: 'test'
   ...
 # Subtest: SSC admin category is SSC for both grades and old Class 9/10 URLs remain compatible without changing bank records
 ok 143 - SSC admin category is SSC for both grades and old Class 9/10 URLs remain compatible without changing bank records
   ---
-  duration_ms: 0.963519
+  duration_ms: 0.791593
   type: 'test'
   ...
 # Subtest: incomplete auto model carries source/writing signatures so the gap engine requests only absent stock
 ok 144 - incomplete auto model carries source/writing signatures so the gap engine requests only absent stock
   ---
-  duration_ms: 20.972095
+  duration_ms: 14.85221
   type: 'test'
   ...
 # Subtest: source-filter shortage still reports complete whole-book stock without writing a draft
 ok 145 - source-filter shortage still reports complete whole-book stock without writing a draft
   ---
-  duration_ms: 608.883607
+  duration_ms: 457.625539
   type: 'test'
   ...
 # Subtest: explicit full-catalog owner policy and saved IDs; other subjects/categories do not inherit Physics
 ok 146 - explicit full-catalog owner policy and saved IDs; other subjects/categories do not inherit Physics
   ---
-  duration_ms: 12.120425
+  duration_ms: 11.703767
   type: 'test'
   ...
 # Subtest: all 6400 published canonical questions classify with preserved figures and answers
 ok 147 - all 6400 published canonical questions classify with preserved figures and answers
   ---
-  duration_ms: 102.004848
+  duration_ms: 86.729009
   type: 'test'
   ...
 # Subtest: actual stock repeatedly satisfies exact CQ and SQ fixed six plus one OTHER; same extra chapter allowed, not forced
 ok 148 - actual stock repeatedly satisfies exact CQ and SQ fixed six plus one OTHER; same extra chapter allowed, not forced
   ---
-  duration_ms: 4288.635725
+  duration_ms: 4263.247427
   type: 'test'
   ...
 # Subtest: MCQ full-book practice offers 25, covers all 14 chapters, max 2 per chapter
 ok 149 - MCQ full-book practice offers 25, covers all 14 chapters, max 2 per chapter
   ---
-  duration_ms: 1589.326875
+  duration_ms: 1542.389176
   type: 'test'
   ...
 # Subtest: missing a mandatory CQ or SQ chapter blocks complete model, no substitution/no partial IDs
 ok 150 - missing a mandatory CQ or SQ chapter blocks complete model, no substitution/no partial IDs
   ---
-  duration_ms: 2250.951467
+  duration_ms: 2403.077941
   type: 'test'
   ...
 # Subtest: deduplicates normalized stems/IDs, rejects unknown chapters, incomplete answers/CQ and unsafe diagrams
 ok 151 - deduplicates normalized stems/IDs, rejects unknown chapters, incomplete answers/CQ and unsafe diagrams
   ---
-  duration_ms: 6.11817
+  duration_ms: 10.109256
   type: 'test'
   ...
 # Subtest: paper settings/sections preserve correct marks, four-part CQ, shared theory time and no practical paper
 ok 152 - paper settings/sections preserve correct marks, four-part CQ, shared theory time and no practical paper
   ---
-  duration_ms: 143.930745
+  duration_ms: 139.855934
   type: 'test'
   ...
 # Subtest: editor detects quota changes, duplicates, bad kinds, missing parts, setup changes; retains extras visibly
 ok 153 - editor detects quota changes, duplicates, bad kinds, missing parts, setup changes; retains extras visibly
   ---
-  duration_ms: 130.704245
+  duration_ms: 151.887799
   type: 'test'
   ...
 # Subtest: real server action queries approved scoped stock only, returns IDs, keeps auth/scan/error gates
 ok 154 - real server action queries approved scoped stock only, returns IDs, keeps auth/scan/error gates
   ---
-  duration_ms: 353.014208
+  duration_ms: 328.487543
   type: 'test'
   ...
 # Subtest: model creation never imports/approves/generates and preparation still goes directly to Setup
 ok 155 - model creation never imports/approves/generates and preparation still goes directly to Setup
   ---
-  duration_ms: 0.995861
+  duration_ms: 0.94222
   type: 'test'
   ...
 # Subtest: deployment smoke check is read-only and verifies actual subject quotas and editor/print compatibility
 ok 156 - deployment smoke check is read-only and verifies actual subject quotas and editor/print compatibility
   ---
-  duration_ms: 2511.370629
+  duration_ms: 2434.392266
   type: 'test'
   ...
 1..156
@@ -943,4 +943,4 @@ ok 156 - deployment smoke check is read-only and verifies actual subject quotas 
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 57503.094596
+# duration_ms 53386.526892

@@ -103,19 +103,19 @@ def build():
             q = common('SQ', f'{case}। সংশ্লিষ্ট ধারণা বা গঠনটি শনাক্ত করে তার ভূমিকা এবং একটি গুরুত্বপূর্ণ সীমা লেখো।',
                        f'প্রাসঙ্গিক ধারণা: {term}। ভূমিকা: {role}। সতর্কতা: {boundary}।')
             questions[chapter]['SQ'].append((q, ref, True, 'concept:' + term))
-    for chapter, fields, ref in [*rows('rebuild-mcq.txt', 8), *rows('chapter-1-mcq.txt', 8), *rows('chapter-1-completion-mcq.txt', 8), *rows('chapter-2-mcq*.txt', 8), *rows('chapter-3-mcq*.txt', 8), *rows('chapter-4-mcq*.txt', 8), *rows('chapter-5-mcq*.txt', 8), *rows('chapter-6-mcq*.txt', 8), *rows('chapter-7-mcq*.txt', 8), *rows('chapter-8-mcq*.txt', 8), *rows('chapter-9-mcq*.txt', 8), *rows('chapter-10-mcq*.txt', 8), *rows('chapter-11-mcq*.txt', 8), *rows('chapter-12-mcq*.txt', 8), *rows('chapter-13-mcq*.txt', 8)]:
+    for chapter, fields, ref in [*rows('rebuild-mcq.txt', 8), *rows('chapter-1-mcq.txt', 8), *rows('chapter-1-completion-mcq.txt', 8), *rows('chapter-2-mcq*.txt', 8), *rows('chapter-3-mcq*.txt', 8), *rows('chapter-4-mcq*.txt', 8), *rows('chapter-5-mcq*.txt', 8), *rows('chapter-6-mcq*.txt', 8), *rows('chapter-7-mcq*.txt', 8), *rows('chapter-8-mcq*.txt', 8), *rows('chapter-9-mcq*.txt', 8), *rows('chapter-10-mcq*.txt', 8), *rows('chapter-11-mcq*.txt', 8), *rows('chapter-12-mcq*.txt', 8), *rows('chapter-13-mcq*.txt', 8), *rows('chapter-14-mcq*.txt', 8)]:
         stem, answer, b, c, d, explanation, section = fields
         q = common('MCQ', stem, explanation)
         q.update(options=dict(zip('ABCD', [answer, b, c, d])), correct='A')
         questions[chapter]['MCQ'].append((q, ref, False, section))
-    for chapter, fields, ref in [*rows('rebuild-cq.txt', 11), *rows('chapter-1-cq.txt', 11), *rows('chapter-1-completion-cq.txt', 11), *rows('chapter-2-cq*.txt', 11), *rows('chapter-3-cq*.txt', 11), *rows('chapter-4-cq*.txt', 11), *rows('chapter-5-cq*.txt', 11), *rows('chapter-6-cq*.txt', 11), *rows('chapter-7-cq*.txt', 11), *rows('chapter-8-cq*.txt', 11), *rows('chapter-9-cq*.txt', 11), *rows('chapter-10-cq*.txt', 11), *rows('chapter-11-cq*.txt', 11), *rows('chapter-12-cq*.txt', 11), *rows('chapter-13-cq*.txt', 11)]:
+    for chapter, fields, ref in [*rows('rebuild-cq.txt', 11), *rows('chapter-1-cq.txt', 11), *rows('chapter-1-completion-cq.txt', 11), *rows('chapter-2-cq*.txt', 11), *rows('chapter-3-cq*.txt', 11), *rows('chapter-4-cq*.txt', 11), *rows('chapter-5-cq*.txt', 11), *rows('chapter-6-cq*.txt', 11), *rows('chapter-7-cq*.txt', 11), *rows('chapter-8-cq*.txt', 11), *rows('chapter-9-cq*.txt', 11), *rows('chapter-10-cq*.txt', 11), *rows('chapter-11-cq*.txt', 11), *rows('chapter-12-cq*.txt', 11), *rows('chapter-13-cq*.txt', 11), *rows('chapter-14-cq*.txt', 11)]:
         stimulus, *parts, section = fields
         q = common('CQ', stimulus, 'নিজস্ব স্বয়ংসম্পূর্ণ উদ্দীপকের নমুনা সমাধান; শিক্ষক-পর্যালোচনা বাকি।')
         q['parts'] = [dict(label=label, question=parts[2*i], solution=parts[2*i+1], marks=i+1)
                       for i, label in enumerate('কখগঘ')]
         questions[chapter]['CQ'].append((q, ref, False, section))
-    for chapter, fields, ref in [*rows('chapter-1-sq.txt', 4), *rows('chapter-1-completion-sq.txt', 4), *rows('chapter-2-sq.txt', 4), *rows('chapter-3-sq.txt', 4), *rows('chapter-4-sq.txt', 4), *rows('chapter-5-sq.txt', 4), *rows('chapter-6-sq.txt', 4), *rows('chapter-7-sq.txt', 4), *rows('chapter-8-sq.txt', 4), *rows('chapter-9-sq.txt', 4), *rows('chapter-10-sq.txt', 4), *rows('chapter-11-sq.txt', 4), *rows('chapter-12-sq.txt', 4), *rows('chapter-13-sq.txt', 4)]:
-        assert chapter in range(1, 14)
+    for chapter, fields, ref in [*rows('chapter-1-sq.txt', 4), *rows('chapter-1-completion-sq.txt', 4), *rows('chapter-2-sq.txt', 4), *rows('chapter-3-sq.txt', 4), *rows('chapter-4-sq.txt', 4), *rows('chapter-5-sq.txt', 4), *rows('chapter-6-sq.txt', 4), *rows('chapter-7-sq.txt', 4), *rows('chapter-8-sq.txt', 4), *rows('chapter-9-sq.txt', 4), *rows('chapter-10-sq.txt', 4), *rows('chapter-11-sq.txt', 4), *rows('chapter-12-sq.txt', 4), *rows('chapter-13-sq.txt', 4), *rows('chapter-14-sq.txt', 4)]:
+        assert chapter in range(1, 15)
         stem, answer, section = fields
         questions[chapter]['SQ'].append((common('SQ', stem, answer), ref, False, section))
     generated, reports, reader = {}, [], []
@@ -341,7 +341,7 @@ def build():
             figure = None
             if '![' in q['text']:
                 match = re.search(r'!\[([^]\n]+)\]\((assets/[a-z-]+\.svg)\)', q['text'])
-                registered = {1: {'assets/classification-tree.svg'}, 2: {'assets/plant-cell.svg', 'assets/mitochondrion.svg', 'assets/neuron.svg'}, 3: {'assets/mitotic-metaphase.svg', 'assets/mitotic-anaphase.svg', 'assets/meiotic-anaphase.svg'}, 4: {'assets/chloroplast-stages.svg', 'assets/light-starch-test.svg', 'assets/respiratory-coupling.svg'}, 5: {'assets/digestive-routes.svg', 'assets/villus-transport.svg', 'assets/fat-digestion.svg'}, 6: {'assets/xylem-tension.svg', 'assets/double-circulation.svg', 'assets/vessel-functions.svg'}, 7: {'assets/respiratory-route.svg', 'assets/alveolar-exchange.svg', 'assets/inspiration-mechanism.svg'}, 8: {'assets/kidney-section.svg', 'assets/nephron-pathways.svg', 'assets/dialyzer-exchange.svg'}, 9: {'assets/skeleton-regions.svg', 'assets/synovial-joint.svg', 'assets/elbow-antagonists.svg'}, 10: {'assets/shoot-phototropism.svg', 'assets/neuron-signaling.svg', 'assets/brain-regions.svg', 'assets/withdrawal-reflex.svg', 'assets/thyroid-feedback.svg'}, 11: {'assets/flower-section.svg', 'assets/embryo-sac.svg', 'assets/human-development-route.svg', 'assets/placental-exchange.svg'}, 12: {'assets/dna-pairing.svg', 'assets/mendel-grid.svg', 'assets/replication-strands.svg', 'assets/ancestry-tree.svg'}, 13: {'assets/food-web.svg', 'assets/energy-pyramid.svg', 'assets/nitrogen-pathways.svg', 'assets/nutrient-enrichment.svg'}}
+                registered = {1: {'assets/classification-tree.svg'}, 2: {'assets/plant-cell.svg', 'assets/mitochondrion.svg', 'assets/neuron.svg'}, 3: {'assets/mitotic-metaphase.svg', 'assets/mitotic-anaphase.svg', 'assets/meiotic-anaphase.svg'}, 4: {'assets/chloroplast-stages.svg', 'assets/light-starch-test.svg', 'assets/respiratory-coupling.svg'}, 5: {'assets/digestive-routes.svg', 'assets/villus-transport.svg', 'assets/fat-digestion.svg'}, 6: {'assets/xylem-tension.svg', 'assets/double-circulation.svg', 'assets/vessel-functions.svg'}, 7: {'assets/respiratory-route.svg', 'assets/alveolar-exchange.svg', 'assets/inspiration-mechanism.svg'}, 8: {'assets/kidney-section.svg', 'assets/nephron-pathways.svg', 'assets/dialyzer-exchange.svg'}, 9: {'assets/skeleton-regions.svg', 'assets/synovial-joint.svg', 'assets/elbow-antagonists.svg'}, 10: {'assets/shoot-phototropism.svg', 'assets/neuron-signaling.svg', 'assets/brain-regions.svg', 'assets/withdrawal-reflex.svg', 'assets/thyroid-feedback.svg'}, 11: {'assets/flower-section.svg', 'assets/embryo-sac.svg', 'assets/human-development-route.svg', 'assets/placental-exchange.svg'}, 12: {'assets/dna-pairing.svg', 'assets/mendel-grid.svg', 'assets/replication-strands.svg', 'assets/ancestry-tree.svg'}, 13: {'assets/food-web.svg', 'assets/energy-pyramid.svg', 'assets/nitrogen-pathways.svg', 'assets/nutrient-enrichment.svg'}, 14: {'assets/tissue-culture-route.svg', 'assets/recombinant-dna-route.svg', 'assets/evidence-stages.svg'}}
                 assert match and match[2] in registered.get(chapter, set()), 'unregistered figure reference'
                 asset = folder / match[2]
                 image = asset.read_bytes()
@@ -391,13 +391,13 @@ def build():
                             existingDrafts=existing, remainingQuestions=remaining,
                             remainingTotal=sum(remaining.values()), countTargetMet=not any(remaining.values()),
                             contentReviewComplete=False, complete=False))
-    generated[DOC / 'batch-plan.json'] = enc(dict(executionOrder=[1, 2, 3], batches=batches, activeChapter=13, workflow='ONE_CHAPTER_AT_A_TIME', publicationAuthorized=False))
+    generated[DOC / 'batch-plan.json'] = enc(dict(executionOrder=[1, 2, 3], batches=batches, activeChapter=14, workflow='ONE_CHAPTER_AT_A_TIME', publicationAuthorized=False))
     lines = ['# SSC জীববিজ্ঞান — যাচাইকৃত ফাইলভিত্তিক অগ্রগতি', '',
              f"উত্তরসহ খসড়া: {progress['draftItems']}/4480। পূর্ণ বই, শিক্ষক ও পুনরাবৃত্তি যাচাই বাকি।", '',
              '| অধ্যায় | MCQ | CQ | SQ | বাকি |', '|---|---:|---:|---:|---:|']
     for c in reports:
         lines.append(f"| {c['chapter']} | {c['counts']['MCQ']} | {c['counts']['CQ']} | {c['counts']['SQ']} | {sum(c['remaining'].values())} |")
-    workflow_note = 'অধ্যায় ১–১৩-এর নির্ধারিত উত্তরসহ খসড়া সম্পূর্ণ: প্রতিটিতে ২০০ MCQ / ৫০ CQ / ৭০ SQ। এই ধাপে অধ্যায় ১–১২-এর প্রশ্ন ও পাঠক অপরিবর্তিত। শিক্ষক ও স্বাধীন বিষয়বস্তু পর্যালোচনা বাকি; প্রকাশিত নয়।'
+    workflow_note = 'অধ্যায় ১–১৪-এর নির্ধারিত উত্তরসহ খসড়া সম্পূর্ণ: প্রতিটিতে ২০০ MCQ / ৫০ CQ / ৭০ SQ। এই ধাপে অধ্যায় ১–১৩-এর প্রশ্ন ও পাঠক অপরিবর্তিত। শিক্ষক ও স্বাধীন বিষয়বস্তু পর্যালোচনা বাকি; প্রকাশিত নয়।'
     lines += ['', workflow_note, '', '## ব্যাচ পরিকল্পনা', '']
     for b in batches:
         lines.append(f"- ব্যাচ {b['batch']}: অধ্যায় {b['chapters'][0]}–{b['chapters'][-1]}, বাকি {b['remainingTotal']} প্রশ্ন; {b['status']}।")
@@ -417,7 +417,8 @@ def build():
     chapter_eleven_template = (INPUT / 'reader-template-ch11.html').read_text()
     chapter_twelve_template = (INPUT / 'reader-template-ch12.html').read_text()
     chapter_thirteen_template = (INPUT / 'reader-template-ch13.html').read_text()
-    generated[DOC / 'questions.html'] = chapter_thirteen_template.replace('__BANK_JSON__', bank).encode()
+    chapter_fourteen_template = (INPUT / 'reader-template-ch14.html').read_text()
+    generated[DOC / 'questions.html'] = chapter_fourteen_template.replace('__BANK_JSON__', bank).encode()
     chapter_one = json.dumps([r for r in reader if r['chapter'] == 1], ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
     # Keep the completed chapter-1 reader byte-identical to its verified snapshot.
     original_template = template.replace('বর্তমান কাজ: অধ্যায় ২—জীব কোষ ও টিস্যু', 'বর্তমান কাজ: অধ্যায় ১—জীবন পাঠ').replace('অধ্যায় ১ ও ২-এর উত্তরসহ খসড়া সম্পূর্ণ: প্রতিটিতে ২০০ MCQ + ৫০ CQ + ৭০ SQ।', 'অধ্যায় ১-এর উত্তরসহ খসড়া সম্পূর্ণ: ২০০ MCQ + ৫০ CQ + ৭০ SQ।')
@@ -447,9 +448,11 @@ def build():
     generated[DOC / 'chapter-12.html'] = chapter_twelve_template.replace('__BANK_JSON__', chapter_twelve).encode()
     chapter_thirteen = json.dumps([r for r in reader if r['chapter'] == 13], ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
     generated[DOC / 'chapter-13.html'] = chapter_thirteen_template.replace('__BANK_JSON__', chapter_thirteen).encode()
+    chapter_fourteen = json.dumps([r for r in reader if r['chapter'] == 14], ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
+    generated[DOC / 'chapter-14.html'] = chapter_fourteen_template.replace('__BANK_JSON__', chapter_fourteen).encode()
     inputs = [Path(__file__).resolve(), ROOT / 'scripts/question-bank/build-ssc-biology-ch1.py',
               *sorted(INPUT.glob('*.txt')), *sorted(INPUT.glob('reader-template*.html')),
-              INPUT / 'draw-chapter-4-figures.py', INPUT / 'draw-chapter-5-figures.py', INPUT / 'draw-chapter-6-figures.py', INPUT / 'draw-chapter-7-figures.py', INPUT / 'draw-chapter-8-figures.py', INPUT / 'draw-chapter-9-figures.py', INPUT / 'draw-chapter-10-figures.py', INPUT / 'draw-chapter-11-figures.py', INPUT / 'draw-chapter-12-figures.py', INPUT / 'draw-chapter-13-figures.py',
+              INPUT / 'draw-chapter-4-figures.py', INPUT / 'draw-chapter-5-figures.py', INPUT / 'draw-chapter-6-figures.py', INPUT / 'draw-chapter-7-figures.py', INPUT / 'draw-chapter-8-figures.py', INPUT / 'draw-chapter-9-figures.py', INPUT / 'draw-chapter-10-figures.py', INPUT / 'draw-chapter-11-figures.py', INPUT / 'draw-chapter-12-figures.py', INPUT / 'draw-chapter-13-figures.py', INPUT / 'draw-chapter-14-figures.py',
               *sorted(OUT.glob('chapter-*/assets/*.svg'))]
     index = {str(p.relative_to(ROOT)): dict(bytes=len(b), sha256=digest(b)) for p, b in generated.items()}
     for p in [*inputs, *sorted((OUT / 'chapter-1').glob('*.json'))]:

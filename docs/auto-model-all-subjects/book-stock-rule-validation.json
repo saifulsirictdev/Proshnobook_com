@@ -3,18 +3,18 @@
   "implementationStatus": "SOURCE_TESTED_NOT_DEPLOYED",
   "autoModelEnglishFocusedTests": 156,
   "autoModelEnglishFailed": 0,
-  "biologyFocusedTests": 112,
+  "biologyFocusedTests": 129,
   "biologyFailed": 0,
   "typecheck": "PASS",
   "fullRepositorySuiteClaimed": false,
   "newProductionBuildClaimed": false,
   "productionDeploymentChanged": false,
-  "biologyCanonicalItems": 4160,
-  "biologyRemainingChapter14": 320,
+  "biologyCanonicalItems": 4480,
+  "biologyRemainingChapter14": 0,
   "biologyImportExecuted": false,
   "biologyApprovalExecuted": false,
   "files": {
-    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "59fe28008d70f302f0b8382b9858cff343c2ec5ef42e6f1c3ef59d1e270b0608",
-    "docs/question-bank/ssc-biology/chapter-13-regressions.tap": "f51f9dd93e971af791c5df9b38c7bcfd577203e8b84123b0ab9c9803cae637ea"
+    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "4d7e17a03c4eabbe849cb37a060496c66dc4cf0976f0dbde27643a7e48f02e56",
+    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "b3dd93ed465b5ef1abaa07a737dfb1f070098e1977645f416d2b398b76bdf4ea"
   }
 }

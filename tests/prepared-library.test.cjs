@@ -84,10 +84,13 @@ const chemistry11=load('lib/ssc-chemistry-ch11-batches.ts',chemistry11Mocks);
 const chemistry12Mocks={'./question-json-import':upload};
 for(const f of fs.readdirSync('content/question-bank/ssc/chemistry/chapter-12').filter(f=>f.endsWith('.json')))chemistry12Mocks['@/content/question-bank/ssc/chemistry/chapter-12/'+f]=json('content/question-bank/ssc/chemistry/chapter-12/'+f);
 const chemistry12=load('lib/ssc-chemistry-ch12-batches.ts',chemistry12Mocks);
-const lib=load('lib/prepared-question-batches.ts',{'./ssc-chemistry-ch11-batches':chemistry11,'./ssc-chemistry-ch12-batches':chemistry12,'./ssc-chemistry-ch10-batches':chemistry10,'./ssc-chemistry-ch9-batches':chemistry9,'./ssc-chemistry-ch8-batches':chemistry8,'./ssc-chemistry-ch7-batches':chemistry7,'./ssc-chemistry-ch6-batches':chemistry6,'./ssc-chemistry-ch5-batches':chemistry5,'./ssc-chemistry-ch4-batches':chemistry4,'./ssc-chemistry-ch3-batches':chemistry3,'./ssc-chemistry-ch2-batches':chemistry2,'./ssc-chemistry-batches':chemistry,...remainingPhysicsModules,'./ssc-physics-ch7-batches':physics7,'./ssc-physics-ch5-batches':physics5,'./ssc-physics-ch6-batches':physics6,'./ssc-physics-ch4-batches':physics4,'./ssc-physics-ch3-batches':physics3,'./ssc-physics-ch2-batches':physics2,'./ssc-physics-batches':physics,'./ssc-geometry-plain-batches':plain,'./ssc-math-batches':ssc,'./class8-english2-batches':class8,'./class6-english1-batches':english,'./class6-bgs-batches':bgs,'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
+const biologyMocks={'./question-json-import':upload};
+for(const [,name] of fs.readFileSync('lib/ssc-biology-batches.ts','utf8').matchAll(/from "(@\/content\/[^"]+\.json)"/g))biologyMocks[name]=json(name.slice(2));
+const biology=load('lib/ssc-biology-batches.ts',biologyMocks);
+const lib=load('lib/prepared-question-batches.ts',{'./ssc-biology-batches':biology,'./ssc-chemistry-ch11-batches':chemistry11,'./ssc-chemistry-ch12-batches':chemistry12,'./ssc-chemistry-ch10-batches':chemistry10,'./ssc-chemistry-ch9-batches':chemistry9,'./ssc-chemistry-ch8-batches':chemistry8,'./ssc-chemistry-ch7-batches':chemistry7,'./ssc-chemistry-ch6-batches':chemistry6,'./ssc-chemistry-ch5-batches':chemistry5,'./ssc-chemistry-ch4-batches':chemistry4,'./ssc-chemistry-ch3-batches':chemistry3,'./ssc-chemistry-ch2-batches':chemistry2,'./ssc-chemistry-batches':chemistry,...remainingPhysicsModules,'./ssc-physics-ch7-batches':physics7,'./ssc-physics-ch5-batches':physics5,'./ssc-physics-ch6-batches':physics6,'./ssc-physics-ch4-batches':physics4,'./ssc-physics-ch3-batches':physics3,'./ssc-physics-ch2-batches':physics2,'./ssc-physics-batches':physics,'./ssc-geometry-plain-batches':plain,'./ssc-math-batches':ssc,'./class8-english2-batches':class8,'./class6-english1-batches':english,'./class6-bgs-batches':bgs,'./hsc-ict-batches':hsc,'./class6-science-batches':science,'./class6-remaining-batches':remaining,'./question-json-import':upload,'@/content/question-bank/class-6/chapter-2/questions.json':json('content/question-bank/class-6/chapter-2/questions.json'),'@/content/question-bank/class-6/chapter-2/validation.json':json('content/question-bank/class-6/chapter-2/validation.json'),'./nctb-data':data,'./mcq-import':mcq,'./written-question-import':written,'@/content/question-bank/class-6/math-ch1-draft.json':json('content/question-bank/class-6/math-ch1-draft.json'),'@/deliverables/class6-math-ch1/cq-sq-draft.json':json('deliverables/class6-math-ch1/cq-sq-draft.json'),'@/deliverables/class6-math-ch1/chapter-alignment-review.json':json('deliverables/class6-math-ch1/chapter-alignment-review.json')});
 test('catalog reuses all existing classes and batch summaries do not expose answers',()=>{
  assert.deepEqual(lib.importCatalog.map(c=>c.category),data.NCTB_CLASSES.map(c=>c.class));
- const summaries=lib.preparedSummaries();assert.equal(summaries.length,274);
+ const summaries=lib.preparedSummaries();assert.equal(summaries.length,319);
  assert.deepEqual(summaries[0].counts,{MCQ:100,CQ:0,SQ:0});assert.deepEqual(summaries[1].counts,{MCQ:0,CQ:30,SQ:30});
  assert.equal(summaries[0].records,undefined);assert.throws(()=>lib.getPreparedBatch('unregistered'));
  for(const s of summaries){const {batch,digest}=lib.getPreparedBatch(s.id);assert.equal(digest.length,64);assert.equal(new Set(batch.records.map(q=>lib.preparedQuestionId(batch,q))).size,batch.records.length);}
@@ -106,7 +109,7 @@ test('selection is not authority; unknown batches, missing acknowledgement and n
 test('preview read-only, both batch types save Pending, retry/dedup/audit maintained',async()=>{
  const h=harness();assert.equal((await h.actions.previewPrepared({},h.form())).preview.length,100);assert.equal(h.calls(),0);
  h.retry();for(const b of lib.preparedSummaries()){const f=h.form(b.id);f.set('category','INJECTED');assert.ok((await h.actions.savePrepared({},f)).message);await h.actions.savePrepared({},f);}
- assert.equal(h.questions.length,27126);assert.equal(h.settings.size,274);
+ assert.equal(h.questions.length,31606);assert.equal(h.settings.size,319);
  for(const q of h.questions){assert.ok(['Class 6','Class 8','Class 9','Class 11-12'].includes(q.category));assert.equal(q.approved,false);}
  const audit=JSON.parse([...h.settings.values()][0].value);assert.equal(audit.actorId,'owner');assert.ok(audit.provenance);assert.equal(audit.inserted,100);
  const legacy=harness();legacy.questions.push({text:lib.getPreparedBatch(lib.preparedSummaries()[0].id).batch.records[0].text});await legacy.actions.savePrepared({},legacy.form());assert.equal(legacy.questions.length,100);
@@ -165,7 +168,7 @@ test('HSC ICT uses six existing topics, honest quarantine counts and preserved s
 });
 
 test('import index builds registry once and preserves every action digest without exposing answers',()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
  for(const entry of index){
   const {batch,digest}=lib.getPreparedBatch(entry.id);
   assert.equal(entry.digest,digest);assert.equal(entry.records,undefined);assert.equal(entry.provenance,undefined);
@@ -286,7 +289,7 @@ test('all previously approved questions yield zero Pending, not a misleading new
 });
 
 test('SSC Physics chapters 1 and 2 stay separate in real prepared registry and chapter 2 saves Pending only',async()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
  const physics=index.filter(b=>b.subject==='পদার্থবিজ্ঞান');assert.equal(physics.length,53);
  const totals=rows=>rows.reduce((a,b)=>({MCQ:a.MCQ+b.counts.MCQ,CQ:a.CQ+b.counts.CQ,SQ:a.SQ+b.counts.SQ}),{MCQ:0,CQ:0,SQ:0});
  const ch1=physics.filter(b=>b.id.startsWith('ssc-physics-ch1-'));
@@ -305,7 +308,7 @@ test('SSC Physics chapters 1 and 2 stay separate in real prepared registry and c
 });
 
 test('SSC Physics chapter 3 uses three separate Draft cards and real registry saves only 390 Pending (mock DB)',async()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
  const chapter=index.filter(b=>b.id.startsWith('ssc-physics-ch3-'));assert.equal(chapter.length,3);
  assert.deepEqual(chapter.map(b=>b.counts),[{MCQ:200,CQ:0,SQ:0},{MCQ:0,CQ:120,SQ:0},{MCQ:0,CQ:0,SQ:70}]);
  assert.ok(chapter.every(b=>b.category==='Class 9'&&b.subject==='পদার্থবিজ্ঞান'&&b.topic==='৩য় অধ্যায়: বল'));
@@ -318,7 +321,7 @@ test('SSC Physics chapter 3 uses three separate Draft cards and real registry sa
 });
 
 test('SSC Physics chapter 4 uses four separate Draft cards and real registry saves only 600 Pending (mock DB)',async()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
  const chapter=index.filter(b=>b.id.startsWith('ssc-physics-ch4-'));assert.equal(chapter.length,4);
  assert.deepEqual(chapter.map(b=>b.counts),[{MCQ:175,CQ:0,SQ:0},{MCQ:175,CQ:0,SQ:0},{MCQ:0,CQ:150,SQ:0},{MCQ:0,CQ:0,SQ:100}]);
  assert.ok(chapter.every(b=>b.category==='Class 9'&&b.subject==='পদার্থবিজ্ঞান'&&b.topic==='৪র্থ অধ্যায়: কাজ, ক্ষমতা ও শক্তি'));
@@ -331,7 +334,7 @@ test('SSC Physics chapter 4 uses four separate Draft cards and real registry sav
 });
 
 test('SSC Physics chapters 5 and 6 preserve illustrated stems and save 750 Pending only (mock DB)',async()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
  const chapter=index.filter(b=>/^ssc-physics-ch[56]-/.test(b.id));assert.equal(chapter.length,7);
  assert.deepEqual(chapter.map(b=>b.counts),[{MCQ:200,CQ:0,SQ:0},{MCQ:0,CQ:80,SQ:0},{MCQ:0,CQ:0,SQ:50},{MCQ:125,CQ:0,SQ:0},{MCQ:125,CQ:0,SQ:0},{MCQ:0,CQ:100,SQ:0},{MCQ:0,CQ:0,SQ:70}]);
  const h=harness();
@@ -344,8 +347,8 @@ test('SSC Physics chapters 5 and 6 preserve illustrated stems and save 750 Pendi
 });
 
 test('SSC Physics chapter 7: 3 real Draft cards, 370 Pending and 195 retained images only (mock DB)',async()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
- assert.equal(index.reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),19016);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
+ assert.equal(index.reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),31606);
  assert.equal(index.filter(b=>b.subject==='পদার্থবিজ্ঞান').reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),6400);
  const chapter=index.filter(b=>b.id.startsWith('ssc-physics-ch7-'));assert.equal(chapter.length,3);
  assert.deepEqual(chapter.map(b=>b.counts),[{MCQ:200,CQ:0,SQ:0},{MCQ:0,CQ:100,SQ:0},{MCQ:0,CQ:0,SQ:70}]);
@@ -360,8 +363,8 @@ test('SSC Physics chapter 7: 3 real Draft cards, 370 Pending and 195 retained im
 });
 
 test('SSC Physics remaining chapters: all 28 Draft cards in real registry, 3290 records and 1720 figures',()=>{
- const index=lib.preparedImportIndex();assert.equal(index.length,192);
- assert.equal(index.reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),19016);
+ const index=lib.preparedImportIndex();assert.equal(index.length,319);
+ assert.equal(index.reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),31606);
  const physics=index.filter(b=>b.subject==='পদার্থবিজ্ঞান');assert.equal(physics.length,53);
  assert.equal(physics.reduce((n,b)=>n+Object.values(b.counts).reduce((a,v)=>a+v,0),0),6400);
  const all=Object.values(remainingPhysicsModules).flatMap(mod=>Object.values(mod)[0]());
@@ -371,4 +374,14 @@ test('SSC Physics remaining chapters: all 28 Draft cards in real registry, 3290 
   assert.deepEqual(cards.map(b=>b.counts),[{MCQ:125,CQ:0,SQ:0},{MCQ:125,CQ:0,SQ:0},{MCQ:0,CQ:120,SQ:0},{MCQ:0,CQ:0,SQ:100}]);
   assert.ok(cards.every(b=>b.category==='Class 9'&&b.subject==='পদার্থবিজ্ঞান'));
  }
+});
+
+test('Biology registry adds exactly45 cards and4480 answers without changing Physics/Chemistry totals',()=>{
+ const all=lib.preparedBatches(),bio=all.filter(b=>b.subject==='জীববিজ্ঞান');assert.equal(bio.length,45);assert.equal(bio.flatMap(b=>b.records).length,4480);
+ assert.deepEqual(bio.flatMap(b=>b.records).reduce((c,q)=>(c[q.kind]++,c),{MCQ:0,CQ:0,SQ:0}),{MCQ:2800,CQ:700,SQ:980});
+ assert.equal(all.filter(b=>b.subject==='পদার্থবিজ্ঞান').flatMap(b=>b.records).length,6400);
+ assert.equal(all.filter(b=>b.subject==='রসায়ন').flatMap(b=>b.records).length,8110);
+ assert.ok(bio.every(b=>b.category==='Class 9'&&b.records.length<=200&&b.provenance.teacherCertified===false));
+ assert.equal(bio.flatMap(b=>b.records).filter(q=>q.text.includes('![')).length,45);
+ const {batch,digest}=lib.getPreparedBatch(bio[0].id);assert.equal(batch.records.length,bio[0].records.length);assert.equal(digest.length,64);
 });

@@ -17,9 +17,9 @@ Retained: Chemistry's 12-chapter policy/IDs and chapter quotas, Physics's 14-cha
 
 `scripts/check-auto-model-upgrade.cjs` is an explicitly invoked, production-context-guarded **read-only** probe: approved Physics/Chemistry stock, 20 model assemblies, preflight/planner consistency, history stripping and editor/print preservation. It does not import, approve, generate, call a provider, expose question bodies, or test an authenticated browser session. Its synthetic regression fixtures do not imply live production success; actual deployment evidence must be recorded separately.
 
-## Biology remains unfinished
+## Biology current source preparation
 
-Current chapter1–13 canonical stock is **4,160/4,480**; **320 questions in chapter14 remain unauthored**. Owner publication authorization is now explicitly recorded, but authorization is not a successful publication receipt. Biology is not registered, imported or approved by this Auto Model rollout. No independent teacher certification or complete semantic duplicate review is claimed.
+All14 chapters now have **4,480/4,480 answered author drafts** (200MCQ/50CQ/70SQ each), with45 relevant SVGs.129focused Biology tests and156AutoModel/English tests pass; TypeScript passes. Biology registration/assets/scoped release are prepared, but import/approval and latest source deployment remain unverified until separate production receipts. Independent teacher/content/semantic certification remains false; unknown official marking schemes still require teacher input.
 
 Deployment receipt/status is a separate artifact. This source document does not claim deployment success or live paid-AI/browser testing.
 

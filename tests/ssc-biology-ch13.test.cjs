@@ -48,7 +48,7 @@ test('chapter13 conservation and fieldwork do not promise certainty or authorize
 });
 test('chapter13 review remains author evidence and retains honest release gates',()=>{
  const v=evidence(),c=read(`${root}/draft-validation.json`),p=read(`${docs}/progress.json`);
- assert.equal(p.draftItems,4160);assert.equal(v.total,320);assert.equal(v.remainingTargetItems,320);assert.deepEqual(v.mcqKeys,{A:50,B:50,C:50,D:50});assert.equal(v.lexicalScreen.candidatePairs,0);assert.equal(v.lexicalScreen.exactUniqueStems,320);assert.equal(v.lexicalScreen.semanticCertification,false);
+ assert.equal(p.draftItems,4480);assert.equal(v.total,320);assert.equal(v.remainingTargetItems,320);assert.deepEqual(v.mcqKeys,{A:50,B:50,C:50,D:50});assert.equal(v.lexicalScreen.candidatePairs,0);assert.equal(v.lexicalScreen.exactUniqueStems,320);assert.equal(v.lexicalScreen.semanticCertification,false);
  for(const flag of ['teacherCertified','independentContentReview','nearDuplicateReviewComplete','textbookChapterRead','websiteImported','approved','published']){assert.equal(v[flag],false);assert.equal(c[flag],false);}
  assert.equal(v.diagrams.count,4);assert.equal(v.diagrams.productionIntegration,false);assert.equal(v.incrementalBackup.independentRemoteGetVerified,true);assert.equal(v.incrementalBackup.bytes,55040);assert.equal(v.technicalValidation.fullAppBuildClaimed,false);
 });

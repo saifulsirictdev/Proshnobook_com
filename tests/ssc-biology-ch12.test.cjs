@@ -43,8 +43,8 @@ test('chapter 12 preserves all chapter 1–11 bank artifacts and readers against
 });
 test('chapter 12 technical counts and backups never turn author checks into independent review',()=>{
  const v=evidence(),c=read(`${root}/draft-validation.json`),p=read(`${docs}/progress.json`),plan=read(`${docs}/batch-plan.json`);
- assert.deepEqual(c.counts,{MCQ:200,CQ:50,SQ:70});assert.equal(v.total,320);assert.equal(p.draftItems,4160);assert.equal(v.globalDraftItems,3840);assert.equal(v.remainingTargetItems,640);
- assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,320]);assert.equal(plan.activeChapter,13);assert.equal(plan.publicationAuthorized,false);
+ assert.deepEqual(c.counts,{MCQ:200,CQ:50,SQ:70});assert.equal(v.total,320);assert.equal(p.draftItems,4480);assert.equal(v.globalDraftItems,3840);assert.equal(v.remainingTargetItems,640);
+ assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,0]);assert.equal(plan.activeChapter,14);assert.equal(plan.publicationAuthorized,false);
  assert.deepEqual(v.mcqKeys,{A:50,B:50,C:50,D:50});assert.equal(v.lexicalScreen.exactUniqueStems,320);assert.equal(v.lexicalScreen.candidatePairs,2);assert.equal(v.lexicalScreen.semanticCertification,false);
  for(const item of v.lexicalScreen.candidates)assert.match(item.authorDisposition,/Not independent/);
  for(const flag of ['teacherCertified','textbookChapterRead','independentContentReview','nearDuplicateReviewComplete','approved','published','websiteImported']){assert.equal(c[flag],false);assert.equal(v[flag],false);}

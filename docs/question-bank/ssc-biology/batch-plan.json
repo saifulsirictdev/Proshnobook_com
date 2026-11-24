@@ -63,24 +63,24 @@
         13,
         14
       ],
-      "status": "IN_PROGRESS",
+      "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
       "existingDrafts": {
-        "MCQ": 600,
-        "CQ": 150,
-        "SQ": 210
+        "MCQ": 800,
+        "CQ": 200,
+        "SQ": 280
       },
       "remainingQuestions": {
-        "MCQ": 200,
-        "CQ": 50,
-        "SQ": 70
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
       },
-      "remainingTotal": 320,
-      "countTargetMet": false,
+      "remainingTotal": 0,
+      "countTargetMet": true,
       "contentReviewComplete": false,
       "complete": false
     }
   ],
-  "activeChapter": 13,
+  "activeChapter": 14,
   "workflow": "ONE_CHAPTER_AT_A_TIME",
   "publicationAuthorized": false
 }

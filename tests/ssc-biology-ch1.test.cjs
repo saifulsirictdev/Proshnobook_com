@@ -58,8 +58,8 @@ test('manifest hashes, truthful status flags and offline reproduction agree',()=
  }
  execFileSync('python3',['scripts/question-bank/build-ssc-biology-ch1.py','--check']);
 });
-test('starter remains unregistered and builder has no publication mechanism',()=>{
- assert.doesNotMatch(fs.readFileSync('lib/prepared-question-batches.ts','utf8'),/ssc-biology|sscBiology/);
+test('Biology registration is explicit and starter builder has no publication mechanism',()=>{
+ assert.match(fs.readFileSync('lib/prepared-question-batches.ts','utf8'),/sscBiologyBatches/);
  const builder=fs.readFileSync('scripts/question-bank/build-ssc-biology-ch1.py','utf8');
  assert.doesNotMatch(builder,/import (?:requests|urllib|psycopg)|DATABASE_URL|prisma|subprocess|exec\(/);
 });
