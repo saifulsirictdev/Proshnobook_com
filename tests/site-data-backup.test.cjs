@@ -10,3 +10,11 @@ test('Database backup is manual, encrypted only, no production restore or automa
  assert.match(w,/workflow_dispatch/);assert.doesNotMatch(w,/pull_request:|schedule:|push:/);assert.match(w,/persist-credentials: false/);assert.match(w,/\.tar.enc/);
  assert.match(s,/'postgres:18','pg_dump'/);assert.match(s,/'pg_restore','--list'/);assert.doesNotMatch(s,/--clean|--dbname|--create/);assert.match(s,/driveUploaded:false/);
 });
+test('backup preflight reports fixed prerequisite codes, never credentials or raw errors',()=>{
+ const {prerequisites}=require('../scripts/site-data-backup-preflight.cjs');
+ assert.deepEqual(prerequisites({}),{ok:false,issues:['DATABASE_URL_MISSING','BLOB_BACKUP_PASSPHRASE_MISSING']});
+ const secret='never-print-this-private-passphrase',url='postgresql://private-user:private-password@evil.invalid/db';
+ const invalid=prerequisites({DATABASE_URL:url,BLOB_BACKUP_PASSPHRASE:secret});assert.deepEqual(invalid,{ok:false,issues:['DATABASE_URL_INVALID_NEON_TARGET']});assert.doesNotMatch(JSON.stringify(invalid),/private-user|private-password|evil\.invalid|never-print/);
+ assert.deepEqual(prerequisites({DATABASE_URL:'postgresql://u:p@ep-fixture.neon.tech/neondb',BLOB_BACKUP_PASSPHRASE:secret}),{ok:true,issues:[]});
+ assert.ok(prerequisites({BLOB_BACKUP_PASSPHRASE:'short'}).issues.includes('BLOB_BACKUP_PASSPHRASE_TOO_SHORT'));
+});

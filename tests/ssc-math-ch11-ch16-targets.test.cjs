@@ -4,7 +4,7 @@ function load(file,mocks={}){const m=new Module(file,module);m.paths=module.path
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const data=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':data}),prov=load('lib/question-provenance.ts');
 const upload=load('lib/question-json-import.ts',{'./nctb-data':data,'./mcq-import':mcq,'./question-provenance':prov});
-const auto=load('lib/auto-model.ts',{'./nctb-data':data,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':data}),'./question-tables':load('lib/question-tables.ts')});
+const auto=load('lib/auto-model.ts',{'./nctb-data':data,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':data}),'./question-tables':load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})});
 for(const [chapter,counts,seeds,families,slices,native] of [11,12,13,14,15,16].map(ch=>[ch,{MCQ:150,CQ:50,SQ:70},2,[15,10,14],3,ch===15?1:0])){
  const base=`content/question-bank/ssc/math/chapter-${chapter}/`,manifest=json(base+'targets-v1-manifest.json'),review=json(base+manifest.validation.file);
  const inputs=manifest.files.map(f=>json(base+f.file)),all=inputs.flatMap(b=>b.items),size=Object.values(counts).reduce((a,b)=>a+b,0);

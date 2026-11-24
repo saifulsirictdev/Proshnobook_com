@@ -5,7 +5,7 @@ function load(file,mocks={}){const m=new Module(file,module);m.paths=module.path
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':catalog});
 const upload=load('lib/question-json-import.ts',{'./nctb-data':catalog,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
-const tables=load('lib/question-tables.ts');
+const tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")});
 const React=require('react'),{renderToStaticMarkup}=require('react-dom/server');
 const MathText=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default;
 for(const [ch,files,counts,expected,diagrams] of [[5,['mcq','cq','sq'],[200,80,50],{MCQ:200,CQ:80,SQ:50},195],[6,['mcq-1','mcq-2','cq','sq'],[125,125,100,70],{MCQ:250,CQ:100,SQ:70},95]]){
@@ -62,7 +62,7 @@ test('Physics image allowlist rejects external SVG, traversal, query, wrong orig
 });
 test('owner profile and separately enabled Physics Auto Model; source completeness not invented',()=>{
  const p=json('docs/question-bank/ssc-physics/mark-distribution.json');assert.equal(p.totalTheoryMinutes,180);assert.equal(p.practicalMarks,25);assert.equal(p.theoryMarks,75);
- const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts')});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
+ const {autoModelBlueprint}=load('lib/auto-model.ts',{'./nctb-data':catalog,'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':catalog}),'./question-tables':load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})});assert.equal(autoModelBlueprint('Class 9','পদার্থবিজ্ঞান','MCQ').id,'ssc-physics-mcq-v1');
  const src=json('docs/question-bank/ssc-physics/source-inspection-ch5-6.json');assert.equal(src.chapters['5'].visualInspection.nativeQuestionFiguresObserved,true);assert.equal(src.chapters['6'].visualInspection.allSourceFiguresInspected,false);
  for(const f of src.chapters['5'].observedFigures)assert.equal(createHash('sha256').update(fs.readFileSync(f.file)).digest('hex'),f.sha256);
 });

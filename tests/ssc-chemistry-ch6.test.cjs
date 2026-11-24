@@ -1,3 +1,4 @@
+// Historical non-Biology registry scope; full current totals are checked in prepared-library.test.cjs.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),Module=require('node:module'),{createHash}=require('node:crypto'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.React}}).outputText,file);return m.exports;}
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),root='content/question-bank/ssc/chemistry/chapter-6/';
@@ -79,7 +80,7 @@ test('source key calculations, reaction mass balance, SI and STP assumptions hav
  for(const m of equationRows){const i=m.inputs;const side=d=>Object.entries(d).reduce((sum,[f,c])=>{for(const [e,n] of Object.entries(atoms(f)))sum[e]=(sum[e]||0)+n*c;return sum;},{});assert.deepEqual(side(i.reactants),side(i.products));}
 });
 test('43 image-bearing questions render through exact allowlist without captions or raw Markdown',()=>{
- const tables=load('lib/question-tables.ts'),React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),C=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default;
+ const tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")}),React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),C=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default;
  let count=0;for(const q of rows.filter(q=>q.text.includes('!['))){const img=tables.questionBlocks(q.text).filter(b=>b.kind==='chemistry-image');assert.equal(img.length,1);assert.ok(fs.existsSync('public'+img[0].src));const out=renderToStaticMarkup(React.createElement(C,{text:q.text}));assert.match(out,/<img/);assert.doesNotMatch(out,/!\[|<figcaption/);count++;}assert.equal(count,43);
  for(const name of ['neutral-01.svg','neutral-40.svg']){
   const url='https://proshnobook.com/question-bank/ssc-chemistry-ch6-v1/'+name;
@@ -106,7 +107,7 @@ test('real registry adds only800 chapter6 records, preserves22256 earlier record
  const resolve=Module._resolveFilename,previous=require.extensions['.ts'];try{
   Module._resolveFilename=function(id,parent,...rest){return resolve.call(this,id.startsWith('@/')?path.resolve(id.slice(2)):id,parent,...rest);};
   require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
-  const all=require('../lib/prepared-question-batches.ts').preparedBatches(),own=all.filter(b=>b.id.startsWith('ssc-chemistry-ch6-'));assert.equal(all.length,274);assert.equal(own.length,8);assert.equal(own.reduce((n,b)=>n+b.records.length,0),800);assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-ch11-')&&!b.id.startsWith('ssc-chemistry-ch12-')&&!b.id.startsWith('ssc-chemistry-ch10-')&&!b.id.startsWith('ssc-chemistry-ch9-')&&!b.id.startsWith('ssc-chemistry-ch8-')&&!b.id.startsWith('ssc-chemistry-ch7-')&&!b.id.startsWith('ssc-chemistry-ch6-')).reduce((n,b)=>n+b.records.length,0),22256);
+  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')),own=all.filter(b=>b.id.startsWith('ssc-chemistry-ch6-'));assert.equal(all.length,274);assert.equal(own.length,8);assert.equal(own.reduce((n,b)=>n+b.records.length,0),800);assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-ch11-')&&!b.id.startsWith('ssc-chemistry-ch12-')&&!b.id.startsWith('ssc-chemistry-ch10-')&&!b.id.startsWith('ssc-chemistry-ch9-')&&!b.id.startsWith('ssc-chemistry-ch8-')&&!b.id.startsWith('ssc-chemistry-ch7-')&&!b.id.startsWith('ssc-chemistry-ch6-')).reduce((n,b)=>n+b.records.length,0),22256);
  }finally{Module._resolveFilename=resolve;if(previous)require.extensions['.ts']=previous;else delete require.extensions['.ts'];}
  const policy=load('lib/subject-model-policy.ts',{'./nctb-data':catalog});for(const category of ['SSC','Class 9','Class 10'])assert.equal(policy.subjectModelPolicy(category,'রসায়ন')?.id,'ssc-chemistry-owner-chapter-policy-v1');
 });

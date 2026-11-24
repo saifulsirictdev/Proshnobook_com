@@ -1,3 +1,4 @@
+// Historical non-Biology registry scope; full current totals are checked in prepared-library.test.cjs.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),Module=require('node:module'),{createHash}=require('node:crypto'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.React}}).outputText,file);return m.exports;}
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),root='content/question-bank/ssc/chemistry/chapter-1/';
@@ -5,7 +6,7 @@ const catalog=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb
 const upload=load('lib/question-json-import.ts',{'./nctb-data':catalog,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
 const files=['mcq-1','mcq-2','mcq-3','cq','sq'],mocks={'./question-json-import':upload};
 for(const file of files)mocks['@/'+root+file+'.json']=read(root+file+'.json');
-const chemistry=load('lib/ssc-chemistry-batches.ts',mocks),tables=load('lib/question-tables.ts');
+const chemistry=load('lib/ssc-chemistry-batches.ts',mocks),tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")});
 const batches=chemistry.sscChemistryBatches(),rows=files.flatMap(f=>read(root+f+'.json').items),validation=read(root+'validation.json');
 test('470 owner-requested Chemistry drafts pass strict uploader, canonical chapter scope and unique normalized stems',()=>{
  assert.deepEqual(batches.map(b=>b.records.length),[120,120,110,50,70]);
@@ -64,7 +65,7 @@ test('real registry preserves chapter-1 drafts and the existing 19016 non-Chemis
  try{
   Module._resolveFilename=function(id,parent,...rest){return resolve.call(this,id.startsWith('@/')?path.resolve(id.slice(2)):id,parent,...rest);};
   require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
-  const all=require('../lib/prepared-question-batches.ts').preparedBatches(),chem=all.filter(b=>b.id.startsWith('ssc-chemistry-ch1-'));
+  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')),chem=all.filter(b=>b.id.startsWith('ssc-chemistry-ch1-'));
   assert.equal(all.length,274);assert.equal(chem.length,5);assert.equal(chem.reduce((n,b)=>n+b.records.length,0),470);
   assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-')).reduce((n,b)=>n+b.records.length,0),19016);
  }finally{Module._resolveFilename=resolve;if(previous)require.extensions['.ts']=previous;else delete require.extensions['.ts'];}

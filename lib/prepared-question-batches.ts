@@ -48,7 +48,19 @@ export type PreparedBatch={id:string;category:string;subject:string;topic:string
 export const importCatalog=NCTB_CLASSES.map(c=>({category:c.class,subjects:c.subjects.map(s=>({name:s.name,chapters:[...new Set(s.subCategories?s.subCategories.flatMap(g=>g.topics):(s.chapters??[]))]}))}));
 // Add each finished chapter here. Only this server registry supplies savable data;
 // browser input can select a registered id, never replace its category or answers.
+// Only bundled, validated source content is memoized. Never cache staff identity,
+// DB approval state, user selection, authorization or import/approval receipts.
+// Keep the snapshot private and return detached copies so one caller cannot alter
+// another request's questions, provenance, digest or nested options.
+let bundledSnapshot: PreparedBatch[] | undefined;
+function preparedBatchSnapshot(): PreparedBatch[] {
+ if(!bundledSnapshot)bundledSnapshot=structuredClone(buildPreparedBatches());
+ return bundledSnapshot;
+}
 export function preparedBatches():PreparedBatch[]{
+ return structuredClone(preparedBatchSnapshot());
+}
+function buildPreparedBatches():PreparedBatch[]{
  const m=parseMCQBatch(JSON.stringify(mcq));const w=writtenRecords(written);
  const ch2=parseQuestionUpload(JSON.stringify(chapter2),{category:chapter2.category,subject:chapter2.subject,group:"",topic:chapter2.topic});
  return [
@@ -100,8 +112,8 @@ function validatePreparedBatch(b:PreparedBatch){
  return {batch:b,digest:createHash("sha256").update(JSON.stringify(b)).digest("hex")};
 }
 export function getPreparedBatch(id:string){
- const b=preparedBatches().find(b=>b.id===id);if(!b)throw Error("Unknown batch");
- return validatePreparedBatch(b);
+ const b=preparedBatchSnapshot().find(b=>b.id===id);if(!b)throw Error("Unknown batch");
+ return validatePreparedBatch(structuredClone(b));
 }
 // One registry construction per page load, not once per receipt lookup.
 // No shared cache of authorization, user data or database receipts.

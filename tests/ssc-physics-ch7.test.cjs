@@ -5,7 +5,7 @@ function load(file,mocks={}){const m=new Module(file,module);m.paths=module.path
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=load('lib/nctb-data.ts'),mcq=load('lib/mcq-import.ts',{'@/lib/nctb-data':catalog});
 const upload=load('lib/question-json-import.ts',{'./nctb-data':catalog,'./mcq-import':mcq,'./question-provenance':load('lib/question-provenance.ts')});
-const tables=load('lib/question-tables.ts');
+const tables=load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")});
 const React=require('react'),{renderToStaticMarkup}=require('react-dom/server');
 const MathText=load('components/MathText.tsx',{'@/lib/question-tables':tables}).default;
 for(const [ch,files,counts,expected,diagrams] of [[7,['mcq','cq','sq'],[200,100,70],{MCQ:200,CQ:100,SQ:70},195]]){
