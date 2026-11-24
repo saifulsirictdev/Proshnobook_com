@@ -98,7 +98,7 @@
   color: #111;
   /* Hind Siliguri is a bundled Unicode Bangla font; the historical Adorsho
      asset is a legacy-encoded face and must not be the only Bangla fallback. */
-  font-family: var(--qk-body), var(--font-bn), var(--font-en), serif;
+  font-family: inherit;
   text-align: center;
   line-height: 1.45;
   padding: 0.15em 0 0.65em;

@@ -16,7 +16,7 @@ function load(file) {
         ? { teacherTid: () => "TID" }
         : n.startsWith("@/lib/")
           ? load(n.replace("@/", "") + ".ts")
-          : require(n);
+          : (require("./helpers/paper-editing.cjs").dependencies[n] || require(n));
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {

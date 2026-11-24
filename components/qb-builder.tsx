@@ -1,4 +1,5 @@
 "use client";
+import { englishTextFields, applyEnglishTextEdits } from "@/lib/english/editable-text";
 import { autoModelSections, autoModelIssues } from "@/lib/auto-model-paper";
 import { loadEnglishPaper } from "@/app/actions/english-paper";
 import {
@@ -6,6 +7,7 @@ import {
   paperSectionTitle,
   cqDivisionGroups,
 } from "@/lib/paper-sections";
+import RichPaperText from "@/components/paper-builder/rich-paper-text";
 import RichTextField from "@/components/paper-builder/rich-text-field";
 import WalletCheckout from "@/components/wallet-checkout";
 import { checkPurchasedPaperAccess } from "@/app/actions/purchased-paper-access";
@@ -65,6 +67,16 @@ export default function QbBuilder({
   const [divisionQuestion, setDivisionQuestion] = useState("");
   const [actionMessage, setActionMessage] = useState("");
   const [exchanging, setExchanging] = useState(false);
+  const [alternatives,setAlternatives] = useState<{originalId:string;choices:{id:string;label:string;subject:string;topic:string;type:string;locked:boolean;item?:PaperItem}[]}|null>(null);
+  const [checkoutAlternative,setCheckoutAlternative] = useState("");
+  const alternativesRef = useRef<HTMLElement>(null);
+  function chooseAlternative(originalId:string,replacement:PaperItem) {
+    if(!items.some(q=>q.id===originalId) || items.some(q=>q.id===replacement.id)) return;
+    const next=items.map(q=>q.id===originalId?replacement:q);
+    try {localStorage.setItem("qb:selected",JSON.stringify(next.map(q=>q.id)));} catch {setStorageError(true);}
+    update({...s});setItems(next);setAlternatives(null);setCheckoutAlternative("");
+    setActionMessage("আপনার বাছাই করা একই অধ্যায় ও ধরনের বিকল্প প্রশ্ন বসানো হয়েছে।");
+  }
   async function questionAction(
     id: string,
     action: "remove" | "reset" | "exchange",
@@ -96,17 +108,10 @@ export default function QbBuilder({
         body: JSON.stringify({ id, exclude: items.map((q) => q.id) }),
       });
       const result = await res.json();
-      if (!res.ok || !result.items?.[0])
+      if (!res.ok || !result.alternatives?.length)
         throw Error(result.error || "বিকল্প পাওয়া যায়নি।");
-      const replacement = result.items[0] as PaperItem;
-      const next = items.map((q) => (q.id === id ? replacement : q));
-      localStorage.setItem(
-        "qb:selected",
-        JSON.stringify(next.map((q) => q.id)),
-      );
-      update({ ...s });
-      setItems(next);
-      setActionMessage("একই অধ্যায় ও ধরনের বিকল্প প্রশ্ন বসানো হয়েছে।");
+      setAlternatives({originalId:id,choices:result.alternatives});
+      requestAnimationFrame(()=>alternativesRef.current?.scrollIntoView({block:"nearest",behavior:"smooth"}));
     } catch (e) {
       setActionMessage(e instanceof Error ? e.message : "প্রশ্ন বদলানো যায়নি।");
     } finally {
@@ -246,7 +251,7 @@ export default function QbBuilder({
     () =>
       items
         .filter((q) => !s.excludedIds.includes(q.id))
-        .map((q) => ({ ...q, ...s.edits[q.id] })),
+        .map((q) => applyEnglishTextEdits({ ...q, ...s.edits[q.id] },s.edits[q.id]?.englishText)),
     [items, s.edits, s.excludedIds],
   );
   const counts = useMemo(
@@ -282,7 +287,7 @@ export default function QbBuilder({
       attachments: { ...s.attachments, [id]: { ...old, ...patch } },
     });
   }
-  function questionEdit(q: PaperItem, patch: Partial<PaperItem>) {
+  function questionEdit(q: PaperItem, patch: Partial<PaperSettings["edits"][string]>) {
     update({
       ...s,
       edits: {
@@ -294,6 +299,7 @@ export default function QbBuilder({
             stimulus: q.stimulus,
             subQuestions: q.subQuestions,
           },
+          ...s.edits[q.id],
           ...patch,
         },
       },
@@ -717,6 +723,19 @@ export default function QbBuilder({
               {exchanging ? "বিকল্প প্রশ্ন খোঁজা হচ্ছে…" : actionMessage}
             </p>
           )}
+          {alternatives && <section ref={alternativesRef} data-noprint aria-label="সম্পর্কিত বিকল্প প্রশ্ন" className="mb-4 rounded-xl border border-emerald-200 bg-white p-4">
+            <div className="flex items-center justify-between"><h2 className="font-bold">সম্পর্কিত বিকল্প — আপনি বাছুন</h2><button type="button" onClick={()=>{setAlternatives(null);setCheckoutAlternative("");}}>বন্ধ করুন</button></div>
+            <p className="text-xs">একই বিষয়, অধ্যায় ও ধরন। নির্বাচন না করা পর্যন্ত বর্তমান প্রশ্ন বদলাবে না।</p>
+            <div className="mt-2 grid gap-3 md:grid-cols-2">{alternatives.choices.map(candidate=><article key={candidate.id} className="rounded border p-3">
+              <b>{candidate.label}</b><p className="text-xs">{candidate.subject} · {candidate.topic} · {candidate.type}</p>
+              {candidate.item ? <><RichPaperText text={candidate.item.stimulus || candidate.item.text}/>
+                {candidate.item.subQuestions && Object.entries(candidate.item.subQuestions).map(([key,val])=><p key={key}>{key}) <RichPaperText text={val}/></p>)}
+                {candidate.item.type==="MCQ" && Object.entries(candidate.item.options||{}).map(([key,val])=><p key={key}>{key}) <RichPaperText text={val}/></p>)}
+                <button type="button" className="studio-choice" onClick={()=>chooseAlternative(alternatives.originalId,candidate.item!)}>এই প্রশ্নটি নিন</button></>
+              : <><p>সম্পূর্ণ প্রশ্ন দেখতে আগে ব্যবহারাধিকার/checkout প্রয়োজন।</p><button type="button" className="studio-choice" onClick={()=>setCheckoutAlternative(candidate.id)}>মূল্য ও Checkout দেখুন</button></>}
+            </article>)}</div>
+            {checkoutAlternative && <div><WalletCheckout key={checkoutAlternative} ids={[checkoutAlternative]}/><button type="button" disabled={exchanging} className="studio-choice" onClick={()=>questionAction(alternatives.originalId,"exchange")}>Checkout শেষে বিকল্পগুলো আবার দেখুন</button></div>}
+          </section>}
           <HeaderManager settings={s} update={update} />
           <details
             data-noprint
@@ -990,6 +1009,10 @@ export default function QbBuilder({
                           onChange={(text) => questionEdit(q, { text })}
                         />
                       </label>
+                      {q.englishGroup && englishTextFields(q.englishGroup).map(field=><div key={field.key} className="text-xs">
+                        {field.label}
+                        <RichTextField label={`প্রশ্ন ${i+1}: ${field.label}`} value={field.value} onChange={value=>questionEdit(q,{englishText:{...s.edits[q.id]?.englishText,[field.key]:value}})}/>
+                      </div>)}
                       {questionType(q) === "CQ" && (
                         <>
                           <label className="block text-xs">

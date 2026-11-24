@@ -1,3 +1,4 @@
+import { applyEnglishTextEdits } from "./english/editable-text";
 import { rasterSnapshot } from "@/lib/marketplace-raster";
 import {
   settingsSchema,
@@ -76,7 +77,7 @@ export function marketSnapshotItems(snapshot: {
             }
           : {}),
       };
-      return { ...q, ...s.edits[q.id] };
+      return applyEnglishTextEdits({ ...q, ...s.edits[q.id] },s.edits[q.id]?.englishText);
     })
     .filter((q) => q.id);
 }

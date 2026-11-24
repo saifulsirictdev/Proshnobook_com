@@ -22,7 +22,7 @@ mod.require = (name) =>
     ? require("./helpers/paper-math.cjs")
     : name === "@/lib/paper-header"
       ? headerMod.exports
-      : require(name);
+      : (require("./helpers/paper-editing.cjs").dependencies[name] || require(name));
 mod._compile(
   ts.transpileModule(fs.readFileSync("lib/paper-builder.ts", "utf8"), {
     compilerOptions: {
@@ -146,7 +146,7 @@ test("settings panel exposes a labelled watermark input only when enabled", () =
   const { renderToStaticMarkup } = require("react-dom/server");
   const panel = new Module("paper-settings");
   panel.require = (name) =>
-    name === "./layout-controls" ? { default: () => null } : require(name);
+    name === "./layout-controls" ? { default: () => null } : (require("./helpers/paper-editing.cjs").dependencies[name] || require(name));
   panel._compile(
     ts.transpileModule(
       fs.readFileSync("components/paper-builder/settings.tsx", "utf8"),
@@ -227,7 +227,7 @@ test("both database paper selectors expose Kalpurush and keep unlicensed NikoshB
   const settings = fs.readFileSync("components/paper-builder/settings.tsx", "utf8");
   assert.equal((settings.match(/value="kalpurush"/g) || []).length, 2);
   assert.equal((settings.match(/value="nikoshban" disabled/g) || []).length, 2);
-  assert.match(fs.readFileSync("components/paper-builder/preview.tsx", "utf8"), /kalpurush:.*QmPaperKalpurush/);
+  assert.match(fs.readFileSync("lib/paper-fonts.ts", "utf8"), /kalpurush:.*QmPaperKalpurush/);
   const css = fs.readFileSync("app/globals.css", "utf8");
   assert.match(css, /@font-face\s*\{\s*font-family: 'QmPaperKalpurush'/);
   assert.match(css, /src: url\('\/fonts\/Kalpurush.woff2'\)/);

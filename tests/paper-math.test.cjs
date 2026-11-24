@@ -43,7 +43,7 @@ test("real rich paper renderer produces KaTeX fraction markup, not a slash", () 
     React = require("react");
   function load(file, mocks = {}) {
     const m = new Module(file);
-    m.require = (n) => mocks[n] || require(n);
+    m.require = (n) => mocks[n] || (require("./helpers/paper-editing.cjs").dependencies[n] || require(n));
     m._compile(
       ts.transpileModule(fs.readFileSync(file, "utf8"), {
         compilerOptions: {

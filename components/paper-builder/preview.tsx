@@ -1,4 +1,5 @@
 "use client";
+import { paperFonts } from "@/lib/paper-fonts";
 import { writtenFlowBlocks, type WrittenFlow } from "@/lib/written-flow";
 import { autoModelQuestionMarks, autoModelPartMarks } from "@/lib/auto-model-paper";
 import { englishFlowBlocks, withEnglishPartHeadings } from "@/lib/english/flow-blocks";
@@ -50,13 +51,6 @@ export type PreviewSection = {
   questions: PreviewQuestion[];
   instruction?: string;
   startNumber?: number;
-};
-const families = {
-  kalpurush: '"QmPaperKalpurush", var(--font-en), serif',
-  adorsho: "var(--font-bn), var(--font-en), serif",
-  hind: "var(--qk-body), sans-serif",
-  anek: "var(--qk-head), sans-serif",
-  serif: "var(--font-en), var(--font-bn), serif",
 };
 export default function PaperPreview({
   s,
@@ -607,7 +601,7 @@ export default function PaperPreview({
       [s.cfg.underline ? "underline" : "", s.cfg.strike ? "line-through" : ""]
         .filter(Boolean)
         .join(" ") || "none",
-    fontFamily: families[s.cfg.font],
+    fontFamily: paperFonts[s.cfg.font],
     fontSize: `${s.cfg.autoFit ? fittedFont : s.cfg.fontSize}pt`,
     lineHeight: s.cfg.lineHeight,
     textAlign: s.cfg.align,

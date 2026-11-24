@@ -11,7 +11,7 @@ function load(path, mocks = {}) {
     mocks[name] ||
     (name === "@/lib/marketplace-raster"
       ? load("lib/marketplace-raster.ts")
-      : require(name));
+      : (require("./helpers/paper-editing.cjs").dependencies[name] || require(name)));
   m._compile(
     ts.transpileModule(fs.readFileSync(path, "utf8"), {
       compilerOptions: {

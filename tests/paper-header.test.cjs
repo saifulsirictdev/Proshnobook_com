@@ -8,7 +8,7 @@ const { renderToStaticMarkup } = require("react-dom/server");
 function load(path, deps = {}) {
   const mod = new Module(path);
   mod.require = (n) => n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
-    (n in deps ? deps[n] : require(n));
+    (n in deps ? deps[n] : (require("./helpers/paper-editing.cjs").dependencies[n] || require(n)));
   mod._compile(
     ts.transpileModule(fs.readFileSync(path, "utf8"), {
       compilerOptions: {

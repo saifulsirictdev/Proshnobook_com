@@ -7,7 +7,7 @@ export default function RasterTools({
   edit,
   onCommit,
 }: {
-  tool: "erase" | "text";
+  tool: "erase" | "text" | "replace";
   edit: PageEdit;
   onCommit: (start: RasterPoint, end: RasterPoint) => void;
 }) {
@@ -63,7 +63,7 @@ export default function RasterTools({
       onPointerCancel={cancel}
       onLostPointerCapture={cancel}
     >
-      {tool === "erase" && box && (
+      {tool !== "text" && box && (
         <div
           className="rp-erase-selection"
           style={{
