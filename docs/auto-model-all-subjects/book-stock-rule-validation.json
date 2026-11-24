@@ -1,0 +1,20 @@
+{
+  "rule": "A complete approved full-book model forbids selection-shortfall AI; no topic substitution",
+  "implementationStatus": "SOURCE_TESTED_NOT_DEPLOYED",
+  "autoModelEnglishFocusedTests": 156,
+  "autoModelEnglishFailed": 0,
+  "biologyFocusedTests": 112,
+  "biologyFailed": 0,
+  "typecheck": "PASS",
+  "fullRepositorySuiteClaimed": false,
+  "newProductionBuildClaimed": false,
+  "productionDeploymentChanged": false,
+  "biologyCanonicalItems": 4160,
+  "biologyRemainingChapter14": 320,
+  "biologyImportExecuted": false,
+  "biologyApprovalExecuted": false,
+  "files": {
+    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "59fe28008d70f302f0b8382b9858cff343c2ec5ef42e6f1c3ef59d1e270b0608",
+    "docs/question-bank/ssc-biology/chapter-13-regressions.tap": "f51f9dd93e971af791c5df9b38c7bcfd577203e8b84123b0ab9c9803cae637ea"
+  }
+}

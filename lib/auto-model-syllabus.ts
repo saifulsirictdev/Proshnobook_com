@@ -13,7 +13,7 @@ export function autoModelTopics(category:string,subject:string){
 }
 export function autoModelSetupSummary(category:string,subject:string,variant:string){
   if(!["MCQ","CQ"].includes(variant)||!autoModelTopics(category,subject).length)return null;
-  return {title:`${subject} — নির্বাচিত সিলেবাসের মডেল`,totalMarks:"আপনার সিলেবাস অনুযায়ী",minutes:"সিলেবাস অনুযায়ী",offered:"পরের ধাপে ক্যাটাগরি/টপিক নির্বাচন করুন এবং নির্ধারিত মানবণ্টন দিন।",instructions:"ডাটাবেজের প্রশ্ন আগে; শুধু ঘাটতিটুকু AI। মানবণ্টন অনুমান করা হবে না।"};
+  return {title:`${subject} — নির্বাচিত সিলেবাসের মডেল`,totalMarks:"আপনার সিলেবাস অনুযায়ী",minutes:"সিলেবাস অনুযায়ী",offered:"পরের ধাপে ক্যাটাগরি/টপিক নির্বাচন করুন এবং নির্ধারিত মানবণ্টন দিন।",instructions:"বইয়ে পূর্ণ মডেলের স্টক থাকলে শুধু ডাটাবেজ, AI বন্ধ। পূর্ণ স্টক না থাকলেই কেবল ঘাটতিতে AI। মানবণ্টন অনুমান করা হবে না।"};
 }
 export function resolveSyllabusSelection(raw:unknown){
   const request=autoModelSelectionSchema.parse(raw),catalog=autoModelTopics(request.category,request.subject);

@@ -807,3 +807,14 @@ test('incomplete auto model carries source/writing signatures so the gap engine 
  const parts=await findEnglishBankParts(request,async(_after,prefix)=>prefix==='english-item:v1:'?stock.map(g=>({key:g.key,value:record('APPROVED',g.draft)})):[]);
  assert.deepEqual(parts.missingIds,assembly.missing);assert.equal(parts.output.tasks.length,prepared.draft.output.tasks.length-assembly.missing.length);assert.deepEqual(new Set(parts.output.tasks.map(t=>t.id)),new Set(stock.flatMap(g=>g.draft.output.tasks.map(t=>t.id))));
 });
+
+test('source-filter shortage still reports complete whole-book stock without writing a draft',async()=>{
+ const registry=require('../lib/english/prepared-items.ts');
+ const stock=registry.preparedEnglishItems(10).map(i=>i.draft);
+ const items=require('../lib/english/item-bank.ts');
+ assert.ok(items.assembleEnglishItems(stock,10,()=>0.5).draft);
+ assert.equal(items.assembleEnglishItems(stock,10,()=>0.5,undefined,{examYear:2099}).draft,null);
+ const records=stock.map((draft,i)=>({key:'english-item:v1:'+i,value:record('APPROVED',draft)}));
+ const h=harness(records);
+ const r=await h.run(10,undefined,{examYear:2099},1);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.equal(h.writes.length,0);
+});

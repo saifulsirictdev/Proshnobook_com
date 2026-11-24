@@ -18,13 +18,13 @@ const {parseQuestionUpload}=load('lib/question-json-import.ts',{'./nctb-data':ca
 const root='content/question-bank/ssc/biology',docs='docs/question-bank/ssc-biology';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const report=read(`${docs}/progress.json`),plan=read(`${docs}/batch-plan.json`);
-const manifests=report.chapters.slice(0,12).map(c=>read(`${root}/chapter-${c.chapter}/draft-validation.json`));
+const manifests=report.chapters.slice(0,13).map(c=>read(`${root}/chapter-${c.chapter}/draft-validation.json`));
 const batches=manifests.flatMap(m=>Object.keys(m.files).map(file=>({chapter:m.chapter,topic:m.topic,file,full:`${root}/chapter-${m.chapter}/${file}`})));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const inputRows=name=>fs.readFileSync(`scripts/question-bank/biology/${name}`,'utf8').split('\n').filter(l=>l&&!l.startsWith('#')).map(l=>l.split('|'));
 
-test('all 39 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted',()=>{
- assert.equal(batches.length,39);let count=0;const ids=new Set();
+test('all 42 extant Biology batches pass actual uploader and exact catalog; no historical counts substituted',()=>{
+ assert.equal(batches.length,42);let count=0;const ids=new Set();
  for(const b of batches){
   const raw=fs.readFileSync(b.full,'utf8');assert.ok(Buffer.byteLength(raw)<=750000);
   const parsed=parseQuestionUpload(raw,{category:'Class 9',subject:'জীববিজ্ঞান',group:'',topic:b.topic});
@@ -32,7 +32,7 @@ test('all 39 extant Biology batches pass actual uploader and exact catalog; no h
   for(const q of parsed.batch.items){assert.ok(q.explanation);assert.match(q.page,/অযাচাইকৃত/);assert.equal(q.provenance,undefined);}
   count+=parsed.records.length;
  }
- assert.equal(count,3840);assert.equal(report.draftItems,count);
+ assert.equal(count,4160);assert.equal(report.draftItems,count);
 });
 
 test('all MCQ choices are normalized-distinct and rebuilt keys balanced, shuffled and repeatable',()=>{
@@ -96,17 +96,17 @@ test('ledger origins, authoring paths, content hashes and per-file manifests rec
   for(const [file,v] of Object.entries(m.files)){const bytes=fs.readFileSync(`${folder}/${file}`);assert.equal(bytes.length,v.bytes);assert.equal(sha(bytes),v.sha256);}
   total+=ledger.length;
  }
- assert.equal(total,3840);
+ assert.equal(total,4160);
 });
 
 test('14-chapter targets and three batches reflect current files, with all review/release gates open',()=>{
- assert.equal(report.chapters.length,14);assert.deepEqual(report.totals,{MCQ:2400,CQ:600,SQ:840});
- assert.deepEqual(report.remaining,{MCQ:400,CQ:100,SQ:140});assert.equal(report.targetItems,4480);
- assert.deepEqual(plan.executionOrder,[1,2,3]);assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,640]);
+ assert.equal(report.chapters.length,14);assert.deepEqual(report.totals,{MCQ:2600,CQ:650,SQ:910});
+ assert.deepEqual(report.remaining,{MCQ:200,CQ:50,SQ:70});assert.equal(report.targetItems,4480);
+ assert.deepEqual(plan.executionOrder,[1,2,3]);assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,320]);
  assert.deepEqual(plan.batches.map(b=>b.status),['COUNT_TARGET_MET_REVIEW_REQUIRED','COUNT_TARGET_MET_REVIEW_REQUIRED','IN_PROGRESS']);assert.equal(plan.publicationAuthorized,false);
  for(const c of report.chapters){
   for(const kind of ['MCQ','CQ','SQ'])assert.equal(c.remaining[kind],c.targets[kind]-c.counts[kind]);
-  assert.equal(c.targetMet,c.chapter<=12);
+  assert.equal(c.targetMet,c.chapter<=13);
   for(const flag of ['teacherCertified','independentContentReview','nearDuplicateReviewComplete','approved','published','websiteImported','textbookChapterRead'])assert.equal(c[flag],false,flag);
  }
  for(const b of plan.batches){assert.equal(b.complete,false);assert.equal(b.contentReviewComplete,false);assert.equal(b.countTargetMet,b.batch<=2);}
@@ -127,12 +127,12 @@ test('both builders reproduce all bytes offline and do not introduce Biology reg
  assert.doesNotMatch(fs.readFileSync('scripts/question-bank/build-ssc-biology-drafts.py','utf8'),/DATABASE_URL|import (?:requests|urllib|psycopg)|subprocess|prisma/);
 });
 
-test('offline reader embeds all 3840 drafts and filters/searches/paginates/toggles without remote dependencies',()=>{
+test('offline reader embeds all 4160 drafts and filters/searches/paginates/toggles without remote dependencies',()=>{
  const dom=new JSDOM(fs.readFileSync(`${docs}/questions.html`,'utf8'),{runScripts:'dangerously'}),w=dom.window,d=w.document,$=id=>d.getElementById(id);
- const bank=JSON.parse($('bank').textContent);assert.equal(bank.length,3840);assert.equal(new Set(bank.map(q=>q.id)).size,3840);
+ const bank=JSON.parse($('bank').textContent);assert.equal(bank.length,4160);assert.equal(new Set(bank.map(q=>q.id)).size,4160);
  assert.equal(d.querySelectorAll('script[src],link[href],img,iframe').length,0);assert.equal(d.querySelectorAll('article').length,20);
  function change(id,value){$(id).value=value;$(id).dispatchEvent(new w.Event(id==='search'?'input':'change',{bubbles:true}));}
- assert.equal($('prev').disabled,true);$('next').click();assert.equal($('page').textContent,'2 / 192');
+ assert.equal($('prev').disabled,true);$('next').click();assert.equal($('page').textContent,'2 / 208');
  change('chapter','4');change('kind','CQ');assert.equal(d.querySelectorAll('article').length,20);assert.equal($('next').disabled,false);
  $('toggle').click();assert.ok([...d.querySelectorAll('details')].every(x=>x.open));$('toggle').click();assert.ok([...d.querySelectorAll('details')].every(x=>!x.open));
  change('search','অস্তিত্বহীন987654');assert.equal(d.querySelectorAll('article').length,0);assert.match($('questions').textContent,/পাওয়া যায়নি/);
@@ -141,7 +141,7 @@ test('offline reader embeds all 3840 drafts and filters/searches/paginates/toggl
 });
 
 test('artifact index verifies every rebuild output, authoring input and retained starter file',()=>{
- const index=read(`${docs}/artifact-index.json`);assert.equal(index.draftItems,3840);
+ const index=read(`${docs}/artifact-index.json`);assert.equal(index.draftItems,4160);
  for(const [file,expected] of Object.entries(index.files)){
   assert.ok(fs.existsSync(file),`missing artifact: ${file}`);const bytes=fs.readFileSync(file);
   assert.equal(bytes.length,expected.bytes,file);assert.equal(sha(bytes),expected.sha256,file);
@@ -202,7 +202,7 @@ test('original chapter-1 figure is packaged, hashed, embedded offline and matche
 });
 
 test('single-chapter workflow meets exactly the chapter-1 count target without claiming review or publication',()=>{
- assert.equal(plan.activeChapter,12);assert.equal(plan.workflow,'ONE_CHAPTER_AT_A_TIME');
+ assert.equal(plan.activeChapter,13);assert.equal(plan.workflow,'ONE_CHAPTER_AT_A_TIME');
  const c=report.chapters[0];assert.deepEqual(c.counts,{MCQ:200,CQ:50,SQ:70});
  assert.deepEqual(c.remaining,{MCQ:0,CQ:0,SQ:0});assert.equal(c.targetMet,true);
  for(const other of report.chapters.slice(1,5))assert.deepEqual(other.counts,{MCQ:200,CQ:50,SQ:70});
@@ -263,7 +263,7 @@ test('chapter 2 has precisely 200/50/70 answered drafts with all review/release 
  assert.deepEqual(c.remaining,{MCQ:0,CQ:0,SQ:0});assert.equal(c.targetMet,true);
  assert.equal(c.status,'COUNT_TARGET_MET_REVIEW_REQUIRED');
  for(const flag of ['approved','published','websiteImported','teacherCertified','independentContentReview','nearDuplicateReviewComplete','textbookChapterRead'])assert.equal(c[flag],false);
- assert.equal(plan.activeChapter,12);
+ assert.equal(plan.activeChapter,13);
  const ledger=read(`${root}/chapter-2/source-ledger.json`).entries;
  assert.equal(ledger.length,320);assert.equal(ledger.filter(e=>e.generatedFromConceptCards).length,40);
  assert.ok(ledger.every(e=>e.origin==='original_practice'&&e.sourceExercise===null));
@@ -335,7 +335,7 @@ test('chapter 3 has precisely 200/50/70 answered drafts with all review/release 
  assert.deepEqual(c.remaining,{MCQ:0,CQ:0,SQ:0});assert.equal(c.targetMet,true);
  assert.equal(c.status,'COUNT_TARGET_MET_REVIEW_REQUIRED');
  for(const flag of ['approved','published','websiteImported','teacherCertified','independentContentReview','nearDuplicateReviewComplete','textbookChapterRead'])assert.equal(c[flag],false);
- assert.equal(plan.activeChapter,12);
+ assert.equal(plan.activeChapter,13);
  const ledger=read(`${root}/chapter-3/source-ledger.json`).entries;
  assert.equal(ledger.length,320);assert.equal(ledger.filter(e=>e.generatedFromConceptCards).length,40);
  assert.ok(ledger.every(e=>e.origin==='original_practice'&&e.sourceExercise===null));
@@ -428,10 +428,10 @@ test('chapter-3 curated counting regressions separate chromosome, chromatid, DNA
  }
 });
 
-test('all-bank reader carries exactly thirty-four embedded original diagrams with no external image dependencies',()=>{
+test('all-bank reader carries exactly forty-two embedded original diagrams with no external image dependencies',()=>{
  const dom=new JSDOM(fs.readFileSync(`${docs}/questions.html`,'utf8'),{runScripts:'dangerously'}),w=dom.window,d=w.document,$=id=>d.getElementById(id);
  const bank=JSON.parse($('bank').textContent),figures=bank.filter(q=>q.figure);
- assert.equal(figures.length,38);assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11,12].map(c=>figures.filter(q=>q.chapter===c).length),[1,3,3,3,3,3,3,3,3,5,4,4]);
+ assert.equal(figures.length,42);assert.deepEqual([1,2,3,4,5,6,7,8,9,10,11,12,13].map(c=>figures.filter(q=>q.chapter===c).length),[1,3,3,3,3,3,3,3,3,5,4,4,4]);
  for(const x of figures){assert.match(x.figure.dataUri,/^data:image\/svg\+xml;base64,/);assert.equal(sha(fs.readFileSync(x.evidence.figure.path)),x.evidence.figure.sha256);}
  $('chapter').value='3';$('chapter').dispatchEvent(new w.Event('change',{bubbles:true}));
  $('kind').value='CQ';$('kind').dispatchEvent(new w.Event('change',{bubbles:true}));
@@ -447,7 +447,7 @@ test('chapter 4 has precisely 200/50/70 answered drafts with all review/release 
  assert.deepEqual(c.remaining,{MCQ:0,CQ:0,SQ:0});assert.equal(c.targetMet,true);
  assert.equal(c.status,'COUNT_TARGET_MET_REVIEW_REQUIRED');
  for(const flag of ['approved','published','websiteImported','teacherCertified','independentContentReview','nearDuplicateReviewComplete','textbookChapterRead'])assert.equal(c[flag],false);
- assert.equal(plan.activeChapter,12);
+ assert.equal(plan.activeChapter,13);
  const ledger=read(`${root}/chapter-4/source-ledger.json`).entries;
  assert.equal(ledger.length,320);assert.equal(ledger.filter(e=>e.generatedFromConceptCards).length,40);
  assert.ok(ledger.every(e=>e.origin==='original_practice'&&e.sourceExercise===null));
@@ -1319,7 +1319,7 @@ test('chapter 11 exact counts, balanced keys and limited lexical screen never cl
  assert.deepEqual(v.mcqKeys,{A:50,B:50,C:50,D:50});assert.equal(v.lexicalScreen.exactUniqueStems,320);assert.equal(v.lexicalScreen.candidatePairs,2);assert.equal(v.lexicalScreen.semanticCertification,false);
  for(const c of v.lexicalScreen.candidates)assert.match(c.authorDisposition,/Not independent/);
  for(const flag of ['teacherCertified','independentContentReview','nearDuplicateReviewComplete','approved','published','websiteImported','textbookChapterRead']){assert.equal(v[flag],false);assert.equal(r[flag],false);}
- assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,640]);assert.equal(plan.activeChapter,12);
+ assert.deepEqual(plan.batches.map(b=>b.remainingTotal),[0,0,320]);assert.equal(plan.activeChapter,13);
 });
 
 test('chapter 11 preserves every earlier chapter 1–10 bank artifact and reader against 5a84276',()=>{

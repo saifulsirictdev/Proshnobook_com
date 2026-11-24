@@ -1,4 +1,23 @@
-# Current milestone — chapter 12, জীবের বংশগতি ও জৈব অভিব্যক্তি (2026-11-20)
+# Current milestone — chapter 13, জীবের পরিবেশ (2026-11-20)
+
+**4,160 answered review drafts:2,600 MCQ /650 CQ /910 SQ.** Chapters1–13 each have200MCQ +50CQ +70SQ. **Chapter14 remains320 questions short**; full target4,480 is not finished.
+
+- Open `chapter-13.html` for all320 new answered questions; `questions.html` embeds all4,160 drafts. CQ ক/খ/গ/ঘ uses1/2/3/4 marks. Seven original authoring tables reconcile with the actual uploader, answer keys and source ledger.
+- Four original relevant SVGs are attached to CQs: grassland food web, energy pyramid, selected nitrogen pathways and nutrient enrichment/oxygen stress. English labels have Bengali written equivalents. All rasterized and author-inspected; energy widths not to scale,10% approximate, nitrogen fixation arrow explicitly microbial, fish stress a possible pathway not every cause.
+- All126 earlier chapter1–12 bank artifacts and individual readers are byte-identical to `531e80909624e599a9bb9edf2ca212920790857c`.
+- **112/112 focused Biology technical tests PASS**. Builders reproduce bytes offline. This is not a full app build or independent science/teacher certification.
+- Same-type word-bigram screen>=0.40 found zero candidates, **not a semantic uniqueness/distractor certification**. Concepts recur across question types; no claim320 independent learning objectives.
+- Population/community/ecosystem, producer/abiotic light, habitat/role, trophic level/consumer order, omnivory, detritivore/decomposer distinguished. Energy is not recycled like nutrients; most rather than all systems solar-based. Number/standing biomass/energy pyramids distinguished;10% is a model.
+- Nutrient transformations and some quantitative/sampling/restoration topics are enrichment; independent SSC depth and terminology alignment remain open. All non-native organisms not automatically invasive; biodiversity not only species count, diversity not guaranteed resilience, local absence not global extinction.
+- No unsafe wildlife handling, nest disruption, tasting suspect water, eating contaminated fish to test safety, unapproved biocontrol release, pesticide dose or invented safety guarantee. Community participation and repeated comparable monitoring retained.
+- `chapter-13-completion-review.json` records author safeguards, evidence and limitations. Teacher/content/semantic review and official edition/page alignment remain open. **No Biology registry, import, approval, publication or deployment in this update.**
+- Incremental authoring Drive checkpoint independently size/MD5 verified; final full-source/archive receipt is separately recorded in `drive-backup-chapter-13-complete-receipt.json`. Neither source backup is a database backup.
+
+Historical sections retain their own snapshot counts, not current totals.
+
+---
+
+# Historical milestone — chapter 12, জীবের বংশগতি ও জৈব অভিব্যক্তি (2026-11-20)
 
 **3,840 answered review drafts: 2,400 MCQ / 600 CQ / 840 SQ.** Chapters **1–12 each have 200 MCQ + 50 CQ + 70 SQ**; chapters 13–14 remain empty. Full target 4,480; **640 remain** (400 MCQ / 100 CQ / 140 SQ). Batch 3 is in progress; count targets are not review/release certification.
 

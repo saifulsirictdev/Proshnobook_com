@@ -4,7 +4,7 @@ import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { createHash, randomUUID } from "crypto";
 import { categoryAliases, pendingSource, visibleQuestions, DAILY_PREPARATION_BATCHES } from "@/lib/paper-generation";
-import { resolveSyllabusSelection, planSyllabusModel, syllabusRowKind } from "@/lib/auto-model-syllabus";
+import { resolveSyllabusSelection, planSyllabusModel, syllabusRowKind, autoModelTopics } from "@/lib/auto-model-syllabus";
 import { modelReadiness } from "@/lib/auto-model-insights";
 import { assembleSubjectAutoModel } from "@/lib/auto-model";
 import { requestAutoModelGap } from "@/lib/auto-model-provider";
@@ -17,7 +17,8 @@ export async function prepareAutoModel(raw: unknown) {
   let p:ReturnType<typeof resolveSyllabusSelection>;
   try{p=resolveSyllabusSelection(raw);}catch(e){return {ok:false as const,error:e instanceof Error?e.message:"নির্বাচিত সিলেবাস ও মানবণ্টন যাচাই করুন।"};}
   // Existing integrations without an explicit topic selection keep their approved-only,
-  // database-only contract. The new setup opts into gap preparation with topics.
+  // database-only contract. Explicit topics may prepare gaps only when the whole
+  // approved book also lacks a complete model for this marking scheme.
   if (typeof raw === "object" && raw !== null && p.policy && !Object.hasOwn(raw, "topics"))
     return prepareRegisteredBank(p);
   const {category,subject}=p.request;
@@ -30,6 +31,7 @@ export async function prepareAutoModel(raw: unknown) {
     const result=planSyllabusModel(rows,p);
     if(result.ok)return {ok:true as const,ids:result.ids,...("assignments" in result?{assignments:result.assignments}:{})};
     if(!result.missing.length)return {ok:false as const,error:"নির্বাচিত টপিক দিয়ে নির্ধারিত মানবণ্টন পূরণ সম্ভব নয়। বাধ্যতামূলক বিভাগ/অধ্যায়গুলো নির্বাচন করুন।",gaps:result.gaps};
+    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত টপিকে পর্যাপ্ত উপযুক্ত প্রশ্ন নেই; টপিক বদলান বা ডাটাবেজে প্রশ্ন যোগ করুন।",gaps:result.gaps};
     if(!process.env.DEEPSEEK_API_KEY)return {ok:false as const,error:"ডাটাবেজে পূর্ণ মডেলের উপযুক্ত প্রশ্ন যথেষ্ট নেই এবং AI সংযোগ কনফিগার করা নেই।",gaps:result.gaps};
     // Account-wide persistent lease prevents duplicate charges across tabs/selections.
     const key=`qbai:model-lock:${createHash("sha256").update(user.id).digest("hex")}`;
@@ -44,6 +46,8 @@ export async function prepareAutoModel(raw: unknown) {
     const next=planSyllabusModel(checked,p);
     if(next.ok)return {ok:true as const,ids:next.ids,...("assignments" in next?{assignments:next.assignments}:{})};
     if(!next.missing.length)return {ok:false as const,error:"নির্বাচিত সিলেবাস দিয়ে পূর্ণ মডেল হচ্ছে না।",gaps:next.gaps};
+    // Recheck after acquiring the lease: approved stock may have been imported in another tab.
+    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল এখন ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত টপিকের ঘাটতি ডাটাবেজ থেকেই পূরণ করুন।",gaps:next.gaps};
     // Same 60-batch/account/day budget as Chapter preparation; DB-only uses none.
     let reserved=false;const day=new Date().toISOString().slice(0,10);
     for(let i=0;i<DAILY_PREPARATION_BATCHES;i++){
@@ -75,7 +79,13 @@ export async function inspectAutoModel(raw: unknown) {
       orderBy: [{approved: "desc" as const}, {id: "asc" as const}], take: 10001,
     });
     if (rows.length > 10000) return {ok: false as const, error: "পূর্ণ স্টক যাচাইয়ের সীমা ছাড়িয়েছে; আরও নির্দিষ্ট টপিক নির্বাচন করুন। AI চালানো হয়নি।"};
-    return {ok: true as const, report: modelReadiness(rows, plan)};
+    const report = modelReadiness(rows, plan);
+    const databaseOnly = report.complete || await completeApprovedBook(plan);
+    return {ok: true as const, report: {...report,databaseOnly,
+      stockShortfall: report.aiShortfall,
+      aiShortfall: databaseOnly ? 0 : report.aiShortfall,
+      quotaBatchUpperBound: databaseOnly ? 0 : report.quotaBatchUpperBound,
+      feasible: databaseOnly ? report.complete : report.feasible}};
   } catch {
     return {ok: false as const, error: "সিলেবাস/ডাটাবেজ যাচাই করা যায়নি। AI চালানো হয়নি; আবার যাচাই করুন।"};
   }
@@ -100,4 +110,21 @@ async function prepareRegisteredBank(plan: ReturnType<typeof resolveSyllabusSele
   } catch {
     return {ok: false as const, error: "প্রশ্নভান্ডার যাচাই করা যায়নি। আবার চেষ্টা করুন।"};
   }
+}
+
+/** Book-wide approved stock guard; selected-topic shortages MUST NOT re-enable AI.
+ * Exact subject/class aliases and requested marking scheme, never raw row counts.
+ * Read/scan errors propagate so uncertainty cannot authorize paid generation.
+ */
+async function completeApprovedBook(plan: ReturnType<typeof resolveSyllabusSelection>) {
+  const topics = autoModelTopics(plan.request.category, plan.request.subject);
+  const book = resolveSyllabusSelection({...plan.request, topics, avoidQuestionIds: []});
+  const rows = await db.question.findMany({
+    where: {category: {in: categoryAliases(plan.request.category)},subject: plan.request.subject,
+      topic: {in: topics},approved: true},
+    select: {id: true,text: true,topic: true,options: true,correct: true,explanation: true},
+    orderBy: {id: "asc"},take: 10001,
+  });
+  if (rows.length > 10000) throw Error("Full-book stock scan exceeded safe bound; AI disabled");
+  return planSyllabusModel(rows, book, () => 0.5).ok;
 }

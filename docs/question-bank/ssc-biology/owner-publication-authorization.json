@@ -4,15 +4,15 @@
   "scope": "SSC Biology chapters 1–14 only; no unrelated subject approvals.",
   "independentTeacherCertification": false,
   "gatesStillRequired": [
-    "Author remaining chapter 13/14: each 200 MCQ + 50 CQ + 70 SQ with answers and necessary figures",
+    "Finish chapter14:200MCQ +50CQ +70SQ with answers and necessary figures; chapter13 authored and structurally tested, not independently certified",
     "Question/parser, content, duplicate and figure review; immutable scoped release manifest",
     "Versioned Drive backup independently verified",
     "Live figure asset verification before scoped import",
     "Idempotent pending import followed by separately audited owner approval",
     "Production readback and model/editor verification"
   ],
-  "currentAuthoredCanonical": 3840,
-  "remainingCanonical": 640,
+  "currentAuthoredCanonical": 4160,
+  "remainingCanonical": 320,
   "importExecuted": false,
   "approvalExecuted": false,
   "biologyPublicationVerified": false,

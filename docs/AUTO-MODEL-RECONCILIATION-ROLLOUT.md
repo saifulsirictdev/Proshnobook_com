@@ -19,7 +19,7 @@ Retained: Chemistry's 12-chapter policy/IDs and chapter quotas, Physics's 14-cha
 
 ## Biology remains unfinished
 
-Recovered chapter 1–12 canonical stock is **3,840/4,480**; **640 questions in chapters 13–14 remain unauthored**. Owner publication authorization is now explicitly recorded, but authorization is not a successful publication receipt. Biology is not registered, imported or approved by this Auto Model rollout. No independent teacher certification or complete semantic duplicate review is claimed.
+Current chapter1–13 canonical stock is **4,160/4,480**; **320 questions in chapter14 remain unauthored**. Owner publication authorization is now explicitly recorded, but authorization is not a successful publication receipt. Biology is not registered, imported or approved by this Auto Model rollout. No independent teacher certification or complete semantic duplicate review is claimed.
 
 Deployment receipt/status is a separate artifact. This source document does not claim deployment success or live paid-AI/browser testing.
 
@@ -31,4 +31,14 @@ A further broad application/runtime regression selection passed **954/954**, and
 
 Postdeployment public reads: `/api/health` returned `status: ok, check: liveness`; `/question-builder` showed the public login/start landing; an unauthenticated registered Math Auto Model URL correctly returned the login page. No authenticated teacher browser session or real paid AI request was exercised. See `auto-model-all-subjects/production-upgrade-deployment.json` and `production-upgrade-readonly-smoke.json` for scoped receipts.
 
-**Biology is still 3,840/4,480, with 640 questions unauthored and no Biology import/approval/publication. The entire owner task is NOT completed.**
+**Current Biology source is4,160/4,480, with320 chapter14 questions unauthored and no Biology import/approval/publication. The entire owner task is NOT completed.**
+
+## New owner correction — source implemented, NOT deployed
+
+The book-wide rule is stronger than selection-local bank-first generation: if approved stock can assemble a complete model for the class/book/subject and requested marking scheme, selected-topic shortages must not invoke AI. This is implemented in `prepareAutoModel` and read-only preflight; the server checks the full catalog using the real structural/blueprint planner, not row counts. It checks before acquiring any paid quota and again after the account lease. DB/scan failures fail closed. No selection is silently broadened: an inadequate selection reports gaps and disables the preparation button.
+
+English's item bank checks full-book feasibility without selection-local source/writing restrictions. The paid English generator independently rereads approved stock after its lease, covering direct calls and imports between auto entry and provider boundary. Class8 paper2 retains its existing reference-style contract. All tests use synthetic/mock providers, not live paid calls.
+
+Latest focused checks:156 AutoModel/English tests and112 Biology tests pass; full-repository TypeScript passes. `jsdom` is now an explicit dev dependency for the existing browser tests instead of relying on a disposable cache installation. These are focused checks, not a full repository suite or new production build. Evidence: `auto-model-all-subjects/book-stock-rule-regressions.tap`, `book-stock-rule-validation.json`, Biology chapter13 completion review.
+
+Production remains the prior verified deployment described above. This correction and chapter13 have **not** been deployed or imported. Chapter14 must still be authored, followed by scoped Biology release/asset integration, pending import, separately audited owner approval, deployment and production readback. No unrelated Physics/Chemistry content or production records were republished.

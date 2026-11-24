@@ -94,3 +94,10 @@ test('partial stock retains exact writing signatures instead of regenerating its
  const writing=builder.fullModelWriting(6,2),id=Object.keys(writing)[0];assert.ok(id);const retained={...writing[id],topic:'Existing teacher-approved bank topic'};
  const h=harness({id:'t',role:'TEACHER'},{},{ok:false,reason:'MISSING_APPROVED_ITEMS',reuse:{sources:{},writing:{[id]:retained}}});assert.equal((await h.prepare({grade:6,paper:2})).ok,true);assert.deepEqual(h.requests[0].writing[id],retained);
 });
+
+test('complete-book databaseOnly flag blocks both English papers before sources, provider or quota',async()=>{
+ for(const grade of [6,8,9,10,11,12])for(const paper of [1,2]){
+  const h=harness({id:'teacher',role:'TEACHER'},{},{ok:false,reason:'MISSING_APPROVED_ITEMS',databaseOnly:true,missingIds:['paragraph'],error:'selection shortage'});
+  const r=await h.prepare({grade,paper});assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/AI বন্ধ/);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);
+ }
+});

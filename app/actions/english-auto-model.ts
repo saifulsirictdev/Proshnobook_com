@@ -32,6 +32,7 @@ export async function prepareEnglishFullModel(raw: unknown) {
   // that usually do not exist in the bank and unnecessarily invoking AI.
   const bank = await prepareEnglishBankModel(grade, parsed.data.itemIds, {}, paper);
   if (bank.ok || !("reason" in bank) || bank.reason !== "MISSING_APPROVED_ITEMS") return bank;
+  if(bank.databaseOnly)return {...bank,error:"এই বই/পত্রের পূর্ণ মডেল প্রশ্ন আইটেমে আছে—AI বন্ধ। নির্বাচিত অংশের ঘাটতি ডাটাবেজ থেকে পূরণ করুন।"};
   // Carry the compatible bank groups' exact source/writing signatures into the
   // gap pipeline. Otherwise default topics/random extracts would discard stock.
   const reuse=bank.reuse;

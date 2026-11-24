@@ -50,10 +50,10 @@ test('malformed, duplicate, incomplete and externally-dependent questions never 
  assert.equal(s.safeGeneratedModelRow({...q,text:'External https://bad.test/reference'},plan),false);assert.equal(s.safeGeneratedModelRow({...q,text:'বোর্ড প্রশ্ন ২০২৫'},plan),false);
  assert.equal(s.syllabusRowKind({...q,text:'যদি x < 3 হয়, মান কত?'},plan),'MCQ');
 });
-function harness({user={id:'teacher',role:'TEACHER'},rows=[],dbFailure=false,providerFailure=false,quotaFull=false,locked=false,partialSave=false}={}){
+function harness({user={id:'teacher',role:'TEACHER'},rows=[],dbFailure=false,providerFailure=false,quotaFull=false,locked=false,partialSave=false,onRead=()=>{},bookFailure=false}={}){
  const events=[],saved=[],kv=new Map();let calls=0;
  const code='P2002';if(locked)kv.set('lock','busy');
- const db={question:{findMany:async args=>{events.push(['read',args]);if(dbFailure)throw Error('offline');return [...rows,...saved].filter(q=>args.where.topic.in.includes(q.topic)&&q.category!=="unrelated"&&(q.approved!==false||q.source===require('../lib/paper-generation.ts').pendingSource(user.id))).map(q=>({...q}));},create:async({data})=>{events.push(['save',data]);if(partialSave&&saved.length)throw Error('save failed');const q={...data,id:'saved'+saved.length};saved.push(q);return q;}},setting:{deleteMany:async({where})=>{events.push(['delete',where]);if(kv.get(where.key)===where.value)kv.delete(where.key);return {count:0};},create:async({data})=>{events.push(['reserve',data.key]);if((locked&&data.key.includes('model-lock'))||(quotaFull&&data.key.includes('quota:'))||kv.has(data.key))throw Object.assign(Error('unique'),{code});kv.set(data.key,data.value);return data;}}};
+ const db={question:{findMany:async args=>{events.push(['read',args]);onRead(args,rows);if(bookFailure&&args.where.approved===true)throw Error('book offline');if(dbFailure)throw Error('offline');return [...rows,...saved].filter(q=>args.where.topic.in.includes(q.topic)&&q.category!=="unrelated"&&((args.where.approved===true?q.approved===true:q.approved!==false||q.source===require('../lib/paper-generation.ts').pendingSource(user.id)))).map(q=>({...q}));},create:async({data})=>{events.push(['save',data]);if(partialSave&&saved.length)throw Error('save failed');const q={...data,id:'saved'+saved.length};saved.push(q);return q;}},setting:{deleteMany:async({where})=>{events.push(['delete',where]);if(kv.get(where.key)===where.value)kv.delete(where.key);return {count:0};},create:async({data})=>{events.push(['reserve',data.key]);if((locked&&data.key.includes('model-lock'))||(quotaFull&&data.key.includes('quota:'))||kv.has(data.key))throw Object.assign(Error('unique'),{code});kv.set(data.key,data.value);return data;}}};
  const file='app/actions/auto-model.ts',m=new Module(path.resolve(file),module);m.paths=module.paths;m.require=id=>id==='@/auth'?{auth:async()=>({user})}:id==='@/lib/db'?{db}:id==='@/lib/auto-model-provider'?{requestAutoModelGap:async(p,slots,known)=>{events.push(['provider',slots,known]);calls++;if(providerFailure)throw Error('AI offline');return slots.map((q,i)=>row(`fresh-${calls}-${i}`,q.topic,s.syllabusRowKind(q,p),p.partMarks.length));}}:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
  return{run:m.exports.prepareAutoModel,inspect:m.exports.inspectAutoModel,events,saved,calls:()=>calls};
 }
@@ -125,7 +125,7 @@ test('private generated written rows retain section compatibility rather than fi
 });
 test('read-only preflight reports selected scope, exact shortfall and marks without answers, writes or AI',async()=>{
  const req=selection(),rows=Array.from({length:28},(_,i)=>({...row('stock'+i,req.topics[0]),approved:true})),h=harness({rows});
- const r=await h.inspect(req);assert.equal(r.ok,true);assert.equal(r.report.complete,false);assert.equal(r.report.offered,30);assert.equal(r.report.stockInModel,28);assert.equal(r.report.aiShortfall,2);assert.equal(r.report.totalMarks,30);assert.equal(r.report.feasible,true);assert.equal(h.calls(),0);assert.deepEqual(h.events.map(e=>e[0]),['read']);
+ const r=await h.inspect(req);assert.equal(r.ok,true);assert.equal(r.report.complete,false);assert.equal(r.report.offered,30);assert.equal(r.report.stockInModel,28);assert.equal(r.report.aiShortfall,2);assert.equal(r.report.totalMarks,30);assert.equal(r.report.feasible,true);assert.equal(h.calls(),0);assert.deepEqual(h.events.map(e=>e[0]),['read','read']);
  assert.deepEqual(r.report.topics.map(t=>t.topic),req.topics);assert.equal(r.report.topics.reduce((n,t)=>n+t.missing,0),2);assert.ok(!JSON.stringify(r).includes(rows[0].text));assert.ok(!JSON.stringify(r).includes(rows[0].explanation));assert.ok(!JSON.stringify(r).includes(rows[0].id));
  for(const opts of [{user:null},{user:{id:'s',role:'STUDENT'}},{dbFailure:true},{rows:Array.from({length:10001},()=>row('large',req.topics[0]))}]){const bad=harness(opts),v=await bad.inspect(req);assert.equal(v.ok,false);assert.equal(bad.calls(),0);assert.equal(bad.saved.length,0);assert.ok(bad.events.every(e=>e[0]==='read'));}
 });
@@ -140,4 +140,44 @@ test('history is bounded, deduplicated, tolerant of corrupt browser values and i
  const h=require('../lib/auto-model-insights.ts');for(const raw of [null,'bad','{}','"string"','[null,1,{},""]','x'.repeat(100001)])assert.deepEqual(h.readModelHistory(raw),[]);
  assert.deepEqual(h.readModelHistory('["a","a","b"]'),['a','b']);assert.deepEqual(h.readModelHistory(h.appendModelHistory('["a","b"]',['a','c'])),['b','a','c']);
  assert.equal(h.readModelHistory(JSON.stringify(Array.from({length:600},(_,i)=>'q'+i))).length,500);assert.notEqual(h.modelHistoryKey('SSC','গণিত','MCQ'),h.modelHistoryKey('SSC','গণিত','CQ'));assert.notEqual(h.modelHistoryKey('SSC','গণিত','MCQ'),h.modelHistoryKey('HSC','গণিত','MCQ'));
+});
+
+test('book-wide complete approved stock disables AI even when the chosen topics are empty',async()=>{
+ const old=process.env.DEEPSEEK_API_KEY;process.env.DEEPSEEK_API_KEY='test-only';try{
+  const req=selection(),other=s.autoModelTopics(req.category,req.subject).find(t=>!req.topics.includes(t));assert.ok(other);
+  const h=harness({rows:Array.from({length:30},(_,i)=>({...row('book'+i,other),approved:true}))});
+  const r=await h.run(req);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/AI বন্ধ/);
+  assert.equal(h.calls(),0);assert.equal(h.saved.length,0);assert.ok(h.events.every(e=>e[0]==='read'));
+  const report=await h.inspect(req);assert.equal(report.ok,true);assert.equal(report.report.databaseOnly,true);assert.equal(report.report.complete,false);assert.equal(report.report.feasible,false);assert.equal(report.report.aiShortfall,0);assert.equal(report.report.stockShortfall,30);assert.equal(report.report.quotaBatchUpperBound,0);
+  const bookRead=h.events.find(e=>e[1]?.where?.approved===true)[1];assert.equal(bookRead.where.subject,req.subject);assert.deepEqual(bookRead.where.topic.in,s.autoModelTopics(req.category,req.subject));
+ }finally{if(old===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=old;}
+});
+test('book guard is structural, excludes pending items, fails closed on read errors and rechecks after lease',async()=>{
+ const old=process.env.DEEPSEEK_API_KEY;process.env.DEEPSEEK_API_KEY='test-only';try{
+  const req=selection(),other=s.autoModelTopics(req.category,req.subject).find(t=>!req.topics.includes(t));
+  for(const rows of [Array.from({length:50},(_,i)=>({...row('bad'+i,other),approved:true,explanation:''})),Array.from({length:30},(_,i)=>({...row('pending'+i,other),approved:false}))]){
+   const h=harness({rows});assert.equal((await h.run(req)).pending,true);assert.equal(h.calls(),1);
+  }
+  const fail=harness({bookFailure:true});assert.equal((await fail.run(req)).ok,false);assert.equal(fail.calls(),0);assert.ok(fail.events.every(e=>e[0]==='read'));assert.equal((await fail.inspect(req)).ok,false);
+  let approvedReads=0;
+  const race=harness({onRead:(args,rows)=>{if(args.where.approved===true&&++approvedReads===2)rows.push(...Array.from({length:30},(_,i)=>({...row('import'+i,other),approved:true})));}});
+  const r=await race.run(req);assert.equal(r.databaseOnly,true);assert.equal(race.calls(),0);assert.ok(!race.events.some(e=>e[0]==='reserve'&&e[1].includes('quota:')));assert.ok(race.events.some(e=>e[0]==='delete'&&typeof e[1].value==='string'));
+ }finally{if(old===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=old;}
+});
+
+test('the database-only book rule applies to every catalog subject with a teacher-supplied MCQ scheme',async()=>{
+ let tested=0;
+ for(const cls of catalog.NCTB_CLASSES)for(const sub of cls.subjects){
+  const topics=s.autoModelTopics(cls.class,sub.name);if(topics.length<2||a.autoModelBlueprint(cls.class,sub.name,'MCQ'))continue;
+  const req=selection({category:cls.class,subject:sub.name,topics:[topics[0]]});
+  const h=harness({rows:Array.from({length:30},(_,i)=>({...row('whole-book'+i,topics.at(-1)),approved:true}))});
+  const r=await h.run(req);assert.equal(r.databaseOnly,true,cls.class+' / '+sub.name);assert.equal(h.calls(),0);assert.ok(h.events.every(e=>e[0]==='read'));tested++;
+ }
+ assert.ok(tested>40);
+});
+test('full-book scan overflow cannot authorize AI even when the selected-topic scan is small',async()=>{
+ const req=selection(),other=s.autoModelTopics(req.category,req.subject).find(t=>!req.topics.includes(t));
+ const h=harness({rows:Array.from({length:10001},(_,i)=>({...row('overflow'+i,other),approved:true}))});
+ assert.equal((await h.run(req)).ok,false);assert.equal(h.calls(),0);assert.ok(h.events.every(e=>e[0]==='read'));
+ assert.equal((await h.inspect(req)).ok,false);
 });
