@@ -70,3 +70,61 @@ export function applyEnglishTextEdits(
     englishGroup: group,
   };
 }
+/** Resolve an identifier-based inline edit path to the stored edit key/value.
+    Paths always carry ORIGINAL indices; fragment groups (tableOffset/
+    subitemOffset) are converted here so fragment and original callers both work. */
+export function resolveEnglishField(
+  group: NonNullable<PaperItem["englishGroup"]>,
+  path: string,
+): { key: string; value: string } | null {
+  const seg = path.split(":");
+  if (seg[0] === "passage") {
+    const i = group.passages.findIndex((p) => p.key === seg[1]);
+    return i < 0 ? null : { key: `p.${i}`, value: group.passages[i].text };
+  }
+  if (seg[0] !== "task") return null;
+  const ti = group.tasks.findIndex((t) => t.id === seg[1]);
+  if (ti < 0) return null;
+  const task = group.tasks[ti],
+    rest = seg.slice(2);
+  const key = (suffix: string) => `t.${ti}.${suffix}`;
+  if (rest[0] === "instruction")
+    return { key: key("instruction"), value: task.instruction };
+  if (rest[0] === "clue") {
+    const j = Number(rest[1]);
+    return task.clues?.[j] === undefined
+      ? null
+      : { key: key(`clue.${j}`), value: task.clues![j] };
+  }
+  if (rest[0] === "head") {
+    const j = Number(rest[1]);
+    return task.table?.headers[j] === undefined
+      ? null
+      : { key: key(`head.${j}`), value: task.table!.headers[j] };
+  }
+  if (rest[0] === "cell") {
+    // Paths carry ORIGINAL row indices; a split fragment stores only its slice.
+    const orig = Number(rest[1]),
+      r = orig - (group.tableOffset ?? 0),
+      c = Number(rest[2]);
+    const value = task.table?.rows[r]?.[c];
+    return value === undefined
+      ? null
+      : { key: key(`cell.${orig}.${c}`), value };
+  }
+  if (rest[0] === "sub") {
+    const orig = Number(rest[1]),
+      j = orig - (group.subitemOffset ?? 0);
+    return task.subitems[j]
+      ? { key: key(`sub.${j}`), value: task.subitems[j].text }
+      : null;
+  }
+  if (rest[0] === "option") {
+    const orig = Number(rest[1]),
+      j = orig - (group.subitemOffset ?? 0),
+      k = Number(rest[2]);
+    const value = task.subitems[j]?.options?.[k];
+    return value === undefined ? null : { key: key(`option.${j}.${k}`), value };
+  }
+  return null;
+}

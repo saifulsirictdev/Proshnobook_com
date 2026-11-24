@@ -69,9 +69,11 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   await closeSettings();
   // Editing the last writing item must stay visible and survive actual DB saves.
   const last=originalItems.at(-1),marker=`Reviewed writing instruction ${grade} ${paper} ${width}`;
-  const editor=page.locator('section').filter({has:page.getByRole('heading',{name:'প্রশ্ন সম্পাদনা ও সংযুক্তি',exact:true})}).last();
-  await click(editor.locator('details').last().locator('summary'));
-  await editor.getByRole('textbox',{name:`প্রশ্ন ${originalItems.length}`,exact:true}).fill(marker);
+  const instructionLabel=`নির্দেশনা ${last.id} ${last.englishGroup.tasks[0].id}`;
+  await click(page.locator(`.paper-sheet [aria-label="${instructionLabel} — ক্লিক করে এডিট"]`).last());
+  const editor=page.locator('.inline-edit-box');
+  await editor.getByRole('textbox',{name:instructionLabel,exact:true}).fill(marker);
+  await click(editor.getByRole('button',{name:'সেভ',exact:true}));
   await click(page.locator('summary').filter({hasText:'Page Setup ও অতিরিক্ত সেটিংস'}));
   const metadata=page.locator('details').filter({has:page.getByText('Page Setup ও অতিরিক্ত সেটিংস',{exact:true})});
   await metadata.getByRole('textbox',{name:'সময় (মিনিট বা পূর্ণ বিবরণ)',exact:true}).fill('2 hours');
@@ -80,7 +82,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   await waitPaper(count);
   assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(marker));
   await savePaper();
-  let stored=await saved(key);assert.notEqual(stored.updatedAt,initial.updatedAt);assert.equal(stored.builderSettings.edits[last.id].text,marker);assert.equal(stored.builderSettings.cfg.fontSize,12);
+  let stored=await saved(key);assert.notEqual(stored.updatedAt,initial.updatedAt);assert.equal(stored.builderSettings.edits[last.id].englishText["t.0.instruction"],marker);assert.equal(stored.builderSettings.cfg.fontSize,12);
   assert.equal(JSON.stringify(stored.output),originalTasks,'Layout edits must not mutate source tasks/keys');
   setPhase(label+'_repeat_save_header');
   const headerEditor=page.getByRole('region',{name:'ডিফল্ট হেডার সম্পাদনা',exact:true});

@@ -198,12 +198,94 @@
 }
 
 /* The same compact reference geometry is measured and printed. */
-.english-reference-question .english-part-heading { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-.english-reference-question p { margin: .15em 0; }
-.english-reference-question section > div > p { padding-left: 1.8em; }
+.english-reference-question .english-part-heading {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.english-reference-question p {
+  margin: 0.15em 0;
+}
+.english-reference-question section > div > p {
+  padding-left: 1.8em;
+}
 
 /* A divider occupies the gap, not the text lane. Every lane now has precisely
    the width used by the hidden measurement tree (including the left lane). */
-.paper-column { position: relative; min-width: 0; }
-.paper-column-divider { position: absolute; top: 0; bottom: 0; border-left: 1px solid #888; pointer-events: none; }
-.paper-measure { box-sizing: border-box; overflow-wrap: anywhere; }
+.paper-column {
+  position: relative;
+  min-width: 0;
+}
+.paper-column-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #888;
+  pointer-events: none;
+}
+.paper-measure {
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+/* Click-to-edit affordances on the sheet (screen only; editors are data-noprint). */
+.inline-edit-target {
+  cursor: text;
+  border-radius: 2px;
+}
+.inline-edit-target:hover,
+.inline-edit-target:focus-visible {
+  outline: 1px dashed #6aa5f3;
+  outline-offset: 2px;
+}
+.inline-edit-box {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 14em;
+  max-width: 100%;
+  padding: 6px;
+  border: 1px solid #a7f3d0;
+  border-radius: 8px;
+  background: #fff;
+  vertical-align: top;
+  text-align: left;
+}
+.inline-edit-box--mini {
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+  gap: 4px;
+  padding: 2px 4px;
+}
+.inline-edit-box .paper-rich-field {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+.inline-edit-actions {
+  display: inline-flex;
+  gap: 6px;
+}
+.inline-edit-actions button {
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 2px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+}
+.inline-edit-actions button:first-child {
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+}
+.inline-edit-number {
+  width: 4.5em;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+@media print {
+  .inline-edit-box {
+    display: none !important;
+  }
+}
