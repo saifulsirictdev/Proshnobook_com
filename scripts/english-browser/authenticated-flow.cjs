@@ -160,7 +160,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
     setPhase(templatePhase+'_return_default');
-    await click(page.getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}));
+    await click(page.locator('[data-default-header-restore]'));
     setPhase(templatePhase+'_save_default');
     await savePaper();
     setPhase(templatePhase+'_visible_default');

@@ -805,7 +805,7 @@ export default function QbBuilder({
             >
               <Shuffle size={15} /> এলোমেলো
             </button>
-            {!purchased && s.header.enabled && <button type="button" onClick={()=>update(withDefaultHeader(s,true))} className="qm-action-link">ডিফল্ট হেডারে ফিরুন</button>}
+            {!purchased && s.header.enabled && <button data-default-header-restore type="button" onClick={()=>update(withDefaultHeader(s,true))} className="qm-action-link">ডিফল্ট হেডারে ফিরুন</button>}
             {!purchased && !s.header.enabled && <button type="button" onClick={()=>requestHeaderEdit(v=>v+1)} className="rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-900">ডিফল্ট হেডার এডিট করুন</button>}
             {s.seed > 0 && (
               <button
