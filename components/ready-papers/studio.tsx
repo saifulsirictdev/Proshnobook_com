@@ -1767,14 +1767,13 @@ export default function ReadyStudio({
           onClose={() => setCheckout(false)}
           onPaid={async (id) => {
             const saved = await getReadyPurchase(id);
-            if (saved) {
-              setEdits(saved.snapshot.edits);
-              setHeader(saved.snapshot.header);
-              setHeaderStyle(saved.snapshot.headerStyle);
-              setHeaderSettings(saved.snapshot.headerSettings);
-              setHeaderLine(saved.snapshot.headerLine);
-              setHeaderGap(saved.snapshot.headerGap);
-            }
+            if (!saved) throw new Error("Saved purchase unavailable");
+            setEdits(saved.snapshot.edits);
+            setHeader(saved.snapshot.header);
+            setHeaderStyle(saved.snapshot.headerStyle);
+            setHeaderSettings(saved.snapshot.headerSettings);
+            setHeaderLine(saved.snapshot.headerLine);
+            setHeaderGap(saved.snapshot.headerGap);
             setReceipt(id);
             setPaidSelection(readySelectionIdentity(selected));
             setCheckout(false);
