@@ -112,7 +112,9 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   const {pathToFileURL}=require('node:url');
   const pdfjs=await import(pathToFileURL(require.resolve('pdfjs-dist/legacy/build/pdf.mjs')).href);
   const document=await pdfjs.getDocument({data:new Uint8Array(bytes),useSystemFonts:true,disableFontFace:true,isEvalSupported:false}).promise;
-  const text=[];for(let i=1;i<=document.numPages;i++)text.push((await(await document.getPage(i)).getTextContent()).items.map(v=>v.str).join(' '));
+  // Reconstruct lines on hasEOL: pdfjs splits synthetic-bold runs ("W","ork")
+  // into items without separators, while wrapped lines need a real break.
+  const text=[];for(let i=1;i<=document.numPages;i++){const items=(await(await document.getPage(i)).getTextContent()).items;let line='';for(const v of items){line+=v.str;if(v.hasEOL){text.push(line);line='';}}if(line)text.push(line);}
   const printed=normalize(text.join(' '));assert.ok(printed.includes(marker),'Saved question edit missing from actual PDF');assert.ok(printed.includes(institute),'Saved header missing from actual PDF');
   assert.ok(!printed.includes('প্রশ্নপত্র সেভ করুন'),'Editor controls leaked into PDF');
   // No complete suggested writing answer may appear in question-only print.
