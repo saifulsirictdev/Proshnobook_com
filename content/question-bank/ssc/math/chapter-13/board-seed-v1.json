@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৩শ অধ্যায়: সসীম ধারা",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 13 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$6+12+24+\\cdots$ ধারার অষ্টম পদ কত?",
+      "options": {
+        "A": "$84$",
+        "B": "$252$",
+        "C": "$768$",
+        "D": "$1536$"
+      },
+      "correct": "C",
+      "explanation": "এটি গুণোত্তর ধারা, a=6,r=2। $a_8=6\\cdot2^7=768$।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 11",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "11"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$6+12+24+48+\\cdots+384$ ধারাটির পদসংখ্যা কত?",
+      "options": {
+        "A": "$64$",
+        "B": "$32$",
+        "C": "$7$",
+        "D": "$6$"
+      },
+      "correct": "C",
+      "explanation": "$6\\cdot2^{n-1}=384$ থেকে $2^{n-1}=64=2^6$; n=7।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "5"
+        }
+      ]
+    }
+  ]
+}

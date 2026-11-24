@@ -37,7 +37,7 @@ export default function AdminAI() {
         <select name="count" className={f}><option>5</option><option>10</option><option>20</option></select>
         <select name="lang" className={f}><option>Bangla</option><option>English</option></select>
         <button disabled={pending} className="flex items-center justify-center gap-2 rounded-md bg-royal px-4 py-2 text-white disabled:opacity-60 sm:col-span-3">
-          <Sparkles size={16} />{pending ? "Working…" : "Generate quiz with AI"}
+          <Sparkles size={16} />{pending ? "Working…" : "Generate quiz with সফটওয়্যার"}
         </button>
       </form>
       {msg && <p role="status" className="mt-3 text-sm">{msg}</p>}

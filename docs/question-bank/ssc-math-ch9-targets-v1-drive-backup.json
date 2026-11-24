@@ -1,0 +1,46 @@
+{
+  "status": "DRIVE_UPLOAD_RESPONSE_SIZE_AND_MD5_MATCH_LOCAL_BYTES",
+  "chapter": 9,
+  "date": "2026-11-20",
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "counts": {
+    "MCQ": 250,
+    "CQ": 150,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "docs/question-bank/ssc-math-ch9-questions-v1-backup.json",
+      "driveId": "1mxalUQeaIHCXWZini9Yhyu_FoeCOec7a",
+      "url": "https://drive.google.com/file/d/1mxalUQeaIHCXWZini9Yhyu_FoeCOec7a/view",
+      "bytes": 1320976,
+      "md5": "23c598ed9a63a49bf5ba813b4619b661",
+      "sha256": "81a0e35304ab8c64a118dad6f2791e33df8c67c0126a600e3291a932ac03df0f",
+      "uploadSucceeded": true,
+      "uploadResponseSizeAndMD5Match": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch9-illustrated-v1-backup.zip",
+      "driveId": "1pv2Wg_RasSaJdH3Ov_Dh_dJV2CZTmW0z",
+      "url": "https://drive.google.com/file/d/1pv2Wg_RasSaJdH3Ov_Dh_dJV2CZTmW0z/view",
+      "bytes": 1069755,
+      "md5": "578259abf1f47c23d578df8c9724ddaa",
+      "sha256": "a7094b196b20f4836c2aafcc8272c87b1fb3fcf7e5aa29a43fbffcaff7fbc04e",
+      "uploadSucceeded": true,
+      "uploadResponseSizeAndMD5Match": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch9-illustrated-review.html",
+      "driveId": "1eoEcMrXuwxE8LKuizREoJo_fVji6WzDf",
+      "url": "https://drive.google.com/file/d/1eoEcMrXuwxE8LKuizREoJo_fVji6WzDf/view",
+      "bytes": 6515008,
+      "md5": "838065432b71347c111cbd9d234cde2d",
+      "sha256": "616631d5b32542eca550ffacca995c528101d6648ea8a316ed6c5b45d0ab6f36",
+      "uploadSucceeded": true,
+      "uploadResponseSizeAndMD5Match": true
+    }
+  ],
+  "notes": "Three successful connector upload responses checked against local MD5 and sizes; ZIP every entry byte-equal to workspace. JSON backup container is not direct importer input; extract importFiles[].payload. No real DB import/approval/deployment."
+}

@@ -1,0 +1,63 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 17,
+  "topic": "১৭শ অধ্যায়: পরিসংখ্যান",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq-1.json",
+      "bytes": 216423,
+      "sha256": "be23bcf476ce004a6f6f088007d252bd6a9c1333e3ea01d2bfa5d1f4b284ba29"
+    },
+    {
+      "file": "target-v1/mcq-2.json",
+      "bytes": 214923,
+      "sha256": "672f19989a929be3fd69857773e6d3b52ce9958103d5c79f7be1842c2f447078"
+    },
+    {
+      "file": "target-v1/cq-1.json",
+      "bytes": 419285,
+      "sha256": "da97b76087735d8dab7c076f163a4759cbbcc47a741c76c10551ab0e56388291"
+    },
+    {
+      "file": "target-v1/cq-2.json",
+      "bytes": 137088,
+      "sha256": "8c04e0b130e6df1d3d0957afcc2607e23fd009c50b4965a06c8b479ec14712ca"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 140015,
+      "sha256": "9ca6c127c2ffd539cbfd1b9c652dd1a4e55acfd3d96c6d91810702e389c79407"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 924349,
+    "sha256": "70e8a58f9e6b85d1e30242fa101f05f409d12e86efbe2f3d4fc25cc8299fe9d4"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 5114,
+    "sha256": "b4e5134849374abbab350468e1dab10d7498b80d5a0fa34d687e899574a9d117"
+  },
+  "limitations": [
+    "Numeric target 600 met; 4 source-adapted MCQ and 593 original parameter variants, not 600 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

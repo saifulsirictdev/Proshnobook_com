@@ -1,0 +1,41 @@
+{
+  "status": "UPLOADED_METADATA_READBACK_VERIFIED",
+  "fileId": "1sdkUm3Zj76cQej8Sd6GhYMTlR53SmQUq",
+  "folderId": "176mPxq4l8vSRJXjJnERwEk5I190KFdzJ",
+  "url": "https://drive.google.com/file/d/1sdkUm3Zj76cQej8Sd6GhYMTlR53SmQUq/view",
+  "name": "SSC Chemistry Chapter 10 — 700 MCQ 200 CQ 100 SQ — draft v1 backup.zip",
+  "local": {
+    "file": ".cache/chemistry-sources/ssc-chemistry-ch10-700-200-100-draft-v1-backup.zip",
+    "bytes": 1341494,
+    "entries": 45,
+    "md5": "991ddecf9cc6dcc52b2bd2941ba46f8e",
+    "sha256": "fdfb5f030ac2cd7f0aad0df02ef3c5c4e9182cbff4a46fcbd48d8cf8fc913e8e",
+    "localZipIntegrity": "PASS",
+    "allEntryChecksums": "PASS"
+  },
+  "remoteMetadata": {
+    "size": 1341494,
+    "md5Checksum": "991ddecf9cc6dcc52b2bd2941ba46f8e",
+    "trashed": false
+  },
+  "verification": {
+    "uploadSizeMd5Matched": true,
+    "separateGetFileSizeMd5Matched": true,
+    "localZipIntegrity": true,
+    "allLocalEntrySHA256Matched": true,
+    "remoteBytesDownloaded": false,
+    "note": "Separate Drive metadata readback matched size/MD5; not a remote raw-byte download/SHA256 comparison."
+  },
+  "counts": {
+    "MCQ": 700,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "sources": 17,
+  "authored": 983,
+  "teacherCertified": false,
+  "imported": false,
+  "approved": false,
+  "deployed": false,
+  "receiptInsideArchive": false
+}

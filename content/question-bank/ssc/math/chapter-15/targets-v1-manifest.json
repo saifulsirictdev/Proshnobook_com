@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 15,
+  "topic": "১৫শ অধ্যায়: ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 145509,
+      "sha256": "fd97634cd2b48c24b7deee10fe06e1ed51cbf012bd060b4c61c7fbf841956c48"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 97617,
+      "sha256": "9ee623461bef615bf58c62f1c8a585d3d8c4eef8d434fbcced2b898b92fd9dbd"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 74416,
+      "sha256": "db4b5a313812cecda1df54b9013ee304c25b25c54ee9c6845963a9dea1d732ac"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 628937,
+    "sha256": "c07192dc41f6757a7d0d18851567286bbc24b762112efc3404a5176840af0f48"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 3028,
+    "sha256": "5c5d9c29c7cd0b5f407e74e2a11577f02f063a72e25ccc603c18e9d2185055bb"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

@@ -1,0 +1,1761 @@
+{
+  "category": "Class 9",
+  "subject": "পদার্থবিজ্ঞান",
+  "topic": "১৪শ অধ্যায়: জীবন বাঁচাতে পদার্থবিজ্ঞান",
+  "book": "নিজস্ব চিত্রসহ অনুশীলনী; বোর্ড-প্রশ্ন হিসেবে আরোপ নয়",
+  "edition": "Chapter 14 illustrated draft v1; teacher review pending",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে ও ultrasound-এর মৌলিক পার্থক্য কী?",
+      "explanation": "এক্স-রে আয়নকারী; ultrasound উচ্চ কম্পাঙ্কের শব্দ, মাধ্যম প্রয়োজন।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "এক্স-রে তড়িৎচৌম্বক, ultrasound যান্ত্রিক",
+        "B": "দুটিই একই আয়নকারী শব্দ",
+        "C": "দুটিই শূন্যস্থানে শব্দ",
+        "D": "দুটির বেগ সবসময় সমান"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "CT imaging সাধারণত কোন সংকেত ব্যবহার করে?",
+      "explanation": "বিভিন্ন projection থেকে কম্পিউটারে slice/reconstruction হয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "শুধু শোনা শব্দ",
+        "B": "বিভিন্ন দিকের এক্স-রে attenuation data",
+        "C": "শুধু দৃশ্যমান আলো",
+        "D": "কোনো কম্পিউটার নয়"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "MRI-এর প্রধান নীতির সঙ্গে কোনটি যুক্ত?",
+      "explanation": "Nuclear magnetic resonance-ভিত্তিক সংকেত ব্যবহৃত; strong field-এ implant safety screening জরুরি।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "এক্স-রে beam বাধ্যতামূলক",
+        "B": "যান্ত্রিক হর্ন",
+        "C": "চৌম্বক ক্ষেত্র ও radio-frequency signal",
+        "D": "শুধু ultraviolet"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ECG প্রধানত কী রেকর্ড করে?",
+      "explanation": "Electrode-এর potential difference রেকর্ড হয়; ব্যাখ্যা trained clinician-এর কাজ।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "সরাসরি হৃদয়ের ছবি",
+        "B": "সবসময় রক্তচাপের ছবি",
+        "C": "কেবল হাড়ের ঘনত্ব",
+        "D": "হৃদয়ের বৈদ্যুতিক কার্যকলাপের সময়ভিত্তিক বিভব"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Endoscope-এর উদ্দেশ্য কী?",
+      "explanation": "আলো ও camera/fibre দিয়ে ভেতরের দৃশ্য পাওয়া যায়; পদ্ধতি চিকিৎসা-পেশাজীবীর কাজ।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "শরীরের উপযুক্ত অভ্যন্তরীণ অংশ দেখা",
+        "B": "সবসময় অস্থি ভাঙা জোড়া লাগানো",
+        "C": "সব radiation বন্ধ করা",
+        "D": "শুধু heart current মাপা"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে tube-এ রশ্মি উৎপাদনের মূল ঘটনা কী?",
+      "explanation": "ত্বরিত electron-এর শক্তির অংশ bremsstrahlung/characteristic X-ray-এ যায়; অধিকাংশ তাপ হতে পারে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "পানির দোলন",
+        "B": "দ্রুত electron target-এ বাধাপ্রাপ্ত হয়",
+        "C": "শুধু শব্দের প্রতিফলন",
+        "D": "স্থির পরমাণুর আলো নাড়াচাড়া নয়"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "অপ্রয়োজনীয় ionizing পরীক্ষা এড়ানোর কারণ কী?",
+      "explanation": "পরীক্ষার প্রয়োজন ও উপকার-ঝুঁকি চিকিৎসক বিচার করেন; নিজে থেকে প্রয়োজনীয় পরীক্ষা বাদ দেওয়া নয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "প্রয়োজনীয় সব পরীক্ষাই বন্ধ করা",
+        "B": "বিকিরণ কখনো প্রভাব ফেলে না",
+        "C": "অযথা radiation exposure কমানো",
+        "D": "প্রতিটি পরীক্ষা একই dose"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে ছবিতে হাড় আলাদা contrast দিতে পারে কেন?",
+      "explanation": "বেধ, গঠন ও photon energy-ভেদে absorption/scattering ভিন্ন হয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "হাড় সবসময় আলো তৈরি করে",
+        "B": "সব টিস্যু একই শোষণ করে",
+        "C": "শব্দ হাড়ে নেই",
+        "D": "টিস্যুভেদে attenuation আলাদা"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "Ultrasound-এ coupling gel ব্যবহারের কারণ কী?",
+      "explanation": "প্রোব ও ত্বকের মাঝে air interface-এ প্রবল reflection কমাতে সাহায্য করে।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "বায়ুর ফাঁক কমিয়ে sound transmission উন্নত করা",
+        "B": "সবসময় তাপমাত্রা অসীম করা",
+        "C": "শব্দকে এক্স-রে করা",
+        "D": "আধান তৈরি"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "Pacemaker-এর সাধারণ ভূমিকা কী?",
+      "explanation": "যাদের প্রয়োজন, তাদের জন্য clinician-programmed electrical stimulation; ব্যক্তিগত settings এখানে সুপারিশ নয়।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "নিজে অক্সিজেন তৈরি",
+        "B": "উপযুক্ত ক্ষেত্রে হৃদস্পন্দনের electrical timing-এ সহায়তা",
+        "C": "সব রোগে একই চিকিৎসা",
+        "D": "সরাসরি এক্স-রে ছবি"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=20 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-0.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 15 mm। ব্যবহৃত উপাত্ত: v=1500, t=20।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "30 mm",
+        "B": "7.5 mm",
+        "C": "15 mm",
+        "D": "25 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=22 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-1.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 16.5 mm। ব্যবহৃত উপাত্ত: v=1500, t=22।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "33 mm",
+        "B": "8.25 mm",
+        "C": "26.5 mm",
+        "D": "16.5 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=24 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-2.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 18 mm। ব্যবহৃত উপাত্ত: v=1500, t=24।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "18 mm",
+        "B": "36 mm",
+        "C": "9 mm",
+        "D": "28 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=26 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-3.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 19.5 mm। ব্যবহৃত উপাত্ত: v=1500, t=26।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "39 mm",
+        "B": "19.5 mm",
+        "C": "9.75 mm",
+        "D": "29.5 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=28 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-4.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 21 mm। ব্যবহৃত উপাত্ত: v=1500, t=28।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "42 mm",
+        "B": "10.5 mm",
+        "C": "21 mm",
+        "D": "31 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=30 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-5.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 22.5 mm। ব্যবহৃত উপাত্ত: v=1500, t=30।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "45 mm",
+        "B": "11.25 mm",
+        "C": "32.5 mm",
+        "D": "22.5 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=32 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-6.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 24 mm। ব্যবহৃত উপাত্ত: v=1500, t=32।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "24 mm",
+        "B": "48 mm",
+        "C": "12 mm",
+        "D": "34 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=34 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-7.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 25.5 mm। ব্যবহৃত উপাত্ত: v=1500, t=34।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "51 mm",
+        "B": "25.5 mm",
+        "C": "12.75 mm",
+        "D": "35.5 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=36 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-8.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 27 mm। ব্যবহৃত উপাত্ত: v=1500, t=36।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "54 mm",
+        "B": "13.5 mm",
+        "C": "27 mm",
+        "D": "37 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "চিত্রের স্থির প্রোবে tissue echo ফেরে t=38 μs পরে; বেগ v=1500 m/s। সরল পথ ও delay শূন্য ধরে সীমানার গভীরতা কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-depth-9.svg)",
+      "explanation": "dmm=v tμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 28.5 mm। ব্যবহৃত উপাত্ত: v=1500, t=38।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "57 mm",
+        "B": "14.25 mm",
+        "C": "38.5 mm",
+        "D": "28.5 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=20 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-0.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 26.666667 μs। ব্যবহৃত উপাত্ত: d=20, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "26.666667 μs",
+        "B": "53.333333 μs",
+        "C": "13.333333 μs",
+        "D": "36.666667 μs"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=22 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-1.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 29.333333 μs। ব্যবহৃত উপাত্ত: d=22, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "58.666667 μs",
+        "B": "29.333333 μs",
+        "C": "14.666667 μs",
+        "D": "39.333333 μs"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=24 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-2.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 32 μs। ব্যবহৃত উপাত্ত: d=24, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "64 μs",
+        "B": "16 μs",
+        "C": "32 μs",
+        "D": "42 μs"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=26 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-3.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 34.666667 μs। ব্যবহৃত উপাত্ত: d=26, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "69.333333 μs",
+        "B": "17.333333 μs",
+        "C": "44.666667 μs",
+        "D": "34.666667 μs"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=28 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-4.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 37.333333 μs। ব্যবহৃত উপাত্ত: d=28, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "37.333333 μs",
+        "B": "74.666667 μs",
+        "C": "18.666667 μs",
+        "D": "47.333333 μs"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=30 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-5.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 40 μs। ব্যবহৃত উপাত্ত: d=30, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "80 μs",
+        "B": "40 μs",
+        "C": "20 μs",
+        "D": "50 μs"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=32 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-6.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 42.666667 μs। ব্যবহৃত উপাত্ত: d=32, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "85.333333 μs",
+        "B": "21.333333 μs",
+        "C": "42.666667 μs",
+        "D": "52.666667 μs"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=34 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-7.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 45.333333 μs। ব্যবহৃত উপাত্ত: d=34, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "90.666667 μs",
+        "B": "22.666667 μs",
+        "C": "55.333333 μs",
+        "D": "45.333333 μs"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=36 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-8.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 48 μs। ব্যবহৃত উপাত্ত: d=36, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "48 μs",
+        "B": "96 μs",
+        "C": "24 μs",
+        "D": "58 μs"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "প্রোব থেকে সীমানা d=38 mm; v=1500 m/s। echo-র মোট return time কত μs?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-time-9.svg)",
+      "explanation": "tμs=2000 dmm/v। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 50.666667 μs। ব্যবহৃত উপাত্ত: d=38, v=1500।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "101.333333 μs",
+        "B": "50.666667 μs",
+        "C": "25.333333 μs",
+        "D": "60.666667 μs"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=15 mm, echo time t=20 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-0.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=15, t=20।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1500 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=16.5 mm, echo time t=22 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-1.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=16.5, t=22।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1510 m/s",
+        "D": "1500 m/s"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=18 mm, echo time t=24 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-2.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=18, t=24।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1500 m/s",
+        "B": "3000 m/s",
+        "C": "750 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=19.5 mm, echo time t=26 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-3.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=19.5, t=26।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "1500 m/s",
+        "C": "750 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=21 mm, echo time t=28 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-4.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=21, t=28।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1500 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=22.5 mm, echo time t=30 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-5.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=22.5, t=30।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1510 m/s",
+        "D": "1500 m/s"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=24 mm, echo time t=32 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-6.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=24, t=32।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1500 m/s",
+        "B": "3000 m/s",
+        "C": "750 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=25.5 mm, echo time t=34 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-7.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=25.5, t=34।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "1500 m/s",
+        "C": "750 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=27 mm, echo time t=36 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-8.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=27, t=36।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1500 m/s",
+        "D": "1510 m/s"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সীমানা d=28.5 mm, echo time t=38 μs। সোজা যাওয়া–ফেরায় বেগ কত?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-speed-9.svg)",
+      "explanation": "v=2000 dmm/tμs। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1500 m/s। ব্যবহৃত উপাত্ত: d=28.5, t=38।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3000 m/s",
+        "B": "750 m/s",
+        "C": "1510 m/s",
+        "D": "1500 m/s"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-0.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.75 mm। ব্যবহৃত উপাত্ত: v=1500, f=2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.75 mm",
+        "B": "1.5 mm",
+        "C": "0.375 mm",
+        "D": "10.75 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.1 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-1.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.714286 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.428571 mm",
+        "B": "0.714286 mm",
+        "C": "0.357143 mm",
+        "D": "10.714286 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.2 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-2.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.681818 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.363636 mm",
+        "B": "0.340909 mm",
+        "C": "0.681818 mm",
+        "D": "10.681818 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.3 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-3.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.652174 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.304348 mm",
+        "B": "0.326087 mm",
+        "C": "10.652174 mm",
+        "D": "0.652174 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.4 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-4.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.625 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.625 mm",
+        "B": "1.25 mm",
+        "C": "0.3125 mm",
+        "D": "10.625 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.5 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-5.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.6 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.2 mm",
+        "B": "0.6 mm",
+        "C": "0.3 mm",
+        "D": "10.6 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.6 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-6.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.576923 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.153846 mm",
+        "B": "0.288462 mm",
+        "C": "0.576923 mm",
+        "D": "10.576923 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.7 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-7.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.555556 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.111111 mm",
+        "B": "0.277778 mm",
+        "C": "10.555556 mm",
+        "D": "0.555556 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.8 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-8.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.535714 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.535714 mm",
+        "B": "1.071429 mm",
+        "C": "0.267857 mm",
+        "D": "10.535714 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শিক্ষামূলক আলট্রাসাউন্ডে v=1500 m/s ও f=2.9 MHz। তরঙ্গদৈর্ঘ্য কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-wavelength-9.svg)",
+      "explanation": "λmm=v/(1000 fMHz)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.517241 mm। ব্যবহৃত উপাত্ত: v=1500, f=2.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.034483 mm",
+        "B": "0.517241 mm",
+        "C": "0.258621 mm",
+        "D": "10.517241 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.3 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-0.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "10 MHz",
+        "B": "2.5 MHz",
+        "C": "5 MHz",
+        "D": "15 MHz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.4 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-1.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.75 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "7.5 MHz",
+        "B": "1.875 MHz",
+        "C": "13.75 MHz",
+        "D": "3.75 MHz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.5 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-2.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3 MHz",
+        "B": "6 MHz",
+        "C": "1.5 MHz",
+        "D": "13 MHz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.6 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-3.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.5 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "5 MHz",
+        "B": "2.5 MHz",
+        "C": "1.25 MHz",
+        "D": "12.5 MHz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.7 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-4.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.142857 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.285714 MHz",
+        "B": "1.071429 MHz",
+        "C": "2.142857 MHz",
+        "D": "12.142857 MHz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.8 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-5.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.875 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3.75 MHz",
+        "B": "0.9375 MHz",
+        "C": "11.875 MHz",
+        "D": "1.875 MHz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=0.9 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-6.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.666667 MHz। ব্যবহৃত উপাত্ত: v=1500, L=0.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.666667 MHz",
+        "B": "3.333333 MHz",
+        "C": "0.833333 MHz",
+        "D": "11.666667 MHz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=1 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-7.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.5 MHz। ব্যবহৃত উপাত্ত: v=1500, L=1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3 MHz",
+        "B": "1.5 MHz",
+        "C": "0.75 MHz",
+        "D": "11.5 MHz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=1.1 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-8.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.363636 MHz। ব্যবহৃত উপাত্ত: v=1500, L=1.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.727273 MHz",
+        "B": "0.681818 MHz",
+        "C": "1.363636 MHz",
+        "D": "11.363636 MHz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ডে v=1500 m/s ও λ=1.2 mm। frequency কত MHz?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-frequency-9.svg)",
+      "explanation": "fMHz=v/(1000 λmm)। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.25 MHz। ব্যবহৃত উপাত্ত: v=1500, L=1.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.5 MHz",
+        "B": "0.625 MHz",
+        "C": "11.25 MHz",
+        "D": "1.25 MHz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=10 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-0.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 7.5 mm। ব্যবহৃত উপাত্ত: v=1500, dt=10।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "7.5 mm",
+        "B": "15 mm",
+        "C": "3.75 mm",
+        "D": "17.5 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=11 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-1.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 8.25 mm। ব্যবহৃত উপাত্ত: v=1500, dt=11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "16.5 mm",
+        "B": "8.25 mm",
+        "C": "4.125 mm",
+        "D": "18.25 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=12 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-2.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 9 mm। ব্যবহৃত উপাত্ত: v=1500, dt=12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "18 mm",
+        "B": "4.5 mm",
+        "C": "9 mm",
+        "D": "19 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=13 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-3.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 9.75 mm। ব্যবহৃত উপাত্ত: v=1500, dt=13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "19.5 mm",
+        "B": "4.875 mm",
+        "C": "19.75 mm",
+        "D": "9.75 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=14 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-4.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 10.5 mm। ব্যবহৃত উপাত্ত: v=1500, dt=14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "10.5 mm",
+        "B": "21 mm",
+        "C": "5.25 mm",
+        "D": "20.5 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=15 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-5.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 11.25 mm। ব্যবহৃত উপাত্ত: v=1500, dt=15।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "22.5 mm",
+        "B": "11.25 mm",
+        "C": "5.625 mm",
+        "D": "21.25 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=16 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-6.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 12 mm। ব্যবহৃত উপাত্ত: v=1500, dt=16।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "24 mm",
+        "B": "6 mm",
+        "C": "12 mm",
+        "D": "22 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=17 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-7.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 12.75 mm। ব্যবহৃত উপাত্ত: v=1500, dt=17।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "25.5 mm",
+        "B": "6.375 mm",
+        "C": "22.75 mm",
+        "D": "12.75 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=18 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-8.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 13.5 mm। ব্যবহৃত উপাত্ত: v=1500, dt=18।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "13.5 mm",
+        "B": "27 mm",
+        "C": "6.75 mm",
+        "D": "23.5 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুই tissue boundary-র echo return-time ব্যবধান dt=19 μs; দুই পথের বেগ একই v=1500 m/s। একই সরল পথে boundary-দ্বয়ের ব্যবধান কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-separation-9.svg)",
+      "explanation": "Δdmm=v Δtμs/2000। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 14.25 mm। ব্যবহৃত উপাত্ত: v=1500, dt=19।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "28.5 mm",
+        "B": "14.25 mm",
+        "C": "7.125 mm",
+        "D": "24.25 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=2টি পূর্ণ চক্র ও λ=0.3 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-0.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.6 mm। ব্যবহৃত উপাত্ত: N=2, L=0.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.2 mm",
+        "B": "0.3 mm",
+        "C": "0.6 mm",
+        "D": "10.6 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=3টি পূর্ণ চক্র ও λ=0.4 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-1.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.2 mm। ব্যবহৃত উপাত্ত: N=3, L=0.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.4 mm",
+        "B": "0.6 mm",
+        "C": "11.2 mm",
+        "D": "1.2 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=4টি পূর্ণ চক্র ও λ=0.5 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-2.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2 mm। ব্যবহৃত উপাত্ত: N=4, L=0.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2 mm",
+        "B": "4 mm",
+        "C": "1 mm",
+        "D": "12 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=2টি পূর্ণ চক্র ও λ=0.6 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-3.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.2 mm। ব্যবহৃত উপাত্ত: N=2, L=0.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.4 mm",
+        "B": "1.2 mm",
+        "C": "0.6 mm",
+        "D": "11.2 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=3টি পূর্ণ চক্র ও λ=0.7 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-4.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.1 mm। ব্যবহৃত উপাত্ত: N=3, L=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.2 mm",
+        "B": "1.05 mm",
+        "C": "2.1 mm",
+        "D": "12.1 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=4টি পূর্ণ চক্র ও λ=0.8 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-5.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.2 mm। ব্যবহৃত উপাত্ত: N=4, L=0.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.4 mm",
+        "B": "1.6 mm",
+        "C": "13.2 mm",
+        "D": "3.2 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=2টি পূর্ণ চক্র ও λ=0.9 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-6.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.8 mm। ব্যবহৃত উপাত্ত: N=2, L=0.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.8 mm",
+        "B": "3.6 mm",
+        "C": "0.9 mm",
+        "D": "11.8 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=3টি পূর্ণ চক্র ও λ=1 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-7.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3 mm। ব্যবহৃত উপাত্ত: N=3, L=1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6 mm",
+        "B": "3 mm",
+        "C": "1.5 mm",
+        "D": "13 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=4টি পূর্ণ চক্র ও λ=1.1 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-8.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.4 mm। ব্যবহৃত উপাত্ত: N=4, L=1.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "8.8 mm",
+        "B": "2.2 mm",
+        "C": "4.4 mm",
+        "D": "14.4 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আলট্রাসাউন্ড pulse-এ N=2টি পূর্ণ চক্র ও λ=1.2 mm। spatial pulse length কত mm?\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-pulse-length-9.svg)",
+      "explanation": "SPL=Nλ। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.4 mm। ব্যবহৃত উপাত্ত: N=2, L=1.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.8 mm",
+        "B": "1.2 mm",
+        "C": "12.4 mm",
+        "D": "2.4 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=2 চক্রের pulse, λ=0.3 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-0.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.3 mm। ব্যবহৃত উপাত্ত: N=2, L=0.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.3 mm",
+        "B": "0.6 mm",
+        "C": "0.15 mm",
+        "D": "10.3 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=3 চক্রের pulse, λ=0.4 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-1.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.6 mm। ব্যবহৃত উপাত্ত: N=3, L=0.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.2 mm",
+        "B": "0.6 mm",
+        "C": "0.3 mm",
+        "D": "10.6 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=4 চক্রের pulse, λ=0.5 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-2.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1 mm। ব্যবহৃত উপাত্ত: N=4, L=0.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2 mm",
+        "B": "0.5 mm",
+        "C": "1 mm",
+        "D": "11 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=2 চক্রের pulse, λ=0.6 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-3.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.6 mm। ব্যবহৃত উপাত্ত: N=2, L=0.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.2 mm",
+        "B": "0.3 mm",
+        "C": "10.6 mm",
+        "D": "0.6 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=3 চক্রের pulse, λ=0.7 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-4.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.05 mm। ব্যবহৃত উপাত্ত: N=3, L=0.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.05 mm",
+        "B": "2.1 mm",
+        "C": "0.525 mm",
+        "D": "11.05 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=4 চক্রের pulse, λ=0.8 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-5.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.6 mm। ব্যবহৃত উপাত্ত: N=4, L=0.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3.2 mm",
+        "B": "1.6 mm",
+        "C": "0.8 mm",
+        "D": "11.6 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=2 চক্রের pulse, λ=0.9 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-6.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.9 mm। ব্যবহৃত উপাত্ত: N=2, L=0.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "1.8 mm",
+        "B": "0.45 mm",
+        "C": "0.9 mm",
+        "D": "10.9 mm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=3 চক্রের pulse, λ=1 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-7.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.5 mm। ব্যবহৃত উপাত্ত: N=3, L=1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "3 mm",
+        "B": "0.75 mm",
+        "C": "11.5 mm",
+        "D": "1.5 mm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=4 চক্রের pulse, λ=1.1 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-8.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.2 mm। ব্যবহৃত উপাত্ত: N=4, L=1.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.2 mm",
+        "B": "4.4 mm",
+        "C": "1.1 mm",
+        "D": "12.2 mm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "শুধু দেওয়া সরল model: axial separation limit=SPL/2; N=2 চক্রের pulse, λ=1.2 mm। ideal limit কত mm? যন্ত্রের clinical performance-এর নিশ্চয়তা নয়।\n![পুনরঙ্কিত ultrasound চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-us-resolution-model-9.svg)",
+      "explanation": "dlimit=Nλ/2। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 1.2 mm। ব্যবহৃত উপাত্ত: N=2, L=1.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.4 mm",
+        "B": "1.2 mm",
+        "C": "0.6 mm",
+        "D": "11.2 mm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.05 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-0.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 6 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.05।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "12 ×10¹⁸ Hz",
+        "B": "3 ×10¹⁸ Hz",
+        "C": "6 ×10¹⁸ Hz",
+        "D": "16 ×10¹⁸ Hz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.06 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-1.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 5 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.06।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "10 ×10¹⁸ Hz",
+        "B": "2.5 ×10¹⁸ Hz",
+        "C": "15 ×10¹⁸ Hz",
+        "D": "5 ×10¹⁸ Hz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.07 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-2.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 4.285714 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.07।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.285714 ×10¹⁸ Hz",
+        "B": "8.571429 ×10¹⁸ Hz",
+        "C": "2.142857 ×10¹⁸ Hz",
+        "D": "14.285714 ×10¹⁸ Hz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.08 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-3.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.75 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.08।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "7.5 ×10¹⁸ Hz",
+        "B": "3.75 ×10¹⁸ Hz",
+        "C": "1.875 ×10¹⁸ Hz",
+        "D": "13.75 ×10¹⁸ Hz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.09 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-4.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3.333333 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.09।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6.666667 ×10¹⁸ Hz",
+        "B": "1.666667 ×10¹⁸ Hz",
+        "C": "3.333333 ×10¹⁸ Hz",
+        "D": "13.333333 ×10¹⁸ Hz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.1 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-5.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 3 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "6 ×10¹⁸ Hz",
+        "B": "1.5 ×10¹⁸ Hz",
+        "C": "13 ×10¹⁸ Hz",
+        "D": "3 ×10¹⁸ Hz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.11 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-6.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.727273 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "2.727273 ×10¹⁸ Hz",
+        "B": "5.454545 ×10¹⁸ Hz",
+        "C": "1.363636 ×10¹⁸ Hz",
+        "D": "12.727273 ×10¹⁸ Hz"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.12 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-7.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.5 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "5 ×10¹⁸ Hz",
+        "B": "2.5 ×10¹⁸ Hz",
+        "C": "1.25 ×10¹⁸ Hz",
+        "D": "12.5 ×10¹⁸ Hz"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.13 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-8.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.307692 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.615385 ×10¹⁸ Hz",
+        "B": "1.153846 ×10¹⁸ Hz",
+        "C": "2.307692 ×10¹⁸ Hz",
+        "D": "12.307692 ×10¹⁸ Hz"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে λ=0.14 nm; c=3×10⁸ m/s। frequency-এর সংখ্যামান কত ×10¹⁸ Hz?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-frequency-9.svg)",
+      "explanation": "f18=0.3/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 2.142857 ×10¹⁸ Hz। ব্যবহৃত উপাত্ত: L=0.14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "4.285714 ×10¹⁸ Hz",
+        "B": "1.071429 ×10¹⁸ Hz",
+        "C": "12.142857 ×10¹⁸ Hz",
+        "D": "2.142857 ×10¹⁸ Hz"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-0.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.15 nm। ব্যবহৃত উপাত্ত: f=2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.15 nm",
+        "B": "0.3 nm",
+        "C": "0.075 nm",
+        "D": "10.15 nm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.1×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-1.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.142857 nm। ব্যবহৃত উপাত্ত: f=2.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.285714 nm",
+        "B": "0.142857 nm",
+        "C": "0.071429 nm",
+        "D": "10.142857 nm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.2×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-2.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.136364 nm। ব্যবহৃত উপাত্ত: f=2.2।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.272727 nm",
+        "B": "0.068182 nm",
+        "C": "0.136364 nm",
+        "D": "10.136364 nm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.3×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-3.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.130435 nm। ব্যবহৃত উপাত্ত: f=2.3।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.26087 nm",
+        "B": "0.065217 nm",
+        "C": "10.130435 nm",
+        "D": "0.130435 nm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.4×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-4.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.125 nm। ব্যবহৃত উপাত্ত: f=2.4।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.125 nm",
+        "B": "0.25 nm",
+        "C": "0.0625 nm",
+        "D": "10.125 nm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.5×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-5.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.12 nm। ব্যবহৃত উপাত্ত: f=2.5।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.24 nm",
+        "B": "0.12 nm",
+        "C": "0.06 nm",
+        "D": "10.12 nm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.6×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-6.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.115385 nm। ব্যবহৃত উপাত্ত: f=2.6।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.230769 nm",
+        "B": "0.057692 nm",
+        "C": "0.115385 nm",
+        "D": "10.115385 nm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.7×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-7.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.111111 nm। ব্যবহৃত উপাত্ত: f=2.7।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.222222 nm",
+        "B": "0.055556 nm",
+        "C": "10.111111 nm",
+        "D": "0.111111 nm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.8×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-8.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.107143 nm। ব্যবহৃত উপাত্ত: f=2.8।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.107143 nm",
+        "B": "0.214286 nm",
+        "C": "0.053571 nm",
+        "D": "10.107143 nm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে frequency f=2.9×10¹⁸ Hz; c=3×10⁸ m/s। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-wavelength-9.svg)",
+      "explanation": "λnm=0.3/f18। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.103448 nm। ব্যবহৃত উপাত্ত: f=2.9।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.206897 nm",
+        "B": "0.103448 nm",
+        "C": "0.051724 nm",
+        "D": "10.103448 nm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.05 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-0.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 24800 eV। ব্যবহৃত উপাত্ত: L=0.05।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "49600 eV",
+        "B": "12400 eV",
+        "C": "24800 eV",
+        "D": "24810 eV"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.06 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-1.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 20666.666667 eV। ব্যবহৃত উপাত্ত: L=0.06।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "41333.333333 eV",
+        "B": "10333.333333 eV",
+        "C": "20676.666667 eV",
+        "D": "20666.666667 eV"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.07 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-2.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 17714.285714 eV। ব্যবহৃত উপাত্ত: L=0.07।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "17714.285714 eV",
+        "B": "35428.571429 eV",
+        "C": "8857.142857 eV",
+        "D": "17724.285714 eV"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.08 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-3.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 15500 eV। ব্যবহৃত উপাত্ত: L=0.08।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "31000 eV",
+        "B": "15500 eV",
+        "C": "7750 eV",
+        "D": "15510 eV"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.09 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-4.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 13777.777778 eV। ব্যবহৃত উপাত্ত: L=0.09।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "27555.555556 eV",
+        "B": "6888.888889 eV",
+        "C": "13777.777778 eV",
+        "D": "13787.777778 eV"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.1 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-5.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 12400 eV। ব্যবহৃত উপাত্ত: L=0.1।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "24800 eV",
+        "B": "6200 eV",
+        "C": "12410 eV",
+        "D": "12400 eV"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.11 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-6.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 11272.727273 eV। ব্যবহৃত উপাত্ত: L=0.11।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "11272.727273 eV",
+        "B": "22545.454545 eV",
+        "C": "5636.363636 eV",
+        "D": "11282.727273 eV"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.12 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-7.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 10333.333333 eV। ব্যবহৃত উপাত্ত: L=0.12।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "20666.666667 eV",
+        "B": "10333.333333 eV",
+        "C": "5166.666667 eV",
+        "D": "10343.333333 eV"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.13 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-8.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 9538.461538 eV। ব্যবহৃত উপাত্ত: L=0.13।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "19076.923077 eV",
+        "B": "4769.230769 eV",
+        "C": "9538.461538 eV",
+        "D": "9548.461538 eV"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রের λ=0.14 nm। দেওয়া hc=1240 eV·nm ব্যবহার করে photon energy কত eV?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-9.svg)",
+      "explanation": "E=1240/λnm। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 8857.142857 eV। ব্যবহৃত উপাত্ত: L=0.14।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "17714.285714 eV",
+        "B": "4428.571429 eV",
+        "C": "8867.142857 eV",
+        "D": "8857.142857 eV"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে photon energy E=10000 eV; hc=1240 eV·nm দেওয়া। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-wavelength-0.svg)",
+      "explanation": "λnm=1240/EeV। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.124 nm। ব্যবহৃত উপাত্ত: E=10000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.124 nm",
+        "B": "0.248 nm",
+        "C": "0.062 nm",
+        "D": "10.124 nm"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে photon energy E=11000 eV; hc=1240 eV·nm দেওয়া। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-wavelength-1.svg)",
+      "explanation": "λnm=1240/EeV। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.112727 nm। ব্যবহৃত উপাত্ত: E=11000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.225455 nm",
+        "B": "0.112727 nm",
+        "C": "0.056364 nm",
+        "D": "10.112727 nm"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে photon energy E=12000 eV; hc=1240 eV·nm দেওয়া। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-wavelength-2.svg)",
+      "explanation": "λnm=1240/EeV। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.103333 nm। ব্যবহৃত উপাত্ত: E=12000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.206667 nm",
+        "B": "0.051667 nm",
+        "C": "0.103333 nm",
+        "D": "10.103333 nm"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে photon energy E=13000 eV; hc=1240 eV·nm দেওয়া। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-wavelength-3.svg)",
+      "explanation": "λnm=1240/EeV। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.095385 nm। ব্যবহৃত উপাত্ত: E=13000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.190769 nm",
+        "B": "0.047692 nm",
+        "C": "10.095385 nm",
+        "D": "0.095385 nm"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "এক্স-রে photon energy E=14000 eV; hc=1240 eV·nm দেওয়া। λ কত nm?\n![পুনরঙ্কিত xray চিত্র](https://proshnobook.com/question-bank/ssc-physics-ch14-v1/mcq-xray-energy-wavelength-4.svg)",
+      "explanation": "λnm=1240/EeV। প্রদত্ত উপাত্ত একই একক-রীতিতে বসিয়ে ফল = 0.088571 nm। ব্যবহৃত উপাত্ত: E=14000।",
+      "page": "নিজস্ব অনুশীলনী; চিত্র পুনরঙ্কিত/সহায়ক; পূর্ণ পৃষ্ঠা-মিল/শিক্ষক যাচাই বাকি",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "0.088571 nm",
+        "B": "0.177143 nm",
+        "C": "0.044286 nm",
+        "D": "10.088571 nm"
+      },
+      "correct": "A"
+    }
+  ]
+}

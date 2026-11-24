@@ -1,0 +1,42 @@
+{
+  "chapter": 10,
+  "topic": "১০ম অধ্যায়: সমন্বয়",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 166726,
+      "sha256": "8cb8450750ec45273166699ef2f7b71329b00234024168b8f7a9a70aeccbfbe9"
+    },
+    "rebuild-cq.json": {
+      "bytes": 137436,
+      "sha256": "771105413f15b5f05e70dd5773ba9c5129680a6b13bc89031142bb6c29b45f43"
+    },
+    "rebuild-sq.json": {
+      "bytes": 53959,
+      "sha256": "d2e63d59a33d46f3cc5c900f852b7373b4a4aa1d1d052af58361f87bb4784800"
+    }
+  }
+}

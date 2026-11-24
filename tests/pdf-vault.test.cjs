@@ -77,7 +77,8 @@ async function setup() {
     const m = new Module(file, module);
     m.paths = module.paths;
     m.require = (n) =>
-      n === "server-only"
+      n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
+    n === "server-only"
         ? {}
         : n === "@/lib/db"
           ? { db: { $transaction: transaction, setting } }
@@ -499,6 +500,7 @@ test("checkpoint UI states exact scope and contains no storage link or resale pr
   const m = new Module("checkpoint", module);
   m.paths = module.paths;
   m.require = (n) =>
+    n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     n === "@/app/actions/ready-vault"
       ? { saveReadySourceCheckpoint: async () => ({ ok: true }) }
       : require(n);

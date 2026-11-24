@@ -143,7 +143,7 @@ export default function AdminAIGenerator() {
       const data = await res.json();
 
       if (data.success) {
-        setStatus({ type: "info", msg: "কাজ সফলভাবে জমা হয়েছে। এআই একের পর এক অংশ তৈরি করছে... (দয়া করে অপেক্ষা করুন)" });
+        setStatus({ type: "info", msg: "কাজ সফলভাবে জমা হয়েছে। সফটওয়্যার একের পর এক অংশ তৈরি করছে... (দয়া করে অপেক্ষা করুন)" });
         setPrompt(""); setTopic(""); setIsAllTopics(false);
         fetchStats(); 
 
@@ -332,7 +332,7 @@ export default function AdminAIGenerator() {
       <div className="rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-5 shadow-sm">
         <div className="mb-4 flex items-center gap-2 text-blue-900">
           <Sparkles size={20} className="text-blue-600" />
-          <h2 className="text-lg font-bold">AI অটো-জেনারেটর (এক ক্লিকে সম্পূর্ণ)</h2>
+          <h2 className="text-lg font-bold">সফটওয়্যার অটো-জেনারেটর (এক ক্লিকে সম্পূর্ণ)</h2>
         </div>
         
         <div className="grid gap-3 sm:grid-cols-2">
@@ -432,7 +432,7 @@ export default function AdminAIGenerator() {
           
           <button onClick={handleGenerate} disabled={loading || !subject} className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-sm font-bold text-white shadow-md hover:bg-blue-700 disabled:opacity-60">
             {loading ? <Loader2 size={18} className="animate-spin" /> : <Sparkles size={18} />}
-            {loading ? "এআই কাজ করছে (বন্ধ করবেন না)..." : "এক ক্লিকে সম্পূর্ণ তৈরি করুন"}
+            {loading ? "সফটওয়্যার কাজ করছে (বন্ধ করবেন না)..." : "এক ক্লিকে সম্পূর্ণ তৈরি করুন"}
           </button>
         </div>
 
@@ -482,7 +482,7 @@ export default function AdminAIGenerator() {
                 <AlertCircle className="text-amber-500" size={20} />
                 অ্যাপ্রুভালের অপেক্ষায় ({pendingQuestions.length})
               </h2>
-              <p className="text-xs text-slate-500 mt-1">এআই-এর তৈরি প্রশ্নগুলো চেক করে অ্যাপ্রুভ করুন।</p>
+              <p className="text-xs text-slate-500 mt-1">সফটওয়্যার-এর তৈরি প্রশ্নগুলো চেক করে অ্যাপ্রুভ করুন।</p>
             </div>
             <div className="flex gap-2">
               <button 

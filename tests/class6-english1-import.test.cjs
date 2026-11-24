@@ -5,7 +5,7 @@ require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSyn
 const lib=require('../lib/prepared-question-batches.ts'),{english1Batches}=require('../lib/class6-english1-batches.ts');
 const batches=english1Batches();
 test('33 English batches validate against existing catalog and server registry',()=>{
- assert.equal(batches.length,33);assert.equal(lib.preparedSummaries().length,70);
+ assert.equal(batches.length,33);assert.equal(lib.preparedSummaries().filter(b=>b.category==='Class 6'&&b.subject==='English 1st Paper').length,33);
  let mcq=0,sq=0;
  for(const b of batches){assert.equal(b.category,'Class 6');assert.equal(b.subject,'English 1st Paper');assert.equal(b.lang,'English');assert.equal(b.provenance.teacherApproved,false);
  const {batch,digest}=lib.getPreparedBatch(b.id);assert.equal(batch.topic,b.topic);assert.match(digest,/^[a-f0-9]{64}$/);

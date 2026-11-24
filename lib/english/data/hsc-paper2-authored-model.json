@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "id": "hsc-paper2-authored-model-01",
+  "provenance": {
+    "kind": "AUTHORED_PRACTICE",
+    "formatSource": {
+      "fileId": "1lS9dV7MMBsSshk-aoR_hIMEBjH3F8RVH",
+      "fileName": "HSC_English_2nd_Papers_2025_(Exam2026).pdf",
+      "printedPages": [
+        121,
+        122,
+        123
+      ],
+      "use": "Format inspection only: 12 grammar items, 60 marks; four composition items, 40 marks. Not a transcription of Gurudayal College questions."
+    },
+    "answerStatus": "Assistant-authored suggested keys; owner review workflow required; not official answers.",
+    "limitations": [
+      "One distinct authored model, not 50 sets per item.",
+      "No school, board or examination-year attribution applies to these original questions.",
+      "Open-ended answers are illustrative; accept other grammatically appropriate responses."
+    ]
+  },
+  "writing": {
+    "formal-letter-email": {
+      "topic": "a supervised digital reading room",
+      "choice": "formal-email"
+    },
+    "report": {
+      "topic": "a college book-exchange fair"
+    },
+    "paragraph": {
+      "topic": "Responsible Use of Social Media",
+      "words": 150
+    },
+    "composition": {
+      "topic": "The Value of Reading Beyond Textbooks",
+      "words": 200
+    }
+  },
+  "output": {
+    "passages": [],
+    "tasks": [
+      {
+        "id": "articles",
+        "instruction": "Fill in the blanks with articles (a/an/the). Use × where no article is needed.\nOur college has (a) ___ library beside its main building. It is (b) ___ only library in our village. Mina is (c) ___ enthusiastic reader who visits it every week. Yesterday she borrowed (d) ___ book about rivers. After reading the first chapter, she placed (e) ___ book on her desk. Her brother wants to become (f) ___ engineer. He studies at (g) ___ university in Sylhet. Both believe that (h) ___ education can change lives. They often discuss (i) ___ importance of reading and help (j) ___ poor in their neighbourhood.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "a"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "the"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "an"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "a"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "the"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "an"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "a"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "×"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "the"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "the"
+          }
+        ]
+      },
+      {
+        "id": "prepositions",
+        "instruction": "Complete the text with suitable prepositions.\nOur college reading club meets (a) ___ Friday afternoons. Its members are interested (b) ___ books and eager to learn (c) ___ one another. The librarian provides them (d) ___ useful reading lists. They borrow books (e) ___ the library and return them (f) ___ time. Every member is responsible (g) ___ keeping the books clean. The club is proud (h) ___ its small collection. It also raises money (i) ___ buying new titles and shares a love (j) ___ reading with younger students.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "on"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "in"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "from"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "with"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "from"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "on"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "for"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "of"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "for"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "of"
+          }
+        ]
+      },
+      {
+        "id": "phrases",
+        "instruction": "Complete the sentences with the phrases/words in the box. Use each entry once.\n(a) ___ I entered the classroom than the bell rang.\n(b) He cannot afford a bicycle, ___ a car.\n(c) You ___ consult a doctor about that persistent cough.\n(d) I ___ walk than wait another hour for a bus.\n(e) The child talks ___ she knew everything.\n(f) The poet ___ in a small village.\n(g) ___ is a reading room beside the laboratory.\n(h) ___ is important to check information before sharing it.\n(i) ___ opening the window?\n(j) ___ a giraffe ___?",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "No sooner had"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "let alone"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "had better"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "would rather"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "as if"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "was born"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "There"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "It"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "Would you mind"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "What does; look like"
+          }
+        ],
+        "clues": [
+          "as if",
+          "would rather",
+          "There",
+          "was born",
+          "What does ... look like",
+          "had better",
+          "It",
+          "let alone",
+          "Would you mind",
+          "No sooner had"
+        ]
+      },
+      {
+        "id": "completion",
+        "instruction": "Complete the sentences using suitable clauses or phrases. Alternative grammatically correct completions are acceptable.",
+        "subitems": [
+          {
+            "text": "If I had known about the meeting, ___.",
+            "answer": "I would have attended it"
+          },
+          {
+            "text": "It is high time ___.",
+            "answer": "we took action to protect the river"
+          },
+          {
+            "text": "We read newspapers so that ___.",
+            "answer": "we can learn about current events"
+          },
+          {
+            "text": "Unless you practise regularly, ___.",
+            "answer": "you will not improve your writing"
+          },
+          {
+            "text": "Although the road was muddy, ___.",
+            "answer": "we continued our journey"
+          },
+          {
+            "text": "No sooner had the teacher arrived than ___.",
+            "answer": "the students became silent"
+          },
+          {
+            "text": "I wish ___.",
+            "answer": "I could speak French fluently"
+          },
+          {
+            "text": "The box is too heavy for the child ___.",
+            "answer": "to lift"
+          },
+          {
+            "text": "Had I seen the notice, ___.",
+            "answer": "I would have applied earlier"
+          },
+          {
+            "text": "The student who won the prize ___.",
+            "answer": "thanked all her teachers"
+          }
+        ]
+      },
+      {
+        "id": "verbs",
+        "instruction": "Read the text and fill the gaps with the correct forms of the verbs in brackets.\nEvery morning Rima (a) ___ (walk) to college. She usually (b) ___ (carry) a bag of books. Yesterday she (c) ___ (find) a wallet on the road while she (d) ___ (go) to class. She immediately (e) ___ (take) it to the office. The owner (f) ___ (lose) it before Rima arrived. The wallet (g) ___ (return) to him by the principal later that day. If everyone (h) ___ (act) honestly, our community would be safer. We should (i) ___ (respect) other people’s property. Honesty (j) ___ (help) us earn trust.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "walks"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "carries"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "found"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "was going"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "took"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "had lost"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "was returned"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "acted"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "respect"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "helps"
+          }
+        ]
+      },
+      {
+        "id": "transformation",
+        "instruction": "Change the following sentences as directed without changing their meaning.",
+        "subitems": [
+          {
+            "text": "Though the student was tired, she completed the assignment. (Simple)",
+            "answer": "In spite of being tired, the student completed the assignment."
+          },
+          {
+            "text": "He worked hard to win the scholarship. (Complex)",
+            "answer": "He worked hard so that he could win the scholarship."
+          },
+          {
+            "text": "The students planted the trees. (Passive)",
+            "answer": "The trees were planted by the students."
+          },
+          {
+            "text": "Only the librarian can open this cupboard. (Negative)",
+            "answer": "None but the librarian can open this cupboard."
+          },
+          {
+            "text": "What a useful book it is! (Assertive)",
+            "answer": "It is a very useful book."
+          }
+        ]
+      },
+      {
+        "id": "narration",
+        "instruction": "Change the narrative style of the following passage into indirect speech.\n“Why are you late today, Rafi?” the teacher asked. “I missed the bus, madam,” Rafi replied. The teacher said, “Did you leave home on time?” “Yes, I did,” he answered. “Please allow me to enter the classroom,” he added.",
+        "subitems": [],
+        "answer": "The teacher asked Rafi why he was late that day. Addressing the teacher as madam, Rafi replied that he had missed the bus. The teacher asked him whether he had left home on time. He answered in the affirmative and said that he had. He also requested her to allow him to enter the classroom."
+      },
+      {
+        "id": "pronouns",
+        "instruction": "Identify the five unclear pronoun references and rewrite the paragraph so that each reference is clear. More than one consistent clarification is possible.\nMina and Rupa were working in the library. She found a notebook on a table. The notebook was beside a dictionary, but it was damaged. Mina spoke to Rupa after she had checked the cover. The librarian asked both girls to describe the problem. She explained that a page was missing. The librarian repaired the page and returned the notebook to Rupa. The repair pleased her.",
+        "subitems": [],
+        "answer": "One possible clarification: Mina and Rupa were working in the library. Mina found a notebook on a table. The notebook was beside a dictionary, but the notebook was damaged. Mina spoke to Rupa after Mina had checked the cover. The librarian asked both girls to describe the problem. Rupa explained that a page was missing. The librarian repaired the page and returned the notebook to Rupa. The repair pleased Rupa. The five clarified references are the opening She (Mina), it (the notebook), the pronoun in ‘after she’ (Mina), She before explained (Rupa), and the final her (Rupa). Other clear and internally consistent interpretations are acceptable."
+      },
+      {
+        "id": "modifiers",
+        "instruction": "Use modifiers as directed in the blank spaces. Other grammatically appropriate answers are acceptable.\nRupa, (a) ___ (post-modify the noun with an appositive), visits the library every week. She borrows (b) ___ (use an adjective to pre-modify the noun) books. She reads them (c) ___ (post-modify the verb with an adverb). One day she found (d) ___ (use an article) old map. The map, (e) ___ (post-modify the noun with a participial phrase), showed a river. She took it to (f) ___ (use a possessive) teacher. (g) ___ (use an adverb to pre-modify the sentence), the teacher knew its history. He asked her (h) ___ (post-modify the verb with an infinitive phrase). Rupa was (i) ___ (use an intensifier to pre-modify the adjective) happy. She returned the map (j) ___ (post-modify the verb with an adverbial of time).",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "a student of Class Eleven"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "interesting"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "carefully"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "an"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "drawn many years ago"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "her"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "Fortunately"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "to preserve it"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "very"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "the next day"
+          }
+        ]
+      },
+      {
+        "id": "connectors",
+        "instruction": "Use appropriate sentence connectors in the gaps. Suitable alternatives are acceptable.\nReading is an inexpensive habit. (a) ___, it enriches our vocabulary. (b) ___, it introduces us to unfamiliar ideas. (c) ___, choosing reliable books is important. Some books contain outdated information; (d) ___, readers should check important claims. (e) ___ a book is famous, every statement in it may not be correct. We should read attentively (f) ___ we can understand the author’s reasoning. We can take notes (g) ___ we read. (h) ___, we should discuss difficult ideas with others. Regular practice develops understanding; (i) ___, occasional reading is not enough. (j) ___, thoughtful and regular reading helps us become independent learners.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "Firstly"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "Secondly"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "However"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "therefore"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "Although"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "so that"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "while"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "Moreover"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "consequently"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "In conclusion"
+          }
+        ]
+      },
+      {
+        "id": "synonyms-antonyms",
+        "instruction": "Read the passage and write the synonym or antonym of the specified words as directed.\nThe village library is a quiet place. Its helpful librarian keeps the shelves tidy. Members borrow books regularly and return them promptly. The collection includes ancient tales and modern novels. Every visitor receives a warm welcome, and even difficult questions get a clear answer.",
+        "subitems": [
+          {
+            "text": "quiet (antonym)",
+            "answer": "noisy"
+          },
+          {
+            "text": "helpful (antonym)",
+            "answer": "unhelpful"
+          },
+          {
+            "text": "tidy (antonym)",
+            "answer": "untidy"
+          },
+          {
+            "text": "regularly (antonym)",
+            "answer": "irregularly"
+          },
+          {
+            "text": "promptly (synonym)",
+            "answer": "quickly"
+          },
+          {
+            "text": "ancient (antonym)",
+            "answer": "modern"
+          },
+          {
+            "text": "modern (synonym)",
+            "answer": "contemporary"
+          },
+          {
+            "text": "warm (synonym in this context)",
+            "answer": "friendly"
+          },
+          {
+            "text": "difficult (antonym)",
+            "answer": "easy"
+          },
+          {
+            "text": "clear (synonym in this context)",
+            "answer": "understandable"
+          }
+        ]
+      },
+      {
+        "id": "punctuation",
+        "instruction": "Rewrite the passage correcting the ten punctuation and capitalization errors. There are five missing sentence-initial capitals, four missing apostrophes and one missing question mark.\nits Friday afternoon. rimas brother is at home. he cant find his library card. where did he put it. his mother says that its beside the lamp.",
+        "subitems": [],
+        "answer": "It’s Friday afternoon. Rima’s brother is at home. He can’t find his library card. Where did he put it? His mother says that it’s beside the lamp. Corrections: its → It’s (initial capital and apostrophe); rimas → Rima’s (initial capital and possessive apostrophe); he → He; cant → can’t; where → Where; the full stop after it → question mark; his → His; its → it’s."
+      },
+      {
+        "id": "formal-letter-email",
+        "instruction": "Suppose you are a student of a college. Write a formal email to the principal requesting a supervised digital reading room. Explain how students would use it and suggest two practical safeguards.",
+        "subitems": [],
+        "answer": "To: principal@example.com\nSubject: Request for a supervised digital reading room\nDear Principal,\nOn behalf of the students, I request the establishment of a supervised digital reading room in our college. Many students do not have reliable internet access at home. A small room with a few computers would help us consult reference materials, read journals and practise research skills.\nWe suggest a booking system to ensure fair access and a teacher-supervised schedule to support safe use. Students should also receive guidance on checking sources and respecting copyright. Existing furniture could be used initially, and the facility could expand as funds permit.\nWe would be grateful if you considered our proposal.\nYours faithfully,\nRupa\nStudent representative\nThe email address and identity above are hypothetical examples."
+      },
+      {
+        "id": "report",
+        "instruction": "Write a report on a college book-exchange fair for the college magazine. Include a headline, a byline, the purpose, activities and outcome. Treat names, dates and figures as hypothetical details.",
+        "subitems": [],
+        "answer": "Books Find New Readers at College Fair\nBy a student correspondent\nSonali College, 15 November (hypothetical): A one-day book-exchange fair was held on the college campus to encourage reading and reduce the cost of buying books.\nStudents brought books they had finished and exchanged them for titles selected by other readers. Volunteers arranged separate tables for fiction, science and reference materials. A teacher-led discussion explained how to choose reliable sources and care for shared books. A donation corner collected books for students unable to contribute their own.\nParticipants welcomed the opportunity to discover unfamiliar authors without spending much money. The organising committee proposed holding a similar event each term and maintaining a register of donated books. The fair ended with a call to make reading a regular habit rather than an activity limited to examinations.\nThis is an illustrative report, not a report of a verified event."
+      },
+      {
+        "id": "paragraph",
+        "instruction": "Write a paragraph of about 150 words on Responsible Use of Social Media. Explain its benefits, risks and sensible precautions.",
+        "subitems": [],
+        "answer": "Social media can help students communicate, exchange useful materials and learn about events beyond their own communities. However, these benefits depend on responsible behaviour. Before sharing a claim, a student should check its source and compare it with reliable information. An attractive headline or a large number of reactions does not prove that a statement is true. Privacy is equally important. Personal addresses, passwords and private photographs should not be posted carelessly. Users should ask permission before sharing another person’s picture and report harassment rather than joining it. Time also needs careful management because endless scrolling can interrupt study, sleep and family life. Setting a daily limit and turning off unnecessary notifications can help. Students should remember that online comments may remain visible for a long time. Courteous language, respect for differences and thoughtful sharing make social media a useful tool instead of a source of harm."
+      },
+      {
+        "id": "composition",
+        "instruction": "Write a composition of at least 200 words on The Value of Reading Beyond Textbooks. Discuss personal development, independent thinking and practical ways to build the habit.",
+        "subitems": [],
+        "answer": "The Value of Reading Beyond Textbooks\n\nTextbooks provide a necessary foundation for education, but learning should not stop at the edge of the syllabus. Reading other books introduces students to experiences, ideas and questions that may never appear in an examination. It makes education broader and more meaningful.\n\nStories develop imagination and help readers understand lives different from their own. A novel may encourage us to consider another person’s difficulties before judging that person. Biographies show how people respond to failure and responsibility. Books about science and history explain how knowledge grows through observation, evidence and debate.\n\nReading also strengthens language. Students encounter words in meaningful contexts and notice how writers organise arguments. These experiences can improve both speaking and writing. More importantly, comparing different authors teaches readers not to accept every claim without thought. A good reader asks who wrote a statement, what evidence supports it and whether other explanations are possible.\n\nBuilding the habit does not require expensive purchases. A school or public library, a book-exchange group and freely available lawful digital collections can all help. Beginners can choose short books on subjects they enjoy and set aside a little time each day. Teachers and families should encourage curiosity rather than make every book another test.\n\nReading beyond textbooks therefore supports both academic learning and personal growth. It prepares young people to remain thoughtful learners long after their examinations are over."
+      }
+    ]
+  }
+}

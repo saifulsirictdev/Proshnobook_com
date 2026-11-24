@@ -35,7 +35,7 @@ function protectedTokens(text: string) {
 }
 export function validateRepair(original: string, raw: unknown): Transcription {
   const repair = repairSchema.parse(raw);
-  let warning = "AI শুধু পাঠ সংশোধনের চেষ্টা করেছে—মূল PDF-এর সঙ্গে মিলিয়ে নিন।";
+  let warning = "সফটওয়্যার শুধু পাঠ সংশোধনের চেষ্টা করেছে—মূল PDF-এর সঙ্গে মিলিয়ে নিন।";
   let valid =
     JSON.stringify(protectedTokens(original)) ===
     JSON.stringify(protectedTokens(repair.correctedText));

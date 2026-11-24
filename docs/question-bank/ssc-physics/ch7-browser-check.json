@@ -1,0 +1,27 @@
+{
+  "scope": "Offline review HTML only; checks all labels for viewBox clipping, not teacher certification or live deployment",
+  "checks": [
+    {
+      "chapter": 7,
+      "width": 1280,
+      "articles": 370,
+      "diagrams": 195,
+      "overflow": false,
+      "font": true,
+      "clippedSvgLabels": [],
+      "externalRequests": 0,
+      "answersOpened": true
+    },
+    {
+      "chapter": 7,
+      "width": 390,
+      "articles": 370,
+      "diagrams": 195,
+      "overflow": false,
+      "font": true,
+      "clippedSvgLabels": [],
+      "externalRequests": 0,
+      "answersOpened": true
+    }
+  ]
+}

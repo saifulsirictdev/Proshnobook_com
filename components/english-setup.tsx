@@ -1,5 +1,6 @@
 "use client";
 import PreparationPopup from "./preparation-popup";
+import { englishPreparationMessage } from "@/lib/english/preparation-message";
 import "./english-theme.css";
 import EnglishTopicPicker from "@/components/english-topic-picker";
 import { writingTopicSuggestions } from "@/lib/english/writing-topics";
@@ -98,7 +99,7 @@ export default function EnglishSetup({
     try {
       if (paper === 1) {
         const generated = await prepareEnglishBankModel(grade, mode === "full" ? undefined : selected.map(i => i.id), {});
-        if (!generated.ok) setMessage(generated.error);
+        if (!generated.ok) setMessage(englishPreparationMessage(generated.error));
         else router.push(`/question-builder/build?englishKey=${encodeURIComponent(generated.key)}&stage=setup`);
         return;
       }
@@ -119,10 +120,10 @@ export default function EnglishSetup({
         includeAnswers: answers,
       });
       setMessage(
-        "আগে অনুমোদিত database পরীক্ষা করা হচ্ছে; না-পাওয়া অংশ তৈরি করা হবে। এই পেজ বন্ধ করবেন না।",
+        "আপনার নির্বাচিত অংশ অনুযায়ী প্রশ্নপত্র প্রস্তুত হচ্ছে। কিছুটা সময় লাগতে পারে; এই পেজ বন্ধ করবেন না।",
       );
       const generated = await generateEnglishPaper(result.selection);
-      if (!generated.ok) setMessage(generated.error);
+      if (!generated.ok) setMessage(englishPreparationMessage(generated.error));
       else
         router.push(
           `/question-builder/build?englishKey=${encodeURIComponent(generated.key)}`,
@@ -139,7 +140,7 @@ export default function EnglishSetup({
     "w-full rounded border border-slate-300 bg-white p-2 text-slate-900";
   return (
     <main className="english-setup mx-auto max-w-4xl space-y-6 px-4 py-8">
-      {busy && <PreparationPopup subject="English" stage={1} databaseOnly={paper === 1} />}
+      {busy && <PreparationPopup subject="English" stage={1} databaseOnly={paper === 1} neutralBranding />}
       <header className="english-setup-header">
         <a href="/question-builder/english/saved">আমার English draft</a>
         <span className="english-eyebrow">PAPER STUDIO · 2027</span>
@@ -202,7 +203,7 @@ export default function EnglishSetup({
       {mode === "full" && paper === 2 && <p role="status" className="rounded border bg-indigo-50 p-3 text-sm">
         পূর্ণ {blueprint.total} নম্বরের সব অংশ নির্বাচিত। Writing topic স্বয়ংক্রিয়ভাবে বাছাই করা হয়েছে; চাইলে বদলাতে পারবেন।
         {sourceKeys.length > 0 ? " " + sourceNotice : " এই পত্রে textbook extract প্রয়োজন নেই।"}
-        প্রযোজ্য syllabus ও template মিলিয়ে নিচের বোতামে পুরো paper তৈরি করুন। নির্বাচন করলেই কোনো AI request বা খরচ হবে না।
+        প্রযোজ্য syllabus ও template মিলিয়ে নিচের বোতামে পুরো paper তৈরি করুন। শুধু নির্বাচন বদলালে প্রস্তুতির চেষ্টা বা খরচ গণনা হবে না।
       </p>}
       <section className="english-selection space-y-3">
         <div className="english-selection-heading">
@@ -431,7 +432,7 @@ export default function EnglishSetup({
         সংরক্ষিত / উদ্ধার করা English draft দেখুন
       </a>
       <p className="text-sm text-slate-600">
-        {paper === 1 ? "প্রস্তুত প্রশ্ন ব্যক্তিগত draft হিসেবে সেভ হবে। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।" : "অ্যাডমিন ছাড়া সকল ব্যবহারকারীর জন্য প্রতিদিন সর্বোচ্চ ১০টি generation চেষ্টা; অ্যাডমিনের দৈনিক সীমা নেই। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।"}
+        {paper === 1 ? "প্রস্তুত প্রশ্ন ব্যক্তিগত draft হিসেবে সেভ হবে। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।" : "অ্যাডমিন ছাড়া সকল ব্যবহারকারীর জন্য প্রতিদিন সর্বোচ্চ ১০টি নতুন প্রশ্ন প্রস্তুতির চেষ্টা; অ্যাডমিনের দৈনিক সীমা নেই। ব্যবহারের আগে প্রশ্ন ও উত্তর যাচাই করুন।"}
       </p>
     </main>
   );

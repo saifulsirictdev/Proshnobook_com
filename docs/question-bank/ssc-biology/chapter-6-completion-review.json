@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-20",
+  "chapter": 6,
+  "topic": "জীবে পরিবহণ",
+  "baseline": "d0f94e1",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "total": 320,
+  "globalDraftItems": 1920,
+  "remainingTargetItems": 2560,
+  "status": "ANSWERED_DRAFT_COUNT_COMPLETE_REVIEW_REQUIRED",
+  "sourceRows": {
+    "chapter-6-mcq.txt": 100,
+    "chapter-6-mcq-b.txt": 100,
+    "chapter-6-cq.txt": 25,
+    "chapter-6-cq-b.txt": 25,
+    "chapter-6-sq.txt": 70
+  },
+  "optionKeyCounts": {
+    "B": 50,
+    "A": 50,
+    "C": 50,
+    "D": 50
+  },
+  "preservedEarlierFileHashes": {
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6",
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/questions.md": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22",
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-1/validation.json": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce",
+    "content/question-bank/ssc/biology/chapter-2/assets/mitochondrion.svg": "dbe50c47f46bf1e957547c6f1ed404e3af72bbbda49b36f3aa5238d632c93032",
+    "content/question-bank/ssc/biology/chapter-2/assets/neuron.svg": "5ed16494d4cc93b62cdb96a8607db8261eaae0de8643949bb3cc47edbc767ec2",
+    "content/question-bank/ssc/biology/chapter-2/assets/plant-cell.svg": "bdd2207c21a39db7739a404d1d5f0933ff1fd448eb859790cffa05e3b4eecea9",
+    "content/question-bank/ssc/biology/chapter-2/draft-validation.json": "e177f6414c9cb32d8a8a4c7eb60558e0e85a71335d96509e8ff06d953402991f",
+    "content/question-bank/ssc/biology/chapter-2/questions.md": "66db306b2c4789340f8e9d5a4d6c8bcb2478e4a3be6733b56b973dc00d4b729b",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea",
+    "content/question-bank/ssc/biology/chapter-2/source-ledger.json": "1e4f438a3d808313984ec2768d2e7aaf1a3e113550b91391210babfdbd771a3b",
+    "content/question-bank/ssc/biology/chapter-3/assets/meiotic-anaphase.svg": "732004dff9737e8af492cda267634786cc6fb823dcb97afbfb70357a35f7e04b",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-anaphase.svg": "6d21067ec6a8b96c74746c7ff20553569b060017f510628a9366e08a1a5363a6",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-metaphase.svg": "0836c541f625af3cc00de2cd3794fc32f9e8596a8f5863b9df53b6d5a16a19ee",
+    "content/question-bank/ssc/biology/chapter-3/draft-validation.json": "586f77947b0971649115a438c08a8c7e9e2f89e3b042828c11bc82467c36bb88",
+    "content/question-bank/ssc/biology/chapter-3/questions.md": "72aa3d7659a2b00eb53871765551797a5e3a4ce09190852c590082e5a21c1b73",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": "717de995fad7ed5f01151b7f9971e7df7da32029180406bc65fe908fa57689ce",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": "20af772f34f14cd19a9c996b0e81dc1f7b2620119a23f7018e0ad2ca9296623e",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": "b4425f241fec444f5024a8979c12ceaba08362ce2a0997b292a93e7876ee19cc",
+    "content/question-bank/ssc/biology/chapter-3/source-ledger.json": "ae33cc99ea6e380bb213086c7af2062f1da6b441a7d3c67ae6b95aa5d885d7a0",
+    "content/question-bank/ssc/biology/chapter-4/assets/chloroplast-stages.svg": "b485f1e90497f5223bd2a35e93fc3e4aef29120d375fd6fdb9c65dd701500f19",
+    "content/question-bank/ssc/biology/chapter-4/assets/light-starch-test.svg": "eeafcfb56e5935c85adae7bf2b910708661b19b633d208dd3d8108d3e87dbf4b",
+    "content/question-bank/ssc/biology/chapter-4/assets/respiratory-coupling.svg": "6c166230a1a2595fbb772cc59493eaf64a7b6d03da97aefa7ce41854840f1fe6",
+    "content/question-bank/ssc/biology/chapter-4/draft-validation.json": "968e60c84885335a48542ba9e270943e25fbc3b2cadf0a3ea76e2d735127c3ba",
+    "content/question-bank/ssc/biology/chapter-4/questions.md": "61fb0ad785972b5ff81b6cdcce284d2fbf267e4db8635f657cdddb5f252bde92",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "24b07838b0ee9ea78964ac036ce8a664a357629735d8518dca7d7dc2d3de5ae6",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "9d539eed6618761cb61c553d8562fabd773cbb8e00ee6f154322fcb6bab18960",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "da3f331139c88863465e3f4083b80e49b03fe5e2f04ddb7e5a2630db09851202",
+    "content/question-bank/ssc/biology/chapter-4/source-ledger.json": "4961709e54e3d64692d42bfa82f9643f0cc42523b0bf903d0e85e0520baabab6",
+    "content/question-bank/ssc/biology/chapter-5/assets/digestive-routes.svg": "4962db983e88ff022c71d1eaaa73dbb833b13f0f2331e13c1ded3b5d7d73b268",
+    "content/question-bank/ssc/biology/chapter-5/assets/fat-digestion.svg": "064fdf29dfeb817a7143338e513e07ebfe9674464d4f74d78be5b9d93a47a184",
+    "content/question-bank/ssc/biology/chapter-5/assets/villus-transport.svg": "57b28511293a93b69f96f5e877e681010be6b8d46333797b8fe540d2366d36cc",
+    "content/question-bank/ssc/biology/chapter-5/draft-validation.json": "69d4eb9ea81a63616bedaeaf2723b2c231b8c4d3f911f8a36bf32f7615485495",
+    "content/question-bank/ssc/biology/chapter-5/questions.md": "91f647e9d44e7c860ddf955f5faab5a356ae0b6135bb252cdb388d7066593bdc",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": "eeb6315e91b39c0644f701590d8b2657874a42a1123a1debdf07fa6a655d6aa5",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": "8267f25598c4edc48eba3d8d337b8e24571d449dad055c017ee9e3767bf8472f",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": "a20da8e8c18d19615ba5f0c63ac98bc44839f658430853a15f29e67c06b984c2",
+    "content/question-bank/ssc/biology/chapter-5/source-ledger.json": "044c444a304cb3b9cf1d8bcbc7e535cd4e01ea5ea611904cd6fb37ac0178a88a",
+    "docs/question-bank/ssc-biology/chapter-1.html": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae",
+    "docs/question-bank/ssc-biology/chapter-2.html": "c7a10f24d123137c2070f6a7b2f2081eda3e822afdb05f2ae155f39584833aae",
+    "docs/question-bank/ssc-biology/chapter-3.html": "cb72c69f86b9e55f613b1d90cae46b17553dddfbaa9c7203471fe203ac57c1c2",
+    "docs/question-bank/ssc-biology/chapter-4.html": "cefe87f398ba27ee9afc8c4ba0422f45d65bd02bf14b222d0b665d66d3017da8",
+    "docs/question-bank/ssc-biology/chapter-5.html": "e2255f2769cbb3ae50a26fe2806443bd64327491f96e9cada03d029d6fe3529f"
+  },
+  "preservedEarlierFileCount": 52,
+  "diagrams": {
+    "files": [
+      "double-circulation.svg",
+      "vessel-functions.svg",
+      "xylem-tension.svg"
+    ],
+    "count": 3,
+    "attachedTo": "CQ stimuli with Bengali written equivalents",
+    "inspection": "Rasterized with Resvg and visually inspected; route map explicitly not anatomical positioning; English labels plus Bengali equivalents; not independent illustration certification."
+  },
+  "lexicalScreen": {
+    "method": "Same-type stem word-bigram Jaccard >= 0.40; NFKC, lowercase, punctuation removed except Bengali range; all 320 chapter-6 stems; no inherited chapter-6 questions.",
+    "candidates": [
+      {
+        "type": "MCQ",
+        "first": 56,
+        "second": 57,
+        "jaccard": 0.6,
+        "firstStem": "ধমনি চেনার সংজ্ঞাগত ভিত্তি কী?",
+        "secondStem": "শিরা চেনার সংজ্ঞাগত ভিত্তি কী?",
+        "authorDisposition": "Retained: complementary definitions of artery (away from heart) and vein (toward heart), not the same requested answer. Shared syntax; not an independent semantic review."
+      }
+    ],
+    "candidatePairs": 1,
+    "exactUniqueStems": 320,
+    "semanticCertification": false
+  },
+  "technicalValidation": {
+    "executedTests": 56,
+    "passed": 56,
+    "failed": 0,
+    "testLogSha256": "be1eb9444d2703ec8c2ff3f283a1be326fb3630549488fb590ffc0842adeec35",
+    "command": "NODE_PATH=\"$PWD/.cache/biology-test-tools/node_modules\" node --test tests/ssc-biology*.test.cjs",
+    "result": "PASS: 56/56 focused tests; raw TAP archived with final backup",
+    "builders": [
+      "build-ssc-biology-ch1.py --check",
+      "build-ssc-biology-drafts.py --check"
+    ],
+    "fullAppBuildClaimed": false
+  },
+  "incrementalBackup": {
+    "fileId": "1GtbTkFp4wFfDcCuqJoSoUlxco7rXPjPx",
+    "name": "ssc-biology-chapter-6-authoring-checkpoint-v2.zip",
+    "bytes": 194965,
+    "md5": "ab818961cab1bc2e750f26f48b19251c",
+    "independentRemoteGetVerified": true,
+    "folder": "1VzEQ1ZfNNLE2ZYzEXdpS0azgiA4E8_Y5",
+    "scope": "All 320 authored drafts, build sources and figures at checkpoint; not the final validated snapshot."
+  },
+  "contentSafeguards": [
+    "Osmosis concerns water across a selectively permeable barrier; ion uptake is not osmosis. Water potential and pressure qualify concentration-only rules.",
+    "Xylem cohesion-tension differs from root pressure. Phloem source-to-sink flow may run opposite ways in separate tubes, not two net bulk-flow directions at one location in one tube.",
+    "Potometer measures water uptake, not direct transpiration; guttation is liquid, transpiration vapor; tests use supplied data, no human blood handling.",
+    "ABO compatibility is an educational packed-RBC model, not whole-blood clinical clearance. Rh-negative does not imply anti-D from birth; typing, crossmatching and infection screening remain necessary.",
+    "Artery/vein names use flow direction, not oxygen level. Coronary perfusion supplies myocardium. Lymph returns interstitial fluid.",
+    "120/80 is illustrative, not a diagnosis; WHO adult repeated-day >=140 and/or >=90 threshold not automatically a pediatric criterion; cuff, posture, rest and clinical assessment matter.",
+    "LDL/HDL are lipoprotein particles, triglyceride is not cholesterol, cholesterol belongs to membranes not cell walls; rheumatic fever is post-infectious immune disease.",
+    "MI, cardiac arrest and stroke differ; suspected acute symptoms require urgent professional care, not classroom diagnosis or self-medication."
+  ],
+  "limitations": [
+    "Secondary BiologyBD OCR is not a certified NCTB edition; official textbook full chapter/page references have not been independently verified.",
+    "Fetched reference sections provide conceptual background, not question-by-question official exercise attribution; ledger source lists do not mean every linked page supports every clause.",
+    "Secondary OCR errors were not copied: mineral uptake as osmosis, all WBC lifespans equal, oxyhemoglobin as the sole CO2 carrier, diastolic 40, cholesterol as cell-wall material, triglyceride as cholesterol, stroke only hemorrhage.",
+    "Fetched OpenStax sections also contain errors: camel RBC nucleation, oxygen binding as iron oxidation, oversimplified venous fluid-reabsorption percentages, fibrinogen placed in serum, platelet plug conflated with fibrin clot and unsafe universal whole-blood wording. These were avoided.",
+    "Potometry, water potential, phloem pressure-flow, sensitization, cardiac output and selected clinical boundaries include enrichment; current official SSC syllabus depth remains to be independently checked.",
+    "Lexical screening cannot certify semantic uniqueness or independent objectives; related concepts recur across question types. Distractor plausibility and four-part CQ cognitive depth need independent teacher review.",
+    "Figures are selected original explanatory schematics, not an exhaustive official textbook figure inventory, not anatomical drawings and not production image integration.",
+    "No independent teacher/content review, official textbook certification, full app build, database import, approval, publication or deployment is claimed."
+  ],
+  "textbookChapterRead": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false
+}

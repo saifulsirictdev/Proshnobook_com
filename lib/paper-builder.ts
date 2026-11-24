@@ -1,14 +1,30 @@
 import { formatPaperFractions } from "@/lib/paper-math";
 import { z } from "zod";
-import { paperHeaderSchema } from "@/lib/paper-header";
+import { autoModelSelectionSchema } from "./auto-model-syllabus-schema";
+import {
+  paperHeaderSchema,
+  defaultPaperHeaderSchema,
+} from "@/lib/paper-header";
 export type PaperItem = {
+  /** Verified per-question occurrences, independent of topic/category and display toggles. */
+  provenance?: import("./question-provenance").QuestionProvenance[];
   englishGroup?: {
+    /** Presentation metadata only; never changes the saved exercise or answer key. */
+    referenceModel?: boolean;
+    part?: { id: "reading" | "grammar" | "writing"; title: string };
+    partHeading?: string;
     continued?: boolean;
     subitemOffset?: number;
+    /** Original first table row shown by a split-table fragment (layout only). */
+    tableOffset?: number;
     fragment?: boolean;
     attachmentId?: string;
-    passages: {key:string;text:string}[];
-    tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {number:number;marks:number})[];
+    passages: { key: string; text: string }[];
+    tasks: (import("./english/generation").EnglishGeneratedOutput["tasks"][number] & {
+      number: number;
+      marks: number;
+      marksLabel?: string;
+    })[];
   };
   id: string;
   text: string;
@@ -22,6 +38,9 @@ export type PaperItem = {
   type?: string;
   stimulus?: string;
   subQuestions?: { k: string; kh: string; g: string; gh: string };
+  /** Draft-only inline edits (question builder), never authored content. */
+  marks?: number;
+  partMarks?: Record<string, number>;
   answers?: Record<string, string>;
 };
 const bool = (value = false) => z.boolean().catch(value).default(value);
@@ -30,6 +49,26 @@ const number = (value: number, min: number, max: number) =>
   z.number().int().min(min).max(max).catch(value).default(value);
 export const settingsSchema = z.object({
   version: z.literal(2).default(2),
+  autoModel: z
+    .enum([
+      "ssc-math-mcq-v1",
+      "ssc-math-written-v1",
+      "ssc-physics-mcq-v1",
+      "ssc-physics-written-v1",
+      "ssc-chemistry-mcq-v1",
+      "ssc-chemistry-written-v1",
+      "syllabus-mcq-v1",
+      "syllabus-written-v1",
+    ])
+    .optional()
+    .catch(undefined),
+  syllabusSelection: autoModelSelectionSchema.optional().catch(undefined),
+  syllabusAssignments: z
+    .record(z.string(), z.number().int().min(0).max(19))
+    .optional()
+    .catch(undefined),
+  // Opt-in presentation state; absent on legacy drafts and frozen approved stock.
+  defaultHeader: defaultPaperHeaderSchema.optional().catch(undefined),
   header: paperHeaderSchema
     .catch(() => paperHeaderSchema.parse({}))
     .prefault({}),
@@ -153,6 +192,15 @@ export const settingsSchema = z.object({
         text: text(),
         options: z.record(z.string(), z.string()).optional(),
         stimulus: z.string().optional(),
+        englishText: z
+          .record(z.string().max(200), z.string().max(10000))
+          .refine((v) => Object.keys(v).length <= 500)
+          .optional(),
+        marks: z.number().int().min(1).max(200).optional().catch(undefined),
+        partMarks: z
+          .record(z.string(), z.number().int().min(1).max(200))
+          .optional()
+          .catch({}),
         subQuestions: z
           .object({
             k: z.string(),

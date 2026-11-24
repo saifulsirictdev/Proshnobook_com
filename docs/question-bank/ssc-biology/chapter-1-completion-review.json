@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-20",
+  "chapter": 1,
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "draftItems": 320,
+  "additionThisMilestone": {
+    "MCQ": 130,
+    "CQ": 35,
+    "SQ": 40
+  },
+  "unchangedBaseline": "da6ffc7",
+  "unchangedQuestionFiles": {
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": "540432dfff0152dbd0345151e07c2c6d843b79cb559f5233a14934fdd170abf7",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": "89dcf0a644639814d68cfd8bbcd4460e3b0590ecd0320fd3f1309f993f5b01b9",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": "dcd5967701befb2237e4435f0bc34feba17d10809b3661c2aa3d3765ac8f956c",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": "c54c90b06ebe852072425d12488e0ac798144001618fa7047910d7410f5bd60e",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": "0b8fc6bdfd274fd07b9d676e071a4684b318cc426606b8c3150bd9965cb183d1",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": "b39de69ac2e9a5febc1a7f7077754a4cb3719c327892683d8122bf10adcdf9f8",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "bd10d77efe049eea7d95ce44f84a903f6a2541931e47e93d4f5d5aff4773c99b",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "0223246cb2e332c27d725860d8735d87f885ea995ec459c47d40f24aab226817",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "e983e76d0534c773a1847833390b4348c1af51790401cba5a7f1e4a65b3cfa53",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-mcq.json": "6ae8e1a8e0b069df426c7f428b0437e71a05f76d84cbc93fbf7b95a69a635fc8",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-cq.json": "45623a8deda349b21a2c80d3bc8909df098b543ca58ad6865b16e58d52c49620",
+    "content/question-bank/ssc/biology/chapter-5/rebuild-sq.json": "c6313f93ac2c9ea22777decd7a71eec8f5a2ab1bc32c218bf8247fe8e988a980"
+  },
+  "backgroundTextRead": [
+    {
+      "url": "https://www.biologybd.com/9t1.html",
+      "chunks": [
+        0,
+        1,
+        2
+      ],
+      "scope": "Chapter 1 secondary reference; no source images visually inspected."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth",
+      "chunks": [
+        2,
+        3
+      ],
+      "scope": "Hierarchy, taxon versus rank, binomial conventions, changing classifications; no questions or images copied."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species",
+      "chunks": [
+        2
+      ],
+      "scope": "Boundary of the biological species concept in sexual organisms."
+    },
+    {
+      "url": "https://www.iczn.org/the-code/the-international-code-of-zoological-nomenclature/",
+      "chunks": [
+        0
+      ],
+      "scope": "Code landing page only, not a full Code/article review."
+    }
+  ],
+  "authorEditorialChecks": [
+    "Source transcriptions of Homo, Primates and binomials corrected rather than copied.",
+    "Historical five-kingdom model explicitly contextualized; no claim of universal modern classification.",
+    "No blanket all fungi multicellular, all plants flowering, all protists same nutrition, or cyanobacteria containing chloroplasts.",
+    "Rank versus named taxon; nested inference direction; specimen counts versus species counts distinguished.",
+    "Specific epithet not used alone as full species name; author citation not counted as third binomial word.",
+    "Formal new-name establishment distinguished from classroom writing conventions.",
+    "No unverifiable board, school, year or official textbook-page claims.",
+    "Supplementary reasoning about sampling, code limitations, metadata and biological-species boundaries is contextual practice, not a verified official exam requirement."
+  ],
+  "lexicalScreen": {
+    "sameTypePairsOnly": true,
+    "metric": "word-bigram Jaccard of stimuli/stems",
+    "threshold": 0.4,
+    "candidates": [],
+    "limitation": "A lexical screen cannot establish semantic uniqueness. Related MCQ/SQ/CQ probe shared chapter concepts; not 320 independent objectives."
+  },
+  "figures": {
+    "count": 1,
+    "originalAsset": "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg",
+    "visualReview": "Rendered layout visually inspected at prior 115-draft milestone; bytes unchanged.",
+    "offlineEmbedded": true,
+    "equivalentWrittenStimulus": true,
+    "sourceFiguresInspected": false,
+    "productionImageIntegration": false
+  },
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "publicationAuthorized": false,
+  "approved": false,
+  "published": false
+}

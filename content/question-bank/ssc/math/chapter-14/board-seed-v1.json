@@ -1,0 +1,61 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৪শ অধ্যায়: অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 14 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি বিষমবাহু ত্রিভুজের মোট কয়টি প্রতিসাম্য রেখা আছে?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/source-cumilla-7.svg)",
+      "options": {
+        "A": "$0$",
+        "B": "$1$",
+        "C": "$3$",
+        "D": "অসংখ্য"
+      },
+      "correct": "A",
+      "explanation": "প্রতিফলন-অক্ষ থাকলে ত্রিভুজের অন্তত দুই বাহু সমান হতে হয়। বিষমবাহুতে তিন বাহুই ভিন্ন; তাই কোনো প্রতিসাম্য অক্ষ নেই।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 7",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "7"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সাধারণ আয়তক্ষেত্রের (বর্গ নয়) ক্ষুদ্রতম ধনাত্মক আবর্তন কোণের পরিমাণ কত ডিগ্রি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch14-v1/source-rajshahi-13.svg)",
+      "options": {
+        "A": "$360$",
+        "B": "$180$",
+        "C": "$90$",
+        "D": "$45$"
+      },
+      "correct": "B",
+      "explanation": "কেন্দ্রের চারদিকে 180° ঘোরালে বিপরীত শীর্ষগুলো বিনিময় হয় এবং আয়তক্ষেত্র মিলে যায়। বর্গ না হওয়ায় 90°-এ দৈর্ঘ্য ও প্রস্থের অবস্থান বিনিময়ে মেলে না।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 13",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "13"
+        }
+      ]
+    }
+  ]
+}

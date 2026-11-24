@@ -1,4 +1,5 @@
 "use client";
+import { paperMarginMode, paperMarginPresets } from "@/lib/paper-margins";
 import LayoutControls from "./layout-controls";
 import { useEffect, useRef } from "react";
 import { Download, X } from "lucide-react";
@@ -287,6 +288,16 @@ export default function PaperSettingsPanel({
               ]}
               onChange={(v) => cfg("align", v)}
             />
+            <label className="block text-sm">পেজ মার্জিন
+              <select aria-label="পেজ মার্জিন" className={field} value={paperMarginMode(s.cfg)} onChange={e => {
+                if (e.target.value === "custom") return;
+                update({...s,cfg:{...s.cfg,...paperMarginPresets[e.target.value as "normal" | "narrow"]}});
+              }}>
+                <option value="normal">Normal — সাধারণ</option>
+                <option value="narrow">Narrow — কম মার্জিন</option>
+                <option value="custom" disabled>Custom — নিজস্ব</option>
+              </select>
+            </label>
             {(
               [
                 "marginTop",
@@ -412,7 +423,7 @@ export default function PaperSettingsPanel({
               {toggle("omr", "OMR যুক্ত")}
             </section>
             <section className="border-t pt-4">
-              {quantity("cqAnswer", "সৃজনশীল প্রশ্ন", counts.CQ)}
+              {s.autoModel ? <p className="mb-3 rounded-lg bg-emerald-50 p-3 text-xs text-emerald-900">Auto Model-এর উত্তরদানের সংখ্যা নির্বাচিত কাঠামো অনুযায়ী নির্ধারিত। প্রশ্নের লেখা ও লেআউট সম্পাদনা করতে পারবেন।</p> : quantity("cqAnswer", "সৃজনশীল প্রশ্ন", counts.CQ)}
               <label className="text-xs text-slate-500">
                 ছবির ডিফল্ট আকার — {s.cfg.imageSize}px
               </label>
@@ -449,8 +460,8 @@ export default function PaperSettingsPanel({
                 এডিটিং মোডে প্রতিটি প্রশ্নে HTTPS ছবির URL যোগ করুন। প্রিভিউতে ছবির +
                 / − / রিসেট দিয়ে আলাদা আকার বদলানো যাবে।
               </p>
-              {quantity("shortAnswer", "সংক্ষিপ্ত প্রশ্ন", counts.SHORT)}
-              {quantity("mcqAnswer", "বহুনির্বাচনি প্রশ্ন", counts.MCQ)}
+              {!s.autoModel && quantity("shortAnswer", "সংক্ষিপ্ত প্রশ্ন", counts.SHORT)}
+              {!s.autoModel && quantity("mcqAnswer", "বহুনির্বাচনি প্রশ্ন", counts.MCQ)}
             </section>
             <section className="my-4 border-t pt-4">
               {heading("প্রশ্নের মেটাডাটা (হেডার)")}

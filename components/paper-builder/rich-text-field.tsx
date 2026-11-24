@@ -1,5 +1,6 @@
 "use client";
-import { useRef } from "react";
+import { paperFontLabels } from "@/lib/paper-fonts";
+import { useRef, useState, useEffect } from "react";
 export default function RichTextField({
   value,
   onChange,
@@ -10,6 +11,14 @@ export default function RichTextField({
   label: string;
 }) {
   const ref = useRef<HTMLTextAreaElement>(null);
+  const root = useRef<HTMLDivElement>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const [toolbar, setToolbar] = useState(false);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  function reveal() {
+    clearTimeout(timer.current);
+    timer.current = setTimeout(() => setToolbar(true), 450);
+  }
   function format(tag: string) {
     const node = ref.current;
     if (!node) return;
@@ -20,7 +29,7 @@ export default function RichTextField({
       return;
     }
     const opening = `[${tag}]`,
-      closing = `[/${tag}]`;
+      closing = `[/${tag.split("=")[0]}]`;
     onChange(
       value.slice(0, start) +
         opening +
@@ -56,11 +65,24 @@ export default function RichTextField({
     requestAnimationFrame(() => node.focus());
   }
   return (
-    <div className="rounded-lg border border-emerald-200 bg-white p-2">
+    <div
+      ref={root}
+      className="paper-rich-field relative rounded-lg border border-emerald-200 bg-white p-2"
+      onFocus={reveal}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
+          clearTimeout(timer.current);
+          setToolbar(false);
+        }
+      }}
+    >
       <div
+        data-noprint
+        hidden={!toolbar}
         role="toolbar"
         aria-label={`${label} ফরম্যাটিং`}
-        className="mb-2 flex flex-wrap gap-1"
+        className="paper-floating-toolbar sticky top-0 z-20 mb-2 flex flex-wrap gap-1 rounded border bg-white p-2 shadow-lg"
+        style={{ display: toolbar ? "flex" : "none" }}
       >
         {(["b", "i", "u", "s"] as const).map((tag) => (
           <button
@@ -74,6 +96,63 @@ export default function RichTextField({
             {tag.toUpperCase()}
           </button>
         ))}
+        <select
+          aria-label={`${label}: Font`}
+          defaultValue=""
+          onChange={(e) => {
+            if (e.target.value) format(`font=${e.target.value}`);
+            e.target.value = "";
+          }}
+        >
+          <option value="" disabled>
+            Font
+          </option>
+          {Object.entries(paperFontLabels).map(([key, name]) => (
+            <option key={key} value={key}>
+              {name}
+            </option>
+          ))}
+        </select>
+        <select
+          aria-label={`${label}: Font size`}
+          defaultValue=""
+          onChange={(e) => {
+            if (e.target.value) format(`size=${e.target.value}`);
+            e.target.value = "";
+          }}
+        >
+          <option value="" disabled>
+            Size
+          </option>
+          {[10, 12, 14, 16, 18, 20, 24, 28, 32, 40, 48, 60].map((n) => (
+            <option key={n} value={n}>
+              {n}
+            </option>
+          ))}
+        </select>
+        <input
+          type="color"
+          aria-label={`${label}: Color`}
+          defaultValue="#111111"
+          onChange={(e) => format(`color=${e.target.value}`)}
+        />
+        <select
+          aria-label={`${label}: Alignment`}
+          defaultValue=""
+          onChange={(e) => {
+            if (e.target.value) format(`align=${e.target.value}`);
+            e.target.value = "";
+          }}
+        >
+          <option value="" disabled>
+            Align
+          </option>
+          {["left", "center", "right", "justify"].map((a) => (
+            <option key={a} value={a}>
+              {a}
+            </option>
+          ))}
+        </select>
         <button
           type="button"
           className="studio-choice"
@@ -110,6 +189,7 @@ export default function RichTextField({
         rows={3}
         maxLength={10000}
         value={value}
+        onSelect={reveal}
         onChange={(e) => onChange(e.target.value)}
       />
       <p className="text-[10px] text-slate-500">

@@ -1,0 +1,42 @@
+{
+  "chapter": 6,
+  "topic": "৬ষ্ঠ অধ্যায়: জীবে পরিবহণ",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 152894,
+      "sha256": "fd819e80853c70e074c8a8626e4e5ab9c0c5be831340ba4208a672e2c99f5db3"
+    },
+    "rebuild-cq.json": {
+      "bytes": 152635,
+      "sha256": "7572c838e6cc08152fdd24428afcf92567731ddf378f5ab945e88a93c392d251"
+    },
+    "rebuild-sq.json": {
+      "bytes": 51246,
+      "sha256": "120fbfde3b7622033f63491ea241ef15fff485a4c68f05cd7804980aacf39457"
+    }
+  }
+}

@@ -28,8 +28,9 @@ export async function POST(req: Request) {
       });
       const requestedType = questionType || type || "MCQ";
       const questions = rows.flatMap<Record<string, unknown>>((q) => {
-        const options = q.options as Record<string, unknown>;
-        if (!options || typeof options !== "object") return [];
+        const rawOptions = q.options as Record<string, unknown>;
+        if (!rawOptions || typeof rawOptions !== "object") return [];
+        const { _provenance, _authoring, ...options } = rawOptions;
         if (!q.correct) {
           if ((requestedType === "SHORT" || requestedType === "MIXED") && !options.stimulus && !options.subQuestions && !options.k) return [{ type: "SHORT", question: q.text, answer: q.explanation }];
           if ((requestedType === "CQ" || requestedType === "MIXED") && (options.stimulus || options.subQuestions || options.k)) return [{ type: "CQ", question: q.text, ...options }];
@@ -90,7 +91,7 @@ export async function POST(req: Request) {
     const data = await deepseekRes.json();
     let rawText = data?.choices?.[0]?.message?.content;
 
-    if (!rawText) return NextResponse.json({ success: false, error: "AI থেকে রেসপন্স পাওয়া যায়নি।" }, { status: 500 });
+    if (!rawText) return NextResponse.json({ success: false, error: "সফটওয়্যার থেকে রেসপন্স পাওয়া যায়নি।" }, { status: 500 });
 
     let cleaned = rawText.trim();
     if (cleaned.startsWith("```")) cleaned = cleaned.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();

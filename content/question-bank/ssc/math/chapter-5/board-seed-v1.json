@@ -1,0 +1,136 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৫ম অধ্যায়: এক চলকবিশিষ্ট সমীকরণ",
+  "book": "বোর্ড-আরোপিত সংকলন — এক চলকবিশিষ্ট সমীকরণ",
+  "edition": "Chapter 5 target v1; DRAFT; স্বাধীন শিক্ষক অনুমোদন বাকি",
+  "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$\\sqrt{3x-6}+5=2$ সমীকরণটির সমাধান সেট কোনটি?",
+      "options": {
+        "A": "$\\varnothing$",
+        "B": "$\\{-5\\}$",
+        "C": "$\\{-3\\}$",
+        "D": "$\\{5\\}$"
+      },
+      "correct": "A",
+      "explanation": "$3x-6\\ge0$ অর্থাৎ $x\\ge2$। কিন্তু সমীকরণে $\\sqrt{3x-6}=-3$, যা বাস্তব বর্গমূলের জন্য অসম্ভব। বর্গ করে পাওয়া $x=5$ মূল সমীকরণ মানে না। তাই সমাধান সেট শূন্য।",
+      "difficulty": "MEDIUM",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 7",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "7"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘরের মেঝের দৈর্ঘ্য প্রস্থ অপেক্ষা ২ মিটার বেশি এবং মেঝের পরিসীমা ২০ মিটার। ঘরের মেঝের দৈর্ঘ্য কত?",
+      "options": {
+        "A": "৪ মিটার",
+        "B": "৬ মিটার",
+        "C": "৮ মিটার",
+        "D": "১০ মিটার"
+      },
+      "correct": "B",
+      "explanation": "প্রস্থ $w$ হলে $2(w+w+2)=20$, অর্থাৎ $4w=16$। প্রস্থ ৪ ও দৈর্ঘ্য ৬ মিটার; $2(4+6)=20$।",
+      "difficulty": "MEDIUM",
+      "page": "সংকলন: মুদ্রিত 142; PDF 1; প্রশ্ন 21",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dhaka",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 1,
+          "printedPage": "142",
+          "questionNumber": "21"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$f(x)=x^2-5x+6$ এবং $f(x)=0$ হলে, x কত?",
+      "options": {
+        "A": "$2,3$",
+        "B": "$-5,1$",
+        "C": "$-2,3$",
+        "D": "$1,-5$"
+      },
+      "correct": "A",
+      "explanation": "$x^2-5x+6=(x-2)(x-3)$। তাই $x=2$ অথবা $x=3$; দুটিই মূল সমীকরণ মানে।",
+      "difficulty": "MEDIUM",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 19",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "19"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\frac{x-2}{x-1}=2-\\frac1{x-1}$ সমীকরণের সমাধান সেট নিচের কোনটি?",
+      "options": {
+        "A": "$\\{1\\}$",
+        "B": "$\\{\\varnothing\\}$",
+        "C": "$\\{\\}$",
+        "D": "$\\{2\\}$"
+      },
+      "correct": "C",
+      "explanation": "প্রথমে $x\\ne1$। উভয় পাশে $x-1$ গুণ করে $x-2=2x-3$, তাই সম্ভাব্য মান $x=1$; এটি হর শূন্য করে। ফলে কোনো সমাধান নেই, সেট $\\{\\}=\\varnothing$। B-তে $\\{\\varnothing\\}$ একটি উপাদানবিশিষ্ট সেট, শূন্য সেট নয়।",
+      "difficulty": "MEDIUM",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 8",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "8"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "$\\sqrt{2x-2}+4=5$ এর সমাধান সেট নিচের কোনটি?",
+      "options": {
+        "A": "$\\{0\\}$",
+        "B": "$\\{1\\}$",
+        "C": "$\\{\\frac32\\}$",
+        "D": "$\\{\\}$"
+      },
+      "correct": "C",
+      "explanation": "$x\\ge1$ এবং $\\sqrt{2x-2}=1$। বর্গ করে $2x-2=1$, তাই $x=3/2$। বসিয়ে $\\sqrt1+4=5$ মেলে।",
+      "difficulty": "MEDIUM",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 6",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "6"
+        }
+      ]
+    }
+  ]
+}

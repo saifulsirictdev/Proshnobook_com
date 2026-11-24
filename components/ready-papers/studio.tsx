@@ -1,4 +1,7 @@
 "use client";
+import { type RasterBox, type ReadyTextStyle } from "@/lib/ready-text-block";
+import { paperFonts, paperFontLabels, type PaperFont } from "@/lib/paper-fonts";
+import { paperMarginMode, paperMarginPresets } from "@/lib/paper-margins";
 import { toPng } from "html-to-image";
 import {
   beginReadyMarketExport,
@@ -6,6 +9,7 @@ import {
 } from "@/app/actions/marketplace-ready";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import ReadyTextEditor from "./text-editor";
 import ReadyCheckout from "./checkout";
 import { selectionWithPage } from "@/lib/ready-page-selection";
 import {
@@ -57,9 +61,6 @@ import {
 } from "@/lib/ready-paper-browser";
 import { updateReadyPaper } from "@/app/actions/ready-papers";
 import "./ready.css";
-import AIAnswers, { AIAnswerSheets } from "./ai-answers";
-import type { ReadyAIJob } from "@/lib/ready-ai";
-import AnswerAssistant, { AnswerSheets } from "./answer-assistant";
 import type { ReadyAnswer } from "@/lib/ready-answers";
 type Header = {
   school: string;
@@ -81,7 +82,6 @@ export default function ReadyStudio({
   answerEntries?: ReadyAnswer[];
   initialPurchase?: ReadyPurchase;
 }) {
-  const [aiJob, setAIJob] = useState<ReadyAIJob | null>(null);
   const [checkout, setCheckout] = useState(false);
   const [saveNotice, setSaveNotice] = useState("");
   const [exportingMarket, setExportingMarket] = useState(false);
@@ -96,6 +96,13 @@ export default function ReadyStudio({
   const [liveReviewPage, setLiveReviewPage] = useState(0);
   const [liveReview, setLiveReview] = useState("");
   const [reviewPending, setReviewPending] = useState(false);
+  const [replacementBox, setReplacementBox] = useState<RasterBox | null>(null);
+  const [textStyle, setTextStyle] = useState<ReadyTextStyle>({});
+  const [editingText, setEditingText] = useState<number | null>(null);
+  const [ocrBusy, setOcrBusy] = useState(false);
+  const ocrAbort = useRef<AbortController | null>(null);
+  useEffect(() => () => ocrAbort.current?.abort(), []);
+
   const [headerLine, setHeaderLine] = useState(true);
   const [headerGap, setHeaderGap] = useState(2);
   const [placementMode, setPlacementMode] = useState(false);
@@ -115,10 +122,9 @@ export default function ReadyStudio({
   const [controlsOpen, setControlsOpen] = useState(false);
   const controlsPanel = useRef<HTMLElement>(null);
   const controlsToggle = useRef<HTMLButtonElement>(null);
-  const [entries, setEntries] = useState(answerEntries);
-  const [printKind, setPrintKind] = useState<
-    "questions" | "blank" | "answers" | "ai"
-  >("questions");
+  const printKind = "questions";
+  const previewInFlight = useRef(false);
+  const pendingAutoSave = useRef<Promise<unknown>>(Promise.resolve());
   const [pages, setPages] = useState<string[]>([]),
     [selected, setSelected] = useState<number[]>([]),
     [edits, setEdits] = useState<Record<string, PageEdit>>(paper.presets),
@@ -126,7 +132,7 @@ export default function ReadyStudio({
     [active, setActive] = useState(1),
     [message, setMessage] = useState("PDF খোলা হচ্ছে…"),
     [busy, setBusy] = useState(true),
-    [tool, setTool] = useState<"view" | "erase" | "text">("view"),
+    [tool, setTool] = useState<"view" | "erase" | "text" | "replace">("view"),
     [text, setText] = useState(""),
     [size, setSize] = useState(20),
     [original, setOriginal] = useState(false),
@@ -142,6 +148,11 @@ export default function ReadyStudio({
     redo = useRef<Record<number, PageEdit[]>>({}),
     key = `${userId}:${paper.id}`,
     edit = edits[String(active)] || freshEdit();
+  useEffect(() => {
+    ocrAbort.current?.abort();
+    setReplacementBox(null);
+    setEditingText(null);
+  }, [active]);
   const rasterKey = rasterEditKey(edit);
   const qualityCache = useRef(new Map<number, Promise<string>>());
   function qualityPage(n: number) {
@@ -281,14 +292,21 @@ export default function ReadyStudio({
           original
             ? { ...freshEdit(), rotation: rasterEdit.rotation }
             : rasterEdit,
+          true,
+          headerSettings.cfg.font,
         );
         if (live) {
           setLiveReview(result.toDataURL("image/png"));
           setLiveReviewPage(active);
         }
         result.width = result.height = 0;
-      } catch {
-        if (live) setLiveReview("");
+      } catch (error) {
+        if (live) {
+          setLiveReview("");
+          setMessage(
+            error instanceof Error ? error.message : "প্রিভিউ তৈরি হয়নি।",
+          );
+        }
       } finally {
         if (live) setReviewPending(false);
       }
@@ -297,7 +315,11 @@ export default function ReadyStudio({
       live = false;
       clearTimeout(timer);
     };
-  }, [pages, active, rasterKey, step, original]);
+  }, [pages, active, rasterKey, step, original, headerSettings.cfg.font]);
+  const sheetStyle = {
+    fontFamily: paperFonts[headerSettings.cfg.font],
+    padding: `${headerSettings.cfg.marginTop}px ${headerSettings.cfg.marginRight}px ${headerSettings.cfg.marginBottom}px ${headerSettings.cfg.marginLeft}px`,
+  };
   function renderPageHeader(first: boolean) {
     return (
       <>
@@ -329,15 +351,18 @@ export default function ReadyStudio({
     );
   }
   useEffect(() => {
-    if (!paid || adminPreset || !receipt || step === "select") return;
+    if (!paid || adminPreset || !receipt || step === "select" || busy) return;
     let live = true;
     const timer = setTimeout(() => {
-      saveReadyPurchase(receipt, snapshot(), selected)
+      pendingAutoSave.current = pendingAutoSave.current
+        .catch(() => {})
+        .then(() => saveReadyPurchase(receipt, snapshot(), selected))
         .then((r) => {
           if (live && !r.ok) setMessage("Account auto-save হয়নি: " + r.error);
         })
         .catch(() => {
-          if (live) setMessage("Account auto-save হয়নি। প্রশ্নপত্র সেভ করুন চাপুন।");
+          if (live)
+            setMessage("Account auto-save হয়নি। প্রশ্নপত্র সেভ করুন চাপুন।");
         });
     }, 1200);
     return () => {
@@ -356,6 +381,7 @@ export default function ReadyStudio({
     headerLine,
     headerGap,
     adminPreset,
+    busy,
   ]);
   function togglePage(n: number) {
     setSelected((old) => {
@@ -408,6 +434,21 @@ export default function ReadyStudio({
   }
   function commitRaster(start: RasterPoint, end: RasterPoint) {
     if (original || reviewPending) return;
+    if (tool === "replace") {
+      const box = {
+        x: Math.min(start.x, end.x),
+        y: Math.min(start.y, end.y),
+        w: Math.abs(end.x - start.x),
+        h: Math.abs(end.y - start.y),
+      };
+      if (box.w > 0.01 && box.h > 0.01 && box.x <= 0.95 && box.y <= 0.98) {
+        setReplacementBox(box);
+        setEditingText(null);
+        setText("");
+        setControlsOpen(true);
+      }
+      return;
+    }
     if (tool === "erase") {
       const box = {
         x: Math.min(start.x, end.x),
@@ -415,6 +456,7 @@ export default function ReadyStudio({
         w: Math.abs(end.x - start.x),
         h: Math.abs(end.y - start.y),
       };
+      if (busy) return;
       if (box.w > 0.003 && box.h > 0.003 && edit.masks.length < 40)
         update({ masks: [...edit.masks, box] });
     } else if (tool === "text" && text.trim() && edit.texts.length < 30)
@@ -426,13 +468,75 @@ export default function ReadyStudio({
             y: Math.min(0.98, start.y),
             text: text.trim(),
             size,
+            style: textStyle,
           },
         ],
       });
   }
+  async function readRegion() {
+    if (!replacementBox || ocrBusy || !paid) return;
+    ocrAbort.current?.abort();
+    const controller = new AbortController();
+    ocrAbort.current = controller;
+    setOcrBusy(true);
+    try {
+      const { readReadyRegion } = await import("@/lib/ready-region-ocr");
+      const result = await readReadyRegion(
+        await qualityPage(active),
+        edit,
+        replacementBox,
+        controller.signal,
+        setMessage,
+      );
+      if (!controller.signal.aborted) {
+        setText(result.text);
+        setMessage(
+          `OCR পড়া হয়েছে (${Math.round(result.confidence)}%)। ভুল/গণিত/চিত্র যাচাই করে প্রয়োগ করুন; নিজে থেকে মূল ছবি বদলায়নি।`,
+        );
+      }
+    } catch (error) {
+      if (!controller.signal.aborted)
+        setMessage(error instanceof Error ? error.message : "OCR হয়নি।");
+    } finally {
+      setOcrBusy(false);
+    }
+  }
+  function applyReplacement() {
+    if (!replacementBox || !text.trim() || busy) return;
+    const value = {
+      x: replacementBox.x,
+      y: replacementBox.y,
+      w: replacementBox.w,
+      h: replacementBox.h,
+      text: text.trim(),
+      size,
+      style: textStyle,
+    };
+    if (editingText !== null) {
+      update({
+        texts: edit.texts.map((t, i) => (i === editingText ? value : t)),
+      });
+    } else {
+      if (edit.texts.length >= 30 || edit.masks.length >= 40) {
+        setMessage(
+          "এই পৃষ্ঠার সম্পাদনার সীমা পূর্ণ। আগে অপ্রয়োজনীয় লেখা সরান।",
+        );
+        return;
+      }
+      update({
+        masks: [...edit.masks, replacementBox],
+        texts: [...edit.texts, value],
+      });
+    }
+    setReplacementBox(null);
+    setEditingText(null);
+    setTool("view");
+  }
   function saveIdentity() {
     return JSON.stringify({ receipt, selected, snapshot: snapshot() });
   }
+  const latestSaveIdentity = useRef("");
+  latestSaveIdentity.current = saveIdentity();
   function requireSaved() {
     if (explicitlySaved.current === saveIdentity()) return true;
     const notice =
@@ -448,6 +552,7 @@ export default function ReadyStudio({
       return;
     }
     if (!requireSaved()) return;
+    const previewIdentity = saveIdentity();
     setBusy(true);
     setMessage("Print preview প্রস্তুত হচ্ছে…");
     setSaveNotice("Print Preview-এর পৃষ্ঠাগুলো প্রস্তুত হচ্ছে…");
@@ -458,15 +563,16 @@ export default function ReadyStudio({
         const c = await renderEdited(
           await qualityPage(n),
           edits[n] || freshEdit(),
+          true,
+          headerSettings.cfg.font,
         );
         out.push(c.toDataURL("image/png"));
         c.width = c.height = 0;
       }
-      if (!adminPreset) {
-        const saved = await saveReadyPurchase(receipt, snapshot(), selected);
-        if (!saved.ok) throw new Error(saved.error);
-      }
-      setPrintKind("questions");
+      if (latestSaveIdentity.current !== previewIdentity)
+        throw Error(
+          "প্রস্তুতির সময় সম্পাদনা বদলেছে। আবার Save & Print Preview চাপুন।",
+        );
       setPrintPages(out);
       setStep("preview");
       setMessage("Preview দেখে print করুন।");
@@ -518,7 +624,9 @@ export default function ReadyStudio({
       if (batch.count !== sheets.length) throw Error("পৃষ্ঠা নির্বাচন বদলেছে।");
       await document.fonts.ready;
       for (let i = 0; i < sheets.length; i++) {
-        setSaveNotice(`বিক্রির স্থির কপি প্রস্তুত হচ্ছে: ${i + 1}/${sheets.length}`);
+        setSaveNotice(
+          `বিক্রির স্থির কপি প্রস্তুত হচ্ছে: ${i + 1}/${sheets.length}`,
+        );
         await Promise.all(
           [...sheets[i].querySelectorAll("img")].map((img) => img.decode()),
         );
@@ -561,6 +669,7 @@ export default function ReadyStudio({
     explicitlySaved.current = "";
     setBusy(true);
     try {
+      await pendingAutoSave.current;
       if (adminPreset) {
         const r = await updateReadyPaper(paper.id, paper, edits);
         const notice = r.ok
@@ -618,9 +727,21 @@ export default function ReadyStudio({
     }
   }
   async function saveAndPreview() {
-    // Use the same render's snapshot and wait for the server-confirmed save.
-    // A failed checkout/save must never proceed to Preview or export.
-    if (await save()) await preview();
+    if (previewInFlight.current || busy) return;
+    if (replacementBox) {
+      setMessage(
+        "আগে নির্বাচিত অংশের লেখা প্রয়োগ করুন অথবা পরিবর্তন বাতিল করুন।",
+      );
+      return;
+    }
+    previewInFlight.current = true;
+    try {
+      // Use the same render's snapshot and wait for the server-confirmed save.
+      // A failed checkout/save must never proceed to Preview or export.
+      if (await save()) await preview();
+    } finally {
+      previewInFlight.current = false;
+    }
   }
   async function restore() {
     try {
@@ -729,7 +850,7 @@ export default function ReadyStudio({
           {message}
         </p>
       )}
-      {pages.length > 0 && (
+      {pages.length > 0 && step === "select" && (
         <div className="rp-toolbar rp-studio-actions" data-noprint>
           <button onClick={() => setStep("select")}>
             Page নির্বাচন ({selected.length})
@@ -755,82 +876,6 @@ export default function ReadyStudio({
           )}
         </div>
       )}
-      {step === "edit" && (
-        <section
-          className="rp-save-confirmation"
-          data-noprint
-          aria-label="প্রিন্টের আগে প্রশ্নপত্র সেভ"
-        >
-          <button disabled={busy || !selected.length} onClick={save}>
-            <Save size={16} />
-            {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
-          </button>
-          <button disabled={busy || !selected.length} onClick={saveAndPreview}>
-            <Printer size={16} /> সেভ করে Print Preview খুলুন
-          </button>
-          <p className="rp-muted">
-            বিক্রি করতে চাইলে Preview খোলার পরে “Marketplace-এ বিক্রির কপি প্রস্তুত
-            করুন” চাপুন।
-          </p>
-          <p role="status">
-            {saveNotice ||
-              "Print Preview খোলার আগে প্রশ্নপত্র সেভ করুন। পরিবর্তন করলে আবার সেভ করতে হবে।"}
-          </p>
-          <Link href="/question-builder/saved">সংরক্ষিত প্রশ্নপত্র দেখুন →</Link>
-        </section>
-      )}
-      <div className="rp-answer-tools" data-noprint>
-        {paid && receipt && !adminPreset && (
-          <AIAnswers
-            receiptId={receipt}
-            onJob={setAIJob}
-            onPrint={() => {
-              if (!requireSaved()) return;
-              setPrintKind("ai");
-              setStep("preview");
-            }}
-          />
-        )}
-        {pages.length > 0 && (
-          <AnswerAssistant
-            id={paper.id}
-            url={paper.url}
-            pages={pages}
-            selected={selected}
-            admin={adminPreset}
-            entries={entries}
-            onSaved={(entry) =>
-              setEntries((old) => [
-                ...old.filter((v) => v.questionPage !== entry.questionPage),
-                entry,
-              ])
-            }
-            onPrint={(kind) => {
-              if (!paid) {
-                setCheckout(true);
-                return;
-              }
-              if (!requireSaved()) return;
-              setPrintKind(kind);
-              setStep("preview");
-            }}
-          />
-        )}
-      </div>
-      {step === "edit" && paid && receipt && !adminPreset && (
-        <div className="rp-phone-answer" data-noprint>
-          <button
-            type="button"
-            onClick={() => {
-              if (!requireSaved()) return;
-              setPrintKind("ai");
-              setStep("preview");
-            }}
-          >
-            উত্তরপত্র দেখুন
-          </button>
-        </div>
-      )}
       {step === "select" && (
         <section data-noprint>
           <div className="rp-page-grid">
@@ -854,7 +899,9 @@ export default function ReadyStudio({
                         ),
                       )
                       .catch(() =>
-                        setMessage("বড় ছবি প্রস্তুত হয়নি। আবার খুলে চেষ্টা করুন।"),
+                        setMessage(
+                          "বড় ছবি প্রস্তুত হয়নি। আবার খুলে চেষ্টা করুন।",
+                        ),
                       );
                   }}
                 >
@@ -956,12 +1003,77 @@ export default function ReadyStudio({
               ))}
             </div>
             <details open>
+              <summary>Page Setup — ফন্ট ও মার্জিন</summary>
+              <label>
+                প্রশ্ন ও হেডারের ফন্ট
+                <select
+                  aria-label="প্রশ্ন ও হেডারের ফন্ট"
+                  value={headerSettings.cfg.font}
+                  onChange={(e) => {
+                    setHeaderSettings({
+                      ...headerSettings,
+                      cfg: {
+                        ...headerSettings.cfg,
+                        font: e.target.value as PaperFont,
+                      },
+                    });
+                    setPrintPages([]);
+                  }}
+                >
+                  {Object.entries(paperFontLabels).map(([key, label]) => (
+                    <option key={key} value={key}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <p className="rp-muted">
+                স্ক্যানের মূল ছবির ফন্ট বদলায় না; হেডার ও নতুন/বদলানো লেখায়
+                নির্বাচিত ফন্ট প্রযোজ্য।
+              </p>
+              <label>
+                পেজ মার্জিন
+                <select
+                  aria-label="পেজ মার্জিন"
+                  value={paperMarginMode(headerSettings.cfg)}
+                  onChange={(e) => {
+                    if (e.target.value === "custom") return;
+                    setHeaderSettings({
+                      ...headerSettings,
+                      cfg: {
+                        ...headerSettings.cfg,
+                        ...paperMarginPresets[
+                          e.target.value as "normal" | "narrow"
+                        ],
+                      },
+                    });
+                    setPrintPages([]);
+                  }}
+                >
+                  <option value="normal">Normal — সাধারণ</option>
+                  <option value="narrow">Narrow — কম মার্জিন</option>
+                  <option value="custom" disabled>
+                    Custom — নিজস্ব
+                  </option>
+                </select>
+              </label>
+              <button disabled={busy} onClick={save}>
+                <Save size={16} /> প্রশ্নপত্র সেভ করুন
+              </button>
+              {!adminPreset && (
+                <button disabled={busy} onClick={restore}>
+                  Saved draft খুলুন
+                </button>
+              )}
+              <Link href="/ready-papers/saved">আমার প্রশ্নপত্র ও প্যাকেজ</Link>
+            </details>
+            <details open>
               <summary>প্রথম selected page-এর Header</summary>
               {adminPreset && (
                 <p className="rp-muted">
                   Admin preset save শুধু page-এর image edits সংরক্ষণ করে। নিজের
-                  header account-এ রাখতে Header Manager-এর Save ব্যবহার করুন; এটি
-                  সবার PDF preset-এ যুক্ত হবে না।
+                  header account-এ রাখতে Header Manager-এর Save ব্যবহার করুন;
+                  এটি সবার PDF preset-এ যুক্ত হবে না।
                 </p>
               )}
               <label>
@@ -1016,7 +1128,12 @@ export default function ReadyStudio({
                     header নির্বাচন করুন; header শুধু প্রথম selected page-এ।
                   </p>
                   {headerSettings.header.enabled && (
-                    <div className="rp-custom-header-preview">
+                    <div
+                      className="rp-custom-header-preview"
+                      style={{
+                        fontFamily: paperFonts[headerSettings.cfg.font],
+                      }}
+                    >
                       <HeaderPreview header={currentHeader(headerSettings)} />
                     </div>
                   )}
@@ -1092,9 +1209,9 @@ export default function ReadyStudio({
                   : "নীল watermark কমিয়ে দেখুন"}
               </button>
               <p className="rp-muted">
-                শুধু অনুমতিপ্রাপ্ত PDF-এ ব্যবহার করুন। নীল diagram/লেখাও হালকা হতে
-                পারে; Original-এর সঙ্গে মিলিয়ে প্রশ্ন, অপশন ও টেবিল যাচাই করুন।
-                কালো/ধূসর watermark বা হারানো লেখা উদ্ধার করে না।
+                শুধু অনুমতিপ্রাপ্ত PDF-এ ব্যবহার করুন। নীল diagram/লেখাও হালকা
+                হতে পারে; Original-এর সঙ্গে মিলিয়ে প্রশ্ন, অপশন ও টেবিল যাচাই
+                করুন। কালো/ধূসর watermark বা হারানো লেখা উদ্ধার করে না।
               </p>
             </fieldset>
             <label>
@@ -1171,27 +1288,91 @@ export default function ReadyStudio({
                 </label>
               ))}
             </div>
-            <label>
-              নতুন লেখা
-              <input
-                value={text}
-                maxLength={500}
-                onChange={(e) => setText(e.target.value)}
-              />
-            </label>
-            <label>
-              Font size
-              <input
-                type="number"
-                min={10}
-                max={60}
-                value={size}
-                onChange={(e) =>
-                  setSize(Math.min(60, Math.max(10, +e.target.value)))
-                }
-              />
-            </label>
+            <ReadyTextEditor
+              text={text}
+              onText={setText}
+              size={size}
+              onSize={setSize}
+              font={headerSettings.cfg.font}
+              onFont={(font) => {
+                setHeaderSettings({
+                  ...headerSettings,
+                  cfg: { ...headerSettings.cfg, font },
+                });
+                setPrintPages([]);
+              }}
+              style={textStyle}
+              onStyle={setTextStyle}
+            />
+            {replacementBox && (
+              <div className="rp-region-editor" data-noprint>
+                <p>
+                  নির্বাচিত অংশের প্রশ্ন, উদ্দীপক, অপশন ও উপপ্রশ্ন একসঙ্গে লিখতে
+                  পারেন। চিত্র থাকলে ঢাকার আগে যাচাই করুন। মূল PDF অপরিবর্তিত
+                  থাকবে।
+                </p>
+                <button disabled={ocrBusy || busy} onClick={readRegion}>
+                  {ocrBusy ? "লেখা পড়ছি…" : "এই অংশের লেখা পড়ুন (OCR)"}
+                </button>
+                {ocrBusy && (
+                  <button onClick={() => ocrAbort.current?.abort()}>
+                    পড়া বাতিল
+                  </button>
+                )}
+                <button
+                  disabled={ocrBusy || busy || !text.trim()}
+                  onClick={applyReplacement}
+                >
+                  যাচাই করে লেখা প্রয়োগ করুন
+                </button>
+                <button
+                  onClick={() => {
+                    ocrAbort.current?.abort();
+                    setReplacementBox(null);
+                    setEditingText(null);
+                  }}
+                >
+                  পরিবর্তন বাতিল
+                </button>
+              </div>
+            )}
+            {edit.texts.length > 0 && (
+              <details>
+                <summary>যোগ করা লেখা Edit করুন</summary>
+                {edit.texts.map((t, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      setEditingText(index);
+                      setReplacementBox({
+                        x: t.x,
+                        y: t.y,
+                        w: t.w ?? 1 - t.x,
+                        h: t.h ?? Math.max(0.01, 1 - t.y),
+                      });
+                      setText(t.text);
+                      setSize(t.size);
+                      setTextStyle(t.style || {});
+                    }}
+                  >
+                    {index + 1}. {t.text.slice(0, 45)}
+                  </button>
+                ))}
+              </details>
+            )}
             <div className="rp-toolbar">
+              <button
+                className={tool === "replace" ? "active" : ""}
+                onClick={() => {
+                  setTool("replace");
+                  setOriginal(false);
+                  setMessage(
+                    "Edit: প্রশ্নের পুরো অংশ ঘিরে বক্স টানুন; তারপর লেখা পড়ে বা লিখে যাচাই করে প্রয়োগ করুন।",
+                  );
+                }}
+              >
+                প্রশ্নের লেখা Edit
+              </button>
               <button
                 className={tool === "view" ? "active" : ""}
                 onClick={() => setTool("view")}
@@ -1220,8 +1401,8 @@ export default function ReadyStudio({
               </button>
             </div>
             <p className="rp-muted">
-              ঢাকতে page-এ box টানুন; লেখা বসাতে tap করুন। এটি image edit—মূল PDF
-              থেকে তথ্য স্থায়ীভাবে মুছে যায় না।
+              ঢাকতে page-এ box টানুন; লেখা বসাতে tap করুন। এটি image edit—মূল
+              PDF থেকে তথ্য স্থায়ীভাবে মুছে যায় না।
             </p>
             <div className="rp-toolbar">
               <button onClick={() => history(true)}>
@@ -1244,10 +1425,10 @@ export default function ReadyStudio({
             <button
               className="rp-action-print"
               disabled={busy}
-              onClick={preview}
+              onClick={saveAndPreview}
             >
               <Printer size={16} />
-              Print preview
+              Save &amp; Print Preview
             </button>
           </aside>
           <section className="rp-canvas-panel">
@@ -1280,9 +1461,9 @@ export default function ReadyStudio({
               <button
                 className="rp-action-print"
                 disabled={busy}
-                onClick={preview}
+                onClick={saveAndPreview}
               >
-                Print preview
+                Save &amp; Print Preview
               </button>
               <button onClick={() => setOriginal((v) => !v)}>
                 {original ? "Edited দেখুন" : "Original দেখুন"}
@@ -1323,7 +1504,7 @@ export default function ReadyStudio({
                 </p>
               )}
               <PrintFrame>
-                <article className="rp-print-sheet">
+                <article className="rp-print-sheet" style={sheetStyle}>
                   {renderPageHeader(active === selected[0])}
                   {liveReview && liveReviewPage === active ? (
                     <PlacedQuestion
@@ -1356,8 +1537,8 @@ export default function ReadyStudio({
               </PrintFrame>
             </section>
             <p className="rp-muted">
-              মূল scan-এর resolution-ই print-এর সীমা। ক্ষুদ্র punctuation ও table
-              line দেখে clean mode বাছুন। Rotation করলে overlay reset হয়।
+              মূল scan-এর resolution-ই print-এর সীমা। ক্ষুদ্র punctuation ও
+              table line দেখে clean mode বাছুন। Rotation করলে overlay reset হয়।
             </p>
           </section>
         </div>
@@ -1476,14 +1657,15 @@ export default function ReadyStudio({
               <p className="rp-muted">
                 Border-এর ভেতরে ধরে সরান; চার কোণা বা পাশের handle ধরে টেনে আকার
                 ঠিক করুন। পুরো fit-এ সরানোর জায়গা না থাকলে “ছোট করে সরানোর জায়গা
-                করুন” চাপুন। অবস্থান সম্পাদনা চালু থাকলে মোবাইলে দুই আঙুলে pinch করে
-                আকার, এক আঙুলে অবস্থান; কম্পিউটারে mouse wheel-এ আকার ও বাম
+                করুন” চাপুন। অবস্থান সম্পাদনা চালু থাকলে মোবাইলে দুই আঙুলে pinch
+                করে আকার, এক আঙুলে অবস্থান; কম্পিউটারে mouse wheel-এ আকার ও বাম
                 click-drag-এ অবস্থান ঠিক করুন। Ctrl/⌘ + wheel ব্রাউজারের zoom-এর
-                জন্য। সর্বোচ্চ fit-এ পৌঁছালে আর বড় হবে না। Auto Fit হেডারের নিচের
-                জায়গায় অনুপাত ঠিক রেখে সর্বোচ্চ আকারে বসায়। ছবির ভেতরের সাদা জায়গা
-                আগে Crop করুন। অবস্থান বদলাতে ফাঁকা জায়গা থাকতে হবে; পুরো জায়গা ভরে
-                গেলে সেই দিকে সরবে না। Margin ও header অপরিবর্তিত; লেখা কাটা হবে
-                না। Preview zoom শুধু স্ক্রিনে দেখার জন্য।
+                জন্য। সর্বোচ্চ fit-এ পৌঁছালে আর বড় হবে না। Auto Fit হেডারের
+                নিচের জায়গায় অনুপাত ঠিক রেখে সর্বোচ্চ আকারে বসায়। ছবির ভেতরের
+                সাদা জায়গা আগে Crop করুন। অবস্থান বদলাতে ফাঁকা জায়গা থাকতে হবে;
+                পুরো জায়গা ভরে গেলে সেই দিকে সরবে না। Margin ও header
+                অপরিবর্তিত; লেখা কাটা হবে না। Preview zoom শুধু স্ক্রিনে দেখার
+                জন্য।
               </p>
             </section>
           )}
@@ -1493,7 +1675,8 @@ export default function ReadyStudio({
             aria-label="প্রশ্নপত্র সংরক্ষণ"
           >
             <button disabled={busy || !selected.length} onClick={save}>
-              <Save size={16} /> {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
+              <Save size={16} />{" "}
+              {busy ? "অপেক্ষা করুন…" : "প্রশ্নপত্র সেভ করুন"}
             </button>
             {paid && receipt && printKind === "questions" && (
               <button disabled={busy} onClick={prepareMarketCopy}>
@@ -1501,7 +1684,9 @@ export default function ReadyStudio({
               </button>
             )}
             <p role="status">{saveNotice}</p>
-            <Link href="/question-builder/saved">সংরক্ষিত প্রশ্নপত্র দেখুন →</Link>
+            <Link href="/question-builder/saved">
+              সংরক্ষিত প্রশ্নপত্র দেখুন →
+            </Link>
           </section>
           <PrintFrame
             mobileActions={
@@ -1540,28 +1725,22 @@ export default function ReadyStudio({
             }
           >
             <section id="ready-print">
-              {printKind === "ai" ? (
-                <AIAnswerSheets job={aiJob} selected={selected} />
-              ) : printKind !== "questions" ? (
-                <AnswerSheets
-                  selected={selected}
-                  entries={entries}
-                  blank={printKind === "blank"}
-                />
-              ) : (
-                printPages.map((src, i) => (
-                  <article className="rp-print-sheet" key={selected[i]}>
-                    {renderPageHeader(i === 0)}
-                    <PlacedQuestion
-                      src={src}
-                      page={selected[i]}
-                      value={edits[selected[i]] || freshEdit()}
-                      movable={placementMode}
-                      onChange={(value) => placePage(selected[i], value)}
-                    />
-                  </article>
-                ))
-              )}
+              {printPages.map((src, i) => (
+                <article
+                  className="rp-print-sheet"
+                  style={sheetStyle}
+                  key={selected[i]}
+                >
+                  {renderPageHeader(i === 0)}
+                  <PlacedQuestion
+                    src={src}
+                    page={selected[i]}
+                    value={edits[selected[i]] || freshEdit()}
+                    movable={placementMode}
+                    onChange={(value) => placePage(selected[i], value)}
+                  />
+                </article>
+              ))}
             </section>
           </PrintFrame>
         </>
@@ -1579,6 +1758,8 @@ export default function ReadyStudio({
               const c = await renderEdited(
                 await qualityPage(n),
                 edits[n] || freshEdit(),
+                true,
+                headerSettings.cfg.font,
               );
               c.width = c.height = 0;
             }
@@ -1593,13 +1774,14 @@ export default function ReadyStudio({
             setHeaderSettings(saved.snapshot.headerSettings);
             setHeaderLine(saved.snapshot.headerLine);
             setHeaderGap(saved.snapshot.headerGap);
-            setEntries(saved.answers);
             setReceipt(id);
             setPaidSelection(readySelectionIdentity(selected));
             setCheckout(false);
             setActive(selected[0]);
             setStep("edit");
-            setMessage("প্রশ্নপত্র ও সংশ্লিষ্ট উত্তরপত্র অ্যাকাউন্টে সংরক্ষিত।");
+            setMessage(
+              "প্রশ্নপত্র ও সংশ্লিষ্ট উত্তরপত্র অ্যাকাউন্টে সংরক্ষিত।",
+            );
           }}
         />
       )}

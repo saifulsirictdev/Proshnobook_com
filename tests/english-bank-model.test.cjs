@@ -151,7 +151,7 @@ test('Bulk approval is confirmed ADMIN-only, snapshot-bound, scope checked and p
 test('Grade scope preserves shared catalogs but separates exact grades and never relabels Class 6 stock',()=>{
  const scope=require('../lib/english/admin-scope.ts'),registry=require('../lib/english/prepared-items.ts');
  assert.deepEqual(scope.englishCategoryGrades('Class 9'),[9,10]);assert.deepEqual(scope.englishCategoryGrades('Class 11-12'),[11,12]);assert.deepEqual(scope.englishCategoryGrades('Class 7'),[7]);
- for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade!==6 && grade!==10)assert.deepEqual(registry.preparedEnglishItems(grade),[]);}
+ for(const grade of scope.englishFirstGrades){assert.equal(scope.englishAdminGrade(String(grade)),grade);assert.ok(scope.englishAdminHref(grade).includes(`grade=${grade}`));if(grade===9)assert.deepEqual(registry.preparedEnglishItems(grade),[]);else assert.ok(registry.preparedEnglishItems(grade).every(p=>p.draft.selection.grade===grade));}
  for(const raw of [5,13,'bad',''])assert.equal(scope.englishAdminGrade(raw),null);
  assert.ok(registry.preparedEnglishItems(6).length>40);assert.notEqual(registry.englishItemsDigest(7),registry.englishItemsDigest(8));
 });
@@ -171,7 +171,7 @@ test('Original builder adapter preserves linked English passages, structured tab
 });
 test('English build route uses the original builder, isolates general storage and retains owned draft checks',()=>{
  const page=fs.readFileSync('app/question-builder/build/page.tsx','utf8');assert.match(page,/<EnglishLegacyBuilder/);assert.doesNotMatch(page,/<EnglishEditor/);
- const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder english=/);assert.match(wrapper,/saveEnglishPaper\(draftKey/);
+ const wrapper=fs.readFileSync('components/english-legacy-builder.tsx','utf8');assert.match(wrapper,/<QbBuilder\s+english=/);assert.match(wrapper,/saveEnglishPaper\(\s*draftKey/);
  const builder=fs.readFileSync('components/qb-builder.tsx','utf8');assert.match(builder,/if \(!ready \|\| purchased \|\| english\) return/);assert.match(builder,/loadEnglishPaper\(english.key\)/);assert.match(builder,/!purchased && !english && <WalletCheckout/);
 });
 test('Legacy English adaptation stays server-side so node crypto cannot enter the browser bundle',()=>{
@@ -773,4 +773,48 @@ test('Literary variants explicitly retain four new and four reused foundations, 
  assert.equal(newlyWorded,256);assert.equal(reused,256);
  const items=require('../lib/english/prepared-ssc-literature-variants.ts').preparedSSCLiteratureVariantItems();
  for(const item of items)assert.match(item.draft.output.tasks[0].instruction,/four new questions and four reused foundation questions; not a new work/);
+});
+test('SSC auto second paper assembles a full 100-mark owned model from approved stock with non-default writing topics, without AI',async()=>{
+ const {preparedEnglishItems}=require('../lib/english/prepared-items.ts');
+ for(const grade of [9,10]){
+  const rows=preparedEnglishItems(grade,2).map(p=>({key:p.key,value:JSON.stringify({status:'APPROVED',draft:p.draft,review:p.review})})).sort((a,b)=>a.key.localeCompare(b.key));
+  const saves=[];let providerCalls=0;
+  const auth={auth:async()=>({user:{id:'teacher-auto',role:'TEACHER'}})};
+  const bankAction=load('app/actions/english-bank-model.ts',{'@/auth':auth,'@/lib/db':{db:{setting:{
+   findMany:async({where})=>rows.filter(r=>r.key.startsWith(where.key.startsWith)&&(!where.key.gt||r.key>where.key.gt)).slice(0,100),
+   create:async({data})=>{saves.push(data);},
+  }}}});
+  const auto=load('app/actions/english-auto-model.ts',{'@/auth':auth,'./english-bank-model':bankAction,'./english-model-sources':{loadEnglishModelSources:async()=>{throw Error('No source lookup needed');}},'./english-paper':{generateEnglishPaper:async()=>{providerCalls++;throw Error('Must not invoke AI');}}});
+  const result=await auto.prepareEnglishFullModel({grade,paper:2});assert.equal(result.ok,true);assert.equal(providerCalls,0);assert.equal(saves.length,1);assert.match(result.key,/^englishpaper:teacher-auto:/);
+  const draft=JSON.parse(saves[0].value),validated=require('../lib/english/generation.ts').validateEnglishOutput(draft.selection,draft.output);
+  assert.equal(validated.total,100);assert.equal(validated.tasks.length,12);assert.equal(draft.selection.grade,grade);assert.equal(draft.selection.paper,2);
+  for(const task of draft.output.tasks.filter(t=>['paragraph','letter-email','composition'].includes(t.id)))assert.ok(task.instruction.includes(draft.selection.writing[task.id].topic));
+  assert.deepEqual(validated.tasks.map(t=>t.marks),[10,5,10,10,5,5,5,5,5,10,10,20]);
+ }
+});
+test('SSC admin category is SSC for both grades and old Class 9/10 URLs remain compatible without changing bank records',()=>{
+ const scope=require('../lib/english/admin-scope.ts');
+ for(const alias of ['SSC','Class 9','Class 10','Class 9-10','9','10','9-10']){assert.equal(scope.englishCategoryLabel(alias),'SSC');assert.deepEqual(scope.englishCategoryGrades(alias),[9,10]);}
+ for(const grade of [9,10]){const u=new URL(scope.englishAdminHref(grade,false,2),'https://example.invalid');assert.equal(u.searchParams.get('category'),'SSC');assert.equal(u.searchParams.get('grade'),String(grade));assert.equal(u.searchParams.get('status'),'pending');}
+ const page=fs.readFileSync('app/admin/questions/page.tsx','utf8');assert.match(page,/englishCategoryLabel\(typeof params.category/);assert.match(page,/category === "SSC"/);
+ const library=fs.readFileSync('app/admin/questions/import/prepared-library.tsx','utf8');assert.match(library,/englishCategoryLabel\(initialCategory/);assert.match(library,/value=\{c.category\}>\{englishCategoryLabel\(c.category\)\}/);
+});
+test('incomplete auto model carries source/writing signatures so the gap engine requests only absent stock',async()=>{
+ const items=require('../lib/english/item-bank.ts'),{fullModelWriting}=require('../lib/english/builder-mode.ts'),{findEnglishBankParts}=require('../lib/english/bank.ts');
+ const groups=items.englishItemGroups(prepared.draft),omit=groups.find(g=>!Object.keys(g.draft.selection.sources).length&&Object.keys(g.draft.selection.writing).length);assert.ok(omit);
+ const stock=groups.filter(g=>g!==omit),assembly=items.assembleEnglishItems(stock.map(g=>g.draft),6,()=>0);assert.equal(assembly.draft,null);assert.ok(assembly.reuse);assert.deepEqual(assembly.missing,omit.draft.selection.itemIds);
+ const request={grade:6,paper:1,mode:'full',itemIds:[],sources:assembly.reuse.sources,writing:{...fullModelWriting(6,1),...assembly.reuse.writing},includeAnswers:true};
+ const parts=await findEnglishBankParts(request,async(_after,prefix)=>prefix==='english-item:v1:'?stock.map(g=>({key:g.key,value:record('APPROVED',g.draft)})):[]);
+ assert.deepEqual(parts.missingIds,assembly.missing);assert.equal(parts.output.tasks.length,prepared.draft.output.tasks.length-assembly.missing.length);assert.deepEqual(new Set(parts.output.tasks.map(t=>t.id)),new Set(stock.flatMap(g=>g.draft.output.tasks.map(t=>t.id))));
+});
+
+test('source-filter shortage still reports complete whole-book stock without writing a draft',async()=>{
+ const registry=require('../lib/english/prepared-items.ts');
+ const stock=registry.preparedEnglishItems(10).map(i=>i.draft);
+ const items=require('../lib/english/item-bank.ts');
+ assert.ok(items.assembleEnglishItems(stock,10,()=>0.5).draft);
+ assert.equal(items.assembleEnglishItems(stock,10,()=>0.5,undefined,{examYear:2099}).draft,null);
+ const records=stock.map((draft,i)=>({key:'english-item:v1:'+i,value:record('APPROVED',draft)}));
+ const h=harness(records);
+ const r=await h.run(10,undefined,{examYear:2099},1);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.equal(h.writes.length,0);
 });

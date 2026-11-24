@@ -1,0 +1,2133 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৬শ অধ্যায়: পরিমিতি",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 16 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণের দৈর্ঘ্য $6\\sqrt2$ মিটার হলে ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/source-cumilla-8.svg)",
+      "options": {
+        "A": "$36$",
+        "B": "$24$",
+        "C": "$18$",
+        "D": "$6$"
+      },
+      "correct": "A",
+      "explanation": "বাহু $=6\\sqrt2/\\sqrt2=6$ মিটার; ক্ষেত্রফল $6^2=36$ বর্গমিটার।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 8",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "8"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "3 সেমি ধারবিশিষ্ট ঘনকের জন্য— i. আয়তন 27 ঘনসেমি; ii. দেহকর্ণের দৈর্ঘ্য $3\\sqrt3$ সেমি; iii. সমগ্র পৃষ্ঠের ক্ষেত্রফল 54 বর্গসেমি। কোন বিবৃতিগুলো সঠিক?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/source-rajshahi-5.svg)",
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D",
+      "explanation": "$V=a^3=27$; দেহকর্ণ $a\\sqrt3=3\\sqrt3$; পৃষ্ঠতল $6a^2=54$। তিনটিই সঠিক।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 5",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "5"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 3 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-1.svg)",
+      "explanation": "$V=a^3=27$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$\\frac{27}{2}$",
+        "C": "$28$",
+        "D": "$27$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 9, প্রস্থ 6, উচ্চতা 3 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-1.svg)",
+      "explanation": "$V=lwh=162$। সঠিক উত্তর $162$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$163$",
+        "B": "$162$",
+        "C": "$324$",
+        "D": "$81$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 3 এবং উচ্চতা 9 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-1.svg)",
+      "explanation": "$V=\\pi r^2h=81 \\pi$। সঠিক উত্তর $81 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$162 \\pi$",
+        "B": "$\\frac{81 \\pi}{2}$",
+        "C": "$1 + 81 \\pi$",
+        "D": "$81 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 9, উচ্চতা 12 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-1.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=324 \\pi$। সঠিক উত্তর $324 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648 \\pi$",
+        "B": "$162 \\pi$",
+        "C": "$1 + 324 \\pi$",
+        "D": "$324 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 3 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-1.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=36 \\pi$। সঠিক উত্তর $36 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 36 \\pi$",
+        "B": "$36 \\pi$",
+        "C": "$72 \\pi$",
+        "D": "$18 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 3 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-1.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=18 \\pi$। সঠিক উত্তর $18 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 18 \\pi$",
+        "B": "$18 \\pi$",
+        "C": "$36 \\pi$",
+        "D": "$9 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 6 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-1.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=9 \\sqrt{3}$। সঠিক উত্তর $9 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9 \\sqrt{3}$",
+        "B": "$18 \\sqrt{3}$",
+        "C": "$\\frac{9 \\sqrt{3}}{2}$",
+        "D": "$1 + 9 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 39, 42, 45 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-1.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(63)(24)(21)(18)}=756$। সঠিক উত্তর $756$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$378$",
+        "B": "$757$",
+        "C": "$756$",
+        "D": "$1512$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 9, ভিতরের ব্যাসার্ধ 3 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-1.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(9)^2-3^2]=72 \\pi$। সঠিক উত্তর $72 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72 \\pi$",
+        "B": "$144 \\pi$",
+        "C": "$36 \\pi$",
+        "D": "$1 + 72 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 3 ও উচ্চতা 6 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-1.svg)",
+      "explanation": "$V=\\pi r^2(6)+\\frac23\\pi r^3=72 \\pi$। সঠিক উত্তর $72 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72 \\pi$",
+        "B": "$144 \\pi$",
+        "C": "$36 \\pi$",
+        "D": "$1 + 72 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "18 মিটার দৈর্ঘ্য ও 12 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 3 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-1.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 216, ভিতরের মাপ 12×6, ক্ষেত্রফল 72। পার্থক্য 144। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$144$",
+        "C": "$288$",
+        "D": "$72$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $3 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-1.svg)",
+      "explanation": "$A=d^2/2=[(3 \\sqrt{2})^2]/2=9$। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$18$",
+        "C": "$\\frac{9}{2}$",
+        "D": "$10$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 15 ও 9 সেমি; লম্ব উচ্চতা 6 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-1.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(24)(6)=72$। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$73$",
+        "C": "$72$",
+        "D": "$144$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 18 ও 24 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-1.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(18)(24)=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$108$",
+        "B": "$217$",
+        "C": "$216$",
+        "D": "$432$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 3 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-1.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=\\frac{9 \\pi}{4}$। সঠিক উত্তর $\\frac{9 \\pi}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{9 \\pi}{4}$",
+        "B": "$\\frac{9 \\pi}{4}$",
+        "C": "$\\frac{9 \\pi}{2}$",
+        "D": "$\\frac{9 \\pi}{8}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 4 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-2.svg)",
+      "explanation": "$V=a^3=64$। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$65$",
+        "C": "$64$",
+        "D": "$128$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 12, প্রস্থ 8, উচ্চতা 4 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-2.svg)",
+      "explanation": "$V=lwh=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$384$",
+        "B": "$768$",
+        "C": "$192$",
+        "D": "$385$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 4 এবং উচ্চতা 12 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-2.svg)",
+      "explanation": "$V=\\pi r^2h=192 \\pi$। সঠিক উত্তর $192 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$96 \\pi$",
+        "B": "$1 + 192 \\pi$",
+        "C": "$192 \\pi$",
+        "D": "$384 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 12, উচ্চতা 16 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-2.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=768 \\pi$। সঠিক উত্তর $768 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$384 \\pi$",
+        "B": "$1 + 768 \\pi$",
+        "C": "$768 \\pi$",
+        "D": "$1536 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 4 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-2.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{256 \\pi}{3}$। সঠিক উত্তর $\\frac{256 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{256 \\pi}{3}$",
+        "B": "$\\frac{512 \\pi}{3}$",
+        "C": "$\\frac{128 \\pi}{3}$",
+        "D": "$1 + \\frac{256 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 4 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-2.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{128 \\pi}{3}$। সঠিক উত্তর $\\frac{128 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{128 \\pi}{3}$",
+        "B": "$\\frac{256 \\pi}{3}$",
+        "C": "$\\frac{64 \\pi}{3}$",
+        "D": "$1 + \\frac{128 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 8 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-2.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=16 \\sqrt{3}$। সঠিক উত্তর $16 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32 \\sqrt{3}$",
+        "B": "$8 \\sqrt{3}$",
+        "C": "$1 + 16 \\sqrt{3}$",
+        "D": "$16 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 52, 56, 60 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-2.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(84)(32)(28)(24)}=1344$। সঠিক উত্তর $1344$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1345$",
+        "B": "$1344$",
+        "C": "$2688$",
+        "D": "$672$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 12, ভিতরের ব্যাসার্ধ 4 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-2.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(12)^2-4^2]=128 \\pi$। সঠিক উত্তর $128 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256 \\pi$",
+        "B": "$64 \\pi$",
+        "C": "$1 + 128 \\pi$",
+        "D": "$128 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 4 ও উচ্চতা 8 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-2.svg)",
+      "explanation": "$V=\\pi r^2(8)+\\frac23\\pi r^3=\\frac{512 \\pi}{3}$। সঠিক উত্তর $\\frac{512 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1024 \\pi}{3}$",
+        "B": "$\\frac{256 \\pi}{3}$",
+        "C": "$1 + \\frac{512 \\pi}{3}$",
+        "D": "$\\frac{512 \\pi}{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "24 মিটার দৈর্ঘ্য ও 16 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 4 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-2.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 384, ভিতরের মাপ 16×8, ক্ষেত্রফল 128। পার্থক্য 256। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $256$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$512$",
+        "C": "$128$",
+        "D": "$257$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $4 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-2.svg)",
+      "explanation": "$A=d^2/2=[(4 \\sqrt{2})^2]/2=16$। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$32$",
+        "B": "$8$",
+        "C": "$17$",
+        "D": "$16$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 20 ও 12 সেমি; লম্ব উচ্চতা 8 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-2.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(32)(8)=128$। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$129$",
+        "B": "$128$",
+        "C": "$256$",
+        "D": "$64$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 24 ও 32 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-2.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(24)(32)=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$385$",
+        "B": "$384$",
+        "C": "$768$",
+        "D": "$192$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 4 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-2.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=4 \\pi$। সঠিক উত্তর $4 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4 \\pi$",
+        "B": "$8 \\pi$",
+        "C": "$2 \\pi$",
+        "D": "$1 + 4 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 5 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-3.svg)",
+      "explanation": "$V=a^3=125$। সঠিক উত্তর $125$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$126$",
+        "B": "$125$",
+        "C": "$250$",
+        "D": "$\\frac{125}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 15, প্রস্থ 10, উচ্চতা 5 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-3.svg)",
+      "explanation": "$V=lwh=750$। সঠিক উত্তর $750$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1500$",
+        "B": "$375$",
+        "C": "$751$",
+        "D": "$750$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 5 এবং উচ্চতা 15 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-3.svg)",
+      "explanation": "$V=\\pi r^2h=375 \\pi$। সঠিক উত্তর $375 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 375 \\pi$",
+        "B": "$375 \\pi$",
+        "C": "$750 \\pi$",
+        "D": "$\\frac{375 \\pi}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 15, উচ্চতা 20 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-3.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=1500 \\pi$। সঠিক উত্তর $1500 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 1500 \\pi$",
+        "B": "$1500 \\pi$",
+        "C": "$3000 \\pi$",
+        "D": "$750 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 5 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-3.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{500 \\pi}{3}$। সঠিক উত্তর $\\frac{500 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1000 \\pi}{3}$",
+        "B": "$\\frac{250 \\pi}{3}$",
+        "C": "$1 + \\frac{500 \\pi}{3}$",
+        "D": "$\\frac{500 \\pi}{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 5 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-3.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{250 \\pi}{3}$। সঠিক উত্তর $\\frac{250 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{500 \\pi}{3}$",
+        "B": "$\\frac{125 \\pi}{3}$",
+        "C": "$1 + \\frac{250 \\pi}{3}$",
+        "D": "$\\frac{250 \\pi}{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 10 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-3.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=25 \\sqrt{3}$। সঠিক উত্তর $25 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25 \\sqrt{3}}{2}$",
+        "B": "$1 + 25 \\sqrt{3}$",
+        "C": "$25 \\sqrt{3}$",
+        "D": "$50 \\sqrt{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 65, 70, 75 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-3.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(105)(40)(35)(30)}=2100$। সঠিক উত্তর $2100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2100$",
+        "B": "$4200$",
+        "C": "$1050$",
+        "D": "$2101$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 15, ভিতরের ব্যাসার্ধ 5 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-3.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(15)^2-5^2]=200 \\pi$। সঠিক উত্তর $200 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$100 \\pi$",
+        "B": "$1 + 200 \\pi$",
+        "C": "$200 \\pi$",
+        "D": "$400 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 5 ও উচ্চতা 10 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-3.svg)",
+      "explanation": "$V=\\pi r^2(10)+\\frac23\\pi r^3=\\frac{1000 \\pi}{3}$। সঠিক উত্তর $\\frac{1000 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{500 \\pi}{3}$",
+        "B": "$1 + \\frac{1000 \\pi}{3}$",
+        "C": "$\\frac{1000 \\pi}{3}$",
+        "D": "$\\frac{2000 \\pi}{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "30 মিটার দৈর্ঘ্য ও 20 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 5 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-3.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 600, ভিতরের মাপ 20×10, ক্ষেত্রফল 200। পার্থক্য 400। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$800$",
+        "B": "$200$",
+        "C": "$401$",
+        "D": "$400$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $5 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-3.svg)",
+      "explanation": "$A=d^2/2=[(5 \\sqrt{2})^2]/2=25$। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25}{2}$",
+        "B": "$26$",
+        "C": "$25$",
+        "D": "$50$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 25 ও 15 সেমি; লম্ব উচ্চতা 10 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-3.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(40)(10)=200$। সঠিক উত্তর $200$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$200$",
+        "B": "$400$",
+        "C": "$100$",
+        "D": "$201$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 30 ও 40 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-3.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(30)(40)=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$600$",
+        "B": "$1200$",
+        "C": "$300$",
+        "D": "$601$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 5 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-3.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=\\frac{25 \\pi}{4}$। সঠিক উত্তর $\\frac{25 \\pi}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25 \\pi}{2}$",
+        "B": "$\\frac{25 \\pi}{8}$",
+        "C": "$1 + \\frac{25 \\pi}{4}$",
+        "D": "$\\frac{25 \\pi}{4}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 6 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-4.svg)",
+      "explanation": "$V=a^3=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$216$",
+        "B": "$432$",
+        "C": "$108$",
+        "D": "$217$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 18, প্রস্থ 12, উচ্চতা 6 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-4.svg)",
+      "explanation": "$V=lwh=1296$। সঠিক উত্তর $1296$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648$",
+        "B": "$1297$",
+        "C": "$1296$",
+        "D": "$2592$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 6 এবং উচ্চতা 18 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-4.svg)",
+      "explanation": "$V=\\pi r^2h=648 \\pi$। সঠিক উত্তর $648 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648 \\pi$",
+        "B": "$1296 \\pi$",
+        "C": "$324 \\pi$",
+        "D": "$1 + 648 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 18, উচ্চতা 24 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-4.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=2592 \\pi$। সঠিক উত্তর $2592 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2592 \\pi$",
+        "B": "$5184 \\pi$",
+        "C": "$1296 \\pi$",
+        "D": "$1 + 2592 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 6 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-4.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=288 \\pi$। সঠিক উত্তর $288 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$144 \\pi$",
+        "B": "$1 + 288 \\pi$",
+        "C": "$288 \\pi$",
+        "D": "$576 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 6 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-4.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=144 \\pi$। সঠিক উত্তর $144 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72 \\pi$",
+        "B": "$1 + 144 \\pi$",
+        "C": "$144 \\pi$",
+        "D": "$288 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 12 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-4.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=36 \\sqrt{3}$। সঠিক উত্তর $36 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 36 \\sqrt{3}$",
+        "B": "$36 \\sqrt{3}$",
+        "C": "$72 \\sqrt{3}$",
+        "D": "$18 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 78, 84, 90 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-4.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(126)(48)(42)(36)}=3024$। সঠিক উত্তর $3024$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6048$",
+        "B": "$1512$",
+        "C": "$3025$",
+        "D": "$3024$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 18, ভিতরের ব্যাসার্ধ 6 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-4.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(18)^2-6^2]=288 \\pi$। সঠিক উত্তর $288 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 288 \\pi$",
+        "B": "$288 \\pi$",
+        "C": "$576 \\pi$",
+        "D": "$144 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 6 ও উচ্চতা 12 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-4.svg)",
+      "explanation": "$V=\\pi r^2(12)+\\frac23\\pi r^3=576 \\pi$। সঠিক উত্তর $576 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 576 \\pi$",
+        "B": "$576 \\pi$",
+        "C": "$1152 \\pi$",
+        "D": "$288 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "36 মিটার দৈর্ঘ্য ও 24 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 6 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-4.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 864, ভিতরের মাপ 24×12, ক্ষেত্রফল 288। পার্থক্য 576। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $576$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$288$",
+        "B": "$577$",
+        "C": "$576$",
+        "D": "$1152$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $6 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-4.svg)",
+      "explanation": "$A=d^2/2=[(6 \\sqrt{2})^2]/2=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 30 ও 18 সেমি; লম্ব উচ্চতা 12 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-4.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(48)(12)=288$। সঠিক উত্তর $288$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$576$",
+        "B": "$144$",
+        "C": "$289$",
+        "D": "$288$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 36 ও 48 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-4.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(36)(48)=864$। সঠিক উত্তর $864$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1728$",
+        "B": "$432$",
+        "C": "$865$",
+        "D": "$864$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 6 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-4.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=9 \\pi$। সঠিক উত্তর $9 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{9 \\pi}{2}$",
+        "B": "$1 + 9 \\pi$",
+        "C": "$9 \\pi$",
+        "D": "$18 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 7 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-5.svg)",
+      "explanation": "$V=a^3=343$। সঠিক উত্তর $343$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$686$",
+        "B": "$\\frac{343}{2}$",
+        "C": "$344$",
+        "D": "$343$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 21, প্রস্থ 14, উচ্চতা 7 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-5.svg)",
+      "explanation": "$V=lwh=2058$। সঠিক উত্তর $2058$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2059$",
+        "B": "$2058$",
+        "C": "$4116$",
+        "D": "$1029$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 7 এবং উচ্চতা 21 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-5.svg)",
+      "explanation": "$V=\\pi r^2h=1029 \\pi$। সঠিক উত্তর $1029 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2058 \\pi$",
+        "B": "$\\frac{1029 \\pi}{2}$",
+        "C": "$1 + 1029 \\pi$",
+        "D": "$1029 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 21, উচ্চতা 28 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-5.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=4116 \\pi$। সঠিক উত্তর $4116 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8232 \\pi$",
+        "B": "$2058 \\pi$",
+        "C": "$1 + 4116 \\pi$",
+        "D": "$4116 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 7 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-5.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{1372 \\pi}{3}$। সঠিক উত্তর $\\frac{1372 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{1372 \\pi}{3}$",
+        "B": "$\\frac{1372 \\pi}{3}$",
+        "C": "$\\frac{2744 \\pi}{3}$",
+        "D": "$\\frac{686 \\pi}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 7 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-5.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{686 \\pi}{3}$। সঠিক উত্তর $\\frac{686 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{686 \\pi}{3}$",
+        "B": "$\\frac{686 \\pi}{3}$",
+        "C": "$\\frac{1372 \\pi}{3}$",
+        "D": "$\\frac{343 \\pi}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 14 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-5.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=49 \\sqrt{3}$। সঠিক উত্তর $49 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49 \\sqrt{3}$",
+        "B": "$98 \\sqrt{3}$",
+        "C": "$\\frac{49 \\sqrt{3}}{2}$",
+        "D": "$1 + 49 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 91, 98, 105 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-5.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(147)(56)(49)(42)}=4116$। সঠিক উত্তর $4116$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2058$",
+        "B": "$4117$",
+        "C": "$4116$",
+        "D": "$8232$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 21, ভিতরের ব্যাসার্ধ 7 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-5.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(21)^2-7^2]=392 \\pi$। সঠিক উত্তর $392 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$392 \\pi$",
+        "B": "$784 \\pi$",
+        "C": "$196 \\pi$",
+        "D": "$1 + 392 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 7 ও উচ্চতা 14 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-5.svg)",
+      "explanation": "$V=\\pi r^2(14)+\\frac23\\pi r^3=\\frac{2744 \\pi}{3}$। সঠিক উত্তর $\\frac{2744 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2744 \\pi}{3}$",
+        "B": "$\\frac{5488 \\pi}{3}$",
+        "C": "$\\frac{1372 \\pi}{3}$",
+        "D": "$1 + \\frac{2744 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "42 মিটার দৈর্ঘ্য ও 28 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 7 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-5.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 1176, ভিতরের মাপ 28×14, ক্ষেত্রফল 392। পার্থক্য 784। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $784$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$785$",
+        "B": "$784$",
+        "C": "$1568$",
+        "D": "$392$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $7 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-5.svg)",
+      "explanation": "$A=d^2/2=[(7 \\sqrt{2})^2]/2=49$। সঠিক উত্তর $49$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$98$",
+        "C": "$\\frac{49}{2}$",
+        "D": "$50$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 35 ও 21 সেমি; লম্ব উচ্চতা 14 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-5.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(56)(14)=392$। সঠিক উত্তর $392$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$196$",
+        "B": "$393$",
+        "C": "$392$",
+        "D": "$784$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 42 ও 56 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-5.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(42)(56)=1176$। সঠিক উত্তর $1176$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$588$",
+        "B": "$1177$",
+        "C": "$1176$",
+        "D": "$2352$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 7 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-5.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=\\frac{49 \\pi}{4}$। সঠিক উত্তর $\\frac{49 \\pi}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{49 \\pi}{4}$",
+        "B": "$\\frac{49 \\pi}{4}$",
+        "C": "$\\frac{49 \\pi}{2}$",
+        "D": "$\\frac{49 \\pi}{8}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 8 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-6.svg)",
+      "explanation": "$V=a^3=512$। সঠিক উত্তর $512$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$513$",
+        "C": "$512$",
+        "D": "$1024$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 24, প্রস্থ 16, উচ্চতা 8 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-6.svg)",
+      "explanation": "$V=lwh=3072$। সঠিক উত্তর $3072$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3072$",
+        "B": "$6144$",
+        "C": "$1536$",
+        "D": "$3073$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 8 এবং উচ্চতা 24 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-6.svg)",
+      "explanation": "$V=\\pi r^2h=1536 \\pi$। সঠিক উত্তর $1536 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$768 \\pi$",
+        "B": "$1 + 1536 \\pi$",
+        "C": "$1536 \\pi$",
+        "D": "$3072 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 24, উচ্চতা 32 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-6.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=6144 \\pi$। সঠিক উত্তর $6144 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3072 \\pi$",
+        "B": "$1 + 6144 \\pi$",
+        "C": "$6144 \\pi$",
+        "D": "$12288 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 8 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-6.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{2048 \\pi}{3}$। সঠিক উত্তর $\\frac{2048 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2048 \\pi}{3}$",
+        "B": "$\\frac{4096 \\pi}{3}$",
+        "C": "$\\frac{1024 \\pi}{3}$",
+        "D": "$1 + \\frac{2048 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 8 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-6.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{1024 \\pi}{3}$। সঠিক উত্তর $\\frac{1024 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1024 \\pi}{3}$",
+        "B": "$\\frac{2048 \\pi}{3}$",
+        "C": "$\\frac{512 \\pi}{3}$",
+        "D": "$1 + \\frac{1024 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 16 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-6.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=64 \\sqrt{3}$। সঠিক উত্তর $64 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$128 \\sqrt{3}$",
+        "B": "$32 \\sqrt{3}$",
+        "C": "$1 + 64 \\sqrt{3}$",
+        "D": "$64 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 104, 112, 120 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-6.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(168)(64)(56)(48)}=5376$। সঠিক উত্তর $5376$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$5377$",
+        "B": "$5376$",
+        "C": "$10752$",
+        "D": "$2688$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 24, ভিতরের ব্যাসার্ধ 8 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-6.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(24)^2-8^2]=512 \\pi$। সঠিক উত্তর $512 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1024 \\pi$",
+        "B": "$256 \\pi$",
+        "C": "$1 + 512 \\pi$",
+        "D": "$512 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 8 ও উচ্চতা 16 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-6.svg)",
+      "explanation": "$V=\\pi r^2(16)+\\frac23\\pi r^3=\\frac{4096 \\pi}{3}$। সঠিক উত্তর $\\frac{4096 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{8192 \\pi}{3}$",
+        "B": "$\\frac{2048 \\pi}{3}$",
+        "C": "$1 + \\frac{4096 \\pi}{3}$",
+        "D": "$\\frac{4096 \\pi}{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "48 মিটার দৈর্ঘ্য ও 32 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 8 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-6.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 1536, ভিতরের মাপ 32×16, ক্ষেত্রফল 512। পার্থক্য 1024। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $1024$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1024$",
+        "B": "$2048$",
+        "C": "$512$",
+        "D": "$1025$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $8 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-6.svg)",
+      "explanation": "$A=d^2/2=[(8 \\sqrt{2})^2]/2=64$। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$128$",
+        "B": "$32$",
+        "C": "$65$",
+        "D": "$64$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 40 ও 24 সেমি; লম্ব উচ্চতা 16 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-6.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(64)(16)=512$। সঠিক উত্তর $512$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$513$",
+        "B": "$512$",
+        "C": "$1024$",
+        "D": "$256$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 48 ও 64 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-6.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(48)(64)=1536$। সঠিক উত্তর $1536$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1537$",
+        "B": "$1536$",
+        "C": "$3072$",
+        "D": "$768$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 8 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-6.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=16 \\pi$। সঠিক উত্তর $16 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16 \\pi$",
+        "B": "$32 \\pi$",
+        "C": "$8 \\pi$",
+        "D": "$1 + 16 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 9 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-7.svg)",
+      "explanation": "$V=a^3=729$। সঠিক উত্তর $729$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$730$",
+        "B": "$729$",
+        "C": "$1458$",
+        "D": "$\\frac{729}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 27, প্রস্থ 18, উচ্চতা 9 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-7.svg)",
+      "explanation": "$V=lwh=4374$। সঠিক উত্তর $4374$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8748$",
+        "B": "$2187$",
+        "C": "$4375$",
+        "D": "$4374$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 9 এবং উচ্চতা 27 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-7.svg)",
+      "explanation": "$V=\\pi r^2h=2187 \\pi$। সঠিক উত্তর $2187 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 2187 \\pi$",
+        "B": "$2187 \\pi$",
+        "C": "$4374 \\pi$",
+        "D": "$\\frac{2187 \\pi}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 27, উচ্চতা 36 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-7.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=8748 \\pi$। সঠিক উত্তর $8748 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 8748 \\pi$",
+        "B": "$8748 \\pi$",
+        "C": "$17496 \\pi$",
+        "D": "$4374 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 9 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-7.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=972 \\pi$। সঠিক উত্তর $972 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1944 \\pi$",
+        "B": "$486 \\pi$",
+        "C": "$1 + 972 \\pi$",
+        "D": "$972 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 9 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-7.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=486 \\pi$। সঠিক উত্তর $486 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$972 \\pi$",
+        "B": "$243 \\pi$",
+        "C": "$1 + 486 \\pi$",
+        "D": "$486 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 18 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-7.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=81 \\sqrt{3}$। সঠিক উত্তর $81 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{81 \\sqrt{3}}{2}$",
+        "B": "$1 + 81 \\sqrt{3}$",
+        "C": "$81 \\sqrt{3}$",
+        "D": "$162 \\sqrt{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 117, 126, 135 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-7.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(189)(72)(63)(54)}=6804$। সঠিক উত্তর $6804$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6804$",
+        "B": "$13608$",
+        "C": "$3402$",
+        "D": "$6805$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 27, ভিতরের ব্যাসার্ধ 9 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-7.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(27)^2-9^2]=648 \\pi$। সঠিক উত্তর $648 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$324 \\pi$",
+        "B": "$1 + 648 \\pi$",
+        "C": "$648 \\pi$",
+        "D": "$1296 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 9 ও উচ্চতা 18 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-7.svg)",
+      "explanation": "$V=\\pi r^2(18)+\\frac23\\pi r^3=1944 \\pi$। সঠিক উত্তর $1944 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$972 \\pi$",
+        "B": "$1 + 1944 \\pi$",
+        "C": "$1944 \\pi$",
+        "D": "$3888 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "54 মিটার দৈর্ঘ্য ও 36 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 9 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-7.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 1944, ভিতরের মাপ 36×18, ক্ষেত্রফল 648। পার্থক্য 1296। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $1296$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2592$",
+        "B": "$648$",
+        "C": "$1297$",
+        "D": "$1296$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $9 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-7.svg)",
+      "explanation": "$A=d^2/2=[(9 \\sqrt{2})^2]/2=81$। সঠিক উত্তর $81$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{81}{2}$",
+        "B": "$82$",
+        "C": "$81$",
+        "D": "$162$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 45 ও 27 সেমি; লম্ব উচ্চতা 18 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-7.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(72)(18)=648$। সঠিক উত্তর $648$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648$",
+        "B": "$1296$",
+        "C": "$324$",
+        "D": "$649$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 54 ও 72 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-7.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(54)(72)=1944$। সঠিক উত্তর $1944$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1944$",
+        "B": "$3888$",
+        "C": "$972$",
+        "D": "$1945$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 9 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-7.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=\\frac{81 \\pi}{4}$। সঠিক উত্তর $\\frac{81 \\pi}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{81 \\pi}{2}$",
+        "B": "$\\frac{81 \\pi}{8}$",
+        "C": "$1 + \\frac{81 \\pi}{4}$",
+        "D": "$\\frac{81 \\pi}{4}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 10 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-8.svg)",
+      "explanation": "$V=a^3=1000$। সঠিক উত্তর $1000$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1000$",
+        "B": "$2000$",
+        "C": "$500$",
+        "D": "$1001$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 30, প্রস্থ 20, উচ্চতা 10 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-8.svg)",
+      "explanation": "$V=lwh=6000$। সঠিক উত্তর $6000$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3000$",
+        "B": "$6001$",
+        "C": "$6000$",
+        "D": "$12000$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 10 এবং উচ্চতা 30 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-8.svg)",
+      "explanation": "$V=\\pi r^2h=3000 \\pi$। সঠিক উত্তর $3000 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3000 \\pi$",
+        "B": "$6000 \\pi$",
+        "C": "$1500 \\pi$",
+        "D": "$1 + 3000 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 30, উচ্চতা 40 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-8.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=12000 \\pi$। সঠিক উত্তর $12000 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12000 \\pi$",
+        "B": "$24000 \\pi$",
+        "C": "$6000 \\pi$",
+        "D": "$1 + 12000 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 10 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-8.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{4000 \\pi}{3}$। সঠিক উত্তর $\\frac{4000 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{2000 \\pi}{3}$",
+        "B": "$1 + \\frac{4000 \\pi}{3}$",
+        "C": "$\\frac{4000 \\pi}{3}$",
+        "D": "$\\frac{8000 \\pi}{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 10 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-8.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{2000 \\pi}{3}$। সঠিক উত্তর $\\frac{2000 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1000 \\pi}{3}$",
+        "B": "$1 + \\frac{2000 \\pi}{3}$",
+        "C": "$\\frac{2000 \\pi}{3}$",
+        "D": "$\\frac{4000 \\pi}{3}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 20 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-8.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=100 \\sqrt{3}$। সঠিক উত্তর $100 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 100 \\sqrt{3}$",
+        "B": "$100 \\sqrt{3}$",
+        "C": "$200 \\sqrt{3}$",
+        "D": "$50 \\sqrt{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 130, 140, 150 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-8.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(210)(80)(70)(60)}=8400$। সঠিক উত্তর $8400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16800$",
+        "B": "$4200$",
+        "C": "$8401$",
+        "D": "$8400$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 30, ভিতরের ব্যাসার্ধ 10 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-8.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(30)^2-10^2]=800 \\pi$। সঠিক উত্তর $800 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + 800 \\pi$",
+        "B": "$800 \\pi$",
+        "C": "$1600 \\pi$",
+        "D": "$400 \\pi$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 10 ও উচ্চতা 20 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-8.svg)",
+      "explanation": "$V=\\pi r^2(20)+\\frac23\\pi r^3=\\frac{8000 \\pi}{3}$। সঠিক উত্তর $\\frac{8000 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{8000 \\pi}{3}$",
+        "B": "$\\frac{8000 \\pi}{3}$",
+        "C": "$\\frac{16000 \\pi}{3}$",
+        "D": "$\\frac{4000 \\pi}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "60 মিটার দৈর্ঘ্য ও 40 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 10 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-8.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 2400, ভিতরের মাপ 40×20, ক্ষেত্রফল 800। পার্থক্য 1600। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $1600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$800$",
+        "B": "$1601$",
+        "C": "$1600$",
+        "D": "$3200$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $10 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-8.svg)",
+      "explanation": "$A=d^2/2=[(10 \\sqrt{2})^2]/2=100$। সঠিক উত্তর $100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$101$",
+        "B": "$100$",
+        "C": "$200$",
+        "D": "$50$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 50 ও 30 সেমি; লম্ব উচ্চতা 20 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-8.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(80)(20)=800$। সঠিক উত্তর $800$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1600$",
+        "B": "$400$",
+        "C": "$801$",
+        "D": "$800$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 60 ও 80 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-8.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(60)(80)=2400$। সঠিক উত্তর $2400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$4800$",
+        "B": "$1200$",
+        "C": "$2401$",
+        "D": "$2400$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 10 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-8.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=25 \\pi$। সঠিক উত্তর $25 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{25 \\pi}{2}$",
+        "B": "$1 + 25 \\pi$",
+        "C": "$25 \\pi$",
+        "D": "$50 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 11 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-9.svg)",
+      "explanation": "$V=a^3=1331$। সঠিক উত্তর $1331$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2662$",
+        "B": "$\\frac{1331}{2}$",
+        "C": "$1332$",
+        "D": "$1331$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 33, প্রস্থ 22, উচ্চতা 11 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-9.svg)",
+      "explanation": "$V=lwh=7986$। সঠিক উত্তর $7986$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7987$",
+        "B": "$7986$",
+        "C": "$15972$",
+        "D": "$3993$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 11 এবং উচ্চতা 33 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-9.svg)",
+      "explanation": "$V=\\pi r^2h=3993 \\pi$। সঠিক উত্তর $3993 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$7986 \\pi$",
+        "B": "$\\frac{3993 \\pi}{2}$",
+        "C": "$1 + 3993 \\pi$",
+        "D": "$3993 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 33, উচ্চতা 44 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-9.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=15972 \\pi$। সঠিক উত্তর $15972 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31944 \\pi$",
+        "B": "$7986 \\pi$",
+        "C": "$1 + 15972 \\pi$",
+        "D": "$15972 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 11 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-9.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=\\frac{5324 \\pi}{3}$। সঠিক উত্তর $\\frac{5324 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{5324 \\pi}{3}$",
+        "B": "$\\frac{5324 \\pi}{3}$",
+        "C": "$\\frac{10648 \\pi}{3}$",
+        "D": "$\\frac{2662 \\pi}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 11 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-9.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=\\frac{2662 \\pi}{3}$। সঠিক উত্তর $\\frac{2662 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{2662 \\pi}{3}$",
+        "B": "$\\frac{2662 \\pi}{3}$",
+        "C": "$\\frac{5324 \\pi}{3}$",
+        "D": "$\\frac{1331 \\pi}{3}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 22 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-9.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=121 \\sqrt{3}$। সঠিক উত্তর $121 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$121 \\sqrt{3}$",
+        "B": "$242 \\sqrt{3}$",
+        "C": "$\\frac{121 \\sqrt{3}}{2}$",
+        "D": "$1 + 121 \\sqrt{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 143, 154, 165 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-9.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(231)(88)(77)(66)}=10164$। সঠিক উত্তর $10164$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$5082$",
+        "B": "$10165$",
+        "C": "$10164$",
+        "D": "$20328$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 33, ভিতরের ব্যাসার্ধ 11 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-9.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(33)^2-11^2]=968 \\pi$। সঠিক উত্তর $968 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$968 \\pi$",
+        "B": "$1936 \\pi$",
+        "C": "$484 \\pi$",
+        "D": "$1 + 968 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 11 ও উচ্চতা 22 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-9.svg)",
+      "explanation": "$V=\\pi r^2(22)+\\frac23\\pi r^3=\\frac{10648 \\pi}{3}$। সঠিক উত্তর $\\frac{10648 \\pi}{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{10648 \\pi}{3}$",
+        "B": "$\\frac{21296 \\pi}{3}$",
+        "C": "$\\frac{5324 \\pi}{3}$",
+        "D": "$1 + \\frac{10648 \\pi}{3}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "66 মিটার দৈর্ঘ্য ও 44 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 11 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-9.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 2904, ভিতরের মাপ 44×22, ক্ষেত্রফল 968। পার্থক্য 1936। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $1936$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1937$",
+        "B": "$1936$",
+        "C": "$3872$",
+        "D": "$968$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $11 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-9.svg)",
+      "explanation": "$A=d^2/2=[(11 \\sqrt{2})^2]/2=121$। সঠিক উত্তর $121$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$121$",
+        "B": "$242$",
+        "C": "$\\frac{121}{2}$",
+        "D": "$122$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 55 ও 33 সেমি; লম্ব উচ্চতা 22 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-9.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(88)(22)=968$। সঠিক উত্তর $968$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$484$",
+        "B": "$969$",
+        "C": "$968$",
+        "D": "$1936$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি রম্বসের কর্ণদ্বয় 66 ও 88 সেমি। রম্বসের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rhombus-diagonals-9.svg)",
+      "explanation": "$A=\\frac12d_1d_2=\\frac12(66)(88)=2904$। সঠিক উত্তর $2904$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rhombus-diagonals/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1452$",
+        "B": "$2905$",
+        "C": "$2904$",
+        "D": "$5808$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বৃত্তের ব্যাসার্ধ 11 সেমি; কেন্দ্রীয় কোণ 90°-এর ক্ষুদ্র বৃত্তকলার ক্ষেত্রফল ও পরিসীমা বিবেচনা কর। π প্রতীকেই রাখ। বৃত্তকলার ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sector-9.svg)",
+      "explanation": "$A=(90/360)\\pi r^2=\\frac{121 \\pi}{4}$। সঠিক উত্তর $\\frac{121 \\pi}{4}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sector/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1 + \\frac{121 \\pi}{4}$",
+        "B": "$\\frac{121 \\pi}{4}$",
+        "C": "$\\frac{121 \\pi}{2}$",
+        "D": "$\\frac{121 \\pi}{8}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ঘনকের বাহু 12 সেমি। ঘনকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cube-10.svg)",
+      "explanation": "$V=a^3=1728$। সঠিক উত্তর $1728$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cube/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$864$",
+        "B": "$1729$",
+        "C": "$1728$",
+        "D": "$3456$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 36, প্রস্থ 24, উচ্চতা 12 সেমি। আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cuboid-10.svg)",
+      "explanation": "$V=lwh=10368$। সঠিক উত্তর $10368$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cuboid/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10368$",
+        "B": "$20736$",
+        "C": "$5184$",
+        "D": "$10369$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব বেলনের ব্যাসার্ধ 12 এবং উচ্চতা 36 সেমি। π-এর মান প্রতীকেই রাখ। বেলনের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cylinder-10.svg)",
+      "explanation": "$V=\\pi r^2h=5184 \\pi$। সঠিক উত্তর $5184 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cylinder/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2592 \\pi$",
+        "B": "$1 + 5184 \\pi$",
+        "C": "$5184 \\pi$",
+        "D": "$10368 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবৃত্তভূমিক লম্ব শঙ্কুর ব্যাসার্ধ 36, উচ্চতা 48 সেমি। π প্রতীকেই রাখ। শঙ্কুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-cone-10.svg)",
+      "explanation": "$V=\\frac13\\pi r^2h=20736 \\pi$। সঠিক উত্তর $20736 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/cone/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10368 \\pi$",
+        "B": "$1 + 20736 \\pi$",
+        "C": "$20736 \\pi$",
+        "D": "$41472 \\pi$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি গোলকের ব্যাসার্ধ 12 সেমি। π প্রতীকেই রাখ। গোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-sphere-10.svg)",
+      "explanation": "$V=\\frac43\\pi r^3=2304 \\pi$। সঠিক উত্তর $2304 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/sphere/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2304 \\pi$",
+        "B": "$4608 \\pi$",
+        "C": "$1152 \\pi$",
+        "D": "$1 + 2304 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি নিরেট অর্ধগোলকের ব্যাসার্ধ 12 সেমি। সমতল বৃত্তাকার তলসহ হিসাব কর; π প্রতীকেই রাখ। অর্ধগোলকের আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-hemisphere-10.svg)",
+      "explanation": "$V=\\frac12\\cdot\\frac43\\pi r^3=1152 \\pi$। সঠিক উত্তর $1152 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/hemisphere/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1152 \\pi$",
+        "B": "$2304 \\pi$",
+        "C": "$576 \\pi$",
+        "D": "$1 + 1152 \\pi$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি সমবাহু ত্রিভুজের বাহু 24 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-equilateral-10.svg)",
+      "explanation": "$A=\\frac{\\sqrt3}4a^2=144 \\sqrt{3}$। সঠিক উত্তর $144 \\sqrt{3}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/equilateral/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$288 \\sqrt{3}$",
+        "B": "$72 \\sqrt{3}$",
+        "C": "$1 + 144 \\sqrt{3}$",
+        "D": "$144 \\sqrt{3}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের তিন বাহু 156, 168, 180 সেমি। হেরনের সূত্রে ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-heron-10.svg)",
+      "explanation": "$A=\\sqrt{s(s-a)(s-b)(s-c)}=\\sqrt{(252)(96)(84)(72)}=12096$। সঠিক উত্তর $12096$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/heron/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12097$",
+        "B": "$12096$",
+        "C": "$24192$",
+        "D": "$6048$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "দুটি সমকেন্দ্রিক বৃত্তের বাইরের ব্যাসার্ধ 36, ভিতরের ব্যাসার্ধ 12 সেমি। π প্রতীকেই রাখ। বলয়ের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-annulus-10.svg)",
+      "explanation": "$A=\\pi(R^2-r^2)=\\pi[(36)^2-12^2]=1152 \\pi$। সঠিক উত্তর $1152 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/annulus/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2304 \\pi$",
+        "B": "$576 \\pi$",
+        "C": "$1 + 1152 \\pi$",
+        "D": "$1152 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বেলনের ব্যাসার্ধ 12 ও উচ্চতা 24 সেমি। একই ব্যাসার্ধের একটি অর্ধগোলক তার উপরে তল-তলে যুক্ত; নিচের বৃত্তাকার তলও বাইরের পৃষ্ঠের অংশ হিসেবে গণ্য। π প্রতীকেই রাখ। নিরেট বস্তুর আয়তন কত ঘনসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-composite-solid-10.svg)",
+      "explanation": "$V=\\pi r^2(24)+\\frac23\\pi r^3=4608 \\pi$। সঠিক উত্তর $4608 \\pi$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/composite-solid/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9216 \\pi$",
+        "B": "$2304 \\pi$",
+        "C": "$1 + 4608 \\pi$",
+        "D": "$4608 \\pi$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "72 মিটার দৈর্ঘ্য ও 48 মিটার প্রস্থের আয়তাকার বাগানের ভিতর চারদিকে 12 মিটার চওড়া পথ। পথের ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-rectangle-path-10.svg)",
+      "explanation": "বাইরের ক্ষেত্রফল 3456, ভিতরের মাপ 48×24, ক্ষেত্রফল 1152। পার্থক্য 2304। কোণের অংশ আলাদা যোগ করলে দ্বিগুণ গণনা হতো। সঠিক উত্তর $2304$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/rectangle-path/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2304$",
+        "B": "$4608$",
+        "C": "$1152$",
+        "D": "$2305$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি বর্গের কর্ণ $12 \\sqrt{2}$ মিটার। ক্ষেত্রফল কত বর্গমিটার?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-square-diagonal-10.svg)",
+      "explanation": "$A=d^2/2=[(12 \\sqrt{2})^2]/2=144$। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/square-diagonal/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$288$",
+        "B": "$72$",
+        "C": "$145$",
+        "D": "$144$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় 60 ও 36 সেমি; লম্ব উচ্চতা 24 সেমি। ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch16-v1/mcq-trapezium-10.svg)",
+      "explanation": "$A=\\frac12(a+b)h=\\frac12(96)(24)=1152$। সঠিক উত্তর $1152$।",
+      "page": "নিজস্ব অনুশীলনী; Ch16/MCQ/trapezium/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1153$",
+        "B": "$1152$",
+        "C": "$2304$",
+        "D": "$576$"
+      },
+      "correct": "B"
+    }
+  ]
+}

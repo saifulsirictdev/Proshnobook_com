@@ -1,0 +1,42 @@
+{
+  "chapter": 8,
+  "topic": "৮ম অধ্যায়: রেচন প্রক্রিয়া",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 158069,
+      "sha256": "01c7d80914e38dd89d14599ac696d66a1176d4b010e0b8d91d8e05f7c268c20e"
+    },
+    "rebuild-cq.json": {
+      "bytes": 140143,
+      "sha256": "092146aca6a9a5ae083ac735bb5cfb297a0f7faa1f065028ffa359f3fb6d310d"
+    },
+    "rebuild-sq.json": {
+      "bytes": 52183,
+      "sha256": "fa5f91e81b4a6fbf361fc44b1effbc04b2fcbb64380b1837788526d791971cb2"
+    }
+  }
+}

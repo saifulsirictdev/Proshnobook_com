@@ -1,0 +1,86 @@
+{
+  "executionOrder": [
+    1,
+    2,
+    3
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+      "existingDrafts": {
+        "MCQ": 1000,
+        "CQ": 250,
+        "SQ": 350
+      },
+      "remainingQuestions": {
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
+      },
+      "remainingTotal": 0,
+      "countTargetMet": true,
+      "contentReviewComplete": false,
+      "complete": false
+    },
+    {
+      "batch": 2,
+      "chapters": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+      "existingDrafts": {
+        "MCQ": 1000,
+        "CQ": 250,
+        "SQ": 350
+      },
+      "remainingQuestions": {
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
+      },
+      "remainingTotal": 0,
+      "countTargetMet": true,
+      "contentReviewComplete": false,
+      "complete": false
+    },
+    {
+      "batch": 3,
+      "chapters": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+      "existingDrafts": {
+        "MCQ": 800,
+        "CQ": 200,
+        "SQ": 280
+      },
+      "remainingQuestions": {
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
+      },
+      "remainingTotal": 0,
+      "countTargetMet": true,
+      "contentReviewComplete": false,
+      "complete": false
+    }
+  ],
+  "activeChapter": 14,
+  "workflow": "ONE_CHAPTER_AT_A_TIME",
+  "publicationAuthorized": false
+}

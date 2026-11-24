@@ -1,0 +1,35 @@
+{
+  "status": "STARTED_PARTIAL_SOURCE_REVIEWED_DRAFT_BACKED_UP_NOT_IMPORTED",
+  "targetCounts": {
+    "MCQ": 300,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "preparedCounts": {
+    "MCQ": 6,
+    "CQ": 1,
+    "SQ": 0
+  },
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "checksumsMatched": true,
+  "files": [
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-3/board-seed-v1.json",
+      "driveFileId": "1pUkDHxJNQOcEpae7wByb0KkhtC30KWqZ",
+      "driveUrl": "https://drive.google.com/file/d/1pUkDHxJNQOcEpae7wByb0KkhtC30KWqZ/view",
+      "bytes": 8985,
+      "sha256": "66609ca9b7719318afa5ea703d932053873ea6166197a59967df151097978ac7",
+      "driveMd5Checksum": "9cb036398d5de7e3646c1438358e8677",
+      "checksumMatched": true
+    },
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-3/validation.json",
+      "driveFileId": "1hhAbSAjWWPJYno6FbPnfoYWbvs2_hJvt",
+      "driveUrl": "https://drive.google.com/file/d/1hhAbSAjWWPJYno6FbPnfoYWbvs2_hJvt/view",
+      "bytes": 6878,
+      "sha256": "83fcb55d984e4bbdb170ff6971c08de3d8e64d90dbe83bde15bc5f184db3c0c2",
+      "driveMd5Checksum": "521053aae4288953d4072d6479c6bd5c",
+      "checksumMatched": true
+    }
+  ]
+}

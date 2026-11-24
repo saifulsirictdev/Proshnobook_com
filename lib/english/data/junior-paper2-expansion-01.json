@@ -1,0 +1,2328 @@
+{
+  "version": 1,
+  "batch": "junior-paper2-expansion-01",
+  "provenance": {
+    "kind": "AUTHORED_PRACTICE",
+    "sourceNote": "Original assistant-authored junior practice exercises. Not transcribed from any textbook, board or school paper; no original exam year claimed.",
+    "answerStatus": "Suggested answers with local structural/editorial checks; independent teacher review remains required.",
+    "limitations": [
+      "Four additional authored models per grade; combined with the previously prepared model this is five sets per item, not fifty.",
+      "Writing samples and alternative substitution sentences are illustrative, not exclusive marking keys.",
+      "Automated checks do not certify linguistic correctness or official exam applicability."
+    ]
+  },
+  "models": [
+    {
+      "id": "class6-paper2-authored-model-02",
+      "grade": 6,
+      "model": 2,
+      "writing": {
+        "letter-email": {
+          "topic": "permission to arrange a classroom science display",
+          "choice": "formal-letter"
+        },
+        "composition": {
+          "topic": "A Rainy Day at School",
+          "words": 200
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "parts-of-speech",
+            "instruction": "Identify the part of speech of the word in square brackets in each sentence.",
+            "subitems": [
+              {
+                "text": "[Dhaka] is a busy city.",
+                "answer": "Noun (proper noun)."
+              },
+              {
+                "text": "Our [new] classroom has two doors.",
+                "answer": "Adjective."
+              },
+              {
+                "text": "[They] waited outside the office.",
+                "answer": "Pronoun."
+              },
+              {
+                "text": "The baby [laughed] at the puppet.",
+                "answer": "Verb."
+              },
+              {
+                "text": "Please speak [softly] in the library.",
+                "answer": "Adverb."
+              },
+              {
+                "text": "A kite flew [above] the roof.",
+                "answer": "Preposition."
+              },
+              {
+                "text": "I stayed indoors [because] it rained.",
+                "answer": "Conjunction."
+              },
+              {
+                "text": "[Alas]! The glass is broken.",
+                "answer": "Interjection."
+              },
+              {
+                "text": "The [basket] is full of lemons.",
+                "answer": "Noun (common noun)."
+              },
+              {
+                "text": "This soup [tastes] delicious.",
+                "answer": "Verb (linking verb)."
+              }
+            ]
+          },
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nOur class made (a) ___ small weather chart. We fixed it (b) ___ the classroom wall. A thermometer helps us measure (c) ___. Every morning, we look (d) ___ the sky. We write down whether the day is sunny (e) ___ cloudy. Yesterday, there was (f) ___ sudden shower. We watched it (g) ___ the window. Our teacher asked us to work (h) ___. The chart helps (i) ___ understand changes in the weather. We enjoy learning (j) ___ things.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "on"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "temperature"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "at"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "or"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "through"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "carefully"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "us"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "new"
+              }
+            ],
+            "clues": [
+              "through",
+              "new",
+              "a",
+              "us",
+              "at",
+              "carefully",
+              "temperature",
+              "on",
+              "a",
+              "or"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A thermometer measures temperature."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "Dark clouds often bring rain."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "A raincoat keeps our clothes dry."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "The sun gives us light and warmth."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Weather records help us compare different days."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A thermometer",
+                  "keeps",
+                  "us light and warmth."
+                ],
+                [
+                  "Dark clouds",
+                  "help",
+                  "temperature."
+                ],
+                [
+                  "A raincoat",
+                  "often bring",
+                  "us compare different days."
+                ],
+                [
+                  "The sun",
+                  "measures",
+                  "our clothes dry."
+                ],
+                [
+                  "Weather records",
+                  "gives",
+                  "rain."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "Water ___ (freeze) at zero degrees Celsius.",
+                "answer": "freezes"
+              },
+              {
+                "text": "Listen! Someone ___ (knock) at the door.",
+                "answer": "is knocking"
+              },
+              {
+                "text": "The rain ___ (stop) an hour ago.",
+                "answer": "stopped"
+              },
+              {
+                "text": "We have already ___ (draw) the chart.",
+                "answer": "drawn"
+              },
+              {
+                "text": "Let us ___ (open) the window.",
+                "answer": "open"
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "They walk to school. (Past simple)",
+                "answer": "They walked to school."
+              },
+              {
+                "text": "The answer is correct. (Negative without changing the meaning)",
+                "answer": "The answer is not incorrect."
+              },
+              {
+                "text": "It is a very cold morning. (Exclamatory)",
+                "answer": "What a cold morning it is!"
+              },
+              {
+                "text": "You should wear a raincoat. (Imperative)",
+                "answer": "Wear a raincoat."
+              },
+              {
+                "text": "She can swim. (Interrogative; ask a real question)",
+                "answer": "Can she swim?"
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nwe travelled to dhaka on Friday. our guide was rafi. he didnt carry a map because he couldnt find it. did you see the bridge. i took a photograph.",
+            "subitems": [],
+            "answer": "We travelled to Dhaka on Friday. Our guide was Rafi. He didn't carry a map because he couldn't find it. Did you see the bridge? I took a photograph."
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write a formal letter to your headteacher asking for permission to arrange a classroom science display. Mention the materials you will use and how you will keep the room safe.",
+            "subitems": [],
+            "answer": "The Headteacher\nYour School\nSubject: Permission to arrange a classroom science display\n\nSir/Madam,\nWe, the students of Class Six, would like to arrange a small science display in our classroom. We have made a weather chart, paper windmills and drawings of the water cycle. Sharing these projects would help us explain what we have learnt.\n\nWe propose holding the display after lessons on a day chosen by you. We will use only paper, cardboard and other safe materials. We will not bring chemicals, sharp tools or electrical equipment. Our science teacher has agreed to guide us if permission is granted. We will keep the passages clear and clean the room afterwards.\n\nWe therefore request your permission to arrange the display.\nYours obediently,\nA student of Class Six"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 200 words on A Rainy Day at School.",
+            "subitems": [],
+            "answer": "A Rainy Day at School\n\nLast week I experienced a rainy day at school. The morning began with dark clouds, so I packed my books in a waterproof bag. My father reminded me to take my umbrella. By the time I reached the school gate, rain was falling steadily.\n\nOur teachers asked us to walk carefully because the steps were wet. We left our umbrellas in the place beside the entrance and went to our classroom. From the windows, we could see raindrops making circles in the puddles. The trees looked fresh and green.\n\nWe could not play outside during the break. Instead, we stayed in the classroom and played word games. One of my friends told a funny story, and another drew a picture of the rainy playground. We shared our snacks and enjoyed the quiet time together.\n\nThe rain became lighter before the final lesson ended. We waited under the school roof until our guardians arrived. Nobody was allowed to run through the flooded part of the road. I returned home safely and dried my shoes near an open window.\n\nThe day taught me that bad weather does not have to spoil our happiness. With care, preparation and good company, even a rainy school day can become a pleasant memory."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "Our class made a small weather chart. We fixed it on the classroom wall. A thermometer helps us measure temperature. Every morning, we look at the sky. We write down whether the day is sunny or cloudy. Yesterday, there was a sudden shower. We watched it through the window. Our teacher asked us to work carefully. The chart helps us understand changes in the weather. We enjoy learning new things.",
+        "punctuationEdits": [
+          {
+            "from": "we travelled",
+            "to": "We travelled"
+          },
+          {
+            "from": "dhaka",
+            "to": "Dhaka"
+          },
+          {
+            "from": "our guide",
+            "to": "Our guide"
+          },
+          {
+            "from": "rafi",
+            "to": "Rafi"
+          },
+          {
+            "from": "he didnt",
+            "to": "He didnt"
+          },
+          {
+            "from": "didnt",
+            "to": "didn't"
+          },
+          {
+            "from": "couldnt",
+            "to": "couldn't"
+          },
+          {
+            "from": "did you",
+            "to": "Did you"
+          },
+          {
+            "from": "the bridge.",
+            "to": "the bridge?"
+          },
+          {
+            "from": "i took",
+            "to": "I took"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class6-paper2-authored-model-03",
+      "grade": 6,
+      "model": 3,
+      "writing": {
+        "letter-email": {
+          "topic": "a visit to a boat library",
+          "choice": "informal-email"
+        },
+        "composition": {
+          "topic": "Helping at Home",
+          "words": 200
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "parts-of-speech",
+            "instruction": "Identify the part of speech of the word in square brackets in each sentence.",
+            "subitems": [
+              {
+                "text": "[Honey] tastes sweet.",
+                "answer": "Noun (common noun)."
+              },
+              {
+                "text": "The [wooden] bridge is narrow.",
+                "answer": "Adjective."
+              },
+              {
+                "text": "Please give [me] the blue pencil.",
+                "answer": "Pronoun."
+              },
+              {
+                "text": "The boat [moves] slowly.",
+                "answer": "Verb."
+              },
+              {
+                "text": "The children waited [patiently].",
+                "answer": "Adverb."
+              },
+              {
+                "text": "We walked [across] the field.",
+                "answer": "Preposition."
+              },
+              {
+                "text": "You may take tea [or] milk.",
+                "answer": "Conjunction."
+              },
+              {
+                "text": "[Wow]! What a large pumpkin!",
+                "answer": "Interjection."
+              },
+              {
+                "text": "[Bangladesh] has many rivers.",
+                "answer": "Noun (proper noun)."
+              },
+              {
+                "text": "The answer [seems] correct.",
+                "answer": "Verb (linking verb)."
+              }
+            ]
+          },
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nA boat library visits our village once (a) ___ month. It stops (b) ___ the old landing place. The librarian brings (c) ___ books for young readers. We stand in a (d) ___ while we wait. Each child can borrow (e) ___ book. We must return it (f) ___ time. I chose a story (g) ___ a lost bird. My sister chose (h) ___ atlas. We carried the books home (i) ___. Reading gives us knowledge (j) ___ pleasure.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "near"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "interesting"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "line"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "one"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "on"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "about"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "an"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "safely"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "and"
+              }
+            ],
+            "clues": [
+              "an",
+              "safely",
+              "one",
+              "a",
+              "and",
+              "interesting",
+              "near",
+              "on",
+              "about",
+              "line"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "The boat library carries books to distant villages."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "Young readers choose stories and poems."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "The librarian records the names of borrowers."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "A library card shows a reader’s number."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Regular reading builds our vocabulary."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "The boat library",
+                  "records",
+                  "a reader’s number."
+                ],
+                [
+                  "Young readers",
+                  "builds",
+                  "books to distant villages."
+                ],
+                [
+                  "The librarian",
+                  "choose",
+                  "our vocabulary."
+                ],
+                [
+                  "A library card",
+                  "carries",
+                  "the names of borrowers."
+                ],
+                [
+                  "Regular reading",
+                  "shows",
+                  "stories and poems."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "The library boat ___ (come) here every month.",
+                "answer": "comes"
+              },
+              {
+                "text": "They ___ (wait) for it at the moment.",
+                "answer": "are waiting"
+              },
+              {
+                "text": "I ___ (borrow) a storybook last week.",
+                "answer": "borrowed"
+              },
+              {
+                "text": "Has she ___ (return) the atlas?",
+                "answer": "returned"
+              },
+              {
+                "text": "We must ___ (keep) the pages clean.",
+                "answer": "keep"
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "She borrowed a book. (Present simple)",
+                "answer": "She borrows a book."
+              },
+              {
+                "text": "The story is interesting. (Negative without changing the meaning)",
+                "answer": "The story is not uninteresting."
+              },
+              {
+                "text": "The river is very wide. (Exclamatory)",
+                "answer": "How wide the river is!"
+              },
+              {
+                "text": "You should return the book. (Imperative)",
+                "answer": "Return the book."
+              },
+              {
+                "text": "He has a library card. (Interrogative; ask a real question)",
+                "answer": "Does he have a library card?"
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nmina said, we can borrow two books. the librarian smiled. please return them on sunday. i thanked her.",
+            "subitems": [],
+            "answer": "Mina said, \"We can borrow two books.\" The librarian smiled. \"Please return them on Sunday.\" I thanked her."
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write an informal email to your cousin describing a visit to a boat library. Explain which book you borrowed and why you enjoyed the visit.",
+            "subitems": [],
+            "answer": "To: cousin@example.com\nSubject: My visit to a boat library\nDear Cousin,\nYesterday I visited a boat library near our village. It was my first visit, and I was surprised to see so many books arranged inside a boat. The librarian welcomed us and explained the borrowing rules.\n\nI chose a story about a child who rescues an injured bird with help from an adult. I liked the colourful pictures and the simple language. My sister borrowed an atlas, so we can learn about different places together. We must return both books when the boat visits again next month.\n\nThe visit showed me that a library does not always need a large building. I hope you can join me next time. Please tell me what you are reading now.\nWith love,\nYour cousin"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 200 words on Helping at Home.",
+            "subitems": [],
+            "answer": "Helping at Home\n\nA home is a place where people care for one another. Everyone who lives there can help to make daily life easier. As a student, I cannot do every household task, but I can take responsibility for work that is safe and suitable for my age.\n\nI begin by keeping my own things tidy. After waking up, I fold my blanket and put my school materials in order. I do not leave books, toys or shoes where someone might trip over them. These small habits save time for the whole family.\n\nI also help to set the table and put clean clothes in the right places. Sometimes I water the plants with my younger sister. We use a small container so that we do not waste water. An adult handles hot pans, strong cleaning products and electrical repairs.\n\nHelping at home does not mean neglecting lessons or losing all our free time. My family shares the tasks fairly, and we make a simple plan. I still have time to study, play and rest.\n\nHousehold work teaches me patience, care and cooperation. It helps me understand how much effort other people make for our comfort. When everyone contributes a little, home becomes a happier place for all of us."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "A boat library visits our village once a month. It stops near the old landing place. The librarian brings interesting books for young readers. We stand in a line while we wait. Each child can borrow one book. We must return it on time. I chose a story about a lost bird. My sister chose an atlas. We carried the books home safely. Reading gives us knowledge and pleasure.",
+        "punctuationEdits": [
+          {
+            "from": "mina",
+            "to": "Mina"
+          },
+          {
+            "from": "said, ",
+            "to": "said, \""
+          },
+          {
+            "from": "we can",
+            "to": "We can"
+          },
+          {
+            "from": "two books.",
+            "to": "two books.\""
+          },
+          {
+            "from": "the librarian",
+            "to": "The librarian"
+          },
+          {
+            "from": "please return",
+            "to": "\"please return"
+          },
+          {
+            "from": "\"please",
+            "to": "\"Please"
+          },
+          {
+            "from": "sunday",
+            "to": "Sunday"
+          },
+          {
+            "from": "Sunday.",
+            "to": "Sunday.\""
+          },
+          {
+            "from": "i thanked",
+            "to": "I thanked"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class6-paper2-authored-model-04",
+      "grade": 6,
+      "model": 4,
+      "writing": {
+        "letter-email": {
+          "topic": "a safe bicycle-parking area",
+          "choice": "formal-email"
+        },
+        "composition": {
+          "topic": "Walking to School Safely",
+          "words": 200
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "parts-of-speech",
+            "instruction": "Identify the part of speech of the word in square brackets in each sentence.",
+            "subitems": [
+              {
+                "text": "[Karim] repairs bicycles.",
+                "answer": "Noun (proper noun)."
+              },
+              {
+                "text": "He uses a [small] pump.",
+                "answer": "Adjective."
+              },
+              {
+                "text": "[We] wear helmets when cycling.",
+                "answer": "Pronoun."
+              },
+              {
+                "text": "The bell [rings] clearly.",
+                "answer": "Verb."
+              },
+              {
+                "text": "The rider stopped [quickly].",
+                "answer": "Adverb."
+              },
+              {
+                "text": "The bicycle is [beside] the shop.",
+                "answer": "Preposition."
+              },
+              {
+                "text": "The road is narrow, [but] it is quiet.",
+                "answer": "Conjunction."
+              },
+              {
+                "text": "[Oh]! I left my helmet at home.",
+                "answer": "Interjection."
+              },
+              {
+                "text": "A [mechanic] checked the brakes.",
+                "answer": "Noun (common noun)."
+              },
+              {
+                "text": "The tyres [are] firm.",
+                "answer": "Verb (linking verb)."
+              }
+            ]
+          },
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nOur school held (a) ___ road-safety lesson. A visitor spoke (b) ___ us about crossing roads. We should stop (c) ___ the kerb and look both ways. We must never run (d) ___ a busy road. A footbridge is a (e) ___ place to cross. The visitor showed us (f) ___ picture of a helmet. It protects (g) ___ head while cycling. We should ride (h) ___ and obey signals. We thanked the visitor (i) ___ the lesson. Safety is important for (j) ___.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "to"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "at"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "across"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "safe"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "our"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "carefully"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "for"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "everyone"
+              }
+            ],
+            "clues": [
+              "for",
+              "across",
+              "a",
+              "everyone",
+              "safe",
+              "our",
+              "to",
+              "a",
+              "carefully",
+              "at"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A red signal tells drivers to stop."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "A helmet protects a cyclist’s head."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "A footbridge provides a route over a busy road."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "Careful drivers follow traffic rules."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Pedestrians use the footpath when available."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A red signal",
+                  "provides",
+                  "traffic rules."
+                ],
+                [
+                  "A helmet",
+                  "use",
+                  "drivers to stop."
+                ],
+                [
+                  "A footbridge",
+                  "protects",
+                  "the footpath when available."
+                ],
+                [
+                  "Careful drivers",
+                  "tells",
+                  "a route over a busy road."
+                ],
+                [
+                  "Pedestrians",
+                  "follow",
+                  "a cyclist’s head."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "A careful driver ___ (obey) road signs.",
+                "answer": "obeys"
+              },
+              {
+                "text": "Look! The traffic light ___ (change).",
+                "answer": "is changing"
+              },
+              {
+                "text": "Our teacher ___ (explain) the rules yesterday.",
+                "answer": "explained"
+              },
+              {
+                "text": "The mechanic has ___ (check) the brakes.",
+                "answer": "checked"
+              },
+              {
+                "text": "Do not ___ (run) across the road.",
+                "answer": "run"
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "They are waiting for the bus. (Past continuous)",
+                "answer": "They were waiting for the bus."
+              },
+              {
+                "text": "The road is safe. (Negative without changing the meaning)",
+                "answer": "The road is not unsafe."
+              },
+              {
+                "text": "It is a very useful lesson. (Exclamatory)",
+                "answer": "What a useful lesson it is!"
+              },
+              {
+                "text": "You should obey the signal. (Imperative)",
+                "answer": "Obey the signal."
+              },
+              {
+                "text": "The bus stops here. (Interrogative; ask a real question)",
+                "answer": "Does the bus stop here?"
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors. The bicycle belongs to one brother.\non tuesday, nadia packed a helmet a water bottle and a notebook. she checked her brothers bicycle. its bell wasnt working. could they repair it.",
+            "subitems": [],
+            "answer": "On Tuesday, Nadia packed a helmet, a water bottle and a notebook. She checked her brother's bicycle. Its bell wasn't working. Could they repair it?"
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write a formal email to your headteacher requesting a safe bicycle-parking area. Explain the problem and suggest a suitable place.",
+            "subitems": [],
+            "answer": "To: headteacher@example.com\nSubject: Request for a safe bicycle-parking area\nSir/Madam,\nSome students of Class Six come to school by bicycle. At present, we leave our bicycles beside the entrance. They sometimes block the path, especially when many students arrive together. We are worried that someone may trip or find it difficult to pass.\n\nWe would like to request a marked bicycle-parking area beside the boundary wall, away from the main walking route. A simple rack would help us keep the bicycles upright and in order. We will follow the school rules and never ride inside the crowded entrance.\n\nPlease consider our request and choose a suitable place. We would be happy to help make clear parking signs under a teacher’s guidance.\nYours obediently,\nA student of Class Six"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 200 words on Walking to School Safely.",
+            "subitems": [],
+            "answer": "Walking to School Safely\n\nI walk to school with my elder sister on most mornings. Our school is not far from home, but part of the route follows a busy road. We leave early so that we do not have to hurry. A safe journey is more important than arriving a few minutes sooner.\n\nWe use the footpath where one is available. If the path is blocked, we stop and choose a safe way with help from an adult. We never play, push each other or look at a phone while walking near traffic.\n\nCrossing the road requires special care. We use the footbridge or a marked crossing whenever possible. Before stepping onto the road, we stop, look carefully in both directions and listen. We do not assume that every driver has seen us.\n\nRainy weather makes the journey more difficult. The ground can be slippery, and umbrellas may hide part of the road. On such days, we walk slowly and allow extra time. If the route is flooded or unsafe, our family arranges another way to reach school.\n\nFollowing safety rules is a daily responsibility. I remind my friends gently when they forget. Walking carefully helps us reach school ready to learn and return home safely to the people who care for us."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "Our school held a road-safety lesson. A visitor spoke to us about crossing roads. We should stop at the kerb and look both ways. We must never run across a busy road. A footbridge is a safe place to cross. The visitor showed us a picture of a helmet. It protects our head while cycling. We should ride carefully and obey signals. We thanked the visitor for the lesson. Safety is important for everyone.",
+        "punctuationEdits": [
+          {
+            "from": "on tuesday",
+            "to": "On tuesday"
+          },
+          {
+            "from": "tuesday",
+            "to": "Tuesday"
+          },
+          {
+            "from": "nadia",
+            "to": "Nadia"
+          },
+          {
+            "from": "a helmet a",
+            "to": "a helmet, a"
+          },
+          {
+            "from": "she checked",
+            "to": "She checked"
+          },
+          {
+            "from": "brothers",
+            "to": "brother's"
+          },
+          {
+            "from": "its bell",
+            "to": "Its bell"
+          },
+          {
+            "from": "wasnt",
+            "to": "wasn't"
+          },
+          {
+            "from": "could they",
+            "to": "Could they"
+          },
+          {
+            "from": "repair it.",
+            "to": "repair it?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class6-paper2-authored-model-05",
+      "grade": 6,
+      "model": 5,
+      "writing": {
+        "letter-email": {
+          "topic": "a visit to a local museum",
+          "choice": "informal-letter"
+        },
+        "composition": {
+          "topic": "A Visit to a Local Museum",
+          "words": 200
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "parts-of-speech",
+            "instruction": "Identify the part of speech of the word in square brackets in each sentence.",
+            "subitems": [
+              {
+                "text": "[Chattogram] is a port city.",
+                "answer": "Noun (proper noun)."
+              },
+              {
+                "text": "We saw a [colourful] poster.",
+                "answer": "Adjective."
+              },
+              {
+                "text": "The guide showed [us] a model ship.",
+                "answer": "Pronoun."
+              },
+              {
+                "text": "A machine [lifts] the boxes.",
+                "answer": "Verb."
+              },
+              {
+                "text": "The workers moved [carefully].",
+                "answer": "Adverb."
+              },
+              {
+                "text": "The museum opens [after] breakfast.",
+                "answer": "Preposition."
+              },
+              {
+                "text": "I wanted to stay, [but] it was late.",
+                "answer": "Conjunction."
+              },
+              {
+                "text": "[Hurrah]! We have found the missing ticket.",
+                "answer": "Interjection."
+              },
+              {
+                "text": "The [captain] welcomed the visitors.",
+                "answer": "Noun (common noun)."
+              },
+              {
+                "text": "The sea [looks] calm today.",
+                "answer": "Verb (linking verb)."
+              }
+            ]
+          },
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nOur class visited (a) ___ local museum. We arrived (b) ___ ten in the morning. A guide welcomed (c) ___ at the door. She showed us (d) ___ old clay pot. It was kept (e) ___ a glass case. We read the labels (f) ___. We did not touch (g) ___ move any object. The guide answered our (h) ___. I drew a picture (i) ___ the pot. The visit taught us about life in the (j) ___.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "at"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "us"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "an"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "inside"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "quietly"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "or"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "questions"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "of"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "past"
+              }
+            ],
+            "clues": [
+              "past",
+              "an",
+              "quietly",
+              "of",
+              "a",
+              "or",
+              "inside",
+              "questions",
+              "us",
+              "at"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A museum preserves objects from the past."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "A guide explains the displays to visitors."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "Glass cases protect fragile objects."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "Labels provide information about the objects."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Visitors follow the museum rules."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A museum",
+                  "protect",
+                  "information about the objects."
+                ],
+                [
+                  "A guide",
+                  "follow",
+                  "objects from the past."
+                ],
+                [
+                  "Glass cases",
+                  "explains",
+                  "the museum rules."
+                ],
+                [
+                  "Labels",
+                  "preserves",
+                  "fragile objects."
+                ],
+                [
+                  "Visitors",
+                  "provide",
+                  "the displays to visitors."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "Our museum ___ (open) at ten every day.",
+                "answer": "opens"
+              },
+              {
+                "text": "The guide ___ (speak) to another group now.",
+                "answer": "is speaking"
+              },
+              {
+                "text": "We ___ (see) an old boat yesterday.",
+                "answer": "saw"
+              },
+              {
+                "text": "I have ___ (write) some notes.",
+                "answer": "written"
+              },
+              {
+                "text": "You should not ___ (touch) the glass.",
+                "answer": "touch"
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "She writes a note. (Future simple)",
+                "answer": "She will write a note."
+              },
+              {
+                "text": "The guide was helpful. (Negative without changing the meaning)",
+                "answer": "The guide was not unhelpful."
+              },
+              {
+                "text": "The model ship is very beautiful. (Exclamatory)",
+                "answer": "How beautiful the model ship is!"
+              },
+              {
+                "text": "You should read the label. (Imperative)",
+                "answer": "Read the label."
+              },
+              {
+                "text": "They visited the museum. (Interrogative; ask a real question)",
+                "answer": "Did they visit the museum?"
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nour class visited the museum in february. we saw pots baskets and model boats. the guide asked, did you read the labels. we nodded.",
+            "subitems": [],
+            "answer": "Our class visited the museum in February. We saw pots, baskets and model boats. The guide asked, \"Did you read the labels?\" We nodded."
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write an informal letter to your friend about a visit to a local museum. Describe two things you saw and explain what you learnt.",
+            "subitems": [],
+            "answer": "Dear Friend,\nI hope you are well. Last week our class visited a local museum with two teachers. I want to tell you about the trip because I think you would enjoy the place too.\n\nThe first object that interested me was an old clay pot. The guide explained how people used similar pots to store water. I also saw a wooden model of a fishing boat. Its shape helped me understand how boats carry people and goods on our rivers.\n\nWe read the labels, asked questions and made short notes. We were careful not to touch the objects. The visit taught me that ordinary things can tell important stories about the past.\n\nPlease write about an interesting place you have visited. I would love to read your news.\nYour loving friend"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 200 words on A Visit to a Local Museum.",
+            "subitems": [],
+            "answer": "A Visit to a Local Museum\n\nA museum helps us learn about the past through objects, pictures and stories. Recently our class visited a local museum. Two teachers went with us, and a guide welcomed us at the entrance. Before entering, we listened to the rules and put our bags in the proper place.\n\nThe first room contained clay pots, baskets and farming tools. I had seen similar baskets in my grandmother’s house, but I had never thought of them as objects worth studying. The guide explained how their materials and shapes suited different kinds of work.\n\nIn another room, we saw model boats and photographs of river journeys. The pictures showed people carrying goods, catching fish and travelling to markets. They helped me understand the importance of rivers in everyday life.\n\nWe read the labels and asked questions politely. I made a sketch of a clay pot and wrote down two facts about it. We did not touch any display because even a small careless action could damage an old object.\n\nAfter returning to school, we discussed our favourite exhibits. The visit made our history lessons feel more real. It also taught us to respect the work and skills of earlier generations. I would like to visit the museum again with my family."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "Our class visited a local museum. We arrived at ten in the morning. A guide welcomed us at the door. She showed us an old clay pot. It was kept inside a glass case. We read the labels quietly. We did not touch or move any object. The guide answered our questions. I drew a picture of the pot. The visit taught us about life in the past.",
+        "punctuationEdits": [
+          {
+            "from": "our class",
+            "to": "Our class"
+          },
+          {
+            "from": "february",
+            "to": "February"
+          },
+          {
+            "from": "we saw",
+            "to": "We saw"
+          },
+          {
+            "from": "pots baskets",
+            "to": "pots, baskets"
+          },
+          {
+            "from": "the guide",
+            "to": "The guide"
+          },
+          {
+            "from": "asked, ",
+            "to": "asked, \""
+          },
+          {
+            "from": "did you",
+            "to": "Did you"
+          },
+          {
+            "from": "the labels.",
+            "to": "the labels?"
+          },
+          {
+            "from": "the labels?",
+            "to": "the labels?\""
+          },
+          {
+            "from": "we nodded",
+            "to": "We nodded"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class7-paper2-authored-model-02",
+      "grade": 7,
+      "model": 2,
+      "writing": {
+        "letter-email": {
+          "topic": "permission to establish a small seed bank",
+          "choice": "formal-letter"
+        },
+        "composition": {
+          "topic": "Learning through a School Garden",
+          "words": 250
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nA group of students created (a) ___ seed bank in their school. They collected seeds (b) ___ local gardeners. Each packet carried (c) ___ label with the plant’s name. The packets were stored in a cool, (d) ___ cupboard. Students borrowed seeds and grew them (e) ___ small pots. They recorded how (f) ___ the seedlings became each week. Some plants needed more light (g) ___ others. The students shared their notes (h) ___ discussed the differences. Their teacher praised (i) ___ patience. The project helped everyone learn (j) ___ plants.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "from"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "dry"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "in"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "tall"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "than"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "and"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "their"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "about"
+              }
+            ],
+            "clues": [
+              "than",
+              "a",
+              "their",
+              "dry",
+              "about",
+              "from",
+              "and",
+              "tall",
+              "a",
+              "in"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A seed bank stores seeds for future use."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "Clear labels identify the contents of each packet."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "Young gardeners observe changes in their plants."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "A notebook holds records of weekly growth."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Regular watering keeps the soil moist."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A seed bank",
+                  "observe",
+                  "records of weekly growth."
+                ],
+                [
+                  "Clear labels",
+                  "keeps",
+                  "seeds for future use."
+                ],
+                [
+                  "Young gardeners",
+                  "identify",
+                  "the soil moist."
+                ],
+                [
+                  "A notebook",
+                  "stores",
+                  "changes in their plants."
+                ],
+                [
+                  "Regular watering",
+                  "holds",
+                  "the contents of each packet."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "If you water this plant regularly, it ___ (grow) well.",
+                "answer": "will grow"
+              },
+              {
+                "text": "The students ___ (measure) the seedlings when the bell rang.",
+                "answer": "were measuring"
+              },
+              {
+                "text": "We have ___ (choose) a sunny place.",
+                "answer": "chosen"
+              },
+              {
+                "text": "Neither the boys nor their sister ___ (be) absent today.",
+                "answer": "is"
+              },
+              {
+                "text": "She enjoys ___ (work) in the garden.",
+                "answer": "working"
+              }
+            ]
+          },
+          {
+            "id": "narration",
+            "instruction": "Change each sentence into indirect speech. Assume it is reported later from another place. The reporter is not part of any quoted “we” group; “us” still refers to the reporter and the original listeners. For pronoun reference, Mitu is a girl; Rafi and Anik are boys.",
+            "subitems": [
+              {
+                "text": "Mitu said, “I am watering the seedlings.”",
+                "answer": "Mitu said that she was watering the seedlings."
+              },
+              {
+                "text": "The gardener said to Rafi, “Did you close the gate?”",
+                "answer": "The gardener asked Rafi if he had closed the gate."
+              },
+              {
+                "text": "The teacher said to the pupils, “Keep a record of the growth.”",
+                "answer": "The teacher told the pupils to keep a record of the growth."
+              },
+              {
+                "text": "Anik said, “We planted these seeds yesterday.”",
+                "answer": "Anik said that they had planted those seeds the day before."
+              },
+              {
+                "text": "Mother said to me, “Do not touch that unknown plant.”",
+                "answer": "Mother told me not to touch that unknown plant."
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "The students planted the seeds. (Passive)",
+                "answer": "The seeds were planted by the students."
+              },
+              {
+                "text": "Only the gardener knew the answer. (Negative without changing the meaning)",
+                "answer": "None but the gardener knew the answer."
+              },
+              {
+                "text": "What a patient learner she is! (Assertive)",
+                "answer": "She is a very patient learner."
+              },
+              {
+                "text": "He is too weak to lift the pot. (Use so...that)",
+                "answer": "He is so weak that he cannot lift the pot."
+              },
+              {
+                "text": "You should not waste water. (Imperative)",
+                "answer": "Do not waste water."
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors. The tools belong to one gardener.\nthe gardeners tools were beside the gate. shila said, these arent ours. the children waited. whose gloves are these.",
+            "subitems": [],
+            "answer": "The gardener's tools were beside the gate. Shila said, \"These aren't ours.\" The children waited. Whose gloves are these?"
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write a formal letter to your headteacher requesting permission to establish a small seed bank. Explain its educational value and how it would be maintained.",
+            "subitems": [],
+            "answer": "The Headteacher\nYour School\nSubject: Permission to establish a small seed bank\nSir/Madam,\nWe, the students of Class Seven, request permission to establish a small seed bank in our school. We would like to collect seeds from common garden plants and learn how to store, label and grow them responsibly.\n\nThe project would support our science lessons. Students could compare germination and record plant growth without collecting rare or protected plants. We would use a dry cupboard selected by the science teacher and store only seeds approved as safe for classroom use. No student would taste any seed or bring pesticides to school.\n\nA small team could check the packets weekly, keep a borrowing register and clean the storage area. We propose beginning with a few labelled packets rather than a large collection.\n\nWe therefore request your permission and a teacher’s guidance for this project.\nYours obediently,\nOn behalf of Class Seven"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 250 words on Learning through a School Garden.",
+            "subitems": [],
+            "answer": "Learning through a School Garden\n\nA school garden can be more than a pleasant green corner. It can become an outdoor classroom where students learn by observing, asking questions and doing useful work together. Even a few pots can offer valuable lessons if they are cared for regularly.\n\nIn a garden, science becomes easier to understand. Students can watch seeds germinate, compare leaves and measure the growth of stems. They discover that plants need suitable amounts of water, light and space. Keeping records helps them notice changes that might otherwise escape attention.\n\nGardening also develops responsibility. A plant cannot explain that it has been forgotten, so students must follow a sensible care plan. Duties should be shared fairly, especially during holidays. Choosing common local plants and reusing safe containers can keep the project affordable.\n\nThe garden provides opportunities to practise other subjects. Students can calculate the amount of soil required for a bed, draw labelled diagrams or write descriptions of insects they observe. Group discussions encourage them to explain their ideas and listen to different suggestions.\n\nSafety and respect for living things are important. Students should use suitable tools under adult supervision, wash their hands afterwards and avoid handling unknown plants or chemicals. They should observe small animals without harming them.\n\nA successful school garden does not depend on producing the largest vegetables. Its real value lies in the habits it builds: patience, careful observation, teamwork and care for shared surroundings. When students see a plant grow through their own steady effort, learning becomes both memorable and rewarding."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "A group of students created a seed bank in their school. They collected seeds from local gardeners. Each packet carried a label with the plant’s name. The packets were stored in a cool, dry cupboard. Students borrowed seeds and grew them in small pots. They recorded how tall the seedlings became each week. Some plants needed more light than others. The students shared their notes and discussed the differences. Their teacher praised their patience. The project helped everyone learn about plants.",
+        "punctuationEdits": [
+          {
+            "from": "the gardeners",
+            "to": "The gardeners"
+          },
+          {
+            "from": "gardeners",
+            "to": "gardener's"
+          },
+          {
+            "from": "shila",
+            "to": "Shila"
+          },
+          {
+            "from": "said, ",
+            "to": "said, \""
+          },
+          {
+            "from": "these arent",
+            "to": "These arent"
+          },
+          {
+            "from": "arent",
+            "to": "aren't"
+          },
+          {
+            "from": "ours.",
+            "to": "ours.\""
+          },
+          {
+            "from": "the children",
+            "to": "The children"
+          },
+          {
+            "from": "whose gloves",
+            "to": "Whose gloves"
+          },
+          {
+            "from": "are these.",
+            "to": "are these?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class7-paper2-authored-model-03",
+      "grade": 7,
+      "model": 3,
+      "writing": {
+        "letter-email": {
+          "topic": "a book-repair activity at school",
+          "choice": "informal-email"
+        },
+        "composition": {
+          "topic": "Caring for Shared Property",
+          "words": 250
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nOur school started (a) ___ repair corner for damaged books. A teacher showed us how to work (b) ___. We placed each book (c) ___ a clean table. Torn pages were joined with suitable (d) ___. We did not cover any printed (e) ___. A loose cover needed more care (f) ___ a folded corner. We asked an adult (g) ___ help with difficult repairs. Each repaired book received (h) ___ small record card. The activity taught us to value books (i) ___ reduce waste. We felt proud (j) ___ our work.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "carefully"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "on"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "tape"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "words"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "than"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "for"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "and"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "of"
+              }
+            ],
+            "clues": [
+              "words",
+              "than",
+              "a",
+              "of",
+              "tape",
+              "on",
+              "and",
+              "for",
+              "carefully",
+              "a"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A torn page needs careful repair."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "Book covers protect the pages inside."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "The repair team works under a teacher’s guidance."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "Clear instructions help beginners avoid mistakes."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "A borrowing register lists the books taken home."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A torn page",
+                  "works",
+                  "beginners avoid mistakes."
+                ],
+                [
+                  "Book covers",
+                  "lists",
+                  "careful repair."
+                ],
+                [
+                  "The repair team",
+                  "protect",
+                  "the books taken home."
+                ],
+                [
+                  "Clear instructions",
+                  "needs",
+                  "under a teacher’s guidance."
+                ],
+                [
+                  "A borrowing register",
+                  "help",
+                  "the pages inside."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "The librarian ___ (sort) the books before we arrived.",
+                "answer": "had sorted"
+              },
+              {
+                "text": "While I was reading, my brother ___ (draw) a picture.",
+                "answer": "was drawing"
+              },
+              {
+                "text": "One of these books ___ (belong) to our teacher.",
+                "answer": "belongs"
+              },
+              {
+                "text": "You had better ___ (ask) before using the tape.",
+                "answer": "ask"
+              },
+              {
+                "text": "They have been ___ (repair) books since ten o’clock.",
+                "answer": "repairing"
+              }
+            ]
+          },
+          {
+            "id": "narration",
+            "instruction": "Change each sentence into indirect speech. Assume it is reported later from another place. The reporter is not part of any quoted “we” group; “us” still refers to the reporter and the original listeners. For pronoun reference, the librarian, Mina, Sadia and Rina are female; Rafi is male.",
+            "subitems": [
+              {
+                "text": "The librarian said, “I have checked the register.”",
+                "answer": "The librarian said that she had checked the register."
+              },
+              {
+                "text": "Rafi said to Mina, “Where did you find the book?”",
+                "answer": "Rafi asked Mina where she had found the book."
+              },
+              {
+                "text": "The teacher said to us, “Please handle the pages gently.”",
+                "answer": "The teacher requested us to handle the pages gently."
+              },
+              {
+                "text": "Sadia said, “I will return the atlas tomorrow.”",
+                "answer": "Sadia said that she would return the atlas the next day."
+              },
+              {
+                "text": "Father said to Rina, “Do not write on the cover.”",
+                "answer": "Father told Rina not to write on the cover."
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "The librarian checks every returned book. (Passive)",
+                "answer": "Every returned book is checked by the librarian."
+              },
+              {
+                "text": "No other shelf in the room is as high as this one. (Superlative)",
+                "answer": "This is the highest shelf in the room."
+              },
+              {
+                "text": "He is not an irresponsible borrower. (Affirmative without changing the meaning)",
+                "answer": "He is a responsible borrower."
+              },
+              {
+                "text": "The book is so heavy that I cannot carry it. (Use too...to)",
+                "answer": "The book is too heavy for me to carry."
+              },
+              {
+                "text": "Please return the book on time. (Assertive using should)",
+                "answer": "You should return the book on time."
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nlast wednesday, the library closed early. a notice announced repairs in september. the librarian said, please return the atlas. i put it in the box with maps magazines and newspapers.",
+            "subitems": [],
+            "answer": "Last Wednesday, the library closed early. A notice announced repairs in September. The librarian said, \"Please return the atlas.\" I put it in the box with maps, magazines and newspapers."
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write an informal email to your friend describing a book-repair activity at school. Explain what you did and what you learnt about caring for books.",
+            "subitems": [],
+            "answer": "To: friend@example.com\nSubject: Our book-repair activity\nDear Friend,\nLast Thursday I took part in a book-repair activity in our school library. Our librarian first explained how to handle damaged books without making the damage worse. We worked in small groups under her supervision.\n\nMy group checked for folded corners and loose covers. We placed the books on clean tables and recorded the damage. The librarian showed us which materials were suitable for simple repairs. She completed the difficult work herself. We did not use sharp tools or cover any printed words with tape.\n\nBy the end of the afternoon, several books were ready to return to the shelves. I learnt that caring for a book begins long before it becomes damaged. Clean hands, careful storage and timely returns can make a great difference.\n\nDoes your school arrange a similar activity? Please write and share your experience.\nYour friend"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 250 words on Caring for Shared Property.",
+            "subitems": [],
+            "answer": "Caring for Shared Property\n\nShared property includes the desks, library books, playground equipment and other facilities that many people use together. These things may not belong to one student personally, but that does not make them less valuable. Caring for them is a practical way to show respect for others.\n\nAt school, small careless actions can create lasting problems. Writing on a desk spoils the working space of the next class. Tearing a library page prevents another reader from understanding a story. Leaving a tap running wastes water that the whole community needs.\n\nGood habits begin with ordinary choices. We should use equipment for its intended purpose, return borrowed materials and keep shared spaces tidy. If something is broken, we should tell a responsible adult instead of hiding the damage or attempting a dangerous repair ourselves.\n\nSchools can support these habits by providing clear instructions and listening to students. Sometimes damage occurs because a shelf is overcrowded or a door is difficult to close. Reporting such problems helps adults make sensible improvements. Students should be encouraged to speak honestly without fear of unfair blame.\n\nCaring for shared property also teaches us about fairness. Everyone deserves a clean classroom and safe facilities, including those who will join the school after us. Money spent replacing avoidably damaged objects cannot be used for new books or activities.\n\nResponsibility does not end at the school gate. The same care should guide us in parks, buses and public libraries. When we protect common resources, we help create places that are welcoming and useful for everyone."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "Our school started a repair corner for damaged books. A teacher showed us how to work carefully. We placed each book on a clean table. Torn pages were joined with suitable tape. We did not cover any printed words. A loose cover needed more care than a folded corner. We asked an adult for help with difficult repairs. Each repaired book received a small record card. The activity taught us to value books and reduce waste. We felt proud of our work.",
+        "punctuationEdits": [
+          {
+            "from": "last wednesday",
+            "to": "Last wednesday"
+          },
+          {
+            "from": "wednesday",
+            "to": "Wednesday"
+          },
+          {
+            "from": "a notice",
+            "to": "A notice"
+          },
+          {
+            "from": "september",
+            "to": "September"
+          },
+          {
+            "from": "the librarian",
+            "to": "The librarian"
+          },
+          {
+            "from": "said, ",
+            "to": "said, \""
+          },
+          {
+            "from": "please return",
+            "to": "Please return"
+          },
+          {
+            "from": "the atlas.",
+            "to": "the atlas.\""
+          },
+          {
+            "from": "i put",
+            "to": "I put"
+          },
+          {
+            "from": "maps magazines",
+            "to": "maps, magazines"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class7-paper2-authored-model-04",
+      "grade": 7,
+      "model": 4,
+      "writing": {
+        "letter-email": {
+          "topic": "a school craft session",
+          "choice": "formal-email"
+        },
+        "composition": {
+          "topic": "Learning from Local Craftspeople",
+          "words": 250
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nA school radio team prepared (a) ___ short programme about local crafts. They invited a potter (b) ___ speak about her work. Before the interview, the students wrote clear (c) ___. They tested the microphone (d) ___ the recording began. The potter explained that clay must be prepared (e) ___. She showed them (f) ___ unfinished bowl. The students listened (g) ___ interest and did not interrupt. Afterwards, they thanked (h) ___ guest. The programme helped others learn (i) ___ a useful craft. It also made the team more (j) ___.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "to"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "questions"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "before"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "carefully"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "an"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "with"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "their"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "about"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "confident"
+              }
+            ],
+            "clues": [
+              "their",
+              "an",
+              "before",
+              "confident",
+              "a",
+              "with",
+              "questions",
+              "to",
+              "about",
+              "carefully"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A microphone records the speaker’s voice."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "Interviewers prepare questions in advance."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "A skilled potter shapes clay into useful objects."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "The radio team edits the recorded programme."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Listeners learn about local crafts."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A microphone",
+                  "shapes",
+                  "the recorded programme."
+                ],
+                [
+                  "Interviewers",
+                  "learn",
+                  "the speaker’s voice."
+                ],
+                [
+                  "A skilled potter",
+                  "prepare",
+                  "about local crafts."
+                ],
+                [
+                  "The radio team",
+                  "records",
+                  "clay into useful objects."
+                ],
+                [
+                  "Listeners",
+                  "edits",
+                  "questions in advance."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "By the time we reached the studio, the guest ___ (arrive).",
+                "answer": "had arrived"
+              },
+              {
+                "text": "Listen! Our interview ___ (play) on the school radio.",
+                "answer": "is playing"
+              },
+              {
+                "text": "Every member of the team ___ (have) a duty.",
+                "answer": "has"
+              },
+              {
+                "text": "Would you mind ___ (repeat) the last sentence?",
+                "answer": "repeating"
+              },
+              {
+                "text": "The potter ___ (make) this bowl last Tuesday.",
+                "answer": "made"
+              }
+            ]
+          },
+          {
+            "id": "narration",
+            "instruction": "Change each sentence into indirect speech. Assume it is reported later from another place. The reporter is not part of any quoted “we” group; “us” still refers to the reporter and the original listeners. For pronoun reference, the potter is a woman. The guest and technician are described in their sentences.",
+            "subitems": [
+              {
+                "text": "The potter said, “I make these bowls by hand.”",
+                "answer": "The potter said that she made those bowls by hand."
+              },
+              {
+                "text": "Mina said to the female guest, “How long did you train?”",
+                "answer": "Mina asked the female guest how long she had trained."
+              },
+              {
+                "text": "Our teacher said to us, “Do not interrupt the speaker.”",
+                "answer": "Our teacher told us not to interrupt the speaker."
+              },
+              {
+                "text": "The female guest said to us, “I can show you a finished basket.”",
+                "answer": "The female guest told us that she could show us a finished basket."
+              },
+              {
+                "text": "Rafi said to the male technician, “Will you check the microphone?”",
+                "answer": "Rafi asked the male technician if he would check the microphone."
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "The team recorded the interview. (Passive)",
+                "answer": "The interview was recorded by the team."
+              },
+              {
+                "text": "The programme was very informative. (Exclamatory)",
+                "answer": "How informative the programme was!"
+              },
+              {
+                "text": "She is the most careful speaker in the group. (Comparative)",
+                "answer": "She is more careful than any other speaker in the group."
+              },
+              {
+                "text": "The sound was too faint for us to hear. (Use so...that)",
+                "answer": "The sound was so faint that we could not hear it."
+              },
+              {
+                "text": "Nobody can deny the value of practice. (Interrogative without changing the meaning)",
+                "answer": "Who can deny the value of practice?"
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nthe guest said, \"I learnt pottery in cumilla.\" hasan asked, is it difficult. She replied, practice helps, but you mustnt give up.\"",
+            "subitems": [],
+            "answer": "The guest said, \"I learnt pottery in Cumilla.\" Hasan asked, \"Is it difficult?\" She replied, \"Practice helps, but you mustn't give up.\""
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write a formal email to a local craftsperson inviting them to speak at a school craft session. Explain the purpose, audience and proposed arrangements.",
+            "subitems": [],
+            "answer": "To: guest@example.com\nSubject: Invitation to a school craft session\nSir/Madam,\nWe are writing on behalf of our Class Seven activity group to invite you to speak at a school craft session. We would like our classmates to learn how local crafts are made and why these skills remain valuable.\n\nThe session would take place in a classroom with a teacher present. You could explain the main stages of your work and show a few safe, finished examples. We do not expect you to bring heavy equipment or carry out any hazardous process. Students would prepare questions and listen respectfully.\n\nOur teacher will contact you to agree on a convenient date and discuss travel or material costs before confirming the event. We will not announce your participation without your agreement.\n\nWe hope you will consider our invitation. Please let us know whether you are interested and what arrangements would be suitable.\nYours faithfully,\nThe Class Seven activity group"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 250 words on Learning from Local Craftspeople.",
+            "subitems": [],
+            "answer": "Learning from Local Craftspeople\n\nLocal craftspeople turn knowledge, practice and simple materials into useful or beautiful objects. Potters, weavers, basket makers and other skilled workers often learn through years of observation and effort. Students can gain a deeper understanding of their community by learning about this work respectfully.\n\nA conversation with a craftsperson can connect classroom lessons with everyday life. A potter may explain how the condition of clay affects a bowl. A weaver may demonstrate a repeating pattern. Such examples help students see science, mathematics and design working together.\n\nLearning from a craftsperson should not mean treating the person as a free source of entertainment. A school must agree on the purpose, time and costs of a visit in advance. The guest’s permission is also needed before photographs or recordings are shared. Respect includes recognising that skilled work supports a person’s livelihood.\n\nStudents have responsibilities too. They should prepare thoughtful questions, listen without interrupting and handle any displayed objects only when invited. Hazardous processes and tools should remain in trained adult hands. A safe demonstration can be interesting without allowing everyone to operate equipment.\n\nAfterwards, students can discuss what surprised them and compare different stages of the work. They might draw a process diagram or write a short report. They should credit the person who shared the knowledge rather than presenting it as their own discovery.\n\nLocal crafts are not simply reminders of the past. They can develop and adapt to new needs. Meeting the people behind them encourages curiosity, appreciation and respect for patient, skilled human effort."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "A school radio team prepared a short programme about local crafts. They invited a potter to speak about her work. Before the interview, the students wrote clear questions. They tested the microphone before the recording began. The potter explained that clay must be prepared carefully. She showed them an unfinished bowl. The students listened with interest and did not interrupt. Afterwards, they thanked their guest. The programme helped others learn about a useful craft. It also made the team more confident.",
+        "punctuationEdits": [
+          {
+            "from": "the guest",
+            "to": "The guest"
+          },
+          {
+            "from": "cumilla",
+            "to": "Cumilla"
+          },
+          {
+            "from": "hasan",
+            "to": "Hasan"
+          },
+          {
+            "from": "asked, ",
+            "to": "asked, \""
+          },
+          {
+            "from": "is it",
+            "to": "Is it"
+          },
+          {
+            "from": "difficult.",
+            "to": "difficult?"
+          },
+          {
+            "from": "difficult?",
+            "to": "difficult?\""
+          },
+          {
+            "from": "replied, ",
+            "to": "replied, \""
+          },
+          {
+            "from": "practice helps",
+            "to": "Practice helps"
+          },
+          {
+            "from": "mustnt",
+            "to": "mustn't"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class7-paper2-authored-model-05",
+      "grade": 7,
+      "model": 5,
+      "writing": {
+        "letter-email": {
+          "topic": "a school water-saving survey",
+          "choice": "informal-letter"
+        },
+        "composition": {
+          "topic": "Using Water Responsibly at School",
+          "words": 250
+        }
+      },
+      "output": {
+        "passages": [],
+        "tasks": [
+          {
+            "id": "gap-clues",
+            "instruction": "Fill in the gaps with the entries in the box. Use each entry once, without changing its form.\nOur class organised (a) ___ survey about the school water taps. We worked (b) ___ pairs and checked each tap. We did not attempt any (c) ___ ourselves. Instead, we wrote down where water was leaking. One tap was harder to close (d) ___ the others. We reported it (e) ___ the caretaker. A worker replaced (f) ___ damaged washer. The tap then closed (g) ___. We made posters to remind everyone to turn taps off (h) ___ use. The survey helped (i) ___ notice a problem we had ignored. Saving water is (j) ___ shared responsibility.",
+            "subitems": [
+              {
+                "text": "Fill gap (a).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (b).",
+                "answer": "in"
+              },
+              {
+                "text": "Fill gap (c).",
+                "answer": "repairs"
+              },
+              {
+                "text": "Fill gap (d).",
+                "answer": "than"
+              },
+              {
+                "text": "Fill gap (e).",
+                "answer": "to"
+              },
+              {
+                "text": "Fill gap (f).",
+                "answer": "a"
+              },
+              {
+                "text": "Fill gap (g).",
+                "answer": "properly"
+              },
+              {
+                "text": "Fill gap (h).",
+                "answer": "after"
+              },
+              {
+                "text": "Fill gap (i).",
+                "answer": "us"
+              },
+              {
+                "text": "Fill gap (j).",
+                "answer": "our"
+              }
+            ],
+            "clues": [
+              "after",
+              "our",
+              "than",
+              "repairs",
+              "us",
+              "a",
+              "properly",
+              "to",
+              "in",
+              "a"
+            ]
+          },
+          {
+            "id": "substitution",
+            "instruction": "Make five meaningful sentences using one fragment from each column. Use every fragment once. Other grammatically correct combinations may be accepted.",
+            "subitems": [
+              {
+                "text": "Write sentence 1.",
+                "answer": "A leaking tap wastes clean water."
+              },
+              {
+                "text": "Write sentence 2.",
+                "answer": "The survey team records the location of each leak."
+              },
+              {
+                "text": "Write sentence 3.",
+                "answer": "A trained worker repairs damaged fittings."
+              },
+              {
+                "text": "Write sentence 4.",
+                "answer": "Clear posters remind students to turn taps off."
+              },
+              {
+                "text": "Write sentence 5.",
+                "answer": "Responsible users report problems promptly."
+              }
+            ],
+            "table": {
+              "headers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "rows": [
+                [
+                  "A leaking tap",
+                  "repairs",
+                  "students to turn taps off."
+                ],
+                [
+                  "The survey team",
+                  "report",
+                  "clean water."
+                ],
+                [
+                  "A trained worker",
+                  "records",
+                  "problems promptly."
+                ],
+                [
+                  "Clear posters",
+                  "wastes",
+                  "damaged fittings."
+                ],
+                [
+                  "Responsible users",
+                  "remind",
+                  "the location of each leak."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "verbs",
+            "instruction": "Complete each sentence with the correct form of the verb in brackets.",
+            "subitems": [
+              {
+                "text": "If we notice a leak, we ___ (inform) the caretaker.",
+                "answer": "will inform"
+              },
+              {
+                "text": "The worker ___ (repair) the tap while we waited.",
+                "answer": "was repairing"
+              },
+              {
+                "text": "Each of the taps ___ (need) regular inspection.",
+                "answer": "needs"
+              },
+              {
+                "text": "The class has ___ (take) steps to reduce waste.",
+                "answer": "taken"
+              },
+              {
+                "text": "We should avoid ___ (leave) taps running.",
+                "answer": "leaving"
+              }
+            ]
+          },
+          {
+            "id": "narration",
+            "instruction": "Change each sentence into indirect speech. Assume it is reported later from another place. The reporter is not part of any quoted “we” group; “us” still refers to the reporter and the original listeners. For pronoun reference, the caretaker and worker are men; Rina and Mitu are girls.",
+            "subitems": [
+              {
+                "text": "The caretaker said, “I have found the leak.”",
+                "answer": "The caretaker said that he had found the leak."
+              },
+              {
+                "text": "Rina said to the worker, “Can you repair this tap?”",
+                "answer": "Rina asked the worker if he could repair that tap."
+              },
+              {
+                "text": "The teacher said to us, “Report any leak immediately.”",
+                "answer": "The teacher told us to report any leak immediately."
+              },
+              {
+                "text": "Mitu said, “We will check the taps tomorrow.”",
+                "answer": "Mitu said that they would check the taps the next day."
+              },
+              {
+                "text": "Father said to me, “Do not waste drinking water.”",
+                "answer": "Father told me not to waste drinking water."
+              }
+            ]
+          },
+          {
+            "id": "transformation",
+            "instruction": "Rewrite each sentence as directed in brackets.",
+            "subitems": [
+              {
+                "text": "A worker repaired the tap. (Passive)",
+                "answer": "The tap was repaired by a worker."
+              },
+              {
+                "text": "Water is very precious. (Exclamatory)",
+                "answer": "How precious water is!"
+              },
+              {
+                "text": "Only trained workers should repair the fittings. (Negative without changing the meaning)",
+                "answer": "None but trained workers should repair the fittings."
+              },
+              {
+                "text": "He was so tired that he could not continue the survey. (Use too...to)",
+                "answer": "He was too tired to continue the survey."
+              },
+              {
+                "text": "You should report a leaking tap. (Imperative)",
+                "answer": "Report a leaking tap."
+              }
+            ]
+          },
+          {
+            "id": "punctuation",
+            "instruction": "Rewrite the passage using correct punctuation and capital letters. Correct ten errors.\nour team checked the taps on monday. two boys notebooks were wet. the caretaker asked, where is the leak. we showed him.",
+            "subitems": [],
+            "answer": "Our team checked the taps on Monday. Two boys' notebooks were wet. The caretaker asked, \"Where is the leak?\" We showed him."
+          },
+          {
+            "id": "letter-email",
+            "instruction": "Write an informal letter to your cousin describing a school water-saving survey. Explain the problem you found, how it was reported and what changed afterwards.",
+            "subitems": [],
+            "answer": "Dear Cousin,\nI hope you are keeping well. Our class recently carried out a water-saving survey at school. I had never noticed how much water could be wasted by a tap that did not close properly.\n\nWe worked in pairs and recorded the condition of the taps. My partner and I found a steady leak near the playground. We wrote down its location and informed our teacher. We did not try to repair it ourselves because we lacked the tools and training.\n\nThe caretaker arranged for a worker to replace a damaged washer. We checked the tap afterwards and were pleased to see that it closed properly. Our group also made a poster reminding everyone to report leaks promptly.\n\nThe activity taught me that noticing a problem is only the first step. Reporting it clearly and following up can lead to a useful change. Please tell me about a practical project at your school.\nWith love,\nYour cousin"
+          },
+          {
+            "id": "composition",
+            "instruction": "Write a composition of about 250 words on Using Water Responsibly at School.",
+            "subitems": [],
+            "answer": "Using Water Responsibly at School\n\nClean water is needed for drinking, washing and keeping school facilities usable. Although students may see water flowing from a tap every day, the supply should not be taken for granted. Responsible use means meeting real needs without unnecessary waste. It does not mean avoiding proper handwashing or drinking too little.\n\nA school can begin by looking for simple problems. A tap that keeps dripping or a damaged pipe may waste water for hours. Students can report the location of a leak to a teacher or caretaker. Repairs should be carried out by trained adults, not by children experimenting with unfamiliar tools.\n\nDaily habits matter as well. We should turn taps off properly after use and use only the water we need. When cleaning classrooms, staff can choose sensible methods rather than leaving a hose running without purpose. Clear signs can remind users, but signs alone cannot fix faulty equipment.\n\nStudents can take part in safe awareness activities. A small survey might record which taps need attention, while a poster could explain how to report a problem. Any measurement activity must avoid wasting water simply to demonstrate that waste exists.\n\nSchools also need reliable maintenance and access to safe drinking water. Responsibility should not be placed entirely on individual children when broken facilities make good habits difficult. Adults must respond to reports and keep students informed about improvements.\n\nUsing water carefully connects personal behaviour with shared management. When students and staff work together, they can protect a useful resource while keeping health, comfort and cleanliness at the centre of school life."
+          }
+        ]
+      },
+      "editorialChecks": {
+        "completedCloze": "Our class organised a survey about the school water taps. We worked in pairs and checked each tap. We did not attempt any repairs ourselves. Instead, we wrote down where water was leaking. One tap was harder to close than the others. We reported it to the caretaker. A worker replaced a damaged washer. The tap then closed properly. We made posters to remind everyone to turn taps off after use. The survey helped us notice a problem we had ignored. Saving water is our shared responsibility.",
+        "punctuationEdits": [
+          {
+            "from": "our team",
+            "to": "Our team"
+          },
+          {
+            "from": "monday",
+            "to": "Monday"
+          },
+          {
+            "from": "two boys",
+            "to": "Two boys"
+          },
+          {
+            "from": "boys notebooks",
+            "to": "boys' notebooks"
+          },
+          {
+            "from": "the caretaker",
+            "to": "The caretaker"
+          },
+          {
+            "from": "asked, ",
+            "to": "asked, \""
+          },
+          {
+            "from": "where is",
+            "to": "Where is"
+          },
+          {
+            "from": "the leak.",
+            "to": "the leak?"
+          },
+          {
+            "from": "the leak?",
+            "to": "the leak?\""
+          },
+          {
+            "from": "we showed",
+            "to": "We showed"
+          }
+        ]
+      }
+    }
+  ]
+}

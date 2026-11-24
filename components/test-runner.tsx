@@ -1,4 +1,5 @@
 "use client";
+import MathText from "@/components/MathText";
 import { useEffect, useRef, useState, useTransition } from "react";
 import { submitAttempt, type Result } from "@/app/actions/tests";
 type Q = { id: string; text: string; options: Record<string, string> };
@@ -22,13 +23,13 @@ export default function TestRunner({ testId, minutes, qs }: { testId: string; mi
       {res && !res.ok && <p role="alert" className="mb-3 text-red-600">{res.error}</p>}
       <ol className="grid gap-4">{qs.map((q, i) => (
         <li key={q.id} className="rounded-lg border border-slate-200 bg-white p-4 text-sm">
-          <p className="font-medium">{i + 1}. {q.text}</p>
+          <p className="font-medium">{i + 1}. <MathText text={q.text}/></p>
           <div className="mt-2 grid gap-1.5">{Object.entries(q.options).map(([k, v]) => {
             const c = done?.review[q.id]?.correct;
             const cls = done ? (k === c ? "border-green-600 bg-green-50" : a[q.id] === k ? "border-red-500 bg-red-50" : "border-slate-200") : a[q.id] === k ? "border-royal bg-blue-50" : "border-slate-200";
-            return <button key={k} disabled={!!done} onClick={() => setA({ ...a, [q.id]: k })} className={`rounded-md border px-3 py-1.5 text-left ${cls}`}>{k}. {v}</button>;
+            return <button key={k} disabled={!!done} onClick={() => setA({ ...a, [q.id]: k })} className={`rounded-md border px-3 py-1.5 text-left ${cls}`}>{k}. <MathText text={v}/></button>;
           })}</div>
-          {done && <p className="mt-2 rounded-md bg-slate-50 p-2">{done.review[q.id]?.explanation}</p>}
+          {done && <p className="mt-2 rounded-md bg-slate-50 p-2"><MathText text={done.review[q.id]?.explanation ?? ""}/></p>}
         </li>))}
       </ol>
     </div>

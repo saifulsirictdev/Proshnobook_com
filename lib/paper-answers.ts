@@ -41,7 +41,7 @@ export function answerParts(
 }
 /** Split only top-level semicolons/newlines/equalities. Never rewrite algebra. */
 export function answerLines(text: string): string[] {
-  if (/\[\/?[bius]\]/.test(text)) return [text];
+  if (/\[\/?[bius]\]/.test(text) || /^\s*\|.+\|\s*$/m.test(text)) return [text];
   const lines: string[] = [];
   let start = 0,
     depth = 0,
@@ -66,7 +66,7 @@ export function equalitySteps(
   text: string,
 ): { left: string; right: string[] } | null {
   // An already formatted environment must be left to KaTeX unchanged.
-  if (/\\(?:begin|text|url|href|verb)\b|\[\/?[bius]\]/.test(text)) return null;
+  if (/\\(?:begin|text|url|href|verb)\b|\[\/?[bius]\]/.test(text) || /^\s*\|.+\|\s*$/m.test(text)) return null;
   const wrapped = /^\$[^$]+\$$/.test(text);
   const source = wrapped ? text.slice(1, -1) : text;
   const chunks: string[] = [];

@@ -1,0 +1,66 @@
+{
+  "status": "DRAFT_TEACHER_REVIEW_REQUIRED",
+  "chapter": 17,
+  "counts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100,
+    "total": 600
+  },
+  "questionTables": 443,
+  "totalTablesWithSolutions": 833,
+  "answerGraphs": 83,
+  "sourceAdaptedMCQ": 4,
+  "userScreenshotAdaptedCQ": 3,
+  "originalParameterVariants": 593,
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "files": [
+    {
+      "file": "docs/question-bank/ssc-math-ch17-questions-v1-backup.json",
+      "driveId": "1NitmPHg2o33e1IB5XRjeqeRJU6AvHq0e",
+      "url": "https://drive.google.com/file/d/1NitmPHg2o33e1IB5XRjeqeRJU6AvHq0e/view",
+      "bytes": 2215156,
+      "md5": "5f5ffb6a998c6c0bfd99a2d444f2190a",
+      "sha256": "d9008a721abe2629de9a668fb1fda0681228adf7ad520b6b842b1d5e048b0c9b",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch17-illustrated-v1-backup.zip",
+      "driveId": "1OX26gwjmFkKNHDptWe6-YRi1eO5ljr6i",
+      "url": "https://drive.google.com/file/d/1OX26gwjmFkKNHDptWe6-YRi1eO5ljr6i/view",
+      "bytes": 1569016,
+      "md5": "6730215cb2a6d1fc61331194221aaafb",
+      "sha256": "4169ea978735508bf138118b741043a06d0c284114ac847e6aaabcf85dbd342b",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    },
+    {
+      "file": "docs/question-bank/ssc-math-ch17-table-print-proof.pdf",
+      "driveId": "1YEHls6y8FMveCodY7a1ByFNFnZxONmOb",
+      "url": "https://drive.google.com/file/d/1YEHls6y8FMveCodY7a1ByFNFnZxONmOb/view",
+      "bytes": 323118,
+      "md5": "64c8a1cb974069388e1b8da3f86c9fdf",
+      "sha256": "0945c6aee932fb161ccaf1131c3cec444e9749f1a03a1e38bf93d4966e15aba8",
+      "uploadStatus": "success",
+      "localSizeAndMD5MatchDrive": true
+    }
+  ],
+  "verification": {
+    "focusedTests": 9,
+    "broadRegressionTests": 252,
+    "typecheck": "PASS",
+    "independentResponseWitnesses": 1788,
+    "graphHashCoordinateChecks": 83,
+    "mobileWidth": 390,
+    "desktopWidth": 1200,
+    "A4ProofSampleQuestions": 6
+  },
+  "notes": [
+    "JSON backup container is not direct importer input; extract importFiles[].payload or use original five JSON slices in ZIP.",
+    "HTML review contains all600; PDF is a SIX-question A4 sample only.",
+    "No DB import, teacher approval, asset deployment or sharing-permission changes.",
+    "Question/answer tables rendered by actual MathText bounded parser; local offline proof is not production admin/editor/save/reopen/full600-paper pagination certification.",
+    "Screenshot DB/MB2025 badges unverified; no board provenance inferred. Grouped statistics are estimates, integer inclusive classes use true boundaries ±0.5."
+  ]
+}

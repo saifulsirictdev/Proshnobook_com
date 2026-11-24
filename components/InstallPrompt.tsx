@@ -1,5 +1,6 @@
 "use client";
 import { BRAND } from "@/lib/brand";
+import { usePathname } from "next/navigation";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -70,6 +71,10 @@ const ShareIcon = () => (
 );
 
 export default function InstallPrompt() {
+  const pathname = usePathname();
+  // Never interrupt question selection/editing, header dialogs, saves or print
+  // with a delayed promotional overlay. Installation remains available elsewhere.
+  const preparingPaper = pathname === "/question-builder" || pathname?.startsWith("/question-builder/");
   const [phase, setPhase] = useState<"hidden" | "in" | "out">("hidden");
   const [canInstall, setCanInstall] = useState(false);
   const [ios, setIos] = useState(false);
@@ -98,6 +103,10 @@ export default function InstallPrompt() {
   }, []);
 
   useEffect(() => {
+    if (preparingPaper) {
+      setPhase("hidden");
+      return;
+    }
     if (isStandalone() || !shouldShow()) return;
     setIos(isIOS());
 
@@ -117,7 +126,7 @@ export default function InstallPrompt() {
       window.removeEventListener("beforeinstallprompt", onBeforeInstall);
       window.removeEventListener("appinstalled", onInstalled);
     };
-  }, [close]);
+  }, [close, preparingPaper]);
 
   useEffect(() => {
     if (phase !== "in") return;
@@ -139,7 +148,7 @@ export default function InstallPrompt() {
     close({ done: true });
   };
 
-  if (phase === "hidden") return null;
+  if (phase === "hidden" || preparingPaper) return null;
 
   const steps = ios
     ? [

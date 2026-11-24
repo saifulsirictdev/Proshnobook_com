@@ -1,0 +1,3435 @@
+{
+  "version": 1,
+  "item": "prepositions",
+  "status": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE",
+  "targetDistinctSets": 51,
+  "currentBlueprintGapCount": 5,
+  "currentBlueprintMarks": 5,
+  "answerStatus": "NOT_AUTHORED",
+  "sources": [
+    {
+      "fileId": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "filename": "SSC English 2nd Paper_2018_2024.pdf",
+      "sha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664"
+    },
+    {
+      "fileId": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "filename": "SSC_English_Test_Papers_English_2nd_papper_2025_(Exam2026).pdf",
+      "sha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5"
+    },
+    {
+      "fileId": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "filename": "SSC English 2nd Paper Reputed School Question .pdf",
+      "sha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb"
+    }
+  ],
+  "paperCoverage": [
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2023,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2022,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2020,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2019,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Combined",
+      "examYear": 2018,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Mohammadpur Model School & College, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Tejgaon Government High School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sher-E-Bangla Nagar Govt. Girls' High School‚ Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Khilgaon Govt. High School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Haji M.A. Gafur Govt. Secondary School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "SOS Hermann Gmeiner College, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Rani Bilashmoni Govt. Boys' High School, Gazipur",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kishoreganj Govt. Boy's High School, Kishoreganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Madhupur Shahid Smrity Higher Secondary School, Tangail",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Binapani Govt. Girls' High School, Gopalganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Rajbari Govt. High School, Rajbari",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Agricultural University High School, Mymensingh",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Unique Progressive School, Mymensingh",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sherpur Govt. Victoria Academy, Sherpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Bonowary Lal Govt. High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Saleha Ishaque Govt. Girls' High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Promothnath (P.N.) Girl's High School, Rajshahi",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Bogura Cantonment Public School & College, Bogura",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Harimohan Govt. High School, Chapainawabganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Qadirabad Cantonment Public School, Natore",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Naogaon Krishnadhan Govt. High School, Naogaon",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lions School and College, Saidpur, Nilphamari",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Gaibandha Govt. Boys' High School, Gaibandha",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kurigram Govt. Girls' High School, Kurigram",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lalmonirhat Govt. High School, Lalmonirhat",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Jhenaidah Govt. High School, Jhenaidah",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Dawood Public School and College, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Akij Collegiate School, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Khulna Collegiate Girls' School & KCC Women's College, Khulna",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "St. Paul's High School, Bagerhat",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kushtia Govt. Girls High School, Kushtia",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Our Lady of Fatema Girls High School, Cumilla",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Matripith Govt. Girls' High School, Chandpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Hasan Ali Govt. High School, Chandpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lakshmipur Adarsha Samad Government High School, Lakshmipur",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Chattogram Govt. Girls High School, Chattogram",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Ispahani Public School & College‚ Cumilla",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sant Scholastica Girls School, Chattogram",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Blue Bird High School and College, Sylhet",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Habiganj Government High School, Habiganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Jubilee High School, Sunamgonj",
+      "examType": "Test",
+      "examYear": 2025,
+      "foundSkills": [
+        "affixes",
+        "prepositions"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "RANGPUR CADET COLLEGE, RANGPUR",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "JOYPURHAT GIRLS’ CADET COLLEGE, JOYPURHAT",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "PABNA CADET COLLEGE, PABNA",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "prepositions",
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "CUMILLA CADET COLLEGE, CUMILLA",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "FAUJDARHAT CADET COLLEGE, CHATTOGRAM",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "SYLHET CADET COLLEGE, SYLHET",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "IDEAL SCHOOL & COLLEGE, MOTIJHEEL, DHAKA",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "A.K. HIGH SCHOOL & COLLEGE, DANIA, DHAKA",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "BAF SHAHEEN COLLEGE, DHAKA",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "GAZIPUR CANTONMENT PUBLIC SCHOOL & COLLEGE, GAZIPUR",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "BINDUBASINI GOVERNMENT GIRLS’ HIGH SCHOOL, TANGAIL",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "MANIKGANJ GOVERNMENT HIGH SCHOOL, MANIKGANJ",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "SHARIATPUR GOVERNMENT GIRLS’ HIGH SCHOOL, SHARIATPUR",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "KAZI KAMOR UDDIN GOVERNMENT INSTITUTION, MUNSHIGANJ",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "COX’S BAZAR GOVERNMENT GIRLS’ HIGH SCHOOL, COX’S BAZAR",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    },
+    {
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "BARGUNA ZILLA SCHOOL, BARGUNA",
+      "examType": "Test",
+      "examYear": 2024,
+      "foundSkills": [
+        "affixes"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "ssc-p2-prepositions-source-001",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2023,
+      "pdfPage": 19,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "Rangamati is one of (a) ____ most attractive hilly districts of Bangladesh. It is located (b) ____ the western bank of Kaptai lake. Most of the visitors visit the place for its (c) ____ eye-catching natural beauty. Nature has adorned this town (d) ____ all the elements of beauty. (e) ____ hills covered with green trees present (f) ____ unique sight. There are many tourist spots here. The suspension bridge of Rangamati is (g) ____ attraction for the tourists. It is also a home of several (h) ____ ethnic groups. (i) ____ trip to Rangamati would be (j) ____ outstanding experience for the nature lovers.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nRangamati is one of (a)  most attractive hilly districts of Bangladesh. It is located (b)  the \nwestern bank of Kaptai lake. Most of the visitors visit the place for its (c)  eye-catching natural \nbeauty. Nature has adorned this town (d)  all the elements of beauty. (e)  hills covered with \ngreen trees present (f)  unique sight. There are many tourist spots here. The suspension bridge \nof Rangamati is (g)  attraction for the tourists. It is also a home of several (h)  ethnic groups. \n(i)  trip to Rangamati would be (j)  outstanding experience for the nature lovers.",
+      "rawTextSha256": "a2b9311ec202a55bb1955c3ffe2548c16087de29afaaac36fabd3581f90ba87f",
+      "sourceContentSha256": "29d4a66d1ba987d4d0e370d8f4d51eeb93018e069409a67cd329fdcee579f31b",
+      "normalizedQuestionSha256": "cbbb64df47d8e7846aa65a56926247c915dac91529b951b2e36ad9b8a937c944",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-002",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2023,
+      "pdfPage": 21,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "Rangamati is one of (a) ____ most attractive hilly districts of Bangladesh. It is located (b) ____ the western bank of Kaptai lake. Most of the visitors visit the place for its (c) ____ eye-catching natural beauty. Nature has adorned this town (d) ____ all the elements of beauty. (e) ____ hills covered with green trees present (f) ____ unique sight. There are many tourist spots here. The suspension bridge of Rangamati is (g) ____ attraction for the tourists. It is also a home of several (h) ____ ethnic groups. (i) ____ trip to Rangamati would be (j) ____ outstanding experience for the nature lovers.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nRangamati is one of (a)  most attractive hilly districts of Bangladesh. It is located (b)  the \nwestern bank of Kaptai lake. Most of the visitors visit the place for its (c)  eye-catching natural \nbeauty. Nature has adorned this town (d)  all the elements of beauty. (e)  hills covered with \ngreen trees present (f)  unique sight. There are many tourist spots here. The suspension bridge \nof Rangamati is (g)  attraction for the tourists. It is also a home of several (h)  ethnic groups. \n(i)  trip to Rangamati would be (j)  outstanding experience for the nature lovers.",
+      "rawTextSha256": "a2b9311ec202a55bb1955c3ffe2548c16087de29afaaac36fabd3581f90ba87f",
+      "sourceContentSha256": "29d4a66d1ba987d4d0e370d8f4d51eeb93018e069409a67cd329fdcee579f31b",
+      "normalizedQuestionSha256": "cbbb64df47d8e7846aa65a56926247c915dac91529b951b2e36ad9b8a937c944",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE",
+        "EXACT_REPRINT"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE",
+      "duplicateOf": "ssc-p2-prepositions-source-001"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-003",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2023,
+      "pdfPage": 23,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "Computers are used (a) ____ many ways. For example, (b) ____ computer's memory may carry the names, addresses and flight numbers of air plane passengers. (c) ____ ticket agent can find (d) ____ almost instantly, by typing (e) ____ flight number, whether there is a seat available (f) ____ a particular plane. At flight time, the computer can make a list of all the passengers (g) ____ the plane. Computers can also solve many problems. (h) ____ many bits of information can be compared (i) ____ one another. Mathematical calculations can then be performed (j) ____ them.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nComputers are used (a)  many ways. For example, (b)  computer's memory may carry the \nnames, addresses and flight numbers of air plane passengers. (c)  ticket agent can find (d)  \nalmost instantly, by typing (e)  flight number, whether there is a seat available (f)  a \nparticular plane. At flight time, the computer can make a list of all the passengers (g)  the plane. \nComputers can also solve many problems. (h)  many bits of information can be compared (i)  \none another. Mathematical calculations can then be performed (j)  them.",
+      "rawTextSha256": "4c70d20472c88400e6e03c98548c197042f4239bfb2e01a11a69497733ef5dcf",
+      "sourceContentSha256": "4f2663d28aafc9bb9a6c0d522ed0f9981352fa628d00288395864de3e3dec84e",
+      "normalizedQuestionSha256": "7de0f9340bf1b2136d32e6d9aa5def75c5551e523b62c959f81eedc80c34ecb3",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-004",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2023,
+      "pdfPage": 25,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "Washing hands regularly is (a) ____ important activity. It keeps us safe (b) ____ corona-virus. How you wash your hand is also very (c) ____ important. First, you have to wet your hands (d) ____ clean, running water and apply soap. Then, rub your hands together with (e) ____ soap to create foam. Lather the backs of your hands, (f) ____ your fingers and (g) ____ your nails. Remember, you have to scrub your hands (h) ____ at least 20 seconds. After that rinse your hands well with clean and running water. Finally, dry your hands using (i) ____ clean towel or tissue paper. Learn the process (j) ____ washing hands and also educate your friends about it.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nWashing hands regularly is (a)  important activity. It keeps us safe (b)  corona-virus. How \nyou wash your hand is also very (c)  important. First, you have to wet your hands (d)  clean, \nrunning water and apply soap. Then, rub your hands together with (e)  soap to create foam. \nLather the backs of your hands, (f)  your fingers and (g)  your nails. Remember, you have to \nscrub your hands (h)  at least 20 seconds. After that rinse your hands well with clean and \nrunning water. Finally, dry your hands using (i)  clean towel or tissue paper. Learn the process \n(j)  washing hands and also educate your friends about it.",
+      "rawTextSha256": "1c291fca8fc65c9bab2f4abff94e44263cdd6031c0afdd756b69aab134f5a452",
+      "sourceContentSha256": "b2a4440cfabb3aec06004d21f7341fcf6cfb8ff1efaf59564c674636eea487a5",
+      "normalizedQuestionSha256": "131f9d621a04cff6dd0737b2d2446efd9a80a14e3fa02d73870d773124d28f38",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-005",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2023,
+      "pdfPage": 27,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "George Washington was the first president of America. This great man was obedient (a) ____ his parents. (b) ____ the age of 15 he decided to go (c) ____ studies at (d) ____ excellent school in Europe, where his brother was studying and had made all (e) ____ preparations for crossing (f) ____ Atlantic Ocean. He ordered his people to put his necessary things (g) ____ the ship. As he was preparing to leave, he went to see his (h) ____ mother. She was not happy thinking that her son had to struggle (i) ____ lot to acquire (j) ____ education only at 15. So, Washington did not go.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nGeorge Washington was the first president of America. This great man was obedient (a)  his \nparents. (b)  the age of 15 he decided to go (c)  studies at (d)  excellent school in Europe, \nwhere his brother was studying and had made all (e)  preparations for crossing (f)  Atlantic \nOcean. He ordered his people to put his necessary things (g)  the ship. As he was preparing to \nleave, he went to see his (h)  mother. She was not happy thinking that her son had to struggle (i) \n lot to acquire (j)  education only at 15. So, Washington did not go.",
+      "rawTextSha256": "0594631d6ef1f5cb820a7def0a020bd9df4dd7082afd95349280f118e48817b5",
+      "sourceContentSha256": "8e2c7c7dd33f7cf55d0a6f4f0e4335ff3a3f5939e7c96b246a14c74c24460d7b",
+      "normalizedQuestionSha256": "5b86e74dc10cd07289361e669ac9afca9f180df89c8c7fcaaf3da330f4dc35a2",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-006",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2023,
+      "pdfPage": 29,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "There are two types (a) ____ dreams. One is just (b) ____ dream and completely baseless. Anybody may meet (c) ____ it while sleeping. Another dream is real. It is very desirable to (d) ____ conscious and great person. Generally, it is called (e) ____ future plan. To be a great person this dream is (f) ____ must. Then go ahead (g) ____ the working field. Really, if there is no real dream, there is no interest (h) ____ action. True successfully depends (i) ____ a real dream. Remember, a life without (j) ____ aim or dream is like a ship without a rudder.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nThere are two types (a)  dreams. One is just (b)  dream and completely baseless. Anybody \nmay meet (c)  it while sleeping. Another dream is real. It is very desirable to (d)  conscious \nand great person. Generally, it is called (e)  future plan. To be a great person this dream is (f) \n must. Then go ahead (g)  the working field. Really, if there is no real dream, there is no \ninterest (h)  action. True successfully depends (i)  a real dream. Remember, a life without (j) \n aim or dream is like a ship without a rudder.",
+      "rawTextSha256": "6db53bdc79417684357250f8fec2aea0047b5eef5e26035ce9283635ba737781",
+      "sourceContentSha256": "5d4f349cc454a428cab505b6172eb5d6d6949ac378bc66a71176f3eed5ae2111",
+      "normalizedQuestionSha256": "0966481b1435fe958d5dc93d503f9ba954dfa5963b414fa6f94134d5d5a8a2aa",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-007",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2023,
+      "pdfPage": 31,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "Covid-19 is (a) ____ infectious diseases which has taken away many lives (b) ____ the world. It has created economic crisis (c) ____ many countries of the world. Many people have lost their jobs. Many small traders compelled to leave their trades. No doubt, it is a great disaster (d) ____ the people of the world. Though the corona virus is very (e) ____ deadly, it has created awareness (f) ____ mass people. Besides we have learnt many things (g) ____ it so far. Earlier, we were indifferent (h) ____ some rules of health and hygiene. Due to Covid-19, people of the world have become more conscious regarding the rules of health. Now a days, we try to maintain social distancing. We avoid (i) ____ massive gatherings of people. We also have made a good habit (j) ____ washing hands several times a day.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nCovid-19 is (a)  infectious diseases which has taken away many lives (b)  the world. It has \ncreated economic crisis (c)  many countries of the world. Many people have lost their jobs. Many \nsmall traders compelled to leave their trades. No doubt, it is a great disaster (d)  the people of the \nworld. Though the corona virus is very (e)  deadly, it has created awareness (f)  mass people. \nBesides we have learnt many things (g)  it so far. Earlier, we were indifferent (h)  some rules \nof health and hygiene. Due to Covid-19, people of the world have become more conscious regarding \nthe rules of health. Now a days, we try to maintain social distancing. We avoid (i)  massive \ngatherings of people. We also have made a good habit (j)  washing hands several times a day.",
+      "rawTextSha256": "3eb3123798762e6d03627b226b5502dd01aa2c0fd893619e4b70fa7e99002c00",
+      "sourceContentSha256": "b1e8637e713b3074f65d19fed263a15e937c7c1f6c534c2eed087b7b94fee22e",
+      "normalizedQuestionSha256": "a4eeadb540eace2a304806e8fca4662cd683d5f4ebaa2d12e6775e78f14d4fe5",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-008",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2023,
+      "pdfPage": 33,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "There is no doubt that youth is (a) ____ best time of (b) ____ life. This is the time when it is (c) ____ most important (d) ____ one to remember (e) ____ maxim, \"As you sow, so shall you reap.\" One must sow (f) ____ seeds (g) ____ industry, truthfulness and other virtues (h) ____ this season (i) ____ reap the harvest of prosperity and happiness. Whatever takes root in a man (j) ____ this time lasts throughout the rest of his life and moulds his future.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nThere is no doubt that youth is (a)  best time of (b)  life. This is the time when it is (c)  \nmost important (d)  one to remember (e)  maxim, \"As you sow, so shall you reap.\" One must \nsow (f)  seeds (g)  industry, truthfulness and other virtues (h)  this season (i)  reap \nthe harvest of prosperity and happiness. Whatever takes root in a man (j)  this time lasts \nthroughout the rest of his life and moulds his future.",
+      "rawTextSha256": "8a144fdfc9b122a312a3ab5d6d3d70b44b1f77237b7de7d7f82a4dd09ecb4da6",
+      "sourceContentSha256": "290913d93dccb99646fab66fa946e12e5ffb10e003dea98f8caf9f3c9f39bd69",
+      "normalizedQuestionSha256": "6447b496fa8357b266de0718c4b688e630590a47064caa9b486c8d99524c3cf2",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-009",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2023,
+      "pdfPage": 35,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions and articles (a, an, the & zero article).",
+      "sourcePassage": "There is no doubt that youth is (a) ____ best time of (b) ____ life. This is the time when it is (c) ____ most important (d) ____ one to remember (e) ____ maxim, \"As you sow, so shall you reap\". One must sow (f) ____ seeds (g) ____ industry, truthfulness and other virtues (h) ____ this season (i) ____ reap the harvest of prosperity and happiness. Whatever takes root in a man (j) ____ this time lasts throughout the rest of his life and moulds his future.",
+      "sourceRawText": "Fill in the blanks with prepositions and articles (a, an, the & zero article). \n0.5  10 = 5 \n \nThere is no doubt that youth is (a)  best time of (b)  life. This is the time when it is (c)  \nmost important (d)  one to remember (e)  maxim, \"As you sow, so shall you reap\". One must \nsow (f)  seeds (g)  industry, truthfulness and other virtues (h)  this season (i)  reap \nthe harvest of prosperity and happiness. Whatever takes root in a man (j)  this time lasts \nthroughout the rest of his life and moulds his future.",
+      "rawTextSha256": "a4a696aef0cb6e601cdbff055b1ee94caa9c5546736546011137d666658e5c56",
+      "sourceContentSha256": "871e53415e7d338445cdc3966e8ec75def186d1e38cb208d079512b09713e980",
+      "normalizedQuestionSha256": "6447b496fa8357b266de0718c4b688e630590a47064caa9b486c8d99524c3cf2",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE",
+        "EXACT_REPRINT"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE",
+      "duplicateOf": "ssc-p2-prepositions-source-008"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-010",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dhaka",
+      "examYear": 2022,
+      "pdfPage": 37,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "It was 4 in the afternoon. Hamid was studying (a) ____ the library when his cell phone rang. It was his younger sister, Runa. She said that she was standing (b) ____ front of (c) ____ shopping mall opposite Hamid’s office and asked him to meet her there as soon as possible. Hamid hurried out of (d) ____ library. As he went (e) ____ the street, he noticed that Runa was not alone. She was holding (f) ____ three to four years old girl (g) ____ hand. (h) ____ child was crying and Runa was trying frantically (i) ____ to pacify her. Some passers-by were looking (j) ____ them suspiciously. When he reached her, she started to explain.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nIt was 4 in the afternoon. Hamid was studying (a)  the library when his cell phone rang. It was \nhis younger sister, Runa. She said that she was standing (b)  front of (c)  shopping mall \nopposite Hamid’s office and asked him to meet her there as soon as possible. Hamid hurried out of \n(d)  library. As he went (e)  the street, he noticed that Runa was not alone. She was holding \n(f)  three to four years old girl (g)  hand. (h)  child was crying and Runa was trying \nfrantically (i)  to pacify her. Some passers-by were looking (j)   them suspiciously. When he \nreached her, she started to explain.",
+      "rawTextSha256": "585be36eaf4f03485467a0df56a73729d00bd2284cce7678690bbaa8a565ce29",
+      "sourceContentSha256": "121ed319f4381a110bde82b15e69effeb838b510fde18f11407a1f8cac86f547",
+      "normalizedQuestionSha256": "786ea145bf9382e13803d365a6819596674c255fa19336ff0db355ea1a89564b",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-011",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Rajshahi",
+      "examYear": 2022,
+      "pdfPage": 38,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "It is needless to say that washing hands is very important for us. It is certainly (a) ____ important issue. Washing hands regularly can save us from a kind of infectious disease (b) ____ COVID-19. Washing hands with soap is (c) ____ must. We have to wash hands (d) ____ taking meal and (e) ____ using the toilet. Again, we should wash hands after touching sick members (f) ____ our family and pet animals. Washing hands is also strictly recommended after coming back (g) ____ outside. Washing hands in (h) ____ proper wav may help us stay away from corona virus, (i) ____ reason is that corona virus spreads through touch. So, it is (j) ____ important to keep our hands clean.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nIt is needless to say that washing hands is very important for us. It is certainly (a)  important \nissue. Washing hands regularly can save us from a kind of infectious disease (b)  COVID-19. \nWashing hands with soap is (c)  must. We have to wash hands (d)  taking meal and (e)  \nusing the toilet. Again, we should wash hands after touching sick members (f)  our family and \npet animals. Washing hands is also strictly recommended after coming back (g)  outside. \nWashing hands in (h)  proper wav may help us stay away from corona virus, (i)  reason is \nthat corona virus spreads through touch. So, it is (j)  important to keep our hands clean.",
+      "rawTextSha256": "45da37276301a47aedf4e69f5279f49d1f60f3a5b444783350fa386ce159535b",
+      "sourceContentSha256": "2864635370c49d270395c2050709ea7f8dee819ef75bc5d07be11a5fc54c289a",
+      "normalizedQuestionSha256": "c515d980b044b54a041966dc79b829903c95c210555317919aca3fba105dab4b",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-012",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Jashore",
+      "examYear": 2022,
+      "pdfPage": 39,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Road accidents have recently become (a) ____ regular phenomenon in our country. As a result of the accidents, many persons fall a victim (b) ____ untimely death. It is reported that most of the accidents occur (c) ____ the violation of traffic rules, by (d) ____ unskilled drivers and unconscious passers-by. Many unlicensed and faulty vehicles also endanger (e) ____ passengers and (f) ____ passers-by. So, in order to save us (g) ____ the accidents (h) ____ government is trying to create awareness (i) ____ the people and has passed strict laws (j) ____ the accused.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nRoad accidents have recently become (a)  regular phenomenon in our country. As a result of the \naccidents, many persons fall a victim (b)  untimely death. It is reported that most of the \naccidents occur (c)  the violation of traffic rules, by (d)  unskilled drivers and unconscious \npassers-by. Many unlicensed and faulty vehicles also endanger (e)  passengers and (f)  \npassers-by. So, in order to save us (g)  the accidents (h)  government is trying to create \nawareness (i)  the people and has passed strict laws (j)  the accused.",
+      "rawTextSha256": "7a87ce4ee6aba41c450be3e22379c6f400893844277fcfc95708086fb6771ad3",
+      "sourceContentSha256": "7d873cb4d574ada896da005fa5998b570703c2abf9626f48cf0a3faa7da37a1f",
+      "normalizedQuestionSha256": "93b7100399cc35c0a4cd47016ede9adf48e7281825d4b674ab5c55ebbbe5e50a",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-013",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Cumilla",
+      "examYear": 2022,
+      "pdfPage": 40,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Travelling has (a) ____ great influence (b) ____ our minds. The human mind always craves (c) ____ change. There is none who does not feel a thrill of joy (d) ____ the new sight of experience. The traveller comes in contact (e) ____ various types of people. If he moves (f) ____ with the observant eyes, he can acquire (g) ____ lot of practical knowledge about men and things of (h) ____ world which books alone cannot provide. Travelling gives us (i) ____ opportunity to enjoy the more enchanting sights of nature. It helps one enrich his knowledge and makes him completely (j) ____ perfect man.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nTravelling has (a)  great influence (b)  our minds. The human mind always craves (c)  \nchange. There is none who does not feel a thrill of joy (d)  the new sight of experience. The \ntraveller comes in contact (e)  various types of people. If he moves (f)  with the observant \neyes, he can acquire (g)  lot of practical knowledge about men and things of (h)  world which \nbooks alone cannot provide. Travelling gives us (i)  opportunity to enjoy the more enchanting \nsights of nature. It helps one enrich his knowledge and makes him completely (j)  perfect man.",
+      "rawTextSha256": "46efb6204a24683c511d9f965f487d72271b68ae8921a85f598d7649a2997bf8",
+      "sourceContentSha256": "e6fedf9f960f48d12bcb74610d231f7ecb5d8c515a5b5ada91c7bac943fb7d0a",
+      "normalizedQuestionSha256": "26f9fe0ec0abc171df0abd1a9c495f697a458284ffccc783c70bca33afc0d051",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-014",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Chattogram",
+      "examYear": 2022,
+      "pdfPage": 41,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Nowadays, parents are very conscious (a) ____ the harmful effect of punishment (b) ____ children. Child psychologists think that both (c) ____ physical and mental punishments can be disastrous for (d) ____ child’s growth and development. It may lead (e) ____ fear and hatred of the person who punishes (f) ____ child. Again, if (g) ____ child is punished, it may lack initiative. It may also feel hostile (h) ____ others. So, rude (i) ____ behaviour gradually develops (j) ____ him.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nNowadays, parents are very conscious (a)  the harmful effect of punishment (b)  children. \nChild psychologists think that both (c)  physical and mental punishments can be disastrous for \n(d)  child’s growth and development. It may lead (e)  fear and hatred of the person who \npunishes (f)  child. Again, if (g)  child is punished, it may lack initiative. It may also feel \nhostile (h)  others. So, rude (i)  behaviour gradually develops (j)  him.",
+      "rawTextSha256": "66d2e71a29d33b44f8d60ec2fdf24ac3ce9591b0c57f241aab52438e68f694cb",
+      "sourceContentSha256": "2076bebc82cf4aec994fea11970b339233c714e0a9081e21801774e2267f3c86",
+      "normalizedQuestionSha256": "11afa64a0ebd89851d1e5c7b3abd7084f1e85ca2c2fd1bafa477bdc2b3b2910b",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-015",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Sylhet",
+      "examYear": 2022,
+      "pdfPage": 42,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Friendship is (a) ____ great human virtue. It is (b) ____ love and affection between two persons. It binds more than one person (c) ____ good relationship and inspires each other to share (d) ____ joys and sorrows (e) ____ life. Man is (f) ____ social being. He cannot live alone. So, he wants (g) ____ company. He yearns (h) ____ giving and receiving love and affection. Friendship grows between the persons (i) ____ similar taste, feelings and thoughts. It grows out of mutual understanding and give and take. It generally grows (j) ____ two persons of the same age.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nFriendship is (a)  great human virtue. It is (b)  love and affection between two persons. It \nbinds more than one person (c)   good relationship and inspires each other to share (d)  joys \nand sorrows (e)  life. Man is (f)  social being. He cannot live alone. So, he wants (g)  \ncompany. He yearns (h)  giving and receiving love and affection. Friendship grows between the \npersons (i)  similar taste, feelings and thoughts. It grows out of mutual understanding and give \nand take. It generally grows (j)  two persons of the same age.",
+      "rawTextSha256": "e2bfc6ce4985af5f1e5f38e87761b9a6878a4b8246c336e5530a06c0e2e9c3f6",
+      "sourceContentSha256": "3a34cf27232781650a5c8bef94e67e68d3668e945b7a469cdf5f59d7ba8f3f18",
+      "normalizedQuestionSha256": "cc9340f6628831a27be0754bd2d2d8f6256afe10a891aa87f50fb51b86f5142a",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-016",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Barishal",
+      "examYear": 2022,
+      "pdfPage": 43,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Metro rail is (a) ____ mega project in the development history (b) ____ Bangladesh. To make traffic (c) ____ movement easy and smooth in the city of Dhaka, metro rail is sure to play (d) ____ great role. The mega city of almost two crore people is struggling badly with its narrow and (e) ____ over crowded roads. But metro rail is sure to come as a sigh of relief. With its (f) ____ uninterrupted movement, it will carry sixty thousand passengers per hour (g) ____ both ends. 16th December, 2022 is going to be (h) ____ unforgettable day for (i) ____ dwellers of Dhaka city. (j) ____ this day. the red and green coloured coaches of metro rail will take the passengers to their destinations with ease and comfort.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nMetro rail is (a)  mega project in the development history (b)  Bangladesh. To make traffic (c) \n movement easy and smooth in the city of Dhaka, metro rail is sure to play (d)  great role. \nThe mega city of almost two crore people is struggling badly with its narrow and (e)  over \ncrowded roads. But metro rail is sure to come as a sigh of relief. With its (f)  uninterrupted \nmovement, it will carry sixty thousand passengers per hour (g)  both ends. 16th December, 2022 \nis going to be (h)  unforgettable day for (i)  dwellers of Dhaka city. (j)  this day. the red \nand green coloured coaches of metro rail will take the passengers to their destinations with ease and \ncomfort.",
+      "rawTextSha256": "58abfa25dfe368ca1effb012c66648d79ff2d1004ca144cdf9640ea5cd1bbe76",
+      "sourceContentSha256": "8dfd785158706bbb107d131bafd1a6bae8ef5e7b3d31670cb8711d4363b89971",
+      "normalizedQuestionSha256": "c510d8920ed813dc1220e17b9674f18616a1db676d79b2e50e6b2a1f22f8aa62",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-017",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Dinajpur",
+      "examYear": 2022,
+      "pdfPage": 44,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "Bangladesh is a free land but she is beset (a) ____ many problems. The use of poly bags is very dreadful. Recently it has become (b) ____ great threat (c) ____ our environment. (d) ____ used poly bags block the drainage system. As a result, the low-lying areas (e) ____ the towns and the cities go under (f) ____ dirty water when it rains heavily. The used poly bags also destroy (g) ____ fertility of our soil. Our government has already banned the production (h) ____ poly bags. Yet some greedy and (i) ____ dishonest businessmen are producing the bags (j) ____ their own interest.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nBangladesh is a free land but she is beset (a)  many problems. The use of poly bags is very \ndreadful. Recently it has become (b)  great threat (c)  our environment. (d)  used poly \nbags block the drainage system. As a result, the low-lying areas (e)  the towns and the cities go \nunder (f)  dirty water when it rains heavily. The used poly bags also destroy (g)  fertility of \nour soil. Our government has already banned the production (h)  poly bags. Yet some greedy and \n(i)  dishonest businessmen are producing the bags (j)  their own interest.",
+      "rawTextSha256": "c9c846efc2a50ee5abb15e29a7ff2d55d2ed520268d3694cb1a4238af7fcdf64",
+      "sourceContentSha256": "0eae3d1d324d9aaab10668fb1e7e30a7f15ac254f56c1b977f390e6cca02f2d4",
+      "normalizedQuestionSha256": "0ff8a401683cc098b32cfa1fc69f98b913e3ffa6c6d453ac202cadf2cd4c3e93",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-018",
+      "sourceFile": "1ku0ftd_VEEAD2DkQVRQ-5qlxrKTGpJyU",
+      "sourceSha256": "d1fb691fca0f410d6c46e95ad9c0b3f1b02d8da9f164c3f28d722a0c4463c664",
+      "sourceKind": "board",
+      "board": "Mymensingh",
+      "examYear": 2022,
+      "pdfPage": 45,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Fill in the blanks with prepositions & articles (a, an, the & zero article).",
+      "sourcePassage": "A national flag is (a) ____ matter of pride for a nation. Every independent nation in (b) ____ world has a national flag (c) ____ its own. As (d) ____ independent nation, we have a national flag. Our national flag is (e) ____ symbol of independence, (f) ____ sovereignty and prosperity. Red and green colours are used in it. The red colour used in (g) ____ flag indicates (h) ____ martyrs who laid down their valuable lives (i) ____ the independence of our country. We must uphold its (j) ____ honour.",
+      "sourceRawText": "Fill in the blanks with prepositions & articles (a, an, the & zero article). \n0.5  10 = 5 \n \nA national flag is (a)  matter of pride for a nation. Every independent nation in (b)  world has \na national flag (c)  its own. As (d)  independent nation, we have a national flag. Our national \nflag is (e)  symbol of independence, (f)  sovereignty and prosperity. Red and green colours are \nused in it. The red colour used in (g)  flag indicates (h)  martyrs who laid down their valuable \nlives (i)  the independence of our country. We must uphold its (j)  honour.",
+      "rawTextSha256": "2bd6f6d565266a516d8a233adfdf898b934c221a687313ebd78ce1a84f87c6e7",
+      "sourceContentSha256": "2bc16d000fe1498f420f806ea5187bd67269eee644d5859e8e44c8a14de363ca",
+      "normalizedQuestionSha256": "d42bed662b497ba3bb09879fd028facab802f401f3c6f59fb515a4c9897321ca",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-019",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Mohammadpur Model School & College, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 2,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable preposition.",
+      "sourcePassage": "Adopting unfair means (a) ____the examination is offence. It degrades the standard (b) ____education. If the students of our country do not acquire true education, there will be no development (c) ____country. An examinee should study seriously so that he can cut a good figure in the examination. To acquire true education should be the only aim in the lives (d) ____all students. An educated man cannot support adopting any unfair means in the examination (e) ____all.",
+      "sourceRawText": "Fill in the blanks with suitable preposition. \n15=5 \n \nAdopting unfair means (a) —— the examination is offence. It degrades the standard (b) —\n— education. If the students of our country do not acquire true education, there will be no \ndevelopment (c) —— country. An examinee should study seriously so that he can cut a \ngood figure in the examination. To acquire true education should be the only aim in the \nlives (d) —— all students. An educated man cannot support adopting any unfair means in \nthe examination (e) —— all.",
+      "rawTextSha256": "f09c97e10e6d69593a854fd5a4abe349046255afb9ae247f49a5527865a51635",
+      "sourceContentSha256": "08dd241b6d88dad02844e31ade203d1e7bdc5cd539e148da8ed63fb7453c3653",
+      "normalizedQuestionSha256": "595710b03a5d2f518416d9dcd80eb4da2c7157a80d23ca64a0fdfdf58459b582",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-020",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Tejgaon Government High School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 3,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with appropriate preposition.",
+      "sourcePassage": "Email has brought a revolution (a) ____modern communication. Messages can be transmitted (b) ____one country to another (c) ____seconds. Trade and commerce has become greatly dependent (d) ____this speedy mode (e) ____communication.",
+      "sourceRawText": "Fill in the blanks with appropriate preposition.  \n15=5 \n \nEmail has brought a revolution (a) —— modern communication. Messages can be \ntransmitted (b) —— one country to another (c) —— seconds. Trade and commerce has \nbecome greatly dependent (d) —— this speedy mode (e) —— communication.",
+      "rawTextSha256": "fb8af8c4823558acdaccdb09242fb0cc55e3f76b98bf11dbc7fe54f0722a163a",
+      "sourceContentSha256": "07f28925790929abbb2173ad452cfe7ed6e1e52ca1068b7426560c9f4af68f23",
+      "normalizedQuestionSha256": "8783cd9af96da722e674145a693207c2fd77a6861a72a34520574485915fe209",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-021",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sher-E-Bangla Nagar Govt. Girls' High School‚ Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 5,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate preposition.",
+      "sourcePassage": "The Dhaka of the fifties is now known as old Dhaka. It is associated (a) ____formidable hazards like roads clogged (b) trucks, rickshaws, pushcarts, vendors, piled up goods and a gathering of pedestrians, buyers, labourers etc. There is a little space left (c) ____traffic, so it takes a bit of courage for someone coming (d) ____other parts of the city to negotiate the roads of old Dhaka. Warehouses, shops of all kinds, restaurants etc. are set (e) in the floors of a large number of houses.",
+      "sourceRawText": "Fill in the gaps with appropriate preposition. \n15=5 \n \nThe Dhaka of the fifties is now known as old Dhaka. It is associated (a) —— formidable \nhazards like roads clogged (b) trucks, rickshaws, pushcarts, vendors, piled up goods and a \ngathering of pedestrians, buyers, labourers etc. There is a little space left (c) —— traffic, so \nit takes a bit of courage for someone coming (d) —— other parts of the city to negotiate the \nroads of old Dhaka. Warehouses, shops of all kinds, restaurants etc. are set (e) in the \nfloors of a large number of houses.",
+      "rawTextSha256": "04fcd0e981dfcd16dbbb02c24fc17f0fdd153336e6000c7bf29e468981b0be7d",
+      "sourceContentSha256": "ce09232e892bd666d1683606417a70e421b3c20b211189e8dbd2499232634034",
+      "normalizedQuestionSha256": "20cffb4e0e3f850e98eeba0adb13562170a459910825a47da03a7db9c77ee87e",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-022",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Khilgaon Govt. High School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 6,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable preposition.",
+      "sourcePassage": "King Midas, amazed (a) ____his golden touch, went back quickly to the palace. As he entered (b) ____it, his little daughter ran (c) ____to him and he took her (d) ____his arms. Instantly she turned (e) ____gold.",
+      "sourceRawText": "Complete the text with suitable preposition. \n15=5 \n \nKing Midas, amazed (a) —— his golden touch, went back quickly to the palace. As he \nentered (b) —— it, his little daughter ran (c) —— to him and he took her (d) —— his arms. \nInstantly she turned (e) —— gold.",
+      "rawTextSha256": "bb13c7f540cb19e4ba1be71148f516a03b143744781a7562e451a072b11af999",
+      "sourceContentSha256": "d00e1b5ad26d731dd8c2f195ea9fc11937ded0d3a510680b5c6726e38beda3ea",
+      "normalizedQuestionSha256": "51766ece17f21b94146aaecc68910a1668664906c2f7dd51c6969793e1880eb6",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-023",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Haji M.A. Gafur Govt. Secondary School, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 8,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Practice of fair politics is gradually missing (a) ____the campus. Students are getting frustrated (b) ____many counts. Some students have taken up arms in their hands and engaged themselves (c) ____terrorist activities. Rivalry (d) ____different parties is common in the colleges and universities that greatly hamper educational atmosphere. Because (e) ____the violence in the campus a great number of educational institutions often remain closed sine die.",
+      "sourceRawText": "Complete the text with suitable prepositions.  \n15=5 \n \nPractice of fair politics is gradually missing (a) —— the campus. Students are getting \nfrustrated (b) —— many counts. Some students have taken up arms in their hands and \nengaged themselves (c) —— terrorist activities. Rivalry (d) —— different parties is common \nin the colleges and universities that greatly hamper educational atmosphere. Because (e) \n—— the violence in the campus a great number of educational institutions often remain \nclosed sine die.",
+      "rawTextSha256": "5ab85831736569187198cbc46a09e579d422ff0b9066ccbbac751fc0e4edd817",
+      "sourceContentSha256": "491a72e1604c15b306c92a4069e1283deda1cec6a403976ad09ced2ff953658a",
+      "normalizedQuestionSha256": "75ceacff001331bc1f4704ec21548266aac2079498fcc382da16e3306c0daec5",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-024",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "SOS Hermann Gmeiner College, Dhaka",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 9,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the following passage using appropriate prepositions.",
+      "sourcePassage": "I caught sight (a) ____him while crossing the road. I tried to talk to him. But he was (b) ____a hurry. He was one of my best friends. Both of us studied (c) ____the same school. Both of us got separated (d) ____each other after SSC. Though my heart bleeds (e) ____him, I hardly meet him. This is the way of the world.`",
+      "sourceRawText": "Complete the following passage using appropriate prepositions.  \n15=5 \n \nI caught sight (a) —— him while crossing the road. I tried to talk to him. But he was (b) —\n— a hurry. He was one of my best friends. Both of us studied (c) —— the same school. \nBoth of us got separated (d) —— each other after SSC. Though my heart bleeds (e) —— \nhim, I hardly meet him. This is the way of the world.`",
+      "rawTextSha256": "059bf958cbff7dd6aa5b7bb8b682c5cb9cacfeed5e6a24476c81745bbbbca7b6",
+      "sourceContentSha256": "9e261b334e5de7f6da7b6510211a10f47f5ff288cc717bdefd5d9d3e1266e2bd",
+      "normalizedQuestionSha256": "5d8829ab385a951cb25d14ea093da753f5aa77d31bfb72fcbff9f52c8edd54e0",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-025",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Rani Bilashmoni Govt. Boys' High School, Gazipur",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 11,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks of the text below using appropriate preposition.",
+      "sourcePassage": "Abu Sayed, a prominent figure (a) ____24 activists (b) ____Bangladesh. He stands (c) ____justice (d) ____his community. He advocates for the rights (e) ____marginalized groups throughout the country.",
+      "sourceRawText": "Fill in the blanks of the text below using appropriate preposition. \n15=5 \n \nAbu Sayed, a prominent figure (a) —— 24 activists (b) —— Bangladesh. He stands (c) —— \njustice (d) —— his community. He advocates for the rights (e) —— marginalized groups \nthroughout the country.",
+      "rawTextSha256": "4ae6f0e95228380e225b16f83c4f359eeb2e225b05e9bee3993433040e1da618",
+      "sourceContentSha256": "b3885c243d1ea6aebe493d2b25a9d87c66adc012b1aad381a85ec2b1dbdaf90f",
+      "normalizedQuestionSha256": "aed871d112dcf27ef87f3249b42a765f9c4560ebfb35d56881ef33a620232e96",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-026",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kishoreganj Govt. Boy's High School, Kishoreganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 12,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Use appropriate preposition to fill in the gaps.",
+      "sourcePassage": "A pious man is absorbed (a) ____meditation. He abides (b) ____the rules of religion. He clings (c) ____his faith. He knows that man is accountable to Allah (d) ____his action. He is not angry (e) ____others. He behaves well with everyone.",
+      "sourceRawText": "Use appropriate preposition to fill in the gaps.  \n15=5 \n \nA pious man is absorbed (a) —— meditation. He abides (b) —— the rules of religion. He \nclings (c) —— his faith. He knows that man is accountable to Allah (d) —— his action. He \nis not angry (e) —— others. He behaves well with everyone.",
+      "rawTextSha256": "194f1ae3451209d68a9c2c674a4feada896040fa53ab80920fbec79dc81f7726",
+      "sourceContentSha256": "99b74313d26c4030b8a4a48cb8276fbb710a5b455c23a560cde78b923b8045a2",
+      "normalizedQuestionSha256": "9121a297cb3746c3e4277996d636cf375671c28b03bced81de096408518e26d6",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-027",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Madhupur Shahid Smrity Higher Secondary School, Tangail",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 14,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable prepositions :",
+      "sourcePassage": "Education is one (a) ____the basic need of a human being and is essential (b) ____every kind of development. It enables us to make right choices (c) ____life. It enhances our ability to raise crops, store food, protect the environment and carry (d) ____our social responsibilities. It provides us with an enlightened awareness about things. But education has to be defined. It is not merely getting degrees (e) ____schools, colleges and universities. It is something more lasting, more humane.",
+      "sourceRawText": "Fill in the blanks with suitable prepositions : \n15=5 \n \nEducation is one (a) —— the basic need of a human being and is essential (b) —— every \nkind of development. It enables us to make right choices (c) —— life. It enhances our \nability to raise crops, store food, protect the environment and carry (d) —— our social \nresponsibilities. It provides us with an enlightened awareness about things. But education \nhas to be defined. It is not merely getting degrees (e) —— schools, colleges and \nuniversities. It is something more lasting, more humane.",
+      "rawTextSha256": "c361931b10091865b9f1c94b514d306602f4ec0a2a6426ac918fe72020017272",
+      "sourceContentSha256": "8ad74945578aa13446f094a79f2d97eaf891192e49055612a7b9ec88ee7c5054",
+      "normalizedQuestionSha256": "9548eb579204d088d2511007125017ff71e2cbcc2641cc438171c711fc02ce46",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-028",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Binapani Govt. Girls' High School, Gopalganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 15,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "The result of honesty in (a) ____description. It results (b) ____peace. On the other hand misery results (c) ____vice. So, we should abstain (d) ____evil deeds. Evil deeds bring (e) ____ruin.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5 \n \nThe result of honesty in (a) —— description. It results (b) —— peace. On the other hand \nmisery results (c) —— vice. So, we should abstain (d) —— evil deeds. Evil deeds bring (e) —\n— ruin.",
+      "rawTextSha256": "241dbe19966007c9416585b6a310fe62dab06f0d3c74f06dc072889f3571b878",
+      "sourceContentSha256": "4d26d15b75432482145b8b29a62f2b0412b721ae6f776f14ac0af431b59f24c4",
+      "normalizedQuestionSha256": "419d0da49a99542dcf300fdfacecc8c16270c771b17b0ac8aca1adcf63f1323c",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-029",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Rajbari Govt. High School, Rajbari",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 17,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "The Olympic Games were named (a) ____the town of Olympia in Greece. It was (b) ____Olympia that the games were first held long before the Christian era began. In those days Greece was divided (c) ____many cities, and men of different cities used to fight one another most (d) ____the time. A man named Iphitos became concerned (e) ____such wasteful strifes.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5 \n \nThe Olympic Games were named (a) —— the town of Olympia in Greece. It was (b) —— \nOlympia that the games were first held long before the Christian era began. In those days \nGreece was divided (c) —— many cities, and men of different cities used to fight one \nanother most (d) —— the time. A man named Iphitos became concerned (e) —— such \nwasteful strifes.",
+      "rawTextSha256": "78bee29694df00c59c19e7c359bed5cef12e4a0ff95d7174b12183ab6e79bc98",
+      "sourceContentSha256": "8ded77e488ce7ac040db1210ca1218a985e774fa4bf89e202eb0cb5d001fa6a0",
+      "normalizedQuestionSha256": "a224f4e55c5abc4e6be22e5af569373f34535dff94245b8f8850b0a0c6599f90",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-030",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Agricultural University High School, Mymensingh",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 18,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable prepositions.",
+      "sourcePassage": "A pious man has firm faith (a) ____Allah. He believes in the sayings of the holy Prophet (Sm). He is not addicted, to any evil. Rather he is devoted (b) ____good deeds. He always thinks (c) ____others welfare. He is not harmful to anyone. He mixes (d) ____all. He leads his life according to the rules of religion. He values religion (e) ____everything. He is very conscious of his duties.",
+      "sourceRawText": "Fill in the blanks with suitable prepositions. \n15=5 \n \nA pious man has firm faith (a) —— Allah. He believes in the sayings of the holy Prophet \n(Sm). He is not addicted, to any evil. Rather he is devoted (b) —— good deeds. He always \nthinks (c) —— others welfare. He is not harmful to anyone. He mixes (d) —— all. He leads \nhis life according to the rules of religion. He values religion (e) —— everything. He is very \nconscious of his duties.",
+      "rawTextSha256": "c346b218c22ee9cb1fe6c055daa3b58392b0becf36708a1ba233c796c90e1b96",
+      "sourceContentSha256": "342420f61feef8cb116b46c2bfee08694245e0c99d133386ac1fbf90a2292c7a",
+      "normalizedQuestionSha256": "c866b223ef971ce1db47107d3dfc9a49f312056fc1885186b5cb1b88a9eca3c4",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-031",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Unique Progressive School, Mymensingh",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 20,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable preposition.",
+      "sourcePassage": "In the long run a sinner atones (a) ____his sin because he knows that everyone will have a account (b) ____God (c) ____his/her deeds. So, when a sinner becomes really repentant, he/she is seen devoted (d) ____God. Sometimes he/she is seen absorbed (e) ____deep meditation.",
+      "sourceRawText": "Fill in the blanks with suitable preposition. \n15=5 \n \nIn the long run a sinner atones (a) —— his sin because he knows that everyone will have a \naccount (b) —— God (c) —— his/her deeds. So, when a sinner becomes really repentant, \nhe/she is seen devoted (d) —— God. Sometimes he/she is seen absorbed (e) —— deep \nmeditation.",
+      "rawTextSha256": "7794ff3965130b14fbbdac1ccb0348baf835390a7da8616381268f12d19b0d11",
+      "sourceContentSha256": "8b9ffd43a182a6a3e121b64f947b7db2a021d92460b7ffa745e28916e72c6584",
+      "normalizedQuestionSha256": "0fc00a656bdb8e31ec23ff42751f779537a58bdb74d9d9544519edd0db913ba8",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-032",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sherpur Govt. Victoria Academy, Sherpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 21,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable preposition.",
+      "sourcePassage": "Man is mortal. He will depart (a) ____the earth today or tomorrow. Some people die (b) ____diseases. Some people die (c) ____road accident. But people remember them who die (d) ____their motherland. Everybody wants to die (e) ____peace.",
+      "sourceRawText": "Fill in the blanks with suitable preposition. \n15=5 \n \nMan is mortal. He will depart (a) —— the earth today or tomorrow. Some people die (b) —— \ndiseases. Some people die (c) —— road accident. But people remember them who die (d) —— \ntheir motherland. Everybody wants to die (e) —— peace.",
+      "rawTextSha256": "795d4c7f676277c955912d6965542ef3c7f250be052d76fc71218796d6b142c4",
+      "sourceContentSha256": "85a16c7247db458f006b14e6cd12515b1c48ec864e83298fa1648af1193b4ffb",
+      "normalizedQuestionSha256": "f6c323f8e54c8d8240717eae606eb8d0b6aa4cc9b4a6e2bd0ec1fb2e40961a74",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-033",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Bonowary Lal Govt. High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 23,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in each gap in the following text with an appropriate preposition :",
+      "sourcePassage": "The benefits of education are many. Education broadens our outlook (a) ____life. It inculcates (b) ____us a sense of responsibility, morality and values. It liberates us (c) ____the restrictions of habits and attitudes that limit our humanity. It is an essential precondition (d) ____the development of a country. It enables us to differentiate (e) ____right and wrong. Therefore, education should be imparted to all.",
+      "sourceRawText": "Fill in each gap in the following text with an appropriate preposition :  \n15=5  \n \nThe benefits of education are many. Education broadens our outlook (a) —— life. It \ninculcates (b) —— us a sense of responsibility, morality and values. It liberates us (c) —— \nthe restrictions of habits and attitudes that limit our humanity. It is an essential \nprecondition (d) —— the development of a country. It enables us to differentiate (e) —— \nright and wrong. Therefore, education should be imparted to all.",
+      "rawTextSha256": "b2b738505a63118ef35683c3439273e7e02d3859404a64fee0fdf524b95951d1",
+      "sourceContentSha256": "9e77c4b905c6b6337861437d5de1a176c04872a4a5bcff821ff6186a1deb0052",
+      "normalizedQuestionSha256": "7c9d5c95ba247a45e418ae9a1937d6f4ed4ec4715ccf6e2b941722790e28c6b4",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-034",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Saleha Ishaque Govt. Girls' High School, Sirajganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 24,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "Today man has been suffering (a) ____ various diseases. And there is no remedy (b) ____ some fatal diseases. So man is subject (c) ____ decay and death. One day he will depart (d) ____ this world. Here he cannot live (e) ____ a long time.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5  \n \nToday man has been suffering (a) \n various diseases. And there is no remedy (b) \n \nsome fatal diseases. So man is subject (c) \n decay and death. One day he will depart (d) \n\n this world. Here he cannot live (e) \n a long time.",
+      "rawTextSha256": "c567ac748fe0260a2d446c469bc0cb2073e5b52ebee6a155976e34d9749ecd6c",
+      "sourceContentSha256": "88dd9d65623b179af6ec86b644d79ff799ed224ed8dd1fa4bc0183f039b59a5d",
+      "normalizedQuestionSha256": "8428ac13670477d7afee0af828de35a8c542dc419ca185a0411b91fd4667e8a0",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-035",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Promothnath (P.N.) Girl's High School, Rajshahi",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 26,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "The result of honesty is (a) ____ description. It results (b) ____ peace. On the other hand, misery results (c) ____ vice. So we should obtain (d) ____ evil deeds. Evil deeds bring (e) ____ ruin.",
+      "sourceRawText": "Complete the text with suitable prepositions. \n15=5  \n \nThe result of honesty is (a) \n description. It results (b) \n peace. On the other hand, \nmisery results (c) \n vice. So we should obtain (d) \n evil deeds. Evil deeds bring (e) \n\n ruin.",
+      "rawTextSha256": "7c858bbb4e448ceed57faa3c31a8b8e571505cb3cc16668b875f6e0a7a6cd481",
+      "sourceContentSha256": "51e2e143207a0a16aa8b65c2a0bed7800f5cdbf6d371290da35322ca35d7e620",
+      "normalizedQuestionSha256": "30438c78f560f772ecc3bb9875ef758ded594af1fd953eadc72031383520a92a",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-036",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Bogura Cantonment Public School & College, Bogura",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 27,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable prepositions.",
+      "sourcePassage": "Death is very common. Some die (a) ____ diseases. Some die (b) ____ accidents. Some die (c) ____ overeating. Some die (d) ____ the country. It was very glorious (e) ____ all.",
+      "sourceRawText": "Fill in the blanks with suitable prepositions. \n15=5  \n \nDeath is very common. Some die (a) \n diseases. Some die (b) \n accidents. Some die \n(c) \n overeating. Some die (d) \n the country. It was very glorious (e) \n all.",
+      "rawTextSha256": "1b25d0229d13b73b765f1397068d2201da2d85a9d8b0a35977c8b9debbfce3ee",
+      "sourceContentSha256": "aa1e8a046f70fedffb03b71eacf2538142acd3280079e8030b0f3e52a6e3023f",
+      "normalizedQuestionSha256": "9999fcac595f07fe1396c4e7c947b26c6f8f5307afc35e7e0b8e44b661575210",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-037",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Harimohan Govt. High School, Chapainawabganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 29,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text using suitable prepositions.",
+      "sourcePassage": "A teacher is an architect (a) ____a nation. He plays an important role (b) ____building up an educated nation. He dispels the darkness (c) ____ignorance (d) ____the lot of a nation. A good teacher never hankers (e) ____money.",
+      "sourceRawText": "Complete the text using suitable prepositions. \n15=5  \n \nA teacher is an architect (a) —— a nation. He plays an important role (b) —— building up \nan educated nation. He dispels the darkness (c) —— ignorance (d) —— the lot of a nation. \nA good teacher never hankers (e) —— money.",
+      "rawTextSha256": "dda524b15307648daa83d938c2b6c6e45f5cd658dec43606d4b038a231f8a3a2",
+      "sourceContentSha256": "68ef13c8de658855d3178eddf7f8ef03ec0fbac7d41c3ceccebd01b81eba8618",
+      "normalizedQuestionSha256": "2ae679c8075ad973c14a98e00b3fd2430360341737d69b21bcc427db99ab47e0",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-038",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Qadirabad Cantonment Public School, Natore",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 30,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate preposition.",
+      "sourcePassage": "King Midas, amazed (a) ____his golden touch, went back quickly to the palace. As he entered (b) ____his little daughter ran (c) ____to him and he took her (d) ____his arms. Instantly she turned (e) ____gold.",
+      "sourceRawText": "Fill in the gaps with appropriate preposition. \n15=5  \n \nKing Midas, amazed (a) —— his golden touch, went back quickly to the palace. As he \nentered (b) —— his little daughter ran (c) —— to him and he took her (d) —— his arms. \nInstantly she turned (e) —— gold.",
+      "rawTextSha256": "c615a8c228fc840c931ab8defdfba3f0f131b2d814ccc872e981868c9c89425e",
+      "sourceContentSha256": "b9d2116e61700c8d48d6b64481b1bab5e1fdc101f9889a29de284af22dc0c53c",
+      "normalizedQuestionSha256": "9a2f5cb4c07fcf88f6ee0be5f643df95da219de000f37f95afcfde91c1578212",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-039",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Naogaon Krishnadhan Govt. High School, Naogaon",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 32,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "He prohibited me (a) ____going to cinema but I insisted (b) ____my going to cinema. He could not prevent me (c) ____going to cinema. I stuck (d) ____my insistence. So he was sorry (e) ____my behaviour.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5  \n \nHe prohibited me (a) —— going to cinema but I insisted (b) —— my going to cinema. He \ncould not prevent me (c) —— going to cinema. I stuck (d) —— my insistence. So he was \nsorry (e) —— my behaviour.",
+      "rawTextSha256": "5416d8d0d996b766e7db05862fbeafa010632632ee22f06bd3ddcacac8e6ec8d",
+      "sourceContentSha256": "16d44a629f86dcd2d74382279d65292c043d41bbd5a28a416df1247e4f339b74",
+      "normalizedQuestionSha256": "60f8b4ff78e9cf0b1128b757de60004eed7ce45dbfc1abdbf94e4d55d73dc5cb",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-040",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lions School and College, Saidpur, Nilphamari",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 33,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with suitable preposition.",
+      "sourcePassage": "Truthfulness refers (a) ____the habit of speaking the truth. It is the greatest (b) ____all virtues in a mans life. The true peace and prosperity (c) ____man entirely depends (d) ____it. It ennobles one's chanecter and gives one high position (e) ____the society.",
+      "sourceRawText": "Fill in the gaps with suitable preposition. \n15=5 \n \nTruthfulness refers (a) —— the habit of speaking the truth. It is the greatest (b) —— all \nvirtues in a mans life. The true peace and prosperity (c) —— man entirely depends (d) —— \nit. It ennobles one's chanecter and gives one high position (e) —— the society.",
+      "rawTextSha256": "592881036e1fe4638ceaeb905ec9015a7842d688738a5202fb72aa6fd6cc1cb4",
+      "sourceContentSha256": "f6528b7fd3e170daa155cd30808fb3d592f0e13d052017102a2391991cdb1475",
+      "normalizedQuestionSha256": "83cd917325167010b4d165e2a78104883ecc360c113ee619eedfbfc133db69af",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-041",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Gaibandha Govt. Boys' High School, Gaibandha",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 34,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable preposition.",
+      "sourcePassage": "It is known to all that one day all will pass (a) ____from this earth. So, we have no escape from death. One day we all will roll down (b) ____the icy lap of death. Because death is common to all. So, we should not mourn (c) ____the dead. But those who die for the country are immortal. Their memories do not sink (d) ____oblivion. There is no medicine that can save a man from death. So, we should always be ready (e) ____death.",
+      "sourceRawText": "Complete the text with suitable preposition. \n15=5 \n \nIt is known to all that one day all will pass (a) —— from this earth. So, we have no escape \nfrom death. One day we all will roll down (b) —— the icy lap of death. Because death is \ncommon to all. So, we should not mourn (c) —— the dead. But those who die for the \ncountry are immortal. Their memories do not sink (d) —— oblivion. There is no medicine \nthat can save a man from death. So, we should always be ready (e) —— death.     \n\n<<PAGE 35>>\n \nEnglish Second Paper : Questions \n151",
+      "rawTextSha256": "359548ab8a3c66220bf6b3d66ff732a60c297a32750cf08b5b1d114ca713ac0d",
+      "sourceContentSha256": "233ab3971a5be94a8874d4660393de1ee8d36dab13ac70fb067ec471ff7a7686",
+      "normalizedQuestionSha256": "cb59a2134e450a8cdd84cd97ca848431a9ff29ca5eee6535a8fff3e84d38b6f1",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-042",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kurigram Govt. Girls' High School, Kurigram",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 36,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable preposition.",
+      "sourcePassage": "The result of honesty is (a) ____description. It results (b) ____peace. On the other hand, misery results (c) ____vice. So, we should abstain (d) ____evil deeds. Evil deeds bring (e) ____ruin.",
+      "sourceRawText": "Complete the text with suitable preposition. \n15=5 \n \nThe result of honesty is (a) —— description. It results (b) —— peace. On the other hand, \nmisery results (c) —— vice. So, we should abstain (d) —— evil deeds. Evil deeds bring (e) —\n— ruin.",
+      "rawTextSha256": "d5a29dba0718ceccc50e9a0f65e5333c84fc9a39d7b1dd096d92b22317354202",
+      "sourceContentSha256": "1dff79c498584d5be34e170becf933859ba5b66e77e6d44ee0db3d2d54cbdf9c",
+      "normalizedQuestionSha256": "db8dcc7e10681dbddfa153bfe57f7b7d2b732543ec3a2f1981d94b760602f531",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-043",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lalmonirhat Govt. High School, Lalmonirhat",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 37,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "English is a widely used language (a) ____our country we use it as a second language. But we have a very poor base (b) ____this language. As a result, we don't feel interest (c) ____this language. (d) ____all these reasons English is hard (e) ____us to learn.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5 \n \nEnglish is a widely used language (a) —— our country we use it as a second language. But \nwe have a very poor base (b) —— this language. As a result, we don't feel interest (c) —— \nthis language. (d) —— all these reasons English is hard (e) —— us to learn.",
+      "rawTextSha256": "d11bdef57d71c375ed279563495e7ced2b4c6988c8adc63c38331c72d9e3c545",
+      "sourceContentSha256": "54dec77d6365acf6cfd526e63c47deb852b5eea072d27fe1a66c8965699bbfdd",
+      "normalizedQuestionSha256": "e5ea5ede6598f33aeff3ca4ad5aecd783be16ceeca6ae25cbd3af1493c3b03f2",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-044",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Jhenaidah Govt. High School, Jhenaidah",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 39,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions",
+      "sourcePassage": "Everyone desires (a) ____wealth. But a few attain it. Some people hanker (b) ____riches. Some are content (c) ____what they have. True happiness lies (d) ____contentment. It is high time we gave (e) ____the habit of covetousness.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions \n15=5 \n \nEveryone desires (a) —— wealth. But a few attain it. Some people hanker (b) —— riches. \nSome are content (c) ——what they have. True happiness lies (d) —— contentment. It is \nhigh time we gave (e) —— the habit of covetousness.",
+      "rawTextSha256": "79c45f74f8cdf92f333339c124e1b6588eaae3e647db4184a596e37530a46b2b",
+      "sourceContentSha256": "515831257b42587e676470c8c053fe892621eb977377e68d5b202e6855883e13",
+      "normalizedQuestionSha256": "3aab6ef67f93435cd57c811f84e1b474ccaba3faf2bd15fc16d03fd809b032f8",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-045",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Dawood Public School and College, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 40,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate preposition.",
+      "sourcePassage": "An honest man is true (a) ____his word. He does not deviate (b) ____the path of honesty. He knows that true peace consists (c) ____honesty. So he does not fall victim (d) ____any greed. He has no ambition (e) ____worldly things.",
+      "sourceRawText": "Fill in the gaps with appropriate preposition. \n15=5 \n \nAn honest man is true (a) —— his word. He does not deviate (b) —— the path of honesty. \nHe knows that true peace consists (c) —— honesty. So he does not fall victim (d) —— any \ngreed. He has no ambition (e) —— worldly things.",
+      "rawTextSha256": "6c02bdc52186ac25885ed2127252c70be2c89949088cafb5ebfc3f6ba044c5db",
+      "sourceContentSha256": "8d472d33d1dfda467f3ebb2e4776948d7a4dfa8bfe05326242316fddc6a21979",
+      "normalizedQuestionSha256": "9c0950ea0ad515886d35a0d1d3c2a2853c4b4871abd342d6359f269ba1906f20",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-046",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Akij Collegiate School, Jashore",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 42,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Tutul is a poor but honest man. His honesty is known (a) ____everyone in his locality. He often suffers (b) ____hunger. He is deprived (c) ____required comfort and many other things. Nevertheless, he does not long (d) ____such requirements. He never hankers (e) ____self name and fame. He leads his life by honest means.",
+      "sourceRawText": "Complete the text with suitable prepositions. \n15=5  \nTutul is a poor but honest man. His honesty is known (a) —— everyone in his locality. He \noften suffers (b) —— hunger. He is deprived (c) —— required comfort and many other \nthings. Nevertheless, he does not long (d) —— such requirements. He never hankers (e) —\n— self name and fame. He leads his life by honest means.",
+      "rawTextSha256": "a57e04a337d424136ffc6f19fcce15d7b5873b6e49232aff57f50ee1c6a9379e",
+      "sourceContentSha256": "7860766c9df21b2a65b2118e462fb5be8ed324f1629a5324840e78f91e7a612a",
+      "normalizedQuestionSha256": "194fa3deae01dbdcc0e174196e6391b8403702addd94050776ca9663077c776f",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-047",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Khulna Collegiate Girls' School & KCC Women's College, Khulna",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 43,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate preposition.",
+      "sourcePassage": "He sat (a) ____the fire with me, with no other light, and told me of their two days together. The dog lay close (b) ____him and found a comfort there that I did not have (c) ____him. And it seemed to me that being with my dog, and caring (d) ____him, had brought the boy and me, too, together, so that he felt that he belonged (e) ____me as well as to the animal.",
+      "sourceRawText": "Fill in the gaps with appropriate preposition. \n15=5  \nHe sat (a) —— the fire with me, with no other light, and told me of their two days together. \nThe dog lay close (b) —— him and found a comfort there that I did not have (c) —— him. \nAnd it seemed to me that being with my dog, and caring (d) —— him, had brought the boy \nand me, too, together, so that he felt that he belonged (e) —— me as well as to the animal.",
+      "rawTextSha256": "5c1e441743b443636573cd811bb0e70572a1e5a2510b0467eff709d14db0c46b",
+      "sourceContentSha256": "58aefbaa0b65d3806dc4e143082692d3d9347831c63ab4c66590f42ea5c40350",
+      "normalizedQuestionSha256": "7e246baa67364c87df42e21432604bdf4019a482f6e27725ee1294c275e34500",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-048",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "St. Paul's High School, Bagerhat",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 45,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate preposition.",
+      "sourcePassage": "A greedy man is covetous (a) ____wealth. He craves (b) ____money. He is not satisfied (c) ____what he has. He is not aware (d) ____the fact that true happiness consists (e) ____contentment.",
+      "sourceRawText": "Fill in the gaps with appropriate preposition. \n15=5  \nA greedy man is covetous (a) —— wealth. He craves (b) —— money. He is not satisfied (c) \n—— what he has. He is not aware (d) —— the fact that true happiness consists (e) —— \ncontentment.",
+      "rawTextSha256": "7578d77b91a2913f6a5f6bad2f150415c21bad0b1e709237f5cd0ac28f8e5516",
+      "sourceContentSha256": "8ab98bb8990f4f84a9b302f1584c282c0f18df1f431bfafa476f2848d4da568f",
+      "normalizedQuestionSha256": "74737409b4c6277a9fa35f9ac86f8716e3ecd9b6f15d5db7f8d1551968facab7",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-049",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Kushtia Govt. Girls High School, Kushtia",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 46,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "Ruplal decided (a) ____living a lovely life. So he became detached (b) ____his family. He cut (c) ____all his relation and went (d) ____a jungle. There he also found himself beset (e) ____many problems.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions. \n15=5  \nRuplal decided (a) —— living a lovely life. So he became detached (b) —— his family. He \ncut (c) —— all his relation and went (d) —— a jungle. There he also found himself beset  \n(e) —— many problems.",
+      "rawTextSha256": "40f9fc39b3b7fedd134dcf6d600a4017ff8d881ffa409137609f847d79443ce5",
+      "sourceContentSha256": "c180eacdd230d4b5d33155530a6aa344d39182f8ecb2eff2620bd811f6970ce3",
+      "normalizedQuestionSha256": "d81bce32bf5086c56c5f2a33432a1a108deafc33076aeeb0f209c62722f7476d",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-050",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Our Lady of Fatema Girls High School, Cumilla",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 48,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Death is common (a) ____all. So we should not mourn (b) ____the dead. But those who die (c) ____the country are immortal. Their memories do not sink (d) ____oblivion. There is no medicine that can save a man from death. So, we should always be ready (e) ____death.",
+      "sourceRawText": "Complete the text with suitable prepositions. \n15=5  \n \nDeath is common (a) —— all. So we should not mourn (b) —— the dead. But those who die \n(c) —— the country are immortal. Their memories do not sink (d) —— oblivion. There is no \nmedicine that can save a man from death. So, we should always be ready (e) —— death.",
+      "rawTextSha256": "7efcbd3c1f3217bcf0345414117e8dbd20fccac36ebcc6eed16d6d89f751fd2d",
+      "sourceContentSha256": "afc3bbdbb262be8056a2e44e9f65bee546798b33cd69ba287a3c5c27e79b2c95",
+      "normalizedQuestionSha256": "cc448ab3fe9586f4439683ef54c1963ec80be19b74956e4f1857141dfa81e4bd",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-051",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Matripith Govt. Girls' High School, Chandpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 49,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Some people always talk about big dreams but they never work for them. They only imagine success without any real effort. Such unrealistic goals often lead people to disappointment. Ambition may sink (a) ____day dream (b) ____men who build castles (c) ____the air. Idle men generally wish (d) ____things that cannot be realized, theirs called ambition is an empty craving. At first, one should make (e) ____his mind what he will do in future.",
+      "sourceRawText": "Complete the text with suitable prepositions. \n15=5  \nSome people always talk about big dreams but they never work for them. They only \nimagine success without any real effort. Such unrealistic goals often lead people to \ndisappointment. Ambition may sink (a) —— day dream (b) —— men who build castles  \n(c) —— the air. Idle men generally wish (d) —— things that cannot be realized, theirs called \nambition is an empty craving. At first, one should make (e) —— his mind what he will do \nin future.",
+      "rawTextSha256": "911ba24cdc56e7763505774f048b7b3fafb140996c7aefaca8d967b14f9c5d29",
+      "sourceContentSha256": "55709543ba851461424373ab452cf0bff240f72372a93b2c5438a7aa34e4dd39",
+      "normalizedQuestionSha256": "3e782e0fd2f7e2446c0e08f14e3a8f2274777ffc38366b033e6af2842735a45e",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-052",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Hasan Ali Govt. High School, Chandpur",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 51,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Man cannot escape (a) ____death. He dies in many ways. A man dies (b) ____diseases. He may die (c) ____overwork. Sometimes he dies (d) ____accidents. But people who die (e) ____a noble cause are remembered for a long time.",
+      "sourceRawText": "Complete the text with suitable prepositions.  \n15=5 \n \nMan cannot escape (a) —— death. He dies in many ways. A man dies (b) —— diseases. He \nmay die (c) —— overwork. Sometimes he dies (d) —— accidents. But people who die (e) —— a \nnoble cause are remembered for a long time.",
+      "rawTextSha256": "23bd7061df1cad2d5fb18c8a8481faf14d6f54e1c3a1f5c75d4f4ddf02bd9e9e",
+      "sourceContentSha256": "67e3bf9c213a9a2c66187e824599aa7f3121b420e60b45e26bca64b7dab674fd",
+      "normalizedQuestionSha256": "ea7d9552b25534711ea3830bbebeda24dce014737a50f71331838dc607544fa9",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-053",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Lakshmipur Adarsha Samad Government High School, Lakshmipur",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 52,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable prepositions.",
+      "sourcePassage": "Don't put (a) ____your work (b) ____tomorrow. If so, you have to run (c) ____the loosers. So, you need to abide (d) ____a routine and aspire (e) ____a good result.",
+      "sourceRawText": "Fill in the blanks with suitable prepositions.  \n15=5 \n \nDon't put (a) —— your work (b) —— tomorrow. If so, you have to run (c) —— the loosers. \nSo, you need to abide (d) —— a routine and aspire (e) —— a good result.",
+      "rawTextSha256": "b2db395a5342c065396d787949da3c949a3957b824c752259c02ec007d031b9f",
+      "sourceContentSha256": "e95522ec2b7ae745feea6d437009f5b984705aff1f983bcef5f16baf3d456302",
+      "normalizedQuestionSha256": "f94a24598ae5f8766e915fae77272a7469d0ea8e75f349dddc5315017f163b8b",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-054",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Chattogram Govt. Girls High School, Chattogram",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 54,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the gaps with appropriate prepositions.",
+      "sourcePassage": "The gentle breeze, playing (a) ____the tiny sails of the boats, adds (b) ____the beauty of the atmosphere. The cowherds drive their cattle slowly homewards and the weary cultivator casts his lost look (c) ____his fields before returning home. Flocks of birds make their way to nests. (d) ____short, everyone feeling merry and contended after the day's work, retires (e) ____the retiring sun.",
+      "sourceRawText": "Fill in the gaps with appropriate prepositions.  \n15=5 \n \nThe gentle breeze, playing (a) —— the tiny sails of the boats, adds (b) —— the beauty of \nthe atmosphere. The cowherds drive their cattle slowly homewards and the weary \ncultivator casts his lost look (c) —— his fields before returning home. Flocks of birds make \ntheir way to nests. (d) —— short, everyone feeling merry and contended after the day's \nwork, retires (e) —— the retiring sun.",
+      "rawTextSha256": "8a2b4fa1eda21aabae97d71c75ea3b2a34d1d6b6218f06ac5c61e3eb41e59298",
+      "sourceContentSha256": "6407af46d7b0578df91501984b55dc447e1b1e0367b282be613e2ba3471d829b",
+      "normalizedQuestionSha256": "015b1c5955dd62370908e8a38386cf8c1b03deadaabc0a8c862304e4ee14625d",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-055",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Ispahani Public School & College‚ Cumilla",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 55,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Newspaper is the people's parliament. It plays a vital role (a) ____modern civilization. We must habituate (b) ____reading the newspaper daily. It helps us in acquiring general knowledge which in essential (c) ____our education. Nobody can keep contact (d) ____the outside world without reading the newspaper. Being ignorant (e) ____the current topics he/she cannot take part in the talks and discussions in an enlightened society.",
+      "sourceRawText": "Complete the text with suitable prepositions.  \n15=5 \n \nNewspaper is the people's parliament. It plays a vital role (a) —— modern civilization. We must \nhabituate (b) —— reading the newspaper daily. It helps us in acquiring general knowledge \nwhich in essential (c) —— our education. Nobody can keep contact (d) —— the outside \nworld without reading the newspaper. Being ignorant (e) —— the current topics he/she \ncannot take part in the talks and discussions in an enlightened society.",
+      "rawTextSha256": "6793a5d4f436dbaacd1e595775d22eba56a120084bba92ae450b9a542fff998f",
+      "sourceContentSha256": "f3c3cf6b653439fdd122e28592c5c8cd91f745b452b788315ce84434cb3eef2e",
+      "normalizedQuestionSha256": "0f6d4426cbb0c17f05212d7c02c88b7cea9924cd1da7ba13d6e0e83e8268975e",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-056",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Sant Scholastica Girls School, Chattogram",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 57,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Man abides (a) ____society. In a society, all men are not equally well off. There are many people who live (b) ____the poverty line. This is because (c) ____unequal distribution of natural wealth. Many are deprived (d) ____the basic needs of life. They must be provided (e) ____their dues.",
+      "sourceRawText": "Complete the text with suitable prepositions.  \n15=5 \n \nMan abides (a) —— society. In a society, all men are not equally well off. There are many \npeople who live (b) —— the poverty line. This is because (c) —— unequal distribution of \nnatural wealth. Many are deprived (d) —— the basic needs of life. They must be provided \n(e) —— their dues.",
+      "rawTextSha256": "62e349679f09d2dcf41c23fa46a78a4f169df56619427fdac2f886eb2b93a9bc",
+      "sourceContentSha256": "8a147c823fc8b0969d4159c209d170f889c555848e0e22433d0d6b3b776d5423",
+      "normalizedQuestionSha256": "88e2fdcb4865f18cf3172ba452dda63fa2b9aeef8b01ef8ee0f4e68495f367f5",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-057",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Blue Bird High School and College, Sylhet",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 58,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Fill in the blanks with suitable prepositions.",
+      "sourcePassage": "On a very hot and sunny day, a thirsty crow flying (a) ____search of water. Due (b) ____the hot weather, most (c) ____the ponds had dried up. Suddenly, he saw a vessel (d) ____the ground. When he flew (e) ____it, he saw there was very little water at the bottom of the vessel.",
+      "sourceRawText": "Fill in the blanks with suitable prepositions.  \n15=5 \n \nOn a very hot and sunny day, a thirsty crow flying (a) —— search of water. Due (b) —— \nthe hot weather, most (c) —— the ponds had dried up. Suddenly, he saw a vessel (d) —— \nthe ground. When he flew (e) —— it, he saw there was very little water at the bottom of the \nvessel.",
+      "rawTextSha256": "feffb432031f567e175d41878f9d75caf3570b37c8fbe138afc1cb4980bd49dc",
+      "sourceContentSha256": "be9b7ae7a102be1017345f4e7a92775511c08d371458c3dea9ed44ffcc1ef59c",
+      "normalizedQuestionSha256": "fc96c2f039bf3e3dfb9dd1e752fa5c460f5d93fa84ba5097592c0752cb65b555",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-058",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Habiganj Government High School, Habiganj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 60,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the passage using suitable prepositions :",
+      "sourcePassage": "The result of honesty is (a) ____description. It results (b) ____peace. On the other hand, misery results (c) ____vice. So, we should abstain (d) ____evil deeds. Evil deeds bring (e) ____ruin.",
+      "sourceRawText": "Complete the passage using suitable prepositions :  \n15=5 \n \nThe result of honesty is (a) —— description. It results (b) —— peace. On the other hand, \nmisery results (c) —— vice. So, we should abstain (d) —— evil deeds. Evil deeds bring (e) —\n— ruin.",
+      "rawTextSha256": "707d4ecc60f92961519137a9f65175b9695e99a73b259249a02711112b4da7b4",
+      "sourceContentSha256": "ac52f3337826a6f9888201c34d4674d985bfe2790a86e81c7566dd49c61d5eec",
+      "normalizedQuestionSha256": "db8dcc7e10681dbddfa153bfe57f7b7d2b732543ec3a2f1981d94b760602f531",
+      "issues": [
+        "EXACT_REPRINT"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE",
+      "duplicateOf": "ssc-p2-prepositions-source-042"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-059",
+      "sourceFile": "1esU8C-hZwrqxxmTgWMKCzca17W9z_2N8",
+      "sourceSha256": "de7df74f2654e7478ab2902571d21274d8bd4bd141a71c0e58a8ca6c3fe5b8e5",
+      "sourceKind": "school",
+      "school": "Govt. Jubilee High School, Sunamgonj",
+      "examType": "Test",
+      "examYear": 2025,
+      "pdfPage": 61,
+      "questionNumber": 7,
+      "originalMarks": 5,
+      "printedMarkExpression": "15=5",
+      "originalGapCount": 5,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "declaredGapCount": 5,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "prepositions",
+      "sourceInstruction": "Complete the text with suitable prepositions.",
+      "sourcePassage": "Money is a must in our life. But one should not run after money because those who hanker (a) ____money can not enjoy mental peace. Sometimes, it may lead one (b) ____some unexpected troubles. It also happens that greed (c) ____money brings (d) ____many problem. So we should be contented (e) ____what we have.",
+      "sourceRawText": "Complete the text with suitable prepositions. \n15=5 \n \nMoney is a must in our life. But one should not run after money because those who \nhanker (a) —— money can not enjoy mental peace. Sometimes, it may lead one (b) —— \nsome unexpected troubles. It also happens that greed (c) —— money brings (d) —— many \nproblem. So we should be contented (e) —— what we have.",
+      "rawTextSha256": "d49988f082e7f1b574754b3bea6cd733e5f5c1d2ed69bef02bebac49034f29d5",
+      "sourceContentSha256": "560d660280513a93596c915bb9a80dfa1ff0a1d94dca0b84eefac16aa9123d29",
+      "normalizedQuestionSha256": "ba6957b632d3f21d9cb8f1826701cf20e8e2198a75e9d73742605de114fec489",
+      "issues": [],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    },
+    {
+      "candidateId": "ssc-p2-prepositions-source-060",
+      "sourceFile": "1buc7ygEGoIefpPZwCoNl1ES9Umn220Cd",
+      "sourceSha256": "c654f3b803cc0e9c167873ceee8513feb2e3e21af2ff9de390a1b6f477f7e2bb",
+      "sourceKind": "school",
+      "school": "PABNA CADET COLLEGE, PABNA",
+      "examType": "Pre-Test",
+      "examYear": 2024,
+      "pdfPage": 5,
+      "questionNumber": 1,
+      "originalMarks": 5,
+      "printedMarkExpression": "0.5  10 = 5",
+      "originalGapCount": 10,
+      "gapLabels": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j"
+      ],
+      "declaredGapCount": 10,
+      "gapCountBasis": "Observed printed labels; unlabelled gaps are not inferred.",
+      "sourceSkill": "mixed-prepositions-articles",
+      "sourceInstruction": "Complete text with suitable prepositions, articles.",
+      "sourcePassage": "Cricket is nowadays popular all (a) ____ the world. It is played (b) ____ two teams. There are eleven players (c) ____ each team. Two players (d) ____ the batting team do batting and one (e) ____ the bowlers of the fielding team do bowling. The fans sitting (f) ____ the galleries enjoy the match. When the batsman hits the ball making it fly (g) ____ the boundary line, he scores six runs. (h) ____ the contrary, when the ball hits the stamps, gets caught (i) ____ the fielders or it hits the batter's leg according to (j) ____ rules, the batsman loses his wicket.",
+      "sourceRawText": "Complete text with suitable prepositions, articles. \n0.5  10 = 5 \n \nCricket is nowadays popular all (a)  the world. It is played (b)  two teams. There are eleven \nplayers (c)  each team. Two players (d)  the batting team do batting and one (e)  the \nbowlers of the fielding team do bowling. The fans sitting (f)  the galleries enjoy the match. When \nthe batsman hits the ball making it fly (g)  the boundary line, he scores six runs. (h)  the \ncontrary, when the ball hits the stamps, gets caught (i)  the fielders or it hits the batter's leg \naccording to (j)  rules, the batsman loses his wicket.",
+      "rawTextSha256": "dccdc3b77dbd62108c3b2242739352aff370b42c4cb497881672438bdb15e7be",
+      "sourceContentSha256": "e83b467e88b9390578d2a0ffc0abe5ecfd427cffe3c9496f2ad53b8ba62a26e1",
+      "normalizedQuestionSha256": "3c0b96aa189b172aafb319dd8ec8c25ad8e8e343ef364a1ef0f7937bd5b3cf7f",
+      "issues": [
+        "SOURCE_COUNT_DIFFERS_FROM_CURRENT_BLUEPRINT",
+        "MIXED_PREPOSITIONS_AND_ARTICLES_NOT_STANDALONE"
+      ],
+      "answerStatus": "NOT_AUTHORED",
+      "reviewStatus": "EXTRACTED_UNREVIEWED_NOT_IMPORTABLE"
+    }
+  ],
+  "authoringQueue": {
+    "status": "PROVISIONAL_NOT_CONTENT_APPROVED",
+    "targetDistinctSets": 51,
+    "selectedCandidateIds": [
+      "ssc-p2-prepositions-source-019",
+      "ssc-p2-prepositions-source-020",
+      "ssc-p2-prepositions-source-021",
+      "ssc-p2-prepositions-source-022",
+      "ssc-p2-prepositions-source-023",
+      "ssc-p2-prepositions-source-024",
+      "ssc-p2-prepositions-source-025",
+      "ssc-p2-prepositions-source-026",
+      "ssc-p2-prepositions-source-027",
+      "ssc-p2-prepositions-source-028",
+      "ssc-p2-prepositions-source-029",
+      "ssc-p2-prepositions-source-030",
+      "ssc-p2-prepositions-source-031",
+      "ssc-p2-prepositions-source-032",
+      "ssc-p2-prepositions-source-033",
+      "ssc-p2-prepositions-source-034",
+      "ssc-p2-prepositions-source-036",
+      "ssc-p2-prepositions-source-037",
+      "ssc-p2-prepositions-source-039",
+      "ssc-p2-prepositions-source-040",
+      "ssc-p2-prepositions-source-041",
+      "ssc-p2-prepositions-source-043",
+      "ssc-p2-prepositions-source-044",
+      "ssc-p2-prepositions-source-045",
+      "ssc-p2-prepositions-source-046",
+      "ssc-p2-prepositions-source-047",
+      "ssc-p2-prepositions-source-048",
+      "ssc-p2-prepositions-source-049",
+      "ssc-p2-prepositions-source-051",
+      "ssc-p2-prepositions-source-052",
+      "ssc-p2-prepositions-source-053",
+      "ssc-p2-prepositions-source-054",
+      "ssc-p2-prepositions-source-055",
+      "ssc-p2-prepositions-source-056",
+      "ssc-p2-prepositions-source-057",
+      "ssc-p2-prepositions-source-059",
+      "ssc-p2-prepositions-source-001",
+      "ssc-p2-prepositions-source-003",
+      "ssc-p2-prepositions-source-004",
+      "ssc-p2-prepositions-source-005",
+      "ssc-p2-prepositions-source-006",
+      "ssc-p2-prepositions-source-007",
+      "ssc-p2-prepositions-source-008",
+      "ssc-p2-prepositions-source-010",
+      "ssc-p2-prepositions-source-011",
+      "ssc-p2-prepositions-source-012",
+      "ssc-p2-prepositions-source-013",
+      "ssc-p2-prepositions-source-014",
+      "ssc-p2-prepositions-source-015",
+      "ssc-p2-prepositions-source-016",
+      "ssc-p2-prepositions-source-017"
+    ],
+    "sourceFormatMatchCandidateIds": [
+      "ssc-p2-prepositions-source-019",
+      "ssc-p2-prepositions-source-020",
+      "ssc-p2-prepositions-source-021",
+      "ssc-p2-prepositions-source-022",
+      "ssc-p2-prepositions-source-023",
+      "ssc-p2-prepositions-source-024",
+      "ssc-p2-prepositions-source-025",
+      "ssc-p2-prepositions-source-026",
+      "ssc-p2-prepositions-source-027",
+      "ssc-p2-prepositions-source-028",
+      "ssc-p2-prepositions-source-029",
+      "ssc-p2-prepositions-source-030",
+      "ssc-p2-prepositions-source-031",
+      "ssc-p2-prepositions-source-032",
+      "ssc-p2-prepositions-source-033",
+      "ssc-p2-prepositions-source-034",
+      "ssc-p2-prepositions-source-036",
+      "ssc-p2-prepositions-source-037",
+      "ssc-p2-prepositions-source-039",
+      "ssc-p2-prepositions-source-040",
+      "ssc-p2-prepositions-source-041",
+      "ssc-p2-prepositions-source-043",
+      "ssc-p2-prepositions-source-044",
+      "ssc-p2-prepositions-source-045",
+      "ssc-p2-prepositions-source-046",
+      "ssc-p2-prepositions-source-047",
+      "ssc-p2-prepositions-source-048",
+      "ssc-p2-prepositions-source-049",
+      "ssc-p2-prepositions-source-051",
+      "ssc-p2-prepositions-source-052",
+      "ssc-p2-prepositions-source-053",
+      "ssc-p2-prepositions-source-054",
+      "ssc-p2-prepositions-source-055",
+      "ssc-p2-prepositions-source-056",
+      "ssc-p2-prepositions-source-057",
+      "ssc-p2-prepositions-source-059"
+    ],
+    "adaptationRequiredCandidateIds": [
+      "ssc-p2-prepositions-source-001",
+      "ssc-p2-prepositions-source-003",
+      "ssc-p2-prepositions-source-004",
+      "ssc-p2-prepositions-source-005",
+      "ssc-p2-prepositions-source-006",
+      "ssc-p2-prepositions-source-007",
+      "ssc-p2-prepositions-source-008",
+      "ssc-p2-prepositions-source-010",
+      "ssc-p2-prepositions-source-011",
+      "ssc-p2-prepositions-source-012",
+      "ssc-p2-prepositions-source-013",
+      "ssc-p2-prepositions-source-014",
+      "ssc-p2-prepositions-source-015",
+      "ssc-p2-prepositions-source-016",
+      "ssc-p2-prepositions-source-017"
+    ],
+    "unfilledTargetSlots": 0,
+    "additionalSourceFormatMatchSlotsNeeded": 15,
+    "holds": [
+      {
+        "candidateId": "ssc-p2-prepositions-source-035",
+        "reason": "POSSIBLE_NEAR_REPRINT",
+        "similarTo": "ssc-p2-prepositions-source-028",
+        "trigramJaccard": 0.6571
+      },
+      {
+        "candidateId": "ssc-p2-prepositions-source-038",
+        "reason": "POSSIBLE_NEAR_REPRINT",
+        "similarTo": "ssc-p2-prepositions-source-022",
+        "trigramJaccard": 0.8649
+      },
+      {
+        "candidateId": "ssc-p2-prepositions-source-042",
+        "reason": "POSSIBLE_NEAR_REPRINT",
+        "similarTo": "ssc-p2-prepositions-source-028",
+        "trigramJaccard": 0.8125
+      },
+      {
+        "candidateId": "ssc-p2-prepositions-source-050",
+        "reason": "POSSIBLE_NEAR_REPRINT",
+        "similarTo": "ssc-p2-prepositions-source-041",
+        "trigramJaccard": 0.4
+      }
+    ],
+    "notes": [
+      "Candidate slots only: NOT prepared sets; answers are NOT_AUTHORED.",
+      "Original ten-/fourteen-gap sources are preserved intact. A ten-/fourteen-to-five adaptation needs explicit editorial review, original text, an adapted passage and a before/after ledger; no silent truncation or double counting.",
+      "Mixed preposition/article sources are NOT standalone preposition exercises. No individual gap is classified from its position or assumed answer. Article and zero-article gaps must be resolved during authoring.",
+      "A format match does not certify grammatical validity, semantic uniqueness or safe factual claims.",
+      "Empty slots require more distinct sources or explicitly reviewed adaptations, never generated attribution."
+    ]
+  }
+}

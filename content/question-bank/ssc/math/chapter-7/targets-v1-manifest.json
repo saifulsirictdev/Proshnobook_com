@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_ILLUSTRATED_DRAFT_ASSET_DEPLOY_AND_TEACHER_REVIEW_PENDING",
+  "chapter": 7,
+  "topic": "৭ম অধ্যায়: ব্যবহারিক জ্যামিতি",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 70,
+    "SQ": 30
+  },
+  "illustratedCounts": {
+    "MCQ": 150,
+    "CQ": 70,
+    "SQ": 30
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 136194,
+      "sha256": "d717b02128a7dc7a5fe1550112613aa6b8cd1d935e005bcc7578c84889b4c32d"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 162646,
+      "sha256": "01b88307230d571482b0f7f895970ae0232e365f5af76673a9ff03a992e9789c"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 36910,
+      "sha256": "ec3b0a3809c7571a10255951905c31f1c6fc8003b8d2ae2365161a1800a4d5cc"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 305001,
+    "sha256": "86f8b1b6c021b54625175807710a7d8b2b6269b798d8ba45a8629a50dabc8a82"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 4552,
+    "sha256": "9315b2fd59578afde934b3129ba6c51dff3a17d012b2fe9c136293ebef166e43"
+  },
+  "limitations": [
+    "Numeric target 250 met; 3 source-adapted MCQ and 247 original parameter variants, not 250 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

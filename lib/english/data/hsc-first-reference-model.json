@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "id": "hsc-first-reference-model-01",
+  "sources": {
+    "seen-1": {
+      "text": "His name was Jerry; he was twelve years old, and he had been at the orphanage since he was four. I could picture him at four, with the same grave gray-blue eyes and the same independence? No, the word that comes to me is \"integrity\". The word means something very special to me, and the quality for which I use it is a rare one. My father had it—there is another of whom I am almost sure—but almost no man of my acquaintance possesses it with the clarity, the purity, the simplicity of a mountain stream. But the boy Jerry had it. It is bedded on courage, but it is more than brave. It is honest, but it is more than honesty.\nThe ax handle broke one day. Jerry said the woodshop at the orphanage would repair it. I brought money to pay for the job and he refused it.\n\"I'll pay for it,\" he said. \"I broke it. I brought the ax down careless.\"\n\"But no one hits accurately every time,\" I told him. \"The fault was in the wood of the handle. I'll see the man from whom I bought it.\"\nIt was only then that he would take the money. He was standing back of his own carelessness. He was a free-will agent and he chose to do careful work, and if he failed, he took the responsibility without subterfuge.\nAnd he did for me the unnecessary thing, the gracious thing, that we find done only by the great of heart. Things no training can teach, for they are done on the instant, with no predicated experience. He found a cubbyhole beside the fireplace that I had not noticed. There, of his own accord, he put kindling and \"medium\" wood, so that I might always have dry fire material ready in case of sudden wet weather. A stone was loose in the rough walk to the cabin. He dug a deeper hole and steadied it, although he came, himself, by a shortcut over the bank. I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless. \"Thank you\" was, perhaps, an expression for which he had had no use, for his courtesy was instinctive. He only looked at the gift and at me, and a curtain lifted, so that I saw deep into the clear well of his eyes, and gratitude was there, and affection, soft over the firm granite of his character.",
+      "reference": "Owner-supplied HSC test compilation 1x6-0k6gzK4asMB6PVip0V38h-DjJUlni, printed p.3, Model 01 Q1; guide excerpt, not independently textbook-edition verified"
+    },
+    "seen-2": {
+      "text": "Education gives us knowledge and a set of abilities to function meaningfully in life, such as the ability to decide things rationally and make the right choices. As we learn how to read, write and do the basic operations of arithmetic, we gain a degree of self-confidence. We learn to think for ourselves and articulate our thoughts; we pick up skills to communicate with others and manage our affairs well. Education helps us think independently and make our own opinions. As we know more about the world, we appreciate the good things it offers us but also become critical of the deviations from the values it imparts and the rise of hatred or conflict that follows.\nThe first thing education does is to give us an awareness about ourselves which leads to the development of our personality. As we begin school, we feel the need to belong to the class and make friends. We then expand our sense of belonging to include the school at large, our community and finally our country. Education thus prepares every child to become an active member of the community and work for its welfare.",
+      "reference": "Owner-supplied HSC test compilation 1x6-0k6gzK4asMB6PVip0V38h-DjJUlni, printed p.4, Model 01 Q2; guide excerpt, not independently textbook-edition verified"
+    },
+    "summary-text": {
+      "text": "Hold fast to dreams\nFor if dreams die\nLife is a broken-winged bird\nThat cannot fly.\nHold fast to dreams\nFor when dreams go\nLife is a barren field\nFrozen with snow.",
+      "reference": "Owner-supplied HSC test compilation 1x6-0k6gzK4asMB6PVip0V38h-DjJUlni, printed p.4, Model 01 Q3; guide excerpt, not independently textbook-edition verified"
+    }
+  },
+  "writing": {
+    "paragraph": {
+      "topic": "Artificial Intelligence in the Classroom"
+    },
+    "story": {
+      "topic": "The Wallet on the Road"
+    },
+    "informal-letter-email": {
+      "topic": "your progress in studies",
+      "choice": "informal-email"
+    },
+    "graph": {
+      "topic": "Sources of Air Pollution in a City",
+      "words": 150
+    },
+    "appreciation": {
+      "topic": "the daffodils excerpt"
+    }
+  },
+  "output": {
+    "passages": [
+      {
+        "key": "seen-1",
+        "text": "His name was Jerry; he was twelve years old, and he had been at the orphanage since he was four. I could picture him at four, with the same grave gray-blue eyes and the same independence? No, the word that comes to me is \"integrity\". The word means something very special to me, and the quality for which I use it is a rare one. My father had it—there is another of whom I am almost sure—but almost no man of my acquaintance possesses it with the clarity, the purity, the simplicity of a mountain stream. But the boy Jerry had it. It is bedded on courage, but it is more than brave. It is honest, but it is more than honesty.\nThe ax handle broke one day. Jerry said the woodshop at the orphanage would repair it. I brought money to pay for the job and he refused it.\n\"I'll pay for it,\" he said. \"I broke it. I brought the ax down careless.\"\n\"But no one hits accurately every time,\" I told him. \"The fault was in the wood of the handle. I'll see the man from whom I bought it.\"\nIt was only then that he would take the money. He was standing back of his own carelessness. He was a free-will agent and he chose to do careful work, and if he failed, he took the responsibility without subterfuge.\nAnd he did for me the unnecessary thing, the gracious thing, that we find done only by the great of heart. Things no training can teach, for they are done on the instant, with no predicated experience. He found a cubbyhole beside the fireplace that I had not noticed. There, of his own accord, he put kindling and \"medium\" wood, so that I might always have dry fire material ready in case of sudden wet weather. A stone was loose in the rough walk to the cabin. He dug a deeper hole and steadied it, although he came, himself, by a shortcut over the bank. I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless. \"Thank you\" was, perhaps, an expression for which he had had no use, for his courtesy was instinctive. He only looked at the gift and at me, and a curtain lifted, so that I saw deep into the clear well of his eyes, and gratitude was there, and affection, soft over the firm granite of his character."
+      },
+      {
+        "key": "seen-2",
+        "text": "Education gives us knowledge and a set of abilities to function meaningfully in life, such as the ability to decide things rationally and make the right choices. As we learn how to read, write and do the basic operations of arithmetic, we gain a degree of self-confidence. We learn to think for ourselves and articulate our thoughts; we pick up skills to communicate with others and manage our affairs well. Education helps us think independently and make our own opinions. As we know more about the world, we appreciate the good things it offers us but also become critical of the deviations from the values it imparts and the rise of hatred or conflict that follows.\nThe first thing education does is to give us an awareness about ourselves which leads to the development of our personality. As we begin school, we feel the need to belong to the class and make friends. We then expand our sense of belonging to include the school at large, our community and finally our country. Education thus prepares every child to become an active member of the community and work for its welfare."
+      },
+      {
+        "key": "summary-text",
+        "text": "Hold fast to dreams\nFor if dreams die\nLife is a broken-winged bird\nThat cannot fly.\nHold fast to dreams\nFor when dreams go\nLife is a barren field\nFrozen with snow."
+      }
+    ],
+    "tasks": [
+      {
+        "id": "mcq",
+        "instruction": "Read the passage about Jerry and choose the correct answer.",
+        "subitems": [
+          {
+            "text": "In this context, \"grave\" describes eyes that look ___.",
+            "options": [
+              "serious",
+              "careless",
+              "amused",
+              "sleepy"
+            ],
+            "answer": "serious"
+          },
+          {
+            "text": "The word \"subterfuge\" refers to ___.",
+            "options": [
+              "an open window",
+              "a deceptive way of avoiding responsibility",
+              "a generous gift",
+              "a useful tool"
+            ],
+            "answer": "a deceptive way of avoiding responsibility"
+          },
+          {
+            "text": "A \"cubbyhole\" is ___.",
+            "options": [
+              "a large wooden handle",
+              "a shortcut across a field",
+              "a small enclosed space",
+              "a mountain stream"
+            ],
+            "answer": "a small enclosed space"
+          },
+          {
+            "text": "In the passage, \"instinctive\" means ___.",
+            "options": [
+              "forced by a written rule",
+              "deliberately unfriendly",
+              "dependent on payment",
+              "natural rather than consciously learnt"
+            ],
+            "answer": "natural rather than consciously learnt"
+          },
+          {
+            "text": "The metaphor \"granite of his character\" emphasises Jerry’s ___.",
+            "options": [
+              "firm moral strength",
+              "interest in collecting stones",
+              "physical height",
+              "lack of affection"
+            ],
+            "answer": "firm moral strength"
+          }
+        ],
+        "passageKey": "seen-1"
+      },
+      {
+        "id": "comprehension",
+        "instruction": "Answer the following questions in your own words.",
+        "subitems": [
+          {
+            "text": "Why did Jerry initially refuse the money for the broken ax handle?",
+            "answer": "He believed that he had broken the handle through his own carelessness and should therefore pay for its repair."
+          },
+          {
+            "text": "How does the narrator distinguish integrity from courage and honesty?",
+            "answer": "The narrator sees integrity as including courage and honesty but going beyond them. In Jerry, it also involves freely choosing careful work and accepting responsibility without excuses."
+          },
+          {
+            "text": "What did Jerry do to prepare the fireplace for wet weather?",
+            "answer": "He placed kindling and medium-sized wood in a cubbyhole beside the fireplace so that dry material would be ready when needed."
+          },
+          {
+            "text": "Why was repairing the loose stone especially thoughtful?",
+            "answer": "Jerry steadied a stone on the narrator’s path although he himself used a shortcut over the bank. The repair served the narrator rather than his own convenience."
+          },
+          {
+            "text": "How did Jerry express his response to the gifts without words?",
+            "answer": "His eyes revealed gratitude and affection. The narrator understood these feelings even though he did not say thank you."
+          }
+        ],
+        "passageKey": "seen-1"
+      },
+      {
+        "id": "information",
+        "instruction": "Read the education passage and complete the flow chart with five more abilities or outcomes of education. The first step is given. Accept equivalent phrases supported by the passage.",
+        "subitems": [
+          {
+            "text": "Complete step 2.",
+            "answer": "Making rational decisions and right choices"
+          },
+          {
+            "text": "Complete step 3.",
+            "answer": "Thinking independently"
+          },
+          {
+            "text": "Complete step 4.",
+            "answer": "Articulating our thoughts"
+          },
+          {
+            "text": "Complete step 5.",
+            "answer": "Managing our affairs well"
+          },
+          {
+            "text": "Complete step 6.",
+            "answer": "Working for the welfare of the community"
+          }
+        ],
+        "passageKey": "seen-2",
+        "table": {
+          "headers": [
+            "Step",
+            "Ability / outcome"
+          ],
+          "rows": [
+            [
+              "1",
+              "Picking up skills to communicate with others"
+            ],
+            [
+              "2",
+              "(a) ___"
+            ],
+            [
+              "3",
+              "(b) ___"
+            ],
+            [
+              "4",
+              "(c) ___"
+            ],
+            [
+              "5",
+              "(d) ___"
+            ],
+            [
+              "6",
+              "(e) ___"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "summary",
+        "instruction": "Write a summary of the poem in your own words.",
+        "subitems": [],
+        "passageKey": "summary-text",
+        "answer": "The poem urges people to hold on to their dreams. Without dreams, life loses the power to move forward and becomes empty and unproductive. The images of an injured bird and a snow-covered barren field show the helplessness and lifelessness that follow the loss of hope and aspiration."
+      },
+      {
+        "id": "cloze-clues",
+        "instruction": "Fill in the gaps with words from the box. There are more words than needed.\nA library gives students (a) ___ to many kinds of books. Good readers choose (b) ___ sources and ask thoughtful (c) ___. They (d) ___ different accounts before accepting a claim. They look for (e) ___ instead of trusting a striking headline. Reading (f) ___ strengthens vocabulary and understanding. It also makes students more (g) ___ when expressing ideas. Discussions teach them to (h) ___ opinions that differ from their own. In this way, reading supports (i) ___ thinking. A daily reading (j) ___ can continue throughout life.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "access"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "reliable"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "questions"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "compare"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "evidence"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "regularly"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "confident"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "respect"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "independent"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "habit"
+          }
+        ],
+        "clues": [
+          "regularly",
+          "access",
+          "reliable",
+          "questions",
+          "compare",
+          "evidence",
+          "confident",
+          "respect",
+          "independent",
+          "habit",
+          "seldom",
+          "careless"
+        ]
+      },
+      {
+        "id": "cloze-no-clues",
+        "instruction": "Fill each gap with one suitable word. Accept other contextually appropriate words.\nClean water is essential (a) ___ human life. Yet many people do not have safe water to (b) ___. Rivers become polluted when waste is thrown (c) ___ them. This pollution can (d) ___ both people and wildlife. We should avoid (e) ___ rubbish in water and report serious pollution to the proper authorities. Local communities can work (f) ___ to protect their water sources. Schools can teach students (g) ___ safe water matters. Repairing a leaking tap also helps to (h) ___ water. Small actions may seem unimportant, (i) ___ they add up over time. Everyone has a role to (j) ___.",
+        "subitems": [
+          {
+            "text": "Fill gap (a).",
+            "answer": "for"
+          },
+          {
+            "text": "Fill gap (b).",
+            "answer": "drink"
+          },
+          {
+            "text": "Fill gap (c).",
+            "answer": "into"
+          },
+          {
+            "text": "Fill gap (d).",
+            "answer": "harm"
+          },
+          {
+            "text": "Fill gap (e).",
+            "answer": "throwing"
+          },
+          {
+            "text": "Fill gap (f).",
+            "answer": "together"
+          },
+          {
+            "text": "Fill gap (g).",
+            "answer": "why"
+          },
+          {
+            "text": "Fill gap (h).",
+            "answer": "save"
+          },
+          {
+            "text": "Fill gap (i).",
+            "answer": "but"
+          },
+          {
+            "text": "Fill gap (j).",
+            "answer": "play"
+          }
+        ]
+      },
+      {
+        "id": "rearranging",
+        "instruction": "Rearrange the following sentences to form a coherent account. Write the letters in the correct order.",
+        "subitems": [
+          {
+            "text": "Next, they invited students to bring books in good condition.",
+            "answer": "6"
+          },
+          {
+            "text": "Rupa wanted to organise a book exchange at her college.",
+            "answer": "1"
+          },
+          {
+            "text": "At the end of the day, the team counted the books left for donation.",
+            "answer": "9"
+          },
+          {
+            "text": "They agreed to form a small organising team.",
+            "answer": "3"
+          },
+          {
+            "text": "On the appointed morning, volunteers arranged the books on tables.",
+            "answer": "7"
+          },
+          {
+            "text": "The team then asked the principal for permission.",
+            "answer": "4"
+          },
+          {
+            "text": "They gave those books to the college library and thanked everyone.",
+            "answer": "10"
+          },
+          {
+            "text": "First, she discussed the idea with her classmates.",
+            "answer": "2"
+          },
+          {
+            "text": "Visitors examined the titles and exchanged their own books.",
+            "answer": "8"
+          },
+          {
+            "text": "After receiving permission, they chose a date and a room.",
+            "answer": "5"
+          }
+        ],
+        "answer": "b → h → d → f → j → a → e → i → c → g"
+      },
+      {
+        "id": "paragraph",
+        "instruction": "Write a paragraph of 200–250 words on Artificial Intelligence in the Classroom. Explain possible uses, benefits, risks and responsible practices.",
+        "subitems": [],
+        "answer": "Artificial Intelligence in the Classroom can support learning when it is used as a tool rather than a replacement for thought. A teacher may use it to suggest practice exercises, explain an idea in different ways or prepare examples for discussion. Students can ask for feedback on a draft and identify areas that need more work. Such support may be helpful when a learner needs extra practice at a different pace. However, an AI system can produce confident but incorrect information. It may also give an answer without explaining the evidence behind it. Students should therefore compare important claims with reliable books and seek a teacher’s guidance when uncertain. Copying an entire generated assignment prevents genuine learning and can misrepresent a student’s ability. Privacy is another concern: personal details and other people’s work should not be uploaded carelessly. Equal access matters too, because not every family has a suitable device or an affordable internet connection. Schools need clear rules about when AI assistance is allowed and how it should be acknowledged. Teachers should continue to assess reasoning, creativity and understanding through discussion and independent work. With careful supervision, source checking and honest acknowledgement, AI can become a useful classroom aid. Without these safeguards, it may encourage dependence and spread errors instead of strengthening education."
+      },
+      {
+        "id": "story",
+        "instruction": "Complete the following story in your own words and give it a suitable title: The Wallet on the Road.\nOne morning, a student was walking to college when she noticed a wallet beside the road. She picked it up and looked around, but nobody seemed to be searching for it...",
+        "subitems": [],
+        "answer": "The Wallet on the Road\nRupa opened the wallet carefully to look for an address. Inside she found some money and a library card bearing a man’s name. She did not want to keep it, but she also knew that handing it to an unknown passer-by would be unwise. She took it to the college office and explained where she had found it. A teacher helped her contact the library named on the card. The librarian knew the owner and asked him to visit the college with identification. Later that morning, a worried man arrived. He described the wallet and its contents before the teacher returned it. He offered Rupa a reward, but she politely declined. She was pleased that the wallet had reached its owner safely. The incident reminded her classmates that honesty includes taking sensible steps to protect another person’s property."
+      },
+      {
+        "id": "informal-letter-email",
+        "instruction": "Write an informal email to your father about your progress in studies. Mention a difficulty and your plan to improve.",
+        "subitems": [],
+        "answer": "To: father@example.com\nSubject: News about my studies\nDear Father,\nI hope you are well. I am writing to tell you about my progress in studies. I have been attending classes regularly and completing my assignments on time. My recent mathematics work has improved because I practise a few problems every evening.\nI still find English essay writing difficult. My teacher has advised me to plan each paragraph before writing and to revise my grammar carefully. I now read for twenty minutes every day and keep a vocabulary notebook. I will also ask the teacher to review one practice essay each week.\nPlease do not worry about me. I am following a steady routine and taking enough rest. Give my love to everyone at home.\nWith love,\nRupa\nThe address and identity are hypothetical examples."
+      },
+      {
+        "id": "graph",
+        "instruction": "The table represents a pie chart titled Sources of Air Pollution in a City. Analyse it in at least 150 words, comparing the main sources. The figures are from the supplied practice chart, not verified measurements.",
+        "subitems": [],
+        "answer": "The chart titled Sources of Air Pollution in a City compares the contributions of six activities. Vehicles account for 60 percent, making them by far the largest source shown. Their share alone is greater than the combined share of all the remaining categories, which totals 40 percent. Factories contribute 15 percent and occupy second place. The contribution from vehicles is four times that of factories.\nCooking and domestic activities account for 10 percent, while brick-fields represent 8 percent. Together, these two categories contribute 18 percent, slightly more than factories alone. Railway engines are responsible for 5 percent, and powerhouses have the smallest share, at 2 percent. The gap between the largest and smallest categories is therefore 58 percentage points.\nOverall, the chart places transport, especially road vehicles, at the centre of the pollution pattern in this practice example. It suggests that reducing vehicle emissions could address a large share of the sources represented. However, the chart provides no date, method of measurement or information about trends, so it cannot establish whether pollution is increasing or decreasing.",
+        "table": {
+          "headers": [
+            "Source",
+            "Share (%)"
+          ],
+          "rows": [
+            [
+              "Vehicles",
+              "60"
+            ],
+            [
+              "Factories",
+              "15"
+            ],
+            [
+              "Cooking and domestic activities",
+              "10"
+            ],
+            [
+              "Brick-fields",
+              "8"
+            ],
+            [
+              "Railway engines",
+              "5"
+            ],
+            [
+              "Powerhouses",
+              "2"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "appreciation",
+        "instruction": "Write the theme of the daffodils excerpt below in no more than 50 words.\nI wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.\nContinuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.",
+        "subitems": [],
+        "answer": "The excerpt presents the joyful beauty and vitality of nature. The sight of countless dancing daffodils interrupts the speaker’s loneliness and fills the scene with delight. Their abundance and lively movement suggest nature’s power to lift the human spirit."
+      }
+    ]
+  },
+  "provenance": {
+    "kind": "SOURCE_ADAPTED_PRACTICE",
+    "sourceFileId": "1x6-0k6gzK4asMB6PVip0V38h-DjJUlni",
+    "printedPages": [
+      3,
+      4,
+      5
+    ],
+    "sourceModel": "01",
+    "sourceUse": "Jerry, education and Dreams extracts retained with extraction whitespace and dash normalization; daffodils excerpt and chart values from the same supplied guide. New/repaired questions and suggested keys; not an exact school-paper reproduction.",
+    "normalizations": [
+      "Joined PDF-split words and lines; preserved quoted nonstandard careless from the source.",
+      "Replaced ambiguous MCQ distractors and the inconsistent .5×10 heading with five complete original MCQs as specified by the configured practice blueprint.",
+      "Original grammar/pollution cloze and rearranging replaced by coherent authored practice.",
+      "Separate seen-1, seen-2 and summary-text groups; never use the Jerry extract as the education flow-chart or poem summary source.",
+      "MCQ option positions are deterministically distributed across the four choices; suggested answer text is unchanged."
+    ],
+    "answerStatus": "Assistant-authored suggested keys, owner review required; no independent teacher/official certification.",
+    "limitations": [
+      "One model, not 50 distinct sets.",
+      "Guide lesson annotations and school/year heading are not independently authenticated textbook-edition or examination provenance."
+    ]
+  }
+}

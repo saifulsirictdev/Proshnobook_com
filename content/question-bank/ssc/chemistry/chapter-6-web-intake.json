@@ -1,0 +1,26 @@
+{
+  "status": "LIMITED_WEB_EXCERPTS_QUESTION_TEXT_CHECKED_NOT_BOARD_CERTIFIED",
+  "searchScope": "Targeted chapter6 MCQ/CQ/SQ search; six result pages fetched, two useful full articles plus one suggestion article. Not exhaustive internet/Drive availability research. No claim that only these questions exist online.",
+  "sources": {
+    "itmona": {"url":"https://itmona.com/ssc-chemistry-mcq-suggestion-pdf-download-chapter-6/","title":"অধ্যায় ৬ বহুনির্বাচনী সাজেশন","chunksInspected":[2,3],"board":null,"examYear":null,"notes":"Only eight complete short MCQs retained; missing stimuli/options and wrong-answer candidates excluded. No copied article answers/explanations. Text and four options preserved, original plain chemical digits retained."},
+    "shomadhan": {"url":"https://shomadhan.net/ssc-chemistry-chapter-6-srijonshil/","title":"মোলের ধারণা ও রাসায়নিক গণনা সৃজনশীল প্রশ্ন ও উত্তর","chunksInspected":[0,1],"board":null,"examYear":null,"notes":"Only question5 retained, no source solution copied. Source model solution contains premature rounding/arithmetic errors; authored solution will use30/28and20/32and12.5g excess N2, not12.32g. Question is a theoretical stoichiometry exercise assuming stated reaction completion; not a lab procedure or claim quantitative NO yield in reality."},
+    "edulecture": {"url":"https://edulecture.com/এসএসসি-রসায়ন-সাজেশন-pdf-download/","title":"এসএসসি রসায়ন সাজেশন ২০২৬","chunksInspected":[0],"board":null,"examYear":null,"notes":"Six short chapter6 prompts retained. Promotional stars omitted, question wording preserved. Article2026 is not an actual board exam attribution. Typo ভুল সংকেত prompts excluded rather than silently corrected."}
+  },
+  "items": [
+    {"type":"MCQ","source":"itmona","number":1,"text":"এক মোল পানি=?","options":["16g","18g","20g","22g"],"sourceCorrect":"B"},
+    {"type":"MCQ","source":"itmona","number":2,"text":"পানিতে NaOH দ্রবীভূত করা হলে দ্রবণটিকে কী বলে?","options":["জৈবিক দ্রবণ","জলীয় দ্রবণ","জটিল দ্রবণ","অসমসত্ত্ব মিশ্রণ"],"sourceCorrect":"B"},
+    {"type":"MCQ","source":"itmona","number":5,"text":"একটি যৌগের স্থূল সংকেত CH এবং আণবিক ভর 78 হলে এর আণবিক সংকেত কী হবে?","options":["C6H6","C2H2","CH4","C2H4"],"sourceCorrect":"A"},
+    {"type":"MCQ","source":"itmona","number":6,"text":"বিক্রিয়ক ও উৎপাদের পরিমাণ হিসাব করাকে কী বলে?","options":["Gravimetry","Stoichiometry","Iidometry","Cromatography"],"sourceCorrect":"B","notes":["Source distractor spellings retained without silent editing."]},
+    {"type":"MCQ","source":"itmona","number":7,"text":"একটি যৌগের আণবিক ভর 180 এবং উহার স্থূল সংকেত CH2O। যৌগটির আণবিক সংকেত কোনটি?","options":["CH4O","C6H12O6","C6H6O","H2CO3"],"sourceCorrect":"B"},
+    {"type":"MCQ","source":"itmona","number":12,"text":"গ্লুকোজের আণবিক ভর কত?","options":["280","90","140","180"],"sourceCorrect":"D"},
+    {"type":"MCQ","source":"itmona","number":19,"text":"বিক্রিয়ায় উৎপাদের পরিমাণ হিসাব করা যায় কোনটি থেকে?","options":["প্রতিপাদ বিক্রিয়ক","লিমিটিং বিক্রিয়ক থেকে","বিজারক থেকে","জারক থেকে"],"sourceCorrect":"B"},
+    {"type":"MCQ","source":"itmona","number":30,"text":"এক মোল পরিমাণ পদার্থের আয়তনকে কী বলা হয়?","options":["মোল ভগ্নাংশ","মোলার দ্রবণ","মোলারিটি","মোলার আয়তন"],"sourceCorrect":"D"},
+    {"type":"CQ","source":"shomadhan","number":5,"text":"দশম শ্রেণির ছাত্র রাফিদ ল্যাবরেটরিতে উপযুক্ত পরিবেশে ৩০ গ্রাম নাইট্রোজেন গ্যাসের সাথে ২০ গ্রাম অক্সিজেন গ্যাস মেশালো। বিক্রিয়ার ফলে পাত্রে NO গ্যাস উৎপন্ন হলো।","parts":["ধাতব বন্ধন কী?","“উদ্দীপকের বিক্রিয়াটি সংশ্লেষণ বিক্রিয়া”- ব্যাখ্যা কর।","উৎপন্ন গ্যাসটির ১০ গ্রামে মোট কতটি অণু বিদ্যমান? নির্ণয় কর।","রাফিদের নেয়া গ্যাস দুটির বিক্রিয়ার পর কোন বিক্রিয়ক কী পরিমাণে অবশিষ্ট থাকবে? বিশ্লেষণ কর।"],"sourceMarks":[1,2,3,4]},
+    {"type":"SQ","source":"edulecture","number":"জ্ঞানমূলক২","text":"মোলারিটি কাকে বলে?"},
+    {"type":"SQ","source":"edulecture","number":"জ্ঞানমূলক৩","text":"মোলার আয়তন কাকে বলে?"},
+    {"type":"SQ","source":"edulecture","number":"জ্ঞানমূলক৪","text":"ডেসিমোলার দ্রবণ কাকে বলে?"},
+    {"type":"SQ","source":"edulecture","number":"অনুধাবনমূলক৪","text":"0.01 M HCl দ্রবণ বলতে কী বোঝায়? ব্যাখ্যা করো।"},
+    {"type":"SQ","source":"edulecture","number":"অনুধাবনমূলক৬","text":"মোলারিটি তাপমাত্রা নির্ভর কেন? ব্যাখ্যা করো।"},
+    {"type":"SQ","source":"edulecture","number":"অনুধাবনমূলক১২","text":"খাদ্য লবণে ক্লোরিনের শতকরা সংযুতি নির্ণয় করো।"}
+  ]
+}

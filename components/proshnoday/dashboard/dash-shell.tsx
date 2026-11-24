@@ -37,7 +37,7 @@ function sideMenu(role: string): NavItem[] {
   if (role === "TEACHER" || role === "ADMIN") {
     const items: NavItem[] = [
       { key: "home", href: "/dashboard", label: "হোম", icon: Home },
-      { key: "build", href: "/question-builder", label: "প্রশ্নপত্র তৈরি", icon: FileText, badge: "AI" },
+      { key: "build", href: "/question-builder", label: "প্রশ্নপত্র তৈরি", icon: FileText, badge: "সফটওয়্যার" },
       { key: "saved", href: "/question-builder/saved", label: "আমার প্রশ্নপত্র", icon: FolderOpen },
       { key: "quiz", href: "/quiz", label: "কুইজ", icon: HelpCircle },
       { key: "blog", href: "/blog", label: "ব্লগ", icon: Newspaper },

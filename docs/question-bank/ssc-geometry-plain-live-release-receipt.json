@@ -1,0 +1,60 @@
+{
+  "status": "OWNER_APPROVED_PUBLICATION_VERIFIED",
+  "digest": "edf0452c7c8345c055e2cc4115be9e0ef0a0b6dc3b96d821e62aca0b660f7b6d",
+  "actor": "vercel-owner-release:88dadfa4115e98ff4237fc5da54ab7745be3f926",
+  "createdAt": "2026-11-22T10:20:06.035Z",
+  "insertedPending": 50,
+  "newlyApproved": 50,
+  "previouslyApproved": 0,
+  "approvedCanonical": 50,
+  "conflictingSkipped": 0,
+  "autoModel": {
+    "plainGeometryMCQ": 50
+  },
+  "applicationApprovedStock": 5859,
+  "applicationAutoModel": {
+    "runs": [
+      {
+        "mcq": 30,
+        "algebra": 12,
+        "geometry": 13,
+        "combined": 5,
+        "diagramQuestions": 5
+      },
+      {
+        "mcq": 30,
+        "algebra": 12,
+        "geometry": 13,
+        "combined": 5,
+        "diagramQuestions": 5
+      },
+      {
+        "mcq": 30,
+        "algebra": 13,
+        "geometry": 12,
+        "combined": 5,
+        "diagramQuestions": 5
+      },
+      {
+        "mcq": 30,
+        "algebra": 13,
+        "geometry": 12,
+        "combined": 5,
+        "diagramQuestions": 5
+      },
+      {
+        "mcq": 30,
+        "algebra": 13,
+        "geometry": 12,
+        "combined": 5,
+        "diagramQuestions": 5
+      }
+    ],
+    "writtenItems": 23
+  },
+  "approvalBasis": "OWNER_EXPLICIT_APPROVAL_REQUEST; NOT_INDEPENDENT_TEACHER_CERTIFICATION",
+  "teacherCertified": false,
+  "deploymentId": "dpl_BrSNKQAVqkTgivriSkovm9gtmPL8",
+  "evidenceEventCreated": 1795342807709,
+  "evidenceBoundary": "Production DB query and assembly; not authenticated production checkout/save/reopen browser test."
+}

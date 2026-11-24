@@ -1,0 +1,42 @@
+{
+  "chapter": 12,
+  "topic": "১২শ অধ্যায়: জীবের বংশগতি ও জৈব অভিব্যক্তি",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 158183,
+      "sha256": "b571398fc498cd6979f4a039bd999f7d04613c2883688156143b121c2a6deabc"
+    },
+    "rebuild-cq.json": {
+      "bytes": 137402,
+      "sha256": "2a6bc5f8782a92174cb0a01a8449b374ddfaa430853876335a8656f17e69aacb"
+    },
+    "rebuild-sq.json": {
+      "bytes": 56830,
+      "sha256": "ab5aac8062e7484a4c45e8168498c95397053cd1b6d8caa56da5c5db7538ed0f"
+    }
+  }
+}

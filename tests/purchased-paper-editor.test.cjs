@@ -8,13 +8,14 @@ function load(file, mocks = {}) {
   const m = new Module(file, module);
   m.paths = module.paths;
   m.require = (n) =>
+    n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     Object.hasOwn(mocks, n)
       ? mocks[n]
       : n === "server-only"
         ? {}
         : n.startsWith("@/lib/")
           ? (cache[n] ??= load(n.replace("@/", "") + ".ts"))
-          : require(n);
+          : (require("./helpers/paper-editing.cjs").dependencies[n] || require(n));
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {
@@ -126,4 +127,12 @@ test("purchased setup uses private receipt, skips bank checkout and does not sav
     builder,
     /if \(!purchased && !english\)\s*localStorage.setItem\("qb:settings"/,
   );
+});
+test('purchased snapshots retain per-question provenance without turning it into an editable choice',()=>{
+ const provenance=[{kind:'board',board:'dhaka',examYear:2024,sourceFile:'Fixture.pdf',pdfPage:1,questionNumber:'10'}];
+ const items=marketSnapshotItems({settings:{},questions:[{id:'q',text:'Question',correct:'A',options:{A:'one',B:'two',C:'three',D:'four',_provenance:provenance}}]});
+ assert.deepEqual(items[0].provenance,provenance);
+ assert.deepEqual(Object.keys(items[0].options),['A','B','C','D']);
+ const copied=marketSnapshotItems({settings:{},questions:JSON.parse(JSON.stringify(items))});
+ assert.deepEqual(copied[0].provenance,provenance);
 });

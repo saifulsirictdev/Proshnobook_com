@@ -1,0 +1,21 @@
+{
+  "scope": "SOURCE_ONLY_PARTIAL_INTAKE_NO_APP_CHANGES",
+  "tests": {
+    "command": "node --test tests/ssc-chemistry-ch6-source.test.cjs",
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0
+  },
+  "deterministicArtifacts": {
+    "command": "python scripts/question-bank/collect-ssc-chemistry-ch6-source.py --check",
+    "passed": true
+  },
+  "visualReview": [
+    "OriginalPDF145and146",
+    "13nativecrops contact sheet; MCQ5bottom crop corrected and individually rechecked"
+  ],
+  "teacherCertification": false,
+  "fullApplicationBuildRun": false,
+  "imported": false,
+  "deployed": false
+}

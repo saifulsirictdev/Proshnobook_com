@@ -1,0 +1,37 @@
+{
+  "rule": "A complete approved full-book model forbids selection-shortfall AI; no topic substitution",
+  "implementationStatus": "DEPLOYED_PRODUCTION_READBACK_VERIFIED",
+  "autoModelEnglishFocusedTests": 157,
+  "autoModelEnglishFailed": 0,
+  "biologyFocusedTests": 130,
+  "biologyFailed": 0,
+  "typecheck": "PASS",
+  "fullRepositorySuiteClaimed": false,
+  "newProductionBuildClaimed": true,
+  "productionDeploymentChanged": true,
+  "biologyCanonicalItems": 4480,
+  "biologyRemainingChapter14": 0,
+  "biologyImportExecuted": true,
+  "biologyApprovalExecuted": true,
+  "files": {
+    "docs/auto-model-all-subjects/book-stock-rule-regressions.tap": "9df61a5f61430e4e93039dab78834ef5e925a7a3dd40d8b30422735a3f3ba541",
+    "docs/question-bank/ssc-biology/chapter-14-regressions.tap": "5159d6b21bd80c7b3af7e4a8fefb956d207a39aadb8f8805451c9635d00074d6",
+    "docs/auto-model-all-subjects/biology-final-runtime-regressions.tap": "1990b253de134701ffdfe7be2c17b5cc0330779de5e854c7131da9b3bd60af47"
+  },
+  "sectionTopicFilterBypassRegression": "PASS: selected section topic scope is cleared only for book-wide guard; selected shortage retained",
+  "runtimeRegressionTests": 962,
+  "runtimeRegressionFailures": 0,
+  "productionReceipt": "docs/question-bank/ssc-biology/production-release-receipt.json",
+  "liveBiologyAIGuard": {
+    "method": "READ_ONLY_SERVER_ACTION_HARNESS_WITH_LIVE_STOCK",
+    "syntheticTeacherIdentity": true,
+    "authenticatedBrowserFlowVerified": false,
+    "sectionTopicFilterCovered": true,
+    "databaseOnly": true,
+    "stockShortfall": 51,
+    "aiShortfall": 0,
+    "quotaWrites": 0,
+    "providerInvocations": 0,
+    "topicSubstitution": false
+  }
+}

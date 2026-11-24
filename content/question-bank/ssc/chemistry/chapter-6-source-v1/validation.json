@@ -1,0 +1,182 @@
+{
+  "status": "PARTIAL_VERIFIED_COLLECTION_NOT_IMPORTABLE",
+  "counts": {
+    "MCQ": 6,
+    "CQ": 2,
+    "SQ": 3
+  },
+  "requested": {
+    "MCQ": 500,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "remainingAgainstTarget": {
+    "MCQ": 494,
+    "CQ": 198,
+    "SQ": 97
+  },
+  "ownQuestionsCreated": 0,
+  "sourceVerbatimCount": 11,
+  "boardOrSchoolQuestionCountVerified": 0,
+  "availableSourceTotalEstablished": false,
+  "originalPDFPagesActuallyInspectedForQuestions": [
+    145,
+    146
+  ],
+  "fullChapterReadInThisTask": false,
+  "sourceSHA256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+  "assets": {
+    "textbook-cq-1-diagram.png": {
+      "bytes": 27048,
+      "sha256": "b773db1ef65d17c0f5e6ba9f9414ee6e6e37c96dedf775c67e0e77193fc6580c",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.56,
+        0.196,
+        0.89,
+        0.415
+      ]
+    },
+    "textbook-cq-1.png": {
+      "bytes": 78786,
+      "sha256": "c760dea9e8705b41d55e3dca7a6846093cf458765721aa025e45d1993eb26c2f",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.095,
+        0.192,
+        0.91,
+        0.418
+      ]
+    },
+    "textbook-cq-2.png": {
+      "bytes": 74957,
+      "sha256": "ba3dd89acf89450a0e36590b7f66339be7ec014f1f0ec7cc5529040d78a29fe2",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.095,
+        0.442,
+        0.92,
+        0.597
+      ]
+    },
+    "textbook-mcq-1.png": {
+      "bytes": 20198,
+      "sha256": "d44df26e14391e3ae05e77f3acebd9b358c08254f2fbd36178bcc685982a2e12",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.258,
+        0.91,
+        0.337
+      ]
+    },
+    "textbook-mcq-2.png": {
+      "bytes": 21800,
+      "sha256": "297e73a5001fec1299b6665985713b4b0242ba51a58fada7b4f22a519d19e72d",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.35,
+        0.91,
+        0.434
+      ]
+    },
+    "textbook-mcq-3.png": {
+      "bytes": 22432,
+      "sha256": "baac4c711f9c8ff0c5ae19f8e80dd0ea51cffcc5a7d71a6615b1c54b31466924",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.512,
+        0.91,
+        0.588
+      ]
+    },
+    "textbook-mcq-4.png": {
+      "bytes": 21230,
+      "sha256": "e6b161360019708c9622b2b9c1c253406a067371187c77a3d425b2c6d63a4495",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.596,
+        0.91,
+        0.677
+      ]
+    },
+    "textbook-mcq-5.png": {
+      "bytes": 17109,
+      "sha256": "d8ba179d0b46864df8583d0d5316d6091cafb0fac817068c572d42e28ccfc596",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.688,
+        0.91,
+        0.772
+      ]
+    },
+    "textbook-mcq-6.png": {
+      "bytes": 22433,
+      "sha256": "a4bd33ffc625a4961e8cd7a5b01d11375d9334d2d7f35ab9c2c0dfaddb64293b",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.783,
+        0.91,
+        0.866
+      ]
+    },
+    "textbook-shared-3-4.png": {
+      "bytes": 23179,
+      "sha256": "26affeb15e1816320e9fcd5287b9f786bbf02a333e118f821ea5056153838a39",
+      "sourcePage": 145,
+      "cropBounds": [
+        0.095,
+        0.449,
+        0.91,
+        0.505
+      ]
+    },
+    "textbook-sq-1.png": {
+      "bytes": 8567,
+      "sha256": "52b87eff25b16c2d6b6276f64b0962f1c0980d471722d13eecba20debfed6300",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.13,
+        0.678,
+        0.91,
+        0.707
+      ]
+    },
+    "textbook-sq-2.png": {
+      "bytes": 11786,
+      "sha256": "5dad5e8fe23a8941c97a7492096ea81961c58074a596d36e6fd2e8c2a281ac82",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.13,
+        0.707,
+        0.91,
+        0.734
+      ]
+    },
+    "textbook-sq-3.png": {
+      "bytes": 14339,
+      "sha256": "20edbbf8bec1ae085b1f1690b7bdf40220909327af0de8179bab7b347add4534",
+      "sourcePage": 146,
+      "cropBounds": [
+        0.13,
+        0.734,
+        0.93,
+        0.765
+      ]
+    }
+  },
+  "questionFileSHA256": "207b967dbf1f7855da89f043607ad06d5d6420ff201458739753b4677bf14d5e",
+  "boardCandidatesExcludedFromVerifiedCount": 49,
+  "unresolved": [
+    "Word rendering loses some Symbol-font glyphs and equation fields; plain Bijoy conversion also corrupts Latin formulas.",
+    "Some automatic question crops lose shared stimuli or choices across columns; source/board candidates need individual repair and fidelity review.",
+    "All remaining board/school questions, years and chapters have not been exhaustively inspected.",
+    "Source answers and marks are absent from inspected textbook question pages; left null.",
+    "No independent teacher certification, actual import, approval, publication or deployment."
+  ]
+}

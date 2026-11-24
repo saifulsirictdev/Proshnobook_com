@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>জীববিজ্ঞান — উত্তরসহ খসড়া</title>
+<style>body{margin:0;background:#f3f7f6;color:#183a34;font:17px/1.8 system-ui}header,main{max-width:940px;margin:auto;padding:24px}header{border-bottom:2px solid #287b69}h1{margin:0;font-size:29px}p{margin:8px 0}label{display:inline-block;margin-right:15px}select,input,button{font:inherit;padding:8px;border:1px solid #b4c8c1;border-radius:6px;max-width:100%}article{background:white;padding:22px;margin:18px 0;border:1px solid #d2dfdb;border-radius:10px}article h2{font-size:19px;font-weight:600}summary,button{cursor:pointer}.meta{color:#58766d;font-size:14px}.answer{border-left:3px solid #287b69;padding-left:14px}button:disabled{opacity:.5}nav{display:flex;gap:15px;align-items:center}details{margin-top:15px}footer{max-width:940px;margin:auto;padding:24px}@media print{header label,nav,#toggle{display:none}article{break-inside:avoid}}</style></head>
+<body><header><p class="meta">SSC · জীববিজ্ঞান · বর্তমান কাজ: অধ্যায় ১১—জীবের প্রজনন</p><h1>উত্তরসহ পর্যালোচনাধীন অনুশীলনী</h1><p>অধ্যায় ১–১১-এর উত্তরসহ খসড়া সম্পূর্ণ: প্রতিটিতে ২০০ MCQ + ৫০ CQ + ৭০ SQ। পূর্ণ বইয়ের লক্ষ্য অপূর্ণ। মূল বই, শিক্ষক ও পুনরাবৃত্তি যাচাই বাকি। বোর্ড/স্কুল/সাল দাবি নেই; প্রকাশিত নয়।</p><label>অধ্যায় <select id="chapter"><option value="">সব</option></select></label><label>ধরন <select id="kind"><option value="">সব</option><option>MCQ</option><option>CQ</option><option>SQ</option></select></label><label>খুঁজুন <input id="search" type="search" placeholder="প্রশ্ন বা উত্তরে খুঁজুন"></label><p id="count" role="status" aria-live="polite"></p><button id="toggle">সব দৃশ্যমান উত্তর খুলুন</button></header><main><nav><button id="prev">আগের</button><span id="page"></span><button id="next">পরের</button></nav><section id="questions"></section></main><footer>উৎসের সহায়ক পাঠ প্রশ্নের হুবহু উৎস নয়। ধারণাভিত্তিক MCQ ও SQ একই বিষয় শেয়ার করে; এগুলো স্বতন্ত্র শিক্ষণ-উদ্দেশ্যের গণনা নয়।</footer>
+<script type="application/json" id="bank">__BANK_JSON__</script><script>
+'use strict';
+const bank=JSON.parse(document.getElementById('bank').textContent),$=id=>document.getElementById(id);
+let page=0,open=false;const size=20;
+function node(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
+for(const [chapter,title] of new Map(bank.map(x=>[x.chapter,x.topic]))){const o=node('option',title);o.value=chapter;$('chapter').append(o);}
+function draw(){
+ const chapter=$('chapter').value,kind=$('kind').value,search=$('search').value.trim().toLocaleLowerCase();
+ const rows=bank.filter(x=>(!chapter||String(x.chapter)===chapter)&&(!kind||x.item.type===kind)&&(!search||JSON.stringify(x.item).toLocaleLowerCase().includes(search)));
+ const pages=Math.max(1,Math.ceil(rows.length/size));page=Math.min(page,pages-1);
+ $('count').textContent=`মোট খসড়া ${bank.length} · নির্বাচিত ${rows.length} · শিক্ষক-অনুমোদিত নয়`;
+ $('page').textContent=`${page+1} / ${pages}`;$('prev').disabled=page===0;$('next').disabled=page===pages-1;
+ $('toggle').textContent=open?'সব দৃশ্যমান উত্তর বন্ধ করুন':'সব দৃশ্যমান উত্তর খুলুন';$('questions').replaceChildren();
+ for(const x of rows.slice(page*size,(page+1)*size)){
+  const q=x.item,article=node('article'),origin=x.evidence.origin==='web_exercise_adaptation'?'ওয়েব অনুশীলনী থেকে অভিযোজিত':'নিজস্ব অনুশীলনী';
+  const stem=q.text.replace(/!\[[^\]\n]*\]\(assets\/[a-z-]+\.svg\)/g,'');
+  article.append(node('div',`${x.topic} · ${q.type} · ${origin}${x.evidence.objective.includes(':enrichment')?' · সম্প্রসারিত ধারণা':''}`,'meta'),node('h2',stem));
+  if(x.figure){const figure=node('figure'),image=node('img');image.src=x.figure.dataUri;image.alt=x.figure.alt;image.style.maxWidth='100%';image.style.height='auto';figure.style.margin='12px 0';figure.append(image,node('figcaption','নিজস্ব শিক্ষামূলক চিত্র; লিখিত সমতুল্য উদ্দীপকেও দেওয়া আছে।','meta'));article.append(figure);}
+  if(q.options)for(const [key,value] of Object.entries(q.options))article.append(node('div',`${key}. ${value}`));
+  if(q.parts)for(const part of q.parts)article.append(node('p',`${part.label}. ${part.question} [${part.marks}]`));
+  const details=node('details');details.open=open;details.append(node('summary','উত্তর ও ব্যাখ্যা'));
+  if(q.type==='MCQ')details.append(node('p',`${q.correct} — ${q.options[q.correct]}`,'answer'));
+  details.append(node('p',q.explanation,'answer'));
+  if(q.parts)for(const part of q.parts)details.append(node('p',`${part.label}. ${part.solution}`,'answer'));
+  details.append(node('p',x.id+' · '+x.evidence.authoringRefs.join(', '),'meta'));
+  for(const url of x.evidence.backgroundSources){const a=node('a','ধারণার সহায়ক পাঠ');a.href=url;a.target='_blank';a.rel='noopener noreferrer';details.append(a,node('br'));}
+  article.append(details);$('questions').append(article);
+ }
+ if(!rows.length)$('questions').append(node('p','কোনো প্রশ্ন পাওয়া যায়নি।'));
+}
+for(const id of ['chapter','kind','search'])$(id).addEventListener(id==='search'?'input':'change',()=>{page=0;draw();});
+$('prev').addEventListener('click',()=>{page--;draw();});$('next').addEventListener('click',()=>{page++;draw();});$('toggle').addEventListener('click',()=>{open=!open;draw();});draw();
+</script></body></html>

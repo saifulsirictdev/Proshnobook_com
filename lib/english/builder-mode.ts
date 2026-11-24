@@ -30,6 +30,10 @@ export function englishBuilderHref(category: string, subject: string, mode: stri
 }
 /** Automatic, editable practice prompts; not claimed mandatory syllabus topics. */
 export function fullModelWriting(grade: EnglishGrade, paper: EnglishPaper) {
+  if (grade === 8 && paper === 2) return {
+    "letter-email": {choice: "formal-letter", topic: "Suppose, you are Tanim and you study in Sonapur High School. Your father has been transferred to Dhaka. You will have to go to Dhaka with your father and you have taken TC from Sonapur High School. Now, write an application to the Headmaster of a school in Dhaka for admission on TC."},
+    composition: {topic: "July Uprising–2024", words: 250},
+  };
   return Object.fromEntries(englishBlueprint(grade, paper).items.filter(i => i.section === "writing").map(i => [i.id, {
     topic: i.id === "letter-email" || i.id === "formal-letter-email" ? "Write to the headteacher requesting more books for the school library" : i.id === "report" ? "A book fair held at your school" : i.id === "composition" ? "The importance of reading books" : i.id === "story" ? "Honesty is the best policy" : i.id === "dialogue" ? "The importance of reading books" : i.id === "paragraph" ? "Your school library" : `School life and learning — ${i.title}`,
     ...(i.writingChoices ? { choice: i.writingChoices[0] } : {}),

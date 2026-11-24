@@ -43,7 +43,7 @@ test("real rich paper renderer produces KaTeX fraction markup, not a slash", () 
     React = require("react");
   function load(file, mocks = {}) {
     const m = new Module(file);
-    m.require = (n) => mocks[n] || require(n);
+    m.require = (n) => mocks[n] || (require("./helpers/paper-editing.cjs").dependencies[n] || require(n));
     m._compile(
       ts.transpileModule(fs.readFileSync(file, "utf8"), {
         compilerOptions: {
@@ -57,7 +57,8 @@ test("real rich paper renderer produces KaTeX fraction markup, not a slash", () 
     );
     return m.exports;
   }
-  const math = load("components/MathText.tsx").default;
+  const tables = load("lib/question-tables.ts", {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")});
+  const math = load("components/MathText.tsx", {"@/lib/question-tables":tables}).default;
   const rich = load("components/paper-builder/rich-paper-text.tsx", {
     "@/components/MathText": math,
     "@/lib/paper-builder": { preparePaperMath: f },

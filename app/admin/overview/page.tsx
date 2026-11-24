@@ -192,7 +192,7 @@ export default async function AdminOverview() {
       </div>
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <Stat
-          label="AI questions"
+          label="সফটওয়্যার questions"
           value={ai}
           icon={Sparkles}
           tint="bg-blue-100 text-royal"

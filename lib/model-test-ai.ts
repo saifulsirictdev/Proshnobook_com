@@ -99,7 +99,7 @@ export async function generateMcqQuestions(params: {
   if (!res.ok) throw new Error(`DeepSeek API Error: ${res.status}`);
   const data = await res.json();
   const rawText = data?.choices?.[0]?.message?.content;
-  if (!rawText) throw new Error("AI থেকে রেসপন্স পাওয়া যায়নি।");
+  if (!rawText) throw new Error("সফটওয়্যার থেকে রেসপন্স পাওয়া যায়নি।");
 
   let cleaned = String(rawText).trim();
   if (cleaned.startsWith("```")) {

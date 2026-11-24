@@ -1837,3 +1837,14 @@ fieldset:disabled .rp-file-picker input {
   .rp-page-actions { padding: 10px; }
   .rp-root .rp-page-create { flex: 1 1 auto; }
 }
+
+/* Editing-only text tools. The selected paper font and margins live on each sheet. */
+.rp-print-header, .rp-custom-print-header, .rp-print-header h2 {font-family:inherit;}
+.rp-text-editor {position:relative;}
+.rp-text-editor textarea {display:block;width:100%;border:1px solid #cbdce5;border-radius:8px;padding:8px;background:white;}
+.rp-text-home {position:sticky;top:0;z-index:5;background:white;border:1px solid #b5d5c8;border-radius:10px;padding:8px;box-shadow:0 4px 12px #0002;}
+.rp-text-home input:not([type="checkbox"]), .rp-text-home select {width:auto;max-width:100%;margin:0;padding:4px;}
+.rp-text-home input[type="number"] {width:65px;}
+.rp-text-home input[type="color"] {width:36px;height:30px;}
+.rp-region-editor {border:1px solid #cbdce5;padding:10px;border-radius:10px;}
+@media print {.rp-text-editor,.rp-region-editor,.paper-floating-toolbar {display:none!important;}}

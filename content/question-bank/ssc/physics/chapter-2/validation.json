@@ -1,0 +1,7544 @@
+{
+  "status": "DRAFT",
+  "requested": {
+    "MCQ": 300,
+    "CQ": 150,
+    "SQ": 100
+  },
+  "actual": {
+    "MCQ": 300,
+    "SQ": 100,
+    "CQ": 150
+  },
+  "originalPractice": true,
+  "fullChapterRead": false,
+  "sourcePageVerified": false,
+  "teacherApproved": false,
+  "websiteImported": false,
+  "published": false,
+  "officialYearVerified": false,
+  "conceptualMCQ": 60,
+  "calculationMCQFamilies": 24,
+  "variantsPerCalculationMCQFamily": 10,
+  "conceptualSQ": 50,
+  "calculationSQFamilies": 10,
+  "variantsPerCalculationSQFamily": 5,
+  "cqFamilies": 30,
+  "variantsPerCQFamily": 5,
+  "cqMarks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "shortMarks": 2,
+  "numericVariants": true,
+  "distributionEvidence": "docs/question-bank/ssc-physics/mark-distribution.json",
+  "sourceUrlMeaning": "Project provenance, not external source evidence.",
+  "limitations": [
+    "সংখ্যা-পূর্ণ নিজস্ব খসড়া; একই পরিবারের সংখ্যাভিত্তিক ভ্যারিয়েন্ট আছে, 550 স্বাধীন ধারণা নয়।",
+    "মূল বইয়ের পূর্ণ পাঠ, পৃষ্ঠা-মিল ও স্বাধীন শিক্ষক যাচাই বাকি।",
+    "লেখচিত্রের ডেটা কথায়/সারণিতে দেওয়া; আঁকা লেখচিত্র সরাসরি পড়ার দক্ষতা সম্পূর্ণ আচ্ছাদিত নয়।",
+    "শুধু অধ্যায় ২; পূর্ণ সিলেবাসের মডেল বা প্রকাশনা নয়।"
+  ],
+  "files": {
+    "mcq-1.json": {
+      "count": 150,
+      "sha256": "c414d7c2dab8777006e354a164befee972d7c542d3dc314fa0e4e15748038242"
+    },
+    "mcq-2.json": {
+      "count": 150,
+      "sha256": "6b47edd1d53447d2b06bab3ec4da223e570618ff71060b07a4d71e49dd1ad4a6"
+    },
+    "cq.json": {
+      "count": 150,
+      "sha256": "b5fe4a819c36a8d291a7062d79088698a631c037c8c5584aad786cbc72a1a601"
+    },
+    "sq.json": {
+      "count": 100,
+      "sha256": "c07735d5add2930d5313ed5dd5ed37f1e62595752e099f994b6ff51d38c2e9a0"
+    }
+  },
+  "items": [
+    {
+      "index": 1,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 2,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 3,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 4,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 5,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 6,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 7,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 8,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 9,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 10,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 11,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 12,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 13,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 14,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 15,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 16,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 17,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 18,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 19,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 20,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 21,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 22,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 23,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 24,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 25,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 26,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 27,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 28,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 29,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 30,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 31,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 32,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 33,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 34,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 35,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 36,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 37,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 38,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 39,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 40,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 41,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 42,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 43,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 44,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 45,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 46,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 47,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 48,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 49,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 50,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 51,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 52,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 53,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 54,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 55,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 56,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 57,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 58,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 59,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 60,
+      "kind": "MCQ",
+      "family": "concept",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 61,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "120",
+          "t": "10"
+        },
+        "expected": "12",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 62,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "150",
+          "t": "11"
+        },
+        "expected": "150/11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 63,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "180",
+          "t": "12"
+        },
+        "expected": "15",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 64,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "210",
+          "t": "13"
+        },
+        "expected": "210/13",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 65,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "240",
+          "t": "14"
+        },
+        "expected": "120/7",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 66,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "270",
+          "t": "15"
+        },
+        "expected": "18",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 67,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "300",
+          "t": "16"
+        },
+        "expected": "75/4",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 68,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "330",
+          "t": "17"
+        },
+        "expected": "330/17",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 69,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "360",
+          "t": "18"
+        },
+        "expected": "20",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 70,
+      "kind": "MCQ",
+      "family": "speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "390",
+          "t": "19"
+        },
+        "expected": "390/19",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 71,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "18"
+        },
+        "expected": "5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 72,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "27"
+        },
+        "expected": "15/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 73,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "36"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 74,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "45"
+        },
+        "expected": "25/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 75,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "54"
+        },
+        "expected": "15",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 76,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "63"
+        },
+        "expected": "35/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 77,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "72"
+        },
+        "expected": "20",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 78,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "81"
+        },
+        "expected": "45/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 79,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "90"
+        },
+        "expected": "25",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 80,
+      "kind": "MCQ",
+      "family": "kmh-ms",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "99"
+        },
+        "expected": "55/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 81,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5"
+        },
+        "expected": "18",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 82,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7"
+        },
+        "expected": "126/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 83,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9"
+        },
+        "expected": "162/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 84,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11"
+        },
+        "expected": "198/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 85,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "13"
+        },
+        "expected": "234/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 86,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "15"
+        },
+        "expected": "54",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 87,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "17"
+        },
+        "expected": "306/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 88,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "19"
+        },
+        "expected": "342/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 89,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "21"
+        },
+        "expected": "378/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 90,
+      "kind": "MCQ",
+      "family": "ms-kmh",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "23"
+        },
+        "expected": "414/5",
+        "unit": " km/h"
+      }
+    },
+    {
+      "index": 91,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "3",
+          "t": "12"
+        },
+        "expected": "36",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 92,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "4",
+          "t": "13"
+        },
+        "expected": "52",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 93,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "t": "14"
+        },
+        "expected": "70",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 94,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "t": "15"
+        },
+        "expected": "90",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 95,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "t": "16"
+        },
+        "expected": "112",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 96,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "t": "17"
+        },
+        "expected": "136",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 97,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "t": "18"
+        },
+        "expected": "162",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 98,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "t": "19"
+        },
+        "expected": "190",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 99,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "t": "20"
+        },
+        "expected": "220",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 100,
+      "kind": "MCQ",
+      "family": "uniform-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "t": "21"
+        },
+        "expected": "252",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 101,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "v": "16",
+          "t": "4"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 102,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "v": "20",
+          "t": "5"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 103,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "v": "24",
+          "t": "6"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 104,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "v": "28",
+          "t": "7"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 105,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "v": "32",
+          "t": "8"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 106,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "v": "36",
+          "t": "9"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 107,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "v": "40",
+          "t": "10"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 108,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "v": "44",
+          "t": "11"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 109,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "v": "48",
+          "t": "12"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 110,
+      "kind": "MCQ",
+      "family": "acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "13",
+          "v": "52",
+          "t": "13"
+        },
+        "expected": "3",
+        "unit": " m/s²"
+      }
+    },
+    {
+      "index": 111,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "1",
+          "t": "4"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 112,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3/2",
+          "t": "5"
+        },
+        "expected": "25/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 113,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "t": "6"
+        },
+        "expected": "18",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 114,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5/2",
+          "t": "7"
+        },
+        "expected": "49/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 115,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "3",
+          "t": "8"
+        },
+        "expected": "32",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 116,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "a": "7/2",
+          "t": "9"
+        },
+        "expected": "81/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 117,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "a": "4",
+          "t": "10"
+        },
+        "expected": "50",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 118,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "a": "9/2",
+          "t": "11"
+        },
+        "expected": "121/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 119,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "a": "5",
+          "t": "12"
+        },
+        "expected": "72",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 120,
+      "kind": "MCQ",
+      "family": "final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "13",
+          "a": "11/2",
+          "t": "13"
+        },
+        "expected": "169/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 121,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "1",
+          "t": "4"
+        },
+        "expected": "8",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 122,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "3/2",
+          "t": "5"
+        },
+        "expected": "75/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 123,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "2",
+          "t": "6"
+        },
+        "expected": "36",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 124,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "5/2",
+          "t": "7"
+        },
+        "expected": "245/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 125,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "3",
+          "t": "8"
+        },
+        "expected": "96",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 126,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "7/2",
+          "t": "9"
+        },
+        "expected": "567/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 127,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "4",
+          "t": "10"
+        },
+        "expected": "200",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 128,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "9/2",
+          "t": "11"
+        },
+        "expected": "1089/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 129,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "5",
+          "t": "12"
+        },
+        "expected": "360",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 130,
+      "kind": "MCQ",
+      "family": "rest-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "11/2",
+          "t": "13"
+        },
+        "expected": "1859/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 131,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "1",
+          "t": "4"
+        },
+        "expected": "24",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 132,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3/2",
+          "t": "5"
+        },
+        "expected": "175/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 133,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "t": "6"
+        },
+        "expected": "72",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 134,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5/2",
+          "t": "7"
+        },
+        "expected": "441/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 135,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "3",
+          "t": "8"
+        },
+        "expected": "160",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 136,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "a": "7/2",
+          "t": "9"
+        },
+        "expected": "891/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 137,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "a": "4",
+          "t": "10"
+        },
+        "expected": "300",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 138,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "a": "9/2",
+          "t": "11"
+        },
+        "expected": "1573/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 139,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "a": "5",
+          "t": "12"
+        },
+        "expected": "504",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 140,
+      "kind": "MCQ",
+      "family": "moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "13",
+          "a": "11/2",
+          "t": "13"
+        },
+        "expected": "2535/4",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 141,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "v": "16"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 142,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "v": "18"
+        },
+        "expected": "23/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 143,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "v": "20"
+        },
+        "expected": "13",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 144,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "v": "22"
+        },
+        "expected": "29/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 145,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "v": "24"
+        },
+        "expected": "16",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 146,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "v": "26"
+        },
+        "expected": "35/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 147,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "v": "28"
+        },
+        "expected": "19",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 148,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "v": "30"
+        },
+        "expected": "41/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 149,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "v": "32"
+        },
+        "expected": "22",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 150,
+      "kind": "MCQ",
+      "family": "average-velocity",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "13",
+          "v": "34"
+        },
+        "expected": "47/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 151,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "b": "2"
+        },
+        "expected": "6",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 152,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "b": "3"
+        },
+        "expected": "14/3",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 153,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "4"
+        },
+        "expected": "4",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 154,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "b": "2"
+        },
+        "expected": "9",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 155,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "b": "3"
+        },
+        "expected": "20/3",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 156,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "22",
+          "b": "4"
+        },
+        "expected": "11/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 157,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "24",
+          "b": "2"
+        },
+        "expected": "12",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 158,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "26",
+          "b": "3"
+        },
+        "expected": "26/3",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 159,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "28",
+          "b": "4"
+        },
+        "expected": "7",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 160,
+      "kind": "MCQ",
+      "family": "stop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "30",
+          "b": "2"
+        },
+        "expected": "15",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 161,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "b": "2"
+        },
+        "expected": "25",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 162,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "b": "3"
+        },
+        "expected": "24",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 163,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "b": "4"
+        },
+        "expected": "49/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 164,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "5"
+        },
+        "expected": "128/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 165,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "b": "2"
+        },
+        "expected": "81",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 166,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "b": "3"
+        },
+        "expected": "200/3",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 167,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "22",
+          "b": "4"
+        },
+        "expected": "121/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 168,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "24",
+          "b": "5"
+        },
+        "expected": "288/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 169,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "26",
+          "b": "2"
+        },
+        "expected": "169",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 170,
+      "kind": "MCQ",
+      "family": "stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "28",
+          "b": "3"
+        },
+        "expected": "392/3",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 171,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "a": "1",
+          "s": "8"
+        },
+        "expected": "5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 172,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "2",
+          "s": "21"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 173,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3",
+          "s": "44"
+        },
+        "expected": "17",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 174,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "4",
+          "s": "80"
+        },
+        "expected": "26",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 175,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5",
+          "s": "132"
+        },
+        "expected": "37",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 176,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "6",
+          "s": "203"
+        },
+        "expected": "50",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 177,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "a": "7",
+          "s": "296"
+        },
+        "expected": "65",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 178,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "a": "8",
+          "s": "414"
+        },
+        "expected": "82",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 179,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "a": "9",
+          "s": "560"
+        },
+        "expected": "101",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 180,
+      "kind": "MCQ",
+      "family": "velocity-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "a": "10",
+          "s": "737"
+        },
+        "expected": "122",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 181,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "2"
+        },
+        "expected": "20",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 182,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "3"
+        },
+        "expected": "45",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 183,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "4"
+        },
+        "expected": "80",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 184,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "5"
+        },
+        "expected": "125",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 185,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "6"
+        },
+        "expected": "180",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 186,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "7"
+        },
+        "expected": "245",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 187,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "8"
+        },
+        "expected": "320",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 188,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "9"
+        },
+        "expected": "405",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 189,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "10"
+        },
+        "expected": "500",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 190,
+      "kind": "MCQ",
+      "family": "drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "11"
+        },
+        "expected": "605",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 191,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "2"
+        },
+        "expected": "98/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 192,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "3"
+        },
+        "expected": "147/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 193,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "4"
+        },
+        "expected": "196/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 194,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "5"
+        },
+        "expected": "49",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 195,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "6"
+        },
+        "expected": "294/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 196,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "7"
+        },
+        "expected": "343/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 197,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "8"
+        },
+        "expected": "392/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 198,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "9"
+        },
+        "expected": "441/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 199,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "10"
+        },
+        "expected": "98",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 200,
+      "kind": "MCQ",
+      "family": "drop-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "49/5",
+          "t": "11"
+        },
+        "expected": "539/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 201,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "g": "10"
+        },
+        "expected": "2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 202,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "25",
+          "g": "10"
+        },
+        "expected": "5/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 203,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "30",
+          "g": "10"
+        },
+        "expected": "3",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 204,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "35",
+          "g": "10"
+        },
+        "expected": "7/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 205,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "40",
+          "g": "10"
+        },
+        "expected": "4",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 206,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "45",
+          "g": "10"
+        },
+        "expected": "9/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 207,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "50",
+          "g": "10"
+        },
+        "expected": "5",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 208,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "55",
+          "g": "10"
+        },
+        "expected": "11/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 209,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "60",
+          "g": "10"
+        },
+        "expected": "6",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 210,
+      "kind": "MCQ",
+      "family": "up-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "65",
+          "g": "10"
+        },
+        "expected": "13/2",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 211,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "g": "10"
+        },
+        "expected": "5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 212,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "g": "10"
+        },
+        "expected": "49/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 213,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "g": "10"
+        },
+        "expected": "81/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 214,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "22",
+          "g": "10"
+        },
+        "expected": "121/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 215,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "26",
+          "g": "10"
+        },
+        "expected": "169/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 216,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "30",
+          "g": "10"
+        },
+        "expected": "45",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 217,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "34",
+          "g": "10"
+        },
+        "expected": "289/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 218,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "38",
+          "g": "10"
+        },
+        "expected": "361/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 219,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "42",
+          "g": "10"
+        },
+        "expected": "441/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 220,
+      "kind": "MCQ",
+      "family": "up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "46",
+          "g": "10"
+        },
+        "expected": "529/5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 221,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "12",
+          "slow": "4"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 222,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "13",
+          "slow": "5"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 223,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "14",
+          "slow": "6"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 224,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "15",
+          "slow": "4"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 225,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "16",
+          "slow": "5"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 226,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "17",
+          "slow": "6"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 227,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "18",
+          "slow": "4"
+        },
+        "expected": "14",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 228,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "19",
+          "slow": "5"
+        },
+        "expected": "14",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 229,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "20",
+          "slow": "6"
+        },
+        "expected": "14",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 230,
+      "kind": "MCQ",
+      "family": "relative-same",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "21",
+          "slow": "4"
+        },
+        "expected": "17",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 231,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "4",
+          "w": "6",
+          "gap": "100"
+        },
+        "expected": "10",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 232,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "w": "7",
+          "gap": "132"
+        },
+        "expected": "11",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 233,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "8",
+          "gap": "168"
+        },
+        "expected": "12",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 234,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "9",
+          "gap": "208"
+        },
+        "expected": "13",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 235,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "10",
+          "gap": "252"
+        },
+        "expected": "14",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 236,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "w": "11",
+          "gap": "300"
+        },
+        "expected": "15",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 237,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "w": "12",
+          "gap": "352"
+        },
+        "expected": "16",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 238,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "w": "13",
+          "gap": "408"
+        },
+        "expected": "17",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 239,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "w": "14",
+          "gap": "468"
+        },
+        "expected": "18",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 240,
+      "kind": "MCQ",
+      "family": "meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "13",
+          "w": "15",
+          "gap": "532"
+        },
+        "expected": "19",
+        "unit": " s"
+      }
+    },
+    {
+      "index": 241,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "t": "6"
+        },
+        "expected": "24",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 242,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "t": "7"
+        },
+        "expected": "63/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 243,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "t": "8"
+        },
+        "expected": "40",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 244,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "t": "9"
+        },
+        "expected": "99/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 245,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "t": "10"
+        },
+        "expected": "60",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 246,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "13",
+          "t": "11"
+        },
+        "expected": "143/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 247,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "14",
+          "t": "12"
+        },
+        "expected": "84",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 248,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "15",
+          "t": "13"
+        },
+        "expected": "195/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 249,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "16",
+          "t": "14"
+        },
+        "expected": "112",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 250,
+      "kind": "MCQ",
+      "family": "vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "17",
+          "t": "15"
+        },
+        "expected": "255/2",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 251,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "10",
+          "y": "22",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "3",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 252,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "11",
+          "y": "27",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "4",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 253,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "12",
+          "y": "32",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 254,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "13",
+          "y": "37",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "6",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 255,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "14",
+          "y": "42",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "7",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 256,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "15",
+          "y": "47",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "8",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 257,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "16",
+          "y": "52",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "9",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 258,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "17",
+          "y": "57",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 259,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "18",
+          "y": "62",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 260,
+      "kind": "MCQ",
+      "family": "xt-slope",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x": "19",
+          "y": "67",
+          "t1": "2",
+          "t2": "6"
+        },
+        "expected": "12",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 261,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "10"
+        },
+        "expected": "15/2",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 262,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "11"
+        },
+        "expected": "77/9",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 263,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "12"
+        },
+        "expected": "48/5",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 264,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "w": "13"
+        },
+        "expected": "117/11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 265,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "w": "14"
+        },
+        "expected": "35/3",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 266,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "w": "15"
+        },
+        "expected": "165/13",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 267,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "w": "16"
+        },
+        "expected": "96/7",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 268,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "13",
+          "w": "17"
+        },
+        "expected": "221/15",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 269,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "14",
+          "w": "18"
+        },
+        "expected": "63/4",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 270,
+      "kind": "MCQ",
+      "family": "equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "15",
+          "w": "19"
+        },
+        "expected": "285/17",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 271,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "14"
+        },
+        "expected": "10",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 272,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "15"
+        },
+        "expected": "11",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 273,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "16"
+        },
+        "expected": "12",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 274,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "w": "17"
+        },
+        "expected": "13",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 275,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "w": "18"
+        },
+        "expected": "14",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 276,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "w": "19"
+        },
+        "expected": "15",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 277,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "w": "20"
+        },
+        "expected": "16",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 278,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "13",
+          "w": "21"
+        },
+        "expected": "17",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 279,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "14",
+          "w": "22"
+        },
+        "expected": "18",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 280,
+      "kind": "MCQ",
+      "family": "equal-time-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "15",
+          "w": "23"
+        },
+        "expected": "19",
+        "unit": " m/s"
+      }
+    },
+    {
+      "index": 281,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "2",
+          "a": "2",
+          "n": "2"
+        },
+        "expected": "5",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 282,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "a": "2",
+          "n": "3"
+        },
+        "expected": "8",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 283,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "2",
+          "n": "4"
+        },
+        "expected": "11",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 284,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "2",
+          "n": "5"
+        },
+        "expected": "14",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 285,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "n": "6"
+        },
+        "expected": "17",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 286,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "2",
+          "n": "7"
+        },
+        "expected": "20",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 287,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "2",
+          "n": "8"
+        },
+        "expected": "23",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 288,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "a": "2",
+          "n": "9"
+        },
+        "expected": "26",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 289,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "a": "2",
+          "n": "10"
+        },
+        "expected": "29",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 290,
+      "kind": "MCQ",
+      "family": "nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "11",
+          "a": "2",
+          "n": "11"
+        },
+        "expected": "32",
+        "unit": " m"
+      }
+    },
+    {
+      "index": 291,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "20",
+          "t": "10"
+        },
+        "expected": "2",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 292,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "25",
+          "t": "11"
+        },
+        "expected": "25/11",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 293,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "30",
+          "t": "12"
+        },
+        "expected": "5/2",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 294,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "35",
+          "t": "13"
+        },
+        "expected": "35/13",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 295,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "40",
+          "t": "14"
+        },
+        "expected": "20/7",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 296,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "45",
+          "t": "15"
+        },
+        "expected": "3",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 297,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "50",
+          "t": "16"
+        },
+        "expected": "25/8",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 298,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "55",
+          "t": "17"
+        },
+        "expected": "55/17",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 299,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "60",
+          "t": "18"
+        },
+        "expected": "10/3",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 300,
+      "kind": "MCQ",
+      "family": "frequency",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "N": "65",
+          "t": "19"
+        },
+        "expected": "65/19",
+        "unit": " Hz"
+      }
+    },
+    {
+      "index": 301,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 302,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 303,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 304,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 305,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 306,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 307,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 308,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 309,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 310,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 311,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 312,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 313,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 314,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 315,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 316,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 317,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 318,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 319,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 320,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 321,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 322,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 323,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 324,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 325,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 326,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 327,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 328,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 329,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 330,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 331,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 332,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 333,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 334,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 335,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 336,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 337,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 338,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 339,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 340,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 341,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 342,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 343,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 344,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 345,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 346,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 347,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 348,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 349,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 350,
+      "kind": "SQ",
+      "family": "concept-short",
+      "teacherApproved": false,
+      "originalPractice": true
+    },
+    {
+      "index": 351,
+      "kind": "SQ",
+      "family": "short-acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "v": "16",
+          "t": "4"
+        },
+        "expected": "3",
+        "unit": " m/s²",
+        "baseFamily": "acceleration"
+      }
+    },
+    {
+      "index": 352,
+      "kind": "SQ",
+      "family": "short-acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "v": "20",
+          "t": "5"
+        },
+        "expected": "3",
+        "unit": " m/s²",
+        "baseFamily": "acceleration"
+      }
+    },
+    {
+      "index": 353,
+      "kind": "SQ",
+      "family": "short-acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "v": "24",
+          "t": "6"
+        },
+        "expected": "3",
+        "unit": " m/s²",
+        "baseFamily": "acceleration"
+      }
+    },
+    {
+      "index": 354,
+      "kind": "SQ",
+      "family": "short-acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "v": "28",
+          "t": "7"
+        },
+        "expected": "3",
+        "unit": " m/s²",
+        "baseFamily": "acceleration"
+      }
+    },
+    {
+      "index": 355,
+      "kind": "SQ",
+      "family": "short-acceleration",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "v": "32",
+          "t": "8"
+        },
+        "expected": "3",
+        "unit": " m/s²",
+        "baseFamily": "acceleration"
+      }
+    },
+    {
+      "index": 356,
+      "kind": "SQ",
+      "family": "short-final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "1",
+          "t": "4"
+        },
+        "expected": "8",
+        "unit": " m/s",
+        "baseFamily": "final-speed"
+      }
+    },
+    {
+      "index": 357,
+      "kind": "SQ",
+      "family": "short-final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3/2",
+          "t": "5"
+        },
+        "expected": "25/2",
+        "unit": " m/s",
+        "baseFamily": "final-speed"
+      }
+    },
+    {
+      "index": 358,
+      "kind": "SQ",
+      "family": "short-final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "t": "6"
+        },
+        "expected": "18",
+        "unit": " m/s",
+        "baseFamily": "final-speed"
+      }
+    },
+    {
+      "index": 359,
+      "kind": "SQ",
+      "family": "short-final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5/2",
+          "t": "7"
+        },
+        "expected": "49/2",
+        "unit": " m/s",
+        "baseFamily": "final-speed"
+      }
+    },
+    {
+      "index": 360,
+      "kind": "SQ",
+      "family": "short-final-speed",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "3",
+          "t": "8"
+        },
+        "expected": "32",
+        "unit": " m/s",
+        "baseFamily": "final-speed"
+      }
+    },
+    {
+      "index": 361,
+      "kind": "SQ",
+      "family": "short-moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "1",
+          "t": "4"
+        },
+        "expected": "24",
+        "unit": " m",
+        "baseFamily": "moving-distance"
+      }
+    },
+    {
+      "index": 362,
+      "kind": "SQ",
+      "family": "short-moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3/2",
+          "t": "5"
+        },
+        "expected": "175/4",
+        "unit": " m",
+        "baseFamily": "moving-distance"
+      }
+    },
+    {
+      "index": 363,
+      "kind": "SQ",
+      "family": "short-moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "t": "6"
+        },
+        "expected": "72",
+        "unit": " m",
+        "baseFamily": "moving-distance"
+      }
+    },
+    {
+      "index": 364,
+      "kind": "SQ",
+      "family": "short-moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5/2",
+          "t": "7"
+        },
+        "expected": "441/4",
+        "unit": " m",
+        "baseFamily": "moving-distance"
+      }
+    },
+    {
+      "index": 365,
+      "kind": "SQ",
+      "family": "short-moving-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "3",
+          "t": "8"
+        },
+        "expected": "160",
+        "unit": " m",
+        "baseFamily": "moving-distance"
+      }
+    },
+    {
+      "index": 366,
+      "kind": "SQ",
+      "family": "short-stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "b": "2"
+        },
+        "expected": "25",
+        "unit": " m",
+        "baseFamily": "stop-distance"
+      }
+    },
+    {
+      "index": 367,
+      "kind": "SQ",
+      "family": "short-stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "b": "3"
+        },
+        "expected": "24",
+        "unit": " m",
+        "baseFamily": "stop-distance"
+      }
+    },
+    {
+      "index": 368,
+      "kind": "SQ",
+      "family": "short-stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "b": "4"
+        },
+        "expected": "49/2",
+        "unit": " m",
+        "baseFamily": "stop-distance"
+      }
+    },
+    {
+      "index": 369,
+      "kind": "SQ",
+      "family": "short-stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "5"
+        },
+        "expected": "128/5",
+        "unit": " m",
+        "baseFamily": "stop-distance"
+      }
+    },
+    {
+      "index": 370,
+      "kind": "SQ",
+      "family": "short-stop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "b": "2"
+        },
+        "expected": "81",
+        "unit": " m",
+        "baseFamily": "stop-distance"
+      }
+    },
+    {
+      "index": 371,
+      "kind": "SQ",
+      "family": "short-drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "2"
+        },
+        "expected": "20",
+        "unit": " m",
+        "baseFamily": "drop-distance"
+      }
+    },
+    {
+      "index": 372,
+      "kind": "SQ",
+      "family": "short-drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "3"
+        },
+        "expected": "45",
+        "unit": " m",
+        "baseFamily": "drop-distance"
+      }
+    },
+    {
+      "index": 373,
+      "kind": "SQ",
+      "family": "short-drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "4"
+        },
+        "expected": "80",
+        "unit": " m",
+        "baseFamily": "drop-distance"
+      }
+    },
+    {
+      "index": 374,
+      "kind": "SQ",
+      "family": "short-drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "5"
+        },
+        "expected": "125",
+        "unit": " m",
+        "baseFamily": "drop-distance"
+      }
+    },
+    {
+      "index": 375,
+      "kind": "SQ",
+      "family": "short-drop-distance",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "6"
+        },
+        "expected": "180",
+        "unit": " m",
+        "baseFamily": "drop-distance"
+      }
+    },
+    {
+      "index": 376,
+      "kind": "SQ",
+      "family": "short-up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "g": "10"
+        },
+        "expected": "5",
+        "unit": " m",
+        "baseFamily": "up-height"
+      }
+    },
+    {
+      "index": 377,
+      "kind": "SQ",
+      "family": "short-up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "g": "10"
+        },
+        "expected": "49/5",
+        "unit": " m",
+        "baseFamily": "up-height"
+      }
+    },
+    {
+      "index": 378,
+      "kind": "SQ",
+      "family": "short-up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "g": "10"
+        },
+        "expected": "81/5",
+        "unit": " m",
+        "baseFamily": "up-height"
+      }
+    },
+    {
+      "index": 379,
+      "kind": "SQ",
+      "family": "short-up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "22",
+          "g": "10"
+        },
+        "expected": "121/5",
+        "unit": " m",
+        "baseFamily": "up-height"
+      }
+    },
+    {
+      "index": 380,
+      "kind": "SQ",
+      "family": "short-up-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "26",
+          "g": "10"
+        },
+        "expected": "169/5",
+        "unit": " m",
+        "baseFamily": "up-height"
+      }
+    },
+    {
+      "index": 381,
+      "kind": "SQ",
+      "family": "short-meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "4",
+          "w": "6",
+          "gap": "100"
+        },
+        "expected": "10",
+        "unit": " s",
+        "baseFamily": "meeting-time"
+      }
+    },
+    {
+      "index": 382,
+      "kind": "SQ",
+      "family": "short-meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "w": "7",
+          "gap": "132"
+        },
+        "expected": "11",
+        "unit": " s",
+        "baseFamily": "meeting-time"
+      }
+    },
+    {
+      "index": 383,
+      "kind": "SQ",
+      "family": "short-meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "8",
+          "gap": "168"
+        },
+        "expected": "12",
+        "unit": " s",
+        "baseFamily": "meeting-time"
+      }
+    },
+    {
+      "index": 384,
+      "kind": "SQ",
+      "family": "short-meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "9",
+          "gap": "208"
+        },
+        "expected": "13",
+        "unit": " s",
+        "baseFamily": "meeting-time"
+      }
+    },
+    {
+      "index": 385,
+      "kind": "SQ",
+      "family": "short-meeting-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "10",
+          "gap": "252"
+        },
+        "expected": "14",
+        "unit": " s",
+        "baseFamily": "meeting-time"
+      }
+    },
+    {
+      "index": 386,
+      "kind": "SQ",
+      "family": "short-vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "t": "6"
+        },
+        "expected": "24",
+        "unit": " m",
+        "baseFamily": "vt-area"
+      }
+    },
+    {
+      "index": 387,
+      "kind": "SQ",
+      "family": "short-vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "t": "7"
+        },
+        "expected": "63/2",
+        "unit": " m",
+        "baseFamily": "vt-area"
+      }
+    },
+    {
+      "index": 388,
+      "kind": "SQ",
+      "family": "short-vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "t": "8"
+        },
+        "expected": "40",
+        "unit": " m",
+        "baseFamily": "vt-area"
+      }
+    },
+    {
+      "index": 389,
+      "kind": "SQ",
+      "family": "short-vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "11",
+          "t": "9"
+        },
+        "expected": "99/2",
+        "unit": " m",
+        "baseFamily": "vt-area"
+      }
+    },
+    {
+      "index": 390,
+      "kind": "SQ",
+      "family": "short-vt-area",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "12",
+          "t": "10"
+        },
+        "expected": "60",
+        "unit": " m",
+        "baseFamily": "vt-area"
+      }
+    },
+    {
+      "index": 391,
+      "kind": "SQ",
+      "family": "short-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "10"
+        },
+        "expected": "15/2",
+        "unit": " m/s",
+        "baseFamily": "equal-distance-average"
+      }
+    },
+    {
+      "index": 392,
+      "kind": "SQ",
+      "family": "short-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "11"
+        },
+        "expected": "77/9",
+        "unit": " m/s",
+        "baseFamily": "equal-distance-average"
+      }
+    },
+    {
+      "index": 393,
+      "kind": "SQ",
+      "family": "short-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "12"
+        },
+        "expected": "48/5",
+        "unit": " m/s",
+        "baseFamily": "equal-distance-average"
+      }
+    },
+    {
+      "index": 394,
+      "kind": "SQ",
+      "family": "short-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "w": "13"
+        },
+        "expected": "117/11",
+        "unit": " m/s",
+        "baseFamily": "equal-distance-average"
+      }
+    },
+    {
+      "index": 395,
+      "kind": "SQ",
+      "family": "short-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "10",
+          "w": "14"
+        },
+        "expected": "35/3",
+        "unit": " m/s",
+        "baseFamily": "equal-distance-average"
+      }
+    },
+    {
+      "index": 396,
+      "kind": "SQ",
+      "family": "short-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "2",
+          "a": "2",
+          "n": "2"
+        },
+        "expected": "5",
+        "unit": " m",
+        "baseFamily": "nth-second"
+      }
+    },
+    {
+      "index": 397,
+      "kind": "SQ",
+      "family": "short-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "a": "2",
+          "n": "3"
+        },
+        "expected": "8",
+        "unit": " m",
+        "baseFamily": "nth-second"
+      }
+    },
+    {
+      "index": 398,
+      "kind": "SQ",
+      "family": "short-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "2",
+          "n": "4"
+        },
+        "expected": "11",
+        "unit": " m",
+        "baseFamily": "nth-second"
+      }
+    },
+    {
+      "index": 399,
+      "kind": "SQ",
+      "family": "short-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "2",
+          "n": "5"
+        },
+        "expected": "14",
+        "unit": " m",
+        "baseFamily": "nth-second"
+      }
+    },
+    {
+      "index": 400,
+      "kind": "SQ",
+      "family": "short-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "2",
+          "n": "6"
+        },
+        "expected": "17",
+        "unit": " m",
+        "baseFamily": "nth-second"
+      }
+    },
+    {
+      "index": 401,
+      "kind": "CQ",
+      "family": "cq-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "2",
+          "t": "5"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 402,
+      "kind": "CQ",
+      "family": "cq-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "2"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 403,
+      "kind": "CQ",
+      "family": "cq-endpoint-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "v": "15",
+          "t": "4"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 404,
+      "kind": "CQ",
+      "family": "cq-distance-final",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "2",
+          "a": "2",
+          "s": "15"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 405,
+      "kind": "CQ",
+      "family": "cq-coast-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "tc": "3",
+          "b": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 406,
+      "kind": "CQ",
+      "family": "cq-accelerate-cruise",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "2",
+          "t1": "4",
+          "t2": "6"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 407,
+      "kind": "CQ",
+      "family": "cq-triangle-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "12",
+          "up": "4",
+          "down": "6"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 408,
+      "kind": "CQ",
+      "family": "cq-trapezoid-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "10",
+          "up": "2",
+          "coast": "4",
+          "down": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 409,
+      "kind": "CQ",
+      "family": "cq-position-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x1": "13",
+          "x2": "31",
+          "t1": "2",
+          "t2": "8",
+          "t3": "12"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 410,
+      "kind": "CQ",
+      "family": "cq-return-trip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "120",
+          "out": "20",
+          "back": "30"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 411,
+      "kind": "CQ",
+      "family": "cq-direction-reversal",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "b": "2",
+          "T": "8"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 412,
+      "kind": "CQ",
+      "family": "cq-right-angle-path",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "east": "30",
+          "north": "40",
+          "t": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 413,
+      "kind": "CQ",
+      "family": "cq-semicircle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "7",
+          "t": "11"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 414,
+      "kind": "CQ",
+      "family": "cq-full-circle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "14",
+          "T": "22"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 415,
+      "kind": "CQ",
+      "family": "cq-meeting",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "4",
+          "w": "6",
+          "gap": "200"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 416,
+      "kind": "CQ",
+      "family": "cq-overtake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "12",
+          "slow": "8",
+          "gap": "40"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 417,
+      "kind": "CQ",
+      "family": "cq-catch-accelerating",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "2",
+          "v": "6"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 418,
+      "kind": "CQ",
+      "family": "cq-delayed-start",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "slow": "4",
+          "fast": "8",
+          "delay": "6"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 419,
+      "kind": "CQ",
+      "family": "cq-drop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 420,
+      "kind": "CQ",
+      "family": "cq-drop-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "h": "20"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 421,
+      "kind": "CQ",
+      "family": "cq-downward-throw",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "g": "10",
+          "t": "2"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 422,
+      "kind": "CQ",
+      "family": "cq-upward-roundtrip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 423,
+      "kind": "CQ",
+      "family": "cq-upward-instant",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "g": "10",
+          "t": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 424,
+      "kind": "CQ",
+      "family": "cq-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "2",
+          "a": "2",
+          "k": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 425,
+      "kind": "CQ",
+      "family": "cq-last-second-fall",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "t": "3",
+          "g": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 426,
+      "kind": "CQ",
+      "family": "cq-double-speed-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "b": "2"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 427,
+      "kind": "CQ",
+      "family": "cq-reaction-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "15",
+          "reaction": "2/5",
+          "b": "3"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 428,
+      "kind": "CQ",
+      "family": "cq-train-bridge",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "L": "100",
+          "bridge": "150",
+          "v": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 429,
+      "kind": "CQ",
+      "family": "cq-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "120",
+          "v": "6",
+          "w": "10"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 430,
+      "kind": "CQ",
+      "family": "cq-signed-velocity-intervals",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "t1": "6",
+          "w": "3",
+          "t2": "4"
+        },
+        "variant": 1
+      }
+    },
+    {
+      "index": 431,
+      "kind": "CQ",
+      "family": "cq-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "3",
+          "t": "6"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 432,
+      "kind": "CQ",
+      "family": "cq-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "20",
+          "b": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 433,
+      "kind": "CQ",
+      "family": "cq-endpoint-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "v": "18",
+          "t": "5"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 434,
+      "kind": "CQ",
+      "family": "cq-distance-final",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "a": "3",
+          "s": "36"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 435,
+      "kind": "CQ",
+      "family": "cq-coast-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "15",
+          "tc": "4",
+          "b": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 436,
+      "kind": "CQ",
+      "family": "cq-accelerate-cruise",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "3",
+          "t1": "5",
+          "t2": "7"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 437,
+      "kind": "CQ",
+      "family": "cq-triangle-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "16",
+          "up": "5",
+          "down": "7"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 438,
+      "kind": "CQ",
+      "family": "cq-trapezoid-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "12",
+          "up": "3",
+          "coast": "5",
+          "down": "4"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 439,
+      "kind": "CQ",
+      "family": "cq-position-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x1": "16",
+          "x2": "40",
+          "t1": "2",
+          "t2": "8",
+          "t3": "12"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 440,
+      "kind": "CQ",
+      "family": "cq-return-trip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "150",
+          "out": "25",
+          "back": "35"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 441,
+      "kind": "CQ",
+      "family": "cq-direction-reversal",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "10",
+          "b": "2",
+          "T": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 442,
+      "kind": "CQ",
+      "family": "cq-right-angle-path",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "east": "45",
+          "north": "60",
+          "t": "12"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 443,
+      "kind": "CQ",
+      "family": "cq-semicircle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "14",
+          "t": "12"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 444,
+      "kind": "CQ",
+      "family": "cq-full-circle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "21",
+          "T": "33"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 445,
+      "kind": "CQ",
+      "family": "cq-meeting",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "5",
+          "w": "7",
+          "gap": "300"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 446,
+      "kind": "CQ",
+      "family": "cq-overtake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "14",
+          "slow": "9",
+          "gap": "65"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 447,
+      "kind": "CQ",
+      "family": "cq-catch-accelerating",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "3",
+          "v": "8"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 448,
+      "kind": "CQ",
+      "family": "cq-delayed-start",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "slow": "5",
+          "fast": "9",
+          "delay": "7"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 449,
+      "kind": "CQ",
+      "family": "cq-drop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "4"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 450,
+      "kind": "CQ",
+      "family": "cq-drop-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "h": "45"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 451,
+      "kind": "CQ",
+      "family": "cq-downward-throw",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "g": "10",
+          "t": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 452,
+      "kind": "CQ",
+      "family": "cq-upward-roundtrip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "30",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 453,
+      "kind": "CQ",
+      "family": "cq-upward-instant",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "30",
+          "g": "10",
+          "t": "9/2"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 454,
+      "kind": "CQ",
+      "family": "cq-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "3",
+          "a": "3",
+          "k": "4"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 455,
+      "kind": "CQ",
+      "family": "cq-last-second-fall",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "t": "4",
+          "g": "10"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 456,
+      "kind": "CQ",
+      "family": "cq-double-speed-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "b": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 457,
+      "kind": "CQ",
+      "family": "cq-reaction-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "reaction": "1/2",
+          "b": "3"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 458,
+      "kind": "CQ",
+      "family": "cq-train-bridge",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "L": "120",
+          "bridge": "180",
+          "v": "12"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 459,
+      "kind": "CQ",
+      "family": "cq-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "180",
+          "v": "7",
+          "w": "11"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 460,
+      "kind": "CQ",
+      "family": "cq-signed-velocity-intervals",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "t1": "7",
+          "w": "4",
+          "t2": "5"
+        },
+        "variant": 2
+      }
+    },
+    {
+      "index": 461,
+      "kind": "CQ",
+      "family": "cq-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "4",
+          "t": "7"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 462,
+      "kind": "CQ",
+      "family": "cq-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "24",
+          "b": "4"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 463,
+      "kind": "CQ",
+      "family": "cq-endpoint-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "v": "21",
+          "t": "6"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 464,
+      "kind": "CQ",
+      "family": "cq-distance-final",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "4",
+          "s": "70"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 465,
+      "kind": "CQ",
+      "family": "cq-coast-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "tc": "5",
+          "b": "3"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 466,
+      "kind": "CQ",
+      "family": "cq-accelerate-cruise",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "4",
+          "t1": "6",
+          "t2": "8"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 467,
+      "kind": "CQ",
+      "family": "cq-triangle-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "20",
+          "up": "6",
+          "down": "8"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 468,
+      "kind": "CQ",
+      "family": "cq-trapezoid-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "14",
+          "up": "4",
+          "coast": "6",
+          "down": "5"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 469,
+      "kind": "CQ",
+      "family": "cq-position-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x1": "19",
+          "x2": "49",
+          "t1": "2",
+          "t2": "8",
+          "t3": "12"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 470,
+      "kind": "CQ",
+      "family": "cq-return-trip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "180",
+          "out": "30",
+          "back": "40"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 471,
+      "kind": "CQ",
+      "family": "cq-direction-reversal",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "12",
+          "b": "2",
+          "T": "12"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 472,
+      "kind": "CQ",
+      "family": "cq-right-angle-path",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "east": "60",
+          "north": "80",
+          "t": "14"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 473,
+      "kind": "CQ",
+      "family": "cq-semicircle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "21",
+          "t": "13"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 474,
+      "kind": "CQ",
+      "family": "cq-full-circle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "28",
+          "T": "44"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 475,
+      "kind": "CQ",
+      "family": "cq-meeting",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "6",
+          "w": "8",
+          "gap": "420"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 476,
+      "kind": "CQ",
+      "family": "cq-overtake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "16",
+          "slow": "10",
+          "gap": "96"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 477,
+      "kind": "CQ",
+      "family": "cq-catch-accelerating",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "4",
+          "v": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 478,
+      "kind": "CQ",
+      "family": "cq-delayed-start",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "slow": "6",
+          "fast": "10",
+          "delay": "8"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 479,
+      "kind": "CQ",
+      "family": "cq-drop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "5"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 480,
+      "kind": "CQ",
+      "family": "cq-drop-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "h": "80"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 481,
+      "kind": "CQ",
+      "family": "cq-downward-throw",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "g": "10",
+          "t": "4"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 482,
+      "kind": "CQ",
+      "family": "cq-upward-roundtrip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "40",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 483,
+      "kind": "CQ",
+      "family": "cq-upward-instant",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "40",
+          "g": "10",
+          "t": "6"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 484,
+      "kind": "CQ",
+      "family": "cq-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "4",
+          "a": "4",
+          "k": "5"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 485,
+      "kind": "CQ",
+      "family": "cq-last-second-fall",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "t": "5",
+          "g": "10"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 486,
+      "kind": "CQ",
+      "family": "cq-double-speed-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "b": "4"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 487,
+      "kind": "CQ",
+      "family": "cq-reaction-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "21",
+          "reaction": "3/5",
+          "b": "3"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 488,
+      "kind": "CQ",
+      "family": "cq-train-bridge",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "L": "140",
+          "bridge": "210",
+          "v": "14"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 489,
+      "kind": "CQ",
+      "family": "cq-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "240",
+          "v": "8",
+          "w": "12"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 490,
+      "kind": "CQ",
+      "family": "cq-signed-velocity-intervals",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "t1": "8",
+          "w": "5",
+          "t2": "6"
+        },
+        "variant": 3
+      }
+    },
+    {
+      "index": 491,
+      "kind": "CQ",
+      "family": "cq-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "a": "5",
+          "t": "8"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 492,
+      "kind": "CQ",
+      "family": "cq-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "28",
+          "b": "5"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 493,
+      "kind": "CQ",
+      "family": "cq-endpoint-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "v": "24",
+          "t": "7"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 494,
+      "kind": "CQ",
+      "family": "cq-distance-final",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "5",
+          "s": "120"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 495,
+      "kind": "CQ",
+      "family": "cq-coast-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "21",
+          "tc": "6",
+          "b": "3"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 496,
+      "kind": "CQ",
+      "family": "cq-accelerate-cruise",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "5",
+          "t1": "7",
+          "t2": "9"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 497,
+      "kind": "CQ",
+      "family": "cq-triangle-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "24",
+          "up": "7",
+          "down": "9"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 498,
+      "kind": "CQ",
+      "family": "cq-trapezoid-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "16",
+          "up": "5",
+          "coast": "7",
+          "down": "6"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 499,
+      "kind": "CQ",
+      "family": "cq-position-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x1": "22",
+          "x2": "58",
+          "t1": "2",
+          "t2": "8",
+          "t3": "12"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 500,
+      "kind": "CQ",
+      "family": "cq-return-trip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "210",
+          "out": "35",
+          "back": "45"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 501,
+      "kind": "CQ",
+      "family": "cq-direction-reversal",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "14",
+          "b": "2",
+          "T": "14"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 502,
+      "kind": "CQ",
+      "family": "cq-right-angle-path",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "east": "75",
+          "north": "100",
+          "t": "16"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 503,
+      "kind": "CQ",
+      "family": "cq-semicircle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "28",
+          "t": "14"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 504,
+      "kind": "CQ",
+      "family": "cq-full-circle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "35",
+          "T": "55"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 505,
+      "kind": "CQ",
+      "family": "cq-meeting",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "7",
+          "w": "9",
+          "gap": "560"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 506,
+      "kind": "CQ",
+      "family": "cq-overtake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "18",
+          "slow": "11",
+          "gap": "133"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 507,
+      "kind": "CQ",
+      "family": "cq-catch-accelerating",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "5",
+          "v": "12"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 508,
+      "kind": "CQ",
+      "family": "cq-delayed-start",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "slow": "7",
+          "fast": "11",
+          "delay": "9"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 509,
+      "kind": "CQ",
+      "family": "cq-drop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "6"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 510,
+      "kind": "CQ",
+      "family": "cq-drop-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "h": "125"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 511,
+      "kind": "CQ",
+      "family": "cq-downward-throw",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "g": "10",
+          "t": "5"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 512,
+      "kind": "CQ",
+      "family": "cq-upward-roundtrip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "50",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 513,
+      "kind": "CQ",
+      "family": "cq-upward-instant",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "50",
+          "g": "10",
+          "t": "15/2"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 514,
+      "kind": "CQ",
+      "family": "cq-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "5",
+          "a": "5",
+          "k": "6"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 515,
+      "kind": "CQ",
+      "family": "cq-last-second-fall",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "t": "6",
+          "g": "10"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 516,
+      "kind": "CQ",
+      "family": "cq-double-speed-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "5"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 517,
+      "kind": "CQ",
+      "family": "cq-reaction-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "24",
+          "reaction": "7/10",
+          "b": "3"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 518,
+      "kind": "CQ",
+      "family": "cq-train-bridge",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "L": "160",
+          "bridge": "240",
+          "v": "16"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 519,
+      "kind": "CQ",
+      "family": "cq-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "300",
+          "v": "9",
+          "w": "13"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 520,
+      "kind": "CQ",
+      "family": "cq-signed-velocity-intervals",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "t1": "9",
+          "w": "6",
+          "t2": "7"
+        },
+        "variant": 4
+      }
+    },
+    {
+      "index": 521,
+      "kind": "CQ",
+      "family": "cq-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "8",
+          "a": "6",
+          "t": "9"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 522,
+      "kind": "CQ",
+      "family": "cq-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "32",
+          "b": "6"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 523,
+      "kind": "CQ",
+      "family": "cq-endpoint-accel",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "7",
+          "v": "27",
+          "t": "8"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 524,
+      "kind": "CQ",
+      "family": "cq-distance-final",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "6",
+          "s": "189"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 525,
+      "kind": "CQ",
+      "family": "cq-coast-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "24",
+          "tc": "7",
+          "b": "3"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 526,
+      "kind": "CQ",
+      "family": "cq-accelerate-cruise",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "6",
+          "t1": "8",
+          "t2": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 527,
+      "kind": "CQ",
+      "family": "cq-triangle-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "28",
+          "up": "8",
+          "down": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 528,
+      "kind": "CQ",
+      "family": "cq-trapezoid-vt",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "peak": "18",
+          "up": "6",
+          "coast": "8",
+          "down": "7"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 529,
+      "kind": "CQ",
+      "family": "cq-position-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "x1": "25",
+          "x2": "67",
+          "t1": "2",
+          "t2": "8",
+          "t3": "12"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 530,
+      "kind": "CQ",
+      "family": "cq-return-trip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "240",
+          "out": "40",
+          "back": "50"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 531,
+      "kind": "CQ",
+      "family": "cq-direction-reversal",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "16",
+          "b": "2",
+          "T": "16"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 532,
+      "kind": "CQ",
+      "family": "cq-right-angle-path",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "east": "90",
+          "north": "120",
+          "t": "18"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 533,
+      "kind": "CQ",
+      "family": "cq-semicircle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "35",
+          "t": "15"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 534,
+      "kind": "CQ",
+      "family": "cq-full-circle",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "r": "42",
+          "T": "66"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 535,
+      "kind": "CQ",
+      "family": "cq-meeting",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "8",
+          "w": "10",
+          "gap": "720"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 536,
+      "kind": "CQ",
+      "family": "cq-overtake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "fast": "20",
+          "slow": "12",
+          "gap": "176"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 537,
+      "kind": "CQ",
+      "family": "cq-catch-accelerating",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "a": "6",
+          "v": "14"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 538,
+      "kind": "CQ",
+      "family": "cq-delayed-start",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "slow": "8",
+          "fast": "12",
+          "delay": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 539,
+      "kind": "CQ",
+      "family": "cq-drop-time",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "t": "7"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 540,
+      "kind": "CQ",
+      "family": "cq-drop-height",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "g": "10",
+          "h": "180"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 541,
+      "kind": "CQ",
+      "family": "cq-downward-throw",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "9",
+          "g": "10",
+          "t": "6"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 542,
+      "kind": "CQ",
+      "family": "cq-upward-roundtrip",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "60",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 543,
+      "kind": "CQ",
+      "family": "cq-upward-instant",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "60",
+          "g": "10",
+          "t": "9"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 544,
+      "kind": "CQ",
+      "family": "cq-nth-second",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "6",
+          "a": "6",
+          "k": "7"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 545,
+      "kind": "CQ",
+      "family": "cq-last-second-fall",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "t": "7",
+          "g": "10"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 546,
+      "kind": "CQ",
+      "family": "cq-double-speed-brake",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "18",
+          "b": "6"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 547,
+      "kind": "CQ",
+      "family": "cq-reaction-braking",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "u": "27",
+          "reaction": "4/5",
+          "b": "3"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 548,
+      "kind": "CQ",
+      "family": "cq-train-bridge",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "L": "180",
+          "bridge": "270",
+          "v": "18"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 549,
+      "kind": "CQ",
+      "family": "cq-equal-distance-average",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "d": "360",
+          "v": "10",
+          "w": "14"
+        },
+        "variant": 5
+      }
+    },
+    {
+      "index": 550,
+      "kind": "CQ",
+      "family": "cq-signed-velocity-intervals",
+      "teacherApproved": false,
+      "originalPractice": true,
+      "calculation": {
+        "params": {
+          "v": "9",
+          "t1": "10",
+          "w": "7",
+          "t2": "8"
+        },
+        "variant": 5
+      }
+    }
+  ]
+}

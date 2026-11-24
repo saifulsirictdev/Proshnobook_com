@@ -1,0 +1,112 @@
+{
+  "status": "PARTIAL_SOURCE_REVIEWED_DRAFT_NOT_IMPORTED",
+  "targetMet": false,
+  "teacherApproved": false,
+  "officialOriginalPaperIndependentlyVerified": false,
+  "targetCounts": {
+    "MCQ": 300,
+    "CQ": 100,
+    "SQ": 70
+  },
+  "counts": {
+    "MCQ": 2,
+    "CQ": 2,
+    "SQ": 0
+  },
+  "remaining": {
+    "MCQ": 298,
+    "CQ": 98,
+    "SQ": 70
+  },
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "chapterTextbookRead": false,
+  "sourcePriority": [
+    "board-paper",
+    "NCTB-textbook",
+    "other-online-source"
+  ],
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111",
+    "attribution": "বোর্ড ও সাল সংকলনের শিরোনাম থেকে; সরকারি মূল প্রশ্নপত্রের স্বাধীন authentication নয়।"
+  },
+  "previousChapter": {
+    "chapter": 1,
+    "status": "PAUSED_INCOMPLETE_PER_USER_NEXT_CHAPTER_REQUEST",
+    "preparedCounts": {
+      "MCQ": 9,
+      "CQ": 0,
+      "SQ": 0
+    },
+    "remaining": {
+      "MCQ": 191,
+      "CQ": 50,
+      "SQ": 40
+    }
+  },
+  "itemReviews": [
+    {
+      "item": 1,
+      "visualRead": true,
+      "sourceKind": "board-compilation",
+      "adaptation": "প্রশ্ন/বিকল্প ও তিন CQ অংশ অপরিবর্তিত অর্থে Unicode/LaTeX-এ প্রতিলিপি; ব্যাখ্যা ও সমাধান নতুনভাবে রচিত।",
+      "pdfPage": 20,
+      "questionNumber": "17"
+    },
+    {
+      "item": 2,
+      "visualRead": true,
+      "sourceKind": "board-compilation",
+      "adaptation": "প্রশ্ন/বিকল্প ও তিন CQ অংশ অপরিবর্তিত অর্থে Unicode/LaTeX-এ প্রতিলিপি; ব্যাখ্যা ও সমাধান নতুনভাবে রচিত।",
+      "pdfPage": 67,
+      "questionNumber": "19"
+    },
+    {
+      "item": 3,
+      "visualRead": true,
+      "sourceKind": "board-compilation",
+      "adaptation": "প্রশ্ন/বিকল্প ও তিন CQ অংশ অপরিবর্তিত অর্থে Unicode/LaTeX-এ প্রতিলিপি; ব্যাখ্যা ও সমাধান নতুনভাবে রচিত।",
+      "pdfPage": 21,
+      "questionNumber": "1"
+    },
+    {
+      "item": 4,
+      "visualRead": true,
+      "sourceKind": "board-compilation",
+      "adaptation": "প্রশ্ন/বিকল্প ও তিন CQ অংশ অপরিবর্তিত অর্থে Unicode/LaTeX-এ প্রতিলিপি; ব্যাখ্যা ও সমাধান নতুনভাবে রচিত।",
+      "pdfPage": 68,
+      "questionNumber": "1"
+    }
+  ],
+  "excluded": [
+    {
+      "pdfPage": 12,
+      "questionNumber": "1",
+      "reason": "রাজশাহী ২০২৪: গ অংশ বাস্তব সংখ্যা; পূর্ণ অধ্যায়-২ CQ হিসেবে গণনা নয়।"
+    },
+    {
+      "pdfPage": 78,
+      "questionNumber": "1",
+      "reason": "ময়মনসিংহ ২০২৪: ক লগারিদম ও গ করণী/বীজগণিত; শুধু খ ফাংশন হওয়ায় পূর্ণ অধ্যায়-২ CQ নয়।"
+    }
+  ],
+  "nextWork": [
+    "২০২৪-এর বাকি বোর্ড ও ২০২৩-এর প্রশ্ন ছবিতে দেখে chapter mapping ও পূর্ণ উত্তর যাচাই",
+    "বোর্ড উৎসে প্রকৃত ঘাটতি নির্ণয়ের পরে NCTB অধ্যায়/অনুশীলনী সংগ্রহ ও পাঠ",
+    "প্রয়োজনে অন্য নির্ভরযোগ্য উৎস; original/adapted practice আলাদা attribution",
+    "চূড়ান্ত ৪৭০ প্রশ্ন হলে <=২০০ item-এর অন্তত ৩টি import JSON; প্রতিটি version Drive backup",
+    "শিক্ষক review, duplicate check, importer preview ও সত্যিকারের import receipt"
+  ],
+  "limitations": [
+    "লক্ষ্য ৩০০ MCQ + ১০০ CQ + ৭০ SQ এখনও পূর্ণ নয়; এটি প্রথম উৎস-যাচাইকৃত ছোট ব্যাচ।",
+    "এই ব্যাচে SQ নেই; পুরোনো CQ-কে ভেঙে মূল SQ বা পূর্ণ CQ-র সংখ্যা বাড়ানো হয়নি।",
+    "এখনও বোর্ড প্রশ্নের পূর্ণ সংগ্রহ/সকল পৃষ্ঠার chapter audit বা NCTB অধ্যায় পাঠ সম্পন্ন নয়।",
+    "ব্যাচটি standalone importer-compatible draft; prepared registry বা database-এ এই অধ্যায় এখনও যোগ হয়নি।"
+  ]
+}

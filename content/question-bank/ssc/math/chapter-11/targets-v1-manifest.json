@@ -1,0 +1,53 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING",
+  "chapter": 11,
+  "topic": "১১শ অধ্যায়: বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "category": "Class 9",
+  "subject": "গণিত",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "teacherApproved": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 94732,
+      "sha256": "15e106298ef2aa1340f4393bc6667afd58246f713f69510c2366340d8e5a3ee9"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 61877,
+      "sha256": "62afa6ccdb0a4c3805dea1753dbadb4d9caeed61741d9842c2faad026598920c"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 36493,
+      "sha256": "3c34992f8d60473e334e66e45a21da3bccafc3a4b6499a1cca065ef095a9298d"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 166348,
+    "sha256": "0478d453053d2bfc63ee6f036b0299714e3e8b2010c3325a57ede38f1b67b129"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 2191,
+    "sha256": "5931151f4f3fe8d24aad43293830791a59b520d651f0d5e2b1242f5288828d27"
+  },
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

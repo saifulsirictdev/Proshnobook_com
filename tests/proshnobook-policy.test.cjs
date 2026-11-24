@@ -100,7 +100,9 @@ test("privacy describes actual stored data and providers without invented deleti
     /Vercel Analytics/,
     /Google/,
     /browser storage/,
-    /AI/,
+    /সফটওয়্যার/,
+    /প্রদানকারীর/,
+    /কাছে যেতে পারে/,
     /স্বয়ংক্রিয় account deletion বোতাম নয়/,
   ])
     assert.match(s, pattern);

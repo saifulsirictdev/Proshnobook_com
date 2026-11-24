@@ -363,7 +363,7 @@ export async function GET(req: Request) {
     clearTimeout(timeoutId);
     const data = await res.json();
     let content = data?.choices?.[0]?.message?.content;
-    if (!content) throw new Error("AI থেকে কোনো উত্তর পাওয়া যায়নি।");
+    if (!content) throw new Error("সফটওয়্যার থেকে কোনো উত্তর পাওয়া যায়নি।");
 
     content = content
       .replace(/```json/g, "")

@@ -1,0 +1,51 @@
+{
+  "status": "FULL_COUNT_DRAFT_UPLOAD_METADATA_READBACK_VERIFIED",
+  "fileId": "1qQQyyXIsaZl2_-ftOieHYDQ_4mdyMX0M",
+  "folderId": "176mPxq4l8vSRJXjJnERwEk5I190KFdzJ",
+  "url": "https://drive.google.com/file/d/1qQQyyXIsaZl2_-ftOieHYDQ_4mdyMX0M/view",
+  "local": {
+    "path": ".cache/chemistry-sources/ssc-chemistry-ch11-12-FULL-1470-drafts-v1-backup.zip",
+    "bytes": 2978319,
+    "entries": 75,
+    "md5": "d92d6493074c85c56b73721223d26fc2",
+    "sha256": "9254137d36a4be945d720b8f3a7329264aa406678407997dc9ca580e8624c2c3",
+    "localZipIntegrity": "PASS",
+    "perEntrySHA256": "PASS",
+    "total": 1470
+  },
+  "remote": {
+    "bytes": 2978319,
+    "md5": "d92d6493074c85c56b73721223d26fc2",
+    "trashed": false
+  },
+  "verification": {
+    "uploadSizeMD5Matched": true,
+    "separateGetMetadataSizeMD5Matched": true,
+    "remoteBytesDownloaded": false,
+    "localZipAndPerEntrySHA256": "PASS",
+    "note": "Drive metadata comparison, not remote raw-byte/SHA256 download comparison."
+  },
+  "chapters": {
+    "11": {
+      "MCQ": 700,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "12": {
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    }
+  },
+  "total": 1470,
+  "sourceCount": 18,
+  "authoredCount": 1452,
+  "partialCheckpointCountedAgain": false,
+  "registeredLocal": true,
+  "imported": false,
+  "approved": false,
+  "published": false,
+  "deployed": false,
+  "teacherCertified": false,
+  "receiptInsideArchive": false
+}

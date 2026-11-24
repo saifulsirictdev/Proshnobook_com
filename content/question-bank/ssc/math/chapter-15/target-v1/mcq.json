@@ -1,0 +1,2133 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "১৫শ অধ্যায়: ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য",
+  "book": "Proshnobook — সংকলন-অভিযোজিত ও নিজস্ব অধ্যায়ভিত্তিক অনুশীলনী",
+  "edition": "Chapter 15 v1; DRAFT; শিক্ষক/চিত্র/প্রমাণ review বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "ABCD একটি আয়তক্ষেত্র। AB-কে B-এর দিকে E পর্যন্ত বাড়ানো হয়েছে, BE=AB; D,E যোগ করলে তা BC-কে F-এ ছেদ করে। △ADE-এর ক্ষেত্রফল কোনটির সমান?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/source-rajshahi-9.svg)",
+      "options": {
+        "A": "আয়তক্ষেত্র ABCD",
+        "B": "চতুর্ভুজ ABFD",
+        "C": "ত্রিভুজ CDF",
+        "D": "ত্রিভুজ BEF"
+      },
+      "correct": "A",
+      "explanation": "$AE=2AB$ এবং AD উভয়ের লম্ব উচ্চতা। $[ADE]=\\frac12(2AB)AD=AB\\cdot AD=[ABCD]$।",
+      "page": "সংকলন: মুদ্রিত 152; PDF 11; প্রশ্ন 9",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "rajshahi",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 11,
+          "printedPage": "152",
+          "questionNumber": "9"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "△ABC-তে AB ও BC-এর মধ্যবিন্দু যথাক্রমে D ও E হলে △BDE:△ABC ক্ষেত্রফলের অনুপাত কোনটি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/source-dinajpur-26.svg)",
+      "options": {
+        "A": "2:3",
+        "B": "1:2",
+        "C": "1:3",
+        "D": "1:4"
+      },
+      "correct": "D",
+      "explanation": "$BD/BA=BE/BC=1/2$ এবং অন্তর্ভুক্ত B-কোণ সাধারণ; SAS-এ BDE∼BAC। তাই ক্ষেত্রফলের অনুপাত $(1/2)^2=1/4$।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 26",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "26"
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=12 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 9 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-1.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(12)(9)=54$। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$108$",
+        "C": "$27$",
+        "D": "$55$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=12 এবং লম্ব উচ্চতা 9 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-1.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=108/2=54$। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$55$",
+        "B": "$54$",
+        "C": "$108$",
+        "D": "$27$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=12, A থেকে BC-এর উপর লম্ব উচ্চতা 9 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-1.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(6)(9)=27$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{27}{2}$",
+        "B": "$28$",
+        "C": "$27$",
+        "D": "$54$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=6, DC=9 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 12 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-1.svg)",
+      "explanation": "$[ABD]=\\frac12(6)(12)=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=12 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 54 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-1.svg)",
+      "explanation": "একই সূত্রে $h_D=2(54)/12=9$। সঠিক উত্তর $9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$18$",
+        "C": "$\\frac{9}{2}$",
+        "D": "$10$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(12,0), C=(12,6), D=(3,9) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-1.svg)",
+      "explanation": "$[ACD]=\\frac12|(12)(9)-(6)(3)|=45$। যোগে $36+45=81$। সঠিক উত্তর $81$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{81}{2}$",
+        "B": "$82$",
+        "C": "$81$",
+        "D": "$162$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=9, AD=6 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-1.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(18)(6)=54$। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$55$",
+        "C": "$54$",
+        "D": "$108$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=12 ও লম্ব উচ্চতা 9 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-1.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=6\\times9=54$। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$27$",
+        "B": "$55$",
+        "C": "$54$",
+        "D": "$108$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=12 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 6 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-1.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=72$। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$144$",
+        "B": "$36$",
+        "C": "$73$",
+        "D": "$72$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 18 ও লম্ব উচ্চতা 12 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 9 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-1.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=108/9=12$ সেমি। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$6$",
+        "C": "$13$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=12, DC=6 ও উচ্চতা 9 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-1.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=27$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$28$",
+        "B": "$27$",
+        "C": "$54$",
+        "D": "$\\frac{27}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=12 ও লম্ব উচ্চতা 12 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-1.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 18। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$9$",
+        "B": "$19$",
+        "C": "$18$",
+        "D": "$36$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 18 ও উচ্চতা 12 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-1.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 12 ও উচ্চতা 12 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-1.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 36। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$72$",
+        "C": "$18$",
+        "D": "$37$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=9, উচ্চতা 6 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-1.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 6; $[ABD]=\\frac12(18)(6)=54$। সঠিক উত্তর $54$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/1; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$108$",
+        "C": "$27$",
+        "D": "$55$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=16 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 12 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-2.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(16)(12)=96$। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$192$",
+        "B": "$48$",
+        "C": "$97$",
+        "D": "$96$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=16 এবং লম্ব উচ্চতা 12 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-2.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=192/2=96$। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$96$",
+        "B": "$192$",
+        "C": "$48$",
+        "D": "$97$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=16, A থেকে BC-এর উপর লম্ব উচ্চতা 12 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-2.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(8)(12)=48$। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$48$",
+        "C": "$96$",
+        "D": "$24$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=8, DC=12 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 16 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-2.svg)",
+      "explanation": "$[ABD]=\\frac12(8)(16)=64$। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$64$",
+        "B": "$128$",
+        "C": "$32$",
+        "D": "$65$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=16 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 96 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-2.svg)",
+      "explanation": "একই সূত্রে $h_D=2(96)/16=12$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$6$",
+        "C": "$13$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(16,0), C=(16,8), D=(4,12) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-2.svg)",
+      "explanation": "$[ACD]=\\frac12|(16)(12)-(8)(4)|=80$। যোগে $64+80=144$। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$144$",
+        "C": "$288$",
+        "D": "$72$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=12, AD=8 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-2.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(24)(8)=96$। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$97$",
+        "B": "$96$",
+        "C": "$192$",
+        "D": "$48$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=16 ও লম্ব উচ্চতা 12 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-2.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=8\\times12=96$। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$97$",
+        "B": "$96$",
+        "C": "$192$",
+        "D": "$48$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=16 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 8 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-2.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=128$। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$64$",
+        "B": "$129$",
+        "C": "$128$",
+        "D": "$256$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 24 ও লম্ব উচ্চতা 16 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 12 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-2.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=192/12=16$ সেমি। সঠিক উত্তর $16$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$8$",
+        "B": "$17$",
+        "C": "$16$",
+        "D": "$32$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=16, DC=8 ও উচ্চতা 12 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-2.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=48$। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$96$",
+        "C": "$24$",
+        "D": "$49$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=16 ও লম্ব উচ্চতা 16 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-2.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 32। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$32$",
+        "C": "$64$",
+        "D": "$16$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 24 ও উচ্চতা 16 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-2.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=64$। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$64$",
+        "B": "$128$",
+        "C": "$32$",
+        "D": "$65$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 16 ও উচ্চতা 16 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-2.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 64। সঠিক উত্তর $64$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$128$",
+        "B": "$32$",
+        "C": "$65$",
+        "D": "$64$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=12, উচ্চতা 8 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-2.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 8; $[ABD]=\\frac12(24)(8)=96$। সঠিক উত্তর $96$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/2; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$192$",
+        "B": "$48$",
+        "C": "$97$",
+        "D": "$96$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=20 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 15 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-3.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(20)(15)=150$। সঠিক উত্তর $150$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$75$",
+        "B": "$151$",
+        "C": "$150$",
+        "D": "$300$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=20 এবং লম্ব উচ্চতা 15 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-3.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=300/2=150$। সঠিক উত্তর $150$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$300$",
+        "B": "$75$",
+        "C": "$151$",
+        "D": "$150$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=20, A থেকে BC-এর উপর লম্ব উচ্চতা 15 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-3.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(10)(15)=75$। সঠিক উত্তর $75$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$75$",
+        "B": "$150$",
+        "C": "$\\frac{75}{2}$",
+        "D": "$76$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=10, DC=15 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 20 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-3.svg)",
+      "explanation": "$[ABD]=\\frac12(10)(20)=100$। সঠিক উত্তর $100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$200$",
+        "B": "$50$",
+        "C": "$101$",
+        "D": "$100$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=20 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 150 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-3.svg)",
+      "explanation": "একই সূত্রে $h_D=2(150)/20=15$। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{15}{2}$",
+        "B": "$16$",
+        "C": "$15$",
+        "D": "$30$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(20,0), C=(20,10), D=(5,15) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-3.svg)",
+      "explanation": "$[ACD]=\\frac12|(20)(15)-(10)(5)|=125$। যোগে $100+125=225$। সঠিক উত্তর $225$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$225$",
+        "B": "$450$",
+        "C": "$\\frac{225}{2}$",
+        "D": "$226$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=15, AD=10 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-3.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(30)(10)=150$। সঠিক উত্তর $150$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$150$",
+        "B": "$300$",
+        "C": "$75$",
+        "D": "$151$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=20 ও লম্ব উচ্চতা 15 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-3.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=10\\times15=150$। সঠিক উত্তর $150$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$150$",
+        "B": "$300$",
+        "C": "$75$",
+        "D": "$151$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=20 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 10 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-3.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=200$। সঠিক উত্তর $200$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$201$",
+        "B": "$200$",
+        "C": "$400$",
+        "D": "$100$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 30 ও লম্ব উচ্চতা 20 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 15 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-3.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=300/15=20$ সেমি। সঠিক উত্তর $20$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$20$",
+        "C": "$40$",
+        "D": "$10$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=20, DC=10 ও উচ্চতা 15 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-3.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=75$। সঠিক উত্তর $75$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$150$",
+        "B": "$\\frac{75}{2}$",
+        "C": "$76$",
+        "D": "$75$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=20 ও লম্ব উচ্চতা 20 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-3.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 50। সঠিক উত্তর $50$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$100$",
+        "C": "$25$",
+        "D": "$51$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 30 ও উচ্চতা 20 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-3.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=100$। সঠিক উত্তর $100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$200$",
+        "B": "$50$",
+        "C": "$101$",
+        "D": "$100$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 20 ও উচ্চতা 20 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-3.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 100। সঠিক উত্তর $100$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$50$",
+        "B": "$101$",
+        "C": "$100$",
+        "D": "$200$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=15, উচ্চতা 10 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-3.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 10; $[ABD]=\\frac12(30)(10)=150$। সঠিক উত্তর $150$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/3; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$75$",
+        "B": "$151$",
+        "C": "$150$",
+        "D": "$300$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=24 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 18 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-4.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(24)(18)=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$217$",
+        "B": "$216$",
+        "C": "$432$",
+        "D": "$108$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=24 এবং লম্ব উচ্চতা 18 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-4.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=432/2=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$108$",
+        "B": "$217$",
+        "C": "$216$",
+        "D": "$432$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=24, A থেকে BC-এর উপর লম্ব উচ্চতা 18 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-4.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(12)(18)=108$। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$216$",
+        "B": "$54$",
+        "C": "$109$",
+        "D": "$108$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=12, DC=18 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 24 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-4.svg)",
+      "explanation": "$[ABD]=\\frac12(12)(24)=144$। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$145$",
+        "C": "$144$",
+        "D": "$288$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=24 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 216 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-4.svg)",
+      "explanation": "একই সূত্রে $h_D=2(216)/24=18$। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$19$",
+        "B": "$18$",
+        "C": "$36$",
+        "D": "$9$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(24,0), C=(24,12), D=(6,18) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-4.svg)",
+      "explanation": "$[ACD]=\\frac12|(24)(18)-(12)(6)|=180$। যোগে $144+180=324$। সঠিক উত্তর $324$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648$",
+        "B": "$162$",
+        "C": "$325$",
+        "D": "$324$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=18, AD=12 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-4.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(36)(12)=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$432$",
+        "B": "$108$",
+        "C": "$217$",
+        "D": "$216$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=24 ও লম্ব উচ্চতা 18 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-4.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=12\\times18=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$432$",
+        "B": "$108$",
+        "C": "$217$",
+        "D": "$216$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=24 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 12 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-4.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=288$। সঠিক উত্তর $288$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$288$",
+        "B": "$576$",
+        "C": "$144$",
+        "D": "$289$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 36 ও লম্ব উচ্চতা 24 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 18 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-4.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=432/18=24$ সেমি। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$48$",
+        "C": "$12$",
+        "D": "$25$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=24, DC=12 ও উচ্চতা 18 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-4.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=108$। সঠিক উত্তর $108$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$109$",
+        "C": "$108$",
+        "D": "$216$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=24 ও লম্ব উচ্চতা 24 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-4.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 72। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$144$",
+        "B": "$36$",
+        "C": "$73$",
+        "D": "$72$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 36 ও উচ্চতা 24 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-4.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=144$। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$145$",
+        "C": "$144$",
+        "D": "$288$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 24 ও উচ্চতা 24 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-4.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 144। সঠিক উত্তর $144$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$144$",
+        "C": "$288$",
+        "D": "$72$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=18, উচ্চতা 12 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-4.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 12; $[ABD]=\\frac12(36)(12)=216$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/4; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$217$",
+        "B": "$216$",
+        "C": "$432$",
+        "D": "$108$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=28 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 21 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-5.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(28)(21)=294$। সঠিক উত্তর $294$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$294$",
+        "B": "$588$",
+        "C": "$147$",
+        "D": "$295$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=28 এবং লম্ব উচ্চতা 21 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-5.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=588/2=294$। সঠিক উত্তর $294$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$295$",
+        "B": "$294$",
+        "C": "$588$",
+        "D": "$147$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=28, A থেকে BC-এর উপর লম্ব উচ্চতা 21 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-5.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(14)(21)=147$। সঠিক উত্তর $147$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{147}{2}$",
+        "B": "$148$",
+        "C": "$147$",
+        "D": "$294$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=14, DC=21 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 28 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-5.svg)",
+      "explanation": "$[ABD]=\\frac12(14)(28)=196$। সঠিক উত্তর $196$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$197$",
+        "B": "$196$",
+        "C": "$392$",
+        "D": "$98$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=28 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 294 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-5.svg)",
+      "explanation": "একই সূত্রে $h_D=2(294)/28=21$। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$21$",
+        "B": "$42$",
+        "C": "$\\frac{21}{2}$",
+        "D": "$22$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(28,0), C=(28,14), D=(7,21) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-5.svg)",
+      "explanation": "$[ACD]=\\frac12|(28)(21)-(14)(7)|=245$। যোগে $196+245=441$। সঠিক উত্তর $441$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{441}{2}$",
+        "B": "$442$",
+        "C": "$441$",
+        "D": "$882$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=21, AD=14 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-5.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(42)(14)=294$। সঠিক উত্তর $294$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$147$",
+        "B": "$295$",
+        "C": "$294$",
+        "D": "$588$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=28 ও লম্ব উচ্চতা 21 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-5.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=14\\times21=294$। সঠিক উত্তর $294$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$147$",
+        "B": "$295$",
+        "C": "$294$",
+        "D": "$588$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=28 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 14 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-5.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=392$। সঠিক উত্তর $392$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$784$",
+        "B": "$196$",
+        "C": "$393$",
+        "D": "$392$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 42 ও লম্ব উচ্চতা 28 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 21 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-5.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=588/21=28$ সেমি। সঠিক উত্তর $28$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$56$",
+        "B": "$14$",
+        "C": "$29$",
+        "D": "$28$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=28, DC=14 ও উচ্চতা 21 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-5.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=147$। সঠিক উত্তর $147$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$148$",
+        "B": "$147$",
+        "C": "$294$",
+        "D": "$\\frac{147}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=28 ও লম্ব উচ্চতা 28 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-5.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 98। সঠিক উত্তর $98$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$49$",
+        "B": "$99$",
+        "C": "$98$",
+        "D": "$196$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 42 ও উচ্চতা 28 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-5.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=196$। সঠিক উত্তর $196$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$197$",
+        "B": "$196$",
+        "C": "$392$",
+        "D": "$98$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 28 ও উচ্চতা 28 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-5.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 196। সঠিক উত্তর $196$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$196$",
+        "B": "$392$",
+        "C": "$98$",
+        "D": "$197$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=21, উচ্চতা 14 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-5.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 14; $[ABD]=\\frac12(42)(14)=294$। সঠিক উত্তর $294$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/5; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$294$",
+        "B": "$588$",
+        "C": "$147$",
+        "D": "$295$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=32 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 24 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-6.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(32)(24)=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$768$",
+        "B": "$192$",
+        "C": "$385$",
+        "D": "$384$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=32 এবং লম্ব উচ্চতা 24 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-6.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=768/2=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$384$",
+        "B": "$768$",
+        "C": "$192$",
+        "D": "$385$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=32, A থেকে BC-এর উপর লম্ব উচ্চতা 24 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-6.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(16)(24)=192$। সঠিক উত্তর $192$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$193$",
+        "B": "$192$",
+        "C": "$384$",
+        "D": "$96$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=16, DC=24 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 32 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-6.svg)",
+      "explanation": "$[ABD]=\\frac12(16)(32)=256$। সঠিক উত্তর $256$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$512$",
+        "C": "$128$",
+        "D": "$257$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=32 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 384 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-6.svg)",
+      "explanation": "একই সূত্রে $h_D=2(384)/32=24$। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$12$",
+        "C": "$25$",
+        "D": "$24$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(32,0), C=(32,16), D=(8,24) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-6.svg)",
+      "explanation": "$[ACD]=\\frac12|(32)(24)-(16)(8)|=320$। যোগে $256+320=576$। সঠিক উত্তর $576$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$577$",
+        "B": "$576$",
+        "C": "$1152$",
+        "D": "$288$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=24, AD=16 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-6.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(48)(16)=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$385$",
+        "B": "$384$",
+        "C": "$768$",
+        "D": "$192$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=32 ও লম্ব উচ্চতা 24 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-6.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=16\\times24=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$385$",
+        "B": "$384$",
+        "C": "$768$",
+        "D": "$192$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=32 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 16 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-6.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=512$। সঠিক উত্তর $512$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$513$",
+        "C": "$512$",
+        "D": "$1024$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 48 ও লম্ব উচ্চতা 32 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 24 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-6.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=768/24=32$ সেমি। সঠিক উত্তর $32$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16$",
+        "B": "$33$",
+        "C": "$32$",
+        "D": "$64$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=32, DC=16 ও উচ্চতা 24 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-6.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=192$। সঠিক উত্তর $192$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$192$",
+        "B": "$384$",
+        "C": "$96$",
+        "D": "$193$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=32 ও লম্ব উচ্চতা 32 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-6.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 128। সঠিক উত্তর $128$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$129$",
+        "B": "$128$",
+        "C": "$256$",
+        "D": "$64$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 48 ও উচ্চতা 32 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-6.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=256$। সঠিক উত্তর $256$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$256$",
+        "B": "$512$",
+        "C": "$128$",
+        "D": "$257$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 32 ও উচ্চতা 32 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-6.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 256। সঠিক উত্তর $256$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$512$",
+        "B": "$128$",
+        "C": "$257$",
+        "D": "$256$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=24, উচ্চতা 16 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-6.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 16; $[ABD]=\\frac12(48)(16)=384$। সঠিক উত্তর $384$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/6; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$768$",
+        "B": "$192$",
+        "C": "$385$",
+        "D": "$384$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=36 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 27 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-7.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(36)(27)=486$। সঠিক উত্তর $486$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$243$",
+        "B": "$487$",
+        "C": "$486$",
+        "D": "$972$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=36 এবং লম্ব উচ্চতা 27 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-7.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=972/2=486$। সঠিক উত্তর $486$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$972$",
+        "B": "$243$",
+        "C": "$487$",
+        "D": "$486$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=36, A থেকে BC-এর উপর লম্ব উচ্চতা 27 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-7.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(18)(27)=243$। সঠিক উত্তর $243$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$243$",
+        "B": "$486$",
+        "C": "$\\frac{243}{2}$",
+        "D": "$244$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=18, DC=27 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 36 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-7.svg)",
+      "explanation": "$[ABD]=\\frac12(18)(36)=324$। সঠিক উত্তর $324$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648$",
+        "B": "$162$",
+        "C": "$325$",
+        "D": "$324$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=36 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 486 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-7.svg)",
+      "explanation": "একই সূত্রে $h_D=2(486)/36=27$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{27}{2}$",
+        "B": "$28$",
+        "C": "$27$",
+        "D": "$54$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(36,0), C=(36,18), D=(9,27) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-7.svg)",
+      "explanation": "$[ACD]=\\frac12|(36)(27)-(18)(9)|=405$। যোগে $324+405=729$। সঠিক উত্তর $729$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$729$",
+        "B": "$1458$",
+        "C": "$\\frac{729}{2}$",
+        "D": "$730$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=27, AD=18 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-7.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(54)(18)=486$। সঠিক উত্তর $486$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$486$",
+        "B": "$972$",
+        "C": "$243$",
+        "D": "$487$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=36 ও লম্ব উচ্চতা 27 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-7.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=18\\times27=486$। সঠিক উত্তর $486$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$486$",
+        "B": "$972$",
+        "C": "$243$",
+        "D": "$487$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=36 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 18 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-7.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=648$। সঠিক উত্তর $648$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$649$",
+        "B": "$648$",
+        "C": "$1296$",
+        "D": "$324$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 54 ও লম্ব উচ্চতা 36 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 27 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-7.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=972/27=36$ সেমি। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$37$",
+        "B": "$36$",
+        "C": "$72$",
+        "D": "$18$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=36, DC=18 ও উচ্চতা 27 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-7.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=243$। সঠিক উত্তর $243$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$486$",
+        "B": "$\\frac{243}{2}$",
+        "C": "$244$",
+        "D": "$243$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=36 ও লম্ব উচ্চতা 36 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-7.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 162। সঠিক উত্তর $162$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$162$",
+        "B": "$324$",
+        "C": "$81$",
+        "D": "$163$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 54 ও উচ্চতা 36 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-7.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=324$। সঠিক উত্তর $324$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$648$",
+        "B": "$162$",
+        "C": "$325$",
+        "D": "$324$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 36 ও উচ্চতা 36 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-7.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 324। সঠিক উত্তর $324$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$162$",
+        "B": "$325$",
+        "C": "$324$",
+        "D": "$648$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=27, উচ্চতা 18 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-7.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 18; $[ABD]=\\frac12(54)(18)=486$। সঠিক উত্তর $486$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/7; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$243$",
+        "B": "$487$",
+        "C": "$486$",
+        "D": "$972$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=40 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 30 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-8.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(40)(30)=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$601$",
+        "B": "$600$",
+        "C": "$1200$",
+        "D": "$300$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=40 এবং লম্ব উচ্চতা 30 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-8.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=1200/2=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$300$",
+        "B": "$601$",
+        "C": "$600$",
+        "D": "$1200$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=40, A থেকে BC-এর উপর লম্ব উচ্চতা 30 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-8.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(20)(30)=300$। সঠিক উত্তর $300$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$600$",
+        "B": "$150$",
+        "C": "$301$",
+        "D": "$300$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=20, DC=30 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 40 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-8.svg)",
+      "explanation": "$[ABD]=\\frac12(20)(40)=400$। সঠিক উত্তর $400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$200$",
+        "B": "$401$",
+        "C": "$400$",
+        "D": "$800$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=40 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 600 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-8.svg)",
+      "explanation": "একই সূত্রে $h_D=2(600)/40=30$। সঠিক উত্তর $30$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$31$",
+        "B": "$30$",
+        "C": "$60$",
+        "D": "$15$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(40,0), C=(40,20), D=(10,30) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-8.svg)",
+      "explanation": "$[ACD]=\\frac12|(40)(30)-(20)(10)|=500$। যোগে $400+500=900$। সঠিক উত্তর $900$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1800$",
+        "B": "$450$",
+        "C": "$901$",
+        "D": "$900$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=30, AD=20 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-8.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(60)(20)=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1200$",
+        "B": "$300$",
+        "C": "$601$",
+        "D": "$600$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=40 ও লম্ব উচ্চতা 30 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-8.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=20\\times30=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1200$",
+        "B": "$300$",
+        "C": "$601$",
+        "D": "$600$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=40 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 20 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-8.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=800$। সঠিক উত্তর $800$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$800$",
+        "B": "$1600$",
+        "C": "$400$",
+        "D": "$801$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 60 ও লম্ব উচ্চতা 40 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 30 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-8.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=1200/30=40$ সেমি। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$40$",
+        "B": "$80$",
+        "C": "$20$",
+        "D": "$41$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=40, DC=20 ও উচ্চতা 30 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-8.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=300$। সঠিক উত্তর $300$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$150$",
+        "B": "$301$",
+        "C": "$300$",
+        "D": "$600$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=40 ও লম্ব উচ্চতা 40 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-8.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 200। সঠিক উত্তর $200$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$400$",
+        "B": "$100$",
+        "C": "$201$",
+        "D": "$200$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 60 ও উচ্চতা 40 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-8.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=400$। সঠিক উত্তর $400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$200$",
+        "B": "$401$",
+        "C": "$400$",
+        "D": "$800$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 40 ও উচ্চতা 40 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-8.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 400। সঠিক উত্তর $400$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$401$",
+        "B": "$400$",
+        "C": "$800$",
+        "D": "$200$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=30, উচ্চতা 20 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-8.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 20; $[ABD]=\\frac12(60)(20)=600$। সঠিক উত্তর $600$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/8; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$601$",
+        "B": "$600$",
+        "C": "$1200$",
+        "D": "$300$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=44 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 33 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-9.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(44)(33)=726$। সঠিক উত্তর $726$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$726$",
+        "B": "$1452$",
+        "C": "$363$",
+        "D": "$727$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=44 এবং লম্ব উচ্চতা 33 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-9.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=1452/2=726$। সঠিক উত্তর $726$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$727$",
+        "B": "$726$",
+        "C": "$1452$",
+        "D": "$363$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=44, A থেকে BC-এর উপর লম্ব উচ্চতা 33 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-9.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(22)(33)=363$। সঠিক উত্তর $363$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{363}{2}$",
+        "B": "$364$",
+        "C": "$363$",
+        "D": "$726$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=22, DC=33 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 44 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-9.svg)",
+      "explanation": "$[ABD]=\\frac12(22)(44)=484$। সঠিক উত্তর $484$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$485$",
+        "B": "$484$",
+        "C": "$968$",
+        "D": "$242$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=44 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 726 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-9.svg)",
+      "explanation": "একই সূত্রে $h_D=2(726)/44=33$। সঠিক উত্তর $33$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$33$",
+        "B": "$66$",
+        "C": "$\\frac{33}{2}$",
+        "D": "$34$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(44,0), C=(44,22), D=(11,33) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-9.svg)",
+      "explanation": "$[ACD]=\\frac12|(44)(33)-(22)(11)|=605$। যোগে $484+605=1089$। সঠিক উত্তর $1089$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{1089}{2}$",
+        "B": "$1090$",
+        "C": "$1089$",
+        "D": "$2178$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=33, AD=22 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-9.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(66)(22)=726$। সঠিক উত্তর $726$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$363$",
+        "B": "$727$",
+        "C": "$726$",
+        "D": "$1452$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=44 ও লম্ব উচ্চতা 33 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-9.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=22\\times33=726$। সঠিক উত্তর $726$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$363$",
+        "B": "$727$",
+        "C": "$726$",
+        "D": "$1452$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=44 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 22 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-9.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=968$। সঠিক উত্তর $968$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1936$",
+        "B": "$484$",
+        "C": "$969$",
+        "D": "$968$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 66 ও লম্ব উচ্চতা 44 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 33 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-9.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=1452/33=44$ সেমি। সঠিক উত্তর $44$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$88$",
+        "B": "$22$",
+        "C": "$45$",
+        "D": "$44$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=44, DC=22 ও উচ্চতা 33 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-9.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=363$। সঠিক উত্তর $363$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$364$",
+        "B": "$363$",
+        "C": "$726$",
+        "D": "$\\frac{363}{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=44 ও লম্ব উচ্চতা 44 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-9.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 242। সঠিক উত্তর $242$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$121$",
+        "B": "$243$",
+        "C": "$242$",
+        "D": "$484$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 66 ও উচ্চতা 44 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-9.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=484$। সঠিক উত্তর $484$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$485$",
+        "B": "$484$",
+        "C": "$968$",
+        "D": "$242$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর কর্ণদ্বয় O-তে ছেদ করে। ভূমি 44 ও উচ্চতা 44 সেমি। AOB-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-diagonal-four-triangles-9.svg)",
+      "explanation": "সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে। ABC-তে BO মধ্যমা, তাই AOB ও BOC সমক্ষেত্র; প্রত্যেকটি সামান্তরিকের 1/4, অর্থাৎ 484। সঠিক উত্তর $484$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/diagonal-four-triangles/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$484$",
+        "B": "$968$",
+        "C": "$242$",
+        "D": "$485$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-এর ভূমি BC=33, উচ্চতা 22 সেমি। BC-কে C-এর দিকে বাড়িয়ে CD=BC কাটা হলো; AD যোগ করা হলো। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-double-triangle-9.svg)",
+      "explanation": "একই A থেকে একই সরলরেখায় উচ্চতা 22; $[ABD]=\\frac12(66)(22)=726$। সঠিক উত্তর $726$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/double-triangle/9; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$726$",
+        "B": "$1452$",
+        "C": "$363$",
+        "D": "$727$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "AB=48 সেমি। C ও D, AB-এর একই পাশের AB-সমান্তরাল রেখায়; রেখাদ্বয়ের লম্ব দূরত্ব 36 সেমি। C,D ভিন্ন বিন্দু। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-same-base-parallels-10.svg)",
+      "explanation": "$[ABC]=\\frac12 AB\\cdot h=\\frac12(48)(36)=864$। সঠিক উত্তর $864$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/same-base-parallels/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1728$",
+        "B": "$432$",
+        "C": "$865$",
+        "D": "$864$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "সামান্তরিক ABCD-এর ভূমি AB=48 এবং লম্ব উচ্চতা 36 সেমি। কর্ণ AC আঁকা হয়েছে। ABC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-parallelogram-diagonal-10.svg)",
+      "explanation": "কর্ণ AC সামান্তরিককে সমান ক্ষেত্রফলের দুই ত্রিভুজে ভাগ করে; $[ABC]=1728/2=864$। সঠিক উত্তর $864$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/parallelogram-diagonal/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$864$",
+        "B": "$1728$",
+        "C": "$432$",
+        "D": "$865$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে M হলো BC-এর মধ্যবিন্দু। BC=48, A থেকে BC-এর উপর লম্ব উচ্চতা 36 সেমি। ABM-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-halves-10.svg)",
+      "explanation": "$[ABM]=\\frac12 BM\\cdot h=\\frac12(24)(36)=432$। সঠিক উত্তর $432$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-halves/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$433$",
+        "B": "$432$",
+        "C": "$864$",
+        "D": "$216$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D∈BC, BD=24, DC=36 সেমি। A থেকে BC-এর উপর লম্ব উচ্চতা 48 সেমি। ABD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-base-ratio-10.svg)",
+      "explanation": "$[ABD]=\\frac12(24)(48)=576$। সঠিক উত্তর $576$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/base-ratio/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$576$",
+        "B": "$1152$",
+        "C": "$288$",
+        "D": "$577$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC ও ABD ত্রিভুজ একই ভূমি AB=48 সেমির একই পাশে এবং প্রত্যেকটির ক্ষেত্রফল 864 বর্গসেমি। D থেকে AB-এর উপর লম্ব উচ্চতা কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-converse-10.svg)",
+      "explanation": "একই সূত্রে $h_D=2(864)/48=36$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-converse/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$72$",
+        "B": "$18$",
+        "C": "$37$",
+        "D": "$36$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "উত্তল চতুর্ভুজ ABCD-এর সহায়ক স্থানাঙ্ক A=(0,0), B=(48,0), C=(48,24), D=(12,36) সেমি। D দিয়ে AC-সমান্তরাল রেখা BC-এর C-পাশের বর্ধিতাংশকে E-তে ছেদ করে। ABCD-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-quadrilateral-to-triangle-10.svg)",
+      "explanation": "$[ACD]=\\frac12|(48)(36)-(24)(12)|=720$। যোগে $576+720=1296$। সঠিক উত্তর $1296$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/quadrilateral-to-triangle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1297$",
+        "B": "$1296$",
+        "C": "$2592$",
+        "D": "$648$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "আয়তক্ষেত্র ABCD-তে AB=36, AD=24 সেমি। AB-কে B-এর দিকে বাড়িয়ে BE=AB নেওয়া হলো; DE যোগ করা হলো। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-rectangle-to-triangle-10.svg)",
+      "explanation": "$[ADE]=\\frac12 AE\\cdot AD=\\frac12(72)(24)=864$। সঠিক উত্তর $864$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/rectangle-to-triangle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$865$",
+        "B": "$864$",
+        "C": "$1728$",
+        "D": "$432$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-এর ভূমি BC=48 ও লম্ব উচ্চতা 36 সেমি। BC-এর মধ্যবিন্দু M; A দিয়ে BC-সমান্তরাল, M দিয়ে BA-সমান্তরাল রেখার ছেদ D নেওয়া হলো। BMDA সামান্তরিকের ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-triangle-to-parallelogram-10.svg)",
+      "explanation": "BM∥AD, BA∥MD; ক্ষেত্রফল $BM\\cdot h=24\\times36=864$। সঠিক উত্তর $864$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/triangle-to-parallelogram/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$865$",
+        "B": "$864$",
+        "C": "$1728$",
+        "D": "$432$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABCD ও ABEF একই ভূমি AB=48 সেমি ও একই সমান্তরাল AB,DF-এর মধ্যে দুটি সামান্তরিক। লম্ব উচ্চতা 24 সেমি। ABEF-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-parallelograms-10.svg)",
+      "explanation": "একই ভূমি ও একই সমান্তরালের মধ্যে উচ্চতা সমান; তাই $[ABEF]=1152$। সঠিক উত্তর $1152$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-parallelograms/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$576$",
+        "B": "$1153$",
+        "C": "$1152$",
+        "D": "$2304$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "একটি ত্রিভুজের ভূমি 72 ও লম্ব উচ্চতা 48 সেমি। সমক্ষেত্র আয়তক্ষেত্রের একটি বাহু 36 সেমি নির্দিষ্ট। আয়তক্ষেত্রের অপর বাহু কত সেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-equal-area-rectangle-10.svg)",
+      "explanation": "ক্ষেত্রফল/নির্দিষ্ট বাহু $=1728/36=48$ সেমি। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/equal-area-rectangle/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24$",
+        "B": "$49$",
+        "C": "$48$",
+        "D": "$96$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "ট্রাপিজিয়াম ABCD-তে AB∥DC, AB=48, DC=24 ও উচ্চতা 36 সেমি। কর্ণ AC অঙ্কিত। ADC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-trapezium-diagonal-10.svg)",
+      "explanation": "$[ADC]=\\frac12 DC\\cdot h=432$। সঠিক উত্তর $432$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/trapezium-diagonal/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$432$",
+        "B": "$864$",
+        "C": "$216$",
+        "D": "$433$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "ত্রিভুজ ABC-তে D,E যথাক্রমে AB ও AC-এর মধ্যবিন্দু। BC=48 ও লম্ব উচ্চতা 48 সেমি। ADE-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-midpoint-area-10.svg)",
+      "explanation": "DE∥BC, DE=BC/2 এবং ADE-এর উচ্চতাও মূল উচ্চতার অর্ধেক। তাই ক্ষেত্রফল মূলের 1/4, অর্থাৎ 288। সঠিক উত্তর $288$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/midpoint-area/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$289$",
+        "B": "$288$",
+        "C": "$576$",
+        "D": "$144$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "ABC-তে M হলো BC-এর মধ্যবিন্দু এবং G∈AM; AG:GM=2:1। ABC-এর ভূমি 72 ও উচ্চতা 48 সেমি। GBC-এর ক্ষেত্রফল কত বর্গসেমি?\n![চিত্র; মাপানুযায়ী নয়](https://proshnobook.com/question-bank/ssc-math-ch15-v1/mcq-median-point-ratio-10.svg)",
+      "explanation": "G থেকে BC-এর লম্ব দূরত্ব A-এর উচ্চতার 1/3: একই সরলরেখা AM-এ GM/AM=1/3। একই ভূমি BC-এ $[GBC]=[ABC]/3=576$। সঠিক উত্তর $576$।",
+      "page": "নিজস্ব অনুশীলনী; Ch15/MCQ/median-point-ratio/10; বোর্ড/বইয়ের অবিকল নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$576$",
+        "B": "$1152$",
+        "C": "$288$",
+        "D": "$577$"
+      },
+      "correct": "A"
+    }
+  ]
+}

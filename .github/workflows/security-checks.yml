@@ -8,7 +8,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     services:
       auth-rate-postgres:
         image: postgres:16
@@ -25,6 +25,10 @@ jobs:
           --health-retries 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Preservation regressions compare chapter bytes to pinned ancestor commits.
+          # A depth-1 checkout cannot supply those historical trees.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -34,6 +38,10 @@ jobs:
         run: npm audit --omit=dev --audit-level=high
       - run: npx prisma generate
       - run: npm run typecheck
+      - name: Real PostgreSQL scoped SSC math release (disposable only)
+        run: node scripts/ssc-math-release-postgres-check.cjs
+        env:
+          WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
       - name: Security tests (report failing TAP blocks)
         shell: bash
         run: |
@@ -70,11 +78,19 @@ jobs:
       - name: PDF browser/worker/render/print regression (local fixtures only)
         shell: bash
         run: |
-          npm install --prefix "$RUNNER_TEMP/pdf-browser-tools" --ignore-scripts --no-package-lock playwright-core@1.65.1
+          npm install --prefix "$RUNNER_TEMP/pdf-browser-tools" --ignore-scripts --no-package-lock playwright-core@1.65.1 esbuild@0.28.2
           export NODE_PATH="$RUNNER_TEMP/pdf-browser-tools/node_modules"
           export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
           test -x "$CHROMIUM_EXECUTABLE_PATH"
           node scripts/pdf-browser-check.cjs
+          node scripts/english-browser/class8-reference-check.cjs
+          node scripts/english-browser/expanded-model-check.cjs
+          ENGLISH_BROWSER_SET=junior-expansion-01 node scripts/english-browser/expanded-model-check.cjs
+          WORD_WORKSPACE_OCR=1 node scripts/paper-browser/word-workspace-check.cjs
+          node scripts/paper-browser/default-header-check.cjs
+          node scripts/paper-browser/physics-auto-model-check.cjs
+          node scripts/auto-model/check-subject-groups.cjs
+          node scripts/auto-model/check-preparation-flow.cjs
       - name: Production build (no production credentials)
         run: npm run build
       - name: Full built app Credentials roles and mobile browser regression (isolated DB)
@@ -86,3 +102,11 @@ jobs:
           node scripts/authenticated-browser-check.cjs
         env:
           WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+      - name: Keep isolated English workflow proof (no production data)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-english-workflow-proof
+          path: .cache/english-authenticated-flow/
+          if-no-files-found: ignore
+          retention-days: 7

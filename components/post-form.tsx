@@ -474,7 +474,7 @@ export default function PostForm({ post = empty, cats }: { post?: PostFormData; 
         <legend className="px-2 text-sm font-semibold">SEO (গুগল সার্চের জন্য)</legend>
 
         <details className="rounded-xl border border-slate-200 p-3">
-          <summary className="cursor-pointer text-sm font-semibold">AI কিওয়ার্ড রিসার্চ (ঐচ্ছিক)</summary>
+          <summary className="cursor-pointer text-sm font-semibold">সফটওয়্যার কিওয়ার্ড রিসার্চ (ঐচ্ছিক)</summary>
           <div className="mt-3">
             <AdminKeywordTool compact onSelectKeyword={addKeyword} onApplySeo={applySeo} />
           </div>

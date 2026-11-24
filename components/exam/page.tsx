@@ -134,7 +134,7 @@ export default function ExamPage() {
             </div>
             <div>
               <h1 className="text-base font-bold">লাইভ অনলাইন এক্সাম </h1>
-              <p className="text-xs text-emerald-100">ক্লাস, বিষয় ও অধ্যায় দিন, AI প্রশ্ন বানিয়ে দেবে</p>
+              <p className="text-xs text-emerald-100">ক্লাস, বিষয় ও অধ্যায় দিন, সফটওয়্যার প্রশ্ন বানিয়ে দেবে</p>
             </div>
           </div>
           <ArrowRight size={20} className="text-emerald-200" />
@@ -142,7 +142,7 @@ export default function ExamPage() {
 
         <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-7 shadow-sm">
           <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-2">
-            এক ক্লিকে প্রশ্ন তৈরি করুন <span className="text-blue-600">(AI)</span>
+            এক ক্লিকে প্রশ্ন তৈরি করুন <span className="text-blue-600">(সফটওয়্যার)</span>
           </h1>
 
           {errorMsg && (
@@ -312,7 +312,7 @@ export default function ExamPage() {
               {loading ? (
                 <>
                   <Loader2 size={18} className="animate-spin" />
-                  <span>জেমিনি AI দিয়ে প্রশ্ন তৈরি হচ্ছে...</span>
+                  <span>জেমিনি সফটওয়্যার দিয়ে প্রশ্ন তৈরি হচ্ছে...</span>
                 </>
               ) : (
                 <>

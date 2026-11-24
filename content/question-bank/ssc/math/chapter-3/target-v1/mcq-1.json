@@ -1,0 +1,2877 @@
+{
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৩য় অধ্যায়: বীজগাণিতিক রাশি",
+  "book": "Proshnobook — যাচাইকৃত বোর্ড সংকলন + নিজস্ব বীজগাণিতিক অনুশীলনী",
+  "edition": "Chapter 3 target v1; DRAFT; স্বাধীন শিক্ষক অনুমোদন বাকি",
+  "sourceUrl": "https://github.com/saifulsirictdev/Proshnobook_com",
+  "lang": "Bangla",
+  "items": [
+    {
+      "type": "MCQ",
+      "text": "$x^2+y^2=9$ এবং $xy=3$ হলে— i. $(x-y)^2=3$; ii. $(x+y)^2=15$; iii. $x^2+y^2+x^2y^2=18$। নিচের কোনটি সঠিক?",
+      "explanation": "$(x-y)^2=x^2+y^2-2xy=9-6=3$; $(x+y)^2=x^2+y^2+2xy=9+6=15$। আবার $x^2+y^2+x^2y^2=9+(xy)^2=9+9=18$। তাই তিনটি বিবৃতিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 161; PDF 20; প্রশ্ন 20",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "cumilla",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 20,
+          "printedPage": "161",
+          "questionNumber": "20"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+y=\\sqrt{8}$ এবং $x-y=\\sqrt{5}$ হলে— i. $xy=\\frac34$; ii. $x^2+y^2=\\frac{13}{2}$; iii. $x^2-y^2=\\sqrt{40}$। নিচের কোনটি সঠিক?",
+      "explanation": "দুই শর্ত বর্গ করে পাই $(x+y)^2=8$ এবং $(x-y)^2=5$। বিয়োগে $4xy=3$, তাই $xy=3/4$। যোগে $2(x^2+y^2)=13$, তাই $x^2+y^2=13/2$। আবার $x^2-y^2=(x+y)(x-y)=\\sqrt8\\sqrt5=\\sqrt{40}$। তিনটিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 16",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "16"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x=\\sqrt6$, $y=\\sqrt3$ হলে $(x-y)^2+2xy$ এর মান কত?",
+      "explanation": "$(x-y)^2+2xy=x^2-2xy+y^2+2xy=x^2+y^2$। তাই মান $6+3=9$; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 22",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "22"
+        }
+      ],
+      "options": {
+        "A": "$3$",
+        "B": "$\\sqrt{18}$",
+        "C": "$2\\sqrt{18}$",
+        "D": "$9$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=\\sqrt3$, $a-b=1$ হলে $4ab$ এর মান নিচের কোনটি?",
+      "explanation": "$(a+b)^2-(a-b)^2=4ab$। ফলে $4ab=(\\sqrt3)^2-1^2=3-1=2$; উত্তর C।",
+      "page": "সংকলন: মুদ্রিত 190; PDF 49; প্রশ্ন 24",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "sylhet",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 49,
+          "printedPage": "190",
+          "questionNumber": "24"
+        }
+      ],
+      "options": {
+        "A": "$4$",
+        "B": "$\\sqrt3+1$",
+        "C": "$2$",
+        "D": "$\\sqrt3-1$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=6$, $a-b=4$ হলে— i. $a^2-b^2=24$; ii. $a^2+b^2=26$; iii. $4ab=20$। নিচের কোনটি সঠিক?",
+      "explanation": "$a^2-b^2=(a+b)(a-b)=6\\times4=24$। $a^2+b^2=((a+b)^2+(a-b)^2)/2=(36+16)/2=26$। $4ab=(a+b)^2-(a-b)^2=36-16=20$। তাই তিনটি বিবৃতিই সঠিক; উত্তর D।",
+      "page": "সংকলন: মুদ্রিত 170; PDF 29; প্রশ্ন 21",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "jashore",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 29,
+          "printedPage": "170",
+          "questionNumber": "21"
+        }
+      ],
+      "options": {
+        "A": "i ও ii",
+        "B": "i ও iii",
+        "C": "ii ও iii",
+        "D": "i, ii ও iii"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "যদি $f(x)=x^3+ax^2-6x-9$ হয়, তবে $a$ এর কোন মানের জন্য $f(-3)=0$ হবে?",
+      "explanation": "$x=-3$ বসিয়ে পাই $f(-3)=-27+9a+18-9=9a-18$। শূন্য হওয়ার শর্তে $9a-18=0$; তাই $a=2$। সমতুল্যভাবে বহুপদীটি $(x+3)$ দ্বারা নিঃশেষে বিভাজ্য; উত্তর B।",
+      "page": "সংকলন: মুদ্রিত 208; PDF 67; প্রশ্ন 2",
+      "difficulty": "MEDIUM",
+      "provenance": [
+        {
+          "kind": "board",
+          "board": "dinajpur",
+          "examYear": 2024,
+          "sourceFile": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+          "pdfPage": 67,
+          "printedPage": "208",
+          "questionNumber": "2"
+        }
+      ],
+      "options": {
+        "A": "$6$",
+        "B": "$2$",
+        "C": "$-2$",
+        "D": "$-4$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=5$ এবং $ab=6$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=5^2-2\\times6=13$। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$13$",
+        "C": "$14$",
+        "D": "$12$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=7$ এবং $ab=12$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=7^2-2\\times12=25$। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$26$",
+        "C": "$24$",
+        "D": "$27$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=9$ এবং $ab=20$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=9^2-2\\times20=41$। সঠিক উত্তর $41$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$42$",
+        "B": "$40$",
+        "C": "$43$",
+        "D": "$41$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=11$ এবং $ab=30$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=11^2-2\\times30=61$। সঠিক উত্তর $61$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$60$",
+        "B": "$63$",
+        "C": "$61$",
+        "D": "$62$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=13$ এবং $ab=42$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=13^2-2\\times42=85$। সঠিক উত্তর $85$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$87$",
+        "B": "$85$",
+        "C": "$86$",
+        "D": "$84$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=15$ এবং $ab=56$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=15^2-2\\times56=113$। সঠিক উত্তর $113$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$113$",
+        "B": "$114$",
+        "C": "$112$",
+        "D": "$115$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=17$ এবং $ab=72$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=17^2-2\\times72=145$। সঠিক উত্তর $145$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$146$",
+        "B": "$144$",
+        "C": "$147$",
+        "D": "$145$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=19$ এবং $ab=90$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=19^2-2\\times90=181$। সঠিক উত্তর $181$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$180$",
+        "B": "$183$",
+        "C": "$181$",
+        "D": "$182$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=21$ এবং $ab=110$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=21^2-2\\times110=221$। সঠিক উত্তর $221$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$223$",
+        "B": "$221$",
+        "C": "$222$",
+        "D": "$220$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=23$ এবং $ab=132$ হলে $a^2+b^2$ কত?",
+      "explanation": "$a^2+b^2=(a+b)^2-2ab=23^2-2\\times132=265$। সঠিক উত্তর $265$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/sum-square/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$265$",
+        "B": "$266$",
+        "C": "$264$",
+        "D": "$267$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=5$, $uv=6$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=5^2-4\\times6=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$3$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=7$, $uv=12$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=7^2-4\\times12=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=9$, $uv=20$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=9^2-4\\times20=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$2$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=11$, $uv=30$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=11^2-4\\times30=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=13$, $uv=42$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=13^2-4\\times42=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$3$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=15$, $uv=56$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=15^2-4\\times56=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=17$, $uv=72$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=17^2-4\\times72=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$3$",
+        "C": "$1$",
+        "D": "$2$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=19$, $uv=90$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=19^2-4\\times90=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3$",
+        "B": "$1$",
+        "C": "$2$",
+        "D": "$0$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=21$, $uv=110$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=21^2-4\\times110=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1$",
+        "B": "$2$",
+        "C": "$0$",
+        "D": "$3$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$u+v=23$, $uv=132$ হলে $(u-v)^2$ কত?",
+      "explanation": "$(u-v)^2=(u+v)^2-4uv=23^2-4\\times132=1$। সঠিক উত্তর $1$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/diff-square/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2$",
+        "B": "$0$",
+        "C": "$3$",
+        "D": "$1$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=7$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(7)^2-3^2$। সঠিক উত্তর $40$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$41$",
+        "B": "$39$",
+        "C": "$42$",
+        "D": "$40$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=9$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(9)^2-3^2$। সঠিক উত্তর $72$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$71$",
+        "B": "$74$",
+        "C": "$72$",
+        "D": "$73$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=11$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(11)^2-3^2$। সঠিক উত্তর $112$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$114$",
+        "B": "$112$",
+        "C": "$113$",
+        "D": "$111$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=13$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(13)^2-3^2$। সঠিক উত্তর $160$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$160$",
+        "B": "$161$",
+        "C": "$159$",
+        "D": "$162$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=15$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(15)^2-3^2$। সঠিক উত্তর $216$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$217$",
+        "B": "$215$",
+        "C": "$218$",
+        "D": "$216$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=17$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(17)^2-3^2$। সঠিক উত্তর $280$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$279$",
+        "B": "$282$",
+        "C": "$280$",
+        "D": "$281$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=19$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(19)^2-3^2$। সঠিক উত্তর $352$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$354$",
+        "B": "$352$",
+        "C": "$353$",
+        "D": "$351$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=21$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(21)^2-3^2$। সঠিক উত্তর $432$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$432$",
+        "B": "$433$",
+        "C": "$431$",
+        "D": "$434$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=23$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(23)^2-3^2$। সঠিক উত্তর $520$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$521$",
+        "B": "$519$",
+        "C": "$522$",
+        "D": "$520$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=25$ এবং $a-b=3$ হলে $4ab$ কত?",
+      "explanation": "$4ab=(a+b)^2-(a-b)^2=(25)^2-3^2$। সঠিক উত্তর $616$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/four-product/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$615$",
+        "B": "$618$",
+        "C": "$616$",
+        "D": "$617$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=5$ এবং $ab=6$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=5^3-3\\times6\\times5$। সঠিক উত্তর $35$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$34$",
+        "C": "$37$",
+        "D": "$35$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=7$ এবং $ab=12$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=7^3-3\\times12\\times7$। সঠিক উত্তর $91$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$90$",
+        "B": "$93$",
+        "C": "$91$",
+        "D": "$92$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=9$ এবং $ab=20$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=9^3-3\\times20\\times9$। সঠিক উত্তর $189$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$191$",
+        "B": "$189$",
+        "C": "$190$",
+        "D": "$188$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=11$ এবং $ab=30$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=11^3-3\\times30\\times11$। সঠিক উত্তর $341$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$341$",
+        "B": "$342$",
+        "C": "$340$",
+        "D": "$343$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=13$ এবং $ab=42$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=13^3-3\\times42\\times13$। সঠিক উত্তর $559$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$560$",
+        "B": "$558$",
+        "C": "$561$",
+        "D": "$559$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=15$ এবং $ab=56$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=15^3-3\\times56\\times15$। সঠিক উত্তর $855$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$854$",
+        "B": "$857$",
+        "C": "$855$",
+        "D": "$856$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=17$ এবং $ab=72$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=17^3-3\\times72\\times17$। সঠিক উত্তর $1241$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1243$",
+        "B": "$1241$",
+        "C": "$1242$",
+        "D": "$1240$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=19$ এবং $ab=90$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=19^3-3\\times90\\times19$। সঠিক উত্তর $1729$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1729$",
+        "B": "$1730$",
+        "C": "$1728$",
+        "D": "$1731$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=21$ এবং $ab=110$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=21^3-3\\times110\\times21$। সঠিক উত্তর $2331$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2332$",
+        "B": "$2330$",
+        "C": "$2333$",
+        "D": "$2331$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=23$ এবং $ab=132$ হলে $a^3+b^3$ কত?",
+      "explanation": "$a^3+b^3=(a+b)^3-3ab(a+b)=23^3-3\\times132\\times23$। সঠিক উত্তর $3059$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-sum/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3058$",
+        "B": "$3061$",
+        "C": "$3059$",
+        "D": "$3060$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=2$ এবং $ab=3$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(2)^3+3(3)(2)$। সঠিক উত্তর $26$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$28$",
+        "C": "$26$",
+        "D": "$27$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=3$ এবং $ab=4$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(3)^3+3(4)(3)$। সঠিক উত্তর $63$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$65$",
+        "B": "$63$",
+        "C": "$64$",
+        "D": "$62$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=4$ এবং $ab=5$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(4)^3+3(5)(4)$। সঠিক উত্তর $124$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$124$",
+        "B": "$125$",
+        "C": "$123$",
+        "D": "$126$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=5$ এবং $ab=6$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(5)^3+3(6)(5)$। সঠিক উত্তর $215$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$216$",
+        "B": "$214$",
+        "C": "$217$",
+        "D": "$215$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=6$ এবং $ab=7$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(6)^3+3(7)(6)$। সঠিক উত্তর $342$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$341$",
+        "B": "$344$",
+        "C": "$342$",
+        "D": "$343$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=7$ এবং $ab=8$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(7)^3+3(8)(7)$। সঠিক উত্তর $511$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$513$",
+        "B": "$511$",
+        "C": "$512$",
+        "D": "$510$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=8$ এবং $ab=9$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(8)^3+3(9)(8)$। সঠিক উত্তর $728$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$728$",
+        "B": "$729$",
+        "C": "$727$",
+        "D": "$730$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=9$ এবং $ab=10$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(9)^3+3(10)(9)$। সঠিক উত্তর $999$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1000$",
+        "B": "$998$",
+        "C": "$1001$",
+        "D": "$999$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=10$ এবং $ab=11$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(10)^3+3(11)(10)$। সঠিক উত্তর $1330$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1329$",
+        "B": "$1332$",
+        "C": "$1330$",
+        "D": "$1331$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a-b=11$ এবং $ab=12$ হলে $a^3-b^3$ কত?",
+      "explanation": "$a^3-b^3=(a-b)^3+3ab(a-b)=(11)^3+3(12)(11)$। সঠিক উত্তর $1727$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-diff/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1729$",
+        "B": "$1727$",
+        "C": "$1728$",
+        "D": "$1726$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=5$ এবং $ab=6$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=5^2-2\\times6=13$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(13)^2-2(6)^2$। সঠিক উত্তর $97$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$99$",
+        "B": "$97$",
+        "C": "$98$",
+        "D": "$96$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=7$ এবং $ab=12$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=7^2-2\\times12=25$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(25)^2-2(12)^2$। সঠিক উত্তর $337$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$337$",
+        "B": "$338$",
+        "C": "$336$",
+        "D": "$339$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=9$ এবং $ab=20$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=9^2-2\\times20=41$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(41)^2-2(20)^2$। সঠিক উত্তর $881$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$882$",
+        "B": "$880$",
+        "C": "$883$",
+        "D": "$881$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=11$ এবং $ab=30$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=11^2-2\\times30=61$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(61)^2-2(30)^2$। সঠিক উত্তর $1921$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1920$",
+        "B": "$1923$",
+        "C": "$1921$",
+        "D": "$1922$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=13$ এবং $ab=42$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=13^2-2\\times42=85$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(85)^2-2(42)^2$। সঠিক উত্তর $3697$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$3699$",
+        "B": "$3697$",
+        "C": "$3698$",
+        "D": "$3696$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=15$ এবং $ab=56$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=15^2-2\\times56=113$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(113)^2-2(56)^2$। সঠিক উত্তর $6497$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$6497$",
+        "B": "$6498$",
+        "C": "$6496$",
+        "D": "$6499$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=17$ এবং $ab=72$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=17^2-2\\times72=145$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(145)^2-2(72)^2$। সঠিক উত্তর $10657$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$10658$",
+        "B": "$10656$",
+        "C": "$10659$",
+        "D": "$10657$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=19$ এবং $ab=90$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=19^2-2\\times90=181$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(181)^2-2(90)^2$। সঠিক উত্তর $16561$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$16560$",
+        "B": "$16563$",
+        "C": "$16561$",
+        "D": "$16562$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=21$ এবং $ab=110$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=21^2-2\\times110=221$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(221)^2-2(110)^2$। সঠিক উত্তর $24641$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$24643$",
+        "B": "$24641$",
+        "C": "$24642$",
+        "D": "$24640$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$a+b=23$ এবং $ab=132$ হলে $a^4+b^4$ কত?",
+      "explanation": "প্রথমে $a^2+b^2=23^2-2\\times132=265$। এরপর $a^4+b^4=(a^2+b^2)^2-2a^2b^2=(265)^2-2(132)^2$। সঠিক উত্তর $35377$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/fourth-sum/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$35377$",
+        "B": "$35378$",
+        "C": "$35376$",
+        "D": "$35379$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=4$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $4^2-2$। সঠিক উত্তর $14$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$15$",
+        "B": "$13$",
+        "C": "$16$",
+        "D": "$14$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=5$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $5^2-2$। সঠিক উত্তর $23$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$22$",
+        "B": "$25$",
+        "C": "$23$",
+        "D": "$24$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=6$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $6^2-2$। সঠিক উত্তর $34$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$36$",
+        "B": "$34$",
+        "C": "$35$",
+        "D": "$33$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=7$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $7^2-2$। সঠিক উত্তর $47$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$47$",
+        "B": "$48$",
+        "C": "$46$",
+        "D": "$49$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=8$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $8^2-2$। সঠিক উত্তর $62$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$63$",
+        "B": "$61$",
+        "C": "$64$",
+        "D": "$62$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=9$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $9^2-2$। সঠিক উত্তর $79$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$78$",
+        "B": "$81$",
+        "C": "$79$",
+        "D": "$80$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=10$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $10^2-2$। সঠিক উত্তর $98$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$100$",
+        "B": "$98$",
+        "C": "$99$",
+        "D": "$97$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=11$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $11^2-2$। সঠিক উত্তর $119$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$119$",
+        "B": "$120$",
+        "C": "$118$",
+        "D": "$121$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=12$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $12^2-2$। সঠিক উত্তর $142$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$143$",
+        "B": "$141$",
+        "C": "$144$",
+        "D": "$142$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=13$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "বর্গ করে মাঝের $2x(1/x)=2$ বাদ দিলে মান $13^2-2$। সঠিক উত্তর $167$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-square/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$166$",
+        "B": "$169$",
+        "C": "$167$",
+        "D": "$168$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=4$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=4^3-3\\times4$। সঠিক উত্তর $52$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$54$",
+        "B": "$52$",
+        "C": "$53$",
+        "D": "$51$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=5$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=5^3-3\\times5$। সঠিক উত্তর $110$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$110$",
+        "B": "$111$",
+        "C": "$109$",
+        "D": "$112$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=6$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=6^3-3\\times6$। সঠিক উত্তর $198$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$199$",
+        "B": "$197$",
+        "C": "$200$",
+        "D": "$198$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=7$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=7^3-3\\times7$। সঠিক উত্তর $322$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$321$",
+        "B": "$324$",
+        "C": "$322$",
+        "D": "$323$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=8$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=8^3-3\\times8$। সঠিক উত্তর $488$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$490$",
+        "B": "$488$",
+        "C": "$489$",
+        "D": "$487$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=9$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=9^3-3\\times9$। সঠিক উত্তর $702$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$702$",
+        "B": "$703$",
+        "C": "$701$",
+        "D": "$704$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=10$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=10^3-3\\times10$। সঠিক উত্তর $970$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$971$",
+        "B": "$969$",
+        "C": "$972$",
+        "D": "$970$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=11$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=11^3-3\\times11$। সঠিক উত্তর $1298$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1297$",
+        "B": "$1300$",
+        "C": "$1298$",
+        "D": "$1299$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=12$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=12^3-3\\times12$। সঠিক উত্তর $1692$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1694$",
+        "B": "$1692$",
+        "C": "$1693$",
+        "D": "$1691$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+\\frac1x=13$, $x\\ne0$ হলে $x^3+\\frac1{x^3}$ কত?",
+      "explanation": "ঘনের সূত্রে $x^3+x^{-3}=(x+x^{-1})^3-3(x+x^{-1})=13^3-3\\times13$। সঠিক উত্তর $2158$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-cube/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2158$",
+        "B": "$2159$",
+        "C": "$2157$",
+        "D": "$2160$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=4$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $4^2+2$। সঠিক উত্তর $18$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$20$",
+        "C": "$18$",
+        "D": "$19$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=5$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $5^2+2$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$29$",
+        "B": "$27$",
+        "C": "$28$",
+        "D": "$26$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=6$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $6^2+2$। সঠিক উত্তর $38$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$39$",
+        "C": "$37$",
+        "D": "$40$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=7$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $7^2+2$। সঠিক উত্তর $51$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$52$",
+        "B": "$50$",
+        "C": "$53$",
+        "D": "$51$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=8$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $8^2+2$। সঠিক উত্তর $66$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$65$",
+        "B": "$68$",
+        "C": "$66$",
+        "D": "$67$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=9$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $9^2+2$। সঠিক উত্তর $83$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$85$",
+        "B": "$83$",
+        "C": "$84$",
+        "D": "$82$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=10$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $10^2+2$। সঠিক উত্তর $102$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$102$",
+        "B": "$103$",
+        "C": "$101$",
+        "D": "$104$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=11$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $11^2+2$। সঠিক উত্তর $123$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$124$",
+        "B": "$122$",
+        "C": "$125$",
+        "D": "$123$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=12$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $12^2+2$। সঠিক উত্তর $146$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$145$",
+        "B": "$148$",
+        "C": "$146$",
+        "D": "$147$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=13$, $x\\ne0$ হলে $x^2+\\frac1{x^2}$ কত?",
+      "explanation": "$(x-x^{-1})^2=x^2+x^{-2}-2$। তাই চাওয়া মান $13^2+2$। সঠিক উত্তর $171$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-square/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$173$",
+        "B": "$171$",
+        "C": "$172$",
+        "D": "$170$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=4$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=4^3+3\\times4$। সঠিক উত্তর $76$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$76$",
+        "B": "$77$",
+        "C": "$75$",
+        "D": "$78$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=5$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=5^3+3\\times5$। সঠিক উত্তর $140$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$141$",
+        "B": "$139$",
+        "C": "$142$",
+        "D": "$140$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=6$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=6^3+3\\times6$। সঠিক উত্তর $234$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$233$",
+        "B": "$236$",
+        "C": "$234$",
+        "D": "$235$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=7$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=7^3+3\\times7$। সঠিক উত্তর $364$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$366$",
+        "B": "$364$",
+        "C": "$365$",
+        "D": "$363$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=8$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=8^3+3\\times8$। সঠিক উত্তর $536$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$536$",
+        "B": "$537$",
+        "C": "$535$",
+        "D": "$538$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=9$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=9^3+3\\times9$। সঠিক উত্তর $756$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$757$",
+        "B": "$755$",
+        "C": "$758$",
+        "D": "$756$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=10$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=10^3+3\\times10$। সঠিক উত্তর $1030$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1029$",
+        "B": "$1032$",
+        "C": "$1030$",
+        "D": "$1031$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=11$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=11^3+3\\times11$। সঠিক উত্তর $1364$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1366$",
+        "B": "$1364$",
+        "C": "$1365$",
+        "D": "$1363$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=12$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=12^3+3\\times12$। সঠিক উত্তর $1764$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$1764$",
+        "B": "$1765$",
+        "C": "$1763$",
+        "D": "$1766$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x-\\frac1x=13$, $x\\ne0$ হলে $x^3-\\frac1{x^3}$ কত?",
+      "explanation": "$x^3-x^{-3}=(x-x^{-1})^3+3(x-x^{-1})=13^3+3\\times13$। সঠিক উত্তর $2236$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/recip-diff-cube/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$2237$",
+        "B": "$2235$",
+        "C": "$2238$",
+        "D": "$2236$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 5 x + 6$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $5$ এবং ধ্রুবক $6$। দুটি সংখ্যা $2,3$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 2\\right) \\left(x + 3\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 3\\right) \\left(x - 2\\right)$",
+        "B": "$\\left(x - 3\\right) \\left(x + 2\\right)$",
+        "C": "$\\left(x - 2\\right) \\left(x + 3\\right)$",
+        "D": "$\\left(x + 2\\right) \\left(x + 3\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 7 x + 12$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $7$ এবং ধ্রুবক $12$। দুটি সংখ্যা $3,4$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 3\\right) \\left(x + 4\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 4\\right) \\left(x + 3\\right)$",
+        "B": "$\\left(x - 3\\right) \\left(x + 4\\right)$",
+        "C": "$\\left(x + 3\\right) \\left(x + 4\\right)$",
+        "D": "$\\left(x - 4\\right) \\left(x - 3\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 9 x + 20$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $9$ এবং ধ্রুবক $20$। দুটি সংখ্যা $4,5$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 4\\right) \\left(x + 5\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 4\\right) \\left(x + 5\\right)$",
+        "B": "$\\left(x + 4\\right) \\left(x + 5\\right)$",
+        "C": "$\\left(x - 5\\right) \\left(x - 4\\right)$",
+        "D": "$\\left(x - 5\\right) \\left(x + 4\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 11 x + 30$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $11$ এবং ধ্রুবক $30$। দুটি সংখ্যা $5,6$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 5\\right) \\left(x + 6\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 5\\right) \\left(x + 6\\right)$",
+        "B": "$\\left(x - 6\\right) \\left(x - 5\\right)$",
+        "C": "$\\left(x - 6\\right) \\left(x + 5\\right)$",
+        "D": "$\\left(x - 5\\right) \\left(x + 6\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 13 x + 42$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $13$ এবং ধ্রুবক $42$। দুটি সংখ্যা $6,7$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 6\\right) \\left(x + 7\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 7\\right) \\left(x - 6\\right)$",
+        "B": "$\\left(x - 7\\right) \\left(x + 6\\right)$",
+        "C": "$\\left(x - 6\\right) \\left(x + 7\\right)$",
+        "D": "$\\left(x + 6\\right) \\left(x + 7\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 15 x + 56$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $15$ এবং ধ্রুবক $56$। দুটি সংখ্যা $7,8$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 7\\right) \\left(x + 8\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 8\\right) \\left(x + 7\\right)$",
+        "B": "$\\left(x - 7\\right) \\left(x + 8\\right)$",
+        "C": "$\\left(x + 7\\right) \\left(x + 8\\right)$",
+        "D": "$\\left(x - 8\\right) \\left(x - 7\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 17 x + 72$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $17$ এবং ধ্রুবক $72$। দুটি সংখ্যা $8,9$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 8\\right) \\left(x + 9\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 8\\right) \\left(x + 9\\right)$",
+        "B": "$\\left(x + 8\\right) \\left(x + 9\\right)$",
+        "C": "$\\left(x - 9\\right) \\left(x - 8\\right)$",
+        "D": "$\\left(x - 9\\right) \\left(x + 8\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 19 x + 90$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $19$ এবং ধ্রুবক $90$। দুটি সংখ্যা $9,10$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 9\\right) \\left(x + 10\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 9\\right) \\left(x + 10\\right)$",
+        "B": "$\\left(x - 10\\right) \\left(x - 9\\right)$",
+        "C": "$\\left(x - 10\\right) \\left(x + 9\\right)$",
+        "D": "$\\left(x - 9\\right) \\left(x + 10\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 21 x + 110$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $21$ এবং ধ্রুবক $110$। দুটি সংখ্যা $10,11$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 10\\right) \\left(x + 11\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 11\\right) \\left(x - 10\\right)$",
+        "B": "$\\left(x - 11\\right) \\left(x + 10\\right)$",
+        "C": "$\\left(x - 10\\right) \\left(x + 11\\right)$",
+        "D": "$\\left(x + 10\\right) \\left(x + 11\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{2} + 23 x + 132$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "মধ্যপদের সহগ $23$ এবং ধ্রুবক $132$। দুটি সংখ্যা $11,12$-এর যোগ ও গুণফল এই শর্ত পূরণ করে। সঠিক উত্তর $\\left(x + 11\\right) \\left(x + 12\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-quadratic/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 12\\right) \\left(x + 11\\right)$",
+        "B": "$\\left(x - 11\\right) \\left(x + 12\\right)$",
+        "C": "$\\left(x + 11\\right) \\left(x + 12\\right)$",
+        "D": "$\\left(x - 12\\right) \\left(x - 11\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-4$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-2^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 2\\right) \\left(x + 2\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$x^{2} + 4$",
+        "B": "$\\left(x - 2\\right) \\left(x + 2\\right)$",
+        "C": "$\\left(x - 2\\right)^{2}$",
+        "D": "$\\left(x + 2\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-9$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-3^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 3\\right) \\left(x + 3\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 3\\right) \\left(x + 3\\right)$",
+        "B": "$\\left(x - 3\\right)^{2}$",
+        "C": "$\\left(x + 3\\right)^{2}$",
+        "D": "$x^{2} + 9$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-16$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-4^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 4\\right) \\left(x + 4\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 4\\right)^{2}$",
+        "B": "$\\left(x + 4\\right)^{2}$",
+        "C": "$x^{2} + 16$",
+        "D": "$\\left(x - 4\\right) \\left(x + 4\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-25$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-5^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 5\\right) \\left(x + 5\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 5\\right)^{2}$",
+        "B": "$x^{2} + 25$",
+        "C": "$\\left(x - 5\\right) \\left(x + 5\\right)$",
+        "D": "$\\left(x - 5\\right)^{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-36$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-6^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 6\\right) \\left(x + 6\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$x^{2} + 36$",
+        "B": "$\\left(x - 6\\right) \\left(x + 6\\right)$",
+        "C": "$\\left(x - 6\\right)^{2}$",
+        "D": "$\\left(x + 6\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-49$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-7^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 7\\right) \\left(x + 7\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 7\\right) \\left(x + 7\\right)$",
+        "B": "$\\left(x - 7\\right)^{2}$",
+        "C": "$\\left(x + 7\\right)^{2}$",
+        "D": "$x^{2} + 49$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-64$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-8^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 8\\right) \\left(x + 8\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 8\\right)^{2}$",
+        "B": "$\\left(x + 8\\right)^{2}$",
+        "C": "$x^{2} + 64$",
+        "D": "$\\left(x - 8\\right) \\left(x + 8\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-81$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-9^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 9\\right) \\left(x + 9\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 9\\right)^{2}$",
+        "B": "$x^{2} + 81$",
+        "C": "$\\left(x - 9\\right) \\left(x + 9\\right)$",
+        "D": "$\\left(x - 9\\right)^{2}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-100$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-10^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 10\\right) \\left(x + 10\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$x^{2} + 100$",
+        "B": "$\\left(x - 10\\right) \\left(x + 10\\right)$",
+        "C": "$\\left(x - 10\\right)^{2}$",
+        "D": "$\\left(x + 10\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^2-121$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "এটি $x^2-11^2$; সূত্র $u^2-v^2=(u-v)(u+v)$। সঠিক উত্তর $\\left(x - 11\\right) \\left(x + 11\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-diff-square/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 11\\right) \\left(x + 11\\right)$",
+        "B": "$\\left(x - 11\\right)^{2}$",
+        "C": "$\\left(x + 11\\right)^{2}$",
+        "D": "$x^{2} + 121$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+8$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=2$ বসাই। সঠিক উত্তর $\\left(x + 2\\right) \\left(x^{2} - 2 x + 4\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 2\\right) \\left(x^{2} - 2 x + 4\\right)$",
+        "B": "$\\left(x - 2\\right) \\left(x^{2} + 2 x + 4\\right)$",
+        "C": "$\\left(x + 2\\right) \\left(x^{2} + 2 x + 4\\right)$",
+        "D": "$\\left(x + 2\\right) \\left(x^{2} - 2 x - 4\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+27$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=3$ বসাই। সঠিক উত্তর $\\left(x + 3\\right) \\left(x^{2} - 3 x + 9\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 3\\right) \\left(x^{2} + 3 x + 9\\right)$",
+        "B": "$\\left(x + 3\\right) \\left(x^{2} + 3 x + 9\\right)$",
+        "C": "$\\left(x + 3\\right) \\left(x^{2} - 3 x - 9\\right)$",
+        "D": "$\\left(x + 3\\right) \\left(x^{2} - 3 x + 9\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+64$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=4$ বসাই। সঠিক উত্তর $\\left(x + 4\\right) \\left(x^{2} - 4 x + 16\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 4\\right) \\left(x^{2} + 4 x + 16\\right)$",
+        "B": "$\\left(x + 4\\right) \\left(x^{2} - 4 x - 16\\right)$",
+        "C": "$\\left(x + 4\\right) \\left(x^{2} - 4 x + 16\\right)$",
+        "D": "$\\left(x - 4\\right) \\left(x^{2} + 4 x + 16\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+125$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=5$ বসাই। সঠিক উত্তর $\\left(x + 5\\right) \\left(x^{2} - 5 x + 25\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 5\\right) \\left(x^{2} - 5 x - 25\\right)$",
+        "B": "$\\left(x + 5\\right) \\left(x^{2} - 5 x + 25\\right)$",
+        "C": "$\\left(x - 5\\right) \\left(x^{2} + 5 x + 25\\right)$",
+        "D": "$\\left(x + 5\\right) \\left(x^{2} + 5 x + 25\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+216$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=6$ বসাই। সঠিক উত্তর $\\left(x + 6\\right) \\left(x^{2} - 6 x + 36\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 6\\right) \\left(x^{2} - 6 x + 36\\right)$",
+        "B": "$\\left(x - 6\\right) \\left(x^{2} + 6 x + 36\\right)$",
+        "C": "$\\left(x + 6\\right) \\left(x^{2} + 6 x + 36\\right)$",
+        "D": "$\\left(x + 6\\right) \\left(x^{2} - 6 x - 36\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+343$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=7$ বসাই। সঠিক উত্তর $\\left(x + 7\\right) \\left(x^{2} - 7 x + 49\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 7\\right) \\left(x^{2} + 7 x + 49\\right)$",
+        "B": "$\\left(x + 7\\right) \\left(x^{2} + 7 x + 49\\right)$",
+        "C": "$\\left(x + 7\\right) \\left(x^{2} - 7 x - 49\\right)$",
+        "D": "$\\left(x + 7\\right) \\left(x^{2} - 7 x + 49\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+512$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=8$ বসাই। সঠিক উত্তর $\\left(x + 8\\right) \\left(x^{2} - 8 x + 64\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 8\\right) \\left(x^{2} + 8 x + 64\\right)$",
+        "B": "$\\left(x + 8\\right) \\left(x^{2} - 8 x - 64\\right)$",
+        "C": "$\\left(x + 8\\right) \\left(x^{2} - 8 x + 64\\right)$",
+        "D": "$\\left(x - 8\\right) \\left(x^{2} + 8 x + 64\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+729$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=9$ বসাই। সঠিক উত্তর $\\left(x + 9\\right) \\left(x^{2} - 9 x + 81\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 9\\right) \\left(x^{2} - 9 x - 81\\right)$",
+        "B": "$\\left(x + 9\\right) \\left(x^{2} - 9 x + 81\\right)$",
+        "C": "$\\left(x - 9\\right) \\left(x^{2} + 9 x + 81\\right)$",
+        "D": "$\\left(x + 9\\right) \\left(x^{2} + 9 x + 81\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+1000$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=10$ বসাই। সঠিক উত্তর $\\left(x + 10\\right) \\left(x^{2} - 10 x + 100\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 10\\right) \\left(x^{2} - 10 x + 100\\right)$",
+        "B": "$\\left(x - 10\\right) \\left(x^{2} + 10 x + 100\\right)$",
+        "C": "$\\left(x + 10\\right) \\left(x^{2} + 10 x + 100\\right)$",
+        "D": "$\\left(x + 10\\right) \\left(x^{2} - 10 x - 100\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3+1331$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3+v^3=(u+v)(u^2-uv+v^2)$-এ $v=11$ বসাই। সঠিক উত্তর $\\left(x + 11\\right) \\left(x^{2} - 11 x + 121\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-sum/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 11\\right) \\left(x^{2} + 11 x + 121\\right)$",
+        "B": "$\\left(x + 11\\right) \\left(x^{2} + 11 x + 121\\right)$",
+        "C": "$\\left(x + 11\\right) \\left(x^{2} - 11 x - 121\\right)$",
+        "D": "$\\left(x + 11\\right) \\left(x^{2} - 11 x + 121\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-8$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=2$ বসাই। সঠিক উত্তর $\\left(x - 2\\right) \\left(x^{2} + 2 x + 4\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 2\\right) \\left(x^{2} - 2 x + 4\\right)$",
+        "B": "$\\left(x - 2\\right) \\left(x^{2} - 2 x + 4\\right)$",
+        "C": "$\\left(x - 2\\right) \\left(x^{2} + 2 x - 4\\right)$",
+        "D": "$\\left(x - 2\\right) \\left(x^{2} + 2 x + 4\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-27$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=3$ বসাই। সঠিক উত্তর $\\left(x - 3\\right) \\left(x^{2} + 3 x + 9\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 3\\right) \\left(x^{2} - 3 x + 9\\right)$",
+        "B": "$\\left(x - 3\\right) \\left(x^{2} + 3 x - 9\\right)$",
+        "C": "$\\left(x - 3\\right) \\left(x^{2} + 3 x + 9\\right)$",
+        "D": "$\\left(x + 3\\right) \\left(x^{2} - 3 x + 9\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-64$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=4$ বসাই। সঠিক উত্তর $\\left(x - 4\\right) \\left(x^{2} + 4 x + 16\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 4\\right) \\left(x^{2} + 4 x - 16\\right)$",
+        "B": "$\\left(x - 4\\right) \\left(x^{2} + 4 x + 16\\right)$",
+        "C": "$\\left(x + 4\\right) \\left(x^{2} - 4 x + 16\\right)$",
+        "D": "$\\left(x - 4\\right) \\left(x^{2} - 4 x + 16\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-125$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=5$ বসাই। সঠিক উত্তর $\\left(x - 5\\right) \\left(x^{2} + 5 x + 25\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 5\\right) \\left(x^{2} + 5 x + 25\\right)$",
+        "B": "$\\left(x + 5\\right) \\left(x^{2} - 5 x + 25\\right)$",
+        "C": "$\\left(x - 5\\right) \\left(x^{2} - 5 x + 25\\right)$",
+        "D": "$\\left(x - 5\\right) \\left(x^{2} + 5 x - 25\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-216$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=6$ বসাই। সঠিক উত্তর $\\left(x - 6\\right) \\left(x^{2} + 6 x + 36\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 6\\right) \\left(x^{2} - 6 x + 36\\right)$",
+        "B": "$\\left(x - 6\\right) \\left(x^{2} - 6 x + 36\\right)$",
+        "C": "$\\left(x - 6\\right) \\left(x^{2} + 6 x - 36\\right)$",
+        "D": "$\\left(x - 6\\right) \\left(x^{2} + 6 x + 36\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-343$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=7$ বসাই। সঠিক উত্তর $\\left(x - 7\\right) \\left(x^{2} + 7 x + 49\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 7\\right) \\left(x^{2} - 7 x + 49\\right)$",
+        "B": "$\\left(x - 7\\right) \\left(x^{2} + 7 x - 49\\right)$",
+        "C": "$\\left(x - 7\\right) \\left(x^{2} + 7 x + 49\\right)$",
+        "D": "$\\left(x + 7\\right) \\left(x^{2} - 7 x + 49\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-512$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=8$ বসাই। সঠিক উত্তর $\\left(x - 8\\right) \\left(x^{2} + 8 x + 64\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 8\\right) \\left(x^{2} + 8 x - 64\\right)$",
+        "B": "$\\left(x - 8\\right) \\left(x^{2} + 8 x + 64\\right)$",
+        "C": "$\\left(x + 8\\right) \\left(x^{2} - 8 x + 64\\right)$",
+        "D": "$\\left(x - 8\\right) \\left(x^{2} - 8 x + 64\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-729$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=9$ বসাই। সঠিক উত্তর $\\left(x - 9\\right) \\left(x^{2} + 9 x + 81\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 9\\right) \\left(x^{2} + 9 x + 81\\right)$",
+        "B": "$\\left(x + 9\\right) \\left(x^{2} - 9 x + 81\\right)$",
+        "C": "$\\left(x - 9\\right) \\left(x^{2} - 9 x + 81\\right)$",
+        "D": "$\\left(x - 9\\right) \\left(x^{2} + 9 x - 81\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-1000$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=10$ বসাই। সঠিক উত্তর $\\left(x - 10\\right) \\left(x^{2} + 10 x + 100\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 10\\right) \\left(x^{2} - 10 x + 100\\right)$",
+        "B": "$\\left(x - 10\\right) \\left(x^{2} - 10 x + 100\\right)$",
+        "C": "$\\left(x - 10\\right) \\left(x^{2} + 10 x - 100\\right)$",
+        "D": "$\\left(x - 10\\right) \\left(x^{2} + 10 x + 100\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^3-1331$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$u^3-v^3=(u-v)(u^2+uv+v^2)$-এ $v=11$ বসাই। সঠিক উত্তর $\\left(x - 11\\right) \\left(x^{2} + 11 x + 121\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-cube-diff/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 11\\right) \\left(x^{2} - 11 x + 121\\right)$",
+        "B": "$\\left(x - 11\\right) \\left(x^{2} + 11 x - 121\\right)$",
+        "C": "$\\left(x - 11\\right) \\left(x^{2} + 11 x + 121\\right)$",
+        "D": "$\\left(x + 11\\right) \\left(x^{2} - 11 x + 121\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 2 x^{2} - 9 x - 18$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-9$ সাধারণ নিলে $(x+2)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 2\\right) \\left(x^{2} - 9\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 2\\right) \\left(x^{2} - 9\\right)$",
+        "B": "$\\left(x + 2\\right) \\left(x^{2} + 9\\right)$",
+        "C": "$\\left(x - 2\\right) \\left(x^{2} + 9\\right)$",
+        "D": "$\\left(x + 2\\right) \\left(x^{2} - 9\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 3 x^{2} - 16 x - 48$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-16$ সাধারণ নিলে $(x+3)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 3\\right) \\left(x^{2} - 16\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 3\\right) \\left(x^{2} + 16\\right)$",
+        "B": "$\\left(x - 3\\right) \\left(x^{2} + 16\\right)$",
+        "C": "$\\left(x + 3\\right) \\left(x^{2} - 16\\right)$",
+        "D": "$\\left(x - 3\\right) \\left(x^{2} - 16\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 4 x^{2} - 25 x - 100$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-25$ সাধারণ নিলে $(x+4)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 4\\right) \\left(x^{2} - 25\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 4\\right) \\left(x^{2} + 25\\right)$",
+        "B": "$\\left(x + 4\\right) \\left(x^{2} - 25\\right)$",
+        "C": "$\\left(x - 4\\right) \\left(x^{2} - 25\\right)$",
+        "D": "$\\left(x + 4\\right) \\left(x^{2} + 25\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 5 x^{2} - 36 x - 180$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-36$ সাধারণ নিলে $(x+5)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 5\\right) \\left(x^{2} - 36\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 5\\right) \\left(x^{2} - 36\\right)$",
+        "B": "$\\left(x - 5\\right) \\left(x^{2} - 36\\right)$",
+        "C": "$\\left(x + 5\\right) \\left(x^{2} + 36\\right)$",
+        "D": "$\\left(x - 5\\right) \\left(x^{2} + 36\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 6 x^{2} - 49 x - 294$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-49$ সাধারণ নিলে $(x+6)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 6\\right) \\left(x^{2} - 49\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 6\\right) \\left(x^{2} - 49\\right)$",
+        "B": "$\\left(x + 6\\right) \\left(x^{2} + 49\\right)$",
+        "C": "$\\left(x - 6\\right) \\left(x^{2} + 49\\right)$",
+        "D": "$\\left(x + 6\\right) \\left(x^{2} - 49\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 7 x^{2} - 64 x - 448$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-64$ সাধারণ নিলে $(x+7)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 7\\right) \\left(x^{2} - 64\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 7\\right) \\left(x^{2} + 64\\right)$",
+        "B": "$\\left(x - 7\\right) \\left(x^{2} + 64\\right)$",
+        "C": "$\\left(x + 7\\right) \\left(x^{2} - 64\\right)$",
+        "D": "$\\left(x - 7\\right) \\left(x^{2} - 64\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 8 x^{2} - 81 x - 648$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-81$ সাধারণ নিলে $(x+8)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 8\\right) \\left(x^{2} - 81\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 8\\right) \\left(x^{2} + 81\\right)$",
+        "B": "$\\left(x + 8\\right) \\left(x^{2} - 81\\right)$",
+        "C": "$\\left(x - 8\\right) \\left(x^{2} - 81\\right)$",
+        "D": "$\\left(x + 8\\right) \\left(x^{2} + 81\\right)$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 9 x^{2} - 100 x - 900$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-100$ সাধারণ নিলে $(x+9)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 9\\right) \\left(x^{2} - 100\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 9\\right) \\left(x^{2} - 100\\right)$",
+        "B": "$\\left(x - 9\\right) \\left(x^{2} - 100\\right)$",
+        "C": "$\\left(x + 9\\right) \\left(x^{2} + 100\\right)$",
+        "D": "$\\left(x - 9\\right) \\left(x^{2} + 100\\right)$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 10 x^{2} - 121 x - 1210$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-121$ সাধারণ নিলে $(x+10)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 10\\right) \\left(x^{2} - 121\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x - 10\\right) \\left(x^{2} - 121\\right)$",
+        "B": "$\\left(x + 10\\right) \\left(x^{2} + 121\\right)$",
+        "C": "$\\left(x - 10\\right) \\left(x^{2} + 121\\right)$",
+        "D": "$\\left(x + 10\\right) \\left(x^{2} - 121\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^{3} + 11 x^{2} - 144 x - 1584$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "প্রথম দুই পদে $x^2$ এবং শেষ দুই পদে $-144$ সাধারণ নিলে $(x+11)$ সাধারণ উৎপাদক হয়। সঠিক উত্তর $\\left(x + 11\\right) \\left(x^{2} - 144\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-group/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x + 11\\right) \\left(x^{2} + 144\\right)$",
+        "B": "$\\left(x - 11\\right) \\left(x^{2} + 144\\right)$",
+        "C": "$\\left(x + 11\\right) \\left(x^{2} - 144\\right)$",
+        "D": "$\\left(x - 11\\right) \\left(x^{2} - 144\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+64$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(2)^4=(x^2+8)^2-(4x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 4 x + 8\\right) \\left(x^{2} + 4 x + 8\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} + 8\\right)^{2}$",
+        "B": "$\\left(x^{2} - 8\\right)^{2}$",
+        "C": "$\\left(x^{2} - 4 x + 8\\right) \\left(x^{2} + 4 x + 8\\right)$",
+        "D": "$\\left(x^{2} - 4 x + 4\\right) \\left(x^{2} + 4 x + 4\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+324$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(3)^4=(x^2+18)^2-(6x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 6 x + 18\\right) \\left(x^{2} + 6 x + 18\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 18\\right)^{2}$",
+        "B": "$\\left(x^{2} - 6 x + 18\\right) \\left(x^{2} + 6 x + 18\\right)$",
+        "C": "$\\left(x^{2} - 6 x + 9\\right) \\left(x^{2} + 6 x + 9\\right)$",
+        "D": "$\\left(x^{2} + 18\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+1024$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(4)^4=(x^2+32)^2-(8x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 8 x + 32\\right) \\left(x^{2} + 8 x + 32\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 8 x + 32\\right) \\left(x^{2} + 8 x + 32\\right)$",
+        "B": "$\\left(x^{2} - 8 x + 16\\right) \\left(x^{2} + 8 x + 16\\right)$",
+        "C": "$\\left(x^{2} + 32\\right)^{2}$",
+        "D": "$\\left(x^{2} - 32\\right)^{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+2500$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(5)^4=(x^2+50)^2-(10x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 10 x + 50\\right) \\left(x^{2} + 10 x + 50\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 10 x + 25\\right) \\left(x^{2} + 10 x + 25\\right)$",
+        "B": "$\\left(x^{2} + 50\\right)^{2}$",
+        "C": "$\\left(x^{2} - 50\\right)^{2}$",
+        "D": "$\\left(x^{2} - 10 x + 50\\right) \\left(x^{2} + 10 x + 50\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+5184$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(6)^4=(x^2+72)^2-(12x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 12 x + 72\\right) \\left(x^{2} + 12 x + 72\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} + 72\\right)^{2}$",
+        "B": "$\\left(x^{2} - 72\\right)^{2}$",
+        "C": "$\\left(x^{2} - 12 x + 72\\right) \\left(x^{2} + 12 x + 72\\right)$",
+        "D": "$\\left(x^{2} - 12 x + 36\\right) \\left(x^{2} + 12 x + 36\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+9604$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(7)^4=(x^2+98)^2-(14x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 14 x + 98\\right) \\left(x^{2} + 14 x + 98\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 98\\right)^{2}$",
+        "B": "$\\left(x^{2} - 14 x + 98\\right) \\left(x^{2} + 14 x + 98\\right)$",
+        "C": "$\\left(x^{2} - 14 x + 49\\right) \\left(x^{2} + 14 x + 49\\right)$",
+        "D": "$\\left(x^{2} + 98\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+16384$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(8)^4=(x^2+128)^2-(16x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 16 x + 128\\right) \\left(x^{2} + 16 x + 128\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 16 x + 128\\right) \\left(x^{2} + 16 x + 128\\right)$",
+        "B": "$\\left(x^{2} - 16 x + 64\\right) \\left(x^{2} + 16 x + 64\\right)$",
+        "C": "$\\left(x^{2} + 128\\right)^{2}$",
+        "D": "$\\left(x^{2} - 128\\right)^{2}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+26244$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(9)^4=(x^2+162)^2-(18x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 18 x + 162\\right) \\left(x^{2} + 18 x + 162\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 18 x + 81\\right) \\left(x^{2} + 18 x + 81\\right)$",
+        "B": "$\\left(x^{2} + 162\\right)^{2}$",
+        "C": "$\\left(x^{2} - 162\\right)^{2}$",
+        "D": "$\\left(x^{2} - 18 x + 162\\right) \\left(x^{2} + 18 x + 162\\right)$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+40000$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(10)^4=(x^2+200)^2-(20x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 20 x + 200\\right) \\left(x^{2} + 20 x + 200\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} + 200\\right)^{2}$",
+        "B": "$\\left(x^{2} - 200\\right)^{2}$",
+        "C": "$\\left(x^{2} - 20 x + 200\\right) \\left(x^{2} + 20 x + 200\\right)$",
+        "D": "$\\left(x^{2} - 20 x + 100\\right) \\left(x^{2} + 20 x + 100\\right)$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x^4+58564$-এর উৎপাদকরূপ কোনটি?",
+      "explanation": "$x^4+4(11)^4=(x^2+242)^2-(22x)^2$; বর্গের অন্তরের সূত্র প্রয়োগ করি। সঠিক উত্তর $\\left(x^{2} - 22 x + 242\\right) \\left(x^{2} + 22 x + 242\\right)$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/factor-fourth/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\left(x^{2} - 242\\right)^{2}$",
+        "B": "$\\left(x^{2} - 22 x + 242\\right) \\left(x^{2} + 22 x + 242\\right)$",
+        "C": "$\\left(x^{2} - 22 x + 121\\right) \\left(x^{2} + 22 x + 121\\right)$",
+        "D": "$\\left(x^{2} + 242\\right)^{2}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+1x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times1+1$। সঠিক উত্তর $11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$10$",
+        "C": "$13$",
+        "D": "$11$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+2x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times2+1$। সঠিক উত্তর $13$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$12$",
+        "B": "$15$",
+        "C": "$13$",
+        "D": "$14$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+3x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times3+1$। সঠিক উত্তর $15$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$15$",
+        "C": "$16$",
+        "D": "$14$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+4x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times4+1$। সঠিক উত্তর $17$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$17$",
+        "B": "$18$",
+        "C": "$16$",
+        "D": "$19$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+5x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times5+1$। সঠিক উত্তর $19$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$18$",
+        "C": "$21$",
+        "D": "$19$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+6x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times6+1$। সঠিক উত্তর $21$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$20$",
+        "B": "$23$",
+        "C": "$21$",
+        "D": "$22$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+7x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times7+1$। সঠিক উত্তর $23$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$23$",
+        "C": "$24$",
+        "D": "$22$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+8x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times8+1$। সঠিক উত্তর $25$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$25$",
+        "B": "$26$",
+        "C": "$24$",
+        "D": "$27$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+9x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times9+1$। সঠিক উত্তর $27$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$28$",
+        "B": "$26$",
+        "C": "$29$",
+        "D": "$27$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+10x+1$-কে $(x-2)$ দ্বারা ভাগ করলে ভাগশেষ কত?",
+      "explanation": "ভাগশেষ উপপাদ্যে ভাগশেষ $P(2)=8+2\\times10+1$। সঠিক উত্তর $29$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-linear/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$28$",
+        "B": "$31$",
+        "C": "$29$",
+        "D": "$30$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+1x^2+2x+1$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+1/4+1+1$। সঠিক উত্তর $\\frac{19}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{27}{8}$",
+        "B": "$\\frac{11}{8}$",
+        "C": "$\\frac{35}{8}$",
+        "D": "$\\frac{19}{8}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+2x^2+2x+2$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+2/4+1+2$। সঠিক উত্তর $\\frac{29}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{21}{8}$",
+        "B": "$\\frac{45}{8}$",
+        "C": "$\\frac{29}{8}$",
+        "D": "$\\frac{37}{8}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+3x^2+2x+3$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+3/4+1+3$। সঠিক উত্তর $\\frac{39}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{55}{8}$",
+        "B": "$\\frac{39}{8}$",
+        "C": "$\\frac{47}{8}$",
+        "D": "$\\frac{31}{8}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+4x^2+2x+4$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+4/4+1+4$। সঠিক উত্তর $\\frac{49}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{49}{8}$",
+        "B": "$\\frac{57}{8}$",
+        "C": "$\\frac{41}{8}$",
+        "D": "$\\frac{65}{8}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+5x^2+2x+5$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+5/4+1+5$। সঠিক উত্তর $\\frac{59}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{67}{8}$",
+        "B": "$\\frac{51}{8}$",
+        "C": "$\\frac{75}{8}$",
+        "D": "$\\frac{59}{8}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+6x^2+2x+6$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+6/4+1+6$। সঠিক উত্তর $\\frac{69}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{61}{8}$",
+        "B": "$\\frac{85}{8}$",
+        "C": "$\\frac{69}{8}$",
+        "D": "$\\frac{77}{8}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+7x^2+2x+7$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+7/4+1+7$। সঠিক উত্তর $\\frac{79}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{95}{8}$",
+        "B": "$\\frac{79}{8}$",
+        "C": "$\\frac{87}{8}$",
+        "D": "$\\frac{71}{8}$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+8x^2+2x+8$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+8/4+1+8$। সঠিক উত্তর $\\frac{89}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{89}{8}$",
+        "B": "$\\frac{97}{8}$",
+        "C": "$\\frac{81}{8}$",
+        "D": "$\\frac{105}{8}$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+9x^2+2x+9$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+9/4+1+9$। সঠিক উত্তর $\\frac{99}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{107}{8}$",
+        "B": "$\\frac{91}{8}$",
+        "C": "$\\frac{115}{8}$",
+        "D": "$\\frac{99}{8}$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$P(x)=x^3+10x^2+2x+10$-কে $(2x-1)$ দ্বারা ভাগ করলে ধ্রুবক ভাগশেষ কত?",
+      "explanation": "$2x-1=0$-এর জন্য $x=1/2$। তাই ভাগশেষ $P(1/2)=1/8+10/4+1+10$। সঠিক উত্তর $\\frac{109}{8}$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/remainder-scaled/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$\\frac{101}{8}$",
+        "B": "$\\frac{125}{8}$",
+        "C": "$\\frac{109}{8}$",
+        "D": "$\\frac{117}{8}$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+2$ যদি $x^2+1x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-2$ বসালে শূন্য হবে। তাই $(2)^2-1(2)+k=0$ থেকে $k=-2$। সঠিক উত্তর $-2$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$0$",
+        "B": "$-2$",
+        "C": "$-1$",
+        "D": "$-3$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+3$ যদি $x^2+2x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-3$ বসালে শূন্য হবে। তাই $(3)^2-2(3)+k=0$ থেকে $k=-3$। সঠিক উত্তর $-3$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-3$",
+        "B": "$-2$",
+        "C": "$-4$",
+        "D": "$-1$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+4$ যদি $x^2+3x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-4$ বসালে শূন্য হবে। তাই $(4)^2-3(4)+k=0$ থেকে $k=-4$। সঠিক উত্তর $-4$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-3$",
+        "B": "$-5$",
+        "C": "$-2$",
+        "D": "$-4$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+5$ যদি $x^2+4x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-5$ বসালে শূন্য হবে। তাই $(5)^2-4(5)+k=0$ থেকে $k=-5$। সঠিক উত্তর $-5$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-6$",
+        "B": "$-3$",
+        "C": "$-5$",
+        "D": "$-4$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+6$ যদি $x^2+5x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-6$ বসালে শূন্য হবে। তাই $(6)^2-5(6)+k=0$ থেকে $k=-6$। সঠিক উত্তর $-6$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/5; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-4$",
+        "B": "$-6$",
+        "C": "$-5$",
+        "D": "$-7$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+7$ যদি $x^2+6x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-7$ বসালে শূন্য হবে। তাই $(7)^2-6(7)+k=0$ থেকে $k=-7$। সঠিক উত্তর $-7$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/6; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-7$",
+        "B": "$-6$",
+        "C": "$-8$",
+        "D": "$-5$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+8$ যদি $x^2+7x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-8$ বসালে শূন্য হবে। তাই $(8)^2-7(8)+k=0$ থেকে $k=-8$। সঠিক উত্তর $-8$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/7; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-7$",
+        "B": "$-9$",
+        "C": "$-6$",
+        "D": "$-8$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+9$ যদি $x^2+8x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-9$ বসালে শূন্য হবে। তাই $(9)^2-8(9)+k=0$ থেকে $k=-9$। সঠিক উত্তর $-9$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/8; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-10$",
+        "B": "$-7$",
+        "C": "$-9$",
+        "D": "$-8$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+10$ যদি $x^2+9x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-10$ বসালে শূন্য হবে। তাই $(10)^2-9(10)+k=0$ থেকে $k=-10$। সঠিক উত্তর $-10$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/9; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-8$",
+        "B": "$-10$",
+        "C": "$-9$",
+        "D": "$-11$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$x+11$ যদি $x^2+10x+k$-এর উৎপাদক হয়, তবে k কত?",
+      "explanation": "$x=-11$ বসালে শূন্য হবে। তাই $(11)^2-10(11)+k=0$ থেকে $k=-11$। সঠিক উত্তর $-11$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/root-parameter/10; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$-11$",
+        "B": "$-10$",
+        "C": "$-12$",
+        "D": "$-9$"
+      },
+      "correct": "A"
+    },
+    {
+      "type": "MCQ",
+      "text": "$(2x+1)^3$ বিস্তৃত করলে $x^2$-এর সহগ কত?",
+      "explanation": "$(u+v)^3=u^3+3u^2v+3uv^2+v^3$। $x^2$-যুক্ত পদ $3(2x)^2(1)=12x^2$। সঠিক উত্তর $12$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-coefficient/1; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$13$",
+        "B": "$11$",
+        "C": "$14$",
+        "D": "$12$"
+      },
+      "correct": "D"
+    },
+    {
+      "type": "MCQ",
+      "text": "$(2x+2)^3$ বিস্তৃত করলে $x^2$-এর সহগ কত?",
+      "explanation": "$(u+v)^3=u^3+3u^2v+3uv^2+v^3$। $x^2$-যুক্ত পদ $3(2x)^2(2)=24x^2$। সঠিক উত্তর $24$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-coefficient/2; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$23$",
+        "B": "$26$",
+        "C": "$24$",
+        "D": "$25$"
+      },
+      "correct": "C"
+    },
+    {
+      "type": "MCQ",
+      "text": "$(2x+3)^3$ বিস্তৃত করলে $x^2$-এর সহগ কত?",
+      "explanation": "$(u+v)^3=u^3+3u^2v+3uv^2+v^3$। $x^2$-যুক্ত পদ $3(2x)^2(3)=36x^2$। সঠিক উত্তর $36$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-coefficient/3; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$38$",
+        "B": "$36$",
+        "C": "$37$",
+        "D": "$35$"
+      },
+      "correct": "B"
+    },
+    {
+      "type": "MCQ",
+      "text": "$(2x+4)^3$ বিস্তৃত করলে $x^2$-এর সহগ কত?",
+      "explanation": "$(u+v)^3=u^3+3u^2v+3uv^2+v^3$। $x^2$-যুক্ত পদ $3(2x)^2(4)=48x^2$। সঠিক উত্তর $48$।",
+      "page": "নিজস্ব অনুশীলনী; Ch3/MCQ/cube-coefficient/4; বোর্ড/বইয়ের অবিকল প্রশ্ন নয়",
+      "difficulty": "MEDIUM",
+      "options": {
+        "A": "$48$",
+        "B": "$49$",
+        "C": "$47$",
+        "D": "$50$"
+      },
+      "correct": "A"
+    }
+  ]
+}

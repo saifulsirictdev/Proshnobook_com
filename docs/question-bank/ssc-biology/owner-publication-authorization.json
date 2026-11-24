@@ -1,0 +1,19 @@
+{
+  "authorized": true,
+  "basis": "Explicit owner request in this Arena conversation to finish Biology questions, deploy, import and approve.",
+  "scope": "SSC Biology chapters 1–14 only; no unrelated subject approvals.",
+  "independentTeacherCertification": false,
+  "gatesStillRequired": [
+    "Scoped immutable release manifest generated, technical/author review complete; independent teacher and semantic review not claimed",
+    "Versioned Drive backup independently verified",
+    "Live figure asset verification before scoped import",
+    "Idempotent pending import followed by separately audited owner approval",
+    "Production readback and model/editor verification"
+  ],
+  "currentAuthoredCanonical": 4480,
+  "remainingCanonical": 0,
+  "importExecuted": false,
+  "approvalExecuted": false,
+  "biologyPublicationVerified": false,
+  "historicalReports": "Earlier generated chapter reviews and batch-plan retain their original no-publication checkpoint state. This separate authorization is not an import/approval receipt."
+}

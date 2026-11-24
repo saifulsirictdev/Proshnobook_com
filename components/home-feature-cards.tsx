@@ -18,7 +18,7 @@ const LINKS = {
   live: "/model-test",
   exam: "/exam",
   tests: "/tests",
-  books: "/books",
+  readyPapers: "/ready-papers",
   tools: "/tools",
 };
 
@@ -133,7 +133,7 @@ const MINIS = [
     cls: "hfc-blue",
     href: LINKS.exam,
     Icon: Zap,
-    title: "AI ইনস্ট্যান্ট এক্সাম",
+    title: "সফটওয়্যার ইনস্ট্যান্ট এক্সাম",
     text: "যেকোনো বিষয়ে সাথে সাথে পরীক্ষা দিন",
     cta: "শুরু করুন",
   },
@@ -147,10 +147,10 @@ const MINIS = [
   },
   {
     cls: "hfc-green",
-    href: LINKS.books,
+    href: LINKS.readyPapers,
     Icon: BookOpen,
-    title: "বইঘর (PDF)",
-    text: "গাইড বই ও লেকচার শিট ডাউনলোড",
+    title: "রেডি প্রশ্নপত্র",
+    text: "PDF থেকে প্রশ্নপত্র তৈরি ও প্রিন্ট",
     cta: "দেখুন",
   },
   {
@@ -168,10 +168,10 @@ export default function HomeFeatureCards({ aiHref }: { aiHref?: string }) {
     <>
       <div className="hfc-bt">
         <Sparkles size={17} />
-        <b>AI দিয়ে</b>
+        <b>সফটওয়্যার দিয়ে</b>
         {aiHref ? <ArrowRight size={14} className="hfc-arr" /> : <span className="hfc-soon">শীঘ্রই</span>}
       </div>
-      <small>AI নতুন প্রশ্ন বানাবে</small>
+      <small>সফটওয়্যার নতুন প্রশ্ন বানাবে</small>
     </>
   );
 

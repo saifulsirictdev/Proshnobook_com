@@ -45,6 +45,9 @@ function starter(examId, branchId, subject, topic = '') {
   const Start = load('components/qb-start.tsx', {
     react: { ...React, useState: () => [states[i++], () => {}], useMemo: fn => fn() },
     'next/navigation': { useRouter: () => ({ push: url => pushed = url }), useSearchParams: () => new URLSearchParams('append=1') },
+    '@/lib/academic-subject-groups': load('lib/academic-subject-groups.ts'),
+    '@/lib/auto-model': load('lib/auto-model.ts', {'./nctb-data':load('lib/nctb-data.ts'),'./subject-model-policy':load('lib/subject-model-policy.ts',{'./nctb-data':load('lib/nctb-data.ts')}),'./question-tables':load('lib/question-tables.ts', {"./ssc-biology-assets":load("lib/ssc-biology-assets.ts")})}),
+    '@/lib/auto-model-syllabus': {autoModelSetupSummary:()=>null},
     '@/lib/nctb-data': { NCTB_CLASSES: [] },
     '@/lib/english/topic-options': { englishLessonOptions: () => ({ topics: [], groups: [], notice: '' }), englishQuestionItemGroups: () => [] },
     '@/lib/english/builder-mode': { englishBuilderContext: () => null, englishBuilderHref: () => null },

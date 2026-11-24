@@ -9,13 +9,14 @@ function load(file) {
   const m = new Module(file, module);
   m.paths = module.paths;
   m.require = (n) =>
+    n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
     n === "server-only"
       ? {}
       : n === "@/lib/wallet"
         ? { teacherTid: () => "TID" }
         : n.startsWith("@/lib/")
           ? load(n.replace("@/", "") + ".ts")
-          : require(n);
+          : (require("./helpers/paper-editing.cjs").dependencies[n] || require(n));
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {

@@ -1,0 +1,137 @@
+{
+  "status": "PASS_FOCUSED_CHECKS_DRAFT_ONLY",
+  "scope": "Class 9 / রসায়ন / ৫ম অধ্যায়: রাসায়নিক বন্ধন",
+  "requested": {
+    "MCQ": 500,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "actual": {
+    "MCQ": 500,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "total": 800,
+  "sliceCounts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "sliceBytes": {
+    "mcq-1.json": 98710,
+    "mcq-2.json": 124769,
+    "mcq-3.json": 127684,
+    "mcq-4.json": 151804,
+    "mcq-5.json": 232436,
+    "cq-1.json": 271200,
+    "cq-2.json": 327932,
+    "sq.json": 125175
+  },
+  "mcqAnswerKeyDistribution": {
+    "A": 125,
+    "B": 125,
+    "C": 125,
+    "D": 125
+  },
+  "focusedTestCommand": "NODE_PATH=$PWD/.cache/chemistry-tools/node_modules node --test tests/ssc-chemistry-ch1.test.cjs tests/ssc-chemistry-ch2.test.cjs tests/ssc-chemistry-ch3.test.cjs tests/ssc-chemistry-ch4.test.cjs tests/ssc-chemistry-ch5.test.cjs tests/question-tables.test.cjs",
+  "focusedTests": {
+    "passed": 60,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "durationMs": 18646.002172
+  },
+  "chapter5Tests": 13,
+  "checks": {
+    "realStrictUploaderAllEightSlices": true,
+    "normalizedStemsUnique": 800,
+    "cqPartMarks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "shortMarks": 2,
+    "invalidScopeDuplicateOptionsAndBadMarksRejected": true,
+    "independentlyCheckedParameterizedMCQKeys": 440,
+    "parameterizedCQChecked": 168,
+    "parameterizedSQChecked": 80,
+    "chargeFormulasParsedAgainstSeparateChargeMap": true,
+    "formulaReductionIonAtomAndScaledChargeCountsChecked": true,
+    "LewisFormulaCompositionGraphDegreeLocalOctetDuetAndDistinctElectronTotalsChecked": true,
+    "all24LewisSVGLineAndDotCountsAndBoundsChecked": true,
+    "propertyInferenceFromDeclaredObservationsNotStoredClassLabel": true,
+    "all24PropertySVGTableValuesChecked": true,
+    "imageBearingRecords": 745,
+    "nativePNGAssets": 17,
+    "originalSVGAssets": 88,
+    "markdownTablesRenderedByExistingQuestionBlocks": 160,
+    "allNativeCropsVisuallyInspectedAfterCorrections": true,
+    "all24LewisFiguresVisuallyInspectedOnTwoContactSheets": true,
+    "additionalModelVariantsVisuallyInspected": [
+      "charge-01",
+      "charge-13",
+      "charge-40",
+      "property-01",
+      "property-02",
+      "property-03",
+      "property-04"
+    ],
+    "all88SVGVariantsIndividuallyVisuallyInspected": false,
+    "finalNativeExerciseIdentities": {
+      "A": "H Z1",
+      "B": "Na Z11; 2,8,1",
+      "D": "Cl Z17",
+      "X": "O Z8",
+      "Y": "Mg Z12; 2,8,2"
+    },
+    "realReactMathTextSSRAllImageRecordsAndTables": true,
+    "exactAllowlistRejectsUnknownOriginsNamesTraversalQueriesAndHTML": true,
+    "standaloneReviewArticles": 800,
+    "standaloneReviewImages": 745,
+    "standaloneReviewHTMLTables": 160,
+    "standaloneReviewRelativeAssetsExist": true,
+    "canonicalFileItemValidationCoordinates": true,
+    "allQuestionAndAssetSHA256sMatchValidation": true,
+    "allFiveChapterGeneratorsCheck": true,
+    "realRegistryBatchCount": 223,
+    "realRegistryRecordCount": 22256,
+    "priorRecordsPreserved": 21456,
+    "chemistryDraftTotalAcrossFiveChapters": 3240,
+    "chemistryAutoModelBlocked": true,
+    "mockedADMINPendingAndReplayChecks": true,
+    "preparedLibraryUpdatedMocksSyntaxCheck": true,
+    "gitDiffCheck": "PASS"
+  },
+  "sourceReading": {
+    "chapterVisuallyInspected": true,
+    "printedPages": "82–108 (27 pages)",
+    "PDFPages": "87–113",
+    "verifiedMapping": "PDF page = printed page +5",
+    "wholeBookRead": false,
+    "testPaperBoardOrYearStampedQuestionsUsed": false,
+    "fabricatedBoardYearAttribution": false,
+    "legacyBoardDOCQuestionsTranscribed": false
+  },
+  "notPerformed": [
+    "Independent teacher certification or official examination-year syllabus/blueprint verification",
+    "Full production build or whole-repository typecheck",
+    "Interactive browser or print-pagination certification",
+    "Expensive prepared-library all-batch consent/save suite; mocks/counts updated and syntax checked, focused real-registry/current-chapter mocked actions used instead",
+    "Actual database import, approval, publication, deployment or model activation"
+  ],
+  "limitations": [
+    "800টি স্বাধীনধারণা বা বোর্ডপ্রশ্ননয়।MCQ:60ধারণা+40আয়নচার্জসাম্য×5+24Lewis×5+24ধর্মছক×5।CQ:32ধারণা+40চার্জসাম্য×3লিখিতprobe+24Lewis+24ধর্মছক।SQ:20ধারণা+40চার্জসাম্য+24Lewis+16ধর্মছক।",
+    "40আয়নক্ষেত্রেরতিনলিখিতকাজ যথাক্রমেসংকেত,দ্বিগুণসূচকভুলপর্যালোচনা ওস্কেলকৃতআয়ন/চার্জগণনা;120স্বাধীনরাসায়নিকবিক্রিয়ানয়।পলিআয়নেরভেতরেসমযোজীসংযোগআলাদাবলাহয়েছে।",
+    "Lewisচিত্রসরলদ্বিমাত্রিকসংযোগমডেল,সবত্রিমাত্রিককোণ/চৌম্বকধর্মনয়।একইশেয়ারকৃতইলেকট্রনমোটযোগেদ্বিগুণগণনানয়।",
+    "ধর্মছক24টিকাল্পনিক;চারসরলবিকল্পেঅনুমান,কোনোবাস্তবশনাক্তকরণনয়।অ্যাসিডেরআয়নগঠন,গ্রাফাইট,নেটওয়ার্কসমযোজী,অদ্রবণীয়লবণ ওদ্রবণীয়নিরপেক্ষঅণুরব্যতিক্রমআছে।",
+    "সবপরমাণু সবসময়অষ্টকমানেনা;H/Heদ্বিত্ব,BF3/গ্যাসীয়BeCl2অপূর্ণতা।যোজনী,যোজ্যতা-ইলেকট্রন,আধান ওজারণসংখ্যাআলাদা;সুপ্তযোজনীকেরিয়ালঅব্যবহৃতবন্ধনবলা হয়নি।",
+    "নিজস্বপাঠ্যবইভিত্তিকঅনুশীলনী;বোর্ড/সাল-চিহ্নিতটেস্টপেপারপ্রশ্নএখানেনেওয়াহয়নি,কোনোমনগড়াবোর্ড/সালনেই।সত্যিদেখাগেলেসংক্ষিপ্তট্যাগ,পরিবর্তনেঅবলম্বনেপ্রয়োজন।",
+    "নিম্নভোল্টেজশিক্ষকনিয়ন্ত্রিততথ্যবিশ্লেষণ;পানিতেমেইনসবিদ্যুৎ,স্পর্শ,চেখেদেখা,গ্যাসশোঁকা বানিজেঅজানাগরমকরানয়।শিক্ষক/পরীক্ষাবর্ষেরমানবণ্টনযাচাইবাকি,কোনোঅনুমোদন/প্রকাশনয়।"
+  ]
+}

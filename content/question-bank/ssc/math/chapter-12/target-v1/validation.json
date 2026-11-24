@@ -1,0 +1,7642 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING",
+  "targetMet": true,
+  "teacherApproved": false,
+  "diagramTeacherApproved": false,
+  "assetsDeployed": false,
+  "assetLiveAvailabilityVerified": false,
+  "targetCounts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "boardCounts": {
+    "MCQ": 2,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 148,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "illustratedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "sourceNativeFigureCount": 0,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "databaseCountVerified": false,
+  "fullChapterTextbookRead": false,
+  "boardSearchExhaustive": false,
+  "source": {
+    "fileName": "3.-Math-Link-Board-142-311_Compressed-1.pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1dbnQgd9Su9CBeId1RV-hShNh8IG_YOJ5/view",
+    "sha256": "ef88ec3c42fa52f407c39f1b978fa0494a695bac7d2b51a7c3921afa49a46111"
+  },
+  "familyCounts": {
+    "MCQ": {
+      "ages": 10,
+      "boat-speed": 10,
+      "coincident-lines": 10,
+      "coins": 10,
+      "digits": 10,
+      "elimination": 10,
+      "fraction-cleared": 10,
+      "negative-coefficient": 10,
+      "parallel-lines": 10,
+      "parameter-unique": 9,
+      "purchase": 10,
+      "rectangle-perimeter": 10,
+      "substitution": 10,
+      "sum-difference": 10,
+      "work-rates": 9
+    },
+    "CQ": {
+      "ages": 5,
+      "coins": 5,
+      "digits": 5,
+      "elimination": 5,
+      "fraction-cleared": 5,
+      "negative-coefficient": 5,
+      "purchase": 5,
+      "rectangle-perimeter": 5,
+      "substitution": 5,
+      "sum-difference": 5
+    },
+    "SQ": {
+      "ages": 5,
+      "boat-speed": 5,
+      "coincident-lines": 5,
+      "coins": 5,
+      "digits": 5,
+      "elimination": 5,
+      "fraction-cleared": 5,
+      "negative-coefficient": 5,
+      "parallel-lines": 5,
+      "parameter-unique": 5,
+      "purchase": 5,
+      "rectangle-perimeter": 5,
+      "substitution": 5,
+      "sum-difference": 5
+    }
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 104350,
+      "sha256": "7e69eb5222e1b1557c62f610faf42c5679eaa796137df436122ad512dfe15846"
+    },
+    {
+      "file": "target-v1/cq.json",
+      "bytes": 73981,
+      "sha256": "7e6b4f5fbff24f172c8aa77fd1d90db27913eb44702a09d723bc4c5f730c8dcc"
+    },
+    {
+      "file": "target-v1/sq.json",
+      "bytes": 48451,
+      "sha256": "57304ec387dc42108acecf7920aba197f88993bee8cee68187ca30960809e468"
+    }
+  ],
+  "assets": [],
+  "itemReviews": [
+    {
+      "origin": "ADAPTED_BOARD_COMPILATION_REDRAWN_OR_ADDED_FIGURE",
+      "family": "board-seed",
+      "variant": 1,
+      "hasDiagram": false,
+      "sourceHadFigure": false,
+      "visualRead": true,
+      "correct": "C",
+      "answerExpression": "-2",
+      "adaptation": "মূল তথ্য ও বিকল্পের ক্রম রেখে গদ্য/যৌথ উদ্দীপক inline; চিত্র নতুন করে অঙ্কিত বা সহায়ক চিত্র যোগ করা। অবিকল scan নয়।",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 1,
+      "questionSha256": "f4e04d5415e2eae703504c70f489e81a112e0c23cf2916b46cb395413bd5b5c9"
+    },
+    {
+      "origin": "ADAPTED_BOARD_COMPILATION_REDRAWN_OR_ADDED_FIGURE",
+      "family": "board-seed",
+      "variant": 2,
+      "hasDiagram": false,
+      "sourceHadFigure": false,
+      "visualRead": true,
+      "correct": "B",
+      "answerExpression": "4",
+      "adaptation": "মূল তথ্য ও বিকল্পের ক্রম রেখে গদ্য/যৌথ উদ্দীপক inline; চিত্র নতুন করে অঙ্কিত বা সহায়ক চিত্র যোগ করা। অবিকল scan নয়।",
+      "file": "target-v1/mcq.json",
+      "itemInFile": 2,
+      "questionSha256": "e1041cac86aab59f5823387a45bd19cfe82cdddcfa0f8927027dcdb5c471f596"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "4",
+        "8",
+        "2",
+        "5"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "26",
+          "24"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 3,
+      "questionSha256": "26a5abd5f7c0890835334cf418e1f26aa231924e298b1ea1099e71f9f816177c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "8",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "16",
+          "18"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 4,
+      "questionSha256": "de5a931e33481235b113bd9be485de3d6a6b473d39f936d8d11680b4dab40b8d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "8",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "6",
+          "14"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 5,
+      "questionSha256": "015ed9fadd6d5ecd7226857027b990e3e3730a34cd41b3abf8a6304965e0b42a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "8",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "14",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 6,
+      "questionSha256": "292bc99be724a471ec3ebd8ada36ff88771aa87dd9abffdd659b656d954c8891"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "5",
+        "4",
+        "8",
+        "2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "16",
+        "4",
+        "32"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 7,
+      "questionSha256": "ad74d0ea2ec8c987d662df1ecde22490696f0ce79549a3576185bbb2b60462b1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "12",
+        "3",
+        "7",
+        "6"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6"
+      },
+      "responseExpressions": [
+        "-30",
+        "6",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 8,
+      "questionSha256": "d0108897cd479e0ecf5c6baabf065d922d4057797c98480409fdfe58a12189ff"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "44/5",
+      "choiceExpressions": [
+        "88/5",
+        "22/5",
+        "49/5",
+        "44/5"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "-9",
+        "44/5",
+        "131/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 9,
+      "questionSha256": "6b75b9c8c0cea96a6b034bf8c862e05afc685468432e346af29728ba56a9ead8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "3/2",
+        "4"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "11",
+        "3",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 10,
+      "questionSha256": "e59bbbe3d11d1b6ce060b35c7abdb9f2bc1001788672ca0b5cf581e4de8c581f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "1",
+        "2",
+        "1/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3",
+        "digitX": "3",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "6",
+        "1",
+        "31"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 11,
+      "questionSha256": "9510fec4e226d1baa917e9dc60084e6ca56fb516444fcdc3d53c8101f8d58b3e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "3",
+        "7",
+        "6",
+        "12"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "18",
+        "6",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 12,
+      "questionSha256": "995d8f207241b74fe7c6412e602693d026f72e3f781f6358b6bdec547f73f060"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "9",
+        "8",
+        "16",
+        "4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "16",
+        "8",
+        "22"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 13,
+      "questionSha256": "89ad41f0d33438c2ce4ea55c3a8a48e8d03858551c7c3b2ca5a53661cfc95e17"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "0",
+        "6",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 14,
+      "questionSha256": "558b9af6d62af724e033323a1635c4f89f1dbf7152ddc2ba54384072f6b50092"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "3/2",
+      "choiceExpressions": [
+        "3",
+        "3/4",
+        "5/2",
+        "3/2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "0",
+        "3/2",
+        "3"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 15,
+      "questionSha256": "916c0125806efb48f13dc4bfe6294355086d33d07d003431b898c29966331ca8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-2",
+        "-1/2",
+        "0",
+        "-1"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 16,
+      "questionSha256": "08e0bc03f9db10ffc274924aa891cec08103fe34c5002dd5163afcf0476cb001"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 1,
+      "hasDiagram": false,
+      "answerExpression": "1/6",
+      "choiceExpressions": [
+        "7/6",
+        "1/6",
+        "1/3",
+        "1/12"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "1/3",
+        "1/6",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 17,
+      "questionSha256": "78fc85f5f90f2cf5b846c42d4bd5977cc4d204f8264ef51cca5f62cd44fd38ed"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "10",
+        "5/2",
+        "6",
+        "5"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "31",
+          "29"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 18,
+      "questionSha256": "0025a9eff702ba1b9be1433ba4cfb502f532a450c884d0bb3412d37f06fa10cd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5/2",
+        "6",
+        "5",
+        "10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "19",
+          "22"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 19,
+      "questionSha256": "1cf9f3114ee9837aa6d7f6522e573490549b4a6b58b64a93ea3e452d61903b62"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5/2",
+        "6",
+        "5",
+        "10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "8",
+          "17"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 20,
+      "questionSha256": "2e273b08b572d89797b6fa43561e453ee64337bb4d4c87e3c0fd9f25e44c81b8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5/2",
+        "6",
+        "5",
+        "10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "17",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 21,
+      "questionSha256": "abe2785d213ef62c405c2fd0824566330657bbabb62da9925cbb2dc677441496"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5",
+        "10",
+        "5/2",
+        "6"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "18",
+        "5",
+        "45"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 22,
+      "questionSha256": "2a95adde8b3e1c04ada14992746bdf0e868be118969e80c95811846a999848a6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7/2",
+        "8",
+        "7",
+        "14"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7"
+      },
+      "responseExpressions": [
+        "-35",
+        "7",
+        "29"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 23,
+      "questionSha256": "54887a9b986d3c22a43401cb8fe14eda21176082998839d2ff5add30bf15e1f4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "52/5",
+      "choiceExpressions": [
+        "26/5",
+        "57/5",
+        "52/5",
+        "104/5"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "-12",
+        "52/5",
+        "148/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 24,
+      "questionSha256": "9fa93f658780175671c0557b90c51bcf9d3954be3b8b6a979554b1d9f3f429a6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "8",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "14",
+        "4",
+        "40"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 25,
+      "questionSha256": "acfc28b404c7b598d858cc518a4e473d5e87a11de55d0ef080aab1c4bb21d047"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "1/2",
+        "0"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4",
+        "digitX": "4",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "8",
+        "1",
+        "41"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 26,
+      "questionSha256": "b32aa3e831a957c0a54d694c0d1eff5dfef2248f4b71deb3aed93c55c4a6e99c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "9",
+        "8",
+        "16",
+        "4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "24",
+        "8",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 27,
+      "questionSha256": "ec6c87b4b4f43d3759610054a1a7d1f95d1b345e5220b0b62ec4f52f95b3fe8a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "10",
+        "20",
+        "5",
+        "11"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "20",
+        "10",
+        "28"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 28,
+      "questionSha256": "02e2cd4721c14a2ff7f37cc7be8554ad4b464d204c592d075efefc1da5fc4a93"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "8",
+        "16",
+        "4",
+        "9"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "0",
+        "8",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 29,
+      "questionSha256": "fb57d524fdd7a09b60d9b6b530642ea7aace0ffbbb02f5a61744b8a8949cceda"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "0",
+        "2",
+        "4"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 30,
+      "questionSha256": "89bfdbe5d1d5eb611272c4597385722e07bce212bb360096cfc6efb613c92514"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-1/2",
+        "0",
+        "-1",
+        "-2"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 31,
+      "questionSha256": "fb794eb678e0eeccdae5355c061c4ac5b624f1efe3151bfb4b88ba362ec2a486"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 2,
+      "hasDiagram": false,
+      "answerExpression": "1/8",
+      "choiceExpressions": [
+        "1/8",
+        "1/4",
+        "1/16",
+        "9/8"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "1/4",
+        "1/8",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 32,
+      "questionSha256": "741dd836c04f81ad1e3a6c0d5f49a69e89afa5a49978594dca73c74a5494f62f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "3",
+        "7",
+        "6",
+        "12"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "36",
+          "34"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 33,
+      "questionSha256": "dc34c9175803c4613d20f40505da8e066d9d80857b155520672b1438e43ab251"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "22",
+          "26"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 34,
+      "questionSha256": "a89f4262bd91ce3342a4de38ed7265c2ae4daa7052159fc475035c519af49d65"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "10",
+          "20"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 35,
+      "questionSha256": "655b5248c931896422415e10c67db3f803d869b419626ef96f439fa2340f1e94"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "20",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 36,
+      "questionSha256": "e24b7c1e787db877338b3efad5f3fbb57ebad35fb92fb049b74f6e637648ec62"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "12",
+        "3",
+        "7",
+        "6"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "20",
+        "6",
+        "60"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 37,
+      "questionSha256": "b227e2f71adb1f5aa78b0a8f6a9787ca58ae07fcb0e0fa977204726ed744ff74"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "9",
+        "8",
+        "16",
+        "4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8"
+      },
+      "responseExpressions": [
+        "-40",
+        "8",
+        "34"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 38,
+      "questionSha256": "7d7d76e79c1d4bd355419850c595cb034a907b7de9a426cfb4e872b495bf521b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "12",
+        "24",
+        "6"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "-15",
+        "12",
+        "33"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 39,
+      "questionSha256": "4b327a33f05df756aa04964de946900683a9d6864f6dc4fe90c58e8092840912"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5/2",
+        "6",
+        "5",
+        "10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "17",
+        "5",
+        "60"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 40,
+      "questionSha256": "d1310785f05e9e4a7813c6e07c5bb5f84e59f3de173cf8e72f838cfb10023243"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "2",
+        "1/2",
+        "0",
+        "1"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5",
+        "digitX": "5",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "10",
+        "1",
+        "51"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 41,
+      "questionSha256": "3a66b6578914ac9311822d0feff6eb313724de1c38a0173292e21048ff7eb5df"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "10",
+        "20",
+        "5",
+        "11"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "30",
+        "10",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 42,
+      "questionSha256": "f7024eefd7a0b5b65825bbbb37eea5c130df1b0dacbf82b9dd187fb7d0e15991"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "24",
+        "12",
+        "34"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 43,
+      "questionSha256": "69a6044029c739040a248d6c5d1e1751f84f687244ea33efe019645e5c10e005"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "20",
+        "5",
+        "11",
+        "10"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "0",
+        "10",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 44,
+      "questionSha256": "8d71de63d28dbb54b7212c8a77bb9e991d165429511c01b9a65f053b009166e2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "5/2",
+      "choiceExpressions": [
+        "7/2",
+        "5/2",
+        "5",
+        "5/4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "0",
+        "5/2",
+        "5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 45,
+      "questionSha256": "18210cd6b40ad40544f30d1a7d630d29ba94f8ac57176a773b2f47b5dde0046e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "0",
+        "-1",
+        "-2",
+        "-1/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 46,
+      "questionSha256": "4491a1c0e2d4bbd15c6ce26ef880c7bd02f07744adc10d793acccd4f71007b5b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 3,
+      "hasDiagram": false,
+      "answerExpression": "1/10",
+      "choiceExpressions": [
+        "1/5",
+        "1/20",
+        "11/10",
+        "1/10"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "1/5",
+        "1/10",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 47,
+      "questionSha256": "53a9b2dbee380ea3a14695adc1ceea8321d5d644e2927157f3ba3c9f084d4d52"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "8",
+        "7",
+        "14",
+        "7/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "41",
+          "39"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 48,
+      "questionSha256": "f9e278ef89adfcbc8ea156dd46953f79661a3137bfd96aca50eb7de539b8cf87"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7",
+        "14",
+        "7/2",
+        "8"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "25",
+          "30"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 49,
+      "questionSha256": "f4525569e2d5fc2195d2c65246c001373260fc23e2919e88fe1d13e7c3292a71"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7",
+        "14",
+        "7/2",
+        "8"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "12",
+          "23"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 50,
+      "questionSha256": "80da49aa7e0d2640d51496eab3da9153554dcc4cd76bf2d804bda5069378eaaf"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7",
+        "14",
+        "7/2",
+        "8"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "23",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 51,
+      "questionSha256": "09ce2203888e58959cdea3aff48b4814521683a452d2b61c150ef73200d8160d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7/2",
+        "8",
+        "7",
+        "14"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "22",
+        "7",
+        "77"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 52,
+      "questionSha256": "abb9968599a44327ca007f0524e2d3c3ef7cc436d46c77466f630cc2d0577852"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9",
+        "18",
+        "9/2",
+        "10"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9"
+      },
+      "responseExpressions": [
+        "-45",
+        "9",
+        "39"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 53,
+      "questionSha256": "48eed0d2c984a9ac251f3e6a2e8a0a4a474fa3a8bc0deb4e1f0f0d6923c11475"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "68/5",
+      "choiceExpressions": [
+        "68/5",
+        "136/5",
+        "34/5",
+        "73/5"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "-18",
+        "68/5",
+        "182/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 54,
+      "questionSha256": "9bfd92ea77d6ff657f26a2f30af0df590d8c959dbbed3de6e3aff8a316800183"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "7",
+        "6",
+        "12",
+        "3"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "20",
+        "6",
+        "84"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 55,
+      "questionSha256": "00b4ab374f8118820591e7d4c68195e252b47b298d6de6a8e315b2bf3926608b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1/2",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6",
+        "digitX": "6",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "12",
+        "1",
+        "61"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 56,
+      "questionSha256": "9880508cc773e266b64393b1ce22c7e2f31f51bdfa8db4cb7b75691cc43a525c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "36",
+        "12",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 57,
+      "questionSha256": "f337dee2c1eadff5be6758dc359073a1343347f7534490a601d2672d2f69e862"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "7",
+        "15",
+        "14",
+        "28"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "28",
+        "14",
+        "40"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 58,
+      "questionSha256": "cb9318692c3e191102c59b0e9775e3b2560e76ef6e8801b3378395ef2152260d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "6",
+        "13",
+        "12",
+        "24"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "0",
+        "12",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 59,
+      "questionSha256": "491c52cb41088dd238588ec7c937941df308927f24e5993fa4c7024f210b17e9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "3",
+      "choiceExpressions": [
+        "3",
+        "6",
+        "3/2",
+        "4"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "0",
+        "3",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 60,
+      "questionSha256": "b1aa277621e85f7333cc2fe86341fc5568909547c971af2f77f5ae53f338ab8c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-1",
+        "-2",
+        "-1/2",
+        "0"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 61,
+      "questionSha256": "8b3e842f01d5758a67c7a8a289c98130cef9f1d1f837d633877b1a30ef0508fa"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 4,
+      "hasDiagram": false,
+      "answerExpression": "1/12",
+      "choiceExpressions": [
+        "1/24",
+        "13/12",
+        "1/12",
+        "1/6"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "1/6",
+        "1/12",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 62,
+      "questionSha256": "d4428f793143af62c200edde4a44603252452d51e0625e4fa80736199f086a87"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "8",
+        "16",
+        "4",
+        "9"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "46",
+          "44"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 63,
+      "questionSha256": "b64e2a7bd85af5f17a24fa7380845c223e18ffca4c7397a2e250f41bd727cb73"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "16",
+        "4",
+        "9",
+        "8"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "28",
+          "34"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 64,
+      "questionSha256": "8ad344cd9c720a8f88d5618d7bf808c01bb97d82fcc9f614506cf0581fcacd3e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "16",
+        "4",
+        "9",
+        "8"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "14",
+          "26"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 65,
+      "questionSha256": "894a2f578d386fee72ff10421de9d04f39c8cfa3e3952a6cd8af8d31cab6e9af"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "16",
+        "4",
+        "9",
+        "8"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "26",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 66,
+      "questionSha256": "eaeac710a5f2b33b16a814ea219aafb809ad2375c14f47e808da5826d6dd1659"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "9",
+        "8",
+        "16",
+        "4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "24",
+        "8",
+        "96"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 67,
+      "questionSha256": "8946ccff58d6a8f32a1a7a7263ec28e7194d1bb2d2af7c35a09d98f8b2ce9bf6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "20",
+        "5",
+        "11",
+        "10"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10"
+      },
+      "responseExpressions": [
+        "-50",
+        "10",
+        "44"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 68,
+      "questionSha256": "fd760a492e5c352f610f44e20e1b8a933da895d74f1889f77215f67b440d1ec2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "76/5",
+      "choiceExpressions": [
+        "152/5",
+        "38/5",
+        "81/5",
+        "76/5"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "-21",
+        "76/5",
+        "199/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 69,
+      "questionSha256": "74e221d0ae952dcebd52d9115b152a022d901043225e6ae9f50ef0ac810c6acc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "7",
+      "choiceExpressions": [
+        "7",
+        "14",
+        "7/2",
+        "8"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "23",
+        "7",
+        "112"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 70,
+      "questionSha256": "0536569f313b914b08b051e4b6af60996fca8ef6bfb92cf7e4fecf63c1029c98"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "0",
+        "1",
+        "2",
+        "1/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7",
+        "digitX": "7",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "14",
+        "1",
+        "71"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 71,
+      "questionSha256": "f7f40b92b1372c70180230c3be5ca27a16593e4d5cbb971323b6359708d3fe7a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "7",
+        "15",
+        "14",
+        "28"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "42",
+        "14",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 72,
+      "questionSha256": "f38685f85c99bf9b529634381fa9f8ee979d4158afb52e73c7bdac2f09d8c426"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "17",
+        "16",
+        "32",
+        "8"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "32",
+        "16",
+        "46"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 73,
+      "questionSha256": "9127f0761073e5e7eb067aa8d9318564e64921fe9bbe727176aef082c89fbb42"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "15",
+        "14",
+        "28",
+        "7"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "0",
+        "14",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 74,
+      "questionSha256": "0f275eba38ea2cef4d552b221fd927af9358ad702fad20163ffaf44f9d26f860"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "7/2",
+      "choiceExpressions": [
+        "7",
+        "7/4",
+        "9/2",
+        "7/2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "0",
+        "7/2",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 75,
+      "questionSha256": "e7c318bcb5fd7b02ad447fa46820dd4a4a0ee14aee0eab7d405bc573a45707dd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-2",
+        "-1/2",
+        "0",
+        "-1"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 76,
+      "questionSha256": "58354cad76c04430217a96e3bc422bff04900c021c96223019725c819f1b4441"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 5,
+      "hasDiagram": false,
+      "answerExpression": "1/14",
+      "choiceExpressions": [
+        "15/14",
+        "1/14",
+        "1/7",
+        "1/28"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "1/7",
+        "1/14",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 77,
+      "questionSha256": "60d6a2b51b75da760dffa859c5f9e3ac825c9830ea21729b2f92ee9369ab618e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "18",
+        "9/2",
+        "10",
+        "9"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "51",
+          "49"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 78,
+      "questionSha256": "38e8357e5e4549ac63f9b8b44b4b1db4b113619f2794b4782ac6072542e2ded5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9/2",
+        "10",
+        "9",
+        "18"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "31",
+          "38"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 79,
+      "questionSha256": "653b3a055b9d182c4c8d3152d4368ea244ed048217aaf4829bd127a8095f48ad"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9/2",
+        "10",
+        "9",
+        "18"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "16",
+          "29"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 80,
+      "questionSha256": "1bcfd8d1126b8ce5a1292ea5d5eea6c8ca1a11b14b16f5fa42e5faa3b01e1343"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9/2",
+        "10",
+        "9",
+        "18"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "29",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 81,
+      "questionSha256": "a0ffd317f9b7b99a4e42c4c2008db5a9c55063c565ff1ddcc638ebee0eccef5e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9",
+        "18",
+        "9/2",
+        "10"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "26",
+        "9",
+        "117"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 82,
+      "questionSha256": "e0558d5543c8f96786dd935f1d6d988e73cd33b962a064d59994a0eaecd717c7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11/2",
+        "12",
+        "11",
+        "22"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11"
+      },
+      "responseExpressions": [
+        "-55",
+        "11",
+        "49"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 83,
+      "questionSha256": "67217bae18b945b3bcc49feab6d4f060ce0e9f470c4e5ebed54a0bb4bee63039"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "84/5",
+      "choiceExpressions": [
+        "42/5",
+        "89/5",
+        "84/5",
+        "168/5"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "-24",
+        "84/5",
+        "216/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 84,
+      "questionSha256": "8e75767ce502d0a35dc0d2638014234ccf7de5fa94af3e3e8ef7b83032707b44"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "8",
+      "choiceExpressions": [
+        "16",
+        "4",
+        "9",
+        "8"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "26",
+        "8",
+        "144"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 85,
+      "questionSha256": "e620db29e2b27961611999c38637c4fe313a8bd371cab99b810257cd3f9a4df0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "1",
+      "choiceExpressions": [
+        "1",
+        "2",
+        "1/2",
+        "0"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8",
+        "digitX": "8",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "16",
+        "1",
+        "81"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 86,
+      "questionSha256": "04b10f216de6e0b82a08cb27d3ea34c0f51b268bfa50003095259aff4e96b9b3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "17",
+        "16",
+        "32",
+        "8"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "48",
+        "16",
+        "16"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 87,
+      "questionSha256": "931e5c5ef1b9df3be220ef4b2953cde74d46f666224bc9c6ff4b75e40846bcba"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "18",
+      "choiceExpressions": [
+        "18",
+        "36",
+        "9",
+        "19"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "36",
+        "18",
+        "52"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 88,
+      "questionSha256": "0555ed863da253250ea09e1931ab60a421b5c7c0e49e7aa3b0a0f198b7195b61"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "16",
+      "choiceExpressions": [
+        "16",
+        "32",
+        "8",
+        "17"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "0",
+        "16",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 89,
+      "questionSha256": "000bb0fe07911be199f65bd9b05a0ec68d32756cd39d4e820ecd6e90273b931c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "4",
+      "choiceExpressions": [
+        "2",
+        "5",
+        "4",
+        "8"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "0",
+        "4",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 90,
+      "questionSha256": "faafd846bd3fc2a92f6f46518619c39d3fffff545c9a47bc0587495d4788b39a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-1/2",
+        "0",
+        "-1",
+        "-2"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 91,
+      "questionSha256": "5b4ee605c14ee6953e336c8b229d22197a188d8ec6f09a1f426106a40758d2af"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 6,
+      "hasDiagram": false,
+      "answerExpression": "1/16",
+      "choiceExpressions": [
+        "1/16",
+        "1/8",
+        "1/32",
+        "17/16"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "1/8",
+        "1/16",
+        "16"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 92,
+      "questionSha256": "af95887c3e643969ab45dcd7349f5d51078ff6872463e04abaa39942b4799359"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "5",
+        "11",
+        "10",
+        "20"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "56",
+          "54"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 93,
+      "questionSha256": "be6dc6b11e571591a27ce39731a1f083328704b5f9a8d1885c278d3591a93043"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "11",
+        "10",
+        "20",
+        "5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "34",
+          "42"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 94,
+      "questionSha256": "ae24a81ed245042d7b73ccc2fcbf3a8096aefc65e1878f49309f58c5e5bb1926"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "11",
+        "10",
+        "20",
+        "5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "18",
+          "32"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 95,
+      "questionSha256": "10e0e3aebbe10a32ed497ed9fe905079c8f93379de6181a2cb1b52b2b6b6f9e8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "11",
+        "10",
+        "20",
+        "5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "32",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 96,
+      "questionSha256": "f42c00d7d358176378d81b7ac49a493251a3f8551fee6fdc8f4c48bac3d39e6f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "20",
+        "5",
+        "11",
+        "10"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "28",
+        "10",
+        "140"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 97,
+      "questionSha256": "79ab3963e443fca09c124a945274d048de08b6992a07ba8281e670564cc98263"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "12",
+        "24",
+        "6"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12"
+      },
+      "responseExpressions": [
+        "-60",
+        "12",
+        "54"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 98,
+      "questionSha256": "db6af03750171fcbbe4ce64939b7e1a45feb482d111312e7658f351dd64719d7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "92/5",
+      "choiceExpressions": [
+        "97/5",
+        "92/5",
+        "184/5",
+        "46/5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "-27",
+        "92/5",
+        "233/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 99,
+      "questionSha256": "2a2c897f19475abfe8e8421923a3c82b79962fa6426225dc70a0843b52eaee1d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "9",
+      "choiceExpressions": [
+        "9/2",
+        "10",
+        "9",
+        "18"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "29",
+        "9",
+        "180"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 100,
+      "questionSha256": "0f42887ec07d328a2f7f273b4691c5857521681471a62e26b063d3f8c1d63e9b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "4",
+        "1",
+        "3",
+        "2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9",
+        "digitX": "3",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "6",
+        "2",
+        "32"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 101,
+      "questionSha256": "617b110a1fbae1218b33544dc89f305528c12657e6bc6942ee33f8058ea4c47c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "18",
+      "choiceExpressions": [
+        "18",
+        "36",
+        "9",
+        "19"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "54",
+        "18",
+        "18"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 102,
+      "questionSha256": "b10225ae6f0d603053af67a587c05f7f87b6fda74da287af4ffeeda1a711e080"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "40",
+        "10",
+        "21",
+        "20"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "40",
+        "20",
+        "58"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 103,
+      "questionSha256": "7544de694354a3b02e00e596146987bb91fde24829aa201eddbd884c6e677e7a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "18",
+      "choiceExpressions": [
+        "36",
+        "9",
+        "19",
+        "18"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "0",
+        "18",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 104,
+      "questionSha256": "d1c7eda5b6252a0bc977cfc34a5531f6218fdcabfc8036dd61ecd4f847e80de7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "9/2",
+      "choiceExpressions": [
+        "11/2",
+        "9/2",
+        "9",
+        "9/4"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "0",
+        "9/2",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 105,
+      "questionSha256": "4ffbba03ba70d17bddc63bec0ed29d104f3eccd3e4452be5375037943683e3c3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "0",
+        "-1",
+        "-2",
+        "-1/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 106,
+      "questionSha256": "e003825b0c79d9e3d6c5b3e0b01507027190f71cab9a1ea0531e1046f1d956a4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 7,
+      "hasDiagram": false,
+      "answerExpression": "1/18",
+      "choiceExpressions": [
+        "1/9",
+        "1/36",
+        "19/18",
+        "1/18"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "1/9",
+        "1/18",
+        "18"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 107,
+      "questionSha256": "880eb021b5fcd9cb5dc1540467a0056835cc13641350736cce0279b860f303e0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "12",
+        "11",
+        "22",
+        "11/2"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "61",
+          "59"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 108,
+      "questionSha256": "a3d68305a2e3d45c8c47930a33df8c27d3b7611f77b88b78f8c074dbdc15784d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11",
+        "22",
+        "11/2",
+        "12"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "37",
+          "46"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 109,
+      "questionSha256": "87b354cdc51488432157e2eba9c006f4bb2c3f252dc5fdd1cf83c37b326019d3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11",
+        "22",
+        "11/2",
+        "12"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "20",
+          "35"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 110,
+      "questionSha256": "41f66953b2ef94e7397bb4949dedc654e1efff88f02ae899015fb37a7d1b4802"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11",
+        "22",
+        "11/2",
+        "12"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "35",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 111,
+      "questionSha256": "b8bf313415e6f90fb077743c9ab55acfd579df0937fe639e1f45e522fa68d453"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11/2",
+        "12",
+        "11",
+        "22"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "30",
+        "11",
+        "165"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 112,
+      "questionSha256": "c2eb893b92cdcd03db7fc32c71aeb2175ca2722a920b16495cdff03276b40234"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "13",
+        "26",
+        "13/2",
+        "14"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13"
+      },
+      "responseExpressions": [
+        "-65",
+        "13",
+        "59"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 113,
+      "questionSha256": "821cda8c90b0ee29e9f6d06c46cf06f3c3879ea205a64c0727e28937dbccd821"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "20",
+        "40",
+        "10",
+        "21"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "-30",
+        "20",
+        "50"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 114,
+      "questionSha256": "2c2826ba76db7a8e0f7cb3f6c67dd27bdbdc201134456e16e7cb1d98d036f438"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "10",
+      "choiceExpressions": [
+        "11",
+        "10",
+        "20",
+        "5"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "32",
+        "10",
+        "220"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 115,
+      "questionSha256": "a42607e69136b6b6aa48359f95d16c0e0215674fdd25d64130c60a2566d4a85a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10",
+        "digitX": "4",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "8",
+        "2",
+        "42"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 116,
+      "questionSha256": "fec2723d1da41e2d3543824136d000a0fc628133a47c8921179e7dbee4341173"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "40",
+        "10",
+        "21",
+        "20"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "60",
+        "20",
+        "20"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 117,
+      "questionSha256": "284ea6a0e5840280b0957ab16de78f60f672769227d2e88c6bcfa1857c68281f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "22",
+      "choiceExpressions": [
+        "11",
+        "23",
+        "22",
+        "44"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "44",
+        "22",
+        "64"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 118,
+      "questionSha256": "56e570ef373e7222145b9a0796d4849d2328615530bd7e59ad0b1f258bee006b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "20",
+      "choiceExpressions": [
+        "10",
+        "21",
+        "20",
+        "40"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "0",
+        "20",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 119,
+      "questionSha256": "2dbe93a0b5f756876896dca92d85dcea70b451d785f7365cbc495cfeec52f6b0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "5",
+      "choiceExpressions": [
+        "5",
+        "10",
+        "5/2",
+        "6"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "0",
+        "5",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 120,
+      "questionSha256": "e2f14584a1075df9c4e7eae1fd6505a69befc91b0bd6484a2e778443696160e7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-1",
+        "-2",
+        "-1/2",
+        "0"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 121,
+      "questionSha256": "2357f18d1800daf5db0dd8e847fa5866950b67130d925b98e3873e0c058a68da"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 8,
+      "hasDiagram": false,
+      "answerExpression": "1/20",
+      "choiceExpressions": [
+        "1/40",
+        "21/20",
+        "1/20",
+        "1/10"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "1/10",
+        "1/20",
+        "20"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 122,
+      "questionSha256": "b6713a7136d99c60eea90d02f5c9ad173baed49373d5b0e008f0a7a58b12d747"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "12",
+        "24",
+        "6",
+        "13"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "66",
+          "64"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 123,
+      "questionSha256": "7cad838da773937e51726008967f36d9131c731a53cb6e25ba9e8742e7884dc5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "40",
+          "50"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 124,
+      "questionSha256": "96c557d5c025b1eb1329266e7fcc374d142203e8c2ba1f66a1f305a8ce1afe23"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "22",
+          "38"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 125,
+      "questionSha256": "81ff5b69f9dc342835af01450f82f84dca5e3790f156f2b433bae8d687bac4a6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "38",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 126,
+      "questionSha256": "721335826256e631eec2b09618e7a15c9e2451cb763f8da6f847cfdcfee13d61"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "13",
+        "12",
+        "24",
+        "6"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "32",
+        "12",
+        "192"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 127,
+      "questionSha256": "ef65975070665fa907272c8831a7e7202d85b0d3f03dd9127804ecdcb57ae9e0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "14",
+      "choiceExpressions": [
+        "28",
+        "7",
+        "15",
+        "14"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14"
+      },
+      "responseExpressions": [
+        "-70",
+        "14",
+        "64"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 128,
+      "questionSha256": "d19c51fcf00e5bcf7400c8e4b358c39ba7e8340b376e6a0316e27ea6f6bd66dd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "108/5",
+      "choiceExpressions": [
+        "216/5",
+        "54/5",
+        "113/5",
+        "108/5"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "-33",
+        "108/5",
+        "267/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 129,
+      "questionSha256": "17d180d1b5273877286645d148756fffa9e8353e523aeca62a03d27f5797a757"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "11",
+      "choiceExpressions": [
+        "11",
+        "22",
+        "11/2",
+        "12"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "35",
+        "11",
+        "264"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 130,
+      "questionSha256": "483aef02d754ad30eb5e5c5630935922f2ad5cde06f3690f951873d17e093286"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11",
+        "digitX": "5",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "10",
+        "2",
+        "52"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 131,
+      "questionSha256": "896f724a6e8475031d08a7fcebda1eb981378c0e8166d56b18545ff0bc810696"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "22",
+      "choiceExpressions": [
+        "11",
+        "23",
+        "22",
+        "44"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "66",
+        "22",
+        "22"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 132,
+      "questionSha256": "64035142d0961d636a7d66ed522fdbe472da859738b3fd8e3daf6ed408107f26"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "25",
+        "24",
+        "48",
+        "12"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "48",
+        "24",
+        "70"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 133,
+      "questionSha256": "6bb2cd8e2ae3c26a9431118a80bf8e3aab4902687a5d50350a84b1f1ad00966e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "22",
+      "choiceExpressions": [
+        "23",
+        "22",
+        "44",
+        "11"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "0",
+        "22",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 134,
+      "questionSha256": "c8fbd21a07952479220227161323144312007094dc58c11360179fe5f92997a5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "11/2",
+      "choiceExpressions": [
+        "11",
+        "11/4",
+        "13/2",
+        "11/2"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "0",
+        "11/2",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 135,
+      "questionSha256": "7dc8fd06a961ba21a54f35ae05dd113d5bfe4d8b4ffb95cb39155fe6889fdff3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "-1",
+      "choiceExpressions": [
+        "-2",
+        "-1/2",
+        "0",
+        "-1"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 136,
+      "questionSha256": "45c156571805862773533c9be8df3b9a4f92c31f80f4f05af93288f200160dc3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "work-rates",
+      "variant": 9,
+      "hasDiagram": false,
+      "answerExpression": "1/22",
+      "choiceExpressions": [
+        "23/22",
+        "1/22",
+        "1/11",
+        "1/44"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "1/11",
+        "1/22",
+        "22"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 137,
+      "questionSha256": "66da4f225ecc6ad71974c2a306d3c3801fd4510cef0a2a00e217ac63764c3505"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "26",
+        "13/2",
+        "14",
+        "13"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "71",
+          "69"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 138,
+      "questionSha256": "03fbaf57a47a3d644d2460d772ccf1f8083996ec9012c7f938ad335e1cda7aa8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "13/2",
+        "14",
+        "13",
+        "26"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "43",
+          "54"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 139,
+      "questionSha256": "1ce0bc641a35e4db4f45aa2d17f463a34e6728cc61fd044b53b1297a98393586"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "13/2",
+        "14",
+        "13",
+        "26"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "24",
+          "41"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 140,
+      "questionSha256": "a076065b286bf42fe8b2d4c516390a980b217ea756fd2fb6cd9c7888074d3edc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "13/2",
+        "14",
+        "13",
+        "26"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "41",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 141,
+      "questionSha256": "b9154472c400cd04345072e5e258fa72805e65e19c63fb9c1496f9c915e376da"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "13",
+      "choiceExpressions": [
+        "13",
+        "26",
+        "13/2",
+        "14"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "34",
+        "13",
+        "221"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 142,
+      "questionSha256": "9b7ad8eed5290fc915c37679db7ba73d5237ec2616e7f0fa80c52912b6f27f53"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "15",
+      "choiceExpressions": [
+        "15/2",
+        "16",
+        "15",
+        "30"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15"
+      },
+      "responseExpressions": [
+        "-75",
+        "15",
+        "69"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 143,
+      "questionSha256": "12ae0b103c3edb1b3725690c0a3eeca043454da86d0ad3817e0b4fe5b5238294"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "116/5",
+      "choiceExpressions": [
+        "58/5",
+        "121/5",
+        "116/5",
+        "232/5"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "-36",
+        "116/5",
+        "284/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 144,
+      "questionSha256": "8982738cff7f263d2a93934824d00267eb96b9c7a90ed84c8930802785ef9d68"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "12",
+      "choiceExpressions": [
+        "24",
+        "6",
+        "13",
+        "12"
+      ],
+      "correct": "D",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "38",
+        "12",
+        "312"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 145,
+      "questionSha256": "162bbd524bbb5dcbca52b7ef387c78dce277b3f128eeef3f05017a00255c5714"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "2",
+      "choiceExpressions": [
+        "2",
+        "4",
+        "1",
+        "3"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12",
+        "digitX": "6",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "12",
+        "2",
+        "62"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 146,
+      "questionSha256": "af949c45336d595e2292cb7802e79c16e0c956e5c88f4c01ea901e4150343e71"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "25",
+        "24",
+        "48",
+        "12"
+      ],
+      "correct": "B",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "72",
+        "24",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 147,
+      "questionSha256": "8538237cc05138e80e541521e24d6fdd2a3eda4f28f1acfa12a7838869e0f65d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "26",
+      "choiceExpressions": [
+        "26",
+        "52",
+        "13",
+        "27"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "52",
+        "26",
+        "76"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 148,
+      "questionSha256": "5f1a53d562ccb20bcd760a45ca3eb6774aec366f6b5e103860e14627165182d7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "24",
+      "choiceExpressions": [
+        "24",
+        "48",
+        "12",
+        "25"
+      ],
+      "correct": "A",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "0",
+        "24",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 149,
+      "questionSha256": "42aa5e459d591021ae6f78ed1689b698773450883ec91acbe33143b9558492e0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 10,
+      "hasDiagram": false,
+      "answerExpression": "6",
+      "choiceExpressions": [
+        "3",
+        "7",
+        "6",
+        "12"
+      ],
+      "correct": "C",
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "0",
+        "6",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/mcq.json",
+      "itemInFile": 150,
+      "questionSha256": "f6731d0e144626030c41fee088adc5101a3e12259b345c9fdbd09b9dba9ff4c7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "26",
+          "24"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 1,
+      "questionSha256": "464311f683d0036155d43d754bb79b8bc12c1b1ac90429c53116b96b68c3053c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "16",
+          "18"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 2,
+      "questionSha256": "1d1a05f50738062930b40bbf2672260ade6c78c6fe508c8259b4b9f14e167794"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "6",
+          "14"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 3,
+      "questionSha256": "d98e77b09c59bae3f2045ea487b7c0301be35d459002a4b27b6ee7b1627cef9d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "14",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "4",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 4,
+      "questionSha256": "6568d9c1609c51118b77775c1542da6a45f54e7c8e6d1a8eaff091bffe93dba9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "16",
+        "4",
+        "32"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 5,
+      "questionSha256": "227bc112e70dd3fc4b6f732d5f149d711484c350ea187f881c4de959c733deca"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "u": "4",
+        "v": "6"
+      },
+      "responseExpressions": [
+        "-30",
+        "6",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 6,
+      "questionSha256": "7d614bf104ec548b52742df5a020e7552c03a7036bf69dd2a102e4736fd40f9e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "-9",
+        "44/5",
+        "131/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 7,
+      "questionSha256": "03118ed18502c3ee81e02a942a649f26d13fecf074784ada0baf1b0f9009ebc5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "11",
+        "3",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 8,
+      "questionSha256": "8a589a58f0f2e866670401413db550fb2bc385d3d82969ac68ac29e171265ffc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3",
+        "digitX": "3",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "6",
+        "1",
+        "31"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 9,
+      "questionSha256": "6ea559ab296ea8b06add60a15fcfc34bde93f0f4132b8119f33f7738c6558a99"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 1,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "3"
+      },
+      "responseExpressions": [
+        "18",
+        "6",
+        "6"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 10,
+      "questionSha256": "d7947c8550a391871087b66a95db2090f9279244f3ae8736a49241665c44d0b8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "31",
+          "29"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 11,
+      "questionSha256": "59b95bebe8d12a608a59e3b0ef2dd50308497b248acc78774ef51c8489d394e4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "19",
+          "22"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 12,
+      "questionSha256": "6ce53d5a3141807e218e91b9dfa625ca825436d5c25f5f321391ae5438f75882"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "8",
+          "17"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 13,
+      "questionSha256": "ca97ed1a7e63cc85ef50edc8f1a4dcfb7cdcfb1e6d1df7048ea5496841f7accc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "17",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "5",
+        "7"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 14,
+      "questionSha256": "8f80c206806e2b8940bc3505c122285446d70ec87ed2ce60e203cd655ee8efb9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "18",
+        "5",
+        "45"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 15,
+      "questionSha256": "2e6b20eae595c47193d41dd34c8af501a07b8195774a7257c3459c917072a89b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "u": "5",
+        "v": "7"
+      },
+      "responseExpressions": [
+        "-35",
+        "7",
+        "29"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 16,
+      "questionSha256": "3ffac95c9b721e6ff7537124e90b0d66a793d1f0dd474c6f237ab8a4a2ed571f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "-12",
+        "52/5",
+        "148/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 17,
+      "questionSha256": "96ceb9f4ad9ba7af081bb8e98677d3c4df88d7ec131779d79b0cf60a99e0a3ce"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "14",
+        "4",
+        "40"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 18,
+      "questionSha256": "534366ac5ad26775c140c4888a6d225d43c69ba069fe2a8e5c32a547bf3efbed"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4",
+        "digitX": "4",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "8",
+        "1",
+        "41"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 19,
+      "questionSha256": "c599ba2ba5c02557ca55bc42ab802a3cc1caa0dcd8b5028b1456dbb02e9f7919"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 2,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "4"
+      },
+      "responseExpressions": [
+        "24",
+        "8",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 20,
+      "questionSha256": "001b85d45ee3bebe70ed6f03a11eb8762adbbb5ed0bf023266b4a27fab9303c9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "36",
+          "34"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 21,
+      "questionSha256": "e8477963cd922bacf0bd05b7437b3cbf17a0bcb07c1b6f2236a6d7b88f7f3e34"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "22",
+          "26"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 22,
+      "questionSha256": "56135a9f5c600ecd7aeb20fc5fd57744a18d38798298ca511bbebe2aabb5da99"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "10",
+          "20"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 23,
+      "questionSha256": "992f083629d01db95a5996482a1d5c0e5d399272a34ebf295f0fb5359763ba92"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "20",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "6",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 24,
+      "questionSha256": "18428d21b660cfaef2f375302caaf113618dab2086669986b69896d59bcfe94e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "20",
+        "6",
+        "60"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 25,
+      "questionSha256": "dddd2ff5b193b2cc9b3db43973b33804dc7e225dfdca231c0cbc36f17f67cef2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "u": "6",
+        "v": "8"
+      },
+      "responseExpressions": [
+        "-40",
+        "8",
+        "34"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 26,
+      "questionSha256": "84441919881bfa89b081bd5103f260e9e6b66575e3ae863a8b001c6aad4029ff"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "-15",
+        "12",
+        "33"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 27,
+      "questionSha256": "7783637459cd2cce0319ace1dcbbae56dd78d1337e8420e01db6b62ec6563291"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "17",
+        "5",
+        "60"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 28,
+      "questionSha256": "19e37033eddb673ec804b4caa80391b128734c44c55d9b376744946005b2b32b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5",
+        "digitX": "5",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "10",
+        "1",
+        "51"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 29,
+      "questionSha256": "6bfb621839fed39a8f4b7587486332744b06c5eb20194eb1b8afbb78de05ed60"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 3,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "5"
+      },
+      "responseExpressions": [
+        "30",
+        "10",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 30,
+      "questionSha256": "dfafbf2b704bf009cc51ec95d3ea13b0e3dbccf1845d735c6174b9a73433f00a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "41",
+          "39"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 31,
+      "questionSha256": "f0399dd9b11e65882aef692793730af41984f8b2b860699119417f71b10d847b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "25",
+          "30"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 32,
+      "questionSha256": "7724a91fc45ed7e7bb8226ef4bc04c19ab17595edbdd22b67f667877a34b3c46"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "12",
+          "23"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 33,
+      "questionSha256": "20f7ba9dad684322af81d2997e393d6e0be1916e1ae6e7ea88f569f8d0370a22"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "23",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "7",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 34,
+      "questionSha256": "575d5402868608bc4e5acbc1a836859927151f24443adc249d7944937ee88e7c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "22",
+        "7",
+        "77"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 35,
+      "questionSha256": "cbac94dd5e4947351aa9d92298a38ce08e9aefb8a092983054fe3f36409805e2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "u": "7",
+        "v": "9"
+      },
+      "responseExpressions": [
+        "-45",
+        "9",
+        "39"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 36,
+      "questionSha256": "1652109f6f4279ac7d0936825216c728ac300ae8e04656a90a2c2d706a4c8922"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "-18",
+        "68/5",
+        "182/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 37,
+      "questionSha256": "4ce6014812eb5d4c080415e4889dde9e537f36d479daa9a43d0ed36f39cbe3b2"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "20",
+        "6",
+        "84"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 38,
+      "questionSha256": "afcacaa05c058240ed0e961d98f2dbb415456277db9d6ab188c6050ab27329c7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6",
+        "digitX": "6",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "12",
+        "1",
+        "61"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 39,
+      "questionSha256": "bad25ed7864de4ce0dc2da4ef98d45d952f69970e2c297ff8f0be135b9095b1d"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 4,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "6"
+      },
+      "responseExpressions": [
+        "36",
+        "12",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 40,
+      "questionSha256": "efafca1972ee383af593f392d22fce89df666bd712bba57427cbefd7530f0c67"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "46",
+          "44"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 41,
+      "questionSha256": "c6610e413578858714c954d412c875f5cab510e8c397841ffa3118a4b8821fea"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "28",
+          "34"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 42,
+      "questionSha256": "f16eedaca78fca0a1a38f41ab9b93ef7c0b40b50fd23d42044e94fd0f9e5bb26"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "14",
+          "26"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 43,
+      "questionSha256": "631061e2d51591c385d89dbb635914199eef3f3c8c5406617813933eae14ed07"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "26",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "8",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 44,
+      "questionSha256": "adbbed778cd0919fa41ac0350de43bddb7b83309cf45d0a77f639ea485996e4a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "24",
+        "8",
+        "96"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 45,
+      "questionSha256": "1edc71b198a238c640a537103c91fe290f304ce90d0950187fcba93979aa5632"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "u": "8",
+        "v": "10"
+      },
+      "responseExpressions": [
+        "-50",
+        "10",
+        "44"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 46,
+      "questionSha256": "ac7df70790e8d1137a2ffe7c875e26be8d81efdcc11a65e4d798781103e0425c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "-21",
+        "76/5",
+        "199/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 47,
+      "questionSha256": "febf8f9f532b69d826d09453979f1e919d043346f549e5bb4db1fcd4a3387cb5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "23",
+        "7",
+        "112"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 48,
+      "questionSha256": "4d0a5e78875d68d8d1db8bf1368d6d7460b9434a489ce8b859db7418b822de9c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7",
+        "digitX": "7",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "14",
+        "1",
+        "71"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 49,
+      "questionSha256": "de98c860e17be98f07279f3a606fc165ebbee87057789ad411f768eb8eff2808"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 5,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "7"
+      },
+      "responseExpressions": [
+        "42",
+        "14",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/cq.json",
+      "itemInFile": 50,
+      "questionSha256": "3460046543e3a7665e6999a9961f09f0c4e35bc19874db7fde2cf3391c8ec2bd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "51",
+          "49"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 1,
+      "questionSha256": "504b040f1e548a1a254d9b00d90570c9013a06e1a45c1a680f56c412e159c0ba"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "31",
+          "38"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 2,
+      "questionSha256": "db4a0c644c6da136beeaeae641a8e94bd4bfbabce6b4de359d5a68082971d21b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "16",
+          "29"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 3,
+      "questionSha256": "5a474cf1c2f50da2408fe03eb1955161f9d4d307614fbf387fd21147d1e4e908"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "29",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "9",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 4,
+      "questionSha256": "5c6926085d0f07969236654056cf0373f0869055c9bdcf9634e5b56f17abd31c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "26",
+        "9",
+        "117"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 5,
+      "questionSha256": "16860b44efe90b4480a200782887dbb1a7a28ae1e6a18a3f2a3db8722ed28f9e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "u": "9",
+        "v": "11"
+      },
+      "responseExpressions": [
+        "-55",
+        "11",
+        "49"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 6,
+      "questionSha256": "c57c29ff9e52267e4c49850958eac44a8a115189e22e72f01f7dcb391fa52b3f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "-24",
+        "84/5",
+        "216/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 7,
+      "questionSha256": "966b7bcacaf07e0ab4442e5cdc43e5d0fea630a501168b125d6e6e84583da946"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "26",
+        "8",
+        "144"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 8,
+      "questionSha256": "315669c0d2b62767db35c2378de88e5b7951ac8c152e94ea11200ac162b2fba6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8",
+        "digitX": "8",
+        "digitY": "1"
+      },
+      "responseExpressions": [
+        "16",
+        "1",
+        "81"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 9,
+      "questionSha256": "b47aa9f115b1eb75dcfdc2fbad04531603708c12cf0dad970f4ad5402a6d014e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "48",
+        "16",
+        "16"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 10,
+      "questionSha256": "d52dff38b99fccd5ed6e392b77f59baef0cb5973b52d7cd5b4b15434ffd2a1f9"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "36",
+        "18",
+        "52"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 11,
+      "questionSha256": "1fab5a7bc96703561578ddf9ddb2b93afe2f74283bdde0af3496646ec04abff1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "0",
+        "16",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 12,
+      "questionSha256": "8d1e2070f4710df6021ab8cc8a39f929a66d41ace2f337fdaa422a0fbe8ccdd3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "0",
+        "4",
+        "8"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 13,
+      "questionSha256": "d90bbe903aa7b0c91087586aeaedca090d14150f22467edcbc353a320e6dac94"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 6,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "8"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 14,
+      "questionSha256": "feb436663490d15ef0934884dc7d4d8a54d7cf8cb1a1fc82a53cb185a6e9c8bc"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "56",
+          "54"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 15,
+      "questionSha256": "5d6e6a847db6c5be6302aec2626f382f632f6f6267eac23e82df4ce53a5ebc64"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "34",
+          "42"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 16,
+      "questionSha256": "220abf8d92aa15cb203e21962e2b922de6743eeb6222d1e80da551ecd9c7078c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "18",
+          "32"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 17,
+      "questionSha256": "785001f19b141287a66d65c70c053f94de88bc940feb19600fad349bcba1257a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "32",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "10",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 18,
+      "questionSha256": "250faaab74974f595a0246fcdfb13cec8fd39a17cd2a6555acd3ee2a6a456311"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "28",
+        "10",
+        "140"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 19,
+      "questionSha256": "a68be8190a5ba199e3cca92358664109eb3ea605c23b65e47542f78b2729d130"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "u": "10",
+        "v": "12"
+      },
+      "responseExpressions": [
+        "-60",
+        "12",
+        "54"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 20,
+      "questionSha256": "2dd51970ce637c20f5f3a4c3f3dfb01b77626f099d75324bd4da22b7d369ad1e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "-27",
+        "92/5",
+        "233/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 21,
+      "questionSha256": "b23cad3364fce391955b37b22cc043a04eb8d72bb05d4854e483a3c58d905de0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "29",
+        "9",
+        "180"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 22,
+      "questionSha256": "fdb0454fa756a92193b8929a6da36c04fc0827e83670d2c1fdf6d2f6d31038a0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9",
+        "digitX": "3",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "6",
+        "2",
+        "32"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 23,
+      "questionSha256": "71f6956616bc683a5d70f1d348a10f4ef38a2105fba51da206607301b1caae44"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "54",
+        "18",
+        "18"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 24,
+      "questionSha256": "c98889b00d74ae91d65bead5b72bbdb85000501c74cd7a070cf77abb9ca42fd3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "40",
+        "20",
+        "58"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 25,
+      "questionSha256": "f36395a7e25cf11467ef9a56b0c038155c9d9d28c10c84458e72251089cd8639"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "0",
+        "18",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 26,
+      "questionSha256": "1fd26db4eda4278f2d315e6ca01d4ed6cc51f132b36cc9f581a2974a73c3ed6e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "0",
+        "9/2",
+        "9"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 27,
+      "questionSha256": "30dd324a97ee9ca842ae6367dc6a424a3b5591dda74c3acfd972e170cedae6d7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 7,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "9"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 28,
+      "questionSha256": "72caea0dc5a4983260ecd25a9cb7c6c40e4cfbcfc781f1fd0733d1bfa63b45a5"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "61",
+          "59"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 29,
+      "questionSha256": "bd8698cc911505375f6675c05fde1e2401df273d3700108c7591d6d9ce80204a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "37",
+          "46"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 30,
+      "questionSha256": "49920d35ac9ca34564a2ae55fd8f9fc4ce5a6bab47fa94d3e8c78671ef9d0bb4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "20",
+          "35"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 31,
+      "questionSha256": "917257d0c960fef3fdf388127879384df098121a674c1393c560e9f359fbb926"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "35",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "11",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 32,
+      "questionSha256": "abf82729007f6c3aaffb3c4e5b4babc808ce5e0fb342aa24659824e8b7a45193"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "30",
+        "11",
+        "165"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 33,
+      "questionSha256": "aa8a3bbe596be884a78ee3d1f53f30b0d29fed6b88854d8745b129bbb75c6fdd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "u": "11",
+        "v": "13"
+      },
+      "responseExpressions": [
+        "-65",
+        "13",
+        "59"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 34,
+      "questionSha256": "435f300093024c5f301df50a1408fe24e0155f00eba4e087827c51497f6cec15"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "-30",
+        "20",
+        "50"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 35,
+      "questionSha256": "eb758414735789b19cb3d04dcdbe265af95473c1516333cc4f3560d2bc2bdd19"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "32",
+        "10",
+        "220"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 36,
+      "questionSha256": "8f1c8053cccbe6c984f6f02eb51df6a360a304b6d8db532d90b15ebdd876c0a1"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10",
+        "digitX": "4",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "8",
+        "2",
+        "42"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 37,
+      "questionSha256": "b7b5808faaeaff7d94805a8068ffd608f1bebfaa6c6eebfc69d52ef51be57086"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "60",
+        "20",
+        "20"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 38,
+      "questionSha256": "99169173d193ed6982e2ac10be579d58f89a949ce36cf32f23a3e423b16f865e"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "44",
+        "22",
+        "64"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 39,
+      "questionSha256": "e1e6e146d8c4e13665756110df25072b324a14581c5938ace4eaa4db4702fd73"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "0",
+        "20",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 40,
+      "questionSha256": "f705727dce267af3eee9377ccd1dcef52fc8a98b5f48de11d95e1b0a69977370"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "0",
+        "5",
+        "10"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 41,
+      "questionSha256": "2936875d172ba79bf08170eb47b97dd6cd057db11421278b444ada3a8a47e7d4"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 8,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "10"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "13"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 42,
+      "questionSha256": "97b5472715a2560c1b71c4ba4aeb04b0a044ce6f22fd42cac5b14d878b57db75"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "66",
+          "64"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 43,
+      "questionSha256": "bbcb5c2ba207fcbf1d912d10bfba91c18768051b7783b410b288ea5e4b42a8c8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "40",
+          "50"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 44,
+      "questionSha256": "7e8ecc6aa9783096734330adb014fce4506889c04a8e967c6418e648a5dced68"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "22",
+          "38"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 45,
+      "questionSha256": "b232faea3cbd74e90bec9df5547171afdaa4a39120ef80c450cecdc36b659800"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "38",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "12",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 46,
+      "questionSha256": "00a57341344da22bccab4a9493d8fcdc9a36652a9460cde4e4000f25f28b6759"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "32",
+        "12",
+        "192"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 47,
+      "questionSha256": "2756ffb6030250184be22a60d013f0c87011a51f0e2df6f4a7e043f32a0d65ef"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "u": "12",
+        "v": "14"
+      },
+      "responseExpressions": [
+        "-70",
+        "14",
+        "64"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 48,
+      "questionSha256": "2679a9bc96a633136da2228aea293f9c19e017994d87553cdca2e5e8257c16f8"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "-33",
+        "108/5",
+        "267/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 49,
+      "questionSha256": "02d210cde850f4fe05ebba167248db87dd45bb076ea6616a614a4b407e351349"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "35",
+        "11",
+        "264"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 50,
+      "questionSha256": "7763c5ce8dadea4ab7261fdd40dc67dfff91e889fcb8e3b6a3ac09420ce3c25a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11",
+        "digitX": "5",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "10",
+        "2",
+        "52"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 51,
+      "questionSha256": "d712d51eba59177811a784ed187380c7e6673c60c6a90a253cf5290d31de8be3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "66",
+        "22",
+        "22"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 52,
+      "questionSha256": "8ace7a445cebd7e33d597b0619a750278c9fa1d5104db518cc06da25661b4e41"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "48",
+        "24",
+        "70"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 53,
+      "questionSha256": "b81472c98dc8fbbf727d0a6d4f6c01fd5b1746d1ed5b3dea188f935677eb83d0"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "0",
+        "22",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 54,
+      "questionSha256": "13a1e497926baea4d1df0b75c2f08d16e02a0feef9dd429b424dd4e6374a7bbf"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "0",
+        "11/2",
+        "11"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 55,
+      "questionSha256": "672a4d367b8c7b8ac91339898c151a4d52744e6d6610dac54f50d52e03a0de9f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 9,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "11"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "14"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 56,
+      "questionSha256": "2edf4b903e9a83926035dfd008bb662537db6e8bbde2f6499a541ae14f8cbd80"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "elimination",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "rhs": [
+          "71",
+          "69"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 57,
+      "questionSha256": "6e78fd6ef15d2d05d885f86d883dc852d4c762787dc8b98587096f9064491d78"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "substitution",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "rhs": [
+          "43",
+          "54"
+        ]
+      },
+      "responseExpressions": [
+        "-5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 58,
+      "questionSha256": "89d22fa23399b31117f80698453eb85f420b40e277da1286ef5c6c0195b60c48"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "negative-coefficient",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "rhs": [
+          "24",
+          "41"
+        ]
+      },
+      "responseExpressions": [
+        "5",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 59,
+      "questionSha256": "50a25aa26ce6465e395685a117503cb1344c6de80d188e2fcbb6d897f1c59bdd"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "fraction-cleared",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15",
+        "A": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "rhs": [
+          "41",
+          "-2"
+        ]
+      },
+      "responseExpressions": [
+        "-3",
+        "13",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 60,
+      "questionSha256": "f546e697c23ac55fd69c9a0a70e5d5ea818d83d9e072a904ebd534cbf94e14f7"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "sum-difference",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "34",
+        "13",
+        "221"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 61,
+      "questionSha256": "8fa96d57659d6034cbdb29fb2eba65fb663eda193058c2c59867ca51ec2bbbe6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "purchase",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "u": "13",
+        "v": "15"
+      },
+      "responseExpressions": [
+        "-75",
+        "15",
+        "69"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 62,
+      "questionSha256": "27e5c65d8b8f24f0242d38bc9b803a883b7ed2a525042f45466fbed2b1a20c1b"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "ages",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "-36",
+        "116/5",
+        "284/5"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 63,
+      "questionSha256": "3c311be0fa1b55db5a3c82a165bcdd58498537565fbdc43e442a52c9a28acec3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "rectangle-perimeter",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "38",
+        "12",
+        "312"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 64,
+      "questionSha256": "d61068a98b16191dc92d0e2ea4120593ed5fa2f503b80260d0adbdb316e2815f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "digits",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12",
+        "digitX": "6",
+        "digitY": "2"
+      },
+      "responseExpressions": [
+        "12",
+        "2",
+        "62"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 65,
+      "questionSha256": "294254d230be830e85ca86232f73b1d82d8a3b01b985388aabd3132a81fdbd5f"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coins",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "72",
+        "24",
+        "24"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 66,
+      "questionSha256": "96e7858e16d612577ff0e1cc0021dc682b5bc822533e1fb16ce577344d78e0a3"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "boat-speed",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "52",
+        "26",
+        "76"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 67,
+      "questionSha256": "5bd9aa636d611642b088330e61022565ae7f0020cbcfbc98a8ac92867266d42a"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parallel-lines",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "0",
+        "24",
+        "0"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 68,
+      "questionSha256": "3998711751278e7d127c3ca34af2f76fda0e7732d9b72ac1232dd783c895e8e6"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "coincident-lines",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "0",
+        "6",
+        "12"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 69,
+      "questionSha256": "39f14a30434a0d61fd09a087a3f70da13760c14d77f3d6eb57bbbeab5e343c1c"
+    },
+    {
+      "origin": "ORIGINAL_PARAMETERISED_PRACTICE_NOT_BOARD_OR_TEXTBOOK",
+      "family": "parameter-unique",
+      "variant": 10,
+      "hasDiagram": false,
+      "exactChecks": [],
+      "modelFacts": {
+        "k": "12"
+      },
+      "responseExpressions": [
+        "1",
+        "-1",
+        "15"
+      ],
+      "modelChapter": 12,
+      "file": "target-v1/sq.json",
+      "itemInFile": 70,
+      "questionSha256": "e927e3c6ac26f0c6d97781e6399a0b1b9f530db2a43e281117f9404d5de0a2be"
+    }
+  ],
+  "limitations": [
+    "Numeric target 270 met; 2 source-adapted MCQ and 268 original parameter variants, not 270 distinct concepts.",
+    "Compilation labels are not independently authenticated official papers. Figures redrawn/added, not facsimiles. Original practice is not board or verbatim NCTB content.",
+    "Full current-edition NCTB chapter not obtained/read; board collection and syllabus coverage not exhaustive. Independent teacher, construction, diagram and proof review pending.",
+    "HTTPS SVG references target bundled versioned public assets. Assets NOT deployed, live image availability unverified. Use offline gallery until deployment and real editor/print checks.",
+    "Exact numeric/coordinate checks do not independently certify every proof step. No real DB import, approval or deployment."
+  ]
+}

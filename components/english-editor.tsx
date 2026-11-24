@@ -1,4 +1,7 @@
 "use client";
+import { englishSubitemText } from "@/lib/english/reference-model";
+import { isEnglishPassageCloze } from "@/lib/english/cloze-layout";
+import { isEnglishSharedTable } from "@/lib/english/shared-table";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { type EnglishDraft, validateEnglishDraft } from "@/lib/english/draft";
@@ -35,6 +38,7 @@ export default function EnglishEditor({
   reviewFirst?: boolean;
   setupFirst?: boolean;
 }) {
+  const referenceModel = initial.selection.grade === 8 && initial.selection.paper === 2;
   const [reviewing, setReviewing] = useState(reviewFirst);
   const [draft, setDraft] = useState(initial),
     [busy, setBusy] = useState(false),
@@ -183,7 +187,7 @@ export default function EnglishEditor({
         </div>
         <p role="status">{message}</p>
         <p>
-          AI-generated draft: প্রশ্ন, passage, grammar ও answer ব্যবহারের আগে নিজে
+          প্রস্তুত খসড়া: প্রশ্ন, passage, grammar ও answer ব্যবহারের আগে নিজে
           যাচাই করুন। English draft আলাদা editor-এ রাখা হয়েছে; বাংলা builder-এর
           layout/settings বদলাবে না।
         </p>
@@ -385,14 +389,14 @@ export default function EnglishEditor({
         <style>{`@media print{@page{size:${draft.layout.paper};margin:${draft.layout.marginTop}px ${draft.layout.marginRight}px ${draft.layout.marginBottom}px ${draft.layout.marginLeft}px}}`}</style>
         <article
           id="paper"
-          className="english-paper"
+          className={`english-paper${referenceModel ? " english-reference-paper" : ""}`}
           style={{
             fontFamily: family,
             fontSize: `${draft.fontSize}pt`,
             textAlign: draft.layout.align,
           }}
         >
-          <HeaderPreview header={draft.header} />
+          <HeaderPreview header={draft.header} referenceModel={referenceModel} />
           {answerMode && <h2>Answer key / sample answers</h2>}
           {result &&
             result.tasks.map((task, index) => {
@@ -436,13 +440,14 @@ export default function EnglishEditor({
                   )}
                   <div className="english-question-heading">
                     <strong>
-                      {task.number}. <RichPaperText text={task.instruction} />
+                      {task.number}. <RichPaperText text={(referenceModel || isEnglishPassageCloze(task) || task.clues?.length) && task.instruction.includes("\n") ? task.instruction.split("\n")[0] : task.instruction} />
                     </strong>
                     <span className="english-mark-formula">
                       {englishMarksLabel(
                         englishBlueprint(
                           draft.selection.grade as EnglishGrade,
                           draft.selection.paper,
+                          draft.selection.modelStyle,
                         ).items.find((i) => i.id === task.id)!,
                       )}
                     </span>
@@ -462,12 +467,13 @@ export default function EnglishEditor({
                       ))}
                     </div>
                   )}
+                  {!answerMode && (referenceModel || isEnglishPassageCloze(task) || !!task.clues?.length) && task.instruction.includes("\n") && <p><RichPaperText text={task.instruction.slice(task.instruction.indexOf("\n")+1)} /></p>}
                   {!answerMode && task.id === "graph" && (
                     <EnglishDataChart table={task.table} />
                   )}
                   {!answerMode && task.table && (
                     <table>
-                      <thead>
+                      {!(referenceModel && task.id === "substitution") && <thead>
                         <tr>
                           {task.table.headers.map((h, i) => (
                             <th key={i}>
@@ -475,7 +481,7 @@ export default function EnglishEditor({
                             </th>
                           ))}
                         </tr>
-                      </thead>
+                      </thead>}
                       <tbody>
                         {task.table.rows.map((row, i) => (
                           <tr key={i}>
@@ -489,11 +495,11 @@ export default function EnglishEditor({
                       </tbody>
                     </table>
                   )}
-                  <ol type="a">
+                  {(answerMode || !(isEnglishPassageCloze(task) || isEnglishSharedTable(task))) && <ol type="a">
                     {task.subitems.map((s, i) => (
                       <li key={i}>
                         <RichPaperText
-                          text={answerMode ? s.answer || "" : s.text}
+                          text={answerMode ? s.answer || "" : englishSubitemText(s.text,i)}
                         />
                         {!answerMode && s.options && (
                           <ol type="i" className="english-options">
@@ -506,7 +512,7 @@ export default function EnglishEditor({
                         )}
                       </li>
                     ))}
-                  </ol>
+                  </ol>}
                   {answerMode && task.answer && (
                     <RichPaperText text={task.answer} />
                   )}

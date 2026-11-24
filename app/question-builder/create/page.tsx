@@ -139,7 +139,7 @@ export default async function CreatePage({
   const items = rows.map((r) => {
     // 🎯 সঠিকভাবে MCQ, SHORT এবং CQ ডিটেক্ট করার লজিক
     let itemType = "MCQ";
-    const opts = (r.options as any) || {};
+    const { _provenance, _authoring, ...opts } = (r.options as any) || {};
 
     if (!r.correct) {
       // যদি অপশনে উদ্দীপক বা ক/খ/গ/ঘ থাকে, তবেই সেটি CQ, অন্যথায় SHORT

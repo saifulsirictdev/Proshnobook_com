@@ -1,0 +1,82 @@
+{
+  "status": "PARTIAL_CHECKPOINT_NOT_TARGET_COMPLETION",
+  "targets": {
+    "11": {
+      "MCQ": 700,
+      "CQ": 200,
+      "SQ": 100
+    },
+    "12": {
+      "MCQ": 350,
+      "CQ": 50,
+      "SQ": 70
+    }
+  },
+  "current": {
+    "11": {
+      "MCQ": 34,
+      "CQ": 7,
+      "SQ": 13
+    },
+    "12": {
+      "MCQ": 35,
+      "CQ": 6,
+      "SQ": 13
+    }
+  },
+  "remaining": {
+    "11": {
+      "MCQ": 666,
+      "CQ": 193,
+      "SQ": 87
+    },
+    "12": {
+      "MCQ": 315,
+      "CQ": 44,
+      "SQ": 57
+    }
+  },
+  "totalCurrent": 108,
+  "totalTarget": 1470,
+  "totalRemaining": 1362,
+  "sourceCount": 18,
+  "authoredCount": 90,
+  "focusedTests": {
+    "passCount": 8,
+    "failCount": 0,
+    "skipCount": 0,
+    "durationMs": 896.677383,
+    "tapSHA256": "6384e1c7ed48b6a9567148875b0456ba4297e248ba94cbb0413026b4e3cd99cc"
+  },
+  "extractor": {
+    "status": "PASS",
+    "sourceAssets": 7,
+    "sourcePDFSHA256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082"
+  },
+  "deterministicSourceDraftReviewCheck": "PASS",
+  "diffCheck": "PASS",
+  "review": {
+    "articles": 108,
+    "embeddedImages": 7,
+    "selfContained": true,
+    "sha256": "483110d78234a938139cf77fecc559133455582c100899f239699b25143fa478"
+  },
+  "visualInspection": "Four native exercise fullpages read; three final source stimulus crops individually reopened.",
+  "authority": {
+    "registered": false,
+    "imported": false,
+    "approved": false,
+    "published": false,
+    "deployed": false,
+    "teacherCertified": false,
+    "officialChemistryBlueprintVerified": false
+  },
+  "notRun": [
+    "Full Next build",
+    "Full TypeScript check",
+    "Full app regression suite",
+    "Browser workflow",
+    "Browser print inspection",
+    "Independent teacher certification"
+  ]
+}

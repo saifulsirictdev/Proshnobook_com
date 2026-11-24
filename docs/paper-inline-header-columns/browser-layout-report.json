@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "default",
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true,
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 3,
+        "pages": 2
+      }
+    },
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "compact",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 1,
+        "pages": 1
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "single",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 2,
+        "pages": 3
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "landscape",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 4,
+        "pages": 5
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "CQ",
+      "layout": "standalone",
+      "geometry": {
+        "problems": [],
+        "blocks": 28,
+        "transitions": 2,
+        "pages": 2
+      }
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "default",
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true,
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 10,
+        "pages": 4
+      }
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "compact",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 3,
+        "pages": 2
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "single",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 5,
+        "pages": 6
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "landscape",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 9,
+        "pages": 10
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 1280,
+      "variant": "MCQ",
+      "layout": "standalone",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 10,
+        "pages": 4
+      }
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "default",
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true,
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 3,
+        "pages": 2
+      }
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "compact",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 1,
+        "pages": 1
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "single",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 2,
+        "pages": 3
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "count": 14,
+      "layout": "landscape",
+      "geometry": {
+        "problems": [],
+        "blocks": 35,
+        "transitions": 4,
+        "pages": 5
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "CQ",
+      "layout": "standalone",
+      "geometry": {
+        "problems": [],
+        "blocks": 28,
+        "transitions": 2,
+        "pages": 2
+      }
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "default",
+      "issues": 0,
+      "imagesLoaded": true,
+      "outerOverflow": false,
+      "print": true,
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 10,
+        "pages": 4
+      }
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "compact",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 3,
+        "pages": 2
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "single",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 5,
+        "pages": 6
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "count": 25,
+      "layout": "landscape",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 9,
+        "pages": 10
+      },
+      "printGeometry": true
+    },
+    {
+      "width": 390,
+      "variant": "MCQ",
+      "layout": "standalone",
+      "geometry": {
+        "problems": [],
+        "blocks": 25,
+        "transitions": 10,
+        "pages": 4
+      }
+    }
+  ],
+  "settingsReload": true,
+  "editedQuotaWarning": true,
+  "fixture": "actual canonical stock; local assets, no DB"
+}

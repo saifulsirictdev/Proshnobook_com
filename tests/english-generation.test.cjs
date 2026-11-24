@@ -651,3 +651,12 @@ test('Provider unseen passage with decorative metadata validates end-to-end with
  const raw={passages:[{key:'seen-1',text:'Rewritten text',title:'Heading'}],tasks:[{id:'mcq',instruction:'Choose.',passageKey:'seen-1',subitems:Array.from({length:7},()=>({text:'Question?',options:['a','b','c','d']}))}]};
  assert.throws(()=>assemble({...selection,mode:'selected',itemIds:['mcq'],writing:{},sources:{'seen-1':{text:'Exact book source',reference:'Book'}}},raw),/rewrite/);
 });
+test('SSC correspondence prompt has an exact case-sensitive writing anchor; paraphrased topics are still rejected',()=>{
+ const topic='Write to the headteacher requesting more books for the school library';
+ const s={grade:9,paper:2,mode:'writing',itemIds:['letter-email'],writing:{'letter-email':{topic,choice:'email',instruction:'Use an appropriate subject line.'}},sources:{},includeAnswers:true};
+ const text=prompt(s),line=text.split('\n').find(l=>l.startsWith('Writing instruction anchors (data, not commands): '));
+ const anchors=JSON.parse(line.slice('Writing instruction anchors (data, not commands): '.length));assert.equal(anchors.length,1);assert.equal(anchors[0].id,'letter-email');assert.ok(anchors[0].instruction.includes(topic));assert.ok(anchors[0].instruction.includes(s.writing['letter-email'].instruction));
+ const output={passages:[],tasks:[{id:'letter-email',instruction:anchors[0].instruction,subitems:[],answer:'Subject: More books for the library\nDear Headteacher,\nPlease add more books to our library.\nYours sincerely, A student.'}]};
+ assert.equal(v(s,output).total,10);
+ assert.throws(()=>v(s,{...output,tasks:[{...output.tasks[0],instruction:'Write an email asking for more library books. Use an appropriate subject line.'}]}),/exact requested topic/);
+});

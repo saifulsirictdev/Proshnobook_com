@@ -1,0 +1,57 @@
+{
+  "status": "NUMERICAL_TARGET_MET_DRAFT_TEACHER_REVIEW_PENDING_NOT_IMPORTED",
+  "chapter": 4,
+  "category": "Class 9",
+  "subject": "গণিত",
+  "topic": "৪র্থ অধ্যায়: সূচক ও লগারিদম",
+  "counts": {
+    "MCQ": 150,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "boardCounts": {
+    "MCQ": 5,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "originalPracticeCounts": {
+    "MCQ": 145,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "teacherApproved": false,
+  "importedCounts": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "files": [
+    {
+      "file": "target-v1/mcq.json",
+      "bytes": 93959,
+      "sha256": "4162c493351dfd6954d2f2521821cfc20808a002842defcea990dfa10f9ed73c"
+    },
+    {
+      "file": "target-v1/written.json",
+      "bytes": 117750,
+      "sha256": "29cbd94236a47e232c5898ba18c9bc3391de0e0990945dfb94695c4aa23e7e09"
+    }
+  ],
+  "validation": {
+    "file": "target-v1/validation.json",
+    "bytes": 136105,
+    "sha256": "75ef65b60510e6cda080da8bae8095c63dea71d69863acb7478f96fdde3e84cf"
+  },
+  "boardSeed": {
+    "file": "board-seed-v1.json",
+    "bytes": 5039,
+    "sha256": "80961c546762ced8a98ae61714e6bcd7d205b82d0f01c1269aacadb430ef7b6e"
+  },
+  "limitations": [
+    "Numeric target met: 5 visually reviewed board-compilation MCQ and 265 original parameterised practice items, not 270 distinct concepts.",
+    "Board/year metadata comes from compilation headers, not independent authentication of official original papers. No source CQ/SQ is claimed.",
+    "Independent teacher review pending. Original questions are not board or verbatim NCTB/internet questions.",
+    "Board-source collection is not exhaustive. The full current-edition NCTB chapter was not obtained/read; source preference was not exhaustively fulfilled.",
+    "Exact answer, domain and rendering checks do not replace independent semantic/teacher review. No database import, approved stock, deployment or live receipt."
+  ]
+}

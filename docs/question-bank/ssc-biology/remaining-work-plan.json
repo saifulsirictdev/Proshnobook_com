@@ -1,0 +1,110 @@
+{
+  "status": "NOT_COMPLETED",
+  "completedCanonicalDraftItems": 4160,
+  "targetCanonicalDraftItems": 4480,
+  "remainingCanonicalItems": 320,
+  "countsAuditedFrom": "progress.json and canonical batch/source-ledger files; recovery and structural tests rerun",
+  "chapters": [
+    {
+      "chapter": 13,
+      "title": "জীবের পরিবেশ",
+      "remaining": {
+        "MCQ": 0,
+        "CQ": 0,
+        "SQ": 0
+      },
+      "source": "https://www.biologybd.com/9t13.html",
+      "sourceRead": {
+        "textChunksRead": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "imagesInspected": false,
+        "officialTextbookEditionVerified": false
+      },
+      "coverageRequired": [
+        "বাস্তুতন্ত্রের জীবজ/জড়/ভৌত উপাদান",
+        "পুকুরের আন্তঃসম্পর্ক",
+        "খাদ্যশৃঙ্খল ও খাদ্যজাল",
+        "পুষ্টিচক্র বনাম একমুখী শক্তিপ্রবাহ",
+        "পুষ্টিস্তর ও শক্তি পিরামিড",
+        "জিনগত/প্রজাতিগত/বাস্তুতান্ত্রিক বৈচিত্র্য",
+        "মিথস্ক্রিয়া",
+        "দূষণ, সংরক্ষণ ও স্থানীয় পর্যবেক্ষণ"
+      ],
+      "editorialWarnings": [
+        "শক্তি পুষ্টির মতো পুনঃচক্রায়িত নয়; তাপকে গাছ আবার সালোকসংশ্লেষণে গ্রহণ করে না।",
+        "১০ শতাংশ স্থানান্তর একটি আনুমানিক শিক্ষণ মডেল; প্রতিটি বাস্তব ক্ষেত্রে ধ্রুবক নয়।",
+        "একটি প্রজাতির পুষ্টিস্তর তার নির্দিষ্ট খাদ্যসম্পর্কের উপর নির্ভরশীল।",
+        "সব বাস্তুতন্ত্রে সূর্য একমাত্র শক্তির উৎস নয়; রাসায়নিক শক্তিনির্ভর ব্যতিক্রম আছে।",
+        "শক্তির পিরামিডের সঙ্গে সংখ্যার/স্থির জৈবভরের পিরামিড গুলিয়ে ফেলা যাবে না।",
+        "জীববৈচিত্র্য মানে শুধু প্রজাতির সংখ্যা নয়; সমবণ্টনও প্রাসঙ্গিক।",
+        "পরজীবী/মৃতজীবী খাদ্যপথকে সর্বক্ষেত্রে অসম্পূর্ণ বা কেঁচোকে অণুজীব বিযোজকের সমার্থক বলা যাবে না।",
+        "পুরোনো জনসংখ্যা, প্রজাতি-সংখ্যা, পেঁচা/ইঁদুরের নির্দিষ্ট হার বা জলবায়ুর নির্বিচার নিশ্চয়তা অনুলিপি নয়।"
+      ],
+      "countTargetMet": true,
+      "authorReviewEvidence": "chapter-13-completion-review.json"
+    },
+    {
+      "chapter": 14,
+      "title": "জীবপ্রযুক্তি",
+      "remaining": {
+        "MCQ": 200,
+        "CQ": 50,
+        "SQ": 70
+      },
+      "source": "https://www.biologybd.com/9t14.html",
+      "sourceRead": {
+        "textChunksRead": [
+          0,
+          1,
+          2
+        ],
+        "imagesInspected": false,
+        "officialTextbookEditionVerified": false
+      },
+      "coverageRequired": [
+        "প্রচলিত ও আধুনিক জীবপ্রযুক্তি",
+        "টোটিপোটেন্সি ও এক্সপ্লান্ট",
+        "জীবাণুমুক্ত আবাদ মাধ্যম",
+        "ক্যালাস/অণুচারা/মূল/অভিযোজন",
+        "উৎপাদন ও সীমাবদ্ধতা",
+        "দাতা জিন/বাহক/রেস্ট্রিকশন/লাইগেজ",
+        "ট্রান্সফরমেশন/নির্বাচন/যাচাই",
+        "কৃষি, চিকিৎসা ও পরিবেশে প্রয়োগ",
+        "জীবনিরাপত্তা ও দাবির প্রমাণ"
+      ],
+      "editorialWarnings": [
+        "সব বিচ্ছিন্ন উদ্ভিদকোষ সর্বাবস্থায় পূর্ণ গাছ তৈরি করে না; genotype, culture ও নিয়ন্ত্রণ গুরুত্বপূর্ণ।",
+        "টিস্যু কালচার নিজে ভাইরাসমুক্ত বা সম্পূর্ণ জিনগত অভিন্নতার নিশ্চয়তা নয়।",
+        "অ্যাগার মূলত মাধ্যম জমাট করে; সেটি সুক্রোজ/খনিজের বিকল্প পুষ্টি নয়।",
+        "রিকম্বিনেন্ট DNA-তে জিন ঢোকানো মানেই কার্যকর প্রকাশ বা নিরাপত্তা নিশ্চিত নয়।",
+        "GMO/ট্রান্সজেনিকের নিয়ন্ত্রক সংজ্ঞা আলাদা হতে পারে; সব প্রাকৃতিক মিউট্যান্টকে নির্বিচারে নিয়ন্ত্রিত GMO বলা নয়।",
+        "জিন প্রকৌশলে অনাকাঙ্ক্ষিত পরিবর্তন কখনো হয় না—এই নিশ্চয়তা গ্রহণযোগ্য নয়।",
+        "বিটাক্যারোটিন প্রোভিটামিন A; কোনো চাল খেলেই সবার প্রয়োজন বা চিকিৎসা নিশ্চিত নয়।",
+        "ইনসুলিন, ইন্টারফেরন, বৃদ্ধিহরমোন বা GM-CSF-কে সব ডায়াবেটিস/ক্যান্সার/AIDS-এর cure বলা যাবে না।",
+        "দূষক ভাঙার জীবপ্রযুক্তি দিয়ে সব ভারী ধাতু ধ্বংস বা সব পরিবেশ সম্পূর্ণ নিরাপদ হয় না।",
+        "অযাচাইকৃত উৎপাদনহার, বাণিজ্যিক অনুমোদন বা প্রাণী-পরীক্ষার সাফল্য অতিরঞ্জিত নয়।"
+      ]
+    }
+  ],
+  "acceptanceBeforeChapterCompletion": [
+    "২০০টি অপ্রতিলিপি MCQ এবং যাচাইযোগ্য উত্তর/ব্যাখ্যা",
+    "৫০টি স্বয়ংসম্পূর্ণ CQ; ক/খ/গ/ঘ-তে ১/২/৩/৪ নম্বর ও পূর্ণ সমাধান",
+    "৭০টি স্বতন্ত্র SQ ও নমুনা উত্তর",
+    "প্রয়োজনীয় মূল চিত্র ও লিখিত সমতুল্য; নিরাপদ অফলাইন reader",
+    "পূর্ববর্তী অধ্যায়ের SHA256 অপরিবর্তিত",
+    "উৎস-লেজার, lexical/structural tests ও সৎ review gates",
+    "পূর্ণ সংস্করণভিত্তিক Drive backup এবং পৃথক remote size/MD5 verification"
+  ],
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "approved": false,
+  "published": false,
+  "websiteImported": false,
+  "note": "Chapter13 now has320 answered canonical drafts and four original attached figures; structural/author evidence is not independent certification. Chapter14 still has no authored questions. No import/approval/deployment executed for this update."
+}

@@ -1,0 +1,50 @@
+name: Owner-authorized SSC Pending import (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: Exact SHA256 from scripts/english/import-ssc-pending.cjs preview
+        required: true
+        type: string
+      acknowledgement:
+        description: Type IMPORT_SSC_9_10_PENDING_ONLY (no approval or overwrite)
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: ssc-paper2-pending-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npx prisma generate
+      - name: Show bounded scope and source-backed draft limitations
+        run: node scripts/english/import-ssc-pending.cjs preview
+      - name: Save missing records as Pending and verify unchanged existing decisions
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SSC_IMPORT_DIGEST: ${{ inputs.digest }}
+          ACKNOWLEDGE_PENDING_ONLY: ${{ inputs.acknowledgement }}
+          SSC_IMPORT_ACTOR: github:${{ github.actor }}:${{ github.run_id }}
+        run: |
+          node scripts/english/import-ssc-pending.cjs save > "$RUNNER_TEMP/ssc-import-receipt.json"
+          cat "$RUNNER_TEMP/ssc-import-receipt.json"
+      - name: Retain credential-free import receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssc-pending-import-${{ github.run_id }}
+          path: ${{ runner.temp }}/ssc-import-receipt.json
+          if-no-files-found: error
+          retention-days: 30

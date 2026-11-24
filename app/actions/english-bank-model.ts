@@ -1,31 +1,33 @@
 "use server";
+import type { EnglishPaper } from "@/lib/english/blueprints";
 import { englishBoardFilterSchema, type EnglishBoardFilter } from "@/lib/english/board-source";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { randomUUID } from "node:crypto";
 import { assembleEnglishItems, englishItemGroups } from "@/lib/english/item-bank";
-import { loadEnglishStock } from "@/lib/english/stock";
+import { loadEnglishStock, englishBookComplete } from "@/lib/english/stock";
 import { englishOwnerPrefix, validateEnglishDraft } from "@/lib/english/draft";
-import { paperHeaderSchema } from "@/lib/paper-header";
-/** Database-only first-paper auto models: no provider, generation quota or source form. */
-export async function prepareEnglishBankModel(grade: number, itemIds?: string[], filter: EnglishBoardFilter = {}) {
+/** Database-only English item/model assembly: no provider, generation quota or source form. */
+export async function prepareEnglishBankModel(grade: number, itemIds?: string[], filter: EnglishBoardFilter = {}, paper: EnglishPaper = 1) {
   const user = (await auth())?.user;
   if (!user?.id || user.role === "STUDENT") return { ok: false as const, error: "আগে শিক্ষক/অনুমোদিত অ্যাকাউন্টে লগইন করুন।" };
-  if (!Number.isInteger(grade) || grade < 6 || grade > 12) return { ok: false as const, error: "শ্রেণি যাচাই করুন।" };
+  if (!Number.isInteger(grade) || grade < 6 || grade > 12 || (paper !== 1 && paper !== 2)) return { ok: false as const, error: "শ্রেণি যাচাই করুন।" };
   const parsedFilter = englishBoardFilterSchema.safeParse(filter);
   if (!parsedFilter.success || ((parsedFilter.data.examYear !== undefined || parsedFilter.data.school !== undefined) && grade !== 9 && grade !== 10)) return { ok: false as const, error: "SSC বোর্ড পরীক্ষার সাল অথবা স্কুলের নাম যাচাই করুন।" };
   try {
     const stock = await loadEnglishStock(grade, (prefix, cursor) => db.setting.findMany({
       where: {key:{startsWith:prefix,...(cursor ? {gt:cursor} : {})}}, orderBy:{key:"asc"}, take:100,
-    }));
-    const assembled = assembleEnglishItems(stock, grade, Math.random, itemIds, parsedFilter.data);
+    }), paper);
+    const compatibleStock = grade === 8 && paper === 2 && !itemIds
+      ? stock.filter(d => d.selection.modelStyle === "class8-reference-v1") : stock;
+    const assembled = assembleEnglishItems(compatibleStock, grade, Math.random, itemIds, parsedFilter.data, paper);
     const chosen = assembled.draft;
-    if (!chosen) return { ok: false as const, error: `এই শ্রেণির প্রশ্নভান্ডারে কিছু অংশ এখনো প্রস্তুত নেই${parsedFilter.data.school ? ` (স্কুল: ${parsedFilter.data.school})` : parsedFilter.data.examYear ? ` (বোর্ড পরীক্ষার সাল: ${parsedFilter.data.examYear})` : ""}। অনুগ্রহ করে পরে আবার চেষ্টা করুন।` };
-    const draft = validateEnglishDraft({ ...chosen, name: `Class ${grade} — ${itemIds ? "Selected Question Items" : "Full Model Test"}`, header: paperHeaderSchema.parse({}), updatedAt: new Date().toISOString() });
+    if (!chosen) return { ok: false as const, reason: "MISSING_APPROVED_ITEMS" as const, databaseOnly: englishBookComplete(stock, grade, paper), missingIds: assembled.missing, reuse: assembled.reuse, error: `এই শ্রেণির প্রশ্নভান্ডারে কিছু অংশ এখনো প্রস্তুত নেই${parsedFilter.data.school ? ` (স্কুল: ${parsedFilter.data.school})` : parsedFilter.data.examYear ? ` (বোর্ড পরীক্ষার সাল: ${parsedFilter.data.examYear})` : ""}। অনুগ্রহ করে পরে আবার চেষ্টা করুন।` };
+    const draft = validateEnglishDraft({ ...chosen, name: `Class ${grade} — ${itemIds ? "Selected Question Items" : "Full Model Test"}`, header: chosen.header, updatedAt: new Date().toISOString() });
     const key = englishOwnerPrefix(user.id) + randomUUID();
     await db.setting.create({ data: { key, value: JSON.stringify(draft) } });
     return { ok: true as const, key };
-  } catch { return { ok: false as const, error: "Database থেকে পূর্ণ মডেল আনা/সেভ করা যায়নি। AI চালানো হয়নি। আমার draft দেখে আবার চেষ্টা করুন।" }; }
+  } catch { return { ok: false as const, reason: "DATABASE_FAILURE" as const, error: "Database থেকে পূর্ণ মডেল আনা/সেভ করা যায়নি। সফটওয়্যার চালানো হয়নি। আমার draft দেখে আবার চেষ্টা করুন।" }; }
 }
 
 /** Options come only from approved, grade-matched reusable stock, not draft candidates. */

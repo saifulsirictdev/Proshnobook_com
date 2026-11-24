@@ -4,6 +4,7 @@ import {
   EnglishProviderError,
   englishProviderMessage,
 } from "@/lib/english/provider-error";
+import { loadEnglishStock, englishBookComplete } from "@/lib/english/stock";
 import { englishSubset, findEnglishBankParts } from "@/lib/english/bank";
 import { validateEnglishOutput } from "@/lib/english/generation";
 import { recoverEnglishTasks } from "@/lib/english/recovery";
@@ -50,6 +51,13 @@ function makeDraft(
     enabled: true,
     value: String(generated.total),
   });
+  if (selection.modelStyle === "class8-reference-v1") {
+    Object.assign(header.fields.institute, {enabled:false, value:""});
+    Object.assign(header.fields.class, {enabled:false});
+    Object.assign(header.fields.subject, {value:"English Second Paper · Model Tests"});
+    Object.assign(header.fields.setCode, {enabled:true, value:"Model Test-05"});
+    Object.assign(header.fields.program, {value:"Final/Annual Examination"});
+  }
   return validateEnglishDraft({
     version: 1,
     name: `English ${selection.grade} — Paper ${selection.paper}`,
@@ -97,11 +105,11 @@ export async function generateEnglishPaper(raw: unknown) {
         error: "আপনার একটি generation চলছে। কিছুক্ষণ অপেক্ষা করুন।",
       };
     }
-    const bank = await findEnglishBankParts(request.selection, async (after) =>
+    const bank = await findEnglishBankParts(request.selection, async (after, prefix) =>
       db.setting.findMany({
         where: {
           key: {
-            startsWith: "english-review:",
+            startsWith: prefix ?? "english-review:",
             ...(after ? { gt: after } : {}),
           },
           value: { contains: '"status":"APPROVED"' },
@@ -122,6 +130,14 @@ export async function generateEnglishPaper(raw: unknown) {
       });
       return { ok: true as const, key };
     }
+    // Re-read after the generation lease, before ANY quota/provider call. This
+    // also closes direct-action and import-between-auto-entry-and-generation paths.
+    const fullBookStock = await loadEnglishStock(request.selection.grade, (prefix, after) =>
+      db.setting.findMany({where: {key: {startsWith: prefix,...(after ? {gt: after} : {})}},
+        orderBy: {key: "asc"},take: 100}), request.selection.paper);
+    if (englishBookComplete(fullBookStock, request.selection.grade, request.selection.paper))
+      return {ok: false as const, databaseOnly: true as const,
+        error: "এই বই/পত্রের পূর্ণ মডেল ডাটাবেজে আছে—সফটওয়্যার বন্ধ। নির্বাচিত পাঠ্যাংশ/লেখার বিষয় বদলান বা প্রশ্ন আইটেম থেকে মডেল নিন।"};
     if (!process.env.DEEPSEEK_API_KEY)
       return {
         ok: false as const,

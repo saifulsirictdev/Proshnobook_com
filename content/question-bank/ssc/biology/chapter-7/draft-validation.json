@@ -1,0 +1,42 @@
+{
+  "chapter": 7,
+  "topic": "৭ম অধ্যায়: গ্যাসীয় বিনিময়",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "targets": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "remaining": {
+    "MCQ": 0,
+    "CQ": 0,
+    "SQ": 0
+  },
+  "targetMet": true,
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "teacherCertified": false,
+  "textbookChapterRead": false,
+  "websiteImported": false,
+  "approved": false,
+  "published": false,
+  "files": {
+    "rebuild-mcq.json": {
+      "bytes": 158056,
+      "sha256": "f9d930d3274d4e2843972ff7860272abe909ee013286b85f9de63b2db812d13f"
+    },
+    "rebuild-cq.json": {
+      "bytes": 125862,
+      "sha256": "cae98f5095ddbff63a74ac79c32d56f90684d002e3ab9ac8c7dfd6bd8c4d86f3"
+    },
+    "rebuild-sq.json": {
+      "bytes": 47831,
+      "sha256": "650aed0d9aa3fece43efc27b2ea860ebf03d0c7d9a1a372ca850ba6ff2eb333f"
+    }
+  }
+}

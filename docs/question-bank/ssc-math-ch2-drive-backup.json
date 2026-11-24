@@ -1,0 +1,32 @@
+{
+  "folderId": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+  "status": "PARTIAL_DRAFT_BACKED_UP_NOT_IMPORTED",
+  "targetCounts": {
+    "MCQ": 300,
+    "CQ": 100,
+    "SQ": 70
+  },
+  "preparedCounts": {
+    "MCQ": 2,
+    "CQ": 2,
+    "SQ": 0
+  },
+  "files": [
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-2/board-seed-v1.json",
+      "driveFileId": "1IKJHWGSuKx2f-9HE1mLUni6O02wUYa8m",
+      "bytes": 8091,
+      "sha256": "411aa602f498ff613c47cfb110ff4a78b3bf026f913a954532b4106eedee6cf2",
+      "driveMd5Checksum": "ef558f56e0c337389f1ea69fe04eca6f",
+      "checksumMatched": true
+    },
+    {
+      "localPath": "content/question-bank/ssc/math/chapter-2/validation.json",
+      "driveFileId": "1qxbJyUxpVChssQLlSODD5P00za3CaFyT",
+      "bytes": 5207,
+      "sha256": "0553264e025be2b063724bb662da7879f94f2c00a2ddd88841d20799098c0e6b",
+      "driveMd5Checksum": "18ec51559e672fff176e11e97de4de40",
+      "checksumMatched": true
+    }
+  ]
+}

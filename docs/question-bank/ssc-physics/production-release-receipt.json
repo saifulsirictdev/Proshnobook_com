@@ -1,0 +1,137 @@
+{
+  "receipt": {
+    "status": "OWNER_APPROVED_PUBLICATION_VERIFIED",
+    "digest": "7b80bf85cb78af28ad0ba74ab060b9e1cacba3846d665607277eddf36d4b10d4",
+    "actor": "vercel-owner-release:1a1f205e20c43a219570abd7a5ec0d21a9f66e68",
+    "createdAt": "2026-11-23T00:47:39.604Z",
+    "insertedPending": 6400,
+    "newlyApproved": 6400,
+    "previouslyApproved": 0,
+    "approvedCanonical": 6400,
+    "counts": {
+      "MCQ": 3500,
+      "CQ": 1640,
+      "SQ": 1260
+    },
+    "chapters": {
+      "1": {
+        "topic": "১ম অধ্যায়: ভৌত রাশি এবং পরিমাপ",
+        "MCQ": 250,
+        "CQ": 100,
+        "SQ": 100
+      },
+      "2": {
+        "topic": "২য় অধ্যায়: গতি",
+        "MCQ": 300,
+        "CQ": 150,
+        "SQ": 100
+      },
+      "3": {
+        "topic": "৩য় অধ্যায়: বল",
+        "MCQ": 200,
+        "CQ": 120,
+        "SQ": 70
+      },
+      "4": {
+        "topic": "৪র্থ অধ্যায়: কাজ, ক্ষমতা ও শক্তি",
+        "MCQ": 350,
+        "CQ": 150,
+        "SQ": 100
+      },
+      "5": {
+        "topic": "৫ম অধ্যায়: পদার্থের অবস্থা ও চাপ",
+        "MCQ": 200,
+        "CQ": 80,
+        "SQ": 50
+      },
+      "6": {
+        "topic": "৬ষ্ঠ অধ্যায়: বস্তুর ওপর তাপের প্রভাব",
+        "MCQ": 250,
+        "CQ": 100,
+        "SQ": 70
+      },
+      "7": {
+        "topic": "৭ম অধ্যায়: তরঙ্গ ও শব্দ",
+        "MCQ": 200,
+        "CQ": 100,
+        "SQ": 70
+      },
+      "8": {
+        "topic": "৮ম অধ্যায়: আলোর প্রতিফলন",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "9": {
+        "topic": "৯ম অধ্যায়: আলোর প্রতিসরণ",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "10": {
+        "topic": "১০ম অধ্যায়: স্থির বিদ্যুৎ",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "11": {
+        "topic": "১১শ অধ্যায়: চল বিদ্যুৎ",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "12": {
+        "topic": "১২শ অধ্যায়: বিদ্যুতের চৌম্বক ক্রিয়া",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "13": {
+        "topic": "১৩শ অধ্যায়: আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রনিক্স",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      },
+      "14": {
+        "topic": "১৪শ অধ্যায়: জীবন বাঁচাতে পদার্থবিজ্ঞান",
+        "MCQ": 250,
+        "CQ": 120,
+        "SQ": 100
+      }
+    },
+    "illustrated": 2205,
+    "liveAssets": {
+      "verified": 2205,
+      "assetsDigest": "b0821dc1f991e402f7736bba6db1578ff8ef50ee6a850b0c8fb26b0232d394c2",
+      "origin": "https://proshnobook.com",
+      "method": "HTTP_GET_CONTENT_TYPE_AND_SHA256"
+    },
+    "approvalBasis": "OWNER_EXPLICIT_APPROVE_AND_DEPLOY; NOT_INDEPENDENT_TEACHER_CERTIFICATION",
+    "teacherCertified": false,
+    "fullTextbookAndSyllabusAlignment": false,
+    "numericVariants": true,
+    "physicsAutoModelEnabled": false
+  },
+  "evidence": {
+    "source": "Vercel production build stdout after committed approval transaction",
+    "eventId": "1795394866239423773693400000",
+    "deploymentId": "dpl_2X564jAWw3eT1h4ma1JnczFJryzu",
+    "projectId": "prj_gJuVKTIvUtieGaJr7mitBHdC05Ze",
+    "commit": "1a1f205e20c43a219570abd7a5ec0d21a9f66e68",
+    "readyState": "READY",
+    "readySubstate": "PROMOTED",
+    "productionAlias": "https://proshnobook.com",
+    "assetDeploymentId": "dpl_8DkUvbKwAykar1Penm2YyN8HBJNq",
+    "productionBuildPassed": true,
+    "productionPaperGenerationTests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "timestampNote": "createdAt is preserved exactly as reported by the production service clock, not inferred as the conversation date.",
+    "defaultProjectBuildCommandVerified": "npm run build",
+    "pullRequest": "https://github.com/saifulsirictdev/Proshnobook_com/pull/23",
+    "pullRequestMerged": false,
+    "fullGithubSecuritySuite": "PASSED",
+    "githubSecurityRun": "https://github.com/saifulsirictdev/Proshnobook_com/actions/runs/45090374661"
+  }
+}

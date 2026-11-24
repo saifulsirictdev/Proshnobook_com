@@ -494,3 +494,18 @@ test("TEACHER interrupted generation checkpoints remain private and pending appr
     else process.env.DEEPSEEK_API_KEY = old;
   }
 });
+
+test('paid English boundary blocks changed writing/source selection when full approved book exists', async () => {
+  const old = process.env.DEEPSEEK_API_KEY;
+  process.env.DEEPSEEK_API_KEY = 'test-only';
+  try {
+    const h = harness(), model = require('../lib/english/data/class6-complete-model.json');
+    const draft = {version:1,name:'Approved book stock',selection:model.selection,output:model.output,
+      header:{},fontSize:12,font:'kalpurush',updatedAt:'2026-11-20T00:00:00.000Z'};
+    h.rows.set('english-review:full-book', JSON.stringify({status:'APPROVED',draft}));
+    const result = await h.actions.generateEnglishPaper({...selection,writing:{paragraph:{topic:'A different topic not in stored stock'}}});
+    assert.equal(result.ok,false);assert.equal(result.databaseOnly,true);assert.match(result.error,/সফটওয়্যার বন্ধ/);
+    assert.equal(h.calls,0);assert.ok(![...h.rows.keys()].some(k=>k.startsWith('englishai:quota:')));
+    assert.ok(![...h.rows.keys()].some(k=>k.startsWith('englishai:lock:')));
+  } finally {if(old===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=old;}
+});

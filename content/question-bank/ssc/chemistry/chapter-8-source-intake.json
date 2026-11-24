@@ -1,0 +1,290 @@
+{
+  "status": "LIMITED_SELECTED_SOURCE_INTAKE_NOT_EXHAUSTIVE",
+  "target": {
+    "MCQ": 200,
+    "CQ": 100,
+    "SQ": 70
+  },
+  "textbook": {
+    "fileId": "17cFTHipiCnU5qB-prqtRRj6YADFdZ091",
+    "fileName": "২০২৬ — রসায়ন.pdf",
+    "sha256": "77a46c425639912215a7f1ef987e1e75e6b94d8618110557df18af6721d67082",
+    "chapterPrintedPages": "168–205",
+    "exercisePageMap": {
+      "203": 208,
+      "204": 209,
+      "205": 210
+    },
+    "fidelity": "Source pixels authoritative. Editable transcripts preserve wording and normalize Unicode math/line wrapping; not byte-verbatim. No source answer keys/marks printed."
+  },
+  "satt": {
+    "mcqURL": "https://sattacademy.com/all-mcq/রসায়ন-ও-শক্তি-40461",
+    "writtenURL": "https://sattacademy.com/all-written/রসায়ন-ও-শক্তি-40461",
+    "chunksRead": {
+      "mcq": [
+        0,
+        1
+      ],
+      "written": [
+        0,
+        1
+      ]
+    },
+    "displayedCounters": {
+      "MCQ": 231,
+      "CQ": 712
+    },
+    "counterCaveat": "Website labels not verified unique complete collected questions; promotional prose gives228+/106+.",
+    "solutionsCopied": false,
+    "restrictionBypassed": false,
+    "researchExhaustive": false
+  },
+  "excluded": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 7,
+      "reason": "Aqueous NaCl concentration unspecified; chlorine vs oxygen at inert anode depends on conditions. Not silently narrowed to concentrated brine."
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 1,
+      "reason": "Printed U-238+n→Ba+Kr+3n has missing daughter mass numbers and does not match the chapter U-235 fission example. Whole CQ quarantined, not silently repaired/recounted."
+    },
+    {
+      "source": "textbook",
+      "location": "printed198 fusion example",
+      "reason": "Printed ²H+¹H→⁴He+¹n does not conserve mass number (3 vs5). Not copied/repaired as a source question. Correct explicitly authored D–T example is separate."
+    },
+    {
+      "source": "satt",
+      "reason": "Image-removed questions excluded pending accessible original; no substitute picture invented. Inconsistent methane equation/enthalpy phase example and malformed nitrogen bond formula not guessed. Overlapping E1>E2/E1≥E2 options not counted."
+    }
+  ],
+  "items": [
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 1,
+      "pdfPage": 208,
+      "printedPage": 203,
+      "text": "বিদ্যুৎ পরিবহনের কৌশলের উপর ভিত্তি করে পরিবাহী কত প্রকার?",
+      "nativeImage": "tb-mcq-1.png",
+      "options": [
+        "এক",
+        "দুই",
+        "তিন",
+        "চার"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 2,
+      "pdfPage": 208,
+      "printedPage": 203,
+      "text": "উদ্দীপকের প্রক্রিয়া লোহার–",
+      "nativeImage": "tb-mcq-2.png",
+      "stimulus": "৩ নং প্রশ্নের সাথে প্রদত্ত চিত্রের আলোকে ২ ও ৩ নং প্রশ্নের উত্তর দাও:",
+      "stimulusImage": "tb-plating-shared.png",
+      "options": [
+        "পরিমাণ বৃদ্ধি করে",
+        "ক্ষয়রোধ করে",
+        "দৃঢ়তা বৃদ্ধি করে",
+        "বিশুদ্ধতা বৃদ্ধি করে"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 3,
+      "pdfPage": 209,
+      "printedPage": 204,
+      "text": "পাশের চিত্রে–\n(i) Ni ক্ষয়প্রাপ্ত হয়\n(ii) Fe অ্যানোড হিসেবে কাজ করে\n(iii) ইলেকট্রনের আদান-প্রদান ঘটে\nনিচের কোনটি সঠিক?",
+      "nativeImage": "tb-mcq-3.png",
+      "stimulusImage": "tb-plating-shared.png",
+      "options": [
+        "i ও ii",
+        "ii ও iii",
+        "i ও iii",
+        "i, ii ও iii"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 4,
+      "pdfPage": 209,
+      "printedPage": 204,
+      "text": "ড্রাই সেলে নিচের কোনটি জারক হিসেবে কাজ করে?",
+      "nativeImage": "tb-mcq-4.png",
+      "options": [
+        "Zn দণ্ড",
+        "MnO₂",
+        "কার্বন দণ্ড",
+        "NH₄⁺"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 5,
+      "pdfPage": 209,
+      "printedPage": 204,
+      "text": "তড়িৎ বিশ্লেষণের মাধ্যমে কোনো ধাতুর উপর অন্য ধাতুর প্রলেপ দেওয়াকে কী বলে?",
+      "nativeImage": "tb-mcq-5.png",
+      "options": [
+        "ভলকানাইজিং",
+        "ধাতু বিশোধন",
+        "গ্যালভানাইজিং",
+        "ইলেকট্রোপ্লেটিং"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "MCQ",
+      "number": 6,
+      "pdfPage": 209,
+      "printedPage": 204,
+      "text": "নিউক্লিয় বিক্রিয়ার সময় নিউক্লিয়াসকে আঘাত করা হয় সাধারণত কোনটি দ্বারা?",
+      "nativeImage": "tb-mcq-6.png",
+      "options": [
+        "প্রোটন",
+        "ইলেকট্রন",
+        "পজিট্রন",
+        "নিউট্রন"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 2,
+      "pdfPage": 210,
+      "printedPage": 205,
+      "text": "",
+      "nativeImage": "tb-cq-2.png",
+      "stimulusImage": "tb-molten-mgcl2.png",
+      "parts": [
+        "ধাতব পরিবাহী কী?",
+        "এসিড মিশ্রিত পানিকে তড়িৎ বিশ্লেষ্য পরিবাহী বলা হয় কেন? ব্যাখ্যা করো।",
+        "পাশের কোষে অ্যানোডে সংঘটিত বিক্রিয়াটি ব্যাখ্যা করো।",
+        "উদ্দীপকে সংঘটিত বিক্রিয়ায় তড়িৎ প্রবাহের প্রয়োজনীয়তার যৌক্তিকতা ব্যাখ্যা দাও।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "CQ",
+      "number": 3,
+      "pdfPage": 210,
+      "printedPage": 205,
+      "text": "(i) তড়িৎ বিশ্লেষণ কোষ    (ii) গ্যালভানিক কোষ",
+      "nativeImage": "tb-cq-3.png",
+      "parts": [
+        "তাপোৎপাদী বিক্রিয়া কাকে বলে?",
+        "পানির তড়িৎ বিশ্লেষণের সময় সামান্য পরিমাণ সালফিউরিক এসিড যোগ করা হয় কেন?",
+        "(i) নং কোষের গঠন ব্যাখ্যা করো।",
+        "(ii) নং কোষের সাহায্যে বিদ্যুৎ উৎপাদনের সম্ভাবনা বিশ্লেষণ করো।"
+      ]
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 1,
+      "pdfPage": 210,
+      "printedPage": 205,
+      "text": "এসিড মিশ্রিত পানিকে তড়িৎ বিশ্লেষ্য পরিবাহী বলা হয় কেন? ব্যাখ্যা করো।",
+      "nativeImage": "tb-sq-1.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 2,
+      "pdfPage": 210,
+      "printedPage": 205,
+      "text": "কপার সালফেট তীব্র তড়িৎ বিশ্লেষ্য পদার্থ কেন? ব্যাখ্যা করো।",
+      "nativeImage": "tb-sq-2.png"
+    },
+    {
+      "source": "textbook",
+      "type": "SQ",
+      "number": 3,
+      "pdfPage": 210,
+      "printedPage": 205,
+      "text": "তড়িৎ রাসায়নিক কোষে লবণ সেতু ব্যবহার করা হয় কেন? ব্যাখ্যা করো।",
+      "nativeImage": "tb-sq-3.png"
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা1",
+      "text": "কোনটি দ্বারা গ্যালভানাইজিং করা হয়?",
+      "options": [
+        "Zn",
+        "Cr",
+        "Ag",
+        "Sn"
+      ],
+      "url": "https://sattacademy.com/mcq/কোনটি-দ্বারা-গ্যালভানাইজিং-করা-হয়",
+      "readFrom": "https://sattacademy.com/all-mcq/রসায়ন-ও-শক্তি-40461",
+      "observedBoard": {
+        "board": "mymensingh",
+        "examYear": 2023,
+        "shortTag": "[ম. বো. ’২৩]",
+        "verification": "Website-displayed attribution only; original exam paper not cross-checked"
+      }
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা7",
+      "text": "1 জুল = কত ক্যালরি?",
+      "options": [
+        "4.18",
+        "4.15",
+        "0.20",
+        "0.24"
+      ],
+      "url": "https://sattacademy.com/mcq/1-জুল-কত-ক্যালরি",
+      "readFrom": "https://sattacademy.com/all-mcq/রসায়ন-ও-শক্তি-40461"
+    },
+    {
+      "source": "satt",
+      "type": "MCQ",
+      "number": "তালিকা9",
+      "text": "রাসায়নিক বিক্রিয়ায় তাপশক্তির পরিবর্তন মূলত কীসের ওপর নির্ভর করে?",
+      "options": [
+        "বিক্রিয়ক সমূহের মোট শক্তির ওপর",
+        "উৎপাদসমূহের মোট শক্তির ওপর",
+        "বিক্রিয়কসমূহ ও উৎপাদসমূহের মোট শক্তির ওপর",
+        "বিক্রিয়কসমূহ ও উৎপাদসমূহের মোট শক্তির পার্থক্যের ওপর"
+      ],
+      "url": "https://sattacademy.com/mcq/রাসায়নিক-বিক্রিয়ায়-তাপশক্তির-পরিবর্তন-মূলত-কীসের-ওপর-নির্ভর-করে",
+      "readFrom": "https://sattacademy.com/all-mcq/রসায়ন-ও-শক্তি-40461"
+    },
+    {
+      "source": "satt",
+      "type": "CQ",
+      "number": "তালিকা৩",
+      "text": "(i) C₂H₆ + 2Cl₂ → C₂H₄Cl₂ + 2HCl\n[C–H, Cl–Cl, C–Cl এবং H–Cl এর বন্ধনশক্তি যথাক্রমে 414 kJ/mol, 244 kJ/mol, 326 kJ/mol এবং 431 kJ/mol]\n(ii) Mg + লঘু H₂SO₄ → MgSO₄ + H₂",
+      "parts": [
+        "প্রমাণ অবস্থায় 1 মোল গ্যাসের আয়তন কত লিটার?",
+        "পাকা কাঁঠাল থেকে গন্ধ কোন উপায়ে পাওয়া যায়? ব্যাখ্যা কর।",
+        "উদ্দীপকের (i) নং বিক্রিয়াটির ΔH এর মান নির্ণয় করেক দেখাও।",
+        "উদ্দীপকের (ii) নং বিক্রিয়ায় Mg এর পরিবর্তে Cu এবং এসিডটি গাঢ় নিলে উৎপাদ পদার্থসমূহের কোন ধরনের পরিবর্তন ঘটবে? সমীকরণসহ বিশ্লেষণ কর।"
+      ],
+      "url": "https://sattacademy.com/all-written/রসায়ন-ও-শক্তি-40461",
+      "observedBoard": {
+        "board": "sylhet",
+        "examYear": 2017,
+        "shortTag": "[সি. বো. ’১৭]",
+        "verification": "Website-displayed attribution only; original exam paper not cross-checked"
+      },
+      "notes": [
+        "Whole four-part CQ retained, including cross-chapter recall subparts; not split into extra questions.",
+        "MathML/chemical typography normalized to single Unicode equation, Greek delta; website typo করেক preserved.",
+        "Linked individual fetch failed; this question was read completely in written-list chunk1, not claimed read from the individual page."
+      ]
+    }
+  ]
+}

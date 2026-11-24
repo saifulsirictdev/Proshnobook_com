@@ -26,8 +26,33 @@ export function cqDivisionGroups(
 export function freshPaperSettings(settings: Record<string, any>) {
   return {
     ...settings,
+    ...(settings.autoModel
+      ? {
+          info: {
+            ...settings.info,
+            marks: "",
+            minutes: "",
+            instr: "",
+            section: "বহুনির্বাচনি অংশ",
+          },
+        }
+      : {}),
+    autoModel: undefined,
     excludedIds: [],
     edits: {},
-    cfg: { ...settings.cfg, divisionFilter: "" },
+    cfg: {
+      ...settings.cfg,
+      ...(settings.autoModel
+        ? {
+            cqAnswer: 0,
+            shortAnswer: 0,
+            mcqAnswer: 0,
+            expectedCQ: 0,
+            expectedSHORT: 0,
+            expectedMCQ: 0,
+          }
+        : {}),
+      divisionFilter: "",
+    },
   };
 }

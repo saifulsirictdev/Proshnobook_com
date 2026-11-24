@@ -1,0 +1,52 @@
+{
+  "status": "ARITHMETIC_AND_COORDINATE_WITNESSES_PASS_NOT_TEACHER_APPROVAL",
+  "chapters": {
+    "7": {
+      "originalMCQ": 147,
+      "adaptedMCQ": 3,
+      "written": 100,
+      "exactWrittenWitnesses": 100,
+      "assetHashAndGeometryChecks": 250,
+      "diagramKinds": {
+        "rhombus": 14,
+        "parallelogram": 27,
+        "sss": 29,
+        "sas": 15,
+        "asa": 15,
+        "right": 15,
+        "isos": 15,
+        "equilateral": 29,
+        "perp-bisector": 22,
+        "bisector": 15,
+        "parallel": 12,
+        "rectangle": 19,
+        "degenerate": 7,
+        "online-perp": 8,
+        "off-perp": 8
+      }
+    },
+    "8": {
+      "originalMCQ": 288,
+      "adaptedMCQ": 12,
+      "written": 230,
+      "exactWrittenWitnesses": 230,
+      "assetHashAndGeometryChecks": 530,
+      "diagramKinds": {
+        "cyclic": 64,
+        "chord": 76,
+        "semicircle": 24,
+        "point-tangent": 13,
+        "external-circles": 23,
+        "tangents": 106,
+        "equal-chords": 52,
+        "central": 49,
+        "same-segment": 25,
+        "tangent-chord": 22,
+        "internal-circles": 22,
+        "equilateral-circle": 22,
+        "concentric": 22,
+        "cyclic-rectangle": 10
+      }
+    }
+  }
+}

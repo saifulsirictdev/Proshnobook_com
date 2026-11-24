@@ -1,6 +1,17 @@
 "use client";
-import { englishFlowBlocks } from "@/lib/english/flow-blocks";
+import { paperFonts } from "@/lib/paper-fonts";
+import { writtenFlowBlocks, type WrittenFlow } from "@/lib/written-flow";
+import {
+  autoModelQuestionMarks,
+  autoModelPartMarks,
+} from "@/lib/auto-model-paper";
+import {
+  englishFlowBlocks,
+  withEnglishPartHeadings,
+} from "@/lib/english/flow-blocks";
 import EnglishGroup from "./english-group";
+import InlineText, { type InlineEditApi } from "./inline-text";
+import { questionProvenanceLabels } from "@/lib/question-provenance";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   paginateContinuous,
@@ -9,6 +20,12 @@ import {
 } from "@/lib/continuous-paper";
 import PaperAnswer from "./paper-answer";
 import HeaderPreview from "./header-preview";
+import DefaultHeaderPreview from "./default-header-preview";
+import {
+  resolveDefaultHeader,
+  usesDefaultHeader,
+  type DefaultHeaderValues,
+} from "@/lib/default-paper-header";
 import { currentHeader } from "@/lib/paper-header";
 import RichPaperText from "./rich-paper-text";
 import {
@@ -23,26 +40,54 @@ import {
   type PaperItem,
   type PaperSettings,
 } from "@/lib/paper-builder";
-function PaperMathText({ text }: { text: string }) {
-  return <RichPaperText text={text} />;
+function PaperMathText({
+  text,
+  inlineImages = false,
+}: {
+  text: string;
+  inlineImages?: boolean;
+}) {
+  if (!inlineImages) return <RichPaperText text={text} />;
+  // Auto-model self-contained diagrams: no HTML/attributes are interpreted.
+  const parts = text.split(/(!\[[^\]\n]*\]\(https:\/\/[^\s)]+\))/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        const image = part.match(/^!\[([^\]\n]*)\]\((https:\/\/[^\s)]+)\)$/);
+        return image && safeImage(image[2]) ? (
+          <img
+            key={i}
+            src={image[2]}
+            alt={image[1] || "প্রশ্নের চিত্র"}
+            referrerPolicy="no-referrer"
+            style={{
+              display: "block",
+              maxWidth: "100%",
+              width: 180,
+              height: "auto",
+              margin: "6px auto",
+            }}
+          />
+        ) : (
+          <RichPaperText key={i} text={part} />
+        );
+      })}
+    </>
+  );
 }
 
 export type PreviewQuestion = {
   q: PaperItem;
   opts: [string, string][];
   ci: number;
+  writtenFlow?: WrittenFlow;
 };
 export type PreviewSection = {
   type: string;
   title: string;
   questions: PreviewQuestion[];
-};
-const families = {
-  kalpurush: '"QmPaperKalpurush", var(--font-en), serif',
-  adorsho: "var(--font-bn), var(--font-en), serif",
-  hind: "var(--qk-body), sans-serif",
-  anek: "var(--qk-head), sans-serif",
-  serif: "var(--font-en), var(--font-bn), serif",
+  instruction?: string;
+  startNumber?: number;
 };
 export default function PaperPreview({
   s,
@@ -54,10 +99,13 @@ export default function PaperPreview({
   title,
   onQuestionAction,
   previewScale = 1,
+  defaultHeaderValues,
+  defaultHeaderEditor,
   mode = "questions",
   sections: originalSections,
   auxiliaryOnly = false,
   readOnly = false,
+  inlineEdit,
 }: {
   onQuestionAction?: (
     id: string,
@@ -66,6 +114,8 @@ export default function PaperPreview({
   sections?: PreviewSection[];
   auxiliaryOnly?: boolean;
   readOnly?: boolean;
+  /** Click-to-edit API; absent in read-only/marketplace previews. */
+  inlineEdit?: InlineEditApi;
   s: PaperSettings;
   questions: PreviewQuestion[];
   type: string;
@@ -74,33 +124,57 @@ export default function PaperPreview({
   onImageSize: (id: string, size: number | undefined) => void;
   title: string;
   previewScale?: number;
+  defaultHeaderValues?: DefaultHeaderValues;
+  /** Only the visible primary paper receives controls; measurement stays static. */
+  defaultHeaderEditor?: React.ReactNode;
   mode?: "questions" | "answers" | "omr";
 }) {
-  const expand = (list:PreviewQuestion[]) => list.flatMap(v=>englishFlowBlocks(v.q).map(q=>({...v,q})));
-  const questions = useMemo(()=>expand(originalQuestions),[originalQuestions]);
-  const sections = useMemo(()=>originalSections?.map(section=>({...section,questions:expand(section.questions)})),[originalSections]);
+  const expand = (list: PreviewQuestion[], kind: string, startNumber = 0) =>
+    writtenFlowBlocks(
+      withEnglishPartHeadings(list).flatMap((v) =>
+        englishFlowBlocks(v.q).map((q) => ({ ...v, q })),
+      ),
+      kind,
+      mode === "questions" && s.cfg.format === "q",
+      startNumber,
+    );
+  const questions = useMemo(
+    () => expand(originalQuestions, type),
+    [originalQuestions, type, mode, s.cfg.format],
+  );
+  const sections = useMemo(
+    () =>
+      originalSections?.map((section) => ({
+        ...section,
+        questions: expand(section.questions, section.type, section.startNumber),
+      })),
+    [originalSections, mode, s.cfg.format],
+  );
   const [flowPages, setFlowPages] = useState<FlowSegment[][]>([]);
   const [pages, setPages] = useState<number[][][]>([]);
   const [oversized, setOversized] = useState(false);
+  const [extrasFor, setExtrasFor] = useState<string | null>(null);
   const [fittedFont, setFittedFont] = useState(s.cfg.fontSize);
   useEffect(() => setFittedFont(s.cfg.fontSize), [s, questions]);
   const measure = useRef<HTMLDivElement>(null);
   const [width, height] = paperContentDimensions(s);
   const cols =
-    s.cfg.orientation === "landscape" ? 1 : mode === "omr"
-      ? 3
-      : mode === "answers" && type === "MCQ"
-        ? 4
-        : type === "MCQ"
-          ? s.cfg.cols
-          : s.cfg.cqColumns;
+    s.cfg.orientation === "landscape"
+      ? 1
+      : mode === "omr"
+        ? 3
+        : mode === "answers" && type === "MCQ"
+          ? 4
+          : type === "MCQ"
+            ? s.cfg.cols
+            : s.cfg.cqColumns;
   const numberToAnswer = Math.min(
-    questions.length,
+    originalQuestions.length,
     (type === "MCQ"
       ? s.cfg.mcqAnswer
       : type === "CQ"
         ? s.cfg.cqAnswer
-        : s.cfg.shortAnswer) || questions.length,
+        : s.cfg.shortAnswer) || originalQuestions.length,
   );
   const legacyHeader = (
     <div className="paper-heading text-center">
@@ -137,67 +211,97 @@ export default function PaperPreview({
       )}
       {s.show.instr && <p className="mb-2 italic">{s.info.instr}</p>}
       {!sections && (
-        <h3 className="font-bold underline">
+        <h3 className="font-bold underline" style={{ whiteSpace: "pre-line" }}>
           {title}
           {mode === "questions" && type === "MCQ"
             ? " (প্রতিটি প্রশ্নের মান ১)"
             : ""}
         </h3>
       )}
-      {mode === "questions" && !sections && (
-        <p className="mb-3 text-right text-[0.85em]">
-          {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
-        </p>
-      )}
-    </div>
-  );
-  const paperHeader = s.header.enabled ? (
-    <div className="paper-heading">
-      <HeaderPreview
-        header={
-          sections
-            ? {
-                ...currentHeader(s),
-                fields: {
-                  ...currentHeader(s).fields,
-                  questionType: {
-                    ...currentHeader(s).fields.questionType,
-                    enabled: false,
-                  },
-                },
-              }
-            : currentHeader(s)
-        }
-        setName={setName}
-        autoSet={s.show.autoSet}
-        sectionTitle={
-          !sections && (mode !== "questions" || type !== "MCQ")
-            ? title
-            : undefined
-        }
-      />
-      {s.show.examinee &&
-        !s.header.fields.studentName.enabled &&
-        !s.header.fields.studentRoll.enabled && (
-          <p className="my-2 text-left">
-            নাম: …………………………… রোল: …………… শাখা: ……………
+      {mode === "questions" &&
+        !sections &&
+        !questions.some((v) => v.q.englishGroup) && (
+          <p className="mb-3 text-right text-[0.85em]">
+            {bn(originalQuestions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর
+            দাও।
           </p>
         )}
-      {s.show.obtained && (
-        <div className="mb-2 border border-black p-2 text-right">
-          প্রাপ্ত নম্বর: ……………
-        </div>
-      )}
-      {mode === "questions" && !sections && (
-        <p className="mb-3 text-right text-[0.85em]">
-          {bn(questions.length)}টির মধ্যে {bn(numberToAnswer)}টির উত্তর দাও।
-        </p>
-      )}
     </div>
-  ) : (
-    legacyHeader
   );
-  const header = (
+  const referenceEnglish = originalQuestions.some(
+    (v) => v.q.englishGroup?.referenceModel,
+  );
+  const resolvedDefaultHeader =
+    defaultHeaderValues ??
+    resolveDefaultHeader(
+      s,
+      (
+        originalSections?.flatMap((part) => part.questions) ?? originalQuestions
+      ).map((v) => v.q),
+    );
+  const paperHeader = (editable: boolean) =>
+    usesDefaultHeader(s) ? (
+      <div className="paper-heading">
+        {editable &&
+        !readOnly &&
+        mode === "questions" &&
+        defaultHeaderEditor ? (
+          defaultHeaderEditor
+        ) : (
+          <DefaultHeaderPreview values={resolvedDefaultHeader} />
+        )}
+      </div>
+    ) : s.header.enabled ? (
+      <div className="paper-heading">
+        <HeaderPreview
+          referenceModel={referenceEnglish}
+          header={
+            sections
+              ? {
+                  ...currentHeader(s),
+                  fields: {
+                    ...currentHeader(s).fields,
+                    questionType: {
+                      ...currentHeader(s).fields.questionType,
+                      enabled: false,
+                    },
+                  },
+                }
+              : currentHeader(s)
+          }
+          setName={setName}
+          autoSet={s.show.autoSet}
+          sectionTitle={
+            !sections && (mode !== "questions" || type !== "MCQ")
+              ? title
+              : undefined
+          }
+        />
+        {s.show.examinee &&
+          !s.header.fields.studentName.enabled &&
+          !s.header.fields.studentRoll.enabled && (
+            <p className="my-2 text-left">
+              নাম: …………………………… রোল: …………… শাখা: ……………
+            </p>
+          )}
+        {s.show.obtained && (
+          <div className="mb-2 border border-black p-2 text-right">
+            প্রাপ্ত নম্বর: ……………
+          </div>
+        )}
+        {mode === "questions" &&
+          !sections &&
+          !questions.some((v) => v.q.englishGroup) && (
+            <p className="mb-3 text-right text-[0.85em]">
+              {bn(originalQuestions.length)}টির মধ্যে {bn(numberToAnswer)}টির
+              উত্তর দাও।
+            </p>
+          )}
+      </div>
+    ) : (
+      legacyHeader
+    );
+  const header = (editable = false) => (
     <>
       {s.show.logo && safeLogo(s.info.logo) && (
         <img
@@ -214,13 +318,35 @@ export default function PaperPreview({
       {s.show.instructor && (
         <p className="mb-2 text-center">{s.info.instructor}</p>
       )}
-      {paperHeader}
+      {paperHeader(editable)}
     </>
   );
-  function question(v: PreviewQuestion, index: number, typeOverride = type) {
+  function question(
+    v: PreviewQuestion,
+    index: number,
+    typeOverride = type,
+    startsColumn = false,
+  ) {
     const type = typeOverride;
-    const { q, opts, ci } = v;
-    if (q.englishGroup) return <EnglishGroup q={q} s={s} questions={mode === "questions" && s.cfg.format !== "ans"} answers={mode === "answers" || s.cfg.format === "qa" || s.cfg.format === "ans" || s.cfg.format === "sug"}/>;
+    const { q, opts, ci, writtenFlow: flow } = v;
+    const first = !flow || flow.first,
+      last = !flow || flow.last;
+    if (flow) index = flow.questionIndex;
+    if (q.englishGroup)
+      return (
+        <EnglishGroup
+          q={q}
+          s={s}
+          inline={inlineEdit}
+          questions={mode === "questions" && s.cfg.format !== "ans"}
+          answers={
+            mode === "answers" ||
+            s.cfg.format === "qa" ||
+            s.cfg.format === "ans" ||
+            s.cfg.format === "sug"
+          }
+        />
+      );
     if (mode !== "questions")
       return (
         <div
@@ -246,15 +372,22 @@ export default function PaperPreview({
         </div>
       );
 
-    const attachment = s.attachments[q.id];
+    const baseId = q.id.split(":flow:")[0];
+    const attachment = s.attachments[baseId] || s.attachments[q.id];
     const image = safeImage(attachment?.image || "");
     const marked = s.cfg.format === "qa" || s.cfg.format === "sug";
     return (
       <div
+        data-question-id={q.id}
+        data-question-fragment={flow?.partIndex ?? 0}
+        data-question-number={index + 1}
         className={`paper-question ${s.show.duplicates && duplicate.has(q.id) ? "paper-duplicate" : ""}`}
-        style={{ paddingBottom: "0.7em", breakInside: "avoid" }}
+        style={{
+          paddingBottom: last ? "0.7em" : "0.2em",
+          breakInside: "avoid",
+        }}
       >
-        {!readOnly && onQuestionAction && (
+        {first && !readOnly && onQuestionAction && (
           <div
             data-noprint
             className="mb-2 flex gap-2 rounded bg-slate-100 p-1 text-xs text-slate-700"
@@ -274,25 +407,167 @@ export default function PaperPreview({
                 {label}
               </button>
             ))}
+            {inlineEdit?.editable && (
+              <button
+                type="button"
+                aria-expanded={extrasFor === baseId}
+                aria-label={`প্রশ্ন ${index + 1} ছবি ও গুরুত্ব`}
+                onClick={() =>
+                  setExtrasFor(extrasFor === baseId ? null : baseId)
+                }
+                className="rounded border bg-white px-2 py-1"
+              >
+                ছবি / ★
+              </button>
+            )}
+          </div>
+        )}
+        {first && inlineEdit?.editable && extrasFor === baseId && (
+          <div
+            data-noprint
+            className="mb-2 rounded border border-emerald-200 bg-white p-2 text-xs"
+          >
+            <label className="block">
+              ছবির HTTPS URL
+              <input
+                type="url"
+                className="mt-1 w-full rounded border border-slate-200 p-1"
+                value={s.attachments[baseId]?.image || ""}
+                onChange={(e) =>
+                  inlineEdit.attachment(baseId, { image: e.target.value })
+                }
+              />
+            </label>
+            {s.attachments[baseId]?.image &&
+              !safeImage(s.attachments[baseId].image) && (
+                <p className="mt-1 text-red-600">সঠিক HTTPS ছবির URL দিন।</p>
+              )}
+            {type === "CQ" && (
+              <label className="mt-1 block">
+                বিভাগের নাম
+                <input
+                  className="mt-1 w-full rounded border border-slate-200 p-1"
+                  value={s.attachments[baseId]?.division || ""}
+                  placeholder={q.topic || "সাধারণ বিভাগ"}
+                  onChange={(e) =>
+                    inlineEdit.attachment(baseId, { division: e.target.value })
+                  }
+                />
+              </label>
+            )}
+            <label className="mt-1 flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={!!s.attachments[baseId]?.important}
+                onChange={(e) =>
+                  inlineEdit.attachment(baseId, { important: e.target.checked })
+                }
+              />
+              গুরুত্বপূর্ণ প্রশ্ন
+            </label>
+            <button
+              type="button"
+              className="mt-1 underline"
+              onClick={() => setExtrasFor(null)}
+            >
+              বন্ধ করুন
+            </button>
           </div>
         )}
         <div className="flex items-start gap-1.5">
-          <b className="shrink-0">{bn(String(index + 1).padStart(2, "0"))}।</b>
+          <b
+            className="shrink-0"
+            style={{ visibility: first || startsColumn ? "visible" : "hidden" }}
+            aria-label={
+              !first && startsColumn ? `প্রশ্ন ${bn(index + 1)} চলমান` : undefined
+            }
+          >
+            {bn(String(index + 1).padStart(2, "0"))}।
+          </b>
           <div className="min-w-0 flex-1">
-            <span>
-              {s.show.important && attachment?.important && (
-                <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
-              )}
-              <PaperMathText
-                text={type === "CQ" ? q.stimulus || q.text : q.text}
-              />
-            </span>
-            {s.show.marks && (
-              <span className="float-right">
-                [{type === "CQ" ? "১০" : "১"}]
+            {first &&
+              s.show.marks &&
+              (() => {
+                const editedMarks = (q as PaperItem & { marks?: number }).marks;
+                const shownMarks =
+                  editedMarks ??
+                  (s.autoModel
+                    ? autoModelQuestionMarks(s, type, q.id)
+                    : type === "CQ"
+                      ? 10
+                      : 1);
+                return (
+                  <span
+                    className="float-right"
+                    style={
+                      s.autoModel ? { marginInlineStart: "0.5em" } : undefined
+                    }
+                  >
+                    <InlineText
+                      mini
+                      numeric
+                      editable={!!inlineEdit?.editable}
+                      label={`প্রশ্ন ${index + 1} মার্কস`}
+                      value={String(shownMarks)}
+                      onSave={(next) =>
+                        inlineEdit?.saveMarks(q, null, Number(next))
+                      }
+                    >
+                      {`[${bn(shownMarks)}]`}
+                    </InlineText>
+                  </span>
+                );
+              })()}
+            {first && (
+              <span>
+                {s.show.important && attachment?.important && (
+                  <b aria-label="গুরুত্বপূর্ণ প্রশ্ন">★ </b>
+                )}
+                <InlineText
+                  editable={!!inlineEdit?.editable}
+                  label={`প্রশ্ন ${index + 1}`}
+                  value={
+                    inlineEdit
+                      ? inlineEdit.resolve(
+                          q,
+                          type === "CQ" && q.stimulus ? "stimulus" : "text",
+                        )
+                      : null
+                  }
+                  onSave={(next) =>
+                    inlineEdit?.save(
+                      q,
+                      type === "CQ" && q.stimulus ? "stimulus" : "text",
+                      next,
+                    )
+                  }
+                >
+                  <PaperMathText
+                    text={type === "CQ" ? q.stimulus || q.text : q.text}
+                    inlineImages={!!s.autoModel}
+                  />
+                </InlineText>
+                {s.show.boardSource &&
+                  questionProvenanceLabels(q).map((label) => (
+                    <span
+                      key={label}
+                      className="paper-provenance"
+                      style={{
+                        display: "inline-block",
+                        maxWidth: "100%",
+                        marginInlineStart: "0.6em",
+                        fontSize: "0.78em",
+                        whiteSpace: "normal",
+                        overflowWrap: "anywhere",
+                      }}
+                    >
+                      [{label}]
+                    </span>
+                  ))}
               </span>
             )}
-            {image && (
+
+            {first && image && (
               <div
                 className={`paper-image-wrap group ${s.cfg.imagePosition === "center" ? "text-center" : "text-left"}`}
               >
@@ -369,24 +644,86 @@ export default function PaperPreview({
                               ? `${label}.`
                               : `◦ ${label}`}
                       </span>
-                      <PaperMathText text={value} />
+                      <InlineText
+                        editable={!!inlineEdit?.editable}
+                        label={`প্রশ্ন ${index + 1} অপশন ${key}`}
+                        value={
+                          inlineEdit
+                            ? inlineEdit.resolve(q, `opt:${key}`)
+                            : null
+                        }
+                        onSave={(next) =>
+                          inlineEdit?.save(q, `opt:${key}`, next)
+                        }
+                      >
+                        <PaperMathText text={value} />
+                      </InlineText>
                     </div>
                   );
                 })}
               </div>
             )}
             {type === "CQ" && q.subQuestions && (
-              <div className="mt-2 space-y-1">
-                {Object.entries(q.subQuestions).map(([key, text], i) => (
-                  <p key={key}>
-                    <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
-                    <PaperMathText text={text} />
-                    <span className="float-right">{bn(i + 1)}</span>
-                  </p>
-                ))}
+              <div className={first ? "mt-2 space-y-1" : "space-y-1"}>
+                {Object.entries(q.subQuestions)
+                  .filter(([, text]) => !!text?.trim())
+                  .map(
+                    ([key, text], i) =>
+                      (!flow || flow.partIndex < 0 || flow.partIndex === i) && (
+                        <p key={key} data-cq-part={key}>
+                          <b>{optionLabel(labels.bn[i], s.cfg.cqStyle)} </b>
+                          <InlineText
+                            editable={!!inlineEdit?.editable}
+                            label={`প্রশ্ন ${index + 1} উপপ্রশ্ন ${key}`}
+                            value={
+                              inlineEdit
+                                ? inlineEdit.resolve(q, `sub:${key}`)
+                                : null
+                            }
+                            onSave={(next) =>
+                              inlineEdit?.save(q, `sub:${key}`, next)
+                            }
+                          >
+                            <PaperMathText text={text} />
+                          </InlineText>
+                          <span className="float-right">
+                            <InlineText
+                              mini
+                              numeric
+                              editable={!!inlineEdit?.editable}
+                              label={`প্রশ্ন ${index + 1} উপপ্রশ্ন ${key} মার্কস`}
+                              value={String(
+                                (
+                                  q as PaperItem & {
+                                    partMarks?: Record<string, number>;
+                                  }
+                                ).partMarks?.[key] ??
+                                  (s.autoModel
+                                    ? autoModelPartMarks(s, i)
+                                    : i + 1),
+                              )}
+                              onSave={(next) =>
+                                inlineEdit?.saveMarks(q, key, Number(next))
+                              }
+                            >
+                              {bn(
+                                (
+                                  q as PaperItem & {
+                                    partMarks?: Record<string, number>;
+                                  }
+                                ).partMarks?.[key] ??
+                                  (s.autoModel
+                                    ? autoModelPartMarks(s, i)
+                                    : i + 1),
+                              )}
+                            </InlineText>
+                          </span>
+                        </p>
+                      ),
+                  )}
               </div>
             )}
-            {marked && type !== "MCQ" && (
+            {last && marked && type !== "MCQ" && (
               <div className="mt-2">
                 <b>উত্তর: </b>
                 <PaperAnswer
@@ -396,9 +733,11 @@ export default function PaperPreview({
                 />
               </div>
             )}
-            {s.show.tags && (
+            {last && s.show.tags && (
               <p className="mt-1 text-[0.72em]">
-                {[q.topic, q.source].filter(Boolean).join(" · ")}
+                {[q.topic, q.source?.replace(/এআই|\bAI\b/g, "সফটওয়্যার")]
+                  .filter(Boolean)
+                  .join(" · ")}
               </p>
             )}
           </div>
@@ -407,15 +746,18 @@ export default function PaperPreview({
     );
   }
   function sectionHeading(section: PreviewSection, id?: string) {
+    const questionCount = section.questions.filter(
+      (v) => !v.writtenFlow || v.writtenFlow.first,
+    ).length;
     const answer =
       (section.type === "MCQ"
         ? s.cfg.mcqAnswer
         : section.type === "CQ"
           ? s.cfg.cqAnswer
-          : s.cfg.shortAnswer) || section.questions.length;
+          : s.cfg.shortAnswer) || questionCount;
     return (
       <div id={id} style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
-        <h3 className="font-bold underline">
+        <h3 className="font-bold underline" style={{ whiteSpace: "pre-line" }}>
           {section.title}
           {section.type === "MCQ" ? " (প্রতিটি প্রশ্নের মান ১)" : ""}
         </h3>
@@ -423,19 +765,27 @@ export default function PaperPreview({
           className="text-right"
           style={{ fontSize: "0.85em", marginBottom: 0 }}
         >
-          {bn(section.questions.length)}টির মধ্যে{" "}
-          {bn(Math.min(answer, section.questions.length))}টির উত্তর দাও।
+          {section.instruction !== undefined ? (
+            section.instruction
+          ) : (
+            <>
+              {bn(questionCount)}টির মধ্যে {bn(Math.min(answer, questionCount))}
+              টির উত্তর দাও।
+            </>
+          )}
         </p>
       </div>
     );
   }
   // All mixed sections use one lane width, both when measuring and rendering.
   const sectionColumns = (_section: PreviewSection) =>
-    s.cfg.orientation === "landscape" ? 1 : continuousColumnCount(
-      (sections ?? []).map((section) => section.type),
-      s.cfg.cols,
-      s.cfg.cqColumns,
-    );
+    s.cfg.orientation === "landscape"
+      ? 1
+      : continuousColumnCount(
+          (sections ?? []).map((section) => section.type),
+          s.cfg.cols,
+          s.cfg.cqColumns,
+        );
   useEffect(() => {
     const root = measure.current;
     if (!root) return;
@@ -566,7 +916,7 @@ export default function PaperPreview({
       [s.cfg.underline ? "underline" : "", s.cfg.strike ? "line-through" : ""]
         .filter(Boolean)
         .join(" ") || "none",
-    fontFamily: families[s.cfg.font],
+    fontFamily: paperFonts[s.cfg.font],
     fontSize: `${s.cfg.autoFit ? fittedFont : s.cfg.fontSize}pt`,
     lineHeight: s.cfg.lineHeight,
     textAlign: s.cfg.align,
@@ -587,7 +937,7 @@ export default function PaperPreview({
           pointerEvents: "none",
         }}
       >
-        <div data-measure-header>{header}</div>
+        <div data-measure-header>{header()}</div>
         {s.show.brandFooter && (
           <div
             data-measure-footer
@@ -602,19 +952,19 @@ export default function PaperPreview({
               <div
                 data-flow-heading
                 style={{
-                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)} - 11px)`,
+                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)})`,
                 }}
               >
                 {sectionHeading(section)}
               </div>
               <div
                 style={{
-                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)} - 11px)`,
+                  width: `calc((100% - ${(sectionColumns(section) - 1) * s.cfg.columnGap}px) / ${sectionColumns(section)})`,
                 }}
               >
                 {section.questions.map((v, i) => (
-                  <div data-measure-question key={v.q.id}>
-                    {question(v, i, section.type)}
+                  <div data-measure-question key={`${v.q.id}:${i}`}>
+                    {question(v, i + (section.startNumber ?? 0), section.type)}
                   </div>
                 ))}
               </div>
@@ -624,11 +974,11 @@ export default function PaperPreview({
           <>
             <div
               style={{
-                width: `calc((100% - ${(cols - 1) * s.cfg.columnGap}px) / ${cols} - 11px)`,
+                width: `calc((100% - ${(cols - 1) * s.cfg.columnGap}px) / ${cols})`,
               }}
             >
               {questions.map((v, i) => (
-                <div data-measure-question key={v.q.id}>
+                <div data-measure-question key={`${v.q.id}:${i}`}>
                   {question(v, i)}
                 </div>
               ))}
@@ -667,7 +1017,7 @@ export default function PaperPreview({
                 </div>
               )}
               <div className="relative z-[1]">
-                {page === 0 && header}
+                {page === 0 && header(true)}
                 <div
                   className="paper-flow-body"
                   style={{
@@ -681,9 +1031,13 @@ export default function PaperPreview({
                 >
                   {segments.map((segment, segmentIndex) => {
                     const section = sections[segment.section];
+                    // Pagination belongs to the previous render until measurement
+                    // catches up after a remove/exchange or section-count change.
+                    if (!section) return null;
                     return (
                       <div
                         data-paper-section={section.type}
+                        className="paper-column"
                         data-flow-lane={segment.lane}
                         key={segmentIndex}
                         style={{
@@ -692,13 +1046,15 @@ export default function PaperPreview({
                           left: `calc(${segment.lane} * (100% + ${s.cfg.columnGap}px) / ${segment.laneCount})`,
                           width: `calc((100% - ${(segment.laneCount - 1) * s.cfg.columnGap}px) / ${segment.laneCount})`,
                           boxSizing: "border-box",
-                          borderLeft:
-                            s.show.divider && segment.lane > 0
-                              ? "1px solid #888"
-                              : undefined,
-                          paddingLeft: segment.lane > 0 ? 10 : 0,
                         }}
                       >
+                        {s.show.divider && segment.lane > 0 && (
+                          <span
+                            aria-hidden="true"
+                            className="paper-column-divider"
+                            style={{ left: -s.cfg.columnGap / 2 }}
+                          />
+                        )}
                         {segment.heading &&
                           sectionHeading(
                             section,
@@ -709,11 +1065,21 @@ export default function PaperPreview({
                               ? `paper-section-${section.type}`
                               : undefined,
                           )}
-                        {segment.columns.flat().map((i) => (
-                          <div key={section.questions[i].q.id}>
-                            {question(section.questions[i], i, section.type)}
-                          </div>
-                        ))}
+                        {segment.columns
+                          .flat()
+                          .filter((i) => !!section.questions[i])
+                          .map((i) => (
+                            <div key={`${section.questions[i].q.id}:${i}`}>
+                              {question(
+                                section.questions[i],
+                                i + (section.startNumber ?? 0),
+                                section.type,
+                                segmentIndex === 0 ||
+                                  segments[segmentIndex - 1].lane !==
+                                    segment.lane,
+                              )}
+                            </div>
+                          ))}
                       </div>
                     );
                   })}
@@ -748,7 +1114,7 @@ export default function PaperPreview({
                 </div>
               )}
               <div className="relative z-[1]">
-                {page === 0 && header}
+                {page === 0 && header(true)}
                 <div
                   style={{
                     display: "grid",
@@ -759,19 +1125,23 @@ export default function PaperPreview({
                   {columns.map((indexes, col) => (
                     <div
                       key={col}
-                      style={{
-                        borderLeft:
-                          s.show.divider && col > 0
-                            ? "1px solid #888"
-                            : undefined,
-                        paddingLeft: col > 0 ? 10 : 0,
-                      }}
+                      className="paper-column"
+                      data-paper-column={col}
                     >
-                      {indexes.map((i) => (
-                        <div key={questions[i].q.id}>
-                          {question(questions[i], i)}
-                        </div>
-                      ))}
+                      {s.show.divider && col > 0 && (
+                        <span
+                          aria-hidden="true"
+                          className="paper-column-divider"
+                          style={{ left: -s.cfg.columnGap / 2 }}
+                        />
+                      )}
+                      {indexes
+                        .filter((i) => !!questions[i])
+                        .map((i, position) => (
+                          <div key={`${questions[i].q.id}:${i}`}>
+                            {question(questions[i], i, type, position === 0)}
+                          </div>
+                        ))}
                     </div>
                   ))}
                 </div>
@@ -791,7 +1161,7 @@ export default function PaperPreview({
         ))}
       {sections &&
         (s.show.omr || s.cfg.ansKey || s.cfg.format === "ans") &&
-        sections.map((section, index) => (
+        originalSections?.map((section, index) => (
           <PaperPreview
             key={index}
             s={s}
@@ -802,19 +1172,21 @@ export default function PaperPreview({
             duplicate={duplicate}
             onImageSize={onImageSize}
             previewScale={previewScale}
+            defaultHeaderValues={resolvedDefaultHeader}
             auxiliaryOnly
           />
         ))}
       {!sections && mode === "questions" && s.show.omr && type === "MCQ" && (
         <PaperPreview
           s={s}
-          questions={questions}
+          questions={originalQuestions}
           type={type}
           setName={setName}
           duplicate={duplicate}
           onImageSize={onImageSize}
           title={`OMR — সেট ${setName}`}
           previewScale={previewScale}
+          defaultHeaderValues={resolvedDefaultHeader}
           mode="omr"
         />
       )}
@@ -823,13 +1195,14 @@ export default function PaperPreview({
         (s.cfg.ansKey || s.cfg.format === "ans") && (
           <PaperPreview
             s={s}
-            questions={questions}
+            questions={originalQuestions}
             type={type}
             setName={setName}
             duplicate={duplicate}
             onImageSize={onImageSize}
             title={`উত্তরমালা — ${title} — সেট ${setName}`}
             previewScale={previewScale}
+            defaultHeaderValues={resolvedDefaultHeader}
             mode="answers"
           />
         )}

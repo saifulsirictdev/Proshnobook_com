@@ -1,0 +1,318 @@
+{
+  "baseline": "ab3e9de",
+  "retainedBaselineItemHashes": {
+    "mcq": [
+      "0eea0abebfbe6971b3f00ed968f0d29d1440d2298fdd42e878f3a166227f6ae6",
+      "802f60d9bf1c2f5e569fd095349cfd4da0c1a9423c8e128ad5909acf15dce2df",
+      "71da347883fb261764e85cc94f7407da2f1511177055b5b12f51f0b54722e30a",
+      "f3bd234a4195e0d7917852397f1dc69c3b9ce809a64a66e3809991fbf105531a",
+      "dfb8356ff6483b3f77d0f4159860fb971b6544e39158486c662d641137c2af15",
+      "c6407650941fb6024168fa60a3922627440c89fc734ea56bb61e1be2114f6f07",
+      "e1c8a0d6aa53490828ce7f2efa04f1d30e1bdbe7863695c441d95c04cc0d9a91",
+      "ba607e4d4d23ea5b20dfb155e179d2e31bb6cbf08410c6e2c38d755b8aad490e",
+      "10176bd05e0600cb6b746c1ee1d189f8477680a2055685c3c8b3e7edc7625814",
+      "0a47807b92e172d58ea67e20f7c6fd44a2c44046cff59bc12240fa8070951bab",
+      "b6e539a6e30a4d47bcbd8ae7ba827ade35fba0dca50d57e1ebd2c5c0deeb92cb",
+      "bc43797f6a9f6f2189648c05e08359a76ec72cb588c53556b4a7d733ca9e9d7d",
+      "fd6b34dba520ae856d77929130e0713511187326fadf4fd5f9699554fd7d71b2",
+      "20575b787d1edad71ae05577ff2aff90267a75688c439df35dbcf8b9bc728466",
+      "a3dc9266c6be081038c1313189267f5dd3af18a06eb2b6dabe3ffb135e0eb5a1",
+      "d3ce244e747a56021222ac11224926d94fbdb27aef7f4369bfc640c6bdc33a7f",
+      "bdb2a6a68278e3998daf3b8f662498ccc64315338a277f7c3475c98867c07bc6",
+      "b743f4c89a51ba32249901ea206006ac9f28fa41e85d5f2069ee6c9b77010c0b",
+      "10965d6c444057ea539944b4fc134a938c03ee1caff20a7927e5a54d0494aab5",
+      "96daaca15765a4ba29c5efa4cbb552c0bb4be95f926bf40f783182945058fd4c",
+      "440436a33d37ec7577d18d947a98f0f0572b68924920ffb598f59121e43e744d",
+      "0d2a585dd574c4200b904dea5ddc0f8d0fcfd0f4abe01b050f0723a9b192babb",
+      "4262b93237daa02307dcdb8f98fb64b1baa7e27af9f07410eced13ce518b440b",
+      "0624bd512a5e0cceeda61899c6973ec73b3b921a93f4029df9b7973ef10db797",
+      "33078068ac439fa21a29b8ccfa5717d357a04b02ef16eeaa05c6b4d72d880311",
+      "b2c9b03344e472126b9243891f56316a58d31cf9c3443abeee92c536bddf0460",
+      "8edb00cb8b3a1f82a014ed2974283efeeb656928d76db20fb7009d94eada8541",
+      "d6168ca486d5db45f5612d79fa7985bcef538d3f3912fd656a50d0cc0f724e6b",
+      "0bd2454c0b116020cdea3bcafaa59b84b16a710b54b4224598de6020023c4ed4",
+      "29662659a5e8095f1a4bb820cbadf8de4c4902875e6df2cdc16be3cf2307d804"
+    ],
+    "cq": [
+      "2218a5268987e3802e44dc1226a7bc9f4fb67d5401627c426bfb25a9ffde4b62",
+      "33aab4bc1e3b435bc4c61352d14c3d8ee9fff01dd820a1b5d0f577a092740b8f",
+      "c4af4e8d5b773abaea69e0eb8f9de9505c612940906bf8643880f87d4a30908a",
+      "33cb71179a30b9c1de2488b5ceb9605d62b0442f2baa6c0d8c0aa30510a72c5e",
+      "af845ddf9e02238be5829b0e2e5f0240940846fca91967e6d2a3a3cb599ffca2"
+    ],
+    "sq": [
+      "c00730dbb4f928a30937f56b93bf0ef1a02d92228ee8fa05d444da1ca63b8085",
+      "e0d5d7d86a47c74e9f485da9c1636fbcf660668bb5abfd3481cf37cf741b7727",
+      "c8311248c958da03c27a89e4bf9efa8cc0047ed40951d8fccf395c5b2cf90ffc",
+      "d0a8c65ed5e0fa60c112a5b448a00c208ccb91795ffaceb310995ba4ed589043",
+      "e6c91b48865895f2a40fc2229025d7745d8cfe41ed42cb716b73eb691d824151",
+      "60045a1ac30781035d11ea277b43aeb70b51af8eb7e550cb88ce3fed2bbad864",
+      "9a58e25a3cc557affaefabc5c1b9ef87f6c1ff2991d5af5f78216071958e3d68",
+      "1720942ba27c776474368fb1232ecd3231485cc74cb2fbda1d8e2b8075b3b477",
+      "3c314c400edcc39eb491251ad2f21b34dd6c79e4584ea7ae0bfaaaec87b19f7b",
+      "8488ca996c9f0d094fa06891a4b108efefb0e6ee4d848dc3b8011af58cc13af2",
+      "bccc629ddbdf9320c245a3008d6a0218237fdeb360a0d3f0ed7aa9f9875ef0af",
+      "92a8564986e1ab1686b85d409e8843148df4e16a32aeb04a034eefc1742d2a32",
+      "cef1440bd308d907d1190c584a1153264bb06aaeeaddcd203f737f7951b65d51",
+      "fcc9e38c6ae2ebfb822ba41d9e41ddf163aa3b73b8be61dcfa2854df06fa8e3f",
+      "7df062c9603ff77609e1933f690bf61f903178193f5ea17d2ada634756360826",
+      "905cc8e6cb09d95f76c17bfb5a3854d521016ace608fcf34b4bcbe2726bb8416",
+      "90527ca77d38c5f3d570c407372ec08bd80de6990a440c9cd98b46f7bd0796e3",
+      "dc7d26cc4acc2d505170158cb81fae1e596695f70f711dbdf0f862487750bf6f",
+      "380d31839257e9ffa118892960dc6c54570ff9e22a726cf9f81d082c6b53f0b9",
+      "55681ed116e1831a4260ed3705dc2f5b3eea503bb403f7485bd906800b96a7e5"
+    ]
+  },
+  "retainedBaselineLedgerHashes": {
+    "bio-5-mcq-910c936e351ae733": "a38cd33ba4c6f5c885cbe090fb6516a6cb453285fefabdd18aca5fdc8fa0c14f",
+    "bio-5-mcq-6f7c2816349dd288": "e0383be892dd84c77e5b0e3421d43739cc231e4e0051e0f1535ee5806730e232",
+    "bio-5-mcq-6576596e36e66667": "b3df6b7c6232dc58a284794bfbaea56019bdd3748b8cfbbf9e5b95814cf793c9",
+    "bio-5-mcq-1ea28cb1b8e16b41": "b720d61485732075c3f007d1fa302a4618391858fe867a4a7f18a79c80370587",
+    "bio-5-mcq-e954948fd51a7dc3": "dbce6f617238b78d78cb2c6797b4741f5f826b4e2718359ebc9c1b79060826e1",
+    "bio-5-mcq-9039d15ed042ab63": "c9615c623036bb37d86e3df0004a9117e6da48973d5ce8107c4d5d8caa4dda3c",
+    "bio-5-mcq-1f1a70c67c43456f": "7e8f723b487e81c9b10d1d65a422bb92d11938711d45c48de7f428ca7fa0845a",
+    "bio-5-mcq-a275fed37e49da14": "20c1da54eaac990be42aaa0bd36ee54c60a8a43d21bac3a3abe4f94995162fe6",
+    "bio-5-mcq-f23253abb19ff6ee": "36c4263453533e74a9fb754376ec4dfa5aa2ac2b7bde7eae833d5b1cffaeddcb",
+    "bio-5-mcq-651a6046f8ac7ba2": "f4acf4f6bc26dbfb817ff8719b1d79adab5a6e3621c8b4c1de9957fbd55ca6e4",
+    "bio-5-mcq-844c9e42759257e6": "ecb1fdc3391602ffbd4a813a05e3b0c15851cbcff8c8db25a797bcb00a4ae81f",
+    "bio-5-mcq-a227fb0e56d56a19": "940c4c29846eadbc47dd1bad99705a1b752a7ba17e8c073ef0636ecf7432ecfd",
+    "bio-5-mcq-fb09dbf663cf5c0b": "993016593947379c695d994b8ac5868dcad584b1c814b016f67ad988aad165bb",
+    "bio-5-mcq-7c025f9864fe3047": "898963338e93fa2c1fd60d2bb79fc24ec108d5295c2b2f1744e963e3cf7aca06",
+    "bio-5-mcq-e86471469c72f140": "68a35046ac5fce211b7b620878275938ce2a12ffe3903071f2b89d5bef70c317",
+    "bio-5-mcq-12f6714537422475": "595cfc98ccf36150558100324129fba607b494aff2af47b5b68a46eb6a67e25f",
+    "bio-5-mcq-459e0710ed3fa2af": "6a2ba2963719d7a1d9f610487a7ae4f3331cadd6a0a1a20995d8af2ac3247390",
+    "bio-5-mcq-c7e620e8cea2dddb": "5ba8145e857b6b60d68a9693c0514544ba08fa4f9516425c8bc3eae7839976a9",
+    "bio-5-mcq-fd3407d8e3c533f6": "b0fd50071885f0e9eb82d8c6c4545f09d488bf03e83dccc16738d83f4658485f",
+    "bio-5-mcq-0098bcd2db42de91": "112b4021528f86674943d24b439ecb4e34d23afd9e90ec7b20e64a80778b95e1",
+    "bio-5-mcq-129f60bc21b042ed": "7040e346c81148244d53bd23e294340ad497ca05067f34fd1cd21a42e42bd157",
+    "bio-5-mcq-c31de48f32afd18a": "c40933a0b69b947042f15aa3e28cef0c8432575b5a783b4fd2c516c92fddcd81",
+    "bio-5-mcq-3b2c979c56a10266": "c5cc6c00522c74eb07e62afcbddc56f7b544ee5ffea211cccbf186d10f2a948d",
+    "bio-5-mcq-db7f3c2938a09017": "de2a133d5d30a1035be8bff6563cae23c47d9124fc1bf8c1d856feac7e6cff51",
+    "bio-5-mcq-f4a6d6ee81c98b5f": "e4276d6bf52b0cb6f323f5d92339e2ea1e0859c4367a708e1e75bd994d5b0b1a",
+    "bio-5-mcq-9d51274664653cab": "367b5e110ac0459e67c321c4c34b4c7488ce711c8295be7edca76478a175db16",
+    "bio-5-mcq-516eceee816af8be": "ebbb3c211ee5932d0ce929b5bed7a55fda498a6180a073fe95b1fd09bbd26159",
+    "bio-5-mcq-f3a142d31e16cfd9": "e74dce46ec84bcd0a0cf5f3fc77aab1da8e5d7415c0328b75375b4b30ecb16bb",
+    "bio-5-mcq-78183a62121f8998": "7ca10c8522f907dad8c33e1da0c09926d03365a4417251c49cf569015293b7d1",
+    "bio-5-mcq-e00a36ad121dd67c": "e7b3b62f6f8188bec8b14a18635969825bea80c8c9d96276576138edcdeffe84",
+    "bio-5-sq-b9f0531cdcac14cd": "297e1688c901affb3da3ff24b21bdaabc1775914842388e7bb20bfe10af41c75",
+    "bio-5-sq-74654f71e4bd470f": "8ace60b5a692ea0aa0945a81acba832f27eab18355765f82dacddfd3eb3f4eaa",
+    "bio-5-sq-48c249b5621bd05a": "d3081914c21eae5b0cdee2066b6025b79572ba1d89b41f0869edc99acfc1690b",
+    "bio-5-sq-0e7a4af9e63837a8": "10733bebbe629ba101ca901714f319ec8a0e427f3c76a8881b3ebde1906ce07b",
+    "bio-5-sq-76802019a706da63": "aff4b65bbfb626a4d9199ca2dd020ee1eb6fb89670ea12cf2b3e3bfa1788e621",
+    "bio-5-sq-2a86190960a1a0e7": "8aba53268bd90cc670e528ded401a8e5c7122951f1e30e1d0ba6db875e099e5f",
+    "bio-5-sq-718e3862fd6128b5": "b044e601e8a108218fcf0a71945381a160149570dfd90d82fff0af882afd5ccc",
+    "bio-5-sq-d489b89f5a595c3c": "51c42c239906caa08926b49a8613fff9c669ff21fb0f4f2caed06f5c6c865701",
+    "bio-5-sq-1c7c26257681a651": "41c832ed74030b1aa376e79b2014070bffe2ec1ff19fb9f36555a99647085447",
+    "bio-5-sq-e76f7ac36552dafb": "27b2c12355fdd7b554c7bba90623cf1c8ef29e12d2ce3a5cc424e9364125c276",
+    "bio-5-sq-8ef3792cda149664": "a5ec6db81ea5fe4cf5b272bb34d3a67abb4e760c238f4212b0c0c71a60799f2a",
+    "bio-5-sq-937f57409fd75cf1": "38e5581d06cbfe1b4e277c320be06a721d861005f859953f4abf2408eb64b7f0",
+    "bio-5-sq-a3364fb4ebc69747": "b881e83605c5d76f56e2990e695fc86afb64dd55ec5be4edbbe15f9dd561c156",
+    "bio-5-sq-b843a64dc0365707": "ccc20fa586d5c2d9d0bc5c0eb8b4fc52bab15dfd0e7a9f7b8b24ef013d4539c3",
+    "bio-5-sq-09620dce91cd2cc2": "92b06f5898f079745fe55d6a71cba09c664fe7f3bd94e41440d76d894f6c6d9c",
+    "bio-5-sq-2b3355ca38064977": "5ea08210d3fbcdd11eea8559dfad7f5c1c3ffba63c3200f521653ef1af5c17d7",
+    "bio-5-sq-0d7aeb8da1af41a0": "f48c618350556941b4725ea8683a5d685c07a984c24be27d2c570d747bbd65b1",
+    "bio-5-sq-07758ac4be262a45": "2cb634cad27779cb2e59440037add3b25c4fef2779dac8a4a72524f3289a5708",
+    "bio-5-sq-830f745852e056a0": "99ea3ba4f91408fa5bc87b5ce624a514ede4c39a6ffbfc0381340418cec78314",
+    "bio-5-sq-dbbaffd29b527c56": "ea000244b98201766099aeed14c246a08bad6f057bd07d305f26045fd67f63a6",
+    "bio-5-cq-4b101cad4a66a828": "2f4a12ad144600e75c3cd0b5fa1cd92eb29f7f9ac1e12dd76ae8d26897475cc1",
+    "bio-5-cq-d43f4ea6f86ae21c": "ef2562bfb6c81597f1bef22bc471d05b93db29e8f6bf37b355645f8ce954cd36",
+    "bio-5-cq-774e0bf403677a97": "08308c5d187a975bf43c9797f48f31b729c2ff475a39af9995f381f1fc162479",
+    "bio-5-cq-db40d86b2ae600c9": "f8f9f7f82cabbffa90f40747d8f9a0bdfbff08c07720198360c74397302cb7e3",
+    "bio-5-cq-a80b07796d3e62fd": "2c341a400adbcea9b9ae9890baff68df12c6a51eb2e9ec8adc324414619942e2"
+  },
+  "baseline55LedgerEntriesRetained": true,
+  "unchangedFiles": {
+    "content/question-bank/ssc/biology/chapter-1/assets/classification-tree.svg": "e42f24a54943929f60f163a84e0d26152761dfdaf7501b1476daf05ba876a1fd",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-cq.json": "5a16032154bd782f6dfa07e79f721ab6275c01c3a957149eb8ccc8a53a036cac",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-mcq.json": "32c8eb958e85280755b93dbbc3a81baa82831056f14260f4eda5a5162e1e9710",
+    "content/question-bank/ssc/biology/chapter-1/chapter-work-sq.json": "4e2cf2e3238aac52d2738ce70dcc1df37b67400e6cd33502c167e1a4272a5150",
+    "content/question-bank/ssc/biology/chapter-1/cq.json": "e1397c082c370b7e8c09458939564f432057bf17baec7db288bc2f660a5e945c",
+    "content/question-bank/ssc/biology/chapter-1/draft-validation.json": "4dec463e0f7584bc87594c01099f48fb95fd5b34ebc70aaa8c5fa35c22b2eed6",
+    "content/question-bank/ssc/biology/chapter-1/mcq.json": "3121349f6ffcc28e2322f55b5a5beb65280aefefdffe5f99d9fc025f08f2b7ca",
+    "content/question-bank/ssc/biology/chapter-1/questions.md": "bbd9a3b5c939e14eca003a97c8a70f8c3bb27723b28c31a76232172b2c9c5c22",
+    "content/question-bank/ssc/biology/chapter-1/source-ledger.json": "2507eb75b67240d44e5e9de366e601759a19bae8b97085898e416d96be22352e",
+    "content/question-bank/ssc/biology/chapter-1/sq.json": "65cc801490c90a89dbe25b2e6ac7bb627d30e2a9283c69706632f3cdfdd346cb",
+    "content/question-bank/ssc/biology/chapter-1/validation.json": "5b2dc953eb05733d17d0b54c13bdcd626f76a047f7362b1ea8422029c2c1c5ce",
+    "content/question-bank/ssc/biology/chapter-2/assets/mitochondrion.svg": "dbe50c47f46bf1e957547c6f1ed404e3af72bbbda49b36f3aa5238d632c93032",
+    "content/question-bank/ssc/biology/chapter-2/assets/neuron.svg": "5ed16494d4cc93b62cdb96a8607db8261eaae0de8643949bb3cc47edbc767ec2",
+    "content/question-bank/ssc/biology/chapter-2/assets/plant-cell.svg": "bdd2207c21a39db7739a404d1d5f0933ff1fd448eb859790cffa05e3b4eecea9",
+    "content/question-bank/ssc/biology/chapter-2/draft-validation.json": "e177f6414c9cb32d8a8a4c7eb60558e0e85a71335d96509e8ff06d953402991f",
+    "content/question-bank/ssc/biology/chapter-2/questions.md": "66db306b2c4789340f8e9d5a4d6c8bcb2478e4a3be6733b56b973dc00d4b729b",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-cq.json": "44eb2ad911182d732c77b97b343981f837a1c5aec950fe40e7a298d07645658f",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-mcq.json": "697d84f288f3ddda14ea1251371259f70ab949e9ce0c29716ec3a29383ad93b4",
+    "content/question-bank/ssc/biology/chapter-2/rebuild-sq.json": "84a6135ad83699f5625b0bf01aaa5871828f746d5469b0b3c5f6f2b7eede32ea",
+    "content/question-bank/ssc/biology/chapter-2/source-ledger.json": "1e4f438a3d808313984ec2768d2e7aaf1a3e113550b91391210babfdbd771a3b",
+    "content/question-bank/ssc/biology/chapter-3/assets/meiotic-anaphase.svg": "732004dff9737e8af492cda267634786cc6fb823dcb97afbfb70357a35f7e04b",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-anaphase.svg": "6d21067ec6a8b96c74746c7ff20553569b060017f510628a9366e08a1a5363a6",
+    "content/question-bank/ssc/biology/chapter-3/assets/mitotic-metaphase.svg": "0836c541f625af3cc00de2cd3794fc32f9e8596a8f5863b9df53b6d5a16a19ee",
+    "content/question-bank/ssc/biology/chapter-3/draft-validation.json": "586f77947b0971649115a438c08a8c7e9e2f89e3b042828c11bc82467c36bb88",
+    "content/question-bank/ssc/biology/chapter-3/questions.md": "72aa3d7659a2b00eb53871765551797a5e3a4ce09190852c590082e5a21c1b73",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-cq.json": "717de995fad7ed5f01151b7f9971e7df7da32029180406bc65fe908fa57689ce",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-mcq.json": "20af772f34f14cd19a9c996b0e81dc1f7b2620119a23f7018e0ad2ca9296623e",
+    "content/question-bank/ssc/biology/chapter-3/rebuild-sq.json": "b4425f241fec444f5024a8979c12ceaba08362ce2a0997b292a93e7876ee19cc",
+    "content/question-bank/ssc/biology/chapter-3/source-ledger.json": "ae33cc99ea6e380bb213086c7af2062f1da6b441a7d3c67ae6b95aa5d885d7a0",
+    "content/question-bank/ssc/biology/chapter-4/assets/chloroplast-stages.svg": "b485f1e90497f5223bd2a35e93fc3e4aef29120d375fd6fdb9c65dd701500f19",
+    "content/question-bank/ssc/biology/chapter-4/assets/light-starch-test.svg": "eeafcfb56e5935c85adae7bf2b910708661b19b633d208dd3d8108d3e87dbf4b",
+    "content/question-bank/ssc/biology/chapter-4/assets/respiratory-coupling.svg": "6c166230a1a2595fbb772cc59493eaf64a7b6d03da97aefa7ce41854840f1fe6",
+    "content/question-bank/ssc/biology/chapter-4/draft-validation.json": "968e60c84885335a48542ba9e270943e25fbc3b2cadf0a3ea76e2d735127c3ba",
+    "content/question-bank/ssc/biology/chapter-4/questions.md": "61fb0ad785972b5ff81b6cdcce284d2fbf267e4db8635f657cdddb5f252bde92",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-cq.json": "24b07838b0ee9ea78964ac036ce8a664a357629735d8518dca7d7dc2d3de5ae6",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-mcq.json": "9d539eed6618761cb61c553d8562fabd773cbb8e00ee6f154322fcb6bab18960",
+    "content/question-bank/ssc/biology/chapter-4/rebuild-sq.json": "da3f331139c88863465e3f4083b80e49b03fe5e2f04ddb7e5a2630db09851202",
+    "content/question-bank/ssc/biology/chapter-4/source-ledger.json": "4961709e54e3d64692d42bfa82f9643f0cc42523b0bf903d0e85e0520baabab6",
+    "docs/question-bank/ssc-biology/chapter-1.html": "bdce6782b0280feea018880fce65f9718e7676f205a92ac2fe6a99a4ebcfa8ae",
+    "docs/question-bank/ssc-biology/chapter-2.html": "c7a10f24d123137c2070f6a7b2f2081eda3e822afdb05f2ae155f39584833aae",
+    "docs/question-bank/ssc-biology/chapter-3.html": "cb72c69f86b9e55f613b1d90cae46b17553dddfbaa9c7203471fe203ac57c1c2",
+    "docs/question-bank/ssc-biology/chapter-4.html": "cefe87f398ba27ee9afc8c4ba0422f45d65bd02bf14b222d0b665d66d3017da8"
+  },
+  "date": "2026-11-20",
+  "chapter": 5,
+  "topic": "খাদ্য, পুষ্টি এবং পরিপাক",
+  "counts": {
+    "MCQ": 200,
+    "CQ": 50,
+    "SQ": 70
+  },
+  "added": {
+    "MCQ": 170,
+    "CQ": 45,
+    "SQ": 50
+  },
+  "status": "COUNT_TARGET_MET_REVIEW_REQUIRED",
+  "teacherCertified": false,
+  "independentContentReview": false,
+  "nearDuplicateReviewComplete": false,
+  "textbookChapterRead": false,
+  "approved": false,
+  "published": false,
+  "websiteImported": false,
+  "diagrams": {
+    "files": [
+      "digestive-routes.svg",
+      "villus-transport.svg",
+      "fat-digestion.svg"
+    ],
+    "origin": "original_editorial_diagram",
+    "generator": "scripts/question-bank/biology/draw-chapter-5-figures.py",
+    "attachedToCQ": 3,
+    "writtenEquivalent": "Bengali stimulus gives the same essential information",
+    "inspection": "All three raster renders inspected; microvilli pointer corrected to the surface projections. Functional route map is not a full anatomical drawing."
+  },
+  "lexicalScreen": {
+    "method": "Same-type whitespace word-bigram Jaccard",
+    "threshold": 0.4,
+    "totalCandidates": 205,
+    "inheritedOnlyCandidates": 204,
+    "newInvolvingCandidates": [
+      {
+        "kind": "mcq",
+        "a": 50,
+        "b": 162,
+        "score": 0.571,
+        "new": true
+      }
+    ],
+    "independentSemanticReview": false,
+    "limitations": "Stock wording of inherited concept-card probes creates lexical matches. Not semantic uniqueness or independent learning-objective certification; concepts recur across types.",
+    "editorialDisposition": "The one addition-involving lexical pair (MCQ 50 vs 162) shares the phrase “পরিপাককারী এনজাইম বলা ভুল কেন” but contrasts an endocrine hormone with dietary fiber: different substance classes and explanations. Kept as distinct basic classification probes; this is author review, not independent semantic clearance."
+  },
+  "incrementalBackup": {
+    "fileId": "1lGjAl9aiHxlLcJEGIwWcDiRgXEng-AcP",
+    "name": "ssc-biology-chapter-5-authoring-checkpoint-v1.zip",
+    "bytes": 40302,
+    "md5": "d825b64c7254729eb08f3c2bfba8395a",
+    "independentRemoteGetVerified": true,
+    "status": "Earlier MCQ/CQ sources; not the final milestone, later content/figures differ."
+  },
+  "editorialCorrections": [
+    "Fe is a micro element in the modern general quantity-based plant classification; Mg is central in chlorophyll.",
+    "Essential does not mean merely beneficial; no universal element count asserted.",
+    "BMR means Basal Metabolic Rate, not Body Mass Ratio.",
+    "BMI is screening, not a direct fat measurement or diagnosis; adolescent interpretation needs age/sex growth references. No restrictive diet prescribed.",
+    "Bile emulsifies physically; lipase hydrolyses chemically. Bile is made in liver and stored in gallbladder.",
+    "Amylase products are not exclusively free glucose; pepsin products are not exclusively free amino acids.",
+    "Long-chain lipid products leave micelles, enter cells and are repackaged as chylomicrons before lacteal transport.",
+    "Microvilli are cell membrane projections, not miniature blood-vessel-filled villi.",
+    "Water is absorbed in small and large intestines. Egestion and metabolic excretion are not synonymous.",
+    "Refrigeration and pasteurisation do not guarantee sterility or toxin removal. Never taste suspect food.",
+    "ORS packet directions and safe water, not arbitrary concentrations; inability to drink or abnormal lethargy warrants urgent health care. No self-prescribed antibiotic dose.",
+    "Reworked new CQ that overlapped the baseline into surface-area, initial-rate saturation and lipase-blocking interpretation tasks. Selected recall distractors revised to same-category alternatives."
+  ],
+  "limitations": [
+    "BiologyBD is a secondary OCR page; chapter 5 body is truncated after early food-component content. Official NCTB page-by-page verification not completed.",
+    "Original questions use scoped background facts, not copied OpenStax assessments or figures. Background links are not exact question sources.",
+    "Some source paragraphs contain simplifications/errors; do not generalize their figure captions or anatomy claims.",
+    "Nutrient mobility, pH availability, enzyme saturation, transport mechanisms, lactose/allergy distinctions and detailed lipid transport include enrichment; official SSC alignment needs teacher review.",
+    "Distractor plausibility, answer depth, Bangla terminology and pedagogical balance need independent subject review. The 320 count is items, not 320 independent learning objectives.",
+    "Technical schema, checksum and reader tests are not teacher/content/semantic-duplicate certification.",
+    "No Biology registration, database import, approval, publication or deployment performed."
+  ],
+  "technicalValidation": {
+    "focusedTests": 48,
+    "result": "PASS: 48/48 focused tests; both builders and git diff --check",
+    "commands": [
+      "python3 scripts/question-bank/build-ssc-biology-ch1.py --check",
+      "python3 scripts/question-bank/build-ssc-biology-drafts.py --check",
+      "NODE_PATH=\"$PWD/.cache/biology-test-tools/node_modules\" node --test tests/ssc-biology*.test.cjs",
+      "git diff --check"
+    ]
+  },
+  "backgroundSourcesRead": [
+    {
+      "url": "https://www.biologybd.com/9t5.html",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "purpose": "Chapter headings/objectives and early food material only; OCR errors and truncated body."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/31-1-nutritional-requirements-of-plants",
+      "chunksRead": [
+        1,
+        2
+      ],
+      "purpose": "Mineral roles, quantity classification and omission experiments."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production",
+      "chunksRead": [
+        1,
+        2
+      ],
+      "purpose": "Food energy, essential nutrients, vitamins and fiber."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/34-3-digestive-system-processes",
+      "chunksRead": [
+        2,
+        3
+      ],
+      "purpose": "Digestion, absorption and lipid transport; body text preferred over misleading micelle caption."
+    },
+    {
+      "url": "https://openstax.org/books/biology-2e/pages/34-1-digestive-systems",
+      "chunksRead": [
+        3,
+        4,
+        5
+      ],
+      "purpose": "Mouth, tract, accessory organs and villus organization; no complete textbook verification."
+    },
+    {
+      "url": "https://www.cdc.gov/bmi/about/index.html",
+      "chunksRead": [
+        0
+      ],
+      "purpose": "BMI units, screening limits, age-specific interpretation."
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/food-safety",
+      "chunksRead": [
+        0
+      ],
+      "purpose": "Biological/chemical hazards, refrigeration limitations and antimicrobial misuse."
+    }
+  ],
+  "technicalTests": 48
+}

@@ -7,7 +7,8 @@ const React = require("react");
 const { renderToStaticMarkup } = require("react-dom/server");
 function load(path, deps = {}) {
   const mod = new Module(path);
-  mod.require = (n) => (n in deps ? deps[n] : require(n));
+  mod.require = (n) => n === "./auto-model-syllabus-schema" ? require("./helpers/auto-model-syllabus-schema.cjs") :
+    (n in deps ? deps[n] : (require("./helpers/paper-editing.cjs").dependencies[n] || require(n)));
   mod._compile(
     ts.transpileModule(fs.readFileSync(path, "utf8"), {
       compilerOptions: {
@@ -201,4 +202,12 @@ test("cannot edit another user header or save without authentication/name", asyn
     false,
   );
   assert.equal(unauth.rows.size, 0);
+});
+
+test('Default header fields are deeply isolated across independent paper preparations',()=>{
+ const original=lib.newHeader(),before=JSON.stringify(original),a=lib.newHeader(),b=lib.newHeader();
+ for(const key of Object.keys(a.fields))assert.notEqual(a.fields[key],b.fields[key]);
+ a.fields.subject.value='HSC private title';a.fields.subject.enabled=!a.fields.subject.enabled;
+ a.fields.setCode.value='Changed only here';
+ assert.equal(JSON.stringify(original),before);assert.equal(JSON.stringify(b),before);assert.equal(JSON.stringify(lib.newHeader()),before);
 });

@@ -69,8 +69,8 @@ export default function AdminAIApprovals() {
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm mb-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
         <div>
-          <h2 className="text-lg font-bold text-slate-800">AI Generated Questions (Pending Approval)</h2>
-          <p className="text-xs text-slate-500">এআই-এর তৈরি প্রশ্নগুলো এখানে দেখতে পাবেন। প্রয়োজনে এডিট করে অ্যাপ্রুভ করুন।</p>
+          <h2 className="text-lg font-bold text-slate-800">সফটওয়্যার Generated Questions (Pending Approval)</h2>
+          <p className="text-xs text-slate-500">সফটওয়্যার-এর তৈরি প্রশ্নগুলো এখানে দেখতে পাবেন। প্রয়োজনে এডিট করে অ্যাপ্রুভ করুন।</p>
         </div>
         <div className="flex gap-2">
           <button onClick={selectAll} className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50">
@@ -87,7 +87,7 @@ export default function AdminAIApprovals() {
       {msg && <div className="mb-4 flex items-center gap-2 rounded-xl bg-blue-50 p-3 text-sm font-semibold text-blue-700"><AlertCircle size={16} /> {msg}</div>}
 
       {questions.length === 0 ? (
-        <p className="py-8 text-center text-slate-500">কোনো নতুন এআই প্রশ্ন পাওয়া যায়নি।</p>
+        <p className="py-8 text-center text-slate-500">কোনো নতুন সফটওয়্যার প্রশ্ন পাওয়া যায়নি।</p>
       ) : (
         <div className="grid gap-3 max-h-[600px] overflow-y-auto pr-2">
           {questions.map((q, i) => {
