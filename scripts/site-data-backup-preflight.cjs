@@ -9,4 +9,11 @@ function prerequisites(env){
  return {ok:issues.length===0,issues};
 }
 module.exports={prerequisites};
-if(require.main===module){const result=prerequisites(process.env);console.log(JSON.stringify(result));if(!result.ok)process.exitCode=1;}
+if(require.main===module){
+ const result=prerequisites(process.env);console.log(JSON.stringify(result));
+ if(!result.ok){
+  // Fixed codes only; annotations remain readable even when raw runner logs are unavailable.
+  if(process.env.GITHUB_ACTIONS==='true')for(const issue of result.issues)console.error(`::error::Backup prerequisite: ${issue}`);
+  process.exitCode=1;
+ }
+}
