@@ -1,0 +1,72 @@
+{
+  "status": "PRODUCTION_DEPLOYMENT_AND_READONLY_DB_SMOKE_VERIFIED",
+  "projectId": "prj_gJuVKTIvUtieGaJr7mitBHdC05Ze",
+  "teamId": "team_udwSdFTMBVOe3Fc4o0BT6foW",
+  "sourceCommit": "4f0f9dd7f6943d4d87c4d6b8df0ef72f10f15d71",
+  "deploymentId": "dpl_661LwZcx53L4BgYjXhreFLpFn5Ea",
+  "target": "production",
+  "buildCommandForThisDeploymentOnly": "npm run build && node scripts/check-auto-model-upgrade.cjs",
+  "previousProductionDeployment": "dpl_8AL43oFprgvLmc9NYWfqcPRSrDJA",
+  "previousProductionCommit": "5d0df6bb4b708db1717fbbd72abb1900c281f53d",
+  "duplicatePreviewCanceled": "dpl_BejGA5ES7hiHBsoCQ3Ls8bfM6PNQ",
+  "duplicatePreviewCancelReason": "Same commit; release build was queued behind it. No active production deployment was canceled.",
+  "regressionTests": {
+    "passed": 461,
+    "failed": 0,
+    "fullRepositorySuite": false
+  },
+  "typecheck": "PASS",
+  "readyVerified": true,
+  "productionAliasVerified": true,
+  "databaseReadOnlySmokeVerified": true,
+  "authenticatedBrowserFlowVerified": false,
+  "liveAIGenerationVerified": false,
+  "biology": {
+    "authoredCanonical": 3840,
+    "targetCanonical": 4480,
+    "remaining": 640,
+    "importExecuted": false,
+    "approvalExecuted": false
+  },
+  "backupDriveId": "1V8X9vLUvwFbeAdq1VIY_MYHVx4MJrKB-",
+  "backupRemoteSizeAndMD5Verified": true,
+  "readySubstate": "PROMOTED",
+  "productionDomain": "https://proshnobook.com",
+  "productionAliasAssignedAtMs": 1795513153152,
+  "deploymentReadyAtMs": 1795513152936,
+  "productionBuild": "PASS; real Prisma engine/client generated, webpack compiled, TypeScript and all41static pages finished; read-only DB probe passed",
+  "postDeploymentPublicChecks": {
+    "liveness": {
+      "url": "https://proshnobook.com/api/health",
+      "status": "ok",
+      "check": "liveness",
+      "databaseReadinessClaim": false
+    },
+    "builderLanding": "Public landing fetched successfully; no private question content exposed.",
+    "unauthenticatedAutoModel": "Fetched registered Math Auto Model URL; correctly returned login page. Authenticated teacher/student/paid-AI browser flow not exercised."
+  },
+  "runtimeRegressionTests": {
+    "passed": 954,
+    "failed": 0,
+    "overlapsFocused461": true,
+    "fullRepositorySuite": false
+  },
+  "accessRegressionTests": {
+    "passed": 41,
+    "failed": 0,
+    "overlapsOtherRuns": true
+  },
+  "productionDBProbe": {
+    "modelsVerified": 20,
+    "physicsApprovedRowsScanned": 6400,
+    "chemistryApprovedRowsScanned": 8113,
+    "questionMutation": false,
+    "providerRequest": false
+  },
+  "limitations": [
+    "No authenticated browser or live paid AI end-to-end test",
+    "Not a claim all repository tests ran",
+    "No Biology questions imported or approved; 640 remain unauthored",
+    "No independent content/teacher certification"
+  ]
+}

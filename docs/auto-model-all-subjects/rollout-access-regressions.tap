@@ -1,0 +1,258 @@
+TAP version 13
+# Subtest: direct builder data request denies anonymous and unpaid before returning editor content
+ok 1 - direct builder data request denies anonymous and unpaid before returning editor content
+  ---
+  duration_ms: 139.154115
+  type: 'test'
+  ...
+# Subtest: paid/package/admin server authorization is required even for manually posted IDs
+ok 2 - paid/package/admin server authorization is required even for manually posted IDs
+  ---
+  duration_ms: 55.718135
+  type: 'test'
+  ...
+# Subtest: mixed papers follow MCQ CQ SQ order regardless of selection order
+ok 3 - mixed papers follow MCQ CQ SQ order regardless of selection order
+  ---
+  duration_ms: 1.333346
+  type: 'test'
+  ...
+# Subtest: CQ and SQ have requested Bengali division headings
+ok 4 - CQ and SQ have requested Bengali division headings
+  ---
+  duration_ms: 0.236576
+  type: 'test'
+  ...
+# Subtest: select all toggles only the visible tab without clearing other types
+ok 5 - select all toggles only the visible tab without clearing other types
+  ---
+  duration_ms: 0.191647
+  type: 'test'
+  ...
+# Subtest: mixed ID API does not silently truncate later types at 200
+ok 6 - mixed ID API does not silently truncate later types at 200
+  ---
+  duration_ms: 48.146449
+  type: 'test'
+  ...
+# Subtest: CQ SQ column control is exposed and defaults to one
+ok 7 - CQ SQ column control is exposed and defaults to one
+  ---
+  duration_ms: 3.079685
+  type: 'test'
+  ...
+# Subtest: CQ groups fall back to ALL available groups for stale saved filters
+ok 8 - CQ groups fall back to ALL available groups for stale saved filters
+  ---
+  duration_ms: 0.278462
+  type: 'test'
+  ...
+# Subtest: fresh paper clears the prior CQ filter but keeps layout/header settings
+ok 9 - fresh paper clears the prior CQ filter but keeps layout/header settings
+  ---
+  duration_ms: 0.258252
+  type: 'test'
+  ...
+# {"event":"auth_attempt_store_unavailable","kind":"credentials"}
+# {"event":"auth_attempt_store_unavailable","kind":"credentials"}
+# Subtest: shared auth counters normalize identity, bound concurrent attempts, reset windows and never store email
+ok 10 - shared auth counters normalize identity, bound concurrent attempts, reset windows and never store email
+  ---
+  duration_ms: 73.201356
+  type: 'test'
+  ...
+# Subtest: auth counters fail closed on invalid state, store failures and backwards clocks
+ok 11 - auth counters fail closed on invalid state, store failures and backwards clocks
+  ---
+  duration_ms: 43.831795
+  type: 'test'
+  ...
+# Subtest: direct Credentials provider denies rate-limited requests before lookup/hash work; Google stays verified
+ok 12 - direct Credentials provider denies rate-limited requests before lookup/hash work; Google stays verified
+  ---
+  duration_ms: 53.555475
+  type: 'test'
+  ...
+# Subtest: health route is explicitly uncached liveness and exposes no environment or database details
+ok 13 - health route is explicitly uncached liveness and exposes no environment or database details
+  ---
+  duration_ms: 34.227167
+  type: 'test'
+  ...
+# Subtest: security headers preserve preview embedding and same-origin production printing
+ok 14 - security headers preserve preview embedding and same-origin production printing
+  ---
+  duration_ms: 3.294063
+  type: 'test'
+  ...
+# Subtest: registration checks attempts before lookup/hash, bounds new bcrypt secrets by UTF-8 bytes
+ok 15 - registration checks attempts before lookup/hash, bounds new bcrypt secrets by UTF-8 bytes
+  ---
+  duration_ms: 101.749448
+  type: 'test'
+  ...
+# Subtest: remaining PDF.js 3 browser entry points disable eval; error screen never renders raw exceptions
+ok 16 - remaining PDF.js 3 browser entry points disable eval; error screen never renders raw exceptions
+  ---
+  duration_ms: 44.931224
+  type: 'test'
+  ...
+# Subtest: public information pages render actual new identity, canonical local policy navigation and stable revision date
+ok 17 - public information pages render actual new identity, canonical local policy navigation and stable revision date
+  ---
+  duration_ms: 375.951606
+  type: 'test'
+  ...
+# Subtest: financial terms disclose current source/revenue/refund/manual payout rules without pretending PDF resale is live
+ok 18 - financial terms disclose current source/revenue/refund/manual payout rules without pretending PDF resale is live
+  ---
+  duration_ms: 48.136188
+  type: 'test'
+  ...
+# Subtest: privacy describes actual stored data and providers without invented deletion deadlines or universal ad tracking claims
+ok 19 - privacy describes actual stored data and providers without invented deletion deadlines or universal ad tracking claims
+  ---
+  duration_ms: 38.534949
+  type: 'test'
+  ...
+# Subtest: empty contact configuration honestly shows missing support rather than inventing channels or form
+ok 20 - empty contact configuration honestly shows missing support rather than inventing channels or form
+  ---
+  duration_ms: 31.349961
+  type: 'test'
+  ...
+# Subtest: published contact values retained; invalid or query-injected contacts not linked
+ok 21 - published contact values retained; invalid or query-injected contacts not linked
+  ---
+  duration_ms: 143.772883
+  type: 'test'
+  ...
+# Subtest: legacy policy aliases resolve to current pages instead of obsolete external domains
+ok 22 - legacy policy aliases resolve to current pages instead of obsolete external domains
+  ---
+  duration_ms: 9.191332
+  type: 'test'
+  ...
+# Subtest: practice and saved-test views render safe Chemistry figures and exactly four choice buttons
+ok 23 - practice and saved-test views render safe Chemistry figures and exactly four choice buttons
+  ---
+  duration_ms: 110.272239
+  type: 'test'
+  ...
+# Subtest: shared practice renderer does not turn arbitrary external image markdown into images
+ok 24 - shared practice renderer does not turn arbitrary external image markdown into images
+  ---
+  duration_ms: 0.595685
+  type: 'test'
+  ...
+# Subtest: ready final preview exposes explicit account save and visible result outside hidden phone toolbar
+ok 25 - ready final preview exposes explicit account save and visible result outside hidden phone toolbar
+  ---
+  duration_ms: 1.608639
+  type: 'test'
+  ...
+# Subtest: saved question papers includes authenticated ready receipt list and restores receipt selection via saved ID
+ok 26 - saved question papers includes authenticated ready receipt list and restores receipt selection via saved ID
+  ---
+  duration_ms: 0.311753
+  type: 'test'
+  ...
+# Subtest: all preview entry paths require an explicit successful save of the current snapshot
+ok 27 - all preview entry paths require an explicit successful save of the current snapshot
+  ---
+  duration_ms: 1.692518
+  type: 'test'
+  ...
+# Subtest: mobile save panel offers a direct save-then-preview action, reporting errors visibly
+ok 28 - mobile save panel offers a direct save-then-preview action, reporting errors visibly
+  ---
+  duration_ms: 0.54904
+  type: 'test'
+  ...
+# Subtest: save revalidation of the same receipt cannot reset edits or switch Preview back to Edit
+ok 29 - save revalidation of the same receipt cannot reset edits or switch Preview back to Edit
+  ---
+  duration_ms: 0.473843
+  type: 'test'
+  ...
+# Subtest: teacher/student cannot download paid resource by role, including stale ADMIN session
+ok 30 - teacher/student cannot download paid resource by role, including stale ADMIN session
+  ---
+  duration_ms: 119.989125
+  type: 'test'
+  ...
+# Subtest: exact PAID purchase allows ordinary user; fresh ADMIN bypass still works
+ok 31 - exact PAID purchase allows ordinary user; fresh ADMIN bypass still works
+  ---
+  duration_ms: 83.443434
+  type: 'test'
+  ...
+# Subtest: anonymous and deleted account cannot receive paid file URL or increment downloads
+ok 32 - anonymous and deleted account cannot receive paid file URL or increment downloads
+  ---
+  duration_ms: 119.866221
+  type: 'test'
+  ...
+# Subtest: free resources remain accessible; unsafe link or corrupt price fails before increment
+ok 33 - free resources remain accessible; unsafe link or corrupt price fails before increment
+  ---
+  duration_ms: 136.326726
+  type: 'test'
+  ...
+# Subtest: public paid video cards never embed or expose source even without login
+ok 34 - public paid video cards never embed or expose source even without login
+  ---
+  duration_ms: 64.657583
+  type: 'test'
+  ...
+# Subtest: saved paper metadata prefers snapshot and falls back to bank chapters
+ok 35 - saved paper metadata prefers snapshot and falls back to bank chapters
+  ---
+  duration_ms: 2.292075
+  type: 'test'
+  ...
+# Subtest: saved paper filters combine class subject name and chapter search
+ok 36 - saved paper filters combine class subject name and chapter search
+  ---
+  duration_ms: 0.478808
+  type: 'test'
+  ...
+# Subtest: teachers only list their owned papers and cannot see legacy or other owner
+ok 37 - teachers only list their owned papers and cannot see legacy or other owner
+  ---
+  duration_ms: 134.016922
+  type: 'test'
+  ...
+# Subtest: cross-owner deletion is refused and owner deletion succeeds
+ok 38 - cross-owner deletion is refused and owner deletion succeeds
+  ---
+  duration_ms: 185.284164
+  type: 'test'
+  ...
+# Subtest: ownerless legacy papers remain admin-only
+ok 39 - ownerless legacy papers remain admin-only
+  ---
+  duration_ms: 59.329688
+  type: 'test'
+  ...
+# Subtest: new saves include owner and scoped key; unpaid students cannot save
+ok 40 - new saves include owner and scoped key; unpaid students cannot save
+  ---
+  duration_ms: 95.927797
+  type: 'test'
+  ...
+# Subtest: paid student cannot create a paper under exam-only access
+ok 41 - paid student cannot create a paper under exam-only access
+  ---
+  duration_ms: 20.598929
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2514.608125

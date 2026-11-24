@@ -22,3 +22,13 @@ Retained: Chemistry's 12-chapter policy/IDs and chapter quotas, Physics's 14-cha
 Recovered chapter 1–12 canonical stock is **3,840/4,480**; **640 questions in chapters 13–14 remain unauthored**. Owner publication authorization is now explicitly recorded, but authorization is not a successful publication receipt. Biology is not registered, imported or approved by this Auto Model rollout. No independent teacher certification or complete semantic duplicate review is claimed.
 
 Deployment receipt/status is a separate artifact. This source document does not claim deployment success or live paid-AI/browser testing.
+
+## Verified production outcome
+
+Production deployment `dpl_661LwZcx53L4BgYjXhreFLpFn5Ea`, source `4f0f9dd7f6943d4d87c4d6b8df0ef72f10f15d71`, is **READY / PROMOTED**, with `proshnobook.com` independently confirmed in its assigned aliases. The production build completed with actual Prisma client/engine generation, webpack, TypeScript and 41 prerendered pages. Its explicitly requested read-only probe scanned **6,400 approved Physics rows and 8,113 approved Chemistry rows** and verified **20 complete models** with zero AI shortfall, consistent readiness/planning, preserved history privacy, editor validation and no dropped print questions. It made no question/approval/database mutation or provider request.
+
+A further broad application/runtime regression selection passed **954/954**, and the focused access/paid-builder/save/visibility run passed **41/41**. These overlap the focused 461 run; counts are not added into a fictitious unique total. Content-heavy SSC/class chapter suites and prepared-library are excluded from the 954 selection; this is not a full-suite claim.
+
+Postdeployment public reads: `/api/health` returned `status: ok, check: liveness`; `/question-builder` showed the public login/start landing; an unauthenticated registered Math Auto Model URL correctly returned the login page. No authenticated teacher browser session or real paid AI request was exercised. See `auto-model-all-subjects/production-upgrade-deployment.json` and `production-upgrade-readonly-smoke.json` for scoped receipts.
+
+**Biology is still 3,840/4,480, with 640 questions unauthored and no Biology import/approval/publication. The entire owner task is NOT completed.**
