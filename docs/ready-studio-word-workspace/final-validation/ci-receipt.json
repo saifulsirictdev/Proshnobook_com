@@ -1,0 +1,38 @@
+{
+  "kind": "post-push-ci-and-pr-checks",
+  "headCommit": "a394a9633de02050c0d2a354edf693d498360144",
+  "run": 45421417029,
+  "job": 138541643345,
+  "conclusion": "success",
+  "duration": "11m39s",
+  "url": "https://github.com/saifulsirictdev/Proshnobook_com/actions/runs/45421417029",
+  "stepsGreenIncluding": [
+    "npm run typecheck",
+    "Security tests",
+    "Real PostgreSQL auth/wallet/transfer/restore regressions",
+    "PDF browser/worker/render/print regression (local fixtures only)",
+    "Production build",
+    "Full built app Credentials roles and mobile browser regression (isolated DB)"
+  ],
+  "determinismEvidence": {
+    "firstRun": 45418171688,
+    "firstRunSha": "e2dcd98b90e0d44c4c010d5fc794aa80e8e312ed",
+    "firstRunConclusion": "failure",
+    "firstRunPhase": "english_6_1_390_print_and_pdf",
+    "failure": "Saved header missing from actual PDF",
+    "rootCause": "Header now follows the question font; pdfjs fragments synthetic-bold QmPaperKalpurush runs (no 700 face) into separatorless items and join(' ') corrupted the phrase. Validated by real Chromium print + pdfjs probe in sandbox.",
+    "rerunOfFirstRun": 45418171688,
+    "rerunConclusion": "failure (same phase, same assertion — deterministic, not flaky)",
+    "fixCommit": "a394a96 hasEOL line reconstruction in authenticated-flow.cjs"
+  },
+  "pr": 25,
+  "prState": "OPEN",
+  "prChecks": {
+    "check": "pass 11m39s",
+    "Vercel": "pass",
+    "Vercel Preview Comments": "pass"
+  },
+  "productionMerged": false,
+  "deployedByThisSession": false,
+  "certificationFlagsRemainFalse": true
+}

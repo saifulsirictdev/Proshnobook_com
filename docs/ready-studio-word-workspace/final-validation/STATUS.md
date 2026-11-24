@@ -35,6 +35,22 @@ Pull request: https://github.com/saifulsirictdev/Proshnobook_com/pull/25
   - native PDFs rendered for both viewports
     (`.cache/word-workspace-browser/ready-1280.pdf`, `ready-390.pdf`).
 
+## Pushed CI (branch head `a394a96`)
+
+- GitHub Actions run **45421417029: success (11m39s)** — every step green,
+  including production build and the isolated-DB built-app
+  Credentials/roles/mobile English workflow. PR checks: `check` pass,
+  Vercel preview pass (see `ci-receipt.json`).
+- The first push (`e2dcd98`, run 45418171688) failed deterministically at
+  `english_6_1_390_print_and_pdf` ("Saved header missing from actual
+  PDF"): a sandbox Chromium+pdfjs probe reproduced that pdfjs fragments
+  **synthetic-bold** QmPaperKalpurush runs (the font has no 700 face) into
+  separatorless items, so joining every item with a space corrupted the
+  phrase. A rerun of that same SHA failed identically (not a flake).
+  Fix (`a394a96`): reconstruct PDF lines on `hasEOL` before normalizing —
+  validated against the same probe (bold header fragments and wrapped
+  question lines both extract exactly), then CI went green.
+
 ## Delivered behavior (all seven authorized requirements)
 
 1. **Header follows the question font** (default Kalpurush in both preview
