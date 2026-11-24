@@ -25,6 +25,10 @@ jobs:
           --health-retries 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Preservation regressions compare chapter bytes to pinned ancestor commits.
+          # A depth-1 checkout cannot supply those historical trees.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
