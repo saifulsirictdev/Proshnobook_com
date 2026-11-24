@@ -84,7 +84,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   assert.equal(JSON.stringify(stored.output),originalTasks,'Layout edits must not mutate source tasks/keys');
   setPhase(label+'_repeat_save_header');
   const headerEditor=page.getByRole('region',{name:'ডিফল্ট হেডার সম্পাদনা',exact:true});
-  await click(headerEditor.getByRole('button',{name:'হেডার এডিট করুন',exact:true}));
+  await click(headerEditor.getByRole('button',{name:'প্রতিষ্ঠানের নাম সম্পাদনা করুন',exact:true}));
   const institute=`Workflow School ${grade} ${paper} ${width}`;
   await headerEditor.getByRole('textbox',{name:'প্রতিষ্ঠানের নাম',exact:true}).fill(institute);
   await click(headerEditor.getByRole('button',{name:'ডিফল্ট হেডার সেভ করুন',exact:true}));
@@ -112,7 +112,9 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   const {pathToFileURL}=require('node:url');
   const pdfjs=await import(pathToFileURL(require.resolve('pdfjs-dist/legacy/build/pdf.mjs')).href);
   const document=await pdfjs.getDocument({data:new Uint8Array(bytes),useSystemFonts:true,disableFontFace:true,isEvalSupported:false}).promise;
-  const text=[];for(let i=1;i<=document.numPages;i++)text.push((await(await document.getPage(i)).getTextContent()).items.map(v=>v.str).join(' '));
+  // Reconstruct lines on hasEOL: pdfjs splits synthetic-bold runs ("W","ork")
+  // into items without separators, while wrapped lines need a real break.
+  const text=[];for(let i=1;i<=document.numPages;i++){const items=(await(await document.getPage(i)).getTextContent()).items;let line='';for(const v of items){line+=v.str;if(v.hasEOL){text.push(line);line='';}}if(line)text.push(line);}
   const printed=normalize(text.join(' '));assert.ok(printed.includes(marker),'Saved question edit missing from actual PDF');assert.ok(printed.includes(institute),'Saved header missing from actual PDF');
   assert.ok(!printed.includes('প্রশ্নপত্র সেভ করুন'),'Editor controls leaked into PDF');
   // No complete suggested writing answer may appear in question-only print.
@@ -160,7 +162,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
     setPhase(templatePhase+'_return_default');
-    await click(page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}));
+    await click(page.locator('[data-default-header-restore]'));
     setPhase(templatePhase+'_save_default');
     await savePaper();
     setPhase(templatePhase+'_visible_default');

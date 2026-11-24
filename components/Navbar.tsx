@@ -95,7 +95,7 @@ export default function Navbar() {
                 <Link href="/ai-quiz" className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-amber-50/40 transition">
                   <Sparkles className="w-5 h-5 text-amber-500 mt-0.5" />
                   <div>
-                    <div className="text-sm font-semibold text-gray-800">AI কুইজ জেনারেটর</div>
+                    <div className="text-sm font-semibold text-gray-800">সফটওয়্যার কুইজ জেনারেটর</div>
                     <div className="text-xs text-gray-500">যেকোনো টপিকের ইনস্ট্যান্ট কুইজ</div>
                   </div>
                 </Link>
@@ -182,7 +182,7 @@ export default function Navbar() {
             🎓 ভর্তি ও NTRCA প্রস্তুতি
           </Link>
           <Link href="/ai-quiz" className="block px-3 py-2 text-base font-medium text-blue-600 font-semibold bg-blue-50 rounded-lg">
-            ⚡ AI কুইজ প্র্যাকটিস
+            ⚡ সফটওয়্যার কুইজ প্র্যাকটিস
           </Link>
           <Link href="/tools/gpa-calculator" className="block px-3 py-2 text-base font-medium text-gray-800 rounded-lg hover:bg-gray-50">
             🧮 স্টুডেন্ট টুলস (GPA/রিসাইজার)

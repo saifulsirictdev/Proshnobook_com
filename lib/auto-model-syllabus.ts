@@ -13,7 +13,7 @@ export function autoModelTopics(category:string,subject:string){
 }
 export function autoModelSetupSummary(category:string,subject:string,variant:string){
   if(!["MCQ","CQ"].includes(variant)||!autoModelTopics(category,subject).length)return null;
-  return {title:`${subject} — নির্বাচিত সিলেবাসের মডেল`,totalMarks:"আপনার সিলেবাস অনুযায়ী",minutes:"সিলেবাস অনুযায়ী",offered:"পরের ধাপে ক্যাটাগরি/টপিক নির্বাচন করুন এবং নির্ধারিত মানবণ্টন দিন।",instructions:"বইয়ে পূর্ণ মডেলের স্টক থাকলে শুধু ডাটাবেজ, AI বন্ধ। পূর্ণ স্টক না থাকলেই কেবল ঘাটতিতে AI। মানবণ্টন অনুমান করা হবে না।"};
+  return {title:`${subject} — নির্বাচিত সিলেবাসের মডেল`,totalMarks:"আপনার সিলেবাস অনুযায়ী",minutes:"সিলেবাস অনুযায়ী",offered:"পরের ধাপে ক্যাটাগরি/টপিক নির্বাচন করুন এবং নির্ধারিত মানবণ্টন দিন।",instructions:"বইয়ে পূর্ণ মডেলের স্টক থাকলে শুধু ডাটাবেজ, সফটওয়্যার বন্ধ। পূর্ণ স্টক না থাকলেই কেবল ঘাটতিতে সফটওয়্যার। মানবণ্টন অনুমান করা হবে না।"};
 }
 export function resolveSyllabusSelection(raw:unknown){
   const request=autoModelSelectionSchema.parse(raw),catalog=autoModelTopics(request.category,request.subject);
@@ -22,7 +22,7 @@ export function resolveSyllabusSelection(raw:unknown){
   const topics=request.topics.length?request.topics:catalog;
   const registered=autoModelBlueprint(request.category,request.subject,request.variant);
   if(registered&&request.syllabus)throw Error("নিবন্ধিত বিষয়ের মানবণ্টন বদলানো যাবে না।");
-  if(!registered&&!request.syllabus)throw Error("এই বিষয়ের নির্ধারিত পূর্ণমান, সময়, প্রশ্নসংখ্যা ও সিলেবাসের নির্দেশনা দিন; AI অনুমান করবে না।");
+  if(!registered&&!request.syllabus)throw Error("এই বিষয়ের নির্ধারিত পূর্ণমান, সময়, প্রশ্নসংখ্যা ও সিলেবাসের নির্দেশনা দিন; সফটওয়্যার অনুমান করবে না।");
   const p=request.syllabus;
   if(p?.sections.some(s=>s.topics?.some(t=>!topics.includes(t))))throw Error("বিভাগের টপিকও নির্বাচিত সিলেবাসের মধ্যে থাকতে হবে।");
   if(p&&p.sections.some(s=>request.variant==="MCQ"?s.kind!=="MCQ":s.kind==="MCQ"))throw Error("মডেলের ধরন ও বিভাগ মিলছে না।");

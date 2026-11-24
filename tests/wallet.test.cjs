@@ -97,7 +97,7 @@ function setup() {
                     ? load("lib/wallet.ts")
                     : id.startsWith("@/lib/")
                       ? load(id.replace("@/", "") + ".ts")
-                      : require(id);
+                      : (require("./helpers/paper-editing.cjs").dependencies[id] || require(id));
     m._compile(
       ts.transpileModule(fs.readFileSync(file, "utf8"), {
         compilerOptions: {

@@ -35,9 +35,12 @@ export const pageEditSchema = z
         z.object({
           x: z.number().min(0).max(0.95),
           y: z.number().min(0).max(0.98),
-          text: z.string().max(500),
+          text: z.string().max(10000),
+          w: z.number().min(0.001).max(1).optional(),
+          h: z.number().min(0.001).max(1).optional(),
+          style: z.object({bold:z.boolean().optional(),italic:z.boolean().optional(),underline:z.boolean().optional(),color:z.string().regex(/^#[a-f0-9]{6}$/i).optional(),align:z.enum(["left","center","right"]).optional()}).optional(),
           size: z.number().min(10).max(60),
-        }),
+        }).refine(t => (t.w === undefined || t.x+t.w <= 1.001) && (t.h === undefined || t.y+t.h <= 1.001), "Text box outside page"),
       )
       .max(30),
   })

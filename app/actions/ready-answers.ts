@@ -36,7 +36,7 @@ export async function explainReadyQuestion(raw: unknown) {
       .object({ question: z.string().trim().min(10).max(4000) })
       .parse(raw);
     if (!process.env.DEEPSEEK_API_KEY)
-      return { ok: false as const, error: "AI API configuration নেই।" };
+      return { ok: false as const, error: "সফটওয়্যার API configuration নেই।" };
     // One request per 30 seconds per admin, shared across server instances.
     const key = "ready-ai-limit:" + user.id;
     await db.setting.upsert({
@@ -84,7 +84,7 @@ export async function explainReadyQuestion(raw: unknown) {
     return {
       ok: false as const,
       error:
-        "AI খসড়া তৈরি হয়নি। প্রশ্ন/অপশন, সংযোগ ও provider configuration পরীক্ষা করুন।",
+        "সফটওয়্যার খসড়া তৈরি হয়নি। প্রশ্ন/অপশন, সংযোগ ও provider configuration পরীক্ষা করুন।",
     };
   }
 }

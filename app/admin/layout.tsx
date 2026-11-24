@@ -48,7 +48,7 @@ const QB_LINKS: QuickLink[] = [
   {
     href: "/admin/questions/extract",
     label: "PDF/ছবি থেকে প্রশ্ন",
-    sub: "AI দিয়ে প্রশ্ন তোলা",
+    sub: "সফটওয়্যার দিয়ে প্রশ্ন তোলা",
     Icon: FileUp,
   },
   {

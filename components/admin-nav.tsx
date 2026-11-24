@@ -38,7 +38,7 @@ const items = [
   ["Media", "/admin/media", Images],
   ["Notices", "/admin/notices", Megaphone],
   ["Materials & Videos", "/admin/pdf", FileUp],
-  ["AI Questions", "/admin/ai", Sparkles],
+  ["সফটওয়্যার Questions", "/admin/ai", Sparkles],
   ["Model Tests", "/admin/tests", ListChecks],
   ["Users", "/admin/users", Users],
   ["Site settings", "/admin/settings", Settings],

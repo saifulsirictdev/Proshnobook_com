@@ -164,7 +164,7 @@ export default async function ProfilePage() {
     { href: "/model-test", icon: "🎯", label: "মডেল টেস্ট" },
     { href: "/model-test/leaderboard", icon: "🏆", label: "Leaderboard" },
     { href: "/packages", icon: "👑", label: "প্যাকেজ" },
-    { href: "/exam", icon: "🤖", label: "AI পরীক্ষা" },
+    { href: "/exam", icon: "🤖", label: "সফটওয়্যার পরীক্ষা" },
     { href: "/tests", icon: "📚", label: "প্র্যাকটিস টেস্ট" },
   ];
 

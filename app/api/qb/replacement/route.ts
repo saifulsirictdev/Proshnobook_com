@@ -1,3 +1,9 @@
+import { auth } from "@/auth";
+import {
+  requirePaidQuestions,
+  walletTransaction,
+  quoteInTransaction,
+} from "@/lib/wallet";
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { POST as loadQuestions } from "../questions/route";
@@ -18,6 +24,17 @@ export async function POST(req: Request) {
   const parsed = requestSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success)
     return NextResponse.json({ error: "অবৈধ অনুরোধ।" }, { status: 400 });
+  const user = (await auth())?.user;
+  if (!user?.id || user.role === "STUDENT")
+    return NextResponse.json({ error: "লগইন করুন।" }, { status: 401 });
+  try {
+    await requirePaidQuestions(user.id, [parsed.data.id]);
+  } catch {
+    return NextResponse.json(
+      { error: "মূল প্রশ্নের প্রবেশাধিকার যাচাই হয়নি।" },
+      { status: 402 },
+    );
+  }
   try {
     const original = await db.question.findFirst({
       where: { id: parsed.data.id, approved: true },
@@ -38,19 +55,51 @@ export async function POST(req: Request) {
       orderBy: { createdAt: "desc" },
       take: 100,
     });
-    const chosen = candidates.find((q) => type(q) === type(original));
-    if (!chosen)
+    const related = candidates
+      .filter((q) => type(q) === type(original))
+      .slice(0, 8);
+    if (!related.length)
       return NextResponse.json(
         { error: "এই অধ্যায়ে একই ধরনের বিকল্প প্রশ্ন পাওয়া যায়নি।" },
         { status: 404 },
       );
-    return loadQuestions(
-      new Request(req.url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ids: [chosen.id] }),
-      }),
+    // Never return full text for unpaid alternatives. Quote in one transaction,
+    // then use the existing authenticated/paid loader for the accessible subset.
+    const quote = await walletTransaction((tx) =>
+      quoteInTransaction(
+        tx,
+        user.id!,
+        related.map((q) => q.id),
+      ),
     );
+    const locked = new Set(
+      quote.total === 0 ? [] : quote.unpaid.map((q) => q.id),
+    );
+    const ids = related.filter((q) => !locked.has(q.id)).map((q) => q.id);
+    let items: { id: string }[] = [];
+    if (ids.length) {
+      const loaded = await loadQuestions(
+        new Request(req.url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ids }),
+        }),
+      );
+      if (!loaded.ok) return loaded;
+      items = (await loaded.json()).items || [];
+    }
+    const byId = new Map(items.map((q) => [q.id, q]));
+    return NextResponse.json({
+      alternatives: related.map((q, i) => ({
+        id: q.id,
+        label: `বিকল্প ${i + 1}`,
+        subject: q.subject,
+        topic: q.topic,
+        type: type(q),
+        locked: locked.has(q.id),
+        ...(byId.has(q.id) ? { item: byId.get(q.id) } : {}),
+      })),
+    });
   } catch {
     return NextResponse.json(
       { error: "প্রশ্ন বদলানো যায়নি। আবার চেষ্টা করুন।" },

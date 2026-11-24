@@ -25,8 +25,8 @@ function App(){
  const [grade,setGrade]=useState(8),[fail,setFail]=useState(false),[request,setRequest]=useState(0);
  const items=[{id:'q1',text:'Choose the correct answer.',type:'MCQ',category:'Class '+grade,subject:grade===8?'English 2nd Paper':'বাংলা',options:{a:'A',b:'B',c:'C',d:'D'},correct:'a'}];
  const update=next=>{setS(next);localStorage.setItem('settings',JSON.stringify(next));};
- return <main><div data-noprint><button id="selection" onClick={()=>setGrade(7)}>Change selection</button><button id="metadata" onClick={()=>update({...s,info:{...s.info,minutes:'2 ঘণ্টা',marks:'50'}})}>Set metadata</button><button id="custom" onClick={()=>{const h=paperHeaderSchema.parse({enabled:true});h.fields.institute.value='CUSTOM SMART SCHOOL';update(applyHeader(s,h));}}>Apply Smart</button><button id="failure" onClick={()=>setFail(!fail)}>Toggle failure</button><button id="toolbar-edit" onClick={()=>setRequest(v=>v+1)}>Toolbar edit</button><Editor settings={s} items={items} editRequest={request} update={update} onSave={async next=>{if(fail)return {ok:false,error:'Test save failed'};update(next);return {ok:true};}}/></div>
- <div id="paper" className="paper-builder-root"><Preview s={s} defaultHeaderValues={resolveDefaultHeader(s,items)} questions={items.map(q=>({q,opts:Object.entries(q.options),ci:0}))} type="MCQ" setName="ক" duplicate={new Set()} onImageSize={()=>{}} title="MCQ"/></div></main>;
+ return <main><div data-noprint><button id="selection" onClick={()=>setGrade(7)}>Change selection</button><button id="metadata" onClick={()=>update({...s,info:{...s.info,minutes:'2 ঘণ্টা',marks:'50'}})}>Set metadata</button><button id="custom" onClick={()=>{const h=paperHeaderSchema.parse({enabled:true});h.fields.institute.value='CUSTOM SMART SCHOOL';update(applyHeader(s,h));}}>Apply Smart</button><button id="failure" onClick={()=>setFail(!fail)}>Toggle failure</button><button id="toolbar-edit" onClick={()=>setRequest(v=>v+1)}>Toolbar edit</button>{s.header.enabled&&<button onClick={()=>update(withDefaultHeader(s,true))}>ডিফল্ট হেডারে ফিরুন</button>}</div>
+ <div id="paper" className="paper-builder-root"><Preview s={s} defaultHeaderEditor={<Editor settings={s} items={items} editRequest={request} update={update} onSave={async next=>{if(fail)return {ok:false,error:'Test save failed'};update(next);return {ok:true};}}/>} defaultHeaderValues={resolveDefaultHeader(s,items)} questions={items.map(q=>({q,opts:Object.entries(q.options),ci:0}))} type="MCQ" setName="ক" duplicate={new Set()} onImageSize={()=>{}} title="MCQ"/></div></main>;
 }createRoot(document.getElementById('root')).render(<App/>);`,
 );
 require("esbuild").buildSync({
@@ -109,6 +109,9 @@ fs.writeFileSync(
       await page.reload();
       await page.locator(".paper-sheet").first().waitFor();
       await page.evaluate(() => document.fonts.ready);
+      assert.equal(await page.locator(".paper-measure button,.paper-measure textarea").count(), 0);
+      assert.equal(await page.locator(".default-header-editor").count(), 1);
+      assert.equal(await page.locator(".paper-sheet .default-header-editor").count(), 1);
       const editor = page.getByRole("region", {
           name: "ডিফল্ট হেডার সম্পাদনা",
         }),
@@ -133,6 +136,10 @@ fs.writeFileSync(
       await page
         .getByLabel("পরীক্ষার নাম", { exact: true })
         .fill("টেস্ট পরীক্ষা ২০২৭");
+      await page.emulateMedia({media:"print"});
+      assert.ok(!(await paper.innerText()).includes("টেস্ট পরীক্ষা ২০২৭"));
+      assert.equal(await page.getByLabel("পরীক্ষার নাম", {exact:true}).isVisible(),false);
+      await page.emulateMedia({media:"screen"});
       await page.getByRole("button", { name: "বাতিল", exact: true }).click();
       assert.ok(!(await paper.textContent()).includes("টেস্ট পরীক্ষা ২০২৭"));
       await page.locator("#toolbar-edit").click();
@@ -162,7 +169,7 @@ fs.writeFileSync(
       assert.ok((await paper.textContent()).includes("২ ঘণ্টা"));
       assert.ok((await paper.textContent()).includes("৫০"));
       await page
-        .getByRole("button", { name: "হেডার এডিট করুন", exact: true })
+        .getByRole("button", { name: "প্রতিষ্ঠানের নাম সম্পাদনা করুন", exact: true })
         .click();
       await page.getByLabel("শ্রেণি", { exact: true }).fill("বিশেষ শ্রেণি");
       await page
@@ -170,7 +177,7 @@ fs.writeFileSync(
         .click();
       assert.ok((await paper.textContent()).includes("বিশেষ শ্রেণি"));
       await page
-        .getByRole("button", { name: "হেডার এডিট করুন", exact: true })
+        .getByRole("button", { name: "প্রতিষ্ঠানের নাম সম্পাদনা করুন", exact: true })
         .click();
       await page
         .getByRole("button", { name: "শ্রেণি: অটোতে ফিরুন", exact: true })
@@ -181,27 +188,39 @@ fs.writeFileSync(
       assert.ok((await paper.textContent()).includes("সপ্তম শ্রেণি"));
       await page.locator("#failure").click();
       await page
-        .getByRole("button", { name: "হেডার এডিট করুন", exact: true })
+        .getByRole("button", { name: "প্রতিষ্ঠানের নাম সম্পাদনা করুন", exact: true })
         .click();
       await page.getByLabel("পরীক্ষার নাম", { exact: true }).fill("UNSAVED");
       await page
         .getByRole("button", { name: "ডিফল্ট হেডার সেভ করুন", exact: true })
         .click();
       assert.ok((await editor.textContent()).includes("Test save failed"));
+      assert.equal(await page.getByLabel("পরীক্ষার নাম", {exact:true}).inputValue(), "UNSAVED");
+      await page.reload();
+      await page.locator(".paper-sheet").first().waitFor();
       assert.ok(!(await paper.textContent()).includes("UNSAVED"));
+      await page.locator("#failure").click();
+      await page.getByRole("button", {name:"পরীক্ষার নাম সম্পাদনা করুন",exact:true}).click();
       await page.getByLabel("পরীক্ষার নাম", { exact: true }).press("Escape");
       await page.locator("#failure").click();
       const overflow = await editor.evaluate(
         (el) => el.scrollWidth > el.clientWidth + 1,
       );
       assert.equal(overflow, false, "editor horizontal overflow at " + width);
+      const headerGeometry=await page.evaluate(()=>({
+        measured:document.querySelector('[data-measure-header]').getBoundingClientRect().height,
+        actual:document.querySelector('.paper-sheet .paper-heading').getBoundingClientRect().height,
+      }));
+      assert.ok(Math.abs(headerGeometry.measured-headerGeometry.actual)<1,JSON.stringify(headerGeometry));
       await editor.screenshot({
         path: path.join(out, "editor-" + width + ".png"),
       });
       // A previous iteration explicitly emulates screen media: switch back
       // before PDF generation, not only before checking control visibility.
       await page.emulateMedia({ media: "print" });
-      assert.equal(await editor.isVisible(), false);
+      assert.equal(await editor.locator("button").count(), 6);
+      assert.equal(await editor.locator("button").first().isVisible(), false);
+      assert.equal(await editor.locator(".default-header-print-only").isVisible(), true);
       await page.pdf({
         path: path.join(out, "paper-" + width + ".pdf"),
         printBackground: true,

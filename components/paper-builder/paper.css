@@ -201,3 +201,9 @@
 .english-reference-question .english-part-heading { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 .english-reference-question p { margin: .15em 0; }
 .english-reference-question section > div > p { padding-left: 1.8em; }
+
+/* A divider occupies the gap, not the text lane. Every lane now has precisely
+   the width used by the hidden measurement tree (including the left lane). */
+.paper-column { position: relative; min-width: 0; }
+.paper-column-divider { position: absolute; top: 0; bottom: 0; border-left: 1px solid #888; pointer-events: none; }
+.paper-measure { box-sizing: border-box; overflow-wrap: anywhere; }

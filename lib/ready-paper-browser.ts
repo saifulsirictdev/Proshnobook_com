@@ -1,3 +1,5 @@
+import { drawReadyText } from "./ready-text-block";
+import { paperFonts, type PaperFont } from "./paper-fonts";
 import {
   cleanPixels,
   reduceBlueWatermark,
@@ -64,6 +66,7 @@ export async function renderEdited(
   url: string,
   edit: PageEdit,
   includeMarks = true,
+  font: PaperFont = "kalpurush",
 ) {
   const image = await imageFrom(url),
     canvas = document.createElement("canvas");
@@ -103,17 +106,9 @@ export async function renderEdited(
         m.h * canvas.height,
       );
     }
-    for (const t of edit.texts) {
-      ctx.fillStyle = "#111";
-      ctx.font = `${(t.size * canvas.width) / 800}px sans-serif`;
-      ctx.textBaseline = "top";
-      ctx.fillText(
-        t.text,
-        t.x * canvas.width,
-        t.y * canvas.height,
-        (1 - t.x) * canvas.width,
-      );
-    }
+    const fontFamily = paperFonts[font].replace(/var\((--[a-z-]+)\)/g, (_,name)=>getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "serif");
+    await document.fonts.load(`16px ${fontFamily}`);
+    for (const t of edit.texts) drawReadyText(ctx,t,canvas.width,canvas.height,fontFamily);
   }
   const output = document.createElement("canvas");
   output.width = Math.max(

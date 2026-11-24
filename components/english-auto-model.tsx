@@ -36,7 +36,7 @@ export default function EnglishAutoModel({ grade, paper = 1, itemIds }: { grade:
   return <main className="mx-auto max-w-3xl space-y-5 px-4 py-8">
     {busy && <PreparationPopup subject="English" stage={1} neutralBranding />}
     <h1 className="text-2xl font-bold">Class {grade} · English {paper === 2 ? "2nd" : "1st"} Paper — {itemIds ? "Question Items" : "Full Model Test"}</h1>
-    <p>ডাটাবেজের উপযুক্ত অংশ আগে নেওয়া হবে; শুধু অনুপস্থিত অংশ AI তৈরি করবে। নির্ভরযোগ্য textbook extract ছাড়া seen passage বানানো হবে না। প্রশ্ন ও উত্তর যাচাই করে তারপর Page Set-up করুন।</p>
+    <p>ডাটাবেজের উপযুক্ত অংশ আগে নেওয়া হবে; শুধু অনুপস্থিত অংশ সফটওয়্যার তৈরি করবে। নির্ভরযোগ্য textbook extract ছাড়া seen passage বানানো হবে না। প্রশ্ন ও উত্তর যাচাই করে তারপর Page Set-up করুন।</p>
     <p className="text-sm">বিদ্যমান class অনুযায়ী practice কাঠামো ব্যবহৃত হচ্ছে; বর্তমান সরকারি syllabus/মানবণ্টন মিলিয়ে নিন। {paper === 2 ? "প্রয়োজন হলে কিছুটা সময় লাগতে পারে। নতুন করে প্রস্তুতির চেষ্টা করলে প্রযোজ্য দৈনিক সীমা থেকে গণনা হতে পারে।" : "Seen ও Unseen passage-এর সঙ্গে সংশ্লিষ্ট প্রশ্ন একসঙ্গে থাকবে।"}</p>
     {busy && <p role="status">{paper === 1 ? "প্রশ্নগুলো নির্ধারিত ক্রমে সাজানো হচ্ছে…" : "সব অংশ স্বয়ংক্রিয়ভাবে নির্বাচন করে সম্পূর্ণ প্রশ্নপত্র প্রস্তুত করা হচ্ছে…"}</p>}
     {error && <p role="alert" className="rounded border border-amber-300 bg-amber-50 p-3">{error}</p>}

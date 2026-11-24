@@ -61,7 +61,7 @@ export default function PreparationPopup({
     >
       <div className="prep-badge">
         <Sparkles size={19} />
-        {BRAND.nameEn}{databaseOnly || neutralBranding ? "" : " AI"}
+        {BRAND.nameEn}{databaseOnly || neutralBranding ? "" : " সফটওয়্যার"}
       </div>
       <div className="prep-art" aria-hidden="true">
         <div className="prep-ring" />

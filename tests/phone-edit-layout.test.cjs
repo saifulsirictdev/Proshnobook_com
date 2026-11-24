@@ -9,12 +9,9 @@ test('phone-only edit layout keeps both panels visible without forcing a desktop
  assert.doesNotMatch(phone,/rp-stage-select/);
  assert.doesNotMatch(phone,/(?:zoom|transform|touch-action):/);
 });
-test('answer shortcut uses existing paid AI preview without unmounting background answer work',()=>{
+test('removed answer panels do not mount background work; lower workspace remains',()=>{
  assert.match(studio,/rp-stage-\$\{step\}/);
- assert.match(studio,/className="rp-answer-tools"/);
- assert.match(studio,/step === "edit" && paid && receipt && !adminPreset/);
- const shortcut=studio.slice(studio.indexOf('className="rp-phone-answer"'),studio.indexOf('{step === "select" &&'));
- assert.match(shortcut,/setPrintKind\("ai"\)/);assert.match(shortcut,/setStep\("preview"\)/);
- assert.match(shortcut,/উত্তরপত্র দেখুন/);
- assert.match(studio,/<AIAnswers/);assert.match(studio,/<AnswerAssistant/);
+ assert.doesNotMatch(studio,/<AIAnswers|<AnswerAssistant|className="rp-phone-answer"|className="rp-answer-tools"/);
+ assert.match(studio,/Save &amp; Print Preview/);
+ assert.match(studio,/<RasterTools/);
 });

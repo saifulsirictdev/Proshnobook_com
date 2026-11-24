@@ -165,6 +165,7 @@ export const settingsSchema = z.object({
         text: text(),
         options: z.record(z.string(), z.string()).optional(),
         stimulus: z.string().optional(),
+        englishText: z.record(z.string().max(200), z.string().max(10000)).refine(v=>Object.keys(v).length<=500).optional(),
         subQuestions: z
           .object({
             k: z.string(),

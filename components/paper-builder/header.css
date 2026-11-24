@@ -98,7 +98,7 @@
   color: #111;
   /* Hind Siliguri is a bundled Unicode Bangla font; the historical Adorsho
      asset is a legacy-encoded face and must not be the only Bangla fallback. */
-  font-family: var(--qk-body), var(--font-bn), var(--font-en), serif;
+  font-family: inherit;
   text-align: center;
   line-height: 1.45;
   padding: 0.15em 0 0.65em;
@@ -123,3 +123,18 @@
 .default-header-inline-input:focus, .default-header-inline-button:focus-visible { outline: 2px solid #059669; outline-offset: 2px; }
 .default-paper-header .default-header-meta-row > div > span:first-child { flex-shrink: 0; }
 .default-header-editor fieldset { border: 0; padding: 0; margin: 0; }
+
+/* The editor lives on the paper, never in a duplicate preview card. The value
+   box reserves exactly the same geometry for static measurement and buttons. */
+.default-header-editor { position: relative; }
+.default-header-value { display: block; padding: 1px 2px; border: 1px solid transparent; min-height: 1lh; }
+.default-header-inline-button, .default-header-inline-input { border: 0; padding: 0; border-radius: 0; }
+.default-header-inline-button:hover { outline: 1px dashed #94a3b8; }
+.default-header-actions { position: absolute; top: 100%; left: 0; right: 0; z-index: 50; padding: 12px; border: 1px solid #a7f3d0; border-radius: 8px; background: white; box-shadow: 0 8px 24px #0f172a26; text-align: left; font-weight: normal; font-size: 14px; line-height: 1.5; white-space: normal; }
+.default-header-message { position: absolute; top: 100%; right: 0; z-index: 51; background: #f0fdf4; padding: 4px 8px; font-weight: normal; }
+.default-header-editor:has(.default-header-actions) .default-header-message { top: auto; bottom: 100%; }
+.default-header-print-only { display: none; }
+@media print {
+  .default-header-print-only { display: block; }
+  .default-header-editor { position: static; }
+}

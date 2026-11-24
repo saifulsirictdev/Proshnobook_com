@@ -21,7 +21,7 @@ export async function callGeminiJson(
     });
     if (!res.ok) {
       console.error("gemini failed:", res.status, (await res.text()).slice(0, 300));
-      return { ok: false, error: "AI সার্ভিস সাড়া দিচ্ছে না। একটু পরে আবার চেষ্টা করুন।", status: 502 };
+      return { ok: false, error: "সফটওয়্যার সার্ভিস সাড়া দিচ্ছে না। একটু পরে আবার চেষ্টা করুন।", status: 502 };
     }
     const j = await res.json();
     const text: string = j.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
@@ -30,7 +30,7 @@ export async function callGeminiJson(
     if (e instanceof Error && e.name === "AbortError")
       return { ok: false, error: "অনেক সময় লাগছে। আবার চেষ্টা করুন।", status: 504 };
     console.error("gemini json failed:", e);
-    return { ok: false, error: "AI-এর উত্তর পড়া যায়নি। আবার চেষ্টা করুন।", status: 500 };
+    return { ok: false, error: "সফটওয়্যার-এর উত্তর পড়া যায়নি। আবার চেষ্টা করুন।", status: 500 };
   } finally {
     clearTimeout(timer);
   }

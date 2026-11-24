@@ -90,7 +90,7 @@ test('provider is bounded to requested gap and rejects duplicates, wrong types, 
  }finally{global.fetch=original;}
 });
 test('setup UI requires selected topics and explicit human marks; no automatic default syllabus',()=>{
- const code=fs.readFileSync('components/auto-model-setup.tsx','utf8');assert.match(code,/useState<string\[\]>\(\[\]\)/);assert.match(code,/ক্যাটাগরি ও টপিক নির্বাচন/);assert.match(code,/disabled=\{!resolved.plan/);assert.match(code,/AI পূর্ণমান অনুমান/);
+ const code=fs.readFileSync('components/auto-model-setup.tsx','utf8');assert.match(code,/useState<string\[\]>\(\[\]\)/);assert.match(code,/ক্যাটাগরি ও টপিক নির্বাচন/);assert.match(code,/disabled=\{!resolved.plan/);assert.match(code,/সফটওয়্যার পূর্ণমান অনুমান/);
  const client=fs.readFileSync('components/auto-model-preparation.tsx','utf8');assert.match(client,/step<101/);assert.match(client,/stepKey/);assert.match(client,/oldSettings/);assert.match(client,/autoModelSettings\(category, subject, variant, selection\)/);
  const page=fs.readFileSync('app/question-builder/auto-model/page.tsx','utf8');assert.match(page,/<AutoModelSetup/);
 });
@@ -113,7 +113,7 @@ test('setup checkbox interaction opens preparation with the exact selected sylla
   await React.act(async()=>view.render(React.createElement(m.exports.default,{category:'SSC',subject:'গণিত',variant:'MCQ'})));
   const button=[...document.querySelectorAll('button')].find(b=>b.textContent.includes('পূর্ণ মডেল তৈরি'));assert.equal(button.disabled,true);
   await React.act(async()=>document.querySelector('input[type=checkbox]').click());assert.equal(button.disabled,true);
-  await React.act(async()=>[...document.querySelectorAll('button')].find(b=>b.textContent.includes('বিনা AI-তে')).click());assert.equal(button.disabled,false);
+  await React.act(async()=>[...document.querySelectorAll('button')].find(b=>b.textContent.includes('বিনা সফটওয়্যার-তে')).click());assert.equal(button.disabled,false);
   await React.act(async()=>button.click());assert.equal(received.category,'SSC');assert.equal(received.subject,'গণিত');assert.equal(received.variant,'MCQ');assert.deepEqual(received.selection.topics,s.autoModelTopics('SSC','গণিত'));assert.equal(received.selection.syllabus,undefined);
  }finally{await React.act(async()=>view.unmount());dom.window.close();global.window=old.window;global.document=old.document;if(old.navigator)Object.defineProperty(global,'navigator',old.navigator);else delete global.navigator;delete global.IS_REACT_ACT_ENVIRONMENT;}
 });
@@ -146,7 +146,7 @@ test('book-wide complete approved stock disables AI even when the chosen topics 
  const old=process.env.DEEPSEEK_API_KEY;process.env.DEEPSEEK_API_KEY='test-only';try{
   const req=selection(),other=s.autoModelTopics(req.category,req.subject).find(t=>!req.topics.includes(t));assert.ok(other);
   const h=harness({rows:Array.from({length:30},(_,i)=>({...row('book'+i,other),approved:true}))});
-  const r=await h.run(req);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/AI বন্ধ/);
+  const r=await h.run(req);assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/সফটওয়্যার বন্ধ/);
   assert.equal(h.calls(),0);assert.equal(h.saved.length,0);assert.ok(h.events.every(e=>e[0]==='read'));
   const report=await h.inspect(req);assert.equal(report.ok,true);assert.equal(report.report.databaseOnly,true);assert.equal(report.report.complete,false);assert.equal(report.report.feasible,false);assert.equal(report.report.aiShortfall,0);assert.equal(report.report.stockShortfall,30);assert.equal(report.report.quotaBatchUpperBound,0);
   const bookRead=h.events.find(e=>e[1]?.where?.approved===true)[1];assert.equal(bookRead.where.subject,req.subject);assert.deepEqual(bookRead.where.topic.in,s.autoModelTopics(req.category,req.subject));

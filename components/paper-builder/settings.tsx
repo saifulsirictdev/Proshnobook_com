@@ -1,4 +1,5 @@
 "use client";
+import { paperMarginMode, paperMarginPresets } from "@/lib/paper-margins";
 import LayoutControls from "./layout-controls";
 import { useEffect, useRef } from "react";
 import { Download, X } from "lucide-react";
@@ -287,6 +288,16 @@ export default function PaperSettingsPanel({
               ]}
               onChange={(v) => cfg("align", v)}
             />
+            <label className="block text-sm">পেজ মার্জিন
+              <select aria-label="পেজ মার্জিন" className={field} value={paperMarginMode(s.cfg)} onChange={e => {
+                if (e.target.value === "custom") return;
+                update({...s,cfg:{...s.cfg,...paperMarginPresets[e.target.value as "normal" | "narrow"]}});
+              }}>
+                <option value="normal">Normal — সাধারণ</option>
+                <option value="narrow">Narrow — কম মার্জিন</option>
+                <option value="custom" disabled>Custom — নিজস্ব</option>
+              </select>
+            </label>
             {(
               [
                 "marginTop",

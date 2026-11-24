@@ -27,12 +27,12 @@ export async function prepareAutoModel(raw: unknown) {
   let lock="",lease="",added=0;
   try{
     const rows=await read();
-    if(rows.length>10000)return {ok:false as const,error:"এই প্রশ্নভান্ডারটি বড়; আরও নির্দিষ্ট টপিক নির্বাচন করুন। পূর্ণ যাচাই ছাড়া AI চালানো হয়নি।"};
+    if(rows.length>10000)return {ok:false as const,error:"এই প্রশ্নভান্ডারটি বড়; আরও নির্দিষ্ট টপিক নির্বাচন করুন। পূর্ণ যাচাই ছাড়া সফটওয়্যার চালানো হয়নি।"};
     const result=planSyllabusModel(rows,p);
     if(result.ok)return {ok:true as const,ids:result.ids,...("assignments" in result?{assignments:result.assignments}:{})};
     if(!result.missing.length)return {ok:false as const,error:"নির্বাচিত টপিক দিয়ে নির্ধারিত মানবণ্টন পূরণ সম্ভব নয়। বাধ্যতামূলক বিভাগ/অধ্যায়গুলো নির্বাচন করুন।",gaps:result.gaps};
-    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত টপিকে পর্যাপ্ত উপযুক্ত প্রশ্ন নেই; টপিক বদলান বা ডাটাবেজে প্রশ্ন যোগ করুন।",gaps:result.gaps};
-    if(!process.env.DEEPSEEK_API_KEY)return {ok:false as const,error:"ডাটাবেজে পূর্ণ মডেলের উপযুক্ত প্রশ্ন যথেষ্ট নেই এবং AI সংযোগ কনফিগার করা নেই।",gaps:result.gaps};
+    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল ডাটাবেজে আছে—সফটওয়্যার বন্ধ। নির্বাচিত টপিকে পর্যাপ্ত উপযুক্ত প্রশ্ন নেই; টপিক বদলান বা ডাটাবেজে প্রশ্ন যোগ করুন।",gaps:result.gaps};
+    if(!process.env.DEEPSEEK_API_KEY)return {ok:false as const,error:"ডাটাবেজে পূর্ণ মডেলের উপযুক্ত প্রশ্ন যথেষ্ট নেই এবং সফটওয়্যার সংযোগ কনফিগার করা নেই।",gaps:result.gaps};
     // Account-wide persistent lease prevents duplicate charges across tabs/selections.
     const key=`qbai:model-lock:${createHash("sha256").update(user.id).digest("hex")}`;
     await db.setting.deleteMany({where:{key,value:{lt:String(Date.now()-180000)}}});
@@ -47,7 +47,7 @@ export async function prepareAutoModel(raw: unknown) {
     if(next.ok)return {ok:true as const,ids:next.ids,...("assignments" in next?{assignments:next.assignments}:{})};
     if(!next.missing.length)return {ok:false as const,error:"নির্বাচিত সিলেবাস দিয়ে পূর্ণ মডেল হচ্ছে না।",gaps:next.gaps};
     // Recheck after acquiring the lease: approved stock may have been imported in another tab.
-    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল এখন ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত টপিকের ঘাটতি ডাটাবেজ থেকেই পূরণ করুন।",gaps:next.gaps};
+    if(await completeApprovedBook(p))return {ok:false as const,databaseOnly:true as const,error:"এই বই/বিষয়ের পূর্ণ মডেল এখন ডাটাবেজে আছে—সফটওয়্যার বন্ধ। নির্বাচিত টপিকের ঘাটতি ডাটাবেজ থেকেই পূরণ করুন।",gaps:next.gaps};
     // Same 60-batch/account/day budget as Chapter preparation; DB-only uses none.
     let reserved=false;const day=new Date().toISOString().slice(0,10);
     for(let i=0;i<DAILY_PREPARATION_BATCHES;i++){
@@ -62,7 +62,7 @@ export async function prepareAutoModel(raw: unknown) {
     }
     return {ok:false as const,pending:true as const,added,error:"ডাটাবেজের প্রশ্ন রাখা হয়েছে; ঘাটতির প্রশ্ন প্রস্তুত হচ্ছে।"};
   }catch{
-    return {ok:false as const,error:added?`${added}টি প্রশ্ন ব্যক্তিগত খসড়ায় সংরক্ষিত। প্রস্তুতি শেষ হয়নি; আবার চালালে সংরক্ষিত প্রশ্ন আগে নেওয়া হবে।`:"ডাটাবেজ/AI উত্তর যাচাই বা সংরক্ষণ করা যায়নি। কোনো অসম্পূর্ণ মডেল খোলা হয়নি। আবার চেষ্টা করুন।"};
+    return {ok:false as const,error:added?`${added}টি প্রশ্ন ব্যক্তিগত খসড়ায় সংরক্ষিত। প্রস্তুতি শেষ হয়নি; আবার চালালে সংরক্ষিত প্রশ্ন আগে নেওয়া হবে।`:"ডাটাবেজ/সফটওয়্যার উত্তর যাচাই বা সংরক্ষণ করা যায়নি। কোনো অসম্পূর্ণ মডেল খোলা হয়নি। আবার চেষ্টা করুন।"};
   }finally{if(lock)await db.setting.deleteMany({where:{key:lock,value:lease}}).catch(()=>{});}
 }
 
@@ -78,7 +78,7 @@ export async function inspectAutoModel(raw: unknown) {
       select: {id: true, text: true, topic: true, options: true, correct: true, explanation: true},
       orderBy: [{approved: "desc" as const}, {id: "asc" as const}], take: 10001,
     });
-    if (rows.length > 10000) return {ok: false as const, error: "পূর্ণ স্টক যাচাইয়ের সীমা ছাড়িয়েছে; আরও নির্দিষ্ট টপিক নির্বাচন করুন। AI চালানো হয়নি।"};
+    if (rows.length > 10000) return {ok: false as const, error: "পূর্ণ স্টক যাচাইয়ের সীমা ছাড়িয়েছে; আরও নির্দিষ্ট টপিক নির্বাচন করুন। সফটওয়্যার চালানো হয়নি।"};
     const report = modelReadiness(rows, plan);
     const databaseOnly = report.complete || await completeApprovedBook(plan);
     return {ok: true as const, report: {...report,databaseOnly,
@@ -87,7 +87,7 @@ export async function inspectAutoModel(raw: unknown) {
       quotaBatchUpperBound: databaseOnly ? 0 : report.quotaBatchUpperBound,
       feasible: databaseOnly ? report.complete : report.feasible}};
   } catch {
-    return {ok: false as const, error: "সিলেবাস/ডাটাবেজ যাচাই করা যায়নি। AI চালানো হয়নি; আবার যাচাই করুন।"};
+    return {ok: false as const, error: "সিলেবাস/ডাটাবেজ যাচাই করা যায়নি। সফটওয়্যার চালানো হয়নি; আবার যাচাই করুন।"};
   }
 }
 

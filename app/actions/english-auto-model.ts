@@ -32,7 +32,7 @@ export async function prepareEnglishFullModel(raw: unknown) {
   // that usually do not exist in the bank and unnecessarily invoking AI.
   const bank = await prepareEnglishBankModel(grade, parsed.data.itemIds, {}, paper);
   if (bank.ok || !("reason" in bank) || bank.reason !== "MISSING_APPROVED_ITEMS") return bank;
-  if(bank.databaseOnly)return {...bank,error:"এই বই/পত্রের পূর্ণ মডেল প্রশ্ন আইটেমে আছে—AI বন্ধ। নির্বাচিত অংশের ঘাটতি ডাটাবেজ থেকে পূরণ করুন।"};
+  if(bank.databaseOnly)return {...bank,error:"এই বই/পত্রের পূর্ণ মডেল প্রশ্ন আইটেমে আছে—সফটওয়্যার বন্ধ। নির্বাচিত অংশের ঘাটতি ডাটাবেজ থেকে পূরণ করুন।"};
   // Carry the compatible bank groups' exact source/writing signatures into the
   // gap pipeline. Otherwise default topics/random extracts would discard stock.
   const reuse=bank.reuse;
@@ -42,7 +42,7 @@ export async function prepareEnglishFullModel(raw: unknown) {
   }
   // Only an explicit stock shortfall permits AI; DB/auth/save failures do not.
   const approved = required.length ? await loadEnglishModelSources(grade, paper) : { sources: {}, error: "" };
-  if(approved.error)return {ok:false as const,error:"Textbook source-এর ডাটাবেজ যাচাই করা যায়নি। AI চালানো হয়নি।"};
+  if(approved.error)return {ok:false as const,error:"Textbook source-এর ডাটাবেজ যাচাই করা যায়নি। সফটওয়্যার চালানো হয়নি।"};
   const sources = Object.fromEntries(Object.entries({ ...bundledEnglishModelSources(grade, paper), ...approved.sources, ...reuse?.sources, ...parsed.data.sources }).filter(([key])=>required.includes(key as typeof required[number])));
   const missing = required.filter(k => !sources[k]);
   if (missing.length) return { ok: false as const, error: "বইয়ের নির্ভরযোগ্য seen passage/poem/story নেই। শুধু নিচের অনুপস্থিত textbook extract/reference দিন; বাকি প্রশ্ন স্বয়ংক্রিয়ভাবে তৈরি হবে।", missing };

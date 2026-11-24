@@ -31,7 +31,7 @@ function html(props) {
 }
 test("processing popup is indeterminate without real progress and never invents scan/percentage claims", () => {
   const s = html({ subject: "গণিত", stage: 1 });
-  assert.match(s, /Proshnobook AI/);
+  assert.match(s, /Proshnobook সফটওয়্যার/);
   assert.match(s, /গণিত/);
   assert.doesNotMatch(s, /value="/);
   assert.doesNotMatch(s, /পাঠ্যবই স্ক্যান|৪৫%/);
@@ -56,11 +56,11 @@ test("real progress and failure are displayed; animation supports reduced motion
 });
 test('neutral preparation branding does not mislabel automatic work as database-only or completed',()=>{
  const s=html({subject:'English',databaseOnly:false,neutralBranding:true});
- assert.match(s,/Proshnobook/);assert.doesNotMatch(s,/Proshnobook AI/);assert.doesNotMatch(s,/value="/);
+ assert.match(s,/Proshnobook/);assert.doesNotMatch(s,/Proshnobook (?:AI|সফটওয়্যার)/);assert.doesNotMatch(s,/value="/);
 });
 test('auto model popup names setup destination without changing the chapter default',()=>{
  const s=html({subject:'গণিত',databaseOnly:true,destination:'setup',stage:2});
  assert.match(s,/সেটআপ পেজ খোলা হচ্ছে/);assert.match(s,/সেটআপের জন্য/);
- assert.doesNotMatch(s,/Proshnobook AI|নির্বাচন পেজ খোলা হচ্ছে/);
+ assert.doesNotMatch(s,/Proshnobook (?:AI|সফটওয়্যার)|নির্বাচন পেজ খোলা হচ্ছে/);
  assert.match(html({subject:'গণিত',stage:2}),/নির্বাচন পেজ খোলা হচ্ছে/);
 });

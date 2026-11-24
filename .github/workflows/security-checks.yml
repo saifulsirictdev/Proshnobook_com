@@ -86,7 +86,9 @@ jobs:
           node scripts/english-browser/class8-reference-check.cjs
           node scripts/english-browser/expanded-model-check.cjs
           ENGLISH_BROWSER_SET=junior-expansion-01 node scripts/english-browser/expanded-model-check.cjs
+          WORD_WORKSPACE_OCR=1 node scripts/paper-browser/word-workspace-check.cjs
           node scripts/paper-browser/default-header-check.cjs
+          node scripts/paper-browser/physics-auto-model-check.cjs
           node scripts/auto-model/check-subject-groups.cjs
           node scripts/auto-model/check-preparation-flow.cjs
       - name: Production build (no production credentials)

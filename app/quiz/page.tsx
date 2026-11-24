@@ -9,7 +9,7 @@ import Practice, { type Q } from "@/components/practice";
 export const metadata: Metadata = {
   title: "প্রশ্নপত্র তৈরি করুন",
   description:
-    "ক্লাস, বিষয় ও অধ্যায় বেছে এক ক্লিকে AI দিয়ে প্রশ্ন তৈরি করুন, প্রশ্ন ব্যাংক থেকে প্রশ্নপত্র বানান আর PDF নামান। বিনামূল্যে কুইজ প্র্যাকটিসও করুন।",
+    "ক্লাস, বিষয় ও অধ্যায় বেছে এক ক্লিকে সফটওয়্যার দিয়ে প্রশ্ন তৈরি করুন, প্রশ্ন ব্যাংক থেকে প্রশ্নপত্র বানান আর PDF নামান। বিনামূল্যে কুইজ প্র্যাকটিসও করুন।",
   alternates: { canonical: "/quiz" },
 };
 
@@ -59,13 +59,13 @@ export default async function QuizPage({ searchParams }: { searchParams: Promise
           </span>
           <span className="flex-1">
             <span className="block text-lg font-bold">Live Online Exam</span>
-            <span className="block text-sm text-white/90">ক্লাস, বিষয় ও অধ্যায় দিন, AI প্রশ্ন বানিয়ে দেবে</span>
+            <span className="block text-sm text-white/90">ক্লাস, বিষয় ও অধ্যায় দিন, সফটওয়্যার প্রশ্ন বানিয়ে দেবে</span>
           </span>
           <ArrowRight size={22} />
         </a>
       </div>
       <section id="ai" className="scroll-mt-24">
-        <h1 className="mb-4 text-2xl font-bold"> Live Online Exam(AI)</h1>
+        <h1 className="mb-4 text-2xl font-bold"> Live Online Exam(সফটওয়্যার)</h1>
         <QuizBox triples={triples} role={role} />
       </section>
       <section><h2 className="mb-4 text-2xl font-bold">Practice from the question bank</h2>

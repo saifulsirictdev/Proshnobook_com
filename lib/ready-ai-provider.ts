@@ -68,7 +68,7 @@ export async function solveReadyAIPage(
         reason = "এই প্রশ্নের প্রয়োজনীয় লেখা OCR-এ অস্পষ্ট।";
       else if (!q.answer)
         reason =
-          reason || "AI নির্ভরযোগ্য সমাধান দিতে পারেনি বা প্রশ্নের তথ্য অসম্পূর্ণ।";
+          reason || "সফটওয়্যার নির্ভরযোগ্য সমাধান দিতে পারেনি বা প্রশ্নের তথ্য অসম্পূর্ণ।";
       else reason = undefined;
       return { ...q, answer: reason ? null : q.answer, blankReason: reason };
     }),
@@ -98,9 +98,9 @@ async function deepSeekJSON(
   const data = await response.json(),
     candidate = data.choices?.[0];
   if (candidate?.finish_reason !== "stop")
-    throw Error("Incomplete AI response");
+    throw Error("Incomplete সফটওয়্যার response");
   const text = candidate.message?.content;
   if (typeof text !== "string" || text.length > 500000)
-    throw Error("Invalid AI output");
+    throw Error("Invalid সফটওয়্যার output");
   return JSON.parse(text);
 }

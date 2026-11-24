@@ -98,6 +98,6 @@ test('partial stock retains exact writing signatures instead of regenerating its
 test('complete-book databaseOnly flag blocks both English papers before sources, provider or quota',async()=>{
  for(const grade of [6,8,9,10,11,12])for(const paper of [1,2]){
   const h=harness({id:'teacher',role:'TEACHER'},{},{ok:false,reason:'MISSING_APPROVED_ITEMS',databaseOnly:true,missingIds:['paragraph'],error:'selection shortage'});
-  const r=await h.prepare({grade,paper});assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/AI বন্ধ/);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);
+  const r=await h.prepare({grade,paper});assert.equal(r.ok,false);assert.equal(r.databaseOnly,true);assert.match(r.error,/সফটওয়্যার বন্ধ/);assert.equal(h.reads(),0);assert.equal(h.requests.length,0);
  }
 });

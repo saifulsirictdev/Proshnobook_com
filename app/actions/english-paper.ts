@@ -137,7 +137,7 @@ export async function generateEnglishPaper(raw: unknown) {
         orderBy: {key: "asc"},take: 100}), request.selection.paper);
     if (englishBookComplete(fullBookStock, request.selection.grade, request.selection.paper))
       return {ok: false as const, databaseOnly: true as const,
-        error: "এই বই/পত্রের পূর্ণ মডেল ডাটাবেজে আছে—AI বন্ধ। নির্বাচিত পাঠ্যাংশ/লেখার বিষয় বদলান বা প্রশ্ন আইটেম থেকে মডেল নিন।"};
+        error: "এই বই/পত্রের পূর্ণ মডেল ডাটাবেজে আছে—সফটওয়্যার বন্ধ। নির্বাচিত পাঠ্যাংশ/লেখার বিষয় বদলান বা প্রশ্ন আইটেম থেকে মডেল নিন।"};
     if (!process.env.DEEPSEEK_API_KEY)
       return {
         ok: false as const,

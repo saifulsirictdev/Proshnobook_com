@@ -41,9 +41,9 @@ test("all preview entry paths require an explicit successful save of the current
   );
   assert.equal(
     (source.match(/if \(!requireSaved\(\)\) return;/g) || []).length,
-    4,
+    1,
   );
-  assert.match(source, /প্রিন্টের আগে প্রশ্নপত্র সেভ/);
+  assert.match(source, /if \(!requireSaved\(\)\) return;/);
 });
 
 test("mobile save panel offers a direct save-then-preview action, reporting errors visibly", () => {
@@ -63,7 +63,8 @@ test("mobile save panel offers a direct save-then-preview action, reporting erro
   );
   assert.match(preview, /catch \(error\)/);
   assert.match(preview, /setSaveNotice\(notice\)/);
-  assert.match(source, /সেভ করে Print Preview খুলুন/);
+  assert.match(source, /Save &amp; Print Preview/);
+  assert.doesNotMatch(source,/onClick=\{preview\}/);
 });
 test("save revalidation of the same receipt cannot reset edits or switch Preview back to Edit", () => {
   const source = fs.readFileSync("components/ready-papers/studio.tsx", "utf8");

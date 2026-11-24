@@ -85,7 +85,7 @@ export async function generateQuiz(
       console.error("API Error Status:", res.status);
       return {
         ok: false,
-        error: "AI সার্ভারে সমস্যা হয়েছে। আবার চেষ্টা করুন।",
+        error: "সফটওয়্যার সার্ভারে সমস্যা হয়েছে। আবার চেষ্টা করুন।",
       };
     }
 
@@ -110,13 +110,13 @@ export async function generateQuiz(
         } catch (e2) {
           return {
             ok: false,
-            error: "AI এর উত্তর সঠিক ফরম্যাটে নেই। আবার তৈরি করুন।",
+            error: "সফটওয়্যার এর উত্তর সঠিক ফরম্যাটে নেই। আবার তৈরি করুন।",
           };
         }
       } else {
         return {
           ok: false,
-          error: "AI কোনো সঠিক উত্তর দেয়নি। আবার তৈরি করুন।",
+          error: "সফটওয়্যার কোনো সঠিক উত্তর দেয়নি। আবার তৈরি করুন।",
         };
       }
     }
@@ -161,14 +161,14 @@ export async function generateQuiz(
     if (validItems.length === 0)
       return {
         ok: false,
-        error: "AI কোনো প্রশ্ন তৈরি করতে পারেনি। আবার চেষ্টা করুন।",
+        error: "সফটওয়্যার কোনো প্রশ্ন তৈরি করতে পারেনি। আবার চেষ্টা করুন।",
       };
     return { ok: true, items: validItems };
   } catch (err) {
     console.error("Generate Error:", err);
     return {
       ok: false,
-      error: "Could not read the AI response. Generate again.",
+      error: "Could not read the সফটওয়্যার response. Generate again.",
     };
   }
 }

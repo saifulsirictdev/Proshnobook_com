@@ -1,20 +1,25 @@
-import { Fragment, type ReactNode } from "react";
+import { richFormatStyle, richFormatSplit } from "@/lib/paper-rich-format";
+import { Fragment, type ReactNode, type CSSProperties } from "react";
 import MathText from "@/components/MathText";
 import { preparePaperMath } from "@/lib/paper-builder";
-// Only our four formatting markers are interpreted. Never evaluate HTML or attributes.
+// Only validated formatting markers are interpreted. Never evaluate HTML or attributes.
 export default function RichPaperText({ text }: { text: string }) {
-  const parts = text.split(/(\[(?:\/?[bius])\])/g);
+  const parts = text.split(richFormatSplit);
   const stack: { tag: string; children: ReactNode[] }[] = [
     { tag: "", children: [] },
   ];
   parts.forEach((part, i) => {
-    const open = part.match(/^\[([bius])\]$/),
-      close = part.match(/^\[\/([bius])\]$/);
-    if (open && stack.length < 20) {
+    const open = part.match(/^\[([^/\]]+)\]$/),
+      close = part.match(/^\[\/([a-z]+)\]$/);
+    if (open && richFormatStyle(open[1]) && stack.length < 20) {
       stack.push({ tag: open[1], children: [] });
       return;
     }
-    if (close && stack.length > 1 && stack[stack.length - 1].tag === close[1]) {
+    if (
+      close &&
+      stack.length > 1 &&
+      stack[stack.length - 1].tag.split("=")[0] === close[1]
+    ) {
       const item = stack.pop()!;
       const children = <Fragment key={i}>{item.children}</Fragment>;
       stack[stack.length - 1].children.push(
@@ -24,8 +29,12 @@ export default function RichPaperText({ text }: { text: string }) {
           <em key={i}>{children}</em>
         ) : item.tag === "u" ? (
           <u key={i}>{children}</u>
-        ) : (
+        ) : item.tag === "s" ? (
           <s key={i}>{children}</s>
+        ) : (
+          <span key={i} style={richFormatStyle(item.tag) as CSSProperties}>
+            {children}
+          </span>
         ),
       );
       return;

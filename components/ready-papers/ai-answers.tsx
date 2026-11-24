@@ -23,7 +23,7 @@ export default function AIAnswers({
     setJob(null);
     callback.current(null);
     setBusy(true);
-    setMessage("কেনা প্রশ্নপত্রের AI উত্তর প্রস্তুত করছি…");
+    setMessage("কেনা প্রশ্নপত্রের সফটওয়্যার উত্তর প্রস্তুত করছি…");
     async function request(
       run: boolean,
       retry = false,
@@ -36,7 +36,7 @@ export default function AIAnswers({
         body: JSON.stringify({ receiptId, run, retry, ...extra }),
       });
       const data = await response.json();
-      if (!response.ok) throw Error(data.error || "AI উত্তর সংরক্ষণ হয়নি।");
+      if (!response.ok) throw Error(data.error || "সফটওয়্যার উত্তর সংরক্ষণ হয়নি।");
       if (live) {
         setJob(data.job);
         callback.current(data.job);
@@ -67,7 +67,7 @@ export default function AIAnswers({
             setMessage(
               pages.some((p) => p.status === "error")
                 ? "কিছু পৃষ্ঠার উত্তর তৈরি হয়নি। ফাঁকা আছে; Retry করতে পারেন।"
-                : "AI-এর চেষ্টার ফল অ্যাকাউন্টে সংরক্ষিত। ফাঁকা উত্তর তৈরি হয়নি—কারণ দেখুন বা ফাঁকা উত্তর আবার চেষ্টা করুন।",
+                : "সফটওয়্যার-এর চেষ্টার ফল অ্যাকাউন্টে সংরক্ষিত। ফাঁকা উত্তর তৈরি হয়নি—কারণ দেখুন বা ফাঁকা উত্তর আবার চেষ্টা করুন।",
             );
             break;
           }
@@ -117,7 +117,7 @@ export default function AIAnswers({
           setMessage(
             e instanceof Error
               ? e.message
-              : "AI উত্তর তৈরি হয়নি। আবার চেষ্টা করুন।",
+              : "সফটওয়্যার উত্তর তৈরি হয়নি। আবার চেষ্টা করুন।",
           );
       } finally {
         if (live) setBusy(false);
@@ -134,19 +134,19 @@ export default function AIAnswers({
     answered = questions.filter((q) => !!q.answer).length;
   return (
     <section className="rp-panel rp-ai-panel" data-noprint>
-      <span className="rp-tag">AI উত্তরপত্র</span>
-      <h2>আপনার প্রশ্নগুলোর AI উত্তর</h2>
+      <span className="rp-tag">সফটওয়্যার উত্তরপত্র</span>
+      <h2>আপনার প্রশ্নগুলোর সফটওয়্যার উত্তর</h2>
       <p className="rp-muted">
         OCR আপনার ব্রাউজারেই চলে—আলাদা hosting লাগবে না। প্রথমবার ভাষার ফাইল
         নামবে; ট্যাব খোলা রাখুন। দুর্বল মোবাইলে ধীর হতে পারে। OCR-এর লেখা DeepSeek-এ
         যায়; DeepSeek API-এর খরচ আলাদা।
       </p>
       <p className="rp-muted">
-        ধাপ: লেখা বের করা → AI সংশোধন → উত্তর তৈরি। ✓ মানে ধাপ সম্পন্ন; সঠিকতা বা
+        ধাপ: লেখা বের করা → সফটওয়্যার সংশোধন → উত্তর তৈরি। ✓ মানে ধাপ সম্পন্ন; সঠিকতা বা
         অ্যাডমিন যাচাই নয়। সংশোধনে DeepSeek-এর অতিরিক্ত API ব্যবহার হয়।
       </p>
       <p className="rp-ai-warning">
-        AI-তৈরি উত্তর—যাচাই প্রয়োজন। OCR-এর পড়া লেখা ও মডেলের উত্তর দুটোতেই ভুল হতে
+        সফটওয়্যার-তৈরি উত্তর—যাচাই প্রয়োজন। OCR-এর পড়া লেখা ও মডেলের উত্তর দুটোতেই ভুল হতে
         পারে। অস্পষ্ট/অনিশ্চিত উত্তর ফাঁকা রাখা হয়েছে; এটি অ্যাডমিন-অনুমোদিত উত্তরমালা
         নয়।
       </p>
@@ -161,7 +161,7 @@ export default function AIAnswers({
       </p>
       <div className="rp-toolbar">
         <button disabled={!job} onClick={onPrint}>
-          AI উত্তর দেখুন / Print
+          সফটওয়্যার উত্তর দেখুন / Print
         </button>
         <button disabled={busy} onClick={() => setCycle((c) => c + 1)}>
           {busy ? "উত্তর প্রস্তুত হচ্ছে…" : "Retry / সংরক্ষিত অবস্থা দেখুন"}
@@ -192,7 +192,7 @@ export default function AIAnswers({
       </p>
       {job && (
         <details>
-          <summary>AI উত্তরগুলো এখানেই দেখুন</summary>
+          <summary>সফটওয়্যার উত্তরগুলো এখানেই দেখুন</summary>
           {pages.map(([n, p]) => (
             <div key={n} className="rp-ai-page">
               <h3>মূল প্রশ্ন পৃষ্ঠা {n}</h3>
@@ -203,7 +203,7 @@ export default function AIAnswers({
                       <p>
                         ✓ লেখা বের করা ·{" "}
                         {p.result.transcription.status === "accepted"
-                          ? "✓ সংশোধন ধাপ সম্পন্ন (AI)"
+                          ? "✓ সংশোধন ধাপ সম্পন্ন (সফটওয়্যার)"
                           : "⚠ সংশোধন গ্রহণ হয়নি—মূল লেখা রাখা হয়েছে"}{" "}
                         · ✓ উত্তর তৈরির চেষ্টা সম্পন্ন
                       </p>
@@ -218,7 +218,7 @@ export default function AIAnswers({
                             <pre>{p.result.transcription.originalText}</pre>
                           </div>
                           <div>
-                            <h4>AI সংশোধিত / ব্যবহৃত লেখা</h4>
+                            <h4>সফটওয়্যার সংশোধিত / ব্যবহৃত লেখা</h4>
                             <pre>{p.result.transcription.correctedText}</pre>
                           </div>
                         </div>
@@ -271,7 +271,7 @@ export default function AIAnswers({
                 <p>
                   {p.error ||
                     (p.status === "running"
-                      ? "AI চেষ্টা করছে…"
+                      ? "সফটওয়্যার চেষ্টা করছে…"
                       : "এখনো প্রস্তুত নয়।")}
                 </p>
               )}
@@ -323,7 +323,7 @@ export function AIAnswerSheets({
       ? p.result.complete
         ? ""
         : "সব প্রশ্ন পড়া নিশ্চিত হয়নি। মূল প্রশ্নের সঙ্গে মিলিয়ে দেখুন।"
-      : p?.error || "এই পৃষ্ঠার AI উত্তর এখনো প্রস্তুত নয়।";
+      : p?.error || "এই পৃষ্ঠার সফটওয়্যার উত্তর এখনো প্রস্তুত নয়।";
     if (!blocks.length)
       sheets.push({
         page,
@@ -338,7 +338,7 @@ export function AIAnswerSheets({
       {sheets.map((s, i) => (
         <article className="rp-print-sheet rp-ai-sheet" key={i}>
           <header className="rp-print-header">
-            <h2>AI-তৈরি উত্তরপত্র</h2>
+            <h2>সফটওয়্যার-তৈরি উত্তরপত্র</h2>
             <p>
               মূল প্রশ্ন পৃষ্ঠা {s.page} · উত্তরপত্র {i + 1}
             </p>
