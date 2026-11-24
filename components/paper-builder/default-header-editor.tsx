@@ -126,9 +126,6 @@ export default function DefaultHeaderEditor({
       className="default-header-editor"
       aria-label="ডিফল্ট হেডার সম্পাদনা"
     >
-      <div className="default-header-print-only" aria-hidden="true">
-        <DefaultHeaderPreview values={resolveDefaultHeader(s, items)} />
-      </div>
       <div data-noprint>
         <form
           onSubmit={save}
@@ -231,6 +228,9 @@ export default function DefaultHeaderEditor({
             ব্রাউজারে পরিবর্তন সেভ হয়নি। স্টোরেজ পরীক্ষা করে আবার সেভ করুন।
           </p>
         )}
+      </div>
+      <div className="default-header-print-only" aria-hidden="true">
+        <DefaultHeaderPreview values={resolveDefaultHeader(s, items)} />
       </div>
     </section>
   );

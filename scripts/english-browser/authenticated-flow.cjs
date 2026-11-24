@@ -84,7 +84,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
   assert.equal(JSON.stringify(stored.output),originalTasks,'Layout edits must not mutate source tasks/keys');
   setPhase(label+'_repeat_save_header');
   const headerEditor=page.getByRole('region',{name:'ডিফল্ট হেডার সম্পাদনা',exact:true});
-  await click(headerEditor.getByRole('button',{name:'হেডার এডিট করুন',exact:true}));
+  await click(headerEditor.getByRole('button',{name:'প্রতিষ্ঠানের নাম সম্পাদনা করুন',exact:true}));
   const institute=`Workflow School ${grade} ${paper} ${width}`;
   await headerEditor.getByRole('textbox',{name:'প্রতিষ্ঠানের নাম',exact:true}).fill(institute);
   await click(headerEditor.getByRole('button',{name:'ডিফল্ট হেডার সেভ করুন',exact:true}));
@@ -160,7 +160,7 @@ async function runEnglishWorkflow({db,page,context,origin,setPhase,testPassword}
     assert.equal(await page.locator('#paper .paper-sheet .default-paper-header').count(),0);
     assert.ok((await page.locator('#paper .paper-sheet').allTextContents()).join(' ').includes(templateName+' School'));
     setPhase(templatePhase+'_return_default');
-    await click(page.getByRole('region',{name:'ডিফল্ট হেডার নিয়ন্ত্রণ',exact:true}).getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}));
+    await click(page.getByRole('button',{name:'ডিফল্ট হেডারে ফিরুন',exact:true}));
     setPhase(templatePhase+'_save_default');
     await savePaper();
     setPhase(templatePhase+'_visible_default');
