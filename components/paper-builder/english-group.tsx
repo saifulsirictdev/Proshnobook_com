@@ -108,9 +108,9 @@ export default function EnglishGroup({
     s.attachments[group.attachmentId ?? baseId] ?? s.attachments[q.id];
   const image = safeImage(attachment?.image ?? "");
   const editable = !!inline?.editable && questions && !answers;
-  const field = (path: string, label: string) => ({
+  const field = (path: string, label: string, qualifier = "") => ({
     editable,
-    label: `${label} ${baseId}`,
+    label: `${label} ${baseId}${qualifier ? ` ${qualifier}` : ""}`,
     value: inline ? inline.resolve(q, path) : null,
     onSave: (next: string) => inline?.save(q, path, next),
   });
@@ -200,7 +200,7 @@ export default function EnglishGroup({
         !reference &&
         group.passages.map((p) => (
           <div key={p.key} style={{ marginBottom: 0 }}>
-            <InlineText {...field(`passage:${p.key}`, "পাসেজ")}>
+            <InlineText {...field(`passage:${p.key}`, "পাসেজ", p.key)}>
               <RichPaperText text={p.text} />
             </InlineText>
           </div>
@@ -259,7 +259,7 @@ export default function EnglishGroup({
                   <b>{t.number}. </b>
                   {questions && (
                     <InlineText
-                      {...field(`task:${t.id}:instruction`, "নির্দেশনা")}
+                      {...field(`task:${t.id}:instruction`, "নির্দেশনা", t.id)}
                     >
                       <RichPaperText
                         text={parts(t).heading.replace(
@@ -305,7 +305,9 @@ export default function EnglishGroup({
           {questions && !group.continued && t.clues?.length ? (
             <EnglishWordBox
               clues={t.clues}
-              field={(j) => field(`task:${t.id}:clue:${j}`, "শব্দবাক্স")}
+              field={(j) =>
+                field(`task:${t.id}:clue:${j}`, "শব্দবাক্স", `${t.id} ${j}`)
+              }
             />
           ) : null}
           {questions && !group.continued && parts(t).body && (
@@ -320,7 +322,9 @@ export default function EnglishGroup({
                   : undefined
               }
             >
-              <InlineText {...field(`task:${t.id}:instruction`, "নির্দেশনা")}>
+              <InlineText
+                {...field(`task:${t.id}:instruction`, "নির্দেশনা", t.id)}
+              >
                 <RichPaperText text={parts(t).body} />
               </InlineText>
             </p>
@@ -344,7 +348,11 @@ export default function EnglishGroup({
                     {t.table.headers.map((h, i) => (
                       <th className="border border-black p-1" key={i}>
                         <InlineText
-                          {...field(`task:${t.id}:head:${i}`, "টেবিল হেডার")}
+                          {...field(
+                            `task:${t.id}:head:${i}`,
+                            "টেবিল হেডার",
+                            `${t.id} ${i}`,
+                          )}
                         >
                           <RichPaperText text={h} />
                         </InlineText>
@@ -368,6 +376,7 @@ export default function EnglishGroup({
                           {...field(
                             `task:${t.id}:cell:${(group.tableOffset ?? 0) + i}:${j}`,
                             "টেবিল ঘর",
+                            `${t.id} ${i} ${j}`,
                           )}
                         >
                           <RichPaperText text={v} />
@@ -392,6 +401,7 @@ export default function EnglishGroup({
                       {...field(
                         `task:${t.id}:sub:${(group.subitemOffset ?? 0) + i}`,
                         "উপপ্রশ্ন",
+                        `${t.id} ${i}`,
                       )}
                     >
                       <RichPaperText
@@ -418,6 +428,7 @@ export default function EnglishGroup({
                         {...field(
                           `task:${t.id}:option:${(group.subitemOffset ?? 0) + i}:${j}`,
                           "উপপ্রশ্ন অপশন",
+                          `${t.id} ${i} ${j}`,
                         )}
                       >
                         <RichPaperText text={o} />
