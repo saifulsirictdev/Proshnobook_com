@@ -79,7 +79,7 @@ export function imageFrom(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const image = new Image();
     image.onload = () => resolve(image);
-    image.onerror = () => reject(Error("Page image লোড হয়নি"));
+    image.onerror = () => reject(Error(`Page image লোড হয়নি (${url.length} chars)`));
     image.src = url;
   });
 }
@@ -91,6 +91,7 @@ export async function renderEdited(
 ) {
   const image = await imageFrom(url),
     canvas = document.createElement("canvas");
+  try {
   const rotate = edit.rotation === 90 || edit.rotation === 270;
   canvas.width = rotate ? image.height : image.width;
   canvas.height = rotate ? image.width : image.height;
@@ -127,9 +128,22 @@ export async function renderEdited(
         m.h * canvas.height,
       );
     }
-    const fontFamily = paperFonts[font].replace(/var\((--[a-z-]+)\)/g, (_,name)=>getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "serif");
-    await document.fonts.load(`16px ${fontFamily}`);
-    for (const t of edit.texts) drawReadyText(ctx,t,canvas.width,canvas.height,fontFamily);
+    const fontFamily = (paperFonts[font] || paperFonts.kalpurush).replace(/var\((--[a-z-]+)\)/g, (_,name)=>getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "serif");
+    // Preload is best-effort: a slow or failed font fetch must never block checkout.
+    const fontLoad = document.fonts.load(`16px ${fontFamily}`).catch((fe) => {
+      console.error("font preload failed; rendering with fallback", fe);
+    });
+    await Promise.race([
+      fontLoad,
+      new Promise((r) => setTimeout(r, 3000)),
+    ]);
+    for (const t of edit.texts) {
+      try {
+        drawReadyText(ctx,t,canvas.width,canvas.height,fontFamily);
+      } catch (te) {
+        console.error("editable text draw failed", te);
+      }
+    }
   }
   const output = document.createElement("canvas");
   output.width = Math.max(
@@ -153,8 +167,10 @@ export async function renderEdited(
       output.width,
       output.height,
     );
-  canvas.width = canvas.height = 0;
   return output;
+  } finally {
+    canvas.width = canvas.height = 0;
+  }
 }
 /** Conservative suggestion: trim only almost-white outside margins, never guess publication text. */
 export async function suggestMargins(url: string) {

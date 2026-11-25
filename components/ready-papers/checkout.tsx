@@ -100,7 +100,7 @@ export default function ReadyCheckout({
         } catch (e) {
           console.error("ready checkout beforePurchase failed", e);
           setError(
-            "নির্বাচিত PDF পৃষ্ঠার উচ্চমানের preview তৈরি হয়নি। ইন্টারনেট সংযোগ যাচাই করে আবার চেষ্টা করুন; checkout শুরু হয়নি, তাই টাকা কাটা হয়নি।",
+            "নির্বাচিত PDF পৃষ্ঠার উচ্চমানের preview তৈরি হয়নি। ইন্টারনেট সংযোগ যাচাই করে আবার চেষ্টা করুন; checkout শুরু হয়নি, তাই টাকা কাটা হয়নি।" + (e instanceof Error && e.message ? " (" + e.message.slice(0, 160) + ")" : ""),
           );
           return;
         }
