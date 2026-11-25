@@ -1753,17 +1753,28 @@ export default function ReadyStudio({
           snapshot={snapshot()}
           beforePurchase={async () => {
             await document.fonts.ready;
-            const prepare = async () => {
-              for (const n of selected) {
-                if (!pages[n - 1]) throw new Error("Page unavailable");
-                const c = await renderEdited(
-                  await qualityPage(n),
-                  edits[n] || freshEdit(),
-                  true,
-                  headerSettings.cfg.font,
-                );
-                c.width = c.height = 0;
+            const renderPage = async (n: number) => {
+              if (!pages[n - 1]) throw new Error("Page unavailable");
+              let base: string;
+              try {
+                base = await qualityPage(n);
+              } catch (q) {
+                // Validate with the already-loaded thumbnail when the
+                // high-quality re-render fails; the purchased PDF is
+                // re-rendered server-side, so output quality is unchanged.
+                console.error("ready quality render failed", n, q);
+                base = pages[n - 1];
               }
+              const c = await renderEdited(
+                base,
+                edits[n] || freshEdit(),
+                true,
+                headerSettings.cfg.font,
+              );
+              c.width = c.height = 0;
+            };
+            const prepare = async () => {
+              for (const n of selected) await renderPage(n);
             };
             try {
               await prepare();
