@@ -7,52 +7,73 @@ import {
 } from "./ready-papers";
 import { loadBrowserPdfEngine } from "./pdf-engine-browser";
 export const loadReadyPdfEngine = loadBrowserPdfEngine;
+/** One live PDF document per source URL: thumbnails already fetch the file,
+    and checkout re-renders those same pages — a second network fetch must
+    never gate payment preparation. Failed fetches drop out for a clean retry. */
+const pdfDocs = new Map<string, Promise<any>>();
+function loadPdfDocument(url: string) {
+  let doc = pdfDocs.get(url);
+  if (!doc) {
+    doc = loadReadyPdfEngine()
+      .then((pdfjs) =>
+        pdfjs.getDocument({
+          url,
+          isEvalSupported: false,
+          disableFontFace: true,
+        }).promise,
+      )
+      .catch((e) => {
+        pdfDocs.delete(url);
+        throw e;
+      });
+    pdfDocs.set(url, doc);
+    if (pdfDocs.size > 3) {
+      const oldest = pdfDocs.keys().next().value;
+      if (oldest !== undefined) {
+        const dropped = pdfDocs.get(oldest);
+        pdfDocs.delete(oldest);
+        dropped?.then((d: any) => d?.destroy?.()).catch(() => {});
+      }
+    }
+  }
+  return doc;
+}
 export async function loadPdfImages(
   url: string,
   onProgress: (n: number, total: number) => void,
   selected?: number[],
 ) {
-  const pdfjs = await loadReadyPdfEngine();
-  const task = pdfjs.getDocument({
-    url,
-    isEvalSupported: false,
-    disableFontFace: true,
-  });
-  const doc = await task.promise;
+  const doc = await loadPdfDocument(url);
   const images: string[] = [];
-  try {
-    if (doc.numPages > 100)
-      throw Error("এক PDF-এ সর্বোচ্চ ১০০ page। ছোট ভাগে upload করুন।");
-    const indices =
-      selected ?? Array.from({ length: doc.numPages }, (_, i) => i + 1);
-    for (const i of indices) {
-      if (!Number.isInteger(i) || i < 1 || i > doc.numPages)
-        throw Error("অবৈধ page");
-      const page = await doc.getPage(i),
-        v = page.getViewport({ scale: 1 }),
-        scale = Math.min(
-          4,
-          (selected ? 2400 : 900) / Math.max(v.width, v.height),
-        ),
-        vp = page.getViewport({ scale });
-      if (vp.width < 1 || vp.height < 1) throw Error("অবৈধ page");
-      const canvas = document.createElement("canvas");
-      canvas.width = Math.ceil(vp.width);
-      canvas.height = Math.ceil(vp.height);
-      await page.render({
-        canvasContext: canvas.getContext("2d"),
-        viewport: vp,
-        background: "white",
-      }).promise;
-      images.push(canvas.toDataURL("image/jpeg", 0.94));
-      canvas.width = canvas.height = 0;
-      page.cleanup();
-      onProgress(i, doc.numPages);
-    }
-    return images;
-  } finally {
-    await doc.destroy();
+  if (doc.numPages > 100)
+    throw Error("এক PDF-এ সর্বোচ্চ ১০০ page। ছোট ভাগে upload করুন।");
+  const indices =
+    selected ?? Array.from({ length: doc.numPages }, (_, i) => i + 1);
+  for (const i of indices) {
+    if (!Number.isInteger(i) || i < 1 || i > doc.numPages)
+      throw Error("অবৈধ page");
+    const page = await doc.getPage(i),
+      v = page.getViewport({ scale: 1 }),
+      scale = Math.min(
+        4,
+        (selected ? 2400 : 900) / Math.max(v.width, v.height),
+      ),
+      vp = page.getViewport({ scale });
+    if (vp.width < 1 || vp.height < 1) throw Error("অবৈধ page");
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(vp.width);
+    canvas.height = Math.ceil(vp.height);
+    await page.render({
+      canvasContext: canvas.getContext("2d"),
+      viewport: vp,
+      background: "white",
+    }).promise;
+    images.push(canvas.toDataURL("image/jpeg", 0.94));
+    canvas.width = canvas.height = 0;
+    page.cleanup();
+    onProgress(i, doc.numPages);
   }
+  return images;
 }
 export function imageFrom(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
