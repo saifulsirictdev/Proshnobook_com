@@ -1753,15 +1753,26 @@ export default function ReadyStudio({
           snapshot={snapshot()}
           beforePurchase={async () => {
             await document.fonts.ready;
-            for (const n of selected) {
-              if (!pages[n - 1]) throw new Error("Page unavailable");
-              const c = await renderEdited(
-                await qualityPage(n),
-                edits[n] || freshEdit(),
-                true,
-                headerSettings.cfg.font,
-              );
-              c.width = c.height = 0;
+            const prepare = async () => {
+              for (const n of selected) {
+                if (!pages[n - 1]) throw new Error("Page unavailable");
+                const c = await renderEdited(
+                  await qualityPage(n),
+                  edits[n] || freshEdit(),
+                  true,
+                  headerSettings.cfg.font,
+                );
+                c.width = c.height = 0;
+              }
+            };
+            try {
+              await prepare();
+            } catch (e) {
+              // Mobile networks drop the quality render often; one retry after
+              // logging keeps the real cause visible in the browser console.
+              console.error("ready checkout page preparation failed", e);
+              await new Promise((r) => setTimeout(r, 700));
+              await prepare();
             }
           }}
           onClose={() => setCheckout(false)}

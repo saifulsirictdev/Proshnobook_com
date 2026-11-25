@@ -97,7 +97,8 @@ export default function ReadyCheckout({
       if (!receiptId) {
         try {
           await beforePurchase();
-        } catch {
+        } catch (e) {
+          console.error("ready checkout beforePurchase failed", e);
           setError(
             "নির্বাচিত PDF পৃষ্ঠার উচ্চমানের preview তৈরি হয়নি। ইন্টারনেট সংযোগ যাচাই করে আবার চেষ্টা করুন; checkout শুরু হয়নি, তাই টাকা কাটা হয়নি।",
           );
@@ -110,7 +111,8 @@ export default function ReadyCheckout({
             { total: quote.total, packageUnits: quote.packageUnits },
             snapshot,
           );
-        } catch {
+        } catch (e) {
+          console.error("ready checkout request failed", e);
           setError(
             "Checkout-এর ফল সংযোগের কারণে নিশ্চিত করা যায়নি। একই অ্যাকাউন্টে একই PDF ও পৃষ্ঠা নির্বাচন রেখে আবার চেষ্টা করুন, অথবা ‘আমার প্রশ্নপত্র’ দেখুন। একই নির্বাচনে দ্বিতীয়বার টাকা কাটবে না।",
           );
@@ -132,7 +134,8 @@ export default function ReadyCheckout({
       try {
         if (!receiptId) throw new Error("Receipt unavailable");
         await onPaid(receiptId);
-      } catch {
+      } catch (e) {
+        console.error("ready checkout onPaid failed", e);
         setError(
           "Checkout নিশ্চিত হয়েছে, কিন্তু সংরক্ষিত প্রশ্নপত্র খোলা যায়নি। আবার চেষ্টা করুন বা ‘আমার প্রশ্নপত্র’ থেকে খুলুন; পুনরায় checkout করা হবে না।",
         );
