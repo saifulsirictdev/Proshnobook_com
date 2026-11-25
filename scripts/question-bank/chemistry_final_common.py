@@ -3,6 +3,7 @@ from pathlib import Path
 from collections import Counter
 from fractions import Fraction
 import json,hashlib,re,html,base64,sys
+from chemistry_spacing import clean_chemistry_text,clean_chemistry_inputs
 R=Path(__file__).resolve().parents[2];BANK=R/'content/question-bank/ssc/chemistry';DOC=R/'docs/question-bank/ssc-chemistry'
 AW=dict(H=1,C=12,N=14,O=16,Na=23,Mg=24,Al=27,P=31,S=32,Cl=35.5,K=39,Ca=40,Fe=56,Br=80)
 def atoms(s):
@@ -33,6 +34,10 @@ class Draft:
  def __init__(self,ch):
   self.ch=ch;seed=json.loads((BANK/f'chapter-{ch}-checkpoint/questions.json').read_text());v=json.loads((BANK/f'chapter-{ch}-checkpoint/validation.json').read_text());self.base={k:v for k,v in seed.items()if k!='items'};self.rows=seed['items'];self.ledger=[{k:v for k,v in m.items()if k not in ['id','itemIndex','questionDigest']}for m in v['ledger']]
  def add(self,t,text,why,family,inputs=None,**kw):
+  text=clean_chemistry_text(text);why=clean_chemistry_text(why)
+  if 'options'in kw:kw['options']={k:clean_chemistry_text(v)for k,v in kw['options'].items()}
+  if 'parts'in kw:kw['parts']=[{**pt,'question':clean_chemistry_text(pt['question']),'solution':clean_chemistry_text(pt['solution'])}for pt in kw['parts']]
+  if inputs is not None:inputs=clean_chemistry_inputs(inputs)
   self.rows.append(dict(type=t,text=text,explanation=why,page='নিজস্ব সাধারণ বোর্ড-ধাঁচের অনুশীলনী; আসল বোর্ড প্রশ্ন নয়',difficulty='MEDIUM',**kw));self.ledger.append(dict(origin='AUTHORED_COMMON_BOARD_STYLE',family=family,answerOrigin='ASSISTANT_AUTHORED_NOT_SOURCE_KEY',teacherApproved=False,sourceQuestionVerbatim=False,kind=t,**({'inputs':inputs}if inputs is not None else{})))
  def mc(self,q,key,wrong,why,family,inputs=None):
   assert len(wrong)==3 and len(set([key,*wrong]))==4,(q,key,wrong)

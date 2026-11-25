@@ -5,6 +5,7 @@ Charge/Lewis/property variants and all hypothetical values are explicitly disclo
 from pathlib import Path
 from collections import Counter
 import hashlib,html,json,re,sys
+from chemistry_spacing import clean_chemistry_text
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'content/question-bank/ssc/chemistry/chapter-5';DOC=ROOT/'docs/question-bank/ssc-chemistry';ASSET=ROOT/'public/question-bank/ssc-chemistry-ch5-v1'
 ASSET.mkdir(parents=True,exist_ok=True)
 SOURCE='https://drive.google.com/file/d/17cFTHipiCnU5qB-prqtRRj6YADFdZ091/view';TOPIC='৫ম অধ্যায়: রাসায়নিক বন্ধন'
@@ -15,6 +16,9 @@ def save(p,t):
  else:p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t)
 def img(name,alt='প্রশ্নের চিত্র',ext='png'):return f'![{alt}](https://proshnobook.com/question-bank/ssc-chemistry-ch5-v1/{name}.{ext})'
 def add(kind,text,why,family,p,**kw):
+ text=clean_chemistry_text(text);why=clean_chemistry_text(why)
+ if 'options' in kw:kw['options']={k:clean_chemistry_text(v) for k,v in kw['options'].items()}
+ if 'parts' in kw:kw['parts']=[{**pt,'question':clean_chemistry_text(pt['question']),'solution':clean_chemistry_text(pt['solution'])} for pt in kw['parts']]
  items.append(dict(type=kind,text=text,explanation=why,page=f'মূল ধারণা: বই পৃ. {p}; নিজস্ব অনুশীলনী, বোর্ড প্রশ্ন নয়',difficulty=kw.pop('difficulty','MEDIUM'),**kw));review.append(dict(index=len(items),kind=kind,family=family,textbookPages=p,originalPractice=True,teacherApproved=False))
 def mcq(q,a,w,why,family,p):
  assert len(w)==3 and len(set([a,*w]))==4,(q,a,w)

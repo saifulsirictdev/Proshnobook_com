@@ -2,6 +2,13 @@ import { NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { z } from "zod";
 import { db } from "@/lib/db";
+import {
+  isChemistrySubject,
+  cleanChemistryText,
+  cleanChemistryOptionsValue,
+  chemistryScenarioSignature,
+  interleaveByChemistryScenario,
+} from "@/lib/chemistry-text-clean";
 
 export const maxDuration = 60;
 export const dynamic = "force-dynamic";
@@ -27,27 +34,41 @@ export async function POST(req: Request) {
         take: 500, orderBy: { createdAt: "desc" },
       });
       const requestedType = questionType || type || "MCQ";
-      const questions = rows.flatMap<Record<string, unknown>>((q) => {
+      const isChemReq = isChemistrySubject(subject);
+      const tagged = rows.flatMap<{ item: Record<string, unknown>; sig: string }>((q) => {
         const rawOptions = q.options as Record<string, unknown>;
         if (!rawOptions || typeof rawOptions !== "object") return [];
-        const { _provenance, _authoring, ...options } = rawOptions;
+        const { _provenance, _authoring, ...restOptions } = rawOptions;
+        const isChem = isChemReq || isChemistrySubject((q as Record<string, unknown>).subject as string | undefined);
+        const options = (isChem ? cleanChemistryOptionsValue(restOptions) : restOptions) as Record<string, unknown>;
+        const qText = isChem && typeof q.text === "string" ? cleanChemistryText(q.text) : q.text;
+        const qExp = isChem && typeof q.explanation === "string" ? cleanChemistryText(q.explanation) : q.explanation;
+        const sig = isChem ? chemistryScenarioSignature(q as any) : "";
         if (!q.correct) {
-          if ((requestedType === "SHORT" || requestedType === "MIXED") && !options.stimulus && !options.subQuestions && !options.k) return [{ type: "SHORT", question: q.text, answer: q.explanation }];
-          if ((requestedType === "CQ" || requestedType === "MIXED") && (options.stimulus || options.subQuestions || options.k)) return [{ type: "CQ", question: q.text, ...options }];
+          if ((requestedType === "SHORT" || requestedType === "MIXED") && !options.stimulus && !options.subQuestions && !options.k)
+            return [{ item: { type: "SHORT", question: qText, answer: qExp }, sig }];
+          if ((requestedType === "CQ" || requestedType === "MIXED") && (options.stimulus || options.subQuestions || options.k))
+            return [{ item: { type: "CQ", question: qText, ...options }, sig }];
           return [];
         }
         if (!["EXAM", "MCQ", "MIXED"].includes(requestedType)) return [];
         const keys = Object.keys(options);
         const correctAnswer = keys.indexOf(q.correct);
         if (correctAnswer < 0 || !Object.values(options).every((v) => typeof v === "string")) return [];
-        return [{ type: "MCQ", question: q.text, options: Object.values(options), correctAnswer, explanation: q.explanation }];
+        return [{ item: { type: "MCQ", question: qText, options: Object.values(options), correctAnswer, explanation: qExp }, sig }];
       });
       // Shuffle before selecting so consecutive papers do not all use the newest rows.
-      for (let i = questions.length - 1; i > 0; i--) {
+      for (let i = tagged.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[i]];
+        [tagged[i], tagged[j]] = [tagged[j], tagged[i]];
       }
-      return NextResponse.json({ success: true, questions: questions.slice(0, count), source: "DB" });
+      const ordered = isChemReq
+        ? interleaveByChemistryScenario(
+            tagged,
+            (entry: { item: Record<string, unknown>; sig: string }) => entry.sig,
+          ).map((entry: { item: Record<string, unknown>; sig: string }) => entry.item)
+        : tagged.map((entry) => entry.item);
+      return NextResponse.json({ success: true, questions: ordered.slice(0, count), source: "DB" });
     }
     // Atomic database-backed quota, shared by all app instances (10 calls/user/UTC hour).
     const key = `generate-exam:${session.user.id}:${new Date().toISOString().slice(0, 13)}`;

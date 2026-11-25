@@ -83,6 +83,7 @@ test("question picker applies OR chapter membership to both rows and count", asy
     "@/components/chapter-selector": () => null,
     "@/components/chapter-selector.css": {},
     "@/components/qb-picker": () => null,
+    "@/lib/chemistry-text-clean": require("../lib/chemistry-text-clean"),
     "next/link": () => null,
   }).default;
   await Page({

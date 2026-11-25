@@ -3,6 +3,12 @@ import { auth } from "@/auth";
 import { visibleQuestions } from "@/lib/paper-generation";
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import {
+  isChemistrySubject,
+  cleanChemistryText,
+  cleanChemistryOptionsValue,
+  cleanChemistrySubQuestions,
+} from "@/lib/chemistry-text-clean";
 
 export const dynamic = "force-dynamic";
 
@@ -71,17 +77,27 @@ export async function POST(req: Request) {
 
     const options = asObj(r.options);
     // Provenance is metadata, never an MCQ choice or editable answer option.
-    const { _provenance, _authoring, ...choiceOptions } = options;
+    const { _provenance, _authoring, ...rawChoiceOptions } = options;
+    const isChem = isChemistrySubject(r.subject);
+    const choiceOptions = isChem
+      ? cleanChemistryOptionsValue(rawChoiceOptions)
+      : rawChoiceOptions;
     const correct = r.correct ?? "";
-    const type = detectType(r.text ?? "", options, correct);
+    const rawText = r.text ?? "";
+    const cleanedText = isChem ? cleanChemistryText(rawText) : rawText;
+    const cleanedExplanation =
+      isChem && r.explanation
+        ? cleanChemistryText(r.explanation)
+        : r.explanation;
+    const type = detectType(cleanedText, choiceOptions, correct);
 
     const base = {
       id: r.id,
-      text: r.text,
+      text: cleanedText,
       options: choiceOptions as Record<string, string>,
       ...(_provenance ? { provenance: _provenance } : {}),
       correct: r.correct,
-      explanation: r.explanation,
+      explanation: cleanedExplanation,
       category: r.category,
       subject: r.subject,
       topic: r.topic,
@@ -94,15 +110,41 @@ export async function POST(req: Request) {
     };
 
     if (type === "CQ") {
-      const sub = options.subQuestions ? asObj(options.subQuestions) : options;
-      const k = str(sub.k) || str(sub["ক"]);
-      const kh = str(sub.kh) || str(sub["খ"]);
-      const g = str(sub.g) || str(sub["গ"]);
-      const gh = str(sub.gh) || str(sub["ঘ"]);
+      let k = "";
+      let kh = "";
+      let g = "";
+      let gh = "";
+      if (Array.isArray(choiceOptions.subQuestions)) {
+        const arr = choiceOptions.subQuestions;
+        const pick = (idx: number) => {
+          const v = arr[idx];
+          if (typeof v === "string") return v;
+          if (v && typeof v === "object")
+            return str((v as AnyObj).question || (v as AnyObj).text);
+          return "";
+        };
+        k = pick(0);
+        kh = pick(1);
+        g = pick(2);
+        gh = pick(3);
+      } else {
+        const sub = choiceOptions.subQuestions
+          ? asObj(choiceOptions.subQuestions)
+          : choiceOptions;
+        k = str(sub.k) || str(sub["ক"]);
+        kh = str(sub.kh) || str(sub["খ"]);
+        g = str(sub.g) || str(sub["গ"]);
+        gh = str(sub.gh) || str(sub["ঘ"]);
+      }
       const stimulus =
-        str(options.stimulus) || str(options["উদ্দীপক"]) || r.text;
+        str(choiceOptions.stimulus) ||
+        str(choiceOptions["উদ্দীপক"]) ||
+        cleanedText;
       const hasSub = !!(k || kh || g || gh);
-      const answers = asObj(options.ans ?? options.answers);
+      const rawAnswers = asObj(choiceOptions.ans ?? choiceOptions.answers);
+      const answers = isChem
+        ? (cleanChemistrySubQuestions(rawAnswers) as AnyObj)
+        : rawAnswers;
 
       return [
         {

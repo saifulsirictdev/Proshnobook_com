@@ -3,13 +3,25 @@ import { notFound } from "next/navigation";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import TestRunner from "@/components/test-runner";
+import { isChemistrySubject, cleanChemistryText } from "@/lib/chemistry-text-clean";
 export const dynamic = "force-dynamic";
 export default async function TestPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const t = await db.practiceTest.findUnique({ where: { id } });
   if (!t) notFound();
   const rows = await db.question.findMany({ where: { id: { in: t.questionIds as string[] } } });
-  const qs = rows.map((r) => ({ id: r.id, text: r.text, options: Object.fromEntries(Object.entries((r.options ?? {}) as Record<string, string>).filter(([key]) => key !== "_provenance" && key !== "_authoring")) })); // correct answers never reach the browser
+  const qs = rows.map((r) => {
+    const isChem = isChemistrySubject(r.subject);
+    return {
+      id: r.id,
+      text: isChem && r.text ? cleanChemistryText(r.text) : r.text,
+      options: Object.fromEntries(
+        Object.entries((r.options ?? {}) as Record<string, string>)
+          .filter(([key]) => key !== "_provenance" && key !== "_authoring")
+          .map(([k, v]) => [k, isChem && typeof v === "string" ? cleanChemistryText(v) : v]),
+      ),
+    };
+  }); // correct answers never reach the browser
   const top = await db.practiceAttempt.findMany({ where: { testId: id }, orderBy: [{ score: "desc" }, { createdAt: "asc" }], take: 10 });
   const user = (await auth())?.user;
   return (

@@ -50,7 +50,7 @@ test('180 position MCQ keys independently compare orbital filling with explicit 
   const {shells,sub}=configuration(z),p=Math.max(...Object.keys(shells).map(Number)),outer=shells[p],block=(z===2||[1,3,4,11,12,19,20].includes(z))?'s':z>20?'d':'p';
   const expected=[p,groups[z-1],outer,shells[3]||0,block];expected.forEach((a,i)=>assert.equal(answer(`position-probe-${i+1}`,z),String(a)));
   assert.equal(mateGroups[answer('position-probe-6',z)],groups[z-1]);
-  assert.ok(row('position-cq',z).parts[2].solution.includes(`পর্যায়${p};ব্লক${block},গ্রুপ${groups[z-1]}`));assert.ok(row('position-sq',z).explanation.includes(`গ্রুপ${groups[z-1]}`));
+  assert.ok(row('position-cq',z).parts[2].solution.includes(`পর্যায় ${p}; ব্লক ${block}, গ্রুপ ${groups[z-1]}`));assert.ok(row('position-sq',z).explanation.includes(`গ্রুপ ${groups[z-1]}`));
   const s=fs.readFileSync(`public/question-bank/ssc-chemistry-ch4-v1/position-${String(z).padStart(2,'0')}.svg`,'utf8');assert.ok(s.includes(`${symbols[z-1]}    Z = ${z}`));assert.ok(s.includes(`Shell occupation: ${Object.values(shells).join(',')}`));
  }
 });
@@ -61,7 +61,7 @@ test('all 180 selected main-group comparison keys checked against independent ra
  for(let n=1;n<=30;n++){
   const m=validation.items.find(m=>m.family==='trend-probe-1'&&m.variant===n),{left:a,right:b,horizontal}=m.modelInputs,large=physical[a][0]>physical[b][0]?a:b,en=physical[a][1]>physical[b][1]?a:b;
   [large,en,large,en,horizontal?'না':'হ্যাঁ',horizontal?'হ্যাঁ':'না'].forEach((ans,i)=>assert.equal(answer(`trend-probe-${i+1}`,n),ans));
-  assert.ok(row('trend-cq',n).parts[2].solution.includes(`আকারে${large}বড়;Pauling তড়িৎঋণাত্মকতায়${en}বেশি`));assert.match(row('trend-cq',n).parts[3].solution,/Mg\/Al,N\/O/);assert.ok(row('trend-sq',n).explanation.includes(`আকারে${large}বড়`));
+  assert.ok(row('trend-cq',n).parts[2].solution.includes(`আকারে ${large} বড়; Pauling তড়িৎঋণাত্মকতায় ${en} বেশি`));assert.match(row('trend-cq',n).parts[3].solution,/Mg\/Al,N\/O/);assert.ok(row('trend-sq',n).explanation.includes(`আকারে ${large} বড়`));
   const svg=fs.readFileSync(`public/question-bank/ssc-chemistry-ch4-v1/trend-${String(n).padStart(2,'0')}.svg`,'utf8');for(const symbol of [a,b]){const z=symbols.includes(symbol)?symbols.indexOf(symbol)+1:{Ga:31,Ge:32,Br:35}[symbol],period=z<=2?1:z<=10?2:z<=18?3:4,group=z<=30?groups[z-1]:{Ga:13,Ge:14,Br:17}[symbol];assert.ok(svg.includes(`${symbol} (Z=${z})`));assert.ok(svg.includes(`Period ${period}`));assert.ok(svg.includes(`Group ${group}`));}
 
  }
@@ -70,15 +70,15 @@ test('120 successive-IE keys, all20CQ/SQ and80 SVG bars independently calculated
  for(let n=1;n<=20;n++){
   const v=(n-1)%3+1,b=200+7*n,ie=Array.from({length:4},(_,i)=>b*(i+1)+(i>=v?5000:0)),diff=ie.slice(1).map((x,i)=>x-ie[i]),g=[1,2,13][v-1];
   [ie[0],ie[1],Math.max(...diff),v,g,`+${v}`].forEach((a,i)=>assert.equal(answer(`energy-probe-${i+1}`,n),String(a)));
-  assert.ok(row('energy-cq',n).parts[2].solution.includes(`I${v}→I${v+1}`));assert.ok(row('energy-cq',n).parts[3].solution.includes(`গ্রুপ${g}`));assert.ok(row('energy-sq',n).explanation.includes(`গ্রুপ${g}`));assert.match(row('energy-cq',n).text,/কাল্পনিকমান/);assert.ok(row('energy-cq',n).text.includes('| kJ/mol | '+ie.join(' | ')+' |'));
+  assert.ok(row('energy-cq',n).parts[2].solution.includes(`I${v}→I${v+1}`));assert.ok(row('energy-cq',n).parts[3].solution.includes(`গ্রুপ ${g}`));assert.ok(row('energy-sq',n).explanation.includes(`গ্রুপ ${g}`));assert.match(row('energy-cq',n).text,/কাল্পনিক মান/);assert.ok(row('energy-cq',n).text.includes('| kJ/mol | '+ie.join(' | ')+' |'));
   const s=fs.readFileSync(`public/question-bank/ssc-chemistry-ch4-v1/energy-${String(n).padStart(2,'0')}.svg`,'utf8'),bars=[...s.matchAll(/<rect x="\d+" y="([\d.]+)" width="80" height="([\d.]+)"/g)];assert.equal(bars.length,4);bars.forEach((r,i)=>{assert.ok(Math.abs(+r[1]+ +r[2]-330)<.02);assert.ok(Math.abs(+r[2]-210*ie[i]/Math.max(...ie))<.01);assert.ok(s.includes(`>${ie[i]}</text>`));});
  }
 });
 test('20 inverse-location CQ and20 hypothetical cumulative-carbonate calculations checked independently',()=>{
  for(let n=1;n<=20;n++){
-  const z=n+2,{shells}=configuration(z),p=Math.max(...Object.keys(shells).map(Number)),g=groups[z-1],c=row('inverse-cq',n);assert.ok(c.text.includes(`পর্যায়${p},গ্রুপ${g}`));assert.ok(c.parts[2].solution.includes(`X=${symbols[z-1]};Z=${z};খোলকবিন্যাস${Object.values(shells).join(',')}`));
+  const z=n+2,{shells}=configuration(z),p=Math.max(...Object.keys(shells).map(Number)),g=groups[z-1],c=row('inverse-cq',n);assert.ok(c.text.includes(`পর্যায় ${p}, গ্রুপ ${g}`));assert.ok(c.parts[2].solution.includes(`X=${symbols[z-1]}; Z=${z}; খোলকবিন্যাস ${Object.values(shells).join(',')}`));
   const inv=fs.readFileSync(`public/question-bank/ssc-chemistry-ch4-v1/inverse-${String(n).padStart(2,'0')}.svg`,'utf8');assert.ok(inv.includes(`Period = ${p}; Group = ${g}`));
-  const data=row('carbonate-cq',n),mg=4+n,ca=5+2*n;assert.ok(data.text.includes(`| MgCO3+লঘুHCl | ${mg} | ${3*mg} |`));assert.ok(data.text.includes(`| CaCO3+লঘুHCl | ${ca} | ${2*ca} |`));assert.ok(data.parts[2].solution.includes(`=${2*mg}mL;`));assert.ok(data.parts[2].solution.includes(`=${ca}mL।`));assert.match(data.text,/কাল্পনিকসঞ্চিতআয়তন/);assert.match(data.parts[3].solution,/ঘনমাত্রা\/পৃষ্ঠতল/);
+  const data=row('carbonate-cq',n),mg=4+n,ca=5+2*n;assert.ok(data.text.includes(`| MgCO3+লঘু HCl | ${mg} | ${3*mg} |`));assert.ok(data.text.includes(`| CaCO3+লঘু HCl | ${ca} | ${2*ca} |`));assert.ok(data.parts[2].solution.includes(`=${2*mg}mL;`));assert.ok(data.parts[2].solution.includes(`=${ca}mL।`));assert.match(data.text,/কাল্পনিক সঞ্চিত আয়তন/);assert.match(data.parts[3].solution,/ঘনমাত্রা\/পৃষ্ঠতল/);
  }
 });
 test('standalone answer review preserves 800 articles,712 images and180 real HTML tables with valid local assets',()=>{
@@ -87,7 +87,7 @@ test('standalone answer review preserves 800 articles,712 images and180 real HTM
 });
 test('scientific exceptions and source-attribution boundary are explicit, not invented board tags',()=>{
  const q=p=>rows.find(q=>q.text.startsWith(p)),ans=p=>{const x=q(p);return x.options[x.correct];};
- assert.equal(ans('He-এর সঠিক গ্রুপ'),'18');assert.equal(ans('Cr-এর গ্রুপ'),'গ্রুপ6,পর্যায়4');assert.equal(ans('Cu-এর গ্রুপ'),'11');assert.equal(ans('প্রথম আয়নীকরণ শক্তি Mg'),'কমে,সাধারণ পর্যায়-প্রবণতার ব্যতিক্রম');assert.equal(ans('নির্গত শক্তির পরিমাণ হিসেবে'),'Cl');assert.equal(ans('প্রচলিত Pauling'),'F');assert.match(q('Zn কেন').explanation,/3d10/);
+ assert.equal(ans('He-এর সঠিক গ্রুপ'),'18');assert.equal(ans('Cr-এর গ্রুপ'),'গ্রুপ 6, পর্যায় 4');assert.equal(ans('Cu-এর গ্রুপ'),'11');assert.equal(ans('প্রথম আয়নীকরণ শক্তি Mg'),'কমে, সাধারণ পর্যায়-প্রবণতার ব্যতিক্রম');assert.equal(ans('নির্গত শক্তির পরিমাণ হিসেবে'),'Cl');assert.equal(ans('প্রচলিত Pauling'),'F');assert.match(q('Zn কেন').explanation,/3d10/);
  assert.equal(validation.sourceQuestionVerbatim,false);assert.equal(validation.officialYearVerified,false);assert.ok(validation.limitations.some(s=>s.includes('বোর্ড/সাল')));
 });
 test('canonical file/row coordinates, all hashes and four chapter generators remain reproducible',()=>{
