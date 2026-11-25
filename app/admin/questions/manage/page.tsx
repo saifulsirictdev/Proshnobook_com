@@ -4,6 +4,12 @@ import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import { buildWhere } from "./where";
 import { approveMany, deleteMany, deleteOne, toggleOne } from "./actions";
+import MathText from "@/components/MathText";
+import {
+  isChemistrySubject,
+  cleanChemistryText,
+  cleanChemistryOptionsValue,
+} from "@/lib/chemistry-text-clean";
 
 export const dynamic = "force-dynamic";
 
@@ -190,16 +196,32 @@ export default async function ManageQuestions({ searchParams }: { searchParams: 
         <h2 className="mb-3 font-semibold">প্রশ্ন ({total})</h2>
         <ul className="space-y-3">
           {rows.map((q) => {
-            const o = (q.options ?? {}) as Record<string, string>;
+            const isChem = isChemistrySubject(q.subject);
+            const rawOpts = (q.options ?? {}) as Record<string, any>;
+            const o = (isChem ? cleanChemistryOptionsValue(rawOpts) : rawOpts) as Record<string, any>;
+            const displayText = isChem && q.text ? cleanChemistryText(q.text) : q.text;
+            const sub = o.subQuestions && typeof o.subQuestions === "object" ? o.subQuestions : o;
             return (
               <li key={q.id} className="rounded-xl border border-slate-200 p-3 text-sm dark:border-slate-700">
-                <p className="font-medium">{q.text}</p>
+                <div className="font-medium whitespace-pre-line">
+                  <MathText text={displayText || ""} />
+                </div>
                 {["A", "B", "C", "D"].some((k) => o[k]) && (
-                  <p className="mt-1 grid gap-0.5 text-xs text-slate-600 dark:text-slate-300 sm:grid-cols-2">
+                  <div className="mt-1 grid gap-0.5 text-xs text-slate-600 dark:text-slate-300 sm:grid-cols-2">
                     {["A", "B", "C", "D"].map((k) => (
-                      <span key={k} className={k === q.correct ? "font-bold text-green-700" : ""}>{k}. {o[k]}</span>
+                      <span key={k} className={k === q.correct ? "font-bold text-green-700" : ""}>
+                        {k}. <MathText text={String(o[k] || "")} />
+                      </span>
                     ))}
-                  </p>
+                  </div>
+                )}
+                {!q.correct && (sub?.k || sub?.["ক"] || sub?.kh || sub?.["খ"]) && (
+                  <div className="mt-1 space-y-0.5 text-xs text-slate-600 dark:text-slate-300">
+                    {(sub.k || sub["ক"]) && <div><b>(ক)</b> <MathText text={String(sub.k || sub["ক"])} /></div>}
+                    {(sub.kh || sub["খ"]) && <div><b>(খ)</b> <MathText text={String(sub.kh || sub["খ"])} /></div>}
+                    {(sub.g || sub["গ"]) && <div><b>(গ)</b> <MathText text={String(sub.g || sub["গ"])} /></div>}
+                    {(sub.gh || sub["ঘ"]) && <div><b>(ঘ)</b> <MathText text={String(sub.gh || sub["ঘ"])} /></div>}
+                  </div>
                 )}
                 <p className="mt-1 text-xs text-slate-500">
                   {q.category} · {q.subject} · {q.topic} · {q.source} · {q.approved ? "অনুমোদিত" : "অপেক্ষমাণ"}

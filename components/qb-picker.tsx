@@ -4,6 +4,7 @@ import {
   toggleVisibleSelection,
   freshPaperSettings,
 } from "@/lib/paper-sections";
+import MathText from "@/components/MathText";
 import React, { useState } from "react";
 import { Search, CheckSquare, Square, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -231,23 +232,78 @@ export default function QbPicker({
                     <Square size={20} />
                   )}
                 </button>
-                <div className="flex-1">
-                  <p className="text-sm font-semibold text-slate-800">
-                    {q.text || q.stimulus}
-                  </p>
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-semibold text-slate-800 whitespace-pre-line">
+                    <MathText text={q.text || q.stimulus || ""} />
+                  </div>
                   {activeTab === "MCQ" && q.options && (
-                    <div className="grid grid-cols-2 gap-2 mt-2 text-xs text-slate-600">
-                      <span>(ক) {q.options.A || q.options["ক"]}</span>
-                      <span>(খ) {q.options.B || q.options["খ"]}</span>
-                      <span>(গ) {q.options.C || q.options["গ"]}</span>
-                      <span>(ঘ) {q.options.D || q.options["ঘ"]}</span>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 text-xs text-slate-600">
+                      <span className="flex items-baseline gap-1">
+                        <b className="shrink-0">(ক)</b>
+                        <MathText text={String(q.options.A || q.options["ক"] || "")} />
+                      </span>
+                      <span className="flex items-baseline gap-1">
+                        <b className="shrink-0">(খ)</b>
+                        <MathText text={String(q.options.B || q.options["খ"] || "")} />
+                      </span>
+                      <span className="flex items-baseline gap-1">
+                        <b className="shrink-0">(গ)</b>
+                        <MathText text={String(q.options.C || q.options["গ"] || "")} />
+                      </span>
+                      <span className="flex items-baseline gap-1">
+                        <b className="shrink-0">(ঘ)</b>
+                        <MathText text={String(q.options.D || q.options["ঘ"] || "")} />
+                      </span>
                     </div>
                   )}
-                  {activeTab === "CQ" && q.subQuestions && (
-                    <div className="mt-2 text-xs text-slate-600 line-clamp-2">
-                      <span className="font-bold">উদ্দীপক:</span> {q.stimulus}
-                    </div>
-                  )}
+                  {activeTab === "CQ" && q.subQuestions && (() => {
+                    const sub =
+                      q.subQuestions?.subQuestions &&
+                      typeof q.subQuestions.subQuestions === "object"
+                        ? q.subQuestions.subQuestions
+                        : q.subQuestions;
+                    const k = sub?.k || sub?.["ক"] || "";
+                    const kh = sub?.kh || sub?.["খ"] || "";
+                    const g = sub?.g || sub?.["গ"] || "";
+                    const gh = sub?.gh || sub?.["ঘ"] || "";
+                    const showSeparateStimulus =
+                      Boolean(q.stimulus && q.text) &&
+                      String(q.stimulus).trim() !== String(q.text).trim();
+                    return (
+                      <div className="mt-2 space-y-1 text-xs text-slate-700">
+                        {showSeparateStimulus && (
+                          <div className="text-slate-600 whitespace-pre-line">
+                            <span className="font-bold">উদ্দীপক: </span>
+                            <MathText text={String(q.stimulus)} />
+                          </div>
+                        )}
+                        {k && (
+                          <div className="flex items-baseline gap-1">
+                            <b className="shrink-0">(ক)</b>
+                            <MathText text={String(k)} />
+                          </div>
+                        )}
+                        {kh && (
+                          <div className="flex items-baseline gap-1">
+                            <b className="shrink-0">(খ)</b>
+                            <MathText text={String(kh)} />
+                          </div>
+                        )}
+                        {g && (
+                          <div className="flex items-baseline gap-1">
+                            <b className="shrink-0">(গ)</b>
+                            <MathText text={String(g)} />
+                          </div>
+                        )}
+                        {gh && (
+                          <div className="flex items-baseline gap-1">
+                            <b className="shrink-0">(ঘ)</b>
+                            <MathText text={String(gh)} />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))

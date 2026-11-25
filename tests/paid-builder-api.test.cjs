@@ -21,6 +21,7 @@ function harness(user, paid) {
       "@/lib/paper-generation": {
         visibleQuestions: () => ({ approved: true }),
       },
+      "@/lib/chemistry-text-clean": require("../lib/chemistry-text-clean"),
       "@/lib/db": {
         db: {
           question: {

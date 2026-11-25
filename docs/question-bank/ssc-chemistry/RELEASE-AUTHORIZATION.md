@@ -4,7 +4,7 @@ Owner instruction: **“Import, approve, deploye koro”** after the complete12c
 
 Scope: **8110 canonical records / 82 prepared batches**, not checkpoint/source-candidate duplicates. 5500MCQ,1550CQ,1060SQ. Existing Physics/Math publication tasks must **not** rerun. Existing unrelated rows, IDs, contents and approvals are preserved.
 
-Pinned plan digest: `a9fbded7f0592af48e0a86f75b37b1e872c9f96c60dc6f278a944230e06bd637`.
+Pinned plan digest: `4e87310512e4e02735a9e3406d48ebf29e4284d8ef2e8f9617dbe8819562acc8`.
 415distinct referenced native/generatedassets;2598records include figures in question/stimulus/explanation. All415must pass public productionHTTPcontent-typeandSHA256checks before DB writes.
 
 Explicit command acknowledgement: `PUBLISH_8110_CHEMISTRY_OWNER_APPROVED_NOT_TEACHER_CERTIFIED`.

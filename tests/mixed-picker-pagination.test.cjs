@@ -12,6 +12,7 @@ for(const kind of ['MCQ_SHORT','MCQ_SHORT_CQ','ALL','MCQ'])test(`picker pages ev
   '@/components/chapter-selector':()=>null,'@/components/chapter-selector.css':{},
   '@/lib/chapter-filter':{normalizeTopics:t=>t?[t]:[],appendFilterParams:()=>{}},
   'next/link':()=>null,'@/components/qb-picker':()=>null,
+  '@/lib/chemistry-text-clean':require('../lib/chemistry-text-clean'),
   '@/lib/db':{db:{question:{count:async({where})=>sizes[where.AND[1].kind],findMany:async args=>{
    if(args.distinct)return [];
    requests.push(args);const type=args.where.AND[1].kind;

@@ -6,6 +6,7 @@ from pathlib import Path
 from collections import Counter
 from fractions import Fraction
 import json,html,hashlib,sys,re,base64
+from chemistry_spacing import clean_chemistry_text,clean_chemistry_inputs
 R=Path(__file__).resolve().parents[2]
 OUT=R/'content/question-bank/ssc/chemistry/chapter-10'
 DOC=R/'docs/question-bank/ssc-chemistry'
@@ -19,8 +20,17 @@ def fmt(x):
  x=float(x)
  return str(int(x)) if x.is_integer() else f'{x:.4f}'.rstrip('0').rstrip('.')
 def add(t,q,a,family,origin='AUTHORED_COMMON_BOARD_STYLE',metadata=None,**kw):
+ a=clean_chemistry_text(a)
+ if origin=='AUTHORED_COMMON_BOARD_STYLE':
+  q=clean_chemistry_text(q)
+  if 'options' in kw:kw['options']={k:clean_chemistry_text(v) for k,v in kw['options'].items()}
+  if 'parts' in kw:kw['parts']=[{**pt,'question':clean_chemistry_text(pt['question']),'solution':clean_chemistry_text(pt['solution'])} for pt in kw['parts']]
+ elif 'parts' in kw:
+  kw['parts']=[{**pt,'solution':clean_chemistry_text(pt['solution'])} for pt in kw['parts']]
+ meta_clean=dict(metadata or {})
+ if 'inputs' in meta_clean:meta_clean['inputs']=clean_chemistry_inputs(meta_clean['inputs'])
  items.append(dict(type=t,text=q,explanation=a,page=kw.pop('page','নিজস্ব সাধারণ বোর্ড-ধাঁচের অনুশীলনী; আসল বোর্ড প্রশ্ন নয়'),difficulty='MEDIUM',**kw))
- ledger.append({**dict(origin=origin,family=family,answerOrigin='ASSISTANT_AUTHORED_NOT_SOURCE_KEY',teacherApproved=False,sourceQuestionVerbatim=False),**(metadata or {})})
+ ledger.append({**dict(origin=origin,family=family,answerOrigin='ASSISTANT_AUTHORED_NOT_SOURCE_KEY',teacherApproved=False,sourceQuestionVerbatim=False),**meta_clean})
 def mc(q,a,w,why,family,**kw):
  assert len(w)==3 and len(set([a,*w]))==4,(q,a,w)
  pos=sum(x['type']=='MCQ' for x in items)%4;opts=w.copy();opts.insert(pos,a)
@@ -670,7 +680,7 @@ def space_authored(value):
  if isinstance(value,str):
   for phrase in sorted(SPACED_PHRASES,key=len,reverse=True):
    value=value.replace(phrase.replace(' ',''),phrase)
-  return value
+  return clean_chemistry_text(value) if re.search(r'[\u0980-\u09ff]',value) else value
  if isinstance(value,list):return [space_authored(v)for v in value]
  if isinstance(value,dict):return {k:space_authored(v)for k,v in value.items()}
  return value

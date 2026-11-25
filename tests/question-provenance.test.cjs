@@ -41,6 +41,7 @@ test('paid builder API exposes provenance separately, never as a fifth MCQ optio
   '@/auth':{auth:async()=>({user:{id:'owner',role:'TEACHER'}})},
   '@/lib/wallet':{requirePaidQuestions:async()=>calls.push('paid')},
   '@/lib/paper-generation':{visibleQuestions:()=>({approved:true})},
+  '@/lib/chemistry-text-clean':require('../lib/chemistry-text-clean'),
   '@/lib/db':{db:{question:{findMany:async()=>{calls.push('read');return[{id:'q',text:'Question',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()],_authoring:{kind:'authored-practice',teacherCertified:false}},source:'Manual',approved:true}];}}}},
   'next/server':{NextResponse:{json:(data)=>data}},
  });
@@ -56,6 +57,7 @@ test('real math samples are school-attributed only with exact question locators 
 test('DB exam generation ignores reserved provenance instead of discarding a valid MCQ or adding a fifth option',async()=>{
  const api=load('app/api/generate-exam/route.ts',{
   '@/auth':{auth:async()=>({user:{id:'student',role:'STUDENT'}})},
+  '@/lib/chemistry-text-clean':require('../lib/chemistry-text-clean'),
   '@/lib/db':{db:{question:{findMany:async()=>[{text:'2+2?',correct:'A',options:{A:'4',B:'3',C:'5',D:'6',_provenance:[occurrence()],_authoring:{kind:'authored-practice',teacherCertified:false}},explanation:'4'}]},apiUsage:{upsert:()=>{throw Error('DB mode must not consume provider quota')}}}},
   'next/server':{NextResponse:{json:(data)=>data}},
  });

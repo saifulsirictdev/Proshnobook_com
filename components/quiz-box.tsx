@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { FilePlus2, Loader2, LogIn, Sparkles, Square, X } from "lucide-react";
 import { generateQuiz, saveQuizToBank, type QuizItem } from "@/app/actions/generate-quiz";
+import MathText from "@/components/MathText";
 import { NCTB_CLASSES, type NctbClass } from "../lib/nctb-data";
 
 type Triple = { category: string; subject: string; topic: string };
@@ -509,16 +510,17 @@ export default function QuizBox({ triples = [], role = null }: { triples?: Tripl
 
             return (
               <div key={i} className="rounded-2xl border border-slate-200 bg-white p-4">
-                <p className="font-semibold mb-2">
-                  {i + 1}. {isCq ? (q.stimulus || "উদ্দীপক") : (q.text || "প্রশ্ন")}
-                </p>
+                <div className="font-semibold mb-2 whitespace-pre-line">
+                  <span>{i + 1}. </span>
+                  <MathText text={isCq ? (q.stimulus || q.text || "উদ্দীপক") : (q.text || "প্রশ্ন")} />
+                </div>
 
                 {isCq && q.subQuestions && (
                   <div className="mt-2 text-sm text-slate-700 space-y-1 pl-2">
-                    <p><b>(ক)</b> {q.subQuestions.k || ""}</p>
-                    <p><b>(খ)</b> {q.subQuestions.kh || ""}</p>
-                    <p><b>(গ)</b> {q.subQuestions.g || ""}</p>
-                    <p><b>(ঘ)</b> {q.subQuestions.gh || ""}</p>
+                    <div className="flex items-baseline gap-1"><b className="shrink-0">(ক)</b> <MathText text={q.subQuestions.k || ""} /></div>
+                    <div className="flex items-baseline gap-1"><b className="shrink-0">(খ)</b> <MathText text={q.subQuestions.kh || ""} /></div>
+                    <div className="flex items-baseline gap-1"><b className="shrink-0">(গ)</b> <MathText text={q.subQuestions.g || ""} /></div>
+                    <div className="flex items-baseline gap-1"><b className="shrink-0">(ঘ)</b> <MathText text={q.subQuestions.gh || ""} /></div>
                   </div>
                 )}
 
@@ -543,7 +545,7 @@ export default function QuizBox({ triples = [], role = null }: { triples?: Tripl
                           className={`flex items-start gap-2 rounded-xl border px-3 py-2 text-left text-sm ${cls}`}
                         >
                           <b>{BN[j]}.</b>
-                          <span>{q.options?.[k] || ""}</span>
+                          <span><MathText text={q.options?.[k] || ""} /></span>
                         </button>
                       );
                     })}
@@ -551,11 +553,16 @@ export default function QuizBox({ triples = [], role = null }: { triples?: Tripl
                 )}
 
                 {isShort && (
-                  <p className="mt-2 text-sm text-slate-600">ব্যাখ্যা/উত্তর: {q.explanation || "সংরক্ষিত আছে"}</p>
+                  <div className="mt-2 text-sm text-slate-600 whitespace-pre-line">
+                    <span>ব্যাখ্যা/উত্তর: </span>
+                    <MathText text={q.explanation || "সংরক্ষিত আছে"} />
+                  </div>
                 )}
 
                 {chosen && q.explanation && isMcq && (
-                  <p className="mt-2 rounded-lg bg-slate-50 p-2 text-sm text-slate-700">{q.explanation}</p>
+                  <div className="mt-2 rounded-lg bg-slate-50 p-2 text-sm text-slate-700 whitespace-pre-line">
+                    <MathText text={q.explanation} />
+                  </div>
                 )}
               </div>
             );

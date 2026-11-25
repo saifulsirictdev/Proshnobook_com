@@ -54,6 +54,7 @@ test("mixed ID API does not silently truncate later types at 200", async () => {
       "@/lib/paper-generation": {
         visibleQuestions: () => ({ approved: true }),
       },
+      "@/lib/chemistry-text-clean": require("../lib/chemistry-text-clean"),
       "@/lib/db": {
         db: {
           question: {

@@ -12,6 +12,14 @@ import { normalizeTopics, appendFilterParams } from "@/lib/chapter-filter";
 import Link from "next/link";
 import { db } from "@/lib/db";
 import QbPicker from "@/components/qb-picker";
+import {
+  isChemistrySubject,
+  cleanChemistryText,
+  cleanChemistryOptionsValue,
+  cleanChemistrySubQuestions,
+  chemistryScenarioSignature,
+  interleaveByChemistryScenario,
+} from "@/lib/chemistry-text-clean";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "প্রশ্ন নির্বাচন" };
@@ -117,7 +125,13 @@ export default async function CreatePage({
   ]);
 
   const topics = topicRows.map((t) => t.topic).filter(Boolean);
-  const rows = groups.flatMap(group => group.rows);
+  const rows = groups.flatMap((group) =>
+    group.rows.some((r) => isChemistrySubject(r.subject))
+      ? interleaveByChemistryScenario(group.rows, (r: any) =>
+          isChemistrySubject(r.subject) ? chemistryScenarioSignature(r) : r.id,
+        )
+      : group.rows,
+  );
   const total = groups.reduce((sum, group) => sum + group.count, 0);
   const pages = Math.max(1, ...groups.map(group => group.typePages));
 
@@ -140,24 +154,31 @@ export default async function CreatePage({
     // 🎯 সঠিকভাবে MCQ, SHORT এবং CQ ডিটেক্ট করার লজিক
     let itemType = "MCQ";
     const { _provenance, _authoring, ...opts } = (r.options as any) || {};
+    const isChem = isChemistrySubject(r.subject);
+    const cleanedOpts = isChem ? cleanChemistryOptionsValue(opts) : opts;
 
     if (!r.correct) {
       // যদি অপশনে উদ্দীপক বা ক/খ/গ/ঘ থাকে, তবেই সেটি CQ, অন্যথায় SHORT
       const isCq =
-        opts.stimulus ||
-        opts.k ||
-        opts.ক ||
-        opts.subQuestions ||
+        cleanedOpts.stimulus ||
+        cleanedOpts.k ||
+        cleanedOpts.ক ||
+        cleanedOpts.subQuestions ||
         (r.text && r.text.includes("(ক)"));
       itemType = isCq ? "CQ" : "SHORT";
     }
 
+    const rawSub = cleanedOpts.subQuestions ?? cleanedOpts;
+
     return {
       id: r.id,
-      text: r.text,
-      options: opts,
+      text: isChem && r.text ? cleanChemistryText(r.text) : r.text,
+      options: cleanedOpts,
       correct: r.correct,
-      explanation: r.explanation,
+      explanation:
+        isChem && r.explanation
+          ? cleanChemistryText(r.explanation)
+          : r.explanation,
       category: r.category,
       subject: r.subject,
       topic: r.topic,
@@ -167,8 +188,13 @@ export default async function CreatePage({
           : "AI — অনুমোদনের অপেক্ষায়"
         : r.source,
       type: itemType, // 🎯 এখানে টাইপটি পাস করা হলো
-      stimulus: opts.stimulus || "",
-      subQuestions: itemType === "CQ" ? opts : undefined,
+      stimulus: cleanedOpts.stimulus || "",
+      subQuestions:
+        itemType === "CQ"
+          ? isChem
+            ? cleanChemistrySubQuestions(rawSub)
+            : rawSub
+          : undefined,
     };
   });
 

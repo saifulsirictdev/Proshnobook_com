@@ -2,6 +2,31 @@ import { subjectModelPolicy, subjectModelChapter, type SubjectModelPolicy } from
 import { questionBlocks } from "./question-tables";
 import { NCTB_CLASSES } from "./nctb-data";
 
+function scenarioSignature(item: AutoModelRow): string {
+  const rawOpts = item.options && typeof item.options === "object" && !Array.isArray(item.options)
+    ? (item.options as Record<string, unknown>)
+    : null;
+  const authoring = rawOpts?._authoring && typeof rawOpts._authoring === "object"
+    ? (rawOpts._authoring as Record<string, unknown>)
+    : null;
+  if (authoring && typeof authoring.family === "string" && authoring.family.trim()) {
+    return `family:${authoring.family.trim()}`;
+  }
+  const raw = String((rawOpts && (rawOpts.stimulus || rawOpts["উদ্দীপক"])) || item.text || "");
+  if (!raw.trim()) return "";
+  return raw
+    .normalize("NFC")
+    .replace(/!\[[^\]]*\]\(([^)]*)\)/g, (_, url) => `[IMG:${String(url).split("/").pop()?.replace(/[0-9]+/g, "#") || "img"}]`)
+    .replace(/^\s*\|.*\|\s*$/gm, "[TBL]")
+    .replace(/(?:\[TBL\]\s*)+/g, "[TBL] ")
+    .replace(/[0-9০-৯₀-₉⁰-⁹]+(?:\.[0-9০-৯]+)?/g, "#")
+    .replace(/\b[A-Z][A-Za-z0-9₀-₉⁰-⁹⁺⁻()]*\b/g, "SYM")
+    .replace(/['"‘’“”]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 96);
+}
+
 export type AutoModelVariant = "MCQ" | "CQ";
 export const AUTO_MODEL_NOTICE =
   "আপনার দেওয়া নমুনার ভিত্তিতে practice কাঠামো; সরকারি পরীক্ষার সর্বশেষ সিলেবাস/মানবণ্টনের স্বীকৃতি নয়।";
@@ -364,8 +389,18 @@ export function assembleSubjectAutoModel(
   for (const section of sections) {
     const buckets=new Map<number,AutoModelRow[]>();
     for(const q of eligible.filter(q=>q.kind===section.kind)) buckets.set(q.chapter,[...(buckets.get(q.chapter)||[]),q.row]);
-    const counts=new Map<number,number>();let selected=0;
-    const take=(ch:number)=>{const q=buckets.get(ch)?.shift();if(!q)return false;ids.push(q.id);divisions[q.id]=q.topic;counts.set(ch,(counts.get(ch)||0)+1);selected++;return true;};
+    const counts=new Map<number,number>();
+    const seenFamilies=new Set<string>();
+    let selected=0;
+    const take=(ch:number)=>{
+      const bucket=buckets.get(ch);
+      if(!bucket?.length)return false;
+      const idx=bucket.findIndex(r=>!seenFamilies.has(scenarioSignature(r)));
+      const q=idx>=0?bucket.splice(idx,1)[0]:bucket.shift()!;
+      const sig=scenarioSignature(q);
+      if(sig)seenFamilies.add(sig);
+      ids.push(q.id);divisions[q.id]=q.topic;counts.set(ch,(counts.get(ch)||0)+1);selected++;return true;
+    };
     for(const ch of section.requiredChapters) if(!take(ch))gaps.push({section:`${section.kind}: ${policy.chapters[ch-1]}`,required:1,available:0});
     // Rotation gives balanced chapter coverage without guessing a subject-wide quota.
     while(selected<section.offered){let progress=false;for(const ch of buckets.keys()){

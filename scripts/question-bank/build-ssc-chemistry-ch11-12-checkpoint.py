@@ -4,6 +4,7 @@ No registration/DB/deployment. Source questions separate from original core prac
 from pathlib import Path
 from collections import Counter
 import json,hashlib,html,base64,re,sys
+from chemistry_spacing import clean_chemistry_text
 R=Path(__file__).resolve().parents[2];DOC=R/'docs/question-bank/ssc-chemistry';BANK=R/'content/question-bank/ssc/chemistry'
 def enc(v):return json.dumps(v,ensure_ascii=False,indent=2)+'\n'
 def save(p,v):
@@ -115,6 +116,13 @@ WRITTEN={11:[
 for ch,core,short in [(11,CORE11,SHORT11),(12,CORE12,SHORT12)]:
  intake=json.loads((BANK/f'chapter-{ch}-source-intake.json').read_text());rows=[];ledger=[]
  def add(q,origin,family,metadata=None):
+  q=dict(q);q['explanation']=clean_chemistry_text(q['explanation'])
+  if origin=='AUTHORED_COMMON_BOARD_STYLE':
+   q['text']=clean_chemistry_text(q['text'])
+   if 'options'in q:q['options']={k:clean_chemistry_text(v)for k,v in q['options'].items()}
+   if 'parts'in q:q['parts']=[{**pt,'question':clean_chemistry_text(pt['question']),'solution':clean_chemistry_text(pt['solution'])}for pt in q['parts']]
+  elif 'parts'in q:
+   q['parts']=[{**pt,'solution':clean_chemistry_text(pt['solution'])}for pt in q['parts']]
   rows.append(q);ledger.append(dict(origin=origin,family=family,teacherApproved=False,sourceQuestionVerbatim=False,answerOrigin='ASSISTANT_AUTHORED_NOT_SOURCE_KEY',**(metadata or{})))
  def question(t,text,explanation,page='নিজস্ব সাধারণ বোর্ড-ধাঁচের অনুশীলনী; আসল বোর্ড প্রশ্ন নয়',**kw):return dict(type=t,text=text,explanation=explanation,page=page,difficulty='MEDIUM',**kw)
  for x in intake['items']:
