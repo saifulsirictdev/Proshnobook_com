@@ -80,7 +80,6 @@ export function imageFrom(url: string): Promise<HTMLImageElement> {
     const image = new Image();
     image.onload = () => resolve(image);
     image.onerror = () => reject(Error(`Page image লোড হয়নি (${url.length} chars)`));
-      reject(Error(`Page image load failed (${url.length} chars)`));
     image.src = url;
   });
 }
