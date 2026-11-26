@@ -24,6 +24,18 @@ export function bankFileFormat(name: string): BankFileFormat {
     "DOCX, JSON অথবা TXT ফাইল দিন। পুরোনো DOC হলে Word থেকে DOCX হিসেবে সেভ করুন। PDF এই importer-এর ফাইল নয়।",
   );
 }
+/** Pasted JSON must work even when no JSON file was selected before it. */
+export function bankPastedTextFormat(
+  text: string,
+  format: "auto" | "txt" | "json" = "auto",
+): "txt" | "json" {
+  if (format !== "auto") return format;
+  const start = text.replace(/^\uFEFF/, "").trimStart();
+  return start.startsWith("{") ||
+    (start.startsWith("[") && !/^\[(MCQ|CQ|SQ)\]/i.test(start))
+    ? "json"
+    : "txt";
+}
 export function decodeBankText(bytes: Uint8Array) {
   let encoding = "utf-8";
   if (bytes[0] === 255 && bytes[1] === 254) encoding = "utf-16le";
