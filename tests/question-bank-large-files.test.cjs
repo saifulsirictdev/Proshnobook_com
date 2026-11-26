@@ -33,6 +33,9 @@ const images = load("lib/question-bank-images.ts"),
     "./question-bank-batch": batch,
     "./question-bank-images": images,
   }),
+  review = load("lib/question-bank-text-review.ts", {
+    "./admin-question-bank-schema": schema,
+  }),
   zip = load("lib/question-bank-zip-browser.ts", {
     "./question-bank-large-file": large,
   });
@@ -88,6 +91,7 @@ async function runWorker(data) {
       "../lib/question-bank-zip-browser": zip,
       "../lib/question-bank-large-file": large,
       "../lib/question-bank-batch": batch,
+      "../lib/question-bank-text-review": review,
     });
     await global.onmessage({ data });
     if (error) throw error;

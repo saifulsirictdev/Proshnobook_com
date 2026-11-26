@@ -1,3 +1,7 @@
+import {
+  parseBankTextForReview,
+  type BankTextReview,
+} from "../lib/question-bank-text-review";
 import mammoth from "mammoth/mammoth.browser";
 import { inspectLargeBankDocx } from "../lib/question-bank-zip-browser";
 import {
@@ -131,8 +135,15 @@ port.onmessage = async (event) => {
       throw Error("নথিতে ২ কোটি অক্ষরের বেশি; নথিটি ভাগ করুন।");
     progress({ phase: "প্রশ্নের গঠন পড়ছি" });
     let items: ReturnType<typeof parseBankDocument> = [];
+    let reviews: BankTextReview[] | undefined;
     try {
-      items = parseBankDocument(text, scope, format);
+      if (format === "json") items = parseBankDocument(text, scope, format);
+      else {
+        const parsed = parseBankTextForReview(text, scope);
+        items = parsed.items;
+        reviews = parsed.reviews;
+        warnings.push(...parsed.warnings);
+      }
     } catch (error) {
       warnings.push(
         `ফাইলের টেক্সট পাওয়া গেছে, কিন্তু staging এখনো হয়নি: ${(error as Error).message}`,
@@ -153,6 +164,7 @@ port.onmessage = async (event) => {
       result: {
         text,
         items,
+        reviews,
         warnings: warnings
           .slice(0, 200)
           .concat(

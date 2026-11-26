@@ -29,6 +29,9 @@ const images = load("lib/question-bank-images.ts"),
   batch = load("lib/question-bank-batch.ts", {
     "./admin-question-bank-schema": schema,
   }),
+  review = load("lib/question-bank-text-review.ts", {
+    "./admin-question-bank-schema": schema,
+  }),
   large = load("lib/question-bank-large-file.ts", {
     "./admin-question-bank-schema": schema,
     "./question-bank-batch": batch,
@@ -67,23 +70,36 @@ test("real Parse button reports missing inputs locally, stages pasted JSON, pres
     "@/lib/admin-question-bank-schema": schema,
     "@/lib/question-bank-batch": batch,
     "@/lib/question-bank-large-file": large,
+    "@/lib/question-bank-text-review": review,
     "@/lib/question-bank-file-client": {
       readBankFileInWorker: async (input) => {
         workerCalls++;
         let items = [],
           warnings = [];
+        let reviews;
         try {
-          items = large.parseBankDocument(
-            input.text,
-            input.scope,
-            input.format,
-          );
+          if (input.format === "json")
+            items = large.parseBankDocument(
+              input.text,
+              input.scope,
+              input.format,
+            );
+          else {
+            const result = review.parseBankTextForReview(
+              input.text,
+              input.scope,
+            );
+            items = result.items;
+            reviews = result.reviews;
+            warnings = result.warnings;
+          }
         } catch (e) {
           warnings = [e.message];
         }
         return {
           text: input.text,
           items,
+          reviews,
           warnings,
           batchId: "12345678-1234-4123-8123-123456789abc",
           fileName: "edited-template." + input.format,
@@ -127,7 +143,7 @@ test("real Parse button reports missing inputs locally, stages pasted JSON, pres
     assert.ok(el);
     const key = Object.keys(el).find((key) => key.startsWith("__reactProps"));
     await React.act(async () => {
-      el[key].onChange({ target: { value } });
+      el[key].onChange({ target: { value, checked: value } });
     });
   };
   const notice = () =>
@@ -194,6 +210,42 @@ test("real Parse button reports missing inputs locally, stages pasted JSON, pres
       document.querySelectorAll('[aria-label$="নং প্রশ্নের টেক্সট"]').length,
       1,
     );
+    await change(
+      "প্রশ্নব্যাচের টেক্সট",
+      "BOARD: উৎসের দাবি\n[MCQ]\nQuestion: প্রশ্ন\nA: এক\nB: দুই\nC: তিন\nD: চার\nAnswer: উত্তর নেই\nExplanation: উত্তর নেই",
+    );
+    await click("টেক্সট Parse করে");
+    assert.match(
+      document.querySelector('[aria-label="Staging সংশোধনের হিসাব"]')
+        .textContent,
+      /সংশোধন\/source-review বাকি 1টি/,
+    );
+    const checkButton = () =>
+      [...document.querySelectorAll("button")].find((el) =>
+        el.textContent.includes("নির্বাচিত প্রশ্ন যাচাই করুন"),
+      );
+    assert.ok(checkButton().disabled);
+    assert.equal(
+      document.querySelector('[aria-label="1 নং প্রশ্ন নির্বাচন"]').checked,
+      false,
+    );
+    assert.equal(
+      document.querySelector('[aria-label="1 নং প্রশ্নের সঠিক উত্তর"]').value,
+      "",
+    );
+    await change("1 নং প্রশ্নের সঠিক উত্তর", "B");
+    await change("1 নং প্রশ্নের সমাধান", "মূলের সঙ্গে যাচাই করা সমাধান");
+    await change("1 নং প্রশ্ন মূলের সঙ্গে যাচাই করেছি", true);
+    await click("শুধু প্রস্তুত প্রশ্ন নির্বাচন করুন");
+    assert.equal(checkButton().disabled, false);
+    await change("1 নং প্রশ্নের সমাধান", "আরেকটি সংশোধন");
+    assert.equal(
+      document.querySelector(
+        '[aria-label="1 নং প্রশ্ন মূলের সঙ্গে যাচাই করেছি"]',
+      ).checked,
+      false,
+    );
+    assert.ok(checkButton().disabled);
   } finally {
     await React.act(async () => root.unmount());
     dom.window.close();
