@@ -83,6 +83,7 @@ async function runQuestionBankWorkflow({
     );
     await tools.locator("summary").click();
     setPhase("bank_real_image_upload_preview");
+    setPhase("bank_image_alt_field");
     await editor
       .getByLabel("ছবির বর্ণনা", { exact: true })
       .fill("Synthetic raster fixture");
@@ -92,6 +93,8 @@ async function runQuestionBankWorkflow({
       })
         .png()
         .toBuffer();
+    setPhase("bank_image_file_input");
+    const uploadResponse = page.waitForResponse(response => response.url() === origin + "/api/admin/question-bank/image" && response.request().method() === "POST");
     await editor
       .getByLabel("ছবি আপলোড করুন", { exact: true })
       .setInputFiles({
@@ -99,9 +102,14 @@ async function runQuestionBankWorkflow({
         mimeType: "image/png",
         buffer: png,
       });
+    const uploadStatus = (await uploadResponse).status();
+    if (uploadStatus !== 200) console.error(`::error::Synthetic bank raster upload HTTP ${uploadStatus}`);
+    assert.equal(uploadStatus, 200);
+    setPhase("bank_image_insert_button");
     await editor
       .getByRole("button", { name: "নির্বাচিত স্থানে ছবি বসান", exact: true })
       .click();
+    setPhase("bank_image_preview_decode");
     const image = editor
       .getByRole("complementary")
       .getByRole("img", { name: "Synthetic raster fixture" });
@@ -111,6 +119,7 @@ async function runQuestionBankWorkflow({
       await image.evaluate((img) => img.complete && img.naturalWidth > 0),
     );
     for (const width of [390, 1280]) {
+      setPhase(`bank_editor_responsive_${width}`);
       await page.setViewportSize({ width, height: 900 });
       assert.ok(
         await page.evaluate(
@@ -122,6 +131,7 @@ async function runQuestionBankWorkflow({
         fullPage: true,
       });
     }
+    setPhase("bank_editor_review_and_save");
     await editor.getByRole("checkbox").check();
     await editor
       .getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true })
@@ -336,6 +346,13 @@ async function runQuestionBankWorkflow({
     console.log(
       "PASS isolated question-bank: actual Credentials UI, Unicode preview/Undo, real raster, Pending/review/edit, Trash/Restore, history rollback, Word extraction/repeat, JSON/CSV export; no external correction calls",
     );
+  } catch (error) {
+    // Emit only allowlisted diagnostic fields, never raw browser/server/DB errors.
+    const location = /question-bank-authenticated-flow\.cjs:(\d+):(\d+)/.exec(error.stack ?? "");
+    const kind = ["AssertionError", "TimeoutError"].includes(error.name) ? error.name : "Error";
+    console.error(`::error::Synthetic bank workflow ${kind} at helper line ${location?.[1] ?? "unknown"}`);
+    await page.screenshot({path: out + "/failure.png", fullPage: true}).catch(() => {});
+    throw error;
   } finally {
     page.off("dialog", dialogs);
   }
