@@ -252,6 +252,15 @@ async function main() {
     await editor
       .getByLabel("উত্তর / সমাধান ও ব্যাখ্যা", { exact: true })
       .fill("এটি একটি synthetic উত্তর।");
+    const tools = editor.locator("details").filter({has: page.locator("summary",{hasText:"Unicode conversion"})});
+    await tools.locator("summary").click();
+    await tools.getByRole("button",{name:"Editor থেকে টেক্সট নিন",exact:true}).click();
+    await tools.getByLabel("মূল / legacy টেক্সট",{exact:true}).fill("Avgvi †mvbvi evsjv $x=2$ 123");
+    await tools.getByRole("button",{name:"Bijoy → Unicode প্রিভিউ",exact:true}).click();
+    assert.match(await tools.getByLabel("প্রস্তাবিত টেক্সট",{exact:true}).inputValue(),/আমার সোনার বাংলা/);
+    await tools.getByRole("button",{name:"পার্থক্য দেখেছি · Editor-এ বসান",exact:true}).click();
+    await tools.getByRole("button",{name:"শেষ Apply Undo করুন",exact:true}).click();
+    await tools.locator("summary").click();
     await editor
       .getByLabel("ছবির বর্ণনা", { exact: true })
       .fill("পরীক্ষামূলক নীল চিত্র");

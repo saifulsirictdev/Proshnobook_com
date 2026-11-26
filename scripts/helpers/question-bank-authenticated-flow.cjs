@@ -132,7 +132,7 @@ async function runQuestionBankWorkflow({
       });
     }
     setPhase("bank_editor_review_and_save");
-    await editor.getByRole("checkbox").check();
+    await editor.getByRole("checkbox", {name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/}).check();
     await editor
       .getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true })
       .click();
@@ -169,7 +169,7 @@ async function runQuestionBankWorkflow({
     await editor
       .getByLabel("উত্তর / সমাধান ও ব্যাখ্যা", { exact: true })
       .fill("Synthetic revised solution");
-    await editor.getByRole("checkbox").check();
+    await editor.getByRole("checkbox", {name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/}).check();
     await editor
       .getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true })
       .click();
@@ -350,7 +350,8 @@ async function runQuestionBankWorkflow({
     // Emit only allowlisted diagnostic fields, never raw browser/server/DB errors.
     const location = /question-bank-authenticated-flow\.cjs:(\d+):(\d+)/.exec(error.stack ?? "");
     const kind = ["AssertionError", "TimeoutError"].includes(error.name) ? error.name : "Error";
-    console.error(`::error::Synthetic bank workflow ${kind} at helper line ${location?.[1] ?? "unknown"}`);
+    const reasons = [...new Set((error.message ?? "").match(/intercepts pointer events|strict mode violation|not visible|not stable|not enabled|outside of the viewport/g) ?? [])].join(",");
+    console.error(`::error::Synthetic bank workflow ${kind} at helper line ${location?.[1] ?? "unknown"}; ${reasons || "no allowlisted browser detail"}`);
     await page.screenshot({path: out + "/failure.png", fullPage: true}).catch(() => {});
     throw error;
   } finally {

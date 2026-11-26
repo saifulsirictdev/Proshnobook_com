@@ -6,7 +6,7 @@ function render(pathname){
  return renderToStaticMarkup(React.createElement(m.exports.default));
 }
 test('Even an already-visible install overlay cannot cover selection, editor, saved drafts or English preparation',()=>{
- for(const route of ['/question-builder','/question-builder/build','/question-builder/english','/question-builder/english/saved','/question-builder/prepare'])assert.equal(render(route),'');
+ for(const route of ['/question-builder','/question-builder/build','/question-builder/english','/question-builder/english/saved','/question-builder/prepare','/admin/questions','/admin/questions/bank','/admin/questions/bank/import','/admin/questions/import'])assert.equal(render(route),'');
 });
 test('Install assistance remains available outside the question-paper workflow',()=>{
  for(const route of ['/','/dashboard','/question-builder-guide']){const html=render(route);assert.match(html,/ip-backdrop/);assert.match(html,/এখন নয়/);}
