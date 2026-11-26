@@ -1,3 +1,4 @@
+import { bankSameOrigin } from "@/lib/question-bank-origin";
 import { admin } from "@/lib/guard";
 export const bankReply = (value: unknown, status = 200) =>
   Response.json(value, { status, headers: { "Cache-Control": "no-store" } });
@@ -5,7 +6,7 @@ export async function bankPostActor(req: Request, type = "application/json") {
   const actor = await admin();
   if (!actor.id) throw Error("Admin অনুমতি প্রয়োজন।");
   if (
-    req.headers.get("origin") !== new URL(req.url).origin ||
+    !bankSameOrigin(req) ||
     !req.headers.get("content-type")?.startsWith(type)
   )
     throw Error("অনুরোধের origin বা format সঠিক নয়।");

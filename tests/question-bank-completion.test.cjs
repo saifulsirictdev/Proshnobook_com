@@ -6,7 +6,7 @@ const { test } = require("node:test"),
 function load(file, mocks = {}) {
   const m = new Module(file, module);
   m.paths = module.paths;
-  m.require = (id) => (Object.hasOwn(mocks, id) ? mocks[id] : require(id));
+  m.require = (id) => (Object.hasOwn(mocks, id) ? mocks[id] : id === "@/lib/question-bank-origin" ? originGuard : require(id));
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {
@@ -20,6 +20,7 @@ function load(file, mocks = {}) {
   );
   return m.exports;
 }
+const originGuard = load("lib/question-bank-origin.ts");
 const images = load("lib/question-bank-images.ts"),
   schema = load("lib/admin-question-bank-schema.ts", {
     "./question-bank-images": images,
@@ -445,4 +446,15 @@ test("correction quota requires consent/configuration and never auto-saves or ap
     if (old === undefined) delete process.env.DEEPSEEK_API_KEY;
     else process.env.DEEPSEEK_API_KEY = old;
   }
+});
+
+test("browser origin uses destination Host despite Next internal hostname; cross-site/malformed origins stay denied",()=>{
+ const req=(origin,extras={})=>new Request("http://localhost:3456/api/admin/question-bank",{method:"POST",headers:{Origin:origin,Host:"127.0.0.1:3456",...extras}});
+ assert.equal(originGuard.bankSameOrigin(req("http://127.0.0.1:3456")),true);
+ for(const origin of ["https://evil.invalid","http://localhost:3456","null","http://127.0.0.1:3456/path","https://127.0.0.1:3456"])
+  assert.equal(originGuard.bankSameOrigin(req(origin)),false,origin);
+ assert.equal(originGuard.bankSameOrigin(req("https://preview.e2b.app",{Host:"preview.e2b.app","x-forwarded-proto":"https"})),true);
+ assert.equal(originGuard.bankSameOrigin(req("https://evil.invalid",{"x-forwarded-host":"evil.invalid","x-forwarded-proto":"https"})),false);
+ assert.equal(originGuard.bankSameOrigin(req("http://127.0.0.1:3456",{Host:"127.0.0.1:3456/evil"})),false);
+ assert.equal(originGuard.bankSameOrigin(new Request("https://preview.e2b.app/api/admin/question-bank")),false);
 });

@@ -1,3 +1,4 @@
+import { bankSameOrigin } from "@/lib/question-bank-origin";
 import { randomUUID } from "node:crypto";
 import sharp from "sharp";
 import { admin } from "@/lib/guard";
@@ -18,7 +19,7 @@ export async function POST(req: Request) {
     return reply({ error: "শুধু Admin ছবি আপলোড করতে পারবেন।" }, 403);
   }
   if (
-    req.headers.get("origin") !== new URL(req.url).origin ||
+    !bankSameOrigin(req) ||
     !req.headers.get("content-type")?.startsWith("multipart/form-data")
   )
     return reply({ error: "অনুরোধের format সঠিক নয়।" }, 403);

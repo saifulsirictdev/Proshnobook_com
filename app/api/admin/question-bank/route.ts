@@ -1,3 +1,4 @@
+import { bankSameOrigin } from "@/lib/question-bank-origin";
 import { admin } from "@/lib/guard";
 import { db } from "@/lib/db";
 import {
@@ -55,10 +56,8 @@ export async function POST(req: Request) {
     return reply({ error: "শুধু Admin-এর অনুমতি আছে।" }, 403);
   }
   // Cookie-authenticated JSON endpoint: do not allow cross-site submissions.
-  const origin = req.headers.get("origin");
   if (
-    !origin ||
-    origin !== new URL(req.url).origin ||
+    !bankSameOrigin(req) ||
     !req.headers.get("content-type")?.startsWith("application/json")
   )
     return reply({ error: "অনুরোধের origin বা format সঠিক নয়।" }, 403);

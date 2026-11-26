@@ -8,7 +8,7 @@ const { renderToStaticMarkup } = require("react-dom/server");
 function load(file, mocks = {}) {
   const m = new Module(file, module);
   m.paths = module.paths;
-  m.require = (id) => (Object.hasOwn(mocks, id) ? mocks[id] : require(id));
+  m.require = (id) => (Object.hasOwn(mocks, id) ? mocks[id] : id === "@/lib/question-bank-origin" ? originGuard : require(id));
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {
@@ -22,6 +22,7 @@ function load(file, mocks = {}) {
   );
   return m.exports;
 }
+const originGuard = load("lib/question-bank-origin.ts");
 const images = load("lib/question-bank-images.ts");
 const schema = load("lib/admin-question-bank-schema.ts", {
   "./question-bank-images": images,
