@@ -1,3 +1,5 @@
+// Historical Chemistry preservation scope excludes later Class 7 BGS additions;
+// current Class 7 shipping completeness is checked separately.
 // Historical non-Biology registry scope; full current totals are checked in prepared-library.test.cjs.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),Module=require('node:module'),{createHash}=require('node:crypto'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.React}}).outputText,file);return m.exports;}
@@ -101,7 +103,7 @@ test('real registry preserves 19956 prior records; adds only 700 read-only draft
  assert.doesNotMatch(fs.readFileSync('lib/ssc-chemistry-ch3-batches.ts','utf8'),/from ["'].*(?:db|guard|prisma)/);
  const resolve=Module._resolveFilename,previous=require.extensions['.ts'];try{
   Module._resolveFilename=function(id,parent,...rest){return resolve.call(this,id.startsWith('@/')?path.resolve(id.slice(2)):id,parent,...rest);};require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
-  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')),ch3=all.filter(b=>b.id.startsWith('ssc-chemistry-ch3-'));
+  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')&&!b.id.startsWith('class7-bgs-')),ch3=all.filter(b=>b.id.startsWith('ssc-chemistry-ch3-'));
   assert.equal(all.length,274);assert.equal(ch3.length,6);assert.equal(ch3.reduce((n,b)=>n+b.records.length,0),700);assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-ch11-')&&!b.id.startsWith('ssc-chemistry-ch12-')&&!b.id.startsWith('ssc-chemistry-ch10-')&&!b.id.startsWith('ssc-chemistry-ch9-')&&!b.id.startsWith('ssc-chemistry-ch8-')&&!b.id.startsWith('ssc-chemistry-ch7-')&&!b.id.startsWith('ssc-chemistry-ch6-')&&!b.id.startsWith('ssc-chemistry-ch3-')&&!b.id.startsWith('ssc-chemistry-ch4-')&&!b.id.startsWith('ssc-chemistry-ch5-')).reduce((n,b)=>n+b.records.length,0),19956);
  }finally{Module._resolveFilename=resolve;if(previous)require.extensions['.ts']=previous;else delete require.extensions['.ts'];}
 });

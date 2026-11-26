@@ -64,7 +64,7 @@ test("seven tools share one collapsed group while recharge and approval stay sep
   assert.ok(!groups[3].includes('href="/admin/wallet"'));
   assert.ok(!groups[3].includes('href="/admin/marketplace"'));
   const routes = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
-  assert.deepEqual(routes.slice(0, 2), ["/admin/wallet", "/admin/marketplace"]);
+  assert.deepEqual(routes.slice(0, 4), ["/admin/questions/bank", "/admin/questions/bank/import", "/admin/wallet", "/admin/marketplace"]);
   assert.ok(html.includes("রিচার্জ যাচাই ও অনুমোদন"));
   assert.ok(html.includes("শিক্ষকের প্রশ্নপত্র অনুমোদন"));
 });

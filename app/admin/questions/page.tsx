@@ -65,6 +65,7 @@ export default async function AdminQuestionsPage({
       {(!subject || englishAdminPaperForSubject(subject) === 1) && (category ? englishCategoryGrades(category) : [6 as const]).filter(grade=>!params.grade || String(grade)===params.grade).map(grade=><EnglishQuestionItems key={grade} grade={grade} review status={status} />)}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
         <div>
+          <Link href="/admin/questions/bank" className="mb-3 inline-flex rounded-xl bg-blue-700 px-4 py-2.5 text-sm font-bold text-white">নতুন প্রশ্নব্যাংক স্টুডিও → লিখুন, ছবি দিন ও review করুন</Link>
           <h1 className="text-2xl font-black text-slate-900 flex items-center gap-2">
             <Database className="text-blue-600" />
             প্রশ্ন ব্যাংক ব্যবস্থাপনা

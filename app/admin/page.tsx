@@ -110,6 +110,15 @@ export default async function Admin() {
   return (
     <div className="grid gap-4">
       <h1 className="sr-only">অ্যাডমিন ড্যাশবোর্ড</h1>
+      <section className="rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-50 to-white p-5 shadow-sm dark:border-blue-800 dark:from-slate-900 dark:to-slate-900">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-blue-700">Question bank workspace</p>
+        <h2 className="text-xl font-bold">প্রশ্নব্যাংক স্টুডিও</h2>
+        <p className="mt-2 text-sm text-slate-500">হাতে MCQ/CQ/SQ লিখুন, ছবি যোগ করুন, অধ্যায়ভিত্তিক প্রশ্ন সম্পাদনা ও অনুমোদন দিন।</p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link href="/admin/questions/bank" className="rounded-xl bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-800">স্টুডিও খুলুন →</Link>
+          <Link href="/admin/questions/bank/import" className="rounded-xl border border-blue-200 px-4 py-2.5 text-sm font-semibold text-blue-700">Word / JSON review-import</Link>
+        </div>
+      </section>
       {dashboardGroups.map(({ href, label, Icon, color, links }) => (
         <details
           key={href}

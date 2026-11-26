@@ -54,6 +54,11 @@ jobs:
           fi
           exit "$status"
 
+      - name: Question bank transactions and concurrency (disposable PostgreSQL only)
+        run: node scripts/question-bank-postgres-check.cjs
+        env:
+          WALLET_TEST_DATABASE_URL: postgresql://auth_rate:disposable_ci_only@127.0.0.1:5439/auth_rate_test
+
       - name: Real PostgreSQL auth concurrency regression (disposable only)
         run: node scripts/auth-attempts-postgres-check.cjs
         env:
@@ -82,6 +87,7 @@ jobs:
           export NODE_PATH="$RUNNER_TEMP/pdf-browser-tools/node_modules"
           export CHROMIUM_EXECUTABLE_PATH="$(command -v google-chrome)"
           test -x "$CHROMIUM_EXECUTABLE_PATH"
+          node scripts/question-bank-browser-check.cjs
           node scripts/pdf-browser-check.cjs
           node scripts/english-browser/class8-reference-check.cjs
           node scripts/english-browser/expanded-model-check.cjs
@@ -108,5 +114,13 @@ jobs:
         with:
           name: isolated-english-workflow-proof
           path: .cache/english-authenticated-flow/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Keep isolated question-bank browser proof
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-question-bank-workflow-proof
+          path: .cache/question-bank-authenticated-flow/
           if-no-files-found: ignore
           retention-days: 7

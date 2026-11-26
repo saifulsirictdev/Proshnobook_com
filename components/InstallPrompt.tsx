@@ -74,7 +74,8 @@ export default function InstallPrompt() {
   const pathname = usePathname();
   // Never interrupt question selection/editing, header dialogs, saves or print
   // with a delayed promotional overlay. Installation remains available elsewhere.
-  const preparingPaper = pathname === "/question-builder" || pathname?.startsWith("/question-builder/");
+  const preparingPaper = pathname === "/question-builder" || pathname?.startsWith("/question-builder/")
+    || pathname === "/admin/questions" || pathname?.startsWith("/admin/questions/");
   const [phase, setPhase] = useState<"hidden" | "in" | "out">("hidden");
   const [canInstall, setCanInstall] = useState(false);
   const [ios, setIos] = useState(false);
