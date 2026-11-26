@@ -9,7 +9,9 @@ export const BANK_DOCUMENT_MAX_CHARS = 20_000_000;
 export const BANK_DOCUMENT_MAX_ITEMS = 10_000;
 export type BankFileFormat = "docx" | "json" | "txt";
 export type BankFileProgress = { phase: string; done?: number; total?: number };
+import type { BankTextReview } from "./question-bank-text-review";
 export type BankFileResult = {
+  reviews?: BankTextReview[];
   text: string;
   items: BankDraft[];
   warnings: string[];

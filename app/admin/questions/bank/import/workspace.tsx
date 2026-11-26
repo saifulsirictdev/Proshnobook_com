@@ -1,11 +1,15 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import {
   bankDraftSchema,
   type BankDraft,
 } from "@/lib/admin-question-bank-schema";
 import { bankTextTemplate, bankUuidFromHex } from "@/lib/question-bank-batch";
+import {
+  bankStagingIssues,
+  type BankTextReview,
+} from "@/lib/question-bank-text-review";
 import { readBankFileInWorker } from "@/lib/question-bank-file-client";
 import {
   BANK_FILE_MAX_BYTES,
@@ -24,7 +28,12 @@ const button =
   "inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-4 py-2.5 text-sm font-semibold text-blue-800 disabled:opacity-50";
 const panel =
   "min-w-0 space-y-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5";
-type Entry = { entryId: string; draft: BankDraft };
+type Entry = {
+  entryId: string;
+  draft: BankDraft;
+  review?: BankTextReview;
+  sourceChecked?: boolean;
+};
 type Report = {
   entryId: string;
   exact?: string;
@@ -88,6 +97,22 @@ export default function BankImportWorkspace({
   const selectedSet = new Set(selected),
     chosen = items.filter((item) => selectedSet.has(item.entryId)),
     currentSignature = String(editRevision);
+  const stagingIssues = useMemo(
+    () =>
+      new Map(
+        items.map((item) => [
+          item.entryId,
+          bankStagingIssues(item.draft, item.review, item.sourceChecked),
+        ]),
+      ),
+    [items],
+  );
+  const needsFix = items.filter(
+    (item) => stagingIssues.get(item.entryId)?.length,
+  ).length;
+  const selectedNeedsFix = chosen.filter(
+    (item) => stagingIssues.get(item.entryId)?.length,
+  ).length;
   useEffect(() => {
     if (!focusStaging || !stagingHeading.current) return;
     stagingHeading.current.focus();
@@ -118,6 +143,7 @@ export default function BankImportWorkspace({
     drafts: BankDraft[],
     identity?: string,
     signal?: AbortSignal,
+    reviews?: BankTextReview[],
   ) {
     const uuid = async (value: string) =>
       bankUuidFromHex(
@@ -152,6 +178,8 @@ export default function BankImportWorkspace({
           drafts.slice(offset, offset + 250).map(async (draft, index) => ({
             entryId: await uuid(id + ":" + (offset + index)),
             draft,
+            review: reviews?.[offset + index],
+            sourceChecked: false,
           })),
         )),
       );
@@ -166,7 +194,15 @@ export default function BankImportWorkspace({
     if (signal?.aborted)
       throw new DOMException("Staging বাতিল হয়েছে।", "AbortError");
     setItems(next);
-    setSelected(next.map((i) => i.entryId));
+    setSelected(
+      next
+        .filter(
+          (item) =>
+            !bankStagingIssues(item.draft, item.review, item.sourceChecked)
+              .length,
+        )
+        .map((i) => i.entryId),
+    );
     setBatchId(id);
     invalidate();
   }
@@ -174,7 +210,11 @@ export default function BankImportWorkspace({
     setItems((rows) =>
       rows.map((row) =>
         row.entryId === id
-          ? { ...row, draft: { ...row.draft, ...changes } }
+          ? {
+              ...row,
+              sourceChecked: false,
+              draft: { ...row.draft, ...changes },
+            }
           : row,
       ),
     );
@@ -249,7 +289,7 @@ export default function BankImportWorkspace({
       );
       // Failed parsing must not erase a previous staged batch.
       if (result.items.length)
-        await stage(result.items, result.batchId, abort.signal);
+        await stage(result.items, result.batchId, abort.signal, result.reviews);
       setRaw(result.text);
 
       setWarnings(result.warnings);
@@ -302,8 +342,18 @@ export default function BankImportWorkspace({
     const allReport: Report[] = [],
       duplicateIds = markCrossChunkDuplicates(chosen);
     try {
+      const invalid = chosen.find(
+        (item) =>
+          bankStagingIssues(item.draft, item.review, item.sourceChecked).length,
+      );
+      if (invalid)
+        throw Error(
+          `নির্বাচিত প্রশ্নে সংশোধন বাকি: ${bankStagingIssues(invalid.draft, invalid.review, invalid.sourceChecked).join(" · ")}`,
+        );
       for (const { draft } of chosen) bankDraftSchema.parse(draft);
-      const chunks = bankImportChunks(chosen);
+      const chunks = bankImportChunks(
+        chosen.map(({ entryId, draft }) => ({ entryId, draft })),
+      );
       for (const chunk of chunks) {
         if (stop.current) break;
         setProgress({
@@ -401,6 +451,7 @@ export default function BankImportWorkspace({
                 rows.map((row) => ({
                   ...row,
                   draft: { ...row.draft, ...next },
+                  sourceChecked: false,
                 })),
               );
               invalidate();
@@ -567,10 +618,12 @@ export default function BankImportWorkspace({
             />
           </label>
           <p className="my-2 text-xs leading-6 text-slate-500">
-            প্রতিটি প্রশ্ন [MCQ], [CQ] বা [SQ] দিয়ে শুরু করুন, প্রশ্নের মাঝে ---
-            দিন। Word-এর যেকোনো layout নিখুঁত পড়ার নিশ্চয়তা নেই—unstructured
-            টেক্সট Template মেনে সাজান। Raw text বদলানোর পর Parse না করলে staged
-            প্রশ্ন বদলাবে না।
+            BOARD:, Question Number: ও Section: গ্রহণ করা হয়, কিন্তু ফাইলের
+            অযাচাইকৃত দাবি হিসেবে। অসম্পূর্ণ প্রশ্ন staging-এ সংশোধন করা
+            যাবে—সঠিক উত্তর অনুমান করা হবে না। প্রতিটি প্রশ্ন [MCQ], [CQ] বা
+            [SQ] দিয়ে শুরু করুন, প্রশ্নের মাঝে --- দিন। Word-এর যেকোনো layout
+            নিখুঁত পড়ার নিশ্চয়তা নেই—unstructured টেক্সট Template মেনে সাজান।
+            Raw text বদলানোর পর Parse না করলে staged প্রশ্ন বদলাবে না।
           </p>
           <label className="my-3 grid min-w-0 gap-1 text-sm">
             টেক্সটের ধরন
@@ -710,6 +763,30 @@ export default function BankImportWorkspace({
             পর Studio-তে পূর্ণ প্রশ্ন দেখা, Edit, Trash ও আলাদা Approve করা
             যাবে। Reload করলে unsaved staging হারাতে পারে।
           </p>
+          <div
+            role="status"
+            aria-label="Staging সংশোধনের হিসাব"
+            className="rounded-xl border bg-amber-50 p-3 text-sm leading-7"
+          >
+            মোট {items.length}টি · সংশোধন/source-review বাকি {needsFix}টি ·
+            প্রস্তুত {items.length - needsFix}টি। অসম্পূর্ণ প্রশ্ন আগে থেকে
+            নির্বাচিত নয়।
+            <button
+              type="button"
+              className={`${button} ml-2`}
+              disabled={busy}
+              onClick={() => {
+                setSelected(
+                  items
+                    .filter((item) => !stagingIssues.get(item.entryId)?.length)
+                    .map((item) => item.entryId),
+                );
+                invalidate();
+              }}
+            >
+              শুধু প্রস্তুত প্রশ্ন নির্বাচন করুন
+            </button>
+          </div>
           {items.length > 20 && (
             <div className="flex flex-wrap items-center gap-3">
               <button
@@ -736,7 +813,7 @@ export default function BankImportWorkspace({
           )}
           {items
             .slice((page - 1) * 20, page * 20)
-            .map(({ entryId, draft }, localIndex) => {
+            .map(({ entryId, draft, review, sourceChecked }, localIndex) => {
               const index = (page - 1) * 20 + localIndex;
               const issue = report.find((r) => r.entryId === entryId),
                 parts = (draft.options.subQuestions ?? {}) as Record<
@@ -771,6 +848,11 @@ export default function BankImportWorkspace({
                     <span className="min-w-0 flex-1 text-sm">
                       {draft.text.slice(0, 100)}
                     </span>
+                    {!!stagingIssues.get(entryId)?.length && (
+                      <span className="text-xs text-rose-700">
+                        সংশোধন / source-review বাকি · সেভ বন্ধ
+                      </span>
+                    )}
                     {issue?.exact && (
                       <span className="text-xs text-rose-700">
                         {issue.trashed
@@ -791,6 +873,66 @@ export default function BankImportWorkspace({
                   </summary>
                   <div className="grid items-start gap-5 border-t pt-4 lg:grid-cols-2">
                     <fieldset disabled={busy} className="min-w-0 space-y-3">
+                      {!!stagingIssues.get(entryId)?.length && (
+                        <div
+                          role="status"
+                          aria-label={`${index + 1} নং প্রশ্নের সমস্যা`}
+                          className="rounded-xl border border-rose-200 bg-rose-50 p-3 text-sm"
+                        >
+                          <ul className="list-inside list-disc">
+                            {stagingIssues.get(entryId)?.map((text, i) => (
+                              <li key={i}>{text}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {review?.requiresSourceReview && (
+                        <div className="space-y-3 rounded-xl border bg-amber-50 p-3 text-sm">
+                          {!!draft.options.importReference && (
+                            <p className="break-words">
+                              ফাইলের দাবি (যাচাইকৃত নয়):{" "}
+                              {JSON.stringify(draft.options.importReference)}
+                            </p>
+                          )}
+                          <ul className="list-inside list-disc">
+                            {review.notes.map((note, i) => (
+                              <li key={i}>{note}</li>
+                            ))}
+                          </ul>
+                          <details>
+                            <summary className="cursor-pointer font-semibold">
+                              এই প্রশ্নের মূল extracted টেক্সট
+                            </summary>
+                            <pre className="whitespace-pre-wrap break-words text-xs">
+                              {review.rawBlock}
+                            </pre>
+                          </details>
+                          <label className="flex items-start gap-2">
+                            <input
+                              type="checkbox"
+                              aria-label={`${index + 1} নং প্রশ্ন মূলের সঙ্গে যাচাই করেছি`}
+                              checked={sourceChecked ?? false}
+                              onChange={(event) => {
+                                setItems((rows) =>
+                                  rows.map((row) =>
+                                    row.entryId === entryId
+                                      ? {
+                                          ...row,
+                                          sourceChecked: event.target.checked,
+                                        }
+                                      : row,
+                                  ),
+                                );
+                                invalidate();
+                              }}
+                            />
+                            মূল প্রশ্নপত্রের সূত্র, অপশন, চিত্র/সারণি ও উত্তর
+                            মিলিয়ে প্রয়োজনীয় সংশোধন করেছি। শুধু বোর্ডের নাম দেখে
+                            সত্যতা ধরে নিইনি।
+                          </label>
+                        </div>
+                      )}
+
                       <label className="grid gap-1 text-sm">
                         প্রশ্ন / উদ্দীপক
                         <textarea
@@ -839,11 +981,15 @@ export default function BankImportWorkspace({
                             সঠিক উত্তর
                             <select
                               className={input}
+                              aria-label={`${index + 1} নং প্রশ্নের সঠিক উত্তর`}
                               value={draft.correct}
                               onChange={(e) =>
                                 patch(entryId, { correct: e.target.value })
                               }
                             >
+                              <option value="">
+                                সঠিক উত্তর নির্বাচন করুন—অনুমান নয়
+                              </option>
                               {["A", "B", "C", "D"].map((k) => (
                                 <option key={k}>{k}</option>
                               ))}
@@ -866,6 +1012,34 @@ export default function BankImportWorkspace({
                                     subQuestions: {
                                       ...parts,
                                       [k]: e.target.value,
+                                    },
+                                  },
+                                })
+                              }
+                            />
+                            <input
+                              aria-label={`${index + 1} নং প্রশ্ন অংশ ${k} নম্বর`}
+                              type="number"
+                              min={1}
+                              max={10}
+                              className={input}
+                              value={Number(
+                                (
+                                  draft.options.marks as
+                                    | Record<string, number>
+                                    | undefined
+                                )?.[k] ?? 0,
+                              )}
+                              onChange={(event) =>
+                                patch(entryId, {
+                                  options: {
+                                    ...draft.options,
+                                    marks: {
+                                      ...(draft.options.marks as Record<
+                                        string,
+                                        number
+                                      >),
+                                      [k]: Number(event.target.value),
                                     },
                                   },
                                 })
@@ -908,6 +1082,7 @@ export default function BankImportWorkspace({
                         <textarea
                           rows={5}
                           className={input}
+                          aria-label={`${index + 1} নং প্রশ্নের সমাধান`}
                           value={draft.explanation}
                           onChange={(e) =>
                             patch(entryId, { explanation: e.target.value })
@@ -989,7 +1164,7 @@ export default function BankImportWorkspace({
             <button
               type="button"
               className={button}
-              disabled={busy || !chosen.length || saved}
+              disabled={busy || !chosen.length || !!selectedNeedsFix || saved}
               onClick={() => void checkOrSave("check")}
             >
               {busy
@@ -1020,6 +1195,7 @@ export default function BankImportWorkspace({
                 !reviewed ||
                 signature !== currentSignature ||
                 !chosen.length ||
+                !!selectedNeedsFix ||
                 saved
               }
               onClick={() => void checkOrSave("save")}

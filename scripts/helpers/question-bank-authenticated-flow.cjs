@@ -305,6 +305,43 @@ async function runQuestionBankWorkflow({
     await page.goto(origin + "/admin/questions/bank/import", {
       waitUntil: "networkidle",
     });
+    setPhase("bank_scope_catalog_matches_user_builder");
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Job");
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("bcs-preliminary");
+    const jobCatalog = require("../../lib/job-syllabuses.json");
+    for (const subject of jobCatalog.exams[0].subjects)
+      assert.ok(
+        await page
+          .getByLabel("বিষয়", { exact: true })
+          .locator("option")
+          .evaluateAll(
+            (items, name) => items.some((item) => item.value === name),
+            subject.name,
+          ),
+      );
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("ntrca");
+    await page.getByLabel("NTRCA শাখা", { exact: true }).selectOption("school");
+    const schoolSubject = jobCatalog.exams
+      .find((exam) => exam.id === "ntrca")
+      .branches.find((branch) => branch.id === "school").subjects[0];
+    await chooseBankScopeField(page, "বিষয়", schoolSubject.name);
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", schoolSubject.topics[0]);
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Admission");
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("medical-dental");
+    await chooseBankScopeField(page, "বিষয়", "জীববিজ্ঞান");
+    assert.ok(
+      (await page
+        .getByLabel("অধ্যায় / টপিক", { exact: true })
+        .locator("option")
+        .count()) > 2,
+    );
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Class 6");
     setPhase("bank_txt_read_before_scope_and_native_dropdowns");
     assert.equal(
       await page
@@ -436,6 +473,97 @@ async function runQuestionBankWorkflow({
       pendingLink.searchParams.get("topic"),
       "Synthetic Word chapter",
     );
+    setPhase("bank_board_metadata_missing_answer_review_only_staging");
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", "Synthetic Board Review");
+    const boardText =
+      "===\nBOARD: Synthetic Board 2024\n===\n[MCQ]\nQuestion Number: ১\nSection: Synthetic section\nQuestion: Synthetic missing answer review question\nA: first\nB: second\nC: third\nD: fourth\nAnswer: উত্তর নেই\nExplanation: উত্তর নেই\n---";
+    const beforeBoardStage = await db.question.count();
+    await page
+      .getByLabel("Word / JSON / TXT ফাইল", { exact: true })
+      .setInputFiles({
+        name: "synthetic-board.txt",
+        mimeType: "text/plain",
+        buffer: Buffer.from(boardText),
+      });
+    await page
+      .getByLabel("Staging সংশোধনের হিসাব", { exact: true })
+      .filter({ hasText: "সংশোধন/source-review বাকি 1টি" })
+      .waitFor();
+    assert.equal(
+      await page
+        .getByLabel("1 নং প্রশ্নের সঠিক উত্তর", { exact: true })
+        .inputValue(),
+      "",
+    );
+    assert.equal(
+      await page
+        .getByRole("button", {
+          name: "0টি নির্বাচিত প্রশ্ন যাচাই করুন",
+          exact: true,
+        })
+        .isEnabled(),
+      false,
+    );
+    assert.equal(
+      await page
+        .getByLabel("1 নং প্রশ্ন নির্বাচন", { exact: true })
+        .isChecked(),
+      false,
+    );
+    assert.equal(
+      await db.question.count(),
+      beforeBoardStage,
+      "incomplete board input must only stage",
+    );
+    await page
+      .getByLabel("1 নং প্রশ্নের সঠিক উত্তর", { exact: true })
+      .selectOption("B");
+    await page
+      .getByLabel("1 নং প্রশ্নের সমাধান", { exact: true })
+      .fill("Synthetic verified fixture solution");
+    await page
+      .getByLabel("1 নং প্রশ্ন মূলের সঙ্গে যাচাই করেছি", { exact: true })
+      .check();
+    await page
+      .getByRole("button", {
+        name: "শুধু প্রস্তুত প্রশ্ন নির্বাচন করুন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByRole("button", {
+        name: "1টি নির্বাচিত প্রশ্ন যাচাই করুন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByRole("status")
+      .filter({
+        hasText: "1টি নির্বাচিত প্রশ্ন একাধিক ছোট request-এ যাচাই হয়েছে",
+      })
+      .waitFor();
+    await page.getByRole("checkbox", { name: /প্রিভিউ, উৎসের অধিকার/ }).check();
+    await page
+      .getByRole("button", {
+        name: "নির্বাচিত প্রশ্ন Pending হিসেবে সেভ করুন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByRole("status")
+      .filter({ hasText: "1টি নতুন Pending" })
+      .waitFor();
+    const savedBoard = await db.question.findFirstOrThrow({
+      where: { topic: "Synthetic Board Review" },
+    });
+    assert.equal(savedBoard.approved, false);
+    assert.equal(savedBoard.correct, "B");
+    assert.equal(
+      savedBoard.options.importReference.independentlyVerified,
+      false,
+    );
+    assert.equal(savedBoard.options._provenance.independentlyVerified, false);
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", "Synthetic Word chapter");
     const upload = () =>
       page.getByLabel("Word / JSON / TXT ফাইল", { exact: true }).setInputFiles({
         name: "synthetic-template.docx",
