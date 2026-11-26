@@ -8,7 +8,12 @@ const { renderToStaticMarkup } = require("react-dom/server");
 function load(file, mocks = {}) {
   const m = new Module(file, module);
   m.paths = module.paths;
-  m.require = (id) => (Object.hasOwn(mocks, id) ? mocks[id] : id === "@/lib/question-bank-origin" ? originGuard : require(id));
+  m.require = (id) =>
+    Object.hasOwn(mocks, id)
+      ? mocks[id]
+      : id === "@/lib/question-bank-origin"
+        ? originGuard
+        : require(id);
   m._compile(
     ts.transpileModule(fs.readFileSync(file, "utf8"), {
       compilerOptions: {
@@ -23,6 +28,7 @@ function load(file, mocks = {}) {
   return m.exports;
 }
 const originGuard = load("lib/question-bank-origin.ts");
+const readScope = load("lib/question-bank-read-scope.ts");
 const images = load("lib/question-bank-images.ts");
 const schema = load("lib/admin-question-bank-schema.ts", {
   "./question-bank-images": images,
@@ -108,6 +114,7 @@ function harness() {
     },
   };
   const bank = load("lib/admin-question-bank.ts", {
+    "./question-bank-read-scope": readScope,
     "server-only": {},
     "@prisma/client": {},
     "@/lib/db": { db },
@@ -290,7 +297,9 @@ test("approval rejects incomplete answers; duplicate detection normalizes whites
 const validId = "12345678-1234-4123-8123-123456789abc";
 test("shared question renderer only accepts exact immutable uploaded raster paths", () => {
   const tables = load("lib/question-tables.ts", {
-    "./ssc-biology-assets": fs.existsSync("lib/ssc-biology-assets.ts") ? load("lib/ssc-biology-assets.ts") : { BIOLOGY_FIGURE_PATHS: [] },
+    "./ssc-biology-assets": fs.existsSync("lib/ssc-biology-assets.ts")
+      ? load("lib/ssc-biology-assets.ts")
+      : { BIOLOGY_FIGURE_PATHS: [] },
   });
   const url = images.questionImagePath(validId);
   assert.ok(images.isQuestionImagePath(url));
@@ -499,12 +508,47 @@ test("retired actions cannot hard-delete, mass-approve or bypass Trash from stal
   await assert.rejects(old.deleteOne("id", "/admin"), /denied/);
   assert.equal(dbCalls, 0);
 });
-test('history rollback restores selected content only, always Pending, with a new atomic audit',async()=>{
- const h=harness();let q=await h.bank.mutateBank('admin',{operation:'create',draft:draft()});
- q=await h.bank.mutateBank('admin',{operation:'edit',id:q.id,revision:q.revision,draft:{...draft(),text:'পরবর্তী সম্পাদনা'}});
- const key=[...h.settings.keys()].find(k=>k.startsWith(schema.BANK_AUDIT_PREFIX)&&JSON.parse(h.settings.get(k).value).operation==='edit');
- q=await h.bank.mutateBank('admin',{operation:'rollback',id:q.id,revision:q.revision,snapshotKey:key,version:'before'});
- assert.equal(q.text,draft().text);assert.equal(q.approved,false);assert.equal(q.source,'ADMIN_MANUAL');
- assert.ok([...h.settings.values()].some(row=>row.key.startsWith(schema.BANK_AUDIT_PREFIX)&&JSON.parse(row.value).operation==='rollback'));
- await assert.rejects(h.bank.mutateBank('admin',{operation:'rollback',id:q.id,revision:q.revision,snapshotKey:schema.BANK_AUDIT_PREFIX+'another-id:key',version:'before'}));
+test("history rollback restores selected content only, always Pending, with a new atomic audit", async () => {
+  const h = harness();
+  let q = await h.bank.mutateBank("admin", {
+    operation: "create",
+    draft: draft(),
+  });
+  q = await h.bank.mutateBank("admin", {
+    operation: "edit",
+    id: q.id,
+    revision: q.revision,
+    draft: { ...draft(), text: "পরবর্তী সম্পাদনা" },
+  });
+  const key = [...h.settings.keys()].find(
+    (k) =>
+      k.startsWith(schema.BANK_AUDIT_PREFIX) &&
+      JSON.parse(h.settings.get(k).value).operation === "edit",
+  );
+  q = await h.bank.mutateBank("admin", {
+    operation: "rollback",
+    id: q.id,
+    revision: q.revision,
+    snapshotKey: key,
+    version: "before",
+  });
+  assert.equal(q.text, draft().text);
+  assert.equal(q.approved, false);
+  assert.equal(q.source, "ADMIN_MANUAL");
+  assert.ok(
+    [...h.settings.values()].some(
+      (row) =>
+        row.key.startsWith(schema.BANK_AUDIT_PREFIX) &&
+        JSON.parse(row.value).operation === "rollback",
+    ),
+  );
+  await assert.rejects(
+    h.bank.mutateBank("admin", {
+      operation: "rollback",
+      id: q.id,
+      revision: q.revision,
+      snapshotKey: schema.BANK_AUDIT_PREFIX + "another-id:key",
+      version: "before",
+    }),
+  );
 });

@@ -24,7 +24,16 @@ import {
   History,
   Save,
 } from "lucide-react";
+import {
+  englishAdminPaperForSubject,
+  englishAdminHref,
+  englishFirstGrades,
+} from "@/lib/english/admin-scope";
 import MathText from "@/components/MathText";
+import {
+  bankReadCategoryAliases,
+  bankReadSubjectMatches,
+} from "@/lib/question-bank-read-scope";
 import {
   BANK_BUILDER_CATEGORIES,
   bankCategoryLabel,
@@ -150,8 +159,12 @@ export function ScopeFields({
     exams,
     branches,
   } = bankScopeCatalog(value.category, examId, branchId);
-  const aliases = bankCategoryAliases(value.category);
-  const s = c?.subjects.find((s) => s.name === value.subject);
+  const aliases = edit
+    ? bankCategoryAliases(value.category)
+    : bankReadCategoryAliases(value.category);
+  const s = c?.subjects.find((s) =>
+    bankReadSubjectMatches(s.name, value.subject),
+  );
   const subjects = unique([
     ...(c?.subjects.map((s) => s.name) ?? []),
     ...scopes.filter((s) => aliases.includes(s.category)).map((s) => s.subject),
@@ -169,7 +182,13 @@ export function ScopeFields({
       .flatMap((g) => g.topics) ?? []),
     ...scopes
       .filter(
-        (s) => aliases.includes(s.category) && s.subject === value.subject,
+        (entry) =>
+          aliases.includes(entry.category) &&
+          bankReadSubjectMatches(entry.subject, value.subject) &&
+          (!chapterGroup ||
+            !!s?.subCategories
+              ?.find((group) => group.category === chapterGroup)
+              ?.topics.includes(entry.topic)),
       )
       .map((s) => s.topic),
   ]);
@@ -249,6 +268,13 @@ export function ScopeFields({
           )}
         </>
       )}
+      {!edit && /^(SSC|HSC)$/.test(value.category) && (
+        <p className="text-xs leading-6 text-slate-500">
+          {value.category} নির্বাচন করলে সংশ্লিষ্ট দুই শ্রেণির পুরোনো DB নামসহ
+          প্রশ্ন খোঁজা হবে। নির্দিষ্ট শ্রেণি আলাদা করে বাছলে শুধু সেই শ্রেণি
+          দেখাবে।
+        </p>
+      )}
       {grouped && (
         <label className="grid gap-1.5 text-sm font-medium">
           বিভাগ
@@ -281,6 +307,11 @@ export function ScopeFields({
         required={edit}
         placeholder={edit ? "বিষয় নির্বাচন করুন" : "সব বিষয়"}
         options={visibleSubjects}
+        optionLabel={(subject) =>
+          edit
+            ? subject
+            : `${subject} · ${scopes.some((entry) => aliases.includes(entry.category) && bankReadSubjectMatches(entry.subject, subject)) ? "DB-তে আছে" : "ক্যাটালগ"}`
+        }
         onChange={(subject) => {
           setChapterGroup("");
           onChange({ ...value, subject, topic: "" });
@@ -313,6 +344,11 @@ export function ScopeFields({
         required={edit}
         placeholder={edit ? "অধ্যায় নির্বাচন করুন" : "সব অধ্যায়"}
         options={topics}
+        optionLabel={(topic) =>
+          edit
+            ? topic
+            : `${topic} · ${scopes.some((entry) => aliases.includes(entry.category) && bankReadSubjectMatches(entry.subject, value.subject) && entry.topic === topic) ? "DB-তে আছে" : "ক্যাটালগ"}`
+        }
         onChange={(topic) => onChange({ ...value, topic })}
       />
     </>
@@ -1200,6 +1236,10 @@ export default function QuestionBankWorkspace({
       />
     );
   const chosen = data.rows.filter((r) => selected.includes(r.id));
+  const englishPaper = englishAdminPaperForSubject(applied.subject);
+  const englishGrades = englishFirstGrades.filter((grade) =>
+    bankReadCategoryAliases(applied.category).includes(`Class ${grade}`),
+  );
   return (
     <div className="space-y-5 text-slate-900">
       <header className="flex flex-wrap items-start justify-between gap-4">
@@ -1392,6 +1432,29 @@ export default function QuestionBankWorkspace({
           </button>
         </div>
       </form>
+      {!!englishPaper && !!englishGrades.length && (
+        <section
+          aria-label="ইংরেজির আলাদা question-item workspace"
+          className="space-y-2 rounded-xl border border-blue-200 bg-blue-50 p-3 text-sm leading-7"
+        >
+          <p>
+            এখানে Question DB-এর প্রশ্ন দেখানো হয়। English-এর structured
+            question-item / passage workflow আলাদা workspace-এও আছে; এই তালিকায়
+            ০ দেখালেই সব workspace-এ প্রশ্ন নেই বোঝায় না।
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {englishGrades.map((grade) => (
+              <Link
+                key={grade}
+                className={button}
+                href={englishAdminHref(grade, false, englishPaper)}
+              >
+                Class {grade} · English Paper {englishPaper} workspace খুলুন
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
       {message && (
         <div
           role="status"

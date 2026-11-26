@@ -203,6 +203,98 @@ withDisposableWalletDatabase(async (db) => {
     null,
   );
   assert.equal(await db.question.count(), questionCountBeforeRecovery);
+  // Aliases affect reads/counts/export only: do not relabel saved records.
+  const readTopic = "Synthetic read chapter",
+    otherTopic = "Synthetic other chapter";
+  const readRows = [
+    ["nine", "Class 9", "English 1st Paper", readTopic, true, false],
+    ["ten", "Class 10", "English For Today", readTopic, false, false],
+    ["ssc", "SSC", "English First Paper", otherTopic, true, false],
+    ["paper2", "Class 9", "English 2nd Paper", readTopic, true, false],
+    ["hsc", "Class 11-12", "English For Today", readTopic, true, false],
+    ["twelve", "Class 12", "English 1st Paper", readTopic, false, false],
+    ["trash", "Class 9", "English 1st Paper", readTopic, false, true],
+  ];
+  await db.question.createMany({
+    data: readRows.map(
+      ([key, category, subject, topic, approved, trashed]) => ({
+        id: "synthetic-read-" + key,
+        category,
+        subject,
+        topic,
+        approved,
+        source: trashed ? "ADMIN_TRASH:v1:synthetic" : "ADMIN_MANUAL",
+        text: "Synthetic read filter " + key,
+        options: {},
+        correct: "",
+        explanation: "Synthetic answer",
+        difficulty: "EASY",
+        lang: "English",
+      }),
+    ),
+  });
+  const filtered = await bank.loadBank(
+    schema.bankFiltersSchema.parse({
+      category: "SSC",
+      subject: "English For Today",
+      topic: readTopic,
+    }),
+  );
+  assert.equal(filtered.total, 2);
+  assert.deepEqual(filtered.counts, { approved: 1, pending: 1, trash: 1 });
+  assert.equal(
+    (
+      await bank.loadBank(
+        schema.bankFiltersSchema.parse({
+          category: "Class 9",
+          subject: "English For Today",
+          topic: readTopic,
+        }),
+      )
+    ).total,
+    1,
+  );
+  assert.equal(
+    (
+      await bank.loadBank(
+        schema.bankFiltersSchema.parse({
+          category: "SSC",
+          subject: "English For Today",
+          topic: otherTopic,
+        }),
+      )
+    ).total,
+    1,
+  );
+  assert.equal(
+    (
+      await bank.loadBank(
+        schema.bankFiltersSchema.parse({
+          category: "SSC",
+          subject: "English Grammar and Composition",
+          topic: readTopic,
+        }),
+      )
+    ).total,
+    1,
+  );
+  assert.equal(
+    (
+      await bank.loadBank(
+        schema.bankFiltersSchema.parse({
+          category: "HSC",
+          subject: "English For Today",
+          topic: readTopic,
+        }),
+      )
+    ).total,
+    2,
+  );
+  assert.equal(
+    (await db.question.findUnique({ where: { id: "synthetic-read-nine" } }))
+      .category,
+    "Class 9",
+  );
   console.log(
     JSON.stringify({
       status: "PASS",
