@@ -277,3 +277,15 @@ test("browser DOCX guard rejects traversal, encryption and dishonest expanded si
   view.setUint32(central + 24, 1, true);
   await assert.rejects(zip.inspectLargeBankDocx(bytes, () => {}));
 });
+
+test("pasted JSON auto-detection is independent of the previously uploaded file type", () => {
+  assert.equal(large.bankPastedTextFormat('  {"items":[]}'), "json");
+  assert.equal(large.bankPastedTextFormat('[{"type":"SQ"}]'), "json");
+  for (const type of ["MCQ", "CQ", "SQ"])
+    assert.equal(
+      large.bankPastedTextFormat(`[${type}]\nQuestion: text`),
+      "txt",
+    );
+  assert.equal(large.bankPastedTextFormat("[SQ]", "json"), "json");
+  assert.equal(large.bankPastedTextFormat("{broken json"), "json");
+});

@@ -11,9 +11,9 @@ import {
   BANK_FILE_MAX_BYTES,
   BANK_DOCUMENT_MAX_CHARS,
   bankFileFormat,
+  bankPastedTextFormat,
   bankImportChunks,
   markCrossChunkDuplicates,
-  type BankFileFormat,
   type BankFileProgress,
 } from "@/lib/question-bank-large-file";
 import { ScopeFields, Preview } from "../workspace";
@@ -71,7 +71,9 @@ export default function BankImportWorkspace({
     [saved, setSaved] = useState(false);
   const [page, setPage] = useState(1),
     [editRevision, setEditRevision] = useState(0),
-    [fileFormat, setFileFormat] = useState<BankFileFormat>("txt"),
+    [rawFormat, setRawFormat] = useState<"auto" | "txt" | "json">("auto"),
+    [parseNotice, setParseNotice] = useState(""),
+    [focusStaging, setFocusStaging] = useState(false),
     [fileFilter, setFileFilter] = useState(""),
     [includeImages, setIncludeImages] = useState(true);
   const [uploadInfo, setUploadInfo] = useState<{
@@ -82,9 +84,19 @@ export default function BankImportWorkspace({
     [progress, setProgress] = useState<BankFileProgress | null>(null);
   const controller = useRef<AbortController | null>(null),
     stop = useRef(false);
+  const stagingHeading = useRef<HTMLHeadingElement | null>(null);
   const selectedSet = new Set(selected),
     chosen = items.filter((item) => selectedSet.has(item.entryId)),
     currentSignature = String(editRevision);
+  useEffect(() => {
+    if (!focusStaging || !stagingHeading.current) return;
+    stagingHeading.current.focus();
+    stagingHeading.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
+    setFocusStaging(false);
+  }, [focusStaging, items.length]);
   useEffect(() => () => controller.current?.abort(), []);
   useEffect(() => {
     if ((!items.length && !raw.length && !busy) || saved) return;
@@ -169,6 +181,28 @@ export default function BankImportWorkspace({
     invalidate();
   }
   async function processFile(file?: File) {
+    if (busy) return;
+    setParseNotice("");
+    if (!file) {
+      const missing = [
+        !scope.category.trim() && "শ্রেণি",
+        !scope.subject.trim() && "বিষয়",
+        !scope.topic.trim() && "অধ্যায়",
+      ].filter(Boolean);
+      if (missing.length) {
+        setParseNotice(
+          `${missing.join(", ")} নির্বাচন করুন, তারপর আবার Parse চাপুন। উপরের ১ নং অংশে dropdown আছে।`,
+        );
+        return;
+      }
+      if (!raw.trim()) {
+        setParseNotice(
+          "টেক্সট বক্স খালি। প্রশ্নের টেক্সট দিন অথবা ‘টেক্সটে নমুনা বসান’ চাপুন।",
+        );
+        return;
+      }
+    }
+
     if (file) {
       setUploadInfo({ name: file.name, size: file.size, state: "নির্বাচিত" });
       try {
@@ -199,6 +233,7 @@ export default function BankImportWorkspace({
     }
     setBusy(true);
     setMessage("");
+    setParseNotice("প্রশ্নের টেক্সট পরীক্ষা করছি…");
     setProgress({ phase: "ফাইল প্রক্রিয়া শুরু করছি" });
     const abort = new AbortController();
     controller.current = abort;
@@ -208,21 +243,29 @@ export default function BankImportWorkspace({
       const result = await readBankFileInWorker(
         file
           ? { file, scope, includeImages }
-          : { text: raw, format: fileFormat, scope },
+          : { text: raw, format: bankPastedTextFormat(raw, rawFormat), scope },
         setProgress,
         abort.signal,
       );
-      await stage(result.items, result.batchId, abort.signal);
+      // Failed parsing must not erase a previous staged batch.
+      if (result.items.length)
+        await stage(result.items, result.batchId, abort.signal);
       setRaw(result.text);
-      setFileFormat(result.format);
+
       setWarnings(result.warnings);
-      setFileName(result.fileName);
+      if (result.items.length || !items.length) setFileName(result.fileName);
       if (file)
         setUploadInfo({
           name: file.name,
           size: file.size,
           state: `ফাইল পড়া হয়েছে · ${result.items.length}টি প্রশ্ন staging-এ`,
         });
+      setParseNotice(
+        result.items.length
+          ? `${result.items.length}টি প্রশ্ন নিচের ‘৩. সংশোধন ও নির্বাচন’ অংশে আছে। এখনো database-এ সেভ হয়নি।`
+          : `Staging হয়নি: ${result.warnings[0] ?? "Template-এর গঠন মিলছে না।"} আগের staged প্রশ্ন থাকলে সেগুলো অপরিবর্তিত আছে।`,
+      );
+      if (result.items.length) setFocusStaging(true);
       setMessage(
         result.items.length
           ? `${result.items.length}টি প্রশ্ন staging-এ এসেছে। এখন প্রিভিউ/সংশোধন ও duplicate check করুন; কোনো প্রশ্ন সেভ বা প্রকাশ হয়নি।`
@@ -236,6 +279,9 @@ export default function BankImportWorkspace({
           state: abort.signal.aborted ? "বাতিল হয়েছে" : "প্রক্রিয়া ব্যর্থ",
         });
       setMessage((error as Error).message);
+      setParseNotice(
+        `Staging হয়নি: ${(error as Error).message} টেক্সট ও আগের staging মুছে যায়নি।`,
+      );
     } finally {
       setBusy(false);
       setProgress(null);
@@ -387,7 +433,7 @@ export default function BankImportWorkspace({
               if (raw && !confirm("টেক্সট বক্সে নমুনা Template বসাবেন?"))
                 return;
               setRaw(bankTextTemplate(math));
-              setFileFormat("txt");
+              setRawFormat("auto");
             }}
           >
             টেক্সটে নমুনা বসান
@@ -514,7 +560,10 @@ export default function BankImportWorkspace({
               maxLength={BANK_DOCUMENT_MAX_CHARS}
               disabled={busy}
               value={raw}
-              onChange={(e) => setRaw(e.target.value)}
+              onChange={(e) => {
+                setRaw(e.target.value);
+                setParseNotice("");
+              }}
             />
           </label>
           <p className="my-2 text-xs leading-6 text-slate-500">
@@ -523,14 +572,70 @@ export default function BankImportWorkspace({
             টেক্সট Template মেনে সাজান। Raw text বদলানোর পর Parse না করলে staged
             প্রশ্ন বদলাবে না।
           </p>
+          <label className="my-3 grid min-w-0 gap-1 text-sm">
+            টেক্সটের ধরন
+            <select
+              aria-label="টেক্সটের ধরন"
+              className={input}
+              value={rawFormat}
+              disabled={busy}
+              onChange={(event) =>
+                setRawFormat(event.target.value as typeof rawFormat)
+              }
+            >
+              <option value="auto">
+                স্বয়ংক্রিয়ভাবে চিনুন (Template / JSON)
+              </option>
+              <option value="txt">Template টেক্সট</option>
+              <option value="json">JSON</option>
+            </select>
+          </label>
           <button
             type="button"
             className={button}
-            disabled={busy || !scope.subject || !scope.topic || !raw.trim()}
+            disabled={busy}
             onClick={() => void processFile()}
           >
             টেক্সট Parse করে staging-এ নিন
           </button>
+          <div
+            role="status"
+            aria-label="টেক্সট Parse-এর ফল"
+            aria-live="polite"
+            className="mt-3 rounded-xl border bg-sky-50 p-3 text-sm leading-7"
+          >
+            {parseNotice ||
+              "Parse চাপলে এখানেই ফল বা ভুলের কারণ দেখাবে। সফল হলে নিচের ৩ নং অংশে প্রশ্ন পাবেন।"}
+            {items.length > 0 && (
+              <button
+                type="button"
+                className={`${button} mt-2`}
+                onClick={() => {
+                  stagingHeading.current?.focus();
+                  stagingHeading.current?.scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Staged প্রশ্নগুলো দেখুন ({items.length})
+              </button>
+            )}
+          </div>
+          <details className="mt-3 text-sm">
+            <summary className="cursor-pointer font-semibold">
+              সঠিক টেক্সটের ছোট নমুনা
+            </summary>
+            <pre className="mt-2 whitespace-pre-wrap rounded-xl border p-3">
+              {
+                "[SQ]\nQuestion: মৌলিক সংখ্যা কী?\nExplanation: যে স্বাভাবিক সংখ্যার ঠিক দুটি ভিন্ন ধনাত্মক গুণনীয়ক আছে।\n---\n[SQ]\nQuestion: জোড় সংখ্যা কী?\nExplanation: যে সংখ্যা ২ দিয়ে নিঃশেষে বিভাজ্য।"
+              }
+            </pre>
+            <p className="mt-2">
+              সাধারণ বইয়ের লেখা থেকে নিজে নিজে নির্ভুল প্রশ্ন বানানো এই Parse-এর
+              কাজ নয়। Template-এর গঠন ও MCQ-এর সঠিক উত্তর দিতে হবে।
+            </p>
+          </details>
           <div className="mt-3">
             <QuestionBankEditorialTools
               fields={[
@@ -551,12 +656,36 @@ export default function BankImportWorkspace({
           </div>
         )}
       </section>
+      <section className={panel}>
+        <h2 className="font-bold">সেভ করা প্রশ্ন কোথায় পাবেন?</h2>
+        <p className="text-sm leading-7">
+          Pending হিসেবে সেভ করার পরে প্রশ্নব্যাংক স্টুডিওতে পাবেন। সেখানে
+          প্রশ্নের পুরো প্রিভিউ, Edit, Trash (পুনরুদ্ধারযোগ্য delete) এবং review
+          দিয়ে Approve করা যায়। শুধু Parse করলে প্রশ্ন সেখানে যাবে না।
+        </p>
+        <Link
+          className={button}
+          href={`/admin/questions/bank?${new URLSearchParams({ ...scope, status: "pending" })}`}
+        >
+          এই অধ্যায়ের সেভ করা Pending প্রশ্ন খুলুন
+        </Link>
+        <Link
+          className={`${button} ml-2`}
+          href={`/admin/questions/bank?${new URLSearchParams({ ...scope, status: "all" })}`}
+        >
+          এই অধ্যায়ের সব প্রশ্ন খুলুন
+        </Link>
+      </section>
       {items.length > 0 && (
         <section className="space-y-4">
           <div
             className={`${panel} flex flex-wrap items-center justify-between gap-3`}
           >
-            <h2 className="font-bold">
+            <h2
+              ref={stagingHeading}
+              tabIndex={-1}
+              className="scroll-mt-20 font-bold focus:outline-none"
+            >
               ৩. সংশোধন ও নির্বাচন · {items.length}টি প্রশ্ন
             </h2>
             <label className="flex gap-2 text-sm">
@@ -574,6 +703,13 @@ export default function BankImportWorkspace({
               সব নির্বাচন
             </label>
           </div>
+          <p className="rounded-xl border bg-amber-50 p-3 text-sm leading-7">
+            এটি অস্থায়ী staging, এখনো database-এ সেভ নয়। এখানে পুরো প্রশ্ন/উত্তর
+            প্রিভিউ ও Edit করুন, অপ্রয়োজনীয় প্রশ্ন বাদ দিন। তারপর নিচে নির্বাচিত
+            প্রশ্ন যাচাই → review-এ সম্মতি → Pending হিসেবে সেভ করুন। সেভ হওয়ার
+            পর Studio-তে পূর্ণ প্রশ্ন দেখা, Edit, Trash ও আলাদা Approve করা
+            যাবে। Reload করলে unsaved staging হারাতে পারে।
+          </p>
           {items.length > 20 && (
             <div className="flex flex-wrap items-center gap-3">
               <button
@@ -737,6 +873,36 @@ export default function BankImportWorkspace({
                             />
                           </label>
                         ))}
+                      <button
+                        type="button"
+                        className={`${button} !text-rose-700`}
+                        onClick={() => {
+                          if (
+                            !confirm(
+                              "এই প্রশ্ন শুধু staging থেকে বাদ দেবেন? Database-এর কোনো প্রশ্ন delete হবে না।",
+                            )
+                          )
+                            return;
+                          setItems((rows) =>
+                            rows.filter((row) => row.entryId !== entryId),
+                          );
+                          setSelected((ids) =>
+                            ids.filter((id) => id !== entryId),
+                          );
+                          setPage((value) =>
+                            Math.max(
+                              1,
+                              Math.min(
+                                value,
+                                Math.ceil((items.length - 1) / 20),
+                              ),
+                            ),
+                          );
+                          invalidate();
+                        }}
+                      >
+                        Staging থেকে এই প্রশ্ন বাদ দিন
+                      </button>
                       <label className="grid gap-1 text-sm">
                         উত্তর / সমাধান
                         <textarea

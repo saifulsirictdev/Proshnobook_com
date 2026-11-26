@@ -341,6 +341,101 @@ async function runQuestionBankWorkflow({
     await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Class 6");
     await chooseBankScopeField(page, "বিষয়", "গণিত");
     await chooseBankScopeField(page, "অধ্যায় / টপিক", "Synthetic Word chapter");
+    setPhase("bank_manual_parse_feedback_json_and_preserve_failed_staging");
+    await page
+      .getByRole("button", {
+        name: "টেক্সট Parse করে staging-এ নিন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByRole("heading", {
+        name: "৩. সংশোধন ও নির্বাচন · 1টি প্রশ্ন",
+        exact: true,
+      })
+      .waitFor();
+    await page
+      .getByLabel("টেক্সট Parse-এর ফল", { exact: true })
+      .filter({ hasText: "1টি প্রশ্ন" })
+      .waitFor();
+    await page
+      .getByText("Extracted / Template টেক্সট দেখুন ও সংশোধন করুন", {
+        exact: true,
+      })
+      .click();
+    await page
+      .getByLabel("প্রশ্নব্যাচের টেক্সট", { exact: true })
+      .fill("Synthetic invalid unstructured text");
+    await page
+      .getByRole("button", {
+        name: "টেক্সট Parse করে staging-এ নিন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByLabel("টেক্সট Parse-এর ফল", { exact: true })
+      .filter({ hasText: "Staging হয়নি" })
+      .waitFor();
+    assert.equal(
+      await page
+        .getByRole("heading", {
+          name: "৩. সংশোধন ও নির্বাচন · 1টি প্রশ্ন",
+          exact: true,
+        })
+        .count(),
+      1,
+    );
+    const pastedItems = [1, 2].map((n) => ({
+      type: "SQ",
+      text: `Synthetic pasted JSON ${n}`,
+      explanation: "Synthetic answer",
+      options: {},
+      correct: "",
+      lang: "Bangla",
+      difficulty: "EASY",
+    }));
+    await page
+      .getByLabel("প্রশ্নব্যাচের টেক্সট", { exact: true })
+      .fill(JSON.stringify({ items: pastedItems }));
+    await page
+      .getByRole("button", {
+        name: "টেক্সট Parse করে staging-এ নিন",
+        exact: true,
+      })
+      .click();
+    await page
+      .getByRole("heading", {
+        name: "৩. সংশোধন ও নির্বাচন · 2টি প্রশ্ন",
+        exact: true,
+      })
+      .waitFor();
+    await page
+      .getByRole("button", {
+        name: "Staging থেকে এই প্রশ্ন বাদ দিন",
+        exact: true,
+      })
+      .first()
+      .click();
+    await page
+      .getByRole("heading", {
+        name: "৩. সংশোধন ও নির্বাচন · 1টি প্রশ্ন",
+        exact: true,
+      })
+      .waitFor();
+    const pendingLink = new URL(
+      await page
+        .getByRole("link", {
+          name: "এই অধ্যায়ের সেভ করা Pending প্রশ্ন খুলুন",
+          exact: true,
+        })
+        .getAttribute("href"),
+      origin,
+    );
+    assert.equal(pendingLink.searchParams.get("status"), "pending");
+    assert.equal(
+      pendingLink.searchParams.get("topic"),
+      "Synthetic Word chapter",
+    );
     const upload = () =>
       page.getByLabel("Word / JSON / TXT ফাইল", { exact: true }).setInputFiles({
         name: "synthetic-template.docx",
