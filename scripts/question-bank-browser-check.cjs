@@ -1,3 +1,6 @@
+const {
+  chooseBankScopeField,
+} = require("./helpers/question-bank-scope-select.cjs");
 /** Browser/UI contract only, using synthetic rows and a mock API. Never production data. */
 const fs = require("node:fs"),
   path = require("node:path"),
@@ -239,11 +242,9 @@ async function main() {
       .getByRole("button", { name: "নতুন প্রশ্ন লিখুন", exact: true })
       .click();
     const editor = page.getByRole("region", { name: "প্রশ্ন Editor" });
-    await editor
-      .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
-      .fill(base.category);
-    await editor.getByLabel("বিষয়", { exact: true }).fill(base.subject);
-    await editor.getByLabel("অধ্যায় / টপিক", { exact: true }).fill(base.topic);
+    await chooseBankScopeField(editor, "শ্রেণি / ক্যাটাগরি", base.category);
+    await chooseBankScopeField(editor, "বিষয়", base.subject);
+    await chooseBankScopeField(editor, "অধ্যায় / টপিক", base.topic);
     await editor
       .getByLabel("প্রশ্ন", { exact: true })
       .fill("হাতে লেখা পরীক্ষামূলক প্রশ্ন");
@@ -252,25 +253,43 @@ async function main() {
     await editor
       .getByLabel("উত্তর / সমাধান ও ব্যাখ্যা", { exact: true })
       .fill("এটি একটি synthetic উত্তর।");
-    const tools = editor.locator("details").filter({has: page.locator("summary",{hasText:"Unicode conversion"})});
+    const tools = editor
+      .locator("details")
+      .filter({
+        has: page.locator("summary", { hasText: "Unicode conversion" }),
+      });
     await tools.locator("summary").click();
-    await tools.getByRole("button",{name:"Editor থেকে টেক্সট নিন",exact:true}).click();
-    await tools.getByLabel("মূল / legacy টেক্সট",{exact:true}).fill("Avgvi †mvbvi evsjv $x=2$ 123");
-    await tools.getByRole("button",{name:"Bijoy → Unicode প্রিভিউ",exact:true}).click();
-    assert.match(await tools.getByLabel("প্রস্তাবিত টেক্সট",{exact:true}).inputValue(),/আমার সোনার বাংলা/);
-    await tools.getByRole("button",{name:"পার্থক্য দেখেছি · Editor-এ বসান",exact:true}).click();
-    await tools.getByRole("button",{name:"শেষ Apply Undo করুন",exact:true}).click();
+    await tools
+      .getByRole("button", { name: "Editor থেকে টেক্সট নিন", exact: true })
+      .click();
+    await tools
+      .getByLabel("মূল / legacy টেক্সট", { exact: true })
+      .fill("Avgvi †mvbvi evsjv $x=2$ 123");
+    await tools
+      .getByRole("button", { name: "Bijoy → Unicode প্রিভিউ", exact: true })
+      .click();
+    assert.match(
+      await tools.getByLabel("প্রস্তাবিত টেক্সট", { exact: true }).inputValue(),
+      /আমার সোনার বাংলা/,
+    );
+    await tools
+      .getByRole("button", {
+        name: "পার্থক্য দেখেছি · Editor-এ বসান",
+        exact: true,
+      })
+      .click();
+    await tools
+      .getByRole("button", { name: "শেষ Apply Undo করুন", exact: true })
+      .click();
     await tools.locator("summary").click();
     await editor
       .getByLabel("ছবির বর্ণনা", { exact: true })
       .fill("পরীক্ষামূলক নীল চিত্র");
-    await editor
-      .getByLabel("ছবি আপলোড করুন", { exact: true })
-      .setInputFiles({
-        name: "fixture.webp",
-        mimeType: "image/webp",
-        buffer: webp,
-      });
+    await editor.getByLabel("ছবি আপলোড করুন", { exact: true }).setInputFiles({
+      name: "fixture.webp",
+      mimeType: "image/webp",
+      buffer: webp,
+    });
     await editor
       .getByRole("button", { name: "নির্বাচিত স্থানে ছবি বসান" })
       .click();
@@ -284,13 +303,11 @@ async function main() {
     await editor
       .getByLabel("ছবির বর্ণনা", { exact: true })
       .fill("বদলানো চিত্র");
-    await editor
-      .getByLabel("ছবি আপলোড করুন", { exact: true })
-      .setInputFiles({
-        name: "replacement.webp",
-        mimeType: "image/webp",
-        buffer: webp,
-      });
+    await editor.getByLabel("ছবি আপলোড করুন", { exact: true }).setInputFiles({
+      name: "replacement.webp",
+      mimeType: "image/webp",
+      buffer: webp,
+    });
     await editor
       .getByRole("button", { name: "ছবিটি প্রতিস্থাপন করুন", exact: true })
       .click();
@@ -306,13 +323,11 @@ async function main() {
     await editor
       .getByLabel("ছবির বর্ণনা", { exact: true })
       .fill("পরীক্ষামূলক নীল চিত্র");
-    await editor
-      .getByLabel("ছবি আপলোড করুন", { exact: true })
-      .setInputFiles({
-        name: "final.webp",
-        mimeType: "image/webp",
-        buffer: webp,
-      });
+    await editor.getByLabel("ছবি আপলোড করুন", { exact: true }).setInputFiles({
+      name: "final.webp",
+      mimeType: "image/webp",
+      buffer: webp,
+    });
     await editor
       .getByRole("button", { name: "নির্বাচিত স্থানে ছবি বসান", exact: true })
       .click();
@@ -400,11 +415,9 @@ async function main() {
         .getByRole("button", { name: "নতুন প্রশ্ন লিখুন", exact: true })
         .click();
       const form = page.getByRole("region", { name: "প্রশ্ন Editor" });
-      await form
-        .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
-        .fill(base.category);
-      await form.getByLabel("বিষয়", { exact: true }).fill(base.subject);
-      await form.getByLabel("অধ্যায় / টপিক", { exact: true }).fill(base.topic);
+      await chooseBankScopeField(form, "শ্রেণি / ক্যাটাগরি", base.category);
+      await chooseBankScopeField(form, "বিষয়", base.subject);
+      await chooseBankScopeField(form, "অধ্যায় / টপিক", base.topic);
       await form.getByRole("button", { name: type, exact: true }).click();
       await form
         .getByLabel(type === "CQ" ? "উদ্দীপক" : "প্রশ্ন", { exact: true })
