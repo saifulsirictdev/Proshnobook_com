@@ -1,24 +1,29 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
   bankDraftSchema,
   type BankDraft,
 } from "@/lib/admin-question-bank-schema";
+import { bankTextTemplate, bankUuidFromHex } from "@/lib/question-bank-batch";
+import { readBankFileInWorker } from "@/lib/question-bank-file-client";
 import {
-  parseBankText,
-  bankTextTemplate,
-  toBankText,
-  bankUuidFromHex,
-} from "@/lib/question-bank-batch";
+  BANK_FILE_MAX_BYTES,
+  BANK_DOCUMENT_MAX_CHARS,
+  bankFileFormat,
+  bankImportChunks,
+  markCrossChunkDuplicates,
+  type BankFileFormat,
+  type BankFileProgress,
+} from "@/lib/question-bank-large-file";
 import { ScopeFields, Preview } from "../workspace";
 import QuestionBankEditorialTools from "@/components/question-bank-editorial-tools";
 const input =
-  "w-full rounded-xl border border-slate-300 bg-white p-3 text-sm text-slate-900 focus:border-blue-500";
+  "w-full min-w-0 max-w-full rounded-xl border border-slate-300 bg-white p-3 text-sm text-slate-900 focus:border-blue-500";
 const button =
   "inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-4 py-2.5 text-sm font-semibold text-blue-800 disabled:opacity-50";
 const panel =
-  "space-y-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5";
+  "min-w-0 space-y-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5";
 type Entry = { entryId: string; draft: BankDraft };
 type Report = {
   entryId: string;
@@ -34,12 +39,19 @@ async function call(body: FormData | Record<string, unknown>) {
     headers:
       body instanceof FormData ? {} : { "Content-Type": "application/json" },
     credentials: "same-origin",
+    signal: AbortSignal.timeout(180000),
   });
-  const result = await response.json();
+  const result = await response.json().catch(() => ({
+    error: `সার্ভারের অনুরোধ সম্পন্ন হয়নি (HTTP ${response.status})। একই ব্যাচ আবার যাচাই করে চেষ্টা করুন।`,
+  }));
   if (!response.ok) throw Error(result.error ?? "অনুরোধ সম্পন্ন হয়নি।");
   return result;
 }
-export default function BankImportWorkspace() {
+export default function BankImportWorkspace({
+  scopes = [],
+}: {
+  scopes?: { category: string; subject: string; topic: string }[];
+}) {
   const [scope, setScope] = useState({
       category: "Class 6",
       subject: "",
@@ -57,24 +69,44 @@ export default function BankImportWorkspace() {
     [fileName, setFileName] = useState("manual-template.txt"),
     [batchId, setBatchId] = useState(() => crypto.randomUUID()),
     [saved, setSaved] = useState(false);
-  const chosen = items.filter((i) => selected.includes(i.entryId)),
-    currentSignature = JSON.stringify(chosen);
+  const [page, setPage] = useState(1),
+    [editRevision, setEditRevision] = useState(0),
+    [fileFormat, setFileFormat] = useState<BankFileFormat>("txt"),
+    [fileFilter, setFileFilter] = useState(""),
+    [includeImages, setIncludeImages] = useState(true);
+  const [uploadInfo, setUploadInfo] = useState<{
+      name: string;
+      size: number;
+      state: string;
+    } | null>(null),
+    [progress, setProgress] = useState<BankFileProgress | null>(null);
+  const controller = useRef<AbortController | null>(null),
+    stop = useRef(false);
+  const selectedSet = new Set(selected),
+    chosen = items.filter((item) => selectedSet.has(item.entryId)),
+    currentSignature = String(editRevision);
+  useEffect(() => () => controller.current?.abort(), []);
   useEffect(() => {
-    if (!items.length || saved) return;
+    if ((!items.length && !raw.length && !busy) || saved) return;
     const leave = (e: BeforeUnloadEvent) => {
       e.preventDefault();
     };
     window.addEventListener("beforeunload", leave);
     return () => window.removeEventListener("beforeunload", leave);
-  }, [items.length, saved]);
+  }, [items.length, raw.length, busy, saved]);
   function invalidate() {
+    setEditRevision((value) => value + 1);
     setReport([]);
     setSignature("");
     setReviewed(false);
     setSaved(false);
     setMessage("");
   }
-  async function stage(drafts: BankDraft[], identity?: string) {
+  async function stage(
+    drafts: BankDraft[],
+    identity?: string,
+    signal?: AbortSignal,
+  ) {
     const uuid = async (value: string) =>
       bankUuidFromHex(
         Array.from(
@@ -99,12 +131,28 @@ export default function BankImportWorkspace() {
           ),
         ]),
       ));
-    const next = await Promise.all(
-      drafts.map(async (draft, index) => ({
-        entryId: await uuid(id + ":" + index),
-        draft,
-      })),
-    );
+    const next: Entry[] = [];
+    for (let offset = 0; offset < drafts.length; offset += 250) {
+      if (signal?.aborted)
+        throw new DOMException("Staging বাতিল হয়েছে।", "AbortError");
+      next.push(
+        ...(await Promise.all(
+          drafts.slice(offset, offset + 250).map(async (draft, index) => ({
+            entryId: await uuid(id + ":" + (offset + index)),
+            draft,
+          })),
+        )),
+      );
+      setProgress({
+        phase: "প্রশ্ন staging-এ নিচ্ছি",
+        done: next.length,
+        total: drafts.length,
+      });
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    }
+    setPage(1);
+    if (signal?.aborted)
+      throw new DOMException("Staging বাতিল হয়েছে।", "AbortError");
     setItems(next);
     setSelected(next.map((i) => i.entryId));
     setBatchId(id);
@@ -120,77 +168,162 @@ export default function BankImportWorkspace() {
     );
     invalidate();
   }
-  async function upload(file: File | undefined) {
-    if (!file) return;
-    if (!scope.subject || !scope.topic) {
-      setMessage("আগে বিষয় ও অধ্যায় দিন।");
-      return;
-    }
-    if (file.size > 4000000) {
-      setMessage("ফাইল সর্বোচ্চ ৪ MB।");
-      return;
+  async function processFile(file?: File) {
+    if (file) {
+      setUploadInfo({ name: file.name, size: file.size, state: "নির্বাচিত" });
+      try {
+        bankFileFormat(file.name);
+        if (!file.size || file.size > BANK_FILE_MAX_BYTES)
+          throw Error("খালি ফাইল নয়; সর্বোচ্চ ৫০ MiB DOCX / JSON / TXT দিন।");
+      } catch (error) {
+        setUploadInfo({
+          name: file.name,
+          size: file.size,
+          state: "গ্রহণ করা হয়নি",
+        });
+        setMessage((error as Error).message);
+        return;
+      }
     }
     if (
       items.length &&
-      !confirm("বর্তমান staged ব্যাচ সরিয়ে নতুন ফাইল খুলবেন?")
-    )
+      !confirm("বর্তমান staged ব্যাচ সরিয়ে নতুন ফাইল/টেক্সট পড়বেন?")
+    ) {
+      if (file)
+        setUploadInfo({
+          name: file.name,
+          size: file.size,
+          state: "নতুন ফাইল খোলা বাতিল; আগের staging আছে",
+        });
       return;
+    }
     setBusy(true);
     setMessage("");
+    setProgress({ phase: "ফাইল প্রক্রিয়া শুরু করছি" });
+    const abort = new AbortController();
+    controller.current = abort;
     try {
-      const form = new FormData();
-      for (const [k, v] of Object.entries(scope)) form.set(k, v);
-      form.set("file", file);
-      const result = await call(form);
-      await stage(result.items, result.batchId);
-      setRaw(result.text || toBankText(result.items));
-      setWarnings(result.warnings ?? []);
+      if (file)
+        setUploadInfo({ name: file.name, size: file.size, state: "পড়ছি…" });
+      const result = await readBankFileInWorker(
+        file
+          ? { file, scope, includeImages }
+          : { text: raw, format: fileFormat, scope },
+        setProgress,
+        abort.signal,
+      );
+      await stage(result.items, result.batchId, abort.signal);
+      setRaw(result.text);
+      setFileFormat(result.format);
+      setWarnings(result.warnings);
       setFileName(result.fileName);
-    } catch (e) {
-      setMessage((e as Error).message);
+      if (file)
+        setUploadInfo({
+          name: file.name,
+          size: file.size,
+          state: `ফাইল পড়া হয়েছে · ${result.items.length}টি প্রশ্ন staging-এ`,
+        });
+      setMessage(
+        result.items.length
+          ? `${result.items.length}টি প্রশ্ন staging-এ এসেছে। এখন প্রিভিউ/সংশোধন ও duplicate check করুন; কোনো প্রশ্ন সেভ বা প্রকাশ হয়নি।`
+          : "ফাইলের টেক্সট পড়া হয়েছে, প্রশ্ন এখনো staging-এ আসেনি। নিচের warning দেখুন; শ্রেণি/বিষয়/অধ্যায় ও Template ঠিক করে Parse করুন।",
+      );
+    } catch (error) {
+      if (file)
+        setUploadInfo({
+          name: file.name,
+          size: file.size,
+          state: abort.signal.aborted ? "বাতিল হয়েছে" : "প্রক্রিয়া ব্যর্থ",
+        });
+      setMessage((error as Error).message);
     } finally {
       setBusy(false);
+      setProgress(null);
+      controller.current = null;
     }
   }
   async function checkOrSave(action: "check" | "save") {
+    if (action === "save" && (!reviewed || signature !== currentSignature))
+      return;
     setBusy(true);
     setMessage("");
+    stop.current = false;
+    let done = 0,
+      inserted = 0,
+      skipped = 0,
+      scanned = 0,
+      failed = 0;
+    const allReport: Report[] = [],
+      duplicateIds = markCrossChunkDuplicates(chosen);
     try {
       for (const { draft } of chosen) bankDraftSchema.parse(draft);
-      const result = await call({
-        action,
-        batchId,
-        fileName,
-        reviewed,
-        items: chosen,
-      });
+      const chunks = bankImportChunks(chosen);
+      for (const chunk of chunks) {
+        if (stop.current) break;
+        setProgress({
+          phase:
+            action === "check"
+              ? "Duplicate পরীক্ষা করছি"
+              : "শুধু Pending হিসেবে সেভ করছি",
+          done,
+          total: chosen.length,
+        });
+        const result = await call({
+          action,
+          batchId,
+          fileName,
+          reviewed: action === "save" && reviewed,
+          items: chunk,
+        });
+        if (action === "check") {
+          allReport.push(
+            ...result.report.map((row: Report) => ({
+              ...row,
+              inBatch: row.inBatch || duplicateIds.has(row.entryId),
+            })),
+          );
+          scanned = Math.max(scanned, result.existingScanned);
+          done += chunk.length;
+        } else {
+          inserted += result.inserted;
+          skipped += result.skipped;
+          failed += result.failures.length;
+          done += chunk.length - result.notAttempted;
+          if (result.failures.length || result.notAttempted) break;
+        }
+      }
       if (action === "check") {
-        setReport(result.report);
-        setSignature(currentSignature);
+        setReport(allReport);
+        setSignature(done === chosen.length ? currentSignature : "");
         setReviewed(false);
         setMessage(
-          `${result.existingScanned}টি DB প্রশ্নের সঙ্গে duplicate পরীক্ষা হয়েছে। Near-match কেবল সম্ভাবনা, নিশ্চিত duplicate নয়।`,
+          done === chosen.length
+            ? `${scanned}টি DB প্রশ্নের সঙ্গে duplicate পরীক্ষা হয়েছে। ${done}টি নির্বাচিত প্রশ্ন একাধিক ছোট request-এ যাচাই হয়েছে; near-match প্রতি request-এ সর্বোচ্চ ৫০০টি DB candidate-এর advisory রিপোর্ট; সব প্রশ্নের near-match নিশ্চয়তা নয়।`
+            : `${done}/${chosen.length}টি যাচাই করে থেমেছে। সব প্রশ্ন যাচাই না হওয়া পর্যন্ত Save বন্ধ থাকবে।`,
         );
       } else {
+        setSaved(!failed && done === chosen.length);
+        setSignature("");
+        setReviewed(false);
         setMessage(
-          `${result.inserted}টি নতুন Pending; ${result.skipped}টি duplicate/আগে সেভ করা entry বাদ; ${result.failures.length}টি ব্যর্থ; ${result.notAttempted}টি চেষ্টা হয়নি। কোনো প্রশ্ন approve হয়নি।${result.failures.length ? " ভুল ঠিক করে আবার Check করুন; আগের সেভ হওয়া entry আর লেখা হবে না।" : ""}`,
+          `${inserted}টি নতুন Pending; ${skipped}টি duplicate/আগে সেভ করা entry বাদ; ${failed}টি ব্যর্থ; ${chosen.length - done}টি চেষ্টা হয়নি। কোনো প্রশ্ন approve হয়নি।${failed || done < chosen.length ? " থেমেছে—আবার Check করে একই ব্যাচ Save করলে আগের entry overwrite হবে না।" : ""}`,
         );
-        setSaved(!result.failures.length && !result.notAttempted);
       }
-    } catch (e) {
+    } catch (error) {
+      setSignature("");
+      setReviewed(false);
       setMessage(
-        e instanceof Error && /^[\u0980-\u09ff]/.test(e.message)
-          ? e.message
-          : "প্রশ্ন, চারটি স্বতন্ত্র অপশন, answer key ও CQ অংশ/নম্বর পূরণ করে আবার যাচাই করুন।",
+        `${action === "save" ? `নিশ্চিত হিসাব: ${inserted}টি নতুন Pending, ${skipped}টি বাদ। শেষ request-এর ফল না এলে কিছু প্রশ্ন সেভ হয়ে থাকতে পারে—একই ব্যাচ আবার Check/Save করুন; stable ID আগের entry overwrite হতে দেবে না। ` : ""}${error instanceof Error && /^[\u0980-\u09ff]/.test(error.message) ? error.message : "প্রশ্নের গঠন/সংযোগ যাচাই করে আবার চেষ্টা করুন।"}`,
       );
     } finally {
       setBusy(false);
+      setProgress(null);
     }
   }
   const math = /গণিত|mathematics/i.test(scope.subject),
     templateQuery = `math=${math ? 1 : 0}`;
   return (
-    <div className="space-y-5 text-slate-900">
+    <div className="min-w-0 space-y-5 text-slate-900 [overflow-wrap:anywhere]">
       <Link
         href="/admin/questions/bank"
         className="text-sm font-semibold text-blue-700"
@@ -202,7 +335,7 @@ export default function BankImportWorkspace() {
           Review before import
         </p>
         <h1 className="mt-2 text-2xl font-bold">
-          Word / JSON ব্যাচ review-import
+          Word / JSON / TXT ব্যাচ review-import
         </h1>
         <p className="mt-2 text-sm leading-7 text-slate-500">
           ফাইল → Parse → হাতে সংশোধন → duplicate check → নির্বাচিত প্রশ্ন
@@ -211,11 +344,11 @@ export default function BankImportWorkspace() {
       </header>
       <section className={panel}>
         <h2 className="font-bold">১. শ্রেণি, বিষয় ও অধ্যায়</h2>
-        <div className="grid gap-3 sm:grid-cols-3">
+        <fieldset disabled={busy} className="grid min-w-0 gap-3 sm:grid-cols-3">
           <ScopeFields
             edit
             value={scope}
-            scopes={[]}
+            scopes={scopes}
             onChange={(next) => {
               setScope(next);
               setItems((rows) =>
@@ -227,7 +360,7 @@ export default function BankImportWorkspace() {
               invalidate();
             }}
           />
-        </div>
+        </fieldset>
         <p className="text-xs text-slate-500">
           এই scope পুরো ব্যাচে প্রযোজ্য। Scope বদলালে duplicate check আবার করতে
           হবে।
@@ -254,28 +387,120 @@ export default function BankImportWorkspace() {
               if (raw && !confirm("টেক্সট বক্সে নমুনা Template বসাবেন?"))
                 return;
               setRaw(bankTextTemplate(math));
+              setFileFormat("txt");
             }}
           >
             টেক্সটে নমুনা বসান
           </button>
         </div>
         <p className="text-xs leading-6 text-slate-600">
-          প্রতি ব্যাচে ১–১০০টি প্রশ্ন; সর্বোচ্চ ৪ MB .docx / ১ MB JSON। পুরোনো
-          .doc আগে .docx করুন। Word-এর নিজস্ব Insert Picture-এ দেওয়া সর্বোচ্চ
-          ২০টি JPG/PNG/WebP বের করা হবে। ছবির URL প্রকাশ্য; ব্যক্তিগত তথ্য দেবেন
-          না। Word upload প্রশ্ন প্রকাশ করে না; কেবল ছবিগুলো সংরক্ষণ করে।
+          সর্বোচ্চ ৫০ MiB DOCX / JSON / TXT; ১০,০০০টি প্রশ্ন staging-এ, সর্বোচ্চ
+          ২ কোটি অক্ষর। ৫০০–৬০০ পৃষ্ঠার বই লক্ষ্য রেখে browser worker-এ পড়া
+          হবে—পৃষ্ঠা সংখ্যা দিয়ে সফলতার নিশ্চয়তা নয়; বড় ছবি/কম RAM হলে বই ভাগ
+          করুন। পুরো বড় ফাইল server-এ পাঠানো হয় না। নির্বাচিত প্রশ্ন সর্বোচ্চ
+          ১০০টি ও প্রায় ৮০০ KB করে ছোট request-এ সেভ হবে। পুরোনো DOC আগে DOCX
+          করুন।
         </p>
+        <label className="grid gap-2 text-sm">
+          ফাইল বাছাইয়ের filter
+          <select
+            aria-label="ফাইল বাছাইয়ের filter"
+            className={input}
+            value={fileFilter}
+            disabled={busy}
+            onChange={(event) => setFileFilter(event.target.value)}
+          >
+            <option value="">
+              সব ফাইল দেখান (Android-এ JSON/TXT-ও বাছা যাবে)
+            </option>
+            <option value=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+              শুধু DOCX
+            </option>
+            <option value=".json,application/json,text/plain,application/octet-stream">
+              JSON
+            </option>
+            <option value=".txt,text/plain,application/octet-stream">
+              TXT
+            </option>
+          </select>
+        </label>
+        <label className="flex gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={includeImages}
+            disabled={busy}
+            onChange={(event) => setIncludeImages(event.target.checked)}
+          />
+          Word-এর JPG/PNG/WebP ছবি সংরক্ষণ করুন (সর্বোচ্চ ১,০০০টি, প্রতিটি ৪ MB;
+          public URL—ব্যক্তিগত তথ্য দেবেন না)
+        </label>
         <input
-          aria-label="Word বা JSON ফাইল"
+          aria-label="Word / JSON / TXT ফাইল"
           type="file"
-          accept=".docx,.json,application/json,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          accept={fileFilter || undefined}
           disabled={busy}
-          onChange={(e) => {
-            void upload(e.target.files?.[0]);
-            e.target.value = "";
+          onChange={(event) => {
+            const file = event.target.files?.[0];
+            if (file) void processFile(file);
+            event.target.value = "";
           }}
-          className="block w-full text-sm"
+          className="block w-full min-w-0 text-sm"
         />
+        {uploadInfo && (
+          <div
+            role="status"
+            aria-label="নির্বাচিত ফাইলের অবস্থা"
+            className="break-words rounded-xl border border-blue-200 bg-blue-50 p-3 text-sm"
+          >
+            <b>{uploadInfo.name}</b> ·{" "}
+            {(uploadInfo.size / 1024 / 1024).toFixed(2)} MiB
+            <br />
+            {uploadInfo.state}
+          </div>
+        )}
+        {message && (
+          <div
+            role="status"
+            className="rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm leading-7 text-blue-900"
+          >
+            {message}
+          </div>
+        )}
+        {progress && (
+          <div
+            role="status"
+            aria-live="polite"
+            className="space-y-2 rounded-xl border bg-sky-50 p-3 text-sm"
+          >
+            <p>
+              {progress.phase}
+              {progress.total
+                ? ` · ${progress.done ?? 0}/${progress.total}`
+                : ""}
+            </p>
+            <progress
+              aria-label="Import অগ্রগতি"
+              className="w-full"
+              max={progress.total || 1}
+              value={progress.total ? progress.done : undefined}
+            />
+            <button
+              type="button"
+              className={button}
+              onClick={() => {
+                if (controller.current) controller.current.abort();
+                else {
+                  stop.current = true;
+                  setMessage(
+                    "বর্তমান request শেষ হলে থামবে। ইতিমধ্যে Pending সেভ হওয়া প্রশ্ন থাকবে।",
+                  );
+                }
+              }}
+            >
+              {controller.current ? "পড়া বাতিল করুন" : "বর্তমান ধাপ শেষে থামান"}
+            </button>
+          </div>
+        )}
         <details open={!items.length}>
           <summary className="cursor-pointer text-sm font-semibold">
             Extracted / Template টেক্সট দেখুন ও সংশোধন করুন
@@ -286,7 +511,8 @@ export default function BankImportWorkspace() {
               aria-label="প্রশ্নব্যাচের টেক্সট"
               className={`${input} font-mono`}
               rows={12}
-              maxLength={250000}
+              maxLength={BANK_DOCUMENT_MAX_CHARS}
+              disabled={busy}
               value={raw}
               onChange={(e) => setRaw(e.target.value)}
             />
@@ -301,21 +527,7 @@ export default function BankImportWorkspace() {
             type="button"
             className={button}
             disabled={busy || !scope.subject || !scope.topic || !raw.trim()}
-            onClick={async () => {
-              try {
-                if (
-                  items.length &&
-                  !confirm(
-                    "বর্তমান staged সংশোধনের বদলে এই টেক্সট Parse করবেন?",
-                  )
-                )
-                  return;
-                await stage(parseBankText(raw, scope));
-                setFileName("edited-template.txt");
-              } catch (e) {
-                setMessage((e as Error).message);
-              }
-            }}
+            onClick={() => void processFile()}
           >
             টেক্সট Parse করে staging-এ নিন
           </button>
@@ -362,220 +574,251 @@ export default function BankImportWorkspace() {
               সব নির্বাচন
             </label>
           </div>
-          {items.map(({ entryId, draft }, index) => {
-            const issue = report.find((r) => r.entryId === entryId),
-              parts = (draft.options.subQuestions ?? {}) as Record<
-                string,
-                string
-              >;
-            return (
-              <details key={entryId} className={panel} open={index === 0}>
-                <summary className="flex cursor-pointer flex-wrap items-center gap-3">
-                  <input
-                    aria-label={`${index + 1} নং প্রশ্ন নির্বাচন`}
-                    type="checkbox"
-                    checked={selected.includes(entryId)}
-                    disabled={busy}
-                    onClick={(e) => e.stopPropagation()}
-                    onChange={(e) => {
-                      setSelected((old) =>
-                        e.target.checked
-                          ? [...old, entryId]
-                          : old.filter((id) => id !== entryId),
-                      );
-                      invalidate();
-                    }}
-                  />
-                  <b>
-                    {index + 1}. {draft.type}
-                  </b>
-                  <span className="min-w-0 flex-1 text-sm">
-                    {draft.text.slice(0, 100)}
-                  </span>
-                  {issue?.exact && (
-                    <span className="text-xs text-rose-700">
-                      {issue.trashed
-                        ? "Trash-এ আছে · বাদ যাবে"
-                        : "DB duplicate · বাদ যাবে"}
+          {items.length > 20 && (
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                className={button}
+                disabled={page <= 1}
+                onClick={() => setPage((value) => value - 1)}
+              >
+                আগের পৃষ্ঠা
+              </button>
+              <span>
+                প্রশ্ন {(page - 1) * 20 + 1}–{Math.min(page * 20, items.length)}{" "}
+                / {items.length} · পৃষ্ঠা {page}/{Math.ceil(items.length / 20)}
+              </span>
+              <button
+                type="button"
+                className={button}
+                disabled={page * 20 >= items.length}
+                onClick={() => setPage((value) => value + 1)}
+              >
+                পরের পৃষ্ঠা
+              </button>
+            </div>
+          )}
+          {items
+            .slice((page - 1) * 20, page * 20)
+            .map(({ entryId, draft }, localIndex) => {
+              const index = (page - 1) * 20 + localIndex;
+              const issue = report.find((r) => r.entryId === entryId),
+                parts = (draft.options.subQuestions ?? {}) as Record<
+                  string,
+                  string
+                >;
+              return (
+                <details
+                  key={entryId}
+                  className={panel}
+                  open={localIndex === 0}
+                >
+                  <summary className="flex cursor-pointer flex-wrap items-center gap-3">
+                    <input
+                      aria-label={`${index + 1} নং প্রশ্ন নির্বাচন`}
+                      type="checkbox"
+                      checked={selected.includes(entryId)}
+                      disabled={busy}
+                      onClick={(e) => e.stopPropagation()}
+                      onChange={(e) => {
+                        setSelected((old) =>
+                          e.target.checked
+                            ? [...old, entryId]
+                            : old.filter((id) => id !== entryId),
+                        );
+                        invalidate();
+                      }}
+                    />
+                    <b>
+                      {index + 1}. {draft.type}
+                    </b>
+                    <span className="min-w-0 flex-1 text-sm">
+                      {draft.text.slice(0, 100)}
                     </span>
-                  )}
-                  {issue?.inBatch && (
-                    <span className="text-xs text-rose-700">
-                      ব্যাচে পুনরাবৃত্তি · বাদ যাবে
-                    </span>
-                  )}
-                  {!!issue?.near.length && (
-                    <span className="text-xs text-amber-800">
-                      সম্ভাব্য মিল: {issue.near.length}
-                    </span>
-                  )}
-                </summary>
-                <div className="grid items-start gap-5 border-t pt-4 lg:grid-cols-2">
-                  <fieldset disabled={busy} className="min-w-0 space-y-3">
-                    <label className="grid gap-1 text-sm">
-                      প্রশ্ন / উদ্দীপক
-                      <textarea
-                        aria-label={`${index + 1} নং প্রশ্নের টেক্সট`}
-                        className={input}
-                        rows={5}
-                        value={draft.text}
-                        onChange={(e) =>
-                          patch(entryId, {
-                            text: e.target.value,
-                            ...(draft.type === "CQ"
-                              ? {
-                                  options: {
-                                    ...draft.options,
-                                    stimulus: e.target.value,
-                                  },
-                                }
-                              : {}),
-                          })
-                        }
-                      />
-                    </label>
-                    {draft.type === "MCQ" && (
-                      <>
-                        <div className="grid gap-3 sm:grid-cols-2">
-                          {["A", "B", "C", "D"].map((k) => (
-                            <label key={k} className="grid gap-1 text-sm">
-                              অপশন {k}
-                              <textarea
-                                className={input}
-                                rows={2}
-                                value={String(draft.options[k] ?? "")}
-                                onChange={(e) =>
-                                  patch(entryId, {
+                    {issue?.exact && (
+                      <span className="text-xs text-rose-700">
+                        {issue.trashed
+                          ? "Trash-এ আছে · বাদ যাবে"
+                          : "DB duplicate · বাদ যাবে"}
+                      </span>
+                    )}
+                    {issue?.inBatch && (
+                      <span className="text-xs text-rose-700">
+                        ব্যাচে পুনরাবৃত্তি · বাদ যাবে
+                      </span>
+                    )}
+                    {!!issue?.near.length && (
+                      <span className="text-xs text-amber-800">
+                        সম্ভাব্য মিল: {issue.near.length}
+                      </span>
+                    )}
+                  </summary>
+                  <div className="grid items-start gap-5 border-t pt-4 lg:grid-cols-2">
+                    <fieldset disabled={busy} className="min-w-0 space-y-3">
+                      <label className="grid gap-1 text-sm">
+                        প্রশ্ন / উদ্দীপক
+                        <textarea
+                          aria-label={`${index + 1} নং প্রশ্নের টেক্সট`}
+                          className={input}
+                          rows={5}
+                          value={draft.text}
+                          onChange={(e) =>
+                            patch(entryId, {
+                              text: e.target.value,
+                              ...(draft.type === "CQ"
+                                ? {
                                     options: {
                                       ...draft.options,
-                                      [k]: e.target.value,
+                                      stimulus: e.target.value,
                                     },
-                                  })
-                                }
-                              />
-                            </label>
-                          ))}
-                        </div>
-                        <label className="grid gap-1 text-sm">
-                          সঠিক উত্তর
-                          <select
-                            className={input}
-                            value={draft.correct}
-                            onChange={(e) =>
-                              patch(entryId, { correct: e.target.value })
-                            }
-                          >
+                                  }
+                                : {}),
+                            })
+                          }
+                        />
+                      </label>
+                      {draft.type === "MCQ" && (
+                        <>
+                          <div className="grid gap-3 sm:grid-cols-2">
                             {["A", "B", "C", "D"].map((k) => (
-                              <option key={k}>{k}</option>
-                            ))}
-                          </select>
-                        </label>
-                      </>
-                    )}
-                    {draft.type === "CQ" &&
-                      Object.entries(parts).map(([k, v]) => (
-                        <label key={k} className="grid gap-1 text-sm">
-                          অংশ {k}
-                          <textarea
-                            rows={2}
-                            className={input}
-                            value={v}
-                            onChange={(e) =>
-                              patch(entryId, {
-                                options: {
-                                  ...draft.options,
-                                  subQuestions: {
-                                    ...parts,
-                                    [k]: e.target.value,
-                                  },
-                                },
-                              })
-                            }
-                          />
-                        </label>
-                      ))}
-                    <label className="grid gap-1 text-sm">
-                      উত্তর / সমাধান
-                      <textarea
-                        rows={5}
-                        className={input}
-                        value={draft.explanation}
-                        onChange={(e) =>
-                          patch(entryId, { explanation: e.target.value })
-                        }
-                      />
-                    </label>
-                    <label className="grid gap-1 text-sm">
-                      কঠিনতা
-                      <select
-                        className={input}
-                        value={draft.difficulty}
-                        onChange={(e) =>
-                          patch(entryId, {
-                            difficulty: e.target
-                              .value as BankDraft["difficulty"],
-                          })
-                        }
-                      >
-                        <option value="EASY">সহজ</option>
-                        <option value="MEDIUM">মধ্যম</option>
-                        <option value="HARD">কঠিন</option>
-                      </select>
-                    </label>
-                    <QuestionBankEditorialTools
-                      fields={[
-                        {
-                          id: "text",
-                          label: "প্রশ্ন / উদ্দীপক",
-                          text: draft.text,
-                        },
-                        {
-                          id: "explanation",
-                          label: "উত্তর / সমাধান",
-                          text: draft.explanation,
-                        },
-                      ]}
-                      apply={(field, text) =>
-                        patch(
-                          entryId,
-                          field === "text"
-                            ? {
-                                text,
-                                ...(draft.type === "CQ"
-                                  ? {
+                              <label key={k} className="grid gap-1 text-sm">
+                                অপশন {k}
+                                <textarea
+                                  className={input}
+                                  rows={2}
+                                  value={String(draft.options[k] ?? "")}
+                                  onChange={(e) =>
+                                    patch(entryId, {
                                       options: {
                                         ...draft.options,
-                                        stimulus: text,
+                                        [k]: e.target.value,
                                       },
-                                    }
-                                  : {}),
+                                    })
+                                  }
+                                />
+                              </label>
+                            ))}
+                          </div>
+                          <label className="grid gap-1 text-sm">
+                            সঠিক উত্তর
+                            <select
+                              className={input}
+                              value={draft.correct}
+                              onChange={(e) =>
+                                patch(entryId, { correct: e.target.value })
                               }
-                            : { explanation: text },
-                        )
-                      }
-                    />
-                    {issue?.near.map((match) => (
-                      <p
-                        key={match.id}
-                        className="break-words rounded-xl bg-amber-50 p-3 text-xs leading-6 text-amber-900"
-                      >
-                        সম্ভাব্য মিল {Math.round(match.score * 100)}% ·{" "}
-                        {match.text}
-                        <br />
-                        DB ID: {match.id}
-                      </p>
-                    ))}
-                  </fieldset>
-                  <aside className="min-w-0 rounded-xl bg-slate-50 p-4">
-                    <h3 className="mb-4 text-xs font-bold text-blue-700">
-                      প্রিভিউ · এখনো প্রকাশ হয়নি
-                    </h3>
-                    <Preview q={draft} />
-                  </aside>
-                </div>
-              </details>
-            );
-          })}
+                            >
+                              {["A", "B", "C", "D"].map((k) => (
+                                <option key={k}>{k}</option>
+                              ))}
+                            </select>
+                          </label>
+                        </>
+                      )}
+                      {draft.type === "CQ" &&
+                        Object.entries(parts).map(([k, v]) => (
+                          <label key={k} className="grid gap-1 text-sm">
+                            অংশ {k}
+                            <textarea
+                              rows={2}
+                              className={input}
+                              value={v}
+                              onChange={(e) =>
+                                patch(entryId, {
+                                  options: {
+                                    ...draft.options,
+                                    subQuestions: {
+                                      ...parts,
+                                      [k]: e.target.value,
+                                    },
+                                  },
+                                })
+                              }
+                            />
+                          </label>
+                        ))}
+                      <label className="grid gap-1 text-sm">
+                        উত্তর / সমাধান
+                        <textarea
+                          rows={5}
+                          className={input}
+                          value={draft.explanation}
+                          onChange={(e) =>
+                            patch(entryId, { explanation: e.target.value })
+                          }
+                        />
+                      </label>
+                      <label className="grid gap-1 text-sm">
+                        কঠিনতা
+                        <select
+                          className={input}
+                          value={draft.difficulty}
+                          onChange={(e) =>
+                            patch(entryId, {
+                              difficulty: e.target
+                                .value as BankDraft["difficulty"],
+                            })
+                          }
+                        >
+                          <option value="EASY">সহজ</option>
+                          <option value="MEDIUM">মধ্যম</option>
+                          <option value="HARD">কঠিন</option>
+                        </select>
+                      </label>
+                      <QuestionBankEditorialTools
+                        fields={[
+                          {
+                            id: "text",
+                            label: "প্রশ্ন / উদ্দীপক",
+                            text: draft.text,
+                          },
+                          {
+                            id: "explanation",
+                            label: "উত্তর / সমাধান",
+                            text: draft.explanation,
+                          },
+                        ]}
+                        apply={(field, text) =>
+                          patch(
+                            entryId,
+                            field === "text"
+                              ? {
+                                  text,
+                                  ...(draft.type === "CQ"
+                                    ? {
+                                        options: {
+                                          ...draft.options,
+                                          stimulus: text,
+                                        },
+                                      }
+                                    : {}),
+                                }
+                              : { explanation: text },
+                          )
+                        }
+                      />
+                      {issue?.near.map((match) => (
+                        <p
+                          key={match.id}
+                          className="break-words rounded-xl bg-amber-50 p-3 text-xs leading-6 text-amber-900"
+                        >
+                          সম্ভাব্য মিল {Math.round(match.score * 100)}% ·{" "}
+                          {match.text}
+                          <br />
+                          DB ID: {match.id}
+                        </p>
+                      ))}
+                    </fieldset>
+                    <aside className="min-w-0 rounded-xl bg-slate-50 p-4">
+                      <h3 className="mb-4 text-xs font-bold text-blue-700">
+                        প্রিভিউ · এখনো প্রকাশ হয়নি
+                      </h3>
+                      <Preview q={draft} />
+                    </aside>
+                  </div>
+                </details>
+              );
+            })}
           <div className={`${panel} space-y-3`}>
             <button
               type="button"
@@ -624,14 +867,6 @@ export default function BankImportWorkspace() {
             </p>
           </div>
         </section>
-      )}
-      {message && (
-        <div
-          role="status"
-          className="rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm leading-7 text-blue-900"
-        >
-          {message}
-        </div>
       )}
     </div>
   );

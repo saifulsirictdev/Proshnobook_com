@@ -26,6 +26,7 @@ import { NCTB_CLASSES } from "@/lib/nctb-data";
 import { nearQuestionScore } from "@/lib/question-bank-editorial";
 import { revalidatePath } from "next/cache";
 export const runtime = "nodejs";
+export const maxDuration = 300;
 const scopeSchema = z.object({
   category: z.string().trim().min(1).max(100),
   subject: z.string().trim().min(1).max(200),
@@ -233,9 +234,9 @@ export async function POST(req: Request) {
         ],
       },
       select: { id: true, text: true, source: true },
-      take: 5001,
+      take: 20001,
     });
-    if (existing.length > 5000)
+    if (existing.length > 20000)
       throw Error("এই অধ্যায় অতিরিক্ত বড়; ছোট scope-এ কাজ করুন।");
     const exact = new Map(existing.map((q) => [normalizeBankStem(q.text), q]));
     const seen = new Set<string>();
@@ -254,6 +255,7 @@ export async function POST(req: Request) {
         near: match
           ? []
           : existing
+              .slice(0, 500)
               .map((q) => ({
                 id: q.id,
                 text: q.text.slice(0, 200),
@@ -265,7 +267,11 @@ export async function POST(req: Request) {
       };
     });
     if (input.action === "check")
-      return bankReply({ report, existingScanned: existing.length });
+      return bankReply({
+        report,
+        existingScanned: existing.length,
+        nearCandidatesScanned: Math.min(existing.length, 500),
+      });
     if (!input.reviewed)
       throw Error("প্রিভিউ ও duplicate রিপোর্ট দেখে সম্মতি দিন।");
     let inserted = 0,

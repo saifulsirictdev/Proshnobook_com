@@ -1,3 +1,4 @@
+const { chooseBankScopeField } = require("./question-bank-scope-select.cjs");
 /** Actual built app + Credentials session + disposable DB. No API/provider mocks. */
 const assert = require("node:assert/strict"),
   fs = require("node:fs"),
@@ -76,13 +77,13 @@ async function runQuestionBankWorkflow({
       .first()
       .waitFor();
     setPhase("bank_manual_editor_real_session");
-    await editor
-      .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
-      .fill("Class 6");
-    await editor.getByLabel("বিষয়", { exact: true }).fill("গণিত");
-    await editor
-      .getByLabel("অধ্যায় / টপিক", { exact: true })
-      .fill("Synthetic workspace chapter");
+    await chooseBankScopeField(editor, "শ্রেণি / ক্যাটাগরি", "Class 6");
+    await chooseBankScopeField(editor, "বিষয়", "গণিত");
+    await chooseBankScopeField(
+      editor,
+      "অধ্যায় / টপিক",
+      "Synthetic workspace chapter",
+    );
     await editor.getByLabel("প্রশ্ন", { exact: true }).fill(marker);
     for (const [k, value] of Object.entries({ A: "4", B: "3", C: "5", D: "6" }))
       await editor.getByLabel("অপশন " + k, { exact: true }).fill(value);
@@ -304,15 +305,44 @@ async function runQuestionBankWorkflow({
     await page.goto(origin + "/admin/questions/bank/import", {
       waitUntil: "networkidle",
     });
+    setPhase("bank_txt_read_before_scope_and_native_dropdowns");
+    assert.equal(
+      await page
+        .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
+        .evaluate((el) => el.tagName),
+      "SELECT",
+    );
+    assert.equal(
+      await page
+        .getByLabel("Word / JSON / TXT ফাইল", { exact: true })
+        .getAttribute("accept"),
+      null,
+      "default picker must allow JSON/TXT on Android",
+    );
     await page
-      .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
-      .fill("Class 6");
-    await page.getByLabel("বিষয়", { exact: true }).fill("গণিত");
+      .getByLabel("Word / JSON / TXT ফাইল", { exact: true })
+      .setInputFiles({
+        name: "before-scope.txt",
+        mimeType: "text/plain",
+        buffer: Buffer.from(
+          "[SQ]\nQuestion: Synthetic text read before classification\nExplanation: Synthetic solution",
+        ),
+      });
     await page
-      .getByLabel("অধ্যায় / টপিক", { exact: true })
-      .fill("Synthetic Word chapter");
+      .getByRole("status", { name: "নির্বাচিত ফাইলের অবস্থা" })
+      .filter({ hasText: "ফাইল পড়া হয়েছে" })
+      .waitFor();
+    assert.match(
+      await page
+        .getByLabel("প্রশ্নব্যাচের টেক্সট", { exact: true })
+        .inputValue(),
+      /Synthetic text read before classification/,
+    );
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Class 6");
+    await chooseBankScopeField(page, "বিষয়", "গণিত");
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", "Synthetic Word chapter");
     const upload = () =>
-      page.getByLabel("Word বা JSON ফাইল", { exact: true }).setInputFiles({
+      page.getByLabel("Word / JSON / TXT ফাইল", { exact: true }).setInputFiles({
         name: "synthetic-template.docx",
         mimeType:
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -404,6 +434,176 @@ async function runQuestionBankWorkflow({
       path: out + "/word-import-pending.png",
       fullPage: true,
     });
+    setPhase("bank_large_docx_over_old_limit_browser_worker");
+    const JSZip = require("jszip"),
+      largeZip = await JSZip.loadAsync(buffer);
+    const paragraphs = [];
+    for (let i = 0; i < 600; i++) {
+      for (const line of [
+        `[SQ]`,
+        `Question: Synthetic large page ${i + 1} ` + "ব".repeat(3000),
+        `Explanation: Synthetic solution`,
+        `---`,
+      ])
+        paragraphs.push(
+          `<w:p><w:r><w:t xml:space="preserve">${line}</w:t></w:r></w:p>`,
+        );
+    }
+    largeZip.file(
+      "word/document.xml",
+      '<?xml version="1.0"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>' +
+        paragraphs.join("") +
+        "</w:body></w:document>",
+    );
+    const largeBytes = await largeZip.generateAsync({
+      type: "nodebuffer",
+      compression: "STORE",
+    });
+    assert.ok(largeBytes.length > 4_000_000);
+    const beforeLarge = await db.question.count();
+    await page
+      .getByLabel("Word / JSON / TXT ফাইল", { exact: true })
+      .setInputFiles({
+        name: "synthetic-600-pages.docx",
+        mimeType:
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        buffer: largeBytes,
+      });
+    await page
+      .getByRole("heading", {
+        name: "৩. সংশোধন ও নির্বাচন · 600টি প্রশ্ন",
+        exact: true,
+      })
+      .waitFor({ timeout: 90000 });
+    assert.equal(
+      await page.getByLabel(/নং প্রশ্নের টেক্সট$/).count(),
+      20,
+      "only a page of editors is mounted",
+    );
+    await page
+      .getByRole("button", { name: "পরের পৃষ্ঠা", exact: true })
+      .click();
+    assert.match(
+      await page
+        .getByLabel("21 নং প্রশ্নের টেক্সট", { exact: true })
+        .inputValue(),
+      /Synthetic large page 21/,
+    );
+    assert.equal(
+      await db.question.count(),
+      beforeLarge,
+      "large extraction does not publish/write questions",
+    );
+    await page.setViewportSize({ width: 390, height: 900 });
+    const mobileOverflow = await page.evaluate(() => ({
+      width: innerWidth,
+      scroll: document.documentElement.scrollWidth,
+      offenders: [...document.querySelectorAll("main *")]
+        .filter((el) => el.getBoundingClientRect().right > innerWidth + 2)
+        .slice(0, 8)
+        .map((el) => ({
+          tag: el.tagName,
+          className: String(el.className).slice(0, 140),
+          width: Math.round(el.getBoundingClientRect().width),
+        })),
+    }));
+    if (mobileOverflow.scroll > mobileOverflow.width + 2)
+      console.error(
+        "::error::Synthetic import mobile layout dimensions " +
+          JSON.stringify(mobileOverflow),
+      );
+    assert.ok(mobileOverflow.scroll <= mobileOverflow.width + 2);
+    await page.screenshot({
+      path: out + "/large-file-mobile.png",
+      fullPage: true,
+    });
+    setPhase("bank_json_105_questions_two_bounded_requests");
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", "Synthetic chunked JSON");
+    const jsonItems = Array.from({ length: 105 }, (_, i) => ({
+      type: "SQ",
+      text: `Synthetic chunked JSON question ${i + 1}`,
+      explanation: "Synthetic solution",
+      options: {},
+      correct: "",
+      lang: "Bangla",
+      difficulty: "EASY",
+      approved: true,
+    }));
+    await page
+      .getByLabel("Word / JSON / TXT ফাইল", { exact: true })
+      .setInputFiles({
+        name: "synthetic.json",
+        mimeType: "application/octet-stream",
+        buffer: Buffer.from(JSON.stringify({ items: jsonItems })),
+      });
+    await page
+      .getByRole("heading", {
+        name: "৩. সংশোধন ও নির্বাচন · 105টি প্রশ্ন",
+        exact: true,
+      })
+      .waitFor();
+    const requestSizes = [];
+    const observe = (request) => {
+      if (
+        request.url() === origin + "/api/admin/question-bank/import" &&
+        request.method() === "POST"
+      ) {
+        try {
+          const body = request.postDataJSON();
+          if (body.items)
+            requestSizes.push({
+              action: body.action,
+              count: body.items.length,
+              bytes: Buffer.byteLength(request.postData()),
+            });
+        } catch {}
+      }
+    };
+    page.on("request", observe);
+    try {
+      await page
+        .getByRole("button", {
+          name: "105টি নির্বাচিত প্রশ্ন যাচাই করুন",
+          exact: true,
+        })
+        .click();
+      await page
+        .getByRole("status")
+        .filter({
+          hasText: "105টি নির্বাচিত প্রশ্ন একাধিক ছোট request-এ যাচাই হয়েছে",
+        })
+        .waitFor({ timeout: 120000 });
+      await page
+        .getByRole("checkbox", { name: /প্রিভিউ, উৎসের অধিকার/ })
+        .check();
+      await page
+        .getByRole("button", {
+          name: "নির্বাচিত প্রশ্ন Pending হিসেবে সেভ করুন",
+          exact: true,
+        })
+        .click();
+      await page
+        .getByRole("status")
+        .filter({ hasText: "105টি নতুন Pending" })
+        .waitFor({ timeout: 120000 });
+      assert.deepEqual(
+        requestSizes.filter((x) => x.action === "check").map((x) => x.count),
+        [100, 5],
+      );
+      assert.deepEqual(
+        requestSizes.filter((x) => x.action === "save").map((x) => x.count),
+        [100, 5],
+      );
+      assert.ok(requestSizes.every((x) => x.bytes < 801024));
+    } finally {
+      page.off("request", observe);
+    }
+    const savedChunk = await db.question.findMany({
+      where: { topic: "Synthetic chunked JSON" },
+    });
+    assert.equal(savedChunk.length, 105);
+    assert.ok(savedChunk.every((row) => !row.approved));
+
     console.log(
       "PASS isolated question-bank: actual Credentials UI, Unicode preview/Undo, real raster, Pending/review/edit, Trash/Restore, history rollback, Word extraction/repeat, JSON/CSV export; no external correction calls",
     );

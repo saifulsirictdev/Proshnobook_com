@@ -4,14 +4,19 @@ export type BankScope = Pick<BankDraft, "category" | "subject" | "topic">;
 /** A deliberately explicit interchange grammar, not a claim to understand every
  * arbitrary Word layout. Unstructured documents stay editable as extracted text.
  */
-export function parseBankText(raw: string, scope: BankScope): BankDraft[] {
-  if (raw.length > 250000) throw Error("টেক্সট অতিরিক্ত বড়; ছোট ব্যাচ দিন।");
+export function parseBankText(
+  raw: string,
+  scope: BankScope,
+  limits = { maxItems: MAX_BANK_IMPORT, maxChars: 250000 },
+): BankDraft[] {
+  if (raw.length > limits.maxChars)
+    throw Error("টেক্সট অতিরিক্ত বড়; ছোট ব্যাচ দিন।");
   const blocks = raw
     .replace(/\r\n?/g, "\n")
     .split(/^\s*---+\s*$/m)
     .filter((s) => s.trim());
-  if (!blocks.length || blocks.length > MAX_BANK_IMPORT)
-    throw Error("প্রতি ব্যাচে ১–১০০টি প্রশ্ন দিন।");
+  if (!blocks.length || blocks.length > limits.maxItems)
+    throw Error(`এই প্রক্রিয়ায় ১–${limits.maxItems}টি প্রশ্ন দিন।`);
   return blocks.map((block, index) => {
     const lines = block.trim().split("\n");
     const type = lines

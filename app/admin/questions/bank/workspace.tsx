@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import QuestionBankRecovery, {
   type RecoveryHandle,
@@ -64,6 +64,74 @@ function catalog(category: string) {
     (c) => c.class === category || c.class === `Class ${category}`,
   );
 }
+function ScopeSelect({
+  label,
+  value,
+  options,
+  onChange,
+  placeholder,
+  required,
+}: {
+  label: string;
+  value: string;
+  options: string[];
+  onChange: (value: string) => void;
+  placeholder: string;
+  required: boolean;
+}) {
+  const [custom, setCustom] = useState(false);
+  const choices = unique([...options, ...(value ? [value] : [])]);
+  return (
+    <div className="grid min-w-0 gap-1.5 text-sm font-medium">
+      <label className="grid min-w-0 gap-1.5">
+        {label}
+        <select
+          aria-label={label}
+          className={input}
+          value={custom ? "__custom__" : value}
+          required={required}
+          onChange={(event) => {
+            if (event.target.value === "__custom__") {
+              setCustom(true);
+              onChange("");
+            } else {
+              setCustom(false);
+              onChange(event.target.value);
+            }
+          }}
+        >
+          <option value="">{placeholder}</option>
+          {choices.map((choice) => (
+            <option key={choice} value={choice}>
+              {choice}
+            </option>
+          ))}
+          <option value="__custom__">তালিকার বাইরে / নতুন নাম লিখুন…</option>
+        </select>
+      </label>
+      {custom && (
+        <label className="grid gap-1.5 text-xs">
+          নতুন নাম
+          <input
+            aria-label={`${label} নতুন নাম`}
+            className={input}
+            value={value}
+            required={required}
+            maxLength={
+              label === "শ্রেণি / ক্যাটাগরি"
+                ? 100
+                : label === "বিষয়"
+                  ? 200
+                  : 500
+            }
+            onChange={(event) => onChange(event.target.value)}
+            placeholder="নাম লিখুন"
+          />
+        </label>
+      )}
+    </div>
+  );
+}
 export function ScopeFields({
   value,
   onChange,
@@ -75,7 +143,6 @@ export function ScopeFields({
   scopes: Scope[];
   edit?: boolean;
 }) {
-  const id = useId();
   const [stream, setStream] = useState("");
   const [chapterGroup, setChapterGroup] = useState("");
   const c = catalog(value.category);
@@ -105,34 +172,25 @@ export function ScopeFields({
   ]);
   return (
     <>
-      <label className="grid gap-1.5 text-sm font-medium">
-        শ্রেণি / ক্যাটাগরি
-        <input
-          aria-label="শ্রেণি / ক্যাটাগরি"
-          list={`${id}-classes`}
-          value={value.category}
-          required={edit}
-          placeholder={edit ? "শ্রেণি বাছুন বা লিখুন" : "সব শ্রেণি"}
-          className={input}
-          onChange={(e) => {
-            setStream("");
-            setChapterGroup("");
-            onChange({ category: e.target.value, subject: "", topic: "" });
-          }}
-        />
-        <datalist id={`${id}-classes`}>
-          {unique([
-            ...NCTB_CLASSES.map((c) => c.class),
-            "SSC",
-            "HSC",
-            "Admission",
-            "Job",
-            ...scopes.map((s) => s.category),
-          ]).map((c) => (
-            <option key={c} value={c} />
-          ))}
-        </datalist>
-      </label>
+      <ScopeSelect
+        label="শ্রেণি / ক্যাটাগরি"
+        value={value.category}
+        required={edit}
+        placeholder={edit ? "শ্রেণি নির্বাচন করুন" : "সব শ্রেণি"}
+        options={unique([
+          ...NCTB_CLASSES.map((c) => c.class),
+          "SSC",
+          "HSC",
+          "Admission",
+          "Job",
+          ...scopes.map((s) => s.category),
+        ])}
+        onChange={(category) => {
+          setStream("");
+          setChapterGroup("");
+          onChange({ category, subject: "", topic: "" });
+        }}
+      />
       {grouped && (
         <label className="grid gap-1.5 text-sm font-medium">
           বিভাগ
@@ -158,26 +216,18 @@ export function ScopeFields({
           </span>
         </label>
       )}
-      <label className="grid gap-1.5 text-sm font-medium">
-        বিষয়
-        <input
-          aria-label="বিষয়"
-          required={edit}
-          className={input}
-          list={`${id}-subjects`}
-          value={value.subject}
-          placeholder={edit ? "বিষয় বাছুন বা লিখুন" : "সব বিষয়"}
-          onChange={(e) => {
-            setChapterGroup("");
-            onChange({ ...value, subject: e.target.value, topic: "" });
-          }}
-        />
-        <datalist id={`${id}-subjects`}>
-          {visibleSubjects.map((v) => (
-            <option key={v} value={v} />
-          ))}
-        </datalist>
-      </label>
+      <ScopeSelect
+        key={`subject:${value.category}`}
+        label="বিষয়"
+        value={value.subject}
+        required={edit}
+        placeholder={edit ? "বিষয় নির্বাচন করুন" : "সব বিষয়"}
+        options={visibleSubjects}
+        onChange={(subject) => {
+          setChapterGroup("");
+          onChange({ ...value, subject, topic: "" });
+        }}
+      />
       {!!s?.subCategories?.length && (
         <label className="grid gap-1.5 text-sm font-medium">
           ইউনিট / অংশ
@@ -198,23 +248,15 @@ export function ScopeFields({
           </select>
         </label>
       )}
-      <label className="grid gap-1.5 text-sm font-medium">
-        অধ্যায় / টপিক
-        <input
-          aria-label="অধ্যায় / টপিক"
-          required={edit}
-          className={input}
-          list={`${id}-topics`}
-          value={value.topic}
-          placeholder={edit ? "অধ্যায় বাছুন বা লিখুন" : "সব অধ্যায়"}
-          onChange={(e) => onChange({ ...value, topic: e.target.value })}
-        />
-        <datalist id={`${id}-topics`}>
-          {topics.map((v) => (
-            <option key={v} value={v} />
-          ))}
-        </datalist>
-      </label>
+      <ScopeSelect
+        key={`topic:${value.category}:${value.subject}:${chapterGroup}`}
+        label="অধ্যায় / টপিক"
+        value={value.topic}
+        required={edit}
+        placeholder={edit ? "অধ্যায় নির্বাচন করুন" : "সব অধ্যায়"}
+        options={topics}
+        onChange={(topic) => onChange({ ...value, topic })}
+      />
     </>
   );
 }
