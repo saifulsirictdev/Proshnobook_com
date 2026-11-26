@@ -114,10 +114,13 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         passwordHash,
       },
     });
+  // This fixture represents an existing Student who already chose the identity.
+  await db.setting.create({ data: { key: "account-type:v1:student", value: "STUDENT" } });
   for (const type of ["TEACHER", "STUDENT", "CONTRIBUTOR"]) {
     const id = `join-${type.toLowerCase()}`;
     await db.user.create({ data: { id, email: `${id}@example.invalid`, name: "Synthetic Join", role: "STUDENT", passwordHash } });
-    await db.setting.create({ data: { key: "account-type:v1:" + id, value: "PENDING" } });
+    // Exercise both explicit pending and legacy/password accounts missing a marker.
+    if (type === "STUDENT") await db.setting.create({ data: { key: "account-type:v1:" + id, value: "PENDING" } });
   }
   const port = await unusedPort(),
     origin = `http://127.0.0.1:${port}`;
@@ -419,7 +422,7 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
         `PASS isolated ${role}: real password UI/CSRF/JWT session, private pages at 390/1280px, admin finance role boundary and one-account bonus`,
       );
     }
-    // Exercise the real post-verification onboarding UI with synthetic pending rows.
+    // Exercise real password onboarding for pending AND missing-marker accounts.
     // This tests application onboarding, not Google OAuth itself.
     for (const type of ["TEACHER", "STUDENT", "CONTRIBUTOR"]) {
       phase = `onboarding_${type.toLowerCase()}`;
