@@ -30,6 +30,7 @@ import {sscGeometryPlainBatches} from "./ssc-geometry-plain-batches";
 import {class8English2Batches} from "./class8-english2-batches";
 import {english1Batches} from "./class6-english1-batches";
 import {bgsBatches} from "./class6-bgs-batches";
+import {class7BgsBatches} from "./class7-bgs-batches";
 import {hscIctBatches} from "./hsc-ict-batches";
 import {scienceStarterBatches} from "./class6-science-batches";
 import {remainingMathBatches} from "./class6-remaining-batches";
@@ -72,6 +73,7 @@ function buildPreparedBatches():PreparedBatch[]{
   ...scienceStarterBatches(),
   ...hscIctBatches(),
   ...bgsBatches(),
+ ...class7BgsBatches(),
   ...english1Batches(),
   ...class8English2Batches(),
   ...sscMathBatches(),
