@@ -598,30 +598,6 @@ export default function BankImportWorkspace({
           >
             টেক্সট Parse করে staging-এ নিন
           </button>
-          <div
-            role="status"
-            aria-label="টেক্সট Parse-এর ফল"
-            aria-live="polite"
-            className="mt-3 rounded-xl border bg-sky-50 p-3 text-sm leading-7"
-          >
-            {parseNotice ||
-              "Parse চাপলে এখানেই ফল বা ভুলের কারণ দেখাবে। সফল হলে নিচের ৩ নং অংশে প্রশ্ন পাবেন।"}
-            {items.length > 0 && (
-              <button
-                type="button"
-                className={`${button} mt-2`}
-                onClick={() => {
-                  stagingHeading.current?.focus();
-                  stagingHeading.current?.scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Staged প্রশ্নগুলো দেখুন ({items.length})
-              </button>
-            )}
-          </div>
           <details className="mt-3 text-sm">
             <summary className="cursor-pointer font-semibold">
               সঠিক টেক্সটের ছোট নমুনা
@@ -645,6 +621,30 @@ export default function BankImportWorkspace({
             />
           </div>
         </details>
+        <div
+          role="status"
+          aria-label="টেক্সট Parse-এর ফল"
+          aria-live="polite"
+          className="mt-3 rounded-xl border bg-sky-50 p-3 text-sm leading-7"
+        >
+          {parseNotice ||
+            "Parse চাপলে এখানেই ফল বা ভুলের কারণ দেখাবে। সফল হলে নিচের ৩ নং অংশে প্রশ্ন পাবেন।"}
+          {items.length > 0 && (
+            <button
+              type="button"
+              className={`${button} mt-2`}
+              onClick={() => {
+                stagingHeading.current?.focus();
+                stagingHeading.current?.scrollIntoView({
+                  block: "start",
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Staged প্রশ্নগুলো দেখুন ({items.length})
+            </button>
+          )}
+        </div>
         {warnings.length > 0 && (
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs leading-6 text-amber-900">
             <b>যা যাচাই করতে হবে</b>

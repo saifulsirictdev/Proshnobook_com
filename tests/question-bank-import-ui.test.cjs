@@ -156,6 +156,13 @@ test("real Parse button reports missing inputs locally, stages pasted JSON, pres
     );
     await click("টেক্সট Parse করে");
     assert.equal(workerCalls, 1);
+    assert.equal(
+      document
+        .querySelector('[aria-label="টেক্সট Parse-এর ফল"]')
+        .closest("details"),
+      null,
+      "result remains visible when extracted text auto-collapses",
+    );
     assert.match(notice(), /2টি প্রশ্ন/);
     const heading = [...document.querySelectorAll("h2")].find((el) =>
       el.textContent.includes("৩. সংশোধন"),
