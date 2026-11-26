@@ -3,7 +3,7 @@ import { loadBank } from "@/lib/admin-question-bank";
 import { bankFiltersSchema } from "@/lib/admin-question-bank-schema";
 import { bankReply } from "@/lib/question-bank-http";
 export const dynamic = "force-dynamic";
-export function csvCell(value: unknown) {
+function csvCell(value: unknown) {
   let s = String(value ?? "");
   if (/^[\s]*[=+@-]/.test(s)) s = "\t" + s;
   return `"${s.replace(/"/g, '""')}"`;
