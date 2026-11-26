@@ -147,6 +147,62 @@ withDisposableWalletDatabase(async (db) => {
     }),
     0,
   );
+  const recovery = load("lib/question-bank-recovery.ts");
+  const questionCountBeforeRecovery = await db.question.count();
+  const incomplete = {
+    ...draft,
+    text: "অসম্পূর্ণ recovery",
+    options: { A: "", B: "", C: "", D: "" },
+    explanation: "",
+  };
+  const cmd = {
+    operation: "save",
+    slot: "new",
+    expectedRevision: null,
+    baseRevision: null,
+    draft: incomplete,
+  };
+  const recoveryWriters = await Promise.allSettled(
+    [1, 2].map(() => recovery.mutateQuestionRecovery("recovery-owner", cmd)),
+  );
+  assert.equal(
+    recoveryWriters.filter((r) => r.status === "fulfilled").length,
+    1,
+  );
+  const recovered = await recovery.loadQuestionRecovery(
+    "recovery-owner",
+    "new",
+  );
+  assert.equal(recovered.draft.text, incomplete.text);
+  assert.equal(await recovery.loadQuestionRecovery("other-owner", "new"), null);
+  const updates = await Promise.allSettled(
+    ["প্রথম", "দ্বিতীয়"].map((text) =>
+      recovery.mutateQuestionRecovery("recovery-owner", {
+        ...cmd,
+        expectedRevision: recovered.revision,
+        draft: { ...incomplete, text },
+      }),
+    ),
+  );
+  assert.equal(updates.filter((r) => r.status === "fulfilled").length, 1);
+  await assert.rejects(
+    recovery.mutateQuestionRecovery("recovery-owner", {
+      operation: "discard",
+      slot: "new",
+      expectedRevision: recovered.revision,
+    }),
+  );
+  const latest = await recovery.loadQuestionRecovery("recovery-owner", "new");
+  await recovery.mutateQuestionRecovery("recovery-owner", {
+    operation: "discard",
+    slot: "new",
+    expectedRevision: latest.revision,
+  });
+  assert.equal(
+    await recovery.loadQuestionRecovery("recovery-owner", "new"),
+    null,
+  );
+  assert.equal(await db.question.count(), questionCountBeforeRecovery);
   console.log(
     JSON.stringify({
       status: "PASS",
@@ -158,6 +214,7 @@ withDisposableWalletDatabase(async (db) => {
         "Trash exclusion",
         "Restore Pending",
         "atomic audit snapshots",
+        "private incomplete draft CAS, concurrent writers, stale delete and no Question writes",
       ],
     }),
   );

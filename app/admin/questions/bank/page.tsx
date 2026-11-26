@@ -14,7 +14,7 @@ export default async function QuestionBankPage({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  await admin();
+  const actor = await admin();
   const parsed = bankFiltersSchema.safeParse(await searchParams);
   const filters = parsed.success ? parsed.data : bankFiltersSchema.parse({});
   const [initial, scopes] = await Promise.all([
@@ -39,6 +39,7 @@ export default async function QuestionBankPage({
         initial={initial}
         initialFilters={filters}
         scopes={scopes}
+        draftOwner={actor.id}
       />
     </main>
   );
