@@ -16,6 +16,72 @@ async function runQuestionBankWorkflow({
   page.on("dialog", dialogs);
   const marker = "Synthetic isolated admin workspace question";
   try {
+    setPhase("bank_combined_class_subject_topic_read_aliases");
+    await db.question.createMany({
+      data: [
+        {
+          id: "synthetic-browser-alias-9",
+          category: "Class 9",
+          subject: "English 1st Paper",
+          topic: "Synthetic alias chapter",
+          text: "Synthetic alias first paper fixture",
+        },
+        {
+          id: "synthetic-browser-alias-10",
+          category: "Class 10",
+          subject: "English For Today",
+          topic: "Synthetic other alias chapter",
+          text: "Synthetic alias other chapter fixture",
+        },
+      ].map((row) => ({
+        ...row,
+        options: {},
+        correct: "",
+        explanation: "Synthetic solution",
+        approved: false,
+        source: "ADMIN_MANUAL",
+        difficulty: "EASY",
+        lang: "English",
+      })),
+    });
+    const aliasQuery = new URLSearchParams({
+      category: "SSC",
+      subject: "English For Today",
+      topic: "Synthetic alias chapter",
+    });
+    await page.goto(origin + "/admin/questions/bank?" + aliasQuery, {
+      waitUntil: "networkidle",
+    });
+    const aliasResponse = await context.request.get(
+      origin + "/api/admin/question-bank?" + aliasQuery,
+    );
+    assert.equal(aliasResponse.status(), 200);
+    const aliasData = await aliasResponse.json();
+    assert.equal(aliasData.total, 1);
+    assert.equal(aliasData.rows[0].id, "synthetic-browser-alias-9");
+    assert.ok(
+      await page
+        .getByLabel("অধ্যায় / টপিক", { exact: true })
+        .locator("option")
+        .evaluateAll((items) =>
+          items.some((item) => item.value === "Synthetic alias chapter"),
+        ),
+      "catalog English label exposes DB English alias chapters",
+    );
+    await page
+      .getByRole("link", {
+        name: "Class 9 · English Paper 1 workspace খুলুন",
+        exact: true,
+      })
+      .waitFor();
+    const exportAliases = await context.request.get(
+      origin + "/api/admin/question-bank/export?" + aliasQuery,
+    );
+    assert.equal(exportAliases.status(), 200);
+    assert.equal(
+      (await exportAliases.json()).items[0].id,
+      "synthetic-browser-alias-9",
+    );
     setPhase("bank_manual_editor_real_session");
     await page.goto(
       origin + "/admin/questions/bank?q=" + encodeURIComponent(marker),

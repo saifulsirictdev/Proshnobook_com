@@ -1,4 +1,5 @@
 import "server-only";
+import { bankReadScopeWhere } from "./question-bank-read-scope";
 import { createHash, randomUUID } from "node:crypto";
 import { Prisma } from "@prisma/client";
 import { db } from "@/lib/db";
@@ -55,9 +56,7 @@ export function bankWhere(f: BankFilters): Prisma.QuestionWhereInput {
             ? { startsWith: TRASH_SOURCE }
             : { not: { startsWith: TRASH_SOURCE } },
       },
-      ...(f.category ? [{ category: f.category }] : []),
-      ...(f.subject ? [{ subject: f.subject }] : []),
-      ...(f.topic ? [{ topic: f.topic }] : []),
+      ...bankReadScopeWhere(f.category, f.subject, f.topic),
       ...(f.difficulty !== "ALL" ? [{ difficulty: f.difficulty }] : []),
       ...(f.q
         ? [
