@@ -495,11 +495,24 @@ async function runQuestionBankWorkflow({
       "large extraction does not publish/write questions",
     );
     await page.setViewportSize({ width: 390, height: 900 });
-    assert.ok(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth + 2,
-      ),
-    );
+    const mobileOverflow = await page.evaluate(() => ({
+      width: innerWidth,
+      scroll: document.documentElement.scrollWidth,
+      offenders: [...document.querySelectorAll("main *")]
+        .filter((el) => el.getBoundingClientRect().right > innerWidth + 2)
+        .slice(0, 8)
+        .map((el) => ({
+          tag: el.tagName,
+          className: String(el.className).slice(0, 140),
+          width: Math.round(el.getBoundingClientRect().width),
+        })),
+    }));
+    if (mobileOverflow.scroll > mobileOverflow.width + 2)
+      console.error(
+        "::error::Synthetic import mobile layout dimensions " +
+          JSON.stringify(mobileOverflow),
+      );
+    assert.ok(mobileOverflow.scroll <= mobileOverflow.width + 2);
     await page.screenshot({
       path: out + "/large-file-mobile.png",
       fullPage: true,

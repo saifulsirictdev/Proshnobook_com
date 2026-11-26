@@ -19,11 +19,11 @@ import {
 import { ScopeFields, Preview } from "../workspace";
 import QuestionBankEditorialTools from "@/components/question-bank-editorial-tools";
 const input =
-  "w-full rounded-xl border border-slate-300 bg-white p-3 text-sm text-slate-900 focus:border-blue-500";
+  "w-full min-w-0 max-w-full rounded-xl border border-slate-300 bg-white p-3 text-sm text-slate-900 focus:border-blue-500";
 const button =
   "inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-4 py-2.5 text-sm font-semibold text-blue-800 disabled:opacity-50";
 const panel =
-  "space-y-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5";
+  "min-w-0 space-y-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5";
 type Entry = { entryId: string; draft: BankDraft };
 type Report = {
   entryId: string;
@@ -323,7 +323,7 @@ export default function BankImportWorkspace({
   const math = /গণিত|mathematics/i.test(scope.subject),
     templateQuery = `math=${math ? 1 : 0}`;
   return (
-    <div className="space-y-5 text-slate-900">
+    <div className="min-w-0 space-y-5 text-slate-900 [overflow-wrap:anywhere]">
       <Link
         href="/admin/questions/bank"
         className="text-sm font-semibold text-blue-700"
