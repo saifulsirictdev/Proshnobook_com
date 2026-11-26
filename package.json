@@ -11,12 +11,14 @@
     "db:security-deploy": "prisma db execute --file scripts/security-schema.sql --schema prisma/schema.prisma"
   },
   "dependencies": {
+    "@kovapdf/bijoy-unicode": "1.0.1",
     "@prisma/client": "^6",
     "@vercel/analytics": "^1.3.1",
     "@vercel/blob": "2.4.0",
     "bcryptjs": "^2.4.3",
     "framer-motion": "^11",
     "html-to-image": "^1.11.13",
+    "jszip": "3.10.1",
     "katex": "0.19.1",
     "lucide-react": "^0.400.0",
     "mammoth": "^1.9.0",

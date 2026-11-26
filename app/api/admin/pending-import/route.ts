@@ -35,11 +35,11 @@ export async function POST(req:Request){
      assertGrantedBatch(current,b.id,digest);
      const key=`preparedimport:v1:${digest}`;
      if(await tx.setting.findUnique({where:{key}}))return {inserted:0,skipped:b.records.length,alreadyImported:true};
-     const existing=await tx.question.findMany({where:{category:b.category,subject:b.subject,topic:b.topic},select:{text:true}});
-     const stems=new Set(existing.map(q=>normalizeStem(q.text)));const ids:string[]=[];
+     const existing=await tx.question.findMany({where:{OR:[{category:b.category,subject:b.subject,topic:b.topic},{id:{in:b.records.map(q=>preparedQuestionId(b,q))}}]},select:{id:true,text:true}});
+     const stems=new Set(existing.map(q=>normalizeStem(q.text)));const existingIds=new Set(existing.map(q=>q.id));const ids:string[]=[];
      for(const q of b.records){
       const stem=normalizeStem(q.text);if(stems.has(stem))continue;
-      const id=preparedQuestionId(b,q);
+      const id=preparedQuestionId(b,q);if(existingIds.has(id))continue;
       await tx.question.create({data:{id,category:b.category,subject:b.subject,topic:b.topic,lang:b.lang,text:q.text,options:q.options as Prisma.InputJsonValue,correct:q.correct,explanation:q.explanation,difficulty:q.difficulty,approved:false,source:`PREPARED_DRAFT:${digest}`}});
       ids.push(id);stems.add(stem);
      }

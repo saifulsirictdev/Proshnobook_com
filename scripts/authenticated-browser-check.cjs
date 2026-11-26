@@ -296,7 +296,14 @@ withDisposableWalletDatabase(async (db, { databaseUrl }) => {
           }
         }
       }
+      if (role !== "ADMIN") {
+        for (const path of ["/api/admin/question-bank", "/api/admin/question-bank/export", "/api/admin/question-bank/template"]) {
+          phase = `${role.toLowerCase()}_question_bank_api_denied`;
+          assert.equal((await context.request.get(origin + path)).status(), 403);
+        }
+      }
       if (role === "ADMIN") {
+        await require("./helpers/question-bank-authenticated-flow.cjs").runQuestionBankWorkflow({page, db, context, origin, setPhase: value => {phase = value;}});
         phase = "admin_mcq_import_pending_and_repeat";
         await page.goto(origin + "/admin/questions/import", { waitUntil: "networkidle" });
         await page.getByText("পুরোনো ষষ্ঠ শ্রেণির JSON import ও পরিসংখ্যান", { exact: true }).click();

@@ -2,13 +2,15 @@ import { BIOLOGY_FIGURE_PATHS } from "./ssc-biology-assets";
 /** Bounded, literal Markdown tables and our allowlisted versioned question SVGs only.
  * No HTML, attributes, arbitrary URLs, links or Markdown evaluation.
  */
-export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string}|{kind:"physics-image";alt:string;src:string}|{kind:"chemistry-image";alt:string;src:string}|{kind:"biology-image";alt:string;src:string};
+export type QuestionBlock = {kind:"text";text:string}|{kind:"table";headers:string[];rows:string[][]}|{kind:"statistics-image";alt:string;src:string}|{kind:"geometry-image";alt:string;src:string}|{kind:"physics-image";alt:string;src:string}|{kind:"chemistry-image";alt:string;src:string}|{kind:"biology-image";alt:string;src:string}|{kind:"uploaded-image";alt:string;src:string};
 export function questionBlocks(text:string):QuestionBlock[]{
  const lines=text.split("\n"),out:QuestionBlock[]=[];let buffer:string[]=[];
  const flush=()=>{if(buffer.length){out.push({kind:"text",text:buffer.join("\n")});buffer=[];}};
  const cells=(line:string)=>line.trim().slice(1,-1).split("|").map(s=>s.trim());
  const pipe=(line:string)=>/^\s*\|.*\|\s*$/.test(line)&&!line.includes("\\|");
  for(let i=0;i<lines.length;){
+  const uploaded=lines[i].trim().match(/^!\[([^\]\n]{1,300})\]\((\/api\/question-bank\/images\/[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}\.webp)\)$/);
+  if(uploaded){flush();out.push({kind:"uploaded-image",alt:uploaded[1],src:uploaded[2]});i++;continue;}
   const image=lines[i].trim().match(/^!\[([^\]\n]{0,100})\]\((https:\/\/proshnobook\.com\/question-bank\/ssc-math-ch17-v1\/[a-z0-9-]+\.svg)\)$/);
   if(image){flush();out.push({kind:"statistics-image",alt:image[1]||"পরিসংখ্যানের লেখচিত্র",src:image[2]});i++;continue;}
   // Canonical self-contained geometry assets also render in Chapter, quiz and answers.

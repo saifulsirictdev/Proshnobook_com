@@ -1,3 +1,5 @@
+// Historical Chemistry preservation scope excludes later Class 7 BGS additions;
+// current Class 7 shipping completeness is checked separately.
 // Historical non-Biology registry scope; full current totals are checked in prepared-library.test.cjs.
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),Module=require('node:module'),{createHash}=require('node:crypto'),{execFileSync}=require('node:child_process');
 function load(file,mocks={}){const m=new Module(file,module);m.paths=module.paths;m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:require(id);m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,jsx:ts.JsxEmit.React}}).outputText,file);return m.exports;}
@@ -65,7 +67,7 @@ test('real registry preserves chapter-1 drafts and the existing 19016 non-Chemis
  try{
   Module._resolveFilename=function(id,parent,...rest){return resolve.call(this,id.startsWith('@/')?path.resolve(id.slice(2)):id,parent,...rest);};
   require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,file);
-  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')),chem=all.filter(b=>b.id.startsWith('ssc-chemistry-ch1-'));
+  const all=require('../lib/prepared-question-batches.ts').preparedBatches().filter(b=>!b.id.startsWith('ssc-biology-')&&!b.id.startsWith('class7-bgs-')),chem=all.filter(b=>b.id.startsWith('ssc-chemistry-ch1-'));
   assert.equal(all.length,274);assert.equal(chem.length,5);assert.equal(chem.reduce((n,b)=>n+b.records.length,0),470);
   assert.equal(all.filter(b=>!b.id.startsWith('ssc-chemistry-')).reduce((n,b)=>n+b.records.length,0),19016);
  }finally{Module._resolveFilename=resolve;if(previous)require.extensions['.ts']=previous;else delete require.extensions['.ts'];}

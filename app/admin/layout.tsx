@@ -34,9 +34,9 @@ const QB_LINKS: QuickLink[] = [
     Icon: ListChecks,
   },
   {
-    href: "/admin/questions",
-    label: "প্রশ্ন ব্যাংক",
-    sub: "প্রশ্ন যোগ ও ইমপোর্ট",
+    href: "/admin/questions/bank",
+    label: "প্রশ্নব্যাংক স্টুডিও",
+    sub: "প্রশ্ন লিখুন, ছবি ও review",
     Icon: Database,
   },
   {

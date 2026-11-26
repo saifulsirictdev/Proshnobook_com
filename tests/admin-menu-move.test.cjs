@@ -79,7 +79,7 @@ test("admin menu contains all relocated destinations at the end without dashboar
   const routes = [...nav.matchAll(/href="([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(routes.slice(0, 4), [
     "/admin",
-    "/admin/questions",
+    "/admin/questions/bank",
     "/admin/posts",
     "/admin/blog",
   ]);

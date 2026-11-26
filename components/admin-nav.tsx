@@ -29,7 +29,7 @@ import {
 
 const items = [
   ["ড্যাশবোর্ড", "/admin", LayoutDashboard],
-  ["Question Bank", "/admin/questions", Library],
+  ["প্রশ্নব্যাংক স্টুডিও", "/admin/questions/bank", Library],
   ["Posts", "/admin/posts", Newspaper],
   ["New post", "/admin/blog", FilePlus2],
   ["রেডি প্রশ্নপত্র", "/admin/ready-papers", FileText],

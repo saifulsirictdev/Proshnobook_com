@@ -28,6 +28,7 @@ export default async function MCQImport({searchParams}:{searchParams:Promise<{ca
   const recent = batches.flatMap(b => { try { const v = JSON.parse(b.value); return [{ ...v, key: b.key }]; } catch { return []; } }).sort((a,b) => String(b.createdAt).localeCompare(String(a.createdAt)));
   return <main className="mx-auto max-w-6xl space-y-6 p-6">
     <Link className="qm-action-link" href="/admin/questions">← প্রশ্ন ব্যবস্থাপনা</Link>
+    <Link href="/admin/questions/bank/import" className="qm-action-link">নিজের Word / JSON ফাইল review-import করুন →</Link>
     <h1 className="text-3xl font-bold">শ্রেণি, বিষয় ও অধ্যায়ভিত্তিক প্রশ্ন import</h1>
     <PreparedLibrary initialGrade={params.grade} initialCategory={params.category} initialSubject={params.subject} englishItems={Object.fromEntries([...englishFirstGrades.map(grade=>[grade,<EnglishQuestionItems key={grade} grade={grade}/>]),...englishFirstGrades.map(grade=>[`${grade}:2`,<EnglishQuestionItems key={`${grade}:2`} grade={grade} paper={2}/>])])} catalog={importCatalog} batches={summaries} savedIds={savedIds} />
     <JsonUploadForm catalog={uploadCatalog} />
