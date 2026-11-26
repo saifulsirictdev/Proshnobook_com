@@ -80,3 +80,11 @@ test("server login actions honor only sanitized credential/Google return paths",
   await actionModule.exports.googleLogin(fd);
   assert.equal(calls[2].options.redirectTo, "/auth/landing?next=%2F");
 });
+
+test("identity landing helper rejects external targets and onboarding/landing loops", () => {
+  for (const bad of ["//evil.invalid", "https://evil.invalid", "/auth/landing?next=/wallet", "/auth/onboarding"]) {
+    assert.equal(helperPath(bad), "/auth/landing?next=%2F");
+  }
+  assert.equal(helperPath("/model-test/one?mode=practice"), "/auth/landing?next=%2Fmodel-test%2Fone%3Fmode%3Dpractice");
+});
+function helperPath(raw) { return m.exports.loginLandingPath(raw); }

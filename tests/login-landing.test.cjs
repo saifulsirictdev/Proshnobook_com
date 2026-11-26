@@ -23,21 +23,17 @@ async function destination({
   role = "TEACHER",
   next = "/wallet",
   missing = false,
+  identity = null,
 } = {}) {
   const page = load("app/auth/landing/page.tsx", {
     "@/lib/account-type": load("lib/account-type.ts", {}),
     "@/auth": {
       auth: async () => (id ? { user: { id, role: "ADMIN" } } : null),
     },
-    "@/lib/db": {
-      db: {
-        setting: { findUnique: async () => null },
-        user: {
-          findUnique: async ({ where }) => {
-            assert.equal(where.id, id);
-            return missing ? null : { role };
-          },
-        },
+    "@/lib/account-onboarding": {
+      accountChoiceState: async (userId) => {
+        assert.equal(userId, id);
+        return missing ? null : { role, identity, needsChoice: role === "STUDENT" && (identity === null || identity === "PENDING") };
       },
     },
     "@/lib/login-redirect": helper,
@@ -57,7 +53,7 @@ async function destination({
 }
 test("fresh ADMIN role lands on official profile; other roles preserve safe destinations", async () => {
   assert.equal(await destination({ role: "ADMIN" }), "/teachers/proshnobook");
-  assert.equal(await destination({ role: "STUDENT" }), "/model-test");
+  assert.equal(await destination({ role: "STUDENT", identity: "STUDENT" }), "/model-test");
   for (const role of ["TEACHER"]) {
     assert.equal(await destination({ role }), "/wallet");
   }
@@ -72,4 +68,10 @@ test("landing rejects unsafe destinations and loops; anonymous/deleted users get
   }
   assert.equal(await destination({ id: null }), "/login?next=%2Fwallet");
   assert.equal(await destination({ missing: true }), "/login");
+});
+
+test("unclassified Student logins require the three-option onboarding, saved identities do not", async () => {
+  for (const identity of [null, "PENDING"]) assert.equal(await destination({role:"STUDENT",identity}), "/auth/onboarding");
+  for (const identity of ["TEACHER", "CONTRIBUTOR"]) assert.equal(await destination({role:"TEACHER",identity}), "/dashboard");
+  assert.equal(await destination({role:"ADMIN",identity:"PENDING"}), "/teachers/proshnobook");
 });

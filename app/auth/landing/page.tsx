@@ -1,6 +1,6 @@
-import { ACCOUNT_TYPE_PREFIX, accountType, accountDestination } from "@/lib/account-type";
+import { accountType, accountDestination } from "@/lib/account-type";
 import { auth } from "@/auth";
-import { db } from "@/lib/db";
+import { accountChoiceState } from "@/lib/account-onboarding";
 import { safeLoginRedirect } from "@/lib/login-redirect";
 import { redirect } from "next/navigation";
 
@@ -21,15 +21,11 @@ export default async function LoginLanding({
       : target;
   const id = (await auth())?.user?.id;
   if (!id) redirect(`/login?${new URLSearchParams({ next: fallback })}`);
-  const user = await db.user.findUnique({
-    where: { id },
-    select: { role: true },
-  });
+  const user = await accountChoiceState(id);
   if (!user) redirect("/login");
   if (user.role === "ADMIN") redirect("/teachers/proshnobook");
-  const identity = await db.setting.findUnique({ where: { key: ACCOUNT_TYPE_PREFIX + id } });
-  if (identity?.value === "PENDING") redirect("/auth/onboarding");
-  const type = accountType(identity?.value);
+  if (user.needsChoice) redirect("/auth/onboarding");
+  const type = accountType(user.identity);
   if (user.role === "STUDENT") redirect("/model-test");
   redirect(type ? accountDestination(type) : fallback);
 }

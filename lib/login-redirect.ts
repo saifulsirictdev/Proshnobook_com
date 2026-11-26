@@ -24,3 +24,11 @@ export function safeLoginRedirect(raw: unknown): string {
     return "/";
   }
 }
+
+/** All login entry points pass through server-side identity resolution. */
+export function loginLandingPath(raw: unknown): string {
+  const safe = safeLoginRedirect(raw);
+  const path = new URL(safe, "https://local.invalid").pathname;
+  const next = path === "/auth/landing" || path === "/auth/onboarding" ? "/" : safe;
+  return `/auth/landing?${new URLSearchParams({ next })}`;
+}
