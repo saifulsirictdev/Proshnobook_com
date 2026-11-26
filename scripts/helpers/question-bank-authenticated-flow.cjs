@@ -27,6 +27,55 @@ async function runQuestionBankWorkflow({
       .getByRole("button", { name: "নতুন প্রশ্ন লিখুন", exact: true })
       .click();
     const editor = page.getByRole("region", { name: "প্রশ্ন Editor" });
+    setPhase("bank_recovery_incomplete_autosave_no_live_write");
+    const questionCountBeforeRecovery = await db.question.count();
+    await editor
+      .getByLabel("প্রশ্ন", { exact: true })
+      .fill(marker + " recoverable draft");
+    await editor
+      .getByRole("region", { name: "খসড়া সুরক্ষা" })
+      .getByRole("status")
+      .filter({ hasText: "Recovery server-এ সেভ হয়েছে" })
+      .waitFor();
+    assert.equal(await db.question.count(), questionCountBeforeRecovery);
+    assert.equal(
+      await db.setting.count({
+        where: { key: { startsWith: "question-bank-recovery:v1:" } },
+      }),
+      1,
+    );
+    setPhase("bank_recovery_reload_explicit_restore");
+    await page.reload({ waitUntil: "networkidle" });
+    await page
+      .getByRole("button", { name: "নতুন প্রশ্ন লিখুন", exact: true })
+      .click();
+    const recovery = editor.getByRole("region", { name: "খসড়া সুরক্ষা" });
+    await recovery.getByText("Recovery পাওয়া গেছে", { exact: false }).waitFor();
+    assert.equal(
+      await editor.getByLabel("প্রশ্ন", { exact: true }).inputValue(),
+      "",
+    );
+    await recovery
+      .locator("summary")
+      .filter({ hasText: "Server recovery" })
+      .click();
+    await recovery
+      .getByRole("button", {
+        name: "Server recovery Editor-এ বসান",
+        exact: true,
+      })
+      .click();
+    assert.equal(
+      await editor.getByLabel("প্রশ্ন", { exact: true }).inputValue(),
+      marker + " recoverable draft",
+    );
+    assert.equal(await db.question.count(), questionCountBeforeRecovery);
+    await editor
+      .getByRole("region", { name: "প্রশ্নের quality checklist" })
+      .getByText("সংশোধন দরকার", { exact: true })
+      .first()
+      .waitFor();
+    setPhase("bank_manual_editor_real_session");
     await editor
       .getByLabel("শ্রেণি / ক্যাটাগরি", { exact: true })
       .fill("Class 6");
@@ -41,11 +90,9 @@ async function runQuestionBankWorkflow({
       .getByLabel("উত্তর / সমাধান ও ব্যাখ্যা", { exact: true })
       .fill("Synthetic original solution");
     setPhase("bank_unicode_preview_apply_undo");
-    const tools = editor
-      .locator("details")
-      .filter({
-        has: page.locator("summary", { hasText: "Unicode conversion" }),
-      });
+    const tools = editor.locator("details").filter({
+      has: page.locator("summary", { hasText: "Unicode conversion" }),
+    });
     await tools.locator("summary").click();
     await tools
       .getByRole("button", { name: "Editor থেকে টেক্সট নিন", exact: true })
@@ -94,16 +141,21 @@ async function runQuestionBankWorkflow({
         .png()
         .toBuffer();
     setPhase("bank_image_file_input");
-    const uploadResponse = page.waitForResponse(response => response.url() === origin + "/api/admin/question-bank/image" && response.request().method() === "POST");
-    await editor
-      .getByLabel("ছবি আপলোড করুন", { exact: true })
-      .setInputFiles({
-        name: "synthetic.png",
-        mimeType: "image/png",
-        buffer: png,
-      });
+    const uploadResponse = page.waitForResponse(
+      (response) =>
+        response.url() === origin + "/api/admin/question-bank/image" &&
+        response.request().method() === "POST",
+    );
+    await editor.getByLabel("ছবি আপলোড করুন", { exact: true }).setInputFiles({
+      name: "synthetic.png",
+      mimeType: "image/png",
+      buffer: png,
+    });
     const uploadStatus = (await uploadResponse).status();
-    if (uploadStatus !== 200) console.error(`::error::Synthetic bank raster upload HTTP ${uploadStatus}`);
+    if (uploadStatus !== 200)
+      console.error(
+        `::error::Synthetic bank raster upload HTTP ${uploadStatus}`,
+      );
     assert.equal(uploadStatus, 200);
     setPhase("bank_image_insert_button");
     await editor
@@ -132,7 +184,9 @@ async function runQuestionBankWorkflow({
       });
     }
     setPhase("bank_editor_review_and_save");
-    await editor.getByRole("checkbox", {name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/}).check();
+    await editor
+      .getByRole("checkbox", { name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/ })
+      .check();
     await editor
       .getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true })
       .click();
@@ -145,6 +199,13 @@ async function runQuestionBankWorkflow({
     });
     assert.equal(q.approved, false);
     assert.equal(q.source, "ADMIN_MANUAL");
+    assert.equal(
+      await db.setting.count({
+        where: { key: { startsWith: "question-bank-recovery:v1:" } },
+      }),
+      0,
+      "saved editor recovery was cleared",
+    );
     assert.match(q.text, /\/api\/question-bank\/images\//);
     setPhase("bank_review_approve_edit_pending");
     await page
@@ -169,7 +230,9 @@ async function runQuestionBankWorkflow({
     await editor
       .getByLabel("উত্তর / সমাধান ও ব্যাখ্যা", { exact: true })
       .fill("Synthetic revised solution");
-    await editor.getByRole("checkbox", {name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/}).check();
+    await editor
+      .getByRole("checkbox", { name: /প্রিভিউ ও শ্রেণিবিন্যাস দেখেছি/ })
+      .check();
     await editor
       .getByRole("button", { name: "Pending হিসেবে সেভ করুন", exact: true })
       .click();
@@ -249,14 +312,12 @@ async function runQuestionBankWorkflow({
       .getByLabel("অধ্যায় / টপিক", { exact: true })
       .fill("Synthetic Word chapter");
     const upload = () =>
-      page
-        .getByLabel("Word বা JSON ফাইল", { exact: true })
-        .setInputFiles({
-          name: "synthetic-template.docx",
-          mimeType:
-            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-          buffer,
-        });
+      page.getByLabel("Word বা JSON ফাইল", { exact: true }).setInputFiles({
+        name: "synthetic-template.docx",
+        mimeType:
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        buffer,
+      });
     await upload();
     await page
       .getByRole("heading", {
@@ -348,11 +409,25 @@ async function runQuestionBankWorkflow({
     );
   } catch (error) {
     // Emit only allowlisted diagnostic fields, never raw browser/server/DB errors.
-    const location = /question-bank-authenticated-flow\.cjs:(\d+):(\d+)/.exec(error.stack ?? "");
-    const kind = ["AssertionError", "TimeoutError"].includes(error.name) ? error.name : "Error";
-    const reasons = [...new Set((error.message ?? "").match(/intercepts pointer events|strict mode violation|not visible|not stable|not enabled|outside of the viewport/g) ?? [])].join(",");
-    console.error(`::error::Synthetic bank workflow ${kind} at helper line ${location?.[1] ?? "unknown"}; ${reasons || "no allowlisted browser detail"}`);
-    await page.screenshot({path: out + "/failure.png", fullPage: true}).catch(() => {});
+    const location = /question-bank-authenticated-flow\.cjs:(\d+):(\d+)/.exec(
+      error.stack ?? "",
+    );
+    const kind = ["AssertionError", "TimeoutError"].includes(error.name)
+      ? error.name
+      : "Error";
+    const reasons = [
+      ...new Set(
+        (error.message ?? "").match(
+          /intercepts pointer events|strict mode violation|not visible|not stable|not enabled|outside of the viewport/g,
+        ) ?? [],
+      ),
+    ].join(",");
+    console.error(
+      `::error::Synthetic bank workflow ${kind} at helper line ${location?.[1] ?? "unknown"}; ${reasons || "no allowlisted browser detail"}`,
+    );
+    await page
+      .screenshot({ path: out + "/failure.png", fullPage: true })
+      .catch(() => {});
     throw error;
   } finally {
     page.off("dialog", dialogs);

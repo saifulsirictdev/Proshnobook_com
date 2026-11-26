@@ -1,6 +1,10 @@
 "use client";
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
+import QuestionBankRecovery, {
+  type RecoveryHandle,
+} from "@/components/question-bank-recovery";
+import QuestionBankQualityChecklist from "@/components/question-bank-quality-checklist";
 import QuestionBankEditorialTools from "@/components/question-bank-editorial-tools";
 import {
   Plus,
@@ -325,15 +329,18 @@ function Editor({
   row,
   scope,
   scopes,
+  draftOwner,
   close,
   saved,
 }: {
   row: BankRow | null;
   scope: Scope;
   scopes: Scope[];
+  draftOwner?: string;
   close: () => void;
-  saved: () => void;
+  saved: (recoveryWarning?: boolean) => void;
 }) {
+  const recovery = useRef<RecoveryHandle | null>(null);
   const [draft, setDraft] = useState(() => draftFrom(row, scope));
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
@@ -454,7 +461,8 @@ function Editor({
             : { operation: "create", draft },
         ),
       });
-      saved();
+      const clean = await recovery.current?.clearAfterSave();
+      saved(clean === false);
     } catch (e) {
       setMessage((e as Error).message);
     } finally {
@@ -482,13 +490,35 @@ function Editor({
           className={button}
           disabled={busy || uploading}
           onClick={() => {
-            if (!dirty || confirm("সেভ না করা পরিবর্তন বাতিল করবেন?")) close();
+            if (
+              !dirty ||
+              confirm(
+                "Editor বন্ধ করবেন? Live/Pending save হয়নি। আগে সেভ হওয়া recovery copy থাকলে থাকবে; একেবারে শেষ পরিবর্তন recovery-তে না-ও পৌঁছাতে পারে।",
+              )
+            )
+              close();
           }}
         >
           <X size={18} />
           বন্ধ
         </button>
       </div>
+      {draftOwner && (
+        <QuestionBankRecovery
+          ref={recovery}
+          owner={draftOwner}
+          slot={row?.id ?? "new"}
+          baseRevision={row?.revision ?? null}
+          draft={draft}
+          dirty={dirty}
+          busy={busy || uploading}
+          restore={(value) => {
+            setDraft(value);
+            setConsent(false);
+            setMessage("");
+          }}
+        />
+      )}
       <form
         onSubmit={submit}
         className="grid items-start gap-5 xl:grid-cols-[1.12fr_1fr]"
@@ -882,6 +912,7 @@ function Editor({
               {message}
             </div>
           )}
+          <QuestionBankQualityChecklist draft={draft} />
           <div className={`${panel} space-y-4`}>
             <label className="flex items-start gap-2 text-sm leading-6">
               <input
@@ -933,10 +964,12 @@ export default function QuestionBankWorkspace({
   initial,
   initialFilters,
   scopes,
+  draftOwner,
 }: {
   initial: Data;
   initialFilters: BankFilters;
   scopes: Scope[];
+  draftOwner?: string;
 }) {
   const [data, setData] = useState(initial);
   const [filters, setFilters] = useState(initialFilters);
@@ -1046,17 +1079,21 @@ export default function QuestionBankWorkspace({
   if (editor)
     return (
       <Editor
-        key={editor === "new" ? "new" : editor.revision}
+        key={`${draftOwner ?? "fixture"}:${editor === "new" ? "new" : editor.revision}`}
         row={editor === "new" ? null : editor}
         scope={applied}
         scopes={scopes}
+        draftOwner={draftOwner}
         close={() => setEditor(null)}
-        saved={() => {
+        saved={(recoveryWarning) => {
           setEditor(null);
           setPreview(null);
           void refresh().then(() =>
             setMessage(
-              "প্রশ্ন Pending হিসেবে সেভ হয়েছে। প্রকাশ করতে আলাদা review ও অনুমোদন দিন।",
+              "প্রশ্ন Pending হিসেবে সেভ হয়েছে। প্রকাশ করতে আলাদা review ও অনুমোদন দিন।" +
+                (recoveryWarning
+                  ? " Recovery copy সরানো নিশ্চিত হয়নি; পরের বার পুরোনো recovery দেখালে timestamp মিলিয়ে সিদ্ধান্ত নিন।"
+                  : ""),
             ),
           );
         }}
