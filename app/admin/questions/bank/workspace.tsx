@@ -25,7 +25,12 @@ import {
   Save,
 } from "lucide-react";
 import MathText from "@/components/MathText";
-import { NCTB_CLASSES } from "@/lib/nctb-data";
+import {
+  BANK_BUILDER_CATEGORIES,
+  bankCategoryLabel,
+  bankCategoryAliases,
+  bankScopeCatalog,
+} from "@/lib/question-bank-scope-options";
 import {
   ACADEMIC_SUBJECT_GROUPS,
   hscGroupSubjects,
@@ -55,15 +60,6 @@ const primary = `${button} !border-blue-700 !bg-blue-700 !text-white hover:!bg-b
 const panel =
   "rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-5";
 const unique = (items: string[]) => [...new Set(items.filter(Boolean))];
-function catalog(category: string) {
-  if (/^(SSC|9|10|Class 9|Class 10|Class 9-10)$/.test(category))
-    return NCTB_CLASSES.find((c) => c.class === "Class 9");
-  if (/^(HSC|11|12|Class 11|Class 12|Class 11-12)$/.test(category))
-    return NCTB_CLASSES.find((c) => c.class === "Class 11-12");
-  return NCTB_CLASSES.find(
-    (c) => c.class === category || c.class === `Class ${category}`,
-  );
-}
 function ScopeSelect({
   label,
   value,
@@ -71,6 +67,7 @@ function ScopeSelect({
   onChange,
   placeholder,
   required,
+  optionLabel = (value: string) => value,
 }: {
   label: string;
   value: string;
@@ -78,6 +75,7 @@ function ScopeSelect({
   onChange: (value: string) => void;
   placeholder: string;
   required: boolean;
+  optionLabel?: (value: string) => string;
 }) {
   const [custom, setCustom] = useState(false);
   const choices = unique([...options, ...(value ? [value] : [])]);
@@ -103,7 +101,7 @@ function ScopeSelect({
           <option value="">{placeholder}</option>
           {choices.map((choice) => (
             <option key={choice} value={choice}>
-              {choice}
+              {optionLabel(choice)}
             </option>
           ))}
           <option value="__custom__">তালিকার বাইরে / নতুন নাম লিখুন…</option>
@@ -145,13 +143,18 @@ export function ScopeFields({
 }) {
   const [stream, setStream] = useState("");
   const [chapterGroup, setChapterGroup] = useState("");
-  const c = catalog(value.category);
+  const [examId, setExamId] = useState(""),
+    [branchId, setBranchId] = useState("");
+  const {
+    catalog: c,
+    exams,
+    branches,
+  } = bankScopeCatalog(value.category, examId, branchId);
+  const aliases = bankCategoryAliases(value.category);
   const s = c?.subjects.find((s) => s.name === value.subject);
   const subjects = unique([
     ...(c?.subjects.map((s) => s.name) ?? []),
-    ...scopes
-      .filter((s) => s.category === value.category)
-      .map((s) => s.subject),
+    ...scopes.filter((s) => aliases.includes(s.category)).map((s) => s.subject),
   ]);
   const grouped = /9|10|SSC|11|12|HSC/.test(value.category);
   const visibleSubjects = stream
@@ -166,7 +169,7 @@ export function ScopeFields({
       .flatMap((g) => g.topics) ?? []),
     ...scopes
       .filter(
-        (s) => s.category === value.category && s.subject === value.subject,
+        (s) => aliases.includes(s.category) && s.subject === value.subject,
       )
       .map((s) => s.topic),
   ]);
@@ -174,23 +177,78 @@ export function ScopeFields({
     <>
       <ScopeSelect
         label="শ্রেণি / ক্যাটাগরি"
+        optionLabel={bankCategoryLabel}
         value={value.category}
         required={edit}
         placeholder={edit ? "শ্রেণি নির্বাচন করুন" : "সব শ্রেণি"}
         options={unique([
-          ...NCTB_CLASSES.map((c) => c.class),
-          "SSC",
-          "HSC",
-          "Admission",
-          "Job",
+          ...BANK_BUILDER_CATEGORIES,
           ...scopes.map((s) => s.category),
         ])}
         onChange={(category) => {
           setStream("");
           setChapterGroup("");
+          setExamId("");
+          setBranchId("");
           onChange({ category, subject: "", topic: "" });
         }}
       />
+      {!!exams.length && (
+        <>
+          <label className="grid min-w-0 gap-1.5 text-sm font-medium">
+            পরীক্ষার প্রস্তুতির ধরন
+            <select
+              aria-label="পরীক্ষার প্রস্তুতির ধরন"
+              className={input}
+              value={examId}
+              onChange={(event) => {
+                setExamId(event.target.value);
+                setBranchId("");
+                setChapterGroup("");
+                onChange({ ...value, subject: "", topic: "" });
+              }}
+            >
+              <option value="">
+                {value.category === "Job"
+                  ? "পরীক্ষা নির্বাচন করুন"
+                  : "সব প্রস্তুতির বিষয়"}
+              </option>
+              {exams.map((exam) => (
+                <option key={exam.id} value={exam.id}>
+                  {exam.name}
+                </option>
+              ))}
+            </select>
+            <span className="text-xs font-normal text-slate-500">
+              প্রশ্ন তৈরির একই প্রস্তুতি-তালিকা; সর্বশেষ অফিসিয়াল সিলেবাসের
+              নিশ্চয়তা নয়। পরীক্ষা শুধু বিষয়–টপিক বাছতে সাহায্য করে, আলাদা
+              exam/year evidence নয়।
+            </span>
+          </label>
+          {!!branches.length && (
+            <label className="grid min-w-0 gap-1.5 text-sm font-medium">
+              NTRCA শাখা
+              <select
+                aria-label="NTRCA শাখা"
+                className={input}
+                value={branchId}
+                onChange={(event) => {
+                  setBranchId(event.target.value);
+                  setChapterGroup("");
+                  onChange({ ...value, subject: "", topic: "" });
+                }}
+              >
+                <option value="">School / College বাছুন</option>
+                {branches.map((branch) => (
+                  <option key={branch.id} value={branch.id}>
+                    {branch.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+        </>
+      )}
       {grouped && (
         <label className="grid gap-1.5 text-sm font-medium">
           বিভাগ

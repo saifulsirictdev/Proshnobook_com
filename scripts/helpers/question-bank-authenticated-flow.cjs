@@ -305,6 +305,43 @@ async function runQuestionBankWorkflow({
     await page.goto(origin + "/admin/questions/bank/import", {
       waitUntil: "networkidle",
     });
+    setPhase("bank_scope_catalog_matches_user_builder");
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Job");
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("bcs-preliminary");
+    const jobCatalog = require("../../lib/job-syllabuses.json");
+    for (const subject of jobCatalog.exams[0].subjects)
+      assert.ok(
+        await page
+          .getByLabel("বিষয়", { exact: true })
+          .locator("option")
+          .evaluateAll(
+            (items, name) => items.some((item) => item.value === name),
+            subject.name,
+          ),
+      );
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("ntrca");
+    await page.getByLabel("NTRCA শাখা", { exact: true }).selectOption("school");
+    const schoolSubject = jobCatalog.exams
+      .find((exam) => exam.id === "ntrca")
+      .branches.find((branch) => branch.id === "school").subjects[0];
+    await chooseBankScopeField(page, "বিষয়", schoolSubject.name);
+    await chooseBankScopeField(page, "অধ্যায় / টপিক", schoolSubject.topics[0]);
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Admission");
+    await page
+      .getByLabel("পরীক্ষার প্রস্তুতির ধরন", { exact: true })
+      .selectOption("medical-dental");
+    await chooseBankScopeField(page, "বিষয়", "জীববিজ্ঞান");
+    assert.ok(
+      (await page
+        .getByLabel("অধ্যায় / টপিক", { exact: true })
+        .locator("option")
+        .count()) > 2,
+    );
+    await chooseBankScopeField(page, "শ্রেণি / ক্যাটাগরি", "Class 6");
     setPhase("bank_txt_read_before_scope_and_native_dropdowns");
     assert.equal(
       await page
