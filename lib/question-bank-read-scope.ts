@@ -35,7 +35,16 @@ export function bankReadScopeWhere(
     ...(category
       ? [{ category: { in: bankReadCategoryAliases(category) } }]
       : []),
-    ...(subject ? [{ subject: { in: bankReadSubjectAliases(subject) } }] : []),
+    ...(subject
+      ? [
+          {
+            subject: {
+              in: bankReadSubjectAliases(subject),
+              mode: "insensitive" as const,
+            },
+          },
+        ]
+      : []),
     ...(topic ? [{ topic }] : []),
   ];
 }

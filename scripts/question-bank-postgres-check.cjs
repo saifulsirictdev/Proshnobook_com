@@ -208,7 +208,7 @@ withDisposableWalletDatabase(async (db) => {
     otherTopic = "Synthetic other chapter";
   const readRows = [
     ["nine", "Class 9", "English 1st Paper", readTopic, true, false],
-    ["ten", "Class 10", "English For Today", readTopic, false, false],
+    ["ten", "Class 10", "english for today", readTopic, false, false],
     ["ssc", "SSC", "English First Paper", otherTopic, true, false],
     ["paper2", "Class 9", "English 2nd Paper", readTopic, true, false],
     ["hsc", "Class 11-12", "English For Today", readTopic, true, false],
