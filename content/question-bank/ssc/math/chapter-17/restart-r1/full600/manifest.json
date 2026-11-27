@@ -1,0 +1,2376 @@
+{
+  "status": "RECONSTRUCTED_600_VALIDATION_AND_REMOTE_CHECKPOINT_REQUIRED",
+  "target": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "reconstructed": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "totalReconstructed": 600,
+  "remaining": 0,
+  "approved": 0,
+  "published": 0,
+  "teacherCertified": false,
+  "assetsDeployed": false,
+  "files": [
+    {
+      "file": "content/question-bank/ssc/math/chapter-17/restart-r1/full600/mcq-1.json",
+      "count": 150,
+      "kind": "MCQ",
+      "sha256": "ea66c3e3800cf7bcc59fee47388f6becb73204e41bfccabdc85577277a701907"
+    },
+    {
+      "file": "content/question-bank/ssc/math/chapter-17/restart-r1/full600/mcq-2.json",
+      "count": 150,
+      "kind": "MCQ",
+      "sha256": "92fde8609855bffc696b889323edf32a676b3b2168a357a33098b2f5f7812a13"
+    },
+    {
+      "file": "content/question-bank/ssc/math/chapter-17/restart-r1/full600/cq-1.json",
+      "count": 100,
+      "kind": "CQ",
+      "sha256": "bcad1b8814f9c35aa1b992d1f4d30dac17a251a47062f3e74d0f8da4ba093774"
+    },
+    {
+      "file": "content/question-bank/ssc/math/chapter-17/restart-r1/full600/cq-2.json",
+      "count": 100,
+      "kind": "CQ",
+      "sha256": "0132a773103f9b4bb945d7e0dea62915b78f93416f7ae03d7de6ee7327118765"
+    },
+    {
+      "file": "content/question-bank/ssc/math/chapter-17/restart-r1/full600/sq.json",
+      "count": 100,
+      "kind": "SQ",
+      "sha256": "7eec650e4a4dc693e53c03ee2583bfa7d4132fc9ad83f255f4875c17eef112f7"
+    }
+  ],
+  "graphCount": 57,
+  "graphs": [
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "31/2",
+          0
+        ],
+        [
+          "51/2",
+          6
+        ],
+        [
+          "71/2",
+          12
+        ],
+        [
+          "91/2",
+          20
+        ],
+        [
+          "111/2",
+          10
+        ],
+        [
+          "131/2",
+          2
+        ],
+        [
+          "151/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-001-polygon.svg",
+      "sha256": "6c9bb19231096b42a4ed5074b9371c43eee5ab58ed3a1c29ab0c8df42d6464bb",
+      "xmin": 15.5,
+      "xmax": 75.5,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "99/2",
+          0
+        ],
+        [
+          "119/2",
+          3
+        ],
+        [
+          "139/2",
+          9
+        ],
+        [
+          "159/2",
+          18
+        ],
+        [
+          "179/2",
+          27
+        ],
+        [
+          "199/2",
+          30
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-002-less.svg",
+      "sha256": "5a005dbeeb3408cd6dc697d8fffc08e3e741518bbda46401f3f0eece435783ad",
+      "xmin": 49.5,
+      "xmax": 99.5,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "48",
+          0
+        ],
+        [
+          "53",
+          8
+        ],
+        [
+          "58",
+          12
+        ],
+        [
+          "63",
+          20
+        ],
+        [
+          "68",
+          10
+        ],
+        [
+          "73",
+          6
+        ],
+        [
+          "78",
+          4
+        ],
+        [
+          "83",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-003-polygon.svg",
+      "sha256": "d1f567d35c39cc9ef6f71c1c340009a43f423c20ebc04ebb211818d05dd69178",
+      "xmin": 48.0,
+      "xmax": 83.0,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "21/2",
+          0
+        ],
+        [
+          "41/2",
+          3
+        ],
+        [
+          "61/2",
+          8
+        ],
+        [
+          "81/2",
+          19
+        ],
+        [
+          "101/2",
+          23
+        ],
+        [
+          "121/2",
+          25
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-004-less.svg",
+      "sha256": "759b2d4545c43dc4f430ed3d55d9996afcfa14030d1ff166bbfa878d40c38c43",
+      "xmin": 10.5,
+      "xmax": 60.5,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "9",
+          0
+        ],
+        [
+          "14",
+          4
+        ],
+        [
+          "19",
+          6
+        ],
+        [
+          "24",
+          13
+        ],
+        [
+          "29",
+          5
+        ],
+        [
+          "34",
+          3
+        ],
+        [
+          "39",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-005-polygon.svg",
+      "sha256": "7e3098e80eed18b5d8b28d18ff321133ad67a0e63cd39a0fd3d2cba64f9421da",
+      "xmin": 9.0,
+      "xmax": 39.0,
+      "ymax": 15,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "71/2",
+          0
+        ],
+        [
+          "85/2",
+          5
+        ],
+        [
+          "99/2",
+          7
+        ],
+        [
+          "113/2",
+          13
+        ],
+        [
+          "127/2",
+          16
+        ],
+        [
+          "141/2",
+          20
+        ],
+        [
+          "155/2",
+          27
+        ],
+        [
+          "169/2",
+          29
+        ],
+        [
+          "183/2",
+          32
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-007-less.svg",
+      "sha256": "b92191248629b06010cc3e546bc2a3f825d3e6d6b783c9adf8d0cf4b2cf644ce",
+      "xmin": 35.5,
+      "xmax": 91.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "27/2",
+          0
+        ],
+        [
+          "37/2",
+          6
+        ],
+        [
+          "47/2",
+          14
+        ],
+        [
+          "57/2",
+          31
+        ],
+        [
+          "67/2",
+          38
+        ],
+        [
+          "77/2",
+          43
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-008-less.svg",
+      "sha256": "556c4dadcd030fe424d92f0ec7eede42c4354612634eb5fa2682b4ded81fde59",
+      "xmin": 13.5,
+      "xmax": 38.5,
+      "ymax": 45,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "31/2",
+          31
+        ],
+        [
+          "41/2",
+          27
+        ],
+        [
+          "51/2",
+          21
+        ],
+        [
+          "61/2",
+          8
+        ],
+        [
+          "71/2",
+          3
+        ],
+        [
+          "81/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-010-more.svg",
+      "sha256": "935182b1d3ecf1b8f04d472843e9699da5ced6ad496e1d2106fe01a4d7f84812",
+      "xmin": 15.5,
+      "xmax": 40.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "41/2",
+          "61/2",
+          5
+        ],
+        [
+          "61/2",
+          "81/2",
+          6
+        ],
+        [
+          "81/2",
+          "101/2",
+          8
+        ],
+        [
+          "101/2",
+          "121/2",
+          7
+        ],
+        [
+          "121/2",
+          "141/2",
+          4
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-014-histogram.svg",
+      "sha256": "2bee10e65d9a3d2464f2d47b7a046a98fa2a7907f5ff2981233cdaafeea22b3e",
+      "xmin": 20.5,
+      "xmax": 70.5,
+      "ymax": 10,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "57/2",
+          0
+        ],
+        [
+          "77/2",
+          5
+        ],
+        [
+          "97/2",
+          12
+        ],
+        [
+          "117/2",
+          27
+        ],
+        [
+          "137/2",
+          33
+        ],
+        [
+          "157/2",
+          37
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-022-less.svg",
+      "sha256": "f8de6bd7b470447d4ac44c683a868681fbdf4fce8012f44c90a89559b8ff2bcc",
+      "xmin": 28.5,
+      "xmax": 78.5,
+      "ymax": 40,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "23/2",
+          0
+        ],
+        [
+          "43/2",
+          4
+        ],
+        [
+          "63/2",
+          10
+        ],
+        [
+          "83/2",
+          23
+        ],
+        [
+          "103/2",
+          28
+        ],
+        [
+          "123/2",
+          31
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-024-less.svg",
+      "sha256": "31c86f74fea46a90f76f7fb11ae16714b7933dff17c3d1e33e1a97a1f54afd44",
+      "xmin": 11.5,
+      "xmax": 61.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "25/2",
+          37
+        ],
+        [
+          "35/2",
+          32
+        ],
+        [
+          "45/2",
+          25
+        ],
+        [
+          "55/2",
+          10
+        ],
+        [
+          "65/2",
+          4
+        ],
+        [
+          "75/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-025-more.svg",
+      "sha256": "23515cddd124ad56336651095fa0c34e72399f17114f8f0ada77b342692da6c1",
+      "xmin": 12.5,
+      "xmax": 37.5,
+      "ymax": 40,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "27/2",
+          "47/2",
+          6
+        ],
+        [
+          "47/2",
+          "67/2",
+          8
+        ],
+        [
+          "67/2",
+          "87/2",
+          17
+        ],
+        [
+          "87/2",
+          "107/2",
+          7
+        ],
+        [
+          "107/2",
+          "127/2",
+          5
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-026-histogram.svg",
+      "sha256": "a5d8b12ad91661cbd6d8ce867470e64c94c2c596f4b1f49dd92a775d254d73fd",
+      "xmin": 13.5,
+      "xmax": 63.5,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "43/2",
+          0
+        ],
+        [
+          "63/2",
+          5
+        ],
+        [
+          "83/2",
+          11
+        ],
+        [
+          "103/2",
+          19
+        ],
+        [
+          "123/2",
+          26
+        ],
+        [
+          "143/2",
+          30
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-034-less.svg",
+      "sha256": "46e54a5e3bd8d270809d6bdd7e08d41b0752cac2210c6316d1b45087625140fd",
+      "xmin": 21.5,
+      "xmax": 71.5,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "20",
+          0
+        ],
+        [
+          "25",
+          7
+        ],
+        [
+          "30",
+          9
+        ],
+        [
+          "35",
+          19
+        ],
+        [
+          "40",
+          8
+        ],
+        [
+          "45",
+          6
+        ],
+        [
+          "50",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-035-polygon.svg",
+      "sha256": "f49a426e09167dda88b888d5892248e7e3655118fd84f79f34e8771eaacc5818",
+      "xmin": 20.0,
+      "xmax": 50.0,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "47/2",
+          0
+        ],
+        [
+          "67/2",
+          4
+        ],
+        [
+          "87/2",
+          10
+        ],
+        [
+          "107/2",
+          23
+        ],
+        [
+          "127/2",
+          28
+        ],
+        [
+          "147/2",
+          31
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-036-less.svg",
+      "sha256": "4ffed5a1fa581c3bb15760acfc591ccd60556b9ba5131d07afe5fb8fdc460930",
+      "xmin": 23.5,
+      "xmax": 73.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "29/2",
+          0
+        ],
+        [
+          "49/2",
+          7
+        ],
+        [
+          "69/2",
+          16
+        ],
+        [
+          "89/2",
+          35
+        ],
+        [
+          "109/2",
+          43
+        ],
+        [
+          "129/2",
+          49
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-046-less.svg",
+      "sha256": "ddc56b2b7bb6325d41efb715c0ac60d1d64bcdc3f7d97220f0e382cec6fdf3e5",
+      "xmin": 14.5,
+      "xmax": 64.5,
+      "ymax": 50,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "13",
+          0
+        ],
+        [
+          "18",
+          8
+        ],
+        [
+          "23",
+          10
+        ],
+        [
+          "28",
+          21
+        ],
+        [
+          "33",
+          9
+        ],
+        [
+          "38",
+          7
+        ],
+        [
+          "43",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-047-polygon.svg",
+      "sha256": "477340f4661e9f90303eae57ed084c2d475f2651bf6beaeda6021fb730e5d634",
+      "xmin": 13.0,
+      "xmax": 43.0,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "33/2",
+          0
+        ],
+        [
+          "53/2",
+          5
+        ],
+        [
+          "73/2",
+          12
+        ],
+        [
+          "93/2",
+          27
+        ],
+        [
+          "113/2",
+          33
+        ],
+        [
+          "133/2",
+          37
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-048-less.svg",
+      "sha256": "2035b7f0fa79fc49725d17230856b35978b6446fc6a0ed01cf7979bfb930ae74",
+      "xmin": 16.5,
+      "xmax": 66.5,
+      "ymax": 40,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "35/2",
+          43
+        ],
+        [
+          "45/2",
+          37
+        ],
+        [
+          "55/2",
+          29
+        ],
+        [
+          "65/2",
+          12
+        ],
+        [
+          "75/2",
+          5
+        ],
+        [
+          "85/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-049-more.svg",
+      "sha256": "b1ac964d3e3681d7d8ccae3a18c3c67df361fb8c78d84ef0a0f440db18e7ab19",
+      "xmin": 17.5,
+      "xmax": 42.5,
+      "ymax": 45,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "37/2",
+          "57/2",
+          7
+        ],
+        [
+          "57/2",
+          "77/2",
+          9
+        ],
+        [
+          "77/2",
+          "97/2",
+          19
+        ],
+        [
+          "97/2",
+          "117/2",
+          8
+        ],
+        [
+          "117/2",
+          "137/2",
+          6
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-050-histogram.svg",
+      "sha256": "6c932612aadaba8a15dc1d469c5fbd17286ebb1da78aeb5c71dc289f576408bd",
+      "xmin": 18.5,
+      "xmax": 68.5,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "59/2",
+          43
+        ],
+        [
+          "69/2",
+          37
+        ],
+        [
+          "79/2",
+          29
+        ],
+        [
+          "89/2",
+          12
+        ],
+        [
+          "99/2",
+          5
+        ],
+        [
+          "109/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-061-more.svg",
+      "sha256": "7fd8c04dc8a737a7c831cf714778f7b410f171dd1944da666c290224fdcd2c3a",
+      "xmin": 29.5,
+      "xmax": 54.5,
+      "ymax": 45,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "61/2",
+          "81/2",
+          7
+        ],
+        [
+          "81/2",
+          "101/2",
+          9
+        ],
+        [
+          "101/2",
+          "121/2",
+          19
+        ],
+        [
+          "121/2",
+          "141/2",
+          8
+        ],
+        [
+          "141/2",
+          "161/2",
+          6
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-062-histogram.svg",
+      "sha256": "815f9eb24d8ded0fccc5a5d8751a4b7a4c6e7c3a475117616d29fd882e43b7f8",
+      "xmin": 30.5,
+      "xmax": 80.5,
+      "ymax": 20,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "39/2",
+          0
+        ],
+        [
+          "59/2",
+          8
+        ],
+        [
+          "79/2",
+          18
+        ],
+        [
+          "99/2",
+          39
+        ],
+        [
+          "119/2",
+          48
+        ],
+        [
+          "139/2",
+          55
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-070-less.svg",
+      "sha256": "f8e8d365ff9a9ce6a7c14e1795b8f2f0c5de98ba55fa2a3c9cd1b193e0e15959",
+      "xmin": 19.5,
+      "xmax": 69.5,
+      "ymax": 55,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "47/2",
+          "67/2",
+          5
+        ],
+        [
+          "67/2",
+          "87/2",
+          6
+        ],
+        [
+          "87/2",
+          "107/2",
+          8
+        ],
+        [
+          "107/2",
+          "127/2",
+          7
+        ],
+        [
+          "127/2",
+          "147/2",
+          4
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-074-histogram.svg",
+      "sha256": "e09b83ba02cdedac5e34f59ec03715fb9120dec5204b4c48cdf8bb6ce6f4ce26",
+      "xmin": 23.5,
+      "xmax": 73.5,
+      "ymax": 10,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "63/2",
+          0
+        ],
+        [
+          "83/2",
+          8
+        ],
+        [
+          "103/2",
+          18
+        ],
+        [
+          "123/2",
+          39
+        ],
+        [
+          "143/2",
+          48
+        ],
+        [
+          "163/2",
+          55
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-082-less.svg",
+      "sha256": "265cfb26fddaac7384d648b2e0d3febf6e8309754678a3532c13bf8cd1d09125",
+      "xmin": 31.5,
+      "xmax": 81.5,
+      "ymax": 55,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "29/2",
+          0
+        ],
+        [
+          "49/2",
+          7
+        ],
+        [
+          "69/2",
+          16
+        ],
+        [
+          "89/2",
+          35
+        ],
+        [
+          "109/2",
+          43
+        ],
+        [
+          "129/2",
+          49
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-084-less.svg",
+      "sha256": "ddc56b2b7bb6325d41efb715c0ac60d1d64bcdc3f7d97220f0e382cec6fdf3e5",
+      "xmin": 14.5,
+      "xmax": 64.5,
+      "ymax": 50,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "31/2",
+          55
+        ],
+        [
+          "41/2",
+          47
+        ],
+        [
+          "51/2",
+          37
+        ],
+        [
+          "61/2",
+          16
+        ],
+        [
+          "71/2",
+          7
+        ],
+        [
+          "81/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-085-more.svg",
+      "sha256": "098f519d317c4cf2e670ccd30abb8b5d1ee9ee3b0ce56a1825626214d76585e3",
+      "xmin": 15.5,
+      "xmax": 40.5,
+      "ymax": 55,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "33/2",
+          "53/2",
+          9
+        ],
+        [
+          "53/2",
+          "73/2",
+          11
+        ],
+        [
+          "73/2",
+          "93/2",
+          23
+        ],
+        [
+          "93/2",
+          "113/2",
+          10
+        ],
+        [
+          "113/2",
+          "133/2",
+          8
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-086-histogram.svg",
+      "sha256": "3892c8b132e3174b7f5a14adb0bd4cc38bb3b87699a8c89df9d18ec8a2283842",
+      "xmin": 16.5,
+      "xmax": 66.5,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "49/2",
+          0
+        ],
+        [
+          "69/2",
+          5
+        ],
+        [
+          "89/2",
+          11
+        ],
+        [
+          "109/2",
+          19
+        ],
+        [
+          "129/2",
+          26
+        ],
+        [
+          "149/2",
+          30
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-094-less.svg",
+      "sha256": "33b175fe1733b73b0d2d07eb3440fbb6dc26895fbd67a04061d65a0eeaa43e8d",
+      "xmin": 24.5,
+      "xmax": 74.5,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "23",
+          0
+        ],
+        [
+          "28",
+          10
+        ],
+        [
+          "33",
+          12
+        ],
+        [
+          "38",
+          25
+        ],
+        [
+          "43",
+          11
+        ],
+        [
+          "48",
+          9
+        ],
+        [
+          "53",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-095-polygon.svg",
+      "sha256": "6e4ee009a00e69ece8f835e76810c800b26acec7ecfdbc4be3af29723e362b1e",
+      "xmin": 23.0,
+      "xmax": 53.0,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "53/2",
+          0
+        ],
+        [
+          "73/2",
+          7
+        ],
+        [
+          "93/2",
+          16
+        ],
+        [
+          "113/2",
+          35
+        ],
+        [
+          "133/2",
+          43
+        ],
+        [
+          "153/2",
+          49
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-096-less.svg",
+      "sha256": "2e43e16130526e7146885884a514ab3c9c0ac735dc8cbf3931f09ab1e81a38e9",
+      "xmin": 26.5,
+      "xmax": 76.5,
+      "ymax": 50,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "35/2",
+          0
+        ],
+        [
+          "55/2",
+          10
+        ],
+        [
+          "75/2",
+          22
+        ],
+        [
+          "95/2",
+          47
+        ],
+        [
+          "115/2",
+          58
+        ],
+        [
+          "135/2",
+          67
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-106-less.svg",
+      "sha256": "4b1ef5767b319d0b4b3f18e931d10f0f06a496d7d7d28002d25990e0cce9c526",
+      "xmin": 17.5,
+      "xmax": 67.5,
+      "ymax": 70,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "16",
+          0
+        ],
+        [
+          "21",
+          11
+        ],
+        [
+          "26",
+          13
+        ],
+        [
+          "31",
+          27
+        ],
+        [
+          "36",
+          12
+        ],
+        [
+          "41",
+          10
+        ],
+        [
+          "46",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-107-polygon.svg",
+      "sha256": "928f30c114a7b4dc5eb8310fdeb7d65d1f88af9034afed893e6c04df5f5b3023",
+      "xmin": 16.0,
+      "xmax": 46.0,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "39/2",
+          0
+        ],
+        [
+          "59/2",
+          8
+        ],
+        [
+          "79/2",
+          18
+        ],
+        [
+          "99/2",
+          39
+        ],
+        [
+          "119/2",
+          48
+        ],
+        [
+          "139/2",
+          55
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-108-less.svg",
+      "sha256": "f8e8d365ff9a9ce6a7c14e1795b8f2f0c5de98ba55fa2a3c9cd1b193e0e15959",
+      "xmin": 19.5,
+      "xmax": 69.5,
+      "ymax": 55,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "41/2",
+          61
+        ],
+        [
+          "51/2",
+          52
+        ],
+        [
+          "61/2",
+          41
+        ],
+        [
+          "71/2",
+          18
+        ],
+        [
+          "81/2",
+          8
+        ],
+        [
+          "91/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-109-more.svg",
+      "sha256": "08ea9c330b24a2cba9bd6bdce82c312ecca701212a623de5b20a4e2e5b47740e",
+      "xmin": 20.5,
+      "xmax": 45.5,
+      "ymax": 65,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "43/2",
+          "63/2",
+          10
+        ],
+        [
+          "63/2",
+          "83/2",
+          12
+        ],
+        [
+          "83/2",
+          "103/2",
+          25
+        ],
+        [
+          "103/2",
+          "123/2",
+          11
+        ],
+        [
+          "123/2",
+          "143/2",
+          9
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-110-histogram.svg",
+      "sha256": "0219ce96fa44fa34986c1d5589077b629a872f59ec1f886d43a3cab015cc7106",
+      "xmin": 21.5,
+      "xmax": 71.5,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "65/2",
+          61
+        ],
+        [
+          "75/2",
+          52
+        ],
+        [
+          "85/2",
+          41
+        ],
+        [
+          "95/2",
+          18
+        ],
+        [
+          "105/2",
+          8
+        ],
+        [
+          "115/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-121-more.svg",
+      "sha256": "d88f92949b433eec9fd0285b74a7a3ed5db96ae74de15d9ec362ead240bea4ed",
+      "xmin": 32.5,
+      "xmax": 57.5,
+      "ymax": 65,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "67/2",
+          "87/2",
+          10
+        ],
+        [
+          "87/2",
+          "107/2",
+          12
+        ],
+        [
+          "107/2",
+          "127/2",
+          25
+        ],
+        [
+          "127/2",
+          "147/2",
+          11
+        ],
+        [
+          "147/2",
+          "167/2",
+          9
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-122-histogram.svg",
+      "sha256": "86707e438f0cce31b235aaaea59f3f91ddf852c9ce8f505e61fb1422a9980922",
+      "xmin": 33.5,
+      "xmax": 83.5,
+      "ymax": 25,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "45/2",
+          0
+        ],
+        [
+          "65/2",
+          11
+        ],
+        [
+          "85/2",
+          24
+        ],
+        [
+          "105/2",
+          51
+        ],
+        [
+          "125/2",
+          63
+        ],
+        [
+          "145/2",
+          73
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-130-less.svg",
+      "sha256": "5510e38c6d0ac2e72d079db2be4c4a141eebcb82715f6e85af795cc9c8bd0de8",
+      "xmin": 22.5,
+      "xmax": 72.5,
+      "ymax": 75,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "53/2",
+          "73/2",
+          5
+        ],
+        [
+          "73/2",
+          "93/2",
+          6
+        ],
+        [
+          "93/2",
+          "113/2",
+          8
+        ],
+        [
+          "113/2",
+          "133/2",
+          7
+        ],
+        [
+          "133/2",
+          "153/2",
+          4
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-134-histogram.svg",
+      "sha256": "d4647619fcb252335fc30e4753f5695527bb566906ac57145f8950a4f9bc63ed",
+      "xmin": 26.5,
+      "xmax": 76.5,
+      "ymax": 10,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "69/2",
+          0
+        ],
+        [
+          "89/2",
+          11
+        ],
+        [
+          "109/2",
+          24
+        ],
+        [
+          "129/2",
+          51
+        ],
+        [
+          "149/2",
+          63
+        ],
+        [
+          "169/2",
+          73
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-142-less.svg",
+      "sha256": "fd4836db33e69e6d27758a4439e09c19c1fd92cfc43591c25ebfa73d8e0dc04f",
+      "xmin": 34.5,
+      "xmax": 84.5,
+      "ymax": 75,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "35/2",
+          0
+        ],
+        [
+          "55/2",
+          10
+        ],
+        [
+          "75/2",
+          22
+        ],
+        [
+          "95/2",
+          47
+        ],
+        [
+          "115/2",
+          58
+        ],
+        [
+          "135/2",
+          67
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-144-less.svg",
+      "sha256": "4b1ef5767b319d0b4b3f18e931d10f0f06a496d7d7d28002d25990e0cce9c526",
+      "xmin": 17.5,
+      "xmax": 67.5,
+      "ymax": 70,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "37/2",
+          73
+        ],
+        [
+          "47/2",
+          62
+        ],
+        [
+          "57/2",
+          49
+        ],
+        [
+          "67/2",
+          22
+        ],
+        [
+          "77/2",
+          10
+        ],
+        [
+          "87/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-145-more.svg",
+      "sha256": "d4b88e402f2db4e288df6f0fc53c776e30f95919dc3699d0e4b678fd779d62df",
+      "xmin": 18.5,
+      "xmax": 43.5,
+      "ymax": 75,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "39/2",
+          "59/2",
+          12
+        ],
+        [
+          "59/2",
+          "79/2",
+          14
+        ],
+        [
+          "79/2",
+          "99/2",
+          29
+        ],
+        [
+          "99/2",
+          "119/2",
+          13
+        ],
+        [
+          "119/2",
+          "139/2",
+          11
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-146-histogram.svg",
+      "sha256": "da9a2fd3838259b2f83727bb83ec9fccb7099b403aac312c9e210a6010bcc10a",
+      "xmin": 19.5,
+      "xmax": 69.5,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "55/2",
+          0
+        ],
+        [
+          "75/2",
+          5
+        ],
+        [
+          "95/2",
+          11
+        ],
+        [
+          "115/2",
+          19
+        ],
+        [
+          "135/2",
+          26
+        ],
+        [
+          "155/2",
+          30
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-154-less.svg",
+      "sha256": "d7a69e5b23e0167e12164d10db92036dea5a33025350b9fcfd11243b008e444d",
+      "xmin": 27.5,
+      "xmax": 77.5,
+      "ymax": 30,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "26",
+          0
+        ],
+        [
+          "31",
+          13
+        ],
+        [
+          "36",
+          15
+        ],
+        [
+          "41",
+          31
+        ],
+        [
+          "46",
+          14
+        ],
+        [
+          "51",
+          12
+        ],
+        [
+          "56",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-155-polygon.svg",
+      "sha256": "94d81a6e39310f725c944983531b3e1ebffe328db09f97fb4043b94b44d478ff",
+      "xmin": 26.0,
+      "xmax": 56.0,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "59/2",
+          0
+        ],
+        [
+          "79/2",
+          10
+        ],
+        [
+          "99/2",
+          22
+        ],
+        [
+          "119/2",
+          47
+        ],
+        [
+          "139/2",
+          58
+        ],
+        [
+          "159/2",
+          67
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-156-less.svg",
+      "sha256": "9df83a65fa33f19eca0471f3a128f3199e1ef2b59744ca88d3246e74e23c676f",
+      "xmin": 29.5,
+      "xmax": 79.5,
+      "ymax": 70,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "41/2",
+          0
+        ],
+        [
+          "61/2",
+          13
+        ],
+        [
+          "81/2",
+          28
+        ],
+        [
+          "101/2",
+          59
+        ],
+        [
+          "121/2",
+          73
+        ],
+        [
+          "141/2",
+          85
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-166-less.svg",
+      "sha256": "6b6790a610ef8b5e3a0a6234ab8257baa6f5a1d3e9b75b62fcacb7a9127d184a",
+      "xmin": 20.5,
+      "xmax": 70.5,
+      "ymax": 85,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "polygon",
+      "points": [
+        [
+          "19",
+          0
+        ],
+        [
+          "24",
+          14
+        ],
+        [
+          "29",
+          16
+        ],
+        [
+          "34",
+          33
+        ],
+        [
+          "39",
+          15
+        ],
+        [
+          "44",
+          13
+        ],
+        [
+          "49",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-167-polygon.svg",
+      "sha256": "44ad4f5d08653d7d7548ccc0c53105a6ffe637a65e0c23e7a5d5b07e699f3f6e",
+      "xmin": 19.0,
+      "xmax": 49.0,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "45/2",
+          0
+        ],
+        [
+          "65/2",
+          11
+        ],
+        [
+          "85/2",
+          24
+        ],
+        [
+          "105/2",
+          51
+        ],
+        [
+          "125/2",
+          63
+        ],
+        [
+          "145/2",
+          73
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-168-less.svg",
+      "sha256": "5510e38c6d0ac2e72d079db2be4c4a141eebcb82715f6e85af795cc9c8bd0de8",
+      "xmin": 22.5,
+      "xmax": 72.5,
+      "ymax": 75,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "47/2",
+          79
+        ],
+        [
+          "57/2",
+          67
+        ],
+        [
+          "67/2",
+          53
+        ],
+        [
+          "77/2",
+          24
+        ],
+        [
+          "87/2",
+          11
+        ],
+        [
+          "97/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-169-more.svg",
+      "sha256": "37a7ee3a56b536e463a4fc3ab1ccc189ee277c1172925ff36dd251a8415edea2",
+      "xmin": 23.5,
+      "xmax": 48.5,
+      "ymax": 80,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "49/2",
+          "69/2",
+          13
+        ],
+        [
+          "69/2",
+          "89/2",
+          15
+        ],
+        [
+          "89/2",
+          "109/2",
+          31
+        ],
+        [
+          "109/2",
+          "129/2",
+          14
+        ],
+        [
+          "129/2",
+          "149/2",
+          12
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-170-histogram.svg",
+      "sha256": "9a917569e8bfffa9710459b360c5b1f288609d7329b1680783bc42542bc68b90",
+      "xmin": 24.5,
+      "xmax": 74.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "more",
+      "points": [
+        [
+          "71/2",
+          79
+        ],
+        [
+          "81/2",
+          67
+        ],
+        [
+          "91/2",
+          53
+        ],
+        [
+          "101/2",
+          24
+        ],
+        [
+          "111/2",
+          11
+        ],
+        [
+          "121/2",
+          0
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-181-more.svg",
+      "sha256": "af79a1e0efe71ad94e2d454d9c8270f88b6f9bd67b027ed788887223ffb2aaf8",
+      "xmin": 35.5,
+      "xmax": 60.5,
+      "ymax": 80,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "73/2",
+          "93/2",
+          13
+        ],
+        [
+          "93/2",
+          "113/2",
+          15
+        ],
+        [
+          "113/2",
+          "133/2",
+          31
+        ],
+        [
+          "133/2",
+          "153/2",
+          14
+        ],
+        [
+          "153/2",
+          "173/2",
+          12
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-182-histogram.svg",
+      "sha256": "6a6a3173fa41d5694092510bfc47d95fea065b1ba7f2d0034b4ce228de3b665d",
+      "xmin": 36.5,
+      "xmax": 86.5,
+      "ymax": 35,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "less",
+      "points": [
+        [
+          "51/2",
+          0
+        ],
+        [
+          "71/2",
+          14
+        ],
+        [
+          "91/2",
+          30
+        ],
+        [
+          "111/2",
+          63
+        ],
+        [
+          "131/2",
+          78
+        ],
+        [
+          "151/2",
+          91
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-190-less.svg",
+      "sha256": "12cfcc84bef387f0e6f37a2675a75098d2615ac295a011e686236f6f3ab5e87b",
+      "xmin": 25.5,
+      "xmax": 75.5,
+      "ymax": 95,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    },
+    {
+      "kind": "histogram",
+      "points": [
+        [
+          "59/2",
+          "79/2",
+          5
+        ],
+        [
+          "79/2",
+          "99/2",
+          6
+        ],
+        [
+          "99/2",
+          "119/2",
+          8
+        ],
+        [
+          "119/2",
+          "139/2",
+          7
+        ],
+        [
+          "139/2",
+          "159/2",
+          4
+        ]
+      ],
+      "file": "public/question-bank/ssc-math-ch17-v1/r1-cq-194-histogram.svg",
+      "sha256": "8b1dfe52dd25f85b116d39d8cea05084585c4daec64680993f666cf5a559331e",
+      "xmin": 29.5,
+      "xmax": 79.5,
+      "ymax": 10,
+      "xOriginPixel": 85,
+      "yOriginPixel": 290,
+      "plotWidth": 560,
+      "plotHeight": 230
+    }
+  ],
+  "families": {
+    "CQ/batch01-authored": 10,
+    "CQ/combined-reconstruction": 10,
+    "CQ/discrete-frequency-reasoning": 9,
+    "CQ/grouped-00": 6,
+    "CQ/grouped-01": 9,
+    "CQ/grouped-02": 9,
+    "CQ/grouped-03": 13,
+    "CQ/grouped-04": 7,
+    "CQ/grouped-05": 10,
+    "CQ/grouped-06": 9,
+    "CQ/grouped-07": 12,
+    "CQ/grouped-08": 6,
+    "CQ/grouped-09": 9,
+    "CQ/grouped-10": 9,
+    "CQ/grouped-11": 12,
+    "CQ/raw-analysis-0": 10,
+    "CQ/raw-analysis-1": 10,
+    "CQ/raw-analysis-2": 10,
+    "CQ/raw-analysis-3": 10,
+    "CQ/raw-analysis-4": 10,
+    "CQ/raw-analysis-5": 10,
+    "MCQ/batch01-authored": 10,
+    "MCQ/mcq-skill-00": 10,
+    "MCQ/mcq-skill-01": 10,
+    "MCQ/mcq-skill-02": 10,
+    "MCQ/mcq-skill-03": 10,
+    "MCQ/mcq-skill-04": 10,
+    "MCQ/mcq-skill-05": 10,
+    "MCQ/mcq-skill-06": 10,
+    "MCQ/mcq-skill-07": 10,
+    "MCQ/mcq-skill-08": 10,
+    "MCQ/mcq-skill-09": 10,
+    "MCQ/mcq-skill-10": 10,
+    "MCQ/mcq-skill-11": 10,
+    "MCQ/mcq-skill-12": 10,
+    "MCQ/mcq-skill-13": 10,
+    "MCQ/mcq-skill-14": 10,
+    "MCQ/mcq-skill-15": 10,
+    "MCQ/mcq-skill-16": 10,
+    "MCQ/mcq-skill-17": 10,
+    "MCQ/mcq-skill-18": 10,
+    "MCQ/mcq-skill-19": 10,
+    "MCQ/mcq-skill-20": 10,
+    "MCQ/mcq-skill-21": 10,
+    "MCQ/mcq-skill-22": 10,
+    "MCQ/mcq-skill-23": 10,
+    "MCQ/mcq-skill-24": 10,
+    "MCQ/mcq-skill-25": 10,
+    "MCQ/mcq-skill-26": 10,
+    "MCQ/mcq-skill-27": 10,
+    "MCQ/mcq-skill-28": 10,
+    "SQ/batch01-authored": 10,
+    "SQ/sq-skill-00": 3,
+    "SQ/sq-skill-01": 3,
+    "SQ/sq-skill-02": 3,
+    "SQ/sq-skill-03": 3,
+    "SQ/sq-skill-04": 3,
+    "SQ/sq-skill-05": 3,
+    "SQ/sq-skill-06": 3,
+    "SQ/sq-skill-07": 3,
+    "SQ/sq-skill-08": 3,
+    "SQ/sq-skill-09": 3,
+    "SQ/sq-skill-10": 3,
+    "SQ/sq-skill-11": 3,
+    "SQ/sq-skill-12": 3,
+    "SQ/sq-skill-13": 3,
+    "SQ/sq-skill-14": 3,
+    "SQ/sq-skill-15": 3,
+    "SQ/sq-skill-16": 3,
+    "SQ/sq-skill-17": 3,
+    "SQ/sq-skill-18": 3,
+    "SQ/sq-skill-19": 3,
+    "SQ/sq-skill-20": 3,
+    "SQ/sq-skill-21": 3,
+    "SQ/sq-skill-22": 3,
+    "SQ/sq-skill-23": 3,
+    "SQ/sq-skill-24": 3,
+    "SQ/sq-skill-25": 3,
+    "SQ/sq-skill-26": 3,
+    "SQ/sq-skill-27": 3,
+    "SQ/sq-skill-28": 3,
+    "SQ/sq-skill-29": 3
+  },
+  "limitations": [
+    "Practice variants share skill templates; 600 distinct stems are not 600 distinct mathematical concepts.",
+    "All board labels in math.txt remain unauthenticated. Missing original tables have not been recovered.",
+    "Timing values are author estimates, not timed pupil trials.",
+    "Automated verification is not independent teacher certification.",
+    "No live approval/publication is performed by this generator."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "phase": "FULL600_RECONSTRUCTED",
+  "archive": "ssc-statistics-restart-r1-full600-703064ed0162.zip",
+  "bytes": 819592,
+  "sha256": "e88c9c401a24d6dd8d1b620fbd8866867f0a51198d8021658c5ef5858d6c2f30",
+  "md5": "e88efbf744bb7acaa37144b1cc931e1b",
+  "entries": 185,
+  "localArchiveVerified": true,
+  "driveVerified": true,
+  "independentDriveMetadataRead": true,
+  "drive": {
+    "fileId": "1mCfhZSp2t-pNbJXksIEcUw_hl9zZQ166",
+    "name": "ssc-statistics-restart-r1-full600-703064ed0162.zip",
+    "bytes": 819592,
+    "md5": "e88efbf744bb7acaa37144b1cc931e1b",
+    "trashed": false,
+    "parent": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw",
+    "url": "https://drive.google.com/file/d/1mCfhZSp2t-pNbJXksIEcUw_hl9zZQ166/view"
+  },
+  "verification": "Local ZIP each entry byte-read; upload response then separate Drive get_file size/MD5/parent/trash check. Not remote redownload verification.",
+  "counts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "approved": 0,
+  "published": 0
+}
