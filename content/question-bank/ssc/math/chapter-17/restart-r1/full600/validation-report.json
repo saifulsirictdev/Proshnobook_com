@@ -1,0 +1,60 @@
+{
+  "status": "OFFLINE_CONTENT_VALIDATED_NOT_PUBLISHED",
+  "counts": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "remainingReconstruction": 0,
+  "python": {
+    "command": "python -m unittest discover -s tests -p 'test_statistics*.py' -v",
+    "passed": 17,
+    "failed": 0
+  },
+  "node": {
+    "command": "node --test tests/statistics-restart-r1.test.cjs tests/statistics-full600.test.cjs",
+    "passed": 7,
+    "failed": 0
+  },
+  "strictImporter": {
+    "records": 600,
+    "uniqueIds": 600,
+    "payloadFiles": 5,
+    "maxItemsUnchanged": 200,
+    "maxBytesUnchanged": 750000
+  },
+  "renderer": {
+    "tableBlocks": 453,
+    "linkedGraphs": 57,
+    "graphAssets": 57
+  },
+  "independentArithmetic": {
+    "newMcqKeysChecked": 290,
+    "batch01McqKeysChecked": 10,
+    "newSqResultsChecked": 90,
+    "groupedMeanMedianMode": "all modelled rows checked with Fraction",
+    "charts": "coordinates from source frequency arrays plus XML pixel/bar checks"
+  },
+  "rebuild": {
+    "byteIdenticalFilesChecked": 65,
+    "includes": "7 generated JSON, review HTML and 57 SVGs"
+  },
+  "inputBackupVerifiedBeforeWork": true,
+  "previousBatchBackupReverifiedBeforeWork": true,
+  "fullBackupReceipt": "backup-receipt.json",
+  "githubContentCommit": "89d38567a1dc89750a76b1de7754b0e9f94aef97",
+  "live": {
+    "imported": 0,
+    "approved": 0,
+    "published": 0,
+    "assetsDeployed": false,
+    "teacherCertified": false
+  },
+  "limitations": [
+    "No independent teacher review or pupil timing study.",
+    "No browser/mobile/print visual test.",
+    "Prepared catalog still points to historical target-v1; do not approve it as the revised set.",
+    "Session branch diverges from main by one main-only commit; no production deployment was attempted from an older app baseline.",
+    "Vercel project metadata was read; it does not provide live DB proof."
+  ]
+}

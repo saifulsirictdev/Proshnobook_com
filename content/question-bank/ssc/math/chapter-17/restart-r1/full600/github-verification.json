@@ -1,0 +1,298 @@
+{
+  "status": "REMOTE_COMMIT_AND_ALL_72_CHANGED_BLOBS_VERIFIED",
+  "repository": "saifulsirictdev/Proshnobook_com",
+  "branch": "arena/25610643-proshnobook-com",
+  "commit": "89d38567a1dc89750a76b1de7754b0e9f94aef97",
+  "remoteRefMatched": true,
+  "files": {
+    "content/question-bank/ssc/math/chapter-17/restart-r1/README.md": {
+      "gitBlobSha": "29b4c8052e0d2365d5313cd10b95b61adfde4ba3",
+      "sha256": "c9b6ca1afe9b66af63aa532c07c84447810e003161fbb19e307e6891f601bc09"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/README.md": {
+      "gitBlobSha": "c07c01c701df240999a44abe1a074e28b641ef79",
+      "sha256": "b44424850cca2dcbdf0249e32a3c7788a6ae2f495e629091ef2b319f3ea545a1"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/backup-receipt.json": {
+      "gitBlobSha": "51240d0bfba37335c3ef5f3ac786383b68b71c8f",
+      "sha256": "dc86736d7fb3ac74b5530fc058bc8cbb010173583d286e0d652f674c1fbd0daa"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/checks.json": {
+      "gitBlobSha": "aafe3ae904947e32dd8a54b3f28c8d67332e8c29",
+      "sha256": "77a1bdd3758f50f9601d142dabaeb07b53b5421c3d512793a2e70ead55068f8c"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/cq-1.json": {
+      "gitBlobSha": "f05dd3befdcf0863fa7017073558294b72f9d649",
+      "sha256": "bcad1b8814f9c35aa1b992d1f4d30dac17a251a47062f3e74d0f8da4ba093774"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/cq-2.json": {
+      "gitBlobSha": "796a6c4dd92c23e1001b14652c43cce1588e17a7",
+      "sha256": "0132a773103f9b4bb945d7e0dea62915b78f93416f7ae03d7de6ee7327118765"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/manifest.json": {
+      "gitBlobSha": "205594db930b9adecabb34c2ace951d184450e72",
+      "sha256": "609e07042b86006c2822fd6da0d9e1020cd0af713ce0cf9b7e5e62ebeb53838a"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/mcq-1.json": {
+      "gitBlobSha": "bbaf1c7f5d5a4e0339892c577bdaab026f79fff5",
+      "sha256": "ea66c3e3800cf7bcc59fee47388f6becb73204e41bfccabdc85577277a701907"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/mcq-2.json": {
+      "gitBlobSha": "605d16b98a35356b5b1a3223164678eb3bb39f7c",
+      "sha256": "92fde8609855bffc696b889323edf32a676b3b2168a357a33098b2f5f7812a13"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/full600/sq.json": {
+      "gitBlobSha": "ef502b5c98e471de941c896e97f7710477473a57",
+      "sha256": "7eec650e4a4dc693e53c03ee2583bfa7d4132fc9ad83f255f4875c17eef112f7"
+    },
+    "docs/question-bank/ssc-statistics-restart-r1-full600.html": {
+      "gitBlobSha": "25e90a963e809716bad0efff9785aafef59c6690",
+      "sha256": "97266181c7da699d45057e778f207e8dad63e45dda2fd5b1f79041b2cc213a8d"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-001-polygon.svg": {
+      "gitBlobSha": "ec89b449ce155c8c1deb5044d622615c952aee8b",
+      "sha256": "6c9bb19231096b42a4ed5074b9371c43eee5ab58ed3a1c29ab0c8df42d6464bb"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-002-less.svg": {
+      "gitBlobSha": "7bd0aa2529cb7f07fdc033fddb5cfd2804f843e5",
+      "sha256": "5a005dbeeb3408cd6dc697d8fffc08e3e741518bbda46401f3f0eece435783ad"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-003-polygon.svg": {
+      "gitBlobSha": "95105f572876c6de64bc79bf4556068ae3f105cd",
+      "sha256": "d1f567d35c39cc9ef6f71c1c340009a43f423c20ebc04ebb211818d05dd69178"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-004-less.svg": {
+      "gitBlobSha": "2045454773ad266493852d810775165379fe1a2c",
+      "sha256": "759b2d4545c43dc4f430ed3d55d9996afcfa14030d1ff166bbfa878d40c38c43"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-005-polygon.svg": {
+      "gitBlobSha": "31b229c2798be336e5033994c08f29110b483f01",
+      "sha256": "7e3098e80eed18b5d8b28d18ff321133ad67a0e63cd39a0fd3d2cba64f9421da"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-007-less.svg": {
+      "gitBlobSha": "945166095b114c0f046363f6c841930d83036cd5",
+      "sha256": "b92191248629b06010cc3e546bc2a3f825d3e6d6b783c9adf8d0cf4b2cf644ce"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-008-less.svg": {
+      "gitBlobSha": "ec8d5dadc9418ade6f5613e474b24f19ded1e972",
+      "sha256": "556c4dadcd030fe424d92f0ec7eede42c4354612634eb5fa2682b4ded81fde59"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-010-more.svg": {
+      "gitBlobSha": "150fa249ae983b6d7c0d1f92f37d20b5f425a36e",
+      "sha256": "935182b1d3ecf1b8f04d472843e9699da5ced6ad496e1d2106fe01a4d7f84812"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-014-histogram.svg": {
+      "gitBlobSha": "25041705bdbd42e6d1515f5dc3590961a649af24",
+      "sha256": "2bee10e65d9a3d2464f2d47b7a046a98fa2a7907f5ff2981233cdaafeea22b3e"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-022-less.svg": {
+      "gitBlobSha": "04425350104cf88457e63282866e933a70da7fc6",
+      "sha256": "f8de6bd7b470447d4ac44c683a868681fbdf4fce8012f44c90a89559b8ff2bcc"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-024-less.svg": {
+      "gitBlobSha": "0a30d87994f38ea12a143aef36700e9863d25c7a",
+      "sha256": "31c86f74fea46a90f76f7fb11ae16714b7933dff17c3d1e33e1a97a1f54afd44"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-025-more.svg": {
+      "gitBlobSha": "a2e8d82cf1f662e1510b33a58038b7757cf6daac",
+      "sha256": "23515cddd124ad56336651095fa0c34e72399f17114f8f0ada77b342692da6c1"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-026-histogram.svg": {
+      "gitBlobSha": "021daa6560a4e1e525aaaea7e91c888bfd7813f6",
+      "sha256": "a5d8b12ad91661cbd6d8ce867470e64c94c2c596f4b1f49dd92a775d254d73fd"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-034-less.svg": {
+      "gitBlobSha": "a37b5fd2bfbd91d9dc1c98ac6bd4ffb7c2902560",
+      "sha256": "46e54a5e3bd8d270809d6bdd7e08d41b0752cac2210c6316d1b45087625140fd"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-035-polygon.svg": {
+      "gitBlobSha": "804470e34623b073b6d81bc702fa3bbf368b9796",
+      "sha256": "f49a426e09167dda88b888d5892248e7e3655118fd84f79f34e8771eaacc5818"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-036-less.svg": {
+      "gitBlobSha": "0e59db5d67dbb983f86851eed1c9cae5230008d0",
+      "sha256": "4ffed5a1fa581c3bb15760acfc591ccd60556b9ba5131d07afe5fb8fdc460930"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-046-less.svg": {
+      "gitBlobSha": "d1a09a590e1c3f76335caed51c04f03c1a590dac",
+      "sha256": "ddc56b2b7bb6325d41efb715c0ac60d1d64bcdc3f7d97220f0e382cec6fdf3e5"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-047-polygon.svg": {
+      "gitBlobSha": "1eb90cbf068510a524f59403efb487fa627bb20b",
+      "sha256": "477340f4661e9f90303eae57ed084c2d475f2651bf6beaeda6021fb730e5d634"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-048-less.svg": {
+      "gitBlobSha": "1332c43ab561b572562196a21ebe13dfd626ee12",
+      "sha256": "2035b7f0fa79fc49725d17230856b35978b6446fc6a0ed01cf7979bfb930ae74"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-049-more.svg": {
+      "gitBlobSha": "7e660b10bbc6baec7d9dc680977cde28b7d39145",
+      "sha256": "b1ac964d3e3681d7d8ccae3a18c3c67df361fb8c78d84ef0a0f440db18e7ab19"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-050-histogram.svg": {
+      "gitBlobSha": "86b51aec6c915eb5fc71ba0929182e7653db3d07",
+      "sha256": "6c932612aadaba8a15dc1d469c5fbd17286ebb1da78aeb5c71dc289f576408bd"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-061-more.svg": {
+      "gitBlobSha": "dcd43f89c6d73702de5bbb75a399bcdf024d5643",
+      "sha256": "7fd8c04dc8a737a7c831cf714778f7b410f171dd1944da666c290224fdcd2c3a"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-062-histogram.svg": {
+      "gitBlobSha": "98752de36328d84456b70251f20201871e283d9f",
+      "sha256": "815f9eb24d8ded0fccc5a5d8751a4b7a4c6e7c3a475117616d29fd882e43b7f8"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-070-less.svg": {
+      "gitBlobSha": "c8f20aed5adfa7ac15233a2c0065d59e886e709e",
+      "sha256": "f8e8d365ff9a9ce6a7c14e1795b8f2f0c5de98ba55fa2a3c9cd1b193e0e15959"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-074-histogram.svg": {
+      "gitBlobSha": "ddcd6bdff10541409548b3b786279bc38da32751",
+      "sha256": "e09b83ba02cdedac5e34f59ec03715fb9120dec5204b4c48cdf8bb6ce6f4ce26"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-082-less.svg": {
+      "gitBlobSha": "b104e3c760f56feaba98eae39eec8b5815f08881",
+      "sha256": "265cfb26fddaac7384d648b2e0d3febf6e8309754678a3532c13bf8cd1d09125"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-084-less.svg": {
+      "gitBlobSha": "d1a09a590e1c3f76335caed51c04f03c1a590dac",
+      "sha256": "ddc56b2b7bb6325d41efb715c0ac60d1d64bcdc3f7d97220f0e382cec6fdf3e5"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-085-more.svg": {
+      "gitBlobSha": "f8d2f320fd15d3cf1cec71b63f3677d857b6c196",
+      "sha256": "098f519d317c4cf2e670ccd30abb8b5d1ee9ee3b0ce56a1825626214d76585e3"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-086-histogram.svg": {
+      "gitBlobSha": "5d7873cba5b07c435af1c946af381536f1811a4b",
+      "sha256": "3892c8b132e3174b7f5a14adb0bd4cc38bb3b87699a8c89df9d18ec8a2283842"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-094-less.svg": {
+      "gitBlobSha": "88f632cef6446f38cecd7d4b005d60a83ca40f4a",
+      "sha256": "33b175fe1733b73b0d2d07eb3440fbb6dc26895fbd67a04061d65a0eeaa43e8d"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-095-polygon.svg": {
+      "gitBlobSha": "09e4dbbb3043ea809ab3fc3c3d8975cd0004c0a0",
+      "sha256": "6e4ee009a00e69ece8f835e76810c800b26acec7ecfdbc4be3af29723e362b1e"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-096-less.svg": {
+      "gitBlobSha": "482cf1ff246f1f143204891fef5820d266146b9b",
+      "sha256": "2e43e16130526e7146885884a514ab3c9c0ac735dc8cbf3931f09ab1e81a38e9"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-106-less.svg": {
+      "gitBlobSha": "84791d0fe5829e04c529375b302b88402171bb62",
+      "sha256": "4b1ef5767b319d0b4b3f18e931d10f0f06a496d7d7d28002d25990e0cce9c526"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-107-polygon.svg": {
+      "gitBlobSha": "be1472bfcd4b8ff2046349ab81c88a0b0dc19380",
+      "sha256": "928f30c114a7b4dc5eb8310fdeb7d65d1f88af9034afed893e6c04df5f5b3023"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-108-less.svg": {
+      "gitBlobSha": "c8f20aed5adfa7ac15233a2c0065d59e886e709e",
+      "sha256": "f8e8d365ff9a9ce6a7c14e1795b8f2f0c5de98ba55fa2a3c9cd1b193e0e15959"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-109-more.svg": {
+      "gitBlobSha": "e4ac6c3d7d48f8c3dcfc60c079243664b4defe3e",
+      "sha256": "08ea9c330b24a2cba9bd6bdce82c312ecca701212a623de5b20a4e2e5b47740e"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-110-histogram.svg": {
+      "gitBlobSha": "e3cf5f75e3a9d4ebcc6b719d7b89a3bb1dc1d57d",
+      "sha256": "0219ce96fa44fa34986c1d5589077b629a872f59ec1f886d43a3cab015cc7106"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-121-more.svg": {
+      "gitBlobSha": "7743c849229ba992032d26c36bbf6784506834d5",
+      "sha256": "d88f92949b433eec9fd0285b74a7a3ed5db96ae74de15d9ec362ead240bea4ed"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-122-histogram.svg": {
+      "gitBlobSha": "975b33b3a75ad470d242025c214ef799550bb126",
+      "sha256": "86707e438f0cce31b235aaaea59f3f91ddf852c9ce8f505e61fb1422a9980922"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-130-less.svg": {
+      "gitBlobSha": "6fc889346688aa4a6f70d2ee7a51d304cbdb9925",
+      "sha256": "5510e38c6d0ac2e72d079db2be4c4a141eebcb82715f6e85af795cc9c8bd0de8"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-134-histogram.svg": {
+      "gitBlobSha": "2eed04c7cea0afdc2a6b43b3f79dd83f9aa310d8",
+      "sha256": "d4647619fcb252335fc30e4753f5695527bb566906ac57145f8950a4f9bc63ed"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-142-less.svg": {
+      "gitBlobSha": "155c188d34ecade1cfc1638de7a2b164e0f0072d",
+      "sha256": "fd4836db33e69e6d27758a4439e09c19c1fd92cfc43591c25ebfa73d8e0dc04f"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-144-less.svg": {
+      "gitBlobSha": "84791d0fe5829e04c529375b302b88402171bb62",
+      "sha256": "4b1ef5767b319d0b4b3f18e931d10f0f06a496d7d7d28002d25990e0cce9c526"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-145-more.svg": {
+      "gitBlobSha": "5b96a92c5f3787d34f1a36cb06b6f0b8b2547b07",
+      "sha256": "d4b88e402f2db4e288df6f0fc53c776e30f95919dc3699d0e4b678fd779d62df"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-146-histogram.svg": {
+      "gitBlobSha": "a7d1b21160a8a08a24b51a7fba362594272b8af7",
+      "sha256": "da9a2fd3838259b2f83727bb83ec9fccb7099b403aac312c9e210a6010bcc10a"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-154-less.svg": {
+      "gitBlobSha": "85d90bd5bc1cc07afe8d008a0fee210899b27c24",
+      "sha256": "d7a69e5b23e0167e12164d10db92036dea5a33025350b9fcfd11243b008e444d"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-155-polygon.svg": {
+      "gitBlobSha": "ff8d08f3e418f017ef0f7290d3e0e851ef6923b7",
+      "sha256": "94d81a6e39310f725c944983531b3e1ebffe328db09f97fb4043b94b44d478ff"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-156-less.svg": {
+      "gitBlobSha": "68a426c315a08fd9521789be54e3ad32989cee69",
+      "sha256": "9df83a65fa33f19eca0471f3a128f3199e1ef2b59744ca88d3246e74e23c676f"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-166-less.svg": {
+      "gitBlobSha": "8016f89fd6d076fcfa29023e30531e9ff08beab0",
+      "sha256": "6b6790a610ef8b5e3a0a6234ab8257baa6f5a1d3e9b75b62fcacb7a9127d184a"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-167-polygon.svg": {
+      "gitBlobSha": "590a104189c38fc34c2b01686c88e94f3717ef16",
+      "sha256": "44ad4f5d08653d7d7548ccc0c53105a6ffe637a65e0c23e7a5d5b07e699f3f6e"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-168-less.svg": {
+      "gitBlobSha": "6fc889346688aa4a6f70d2ee7a51d304cbdb9925",
+      "sha256": "5510e38c6d0ac2e72d079db2be4c4a141eebcb82715f6e85af795cc9c8bd0de8"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-169-more.svg": {
+      "gitBlobSha": "649adfa69ed69c7528cc541ba31b661464c0e3af",
+      "sha256": "37a7ee3a56b536e463a4fc3ab1ccc189ee277c1172925ff36dd251a8415edea2"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-170-histogram.svg": {
+      "gitBlobSha": "f1ea6edb78702ca1e5130e26ed27226aec51ffab",
+      "sha256": "9a917569e8bfffa9710459b360c5b1f288609d7329b1680783bc42542bc68b90"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-181-more.svg": {
+      "gitBlobSha": "d591b0c8bc6f3b201dc9da5b2bbd261bc7457dc6",
+      "sha256": "af79a1e0efe71ad94e2d454d9c8270f88b6f9bd67b027ed788887223ffb2aaf8"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-182-histogram.svg": {
+      "gitBlobSha": "6add3e5fe670723269215b9c02ff598b0423a4ff",
+      "sha256": "6a6a3173fa41d5694092510bfc47d95fea065b1ba7f2d0034b4ce228de3b665d"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-190-less.svg": {
+      "gitBlobSha": "73225712c408c4bc40f0511f6f133d16fbec918a",
+      "sha256": "12cfcc84bef387f0e6f37a2675a75098d2615ac295a011e686236f6f3ab5e87b"
+    },
+    "public/question-bank/ssc-math-ch17-v1/r1-cq-194-histogram.svg": {
+      "gitBlobSha": "0d1aea52f2180524b8a1623367381946bda9e8f2",
+      "sha256": "8b1dfe52dd25f85b116d39d8cea05084585c4daec64680993f666cf5a559331e"
+    },
+    "scripts/question-bank/checkpoint-statistics-full600.py": {
+      "gitBlobSha": "7c58ec44c68f9dfa86b6331a601c2384938ccf61",
+      "sha256": "1c67f33add2e9feef68f6ad674b76bf372b65ca90bf65ffc1b7c66479d26c874"
+    },
+    "scripts/question-bank/complete-statistics-r1.py": {
+      "gitBlobSha": "6ff8d9af422385633aa6aa41820d720b8ffffcac",
+      "sha256": "90600ebdfff6386a0e9a56f7af2cf65ff65c1b3dc95aa983043f62f463c7316d"
+    },
+    "tests/statistics-full600.test.cjs": {
+      "gitBlobSha": "4b1f035fd2d264a8e0afef4ab692a0e53ad3996e",
+      "sha256": "f53b8b80522cb6a39c158ce1fce4add6ff01593a1617774222f470950a211bd6"
+    },
+    "tests/test_statistics_full600.py": {
+      "gitBlobSha": "59321320ff936883b7738deb71d62c23bf0e1b9f",
+      "sha256": "ce412f2bc42d734995ba8813bfc0b81991c973352774b7f21250f162cfa03611"
+    }
+  },
+  "note": "Content checkpoint verification only, not live import/approval/publication."
+}
