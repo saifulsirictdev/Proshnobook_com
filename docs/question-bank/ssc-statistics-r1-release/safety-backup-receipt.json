@@ -1,0 +1,27 @@
+{
+  "file": "ssc-statistics-r1-release-safety-d4b383760840.zip",
+  "bytes": 782118,
+  "md5": "522e982489d67c73ae1e685fd657e17c",
+  "sha256": "0f855de23abf8c67fb195208731d42110313757ae2654175d21d0a4db3482ae0",
+  "localArchiveVerified": true,
+  "driveVerified": true,
+  "independentDriveMetadataRead": true,
+  "drive": {
+    "fileId": "1HZ45oHx14kIRAy7RqE6-EAUvqtTJjfcv",
+    "bytes": 782118,
+    "md5": "522e982489d67c73ae1e685fd657e17c",
+    "parent": "10LdpxI6rrHrMXZMdYkER_v_E02M4WoAw"
+  },
+  "baseline": {
+    "productionCommit": "9b7625abf210f0089e2c442f8ffb68aa9fdfe335",
+    "mergedIntoCurrentBranch": true,
+    "appCodeDiffLines": 0,
+    "previousProductionDeployment": "dpl_8gbZGKFqMtBRQgvcFK7jw3i2d5Ba"
+  },
+  "tests": {
+    "python": 17,
+    "nodeContent": 7,
+    "nodeReleaseSafety": 8,
+    "failed": 0
+  }
+}
