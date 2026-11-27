@@ -1,0 +1,1374 @@
+[
+  {
+    "id": "CQ-001",
+    "sourceId": "txt-stats-01",
+    "sourceTasks": [
+      "প্রচুরক শ্রেণির মধ্যমান নির্ণয় কর। (Marks: ২)",
+      "মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "বর্ণনাসহ উলিখিত উপাত্ত হতে গণসংখ্যা বহুভুজ অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 1",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 1,
+      "digest": "988ef1ca18049bb9d8304b2fe02528bfab4e3db7cb1229cef6758c54adaf2da5"
+    },
+    "model": {
+      "lo": 21,
+      "h": 10,
+      "f": [
+        6,
+        12,
+        20,
+        10,
+        2
+      ],
+      "N": 50,
+      "starts": [
+        21,
+        31,
+        41,
+        51,
+        61
+      ],
+      "mids": [
+        "51/2",
+        "71/2",
+        "91/2",
+        "111/2",
+        "131/2"
+      ],
+      "bounds": [
+        "41/2",
+        "61/2",
+        "81/2",
+        "101/2",
+        "121/2",
+        "141/2"
+      ],
+      "cf": [
+        6,
+        18,
+        38,
+        48,
+        50
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "87/2",
+      "median": "44",
+      "mode": "809/18"
+    },
+    "raw": null,
+    "method": "median",
+    "graphKind": "polygon",
+    "graphPoints": [
+      [
+        "31/2",
+        0
+      ],
+      [
+        "51/2",
+        6
+      ],
+      [
+        "71/2",
+        12
+      ],
+      [
+        "91/2",
+        20
+      ],
+      [
+        "111/2",
+        10
+      ],
+      [
+        "131/2",
+        2
+      ],
+      [
+        "151/2",
+        0
+      ]
+    ],
+    "newDigest": "9d97efc4b9737294a103a77174ba8e1d12c14ed1dd6dc89d3d9a3b222fbc52c7",
+    "approved": false
+  },
+  {
+    "id": "CQ-002",
+    "sourceId": "txt-stats-04",
+    "sourceTasks": [
+      "5 শ্রেণি ব্যবধান ধরে শ্রেণি সংখ্যা নির্ণয় কর। (Marks: ২)",
+      "গণসংখ্যা সারণি তৈরি করে মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "গণসংখ্যা সারণি থেকে উপাত্তের গণসংখ্যা বহুভুজ অঙ্কন কর বর্ণনাসহ। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 2",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 2,
+      "digest": "1348f4a6d273ebb17fc0b623e5afb6888028a46083fcda72ca3b2a84b6e0d1b5"
+    },
+    "model": {
+      "lo": 50,
+      "h": 10,
+      "f": [
+        3,
+        6,
+        9,
+        9,
+        3
+      ],
+      "N": 30,
+      "starts": [
+        50,
+        60,
+        70,
+        80,
+        90
+      ],
+      "mids": [
+        "109/2",
+        "129/2",
+        "149/2",
+        "169/2",
+        "189/2"
+      ],
+      "bounds": [
+        "99/2",
+        "119/2",
+        "139/2",
+        "159/2",
+        "179/2",
+        "199/2"
+      ],
+      "cf": [
+        3,
+        9,
+        18,
+        27,
+        30
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "151/2",
+      "median": "457/6",
+      "mode": null
+    },
+    "raw": [
+      75,
+      65,
+      80,
+      55,
+      60,
+      80,
+      50,
+      75,
+      64,
+      70,
+      80,
+      75,
+      55,
+      80,
+      70,
+      75,
+      67,
+      80,
+      90,
+      72,
+      93,
+      85,
+      69,
+      74,
+      80,
+      78,
+      64,
+      80,
+      85,
+      99
+    ],
+    "method": "shortcut",
+    "graphKind": "less",
+    "graphPoints": [
+      [
+        "99/2",
+        0
+      ],
+      [
+        "119/2",
+        3
+      ],
+      [
+        "139/2",
+        9
+      ],
+      [
+        "159/2",
+        18
+      ],
+      [
+        "179/2",
+        27
+      ],
+      [
+        "199/2",
+        30
+      ]
+    ],
+    "newDigest": "2b9c4af685de9cca1203ed31eea6a8543452845283df75ffb2d48d514059378f",
+    "approved": false
+  },
+  {
+    "id": "CQ-003",
+    "sourceId": "txt-stats-02",
+    "sourceTasks": [
+      "8, 14, 11, 17, 6, 7 এর মধ্যক নির্ণয় কর। (Marks: ২)",
+      "সংক্ষিপ্ত পদ্ধতিতে গড় নির্ণয় কর। (Marks: ৪)",
+      "বিবরণসহ প্রদত্ত উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 3",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 3,
+      "digest": "4798513104da89fb1321e50946f90528a0f8538b34470e9c41e197c0660fff65"
+    },
+    "model": {
+      "lo": 51,
+      "h": 5,
+      "f": [
+        8,
+        12,
+        20,
+        10,
+        6,
+        4
+      ],
+      "N": 60,
+      "starts": [
+        51,
+        56,
+        61,
+        66,
+        71,
+        76
+      ],
+      "mids": [
+        "53",
+        "58",
+        "63",
+        "68",
+        "73",
+        "78"
+      ],
+      "bounds": [
+        "101/2",
+        "111/2",
+        "121/2",
+        "131/2",
+        "141/2",
+        "151/2",
+        "161/2"
+      ],
+      "cf": [
+        8,
+        20,
+        40,
+        50,
+        56,
+        60
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "127/2",
+      "median": "63",
+      "mode": "1129/18"
+    },
+    "raw": null,
+    "method": "shortcut",
+    "graphKind": "polygon",
+    "graphPoints": [
+      [
+        "48",
+        0
+      ],
+      [
+        "53",
+        8
+      ],
+      [
+        "58",
+        12
+      ],
+      [
+        "63",
+        20
+      ],
+      [
+        "68",
+        10
+      ],
+      [
+        "73",
+        6
+      ],
+      [
+        "78",
+        4
+      ],
+      [
+        "83",
+        0
+      ]
+    ],
+    "newDigest": "4f8eec68d5dfc2c6c89b0d07660178a81fa3d7a31cbde63caa985e2ec13473bc",
+    "approved": false
+  },
+  {
+    "id": "CQ-004",
+    "sourceId": "txt-stats-03",
+    "sourceTasks": [
+      "মধ্যক শ্রেণির মধ্যমান নির্ণয় কর। (Marks: ২)",
+      "সারণি থেকে সংক্ষিপ্ত পদ্ধতিতে গড় নির্ণয় কর। (Marks: ৪)",
+      "গণসংখ্যা সারণি হতে উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 4",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 4,
+      "digest": "9525b3ecf76bcccb28b619ccba3e8ad22dc37562585995170f350383880d7c99"
+    },
+    "model": {
+      "lo": 11,
+      "h": 10,
+      "f": [
+        3,
+        5,
+        11,
+        4,
+        2
+      ],
+      "N": 25,
+      "starts": [
+        11,
+        21,
+        31,
+        41,
+        51
+      ],
+      "mids": [
+        "31/2",
+        "51/2",
+        "71/2",
+        "91/2",
+        "111/2"
+      ],
+      "bounds": [
+        "21/2",
+        "41/2",
+        "61/2",
+        "81/2",
+        "101/2",
+        "121/2"
+      ],
+      "cf": [
+        3,
+        8,
+        19,
+        23,
+        25
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "343/10",
+      "median": "761/22",
+      "mode": "913/26"
+    },
+    "raw": null,
+    "method": "cf-mean",
+    "graphKind": "less",
+    "graphPoints": [
+      [
+        "21/2",
+        0
+      ],
+      [
+        "41/2",
+        3
+      ],
+      [
+        "61/2",
+        8
+      ],
+      [
+        "81/2",
+        19
+      ],
+      [
+        "101/2",
+        23
+      ],
+      [
+        "121/2",
+        25
+      ]
+    ],
+    "newDigest": "4757061f8c14fca75d8044008fd1d1bfb44de02646f5352af890fd689d6acaf9",
+    "approved": false
+  },
+  {
+    "id": "CQ-005",
+    "sourceId": "txt-stats-07",
+    "sourceTasks": [
+      "প্রচুরক শ্রেণির পূর্বের শ্রেণির মধ্যবিন্দু নির্ণয় কর। (Marks: ২)",
+      "উপাত্তের মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "বিবরণসহ উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 5",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 5,
+      "digest": "618a38a01be6d333e44302e893aad427732b798238cf163de481b328641580f3"
+    },
+    "model": {
+      "lo": 12,
+      "h": 5,
+      "f": [
+        4,
+        6,
+        13,
+        5,
+        3
+      ],
+      "N": 31,
+      "starts": [
+        12,
+        17,
+        22,
+        27,
+        32
+      ],
+      "mids": [
+        "14",
+        "19",
+        "24",
+        "29",
+        "34"
+      ],
+      "bounds": [
+        "23/2",
+        "33/2",
+        "43/2",
+        "53/2",
+        "63/2",
+        "73/2"
+      ],
+      "cf": [
+        4,
+        10,
+        23,
+        28,
+        31
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "729/31",
+      "median": "307/13",
+      "mode": "143/6"
+    },
+    "raw": null,
+    "method": "missing-median",
+    "graphKind": "polygon",
+    "graphPoints": [
+      [
+        "9",
+        0
+      ],
+      [
+        "14",
+        4
+      ],
+      [
+        "19",
+        6
+      ],
+      [
+        "24",
+        13
+      ],
+      [
+        "29",
+        5
+      ],
+      [
+        "34",
+        3
+      ],
+      [
+        "39",
+        0
+      ]
+    ],
+    "newDigest": "6fe42460230296dfbf6348ad22a7d76b9d6dc800569c7fdc673fcce851185b68",
+    "approved": false
+  },
+  {
+    "id": "CQ-006",
+    "sourceId": "txt-stats-09",
+    "sourceTasks": [
+      "উদ্দীপকের তথ্যের পরিসর নির্ণয় কর। (Marks: ২)",
+      "শ্রেণি ব্যবধান 6 ধরে গণসংখ্যা সারণি তৈরি করে মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "প্রদত্ত উপাত্ত হতে সংক্ষিপ্ত পদ্ধতিতে গড় নির্ণয় কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "math.txt txt-stats-09 raw list",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 6,
+      "digest": "a888e87f14e053c490ffb66f2bab985b76b58b36c904dd6e722a4b3025f3c1cd"
+    },
+    "model": {
+      "lo": 30,
+      "h": 6,
+      "f": [
+        3,
+        3,
+        3,
+        1,
+        3,
+        5,
+        4,
+        3,
+        2,
+        3,
+        3,
+        2
+      ],
+      "N": 35,
+      "starts": [
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96
+      ],
+      "mids": [
+        "65/2",
+        "77/2",
+        "89/2",
+        "101/2",
+        "113/2",
+        "125/2",
+        "137/2",
+        "149/2",
+        "161/2",
+        "173/2",
+        "185/2",
+        "197/2"
+      ],
+      "bounds": [
+        "59/2",
+        "71/2",
+        "83/2",
+        "95/2",
+        "107/2",
+        "119/2",
+        "131/2",
+        "143/2",
+        "155/2",
+        "167/2",
+        "179/2",
+        "191/2",
+        "203/2"
+      ],
+      "cf": [
+        3,
+        6,
+        9,
+        10,
+        13,
+        18,
+        22,
+        25,
+        27,
+        30,
+        33,
+        35
+      ],
+      "medianIndex": 5,
+      "modalIndex": 5,
+      "mean": "649/10",
+      "median": "649/10",
+      "mode": "127/2"
+    },
+    "raw": [
+      70,
+      55,
+      30,
+      70,
+      80,
+      75,
+      100,
+      75,
+      85,
+      90,
+      35,
+      85,
+      45,
+      65,
+      55,
+      60,
+      50,
+      40,
+      45,
+      35,
+      80,
+      85,
+      95,
+      70,
+      60,
+      70,
+      75,
+      100,
+      40,
+      65,
+      95,
+      60,
+      40,
+      45,
+      55
+    ],
+    "method": "median",
+    "graphKind": "shortcut",
+    "graphPoints": [],
+    "newDigest": "7986213b13d10ab75e4f39daa46da7a074bd0fd2fcdf8b8aeeade589b73ae014",
+    "approved": false
+  },
+  {
+    "id": "CQ-007",
+    "sourceId": "txt-stats-14",
+    "sourceTasks": [
+      "শ্রেণিব্যাপ্তি 7 ধরে গণসংখ্যা নিবেশন সারণি তৈরি কর। (Marks: ২)",
+      "সংক্ষিপ্ত পদ্ধতিতে গড় নির্ণয় কর। (Marks: ৪)",
+      "বর্ণনাসহ প্রদত্ত উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "math.txt txt-stats-14 raw list",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 7,
+      "digest": "c10b669e46816b5bb121ff34a9cb43511672c447409bd5a4cdd21cc8a2b564cc"
+    },
+    "model": {
+      "lo": 36,
+      "h": 7,
+      "f": [
+        5,
+        2,
+        6,
+        3,
+        4,
+        7,
+        2,
+        3
+      ],
+      "N": 32,
+      "starts": [
+        36,
+        43,
+        50,
+        57,
+        64,
+        71,
+        78,
+        85
+      ],
+      "mids": [
+        "39",
+        "46",
+        "53",
+        "60",
+        "67",
+        "74",
+        "81",
+        "88"
+      ],
+      "bounds": [
+        "71/2",
+        "85/2",
+        "99/2",
+        "113/2",
+        "127/2",
+        "141/2",
+        "155/2",
+        "169/2",
+        "183/2"
+      ],
+      "cf": [
+        5,
+        7,
+        13,
+        16,
+        20,
+        27,
+        29,
+        32
+      ],
+      "medianIndex": 3,
+      "modalIndex": 5,
+      "mean": "1997/32",
+      "median": "127/2",
+      "mode": "585/8"
+    },
+    "raw": [
+      72,
+      48,
+      37,
+      56,
+      67,
+      74,
+      82,
+      36,
+      45,
+      42,
+      66,
+      55,
+      72,
+      86,
+      51,
+      69,
+      77,
+      91,
+      62,
+      79,
+      38,
+      53,
+      60,
+      74,
+      58,
+      65,
+      72,
+      73,
+      56,
+      42,
+      85,
+      54
+    ],
+    "method": "shortcut",
+    "graphKind": "less",
+    "graphPoints": [
+      [
+        "71/2",
+        0
+      ],
+      [
+        "85/2",
+        5
+      ],
+      [
+        "99/2",
+        7
+      ],
+      [
+        "113/2",
+        13
+      ],
+      [
+        "127/2",
+        16
+      ],
+      [
+        "141/2",
+        20
+      ],
+      [
+        "155/2",
+        27
+      ],
+      [
+        "169/2",
+        29
+      ],
+      [
+        "183/2",
+        32
+      ]
+    ],
+    "newDigest": "1649a27b8e08c52fc19ba29cc96e6cbe8b488e5e48747d7a14969e4471351598",
+    "approved": false
+  },
+  {
+    "id": "CQ-008",
+    "sourceId": "txt-stats-12",
+    "sourceTasks": [
+      "প্রদত্ত সারণি থেকে প্রচুরক নির্ণয় কর। (Marks: ২)",
+      "সারণির মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "বর্ণনাসহ প্রদত্ত উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 7",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 8,
+      "digest": "80558f96eefd4875992389b60b010ef4e10944a5d465c7cbcc2801efb3d0598c"
+    },
+    "model": {
+      "lo": 14,
+      "h": 5,
+      "f": [
+        6,
+        8,
+        17,
+        7,
+        5
+      ],
+      "N": 43,
+      "starts": [
+        14,
+        19,
+        24,
+        29,
+        34
+      ],
+      "mids": [
+        "16",
+        "21",
+        "26",
+        "31",
+        "36"
+      ],
+      "bounds": [
+        "27/2",
+        "37/2",
+        "47/2",
+        "57/2",
+        "67/2",
+        "77/2"
+      ],
+      "cf": [
+        6,
+        14,
+        31,
+        38,
+        43
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "1103/43",
+      "median": "437/17",
+      "mode": "983/38"
+    },
+    "raw": null,
+    "method": "mode",
+    "graphKind": "less",
+    "graphPoints": [
+      [
+        "27/2",
+        0
+      ],
+      [
+        "37/2",
+        6
+      ],
+      [
+        "47/2",
+        14
+      ],
+      [
+        "57/2",
+        31
+      ],
+      [
+        "67/2",
+        38
+      ],
+      [
+        "77/2",
+        43
+      ]
+    ],
+    "newDigest": "5795cb72ca1d74aa4cdf641481ac3d1e4bff153e90c4b397e83acfdafb2c187a",
+    "approved": false
+  },
+  {
+    "id": "CQ-009",
+    "sourceId": "txt-stats-05",
+    "sourceTasks": [
+      "প্রচুরক শ্রেণির মধ্যমান নির্ণয় কর। (Marks: ২)",
+      "প্রদত্ত উপাত্তের গাণিতিক গড় নির্ণয় কর। (Marks: ৪)",
+      "বর্ণনাসহ প্রদত্ত উপাত্তের অজিভ রেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 6",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 9,
+      "digest": "bec2026274fd3256202afcca219a60fe6c5a388faf53003fa9ca4a989ded0d32"
+    },
+    "model": {
+      "lo": 13,
+      "h": 10,
+      "f": [
+        5,
+        7,
+        15,
+        6,
+        4
+      ],
+      "N": 37,
+      "starts": [
+        13,
+        23,
+        33,
+        43,
+        53
+      ],
+      "mids": [
+        "35/2",
+        "55/2",
+        "75/2",
+        "95/2",
+        "115/2"
+      ],
+      "bounds": [
+        "25/2",
+        "45/2",
+        "65/2",
+        "85/2",
+        "105/2",
+        "125/2"
+      ],
+      "cf": [
+        5,
+        12,
+        27,
+        33,
+        37
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "2715/74",
+      "median": "221/6",
+      "mode": "1265/34"
+    },
+    "raw": null,
+    "method": "direct",
+    "graphKind": "compare",
+    "graphPoints": [],
+    "secondF": [
+      4,
+      6,
+      15,
+      7,
+      5
+    ],
+    "secondMean": "2835/74",
+    "difference": "60/37",
+    "newDigest": "8be53f2bc7d109aca146ce5762577dfaccde5e51d80b1abcb33b143ff2bbfad6",
+    "approved": false
+  },
+  {
+    "id": "CQ-010",
+    "sourceId": "txt-stats-18",
+    "sourceTasks": [
+      "প্রচুরক শ্রেণির মধ্যবিন্দু নির্ণয় কর। (Marks: ২)",
+      "উপাত্তসমূহের মধ্যক নির্ণয় কর। (Marks: ৪)",
+      "বর্ণনাসহ প্রদত্ত উপাত্তের অজিভরেখা অঙ্কন কর। (Marks: ৪)"
+    ],
+    "adaptation": "SELECTED_TASK_STRUCTURE_ADAPTED; graph/comparison work may extend source; not verbatim",
+    "dataOrigin": "target-v1 CQ 9",
+    "oldSlot": {
+      "file": "target-v1/cq-1.json",
+      "item": 10,
+      "digest": "ed3d5bb5d1ac24364b18163952e12034027ac23925d477097b5d9f4e9e1462b8"
+    },
+    "model": {
+      "lo": 16,
+      "h": 5,
+      "f": [
+        4,
+        6,
+        13,
+        5,
+        3
+      ],
+      "N": 31,
+      "starts": [
+        16,
+        21,
+        26,
+        31,
+        36
+      ],
+      "mids": [
+        "18",
+        "23",
+        "28",
+        "33",
+        "38"
+      ],
+      "bounds": [
+        "31/2",
+        "41/2",
+        "51/2",
+        "61/2",
+        "71/2",
+        "81/2"
+      ],
+      "cf": [
+        4,
+        10,
+        23,
+        28,
+        31
+      ],
+      "medianIndex": 2,
+      "modalIndex": 2,
+      "mean": "853/31",
+      "median": "359/13",
+      "mode": "167/6"
+    },
+    "raw": null,
+    "method": "median",
+    "graphKind": "more",
+    "graphPoints": [
+      [
+        "31/2",
+        31
+      ],
+      [
+        "41/2",
+        27
+      ],
+      [
+        "51/2",
+        21
+      ],
+      [
+        "61/2",
+        8
+      ],
+      [
+        "71/2",
+        3
+      ],
+      [
+        "81/2",
+        0
+      ]
+    ],
+    "newDigest": "a1275fa1a6621016726f4661464db97e2591cda8424b3108c48663597496713e",
+    "approved": false
+  },
+  {
+    "id": "MCQ-001",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 1,
+      "digest": "a84c97f8ecac2d1c8c66d843f321497a783fbc43158cd2225018bc9c44ad3f06"
+    },
+    "expectedAnswer": "9.5",
+    "optionReasons": {
+      "A": "মাঝের একটি পদ নেওয়া হয়েছে।",
+      "B": "মাঝের একটি পদ নেওয়া হয়েছে।",
+      "C": "সঠিক।",
+      "D": "মাঝের পদ ভুল চিহ্নিত হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "5b2c0d6c5df8ea8e6702c94545ed4ec6b5ee71b556ad22cfd2c51333e076fc8e",
+    "approved": false
+  },
+  {
+    "id": "MCQ-002",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 2,
+      "digest": "e6015d5dc37a987c7376dfa8e9dc3f78d15b1e7fdf07fb5c8d910e23c5707e75"
+    },
+    "expectedAnswer": "30–39",
+    "optionReasons": {
+      "A": "মধ্যকের অবস্থান প্রথম শ্রেণিতে নয়।",
+      "B": "11টি পর্যন্ত দ্বিতীয় শ্রেণি।",
+      "C": "সঠিক।",
+      "D": "মধ্যকের অবস্থান শেষ শ্রেণিতে নয়।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "a79080cdaba5bdbdaf13c4a7c9f61949aa2f89a7a5f984a4fad04af871d4205d",
+    "approved": false
+  },
+  {
+    "id": "MCQ-003",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 3,
+      "digest": "b56b723c1a430ab27372e199ff157fc92ea8ef23028a4693607b640fc8c1a7c4"
+    },
+    "expectedAnswer": "10",
+    "optionReasons": {
+      "A": "আপাত সীমার পার্থক্য নেওয়া হয়েছে।",
+      "B": "সঠিক।",
+      "C": "অতিরিক্ত এক একক যোগ হয়েছে।",
+      "D": "নিম্নসীমাকে ব্যাপ্তি বলা হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "395f802e288afd0d3033047067df7246f55cedf248855728e5601db0c0e91f77",
+    "approved": false
+  },
+  {
+    "id": "MCQ-004",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 4,
+      "digest": "95eca455671051d7058ce9f990b92c62ade0da7f38d167a266ea757ed38fa602"
+    },
+    "expectedAnswer": "13",
+    "optionReasons": {
+      "A": "সঞ্চিত মানকে শ্রেণির f ধরা হয়েছে।",
+      "B": "আগের সঞ্চিত মান নেওয়া হয়েছে।",
+      "C": "বিয়োগের বদলে যোগ হয়েছে।",
+      "D": "সঠিক।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "1906f15f3fc370cc0ffc04dab683bcafb7b60c03eb716ce6bb9560339fbe9ebb",
+    "approved": false
+  },
+  {
+    "id": "MCQ-005",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 5,
+      "digest": "b2e8915b4636e562164a79061a45a0df6afd0c25bbe36ead66ca448e566582c5"
+    },
+    "expectedAnswer": "1",
+    "optionReasons": {
+      "A": "সঠিক।",
+      "B": "h দিয়ে ভাগ করা হয়নি।",
+      "C": "বিয়োগের ক্রম উল্টেছে।",
+      "D": "x ও A যোগ হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "639e86b25ea58c69e3f4afed3655bfab0081282974f3786b6bceb589967d4c12",
+    "approved": false
+  },
+  {
+    "id": "MCQ-006",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 6,
+      "digest": "5d87f060597848f5671ca5f0c9fb8c8790ba0930ac97ee1e945f81b1e6caeb65"
+    },
+    "expectedAnswer": "13",
+    "optionReasons": {
+      "A": "ভাগ করা হয়নি।",
+      "B": "একটি উপাত্তকে গড় বলা হয়েছে।",
+      "C": "একটি উপাত্তকে গড় বলা হয়েছে।",
+      "D": "সঠিক।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "b843ffd82182be5b73cf28f7065790573a974e1077edf91a50968765012ceecc",
+    "approved": false
+  },
+  {
+    "id": "MCQ-007",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 7,
+      "digest": "0ed3dd7259a7926bcb110661e45d11a3a4b08ab9b1044803dc0c7179e06df60c"
+    },
+    "expectedAnswer": "7",
+    "optionReasons": {
+      "A": "সর্বাধিক f-কে প্রচুরক বলা হয়েছে।",
+      "B": "সঠিক।",
+      "C": "সর্বোচ্চ x নেওয়া হয়েছে।",
+      "D": "মোট গণসংখ্যা নেওয়া হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "64a4a4de739faecd4f2bab868bb9fe9d4388e86444f077c00dcba45b2bd14cf0",
+    "approved": false
+  },
+  {
+    "id": "MCQ-008",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 8,
+      "digest": "db03e78b180cc0dcd1487a279b4c3355e8da67cb124b52aae6c9994a873c42a5"
+    },
+    "expectedAnswer": "(35.5, 12)",
+    "optionReasons": {
+      "A": "সঠিক।",
+      "B": "নিম্নসীমা নেওয়া হয়েছে।",
+      "C": "প্রকৃত উচ্চসীমা নেওয়া হয়েছে।",
+      "D": "দুই অক্ষ উল্টেছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "bb0824ca92bf982f6977be661ce2b6575b875ca064ad6ccc0206edde08a40744",
+    "approved": false
+  },
+  {
+    "id": "MCQ-009",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 9,
+      "digest": "25e08fd1e896ad743fe84f44f21a8099b53b72bb6509ff2cbd152e880b29ff09"
+    },
+    "expectedAnswer": "23",
+    "optionReasons": {
+      "A": "মোট বৃদ্ধি গড়ে যোগ হয়েছে।",
+      "B": "পরিবর্তন বাদ গেছে।",
+      "C": "সঠিক।",
+      "D": "যোগের বদলে বিয়োগ হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "bf772978aa709026532b1253883e52cf12dcb4f2f5fda350ad0c59292a99eaac",
+    "approved": false
+  },
+  {
+    "id": "MCQ-010",
+    "oldSlot": {
+      "file": "target-v1/mcq-1.json",
+      "item": 10,
+      "digest": "97339466f5a1694907b32c8dfad548e204dc0e06f023ee9e632ca17df1cb813f"
+    },
+    "expectedAnswer": "7",
+    "optionReasons": {
+      "A": "প্রথম সঞ্চিত মান নেওয়া হয়েছে।",
+      "B": "সঠিক।",
+      "C": "দ্বিতীয় সঞ্চিত মান নেওয়া হয়েছে।",
+      "D": "বিয়োগের বদলে যোগ হয়েছে।"
+    },
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "c65f85adb7d08e1b030c29a8b74c08af582b91d73d13c81662746077f596fdf1",
+    "approved": false
+  },
+  {
+    "id": "SQ-001",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 1,
+      "digest": "ad14fce663caf9e02faab7fae6e146cf2b13a014d4191597c3c880e6bec44db2"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "a7dc200b497ec8631e200f926c9c38983535e4608c1865fc10c86af091596560",
+    "approved": false
+  },
+  {
+    "id": "SQ-002",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 2,
+      "digest": "0cfcf1e1b8e701a495c56572f6e1507be2516ad78caf7aef8154c6a91c24592d"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "19a152cee8eefbf4698c23377c71d8aaddeee287abf38b277ad78c4eb3cc9c15",
+    "approved": false
+  },
+  {
+    "id": "SQ-003",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 3,
+      "digest": "4fc20e832ce138d30a94961d128603c4eedcdffa4a6fe15e01c32adc8bf7fd1b"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "63826957e114dca918c3abc9b6eee7c5c848f59bba8fb43ad27a4121f4e79d6c",
+    "approved": false
+  },
+  {
+    "id": "SQ-004",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 4,
+      "digest": "912f662c3fdfa0873edaa789b6a02f3f32dd1f36a9d45f5a6ee076d8a72c1fa7"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "c46fbf932cf04fe6c5f678062edab00c0b40928ef83857168f3ed0455f4b8396",
+    "approved": false
+  },
+  {
+    "id": "SQ-005",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 5,
+      "digest": "2d62802b5185336e9be9ebcb46fca2c23a76704415a3e65a1b45cb8fd678a516"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "3ab5902a33ca4a4e769c9a9d800ec000bcddef82628b08242dc8e94c89dec570",
+    "approved": false
+  },
+  {
+    "id": "SQ-006",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 6,
+      "digest": "ba0fd7ae5c9a5c3aa844f7f112899db0b7a3c107e946ec52eece5e33e518d264"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "9326a91d3b91b00ea2bbab26042462229d0a237dc54eaaba8b18e5dedf4ce97e",
+    "approved": false
+  },
+  {
+    "id": "SQ-007",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 7,
+      "digest": "8676af3586d40ee622d72594b862a663730403c59605849419391dfdfe6dcaba"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "8a4ca585d71f70c8599a7db3370834859b85174c5b73faec23aa4cc452f3b2e8",
+    "approved": false
+  },
+  {
+    "id": "SQ-008",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 8,
+      "digest": "9afec38905afd68cbcadda9c1ce4894d65672673dceaece36e923fe846293152"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "846f1dc6d8bf55d27d6ac44ee2fb512cb06f689c5b7c09ec116cb53a7bbedf96",
+    "approved": false
+  },
+  {
+    "id": "SQ-009",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 9,
+      "digest": "306c847138b057177c1b75f951e4e7323e34968c2066941fbe9372fc76d15121"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "596cf012d5bdc4eb3aba7eb7e0816dffcc145880763082e4a744fbef4e65c008",
+    "approved": false
+  },
+  {
+    "id": "SQ-010",
+    "oldSlot": {
+      "file": "target-v1/sq.json",
+      "item": 10,
+      "digest": "8180e5ff04e3518fe9851dbcfb0874ad00a3baf174dd575c8dd154eaeb42403b"
+    },
+    "intendedMarks": 2,
+    "origin": "NEW_ORIGINAL_NOT_BOARD",
+    "newDigest": "c5665c7da87ff57da25495788fce5d88708d7efffb81f66924bc62c75ca9df9d",
+    "approved": false
+  }
+]
