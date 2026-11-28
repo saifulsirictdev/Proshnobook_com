@@ -1,0 +1,66 @@
+{
+  "status": "REMOTE_COMMIT_AND_ALL_CHANGED_BLOBS_VERIFIED",
+  "repository": "saifulsirictdev/Proshnobook_com",
+  "branch": "arena/25610643-proshnobook-com",
+  "commit": "7e73bab0c617a69247843d22fec61b9f3245822b",
+  "remoteRefMatched": true,
+  "files": {
+    "content/question-bank/ssc/math/chapter-17/restart-r1/README.md": {
+      "gitBlobSha": "112f00909172498e1a16f52db055a8514c7c91ba",
+      "sha256": "0d8a307b447aa53187549c5a0849ec1037c9fe9a558c21fe11d5e8b7e4c204d4"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/batch01-backup-receipt.json": {
+      "gitBlobSha": "d98a5a64d5c96fa7d7a11fbb869244e20ba98e92",
+      "sha256": "b843551d7dfac779eb8d597470e96e836362583e230f87daa6b48495f78c709c"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/batch01-checks.json": {
+      "gitBlobSha": "d8750d634f11c7590445c1cb901702a9d3a5dd2c",
+      "sha256": "49475be2dc96ec684c8f9ff516a5151d5aee4c945326805ac5943c2f3e6ff1d2"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/batch01-cq.json": {
+      "gitBlobSha": "0826d01207f18248ebdaa8557bd50e13e1f4f89c",
+      "sha256": "0e84221c45997022ea86c6cd6acb3d443d9569dfa6885d7d17877f0ada29f80f"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/batch01-mcq.json": {
+      "gitBlobSha": "a8bc6ba9a98cb92541bdfaf5ae646b7610acc147",
+      "sha256": "a1be05d2b3c2b48a8142e54d0d6a7c8d01b6446ee5d93d5ee6c6bedf5cc4184f"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/batch01-sq.json": {
+      "gitBlobSha": "bfeea857c731ed1d855d471e47b8af859b24faf3",
+      "sha256": "cb36e66019befc6e5f05d0547da8d0eb342cc5ff9ce1663370276ad1ecade299"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/input-backup-receipt.json": {
+      "gitBlobSha": "a3593991a370c4de347f75bccb4f3d7e047df3ec",
+      "sha256": "1fe49d9a7fbae9bc3e8e9273275ed9033f2c6364671de4daac2117fd630e03c2"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/progress.json": {
+      "gitBlobSha": "dbdd3c8af1e87c05cfcd62ce939f4ed11a985959",
+      "sha256": "1365e58bf557fb8f2e0d6b2f5e0cd8a5c7bb21a0ccd8344fa758c93528a55e82"
+    },
+    "content/question-bank/ssc/math/chapter-17/restart-r1/source-intake.json": {
+      "gitBlobSha": "c0660d8b56de7ff758ecfc1d916c290a1a24399b",
+      "sha256": "f65c08066cf812123f20d399274a1d0a58009e8d4db2e92cf205a0fbee0d97b8"
+    },
+    "docs/question-bank/ssc-statistics-restart-r1-batch01.html": {
+      "gitBlobSha": "70cf795098ba071f789a099ed38ffd070077629c",
+      "sha256": "1f748c2de23445f1957b8c5a47612daed502cdc8d64b0a5162a5d49f0fa98fd9"
+    },
+    "scripts/question-bank/checkpoint-statistics-r1.py": {
+      "gitBlobSha": "3af876dc7c4322871b38ba26c33d2f1649d8f077",
+      "sha256": "eea0d5272d1b2b357fcfb7c6914ad09f20995de75753a84bbfd5349a553b0cf6"
+    },
+    "scripts/question-bank/rebuild-statistics-r1.py": {
+      "gitBlobSha": "d09ed2f790cc2b3ee2c230fea215dbceed71e99a",
+      "sha256": "b91e150e063861625ec65f5f1e6b28edff8643e55869ee62810c62b0347dac6b"
+    },
+    "tests/statistics-restart-r1.test.cjs": {
+      "gitBlobSha": "c66e4b0f22037454722c1a76e84deb15f4da560b",
+      "sha256": "a40c4a8855c3baeb249da02aca356b2d1de3bebdc499556308567859b3729213"
+    },
+    "tests/test_statistics_restart_r1.py": {
+      "gitBlobSha": "264dc5d6167036f504cb6a712e5086ad8e8b1269",
+      "sha256": "a8f6590e8490ac4169ab2c04cc5c7294420d979819d5e56765c234797fd5d141"
+    }
+  },
+  "note": "This verifies content checkpoint 7e73bab and its ancestors. Later receipt-only commits may follow; no deployment or approval verification is implied."
+}

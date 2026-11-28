@@ -1,0 +1,40 @@
+{
+  "status": "RESTART_BATCH01_DRAFT_NOT_APPROVED",
+  "target": {
+    "MCQ": 300,
+    "CQ": 200,
+    "SQ": 100
+  },
+  "reconstructed": {
+    "MCQ": 10,
+    "CQ": 10,
+    "SQ": 10
+  },
+  "totalReconstructed": 30,
+  "remaining": 570,
+  "teacherApproved": false,
+  "approved": 0,
+  "published": 0,
+  "oldPayloadsModified": false,
+  "lostVersionRecovered": false,
+  "inputBackupVerified": true,
+  "batchBackupReceipt": "batch01-backup-receipt.json",
+  "batchBackupRule": "A generated batch is not backed up until its separate Drive receipt and GitHub commit are verified.",
+  "files": [
+    {
+      "file": "batch01-mcq.json",
+      "bytes": 6036,
+      "sha256": "a1be05d2b3c2b48a8142e54d0d6a7c8d01b6446ee5d93d5ee6c6bedf5cc4184f"
+    },
+    {
+      "file": "batch01-cq.json",
+      "bytes": 36238,
+      "sha256": "0e84221c45997022ea86c6cd6acb3d443d9569dfa6885d7d17877f0ada29f80f"
+    },
+    {
+      "file": "batch01-sq.json",
+      "bytes": 6620,
+      "sha256": "cb36e66019befc6e5f05d0547da8d0eb342cc5ff9ce1663370276ad1ecade299"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "BATCH01_DRAFT",
+  "archive": "ssc-statistics-restart-r1-batch01-3a85a6566016.zip",
+  "bytes": 364630,
+  "md5": "77ab7d26ff51c31c4d238b2d0a8212ff",
+  "sha256": "4a953fd9fa5cb6a23cb28b1e36ea8aec067eff73011f455982016a2879ad8476",
+  "entries": 15,
+  "localArchiveVerified": true,
+  "driveVerified": true,
+  "drive": {
+    "fileId": "1eH4aGaCnu3cXNpT_XA-S2cvk5ssq1XRK",
+    "name": "ssc-statistics-restart-r1-batch01-3a85a6566016.zip",
+    "bytes": 364630,
+    "md5": "77ab7d26ff51c31c4d238b2d0a8212ff",
+    "url": "https://drive.google.com/file/d/1eH4aGaCnu3cXNpT_XA-S2cvk5ssq1XRK/view",
+    "verifiedBy": "UPLOAD_RESPONSE_AND_SEPARATE_DRIVE_GET_FILE"
+  },
+  "independentDriveMetadataRead": true,
+  "checks": {
+    "pythonTestsPassed": 9,
+    "nodeTestsPassed": 3,
+    "importedInMemory": 30,
+    "tableBlocksRendered": 29,
+    "graphCoordinateSetsVerified": 8,
+    "deterministicRebuild": true
+  },
+  "limitations": [
+    "Server-side metadata checksum verification, not a fresh Drive download.",
+    "GitHub push is verified independently after this receipt is committed.",
+    "No independent teacher certification, live import, approval or publication."
+  ]
+}
