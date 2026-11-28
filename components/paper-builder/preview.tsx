@@ -12,6 +12,7 @@ import {
 import EnglishGroup from "./english-group";
 import InlineText, { type InlineEditApi } from "./inline-text";
 import { questionProvenanceLabels } from "@/lib/question-provenance";
+import { cqPartMark } from "@/lib/paper-cq-marks";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   paginateContinuous,
@@ -700,7 +701,7 @@ export default function PaperPreview({
                                 ).partMarks?.[key] ??
                                   (s.autoModel
                                     ? autoModelPartMarks(s, i)
-                                    : i + 1),
+                                    : cqPartMark({ part: key, index: i, subject: q.subject, paperSubject: s.info.subject, autoModel: s.autoModel })),
                               )}
                               onSave={(next) =>
                                 inlineEdit?.saveMarks(q, key, Number(next))
@@ -714,7 +715,7 @@ export default function PaperPreview({
                                 ).partMarks?.[key] ??
                                   (s.autoModel
                                     ? autoModelPartMarks(s, i)
-                                    : i + 1),
+                                    : cqPartMark({ part: key, index: i, subject: q.subject, paperSubject: s.info.subject, autoModel: s.autoModel })),
                               )}
                             </InlineText>
                           </span>
